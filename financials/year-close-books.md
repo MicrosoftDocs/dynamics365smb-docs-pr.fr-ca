@@ -1,6 +1,6 @@
 ---
-title: Fermeture de registres| Microsoft Docs
-description: "Explique les processus impliqués dans la fermeture des registres d&quot;un exercice financier ou d&quot;une période comptable."
+title: "Aperçu des tâches pour fermer les registres | Microsoft Docs"
+description: "En savoir plus sur le processus de fermeture des registres d'un exercice financier ou d'une période fiscale, et ce qui a lieu après la fermeture, à la fin d'un exercice."
 services: project-madeira
 documentationcenter: 
 author: jswymer
@@ -13,14 +13,14 @@ ms.search.keywords: year closing, close accounting period, close fiscal year, ba
 ms.date: 03/29/2017
 ms.author: jswymer
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a31be0f9d07e2abb591e26f6bae34c6f6e4dcda6
-ms.openlocfilehash: a8d379c971d9b21b0eac552f8c7f68926090f037
+ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
+ms.openlocfilehash: 870f1c6a7f93195e0308a646402d642f6cadd219
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
-# <a name="closing-books"></a>Fermeture de registres
+# <a name="closing-the-books"></a>Fermeture des registres
 Après vous être assuré que tous vos comptes sont à jour et avoir affecté les coûts et les bénéfices, vous pouvez fermer la comptabilité d'un exercice financier ou d'une période comptable.
 
 Vous n'êtes pas obligé de fermer un exercice, mais cela vous aidera à travailler plus facilement dans le système parce que vous serez en mesure de bénéficier des options de filtrage pratiques mises à votre disposition. Vous ne devez pas non plus vous préoccuper de la perte de détails de transactions lors de la fermeture parce que tous les détails sont conservés, même après la fermeture de l'exercice.

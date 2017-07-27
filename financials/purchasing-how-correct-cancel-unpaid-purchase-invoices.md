@@ -1,6 +1,6 @@
 ---
-title: "Procédure : corriger ou annuler des factures achat impayées| Microsoft Docs"
-description: "Procédure : corriger ou annuler des factures achat impayées"
+title: "Corriger ou annuler des factures achat impayées | Microsoft Docs"
+description: "Explique comment corriger, rétablir ou annuler une facture achat reportée et créer automatiquement une note de crédit achat."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -13,10 +13,10 @@ ms.search.keywords: undo, credit memo, return
 ms.date: 03/29/2017
 ms.author: sgroespe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a31be0f9d07e2abb591e26f6bae34c6f6e4dcda6
-ms.openlocfilehash: fba080da79d3a9d3f816c8ddc0a02c877211bcb4
+ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
+ms.openlocfilehash: 75a56e6089567c456280b2cc287dda62fb4f3f8b
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
@@ -28,10 +28,11 @@ Si vous avez déjà payé des produits sur la facture achat reportée, vous ne p
 Dans la fenêtre **Facture achat enregistrée**, vous pouvez cliquer sur le bouton **Corriger** ou **Annuler**. Lorsque vous corrigez ou annulez une facture achat reportée, la note de crédit achat de correction est affectée à toutes les écritures du grand livre et de l'inventaire physique créées lors du report de la facture achat initiale. Cette action inverse la facture achat reportée dans vos enregistrements financiers et laisse la note de crédit achat reportée de correction pour votre piste de vérification. L'utilisation des boutons **Corriger** et **Annuler** est décrite ci-après.
 
 ## <a name="to-correct-a-posted-purchase-invoice"></a>Pour corriger une facture achat reportée
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Factures achat enregistrées**, puis sélectionnez le lien associé.  
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Factures achat enregistrées**, puis sélectionnez le lien connexe.  
 2. Sélectionnez la facture achat reportée à corriger.  
 
-    **Remarque** : si la case **Annulé** est cochée, vous ne pouvez pas corriger la facture achat validée car elle l'a déjà été, ou a été annulée.
+    > [!NOTE]  
+>   Si la case à cocher **Annulé** est activée, vous ne pouvez pas corriger la facture achat validée car elle l'a déjà été, ou a été annulée.
 3. Dans la fenêtre **Facture achat enregistrée** sélectionnez **Corriger**.
 
     Une nouvelle facture achat avec les mêmes informations et dans laquelle vous pouvez apporter une correction est créée. Pour plus d'informations, reportez-vous à [Procédure : enregistrer des achats](purchasing-how-record-purchases.md). La valeur du champ **Annulé** de la facture achat validée initiale devient **Oui**.
@@ -40,10 +41,11 @@ Dans la fenêtre **Facture achat enregistrée**, vous pouvez cliquer sur le bout
 4. Sélectionnez **Afficher un avoir correctif** pour afficher l'avoir achat validé qui annule la facture achat validée initiale.
 
 ## <a name="to-cancel-a-posted-purchase-invoice"></a>Pour annuler une facture achat reportée
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Factures achat enregistrées**, puis sélectionnez le lien associé.  
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Factures achat enregistrées**, puis sélectionnez le lien connexe.  
 2. Sélectionnez la facture achat reportée à annuler.
 
-    **Remarque** : si la case **Annulé** est cochée, vous ne pouvez pas annuler la facture achat validée car elle l'a déjà été, ou a été corrigée.
+    > [!NOTE]  
+>   Si la case à cocher **Annulé** est activée, vous ne pouvez pas annuler la facture achat validée car elle l'a déjà été, ou a été corrigée.
 3. Dans la fenêtre **Facture achat enregistrée** sélectionnez **Annuler**.
 
     Une note de crédit achat est automatiquement créée et reportée pour annuler la facture achat reportée initiale. La valeur du champ **Annulé** de la facture achat validée initiale devient **Oui**.

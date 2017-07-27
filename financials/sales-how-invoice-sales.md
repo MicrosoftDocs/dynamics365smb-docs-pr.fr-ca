@@ -1,6 +1,6 @@
 ---
-title: "Procédure : facturer des ventes| Microsoft Docs"
-description: "Décrit l&quot;utilisation des factures vente."
+title: "Créer une facture vente ou un document de vente | Microsoft Docs"
+description: "Décrit comment créer une facture vente, un document de vente ou, enregistrer votre entente avec un client pour vendre des produits à des conditions spécifiques."
 documentationcenter: 
 author: SorenGP
 ms.service: dynamics365-financials
@@ -8,21 +8,22 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: bill, sale
+ms.search.keywords: bill, sale, invoice, order
 ms.date: 03/29/2017
 ms.author: sgroespe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a31be0f9d07e2abb591e26f6bae34c6f6e4dcda6
-ms.openlocfilehash: e9fbf7b6599c4136a4077f199feb8f2f00d3a959
+ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
+ms.openlocfilehash: fb4b1ad14dfedaeca38293e0e0b4496300090c17
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
 # <a name="how-to-invoice-sales"></a>Procédure : facturer des ventes
 Vous créez une facture vente ou un document de vente pour enregistrer votre entente avec un client pour vendre certains produits selon certaines méthodes de livraison et de paiement.  
 
-**Remarque :** il existe quelques scénarios où vous devez utiliser une commande vente au lieu d'une facture vente :  
+> [!NOTE]  
+>   Dans certains scénarios, vous devez utiliser un document de vente au lieu d'une facture vente :  
 
 * Si vous devez livrer uniquement une partie d'une quantité de commande, par exemple, si la quantité totale n'est pas disponible.  
 * Si vous vendez des articles que votre fournisseur fournit directement à votre client (une livraison directe). Pour plus d'informations, voir [Procédure : effectuer des livraisons directes](sales-how-drop-shipment.md).  
@@ -66,7 +67,8 @@ Si vous avez défini des lignes vente récurrentes pour le client, tel qu'un ord
 
 11. Dans le champ **Quantité**, entrez le nombre d'unités du produit, de frais ou de la transaction que la ligne enregistre pour le client.  
 
-    **Remarque :** si l'article est de type **Article - Service** ou **Ressource**, la quantité est une unité de temps, telle que les heures, comme indiqué dans le champ **Code unité** de la ligne.  
+    > [!NOTE]  
+>   Si l'article est de type **Article - Service** ou **Ressource**, la quantité est une unité de temps, telle que les heures, comme indiqué dans le champ **Code unité de la ligne**.  
 
     La valeur du champ **Montant ligne** est calculée comme suit : *Prix unitaire* x *Quantité*.  
 
@@ -91,5 +93,6 @@ Les écritures article et client associées sont à présent créées dans votre
 [Définition des ventes](sales-setup-sales.md)  
 [Stock](inventory-manage-inventory.md)  
 [Procédure : envoyer des documents par e-mail](ui-how-send-documents-email.md)  
+[Facturation en vrac des réservations Microsoft dans Dynamics 365 for Financials](finance-bookings.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 

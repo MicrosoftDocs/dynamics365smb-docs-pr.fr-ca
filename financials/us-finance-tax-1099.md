@@ -1,6 +1,6 @@
 ---
 title: "Rapport de transactions 1099 aux États-Unis | Microsoft Docs"
-description: "Sur les documents achat, vous pouvez spécifier que le document est soumis à la 1099, et vous pouvez spécifier le code 1099 pour le fournisseur."
+description: "L'IRS requiert le formulaire de déclaration d'honoraires 1099 pour les paiements aux fournisseurs et vous pouvez spécifier un document achat est soumis à la 1099 et indiquer le code 1099 du fournisseur."
 services: project-madeira
 documentationcenter: 
 author: edupont04
@@ -13,14 +13,15 @@ ms.search.keywords: local
 ms.date: 03/29/2017
 ms.author: edupont
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a31be0f9d07e2abb591e26f6bae34c6f6e4dcda6
-ms.openlocfilehash: a0a31c28b6c96dc80593ac3862b97b36c3ec81c7
+ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
+ms.openlocfilehash: c20c52927aa979e56aeef7975fbcee1564ca4dd7
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
-# <a name="reporting-1099-transactions-in-the-us"></a>Rapport de transactions 1099 aux États-Unis
+# <a name="reporting-transactions-as-1099-liable-in-the-us"></a>Rapports de transactions assujetties à la taxe 1099 aux États-Unis
+
 L'Internal Revenue Service (IRS) requiert une ou plusieurs versions du formulaire de déclaration d'honoraires 1099 pour les paiements aux fournisseurs. Les copies de ces formulaires doivent être adressées aux fournisseurs annuellement avant le dernier jour de janvier. Sur les documents achat, vous pouvez spécifier que le document est soumis à la 1099, et vous pouvez spécifier le code 1099 pour le fournisseur.  
 
 ## <a name="1099-codes"></a>Codes 1099

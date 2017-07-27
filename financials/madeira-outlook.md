@@ -1,6 +1,6 @@
 ---
-title: "Utilisation de Dynamics 365 for Financials en tant que boîte de réception professionnelle dans Outlook | Microsoft Docs"
-description: "Utilisation de Dynamics 365 for Financials en tant que boîte de réception professionnelle dans Outlook"
+title: Utilisation de Dynamics 365 for Financials avec Outlook| Microsoft Docs
+description: "Dynamics 365 for Financials bénéficie d'une intégration complète à Office 365 ce qui vous permet de gérer tous vos interactions et courriels d'affaires avec les clients et les fournisseurs directement dans Outlook."
 services: project-madeira
 documentationcenter: 
 author: edupont04
@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: SMTP, mail, Office 365
-ms.date: 03/28/2017
+ms.date: 06/02/2017
 ms.author: edupont
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a31be0f9d07e2abb591e26f6bae34c6f6e4dcda6
-ms.openlocfilehash: a872c8817c412953a64cb1adb8f8234f2801e8fa
+ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
+ms.openlocfilehash: 1944d7633c5f19a42ae8bbe022b8ef026e9515cd
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
@@ -61,7 +61,7 @@ Dans les deux cas, si [!INCLUDE[d365fin](includes/d365fin_md.md)] n'est toujours
 
 ## <a name="see-also"></a>Voir aussi
 [Bienvenue dans [!INCLUDE[d365fin](includes/d365fin_md.md)]](index.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Ventes](sales-manage-sales.md)  
 [Achats](purchasing-manage-purchasing.md)  
 

@@ -1,5 +1,5 @@
 ---
-title: Le grand livre et le plan comptable| Microsoft Docs
+title: En savoir plus sur le grand livre et le COA| Microsoft Docs
 description: "Décrit le grand livre, le plan comptable, et les catégories de compte."
 services: project-madeira
 documentationcenter: 
@@ -10,17 +10,17 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: analysis, history, track
-ms.date: 02/14/2017
+ms.date: 06/02/2017
 ms.author: edupont
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a31be0f9d07e2abb591e26f6bae34c6f6e4dcda6
-ms.openlocfilehash: 04b94fa9f737765edbb1c93c506b444179b86fcf
+ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
+ms.openlocfilehash: 06becfd7e54803fea925e8364719576bef0a8bab
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
-# <a name="the-general-ledger-and-the-chart-of-accounts"></a>Le grand livre et le plan comptable
+# <a name="understanding-the-general-ledger-and-the-coa"></a>Familiarisation avec le grand livre et les COA
 Le grand livre stocke vos données financières, et le plan comptable affiche les comptes sur lesquels toutes les écritures sont reportées. [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut un plan comptable standard prêt à prendre en charge votre société.
 
 ## <a name="general-ledger-setup-and-general-posting-setup"></a>Configuration du grand livre et configuration du report général
@@ -62,7 +62,7 @@ Par exemple, le solde relevé par défaut solde est doté d'une sous-catégorie 
 À la prochaine génération des tableaux d'analyse, votre relevé solde suivant affichera un solde total pour la trésorerie et deux lignes avec les soldes pour le fonds de caisse et le compte chèque.  
 
 ## <a name="see-also"></a>Voir aussi
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Configuration ou modification du plan comptable](finance-setup-chart-accounts.md)  
-[Tableaux d'analyse](finance-account-schedule.md)  
+[Veille économique](bi.md)  
 

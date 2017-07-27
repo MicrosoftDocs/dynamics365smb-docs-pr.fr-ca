@@ -1,6 +1,6 @@
 ---
-title: "Procédure : assurer les immobilisations| Microsoft Docs"
-description: "Décrit comment assurer les immobilisations."
+title: Assurer les immobilisations| Microsoft Docs
+Description: "Vous pouvez affecter une immobilisation à une police d'assurance, ce qui est représenté par une fiche assurance."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: policy, coverage
-ms.date: 03/23/2017
+ms.date: 06/02/2017
 ms.author: sgroespe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a31be0f9d07e2abb591e26f6bae34c6f6e4dcda6
-ms.openlocfilehash: 4d7a2037327d362b6ef191d948c521576c9e04d1
+ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
+ms.openlocfilehash: 421d45e7f35ffdc46801fea85221ba453d52c516
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
@@ -29,7 +29,8 @@ En outre, vous pouvez attribuer une immobilisation à une police d'assurance et 
 
 Si la case **Compta. assurance auto.** n'est pas cochée dans la fenêtre **Paramètres immobilisations**, la validation des acquisitions à partir de la feuille immobilisation créera des lignes dans la fenêtre **Feuille assurance**, que vous devrez ensuite valider manuellement.
 
-**Avertissement** : si vous ne cochez pas la case **Compta. assurance auto.** dans la fenêtre **Paramètres immobilisations**, votre feuille assurance devrait être basée sur un modèle feuille sans souche de numéros. En effet, les numéros de document insérés à partir de la ligne journal immobilisation entreront sinon en conflit avec les séries de numéros du journal assurance. Pour en savoir plus concernant les modèles feuille et lots, voir [Procédure : configurer les informations générales relatives aux immobilisations](fa-how-setup-general.md).
+> [!WARNING]  
+>   Si vous ne cochez pas la case **Compta. assurance auto.** dans la fenêtre **Paramètres immobilisations**, votre feuille assurance devrait être basée sur un modèle feuille sans souche de numéros. En effet, les numéros de document insérés à partir de la ligne journal immobilisation entreront sinon en conflit avec les séries de numéros du journal assurance. Pour en savoir plus concernant les modèles feuille et lots, voir [Procédure : configurer les informations générales relatives aux immobilisations](fa-how-setup-general.md).
 
 Après avoir attribué une immobilisation à une police d'assurance, la case **Assuré** est cochée sur la fiche immobilisation. Lors de la vente de l'immobilisation, la case est automatiquement décochée.
 
@@ -38,7 +39,7 @@ Une police d'assurance pour une immobilisation doit être représentée par une 
 
 Lorsque vous recevez des informations concernant les modifications du montant de la couverture, vous pouvez saisir les nouvelles informations sur la **fiche assurance** afin de vous garantir que vous avez analysé correctement la couverture de la police d'assurance.  
 
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Assurance**, puis sélectionnez le lien associé.
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Assurance**, puis sélectionnez le lien connexe.
 2. Choisissez l'action **Nouveau** pour créer une fiche pour une police d'assurance. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 3. Sinon, sélectionnez la police d'assurance que vous souhaitez modifier, puis sélectionnez l'action **Modifier**.
 
@@ -47,24 +48,26 @@ Vous affectez une immobilisation à une police d'assurance en reportant sur les 
 
 La procédure suivante explique comment créer une ligne journal assurance manuellement. Si la case **Compta. assurance auto.** est cochée dans la fenêtre **Paramètres immobilisations**, les lignes feuille assurance sont ensuite créées automatiquement lorsque vous validez des coûts d'acquisition. Dans ce cas, tout ce que vous avez à faire consiste à reporter le journal.  
 
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Feuilles assurance**, puis sélectionnez le lien associé.  
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuilles assurance**, puis sélectionnez le lien connexe.  
 2. Ouvrez le journal pertinent, puis complétez les lignes journal, le cas échéant.  
 3. Pour affecter plusieurs immobilisations à une police d'assurance, créez des lignes feuille avec la même valeur dans le champ **N° assurance** et différentes valeurs dans le champ **N° immo.** .  
 4. Sélectionnez l'action **Valider**.  
 
-    **Remarque** : les écritures d'une feuille assurance sont uniquement validées en écritures couverture assurance.  
+    > [!NOTE]  
+>   Les écritures d'un journal assurance sont uniquement reportées dans le livre couverture d'assurance.  
 
 ## <a name="to-update-the-insurance-value-of-a-fixed-asset"></a>Pour mettre à jour la valeur assurance d'une immobilisation
 Vous pouvez utiliser le traitement par lots **Réévaluer assurance** pour mettre à jour la valeur des immobilisations couvertes.  
 
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Réévaluer assurance**, puis sélectionnez le lien associé.
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Actualiser assurance**, puis sélectionnez le lien connexe.
 2. Renseignez les champs selon vos besoins.
 
-    **Remarque** : dans le champ **Taux de réévaluation**, vous saisissez une baisse de 5 %, par exemple, soit 95, tout en saisissant une hausse de 2 %, soit 102.  
+    > [!NOTE]  
+>   Dans le champ **Taux de réévaluation**, vous saisissez une baisse de 5 %, par exemple, soit 95, tout en saisissant une hausse de 2 %, soit 102.  
 3. Cliquez sur le bouton **OK**.  
 
    Le traitement par lots calcule le nouveau montant en tant que pourcentage de la valeur totale assurée à partir de la fenêtre **Statistiques assurance**, puis crée une ligne dans la feuille assurance.  
-4. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Feuilles assurance**, puis sélectionnez le lien associé.  
+4. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuilles assurance**, puis sélectionnez le lien connexe.  
 5. Ouvrez le journal assurance pertinent, examinez les valeurs créées, puis reportez-les sur les écritures couverture d'assurance.  
 
 ## <a name="to-monitor-insurance-coverage"></a>Pour surveiller la couverture assurance
@@ -90,13 +93,13 @@ Pour vérifier que toutes les immobilisations sont attribuées à une police d'a
 ## <a name="to-view-insurance-coverage-ledger-entries"></a>Pour visualiser des écritures couverture d'assurance
 Vous pouvez visualiser les écritures que vous avez créées dans le grand livre couverture d'assurance.  
 
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Assurance**, puis sélectionnez le lien associé.  
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Assurance**, puis sélectionnez le lien connexe.  
 2. Sélectionnez la police d'assurance appropriée, puis sélectionnez l'action **Écritures comptables couverture**.  
 
 ## <a name="to-view-the-total-insurance-value-of-fixed-assets"></a>Pour afficher la valeur d'assurance totale des immobilisations
 Une fenêtre de matrice dédiée affiche les valeurs d'assurance qui sont enregistrées pour chaque police d'assurance pour chaque immobilisation suite aux montants d'assurance que vous avez reportés.  
 
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Assurance**, puis sélectionnez le lien associé.  
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Assurance**, puis sélectionnez le lien connexe.  
 2. Sélectionnez la police d'assurance appropriée, puis sélectionnez l'action **Valeur totale assurée par immo.**.  
 3. Renseignez les champs selon vos besoins.  
 4. Choisissez l'action **Afficher matrice**.  
@@ -105,7 +108,7 @@ Une fenêtre de matrice dédiée affiche les valeurs d'assurance qui sont enregi
 ## <a name="to-correct-insurance-coverage-entries"></a>Pour corriger des écritures couverture assurance
 Si une immobilisation a été jointe à la mauvaise police d'assurance, vous pouvez y remédier en créant deux écritures de reclassement à partir du journal assurance.  
 
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Feuilles assurance**, puis sélectionnez le lien associé.  
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuilles assurance**, puis sélectionnez le lien connexe.  
 2. Créez une ligne feuille pour l'immobilisation et la police d'assurance appropriée lorsque la valeur du champ **Montant** est positive.  
 3. Créez une autre ligne feuille pour l'immobilisation et la police d'assurance incorrecte lorsque la valeur du champ **Montant** est négative.  
 4. Sélectionnez l'action **Valider**.  
@@ -115,6 +118,6 @@ L'immobilisation sera détachée de la police d'assurance incorrecte, sur la sec
 ## <a name="see-also"></a>Voir aussi
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 

@@ -1,6 +1,6 @@
 ---
-title: "Procédure : enregistrer de nouveaux clients| Microsoft Docs"
-description: "Procédure : enregistrer de nouveaux clients"
+title: "Créer une fiche client pour enregistrer de nouveaux clients | Microsoft Docs"
+description: "Décrit comment créer une fiche client pour enregistrer des informations sur chaque nouveau client ou client auquel vous vendez."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -13,10 +13,10 @@ ms.search.keywords: client
 ms.date: 03/29/2017
 ms.author: sgroespe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a31be0f9d07e2abb591e26f6bae34c6f6e4dcda6
-ms.openlocfilehash: 6789e6a4129789e950c7f71ff86e62263ae9c087
+ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
+ms.openlocfilehash: ca4f1880e7a95eaf945d48ca2cdd7b3d5f80a621
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
@@ -25,7 +25,8 @@ Les clients sont l'origine de vos revenus. Chaque client auquel vous vendez un �
 
 Avant de pouvoir enregistrer de nouveaux clients, vous devez configurer divers codes vente que vous pouvez sélectionner lorsque vous renseignez les fiches client. Pour plus d'informations, reportez-vous à [Configuration des ventes](sales-setup-sales.md).
 
-**Remarque**: si des modèles client existent pour différents types de clients, une fenêtre s'affiche lorsque vous créez une nouvelle fiche client à partir de laquelle vous pouvez sélectionner un modèle client approprié. Si un seul modèle client existe, les nouvelles fiches client utiliseront toujours ce modèle.
+> [!NOTE]  
+>   Si des modèles client existent pour différents types de clients, une fenêtre s'affiche lorsque vous créez une nouvelle fiche client à partir de laquelle vous pouvez sélectionner un modèle client approprié. Si un seul modèle client existe, les nouvelles fiches client utiliseront toujours ce modèle.
 
 ## <a name="to-create-a-new-customer-card"></a>Pour créer une fiche client
 1. Sur la page d'accueil, sélectionnez l'action **Clients** pour ouvrir la liste des clients existants.  

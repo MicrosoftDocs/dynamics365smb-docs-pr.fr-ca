@@ -1,6 +1,6 @@
 ---
-title: "Modification des paramètres de base | Microsoft Docs"
-description: "Apprendre la manière dont vous pouvez modifier certains paramètres de base dans Financials."
+title: "Affichage et modification des paramètres de base dans Financials| Microsoft Docs"
+description: "Découvrez comment modifier certains des paramètres de base de Financials, par exemple, le tableau de bord, la compagnie ou la date de travail."
 services: project-madeira
 documentationcenter: 
 author: SusanneWindfeldPedersen
@@ -13,10 +13,10 @@ ms.search.keywords: change Role Center, notification, change company, change wor
 ms.date: 03/29/2017
 ms.author: solsen
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a31be0f9d07e2abb591e26f6bae34c6f6e4dcda6
-ms.openlocfilehash: cf910084523c51cd2966335bf3a7c8f81d3d0670
+ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
+ms.openlocfilehash: ed0a6848f07999246566ad740e02abfc561ae130
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
@@ -37,14 +37,17 @@ Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], une société fonctionne comme
 
 La compagnie par défaut est appelée CRONUS et contient uniquement des données de démonstration.
 
-**Astuce** : pour afficher un nom différent pour votre société dans l'application (par exemple sur la page d'accueil), définissez le champ **Nom** sur la page **Informations société** ou le champ **Nom d'affichage** sur la page **Sociétés**.  
+> [!TIP]  
+>   Pour afficher un nom différent pour votre société dans l'application (par exemple sur la page d'accueil), définissez le champ **Nom** sur la page **Informations société** ou le champ **Nom d'affichage** sur la page **Sociétés**.  
 
 ## <a name="work-date"></a>Date de travail
 La date de travail par défaut est généralement la date du jour. Vous pouvez être amené à modifier temporairement la date de travail pour effectuer des tâches telles que l'exécution de transactions à une date différente de la date actuelle, .
 
-**Conseil** : pour entrer rapidement la date de travail dans un champ de date, tapez **w**. Pour entrer la date actuelle dans le champ de date, tapez **t**.
+> [!TIP]  
+>   Pour entrer rapidement la date de travail dans un champ de date, tapez **w**. Pour entrer la date actuelle dans le champ de date, tapez **t**.
 
-**Important**: la date de travail est seulement modifiée jusqu'à ce que vous fermiez la société ou que la date change. Si vous ouvrez une autre compagnie, ou si vous ouvrez la même compagnie le lendemain, et si vous souhaitez toujours utiliser une date qui n'est pas la date de travail, il faut à nouveau définir la date de travail.
+> [!IMPORTANT]  
+>   La date de travail n'est modifiée que lorsque vous fermez la compagnie ou que la date change. Si vous ouvrez une autre compagnie, ou si vous ouvrez la même compagnie le lendemain, et si vous souhaitez toujours utiliser une date qui n'est pas la date de travail, il faut à nouveau définir la date de travail.
 
 ## <a name="confirmation-dialogs"></a>Boîtes de dialogue de confirmation
 Utilisez les options de cette section si vous souhaitez spécifier des vérifications supplémentaires pour le report des documents. Ces options sont normalement vérifiées, mais vous pouvez désactiver les cases à cocher pour éviter de recevoir des alertes ou des messages spécifiques.
@@ -52,5 +55,5 @@ Utilisez les options de cette section si vous souhaitez spécifier des vérifica
 ## <a name="see-also"></a>Voir aussi
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 [Procédure : changer de Tableau de bord](change-role.md)  
-[Personnalisation de votre [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-experiences.md)  
+[Personnalisation de votre expérience [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-experiences.md)  
 

@@ -1,6 +1,6 @@
 ---
-title: "Procédure : amortir des immobilisations| Microsoft Docs"
-description: "Décrit comment amortir des immobilisations."
+title: "Déprécier ou amortir des immobilisations| Microsoft Docs"
+description: "Vous devez définir comment vous allez déprécier ou amortir chacune des immobilisations."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: write down
-ms.date: 03/23/2017
+ms.date: 06/02/2017
 ms.author: sgroespe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a31be0f9d07e2abb591e26f6bae34c6f6e4dcda6
-ms.openlocfilehash: 3ea185979c2339a578149259f53aa81c18e5161b
+ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
+ms.openlocfilehash: 07e80551ca215eb4c2632faa9f534801a1813680
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
@@ -39,18 +39,18 @@ L'actualisation permet d'ajuster des valeurs en fonction de modifications géné
 ## <a name="to-calculate-depreciation-automatically"></a>Pour calculer automatiquement des amortissements
 Une fois par mois, ou à la fréquence de votre choix, vous pouvez lancer le traitement par lots **Calculer amortissement**. Le traitement en lot ignore les immobilisations qui ont été vendues, celles qui ont été bloquées ou qui sont inactives, et celles qui utilisent la méthode d'amortissement manuelle.  
 
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Calculer amortissement**, puis sélectionnez le lien associé.  
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), saisissez **Calculer amortissement**, puis sélectionnez le lien connexe.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 3. Cliquez sur le bouton **OK**.  
 
     Le traitement en lot calcule l'amortissement et crée des lignes dans le journal GL immobilisation.  
-4. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Feuille comptabilisation immobilisation**, puis sélectionnez le lien associé.  
+4. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuille comptabilisation immobilisation**, puis sélectionnez le lien connexe.  
 
     Dans la fenêtre **Feuille compta. immo**, dans le champ **Nbre jours amort.**, vous pouvez voir le nombre de jours d'amortissement calculé.  
 5. Sélectionnez l'action **Valider**.  
 
 ## <a name="to-post-depreciation-manually-from-the-fixed-asset-gl-journal"></a>Pour reporter un amortissement manuellement à partir du journal GL immobilisation
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Feuille compta. immo.**, puis sélectionnez le lien associé.  
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuille compta. immo.**, puis sélectionnez le lien connexe.  
 2. Créez une ligne journal initiale et complétez les champs, le cas échéant.  
 3. Dans le champ **Type compta. immo**, sélectionnez **Amortissement**.  
 4. Sélectionnez l'action **Insérer contrepartie immo.**. Une seconde ligne journal est créée pour le compte de contrepartie qui est configuré pour le report de l'amortissement. Pour en savoir plus, voir la section « Pour configurer des groupes de validation d'immobilisation » dans [Procédure : configurer des informations d'immobilisation générales pour les immobilisations](fa-how-setup-general.md).  
@@ -61,7 +61,7 @@ Si vous avez défini des clés d'affectation immobilisation pour ventiler des mo
 ## <a name="to-calculate-allocations-in-the-fixed-asset-gl-journal"></a>Pour calculer les affectations dans le journal GL immobilisation
 Lorsqu'une immobilisation est utilisée par plusieurs départements, vous pouvez affecter automatiquement un amortissement périodique à ces départements d'après une table d'affectation paramétrable.  
 
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Feuille compta. immo.**, puis sélectionnez le lien associé.  
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuille compta. immo.**, puis sélectionnez le lien connexe.  
 2. Créez une feuille initiale et complétez les champs, le cas échéant.
 3. Dans le champ **Type compta. immo**, sélectionnez **Ventilation**.  
 4. Sélectionnez l'action **Insérer contrepartie immo.**. Une seconde ligne journal est créée pour le compte de contrepartie qui est configuré pour le report de l'affectation.  
@@ -70,27 +70,30 @@ Lorsqu'une immobilisation est utilisée par plusieurs départements, vous pouvez
 ## <a name="use-duplication-lists-to-prepare-to-post-to-multiple-depreciation-books"></a>Utilisez les listes de duplication pour préparer le report vers plusieurs registres amortissement
 Lorsque vous renseignez les lignes journal à reporter dans un registre amortissement, vous pouvez dupliquer les lignes dans un autre journal afin de pouvoir reporter dans un autre registre amortissement. Pour en savoir plus, voir la section « Pour reporter les écritures vers différents registres amortissement ».
 
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Lois d'amortissement**, puis sélectionnez le lien associé.  
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), saisissez **Lois d'amortissement**, puis sélectionnez le lien connexe.  
 2. Ouvrez la loi d'amortissement, puis cochez la case **Inclure dans liste duplication**.  
 
-**Important** : si vous avez sélectionné le champ **Utiliser liste duplication**, n'utilisez pas de souches de numéros sur la feuille. En effet, les séries de numéros pour le journal GL immobilisation ne correspondent pas aux séries pour le journal immobilisation.  
+> [!IMPORTANT]  
+>   Si le champ **Utiliser liste duplication** est sélectionné, n'utilisez pas de souches de numéros sur la feuille. En effet, les séries de numéros pour le journal GL immobilisation ne correspondent pas aux séries pour le journal immobilisation.  
 
 ## <a name="to-post-entries-to-different-depreciation-books"></a>Pour reporter des écritures dans plusieurs registres amortissement
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Feuille compta. immo.**, puis sélectionnez le lien associé.  
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuille compta. immo.**, puis sélectionnez le lien connexe.  
 2. Dans la feuille avec laquelle vous souhaitez valider l'amortissement, sélectionnez la case **Utiliser liste duplication**.  
 3. Renseignez les champs restants selon vos besoins.  
 4. Sélectionnez l'action **Valider**.  
-5. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Feuilles immobilisation**, puis sélectionnez le lien associé.  
+5. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuille immobilisation**, puis sélectionnez le lien connexe.  
 
-    **Remarque :** la fenêtre **Feuille immobilisation** contient de nouvelles lignes pour différentes lois d'amortissement selon la liste de duplication.  
+    > [!NOTE]  
+>   La fenêtre **Feuille immobilisation** contient de nouvelles lignes pour différentes lois d'amortissement selon la liste de duplication.  
 6. Examinez ou modifiez les lignes, puis sélectionnez l'action **Valider**.  
 
-    **Remarque** : une autre façon de dupliquer une écriture dans une loi séparée consiste à saisir un code de loi d'amortissement dans le champ **Dupliquer dans journaux amort.** lorsque vous complétez une ligne feuille.  
+    > [!NOTE]  
+>   Pour dupliquer une écriture dans une autre loi, vous pouvez également saisir un code loi d'amortissement dans le champ **Dupliquer dans journaux amort.** lorsque vous renseignez une ligne feuille.  
 
 Vous pouvez copier des écritures d'une loi d'amortissement vers une autre à l'aide du traitement par lots **Copier lois d'amortissement**. Le traitement par lots crée des lignes feuille dans la feuille que vous avez indiquée dans la fenêtre **Param. feuille immo.** pour la loi d'amortissement vers laquelle vous souhaitez réaliser la copie. Pour plus d'informations, voir la procédure suivante.  
 
 ## <a name="to-copy-fixed-asset-ledger-entries-between-depreciation-books"></a>Pour copier des écritures immobilisations entre les registres amortissement
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Lois d'amortissement**, puis sélectionnez le lien associé.  
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), saisissez **Lois d'amortissement**, puis sélectionnez le lien connexe.  
 2. Ouvrez la fiche loi d'amortissement pertinente, puis sélectionnez l'action **Copier loi d'amortissement**.  
 3. Dans la fenêtre **Copier loi d'amortissement**, renseignez les champs comme nécessaire.  
 4. Cliquez sur le bouton **OK**.  
@@ -100,6 +103,6 @@ Les lignes copiées sont créées dans le journal GL immobilisation ou le journa
 ## <a name="see-also"></a>Voir aussi
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 

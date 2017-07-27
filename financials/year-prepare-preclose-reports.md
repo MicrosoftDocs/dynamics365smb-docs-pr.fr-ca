@@ -1,6 +1,6 @@
 ---
-title: "Préparation des rapports préalables à la fermeture| Microsoft Docs"
-description: "Propose un aperçu des rapports qui peuvent être utiles lorsque vous fermez l&quot;exercice."
+title: "Aperçu des rapports préalables à la fermeture pour vérifier l'exactitude des comptes | Microsoft Docs"
+description: "Fournit un aperçu des rapports qui vous permettent de vérifier l'exactitude des comptes avant de fermer les registres à la fin d'un exercice ou d'une période."
 services: project-madeira
 documentationcenter: 
 author: jswymer
@@ -9,17 +9,17 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/12/2016
+ms.date: 06/02/2017
 ms.author: jswymer
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a31be0f9d07e2abb591e26f6bae34c6f6e4dcda6
-ms.openlocfilehash: 3673b32320f2fc2b092afff7d0e8ba2c48edb0f9
+ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
+ms.openlocfilehash: ead7f45583b8edbdc00b6d41ae335d4b8adb14cf
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
-# <a name="preparing-pre-closing-reports"></a>Préparation des rapports préalables à la fermeture
+# <a name="using-pre-closing-reports"></a>Utilisation des rapports préalables à la fermeture
 Il existe de nombreux rapports standard qui vous permettent de vérifier la précision des comptes avant de fermer les registres à la fin d'un exercice ou d'une période. Par exemple, vous pouvez utiliser l'état **Clients : Balance** pour vérifier que le solde d'un groupe comptabilisation client est égal au solde du compte général correspondant à une date donnée.
 
 Le tableau suivant décrit un certain nombre d'états qui peuvent être utiles dans ce processus.
@@ -36,7 +36,7 @@ Le tableau suivant décrit un certain nombre d'états qui peuvent être utiles d
 | Imprimer un rapport Balance de vérification comprenant les soldes et les soldes période pour les comptes du grand livre. |Balance de vérification |
 | Imprimez une balance de vérification pour une compagnie consolidée. |Balance de vérification consolidée |
 
-Pour afficher un état, dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez le nom tel qu'il s'affiche dans la table, puis sélectionnez le lien associé.
+Pour afficher un état, sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez le nom tel qu'il s'affiche dans la table, puis sélectionnez le lien connexe.
 
 ## <a name="see-also"></a>Voir aussi
 [Clôture des exercices et des périodes](year-close-years-periods.md)  

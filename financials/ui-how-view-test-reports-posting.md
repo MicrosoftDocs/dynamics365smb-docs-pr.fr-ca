@@ -1,6 +1,6 @@
 ---
-title: "Procédure : afficher des rapports de test avant le report | Microsoft Docs"
-description: "Apprendre à obtenir une rapport de test avant de reporter des informations."
+title: Examiner un rapport de test avant le report des documents vente ou achat | Microsoft Docs
+description: "Avant de reporter un document, par exemple, une commande ou une note de crédit, vous pouvez le tester et le passer en revue pour rechercher les éventuelles erreurs susceptibles de bloquer le report."
 services: project-madeira
 documentationcenter: 
 author: SusanneWindfeldPedersen
@@ -9,23 +9,24 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/12/2016
+ms.date: 05/12/2017
 ms.author: solsen
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a31be0f9d07e2abb591e26f6bae34c6f6e4dcda6
-ms.openlocfilehash: c54a790dd2abfda88471733e37d93dbfe9634342
+ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
+ms.openlocfilehash: bf6d659eacf12903af128f77956de5c47ba038c2
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
 # <a name="how-to-view-test-reports-before-posting"></a>Procédure : afficher des rapports de test avant le report
 Lorsque vous êtes prêt à reporter un document (commande, facture ou note de crédit, par exemple), vous pouvez vérifier le document pour vous assurer qu'aucun problème ne risque de bloquer le report.
 
-**Remarque** : la procédure suivante permet de tester un document achat avant validation. Il s'agit de la même fonctionnalité pour les documents vente.
+> [!NOTE]  
+>   La procédure suivante permet de tester un document achat avant son report. Il s'agit de la même fonctionnalité pour les documents vente.
 
 ## <a name="to-print-a-test-report-before-posting-a-purchase-invoice"></a>Pour réaliser un rapport de test avant de reporter une facture achat
-1. Dans le coin supérieur droit, sélectionnez l'icône **Page ou état pour la recherche** ![Page ou état pour la recherche](media/ui-search/search_small.png "Icône Page ou état pour la recherche"), entrez **Factures achat**, puis sélectionnez le lien associé.
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Factures achat**, puis sélectionnez le lien connexe.
 2. Ouvrez la facture achat à tester.
 3. Sélectionnez l'option **Impression test**.  
 
