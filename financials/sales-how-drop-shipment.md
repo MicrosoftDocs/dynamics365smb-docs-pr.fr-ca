@@ -16,53 +16,52 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
 ms.openlocfilehash: 977debf7386ad1113ef54147b20fd24c7c285a78
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/11/2017
 
 ---
-# <a name="how-to-make-drop-shipments"></a>Procédure : effectuer des livraisons directes
-Lors d'une livraison directe, un ou plusieurs articles de l'un de vos fournisseurs sont livrés directement chez l'un de vos clients.
+# <a name="how-to-make-drop-shipments"></a><span data-ttu-id="aea2b-103">Procédure : effectuer des livraisons directes</span><span class="sxs-lookup"><span data-stu-id="aea2b-103">How to: Make Drop Shipments</span></span>
+<span data-ttu-id="aea2b-104">Lors d'une livraison directe, un ou plusieurs articles de l'un de vos fournisseurs sont livrés directement chez l'un de vos clients.</span><span class="sxs-lookup"><span data-stu-id="aea2b-104">A drop shipment is the shipment of items from one of your vendors directly to one of your customers.</span></span>
 
-Lorsqu'une commande vente est marquée pour livraison directe, et lorsque vous créez une commande achat spécifiant le client dans le champ **N° donneur d'ordre** , vous pouvez ensuite associer les deux documents et par conséquent informer le fournisseur de procéder directement à la livraison au client.
+<span data-ttu-id="aea2b-105">Lorsqu'une commande vente est marquée pour livraison directe, et lorsque vous créez une commande achat spécifiant le client dans le champ **N° donneur d'ordre**</span><span class="sxs-lookup"><span data-stu-id="aea2b-105">When a sales order is marked for drop shipment, and you create a purchase order specifying the customer in the **Sell-to Customer No.**</span></span> <span data-ttu-id="aea2b-106">, vous pouvez ensuite associer les deux documents et par conséquent informer le fournisseur de procéder directement à la livraison au client.</span><span class="sxs-lookup"><span data-stu-id="aea2b-106">field, you can link the two documents and thereby instruct the vendor to ship directly to the customer.</span></span>
 
-## <a name="to-create-a-sales-order-for-drop-shipment"></a>Pour créer un document de vente pour des livraisons directes
-Pour préparer une livraison directe, vous créez un document de vente pour un article, sauf que vous devez indiquer sur la ligne vente que la vente exige la livraison directe.
+## <a name="to-create-a-sales-order-for-drop-shipment"></a><span data-ttu-id="aea2b-107">Pour créer un document de vente pour des livraisons directes</span><span class="sxs-lookup"><span data-stu-id="aea2b-107">To create a sales order for drop shipment</span></span>
+<span data-ttu-id="aea2b-108">Pour préparer une livraison directe, vous créez un document de vente pour un article, sauf que vous devez indiquer sur la ligne vente que la vente exige la livraison directe.</span><span class="sxs-lookup"><span data-stu-id="aea2b-108">To prepare a drop shipment, you create a sales order for an item as normal, except you must indicate on the sales line that the sale requires drop shipment.</span></span>
 
-1. Créez un document de vente pour un article. Pour en savoir plus, voir [Procédure : vendre des produits](sales-how-sell-products.md).
-2. Sur la ligne commande vente pour l'article envoyé, cochez la case **Livraison directe**. Utilisez la fonction **Choisir les colonnes** si le champ n'est pas visible. Pour plus d'informations, voir [Personnalisation utilisateur](ui-user-personalization.md).
+1. <span data-ttu-id="aea2b-109">Créez un document de vente pour un article.</span><span class="sxs-lookup"><span data-stu-id="aea2b-109">Create a sales order for an item.</span></span> <span data-ttu-id="aea2b-110">Pour en savoir plus, voir [Procédure : vendre des produits](sales-how-sell-products.md).</span><span class="sxs-lookup"><span data-stu-id="aea2b-110">For more information, see [How to: Sell Products](sales-how-sell-products.md).</span></span>
+2. <span data-ttu-id="aea2b-111">Sur la ligne commande vente pour l'article envoyé, cochez la case **Livraison directe**.</span><span class="sxs-lookup"><span data-stu-id="aea2b-111">On the sales order line for the drop shipment, select the **Drop Shipment** check box.</span></span> <span data-ttu-id="aea2b-112">Utilisez la fonction **Choisir les colonnes** si le champ n'est pas visible.</span><span class="sxs-lookup"><span data-stu-id="aea2b-112">Use the **Choose Columns** function if the field is not visible.</span></span> <span data-ttu-id="aea2b-113">Pour plus d'informations, voir [Personnalisation utilisateur](ui-user-personalization.md).</span><span class="sxs-lookup"><span data-stu-id="aea2b-113">For more information, see [User Personalization](ui-user-personalization.md).</span></span>
 
 > [!NOTE]  
->   Cette fonctionnalité nécessite que votre expérience soit définie sur **Suite**. Pour plus d'informations, voir [Personnalisation de votre expérience [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-experiences.md).
+>   <span data-ttu-id="aea2b-114">Cette fonctionnalité nécessite que votre expérience soit définie sur **Suite**.</span><span class="sxs-lookup"><span data-stu-id="aea2b-114">This functionality requires that your experience is set to **Suite**.</span></span> <span data-ttu-id="aea2b-115">Pour plus d'informations, voir [Personnalisation de votre expérience [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-experiences.md).</span><span class="sxs-lookup"><span data-stu-id="aea2b-115">For more information, see [Customizing Your [!INCLUDE[d365fin](includes/d365fin_md.md)] Experience](ui-experiences.md).</span></span>
 
-## <a name="to-create-the-purchase-order-for-drop-shipment"></a>Pour créer le bon de commande pour livraison directe
-Pour préparer une livraison directe pour l'article mis en vente, vous créez un bon de commande, comme à l'accoutumée, sauf que vous devez indiquer sur le bon de commande qu'il doit être envoyé à votre client et non pas à vous-même.
+## <a name="to-create-the-purchase-order-for-drop-shipment"></a><span data-ttu-id="aea2b-116">Pour créer le bon de commande pour livraison directe</span><span class="sxs-lookup"><span data-stu-id="aea2b-116">To create the purchase order for drop shipment</span></span>
+<span data-ttu-id="aea2b-117">Pour préparer une livraison directe pour l'article mis en vente, vous créez un bon de commande, comme à l'accoutumée, sauf que vous devez indiquer sur le bon de commande qu'il doit être envoyé à votre client et non pas à vous-même.</span><span class="sxs-lookup"><span data-stu-id="aea2b-117">To prepare a drop shipment for the item to be sold, you create a purchase order as normal, except you must indicate on the purchase order that it must be shipped to your customer, not to yourself.</span></span>
 
-1. Créez un bon de commande. Ne remplissez pas les champs sur les lignes. Pour plus d'informations, reportez-vous à [Procédure : enregistrer des achats](purchasing-how-record-purchases.md).
-2. Dans le champ **N° donneur d'ordre** , sélectionnez le client auquel vous souhaitez vendre l'article en question.
-3. Choisissez l'action **Livraisons directes**, puis choisissez l'option **Extraire commande vente**.
-4. Dans la fenêtre **Liste des ventes**, sélectionnez la commande vente que vous avez préparée dans la section « Créer une commande vente pour livraison directe ».
-5. Cliquez sur le bouton **OK**.
+1. <span data-ttu-id="aea2b-118">Créez un bon de commande.</span><span class="sxs-lookup"><span data-stu-id="aea2b-118">Create a purchase order.</span></span> <span data-ttu-id="aea2b-119">Ne remplissez pas les champs sur les lignes.</span><span class="sxs-lookup"><span data-stu-id="aea2b-119">Do not fill any fields on the lines.</span></span> <span data-ttu-id="aea2b-120">Pour plus d'informations, reportez-vous à [Procédure : enregistrer des achats](purchasing-how-record-purchases.md).</span><span class="sxs-lookup"><span data-stu-id="aea2b-120">For more information, see [How to: Record Purchases](purchasing-how-record-purchases.md).</span></span>
+2. <span data-ttu-id="aea2b-121">Dans le champ **N° donneur d'ordre**</span><span class="sxs-lookup"><span data-stu-id="aea2b-121">In the **Sell-to Customer No.**</span></span> <span data-ttu-id="aea2b-122">, sélectionnez le client auquel vous souhaitez vendre l'article en question.</span><span class="sxs-lookup"><span data-stu-id="aea2b-122">field, select the customer that you are selling to.</span></span>
+3. <span data-ttu-id="aea2b-123">Choisissez l'action **Livraisons directes**, puis choisissez l'option **Extraire commande vente**.</span><span class="sxs-lookup"><span data-stu-id="aea2b-123">Choose the **Drop Shipments** action, and then choose the **Get Sales Order** action.</span></span>
+4. <span data-ttu-id="aea2b-124">Dans la fenêtre **Liste des ventes**, sélectionnez la commande vente que vous avez préparée dans la section « Créer une commande vente pour livraison directe ».</span><span class="sxs-lookup"><span data-stu-id="aea2b-124">In the **Sales List** window, select the sales order that you prepared in the "To create a sales order for drop shipment" section.</span></span>
+5. <span data-ttu-id="aea2b-125">Cliquez sur le bouton **OK**.</span><span class="sxs-lookup"><span data-stu-id="aea2b-125">Choose the **OK** button.</span></span>
 
-Les informations de ligne du document de vente sont insérées sur la/les ligne(s) bon de commande.
+<span data-ttu-id="aea2b-126">Les informations de ligne du document de vente sont insérées sur la/les ligne(s) bon de commande.</span><span class="sxs-lookup"><span data-stu-id="aea2b-126">The line information from the sales order is inserted on the purchase order line(s).</span></span>
 
-Vous pouvez maintenant informer le fournisseur quant à la livraison des articles à votre client, par exemple en envoyant le bon de commande au format PDF.     
+<span data-ttu-id="aea2b-127">Vous pouvez maintenant informer le fournisseur quant à la livraison des articles à votre client, par exemple en envoyant le bon de commande au format PDF.</span><span class="sxs-lookup"><span data-stu-id="aea2b-127">You can now instruct the vendor to ship the items to your customer, for example, by mailing the purchase order as a PDF.</span></span>     
 
-## <a name="to-view-the-linked-purchase-order-from-the-sales-order"></a>Pour afficher le bon de commande associé à partir du document de vente
-* Sélectionnez la ligne commande vente livraison directe, choisissez l'action **Commande**, puis l'action **Livraison directe** et enfin l'action **Commande achat**.
+## <a name="to-view-the-linked-purchase-order-from-the-sales-order"></a><span data-ttu-id="aea2b-128">Pour afficher le bon de commande associé à partir du document de vente</span><span class="sxs-lookup"><span data-stu-id="aea2b-128">To view the linked purchase order from the sales order</span></span>
+* <span data-ttu-id="aea2b-129">Sélectionnez la ligne commande vente livraison directe, choisissez l'action **Commande**, puis l'action **Livraison directe** et enfin l'action **Commande achat**.</span><span class="sxs-lookup"><span data-stu-id="aea2b-129">Select the drop-shipment sales order line, choose the **Order** action, choose the **Drop Shipment** action, and then choose the **Purchase Order** action.</span></span>
 
-## <a name="to-post-a-drop-shipment"></a>Pour reporter une livraison directe
-Lorsque le fournisseur a livré les articles, vous pouvez reporter le document de vente comme envoyé. Vous pouvez également valider la commande achat, mais uniquement avec l'option **Réceptionner** jusqu'à ce que la commande vente ait été facturée.
+## <a name="to-post-a-drop-shipment"></a><span data-ttu-id="aea2b-130">Pour reporter une livraison directe</span><span class="sxs-lookup"><span data-stu-id="aea2b-130">To post a drop shipment</span></span>
+<span data-ttu-id="aea2b-131">Lorsque le fournisseur a livré les articles, vous pouvez reporter le document de vente comme envoyé.</span><span class="sxs-lookup"><span data-stu-id="aea2b-131">After the vendor ships the items, you can post the sales order as shipped.</span></span> <span data-ttu-id="aea2b-132">Vous pouvez également valider la commande achat, mais uniquement avec l'option **Réceptionner** jusqu'à ce que la commande vente ait été facturée.</span><span class="sxs-lookup"><span data-stu-id="aea2b-132">You can also post the purchase order, but only with the **Receive** option until the sales order has been invoiced.</span></span>
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Commandes vente**, puis sélectionnez le lien connexe.
-2. Ouvrez les documents de vente que vous avez créés dans la section « Pour créer un document de vente pour une livraison directe ».
-3. Dans le champ **Qté à expédier**, spécifiez la quantité de commandes à envoyer, la quantité de commandes partielles ou totales.
-4. Sélectionnez l'action **Valider** ou **Valider et envoyer**.
-5. Sélectionnez l'option **Livrer** pour facturer ultérieurement ou l'option **Livrer et facturer** pour facturer immédiatement.
+1. <span data-ttu-id="aea2b-133">Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Commandes vente**, puis sélectionnez le lien connexe.</span><span class="sxs-lookup"><span data-stu-id="aea2b-133">Choose the ![Search for Page or Report](media/ui-search/search_small.png "Search for Page or Report icon") icon, enter **Sales orders**, and then choose the related link.</span></span>
+2. <span data-ttu-id="aea2b-134">Ouvrez les documents de vente que vous avez créés dans la section « Pour créer un document de vente pour une livraison directe ».</span><span class="sxs-lookup"><span data-stu-id="aea2b-134">Open the sales order that you created in the "To create a sales order for a drop shipment" section.</span></span>
+3. <span data-ttu-id="aea2b-135">Dans le champ **Qté à expédier**, spécifiez la quantité de commandes à envoyer, la quantité de commandes partielles ou totales.</span><span class="sxs-lookup"><span data-stu-id="aea2b-135">In the **Qty. to Ship** field, specify how many of the order quantity to ship, the full or a partial order quantity.</span></span>
+4. <span data-ttu-id="aea2b-136">Sélectionnez l'action **Valider** ou **Valider et envoyer**.</span><span class="sxs-lookup"><span data-stu-id="aea2b-136">Choose the **Post** or **Post and Send** action.</span></span>
+5. <span data-ttu-id="aea2b-137">Sélectionnez l'option **Livrer** pour facturer ultérieurement ou l'option **Livrer et facturer** pour facturer immédiatement.</span><span class="sxs-lookup"><span data-stu-id="aea2b-137">Choose either the **Ship** option to invoice later, or the **Ship and Invoice** option to invoice immediately.</span></span>
 
-## <a name="see-also"></a>Voir aussi
-[Procédure : vendre des produits](sales-how-sell-products.md)  
-[Procédure : enregistrer des achats](purchasing-how-record-purchases.md)  
-[Ventes](sales-manage-sales.md)  
-[Stock](inventory-manage-inventory.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+## <a name="see-also"></a><span data-ttu-id="aea2b-138">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="aea2b-138">See Also</span></span>
+[<span data-ttu-id="aea2b-139">Procédure : vendre des produits</span><span class="sxs-lookup"><span data-stu-id="aea2b-139">How to: Sell Products</span></span>](sales-how-sell-products.md)  
+[<span data-ttu-id="aea2b-140">Procédure : enregistrer des achats</span><span class="sxs-lookup"><span data-stu-id="aea2b-140">How to: Record Purchases</span></span>](purchasing-how-record-purchases.md)  
+[<span data-ttu-id="aea2b-141">Ventes</span><span class="sxs-lookup"><span data-stu-id="aea2b-141">Sales</span></span>](sales-manage-sales.md)  
+[<span data-ttu-id="aea2b-142">Stock</span><span class="sxs-lookup"><span data-stu-id="aea2b-142">Inventory</span></span>](inventory-manage-inventory.md)  
+<span data-ttu-id="aea2b-143">[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="aea2b-143">[Working with [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span></span>
 

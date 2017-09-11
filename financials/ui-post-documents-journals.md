@@ -15,27 +15,26 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
 ms.openlocfilehash: 349ad16c943f7efef7ca920f7adad82c8a1c0d5e
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/11/2017
 
 ---
-# <a name="post-documents-and-journals"></a>Reporter des documents et des journaux
-Le report est une tâche de comptabilité qui consiste à enregistrer des transactions commerciales dans les divers livres de la compagnie.
+# <a name="post-documents-and-journals"></a><span data-ttu-id="7d18e-103">Reporter des documents et des journaux</span><span class="sxs-lookup"><span data-stu-id="7d18e-103">Post Documents and Journals</span></span>
+<span data-ttu-id="7d18e-104">Le report est une tâche de comptabilité qui consiste à enregistrer des transactions commerciales dans les divers livres de la compagnie.</span><span class="sxs-lookup"><span data-stu-id="7d18e-104">Posting represents the accounting action of recording business transactions in the various company ledgers.</span></span>
 
-Quasiment chaque document et feuille de [!INCLUDE[d365fin](includes/d365fin_md.md)] propose un groupe **Validation** à partir duquel vous pouvez choisir entre différentes actions de validation, par exemple **Valider**, **Aperçu compta.**, **Valider et envoyer** et **Valider et envoyer par e-mail**.
+<span data-ttu-id="7d18e-105">Quasiment chaque document et feuille de [!INCLUDE[d365fin](includes/d365fin_md.md)] propose un groupe **Validation** à partir duquel vous pouvez choisir entre différentes actions de validation, par exemple **Valider**, **Aperçu compta.**, **Valider et envoyer** et **Valider et envoyer par e-mail**.</span><span class="sxs-lookup"><span data-stu-id="7d18e-105">Practically every document and journal in [!INCLUDE[d365fin](includes/d365fin_md.md)] offers a **Posting** group from which you can choose between different posting actions, such as **Post**, **Preview Posting**, **Post and Send**, **Post and Email**.</span></span>
 
-Le tableau suivant décrit les tâches associées, et inclut des liens vers les rubriques qui les décrivent.
+<span data-ttu-id="7d18e-106">Le tableau suivant décrit les tâches associées, et inclut des liens vers les rubriques qui les décrivent.</span><span class="sxs-lookup"><span data-stu-id="7d18e-106">The following table describes related tasks, with links to the topics that describe them.</span></span>
 
-| À | Voir |
+| <span data-ttu-id="7d18e-107">À</span><span class="sxs-lookup"><span data-stu-id="7d18e-107">To</span></span> | <span data-ttu-id="7d18e-108">Voir</span><span class="sxs-lookup"><span data-stu-id="7d18e-108">See</span></span> |
 | --- | --- |
-| En savoir plus sur le report de documents achat. |[Validation des achats](ui-post-purchases.md) |
-| En savoir plus sur le report de documents de vente. |[Validation des ventes](ui-post-sales.md) |
-| En savoir plus sur le report des journaux généraux. |[Utilisation de feuilles comptabilité](ui-work-general-journals.md) |
-| Obtenir un aperçu, dans une fenêtre, des écritures qui seront créées lors du report. |[Procédure : résultats de l'aperçu compta.](ui-how-preview-post-results.md) |
-| Obtenir un aperçu, dans un rapport, des écritures qui seront créées lors du report. |[Procédure : afficher des états de test avant la validation](ui-how-view-test-reports-posting.md) |
+| <span data-ttu-id="7d18e-109">En savoir plus sur le report de documents achat.</span><span class="sxs-lookup"><span data-stu-id="7d18e-109">Learn about posting purchase documents.</span></span> |[<span data-ttu-id="7d18e-110">Validation des achats</span><span class="sxs-lookup"><span data-stu-id="7d18e-110">Posting Purchases</span></span>](ui-post-purchases.md) |
+| <span data-ttu-id="7d18e-111">En savoir plus sur le report de documents de vente.</span><span class="sxs-lookup"><span data-stu-id="7d18e-111">Learn about posting sales documents.</span></span> |[<span data-ttu-id="7d18e-112">Validation des ventes</span><span class="sxs-lookup"><span data-stu-id="7d18e-112">Posting Sales</span></span>](ui-post-sales.md) |
+| <span data-ttu-id="7d18e-113">En savoir plus sur le report des journaux généraux.</span><span class="sxs-lookup"><span data-stu-id="7d18e-113">Learn about posting general journals.</span></span> |[<span data-ttu-id="7d18e-114">Utilisation de feuilles comptabilité</span><span class="sxs-lookup"><span data-stu-id="7d18e-114">Working with General Journals</span></span>](ui-work-general-journals.md) |
+| <span data-ttu-id="7d18e-115">Obtenir un aperçu, dans une fenêtre, des écritures qui seront créées lors du report.</span><span class="sxs-lookup"><span data-stu-id="7d18e-115">Preview, in a window, the entries that will be created when you post.</span></span> |[<span data-ttu-id="7d18e-116">Procédure : résultats de l'aperçu compta.</span><span class="sxs-lookup"><span data-stu-id="7d18e-116">How to: Preview Posting Results</span></span>](ui-how-preview-post-results.md) |
+| <span data-ttu-id="7d18e-117">Obtenir un aperçu, dans un rapport, des écritures qui seront créées lors du report.</span><span class="sxs-lookup"><span data-stu-id="7d18e-117">Preview, in a report, the entries that will be created when you post.</span></span> |[<span data-ttu-id="7d18e-118">Procédure : afficher des états de test avant la validation</span><span class="sxs-lookup"><span data-stu-id="7d18e-118">How to: View Test Reports Before Posting</span></span>](ui-how-view-test-reports-posting.md) |
 
-## <a name="see-also"></a>Voir aussi
-[Fonctionnalités marché](ui-across-business-areas.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+## <a name="see-also"></a><span data-ttu-id="7d18e-119">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="7d18e-119">See Also</span></span>
+[<span data-ttu-id="7d18e-120">Fonctionnalités marché</span><span class="sxs-lookup"><span data-stu-id="7d18e-120">General Business Functionality</span></span>](ui-across-business-areas.md)  
+<span data-ttu-id="7d18e-121">[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="7d18e-121">[Working with [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span></span>
 
 
