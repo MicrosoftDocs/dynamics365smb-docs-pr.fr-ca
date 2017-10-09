@@ -10,14 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: project management, KPI, work in process, work in progress
-ms.date: 06/06/2017
+ms.date: 07/04/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 9b374c80a649a1e05c98fcbcea1ca447ec0b8d27
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: 076b509ab5e9cf0f87f0910de11e49cda17f330a
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-monitor-job-progress-and-performance"></a>Procédure : Surveiller la progression et les performances
@@ -38,7 +37,8 @@ Pour afficher le résultat avec une autre méthode, vous pouvez modifier la mét
 ## <a name="to-create-a-job-wip-method"></a>Pour créer une méthode TEC projet
 Vous pouvez créer une méthode TEC projet qui reflète les besoins de votre organisation. Après l'avoir créée, vous pouvez la configurer comme méthode par défaut de calcul TEC projet qui sera utilisée dans votre organisation.  
 
-**Remarque**. Après avoir utilisé la nouvelle méthode pour créer des écritures TEC, vous ne pouvez pas supprimer la méthode ou la modifier.  
+> [!NOTE]
+> Après avoir utilisé la nouvelle méthode pour créer des écritures TEC, vous ne pouvez pas supprimer la méthode ou la modifier.  
 
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Méthodes TEC projet**, puis sélectionnez le lien connexe.  
 2. Cliquez sur **Nouveau**, puis renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
@@ -94,9 +94,10 @@ Toutes les écritures liées à des projets sont enregistrées dans des historiq
 Dans la fenêtre **Écritures comptables projet** vous pouvez passer en revue les écritures associées à un projet.  
 
 ## <a name="see-also"></a>Voir aussi
-[Gérer des projets](projects-manage-projects.md)  
-[Finances](finance.md)  
-[Achats](purchasing-manage-purchasing.md)         
-[Ventes](sales-manage-sales.md)      
+[Gestion des projets](projects-manage-projects.md)
+[Gestion de l'évaluation stock](finance-manage-inventory-costs.md)   
+[Finance](finance.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)         
+[Vente](sales-manage-sales.md)      
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 

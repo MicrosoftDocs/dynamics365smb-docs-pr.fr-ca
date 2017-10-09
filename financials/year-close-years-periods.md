@@ -12,18 +12,17 @@ ms.workload: na
 ms.search.keywords: year closing, close accounting period, close fiscal year, bank account detailed trial balance
 ms.date: 06/07/2017
 ms.author: jswymer
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 0f753e84a9318cdd3a58ed192437206659b6a2ad
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: b41328283c732d3d9cb3ff66ef89c13d0bd3b7bf
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="closing-years-and-periods"></a>Fermeture des exercices et des périodes
 À la fin d'un exercice financier, vous devez exécuter un certain nombre de tâches administratives, par exemple vous assurer que tous les documents et journaux sont reportés, veiller que les données de devise sont à jour, que les registres sont fermés, etc. Les tâches réelles dépendent de votre compagnie.
 
-Le tableau suivant fournit un aperçu des tâches que vous devez généralement exécuter pour fermer un exercice financier et une période comptable. Ces tâches sont répertoriées dans l'ordre de leur exécution en règle générale.
+Le tableau suivant fournit un aperçu des tâches que vous devez généralement exécuter pour fermer un exercice financier et une période comptable. 
 
 | À | Voir |
 | --- | --- |

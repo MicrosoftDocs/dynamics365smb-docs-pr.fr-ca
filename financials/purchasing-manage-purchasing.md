@@ -10,14 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: procurement, supply, vendor order
-ms.date: 03/29/2017
+ms.date: 08/10/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 653cd9b5e9651f2039ab18f3e7a26b299238d817
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: f9a932a521cd14e52e2a73e69544d2950235ea35
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="purchasing"></a>Procédure d'achat
@@ -31,22 +30,25 @@ Les produits peuvent être des articles en inventaire et des services. Pour plus
 
 Pour tous les processus d'achat, vous pouvez incorporer un flux de travail d'approbation, par exemple, pour exiger que les achats en grande quantité soient approuvés par le responsable de la comptabilité. Pour plus d'informations, reportez-vous à [Procédure : utilisation des flux d'approbation](across-how-use-approval-workflows.md).
 
-Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent. Ces tâches sont répertoriées dans l'ordre de leur exécution en règle générale.
+Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.
 
 | À | Voir |
 | --- | --- |
 | Créer une facture achat pour enregistrer votre entente avec un fournisseur pour acheter des biens selon certaines méthodes de livraison et de paiement. |[Procédure : enregistrer des achats](purchasing-how-record-purchases.md) |
+|Créez une devis pour refléter une demande de devis auprès de votre fournisseur, que vous pourrez ensuite convertir en bon de commande.|[Procédure : Demander des devis](purchasing-how-request-quotes.md)|
 | Créer une facture achat pour toutes les lignes ou pour les lignes sélectionnées sur une facture vente. |[Procédure : acheter des articles pour une vente](purchasing-how-purchase-products-sale.md) |
 | Effectuez une action sur une facture achat reportée impayée pour créer automatiquement une note de crédit et annulez la facture achat ou recréez-la pour que vous puissiez y apporter des corrections. |[Procédure : corriger ou annuler des factures vente impayées](purchasing-how-correct-cancel-unpaid-purchase-invoices.md) |
 | Créez une note de crédit achat pour rétablir une facture achat reportée spécifique pour indiquer quels produits vous retournez au fournisseur et quel montant règlement vous récupérez. |[Procédure : traiter les retours ou annulations d'achats](purchasing-how-register-new-vendors.md) |
-| Créer une fiche fournisseur pour chaque fournisseur auquel vous achetez des biens. |[Procédure : enregistrer de nouveaux fournisseurs](purchasing-how-register-new-vendors.md) |
+|Préparez la facturation de plusieurs réceptions provenant du même fournisseur en une seule fois en regroupant les réceptions sur une facture.|[Procédure : Regroupement de bons de réception sur une seule facture](purchasing-how-to-combine-receipts.md)|
+| Découvrez comment [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule le moment où vous devez commander un article pour le recevoir à une certaine date.|[Calcul de la date des achats](purchasing-date-calculation-for-purchases.md)|
 
 ## <a name="see-also"></a>Voir aussi
 [Définition des achats](purchasing-setup-purchasing.md)  
+[Procédure : enregistrer de nouveaux fournisseurs](purchasing-how-register-new-vendors.md)  
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
-[Gérer des projets](projects-manage-projects.md)    
-[Chaîne d'approvisionnement](madeira-supply-chain.md)      
+[Gestion des projets](projects-manage-projects.md)    
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]
+

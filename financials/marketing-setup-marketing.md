@@ -12,12 +12,11 @@ ms.workload: na
 ms.search.keywords: relationship, prospect, client, customer, campaign, promo
 ms.date: 06/06/2017
 ms.author: jswymer
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 1bac6c541a07f5da6c42fa076627e174249f708b
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: 941c9dcc1638fd82f945b0ac268854b5f34d4294
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="setting-up-relationship-management"></a>Paramétrage de la Gestion des relations
@@ -54,13 +53,10 @@ Pour plus d'informations, reportez-vous à [Procédure de synchronisation des co
 ## <a name="assigning-a-number-series-to-contacts-and-opportunities"></a>Affectation d'une série de numéros aux contacts et aux opportunités
 Vous pouvez configurer des séries de numéros pour les contacts et les opportunités. Si vous avez configuré une série de numéros pour les contacts, lorsque vous créez un contact et que vous appuyez ensuite sur Entrée dans le champ N° de la fiche contact, le programme saisit automatiquement le numéro de contact suivant.
 
-Pour plus d'informations sur les souches de numéros reportez-vous à [Création des souches de numéros](ui-create-number-series.md).
+Pour plus d'informations sur les séries de numéros, voir [Procédure : créer des séries de numéros](ui-create-number-series.md).
 
 ## <a name="searching-for-duplicate-contacts-when-contacts-are-created"></a>Recherche des doublons lors de la création de contacts
 Vous pouvez configurer le programme pour qu'il recherche automatiquement les doublons chaque fois que vous créez une compagnie contact ou vous pouvez choisir d'effectuer une recherche manuelle lorsque les contacts sont créés. Vous pouvez également configurer le programme pour qu'il mette automatiquement à jour les chaînes de recherche chaque fois que vous modifiez les données de contact ou que vous créez un contact. Vous pouvez choisir le pourcentage de chaînes communes, c'est-à-dire le pourcentage de chaînes qui doivent être identiques dans deux contacts pour que le système les considère comme des doublons.
-
-## <a name="setting-up-email-logging"></a>Configuration de la connexion à la messagerie
-Vous pouvez échanger des courriels avec des contacts, des clients, des fournisseurs, etc. Vous pouvez envoyer et recevoir vos courriels à partir de l'application ou d'Outlook. Pour que vous puissiez échanger des messages de cette manière et pour que le système puisse les stocker et les mettre en file d'attente, vous devez préalablement configurer certains paramètres (fréquence à laquelle le programme vérifie si des courriels sont en attente de traitement, nom du profil de connexion à la messagerie, etc.).
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion de contacts](marketing-contacts.md)  

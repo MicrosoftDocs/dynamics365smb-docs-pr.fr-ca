@@ -12,12 +12,11 @@ ms.workload: na
 ms.search.keywords: postpone
 ms.date: 06/16/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
 ms.openlocfilehash: 40db0f3018bcf9575f80aa858bd9febd7bf0846a
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-defer-revenues-and-expenses"></a>Procédure : Échelonner les recettes et les dépenses
@@ -82,7 +81,7 @@ Exemple : la date de report est le 06/02/2016. Si vous saisissez « Dépenses 
 1. Dans la fenêtre **Facture vente enregistrée** sélectionnez l'action **Aperçu compta.**.
 2. Dans la fenêtre **Aperçu compta.**, sélectionnez l'action **Écriture comptable**, puis sélectionnez l'action **Afficher écritures associées**.
 
-Les écritures comptables à valider vers le compte d'échelonnement spécifié, par exemple, les Revenus comptabilisés d'avance, sont désignées par la description que vous avez saisie dans le champ **Description de la période** du modèle d'échelonnement, par exemple « Dépenses échelonnées pour février 2016 ».
+Les écritures à reporter au compte d'échelonnement spécifié, par exemple, les revenus comptabilisés d'avance, sont désignées par la description que vous avez saisie dans le champ **Description de la période** du modèle d'échelonnement, par exemple « Dépenses échelonnées pour février 2016 ».
 
 ## <a name="to-review-posted-deferrals-in-the-sales-deferral-summary-report"></a>Pour examiner les échelonnements reportés dans le rapport Résumé échelonnement ventes
 > [!NOTE]  

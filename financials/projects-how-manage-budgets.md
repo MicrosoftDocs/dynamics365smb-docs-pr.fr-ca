@@ -12,12 +12,11 @@ ms.workload: na
 ms.search.keywords: project budget, forecast
 ms.date: 06/06/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
 ms.openlocfilehash: 0e480c67ddb2acd5e98799c98cb1cd9d972889df
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-manage-job-budgets"></a>Procédure : Gérer les budgets de projets
@@ -39,7 +38,7 @@ Reportez-vous aux informations suivantes pour le champ **Type ligne**.
 | --- | --- |
 | **Budget et Facturable** |Les montants coût et prix entrés sur la ligne planification sont les coûts budgétés pour la ligne planification donnée. Le prix sera facturé. |
 | **Budget** |Le client ne doit pas payer l'utilisation. L'utilisation n'est pas transférée à une facture, mais sera encore utilisée dans le calcul de TEC. |
-| **Facturable** |Le client doit payer l'utilisation. L'utilisation est transférée à la facture, sur la base de la quantité spécifiée dans le champ Qté. à transférer à facturer. |
+| **Facturable** |Le client doit payer l'utilisation. L'utilisation est transférée à la facture, sur la base de la quantité spécifiée dans le champ Qté à transférer à facturer. |
 
 > [!NOTE]  
 >   Le champ **Date planning** de la ligne planning contient la date prévue de l'achèvement et de la validation de l'activité associée à cette ligne planning. C'est aussi la date à laquelle la ligne planification peut être transférée à une facture vente et être reportée.  

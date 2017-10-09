@@ -12,12 +12,11 @@ ms.workload: na
 ms.search.keywords: Yodlee, feed, stream, data exchange, AMC, bank file import, bank file export, re-export, bank transfer, AMC, bank data conversion service, funds transfer
 ms.date: 06/02/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
 ms.openlocfilehash: 6c7dd8051467b044b7fd569367c5af802d30e5c3
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-set-up-the-bank-data-conversion-service"></a>Procédure : configurer le service de conversion de données bancaires
@@ -39,7 +38,7 @@ Pour importer ou exporter des fichiers bancaires, vous devez configurer votre pr
 2. La fenêtre **Paramètres service conv. données banque** s'ouvre avec trois champs préremplis avec les URL appropriées du fournisseur du service de conversion de données bancaires.
 
     > [!NOTE]  
->   Dans la base de données de démonstration CRONUS International Ltd., les champs Nom d'utilisateur et Mot de passe sont préremplis avec les informations de connexion à la démonstration, que vous remplacerez par les informations réelles de votre compagnie en vous inscrivant au service de conversion de données bancaires.
+>   Dans la base de données de démonstration CRONUS International Ltd., les champs Nom d'utilisateur et Mot de passe sont préremplis avec les informations de connexion à la compagnie de démonstration, que vous remplacerez par les informations réelles de votre compagnie en vous inscrivant au service de conversion de données bancaires.
 3. Dans le champ **URL d'inscription**, cliquez sur le bouton de navigateur pour ouvrir la page d'inscription du fournisseur de service.  
 4. Dans la page d'inscription du fournisseur de services de données bancaires, entrez le nom de l'utilisateur et le mot de passe de l'abonnement de votre compagnie au service, puis suivez le processus d'inscription comme indiqué par le fournisseur de service.
 

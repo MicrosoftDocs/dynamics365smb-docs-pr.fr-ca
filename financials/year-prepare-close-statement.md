@@ -12,12 +12,11 @@ ms.workload: na
 ms.search.keywords: year closing, close accounting period, close fiscal year, aging, creditor payments, vendor payments, assets, liabilities, equity, analysis, reporting, financial report, business intelligence, BI, Power Bi, KPI
 ms.date: 06/02/2017
 ms.author: jswymer
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
 ms.openlocfilehash: 9070d8d1454b43ccfc25276ac679c099b9e809ab
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="preparing-closing-statements"></a>Préparation des relevés de fermeture
@@ -33,7 +32,7 @@ Le tableau suivant décrit un certain nombre d'états pouvant être utiles dans 
 | Comparer la balance de vérification avec un budget. |Balance de vérification/budget |
 | Imprimer un rapport Balance de vérification avec les soldes et les soldes période des comptes du grand livre calculés pour une série de périodes. |Balance par période |
 | Imprimez un tableau d'analyse pour analyser les chiffres des comptes du grand livre ou comparer les écritures GL réelles et les écritures budget du grand livre. |Tableau d'analyse |
-| Vérifier que les écritures client et fournisseur sont équilibrées avec les écritures correspondantes du grand livre. |Concordance cptes clt/ fourn. |
+| Vérifier que les écritures client et fournisseur sont équilibrées avec les écritures correspondantes du grand livre. |Rappr. cptes clients et fourn. |
 
 Pour afficher un état, sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez le nom tel qu'il s'affiche dans la table, puis sélectionnez le lien connexe.
 

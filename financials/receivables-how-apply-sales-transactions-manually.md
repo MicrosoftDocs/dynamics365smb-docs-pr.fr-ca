@@ -1,8 +1,6 @@
 ---
 title: "Affecter des écritures client pour rapprocher manuellement les paiements client | Microsoft Docs"
 description: "Décrit comment affecter des règlements ou des remboursements client dans une ou plusieurs écritures client ouvertes et rapprocher des paiements client."
-services: project-madeira
-documentationcenter: 
 author: SorenGP
 ms.service: dynamics365-financials
 ms.topic: article
@@ -10,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, cash receipt
-ms.date: 03/29/2017
+ms.date: 09/08/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 568bd66c201764cae45ea12a900ea12eabbf0546
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: ccef6a35b1632bd94f64c5e9ad56ecd3bacbfd06
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-reconcile-customer-payments-manually"></a>Procédure : rapprocher les paiements client manuellement
@@ -45,13 +43,13 @@ Vous pouvez également lettrer les paiements client et fournisseur dans la fenê
 4. Renseignez le champ **Date comptabilisation**.  
 5. Dans le champ **Type document**, sélectionnez **Paiement**.
 
-    Le champ **N° document** est renseigné par la série de numéros affectée au lot.  
-6. Utilisez le champ **N° doc. externe** pour stocker un identificateur tel que le numéro de chèque du client.
+    Le champ **N° document** contient les séries de numéros affectées au lot.  
+6. Utilisez le champ **N° doc. externe** pour stocker un identificateur, tel que le numéro de chèque du client.
 7. Dans le champ **Type compte**, sélectionnez **Client**.
-8. Dans le champ **N° compte**, sélectionnez le compte du grand livre de votre choix.
+8. Dans le champ **N° compte**, sélectionnez le compte du grand livre approprié.
 9. Si vous souhaitez reporter l'affectation en même temps que le journal, suivez l'un des exemples ci-dessous.
 10. Dans le champ **Type compte contrepartie**, sélectionnez **Compte général** pour les règlements et **Compte bancaire** pour les autres paiements.
-11. Dans le champ **N° compte contrepartie**, sélectionnez le compte pour les règlements ou le compte bancaire approprié pour d'autres paiements.
+11. Dans le champ **N° compte de contrepartie**, sélectionnez le compte caisse pour les paiements en espèces ou le compte bancaire approprié pour d'autres paiements.
 12. Reportez le journal.
 
 ## <a name="to-apply-a-payment-to-a-single-customer-ledger-entry"></a>Pour affecter un paiement à une seule écriture client
@@ -61,12 +59,12 @@ Vous pouvez également lettrer les paiements client et fournisseur dans la fenê
 4. Dans le champ **Type document**, entrez **Paiement**.
 5. Dans le champ **Type compte**, entrez **Client**.
 6. Dans le champ **Type compte contrepartie**, entrez **Compte bancaire.**
-7. Dans le champ **N° doc. lettrage**, sélectionnez le champ permettant d'ouvrir la fenêtre **Lettrer écritures client**.
+7. Dans le champ **N° doc. affecté à**, sélectionnez le champ permettant d'ouvrir la fenêtre **Affecter écritures clients**.
 8. Dans la fenêtre **Lettrer écritures client**, sélectionnez l'écriture à laquelle lettrer le paiement.
 9. Dans le champ **Montant à lettrer**, entrez le montant à lettrer à l'écriture. Si vous n'entrez aucun montant, le montant maximal est affecté.
 
     Au bas de la fenêtre **Lettrer écritures client**, vous voyez le montant spécifique dans le champ **Montant lettré** et constatez si le lettrage est équilibré.  
-10. Cliquez sur le bouton **OK**. La fenêtre **Feuille règlement** affiche désormais l'écriture que vous avez saisie dans les champs **Type doc. lettrage** et **N° doc. lettrage** .
+10. Cliquez sur le bouton **OK**. La fenêtre **Journal des encaissements** affiche désormais l'écriture que vous avez saisie dans les champs **Type document affecté à** et **N° doc. affecté à**.
 11. Reportez le journal des encaissements.
 
 ## <a name="to-apply-a-payment-to-multiple-customer-ledger-entries"></a>Pour affecter un paiement à plusieurs écritures client
@@ -77,8 +75,8 @@ Vous pouvez également lettrer les paiements client et fournisseur dans la fenê
 5. Dans le champ **Type compte**, entrez **Client**.
 6. Dans le champ **Type compte contrepartie**, entrez **Compte bancaire.**
 7. Dans le champ **Montant**, entrez le paiement complet sous forme de montant négatif.
-8. Pour lettrer le paiement avec plusieurs écritures comptables client lors de la validation, sélectionnez l'action **Lettrer écritures**.
-9. Sélectionnez les lignes correspondant aux écritures avec lesquelles l'écriture lettrage doit être lettrée, puis sélectionnez l'action **Lettrer**.
+8. Pour lettrer le paiement avec plusieurs écritures comptables client lors de la validation, sélectionnez l'action **Lettrer écritures**.  
+9. Sélectionnez les lignes correspondant aux écritures avec lesquelles l'écriture lettrage doit être lettrée, puis sélectionnez l'action **Lettrer**.  
 10. Sur chaque ligne du champ **Montant à lettrer**, entrez le montant que vous souhaitez lettrer à l'écriture. Si vous n'entrez aucun montant, le montant maximal est affecté.
 
     Au bas de la fenêtre **Lettrer écritures client**, vous voyez le montant spécifique dans le champ **Montant lettré** et constatez si le lettrage est équilibré.  
@@ -88,11 +86,11 @@ Vous pouvez également lettrer les paiements client et fournisseur dans la fenê
 ## <a name="to-apply-a-credit-memo-to-a-single-customer-ledger-entry"></a>Pour affecter une note de crédit à une seule écriture client
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Feuille règlement**, puis sélectionnez le lien connexe.
 2. Ouvrez la note de crédit vente souhaitée.
-3. Pour lettrer l'avoir avec une seule écriture comptable client lors de la validation, dans le champ **N° doc. lettrage**, sélectionnez l'écriture à laquelle vous souhaitez affecter le paiement.
+3. Pour affecter la note de crédit à une seule écriture client lors du report, dans le champ **N° doc. affecté à**, sélectionnez l'écriture à laquelle affecter le paiement.
 4. Sur la ligne du champ **Montant à lettrer**, entrez le montant à lettrer avec l'écriture.  
 
     Si vous n'entrez aucun montant, le programme affecte automatiquement le montant maximal. Au bas de la fenêtre **Lettrer écritures client**, vous voyez le montant spécifique dans le champ **Montant lettré** et constatez si le lettrage est équilibré.    
-5. Cliquez sur le bouton **OK**. La fenêtre **Avoir vente** affiche désormais l'écriture que vous avez saisie dans les champs **Type doc. lettrage** et **N° doc. lettrage** . Et le montant de la note de crédit à reporter, escomptes de paiement éventuels déduits.
+5. Cliquez sur le bouton **OK**. La fenêtre **Note de crédit vente** affiche désormais l'écriture que vous avez saisie dans les champs **Type document affecté à** et **N° doc. affecté à**. Et le montant de la note de crédit à reporter, escomptes de paiement éventuels déduits.
 6. Reportez la note de crédit.
 
 ## <a name="to-apply-a-credit-memo-to-multiple-customer-ledger-entries"></a>Pour affecter une note de crédit à plusieurs écritures client

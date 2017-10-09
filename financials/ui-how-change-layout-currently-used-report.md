@@ -3,7 +3,7 @@ title: "Modifier l'aspect d'un rapport en sélectionnant une présentation diff�
 description: "Vous pouvez utiliser différentes présentations d'un rapport, et passer d'une présentation à l'autre pour modifier l'aspect d'un rapport."
 services: project-madeira
 documentationcenter: 
-author: SusanneWindfeldPedersen
+author: jswymer
 ms.service: dynamics365-financials
 ms.topic: article
 ms.devlang: na
@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: customized report, document layout, logo, personalize
 ms.date: 03/29/2017
-ms.author: solsen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: de0c429e8a5e03124c5a20977a9723570879952a
+ms.author: jswymer
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: 677b7319baff476671c4c8ade4afed843f936c36
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-change-which-layout-is-currently-used-on-a-report"></a>Procédure : Modification de la présentation actuellement utilisée sur un rapport
@@ -25,7 +25,7 @@ Un rapport peut être créé avec plus d'une présentation de rapport, que vous 
 Selon les présentations qui sont disponibles pour un rapport, vous pouvez choisir d'utiliser une présentation de rapport RDLC intégrée, une présentation de rapport Word, ou une présentation personnalisée. Pour plus d'informations sur les présentations de rapport RDLC et Word, les présentations intégrées et personnalisées, et plus encore, reportez-vous à [Gérer la présentation des états](ui-manage-report-layouts.md).
 
 ## <a name="to-change-the-layout-that-is-used-on-a-report"></a>Pour modifier la présentation qui est utilisée dans un rapport
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Search for Page or Report icon"), entrez **Sélection présentation état**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Sélection présentation rapport**, puis sélectionnez le lien associé.  
    La fenêtre **Sélection présentation état** répertorie tous les états disponibles pour la société spécifiée dans le champ Société en haut de la fenêtre. Le champ Présentation sélectionnée spécifie la présentation qui est actuellement utilisée sur le rapport.
 2. Définissez le champ **Société** en haut de la fenêtre sur la société qui inclut le rapport.
 3. Pour modifier la présentation utilisée par un état, sur la ligne correspondant à l'état dans la liste, définissez le champ **Présentation sélectionnée** sur l'une des options suivantes :

@@ -12,11 +12,11 @@ ms.workload: na
 ms.search.keywords: purchasing agent
 ms.date: 03/29/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
 ms.openlocfilehash: 98b9dfce0b0a9723992fe3de77a1130ca2b05e7a
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-set-up-purchasers"></a>Procédure : configurer des acheteurs

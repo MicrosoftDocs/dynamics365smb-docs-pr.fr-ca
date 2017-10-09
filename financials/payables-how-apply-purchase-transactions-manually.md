@@ -10,14 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment application, payment processing, match payments
-ms.date: 06/06/2017
+ms.date: 06/15/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 6f0f3e1c14e21fff736b54b4c5f7423e1e909e72
+ms.translationtype: HT
+ms.sourcegitcommit: eea34afbee429d14ab150894729cb4ea3843bb2b
+ms.openlocfilehash: 7c13f127f1ca9f9d95878d79afe21488df7868a6
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-reconcile-vendor-payments-manually"></a>Procédure : rapprocher les paiements fournisseur manuellement
@@ -35,15 +34,15 @@ Vous pouvez affecter les écritures fournisseur de trois manières différentes�
 > [!NOTE]  
 >   Si le champ **Mode de lettrage** de la fiche fournisseur contient **Au plus ancien**, les paiements sont automatiquement lettrés avec l'écriture de crédit ouverte la plus ancienne si vous ne spécifiez pas avec quelle écriture lettrer. Si le mode de lettrage pour un client est **Manuel**, vous devez lettrer les écritures manuellement.
 
-Vous pouvez lettrer les paiements fournisseur manuellement à leurs documents achat associés lorsque vous validez les paiements dans la fenêtre **Feuille paiement**. Pour plus d'informations sur comment renseigner la feuille paiement, reportez-vous à [Procédure : exécuter les paiements](payables-make-payments.md).
+Vous pouvez lettrer les paiements fournisseur manuellement à leurs documents achat associés lorsque vous validez les paiements dans la fenêtre **Feuille paiement**. Pour plus d'informations sur la manière de renseigner le journal paiement, reportez-vous à [Effectuer des paiements](payables-make-payments.md).
 
-Vous pouvez également affecter des paiements fournisseur et des paiements client après que les paiements apparaissent en tant que transactions bancaires négatives au niveau de votre banque. Dans la fenêtre **Feuille rapprochement bancaire**, vous pouvez utiliser les fonctions pour l'importation de relevés bancaires, le lettrage automatique, et le rapprochement bancaire. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
+Vous pouvez également affecter des paiements fournisseur et des paiements client après que les paiements apparaissent en tant que transactions bancaires négatives dans votre banque. Dans la fenêtre **Feuille rapprochement bancaire**, vous pouvez utiliser les fonctions pour l'importation de relevés bancaires, le lettrage automatique, et le rapprochement bancaire. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
 
 ## <a name="to-apply-a-payment-to-a-single-or-multiple-vendor-ledger-entries"></a>Pour affecter un paiement à une seule ou à plusieurs écritures fournisseur
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Feuille paiement**, puis sélectionnez le lien connexe.
 2. Dans la fenêtre **Feuille paiement**, dans la première ligne feuille, saisissez les informations appropriées sur l'écriture règlement.
 3. Pour affecter une seule écriture fournisseur :
-   1. Dans le champ **N° doc. lettrage**, sélectionnez le champ permettant d'ouvrir la fenêtre **Lettrer écritures fournisseur**.
+   1. Dans le champ **N° doc. affecté à**, sélectionnez le champ permettant d'ouvrir la fenêtre **Affecter écritures fournisseur**.
    2. Dans la fenêtre **Lettrer écritures fournisseur**, sélectionnez l'écriture à laquelle lettrer le paiement.
    3. Sur la ligne du champ **Montant à lettrer**, entrez le montant à lettrer à l'écriture.
 4. Ou, pour affecter plusieurs écritures fournisseur :
@@ -61,7 +60,7 @@ Vous pouvez également affecter des paiements fournisseur et des paiements clien
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Feuille paiement**, puis sélectionnez le lien connexe.
 2. Ouvrez la note de crédit à affecter.
 3. Entrez les informations nécessaires dans l'en-tête.
-4. Pour lettrer une seule écriture comptable fournisseur, sur le raccourci **Application**, dans le champ **N° doc. lettrage** sélectionnez l'écriture à laquelle appliquer le crédit, puis, dans le champ **Montant à lettrer**, entrez le montant à lettrer avec l'écriture.
+4. Pour affecter une seule écriture fournisseur, dans le raccourci **Affectation**, dans le champ **N° doc. affecté à**, sélectionnez l'écriture à laquelle affecter le crédit puis, dans le champ **Montant à affecter**, entrez le montant à affecter à l'écriture.
 5. Ou, pour affecter plusieurs écritures fournisseur :
 
    1. Sélectionnez l'action **Lettrer écritures**.
@@ -71,7 +70,7 @@ Vous pouvez également affecter des paiements fournisseur et des paiements clien
 
        Si vous n'entrez aucun montant, le programme affecte automatiquement le montant maximal. Au bas de la fenêtre **Lettrer écritures fournisseur**, vous voyez le montant dans le champ **Montant lettré** et vous constatez si le lettrage est équilibré.
 6. Cliquez sur le bouton **OK**.  
-   La fenêtre **Avoir achat** affiche l'écriture que vous avez sélectionnée dans les champs **Type doc. lettrage** et **N° doc. lettrage** . La fenêtre affiche également le montant de la note de crédit à reporter, escomptes de paiement éventuels déduits.
+   La fenêtre **Note de crédit achat** affiche l'écriture que vous avez sélectionnée dans les champs **Type document affecté à** et **N° doc. affecté à**. La fenêtre affiche également le montant de la note de crédit à reporter, escomptes de paiement éventuels déduits.
 7. Cliquez sur le bouton **Valider** pour valider l'avoir achat.
 
 ## <a name="to-apply-posted-vendor-ledger-entries"></a>Pour affecter des écritures fournisseur reportées

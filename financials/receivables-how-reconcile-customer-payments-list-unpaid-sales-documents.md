@@ -9,14 +9,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, cash receipts, customer payment
-ms.date: 06/16/2017
+ms.date: 09/08/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 8ea27f21b2e4acc25b4acc6b5ba15580ca5a1997
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: 94055c34b67f05faa8955fdff28f854e77d9664f
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-reconcile-customer-payments-manually-from-a-list-of-unpaid-sales-documents"></a>Procédure : rapprocher les paiements client manuellement à partir de la liste des documents vente échus
@@ -74,7 +73,7 @@ Les écritures paiement sont reportées sur les comptes grand livre, bancaire et
 
 Les écritures paiement sont reportées sur les comptes grand livre, bancaire et client. Chaque paiement est affecté au document vente reporté lié.  
 
-Si un paiement avec la banque n'est pas représenté par une ligne dans la fenêtre **Enregistrement de paiement**, cela peut être parce que le document connexe n'a pas encore été validé. Dans ce cas, vous pouvez utiliser la fonction de recherche pour trouver rapidement le document et le reporter pour traiter le paiement. Pour plus d'informations, reportez vous à Procédure : recherche de documents impayés pendant le rapprochement manuel des paiements.  
+Si un paiement avec la banque n'est pas représenté par une ligne dans la fenêtre **Enregistrement de paiement**, cela peut être parce que le document connexe n'a pas encore été validé. Dans ce cas, vous pouvez utiliser la fonction de recherche pour trouver rapidement le document et le reporter pour traiter le paiement. Pour plus d'informations, voir la section « Pour rechercher un document vente spécifique qui n'est pas totalement facturé ».  
 
 Si un paiement avec la banque n'est représenté par aucun document dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez ouvrir une ligne feuille comptabilité préremplie depuis la fenêtre **Enregistrement de paiement** pour valider le paiement directement dans le compte contrepartie sans lettrer le paiement avec un document. Sinon, vous pouvez enregistrer le paiement dans le journal jusqu'à ce que l'origine du paiement soit résolue. Pour plus d'informations, reportez-vous à la section « Pour enregistrer ou reporter un paiement sans document connexe ».  
 
@@ -151,7 +150,7 @@ La procédure suivante explique comment trouver un document spécifique à l'aid
 
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Enregistrement de paiement**, puis sélectionnez le lien connexe.
 2. Avec le pointeur sur n'importe quelle ligne, sélectionnez l'action **Rechercher des documents**.
-3. Dans la fenêtre **Recherche de document**, entrez une valeur de recherche dans le champ **N° document**. .  
+3. Dans la fenêtre **Recherche de document**, entrez une valeur de recherche dans le champ **N° document**.  
 
     > [!NOTE]  
 >   La valeur que vous entrez dans ce champ est indiquée entre caractères génériques masqués. Cela signifie que la fonction recherche tous les numéros de document qui contiennent la valeur saisie.    

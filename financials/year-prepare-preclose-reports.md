@@ -11,12 +11,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/02/2017
 ms.author: jswymer
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
 ms.openlocfilehash: ead7f45583b8edbdc00b6d41ae335d4b8adb14cf
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="using-pre-closing-reports"></a>Utilisation des rapports préalables à la fermeture
@@ -26,7 +25,7 @@ Le tableau suivant décrit un certain nombre d'états qui peuvent être utiles d
 
 | À | Afficher ce rapport |
 | --- | --- |
-| Imprimer un rapport Balance de vérification détaillé pour un ou plusieurs comptes bancaires avec des informations supplémentaires sur des écritures individuelles. |Banque : Grand livre |
+| Imprimer un rapport Balance de vérification détaillé pour un ou plusieurs comptes bancaires avec des informations supplémentaires sur des écritures individuelles. |Compte bancaire - Balance de vérification détaillée |
 | Imprimer une balance de vérification détaillée pour les clients sélectionnés. |Clients : Balance |
 | Imprimer une balance de vérification détaillée avec des informations détaillées sur des écritures individuelles pour les clients sélectionnés et durant une période sélectionnée. |Clients : Grand livre client |
 | Imprimer une balance de vérification détaillée pour les fournisseurs sélectionnés. |Fournisseur - Balance de vérification |

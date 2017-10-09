@@ -9,14 +9,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: procurement
-ms.date: 03/29/2017
+ms.date: 08/08/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 60906dde627216903b5ef82e34ce4bc918f3c988
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: 5bd635465626c192d8650cbd2a999dd0fbceb15e
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-record-purchases"></a>Procédure : enregistrer des achats
@@ -25,7 +24,7 @@ Vous créez une facture achat ou un bon de commande pour enregistrer le coût d'
 > [!NOTE]  
 >   Vous devez utiliser les commandes achat si votre processus de vente exige que vous enregistriez des réceptions partielles d'une quantité de commande, par exemple, si la quantité totale n'était pas disponible auprès du fournisseur. Si vous commercialisez des articles en les livrant directement depuis votre fournisseur auprès de votre client, vous devez également utiliser les bons de commande. Pour plus d'informations, voir [Procédure : effectuer des livraisons directes](sales-how-drop-shipment.md). Pour tous les autres aspects, les commandes achat fonctionnent de la même manière que les factures achat. La procédure suivante se base sur une facture achat. La procédure est identique pour un bon de commande.
 
-Lorsque vous recevez les articles en inventaire, ou lorsque le service acheté est terminé, vous reportez la facture achat ou le bon de commande pour mettre à jour l'inventaire et les enregistrements financiers et pour activer le paiement au fournisseur selon les modalités de paiement. Pour plus d'informations, reportez-vous à [Exécuter des paiements](payables-make-payments.md).
+Lorsque vous recevez les articles en inventaire, ou lorsque le service acheté est terminé, vous reportez la facture achat ou le bon de commande pour mettre à jour l'inventaire et les enregistrements financiers et pour activer le paiement au fournisseur selon les modalités de paiement. Pour plus d'informations, reportez-vous à [Effectuer des paiements](payables-make-payments.md).
 
 > [!CAUTION]  
 >   Ne reportez pas une facture achat tant que vous n'avez pas reçu les articles et que vous ne connaissez pas le coût final de l'achat, frais supplémentaires compris. Sinon, la valeur de l'inventaire et les chiffres de profit peuvent être biaisés.
@@ -58,7 +57,7 @@ Vous pouvez remplir les champs relatifs au fournisseur sur la facture achat de d
 
     > [!NOTE]  
 >   Si vous avez défini des lignes achat récurrentes pour le fournisseur, par exemple un ordre de réapprovisionnement mensuel, vous pouvez insérer ces lignes sur la facture par l'intermédiaire de l'action **Extraire les lignes achat récurrentes**.
-10. Sur le raccourci **Lignes**, dans le champ **N° article**, saisissez le numéro d'un article en inventaire ou d'un service.
+10. Dans le raccourci **Lignes**, dans le champ **N° article**, entrez le numéro d'un article en inventaire ou d'un service.
 11. Dans le champ **Quantité**, indiquez le nombre d'articles à acheter.
 
     > [!NOTE]  
@@ -76,8 +75,9 @@ Vous pouvez remplir les champs relatifs au fournisseur sur la facture achat de d
 L'achat est désormais visible dans l'inventaire et les enregistrements financiers, et le paiement fournisseur est activé. La facture achat est supprimée de la liste des factures achat et remplacée par un nouveau document dans la liste des factures achat reportées.
 
 ## <a name="see-also"></a>Voir aussi
-[Achats](purchasing-manage-purchasing.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)  
 [Définition des achats](purchasing-setup-purchasing.md)  
+[Procédure : Demander des devis](purchasing-how-request-quotes.md)  
 [Procédure : acheter des articles pour une vente](purchasing-how-purchase-products-sale.md)  
 [Procédure : enregistrer de nouveaux fournisseurs](purchasing-how-register-new-vendors.md)  
 [Procédure : préparer des livraisons directes](sales-how-drop-shipment.md)  

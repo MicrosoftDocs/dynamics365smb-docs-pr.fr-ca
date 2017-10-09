@@ -10,14 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: personnel, people, employee, staff, HR
-ms.date: 06/02/2017
+ms.date: 08/11/2017
 ms.author: SorenGP
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: c58592f4e32b5bb35ba6e9036b786b4d5ffe9820
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: ceea5fba1b2daeab3c517d87e3e31e29d53441c3
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-register-employees"></a>Procédure : enregistrer les employés
@@ -26,6 +25,9 @@ Pour utiliser la fonctionnalité Ressources humaines, vous devez d'abord enregis
 Vous pouvez modifier les informations d'un employé à tout moment. La mise à jour des enregistrements relatifs à vos salariés simplifie les tâches de gestion du personnel. Par exemple, si l'adresse d'un employé change, vous pouvez l'enregistrer sur sa fiche employé.
 
 Les procédures suivantes décrivent comment créer une première fiche employé et comment affecter deux types d'informations à un employé. En outre, vous pouvez affecter diverses autres informations connexes, telles que les qualifications et les motifs d'inactivité. Pour affecter les informations concernant les salariés vous devez choisir un champ ou une action dans la fenêtre **Fiche salarié**.
+
+> [!NOTE]  
+> Vous pouvez rembourser les frais engagés par les employés durant leurs activités professionnelles. Pour cela, vous devez renseigner les champs du raccourci **Paiements** dans la fenêtre **Fiche employé**. Pour plus d'informations, voir [Procédure : enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md).
 
 ## <a name="to-set-up-an-employee"></a>Pour configurer un employé
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Employés**, puis sélectionnez le lien connexe.
@@ -43,7 +45,9 @@ Si vous disposez d'une photo d'un employé au format .bmp, vous pouvez l'insére
 
 La photo est maintenant insérée dans le récapitulatif **Photo salarié**.
 
-## <a name="to-register-an-alternate-address-for-an-employee"></a>Pour enregistrer une adresse secondaire pour un employé
+## <a name="to-register-various-information-about-an-employee"></a>Pour enregistrer diverses informations sur un employé
+Sur la fiche employé, vous pouvez définir des informations, telles que l'adhésion syndicale, les proches et les contrats de l'employé. Ce qui suit décrit comment configurer une autre adresse. Les étapes sont similaires pour toutes les autres informations que vous pouvez configurer à partir d'une fiche employé.
+
 Vous pouvez utiliser des adresses de livraison secondaires pour conserver un historique des déplacements de vos employés, par exemple s'ils ont été en poste à l'étranger, en voyages d'affaires de longue durée ou s'ils séjournent dans une résidence d'été.
 
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Employés**, puis sélectionnez le lien connexe.
@@ -53,7 +57,8 @@ Vous pouvez utiliser des adresses de livraison secondaires pour conserver un his
 5. Répétez l'étape 4 pour chaque adresse secondaire.
 
 ## <a name="see-also"></a>Voir aussi
-[Finances](finance.md)  
+[Procédure : enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md)  
+[Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 [Personnalisation de votre expérience [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-experiences.md)
 

@@ -12,12 +12,11 @@ ms.workload: na
 ms.search.keywords: project invoice
 ms.date: 06/06/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 2fdc8f99fa81a0eecd55438bba33b1a93335a416
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: 9367dc5875b687b95076efffb3b0df2019332651
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-invoice-jobs"></a>Procédure : Facturer des projets
@@ -75,9 +74,9 @@ Vous pouvez créer une facture à partir des lignes planification projet et indi
      Les écritures comptabilité TEC projet créées par le traitement par lots verront la case **Projet terminé** cochée pour indiquer qu'il s'agit d'écritures d’achèvement.
 
 ## <a name="see-also"></a>Voir aussi
-[Gérer des projets](projects-manage-projects.md)  
-[Finances](finance.md)  
-[Achats](purchasing-manage-purchasing.md)         
-[Ventes](sales-manage-sales.md)      
+[Gestion des projets](projects-manage-projects.md)  
+[Finance](finance.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)         
+[Vente](sales-manage-sales.md)      
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 

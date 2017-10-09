@@ -12,12 +12,11 @@ ms.workload: na
 ms.search.keywords: relationship, prospect
 ms.date: 06/06/2017
 ms.author: edupont
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: bbde977ff87049625295fab798445539b23f23dc
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: 2deb992855857a83955c3c119eb7903fe45088d2
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="creating-contact-companies"></a>Création de compagnies contact
@@ -27,7 +26,7 @@ Le fait d'indiquer un maximum de données à propos d'une compagnie spécifique 
 
 Vous pouvez également définir la relation d'affaires que vous avez avec un contact. Par exemple, un contact peut être un prospect, une banque ou un contractant.
 
-Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent. Ces tâches sont répertoriées dans l'ordre de leur exécution en règle générale.
+Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent. 
 
 | À | Voir |
 | --- | --- |

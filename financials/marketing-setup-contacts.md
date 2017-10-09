@@ -12,12 +12,11 @@ ms.workload: na
 ms.search.keywords: relationship, prospect
 ms.date: 06/06/2017
 ms.author: jswymer
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 3de30e72853689df84d3807def1334db88776680
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: 8b1ad8ba4d64fff96e9c9fa1866217b19869e98c
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="preparing-to-set-up-contacts"></a>Préparation pour configurer des contacts
@@ -27,7 +26,7 @@ Avant de créer des contacts et d'enregistrer les détails de vos relations d'af
 
 Grâce à la configuration de ces informations, la création de contacts est beaucoup plus organisée et la recherche de contacts selon un groupe particulier plus efficace. Tous les groupes de votre compagnie pourront trouver ces informations qui permettent d'améliorer la communication avec les contacts.
 
-Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent. Ces tâches sont répertoriées dans l'ordre de leur exécution en règle générale.
+Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent. 
 
 | À | Voir |
 | --- | --- |

@@ -12,12 +12,11 @@ ms.workload: na
 ms.search.keywords: write down
 ms.date: 06/02/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
 ms.openlocfilehash: 6a32ddc5fd8202507b66a30fabd2cbd6b5ab91eb
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="depreciation-methods"></a>Méthodes d'amortissement
@@ -58,7 +57,7 @@ La valeur comptable peut être diminuée d'un montant de réévaluation, de dép
 ### <a name="fixed-yearly-percentage"></a>Pourcentage annuel fixe
 Si vous saisissez un pourcentage annuel fixe, le programme utilise la formule suivante pour calculer le montant de l'amortissement :  
 
-Montant de l'amortissement = (% linéaire x base amortissement x nombre de jours d'amortissement )/(100) x 360  
+Montant de l'amortissement = (% linéaire x base amortissement x nombre de jours d'amortissement)/(100 x 360)  
 
 ### <a name="fixed-yearly-amount"></a>Montant annuel fixe
 Si vous saisissez un montant annuel fixe, le programme utilise la formule suivante pour calculer le montant de l'amortissement :  
@@ -224,7 +223,7 @@ Avec une méthode paramétrable, vous utilisez la fenêtre **Tables d'amortissem
 
 La formule de calcul des montants d'amortissement est la suivante :  
 
-Montant de l'amortissement = (% amortissement x nombre de jours d'amortissement x base amortissement )/(100) x 360  
+Montant de l'amortissement = (% amortissement x nombre de jours d'amortissement x base amortissement)/(100 x 360)  
 
 ### <a name="depreciation-based-on-number-of-units"></a>Amortissement basé sur un nombre d'unités
 Cette méthode paramétrable peut également être utilisée pour calculer un amortissement sur la base d'un nombre d'unités, par exemple dans le cas de machines de production dont la durée de vie est préétablie. Dans la fenêtre **Tables d'amortissement**, vous saisissez le nombre d'unités pouvant être produites au cours de chaque période (mois, trimestre, année ou période comptable).  
@@ -350,7 +349,7 @@ Lorsque vous saisissez une écriture pour A1 dans la feuille validation immobili
 >   Vous ne pouvez pas effectuer la duplication dans le même journal et lot journal que celui à partir duquel vous dupliquez. Si vous reportez des écritures dans le journal GL immobilisation, vous pouvez les dupliquer dans le journal immobilisation ou dans le journal GL immobilisation en utilisant un autre lot.  
 
 > [!NOTE]  
->   Vous ne pouvez pas utiliser la même série de numéros dans le journal GL immobilisation et le journal immobilisation. Lorsque vous validez des écritures dans la feuille validation immobilisation, vous devez laisser le champ **N° document** vide. Si vous saisissez un numéro dans le champ, il est copié dans le journal immobilisation. Vous devez modifier manuellement le numéro de document avant de pouvoir reporter le journal.  
+>   Vous ne pouvez pas utiliser la même série de numéros dans le journal GL immobilisation et le journal immobilisation. Lorsque vous reportez des écritures dans le journal GL immobilisations, vous devez laisser le champ **N° document** vide. Si vous saisissez un numéro dans le champ, il est copié dans le journal immobilisation. Vous devez modifier manuellement le numéro de document avant de pouvoir reporter le journal.  
 
 ## <a name="see-also"></a>Voir aussi
 [Immobilisations](fa-manage.md)  

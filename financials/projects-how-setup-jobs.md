@@ -12,12 +12,11 @@ ms.workload: na
 ms.search.keywords: project management
 ms.date: 06/06/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: aa7669c5f7762de647346039e0023c93603fbc10
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: b0e8a73af6f979cb426db1bffc34d154fc439dce
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-set-up-jobs"></a>Procédure : configurer des projets
@@ -116,9 +115,9 @@ L'un des aspects des projets de planification est de décider quels comptes de r
 
 ## <a name="see-also"></a>Voir aussi
 [Configurer la gestion de projet](projects-setup-projects.md)  
-[Gérer des projets](projects-manage-projects.md)  
-[Finances](finance.md)  
-[Achats](purchasing-manage-purchasing.md)         
-[Ventes](sales-manage-sales.md)      
+[Gestion des projets](projects-manage-projects.md)  
+[Finance](finance.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)         
+[Vente](sales-manage-sales.md)      
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 

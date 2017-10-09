@@ -12,12 +12,11 @@ ms.workload: na
 ms.search.keywords: client
 ms.date: 03/29/2017
 ms.author: sgroespe
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
 ms.openlocfilehash: ca4f1880e7a95eaf945d48ca2cdd7b3d5f80a621
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-register-new-customers"></a>Procédure : enregistrer de nouveaux clients
@@ -48,7 +47,7 @@ Si vous souhaitez utiliser cette fiche client comme modèle lorsque vous créez 
 ## <a name="to-save-the-customer-card-as-a-template"></a>Pour enregistrer la fiche client en tant que modèle
 1. Dans la fenêtre **Fiche client**, sélectionnez l'action **Sauvegarder comme modèle**. La fenêtre **Modèle client** s'ouvre et affiche la fiche client comme modèle.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
-3. Pour réutiliser les axes analytiques dans les modèles **, sélectionnez l'action **Axes analytiques**. La fenêtre **Modèles axe** s'ouvre et affiche tous les codes axe qui sont définis pour le client.
+3. Pour réutiliser les axes analytiques dans les modèles, sélectionnez l'action **Axes analytiques**. La fenêtre **Modèles axe** s'ouvre et affiche tous les codes axe qui sont définis pour le client.
 4. Modifiez ou entrez les codes dimension s'appliquant aux nouvelles fiches client créées à l'aide du modèle.  
 5. Lorsque vous avez terminé le nouveau modèle client, cliquez sur le bouton **OK**.
 

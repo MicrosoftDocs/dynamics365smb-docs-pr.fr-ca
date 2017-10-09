@@ -12,12 +12,11 @@ ms.workload: na
 ms.search.keywords: cost accounting
 ms.date: 03/29/2017
 ms.author: edupont
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
 ms.openlocfilehash: bbacf9b5634d51478dd4d54ac4b587ea9bfaaf99
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="how-to-use-allocation-keys-in-general-journals"></a>Comment utiliser les clés de ventilation dans les feuilles de comptabilité
@@ -33,7 +32,7 @@ Vous pouvez ventiler une écriture dans un journal général dans différents co
 5. Fermez la fenêtre lorsque vous avez terminé. Un nouveau journal récurrent vide s'ouvre.
 6. Renseignez les champs de la ligne.
 7. Sélectionnez l'action **Ventilations**.
-8. Ajoutez une ligne pour chaque affectation. Vous devez renseigner le champ **% ventilation**, **Quantité imputée** ou **Montant**. Vous devez également renseigner le champ **N° compte** et, si vous ventilez la transaction sur des dimensions globales, les champs de ces dimensions globales.
+8. Ajoutez une ligne pour chaque affectation. Vous devez renseigner le champ **% ventilation**, **Quantité imputée** ou **Montant**. Vous devez également renseigner le champ **N° compte** et, si vous affectez la transaction à des dimensions principales, les champs de ces dimensions principales.
 9. Si vous saisissez un pourcentage dans une ligne, le montant du champ **Montant** est calculé automatiquement. Ces montants sont dotés du signe opposé à celui du montant total figurant dans le champ **Montant** de la feuille récurrente.
 10. Après avoir saisi les lignes de ventilation, cliquez sur **OK** pour revenir à la fenêtre **Feuille abonnement**. Le champ **Montant imputé DS** est renseigné et correspond au champ **Montant**.
 11. Reportez le journal.

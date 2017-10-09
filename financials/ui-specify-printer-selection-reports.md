@@ -12,18 +12,17 @@ ms.workload: na
 ms.search.keywords: online printing
 ms.date: 03/29/2017
 ms.author: solsen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 106ad2acf2703e8182033a43a39c693a8b060d8f
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: 42fb4adbcc01c443722fe90bb59edafceb34ff06
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 09/22/2017
 
 ---
 # <a name="specify-printer-selection-for-reports"></a>Spécifier la sélection de l'imprimante pour les états
 Cette page est vide car vous ne pouvez pas encore configurer d'imprimantes spécifiques pour des états spécifiques. Nous essayons de résoudre ce problème.
 
-En attendant, si vous souhaitez imprimer un état, vous devez d'abord le télécharger en tant document PDF en choisissant le bouton **Envoyer à**. Puis, vous devez sélectionner le type d'état pour télécharger le fichier et choisir **Document PDF**. À présent, vous pouvez soit ouvrir le document directement en PDF et l'imprimer, ou l'enregistrer et l'imprimer plus tard.
+En attendant, si vous souhaitez imprimer un rapport, vous devez d'abord le télécharger en tant document PDF en choisissant le bouton **Envoyer à**. Puis, vous devez sélectionner le type d'état pour télécharger le fichier et choisir **Document PDF**. À présent, vous pouvez soit ouvrir le document directement en PDF et l'imprimer, ou l'enregistrer et l'imprimer plus tard.
 
 <!--
 
