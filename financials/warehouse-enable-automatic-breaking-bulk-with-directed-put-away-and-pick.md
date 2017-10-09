@@ -1,0 +1,56 @@
+---
+title: "Rupture de charge automatique avec prélèvement et rangement dirigé | Microsoft Docs"
+description: "Pour les emplacements qui utilisent un prélèvement et un rangement suggérés, vous pouvez diviser une unité de mesure plus grande en unités de mesure plus petites lors de la création d'instructions entrepôt répondant aux exigences de documents sources, de bons de production ou de prélèvements et de rangements internes."
+services: project-madeira
+documentationcenter: 
+author: SorenGP
+ms.service: dynamics365-financials
+ms.topic: article
+ms.devlang: na
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.search.keywords: 
+ms.date: 08/23/2017
+ms.author: sgroespe
+ms.translationtype: HT
+ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
+ms.openlocfilehash: 910596b9716ff944a1e491076b599ab6c39c8859
+ms.contentlocale: fr-ca
+ms.lasthandoff: 09/22/2017
+
+---
+# <a name="how-to-enable-automatic-breaking-bulk-with-directed-put-away-and-pick"></a><span data-ttu-id="92083-103">Procédure : activer la rupture de charge automatique avec prélèvement et rangement dirigé</span><span class="sxs-lookup"><span data-stu-id="92083-103">How to: Enable Automatic Breaking Bulk with Directed Put-away and Pick</span></span>
+<span data-ttu-id="92083-104">Pour les emplacements qui utilisent un prélèvement et un rangement suggérés, [!INCLUDE[d365fin](includes/d365fin_md.md)] peut procéder, dans de nombreux cas, à un déconditionnement automatique (division d'une unité de mesure plus grande en unités de mesure plus petites) lorsqu'il crée des instructions entrepôt répondant aux exigences de documents sources, de bons de production ou de prélèvements et de rangements internes.</span><span class="sxs-lookup"><span data-stu-id="92083-104">For locations that use directed put-away and pick, [!INCLUDE[d365fin](includes/d365fin_md.md)] can, in various situations, automatically breakbulk, that is, break a larger unit of measure into smaller units of measure, when it creates warehouse instructions that fulfill the needs of source documents, production orders, or internal picks and put-aways.</span></span> <span data-ttu-id="92083-105">Parfois, le déconditionnement peut également nécessiter le regroupement de petites unités de mesure afin de répondre à des demandes sortantes en divisant l'unité de mesure la plus grande du document origine ou du bon de production en unités de mesure plus petites disponibles dans l'entrepôt.</span><span class="sxs-lookup"><span data-stu-id="92083-105">To breakbulk sometimes also means gathering smaller units of measure, if necessary, to meet outbound requests by breaking the larger unit of measure on the source document or production order into the smaller units of measure that are available in the warehouse.</span></span>   
+
+## <a name="breakbulking-in-picks"></a><span data-ttu-id="92083-106">Déconditionnement pour prélèvement</span><span class="sxs-lookup"><span data-stu-id="92083-106">Breakbulking in Picks</span></span>  
+<span data-ttu-id="92083-107">Pour stocker des articles dans plusieurs unités et permettre de les combiner automatiquement selon vos besoins au cours du prélèvement, sélectionnez le champ **Autoriser déconditionnement** de la fiche magasin.</span><span class="sxs-lookup"><span data-stu-id="92083-107">If you want to store items in several different units of measure and allow them to be automatically combined as needed in the picking process, select the **Allow Breakbulk** field on the location card.</span></span>  
+
+<span data-ttu-id="92083-108">Pour répondre à une tâche, le programme recherche automatiquement un article de la même unité de mesure.</span><span class="sxs-lookup"><span data-stu-id="92083-108">To fulfill a task, the program automatically looks for an item in the same unit of measure.</span></span> <span data-ttu-id="92083-109">S'il ne trouve pas ce type d'article et que vous avez sélectionné ce champ, il vous propose de diviser une unité de mesure plus grande en fonction de l'unité de mesure nécessaire.</span><span class="sxs-lookup"><span data-stu-id="92083-109">But if it cannot find this form of the item, and this field is selected, the program will suggest that you break a larger unit of measure into the unit of measure that is needed.</span></span>  
+
+<span data-ttu-id="92083-110">Si le système trouve uniquement des unités de mesure plus petites, il vous suggère de rassembler des articles afin de répondre à la quantité du bon de production ou de livraison.</span><span class="sxs-lookup"><span data-stu-id="92083-110">If the system can only find smaller units of measure, it will suggest that you gather items to fulfill the quantity on the shipment or production order.</span></span> <span data-ttu-id="92083-111">En fait, il divise la plus grande unité de mesure du document origine en unités de mesure de prélèvement plus petites.</span><span class="sxs-lookup"><span data-stu-id="92083-111">In effect, it breaks the larger unit of measure on the source document into smaller units for picking.</span></span>  
+
+## <a name="breakbulking-in-put-aways"></a><span data-ttu-id="92083-112">Déconditionnement pour rangement</span><span class="sxs-lookup"><span data-stu-id="92083-112">Breakbulking in Put-aways</span></span>  
+<span data-ttu-id="92083-113">Au niveau du rangement de l'entrepôt, le programme propose automatiquement des lignes action Emplacement dans l'unité de mesure de rangement, par exemple, pièces, même si les articles arrivent dans une unité de mesure différente.</span><span class="sxs-lookup"><span data-stu-id="92083-113">In the warehouse put-away, the program automatically suggests Place action lines in the put-away unit of measure, for example, pieces, even though the items arrive in a different unit of measure.</span></span>  
+
+## <a name="breakbulking-in-movements"></a><span data-ttu-id="92083-114">Déconditionnement pour mouvement</span><span class="sxs-lookup"><span data-stu-id="92083-114">Breakbulking in Movements</span></span>  
+<span data-ttu-id="92083-115">Le programme effectue également un déconditionnement automatique au niveau des mouvements de réapprovisionnement, si le champ **Autoriser déconditionnement** est sélectionné sur le raccourci **Option** de la fenêtre **Calculer réappro. zone**.</span><span class="sxs-lookup"><span data-stu-id="92083-115">The program also breakbulks automatically in replenishment movements, if the **Allow Breakbulk** field is selected on the **Option** FastTab in the **Calculate Bin Replenishment** window.</span></span>  
+
+<span data-ttu-id="92083-116">Vous pouvez afficher les résultats de la conversion entre deux unités de mesure sous forme de lignes déconditionnement intermédiaire dans les instructions rangement, prélèvement ou mouvement.</span><span class="sxs-lookup"><span data-stu-id="92083-116">You can view the results of the conversion process from one unit of measure to another as intermediate breakbulk lines in the put-away, pick, or movement instructions.</span></span>  
+
+> [!NOTE]  
+>  <span data-ttu-id="92083-117">Si vous sélectionnez le champ **Paramétrer filtre déconditionnement** dans l'en-tête instruction entrepôt, le programme masque les lignes déconditionnement chaque fois que la plus grande unité est utilisée dans son intégralité.</span><span class="sxs-lookup"><span data-stu-id="92083-117">If you select the **Set Breakbulk Filter** field on the warehouse instruction header, the program will hide the breakbulk lines whenever the larger unit of measure is going to be completely used.</span></span> <span data-ttu-id="92083-118">Par exemple, si une palette comprend 12 pièces et que vous allez utiliser les 12 pièces, le prélèvement vous indique de prendre 1 palette et d'y placer les 12 pièces.</span><span class="sxs-lookup"><span data-stu-id="92083-118">For example, if a pallet is 12 pieces and you are going to use all 12 pieces, the pick will then direct you to take 1 pallet and place 12 pieces.</span></span> <span data-ttu-id="92083-119">Par contre, si vous ne devez prélever que 9 pièces, les lignes déconditionnement ne sont pas masquées, même si vous avez sélectionné le champ **Filtre déconditionnement**, étant donné que vous devez placer les trois pièces restantes dans un autre endroit de l'entrepôt.</span><span class="sxs-lookup"><span data-stu-id="92083-119">However, if you have to pick only 9 pieces, then the breakbulk lines will not be hidden, even if you have selected the **Breakbulk Filter** field, because you have to place the remaining three pieces somewhere in the warehouse.</span></span>  
+
+> [!NOTE]  
+>  <span data-ttu-id="92083-120">Pour optimiser l'utilisation des unités de mesure dans l'entrepôt (également avec la fonctionnalité de déconditionnement), effectuez dès que vous le pouvez les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="92083-120">If you want your units of measure to perform optimally in the warehouse, also in connection with the breakbulk functionality, you should wherever possible try to:</span></span>  
+>   
+> - <span data-ttu-id="92083-121">Configurez l'unité de mesure de base d'un article en tant que plus petite unité de mesure à gérer dans les processus concernant l'entrepôt.</span><span class="sxs-lookup"><span data-stu-id="92083-121">Set up the base unit of measure for an item as the smallest unit of measure that you expect to handle in your warehouse processes.</span></span>  
+> - <span data-ttu-id="92083-122">Configurez les autres unités de mesure de l'article en tant que multiples de l'unité de mesure de base.</span><span class="sxs-lookup"><span data-stu-id="92083-122">Set up your alternative units of measure for the item as multiples of the base unit of measure.</span></span>  
+
+## <a name="see-also"></a><span data-ttu-id="92083-123">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="92083-123">See Also</span></span>  
+[<span data-ttu-id="92083-124">Gestion d'entrepôt</span><span class="sxs-lookup"><span data-stu-id="92083-124">Warehouse Management</span></span>](warehouse-manage-warehouse.md)  
+[<span data-ttu-id="92083-125">Stock</span><span class="sxs-lookup"><span data-stu-id="92083-125">Inventory</span></span>](inventory-manage-inventory.md)  
+<span data-ttu-id="92083-126">[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)   </span><span class="sxs-lookup"><span data-stu-id="92083-126">[Setting Up Warehouse Management](warehouse-setup-warehouse.md)   </span></span>  
+<span data-ttu-id="92083-127">[Gestion d'assemblage](assembly-assemble-items.md)  </span><span class="sxs-lookup"><span data-stu-id="92083-127">[Assembly Management](assembly-assemble-items.md)  </span></span>  
+[<span data-ttu-id="92083-128">Détails de conception : gestion d'entrepôt</span><span class="sxs-lookup"><span data-stu-id="92083-128">Design Details: Warehouse Management</span></span>](design-details-warehouse-management.md)  
+<span data-ttu-id="92083-129">[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="92083-129">[Working with [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span></span>  
+
