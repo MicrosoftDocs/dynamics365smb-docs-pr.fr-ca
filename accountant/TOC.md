@@ -1,2 +1,4 @@
 # [Bienvenue dans Dynamics 365 — Portail Comptable](index.md)
-## [Prise en main du Portail Comptable](accountant-get-started.md)
+## [Démarrer](get-started.md)
+## [Ajouter des clients à votre tableau de bord](add-client.md)
+## [Dépannage](troubleshooting.md)
