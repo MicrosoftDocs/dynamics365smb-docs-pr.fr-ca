@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 09/23/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 9ba5203013af329f1d59432a5e5800fe486658cc
+ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
+ms.openlocfilehash: 957c8889d943ed412af7555271897b52c0759969
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 # <a name="design-details-internal-warehouse-flows"></a>Détails de conception : flux d'entrepôt internes
@@ -104,7 +104,7 @@ Circulation des articles entre les zones dans les centres d'une compagnie lors d
 1.  Le chef atelier lance l'ordre de fabrication. Les articles utilisant la méthode consommation **Aval** et aucun code lien itinéraire sont déduits de la zone d'atelier ouvert.  
 2.  Le chef atelier choisit le bouton **Créer prélèvement entrepôt** sur l'ordre de fabrication. Un document prélèvement entrepôt est créé pour les articles avec les méthodes de consommation **Manuelle**, **Prélèvement + Amont** et **Prélèvement + Aval**. Ces articles sont placés dans la zone avant production.  
 3.  Le gestionnaire d'entrepôt affecte les prélèvements à un magasinier.  
-4.  L'employé d'entrepôt prélève les articles dans les zones appropriées et les place dans la zone avant production ou dans la zone spécifiée sur le prélèvement entrepôt, qui peut être une zone d'atelier ou d'unité de production).  
+4.  L'employé d'entrepôt prélève les articles dans les zones appropriées et les place dans la zone avant production ou dans la zone spécifiée sur le prélèvement entrepôt, qui peut être une zone d'atelier ou d'unité de production.  
 5.  L'employé d'entrepôt enregistre le prélèvement. La quantité est soustraite des zones prélèvement et ajoutée à la zone consommation. Le champ **Qté prélevée** sur la liste des composantes de tous les articles prélevés est mis à jour.  
 
     > [!NOTE]  

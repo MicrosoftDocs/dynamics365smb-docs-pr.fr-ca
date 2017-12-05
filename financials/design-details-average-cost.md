@@ -11,10 +11,10 @@ ms.search.keywords:
 ms.date: 09/18/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 4ced0ece340de08598fecff157d59aa708e4e17c
+ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
+ms.openlocfilehash: 70a0773826984bab5c49334a88ea48872a629023
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 # <a name="design-details-average-cost"></a>Détails de conception : coût moyen
@@ -51,7 +51,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
  Le coût moyen calculé est ensuite appliqué aux diminutions d'inventaire pour l'article (ou article, emplacement et variante) avec des dates de report qui surviennent au cours de la période coût moyen. S'il y a des augmentations d'inventaire affectées de façon fixe à des diminutions d'inventaire au cours de la période coût moyen, le calcul du coût moyen est transmis de l'augmentation à la diminution.  
 
 ### <a name="example-average-cost-period--day"></a>Exemple : période coût moyen = jour  
- L'exemple suivant montre l'effet du calcul du coût moyen basé sur une période coût moyen d'un jour. Le champ **Type calcul coût moyen** de la fenêtre **Configuration inventaire** est défini sur **Article**.  
+ L'exemple suivant montre l'effet du calcul du coût moyen basé sur une période coût moyen d'un jour. Le champ **Type calcul coût moyen** de la fenêtre **Paramètres stock** est défini sur **Article**.  
 
  Le tableau suivant montre les écritures article pour un exemple d'article de coût moyen, ARTICLE1, avant que le traitement en lot **Ajuster coûts - Écr. article** ne soit exécuté.  
 
@@ -108,7 +108,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 
  Le tableau suivant montre les écritures de la table **Point d'entrée ajustement coût moyen** qui s'appliquent aux écritures valeur résultant des écritures comptables article dans la table précédente.  
 
-|**N° d'article**|**Code variante**|**Code d'emplacement**|**Date évaluation**|**Coût ajusté**|  
+|**N° article**|**Code variante**|**Code d'emplacement**|**Date évaluation**|**Coût ajusté**|  
 |-------------------------------------|-----------------------------------------|------------------------------------------|-------------------------------------------|---------------------------------------------|  
 |ARTICLE1||BLEU|31/01/20|Non|  
 |ARTICLE1||BLEU|28/02/20|Non|  

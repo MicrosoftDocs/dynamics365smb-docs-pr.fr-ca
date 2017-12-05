@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 08/10/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 434e18ed539a189e8f041c914cfdcdf2c1e0532f
+ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
+ms.openlocfilehash: c6365507992b75d5fa264491bbc85bb1b4a8ed7a
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 # <a name="how-to-work-with-payment-tolerances-and-payment-discount-tolerances"></a>Procédure : Utilisation des tolérances de règlement et des tolérances d'escompte de paiement
@@ -31,7 +31,7 @@ Un document unique comporte la même tolérance de règlement, qu'il soit affect
 
 *date d'escompte < date de règlement dans l'écriture sélectionnée <= date d'écart de règlement*  
 
-Cette règle détermine également la nécessité d'afficher des alertes lorsque vous affectez la tolérance de règlement à plusieurs documents. L'avertissement lié à la tolérance d'escompte de paiement s'affiche pour chaque écriture répondant aux critères de date. Pour plus d'informations, reportez-vous à la section « Exemple 2 - Calculs de la tolérance pour plusieurs documents ». 
+Cette règle détermine également la nécessité d'afficher des alertes lorsque vous affectez la tolérance de règlement à plusieurs documents. L'avertissement lié à la tolérance d'escompte de paiement s'affiche pour chaque écriture répondant aux critères de date. Pour plus d'informations, reportez-vous à la section « Exemple 2 - Calculs de la tolérance pour plusieurs documents ».
 
 Vous pouvez afficher une alerte en fonction des situations relatives à la tolérance.  
 
@@ -95,26 +95,27 @@ Scénarios comportant deux alternatives, A et B. En voici la signification :
 - **A** L'avertissement tolérance d'escompte de paiement a été désactivé OU l'avertissement est activé, mais l'utilisateur a accepté l'escompte de paiement en retard (Reporter le solde en tant que tolérance de paiement).  
 - **B** L'avertissement est activé et l'utilisateur a choisi de ne pas accepter l'escompte de paiement en retard (Laisser le solde ouvert).  
 
-|—|Fact.|Escompte de paiement|Max<br /><br /> Tolérance règlement|Date d'escompte de paiement|Tolérance d'escompte de paiement Date|Date de paiement|Règl.|Type de tolérance|Toutes les écritures fermées|Tolérance d'escompte de paiement <br /> Cpta/CL|Règl.<br /><br /> Tolérance<br /><br /> Grand livre|  
+[!div class="mx-tdBreakAll"]  
+|—|Fact.|Escompte de paiement|Tolérance règlement max.|Date d'escompte de paiement|Tolérance d'escompte de paiement Date|Date de paiement|Règl.|Type de tolérance|Toutes les écritures fermées|Tolérance d'escompte de paiement Cpta/CL|Tolérance règlement Grand livre|  
 |-------|----------|----------------|-----------------------|---------------------|--------------------------|------------------|----------|--------------------|------------------------|------------------------------|----------------------------|  
-|1|1,000|2.0|5|01/15/03|01/20/03|<=15/01/03|985|Tolérance règlement|Oui|0|-5|  
+|1|1,000|20|5|01/15/03|01/20/03|<=15/01/03|985|Tolérance règlement|Oui|0|-5|  
 |2|**1,000**|**20**|**5**|**15/01/03**|**20/01/03**|**<=15/01/03**|**980**|**Aucun**|**Oui**|**0**|**0**|  
-|3|1,000|2.0|5|01/15/03|c|<=15/01/03|975|Tolérance règlement|Oui|0|5|  
-|4A|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|1005|Tolérance d'escompte de paiement|Non, 25 sur Règl.|20/-20|0|  
-|5A|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|1000|Tolérance d'escompte de paiement|Non, 20 sur Règl.|20/-20|0|  
-|6A|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|995|Tolérance d'escompte de paiement|Non, 15 sur Règl.|20/-20|0|  
-|4B|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|1005|Tolérance règlement|Oui|0|-5|  
+|3|1,000|20|5|01/15/03|c|<=15/01/03|975|Tolérance règlement|Oui|0|5|  
+|4A|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|1005|Tolérance d'escompte de paiement|Non, 25 sur Règl.|20/-20|0|  
+|5A|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|1000|Tolérance d'escompte de paiement|Non, 20 sur Règl.|20/-20|0|  
+|6A|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|995|Tolérance d'escompte de paiement|Non, 15 sur Règl.|20/-20|0|  
+|4B|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|1005|Tolérance règlement|Oui|0|-5|  
 |**5B**|**1,000**|**20**|**5**|**15/01/03**|**20/01/03**|**16/01/03 20/01/03**|**1000**|**Aucun**|**Oui**|**0**|**0**|  
-|6B|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|995|Tolérance règlement|Oui|0|5|  
-|7|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|985|Tolérance d'escompte de paiement & Écart règlement|Oui|20/-20|-5|  
-|8|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|980|Tolérance d'escompte de paiement|Oui|20/-20|0|  
-|9|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|975|Tolérance d'escompte de paiement & Écart règlement|Oui|20/-20|5|  
-|10|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|1005|Tolérance règlement|Oui|0|-5|  
+|6B|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|995|Tolérance règlement|Oui|0|5|  
+|7|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|985|Tolérance d'escompte de paiement & Écart règlement|Oui|20/-20|-5|  
+|8|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|980|Tolérance d'escompte de paiement|Oui|20/-20|0|  
+|9|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|975|Tolérance d'escompte de paiement & Écart règlement|Oui|20/-20|5|  
+|10|1,000|20|5|01/15/03|01/20/03|>20/01/03|1005|Tolérance règlement|Oui|0|-5|  
 |**11**|**1,000**|**20**|**5**|**15/01/03**|**20/01/03**|**>20/01/03**|**1000**|**Aucun**|**Oui**|**0**|**0**|  
-|12|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|995|Tolérance règlement|Oui|0|5|  
-|13|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|985|Aucun|Non, 15 sur la facture|0|0|  
-|14|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|980|Aucun|Non, 20 sur la facture|0|0|  
-|15|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|975|Aucun|Non, 25 sur la facture|0|0|  
+|12|1,000|20|5|01/15/03|01/20/03|>20/01/03|995|Tolérance règlement|Oui|0|5|  
+|13|1,000|20|5|01/15/03|01/20/03|>20/01/03|985|Aucun|Non, 15 sur la facture|0|0|  
+|14|1,000|20|5|01/15/03|01/20/03|>20/01/03|980|Aucun|Non, 20 sur la facture|0|0|  
+|15|1,000|20|5|01/15/03|01/20/03|>20/01/03|975|Aucun|Non, 25 sur la facture|0|0|  
 
 ### <a name="payment-range-diagrams"></a>Schémas de chaîne de paiement  
 Sur la base du scénario ci-avant, les diagrammes des plages de dates de règlement se présentent sous la forme suivante :  
@@ -166,7 +167,9 @@ Scénarios comportant deux alternatives, A, B, C ou D. En voici la signification
 - **C** : L'avertissement est activé et l'utilisateur a choisi d'accepter l'escompte de paiement en retard pour la première facture, mais non pour la deuxième.  
 - **D** : L'avertissement est activé et l'utilisateur a choisi de ne pas accepter l'escompte de paiement en retard pour la première facture, mais de l'accepter pour la seconde.  
 
-|—|Fact.|Escompte|Tolérance règlement max.|Date d'escompte de paiement|Tolérance d'escompte de paiement Date|Date de paiement|Règl.|Type de tolérance|Toutes les écritures fermées|Tolérance d'escompte de paiement <br /> Cpta/CL|Tolérance règlement<br /><br /> Grand livre|  
+[!div class="mx-tdBreakAll"]  
+
+|—|Fact.|Escompte|Tolérance règlement max.|Date d'escompte de paiement|Tolérance d'escompte de paiement Date|Date de paiement|Règl.|Type de tolérance|Toutes les écritures fermées|Tolérance d'escompte de paiement Cpta/CL|Tolérance règlement Grand livre|  
 |-------|----------|---------------|-------------------|---------------------|--------------------------|------------------|---------|--------------------|------------------------|------------------------------|------------------------|  
 |1|1,000 <br />1,000|60 <br />30|5 <br />5|01/15/03 <br />01/17/03|01/20/03 <br />01/22/03|<=15/01/03|1920|Tolérance règlement|Oui|0<br /><br /> 0|-5 <br />-5|  
 |**2**|**1,000** <br />**1,000**|**60** <br />**30**|**5** <br />**5**|**15/01/03** <br />**17/01/03**|**20/01/03** <br />**22/01/03**|**<=15/01/03**|**1910**|**Aucun**|**Oui**|**0**<br /><br /> **0**|0 <br />0|  

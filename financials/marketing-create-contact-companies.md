@@ -13,10 +13,10 @@ ms.search.keywords: relationship, prospect
 ms.date: 06/06/2017
 ms.author: edupont
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 2deb992855857a83955c3c119eb7903fe45088d2
+ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
+ms.openlocfilehash: 3c80d937a8b849cf7174952e02bbde243ca0ac5c
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 # <a name="creating-contact-companies"></a>Création de compagnies contact
@@ -26,7 +26,7 @@ Le fait d'indiquer un maximum de données à propos d'une compagnie spécifique 
 
 Vous pouvez également définir la relation d'affaires que vous avez avec un contact. Par exemple, un contact peut être un prospect, une banque ou un contractant.
 
-Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent. 
+Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.
 
 | À | Voir |
 | --- | --- |
@@ -40,5 +40,5 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 
 ## <a name="see-also"></a>Voir aussi
 [Création de personnes contact](marketing-create-contact-persons.md)   
-[Utilisation de Financials](ui-work-product.md)
+[Utilisation de Dynamics 365](ui-work-product.md)
 

@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 08/22/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 7e76ef1d5622486c3d8055f6e0ccbe3564a96701
+ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
+ms.openlocfilehash: face4821059b57c32e06dca46ec5144aba4ca528
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 # <a name="walkthrough-tracing-serial-lot-numbers"></a>Procédure pas à pas : suivi des numéros de série et des numéros de lot
@@ -141,11 +141,10 @@ Ensuite, vous devez créer plusieurs transactions d'achat, de production et de v
 2.  Choisissez le groupe **Nouveau**.  
 3.  Créez un bon de production libéré en renseignant les champs suivants.  
 
-    ||||  
     |-|-|-|  
-    |N° d'origine|Quantité|N° de série|  
-    |1002|2|NS1|  
-    |1002|2|NS2|  
+    |N° origine|Quantité|N° de série|  
+    |1002|2|SN1|  
+    |1002|2|SN2|  
 
 4.  Choisissez l'action **Actualiser O.F.**, puis choisissez le bouton **OK** pour remplir la ligne.  
 5.  Pour saisir les numéros de série, choisissez l'action **Lignes traçabilité**.  

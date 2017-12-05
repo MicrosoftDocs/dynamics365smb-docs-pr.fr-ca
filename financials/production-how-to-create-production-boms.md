@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 09/05/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 54bbe338b71ece1322b10e0e4203489cf8ab2f49
+ms.sourcegitcommit: daa014eaa78caa7a317b05ca92ff27c1d1530c06
+ms.openlocfilehash: 3ebbd34c966ab06fa578336d14a060b0dea44dbc
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/17/2017
 
 ---
 # <a name="how-to-create-production-boms"></a>Comment créer des nomenclatures de production
@@ -26,7 +26,7 @@ Une nomenclature de production contient les données de base qui décrivent les 
 
 Pour pouvoir configurer un itinéraire, les éléments suivants doivent être en place :  
 
-- Des fiches article sont créées pour les articles parents qui participent à la production. Pour plus d'informations, reportez vous à [Procédure : enregistrer de nouveaux produits](inventory-how-register-new-items.md).
+- Des fiches article sont créées pour les articles parents qui participent à la production. Pour plus d'informations, reportez vous à [Procédure : enregistrer de nouveaux articles](inventory-how-register-new-items.md).
 - Les ressources de production sont configurées. Pour plus d'informations, voir [Procédure : configurer des ateliers et des unités de production](production-how-to-set-up-work-and-machine-centers.md).
 
 ## <a name="to-create-a-production-bom"></a>Pour créer une nomenclature de production  
@@ -47,7 +47,7 @@ Pour pouvoir configurer un itinéraire, les éléments suivants doivent être en
 9.  Dans le champ **Code lien gamme**, vous pouvez entrer un code permettant de lier le composant à une opération spécifique. Pour plus d'informations, voir la section « Pour créer des liens itinéraire » dans [Procédure : créer des itinéraires](production-how-to-create-routings.md).
 10. Pour copier des lignes à partir d'une nomenclature de production existante, choisissez l'action **Copier nomenclature** pour sélectionner des lignes existantes.  
 11.  Certifiez la nomenclature de production.  
-12.  Vous pouvez désormais joindre la nouvelle nomenclature de production à la fiche de l'article parent en question. Pour plus d'informations, reportez vous à [Procédure : enregistrer de nouveaux produits](inventory-how-register-new-items.md).  
+12.  Vous pouvez désormais joindre la nouvelle nomenclature de production à la fiche de l'article parent en question. Pour plus d'informations, reportez vous à [Procédure : enregistrer de nouveaux articles](inventory-how-register-new-items.md).  
 
 > [!NOTE]  
 >  Pour recalculer le coût standard de l'article figurant sur la fiche article, choisissez l'action **Production**, puis l'action **Calculer coût standard**.  
@@ -57,7 +57,7 @@ Les nouvelles versions des nomenclatures de production sont utilisées lorsque, 
 
 La date début indique le début de la période de validité de la version. La date début peut également être considérée comme un filtre pour les calculs et les évaluations. La version de la nomenclature est valide jusqu'à l'entrée en vigueur de la version suivante, qui est indiquée par sa date début.  
 
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Nomenclature de production**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Nomenclature de production**, puis sélectionnez le lien associé.  
 2.  Sélectionnez la nomenclature de production à copier, puis choisissez l'action **Versions**.  
 3.  Sous l'onglet de **Accueil**, dans le groupe **Nouveau**, choisissez **Nouveau**.  
 4. Renseignez les champs selon vos besoins.

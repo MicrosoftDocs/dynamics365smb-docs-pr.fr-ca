@@ -1,6 +1,6 @@
 ---
-title: "Nouveautés de Dynamics 365 for Financials| Microsoft Docs"
-description: "Décrit les toutes dernières nouveautés et mises à jour de Dynamics 365 for Financials."
+title: "Nouveautés dans Dynamics 365 Business edition | Microsoft Docs"
+description: "Décrit les toutes dernières nouveautés et mises à jour de Dynamics 365 Business edition."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -13,14 +13,14 @@ ms.search.keywords: news
 ms.date: 06/02/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 00fd623b6323b10a811d64c47b4a24d9a47b9f88
+ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
+ms.openlocfilehash: 83637fe211ce764b4b18429ab4c2c79cc06f3d20
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/10/2017
 
 ---
-# <a name="whats-new-in-dynamics-365-for-financials"></a>Nouveautés de Dynamics 365 for Financials
-Bienvenue dans [!INCLUDE[d365fin](includes/d365fin_md.md)]! Si ce n'est pas encore fait, inscrivez-vous à la version d'évaluation. Nous vous présenterons ensuite les bases de ce que vous pouvez réaliser grâce à [!INCLUDE[d365fin](includes/d365fin_md.md)], avant de vous laisser faire vos premiers pas par vous-même. Lorsque vous êtes prêt, vous pouvez ouvrir une compagnie vierge et effectuer vos propres configurations.  
+# <a name="whats-new-in-dynamics-365-for-finance-and-operations-business-edition"></a>Nouveautés dans Microsoft Dynamics 365 for Finance and Operations, Business edition
+Bienvenue dans [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)]! Si ce n'est pas encore fait, inscrivez-vous à la version d'évaluation. Nous vous présenterons ensuite les bases de ce que vous pouvez réaliser grâce à [!INCLUDE[d365fin](includes/d365fin_md.md)], avant de vous laisser faire vos premiers pas par vous-même. Lorsque vous êtes prêt, vous pouvez ouvrir une compagnie vierge et effectuer vos propres configurations.  
 
 Régulièrement, nous mettrons à jour [!INCLUDE[d365fin](includes/d365fin_md.md)] avec des fonctionnalités supplémentaires dans l'application de base et avec les nouvelles [extensions](ui-extensions.md). Pour obtenir une vue d'ensemble des fonctionnalités actuelles et à venir, jetez un œil à notre [Feuille de route Microsoft Dynamics 365](https://roadmap.dynamics.com/) - et n'oubliez pas de filtrer [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 

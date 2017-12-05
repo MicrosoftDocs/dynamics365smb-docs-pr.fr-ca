@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 09/04/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 166d85bbcf7d97cb513ba668e41fc4a179d8fcc3
+ms.sourcegitcommit: daa014eaa78caa7a317b05ca92ff27c1d1530c06
+ms.openlocfilehash: 85cd332e4b62ba73f511989983e1eb9f5147c5fb
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/17/2017
 
 ---
 # <a name="how-to-create-routings"></a>Comment créer des gammes
@@ -24,15 +24,15 @@ Les compagnies manufacturières utilisent des itinéraires pour visualiser et g�
 
 L'itinéraire est la base de la programmation des processus et des capacités, de l'affectation programmée du matériel en fonction des besoins et des documents de production.  
 
-En ce qui concerne les nomenclatures de production, les itinéraires sont affectés à l'article fini produit. Une gamme contient les données de base qui capturent les exigences du traitement correspondant à un article produit donné. Après la création d'un ordre de fabrication pour cet article, sa gamme gouvernera le calendrier des opérations tels que représenté dans la fenêtre **Gamme O.F.** sous l'ordre de fabrication.  
+En ce qui concerne les nomenclatures de production, les itinéraires sont affectés à l'article fini produit. Un itinéraire contient les données de base qui capturent les exigences du traitement correspondant à un article produit donné. Après la création d'un ordre de fabrication pour cet article, sa gamme gouvernera le calendrier des opérations tels que représenté dans la fenêtre **Gamme O.F.** sous l'ordre de fabrication.  
 
-Pour pouvoir configurer une gamme, les éléments suivants doivent être en place :  
+Pour pouvoir configurer un itinéraire, les éléments suivants doivent être en place :  
 
-- Des fiches article sont créées pour les articles parents qui participent à la production. Pour plus d'informations, reportez vous à [Procédure : enregistrer de nouveaux produits](inventory-how-register-new-items.md).
-- Les ressources de production sont configurées. Pour plus d'informations, voir [Procédure : configurer les centres de charge et les postes de charge](production-how-to-set-up-work-and-machine-centers.md).
+- Des fiches article sont créées pour les articles parents qui participent à la production. Pour plus d'informations, reportez vous à [Procédure : enregistrer de nouveaux articles](inventory-how-register-new-items.md).
+- Les ressources de production sont configurées. Pour plus d'informations, voir [Procédure : configurer des ateliers et des unités de production](production-how-to-set-up-work-and-machine-centers.md).
 
 ## <a name="to-create-a-routing"></a>Pour créer un itinéraire  
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), saisissez **Gammes**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Itinéraires**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4.  Dans le champ **Type**, sélectionnez **Série** pour calculer la gamme de fabrication en fonction de la valeur de **N° opération** . .   
@@ -53,7 +53,7 @@ Pour pouvoir configurer une gamme, les éléments suivants doivent être en plac
 12.  Poursuivez le remplissage des lignes pour toutes les opérations intervenant dans la production de l'article en question.  
 13.  Pour copier des lignes à partir d'un itinéraire existant, choisissez l'action **Copier itinéraire** pour sélectionner des lignes existantes.  
 14. Certifiez l'itinéraire.  
-15. Vous pouvez désormais lier le nouvel itinéraire à la fiche de l'article de production concerné en renseignant le champ **N° itinéraire**. Pour plus d'informations, reportez vous à [Procédure : enregistrer de nouveaux produits](inventory-how-register-new-items.md).  
+15. Vous pouvez désormais lier le nouvel itinéraire à la fiche de l'article de production concerné en renseignant le champ **N° itinéraire**. Pour plus d'informations, reportez vous à [Procédure : enregistrer de nouveaux articles](inventory-how-register-new-items.md).  
 
 > [!NOTE]  
 >  N'oubliez pas également de recalculer le coût standard de l'article de la fiche **Article** : choisissez l'action **Production**, sélectionnez l'action **Calculer coût standard**, puis sélectionnez l'action **Tous niveaux**.  
@@ -63,7 +63,7 @@ Vous pouvez créer des liens itinéraire pour lier des composantes à des opéra
 
 Les composants et opérations liés apparaissent dans une structure opératoire logique lorsque vous utilisez la fenêtre **Feuille production** pour la validation production et consommation, ce qui constitue un autre avantage majeur.  
 
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), saisissez **Gammes**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Itinéraires**, puis sélectionnez le lien associé.  
 2.  Ouvrez l'itinéraire contenant les opérations que vous voulez lier.  
 
     Vérifiez que le statut de la gamme est **Modification en cours**.  
@@ -94,8 +94,8 @@ Les composantes sélectionnées seront liées aux opérations sélectionnées lo
 ## <a name="to-assign-personnel-tools-and-quality-measures-to-routing-operations"></a>Pour affecter des qualifications, des outils et des contrôles qualité à des opérations itinéraire.
 Si vous avez besoin de personnes ayant des qualifications, un savoir-faire particulier, ou bénéficiant d'une autorisation spéciale pour une opération, vous pouvez affecter ces personnes à l'opération. En outre, vous pouvez affecter des outils et des exigences de qualité à l'opération. Cette procédure décrit l'affectation de qualifications. Les étapes sont similaires pour d'autres types d'informations sur l'opération.
 
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), saisissez **Gammes**, puis sélectionnez le lien connexe.  
-2.  Ouvrez la gamme appropriée.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Itinéraires**, puis sélectionnez le lien associé.  
+2.  Ouvrez l'itinéraire approprié.  
 3.  Sur le raccourci **Lignes**, sélectionnez la ligne à traiter, puis choisissez l'action **Qualifications**.  
 4.  Renseignez les champs de la fenêtre **Qualifications gamme**.  
 5.  Cliquez sur le bouton **OK** pour quitter la fenêtre. Les valeurs saisies sont copiées et affectées à l'opération.    
@@ -103,7 +103,7 @@ Si vous avez besoin de personnes ayant des qualifications, un savoir-faire parti
 ## <a name="to-create-a-new-versions-of-a-routing"></a>Pour créer une nouvelle version d'un itinéraire  
 Le principe de la version permet de gérer différentes versions d'un itinéraire. La structure d'une version d'itinéraire correspond à la structure de l'itinéraire composée d'un en-tête et de lignes version d'itinéraire. La différence de base est définie par la date début.  
 
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), saisissez **Gammes**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Itinéraires**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'itinéraire à copier, puis choisissez l'action **Versions**.  
 3. Dans la fenêtre **Versions d'itinéraire**, sélectionnez l'action **Nouveau**.
 4. Renseignez les champs selon vos besoins.
@@ -119,7 +119,7 @@ Le principe de la version permet de gérer différentes versions d'un itinérair
 La validité de la version est définie par le champ **Date début**.  
 
 ## <a name="see-also"></a>Voir aussi  
-[Procédure : créer des nomenclatures de production](production-how-to-create-production-boms.md)  
+[Comment créer des nomenclatures de production](production-how-to-create-production-boms.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Production](production-manage-manufacturing.md)    
 [Planification](production-planning.md)   

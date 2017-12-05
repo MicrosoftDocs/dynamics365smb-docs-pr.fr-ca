@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 09/06/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 0910760881decc98ba1bfa6e8753566316386b2c
+ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
+ms.openlocfilehash: a00f88aaf70464c8911d59b829b08dda900dc474
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 # <a name="about-planning-functionality"></a>À propos de la fonctionnalité Planification
@@ -75,7 +75,7 @@ Les modificateurs d'ordre suivants existent pour l'article ou la fiche unité de
 
 Les champs de paramètres de planning figurant dans la fenêtre **Paramètres production** sont les suivants :  
 
--   Code plus bas niv. dyn.  
+-   Code dern. niv. nomenc. dynam.  
 -   Prévision actuelle production  
 -   Prévision sur magasin  
 -   Délai de sécurité par défaut  

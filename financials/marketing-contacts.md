@@ -13,10 +13,10 @@ ms.search.keywords: relationship, prospect
 ms.date: 06/06/2017
 ms.author: jswymer
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 3ece25dc08df403e8dc3743d30a54c4172665c50
+ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
+ms.openlocfilehash: f6c9b936bdd6e8b1495aaa609f3a6eaac4095ab3
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 # <a name="creating-and-managing-contacts"></a>Création et gestion des contacts
@@ -26,7 +26,7 @@ Toutes les entités externes avec lesquelles vous avez des relations d'affaires 
 
 Vous pouvez enregistrer les informations en fonction d'une compagnie ou d'une personne travaillant dans cette compagnie. Vous pouvez également créer une personne contact indépendante pour les personnes ne travaillant pas pour une compagnie particulière (travailleurs indépendants ou freelance).
 
-Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent. 
+Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.
 
 | À | Voir |
 | --- | --- |
@@ -37,5 +37,5 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 ## <a name="see-also"></a>Voir aussi
 [Gestion des opportunités de ventes](marketing-manage-sales-opportunities.md)  
 [Paramétrage de la Gestion des relations](marketing-setup-marketing.md)  
-[Utilisation de Financials](ui-work-product.md)  
+[Utilisation de Dynamics 365](ui-work-product.md)  
 

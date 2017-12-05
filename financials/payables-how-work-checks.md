@@ -1,6 +1,6 @@
 ---
 title: "Emettre, imprimer et annuler des chèques| Microsoft Docs"
-description: "Décrit comment émettre des chèques à l'aide du journal paiement, imprimer des chèques et annuler ou afficher les écritures du grand livre de contrôle chèque dans Financials."
+description: "Décrit comment émettre des chèques à l'aide du journal paiement, imprimer des chèques et annuler ou afficher les écritures du grand livre de contrôle chèque dans Dynamics 365."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -13,10 +13,10 @@ ms.search.keywords: payment journal, print check, vendor payment, creditor, debt
 ms.date: 06/06/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 0875164a3afee7a835346a8d4b9323dda9ebf080
+ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
+ms.openlocfilehash: 85e5cd61571ec6e571a44e39f397bd370112dd5c
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 # <a name="how-to-work-with-checks"></a>Procédure : utilisation des chèques

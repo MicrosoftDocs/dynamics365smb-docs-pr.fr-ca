@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/04/2017
+ms.date: 09/19/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 8a7af6821affcef2c81499e904f2ed9520086323
+ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
+ms.openlocfilehash: 99ca93d4fd67ec424e54961ad5623c9986e5fe7c
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 # <a name="how-to-set-up-work-centers-and-machine-centers"></a>Procédure : configurer des ateliers et des unités de production
@@ -33,7 +33,7 @@ La disponibilité est enregistrée dans les écritures calendrier. Avant de conf
 ## <a name="to-set-up-a-work-center"></a>Pour configurer un atelier
 La procédure suivante décrit essentiellement comment configurer un atelier. La procédure de configuration d'un calendrier unité de production est similaire, sauf pour le raccourci **Configuration itinéraire**.  
 
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Centres de charge**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Ateliers**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4.  Dans le champ **Groupe ateliers**, sélectionnez le regroupement de ressources de niveau supérieur sous lequel l'atelier est organisé, le cas échéant. Choisissez l'action **Nouveau** dans la liste déroulante.  
@@ -65,7 +65,7 @@ La procédure suivante décrit essentiellement comment configurer un atelier. La
     > [!NOTE]  
     > Si vous choisissez d'utiliser Jours, n'oubliez pas qu'1 jour = 24 heures et non 8 (heures de travail).
 
-13.  Dans le champ **Capacité**, indiquez si le centre de charge a plusieurs postes ou personnes travaillant simultanément. Si votre installation de **Nom du produit** n'inclut pas la fonctionnalité Unité de production, la valeur de ce champ doit être **1**).  
+13.  Dans le champ **Capacité**, indiquez si le centre de charge a plusieurs postes ou personnes travaillant simultanément. Si votre installation de [!INCLUDE[d365fin](includes/d365fin_md.md)] n'inclut pas la fonctionnalité Unité de production, la valeur de ce champ doit être **1**.  
 14.  Dans le champ **Rendement**, entrez le pourcentage de la production standard prévue qui est réalisé par le centre de charge. Si vous entrez **100**, cela signifie que la production réelle du centre de charge est identique à la production standard.  
 15. Cochez la case **Calendrier consolidé** si vous utilisez également des unités de production. Ainsi, les écritures calendrier sont générées à partir des calendriers d'unité de production.  
 16.  Dans le champ **Code calendrier usine**, sélectionnez un calendrier usine. Pour plus d'informations, voir [Procédure : créer des calendriers usine](production-how-to-create-work-center-calendars.md).  
@@ -79,6 +79,24 @@ Si différentes unités de production (par exemple, 210 Table d'emballage 1, 310
 Toutefois, lorsqu'un atelier combine des unités de production identiques (par exemple, 210 Table d'emballage 1 et 220 Table d'emballage 2), il convient de prendre en compte cet atelier comme la somme des unités de production affectées. L'atelier est donc répertorié avec une capacité zéro. La capacité commune est affectée au centre de charge lorsque vous activez le champ **Calendrier consolidé**.
 
 Lorsque les capacités des ateliers n'ajoutent en rien à la capacité totale, vous pouvez paramétrer Rendement = 0.
+
+## <a name="to-set-up-a-capacity-constrained-machine-or-work-center"></a>Pour configurer un atelier ou une unité de production à contrainte de capacité
+Vous devez configurer les ressources de production que vous considérez comme critique et de l'accepter comme une charge limitée au lieu de la charge illimitée par défaut que d'autres ressources de production acceptent. Une ressource à contrainte de capacité peut être un atelier ou une unité de production que vous avez identifié comme étant un goulot d'étranglement et pour lequel vous souhaitez établir une charge limitée.
+
+[!INCLUDE[d365fin](includes/d365fin_md.md)] ne prend pas en charge le contrôle détaillé d'atelier. Il prévoit une utilisation faisable des ressources via un calendrier approximatif, mais il ne crée pas et ne met pas à jour automatiquement des calendriers détaillés sur la base de priorités ou de règles d'optimisation.
+
+Dans la fenêtre **Ressources contraintes de capacité**, vous pouvez effectuer des configurations qui évitent la surcharge de ressources spécifiques et permettent de s'assurer qu'aucune capacité n'est laissée non affectée si elle peut augmenter le délai d'exécution d'un bon de production. Dans le champ **Seuil (% capacité totale)**, vous pouvez ajouter un seuil aux ressources afin de réduire la répartition des opérations. Cela permet au système de programmer une charge sur le dernier jour possible en dépassant légèrement le pourcentage de charge critique si ceci peut réduire le nombre d'opérations qui sont divisées.
+
+Lors de la planification avec des ressources avec contraintes de capacité, le système veille à ce qu'aucune ressource ne soit chargée au-dessus de sa capacité définie (charge critique). Ceci est effectué en affectant chaque opération à l'emplacement du temps disponible le plus proche. Si le créneau n'est pas assez long pour effectuer toute l'opération, l'opération est répartie en au moins deux parties placées dans les créneaux disponibles les plus proches.
+
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Ressources contraintes de capacité**, puis sélectionnez le lien associé.
+2. Sélectionnez l'action **Nouveau**.
+3. Renseignez les champs selon vos besoins.
+
+> [!NOTE]
+> Les opérations d'ateliers ou d'unités de production qui sont configurés comme ressources contraintes sont toujours planifiées en série. Cela signifie que même si une ressource contrainte a plusieurs capacités, ces capacités ne peuvent être planifiées que dans l'ordre, pas en parallèle, comme c'est le cas si l'atelier ou l'unité de production n'a pas été défini en tant que ressource contrainte. Dans une ressource contrainte, le champ Capacité de l'atelier ou de l'unité de production est supérieur à 1.
+
+> En cas de répartition des opérations, le temps de préparation n'est affecté qu'une fois car on suppose qu'un certain ajustement manuel est effectué pour optimiser le calendrier.
 
 ## <a name="see-also"></a>Voir aussi  
 [Procédure : créer des calendriers usine](production-how-to-create-work-center-calendars.md)  

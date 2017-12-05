@@ -13,14 +13,14 @@ ms.search.keywords:
 ms.date: 09/06/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 6cdd86fb96e89e99ea2378221d2991bd640f887e
+ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
+ms.openlocfilehash: 4bc8694fc1da6caab88c3b462e5b50306d08271b
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 # <a name="how-to-modify-planning-suggestions-in-a-graphical-view"></a>Procédure : modifier les propositions planification dans une vue graphique
-Une activité de planification courante est d'ajouter ou de modifier les lignes feuille planning pour modifier les commandes approvisionnement proposées avant de les valider en exécutant la fonction **Traiter messages d'action**. Une alternative à utiliser la feuille planning est d'utiliser une vue graphique.
+Une activité de planification courante est d'ajouter ou de modifier les lignes feuille planning pour modifier les commandes approvisionnement proposées avant de les valider en exécutant la fonction **Traiter messages d'action**. Plutôt que d'utiliser la vue planification, vous pouvez utiliser une vue graphique.
 
 Dans la fenêtre **Disponibilité article par chronologie**, vous pouvez modifier certaines commandes d'approvisionnement et suggestions en faisant glisser les articles le long de l'axe des abscisses pour modifier la quantité ou le long de l'axe des ordonnées pour modifier la date d'échéance.  
 
@@ -62,11 +62,11 @@ Pour appliquer les modifications du programme d'approvisionnement, vous devez su
  |Symbole/icône|Description|  
  |------------------|---------------------------------------|  
  |Commandes avec|une croix noire (offre et demande).<br /><br /> -   Modification impossible.<br />-   Visible lorsque le champ **Afficher l'inventaire prévisionnel** est sélectionné (graphique orange).|  
- |Cercle rouge|Commandes approvisionnement existantes qui ne sont pas dans les propositions planification.<br /><br /> -   Modification impossible.<br />-   Visible lorsque le champ **Afficher le stock prévisionnel** est sélectionné (graphique orange).|  
+ |Cercle rouge|Commandes approvisionnement existantes qui ne sont pas dans les propositions planification.<br /><br /> -   Modification impossible.<br />-   Visible lorsque le champ **Afficher l'inventaire prévisionnel** est sélectionné (graphique orange).|  
  |Étoile jaune|Demande prévue.<br /><br /> -   Modification impossible.<br />-   Visible lorsque le champ **Nom prévision** a une valeur.<br /><br /> Lorsque les champs **Afficher le stock prévisionnel** et **Inclure propositions planning** sont sélectionnés, chaque étoile jaune possède un homologue lié dans le graphique opposé. Cela illustre la manière dont un approvisionnement proposé répond à la demande prévue.|  
  |Cercle vert avec une icône en forme de disque avec une croix rouge|Commande approvisionnement suggérée avec le message d'action *Annuler*.<br /><br /> -   Modification impossible.<br />-   Visible lorsque le champ **Inclure propositions planification** est sélectionné (graphique vert).|  
- |Cercle vert avec une icône en forme de disque avec une étoile|Commandes approvisionnement suggérées avec le message d'action *Nouveau*.<br /><br /> -   Modification possible.<br />-   Visible lorsque le champ **Inclure propositions planning** est sélectionné (graphique vert).|  
- |Cercle vert avec une icône en forme de disque avec une ou deux flèches|Commandes approvisionnement proposées avec le message d'action *Replanifier*, *Changer qté*, ou *Replan. et changer qté*<br /><br /> -   Modification possible.<br />-   Visible lorsque le champ **Inclure propositions planning** est sélectionné (graphique vert).<br /><br /> Les flèches reflètent la direction de la proposition planification. Par exemple, une flèche gauche conjointement à une flèche vers le haut indique un message d'action *Replanifier & changer qté* qui consiste à replanifier en amont et à augmenter la quantité.|  
+ |Cercle vert avec une icône en forme de disque avec une étoile|Commandes approvisionnement suggérées avec le message d'action *Nouveau*.<br /><br /> -   Modification possible.<br />-   Visible lorsque le champ **Inclure propositions planification** est sélectionné (graphique vert).|  
+ |Cercle vert avec une icône en forme de disque avec une ou deux flèches|Commandes approvisionnement proposées avec le message d'action *Replanifier*, *Changer qté*, ou *Replan. et changer qté*<br /><br /> -   Modification possible.<br />-   Visible lorsque le champ **Inclure propositions planification** est sélectionné (graphique vert).<br /><br /> Les flèches reflètent la direction de la proposition planification. Par exemple, une flèche gauche conjointement à une flèche vers le haut indique un message d'action *Replanifier & changer qté* qui consiste à replanifier en amont et à augmenter la quantité.|  
 
 Lorsque vous accédez au menu déroulant du raccourci **Chronologie**, les fonctions suivantes s'affichent en fonction de votre choix  
 
@@ -97,6 +97,6 @@ Outre les actions de clavier qui ont été citées précédemment, vous pouvez �
 [Stock](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
-[Pratiques de configuration recommandées : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
+[Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 
