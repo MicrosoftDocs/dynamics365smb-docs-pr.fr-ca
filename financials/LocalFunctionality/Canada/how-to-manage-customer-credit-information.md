@@ -1,8 +1,6 @@
 ---
 title: "Procédure : gérer les renseignements sur le crédit client | Microsoft Docs"
-description: "Dans [!INCLUDE[d365fin](../../includes/d365fin_md.md)], vous pouvez ajouter des commentaires aux renseignements sur le crédit client. Vous pouvez aussi mettre en attente et bloquer des clients présentant une mauvaise situation de crédit avant la livraison ou la facturation."
-services: project-madeira
-documentationcenter: 
+description: "Dans Dynamics 365, vous pouvez ajouter des commentaires aux renseignements sur le crédit client. Vous pouvez aussi mettre en attente et bloquer des clients présentant une mauvaise situation de crédit avant la livraison ou la facturation."
 author: SorenGP
 ms.service: dynamics365-financials
 ms.topic: article
@@ -13,10 +11,10 @@ ms.search.keywords:
 ms.date: 08/11/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 2eb3d0183185158495c717a3fd83bff750678e5f
+ms.sourcegitcommit: aa56764b5f3210229ad21eae6891fb201462209c
+ms.openlocfilehash: e206df2ec91b3a9f9533b9d871f2a286c33f2d3e
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 # <a name="how-to-manage-customer-credit-information"></a>Procédure : gérer les renseignements sur le crédit client
@@ -35,7 +33,7 @@ Dans [!INCLUDE[d365fin](../../includes/d365fin_md.md)], vous pouvez ajouter des 
 4.  Cliquez sur le bouton **OK**.  
 
 ## <a name="to-prevent-an-order-from-shipping-or-invoicing"></a>Pour éviter la livraison ou la facturation d'une commande  
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](../../media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Clients**, puis sélectionnez le lien connexe.  
+1.  Sélectionnez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Clients**, puis sélectionnez le lien connexe.  
 2.  Sélectionnez le client, puis choisissez l'action **Écritures**.  
 3.  Dans le champ **En attente**, entrez les initiales du client.  
 4.  Cliquez sur le bouton **OK**.  

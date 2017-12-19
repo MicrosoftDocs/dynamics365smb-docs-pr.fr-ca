@@ -12,14 +12,14 @@ ms.search.keywords: rfq
 ms.date: 08/08/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: fe51ade7a46ab7a8fdf77419a0098ac47fe2e5d1
+ms.sourcegitcommit: aa56764b5f3210229ad21eae6891fb201462209c
+ms.openlocfilehash: df1793d811dea11c01ff5e7d90a9f52b9e987c13
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 # <a name="how-to-request-quotes"></a>Procédure : Demander des devis
-Vous pouvez utiliser une devis à titre de phase préliminaire d'un bon de commande, et convertir cette commande en facture achat ou en commande.
+Vous pouvez utiliser un devis en tant que phase préliminaire d'un bon de commande, et convertir cette commande en facture achat ou en bon de commande.
 
 
 ## <a name="to-create-a-purchase-quote"></a>Pour créer un devis d'achat
@@ -31,7 +31,7 @@ Lorsque vous avez accepté le devis du fournisseur, vous pouvez le convertir en 
 
 1. Ouvrez un devis d'achat qui est prêt à être converti, puis sélectionnez l'action **Créer commande**.
 
-Le devis d'achat est supprimé de la base de données. Une facture achat ou un document de vente est créé sur la base des informations du devis d'achat et dans lequel vous pouvez traiter l'achat. Dans le champ **N° devis** de la facture achat ou du bon de commande, vous pouvez visualiser le numéro de devis à partir duquel elle a été réalisée.
+Le devis d'achat est supprimé de la base de données. Une facture achat ou un bon de commande basé sur les informations du devis et dans lequel vous pouvez traiter l'achat est créé. Dans le champ **N° devis** de la facture achat ou du bon de commande, vous pouvez visualiser le numéro de devis à partir duquel elle a été réalisée.
 
 ## <a name="see-also"></a>Voir aussi
 [Procédure d'achat](purchasing-manage-purchasing.md)  

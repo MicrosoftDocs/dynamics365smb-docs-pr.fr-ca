@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: adjustment, negative, positive, increase, decrease
-ms.date: 08/16/2017
+ms.date: 11/29/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 031affc5d872fd989515a2561155353446dfde60
+ms.sourcegitcommit: a49e50213f808fb72b43dfa22a34833b306ef12d
+ms.openlocfilehash: e9d08040932be4fec5ddefb5db69e453c375d3c6
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 # <a name="how-to-count-adjust-and-reclassify-inventory"></a>Procédure : Inventaire, ajustement et reclassement de l'inventaire
@@ -26,7 +26,7 @@ Bien que vous comptiez tous les articles de l'inventaire au moins une fois par a
 
 Pour ajuster les quantités d'inventaire enregistrées, pour inventaire ou à d'autres fins, vous pouvez utiliser un journal article pour modifier les écritures du grand livre de l'inventaire directement sans reporter les transactions commerciales. Sinon, vous pouvez ajuster pour un article distinct de la fiche article.
 
-Pour modifier les attributs du grand livre article et les quantités, vous pouvez utiliser le journal reclassement article. Les attributs courants pour les reclassements incluent les numéros de série et/ou de lot, les dates d'expiration et les dimensions.
+Pour modifier les attributs des écritures article, vous pouvez utiliser le journal reclassement article. Les attributs courants pour les reclassements incluent les dimensions et les codes promotion de vente, mais vous pouvez également effectuer des « transferts système » en reclassant les codes de zone et d'emplacement. Des étapes spéciales s'appliquent lorsque vous souhaitez reclasser les numéros de série ou de lot et leurs dates d'expiration. Pour plus d'informations, voir [Procédure : utiliser les numéros de lot et de série](inventory-how-work-item-tracking.md).
 
 > [!NOTE]
 > Dans les configurations d'entrepôt avancées, les articles sont enregistrés dans des zones en tant qu'écritures entrepôt, pas en tant qu'écritures article. Par conséquent, vous effectuez l'inventaire, l'ajustement et le reclassement dans des journaux d'entrepôt spéciaux qui prennent en charge les zones. Ensuite, vous utilisez des fonctions spéciales pour synchroniser les écritures entrepôt nouvelles ou modifiées avec leurs écritures article correspondantes pour refléter les modifications des quantités et valeurs d'inventaire. Ceci est décrit dans des procédures spécifiques ci-dessous lorsque cela est approprié.
@@ -209,13 +209,19 @@ Suivant les intervalles définis par la politique de la compagnie, vous devez re
 6.  Reportez les lignes journal pour entrer les différences de quantité dans le grand livre article. L'inventaire des zones entrepôt correspond maintenant précisément à celui du grand livre article.  
 
 ## <a name="to-reclassify-an-items-lot-number"></a>Pour reclasser le numéro de lot d'un article
+Pour modifier les attributs des écritures article, vous pouvez utiliser le journal reclassement article. Les attributs courants pour les reclassements incluent les dimensions et les codes promotion de vente, mais vous pouvez également effectuer des « transferts système » en reclassant les codes de zone et d'emplacement.
+
+Des étapes spéciales s'appliquent lorsque vous souhaitez reclasser les numéros de série ou de lot et leurs dates d'expiration. Pour plus d'informations, voir [Procédure : utiliser les numéros de lot et de série](inventory-how-work-item-tracking.md).
+
+L'exemple suivant est basé sur un code d'emplacement. Les étapes sont similaires pour d'autres types d'attributs d'article.
+
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuilles reclassement article**, puis sélectionnez le lien connexe.
 2. Dans la fenêtre **Feuilles reclassement article**, renseignez les champs selon vos besoins.
-3. Dans le champ **N° lot**, saisissez le numéro de lot actuel de l'article.
-4. Dans le champ **Nouveau N° lot**, saisissez le nouveau numéro de lot de l'article.
+3. Dans le champ **Code d'emplacement**, entrez le code d'emplacement actuel de l'article.
+4. Dans le champ **Nouveau code d'emplacement**, entrez le nouveau code d'emplacement de l'article.
 5. Sélectionnez l'action **Valider**.
 
-Des phases spéciales s'appliquent lorsque vous souhaitez reclasser des numéros de série ou de lot. Pour plus d'informations, voir [Procédure : utiliser les numéros de lot et de série](inventory-how-work-item-tracking.md).
+Pour plus d'informations sur le transfert des articles avec un contrôle complet des quantités livrées et reçues, voir [Procédure : transfert d'inventaire entre des emplacements](inventory-how-transfer-between-locations.md).
 
 ## <a name="see-also"></a>Voir aussi
 [Inventaire](inventory-manage-inventory.md)

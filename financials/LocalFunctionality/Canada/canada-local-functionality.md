@@ -1,8 +1,6 @@
 ---
 title: "Fonctionnalités locales Canada | Microsoft Docs"
-description: "Les rubriques suivantes décrivent les fonctionnalités locales dans la version canadienne de [!INCLUDE[d365fin](../../includes/d365fin_md.md)]."
-services: project-madeira
-documentationcenter: 
+description: "Les rubriques suivantes décrivent la fonctionnalité locale dans la version canadienne de Dynamics 365."
 author: SorenGP
 ms.service: dynamics365-financials
 ms.topic: article
@@ -13,10 +11,10 @@ ms.search.keywords:
 ms.date: 08/11/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 0505649cdedaaa81abd0a3e8b85d73e6da16fb8d
+ms.sourcegitcommit: aa56764b5f3210229ad21eae6891fb201462209c
+ms.openlocfilehash: 2951efb5fcf018f8343636ad4ff8c9cc89c38398
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 # <a name="canada-local-functionality"></a>Fonctionnalités locales Canada
