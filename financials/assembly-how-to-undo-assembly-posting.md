@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 08/15/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: c6d15f43e2a308dc8107e7a58e64f4b98452b1db
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: ac292561a5777b760fd8e857d28085af36201e3e
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-undo-assembly-posting"></a>Procédure : annuler le report d'assemblage
+# <a name="undo-assembly-posting"></a>Annuler le report d'assemblage
 Vous pouvez parfois être amené à annuler un ordre d'assemblage reporté, par exemple, si la commande a été reportée avec des erreurs qui doivent être corrigées, ou parce qu'il n'aurait pas dû être reporté en premier et doit être annulé.
 
 Lorsque vous annulez un ordre d'assemblage reporté, un ensemble d'écritures du grand livre d'articles de correction est créé pour inverser les écritures d'origine. Chaque écriture production positive pour l'élément d'assemblage est inversée par une écriture production négative. Chaque écriture production négative pour une composante d'assemblage est inversée par une écriture production positive. L'affectation des coûts fixes est créée automatiquement entre les écritures de correction et les écritures d'origine afin de garantir l'exactitude de l'inversion de coût.  
@@ -39,7 +39,7 @@ De plus, les ordres d'assemblage existants ne peuvent être restaurés que si le
 > [!TIP]  
 >  Pour résoudre les conflits dus à des modifications de ligne, vous pouvez rétablir manuellement les modifications sur les lignes en question avant d'annuler l'ordre d'assemblage reporté associé. Sinon, vous pouvez reporter l'ordre d'assemblage entièrement et choisir de le recréer lorsque vous annulez le report.  
 
-La procédure suivante décrit comment annuler les ordres d'assemblage reportés dans lesquels les articles ont été assemblés pour stock. Si vous souhaitez annuler les ordres d'assemblage validés pour lesquels les articles ont été assemblés pour une commande vente, vous devez exécuter la fonction **Annuler expédition** sur l'expédition validée qui se rapporte à l'ordre d'assemblage validé. Pour plus d'informations, reportez-vous à la [Procédure : inverser des reports](finance-how-reverse-journal-posting.md). L'annulation de l'ordre d'assemblage reporté se produit alors automatiquement de la même manière que décrit dans cette rubrique.  
+La procédure suivante décrit comment annuler les ordres d'assemblage reportés dans lesquels les articles ont été assemblés pour stock. Si vous souhaitez annuler les ordres d'assemblage validés pour lesquels les articles ont été assemblés pour une commande vente, vous devez exécuter la fonction **Annuler expédition** sur l'expédition validée qui se rapporte à l'ordre d'assemblage validé. Pour plus d'informations, voir [Inverser des reports](finance-how-reverse-journal-posting.md). L'annulation de l'ordre d'assemblage reporté se produit alors automatiquement de la même manière que décrit dans cette rubrique.  
 
 ## <a name="to-undo-posting-of-an-assembly-order"></a>Pour annuler le report d'un ordre d'assemblage  
 1.  Pour annuler entièrement ou partiellement l'ordre d'assemblage reporté, choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Ordres d'assemblage reportés**, puis sélectionnez le lien associé.  
@@ -57,10 +57,10 @@ Le champ **Contrepassé** de l'en\-tête d'ordre d'assemblage prend la valeur **
 
 ## <a name="see-also"></a>Voir aussi  
 [Gestion d'assemblage](assembly-assemble-items.md)  
-[Procédure : inverser des reports](finance-how-reverse-journal-posting.md)  
-[Procédure : traiter les retours ou annulations de ventes](sales-how-process-sales-returns-cancellations.md)    
-[Procédure : utiliser les nomenclatures](inventory-how-work-BOMs.md)  
-[Stocks](inventory-manage-inventory.md)  
+[Inverser des reports](finance-how-reverse-journal-posting.md)  
+[Traiter les retours ou annulations de ventes](sales-how-process-sales-returns-cancellations.md)    
+[Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
+[Stock](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 

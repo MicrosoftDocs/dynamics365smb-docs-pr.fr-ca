@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 80071e9fd584ad3232b8ae55169948f9a05d22be
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 068d141ee8490cc34e8b2092b7dcfda36139660d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-set-up-service-items-and-service-item-components"></a>Procédure : configurer les articles de service et les composantes article de service
+# <a name="set-up-service-items-and-service-item-components"></a>Configurer les articles de service et les composantes article de service
 Pour utiliser les articles de service, vous devez configurer
 
 * les groupes articles de service suivants. 
@@ -51,7 +51,7 @@ Un article de service peut être constitué de plusieurs composants pouvant êtr
 ## <a name="to-set-up-service-item-components-from-a-bom"></a>Pour configurer des composants article de service à partir de nomenclatures
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Articles de service**, puis sélectionnez le lien associé.  
 2. Ouvrez l'article de service pour lequel vous voulez configurer des composants à partir d'une nomenclature.  
-3. Sélectionnez l'action **Composants**. La fenêtre **Liste composants art. service** s'ouvre.  
+3. Sélectionnez l'action **Composantes**. La fenêtre **Liste composants art. service** s'ouvre.  
 4. Choisissez l'action **Copier à partir de nomenclature**.  
   
     Si l'article auquel est lié l'article de service est une nomenclature, les composants pour tous les articles de la nomenclature sont créés automatiquement.  
@@ -63,5 +63,5 @@ Vous pouvez configurer des tablettes de service qui identifient l'emplacement de
 2. Renseignez les champs selon vos besoins.
 
 ## <a name="see-also"></a>Voir aussi
-[Procédure : configurer des codes prestations standard](service-how-setup-service-coding.md)   
-[Procédure : configurer le dépannage](service-how-setup-troubleshooting.md)
+[Configurer des codes prestations standards](service-how-setup-service-coding.md)   
+[Configurer le dépannage](service-how-setup-troubleshooting.md)

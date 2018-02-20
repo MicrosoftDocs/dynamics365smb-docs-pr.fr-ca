@@ -1,6 +1,6 @@
 ---
 title: "Procédure : gérer les renseignements sur le crédit client | Microsoft Docs"
-description: "Dans Dynamics 365, vous pouvez ajouter des commentaires aux renseignements sur le crédit client. Vous pouvez aussi mettre en attente et bloquer des clients présentant une mauvaise situation de crédit avant la livraison ou la facturation."
+description: "Dans Finance and Operations, Business edition, vous pouvez ajouter des commentaires aux renseignements sur le crédit client. Vous pouvez aussi mettre en attente et bloquer des clients présentant une mauvaise situation de crédit avant la livraison ou la facturation."
 author: SorenGP
 ms.service: dynamics365-financials
 ms.topic: article
@@ -11,13 +11,13 @@ ms.search.keywords:
 ms.date: 08/11/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: aa56764b5f3210229ad21eae6891fb201462209c
-ms.openlocfilehash: e206df2ec91b3a9f9533b9d871f2a286c33f2d3e
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: b15c44ae471e7398985517a9cf596b15ff5efcc2
 ms.contentlocale: fr-ca
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-manage-customer-credit-information"></a>Procédure : gérer les renseignements sur le crédit client
+# <a name="manage-customer-credit-information"></a>Gérer les renseignements sur le crédit client
 Dans [!INCLUDE[d365fin](../../includes/d365fin_md.md)], vous pouvez ajouter des commentaires aux renseignements sur le crédit client. Vous pouvez aussi mettre en attente et bloquer des clients présentant une mauvaise situation de crédit avant la livraison ou la facturation.  
 
 ## <a name="to-add-comments-to-customer-credit-information"></a>Pour ajouter des commentaires aux renseignements sur le crédit client  

@@ -13,19 +13,19 @@ ms.search.keywords:
 ms.date: 08/15/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: d5be31ebb84542e1762ffda9bc76a3aa38485095
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: a263eb848556c60702124b37fc62e250b8a954a0
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# Description des processus Assembler pour commande et Assembler pour stock
+# <a name="understanding-assemble-to-order-and-assemble-to-stock"></a>Description des processus Assembler pour commande et Assembler pour stock
 Les éléments d'assemblage peuvent être fournis dans le cadre des deux processus suivants :  
 
 -   Assembler pour commande.  
 -   Assembler pour inventaire.  
 
-## Assembler pour commande  
+## <a name="assemble-to-order"></a>Assembler pour commande  
 En règle générale, vous utilisez *l'assemblage pour commande* pour les articles que vous ne souhaitez pas stocker parce que vous comptez les personnaliser en fonction des demandes des clients ou parce que vous voulez réduire les frais de transport associés au stock. La fonctionnalité de prise en charge inclut les points suivants :  
 
 -   Possibilité de personnaliser les éléments d'assemblage lors d'une prise de document de vente.  
@@ -38,29 +38,29 @@ En règle générale, vous utilisez *l'assemblage pour commande* pour les articl
 
 Dans le processus d'assemblage pour commande, l'article est assemblé en réponse à une document de vente et via un lien un à un entre l'ordre d'assemblage et le document de vente.  
 
-Lorsque vous entrez un article à assembler pour commande sur une ligne vente, un ordre d'assemblage est automatiquement créé avec un en-tête basé sur la ligne vente et avec des lignes qui reposent sur la nomenclature d'assemblage de l'article multipliée par la quantité de commande. Vous pouvez utiliser la fenêtre **Lignes Assembler pour commande** pour visualiser les lignes d'ordre d'assemblage liées afin de vous aider dans la personnalisation de l'élément d'assemblage et l'établissement d'une date de livraison qui est basée sur les informations de disponibilité des composantes. Pour plus d'informations sur le paramétrage des éléments d'assemblage, voir [Procédure : Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).  
+Lorsque vous entrez un article à assembler pour commande sur une ligne vente, un ordre d'assemblage est automatiquement créé avec un en-tête basé sur la ligne vente et avec des lignes qui reposent sur la nomenclature d'assemblage de l'article multipliée par la quantité de commande. Vous pouvez utiliser la fenêtre **Lignes Assembler pour commande** pour visualiser les lignes d'ordre d'assemblage liées afin de vous aider dans la personnalisation de l'élément d'assemblage et l'établissement d'une date de livraison qui est basée sur les informations de disponibilité des composantes. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).  
 
 > [!NOTE]  
->  Bien que cette tâche ne fasse pas partie du processus par défaut, vous pouvez vendre des quantités d'inventaire avec les quantités à assembler pour commande. Pour plus d’informations, reportez-vous à la section [Procédure : vendre des articles en inventaire dans des flux assembler pour commande](assembly-how-to-sell-inventory-items-in-assemble-to-order-flows.md).  
+>  Bien que cette tâche ne fasse pas partie du processus par défaut, vous pouvez vendre des quantités d'inventaire avec les quantités à assembler pour commande. Pour plus d’informations, voir [Vente d'articles d'inventaire dans des flux à assembler pour commande](assembly-how-to-sell-inventory-items-in-assemble-to-order-flows.md).  
 
  Pour activer ce processus, il faut que le champ **Politique d'assemblage** de la fiche article contienne la valeur **Assembler pour commande**.  
 
-## Assembler pour inventaire  
+## <a name="assemble-to-stock"></a>Assembler pour inventaire  
  En règle générale, vous utilisez *l'assemblage pour stock* pour les articles que vous souhaitez assembler avant les ventes (par exemple, pour préparer des articles pour une campagne de kit et les conserver dans le stock jusqu'à ce qu'ils soient commandés). Ces articles sont généralement des articles standard tels que les kits emballés qui ne peuvent pas être personnalisés en fonction des demandes des clients.  
 
- Dans le processus assembler pour stock, l'article est assemblé sans demande vente immédiate puis il est stocké dans l'entrepôt en tant qu'article d'inventaire en vue d'une vente ultérieure ou d'une consommation en tant que sous-ensemble. Pour plus d'informations, voir [Procédure : assembler des articles](assembly-how-to-assemble-items.md). À ce stade, l'article est prélevé et traité en tant qu'article unique. Il est considéré comme un article fini.  
+ Dans le processus assembler pour stock, l'article est assemblé sans demande vente immédiate puis il est stocké dans l'entrepôt en tant qu'article d'inventaire en vue d'une vente ultérieure ou d'une consommation en tant que sous-ensemble. Pour plus d'informations, voir [Assembler des articles](assembly-how-to-assemble-items.md). À ce stade, l'article est prélevé et traité en tant qu'article unique. Il est considéré comme un article fini.  
 
  Lorsque vous entrez un article à assembler pour stock sur une ligne vente, la ligne ressemble à tout autre article vendu à partir de l'inventaire. Par exemple, la disponibilité est vérifiée uniquement pour l'élément d'assemblage.  
 
 > [!NOTE]  
->  Bien que cette tâche ne fasse pas partie du processus par défaut, vous pouvez assembler un article pour commande même s'il est configuré pour être assemblé pour stock. Pour plus d’informations, reportez-vous à la section [Procédure : vendre simultanément des articles à assembler pour commande et des articles en inventaire](assembly-how-to-sell-assemble-to-order-items-and-inventory-items-together.md).  
+>  Bien que cette tâche ne fasse pas partie du processus par défaut, vous pouvez assembler un article pour commande même s'il est configuré pour être assemblé pour stock. Pour plus d’informations, voir [Vente simultanée d'articles à assembler pour commande et d'articles d'inventaire](assembly-how-to-sell-assemble-to-order-items-and-inventory-items-together.md).  
 
  Pour activer ce processus, il faut que le champ **Politique d'assemblage** de la fiche article contienne la valeur **Assembler pour stock**.  
 
-## Scénarios de combinaison  
+## <a name="combination-scenarios"></a>Scénarios de combinaison  
  Un principe général de la gestion d'assemblage stipule qu'une fois regroupées sur une ligne document de vente, les quantités assembler pour commande doivent être livrées avant les quantités inventaire.  
 
- Si un ordre d'assemblage est lié à une ligne commande vente, la valeur du champ **Qté vers Assembler pour commande** sur la ligne commande vente est copiée dans le champ **Quantité à assembler** via le champ **Quantité** dans l'en\-tête d'ordre d'assemblage. Pour plus d'informations sur le paramétrage des éléments d'assemblage, voir [Procédure : Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).  
+ Si un ordre d'assemblage est lié à une ligne commande vente, la valeur du champ **Qté vers Assembler pour commande** sur la ligne commande vente est copiée dans le champ **Quantité à assembler** via le champ **Quantité** dans l'en\-tête d'ordre d'assemblage. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).  
 
  En outre, la valeur du champ **Quantité à assembler** est liée au champ **Qté à livrer** sur la ligne document de vente, et cette relation gère la livraison des quantités à assembler pour commande, partiellement et entièrement. C'est le cas lorsque toute la quantité de la ligne vente est assemblée pour commande et, dans les scénarios de combinaison, lorsqu'une partie de la quantité de la ligne vente est assemblée pour commande et qu'une autre partie est livrée à partir de l'inventaire. Toutefois, dans le scénario de combinaison, vous disposez d'une flexibilité supplémentaire lors de l'expédition partielle, car vous pouvez modifier le champ **Quantité à assembler** dans des règles prédéfinies afin de spécifier le nombre d'unités à expédier partiellement à partir du stock et le nombre à expédier partiellement lors de l'assemblage pour commande.  
 
@@ -85,10 +85,10 @@ Lorsque vous entrez un article à assembler pour commande sur une ligne vente, u
 -   La quantité minimum que vous pouvez saisir est 1. En effet, vous devez assembler au moins une unité pour pouvoir vendre les quatre, en supposant que les trois autres soient disponibles dans l'inventaire.  
 -   La quantité maximum que vous pouvez saisir est 4. Cela permet de s'assurer que vous n'assemblez pas une quantité d'articles assemblés pour commande supérieure à celle requise pour la vente.  
 
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
 [Gestion d'assemblage](assembly-assemble-items.md)  
-[Procédure : utiliser les nomenclatures](inventory-how-work-BOMs.md)  
-[Stocks](inventory-manage-inventory.md)  
+[Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
+[Stock](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 

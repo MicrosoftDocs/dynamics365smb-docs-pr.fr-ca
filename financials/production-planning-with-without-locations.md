@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
 ms.openlocfilehash: 964bcd38897e676baa993399fe772b8ccfdc9ea0
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 # <a name="planning-with-or-without-locations"></a>Planification avec/sans emplacement
@@ -89,13 +89,13 @@ L'article n'est pas planifié, car aucun emplacement n'est défini sur la ligne 
 
 ### <a name="setup-2"></a>Configuration 2 :  
 
--   Magasin obligatoire = *Oui*  
+-   Emplacement obligatoire = *Oui*  
 -   Il n'existe pas d'unité de stock  
--   Mag. composant par déf =  *BLEU*  
+-   Composante à l'emplacement =  *BLEU*  
 
 #### <a name="case-21-demand-is-at--red-location"></a>Situation 2.1 : la demande concerne un magasin *ROUGE*  
 
-L'article est planifié comme suit : Méthode réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre*), Inclure stock =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
+L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre*), Inclure inventaire =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
 
 #### <a name="case-22-demand-is-at--blue-location"></a>Situation 2.2 : la demande concerne un magasin *BLEU*  
 
@@ -105,11 +105,11 @@ L'article est planifié en fonction des paramètres de planification de la fiche
 
 -   Emplacement obligatoire = *Non*  
 -   Il n'existe pas d'unité de stock  
--   Mag. composant par déf =  *BLEU*  
+-   Composante à l'emplacement =  *BLEU*  
 
 #### <a name="case-31-demand-is-at--red-location"></a>Situation 3.1 : la demande concerne un magasin *ROUGE*  
 
-L'article est planifié comme suit : Méthode réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre*), Inclure stock =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
+L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre*), Inclure inventaire =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
 
 #### <a name="case-32-demand-is-at--blue-location"></a>Situation 3.2 : la demande concerne un magasin *BLUE*  
 
@@ -117,17 +117,17 @@ L'article est planifié en fonction des paramètres de planification de la fiche
 
 #### <a name="case-33-demand-is-at--blank-location"></a>Situation 3.3 : la demande concerne un magasin *BLANC*  
 
-L'article est planifié comme suit : Méthode réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre*), Inclure stock =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
+L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre*), Inclure inventaire =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
 
 ### <a name="setup-4"></a>Configuration 4 :  
 
--   Magasin obligatoire = *Non*  
+-   Emplacement obligatoire = *Non*  
 -   Il n'existe pas d'unité de stock  
 -   Composante à l'emplacement =  *VIDE*  
 
 #### <a name="case-41-demand-is-at--blue-location"></a>Situation 4.1 : la demande concerne un magasin *BLEU*  
 
-L'article est planifié comme suit : Méthode réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre*), Inclure stock =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
+L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre*), Inclure inventaire =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
 
 #### <a name="case-42-demand-is-at--blank-location"></a>Situation 4.2 : la demande concerne un magasin *BLANC*  
 
@@ -144,6 +144,6 @@ Par conséquent, si vous planifiez souvent des demandes dans des magasins, il es
 [Stock](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
-[Pratiques de configuration recommandées : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
+[Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 

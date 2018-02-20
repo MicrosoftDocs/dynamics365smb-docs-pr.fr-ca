@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 08/11/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
-ms.openlocfilehash: ae8a98f5c3154249047e5a08cba9351c240a82e8
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 7e4c3e94c192a69295db3fc6e3a231475c68050b
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-print-troubleshooting-reports"></a>Procédure : imprimer des rapports de dépannage
+# <a name="print-troubleshooting-reports"></a>Imprimer des rapports de dépannage
 Les rapports de dépannage suivants sont disponibles pour aider les partenaires certifiés Microsoft à résoudre les problèmes :  
 
 -   Rapport **Information sur la licence** – Ce rapport contient le numéro de la licence, le nom de l'utilisateur disposant de la licence, les granules d'application qu'il a achetés, ainsi que la date d'expiration de la licence, le cas échéant.  

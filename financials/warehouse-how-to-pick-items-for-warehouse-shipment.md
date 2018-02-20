@@ -13,20 +13,20 @@ ms.search.keywords:
 ms.date: 08/21/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
-ms.openlocfilehash: 5b2658a5b77b1e1ee293b6f99c419c133c535372
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 5b73ac2ca4f1aa3bbb8c6514a8aafa39b3c76f99
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-pick-items-for-warehouse-shipment"></a>Procédure : prélever des articles pour l'expédition entrepôt
+# <a name="pick-items-for-warehouse-shipment"></a>Prélever des articles pour une livraison entrepôt
 Lorsque l'emplacement est configuré pour exiger un traitement des prélèvements entrepôt ainsi qu'un traitement des livraisons entrepôt, vous pouvez utiliser les documents prélèvement entrepôt pour créer et traiter les informations de prélèvement avant le report de la livraison entrepôt.  
 
 Vous ne pouvez pas créer de toutes pièces un document prélèvement entrepôt car une activité de prélèvement fait toujours partie d'un flux de travail, soit dans un scénario d'extraction, soit dans un scénario de déplacement.  
 
 Vous pouvez créer des documents prélèvement entrepôt en mode extraction en ouvrant un document livraison entrepôt vide, détecter les documents sources qui sont libérés pour la livraison, puis créer des lignes prélèvement entrepôt pour ces livraisons. Vous pouvez utiliser les fonctions **Obtenir documents sources** ou **Utiliser filtre pour obtenir documents sources** pour détecter les documents sources qui sont prêts pour livraison.
 
-Sinon, vous pouvez utiliser la fenêtre **Feuille prélèvement** pour extraire et créer les lignes prélèvement en mode lots. Pour plus d'informations, voir [Procédure : planifier des prélèvements dans des feuilles](warehouse-how-to-plan-picks-in-worksheets.md).  
+Sinon, vous pouvez utiliser la fenêtre **Feuille prélèvement** pour extraire et créer les lignes prélèvement en mode lots. Pour plus d'informations, voir [Planifier des prélèvements dans des feuilles](warehouse-how-to-plan-picks-in-worksheets.md).  
 
 Vous pouvez également créer des documents prélèvement entrepôt, par déplacement, à partir de la fenêtre **Livraison entrepôt** en sélectionnant **Créer prélèvement**.  
 
@@ -37,7 +37,7 @@ Vous pouvez également créer des documents prélèvement entrepôt, par déplac
 >   
 >  Pour plus d’informations, reportez-vous à la section « Traitement des articles à assembler pour commande dans les livraisons entrepôt ».  
 >   
->  Pour plus d'informations sur le prélèvement de composantes pour les ordres d'assemblage en général, notamment les situations où l'élément d'assemblage n'est pas dû dans une livraison vente, voir [Procédure : prélever pour la production ou l'assemblage](warehouse-how-to-pick-for-production.md).  
+>  Pour plus d'informations sur le prélèvement de composantes pour les ordres d'assemblage en général, notamment les situations où l'élément d'assemblage n'est pas dû dans une livraison vente, voir [Prélever pour la fabrication ou l'assemblage](warehouse-how-to-pick-for-production.md).  
 
 ## <a name="to-pick-items-for-warehouse-shipment"></a>Pour prélever des articles pour une livraison entrepôt  
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Prélèvements**, puis sélectionnez le lien associé.  
@@ -52,9 +52,9 @@ Vous pouvez également créer des documents prélèvement entrepôt, par déplac
 
 4.  Lorsque vous avez effectué le prélèvement et placé les articles dans la zone de livraison, choisissez l'action **Enregistrer prélèvement**.  
 
-La personne responsable de la livraison peut alors apporter les articles au quai de chargement et reporter la livraison, y compris le document source associé, dans la fenêtre **Livraison entrepôt** . Pour plus d'informations, voir [Procédure : Livrer des articles](warehouse-how-ship-items.md).   
+La personne responsable de la livraison peut alors apporter les articles au quai de chargement et reporter la livraison, y compris le document source associé, dans la fenêtre **Livraison entrepôt** . Pour plus d'informations, voir [Livrer des articles](warehouse-how-ship-items.md).   
 
-En plus de prélever les documents sources, comme indiqué dans cette rubrique, vous pouvez prendre et placer les articles entre les zones sans faire référence aux documents sources. Pour plus d'informations, voir [Procédure : Prélever et ranger sans document origine](warehouse-how-to-create-put-aways-from-internal-put-aways.md).  
+En plus de prélever les documents sources, comme indiqué dans cette rubrique, vous pouvez prendre et placer les articles entre les zones sans faire référence aux documents sources. Pour plus d'informations, voir [Prélever et ranger sans document origine](warehouse-how-to-create-put-aways-from-internal-put-aways.md).  
 
 ## <a name="handling-assemble-to-order-items-in-warehouse-shipments"></a>Traitement des articles à assembler pour commande dans les livraisons entrepôt
 Dans des scénarios assembler pour commande, le champ **Qté à livrer** sur les lignes livraison entrepôt est utilisé pour enregistrer le nombre d'unités assemblées. La quantité spécifiée est ensuite reportée comme résultat d'assemblage lorsque la livraison entrepôt est reportée.

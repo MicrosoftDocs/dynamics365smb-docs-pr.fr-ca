@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 08/22/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: f52353ec74b10983b0acfd04169d6b146c70eb84
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 5b8ddfc5e255dbaf20027c27c9c0210e4479a681
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
 # <a name="moving-items"></a>Déplacement d'articles
@@ -24,7 +24,7 @@ L'activité entrepôt consistant à déplacer les articles dans l'entrepôt s'ex
 
 Dans un emplacement entrepôt, il peut être nécessaire de déplacer les articles entre plusieurs zones pour prendre en charge les activités entrepôt quotidiennes permettant de conserver le flux d'articles dans l'entrepôt. Certains mouvements se produisent en relation directe avec les opérations internes ; par exemple, lorsqu'un bon de production impose que des composantes soient livrées ou que des produits finis soient rangés. D'autres mouvements se produisent dans le cadre d'une simple optimisation de l'espace des entrepôts ou en tant que mouvements ad-hoc depuis ou vers des opérations.
 
-Si le déplacement a lieu vers d'autres emplacements, il a une incidence sur les écritures article et doit donc être effectué dans le cadre d'un ordre de transfert. Pour plus d'informations, voir [Procédure : Transfert de stock entre des magasins](inventory-how-transfer-between-locations.md).  
+Si le déplacement a lieu vers d'autres emplacements, il a une incidence sur les écritures article et doit donc être effectué dans le cadre d'un ordre de transfert. Pour plus d'informations, voir [Transfert d'inventaire entre des emplacements](inventory-how-transfer-between-locations.md).  
 
 Des tâches de mouvement supplémentaires ont lieu régulièrement afin de réapprovisionner les zones prélèvement et atelier et modifier les informations relatives au contenu des zones.  
 
@@ -32,12 +32,12 @@ Des tâches de mouvement supplémentaires ont lieu régulièrement afin de réap
 
 |**Pour**|**Voir**|  
 |------------|-------------|  
-|Déplacer des articles d'un emplacement à l'autre dans des configurations entrepôt de base à tout moment et sans documents origine.|[Procédure : déplacer des articles dans les configurations de stockage de base](warehouse-how-to-move-items-ad-hoc-in-basic-warehousing.md)|
-|Utiliser la feuille mouvement entrepôt pour déplacer des articles dans des configurations d'entrepôt avancées, pour les documents origine et ad hoc.|[Procédure : déplacer des articles dans les configurations de stockage avancées](warehouse-how-to-move-items-in-advanced-warehousing.md)|  
-|Ajouter des articles composante à des opérations internes dans des configurations entrepôt de base en fonction des demandes issues des documents origine de ces opérations.|[Procédure : déplacer les composantes vers une zone opérations dans les configurations d'entrepôt de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md)|
-|Planifier les emplacements à remplir ou vider pour maintenir un flux efficace (par exemple, vidage d'une zone de stockage en vrac avant une réception importante).|[Comment planifier des mouvements entrepôt dans la feuille](warehouse-how-to-plan-warehouse-movements-in-worksheets.md)|
-|Mettre à jour la fréquence de réapprovisionnement des emplacements (emplacements prélèvement, etc.) suite aux fluctuations de la demande.|[Procédure : calculer le réapprovisionnement de la zone](warehouse-how-to-calculate-bin-replenishment.md)|
-|Restructurez votre entrepôt avec de nouveaux codes et caractéristiques de zone et déplacez-les le cas échéant.|[Comment restructurer les entrepôts](warehouse-how-to-restructure-warehouses.md)|  
+|Déplacer des articles d'un emplacement à l'autre dans des configurations entrepôt de base à tout moment et sans documents origine.|[Déplacer des articles dans les configurations de stockage de base](warehouse-how-to-move-items-ad-hoc-in-basic-warehousing.md)|
+|Utiliser la feuille mouvement entrepôt pour déplacer des articles dans des configurations d'entrepôt avancées, pour les documents origine et ad hoc.|[Déplacer des articles dans les configurations de stockage avancées](warehouse-how-to-move-items-in-advanced-warehousing.md)|  
+|Ajouter des articles composante à des opérations internes dans des configurations entrepôt de base en fonction des demandes issues des documents origine de ces opérations.|[Déplacer les composantes vers une zone opérations dans les configurations de stockage de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md)|
+|Planifier les emplacements à remplir ou vider pour maintenir un flux efficace (par exemple, vidage d'une zone de stockage en vrac avant une réception importante).|[Planifier des mouvements entrepôt dans la feuille](warehouse-how-to-plan-warehouse-movements-in-worksheets.md)|
+|Mettre à jour la fréquence de réapprovisionnement des emplacements (emplacements prélèvement, etc.) suite aux fluctuations de la demande.|[Calculer le réapprovisionnement de la zone](warehouse-how-to-calculate-bin-replenishment.md)|
+|Restructurez votre entrepôt avec de nouveaux codes et caractéristiques de zone et déplacez-les le cas échéant.|[Restructurer les entrepôts](warehouse-how-to-restructure-warehouses.md)|  
 
 ## <a name="see-also"></a>Voir aussi  
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  

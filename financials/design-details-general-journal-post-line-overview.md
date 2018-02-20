@@ -1,6 +1,6 @@
 ---
 title: "Aperçu de la ligne de report dans le journal général | Microsoft Docs"
-description: "Cette rubrique décrit les modifications du Codeunit 12, **Journal général-Ligne report**, qui est l'objet d'application majeur pour le report dans le grand livre et le seul emplacement pour insérer des écritures GL, TVA, client et fournisseur."
+description: "Cette rubrique décrit les modifications du codeunit 12, **Journal général-Ligne report**, qui est l'objet d'application majeur pour le report dans le grand livre et est le seul emplacement pour insérer des écritures grand livre, des écritures TVA et des écritures client et fournisseur."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
 ms.openlocfilehash: 77fa52505dc586dc11ca89e53f6eec75042d3606
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 # <a name="general-journal-post-line-overview"></a>Aperçu de la ligne report de journal général

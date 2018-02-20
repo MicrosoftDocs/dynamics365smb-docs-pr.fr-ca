@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: a49e50213f808fb72b43dfa22a34833b306ef12d
-ms.openlocfilehash: 7ce4b45d740e50bba8256e72fcf43c70ea85922c
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 58c243000bea5b70666b2a08cdd5696444e22f0f
 ms.contentlocale: fr-ca
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/30/2018
 
 ---
 # <a name="walkthrough-setting-up-and-using-a-purchase-approval-workflow"></a>Procédure pas à pas : Configuration et utilisation d'un flux d'approbation achat
@@ -158,14 +158,14 @@ Vous venez de configurer et tester un flux de travail d'approbation simple inclu
 
 La version [!INCLUDE[d365fin](includes/d365fin_md.md)] générique inclut un certain nombre de modèles de flux de travail pour les scénarios pris en charge par le code de l'application. La plupart concernent des flux d'approbation. Pour plus d'informations, voir Modèles flux de travail.  
 
-Définissez les variations des flux de travail en renseignant les champs sur les lignes flux de travail à partir de listes fixes de valeurs d'événement et de réponse qui représentent les scénarios pris en charge par le code de l'application. Pour plus d'informations, reportez\-vous à [Procédure : créer des flux de travail](across-how-to-create-workflows.md).  
+Définissez les variations des flux de travail en renseignant les champs sur les lignes flux de travail à partir de listes fixes de valeurs d'événement et de réponse qui représentent les scénarios pris en charge par le code de l'application. Pour plus d'informations, voir [Créer des flux de travail](across-how-to-create-workflows.md).  
 
 Si un scénario d'entreprise requiert un événement ou une réponse de workflow non pris en charge, un partenaire Microsoft doit l'implémenter en personnalisant le code de l'application. Pour plus d'informations, voir [Procédure pas à pas : implémentation de nouveaux événements et réponses de flux de travail](/dynamics-nav/Walkthrough--Implementing-New-Workflow-Events-and-Responses) dans l'Aide destinée aux développeurs et aux professionnels de l'informatique.  
 
 ## <a name="see-also"></a>Voir aussi  
-[Procédure : configurer des utilisateurs d'approbation](across-how-to-set-up-approval-users.md)   
+[Configurer des utilisateurs d'approbation](across-how-to-set-up-approval-users.md)   
 [Configuration de notifications de workflow](across-setting-up-workflow-notifications.md)   
-[Procédure : créer des workflows](across-how-to-create-workflows.md)   
-[Procédure : utilisation des flux d'approbation](across-how-use-approval-workflows.md)   
+[Créer des workflows](across-how-to-create-workflows.md)   
+[Utilisation des flux d'approbation](across-how-use-approval-workflows.md)   
 [Flux de travail](across-workflow.md)
 

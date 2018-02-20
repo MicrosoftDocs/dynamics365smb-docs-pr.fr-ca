@@ -13,14 +13,14 @@ ms.search.keywords:
 ms.date: 09/04/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: d37170cabe2b03200e3d3f5f7b5c2a679eb8f46c
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 61ad86f72f86cd9f6e1667dac445bfaa930d339f
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-set-up-base-calendars"></a>Comment configurer des calendriers principaux
-Vous pouvez affecter un calendrier principal à votre société et à ses partenaires commerciaux, tels que ses clients, ses fournisseurs, ou ses magasins. Les dates de livraison et de réception sur les lignes commande vente, commande achat, ordre de transfert, et ordre de fabrication sont calculées en fonction des jours ouvrés définis dans le calendrier. Lorsque vous configurez un nouveau calendrier principal, votre tâche consiste essentiellement à indiquer et à définir les jours chômés à appliquer.  
+# <a name="set-up-base-calendars"></a>Configurer des calendriers principaux
+Vous pouvez affecter un calendrier principal à votre compagnie et à ses partenaires commerciaux, tels que ses clients, ses fournisseurs ou ses emplacements. Les dates de livraison et de réception sur les lignes document de vente, bon de commande, ordre de transfert et bon de production futures sont calculées en fonction des jours ouvrés définis dans le calendrier. Lorsque vous configurez un nouveau calendrier principal, votre tâche consiste essentiellement à indiquer et à définir les jours chômés à appliquer.  
 
 ## <a name="to-set-up-a-base-calendar"></a>Pour configurer un calendrier principal  
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Calendrier principal**, puis sélectionnez le lien associé.  
@@ -44,7 +44,7 @@ Lorsque vous créez une écriture, le champ **Jour chômé** est sélectionné. 
 Spécifie une formule date pour le délai nécessaire au réapprovisionnement de l'article. Permet de calculer le champ **Date planifiée de réception**, si calcul en aval, et le champ **Date commande**, si calcul en amont. Reportez-vous à la section « Délai de réappro ».
 
 ## <a name="lead-time-calculation"></a>Délai de réapprovisionnement
-Le calendrier principal défini pour le fournisseur ou le magasin affecte uniquement la manière dont les dates sont calculées et arrondies en jours ouvrés. En conséquence, les deux champs date sur les lignes bon de commande sont calculés comme suit sous différentes conditions.
+Le calendrier principal défini pour le fournisseur ou l'emplacement affecte uniquement la manière dont les dates sont calculées et arrondies en jours ouvrés. En conséquence, les deux champs date sur les lignes bon de commande sont calculés comme suit sous différentes conditions.
 
 |Direction de calcul|Calendrier fournisseur défini|Calendrier fournisseur non défini|
 |---------------------|-----------------------|---------------------------|
@@ -109,7 +109,7 @@ Les calendriers principaux sont affectés à votre propre compagnie, à vos clie
 > [!IMPORTANT]  
 >  -   Si vous n'affectez aucun calendrier principal aux compagnies, toutes les dates sont calculées comme des jours ouvrés.  
 > -   Si vous n'indiquez pas l'emplacement sur une ligne commande, toutes les dates sont calculées comme des jours ouvrés.  
-> -   Le calendrier principal défini pour le fournisseur ou le magasin affecte uniquement la manière dont les dates sont calculées et arrondies en jours ouvrés.
+> -   Le calendrier principal défini pour le fournisseur ou l'emplacement affecte uniquement la manière dont les dates sont calculées et arrondies en jours ouvrés.
 
 > [!NOTE]  
 >  Pour créer des écritures calendrier personnalisées, vous devez d'abord affecter un calendrier principal à la compagnie.  

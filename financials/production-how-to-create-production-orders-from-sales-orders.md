@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 09/04/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: a0261ee242abf0fedcfb22f4a22252636a0074b4
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 3de644d63c57402b81a3d688fa6e533d717ae089
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-create-production-orders-from-sales-orders"></a>Comment créer des ordres de fabrication à partir de commandes achat
+# <a name="create-production-orders-from-sales-orders"></a>Créer des bons de production à partir de documents de vente
 Vous pouvez créer des bons de production pour les articles produits directement à partir des documents de vente.  
 
 ## <a name="to-create-a-production-order-from-a-sales-order"></a>Pour créer un bon de production à partir d'un document de vente  
@@ -31,7 +31,7 @@ Vous pouvez créer des bons de production pour les articles produits directement
 5.  Sélectionnez l'état et le type de commande.  
 6.  Choisissez le bouton **oui** pour créer l'ordre de fabrication.
 
-Vous pouvez également choisir de créer un ordre de fabrication projet. Pour en savoir plus, reportez\-vous à [Procédure : planifier les projets de commandes](production-how-to-plan-project-orders.md).   
+Vous pouvez également choisir de créer un ordre de fabrication projet. Pour en savoir plus, voir [Planifier les projets de commandes](production-how-to-plan-project-orders.md).   
 
 ## <a name="see-also"></a>Voir aussi  
 [Paramétrage de la production](production-configure-production-processes.md)  
@@ -39,6 +39,6 @@ Vous pouvez également choisir de créer un ordre de fabrication projet. Pour en
 [Stock](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
-[Pratiques de configuration recommandées : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
+[Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 

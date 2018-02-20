@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 08/22/2017
 ms.author: bholtorf
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 7ee0dc8f0f44e9bb62fc87caf85eaf92d438abe6
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: fb65a8b978a0f87b27cc48a634c4ec64d230221d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-create-service-invoices-or-credit-memos"></a>Procédure : créer des notes de crédit ou des factures service
+# <a name="create-service-invoices-or-credit-memos"></a>Créer des factures ou des notes de crédit de service
 La simplicité de facturation des commandes service est une fonctionnalité clé de [!INCLUDE[d365fin](includes/d365fin_md.md)]. Vous pouvez envoyer une facture à vos clients à tout moment ou créer des factures périodiquement.  
   
 La fenêtre **Contrat de service** permet de créer une facture directement. Vous pouvez aussi configurer votre système afin qu'un technicien de service sur le terrain puisse créer une facture service qui est non liée à un contrat ou une commande.  
@@ -85,7 +85,7 @@ Il se peut que vous deviez créer une facture service pour le service qui a déj
 ## <a name="to-create-a-combined-invoice"></a>Pour créer une facture regroupée  
 Vous pouvez facturer le client pour les services fournis sur différentes commandes service. Des lignes facture sont créées pour des articles, des heures ou des coûts ressource qui ont déjà été livrés à partir de différentes commandes service mais non encore facturés.  
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), saisissez **Factures service**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Factures de service**, puis sélectionnez le lien associé.  
 2. Renseignez les champs de la ligne selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 3. Choisissez l'action **Extraire lignes livraison**. La page **Extraire lignes livraison service** affiche toutes les lignes livrées mais non facturées pour le client.  
 4. Choisissez les lignes du service à facturer, puis choisissez **OK** pour ajouter les lignes livraison service à la facture.  
@@ -99,7 +99,7 @@ Un document note de crédit service est typiquement utilisé lorsqu'un client re
 4. Sur les lignes note de crédit, entrez les informations relatives aux articles retournés ou retirés, ou à la compensation qui sera donnée au client.  
 
 ## <a name="see-also"></a>Voir aussi
-[Procédure : reporter des factures service](service-how-to-post-service-orders.md)  
+[Reporter des factures service](service-how-to-post-service-orders.md)  
 [Paramétrage de la gestion des services](service-setup-service.md)  
 [Validation de service](service-service-posting.md)  
 

@@ -13,17 +13,17 @@ ms.search.keywords:
 ms.date: 08/29/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: ba8c1649094c9606766c4f4e88df5beed9400e53
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 7e5d30ec5775030c523b73f90490428531f49fec
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-pick-items-with-inventory-picks"></a>Procédure : prélever des articles avec les prélèvements stock
+# <a name="pick-items-with-inventory-picks"></a>Prélever des articles avec les prélèvements stock
 Lorsque votre emplacement est configuré pour exiger un traitement des prélèvements mais pas un traitement des livraisons, vous utilisez la fenêtre **Prélèvement inventaire** pour enregistrer et reporter les informations de prélèvement et de livraison pour vos documents sources. Le document source sortant peut être un document de vente, un retour achat, un transfert sortant ou un bon de production dont les composantes sont prêtes à être prélevées.
 
 > [!NOTE]  
-> Les composantes pour les commandes d'assemblage ne peuvent pas être prélevées ni reportées avec des prélèvements inventaire. À la place, utilisez la fenêtre **Mouvement d'inventaire**. Pour plus d'informations, voir [Procédure : déplacer les composantes vers une zone opérations dans un entrepôt de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md).
+> Les composantes pour les commandes d'assemblage ne peuvent pas être prélevées ni reportées avec des prélèvements inventaire. À la place, utilisez la fenêtre **Mouvement d'inventaire**. Pour plus d'informations, voir [Déplacer les composantes vers une zone opérations dans le stockage de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md).
 
 >  En cas de prélèvement et de livraison de quantités de lignes vente assemblées pour commande, vous devez suivre certaines règles en créant les lignes prélèvement inventaire. Pour plus d’informations, reportez-vous à la section « Traitement des articles à assembler pour commande dans les prélèvements stock ».  
 
@@ -39,7 +39,7 @@ Pour les documents de vente, les retours achat et les ordres de transfert sortan
 1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Commandes vente**, puis sélectionnez le lien connexe.
 2. Sélectionnez le document de vente que vous voulez libérer, puis sélectionnez l'action **Libérer**.
 
-Pour les bons de production, vous créez automatiquement la demande entrepôt pour le prélèvement de composantes, appelé *purge* lorsque l'état du bon de production passe à **Libéré** ou lorsque le bon de production libéré est créé. Pour plus d'informations, reportez-vous à [Procédure : prélever pour la fabrication ou l'assemblage](warehouse-how-to-pick-for-production.md).
+Pour les bons de production, vous créez automatiquement la demande entrepôt pour le prélèvement de composantes, appelé *purge* lorsque l'état du bon de production passe à **Libéré** ou lorsque le bon de production libéré est créé. Pour plus d'informations, voir [Prélever pour la fabrication ou l'assemblage](warehouse-how-to-pick-for-production.md).
 
 Une fois la demande entrepôt créée, l'employé d'entrepôt affecté aux prélèvements des articles peut voir que le document source est prêt à être prélevé et peut créer un nouveau document prélèvement sur la base de la demande entrepôt.  
 
@@ -73,7 +73,7 @@ Maintenant que la demande est créée, l'employé d'entrepôt peut créer un nou
 2. Dans le champ **Code de zone** sur les lignes prélèvement, la zone à partir de laquelle les articles doivent être prélevés est proposée sur la base d'une zone par défaut de l'article. Vous pouvez modifier la zone dans cette fenêtre, si nécessaire.  
 3. Exécutez le prélèvement et saisissez les informations pour la quantité effectivement rangée dans le champ **Quantité à traiter**.
 
-    S'il s'avère nécessaire de prélever les articles d'une ligne dans plusieurs zones, notamment parce qu'ils ne sont pas disponibles dans la zone indiquée, alors utilisez la fonction **Éclater ligne** sur le raccourci **Lignes**. Pour plus d'informations sur l'éclatement des lignes, reportez\-vous à la rubrique [Procédure : répartir des lignes activité entrepôt](warehouse-how-to-split-warehouse-activity-lines.md).  
+    S'il s'avère nécessaire de prélever les articles d'une ligne dans plusieurs zones, notamment parce qu'ils ne sont pas disponibles dans la zone indiquée, alors utilisez la fonction **Éclater ligne** sur le raccourci **Lignes**. Pour plus d'informations sur l'éclatement des lignes, voir [Répartir des lignes activité entrepôt](warehouse-how-to-split-warehouse-activity-lines.md).  
 4. Une fois le prélèvement exécuté, choisissez l'action **Reporter**.    
 
 Le processus de report reporte la livraison des lignes du document source qui ont été prélevées, ou la consommation dans le cas de bons de production. Si l'emplacement utilise des zones, le report crée également des écritures entrepôt pour reporter les modifications apportées aux quantités de la zone.  
@@ -87,11 +87,11 @@ Si les articles du prélèvement inventaire ne sont pas disponibles, vous pouvez
 >  Si des numéros de série/lot de lignes prélèvement inventaire ne sont pas disponibles, vous ne devez pas supprimer les lignes concernées. Au lieu de cela, vous devez remettre le champ **Qté à gérer** à zéro, reporter les prélèvements réels, puis supprimer le document prélèvement inventaire. De cette manière, vous pourrez recréer les lignes prélèvement inventaire de ces numéros de série/lot à partir du document de vente ultérieurement.  
 
 ## <a name="handling-assemble-to-order-items-with-inventory-picks"></a>Traitement des articles à assembler pour commande dans les prélèvements stock
-La fenêtre **Prélvmt invent** est également utilisée pour prélever et livrer les ventes lorsque les articles doivent être assemblés avant de pouvoir être livrés. Pour plus d'informations sur le paramétrage des éléments d'assemblage, voir [Procédure : Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).
+La fenêtre **Prélèvement inventaire** est également utilisée pour prélever et livrer les ventes lorsque les articles doivent être assemblés avant de pouvoir être livrés. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).
 
 Les articles à livrer ne sont pas physiquement présents dans une zone tant qu'ils ne sont pas assemblés et reportés comme production dans une zone de la zone d'assemblage. Cela signifie que le prélèvement des articles à assembler pour commande en vue d'une livraison est effectué suivant un flux spécial. Depuis une zone, les employés d'entrepôt déposent des éléments d'assemblage sur le quai de livraison, puis reportent le prélèvement inventaire. Le prélèvement inventaire reporté reporte ensuite les résultats d'assemblage, la consommation de composantes et la livraison vente.
 
-Vous pouvez configurer [!INCLUDE[d365fin](includes/d365fin_md.md)] pour créer automatiquement un mouvement d'inventaire lors de la création du prélèvement inventaire pour l'élément d'assemblage. Pour cela, vous devez sélectionner le champ **Créer des mouvements automatiquement** dans la fenêtre **Configuration d'assemblage**. Pour plus d'informations, voir [Procédure : déplacer les composantes vers une zone opérations dans un entrepôt de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md).
+Vous pouvez configurer [!INCLUDE[d365fin](includes/d365fin_md.md)] pour créer automatiquement un mouvement d'inventaire lors de la création du prélèvement inventaire pour l'élément d'assemblage. Pour cela, vous devez sélectionner le champ **Créer des mouvements automatiquement** dans la fenêtre **Configuration d'assemblage**. Pour plus d'informations, voir [Déplacer les composantes vers une zone opérations dans le stockage de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md).
 
 Les lignes prélèvement inventaire pour les articles vente sont créées de différentes manières, selon qu'aucune, certaines ou toutes les quantités des lignes vente sont assemblées pour commande.
 

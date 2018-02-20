@@ -1,6 +1,6 @@
 ---
 title: "Procédure : supprimer des workflows | Microsoft Docs"
-description: "Si vous êtes certain qu'un workflow n'est plus utilisé, vous pouvez le supprimer. Toutes les instances d'étape définies dans le flux de travail doivent avoir l'état **Terminé**."
+description: "Si vous êtes certain qu'un workflow n'est plus utilisé, vous pouvez le supprimer. Toutes les instances d'étape de workflow définies dans le workflow doivent avoir le statut **Terminé**."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -13,19 +13,19 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: d1b7b29735983e2de0bdaf5d382679d9546a6278
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 3e972ae6532c9531845e2739237b6ccb94d14c12
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-delete-workflows"></a>Procédure : supprimer des workflows
+# <a name="delete-workflows"></a>Supprimer des workflows
 Si vous êtes certain qu'un workflow n'est plus utilisé, vous pouvez le supprimer. Toutes les instances d'étape de workflow définies dans le workflow doivent avoir le statut **Terminé**.  
 
 > [!CAUTION]  
 >  Lorsque vous supprimez un workflow, toutes les informations contenues dans le workflow seront perdues.  
 
- Dans la fenêtre **Workflow**, créez un workflow en répertoriant les étapes concernées sur les lignes. Chaque étape comprend un événement de workflow modéré par des conditions d'événement, et une réponse de workflow modérée par des options de réponse. Définissez les phases de workflow en renseignez les champs des lignes de workflow à partir de listes fixes de valeurs d'événement et de réponse qui sont les scénarios pris en charge par le code de l'application. Pour plus d'informations, reportez\-vous à [Procédure : créer des flux de travail](across-how-to-create-workflows.md).  
+ Dans la fenêtre **Workflow**, créez un workflow en répertoriant les étapes concernées sur les lignes. Chaque étape comprend un événement de workflow modéré par des conditions d'événement, et une réponse de workflow modérée par des options de réponse. Définissez les phases de workflow en renseignez les champs des lignes de workflow à partir de listes fixes de valeurs d'événement et de réponse qui sont les scénarios pris en charge par le code de l'application. Pour plus d'informations, voir [Créer des flux de travail](across-how-to-create-workflows.md).  
 
 ## <a name="to-delete-a-workflow"></a>Pour supprimer un workflow  
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Flux de travail**, puis sélectionnez le lien associé.  
@@ -35,9 +35,9 @@ Si vous êtes certain qu'un workflow n'est plus utilisé, vous pouvez le supprim
 5.  Dans la fenêtre **Workflow**, sélectionnez l'action **Supprimer**.  
 
 ## <a name="see-also"></a>Voir aussi  
- [Procédure : créer des workflows](across-how-to-create-workflows.md)   
- [Procédure : Activer des workflows](across-how-to-enable-workflows.md)   
- [Procédure : afficher des instances d'étape de workflow archivées](across-how-to-view-archived-workflow-step-instances.md)   
+ [Créer des workflows](across-how-to-create-workflows.md)   
+ [Activer des workflows](across-how-to-enable-workflows.md)   
+ [Afficher des instances d'étape de workflow archivées](across-how-to-view-archived-workflow-step-instances.md)   
  [Procédure pas à pas : Configuration et utilisation d'un flux d'approbation achat](walkthrough-setting-up-and-using-a-purchase-approval-workflow.md)   
  [Paramétrage des workflows](across-set-up-workflows.md)   
  [Utilisation des workflows](across-use-workflows.md)   

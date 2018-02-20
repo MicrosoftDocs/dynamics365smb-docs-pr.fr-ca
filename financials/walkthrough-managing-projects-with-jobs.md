@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 09/07/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: b6a61a9c5d2b8c7b3d197780c580c8bcf957560e
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 2df47e6f5bcd7b02282e45757d94bd6fc0f0981d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
 # <a name="walkthrough-managing-projects-with-jobs"></a>Procédure pas à pas : gestion des projets
@@ -114,7 +114,7 @@ Ce procédure pas à pas se concentre sur la société CRONUS International Ltd.
 
 ### <a name="to-set-up-a-job"></a>Pour configurer un projet  
 
-1.  Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Projets**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Projets**, puis choisissez le lien associé.  
 2.  Choisissez l'action **Nouveau** pour créer une fiche.  
 3.  Sous le raccourci **Général**, entrez les informations suivantes :  
 
@@ -251,7 +251,7 @@ Ce procédure pas à pas se concentre sur la société CRONUS International Ltd.
 
 ### <a name="to-create-a-job-sales-invoice"></a>Pour créer une facture vente projet  
 
-1.  Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Projets**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Projets**, puis choisissez le lien associé.  
 2.  Sélectionnez le projet que vous avez créé précédemment, puis choisissez l'action **Créer une facture vente projet**.  
 3.  Sous le raccourci **Tâche projet**, désactivez tout filtre associé à **N° tâche projet** pour facturer le projet. Sélectionnez le projet concerné dans le champ **N° de projet**.  
 4.  Sur le raccourci **Options**, renseignez la date de validation et indiquez si vous souhaitez créer une facture par tâche ou une seule facture pour l'ensemble des tâches.  
@@ -275,7 +275,7 @@ Ce procédure pas à pas se concentre sur la société CRONUS International Ltd.
 
 ### <a name="to-open-the-statistics-window"></a>Pour ouvrir la fenêtre Statistiques  
 
-1.  Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Projets**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Projets**, puis choisissez le lien associé.  
 2.  Sélectionnez l'action **Statistiques**. Vous pouvez consulter des informations détaillées sur les prix, les coûts et les profits d'un projet dans la devise locale et dans une devise étrangère.  
 3.  Cliquez sur le bouton **Fermer** pour fermer la fenêtre **Statistiques projet**.  
 
@@ -284,7 +284,7 @@ Ce procédure pas à pas se concentre sur la société CRONUS International Ltd.
 
 ### <a name="to-manage-fixed-pricing-in-jobs"></a>Pour gérer un prix fixe dans des projets  
 
-1.  Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Projets**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Projets**, puis choisissez le lien associé.  
 2.  Sélectionnez le numéro de projet **Guildford**, puis choisissez l'action **Lignes tâche projet**.  
 3.  Sélectionnez la ligne 1120, puis, dans le champ **Programmé (coût total)**, cliquez avec le bouton droit sur le montant et sélectionnez **Détail**.  
 
@@ -365,7 +365,7 @@ Ce procédure pas à pas se concentre sur la société CRONUS International Ltd.
 
 ### <a name="to-copy-a-job"></a>Pour copier un projet  
 
-1.  Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Projets**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Projets**, puis choisissez le lien associé.  
 2.  Choisissez l'action **Nouveau** pour créer un projet. Entrez les informations suivantes :  
 
     -   **Description** : **Installation de 10 salles de conférence**  
@@ -390,7 +390,7 @@ Ce procédure pas à pas se concentre sur la société CRONUS International Ltd.
 
 ### <a name="to-set-up-a-new-account"></a>Pour configurer un nouveau compte  
 
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Plan comptable**, puis sélectionnez le lien connexe.  
+1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Plan comptable**, puis sélectionnez le lien connexe.  
 2.  Dans la fenêtre **Plan comptable**, choisissez l'action **Nouveau** pour créer une fiche.  
 3.  Dans la fiche **Nouveau compte du grand livre**, entrez les informations suivantes :  
 
@@ -481,8 +481,8 @@ Ce procédure pas à pas se concentre sur la société CRONUS International Ltd.
 ## <a name="see-also"></a>Voir aussi  
  [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)   
  [Configuration de la gestion de projet](projects-setup-projects.md)   
- [Procédure : utiliser des ressources](projects-how-use-resources.md)   
- [Procédure : surveiller la progression et les performances](projects-how-monitor-progress-performance.md)   
- [Procédure : facturer des projets](projects-how-invoice-jobs.md)  
+ [Utiliser des ressources](projects-how-use-resources.md)   
+ [Surveillance de la progression et des performances](projects-how-monitor-progress-performance.md)   
+ [Facturation des projets](projects-how-invoice-jobs.md)  
  [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 

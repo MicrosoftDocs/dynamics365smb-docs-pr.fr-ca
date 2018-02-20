@@ -1,6 +1,6 @@
 ---
 title: "Procédure : créer des commandes service | Microsoft Docs"
-description: "Utilisez la fenêtre **Commande service** pour créer des documents dans lesquels vous saisissez des informations sur un service, tel que les réparations et l'entretien, pour des articles de service à la demande du client."
+description: "Utilisez la fenêtre **Commande service** pour créer des documents dans lesquels vous saisissez des informations sur un service, tel que réparation et maintenance, pour des articles de service à la demande du client."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: cb514fe04fd70836f640d3db4ea592680ab0fa1a
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 5460f50c4c556a74b518976d5d5fa90203f16967
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-create-service-orders"></a>Procédure : créer des commandes service
+# <a name="create-service-orders"></a>Créer commande service
 Utilisez la fenêtre **Commande service** pour créer des documents dans lesquels vous saisissez des informations sur un service, tel que réparation et maintenance, pour des articles de service à la demande du client.  
   
 Lorsque vous créez une commande service, vous ne devez renseigner que certains champs. Certains champs sont facultatifs et la beaucoup d'entre eux sont renseignés automatiquement lorsque vous renseignez les champs associés.  
@@ -52,7 +52,7 @@ Vous pouvez créer automatiquement des commandes service pour l'entretien des ar
 ## <a name="to-convert-a-service-quote-to-a-service-order"></a>Pour convertir les devis service en commandes service
 Lorsqu'un client accepte un devis service, vous le convertissez en commande service. Le devis est effacé et une commande service avec la même description que le devis service est crée. La date et le délai de réponse de la commande service sont recalculés et est affecté à cette dernière le statut **Suspendu**. L'état réparation des articles de service de la commande est modifié en **Initial**.  
   
-[!INCLUDE[d365fin](includes/d365fin_md.md)] recherche les écritures affectation de tous les articles de service du devis service qui présentent le statut **Actif**. S'il en trouve, leur état d'affectation passe à **Réaffectation nécessaire**. Lorsque vous réaffectez les articles de service de la commande service, le statut des écritures affectation enregistrées pour le devis passe à **Terminé**.   
+[!INCLUDE[d365fin](includes/d365fin_md.md)] recherche les écritures affectation de tous les articles de service du devis service qui présentent l'état **Actif**. S'il en trouve, leur état d'affectation passe à **Réaffectation nécessaire**. Lorsque vous réaffectez les articles de service de la commande service, le statut des écritures affectation enregistrées pour le devis passe à **Terminé**.   
 
 1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Devis de contrat de service**, puis sélectionnez le lien associé.  
 2. Choisissez le devis service à convertir en commande service.  
@@ -79,7 +79,7 @@ Si vous voulez avoir l'assurance qu'un article est disponible pour une commande 
 5. Sur la page **Réservation**, choisissez **Réserver à partir de la ligne courante**. 
 
 ## <a name="to-insert-lines-based-on-standard-service-codes"></a>Pour insérer des lignes selon les codes prestation standard  
-Si vous avez configuré des codes prestation standard et les avez associés à des groupes articles de service, vous pouvez insérer les lignes standard liées aux codes prestation standard sur des documents service. Pour plus d'informations, reportez vous à [Procédure : configurer des codes prestation standard](service-how-setup-service-coding.md).   
+Si vous avez configuré des codes prestation standard et les avez associés à des groupes articles de service, vous pouvez insérer les lignes standard liées aux codes prestation standard sur des documents service. Pour plus d'informations, voir [Configurer des codes prestation standard](service-how-setup-service-coding.md).   
 
 1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Commandes de service**, puis sélectionnez le lien associé.  
 2. Créez une nouvelle commande service.  
@@ -106,8 +106,8 @@ Le programme ne supprime pas la commande service automatiquement cependant, si l
 
 ## <a name="see-also"></a>Voir aussi  
 [Validation de service](service-service-posting.md)  
-[Procédure : reporter une commande service](service-how-to-post-service-orders.md)  
+[Reporter une commande service](service-how-to-post-service-orders.md)  
 [Paramétrage de la gestion des services](service-setup-service.md)  
-[Procédure : travailler sur des tâches service](service-how-to-work-on-service-tasks.md)  
-[Procédure : affecter des ressources](service-how-to-allocate-resources.md)  
+[Travailler sur des tâches service](service-how-to-work-on-service-tasks.md)  
+[Affecter des ressources](service-how-to-allocate-resources.md)  
 

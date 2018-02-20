@@ -12,13 +12,13 @@ ms.workload: na
 ms.date: 06/07/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 1620e69ce8018256780dcba108c31312c02166cb
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 3f2a1f762f9380f3cd272e78c4c2f269e9960f38
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-allocate-costs-and-income"></a>Procédure : ventiler des coûts et des bénéfices
+# <a name="allocate-costs-and-income"></a>Répartition des coûts et du revenu
 Vous pouvez ventiler une écriture dans un journal général dans différents comptes lorsque vous reportez le journal. L'affectation peut être effectuée de trois manières différentes :
 
 * Quantité

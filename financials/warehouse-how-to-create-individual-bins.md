@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 09/07/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 37a79ad08113b16bf0240d4c92eac6464015db07
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: f8cd19f97c530397dd6b499157e13340331aa3ba
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-create-bins"></a>Procédure : créer des zones
+# <a name="create-bins"></a>Créer zones
 La méthode la plus efficace pour créer les zones de votre entrepôt consiste à générer des groupes de zones identiques dans la feuille de création de zones, mais vous pouvez également créer vos zones séparément à partir de la fiche emplacement. Vous pouvez également utiliser une fonction de la fenêtre **Feuille création zone** pour créer des zones automatiquement.  
 
 ## <a name="to-create-a-bin-from-the-location-card"></a>Pour créer une zone à partir de la fiche emplacement  
@@ -39,7 +39,7 @@ Avant de commencer à créer automatiquement des zones, déterminez les types de
 > [!NOTE]  
 >  Dès que vous utilisez une zone, vous ne pouvez pas la supprimer sauf si elle est vide. En revanche, si vous souhaitez utiliser un autre système d'attribution de nom de zone, vous pouvez utiliser le journal reclassement pour déplacer effectivement vos articles vers un nouveau système de zones. Cependant, ce processus est manuel et prend du temps ; il est donc préférable de configurer correctement vos emplacements dès le début.  
 
-Pour travailler avec la fenêtre **Feuille création emplacement**, vous devez être défini comme magasinier à l'endroit où les emplacements existent. Pour plus d'informations, reportez vous à [Procédure : configurer des employés d'entrepôt](warehouse-how-to-set-up-warehouse-employees.md).    
+Pour travailler avec la fenêtre **Feuille création emplacement**, vous devez être défini comme magasinier à l'endroit où les emplacements existent. Pour plus d'informations, voir [Configurer des employés d'entrepôt](warehouse-how-to-set-up-warehouse-employees.md).    
 
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille création zone**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Calculer zones**.

@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 08/09/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: d30a1316b48bd1b80ab4658ee99b14f0a0217478
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 1553b5f85cd9f00f9de15b59bcf258fba412967b
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-close-open-item-ledger-entries-resulting-from-fixed-application-in-the-item-journal"></a>Procédure : fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal d'articles
+# <a name="close-open-item-ledger-entries-resulting-from-fixed-application-in-the-item-journal"></a>Fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal article
 Vous pouvez utiliser le champ **Écriture affectée de** dans la fenêtre **Journal article** pour créer une affectation fixe entre une transaction entrante et la transaction sortante initiale. Par exemple, pour corriger la transaction sortante ou pour traiter un retour. Pour plus d'informations, voir Lettrage à partir écriture.  
 
 > [!IMPORTANT]  
@@ -35,8 +35,8 @@ La procédure suivante explique comment fermer des écritures de ce genre au cou
 2.  Utilisez le champ **Écriture affectée à** pour reporter un ajustement négatif. Cela permet de fermer l'écriture positive de correction initiale par une affectation fixe.  
 
 ## <a name="see-also"></a>Voir aussi  
-[ Procédure : supprimer et affecter à nouveau des écritures article](finance-how-to-remove-and-reapply-item-entries.md)  
- [Procédure : traiter les retours et annulations de ventes](sales-how-process-sales-returns-cancellations.md)   
+[ Supprimer et appliquer à nouveau des écritures article](finance-how-to-remove-and-reapply-item-entries.md)  
+ [Traiter les retours et annulations de ventes](sales-how-process-sales-returns-cancellations.md)   
  [Configuration de l'évaluation de l'inventaire et des coûts](finance-set-up-inventory-valuation-and-costing.md)   
  [Gestion des coûts ajustés](finance-manage-inventory-costs.md)   
  [Détails de conception : modes évaluation stock](design-details-costing-methods.md)

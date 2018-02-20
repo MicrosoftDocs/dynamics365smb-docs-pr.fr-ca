@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
 ms.openlocfilehash: 2c043a33e02d197281877a8287df7008377d52e4
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 # <a name="walkthrough-calculating-work-in-process-for-a-job"></a>Procédure pas à pas : calcul des travaux en cours pour un projet
@@ -138,7 +138,7 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 ### <a name="to-reverse-a-wip-posting"></a>Pour inverser un report TEC  
 
 1.  Dans la liste **Projets**, sélectionnez le projet **Deerfield**.  
-2.  Choisissez l'action **TEC**, puis l'action **Valider TEC en compta**.  
+2.  Choisissez l'action **TEC**, puis l'action **Reporter TEC au GL**.  
 3.  Dans la fenêtre **Projet - Reporter TEC au GL**, sur le raccourci **Projet**, sélectionnez **Deerfield** dans le champ **N°** .  
 4.  Sur le raccourci **Options**, dans le champ **N° document contrepassation**, entrez **1**.  
 5.  Dans le champ **Date validation contrepassation**, saisissez la date validation originale. La date doit correspondre à celle utilisée initialement pour calculer les TEC.  

@@ -13,13 +13,13 @@ ms.search.keywords: personnel, people, employee, staff, HR
 ms.date: 08/11/2017
 ms.author: SorenGP
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: ceea5fba1b2daeab3c517d87e3e31e29d53441c3
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 484d21ad14991d663de3e9c5491455fe60494a06
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-register-employees"></a>Procédure : enregistrer les employés
+# <a name="register-employees"></a>Enregistrer des employés
 Pour utiliser la fonctionnalité Ressources humaines, vous devez d'abord enregistrer chaque employé en créant une fiche contenant les informations de base et connexes.
 
 Vous pouvez modifier les informations d'un employé à tout moment. La mise à jour des enregistrements relatifs à vos salariés simplifie les tâches de gestion du personnel. Par exemple, si l'adresse d'un employé change, vous pouvez l'enregistrer sur sa fiche employé.
@@ -27,7 +27,7 @@ Vous pouvez modifier les informations d'un employé à tout moment. La mise à j
 Les procédures suivantes décrivent comment créer une première fiche employé et comment affecter deux types d'informations à un employé. En outre, vous pouvez affecter diverses autres informations connexes, telles que les qualifications et les motifs d'inactivité. Pour affecter les informations concernant les salariés vous devez choisir un champ ou une action dans la fenêtre **Fiche salarié**.
 
 > [!NOTE]  
-> Vous pouvez rembourser les frais engagés par les employés durant leurs activités professionnelles. Pour cela, vous devez renseigner les champs du raccourci **Paiements** dans la fenêtre **Fiche employé**. Pour plus d'informations, voir [Procédure : enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md).
+> Vous pouvez rembourser les frais engagés par les employés durant leurs activités professionnelles. Pour cela, vous devez renseigner les champs du raccourci **Paiements** dans la fenêtre **Fiche employé**. Pour plus d'informations, voir [Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md).
 
 ## <a name="to-set-up-an-employee"></a>Pour configurer un employé
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Employés**, puis sélectionnez le lien connexe.
@@ -57,7 +57,7 @@ Vous pouvez utiliser des adresses de livraison secondaires pour conserver un his
 5. Répétez l'étape 4 pour chaque adresse secondaire.
 
 ## <a name="see-also"></a>Voir aussi
-[Procédure : enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md)  
+[Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 [Personnalisation de votre expérience [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-experiences.md)

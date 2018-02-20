@@ -1,6 +1,6 @@
 ---
 title: "État commande service et état réparation | Microsoft Docs"
-description: "Le champ **État** de la fenêtre **Commande service** et l'état réparation de l'article de service, qui est représenté par le champ **Code de l'état de réparation** dans la fenêtre **Commande service** ont une certaine relation dans le module de gestion des services. L'état commande service reflète l'état réparation de tous les articles de service de la commande service."
+description: "Le champ **Statut** de la fenêtre **Commande service** et le champ Code état réparation de la fenêtre Commande service qui est représenté par le **Code du statut de réparation** dans la fenêtre **Commande service** ont une certaine relation dans le module Service management. L'état commande service reflète l'état réparation de tous les articles de service de la commande service."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: a1d2177ab417eb932110ea610474b969acf7a26b
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 21f4a6fc048688858cad77fb3d306fb39bd5620c
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
 # <a name="service-order-status-and-repair-status"></a>État commande service et état réparation
@@ -63,6 +63,6 @@ Voici ci-après un exemple d'affectation de niveau de priorité :
 Par exemple, si un article de service présente l'état réparation **Initial** (lié au statut commande service **Suspendu**), qu'un autre présente le statut **En cours** (lié au statut commande service **En cours**) et que le troisième présente le statut **Pièce de rechange commandée** (lié au statut commande service **En attente**), le statut commande service est **En cours** car il correspond au niveau de priorité le plus élevé.  
   
 ## <a name="see-also"></a>Voir aussi  
-[Procédure : paramétrer les statuts des commandes service et des réparations](service-order-repair-status.md)  
+[Configurer les états des commandes service et des réparations](service-order-repair-status.md)  
 [Paramétrage de la gestion des services](service-setup-service.md)  
 

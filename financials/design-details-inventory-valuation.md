@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
 ms.openlocfilehash: 8276d7362fb940c70573f14ac10b8f02d3e145e4
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 # <a name="design-details-inventory-valuation"></a>Détails de conception : évaluation de l'inventaire
@@ -57,8 +57,8 @@ L'objectif de l'évaluation de l'inventaire TEC est de déterminer la valeur des
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : rapprochement de comptabilité](design-details-reconciliation-with-the-general-ledger.md)   
 [Détails de conception : réévaluation](design-details-revaluation.md)   
-[Détails de conception : validation d'ordre de fabrication](design-details-production-order-posting.md)
-[Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
+[Détails de conception : report de bon de production](design-details-production-order-posting.md)
+[Gestion des coûts de l'inventaire](finance-manage-inventory-costs.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 

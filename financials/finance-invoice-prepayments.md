@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 08/07/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 29e4380312724b08a7e250a65288d75d27444df0
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 045cabbaab1b7978402524f408caee87ce8e53e2
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
 # <a name="invoicing-prepayments"></a>Facturation de paiements anticipés
@@ -28,9 +28,9 @@ Les paiements anticipés sont des paiements qui sont facturés et reportés dans
 
 |**Pour**|**Voir**|  
 |------------|-------------|  
-|Configurez les groupes de report de paiement anticipé et les séries de numéros, et paramétrez les pourcentages de paiement anticipé par défaut pour les clients, fournisseurs et articles.|[Procédure : configurer des paiements anticipés](finance-set-up-prepayments.md)|
-|Créer une commande, ajuster des montants paiement anticipé et émettre une facture pour les montants paiement anticipé.|[Procédure : créer des factures de paiement anticipé](finance-how-to-create-prepayment-invoices.md)|  
-|Émettre une facture paiement anticipé supplémentaire, pour des articles supplémentaires ou pour un paiement anticipé supplémentaire dans la commande originale, ou émettre une note de crédit paiement anticipé.|[Procédure : corriger des acomptes](finance-how-to-correct-prepayments.md)|  
+|Configurez les groupes de report de paiement anticipé et les séries de numéros, et paramétrez les pourcentages de paiement anticipé par défaut pour les clients, fournisseurs et articles.|[Configuration des acomptes](finance-set-up-prepayments.md)|
+|Créer une commande, ajuster des montants paiement anticipé et émettre une facture pour les montants paiement anticipé.|[Créer des factures de paiement anticipé](finance-how-to-create-prepayment-invoices.md)|  
+|Émettre une facture paiement anticipé supplémentaire, pour des articles supplémentaires ou pour un paiement anticipé supplémentaire dans la commande originale, ou émettre une note de crédit paiement anticipé.|[Corriger des paiements anticipés](finance-how-to-correct-prepayments.md)|  
 
 ## <a name="see-also"></a>Voir aussi  
 [Procédure pas à pas : configuration et facturation d'acomptes](walkthrough-setting-up-and-invoicing-sales-prepayments.md)  

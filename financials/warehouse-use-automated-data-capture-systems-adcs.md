@@ -11,13 +11,13 @@ ms.search.keywords:
 ms.date: 09/18/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: a49e50213f808fb72b43dfa22a34833b306ef12d
-ms.openlocfilehash: ab97e9beb67ac5c8e827f44c2976b51af2696109
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 3249ed4b8bc50f7cbc577d5dc01b03029b4c06c3
 ms.contentlocale: fr-ca
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-enable-automated-data-capture-systems-adcs"></a>Procédure : activer les systèmes de saisie automatisée (ADCS)
+# <a name="enable-automated-data-capture-systems-adcs"></a>Activer les systèmes de saisie automatisée (ADCS)
 Vous pouvez utiliser votre système de saisie automatisée (ADCS) pour enregistrer le mouvement des articles dans l'entrepôt et certaines activités du journal, notamment les ajustements de quantité dans le journal article entrepôt et les inventaires physiques.  
 
 Pour utiliser votre système de saisie automatisée, vous devez attribuer un identificateur article à chaque article de l'entrepôt. Vous devez également configurer les écrans, fonctions de portable, échanges de données, et spécifier des paramètres pour les champs contrôlant l'ADCS. Vous spécifiez s'il faut utiliser l'ADCS sur la fiche emplacement d'un entrepôt.
@@ -56,7 +56,7 @@ Pour utiliser le système de saisie automatisée, vous devez indiquer quels entr
 8.  Pour consulter les informations, choisissez le champ **Code identificateur** pour ouvrir la fenêtre **Identificateurs article**.
 
 ## <a name="to-add-an-adcs-user"></a>Pour ajouter un utilisateur ADCS  
-Vous pouvez ajouter n'importe quel utilisateur pour l'utilisation d'un système de saisie automatisé (ADCS). Dans ce cas, l'utilisateur doit également fournir un mot de passe. Éventuellement, vous pouvez également indiquer une connexion qui identifie l'utilisateur ADCS en tant que magasinier. Le mot de passe de l'utilisateur ADCS peut être différent du mot de passe d'ouverture de session Windows de l'utilisateur. Pour en savoir plus, reportez-vous à [Procédure : gérer les utilisateurs et les autorisations](ui-how-users-permissions.md).
+Vous pouvez ajouter n'importe quel utilisateur pour l'utilisation d'un système de saisie automatisé (ADCS). Dans ce cas, l'utilisateur doit également fournir un mot de passe. Éventuellement, vous pouvez également indiquer une connexion qui identifie l'utilisateur ADCS en tant que magasinier. Le mot de passe de l'utilisateur ADCS peut être différent du mot de passe d'ouverture de session Windows de l'utilisateur. Pour en savoir plus, reportez-vous à [Gérer les utilisateurs et les autorisations](ui-how-users-permissions.md).
 
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Utilisateurs ADCS**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -65,7 +65,7 @@ Vous pouvez ajouter n'importe quel utilisateur pour l'utilisation d'un système 
 
 ### <a name="to-specify-that-a-warehouse-employee-is-an-adcs-user"></a>Pour spécifier qu'un employé d'entrepôt est un utilisateur ADCS  
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Employés entrepôt**, puis sélectionnez le lien associé.  
-2.  Si nécessaire, ajoutez un nouveau magasinier. Pour plus d'informations, reportez vous à [Procédure : configurer des employés d'entrepôt](warehouse-how-to-set-up-warehouse-employees.md).  
+2.  Si nécessaire, ajoutez un nouveau magasinier. Pour plus d'informations, voir [Configurer des employés d'entrepôt](warehouse-how-to-set-up-warehouse-employees.md).  
 3.  Choisissez l'action **Modifier la liste**.  
 4.  Sélectionnez un magasinier dans la liste. Dans le champ **Utilisateur ADCS**, cliquez sur la flèche déroulante, puis sélectionnez le nom d'un utilisateur ADCS dans la liste.  
 

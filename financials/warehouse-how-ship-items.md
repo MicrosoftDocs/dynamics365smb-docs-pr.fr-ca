@@ -13,24 +13,24 @@ ms.search.keywords:
 ms.date: 08/21/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 0ca92ce0266c6a57d211f9ddb70dc5499f4f9648
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 223eed1ca4e362b8209373fac71d20ab88b2aaff
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-ship-items"></a>Procédure : livrer des articles
+# <a name="ship-items"></a>Livrer des articles
 Lorsque vous livrez des articles provenant d'un entrepôt qui n'est pas configuré pour un traitement de livraison entrepôt, enregistrez simplement la livraison du document d'entreprise associé, comme un document de vente, une commande service, un retour vente ou un ordre de transfert sortant.
 
 Lorsque vous livrez des articles à partir d'un entrepôt qui est configuré pour un traitement de livraison entrepôt, vous ne pouvez livrer des articles que sur la base des documents sources que d'autres centres de la compagnie ont libérés et transmis à l'entrepôt en vue d'une action.
 
 > [!NOTE]
-> Si votre entrepôt utilise le transbordement et les zones, vous pouvez visualiser la quantité d'articles placés dans les zones transbordement. Le programme calcule automatiquement ces quantités chaque fois que les champs de le livraison sont mis à jour. S'il s'agit des articles correspondant à la livraison que vous préparez, vous pouvez créer un prélèvement pour toutes les lignes, puis terminer la livraison. Pour plus d'informations, voir [Procédure : transborder des articles](warehouse-how-to-cross-dock-items.md).
+> Si votre entrepôt utilise le transbordement et les zones, vous pouvez visualiser la quantité d'articles placés dans les zones transbordement. Le programme calcule automatiquement ces quantités chaque fois que les champs de le livraison sont mis à jour. S'il s'agit des articles correspondant à la livraison que vous préparez, vous pouvez créer un prélèvement pour toutes les lignes, puis terminer la livraison. Pour plus d'informations, voir [Transborder des articles](warehouse-how-to-cross-dock-items.md).
 
 ## <a name="to-ship-items-with-a-sales-order"></a>Pour livrer des articles avec un document de vente
 La section suivante décrit comment recevoir des articles avec un bon de commande. Les étapes sont similaires pour les retours achat, les commandes service et les ordres de transfert sortants.  
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Commandes vente**, puis sélectionnez le lien connexe.
-2. Ouvrez un document de vente existant, ou créez-en un nouveau. Pour en savoir plus, voir [Procédure : vendre des produits](sales-how-sell-products.md).
+2. Ouvrez un document de vente existant, ou créez-en un nouveau. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
 3. Dans le champ **Qté à livrer**, indiquez la quantité reçue.
 
     La valeur du champ **Qté livrée** est mise à jour. Si c'est une livraison partielle, la valeur est inférieure celle dans le champ **Quantité**.
@@ -91,12 +91,12 @@ Généralement, un magasinier chargé du prélèvement crée un document prélè
     Les champs **Qté à livrer** et **État document** de l'en-tête du document livraison sont mis à jour. Les articles prélevés ne peuvent plus être prélevés pour d'autres expéditions ou pour des opérations internes.
 7. Imprimez les documents livraison, préparez les colis, puis reportez la livraison.
 
-Pour plus d'informations sur le prélèvement pour des livraisons entrepôt, voir [Procédure : prélever des articles pour une livraison entrepôt](warehouse-how-to-pick-items-for-warehouse-shipment.md).
+Pour plus d'informations sur le prélèvement pour les livraisons entrepôt, voir [Prélever des articles pour une livraison entrepôt](warehouse-how-to-pick-items-for-warehouse-shipment.md).
 
-Vous pouvez également utiliser la feuille prélèvement pour regrouper plusieurs instructions de prélèvement en une seule instruction (pour plusieurs livraisons) et optimiser ainsi l'efficacité du prélèvement dans l'entrepôt. Pour plus d'informations, voir [Procédure : planifier un prélèvement dans des feuilles](warehouse-how-to-plan-picks-in-worksheets.md).
+Vous pouvez également utiliser la feuille prélèvement pour regrouper plusieurs instructions de prélèvement en une seule instruction (pour plusieurs livraisons) et optimiser ainsi l'efficacité du prélèvement dans l'entrepôt. Pour plus d'informations, voir [Planifier un prélèvement dans des feuilles](warehouse-how-to-plan-picks-in-worksheets.md).
 
 > [!NOTE]
-> Lorsque vous attendez l'arrivée d'articles spécifiques dans l'entrepôt et que vous utilisez la fonctionnalité de transbordement, [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule, pour chaque ligne journal prélèvement ou livraison, la quantité article figurant dans la zone de transbordement. Il met à jour ce champ chaque fois que vous fermez ou ouvrez la feuille ou le document de livraison. Pour plus d'informations, voir [Procédure : transborder des articles](warehouse-how-to-cross-dock-items.md).
+> Lorsque vous attendez l'arrivée d'articles spécifiques dans l'entrepôt et que vous utilisez la fonctionnalité de transbordement, [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule, pour chaque ligne journal prélèvement ou livraison, la quantité article figurant dans la zone de transbordement. Il met à jour ce champ chaque fois que vous fermez ou ouvrez la feuille ou le document de livraison. Pour plus d'informations, voir [Transborder des articles](warehouse-how-to-cross-dock-items.md).
 
 ## <a name="see-also"></a>Voir aussi  
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  

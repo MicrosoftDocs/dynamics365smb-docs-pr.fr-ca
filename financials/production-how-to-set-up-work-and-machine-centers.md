@@ -1,6 +1,6 @@
 ---
 title: "Procédure : configurer des ateliers et des unités de production | Microsoft Docs"
-description: "Les fiches **Atelier** organisent les exigences et les valeurs fixes des ressources de production, et régissent ainsi la production de l'atelier."
+description: "Les fiches **centre de charge** organisent les exigences et les valeurs fixes des ressources de production, et régissent ainsi la production des centres de charge."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 09/19/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
-ms.openlocfilehash: 99ca93d4fd67ec424e54961ad5623c9986e5fe7c
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 45477104c003d60786961f4329c1543a96be5b0c
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-set-up-work-centers-and-machine-centers"></a>Procédure : configurer des ateliers et des unités de production
+# <a name="set-up-work-centers-and-machine-centers"></a>Configurer des ateliers et des unités de production
 L'application distingue trois types de capacité. Ces capacités sont ordonnées de façon hiérarchique. Chaque niveau contient les niveaux subordonnés.  
 
 Le premier niveau correspond au groupe ateliers. Des ateliers sont affectés aux groupes ateliers. Chaque atelier ne peut appartenir qu'à un seul groupe ateliers.
@@ -28,7 +28,7 @@ Vous pouvez affecter plusieurs unités de production à chaque atelier. Une unit
 
 La capacité planifiée d'un atelier comprend la disponibilité des unités de production correspondantes et la disponibilité planifiée supplémentaire de l'atelier. La disponibilité planifiée du groupe ateliers correspond donc à la somme de toutes les disponibilités correspondantes des unités de production et des ateliers.  
 
-La disponibilité est enregistrée dans les écritures calendrier. Avant de configurer des ateliers ou des unités de production, vous devez configurer des calendriers usine. Pour plus d'informations, voir [Procédure : créer des calendriers usine](production-how-to-create-work-center-calendars.md).  
+La disponibilité est enregistrée dans les écritures calendrier. Avant de configurer des ateliers ou des unités de production, vous devez configurer des calendriers usine. Pour plus d'informations, voir [Créer des calendriers usine](production-how-to-create-work-center-calendars.md).  
 
 ## <a name="to-set-up-a-work-center"></a>Pour configurer un atelier
 La procédure suivante décrit essentiellement comment configurer un atelier. La procédure de configuration d'un calendrier unité de production est similaire, sauf pour le raccourci **Configuration itinéraire**.  
@@ -37,7 +37,7 @@ La procédure suivante décrit essentiellement comment configurer un atelier. La
 2.  Sélectionnez l'action **Nouveau**.  
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4.  Dans le champ **Groupe ateliers**, sélectionnez le regroupement de ressources de niveau supérieur sous lequel l'atelier est organisé, le cas échéant. Choisissez l'action **Nouveau** dans la liste déroulante.  
-5.  Sélectionnez le champ **Bloqué** pour empêcher le centre de charge d'être utilisé pour quelque traitement que ce soit. Cela signifie que la sortie ne peut pas être reportée pour un article produit dans l'atelier. Pour plus d'informations, voir [Procédure : reporter la sortie de production](production-how-to-post-output-quantity.md).
+5.  Sélectionnez le champ **Bloqué** pour empêcher le centre de charge d'être utilisé pour quelque traitement que ce soit. Cela signifie que la sortie ne peut pas être reportée pour un article produit dans l'atelier. Pour plus d'informations, voir [Reporter la production](production-how-to-post-output-quantity.md).
 6.  Dans le champ **Coût unitaire direct**, entrez le coût de production d'une unité de mesure dans le centre de charge, sans intégrer les autres éléments de coût. Ce coût est souvent appelé *frais de main-d'œuvre directs*.  
 7.  Dans le champ **% coût indirect**, entrez les coûts opératoires généraux de l'utilisation du centre de charge sous la forme d'un pourcentage du coût unitaire direct. Ce pourcentage est ajouté au coût direct lors du calcul du coût unitaire.  
 8.  Dans le champ **Frais généraux**, entrez tous les coûts non opératoires, comme les frais d'entretien, de l'atelier sous la forme d'un montant absolu.  
@@ -68,7 +68,7 @@ La procédure suivante décrit essentiellement comment configurer un atelier. La
 13.  Dans le champ **Capacité**, indiquez si le centre de charge a plusieurs postes ou personnes travaillant simultanément. Si votre installation de [!INCLUDE[d365fin](includes/d365fin_md.md)] n'inclut pas la fonctionnalité Unité de production, la valeur de ce champ doit être **1**.  
 14.  Dans le champ **Rendement**, entrez le pourcentage de la production standard prévue qui est réalisé par le centre de charge. Si vous entrez **100**, cela signifie que la production réelle du centre de charge est identique à la production standard.  
 15. Cochez la case **Calendrier consolidé** si vous utilisez également des unités de production. Ainsi, les écritures calendrier sont générées à partir des calendriers d'unité de production.  
-16.  Dans le champ **Code calendrier usine**, sélectionnez un calendrier usine. Pour plus d'informations, voir [Procédure : créer des calendriers usine](production-how-to-create-work-center-calendars.md).  
+16.  Dans le champ **Code calendrier usine**, sélectionnez un calendrier usine. Pour plus d'informations, voir [Créer des calendriers usine](production-how-to-create-work-center-calendars.md).  
 17.  Dans le champ **File d'attente**, spécifiez le délai fixe qui doit s'écouler avant que le travail attribué ne commence dans le centre de charge. Notez que la file d'attente ainsi définie est ajoutée aux autres éléments de temps non productifs, tels que le temps d'attente et le temps de transfert, définis sur les lignes itinéraire utilisant cet atelier.  
 
 ## <a name="example---different-machine-centers-assigned-to-a-work-center"></a>Exemple - Plusieurs unités de production sont affectées à un atelier
@@ -83,7 +83,7 @@ Lorsque les capacités des ateliers n'ajoutent en rien à la capacité totale, v
 ## <a name="to-set-up-a-capacity-constrained-machine-or-work-center"></a>Pour configurer un atelier ou une unité de production à contrainte de capacité
 Vous devez configurer les ressources de production que vous considérez comme critique et de l'accepter comme une charge limitée au lieu de la charge illimitée par défaut que d'autres ressources de production acceptent. Une ressource à contrainte de capacité peut être un atelier ou une unité de production que vous avez identifié comme étant un goulot d'étranglement et pour lequel vous souhaitez établir une charge limitée.
 
-[!INCLUDE[d365fin](includes/d365fin_md.md)] ne prend pas en charge le contrôle détaillé d'atelier. Il prévoit une utilisation faisable des ressources via un calendrier approximatif, mais il ne crée pas et ne met pas à jour automatiquement des calendriers détaillés sur la base de priorités ou de règles d'optimisation.
+[!INCLUDE[d365fin](includes/d365fin_md.md)]  ne prend pas en charge le contrôle détaillé d'atelier. Il prévoit une utilisation faisable des ressources via un calendrier approximatif, mais il ne crée pas et ne met pas à jour automatiquement des calendriers détaillés sur la base de priorités ou de règles d'optimisation.
 
 Dans la fenêtre **Ressources contraintes de capacité**, vous pouvez effectuer des configurations qui évitent la surcharge de ressources spécifiques et permettent de s'assurer qu'aucune capacité n'est laissée non affectée si elle peut augmenter le délai d'exécution d'un bon de production. Dans le champ **Seuil (% capacité totale)**, vous pouvez ajouter un seuil aux ressources afin de réduire la répartition des opérations. Cela permet au système de programmer une charge sur le dernier jour possible en dépassant légèrement le pourcentage de charge critique si ceci peut réduire le nombre d'opérations qui sont divisées.
 
@@ -99,7 +99,7 @@ Lors de la planification avec des ressources avec contraintes de capacité, le s
 > En cas de répartition des opérations, le temps de préparation n'est affecté qu'une fois car on suppose qu'un certain ajustement manuel est effectué pour optimiser le calendrier.
 
 ## <a name="see-also"></a>Voir aussi  
-[Procédure : créer des calendriers usine](production-how-to-create-work-center-calendars.md)  
+[Créer des calendriers usine](production-how-to-create-work-center-calendars.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Production](production-manage-manufacturing.md)    
 [Planification](production-planning.md)   

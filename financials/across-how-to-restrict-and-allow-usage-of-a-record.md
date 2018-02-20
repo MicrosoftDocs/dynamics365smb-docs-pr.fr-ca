@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
-ms.openlocfilehash: 0dc8b3eeecfbf3f4a96985f4e4adaf0b3a5a21d0
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 4636cdedc2c99d1aa7cfc2dc361f7135aa3c4199
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-restrict-and-allow-usage-of-a-record"></a>Procédure : Restreindre et autoriser l'utilisation d'un enregistrement
+# <a name="restrict-and-allow-usage-of-a-record"></a>Restreindre et autoriser l'utilisation d'un enregistrement
 Si vous souhaitez restreindre l'utilisation d'un enregistrement à certaines utilisations, par exemple, jusqu'à ce qu'il ait été approuvé, vous pouvez incorporer deux réponses de flux de travail dans un flux de travail qui contrôle l'utilisation de l'enregistrement. Une réponse de flux de travail limitera l'utilisation de l'enregistrement telle que définie par l'événement et les conditions du flux de travail. Une autre réponse de flux de travail autorisera l'utilisation de l'enregistrement telle que définie par l'événement et les conditions du flux de travail. Deux réponses existent dans la version générique de [!INCLUDE[d365fin](includes/d365fin_md.md)] à cet effet : **Restreindre l'utilisation d'un enregistrement** et **Autoriser l'utilisation d'un enregistrement**.
 
 > [!NOTE]  
@@ -32,7 +32,7 @@ La procédure suivante explique comment restreindre le report de bons de command
 
 ## <a name="to-create-a-workflow-step-that-restricts-posting-of-unapproved-purchase-orders"></a>Pour créer une étape de flux de travail qui limite le report de bons de commande non approuvés  
 1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Flux de travail**, puis sélectionnez le lien associé.  
-2. Dans la fenêtre **Flux de travail**, créez un flux de travail nommé Flux de travail approbation commande achat. Pour plus d'informations, reportez\-vous à [Procédure : créer des flux de travail](across-how-to-create-workflows.md).  
+2. Dans la fenêtre **Flux de travail**, créez un flux de travail nommé Flux de travail approbation commande achat. Pour plus d'informations, voir [Créer des flux de travail](across-how-to-create-workflows.md).  
 3. Choisissez l'action **Copier à partir du modèle de flux de travail**.  
 4. Cliquez sur le champ **Code flux de travail origine**, puis, dans la fenêtre **Modèles flux de travail**, sélectionnez le modèle Flux de travail approbation facture achat.  
 
@@ -41,6 +41,6 @@ La procédure suivante explique comment restreindre le report de bons de command
 6. Modifiez, supprimez ou ajoutez d'autres étapes de flux de travail pour prendre en charge un processus entreprise qui commence par restreindre le report des bons de commande non approuvés.  
 
 ## <a name="see-also"></a>Voir aussi  
-[Procédure : créer des workflows](across-how-to-create-workflows.md)   
+[Créer des workflows](across-how-to-create-workflows.md)   
 [Flux de travail](across-workflow.md)   
 

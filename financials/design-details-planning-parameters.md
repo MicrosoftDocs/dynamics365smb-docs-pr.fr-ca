@@ -1,6 +1,6 @@
 ---
 title: "Détails de conception - Paramètres de planification | Microsoft Docs"
-description: "Cette rubrique décrit les différents paramètres de planification que vous pouvez utiliser dans Dynamics 365."
+description: "Cette rubrique décrit les différents paramètres de planification que vous pouvez utiliser dans Finance and Operations, Business edition."
 author: SorenGP
 ms.service: dynamics365-financials
 ms.topic: article
@@ -11,10 +11,10 @@ ms.search.keywords: planning, design
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: aa56764b5f3210229ad21eae6891fb201462209c
-ms.openlocfilehash: 5ab63063b5ad2ae453ecb9953ba4547f31536ee8
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 335063984ab5d8ef1cbc9187352aa12287f6ade0
 ms.contentlocale: fr-ca
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/30/2018
 
 ---
 # <a name="design-details-planning-parameters"></a>Détails de conception : paramètres de planification
@@ -26,7 +26,7 @@ La façon dont le système de planification contrôle l'approvisionnement d'arti
 |-------------|---------------|  
 |Définir si l'article doit être planifié|Méthode de réapprovisionnement = Vide|  
 |Définir la date de réapprovisionnement|Plage de temps<br /><br /> Point de réapprovisionnement<br /><br /> Délai de sécurité|  
-|Définir la quantité à réapprovisionner|Quantité de stocks de sécurité<br /><br /> Méthode de réapprovisionnement :<br /><br /> -   Qté fixe de commande plus Quantité de réappro.<br />-   Qté maximum plus inventaire maximum<br />\-   Commande<br />-   Lot pour lot|  
+|Définir la quantité à réapprovisionner|Quantité de stocks de sécurité<br /><br /> Méthode de réapprovisionnement :<br /><br /> -   Qté fixe de commande plus Quantité de réappro.<br />-   Qté maximum plus inventaire maximum<br />-   Commande<br />-   Lot pour lot|  
 |Optimisez quand et combien réapprovisionner|Période de replanification<br /><br /> Période de cumul de lot<br /><br /> Période tampon|  
 |Modifiez les commandes approvisionnement|Quantité minimum commande<br /><br /> Quantité maximum commande<br /><br /> Commande multiple|  
 |Délimiter l'article planifié|Mode de lancement :<br /><br /> -   Fabrication sur stock<br />-   Fabrication à la commande|  

@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
 ms.openlocfilehash: bbe470538bb79e9f6fb6860ee32d75b5d56db9e8
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 # <a name="walkthrough-planning-supplies-automatically"></a>Procédure pas à pas : planification automatique des approvisionnements
@@ -125,7 +125,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 ### <a name="to-calculate-mrp-to-include-underlying-component-needs"></a>Pour calculer MRP afin d'inclure les besoins sous-jacents en composantes  
 
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuille planning**, puis sélectionnez le lien connexe.  
+1.  Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille planification**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Calculer planning régénératif**.  
 3.  Dans la fenêtre **Calc. planning - F. planning** , renseignez les champs comme indiqué dans le tableau suivant.  
 
@@ -211,7 +211,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 ### <a name="to-create-the-new-sales-demand-and-replan-accordingly"></a>Pour créer les demandes de vente et replanifier en conséquence  
 
 1.  Sélectionnez l'action **Nouveau**.  
-2.  Dans la fenêtre **Commande vente**, renseignez les champs comme indiqué dans le tableau suivant.  
+2.  Dans la fenêtre **Document de vente**, renseignez les champs comme indiqué dans la table suivante.  
 
     |Nom débiteur|Date de livraison|N° d'article|Magasin|Quantité|  
     |----------------------------|-------------------|--------------|--------------|--------------|  
@@ -219,7 +219,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 3.  Acceptez l'avertissement de disponibilité et cliquez sur le bouton **Oui** pour enregistrer la quantité demandée.  
 4.  Procédez à une replanification afin d'adapter le programme d'approvisionnement actif.  
-5.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuille planning**, puis sélectionnez le lien connexe.  
+5.  Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille planification**, puis sélectionnez le lien associé.  
 6.  Choisissez l'action **Calculer planning par écart**.  
 7.  Dans la fenêtre **Calc. planning - F. planning** , renseignez les champs comme indiqué dans le tableau suivant.  
 

@@ -12,13 +12,13 @@ ms.search.keywords: payment process, cash receipts, customer payment
 ms.date: 09/08/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 94055c34b67f05faa8955fdff28f854e77d9664f
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: aa2accb5b03fd55c96b046ca6b61582ed5b8a142
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-reconcile-customer-payments-manually-from-a-list-of-unpaid-sales-documents"></a>Procédure : rapprocher les paiements client manuellement à partir de la liste des documents vente échus
+# <a name="reconcile-customer-payments-manually-from-a-list-of-unpaid-sales-documents"></a>Rapprocher les paiements client manuellement à partir de la liste des documents vente échus
 Lorsque vos clients ont effectué des paiements sur votre compte bancaire électronique, vous devez affecter chaque montant payé au document vente associé, puis reporter le paiement pour mettre à jour les écritures client, grand livre et banque.
 
 > [!NOTE]  
@@ -176,7 +176,7 @@ Enregistrez un paiement non documenté.
 1. Sélectionnez l'action **Feuille comptabilité**.  
 
     La fenêtre **Feuille comptabilité** s'affiche avec une ligne préremplie où figure le compte contrepartie du nom de feuille défini dans la fenêtre **Paramétrage de l'enregistrement de paiement**.  
-2. Renseignez les autres champs de la ligne journal général, tel que le montant et le numéro de client ou d'autres informations du relevé de compte bancaire. Pour plus d'informations, reportez-vous à [Procédure : Valider les transactions directement vers la comptabilité](finance-how-post-transactions-directly.md).  
+2. Renseignez les autres champs de la ligne journal général, tel que le montant et le numéro de client ou d'autres informations du relevé de compte bancaire. Pour plus d'informations, voir [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md).  
 
 Vous pouvez soit reporter la ligne journal pour mettre à jour le total sur le compte de contrepartie. Sinon, vous pouvez laisser la ligne journal non reportée et ajouter par exemple une note indiquant que le paiement a besoin d'une analyse complémentaire.  
 

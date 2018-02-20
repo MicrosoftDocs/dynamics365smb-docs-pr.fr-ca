@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 08/16/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 9555f2810e82711c9cac98cfe002cb99289ce474
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 38a37195932d1f00928c10e86fa19425eb228f5f
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-put-away-production-or-assembly-output"></a>Procédure : rangement du résultat de fabrication ou d'assemblage
+# <a name="put-away-production-or-assembly-output"></a>Rangement du résultat de fabrication ou d'assemblage
 Le mode de rangement de la production dépend du mode de configuration de l'entrepôt en tant qu'emplacement. Pour plus d'informations, voir [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).  
 
 Dans les configurations entrepôt de base où l'emplacement exige un traitement des rangements mais pas un traitement des réceptions, vous pouvez utiliser le document **Rangement inventaire** pour organiser et enregistrer le rangement de la production.  
@@ -33,16 +33,16 @@ La première étape dans la création d'un rangement de production consiste à c
 2.  Sur l’ordre de fabrication qui est prêt pour rangement, choisissez l'action **Créer demande d’enlogement**.  
 
 > [!NOTE]  
->  Vous pouvez également créer la demande enlogement entrepôt en sélectionnant le champ **Créer demande d'enlogement** lors de l'actualisation de l'ordre de fabrication. Pour plus d'informations, voir [Procédure : actualiser ou replanifier des ordres de fabrication](production-how-to-replan-refresh-production-orders.md).  
+>  Vous pouvez également créer la demande enlogement entrepôt en sélectionnant le champ **Créer demande d'enlogement** lors de l'actualisation de l'ordre de fabrication. Pour plus d'informations, voir [Actualiser ou replanifier des ordres de fabrication](production-how-to-replan-refresh-production-orders.md).  
 
 ## <a name="to-put-output-away-with-an-inventory-put-away"></a>Pour ranger la production avec un rangement inventaire  
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Rangement inventaire**, puis sélectionnez le lien associé.  
-2.  Créez un rangement inventaire. Pour plus d'informations, voir [Procédure : ranger des articles avec le rangement stock](warehouse-how-to-put-items-away-with-inventory-put-aways.md)
+2.  Créez un rangement inventaire. Pour plus d'informations, voir [Ranger des articles avec le rangement stock](warehouse-how-to-put-items-away-with-inventory-put-aways.md)
 3.  Pour accéder aux composantes du bon de production, choisissez l'action **Extraire documents sources**, puis sélectionnez le bon de production libéré.  
 4.  Renseignez les lignes rangement en fonction des besoins.
 5.  Lorsque les lignes sont prêtes à être reportées, choisissez l'action **Reporter**. Les écritures entrepôt nécessaires sont alors créées et la production des articles est reportée.  
 
-Vous pouvez également créer un **rangement inventaire** directement à partir du bon de production libéré. Pour plus d'informations, voir [Procédure : ranger des articles avec le rangement stock](warehouse-how-to-put-items-away-with-inventory-put-aways.md)  
+Vous pouvez également créer un **rangement inventaire** directement à partir du bon de production libéré. Pour plus d'informations, voir [Ranger des articles avec le rangement stock](warehouse-how-to-put-items-away-with-inventory-put-aways.md)  
 
 Lorsque vous reportez un rangement inventaire, on suppose que toutes les opérations sont reportées en fonction de l'itinéraire standard, à savoir que la quantité produite est reportée en fonction de la dernière opération. Vous pouvez utiliser le journal de sortie pour reporter les écarts de quantité produite et les temps d'exécution et de préparation. S'il est nécessaire d'effectuer un report partiel après la création d'un rangement inventaire, vous pouvez le faire au niveau des temps de préparation et des quantités pour toutes les opérations, à l'exception de la dernière. Dans ce cas, la dernière opération est contrôlée par le rangement inventaire.  
 

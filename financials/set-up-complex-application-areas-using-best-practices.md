@@ -26,7 +26,7 @@ Il est important d'entrer des valeurs de configuration correctes dès le début 
 
  L’aide de [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut les procédures recommandées pour la configuration des champs clés dans les modules suivants :  
 
--   [Pratiques de configuration recommandées : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
+-   [Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
 
 -   [Pratiques de configuration recommandées : mode évaluation stock](setup-best-practices-costing-method.md)  
 

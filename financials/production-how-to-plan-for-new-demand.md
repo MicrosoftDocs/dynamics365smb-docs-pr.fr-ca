@@ -1,6 +1,6 @@
 ---
 title: "Procédure de planification commande par commande | Microsoft Docs"
-description: "Cette tâche de planification peut être effectuée dans la fenêtre **Planification de commande**, qui affiche toute nouvelle demande ainsi que les informations de disponibilité et les suggestions d'approvisionnement. Elle fournit la visibilité et les outils nécessaires à la planification efficace des demandes des lignes vente et des lignes composante, puis à la création directe de différents types de commandes approvisionnement."
+description: "Cette tâche de planification peut être effectuée dans la fenêtre **Planning commande**, affichant toute nouvelle demande ainsi que les informations de disponibilité et les suggestions d'approvisionnement. Elle fournit la visibilité et les outils nécessaires à la planification efficace des demandes des lignes vente et des lignes composante, puis à la création directe de différents types de commandes approvisionnement."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 09/06/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 143124fd2e458ee756d47d3f8523380cff6826a9
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: a7266eddba4293807a1e7e2a187c5002be771499
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-plan-for-new-demand-order-by-order"></a>Procédure : planifier de nouvelles demandes commande par commande
+# <a name="plan-for-new-demand-order-by-order"></a>Planifier de nouvelles demandes commande par commande
 Cette tâche de planification peut être effectuée dans la fenêtre **Planning commande**, affichant toute nouvelle demande ainsi que les informations de disponibilité et les suggestions d'approvisionnement. Elle fournit la visibilité et les outils nécessaires à la planification efficace des demandes des lignes vente et des lignes composante, puis à la création directe de différents types de commandes approvisionnement.  
 
 Vous pouvez accéder à la fenêtre **Planification commande** de deux manières différentes, en fonction de votre objectif : à partir d'une commande que vous souhaitez planifier spécifiquement ou par lots, car vous souhaitez planifier toutes les nouvelles demandes.  
@@ -34,7 +34,7 @@ La fenêtre affiche les lignes planning filtrées par la vue de filtre **Demande
 
 ## <a name="to-plan-for-any-new-demand"></a>Pour planifier toute nouvelle demande  
 1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Planification commande**, puis sélectionnez le lien associé.  
-2.  Dans la fenêtre **Planning commande**, choisissez l'action **Calculer planning**.
+2.  Dans la fenêtre **Planification de commande**, choisissez l'action **Calculer planification**.
 3.  Choisissez le bouton **Afficher (+)** devant la date dans le champ **Date demande** pour afficher les lignes de planification sous-jacentes qui représentent les lignes de demande dont la disponibilité n'est pas suffisante.  
 4.  Pour chaque ligne planification développée, c'est-à-dire ligne de réquisition, les valeurs s'affichent dans des champs d'information en bas de la fenêtre.  
 
@@ -85,8 +85,8 @@ La fenêtre affiche les lignes planning filtrées par la vue de filtre **Demande
 >   Si vous entrez une date ultérieure à la date demande, un message vous l'indique.  
 
 ## <a name="to-make-supply-orders"></a>Pour créer des commandes approvisionnement  
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **O.F. planifiés**, puis sélectionnez le lien connexe. Vous pouvez exécuter cette procédure pour un bon de production planifié, planifié ferme ou libéré.  
-2.  Ouvrez l'ordre de fabrication que vous souhaitez planifier, puis choisissez l'action **Planning**.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Bons de production planifiés**, puis sélectionnez le lien associé. Vous pouvez exécuter cette procédure pour un bon de production planifié, planifié ferme ou libéré.  
+2.  Ouvrez le bon de production pour lequel vous souhaitez effectuer une planification, puis choisissez l'action **Planification**.  
 3.  Positionnez le curseur sur la ligne planification souhaitée, puis choisissez l'action **Créer commandes**.  
 4.  Dans la fenêtre **Créer des commandes approvisionnement**, sur le raccourci **Planning commande**, dans le champ **Créer commandes pour**, sélectionnez l'une des options suivantes.  
 
@@ -117,6 +117,6 @@ Une fois que la planification est terminée dans la fenêtre **Planning commande
 [Stock](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
-[Pratiques de configuration recommandées : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
+[Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 

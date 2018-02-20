@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 01081b166df81a76bba984bcb679069e59c660c9
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 7d4b2c86174386faa86ab6c09faa463d26d3d2ac
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-convert-existing-locations-to-warehouse-locations"></a>Comment convertir des magasins existants en magasins entrepôt
+# <a name="convert-existing-locations-to-warehouse-locations"></a>Convertir des emplacements existants en entrepôts
 Vous pouvez permettre à un emplacement d'inventaire d'utiliser les zones et de devenir l'entrepôt.  
 
 Le traitement en lot qui active un emplacement pour une opération d'entrepôt crée des écritures d'entrepôt initiales pour la zone d'ajustement de l'entrepôt pour tous les articles stockés à cet emplacement. Ces écritures sont équilibrées lorsque les écritures d'inventaire physique entrepôt sont saisies après chaque traitement en lot.  
@@ -32,12 +32,12 @@ Vous pouvez créer des zones et des emplacements avant ou après la conversion. 
 ## <a name="to-enable-an-existing-location-to-operate-as-a-warehouse-location"></a>Activation d'un emplacement existant en tant qu'entrepôt  
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Créer un emplacement d'entrepôt**, puis sélectionnez le lien associé.  
 2.  Dans le champ **Code magasin**, indiquez le magasin que vous souhaitez activer pour un traitement d'entrepôt.  
-3.  Dans le champ **Code empl. ajustement**, indiquez à quel emplacement du magasin les écritures entrepôt non synchronisées sont enregistrées. Pour plus d'informations, reportez-vous à la section « Pour synchroniser les écritures entrepôt ajustées avec les écritures du grand livre d'articles associées » dans [Procédure : Inventaire, ajustement et reclassement de l'inventaire](inventory-how-count-adjust-reclassify.md).  
+3.  Dans le champ **Code empl. ajustement**, indiquez à quel emplacement du magasin les écritures entrepôt non synchronisées sont enregistrées. Pour plus d'informations, reportez-vous à la section « Pour synchroniser les écritures entrepôt ajustées avec les écritures article associées » dans [Nombre, ajustement et reclassement de l'inventaire](inventory-how-count-adjust-reclassify.md).  
 
     À l'aide des écritures article ouvertes de l'emplacement, des lignes journal entrepôt sont créées qui additionnent les combinaisons N° article, Code variante, Code unité de mesure et, si nécessaire, N° lot et N° de série dans les écritures article. Les lignes journal entrepôt sont ensuite reportées. Ce report crée des écritures d'entrepôt qui placent l'inventaire dans la zone d'ajustement entrepôt. Le **code emplacement ajustement** est également défini dans la fiche magasin.  
 
 4.  Pour savoir quels articles ont été ajoutés à l'emplacement ajustement pendant le traitement par lots, vous pouvez exécuter l'état **Emplacement ajust. mag**.  
-5.  Une fois le traitement par lots **Création entrepôt** terminé, vous devez effectuer et valider un inventaire physique entrepôt. Pour plus d'informations, voir [Procédure : inventaire, ajustement et reclassement de l'inventaire](inventory-how-count-adjust-reclassify.md).  
+5.  Une fois le traitement par lots **Création entrepôt** terminé, vous devez effectuer et valider un inventaire physique entrepôt. Pour plus d'informations, voir [Nombre, ajustement et reclassement de l'inventaire](inventory-how-count-adjust-reclassify.md).  
 
 > [!NOTE]  
 >  Il est recommandé de lancer le traitement par lots **Création entrepôt** à un moment où il ne risque pas de nuire au fonctionnement habituel du système. Étant donné que ce processus traite chaque écriture de la table **Écriture comptable article**, il peut durer plusieurs heures si cette table en comporte un grand nombre.  

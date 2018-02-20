@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 7cafdcb9f6002d0732ee86b643b784d96e8c2aa1
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 3b52f7c62cc13d27ff4d96ff5b9087d3560d6fbc
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-post-service-orders-and-credit-memos"></a>Procédure : reporter des commandes et des notes de crédit service
+# <a name="post-service-orders-and-credit-memos"></a>Reporter des commandes et des notes de crédit de service
 Après avoir créé une commande service, fourni toutes les informations et apporté les éventuelles modifications, vous pouvez reporter cette commande. Pour que vous puissiez reporter une commande, celle-ci doit contenir au moins une ligne article de service et une ligne service. Si la commande contient plusieurs lignes service, toutes les lignes sont reportées en même temps.  
 
 Si vous avez un grand nombre de commandes service, vous pouvez gagner du temps en utilisant un traitement en lot pour les reporter simultanément. Vous pouvez exécuter le traitement en lot à partir d'une commande service quelconque.
@@ -53,7 +53,7 @@ Vous ne pouvez reporter la consommation que si la ligne contient une quantité q
 Lors du report de la commande, les écritures et les documents reportés correspondants sont créés. Les champs appropriés dans le document commande service sont mis à jour.  
 
 ## <a name="to-batch-post-service-orders"></a>Pour exécuter en lot des commandes service
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), saisissez **Commandes service**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Commandes de service**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Reporter par lot**.  
 3.  Vous pouvez positionner un filtre pour sélectionner des numéros commande service ou un intervalle de numéros commande pour le traitement en lot à effectuer.  
 4.  Cliquez sur **OK** pour démarrer le traitement en lot.  
@@ -99,7 +99,7 @@ La procédure suivante explique comment reporter la livraison des articles ligne
   
 4. Choisissez **Actions**, **Report**, **Reporter**. Dans la fenêtre qui s'affiche, choisissez **Livrer**.  
   
-[!INCLUDE[d365fin](includes/d365fin_md.md)] crée les écritures appropriées (dans le livre garantie, le grand livre article, le livre service ou le grand livre), génère également le document livraison service reporté et met à jour les champs appropriés dans les lignes service de la commande service.  
+[!INCLUDE[d365fin](includes/d365fin_md.md)]  crée les écritures appropriées (dans le livre garantie, le grand livre article, le livre service ou le grand livre), génère également le document livraison service reporté et met à jour les champs appropriés dans les lignes service de la commande service.  
   
 Si l'emplacement est configuré pour exiger la gestion d'entrepôt, la livraison et le déplacement d'articles de ligne service s'exécutent de la même manière que pour d'autres documents source. La seule différence est que les articles de la ligne service peuvent être consommés en externe ou en interne et nécessitent donc deux fonctions de libération différentes.  
   
@@ -126,12 +126,12 @@ Si vous devez travailler sur une commande service pendant longtemps sans la repo
   
 La procédure suivante décrit le report de la livraison directement à partir d'une commande service dans des emplacements sans configuration de la gestion d'entrepôt. Si l'emplacement est configuré pour appeler une gestion d'entrepôt, le report de livraison a lieu dans un autre document entrepôt, en fonction de la configuration de l'emplacement.
   
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), saisissez **Commandes service**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Commandes de service**, puis sélectionnez le lien associé.  
 2. Ouvrez la commande service, puis cliquez sur l'action **Lignes service**.  
 4. Dans les lignes que vous allez reporter, renseignez les champs **Qté à livrer**, **Qté à facturer** et **Qté à consommer**, en fonction de la manière dont vous allez reporter les lignes.  
 5. Sélectionnez l'action **Valider**.
   
 ## <a name="see-also"></a>Voir aussi  
 [Report dans la Gestion des services](service-service-posting.md)  
-[Procédure : créer une commande service :](service-how-to-create-service-orders.md)  
+[Créer une commande service](service-how-to-create-service-orders.md)  
 

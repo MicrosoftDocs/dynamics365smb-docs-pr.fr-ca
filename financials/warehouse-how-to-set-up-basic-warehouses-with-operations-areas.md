@@ -1,6 +1,6 @@
 ---
 title: "Comment configurer des entrepôts de base avec les zones d'opérations | Microsoft Docs"
-description: "Si les zones Opérations internes telles que la production ou l'assemblage existent dans les configurations entrepôt de base dans lesquelles les emplacements utilisent le champ de configuration **Zone obligatoire** et éventuellement les champs **Prélèvement requis** et **Rangement requis**, vous pouvez utiliser trois documents d'entrepôt de base suivants pour enregistrer vos activités entrepôt pour des zones Opérations internes."
+description: "Si des zones d'opérations internes telles que la production ou l'assemblage existent dans les configurations entrepôt de base dans lesquelles les emplacements utilisent le champ de configuration **Zone obligatoire** et éventuellement les champs **Prélèvement requis** et **Rangement requis**, vous pouvez utiliser trois documents d'entrepôt de base suivants pour enregistrer vos activités entrepôt pour des zones d'opérations internes."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 09/08/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 8fa067c5a6d96d0d992c1488f31aa2929efc6dcc
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 31f057f862b72cd21ecb2c1fb59674c6485a960d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-set-up-basic-warehouses-with-operations-areas"></a>Procédure : configurer des entrepôts de base avec les zones d'opérations
+# <a name="set-up-basic-warehouses-with-operations-areas"></a>Configurer des entrepôts de base avec les zones d'opérations
 Si les zones Opérations internes telles que la production ou l'assemblage existent dans les configurations entrepôt de base dans lesquelles les emplacements utilisent le champ de configuration **Zone obligatoire** et éventuellement les champs **Prélèvement requis** et **Rangement requis**, vous pouvez utiliser les documents d'entrepôt de base suivants pour enregistrer vos activités entrepôt pour des zones Opérations internes :  
 
 - Fenêtre **Mouvement de stock**.  
@@ -66,9 +66,9 @@ Ce graphique indique comment le champ **Code emplacement** sur les lignes compos
 ![Organigramme Flux d'emplacement](media/binflow.png "BinFlow")    
 
 ## <a name="to-define-a-default-bin-structure-in-the-assembly-area"></a>Pour définir une structure de zone par défaut dans la zone d'assemblage
-Les composantes pour les commandes d'assemblage ne peuvent pas être prélevées ni reportées avec des prélèvements inventaire. À la place, utilisez la fenêtre **Mouvement d'inventaire**. Pour plus d'informations, voir [Procédure : déplacer les composantes vers une zone opérations dans un entrepôt de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md).
+Les composantes pour les commandes d'assemblage ne peuvent pas être prélevées ni reportées avec des prélèvements inventaire. À la place, utilisez la fenêtre **Mouvement d'inventaire**. Pour plus d'informations, voir [Déplacer les composantes vers une zone opérations dans le stockage de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md).
 
-En cas de prélèvement et de livraison de quantités de lignes vente assemblées pour commande, vous devez suivre certaines règles en créant les lignes prélèvement inventaire. Pour plus d'informations, reportez-vous à la section « Traitement des articles à assembler pour commande dans les prélèvements stock » dans [Procédure : prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).
+En cas de prélèvement et de livraison de quantités de lignes vente assemblées pour commande, vous devez suivre certaines règles en créant les lignes prélèvement inventaire. Pour plus d'informations, reportez-vous à la section « Traitement des articles à assembler pour commande dans les prélèvements stock » dans [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).
 
 Pour plus d'informations, voir [Gestion d'assemblage](assembly-assemble-items.md).
 
@@ -110,7 +110,7 @@ La valeur de ce champ est automatiquement insérée dans le champ Code de zone d
 
 Si le champ **Code de zone livr. ass. pr comm.** est vide, alors le champ **Code de zone depuis assemblage** est utilisé. Si vous laissez les deux champs de configuration vides, la dernière zone utilisée incluant du contenu est reprise dans le champ **Code de zone** des lignes document de vente.
 
-Le même code de zone est également copié vers le champ **Code de zone** de la ligne prélèvement inventaire qui gère la livraison de la quantité à assembler pour commande. Pour plus d'informations, reportez-vous à la section « Traitement des articles à assembler pour commande dans les prélèvements stock » dans [Procédure : prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).
+Le même code de zone est également copié vers le champ **Code de zone** de la ligne prélèvement inventaire qui gère la livraison de la quantité à assembler pour commande. Pour plus d'informations, reportez-vous à la section « Traitement des articles à assembler pour commande dans les prélèvements stock » dans [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).
 
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), saisissez **Magasins**, puis sélectionnez le lien connexe.
 2. Ouvrez l'emplacement que vous voulez configurer.
@@ -123,7 +123,7 @@ Les quantités des zones réservées peuvent encore être réservées. Par cons�
 
 Par exemple, si un atelier est configuré avec un code de zone dans le champ **Code de zone avant production**. Les lignes composante bon de production présentant ce code de zone nécessitent que les composantes consommées en aval soient stockées à cet emplacement. Toutefois, jusqu'à la consommation des composantes de cette zone, d'autres demandes de composantes peuvent y effectuer un prélèvement ou une consommation, car elles sont encore considérées comme du contenu zone disponible. Pour vous assurer que le contenu de la zone soit uniquement disponible pour une demande de composante qui utilise cette zone avant production, vous devez sélectionner le champ **Dédié** sur la ligne de ce code de zone dans la fenêtre **Zones** à laquelle vous accédez à partir de la fiche emplacement.
 
-La réservation d'une zone fournit une fonctionnalité similaire à l'utilisation des types de zone uniquement disponibles dans l'entreposage avancé. Pour plus d'informations, reportez-vous à [Procédure : configurer des types d'emplacement](warehouse-how-to-set-up-bin-types.md).
+La réservation d'une zone fournit une fonctionnalité similaire à l'utilisation des types de zone uniquement disponibles dans l'entreposage avancé. Pour plus d'informations, voir [Configurer des types de zone](warehouse-how-to-set-up-bin-types.md).
 
 > [!Caution]
 > Les articles situés dans des zones réservées ne sont pas protégés lorsqu'ils sont prélevés et consommés comme composantes de production à l'aide de la fenêtre Prélèvement inventaire.

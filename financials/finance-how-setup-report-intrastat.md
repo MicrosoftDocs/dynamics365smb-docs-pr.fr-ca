@@ -13,10 +13,10 @@ ms.search.keywords: electronic document, Intrastat, trade, EU, European Union
 ms.date: 08/15/2017
 ms.author: bholtorf
 ms.translationtype: HT
-ms.sourcegitcommit: de6cbcdc8e7ca4aff06461192e2038831ba6b5b3
-ms.openlocfilehash: 973c42642f88024de9d8924b675496015ce60983
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 4b4fde6f005c992b63856ec4afadbb689532ac16
 ms.contentlocale: fr-ca
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/30/2018
 
 ---
 # <a name="how-to-set-up-and-report-intrastat"></a>Procédure : configurer et soumettre une déclaration Intrastat
@@ -85,7 +85,7 @@ Le traitement en lot récupère toutes les écritures article de la période sta
 > [!IMPORTANT]  
 >  Le traitement en lot récupère uniquement les écritures qui contiennent un code pays/région pour lequel un code Intrastat a été entré dans la page **Pays/Régions**. Vous devez donc entrer les codes Intrastat correspondant aux codes pays/région pour lesquels vous allez lancer le traitement en lot.  
 
-### <a name="how-to-report-intrastat-on-a-form-or-a-file"></a>Procédure : soumettre une déclaration Intrastat sur un formulaire ou un fichier
+### <a name="report-intrastat-on-a-form-or-a-file"></a>Rapport Intrastat sur un formulaire ou un fichier
 Pour obtenir les informations requises sur le formulaire Intrastat à partir des autorités statistiques, vous devez imprimer le rapport **Intrastat : Formulaire**. Avant d'effectuer cette opération, vous devez préparer le journal Intrastat et le renseigner. Si vous avez à la fois des transactions d'achat et de vente, vous devez compléter un formulaire distinct pour chaque type et donc imprimer le rapport deux fois.  
 
 1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Journal Intrastat**, puis sélectionnez le lien associé.  
@@ -95,7 +95,7 @@ Pour obtenir les informations requises sur le formulaire Intrastat à partir des
 5. Sur le raccourci **Ligne journal Intrastat**, ajoutez un filtre **Type**, puis spécifiez s'il s'agit d'une **Réception** ou d'une **Livraison**.  
 6. Choisissez **Envoyer à** pour imprimer le rapport.  
 
-### <a name="how-to-report-intrastat-in-a-file"></a>Procédure : soumettre une déclaration Intrastat dans un fichier
+### <a name="report-intrastat-in-a-file"></a>Rapport Intrastat dans un fichier
 Vous pouvez envoyer la déclaration Intrastat en tant que fichier. Avant de créer le fichier, vous pouvez imprimer la liste de vérification contenant les mêmes informations que le fichier.  
 
 1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Journal Intrastat**, puis sélectionnez le lien associé.  
@@ -106,7 +106,7 @@ Vous pouvez envoyer la déclaration Intrastat en tant que fichier. Avant de cré
 6. Choisissez **Enregistrer**.  
 7. Sélectionnez l'emplacement d'enregistrement du fichier, entrez son nom, puis choisissez **Enregistrer**.
 
-## <a name="how-to-reorganize-intrastat-journals"></a>Procédure : réorganisation des feuilles intracommunautaires
+## <a name="reorganize-intrastat-journals"></a>Réorganiser les journaux Intrastat
 Parce que vous devez soumettre un rapport Intrastat chaque mois et créer un nouveau lot journal pour chaque rapport, il peut donc exister de nombreux lots journal. Les lignes journal ne sont pas supprimées automatiquement. Vous pouvez réorganiser régulièrement les noms du lot journal. Pour cela, il suffit de supprimer les lots journal dont vous n'avez plus besoin. Les lignes de ces journaux dans ces lots sont également supprimées.  
 
 1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Journal Intrastat**, puis sélectionnez le lien associé.  
@@ -115,6 +115,4 @@ Parce que vous devez soumettre un rapport Intrastat chaque mois et créer un nou
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion financière](finance.md)
-
-## [!INCLUDE[d365fin](includes/free_trial_md.md)]
 

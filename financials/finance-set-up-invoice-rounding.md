@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 08/15/2017
 ms.author: bholtorf
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: f56e94d0914aaacc722381790688faedbb75ffda
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: ceebeeac325c00d6aef25d8ca51fcfee1ab4e1d5
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
 # <a name="set-up-invoice-rounding"></a>Configuration de la fonction arrondissement facture
@@ -34,7 +34,7 @@ Pour utiliser l'arrondissement facture automatique, vous devez :
 > [!NOTE]  
 >  Outre les fonctions d'arrondissement facture, vous pouvez arrondir les montants des factures à l'aide des fonctions arrondissement montant unité de mesure et arrondissement montant.  
  
-## <a name="how-to-set-up-general-ledger-accounts-for-invoice-rounding-differences"></a>Procédure : configurer des comptes du grand livre afin d'autoriser les différences d'arrondissement dans les factures
+## <a name="set-up-general-ledger-accounts-for-invoice-rounding-differences"></a>Configurer des comptes GL afin d'autoriser les différences d'arrondissement dans les factures
 Pour utiliser la fonction d'arrondissement automatique de facture, vous devez configurer les comptes du grand livre dans lesquels des différences d'arrondissement seront reportées. Pour cela, vous devez au préalable configurer des groupes comptabilisation produit TVA. Pour plus d'informations, reportez-vous à [Configuration TVA](finance-setup-vat.md).  
   
 ### <a name="to-set-up-general-ledger-accounts-for-invoice-rounding-differences"></a>Pour configurer des comptes du grand livre afin d'autoriser les différences d'arrondissement dans les factures  
@@ -45,7 +45,7 @@ Pour utiliser la fonction d'arrondissement automatique de facture, vous devez co
   
 À présent, vous pouvez affecter le compte arrondissement facture aux groupes de report sur la page **Groupes de report du fournisseur**.  <!-- Why only the vendor posting groups? -->
 
-## <a name="how-to-set-up-rounding-for-foreign-and-local-currencies"></a>Procédure : configurer l'arrondissement pour les devises étrangères et locales
+## <a name="set-up-rounding-for-foreign-and-local-currencies"></a>Configuration de règles d'arrondissement pour les devises étrangères et locales
 Avant d'utiliser la fonction d'arrondissement automatique, vous devez configurer les règles d'arrondissement pour les devises étrangères et locales.
 
 ### <a name="to-set-up-rounding-for-foreign-currencies"></a>Pour configurer les règles d'arrondissement pour les devises étrangères  
@@ -56,12 +56,12 @@ Avant d'utiliser la fonction d'arrondissement automatique, vous devez configurer
 1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Paramètres comptabilité**, puis sélectionnez le lien connexe.  
 2. Sur la page **Configuration du grand livre**, sous le raccourci **Général**, renseignez les champs **Précis. arrondissement fact.** et **Type arrondissement facture**.  
 
-## <a name="how-to-activate-the-invoice-rounding-function"></a>Procédure : activer la fonction d'arrondissement facture  
+## <a name="activate-the-invoice-rounding-function"></a>Activer la fonction d'arrondissement de factures  
 Vous devez activer la fonction d'arrondissement facture pour que les factures vente et achat soient automatiquement arrondies. Activez séparément la fonction d'arrondissement facture pour les factures vente et les factures achat.
 
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Paramètres ventes** ou **Paramètres achats**, puis sélectionnez le lien connexe.  
 2. Sur le raccourci **Général**, sélectionnez la case **Arrondissement facture**.  
   
 ## <a name="see-also"></a>Voir aussi  
-[Procédure : facturer des ventes](sales-how-invoice-sales.md)  
-[Procédure : enregistrer des achats](purchasing-how-record-purchases.md)
+[Facturer des ventes](sales-how-invoice-sales.md)  
+[Enregistrer des achats](purchasing-how-record-purchases.md)

@@ -1,6 +1,6 @@
 ---
 title: Comment ranger des articles avec le rangement stock | Microsoft Docs
-description: "Lorsque votre emplacement est configuré pour exiger un traitement des rangements, mais pas un traitement des réceptions, vous utilisez le document **Rangement inventaire** pour enregistrer et reporter les informations de rangement et de réception pour vos documents sources. Le document source entrant peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un bon de production dont la production est prête à être rangée."
+description: "Lorsque votre emplacement est configuré pour exiger un traitement des classements, mais qu'il ne l'est pas pour un traitement des réceptions, vous utilisez le document **Article dans l'inventaire à classer** pour enregistrer et reporter les informations de classement et de réception pour vos documents origine. Le document source entrant peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un bon de production dont la production est prête à être rangée."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 08/31/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 5de060d742401da62339fb67deff38d0a1e7bddb
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 92eae2f24daf8181e39b3d22ea23c31a9ee85347
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-put-items-away-with-inventory-put-aways"></a>Procédure : ranger des articles à l'aide des rangements inventaire
+# <a name="put-items-away-with-inventory-put-aways"></a>Ranger des articles avec le rangement stock
 Lorsque votre emplacement est configuré pour exiger un traitement des rangements, mais pas un traitement des réceptions, vous utilisez le document **Rangement inventaire** pour enregistrer et reporter les informations de rangement et de réception pour vos documents sources. Le document source entrant peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un ordre d'assemblage/un bon de production dont la production est prête à être rangée.  
 
 Vous pouvez créer un rangement inventaire de trois manières :  
@@ -39,7 +39,7 @@ Pour les bons de commande, les retours vente, les ordres de transfert entrants e
 4. Choisissez l'action **Créer demande d'enlogement**.  
 
 > [!NOTE]  
->  Vous pouvez également créer la demande enlogement entrepôt en sélectionnant le champ **Créer demande d'enlogement** lors de l'actualisation de l'ordre de fabrication. Pour plus d'informations, voir [Procédure : actualiser ou replanifier des ordres de fabrication](production-how-to-replan-refresh-production-orders.md).  
+>  Vous pouvez également créer la demande enlogement entrepôt en sélectionnant le champ **Créer demande d'enlogement** lors de l'actualisation de l'ordre de fabrication. Pour plus d'informations, voir [Actualiser ou replanifier des ordres de fabrication](production-how-to-replan-refresh-production-orders.md).  
 
 Lorsque la demande entrepôt est créée, un employé d'entrepôt affecté aux rangements des articles peut voir que le document source est prêt et peut créer un document rangement inventaire.  
 
@@ -68,7 +68,7 @@ Maintenant que la demande est créée, l'employé d'entrepôt peut créer un nou
 2. Dans le champ **Code de zone** sur les lignes rangement, la zone où les articles doivent être rangés est proposée sur la base d'une zone par défaut de l'article. Vous pouvez modifier la zone dans cette fenêtre, si nécessaire.  
 3. Exécutez le rangement et saisissez les informations pour la quantité effectivement rangée dans le champ **Quantité à traiter**.
 
-    S'il s'avère nécessaire de placer les articles d'une ligne dans plusieurs zones, notamment parce que la zone désignée est pleine, alors utilisez la fonction **Éclater ligne** sur le raccourci **Lignes**. Pour plus d'informations sur l'éclatement des lignes, reportez\-vous à la rubrique [Procédure : répartir des lignes activité entrepôt](warehouse-how-to-split-warehouse-activity-lines.md).  
+    S'il s'avère nécessaire de placer les articles d'une ligne dans plusieurs zones, notamment parce que la zone désignée est pleine, alors utilisez la fonction **Éclater ligne** sur le raccourci **Lignes**. Pour plus d'informations sur l'éclatement des lignes, voir [Répartir des lignes activité entrepôt](warehouse-how-to-split-warehouse-activity-lines.md).  
 4. Une fois le rangement exécuté, choisissez l'action **Reporter**.  
 
 Le processus de report reporte la réception, ou la production pour les bons de production, des lignes document origine qui ont été rangées et, si l'emplacement utilise des zones, le report crée également des écritures entrepôt pour reporter les modifications apportées aux quantités zone.

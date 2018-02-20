@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: jswymer
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 3a257ba6434f8689a78e975811a0c5897b3836f8
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 9564da28e9850e30e42ea2824043e25041f5adaa
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-import-and-export-a-report-or-document-layout"></a>Procédure : importer et exporter une présentation de rapport ou de document
+# <a name="import-and-export-a-report-or-document-layout"></a>Importer et exporter une présentation de rapport ou de document
 Vous pouvez importer et exporter une présentation de rapport personnalisée existante sous forme de fichier depuis ou vers un emplacement sur votre ordinateur et le réseau. Par exemple, vous pouvez exporter une présentation de rapport, puis envoyer le fichier à une autre personne pour modification. Cette personne peut ensuite apporter des modifications à la présentation et vous renvoyer le fichier pour que vous puissiez le réimporter.  
   
 > [!IMPORTANT]  
@@ -41,7 +41,7 @@ Vous pouvez importer et exporter une présentation de rapport personnalisée exi
   
      Un fichier de présentation de rapport Word doit avoir une extension de type .docx. Un fichier de présentation de rapport RDLC doit avoir une extension de type .rdlc ou .rdl.  
   
-2.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Sélection présentation état**, puis sélectionnez le lien connexe.  
+2.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Sélection présentation rapport**, puis sélectionnez le lien associé.  
   
 3.  Sélectionnez la ligne pour le rapport vers laquelle vous souhaitez importer la présentation de rapport, puis sous l'onglet **Accueil**, dans le groupe **Traitement**, choisissez **Présentations personnalisées**.  
   
@@ -52,6 +52,6 @@ Vous pouvez importer et exporter une présentation de rapport personnalisée exi
  La présentation de rapport personnalisé d'origine est remplacée par la présentation de rapport importée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure : créer et modifier une présentation de rapport personnalisée](ui-how-create-custom-report-layout.md)   
+ [Créer et modifier une présentation de rapport personnalisée](ui-how-create-custom-report-layout.md)   
  [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md)  
  [Utilisation des rapports](ui-work-report.md)    

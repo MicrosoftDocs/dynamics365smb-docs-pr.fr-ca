@@ -11,13 +11,13 @@ ms.search.keywords:
 ms.date: 09/08/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 0b91925a7ec6adb40cdf99d5bcf3398b62c28b3f
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 89db93227222d79e535f2d18400330aa30566f2f
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-work-with-blanket-sales-orders"></a>Procédure : utiliser des commandes permanentes ventes
+# <a name="work-with-blanket-sales-orders"></a>Utiliser des commandes permanentes ventes
 Une commande permanente ventes représente le cadre d'une entente à long terme entre votre client et vous.
 
 Une commande permanente est généralement établie quand un client s'est engagé à acheter de grandes quantités à livrer en plusieurs livraisons de plus petite taille au cours d'une période déterminée. Souvent, les commandes ouvertes ne couvrent qu'un article avec des dates de livraison prédéfinies. La principale raison d'utiliser une commande ouverte plutôt qu'une document de vente est que les quantités entrées dans une commande ouverte n'affectent pas la disponibilité de l'article et peuvent donc être utilisées comme une journal à des fins de surveillance, de précision et de planification.

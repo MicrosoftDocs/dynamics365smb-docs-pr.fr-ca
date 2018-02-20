@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 09/08/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 1f3a90b9bc9cce2e138e490d3064f6d505a088b9
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: ec7a0c7c34e164b6ca6c8e65938a8c5e53e65514
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-create-bin-contents"></a>Procédure : créer les contenus de la zone
+# <a name="create-bin-contents"></a>Créer le contenus de la zone
 Une fois la configuration des emplacements terminée, vous pouvez configurer leur contenu. En d'autres termes, vous pouvez configurer les articles à stocker dans une zone donnée et définir les règles qui régissent le remplissage de la zone avec un article spécifique. Vous pouvez effectuer cette opération manuellement dans la fenêtre **Contenu de la zone** ou automatiquement dans la fenêtre **Créer la feuille contenu de la zone**.
 
 ## <a name="to-create-bin-content-manually"></a>Pour créer le contenu de la zone manuellement  
@@ -56,7 +56,7 @@ Lorsque vous avez créé vos zones, vous pouvez créer le contenu de chaque zone
 Dans cette feuille, vous pouvez utiliser des lignes contenu de la zone pour plusieurs zones, afin d'obtenir un aperçu convenable des articles que vous placez dans différents zones d'une zone, d'une allée, ou d'un casier donné.  
 
 ## <a name="see-also"></a>Voir aussi
-[Procédure : calculer réappro. emplacement](warehouse-how-to-calculate-bin-replenishment.md)    
+[Calculer le réapprovisionnement de la zone](warehouse-how-to-calculate-bin-replenishment.md)    
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  
 [Stock](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     

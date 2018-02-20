@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 09/14/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: f42941328d49aee4e823007284fd14417866cbae
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: cf54f63e94ab3249f30d2fcdbef2c35e323e4cd8
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-set-up-shop-calendars"></a>Comment configurer des calendriers usine
+# <a name="set-up-shop-calendars"></a>Paramétrer des calendriers usine
 Les calendriers d'atelier ou de poste de charge spécifient les jours ouvrés et les heures de travail, les équipes, les jours fériés et les absences déterminant la capacité disponible brute de l'atelier, mesurée en unités de temps, en fonction des valeurs d'efficacité et de capacité définies.
 
 Avant de calculer un calendrier d'unité de production ou d'atelier spécifique, vous devez configurer un ou plusieurs calendriers usine généraux. Les calendriers usine définissent la semaine de travail standard en fonction des heures de début et de fin de chaque jour ouvré et des changements d'équipe. En outre, ils déterminent les jours fériés fixes de l'année.  
@@ -97,7 +97,7 @@ Vous venez de créer ou de mettre à jour les écritures calendrier. Elles indiq
 Le calendrier d'atelier calculé définit ensuite la période de disponibilité et la quantité de la capacité de l'atelier. Il contrôle la programmation détaillée des opérations effectuées dans l'atelier.  
 
 ## <a name="to-record-work-center-absence"></a>Pour enregistrer les absences de l'atelier  
-1.  Dans la fenêtre **Calendrier centre de charge**, choisissez l'action **Afficher matrice**.
+1.  Dans la fenêtre **Calendrier atelier**, choisissez l'action **Afficher matrice**.
 2. Dans la fenêtre **Matrice Calendrier atelier**, sélectionnez l'atelier et le jour de calendrier correspondant au moment où l'absence doit être enregistrée, puis choisissez l'action **Indisponibilité**.  
 3.  Dans la fenêtre **Indisponibilité**, définissez les heures de début et de fin, et la description de l'absence du jour. Par exemple :  
 
@@ -108,8 +108,8 @@ Le calendrier d'atelier calculé définit ensuite la période de disponibilité 
 La capacité du jour sélectionné est réduite conformément aux heures d'absence enregistrées.  
 
 ## <a name="see-also"></a>Voir aussi  
-[Comment configurer des calendriers principaux](across-how-to-assign-base-calendars.md)  
-[Procédure : configurer les centres de charge et les postes de charge](production-how-to-set-up-work-and-machine-centers.md)  
+[Configurer des calendriers principaux](across-how-to-assign-base-calendars.md)  
+[Configurer des ateliers et des unités de production](production-how-to-set-up-work-and-machine-centers.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Production](production-manage-manufacturing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

@@ -13,10 +13,10 @@ ms.search.keywords: service, service items, repairs, maintenance, fix
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 7eac962e0c9863d8c6ed9bcff19f320687f217ff
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: cee6dcc0c0f4f596b3f63dbafec344875edb4e33
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
 
@@ -31,18 +31,18 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
   
 | À | Voir |
 | --- | --- |
-| Configurez les codes qui affectent automatiquement les lignes des documents service pour les services que vous fournissez souvent. |[Procédure : configurer des codes prestations standard](service-how-setup-service-coding.md)|
-| Définissez les paramètres généraux qui contrôlent les aspects des processus de gestion des services.|[Procédure : configurer des processus de service](service-setup-service-processes.md)|
-| Définissez comment votre organisation utilise les rapports de pannes. |[Procédure : configurer la génération de rapports de pannes](service-how-setup-fault-reporting.md) |
-| Configurez les offres de service que votre compagnie fournit aux clients.|[Procédure : configurer des offres de service](service-how-setup-service-offerings.md)|
-| Fournissez des instructions de dépannage permettant aux responsables de la maintenance de fournir un service plus rapide. |[Procédure : configurer le dépannage](service-how-setup-troubleshooting.md) |
-| Configurez l'affectation des ressources pour simplifier l'affectation de la ressource à une tâche service de manière appropriée. |[Procédure : configurer l'affectation des ressources](service-how-setup-resource-allocation.md) |
-| Définissez la tarification des services, et paramétrez des coûts service supplémentaires pour évaluer des commandes service. |[Procédure : configurer la tarification et les frais supplémentaires pour les services](service-how-setup-service-costs-pricing.md)|
-| Définissez la configuration pour suivre les heures ressource et l'état commande service afin de prévoir les besoins en charges de travail et en service.|[Procédure : configurer des heures de travail et des heures de service](service-how-setup-work-service-hours.md)|
-| Configurez les options d'état de réparation pour surveiller la progression des réparations. | [Procédure : paramétrer les statuts des commandes service et des réparations](service-order-repair-status.md)|
-| Configurez un programme d'articles de prêt, en vue de pouvoir prêter un article de substitution lorsque vous travaillez avec un article de service. |[Procédure : configurer un programme d'articles de prêt](service-how-setup-loaner-program.md) |
-| Configurez les articles de service et les composantes article de service. |[Procédure : configurer des articles de service](service-how-setup-service-items.md) |
-| Définir les bases pour créer des contrats de service et des devis contrat. |[Procédure : configurer des contrats de service](service-how-setup-service-contracts.md) |
+| Configurez les codes qui affectent automatiquement les lignes des documents service pour les services que vous fournissez souvent. |[Configurer des codes prestations standards](service-how-setup-service-coding.md)|
+| Définissez les paramètres généraux qui contrôlent les aspects des processus de gestion des services.|[Configuration des processus de service](service-setup-service-processes.md)|
+| Définissez comment votre organisation utilise les rapports de pannes. |[Configurer le rapport de panne](service-how-setup-fault-reporting.md) |
+| Configurez les offres de service que votre compagnie fournit aux clients.|[Configurer des offres de service](service-how-setup-service-offerings.md)|
+| Fournissez des instructions de dépannage permettant aux responsables de la maintenance de fournir un service plus rapide. |[Configurer le dépannage](service-how-setup-troubleshooting.md) |
+| Configurez l'affectation des ressources pour simplifier l'affectation de la ressource à une tâche service de manière appropriée. |[Configurer l'affectation des ressources](service-how-setup-resource-allocation.md) |
+| Définissez la tarification des services, et paramétrez des coûts service supplémentaires pour évaluer des commandes service. |[Configurer la tarification et les frais supplémentaires pour les services](service-how-setup-service-costs-pricing.md)|
+| Définissez la configuration pour suivre les heures ressource et l'état commande service afin de prévoir les besoins en charges de travail et en service.|[Configurer des heures de travail et des heures de service](service-how-setup-work-service-hours.md)|
+| Configurez les options d'état de réparation pour surveiller la progression des réparations. | [Configurer les états des commandes service et des réparations](service-order-repair-status.md)|
+| Configurez un programme d'articles de prêt, en vue de pouvoir prêter un article de substitution lorsque vous travaillez avec un article de service. |[Configuration d'un programme d'articles de prêt](service-how-setup-loaner-program.md) |
+| Configurez les articles de service et les composantes article de service. |[Configurer des articles de service](service-how-setup-service-items.md) |
+| Définir les bases pour créer des contrats de service et des devis contrat. |[Configurer des contrats de service](service-how-setup-service-contracts.md) |
 
 ## <a name="see-also"></a>Voir aussi .
 [Gestion des services](service-service.md)  

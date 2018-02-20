@@ -1,6 +1,6 @@
 ---
 title: "Procédure pas à pas : configuration et facturation de paiements anticipés | Microsoft Docs"
-description: "Les paiements anticipés sont des paiements qui sont facturés et reportés dans une commande paiement anticipé vente ou achat avant la facturation finale. Vous pouvez demander un acompte avant de produire les articles commandés ou demander à ce que le paiement soit effectué avant de livrer les articles à un client. Vous utilisez la fonctionnalité de paiements anticipés dans Dynamics 365 pour facturer et collecter les paiements anticipés requis des clients ou régler des paiements anticipés aux fournisseurs. Vous pouvez ainsi vous assurer que tous les paiements sont reportés sur une facture."
+description: "Les paiements anticipés sont des paiements qui sont facturés et reportés dans une commande paiement anticipé vente ou achat avant la facturation finale. Vous pouvez demander un acompte avant de produire les articles commandés ou demander à ce que le paiement soit effectué avant de livrer les articles à un client. Vous utilisez la fonctionnalité de paiements anticipés dans Finance and Operations, Business edition pour facturer et collecter des dépôts requis des clients ou régler des paiements anticipés aux fournisseurs. Vous pouvez ainsi vous assurer que tous les paiements sont reportés sur une facture."
 author: SorenGP
 ms.service: dynamics365-financials
 ms.topic: article
@@ -11,10 +11,10 @@ ms.search.keywords:
 ms.date: 09/07/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: aa56764b5f3210229ad21eae6891fb201462209c
-ms.openlocfilehash: fbdeb6b9dc8c96b09ded933ec987b8c60098bfcf
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: cd74d543168f1f96f55141aace571d6d701e3de1
 ms.contentlocale: fr-ca
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/30/2018
 
 ---
 # <a name="walkthrough-setting-up-and-invoicing-sales-prepayments"></a>Procédure pas à pas : configuration et facturation d'acomptes
@@ -128,7 +128,7 @@ Susan crée la facture paiement anticipé et l'envoie au client.
 
     Le champ **% acompte** de la ligne correspondant à l'article **1100** a pour valeur **40**. Il s'agit du pourcentage que vous avez entré dans la fenêtre **Pourcentages acompte vente** pour l'article **1100** et le client **20000**.  
 
-    Pour plus d'informations, reportez-vous à la [Procédure : configurer des paiements anticipés](finance-set-up-prepayments.md).  
+    Pour plus d'informations, reportez\-vous à [Configuration des acomptes](finance-set-up-prepayments.md).  
 8. Sélectionnez l'action **Statistiques**.  
 9. Sur le raccourci **Acompte**, le champ **Montant acompte HT** indique **1 560**. Si vous créez une facture paiement anticipé pour la commande dès maintenant, c'est le montant qui s'affiche sur la facture.  
 

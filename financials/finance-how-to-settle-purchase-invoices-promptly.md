@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 08/16/2017
 ms.author: bholtorf
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: ab72dbc70405323e5dcf7aafb1120f63bd15246c
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 19e9e6e226ceca061be03d48526f258309095e0a
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-settle-purchase-invoices-promptly"></a>Procédure : établir rapidement des factures achat
+# <a name="settle-purchase-invoices-promptly"></a>Établir rapidement des factures achat
 Si vous devez payer le fournisseur en liquide ou par chèque, vous pouvez reporter le paiement lorsque vous reportez la facture.  
   
 ### <a name="to-settle-purchase-invoices-promptly"></a>Pour établir rapidement des factures achat  

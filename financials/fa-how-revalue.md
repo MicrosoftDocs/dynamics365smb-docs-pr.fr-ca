@@ -12,13 +12,13 @@ ms.workload: na
 ms.date: 06/02/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: e578b2d22cf715407fee0b796b1ea49ef592057d
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: b7ed3e38b4a697de678e11a8735869b666910081
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-revalue-fixed-assets"></a>Procédure : réévaluer des immobilisations
+# <a name="revalue-fixed-assets"></a>Réévaluer les immobilisations
 La réévaluation des immobilisations peut consister en réévaluations, dépréciations ou corrections de valeurs générales.
 
 Lorsque la valeur d'une immobilisation a augmenté, vous reportez une ligne journal avec un montant supérieur, une appréciation, dans le registre amortissement. Le nouveau montant est enregistré comme une appréciation selon la configuration du report immobilisation.
@@ -34,7 +34,7 @@ L'actualisation permet d'ajuster plusieurs valeurs immobilisation, par exemple, 
 4. Sélectionnez l'action **Insérer contrepartie immo.**. Une seconde ligne journal est créée pour le compte de contrepartie qui est configuré pour le report de l'appréciation.
 
     > [!NOTE]  
->   L'étape 4 ne fonctionne que si vous avez configuré ce qui suit : dans la fenêtre **Fiche groupe compta. immo.** pour le groupe de validation de l'immobilisation, le champ **Compte réévaluation** contient le compte débit général et le champ **Compte contrepartie réévaluation** contient le compte général auquel vous souhaitez valider les écritures contrepartie pour réévaluation. Pour en savoir plus, voir la section « Pour configurer des groupes de validation d'immobilisation » dans [Procédure : configurer des informations d'immobilisation générales pour les immobilisations](fa-how-setup-general.md).  
+>   L'étape 4 ne fonctionne que si vous avez configuré ce qui suit : dans la fenêtre **Fiche groupe compta. immo.** pour le groupe de validation de l'immobilisation, le champ **Compte réévaluation** contient le compte débit général et le champ **Compte contrepartie réévaluation** contient le compte général auquel vous souhaitez valider les écritures contrepartie pour réévaluation. Pour en savoir plus, voir la section « Pour configurer des groupes de report d'immobilisation » dans [Configurer des informations d'immobilisation générales pour les immobilisations](fa-how-setup-general.md).  
 5. Sélectionnez l'action **Valider**.
 
 ## <a name="to-post-a-write-down-from-the-fixed-asset-gl-journal"></a>Pour reporter une dépréciation à partir du journal GL immobilisation
@@ -44,7 +44,7 @@ L'actualisation permet d'ajuster plusieurs valeurs immobilisation, par exemple, 
 4. Sélectionnez l'action **Insérer contrepartie immo.**. Une seconde ligne journal est créée pour le compte de contrepartie qui est configuré pour le report de la dépréciation.
 
     > [!NOTE]  
->   L'étape 4 ne fonctionne que si vous avez configuré ce qui suit : dans la fenêtre **Fiche groupe compta. immo.** pour le groupe de validation de l'immobilisation, le champ **Compte dépréciation** contient le compte crédit général et le champ **Compte dépense dépréciation** contient le compte général auquel vous souhaitez valider les écritures contrepartie pour dépréciation. Pour en savoir plus, voir la section « Pour configurer des groupes de validation d'immobilisation » dans [Procédure : configurer des informations d'immobilisation générales pour les immobilisations](fa-how-setup-general.md).
+>   L'étape 4 ne fonctionne que si vous avez configuré ce qui suit : dans la fenêtre **Fiche groupe compta. immo.** pour le groupe de validation de l'immobilisation, le champ **Compte dépréciation** contient le compte crédit général et le champ **Compte dépense dépréciation** contient le compte général auquel vous souhaitez valider les écritures contrepartie pour dépréciation. Pour en savoir plus, voir la section « Pour configurer des groupes de report d'immobilisation » dans [Configurer des informations d'immobilisation générales pour les immobilisations](fa-how-setup-general.md).
 5. Sélectionnez l'action **Valider**.
 
 ## <a name="to-perform-general-revaluation-of-fixed-assets"></a>Pour exécuter une réévaluation générale des immobilisations
@@ -54,7 +54,7 @@ L'actualisation permet d'ajuster plusieurs valeurs immobilisation, par exemple, 
 2. Renseignez les champs selon vos besoins.
 3. Cliquez sur le bouton **OK**.
 
-    Les lignes de réévaluation sont créées conformément à vos paramètres à l'étape 2. Les lignes sont créées dans la feuille immobilisation ou la feuille compta. immo., selon votre modèle et la configuration par lot dans la fenêtre **Param. feuille immo.**. Pour en savoir plus, voir [Procédure : configurer des informations générales sur les immobilisations](fa-how-setup-general.md).
+    Les lignes de réévaluation sont créées conformément à vos paramètres à l'étape 2. Les lignes sont créées dans la feuille immobilisation ou la feuille compta. immo., selon votre modèle et la configuration par lot dans la fenêtre **Param. feuille immo.**. Pour en savoir plus, voir [Configurer des informations générales sur les immobilisations](fa-how-setup-general.md).
 4. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuille comptabilisation immobilisation**, puis sélectionnez le lien connexe.  
 5. Sélectionnez la feuille avec les immobilisations que vous souhaitez réévaluer, puis sélectionnez l'action **Écritures comptables**.  
 6. Vérifiez les écritures créées, puis sélectionnez l'action **Valider** pour valider la feuille.
@@ -63,7 +63,7 @@ L'actualisation permet d'ajuster plusieurs valeurs immobilisation, par exemple, 
 >   Si les taux de réévaluation sont définis uniquement pour une simulation, vous pouvez créer un registre amortissement spécifique pour les stocker. Ainsi, ces écritures n'affectent aucune autre loi d'amortissement.
 
    ## <a name="to-post-additional-acquisition-costs"></a>Pour reporter les coûts d'acquisition supplémentaires
-   Vous pouvez reporter le coût d'acquisition supplémentaire d'une immobilisation de la même manière que son coût d'acquisition d'origine : à partir d'une facture achat ou d'un journal immobilisation. Pour en savoir plus, voir [Procédure : acquérir les immobilisations](fa-how-acquire.md).  
+   Vous pouvez reporter le coût d'acquisition supplémentaire d'une immobilisation de la même manière que son coût d'acquisition d'origine : à partir d'une facture achat ou d'un journal immobilisation. Pour en savoir plus, voir [Acquérir des immobilisations](fa-how-acquire.md).  
 
 Si l'amortissement de l'immobilisation a été calculé, cochez la case **Amortir coût acquisition** pour que le résultat du coût d'acquisition supplémentaire moins la valeur résiduelle soit amorti proportionnellement au montant de l'amortissement de l'immobilisation précédemment acquise. Cette option garantit l'invariabilité de la période d'amortissement.  
 

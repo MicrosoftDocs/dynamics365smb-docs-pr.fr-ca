@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 09/07/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 5ca921ba6c8ced04899b3a8cc2cd2db91e4d69a3
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 12bde7fc508bb29e56ad63d76b526a80b5073f03
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-remove-and-reapply-item-ledger-entries"></a>Procédure : supprimer et affecter à nouveau des écritures article
+# <a name="remove-and-reapply-item-ledger-entries"></a>Supprimer et appliquer à nouveau des écritures article
 Dans la fenêtre **Feuille de travail Affectation**, vous pouvez visualiser et modifier manuellement certaines écritures affectation article qui sont créées automatiquement lors des transactions inventaire.  
 
 Lorsque vous reportez une transaction dans laquelle des articles entrent ou sortent de l'inventaire, une affectation article est créée entre chaque augmentation et diminution d'inventaire. Ces affectations déterminent le flux des coûts des marchandises entrant dans l'inventaire vers les coûts des marchandises sortant de l'inventaire. En raison du mode de calcul du coût unitaire, une affectation article incorrecte peut engendrer une erreur au niveau du coût moyen ou du coût unitaire. Pour plus d'informations, voir Détails de conception : traçabilité.
@@ -30,7 +30,7 @@ Vous pouvez être amené à annuler une affectation ou à affecter à nouveau de
 - Vous avez effectué une affectation fixe incorrecte.
 - Vous devez retourner un article sur lequel une vente a déjà été affectée.
 
-Si possible, utilisez un document pour affecter à nouveau une écriture article. Par exemple, si vous devez procéder à un retour achat d'un article auquel une vente a déjà été affectée, vous pouvez procéder à une nouvelle affectation en créant et en reportant le document de retour achat à l'aide de l'affectation correcte dans le champ **Écr. article à affecter** dans la ligne retour achat. Vous pouvez utiliser la fonction **Extraire les lignes de document reportées à inverser** ou **Copier document** dans le document de retour achat pour faciliter cette opération. Lorsque vous reportez le document, l'écriture article est automatiquement affectée à nouveau. Pour plus d'informations, reportez-vous à [Procédure : traiter les retours ou annulations d'achats](purchasing-how-process-purchase-returns-cancellations.md).
+Si possible, utilisez un document pour affecter à nouveau une écriture article. Par exemple, si vous devez procéder à un retour achat d'un article auquel une vente a déjà été affectée, vous pouvez procéder à une nouvelle affectation en créant et en reportant le document de retour achat à l'aide de l'affectation correcte dans le champ **Écr. article à affecter** dans la ligne retour achat. Vous pouvez utiliser la fonction **Extraire les lignes de document reportées à inverser** ou **Copier document** dans le document de retour achat pour faciliter cette opération. Lorsque vous reportez le document, l'écriture article est automatiquement affectée à nouveau. Pour plus d'informations, reportez-vous à [Traiter les retours ou annulations d'achats](purchasing-how-process-purchase-returns-cancellations.md).
 
 Si vous ne pouvez pas utiliser un document pour exécuter une nouvelle affectation, par exemple si vous devez corriger une affectation fixe, utilisez la fenêtre **Feuille de travail Affectation** pour corriger une affectation.
 
@@ -75,8 +75,8 @@ Si vous ne pouvez pas utiliser un document pour exécuter une nouvelle affectati
 6.  Si, dans les **Paramètres stock**, le champ **Ajustement automatique des coûts** est défini sur **Toujours**, le traitement par lots d'ajustement des coûts est exécuté automatiquement après que vous avez effectué un relettrage. Sinon, exécutez le traitement en lot **Ajuster coûts - Écr. article** pour être sûr que tous les coûts sont actualisés.  
 
 ## <a name="see-also"></a>Voir aussi  
-[Procédure : clôturer les écritures comptables article ouvertes qui résultent d'un lettrage fixe dans la feuille article](finance-how-to-close-open-item-ledger-entries-resulting-from-fixed-application-in-the-item-journal.md)  
- [Procédure : traiter les retours ou annulations d'achats](purchasing-how-process-purchase-returns-cancellations.md)  
+[Fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal article](finance-how-to-close-open-item-ledger-entries-resulting-from-fixed-application-in-the-item-journal.md)  
+ [Traiter les retours ou annulations d'achats](purchasing-how-process-purchase-returns-cancellations.md)  
  [Gestion des coûts ajustés](finance-manage-inventory-costs.md)   
  [Détails de conception : lettrage article](design-details-item-application.md)  
  [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

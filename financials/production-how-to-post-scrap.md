@@ -13,20 +13,20 @@ ms.search.keywords:
 ms.date: 09/06/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 9eb95fe46c9ffa5cc75eaf1fbad64e405accf4d6
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 8c506afa1f476de9413e2cf422991710dd981b0d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-post-scrap-manually"></a>Procédure : reporter le rebut manuellement
-Si le traitement produit un rebut, vous pouvez entrer ce rebut dans la feuille production. 
+# <a name="post-scrap-manually"></a>Reporter le rebut manuellement
+Si le traitement produit un rebut, vous pouvez entrer ce rebut dans le journal de sortie. 
 
 > [!NOTE]
 > La quantité mise au rebut n'augmente pas la quantité produite.  
 
 ## <a name="to-post-scrap-manually"></a>Pour reporter le rebut manuellement  
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuille production**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Journal de sortie**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 3. Dans le champ **Quantité rebutée**, saisissez la quantité perte.  
 4. Dans le champ **Code rebut**, saisissez le code rebut.  

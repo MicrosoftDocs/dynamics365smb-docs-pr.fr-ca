@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 50a95ee803d4af5cbd0d2c375ac6411bec405a26
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: b8096c4447a782fdd73137aa7f8383535d2e01d3
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-set-up-use-tax-and-purchase-tax"></a>Procédure : configurer la taxe de service et la taxe d'achat
+# <a name="set-up-use-tax-and-purchase-tax"></a>Configurer la taxe de service et la taxe d'achat
 La taxe de vente inclut les taxes payées par les compagnies pour utiliser des articles :  
 
 - Taxe de service (États-Unis) – La taxe de service est une taxe de vente payée aux États-Unis sur les articles qu'une compagnie achète pour son propre usage plutôt que pour la vente à un client. La compagnie doit payer une taxe de vente pour ces articles au gouvernement, sous la forme d'une taxe de service.  

@@ -1,6 +1,6 @@
 ---
 title: "Procédure : gérer les modèles de notification | Microsoft Docs"
-description: "Des notifications sont envoyées aux utilisateurs du flux de travail pour les informer des étapes à effectuer ou de l'état des étapes du flux de travail. Vous configurez qui reçoit des notifications et quand, en définissant des utilisateurs approbation, le calendrier de notification des utilisateurs, et les réponses de workflow concernées afin de déterminer les destinataires de notifications. Pour plus d'informations, voir [Configuration de notifications de flux de travail] (across-setting-up-workflow-notifications.md)."
+description: "Des notifications sont envoyées aux utilisateurs du flux de travail pour les informer des étapes à effectuer ou de l'état des étapes du flux de travail. Vous configurez qui reçoit des notifications et quand, en définissant des utilisateurs approbation, le calendrier de notification des utilisateurs, et les réponses de workflow concernées afin de déterminer les destinataires de notifications. Pour plus d'informations, reportez-vous à [Configuration de notifications de flux de travail](across-setting-up-workflow-notifications.md)."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -13,13 +13,13 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 9163bdb48a10d9b36b670e4bc67c696fbade6b37
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 67db510085c5a858c88565087683ffeeb4f77bd1
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-manage-notification-templates"></a>Procédure : gérer les modèles de notification
+# <a name="manage-notification-templates"></a>Gérer les modèles de notification
 Des notifications sont envoyées aux utilisateurs du flux de travail pour les informer des étapes à effectuer ou de l'état des étapes du flux de travail. Vous configurez qui reçoit des notifications et quand, en définissant des utilisateurs approbation, le calendrier de notification des utilisateurs, et les réponses de workflow concernées afin de déterminer les destinataires de notifications. Pour plus d'informations, reportez-vous à [Configuration de notifications de flux de travail](across-setting-up-workflow-notifications.md).  
 
  Les notifications sont créés à partir de modèles qui définissent leur contenu et leur mise en forme. Vous pouvez exporter le contenu d'un modèle de notification, le modifier, puis l'importer dans le même modèle de notification ou un nouveau. Ceci est décrit dans les procédures suivantes.  
@@ -76,10 +76,10 @@ Les valeurs de paramètre sont insérées automatiquement dans les notification 
 
 ## <a name="see-also"></a>Voir aussi  
  [Configuration de notifications de workflow](across-setting-up-workflow-notifications.md)   
- [Procédure : configurer la messagerie](madeira-how-setup-email.md)   
- [Procédure : Configurer des utilisateurs de workflow](across-how-to-set-up-workflow-users.md)   
- [Procédure : configurer des utilisateurs d'approbation](across-how-to-set-up-approval-users.md)   
- [Procédure : créer des workflows](across-how-to-create-workflows.md)   
+ [Configurer la messagerie](madeira-how-setup-email.md)   
+ [Configurer des utilisateurs de flux de travail](across-how-to-set-up-workflow-users.md)   
+ [Configurer des utilisateurs d'approbation](across-how-to-set-up-approval-users.md)   
+ [Créer des workflows](across-how-to-create-workflows.md)   
  [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md)   
  [Flux de travail](across-workflow.md)   
 

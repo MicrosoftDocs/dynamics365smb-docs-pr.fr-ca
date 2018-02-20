@@ -13,14 +13,14 @@ ms.search.keywords:
 ms.date: 09/06/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: a60e63e9741f81aa6efcf8b6a4780b5b464fe440
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 493c6e24a42229bc6e5223319ca66c103ee08f96
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-register-consumption-and-output-for-one-released-production-order-line"></a>Procédure : enregistrer la consommation et la sortie pour une ligne bon de production libéré
-Cette tâche d'exécution est réalisée dans la fenêtre **Journal production**. La feuille combine en une seule feuille les fonctions des feuilles distinctes consommation et production. Vous accédez directement à la feuille combinée depuis un ordre de fabrication lancé. Son objectif principal est de valider manuellement la consommation de composants, la quantité d'articles finis produits et le temps passé dans les opérations. Les valeurs sont reportées dans le grand livre sous le bon de production libéré. Les quantités consommées sont reportées comme écritures article négatives, les quantités sorties sont reportées comme écritures positives et les heures passées sont reportées comme écritures du grand livre de capacité. Ces valeurs reportées peuvent également être visualisées au bas du journal sous forme de quantités réelles.  
+# <a name="register-consumption-and-output-for-one-released-production-order-line"></a>Enregistrer la consommation et la production pour une ligne bon de production libéré
+Cette tâche d'exécution est réalisée dans la fenêtre **Journal production**. Le journal combine les fonctions des journaux de sortie et de consommation distincts en un seul journal. Vous accédez directement au journal combiné depuis un bon de production libéré. Son objectif principal est de reporter manuellement la consommation de composantes, la quantité d'articles finis produits et le temps passé dans les opérations. Les valeurs sont reportées dans le grand livre sous le bon de production libéré. Les quantités consommées sont reportées comme écritures article négatives, les quantités sorties sont reportées comme écritures positives et les heures passées sont reportées comme écritures du grand livre de capacité. Ces valeurs reportées peuvent également être visualisées au bas du journal sous forme de quantités réelles.  
 
 > [!NOTE]  
 >  Parce que les données relatives à la consommation sont traitées avec celles relatives à la sortie, ce journal permet d'afficher les opérations et les composantes liées dans une structure opératoire logique. Les composantes sont décalées sous l'opération à laquelle elles correspondent. Vous devrez pour cela utiliser des codes lien itinéraire.  
@@ -32,7 +32,7 @@ Cette tâche d'exécution est réalisée dans la fenêtre **Journal production**
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Bons de production libérés**, puis sélectionnez le lien associé.  
 2.  Ouvrez une ligne de bon de production libéré qui est prête à être enregistrée, puis, sur le raccourci **Lignes**, choisissez l'action **Ligne**, puis l'action **Journal production**.  
 
-    La fenêtre **Journal production** s'ouvre et affiche les lignes journal pour la ligne bon de production en fonction des fenêtres **Composante bon de production** et **Itinéraire bon de production** Ces lignes proviennent de la nomenclature de production et de l'itinéraire affectés à l'article en cours de production. Pour plus d'informations, reportez\-vous à [Procédure : créer des nomenclatures de production](production-how-to-create-routings.md).  
+    La fenêtre **Journal production** s'ouvre et affiche les lignes journal pour la ligne bon de production en fonction des fenêtres **Composante bon de production** et **Itinéraire bon de production** Ces lignes proviennent de la nomenclature de production et de l'itinéraire affectés à l'article en cours de production. Pour plus d'informations, voir [Créer des nomenclatures de production](production-how-to-create-routings.md).  
 
 3.  Dans le champ **Date report** situé en haut du journal, entrez une date de report qui s'applique à toutes les lignes. Par défaut, ce champ affiche la date de travail. Il permet d'aligner rapidement les dates de report de toutes les lignes, si nécessaire.  
 

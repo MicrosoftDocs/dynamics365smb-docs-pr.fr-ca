@@ -13,18 +13,18 @@ ms.search.keywords: project management, consumption
 ms.date: 06/06/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 2b42abaed502c49a595a35656570548e48321b46
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: b0bd4f9a4c0963520631e1571fd182adce85fdd9
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-record-usage-for-jobs"></a>Procédure : Enregistrer l'utilisation pour les projets
-Dans la fenêtre **Lignes planning projet**, vous pouvez consulter et enregistrer l'activité sur les différentes parties de votre projet, qui est automatiquement mis à jour lorsque vous modifiez et transférez des informations entre les projets et les feuilles projet ou les factures projet. Cela suppose d'avoir paramétré un projet afin que **Appliquer le lien d'utilisation** soit activé. Pour plus d'informations, reportez-vous à [Procédure : Configurer des projets](projects-how-setup-jobs.md).  
+# <a name="record-usage-for-jobs"></a>Enregistrer l'utilisation pour les projets
+Dans la fenêtre **Lignes planning projet**, vous pouvez consulter et enregistrer l'activité sur les différentes parties de votre projet, qui est automatiquement mis à jour lorsque vous modifiez et transférez des informations entre les projets et les feuilles projet ou les factures projet. Cela suppose d'avoir paramétré un projet afin que **Appliquer le lien d'utilisation** soit activé. Pour plus d'informations, voir [Configuration de projets](projects-how-setup-jobs.md).  
 
 Par exemple, pour les lignes planning de type **Budget**, vous pouvez saisir la quantité d'une ressource et indiquer la quantité à transférer vers la feuille projet. Si le type de la ligne planning est **Facturable**, vous pouvez saisir la quantité de la ressource et indiquer la quantité à transférer vers une facture. En comparant la quantité qui a été transférée vers le journal ou la facture avec la quantité restante, vous pouvez rapidement vérifier les informations sur l'utilisation.
 
-Les procédures suivantes décrivent comment enregistrer les prix et les coûts réels (facturables) ou budgétés du projet. Pour plus d'informations sur l'estimation des valeurs budgétées lors de la planification, reportez-vous à [Procédure : Gérer les budgets de projets](projects-how-manage-budgets.md).
+Les procédures suivantes décrivent comment enregistrer les prix et les coûts réels (facturables) ou budgétés du projet. Pour plus d'informations sur l'estimation des valeurs budgétées lors de la planification, voir [Gérer les budgets de projets](projects-how-manage-budgets.md).
 
 ## <a name="to-record-usage-for-a-job-planning-line-of-type-budget"></a>Pour enregistrer l'utilisation d'une ligne planification projet de type Budget
 1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Projets**, puis choisissez le lien associé.  
@@ -41,7 +41,7 @@ Les procédures suivantes décrivent comment enregistrer les prix et les coûts 
 10. Répétez les phases 3 à 8 pour enregistrer l'utilisation supplémentaire.  
 
 ## <a name="to-record-usage-for-a-job-planning-line-of-type-billable"></a>Pour enregistrer l'utilisation d'une ligne planification projet de type Facturable
-Dans la tâche suivante, vous devez aussi enregistrer l'activité, mais pour une ligne planning projet de type **Facturable**. En général, dans ce cas, vous facturez votre utilisation, mais vous pouvez également la transférer vers un journal. Néanmoins, lorsque vous faites cela, une ligne planning projet de type **Budget** est créée pour correspondre à la ligne facturable. Pour en savoir plus, reportez-vous à [Procédure : Gérer les budgets de projets](projects-how-manage-budgets.md).
+Dans la tâche suivante, vous devez aussi enregistrer l'activité, mais pour une ligne planning projet de type **Facturable**. En général, dans ce cas, vous facturez votre utilisation, mais vous pouvez également la transférer vers un journal. Néanmoins, lorsque vous faites cela, une ligne planning projet de type **Budget** est créée pour correspondre à la ligne facturable. Pour en savoir plus, voir [Gérer les budgets de projets](projects-how-manage-budgets.md).
 
 1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Projets**, puis choisissez le lien associé.
 2. Sélectionnez le projet concerné, puis cliquez sur **Lignes planning projet**.  
@@ -79,7 +79,7 @@ Lorsque vous êtes prêt à reporter les données financières pour les projets,
 Après avoir reporté les lignes journal projet, vous pouvez voir les lignes planification associées aux écritures journal projet qui ont été reportées.
 
 > [!NOTE]  
->   Cela nécessite que le champ **Appliquer le lien d'utilisation** ait été sélectionné pour le projet, ou qu'il s'agisse de la configuration par défaut pour tous les projets de votre organisation. Pour plus d'informations, reportez-vous à [Procédure : Configurer des projets](projects-how-setup-jobs.md).  
+>   Cela nécessite que le champ **Appliquer le lien d'utilisation** ait été sélectionné pour le projet, ou qu'il s'agisse de la configuration par défaut pour tous les projets de votre organisation. Pour plus d'informations, voir [Configuration de projets](projects-how-setup-jobs.md).  
 
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuilles projet**, puis sélectionnez le lien connexe.  
 2. Sélectionnez une feuille projet appropriée, puis cliquez sur **Écritures comptables**.  

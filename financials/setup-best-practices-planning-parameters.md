@@ -1,6 +1,6 @@
 ---
 title: "Pratiques de configuration recommandées : paramètres de planification | Microsoft Docs"
-description: "Le raccourci **Planification** de la fiche article est le cœur de la chaîne d'approvisionnement de la compagnie. Définir les paramètres de planification corrects est très important pour une gestion rentable des inventaires et un service client de haute qualité."
+description: "Le raccourci **Planning** de la fiche article est le cœur de la chaîne d'approvisionnement de la société. Définir les paramètres de planification corrects est très important pour une gestion rentable des inventaires et un service client de haute qualité."
 author: SorenGP
 ms.service: dynamics365-financials
 ms.topic: article
@@ -14,7 +14,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
 ms.openlocfilehash: a9dfb17b0cbddb3d6b65e8d807dd92990c2ccdc1
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 # <a name="setup-best-practices-planning-parameters"></a>Pratiques de configuration recommandées : paramètres de planification
@@ -44,6 +44,6 @@ Le raccourci **Planning** de la fiche article est le cœur de la chaîne d'appro
 ## <a name="see-also"></a>Voir aussi  
  [Pratiques de configuration recommandées : planification de l'approvisionnement](setup-best-practices-supply-planning.md)   
  [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
- [Configurer les modules complexes à l'aide des meilleures pratiques](set-up-complex-application-areas-using-best-practices.md)  
+ [Configurez les modules complexes à l'aide des meilleures pratiques](set-up-complex-application-areas-using-best-practices.md)  
  [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 

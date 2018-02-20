@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: machinery, buildings
-ms.date: 06/02/2017
+ms.date: 01/25/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: c2a563d09d09e9772ab00fcffc48db9cbc5ee797
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 069f621101023a3c57b7add4d4e3ffcbc2664845
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
 # <a name="fixed-assets"></a>Immobilisations
@@ -31,10 +31,7 @@ Pour chaque immobilisation, vous pouvez enregistrer des coûts d'entretien et la
 Chaque immobilisation peut être liée à une ou à plusieurs polices d'assurance. Vous pouvez ainsi vérifier facilement la concordance des montants des polices d'assurance avec la valeur des immobilisations associées à ces polices. Cela facilite également le contrôle des primes d'assurance annuelles.
 
 > [!NOTE]  
->   Vous pouvez enregistrer les transactions immobilisation dans la fenêtre **Feuille compta. immo.** ou dans la fenêtre **Feuille immo.**, selon que les transactions sont destinées pour des rapports financiers ou pour la gestion interne. L'aide pour les immobilisations décrit uniquement la procédure d'utilisation de la fenêtre **Feuille compta. immo.**. Pour en savoir plus, voir [Procédure : configurer l'amortissement d'immobilisation](fa-how-setup-depreciation.md).
-
-> [!NOTE]  
->   Cette fonctionnalité nécessite que votre expérience soit définie sur **Suite**. Pour plus d'informations, voir [Personnalisation de votre expérience [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-experiences.md).
+>   Vous pouvez enregistrer les transactions immobilisation dans la fenêtre **Feuille compta. immo.** ou dans la fenêtre **Feuille immo.**, selon que les transactions sont destinées pour des rapports financiers ou pour la gestion interne. L'aide pour les immobilisations décrit uniquement la procédure d'utilisation de la fenêtre **Feuille compta. immo.**. Pour en savoir plus, voir [Configurer l'amortissement d'immobilisation](fa-how-setup-depreciation.md).
 
 Pour pouvoir gérer les immobilisations, vous devez configurer les valeurs par défaut, la comptabilité des immobilisations, les groupes de report, les clés d'affectation, les journaux et les types de report. Pour plus d'informations, reportez-vous à [Paramétrage d'immobilisations](fa-setup.md).
 
@@ -42,14 +39,14 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 
 | À | Voir |
 | --- | --- |
-| Créer des immobilisations, affecter des méthodes d'amortissement, reporter des acquisitions et des valeurs résiduelles et imprimer les listes d'immobilisations. |[Procédure : acquérir des immobilisations](fa-how-acquire.md) |
-| Enregistrer les visites de service, reporter les coûts d'entretien et surveiller les coûts d'entretien. |[Procédure : mettre à jour des immobilisations](fa-how-maintain.md) |
-| Mettre à jour les informations d'assurance, reporter les coûts d'acquisition vers les polices d'assurance, modifier la couverture assurance, visualiser les statistiques assurance et répertorier les polices d'assurance. |[Procédure : garantir des immobilisations](fa-how-insure.md) |
-| Reclasser les immobilisations, les transférer vers d'autres emplacements, les diviser ou les combiner. |[Procédure : transférer, fractionner ou regrouper les immobilisations](fa-how-trans-split-combine.md) |
-| Ajustez les valeurs des immobilisations, reportez les appréciations et les transactions de dépréciation. |[Procédure : réévaluer des immobilisations](fa-how-revalue.md) |
-| Calculer l'amortissement, reporter l'amortissement et analyser l'amortissement dans les rapports sur les immobilisations. |[Procédure : amortir des immobilisations](fa-how-depreciate-amortize.md) |
-| Reporter les transactions de cession, visualiser les écritures cession et reporter les cessions partielles. |[Procédure : céder ou annuler des immobilisations](fa-how-dispose-retire.md) |
-| Gérer les budgets d'immobilisations, budgéter les coûts d'acquisition, les cessions d'immobilisations et l'amortissement. |[Procédure : gérer les budgets pour les immobilisations](fa-how-manage-budgets.md) |
+| Créer des immobilisations, affecter des méthodes d'amortissement, reporter des acquisitions et des valeurs résiduelles et imprimer les listes d'immobilisations. |[Acquérir des immobilisations](fa-how-acquire.md) |
+| Enregistrer les visites de service, reporter les coûts d'entretien et surveiller les coûts d'entretien. |[Mettre à jour des immobilisations](fa-how-maintain.md) |
+| Mettre à jour les informations d'assurance, reporter les coûts d'acquisition vers les polices d'assurance, modifier la couverture assurance, visualiser les statistiques assurance et répertorier les polices d'assurance. |[Assurer les immobilisations](fa-how-insure.md) |
+| Reclasser les immobilisations, les transférer vers d'autres emplacements, les diviser ou les combiner. |[Transférer, fractionner ou regrouper les immobilisations](fa-how-trans-split-combine.md) |
+| Ajustez les valeurs des immobilisations, reportez les appréciations et les transactions de dépréciation. |[Réévaluer les immobilisations](fa-how-revalue.md) |
+| Calculer l'amortissement, reporter l'amortissement et analyser l'amortissement dans les rapports sur les immobilisations. |[Amortir des immobilisations](fa-how-depreciate-amortize.md) |
+| Reporter les transactions de cession, visualiser les écritures cession et reporter les cessions partielles. |[Céder ou annuler des immobilisations](fa-how-dispose-retire.md) |
+| Gérer les budgets d'immobilisations, budgéter les coûts d'acquisition, les cessions d'immobilisations et l'amortissement. |[Gérer les budgets pour les immobilisations](fa-how-manage-budgets.md) |
 
 ## <a name="see-also"></a>Voir aussi
 [Paramétrage d'immobilisations](fa-setup.md)  
@@ -58,4 +55,6 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 [Bienvenue dans [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)]](index.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 
-## [!INCLUDE[d365fin](includes/free_trial_md.md)]
+## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
+## [!INCLUDE[d365fin](includes/training_link_md.md)]
+

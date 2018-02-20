@@ -15,13 +15,13 @@ ms.search.keywords: user setup
 ms.date: 06/02/2017
 ms.author: jswymer
 ms.translationtype: HT
-ms.sourcegitcommit: 81636fc2e661bd9b07c54da1cd5d0d27e30d01a2
-ms.openlocfilehash: 6cabfc7f514f44b64331761e90d900deadc6116c
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 86114cd184a7a9f10ae28fbb28fb3049e8e8f2d2
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-specify-posting-periods"></a>Procédure : spécifier des périodes de report
+# <a name="specify-posting-periods"></a>Spécifier des périodes de report
 Utilisez des périodes de report pour spécifier quand les utilisateurs peuvent reporter dans le grand livre.  
 
 ## <a name="to-specify-posting-periods"></a>Pour définir des périodes de report
@@ -29,10 +29,10 @@ Utilisez des périodes de report pour spécifier quand les utilisateurs peuvent 
 2. Dans la fenêtre **Paramètres comptabilité**, définissez la période en entrant des dates dans les champs **Début période validation** et **Fin période validation**.  
 
 > [!NOTE]  
->   Ces périodes de report s'appliquent à la compagnie et à tous les utilisateurs. Pour autoriser des exceptions, vous pouvez définir différentes périodes de validation pour des utilisateurs spécifiques dans la fenêtre **Paramètres utilisateur**. Ces périodes de validation sont prioritaires sur celles spécifiées dans la fenêtre **Paramètres comptabilité**. Pour plus d'informations, voir la section « Pour configurer des contraintes de temps utilisateur » dans [Procédure : Gérer les utilisateurs et les autorisations](ui-how-users-permissions.md).
+>   Ces périodes de report s'appliquent à la compagnie et à tous les utilisateurs. Pour autoriser des exceptions, vous pouvez définir différentes périodes de validation pour des utilisateurs spécifiques dans la fenêtre **Paramètres utilisateur**. Ces périodes de validation sont prioritaires sur celles spécifiées dans la fenêtre **Paramètres comptabilité**. Pour plus d'informations, voir la section « Pour configurer des contraintes de temps utilisateur » dans [Gérer les utilisateurs et les autorisations](ui-how-users-permissions.md).
 
 ## <a name="see-also"></a>Voir aussi
-[Finances](finance.md)  
+[Finance](finance.md)  
 [Exécution des processus de clôture d'exercice](year-how-complete-period-end-processes.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 

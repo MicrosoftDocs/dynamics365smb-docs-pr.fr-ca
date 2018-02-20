@@ -13,21 +13,21 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
-ms.openlocfilehash: 32cbc23b24a8a04a62a246dd50eac8d8a721e2e7
+ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
+ms.openlocfilehash: 1e6db49370a1fc2d9a2bb99e55d00ed69908d703
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 01/30/2018
 
 ---
-# <a name="how-to-work-on-service-tasks"></a>Procédure : travailler sur des tâches service
+# <a name="work-on-service-tasks"></a>Travailler sur des tâches service
 Après avoir créé une commande ou un devis service, enregistré des lignes article de service et affecté des ressources aux articles de service de la commande ou du devis, vous pouvez commencer la réparation et l'entretien des articles de service.  
 
-[!INCLUDE[d365fin](includes/d365fin_md.md)] inclut une fenêtre **Tâches service** qui offre un aperçu de tous les articles de service nécessitant une attention particulière. Considérez-le comme votre tableau de bord de service où vous pouvez consulter les commandes en attente, rechercher et enregistrer les pièces de rechange et mettre votre inventaire à jour.  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] Inclut une fenêtre **Tâches service** qui offre un aperçu de tous les articles de service nécessitant une attention particulière. Considérez-le comme votre tableau de bord de service où vous pouvez consulter les commandes en attente, rechercher et enregistrer les pièces de rechange et mettre votre inventaire à jour.  
   
 Pour assurer le suivi des modifications et obtenir une vue graphique de vos activités de service, utilisez les outils de statistiques de [!INCLUDE[d365fin](includes/d365fin_md.md)] pour obtenir des diagrammes et analyses rapides générés automatiquement.  
   
 ## <a name="to-work-on-a-service-task"></a>Pour travailler sur une tâche service  
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), saisissez **Tâches service**, puis sélectionnez le lien connexe. 
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Tâches de service**, puis sélectionnez le lien associé. 
 2. Pour obtenir la liste des tâches service auxquelles une ressource ou un groupe de ressources est affecté, renseignez le champ **Filtre ressources** ou **Filtre groupe ressources** et appuyez sur Entrée.  
 3. Pour obtenir la liste des tâches service ayant certaines dates réponse sur une période de temps donnée, renseignez le champ **Filtre date réponse** et appuyez sur Entrée.  
 4. Pour obtenir la liste des tâches service ayant un certain état affectation ou réparation, renseignez le champ **Filtre état affectation** ou **Filtre code état réparation** et appuyez sur Entrée.  
@@ -41,7 +41,7 @@ Pour assurer le suivi des modifications et obtenir une vue graphique de vos acti
 ## <a name="to-register-service-operations"></a>Pour enregistrer des opérations de service  
 Lors de l'exécution d'un service sur une commande service, vous pouvez enregistrer les détails spécifiant les articles utilisés, les coûts exposés et le temps passé. Les données que vous spécifiez sont stockées dans la fenêtre **Feuille activité article de service**. Vous pouvez mettre à jour les données si nécessaire. 
    
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), saisissez **Commandes service**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Commandes de service**, puis sélectionnez le lien associé.  
 2. Ouvrez la commande service pour laquelle vous voulez enregistrer le service, puis choisissez la ligne article.  
 3. Choisissez **Actions**, sélectionnez **Ligne**, puis **Feuille activité article de service**.  
 4. Dans les lignes, spécifiez les articles utilisés, les coûts exposés et le temps passé au service.  
@@ -70,7 +70,7 @@ Lorsque vous travaillez sur des articles de service de commandes service, vous p
 ## <a name="to-replace-a-service-item-or-a-service-item-component"></a>Pour remplacer un article de service ou une composante article de service,  
 L'entretien d'un article de service constitué de plusieurs composantes peut nécessiter le remplacement d'une composante défectueuse. Chaque fois que vous saisissez une pièce de rechange pour un article de service constitué de plusieurs composantes, vous pouvez remplacer une composante ou en créer une nouvelle. Le nouvel article n'est enregistré comme composante de l'article de service qu'après report de cette ligne service ou de la commande service. 
     
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), saisissez **Tâches service**, puis sélectionnez le lien connexe. 
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Tâches de service**, puis sélectionnez le lien associé. 
 2. Choisissez la ligne comprenant l'article de service, puis sélectionnez l'action **Feuille activité article**.  
 3. Entrez une nouvelle ligne service.  
 4. Dans le champ **Type**, choisissez **Article**.  
@@ -96,7 +96,7 @@ Lorsque vous enregistrez une ligne article de service dans une commande ou un de
 ## <a name="to-register-faultresolution-codes"></a>Pour enregistrer des codes panne/solution  
 Après avoir réparé un article de service, vous pouvez enregistrer le code panne et le code solution de l'article en sélectionnant une combinaison à partir des relations codes panne/solution existantes. Les codes panne et solution s'affichent dans les champs correspondants de la fenêtre **Feuille activité article de service**. Vous pouvez également enregistrer les codes dans cette fenêtre.  
     
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), saisissez **Tâches service**, puis sélectionnez le lien connexe. 
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Tâches de service**, puis sélectionnez le lien associé. 
 2. Choisissez la ligne comprenant l'article de service approprié, puis sélectionnez l'action **Feuille activité article**.  
 3. Sur la page **Feuille activité article de service**, sélectionnez **Relations codes panne/solution**. La fenêtre **Relations codes panne/solution** s'ouvre.  
   
@@ -106,7 +106,7 @@ Après avoir réparé un article de service, vous pouvez enregistrer le code pan
 4. Renseignez la ligne complètement. Choisissez la combinaison de codes panne/solution, puis choisissez **OK** pour la copier sur l'article de service. Si une combinaison appropriée est introuvable, vous pouvez créer une combinaison dans la fenêtre.  
 
 ## <a name="see-also"></a>Voir aussi  
-[Procédure : configurer le rapport de pannes](service-how-setup-fault-reporting.md)
+[Configurer le rapport de panne](service-how-setup-fault-reporting.md)
 [État affectation et état réparation](service-allocation-status-and-repair-status.md)  
 [Validation de service](service-service-posting.md)  
 

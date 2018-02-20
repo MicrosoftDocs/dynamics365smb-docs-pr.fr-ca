@@ -1,6 +1,6 @@
 ---
 title: "Détails de conception : comparaison entre écritures traçabilité actives et historiques | Microsoft Docs"
-description: "Lorsque des parties d'une quantité de ligne document sont reportées, seule cette quantité en particulier est transférée vers les écritures du grand livre d'articles et ses numéros de suivi. Toutefois, vous voudrez accéder à toutes les informations de traçabilité pertinentes directement à partir de la ligne document actif. C'est-à-dire, non seulement vous voudrez visualiser les écritures relatives à la quantité restante, mais vous voudrez également des informations sur les unités reportées. Lorsque vous consultez ou modifiez la fenêtre **Lignes traçabilité**, le contenu collectif du tableau **Spécification traçabilité** (T336) et du tableau **Ecriture réservation** (T337) est présenté dans une version temporaire de T336. Ceci garantit que les données de suivi article historiques et actives sont accessibles en même temps."
+description: "Lorsque des parties d'une quantité de ligne document sont reportées, seule cette quantité en particulier est transférée vers les écritures du grand livre d'articles et ses numéros de suivi. Toutefois, vous voudrez accéder à toutes les informations de traçabilité pertinentes directement à partir de la ligne document actif. C'est-à-dire, non seulement vous voudrez visualiser les écritures relatives à la quantité restante, mais vous voudrez également des informations sur les unités reportées. Lorsque vous consultez ou modifiez la fenêtre **Item Tracking Lines**, le contenu collectif du tableau **Tracking Specification** (T336) et du tableau **Reservation Entry** (T337) est présenté dans une version temporaire de T336. Ceci garantit que les données de suivi article historiques et actives sont accessibles en même temps."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
 ms.openlocfilehash: 0b0d49b4f9b9e77b311628c2d88b4891b32f8276
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 # <a name="design-details-active-versus-historic-item-tracking-entries"></a>Détails de conception : comparaison entre écritures traçabilité actives et historiques
