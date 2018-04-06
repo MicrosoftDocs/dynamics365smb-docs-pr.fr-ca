@@ -1,0 +1,47 @@
+---
+title: "Aperçu des tâches permettant de gérer la comptabilité fournisseur| Microsoft Docs"
+description: "Décrit les tâches permettant de gérer les comptes fournisseur, par exemple, le paiement des créditeurs ou l'affectation de paiements sortants aux écritures pour fermer des factures ou des notes de crédit."
+services: project-madeira
+documentationcenter: 
+author: SorenGP
+ms.service: dynamics365-business-central
+ms.topic: article
+ms.devlang: na
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.search.keywords: vendor payment, creditor, debt, balance due, AP
+ms.date: 06/28/2017
+ms.author: sgroespe
+ms.translationtype: HT
+ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
+ms.openlocfilehash: 5482579cb453b119be1b6eb5c24d5adc9441ea8b
+ms.contentlocale: fr-ca
+ms.lasthandoff: 03/22/2018
+
+---
+# <a name="managing-payables"></a><span data-ttu-id="82415-103">Gestion des comptes fournisseur</span><span class="sxs-lookup"><span data-stu-id="82415-103">Managing Payables</span></span>
+<span data-ttu-id="82415-104">Une grande partie de la gestion des comptes fournisseurs consiste à payer vos fournisseurs, ou à rembourse vos employés pour leurs dépenses.</span><span class="sxs-lookup"><span data-stu-id="82415-104">A big part of managing accounts payable is paying your vendors, or reimbursing your employees for expenses.</span></span> <span data-ttu-id="82415-105">Vous pouvez utiliser les fonctions pour ajouter des lignes de paiement pour les factures achat échues dans la fenêtre **Feuille paiement** .</span><span class="sxs-lookup"><span data-stu-id="82415-105">You can use functions to add payments lines for purchase invoices that are due in the **Payment Journal** window.</span></span> <span data-ttu-id="82415-106">Pour envoyer des transactions à votre banque, vous pouvez exporter plusieurs lignes journal paiement vers un fichier, puis télécharger ce fichier vers votre banque.</span><span class="sxs-lookup"><span data-stu-id="82415-106">To send transactions to your bank, you can export multiple payment journal lines to a file, and then upload the file to your bank.</span></span> <span data-ttu-id="82415-107">Vous pouvez également effectuer des paiements par chèque, notamment pour transmettre des chèques en tant que paiements électroniques.</span><span class="sxs-lookup"><span data-stu-id="82415-107">You can also make payments by check, including transmitting checks as electronic payments.</span></span>
+
+<span data-ttu-id="82415-108">Une autre tâche courante consiste à affecter les paiements sortants à leurs écritures fournisseur ou employé correspondantes afin de fermer les factures achat, les notes de crédit achat ou les comptes employés comme payés.</span><span class="sxs-lookup"><span data-stu-id="82415-108">Another typical task is to apply outgoing payments to their related vendor or employee ledger entries in order to close purchase invoices, purchase credit memos, or employee accounts as paid.</span></span> <span data-ttu-id="82415-109">Vous pouvez effectuer cette tâche dans la fenêtre **Feuille rapprochement bancaire** en important un fichier de relevé bancaire pour enregistrer rapidement les paiements.</span><span class="sxs-lookup"><span data-stu-id="82415-109">You can do this in the **Payment Reconciliation Journal** window by importing a bank statement file to register the payments.</span></span> <span data-ttu-id="82415-110">Les paiements sont affectés aux écritures client, fournisseur ou employé ouvertes en faisant correspondre le texte de paiement et les informations d'écriture.</span><span class="sxs-lookup"><span data-stu-id="82415-110">The payments are applied to open vendor, customer, or employee ledger entries by matching payment text and entry information.</span></span> <span data-ttu-id="82415-111">Il existe plusieurs manières de vérifier et de modifier les correspondances avant de reporter le journal.</span><span class="sxs-lookup"><span data-stu-id="82415-111">There are various ways to review and change the matches before you post the journal.</span></span> <span data-ttu-id="82415-112">Vous pouvez choisir de fermer les écritures de compte bancaire ouvertes associées aux écritures affectées lorsque vous reportez le journal.</span><span class="sxs-lookup"><span data-stu-id="82415-112">You can choose to close any open bank account ledger entries related to the applied ledger entries when you post the journal.</span></span> <span data-ttu-id="82415-113">Le compte bancaire est automatiquement rapproché lorsque tous les paiements sont affectés.</span><span class="sxs-lookup"><span data-stu-id="82415-113">The bank account is automatically reconciled when all payments are applied.</span></span>
+
+<span data-ttu-id="82415-114">Sinon, vous pouvez affecter les paiements sortants manuellement dans la fenêtre **Journal paiement** ou à partir des écritures fournisseur ou employé associées.</span><span class="sxs-lookup"><span data-stu-id="82415-114">Alternatively, you can apply outgoing payments manually in the **Payment Journal** window or from the related vendor or employee ledger entries.</span></span>
+
+<span data-ttu-id="82415-115">Le tableau suivant décrit une série de tâches associées aux comptes fournisseur et inclut des liens vers les rubriques qui les décrivent.</span><span class="sxs-lookup"><span data-stu-id="82415-115">The following table describes a sequence of tasks within accounts payable, with links to the topics that describe them.</span></span>
+
+| <span data-ttu-id="82415-116">À</span><span class="sxs-lookup"><span data-stu-id="82415-116">To</span></span> | <span data-ttu-id="82415-117">Voir</span><span class="sxs-lookup"><span data-stu-id="82415-117">See</span></span> |
+| --- | --- |
+| <span data-ttu-id="82415-118">Générez les paiements fournisseurs ou les remboursements employés dus, préparez les paiements par chèque, et exportez les paiements vers un fichier bancaire lors du report.</span><span class="sxs-lookup"><span data-stu-id="82415-118">Generate due vendor payments or employee reimbursements, prepare check payments, and export payments to a bank file when posting.</span></span> |[<span data-ttu-id="82415-119">Effectuer des paiements</span><span class="sxs-lookup"><span data-stu-id="82415-119">Making Payments</span></span>](payables-make-payments.md) |
+| <span data-ttu-id="82415-120">Affecter les paiements fournisseur automatiquement aux factures achat impayées en important un fichier de relevé de compte bancaire.</span><span class="sxs-lookup"><span data-stu-id="82415-120">Apply vendor payments automatically to unpaid purchase invoices by importing a bank statement file.</span></span> |[<span data-ttu-id="82415-121">Lettrage automatique des paiements et rapprochement des comptes bancaires</span><span class="sxs-lookup"><span data-stu-id="82415-121">Applying Payments Automatically and Reconciling Bank Accounts</span></span>](receivables-apply-payments-auto-reconcile-bank-accounts.md) |
+| <span data-ttu-id="82415-122">Affecter les paiements fournisseur aux factures achat impayées manuellement.</span><span class="sxs-lookup"><span data-stu-id="82415-122">Apply vendor payments to unpaid purchase invoices manually.</span></span> |[<span data-ttu-id="82415-123">Rapprocher les paiements fournisseur manuellement</span><span class="sxs-lookup"><span data-stu-id="82415-123">Reconcile Vendor Payments Manually</span></span>](payables-how-apply-purchase-transactions-manually.md) |
+|<span data-ttu-id="82415-124">Pour que l'évaluation de l'inventaire soit correcte, affectez les coûts articles ajoutés, tels que le fret, la manutention, les assurances et le transport, que vous encourez lors de l'achat.</span><span class="sxs-lookup"><span data-stu-id="82415-124">Ensure correct inventory valuation by assigning added item costs, such as freight, physical handling, insurance, and transportation that you incur when purchasing.</span></span>|[<span data-ttu-id="82415-125">Utiliser Frais annexes pour comptabiliser les coûts commerciaux supplémentaires</span><span class="sxs-lookup"><span data-stu-id="82415-125">Use Item Charges to Account for Additional Trade Costs</span></span>](payables-how-assign-item-charges.md)|
+
+## <a name="see-also"></a><span data-ttu-id="82415-126">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="82415-126">See Also</span></span>
+[<span data-ttu-id="82415-127">Procédure d'achat</span><span class="sxs-lookup"><span data-stu-id="82415-127">Purchasing</span></span>](purchasing-manage-purchasing.md)  
+[<span data-ttu-id="82415-128">Gestion des comptes client</span><span class="sxs-lookup"><span data-stu-id="82415-128">Managing Receivables</span></span>](receivables-manage-receivables.md)  
+[<span data-ttu-id="82415-129">Utiliser Frais annexes pour comptabiliser les coûts commerciaux supplémentaires</span><span class="sxs-lookup"><span data-stu-id="82415-129">Use Item Charges to Account for Additional Trade Costs</span></span>](payables-how-assign-item-charges.md)  
+[<span data-ttu-id="82415-130">Fonctionnalités marché</span><span class="sxs-lookup"><span data-stu-id="82415-130">General Business Functionality</span></span>](ui-across-business-areas.md)  
+<span data-ttu-id="82415-131">[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="82415-131">[Working with [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span></span>
+
+## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
+## [!INCLUDE[d365fin](includes/training_link_md.md)]
+

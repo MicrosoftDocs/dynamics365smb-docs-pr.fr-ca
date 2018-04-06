@@ -1,0 +1,45 @@
+---
+title: "Génération de rapports sur les coûts et rapprochement avec le grand livre | Microsoft Docs"
+description: "À la fin de la période comptable (mensuelle, annuelle, etc.), une série de tâches de contrôle des coûts et d'audit doivent être effectuées pour déclarer une valeur d'inventaire correcte et équilibrée au département Finances. Outre les tâches habituelles de report qui transfèrent les écritures valeur de chaque article vers les comptes du grand livre appropriés, l'auditeur ou le contrôleur responsable de cette tâche critique a accès à plusieurs rapports et fonctions de suivi, ainsi qu'à un outil de rapprochement."
+services: project-madeira
+documentationcenter: 
+author: SorenGP
+ms.service: dynamics365-business-central
+ms.topic: article
+ms.devlang: na
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.search.keywords: 
+ms.date: 08/07/2017
+ms.author: sgroespe
+ms.translationtype: HT
+ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
+ms.openlocfilehash: e8072a9e21349f3a8e8f9d21f5b011bae72a69e0
+ms.contentlocale: fr-ca
+ms.lasthandoff: 03/22/2018
+
+---
+# <a name="reporting-costs-and-reconciling-with-the-general-ledger"></a><span data-ttu-id="78e87-104">Génération de rapports sur les coûts et rapprochement avec le grand livre</span><span class="sxs-lookup"><span data-stu-id="78e87-104">Reporting Costs and Reconciling with the General Ledger</span></span>
+<span data-ttu-id="78e87-105">À la fin de la période comptable (mensuelle, annuelle, etc.), une série de tâches de contrôle des coûts et d'audit doivent être effectuées pour déclarer une valeur d'inventaire correcte et équilibrée au département Finances.</span><span class="sxs-lookup"><span data-stu-id="78e87-105">At the end of accounting periods, monthly, yearly or other, a sequence of cost control and auditing tasks must be performed to report a correct and balanced inventory value to the finance department.</span></span> <span data-ttu-id="78e87-106">Outre les tâches habituelles de report qui transfèrent les écritures valeur de chaque article vers les comptes du grand livre appropriés, l'auditeur ou le contrôleur responsable de cette tâche critique a accès à plusieurs rapports et fonctions de suivi, ainsi qu'à un outil de rapprochement.</span><span class="sxs-lookup"><span data-stu-id="78e87-106">Apart from the posting routine that transfers the individual item value entries to dedicated general ledger accounts, several reports, tracing functions, and a special reconciliation tool are available to the auditor or controller responsible for this business-critical work.</span></span>  
+
+ <span data-ttu-id="78e87-107">Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.</span><span class="sxs-lookup"><span data-stu-id="78e87-107">The following table describes a sequence of tasks, with links to the topics that describe them.</span></span>   
+
+|<span data-ttu-id="78e87-108">**Pour**</span><span class="sxs-lookup"><span data-stu-id="78e87-108">**To**</span></span>|<span data-ttu-id="78e87-109">**Voir**</span><span class="sxs-lookup"><span data-stu-id="78e87-109">**See**</span></span>|  
+|------------|-------------|  
+|<span data-ttu-id="78e87-110">Affichez la valeur d'inventaire des articles sélectionnés, y compris les informations sur les quantités et les valeurs des augmentations et des diminutions sur une période donnée.</span><span class="sxs-lookup"><span data-stu-id="78e87-110">View the inventory value of selected items, including information about the quantities and values of increases and decreases in inventory over a selected period.</span></span>|<span data-ttu-id="78e87-111">Rapport **Évaluation de l'inventaire**</span><span class="sxs-lookup"><span data-stu-id="78e87-111">**Inventory Valuation** report</span></span>|  
+|<span data-ttu-id="78e87-112">Afficher la valeur inventaire des bons de production sélectionnés dans votre inventaire TEC, telle que les quantités et valeurs de consommation, l'utilisation des capacités et de production dans les bons de production en cours.</span><span class="sxs-lookup"><span data-stu-id="78e87-112">View the inventory value of selected production orders in your WIP (work in process) inventory, such as the quantities and values of consumption, capacity usage, and output in ongoing production orders.</span></span>|<span data-ttu-id="78e87-113">Rapport **Évaluation de l'inventaire - TEC**</span><span class="sxs-lookup"><span data-stu-id="78e87-113">**Inventory Valuation - WIP** report</span></span>|  
+|<span data-ttu-id="78e87-114">Afficher la valeur d'inventaire des articles sélectionnés, y compris leur coût réel et prévu à la date spécifiée.</span><span class="sxs-lookup"><span data-stu-id="78e87-114">View the inventory value of selected items, including their actual and expected cost on the date specified.</span></span>|<span data-ttu-id="78e87-115">Rapport **Évaluation de l'inventaire - Spécification coût**</span><span class="sxs-lookup"><span data-stu-id="78e87-115">**Invt. Valuation - Cost Spec.** report</span></span>|  
+|<span data-ttu-id="78e87-116">Utiliser un rapport pour analyser les raisons des évolutions de coûts ou pour obtenir un aperçu du coût des marchandises vendues (CMV).</span><span class="sxs-lookup"><span data-stu-id="78e87-116">Use a report to analyze the reasons for cost variances or to gain insight into the cost shares of sold items (COGS).</span></span>|<span data-ttu-id="78e87-117">Rapport **Analyse du partage des coûts**</span><span class="sxs-lookup"><span data-stu-id="78e87-117">**Cost Shares Breakdown** report</span></span>|  
+|<span data-ttu-id="78e87-118">Reporter périodiquement les écritures valeur des transactions article depuis le livre inventaire vers les comptes du grand livre associés pour rapprocher les deux livres.</span><span class="sxs-lookup"><span data-stu-id="78e87-118">Periodically post the value entries of item transactions from the inventory ledger to the related G/L accounts to reconcile the two ledgers.</span></span>|[<span data-ttu-id="78e87-119">Rapprocher les coûts de l'inventaire avec le grand livre</span><span class="sxs-lookup"><span data-stu-id="78e87-119">Reconcile Inventory Costs with the General Ledger</span></span>](finance-how-to-post-inventory-costs-to-the-general-ledger.md)|  
+|<span data-ttu-id="78e87-120">Utiliser une fenêtre pour vérifier le rapprochement entre le grand livre inventaire et le grand livre.</span><span class="sxs-lookup"><span data-stu-id="78e87-120">Use one window to audit the reconciliation between the inventory ledger and the general ledger.</span></span>|[<span data-ttu-id="78e87-121">Rapprocher les coûts de l'inventaire avec le grand livre</span><span class="sxs-lookup"><span data-stu-id="78e87-121">Reconcile Inventory Costs with the General Ledger</span></span>](finance-how-to-post-inventory-costs-to-the-general-ledger.md)|  
+|<span data-ttu-id="78e87-122">Déterminez le montant TEC devant être reporté dans les comptes de bilan pour la génération des rapports de fin d'exercice.</span><span class="sxs-lookup"><span data-stu-id="78e87-122">Determine the WIP amount that needs to be posted to balance sheet accounts for period-end reporting.</span></span>|[<span data-ttu-id="78e87-123">Surveiller la progression et les performances</span><span class="sxs-lookup"><span data-stu-id="78e87-123">Monitor Job Progress and Performance</span></span>](projects-how-monitor-progress-performance.md)|
+
+## <a name="see-also"></a><span data-ttu-id="78e87-124">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="78e87-124">See Also</span></span>  
+[<span data-ttu-id="78e87-125">Configuration de l'évaluation de l'inventaire et des coûts</span><span class="sxs-lookup"><span data-stu-id="78e87-125">Setting Up Inventory Valuation and Costing</span></span>](finance-set-up-inventory-valuation-and-costing.md)  
+[<span data-ttu-id="78e87-126">Gestion des coûts ajustés</span><span class="sxs-lookup"><span data-stu-id="78e87-126">Managing Inventory Costs</span></span>](finance-manage-inventory-costs.md)  
+[<span data-ttu-id="78e87-127">Finance</span><span class="sxs-lookup"><span data-stu-id="78e87-127">Finance</span></span>](finance.md)  
+<span data-ttu-id="78e87-128">[Stocks](inventory-manage-inventory.md) </span><span class="sxs-lookup"><span data-stu-id="78e87-128">[Inventory](inventory-manage-inventory.md) </span></span>  
+<span data-ttu-id="78e87-129">[Vente](sales-manage-sales.md) </span><span class="sxs-lookup"><span data-stu-id="78e87-129">[Sales](sales-manage-sales.md) </span></span>  
+[<span data-ttu-id="78e87-130">Procédure d'achat</span><span class="sxs-lookup"><span data-stu-id="78e87-130">Purchasing</span></span>](purchasing-manage-purchasing.md)  
+<span data-ttu-id="78e87-131">[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="78e87-131">[Working with [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span></span>
+
