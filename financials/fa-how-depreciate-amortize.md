@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: e9edb717c073a3b94d925ac0cc532824a848daf6
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="depreciate-or-amortize-fixed-assets"></a>Amortir des immobilisations
@@ -27,7 +27,7 @@ L'amortissement permet de ventiler le coût des immobilisations, telles que les 
 * Automatiquement, via l'exécution du traitement par lots **Calculer amortissement**.  
 * Manuellement, à l'aide du journal GL immobilisation.  
 
-[!INCLUDE[d365fin](includes/d365fin_md.md)]  peut calculer l'amortissement sur une base quotidienne, ce qui vous permet de calculer l'amortissement pour n'importe quelle période. Vous pouvez ainsi analyser les résultats d'exploitation en cours sur une période mensuelle, trimestrielle ou annuelle. Le calcul utilise une année standard de 360 jours et un mois standard de 30 jours. Pour en savoir plus, voir [Méthodes d'amortissement](fa-depreciation-methods.md).  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] peut calculer l'amortissement sur une base quotidienne, ce qui vous permet de calculer l'amortissement pour n'importe quelle période. Vous pouvez ainsi analyser les résultats d'exploitation en cours sur une période mensuelle, trimestrielle ou annuelle. Le calcul utilise une année standard de 360 jours et un mois standard de 30 jours. Pour en savoir plus, voir [Méthodes d'amortissement](fa-depreciation-methods.md).  
 
 Lorsque plusieurs départements utilisent une immobilisation, vous pouvez affecter automatiquement un amortissement périodique à ces départements d'après une table d'affectation paramétrable.  
 

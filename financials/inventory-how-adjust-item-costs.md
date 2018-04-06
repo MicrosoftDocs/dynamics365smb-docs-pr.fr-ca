@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: c2a6f5a214662dd5255d075a623b2039e5392e3d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="adjust-item-costs"></a>Ajuster coûts et prix article
@@ -63,7 +63,7 @@ En règle générale, la valeur du champ **Coût unitaire** sur la fiche article
  L'élément sélectionné dans le champ **Mode d'évaluation du stock** détermine la façon dont [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule le contenu du champ **Coût unitaire** sur les lignes.  
 
 ### <a name="costing-method-fifo-lifo-specific-or-average"></a>Modes d'évaluation du stock FIFO, LIFO, spécifique ou moyen  
- [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule la valeur du champ **Coût unitaire ($)** sur la ligne achat, ou la valeur du champ **Coût unitaire** sur la ligne journal article sur la base de cette formule :  
+ [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule la valeur du champ **Coût unitaire $** sur la ligne achat, ou la valeur du champ **Coût unitaire** sur la ligne journal article sur la base de la formule suivante :  
 
  Coût unitaire $ = (Coût unitaire direct - (Montant de l'escompte/Quantité)) x (1 + % du coût indirect/100) + Frais généraux  
 

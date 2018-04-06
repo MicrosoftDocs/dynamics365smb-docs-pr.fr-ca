@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: 92abfd0c4f044788d986f3bec094ac3a90363483
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="set-up-unrealized-sales-tax-and-sales-payment-discounts"></a>Configurer les escomptes de paiement de vente et la taxe de vente non réalisée

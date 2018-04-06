@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: 1e3314f38c205871c56fd0a8ecd330a609e2b6f8
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="create-deposits"></a>Créer des dépôts

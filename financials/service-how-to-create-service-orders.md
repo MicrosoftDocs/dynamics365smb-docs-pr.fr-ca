@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: 5460f50c4c556a74b518976d5d5fa90203f16967
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="create-service-orders"></a>Créer commande service
@@ -52,7 +52,7 @@ Vous pouvez créer automatiquement des commandes service pour l'entretien des ar
 ## <a name="to-convert-a-service-quote-to-a-service-order"></a>Pour convertir les devis service en commandes service
 Lorsqu'un client accepte un devis service, vous le convertissez en commande service. Le devis est effacé et une commande service avec la même description que le devis service est crée. La date et le délai de réponse de la commande service sont recalculés et est affecté à cette dernière le statut **Suspendu**. L'état réparation des articles de service de la commande est modifié en **Initial**.  
   
-[!INCLUDE[d365fin](includes/d365fin_md.md)] recherche les écritures affectation de tous les articles de service du devis service qui présentent l'état **Actif**. S'il en trouve, leur état d'affectation passe à **Réaffectation nécessaire**. Lorsque vous réaffectez les articles de service de la commande service, le statut des écritures affectation enregistrées pour le devis passe à **Terminé**.   
+[!INCLUDE[d365fin](includes/d365fin_md.md)] recherche les écritures affectation de tous les articles de service du devis service qui présentent le statut **Actif**. S'il en trouve, leur état d'affectation passe à **Réaffectation nécessaire**. Lorsque vous réaffectez les articles de service de la commande service, le statut des écritures affectation enregistrées pour le devis passe à **Terminé**.   
 
 1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Devis de contrat de service**, puis sélectionnez le lien associé.  
 2. Choisissez le devis service à convertir en commande service.  

@@ -13,10 +13,10 @@ ms.search.keywords: reimbursement
 ms.date: 08/03/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
-ms.openlocfilehash: 92c0bca970250b8f160ecfc15b086963c8693885
+ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
+ms.openlocfilehash: 66fcd6282f02d5789b12b79467ec177817422c5c
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="reverse-postings"></a>Inverser des reports
@@ -66,6 +66,15 @@ Vous pouvez inverser des écritures dans toutes les fenêtres **Écritures compt
 6.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Retours achat**, puis sélectionnez le lien associé.  
 7.  Ouvrez la commande retour concernée, puis sélectionnez l'action **Rouvrir**.  
 8.  Corrigez l'écriture dans le champ **Quantité** et reportez à nouveau le retour achat.  
+
+## <a name="to-post-a-negative-entry"></a>Pour reporter une écriture négative  
+Vous pouvez utiliser le champ **Correction** pour reporter un débit négatif au lieu d'un crédit, ou pour reporter un crédit négatif au lieu d'un débit sur un compte. Pour répondre aux exigences légales, ce champ est visible par défaut sur tous les journaux. Les champs **Montant débit** et **Montant crédit** comprennent l'écriture initiale et l'écriture corrigée. Ces champs n'ont aucune incidence sur le solde du compte.  
+
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Journaux généraux**, puis sélectionnez le lien associé  
+2.  Dans le champ **Nom de la feuille**, sélectionnez le nom de feuille requis.  
+3.  Entrez les informations dans les champs pertinents.  
+4.  Dans la ligne journal que vous souhaitez activer pour les écritures négatives, sélectionnez la case à cocher **Correction**.  
+5.  Pour reporter le journal, sélectionnez l'action **Reporter**, puis le bouton **Oui**.
 
 ## <a name="see-also"></a>Voir aussi
 [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)  

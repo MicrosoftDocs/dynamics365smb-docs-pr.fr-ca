@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: 6766559f314c6fd9031f9599f414dae0eff984f8
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="become-a-reseller-of-included365finlongincludesd365finlongmdmd"></a>Devenir revendeur [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)]
@@ -24,11 +24,11 @@ Développez vos opportunités commerciales avec [!INCLUDE[d365fin](includes/d365
 
 Si vous vous spécialisez dans les solutions Cloud, Office 365, SharePoint, les solutions du secteur, d'analyse, ERP, CRM, les logiciels de gestion et/ou les logiciels/services d'optimisation des processus entreprise, Finance and Operations, Business edition représente une nouvelle opportunité.   
 
-[!INCLUDE[d365fin](includes/d365fin_md.md)]  peut vous permettre de différencier et d'approfondir les relations client en vous donnant la capacité de fournir une solution de bout en bout de gestion d'entreprise qui connecte les utilisateurs et les processus comme jamais, intégrée dans les outils familiers Microsoft Office que les PME utilisent chaque jour.  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] peut vous permettre de différencier et d'approfondir les relations client en vous donnant la capacité de fournir une solution de bout en bout de gestion d'entreprise qui connecte les utilisateurs et les processus comme jamais, intégrée dans les outils familiers Microsoft Office que les PME utilisent chaque jour.  
 
 ## <a name="get-started"></a>Démarrer
-Inscrivez-vous à la version préliminaire de [!INCLUDE[d365fin](includes/d365fin_md.md)] sur [https://microsoft.com/dynamics365/financials](https://www.microsoft.com/en-us/dynamics365/financials).  
-Envoyez des commentaires sur [https://community.dynamics.com/business](https://community.dynamics.com/business/f/758).  
+Souscrivez à un abonnement d'aperçu [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'adresse [https://microsoft.com/dynamics365/financials](https://www.microsoft.com/en-us/dynamics365/financials)/  
+Envoyez des commentaires à l'adresse [https://community.dynamics.com/business](https://community.dynamics.com/business/f/758).  
 Si vous souhaitez en savoir plus pour devenir revendeur [!INCLUDE[d365fin](includes/d365fin_md.md)], contactez-nous sur [d365-smb@microsoft.com](mailto:d365-smb@microsoft.com).  
 
 ## <a name="see-also"></a>Voir aussi

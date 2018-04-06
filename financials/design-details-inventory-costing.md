@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, inventory, costing
-ms.date: 07/01/2017
+ms.date: 11/23/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
-ms.openlocfilehash: 4f14118e435051c6d63f95a05ebee2e7107ce054
+ms.sourcegitcommit: b34f276a764f0e828fbc1f015429df9852242a4c
+ms.openlocfilehash: 2ee8988a89e4bd01683a6945e66e08ab9608af2e
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="design-details-inventory-costing"></a>Détails de conception : stock évaluation stock
@@ -25,7 +25,9 @@ L'évaluation des coûts d'inventaire, ou gestion des coûts, se charge de l'enr
 ## <a name="in-this-section"></a>Dans cette section  
 [Détails de conception : modes évaluation stock](design-details-costing-methods.md)  
 [Détails de conception : lettrage article](design-details-item-application.md)  
+[Détails de conception : problème connu lié à l'affectation d'articles](design-details-inventory-zero-level-open-item-ledger-entries.md)  
 [Détails de conception : ajustement des coûts](design-details-cost-adjustment.md)  
+[Détails de conception : date de report de l'écriture valeur d'ajustement](design-details-inventory-adjustment-value-entry-posting-date.md)  
 [Détails de conception : validation du coût prévu](design-details-expected-cost-posting.md)  
 [Détails de conception : coût moyen](design-details-average-cost.md)  
 [Détails de conception : écart](design-details-variance.md)  

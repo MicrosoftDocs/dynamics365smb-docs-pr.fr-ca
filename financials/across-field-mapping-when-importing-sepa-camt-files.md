@@ -14,11 +14,11 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: 9f99b1fce3c44fdf2053a74b8fa090c6b69aef1a
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="field-mapping-when-importing-sepa-camt-files"></a>Mappage de champs lors de l'importation de fichiers SEPA CAMT
-[!INCLUDE[d365fin](includes/d365fin_md.md)]  prend en charge les normes régionales SEPA (Espace unique de paiement en euros) pour importer les relevés bancaires SEPA (format CAMT). Pour plus d'informations, voir [Configurer le service de conversion de données bancaires](bank-how-setup-bank-data-conversion-service.md).  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] prend en charge les normes régionales SEPA (Espace unique de paiement en euros) pour importer les relevés bancaires SEPA (format CAMT). Pour plus d'informations, voir [Configurer le service de conversion de données bancaires](bank-how-setup-bank-data-conversion-service.md).  
 
  La norme SEPA CAMT standard présente elle-même des variations locales. Par conséquent, vous pouvez être amené à modifier la définition d'échange de données générique (représentée par le code **SEPA CAMT** dans la fenêtre **Définitions échange report**) pour l'adapter à une variation locale de la norme. Les tables suivantes indiquent la correspondance entre élément et champ pour les tables 81, 273 et 274 dans l'implémentation de SEPA CAMT dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 

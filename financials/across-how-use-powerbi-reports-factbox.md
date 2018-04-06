@@ -16,11 +16,11 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: 9b4190ca0ffbc0a922c6679fcf98367a72980eea
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="viewing-list-data-in-power-bi-reports-in-finance-and-operations-business-edition"></a>Affichage des données de liste dans les rapports Power BI dans Finance and Operations, Business edition 
-[!INCLUDE[d365fin](includes/d365fin_md.md)]  inclut un élément de contrôle Récapitulatif sur un certain nombre de pages Liste des clés fournissant des informations supplémentaires sur les données de la liste. Lorsque vous vous déplacez entre les lignes de la liste, le rapport est mis à jour et filtré pour l'écriture sélectionnée. Vous pouvez créer des états personnalisés pour qu'ils s'affichent dans ce contrôle, mais il y a certaines règles à suivre lors de la création des états pour s'assurer qu'ils adoptent le comportement souhaité.  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] inclut un élément de contrôle Récapitulatif sur un certain nombre de pages Liste des clés fournissant des informations supplémentaires sur les données de la liste. Lorsque vous vous déplacez entre les lignes de la liste, le rapport est mis à jour et filtré pour l'écriture sélectionnée. Vous pouvez créer des états personnalisés pour qu'ils s'affichent dans ce contrôle, mais il y a certaines règles à suivre lors de la création des états pour s'assurer qu'ils adoptent le comportement souhaité.  
 
 > [!NOTE]  
 >   Vous devez disposer d'un compte valide avec [!INCLUDE[d365fin](includes/d365fin_md.md)] et avec Power BI. En outre, vous devez télécharger [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/). Pour plus d'informations, voir [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] comme source de données Power BI](across-how-use-financials-data-source-powerbi.md).  

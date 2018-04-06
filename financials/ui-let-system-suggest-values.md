@@ -13,11 +13,11 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: e9134b3d5fc62fb510b27db5fcbaa71e54b2b97a
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="letting-included365finincludesd365finmdmd-suggest-values"></a>Laisser [!INCLUDE[d365fin](includes/d365fin_md.md)] suggérer des valeurs
-[!INCLUDE[d365fin](includes/d365fin_md.md)]  peut vous aider à effectuer ces tâches plus rapidement et précisément en préremplissant les champs ou en complétant les lignes avec des données que vous devriez sinon calculer et saisir vous-même. Bien qu'une telle saisie de données automatisée soit toujours correcte, vous pouvez la modifier par la suite si vous le souhaitez.
+[!INCLUDE[d365fin](includes/d365fin_md.md)] peut vous aider à effectuer ces tâches plus rapidement et précisément en préremplissant les champs ou en complétant les lignes avec des données que vous devriez sinon calculer et saisir vous-même. Bien qu'une telle saisie de données automatisée soit toujours correcte, vous pouvez la modifier par la suite si vous le souhaitez.
 
 La fonctionnalité qui saisit les valeurs de champ pour vous est en général proposée pour les tâches qui demandent la saisie de volumes importants de données transactionnelles et pour lesquelles vous souhaitez éviter les erreurs et gagner du temps. Cette rubrique contient une sélection de ces fonctionnalités. Davantage de sections seront ajoutées dans les prochaines mises à jour de [!INCLUDE[d365fin](includes/d365fin_md.md)].
 

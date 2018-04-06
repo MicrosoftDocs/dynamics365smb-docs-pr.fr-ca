@@ -11,10 +11,10 @@ ms.search.keywords: special price, alternate price, pricing
 ms.date: 09/08/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
-ms.openlocfilehash: bfb0a5b68768c3fe5e0fcf2874752b55bd96708e
+ms.sourcegitcommit: e6e662ee13db1f9002e1c3e74a0d15e2aa2e2a98
+ms.openlocfilehash: a130d946a7efa1d49584d4756fe6cd622c409827
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="record-special-sales-prices-and-discounts"></a>Enregistrer les prix de vente spéciaux et les escomptes
@@ -32,6 +32,9 @@ En ce qui concerne les remises, vous pouvez définir et utiliser deux types de r
 | **Remise facture** |Un escompte sous forme de pourcentage qui est soustrait du total du document si la valeur de toutes les lignes d'un document vente dépasse un montant minimal donné. |
 
 Dans la mesure où les prix de vente et les escomptes ligne vente sont basés sur une combinaison article/client, vous pouvez également mettre en œuvre cette configuration à partir de la fiche article de l'article auquel les règles et valeurs s'appliquent.
+
+> [!NOTE]  
+> Si vous ne souhaitez qu'un article soit vendu à un prix réduit, il suffit de laisser les champs d'escompte de la fiche article vides, et de ne pas inclure l'article dans une quelconque configuration d'escompte ligne.
 
 ## <a name="to-set-up-a-sales-price-for-a-customer"></a>Pour définir un prix de vente pour un client
 1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Clients**, puis sélectionnez le lien connexe.
@@ -54,10 +57,10 @@ Une fois que vous avez décidé des clients pouvant faire l'objet d'escomptes fa
 2. Ouvrez la fiche client d'un client pouvant faire l'objet de remises facture.
 3. Dans le champ **Code remise facture**, sélectionnez un code pour les conditions de remise facture appropriées à utiliser pour calculer les remises facture pour le client.
 
-    > [!NOTE]  
+> [!NOTE]  
 >   Les codes escompte facture sont représentés par les fiches client existantes. Cela vous permet d'affecter rapidement les conditions d'escompte facture aux clients en sélectionnant le nom d'autres clients qui bénéficient des mêmes conditions.
 
-    Configurez de nouvelles conditions d'escompte facture pour les ventes.
+    Proceed to set up new the sales invoice discount terms.
 4. Dans la fenêtre **Fiche client**, sélectionnez l'action **Remises facture**. La fenêtre **Remises facture client** s'ouvre.
 5. Dans le champ **Code devise**, indiquez le code d'une devise à laquelle s'appliquent les conditions de remise facture. Laissez le champ vierge si vous souhaitez configurer des conditions d'escompte facture en USD.
 6. Dans le champ **Montant minimum**, entrez le montant minimal qu'une facture doit présenter pour faire l'objet de la remise.
@@ -95,14 +98,14 @@ Le meilleur prix est le prix le plus bas autorisé associé à l'escompte ligne 
 > [!NOTE]  
 >   Voici une description du calcul du meilleur prix pour la vente. Le calcul est le même pour les achats.
 
-1. [!INCLUDE[d365fin](includes/d365fin_md.md)]  vérifie la combinaison client facturé et article, et calcule le prix unitaire applicable et le pourcentage remise de ligne à l'aide des critères suivants :
+1. [!INCLUDE[d365fin](includes/d365fin_md.md)] vérifie la combinaison client facturé et article, et calcule le prix unitaire applicable et le pourcentage remise de ligne à l'aide des critères suivants :
 
     - Ce client a-t-il une entente pour des prix ou des escomptes ou appartient-il à un groupe bénéficiant d'un telle entente?
     - L'article ou le groupe escompte article sur la ligne est-il inclus dans l'une ou l'autre de ces ententes prix/escompte?
     - La date de commande (ou la date de report pour la facture et la note de crédit) est-elle comprise entre les dates début et de fin de l'entente prix/escompte?
     - Un code unité de mesure est-il spécifié? Si c'est le cas, [!INCLUDE[d365fin](includes/d365fin_md.md)] recherche des prix/remises possédant le même code unité, et des prix/remises sans code unité.
 
-2. [!INCLUDE[d365fin](includes/d365fin_md.md)]  vérifie si des accords prix/remise s'appliquent à des informations sur le document ou la ligne feuille, puis insère le prix unitaire applicable et le pourcentage remise de ligne, à l'aide des critères suivants :
+2. [!INCLUDE[d365fin](includes/d365fin_md.md)] vérifie si des accords prix/remise s'appliquent à des informations sur le document ou la ligne feuille, puis insère le prix unitaire applicable et le pourcentage remise de ligne, à l'aide des critères suivants :
 
     - Existe-t-il une quantité minimum à respecter dans l'entente de prix/escompte?
     - Existe-t-il une exigence en matière de devise à respecter dans l'entente de prix/escompte? Si c'est le cas, le prix le plus bas et l'escompte ligne le plus élevé pour cette devise sont insérés, même si la devise locale permettrait d'offrir un meilleur prix. S'il n'existe aucune entente de prix/escompte pour le code devise indiqué, [!INCLUDE[d365fin](includes/d365fin_md.md)] insère le prix le plus bas et l'escompte de ligne le plus élevé dans votre devise locale.

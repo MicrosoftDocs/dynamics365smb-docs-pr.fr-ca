@@ -13,10 +13,10 @@ ms.search.keywords: task, process, report
 ms.date: 07/06/2017
 ms.author: jswymer
 ms.translationtype: HT
-ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
-ms.openlocfilehash: c1accaa517efa3fb9958316d2586b06fa8cadb80
+ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
+ms.openlocfilehash: f29ae6b0a87f24a5201dd05b1d631adcc69b116d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="working-with-reports"></a>Utilisation des rapports
@@ -51,7 +51,7 @@ Utilisez la barre de menus pour :
 Vous pouvez enregistrer un rapport dans un document PDF, un document Microsoft Word ou un document Microsoft Excel en sélectionnant **Envoyer à**, puis en effectuant votre sélection.
 
 ## <a name="ScheduleReport"></a> Programmation d'un rapport à exécuter
-Vous pouvez programmer un rapport à exécuter à une date et une heure spécifiques. Les rapports prévus sont entrés dans la file d'attente projets et traités au moment prévu, comme les autres projets. Vous pouvez choisir de sauvegarder le rapport traité dans un fichier, par exemple, Excel, Word ou PDF, de l'imprimer sur une imprimante sélectionnée ou de traiter le rapport uniquement. Si vous choisissez d'enregistrer l'état dans un fichier, alors l'état traité est envoyé à la **Boîte de réception état** de votre page d'accueil, dans laquelle vous pouvez l'afficher.
+Vous pouvez programmer un rapport à exécuter à une date et une heure spécifiques. Les rapports prévus sont entrés dans la file d'attente projets et traités au moment prévu, comme les autres projets. Vous pouvez choisir de sauvegarder le rapport traité dans un fichier, par exemple, Excel, Word ou PDF, de l'imprimer sur une imprimante sélectionnée ou de traiter le rapport uniquement. Si vous choisissez d'enregistrer le rapport dans un fichier, le rapport traité est envoyé à la zone **Boîte de réception rapport** sur votre tableau de bord, où vous pouvez l'afficher.
 
 Vous pouvez programmer un rapport lorsque vous l'ouvrez. Vous devez sélectionner **Planifier** et entrer des informations telles que l'imprimante, ainsi que la date et l'heure. Le rapport est alors ajouté à la file d'attente des travaux et sera exécuté au moment spécifié. Lorsque le rapport a été traité, l'article est supprimé de la file d'attente projets. Si vous avez enregistré l'état traité dans un fichier, il est disponible dans la **Boîte de réception état**.
 

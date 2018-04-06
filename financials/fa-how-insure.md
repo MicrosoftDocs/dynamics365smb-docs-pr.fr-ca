@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: d5f3ef437e19ec037dc8f81aac6a8d283fc251a5
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="insure-fixed-assets"></a>Assurer les immobilisations
@@ -70,7 +70,7 @@ Vous pouvez utiliser le traitement par lots **Réévaluer assurance** pour mettr
 5. Ouvrez le journal assurance pertinent, examinez les valeurs créées, puis reportez-les sur les écritures couverture d'assurance.  
 
 ## <a name="to-monitor-insurance-coverage"></a>Pour surveiller la couverture assurance
-[!INCLUDE[d365fin](includes/d365fin_md.md)]  fournit des rapports dédiés et des fenêtres de statistiques à utiliser pour analyser les polices d'assurance et si vos immobilisations sont sur- ou sous-assurées.  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] fournit des rapports dédiés et des fenêtres de statistiques à utiliser pour analyser les polices d'assurance et si vos immobilisations sont sur- ou sous-assurées.  
 
 ### <a name="overview-of-insurance-policies"></a>Aperçu des polices d'assurance
 Pour obtenir un aperçu de vos polices d'assurance, afficher un aperçu ou imprimer l'état **Assurances - Liste**. Le rapport indique toutes les polices et les champs les plus importants des fiches assurance.  

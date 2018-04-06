@@ -9,13 +9,13 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/02/2017
+ms.date: 02/23/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
-ms.openlocfilehash: 2aac957fc253f6c7d2f621ea2e5e039733081a19
+ms.sourcegitcommit: e6e662ee13db1f9002e1c3e74a0d15e2aa2e2a98
+ms.openlocfilehash: b567b57755df5d887bc20ca8cebfb6d3d4383c37
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="working-with-general-journals"></a>Utilisation de feuilles comptabilité
@@ -41,8 +41,55 @@ Si vous avez configuré des comptes de contrepartie par défaut pour les lots jo
 > [!NOTE]  
 >   La TVA est calculée séparément pour le compte principal et le compte de contrepartie, afin qu'ils puissent utiliser des taux de pourcentage de TVA différents.
 
-## <a name="working-with-recurring-journals"></a>Utilisation de feuilles abonnement
-Un journal récurrent est un journal général contenant des champs spécifiques pour la gestion des transactions que vous reportez fréquemment avec peu ou pas de modifications. Utilisez ces champs dans le cadre des transactions récurrentes pour reporter les montants fixes et variables. Vous pouvez également définir des inversions automatiques d'écritures pour le lendemain de la date de report et utiliser les affectations statiques avec les écritures récurrentes.
+## <a name="working-with-recurring-journals"></a>Utilisation de journaux récurrents
+Un journal récurrent est un journal général contenant des champs spécifiques pour la gestion des transactions que vous reportez fréquemment avec peu ou pas de modifications comme le loyer, les abonnements, l'électricité et le chauffage. Utilisez ces champs dans le cadre des transactions récurrentes pour reporter les montants fixes et variables. Vous pouvez également définir des écritures inversion automatiques le lendemain de la date de report. Vous pouvez également utiliser des clés d'affectation pour répartir les écritures récurrentes entre plusieurs comptes. Pour plus d'informations, reportez-vous à la section « Affectation de montants journal récurrent à plusieurs comptes ».
+
+Avec un journal récurrent, les écritures qui sont régulièrement reportées ne sont saisies qu'une fois. Les comptes, dimensions, valeurs de dimension, etc., que vous saisissez restent ainsi dans le journal après report. Si des ajustements sont nécessaires, vous pouvez les faire à chaque report.
+
+### <a name="recurring-method-field"></a>Champ Mode récurrent
+Ce champ détermine la manière dont le montant de la ligne journal est traité après report. Par exemple, si vous utilisez le même montant chaque fois que vous reportez la ligne, vous pouvez conserver ce montant. Si vous utilisez les mêmes comptes et le même texte pour la ligne mais que le montant varie chaque fois que vous reportez, vous pouvez choisir de supprimer le montant après report.
+
+| À | Voir |
+| --- | --- |
+|Statique|Le montant de la ligne journal est conservé après report.|
+|Variable|Le montant de la ligne journal est supprimé après report.|
+|Solde|Le montant reporté sur le compte de la ligne sera affecté sur les comptes spécifiés pour la ligne de la table Imputation journal général. Le solde du compte est donc positionné à zéro. Pensez à renseigner le champ **% affectation** dans la fenêtre **Affectations**. Pour plus d'informations, reportez-vous à la section « Affectation de montants journal récurrent à plusieurs comptes ».|
+|Inversion fixe|Le montant de la ligne journal est conservé après report, et une écriture contrepartie est reportée le lendemain.|
+|Inversion variable|Le montant de la ligne journal est supprimé après report, et une écriture contrepartie est reportée le lendemain.|
+|Inversion solde|Le montant reporté sur le compte de la ligne sera affecté sur les comptes spécifiés pour la ligne de la fenêtre **Affectations**. Le solde du compte est défini sur zéro, et une écriture contrepartie est reportée le lendemain.|
+
+> [!NOTE]  
+>  Les champs TVA peuvent être renseignés sur la ligne journal récurrent ou sur la ligne journal affectation, mais pas sur les deux. Ils peuvent être renseignés dans la fenêtre **Affectations** uniquement si les lignes correspondantes du journal récurrent ne sont pas renseignées.
+
+### <a name="recurring-frequency-field"></a>Champ Périodicité récurrente
+Ce champ détermine la fréquence de report de l'écriture de la ligne journal. Il s'agit d'un champ de formule de date qui doit être renseigné pour les lignes journal récurrent. Pour plus d'informations reportez-vous à la section « Utilisation de formules date » dans [Saisie de données](ui-enter-data.md).
+
+#### <a name="examples"></a>Exemples
+Si la ligne journal doit être reportée tous les mois, saisissez « 1M ». Après chaque report, la date du champ **Date de report** est mise à jour, elle est remplacée par la même date du mois suivant.
+
+Si vous souhaitez reporter une écriture le dernier jour de chaque mois, vous pouvez suivre l'un des deux exemples ci-dessous :
+
+- Reportez la première écriture le dernier jour d'un mois en saisissant la formule 1J+1M-1J (1 jour + 1 mois - 1 jour). Avec cette formule, la date de report est calculée correctement, quel que soit le nombre de jours que comprend le mois.
+
+- Reportez la première écriture n'importe quel jour en saisissant la formule : 1M+CM. Avec cette formule, la date de report sera située après un mois entier + le nombre de jours restants du mois en cours.
+
+### <a name="expiration-date-field"></a>Champ Date expiration
+Ce champ détermine la date à laquelle la ligne est reportée pour la dernière fois. La ligne n'est plus reportée après cette date.
+
+L'avantage d'utiliser ce champ réside dans le fait que la ligne n'est pas immédiatement supprimée du journal et que vous pouvez toujours remplacer la date d'expiration par une date ultérieure afin de pouvoir continuer à utiliser la ligne.
+
+Si le champ est blanc, la ligne est reportée à chaque report, jusqu'à ce qu'elle soit supprimée du journal.
+
+### <a name="allocating-recurring-journal-amounts-to-several-accounts"></a>Affectation de montants journal récurrent à plusieurs comptes
+Dans la fenêtre **Journal général récurrent**, vous pouvez choisir l'action **Affectations** pour visualiser ou gérer la manière dont les montants de la ligne journal récurrent sont affectés à plusieurs comptes et dimensions. Notez qu'une affectation fonctionne comme une ligne compte de contrepartie pour la ligne journal récurrent.
+
+Tout comme dans un journal récurrent, vous n'avez à saisir qu'une fois une affectation. L'affectation reste dans le journal affectation après report, ainsi vous n'avez pas à saisir les montants et les affectations chaque fois que vous reportez la ligne journal récurrent.
+
+Si le mode récurrent du journal récurrent est défini sur **Solde** ou sur **Solde inverse**, tous les codes valeur de dimension du journal récurrent sont ignorés lorsque le compte est défini sur zéro. Par conséquent, si vous affectez une ligne récurrente à diverses valeurs de dimension dans la fenêtre **Affectations**, une seule écriture de contrepassation est créée. De ce fait, si vous affectez une ligne journal récurrent qui comporte un code valeur de dimension, vous ne devez pas saisir le même code dans la fenêtre **Affectations**. Si vous le faites, les valeurs de dimension sont incorrectes.
+
+####<a name="example-allocating-rent-payments-to-different-departments"></a>Exemple : Ventilation des paiements du loyer entre plusieurs départements
+Vous payez un loyer tous les mois, vous avez saisi le montant du loyer sur le compte caisse d'une ligne journal récurrent. Dans la fenêtre **Affectations**, vous pouvez diviser les dépenses entre plusieurs départements (dimension Département) selon le nombre de mètres carrés occupé par chacun d'eux. Le calcul est basé sur le pourcentage d'affectation de chaque ligne. Vous pouvez saisir divers comptes sur différentes lignes affectation (si le loyer est aussi divisé entre plusieurs comptes) ou saisir le même compte, mais avec divers codes valeur de dimension pour la dimension Département sur chaque ligne.
+
 
 ## <a name="working-with-standard-journals"></a>Utilisation de feuilles standard
 Lorsque vous créez des lignes journal dont vous savez que vous risquez de les recréer ultérieurement, vous pouvez les enregistrer en tant que journal standard avant de reporter le journal. Cette fonctionnalité s'applique aux journaux article et aux journaux généraux.

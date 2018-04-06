@@ -14,7 +14,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: b15c44ae471e7398985517a9cf596b15ff5efcc2
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="manage-customer-credit-information"></a>Gérer les renseignements sur le crédit client

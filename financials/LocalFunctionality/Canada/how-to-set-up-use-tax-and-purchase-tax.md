@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: b8096c4447a782fdd73137aa7f8383535d2e01d3
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="set-up-use-tax-and-purchase-tax"></a>Configurer la taxe de service et la taxe d'achat

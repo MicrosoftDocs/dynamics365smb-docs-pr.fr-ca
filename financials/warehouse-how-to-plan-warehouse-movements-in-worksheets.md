@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: 397b7d3de0355ce6be1be6607e5cfc7f61b5f55d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="plan-warehouse-movements-in-worksheets"></a>Planifier des mouvements entrepôt dans la feuille
@@ -28,7 +28,7 @@ Au fur et à mesure que l'entrepôt livre des articles aux clients, les zones le
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille mouvement**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Calculer réappro. zone**.  
 
-    [!INCLUDE[d365fin](includes/d365fin_md.md)]  crée des lignes indiquant précisément le mode de déplacement des articles des zones les moins bien classées vers les zones les mieux classées.  
+    [!INCLUDE[d365fin](includes/d365fin_md.md)] crée des lignes indiquant précisément le mode de déplacement des articles des zones les moins bien classées vers les zones les mieux classées.  
 
     > [!NOTE]  
     >  Un mouvement est proposé selon FEFO lorsque vous activez la fonction **Créer mouvement** si les conditions suivantes sont réunies pour un article :  

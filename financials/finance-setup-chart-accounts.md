@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: 1d0130dde256706460e58e5efc445bc5f4d5c595
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="setting-up-or-changing-the-chart-of-accounts"></a>Configuration ou modification du plan comptable
@@ -33,7 +33,7 @@ Cependant, vous pouvez modifier les comptes par défaut, et vous pouvez ajouter 
 * Le champ **Autoriser suppr. cpte gén. av.** doit être défini dans la fenêtre **Paramètres comptabilité**, et le compte ne doit pas comporter d'écritures comptables à cette date ou après celle-ci.  
 * Si le champ **Vérifier activité cpte général** de la fenêtre **Paramètres comptabilité** est sélectionné, le compte ne doit pas être utilisé dans les groupes comptabilisation ni dans une configuration de la validation.  
 
-[!INCLUDE[d365fin](includes/d365fin_md.md)]  vous empêchera de supprimer un compte général qui stocke les données nécessaires au plan comptable.  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] vous empêchera de supprimer un compte général qui stocke les données nécessaires au plan comptable.  
 
 ## <a name="see-also"></a>Voir aussi
 [Les écritures comptables et le plan comptable](finance-general-ledger.md)  

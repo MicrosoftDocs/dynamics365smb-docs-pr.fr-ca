@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2c13559bb3dc44cdb61697f5135c5b931e34d2a8
 ms.openlocfilehash: 444f7627daa122cb40cb68314d63f4560b548a17
 ms.contentlocale: fr-ca
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="reporting-sales-tax-and-goodsservices-tax-in-canada"></a>Déclaration de la taxe de vente et taxe sur les biens/services au Canada

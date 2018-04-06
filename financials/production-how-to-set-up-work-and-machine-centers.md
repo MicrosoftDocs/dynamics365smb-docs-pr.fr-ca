@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
 ms.openlocfilehash: 45477104c003d60786961f4329c1543a96be5b0c
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="set-up-work-centers-and-machine-centers"></a>Configurer des ateliers et des unités de production
@@ -83,7 +83,7 @@ Lorsque les capacités des ateliers n'ajoutent en rien à la capacité totale, v
 ## <a name="to-set-up-a-capacity-constrained-machine-or-work-center"></a>Pour configurer un atelier ou une unité de production à contrainte de capacité
 Vous devez configurer les ressources de production que vous considérez comme critique et de l'accepter comme une charge limitée au lieu de la charge illimitée par défaut que d'autres ressources de production acceptent. Une ressource à contrainte de capacité peut être un atelier ou une unité de production que vous avez identifié comme étant un goulot d'étranglement et pour lequel vous souhaitez établir une charge limitée.
 
-[!INCLUDE[d365fin](includes/d365fin_md.md)]  ne prend pas en charge le contrôle détaillé d'atelier. Il prévoit une utilisation faisable des ressources via un calendrier approximatif, mais il ne crée pas et ne met pas à jour automatiquement des calendriers détaillés sur la base de priorités ou de règles d'optimisation.
+[!INCLUDE[d365fin](includes/d365fin_md.md)] ne prend pas en charge le contrôle détaillé d'atelier. Il prévoit une utilisation faisable des ressources via un calendrier approximatif, mais il ne crée pas et ne met pas à jour automatiquement des calendriers détaillés sur la base de priorités ou de règles d'optimisation.
 
 Dans la fenêtre **Ressources contraintes de capacité**, vous pouvez effectuer des configurations qui évitent la surcharge de ressources spécifiques et permettent de s'assurer qu'aucune capacité n'est laissée non affectée si elle peut augmenter le délai d'exécution d'un bon de production. Dans le champ **Seuil (% capacité totale)**, vous pouvez ajouter un seuil aux ressources afin de réduire la répartition des opérations. Cela permet au système de programmer une charge sur le dernier jour possible en dépassant légèrement le pourcentage de charge critique si ceci peut réduire le nombre d'opérations qui sont divisées.
 

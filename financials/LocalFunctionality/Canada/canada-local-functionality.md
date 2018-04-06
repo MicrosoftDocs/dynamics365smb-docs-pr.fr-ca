@@ -11,10 +11,10 @@ ms.search.keywords:
 ms.date: 08/11/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
-ms.openlocfilehash: 4d37c824b7f8319934c5b7653a03b4c218f51233
+ms.sourcegitcommit: b34f276a764f0e828fbc1f015429df9852242a4c
+ms.openlocfilehash: cbe943c9dc9016dcab499222c7d2ecbbf9699c87
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="canada-local-functionality"></a>Fonctionnalités locales Canada

@@ -9,13 +9,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: bill, sale, invoice, order
-ms.date: 10/11/2017
+ms.date: 03/12/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
-ms.openlocfilehash: 9c48b1258a5000f3ef994a02fe98387de50c8ac1
+ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
+ms.openlocfilehash: 4f180f280415584d7bb216ee5be997f266d38ab2
 ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 # <a name="invoice-sales"></a>Facturer des ventes
@@ -34,6 +34,10 @@ Si le client décide d'acheter, vous reportez la facture vente pour créer les �
 
 Dans les environnements d'entreprise où le client doit payer avant la livraison des produits vendus (par exemple la vente au détail), vous devez attendre la réception du paiement avant de fournir les produits. Dans la plupart des cas, vous traitez les paiements entrants plusieurs semaines après la livraison en affectant les paiements à leurs factures vente reportées et impayées associées. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
 
+Dans les environnements commerciaux où le client paie immédiatement, par exemple en liquide, sur PayPal, ou par carte de crédit, vous pouvez sélectionner la méthode appropriée dans le champ **Code mode de règlement** de la facture vente. Le paiement est ensuite enregistré immédiatement sur la facture reportée. Pour les services de paiement, vous devez également renseigner le champ **Service de paiement**. Pour plus d'informations, voir [Activer les paiements client via les services de paiement](sales-how-enable-payment-service-extensions.md).
+
+Vous pouvez même créer les factures payées directement pour les clients non enregistrés en configurant une fiche « client en espèces », vers lequel vous pointez sur la facture vente. Pour plus d'informations, reportez-vous à [Configurer des clients effectuant un achat au comptoir](finance-how-to-set-up-cash-customers.md).  
+
 Vous pouvez facilement corriger ou annuler une facture vente reportée avant qu'elle ne soit payée. Cela est utile, par exemple, si vous souhaitez corriger une erreur de saisie, ou si le client demande une modification tôt dans le processus de commande. Pour plus d'informations, voir [Corriger ou annuler des factures vente impayées](sales-how-correct-cancel-sales-invoice.md). Si la facture vente reportée est payée, vous devez créer une note de crédit vente pour inverser la vente. Pour plus d'informations, reportez-vous à [Traiter les retours ou annulations de ventes](sales-how-process-sales-returns-cancellations.md).
 
 Les articles peuvent être des articles en inventaire et des services, représentés par les types **Inventaire** et **Service** sur la fiche article. Le processus de facture vente est identique pour les deux types d'article. Pour plus d'informations, voir [Enregistrer de nouveaux articles](inventory-how-register-new-items.md).
@@ -41,7 +45,7 @@ Les articles peuvent être des articles en inventaire et des services, représen
 Vous pouvez remplir les champs relatifs au client sur la facture vente de deux façons selon que le client est déjà enregistré ou non. Reportez-vous aux étapes 2 et 3 de la procédure ci-dessous.
 
 ## <a name="to-create-a-sales-invoice"></a>Pour créer une facture vente :
-1. Sur la page d'accueil, sélectionnez l'action **Facture vente**.  
+1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Factures vente**, puis sélectionnez le lien connexe.  
 2. Dans le champ **Client**, entrez le nom d'un client existant.
 
    D'autres champs de la fenêtre **Facture vente** contiennent des informations standard sur le client sélectionné. Si le client n'est pas enregistré, procédez comme suit :
@@ -60,8 +64,8 @@ Si vous avez défini des lignes vente récurrentes pour le client, tel qu'un ord
 9. Sous le raccourci **Lignes**, dans le champ **Type**, sélectionnez le type de produit, de frais ou de transaction à valider pour le client avec la ligne vente.
 10. Dans le champ **N°**, sélectionnez un enregistrement à valider en fonction de la valeur du champ **Type**.
 
- Laissez le champ **N°** vide dans les cas suivants : - Si la ligne est destinée à un commentaire. Saisissez le commentaire dans le champ **Description**.
- -Si la ligne est destinée à un article non stocké. Sélectionnez l'action **Sélectionner articles non stockés**. Pour en savoir plus, voir [Utiliser des articles non stockés](inventory-how-work-nonstock-items.md).
+    Laissez le champ **N°** vide dans les cas suivants : - Si la ligne est destinée à un commentaire. Saisissez le commentaire dans le champ **Description**.
+        -Si la ligne est destinée à un article non stocké. Sélectionnez l'action **Sélectionner articles non stockés**. Pour en savoir plus, voir [Utiliser des articles non stockés](inventory-how-work-nonstock-items.md).
 
 11. Dans le champ **Quantité**, entrez le nombre d'unités du produit, de frais ou de la transaction que la ligne enregistre pour le client.  
 
