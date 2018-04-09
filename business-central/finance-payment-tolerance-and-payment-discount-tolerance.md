@@ -95,7 +95,6 @@ Scénarios comportant deux alternatives, A et B. En voici la signification :
 - **A** L'avertissement tolérance d'escompte de paiement a été désactivé OU l'avertissement est activé, mais l'utilisateur a accepté l'escompte de paiement en retard (Reporter le solde en tant que tolérance de paiement).  
 - **B** L'avertissement est activé et l'utilisateur a choisi de ne pas accepter l'escompte de paiement en retard (Laisser le solde ouvert).  
 
-[!div class="mx-tdBreakAll"]  
 |—|Fact.|Escompte de paiement|Tolérance règlement max.|Date d'escompte de paiement|Tolérance d'escompte de paiement Date|Date de paiement|Règl.|Type de tolérance|Toutes les écritures fermées|Tolérance d'escompte de paiement Cpta/CL|Tolérance règlement Grand livre|  
 |-------|----------|----------------|-----------------------|---------------------|--------------------------|------------------|----------|--------------------|------------------------|------------------------------|----------------------------|  
 |1|1,000|2.0|5|01/15/03|01/20/03|<=15/01/03|985|Tolérance règlement|Oui|0|-5|  
@@ -166,8 +165,6 @@ Scénarios comportant deux alternatives, A, B, C ou D. En voici la signification
 - **B** L'avertissement est activé et l'utilisateur a choisi de n'accepter l'escompte de paiement en retard pour aucune des factures.  
 - **C** : L'avertissement est activé et l'utilisateur a choisi d'accepter l'escompte de paiement en retard pour la première facture, mais non pour la deuxième.  
 - **D** : L'avertissement est activé et l'utilisateur a choisi de ne pas accepter l'escompte de paiement en retard pour la première facture, mais de l'accepter pour la seconde.  
-
-[!div class="mx-tdBreakAll"]  
 
 |—|Fact.|Escompte|Tolérance règlement max.|Date d'escompte de paiement|Tolérance d'escompte de paiement Date|Date de paiement|Règl.|Type de tolérance|Toutes les écritures fermées|Tolérance d'escompte de paiement Cpta/CL|Tolérance règlement Grand livre|  
 |-------|----------|---------------|-------------------|---------------------|--------------------------|------------------|---------|--------------------|------------------------|------------------------------|------------------------|  
