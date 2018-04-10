@@ -13,8 +13,8 @@ ms.search.keywords: purchase fixed asset
 ms.date: 06/02/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: dc869b481ed84ab96a8b7cef0e15dd0cf8fef213
+ms.sourcegitcommit: e7dcdc0935a8793ae226dfc2f9709b5b8f487a62
+ms.openlocfilehash: 9f2dcd6328c86117a927aeaeaeba075c421db046
 ms.contentlocale: fr-ca
 ms.lasthandoff: 03/22/2018
 
@@ -101,7 +101,7 @@ Vous pouvez reporter la valeur résiduelle avec le coût d'acquisition à partir
 ## <a name="see-also"></a>Voir aussi
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  
-[Finances](finance.md)  
-[Bienvenue dans [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)]](index.md)  
+[Finance](finance.md)  
+[Mise en route](product-get-started.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 
