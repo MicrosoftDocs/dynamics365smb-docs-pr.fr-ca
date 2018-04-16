@@ -22,12 +22,12 @@ ms.lasthandoff: 03/22/2018
 # <a name="walkthrough-planning-supplies-automatically"></a>Procédure pas à pas : planification automatique des approvisionnements
 Les expressions comme « exécution planification » et « exécution MRP » se rapportent au calcul du programme directeur de production (PDP) et de la planification des besoins de matières (MRP) en fonction de la demande réelle et projetée.  
 
--   Le calcul PDP est le calcul de la planification de production principale basé sur la demande réelle et la prévision de production. Le calcul PDP est utilisé pour les articles finis disposant de prévisions ou d'une ligne document de vente. Ces articles sont appelés « articles PDP » et identifiés de façon dynamique au début du calcul.  
--   Le calcul MRP est le calcul des besoins matière basé sur la demande réelle de composants et la prévision de production au niveau du composant. Le calcul MRP n'est effectué que pour les articles qui ne sont pas des articles PDP. Le but global du calcul MRP est de générer des plans formels en phases, par article, afin de fournir le bon article au bon moment, au bon endroit et dans la bonne quantité.  
+- Le calcul PDP est le calcul de la planification de production principale basé sur la demande réelle et la prévision de production. Le calcul PDP est utilisé pour les articles finis disposant de prévisions ou d'une ligne document de vente. Ces articles sont appelés « articles PDP » et identifiés de façon dynamique au début du calcul.  
+- Le calcul MRP est le calcul des besoins matière basé sur la demande réelle de composants et la prévision de production au niveau du composant. Le calcul MRP n'est effectué que pour les articles qui ne sont pas des articles PDP. Le but global du calcul MRP est de générer des plans formels en phases, par article, afin de fournir le bon article au bon moment, au bon endroit et dans la bonne quantité.  
 
- Les algorithmes de planification utilisés pour les calculs PDP et MRP sont identiques. Ils utilisent la présentation au net, la réutilisation des commandes d'approvisionnement existantes et les messages d'action. Le processus du système de planification examine ce qui est ou sera nécessaire (demande) et ce qui est disponible ou attendu (approvisionnement). Lorsque ces quantités sont déduites l'une de l'autre, des messages d'action s'affichent dans la feuille planification. Ces messages proposent de créer une commande d'approvisionnement, de modifier la quantité ou la date ou encore d'annuler une commande d'approvisionnement existante. Les commandes d'approvisionnement peuvent être des bons de production, des bons de commande et des ordres de transfert. Pour plus d'informations, voir [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md).  
+  Les algorithmes de planification utilisés pour les calculs PDP et MRP sont identiques. Ils utilisent la présentation au net, la réutilisation des commandes d'approvisionnement existantes et les messages d'action. Le processus du système de planification examine ce qui est ou sera nécessaire (demande) et ce qui est disponible ou attendu (approvisionnement). Lorsque ces quantités sont déduites l'une de l'autre, des messages d'action s'affichent dans la feuille planification. Ces messages proposent de créer une commande d'approvisionnement, de modifier la quantité ou la date ou encore d'annuler une commande d'approvisionnement existante. Les commandes d'approvisionnement peuvent être des bons de production, des bons de commande et des ordres de transfert. Pour plus d'informations, voir [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md).  
 
- Le résultat de la planification est obtenu en partie grâce aux ensembles d'offre et de demande de la base de données et en partie grâce à la configuration des fiches unité de stock ou des fiches article, des nomenclatures de production et des itinéraires.  
+  Le résultat de la planification est obtenu en partie grâce aux ensembles d'offre et de demande de la base de données et en partie grâce à la configuration des fiches unité de stock ou des fiches article, des nomenclatures de production et des itinéraires.  
 
 ## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas  
  Cette procédure pas à pas démontre comment utiliser le système de planification de l'approvisionnement pour planifier automatiquement tous les bons de production et toutes les bons de commande nécessaires à la production de 15 vélos de cyclotourisme figurant sur différentes documents de vente. Pour que cette procédure soit claire et réaliste, le nombre de lignes planification a été délimité en filtrant tous les autres ensembles d'offre et de demande de la compagnie fictive CRONUS International Ltd., à l'exception de la demande de vente pour l'emplacement BLUE.  
@@ -73,17 +73,19 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 ### <a name="to-change-selected-planning-parameters"></a>Pour modifier des paramètres de planification sélectionnés  
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Unités de stock**, puis sélectionnez le lien associé.  
-2.  Ouvrez la fiche unité de stock BLEU de l'article 1100, Roue avant.  
-3.  Sur le raccourci **Planification**, renseignez les champs comme indiqué dans le tableau ci-dessous.  
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Unités de stock**, puis sélectionnez le lien associé.  
+2. Ouvrez la fiche unité de stock BLEU de l'article 1100, Roue avant.  
+3. Sur le raccourci **Planification**, renseignez les champs comme indiqué dans le tableau ci-dessous.  
 
-    |Politique réapprovisionnement|Quantité de stocks de sécurité|Période de cumul de lot|Période de replanification|  
-    |-------------------------------------------|-----------------------------------------------|-------------------------------------------------|---------------------------------------------|  
-    |Lot pour lot|Vide|2S|2S|  
 
-4.  Répétez les étapes 2 et 3 pour chaque point de stock dont le numéro est compris entre 1100 et 1300.  
+   | Politique réapprovisionnement | Quantité de stocks de sécurité | Période de cumul de lot | Période de replanification |
+   |-------------------|-----------------------|-------------------------|---------------------|
+   |    Lot pour lot    |         Vide         |           2S            |         2S          |
 
- Vous venez de préparer les données d'exemple de la procédure pas à pas.  
+
+4. Répétez les étapes 2 et 3 pour chaque point de stock dont le numéro est compris entre 1100 et 1300.  
+
+   Vous venez de préparer les données d'exemple de la procédure pas à pas.  
 
 ## <a name="creating-a-regenerative-supply-plan"></a>Création d'un programme d'approvisionnement régénératif  
  En réaction à un nouveau document de vente pour cinq vélos, Ricardo démarre le processus de planification en définissant les options, filtres et intervalle de planification afin d'exclure toutes les autres demandes sauf celle de la première semaine de février à l'emplacement BLEU. Il commence par calculer un calendrier de production principal (CDP), puis un programme d'approvisionnement complet pour toute demande de niveau inférieur (MRP).  
@@ -165,43 +167,45 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 ### <a name="to-view-more-order-tracking-entries"></a>Pour afficher des écritures chaînage  
 
-1.  Sélectionnez la ligne planification correspondant à l'article 1110, Jante, puis choisissez l'action **Suivi de commande**.  
+1. Sélectionnez la ligne planification correspondant à l'article 1110, Jante, puis choisissez l'action **Suivi de commande**.  
 
-     La fenêtre **Chaînage** indique que cinq jantes sont nécessaires pour chaque ordre de fabrication des roues avant et arrière respectivement.  
+    La fenêtre **Chaînage** indique que cinq jantes sont nécessaires pour chaque ordre de fabrication des roues avant et arrière respectivement.  
 
-     Le même suivi de commande s'applique aux lignes planification pour les articles 1120, 1160 et 1170. Pour l'article 1120, le champ **Quantité par** dans la nomenclature de production de chaque roue est 50 PCS, ce dont résulte un besoin total de 100.  
+    Le même suivi de commande s'applique aux lignes planification pour les articles 1120, 1160 et 1170. Pour l'article 1120, le champ **Quantité par** dans la nomenclature de production de chaque roue est 50 PCS, ce dont résulte un besoin total de 100.  
 
-     La ligne planification de l'article 1150 pour six pièces semble irrégulière. Analysez.  
+    La ligne planification de l'article 1150 pour six pièces semble irrégulière. Analysez.  
 
-2.  Sélectionnez la ligne planification correspondant à l'article 1150, puis choisissez l'action **Suivi de commande**.  
+2. Sélectionnez la ligne planification correspondant à l'article 1150, puis choisissez l'action **Suivi de commande**.  
 
-     La fenêtre **Chaînage** indique que cinq unités sont suivies pour la roue avant, et une unité est non suivie. Affichez la quantité non chaînée.  
+    La fenêtre **Chaînage** indique que cinq unités sont suivies pour la roue avant, et une unité est non suivie. Affichez la quantité non chaînée.  
 
-3.  Choisissez le champ **Quantité non chaînée**.  
+3. Choisissez le champ **Quantité non chaînée**.  
 
-     La fenêtre **Éléments planification sans suivi** indique que l'article 1150 utilise un paramètre de planification, Commandé par, de 2,00, ce qui indique que lorsque l'article est commandé, il doit l'être dans une quantité divisible par 2. Le chiffre le plus proche de 5 divisible par 2 est 6.  
+    La fenêtre **Éléments planification sans suivi** indique que l'article 1150 utilise un paramètre de planification, Commandé par, de 2,00, ce qui indique que lorsque l'article est commandé, il doit l'être dans une quantité divisible par 2. Le chiffre le plus proche de 5 divisible par 2 est 6.  
 
-     Le même suivi de commande s'applique aux lignes planification pour les composantes Moyeu avant, les articles 1151 et 1155, mais chaque besoin est multiplié par le pourcentage rebut défini pour l'article 1150 dans le champ **Pourcentage de rebut** de la fiche article.  
+    Le même suivi de commande s'applique aux lignes planification pour les composantes Moyeu avant, les articles 1151 et 1155, mais chaque besoin est multiplié par le pourcentage rebut défini pour l'article 1150 dans le champ **Pourcentage de rebut** de la fiche article.  
 
- L'analyse du programme d'approvisionnement initial est terminée. Notez que la case à cocher **Accepter message d'action** est activée dans toutes les lignes planification, ce qui indique qu'elles sont prêtes à être converties en commandes d'approvisionnement.  
+   L'analyse du programme d'approvisionnement initial est terminée. Notez que la case à cocher **Accepter message d'action** est activée dans toutes les lignes planification, ce qui indique qu'elles sont prêtes à être converties en commandes d'approvisionnement.  
 
 ## <a name="carrying-out-action-messages"></a>Exécution de messages d'action  
  Eduardo convertit ensuite les lignes planification proposées en commandes d'approvisionnement à l'aide de la fonction **Traiter msg. action**.  
 
 ### <a name="to-automatically-create-the-suggested-supply-orders"></a>Pour créer automatiquement les commandes d'approvisionnement proposées  
 
-1.  Activez la case à cocher **Accepter message d'action** sur toutes les lignes planification avec un avertissement de type Exception.  
-2.  Choisissez l'action **Traiter message d'action**.  
-3.  Dans la fenêtre **Traiter msg. action - Planning**, complétez les champs comme indiqué dans le tableau suivant.  
+1. Activez la case à cocher **Accepter message d'action** sur toutes les lignes planification avec un avertissement de type Exception.  
+2. Choisissez l'action **Traiter message d'action**.  
+3. Dans la fenêtre **Traiter msg. action - Planning**, complétez les champs comme indiqué dans le tableau suivant.  
 
-    |Bon de production|Bon de commande|Ordre de transfert|  
-    |----------------------|--------------------|--------------------|  
-    | planifié ferme|Créer bons de commande|Créer ordres transfert|  
 
-4.  Cliquez sur le bouton **OK** pour créer automatiquement toutes les commandes d'approvisionnement proposées.  
-5.  Fermez la fenêtre **Feuille de travail de planification** vide.  
+   | Bon de production |   Bon de commande   |   Ordre de transfert   |
+   |------------------|--------------------|--------------------|
+   |    planifié ferme   | Créer bons de commande | Créer ordres transfert |
 
- Le calcul initial, l'analyse et la création d'un plan d'approvisionnement pour la demande à l'emplacement BLEU la première semaine de février sont terminés. Dans la section suivante, un autre client commande dix vélos cyclotourisme, et Eduardo doit procéder à une nouvelle planification.  
+
+4. Cliquez sur le bouton **OK** pour créer automatiquement toutes les commandes d'approvisionnement proposées.  
+5. Fermez la fenêtre **Feuille de travail de planification** vide.  
+
+   Le calcul initial, l'analyse et la création d'un plan d'approvisionnement pour la demande à l'emplacement BLEU la première semaine de février sont terminés. Dans la section suivante, un autre client commande dix vélos cyclotourisme, et Eduardo doit procéder à une nouvelle planification.  
 
 ## <a name="creating-a-net-change-plan"></a>Création d'un planning par écart  
  Le lendemain, avant même qu'une commande d'approvisionnement ne soit démarrée ou reportée, un nouveau document de vente arrive de Libros S.A. pour dix vélos cyclotourisme à livrer le 12/02/2014. Eduardo est averti de cette nouvelle demande et il procède à une nouvelle planification afin d'adapter le programme d'approvisionnement actif. Eduardo ne calcule, à l'aide de la fonction Planification par écart, que les modifications apportées à la demande ou à l'approvisionnement depuis la dernière exécution de la planification. En outre, il prolonge la période de planification au 14/02/2014 afin d'inclure la nouvelle demande de vente du 12/02/2014.  
@@ -210,30 +214,34 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 ### <a name="to-create-the-new-sales-demand-and-replan-accordingly"></a>Pour créer les demandes de vente et replanifier en conséquence  
 
-1.  Sélectionnez l'action **Nouveau**.  
-2.  Dans la fenêtre **Document de vente**, renseignez les champs comme indiqué dans la table suivante.  
+1. Sélectionnez l'action **Nouveau**.  
+2. Dans la fenêtre **Document de vente**, renseignez les champs comme indiqué dans la table suivante.  
 
-    |Nom débiteur|Date de livraison|N° d'article|Magasin|Quantité|  
-    |----------------------------|-------------------|--------------|--------------|--------------|  
-    |Libros S.A|12/02/2014|1001|BLEU|10|  
 
-3.  Acceptez l'avertissement de disponibilité et cliquez sur le bouton **Oui** pour enregistrer la quantité demandée.  
-4.  Procédez à une replanification afin d'adapter le programme d'approvisionnement actif.  
-5.  Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille planification**, puis sélectionnez le lien associé.  
-6.  Choisissez l'action **Calculer planning par écart**.  
-7.  Dans la fenêtre **Calc. planning - F. planning** , renseignez les champs comme indiqué dans le tableau suivant.  
+   | Nom débiteur | Date de livraison | N° d'article | Magasin | Quantité |
+   |-----------------------|---------------|----------|----------|----------|
+   |      Libros S.A      |  12/02/2014   |   1001   |   BLEU   |    10    |
 
-    |Calculer planning|Date début|Date de fin|Afficher résultats :|Limiter les totaux à|  
-    |--------------------|-------------------|-----------------|-------------------|---------------------|  
-    |**PDP** = Oui<br /><br /> **MRP** = Oui|23-01-2014|14/02/2014|1001..1300|Filtre emplacement = BLEU|  
 
-8.  Pour démarrer l''exécution de la planification, cliquez sur le bouton **OK**.  
+3. Acceptez l'avertissement de disponibilité et cliquez sur le bouton **Oui** pour enregistrer la quantité demandée.  
+4. Procédez à une replanification afin d'adapter le programme d'approvisionnement actif.  
+5. Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille planification**, puis sélectionnez le lien associé.  
+6. Choisissez l'action **Calculer planning par écart**.  
+7. Dans la fenêtre **Calc. planning - F. planning** , renseignez les champs comme indiqué dans le tableau suivant.  
 
- Un total de 14 lignes planification est créé. Notez que sur la première ligne planification, le champ **Message d'action** affiche **Nouveau**, le champ **Quantité**, 10 et le champ **Date d'échéance**, 12/02/2014. Cette nouvelle ligne pour l'article parent supérieur, 1001, vélo cyclotourisme, est créée, car l'article utilise une méthode de réapprovisionnement de la **commande**, ce qui signifie qu'il doit être approvisionné selon une relation un à un par rapport à sa demande, le document de vente indique dix pièces.  
 
- Les deux lignes planification suivantes concernent les bons de production des roues des vélos cyclotourisme. Chaque commande existante de cinq, dans le champ **Quantité initiale**, passe à 15 dans le champ **Quantité**. Les dates d'échéance des deux bons de production sont inchangées, comme indiqué dans le champ **Message d'action** qui contient **Changer qté**. Cela vaut également pour la ligne planification de l'article 1300, sauf que son multiple commande de 10,00 arrondit la demande suivie de 15 pièces à 20.  
+   |             Calculer planning              | Date début | Date de fin | Afficher résultats : |    Limiter les totaux à     |
+   |-----------------------------------------|---------------|-------------|---------------|------------------------|
+   | **PDP** = Oui<br /><br /> **MRP** = Oui |  23-01-2014   | 14/02/2014  |  1001..1300   | Filtre emplacement = BLEU |
 
- Toutes les autres lignes planning ont un message d'action **Replanifier & changer qté**. Ceci signifie que, outre le fait de voir leur quantité augmentée, les dates d'échéance sont déplacées par rapport au programme d'approvisionnement afin d'inclure la quantité supplémentaire au temps de production disponible (capacité). Les composantes achetées sont reprogrammées et augmentées pour répondre aux bons de production. Analysez la nouvelle planification.  
+
+8. Pour démarrer l''exécution de la planification, cliquez sur le bouton **OK**.  
+
+   Un total de 14 lignes planification est créé. Notez que sur la première ligne planification, le champ **Message d'action** affiche **Nouveau**, le champ **Quantité**, 10 et le champ **Date d'échéance**, 12/02/2014. Cette nouvelle ligne pour l'article parent supérieur, 1001, vélo cyclotourisme, est créée, car l'article utilise une méthode de réapprovisionnement de la **commande**, ce qui signifie qu'il doit être approvisionné selon une relation un à un par rapport à sa demande, le document de vente indique dix pièces.  
+
+   Les deux lignes planification suivantes concernent les bons de production des roues des vélos cyclotourisme. Chaque commande existante de cinq, dans le champ **Quantité initiale**, passe à 15 dans le champ **Quantité**. Les dates d'échéance des deux bons de production sont inchangées, comme indiqué dans le champ **Message d'action** qui contient **Changer qté**. Cela vaut également pour la ligne planification de l'article 1300, sauf que son multiple commande de 10,00 arrondit la demande suivie de 15 pièces à 20.  
+
+   Toutes les autres lignes planning ont un message d'action **Replanifier & changer qté**. Ceci signifie que, outre le fait de voir leur quantité augmentée, les dates d'échéance sont déplacées par rapport au programme d'approvisionnement afin d'inclure la quantité supplémentaire au temps de production disponible (capacité). Les composantes achetées sont reprogrammées et augmentées pour répondre aux bons de production. Analysez la nouvelle planification.  
 
 ## <a name="analyzing-the-changed-planning-result"></a>Analyse du résultat de la planification modifié  
  Étant donné que tous les articles lot pour lot planifiés dans le filtre (1100 à 1300) ont une période de reprogrammation de deux semaines, toutes leurs commandes d'approvisionnement existantes sont modifiées pour répondre à la nouvelle exigence, à savoir la période de deux semaines spécifiée.  
@@ -256,11 +264,11 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 ### <a name="to-view-an-existing-order"></a>Pour afficher une commande existante  
 
-1.  Dans la ligne planification de l'article 1250, sélectionnez le champ **N° ordre référence** .  
-2.  Dans la fenêtre **O.F. planifié ferme** pour le moyeu arrière. La commande existante pour dix pièces, que vous avez créée dans la première exécution de la planification, s'ouvre.  
-3.  Fermez l'ordre de production planifié ferme.  
+1. Dans la ligne planification de l'article 1250, sélectionnez le champ **N° ordre référence** .  
+2. Dans la fenêtre **O.F. planifié ferme** pour le moyeu arrière. La commande existante pour dix pièces, que vous avez créée dans la première exécution de la planification, s'ouvre.  
+3. Fermez l'ordre de production planifié ferme.  
 
- La procédure pas à pas, relative au mode d'utilisation du système de planification permettant de détecter automatiquement la demande, de calculer les commandes d'approvisionnement adéquates en fonction de la demande et des paramètres de planification, puis de créer automatiquement différents types de commandes d'approvisionnement avec les dates et quantités appropriées, est terminée.  
+   La procédure pas à pas, relative au mode d'utilisation du système de planification permettant de détecter automatiquement la demande, de calculer les commandes d'approvisionnement adéquates en fonction de la demande et des paramètres de planification, puis de créer automatiquement différents types de commandes d'approvisionnement avec les dates et quantités appropriées, est terminée.  
 
 ## <a name="see-also"></a>Voir aussi  
  [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)   

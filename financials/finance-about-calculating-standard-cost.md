@@ -80,8 +80,8 @@ Pour calculer le coût capacité standard, vous devez déterminer les délais st
 
 Vous configurez les taux établis pour chaque type de délai pour chaque unité de production ou atelier dans un itinéraire individuel.  
 
-> [!NOTE]  
-    >  Si les délais d'exécution affectent chaque unité de mesure d'article produit, les délais de configuration affectent chaque lot. Aussi, vous devez distribuer au prorata le délai de configuration de l'itinéraire pour chaque opération par rapport à la taille lot. Vous spécifiez la taille lot dans le champ correspondant sur le raccourci **Commandes** de la fiche article.  
+> [!NOTE]
+>  Si les délais d'exécution affectent chaque unité de mesure d'article produit, les délais de configuration affectent chaque lot. Aussi, vous devez distribuer au prorata le délai de configuration de l'itinéraire pour chaque opération par rapport à la taille lot. Vous spécifiez la taille lot dans le champ correspondant sur le raccourci **Commandes** de la fiche article.  
 
 Pour spécifier le délai de configuration dans l'itinéraire à des fins de planification, sans toutefois inclure cette dépense dans le calcul des coûts standard, désactivez le champ **Inclure coût préparation** de la fenêtre **Configuration de la fabrication**.  
 

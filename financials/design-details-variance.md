@@ -32,15 +32,15 @@ L'écart est défini comme la différence entre le coût réel et le coût stand
 ## <a name="example"></a>Exemple :  
  L'exemple suivant présente la manière de calculer l'écart pour les articles achetés. Il est basé sur le scénario suivant :  
 
-1.  L'utilisateur achète un article à 90,00 $, mais le coût standard est de 100,00 $. Par conséquent, la tolérance achat nette est de -10 $.  
-2.  10,00 $ sont crédités sur le compte tolérance achat.  
-3.  L'utilisateur reporte des frais article de 20,00 $. Par conséquent, le coût réel passe à 110 $, et la valeur de la tolérance achat passe à 10 $.  
-4.  20,00 $ sont débités sur le compte tolérance achat. Par conséquent, la tolérance achat nette est de 10 $.  
-5.  L'utilisateur réévalue l'article de 100,00 $ à 70,00 $. Cela n'affecte pas le calcul de l'écart, uniquement la valeur de l'inventaire.  
+1. L'utilisateur achète un article à 90,00 $, mais le coût standard est de 100,00 $. Par conséquent, la tolérance achat nette est de -10 $.  
+2. 10,00 $ sont crédités sur le compte tolérance achat.  
+3. L'utilisateur reporte des frais article de 20,00 $. Par conséquent, le coût réel passe à 110 $, et la valeur de la tolérance achat passe à 10 $.  
+4. 20,00 $ sont débités sur le compte tolérance achat. Par conséquent, la tolérance achat nette est de 10 $.  
+5. L'utilisateur réévalue l'article de 100,00 $ à 70,00 $. Cela n'affecte pas le calcul de l'écart, uniquement la valeur de l'inventaire.  
 
- Le tableau suivant montre les écritures valeur résultantes.  
+   Le tableau suivant montre les écritures valeur résultantes.  
 
- ![Calcul variance achat](media/design_details_inventory_costing_11_purchase_variance.png "design_details_inventory_costing_11_purchase_variance")  
+   ![Calcul variance achat](media/design_details_inventory_costing_11_purchase_variance.png "design_details_inventory_costing_11_purchase_variance")  
 
 ## <a name="determining-the-standard-cost"></a>Déterminer le coût standard  
  Le coût standard est utilisé pour calculer l'écart et le montant à capitaliser. Dans la mesure où le coût standard peut être modifié dans le temps en raison du calcul de mise à jour manuel, vous avez besoin d'un certain point dans le temps où le coût standard est fixe pour le calcul de l'écart. Ce point correspond au moment de la facturation de l'augmentation d'inventaire. Pour les articles fabriqués ou assemblés, le point auquel le coût standard est déterminé est lorsque le coût est ajusté.  

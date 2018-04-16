@@ -39,7 +39,7 @@ Lorsque vous corrigez ou annulez une facture vente reportée, la note de crédit
 2. Sélectionnez la facture vente reportée à corriger.
 
     > [!NOTE]  
->   Si la case à cocher **Annulé** est activée, vous ne pouvez pas corriger la facture vente validée car elle l'a déjà été, ou a été annulée.
+   >   Si la case à cocher **Annulé** est activée, vous ne pouvez pas corriger la facture vente validée car elle l'a déjà été, ou a été annulée.
 3. Dans la fenêtre **Facture vente enregistrée** sélectionnez l'action **Corriger**.  
 4. Une nouvelle facture vente avec les mêmes informations et dans laquelle vous pouvez apporter une correction est créée. La valeur du champ **Annulé** de la facture vente validée initiale devient **Oui**.
 
@@ -51,7 +51,7 @@ Lorsque vous corrigez ou annulez une facture vente reportée, la note de crédit
 2. Sélectionnez la facture vente reportée à annuler.
 
     > [!NOTE]  
->   Si la case à cocher **Annulé** est activée, vous ne pouvez pas annuler la facture vente validée car elle a déjà été annulée ou corrigée.
+   >   Si la case à cocher **Annulé** est activée, vous ne pouvez pas annuler la facture vente validée car elle a déjà été annulée ou corrigée.
 3. Dans la fenêtre **Facture vente enregistrée** sélectionnez l'action **Annuler**.
 
     Une note de crédit vente est automatiquement créée et reportée pour annuler la facture vente reportée initiale. La valeur du champ **Annulé** de la facture vente validée initiale devient **Oui**.

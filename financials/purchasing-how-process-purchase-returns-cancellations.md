@@ -89,45 +89,45 @@ La note de crédit achat est supprimée et remplacée par un nouveau document da
     - Utilisez la fonction **Extraire les lignes de document reportées à inverser** pour copier une ou plusieurs lignes de document reportées à partir d'un ou de plusieurs documents reportés. Cette fonction inverse toujours exactement les coûts à partir de la ligne de document reportée. Cette fonction est décrite dans les étapes suivantes.    
     - Utilisez la fonction **Copier document** pour copier un document existant dans le retour. Cette fonction permet de copier l'ensemble du document. Il peut s'agir d'un document reporté ou d'un document non encore reporté. Cette fonction ne permet l'inversion de même coût que lorsque la case **Coût retour identique oblig.** est cochée dans la fenêtre **Config. ventes et à recevoir**.  
 
-4. Sélectionnez l'action **Extraire les lignes de document reportées à inverser**.
-5. Dans le haut de la fenêtre **Lignes de document d'achat reportées**, cochez la case **Afficher seulement les écritures réversibles** si vous voulez n'afficher que les lignes contenant des quantités qui n'ont pas encore été retournées. Par exemple, si une quantité de facture achat reportée a déjà été retournée, il se peut que vous ne vouliez pas intégrer cette quantité dans un nouveau document retour achat.
+5. Sélectionnez l'action **Extraire les lignes de document reportées à inverser**.
+6. Dans le haut de la fenêtre **Lignes de document d'achat reportées**, cochez la case **Afficher seulement les écritures réversibles** si vous voulez n'afficher que les lignes contenant des quantités qui n'ont pas encore été retournées. Par exemple, si une quantité de facture achat reportée a déjà été retournée, il se peut que vous ne vouliez pas intégrer cette quantité dans un nouveau document retour achat.
 
     > [!NOTE]  
     >  Ce champ ne fonctionne que pour les réceptions reportées et les lignes facture reportées, pas pour les lignes retour reportées ni les lignes note de crédit reportées.  
 
     Dans la partie gauche de la fenêtre, les différents types de document sont énumérés, et le nombre entre crochets est le nombre de documents disponibles de chaque type de document.
 
-6. Dans le champ **Filtre de type de document**, sélectionnez le type de lignes document validées que vous souhaitez utiliser.  
-7. Sélectionnez les lignes que vous voulez copier vers le nouveau document.  
+7. Dans le champ **Filtre de type de document**, sélectionnez le type de lignes document validées que vous souhaitez utiliser.  
+8. Sélectionnez les lignes que vous voulez copier vers le nouveau document.  
 
     > [!NOTE]  
     >  Si vous utilisez Ctrl+A pour sélectionner toutes les lignes, toutes les lignes à l'intérieur du filtre que vous avez défini sont copiées mais le filtre **Afficher uniquement quantité réversible** n'est pas pris en considération. Par exemple, supposons que vous ayez filtré les lignes pour un numéro de document particulier comportant deux lignes, dont l'une a déjà été retournée. Même si le champ **Afficher uniquement quantité réversible** est sélectionné, si vous appuyez sur Ctrl+A pour copier toutes les lignes, deux lignes sont copiées au lieu de celle qui n'a pas encore été inversée.  
 
-8. Sélectionnez le bouton **OK** pour copier les lignes dans le nouveau document.  
+9. Sélectionnez le bouton **OK** pour copier les lignes dans le nouveau document.  
 
     Les traitements suivants se produisent :  
 
-    -   Pour les lignes document validées du type **Article**, une ligne document est créée qui est une copie de la ligne document validée, avec la quantité qui n'a pas encore été contrepassée. Le champ **Écr. article à affecter** est renseigné correctement avec le numéro de l'écriture article de la ligne document reportée.  
+   - Pour les lignes document validées du type **Article**, une ligne document est créée qui est une copie de la ligne document validée, avec la quantité qui n'a pas encore été contrepassée. Le champ **Écr. article à affecter** est renseigné correctement avec le numéro de l'écriture article de la ligne document reportée.  
 
-    -   Pour les lignes document validées qui ne sont pas du type **Article** (telles que les frais annexes), une ligne document est créée qui est une copie de la ligne document validée originale.  
+   - Pour les lignes document validées qui ne sont pas du type **Article** (telles que les frais annexes), une ligne document est créée qui est une copie de la ligne document validée originale.  
 
-    -   Calcule le champ **Coût unitaire $** sur la nouvelle ligne à partir des coûts des écritures article correspondantes.  
+   - Calcule le champ **Coût unitaire $** sur la nouvelle ligne à partir des coûts des écritures article correspondantes.  
 
-    -   Si le document copié est une livraison reportée, une réception reportée, une réception retour reportée ou une livraison retour reportée, le prix unitaire est calculé automatiquement à partir de la fiche article.  
+   - Si le document copié est une livraison reportée, une réception reportée, une réception retour reportée ou une livraison retour reportée, le prix unitaire est calculé automatiquement à partir de la fiche article.  
 
-    -   Si le document copié est une facture ou une note de crédit reportée, le prix unitaire, les escomptes de la facture et les escomptes de paiement ligne sont copiés à partir de la ligne document reportée.  
+   - Si le document copié est une facture ou une note de crédit reportée, le prix unitaire, les escomptes de la facture et les escomptes de paiement ligne sont copiés à partir de la ligne document reportée.  
 
-    -   Si la ligne document reportée contient des lignes traçabilité, le champ **Écr. article à affecter** sur les lignes traçabilité est renseigné à l'aide des numéros d'écriture article appropriés des lignes traçabilité reportées.  
+   - Si la ligne document reportée contient des lignes traçabilité, le champ **Écr. article à affecter** sur les lignes traçabilité est renseigné à l'aide des numéros d'écriture article appropriés des lignes traçabilité reportées.  
 
      Lors de la copie à partir d'une facture ou d'une note de crédit reportée, le programme copie les escomptes de la facture et les escomptes de paiement ligne adéquates comme valides au moment du report de ce document, de la ligne document reportée vers la nouvelle ligne document. Notez toutefois que si l'option **Calculer remise facture** est activée dans la fenêtre **Paramètres achats**, la remise facture est de nouveau calculée lorsque vous validez la nouvelle ligne document. Le montant ligne de la nouvelle ligne peut par conséquent être différent du montant ligne de la ligne document reportée, en fonction du nouveau calcul de l'escompte facture.  
 
-    > [!NOTE]  
-    >  Si une partie de la quantité de la ligne document reportée a déjà été inversée ou vendue ou consommée, une ligne n'est créée que pour la quantité restant en inventaire qui n'a pas encore été renvoyée. Si la quantité totale de la ligne document reportée a déjà été inversée, aucune ligne document n'est créée.  
-    >   
-    >  Si le flux de biens dans le document reporté est identique au flux de biens dans le nouveau document, une copie de la ligne document reportée originale est simplement créée dans le nouveau document. Le champ **Écriture article à lettrer** n'est pas renseigné parce que, dans ce cas, l'inversion de même coût n'est pas possible. Par exemple, si vous utilisez la fonction **Extraire les lignes de document reportées à inverser** pour afficher une ligne note de crédit achat reportée pour une nouvelle note de crédit achat, seule la ligne note de crédit reportée originale est copiée sur la nouvelle note de crédit.  
+     > [!NOTE]  
+     >  Si une partie de la quantité de la ligne document reportée a déjà été inversée ou vendue ou consommée, une ligne n'est créée que pour la quantité restant en inventaire qui n'a pas encore été renvoyée. Si la quantité totale de la ligne document reportée a déjà été inversée, aucune ligne document n'est créée.  
+     >   
+     >  Si le flux de biens dans le document reporté est identique au flux de biens dans le nouveau document, une copie de la ligne document reportée originale est simplement créée dans le nouveau document. Le champ **Écriture article à lettrer** n'est pas renseigné parce que, dans ce cas, l'inversion de même coût n'est pas possible. Par exemple, si vous utilisez la fonction **Extraire les lignes de document reportées à inverser** pour afficher une ligne note de crédit achat reportée pour une nouvelle note de crédit achat, seule la ligne note de crédit reportée originale est copiée sur la nouvelle note de crédit.  
 
-8. Dans la fenêtre **Retour achat**, dans le champ **Code motif retour** de chaque ligne, sélectionnez le motif de ce retour.
-9. Sélectionnez l'action **Valider**.
+10. Dans la fenêtre **Retour achat**, dans le champ **Code motif retour** de chaque ligne, sélectionnez le motif de ce retour.
+11. Sélectionnez l'action **Valider**.
 
 ## <a name="to-create-a-replacement-purchase-order-from-a-purchase-return-order"></a>Pour créer une bon de commande de remplacement à partir d'un retour commande achat
 Vous pouvez vous accorder avec le fournisseur pour qu'il compense l'achat d'un article en remplaçant cet article. L'article de remplacement peut être identique à l'article d'origine ou il peut être différent. Le fournisseur peut vous avoir livré par erreur le mauvais article.  

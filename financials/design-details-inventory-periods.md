@@ -26,11 +26,11 @@ Des transactions antidatées ou des ajustements des coûts affectent souvent les
 
  Pour s'assurer que toutes les écritures de transaction dans une période fermée sont finales, les conditions suivantes doivent être remplies avant qu'une période d'inventaire ne soit fermée :  
 
--   Toutes les écritures article sortantes de la période doivent être fermées (aucun inventaire négatif).  
--   Tous les coûts des articles pour la période doivent être ajustés.  
--   Tous les bons de production libérés et terminés dans la période doivent faire l'objet d'un ajustement des coûts.  
+- Toutes les écritures article sortantes de la période doivent être fermées (aucun inventaire négatif).  
+- Tous les coûts des articles pour la période doivent être ajustés.  
+- Tous les bons de production libérés et terminés dans la période doivent faire l'objet d'un ajustement des coûts.  
 
- Lorsque vous fermez une période d'inventaire, une écriture période d'inventaire est créée à l'aide du numéro du dernier registre d'article tombant dans la période d'inventaire. En outre, le délai, la date et le code utilisateur de l'utilisateur fermant la période sont enregistrés dans l'écriture période d'inventaire. À l'aide des informations associées au dernier registre d'article de la période précédente, vous pouvez visualiser les mouvements d'inventaire qui ont été reportés pour la période d'inventaire. Il est également possible de rouvrir des périodes d'inventaire si vous devez reporter dans une période fermée. Lorsque vous rouvrez une période d'inventaire, une écriture période d'inventaire est créée.  
+  Lorsque vous fermez une période d'inventaire, une écriture période d'inventaire est créée à l'aide du numéro du dernier registre d'article tombant dans la période d'inventaire. En outre, le délai, la date et le code utilisateur de l'utilisateur fermant la période sont enregistrés dans l'écriture période d'inventaire. À l'aide des informations associées au dernier registre d'article de la période précédente, vous pouvez visualiser les mouvements d'inventaire qui ont été reportés pour la période d'inventaire. Il est également possible de rouvrir des périodes d'inventaire si vous devez reporter dans une période fermée. Lorsque vous rouvrez une période d'inventaire, une écriture période d'inventaire est créée.  
 
 ## <a name="see-also"></a>Voir aussi  
  [Détails de conception : Coûts ajustés](design-details-inventory-costing.md) [Gestion des coûts ajustés](finance-manage-inventory-costs.md) [Finance](finance.md)  

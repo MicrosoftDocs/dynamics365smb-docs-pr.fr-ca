@@ -107,17 +107,17 @@ Les documents vente reportés auxquels vous avez affecté la note de crédit son
 
     Les traitements suivants se produisent :  
 
-    -   Pour les lignes document validées du type **Article**, une ligne document est créée qui est une copie de la ligne document validée, avec la quantité qui n'a pas encore été contrepassée. Le champ **Écriture article à affecter** est renseigné correctement avec le numéro de l'écriture du grand livre d'articles de la ligne document reportée.  
+   - Pour les lignes document validées du type **Article**, une ligne document est créée qui est une copie de la ligne document validée, avec la quantité qui n'a pas encore été contrepassée. Le champ **Écriture article à affecter** est renseigné correctement avec le numéro de l'écriture du grand livre d'articles de la ligne document reportée.  
 
-    -   Pour les lignes document validées qui ne sont pas du type **Article** (telles que les frais annexes), une ligne document est créée qui est une copie de la ligne document validée originale.  
+   - Pour les lignes document validées qui ne sont pas du type **Article** (telles que les frais annexes), une ligne document est créée qui est une copie de la ligne document validée originale.  
 
-    -   Calcule le champ **Coût unitaire $** sur la nouvelle ligne à partir des coûts des écritures article correspondantes.  
+   - Calcule le champ **Coût unitaire $** sur la nouvelle ligne à partir des coûts des écritures article correspondantes.  
 
-    -   Si le document copié est une livraison reportée, une réception reportée, une réception retour reportée ou une livraison retour reportée, le prix unitaire est calculé automatiquement à partir de la fiche article.  
+   - Si le document copié est une livraison reportée, une réception reportée, une réception retour reportée ou une livraison retour reportée, le prix unitaire est calculé automatiquement à partir de la fiche article.  
 
-    -   Si le document copié est une facture ou une note de crédit reportée, le prix unitaire, les escomptes de la facture et les escomptes de paiement ligne sont copiés à partir de la ligne document reportée.  
+   - Si le document copié est une facture ou une note de crédit reportée, le prix unitaire, les escomptes de la facture et les escomptes de paiement ligne sont copiés à partir de la ligne document reportée.  
 
-    -   Si la ligne document reportée contient des lignes traçabilité, le champ **Écriture article à affecter** sur les lignes traçabilité est renseigné à l'aide des numéros d'écriture du grand livre d'articles appropriés des lignes traçabilité reportées.  
+   - Si la ligne document reportée contient des lignes traçabilité, le champ **Écriture article à affecter** sur les lignes traçabilité est renseigné à l'aide des numéros d'écriture du grand livre d'articles appropriés des lignes traçabilité reportées.  
 
      Lors de la copie à partir d'une facture ou d'une note de crédit reportée, le programme copie les escomptes de la facture et les escomptes de paiement ligne adéquates comme valides au moment du report de ce document, de la ligne document reportée vers la nouvelle ligne document. Notez toutefois que si l'option **Calculer remise facture** est activée dans la fenêtre **Paramètres ventes**, la remise facture est de nouveau calculée lorsque vous validez la nouvelle ligne document. Le montant ligne de la nouvelle ligne peut par conséquent être différent du montant ligne de la ligne document reportée, en fonction du nouveau calcul de l'escompte facture.  
 

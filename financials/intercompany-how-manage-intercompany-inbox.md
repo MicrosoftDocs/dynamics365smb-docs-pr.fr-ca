@@ -69,7 +69,7 @@ Lorsque vos partenaires intersociétés vous envoient des transactions intersoci
 
 1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Transactions Boîte de réception intercompagnies**, puis sélectionnez le lien associé.  
 2. Dans la fenêtre **Transactions boîte de réception Intersociétés**, sélectionnez une ligne, puis choisissez une action **Accepter** pour traiter la ligne.
-3. Dans la fenêtre **Terminer action boîte récep IC**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+3. Dans la fenêtre **Terminer action boîte récep IC**, renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Cliquez sur le bouton **OK**.  
 
 Pour les lignes que vous avez traitées avec l'action **Accepter**, des lignes document ou journal sont créées dans votre compagnie. Ouvrez chaque document ou journal, apportez les modifications nécessaires, puis reportez-les.  

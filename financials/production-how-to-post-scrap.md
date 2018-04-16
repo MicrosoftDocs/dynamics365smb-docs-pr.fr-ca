@@ -27,7 +27,7 @@ Si le traitement produit un rebut, vous pouvez entrer ce rebut dans le journal d
 
 ## <a name="to-post-scrap-manually"></a>Pour reporter le rebut manuellement  
 1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Journal de sortie**, puis sélectionnez le lien associé.  
-2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
+2. Renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 3. Dans le champ **Quantité rebutée**, saisissez la quantité perte.  
 4. Dans le champ **Code rebut**, saisissez le code rebut.  
 5. Choisissez l'action **Reporter** pour reporter le rebut spécifié par opération.  

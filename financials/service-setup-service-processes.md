@@ -30,7 +30,7 @@ Voici quelques exemples des paramètres que vous pouvez appliquer aux processus 
 
 ## <a name="to-enter-general-and-mandatory-settings"></a>Pour saisir les paramètres généraux et obligatoires
 1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Configuration de service**, puis sélectionnez le lien associé.
-2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
+2. Renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
 ## <a name="see-also"></a>Voir aussi  
 [Configurer le rapport de panne](service-how-setup-fault-reporting.md)  

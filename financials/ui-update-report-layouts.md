@@ -38,22 +38,22 @@ Si aucune erreur ne se produit, la mise à jour est appliquée aux présentation
 
 ## <a name="to-test-custom-report-layout-updates"></a>Pour tester les mises à jour de présentations de rapport personnalisées  
   
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Sélection présentation rapport**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Sélection présentation rapport**, puis sélectionnez le lien associé.  
   
-2.  Dans la fenêtre **Sélection présentation rapport**, choisissez l'action **Mises à jour présentation test**.  
+2. Dans la fenêtre **Sélection présentation rapport**, choisissez l'action **Mises à jour présentation test**.  
   
- Les modifications des présentations de rapport sont testées mais pas appliquées aux présentations de rapport réelles. La fenêtre **Journal mise à jour présentation rapport** s'affiche pour indiquer l'état des mises à jour potentielles pour chaque présentation de rapport. Si une présentation de rapport contient des erreurs, vous pouvez y accéder directement à partir du message pour résoudre les problèmes. Pour plus d'informations, consultez [Résolution des erreurs](ui-update-report-layouts.md#FixErrors).  
+   Les modifications des présentations de rapport sont testées mais pas appliquées aux présentations de rapport réelles. La fenêtre **Journal mise à jour présentation rapport** s'affiche pour indiquer l'état des mises à jour potentielles pour chaque présentation de rapport. Si une présentation de rapport contient des erreurs, vous pouvez y accéder directement à partir du message pour résoudre les problèmes. Pour plus d'informations, consultez [Résolution des erreurs](ui-update-report-layouts.md#FixErrors).  
   
 ##  <a name="UpdateLimitations"></a> Limitations de la mise à jour d'une présentation de rapport personnalisée  
  Il existe plusieurs types de modifications que la mise à jour automatique peut appliquer à des présentations de rapport personnalisées, par exemple, un champ utilisé dans la présentation a été supprimé de l'ensemble de données du rapport. Toutefois, la mise à jour automatique ne peut pas gérer les modifications ci-après apportées à un ensemble de données de rapport.  
   
-1.  Champs, étiquettes ou éléments de données supprimés.  
+1. Champs, étiquettes ou éléments de données supprimés.  
   
-2.  Noms de champ en double dans la présentation de rapport lorsqu'un champ a été renommé dans l'ensemble de données. Ceci doit être traité comme une erreur de conception.  
+2. Noms de champ en double dans la présentation de rapport lorsqu'un champ a été renommé dans l'ensemble de données. Ceci doit être traité comme une erreur de conception.  
   
-3.  Scénarios de mise à niveau où plusieurs itérations d'une présentation de rapport engendrent plusieurs actions d'attribution d'un nouveau nom sur les mêmes champs, étiquettes ou éléments de données.  
+3. Scénarios de mise à niveau où plusieurs itérations d'une présentation de rapport engendrent plusieurs actions d'attribution d'un nouveau nom sur les mêmes champs, étiquettes ou éléments de données.  
   
- Si le processus de mise à jour détecte l'un de ces problèmes, la mise à jour ne peut pas être appliquée. Vous devez résoudre les problèmes manuellement, par exemple en modifiant la présentation de rapport dans Word, ou par programme à l'aide de codeunits de mise à niveau.  
+   Si le processus de mise à jour détecte l'un de ces problèmes, la mise à jour ne peut pas être appliquée. Vous devez résoudre les problèmes manuellement, par exemple en modifiant la présentation de rapport dans Word, ou par programme à l'aide de codeunits de mise à niveau.  
   
 ##  <a name="FixErrors"></a> Correction des erreurs  
  Si vous obtenez un message d'erreur lorsque vous mettez à jour ou testez des mises à jour de présentation de rapport, vous devez généralement modifier la présentation de rapport pour résoudre le problème. Lisez le message d'erreur pour déterminer la cause du problème.  

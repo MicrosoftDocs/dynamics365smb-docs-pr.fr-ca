@@ -26,18 +26,21 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 - Taxe achat (Canada) – La taxe d'achat est une taxe de vente canadienne payée par une compagnie sur les articles achetés à un fournisseur. Lorsqu'une compagnie achète des articles pour son propre usage, le fournisseur facture la taxe de vente appropriée pour les articles.  
 
 ## <a name="to-set-up-use-tax-for-a-purchase-order"></a>Pour configurer la taxe de service pour un bon de commande  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Bons de commande**, puis sélectionnez le lien associé dans **Traitement des commandes**.  
-2.  Dans la fenêtre **Bons de commande**, sous l'onglet **Accueil**, dans le groupe **Nouveau**, choisissez **Nouveau**.  
-3.  Sur le raccourci **Lignes**, complétez les champs, comme nécessaire. [!INCLUDE[tooltip-inline-tip](../../includes/tooltip-inline-tip_md.md)]  
-4.  Sur le raccourci **Facturation**, renseignez les champs comme décrit dans le tableau ci-dessous.  
+1. Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Bons de commande**, puis sélectionnez le lien associé dans **Traitement des commandes**.  
+2. Dans la fenêtre **Bons de commande**, sous l'onglet **Accueil**, dans le groupe **Nouveau**, choisissez **Nouveau**.  
+3. Sur le raccourci **Lignes**, complétez les champs, comme nécessaire. [!INCLUDE [tooltip-inline-tip](../../includes/tooltip-inline-tip_md.md)]  
+4. Sur le raccourci **Facturation**, renseignez les champs comme décrit dans le tableau ci-dessous.  
 
-    |Champ|Description|  
-    |---------------------------------|---------------------------------------|  
-    |**Imposable**|Sélectionnez ce champ pour configurer la taxe à payer. **Important :**  Ce champ est disponible dans la fenêtre **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE[bp_customize](../../includes/bp_customize_md.md)]|  
-    |**Code région fiscale**|Le code de région fiscale du fournisseur. **Important :**  Ce champ est disponible dans la fenêtre **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE[bp_customize](../../includes/bp_customize_md.md)]|  
-    |**N° d'exonération fiscale**|Le numéro d'exonération fiscale de la compagnie. Vous pouvez entrer 30 caractères alphanumériques maximum. **Important :**  Ce champ est disponible dans la fenêtre **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE[bp_customize](../../includes/bp_customize_md.md)]|  
-    |**Code provincial de région fiscale**|Le code fiscal de la province. **Important :**  Ce champ est disponible dans la fenêtre **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE[bp_customize](../../includes/bp_customize_md.md)]|  
-5.  Cliquez sur le bouton **OK**.  
+
+   |            Champ             |                                                                                                                                                                 Description                                                                                                                                                                  |
+   |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |        **Imposable**        |                              Sélectionnez ce champ pour configurer la taxe à payer. **Important :**  Ce champ est disponible dans la fenêtre **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE [bp_customize](../../includes/bp_customize_md.md)]                               |
+   |      **Code région fiscale**       |                              Le code de région fiscale du fournisseur. **Important :**  Ce champ est disponible dans la fenêtre **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE [bp_customize](../../includes/bp_customize_md.md)]                              |
+   |    **N° d'exonération fiscale**     | Le numéro d'exonération fiscale de la compagnie. Vous pouvez entrer 30 caractères alphanumériques maximum. **Important :**  Ce champ est disponible dans la fenêtre **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE [bp_customize](../../includes/bp_customize_md.md)] |
+   | **Code provincial de région fiscale** |                               Le code fiscal de la province. **Important :**  Ce champ est disponible dans la fenêtre **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE [bp_customize](../../includes/bp_customize_md.md)]                               |
+
+
+5. Cliquez sur le bouton **OK**.  
 
 ## <a name="to-set-up-use-tax-details"></a>Pour configurer les détails de la taxe de service  
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Détails fiscaux**, puis sélectionnez le lien associé.  

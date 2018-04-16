@@ -28,15 +28,15 @@ Pour trier les nombreuses sources de demande et d'approvisionnement, le système
 
  Généralement le système de planification tient compte de toutes les commandes approvisionnement après la date de début de la planification comme susceptibles de changer pour répondre à une demande. Toutefois, dès qu'une quantité est reportée à partir d'une commande approvisionnement, elle ne peut plus être modifiée par le système de planification. Par conséquent, les différents ordres suivants ne peuvent pas être replanifiés :  
 
--   Bons de production libérés pour lesquels la consommation ou la production a été reportée.  
+- Bons de production libérés pour lesquels la consommation ou la production a été reportée.  
 
--   Ordres d'assemblage pour lesquels la consommation ou la production a été reportée.  
+- Ordres d'assemblage pour lesquels la consommation ou la production a été reportée.  
 
--   Transférez les ordres pour lesquels la livraison a été reportée.  
+- Transférez les ordres pour lesquels la livraison a été reportée.  
 
--   Commandes achat pour lesquelles la réception a été reportée.  
+- Commandes achat pour lesquelles la réception a été reportée.  
 
- Outre le chargement des types d'offre et de demande, certains types sont chargés en fonction de règles et de dépendances spéciales décrites ci-après.  
+  Outre le chargement des types d'offre et de demande, certains types sont chargés en fonction de règles et de dépendances spéciales décrites ci-après.  
 
 ## <a name="item-dimensions-are-separated"></a>Les axes article sont distincts  
  Le programme d'approvisionnement doit être calculé par combinaison des dimensions d'article, comme la variante et l'emplacement. Toutefois, il n'y a pas de raison de calculer des combinaisons théoriques. Seules ces combinaisons contenant une demande et/ou un approvisionnement doivent être calculées.  

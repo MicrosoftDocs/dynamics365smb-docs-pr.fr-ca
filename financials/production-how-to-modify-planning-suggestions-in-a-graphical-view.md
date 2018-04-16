@@ -59,6 +59,7 @@ La procédure suivante indique comment modifier des propositions d'approvisionne
 Pour appliquer les modifications du programme d'approvisionnement, vous devez suivre les messages d'action résultants de la feuille planification ou de la feuille de réquisition. Pour plus d'informations, voir Traiter msg. action - Planning.
 
 ## <a name="symbols-and-icons-on-the-timeline-fasttab"></a>Symboles et icônes sur le raccourci Chronologie
+
  |Symbole/icône|Description|  
  |------------------|---------------------------------------|  
  |Commandes avec|une croix noire (offre et demande).<br /><br /> -   Modification impossible.<br />-   Visible lorsque le champ **Afficher l'inventaire prévisionnel** est sélectionné (graphique orange).|  

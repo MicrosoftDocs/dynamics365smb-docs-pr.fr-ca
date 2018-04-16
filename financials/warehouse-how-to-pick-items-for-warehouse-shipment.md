@@ -72,7 +72,7 @@ Une fois la livraison entrepôt reportée, divers champs de la ligne document de
 
 > [!NOTE]
 > Dans les scénarios de combinaison, où une partie de la quantité doit d'abord être assemblée et l'autre doit être livrée à partir de l'inventaire, deux lignes livraison entrepôt sont créées. L'une est pour la quantité à assembler pour commande et l'autre est destinée à la quantité en inventaire.
-
+> 
 > Dans ce cas, la quantité à assembler pour commande est traitée comme décrit dans cette rubrique, et la quantité en inventaire est traitée comme toute autre ligne livraison entrepôt normale. Pour plus d'informations sur les scénarios de combinaison, consultez [Description des processus Assembler pour commande et Assembler pour inventaire](assembly-assemble-to-order-or-assemble-to-stock.md).
 
 ## <a name="see-also"></a>Voir aussi  

@@ -51,16 +51,16 @@ Le système doit conserver un contrôle constant de la disponibilité des articl
 
  Il doit être possible de réserver tous les articles en inventaire, à l'exception de ceux qui ont lancé un traitement sortant. Par conséquent, la quantité disponible à réserver est définie comme la quantité de tous les documents et tous les types de zone, à l'exception des quantités sortantes suivantes :  
 
--   Quantité dans les documents prélèvement non enregistrés  
--   Quantité dans les zones de livraison  
--   Quantité dans les zones avant production  
--   Quantité dans les emplacements atelier ouverts  
--   Quantité dans les zones vers assemblage  
--   Quantité dans les emplacements ajustement  
+- Quantité dans les documents prélèvement non enregistrés  
+- Quantité dans les zones de livraison  
+- Quantité dans les zones avant production  
+- Quantité dans les emplacements atelier ouverts  
+- Quantité dans les zones vers assemblage  
+- Quantité dans les emplacements ajustement  
 
- Le résultat est affiché dans le champ **Quantité totale disponible** de la fenêtre **Réservation**.  
+  Le résultat est affiché dans le champ **Quantité totale disponible** de la fenêtre **Réservation**.  
 
- Sur une ligne réservation, la quantité qui ne peut pas être réservée, parce qu'elle est affectée dans l'entrepôt, est affichée dans le champ **Qté affectée à l'entrepôt** de la fenêtre **Réservation**.  
+  Sur une ligne réservation, la quantité qui ne peut pas être réservée, parce qu'elle est affectée dans l'entrepôt, est affichée dans le champ **Qté affectée à l'entrepôt** de la fenêtre **Réservation**.  
 
 ### <a name="calculating-the-quantity-available-to-reserve"></a>Calcul de la quantité disponible à réserver  
  La quantité disponible à réserver est calculée de la façon suivante :  

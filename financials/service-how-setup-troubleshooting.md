@@ -25,7 +25,7 @@ Vous pouvez configurer des instructions de dépannage qui aident les techniciens
 
 ## <a name="to-set-up-troubleshooting-guidelines"></a>Pour configurer des instructions dépannage
 1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Dépannage**, puis sélectionnez le lien associé.  
-2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
+2. Renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
 ## <a name="to-assign-troubleshooting-guidelines-to-items-service-items-or-service-item-groups"></a>Pour affecter des instructions de dépannage à des articles, des articles de service ou des groupes articles de service
 1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Articles**, **Articles de service** ou **Groupe d'articles de service**, puis sélectionnez le lien associé.  
