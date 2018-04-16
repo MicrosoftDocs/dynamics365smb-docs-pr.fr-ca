@@ -13,10 +13,10 @@ ms.search.keywords: warehouse, distribution center
 ms.date: 01/25/2018
 ms.author: SorenGP
 ms.translationtype: HT
-ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
-ms.openlocfilehash: 57e16fe7d7dd3edd832fb29773fc2a9c13cba153
+ms.sourcegitcommit: acef03f32124c5983846bc6ed0c4d332c9c8b347
+ms.openlocfilehash: f0baea454c110bdc998761b84e28f167321d95f1
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 
 ---
 # <a name="set-up-locations"></a><span data-ttu-id="936e4-103">Configurer des emplacements</span><span class="sxs-lookup"><span data-stu-id="936e4-103">Set Up Locations</span></span>
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/22/2018
 ## <a name="to-create-a-location-card"></a><span data-ttu-id="936e4-107">Pour créer une fiche emplacement</span><span class="sxs-lookup"><span data-stu-id="936e4-107">To create a location card</span></span>
 1. <span data-ttu-id="936e4-108">Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), saisissez **Magasins**, puis sélectionnez le lien connexe.</span><span class="sxs-lookup"><span data-stu-id="936e4-108">Choose the ![Search for Page or Report](media/ui-search/search_small.png "Search for Page or Report icon") icon, enter **Locations**, and then choose the related link.</span></span>
 2. <span data-ttu-id="936e4-109">Sélectionnez l'action **Nouveau**.</span><span class="sxs-lookup"><span data-stu-id="936e4-109">Choose the **New** action.</span></span>
-3. <span data-ttu-id="936e4-110">Dans la fenêtre **Fiche magasin**, renseignez les champs comme nécessaire.</span><span class="sxs-lookup"><span data-stu-id="936e4-110">In the **Location Card** window, fill in the fields as necessary.</span></span> [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+3. <span data-ttu-id="936e4-110">Dans la fenêtre **Fiche magasin**, renseignez les champs comme nécessaire.</span><span class="sxs-lookup"><span data-stu-id="936e4-110">In the **Location Card** window, fill in the fields as necessary.</span></span> [!INCLUDE [tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. <span data-ttu-id="936e4-111">Répétez les étapes 2 et 3 pour chaque emplacement dans lequel vous souhaitez conserver un inventaire.</span><span class="sxs-lookup"><span data-stu-id="936e4-111">Repeat steps 2 and 3 for every location where you want to keep inventory.</span></span>
 
 > [!NOTE]  
@@ -37,7 +37,7 @@ ms.lasthandoff: 03/22/2018
 1. <span data-ttu-id="936e4-115">Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), saisissez **Magasins**, puis sélectionnez le lien connexe.</span><span class="sxs-lookup"><span data-stu-id="936e4-115">Choose the ![Search for Page or Report](media/ui-search/search_small.png "Search for Page or Report icon") icon, enter **Transfer Routes**, and then choose the related link.</span></span>
 2. <span data-ttu-id="936e4-116">Sinon, à partir de n'importe quelle fenêtre **Fiche magasin**, cliquez sur **Acheminements transfert**.</span><span class="sxs-lookup"><span data-stu-id="936e4-116">Alternatively, from any **Location Card** window, choose the **Transfer Routes** action.</span></span>
 3. <span data-ttu-id="936e4-117">Sélectionnez l'action **Nouveau**.</span><span class="sxs-lookup"><span data-stu-id="936e4-117">Choose the **New** action.</span></span>
-4. <span data-ttu-id="936e4-118">Dans la fenêtre **Fiche magasin**, renseignez les champs comme nécessaire.</span><span class="sxs-lookup"><span data-stu-id="936e4-118">In the **Location Card** window, fill in the fields as necessary.</span></span> [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+4. <span data-ttu-id="936e4-118">Dans la fenêtre **Fiche magasin**, renseignez les champs comme nécessaire.</span><span class="sxs-lookup"><span data-stu-id="936e4-118">In the **Location Card** window, fill in the fields as necessary.</span></span> [!INCLUDE [tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 <span data-ttu-id="936e4-119">Vous pouvez à présent transférer des articles en inventaire entre deux emplacements.</span><span class="sxs-lookup"><span data-stu-id="936e4-119">You can now transfer inventory items between two locations.</span></span> <span data-ttu-id="936e4-120">Pour plus d'informations, voir [Transfert d'inventaire entre des emplacements](inventory-how-transfer-between-locations.md).</span><span class="sxs-lookup"><span data-stu-id="936e4-120">For more information, see [Transfer Inventory Between Locations](inventory-how-transfer-between-locations.md).</span></span>    
 

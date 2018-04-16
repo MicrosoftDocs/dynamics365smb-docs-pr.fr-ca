@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: ba26b354d235981bd7291f9ac6402779f554ac7a
-ms.openlocfilehash: d2a2ee196be4562f62604afd4faed608ff07411f
+ms.sourcegitcommit: acef03f32124c5983846bc6ed0c4d332c9c8b347
+ms.openlocfilehash: c588e4273fa9b23f9ace044a85f5132e12112916
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 
 ---
 # <a name="design-details-loading-the-inventory-profiles"></a><span data-ttu-id="bc350-103">Détails de conception : chargement des profils inventaire</span><span class="sxs-lookup"><span data-stu-id="bc350-103">Design Details: Loading the Inventory Profiles</span></span>
@@ -28,15 +28,15 @@ ms.lasthandoff: 03/22/2018
 
  <span data-ttu-id="bc350-112">Généralement le système de planification tient compte de toutes les commandes approvisionnement après la date de début de la planification comme susceptibles de changer pour répondre à une demande.</span><span class="sxs-lookup"><span data-stu-id="bc350-112">In general, the planning system considers all supply orders after the planning starting date as subject to change in order to fulfill demand.</span></span> <span data-ttu-id="bc350-113">Toutefois, dès qu'une quantité est reportée à partir d'une commande approvisionnement, elle ne peut plus être modifiée par le système de planification.</span><span class="sxs-lookup"><span data-stu-id="bc350-113">However, as soon as a quantity is posted from a supply order, it can no longer be changed by the planning system.</span></span> <span data-ttu-id="bc350-114">Par conséquent, les différents ordres suivants ne peuvent pas être replanifiés :</span><span class="sxs-lookup"><span data-stu-id="bc350-114">Accordingly, the following different orders cannot be replanned:</span></span>  
 
--   <span data-ttu-id="bc350-115">Bons de production libérés pour lesquels la consommation ou la production a été reportée.</span><span class="sxs-lookup"><span data-stu-id="bc350-115">Released production orders where consumption or output has been posted.</span></span>  
+- <span data-ttu-id="bc350-115">Bons de production libérés pour lesquels la consommation ou la production a été reportée.</span><span class="sxs-lookup"><span data-stu-id="bc350-115">Released production orders where consumption or output has been posted.</span></span>  
 
--   <span data-ttu-id="bc350-116">Ordres d'assemblage pour lesquels la consommation ou la production a été reportée.</span><span class="sxs-lookup"><span data-stu-id="bc350-116">Assembly orders where consumption or output has been posted.</span></span>  
+- <span data-ttu-id="bc350-116">Ordres d'assemblage pour lesquels la consommation ou la production a été reportée.</span><span class="sxs-lookup"><span data-stu-id="bc350-116">Assembly orders where consumption or output has been posted.</span></span>  
 
--   <span data-ttu-id="bc350-117">Transférez les ordres pour lesquels la livraison a été reportée.</span><span class="sxs-lookup"><span data-stu-id="bc350-117">Transfer orders where shipment has been posted.</span></span>  
+- <span data-ttu-id="bc350-117">Transférez les ordres pour lesquels la livraison a été reportée.</span><span class="sxs-lookup"><span data-stu-id="bc350-117">Transfer orders where shipment has been posted.</span></span>  
 
--   <span data-ttu-id="bc350-118">Commandes achat pour lesquelles la réception a été reportée.</span><span class="sxs-lookup"><span data-stu-id="bc350-118">Purchase orders where receipt has been posted.</span></span>  
+- <span data-ttu-id="bc350-118">Commandes achat pour lesquelles la réception a été reportée.</span><span class="sxs-lookup"><span data-stu-id="bc350-118">Purchase orders where receipt has been posted.</span></span>  
 
- <span data-ttu-id="bc350-119">Outre le chargement des types d'offre et de demande, certains types sont chargés en fonction de règles et de dépendances spéciales décrites ci-après.</span><span class="sxs-lookup"><span data-stu-id="bc350-119">Apart from loading demand and supply types, certain types are loaded with attention to special rules and dependencies that are described in the following.</span></span>  
+  <span data-ttu-id="bc350-119">Outre le chargement des types d'offre et de demande, certains types sont chargés en fonction de règles et de dépendances spéciales décrites ci-après.</span><span class="sxs-lookup"><span data-stu-id="bc350-119">Apart from loading demand and supply types, certain types are loaded with attention to special rules and dependencies that are described in the following.</span></span>  
 
 ## <a name="item-dimensions-are-separated"></a><span data-ttu-id="bc350-120">Les axes article sont distincts</span><span class="sxs-lookup"><span data-stu-id="bc350-120">Item Dimensions are Separated</span></span>  
  <span data-ttu-id="bc350-121">Le programme d'approvisionnement doit être calculé par combinaison des dimensions d'article, comme la variante et l'emplacement.</span><span class="sxs-lookup"><span data-stu-id="bc350-121">The supply plan must be calculated per combination of the item dimensions, such as variant and location.</span></span> <span data-ttu-id="bc350-122">Toutefois, il n'y a pas de raison de calculer des combinaisons théoriques.</span><span class="sxs-lookup"><span data-stu-id="bc350-122">However, there is no reason to calculate any theoretical combination.</span></span> <span data-ttu-id="bc350-123">Seules ces combinaisons contenant une demande et/ou un approvisionnement doivent être calculées.</span><span class="sxs-lookup"><span data-stu-id="bc350-123">Only those combinations that carry a demand and/or supply need to be calculated.</span></span>  

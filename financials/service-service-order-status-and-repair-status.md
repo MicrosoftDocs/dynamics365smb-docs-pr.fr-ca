@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 07/01/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: bec0619be0a65e3625759e13d2866ac615d7513c
-ms.openlocfilehash: 21f4a6fc048688858cad77fb3d306fb39bd5620c
+ms.sourcegitcommit: acef03f32124c5983846bc6ed0c4d332c9c8b347
+ms.openlocfilehash: 3852ca5399a932705216fe6089644838aa56d26b
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 
 ---
 # <a name="service-order-status-and-repair-status"></a><span data-ttu-id="1209a-104">État commande service et état réparation</span><span class="sxs-lookup"><span data-stu-id="1209a-104">Service Order Status and Repair Status</span></span>
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/22/2018
 * <span data-ttu-id="1209a-110">L'état commande service auquel chaque état réparation est lié.</span><span class="sxs-lookup"><span data-stu-id="1209a-110">The service order status that each repair status is linked to.</span></span> <span data-ttu-id="1209a-111">Pour plus d'informations, voir Statut commande service.</span><span class="sxs-lookup"><span data-stu-id="1209a-111">For more information, see Service Order Status.</span></span>  
 * <span data-ttu-id="1209a-112">Le niveau de priorité de chaque option état commande service.</span><span class="sxs-lookup"><span data-stu-id="1209a-112">The level of priority of each service order status option.</span></span> <span data-ttu-id="1209a-113">Pour plus d'informations, voir Priorité.</span><span class="sxs-lookup"><span data-stu-id="1209a-113">For more information, see Priority.</span></span>  
   
- <span data-ttu-id="1209a-114">Lorsque vous convertissez un devis service en commande service, l'état réparation de chaque article de service de la commande est modifié à **Initial** et le statut de la commande service passe à **Suspendu**.</span><span class="sxs-lookup"><span data-stu-id="1209a-114">When you convert a service quote to a service order, the repair status of each service item is changed in the order to **Initial** and the service order status is changed to **Pending**.</span></span>  
+  <span data-ttu-id="1209a-114">Lorsque vous convertissez un devis service en commande service, l'état réparation de chaque article de service de la commande est modifié à **Initial** et le statut de la commande service passe à **Suspendu**.</span><span class="sxs-lookup"><span data-stu-id="1209a-114">When you convert a service quote to a service order, the repair status of each service item is changed in the order to **Initial** and the service order status is changed to **Pending**.</span></span>  
   
 ## <a name="specifying-service-order-status-for-repair-status"></a><span data-ttu-id="1209a-115">Spécification de l'état commande service pour l'état réparation</span><span class="sxs-lookup"><span data-stu-id="1209a-115">Specifying Service Order Status for Repair Status</span></span>  
 <span data-ttu-id="1209a-116">Chaque état réparation est lié à un état commande service précis.</span><span class="sxs-lookup"><span data-stu-id="1209a-116">Each repair status is linked to a particular service order status.</span></span> <span data-ttu-id="1209a-117">Les options de ce statut commande service sont **Suspendu**, **En cours**, **En attente** et **Terminé**.</span><span class="sxs-lookup"><span data-stu-id="1209a-117">The options for the service order status are as follows: **Pending**, **In Process**, **On Hold**, and **Finished**.</span></span> <span data-ttu-id="1209a-118">Neuf options d'état réparation sont disponibles : **Initial**, **En cours**, **Expertisé**, **Service en partie réalisé**, **Devis terminé**, **Attente réponse client**, **Pièce de rechange commandée**, **Pièce de rechange reçue** et **Terminé**.</span><span class="sxs-lookup"><span data-stu-id="1209a-118">The repair status options are as follows: **Initial**, **In Process**, **Referred**, **Partly Serviced**, **Quote Finished**, **Waiting for Customer**, **Spare Part Ordered**, **Spare Part Received**, and **Finished**.</span></span>  
