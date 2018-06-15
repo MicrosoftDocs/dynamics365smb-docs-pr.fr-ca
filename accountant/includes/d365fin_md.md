@@ -1,1 +1,1 @@
-<span data-ttu-id="bd83c-101">Finance and Operations, Business edition</span><span class="sxs-lookup"><span data-stu-id="bd83c-101">Finance and Operations, Business edition</span></span>
+<span data-ttu-id="68468-101">Business Central</span><span class="sxs-lookup"><span data-stu-id="68468-101">Business Central</span></span>
