@@ -1,22 +1,20 @@
 ---
-title: Utiliser des tableaux d'analyse| Microsoft Docs
+title: "Générer des rapports financiers à l'aide de tableaux d'analyse"
 description: "Décrit comment utiliser des tableaux d'analyse pour créer différentes vues et différents rapports pour l'analyse des données de performances financières."
-services: project-madeira
-documentationcenter: 
-author: SorenGP
+author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: bi, power BI, analysis, KPI
-ms.date: 01/25/2018
-ms.author: sgroespe
+ms.date: 04/16/2018
+ms.author: edupont
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: d01bd220571b7b87d9e631c8a4d75bef951c7433
+ms.sourcegitcommit: 7c346455a9e27d7274b116754f1d594484b95d67
+ms.openlocfilehash: f9f5b3a25a24d4d10c80d048153e68030733bf9e
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/18/2018
 
 ---
 # <a name="work-with-account-schedules"></a>Utilisation des tableaux d'analyse
@@ -72,11 +70,102 @@ Vous pouvez utiliser un tableau d'analyse pour créer un rapport comparant les c
 8. Sur le raccourci **Filtres axe**, définissez le filtre budget sur le nom du filtre désiré.  
 9. Cliquez sur le bouton **OK**.  
 
-Vous pouvez maintenant copier et coller votre budget dans un classeur.
+Vous pouvez maintenant copier et coller votre budget dans un classeur.  
+
+## <a name="comparing-accounting-periods-using-period-formulas"></a>Comparaison de périodes comptables à l'aide de formules de période
+Votre tableau d'analyse peut comparer les résultats de différentes périodes comptables, par exemple ce mois et le même mois l'année précédente. Pour ce faire, vous ajoutez une colonne avec le champ **Formule période comparaison**, puis définissez ce champ sur une formule de période.  
+
+Une période comptable ne doit pas correspondre au calendrier, mais chaque exercice financier doit avoir le même nombre de périodes comptables, même si chaque période peut varier.   
+
+[!INCLUDE[d365fin](includes/d365fin_md.md)] utilise la formule de période pour calculer le montant de la période de comparaison en fonction de la période représentée dans le filtre date de la demande de rapport. La période de comparaison est basée sur la période de la date de début du filtre de date. Les abréviations utilisées pour les spécifications de période sont les suivantes :
+
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Abréviation</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>P</p></td>
+<td><p>Période</p></td>
+</tr>
+<tr class="even">
+<td><p>DP</p></td>
+<td><p>Dernière période d'un exercice financier, semestre ou trimestre.</p></td>
+</tr>
+<tr class="odd">
+<td><p>FP</p></td>
+<td><p>Période actuelle d'un exercice financier, semestre ou trimestre.</p></td>
+</tr>
+<tr class="even">
+<td><p>EC</p></td>
+<td><p>Exercice financier. Par exemple, EF[1..3] désigne le premier trimestre de l'exercice financier actuel.</p></td>
+</tr>
+</tbody>
+</table>
+
+Exemples de formule :
+
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Formule</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>&lt;Vide&gt;</p></td>
+<td><p>Période en cours</p></td>
+</tr>
+<tr class="even">
+<td><p>-1P</p></td>
+<td><p>Période précédente</p></td>
+</tr>
+<tr class="odd">
+<td><p>-1EC[1..DP]</p></td>
+<td><p>Ensemble de l'exercice financier précédent</p></td>
+</tr>
+<tr class="even">
+<td><p>-1EC</p></td>
+<td><p>Période de l'exercice financier précédent équivalente à la période en cours</p></td>
+</tr>
+<tr class="odd">
+<td><p>-1EC[1..3]</p></td>
+<td><p>Premier trimestre de l'exercice financier précédent</p></td>
+</tr>
+<tr class="even">
+<td><p>-1EC[1..FP]</p></td>
+<td><p>Du début de l'exercice financier précédent à la période en cours dans l'exercice financier précédent incluse</p></td>
+</tr>
+<tr class="odd">
+<td><p>-1EC[FP..DP]</p></td>
+<td><p>De la période en cours dans l'exercice financier précédent à la dernière période de l'exercice financier précédent incluse</p></td>
+</tr>
+</tbody>
+</table>
+
+Pour effectuer des calculs basés par périodes, vous devez entrer une formule dans le champ **Formule date comparaison** à la place.
+
+> [!NOTE]
+> Il n'est pas toujours transparent de déterminer les périodes à comparer, car vous pouvez définir un filtre date sur un rapport qui couvre des dates différentes des périodes comptables représentées dans les données du plan comptable. Par exemple, vous créez un tableau d'analyse dans lequel vous souhaitez comparer cette période avec la même période l'année précédente. Vous définissez le champ **Filtre période date comparaison** sur *-1EF*. Ensuite, vous exécutez le rapport le 28 février et définissez le filtre date sur Janvier et février. Par conséquent, le tableau d'analyse compare les mois de janvier et février de cette année au mois de janvier de l'année précédente, qui est la seule période comptable terminée des deux pour l'année précédente.  
+
 
 ## <a name="see-also"></a>Voir aussi
 [Veille économique](bi.md)  
-[Finances](finance.md)  
+[Finance](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 [Les écritures comptables et le plan comptable](finance-general-ledger.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
