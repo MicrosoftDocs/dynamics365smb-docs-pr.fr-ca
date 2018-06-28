@@ -11,10 +11,10 @@ ms.search.keywords:
 ms.date: 08/11/2017
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 7f2bef783553b42289b7befa75a8ede737bb0a83
+ms.sourcegitcommit: 2286b728a464943841b192031cfea13644441013
+ms.openlocfilehash: 79824c8a9b6e311fa32d5d781a33da55b1faaf04
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/28/2018
 
 ---
 # <a name="canada-local-functionality"></a><span data-ttu-id="2ac83-103">Fonctionnalités locales Canada</span><span class="sxs-lookup"><span data-stu-id="2ac83-103">Canada Local Functionality</span></span>
@@ -34,5 +34,5 @@ ms.lasthandoff: 03/22/2018
 <span data-ttu-id="2ac83-115">[Utilisation de [!INCLUDE[d365fin](../../includes/d365fin_md.md)]](../../ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="2ac83-115">[Working with [!INCLUDE[d365fin](../../includes/d365fin_md.md)]](../../ui-work-product.md)</span></span>   
 
 ## [!INCLUDE[d365fin](../../includes/free_trial_md.md)]  
-## [!INCLUDE[d365fin](../../includes/training_link_md.md)]
+ 
 
