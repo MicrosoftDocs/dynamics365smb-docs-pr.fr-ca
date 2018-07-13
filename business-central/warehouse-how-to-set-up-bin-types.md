@@ -10,19 +10,19 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 08/23/2017
+ms.date: 06/18/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 19beb71ecd377bb7f5a7429021d04769900f87d2
+ms.sourcegitcommit: 3331849cf94c70d0597ae5f37d3109451947c9fc
+ms.openlocfilehash: 0af456e420c9b485e242c15e660367a348c75536
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/20/2018
 
 ---
 # <a name="set-up-bin-types"></a>Configurer des types de zone
 Vous pouvez diriger la circulation des articles vers les emplacements que vous avez définis pour des activités entrepôt particulières. Vous attribuez à chaque zone des activités de flux de base, et définissez de cette façon la manière dont une zone est utilisée, en lui affectant un type.  
 
-Il existe huit types de zones. Votre entrepôt peut fonctionner avec la totalité de ces huit types de zones, mais vous pouvez également décider de n'utiliser que les types RÉCEPT., RANGPRÉLÈV., LIVR. et CQ. Ces quatre types de zones permettent à des propositions relatives à la prise en charge du flux des articles d'être effectuées et vous permettent d'enregistrer les différences d'inventaire.  
+Il existe six types. Votre entrepôt peut fonctionner avec la totalité de ces six types de zones, mais vous pouvez également décider de n'utiliser que les types RÉCEPT., RANGPRÉLÈV., LIVR. et CQ. Ces quatre types de zones permettent à des propositions relatives à la prise en charge du flux des articles d'être effectuées et vous permettent d'enregistrer les différences d'inventaire.  
 
 ## <a name="to-set-up-the-bin-types-you-want-to-use"></a>Pour configurer les types de zones que vous souhaitez utiliser  
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Types zone**, puis sélectionnez le lien associé.  

@@ -1,6 +1,6 @@
 ---
 title: Gestion des comptes fournisseur| Microsoft Docs
-description: "Aperçu de la manière dont Financials vous aide à gérer les comptes fournisseurs, y compris les paiements fournisseur, les créditeurs, les dettes, et le solde dû."
+description: "Aperçu de la manière de gérer les comptes fournisseurs, y compris les paiements fournisseur, les créditeurs, les dettes, et le solde dû."
 services: project-madeira
 documentationcenter: 
 author: bholtorf
@@ -12,13 +12,13 @@ ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
 ms.search.keywords: vendor payment, creditor, debt, balance due, AP
-ms.date: 06/02/2017
+ms.date: 06/01/2018
 ms.author: bholtorf
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: b128e567a07f4b0a6abffe8f1c82c740317016ff
+ms.sourcegitcommit: e3917573a912a4e51416c4e926443c87513728fe
+ms.openlocfilehash: 1682db5bd62f980e8789613cd2ca4169f98e839d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/01/2018
 
 ---
 # <a name="managing-payables"></a>Gestion des comptes fournisseur
@@ -42,7 +42,7 @@ Lorsque vous êtes prêt à régler un fournisseur, dans la fenêtre **Feuille p
 
 Si vous ne souhaitez pas reporter une ligne journal paiement pour un paiement exporté, par exemple parce que vous attendez la confirmation de la banque que la transaction a été traitée, vous pouvez simplement supprimer la ligne journal. Par la suite, lorsque vous créez une ligne feuille paiement pour payer le montant ouvert de la facture, le champ **Montant total exporté** affiche la quantité du montant ayant déjà été exportée. En outre, vous pouvez rechercher des informations détaillées concernant le total exporté en cliquant sur le bouton **Écritures reg. virement**.
 
-Si vous attendez que votre banque confirme le traitement des transactions pour reporter les paiements, il existe deux méthodes d'éviter de réexporter par erreur les paiements pour les documents ouverts :  
+Si vous attendez que votre banque confirme le traitement des transactions pour reporter les paiements, il existe deux méthodes pour éviter de réexporter par erreur les paiements pour les documents ouverts :  
 
 * Dans une feuille paiement avec les lignes paiement proposées, vous pouvez trier soit la colonne **Exporté dans fichier paiement** soit la colonne **Montant total exporté**, puis supprimer les propositions de paiement pour les factures ouvertes pour lesquelles les paiements ont déjà été effectués et pour lesquelles vous ne souhaitez pas effectuer de paiements.
 

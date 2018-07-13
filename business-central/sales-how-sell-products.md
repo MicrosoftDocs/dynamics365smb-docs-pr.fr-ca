@@ -11,10 +11,10 @@ ms.search.keywords: trade
 ms.date: 04/30/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 75501b9402bb1c14fcfeb2fc6e61f055a2247493
-ms.openlocfilehash: b3a3c4067c40ff2911c368cc97c94404b9dd66e2
+ms.sourcegitcommit: 046a42582dc66368fded90a4bb45add71a95d979
+ms.openlocfilehash: ad8936e09a8f093f5855a87c8d78e05839afefc1
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 07/02/2018
 
 ---
 # <a name="sell-products"></a>Vendre des produits
@@ -23,7 +23,7 @@ Vous créez un document de vente ou une facture vente pour enregistrer votre ent
 > [!NOTE]  
 >   Vous utilisez des documents de vente si votre processus de vente requiert une livraison partielle d'une quantité de commande, par exemple, si la quantité totale n'est pas disponible immédiatement. Si vous commercialisez des articles en les livrant directement du fournisseur au client, vous devez également utiliser les documents de vente. Pour plus d'informations, voir [Effectuer des livraisons directes](sales-how-drop-shipment.md). Pour tous les autres aspects, les commandes vente fonctionnent de la même manière que les factures vente. Pour plus d'informations, reportez-vous à [Facturer des ventes](sales-how-invoice-sales.md).
 
-Vous pouvez négocier avec le client en créant d'abord un devis, que vous pouvez convertir en document de vente lorsque vous êtes d'accord sur la vente. Pour plus d'informations, voir [Créer des offres](sales-how-make-offers.md).
+Vous pouvez négocier avec le client en créant d'abord un devis, que vous pouvez convertir en document de vente lorsque vous êtes d'accord sur la vente. Pour plus d'informations, voir [Créer des devis](sales-how-make-offers.md).
 
 Une fois que le client a confirmé l'entente, par exemple après une procédure de devis, vous pouvez envoyer une confirmation de commande pour enregistrer votre obligation de fournir les produits comme convenu.
 

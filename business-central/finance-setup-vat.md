@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: VAT, posting, tax, value-added tax
-ms.date: 04/20/2017
+ms.date: 05/06/2018
 ms.author: bholtorf
 ms.translationtype: HT
-ms.sourcegitcommit: b4dfdeb3cf49867699907c444147060727d3f146
-ms.openlocfilehash: 335738af45c1365da7e45f062b60e30d66082f41
+ms.sourcegitcommit: e73c2dd0533aade4aa6225c9d2f385baaea3cfd1
+ms.openlocfilehash: 399b1a4331431a6472ecebaad41489092d117cfa
 ms.contentlocale: fr-ca
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 06/11/2018
 
 ---
 
@@ -48,9 +48,9 @@ Pour configurer des numéros d'identification intracommunautaire, procédez comm
 2. Choisissez le pays ou la région, puis sélectionnez l'action **Formats N° d'inscription TPS/TVH**.
 3. Dans le champ **Formats**, définissez le format en saisissant un ou plusieurs des caractères suivants :  
 
-* # <a name="--requires-a-single-digit-number"></a>- Requiert un numéro à un seul chiffre.
-* @ - Requiert une lettre. Ce texte n'est pas sensible à la casse.
-* ? - Tout caractère est autorisé.
+* **#** Requiert un numéro à un seul chiffre.  
+* **@** Requiert une lettre. Ce texte n'est pas sensible à la casse.  
+* **?** Tout caractère est autorisé.  
 
     > [!Tip]
     > Vous pouvez utiliser d'autres caractères tant qu'ils sont présents dans le format du pays ou de la région. Par exemple, si vous souhaitez inclure un point ou un trait d'union entre des séries de chiffres, vous pouvez définir le format sous la forme ##.####.### ou @@-###-###.  
@@ -116,6 +116,29 @@ Les sections suivantes décrivent comment affecter des groupes comptabilisation 
 * Sur la fiche **Ressource**, développez le raccourci **Facturation**.  
 3. Choisissez le groupe de report produit TVA.  
 
+## <a name="setting-up-vat-statement-templates-and-vat-statement-names"></a>Configuration des modèles de relevé fiscal et des noms de relevé fiscal
+Les autorités fiscales peuvent modifier et modifient leurs exigences de report de la TVA. Les **Modèles de relevé fiscal** et les **Noms de relevé fiscal** peuvent vous aider à vous préparer aux changements à venir et à vous conformer en douceur aux nouvelles exigences. Vous pouvez utiliser les modèles de relevé fiscal pour définir les champs à inclure dans votre relevé fiscal, qui définissent à leur tour les calculs, et vous pouvez créer un modèle de relevé fiscal lorsque les exigences changent. Par exemple, un modèle peut calculer la TVA pour cette année en fonction des exigences actuelles, et un autre modèle peut calculer la TVA en fonction des exigences de l'année suivante. Les modèles permettent également de conserver un historique des formats de relevé fiscal, pour vous permettre de déterminer comment la TVA a été calculée au cours des exercices précédents.
+
+## <a name="how-to-define-and-preview-vat-statements"></a>Définition et affichage d'un aperçu des relevés fiscaux
+Les relevés fiscaux vous permettent de calculer le montant du relevé fiscal pour une période donnée, par exemple, un trimestre. Après avoir défini un relevé fiscal, vous pouvez en afficher un aperçu pour vérifier qu'il répond à vos besoins. 
+
+Pour définir un relevé fiscal, procédez comme suit :
+
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Relevés fiscaux**, puis sélectionnez le lien associé.  
+2. Choisissez le champ **Nom**, puis sélectionnez **Nouveau** sur la page **Noms de relevé fiscal**. 
+3. Renseignez les champs requis. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+
+> [!Tip]
+> Vous pouvez filtrer les informations de la déclaration, selon votre sélection dans le champ **Type**. L'option **Totalisation comptes** est utile lorsque vous souhaitez calculer la TVA à partir d'un compte spécifique.
+L'option **Total écriture TVA** permet d'obtenir la TVA pour les comptes affectés aux sélections dans les champs **Type de report général**, **Groupe de report de marché TVA** et/ou **Groupe de report produit TVA**. L'option **Total de lignes** permet de saisir une valeur ou des critères de filtre rapide dans le champ **Total de lignes**. Pour plus d'informations, voir [Recherche, filtrage et tri des données](ui-enter-criteria-filters.md). L'option **Description** est souvent utilisée pour ajouter une note à la déclaration. Par exemple, vous pouvez l'utiliser comme en-tête si vous avez utilisé Total de lignes.
+
+Pour afficher un aperçu du relevé fiscal, procédez comme suit :
+
+1. Choisissez **Aperçu**.
+2. Entrez un filtre de date pour limiter la déclaration à une période spécifique. Pour plus d'informations sur la personnalisation de la page pour afficher le filtre de date, voir [Recherche, filtrage et tri des données](ui-enter-criteria-filters.md).
+3. Vous pouvez sélectionner diverses options pour indiquer le type des écritures TVA à inclure dans la déclaration.
+4. Sur les lignes où le champ **Type** indique la valeur **TVA**, vous pouvez afficher la liste des écritures TVA en choisissant le montant figurant dans le champ **Montant colonne**.   
+
 ## <a name="to-set-up-clauses-to-explain-the-use-of-non-standard-vat-rates"></a>Pour configurer des clauses pour expliquer l'utilisation de taux de TVA non standard
 Vous configurez une clause TVA afin de décrire le type utilisation de TVA qui est appliquée. Les informations peuvent être requises par une réglementation gouvernementale. Après avoir configuré une clause TVA et l'avoir associée à une configuration report TVA, la clause TVA est affichée sur les documents vente imprimés qui utilisent le groupe de configuration report TVA.
 
@@ -166,8 +189,7 @@ Vous pouvez afficher le journal d'identification TVA sur les fiches client, four
 
 Notre service peut aussi vous faire gagner du temps lorsque vous créez un client ou un fournisseur. Si vous connaissez le numéro TVA du client, vous pouvez le saisir dans le champ **N° identif. intracomm.** des fiches client ou fournisseur, et nous complèterons le nom du client pour vous. Certains pays fournissent également les adresses compagnie dans un format structuré. Dans ces pays, nous compléterons aussi l'adresse.  
 
-> [!NOTE]  
-> Voici quelques points à noter concernant le service VIES de validation de numéros de TVA :
+Voici quelques points à noter concernant le service VIES de validation de numéros de TVA :
 
 * Le service utilise le protocole http, ce qui signifie que les données transférées via le service ne sont pas cryptées.  
 * Vous pouvez rencontrer des temps d'arrêt pour ce service dont Microsoft n'est pas responsable. Le service fait partie d'un vaste réseau de l'UE de registres de TVA nationaux.
