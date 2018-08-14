@@ -47,7 +47,7 @@ La compagnie par défaut est appelée CRONUS et contient uniquement des données
 La date de travail par défaut est généralement la date du jour. Vous pouvez être amené à modifier temporairement la date de travail pour effectuer des tâches telles que l'exécution de transactions à une date différente de la date actuelle, .
 
 > [!TIP]  
->   Pour entrer rapidement la date de travail dans un champ de date, tapez **w**. Pour entrer la date actuelle dans le champ de date, tapez **t**.
+>   Pour entrer rapidement la date de travail dans un champ de date, tapez **t**. Pour entrer la date actuelle dans le champ de date, tapez **a**.
 
 > [!IMPORTANT]  
 >   La date de travail n'est modifiée que lorsque vous fermez la compagnie ou que la date change. Si vous ouvrez une autre compagnie, ou si vous ouvrez la même compagnie le lendemain, et si vous souhaitez toujours utiliser une date qui n'est pas la date de travail, il faut à nouveau définir la date de travail.
