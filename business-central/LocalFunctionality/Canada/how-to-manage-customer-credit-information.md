@@ -10,6 +10,7 @@ ms.workload: na
 ms.search.keywords: 
 ms.date: 08/11/2017
 ms.author: sgroespe
+redirect_url: ../../receivables-how-block-customers
 ms.translationtype: HT
 ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
 ms.openlocfilehash: 03730b8c429168440442e4d55f335cf3711f132d
