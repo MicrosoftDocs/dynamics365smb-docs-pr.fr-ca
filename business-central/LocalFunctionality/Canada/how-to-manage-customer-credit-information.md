@@ -10,11 +10,12 @@ ms.workload: na
 ms.search.keywords: 
 ms.date: 08/11/2017
 ms.author: sgroespe
+redirect_url: ../../receivables-how-block-customers
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 03730b8c429168440442e4d55f335cf3711f132d
+ms.sourcegitcommit: ac8746e90309cc9ac34ee37239b62ffb96d300b5
+ms.openlocfilehash: 07e697fd5419c396f3f2c2f006e74e2797612d9b
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/03/2018
 
 ---
 # <a name="manage-customer-credit-information"></a><span data-ttu-id="349f3-104">Gérer les renseignements sur le crédit client</span><span class="sxs-lookup"><span data-stu-id="349f3-104">Manage Customer Credit Information</span></span>
