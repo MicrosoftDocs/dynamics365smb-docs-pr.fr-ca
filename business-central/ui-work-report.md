@@ -13,18 +13,41 @@ ms.search.keywords: task, process, report
 ms.date: 07/06/2017
 ms.author: jswymer
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 01a7a1d254916a8b93744183d3678c2082aec42c
+ms.sourcegitcommit: d0ef9148b082b05a46283f89c3cb98bb1cd0c6d0
+ms.openlocfilehash: 560760b1f895ed69c2e7fd80ccf451763e87d19b
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/06/2018
 
 ---
 # <a name="working-with-reports"></a>Utilisation des rapports
 Un rapport regroupe des informations en fonction d'un ensemble de critères spécifié, et organise et présente les informations dans un format imprimable et facilement lisible. Il existe de nombreux rapports accessibles dans l'ensemble de l'application. Les rapports fournissent généralement des informations relatives au contexte de la page où vous vous trouvez. Par exemple, la page **Client** comprend des rapports pour les 10 principaux clients et les statistiques de vente, et plus encore.
 
-Vous pouvez rechercher des rapports dans l'onglet **Rapports** des pages sélectionnées, ou vous pouvez utiliser la recherche pour rechercher des rapports par leur nom. Lorsque vous ouvrez un rapport, vous voyez d'abord une page qui vous permet de spécifier des informations (des options et des filtres) qui déterminent ce que vous souhaitez inclure dans le rapport. Par exemple, selon le rapport, vous pouvez spécifier une plage de dates, un enregistrement particulier tel qu'un client, ou effectuer un tri. Voici un exemple :
+Les rapports sont disponibles sous l'onglet **Rapports** des pages sélectionnées, ou vous pouvez utiliser la fonction de recherche ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche") pour rechercher des rapports par nom.
+
+
+## <a name="specifying-the-data-to-include-in-the-report"></a>Définition des données à inclure dans le rapport
+Lorsque vous ouvrez un rapport, une page s'affiche généralement pour vous permettre de définir plusieurs options et filtres qui déterminent les éléments à inclure dans le rapport. Cette page est appelée la page de demande du rapport. Par exemple, la page de demande du rapport vous permet de créer un rapport pour un client spécifique, une plage de dates spécifique, ou encore de définir l'ordre des informations dans le rapport. Voici un exemple de page de demande du rapport :
 
 ![Options de rapport](media/report_options.png "Options de rapport")
+
+### <a name="SavedSettings"></a>Utilisation des paramètres enregistrés
+Avec certains rapports, selon la manière dont ils sont conçus, la page de rapport peut inclure la section **Paramètres enregistrés** qui contient une ou plusieurs entrées dans la zone **Utiliser les valeurs par défaut de**. Les entrées de cette zone sont appelées *paramètres enregistrés*. Un paramètre enregistré est fondamentalement un groupe prédéfini d'options et de filtres que vous pouvez appliquer au rapport avant d'en afficher un aperçu ou de l'envoyer vers un fichier. L'écriture de paramètres enregistrés appelée **Options et filtres récemment utilisés** est toujours disponible. Cette écriture permet de faire en sorte que le rapport réutilise les options et les filtres utilisés la dernière fois que vous l'avez consulté.
+
+Le fait d'utiliser les paramètres enregistrés est une façon rapide et fiable de générer de façon cohérente des états qui contiennent les données adéquates. Après avoir défini la zone **Utiliser les valeurs par défaut de** sur une entrée de paramètres enregistrés, vous pouvez modifier les options et les filtres avant d'afficher un aperçu ou d'enregistrer le rapport. Vos modifications ne seront pas enregistrées dans l'entrée de paramètres enregistrés que vous avez sélectionnée, mais elles seront sauvegardées dans la zone **Options et filtres récemment utilisés**.
+
+>[!NOTE]
+>Si vous êtes un administrateur, vous pouvez créer et gérer les paramètres enregistrés des rapports pour tous les utilisateurs. Pour plus d'informations, voir [Gestion des paramètres enregistrés dans les rapports](reports-saving-reusing-settings.md).
+
+### <a name="setting-options-and-filters"></a>Définition des options et des filtres
+Si vous souhaitez limiter davantage ou localiser les données incluses dans un rapport, vous pouvez définir des options et des filtres supplémentaires.
+
+Les filtres vous permettent d'afficher les données selon des critères spécifiques. Les filtres sont regroupés selon l'entité à laquelle ils appartiennent, par exemple **Client** dans l'illustration ci-dessus. Vous spécifiez un filtre en définissant la zone **Où** sur le champ de filtre, puis en ajoutant les critères dans la zone **est :**. Par exemple, dans l'illustration ci-dessus, un filtre unique crée un rapport pour le client dont le **N°** est égal à **01121212**.
+
+Vous pouvez ajouter d'autres filtres en définissant les zones **Ajouter**. Lorsque vous avez défini plusieurs filtres, seuls les résultats qui répondent aux critères de tous les filtres seront inclus dans le rapport.
+
+Selon le champ de type que vous filtrez, vous pouvez spécifier les critères de filtre pour rechercher une correspondance exacte, une correspondance partielle, une plage de valeurs, etc. Pour obtenir de l'aide sur la configuration des filtres, voir :
+-   [Filtrage](ui-enter-criteria-filters.md#FilterCriteria)
+-   [Saisie de plages de dates](ui-enter-date-ranges.md)
 
 ## <a name="previewing-a-report"></a>Affichage de l'aperçu d'un rapport
 Sélectionnez **Aperçu** pour visualiser le rapport dans le navigateur Internet. Pointez un zone du rapport pour afficher la barre de menus.  
@@ -57,14 +80,6 @@ Vous pouvez programmer un rapport lorsque vous l'ouvrez. Vous devez sélectionne
 
 ## <a name="PrintReport"></a>Impression d'un rapport
 Vous pouvez imprimer un rapport à l'aide du bouton **Imprimer** sur la page d'options qui s'affiche lorsque vous ouvrez le rapport ou dans la barre de menu dans l'aperçu.
-
-## <a name="using-saved-settings"></a>Utilisation des paramètres enregistrés
-Un rapport peut inclure une ou plusieurs écritures dans la zone **Paramètres enregistrés**. Les *Paramètres enregistrés* sont fondamentalement un groupe prédéfini d'options et de filtres que vous pouvez appliquer au rapport avant d'en afficher un aperçu ou de l'envoyer vers un fichier. Le fait d'utiliser les paramètres enregistrés est une façon rapide et fiable de générer de façon cohérente des états qui contiennent les données adéquates.
-
-L'écriture de paramètres enregistrés appelée **Options et filtres récemment utilisés** est toujours disponible. Cette écriture permet de faire en sorte que le rapport réutilise les options et les filtres utilisés la dernière fois que vous l'avez consulté.
-
->[!NOTE]
->En tant qu'administrateur, vous pouvez créer et gérer les paramètres enregistrés pour les rapports pour tous les utilisateurs. Pour plus d'informations, voir [Gestion des paramètres enregistrés dans les rapports](reports-saving-reusing-settings.md).
 
 ## <a name="changing-the-layout-and-look-of-a-report"></a>Modification de la présentation et de l'apparence d'un rapport
 Une présentation de rapport contrôle les éléments affichés sur un rapport, leur agencement et leur mise en forme. Si vous souhaitez changer de présentation, voir [Modification de la présentation actuellement utilisée sur un rapport](ui-how-change-layout-currently-used-report.md). Ou, si vous souhaitez personnaliser votre propre présentation de rapport, voir [Créer et modifier une présentation de rapport personnalisée](ui-how-create-custom-report-layout.md).
