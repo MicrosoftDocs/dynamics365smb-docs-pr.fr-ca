@@ -110,7 +110,6 @@
 ### [Nombre, ajustement ou reclassement de l'inventaire](inventory-how-count-adjust-reclassify.md)
 ### [Activer la rupture de charge automatique avec prélèvement et rangement dirigé](warehouse-enable-automatic-breaking-bulk-with-directed-put-away-and-pick.md)
 ### [Activer le prélèvement par FEFO](warehouse-picking-by-fefo.md)
-### [Activer les systèmes de saisie automatisée (ADCS)](warehouse-use-automated-data-capture-systems-adcs.md)
 ### [Restructurer les entrepôts](warehouse-how-to-restructure-warehouses.md)
 ## [Paramétrage de la production](production-configure-production-processes.md)
 ### [Créer des calendriers atelier](production-how-to-create-work-center-calendars.md)
