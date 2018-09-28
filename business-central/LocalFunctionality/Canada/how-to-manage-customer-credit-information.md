@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 08/11/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 redirect_url: ../../receivables-how-block-customers
 ms.translationtype: HT
-ms.sourcegitcommit: ac8746e90309cc9ac34ee37239b62ffb96d300b5
-ms.openlocfilehash: 07e697fd5419c396f3f2c2f006e74e2797612d9b
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: e9404c9db923415cfabf3170295c70f4bc2ad114
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/03/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="manage-customer-credit-information"></a><span data-ttu-id="349f3-104">Gérer les renseignements sur le crédit client</span><span class="sxs-lookup"><span data-stu-id="349f3-104">Manage Customer Credit Information</span></span>

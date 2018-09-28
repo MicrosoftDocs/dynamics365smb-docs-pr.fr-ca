@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 08/11/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 8d27be8b5aa61818a38fd3f5b621ab82d08408ce
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: e0f21ed03c51b23111e20a9bb8b988582a2be556
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="print-troubleshooting-reports"></a><span data-ttu-id="69221-103">Imprimer des rapports de dépannage</span><span class="sxs-lookup"><span data-stu-id="69221-103">Print Troubleshooting Reports</span></span>
