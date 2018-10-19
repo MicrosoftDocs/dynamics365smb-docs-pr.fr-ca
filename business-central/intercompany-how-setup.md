@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: IC, group, consolidation, affiliate, subsidiary
-ms.date: 06/07/2018
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: e73c2dd0533aade4aa6225c9d2f385baaea3cfd1
-ms.openlocfilehash: a9e3788687e88a60141e9ffb6b18f1c98a180c59
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 437828c497b6e80f3eea7536fca363ce67bc9d5e
 ms.contentlocale: fr-ca
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="set-up-intercompany"></a>Configuration des fonctionnalités intersociétés
@@ -27,16 +27,16 @@ Si vous créez ou recevez des lignes intersociétés contenant des articles, vou
 Si vous créez des transactions de vente intercompagnies incluant des ressources, vous devez renseigner le champ **N° cpte G/L partenaire ach. IC** de la fiche ressource de chaque ressource concernée. Il s'agit du numéro du compte du grand livre intercompagnie sur lequel le montant de cette ressource va être reporté dans la compagnie partenaire. Pour plus d'informations, voir .  
 
 ## <a name="to-set-up-companies-for-intercompany-transactions"></a>Pour configurer des compagnies pour les transactions intercompagnies
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Informations compagnie**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Informations compagnie**, puis sélectionnez le lien associé.  
 2. Dans la fenêtre **Informations compagnie**, renseignez les champs **Code Partenaire intercompagnie**, **Type de boîte de réception intercompagnie** et **Détails boîte de réception intersociétés**. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 ## <a name="to-set-intercompany-partners"></a>Pour paramétrer les partenaires intersociétés
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Partenaires intercompagnies**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Partenaires intercompagnie**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Dans la fenêtre **Partenaire intercompagnie**, renseignez les champs comme nécessaire.
 
 ## <a name="to-set-up-intercompany-vendors-and-intercompany-customers"></a>Pour paramétrer des fournisseurs et des clients intersociétés
-1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Comptes bancaires**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Fournisseurs**, puis sélectionnez le lien associé.
 2. Sinon, accédez au fournisseur à partir du champ **N° fournisseur** dans la fenêtre **Partenaire intercompagnie**.
 3. Ouvrez la fiche d'un fournisseur qui est un partenaire intercompagnie. Pour plus d'informations, voir [Enregistrer de nouveaux fournisseurs](purchasing-how-register-new-vendors.md).
 4. Dans le champ **Code Partenaire intercompagnie**, sélectionnez le code partenaire intercompagnie approprié.
@@ -50,19 +50,19 @@ Si votre compagnie est la compagnie parent et contient le plan comptable interco
 Si votre compagnie est une filiale et que vous recevez un fichier XML contenant le plan comptable intercompagnie commun, suivez la procédure « Pour importer le plan comptable intercompagnie ».  
 
 ### <a name="to-set-up-the-defining-intercompany-chart-of-accounts"></a>Pour configurer la définition du plan comptable intersociété
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Plan comptable intercompagnies**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable intersociétés**, puis sélectionnez le lien associé.
 2. Dans la fenêtre **Plan comptable intersociétés**, saisissez chaque compte sur une ligne de la fenêtre.  
 3. Si votre plan comptable intersociété est identique ou semblable à celui que vous utilisez habituellement, vous pouvez renseigner la fenêtre automatiquement en choisissant l'action **Copier à partir du plan comptable**. Vous pouvez modifier au besoin les nouvelles lignes.
 
 ### <a name="to-export-an-intercompany-chart-of-accounts"></a>Pour exporter un plan comptable intersociété
 Pour permettre à vos partenaires Intersociétés d'importer la définition du plan comptable, vous devez l'exporter vers un fichier.      
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Plan comptable intercompagnies**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable intersociétés**, puis sélectionnez le lien associé.
 2. Dans la fenêtre **Plan comptable intersociétés**, choisissez l'action **Exporter**, puis choisissez le bouton **Enregistrer**.
 3. Indiquez le nom et l'emplacement d'enregistrement du fichier XML, puis cliquez sur le bouton **Enregistrer**.  
 
 ### <a name="to-import-the-intercompany-chart-of-accounts"></a>Pour importer le plan comptable intersociétés  
 Lorsqu'un fichier existe pour la définition du plan comptable intersociété, les partenaires intersociétés peuvent l'importer pour vérifier qu'ils ont les mêmes comptes.  
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Plan comptable intercompagnies**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable intersociétés**, puis sélectionnez le lien associé.  
 2. Dans la fenêtre **Plan comptable intersociétés**, choisissez l'action **Importer**.  
 3. Sélectionnez le nom et l'emplacement du fichier XML, puis cliquez sur le bouton **Ouvrir**.  
 
@@ -73,7 +73,7 @@ Après avoir défini ou importé le plan comptable intercompagnie que vous et vo
 
 Si les comptes du plan comptable intersociétés possèdent les mêmes numéros que les comptes correspondants dans le plan comptable, vous pouvez les mapper automatiquement.
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Plan comptable intercompagnies**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable intersociétés**, puis sélectionnez le lien associé.  
 2. Sélectionnez les lignes à associer automatiquement, puis cliquez sur choisissez l'action **Faire correspondre au compte ayant le même numéro**.  
 3. Pour chaque compte du grand livre intercompagnie qui n'a pas été associé automatiquement, renseignez le champ **N° cpte G/L de correspondance**.  
 
@@ -82,7 +82,7 @@ Lorsque vous créez une ligne vente ou achat intercompagnie à envoyer comme tra
 
 Ensuite, si vous indiquez un compte GL dans le champ **N° compte de solde** d'une ligne intercompagnie avec **Partenaire intercompagnie** dans le champ **Type de compte**, le champ **Compte du grand livre Partenaire IC** est renseigné automatiquement.  
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Plan comptable**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable**, puis sélectionnez le lien associé.  
 2. Sur la ligne d'un compte du grand livre utilisé pour les transactions intercompagnies, dans le champ **Compte du grand livre par défaut du partenaire IC**, entrez le compte GL intercompagnie que votre partenaire utilisera lors du report sur le compte GL de la ligne.  
 3. Répétez l'étape 3 pour chaque compte que vous entrez souvent dans le champ **N° compte de solde** sur une ligne dans un document ou journal intercompagnie.
 
@@ -94,7 +94,7 @@ Si votre compagnie est la compagnie parent et contient l'ensemble de définition
 Si votre compagnie est une filiale et que vous recevez un fichier XML contenant les dimensions intercompagnies qui serviront de référence commune au groupe, suivez la procédure « Pour importer des dimensions intercompagnies ».
 
 ### <a name="to-define-the-intercompany-dimensions"></a>Pour définir les dimensions intercompagnies
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Dimensions intercompagnies**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Dimensions intercompagnie**, puis sélectionnez le lien associé.  
 2. Dans la fenêtre **Dimensions intercompagnies**, entrez chaque dimension sur une ligne.
 
     Si vos dimensions intercompagnies sont identiques ou semblables à celles de votre compagnie, vous pouvez renseigner la fenêtre automatiquement en utilisant la fonction **Copier à partir des dimensions**, puis modifier les lignes ainsi obtenues.  
@@ -103,7 +103,7 @@ Si votre compagnie est une filiale et que vous recevez un fichier XML contenant 
 
 ### <a name="to-import-the-intercompany-dimensions"></a>Pour importer les dimensions intercompagnies  
 Lorsqu'un fichier existe pour la définition des dimensions intercompagnies, les partenaires intercompagnies peuvent l'importer pour vérifier qu'ils ont les mêmes dimensions.  
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Dimensions intercompagnies**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Dimensions intercompagnie**, puis sélectionnez le lien associé.  
 2. Dans la fenêtre **Dimensions intercompagnies**, choisissez l'action **Importer**.  
 3. Spécifiez le nom et l'emplacement du fichier XML, puis cliquez sur le bouton **Ouvrir**.  
 
@@ -114,14 +114,14 @@ Après avoir défini ou importé les dimensions que vos partenaires intercompagn
 
 Si certaines dimensions intercompagnies possèdent le même code que les dimensions correspondantes de la liste des dimensions de votre compagnie, vous pouvez demander au programme d'associer automatiquement ces comptes.
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Dimensions intercompagnies**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Dimensions intercompagnie**, puis sélectionnez le lien associé.
 2. Dans la fenêtre **Dimensions intercompagnies**, sélectionnez les lignes à associer automatiquement, puis choisissez l'action **Établir une correspondance à la dimension du même code**.
 3. Pour chaque dimension intercompagnie qui n'est pas associée automatiquement, renseignez le champ **Code de dimension de correspondance**.
 4. Choisissez l'action **Valeurs de dimension intercompagnies**.
 5. Dans la fenêtre **Valeurs de dimension intercompagnies**, renseignez le champ **Code valeur de dimension correspondance**.
 
     Continuez à associer les dimensions aux dimensions intercompagnies en exécutant la même procédure.
-6. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Dimensions**, puis sélectionnez le lien associé.
+6. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Dimensions**, puis choisissez le lien associé.
 7. Dans la fenêtre **Dimensions**, sélectionnez les lignes à associer automatiquement, puis choisissez l'action **Établir une correspondance à la dimension IC du même code**.
 8. Pour chaque dimension intercompagnie qui n'est pas associée automatiquement, renseignez le champ **Code valeur dimension correspond. IC**.
 9. Choisissez l'action **Valeurs de dimension**.

@@ -1,26 +1,27 @@
 ---
 title: "Aperçu des tâches permettant de gérer les paiements aux fournisseurs| Microsoft Docs"
 description: "Décrit les tâches permettant de gérer les paiements aux fournisseurs ou aux créditeurs, y compris le report de lignes paiement et l'obtention d'un aperçu du solde échu."
-services: project-madeira
-documentationcenter: 
-author: SorenGP
+author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: print check, vendor payment, creditor, debt, balance due, AP
-ms.date: 04/26/2018
-ms.author: sgroespe
+ms.date: 10/01/2018
+ms.author: edupont
 ms.translationtype: HT
-ms.sourcegitcommit: db28ad9a4adb45514b1d1287d269d8daefe64865
-ms.openlocfilehash: 6b912e8f54fd0e3fb4ac4a1eee3c376c209ffe65
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: b22144fff3051ef35b9e3baf6e12ecd56ee12c49
 ms.contentlocale: fr-ca
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="making-payments"></a>Effectuer des paiements
-Lorsque vous effectuez des paiements aux fournisseurs ou des remboursements aux employés, vous reportez les lignes paiement associées dans la fenêtre **Journal de paiement**. Vous pouvez utiliser la fonction **Proposer paiements fournisseur** pour rechercher les paiements fournisseurs échus. Vous pouvez également utiliser le rapport **Fournisseur - Chronologie sommaire** pour obtenir un aperçu des paiements fournisseurs échus.
+
+Lorsque vous effectuez des paiements aux fournisseurs ou aux clients, ou des remboursements aux employés, vous reportez les lignes paiement associées dans la fenêtre **Journal paiement**. Le journal paiement est un journal général qui est optimisé pour effectuer des paiements et inclut un certain nombre de fonctionnalités puissantes telles que la fonction **Proposer paiements fournisseur** qui rassemble les paiements fournisseur échus, et le rapport **Fournisseur - chronologie sommaire** qui affiche un aperçu des paiements fournisseur échus.  
+
+Vous pouvez lancer le processus de paiement depuis des listes, des fiches et des écritures pour les fournisseurs, les clients, ainsi que les employés. Chacune de ces pages a un bouton démarrant le flux de paiement et vous permettant de renseigner le journal paiement.  
 
 À partir du journal paiement, vous pouvez imprimer des chèques informatisés ou effectuer un enregistrement lorsque les chèques sont rédigés. Si vous sélectionnez **Informatique** dans le champ **Mode émission paiement**, toutes les lignes représentant des chèques doivent être imprimées avant que les lignes feuille puissent être validées.
 
@@ -33,7 +34,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | À | Voir |
 | --- | --- |
 |Comprendre les fonctions de base de la fenêtre **Journal des paiements**, qui est basée sur le journal général, pour préparer le report des paiements aux fournisseurs ou employés.|[Utilisation de feuilles comptabilité](ui-work-general-journals.md)|
-|Reporter les paiements aux fournisseurs et les remboursements aux clients et affecter éventuellement les paiements aux factures/notes de crédit impayées pour les fermer comme payées.|[Enregistrer des paiements et des remboursements](payables-how-post-payments-refunds.md)|
+|Reporter les paiements aux fournisseurs ou aux employés, et les remboursements aux clients et affecter éventuellement les paiements aux factures/notes de crédit impayées pour les fermer comme payées.|[Enregistrer des paiements et des remboursements](payables-how-post-payments-refunds.md)|
 | Utiliser une fonction dans la fenêtre **Journal des paiements** pour proposer des paiements fournisseur en fonction de critères sélectionnés, tels que la date d'échéance, la possibilité d'escompte et vos liquidités. |[Proposer paiements fournisseur](payables-how-suggest-vendor-payments.md) |
 | Émettre des chèques pour les paiements fournisseur ou les remboursements client, sous forme de documents imprimés ou de chèques informatiques. Annuler des chèques avant ou après le report. |[Effectuer des paiements par chèque](payables-how-work-checks.md) |
 |Effectuer des paiements électroniques en exportant des paiements vers un fichier bancaire que vous transférez vers votre banque pour traitement, y compris un transfert électronique de fond (EFT) en Amérique du Nord. |[Effectuer des paiements électroniques](payables-how-export-payments-bank-file.md)|

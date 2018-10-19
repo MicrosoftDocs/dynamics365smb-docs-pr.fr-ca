@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: reimbursement
-ms.date: 08/03/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 9a4a7001ab5a752bf2e2acdd273d2a584a1e0b8a
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: beed335b93ef9211e4fc53c25f97b3fed6137348
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="reverse-postings"></a>Inverser des reports
@@ -31,15 +31,15 @@ Si vous avez effectué un report de quantité négatif incorrect, comme un bon d
 Si vous avez effectué un report de quantité positif incorrect, comme un retour commande achat avec, par exemple, un nombre d'articles incorrect et que vous l'avez reporté comme étant livré (mais non facturé), vous pouvez annuler ce report.   
 
 ## <a name="to-reverse-the-journal-posting-of-a-general-ledger-entry"></a>Pour inverser le report journal d'une écriture grand livre
-Vous pouvez inverser des écritures dans toutes les fenêtres **Écritures comptables**. La procédure suivante se base sur la fenêtre **Écritures comptables**.
-1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Ecritures comptables**, puis sélectionnez le lien connexe.
+Vous pouvez inverser des écritures dans toutes les fenêtres **Écritures comptables**. La procédure suivante est basées sur la fenêtre **Écritures**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Écritures**, puis sélectionnez le lien associé.
 2. Sélectionnez l'écriture à contrepasser, puis cliquez sur l'action **Contrepasser la transaction**. Notez qu'elle doit provenir d'un report journal.
 3. Dans la fenêtre **Contrepasser les écritures de transaction**, sélectionnez l'écriture voulue, puis sélectionnez l'action **Contrepasser**.
 4. Choisissez le bouton **Oui** dans le message de confirmation.
 
 ## <a name="to-undo-a-quantity-posting-on-a-posted-purchase-receipt"></a>Pour annuler un report de quantité sur une réception d'achat reportée  
 
-1.  Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Réceptions achat reportées**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Réceptions achat reportées**, puis sélectionnez le lien associé.  
 2.  Ouvrez la réception reportée à annuler.  
 3.  Sélectionnez la ligne ou les lignes à annuler.  
 4.  Choisissez l'action **Annuler réception**.
@@ -52,7 +52,7 @@ Vous pouvez inverser des écritures dans toutes les fenêtres **Écritures compt
 
 ## <a name="to-undo-and-then-redo-a-quantity-posting-on-a-posted-return-shipment"></a>Pour annuler, puis effectuer à nouveau le report de quantité sur une livraison retour reportée
 
-1.  Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Livraisons de retour reportées**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Livraisons retour reportées**, puis sélectionnez le lien associé.  
 2.  Ouvrez la livraison de retour reportée à annuler.
 3. Sélectionnez la ligne ou les lignes à annuler.  
 
@@ -63,14 +63,14 @@ Vous pouvez inverser des écritures dans toutes les fenêtres **Écritures compt
     Retournez à présent au retour achat pour un nouveau report.  
 
 5.  Dans la fenêtre **Livraison retour reportée**, notez le numéro situé dans le champ **N° retour** .  
-6.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Retours achat**, puis sélectionnez le lien associé.  
+6.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Retours achat**, et sélectionnez le lien associé.  
 7.  Ouvrez la commande retour concernée, puis sélectionnez l'action **Rouvrir**.  
 8.  Corrigez l'écriture dans le champ **Quantité** et reportez à nouveau le retour achat.  
 
 ## <a name="to-post-a-negative-entry"></a>Pour reporter une écriture négative  
 Vous pouvez utiliser le champ **Correction** pour reporter un débit négatif au lieu d'un crédit, ou pour reporter un crédit négatif au lieu d'un débit sur un compte. Pour répondre aux exigences légales, ce champ est visible par défaut sur tous les journaux. Les champs **Montant débit** et **Montant crédit** comprennent l'écriture initiale et l'écriture corrigée. Ces champs n'ont aucune incidence sur le solde du compte.  
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Journaux généraux**, puis sélectionnez le lien associé  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux généraux**, puis sélectionnez le lien associé.  
 2.  Dans le champ **Nom de la feuille**, sélectionnez le nom de feuille requis.  
 3.  Entrez les informations dans les champs pertinents.  
 4.  Dans la ligne journal que vous souhaitez activer pour les écritures négatives, sélectionnez la case à cocher **Correction**.  

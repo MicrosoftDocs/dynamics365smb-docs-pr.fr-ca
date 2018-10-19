@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 08/21/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 54f554e2e0acf657fdf77caa863ff4e028734418
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: ebd644745ed7d914bdccfe59ecc3924ed1b542a5
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="ship-items"></a>Livrer des articles
@@ -29,7 +29,7 @@ Lorsque vous livrez des articles à partir d'un entrepôt qui est configuré pou
 
 ## <a name="to-ship-items-with-a-sales-order"></a>Pour livrer des articles avec un document de vente
 La section suivante décrit comment recevoir des articles avec un bon de commande. Les étapes sont similaires pour les retours achat, les commandes service et les ordres de transfert sortants.  
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Commandes vente**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.
 2. Ouvrez un document de vente existant, ou créez-en un nouveau. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
 3. Dans le champ **Qté à livrer**, indiquez la quantité reçue.
 
@@ -41,7 +41,7 @@ Premièrement, vous créez un document livraison à partir d'un document source 
 
 ### <a name="to-create-a-warehouse-shipment"></a>Pour créer une livraison entrepôt
 Généralement, l'employé chargé de la livraison crée une livraison entrepôt.
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Livraisons entrepôt**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Livraisons entrepôt**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 
     Renseignez les champs du raccourci **Général**. Lorsque vous récupérez des lignes document origine,certaines des informations de l'en-tête sont copiées dans chaque ligne.  
@@ -74,12 +74,12 @@ Lorsque vous disposez des lignes à livrer, vous pouvez lancer le processus qui 
 
 ### <a name="to-pick-and-ship"></a>Pour effectuer un prélèvement et une livraison
 Généralement, un magasinier chargé du prélèvement crée un document prélèvement, ou ouvre un document prélèvement déjà créé.
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Livraisons entrepôt**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Livraisons entrepôt**, puis sélectionnez le lien associé.
 2. Sélectionnez la livraison entrepôt que vous souhaitez prélever, puis sélectionnez l'action **Créer prélèvement**.
 3. Renseignez les champs du formulaire de sélection, puis cliquez sur le bouton **OK**. Le document prélèvement entrepôt spécifié est créé.
 
     Sinon, ouvrez un prélèvement entrepôt existant.
-4. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Prélèvements**, puis sélectionnez le lien associé. Sélectionnez le prélèvement entrepôt que vous souhaitez utiliser.
+4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Prélèvements**, puis sélectionnez le lien associé. Sélectionnez le prélèvement entrepôt que vous souhaitez utiliser.
 
     Si l'entrepôt est configuré pour utiliser des emplacements, alors les lignes prélèvement sont converties en lignes action Prélever et Ranger.
 

@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 08/16/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: e7dcdc0935a8793ae226dfc2f9709b5b8f487a62
-ms.openlocfilehash: 7fd6588adb1a7d2dff268d0a8e73c168ca24ff1d
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: ac7b80c3ada7a5dd27fc74d3d8be5e38f1552725
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="move-items-ad-hoc-in-basic-warehouse-configurations"></a>Déplacer des articles ad hoc dans les configurations de stockage de base
@@ -29,7 +29,7 @@ Dans les configurations d'entrepôt de base, où les emplacements utilisent le c
 >  Dans les configurations d'entrepôt avancées, où les emplacements utilisent le champ de configuration **Prélèv. et rangement suggérés**, vous utilisez la fenêtre **Feuille mouvement** ou les fenêtres **Prélèvement interne entrepôt** ou **Rangement interne entrepôt** pour déplacer des articles ad hoc entre différents zones.  
 
 ## <a name="to-move-items-as-an-internal-movement"></a>Pour déplacer des articles en tant que mouvement interne  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Mouvement interne**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Mouvement interne**, puis sélectionnez le lien associé.  
 2.  Sur le raccourci **Général**, renseignez le champ **N°**. en le laissant tel quel ou en cliquant sur le bouton **AssistEdit** pour effectuer une sélection parmi la souche de numéros.  
 3.  Dans le champ **Code magasin**, entrez le magasin où le mouvement a lieu.  
 
@@ -58,7 +58,7 @@ Dans les configurations d'entrepôt de base, où les emplacements utilisent le c
 
 ## <a name="to-move-items-with-the-item-reclassification-journal"></a>Pour déplacer des articles à l'aide du journal reclassement article
 Au lieu d'utiliser des documents mouvement entrepôt, vous pouvez enregistrer le déplacement d'articles en reclassant leurs codes de zone. Pour plus d'informations, voir [Nombre, ajustement et reclassement de l'inventaire](inventory-how-count-adjust-reclassify.md).   
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Journal de reclassement d'articles**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal reclassement article**, puis sélectionnez le lien associé.  
 2.  Sur chaque ligne feuille, définissez les emplacements depuis et vers lesquels vous souhaitez déplacer des articles en renseignant les champs **Code emplacement** et **Nouveau code emplacement**.  
 
     1.  Pour déplacer tout le contenu d'une zone vers une autre, choisissez l'action **Extraire contenu de la zone**.  

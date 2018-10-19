@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 03/05/2018
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: f6e3a1ccda36947c80fead68f9e97ee8ff1286bf
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 572dedec9c00369f405bfc6d3eb4031185f7c780
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="use-the-rapidstart-services-implementer-role-center"></a>Utiliser le tableau de bord Responsable de l'implémentation de RapidStart Services
@@ -27,7 +27,7 @@ Lorsque vous utilisez RapidStart Services, il est préférable d’utiliser le t
 Par défaut, lorsque vous ajoutez une table à la feuille de configuration, son état indique vide. Cela signifie que la configuration de la table n’a pas débuté. Cela est visible dans le nombre **Non commencé** dans la vignette **Activités**.  
 
 ## <a name="to-update-the-status-of-a-configuration-table"></a>Pour mettre à jour l'état d’une table de configuration  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille configuration**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille configuration**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Modifier la liste**.  
 3.  Sélectionnez une table et dans le champ **Statut**, choisissez le statut approprié.  
 4.  Cliquez sur le bouton **OK**.  

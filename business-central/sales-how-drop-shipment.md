@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: direct shipment
-ms.date: 01/25/2018
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 4840cde44374f17dcbd2befb167bfdf6110fe6fe
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 0fc9fee94f06b2452fa38a0a754f054a0ed16a0d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="make-drop-shipments"></a>Effectuer des livraisons directes
@@ -49,14 +49,15 @@ Vous pouvez maintenant informer le fournisseur quant à la livraison des article
 ## <a name="to-post-a-drop-shipment"></a>Pour reporter une livraison directe
 Lorsque le fournisseur a livré les articles, vous pouvez reporter le document de vente comme envoyé. Vous pouvez également valider la commande achat, mais uniquement avec l'option **Réceptionner** jusqu'à ce que la commande vente ait été facturée.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Commandes vente**, puis sélectionnez le lien connexe.
-2. Ouvrez les documents de vente que vous avez créés dans la section « Pour créer un document de vente pour une livraison directe ».
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.
+2. Ouvrez le document de vente que vous avez créé dans la section « Pour créer un document de vente pour une livraison directe ».
 3. Dans le champ **Qté à expédier**, spécifiez la quantité de commandes à envoyer, la quantité de commandes partielles ou totales.
 4. Sélectionnez l'action **Valider** ou **Valider et envoyer**.
 5. Sélectionnez l'option **Livrer** pour facturer ultérieurement ou l'option **Livrer et facturer** pour facturer immédiatement.
 
 ## <a name="see-also"></a>Voir aussi
-[Créer des commandes spéciales](sales-how-to-create-special-orders.md)|  
+[Créer des commandes spéciales](sales-how-to-create-special-orders.md)  
+[Acheter des articles pour une vente](purchasing-how-purchase-products-sale.md)  
 [Vendre des produits](sales-how-sell-products.md)  
 [Enregistrer des achats](purchasing-how-record-purchases.md)  
 [Ventes](sales-manage-sales.md)  

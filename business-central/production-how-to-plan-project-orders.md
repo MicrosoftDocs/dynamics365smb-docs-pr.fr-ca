@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/06/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 6102c71bac7338c959e61045962d5a3452a2a0f6
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 08cd8c323e8f5221bd6915618582441a739e77c8
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="plan-project-orders"></a>Planifier les O.F. projets
@@ -24,12 +24,12 @@ Cette tâche de planification est lancée à partir d'une commande vente et util
 
 ## <a name="to-create-a-project-production-order"></a>Pour créer un bon de production projet  
 
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Commandes vente**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Sélectionnez le document de vente qui représente le projet de production, puis choisissez l'action **Planification**.  
 4.  Dans la fenêtre **Planification document de vente**, choisissez l'action **Créer bon de prod.**.  
 5.  Dans la fenêtre **Créer commande à partir des ventes**, dans le champ **Type O.F.**, sélectionnez **O.F. projet**.  
 6.  Cliquez sur le bouton **Oui**.  
-7.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Bons de production**, puis sélectionnez le lien associé.
+7.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Ordres de production**, puis sélectionnez le lien associé.
 8. Ouvrez le bon de production que vous venez de créer.  
 
     Notez que le champ **Type origine** de l'ordre de fabrication indique **En-tête vente** et l'ordre comporte plusieurs lignes, une pour chaque article de la ligne vente à produire.  

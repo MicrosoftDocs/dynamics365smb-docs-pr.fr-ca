@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment due, debt, overdue, fee, charge, reminder
-ms.date: 07/05/2018
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7664360941313da6ea0b797ef00df2e9810ad62
-ms.openlocfilehash: 566594f04a1b189fe2263a945d8bd7d565539930
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 4696fa95b82a0deb0ba9642ef796160f25a57afc
 ms.contentlocale: fr-ca
-ms.lasthandoff: 07/09/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="collect-outstanding-balances"></a>Collecte des soldes restants
@@ -49,7 +49,7 @@ Une fois que vous avez créé des notes de frais financiers et effectué toutes 
 Lorsque vous configurez des modalités de frais financiers et des modalités de rappel, pour la pénalité de retard de paiement, vous pouvez spécifier plusieurs taux d'intérêt afin que les frais de pénalité soient calculés sur la base de plusieurs taux d'intérêt à différentes périodes. Si vous n'avez pas configuré de taux d'intérêt multiples, le taux d'intérêt et la période définis dans les fenêtres **Modalités de frais financiers** et **Modalités de rappel** pour l'ensemble de la période de calcul seront utilisés. Pour plus d'informations, reportez vous à [Paramétrer plusieurs taux d'intérêt](finance-how-to-set-up-multiple-interest-rates.md).  
 
 ## <a name="to-send-the-customer-statement-report"></a>Pour envoyer le rapport Relevé client
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Relevé client**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Relevé client**, puis sélectionnez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 3. Dans **Options sortie**, sélectionnez la manière dont l'état est envoyé au client.
 
@@ -59,7 +59,7 @@ Lorsque vous configurez des modalités de frais financiers et des modalités de 
 ## <a name="to-set-up-reminder-terms"></a>Pour configurer des modalités de rappel
 Si des clients ont des impayés, vous devez décider quand et comment leur envoyer un rappel. En outre, vous pouvez être amené à débiter leurs comptes d'intérêts ou de frais. Vous pouvez configurer autant de modalités de rappel que vous le souhaitez. Vous pouvez définir un nombre illimité de niveaux rappel pour chaque code modalités de rappel.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Conditions de relance**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modalités de rappel**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins.  
 3. Pour utiliser plusieurs combinaisons de modalités de rappel, créez un code pour chacun d'eux.
 
@@ -68,7 +68,7 @@ La première fois qu'un rappel est créé pour un client, la configuration utili
 
 Si vous créez plus de relances qu'il n'y a de niveaux relance, les conditions utilisées seront celles du niveau le plus élevé. Vous pouvez utiliser autant de relances que le champ **Nombre max. de relances** des conditions relance le permet.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Conditions de relance**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modalités de rappel**, puis sélectionnez le lien associé.  
 2. Dans la fenêtre **Conditions de relance**, cliquez sur la ligne comportant les conditions pour lesquelles configurer des niveaux, puis cliquez sur l'action **Niveaux**.  
 3. Renseignez les champs selon vos besoins.  
 
@@ -86,16 +86,16 @@ Si vous créez plus de relances qu'il n'y a de niveaux relance, les conditions u
 
 |Paramètre substituable|Valeur|  
 |-----------------|-----------|  
-|%1|Contenu du champ **Date du document** de l'en-tête de relance|  
-|%2|Contenu du champ **Date d'échéance** de l'en-tête de relance|  
+|%1|Contenu du champ **Date du document** de l'en\-tête de relance|  
+|%2|Contenu du champ **Date d'échéance** de l'en\-tête de relance|  
 |%3|Contenu du champ **Taux d'intérêt** dans les conditions d'intérêts de retard associées|  
-|%4|Contenu du champ **Montant ouvert** de l'en-tête de relance|  
-|%5|Contenu du champ **Montant intérêts** de l'en-tête de relance|  
-|%6|Contenu du champ **Frais supplémentaires** de l'en-tête de relance|  
+|%4|Contenu du champ **Montant ouvert** de l'en\-tête de relance|  
+|%5|Contenu du champ **Montant intérêts** de l'en\-tête de relance|  
+|%6|Contenu du champ **Frais supplémentaires** de l'en\-tête de relance|  
 |%7|Montant total du rappel|  
-|%8|Contenu du champ **Niveau relance** de l'en-tête de relance|  
-|%9|Contenu du champ **Code devise** de l'en-tête de relance|  
-|%10|Contenu du champ **Date de validation** de l'en-tête de relance|  
+|%8|Contenu du champ **Niveau relance** de l'en\-tête de relance|  
+|%9|Contenu du champ **Code devise** de l'en\-tête de relance|  
+|%10|Contenu du champ **Date de validation** de l'en\-tête de relance|  
 |%11|Nom de la compagnie|  
 |%12|Contenu du champ **Frais supplémentaires par ligne** de l'en-tête de relance|  
 
@@ -109,7 +109,7 @@ Si vous avez configuré les modalités de rappel (avec des niveaux et du texte s
 ## <a name="to-create-a-reminder-automatically"></a>Pour créer automatiquement un rappel
 Un rappel est identique à une facture. Lorsque vous créez un rappel, un en-tête rappel, ainsi qu'une ou plusieurs lignes rappel, doivent être renseignés. Vous pouvez utiliser une fonction pour créer des relances pour tous les clients automatiquement.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Relances**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rappels**, puis sélectionnez le lien associé.
 2. Dans la fenêtre **Relance**, cliquez sur l'action **Créer relance**.
 3. Dans la fenêtre **Créer relances**, renseignez les champs pour définir comment et pour qui les relances sont créées.
 4. Cliquez sur le bouton **OK**.
@@ -117,7 +117,7 @@ Un rappel est identique à une facture. Lorsque vous créez un rappel, un en-tê
 ## <a name="to-create-a-reminder-manually"></a>Pour créer un rappel manuellement
 Dans la fenêtre **Relance**, vous pouvez renseigner le raccourci **Général** manuellement et ensuite renseigner les lignes automatiquement.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Relances**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rappels**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Sur le raccourci **Général**, complétez les champs, comme nécessaire.
 4. Choisissez l'action **Proposer lignes relance**.
@@ -132,7 +132,7 @@ Dans la fenêtre **Relance**, vous pouvez renseigner le raccourci **Général** 
 ## <a name="to-replace-reminder-texts"></a>Pour remplacer les textes rappel  
 Vous pouvez déterminer de plusieurs manières le texte devant figurer sur le rappel imprimé. Dans certains cas, vous pouvez remplacer les textes début et fin définis pour le niveau actuel par ceux d'un autre niveau.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Relances**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rappels**, puis sélectionnez le lien associé.
 2. Ouvrez la relance appropriée, puis cliquez sur l'action **Mettre à jour texte relance**.
 3. Dans la fenêtre **Mettre à jour texte relance**, entrez le niveau requis dans le champ **Niveau relance**.
 3. Cliquez sur le bouton **OK** pour que le programme mette à jour les textes début et fin.
@@ -154,7 +154,7 @@ Si les cases à cocher **Comptabiliser intérêts** ou le champ **Compta. frais 
 
 De plus, émettre un rappel peut créer des écritures de TVA.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Relances**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rappels**, puis sélectionnez le lien associé.
 2. Sélectionnez la relance concernée, puis cliquez sur l'action **Émission**.
 3. Dans la fenêtre **Emettre relances**, renseignez les champs selon vos besoins.
 4. Cliquez sur le bouton **OK**.
@@ -178,7 +178,7 @@ Les frais financiers peuvent être calculés en utilisant la méthode du solde j
 
 En outre, chaque code de la table Modalités de frais financiers est lié à une autre table, la table Texte frais financiers. Pour chaque ensemble de modalités de frais financiers, vous pouvez définir un texte début et un texte fin à inclure dans la note de frais financiers.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Conditions intérêts de retard**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modalités de frais financiers**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins.  
 3. Pour utiliser plusieurs combinaisons de modalités de frais financiers, créez un code pour chacun d'eux.
 
@@ -208,7 +208,7 @@ En outre, chaque code de la table Modalités de frais financiers est lié à une
 ## <a name="to-create-a-finance-charge-memo-manually"></a>Pour créer manuellement des notes de frais financiers  
 Une note de frais financiers ressemble à une facture. Vous pouvez renseigner un en-tête manuellement et faire renseigner les lignes, ou créer des factures d'intérêts automatiquement pour tous les clients.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Factures d'intérêts**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de frais financiers**, puis sélectionnez le lien associé.  
 2. Cliquez sur **Nouveau**, puis renseignez les champs selon vos besoins.  
 3. Sélectionnez **Proposer lignes fact. intérêts**.
 4. Dans la fenêtre **Proposer lignes note de frais financiers**, définissez un filtre sur le raccourci **Écriture client** si vous souhaitez créer des notes de frais financiers uniquement pour des écritures spécifiques.  
@@ -217,7 +217,7 @@ Une note de frais financiers ressemble à une facture. Vous pouvez renseigner un
 ## <a name="to-update-finance-charge-memo-texts"></a>Pour mettre à jour des textes de notes de frais financiers  
 Dans certains cas, vous pouvez modifier les textes début et fin définis pour les modalités de frais financiers. Si vous le faites au moment où vous avez créé, mais pas encore émis, les factures d'intérêts, vous pouvez mettre à jour ces factures avec le texte modifié.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Facture d'intérêts**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Note de frais financiers**, puis sélectionnez le lien associé.  
 2. ouvrez la facture d'intérêts dont vous souhaitez modifier le texte, puis sélectionnez **MAJ texte fact. d'intérêts**.
 3. Dans la fenêtre **MAJ texte fact. d'intérêts**, vous pouvez définir un filtre pour mettre à jour plusieurs factures d'intérêts.
 4. Cliquez sur le bouton **OK** pour que le programme mette à jour les textes début et fin.  
@@ -237,7 +237,7 @@ Si les cases à cocher **Comptabiliser intérêts** ou le champ **Compta. frais 
 
 De plus, émettre une note de frais financiers peut créer des écritures de TVA.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Factures d'intérêts**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de frais financiers**, puis sélectionnez le lien associé.
 2. Sélectionnez la facture concernée, puis cliquez sur l'action **Emettre**.
 3. Dans la fenêtre **Emettre factures d'intérêts**, renseignez les champs selon vos besoins.
 4. Cliquez sur le bouton **OK**.
@@ -246,7 +246,7 @@ La note de frais financiers est imprimée pour être envoyée à une adresse de 
 
 ## <a name="to-view-reminder-and-finance-charge-entries"></a>Pour afficher les écritures rappel et note de frais financiers  
 Lorsque vous émettez une relance, une écriture relance est créée dans la fenêtre **Écr. relance/fact. intérêts** pour chaque ligne relance contenant une écriture comptable client. Vous pouvez ensuite obtenir un aperçu des écritures rappel créées pour un client spécifique.    
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Clients**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clients**, puis sélectionnez le lien associé.  
 2. Ouvrez la fiche client appropriée, puis sélectionnez l'action **Écritures comptables**.
 3. Dans la fenêtre **Écritures comptables client**, cliquez sur la ligne de l'écriture comptable pour laquelle vous souhaitez visualiser les écritures relance, puis sélectionnez l'action **Écr. relance/fact. intérêts**.
 

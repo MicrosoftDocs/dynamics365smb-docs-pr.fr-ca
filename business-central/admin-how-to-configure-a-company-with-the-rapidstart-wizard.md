@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 03/06/2018
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 264788142ab4f2a84df3e1c9da6e39503a7e820f
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 27b50b9471c8dccb7da8750bbd57e34774ff6115
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="configure-a-company-with-the-rapidstart-wizard"></a>Configurer une compagnie avec l'assistant RapidStart
@@ -41,7 +41,7 @@ Dans la procédure suivante, vous avez fourni au client un colis configuration, 
     >  Modifiez votre Tableau de bord uniquement après avoir effectué la configuration de la compagnie. Si vous avez d’autres informations de configuration à prendre en compte et à modifier, utilisez d’abord la feuille de configuration pour effectuer votre travail. Enfin, revenez à l’Assistant pour mettre à jour votre profil Tableau de bord, ou sélectionnez l'action **Configuration terminée**.
 
 7. Cliquez sur le bouton **OK**.  
-8. Pour vérifier que les informations de configuration ont été appliquées à la nouvelle compagnie, choisissez ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Informations compagnie**, puis sélectionnez le lien associé.
+8. Pour vérifier que les informations de configuration ont été appliquées à la nouvelle compagnie, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Informations compagnie**, puis sélectionnez le lien associé.
 
 La fenêtre **Informations société** contient les informations que vous avez spécifiées.   
 

@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/06/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 6b36df4ccf85ce9126fe1090e86d2549737e3195
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 03c9439bde3a8e5b1c1caaeae362fcd6609f7a63
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="register-consumption-and-output-for-one-released-production-order-line"></a>Enregistrer la consommation et la production pour une ligne bon de production libéré
@@ -29,7 +29,7 @@ Cette tâche d'exécution est réalisée dans la fenêtre **Journal production**
 >  Les composantes ne comportant pas de code lien itinéraire apparaissent en haut du journal.  
 
 ## <a name="to-register-consumption-and-output"></a>Pour enregistrer la consommation et la sortie  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Bons de production libérés**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de production libérés**, puis sélectionnez le lien associé.  
 2.  Ouvrez une ligne de bon de production libéré qui est prête à être enregistrée, puis, sur le raccourci **Lignes**, choisissez l'action **Ligne**, puis l'action **Journal production**.  
 
     La fenêtre **Journal production** s'ouvre et affiche les lignes journal pour la ligne bon de production en fonction des fenêtres **Composante bon de production** et **Itinéraire bon de production** Ces lignes proviennent de la nomenclature de production et de l'itinéraire affectés à l'article en cours de production. Pour plus d'informations, voir [Créer des nomenclatures de production](production-how-to-create-routings.md).  

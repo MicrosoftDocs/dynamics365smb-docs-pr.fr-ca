@@ -10,24 +10,25 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 07/01/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: bc804db29ec89904101f48b625770f730abb13d9
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 366bf200b78e4927b1c202340dd84af09d32c1a5
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="set-up-statuses-for-service-orders-and-repairs"></a>Configurer les états des commandes service et des réparations
 Vous devez configurer des options d'état de réparation qui identifient la progression de la réparation et de l'entretien des articles de service dans les commandes service. Vous devez configurer au moins neuf options d'état réparation qui identifient les situations ou les actions effectuées lors de la maintenance des articles de service.  
 
 Vous pouvez définir le niveau de priorité des options d'état de commande service. Quatre niveaux de priorité sont disponibles : Très haute, Haute, Moyenne et Basse.  
-  
+
 Lorsque vous modifiez l'état réparation d'un article de service d'une commande service, l'état commande service est mis à jour. L'état réparation de chaque article de service est lié à l'état commande service. Si les articles de service sont liés à plusieurs options d'état commande service, l'état de commande service dont la priorité est la plus élevée est sélectionné.  
 
 ## <a name="to-set-up-a-repair-status"></a>Pour configurer un état réparation  
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **État de la réparation**, puis sélectionnez le lien associé. 2. Créez un état réparation.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **État de la réparation**, puis sélectionnez le lien associé.
+2. Créez un état réparation.  
 3. Renseignez les champs **Code** et **Désignation**.  
 4. Dans le champ **État commande service**, choisissez l'état de la commande auquel lier l'état de réparation. Le champ **Priorité** affiche la priorité de l'état de la commande service que vous avez choisie.  
 5. Choisissez un état réparation. Vous ne pouvez en choisir qu'un.  
@@ -36,11 +37,11 @@ Lorsque vous modifiez l'état réparation d'un article de service d'une commande
 8. Choisissez de la même manière les cases à cocher **État En cours autorisé**, **État Terminé autorisé** et **État En attente autorisé**.
   
 ## <a name="to-set-up-service-status-priorities"></a>Pour configurer les priorités état service  
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **État commande service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **État commande service**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'état commande service pour lequel vous voulez configurer une priorité.  
 3. Dans le champ **Priorité**, choisissez la priorité souhaitée pour cet état commande service. Répétez cette étape pour chaque état.  
-  
+
 ## <a name="see-also"></a>Voir aussi  
-[Description des commandes service et de l'état réparation]()  
+[État commande service et état réparation](service-service-order-status-and-repair-status.md)  
 [Paramétrage de la gestion des services](service-setup-service.md)  
 

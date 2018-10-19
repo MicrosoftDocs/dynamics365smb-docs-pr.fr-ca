@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/14/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: a512e8e4e693a44015bc7675e5126259a5eff92b
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 24a2cec78c97d52716c1548f062fa6346bddc5f6
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="planning"></a>Planification
@@ -38,12 +38,12 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Apprendre à utiliser le système de planification pour détecter la demande et lui donner la priorité et pour proposer un programme d'approvisionnement équilibré.|[À propos de la fonctionnalité Planification](production-about-planning-functionality.md)|
 |Comprendre tous les aspects du système de planification et modifier les algorithmes pour répondre aux exigences de planification dans différents environnements.|[Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)|
 |Découvrez comment la logique de planification établit la différence entre la demande dans les emplacements en fonction de la configuration des unités de stock et la demande sans codes emplacement.|[Planification avec/sans emplacement](production-planning-with-without-locations.md).|
-|Prévoir la demande de production présentée par les commandes vente et les ordres de fabrication prévus.|[Créer une prévision production](production-how-to-create-a-forecast.md)|  
+|Prévoir la demande présentée par les composantes vente et fabrication prévues.|[Créer une prévision de la demande](production-how-to-create-a-forecast.md)|  
 |Créez automatiquement des bons de production un à un à partir d'un document de vente pour couvrir la demande exacte des lignes document de vente.|[Créer des bons de production à partir de documents de vente](production-how-to-create-production-orders-from-sales-orders.md)|
 |Créer un bon de production projet directement à partir d'un document de vente multiligne représentant un projet de production.|[Planifier les O.F. projets](production-how-to-plan-project-orders.md)|
 |Utiliser la fenêtre **Planification commande** pour effectuer la planification manuellement pour des ordres de vente ou de fabrication un niveau de nomenclature de production à la fois.|[Planifier de nouvelles demandes commande par commande](production-how-to-plan-for-new-demand.md)|
 |Utilisez la fenêtre **Feuille planification** pour exécuter les options MPS et MRP afin de créer automatiquement un plan d'approvisionnement détaillé ou de haut niveau à tous les niveaux d'article.|[Exécuter une planification complète et un calcul PDP ou MRP](production-how-to-run-mps-and-mrp.md)|
-|Exécuter la feuille de réquisition pour créer automatiquement un programme d'approvisionnement détaillé pour répondre à la demande d'articles réapprovisionnés uniquement par achat ou transfert.|Page **Feuille de réquisition**|  
+|Exécuter la feuille de réquisition pour créer automatiquement un programme d'approvisionnement détaillé pour répondre à la demande d'articles réapprovisionnés uniquement par achat ou transfert.|Fenêtre **Feuille de réquisition**|  
 |Lancez ou mettez à jour un bon de production en tant qu'opérations programmées approximativement dans le calendrier de production principal.|[Replanifier ou actualiser directement des ordres de fabrication](production-how-to-replan-refresh-production-orders.md)|
 |Recalculez les calendriers d'atelier ou d'unité de production en raison de changements de planification.|Section « Pour calculer un calendrier d'atelier » dans [Configurer des calendriers usine](production-how-to-create-work-center-calendars.md)|
 |Suivez la demande de commande (quantité suivie), les prévisions, les commandes permanentes ventes ou les paramètres de planification (quantité non suivie) qui ont donné lieu à la ligne planification en question.|[Suivre les relations entre l'offre et la demande](production-how-track-demand-supply.md)|
@@ -60,5 +60,4 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
- 
 

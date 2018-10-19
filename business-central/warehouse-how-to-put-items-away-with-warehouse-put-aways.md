@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 08/31/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: bf7b58fad1aa587079b51b505e9d757bb66f39c9
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: dea237fa837b34e565d9df6156ae6bbfb8508ee6
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="put-items-away-with-warehouse-put-aways"></a>Ranger des articles avec le rangement entrepôt
@@ -29,7 +29,7 @@ En fonction de la configuration de l'entrepôt, ces lignes sont mises à disposi
 Outre les méthodes standard pour créer les rangements entrepôt qui sont décrits dans cette rubrique, vous pouvez créer le rangement à partir de la réception entrepôt reportée associée. Cela est utile si vous avez supprimé des lignes rangement ou si vous utilisez le prélèvement et le rangement suggérés et avez décidé de ne pas utiliser la feuille rangement, car vous pouvez créer ou recréer des instructions de rangement à partir des lignes réception reportées.  
 
 ## <a name="to-put-items-away-without-directed-put-away-and-pick"></a>Rangement d'articles en l'absence de prélèvement et de rangement suggérés  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Rangements**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rangements**, puis sélectionnez le lien associé.  
 2.  Ouvrez le rangement entrepôt qui est prêt à être traité.  
 
     Vous pouvez trier les lignes de rangement en fonction de critères divers, tels que par article, numéro de tablette ou date d'échéance et optimiser ainsi le processus de rangement.  
@@ -37,7 +37,7 @@ Outre les méthodes standard pour créer les rangements entrepôt qui sont décr
 4.  Une fois le rangement des articles terminé, choisissez l'action **Enregistrer rangement** pour enregistrer la finalisation de l'activité et rendre les articles disponibles pour le prélèvement.  
 
 ## <a name="to-put-items-away-with-directed-put-away-and-pick"></a>Rangement d'articles dans le cadre d'un prélèvement et d'un rangement suggérés  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Rangements**, puis sélectionnez le lien associé.
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rangements**, puis sélectionnez le lien associé.
     Si des instructions de rangement ont été créées, un rangement entrepôt apparaît.  
 2.  Ouvrez le rangement entrepôt que vous souhaitez utiliser.  
 3.  Entrez votre code utilisateur sur le raccourci **Général** lorsque vous commencez à travailler sur un rangement particulier.  
@@ -65,7 +65,7 @@ Le classement de zone est pris en compte lorsque plusieurs zones correspondent a
 ## <a name="to-create-a-put-away-from-a-posted-receipt"></a>Pour créer un rangement à partir d'une réception reportée  
  Si votre emplacement utilise à la fois le traitement des rangements et des réceptions et que vous avez supprimé des lignes rangement, ou si vous utilisez le prélèvement et le rangement suggérés et avez décidé de ne pas utiliser la feuille rangement, vous pouvez créer ou recréer des instructions de rangement pour les lignes réception reportées.
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Réceptions entrep. reportées**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Réceptions d'entrepôt reportées**, puis sélectionnez le lien associé.  
 2.  Sélectionnez une réception reportée pouvant nécessiter un rangement.  
 3.  Sélectionnez l'action **Fiche**.  
 

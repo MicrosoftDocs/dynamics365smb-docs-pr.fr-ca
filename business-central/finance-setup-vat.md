@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: VAT, posting, tax, value-added tax
-ms.date: 05/06/2018
+ms.date: 10/01/2018
 ms.author: bholtorf
 ms.translationtype: HT
-ms.sourcegitcommit: e73c2dd0533aade4aa6225c9d2f385baaea3cfd1
-ms.openlocfilehash: 399b1a4331431a6472ecebaad41489092d117cfa
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: f23993964f0803f2153c2d190a23532113e5ddd2
 ms.contentlocale: fr-ca
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 
@@ -37,14 +37,14 @@ Si vous souhaitez configurer vous-même les calculs de TVA, ou en savoir plus su
 Il est recommandé d'utiliser le guide de configuration assistée Paramètres TVA pour configurer la TVA dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
 Pour démarrer le guide de configuration assistée, procédez comme suit :
-1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Configuration assistée**.  
+1. Choisissez l'icône de ![l'ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration assistée**, puis sélectionnez le lien associé.  
 2. Choisissez **Configuration TVA**.
 
 ## <a name="to-set-up-vat-registration-numbers-for-your-country-or-region"></a>Pour configurer les numéros d'identification intracommunautaire pour votre pays ou région
 Pour garantir que les personnes entrent des numéros d'identification intracommunautaire valides, vous pouvez définir des formats pour les numéros d'identification intracommunautaire utilisés dans des pays ou des régions dans lesquels vous travaillez. [!INCLUDE[d365fin](includes/d365fin_md.md)] affichera un message d'erreur lorsque un employé fait une erreur ou utilise un format incorrect pour le pays ou la région.
 
 Pour configurer des numéros d'identification intracommunautaire, procédez comme suit :
-1. Cliquez sur l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche") et entrez **Pays/Régions**.
+1. Choisissez l'icône de ![l'ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Pays/Régions**, puis sélectionnez le lien associé.
 2. Choisissez le pays ou la région, puis sélectionnez l'action **Formats N° d'inscription TPS/TVH**.
 3. Dans le champ **Formats**, définissez le format en saisissant un ou plusieurs des caractères suivants :  
 
@@ -62,7 +62,7 @@ Utilisez des codes faciles à retenir et qui décrivent le groupe comptabilisati
 
 Pour configurer un groupe de report marché TVA, procédez comme suit :
 
-1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Groupe compta. marché TVA**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Groupe de report de marché TVA**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins.
 
 Paramétrez les groupes comptabilisation marché TVA par défaut en les liant à des groupes comptabilisation marché. [!INCLUDE[d365fin](includes/d365fin_md.md)] affecte automatiquement le groupe comptabilisation marché TVA lorsque vous affectez le groupe comptabilisation marché à un client, un fournisseur ou un compte général.
@@ -73,7 +73,7 @@ Il est recommandé d'utiliser des codes faciles à retenir et qui décrivent le 
 
 Pour configurer un groupe de report marché TVA, procédez comme suit :
 
-1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Groupes comptabilisation produit TVA**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Groupes de report produit TVA**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins.
 
 ## <a name="to-combine-vat-posting-groups-in-vat-posting-setups"></a>Pour regrouper des groupes de report TVA dans les configurations de report TVA
@@ -83,7 +83,7 @@ Définissez autant de combinaisons que nécessaire. Si vous voulez regrouper des
 
 Pour regrouper des configurations report TVA, procédez comme suit :
 
-1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Paramètres compta. TVA**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration report TVA**, puis sélectionnez le lien associé.
 2. Renseignez les champs selon vos besoins.
 
 ## <a name="to-assign-vat-posting-groups-by-default-to-multiple-entities"></a>Pour affecter des groupes de report TVA par défaut à plusieurs entités
@@ -98,18 +98,18 @@ Le groupe de report marché ou produit TVA est affecté lorsque vous choisissez 
 Les sections suivantes décrivent comment affecter des groupes comptabilisation TVA à des entités individuelles.
 
 ### <a name="to-assign-vat-posting-groups-to-individual-general-ledger-accounts"></a>Pour affecter des groupes comptabilisation TVA à des comptes généraux individuels
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Plan comptable**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable**, puis sélectionnez le lien associé.  
 2. Ouvrez la fiche **Compte général** pour le compte.  
 3. Sous le raccourci **Comptabilisation**, dans le champ **Type compta. TVA**, choisissez **Vente** ou **Achat**.  
 5. Choisissez les groupes comptabilisation TVA à utiliser pour le compte vente ou achat.  
 
 ### <a name="to-assign-vat-business-posting-groups-to-customers-and-vendors"></a>Pour affecter des groupes comptabilisation marché TVA à des clients et des fournisseurs  
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Client** ou **Fournisseur**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Client** ou **Fournisseur**, puis sélectionnez le lien associé.  
 2. Sur la fiche **Client** ou **Fournisseur**, développez le raccourci **Facturation**.  
 3. Choisissez le groupe de report marché TVA.  
 
 ### <a name="to-assign-vat-product-posting-groups-to-individual-items-and-resources"></a>Pour affecter des groupes comptabilisation produit TVA à des articles et des ressources individuels  
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Client** ou **Fournisseur**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Article** ou **Ressource**, puis sélectionnez le lien associé.  
 2. Exécutez l'une des opérations suivantes :  
 
 * Sur la fiche **Article**, développez le raccourci **Prix et validation**, puis sélectionnez **Afficher plus** pour afficher le champ **Groupe compta. produit TVA**.  
@@ -120,12 +120,12 @@ Les sections suivantes décrivent comment affecter des groupes comptabilisation 
 Les autorités fiscales peuvent modifier et modifient leurs exigences de report de la TVA. Les **Modèles de relevé fiscal** et les **Noms de relevé fiscal** peuvent vous aider à vous préparer aux changements à venir et à vous conformer en douceur aux nouvelles exigences. Vous pouvez utiliser les modèles de relevé fiscal pour définir les champs à inclure dans votre relevé fiscal, qui définissent à leur tour les calculs, et vous pouvez créer un modèle de relevé fiscal lorsque les exigences changent. Par exemple, un modèle peut calculer la TVA pour cette année en fonction des exigences actuelles, et un autre modèle peut calculer la TVA en fonction des exigences de l'année suivante. Les modèles permettent également de conserver un historique des formats de relevé fiscal, pour vous permettre de déterminer comment la TVA a été calculée au cours des exercices précédents.
 
 ## <a name="how-to-define-and-preview-vat-statements"></a>Définition et affichage d'un aperçu des relevés fiscaux
-Les relevés fiscaux vous permettent de calculer le montant du relevé fiscal pour une période donnée, par exemple, un trimestre. Après avoir défini un relevé fiscal, vous pouvez en afficher un aperçu pour vérifier qu'il répond à vos besoins. 
+Les relevés fiscaux vous permettent de calculer le montant du relevé fiscal pour une période donnée, par exemple, un trimestre. Après avoir défini un relevé fiscal, vous pouvez en afficher un aperçu pour vérifier qu'il répond à vos besoins.
 
 Pour définir un relevé fiscal, procédez comme suit :
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Relevés fiscaux**, puis sélectionnez le lien associé.  
-2. Choisissez le champ **Nom**, puis sélectionnez **Nouveau** sur la page **Noms de relevé fiscal**. 
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Relevés fiscaux**, puis sélectionnez le lien associé.  
+2. Choisissez le champ **Nom**, puis choisissez **Nouveau** dans la fenêtre **Noms de relevé fiscal**.
 3. Renseignez les champs requis. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 > [!Tip]
@@ -147,19 +147,19 @@ Si nécessaire, vous pouvez également spécifier comment convertir les clauses 
 Vous pouvez modifier ou supprimer une clause TVA, et les modifications que vous apportez seront visibles dans un rapport généré. Toutefois, [!INCLUDE[d365fin](includes/d365fin_md.md)] ne crée pas d'historique des modifications. Sur le rapport, les descriptions des clauses TVA sont imprimées et affichées pour toutes les lignes du rapport à côté du montant de la TVA et du montant de base de la TVA. Si aucune clause TVA n'a été définie pour les lignes du document vente, la totalité de la section est omise lors de l'impression du rapport.
 
 ### <a name="to-set-up-vat-clauses"></a>Pour configurer des clauses TVA
-1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Clauses TVA**, puis choisissez le lien associé.  
-2. Sur la page **Clauses TVA**, créez une ligne.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clauses TVA**, puis sélectionnez le lien associé.  
+2. Sur la fenêtre **Clauses TVA**, créez une ligne.  
 3. Dans le champ **Code**, entrez un identificateur pour la clause. Vous utilisez ce code pour affecter la clause à des groupes comptabilisation TVA.  
 4. Dans le champ **Description**, saisissez le texte que vous souhaitez afficher sur les documents pouvant inclure la TVA. Dans le champ **Description 2**, entrez du texte supplémentaire, si nécessaire. Le texte s'affiche sur de nouvelles lignes.  
 5. Facultatif : pour affecter immédiatement la clause TVA à un paramètre comptabilisation TVA, sélectionnez **Paramètres**, puis sélectionnez la clause. Si vous souhaitez attendre, vous pouvez affecter la clause ultérieurement sur la page Configuration report taxe.  
 6. Facultatif : pour spécifier comment traduire la clause TVA, sélectionnez l'action **Traductions**.
 
 ### <a name="to-assign-a-vat-clause-to-a-vat-posting-setup"></a>Pour affecter une clause TVA à une configuration report TVA
-1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Paramètres compta. TVA**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration report TVA**, puis sélectionnez le lien associé.  
 2. Dans la colonne **Clause TVA**, choisissez la clause à utiliser pour chaque paramètre comptabilisation TVA auquel elle s'applique.  
 
 ### <a name="to-specify-translations-for-vat-clauses"></a>Pour spécifier des traductions pour les clauses TVA
-1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Clauses TVA**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clauses TVA**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'option **Traductions**.  
 3. Dans le champ **Code langue**, sélectionnez la langue de traduction.  
 4. Dans les champs **Description** et **Description 2**, saisissez les traductions des descriptions. Ce texte s'affiche dans les documents rapport de TVA traduits.  
@@ -168,9 +168,9 @@ Vous pouvez modifier ou supprimer une clause TVA, et les modifications que vous 
 Utilisez la fonction TVA à l'importation pour reporter un document dont le montant entier est TVA. Elle est utile lorsque vous recevez une facture des autorités fiscales pour la TVA sur les biens importés.  
 
 Pour configurer des codes pour la TVA à l'importation, procédez comme suit :  
-1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Groupes comptabilisation produit TVA**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Groupes de report produit TVA**, puis sélectionnez le lien associé.  
 2. Sur la page Groupes de report produit TVA, configurez un groupe de report produit TVA pour la TVA à l'importation.  
-3. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Paramètres compta. TVA**, puis choisissez le lien associé.  
+3. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration report TVA**, puis sélectionnez le lien associé.  
 4. Sur la page Configuration report de taxe, créez une ligne ou utilisez un groupe report marché TVA existant en combinaison avec le nouveau groupe report produit TVA créé pour la TVA à l'importation.  
 5. Dans le champ **Mode calcul TVA**, sélectionnez **Exclusivement TVA**.  
 6. Dans le champ **Compte TVA achat**, indiquez le compte général à utiliser pour valider la TVA à l'importation. Tous les autres comptes sont facultatifs.  
@@ -178,7 +178,7 @@ Pour configurer des codes pour la TVA à l'importation, procédez comme suit :
 ## <a name="to-verify-vat-registration-numbers"></a>Pour vérifier les numéros d'identification TVA
 Il est important que les numéros d'identification TVA des clients, fournisseurs et contacts soient valides. Par exemple, les compagnies modifient parfois leur état d'assujettissement à la TVA, et dans certains pays, les autorités fiscales peuvent vous demander de fournir des rapports, tels que le rapport Liste des ventes UE, qui répertorient les numéros d'identification TVA que vous utilisez lors de vos activités.
 
-La Commission européenne fournit le service VIES de validation des numéros TVA sur son site Web, qui est public et gratuit. [!INCLUDE[d365fin](includes/d365fin_md.md)] vous permet de supprimer cette étape et d'utiliser le service VIES pour valider et suivre les numéros de TVA des clients, fournisseurs et contacts directement à partir des fiches client, fournisseur et contact. Le service de [!INCLUDE[d365fin](includes/d365fin_md.md)] s'appelle **Services validation N° id. intracomm. Union européenne**. Il est disponible sur la page **Connexions au service**, et vous pouvez commencer à l'utiliser immédiatement. La connexion au service est gratuite, et l'inscription n'est pas obligatoire.
+La Commission européenne fournit le service VIES de validation des numéros TVA sur son site Web, qui est public et gratuit. [!INCLUDE[d365fin](includes/d365fin_md.md)] vous permet de supprimer cette étape et d'utiliser le service VIES pour valider et suivre les numéros de TVA des clients, fournisseurs et contacts directement à partir des fiches client, fournisseur et contact. Le service de [!INCLUDE[d365fin](includes/d365fin_md.md)] s'appelle **Services validation N° id. intracomm. Union européenne**. Il est disponible sur la fenêtre **Connexions au service**, et vous pouvez commencer à l'utiliser immédiatement. La connexion au service est gratuite, et l'inscription n'est pas obligatoire.
 
 > [!Note]
 > Pour activer les Services validation N° id. intracomm. Union européenne, vous devez disposer des autorisations de l'administrateur.
@@ -236,12 +236,12 @@ Avant de configurer l'outil de modification du taux de TVA, vous devez vous pré
 * Sauvegardez les données.
 
 ### <a name="to-set-up-the-vat-rate-change-tool"></a>Pour configurer l'outil de modification du taux de TVA  
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Configuration modification taux TVA**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration modification taux TVA**, puis sélectionnez le lien associé.  
 2. Sur les raccourcis **Données principales**, **Journaux** et **Documents**, sélectionnez la valeur d'un groupe de report dans la liste des options pour les champs requis.  
 
 ### <a name="to-set-up-product-posting-group-conversion"></a>Pour configurer une conversion du groupe de report produit  
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Configuration modification taux TVA**, puis sélectionnez le lien associé.  
-2. Sur la page **Configuration modification taux TVA**, sous l'onglet **Accueil**, dans le groupe **Processus**, choisissez **Conv. groupe de report produit TVA** ou **Conv. groupe de report produit général**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration modification taux TVA**, puis sélectionnez le lien associé.  
+2. Dans la fenêtre **Configuration modification taux TVA**, sous l'onglet **Accueil**, dans le groupe **Processus**, choisissez **Conv. groupe de report produit TVA** ou **Conv. groupe de report produit général**.  
 3. Dans le champ **Code début**, saisissez le groupe de comptabilisation actuel.  
 4. Dans le champ **Code fin**, saisissez le nouveau groupe de comptabilisation.  
 
@@ -254,7 +254,7 @@ Vous utilisez l'outil de modification de la TVA pour gérer les variations du ta
 > [!IMPORTANT]  
 >  Avant d'effectuer la conversion de modification du taux de TVA, vous pouvez tester la conversion. Pour ce faire, suivez la procédure ci-dessous, mais veillez à désactiver les cases à cocher **Effectuer la conversion** et **Outil de modification du taux de TVA terminé**. Lors de la conversion test, le champ **Converti** de la table **Écriture journal modification taux TVA** est supprimé et le champ **Date conversion** de la table **Écriture journal modification taux TVA** est vide. Une fois la conversion terminée, choisissez **Écritures journal modification pour taux de TVA** pour afficher les résultats de la conversion test. Vérifiez chaque écriture avant d'exécuter la conversion. Vérifiez en particulier les transactions qui utilisent un ancien taux de TVA.     
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Modification taux TVA**, puis sélectionnez le lien **Configuration modification taux TVA**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modification taux TVA**, puis sélectionnez le lien **Configuration modification taux TVA**.  
 2. Vérifiez que vous avez déjà configuré une conversion de groupe de report produit TVA ou une conversion de groupe de report produit général.  
 3. Activez la case à cocher **Effectuer la conversion**.  
 

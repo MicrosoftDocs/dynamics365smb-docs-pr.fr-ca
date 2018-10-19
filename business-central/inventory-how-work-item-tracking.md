@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 04/17/2018
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 7c346455a9e27d7274b116754f1d594484b95d67
-ms.openlocfilehash: 2e764a915f1c4b258f0163f355653be81924ba96
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: b31619fd1d76be71af9408f1c20be35846cef114
 ms.contentlocale: fr-ca
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="work-with-serial-and-lot-numbers"></a>Utiliser les numéros de lot et de série
@@ -55,13 +55,14 @@ Si vous travaillez dans la fenêtre **Lignes traçabilité** pendant une longue 
 ## <a name="to-set-up-item-tracking-codes"></a>Pour configurer les codes traçabilité
 Les codes traçabilité reflètent les différents positionnements d'une compagnie par rapport à l'utilisation des numéros de série et de lot pour les articles qu'elle traite.  
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Codes de suivi d'article**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Codes traçabilité**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 4. Sur les raccourcis **N° de série** et **N° lot**, définissez des règles de traçabilité par numéros de série et numéros de lot respectivement.  
 
 > [!NOTE]  
->   Si vous souhaitez suivre des articles spécifiques ou des lots spécifiques tout au long de leur durée de vie, vous devez sélectionner les champs **NS - Traçabilité spéc.** et **N° lot - Traçabilité spéc.**, respectivement. Par conséquent, lorsque vous gérez une unité sortante d'un article avec ce code traçabilité, vous devez toujours spécifier le numéro de série existant ou le numéro de lot existant à gérer. Ainsi, lorsque vous vendez une unité de cet article, elle doit être associée à un groupe précis de numéros de série ou à un numéro de lot spécifique dans l'inventaire. Autrement dit, le numéro de série ou le numéro de lot affecté à l'article lors de son entrée dans l'inventaire doit suivre ce type d'article lors de sa sortie de l'inventaire.  
+>  Si vous souhaitez suivre des articles spécifiques ou des lots spécifiques tout au long de leur durée de vie, vous devez sélectionner les champs **NS - Traçabilité spéc.** et **N° lot - Traçabilité spéc.**, respectivement. Par conséquent, lorsque vous gérez une unité sortante d'un article avec ce code traçabilité, vous devez toujours spécifier le numéro de série existant ou le numéro de lot existant à gérer. Ainsi, lorsque vous vendez une unité de cet article, elle doit être associée à un groupe précis de numéros de série ou à un numéro de lot spécifique dans l'inventaire. Autrement dit, le numéro de série ou le numéro de lot affecté à l'article lors de son entrée dans l'inventaire doit suivre ce type d'article lors de sa sortie de l'inventaire.
+  
 Comme ce champ de configuration couvre toutes les transactions réalisables avec cet article, les différents champs Enlogement/Désenlogement sont également sélectionnés. Ces champs n'ont toutefois aucun rapport avec une quelconque application dans l'inventaire ; ils définissent simplement le flux de travail de votre compagnie en ce qui concerne le moment de l'affectation des numéros traçabilité.  
 
 ### <a name="to-set-up-expiration-rules-for-serial-or-lot-numbers"></a>Pour configurer des règles d'expiration pour les numéros de série ou de lot  
@@ -77,7 +78,7 @@ Pour certains articles, vous pouvez configurer des règles et des dates d'expira
 
 ### <a name="to-set-up-warranties-for-serial-or-lot-numbers"></a>Pour configurer des garanties pour les numéros de série ou de lot  
 Pour certains articles, vous souhaitez peut-être configurer des garanties spécifiques dans le code traçabilité. Cette fonctionnalité vous permet d'effectuer le suivi de la date d'expiration des garanties de numéros de série ou de lot spécifiques de votre inventaire.        
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Codes de suivi d'article**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Codes traçabilité**, puis sélectionnez le lien associé.  
 
 1. Sélectionnez un code traçabilité existant, puis sélectionnez l'action **Modifier**.  
 2.  Sur le raccourci **Divers**, renseignez le champ **Formule date garantie**, puis activez la case à cocher comme indiqué ci-dessous.  
@@ -100,7 +101,7 @@ Vous pouvez lier des informations particulières à un numéro traçabilité, pa
 6. Sélectionnez le champ **Bloqué** pour exclure l'ancien numéro de lot ou de série de toutes les transactions.  
 
 ## <a name="to-modify-existing-serial-or-lot-number-information"></a>Pour modifier des informations relatives au numéro de série ou de lot  
-1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Articles**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Articles**, puis sélectionnez le lien associé.  
 2. Sélectionnez un article qui comporte un code traçabilité et des informations de numéro de série ou de lot.
 3. Dans la fenêtre **Fiche article**, choisissez l'action **Écritures**, puis choisissez **Écritures**.
 4. Cliquez sur le champ **N° lot** ou **N° de série**. S'il existe des informations en relation avec ce numéro de traçabilité article, alors la fenêtre **Liste information n° lot** ou **Liste information n° de série** s'ouvre.  
@@ -115,9 +116,9 @@ Les compagnies peuvent également effectuer le suivi des articles dès leur arri
 Pour définir les règles exactes de traitement des numéros traçabilité pour votre société, utilisez la fenêtre **Fiche code traçabilité**.  
 
 > [!NOTE]  
->  Pour utiliser les numéros de traçabilité dans les activités entrepôt, les champs de configuration **N° lot - Traçabilité entrepôt** et **NS - Traçabilité entrepôt** doivent être sélectionnés car ils définissent les principes de gestion des numéros de série et de lot dans les activités entrepôt.  
+>  Pour utiliser les numéros de traçabilité dans les activités entrepôt, les champs de configuration **N° lot \- Traçabilité entrepôt** et **NS \- Traçabilité entrepôt** doivent être sélectionnés car ils définissent les principes de gestion des numéros de série et de lot dans les activités entrepôt.  
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Bons de commande**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de commande**, puis sélectionnez le lien associé.  
 2.  Sélectionnez la ligne document appropriée et dans le raccourci **Lignes**, sélectionnez l'action **Ligne**, puis l'action **Lignes traçabilité**.  
 
     Vous pouvez affecter des numéros de série ou de lot. Pour cela, il existe plusieurs méthodes :  
@@ -151,7 +152,7 @@ Il existe deux méthodes pour ajouter des numéros de série et de lot aux trans
 Les différentes règles pour les numéros traçabilité sont définis dans la fenêtre **Fiche code traçabilité**.  
 
 > [!NOTE]  
->  Pour affecter des numéros traçabilité dans les activités entrepôt, les champs **NS - Traçabilité entrepôt** et **N° lot - Traçabilité entrepôt** doivent être sélectionnés sur la fiche code de la traçabilité de l'article.    
+>  Pour affecter des numéros traçabilité dans les activités entrepôt, les champs **NS \- Traçabilité entrepôt** et **N° lot \- Traçabilité entrepôt** doivent être sélectionnés sur la fiche code de la traçabilité de l'article.    
 
 1. Sélectionnez la ligne document appropriée et dans le raccourci **Lignes**, sélectionnez l'action **Commande**, puis l'action **Lignes traçabilité**.  
 
@@ -199,7 +200,7 @@ Les procédures de traitement des numéros de série et de lot transférés entr
 Toutefois, l'ordre de transfert est unique dans le sens où l'expédition et la réception sont effectuées à partir de la même ligne transfert et, par conséquent, utilisent la même instance de la fenêtre **Lignes traçabilité**. Cela signifie que les numéros traçabilité livrés d'un emplacement doivent être reçus intacts à l'autre emplacement.  
 
  Pour définir les règles exactes de traitement des numéros traçabilité pour votre société, utilisez la table **Code traçabilité**.    
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Ordres de transfert**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Ordres de transfert**, puis sélectionnez le lien associé.  
 2.  Ouvrez l'ordre de transfert à traiter. Dans le raccourci **Lignes**, sélectionnez l'action **Ligne**, sélectionnez l'action **Lignes traçabilité d'article**, puis sélectionnez l'action **Livraison**.  
 3.  Dans la fenêtre **Lignes traçabilité**, affectez ou sélectionnez des numéros de série ou de lot, comme pour toute autre transaction article sortante.  
 
@@ -222,7 +223,7 @@ La fonctionnalité prend en charge les processus sortants suivants :
 
 Dans tous ces cas, les lignes traçabilité préexistantes sont automatiquement copiées dans la facture ou l'avoir. La fenêtre **Lignes traçabilité** ne permet toutefois pas de changer les numéros de série ou de lot. Seules les quantités peuvent être modifiées.  
 
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Factures achat**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures achat**, puis sélectionnez le lien associé.  
 2.  Ouvrez une facture achat pour les articles achetés avec des numéros de série ou de lot.  
 3.  À partir d'une ligne facture achat, sur le raccourci **Lignes**, sélectionnez l'action **Extraire lignes réception**.  
 4.  Dans la fenêtre **Extraire lignes réception**, sélectionnez les lignes réception qui ont des lignes traçabilité, puis cliquez sur le bouton **OK**.  
@@ -237,7 +238,7 @@ La valeur des champs **N° de série** et **N° lot** ne peut pas être modifié
 ## <a name="to-reclassify-serial-or-lot-numbers"></a>Pour reclasser les numéros de lot ou de série  
 Le reclassement de la traçabilité pour un article consiste à remplacer un numéro de lot ou de série par un autre ou à remplacer la date de péremption par une autre. Si vous travaillez avec des lots, vous pouvez fusionner plusieurs lots en un seul. Vous traitez ces tâches à l'aide du journal reclassement article.
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Journal de reclassement d'articles**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal reclassement article**, puis sélectionnez le lien associé.  
 2.  Renseignez la ligne à l'aide des informations appropriées. Pour plus d'informations, voir [Nombre, ajustement et reclassement de l'inventaire](inventory-how-count-adjust-reclassify.md).
 3.  Choisissez l'action **Lignes traçabilité**.  
 4.  Dans le champ **N° de série** ou **N° lot**, sélectionnez le numéro de série/lot actuel.  

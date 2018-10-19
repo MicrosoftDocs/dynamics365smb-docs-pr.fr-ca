@@ -1,37 +1,48 @@
 ---
 title: "Affecter des paiements à des documents connexes et les reporter | Microsoft Docs"
 description: "Décrit comment enregistrer les paiements effectués aux fournisseurs et les remboursements effectués aux clients."
-author: SorenGP
+author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment journal, print check, vendor payment, customer refund, creditor, debt, balance due, AP
-ms.date: 04/30/2018
-ms.author: sgroespe
+ms.date: 10/01/2018
+ms.author: edupont
 ms.translationtype: HT
-ms.sourcegitcommit: 75501b9402bb1c14fcfeb2fc6e61f055a2247493
-ms.openlocfilehash: 3cad699234d95a849bf48f04c8462afa968789f6
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 8f8db0bd6d12d4a633fe4ea33c732f231d798b3d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 09/28/2018
 
 ---
-# <a name="record-payments-and-refunds"></a>Enregistrer des paiements et des remboursements
-Dans la fenêtre **Journal des paiements**, vous enregistrez les paiements effectués aux fournisseurs et les remboursements effectués aux clients. Lorsque vous reportez une ligne journal des paiements, le montant payé est enregistré sur le compte bancaire système spécifié. Vous devez ensuite effectuer des actions pour procéder au transfert d'argent réel à partir du compte bancaire associé.
+# <a name="record-payments-and-refunds-in-the-payment-journal"></a>Enregistrer les paiements et remboursements dans le journal paiement
 
-Si vous renseignez le champ **N° doc. référence** avec la facture ou la note de crédit qui doit être payée ou remboursée, le document en question est défini sur Payé lorsque vous reportez le journal. C'est ce qu'on appelle « affecté ». Outre l'affectation lors du report du paiement, vous pouvez utiliser la fenêtre **Affecter écritures fournisseur** ou **Affecter écritures client** après avoir reporté le paiement. Pour plus d'informations, voir [Rapprocher les paiements fournisseur manuellement](payables-how-apply-purchase-transactions-manually.md), par exemple.
+Dans la fenêtre **Journal des paiements**, vous enregistrez les paiements effectués aux fournisseurs et les remboursements effectués aux clients. Lorsque vous reportez une ligne journal des paiements, le montant payé est enregistré sur le compte bancaire système spécifié. Vous devez ensuite effectuer des actions pour procéder au transfert d'argent réel à partir du compte bancaire associé.  
 
-La fonction **Proposer paiements fournisseur** peut vous aider à renseigner automatiquement les lignes journal des paiements en fonction de la priorité des fournisseurs et des dates d'échéance. Pour plus d'informations, reportez vous à [Proposer des paiements fournisseur](payables-how-suggest-vendor-payments.md). Avec cette fonction, le champ **N° doc. référence** est toujours renseigné.
+Le journal paiement est un journal général qui est optimisé pour effectuer des paiements. Vous pouvez rapidement ajouter des lignes manuellement, vous pouvez laisser [!INCLUDE[d365fin](includes/d365fin_md.md)] proposer des paiements fournisseur, et vous pouvez affecter le paiement à des documents reportés. Bien que vous effectuiez des paiements, vous entrez un montant positif dans le champ **Montant du document**. Selon le type de document de la ligne journal, ce montant est ensuite converti en montant négatif dans les transactions sous-jacentes. Ainsi, il est plus rapide pour vous d'ajouter des lignes journal manuellement. Si vous préférez saisir des montants négatifs, vous pouvez personnaliser le journal paiement pour afficher le champ **Montant** à la place.  
 
-Outre l'enregistrement du paiement, vous pouvez également utiliser la fenêtre **Journal des paiements** pour générer le paiement à des fins de traitement par votre banque. Pour plus d'informations, voir [Effectuer des paiements par chèque](payables-how-work-checks.md) et [Effectuer des paiements électroniques](payables-how-export-payments-bank-file.md).  
+- Affecter des paiements à des factures ou des notes de crédit
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuilles paiement**, puis sélectionnez le lien connexe.
+    Si vous renseignez le champ **N° doc. référence** avec la facture ou la note de crédit qui doit être payée ou remboursée, le document en question est défini sur Payé lorsque vous reportez le journal. C'est ce qu'on appelle « affecté ». Outre l'affectation lors du report du paiement, vous pouvez utiliser la fenêtre **Affecter écritures fournisseur** ou **Affecter écritures client** après avoir reporté le paiement. Pour plus d'informations, voir [Rapprocher les paiements fournisseur manuellement](payables-how-apply-purchase-transactions-manually.md), par exemple.  
+
+- Obtenir des suggestions de paiements aux fournisseurs ou aux employés 
+
+    Les fonctions **Proposer paiements fournisseur** et **Proposer paiements employé** peuvent vous aider à renseigner automatiquement les lignes journal paiement en fonction de la priorité des fournisseurs et des dates d'échéance. Pour plus d'informations, reportez vous à [Proposer des paiements fournisseur](payables-how-suggest-vendor-payments.md). Avec cette fonction, le champ **N° doc. référence** est toujours renseigné.  
+
+- Imprimer des chèques et envoyer des paiements électroniques à votre banque
+
+    Outre l'enregistrement du paiement, vous pouvez également utiliser la fenêtre **Journal des paiements** pour générer le paiement à des fins de traitement par votre banque. Pour plus d'informations, voir [Effectuer des paiements par chèque](payables-how-work-checks.md) et [Effectuer des paiements électroniques](payables-how-export-payments-bank-file.md).  
+
+## <a name="to-make-payments-in-the-payment-journal"></a>Pour effectuer des paiements dans le journal paiement 
+
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux paiement**, puis sélectionnez le lien associé.
 2. Ouvrez le lot journal dédié aux paiements.
 3. Si vous savez qui payer ou rembourser, renseignez les champs manuellement. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Pour affecter également le paiement à la facture ou la note de crédit associée, sélectionnez le champ **N° doc. référence**, dans la fenêtre **Affecter écritures fournisseur**, sélectionnez la facture ou la note de crédit appropriée, puis cliquez sur le bouton **OK**.
 
-    De nombreux champs, tels que **Montant** et **Date d'échéance**, sont maintenant renseignés avec les informations du document sélectionné.
+    De nombreux champs, tels que **Montant du document** et **Date d'échéance**, sont maintenant renseignés avec les informations du document sélectionné.
 5. Sinon, utilisez la fonction **Proposer paiements fournisseur**. Tous les montants et informations de référence sont également saisis sur les lignes journal. Pour plus d'informations, reportez vous à [Proposer des paiements fournisseur](payables-how-suggest-vendor-payments.md).
 
     Les messages vous aident à renseigner correctement les champs obligatoires.
@@ -43,5 +54,7 @@ Outre l'enregistrement du paiement, vous pouvez également utiliser la fenêtre 
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
 [Paramétrage des opérations bancaires](bank-setup-banking.md)  
 [Exporter un fichier Positive Pay](finance-how-positive-pay.md)  
+[Utilisation de feuilles comptabilité](ui-work-general-journals.md)  
+[Personnalisation de votre espace de travail](ui-personalization-user.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 

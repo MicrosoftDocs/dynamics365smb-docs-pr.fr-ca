@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/14/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: a22dc01284fc0edca46d1f733f0bef83e61adbde
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: d45b76e137dd2e8da752be489d16ac536da265e1
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="set-up-shop-calendars"></a>Paramétrer des calendriers usine
@@ -27,7 +27,7 @@ Avant de calculer un calendrier d'unité de production ou d'atelier spécifique,
 La procédure suivante décrit comment configurer des calendriers d'atelier. Les étapes sont similaires lorsque vous configurez des calendriers d'unité de production.  
 
 ## <a name="to-create-work-shifts"></a>Pour créer des équipes  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Équipes**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Équipes**, puis sélectionnez le lien associé.  
 2.  Sur une ligne blanche, entrez le numéro d'identification de l'équipe, par exemple, **1**, dans le champ **Code**.  
 3.  Dans le champ **Désignation**, entrez la désignation de l'équipe, par exemple, **1ère équipe**.  
 4.  Vous pouvez également renseignez les lignes d'une deuxième ou troisième équipe.  
@@ -35,7 +35,7 @@ La procédure suivante décrit comment configurer des calendriers d'atelier. Les
 Même si vos centres de charge n'ont pas recours à diverses équipes, entrez au moins un code équipe.  
 
 ## <a name="to-set-up-a-shop-calendar"></a>Pour configurer un calendrier usine  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Calendriers usine**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Calendriers usine**, puis sélectionnez le lien associé.  
 2.  Sur une ligne blanche, entrez le numéro d'identification du calendrier usine dans le champ **Code**.  
 3.  Dans le champ **Désignation**, entrez la désignation du calendrier usine.  
 4.  Choisissez l'action **Jours ouvrés**.
@@ -70,7 +70,7 @@ Le calendrier usine peut ensuite être attribué à un atelier pour calculer le 
 
 ## <a name="to-calculate-a-work-center-calendar"></a>Pour calculer un calendrier d'atelier  
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Ateliers**, puis sélectionnez le lien associé.
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Ateliers**, puis sélectionnez le lien associé.
 2. Ouvrez l'atelier que vous voulez mettre à jour.  
 3. Dans le champ **Code calendrier usine**, sélectionnez le calendrier usine à utiliser comme base pour le calendrier d'atelier.  
 4. Sélectionnez l'action **Calendrier**.  

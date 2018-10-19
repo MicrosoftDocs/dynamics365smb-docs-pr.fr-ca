@@ -1,5 +1,5 @@
 ---
-title: "Créer des nouvelles écritures valeur pour des articles de l'inventaire Microsoft Docs"
+title: "Créer des nouvelles écritures valeur pour des articles de l'inventaire | Microsoft Docs"
 description: "Décrit comment réévaluer ou amortir les entrées valeur d'un ou de plusieurs articles dans l'inventaire en reportant leur valeur actuelle calculée."
 services: project-madeira
 documentationcenter: 
@@ -10,20 +10,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: costing, inventory cost, value entries
-ms.date: 08/07/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 6f52795bf47b3ebddd446105b92d526a83748fc8
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: d4111c5e1e496b2b47afed2d37533707f1c99a89
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="revalue-inventory"></a>Réévaluer l'inventaire
 Pour réévaluer ou amortir un article ou une écriture article spécifique, vous devez utiliser le journal réévaluation.
 
 ## <a name="to-revalue-inventory"></a>Pour réévaluer l'inventaire
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Feuille réévaluation**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal réévaluation**, puis sélectionnez le lien associé.
 2. Choisissez l'action **Calculer valeur stock**.
 3. Dans la fenêtre **Calculer valeur stock**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Cliquez sur le bouton **OK**.

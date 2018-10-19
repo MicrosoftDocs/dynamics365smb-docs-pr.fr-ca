@@ -1,6 +1,6 @@
 ---
 title: "Procédure : créer des commandes spéciales | Microsoft Docs"
-description: "Vous pouvez créer une commande spéciale pour un article spécifique non stocké à livrer à un client particulier. Le fournisseur livre l'article à votre entrepôt et vous pouvez ensuite le livrer à votre client seul ou avec d'autres articles issus d'autres commandes."
+description: "Vous pouvez créer une commande spéciale pour un article de catalogue spécifique à livrer à un client particulier. Le fournisseur livre l'article à votre entrepôt et vous pouvez ensuite le livrer à votre client seul ou avec d'autres articles issus d'autres commandes."
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -8,29 +8,29 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/08/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 84b7a66734b3da5bdbc474bc43e463481c7f6ba5
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 36c68048c384f4ccfef6c811ac288b306351ce2f
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="create-special-orders"></a>Créer des commandes spéciales
-Vous pouvez créer une commande spéciale pour un article spécifique non stocké à livrer à un client particulier. Le fournisseur livre l'article à votre entrepôt et vous pouvez ensuite le livrer à votre client seul ou avec d'autres articles issus d'autres commandes.  
+Vous pouvez créer une commande spéciale pour un article de catalogue spécifique à livrer à un client particulier. Le fournisseur livre l'article à votre entrepôt et vous pouvez ensuite le livrer à votre client seul ou avec d'autres articles issus d'autres commandes.  
 
-Dans le cadre d'une commande spéciale, le bon de commande et le document de vente sont liés pour s'assurer que l'article non stocké précis est prélevé et livré au client.  
+Dans le cadre d'une commande spéciale, le bon de commande et le document de vente sont liés pour s'assurer que l'article de catalogue spécifique est prélevé et livré au client.  
 
 Pour pouvoir utiliser cette fonction, vous devez d'abord configurer les fiches client, fournisseur, et article nécessaires à la commande.  
 
 ## <a name="to-create-a-special-order"></a>Pour créer une commande spéciale  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Document de vente**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Document de vente**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**. Créez et renseignez un document de vente pour l'article. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
 3.  Sous le raccourci **Lignes**, renseignez la ligne vente. Dans le champ **Procédure achat**, sélectionnez une procédure achat dont le champ **Commande spéciale** est sélectionné.
 
     Vous devez maintenant créer un bon de commande à partir d'une feuille de réquisition.  
-4. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille de réquisition**, puis sélectionnez le lien associé.  
+4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille de réquisition**, puis sélectionnez le lien associé.  
 5. Choisissez l'action **Commande spéciale**, puis choisissez l'action **Extraire documents de vente**.  
 6.  Dans la fenêtre **Extraire documents de vente**, affichez les résultats dans lesquels le **N° document** correspond au numéro de document de vente. Cliquez sur le bouton **OK**. Une ligne de feuille de réquisition est créée pour l'article.  
 7.  Dans la ligne demande achat, sélectionnez **Nouveau** dans le champ **Message d'action**.  
@@ -44,7 +44,7 @@ Un bon de commande créé comme commande spécial pour un document de vente est 
 >  Vous ne pouvez pas utiliser la fonctionnalité de commande spéciale si l'élément est déjà réservé. Par conséquent, pour les articles qui sont vendus en commandes spéciales, assurez\-vous que le champ **Réserver** sur la fiche article n'est pas défini sur **Toujours**.  
 
 ## <a name="see-also"></a>Voir aussi  
-[Utiliser des articles non stockés](inventory-how-work-nonstock-items.md)  
+[Utiliser des articles de catalogue](inventory-how-work-nonstock-items.md)  
 [Ventes](sales-manage-sales.md)  
 [Effectuer des livraisons directes](sales-how-drop-shipment.md)   
 [Détails de conception : méthodes de réapprovisionnement](design-details-reservation-order-tracking-and-action-messaging.md)  

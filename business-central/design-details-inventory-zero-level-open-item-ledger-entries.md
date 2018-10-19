@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 11/23/2017
+ms.date: 10/01/2018
 ms.author: edupont
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: e25721b0c79a87f4201314a0f3556f969a110e18
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: e114142be1708447931fb475074245b57564f6b3
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="design-details-known-item-application-issue"></a>Détails de conception : problème connu lié à l'affectation d'articles
@@ -36,8 +36,6 @@ L'article commence par répertorier les symptômes courants du problème, puis d
      |333|01/28/2018|Vente|Livraison de vente|102043|TEST|BLEU|-1|-10|-1|-1|Oui|  
      |334|01/28/2018|Vente|Livraison de vente|102043|TEST|BLEU|1|10|1|1|Oui|  
 
-<!--![Why is inventory zero 1](media/helene/TechArticleInventoryZero1.png "Whyisinventoryzero\_1")-->
-
 ## <a name="basics-of-item-application"></a>Notions de base de l'affectation d'articles  
  Une écriture d'affectation article est créée pour chaque transaction inventaire afin de lier le destinataire de coût à sa source de coût afin que le coût puisse être transféré en fonction du mode d'évaluation coût. Pour plus d'informations, voir [Détails de conception : traçabilité](design-details-item-application.md).  
 
@@ -56,7 +54,7 @@ L'article commence par répertorier les symptômes courants du problème, puis d
 
  Le schéma suivant montre la façon dont les affectations de quantité sont effectuées.  
 
-![Raison pour laquelle l'inventaire est nul 2](media/helene/TechArticleInventoryZero2.png "Whyisinventoryzero\_2")
+![Flux de l'ajustement des coûts de l'achat à la vente](media/helene/TechArticleInventoryZero2.png "Flux de l'ajustement des coûts de l'achat à la vente")
 
  En outre, notez que l'écriture article 1 (Achat) est le fournisseur de l'article et la source de coût de l'écriture article affectée, c'est-à-dire l'écriture article 2 (Vente).  
 
@@ -72,7 +70,6 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 |---------|------------|----------|-------------|------------|--------|-------------|--------|------------------------|-----------------|------------------|----|  
 |333|01/28/2018|Vente|Livraison de vente|102043|TEST|BLEU|-1|-10|-1|-1|Oui|  
 |334|01/28/2018|Vente|Livraison de vente|102043|TEST|BLEU|1|10|1|1|Oui|  
-<!--![Why is inventory zero 3](media/helene/TechArticleInventoryZero3.png "Whyisinventoryzero\_3")-->
 
  En outre, notez que l'écriture article entrante 3 (Retour vente) est un destinataire de coût pour l'écriture article sortante d'origine 2 (Vente).  
 
@@ -81,7 +78,7 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 
  Le schéma suivant illustre le flux de coûts.  
 
-![Raison pour laquelle l'inventaire est nul 4](media/helene/TechArticleInventoryZero4.png "Whyisinventoryzero\_4")
+![Flux de l'ajustement des coûts de la vente au retour vente](media/helene/TechArticleInventoryZero4.png "Flux de l'ajustement des coûts de la vente au retour vente")
 
  En outre, notez que le coût est transféré vers l'écriture article 2 (Vente), puis vers l'écriture article 3 (Retour vente) et enfin vers l'écriture article 4 (Vente 2).  
 
@@ -94,7 +91,7 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 
  Le schéma suivant illustre la façon dont les affectations d'article sont effectuées dans les deux scénarios.  
 
-![Raison pour laquelle l'inventaire est nul 6](media/helene/TechArticleInventoryZero6.png "Whyisinventoryzero\_6")  
+![Le flux de l'ajustement des coûts va dans les deux directions](media/helene/TechArticleInventoryZero6.png "Le flux de l'ajustement des coûts va dans les deux directions")  
 
  En outre, notez qu'une affectation de coût est effectuée (représentée par les flèches bleues) pour garantir que l'écriture article 2 (Retour vente) a les mêmes coûts que l'écriture article qu'elle inverse, c'est-à-dire l'écriture article 1 (Vente 1). Toutefois, une affectation de quantité (représentée par les flèches rouges) n'est pas effectuée.  
 
@@ -115,7 +112,6 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 |---------|------------|----------|-------------|------------|--------|-------------|--------|------------------------|-----------------|------------------|----|---------|
 |333|01/28/2018|Vente|Livraison de vente|102043|TEST|BLEU|-1|-10|-1|-1|Oui|Non|  
 |334|01/28/2018|Vente|Livraison de vente|102043|TEST|BLEU|1|10|1|1|Oui|**Oui**|  
-<!--![Why is inventory zero 7](media/helene/TechArticleInventoryZero7.png "Whyisinventoryzero\_7")-->
 
 -   Dans la fenêtre **Livraison vente reportée**, recherchez le champ **Écriture article à affecter** pour voir si le champ est renseigné, et dans ce cas, à quelle écriture article le coût de la réception retour est affecté.  
 

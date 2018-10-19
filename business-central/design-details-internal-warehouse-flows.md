@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/23/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: e7638c602568c15b0496d4f73aa6ea59c20f82e8
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: a52997195a95ff43eb049025b7b8ab3038381039
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="design-details-internal-warehouse-flows"></a>Détails de conception : flux d'entrepôt internes
@@ -116,7 +116,7 @@ Circulation des articles entre les zones dans les centres d'une compagnie lors d
 
  La figure ci-après indique la date à laquelle le champ **Code de zone** de la liste des composantes est renseigné en fonction de la configuration de votre emplacement ou unité de production/atelier.  
 
- ![Organigramme Flux d'emplacement](media/binflow.png "BinFlow")  
+ ![Aperçu de quand/comment le champ Code de zone est renseigné](media/binflow.png "Aperçu de quand/comment le champ Code de zone est renseigné")  
 
 ## <a name="see-also"></a>Voir aussi  
  [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)

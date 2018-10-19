@@ -1,6 +1,6 @@
 ---
-title: "Procédure de création d'une prévision production | Microsoft Docs"
-description: "Vous pouvez créer des prévisions de vente et de production à l'aide de la fenêtre **Prévision production**."
+title: "Procédure de création d'une prévision demande | Microsoft Docs"
+description: "Vous pouvez créer des prévisions de vente et de production à l'aide de la fenêtre **Prévision demande**."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -10,31 +10,31 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/04/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: ce71f1a0bd744cfdf62bb71f59829ec09155af32
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: d0f4d314a33c86d169d6e2dae0b859b879702e5d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
-# <a name="create-a-production-forecast"></a>Créer une prévision production
-Vous pouvez créer des prévisions de vente et de production à l'aide de la fenêtre **Prévision production**.  
+# <a name="create-a-demand-forecast"></a>Créer une prévision de la demande
+Vous pouvez créer des prévisions de vente et de production à l'aide de la fenêtre **Prévision demande**.  
 
 La fonctionnalité de prévision permet de créer une demande anticipée ; la demande réelle est créée à partir de commandes vente et fabrication. Lors de la création du calendrier de production principal (MPS), la prévision est ajustée par rapport aux commandes de vente et aux bons de production. L'option *Composant* sur la prévision détermine le type d'exigences à prendre en considération dans le processus d'ajustement. Si la prévision a trait à un article vente, seules les commandes vente ajustent la prévision. Si elle concerne les composantes, seule la demande dépendante des composantes bon de production ajuste la prévision.  
 
 Les prévisions permettent à votre compagnie de créer des scénarios basés sur des hypothèses, de planifier et de répondre à la demande de façon efficace et rentable. Des prévisions précises peuvent faire la différence au niveau de la satisfaction de la clientèle en relation avec les dates promesse des livraisons et la ponctualité de ces dernières.  
 
 ## <a name="sales-forecasts-and-production-forecasts"></a>Prévisions de vente et de fabrication  
-La fonctionnalité de prévision du programme permet de générer des prévisions de vente ou de fabrication, de façon combinée ou indépendante. Par exemple, la plupart des compagnies qui fabriquent à la commande ne gèrent pas un inventaire de produits finis, parce que chaque article est produit au moment de la commande. L'anticipation sur les commandes (prévision de vente) est essentielle pour aboutit à un délai de production raisonnable des produits finis (prévision de production). À titre d'exemple, les composantes nécessitant un délai de livraison important, si elles ne sont pas en commande ou dans l'inventaire, peuvent retarder la fabrication.  
+La fonctionnalité de prévision du programme permet de générer des prévisions de vente ou de fabrication, de façon combinée ou indépendante. Par exemple, la plupart des compagnies qui fabriquent à la commande ne gèrent pas un inventaire de produits finis parce que chaque article est produit au moment de la commande. L'anticipation sur les commandes (prévision de vente) est essentielle pour aboutit à un délai de production raisonnable des produits finis (prévision de production). À titre d'exemple, les composantes nécessitant un délai de livraison important, si elles ne sont pas en commande ou dans l'inventaire, peuvent retarder la fabrication.  
 
 -   La prévision de vente est le meilleur indicateur du service commercial en relation avec les ventes futures et est spécifiée par article et par période. Toutefois, la prévision de vente n'est pas toujours appropriée pour la fabrication.  
 -   La prévision de production est l'estimation par le gestionnaire de production du nombre d'articles finis et de sous-ensembles à produire dans des périodes données afin de satisfaire les prévisions de vente.  
 
 Dès lors, le plus souvent, le gestionnaire de production modifie la prévision de vente pour l'adapter aux conditions de production, tout en satisfaisant à la prévision de vente.  
 
-Vous créez des prévisions manuellement dans la fenêtre **Prévision production**. Plusieurs prévisions peuvent exister dans le système, qui se différencient par leur nom et leur type. Vous pouvez copier et modifier les prévisions si nécessaire. Notez qu'il ne peut y avoir qu'une seule prévision valide à la fois en relation avec la planification.  
+Vous créez des prévisions manuellement dans la fenêtre **Prévision demande**. Plusieurs prévisions peuvent exister dans le système, qui se différencient par leur nom et leur type. Vous pouvez copier et modifier les prévisions si nécessaire. Notez qu'il ne peut y avoir qu'une seule prévision valide à la fois en relation avec la planification.  
 
 La prévision consiste en un certain nombre d'enregistrements indiquant un numéro d'article, une date de prévision et une quantité prévue. La prévision d'un article couvre une période qui est définie par la date prévision et la date prévision de l'enregistrement prévision suivant. Du point de vue de la planification, la quantité prévue doit être disponible au début de la période de demande.  
 
@@ -49,16 +49,16 @@ Comme la prévision composante sert à définir des options pour un article pare
  La période de prévision est valide de la date début jusqu'à la date début de la prévision suivante. La fenêtre d'intervalle de temps offre plusieurs choix pour insérer la demande à une date spécifique dans une période. Il est donc recommandé de ne pas modifier l'étendue de la période de prévision à moins de déplacer toutes les écritures de prévision à la date début de cette période.  
 
 ## <a name="forecast-by-locations"></a>Prévision par magasin  
-Vous pouvez indiquer, dans la configuration de la fabrication, si Notez cependant que si les prévisions basées sur un emplacement sont consultées isolément, il se peut que la prévision globale ne soit pas représentative.
+Vous pouvez indiquer dans la configuration de la fabrication si vous souhaitez filtrer les prévisions en fonction de l'emplacement lors du calcul d'un plan. Notez cependant que si les prévisions basées sur un emplacement sont consultées isolément, il se peut que la prévision globale ne soit pas représentative.
 
-## <a name="to-create-a-production-forecast"></a>Pour créer une prévision production
+## <a name="to-create-a-demand-forecast"></a>Pour créer une prévision de la demande
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Prévision de production**, puis sélectionnez le lien associé.  
-2.  Sur le raccourci **Général**, choisissez une prévision dans le champ **Nom prévision production**. Plusieurs prévisions peuvent exister, qui se différencient par leur nom et leur type.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Prévision de la demande**, puis sélectionnez le lien associé.  
+2.  Sur le raccourci **Général**, choisissez une prévision dans le champ **Nom prévision demande**. Plusieurs prévisions peuvent exister, qui se différencient par leur nom et leur type.  
 3.  Dans le champ **Filtre magasin**, sélectionnez le magasin auquel s'applique la prévision.  
-4.  Dans le champ **Type prévision**, choisissez **Article vente**, **Composant** ou **Les deux**. Si vous sélectionnez **Article vente** ou **Composant**, vous pouvez modifier la quantité par période. Si vous sélectionnez **Les deux**, vous ne pouvez pas modifier la quantité mais vous pouvez choisir le bouton flèche déroulante afin de visualiser les écritures prévision production.  
+4.  Dans le champ **Type prévision**, choisissez **Article vente**, **Composant** ou **Les deux**. Si vous sélectionnez **Article vente** ou **Composant**, vous pouvez modifier la quantité par période. Si vous sélectionnez **Les deux**, vous ne pouvez pas modifier la quantité mais vous pouvez choisir le bouton flèche déroulante afin de visualiser les écritures prévision demande.  
 5.  Spécifiez un **filtre date** si vous voulez limiter la quantité de données affichées.  
-6.  Sur le raccourci **Matrice Prévision production**, entrez les quantités prévues d'**Article vente** ou la prévision **Composant** pour les différentes périodes.  
+6.  Sur le raccourci **Matrice Prévision demande**, entrez les quantités prévues d'**Article vente** ou la prévision **Composante** pour les différentes périodes.  
 7.  Sur le raccourci **Options matrice**, définissez l'intervalle de temps dans le champ **Afficher par** pour changer la période affichée dans chaque colonne. Vous pouvez choisir entre les intervalles suivants : **Jour**, **Semaine**, **Mois**, **Trimestre**, **Année**, ou **Période comptable**, telle qu'elle est paramétrée dans Gestion financière.  
 
     > [!NOTE]  
@@ -67,7 +67,7 @@ Vous pouvez indiquer, dans la configuration de la fabrication, si Notez cependan
 8.  Dans le champ **Afficher en tant que**, sélectionnez la manière dont seront affichées les quantités prévision pour l'intervalle de temps. Si vous sélectionnez **Solde période**, le solde période est affiché pour l'intervalle de temps. Si vous sélectionnez **Solde au**, la fenêtre affiche le solde au dernier jour de l'intervalle de temps.  
 
 > [!NOTE]  
->  Vous pouvez également modifier une prévision existante. Dans la fenêtre **Matrice Prévision production**, choisissez l'action **Copier prévision production** et renseignez la fenêtre **Prévision production** à l'aide de la prévision existante. Vous pouvez alors modifier les quantités en fonction des besoins.  
+>  Vous pouvez également modifier une prévision existante. Dans la fenêtre **Matrice Prévision demande**, choisissez l'action **Copier prévision demande** et renseignez la fenêtre **Prévision demande** à l'aide de la prévision existante. Vous pouvez alors modifier les quantités en fonction des besoins.  
 
 ## <a name="see-also"></a>Voir aussi  
 [Paramétrage de la production](production-configure-production-processes.md)  

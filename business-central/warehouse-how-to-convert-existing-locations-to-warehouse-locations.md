@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 07/01/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: e519a1628342f7c4711b3266f53ac857d4865e71
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: c97e6995a0e27d0eebcadf5b783cd9aa56cb5fde
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="convert-existing-locations-to-warehouse-locations"></a>Convertir des emplacements existants en entrepôts
@@ -30,7 +30,7 @@ Vous pouvez créer des zones et des emplacements avant ou après la conversion. 
 >  Pour supprimer toutes les quantités négatives et les éventuels documents entrepôt ouverts avant de convertir l'emplacement à des fins de gestion d'entrepôt, exécutez un rapport pour identifier les articles dont la quantité est négative et les documents entrepôt ouverts pour l'emplacement. Pour plus d'informations, reportez\-vous à la rubrique Vérifiez l'inventaire négatif.  
 
 ## <a name="to-enable-an-existing-location-to-operate-as-a-warehouse-location"></a>Activation d'un emplacement existant en tant qu'entrepôt  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Créer un emplacement d'entrepôt**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Création emplacement entrepôt**, puis sélectionnez le lien associé.  
 2.  Dans le champ **Code magasin**, indiquez le magasin que vous souhaitez activer pour un traitement d'entrepôt.  
 3.  Dans le champ **Code empl. ajustement**, indiquez à quel emplacement du magasin les écritures entrepôt non synchronisées sont enregistrées. Pour plus d'informations, reportez-vous à la section « Pour synchroniser les écritures entrepôt ajustées avec les écritures article associées » dans [Nombre, ajustement et reclassement de l'inventaire](inventory-how-count-adjust-reclassify.md).  
 

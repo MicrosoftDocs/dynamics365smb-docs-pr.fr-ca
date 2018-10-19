@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 12/21/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: ce3a69f82d68cd2ded4b1a5b036a32761d377199
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 39a44f4b608bca436adedb16c800c96a046d5644
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="track-document-lines"></a>Suivre des lignes document
@@ -25,7 +25,7 @@ Vous pouvez afficher les documents associés aux lignes document de vente et aux
 ## <a name="to-track-documents-related-to-a-sales-order-line"></a>Pour suivre les documents associés à une ligne document de vente
 La procédure suivante décrit comment effectuer le suivi à partir d'une ligne document de vente. La procédure est identique pour les lignes bon de commande et commande permanente.
 
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Commandes vente**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Ouvrez un document de vente à partir duquel vous souhaitez effectuer le suivi.  
 3.  Sélectionnez une ligne, puis choisissez l'action **Traçabilité ligne document**.
 4. Dans la fenêtre **Traçabilité ligne document**, sélectionnez le document que vous voulez afficher, puis choisissez l'action **Afficher** pour afficher la ligne associée.

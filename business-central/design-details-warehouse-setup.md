@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 08/01/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d0ef9148b082b05a46283f89c3cb98bb1cd0c6d0
-ms.openlocfilehash: ff625189c5004f682f45fe1c1796ba6afe2e7fdb
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 574bca49a01d23cdbf3ea9cda3b2c67f39ee9d05
 ms.contentlocale: fr-ca
-ms.lasthandoff: 08/06/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="design-details-warehouse-setup"></a>Détails de conception : paramètres entrepôt
@@ -30,10 +30,10 @@ Les granules liés à l'entrepôt suivants existent :
 -   Livraison entrepôt (4210)  
 -   Systèmes de gestion d'entrepôt (4620)  
 -   Prélèvements internes et rangements internes (4630)  
--   <!-- Automated Data Capture System (4640) -->  
+-   Système ADCS (4640) 
 -   Configuration zone (4660)  
 
-Pour plus d'informations sur chaque granule, voir [Feuilles de prix [!INCLUDE[d365fin](includes/d365fin_md.md)]](http://go.microsoft.com/fwlink/?LinkId=238341) (requiert un compte PartnerSource).  
+Pour plus d'informations sur chaque granule, voir [Feuilles de prix [!INCLUDE[d365fin](includes/d365fin_md.md)]](https://go.microsoft.com/fwlink/?LinkId=238341) (requiert un compte PartnerSource).  
 
 Le tableau suivant indique les granules requis pour définir les différents niveaux de complexité entrepôt, les documents de l'interface utilisateur qui prennent en charge chaque niveau, et les codes d'emplacement qui reflètent ces niveaux dans la base de données de démonstration [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
@@ -44,7 +44,7 @@ Le tableau suivant indique les granules requis pour définir les différents niv
 |3 <br /><br /> **REMARQUE** : bien que les paramètres soient appelés **Prélèvement requis** et **Rangement requis**, vous pouvez quand même reporter les réceptions et les livraisons directement à partir des documents commerciaux sources dans les emplacements où vous cochez ces cases.|Activité entrepôt de base, par commande.<br /><br /> Report de réception/livraison à partir des documents rangement/prélèvement inventaire. <br /><br /> Le code de zone est requis.|Article dans l'inventaire à classer/Mouvement d'inventaire/Article dans l'inventaire à prélever, avec code de zone|(ARGENT + Rangement requis ou Rangement requis)|Inventaire de base/Zone/Rangement/Prélèvement|  
 |4|Activité entrepôt avancée pour plusieurs ordres/commandes.<br /><br /> Report recevoir/livrer consolidé en fonction des enregistrements de rangement/prélèvement dans l'entrepôt.|Réception entrepôt/Rangement entrepôt/Prélèvement entrepôt/Livraison entrepôt/Feuille prélèvement|VERT|Inventaire de base/Réception entrepôt/Rangement/Prélèvement/Livraison entrepôt|  
 |5|Activité entrepôt avancée pour plusieurs ordres/commandes.<br /><br /> Report recevoir/livrer consolidé en fonction des enregistrements de rangement/prélèvement dans l'entrepôt.<br /><br /> Le code de zone est requis.|Réception entrepôt/Rangement en entrepôt/Prélèvement entrepôt/Livraison entrepôt/Feuille prélèvement/Feuille rangement, avec code de zone|(VERT + Zone obligatoire)|Inventaire de base/Zone/Réception entrepôt/Rangement/Prélèvement/Livraison entrepôt|  
-|6 <br /><br /> **Remarque** : ce niveau est appelé « WMS », car il requiert le granule le plus avancé, Warehouse Management Systems.|Activité entrepôt avancée pour plusieurs ordres/commandes<br /><br /> Report recevoir/livrer consolidé en fonction des enregistrements de rangement/prélèvement dans l'entrepôt<br /><br /> Le code de zone est requis.<br /><br /> Le code zone/classe est facultatif.<br /><br /> Magasiniers dirigés par flux de travail<br /><br /> Planification de réapprovisionnement des zones<br /><br /> Classement de zone<br /><br /> Configuration de la zone par capacité<br /><br /> Insertion <!-- Hand-held device integration -->|Réception entrepôt/Rangement entrepôt/Prélèvement entrepôt/Livraison entrepôt/Mouvement entrepôt/Feuille prélèvement/Feuille rangement/Entrepôt interne. Prélèvement/Rangement entrepôt interne, avec code de zone/classe<br /><br /> Différentes feuilles pour la gestion de la zone <!-- ADCS screens  -->|BLANC|Inventaire de base/Zone/Rangement/Réception entrepôt/Prélèvement/Livraison entrepôt/Systèmes de gestion d'entrepôt/Prélèvements internes et rangements/Configuration zone/<!-- Automated Data Capture System/ -->Configuration zone|  
+|6 <br /><br /> **Remarque** : ce niveau est appelé « WMS », car il requiert le granule le plus avancé, Warehouse Management Systems.|Activité entrepôt avancée pour plusieurs ordres/commandes<br /><br /> Report recevoir/livrer consolidé en fonction des enregistrements de rangement/prélèvement dans l'entrepôt<br /><br /> Le code de zone est requis.<br /><br /> Le code zone/classe est facultatif.<br /><br /> Magasiniers dirigés par flux de travail<br /><br /> Planification de réapprovisionnement des zones<br /><br /> Classement de zone<br /><br /> Configuration de la zone par capacité<br /><br /> Insertion <!-- Hand-held device integration -->|Réception entrepôt/Rangement entrepôt/Prélèvement entrepôt/Livraison entrepôt/Mouvement entrepôt/Feuille prélèvement/Feuille rangement/Entrepôt interne. Prélèvement/Rangement entrepôt interne, avec code de zone/classe<br /><br /> Différentes feuilles pour la gestion de la zone<br /><br /> Écrans ADCS|BLANC|Inventaire de base/Zone/Rangement/Réception entrepôt/Prélèvement/Livraison entrepôt/Systèmes de gestion d'entrepôt/Prélèvements internes et rangements/Configuration zone/<!-- Automated Data Capture System/ -->Configuration zone|  
 
 Pour des exemples d'utilisation des documents de l'interface utilisateur par niveau de complexité entrepôt, voir [Détails de conception : flux d'enlogement](design-details-outbound-warehouse-flow.md).  
 

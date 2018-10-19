@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/04/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 12d11661d740cd56bcd18cf7229887e08baf6dff
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 36e7d2f3d43a966cd97fba3c92f3fd20b6b1c585
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="create-production-orders-from-sales-orders"></a>Créer des bons de production à partir de documents de vente
@@ -24,7 +24,7 @@ Vous pouvez créer des bons de production pour les articles produits directement
 
 ## <a name="to-create-a-production-order-from-a-sales-order"></a>Pour créer un bon de production à partir d'un document de vente  
 
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Commandes vente**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Sélectionnez le document de vente pour lequel vous voulez créer un bon de production.  
 3.  Sélectionnez l'action **Planification**. Dans la fenêtre **Planification commande vente**, vous pouvez afficher la disponibilité de l'article de commande vente.  
 4.  Sélectionnez l'action **Créer O.F**.  

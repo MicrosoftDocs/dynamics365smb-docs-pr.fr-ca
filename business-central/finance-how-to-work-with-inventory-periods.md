@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: inventory, periods
-ms.date: 08/07/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: d302483ca2d66870670aaa0914533472a807d04f
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: e6873ca2e4f4ab082bddad90f1ab59edb34a2a63
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="work-with-inventory-periods"></a>Utiliser les périodes d'inventaire
@@ -29,7 +29,7 @@ Les sections suivantes décrivent comment :
 * Rouvrir des périodes inventaire.  
 
 ## <a name="to-create-an-inventory-period"></a>Pour créer une période d'inventaire  
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Périodes d'inventaire**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Périodes d'inventaire**, puis sélectionnez le lien associé.  
 2. Créez une ligne.  
 3. Dans le champ **Date fin**, entrez la dernière date que vous voulez définir pour la période inventaire. Une fois la période fermée, vous ne pouvez plus reporter de modifications d'inventaire antérieures à cette date.  
 4. Saisissez un nom descriptif dans le champ **Nom**. Cliquez sur le bouton **OK**.  
@@ -61,7 +61,7 @@ Cela signifie que toutes les quantités de transaction sortante, telles que cell
 Une fois la période d'inventaire fermée, vous ne pouvez plus la supprimer. En revanche, vous pouvez la rouvrir si vous voulez autoriser son report avant la date fin. La réouverture d'une période rouvre également toutes les périodes inventaire dont la date fin est postérieure à la fin de la période que vous rouvrez.  
 
 ### <a name="to-reopen-an-inventory-period"></a>Pour rouvrir une période d'inventaire  
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Périodes d'inventaire**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Périodes d'inventaire**, puis sélectionnez le lien associé.  
 2. Sélectionnez la période d'inventaire que vous voulez rouvrir.  
 3. Sélectionnez l'action de la période **Rouvrir période**. Confirmez que vous voulez réouvrir la période.  
 4. Toutes les périodes inventaire dont la date fin est postérieure à la fin de la période sélectionnée sont réouvertes.  

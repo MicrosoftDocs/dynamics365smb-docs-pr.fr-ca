@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 08/21/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: bd8bf55a69833745739a5c575bee2a3818cb7634
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: fe294cd56c01e1440ff04f7146fada64774f4e8b
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="pick-for-production-or-assembly"></a>Prélever pour la fabrication et l'assemblage
@@ -39,7 +39,7 @@ Si une condition préalable du système pour le prélèvement ou le déplacement
 ## <a name="to-pick-components-in-basic-warehouse-configurations"></a>Pour prélever les composantes dans les configurations d'entrepôt de base
 Dans les configurations d'entrepôt de base, dans lesquelles l'emplacement est configuré pour utiliser uniquement le prélèvement, vous pouvez prélever des composantes pour les activités de production à l'aide de la fenêtre **Prélèvement inventaire**. Pour plus d'informations, voir [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Prélèvements inventaire**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Prélèvements inventaire**, puis sélectionnez le lien associé.  
 2.  Pour accéder aux composantes du bon de production, choisissez l'action **Extraire documents sources**, puis sélectionnez le bon de production libéré.  
 3.  Procédez au prélèvement, puis enregistrez les informations sur le prélèvement réel dans le champ **Qté prélevée**.  
 4.  Lorsque les lignes sont prêtes à être reportées, choisissez l'action **Reporter**. Les écritures entrepôt nécessaires sont alors créées et la consommation des articles est reportée.  
@@ -90,7 +90,7 @@ Pour créer des demandes de prélèvement dans le cadre de scénarios d'extracti
 
 ## <a name="to-pick-components-using-the-pick-worksheet"></a>Pour prélever des composants à partir des feuilles prélèvement  
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille prélèvement**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille prélèvement**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Extraire documents entrepôt**, puis sélectionnez les lignes composante du bon de production libéré.  
 3.  Vérifiez les lignes, triez-les pour assurer un prélèvement optimisé et, si nécessaire, combinez les avec d'autres lignes de la feuille pour utiliser au mieux la disponibilité de l'employé.  
 4.  Choisissez l'action **Créer prélèvement**.  

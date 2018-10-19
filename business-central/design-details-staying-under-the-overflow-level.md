@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/06/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 2fc2ef2528a1edc85c0a7694c1afc5bec7a0065a
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: e532893b1823ef84256403fb7bf5ef9fabd59f2e
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="design-details-staying-under-the-overflow-level"></a>Détails de conception : rester sous le niveau de dépassement de capacité
@@ -24,7 +24,7 @@ Lors de l'utilisation des stratégies Qté maximum et Qté fixe de commande, le 
 
 *Attention : l'inventaire prévisionnel [xx] est supérieur au niveau de dépassement de capacité [xx] à la date d'échéance [xx].*  
 
-![Niveau de dépassement de capacité d'inventaire](media/supplyplanning_2_overflow1_new.png "supplyplanning_2_overflow1_new")  
+![Niveau de dépassement de capacité d'inventaire](media/supplyplanning_2_overflow1_new.png "Niveau de dépassement de capacité d'inventaire")  
 
 ##  <a name="calculating-the-overflow-level"></a>Calcul du niveau de dépassement de capacité  
 Le niveau de dépassement de capacité est calculé de différentes manières en fonction de la configuration de planification.  
@@ -100,7 +100,7 @@ Dans ce scénario, un client modifie une document de vente de 70 à 40 pièces
 ### <a name="resulting-planning-lines"></a>Lignes planification résultantes  
  Une ligne planification (avertissement) est créée pour réduire l'achat de 30 pour passer de 90 à 60 pour conserver l'inventaire prévisionnel à 100 conformément au niveau de dépassement de capacité.  
 
-![Planifier en fonction du niveau de dépassement de capacité](media/nav_app_supply_planning_2_overflow2.png "nav_app_supply_planification_2_overflow2")  
+![Planifier en fonction de niveau de dépassement de capacité](media/nav_app_supply_planning_2_overflow2.png "Planifier en fonction de niveau de dépassement de capacité")  
 
 > [!NOTE]  
 >  Sans la fonction Dépassement de capacité, aucun avertissement n'est créé si le niveau d'inventaire prévisionnel dépasse l'inventaire maximum. Cela pourrait entraîner un approvisionnement superflu de 30.  

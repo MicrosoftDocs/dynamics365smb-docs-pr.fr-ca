@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: kit, kitting
-ms.date: 08/15/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 2a4fbc87be6f6c78feabe04ca0461ee1725c16e0
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 4b9fa6fb99ec68982a2869be2085de0588d76c85
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="undo-assembly-posting"></a>Annuler le report d'assemblage
@@ -42,7 +42,7 @@ De plus, les ordres d'assemblage existants ne peuvent être restaurés que si le
 La procédure suivante décrit comment annuler les ordres d'assemblage reportés dans lesquels les articles ont été assemblés pour stock. Si vous souhaitez annuler les ordres d'assemblage validés pour lesquels les articles ont été assemblés pour une commande vente, vous devez exécuter la fonction **Annuler expédition** sur l'expédition validée qui se rapporte à l'ordre d'assemblage validé. Pour plus d'informations, voir [Inverser des reports](finance-how-reverse-journal-posting.md). L'annulation de l'ordre d'assemblage reporté se produit alors automatiquement de la même manière que décrit dans cette rubrique.  
 
 ## <a name="to-undo-posting-of-an-assembly-order"></a>Pour annuler le report d'un ordre d'assemblage  
-1.  Pour annuler entièrement ou partiellement l'ordre d'assemblage reporté, choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Ordres d'assemblage reportés**, puis sélectionnez le lien associé.  
+1.  Pour annuler un ordre d'assemblage entièrement ou partiellement reporté, choisissez l'icone ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Ordres d'assemblage reportés**, puis sélectionnez le lien associé.  
 
     La fenêtre **Ordres d'assemblage validés** s'ouvre avec un ou plusieurs ordres d'assemblage qui ont été validés à partir de l'ordre d'assemblage en question. Chaque report partiel crée un ordre d'assemblage reporté distinct.  
 2.  Ouvrez l'ordre d'assemblage reporté que vous souhaitez annuler, puis choisissez **Annuler l'assemblage**.  

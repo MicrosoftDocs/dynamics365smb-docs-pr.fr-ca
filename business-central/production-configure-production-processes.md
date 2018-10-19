@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/04/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 2419755f5788eb7cb8ed464ac97fccd7e63e795c
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: e167935f1bb4815093a1a9bd345da8213219ca08
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="setting-up-manufacturing"></a>Paramétrage de la production
@@ -30,7 +30,7 @@ Une fois que vous avez paramétré la production, vous pouvez planifier et exéc
 
 |**Pour**|**Voir**|  
 |------------|-------------|  
-|Configurer les fonctionnalités de fabrication, telles que la définition des heures de travail atelier et la sélection des principes de planification.|Page **Configuration de la fabrication**.|  
+|Configurer les fonctionnalités de fabrication, telles que la définition des heures de travail atelier et la sélection des principes de planification.|La fenêtre **Configuration de la fabrication**.|  
 |Définir une semaine de travail standard dans le département Production en termes d'heures de début et de fin de chaque journée de travail et des équipes associées.|[Créer des calendriers usine](production-how-to-create-work-center-calendars.md)|  
 |Organisez les exigences et les valeurs fixes des ressources de production en tant qu'ateliers ou unités de production pour régir leur sortie de production.|[Configurer des ateliers et des unités de production](production-how-to-set-up-work-and-machine-centers.md)|
 |Organisez les opérations de production dans l'ordre requis et affectez-les aux ateliers ou unités de production avec les temps de travail nécessaires.|[Créer des itinéraires](production-how-to-create-routings.md)|

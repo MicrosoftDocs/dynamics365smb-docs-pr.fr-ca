@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 08/10/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: feae398e064a03d01903fcc65c6f4d99be8374a2
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 8e4f7c35b53a284fe6f7937298377674bafb0b63
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="work-with-payment-tolerances-and-payment-discount-tolerances"></a>Utilisation des tolérances de règlement et des tolérances d'escompte de paiement
@@ -44,13 +44,13 @@ Pour plus d'informations, voir la section « Pour activer ou désactiver les al
 Le fait de configurer des tolérances pour la date ou le montant permet de fermer une facture alors que le règlement ne couvre pas le montant indiqué sur la facture, que ce soit parce que la date d'échéance de l'escompte de paiement est dépassée ou que des marchandises ont été déduites, ou suite à une erreur anodine. Ceci est également vrai pour les remboursements et les notes de crédit.  
 
 Pour configurer l'écart, vous devez configurer plusieurs comptes écart, spécifier des méthodes de comptabilisation d'écart escompte et d'écart règlement, puis exécuter le traitement par lots **Modifier écart de règlement**.  
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Configuration report général**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration du report général**, puis sélectionnez le lien associé.  
 2. Dans la fenêtre **Configuration report général**, configurez un compte tolérance règlement crédit et débit pour les ventes et un autre pour les achats.  
-3. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Groupes de report du client**, puis sélectionnez le lien associé.    
+3. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Groupes de report client**, puis sélectionnez le lien associé.    
 4. Dans la fenêtre **Groupes de report du client**, configurez un compte tolérance règlement débit et un compte tolérance règlement crédit. Pour plus d'informations, voir [Configuration de groupes de report](finance-posting-groups.md).  
-5. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Configuration report fournisseur**, puis choisissez le lien associé.  
+5. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration report fournisseur**, puis sélectionnez le lien associé.  
 6. Dans la fenêtre **Groupes de report du fournisseur**, configurez un compte tolérance règlement débit et un compte tolérance règlement crédit.  
-7. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Paramètres comptabilité**, puis sélectionnez le lien connexe.  
+7. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration du grand livre**, puis sélectionnez le lien associé.  
 8. Ouvrez la fenêtre **Configuration du grand livre**.  
 9. Sur le raccourci **Application**, renseignez les champs **Validation écart d'escompte**, **Période carence escompte** et **Validation écart de règlement**.   
 10. Choisissez l'action **Modifier la tolérance de règlement**.
@@ -68,7 +68,7 @@ Pour configurer l'écart, vous devez configurer plusieurs comptes écart, spéci
 
 ## <a name="to-enable-or-disable-payment-tolerance-warnings"></a>Pour activer ou désactiver les alertes de tolérance de règlement
 L'avertissement de tolérance de règlement apparaît lorsque vous reportez une affectation dont le solde respecte la tolérance autorisée. Vous pouvez alors choisir comment reporter et journaliser le solde.    
-1. Choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Paramètres comptabilité**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration du grand livre**, puis sélectionnez le lien associé.  
 2. Dans la fenêtre **Paramètres comptabilité**, sur le raccourci **Application**, cochez la case **Alerte écart de règlement** pour activer l'alerte. Pour désactiver l'alerte, désactivez la case à cocher.  
 
 > [!NOTE]  
@@ -77,7 +77,7 @@ L'avertissement de tolérance de règlement apparaît lorsque vous reportez une 
 ## <a name="to-block-payment-tolerance-for-customers"></a>Pour bloquer la tolérance de règlement pour des clients  
 Par défaut, une tolérance de règlement est accordée. Pour ne pas accorder une tolérance de règlement à un certain client ou fournisseur, vous devez bloquer la tolérance sur la fiche fournisseur ou client appropriée. Ce qui suit décrit comment l'exécuter pour un client. La procédure est identique pour un fournisseur.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Client** ou **Fournisseur**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Client** ou **Fournisseur**, puis sélectionnez le lien associé.  
 2. Sur le raccourci **Paiements**, cochez la case **Bloquer écart de règlement**.  
 
 > [!NOTE]  
@@ -97,24 +97,24 @@ Scénarios comportant deux alternatives, A et B. En voici la signification :
 
 |—|Fact.|Escompte de paiement|Tolérance règlement max.|Date d'escompte de paiement|Tolérance d'escompte de paiement Date|Date de paiement|Règl.|Type de tolérance|Toutes les écritures fermées|Tolérance d'escompte de paiement Cpta/CL|Tolérance règlement Grand livre|  
 |-------|----------|----------------|-----------------------|---------------------|--------------------------|------------------|----------|--------------------|------------------------|------------------------------|----------------------------|  
-|1|1,000|2.0|5|01/15/03|01/20/03|<=15/01/03|985|Tolérance règlement|Oui|0|-5|  
+|1|1,000|20|5|01/15/03|01/20/03|<=15/01/03|985|Tolérance règlement|Oui|0|-5|  
 |2|**1,000**|**20**|**5**|**15/01/03**|**20/01/03**|**<=15/01/03**|**980**|**Aucun**|**Oui**|**0**|**0**|  
-|3|1,000|2.0|5|01/15/03|c|<=15/01/03|975|Tolérance règlement|Oui|0|5|  
-|4A|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|1005|Tolérance d'escompte de paiement|Non, 25 sur Règl.|20/-20|0|  
-|5A|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|1000|Tolérance d'escompte de paiement|Non, 20 sur Règl.|20/-20|0|  
-|6A|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|995|Tolérance d'escompte de paiement|Non, 15 sur Règl.|20/-20|0|  
-|4B|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|1005|Tolérance règlement|Oui|0|-5|  
+|3|1,000|20|5|01/15/03|c|<=15/01/03|975|Tolérance règlement|Oui|0|5|  
+|4A|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|1005|Tolérance d'escompte de paiement|Non, 25 sur Règl.|20/-20|0|  
+|5A|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|1000|Tolérance d'escompte de paiement|Non, 20 sur Règl.|20/-20|0|  
+|6A|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|995|Tolérance d'escompte de paiement|Non, 15 sur Règl.|20/-20|0|  
+|4B|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|1005|Tolérance règlement|Oui|0|-5|  
 |**5B**|**1,000**|**20**|**5**|**15/01/03**|**20/01/03**|**16/01/03 20/01/03**|**1000**|**Aucun**|**Oui**|**0**|**0**|  
-|6B|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|995|Tolérance règlement|Oui|0|5|  
-|7|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|985|Tolérance d'escompte de paiement & Écart règlement|Oui|20/-20|-5|  
-|8|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|980|Tolérance d'escompte de paiement|Oui|20/-20|0|  
-|9|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|975|Tolérance d'escompte de paiement & Écart règlement|Oui|20/-20|5|  
-|10|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|1005|Tolérance règlement|Oui|0|-5|  
+|6B|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|995|Tolérance règlement|Oui|0|5|  
+|7|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|985|Tolérance d'escompte de paiement & Écart règlement|Oui|20/-20|-5|  
+|8|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|980|Tolérance d'escompte de paiement|Oui|20/-20|0|  
+|9|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|975|Tolérance d'escompte de paiement & Écart règlement|Oui|20/-20|5|  
+|10|1,000|20|5|01/15/03|01/20/03|>20/01/03|1005|Tolérance règlement|Oui|0|-5|  
 |**11**|**1,000**|**20**|**5**|**15/01/03**|**20/01/03**|**>20/01/03**|**1000**|**Aucun**|**Oui**|**0**|**0**|  
-|12|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|995|Tolérance règlement|Oui|0|5|  
-|13|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|985|Aucun|Non, 15 sur la facture|0|0|  
-|14|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|980|Aucun|Non, 20 sur la facture|0|0|  
-|15|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|975|Aucun|Non, 25 sur la facture|0|0|  
+|12|1,000|20|5|01/15/03|01/20/03|>20/01/03|995|Tolérance règlement|Oui|0|5|  
+|13|1,000|20|5|01/15/03|01/20/03|>20/01/03|985|Aucun|Non, 15 sur la facture|0|0|  
+|14|1,000|20|5|01/15/03|01/20/03|>20/01/03|980|Aucun|Non, 20 sur la facture|0|0|  
+|15|1,000|20|5|01/15/03|01/20/03|>20/01/03|975|Aucun|Non, 25 sur la facture|0|0|  
 
 ### <a name="payment-range-diagrams"></a>Schémas de chaîne de paiement  
 Sur la base du scénario ci-avant, les diagrammes des plages de dates de règlement se présentent sous la forme suivante :  
@@ -124,7 +124,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les écarts de règlement uniques &#40;before 03&#47;15&#41;](media/singlePmtTolRules(Pre1503).gif "singlePmtTolRules(Pre1503)")  
+![Règles sur les tolérances de règlement uniques 1](media/singlePmtTolRules(Pre1503).gif "Règles sur les tolérances de règlement uniques 1")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -135,7 +135,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les écarts de règlement uniques &#40;grace period&#41;](media/singlePmtTolRules(GracePeriod).gif "singlePmtTolRules(GracePeriod)")  
+![Règles sur les tolérances de règlement uniques 2](media/singlePmtTolRules(GracePeriod).gif "Règles sur les tolérances de règlement uniques 2")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -146,7 +146,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les écarts de règlement uniques &#40;before 01&#47;20&#41;](media/singlePmtTolRules(Post0120).gif "singlePmtTolRules(Post0120)")  
+![Règles sur les tolérances de règlement uniques 3](media/singlePmtTolRules(Post0120).gif "Règles sur les tolérances de règlement uniques 3")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -207,7 +207,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les écarts de règlement multiples &#40;before 03&#47;15&#41;](media/multiplePmtTolRules(Pre1503).gif "multiplePmtTolRules(Pre1503)")  
+![Règles sur les tolérances de règlement multiples 1](media/multiplePmtTolRules(Pre1503).gif "Règles sur les tolérances de règlement multiples 1")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -218,7 +218,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les écarts de règlement multiples &#40;grace period&#41;](media/multiplePmtTolRules(GracePeriodInv1).gif "multiplePmtTolRules(GracePeriodInv1)")  
+![Règles sur les tolérances de règlement multiples 2](media/multiplePmtTolRules(GracePeriodInv1).gif "Règles sur les tolérances de règlement multiples 2")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -229,7 +229,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les écarts de règlement multiples &#40;grace period&#41;](media/multiplePmtTolRules(GracePeriodInv1-2).gif "multiplePmtTolRules(GracePeriodInv1-2)")  
+![Règles sur les tolérances de règlement multiples 3](media/multiplePmtTolRules(GracePeriodInv1-2).gif "Règles sur les tolérances de règlement multiples 3")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -240,7 +240,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les écarts de règlement multiples &#40;grace period&#41;](media/multiplePmtTolRules(GracePeriodInv2).gif "multiplePmtTolRules(GracePeriodInv2)")  
+![Règles sur les tolérances de règlement multiples 4](media/multiplePmtTolRules(GracePeriodInv2).gif "Règles sur les tolérances de règlement multiples 4")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -251,7 +251,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les écarts de règlement multiples &#40;after 01&#47;22&#41;](media/multiplePmtTolRules(Post0122).gif "multiplePmtTolRules(Post0122)")  
+![Règles sur les tolérances de règlement multiples 5](media/multiplePmtTolRules(Post0122).gif "Règles sur les tolérances de règlement multiples 5")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 

@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/07/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 89fa84f814f3d7f53a842b1d675bf8143416b4d5
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: b3df27011c482905b0b59ff03570449ac8df3cba
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="remove-and-reapply-item-ledger-entries"></a>Supprimer et appliquer à nouveau des écritures article
@@ -43,7 +43,7 @@ Si vous ne pouvez pas utiliser un document pour exécuter une nouvelle affectati
     - La feuille de travail affectation ne peut pas effectuer une affectation dans le cas suivant : si la quantité en stock est insuffisante pour l'affectation, la feuille de travail affectation ne peut pas effectuer une affectation lorsque vous tentez d'affecter une écriture diminution d'inventaire sans informations de traçabilité sur une écriture augmentation d'inventaire avec informations de traçabilité.
 
 ## <a name="to-remove-an-item-application-by-using-the-application-worksheet"></a>Pour supprimer une affectation article en utilisant le journal affectation  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille de travail affectation**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille affectation**, puis sélectionnez le lien associé.  
 2.  La fenêtre **Feuille lettrage** s'ouvre en affichant les écritures comptables article existantes de tous les articles.  
 3.  Définissez les filtres du raccourci **Général** pour faciliter la recherche de l'écriture comptable article pour laquelle vous souhaitez modifier le lettrage.  
 4.  Sélectionnez l'écriture article, puis sélectionnez l'action **Écritures affectées**. La fenêtre **Voir écritures lettrées - Ecritures lettrées** s'ouvre et affiche l'écriture ou écritures comptables article actuellement lettrées pour l'écriture sélectionnée.  
@@ -59,7 +59,7 @@ Si vous ne pouvez pas utiliser un document pour exécuter une nouvelle affectati
 >  **Il est impossible d'effectuer cette action car l'affectation des écritures pour l'article <item> est annulée dans la feuille de travail affectation par l'utilisateur <user>.**  
 
 ## <a name="to-reapply-an-item-application-by-using-the-application-worksheet"></a>Pour appliquer à nouveau une affectation article en utilisant le journal affectation  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille de travail affectation**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille affectation**, puis sélectionnez le lien associé.  
 2.  La fenêtre **Feuille lettrage** s'ouvre en affichant les écritures comptables article existantes de tous les articles.  
 3.  Pour appliquer à nouveau des écritures qui ont été supprimées depuis l'ouverture de la feuille, sélectionnez l'écriture du grand livre d'articles que vous souhaitez appliquer à nouveau. Sur l'onglet **Actions** , dans le groupe **Fonctions**, choisissez **Relettrer**.  
 

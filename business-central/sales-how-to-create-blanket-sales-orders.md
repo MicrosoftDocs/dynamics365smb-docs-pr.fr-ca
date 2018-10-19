@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/08/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 75e170f10927844ca37a001812e78e062e88c451
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 8e0668e39891f6e0924afd8d9ec3ee39af95e587
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="work-with-blanket-sales-orders"></a>Utiliser des commandes permanentes ventes
@@ -30,7 +30,7 @@ Vous pouvez utiliser une commande permanente ventes, par exemple, lorsqu'un clie
 > Les commandes permanentes achats fonctionnent de la même manière que les commandes permanentes ventes. Cette documentation ne couvre pas les commandes permanentes achats.
 
 ## <a name="to-create-a-blanket-sales-order"></a>Pour créer une commande permanente ventes  
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Commandes permanentes ventes**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes permanentes ventes**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4.  Laissez vide le champ **Date commande**. Lors de la création de documents de vente séparés depuis la commande permanente, la date commande du document de vente est définie comme étant égale à la date du jour.
@@ -58,7 +58,7 @@ Ce qui suit affecte les documents de vente après leur création à partir de do
 ## <a name="to-view-the-status-of-a-blanket-purchase-order"></a>Pour visualiser l'état d'une commande permanente achats  
 Vous pouvez visualiser l'état d'une commande permanente ventes dans la fenêtre **Statistiques Commande permanente achats**. Ceci peut s'avérer utile lorsque vous commencez à facturer une commande créée à partir de la commande permanente achats.  
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Commandes permanentes achats**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes permanentes achats**, puis sélectionnez le lien associé.  
 2.  Sélectionnez une commande permanente achats, puis choisissez l'action **Statistiques**.  
 3.  Dans la fenêtre **Statistiques Commande ouverte achat**, sur le raccourci **Général**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la commande. Elles se basent sur la quantité totale des **champs Quantité** sur les lignes commande ouverte achat.  
 
@@ -70,7 +70,7 @@ Vous pouvez visualiser l'état d'une commande permanente ventes dans la fenêtre
 ## <a name="to-view-unposted-and-posted-blanket-sales-order-lines"></a>Pour afficher des lignes commande permanente ventes reportées et non reportées   
 Le lien entre la commande permanente ventes et le document de vente d'origine, et n'importe quel autre document vente, est conservé après report en tant que liste des lignes facture reportées et non reportées de document de vente.  
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Commandes permanentes ventes**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes permanentes ventes**, puis sélectionnez le lien associé.
 2. Ouvrez la commande permanente ventes que vous souhaitez afficher.
 3. Pour visualiser les écritures non reportées, sélectionnez la ligne en question, sélectionnez l'action **Ligne**, puis l'action **Lignes non reportées**. Choisissez l'une des options suivantes.  
 

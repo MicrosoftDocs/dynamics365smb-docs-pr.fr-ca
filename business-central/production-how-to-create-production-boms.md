@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/05/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: e56c6d07bcb501e3e461c9b16a6b5be8e2b68834
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 6f1c27e93dedb12b3b4895cbfc9a22d255fa2120
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="create-production-boms"></a>Créer des nomenclatures de production
@@ -30,7 +30,7 @@ Pour pouvoir configurer un itinéraire, les éléments suivants doivent être en
 - Les ressources de production sont configurées. Pour plus d'informations, voir [Configurer des ateliers et des unités de production](production-how-to-set-up-work-and-machine-centers.md).
 
 ## <a name="to-create-a-production-bom"></a>Pour créer une nomenclature de production  
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Nomenclature de production**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Nomenclature de production**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Pour modifier la nomenclature, définissez le champ **Statut** sur **Création en cours** ou sur **Modification en cours**. Pour l'activer, définissez le champ **Statut** sur **Validée**.  
@@ -57,7 +57,7 @@ Les nouvelles versions des nomenclatures de production sont utilisées lorsque, 
 
 La date début indique le début de la période de validité de la version. La date début peut également être considérée comme un filtre pour les calculs et les évaluations. La version de la nomenclature est valide jusqu'à l'entrée en vigueur de la version suivante, qui est indiquée par sa date début.  
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Nomenclature de production**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Nomenclature de production**, puis sélectionnez le lien associé.  
 2.  Sélectionnez la nomenclature de production à copier, puis choisissez l'action **Versions**.  
 3.  Sous l'onglet de **Accueil**, dans le groupe **Nouveau**, choisissez **Nouveau**.  
 4. Renseignez les champs selon vos besoins.

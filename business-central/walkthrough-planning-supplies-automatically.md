@@ -10,20 +10,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/07/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: f58f7572c2991bd4b30dca5e0c48499b36538f77
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 82b61f468b7b0f5f8a5f8406b6df369db41a6ded
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="walkthrough-planning-supplies-automatically"></a>Procédure pas à pas : planification automatique des approvisionnements
 Les expressions comme « exécution planification » et « exécution MRP » se rapportent au calcul du programme directeur de production (PDP) et de la planification des besoins de matières (MRP) en fonction de la demande réelle et projetée.  
 
--   Le calcul PDP est le calcul de la planification de production principale basé sur la demande réelle et la prévision de production. Le calcul PDP est utilisé pour les articles finis disposant de prévisions ou d'une ligne document de vente. Ces articles sont appelés « articles PDP » et identifiés de façon dynamique au début du calcul.  
--   Le calcul MRP est le calcul des besoins matière basé sur la demande réelle de composants et la prévision de production au niveau du composant. Le calcul MRP n'est effectué que pour les articles qui ne sont pas des articles PDP. Le but global du calcul MRP est de générer des plans formels en phases, par article, afin de fournir le bon article au bon moment, au bon endroit et dans la bonne quantité.  
+-   Le calcul PDP est le calcul du calendrier de production principal basé sur la demande réelle et la prévision de la demande. Le calcul PDP est utilisé pour les articles finis disposant de prévisions ou d'une ligne document de vente. Ces articles sont appelés « articles PDP » et identifiés de façon dynamique au début du calcul.  
+-   Le calcul MRP est le calcul des besoins matière basé sur la demande réelle de composantes et la prévision de la demande au niveau des composantes. Le calcul MRP n'est effectué que pour les articles qui ne sont pas des articles PDP. Le but global du calcul MRP est de générer des plans formels en phases, par article, afin de fournir le bon article au bon moment, au bon endroit et dans la bonne quantité.  
 
  Les algorithmes de planification utilisés pour les calculs PDP et MRP sont identiques. Ils utilisent la présentation au net, la réutilisation des commandes d'approvisionnement existantes et les messages d'action. Le processus du système de planification examine ce qui est ou sera nécessaire (demande) et ce qui est disponible ou attendu (approvisionnement). Lorsque ces quantités sont déduites l'une de l'autre, des messages d'action s'affichent dans la feuille planification. Ces messages proposent de créer une commande d'approvisionnement, de modifier la quantité ou la date ou encore d'annuler une commande d'approvisionnement existante. Les commandes d'approvisionnement peuvent être des bons de production, des bons de commande et des ordres de transfert. Pour plus d'informations, voir [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md).  
 
@@ -73,7 +73,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 ### <a name="to-change-selected-planning-parameters"></a>Pour modifier des paramètres de planification sélectionnés  
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Unités de stock**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Unités de stock**, puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche unité de stock BLEU de l'article 1100, Roue avant.  
 3.  Sur le raccourci **Planification**, renseignez les champs comme indiqué dans le tableau ci-dessous.  
 
@@ -90,7 +90,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 ### <a name="to-create-the-sales-order"></a>Pour créer le document de vente  
 
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Commandes vente**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Dans la fenêtre **Document de vente**, renseignez les champs comme indiqué dans la table suivante.  
 
@@ -102,7 +102,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 ### <a name="to-create-a-regenerative-plan-to-fulfill-demand-at-location-blue"></a>Pour créer un plan régénératif afin de répondre à la demande à l'emplacement BLEU  
 
-1.  Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille planification**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille planification**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Calculer planning régénératif**.  
 3.  Dans la fenêtre **Calc. planning - F. planning** , renseignez les champs comme indiqué dans le tableau suivant.  
 
@@ -125,7 +125,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 ### <a name="to-calculate-mrp-to-include-underlying-component-needs"></a>Pour calculer MRP afin d'inclure les besoins sous-jacents en composantes  
 
-1.  Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille planification**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille planification**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Calculer planning régénératif**.  
 3.  Dans la fenêtre **Calc. planning - F. planning** , renseignez les champs comme indiqué dans le tableau suivant.  
 
@@ -219,7 +219,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 3.  Acceptez l'avertissement de disponibilité et cliquez sur le bouton **Oui** pour enregistrer la quantité demandée.  
 4.  Procédez à une replanification afin d'adapter le programme d'approvisionnement actif.  
-5.  Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille planification**, puis sélectionnez le lien associé.  
+5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille planification**, puis sélectionnez le lien associé.  
 6.  Choisissez l'action **Calculer planning par écart**.  
 7.  Dans la fenêtre **Calc. planning - F. planning** , renseignez les champs comme indiqué dans le tableau suivant.  
 

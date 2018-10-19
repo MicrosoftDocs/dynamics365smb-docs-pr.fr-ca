@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 03/05/2018
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 7feaa0e41cf5800ffd51d5807a90f6929492804e
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: e26174fcf723e13ef5a9ed0b386006c0439e1c7a
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="create-custom-company-configuration-packages"></a>Créer des packages de configuration de compagnie personnalisés
@@ -39,7 +39,7 @@ Autrement, vous pouvez créer un colis qui inclut les tables qui définissent la
 -   Configuration report de taxe  
 -   Configuration du report d'inventaire  
 
-Pour afficher une liste complète des tables de configuration, choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Configuration**, puis sélectionnez le lien associé.  
+Pour visualiser la liste complète des tables de configuration, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration**, puis sélectionnez le lien associé.  
 
 ## <a name="to-create-a-custom-company-configuration-package"></a>Pour créer un package de configuration de compagnie personnalisé  
 1.  Créez une [!INCLUDE[d365fin](includes/d365fin_md.md)]. ***Lien NON POSSIBLE pour aider à la « création d'un abonné »***.   

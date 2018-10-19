@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: repair, service
-ms.date: 06/02/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: e7dcdc0935a8793ae226dfc2f9709b5b8f487a62
-ms.openlocfilehash: 62addbd6bcf11f640749b395efc9d87550c8ee45
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: b3bf2590b60081ab954ac4918a65853da32d38e0
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="maintain-fixed-assets"></a>Mettre à jour des immobilisations
@@ -29,15 +29,15 @@ L'actualisation permet d'ajuster des valeurs en fonction de modifications géné
 ## <a name="to-record-maintenance-work-on-a-fixed-asset"></a>Pour enregistrer les travaux d'entretien sur une immobilisation
 Vous pouvez enregistrer chaque tâche de maintenance, telle qu'une visite de service, effectuée pour une immobilisation donnée. Pour cela, utilisez la fenêtre **Saisie de la maintenance**.  
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Immobilisations**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Immobilisations**, puis choisissez le lien associé.  
 2. Sélectionnez l'immobilisation pour laquelle vous souhaitez enregistrer la maintenance, puis sélectionnez l'action **Saisie de la maintenance**.
 3. Dans la fenêtre **Saisie de la maintenance**, renseignez les champs comme nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
 ## <a name="to-post-maintenance-costs-from-a-fixed-asset-gl-journal"></a>Pour reporter les coûts d'entretien à partir d'un journal GL immobilisation
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), saisissez **Liste des lois d'amortissement**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Liste des lois d'amortissement**, puis sélectionnez le lien associé.  
 2. Sélectionnez la loi d'amortissement qui est attribuée à une immobilisation, puis sélectionnez l'action **Modifier**.
 3. Dans la fenêtre **Fiche loi d'amortissement**, veillez à ce que la case **Maintenance** ne soit pas cochée. Cela garantit que les coûts d'entretien ne sont pas reportés dans le grand livre.
-4. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuille comptabilisation immobilisation**, puis sélectionnez le lien connexe.  
+4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux GL d'immobilisations**, puis sélectionnez le lien associé.  
 5. Créez une ligne journal initiale et complétez les champs, le cas échéant.
 6. Dans le champ **Type compta. immo**, sélectionnez **Maintenance**.
 7. Sélectionnez l'action **Insérer contrepartie immo.**. Une seconde ligne journal est créée pour le compte de contrepartie qui est configuré pour le report de l'entretien.
@@ -49,14 +49,14 @@ Vous pouvez enregistrer chaque tâche de maintenance, telle qu'une visite de ser
 ## <a name="to-follow-up-on-fixed-assets-service-visits"></a>Pour effectuer le suivi des visites d'entretien des immobilisations
 Vous pouvez imprimer l'état **Maintenance - Service suivant** afin de connaître les immobilisations pour lesquelles vous avez programmé une visite de service. Vous pouvez également utiliser cet état lorsque vous mettez à jour le champ **Date prochain service** des fiches immobilisation.  
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), saisissez **Liste des lois d'amortissement**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Entretien - Prochain service**, puis sélectionnez le lien associé.  
 2. Renseignez les champs **Date début** et **Date fin**.  
 3. Cliquez sur le bouton **Imprimer** ou **Aperçu**.
 
 ## <a name="to-monitor-maintenance-costs"></a>Pour surveiller les coûts d'entretien
 Vous pouvez visualiser les coûts d'entretien lorsque vous consultez les statistiques d'une immobilisation.  
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Immobilisations**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Immobilisations**, puis choisissez le lien associé.
 2. Sélectionnez l'immobilisation pour laquelle vous souhaitez afficher les coûts de maintenance, puis sélectionnez l'action **Lois d'amortissement**.
 3. Dans la fenêtre **Lois d'amortissement immobilisation**, sélectionnez la loi d'amortissement immobilisation pertinente, puis sélectionnez l'action **Statistiques**.
 4. Dans la fenêtre **Statistiques immobilisation**, sélectionnez le champ **Maintenance**.
@@ -66,21 +66,21 @@ La fenêtre **Écritures comptables maintenance** s'ouvre, affichant les écritu
 ## <a name="to-view-or-print-maintenance-costs-for-multiple-fixed-assets"></a>Pour afficher ou imprimer les coûts d'entretien pour plusieurs immobilisations
 Dans l'état **Maintenance - Analyse**, vous pouvez choisir de visualiser la maintenance sur un, deux ou trois codes maintenance pour une date ou une période donnée. Vous pouvez également visualiser soit le total de toutes les immobilisations sélectionnées, soit celui de chaque immobilisation.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Maintenance - Analyse**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Entretien - Analyse**, puis sélectionnez le lien associé.
 2. Renseignez les champs selon vos besoins.
 3. Cliquez sur le bouton **Imprimer** ou **Aperçu**.
 
 ## <a name="to-view-maintenance-ledger-entries"></a>Pour visualiser des écritures entretien
 Vous pouvez également étudier les coûts d'entretien en visualisant les écritures.  
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Immobilisations**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Immobilisations**, puis choisissez le lien associé.
 2. Sélectionnez l'immobilisation pour laquelle vous souhaitez afficher les écritures comptables, puis sélectionnez l'action **Lois d'amortissement**.
 3. Dans la fenêtre **Écritures comptables maintenance**, sélectionnez la loi d'amortissement immobilisation pertinente, puis l'action **Statistiques**.
 
 ## <a name="to-view-or-print-maintenance-ledger-entries-for-multiple-fixed-assets"></a>Pour afficher ou imprimer les écritures d'entretien pour plusieurs immobilisations
 Dans l'état **Maintenance - Détails**, vous pouvez afficher ou imprimer les écritures comptables de maintenance pour un ou plusieurs actifs.  
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Maintenance - Détails**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Entretien - Détails**, puis sélectionnez le lien associé.
 2. Renseignez les champs selon vos besoins.
 3. Cliquez sur le bouton **Imprimer** ou **Aperçu**.
 

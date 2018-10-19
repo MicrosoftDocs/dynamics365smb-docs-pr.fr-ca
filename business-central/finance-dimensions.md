@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: analysis, history, track
-ms.date: 01/25/2018
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 349a4d54a95999e3e2c2b19cc2a40c2dd1afd445
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 13e1cd1e772ed01b6503a30ef940054b0973f70f
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="working-with-dimensions"></a>Utilisation des axes analytiques
@@ -56,7 +56,7 @@ Vous pouvez également configurer des axes principaux et des raccourcis axe :
 ### <a name="setting-up-default-dimensions-for-customers-vendors-and-other-accounts"></a>Paramétrage des axes analytiques par défaut pour les clients, les fournisseurs, et d'autres comptes
 Vous pouvez attribuer une dimension par défaut pour un compte spécifique. La dimension est copiée sur le journal ou le document lorsque vous saisissez le numéro de compte dans une ligne, mais vous pouvez supprimer ou modifier le code sur la ligne si nécessaire. Vous pouvez également rendre une dimension obligatoire pour reporter une écriture avec un type de compte spécifique.  
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Dimensions**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Dimensions**, puis choisissez le lien associé.  
 2.  Dans la fenêtre **Dimensions** sélectionnez la dimension appropriée, puis cliquez sur **Dimension par défaut du type de compte**.  
 4.  Complétez une ligne pour chaque nouvelle dimension par défaut à configurer. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
@@ -72,7 +72,7 @@ Vous pouvez attribuer une dimension par défaut pour un compte spécifique. La d
 ### <a name="to-set-up-default-dimension-priorities"></a>Pour configurer des priorités de dimensions par défaut  
 Des types de compte différents, tels qu'un compte client et un compte article, peuvent avoir des affectations analytiques différentes. Par conséquent, plusieurs dimensions par défaut peuvent être proposées pour une dimension dans une écriture. Pour éviter de tels conflits, vous pouvez appliquer des règles de priorité aux différentes sources.  
 
-1.  Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), saisissez **Priorités de dimensions par défaut**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Priorités de dimensions par défaut**, puis sélectionnez le lien associé.  
 2.  Dans la fenêtre **Affect. analytique prioritaire**, dans le champ **Code journal,** entrez le code journal pour la table séquence à laquelle les affectations analytiques prioritaires s'appliquent.  
 3.  Complétez une ligne pour chaque priorité de dimensions par défaut souhaitée pour le code d'origine sélectionné.
 4.  Répétez la procédure pour chaque code d'origine pour lequel vous souhaitez configurer des priorités de dimensions par défaut.  
@@ -83,7 +83,7 @@ Des types de compte différents, tels qu'un compte client et un compte article, 
 ### <a name="to-set-up-dimension-combinations"></a>Pour configurer des combinaisons de dimensions  
 Pour éviter de reporter des écritures avec des dimensions contradictoires ou inappropriées, vous pouvez bloquer ou limiter des combinaisons spécifiques de deux dimensions. Lorsqu'une combinaison de dimensions est bloquée, vous ne pouvez pas reporter les deux dimensions sur la même écriture, quelles que soient les valeurs de la dimension. Lorsqu'une combinaison de dimensions est limitée, vous pouvez reporter les deux dimensions sur la même écriture, mais uniquement pour certaines combinaisons de valeurs de dimensions.
 
-1.  Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), saisissez **Combinaisons de dimensions**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Combinaisons de dimensions**, puis choisissez le lien associé.  
 2.  Dans la fenêtre **Croisements d'axes**, sélectionnez le champ du croisement analytique et sélectionnez l'une des options suivantes.  
 
     |Champ|Description|
@@ -128,7 +128,7 @@ Pour **ZONE**, vous pouvez ajouter les sections analytiques suivantes :
 | Code | Nom | Type de valeur de dimension |
 | --- | --- | --- |
 | 10 |Amériques |Début total |
-| 2.0 |Amérique du Nord |Standard |
+| 20 |Amérique du Nord |Standard |
 | 30 |Pacifique |Standard |
 | 40 |Amérique du Sud |Standard |
 | 50 |Amériques, Total |Fin total |
@@ -163,7 +163,7 @@ Les dimensions principales sont toujours définies et nommées par la compagnie\
 
 Dans une fenêtre écriture, vous pouvez voir si des dimensions principales sont associées à des écritures. Les deux axes principaux sont différents des autres axes car vous pouvez les utiliser en tant que filtres n'importe où dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Plan comptable**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable**, puis sélectionnez le lien associé.  
 2.  Dans la fenêtre **Plan comptable**, choisissez l'action **Écritures**.  
 3.  Pour ne visualiser que certaines écritures, positionnez au moins un filtre sur la fenêtre.  
 4.  Pour visualiser toutes les dimensions d'une écriture, sélectionnez l'écriture, puis cliquez sur l'action **Dimensions**.  

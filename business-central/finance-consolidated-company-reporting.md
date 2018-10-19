@@ -9,13 +9,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: consolidation, subsidiaries, consolidate
-ms.date: 07/14/2017
+ms.date: 10/01/2018
 ms.author: bholtorf
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 9309868cbcee8fb969c318acfb6ce8844e78b687
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 035eb85050ec6feb9e65ee924ebf4dbd2064e5ba
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 
@@ -55,7 +55,7 @@ Si des paramètres plus avancés sont nécessaires pour votre consolidation, vou
 [!INCLUDE[d365fin](includes/d365fin_md.md)] vous permet de configurer une liste de compagnies à consolider, de vérifier les données comptables avant leur consolidation, d'importer des fichiers et de générer des rapports de consolidation.  
 
 1. Connectez-vous à la compagnie consolidée.
-2. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
+2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
 3. Sélectionnez **Nouveau**, puis renseignez les champs requis.  
 
 Si votre unité fonctionnelle utilise une devise étrangère, indiquez le taux de change à utiliser dans la consolidation. Vous devez également entrer des informations de consolidation sur les comptes du grand livre de l'unité fonctionnelle. Ces processus sont décrits dans les sections suivantes.
@@ -63,7 +63,7 @@ Si votre unité fonctionnelle utilise une devise étrangère, indiquez le taux d
 ### <a name="to-prepare-general-ledger-accounts-for-consolidation"></a>Pour préparer les comptes GL pour la consolidation
 Si le plan comptable de l'unité fonctionnelle diffère de celui de la compagnie consolidée, vous devez préparer les comptes GL pour la consolidation. Vous pouvez spécifier les comptes sur lesquels reporter les débits et crédits et la méthode à utiliser pour convertir des devises dans la compagnie consolidée. Par exemple, cela est utile si vous exécutez souvent le rapport.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Plan comptable**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable**, puis sélectionnez le lien associé.  
 2. Ouvrez la fiche du compte, puis renseignez les champs du raccourci **Consolidation**.
 
 ### <a name="to-specify-exchange-rates-for-consolidations"></a>Pour indiquer des taux de change pour les consolidations
@@ -82,9 +82,9 @@ Le tableau suivant décrit les méthodes de conversion de taux de change que vou
 
 Pour spécifier des taux de change pour les unités fonctionnelles, procédez comme suit :
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
-2. Sur la page **Liste des unités fonctionnelles**, choisissez l'unité fonctionnelle, puis choisissez l'action **Taux moyen (manuel)**.   
-3. Sur la page **Modifier taux de change**, la valeur du champ **Montant taux de change lié** est copiée à partir de la table **Taux de change devise**, mais vous pouvez la modifier. Fermez la page.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
+2. Dans la fenêtre **Liste des unités fonctionnelles**, choisissez l'unité fonctionnelle, puis sélectionnez l'action **Taux moyen (manuel)**.   
+3. Dans la fenêtre **Modifier taux de change**, la valeur du champ **Montant taux de change lié** est copiée à partir de la table **Taux de change devise**, mais vous pouvez la modifier. Fermez la page.  
 4. Choisissez l'action **Taux de fermeture**.  
 5. Dans le champ **Montant taux de change lié**, saisissez le taux de change.
 
@@ -108,7 +108,7 @@ Si vous détenez une compagnie en partie, vous pouvez ajouter un pourcentage de 
 Vous pouvez tester vos données avant de les transférer vers la compagnie consolidée. [!INCLUDE[d365fin](includes/d365fin_md.md)] recherche des différences dans les informations des unités fonctionnelles et de la compagnie consolidée. Par exemple, si les numéros de compte ou les codes axe sont différents. Vous devez corriger les erreurs avant d'exécuter le rapport. Vous pouvez tester la base de données ou, si vous importez des données à partir d'un fichier XML, vous pouvez tester le fichier.   
 
 1. Ouvrez la compagnie consolidée.  
-2. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
+2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
 3. Exécutez l'une des opérations suivantes :  
 
     * Pour tester un fichier, choisissez l'action **Tester fichier**, entrez le nom du fichier à tester, puis choisissez **Imprimer**.  

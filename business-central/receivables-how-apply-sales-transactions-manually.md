@@ -8,20 +8,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, cash receipt
-ms.date: 09/08/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: f514f05f5333bc8f2b473c50324e267d19c70d6f
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: ca7052fd5353ec93f6544aa7a9056fb492b638e2
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="reconcile-customer-payments-manually"></a>Rapprocher les paiements client manuellement
 Lorsque vous recevez un paiement en liquide d'un client ou que vous effectuez un remboursement en liquide, vous devez décider si vous souhaitez affecter le paiement ou le remboursement pour fermer une ou plusieurs écritures débit ou crédit ouvertes. Vous pouvez indiquer le montant que vous souhaitez affecter. Par exemple, vous pouvez affecter des paiements partiels à des écritures client. La fermeture des écritures client permet de garantir que des informations telles que les statistiques clients, les relevés de compte bancaire et les frais financiers sont corrects.
 
 > [!NOTE]  
->   Dans la fenêtre **Écritures comptables client**, le rouge signifie que le paiement associé a dépassé sa date d'échéance.
+>   Dans la fenêtre **Écritures comptables client**, le rouge signifie que le paiement associé a dépassé sa date d'échéance. Si les paiements échus deviennent un problème, nous pouvons vous aider à minimiser leur fréquence. Vous pouvez activer l'extension **Prévisions des retards de paiement**, qui utilise un modèle prédictif que nous avons généré dans Azure Machine Learning pour prévoir les délais de paiement. Ces prévisions vous permettent de réduire les créances ouvertes et d'ajuster votre stratégie de collectes. Par exemple, si un retard de paiement est prévu, vous pouvez ajuster les conditions de paiement ou le mode de règlement du client. Pour plus d'informations, consultez [Prévisions de retard de paiement](ui-extensions-late-payment-prediction.md).  
 
 Vous pouvez affecter les écritures client de plusieurs manières :
 
@@ -34,10 +34,10 @@ Vous pouvez affecter les écritures client de plusieurs manières :
 
 Vous pouvez lettrer les paiements des clients manuellement dans la fenêtre **Feuille règlement**. Un journal des encaissements est un type de journal général, de sorte que vous pouvez l'utiliser pour reporter des transactions sur des comptes GL, bancaires, client, fournisseur et immobilisations. Vous pouvez affecter le paiement à une ou plusieurs écritures débit lorsque vous reportez le paiement ou vous pouvez l'affecter à partir des écritures reportées ultérieurement.
 
-Vous pouvez également lettrer les paiements client et fournisseur dans la fenêtre **Feuille rapprochement bancaire** à l'aide des fonctions dédiées à l'importation de relevés bancaires, le lettrage automatique et le rapprochement bancaire. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md). Sinon, vous pouvez rapprocher les paiements client en fonction de la liste des documents vente échus dans la fenêtre **Enregistrement de paiement**. Pour plus d'informations, voir [Rapprocher les paiements client dans une liste des documents vente échus](receivables-how-reconcile-customer-payments-list-unpaid-sales-documents.md)
+Vous pouvez également lettrer les paiements client et fournisseur dans la fenêtre **Feuille rapprochement bancaire** à l'aide des fonctions dédiées à l'importation de relevés bancaires, le lettrage automatique et le rapprochement bancaire. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md). Sinon, vous pouvez rapprocher les paiements client en fonction de la liste des documents vente échus dans la fenêtre **Enregistrement de paiement**. Pour plus d'informations, voir [Rapprocher les paiements client dans une liste des documents vente échus](receivables-how-reconcile-customer-payments-list-unpaid-sales-documents.md).
 
 ## <a name="to-fill-and-post-a-cash-receipt-journal"></a>Pour renseigner et reporter un journal des encaissements
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Feuille règlement**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal des encaissements**, puis sélectionnez le lien associé.
 2. Sélectionnez **Modifier journal**.
 3. Sélectionnez le nom de traitement par lots souhaité dans le champ **Nom de la feuille**.
 4. Renseignez le champ **Date comptabilisation**.  
@@ -53,7 +53,7 @@ Vous pouvez également lettrer les paiements client et fournisseur dans la fenê
 12. Reportez le journal.
 
 ## <a name="to-apply-a-payment-to-a-single-customer-ledger-entry"></a>Pour affecter un paiement à une seule écriture client
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Feuille règlement**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal des encaissements**, et sélectionnez le lien associé.
 2. Sélectionnez **Modifier journal**.
 3. Dans la première ligne journal, saisissez les informations appropriées sur l'écriture à affecter.
 4. Dans le champ **Type document**, entrez **Paiement**.
@@ -68,7 +68,7 @@ Vous pouvez également lettrer les paiements client et fournisseur dans la fenê
 11. Reportez le journal des encaissements.
 
 ## <a name="to-apply-a-payment-to-multiple-customer-ledger-entries"></a>Pour affecter un paiement à plusieurs écritures client
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Feuille règlement**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal des encaissements**, puis sélectionnez le lien associé.
 2. Sélectionnez **Modifier journal**.
 3. Dans la première ligne journal, saisissez les informations appropriées sur l'écriture à affecter.
 4. Dans le champ **Type document**, entrez **Paiement**.
@@ -84,7 +84,7 @@ Vous pouvez également lettrer les paiements client et fournisseur dans la fenê
 12. Reportez le journal des encaissements.
 
 ## <a name="to-apply-a-credit-memo-to-a-single-customer-ledger-entry"></a>Pour affecter une note de crédit à une seule écriture client
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Feuille règlement**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de crédit vente**, puis sélectionnez le lien associé.
 2. Ouvrez la note de crédit vente souhaitée.
 3. Pour affecter la note de crédit à une seule écriture client lors du report, dans le champ **N° doc. affecté à**, sélectionnez l'écriture à laquelle affecter le paiement.
 4. Sur la ligne du champ **Montant à lettrer**, entrez le montant à lettrer avec l'écriture.  
@@ -94,7 +94,7 @@ Vous pouvez également lettrer les paiements client et fournisseur dans la fenê
 6. Reportez la note de crédit.
 
 ## <a name="to-apply-a-credit-memo-to-multiple-customer-ledger-entries"></a>Pour affecter une note de crédit à plusieurs écritures client
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Feuille règlement**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de crédit vente**, puis sélectionnez le lien associé.
 2. Ouvrez la note de crédit vente souhaitée.
 3. Pour lettrer l'avoir avec plusieurs écritures comptables client lors de la validation, sélectionnez l'action **Lettrer écritures**.
 4. Sélectionnez les lignes correspondant aux écritures avec lesquelles l'écriture lettrage doit être lettrée, puis sélectionnez l'action **Lettrer**.
@@ -105,7 +105,7 @@ Vous pouvez également lettrer les paiements client et fournisseur dans la fenê
 7. Reportez la note de crédit.
 
 ## <a name="to-apply-posted-customer-ledger-entries"></a>Pour affecter des écritures client reportées
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Clients**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clients**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche du client possédant les écritures que vous souhaitez affecter.
 3. Sélectionnez l'action **Écritures comptables**, puis sélectionnez la ligne où figure l'écriture qui sera l'écriture lettrage.
 4. Sélectionnez l'action **Lettrer écritures**. La fenêtre **Lettrer écritures client** s'ouvre et affiche les écritures ouvertes de ce client.
@@ -117,7 +117,7 @@ Vous pouvez également lettrer les paiements client et fournisseur dans la fenê
 8. Cliquez sur **OK** pour valider le lettrage.
 
     Si le lettrage validé génère des écritures comptables client lettrées, ces écritures comptables ne sont plus activées dans le champ **Ouvert**.    
-9. Pour afficher les écritures comptables, choisissez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Clients**, puis sélectionnez le lien connexe. Accédez à la fiche du client approprié pour afficher les écritures.  
+9. Pour afficher les écritures, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clients**, puis sélectionnez le lien associé. Accédez à la fiche du client approprié pour afficher les écritures.  
 
 Dans la liste écritures comptables, sur la ligne contenant l'écriture comptable totalement lettrée vous constatez que la case **Ouvert** n'est pas cochée.  
 
@@ -131,7 +131,7 @@ Si vous affectez une écriture (Écriture 1) dans une devise à une autre écri
 
 L'affectation d'écritures client en devises différentes doit être activée. Pour plus d'informations, voir [Activer l'affectation des écritures en devises différentes](finance-how-enable-application-ledger-entries-different-currencies.md).  
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Feuille règlement**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal règlements**, puis sélectionnez le lien associé.
 2. Ouvrez le journal que vous souhaitez, puis renseignez la première ligne vide du journal à l'aide d'un code devise.
 3. Sélectionnez l'action **Lettrer écritures**.
 4. Sélectionnez la ligne comportant l'écriture à lettrer avec l'écriture de la feuille règlement. Sélectionnez ensuite l'action **Lettrer**, puis sélectionnez l'écriture sur laquelle le lettrage doit être effectué.
@@ -144,7 +144,7 @@ L'affectation d'écritures client en devises différentes doit être activée. P
 ## <a name="to-correct-an-application-of-customer-entries"></a>Pour corriger une affectation d'écritures
 Lorsque vous corrigez une affectation, des écritures de correction (écritures identiques à l'écriture originale mais avec le signe opposé dans le champ du montant) sont créées et reportées pour toutes les écritures comportant des reports comptables issus de l'affectation, comme les escomptes de paiement et les pertes et gains en devise. Les écritures qui sont fermées par l'affectation sont rouvertes.  
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Clients**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clients**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche client appropriée.
 3. Sélectionnez l'action **Écritures comptables**.
 4. Sélectionnez l'écriture comptable appropriée, puis sélectionnez l'action **Délettrer les écritures**.

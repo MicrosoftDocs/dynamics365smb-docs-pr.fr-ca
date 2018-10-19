@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 08/16/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 3faa88fada0969e118c33305b84824e0f0f9b422
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 17955c3ea1294811cd7b9ac6f726d26b0de2755c
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="pick-and-put-away-without-a-source-document"></a>Prélever et ranger sans document origine
@@ -36,13 +36,13 @@ Les **rangements internes** vous permettent d'effectuer des rangements sans avoi
 >  Lorsque l'emplacement utilise le prélèvement et le rangement suggérés et, par conséquent, utilise des types de zone, vous ne pouvez pas déplacer manuellement des articles vers ou depuis une zone de type RÉCEPTIONNER, car les articles dans ce type de zone doivent être enregistrés comme étant rangés avant de faire partie de l'inventaire disponible.  
 
 ## <a name="to-create-an-internal-pick"></a>Pour créer un prélèvement interne  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Prélèvement interne entrep.**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Prélèvement interne entrepôt**, puis sélectionnez le lien associé.  
 2.  Renseignez le champ **N°** et **Vers code emplacement** du raccourci **Général**. Le champ **Du code emplacement** indique l'emplacement où se trouvent les articles que vous souhaitez. Pour des raisons de production, cette zone représente la zone enlogement ou la zone d'atelier ouvert. Pour d'autres raisons, vous devez choisir un code de zone de destination d'un type de zone qui n'est pas utilisé pour le prélèvement (par exemple, une zone d'échelonnement, de livraison ou une zone spéciale).  
 3.  Sélectionnez un article dans le champ **N° article**, puis renseignez les quantités à prélever.  
 4. Choisissez l'action **Créer prélèvement**. Une instruction prélèvement entrepôt est maintenant créée pour un magasinier.  
 
 ## <a name="to-create-an-internal-put-away"></a>Pour créer un rangement interne  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Rangement interne entrep.**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rangement interne entrepôt**, puis sélectionnez le lien associé.  
 2.  Renseignez le champ **N°** et **Du code emplacement** du raccourci **Général**. Le champ **Du code emplacement** indique l'emplacement où se trouvent les articles retournés à l'entrepôt (par l'unité de production, par exemple).  
 3.  Renseignez les numéros article et les quantités sur les lignes.  
 4.  Choisissez l'action **Créer rangement**. Une instruction rangement entrepôt est maintenant créée pour un employé d'entrepôt.  

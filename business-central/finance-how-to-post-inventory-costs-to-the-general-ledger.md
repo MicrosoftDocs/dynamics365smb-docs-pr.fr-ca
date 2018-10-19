@@ -9,13 +9,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: warehouse, stock
-ms.date: 07/05/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 8292864e7b25b0e5f0fb1f6668fb8622efb031e2
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: d6df6884ef5cf8fce96ec1f5bc5ca91bdbd3ede7
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="reconcile-inventory-costs-with-the-general-ledger"></a>Rapprocher les coûts de l'inventaire avec le grand livre
@@ -26,7 +26,7 @@ Le report automatique des coûts est défini par le champ **Report coûts automa
 Bien que les coûts inventaire soient automatiquement reportés dans le grand livre, il est malgré tout nécessaire de vous assurer que les coûts des biens sont transmis à la transaction de vente sortante associée, notamment dans les situations où vous vendez des biens avant de facturer l'achat. Il s'agit d'un ajustement des coûts. Le coût des articles est ajusté automatiquement lorsque vous reportez des transactions article, mais vous pouvez également les ajuster manuellement. Pour en savoir plus, voir [Ajuster coûts article](inventory-how-adjust-item-costs.md).
 
 ## <a name="to-post-inventory-costs-manually"></a>Pour reporter des coûts de l'inventaire manuellement
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Reporter le coût de l'inventaire au grand livre**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Reporter le coût de l'inventaire au grand livre**, puis sélectionnez le lien associé.
 2. Reportez les coûts inventaire dans le grand livre manuellement en exécutant le traitement en lot. Lorsque vous exécutez ce traitement en lot, des écritures sont créées, basées sur des écritures valeur. Vous pouvez reporter les écritures de façon à ce qu'elles soient récapitulées par groupe de report.
 
 > [!NOTE]  

@@ -8,25 +8,23 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 08/11/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 7f2bef783553b42289b7befa75a8ede737bb0a83
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: de325ce5c4f4bf16ac008496ebc86abf9b3762b6
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="canada-local-functionality"></a>Fonctionnalités locales Canada
 Les rubriques suivantes décrivent les fonctionnalités locales spécifiques à la version canadienne de [!INCLUDE[d365fin](../../includes/d365fin_md.md)].  
 
 ## <a name="in-this-section"></a>Dans cette section
-[Fonctionnalités locales Canada](canada-local-functionality.md)  
 [Utiliser des codes IGRF](work-gifi-codes.md)  
 [Configurer la taxe de service et la taxe d'achat](how-to-set-up-use-tax-and-purchase-tax.md)  
 [Configurer les escomptes de paiement de vente et la taxe de vente non réalisée](how-to-set-up-unrealized-sales-tax-and-sales-payment-discounts.md)  
 [Déclaration de la taxe de vente au Canada](ca-sales-tax.md)  
-[Gérer les renseignements sur le crédit client](how-to-manage-customer-credit-information.md)  
 [Créer des dépôts](how-to-create-deposits.md)  
 [Imprimer des rapports de dépannage](how-to-print-troubleshooting-reports.md)
 
@@ -34,5 +32,4 @@ Les rubriques suivantes décrivent les fonctionnalités locales spécifiques à 
 [Utilisation de [!INCLUDE[d365fin](../../includes/d365fin_md.md)]](../../ui-work-product.md)   
 
 ## [!INCLUDE[d365fin](../../includes/free_trial_md.md)]  
- 
 

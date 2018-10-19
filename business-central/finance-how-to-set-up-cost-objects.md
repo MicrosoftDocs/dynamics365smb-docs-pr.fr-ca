@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 07/01/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: c871eaea1eb7d7755b4b9fce6b6db87a15e1eed5
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 3eb90611939dce2134d9413812918c2afb82c083
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="set-up-cost-objects"></a>Configurer les objets de coûts
@@ -27,7 +27,7 @@ Les objets de coûts sont les projets, les biens ou les services d'une compagnie
 
 ## <a name="to-transfer-dimension-values-from-the-general-ledger-to-the-chart-of-cost-objects"></a>Pour transférer des valeurs de dimension du grand livre vers le plan des objets de coûts  
 1.  Définissez un axe analytique pour être celui des coûts associés dans la fenêtre **Actualiser axes analytiques CA**. Seules les valeurs de cette dimension sont transférées.  
-2.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Plan comptable des objets de coûts**, puis sélectionnez le lien associé.  
+2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable des objets de coûts**, puis sélectionnez le lien associé.  
 3.  Choisissez l'action **Extraire les objets de coûts de la dimension** pour transférer des valeurs de dimension vers le plan comptable des objets de coûts. La fonction transfère les axes analytiques que vous avez définis dans l'étape 1.  
 
     > [!NOTE]  

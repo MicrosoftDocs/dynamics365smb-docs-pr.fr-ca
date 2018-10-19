@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/19/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 545ad2e348ba4acc3a1c4cde741acaa2a9b824ed
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: c6e661d36363a35248785a9f97620b2ca7ccf177
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="set-up-work-centers-and-machine-centers"></a>Configurer des ateliers et des unités de production
@@ -33,7 +33,7 @@ La disponibilité est enregistrée dans les écritures calendrier. Avant de conf
 ## <a name="to-set-up-a-work-center"></a>Pour configurer un atelier
 La procédure suivante décrit essentiellement comment configurer un atelier. La procédure de configuration d'un calendrier unité de production est similaire, sauf pour le raccourci **Configuration itinéraire**.  
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Ateliers**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Ateliers**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4.  Dans le champ **Groupe ateliers**, sélectionnez le regroupement de ressources de niveau supérieur sous lequel l'atelier est organisé, le cas échéant. Choisissez l'action **Nouveau** dans la liste déroulante.  
@@ -89,7 +89,7 @@ Dans la fenêtre **Ressources contraintes de capacité**, vous pouvez effectuer 
 
 Lors de la planification avec des ressources avec contraintes de capacité, le système veille à ce qu'aucune ressource ne soit chargée au-dessus de sa capacité définie (charge critique). Ceci est effectué en affectant chaque opération à l'emplacement du temps disponible le plus proche. Si le créneau n'est pas assez long pour effectuer toute l'opération, l'opération est répartie en au moins deux parties placées dans les créneaux disponibles les plus proches.
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Ressources contraintes de capacité**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Capacités critiques**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Renseignez les champs selon vos besoins.
 

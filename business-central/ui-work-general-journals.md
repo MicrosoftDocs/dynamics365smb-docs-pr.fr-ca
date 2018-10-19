@@ -1,31 +1,39 @@
 ---
 title: "Utilisation de journaux généraux pour reporter directement dans le grand livre| Microsoft Docs"
-description: "Découvrez comment utiliser des journaux généraux pour reporter des transactions financières dans les comptes GL et dans d'autres comptes, tels que les comptes bancaires et fournisseur."
-author: SorenGP
+description: "Découvrez comment utiliser les journaux pour reporter des transactions financières dans les comptes GL et dans d'autres comptes, tels que les comptes bancaires et fournisseur."
+author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/23/2018
-ms.author: sgroespe
+ms.date: 10/01/2018
+ms.author: edupont
 ms.translationtype: HT
-ms.sourcegitcommit: e7dcdc0935a8793ae226dfc2f9709b5b8f487a62
-ms.openlocfilehash: 090a0141583795757a0d59b358ba4d553100d976
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 892d96dfa5d0fc960150f127ffa779cf6819c5a2
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="working-with-general-journals"></a>Utilisation de feuilles comptabilité
-La plupart des transactions financières sont reportées dans le grand livre via les documents commerciaux dédiés, tels que des factures achat et des documents de vente. Pour les activités économiques qui ne sont pas représentés par un document dans [!INCLUDE[d365fin](includes/d365fin_md.md)], comme de plus petits frais ou règlements, vous pouvez créer les transactions associées en validant des lignes de feuille dans la fenêtre **Feuille comptabilité**. Pour plus d'informations, voir [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md).
 
-Par exemple, vous pouvez reporter les dépenses de vos employés avec leurs fonds propres pour des activités professionnelles, afin de les rembourser ultérieurement. Pour plus d'informations, voir [Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md).
+La plupart des transactions financières sont reportées dans le grand livre via les documents commerciaux dédiés, tels que des factures achat et des documents de vente. Mais vous pouvez également traiter des activités commerciales comme l'achat, le paiement ou le remboursement des frais d'un employé en reportant des lignes journal dans les divers journaux de [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+
+La plupart des journaux sont basés sur le *Journal général*, et vous pouvez traiter toutes les transactions dans la fenêtre **Journal général**. Pour plus d'informations, voir [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md).  
+
+Par exemple, vous pouvez utiliser les dépenses de vos employés avec leurs fonds propres pour des activités professionnelles, afin de les rembourser ultérieurement. Pour plus d'informations, voir [Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md).
+
+Mais dans de nombreux cas, vous devrez utiliser les journaux qui sont optimisées pour les types de transactions spécifiques, telles que **Journal paiement** pour enregistrer les paiements. Pour plus d'informations, voir [Enregistrer les paiements et remboursements dans le journal paiement](payables-how-post-payments-refunds.md).  
 
 Les journaux généraux vous permettent de reporter des transactions financières directement dans les comptes GL et dans d'autres comptes tels que les comptes bancaires, client, fournisseur et employé. Le report avec un journal général crée toujours des écritures dans les comptes du grand livre. C'est le cas même lorsque, par exemple, vous reportez une ligne journal sur un compte client, parce qu'une écriture est reportée dans un compte client du grand livre via un groupe de report.
+
+[!INCLUDE[journal-showhide-columns-inline-tip](includes/journal-showhide-columns-inline-tip.md)]  
 
 Les informations que vous saisissez dans un journal sont temporaires et peuvent être modifiées tant qu'elles sont dans le journal. Lorsque vous reportez le journal, les informations sont transférées vers des écritures de comptes individuels, où elles ne peuvent pas être modifiées. Toutefois, vous pouvez annuler l'affectation des écritures reportées et reporter des écritures d'inversion ou de correction. Pour plus d'informations, voir [Inverser des reports](finance-how-reverse-journal-posting.md).
 
 ## <a name="using-journal-templates-and-batches"></a>Utilisation de modèles et lots de journal
+
 Il existe plusieurs modèles journal général. Chaque modèle journal est représenté par une fenêtre dédiée avec des fonctions particulières et les champs nécessaires pour la prise en charge de ces fonctions, notamment la fenêtre **Journal rapprochement paiement** qui permet de traiter les paiements bancaires et la fenêtre **Journal paiement** qui permet de payer vos fournisseurs ou rembourser vos employés. Pour plus d'informations, voir [Exécuter des paiements](payables-make-payments.md) et [Rapprocher des paiements client manuellement](receivables-how-apply-sales-transactions-manually.md).
 
 Pour chaque modèle journal, vous pouvez configurer votre propre journal personnel sous forme de lot de journal. Par exemple, vous pouvez définir votre propre lot de journal pour le journal paiement doté de votre présentation et de vos paramètres personnels. Le conseil suivant est un exemple de la manière de personnaliser un journal.
@@ -34,7 +42,7 @@ Pour chaque modèle journal, vous pouvez configurer votre propre journal personn
 > Si vous cochez la case **Suggérer le montant contrepartie** de la ligne pour votre nom feuille dans la fenêtre **Noms feuilles comptabilité**, le champ **Montant** dans, par exemple, les lignes feuille comptabilité pour le même numéro de document est automatiquement prérempli avec la valeur nécessaire à la contrepartie dans le document. Pour plus d'informations, voir [Laisser [!INCLUDE[d365fin](includes/d365fin_md.md)] suggérer des valeurs](ui-let-system-suggest-values.md).
 
 ## <a name="understanding-main-accounts-and-balancing-accounts"></a>Compte principaux et comptes contrepartie
-Si vous avez configuré des comptes de contrepartie par défaut pour les lots journal sur la page **Journaux généraux**, le compte de contrepartie sera renseigné automatiquement lorsque vous renseignez le champ **Numéro du compte**. Sinon, renseignez manuellement les champs **Numéro du compte** et **N° compte contrepartie**. Un montant positif dans le champ **Montant** est débité du compte principal et crédité dans le compte contrepartie. Un montant négatif est crédité sur le compte principal et débité du compte contrepartie.
+Si vous avez configuré des comptes de contrepartie par défaut pour les lots journal dans la fenêtre **Journaux généraux**, le compte de contrepartie sera renseigné automatiquement lorsque vous renseignez le champ **Numéro du compte**. Sinon, renseignez manuellement les champs **Numéro du compte** et **N° compte contrepartie**. Un montant positif dans le champ **Montant** est débité du compte principal et crédité dans le compte contrepartie. Un montant négatif est crédité sur le compte principal et débité du compte contrepartie.
 
 > [!NOTE]  
 >   La TVA est calculée séparément pour le compte principal et le compte de contrepartie, afin qu'ils puissent utiliser des taux de pourcentage de TVA différents.
@@ -85,9 +93,8 @@ Tout comme dans un journal récurrent, vous n'avez à saisir qu'une fois une aff
 
 Si le mode récurrent du journal récurrent est défini sur **Solde** ou sur **Solde inverse**, tous les codes valeur de dimension du journal récurrent sont ignorés lorsque le compte est défini sur zéro. Par conséquent, si vous affectez une ligne récurrente à diverses valeurs de dimension dans la fenêtre **Affectations**, une seule écriture de contrepassation est créée. De ce fait, si vous affectez une ligne journal récurrent qui comporte un code valeur de dimension, vous ne devez pas saisir le même code dans la fenêtre **Affectations**. Si vous le faites, les valeurs de dimension sont incorrectes.
 
-####<a name="example-allocating-rent-payments-to-different-departments"></a>Exemple : Ventilation des paiements du loyer entre plusieurs départements
+#### <a name="example-allocating-rent-payments-to-different-departments"></a>Exemple : Ventilation des paiements du loyer entre plusieurs départements
 Vous payez un loyer tous les mois, vous avez saisi le montant du loyer sur le compte caisse d'une ligne journal récurrent. Dans la fenêtre **Affectations**, vous pouvez diviser les dépenses entre plusieurs départements (dimension Département) selon le nombre de mètres carrés occupé par chacun d'eux. Le calcul est basé sur le pourcentage d'affectation de chaque ligne. Vous pouvez saisir divers comptes sur différentes lignes affectation (si le loyer est aussi divisé entre plusieurs comptes) ou saisir le même compte, mais avec divers codes valeur de dimension pour la dimension Département sur chaque ligne.
-
 
 ## <a name="working-with-standard-journals"></a>Utilisation de feuilles standard
 Lorsque vous créez des lignes journal dont vous savez que vous risquez de les recréer ultérieurement, vous pouvez les enregistrer en tant que journal standard avant de reporter le journal. Cette fonctionnalité s'applique aux journaux article et aux journaux généraux.
@@ -96,7 +103,7 @@ Lorsque vous créez des lignes journal dont vous savez que vous risquez de les r
 >   La procédure suivante traite du journal article mais affecte également le journal général.
 
 ### <a name="to-save-a-standard-journal"></a>Pour enregistrer un journal standard
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuilles article**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux article**, puis sélectionnez le lien associé.
 2. Entrez une ou plusieurs lignes journal.
 3. Sélectionnez les lignes journal à réutiliser.
 4. Choisissez l'action **Enregistrer en tant que feuille standard**.
@@ -111,7 +118,7 @@ Lorsque vous créez des lignes journal dont vous savez que vous risquez de les r
 Une fois l'enregistrement de la feuille article standard effectué, la fenêtre Feuille article s'affiche. Vous pouvez alors procéder à la validation tout en sachant que vous pouvez très facilement recréer cette feuille si vous devez valider des lignes identiques ou analogues.
 
 ### <a name="to-reuse-a-standard-journal"></a>Pour réutiliser un journal standard
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuilles article**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux article**, puis sélectionnez le lien associé.
 2. Choisissez l'action **Obtenir les feuilles standard**.
 
     La fenêtre Feuilles article standard qui s'ouvre alors contient des codes et des descriptions de toutes les feuilles article standard existantes.
@@ -143,9 +150,9 @@ Cette fonction fonctionne également sur les vues filtrées.
 
 Toute renumérotation des numéros de document respectera les affectations associées, par exemple une affectation de paiement qui a été effectuée à partir du document de la ligne journal pour un compte fournisseur. Par conséquent, les champs **Code affecté à** et **N° doc. affecté à** sur les écritures affectées peuvent être mis à jour.
 
-La procédure suivante est basée sur la fenêtre **Feuille comptabilité**, mais s'applique à toutes les autres feuilles qui sont basées sur la feuille comptabilité, tel que la fenêtre **Feuille paiement**.
+La procédure suivante est basée dans la fenêtre **Journal général**, mais s'applique à tous les autres journaux qui sont basés sur le journal général, comme la fenêtre **Journal paiement**.
 
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Feuilles comptabilité**, puis sélectionnez le lien connexe.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux généraux**, puis sélectionnez le lien associé.
 2. Lorsque vous êtes prêt à valider la feuille, choisissez l'action **Renuméroter les numéros de document**.
 
 Les valeurs dans le champ **N° document** sont modifiées, le cas échéant, pour que le numéro de document sur les lignes journal individuelles ou groupées soit dans un ordre séquentiel. Une fois que les documents sont renumérotés, vous pouvez procéder au report du journal.

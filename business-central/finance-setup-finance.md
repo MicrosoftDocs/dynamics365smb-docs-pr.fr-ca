@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
-ms.date: 05/31/2018
+ms.date: 10/01/2018
 ms.author: edupont
 ms.translationtype: HT
-ms.sourcegitcommit: 2286b728a464943841b192031cfea13644441013
-ms.openlocfilehash: 025c00e6013e773204a12abc7d86c09b3dcef3dd
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 1697ba5b28e8fe475704dffde37ce0935ba443f2
 ms.contentlocale: fr-ca
-ms.lasthandoff: 06/28/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="setting-up-finance"></a>Configuration de Finance
@@ -33,7 +33,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Créer des tableaux d'analyse et définir des catégories de compte pour définir le contenu des graphiques et rapports financiers, tels que les rapports Bilan et État des résultats.|[Préparer la génération de rapports financiers avec des tableaux d'analyse et des catégories de compte](bi-how-work-account-schedule.md)|
 |Configurer une valeur de tolérance selon laquelle le système ferme une facture même si le paiement, tenant compte d'éventuels escomptes, ne couvre pas intégralement le montant de la facture.|[Utilisation des tolérances de règlement et des tolérances d'escompte de paiement](finance-payment-tolerance-and-payment-discount-tolerance.md)|
 | Définir les périodes fiscales. |[Ouvrir un nouvel exercice financier](finance-how-open-new-fiscal-year.md) |
-| Définissez comment déclarer les montants de taxe sur la valeur ajoutée que vous avez recueillis sur les ventes aux autorités fiscales. |[Procédure : Déclarer la TVA aux autorités fiscales](finance-how-report-vat.md)|
+| Définissez comment déclarer les montants de taxe sur la valeur ajoutée que vous avez recueillis sur les ventes aux autorités fiscales. |[Déclarer la TVA aux autorités fiscales](finance-how-report-vat.md)|
 | Définissez vos fonctionnalités Ventes et Achats pour gérer les paiements dans des devises étrangères.|[Activer l'affectation d'écritures en devises différentes](finance-how-enable-application-ledger-entries-different-currencies.md)
 | Ajouter de nouveaux comptes au plan comptable existant. |[Configuration du plan comptable](finance-setup-chart-accounts.md) |
 | Configurez les graphiques de veille économique pour analyser la trésorerie. |[Configuration d'une analyse de trésorerie](finance-setup-cash-flow-analyses.md) |
@@ -49,5 +49,4 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
- 
 

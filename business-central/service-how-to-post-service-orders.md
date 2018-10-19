@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 07/01/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 01c30041e9034b87b39d80972865b180dd4a97d2
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 2b62ab8062c5c93bbf67b6949397d18556b8cf78
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="post-service-orders-and-credit-memos"></a>Reporter des commandes et des notes de crédit de service
@@ -28,9 +28,9 @@ Si vous avez un grand nombre de commandes service, vous pouvez gagner du temps e
 > Avant de reporter un document service, il est recommandé d'utiliser l'action **Rapport de test** pour vérifier toutes les erreurs ou informations manquantes. S'il existe des erreurs, vous devez corriger le problème. Vous pouvez imprimer un nouveau rapport de test pour vérifier le correctif, puis reporter le document.
   
 ## <a name="to-post-a-service-order"></a>Pour reporter une commande service    
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Commandes de service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes service**, puis sélectionnez le lien associé.  
 2. Ouvrez la commande service.  
-3. Sur la page **Commande service**, choisissez l'une des actions suivantes.  
+3. Sur la fenêtre **Commande service**, choisissez l'une des actions suivantes.  
   
     |**Action**|**Résultat**|  
     |------------------|----------------|  
@@ -53,7 +53,7 @@ Vous ne pouvez reporter la consommation que si la ligne contient une quantité q
 Lors du report de la commande, les écritures et les documents reportés correspondants sont créés. Les champs appropriés dans le document commande service sont mis à jour.  
 
 ## <a name="to-batch-post-service-orders"></a>Pour exécuter en lot des commandes service
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Commandes de service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes service**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Reporter par lot**.  
 3.  Vous pouvez positionner un filtre pour sélectionner des numéros commande service ou un intervalle de numéros commande pour le traitement en lot à effectuer.  
 4.  Cliquez sur **OK** pour démarrer le traitement en lot.  
@@ -61,7 +61,7 @@ Lors du report de la commande, les écritures et les documents reportés corresp
 ## <a name="to-post-a-service-credit-memo"></a>Pour reporter une note de crédit service  
 Une fois la note de crédit service créée et renseignée, vous pouvez reporter la note de crédit. S'il y a des erreurs ou s'il manque certaines informations sur la note de crédit lors du report, le processus est interrompu par un message d'erreur.  
    
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Notes de crédit service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de crédit service**, puis sélectionnez le lien associé.  
 2. Créez une note de crédit service. Sous l'onglet de **Accueil**, dans le groupe **Nouveau**, choisissez **Nouveau**.  
 3. Renseignez les champs suivants.  
 4. Sous l'onglet **Actions**, dans le groupe **Validation**, choisissez **Valider**. Si vous souhaitez imprimer et valider l'avoir simultanément, choisissez plutôt **Valider et imprimer**.  
@@ -74,7 +74,7 @@ Une fois la note de crédit service créée et renseignée, vous pouvez reporter
 ## <a name="to-post-consumption-from-a-service-order"></a>Pour reporter une consommation à partir d'une commande service  
 La procédure suivante décrit comment reporter les articles, les heures et/ou coûts ressource utilisés pour une opération de service spécifique que vous n'allez pas facturer au client. Notez que vous ne pouvez reporter des articles, des heures et/ou des coûts consommés que pour une livraison reportée pour laquelle il n'y a pas de facture ni de consommation reportée.  
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Commandes de service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes service**, puis sélectionnez le lien associé.  
 2. Ouvrez la commande service dont vous voulez reporter la consommation.  
 3. Choisissez l'article de service. Sélectionnez **Actions**, **Commande**, puis **Lignes service**.  
 4. Recherchez les écritures requises et spécifiez les quantités pour lesquelles vous allez reporter la consommation dans le champ **Qté à consommer**. La quantité ne peut pas être supérieure à la quantité déjà livrée et la quantité restante, mais non facturée après la facturation partielle de cette livraison.  
@@ -91,7 +91,7 @@ Après avoir spécifié les détails d'un service, vous pouvez ajuster et report
   
 La procédure suivante explique comment reporter la livraison des articles ligne service dans les emplacements qui ne sont pas configurés pour appeler une gestion d'entrepôt.  
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Commande de service**, puis sélectionnez le lien associé. 2. Dans la fenêtre de la commande service sélectionnée, choisissez **Actions**, **Commande**,  **Lignes service**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commande service**, puis sélectionnez le lien associé. 2. Dans la fenêtre de la commande service sélectionnée, choisissez **Actions**, **Commande**,  **Lignes service**.  
 3. Dans la fenêtre **Lignes service**, recherchez les écritures requises, puis spécifiez la quantité à valider dans le champ **Qté à expédier**.  
   
    > [!NOTE]  
@@ -108,7 +108,7 @@ Pour plus d'informations sur la livraison des articles ligne service dans les co
 ## <a name="to-undo-posted-consumption"></a>Pour annuler une consommation reportée  
 Vous pouvez annuler la consommation sur les commandes service. Par exemple, parce qu'elle a été reportée par erreur.  
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Livraisons de service reportées**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Livraisons service reportées**, puis sélectionnez le lien associé.  
 2. Ouvrez la livraison service reportée pour laquelle la consommation erronée a été reportée.  
 3. Sélectionnez **Actions**, **Livraison**, puis **Lignes de livraison de service**.  
 4. Sélectionnez les lignes contenant la consommation incorrecte, puis sélectionnez l'action **Annuler consommation**.  
@@ -126,7 +126,7 @@ Si vous devez travailler sur une commande service pendant longtemps sans la repo
   
 La procédure suivante décrit le report de la livraison directement à partir d'une commande service dans des emplacements sans configuration de la gestion d'entrepôt. Si l'emplacement est configuré pour appeler une gestion d'entrepôt, le report de livraison a lieu dans un autre document entrepôt, en fonction de la configuration de l'emplacement.
   
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Commandes de service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes service**, puis sélectionnez le lien associé.  
 2. Ouvrez la commande service, puis cliquez sur l'action **Lignes service**.  
 4. Dans les lignes que vous allez reporter, renseignez les champs **Qté à livrer**, **Qté à facturer** et **Qté à consommer**, en fonction de la manière dont vous allez reporter les lignes.  
 5. Sélectionnez l'action **Valider**.

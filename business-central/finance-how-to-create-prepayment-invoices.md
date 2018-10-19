@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 08/07/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 314732d3f622aede09342d7246e28b4a910d08d9
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 50b77f4c6e333f3024f2261eb0c6df42b3e535d0
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="create-prepayment-invoices"></a>Créer des factures de paiement anticipé
@@ -27,7 +27,7 @@ Après avoir créé un document de vente ou un bon de commande, vous pouvez cré
 La procédure suivante décrit comment facturer un paiement anticipé pour des documents de vente. La procédure est identique pour les bons de commande.  
 
 ## <a name="to-create-a-prepayment-invoice"></a>Pour créer une facture paiement anticipé  
-1. Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "Page ou état pour la recherche"), entrez **Commandes vente**, puis sélectionnez le lien connexe.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
 2. Créez un document de vente. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).  
 
     Sur le raccourci **Acompte** le champ **% acompte** est renseigné automatiquement si un pourcentage d'acompte par défaut figure sur la fiche client. Vous pouvez modifier le contenu du champ. Le pourcentage de paiement anticipé est uniquement copié à partir de l'en-tête vers les lignes qui ne copient pas le pourcentage de paiement anticipé par défaut à partir de l'article.  

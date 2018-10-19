@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 08/31/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 52290609eca12eb09f9d1065b1013baeee5b8a5b
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: fcbecbf6a90e60a49c7861e16614b98174379bed
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="receive-items"></a>Réceptionner des articles
@@ -26,7 +26,7 @@ Lorsque les articles arrivent dans un entrepôt configuré pour appeler un trait
 
 ## <a name="to-receive-items-with-a-purchase-order"></a>Pour recevoir des articles avec un bon de commande
 La section suivante décrit comment recevoir des articles avec un bon de commande. Les étapes sont similaires pour les retours vente et les ordres de transfert.  
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Bons de commande**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de commande**, puis sélectionnez le lien associé.
 2. Ouvrez un bon de commande existant, ou créez-en un nouveau. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 3. Dans le champ **Qté à recevoir**, indiquez la quantité reçue.
 
@@ -34,7 +34,7 @@ La section suivante décrit comment recevoir des articles avec un bon de command
 4. Sélectionnez l'action **Valider**.
 
 ## <a name="to-receive-items-with-a-warehouse-receipt"></a>Pour recevoir des articles avec une réception entrepôt
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Réceptions entrepôt**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Réceptions entrepôt**, puis choisissez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 
     Renseignez les champs du raccourci **Général**. Lorsque vous récupérez des lignes document origine,certaines des informations de l'en-tête sont copiées dans chaque ligne.  

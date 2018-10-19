@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/06/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 7a519025bd7bed4bb2974c3e7fb5f044ac35dcf4
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: e2e937aee7defcc5226a3238652f88261004920c
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="plan-for-new-demand-order-by-order"></a>Planifier de nouvelles demandes commande par commande
@@ -26,14 +26,14 @@ Vous pouvez accéder à la fenêtre **Planification commande** de deux manières
 
 
 ## <a name="to-plan-for-new-production-order-demand"></a>Pour planifier une nouvelle demande de bon de production  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Bons de production planifiés**, puis sélectionnez le lien associé. (Vous pouvez exécuter cette procédure pour des bons de production planifiés, planifiés fermes ou libérés).
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **O.F. planifiés**, puis sélectionnez le lien associé. (Vous pouvez exécuter cette procédure pour des bons de production planifiés, planifiés fermes ou libérés).
 2.  Ouvrez le bon de production pour lequel vous souhaitez effectuer une planification, puis choisissez l'action **Planification**.  
 3.  Dans la fenêtre **Planification de commande**, choisissez l'action **Calculer planification**.  
 
 La fenêtre affiche les lignes planning filtrées par la vue de filtre **Demande de production**, c'est-à-dire toutes les lignes composant insatisfaites de tous les ordres de fabrication existants. La demande du bon de production n'est pas affichée car il est nécessaire d'effectuer la planification d'un bon de production avec un aperçu de la demande des éventuelles lignes composante précédentes. Les lignes planification du bon de production du contexte sont développées.  
 
 ## <a name="to-plan-for-any-new-demand"></a>Pour planifier toute nouvelle demande  
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Planification commande**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Planification commande**, puis sélectionnez le lien associé.  
 2.  Dans la fenêtre **Planification de commande**, choisissez l'action **Calculer planification**.
 3.  Choisissez le bouton **Afficher (+)** devant la date dans le champ **Date demande** pour afficher les lignes de planification sous-jacentes qui représentent les lignes de demande dont la disponibilité n'est pas suffisante.  
 4.  Pour chaque ligne planification développée, c'est-à-dire ligne de réquisition, les valeurs s'affichent dans des champs d'information en bas de la fenêtre.  
@@ -85,7 +85,7 @@ La fenêtre affiche les lignes planning filtrées par la vue de filtre **Demande
 >   Si vous entrez une date ultérieure à la date demande, un message vous l'indique.  
 
 ## <a name="to-make-supply-orders"></a>Pour créer des commandes approvisionnement  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Bons de production planifiés**, puis sélectionnez le lien associé. Vous pouvez exécuter cette procédure pour un bon de production planifié, planifié ferme ou libéré.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **O.F. planifiés**, puis sélectionnez le lien associé. Vous pouvez exécuter cette procédure pour un bon de production planifié, planifié ferme ou libéré.  
 2.  Ouvrez le bon de production pour lequel vous souhaitez effectuer une planification, puis choisissez l'action **Planification**.  
 3.  Positionnez le curseur sur la ligne planification souhaitée, puis choisissez l'action **Créer commandes**.  
 4.  Dans la fenêtre **Créer des commandes approvisionnement**, sur le raccourci **Planning commande**, dans le champ **Créer commandes pour**, sélectionnez l'une des options suivantes.  

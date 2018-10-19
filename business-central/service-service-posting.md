@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/18/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: b191b5e8fbe0a60a32d32bd2dc1ca0cca07c06e4
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: 75f0fd760978b0efc4ab86b8d17a815280a09799
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="service-posting"></a>Report de service
@@ -49,7 +49,7 @@ Lorsque vous validez une facture service, une expédition service ou un avoir se
 
 La procédure suivante utilise un exemple de facture service reportée ; cette même procédure est applicable aux livraisons de service et aux notes de crédit reportées.  
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Facture de service reportée**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Facture service reportée**, puis sélectionnez le lien associé.  
 2. Ouvrez la facture service reportée que vous souhaitez afficher.  
 3. Pour obtenir un aperçu de la facture reportée, choisissez l'action **Statistiques**.  
 

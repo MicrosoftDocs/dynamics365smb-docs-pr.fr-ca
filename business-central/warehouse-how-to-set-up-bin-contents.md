@@ -10,20 +10,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 09/08/2017
+ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 2182b34721a3272ce784986de200cc87f51c2c37
+ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
+ms.openlocfilehash: b92e6a5227fc2e1c60498ef2aafaae55deaedab8
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 # <a name="create-bin-contents"></a>Créer le contenus de la zone
 Une fois la configuration des emplacements terminée, vous pouvez configurer leur contenu. En d'autres termes, vous pouvez configurer les articles à stocker dans une zone donnée et définir les règles qui régissent le remplissage de la zone avec un article spécifique. Vous pouvez effectuer cette opération manuellement dans la fenêtre **Contenu de la zone** ou automatiquement dans la fenêtre **Créer la feuille contenu de la zone**.
 
 ## <a name="to-create-bin-content-manually"></a>Pour créer le contenu de la zone manuellement  
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](media/ui-search/search_small.png "icône Page ou état pour la recherche"), saisissez **Magasins**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'emplacement à partir duquel vous souhaitez créer des contenus de la zone, puis choisissez l'action **Zones**.  
 3.  Sélectionnez la zone à partir de laquelle vous souhaitez configurer un contenu, puis choisissez l'action **Contenus**.  
 4.  Pour chaque article que vous souhaitez stocker dans l'emplacement, renseignez une ligne de la fenêtre **Contenu emplacement** avec les informations appropriées. Certains champs sont déjà renseignés avec des informations relatives à la zone.  
@@ -41,7 +41,7 @@ Si vous sélectionnez le champ **Fixe**, vous associez l'article à l'emplacemen
 ## <a name="to-create-bin-content-with-a-worksheet"></a>Pour créer le contenu de la zone avec une feuille  
 Lorsque vous avez créé vos zones, vous pouvez créer le contenu de chaque zone dans la feuille de création de contenu de la zone.
 
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Feuille création contenu de la zone**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille création contenu de la zone**, puis sélectionnez le lien associé.  
 2.  Dans l'en-tête feuille, cliquez dans le champ **Nom** et sélectionnez la feuille du magasin où vous souhaitez créer le contenu d'un emplacement.  
 3.  Dans le champ **Code emplacement**, sélectionnez le code de l'emplacement dont vous souhaitez définir le contenu.   
 
