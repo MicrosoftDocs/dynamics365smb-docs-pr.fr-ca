@@ -11,10 +11,10 @@ ms.search.keywords: marketing, campaign, promo, prospect
 ms.date: 10/01/2018
 ms.author: edupont
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 4c3f0f612c13d9fe84cffc4862641301795bcebd
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 66d8bda9082754c4278a47e44529a30dea8eb39c
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="managing-marketing-campaigns"></a>Gestion de campagnes marketing
@@ -23,7 +23,7 @@ Disposer d'une solide stratégie marketing permet d'identifier, d'attirer et de 
 Chaque promotion est composée de diverses activités ou tâches. Vous pouvez combiner plusieurs tâches, par exemple les tâches qui représentent chacune une étape, dans les activités. Les tâches d'activité sont liées entre elles par une formule de date. Les tâches individuelles peuvent être affectées uniquement à des représentants. Les activités peuvent être affectées aux opportunités, représentants, groupes de représentants et contacts. Pour plus d'informations, voir [Configurer des cycles de vente opportunité et des phases de cycle](marketing-how-setup-opportunity-sales-cycles-stages.md).
 
 ## <a name="defining-individual-campaigns"></a>Définition de campagnes individuelles
-Pour pouvoir créer une campagne, vous devez configurer des *codes statut campagne*. Ceux-ci permettent de gérer vos promotions en affectant un état à la promotion. Lorsque vous travaillez sur les phases d'une promotion, vous pouvez voir où en est la promotion et visualiser l'étape suivante. Vous devez configurer des codes statut campagne dans la fenêtre **Statut campagne**.
+Pour pouvoir créer une campagne, vous devez configurer des *codes statut campagne*. Ceux-ci permettent de gérer vos promotions en affectant un état à la promotion. Lorsque vous travaillez sur les phases d'une promotion, vous pouvez voir où en est la promotion et visualiser l'étape suivante. Vous devez configurer des codes état promotion sur la page **État promotion**.
 
 Vous pouvez créer une fiche campagne pour toutes les campagnes que vous voulez suivre. Vous pouvez également afficher ces fiches promotion pour visualiser des informations générales sur vos promotions.
 Vous pouvez supprimer des écritures promotion, par exemple si elles enregistrent une action qui a été annulée. Vous ne pouvez supprimer que les écritures promotion annulées.
@@ -32,7 +32,7 @@ Vous pouvez supprimer des écritures promotion, par exemple si elles enregistren
 Après avoir créé une promotion, vous pouvez commencer à créer les segments qui spécifient le public cible de la promotion. Pour plus d'informations, voir [Gestion des segments](marketing-segments.md).
 
 ### <a name="registering-discount-percentages"></a>Enregistrement des pourcentages escompte
-Lorsque vous avez défini votre campagne, que vous avez déterminé les segments que la campagne doit couvrir et défini les dates début et dates de fin, vous enregistrez le pourcentage de la remise auquel le client a droit pour chaque article dans les lignes de la fenêtre **Remises ligne vente**. Vous pouvez également enregistrer les prix de vente pour des articles individuels sur les lignes de la fenêtre **Prix vente**. Vous pouvez accéder aux deux fenêtres à partir de la fiche promotion.
+Lorsque vous avez défini votre promotion, que vous avez déterminé les segments que la promotion doit couvrir et défini les dates de début et dates de fin, vous enregistrez le pourcentage d'escompte auquel le client a droit pour chaque article dans les lignes de la page **Escomptes de ligne de vente**. Vous pouvez également enregistrer les prix de vente pour des articles individuels sur les lignes de la page **Prix vente**. Vous pouvez accéder aux deux pages à partir de la fiche promotion.
 
  Lorsque vous avez configuré les prix vente/escomptes ligne et les segments dans la fiche promotion, vous devez les activer afin que les lignes reflètent les prix/escomptes de la promotion.
 

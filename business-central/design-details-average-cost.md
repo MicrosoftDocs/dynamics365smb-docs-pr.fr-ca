@@ -11,10 +11,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 5c87d33bbf9d97f53e033c663532052c8aeddee9
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 97bc83c402cd8bbdc34f05035dfa6c680c2e635e
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="design-details-average-cost"></a>Détails de conception : coût moyen
@@ -23,7 +23,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
  La date d'évaluation est définie automatiquement.  
 
 ## <a name="setting-up-average-cost-calculation"></a>Configuration du calcul du coût moyen  
- Le tableau suivant décrit les deux champs de la fenêtre **Paramètres stock** qui doivent être renseignés pour activer le calcul du coût moyen.  
+ Le tableau suivant décrit les deux champs de la page **Configuration inventaire** qui doivent être renseignés pour activer le calcul du coût moyen.  
 
 |Champ|Description|  
 |---------------------------------|---------------------------------------|  
@@ -33,7 +33,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 > [!NOTE]  
 >  Vous pouvez uniquement utiliser une période de coût moyen et un type de calcul de coût moyen dans une année fiscale.  
 >   
->  La fenêtre **Périodes comptables** affiche la période coût moyen et le type de calcul du coût moyen qui est en vigueur au cours de la période, pour chaque période comptable.  
+>  La page **Périodes comptables** affiche la période coût moyen et le type de calcul du coût moyen qui est en vigueur au cours de la période, pour chaque période comptable.  
 
 ## <a name="calculating-average-cost"></a>Calcul du coût moyen  
  Lorsque vous validez une transaction pour un article qui utilise la méthode évaluation stock coût moyen, une écriture est créée dans la table **Point d'entrée ajustement coût moyen**. Cette écriture contient le numéro d'article, le code variante et le code d'emplacement de la transaction. L'écriture contient également le champ **Date évaluation**, qui spécifie la dernière date de la période coût moyen dans laquelle la transaction a été validée.  
@@ -51,7 +51,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
  Le coût moyen calculé est ensuite appliqué aux diminutions d'inventaire pour l'article (ou article, emplacement et variante) avec des dates de report qui surviennent au cours de la période coût moyen. S'il y a des augmentations d'inventaire affectées de façon fixe à des diminutions d'inventaire au cours de la période coût moyen, le calcul du coût moyen est transmis de l'augmentation à la diminution.  
 
 ### <a name="example-average-cost-period--day"></a>Exemple : période coût moyen = jour  
- L'exemple suivant montre l'effet du calcul du coût moyen basé sur une période coût moyen d'un jour. Le champ **Type calcul coût moyen** de la fenêtre **Paramètres stock** est défini sur **Article**.  
+ L'exemple suivant montre l'effet du calcul du coût moyen basé sur une période coût moyen d'un jour. Le champ **Type calcul coût moyen** de la page **Configuration inventaire** est défini sur **Article**.  
 
  Le tableau suivant montre les écritures article pour un exemple d'article de coût moyen, ARTICLE1, avant que le traitement en lot **Ajuster coûts - Écr. article** ne soit exécuté.  
 
@@ -88,7 +88,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 |03/02/20|Vente|-1|-100,00|6|  
 
 ### <a name="example-average-cost-period--month"></a>Exemple : période coût moyen = mois  
- L'exemple suivant montre l'effet du calcul du coût moyen basé sur une période coût moyen d'un mois. Le champ **Type calcul coût moyen** de la fenêtre **Paramètres stock** est défini sur **Article**.  
+ L'exemple suivant montre l'effet du calcul du coût moyen basé sur une période coût moyen d'un mois. Le champ **Type calcul coût moyen** de la page **Configuration inventaire** est défini sur **Article**.  
 
  Si la période coût moyen est d'un mois, une seule écriture est créée pour chaque combinaison du numéro article, code variante, code d'emplacement et date évaluation.  
 

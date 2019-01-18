@@ -13,14 +13,14 @@ ms.search.keywords: project management, consumption
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: e73d4aa2928f7d0f5cc04e938ca887f7403f00d1
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: f1b3864eadd616273c3a4a7d061623dab701d01e
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="record-usage-for-jobs"></a>Enregistrer l'utilisation pour les projets
-Dans la fenêtre **Lignes planning projet**, vous pouvez consulter et enregistrer l'activité sur les différentes parties de votre projet, qui est automatiquement mis à jour lorsque vous modifiez et transférez des informations entre les projets et les feuilles projet ou les factures projet. Cela suppose d'avoir paramétré un projet afin que **Appliquer le lien d'utilisation par défaut** soit activé. Pour plus d'informations, voir [Configuration de projets](projects-how-setup-jobs.md).  
+Sur la page **Lignes planification projet**, vous pouvez consulter et enregistrer l'utilisation sur les différentes parties de votre projet, qui est automatiquement mis à jour lorsque vous modifiez et transférez des informations entre les projets et les journaux projet ou les factures projet. Cela suppose d'avoir paramétré un projet afin que **Appliquer le lien d'utilisation par défaut** soit activé. Pour plus d'informations, voir [Configuration de projets](projects-how-setup-jobs.md).  
 
 Par exemple, pour les lignes planning de type **Budget**, vous pouvez saisir la quantité d'une ressource et indiquer la quantité à transférer vers la feuille projet. Si le type de la ligne planning est **Facturable**, vous pouvez saisir la quantité de la ressource et indiquer la quantité à transférer vers une facture. En comparant la quantité qui a été transférée vers le journal ou la facture avec la quantité restante, vous pouvez rapidement vérifier les informations sur l'utilisation.
 
@@ -34,10 +34,10 @@ Les procédures suivantes décrivent comment enregistrer les prix et les coûts 
 
     Le champ **Quantité restante** indique la quantité qui reste pour terminer le projet et à transférer à la feuille.  
 5. Choisissez l'action **Créer des lignes feuille projet**.
-6. Dans la fenêtre **Projet Transférer la ligne planning projet**, renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+6. Sur la page **Projet Transférer la ligne planification projet**, renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 7. Cliquez sur **Ouvrir la feuille projet**.  
-8. Dans la fenêtre **Feuille projet**, sélectionnez la ligne appropriée, puis cliquez sur **Valider**.
-9. Dans la fenêtre **Lignes planning projet**, examinez l'activité enregistrée en observant les champs **Quantité**, **Quantité restante** et **Qté à transférer sur la feuille**.  
+8. Sur la page **Journal projet**, sélectionnez la ligne appropriée, puis cliquez sur **Reporter**.
+9. Sur la page **Lignes planification projet**, examinez l'utilisation enregistrée en observant les champs **Quantité**, **Quantité restante** et **Qté à transférer sur le journal**.  
 10. Répétez les phases 3 à 8 pour enregistrer l'utilisation supplémentaire.  
 
 ## <a name="to-record-usage-for-a-job-planning-line-of-type-billable"></a>Pour enregistrer l'utilisation d'une ligne planification projet de type Facturable
@@ -50,21 +50,21 @@ Dans la tâche suivante, vous devez aussi enregistrer l'activité, mais pour une
 
     Le champ **Quantité à facturer** indique la quantité restante pour terminer le projet et qui doit être facturée.  
 5. Cliquez sur **Créer facture vente**.
-6. Dans la fenêtre **Projet Transférer vers facture vente**, renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**.
-7. Dans la fenêtre **Lignes planning projet**, sélectionnez la ligne appropriée, puis cliquez sur **Valider**.
+6. Sur la page **Projet Transférer vers facture vente**, renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**.
+7. Sur la page **Lignes planification projet**, sélectionnez la ligne appropriée, puis cliquez sur **Reporter**.
 8. Examinez l'activité enregistrée en observant les champs **Quantité**, **Quantité à facturer**, **Qté à transférer à facturer** et vérifiez si la facture vente est validée, ainsi que les champs **Qté facturée**.
 9. Répétez les phases 3 à 8 pour enregistrer l'utilisation supplémentaire.  
 10. Pour passer en revue une facture vente validée associée, cliquez sur **Avoirs/Factures vente**.  
-11. Dans la fenêtre **Factures projet**, sélectionnez la facture appropriée et cliquez sur **Ouvrir la facture vente/l'avoir**.         
+11. Sur la page **Factures projet**, sélectionnez la facture appropriée et cliquez sur **Ouvrir la facture vente/note de crédit**.         
 
 ## <a name="to-create-job-journal-lines-from-job-planning-lines"></a>Pour créer des lignes journal projet à partir de lignes planification projet
 Lorsque vous êtes prêt à reporter les données financières pour les projets, vous devez créer des lignes journal projet que vous pouvez reporter.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projets**, puis sélectionnez le lien associé.  
 2. Sélectionnez un projet concerné, puis cliquez sur **Lignes planning projet**.  
-3. Dans la fenêtre **Lignes planning projet**, sur la ligne planning projet souhaitée, dans le champ **Qté à transférer sur la feuille**, entrez la quantité que vous souhaitez transférer vers une feuille projet.  
+3. Sur la page **Lignes planification projet**, sur la ligne planification projet souhaitée, dans le champ **Qté à transférer sur le journal**, entrez la quantité que vous souhaitez transférer vers un journal projet.  
 4. Choisissez l'action **Créer des lignes feuille projet**.
-5. Dans la fenêtre **Projet Transférer la ligne planning projet**, renseignez les champs selon vos besoins.  
+5. Sur la page **Projet Transférer la ligne planification projet**, renseignez les champs selon vos besoins.  
 6. Cliquez sur le bouton **OK**. Des lignes journal projet sont créées.
 7. Pour vérifier le transfert, ouvrez le lot journal projet approprié et vérifiez les écritures.  
 8. Lorsque les lignes feuilles projets sont renseignées, cliquez sur **Valider**.  
@@ -83,7 +83,7 @@ Après avoir reporté les lignes journal projet, vous pouvez voir les lignes pla
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux projet**, puis sélectionnez le lien associé.  
 2. Sélectionnez une feuille projet appropriée, puis cliquez sur **Écritures comptables**.  
-3. Dans la fenêtre **Écritures comptables projet**, cliquez sur **Afficher les lignes planning projet liées**.
+3. Sur la page **Écritures projet**, cliquez sur **Afficher les lignes planification projet liées**.
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion de projets](projects-manage-projects.md)  

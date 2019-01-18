@@ -13,10 +13,10 @@ ms.search.keywords: analysis, history, track
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 13e1cd1e772ed01b6503a30ef940054b0973f70f
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: ac8d1f84c3daacbee931d559e6f67f4351df73c5
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="working-with-dimensions"></a>Utilisation des axes analytiques
@@ -36,7 +36,7 @@ Plus vous utilisez d'axes analytiques, plus vous pouvez baser vos décisions com
 La fonctionnalité Axes analytiques joue un rôle important dans la veille économique, par exemple en définissant des vues d'analyse. Pour plus d'informations, voir [Analyser des données par dimensions](bi-how-analyze-data-dimension.md).
 
 > [!TIP]
-> Pour analyser rapidement les données transactionnelles par dimensions, vous pouvez filtrer les totaux du plan comptable et les entrées de toutes les fenêtres **Entrées** par dimensions. Recherchez l'action **Définir le filtre dimension**.
+> Pour analyser rapidement les données transactionnelles par dimensions, vous pouvez filtrer les totaux du plan comptable et les entrées de toutes les pages **Entrées** par dimensions. Recherchez l'action **Définir le filtre dimension**.
 
 ## <a name="dimension-sets"></a>Ensembles de dimensions
 Un ensemble de dimensions est une combinaison unique de sections analytiques. Il est stocké comme des écritures de l'ensemble de dimensions dans la base de données. Chaque écriture de l'ensemble de dimensions représente une valeur de dimension unique. L'ensemble de dimensions est identifié par un code commun, qui est affecté à chaque écriture correspondante qui appartient à l'ensemble de dimensions.  
@@ -44,7 +44,7 @@ Un ensemble de dimensions est une combinaison unique de sections analytiques. Il
 Lorsque vous créez une ligne de journal, un en-tête de document ou une ligne de document, vous pouvez spécifier une combinaison de valeurs de dimension. Au lieu d'enregistrer explicitement chaque valeur de dimension dans la base de données, un code d'ensemble de dimensions est affecté à la ligne de journal, à l'en-tête du document ou à la ligne du document pour spécifier l'ensemble de dimensions.  
 
 ## <a name="setting-up-dimensions"></a>Configuration d'axes
-Vous pouvez définir les axes et les sections analytiques pour classer des feuilles et des documents par catégorie, comme des commandes vente et achat. La fenêtre **Axes analytiques** permet de créer une ligne pour chaque axe, par exemple *Projet*, *Département*, *Zone* et *Commercial*.
+Vous pouvez définir les axes et les sections analytiques pour classer des feuilles et des documents par catégorie, comme des commandes vente et achat. La page **Dimensions** permet de créer une ligne pour chaque dimension, par exemple *Projet*, *Département*, *Zone* et *Représentant*.
 
 Vous pouvez également définir des valeurs pour des axes. Il peut par exemple s'agir de départements de votre compagnie. Les sections analytiques peuvent être paramétrées sous forme de structure hiérarchique similaire au plan comptable, de manière à ce que les données puissent être réparties en plusieurs niveaux de granularité et à ce que des sous-ensembles de sections analytiques puissent être totalisés. Vous pouvez définir autant de dimensions et de valeurs de dimension que nécessaire, tous les membres de votre compagnie peuvent les utiliser.
 
@@ -57,7 +57,7 @@ Vous pouvez également configurer des axes principaux et des raccourcis axe :
 Vous pouvez attribuer une dimension par défaut pour un compte spécifique. La dimension est copiée sur le journal ou le document lorsque vous saisissez le numéro de compte dans une ligne, mais vous pouvez supprimer ou modifier le code sur la ligne si nécessaire. Vous pouvez également rendre une dimension obligatoire pour reporter une écriture avec un type de compte spécifique.  
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Dimensions**, puis choisissez le lien associé.  
-2.  Dans la fenêtre **Dimensions** sélectionnez la dimension appropriée, puis cliquez sur **Dimension par défaut du type de compte**.  
+2.  Sur la page **Dimensions** sélectionnez la dimension appropriée, puis cliquez sur **Dimension par défaut du type de compte**.  
 4.  Complétez une ligne pour chaque nouvelle dimension par défaut à configurer. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 > [!TIP]  
@@ -73,7 +73,7 @@ Vous pouvez attribuer une dimension par défaut pour un compte spécifique. La d
 Des types de compte différents, tels qu'un compte client et un compte article, peuvent avoir des affectations analytiques différentes. Par conséquent, plusieurs dimensions par défaut peuvent être proposées pour une dimension dans une écriture. Pour éviter de tels conflits, vous pouvez appliquer des règles de priorité aux différentes sources.  
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Priorités de dimensions par défaut**, puis sélectionnez le lien associé.  
-2.  Dans la fenêtre **Affect. analytique prioritaire**, dans le champ **Code journal,** entrez le code journal pour la table séquence à laquelle les affectations analytiques prioritaires s'appliquent.  
+2.  Sur la page **Priorités dimension par défaut**, dans le champ **Code source**, entrez le code source pour la table écriture à laquelle les priorités de dimension par défaut s'appliquent.  
 3.  Complétez une ligne pour chaque priorité de dimensions par défaut souhaitée pour le code d'origine sélectionné.
 4.  Répétez la procédure pour chaque code d'origine pour lequel vous souhaitez configurer des priorités de dimensions par défaut.  
 
@@ -84,12 +84,12 @@ Des types de compte différents, tels qu'un compte client et un compte article, 
 Pour éviter de reporter des écritures avec des dimensions contradictoires ou inappropriées, vous pouvez bloquer ou limiter des combinaisons spécifiques de deux dimensions. Lorsqu'une combinaison de dimensions est bloquée, vous ne pouvez pas reporter les deux dimensions sur la même écriture, quelles que soient les valeurs de la dimension. Lorsqu'une combinaison de dimensions est limitée, vous pouvez reporter les deux dimensions sur la même écriture, mais uniquement pour certaines combinaisons de valeurs de dimensions.
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Combinaisons de dimensions**, puis choisissez le lien associé.  
-2.  Dans la fenêtre **Croisements d'axes**, sélectionnez le champ du croisement analytique et sélectionnez l'une des options suivantes.  
+2.  Sur la page **Combinaisons de dimensions**, sélectionnez le champ de la combinaison de dimensions et sélectionnez l'une des options suivantes.  
 
     |Champ|Description|
     |----------------------------------|---------------------------------------|  
     |**Aucune limite**|Cette combinaison de dimensions n'a pas de restrictions. Toutes les sections analytiques sont autorisées.|  
-    |**Limité**|Cette combinaison de dimensions a des restrictions selon les valeurs de dimension que vous entrez. Vous devez définir ces limites dans la fenêtre **Croisement section**.|  
+    |**Limité**|Cette combinaison de dimensions a des restrictions selon les valeurs de dimension que vous entrez. Vous devez définir ces limites sur la page **Combinaison valeur de dimension**.|  
     |**Bloqué**|Cette combinaison de dimensions n'est pas autorisée.|  
 
 3.  Si vous avez sélectionné l'option **Limité**, vous devez définir les croisements de sections analytiques bloqués. Pour cela, sélectionnez le champ pour définir la combinaison de dimensions.  
@@ -103,9 +103,9 @@ Pour éviter de reporter des écritures avec des dimensions contradictoires ou i
 >  Pour visualiser le nom des axes à la place du code, sélectionnez le champ **Afficher nom colonne**.
 
 ### <a name="getting-an-overview-of-dimensions-used-multiple-times"></a>Affichage d'un aperçu des dimensions utilisées plusieurs fois
-La fenêtre **Dimensions par défaut - Multiples** spécifie la manière dont un groupe de comptes utilise les dimensions et les valeurs de dimension. Vous pouvez effectuer cette opération en sélectionnant plusieurs comptes, et en spécifiant des dimensions et valeurs de dimension par défaut pour tous les comptes sélectionnés dans la liste des comptes. Lorsque vous spécifiez des dimensions par défaut pour les comptes sélectionnés, le programme propose ces dimensions et valeurs de dimension à chaque fois que l'un de ces comptes est utilisé, par exemple sur une ligne journal. Le report des écritures est ainsi facilité, car les champs de dimension sont renseignés automatiquement. Cependant, les valeurs de dimension proposées peuvent être modifiées, par exemple sur une ligne journal.
+La page **Dimensions par défaut - Multiples** spécifie la manière dont un groupe de comptes utilise les dimensions et valeurs de dimension. Vous pouvez effectuer cette opération en sélectionnant plusieurs comptes, et en spécifiant des dimensions et valeurs de dimension par défaut pour tous les comptes sélectionnés dans la liste des comptes. Lorsque vous spécifiez des dimensions par défaut pour les comptes sélectionnés, le programme propose ces dimensions et valeurs de dimension à chaque fois que l'un de ces comptes est utilisé, par exemple sur une ligne journal. Le report des écritures est ainsi facilité, car les champs de dimension sont renseignés automatiquement. Cependant, les valeurs de dimension proposées peuvent être modifiées, par exemple sur une ligne journal.
 
-La fenêtre **Dimensions par défaut - Multiples** contient les champs suivants :
+La page **Dimensions par défaut - Multiples** contient les champs suivants :
 |Champ|Description|
 |----------------------------------|---------------------------------------|  
 |**Code axe analytique**|Affiche toutes les dimensions définies comme dimensions par défaut sur un ou plusieurs comptes sélectionnés. Si vous cliquez sur le champ, vous pouvez visualiser la liste de toutes les dimensions disponibles. Si vous sélectionnez une dimension, la dimension sélectionnée est définie comme dimension par défaut pour tous les comptes sélectionnés.|
@@ -113,7 +113,7 @@ La fenêtre **Dimensions par défaut - Multiples** contient les champs suivants�
 |**Contrôle validation**|Affiche une règle de report valeur ou le terme (Conflit). Si le champ indique une règle de report valeur, tous les comptes sélectionnés ont la même règle de report valeur pour une valeur de dimension donnée. Si le champ indique le terme (Conflit), les comptes sélectionnés n'ont pas tous la même règle de report valeur pour une valeur de dimension donnée. Si vous cliquez sur le champ Report valeur, vous pouvez visualiser la liste des règles de report valeur. Si vous sélectionnez une règle de report valeur, elle s'applique à tous les comptes sélectionnés.|
 
 ### <a name="example-of-dimension-setup"></a>Exemple de configuration de dimension
-Imaginons que votre compagnie souhaite suivre les transactions selon la structure organisationnelle et les situations géographiques. Pour ce faire, vous pouvez configurer deux axes dans la fenêtre **Axe analytique** :
+Imaginons que votre compagnie souhaite suivre les transactions selon la structure organisationnelle et les situations géographiques. Pour ce faire, vous pouvez configurer deux dimensions sur la page **Dimensions** :
 
 * **REGION**  
 * **DEPARTEMENT**  
@@ -128,7 +128,7 @@ Pour **ZONE**, vous pouvez ajouter les sections analytiques suivantes :
 | Code | Nom | Type de valeur de dimension |
 | --- | --- | --- |
 | 10 |Amériques |Début total |
-| 20 |Amérique du Nord |Standard |
+| 2.0 |Amérique du Nord |Standard |
 | 30 |Pacifique |Standard |
 | 40 |Amérique du Sud |Standard |
 | 50 |Amériques, Total |Fin total |
@@ -149,27 +149,27 @@ Pour **DÉPARTEMENT**, vous pouvez ajouter les sections analytiques suivantes :
 | FABR |Fabrication |Standard |
 | VENTES |Vente |Standard |
 
-Avec ce paramétrage, vous devez ensuite ajouter les deux axes en tant qu'axes analytiques principaux dans la fenêtre **Paramètres comptabilité**. Cela signifie que vous pouvez utiliser ZONE et DÉPARTEMENT comme filtres pour les écritures du grand livre, ainsi que dans tous les rapports et les tableaux d'analyse. Les deux axes principaux sont mis à disposition automatiquement pour être utilisés dans les lignes écriture et les en-têtes document comme raccourcis axe.  
+Avec ce paramètre, vous devez ensuite ajouter les deux dimensions en tant que dimensions principales sur la page **Configuration du grand livre**. Cela signifie que vous pouvez utiliser ZONE et DÉPARTEMENT comme filtres pour les écritures du grand livre, ainsi que dans tous les rapports et les tableaux d'analyse. Les deux axes principaux sont mis à disposition automatiquement pour être utilisés dans les lignes écriture et les en-têtes document comme raccourcis axe.  
 
 ## <a name="using-dimensions"></a>Utilisation des axes analytiques
-Dans un document tel qu'un document de vente, vous pouvez ajouter des informations de dimension pour une seule ligne document et pour le document lui-même. Par exemple, dans la fenêtre **Commande vente**, vous pouvez saisir des sections analytiques pour les deux premiers raccourcis axe directement sur les lignes vente individuelles et ajouter des informations analytiques complémentaires si vous cliquez sur le bouton **Axes analytiques**.  
+Dans un document tel qu'un document de vente, vous pouvez ajouter des informations de dimension pour une seule ligne document et pour le document lui-même. Par exemple, sur la page **Document de vente**, vous pouvez saisir des valeurs de dimension pour les deux premiers raccourcis dimensions directement sur les lignes vente individuelles et ajouter des informations de dimension complémentaires si vous cliquez sur le bouton **Dimensions**.  
 
 Si vous travaillez plutôt sur un journal, vous pouvez également ajouter à une écriture des informations de dimension de la même manière, si vous avez configuré des raccourcis de dimension en tant que champs directement dans les lignes journal.  
 
 Vous pouvez configurer des axes analytiques par défaut pour des comptes ou des types de compte, de sorte que les axes et les sections analytiques soient renseignés automatiquement.
 
-## <a name="to-view-global-dimensions-in-ledger-entry-windows"></a>Pour afficher les dimensions principales dans des fenêtres écriture  
-Les dimensions principales sont toujours définies et nommées par la compagnie\-. Pour visualiser les dimensions principales de votre compagnie, ouvrez la fenêtre **Configuration grand livre**.  
+## <a name="to-view-global-dimensions-in-ledger-entry-pages"></a>Pour afficher les dimensions principales dans les pages écriture  
+Les dimensions principales sont toujours définies et nommées par la compagnie\-. Pour visualiser les dimensions globales de votre compagnie, ouvrez la page **Configuration du grand livre**.  
 
-Dans une fenêtre écriture, vous pouvez voir si des dimensions principales sont associées à des écritures. Les deux axes principaux sont différents des autres axes car vous pouvez les utiliser en tant que filtres n'importe où dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+Dans une page écriture, vous pouvez voir si des dimensions principales sont associées aux écritures. Les deux axes principaux sont différents des autres axes car vous pouvez les utiliser en tant que filtres n'importe où dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable**, puis sélectionnez le lien associé.  
-2.  Dans la fenêtre **Plan comptable**, choisissez l'action **Écritures**.  
-3.  Pour ne visualiser que certaines écritures, positionnez au moins un filtre sur la fenêtre.  
+2.  Sur la page **Plan comptable**, choisissez l'action **Écritures**.  
+3.  Pour ne visualiser que certaines écritures, positionnez au moins un filtre sur la page.  
 4.  Pour visualiser toutes les dimensions d'une écriture, sélectionnez l'écriture, puis cliquez sur l'action **Dimensions**.  
 
 > [!NOTE]  
->  La fenêtre **Analytique - Écritures comptables** affiche les axes d'une écriture comptable à la fois. Lorsque vous faites défiler les écritures comptables, le contenu de la fenêtre **Analytique - Écritures comptables** est modifié en conséquence.  
+>  La page **Dimensions - Écritures** affiche les dimensions d'une écriture à la fois. Lorsque vous faites défiler les écritures, le contenu de la page **Dimensions - Écritures** est modifié en conséquence.  
 
 ## <a name="see-also"></a>Voir aussi
 [Veille économique](bi.md)  

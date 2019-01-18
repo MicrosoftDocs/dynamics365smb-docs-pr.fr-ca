@@ -11,10 +11,10 @@ ms.search.keywords: project management, KPI, work in process, work in progress
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 065f6cc5dc11af1a9cddf2b3eed2b20e99912960
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 79e5a1e34fbd6c119be52deec60bba494fdd2671
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="monitor-job-progress-and-performance"></a>Surveiller la progression et les performances
@@ -40,7 +40,7 @@ Vous pouvez créer une méthode TEC projet qui reflète les besoins de votre org
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Méthodes TEC projet**, puis choisissez le lien associé.  
 2. Cliquez sur **Nouveau**, puis renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
-3. Fermez la fenêtre.   
+3. Fermez la page.   
 4. Pour que cette nouvelle méthode devienne celle par défaut, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration projets**, puis sélectionnez le lien associé.  
 5. Dans le champ **Méthode TEC par défaut**, choisissez la méthode de la liste.
 
@@ -49,14 +49,14 @@ Lorsque vous créez un projet, vous devez spécifier la méthode TEC projet qui 
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projets**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**. Pour plus d'informations, voir [Créer des projets](projects-how-create-jobs.md).  
-3. Dans la fenêtre **Fiche projet**, dans le champ **Méthode TEC**, sélectionnez une méthode TEC dans la liste. Si une méthode par défaut a été définie, vous pouvez sélectionner une autre option si nécessaire.  
+3. Sur la page **Fiche projet**, dans le champ **Méthode TEC**, sélectionnez une méthode TEC dans la liste. Si une méthode par défaut a été définie, vous pouvez sélectionner une autre option si nécessaire.  
 
 ## <a name="to-calculate-wip"></a>Pour calculer les TEC :
 Vous pouvez déterminer le montant TEC devant être reporté dans les comptes de bilan pour la génération de rapports de fin d'exercice. Pour ce faire, utilisez le traitement par lots **Projet Calculer TEC**.  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projet Calculer TEC**, puis choisissez le lien associé.  
 2. Cliquez sur **Calculer TEC**.
-3. Dans la fenêtre **Projet Calculer TEC**, renseignez les champs comme nécessaire.
+3. Sur la page **Projet Calculer TEC**, renseignez les champs comme nécessaire.
 4. Cliquez sur le bouton **OK**.  
 
 > [!NOTE]  
@@ -66,7 +66,7 @@ Vous pouvez déterminer le montant TEC devant être reporté dans les comptes de
 Quand vous avez calculé les TEC, vous pouvez les reporter pour équilibrer les comptes bilan pour le rapport de fin de période. Pour ce faire, utilisez le traitement par lots **Projet Valider TEC en comptabilité**.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projet - Reporter TEC au GL**, puis sélectionnez le lien associé.  
-2. Dans la fenêtre **Projet Valider TEC en comptabilité**, renseignez les champs selon vos besoins.  
+2. Sur la page **Projet - Reporter TEC au GL**, renseignez les champs selon vos besoins.  
 3. Cliquez sur le bouton **OK**.
 
 ## <a name="to-view-job-usage-estimates-and-post-updates"></a>Pour visualiser les estimations projet et reporter les mises à jour
@@ -79,7 +79,7 @@ Cela vous permet de suivre vos estimations initiales, de les comparer aux résul
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux projet**, puis sélectionnez le lien associé.  
 2. Sélectionnez une feuille projet appropriée, puis cliquez sur l'action **Calc. activité restante**.  
-3. Dans la fenêtre **Projet Calc. activité restante**, entrez le numéro et la date de comptabilisation du document devant être insérés dans la feuille, puis sélectionnez le bouton **OK**.  
+3. Sur la page **Projet Calc. utilisation restante**, entrez le numéro et la date de report du document devant être insérés dans le journal, puis sélectionnez le bouton **OK**.  
 4. Mettez à jour le journal avec toutes les modifications qui peuvent être nécessaires.  
 5. Sélectionnez l'action **Valider**.
 
@@ -89,7 +89,7 @@ Toutes les écritures liées à des projets sont enregistrées dans des historiq
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Registres de projet**, puis sélectionnez le lien associé.
 2. Sélectionnez un historique approprié, puis cliquez sur **Écritures projet**
 
-Dans la fenêtre **Écritures comptables projet** vous pouvez passer en revue les écritures associées à un projet.  
+Sur la page **Écritures projet**, vous pouvez passer en revue les écritures associées à un projet.  
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion des projets](projects-manage-projects.md)

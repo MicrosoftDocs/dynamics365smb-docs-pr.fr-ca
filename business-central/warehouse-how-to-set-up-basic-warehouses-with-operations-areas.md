@@ -13,23 +13,23 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: e10a823d856dd02311b990da5d22fe7f87730d51
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 04b1e87cb41df19559d85cf02eabbf6aaec0011a
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="set-up-basic-warehouses-with-operations-areas"></a>Configurer des entrepôts de base avec les zones d'opérations
 Si les zones Opérations internes telles que la production ou l'assemblage existent dans les configurations entrepôt de base dans lesquelles les emplacements utilisent le champ de configuration **Zone obligatoire** et éventuellement les champs **Prélèvement requis** et **Rangement requis**, vous pouvez utiliser les documents d'entrepôt de base suivants pour enregistrer vos activités entrepôt pour des zones Opérations internes :  
 
-- Fenêtre **Mouvement de stock**.  
-- Fenêtre**Prélèvement stock**.  
-- Fenêtre **Rangement inventaire.**
+- Page **Mouvement d'inventaire**.  
+- Page **Prélèvement inventaire**.  
+- Page **Rangement inventaire**.
 
 > [!NOTE]
 > Bien que les paramètres soient appelés **Prélèvement requis** et **Rangement requis**, vous pouvez quand même reporter les réceptions et les livraisons directement à partir des documents commerciaux sources dans les emplacements où vous cochez ces cases.  
 
-Pour utiliser ces fenêtres avec des opérations internes, par exemple pour prélever et déplacer des composants vers la production, vous devez effectuer tout ou partie des étapes de configuration suivantes, en fonction du contrôle que vous souhaitez exercer :  
+Pour utiliser ces pages avec des opérations internes, par exemple pour prélever et déplacer des composantes vers la production, vous devez effectuer tout ou partie des étapes de configuration suivantes, en fonction du contrôle que vous souhaitez exercer :  
 
 - Activez les documents de prélèvement, mouvement et rangement inventaire.  
 - Définir les structures de zone par défaut pour les composantes et les produits finis s'écoulant depuis ou vers les ressources opérationnelles.  
@@ -59,14 +59,14 @@ Les procédures suivantes sont basées sur la configuration d'activités entrep�
 
 5. Sur le raccourci **Zones**, dans le champ **Code de zone post-production**, entrez le code de la zone dans la zone de production où les produits finis sont extraits par défaut si le processus implique une activité entrepôt. Dans les configurations entrepôt de base, l'activité est enregistrée en tant que rangement inventaire ou mouvement d'inventaire.  
 
-Désormais, les lignes composante bon de production présentant ce code de zone par défaut nécessitent que les composantes consommées en aval soient stockées à cet emplacement. Toutefois, jusqu'à la consommation des composantes de cette zone, d'autres demandes de composantes peuvent y effectuer un prélèvement ou une consommation, car elles sont encore considérées comme du contenu zone disponible. Pour vous assurer que le contenu de la zone soit uniquement disponible pour une demande de composante qui utilise cette zone avant production, vous devez sélectionner le champ **Dédié** sur la ligne de ce code de zone dans la fenêtre **Zones** à laquelle vous accédez à partir de la fiche emplacement.
+Désormais, les lignes composante bon de production présentant ce code de zone par défaut nécessitent que les composantes consommées en aval soient stockées à cet emplacement. Toutefois, jusqu'à la consommation des composantes de cette zone, d'autres demandes de composantes peuvent y effectuer un prélèvement ou une consommation, car elles sont encore considérées comme du contenu zone disponible. Pour vous assurer que le contenu de la zone est uniquement disponible à une demande de composante qui utilise cette zone avant production, vous devez sélectionner le champ **Dédié** sur la ligne de ce code de zone sur la page **Zones** à laquelle vous accédez à partir de la fiche emplacement.
 
 Ce graphique indique comment le champ **Code emplacement** sur les lignes composant O.F. est renseigné en fonction de votre configuration.  
 
 ![Organigramme Flux d'emplacement](media/binflow.png "BinFlow")    
 
 ## <a name="to-define-a-default-bin-structure-in-the-assembly-area"></a>Pour définir une structure de zone par défaut dans la zone d'assemblage
-Les composantes pour les commandes d'assemblage ne peuvent pas être prélevées ni reportées avec des prélèvements inventaire. À la place, utilisez la fenêtre **Mouvement d'inventaire**. Pour plus d'informations, voir [Déplacer les composantes vers une zone opérations dans le stockage de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md).
+Les composantes pour les commandes d'assemblage ne peuvent pas être prélevées ni reportées avec des prélèvements inventaire. À la place, utilisez la page **Mouvement d'inventaire**. Pour plus d'informations, voir [Déplacer les composantes vers une zone opérations dans le stockage de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md).
 
 En cas de prélèvement et de livraison de quantités de lignes vente assemblées pour commande, vous devez suivre certaines règles en créant les lignes prélèvement inventaire. Pour plus d'informations, reportez-vous à la section « Traitement des articles à assembler pour commande dans les prélèvements stock » dans [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).
 
@@ -119,14 +119,14 @@ Le même code de zone est également copié vers le champ **Code de zone** de la
 ## <a name="to-create-dedicated-component-bins"></a>Pour créer des zones composante réservées
 Vous pouvez spécifier que les quantités d'une zone soient protégées des prélèvements d'autres demandes que la demande de leurs objectifs actuels.
 
-Les quantités des zones réservées peuvent encore être réservées. Par conséquent, les quantités figurant dans des zones réservées sont incluses dans le champ **Quantité totale disponible** de la fenêtre **Réservation**.
+Les quantités des zones réservées peuvent encore être réservées. Par conséquent, les quantités figurant dans des zones réservées sont incluses dans le champ **Quantité totale disponible** de la page **Réservation**.
 
-Par exemple, si un atelier est configuré avec un code de zone dans le champ **Code de zone avant production**. Les lignes composante bon de production présentant ce code de zone nécessitent que les composantes consommées en aval soient stockées à cet emplacement. Toutefois, jusqu'à la consommation des composantes de cette zone, d'autres demandes de composantes peuvent y effectuer un prélèvement ou une consommation, car elles sont encore considérées comme du contenu zone disponible. Pour vous assurer que le contenu de la zone soit uniquement disponible pour une demande de composante qui utilise cette zone avant production, vous devez sélectionner le champ **Dédié** sur la ligne de ce code de zone dans la fenêtre **Zones** à laquelle vous accédez à partir de la fiche emplacement.
+Par exemple, si un atelier est configuré avec un code de zone dans le champ **Code de zone avant production**. Les lignes composante bon de production présentant ce code de zone nécessitent que les composantes consommées en aval soient stockées à cet emplacement. Toutefois, jusqu'à la consommation des composantes de cette zone, d'autres demandes de composantes peuvent y effectuer un prélèvement ou une consommation, car elles sont encore considérées comme du contenu zone disponible. Pour vous assurer que le contenu de la zone est uniquement disponible à une demande de composante qui utilise cette zone avant production, vous devez sélectionner le champ **Dédié** sur la ligne de ce code de zone sur la page **Zones** à laquelle vous accédez à partir de la fiche emplacement.
 
 La réservation d'une zone fournit une fonctionnalité similaire à l'utilisation des types de zone uniquement disponibles dans l'entreposage avancé. Pour plus d'informations, voir [Configurer des types de zone](warehouse-how-to-set-up-bin-types.md).
 
 > [!Caution]
-> Les articles situés dans des zones réservées ne sont pas protégés lorsqu'ils sont prélevés et consommés comme composantes de production à l'aide de la fenêtre Prélèvement inventaire.
+> Des articles dans des zones réservées ne sont pas protégés lorsqu'ils sont prélevés et consommés comme composantes de production à l'aide de la page Prélèvement inventaire.
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, puis sélectionnez le lien associé. Sélectionnez l'emplacement à mettre à jour.  
 2.  Choisissez l'action **Zones**.  

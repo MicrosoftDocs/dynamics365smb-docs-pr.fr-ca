@@ -11,27 +11,27 @@ ms.search.keywords: write down
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 2244fa1eb4af58eea7381da937bed7fafe3d9f6c
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: d417db84cf45356925cf52a36ba08e478b8ee6b9
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="set-up-fixed-asset-depreciation"></a>Configurer un amortissement immobilisation
  Vous pouvez utiliser plusieurs méthodes d'amortissement pour préparer les états financiers et les déclarations de revenus. De nombreuses compagnies de grande taille utilisent la méthode de l'amortissement linéaire dans leurs rapports financiers car elle permet généralement la déclaration des bénéfices supérieurs. Toutefois, dans le cadre de l'impôt sur le revenu, la plupart des entreprises utilise une méthode d'amortissement accélérée. Pour en savoir plus, voir [Méthodes d'amortissement](fa-depreciation-methods.md).
 
- Lorsque vous avez créé les lois d'amortissement nécessaires, vous devez en attribuer au moins une à chaque immobilisation. Un registre amortissement attribué à une immobilisation est désigné comme registre amortissement immobilisation. Par conséquent, la fenêtre pour les lois d'amortissement attribuées est intitulée **Lois d'amortissement immo.**.
+ Lorsque vous avez créé les lois d'amortissement nécessaires, vous devez en attribuer au moins une à chaque immobilisation. Un registre amortissement attribué à une immobilisation est désigné comme registre amortissement immobilisation. Par conséquent, la page pour les registres amortissement attribués est intitulée **Registres amortissement immo.**.
 
 ## <a name="to-create-a-depreciation-book"></a>Pour créer un registre amortissement
 Dans un registre amortissement immobilisation, vous spécifiez comment les immobilisations sont amorties. Pour prendre en charge plusieurs méthodes d'amortissement, vous pouvez paramétrer plusieurs lois d'amortissement.  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Registres amortissement**, puis sélectionnez le lien associé.
-2. Dans la fenêtre **Liste des lois d'amortissement**, sélectionnez l'action **Nouveau**.
-3. Dans la fenêtre **Fiche loi d'amortissement**, renseignez les champs comme nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+2. Sur la page **Liste des registres amortissement**, sélectionnez l'action **Nouveau**.
+3. Sur la page **Fiche loi d'amortissement**, renseignez les champs comme nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
     > [!NOTE]  
-    >   Vous pouvez enregistrer les transactions immobilisation dans la fenêtre **Feuille compta. immo.** ou dans la fenêtre **Feuille immo.**, selon que les transactions sont destinées pour des rapports financiers ou pour la gestion interne. Procédez comme suit pour définir quel type de journal est utilisé pour les différentes activités immobilisation par défaut.
-4. Sur le raccourci **Intégration**, cochez la case pour chaque activité immobilisation dont vous souhaitez valider les transactions via la fenêtre **Feuille compta. immo.**.
+    >   Vous pouvez enregistrer les transactions immobilisation sur la page **Journal GL immobilisation** ou sur la page **Journal immobilisations**, selon que les transactions sont destinées à des rapports financiers ou à la gestion interne. Procédez comme suit pour définir quel type de journal est utilisé pour les différentes activités immobilisation par défaut.
+4. Sur le raccourci **Intégration**, cochez la case pour chaque activité immobilisation dont vous souhaitez reporter les transactions via la page **Journal GL immo.**.
 5. Répétez les étapes 2 à 4 pour chaque méthode d'amortissement ou méthode de report que vous souhaitez attribuer à des immobilisations en tant que registre amortissement.
 
 ## <a name="to-assign-a-depreciation-book-to-a-fixed-asset"></a>Pour attribuer un registre amortissement à une immobilisation
@@ -49,8 +49,8 @@ Si vous voulez associer une loi d'amortissement à plusieurs immobilisations, vo
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Immobilisations**, puis choisissez le lien associé.
 2. Sélectionnez l'immobilisation à laquelle vous souhaitez attribuer une loi d'amortissement, puis sélectionnez l'action **Modifier**.
-3. Dans la fenêtre **Fiche livre d'amortissement**, sélectionnez l'action **Créer plans amortissement**.
-4. Dans la fenêtre **Créer plans amortissement immo.**, renseignez le champ **Loi d'amortissement**.
+3. Sur la page **Fiche registre amortissement**, sélectionnez l'action **Créer registres amortissement immo.**.
+4. Sur la page **Créer registres amortissement immo.**, renseignez le champ **Registre amortissement**.
 5. Choisissez le champ **Copier du n° immo.**, puis sélectionnez le numéro de l'immobilisation à utiliser comme base pour créer de nouveaux registres amortissement.
 
     Si vous renseignez ce champ, les champs amortissement des nouveaux registres amortissement immobilisation contiennent les mêmes informations que ceux du registre amortissement immobilisation que vous copiez. N'entrez rien dans ce champ si vous souhaitez créer de nouvelles lois d'amortissement d'immobilisation avec des champs d'amortissement vides.  
@@ -62,10 +62,10 @@ Pour chaque loi d'amortissement, vous devez définir la manière dont vous souha
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Registres amortissement**, puis sélectionnez le lien associé.  
 2. Sélectionnez la loi d'amortissement que vous souhaitez configurer, puis sélectionnez l'action **Type paramètre compta. immo.**.
-3. Dans la fenêtre **Type paramètre compta. immo.**, renseignez les champs, le cas échéant.
+3. Sur la page **Config. type report immo.**, renseignez les champs, le cas échéant.
 
     > [!NOTE]  
-    >   Vous ne pouvez pas insérer ni supprimer de lignes dans la fenêtre **Type paramètre compta. immo**. Vous ne pouvez modifier que les lignes existantes.
+    >   Vous ne pouvez pas insérer ni supprimer de lignes sur la page **Config. type report immo.**. Vous ne pouvez modifier que les lignes existantes.
 
 Il est recommandé de ne pas modifier la configuration des registres amortissement pour lesquels des écritures ont déjà été reportées. Les modifications apportées n'ont pas d'incidence sur les écritures déjà reportées, ce qui rendrait les statistiques des registres amortissement inexactes.
 
@@ -74,7 +74,7 @@ Pour chaque registre amortissement, vous définissez une configuration par défa
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Registres amortissement**, puis sélectionnez le lien associé.  
 2. Sélectionnez la loi d'amortissement pour laquelle vous souhaitez définir les feuilles par défaut, puis sélectionnez l'action **Configuration feuille immo.**.  
-3. Pour avoir une configuration par défaut pour chaque utilisateur, choisissez le champ **Code utilisateur** à sélectionner à partir de la fenêtre **Utilisateurs**.  
+3. Pour avoir une configuration par défaut pour chaque utilisateur, choisissez le champ **Code utilisateur** à sélectionner à partir de la page **Utilisateurs**.  
 4. Dans les autres champs, sélectionnez le modèle journal ou le lot journal qui doit être utilisé par défaut.  
 
 ## <a name="see-also"></a>Voir aussi

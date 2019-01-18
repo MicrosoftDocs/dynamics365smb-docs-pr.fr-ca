@@ -11,10 +11,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 574bca49a01d23cdbf3ea9cda3b2c67f39ee9d05
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 0c813187ee6d11fcdb729cb64048386238406528
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="design-details-warehouse-setup"></a>Détails de conception : paramètres entrepôt
@@ -93,7 +93,7 @@ Dans l'entreposage avancé, des zones peuvent être configurées à l'aide des v
 
 Sur chaque fiche article, vous pouvez affecter une unité de mesure pour l'article, par exemple des pièces, palettes, litres, grammes ou boîtes. Vous pouvez également avoir une base UOM pour un article et spécifier de plus grands UOM basés dessus. Par exemple, vous pouvez définir une palette égale à 16 pièces, ce qui est l'unité de base.  
 
-Si vous souhaitez définir une quantité maximum pour un article spécifique à enregistrer dans une zone en particulier et que l'article a plusieurs unités de mesure, vous devez définir la quantité maximum de chaque unité de mesure qui existe dans la fiche article. Par conséquent, si un article a été configuré pour être traité en tant que pièces et palettes, le champ **Qté max.** de la fenêtre **Contenu de la zone** pour cet article doit également être considéré en tant que pièces et palettes. Sinon, la quantité autorisée pour cette zone n'est pas calculée correctement.  
+Si vous souhaitez définir une quantité maximum pour un article spécifique à enregistrer dans une zone en particulier et que l'article a plusieurs unités de mesure, vous devez définir la quantité maximum de chaque unité de mesure qui existe dans la fiche article. Par conséquent, si un article a été configuré pour être traité en tant que pièces et palettes, le champ **Qté max.** de la page **Contenu de la zone** pour cet article doit également être considéré en tant que pièces et palettes. Sinon, la quantité autorisée pour cette zone n'est pas calculée correctement.  
 
 Avant de paramétrer des restrictions de capacité pour le contenu de la zone dans une zone, vous devez d'abord vous assurer que les unités de mesure et les dimensions de l'article ont été définies dans la fiche article.  
 

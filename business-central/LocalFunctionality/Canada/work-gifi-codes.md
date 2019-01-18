@@ -13,10 +13,10 @@ ms.search.keywords: local
 ms.date: 10/01/2018
 ms.author: SorenGP
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: b3c9e34ec6270780bc207091421419892fa265da
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 2ada7e3cb796b8907b6a7e79a2dbadb4741ddc86
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="work-with-gifi-codes"></a>Utiliser des codes IGRF
@@ -32,7 +32,7 @@ Vous pouvez exporter les informations de solde par code IGRF et enregistrer le f
 Dans [!INCLUDE[d365fin](../../includes/d365fin_md.md)], vous devez configurer des codes IGRF pour les comptes GL, les rapports, les bilans, les états de résultats et les relevés de bénéfices non répartis.
 
 1. Choisissez l'icône ![Page ou état pour la recherche](../../media/ui-search/search_small.png "icône Page ou état pour la recherche"), entrez **Codes IGRF**, puis choisissez le lien associé.
-2. Dans la fenêtre **Codes IGRF**, sélectionnez l'action **Nouveau**.
+2. Sur la page **Codes IGRF**, sélectionnez l'action **Nouveau**.
 3. Configurer les codes IGRF en renseignant les champs. [!INCLUDE[tooltip-inline-tip](../../includes/tooltip-inline-tip_md.md)]
 
 ## <a name="to-associate-gifi-codes-with-gl-accounts"></a>Pour associer des codes IGRF avec des comptes généraux

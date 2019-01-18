@@ -13,10 +13,10 @@ ms.search.keywords: posting setup, initialize
 ms.date: 10/01/2018
 ms.author: bholtorf
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 4237bba8b7b3464242cacfcdbba954c321e5e04a
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 732b69df44681d3cc63391bc87c0645ed7e5e1a5
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="setting-up-posting-groups"></a>Configuration de groupes comptabilisation
@@ -32,21 +32,21 @@ Les tables suivantes décrivent les groupes comptabilisation dans chaque catégo
 
 | Groupes comptabilisation généraux | Description |
 | --- | --- |
-| Groupes comptabilisation marché |Affectez ce groupe aux clients et aux fournisseurs pour spécifier à qui vous vendez, et à qui vous achetez. Définissez cela dans la fenêtre **Groupes compta. marché**. Lorsque vous effectuez cette opération, vous devez prendre en compte le nombre de groupes nécessaires pour répartir les ventes et les achats. Par exemple, les groupes clients et fournisseurs peuvent être répartis par zone géographique ou par type d'activité. |
-| Groupes comptabilisation produit |Affectez ce groupe à des articles et des ressources pour spécifier les éléments que vous vendez, et que vous achetez. Définissez cela dans la fenêtre **Groupes compta. produit**. Lorsque vous effectuez cette opération, vous devez considérer le nombre de groupes nécessaires pour répartir les ventes par article et ressource, et pour répartir les achats par article. Par exemple, divisez ces groupes par Matières premières, Vte détail, Ressources, Capacités, etc. |
-| Config. paramètres report |Combinez les groupes de report marché et produit, puis choisissez les comptes à reporter. Pour chaque combinaison de groupes comptabilisation marché et produit, vous pouvez affecter un ensemble de comptes généraux. Par exemple, vous pouvez reporter la vente d'un même article dans différents comptes vente du grand livre car différents groupes de report marché sont affectés aux clients. Définissez cela dans la fenêtre **Paramètres comptabilisation**. |
+| Groupes comptabilisation marché |Affectez ce groupe aux clients et aux fournisseurs pour spécifier à qui vous vendez, et à qui vous achetez. Définissez cela sur la page **Groupes de report général marché**. Lorsque vous effectuez cette opération, vous devez prendre en compte le nombre de groupes nécessaires pour répartir les ventes et les achats. Par exemple, les groupes clients et fournisseurs peuvent être répartis par zone géographique ou par type d'activité. |
+| Groupes comptabilisation produit |Affectez ce groupe à des articles et des ressources pour spécifier les éléments que vous vendez, et que vous achetez. Définissez cela sur la page **Groupes de report général produit**. Lorsque vous effectuez cette opération, vous devez considérer le nombre de groupes nécessaires pour répartir les ventes par article et ressource, et pour répartir les achats par article. Par exemple, divisez ces groupes par Matières premières, Vte détail, Ressources, Capacités, etc. |
+| Config. paramètres report |Combinez les groupes de report marché et produit, puis choisissez les comptes à reporter. Pour chaque combinaison de groupes comptabilisation marché et produit, vous pouvez affecter un ensemble de comptes généraux. Par exemple, vous pouvez reporter la vente d'un même article dans différents comptes vente du grand livre car différents groupes de report marché sont affectés aux clients. Définissez cela sur la page **Configuration du report général**. |
 
 | Groupes comptabilisation spécifiques | Description |
 | --- | --- |
-| Groupes de report du client |Définissez les comptes à utiliser lorsque vous reportez des transactions Comptabilité client. Si vous utilisez un inventaire conjointement avec des clients, le groupe de report marché affecté au client et le groupe de report produit affecté à l'article dans l'inventaire déterminent les comptes sur lesquels les écritures lignes document de vente effectuent le report. Définissez cela dans la fenêtre **Groupes compta. client**. |
-| Groupes de report du fournisseur |Définissez où reporter les transactions des comptes fournisseur, des comptes frais forfaitaires, et des comptes d'escompte de paiement. Cela est similaire aux groupes comptabilisation client. Définissez cela dans la fenêtre **Groupes compta. fournisseur**. |
-| Groupes de report d'inventaire |Définissez les comptes inventaire de bilan. Ils offrent également un bon moyen d'organiser votre inventaire, vous pouvez ainsi séparer des articles par groupe de report lors de la génération de rapports. Définissez cela dans la fenêtre **Groupes compta. stock**. |
-| Groupes de report compte bancaire |Définissez des comptes bancaires. Par exemple, cela peut simplifier les processus de traçabilité des transactions et des rapprochements bancaires. Définissez cela dans la fenêtre **Groupes compta. banque**. |
-| Groupes comptabilisation immobilisations |Définissez des comptes pour les différents types de dépenses et frais, tels que les coûts d'acquisition, les montants d'amortissement cumulés, les coûts d'acquisition sur cession, l'amortissement cumulé sur cession, les gains sur cession, les pertes sur cession, les frais d'entretien et les frais d'amortissement. Définissez cela dans la fenêtre **Groupes compta. immo.**. |
+| Groupes de report du client |Définissez les comptes à utiliser lorsque vous reportez des transactions Comptabilité client. Si vous utilisez un inventaire conjointement avec des clients, le groupe de report marché affecté au client et le groupe de report produit affecté à l'article dans l'inventaire déterminent les comptes sur lesquels les écritures lignes document de vente effectuent le report. Définissez cela sur la page **Groupes de report du client**. |
+| Groupes de report du fournisseur |Définissez où reporter les transactions des comptes fournisseur, des comptes frais forfaitaires, et des comptes d'escompte de paiement. Cela est similaire aux groupes comptabilisation client. Définissez cela sur la page **Groupes de report du fournisseur**. |
+| Groupes de report inventaire |Définissez les comptes inventaire de bilan. Ils offrent également un bon moyen d'organiser votre inventaire, vous pouvez ainsi séparer des articles par groupe de report lors de la génération de rapports. Définissez cela sur la page **Groupes report inventaire**. |
+| Groupes de report compte bancaire |Définissez des comptes bancaires. Par exemple, cela peut simplifier les processus de traçabilité des transactions et des rapprochements bancaires. Définissez cela sur la page **Groupes de report compte bancaire**. |
+| Groupes comptabilisation immobilisations |Définissez des comptes pour les différents types de dépenses et frais, tels que les coûts d'acquisition, les montants d'amortissement cumulés, les coûts d'acquisition sur cession, l'amortissement cumulé sur cession, les gains sur cession, les pertes sur cession, les frais d'entretien et les frais d'amortissement. Définissez cela sur la page **Groupes de reports d'immobilisation**. |
 
 | Groupe de report TVA | Description |
 | --- | --- |
-| Paramètres report marché fiscal |Déterminez la manière de calculer et de reporter la taxe de vente pour les clients et les fournisseurs. Définissez cela dans la fenêtre **Groupes compta. marché TVA**. Lorsque vous le faites, pensez au nombre de groupes dont vous avez besoin. De nombreux facteurs peuvent entrer en jeu, notamment la législation locale, et le fait de travailler sur le marché national et international. |
+| Paramètres report marché fiscal |Déterminez la manière de calculer et de reporter la taxe de vente pour les clients et les fournisseurs. Définissez cela sur la page **Groupes de report marché fiscal**. Lorsque vous le faites, pensez au nombre de groupes dont vous avez besoin. De nombreux facteurs peuvent entrer en jeu, notamment la législation locale, et le fait de travailler sur le marché national et international. |
 | Paramètres report produit fiscal |Indiquez les calculs TVA nécessaires pour les types d'articles ou de ressources que vous achetez ou vendez. |
 | Configuration de report de taxe |Combinez des groupes compta. marché et des groupes compta. produit TVA. Lorsque vous renseignez une ligne dans un journal général, une ligne achat, ou une ligne vente, nous allons consulter la combinaison pour identifier les comptes à utiliser. |
 
@@ -73,7 +73,7 @@ Lors de la création d'un document vente, l'en-tête vente utilise les informati
 Votre configuration détermine quand le report a lieu. Par exemple, la synchronisation est affectée au moment où vous exécutez des activités périodiques, par exemple : reporter des coûts inventaire ou ajuster des écritures coût article.
 
 ## <a name="copying-posting-setup-lines"></a>Copie de lignes configuration report
-Plus il y a de groupes de report produit et marché, plus la fenêtre Config. paramètres report contient de lignes. Cela peut entraîner la nécessité d'entrer un grand nombre de données pour configurer les paramètres de report pour la compagnie. S'il peut y avoir un grand nombre de combinaisons différentes de groupes de report marché et produit, différentes combinaisons peuvent encore reporter dans les mêmes comptes du grand livre. Pour limiter le nombre de saisies manuelles, copiez les comptes généraux à partir d'une ligne existante dans la fenêtre **Paramètres comptabilisation**.
+Plus il y a de groupes de report produit et marché, plus la page Configuration du report général contient de lignes. Cela peut entraîner la nécessité d'entrer un grand nombre de données pour configurer les paramètres de report pour la compagnie. S'il peut y avoir un grand nombre de combinaisons différentes de groupes de report marché et produit, différentes combinaisons peuvent encore reporter dans les mêmes comptes du grand livre. Pour limiter le nombre de saisies manuelles, copiez les comptes GL à partir d'une ligne existante sur la page **Configuration report général**.
 
 ## <a name="see-also"></a>Voir aussi .
 [Les écritures comptables et le plan comptable](finance-general-ledger.md)  

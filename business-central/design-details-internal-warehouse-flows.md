@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: a52997195a95ff43eb049025b7b8ab3038381039
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: b728815592975091a683eb96f87b1a632da62567
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="design-details-internal-warehouse-flows"></a>Détails de conception : flux d'entrepôt internes
@@ -28,12 +28,12 @@ Circulation des articles entre les zones dans les centres d'une compagnie lors d
  Dans une configuration entrepôt de base, la circulation des articles entre les zones dans les centres de la compagnie lors du prélèvement des composantes, du rangement des articles finis pour les bons de production ou les ordres d'assemblage et les mouvements ad-hoc, tels que les réapprovisionnements de zone, sans relation avec les documents sources.  
 
 ### <a name="flows-to-and-from-production"></a>Flux entrants et sortants de la production  
- La principale intégration entre les bons de production et les activités d'entrepôt de base est représentée par la capacité à prélever des composantes de production à l'aide de la fenêtre **Prélèvement inventaire** ou **Mouvement d'inventaire**.  
+ La principale intégration entre les bons de production et les activités d'entrepôt de base est représentée par la capacité de prélever des composantes de production à l'aide de la page **Prélèvement inventaire** ou **Mouvement d'inventaire**.  
 
 > [!NOTE]  
->  Dans la fenêtre **Prélèvement inventaire**, la consommation de composantes est reportée lors du report du prélèvement. À l'aide de la fenêtre **Mouvement d'inventaire**, seuls les ajustements de zone sont enregistrés, aucun report dans la grand livre article n'a lieu.  
+>  Sur la page **Prélèvement inventaire**, la consommation de composantes est reportée lors du report du prélèvement. À l'aide de la page **Mouvement d'inventaire**, seuls les ajustements de zone sont enregistrés, aucun report dans le grand livre article n'a lieu.  
 
- En plus de la gestion de composantes, l'intégration est représentée par la capacité de ranger les articles fabriqués à l'aide de la fenêtre **Rangement inventaire**.  
+ En plus de la gestion de composantes, l'intégration est représentée par la capacité de ranger les articles fabriqués à l'aide de la page **Rangement inventaire**.  
 
  Les champs **Code de zone avant production**, **Code de zone post-production**, et **Code de zone d'atelier ouvert** de la fiche emplacement ou des fiches unité de production/atelier définissent les flux par défaut depuis ou vers les zones de production.  
 
@@ -42,13 +42,13 @@ Circulation des articles entre les zones dans les centres d'une compagnie lors d
 ### <a name="flows-to-and-from-assembly"></a>Flux entrants et sortants de l'assemblage  
  La principale intégration entre les ordres d'assemblage et les activités d'entrepôt de base est représentée par la capacité à déplacer les composantes d'assemblage vers la zone d'assemblage.  
 
- Lorsqu'aucune fonctionnalité entrepôt spécifique n'existe pour le rangement des éléments d'assemblage, le code de zone sur l'ordre d'assemblage peut être défini sur une zone de rangement par défaut. Le report de l'ordre d'assemblage fonctionne alors comme le report d'un rangement. L'activité entrepôt pour déplacer des éléments d'assemblage dans l'entrepôt peut être gérée dans la fenêtre **Mouvement interne**, sans rapport avec l'ordre d'assemblage.  
+ Lorsqu'aucune fonctionnalité entrepôt spécifique n'existe pour le rangement des éléments d'assemblage, le code de zone sur l'ordre d'assemblage peut être défini sur une zone de rangement par défaut. Le report de l'ordre d'assemblage fonctionne alors comme le report d'un rangement. L'activité entrepôt pour déplacer des éléments d'assemblage dans l'entrepôt peut être gérée sur la page **Mouvement interne**, sans rapport avec l'ordre d'assemblage.  
 
  Les flux d'assemblage suivants existent.  
 
 |Flux de travail|Description|  
 |----------|---------------------------------------|  
-|Assembler pour stock|Les composantes sont nécessaires sur un ordre d'assemblage dans lequel la production est stockée dans l'entrepôt.<br /><br /> Ce flux d'entrepôt est géré dans la fenêtre **Mouvement d'inventaire**. Une ligne prélèvement spécifie où prélever les composantes. Une ligne emplacement spécifie où placer les composantes.|  
+|Assembler pour stock|Les composantes sont nécessaires sur un ordre d'assemblage dans lequel la production est stockée dans l'entrepôt.<br /><br /> Ce flux d'entrepôt est géré sur la page **Mouvement d'inventaire**. Une ligne prélèvement spécifie où prélever les composantes. Une ligne emplacement spécifie où placer les composantes.|  
 |Assembler pour commande|Les composantes sont nécessaires sur un ordre d'assemblage qui est lié à un document de vente livré lors de l'assemblage de l'article vendu.|  
 
 > [!NOTE]  
@@ -60,26 +60,26 @@ Circulation des articles entre les zones dans les centres d'une compagnie lors d
 >  Le champ **Code de zone livr. ass. pr comm.** fonctionne comme une zone après assemblage dans les scénarios assembler pour commande.  
 
 ### <a name="ad-hoc-movements"></a>Mouvements ad hoc  
- Dans l'entreposage de base, un mouvement d'articles d'une zone à l'autre sans relation avec les documents sources est effectuée dans la fenêtre **Mouvement interne** qui fonctionne conjointement avec la fenêtre **Mouvement d'inventaire**.  
+ Dans l'entreposage de base, le mouvement d'articles d'une zone à l'autre sans relation avec les documents origine est effectué sur la page **Mouvement interne** qui fonctionne conjointement avec la page **Mouvement d'inventaire**.  
 
- Il existe un autre moyen de déplacer des articles ad hoc entre les zones : il suffit de reporter les écritures positives dans le champ **Nouveau code de zone** de la fenêtre **Journal reclassement article**.  
+ Il existe un autre moyen de déplacer des articles ad hoc entre les zones : il suffit de reporter les écritures positives dans le champ **Nouveau code de zone** de la page **Journal reclassement article**.  
 
 ## <a name="internal-flows-in-advanced-warehousing"></a>Flux internes dans l'entreposage avancé  
  Dans les configurations d'entrepôt avancées, la circulation des articles entre les zones dans les centres de la compagnie lors du prélèvement des composantes, du rangement des articles finis pour les bons de production et du prélèvement des composantes pour les ordres d'assemblage. En outre, les flux internes se produisent en tant que mouvements ad-hoc, tels que les réapprovisionnements de zone, sans relation avec les documents sources.  
 
 ### <a name="flows-to-and-from-production"></a>Flux entrants et sortants de la production  
- La principale intégration entre les bons de production et les activités d'entrepôt avancées est représentée par la capacité à prélever des composantes de production, dans la fenêtre **Prélèvement entrepôt** et dans la fenêtre **Feuille prélèvement**, et par la capacité à ranger des articles produits à l'aide de la fenêtre **Rangement interne entrepôt**.  
+ La principale intégration entre les bons de production et les activités d'entrepôt avancées est représentée par la capacité de prélever des composantes de production, sur la page **Prélèvement entrepôt** et sur la page **Feuille prélèvement**, et par la capacité de ranger des articles produits à l'aide de la page **Rangement interne entrepôt**.  
 
- Un autre point d'intégration dans la production est fourni via la fenêtre **Mouvement entrepôt**, ainsi que la fenêtre Feuille mouvement, ce qui vous permet de placer des composantes et de prendre des articles fabriqués pour des bons de production libérés.  
+ Un autre point d'intégration dans la production est fourni via la page **Mouvement entrepôt**, ainsi que la page Feuille mouvement, ce qui vous permet de placer des composantes et de prendre des articles produits pour des bons de production libérés.  
 
  Les champs **Code de zone avant production**, **Code de zone post-production**, et **Code de zone d'atelier ouvert** de la fiche emplacement ou des fiches unité de production/atelier définissent les flux par défaut depuis ou vers les zones de production.  
 
  Pour plus d'informations sur la manière dont la consommation de composantes est purgée des zones avant production ou des zones d'atelier ouvert, reportez-vous à la section « Purge des composantes de production dans l'entrepôt » de cette rubrique.  
 
 ### <a name="flows-to-and-from-assembly"></a>Flux entrants et sortants de l'assemblage  
- La principale intégration entre les ordres d'assemblage et les activités d'entrepôt avancées est représentée par la capacité à prélever des composantes d'assemblage, aussi bien à l'aide de la fenêtre **Prélèvement entrepôt** que de la fenêtre **Feuille prélèvement**. Cette fonctionnalité est identique au prélèvement des composantes pour les bons de production.  
+ La principale intégration entre les ordres d'assemblage et les activités d'entrepôt avancées est représentée par la capacité de prélever des composantes d'assemblage, aussi bien à l'aide de la page **Prélèvement entrepôt** que de la page **Feuille prélèvement**. Cette fonctionnalité est identique au prélèvement des composantes pour les bons de production.  
 
- Lorsqu'aucune fonctionnalité entrepôt spécifique n'existe pour le rangement des éléments d'assemblage, le code de zone sur l'ordre d'assemblage peut être défini sur une zone de rangement par défaut. Le report de l'ordre d'assemblage fonctionne alors comme le report d'un rangement. L'activité entrepôt pour déplacer des éléments d'assemblage dans l'entrepôt peut être gérée dans la fenêtre **Feuille mouvement** ou la fenêtre **Rangement interne entrepôt**, sans rapport avec l'ordre d'assemblage.  
+ Lorsqu'aucune fonctionnalité entrepôt spécifique n'existe pour le rangement des éléments d'assemblage, le code de zone sur l'ordre d'assemblage peut être défini sur une zone de rangement par défaut. Le report de l'ordre d'assemblage fonctionne alors comme le report d'un rangement. L'activité entrepôt pour déplacer des éléments d'assemblage dans l'entrepôt peut être gérée sur la page **Feuille mouvement** ou la page **Rangement interne entrepôt**, sans rapport avec l'ordre d'assemblage.  
 
 > [!NOTE]  
 >  Si les articles sont assemblés pour commande, la livraison entrepôt du document de vente lié déclenche un prélèvement entrepôt de toutes les composantes d'assemblage impliquées, et non uniquement pour l'article vendu, comme lors de la livraison d'articles en inventaire.  
@@ -87,7 +87,7 @@ Circulation des articles entre les zones dans les centres d'une compagnie lors d
  Les champs **Code de zone vers assemblage** et **Code de zone depuis assemblage** de la fiche emplacement définissent les flux par défaut depuis et vers les zones d'assemblage.  
 
 ### <a name="ad-hoc-movements"></a>Mouvements ad hoc  
- Dans l'entreposage avancé, un mouvement d'articles d'une zone à l'autre sans relation avec les documents sources est géré dans la fenêtre **Feuille mouvement** et enregistré dans la fenêtre Mouvement entrepôt.  
+ Dans l'entreposage avancé, le mouvement d'articles d'une zone à l'autre sans relation avec les documents origine est géré sur la page **Feuille mouvement** et enregistré sur la page Mouvement entrepôt.  
 
 ## <a name="flushing-production-components-in-the-warehouse"></a>Purge des composantes de production dans l'entrepôt  
  Si cela est configuré dans la fiche article, les composantes prélevées avec des prélèvements entrepôt sont reportées comme étant consommées par le bon de production lorsque le prélèvement entrepôt est enregistré. En utilisant la méthode **Prélèvement + Aval** et la méthode de consommation **Prélèvement + Amont**, l'enregistrement de prélèvement déclenche le report des consommations associées lorsque la première opération commence ou lorsque la dernière opération finit, respectivement.  

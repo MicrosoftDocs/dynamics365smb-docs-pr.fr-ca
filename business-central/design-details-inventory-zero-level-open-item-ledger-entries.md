@@ -11,10 +11,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: edupont
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: e114142be1708447931fb475074245b57564f6b3
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 0bb558fe24d8c5bc717ef72e8c94ba0154a06a55
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="design-details-known-item-application-issue"></a>Détails de conception : problème connu lié à l'affectation d'articles
@@ -102,7 +102,7 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 
  Pour le scénario 1, identifiez le problème comme suit :  
 
--   Dans la fenêtre **Note de crédit vente reportée** ou **Réception de retour reportée**, recherchez le champ **Écriture article à affecter** pour voir si le champ est renseigné, et dans ce cas, à quelle écriture article le coût de la réception retour est affecté.  
+-   Sur la page **Note de crédit vente reportée** ou **Réception retour reportée**, recherchez le champ **Écriture article à affecter** pour voir si le champ est renseigné, et auquel cas, à quelle écriture article le coût de la réception retour est affecté.  
 
  Pour le scénario 2, identifiez le problème de l'une des manières suivantes :  
 
@@ -113,10 +113,10 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 |333|01/28/2018|Vente|Livraison de vente|102043|TEST|BLEU|-1|-10|-1|-1|Oui|Non|  
 |334|01/28/2018|Vente|Livraison de vente|102043|TEST|BLEU|1|10|1|1|Oui|**Oui**|  
 
--   Dans la fenêtre **Livraison vente reportée**, recherchez le champ **Écriture article à affecter** pour voir si le champ est renseigné, et dans ce cas, à quelle écriture article le coût de la réception retour est affecté.  
+-   Sur la page **Livraison vente reportée**, recherchez le champ **Écriture article à affecter** pour voir si le champ est renseigné, et auquel cas, à quelle écriture article le coût de la réception retour est affecté.  
 
 > [!NOTE]  
->  Les affectations de coût ne peuvent pas être identifiées dans la fenêtre **Écritures article affectées**, car cette fenêtre affiche uniquement les affectations de quantité.  
+>  Les affectations de coût ne peuvent pas être identifiés sur la page **Écritures article affectées**, car cette page affiche uniquement les affectations de quantité.  
 
  Pour les deux scénarios, identifiez l'affectation de coût concernée comme suit :  
 
@@ -138,7 +138,7 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
  En outre, notez que le coût de l'écriture article entrante 334 est affecté à l'écriture article sortante 333.  
 
 ## <a name="workaround-for-the-issue"></a>Solution de contournement du problème  
- Dans la fenêtre **Journal article**, reportez les lignes suivantes pour l'article concerné :  
+ Sur la page **Journal article**, reportez les lignes suivantes pour l'article concerné :  
 
 -   Un ajustement positif pour fermer l'écriture article sortante ouverte.  
 

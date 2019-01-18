@@ -13,14 +13,14 @@ ms.search.keywords: electronic document, Intrastat, trade, EU, European Union
 ms.date: 10/01/2018
 ms.author: bholtorf
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 497f952684cd893bddd954378c02f55f45224f84
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: b75d709933cd9d147a9b5e0862a88a44a300f3c1
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="how-to-set-up-and-report-intrastat"></a>Procédure : configurer et soumettre une déclaration Intrastat
-Toutes les compagnies de l'Union européenne doivent déclarer leurs échanges avec les autres pays/régions de l'Union européenne. Vous devez déclarer les mouvements de marchandises aux autorités statistiques de votre pays/région mensuellement et le rapport doit être remis aux autorités fiscales. Il s'agit de la déclaration Intrastat. La fenêtre **Feuille intracomm.** permet de remplir des déclarations D.E.B. périodiques.  
+Toutes les compagnies de l'Union européenne doivent déclarer leurs échanges avec les autres pays/régions de l'Union européenne. Vous devez déclarer les mouvements de marchandises aux autorités statistiques de votre pays/région mensuellement et le rapport doit être remis aux autorités fiscales. Il s'agit de la déclaration Intrastat. La page **Journal Intrastat** permet de remplir des rapports Intrastat périodiques.  
 
 ## <a name="required-and-optional-setups"></a>Paramètres obligatoires et facultatifs
 Avant d'utiliser le journal Intrastat pour déclarer des informations Intrastat, plusieurs éléments doivent être configurés :  
@@ -57,32 +57,32 @@ Tous les articles que vous achetez ou vendez doivent avoir un code marchandise.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Codes marchandise**, puis choisissez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
-3. Pour affecter un code marchandise à un article, accédez à la fenêtre **Fiche article**, développez le raccourci **Coûts et report**, puis saisissez le code dans le champ **Code marchandise**.   
+3. Pour affecter un code marchandise à un article, accédez à la page **Fiche article**, développez le raccourci **Coûts et validation**, puis saisissez le code dans le champ **Code marchandise**.   
 
 ### <a name="to-set-up-transaction-nature-codes"></a>Pour configurer des codes nature de transaction
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Codes nature de transaction**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
 > [!Tip]
-> Si vous utilisez souvent un code nature de transaction spécifique, vous pouvez le définir comme valeur par défaut. Pour ce faire, accédez à la fenêtre **Configuration Intrastat** et choisissez le code.
+> Si vous utilisez souvent un code nature de transaction spécifique, vous pouvez le définir comme valeur par défaut. Pour ce faire, accédez à la page **Configuration Intrastat** et choisissez le code.
 
 ### <a name="to-set-up-transport-methods"></a>Pour configurer des modes de transport
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modes de transport**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 ### <a name="to-set-up-which-intrastat-report-fields-are-mandatory"></a>Pour configurer les champs de la déclaration Intrastat obligatoires
-Dans certains pays, tels que l'Espagne et le R-U, les autorités nécessitent que les déclarations Intrastat comprennent, par exemple, la méthode de livraison des achats ou d'autres valeurs lorsque les ventes sont supérieures à un certain seuil. Dans la fenêtre **Configuration Intrastat**, vous pouvez opérer une sélection pour que **Configuration de la liste de vérification Intrastat** définisse des champs obligatoires dans la fenêtre **Journal Intrastat**.
+Dans certains pays, tels que l'Espagne et le R-U, les autorités nécessitent que les déclarations Intrastat comprennent, par exemple, la méthode de livraison des achats ou d'autres valeurs lorsque les ventes sont supérieures à un certain seuil. Sur la page **Configuration Intrastat**, vous pouvez sélectionner pour faire **Configuration liste de contrôle Intrastat** pour définir les champs obligatoires sur la page **Journal Intrastat**.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration Intrastat**, puis sélectionnez le lien associé.
 2. Choisissez l'action **Configuration de la liste de vérification Intrastat**.
-3. Dans la fenêtre **Configuration de la liste de vérification Intrastat**, cliquez dans **Nom de champ** pour sélectionner le champ de déclaration Intrastat que vous souhaitez rendre obligatoire. 
+3. Sur la page **Configuration liste de vérification Intrastat**, cliquez dans **Nom de champ** pour prélever le champ de déclaration Intrastat que vous souhaitez rendre obligatoire. 
 
 ## <a name="to-report-intrastat"></a>Pour soumettre une déclaration Intrastat
-Après avoir renseigné le journal Intrastat, vous pouvez exécuter l'action **Rapport liste de vérification** pour vérifier que toutes les informations du journal sont correctes. Les champs obligatoires que vous avez définis dans la fenêtre **Configuration de la liste de vérification Intrastat** qui ont des valeurs manquantes, seront affichés dans le récapitulatif des erreurs et des avertissements dans la fenêtre **Journal Intrastat**. Ensuite, vous pouvez imprimer un rapport Intrastat en tant que formulaire, ou créer un fichier à envoyer à l'administration fiscale de votre pays/région.  
+Après avoir renseigné le journal Intrastat, vous pouvez exécuter l'action **Rapport liste de vérification** pour vérifier que toutes les informations du journal sont correctes. Les champs obligatoires que vous avez définis sur la page **Configuration liste de vérification Intrastat** qui ont des valeurs manquantes, seront affichés dans le récapitulatif des erreurs et des avertissements de la page **Journal Intrastat**. Ensuite, vous pouvez imprimer un rapport Intrastat en tant que formulaire, ou créer un fichier à envoyer à l'administration fiscale de votre pays/région.  
 
 ### <a name="to-fill-in-intrastat-journals"></a>Pour renseigner des feuilles intracommunautaires  
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal Intrastat**, puis sélectionnez le lien associé.  
-2. Dans la fenêtre **Journal Intrastat**, dans le champ **Nom de lot**, choisissez le lot journal concerné, puis sélectionnez **OK**.  
+2. Sur la page **Journal Intrastat**, dans le champ **Nom de lot**, sélectionnez le lot journal concerné, puis sélectionnez **OK**.  
 3. Choisissez l'action **Proposer lignes**. Les champs **Date début** et **Date fin** contiennent déjà les dates spécifiées sur la feuille pour la période statistique.  
 4. Dans le champ **% régulation coût**, entrez un pourcentage pour couvrir le transport et l'assurance. Lorsque vous saisissez un pourcentage, la valeur du champ **Valeur statistique** de la feuille augmente proportionnellement.  
 5. Cliquez sur **OK** pour démarrer le traitement en lot.  
@@ -90,13 +90,13 @@ Après avoir renseigné le journal Intrastat, vous pouvez exécuter l'action **R
 Le traitement en lot récupère toutes les écritures article de la période statistique et les insère sous forme de lignes dans le journal Intrastat. Vous pouvez modifier au besoin les nouvelles lignes.  
 
 > [!IMPORTANT]  
->  Le traitement en lot récupère uniquement les écritures qui contiennent un code pays/région pour lequel un code Intrastat a été entré dans la fenêtre **Pays/Régions**. Vous devez donc entrer les codes Intrastat correspondant aux codes pays/région pour lesquels vous allez lancer le traitement en lot.  
+>  Le traitement en lot récupère uniquement les écritures qui contiennent un code pays/région pour lequel un code Intrastat a été entré dans la page **Pays/Régions**. Vous devez donc entrer les codes Intrastat correspondant aux codes pays/région pour lesquels vous allez lancer le traitement en lot.  
 
 ### <a name="report-intrastat-on-a-form-or-a-file"></a>Rapport Intrastat sur un formulaire ou un fichier
 Pour obtenir les informations requises sur le formulaire Intrastat à partir des autorités statistiques, vous devez imprimer le rapport **Intrastat : Formulaire**. Avant d'effectuer cette opération, vous devez préparer le journal Intrastat et le renseigner. Si vous avez à la fois des transactions d'achat et de vente, vous devez compléter un formulaire distinct pour chaque type et donc imprimer le rapport deux fois.  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux Intrastat**, puis sélectionnez le lien associé.  
-2. Dans la fenêtre **Journal Intrastat**, choisissez le lot journal concerné dans le champ **Nom de lot**.  
+2. Sur la page **Journal Intrastat**, choisissez le lot journal concerné dans le champ **Nom du lot**.  
 3. Si ce n'est déjà fait, renseignez le journal manuellement ou sélectionnez **Proposer lignes**.  
 4. Choisissez l'action **Imprime le journal Intrastat**.  
 5. Sur le raccourci **Ligne journal Intrastat**, ajoutez un filtre **Type**, puis spécifiez s'il s'agit d'une **Réception** ou d'une **Livraison**.  
@@ -106,10 +106,10 @@ Pour obtenir les informations requises sur le formulaire Intrastat à partir des
 Vous pouvez envoyer la déclaration Intrastat en tant que fichier. Avant de créer le fichier, vous pouvez imprimer la liste de vérification contenant les mêmes informations que le fichier.  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal Intrastat**, puis sélectionnez le lien associé.  
-2. Dans la fenêtre **Feuille intracomm.**, sélectionnez la feuille concernée dans le champ **Nom de la feuille**.  
+2. Sur la page **Journal Intrastat**, sélectionnez le lot journal concerné dans le champ **Nom du lot**.  
 3. Si ce n'est déjà fait, renseignez le journal manuellement ou en sélectionnant **Proposer lignes**.  
 4. Choisissez l'action **Créer fichier**.  
-5. Dans la fenêtre de traitement en lot, choisissez **OK**.  
+5. Sur la page de traitement en lot, choisissez **OK**.  
 6. Choisissez **Enregistrer**.  
 7. Sélectionnez l'emplacement d'enregistrement du fichier, entrez son nom, puis choisissez **Enregistrer**.
 

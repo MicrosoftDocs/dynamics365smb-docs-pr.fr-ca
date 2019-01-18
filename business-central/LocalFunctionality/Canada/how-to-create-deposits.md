@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: f43eea38d3c08828b9820f371444fd3ad8246aba
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 0dbb40557cb1c5c6e09dbfd6489a13fb48f9e37f
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="create-deposits"></a>Créer des dépôts
@@ -46,7 +46,7 @@ Vous pouvez créer des dépôts pour tenir à jour un enregistrement de transact
     |**N° du document**|Numéro de document de l'écriture ligne journal.|  
     |**Montant crédit**|Montant total du crédit sur la ligne journal.|  
 
-5.  Éventuellement, sous l'onglet **Naviguer**, choisissez **Dimensions**, puis ajoutez les dimensions correspondantes dans la fenêtre **Écritures de l'ensemble de dimensions**.  
+5.  Éventuellement, sous l'onglet **Naviguer**, choisissez **Dimensions**, puis ajoutez les dimensions correspondantes sur la page **Écritures de l'ensemble de dimensions**.  
 
 Après avoir créé un dépôt, vous devez le reporter.  
 

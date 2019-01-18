@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 27b50b9471c8dccb7da8750bbd57e34774ff6115
+ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
+ms.openlocfilehash: 4dd595fabbf8e4cd2a3eef73a934922dfea92858
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/22/2018
 
 ---
 # <a name="configure-a-company-with-the-rapidstart-wizard"></a>Configurer une compagnie avec l'assistant RapidStart
@@ -43,7 +43,7 @@ Dans la procédure suivante, vous avez fourni au client un colis configuration, 
 7. Cliquez sur le bouton **OK**.  
 8. Pour vérifier que les informations de configuration ont été appliquées à la nouvelle compagnie, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Informations compagnie**, puis sélectionnez le lien associé.
 
-La fenêtre **Informations société** contient les informations que vous avez spécifiées.   
+La page **Informations compagnie** contient les informations que vous avez spécifiées.   
 
 Vous avez désormais configuré la compagnie, et des données lui ont été affectées.  
 

@@ -12,16 +12,16 @@ ms.search.keywords: warehouse, stock
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: d6df6884ef5cf8fce96ec1f5bc5ca91bdbd3ede7
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 0e9b610d54f955c3dec9cba6b2327a74663288a2
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="reconcile-inventory-costs-with-the-general-ledger"></a>Rapprocher les coûts de l'inventaire avec le grand livre
 Lorsque vous reportez des transactions inventaire, tels que des livraisons vente, des factures achat ou des ajustements inventaire, les coûts article modifiés sont enregistrés dans les écritures valeur article. Pour refléter ces modifications de la valeur inventaire dans vos livres financiers, les coûts inventaire sont automatiquement reportés dans les comptes inventaire associés dans le grand livre. Pour chaque transaction inventaire que vous reportez, les valeurs appropriées sont reportées dans le compte inventaire, le compte ajustement et le compte variation inventaire dans le grand livre.
 
-Le report automatique des coûts est défini par le champ **Report coûts automatique** dans la fenêtre **Configuration de l'inventaire**.
+Le report automatique des coûts est défini par le champ **Report coûts automatique** sur la page **Configuration de l'inventaire**.
 
 Bien que les coûts inventaire soient automatiquement reportés dans le grand livre, il est malgré tout nécessaire de vous assurer que les coûts des biens sont transmis à la transaction de vente sortante associée, notamment dans les situations où vous vendez des biens avant de facturer l'achat. Il s'agit d'un ajustement des coûts. Le coût des articles est ajusté automatiquement lorsque vous reportez des transactions article, mais vous pouvez également les ajuster manuellement. Pour en savoir plus, voir [Ajuster coûts article](inventory-how-adjust-item-costs.md).
 
@@ -37,7 +37,7 @@ Pour afficher la liste des erreurs avant d'exécuter le traitement par lot de va
 Si vous voulez simplement afficher un aperçu des valeurs qui pourraient être reportées dans le grand livre sans réellement effectuer le report, vous pouvez exécuter le traitement en lot **Reporter le coût de l'inventaire au grand livre** sans réellement reporter les valeurs dans le grand livre. Pour ce faire, désactivez le champ **Reporter** sur la page de demande. De cette manière, lorsque vous exécutez le traitement en lot, le rapport est produit, indiquant les valeurs prêtes pour report dans le grand livre, mais elles ne sont pas reportées.
 
 ## <a name="to-audit-the-reconciliation-between-the-inventory-ledger-and-the-general-ledger"></a>Pour vérifier le rapprochement entre le livre inventaire et le grand livre
-La fenêtre **Rapprochement inventaire avec GL** contient les éléments suivants :
+La page **Rapprochement inventaire avec GL** fournit ce qui suit :
 
 - présente les différences de rapprochement en comparant ce qui est enregistré dans le grand livre et dans le livre inventaire (écritures valeur) ;
 - affiche les montants coût non rapprochés des écritures valeur dans le livre inventaire comme s'ils étaient mappés aux comptes inventaire correspondants dans le grand livre, et les compare aux totaux réellement enregistrés dans les mêmes comptes du GL ;
@@ -57,11 +57,11 @@ La colonne **Total grand livre** indique les montants (en gras) pour chaque type
 
 La colonne **Différence** représente la différence entre la valeur des champs **Total GL** et **Total**.
 
-En haut de la fenêtre **Rapprochement inventaire avec GL**, vous pouvez appliquer des filtres pour limiter, par exemple, la période sur laquelle vous voulez obtenir des informations.
+En haut de la page **Rapprochement inventaire avec GL**, vous pouvez appliquer des filtres pour limiter, par exemple, la période sur laquelle vous voulez obtenir des informations.
 
 Si vous cochez la case **Afficher avertissement** et s'il y a des différences entre les totaux inventaire et les totaux GL, le programme affiche des messages dans le champ **Avertissement** de la grille, qui expliquent la différence. Si vous cliquez sur le champ Alerte, le programme fournit des informations supplémentaires sur la signification de l'alerte.
 
-Après avoir entré tous les filtres appropriés, choisissez l'action **Afficher la matrice**. Les données sont calculées et la matrice s'affiche.
+Après avoir entré tous les filtres appropriés, choisissez l'action **Afficher la matrice**. Les données sont calculées et la page de la matrice s'affiche.
 
 La colonne de gauche de la grille affiche les différents types de compte du grand livre associés à l'inventaire. La grille affiche ensuite les totaux facturés, non facturés (en attente) et de l'inventaire TEC pour chacun de ces types de compte. Ces totaux sont calculés à partir des écritures valeur.
 

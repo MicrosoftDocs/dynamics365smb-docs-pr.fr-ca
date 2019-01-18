@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 82b61f468b7b0f5f8a5f8406b6df369db41a6ded
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 778f182d12959e0332d538c0471a8c2e0d1613a1
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="walkthrough-planning-supplies-automatically"></a>Procédure pas à pas : planification automatique des approvisionnements
@@ -68,7 +68,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 1.  Ouvrez la fiche article pour l'article 1001, vélo cyclotourisme.  
 2.  Choisissez l'action **Créer unité de stock**.  
-3.  Dans la fenêtre **Créer unité de stock**, ne modifiez aucune option ni aucun filtre, puis cliquez sur le bouton **OK**.  
+3.  Sur la page **Créer unité de stock**, ne modifiez aucune option ni aucun filtre, puis cliquez sur le bouton **OK**.  
 4.  Répétez les étapes 1 à 3 pour chaque article dont le numéro est compris entre 1100 et 1300.  
 
 ### <a name="to-change-selected-planning-parameters"></a>Pour modifier des paramètres de planification sélectionnés  
@@ -92,7 +92,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
-3.  Dans la fenêtre **Document de vente**, renseignez les champs comme indiqué dans la table suivante.  
+3.  Sur la page **Document de vente**, renseignez les champs comme indiqué dans le tableau suivant.  
 
     |Nom débiteur|Date de livraison|N° d'article|Magasin|Quantité|  
     |----------------------------|-------------------|--------------|--------------|--------------|  
@@ -104,7 +104,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille planification**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Calculer planning régénératif**.  
-3.  Dans la fenêtre **Calc. planning - F. planning** , renseignez les champs comme indiqué dans le tableau suivant.  
+3.  Sur la page **Calc. planning - F. planning**, renseignez les champs comme indiqué dans le tableau suivant.  
 
     |Calculer planning|Date début|Date de fin|Afficher résultats :|Limiter les totaux à|  
     |--------------------|-------------------|-----------------|-------------------|---------------------|  
@@ -117,17 +117,17 @@ Les expressions comme « exécution planification » et « exécution MRP »
      Vérifiez ensuite que cette ligne planification est liée au document de vente de Cannon Group à l'aide de la fonction **Suivi de commande**, qui lie de manière dynamique la demande à son approvisionnement planifié.  
 
 5.  Sélectionnez la nouvelle ligne planification, puis choisissez l'action **Suivi de commande**.  
-6.  Dans la fenêtre **Chaînage** choisissez l'action **Afficher**.  
+6.  Sur la page **Chaînage** choisissez l'action **Afficher**.  
 
      Le document de vente pour cinq vélos cyclotourisme au client ayant le numéro 10 000 le 05/02/2014 s'affiche.  
 
-7.  Fermez les fenêtres **Document de vente** et **Suivi de commande**.  
+7.  Fermez les pages **Document de vente** et **Suivi de commande**.  
 
 ### <a name="to-calculate-mrp-to-include-underlying-component-needs"></a>Pour calculer MRP afin d'inclure les besoins sous-jacents en composantes  
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille planification**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Calculer planning régénératif**.  
-3.  Dans la fenêtre **Calc. planning - F. planning** , renseignez les champs comme indiqué dans le tableau suivant.  
+3.  Sur la page **Calc. planning - F. planning**, renseignez les champs comme indiqué dans le tableau suivant.  
 
     |Calculer|Date début|Date de fin|Afficher résultats :|Limiter les totaux à :|  
     |---------------|-------------------|-----------------|-------------------|----------------------|  
@@ -140,7 +140,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 ## <a name="analyzing-the-planning-result"></a>Analyse du résultat de la planification  
  Pour analyser les quantités proposées, Eduardo passe en revue les lignes planification sélectionnées pour afficher les écritures traçabilité et les paramètres de planification.  
 
- Dans la fenêtre **Feuille planification**, notez que dans la colonne **Date d'échéance**, les commandes d'approvisionnement proposées sont programmées en amont à partir de la date d'échéance dans le document de vente, le 05/02/2014. La chronologie commence avec la ligne planification supérieure par le bon de production visant à produire les vélos cyclotourisme terminés. La chronologie se termine sur la ligne planification inférieure par le bon de commande de l'un des articles de niveau inférieur, 1255, arrière de douille, prévu le 30/01/2014. Tout comme la ligne planification de l'article 1251, Axe roue arrière, cette ligne représente un bon de commande pour les composantes dues à la date début de son parent produit, l'article de sous-assemblage 1250, qui est dû au 02-03-2014. Tout au long de la feuille, vous pouvez voir que tous les articles sous-jacents sont dus à la date début de leurs parents.  
+ Sur la page **Feuille planification**, notez que dans la colonne **Date d'échéance**, les commandes d'approvisionnement proposées sont programmées en amont à partir de la date d'échéance du document de vente, le 05/02/2014. La chronologie commence avec la ligne planification supérieure par le bon de production visant à produire les vélos cyclotourisme terminés. La chronologie se termine sur la ligne planification inférieure par le bon de commande de l'un des articles de niveau inférieur, 1255, arrière de douille, prévu le 30/01/2014. Tout comme la ligne planification de l'article 1251, Axe roue arrière, cette ligne représente un bon de commande pour les composantes dues à la date début de son parent produit, l'article de sous-assemblage 1250, qui est dû au 02-03-2014. Tout au long de la feuille, vous pouvez voir que tous les articles sous-jacents sont dus à la date début de leurs parents.  
 
  La ligne planification de l'article 1300, ensemble chaîne, indique dix pièces. Ceci diffère des cinq pièces que nous estimons nécessaires pour répondre au document de vente. Visualisez les écritures chaînage.  
 
@@ -148,26 +148,26 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 1.  Sélectionnez la ligne planification correspondant à l'article 1300, puis choisissez l'action **Suivi de commande**.  
 
-     Les deux lignes dans la fenêtre **Suivi de commande** indiquent que cinq pièces sont suivies depuis la ligne planification (première ligne de suivi de commande) jusqu'au document de vente 1001 (deuxième ligne de suivi de commande). Les cinq dernières pièces indiquées sur la ligne planification ne sont associées à aucune ligne de document, mais bien à un paramètre de planification, à une écriture prévision ou à une écriture commande permanente. Ces quantités non chaînées sont résumées dans le champ **Quantité non chaînée** dans l'en-tête de la fenêtre **Chaînage**.  
+     Les deux lignes de la page **Suivi commande** indiquent que cinq pièces sont suivies depuis la ligne planification (première ligne de suivi commande) jusqu'au document de vente 1001 (deuxième ligne de suivi commande). Les cinq dernières pièces indiquées sur la ligne planification ne sont associées à aucune ligne de document, mais bien à un paramètre de planification, à une écriture prévision ou à une écriture commande permanente. Ces quantités non chaînées sont résumées dans le champ **Quantité non chaînée** dans l'en-tête de la page **Chaînage**.  
 
 2.  Choisissez le champ **Quantité non chaînée**.  
 
-     La fenêtre **Éléments planification sans suivi** indique que l'article 1300 utilise un paramètre de planification, Qté minimum commande, de 10,00. Par conséquent, la ligne planification concerne dix pièces au total, mais seulement cinq d'entre elles peuvent être suivies jusqu'à une demande. Les cinq dernières pièces correspondent à une quantité non chaînée afin de satisfaire le paramètre de planification. Revisualisez le paramètre de planification.  
+     La page **Éléments planification sans suivi** indique que l'article 1300 utilise un paramètre de planification, Qté minimum commande, de 10,00. Par conséquent, la ligne planification concerne dix pièces au total, mais seulement cinq d'entre elles peuvent être suivies jusqu'à une demande. Les cinq dernières pièces correspondent à une quantité non chaînée afin de satisfaire le paramètre de planification. Revisualisez le paramètre de planification.  
 
 ### <a name="to-check-the-planning-parameter"></a>Pour vérifier les paramètres de planification  
 
-1.  Dans la fenêtre **Éléments planification sans suivi**, sélectionnez la ligne de suivi de commande pour l'article 1300.  
+1.  Sur la page **Éléments planification non suivi**, sélectionnez la ligne de suivi de commande pour l'article 1300.  
 2.  Cliquez sur le champ **N° article**, puis choisissez l'action **Avancé**.  
-3.  Dans la fenêtre **Liste des articles**, choisissez l'action **Unités de stock**.  
-4.  Dans la fenêtre **Liste des unités de stock**, ouvrez la fiche unité de stock BLEU.  
+3.  Sur la page **Liste des articles**, choisissez l'action **Unités de stock**.  
+4.  Sur la page **Liste des unités de stock**, ouvrez la fiche unité de stock BLUE.  
 5.  Dans le raccourci **Planification**, notez que le champ **Qté minimum commande** contient 10.  
-6.  Fermez toutes les fenêtres sauf **Feuille de travail de planification**.  
+6.  Refermez toutes les pages, sauf **Feuille planification**.  
 
 ### <a name="to-view-more-order-tracking-entries"></a>Pour afficher des écritures chaînage  
 
 1.  Sélectionnez la ligne planification correspondant à l'article 1110, Jante, puis choisissez l'action **Suivi de commande**.  
 
-     La fenêtre **Chaînage** indique que cinq jantes sont nécessaires pour chaque ordre de fabrication des roues avant et arrière respectivement.  
+     La page **Chaînage** indique que cinq jantes sont nécessaires pour chaque ordre de fabrication des roues avant et arrière respectivement.  
 
      Le même suivi de commande s'applique aux lignes planification pour les articles 1120, 1160 et 1170. Pour l'article 1120, le champ **Quantité par** dans la nomenclature de production de chaque roue est 50 PCS, ce dont résulte un besoin total de 100.  
 
@@ -175,11 +175,11 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 2.  Sélectionnez la ligne planification correspondant à l'article 1150, puis choisissez l'action **Suivi de commande**.  
 
-     La fenêtre **Chaînage** indique que cinq unités sont suivies pour la roue avant, et une unité est non suivie. Affichez la quantité non chaînée.  
+     La page **Chaînage** indique que cinq unités sont suivies pour la roue avant, et une unité est non suivie. Affichez la quantité non chaînée.  
 
 3.  Choisissez le champ **Quantité non chaînée**.  
 
-     La fenêtre **Éléments planification sans suivi** indique que l'article 1150 utilise un paramètre de planification, Commandé par, de 2,00, ce qui indique que lorsque l'article est commandé, il doit l'être dans une quantité divisible par 2. Le chiffre le plus proche de 5 divisible par 2 est 6.  
+     La page **Éléments planification sans suivi** indique que l'article 1150 utilise un paramètre de planification, Commandé par, de 2,00, ce qui indique que lorsque l'article est commandé, il doit l'être dans une quantité divisible par 2. Le chiffre le plus proche de 5 divisible par 2 est 6.  
 
      Le même suivi de commande s'applique aux lignes planification pour les composantes Moyeu avant, les articles 1151 et 1155, mais chaque besoin est multiplié par le pourcentage rebut défini pour l'article 1150 dans le champ **Pourcentage de rebut** de la fiche article.  
 
@@ -192,14 +192,14 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 1.  Activez la case à cocher **Accepter message d'action** sur toutes les lignes planification avec un avertissement de type Exception.  
 2.  Choisissez l'action **Traiter message d'action**.  
-3.  Dans la fenêtre **Traiter msg. action - Planning**, complétez les champs comme indiqué dans le tableau suivant.  
+3.  Sur la page **Traiter msg. action - Planning**, complétez les champs comme indiqué dans le tableau suivant.  
 
     |Bon de production|Bon de commande|Ordre de transfert|  
     |----------------------|--------------------|--------------------|  
     | planifié ferme|Créer bons de commande|Créer ordres transfert|  
 
 4.  Cliquez sur le bouton **OK** pour créer automatiquement toutes les commandes d'approvisionnement proposées.  
-5.  Fermez la fenêtre **Feuille de travail de planification** vide.  
+5.  Refermez la page **Feuille planification** vide.  
 
  Le calcul initial, l'analyse et la création d'un plan d'approvisionnement pour la demande à l'emplacement BLEU la première semaine de février sont terminés. Dans la section suivante, un autre client commande dix vélos cyclotourisme, et Eduardo doit procéder à une nouvelle planification.  
 
@@ -211,7 +211,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 ### <a name="to-create-the-new-sales-demand-and-replan-accordingly"></a>Pour créer les demandes de vente et replanifier en conséquence  
 
 1.  Sélectionnez l'action **Nouveau**.  
-2.  Dans la fenêtre **Document de vente**, renseignez les champs comme indiqué dans la table suivante.  
+2.  Sur la page **Document de vente**, renseignez les champs comme indiqué dans le tableau suivant.  
 
     |Nom débiteur|Date de livraison|N° d'article|Magasin|Quantité|  
     |----------------------------|-------------------|--------------|--------------|--------------|  
@@ -221,7 +221,7 @@ Les expressions comme « exécution planification » et « exécution MRP »
 4.  Procédez à une replanification afin d'adapter le programme d'approvisionnement actif.  
 5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille planification**, puis sélectionnez le lien associé.  
 6.  Choisissez l'action **Calculer planning par écart**.  
-7.  Dans la fenêtre **Calc. planning - F. planning** , renseignez les champs comme indiqué dans le tableau suivant.  
+7.  Sur la page **Calc. planning - F. planning**, renseignez les champs comme indiqué dans le tableau suivant.  
 
     |Calculer planning|Date début|Date de fin|Afficher résultats :|Limiter les totaux à|  
     |--------------------|-------------------|-----------------|-------------------|---------------------|  
@@ -244,20 +244,20 @@ Les expressions comme « exécution planification » et « exécution MRP »
 
 1.  Sélectionnez la ligne planification correspondant à l'article 1250, puis choisissez l'action **Suivi de commande**.  
 
-     Les sept lignes de la fenêtre **Suivi de commande** indiquent que cinq et dix pièces font l'objet d'un suivi pour la roue arrière pour les vélos de cyclotourisme respectivement sur les deux documents de vente.  
+     Les sept lignes de la page **Suivi de commande** indiquent que cinq et dix pièces sont suivies pour la roue arrière pour les vélos cyclotourisme respectivement sur les deux documents de vente.  
 
      Les cinq dernières pièces sont non chaînées. Analysez.  
 
 2.  Choisissez le champ **Quantité non chaînée**.  
 
-     La fenêtre **Éléments planification sans suivi** indique que l'article 1250 utilise un paramètre de planification, Commandé par, de 10,00. Par conséquent, la ligne planification concerne 20 pièces au total pour approcher le besoin réel en arrondissant au nombre le plus proche divisible par 10. Les cinq dernières pièces correspondent à une quantité non chaînée afin de satisfaire le paramètre de planification.  
+     La page **Éléments planification sans suivi** indique que l'article 1250 utilise un paramètre de planification, Commandé par, de 10,00. Par conséquent, la ligne planification concerne 20 pièces au total pour approcher le besoin réel en arrondissant au nombre le plus proche divisible par 10. Les cinq dernières pièces correspondent à une quantité non chaînée afin de satisfaire le paramètre de planification.  
 
-3.  Fermez toutes les fenêtres sauf **Feuille de travail de planification**.  
+3.  Refermez toutes les pages, sauf **Feuille planification**.  
 
 ### <a name="to-view-an-existing-order"></a>Pour afficher une commande existante  
 
 1.  Dans la ligne planification de l'article 1250, sélectionnez le champ **N° ordre référence** .  
-2.  Dans la fenêtre **O.F. planifié ferme** pour le moyeu arrière. La commande existante pour dix pièces, que vous avez créée dans la première exécution de la planification, s'ouvre.  
+2.  Sur la page **O.F. planifié ferme** pour le moyeu arrière. La commande existante pour dix pièces, que vous avez créée dans la première exécution de la planification, s'ouvre.  
 3.  Fermez l'ordre de production planifié ferme.  
 
  La procédure pas à pas, relative au mode d'utilisation du système de planification permettant de détecter automatiquement la demande, de calculer les commandes d'approvisionnement adéquates en fonction de la demande et des paramètres de planification, puis de créer automatiquement différents types de commandes d'approvisionnement avec les dates et quantités appropriées, est terminée.  

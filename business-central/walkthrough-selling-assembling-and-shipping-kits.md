@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: b2d32111fe1b5510f7c1dc2412627d5df9e7ccc3
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 2bd235844f191c52f3f5d3e34b43c4fdf75fb464
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="walkthrough-selling-assembling-and-shipping-kits"></a>Procédure pas-à-pas : vente, assemblage et expédition de kits
@@ -82,7 +82,7 @@ Avant d'exécuter cette procédure pas à pas, veuillez suivre les instructions 
 -   Devenez employé d'entrepôt dans un emplacement BLANC en procédant comme suit :  
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Employés d'entrepôt**, puis sélectionnez le lien associé.  
-2.  Choisissez le champ **ID utilisateur** et sélectionnez votre propre compte utilisateur dans la fenêtre **Utilisateurs**.  
+2.  Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs**.  
 3.  Dans le champ **Code d'emplacement**, entrez BLANC.  
 4.  Sélectionnez le champ **Par défaut**.  
 
@@ -101,7 +101,7 @@ Préparez l'emplacement BLANC pour le traitement d’assemblage en procédant co
 Supprimez le délai par défaut pour les processus internes en procédant comme suit :  
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration de la fabrication**, puis sélectionnez le lien associé.  
-2.  Dans la fenêtre **Configuration de la fabrication**, sous le raccourci **Planification**, supprimez la valeur dans le champ **Délai de sécurité par défaut**.  
+2.  Sur la page **Configuration fabrication**, sous le raccourci **Planification**, supprimez la valeur dans le champ **Délai de sécurité par défaut**.  
 
 Créez un inventaire pour des composantes d'assemblage en suivant la section « Préparer des exemples de données » dans cette procédure pas à pas.  
 
@@ -140,21 +140,21 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
     |**N° d'article**|**Code zone**|**Code de zone**|**Quantité**|  
     |-----------------------------------|---------------------------------------|--------------------------------------|------------------------------------|  
-    |80001|PRELEV.|W-01-0001|20|  
-    |80005|PRELEV.|W-01-0001|20|  
-    |80011|PRELEV.|W-01-0001|20|  
-    |80014|PRELEV.|W-01-0001|20|  
-    |80203|PRELEV.|W-01-0001|20|  
-    |80209|PRELEV.|W-01-0001|20|  
+    |80001|PRELEV.|W-01-0001|2.0|  
+    |80005|PRELEV.|W-01-0001|2.0|  
+    |80011|PRELEV.|W-01-0001|2.0|  
+    |80014|PRELEV.|W-01-0001|2.0|  
+    |80203|PRELEV.|W-01-0001|2.0|  
+    |80209|PRELEV.|W-01-0001|2.0|  
 
 4.  Sous l’onglet **Accueil**, dans le groupe **Enregistrement**, choisissez **Enregistrer**, puis sélectionnez le bouton **Oui**.  
 
     Ensuite, synchronisez les nouvelles écritures entrepôt avec l'inventaire.  
 
-5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux article**, puis sélectionnez le lien associé. La fenêtre  **Journal article** s'ouvre.  
+5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux article**, puis sélectionnez le lien associé. La page **Journal article** s'ouvre.  
 6.  Sous l'onglet **Actions**, dans le groupe **Fonctions**, sélectionnez **Calculer ajustement entrepôt**.  
-7.  Dans la fenêtre **Calculer ajustement entrepôt**, cliquez sur le bouton **OK** .  
-8.  Dans la fenêtre **Journal article**, sous l’onglet **Actions**, dans le groupe **Fonctions**, sélectionnez **Reporter**, puis cliquez sur le bouton **Oui**.  
+7.  Sur la page **Calculer ajustement entrepôt**, cliquez sur le bouton **OK** .  
+8.  Sur la page **Journal article**, sous l’onglet **Actions**, dans le groupe **Fonctions**, sélectionnez **Reporter**, puis cliquez sur le bouton **Oui**.  
 
 ### <a name="creating-the-assembly-items"></a>Création des articles d’assemblage  
 
@@ -221,7 +221,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
     > [!NOTE]  
     >  Le problème de disponibilité suivant existe pour la ligne document de vente pour le kit B :  
     >   
-    >  -   La composante d’assemblage 80210 n’est pas disponible. Cela signifie que les trois unités spécifiées de kit B ne peuvent pas être assemblées, indiquées par **0** dans le champ **Capacité d'assembler** dans la fenêtre **Disponibilité assemblage**.  
+    >  -   La composante d’assemblage 80210 n’est pas disponible. Cela signifie que les trois unités spécifiées de kit B ne peuvent pas être assemblées, indiquées par **0** dans le champ **Capacité d'assembler** sur la page **Disponibilité assemblage**.  
     >   
     >  Le problème de disponibilité suivant existe pour la ligne document de vente pour le kit A :  
     >   
@@ -231,7 +231,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
 4.  Sélectionnez la ligne document de vente pour trois unités du kit B.  
 5.  Sur le raccourci **Lignes**, sélectionnez **Ligne**, puis **Assembler pour commande** et **Lignes d'assemblage pour commande**.  
-6.  Dans la fenêtre **Lignes Assembler pour commande**, sur la ligne d'ordre d'assemblage pour l'article 80014, entrez **2** dans le champ **Quantité par**.  
+6.  Sur la page **Lignes Assembler pour commande**, sur la ligne d'ordre d'assemblage pour l'article 80014, entrez **2** dans le champ **Quantité par**.  
 7.  Sur la ligne d'ordre d'assemblage pour l'article 80210, choisissez le champ **N°** , puis sélectionnez l'article 80209 à la place.  
 8.  Créez une ligne ordre d’assemblage à l’aide des informations suivantes.  
 
@@ -239,7 +239,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
     |----------|---------|------------------|  
     |Article|80203|1|  
 
-9. Fermez la fenêtre **Lignes d'assemblage pour commande**.  
+9. Fermez la page **Lignes d'assemblage pour commande**.  
 
     Ensuite, mettez à jour le prix unitaire du kit B en fonction de la personnalisation que vous venez d’exécuter. Prenez note de la valeur actuelle dans le champ **Prix unitaire HT**.  
 
@@ -247,7 +247,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 11. Cliquez sur le bouton **Oui**. Prenez note de la valeur augmentée dans le champ **Prix unitaire HT**.  
 12. Sélectionnez la ligne document de vente pour 15 unités du kit A.  
 13. Sur le raccourci **Lignes**, sélectionnez **Ligne**, puis **Assembler pour commande** et **Lignes d'assemblage pour commande**.  
-14. Dans la fenêtre **Lignes Assembler pour commande**, créez une ligne ordre d’assemblage à l’aide des informations suivantes.  
+14. Sur la page **Lignes Assembler pour commande**, créez une ligne ordre d'assemblage à l'aide des informations suivantes.  
 
     |Type|N°|Quantité par|  
     |----------|---------|------------------|  
@@ -264,7 +264,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille planification**, puis sélectionnez le lien associé.  
 2.  Sous l’onglet **Action**, dans le groupe **Fonctions**, choisissez **Calculer planning régénératif**.  
-3.  Dans la fenêtre **Calculer planning**, définissez les filtres suivants.  
+3.  Sur la page **Calculer planning**, définissez les filtres suivants.  
 
     |Date début|Date de fin|N°|  
     |-------------------|-----------------|---------|  
@@ -275,7 +275,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
     Une nouvelle ligne planification est créée pour l'ordre d'assemblage nécessaire de dix unités, dû le 27 janvier. Elle n'a besoin d'aucune modification ; vous pouvez créer la commande.  
 
 5.  Sous l'onglet **Actions**, dans le groupe **Fonctions**, choisissez **Traiter messages d'action**.  
-6.  Dans la fenêtre **Traiter messages d’action**, choisissez le champ **Ordre d’assemblage**, puis sélectionnez **Créer des ordres d’assemblage**.  
+6.  Sur la page **Traiter messages d’action**, choisissez le champ **Ordre d'assemblage**, puis sélectionnez **Créer des ordres d'assemblage**.  
 7.  Cliquez sur le bouton **OK**.  
 
 ### <a name="assembling-and-shipping-the-first-ato-quantity"></a>Assemblage et expédition de la première quantité « assembler pour commande »  
@@ -311,14 +311,14 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
     Revenez à l’exécution des tâches d’expédition.  
 
-8.  Rouvrez la fenêtre **Livraison entrepôt**.  
+8.  Rouvrez la page **Livraison entrepôt**.  
 
     Notez que le champ **Qté prélevée** est toujours blanc sur toutes les lignes. Ceci est dû au fait que vous n’avez toujours pas prélevé les articles à livrer, mais uniquement les composantes nécessaires pour assembler les quantités « assembler pour commande ».  
 
     Révisez l’ordre d’assemblage lié.  
 
 9. Sélectionnez la ligne livraison pour trois unités du kit B.  
-10. Sur le raccourci **Lignes**, sélectionnez **Ligne**, puis **Assembler pour commande**. La fenêtre **Ordre d'assemblage** s'ouvre.  
+10. Sur le raccourci **Lignes**, sélectionnez **Ligne**, puis **Assembler pour commande**. La page **Ordre d'assemblage** s'ouvre.  
 
     Notez que plusieurs champs de l'ordre d'assemblage ne sont pas disponibles parce que la commande est liée à un document de vente.  
 
@@ -330,7 +330,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
     Le champ **Quantité à assembler** est modifiable et permet de prendre en charge des situations où vous voulez livrer partiellement une quantité en inventaire au lieu d’assembler plusieurs unités pour la commande. Pour plus d'informations, voir la section « Scénarios de combinaison » dans [Description des processus Assembler pour commande et Assembler pour stock](assembly-assemble-to-order-or-assemble-to-stock.md).  
 
-12. Fermez la fenêtre **Ordre d'assemblage** pour revenir à la fenêtre **Livraison entrepôt**.  
+12. Fermez la page **Ordre d'assemblage** pour revenir à la page **Livraison entrepôt**.  
 13. Sur la ligne livraison pour trois unités du kit B, dans le champ **Qté à livrer**, entrez **3**.  
 14. Sous l'onglet **Actions**, dans le groupe **Report**, choisissez **Reporter livraison**, puis sélectionnez **Livrer**.  
 
@@ -356,11 +356,11 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
     Ensuite, enregistrez que l’ordre d’assemblage est terminé.  
 
 3.  Sous l’onglet **Naviguer**, dans le groupe **Entrepôt**, choisissez **Ligne expédition entrepôt Assembler pour commande**.  
-4.  Dans la fenêtre **Ligne livraison entrepôt Assembler pour commande**, dans le champ **Qté à livrer**, entrez **5**, puis fermez la fenêtre.  
+4.  Sur la page **Ligne livraison entrepôt Assembler pour commande**, dans le champ **Qté à livrer**, entrez **5**, puis fermez la fenêtre.  
 
-    Remarquez dans la fenêtre **Ordre d'assemblage** que les champs **Quantité à assembler** et **Quantité à consommer** sont renseignés avec les quantités produites et consommées qui seront reportées avec la livraison.  
+    Remarquez sur la page **Ordre d'assemblage** que les champs **Quantité à assembler** et **Quantité à consommer** sont renseignés par les quantités de sortie et les quantités consommées qui seront reportées avec la livraison.  
 
-5.  Fermez la fenêtre **Ordre d’assemblage**.  
+5.  Fermez la page **Ordre d'assemblage**.  
 
 ### <a name="assembling-the-ats-quantity"></a>Assemblage de la quantité « assembler pour stock »  
 
@@ -415,9 +415,9 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
     Revenez à la livraison entrepôt pour effectuer la dernière tâche.  
 
-8.  Rouvrez la fenêtre **Livraison entrepôt**.  
+8.  Rouvrez la page **Livraison entrepôt**.  
 
-    Dans la fenêtre **Livraison entrepôt**, sur la ligne pour dix unités de mesure de kit A, notez que les champs **Qté à livrer** et **Qté prélevée** contiennent désormais la valeur **10**.  
+    Sur la page **Livraison entrepôt**, sur la ligne pour dix unités de kit A, notez que les champs **Qté à livrer** et **Qté prélevée** contiennent désormais la valeur **10**.  
 
 9. Sous l'onglet **Actions**, dans le groupe **Report**, choisissez **Reporter livraison**, puis sélectionnez **Livrer**.  
 

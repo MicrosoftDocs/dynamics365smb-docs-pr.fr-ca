@@ -11,20 +11,20 @@ ms.search.keywords: sales rep
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 24a32d3f1d0883f00dfaaef7924d821a039ca307
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: ddc6ab85e0db5065fffc6187c26ba4d67e1a1ee9
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="set-up-salespeople"></a>Configurer des représentants
 Beaucoup de compagnies souhaitent suivre les performances individuelles d'un collaborateur afin d'avoir une base de calcul pour les commissions et les bonus. Reportez-vous, par exemple, au rapport **Commissions représentant**. Une compagnie peut également souhaiter affecter un représentant à chacun de ses contacts.
 
-Une fois que vous avez configuré un représentant dans la fenêtre **Représentants**, vous pouvez le sélectionner dans le champ **Code représentant** sur tous les enregistrements concernés, par exemple dans les fiches compte du grand livre, client, fournisseur, contacts et promotion. Ensuite, lorsque vous reportez ou configurez des factures, des notes de crédit, des lignes journal, des notes de frais financiers, etc., le code représentant est basculé vers les écritures qui en résultent.
+Une fois que vous avez configuré un représentant sur la page **Représentants**, vous pouvez le sélectionner dans le champ **Code représentant** sur tous les enregistrements concernés, par exemple dans les fiches compte du grand livre, client, fournisseur, contacts et promotion. Ensuite, lorsque vous reportez ou configurez des factures, des notes de crédit, des lignes journal, des notes de frais financiers, etc., le code représentant est basculé vers les écritures qui en résultent.
 
 ## <a name="to-set-up-a-salesperson-code"></a>Pour configurer un code représentant
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Représentants**, puis sélectionnez le lien associé.
-2. Dans la fenêtre **Vendeurs**, sélectionnez l'action **Nouveau**.
+2. Sur la page **Représentants**, sélectionnez l'action **Nouveau**.
 
 Vous pouvez utiliser les représentants dans la gestion des relations et les divers travaux de marketing. Par exemple, vous pouvez affecter des tâches aux représentants, afin que les tâches soient incorporées dans les opportunités de vente affectées au représentant. Pour plus d'informations, voir [Configurer des cycles de vente opportunité et des phases de cycle](marketing-how-setup-opportunity-sales-cycles-stages.md).
 

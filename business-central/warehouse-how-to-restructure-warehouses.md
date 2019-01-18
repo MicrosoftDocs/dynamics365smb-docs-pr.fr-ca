@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 8a04784a354a3f44c3a12c75d16ebc166e7a8c47
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 06233abf9eef229ac86ee31857352af1de5e34e2
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="restructure-warehouses"></a>Restructurer les entrepôts
@@ -56,9 +56,9 @@ Vous avez à présent vidé les emplacements où les articles se trouvaient aupa
 
     1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, puis sélectionnez le lien associé.  
     2.  Sélectionnez la ligne indiquant l'emplacement, puis, choisissez l'action **Zones**.  
-    3.  Dans la fenêtre **Emplacements**, dans le champ **Code type emplacement**, entrez **CQ** pour chacun des anciens emplacements que vous avez vidés à l'étape 3 de la procédure précédente.  
+    3.  Sur la page **Zones**, dans le champ **Code type zone**, entrez **CQ** pour chacune des anciennes zones que vous avez vidées à l'étape 3 de la procédure précédente.  
 
-Vous avez à présent supprimé les zones du flux entrepôt et les avez reclassées en tant que zones CQ. Dans ce type de zone, aucun des champs activité de la fenêtre **Types de zone** n'est sélectionné, ils ne sont dès lors pas pris en compte par le flux d'articles. Pour plus d'informations, voir [Configurer des types de zone](warehouse-how-to-set-up-bin-types.md).  
+Vous avez à présent supprimé les zones du flux entrepôt et les avez reclassées en tant que zones de type CQ. Pour les zones de ce type, aucun des champs d'activité de la page **Types de zone** n'est sélectionné, par conséquent ils ne sont pas pris en compte par le flux d'articles. Pour plus d'informations, voir [Configurer des types de zone](warehouse-how-to-set-up-bin-types.md).  
 
 ## <a name="to-delete-a-bin"></a>Pour supprimer une zone  
 
@@ -69,7 +69,7 @@ Vous avez à présent supprimé les zones du flux entrepôt et les avez reclass�
 
 Si vous sélectionnez le bouton **Oui**, l'emplacement est supprimé pour ne plus être utilisé, mais le code emplacement de toutes les écritures entrepôt reste le même.  
 
-Pour renommer un emplacement de façon à ce que tous les enregistrements associés à cet emplacement soient également renommés, y compris les enregistrements comprennent le contenu des emplacements, les lignes activité entrepôt, les lignes activité entrepôt enregistrées, les lignes feuille entrepôt, les lignes réception entrepôt, les lignes réception entrepôt validées, les lignes expédition entrepôt, les lignes expédition entrepôt validées et les écritures entrepôt, vous pouvez utiliser la fenêtre **Emplacements**.  
+Pour renommer une zone de façon à ce que tous les enregistrements associés à cette zone soient également renommés, y compris les enregistrements comprennent le contenu des zones, les lignes activité entrepôt, les lignes activité entrepôt enregistrées, les lignes feuille entrepôt, les lignes réception entrepôt, les lignes réception entrepôt reportées, les lignes livraison entrepôt, les lignes livraison entrepôt reportées et les écritures entrepôt, vous pouvez utiliser la page **Zones**.  
 
 ## <a name="to-rename-a-bin-and-change-the-bin-code-in-all-records"></a>Pour renommer une zone et modifier le code de zone de tous les enregistrements  
 

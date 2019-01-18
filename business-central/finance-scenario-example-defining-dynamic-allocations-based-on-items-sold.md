@@ -12,11 +12,12 @@ ms.workload: na
 ms.search.keywords: 
 ms.date: 10/01/2018
 ms.author: sgroespe
+redirect_url: finance-define-and-allocate-costs
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 85d58264b14d191389bdf23a792dff7ad30bf9c3
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 3103583c9781c283479c5f66e90f0e875faf46cc
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="scenario-example-defining-dynamic-allocations-based-on-items-sold"></a>Exemple de scénario : Définition des ventilations dynamique sur la base des articles vendus
@@ -28,12 +29,12 @@ Cette rubrique explique comment définir les affectations à l'aide du mode d'af
 ## <a name="to-define-dynamic-allocations-based-on-items-sold-in-the-previous-year"></a>Pour définir les ventilations dynamique en fonction des articles vendus de l'exercice précédent  
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Affectations des coûts**, puis choisissez le lien associé.  
-2.  Dans la fenêtre **Affectation des coûts**, sélectionnez l'action **Nouveau**.  
+2.  Sur la page **Affectation des coûts**, sélectionnez l'action **Nouveau**.  
 3.  Dans le champ **ID**, appuyez sur Entrée ou saisissez un ID.  
 4.  Dans le champ **Niveau**, saisissez **1**.  
 5.  Dans les champs **Valide à partir de** et **Valide jusque**, entrez les dates appropriées.  
 6.  Dans le champ **Code centre de coûts**, entrez **VENTES**.  
-7.  Dans le champ **Type de crédit/coût**, entrez le type de coût **9903**.  
+7.  Dans le champ **Type de crédit\\\/coût**, entrez le type de coût **9903**.  
 8.  Dans le champ **Type coût cible**, entrez le type de coût **9903**.  
 9. Dans le champ **Objet de coûts cible**, sélectionnez **Nouveau** pour créer un nouvel objet de coût ÉQUIPEMENT IT et renseigner les champs, le cas échéant. Sélectionnez **ÉQUIPEMENT IT**. Laissez le champ **Centre de coûts cible** vide.  
 10. Dans le champ **Type cible affectation**, sélectionnez **Tous les coûts** pour définir le mode d'affectation de tous les coûts cumulés.  
@@ -46,9 +47,7 @@ Cette rubrique explique comment définir les affectations à l'aide du mode d'af
     >  [!INCLUDE[d365fin](includes/d365fin_md.md)] utilise les chiffres de ventes des exercices précédents pour calculer une part de 1596,50 DS avec 100 % alloués pour les packages ÉQUIPEMENT IT. Cela signifie que tous les articles vendus au cours de l'exercice précédent seront affectés à l'ÉQUIPEMENT IT des objets de coûts.  
 
 ## <a name="see-also"></a>Voir aussi  
- [Définition de filtres pour les bases d'affectation dynamique](finance-setting-filters-for-dynamic-allocation-bases.md)   
- [Configurer la source d'affectation et ses cibles](finance-how-to-set-up-allocation-source-and-targets.md)   
- [Définition et répartition des coûts](finance-define-and-allocate-costs.md)   
- [Terminologie en comptabilité analytique](finance-terminology-in-cost-accounting.md)   
- [À propos de la comptabilité analytique](finance-about-cost-accounting.md)
+[Définition et répartition des coûts](finance-define-and-allocate-costs.md)  
+[Terminologie en comptabilité analytique](finance-terminology-in-cost-accounting.md)   
+[À propos de la comptabilité analytique](finance-about-cost-accounting.md)
 

@@ -13,10 +13,10 @@ ms.search.keywords: multiple currencies
 ms.date: 10/01/2018
 ms.author: edupont
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 7d22d0849e2212d5f3586935601c6dee73f4e10b
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 23940bd1e5fd29dc92e8285c08679135889701e9
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="update-currency-exchange-rates"></a>Mettre à jour des taux de change devise
@@ -24,7 +24,7 @@ Vous devez définir un code pour chaque devise utilisée si vous achetez ou vend
 
 Les compagnies opérant dans un nombre croissant de pays/régions, il est de plus en plus important qu'elles puissent consulter ou générer des rapports financiers dans plusieurs devises. Le programme prend en charge l'utilisation de plusieurs devises. Dans le programme, votre grand livre est configuré pour utiliser votre devise locale ($) et une autre devise est configurée comme devise additionnelle, à laquelle est affecté un taux de change courant.  
 
- Si vous désignez une deuxième devise comme devise de report additionnelle, [!INCLUDE[d365fin](includes/d365fin_md.md)] enregistre automatiquement les montants en $ et dans cette devise de report additionnelle pour chaque écriture GL, ainsi que d'autres écritures, telles que les écritures TVA. Lorsque les montants écriture sont calculés dans une devise de report additionnelle, les informations de la fenêtre **Taux de change devise** permettent de rechercher le taux de change approprié.  
+ Si vous désignez une deuxième devise comme devise de report additionnelle, [!INCLUDE[d365fin](includes/d365fin_md.md)] enregistre automatiquement les montants en $ et dans cette devise de report additionnelle pour chaque écriture GL, ainsi que d'autres écritures, telles que les écritures TVA. Lorsque les montants écriture sont calculés dans une devise de report additionnelle, les informations de la page **Taux de change devise** permettent de rechercher le taux de change approprié.  
 
 > [!WARNING]  
 >  Il est déconseillé d'utiliser la fonctionnalité de devise de report additionnelle comme base pour une conversion de rapport financier. Cet outil ne permet pas d'effectuer une conversion d'états financiers de filiale étrangère dans le cadre d'une consolidation de compagnie. La fonctionnalité de devise de report additionnelle permet uniquement de préparer des rapports dans une autre devise, comme s'il s'agissait de la devise locale.
@@ -39,21 +39,21 @@ L'utilisation d'une devise de report additionnelle peut faciliter le processus d
 
 - Compagnies qui souhaitent pouvoir générer des rapports financiers dans une devise davantage utilisée au niveau commerce étranger que leur devise locale.  
 
-Plusieurs rapports dans le module Grand livre sont basés sur les écritures. Pour afficher les données financières dans le rapport en devise de report additionnelle, sélectionnez simplement le champ **Afficher dans la devise add.** dans la fenêtre du rapport GL approprié.  
+Plusieurs rapports dans le module Grand livre sont basés sur les écritures. Pour afficher les données financières dans le rapport dans la devise de report additionnelle, sélectionnez simplement le champ **Afficher dans la devise addl.** sur la page du rapport GL approprié.  
 
 ## <a name="to-set-up-a-currency-exchange-rate-service"></a>Configurer un service de taux de change des devises
 Vous pouvez utiliser un service externe pour tenir vos taux de change des devises à jour, par exemple FloatRates.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Services de taux de change devise**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
-3. Dans la fenêtre **Service de taux de change devise**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+3. Sur la page **Service de taux de change devise**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Activez la case à cocher **Activé** pour activer le service.
 
 ## <a name="to-update-currency-exchange-rates-through-a-service"></a>Pour mettre à jour les taux de change des devises à partir d'un service
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Devises**, puis choisissez le lien associé.
 2. Choisissez l'option **Mettre à jour les taux de change**.
 
-La valeur dans le champ **Taux de change** de la fenêtre **Devises** est mise à jour avec le dernier taux de change des devises.
+La valeur dans le champ **Taux de change** de la page **Devises** est mise à jour avec le dernier taux de change des devises.
 
 ## <a name="see-also"></a>Voir aussi
 [Clôture des exercices et des périodes](year-close-years-periods.md)  

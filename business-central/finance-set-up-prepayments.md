@@ -12,10 +12,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: edupont
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: b4469b91f8bb377e4fef5700063d6085ac700605
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 7dc774654b35ce9b08885fd4ad18539e3ce5ebd5
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="set-up-prepayments"></a>Configuration des acomptes
@@ -30,23 +30,23 @@ Puisque le montant prépayé appartient à l'acheteur jusqu'à ce qu'il ait reç
 ## <a name="to-add-prepayment-accounts-to-the-general-posting-setup"></a>Ajouter des comptes paiement anticipé à la configuration de report générale  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration du report général**, puis sélectionnez le lien associé.
-2. Dans la fenêtre **Configuration report général**, vous devez renseigner les champs suivants :  
+2. Sur la page **Configuration du report général**, vous devez renseigner les champs suivants :  
 
     - **Compte de paiements anticipés de vente**  
     - **Compte de paiements anticipés d'achat**  
 
-Si vous n'avez pas encore configuré de comptes GL pour les paiements anticipés, vous pouvez le faire dans la fenêtre **Liste compte du grand livre**.  
+Si vous n'avez pas encore configuré de comptes GL pour les paiements anticipés, vous pouvez le faire sur la page **Liste compte GL**.  
 
 ## <a name="to-set-up-number-series-for-prepayment-documents"></a>Configurer des séries de numéros pour des documents paiement anticipé  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration ventes et à recevoir**, puis sélectionnez le lien associé.
-2. Dans la fenêtre **Paramètres ventes**, renseignez les champs suivants :  
+2. Sur la page **Configuration ventes et à recevoir**, renseignez les champs suivants :  
 
    - **N° factures pour paiement anticipé reporté**
    - **N° notes de crédit pour paiement anticipé reporté**
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration achats et à payer**, puis sélectionnez le lien associé.
-2. Dans la fenêtre **Paramètres achats**, renseignez les champs suivants :
+2. Sur la page **Configuration ventes et à recevoir**, renseignez les champs suivants :
 
     - **N° factures pour paiement anticipé reporté**
     - **N° notes de crédit pour paiement anticipé reporté**
@@ -59,7 +59,7 @@ Pour un article, vous pouvez configurer un pourcentage de paiement anticipé par
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Articles**, puis sélectionnez le lien associé.
 2. Sélectionnez un article, puis cliquez sur l'action **Pourcentages paiement anticipé**.  
-3. Dans la fenêtre **Pourcentages paiement anticipé vente**, renseignez autant de champs que nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+3. Sur la page **Pourcentages paiement anticipé vente**, renseignez autant de champs que nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 Pour un client ou un fournisseur, vous pouvez configurer un pourcentage de paiement anticipé par défaut pour tous les articles et tous les types de lignes vente. Vous entrez cette valeur dans la fiche client ou fournisseur.
 

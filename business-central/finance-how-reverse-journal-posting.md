@@ -13,10 +13,10 @@ ms.search.keywords: reimbursement
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: beed335b93ef9211e4fc53c25f97b3fed6137348
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: cc624d52ce61cea4a8e92bb7d37e07ad8c769393
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="reverse-postings"></a>Inverser des reports
@@ -31,10 +31,10 @@ Si vous avez effectué un report de quantité négatif incorrect, comme un bon d
 Si vous avez effectué un report de quantité positif incorrect, comme un retour commande achat avec, par exemple, un nombre d'articles incorrect et que vous l'avez reporté comme étant livré (mais non facturé), vous pouvez annuler ce report.   
 
 ## <a name="to-reverse-the-journal-posting-of-a-general-ledger-entry"></a>Pour inverser le report journal d'une écriture grand livre
-Vous pouvez inverser des écritures dans toutes les fenêtres **Écritures comptables**. La procédure suivante est basées sur la fenêtre **Écritures**.
+Vous pouvez inverser des écritures sur toutes les pages **Écritures**. La procédure suivante se base sur la page **Écritures**.
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Écritures**, puis sélectionnez le lien associé.
 2. Sélectionnez l'écriture à contrepasser, puis cliquez sur l'action **Contrepasser la transaction**. Notez qu'elle doit provenir d'un report journal.
-3. Dans la fenêtre **Contrepasser les écritures de transaction**, sélectionnez l'écriture voulue, puis sélectionnez l'action **Contrepasser**.
+3. Sur la page **Inverser les écritures de transaction**, sélectionnez l'écriture voulue, puis sélectionnez l'action **Inverser**.
 4. Choisissez le bouton **Oui** dans le message de confirmation.
 
 ## <a name="to-undo-a-quantity-posting-on-a-posted-purchase-receipt"></a>Pour annuler un report de quantité sur une réception d'achat reportée  
@@ -62,7 +62,7 @@ Vous pouvez inverser des écritures dans toutes les fenêtres **Écritures compt
 
     Retournez à présent au retour achat pour un nouveau report.  
 
-5.  Dans la fenêtre **Livraison retour reportée**, notez le numéro situé dans le champ **N° retour** .  
+5.  Sur la page **Livraison retour reportée**, notez le numéro situé dans le champ **N° retour** .  
 6.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Retours achat**, et sélectionnez le lien associé.  
 7.  Ouvrez la commande retour concernée, puis sélectionnez l'action **Rouvrir**.  
 8.  Corrigez l'écriture dans le champ **Quantité** et reportez à nouveau le retour achat.  

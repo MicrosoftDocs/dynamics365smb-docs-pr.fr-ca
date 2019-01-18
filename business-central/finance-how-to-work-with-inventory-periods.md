@@ -13,10 +13,10 @@ ms.search.keywords: inventory, periods
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: e6873ca2e4f4ab082bddad90f1ab59edb34a2a63
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 1aae1d32b86000ea8a5f867f1ee4c07d8bc1ff09
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="work-with-inventory-periods"></a>Utiliser les périodes d'inventaire
@@ -52,7 +52,7 @@ Cela signifie que toutes les quantités de transaction sortante, telles que cell
 
      Exécutez le traitement en lot **Reporter le coût de l'inventaire au grand livre** pour vous assurer que tous les coûts sont reportés dans le grand livre.  
 3. Cliquez sur l'action **Reporter inventaire en grand livre**.  
-4. Ouvrez la fenêtre **Périodes d'inventaire** et sélectionnez la période d'inventaire que vous voulez fermer.  
+4. Ouvrez la page **Périodes d'inventaire** et sélectionnez la période d'inventaire que vous voulez fermer.  
 5. Choisissez l'action **Fermer la période**. Une fois la période d'inventaire fermée, vous ne pouvez pas reporter de modifications d'inventaire avant la date de fin. Le coût de tous les articles doit être ajusté avec le traitement par lots **Ajuster coût écritures article** avant la clôture de la période inventaire.  
 6. Choisissez le bouton **Oui** pour confirmer la clôture de la période, ou choisissez **Non** pour annuler la clôture.  
 7. La période d'inventaire est fermée et un message de confirmation est affiché une fois l'opération terminée.  

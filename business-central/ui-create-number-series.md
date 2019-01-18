@@ -12,17 +12,17 @@ ms.search.keywords: numbers, numbering
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 6a61d7b07b2e04259bb4db386b651c4711ac7b09
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 46131d6ad5f77a02ffe33d24f1210a226c3041c1
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="create-number-series"></a>Créer des séries de numéros
 Pour chaque compagnie que vous configurez, vous devez affecter des codes d'identification uniques aux éléments tels que les comptes du grand livre, les comptes client et fournisseur, les factures et d'autres documents. La numérotation est importante, pas uniquement pour l'identification. Un système de numérotation bien conçu facilite également la gestion et l'analyse de la compagnie et permet de réduire les erreurs de saisie des données.
 
 > [!NOTE]  
->   Il est recommandé d'utiliser les mêmes codes souche de numéros que ceux répertoriés dans la fenêtre **Liste de souches de numéros** de la société de démonstration CRONUS. Des codes tels que *P-INV+* ne vont pas vous paraître significatifs au premier abord, mais [!INCLUDE[d365fin](includes/d365fin_md.md)] dispose d'un certain nombre de paramètres par défaut en fonction de ces codes souche de numéros.
+>   Il est recommandé d'utiliser les mêmes codes série de numéros que ceux répertoriés sur la page **Liste de séries de numéros** de la compagnie de démonstration CRONUS. Des codes tels que *P-INV+* ne vont pas vous paraître significatifs au premier abord, mais [!INCLUDE[d365fin](includes/d365fin_md.md)] dispose d'un certain nombre de paramètres par défaut en fonction de ces codes souche de numéros.
 
 Vous créez un système de numérotation en définissant un ou plusieurs codes pour chaque type de données de base ou de document. Par exemple, vous pouvez définir un code pour la numérotation de clients, un code pour la numérotation des factures vente et un autre code pour la numérotation des documents dans les feuilles comptabilité. Une fois que vous avez défini un code, vous devez définir au moins une ligne série de numéros. Celle-ci contient des informations telles que les premier et dernier numéros de la série et la date début. Vous pouvez définir plusieurs lignes série de numéros par code série de numéros, avec une date début différente pour chaque ligne. Les séries sont utilisées de manière consécutive, chaque série commençant à la date début respective.
 
@@ -38,16 +38,16 @@ Le champ **N°** peut être renseigné de trois manières :
 1. S'il existe une seule série de numéros pour le type de document ou de fiche pour laquelle la case **N° par défaut** est cochée et la case **N° manuels** n'est pas cochée, alors le champ est renseigné automatiquement avec le numéro suivant de la série, et le champ **N°** n'est pas visible.
 
     > [!NOTE]  
-    > Si la série de numéros ne fonctionne pas, par exemple parce qu'elle manque de numéros, le champ **N°** est visible et vous pouvez saisir manuellement un numéro ou résoudre les problèmes dans la fenêtre **Liste de souches de numéros**.
+    > Si la série de numéros ne fonctionne pas, par exemple parce qu'elle manque de numéros, le champ **N°** est visible et vous pouvez saisir manuellement un numéro ou résoudre les problèmes sur la page **Liste de souches de numéros**.
 
-2. S'il existe plusieurs séries de numéros pour le type de document ou de fiche, et si la case **N° par défaut** n'est pas cochée pour la série de numéros qui est actuellement affectée, le champ **N°** est visible, et vous pouvez accéder à la fenêtre **Liste Série de n°** et sélectionnez la série de numéros que vous souhaitez utiliser. Le numéro suivant dans la souche sélectionnée est inséré dans le champ **N°** .
+2. S'il existe plusieurs séries de numéros pour le type de document ou de fiche, et si la case **N° par défaut** n'est pas cochée pour la série de numéros qui est actuellement affectée, le champ **N°** est visible, et vous pouvez accéder à la page **Liste Série de n°** et sélectionnez la série de numéros que vous souhaitez utiliser. Le numéro suivant dans la souche sélectionnée est inséré dans le champ **N°** .
 
 3. Si vous n'avez défini aucune série de numéros pour le type de document ou de fiche ou si le champ **N° manuels** est sélectionné pour la série de numéros, alors le champ **N°** est visible et vous devez saisir manuellement les numéros. Vous pouvez entrer au maximum 20 caractères, des chiffres ou des lettres.
 
-Lorsque vous ouvrez un nouveau document ou une nouvelle fiche pour lequel/laquelle il existe une série de numéros, la fenêtre **Configuration séries de n°** correspondante s'ouvre pour vous permettre de configurer une série de numéros pour ce type de document ou de fiche, avant de continuer avec une autre saisie de donnée.
+Lorsque vous ouvrez un nouveau document ou une nouvelle fiche pour lequel il existe une série de numéros, la page **Configuration série de n°** s'ouvre afin de pouvoir configurer une série de numéros pour ce type de document ou fiche, avant de continuer avec une autre saisie de donnée.
 
 > [!NOTE]  
-> Si vous devez activer la numérotation manuelle, par exemple, les nouvelles fiches article qui ont été créées avec un processus de migration des données pour lesquelles le champ **N°** est masqué par défaut, allez ensuite dans la fenêtre **Configuration de l'inventaire** et choisissez le champ **N° article** pour ouvrir et définir la série de numéros associée sur **N° manuels**.
+> Si vous devez activer la numérotation manuelle, par exemple, les nouvelles fiches article qui ont été créées avec un processus de migration des données pour lesquelles le champ **N°** est masqué par défaut, allez ensuite sur la page **Configuration de l'inventaire** et choisissez le champ **N° article** pour ouvrir et définir la série de numéros sur **N° manuels**.
 
 ## <a name="to-create-a-new-number-series"></a>Pour créer des séries de numéros
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Souches de n°**, puis sélectionnez le lien associé.
@@ -57,7 +57,7 @@ Lorsque vous ouvrez un nouveau document ou une nouvelle fiche pour lequel/laquel
 ## <a name="to-set-up-where-a-number-series-is-used"></a>Pour définir l'emplacement d'utilisation de la série de numéros
 La procédure suivante indique comment définir des séries de numéros pour la zone Ventes. La procédure est identique pour d'autres secteurs.
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Ventes**, puis sélectionnez le lien associé.
-2. Dans la fenêtre **Ventes**, dans le raccourci **Souche de numéros**, sélectionnez la souche de numéros souhaitée pour chaque fiche ou document vente.
+2. Sur la page **Ventes**, dans le raccourci **Série de numéros**, sélectionnez la série de numéros souhaitée pour chaque fiche ou document vente.
 
 Le numéro sélectionné est désormais utilisé pour renseigner le champ **N°** sur la fiche ou le document en question, en fonction des paramètres définis sur la ligne série de numéros.
 
@@ -68,7 +68,7 @@ Si vous avez défini plusieurs codes série de numéros pour un même type d'inf
 2. Sélectionnez la ligne avec la souche de numéros pour laquelle vous souhaitez créer des relations, puis cliquez sur **Relations**.
 3. Dans le champ **Code souche**, entrez le code de la souche de numéros à lier à la souche sélectionnée à l'étape 2.
 4. Ajoutez une ligne pour chaque code à lier à la série de numéros sélectionnée.
-5. Fermez la fenêtre.
+5. Fermez la page.
 
 Désormais, pour créer un élément nécessitant un numéro, vous pourrez utiliser les liens ainsi créés et choisir parmi les séries de numéros liées.
 

@@ -14,10 +14,10 @@ ms.date: 11/13/2018
 ms.author: sgroespe
 redirect_url: finance-set-up-cost-accounting
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 3eb90611939dce2134d9413812918c2afb82c083
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 616fcbe937e556c17e8beb79f68bc961ea8bbe18
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="set-up-cost-objects"></a>Configurer les objets de coûts
@@ -27,7 +27,7 @@ Les objets de coûts sont les projets, les biens ou les services d'une compagnie
 * Créez un nouveau plan des objets de coûts, qui est indépendant du grand livre ou ajoutez un nouvel objet de coûts à un plan des objets de coûts existant. Vous devez créer chaque objet de coût individuellement.  
 
 ## <a name="to-transfer-dimension-values-from-the-general-ledger-to-the-chart-of-cost-objects"></a>Pour transférer des valeurs de dimension du grand livre vers le plan des objets de coûts  
-1.  Définissez un axe analytique pour être celui des coûts associés dans la fenêtre **Actualiser axes analytiques CA**. Seules les valeurs de cette dimension sont transférées.  
+1.  Définissez une dimension comme dimension d'objet de coûts sur la page **Actualiser dimensions CA**. Seules les valeurs de cette dimension sont transférées.  
 2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable des objets de coûts**, puis sélectionnez le lien associé.  
 3.  Choisissez l'action **Extraire les objets de coûts de la dimension** pour transférer des valeurs de dimension vers le plan comptable des objets de coûts. La fonction transfère les axes analytiques que vous avez définis dans l'étape 1.  
 
@@ -36,10 +36,10 @@ Les objets de coûts sont les projets, les biens ou les services d'une compagnie
 
 Le plan des objets de coûts comprend désormais toutes les valeurs de dimension spécifiées provenant du grand livre. Il inclut les titres et les sous-totaux.  
 
-## <a name="to-create-new-cost-objects-in-the-chart-of-cost-objects-window"></a>Pour créer de nouveaux coûts associés dans la fenêtre Plan comptable des coûts associés  
-Vous pouvez configurer et gérer les coûts associés, soit dans la fenêtre **Fiche coûts associés**, soit dans la fenêtre **Plan comptable des coûts associés**. Dans cette procédure, vous configurez de nouveaux coûts associés dans la fenêtre **Plan comptable des coûts associés**.  
+## <a name="to-create-new-cost-objects-in-the-chart-of-cost-objects-page"></a>Pour créer de nouveaux objets de coûts sur la page Plan comptable des objets de coûts  
+Vous pouvez configurer et gérer les objets de coûts, soit sur la page **Fiche objet de coûts**, soit sur la page **Plan comptable des objets de coûts**. Dans cette procédure, vous configurez de nouveaux objets de coûts sur la page **Plan comptable des objets de coûts**.  
 
-1.  Ouvrez la fenêtre **Plan comptable des coûts associés** en mode édition.  
+1.  Ouvrez la page **Plan comptable des objets de coûts** en mode édition.  
 2.  Dans le champ **Code**, entrez le code coût associé. Tous les coûts associés doivent avoir un code.  
 3.  Dans le champ **Nom**, saisissez le nom du coût associé.  
 4.  Sélectionnez la flèche déroulante dans le champ **Type ligne** pour spécifier l'objectif de l'objet de coûts.  

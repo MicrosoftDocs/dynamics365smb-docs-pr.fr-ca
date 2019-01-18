@@ -13,10 +13,10 @@ ms.search.keywords: design, reconciliation, general ledger, inventory
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 67392093b4643b6083514859655ce3adc61d1d5b
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 9655a65fe6a5e6f90ba2c0f1a00c6c8f2cc977ad
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="design-details-reconciliation-with-the-general-ledger"></a>Détails de conception : rapprochement de GL
@@ -35,7 +35,7 @@ Les dates de report des écritures sont fixées à la date de report de l'écrit
 Lorsque vous exécutez ce traitement en lot **Reporter le coût de l'inventaire au grand livre**, il se peut que vous receviez des erreurs en raison d'une configuration manquante ou d'une configuration de dimension incompatible. Si le traitement en lot détecte des erreurs dans la configuration de dimension, il les ignore et utilise les dimensions de l'écriture valeur. Pour toute autre erreur, le traitement par lots ignore la validation des écritures valeur et les répertorie à la fin de l'état dans la section intitulée **Écritures ignorées**. Pour reporter ces écritures, vous devez d'abord corriger les erreurs. Pour afficher la liste des erreurs avant d'exécuter le traitement en lot, vous pouvez exécuter le rapport **Reporter le coût de l'inventaire au grand livre - Test**. Ce rapport répertorie toutes les erreurs détectées durant un test de report. Vous pouvez corriger les erreurs, puis exécuter le traitement en lot de report des coûts inventaire sans ignorer aucune entrée.  
 
 ## <a name="automatic-cost-posting"></a>Report coûts automatique  
-Pour configurer l'ajustement des coûts à exécuter automatiquement lorsque vous validez une transaction de stock, activez la case à cocher **Compta. coûts automatique** de la fenêtre **Paramètres stock**. La date de report de l'écriture est identique à la date de report de l'écriture article.  
+Pour configurer l'exécution automatique du report des coûts dans le grand livre lorsque vous reportez une transaction d'inventaire, activez la case à cocher **Report coûts automatique** sur la page **Configuration de l'inventaire**. La date de report de l'écriture est identique à la date de report de l'écriture article.  
 
 ## <a name="account-types"></a>Types de compte  
 Lors du rapprochement, les valeurs d'inventaire sont reportées sur le compte de l'inventaire dans le bilan. Le même montant, mais avec le signe opposé, est reporté sur le compte de contrepartie approprié. Généralement, le compte de contrepartie est un compte état des résultats. Néanmoins, lorsque vous reportez des coûts directs liés à la consommation ou la production, le compte de solde est un compte de bilan. Le type de l'écriture article et de l'écriture valeur détermine sur quel compte du grand livre reporter.  
@@ -45,7 +45,7 @@ Le type d'écriture indique le compte du grand livre sur lequel reporter. Ceci e
 ### <a name="example"></a>Exemple :  
 L'exemple suivant présente une chaîne de vélo qui est fabriquée à partir des liens achetés. Cet exemple montre la manière dont les différents types de compte du grand livre sont utilisés dans un scénario courant.  
 
-La case **Report coût prévu au GL** de la fenêtre **Configuration de l'inventaire** est cochée et la configuration suivante est définie.  
+La case à cocher **Report coût prévu au GL** de la page **Configuration inventaire** est activée et la configuration suivante est définie.  
 
 Le tableau suivant montre la manière dont le lien est paramétré sur la fiche article.  
 

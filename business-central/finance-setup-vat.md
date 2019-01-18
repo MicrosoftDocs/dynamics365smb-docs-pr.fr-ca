@@ -11,10 +11,10 @@ ms.search.keywords: VAT, posting, tax, value-added tax
 ms.date: 10/01/2018
 ms.author: bholtorf
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: f23993964f0803f2153c2d190a23532113e5ddd2
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 5f22880f56cd2834c9bd92061f166cd457bc58c1
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 
@@ -125,7 +125,7 @@ Les relevés fiscaux vous permettent de calculer le montant du relevé fiscal po
 Pour définir un relevé fiscal, procédez comme suit :
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Relevés fiscaux**, puis sélectionnez le lien associé.  
-2. Choisissez le champ **Nom**, puis choisissez **Nouveau** dans la fenêtre **Noms de relevé fiscal**.
+2. Choisissez le champ **Nom**, puis sélectionnez **Nouveau** sur la page **Noms de relevé fiscal**.
 3. Renseignez les champs requis. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 > [!Tip]
@@ -148,7 +148,7 @@ Vous pouvez modifier ou supprimer une clause TVA, et les modifications que vous 
 
 ### <a name="to-set-up-vat-clauses"></a>Pour configurer des clauses TVA
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clauses TVA**, puis sélectionnez le lien associé.  
-2. Sur la fenêtre **Clauses TVA**, créez une ligne.  
+2. Sur la page **Clauses TVA**, créez une ligne.  
 3. Dans le champ **Code**, entrez un identificateur pour la clause. Vous utilisez ce code pour affecter la clause à des groupes comptabilisation TVA.  
 4. Dans le champ **Description**, saisissez le texte que vous souhaitez afficher sur les documents pouvant inclure la TVA. Dans le champ **Description 2**, entrez du texte supplémentaire, si nécessaire. Le texte s'affiche sur de nouvelles lignes.  
 5. Facultatif : pour affecter immédiatement la clause TVA à un paramètre comptabilisation TVA, sélectionnez **Paramètres**, puis sélectionnez la clause. Si vous souhaitez attendre, vous pouvez affecter la clause ultérieurement sur la page Configuration report taxe.  
@@ -178,7 +178,7 @@ Pour configurer des codes pour la TVA à l'importation, procédez comme suit :
 ## <a name="to-verify-vat-registration-numbers"></a>Pour vérifier les numéros d'identification TVA
 Il est important que les numéros d'identification TVA des clients, fournisseurs et contacts soient valides. Par exemple, les compagnies modifient parfois leur état d'assujettissement à la TVA, et dans certains pays, les autorités fiscales peuvent vous demander de fournir des rapports, tels que le rapport Liste des ventes UE, qui répertorient les numéros d'identification TVA que vous utilisez lors de vos activités.
 
-La Commission européenne fournit le service VIES de validation des numéros TVA sur son site Web, qui est public et gratuit. [!INCLUDE[d365fin](includes/d365fin_md.md)] vous permet de supprimer cette étape et d'utiliser le service VIES pour valider et suivre les numéros de TVA des clients, fournisseurs et contacts directement à partir des fiches client, fournisseur et contact. Le service de [!INCLUDE[d365fin](includes/d365fin_md.md)] s'appelle **Services validation N° id. intracomm. Union européenne**. Il est disponible sur la fenêtre **Connexions au service**, et vous pouvez commencer à l'utiliser immédiatement. La connexion au service est gratuite, et l'inscription n'est pas obligatoire.
+La Commission européenne fournit le service VIES de validation des numéros TVA sur son site Web, qui est public et gratuit. [!INCLUDE[d365fin](includes/d365fin_md.md)] vous permet de supprimer cette étape et d'utiliser le service VIES pour valider et suivre les numéros de TVA des clients, fournisseurs et contacts directement à partir des fiches client, fournisseur et contact. Le service de [!INCLUDE[d365fin](includes/d365fin_md.md)] s'appelle **Services validation N° id. intracomm. Union européenne**. Il est disponible sur la page **Connexions au service**, et vous pouvez commencer à l'utiliser immédiatement. La connexion au service est gratuite, et l'inscription n'est pas obligatoire.
 
 > [!Note]
 > Pour activer les Services validation N° id. intracomm. Union européenne, vous devez disposer des autorisations de l'administrateur.
@@ -241,7 +241,7 @@ Avant de configurer l'outil de modification du taux de TVA, vous devez vous pré
 
 ### <a name="to-set-up-product-posting-group-conversion"></a>Pour configurer une conversion du groupe de report produit  
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration modification taux TVA**, puis sélectionnez le lien associé.  
-2. Dans la fenêtre **Configuration modification taux TVA**, sous l'onglet **Accueil**, dans le groupe **Processus**, choisissez **Conv. groupe de report produit TVA** ou **Conv. groupe de report produit général**.  
+2. Sur la page **Configuration modification taux TVA**, sous l'onglet **Accueil**, dans le groupe **Processus**, choisissez **Conv. groupe de report produit TVA** ou **Conv. groupe de report produit général**.  
 3. Dans le champ **Code début**, saisissez le groupe de comptabilisation actuel.  
 4. Dans le champ **Code fin**, saisissez le nouveau groupe de comptabilisation.  
 

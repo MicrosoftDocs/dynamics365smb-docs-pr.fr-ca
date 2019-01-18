@@ -13,30 +13,30 @@ ms.search.keywords: policy, coverage
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: faf013087b29f758cf86ff2a10d407fe74f85f95
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 774d578d6dfe0533bfc900f796dfe39383ad869b
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="insure-fixed-assets"></a>Assurer les immobilisations
 Une police d'assurance pour une immobilisation est représentée par une fiche assurance. Vous pouvez attribuer une immobilisation ou plusieurs immobilisations à une police d'assurance.
 
-Vous attribuez une immobilisation à une police d'assurance lors de la validation sur les écritures couverture assurance à partir de la fenêtre **Feuille assurance**.
+Vous attribuez une immobilisation à une police d'assurance lors du report sur le livre couverture d'assurance à partir de la page **Journal assurance**.
 
-En outre, vous pouvez attribuer une immobilisation à une police d'assurance et créer des écritures de couverture lorsque vous reportez son coût d'acquisition. Pour ce faire, reportez un coût d'acquisition à partir du journal immobilisation où le champ **N° assurance** est rempli. La case **Compta. assurance auto.** de la fenêtre **Paramètres immobilisations** doit être cochée. Pour en savoir plus, voir la section « Reporter manuellement une acquisition d'immobilisation avec le journal GL immobilisation » dans [Acquérir des immobilisations](fa-how-acquire.md).
+En outre, vous pouvez attribuer une immobilisation à une police d'assurance et créer des écritures de couverture lorsque vous reportez son coût d'acquisition. Pour ce faire, reportez un coût d'acquisition à partir du journal immobilisation où le champ **N° assurance** est rempli. La case **Report assurance auto.** de la page **Configuration des immobilisations** doit être cochée. Pour en savoir plus, voir la section « Reporter manuellement une acquisition d'immobilisation avec le journal GL immobilisation » dans [Acquérir des immobilisations](fa-how-acquire.md).
 
-Si la case **Compta. assurance auto.** n'est pas cochée dans la fenêtre **Paramètres immobilisations**, la validation des acquisitions à partir de la feuille immobilisation créera des lignes dans la fenêtre **Feuille assurance**, que vous devrez ensuite valider manuellement.
+Si la case **Report assurance auto.** n'est pas cochée sur la page **Configuration immobilisations**, le report des acquisitions à partir du journal immobilisation créera des lignes sur la page **Journal assurance**, que vous devrez ensuite reporter manuellement.
 
 > [!WARNING]  
->   Si vous ne cochez pas la case **Compta. assurance auto.** dans la fenêtre **Paramètres immobilisations**, votre feuille assurance devrait être basée sur un modèle feuille sans souche de numéros. En effet, les numéros de document insérés à partir de la ligne journal immobilisation entreront sinon en conflit avec les séries de numéros du journal assurance. Pour en savoir plus concernant les modèles journal et les lots, voir [Configurer les informations générales relatives aux immobilisations](fa-how-setup-general.md).
+>   Si vous ne cochez pas la case **Report assurance auto.** sur la page **Configuration immobilisations**, votre journal assurance devrait être basé sur un modèle journal sans série de numéros. En effet, les numéros de document insérés à partir de la ligne journal immobilisation entreront sinon en conflit avec les séries de numéros du journal assurance. Pour en savoir plus concernant les modèles journal et les lots, voir [Configurer les informations générales relatives aux immobilisations](fa-how-setup-general.md).
 
 Après avoir attribué une immobilisation à une police d'assurance, la case **Assuré** est cochée sur la fiche immobilisation. Lors de la vente de l'immobilisation, la case est automatiquement décochée.
 
 ## <a name="to-create-or-modify-an-insurance-card"></a>Pour créer ou modifier une fiche assurance
 Une police d'assurance pour une immobilisation doit être représentée par une fiche assurance.
 
-Lorsque vous recevez des informations concernant les modifications du montant de la couverture, vous pouvez saisir les nouvelles informations sur la **fiche assurance** afin de vous garantir que vous avez analysé correctement la couverture de la police d'assurance.  
+Lorsque vous recevez des informations concernant les modifications du montant de la couverture, vous devez saisir les nouvelles informations sur la page **Fiche assurance** pour vous assurer que vous avez analysé correctement la couverture de la police d'assurance.  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Assurance**, puis sélectionnez le lien associé.
 2. Choisissez l'action **Nouveau** pour créer une fiche pour une police d'assurance. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -45,7 +45,7 @@ Lorsque vous recevez des informations concernant les modifications du montant de
 ## <a name="to-assign-a-fixed-asset-to-an-insurance-policy-by-posting-from-the-insurance-journal"></a>Pour affecter une immobilisation à une police d'assurance en effectuant un report à partir du journal assurance
 Vous affectez une immobilisation à une police d'assurance en reportant sur les écritures couverture d'assurance.  
 
-La procédure suivante explique comment créer une ligne journal assurance manuellement. Si la case **Compta. assurance auto.** est cochée dans la fenêtre **Paramètres immobilisations**, les lignes feuille assurance sont ensuite créées automatiquement lorsque vous validez des coûts d'acquisition. Dans ce cas, tout ce que vous avez à faire consiste à reporter le journal.  
+La procédure suivante explique comment créer une ligne journal assurance manuellement. Si la case **Report assurance auto.** est cochée sur la page **Configuration immobilisations**, les lignes journal assurance sont ensuite créées automatiquement lorsque vous reportez des coûts d'acquisition. Dans ce cas, tout ce que vous avez à faire consiste à reporter le journal.  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux assurance**, puis sélectionnez le lien associé.  
 2. Ouvrez le journal pertinent, puis complétez les lignes journal, le cas échéant.  
@@ -65,12 +65,12 @@ Vous pouvez utiliser le traitement par lots **Réévaluer assurance** pour mettr
     >   Dans le champ **Taux de réévaluation**, vous saisissez une baisse de 5 %, par exemple, soit 95, tout en saisissant une hausse de 2 %, soit 102.  
 3. Cliquez sur le bouton **OK**.  
 
-   Le traitement par lots calcule le nouveau montant en tant que pourcentage de la valeur totale assurée à partir de la fenêtre **Statistiques assurance**, puis crée une ligne dans la feuille assurance.  
+   Le traitement en lot calcule le nouveau montant en tant que pourcentage de la valeur totale assurée à partir de la page **Statistiques assurance**, puis crée une ligne dans le journal assurance.  
 4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux assurance**, puis sélectionnez le lien associé.  
 5. Ouvrez le journal assurance pertinent, examinez les valeurs créées, puis reportez-les sur les écritures couverture d'assurance.  
 
 ## <a name="to-monitor-insurance-coverage"></a>Pour surveiller la couverture assurance
-[!INCLUDE[d365fin](includes/d365fin_md.md)] fournit des rapports dédiés et des fenêtres de statistiques à utiliser pour analyser les polices d'assurance et si vos immobilisations sont sur- ou sous-assurées.  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] fournit des rapports dédiés et des pages de statistiques à utiliser pour analyser les polices d'assurance et si vos immobilisations sont sur- ou sous-assurées.  
 
 ### <a name="overview-of-insurance-policies"></a>Aperçu des polices d'assurance
 Pour obtenir un aperçu de vos polices d'assurance, afficher un aperçu ou imprimer l'état **Assurances - Liste**. Le rapport indique toutes les polices et les champs les plus importants des fiches assurance.  
@@ -81,8 +81,8 @@ Pour visualiser les immobilisations couvertes par une assurance et à quelle hau
 ### <a name="overunder-coverage"></a>Sur-assurance et sous-assurance
 Vous pouvez vérifier si les immobilisations sont sur- ou sous-assurées comme suit :  
 
-* La fenêtre **Statistiques assurance**. Un montant positif dans le champ **Sur/Sous-assuré** signifie que l'immobilisation est sur-assurée. Un montant négatif signifie qu'elle est sous-assurée.  
-* La fenêtre **Statistiques immobilisation**. Choisissez le champ **Valeur totale assurée** pour afficher la fenêtre **Écritures comptables couverture assur.**.  
+* La page **Statistiques assurance**. Un montant positif dans le champ **Sur/Sous-assuré** signifie que l'immobilisation est sur-assurée. Un montant négatif signifie qu'elle est sous-assurée.  
+* La page **Statistiques immobilisation**. Choisissez le champ **Valeur totale assurée** pour afficher la page **Écritures couverture assurance.**.  
 * L'état **Sur-assurance et sous-assurance**.  
 * L'état **Assurance - Analyse**.  
 
@@ -96,7 +96,7 @@ Vous pouvez visualiser les écritures que vous avez créées dans le grand livre
 2. Sélectionnez la police d'assurance appropriée, puis sélectionnez l'action **Écritures comptables couverture**.  
 
 ## <a name="to-view-the-total-insurance-value-of-fixed-assets"></a>Pour afficher la valeur d'assurance totale des immobilisations
-Une fenêtre de matrice dédiée affiche les valeurs d'assurance qui sont enregistrées pour chaque police d'assurance pour chaque immobilisation suite aux montants d'assurance que vous avez reportés.  
+Une page de matrice dédiée affiche les valeurs d'assurance qui sont enregistrées pour chaque police d'assurance pour chaque immobilisation suite aux montants d'assurance que vous avez reportés.  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Assurance**, puis sélectionnez le lien associé.  
 2. Sélectionnez la police d'assurance appropriée, puis sélectionnez l'action **Valeur totale assurée par immo.**.  

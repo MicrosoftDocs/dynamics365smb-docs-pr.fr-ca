@@ -11,10 +11,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 2441c41c6bb28691a855ac4b5d50359b95b23f7d
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 0ba61572a237e177b763b7b8a2e13ca7ec93eea4
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="walkthrough-receiving-and-putting-away-in-basic-warehouse-configurations"></a>Procédure pas à pas : Réception et rangement dans les configurations de stockage de base
@@ -32,7 +32,7 @@ Pour plus d'informations, reportez\-vous à [Détails de conception : flux d'en
 La procédure pas à pas suivante illustre la méthode B dans la table précédente.  
 
 ## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas  
-Pour les configurations entrepôt de base, lorsque votre emplacement est configuré pour exiger un traitement des rangements mais pas un traitement des réceptions, vous utilisez la fenêtre **Rangement inventaire** pour enregistrer et reporter les informations de rangement et de réception pour vos documents sources entrants. Le document source entrant peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un bon de production dont la production est prête à être rangée.
+Pour les configurations d'entrepôt de base, lorsque votre emplacement est défini pour exiger un traitement des rangements mais pas un traitement des réceptions, vous utilisez la page **Rangement inventaire** pour enregistrer et reporter les informations de rangement et de réception pour vos documents origine entrants. Le document source entrant peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un bon de production dont la production est prête à être rangée.
 
 > [!NOTE]
 > Bien que les paramètres soient appelés **Prélèvement requis** et **Rangement requis**, vous pouvez quand même reporter les réceptions et les livraisons directement à partir des documents commerciaux sources dans les emplacements où vous cochez ces cases.  
@@ -63,7 +63,7 @@ Pour exécuter ce processus pas à pas, vous devez :
 -   Pour devenir magasinier dans un emplacement ARGENT, procédez comme suit :  
 
     1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Employés d'entrepôt**, puis sélectionnez le lien associé.  
-    2.  Choisissez le champ **ID utilisateur** et sélectionnez votre propre compte utilisateur dans la fenêtre **Utilisateurs**.  
+    2.  Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs**.  
     3.  Dans le champ **Code magasin**, entrez ARGENT.  
     4.  Sélectionnez le champ **Par défaut**.  
 
@@ -71,7 +71,7 @@ Pour exécuter ce processus pas à pas, vous devez :
 Ellen, responsable d'entrepôt chez CRONUS International Ltd., crée un bon de commande de 10 unités de l'article LS-75 et 30 unités de l'article LS-81 du fournisseur 10000, qui doivent être approvisionnés à l'entrepôt ARGENT. Lorsque la livraison arrive à l'entrepôt, Jean, l'employé de l'entrepôt, range les articles dans les zones par défaut définies pour les articles. Lorsque Jean reporte le rangement, les articles sont reportés comme étant reçus dans l'inventaire et disponibles à la vente ou pour d'autres demandes.  
 
 ## <a name="setting-up-the-location"></a>Configuration de l'emplacement  
- La configuration de la fenêtre **Fiche magasin** définit les flux d'entrepôt de la société.  
+ La configuration de la page **Fiche emplacement** définit les flux d'entrepôt de la compagnie.  
 
 ### <a name="to-set-up-the-location"></a>Pour configurer l'emplacement  
 
@@ -84,7 +84,7 @@ Ellen, responsable d'entrepôt chez CRONUS International Ltd., crée un bon de c
 4.  Choisissez l'action **Zones**.  
 5.  Sélectionnez la première ligne, pour la zone S-01-0001, puis choisissez l'action **Contenu**.  
 
-    Remarquez dans la fenêtre **Contenu de la zone** que l'article LS-75 est déjà configuré comme contenu dans la zone S-01-0001.  
+    Remarquez sur la page **Contenu de la zone** que l'article LS-75 est déjà défini comme contenu dans la zone S-01-0001.  
 
 6.  Sélectionnez l'action **Nouveau**.  
 7.  Sélectionnez les champs **Fixe** et **Par défaut**.  
@@ -114,7 +114,7 @@ Les bons de commande sont le type de document source entrant le plus répandu.
     La livraison des haut-parleurs provenant du fournisseur 10000 est arrivée dans l'entrepôt ARGENT. Jean procède à leur rangement.  
 
 ## <a name="receiving-and-putting-the-items-away"></a>Réception et rangement des articles  
-Dans la fenêtre **Rangement inventaire**, vous pouvez gérer toutes les activités enlogement pour un document source spécifique, tel qu'un bon de commande.  
+Sur la page **Rangement inventaire**, vous pouvez gérer toutes les activités entrepôt entrantes pour un document d'origine spécifique, tel qu'un bon de commande.  
 
 ### <a name="to-receive-and-put-the-items-away"></a>Pour recevoir et ranger des articles  
 

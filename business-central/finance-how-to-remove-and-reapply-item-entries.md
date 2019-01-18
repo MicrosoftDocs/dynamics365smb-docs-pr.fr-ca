@@ -10,17 +10,17 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 10/01/2018
+ms.date: 11/27/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: b3df27011c482905b0b59ff03570449ac8df3cba
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 4774b278e5e71bd7464b8d7d391d16dab238dc0d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="remove-and-reapply-item-ledger-entries"></a>Supprimer et appliquer à nouveau des écritures article
-Dans la fenêtre **Feuille de travail Affectation**, vous pouvez visualiser et modifier manuellement certaines écritures affectation article qui sont créées automatiquement lors des transactions inventaire.  
+Sur la page **Feuille affectation**, vous pouvez visualiser et modifier manuellement certaines écritures affectation article qui sont créées automatiquement lors des transactions d'inventaire.  
 
 Lorsque vous reportez une transaction dans laquelle des articles entrent ou sortent de l'inventaire, une affectation article est créée entre chaque augmentation et diminution d'inventaire. Ces affectations déterminent le flux des coûts des marchandises entrant dans l'inventaire vers les coûts des marchandises sortant de l'inventaire. En raison du mode de calcul du coût unitaire, une affectation article incorrecte peut engendrer une erreur au niveau du coût moyen ou du coût unitaire. Pour plus d'informations, voir Détails de conception : traçabilité.
 
@@ -32,11 +32,11 @@ Vous pouvez être amené à annuler une affectation ou à affecter à nouveau de
 
 Si possible, utilisez un document pour affecter à nouveau une écriture article. Par exemple, si vous devez procéder à un retour achat d'un article auquel une vente a déjà été affectée, vous pouvez procéder à une nouvelle affectation en créant et en reportant le document de retour achat à l'aide de l'affectation correcte dans le champ **Écr. article à affecter** dans la ligne retour achat. Vous pouvez utiliser la fonction **Extraire les lignes de document reportées à inverser** ou **Copier document** dans le document de retour achat pour faciliter cette opération. Lorsque vous reportez le document, l'écriture article est automatiquement affectée à nouveau. Pour plus d'informations, reportez-vous à [Traiter les retours ou annulations d'achats](purchasing-how-process-purchase-returns-cancellations.md).
 
-Si vous ne pouvez pas utiliser un document pour exécuter une nouvelle affectation, par exemple si vous devez corriger une affectation fixe, utilisez la fenêtre **Feuille de travail Affectation** pour corriger une affectation.
+Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par exemple si vous devez corriger une affectation fixe, utilisez la page **Feuille affectation** pour corriger une affectation.
 
 > [!Warning]  
 > Il est important de tenir compte des considérations suivantes lorsque vous travaillez sur la feuille de travail affectation :
-    - Vous ne devez pas laisser des écritures affectation non affectées pendant de longues périodes, car d'autres utilisateurs ne peuvent pas traiter les articles tant que nous n'affectez pas à nouveau les écritures affectation ou que vous fermez la fenêtre **Feuille de travail affectation**. Les utilisateurs qui essaient d'exécuter des actions qui impliquent une écriture affectation dont l'affectation a été annulée manuellement reçoivent le message d'erreur suivant : « Il est impossible d'effectuer cette opération car l'affectation des écritures pour l'article XXX est annulée dans la feuille de travail affectation par l'utilisateur XXX. »
+    - Vous ne devez pas laisser des écritures affectation non affectées pendant de longues périodes, car d'autres utilisateurs ne peuvent pas traiter les articles tant que vous n'affectez pas à nouveau les écritures affectation ou que vous fermez la page **Feuille affectation**. Les utilisateurs qui essaient d'exécuter des actions qui impliquent une écriture affectation dont l'affectation a été annulée manuellement reçoivent le message d'erreur suivant : « Il est impossible d'effectuer cette opération car l'affectation des écritures pour l'article XXX est annulée dans la feuille de travail affectation par l'utilisateur XXX. »
     - Vous devez affecter à nouveau uniquement les écritures article en dehors des heures de travail afin d'éviter les conflits avec d'autres utilisateurs qui reportent des transactions portant sur les mêmes articles.
     - Lorsque vous fermez la feuille de travail affectation, [!INCLUDE[d365fin](includes/d365fin_md.md)] effectue un contrôle pour s'assurer que toutes les écritures sont affectées. Par exemple, si vous supprimez une affectation quantité sans créer une nouvelle affectation et si vous fermez ensuite la feuille de travail affectation, une nouvelle affectation est créée. Cela permet de ne pas toucher au coût. Cependant, si vous supprimez une affectation fixe, une nouvelle affectation fixe n'est pas créée automatiquement lorsque vous fermez la feuille de travail. Vous devez le faire manuellement en créant une nouvelle affectation dans la feuille de travail.
     - Vous pouvez supprimer des affectations à partir de plusieurs écritures en même temps dans la feuille de travail affectation. Toutefois, comme l'affectation d'écritures affecte l'ensemble des écritures qui sont disponibles pour l'affectation, vous ne pouvez pas créer une affectation pour plusieurs écritures à la fois.
@@ -44,29 +44,29 @@ Si vous ne pouvez pas utiliser un document pour exécuter une nouvelle affectati
 
 ## <a name="to-remove-an-item-application-by-using-the-application-worksheet"></a>Pour supprimer une affectation article en utilisant le journal affectation  
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille affectation**, puis sélectionnez le lien associé.  
-2.  La fenêtre **Feuille lettrage** s'ouvre en affichant les écritures comptables article existantes de tous les articles.  
+2.  La page **Feuille affectation** s'ouvre en affichant les écritures article existantes de tous les articles.  
 3.  Définissez les filtres du raccourci **Général** pour faciliter la recherche de l'écriture comptable article pour laquelle vous souhaitez modifier le lettrage.  
-4.  Sélectionnez l'écriture article, puis sélectionnez l'action **Écritures affectées**. La fenêtre **Voir écritures lettrées - Ecritures lettrées** s'ouvre et affiche l'écriture ou écritures comptables article actuellement lettrées pour l'écriture sélectionnée.  
+4.  Sélectionnez l'écriture article, puis sélectionnez l'action **Écritures affectées**. La page **Voir écritures affectées - Écritures affectées** s'ouvre et affiche la ou les écritures article actuellement affectées pour l'écriture sélectionnée.  
 5.  Sélectionnez l'écriture article dont vous souhaitez supprimer l'affectation.  
-6.  Sélectionnez l'action **Supprimer affectation**. Cette action supprime l'écriture lettrage article qui lie les deux écritures comptables article et la déplace vers la fenêtre **Voir écritures lettrées - Ecritures délettrées**.  
-7.  Fermez la fenêtre **Afficher les écritures lettrées – Écritures lettrées**.  
+6.  Sélectionnez l'action **Supprimer affectation**. Cette action supprime l'écriture affectation article qui lie les deux écritures article et la déplace vers la page **Afficher les écritures affectées - Écritures dont l'affectation a été annulée**.  
+7.  Fermez la page **Afficher les écritures affectées – Écritures affectées**.  
 
- Le champ **Quantité restante** des deux écritures comptables article sont augmentés de la quantité délettrée. L'écriture comptable article supprimée peut à présent être relettrée dans la fenêtre **Afficher les écritures lettrées – Écritures non lettrées**.  
+ Le champ **Quantité restante** des deux écritures comptables article sont augmentés de la quantité délettrée. L'écriture article supprimée peut à présent être à nouveau affectée sur la page **Afficher les écritures affectées – Écritures non affectées**.  
 
 > [!IMPORTANT]  
->  Vous ne devez pas laisser des écritures lettrage non lettrées pendant de longues périodes, car d'autres utilisateurs ne peuvent pas traiter les articles concernés jusqu'à ce que vous relettriez les écritures lettrage ou clôturiez la fenêtre **Feuille lettrage**. Le message d'erreur suivant s'affiche si vous essayez d'exécuter des tâches qui concernent une écriture d'affectation dont l'affectation a été supprimée manuellement :  
+>  Vous ne devez pas laisser des écritures affectation non affectées pendant de longues périodes, car d'autres utilisateurs ne peuvent pas traiter les articles concernés tant que vous n'affectez pas à nouveau les écritures affectation ou que vous fermez la page **Feuille affectation**. Le message d'erreur suivant s'affiche si vous essayez d'exécuter des tâches qui concernent une écriture d'affectation dont l'affectation a été supprimée manuellement :  
 >   
 >  **Il est impossible d'effectuer cette action car l'affectation des écritures pour l'article <item> est annulée dans la feuille de travail affectation par l'utilisateur <user>.**  
 
 ## <a name="to-reapply-an-item-application-by-using-the-application-worksheet"></a>Pour appliquer à nouveau une affectation article en utilisant le journal affectation  
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille affectation**, puis sélectionnez le lien associé.  
-2.  La fenêtre **Feuille lettrage** s'ouvre en affichant les écritures comptables article existantes de tous les articles.  
+2.  La page **Feuille affectation** s'ouvre en affichant les écritures article existantes de tous les articles.  
 3.  Pour appliquer à nouveau des écritures qui ont été supprimées depuis l'ouverture de la feuille, sélectionnez l'écriture du grand livre d'articles que vous souhaitez appliquer à nouveau. Sur l'onglet **Actions** , dans le groupe **Fonctions**, choisissez **Relettrer**.  
 
     > [!NOTE]  
-    >  Ce relettrage vers le solde de départ se produit aussi automatiquement lorsque vous fermez la fenêtre **Feuille lettrage**.  
-4.  Pour affecter une écriture du grand livre d'articles en cours disponible dans une autre écriture, sélectionnez l'écriture article à affecter. Sélectionnez l'action **Écritures non lettrées**. La fenêtre **Afficher les écritures lettrées – Écritures non lettrées** s'ouvre.  
-5.  Sélectionnez une ou plusieurs écritures comptables article que vous voulez lettrer dans l'écriture sélectionnée dans la fenêtre **Feuille lettrage**, puis choisissez le bouton **OK**.  
+    >  Cette nouvelle affectation vers le solde de départ se produit aussi automatiquement lorsque vous fermez la page **Feuille affectation**.  
+4.  Pour affecter une écriture du grand livre d'articles en cours disponible dans une autre écriture, sélectionnez l'écriture article à affecter. Sélectionnez l'action **Écritures non lettrées**. La page **Afficher les écritures affectées – Écritures non affectées** s'ouvre.  
+5.  Sélectionnez une ou plusieurs écritures article que vous voulez affecter à l'écriture sélectionnée sur la page **Feuille affectation**, puis choisissez le bouton **OK**.  
 
      Une écriture d'affectation article est créée entre les deux écritures article. Les champs **Quantité restante** des deux écritures sont réduits de la quantité lettrée.  
 

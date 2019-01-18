@@ -13,23 +13,23 @@ ms.search.keywords: purchase fixed asset
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 1a5ce3c514ff649b5ad4a901f257816ae1a59d58
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 2839753f888dfd76e17672c36b15da47a344900f
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="acquire-fixed-assets"></a>Acquérir des immobilisations
 Pour chaque immobilisation, vous devez créer une fiche contenant des informations la concernant. Vous pouvez configurer des bâtiments ou un équipement de production en tant qu'immobilisation principale avec une liste de composantes et vous pouvez les regrouper de différentes façons, comme par catégorie, département ou emplacement. Un registre amortissement doit être configuré et assigné à chaque immobilisation avant que vous puissiez l'acquérir.
 
-Lorsqu'une immobilisation est configurée et qu'un registre amortissement est attribué, vous devez acquérir l'immobilisation. Pour acquérir une immobilisation, vous enregistrez son coût d'acquisition dans le compte général, le compte bancaire ou le fournisseur pertinent en validant une transaction d'acquisition à partir de la fenêtre **Feuille compta. immo.**. Vous pouvez utiliser la fenêtre **Acquisition d'immobilisation assistée** pour créer et valider automatiquement les lignes feuille comptabilité requises.
+Lorsqu'une immobilisation est configurée et qu'un registre amortissement est attribué, vous devez acquérir l'immobilisation. Pour acquérir une immobilisation, vous enregistrez son coût d'acquisition dans le compte du grand livre, le compte bancaire ou le fournisseur pertinent en reportant une transaction d'acquisition à partir de la page **Journal GL immobilisation**. Vous pouvez utiliser la page **Acquisition d'immobilisation assistée** pour créer et reporter automatiquement les lignes journal général requises.
 
 La valeur résiduelle est la valeur restante d'une immobilisation qui est devenue inutilisable. Vous pouvez reporter la valeur résiduelle lors du report du coût d'acquisition. Pour en savoir plus, voir [Amortir des immobilisations](fa-how-depreciate-amortize.md).
 
 L'actualisation permet d'ajuster des valeurs en fonction de modifications générales de niveau de prix. Le traitement par lots **Réévaluer immobilisations** permet de calculer les coûts d'acquisition à des coûts de remplacement.
 
 ## <a name="to-create-a-fixed-asset-and-acquire-it-automatically"></a>Pour créer une immobilisation et l'acquérir automatiquement
-La procédure suivante décrit comment créer une immobilisation, puis l'acquérir via la fenêtre **Acquisition d'immobilisation assistée** pour créer et valider les lignes feuille validation immobilisation requises. Vous pouvez également créer et reporter les lignes journal manuellement. Pour en savoir plus, voir la section « Pour reporter manuellement une acquisition immobilisation avec le journal GL immobilisation ».
+La procédure suivante décrit comment créer une immobilisation, puis l'acquérir via la page **Acquisition d'immobilisation assistée** pour créer et reporter les lignes journal GL immobilisation requises. Vous pouvez également créer et reporter les lignes journal manuellement. Pour en savoir plus, voir la section « Pour reporter manuellement une acquisition immobilisation avec le journal GL immobilisation ».
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Immobilisations**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Nouveau**, puis renseignez les champs du raccourci **Général**, le cas échéant. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -38,12 +38,12 @@ La procédure suivante décrit comment créer une immobilisation, puis l'acquér
 
     Lorsque tous les champs obligatoires pour acquérir une immobilisation sont complétés, la notification **Vous êtes sur le point d'acquérir l'immobilisation. Acquérir** s'affiche en haut de la page.
 5. Sélectionnez l'action **Acquérir** dans la notification.
-6. Suivez les étapes dans la fenêtre **Acquisition d'immobilisation assistée** pour terminer l'acquisition automatique de l'immobilisation.
+6. Suivez les étapes sur la page **Acquisition d'immobilisation assistée** pour terminer l'acquisition automatique de l'immobilisation.
 
 > [!NOTE]  
 >   Vous pouvez également reporter le coût d'acquisition en tant que crédit. Dans ce cas, n'oubliez pas que la valeur du champ **Coût d'acquisition TVA incluse** doit comporter un signe moins pour indiquer un avoir.
 
-Lorsque vous sélectionnez **Terminer**, le champ **Valeur comptable** de la fenêtre **Fiche immobilisation** est renseigné, indiquant que l'immobilisation a été acquise au coût d'acquisition spécifié.  
+Lorsque vous sélectionnez **Terminer**, le champ **Valeur comptable** de la page **Fiche immobilisation** est renseigné, indiquant que l'immobilisation a été acquise au coût d'acquisition spécifié.  
 
 ## <a name="to-set-up-a-component-list-for-a-main-asset"></a>Pour configurer une liste de composantes pour une immobilisation principale
 Vous pouvez regrouper les immobilisations en immobilisations principales divisées en composants. Par exemple, si vous disposez d'une machine de production composée de différentes pièces, vous pouvez regrouper ces pièces de cette manière.  
@@ -52,20 +52,20 @@ Vous devez définir à la fois l'immobilisation principale et ses composants en 
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Immobilisations**, puis choisissez le lien associé.
 2. Sélectionnez l'immobilisation principale, puis l'action **Composants immo. principale**.
-3. Dans la fenêtre **Composantes immo. principale**, choisissez **N° immo.**., puis sélectionnez l'immobilisation que vous souhaitez ajouter comme composante de l'immobilisation principale.
-4. Fermez la fenêtre.
+3. Sur la page **Composantes immo. principale**, choisissez **N° immo.**., puis sélectionnez l'immobilisation que vous souhaitez ajouter comme composante de l'immobilisation principale.
+4. Fermez la page.
 5. Répétez les étapes 3 et 4 pour chaque composante de l'immobilisation que vous souhaitez ajouter.
 6. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration des immobilisations**, puis sélectionnez le lien associé.
 7. Cochez la case **Compta. immo. princip.**.
 
 ## <a name="to-post-a-fixed-asset-acquisition-manually-with-the-fixed-asset-gl-journal"></a>Pour reporter manuellement une acquisition immobilisation avec le journal GL immobilisation
-La procédure suivante décrit comment acquérir manuellement une immobilisation en créant et en validant des lignes dans la fenêtre **Feuille compta. immo.**. Vous pouvez également acquérir automatiquement une immobilisation via la fenêtre **Acquisition d'immobilisation assistée**. Pour en savoir plus, voir l'étape 5 de la section « Pour créer une immobilisation et l'acquérir automatiquement ».
+La procédure suivante décrit comment acquérir manuellement une immobilisation en créant et en reportant des lignes sur la page **Journal GL immobilisation**. Vous pouvez également acquérir automatiquement une immobilisation via la page **Acquisition d'immobilisation assistée**. Pour en savoir plus, voir l'étape 5 de la section « Pour créer une immobilisation et l'acquérir automatiquement ».
 
 > [!NOTE]  
 >   Vous pouvez également reporter le coût d'acquisition en tant que crédit. Dans ce cas, n'oubliez pas que la valeur du champ **Montant** doit comporter un signe moins pour indiquer un avoir.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux GL d'immobilisations**, puis sélectionnez le lien associé.
-2. Dans la fenêtre **Feuille compta. immo.**, dans le champ **Type compta. immo.**, sélectionnez **Coût acquisition**.
+2. Sur la page **Journal GL immobilisation**, dans le champ **Type report immo.**, sélectionnez **Coût acquisition**.
 3. Renseignez les champs restants selon vos besoins.
 4. Sélectionnez l'action **Valider**.  
 
@@ -73,7 +73,7 @@ La procédure suivante décrit comment acquérir manuellement une immobilisation
 >   Si vous renseignez le champ **N° assurance** dans le journal GL immobilisation lorsque vous reportez un coût d'acquisition, [!INCLUDE[d365fin](includes/d365fin_md.md)] valide également le coût d'acquisition de l'immobilisation dans le livre couverture d'assurance. Pour en savoir plus, voir [Assurer des immobilisations](fa-how-insure.md).
 
 ## <a name="to-cancel-an-acquisition-cost-posting-for-one-fixed-asset"></a>Pour annuler le report du coût d'une acquisition pour une immobilisation
-Si vous faites une erreur lors de la validation d'un coût d'acquisition, vous pouvez supprimer l'écriture à l'aide du traitement par lots **Annuler écritures immo**, puis valider l'écriture d'acquisition correcte. Les écritures erronées sont transférées vers la fenêtre **Erreur écritures comptables immo.**.
+Si vous faites une erreur lors de la validation d'un coût d'acquisition, vous pouvez supprimer l'écriture à l'aide du traitement par lots **Annuler écritures immo**, puis valider l'écriture d'acquisition correcte. Les écritures erronées sont transférées vers la page **Erreur écritures immo.**.
 
 Par exemple, si vous reportez une acquisition avec une date erronée, vous devez la corriger dès que possible, car la date de report de l'immobilisation est utilisée dans de nombreux calculs essentiels.
 
@@ -96,7 +96,7 @@ Vous pouvez reporter la valeur résiduelle avec le coût d'acquisition à partir
 4. Sélectionnez l'action **Valider**.
 
 > [!NOTE]  
->   Le type de validation **Valeur résiduelle** est une option disponible uniquement dans la fenêtre **Feuille immo.** Elle n'est pas disponible dans la fenêtre **Feuille compta. immo.**, car la valeur résiduelle n'est jamais affichée en comptabilité.
+>   Le type de report **Valeur résiduelle** est une option disponible uniquement sur la page **Journal immo.**. Elle n'est pas disponible sur la page **Journal GL immobilisation**, car la valeur résiduelle n'est jamais reportée dans le grand livre.
 
 ## <a name="see-also"></a>Voir aussi
 [Immobilisations](fa-manage.md)  

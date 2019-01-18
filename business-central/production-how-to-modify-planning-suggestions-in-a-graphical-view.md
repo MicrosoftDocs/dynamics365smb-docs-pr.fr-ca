@@ -13,18 +13,18 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 3188b2d711fe983526e5ee87a7a3901b16d6eb35
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 4de53621a71569579fa05092dca36d8301098ffe
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="modify-planning-suggestions-in-a-graphical-view"></a>Modifier les propositions de planification dans une vue graphique
 Une activité de planification courante est d'ajouter ou de modifier les lignes feuille planning pour modifier les commandes approvisionnement proposées avant de les valider en exécutant la fonction **Traiter messages d'action**. Plutôt que d'utiliser la vue planification, vous pouvez utiliser une vue graphique.
 
-Dans la fenêtre **Disponibilité article par chronologie**, vous pouvez modifier certaines commandes d'approvisionnement et suggestions en faisant glisser les articles le long de l'axe des abscisses pour modifier la quantité ou le long de l'axe des ordonnées pour modifier la date d'échéance.  
+Sur la page **Disponibilité article par chronologie**, vous pouvez modifier certaines commandes d'approvisionnement et suggestions en faisant glisser les articles le long de l'axe des abscisses pour modifier la quantité ou le long de l'axe des ordonnées pour modifier la date d'échéance.  
 
- Dans la fenêtre **Disponibilité article par chronologie** et la fenêtre **Feuille planning**, vous pouvez apporter des modifications suivantes :  
+ Sur la page **Disponibilité article par chronologie** et la page **Feuille planification**, vous pouvez apporter les modifications suivantes :  
 
 -   Modifier une commande approvisionnement suggérée existant uniquement comme une ligne planification.  
 -   Modifier une commande approvisionnement existante que le système de planification suggère de changer.  
@@ -32,14 +32,14 @@ Dans la fenêtre **Disponibilité article par chronologie**, vous pouvez modifie
 
 Pour plus d'informations sur les types de ligne de planification qui sont indiqués, reportez-vous au champ Description du raccourci **Modification des événements**.  
 
-Lorsque vous choisissez **Enregistrer les modifications** dans la fenêtre **Disponibilité article par chronologie**, les modifications apportées sont copiées dans la feuille planning ou la demande achat. Vous pouvez à présent les appliquer à l'aide de la fonction **Traiter msg. action - Planning**.  
+Lorsque vous choisissez **Enregistrer les modifications** sur la page **Disponibilité article par chronologie**, les modifications apportées sont copiées dans la feuille planification ou la feuille de réquisition. Vous pouvez à présent les appliquer à l'aide de la fonction **Traiter msg. action - Planning**.  
 
-La procédure suivante indique comment modifier des propositions d'approvisionnement par glisser-déplacer. Vous pouvez également modifier les champs **Date d'échéance** et **Quantité** sur le raccourci **Modification des événements** et immédiatement visualiser les modifications graphiquement sur le raccourci **Chronologie** de la fenêtre **Feuille planning**.  
+La procédure suivante indique comment modifier des propositions d'approvisionnement par glisser-déplacer. Vous pouvez également modifier les champs **Date d'échéance** et **Quantité** sur le raccourci **Modification des événements** et immédiatement visualiser les modifications graphiquement sur le raccourci **Chronologie** de la page **Feuille planification**.  
 
 ## <a name="to-modify-suggested-supply-orders-in-the-graphical-view"></a>Pour modifier les commandes approvisionnement proposées dans la vue graphique  
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Disponibilité article par chronologie**, puis sélectionnez le lien associé.  
 
-    La fenêtre **Disponibilité article par chronologie** s'ouvre avec le numéro d'article, le magasin et la variante de l'article, figurant sur la ligne planning sélectionnée, préalablement insérés dans le raccourci **Options**. Le raccourci **Chronologie** affiche une représentation graphique du stock prévisionnel de l'article, y compris les propositions planning.  
+    La page **Disponibilité article par chronologie** s'ouvre avec le numéro d'article, l'emplacement et la variante de l'article, figurant sur la ligne planification sélectionnée, préalablement insérés dans le raccourci **Options**. Le raccourci **Chronologie** affiche une représentation graphique du stock prévisionnel de l'article, y compris les propositions planning.  
 
 2.  Assurez-vous que le champ **Inclure propositions planning** est sélectionné.  
 3.  Sélectionnez la commande approvisionnement suggérée à modifier. Vous pouvez identifier les éléments modifiables par le cercle vert et l'icône représentant un disque. Pour plus d'informations sur les différents symboles, voir la section « Symboles et icônes sur le raccourci Chronologie ».  
@@ -53,7 +53,7 @@ La procédure suivante indique comment modifier des propositions d'approvisionne
     |**Ajuster automatiquement l'approvisionnement**|Optimise un nouvel approvisionnement que vous avez créé dans le graphique en vérifiant que la quantité qui en résulte dans l'inventaire est égale à zéro avant l'approvisionnement suivant.|  
     |**Supprimer l'approvisionnement**|Supprime l'élément dans le raccourci **Chronologie** puis supprime la ligne planning lorsque vous choisissez **Enregistrer les modifications**. L'icône prend la forme d'un disque avec une croix rouge lorsque l'approvisionnement a été supprimé.<br /><br /> **REMARQUE :** Vous ne pouvez supprimer un approvisionnement que si son message d'action est de type **Nouveau**. Une fois que vous avez sélectionné **Enregistrer les modifications**, vous devez supprimer manuellement la ligne planning en question la feuille planning ou demande achat.|  
 
-7.  Choisissez l'action **Recharger** si vous voulez réinitialiser toutes les modifications apportées après avoir ouvert pour la dernière fois la fenêtre **Disponibilité article par chronologie**, ou sélectionnez **Recharger**.  
+7.  Choisissez l'action **Recharger** si vous voulez réinitialiser toutes les modifications apportées après avoir ouvert pour la dernière fois la page **Disponibilité article par chronologie**, ou sélectionnez **Recharger**.  
 8. Lorsque les éléments sont stockés où vous le souhaitez dans le schéma, sélectionnez **Enregistrer les modifications** pour copier la quantité et la date modifiées dans la feuille planning ou demande achat représentant les éléments graphiques.  
 
 Pour appliquer les modifications du programme d'approvisionnement, vous devez suivre les messages d'action résultants de la feuille planification ou de la feuille de réquisition. Pour plus d'informations, voir Traiter msg. action - Planning.

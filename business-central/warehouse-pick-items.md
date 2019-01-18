@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 4258d6b2edea44dbf86b649ffb4c515473421a55
+ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
+ms.openlocfilehash: 6a51a509ae1281d7c6bfe19e5276b516982a5fa5
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 11/22/2018
 
 ---
 # <a name="pick-items"></a>Prélèvement d'articles
@@ -27,9 +27,9 @@ Si vous décidez d'organiser et d'enregistrer votre activité de prélèvement a
 > [!NOTE]
 > Bien que le paramètre soit appelé **Prélèvement requis**, vous pouvez quand même reporter les livraisons directement à partir des documents commerciaux sources dans lesquels vous cochez cette case.
 
-Si votre emplacement est configuré pour nécessiter un traitement des prélèvements, mais pas un traitement des livraisons, vous utilisez la fenêtre **Prélèvement inventaire** pour organiser les informations de prélèvement, les imprimer, entrer le résultat du prélèvement et reporter les informations de prélèvement, ce qui reporte la livraison des articles. Dans le cas du prélèvement de composantes pour un bon de production, le report du prélèvement reporte également la consommation.
+Si votre emplacement est configuré pour exiger un traitement des prélèvements, mais pas un traitement des livraisons, vous utilisez la page **Prélèvement inventaire** pour organiser les informations de prélèvement, les imprimer, entrer le résultat du prélèvement effectif et reporter les informations de prélèvement, ce qui reporte les informations de livraison des articles. Dans le cas du prélèvement de composantes pour un bon de production, le report du prélèvement reporte également la consommation.
 
-Si votre emplacement est configuré pour exiger un traitement des prélèvements et des livraisons (ce qui implique que vous avez activé les champs **Prélèvement requis** et **Livraison requise** dans la fiche emplacement), vous utilisez la fenêtre **Prélèvement entrepôt** pour gérer le prélèvement. Le prélèvement entrepôt fonctionne de manière similaire au prélèvement inventaire, si ce n'est qu'au lieu de reporter les informations de prélèvement, vous enregistrez le prélèvement. Ce processus d'enregistrement ne reporte pas la livraison, mais assure simplement la disponibilité des articles pour livraison. En tant qu'administrateur entrepôt, vous pouvez utiliser des feuilles prélèvement pour organiser les informations de prélèvement avant de créer des instructions de prélèvement entrepôt.
+Si votre emplacement est configuré pour qu'il exige le traitement des prélèvements et celui des livraisons (ce qui implique que vous avez activé les champs **Prélèvement requis** et **Livraison requise** dans la fiche emplacement), vous utilisez la page **Prélèvement entrepôt** pour gérer le prélèvement. Le prélèvement entrepôt fonctionne de manière similaire au prélèvement inventaire, si ce n'est qu'au lieu de reporter les informations de prélèvement, vous enregistrez le prélèvement. Ce processus d'enregistrement ne reporte pas la livraison, mais assure simplement la disponibilité des articles pour livraison. En tant qu'administrateur entrepôt, vous pouvez utiliser des feuilles prélèvement pour organiser les informations de prélèvement avant de créer des instructions de prélèvement entrepôt.
 
 Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.   
 

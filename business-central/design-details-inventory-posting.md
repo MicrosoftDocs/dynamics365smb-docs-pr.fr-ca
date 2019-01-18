@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: f9f93fcf80524f18c9ff83b74d64231d1a033bae
+ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
+ms.openlocfilehash: 80c2912836d8f11a8e3cf869b9412ad9ed66ca54
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/22/2018
 
 ---
 # <a name="design-details-inventory-posting"></a>Détails de conception : report inventaire
@@ -29,7 +29,7 @@ Chaque transaction inventaire, par exemple une réception achat ou une livraison
 
  En rapport avec les reports de quantité, les écritures d'affectation article existent pour lier augmentation de l'inventaire avec la diminution de l'inventaire. Cela permet au moteur d'évaluation de transférer les cous des augmentations aux diminutions liées et vice versa. Pour plus d'informations, voir [Détails de conception : traçabilité](design-details-item-application.md).  
 
- Les écritures article, les écritures valeur, ainsi que les écritures d'affectation article sont créées suite au report d'une ligne journal article, soit indirectement lors du report d'une ligne commande, soit directement dans la fenêtre journal article.  
+ Les écritures article, les écritures valeur, ainsi que les écritures affectation article sont créées suite au report d'une ligne journal article, soit indirectement lors du report d'une ligne commande, soit directement sur la page journal article.  
 
  À intervalles réguliers, les écritures valeur créées parmi les écritures du grand livre d'inventaire sont reportées dans le grand livre pour rapprocher les deux grands livres à des fins de contrôle financier. Pour plus d'informations, voir [Détails de conception : rapprochement de comptabilité](design-details-reconciliation-with-the-general-ledger.md).  
 

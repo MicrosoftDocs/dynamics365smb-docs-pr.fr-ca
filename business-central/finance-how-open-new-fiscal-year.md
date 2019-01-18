@@ -8,23 +8,24 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accounting year, fiscal period
-ms.date: 10/01/2018
+ms.date: 11/21/2018
 ms.author: edupont
+redirect_url: finance-accounting-periods-and-fiscal-years
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 9424b2dfe3a61ace4f02897f0240cc6e4f78070e
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: cb523f1ee5b8bfafa63fc41284da6450f205967e
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="open-a-new-fiscal-year-and-create-accounting-periods"></a>Ouvrir un nouvel exercice financier et créer des périodes comptables
 Avant de pouvoir effectuer un report dans un exercice financier, vous devez l'ouvrir et définir ses périodes comptables.  
 
-Pour la plupart des compagnies, l'exercice financier ne coïncide pas avec l'année civile. Les exercices comptables peuvent être mesurés dans d'autres unités de temps, telles que les mois ou les trimestres. Vous pouvez utiliser la fenêtre **Créer exercice financier** pour configurer les périodes comptables qui s'adaptent à vos besoins professionnels. Toutefois,   
+Pour la plupart des compagnies, l'exercice financier ne coïncide pas avec l'année civile. Les exercices comptables peuvent être mesurés dans d'autres unités de temps, telles que les mois ou les trimestres. Vous pouvez utiliser la page **Créer exercice financier** pour configurer les périodes comptables qui s'adaptent aux besoins de votre activité. Toutefois,   
 
 ## <a name="to-open-a-new-fiscal-year"></a>Pour ouvrir un nouvel exercice financier
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Périodes comptables**, puis sélectionnez le lien associé.
-2. Dans la fenêtre **Périodes comptables**, sélectionnez l'option **Créer exercice**.
+2. Sur la page **Périodes comptables**, sélectionnez l'action **Créer exercice**.
 3. Renseignez les champs pour définir la structure de l'exercice financier.
 
     Celui-ci est habituellement constitué de 12 périodes d'un mois chacune, mais vous pouvez également le diviser autrement.

@@ -1,6 +1,6 @@
 ---
 title: "Comment prélever pour des opérations internes dans les configurations de stockage avancées | Microsoft Docs"
-description: "Dans les configurations d'entrepôt avancées, dans lesquelles l'emplacement est configuré pour utiliser le prélèvement ainsi que la livraison, vous pouvez prélever des composantes pour les activités de production et d'assemblage à l'aide de la fenêtre **Prélèvement entrepôt**."
+description: "Dans les configurations d'entrepôt avancées, dans lesquelles l'emplacement est configuré pour utiliser le prélèvement ainsi que la livraison, vous pouvez prélever des composantes pour les activités de production et d'assemblage à l'aide de la page **Prélèvement entrepôt**."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -13,16 +13,16 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 228755cbc36ae9fbdd0f80be6f778b11fb5b3d6a
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 7e4a489b49c5a97cd0df077544a51c6ba73a4a85
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="pick-for-assembly-or-production-in-advanced-warehouse-configurations"></a>Prélever pour l'assemblage ou la fabrication dans les configurations de stockage avancées.
-Dans les configurations d'entrepôt avancées, dans lesquelles l'emplacement est configuré pour utiliser le prélèvement ainsi que la livraison, vous pouvez prélever des composantes pour les activités de production et d'assemblage à l'aide de la fenêtre **Prélèvement entrepôt**.  
+Dans les configurations d'entrepôt avancées, dans lesquelles l'emplacement est configuré pour utiliser le prélèvement ainsi que la livraison, vous pouvez prélever des composantes pour les activités de production et d'assemblage à l'aide de la page **Prélèvement entrepôt**.  
 
-Vous pouvez également utiliser la fenêtre **Feuille mouvement** pour déplacer des articles entre emplacements ad hoc, c'est-à-dire sans référence à un document origine. Pour plus d'informations, voir [Déplacer des articles dans les configurations de stockage avancées](warehouse-how-to-move-items-in-advanced-warehousing.md).  
+Vous pouvez également utiliser la page **Feuille mouvement** pour déplacer des articles entre zones ad hoc, c'est-à-dire sans référence à un document origine. Pour plus d'informations, voir [Déplacer des articles dans les configurations de stockage avancées](warehouse-how-to-move-items-in-advanced-warehousing.md).  
 
 Pour plus d'informations sur le prélèvement d'articles pour des opérations internes dans les entrepôts de base qui sont configurés uniquement pour le prélèvement, voir [Déplacer les composantes vers une zone opérations dans les configurations de stockage de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md).  
 
@@ -30,9 +30,9 @@ Vous ne pouvez pas créer de toutes pièces un document prélèvement entrepôt 
 
 Vous pouvez créer le document prélèvement entrepôt par déplacement en sélectionnant **Créer prélèvement ent.** dans le document origine, par exemple, un ordre d'assemblage ou une expédition entrepôt lancé. Pour plus d'informations, voir [Prélever des articles avec les prélèvements entrepôt](warehouse-how-to-pick-items-for-warehouse-shipment.md).  
 
-Sinon, vous pouvez créer le document prélèvement entrepôt par extraction à l'aide de la fenêtre **Feuille prélèvement** pour détecter les demandes de prélèvement, à la fois pour l'expédition et les opérations internes, puis créer les documents prélèvement entrepôt requis.  
+Sinon, vous pouvez créer le document prélèvement entrepôt par extraction à l'aide de la page **Feuille prélèvement** pour détecter les demandes de prélèvement, à la fois pour la livraison et les opérations internes, puis créer les documents prélèvement entrepôt requis.  
 
-La procédure suivante explique un scénario d'extraction dans lequel vous prélevez des composants d'un ordre de fabrication lancé via la fenêtre **Feuille prélèvement**. Cette procédure s'applique également pour un ordre d'assemblage.  
+La procédure suivante explique un scénario d'extraction dans lequel vous prélevez des composantes d'un bon de production libéré via la page **Feuille prélèvement**. Cette procédure s'applique également pour un ordre d'assemblage.  
 
 Pour créer des demandes de prélèvement dans le cadre de scénarios d'extraction et de déplacement, il faut que les documents origine en question soient libérés. Libérez les documents origine des opérations internes en procédant comme suit.  
 
@@ -46,7 +46,7 @@ Pour créer des demandes de prélèvement dans le cadre de scénarios d'extracti
 2.  Choisissez l'action **Extraire documents entrepôt**, puis sélectionnez les lignes composante du bon de production libéré.  
 3.  Vérifiez les lignes, triez-les pour assurer un prélèvement optimisé et, si nécessaire, combinez les avec d'autres lignes de la feuille pour utiliser au mieux la disponibilité de l'employé.  
 4.  Choisissez l'action **Créer prélèvement**.  
-5.  Définissez le mode de création des documents prélèvement entrepôt et la manière de trier les lignes prélèvement en renseignant les champs de la fenêtre **Créer prélèvement** .  
+5.  Définissez le mode de création des documents prélèvement entrepôt et la manière de trier les lignes prélèvement en renseignant les champs de la page **Créer prélèvement** .  
 6.  Cliquez sur le bouton **OK**. Les documents prélèvement entrepôt sont créés avec des lignes prélèvement pour chaque composante requise dans l'opération interne.  
 
 Si la zone Opérations internes (par exemple, un atelier de production) est configurée avec une zone par défaut pour les composantes à utiliser dans l'opération, ce code de zone est inséré dans les lignes Emplacement qui figurent sur le document prélèvement entrepôt pour indiquer aux magasiniers où placer les articles. Pour plus d'informations, voir le champ **Code e zone avant production** ou **Code de zone vers assemblage**.

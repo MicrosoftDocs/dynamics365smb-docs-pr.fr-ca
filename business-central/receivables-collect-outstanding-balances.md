@@ -11,10 +11,10 @@ ms.search.keywords: payment due, debt, overdue, fee, charge, reminder
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 4696fa95b82a0deb0ba9642ef796160f25a57afc
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 3dfc2d9edbb72de196238748ab90ce8dd4990adb
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="collect-outstanding-balances"></a>Collecte des soldes restants
@@ -23,7 +23,7 @@ La gestion des clients comprend le contrôle du règlement des montants à temps
 Vous pouvez utiliser des relances pour rappeler aux clients les soldes échus. Vous pouvez également utiliser les rappels pour calculer les frais financiers tels que les intérêts ou les frais et les inclure dans le rappel. Utilisez les factures d'intérêts pour débiter des clients d'intérêts ou de frais sans leur rappeler les montants échus.
 
 ## <a name="reminders"></a>Rappels
-Avant de pouvoir créer des rappels, vous devez configurer des modalités de rappel et les affecter à vos clients. Chaque modalité de rappel a des niveaux de rappel prédéfinis. Chaque niveau de rappel inclut des règles relatives à l'émission du rappel, par exemple, le nombre de jours après la date d'échéance de la facture ou la date du rappel précédent après laquelle il doit être émis. Le contenu de la fenêtre **Conditions intérêts de retard** détermine si les intérêts sont calculés dans la relance.  
+Avant de pouvoir créer des rappels, vous devez configurer des modalités de rappel et les affecter à vos clients. Chaque modalité de rappel a des niveaux de rappel prédéfinis. Chaque niveau de rappel inclut des règles relatives à l'émission du rappel, par exemple, le nombre de jours après la date d'échéance de la facture ou la date du rappel précédent après laquelle il doit être émis. Le contenu de la page **Modalités frais financiers** détermine si les intérêts sont calculés sur le rappel.  
 
 Vous pouvez exécuter périodiquement le traitement par lots **Création de relances** afin de créer des relances pour tous les clients ayant des soldes échus. Vous pouvez également créer manuellement une relance pour un client spécifique et demander à ce que les lignes soient calculées et renseignées automatiquement.  
 
@@ -46,7 +46,7 @@ Une fois que vous avez créé les factures d'intérêts, vous pouvez les modifie
 Une fois que vous avez créé des notes de frais financiers et effectué toutes les modifications requises, vous pouvez imprimer les rapports de test ou émettre des notes de frais financiers; en général par courriel.
 
 ## <a name="multiple-interest-rates"></a>Taux d'intérêt multiples
-Lorsque vous configurez des modalités de frais financiers et des modalités de rappel, pour la pénalité de retard de paiement, vous pouvez spécifier plusieurs taux d'intérêt afin que les frais de pénalité soient calculés sur la base de plusieurs taux d'intérêt à différentes périodes. Si vous n'avez pas configuré de taux d'intérêt multiples, le taux d'intérêt et la période définis dans les fenêtres **Modalités de frais financiers** et **Modalités de rappel** pour l'ensemble de la période de calcul seront utilisés. Pour plus d'informations, reportez vous à [Paramétrer plusieurs taux d'intérêt](finance-how-to-set-up-multiple-interest-rates.md).  
+Lorsque vous configurez des modalités de frais financiers et des modalités de rappel, pour la pénalité de retard de paiement, vous pouvez spécifier plusieurs taux d'intérêt afin que les frais de pénalité soient calculés sur la base de plusieurs taux d'intérêt à différentes périodes. Si la configuration n'intègre pas plusieurs taux d'intérêt, le taux d'intérêt et la période définis sur les pages **Modalités frais financiers** et **Modalités de rappel** seront utilisés pour l'ensemble de la période de calcul. Pour plus d'informations, reportez vous à [Paramétrer plusieurs taux d'intérêt](finance-how-to-set-up-multiple-interest-rates.md).  
 
 ## <a name="to-send-the-customer-statement-report"></a>Pour envoyer le rapport Relevé client
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Relevé client**, puis sélectionnez le lien associé.
@@ -69,19 +69,19 @@ La première fois qu'un rappel est créé pour un client, la configuration utili
 Si vous créez plus de relances qu'il n'y a de niveaux relance, les conditions utilisées seront celles du niveau le plus élevé. Vous pouvez utiliser autant de relances que le champ **Nombre max. de relances** des conditions relance le permet.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modalités de rappel**, puis sélectionnez le lien associé.  
-2. Dans la fenêtre **Conditions de relance**, cliquez sur la ligne comportant les conditions pour lesquelles configurer des niveaux, puis cliquez sur l'action **Niveaux**.  
+2. Sur la page **Modalités de rappel**, cliquez sur la ligne comportant les conditions pour lesquelles configurer des niveaux, puis cliquez sur l'action **Niveaux**.  
 3. Renseignez les champs selon vos besoins.  
 
-    Pour chaque niveau de rappel, vous pouvez spécifier des conditions particulières, qui peuvent inclure des frais supplémentaires en devise locale ($) et en devise étrangère. Vous pouvez définir plusieurs frais supplémentaires en devise étrangère pour chaque code de la fenêtre **Niveaux relance**.
+    Pour chaque niveau de rappel, vous pouvez spécifier des conditions particulières, qui peuvent inclure des frais supplémentaires en devise locale ($) et en devise étrangère. Vous pouvez créer plusieurs frais supplémentaires en devise pour chaque code de la page **Niveaux rappel**.
 4. Sélectionnez l'action **Devises**.
-5. Dans la fenêtre **Devises niveau relance**, définissez un code de niveau pour chaque relance et le numéro du niveau de rappel correspondant, une devise et des frais supplémentaires.
+5. Sur la page **Devises niveau rappel**, définissez un code de niveau pour chaque rappel et le numéro du niveau de rappel correspondant, une devise et des frais supplémentaires.
 
     > [!NOTE]  
-    > Lorsque vous créez une relance en devise, les conditions devise définies ici permettront de créer des relances. Si aucune condition devise n'a été définie, les conditions devise société définies dans la fenêtre **Niveaux relance** seront utilisées et converties dans la devise appropriée.
+    > Lorsque vous créez une relance en devise, les conditions devise définies ici permettront de créer des relances. Si aucune condition rappel devise étrangère n'a été définie, les conditions devise $ configurées sur la page **Niveaux rappel** seront utilisées et converties dans la devise appropriée.
 
     Pour chaque niveau relance, vous pouvez indiquer le texte à imprimer avant (**Texte début**) ou après (**Texte fin**) les écritures de la relance.
 
-6. Choisissez les actions **Texte de début** ou **Texte de fin** respectivement, puis renseignez la fenêtre **Texte relance**.
+6. Choisissez les actions **Texte de début** ou **Texte de fin** respectivement, puis renseignez la page **Texte rappel**.
 7. Pour insérer automatiquement des valeurs correspondantes dans le texte de relance résultant, entrez les espaces réservés suivants dans le champ **Texte**.  
 
 |Paramètre substituable|Valeur|  
@@ -110,12 +110,12 @@ Si vous avez configuré les modalités de rappel (avec des niveaux et du texte s
 Un rappel est identique à une facture. Lorsque vous créez un rappel, un en-tête rappel, ainsi qu'une ou plusieurs lignes rappel, doivent être renseignés. Vous pouvez utiliser une fonction pour créer des relances pour tous les clients automatiquement.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rappels**, puis sélectionnez le lien associé.
-2. Dans la fenêtre **Relance**, cliquez sur l'action **Créer relance**.
-3. Dans la fenêtre **Créer relances**, renseignez les champs pour définir comment et pour qui les relances sont créées.
+2. Sur la page **Rappel**, cliquez sur l'action **Créer rappels**.
+3. Sur la page **Créer rappels**, renseignez les champs pour définir comment et pour qui les rappels sont créées.
 4. Cliquez sur le bouton **OK**.
 
 ## <a name="to-create-a-reminder-manually"></a>Pour créer un rappel manuellement
-Dans la fenêtre **Relance**, vous pouvez renseigner le raccourci **Général** manuellement et ensuite renseigner les lignes automatiquement.
+Sur la page **Rappel**, vous pouvez renseigner le raccourci **Général** manuellement et ensuite renseigner les lignes automatiquement.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rappels**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
@@ -134,21 +134,21 @@ Vous pouvez déterminer de plusieurs manières le texte devant figurer sur le ra
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rappels**, puis sélectionnez le lien associé.
 2. Ouvrez la relance appropriée, puis cliquez sur l'action **Mettre à jour texte relance**.
-3. Dans la fenêtre **Mettre à jour texte relance**, entrez le niveau requis dans le champ **Niveau relance**.
+3. Sur la page **Mettre à jour texte rappel**, entrez le niveau requis dans le champ **Niveau rappel**.
 3. Cliquez sur le bouton **OK** pour que le programme mette à jour les textes début et fin.
 
 ## <a name="to-issue-a-reminder"></a>Pour émettre un rappel
 Après avoir créé les relances et effectué toutes les modifications souhaitées, vous pouvez lancer les impressions test ou émettre les relances.
 
-Lorsque vous émettez un rappel, les données sont transférées vers une fenêtre séparée pour les rappels émis. Les écritures rappel sont simultanément reportées. Si des intérêts ou des frais supplémentaires ont été calculés, les écritures sont reportées dans les écritures client et dans le grand livre.
+Lorsque vous émettez une rappel, les données sont transférées vers une page séparée pour les rappels émis. Les écritures rappel sont simultanément reportées. Si des intérêts ou des frais supplémentaires ont été calculés, les écritures sont reportées dans les écritures client et dans le grand livre.
 
-Lorsqu'une relance est émise, les écritures sont validées selon les spécifications de la fenêtre **Conditions de relance**. Cette spécification détermine si les intérêts et les frais supplémentaires sont reportés sur le compte client et dans le grand livre. La configuration dans la fenêtre **Groupes compta. client** détermine les comptes qui seront utilisés.
+Lorsqu'une rappel est émise, les écritures sont reportées selon les spécifications de la page **Modalités de rappel**. Cette spécification détermine si les intérêts et les frais supplémentaires sont reportés sur le compte client et dans le grand livre. La configuration sur la page **Groupes report client** détermine les comptes qui seront utilisés.
 
-Pour chaque écriture comptable client de la facture d'intérêts, une écriture est créée dans la fenêtre **Ecr. relance/fact. intérêts**.
+Pour chaque écriture client de la note de frais financiers, une écriture est créée sur la page **Écritures rappel/frais financiers**.
 
-Si les cases à cocher **Comptabiliser intérêts** ou le champ **Compta. frais supplémentaires** de la table **Conditions de relance** sont activées, les écritures suivantes sont aussi créées :
+Si les cases à cocher **Reporter intérêts** ou le champ **Reporter frais supplémentaires** de la page **Modalités de rappel** sont activées, les écritures suivantes sont aussi créées :
 
-- Une écriture dans la fenêtre **Écritures comptables client**,
+- Une écriture sur la page **Écritures client**,
 - Une écriture à recevoir sur le compte du grand livre approprié
 - Une écriture intérêts et/ou une écriture frais supplémentaires dans le compte du grand livre approprié
 
@@ -156,7 +156,7 @@ De plus, émettre un rappel peut créer des écritures de TVA.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rappels**, puis sélectionnez le lien associé.
 2. Sélectionnez la relance concernée, puis cliquez sur l'action **Émission**.
-3. Dans la fenêtre **Emettre relances**, renseignez les champs selon vos besoins.
+3. Sur la page **Émettre rappels**, renseignez les champs selon vos besoins.
 4. Cliquez sur le bouton **OK**.
 
 Le rappel est imprimé pour être envoyé à une adresse de courriel spécifiée en tant que pièce jointe PDF.
@@ -182,15 +182,15 @@ En outre, chaque code de la table Modalités de frais financiers est lié à une
 2. Renseignez les champs selon vos besoins.  
 3. Pour utiliser plusieurs combinaisons de modalités de frais financiers, créez un code pour chacun d'eux.
 
-    Pour chaque modalité de frais financiers, vous pouvez spécifier des modalités particulières, qui peuvent inclure des frais supplémentaires en devise locale ($) et en devise étrangère. Vous pouvez définir des frais supplémentaires en devise pour chaque code de la fenêtre **Conditions intérêts de retard**.
+    Pour chaque modalité de frais financiers, vous pouvez spécifier des modalités particulières, qui peuvent inclure des frais supplémentaires en devise locale ($) et en devise étrangère. Vous pouvez définir des frais supplémentaires en devise étrangère pour chaque code sur la page **Modalités de frais financiers**.
 4. Sélectionnez l'action **Devises**.
-5. Dans la fenêtre **Devises condition intérêts**, définissez pour chaque condition un code devise et des frais supplémentaires.
+5. Sur la page **Devises condition intérêts**, définissez pour chaque condition un code devise et des frais supplémentaires.
 
     > [!NOTE]  
-    > Lorsque vous créez des frais financiers en devise, les conditions devise définies ici serviront à créer des notes de frais financiers. Si aucune condition intérêts de retard en devise n'est définie, les conditions intérêts de retard en devise société définies dans la table **Conditions intérêts de retard** seront utilisées, puis converties dans la devise souhaitée.
+    > Lorsque vous créez des frais financiers en devise, les conditions devise définies ici serviront à créer des notes de frais financiers. Si aucune condition frais financiers en devise étrangère n'est définie, les conditions frais financiers en $ configurées sur la page **Modalités frais financiers** seront utilisées, puis converties dans la devise souhaitée.
 
     Pour chaque condition intérêts, vous pouvez spécifier le texte à imprimer avant (**Texte début**) ou après (**Texte fin**) les écritures de la facture d'intérêts.  
-6. Choisissez les actions **Texte de début** ou **Texte de fin** respectivement, puis renseignez la fenêtre **Texte intérêts de retard**.
+6. Choisissez les actions **Texte de début** ou **Texte de fin** respectivement, puis renseignez la page **Texte frais financiers**.
 7. Pour insérer automatiquement des valeurs correspondantes dans le texte facture d'intérêts résultant, entrez les espaces réservés suivants dans le champ **Texte**.
 
 |Paramètre substituable|Valeur|  
@@ -211,7 +211,7 @@ Une note de frais financiers ressemble à une facture. Vous pouvez renseigner un
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de frais financiers**, puis sélectionnez le lien associé.  
 2. Cliquez sur **Nouveau**, puis renseignez les champs selon vos besoins.  
 3. Sélectionnez **Proposer lignes fact. intérêts**.
-4. Dans la fenêtre **Proposer lignes note de frais financiers**, définissez un filtre sur le raccourci **Écriture client** si vous souhaitez créer des notes de frais financiers uniquement pour des écritures spécifiques.  
+4. Sur la page **Proposer lignes note de frais financiers**, définissez un filtre sur le raccourci **Écriture client** si vous souhaitez créer des notes de frais financiers uniquement pour des écritures spécifiques.  
 5.  Pour démarrer le traitement par lots, cliquez sur le bouton **OK**.  
 
 ## <a name="to-update-finance-charge-memo-texts"></a>Pour mettre à jour des textes de notes de frais financiers  
@@ -219,19 +219,19 @@ Dans certains cas, vous pouvez modifier les textes début et fin définis pour l
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Note de frais financiers**, puis sélectionnez le lien associé.  
 2. ouvrez la facture d'intérêts dont vous souhaitez modifier le texte, puis sélectionnez **MAJ texte fact. d'intérêts**.
-3. Dans la fenêtre **MAJ texte fact. d'intérêts**, vous pouvez définir un filtre pour mettre à jour plusieurs factures d'intérêts.
+3. Sur la page **Mettre à jour texte frais financiers**, vous pouvez définir un filtre pour mettre à jour plusieurs notes.
 4. Cliquez sur le bouton **OK** pour que le programme mette à jour les textes début et fin.  
 
 ## <a name="to-issue-finance-charge-memos"></a>Pour émettre des factures d'intérêts
 Une fois que vous avez créé des factures d'intérêts et effectué toutes les modifications requises, vous pouvez effectuer des impressions test ou émettre des factures d'intérêts.
 
-Lorsqu'une relance est émise, les écritures sont validées selon les spécifications de la fenêtre **Conditions intérêts de retard**. Cette spécification détermine si les intérêts et les frais supplémentaires sont reportés sur le compte client et dans le grand livre. La configuration dans la fenêtre **Groupes compta. client** détermine les comptes qui seront utilisés.
+Lorsqu'un rappel est émis, les écritures sont reportées selon les spécifications sur la page **Modalités de frais financiers**. Cette spécification détermine si les intérêts et les frais supplémentaires sont reportés sur le compte client et dans le grand livre. La configuration sur la page **Groupes report client** détermine les comptes qui seront utilisés.
 
-Pour chaque écriture comptable client de la facture d'intérêts, une écriture est créée dans la fenêtre **Ecr. relance/fact. intérêts**.
+Pour chaque écriture client de la note de frais financiers, une écriture est créée sur la page **Écritures rappel/frais financiers**.
 
-Si les cases à cocher **Comptabiliser intérêts** ou le champ **Compta. frais supplémentaires** de la table **Conditions intérêts de retard** sont activées, les écritures suivantes sont aussi créées :
+Si les cases à cocher **Reporter intérêts** ou **Reporter frais supplémentaires** sont activées sur la page **Modalités de frais financiers**, les écritures suivantes sont aussi créées :
 
-- Une écriture dans la fenêtre **Écritures comptables client**,
+- Une écriture sur la page **Écritures client**,
 - Une écriture à recevoir sur le compte du grand livre approprié
 - Une écriture intérêts et/ou une écriture frais supplémentaires dans le compte du grand livre approprié
 
@@ -239,16 +239,16 @@ De plus, émettre une note de frais financiers peut créer des écritures de TVA
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de frais financiers**, puis sélectionnez le lien associé.
 2. Sélectionnez la facture concernée, puis cliquez sur l'action **Emettre**.
-3. Dans la fenêtre **Emettre factures d'intérêts**, renseignez les champs selon vos besoins.
+3. Sur la page **Émettre notes de frais financiers**, renseignez les champs selon vos besoins.
 4. Cliquez sur le bouton **OK**.
 
 La note de frais financiers est imprimée pour être envoyée à une adresse de courriel spécifiée en tant que pièce jointe PDF.
 
 ## <a name="to-view-reminder-and-finance-charge-entries"></a>Pour afficher les écritures rappel et note de frais financiers  
-Lorsque vous émettez une relance, une écriture relance est créée dans la fenêtre **Écr. relance/fact. intérêts** pour chaque ligne relance contenant une écriture comptable client. Vous pouvez ensuite obtenir un aperçu des écritures rappel créées pour un client spécifique.    
+Lorsque vous émettez un rappel, une écriture rappel est créée sur la page **Écritures rappel/frais financiers** pour chaque ligne rappel contenant une écriture client. Vous pouvez ensuite obtenir un aperçu des écritures rappel créées pour un client spécifique.    
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clients**, puis sélectionnez le lien associé.  
 2. Ouvrez la fiche client appropriée, puis sélectionnez l'action **Écritures comptables**.
-3. Dans la fenêtre **Écritures comptables client**, cliquez sur la ligne de l'écriture comptable pour laquelle vous souhaitez visualiser les écritures relance, puis sélectionnez l'action **Écr. relance/fact. intérêts**.
+3. Sur la page **Écritures client**, cliquez sur la ligne de l'écriture pour laquelle vous souhaitez visualiser les écritures rappel, puis sélectionnez l'action **Écritures rappel/frais financiers**.
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion des comptes client](receivables-manage-receivables.md)  

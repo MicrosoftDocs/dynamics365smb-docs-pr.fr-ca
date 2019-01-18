@@ -13,14 +13,14 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: fafe6aa28b61960ea028755f3308155aa1633b60
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: d0a7088e436def55b3c7ddc3115065c66686b7fb
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="walkthrough-planning-supplies-manually"></a>Procédure pas à pas : planification manuelle des approvisionnements
-Cette procédure pas à pas présente le processus de planification des commandes approvisionnement en vue de répondre à la nouvelle demande. Vous pouvez lancer la planification des approvisionnements à des intervalles fixes, par exemple, tous les matins ou tous les lundis, ou lorsque vous recevez une notification du département Ventes ou Production, en fonction du type de demande. Au cours de cette procédure, vous utiliserez la fenêtre **Planification de commande**, un outil simplifié de planification de l'approvisionnement basé sur la prise de décision manuelle, plutôt que sur la planification automatique basée sur des paramètres.  
+Cette procédure pas à pas présente le processus de planification des commandes approvisionnement en vue de répondre à la nouvelle demande. Vous pouvez lancer la planification des approvisionnements à des intervalles fixes, par exemple, tous les matins ou tous les lundis, ou lorsque vous recevez une notification du département Ventes ou Production, en fonction du type de demande. Au cours de cette procédure, vous utiliserez la page **Planification commande**, un outil simplifié de planification des approvisionnements basé sur la prise de décision manuelle plutôt que la planification automatique basée sur des paramètres.  
 
 ## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas  
  Cette procédure pas à pas présente les tâches suivantes :  
@@ -48,30 +48,30 @@ Cette procédure pas à pas présente le processus de planification des commande
 ## <a name="story"></a>Scénario  
  Eduardo, Gestionnaire de production dans une petite compagnie manufacturière, est sur le point de planifier les bons de production et bons de commande en réponse à la demande de vente.  
 
- Dans la mesure où les produits disposent de peu de niveaux de nomenclature et où le flux de commandes est relativement faible, Eduardo utilise la fenêtre **Planning commande** pour créer manuellement les commandes approvisionnement, un niveau de produit à la fois.  
+ Dans la mesure où les produits disposent de peu de niveaux de nomenclature et où le flux de commandes est relativement faible, Eduardo utilise la page **Planification commande** pour créer manuellement les commandes d'approvisionnement (un niveau de produit à la fois).  
 
  Dans un environnement de fabrication plus complexe, la feuille planification permet de planifier l'approvisionnement sur la base des paramètres d'article, tels que la période de reprogrammation, le délai de sécurité, le point de réapprovisionnement et les calculs par lots de la demande consolidée à partir de tous les niveaux de produit.  
 
 ## <a name="setting-up-the-sample-data"></a>Configuration des exemples de données  
  La compagnie de démonstration CRONUS standard dispose actuellement d'un grand nombre de demandes non planifiées. Au cours des différentes tâches de planification de cette procédure pas à pas, vous devrez passer outre le flux commercial réaliste : utilisez la demande dont les dates d'échéance sont ultérieures plutôt que celle dont les dates sont échues.  
 
-## <a name="using-the-order-planning-window"></a>Utilisation de la fenêtre Planification commande  
+## <a name="using-the-order-planning-page"></a>Utilisation de la page Planification commande  
 
 <!-- 
-The **Order Planning** window can be accessed from several different locations on the **Departments** menu in the navigation pane:  
+The **Order Planning** page can be accessed from several different locations on the **Departments** menu in the navigation pane:  
 
 -   Manufacturing, Planning  
 -   Sales & Marketing, Order Processing  
 -   Purchase, Planning  
--   In addition, you can open this window for a specific production order by choosing **Planning** on the **Navigate** tab in the **Order** group.
+-   In addition, you can open this page for a specific production order by choosing **Planning** on the **Navigate** tab in the **Order** group.
 
 -->  
 
-### <a name="to-use-the-order-planning-window"></a>Pour utiliser la fenêtre Planification commande :  
+### <a name="to-use-the-order-planning-page"></a>Pour utiliser la page Planification commande :  
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Planification commande**, puis sélectionnez le lien associé.  
 
-     À la première ouverture de la fenêtre **Planning commande**, une planification doit être calculée pour afficher la nouvelle demande depuis le dernier calcul.  
+     À la première ouverture de la page **Planification commande**, une planification doit être calculée pour afficher la nouvelle demande depuis le dernier calcul.  
 
 2.  Choisissez l'action **Calculer planning**.  
 
@@ -79,9 +79,9 @@ The **Order Planning** window can be accessed from several different locations o
 
      Selon la disponibilité globale, la quantité nécessaire pour chaque ligne commande est calculée. Ce calcul est effectué commande par commande. Cela signifie que la commande dont la ligne de réquisition a la date d'échéance ou la date de livraison la plus proche sera calculée en premier. Les autres lignes de réquisition seront ensuite calculées dans le même ordre, quelle que soit la date d'échéance ou la date de livraison.  
 
-3.  Assurez-vous d'agrandir au maximum la fenêtre **Planification commande** et de redimensionner les champs des colonnes pour afficher tous les noms de champ par défaut.  
+3.  Assurez-vous d'agrandir au maximum la page **Planification commande** et de redimensionner les champs des colonnes pour afficher tous les noms de champ par défaut.  
 
-     À la fin du calcul, la fenêtre affiche toutes les demandes insatisfaites sous la forme de lignes en-tête commande réduites triées par date de demande la plus proche.  
+     À la fin du calcul, la page affiche toutes les demandes insatisfaites sous la forme de lignes en-tête commande réduites triées par date de demande la plus proche.  
 
      Remarque : CRONUS inclut plusieurs commandes dont la demande est insatisfaite. Chaque ligne planification en gras représente une commande, un document de vente ou un bon de production, comprenant au moins une ligne commande avec une disponibilité insuffisante.  
 
@@ -98,7 +98,7 @@ The **Order Planning** window can be accessed from several different locations o
 
 1.  Développez la première ligne en cliquant sur le symbole +.  
 2.  Sélectionnez la première ligne demande, avec l'article **LSU-15**, puis sélectionnez l'action **Afficher document**.  
-3.  Fermez l'ordre de fabrication ouvert pour revenir à la fenêtre **Planning commande**.  
+3.  Fermez le bon de production ouvert pour revenir à la page **Planification commande**.  
 4.  Dans le champ **Système réappro.**, sélectionnez **Achats**.  
 
      La valeur par défaut est celle indiquée sur la fiche article (ou la fiche unité de stock), mais vous pouvez la modifier et lui attribuer l'une des options suivantes :  
@@ -118,13 +118,13 @@ The **Order Planning** window can be accessed from several different locations o
     >  Si un numéro fournisseur par défaut pour les composants est configuré sur les fiches article, les lignes sont prédéfinies.  
 
 6.  Sélectionnez le champ **Origine approvisionnement**.  
-7.  Dans la fenêtre **Catalogue fournisseur articles**, choisissez l'action **Nouveau**, puis sélectionnez le fournisseur **30000**.  
-8.  Cliquez sur le bouton **OK** pour revenir à la fenêtre **Planning commande**.  
+7.  Sur la page **Catalogue fournisseur articles**, choisissez l'action **Nouveau**, puis sélectionnez le fournisseur **30000**.  
+8.  Cliquez sur le bouton **OK** pour revenir à la page **Planification commande**.  
 9. Copiez le fournisseur **30000** vers les autres lignes pour les composants « haut-parleurs » correspondant à cet ordre de fabrication.  
 
      Vous êtes maintenant prêt à créer un bon de commande.  
 
-10. Sélectionnez l'action **Créer commandes**. La fenêtre **Créer des commandes approvisionnement** s'ouvre.  
+10. Sélectionnez l'action **Créer commandes**. La page **Créer des commandes d'approvisionnement** s'ouvre.  
 11. Sur le raccourci **Planning commande**, dans le champ **Créer commandes pour**, sélectionnez l'option **Commande active**.  
 12. Sur le raccourci **Options**, dans le champ **Créer commande achat**, sélectionnez l'option **Créer cdes achat**.  
 13. Cliquez sur le bouton **OK** pour créer les commandes achat pour tous les composants de la commande.  
@@ -144,15 +144,15 @@ The **Order Planning** window can be accessed from several different locations o
      Le système de réapprovisionnement et le fournisseur par défaut de l'article s'affichent.  
 
     > [!NOTE]  
-    >  Au bas de la fenêtre, quatre champs d'informations s'affichent. Dans le champ **Date dispo. au plus tôt**, les dix pièces nécessaires sont disponibles sur une commande approvisionnement entrante, neuf jours après la date d'échéance actuelle. Si cette date est trop tardive pour le client, le champ **Disponible pour transfert** affiche 13 pièces de l'article provenant d'un autre magasin. Vous devez planifier ce stock.  
+    >  Au bas de la page, quatre champs d'informations s'affichent. Dans le champ **Date dispo. au plus tôt**, les dix pièces nécessaires sont disponibles sur une commande approvisionnement entrante, neuf jours après la date d'échéance actuelle. Si cette date est trop tardive pour le client, le champ **Disponible pour transfert** affiche 13 pièces de l'article provenant d'un autre magasin. Vous devez planifier ce stock.  
 
-3.  Choisissez le champ **Disponible pour transfert** pour ouvrir la fenêtre **Obtenir un approvisionnement secondaire**.  
+3.  Choisissez le champ **Disponible pour transfert** pour ouvrir la page **Obtenir un approvisionnement secondaire**.  
 4.  Cliquez sur le bouton **OK** pour réserver les dix articles disponibles.  
 
     > [!NOTE]  
     >  Dans la ligne de réquisition, l'achat proposé a été remplacé par un transfert à partir de l'emplacement GREEN. La fonction **Créer commandes** crée un ordre de transfert du magasin GREEN vers le magasin demandé. Le champ **Articles de substitution** fonctionne de la même manière.  
 
-5.  Sélectionnez l'action **Créer commandes**. La fenêtre **Créer des commandes approvisionnement** s'ouvre.  
+5.  Sélectionnez l'action **Créer commandes**. La page **Créer des commandes d'approvisionnement** s'ouvre.  
 6.  Sur le raccourci **Planning commande** dans le champ **Créer commandes pour**, sélectionnez l'option **La commande active**.  
 7.  Sur le raccourci **Options**, dans le champ **Créer un ordre de transfert**, sélectionnez l'option **Créer ordres transfert**.  
 8.  Cliquez sur le bouton **OK** pour créer l'ordre de transfert visant à approvisionner la commande vente.  
@@ -168,26 +168,26 @@ The **Order Planning** window can be accessed from several different locations o
 
      Cette demande est une ligne vente, mais l'article a un système de réapprovisionnement défini sur **O. F.**. Ajoutez ensuite une sonnette supplémentaire au besoin composante de chaque bicyclette.  
 
-2.  Choisissez l'action **Composantes** pour ouvrir la fenêtre **Composantes planification**.  
+2.  Choisissez l'action **Composantes** pour ouvrir la page **Composantes planification**.  
 3.  Sur la ligne correspondant à l'article Sonnerie, remplacez la valeur **1** du champ **Quantité par** par **2**.  
-4.  Dans la fenêtre **Planification commande**, étudiez les différentes possibilités de planification. Dans ce cas, vous ne disposez pas d'autres moyens d'approvisionnement, ni d'aucun transfert, remplacement ou livraison en retard. Vous devez créer la commande approvisionnement suggérée, à savoir un bon de production.  
+4.  Sur la page **Planification commande**, étudiez les différentes possibilités de planification. Dans ce cas, vous ne disposez pas d'autres moyens d'approvisionnement, ni d'aucun transfert, remplacement ou livraison en retard. Vous devez créer la commande approvisionnement suggérée, à savoir un bon de production.  
 5.  Choisissez l'action **Créer commandes** pour créer l'ordre de fabrication.  
 
-     Dans la fenêtre **Planification commande**, vous remarquez que la ligne planning correspondant à la commande vente **1001** n'existe plus et que la demande de vente initiale a été couverte.  
+     Sur la page **Planification commande**, vous remarquez que la ligne planification correspondant au document de vente **1001** n'existe plus et que la demande de vente initiale a été couverte.  
 
-6.  Fermez la fenêtre **Planification commande**.  
+6.  Fermez la page **Planification commande**.  
 
-     Vous pourriez à présent conserver cet affichage et exécuter toutes les tâches de planification. Au lieu de cela, vous devez prendre le rôle Gestionnaire de production en accédant à l'ordre de fabrication que vous venez de créer, puis à la fenêtre **Planification commande**.  
+     Vous pourriez à présent conserver cet affichage et exécuter toutes les tâches de planification. Au lieu de cela, vous devez prendre le rôle Gestionnaire de production en accédant à l'ordre de fabrication que vous venez de créer, puis à la page **Planification commande**.  
 
  En tant que gestionnaire de production, vous devez maintenant planifier un bon de production spécifique.  
 
 ### <a name="to-plan-a-specific-production-order"></a>Pour planifier un bon de production spécifique :  
 
 1.  Ouvrez l'ordre de fabrication **101001** pour dix bicyclettes, créé à l'aide de la fonction **Créer commandes**.  
-2.  Ouvrez la fenêtre **Composants O.F.** pour vérifier que la sonnette supplémentaire figure dans l'ordre de fabrication.  
+2.  Ouvrez la page **Composantes bon de production** pour vérifier que la sonnette supplémentaire figure dans le bon de production.  
 3.  Sélectionnez l'action **Planification**.  
 
-     La fenêtre **Planning commande** s'ouvre dans une vue qui est toujours filtrée en fonction de la demande de production spécifique. La demande de vente ne s'affiche pas. Vous devez calculer une planification avant de pouvoir visualiser les demandes supplémentaires.  
+     La page **Planification commande** s'ouvre dans une vue qui est toujours filtrée en fonction de la demande de production spécifique. La demande de vente ne s'affiche pas. Vous devez calculer une planification avant de pouvoir visualiser les demandes supplémentaires.  
 
 4.  Choisissez l'action **Calculer planning**.  
 
@@ -207,11 +207,11 @@ The **Order Planning** window can be accessed from several different locations o
 
      Avant de cliquer sur le bouton **OK**, observez attentivement le texte sous le raccourci **Planning commande**. Ce texte est important, car il vous permet de savoir que la bicyclette possède plusieurs composantes produits (ou sous-ensembles) dans sa structure produit qui peuvent être demandés lorsque vous créez ce bon de production.  
 
-7.  Dans la fenêtre **Créer des commandes approvisionnement**, dans le champ **Créer commandes pour**, sélectionnez l'option **Toutes les lignes**, puis cliquez sur le bouton **OK** pour créer des ordres de fabrication pour le deuxième niveau de produit de la commande.  
+7.  Sur la page **Créer des commandes d'approvisionnement**, dans le champ **Créer commandes pour**, sélectionnez l'option **Toutes les lignes**, puis cliquez sur le bouton **OK** pour créer des bons de production pour le deuxième niveau de produit de la commande.  
 
      Remarquez que la demande de production de niveau supérieur pour l'ordre de fabrication 101001 n'existe plus. Cela signifie que la demande de production initiale des sous-ensembles a été planifiée.  
 
-     Dans la fenêtre **Planification commande**, recalculez une planification pour planifier la structure de la bicyclette.  
+     Sur la page **Planification commande**, recalculez une planification pour planifier la structure de la bicyclette.  
 
 8.  Choisissez l'action **Calculer planning** pour recalculer le planning selon les instructions du texte d'aide incorporé.  
 
@@ -229,7 +229,7 @@ The **Order Planning** window can be accessed from several different locations o
 
 13. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de production planifiés fermes**, puis sélectionnez le lien associé.  
 
-     Dans la fenêtre **O. F. planifiés fermes**, passez en revue la planification des heures de début et de fin de chaque commande par rapport à la structure produit. Les composantes de niveau inférieur sont produites en premier. Par conséquent, vous devez planifier des commandes multi-niveaux conformément aux instructions de ce flux de planification.  
+     Sur la page **Ordre de production planifiés fermes**, passez en revue la planification des heures de début et de fin de chaque commande par rapport à la structure produit. Les composantes de niveau inférieur sont produites en premier. Par conséquent, vous devez planifier des commandes multi-niveaux conformément aux instructions de ce flux de planification.  
 
 ## <a name="see-also"></a>Voir aussi  
  [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)   

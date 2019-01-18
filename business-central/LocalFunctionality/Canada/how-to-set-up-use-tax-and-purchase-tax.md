@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: a9062f33d1a4bdbd1b5e18c216d4ed2036e5e789
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 1ae26dc10725541b64dd77b237e3b2fb458d5b1d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="set-up-use-tax-and-purchase-tax"></a>Configurer la taxe de service et la taxe d'achat
@@ -27,22 +27,22 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 
 ## <a name="to-set-up-use-tax-for-a-purchase-order"></a>Pour configurer la taxe de service pour un bon de commande  
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Bons de commande**, puis sélectionnez le lien associé dans **Traitement des commandes**.  
-2.  Dans la fenêtre **Bons de commande**, sous l'onglet **Accueil**, dans le groupe **Nouveau**, choisissez **Nouveau**.  
+2.  Sur la page **Bons de commande**, sous l'onglet **Accueil**, dans le groupe **Nouveau**, choisissez **Nouveau**.  
 3.  Sur le raccourci **Lignes**, complétez les champs, comme nécessaire. [!INCLUDE[tooltip-inline-tip](../../includes/tooltip-inline-tip_md.md)]  
 4.  Sur le raccourci **Facturation**, renseignez les champs comme décrit dans le tableau ci-dessous.  
 
     |Champ|Description|  
     |---------------------------------|---------------------------------------|  
-    |**Imposable**|Sélectionnez ce champ pour configurer la taxe à payer. **Important :**  Ce champ est disponible dans la fenêtre **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE[bp_customize](../../includes/bp_customize_md.md)]|  
-    |**Code région fiscale**|Le code de région fiscale du fournisseur. **Important :**  Ce champ est disponible dans la fenêtre **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE[bp_customize](../../includes/bp_customize_md.md)]|  
-    |**N° d'exonération fiscale**|Le numéro d'exonération fiscale de la compagnie. Vous pouvez entrer 30 caractères alphanumériques maximum. **Important :**  Ce champ est disponible dans la fenêtre **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE[bp_customize](../../includes/bp_customize_md.md)]|  
-    |**Code provincial de région fiscale**|Le code fiscal de la province. **Important :**  Ce champ est disponible dans la fenêtre **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE[bp_customize](../../includes/bp_customize_md.md)]|  
+    |**Imposable**|Sélectionnez ce champ pour configurer la taxe à payer. **Important :**  Ce champ est disponible sur la page **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE[bp_customize](../../includes/bp_customize_md.md)]|  
+    |**Code région fiscale**|Le code de région fiscale du fournisseur. **Important :**  Ce champ est disponible sur la page **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE[bp_customize](../../includes/bp_customize_md.md)]|  
+    |**N° d'exonération fiscale**|Le numéro d'exonération fiscale de la compagnie. Vous pouvez entrer 30 caractères alphanumériques maximum. **Important :**  Ce champ est disponible sur la page **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE[bp_customize](../../includes/bp_customize_md.md)]|  
+    |**Code provincial de région fiscale**|Le code fiscal de la province. **Important :**  Ce champ est disponible sur la page **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE[bp_customize](../../includes/bp_customize_md.md)]|  
 5.  Cliquez sur le bouton **OK**.  
 
 ## <a name="to-set-up-use-tax-details"></a>Pour configurer les détails de la taxe de service  
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Détails fiscaux**, puis sélectionnez le lien associé.  
-2.  Dans la fenêtre **Détails fiscaux**, sélectionnez l'action **Nouveau**.  
-3.  Dans la fenêtre **Nouveau - Détails fiscaux**, renseignez les champs comme décrit dans le tableau suivant.  
+2.  Sur la page **Détails fiscaux**, sélectionnez l'action **Nouveau**.  
+3.  Sur la page **Nouveau - Détails fiscaux**, renseignez les champs comme décrit dans le tableau suivant.  
 
     |Champ|Description|  
     |---------------------------------|---------------------------------------|  
@@ -52,8 +52,8 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 4.  Cliquez sur le bouton **OK**.  
 
 ## <a name="to-set-up-purchase-tax-for-a-company"></a>Pour configurer la taxe d'achat pour une compagnie  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Informations sur la compagnie**, puis sélectionnez le lien associé.  
-2.  Dans la fenêtre **Informations sur la compagnie**, dans le raccourci **Taxe**, renseignez les champs comme décrit dans le tableau ci-dessous.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Informations compagnie**, puis sélectionnez le lien associé.  
+2.  Sur la page **Informations sur la compagnie**, dans le raccourci **Taxe**, renseignez les champs comme décrit dans le tableau ci-dessous.  
 
     |Champ|Description|  
     |---------------------------------|---------------------------------------|  
@@ -64,7 +64,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 
 ## <a name="to-set-up-purchase-tax-for-a-location"></a>Pour configurer la taxe d'achat pour un emplacement  
 1.  Sélectionnez l'icône ![Page ou état pour la recherche](../../media/ui-search/search_small.png "icône Page ou état pour la recherche"), saisissez **Magasins**, puis sélectionnez le lien connexe.  
-2.  Dans la fenêtre **Emplacements**, sélectionnez l'emplacement requis, puis cliquez sur l'action **Modifier**.  
+2.  Sur la page **Emplacements**, sélectionnez l'emplacement requis, puis cliquez sur l'action **Modifier**.  
 3.  Sous le raccourci **Général**, renseignez les champs comme indiqué dans le tableau ci-dessous.  
 
     |Champ|Description|  
@@ -77,7 +77,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 
 ## <a name="to-set-up-purchase-tax-for-non-recoverable-tax"></a>Pour configurer la taxe d'achat pour une taxe non recouvrable  
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Détails fiscaux**, puis sélectionnez le lien associé.  
-2.  Dans la fenêtre **Détails fiscaux**, sélectionnez l'action **Nouveau**.  
+2.  Sur la page **Détails fiscaux**, sélectionnez l'action **Nouveau**.  
 3.  Cochez la case **Dépense/Capitaliser**.  
 
     > [!NOTE]  

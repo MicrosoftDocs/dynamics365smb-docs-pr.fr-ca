@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: ebd644745ed7d914bdccfe59ecc3924ed1b542a5
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 75cf101f7f67bdd54d6e364468fd5e4354a089af
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="ship-items"></a>Livrer des articles
@@ -50,22 +50,22 @@ Généralement, l'employé chargé de la livraison crée une livraison entrepôt
 
     > [!NOTE]  
     >  Pour livrer des articles portant des codes classe entrepôt différents du code classe de la zone indiqué dans le champ **Code de zone** de l'en-tête du document, vous devez supprimer le contenu du champ **Code de zone** de l'en-tête avant d'extraire les lignes des documents sources des articles.  
-3.  Choisissez l'action **Extraire documents origine**. La fenêtre **Documents origine** s'ouvre.
+3.  Choisissez l'action **Extraire documents origine**. La page **Documents origine** s'ouvre.
 
-    À partir d'une livraison entrepôt nouvelle ou ouverte, vous pouvez utiliser la fenêtre **Filtres pour extr. doc. source** afin d'extraire les lignes du document source libéré qui définissent les articles à recevoir ou à livrer.
+    À partir d'une livraison entrepôt nouvelle ou ouverte, vous pouvez utiliser la page **Filtres pour extr. doc. orig.** afin d'extraire les lignes du document origine libéré qui définissent les articles à recevoir ou à livrer.
 
     1. Choisissez l'action **Filtrer pour extr. doc. orig.**.  
     2. Pour configurer un nouveau filtre, entrez un code descriptif dans le champ **Code**, puis choisissez l'action **Modifier**.  
     3. Définissez le type de ligne document origine que vous souhaitez extraire en renseignant les champs de filtre appropriés.  
     4. Sélectionnez l'action **Exécuter**.  
 
-    Toutes les lignes du document source libéré qui correspondent aux critères du filtre sont à présent insérées dans la fenêtre **Livraison entrepôt** à partir de laquelle vous avez activé la fonction filtre.  
+    Toutes les lignes du document origine libéré qui correspondent aux critères du filtre sont à présent insérées sur la page **Livraison entrepôt** à partir de laquelle vous avez activé la fonction filtre.  
 
-    Les combinaisons de filtres que vous définissez sont stockées dans la fenêtre **Filtres pour extr. doc. orig.** jusqu'à la prochaine utilisation. Le nombre de combinaisons de filtres est illimité. Vous pouvez modifier les critères à tout moment en choisissant l'action **Modifier**.
+    Les combinaisons de filtres que vous définissez sont stockées sur la page **Filtres pour extr. doc. orig.** jusqu'à la prochaine utilisation. Le nombre de combinaisons de filtres est illimité. Vous pouvez modifier les critères à tout moment en choisissant l'action **Modifier**.
 
 4.  Sélectionnez les documents sources pour lesquels vous souhaitez livrer des articles, puis sélectionnez le bouton **OK**.  
 
-Les lignes des documents sources s'affichent dans la fenêtre **Livraison entrepôt**. Le champ **Qté à livrer** est renseigné avec la quantité restante pour chaque ligne, mais vous pouvez modifier cette quantité selon vos besoins. Si vous avez supprimé le contenu du champ **Code de zone** du raccourci **Général** avant d'accéder aux lignes, vous devez alors renseigner un code de zone approprié sur chaque ligne livraison.  
+Les lignes des documents origine s'affichent sur la page **Livraison entrepôt**. Le champ **Qté à livrer** est renseigné avec la quantité restante pour chaque ligne, mais vous pouvez modifier cette quantité selon vos besoins. Si vous avez supprimé le contenu du champ **Code de zone** du raccourci **Général** avant d'accéder aux lignes, vous devez alors renseigner un code de zone approprié sur chaque ligne livraison.  
 
 > [!NOTE]  
 >  Vous ne pouvez pas livrer un nombre d'articles supérieur au nombre figurant dans le champ **Qté résiduelle** de la ligne document source. Pour livrer des articles supplémentaires, récupérez un autre document source contenant une ligne pour l'article concerné en utilisant la fonction filtre afin d'obtenir les documents sources où figure cet article.  
@@ -76,7 +76,7 @@ Lorsque vous disposez des lignes à livrer, vous pouvez lancer le processus qui 
 Généralement, un magasinier chargé du prélèvement crée un document prélèvement, ou ouvre un document prélèvement déjà créé.
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Livraisons entrepôt**, puis sélectionnez le lien associé.
 2. Sélectionnez la livraison entrepôt que vous souhaitez prélever, puis sélectionnez l'action **Créer prélèvement**.
-3. Renseignez les champs du formulaire de sélection, puis cliquez sur le bouton **OK**. Le document prélèvement entrepôt spécifié est créé.
+3. Renseignez les champs de la page de demande, puis cliquez sur le bouton **OK**. Le document prélèvement entrepôt spécifié est créé.
 
     Sinon, ouvrez un prélèvement entrepôt existant.
 4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Prélèvements**, puis sélectionnez le lien associé. Sélectionnez le prélèvement entrepôt que vous souhaitez utiliser.

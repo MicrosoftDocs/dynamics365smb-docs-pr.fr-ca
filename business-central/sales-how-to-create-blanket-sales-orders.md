@@ -11,10 +11,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 8e0668e39891f6e0924afd8d9ec3ee39af95e587
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 4989933a0034e5d496e09824ad0ca621a2373825
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="work-with-blanket-sales-orders"></a>Utiliser des commandes permanentes ventes
@@ -42,7 +42,7 @@ Vous pouvez utiliser une commande permanente ventes, par exemple, lorsqu'un clie
 2.  Lorsque vous êtes prêt à créer les commandes, sélectionnez **Créer commande**, puis **Oui**. Un message s'affiche, vous informant que la commande ouverte a été associée à un numéro de commande. Remarquez que la commande ouverte n'a pas été supprimée.  
 3.  Cliquez sur le bouton **OK**.  
 4.  Pour afficher les résultats des étapes précédentes, sélectionnez l'action **Ligne**, l'action **Lignes non reportées**, puis l'action **Commandes**.  
-5.  Dans la fenêtre **Lignes vente**, sélectionnez le document de vente approprié, sélectionnez l'action **Ligne**, sélectionnez Ligne, puis sélectionnez l'action **Afficher document**.  
+5.  Sur la page **Lignes vente**, sélectionnez la document de vente appropriée, sélectionnez l'action **Ligne**, sélectionnez Ligne, puis sélectionnez l'action **Afficher document**.  
 
 Ce qui suit affecte les documents de vente après leur création à partir de documents de vente ouverts :  
 
@@ -53,14 +53,14 @@ Ce qui suit affecte les documents de vente après leur création à partir de do
 - Si les commandes vente ne sont pas créées directement depuis la commande ouverte mais ont trait à celle\-ci, il est possible de créer un lien entre une commande vente et une commande ouverte en entrant le numéro de commande ouverte associé dans le champ **N° commande ouverte** sur la ligne de document de vente.  
 - Une fois le document de vente créé pour la quantité totale d'une ligne commande permanente, aucun autre document de vente ne peut être créé pour la même ligne. Les utilisateurs ne peuvent plus entrer de quantité dans le champ **Qté à expédier**. Toutefois, si des quantités supplémentaires doivent être ajoutées à une commande ouverte, il est possible d'augmenter la valeur du champ **Quantité** et de créer des commandes supplémentaires.  
 - La commande ouverte vente facturée reste dans le système jusqu'à ce qu'elle soit supprimée, soit en supprimant les commandes ouvertes individuelles, soit en exécutant le traitement par lots **Suppr. cdes vente ouv. fact.**.  
-- Si un client est également enregistré comme contact dans le module Marketing et si vous avez spécifié un code modèle interaction pour les commandes vente ouvertes dans la fenêtre **Paramètres Marketing**, lorsque vous sélectionnez **Imprimer** pour imprimer la commande vente ouverte, une interaction est enregistrée automatiquement dans la table Écriture journal interaction.
+- Si un client est également enregistré comme contact dans le module Marketing et si vous avez spécifié un code modèle interaction pour les commandes permanentes ventes sur la page **Configuration Marketing**, lorsque vous sélectionnez **Imprimer** pour imprimer la commande permanente ventes, une interaction est enregistrée automatiquement dans la table Écriture journal interaction.
 
 ## <a name="to-view-the-status-of-a-blanket-purchase-order"></a>Pour visualiser l'état d'une commande permanente achats  
-Vous pouvez visualiser l'état d'une commande permanente ventes dans la fenêtre **Statistiques Commande permanente achats**. Ceci peut s'avérer utile lorsque vous commencez à facturer une commande créée à partir de la commande permanente achats.  
+Vous pouvez visualiser l'état d'une commande permanente ventes sur la page **Statistiques Commande permanente achats**. Ceci peut s'avérer utile lorsque vous commencez à facturer une commande créée à partir de la commande permanente achats.  
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes permanentes achats**, puis sélectionnez le lien associé.  
 2.  Sélectionnez une commande permanente achats, puis choisissez l'action **Statistiques**.  
-3.  Dans la fenêtre **Statistiques Commande ouverte achat**, sur le raccourci **Général**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la commande. Elles se basent sur la quantité totale des **champs Quantité** sur les lignes commande ouverte achat.  
+3.  Sur la page **Statistiques Commande permanente achats**, sur le raccourci **Général**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la commande. Elles se basent sur la quantité totale des **champs Quantité** sur les lignes commande permanente achats.  
 
     - Sur le raccourci **Facturation**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la quantité dans les champs **Qté à facturer** des lignes commande ouverte achat.  
     - Sur le raccourci **Expédition**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la quantité dans les champs **Qté à recevoir** des lignes commande ouverte achat.  
@@ -120,7 +120,7 @@ Le lien entre la commande permanente ventes et le document de vente d'origine, e
     <td>Notes de crédit reportées associées à la ligne sélectionnée.</td>
     </tr>
     </table>
-5. Dans la fenêtre **Lignes vente**, sélectionnez l'action **Afficher document** pour afficher l'écriture.
+5. Sur la page **Lignes vente**, sélectionnez l'action **Afficher document** pour afficher l'écriture.
 
 ## <a name="see-also"></a>Voir aussi
 [Vente](sales-manage-sales.md)  

@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 7172c271d2bd25d79294a637dec83a8a0fb834dc
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 1c534f16c1e69840912e42c30bbcae2d6496b373
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="about-production-orders"></a>À propos des ordres de fabrication
@@ -40,7 +40,7 @@ Les ordres de fabrication sont les points de départ pour :
 -   la traçabilité de la fabrication terminée.  
 
 ## <a name="production-order-creation"></a>Création des bons de production  
-Il est possible de créer des bons de production un par un manuellement à partir de la fenêtre **Bon de production** ou de les générer à partir des fenêtres **Planification document de vente** ou **Planification de commande**. La fenêtre **Feuille planning** permet de générer plusieurs ordres.  
+Il est possible de créer des bons de production un par un manuellement sur la page **Bon de production** ou de les générer sur les pages **Planification document de vente** et/ou **Planification commande**. La page **Feuille planification** permet de générer plusieurs ordres.  
 
 Les ordres de fabrication sont créés à l'aide d'informations provenant des éléments suivants :  
 
@@ -54,8 +54,8 @@ Les ordres de fabrication sont créés à l'aide d'informations provenant des é
 Les ordres de fabrication sont automatiquement réservés et tracés sur leur source quand ils sont :  
 
 -   créés à partir de la fenêtre **Feuille planification** ;  
--   créés avec la fonction Commande dans la fenêtre **Planification document de vente** ;  
--   créés dans la fenêtre **Planification commande** ;  
+-   Créés avec la fonction Commande sur la page **Planification document de vente** ;  
+-   Créés sur la page **Planification commande** ;  
 -   utilisés avec la fonction **Replanification** des ordres de fabrication.  
 
 Pour plus d'informations, voir [Suivre les relations entre l'offre et la demande](production-how-track-demand-supply.md).
@@ -63,7 +63,7 @@ Pour plus d'informations, voir [Suivre les relations entre l'offre et la demande
 Les ordres de fabrication créés par d'autres moyens ne sont pas automatiquement réservés et tracés.   
 
 ## <a name="production-order-status"></a>État du bon de production  
-L'état du bon de production contrôle la manière dont le bon de production se comporte dans le programme. La forme et le contenu de la production sont dictés par l'état de la commande. Les bons de production s'affichent dans différentes fenêtres en fonction de leur état. Vous ne pouvez pas modifier le statut d'un ordre de fabrication manuellement ; vous devez utiliser la fonction **Modifier statut**.  
+L'état du bon de production contrôle la manière dont le bon de production se comporte dans le programme. La forme et le contenu de la production sont dictés par l'état de la commande. Les bons de production sont affichés sur différentes pages en fonction de leur état. Vous ne pouvez pas modifier le statut d'un ordre de fabrication manuellement ; vous devez utiliser la fonction **Modifier statut**.  
 
 ### <a name="simulated-production-order"></a>Bon de production simulé  
 Le bon de production simulé est unique en raison des caractéristiques suivantes :  

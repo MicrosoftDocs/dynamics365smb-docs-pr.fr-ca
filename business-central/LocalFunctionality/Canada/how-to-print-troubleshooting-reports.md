@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 8d27be8b5aa61818a38fd3f5b621ab82d08408ce
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 3178a5d06dcb4c5cf0dddbe61c7d6f6fa10be93a
 ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="print-troubleshooting-reports"></a>Imprimer des rapports de dépannage
@@ -32,13 +32,13 @@ Vous pouvez imprimer ces rapports et les envoyer à votre partenaire certifié M
 
 ## <a name="to-print-the-license-information-report"></a>Pour imprimer le rapport Information sur la licence  
 1.  Dans le Générateur d'objets [!INCLUDE[d365fin](../../includes/d365fin_md.md)], dans le menu **Outils**, choisissez **Information sur la licence**.  
-2.  Dans la fenêtre **Information sur la licence**, vous pouvez afficher un aperçu des informations de licence ou sélectionner le bouton **Exporter** pour imprimer le rapport **Information sur la licence**.  
+2.  Sur la page **Information sur la licence**, vous pouvez afficher un aperçu des informations de licence ou sélectionner le bouton **Exporter** pour imprimer le rapport **Information sur la licence**.  
 
 ## <a name="to-print-the-data-dictionary-report"></a>Pour imprimer le rapport Dictionnaire de données.  
 1.  Dans le Générateur d'objets [!INCLUDE[d365fin](../../includes/d365fin_md.md)], dans le menu **Outils**, choisissez **Générateur d'objets**.  
 2.  Cliquez sur le bouton **Rapport**.  
 3.  Dans la colonne **Type**, recherchez **Code** 10315, qui correspond au rapport **Dictionnaire de données**.  
-4.  Dans la fenêtre **Générateur d'objets**, sélectionnez le bouton **Exécuter** pour ouvrir le rapport **Dictionnaire de données**.  
+4.  Sur la page **Générateur d'objets**, sélectionnez le bouton **Exécuter** pour ouvrir le rapport **Dictionnaire de données**.  
 5.  Sous l'onglet **Options**, entrez les informations adéquates dans les champs.  
 6.  Sélectionnez le bouton **Imprimer** pour imprimer l'état ou le bouton **Aperçu** pour l'afficher à l'écran.  
 

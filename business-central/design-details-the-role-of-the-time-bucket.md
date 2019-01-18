@@ -1,6 +1,6 @@
 ---
 title: "Détails de conception - Le rôle de la plage de temps | Microsoft Docs"
-description: "L'objectif de la plage de temps est de collecter les événements de demande dans la fenêtre de temps de manière à effectuer une commande d'approvisionnement commune."
+description: "L'objectif de la plage de temps est de collecter les événements de demande sur la page de temps de manière à effectuer une commande d'approvisionnement commune."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -14,14 +14,14 @@ ms.date: 10/01/2018
 ms.author: sgroespe
 redirect_url: design-details-handling-reordering-policies
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: c258c13a08e9556caddf55a0d14962ad85cd8ca7
+ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
+ms.openlocfilehash: ff748a192d8d1650a708ab70ec33ccc7bfd53c48
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/22/2018
 
 ---
 # <a name="design-details-the-role-of-the-time-bucket"></a>Détails de conception : rôle de la plage de temps
-L'objectif de la plage de temps est de collecter les événements de demande dans la fenêtre de temps de manière à effectuer une commande d'approvisionnement commune.  
+L'objectif de la plage de temps est de collecter les événements de demande sur la page de temps de manière à effectuer une commande d'approvisionnement commune.  
 
  Pour les méthodes de réapprovisionnement qui utilisent un point de réapprovisionnement, vous pouvez définir une plage de temps. Cela garantit que la demande dans la même période est accumulée avant d'évaluer l'impact sur l'inventaire prévisionnel et de vérifier si le point de réapprovisionnement a été atteint. Si le point de réapprovisionnement est passé, une nouvelle commande approvisionnement est programmée en aval à partir de la fin de la période définie par la plage de temps. Les plages de temps débutent à la date de début de la planification.  
 

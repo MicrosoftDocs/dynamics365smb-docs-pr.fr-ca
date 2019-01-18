@@ -12,10 +12,10 @@ ms.search.keywords: integration, synchronize, map
 ms.date: 10/01/2018
 ms.author: edupont
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 057db7c39834c7be0fb93589e4fc58d740dd259c
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 65466039efae2b18821fb03b6465f4c8c5e18f68
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="managing-customers-and-sales-created-in-dynamics-365-for-sales"></a>Gestion des clients et des ventes créés dans Dynamics 365 for Sales
@@ -89,7 +89,7 @@ Le tableau suivant décrit les règles qui contrôlent la synchronisation entre 
 À partir de la page d'accueil, vous pouvez accéder au guide de configuration assistée **Configuration de la connexion à Microsoft Dynamics 365** qui vous aide à configurer la connexion. Une fois cette opération effectuée, vous disposez d'un couplage facile des enregistrements Sales avec les enregistrements [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
 > [!NOTE]  
->   La section suivante explique la configuration assistée, mais vous pouvez effectuer les mêmes tâches manuellement dans la fenêtre **Configuration de la connexion à Sales**.
+>   La section suivante explique la configuration assistée, mais vous pouvez effectuer les mêmes tâches manuellement sur la page **Configuration de la connexion à Sales**.
 
 Dans le guide de configuration assistée, vous pouvez choisir les données à synchroniser entre les deux services. Vous pouvez également spécifier que vous souhaitez importer votre solution Sales existante. Dans ce cas, vous devez indiquer les informations d'identification d'un compte utilisateur.
 
@@ -113,7 +113,7 @@ Si vous décidez d'activer l'*intégration des commandes vente*, vous devez spé
 ### <a name="coupling-records"></a>Enregistrements couplage
 Dans le guide de configuration assistée, vous pouvez choisir la synchronisation entre les deux services. Mais ultérieurement, vous pouvez également configurer la synchronisation de types spécifiques de données. Cette action est appelée le *couplage*, et cette section fournit des recommandations pour les éléments dont vous devez tenir compte.
 
-Par exemple, si vous souhaitez afficher les comptes Sales en tant que clients dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous devez coupler les deux types d'enregistrements. Ce n'est pas très compliqué, vous devez ouvrir la fenêtre **Liste des clients** dans [!INCLUDE[d365fin](includes/d365fin_md.md)] et il existe une action dans le ruban pour coupler ces données avec Sales. Puis vous devez spécifier quels clients [!INCLUDE[d365fin](includes/d365fin_md.md)] correspondent à quels comptes dans Sales.
+Par exemple, si vous souhaitez afficher les comptes Sales en tant que clients dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous devez coupler les deux types d'enregistrements. Ce n'est pas très compliqué, vous devez ouvrir la page **Liste des clients** dans [!INCLUDE[d365fin](includes/d365fin_md.md)] et il existe une action dans le ruban pour coupler ces données avec Sales. Puis vous devez spécifier quels clients [!INCLUDE[d365fin](includes/d365fin_md.md)] correspondent à quels comptes dans Sales.
 
 Dans certains domaines, la fonctionnalité vous demande de coupler certains ensembles de données avant d'autres ensembles de données comme illustré dans la liste suivante :
 
@@ -130,16 +130,16 @@ Dans certains domaines, la fonctionnalité vous demande de coupler certains ense
 Dans Sales, les documents de vente dépendent d'informations supplémentaires comme les clients, les unités de mesure, les devises, les groupes tarifs client, les articles et/ou les ressources. Pour assurer une intégration transparente avec les documents de vente, vous devez d'abord coupler des clients, des unités de mesure, des devises, des groupes tarifs client, des articles et/ou des ressources.
 
 ### <a name="synchronizing-records-fully"></a>Synchronisation complète des enregistrements
-À la fin du guide de configuration assistée, vous pouvez sélectionner l'action **Exécuter une synchronisation complète** pour démarrer la synchronisation de tous les enregistrements [!INCLUDE[d365fin](includes/d365fin_md.md)] avec tous les enregistrements associés de la solution Sales connectée. Dans la fenêtre **Synchronisation complète CRM. Révision**, sélectionnez l'action **Démarrer**. La synchronisation commence à exécuter les projets en fonction des dépendances. Par exemple, les enregistrements de devise sont synchronisés avant les enregistrements client. La synchronisation complète peut durer longtemps et s'exécutera donc en arrière-plan afin que vous puissiez continuer à utiliser [!INCLUDE[d365fin](includes/d365fin_md.md)].
+À la fin du guide de configuration assistée, vous pouvez sélectionner l'action **Exécuter une synchronisation complète** pour démarrer la synchronisation de tous les enregistrements [!INCLUDE[d365fin](includes/d365fin_md.md)] avec tous les enregistrements associés de la solution Sales connectée. Sur la page **Synchronisation complète CRM. Révision**, sélectionnez l'action **Démarrer**. La synchronisation commence à exécuter les projets en fonction des dépendances. Par exemple, les enregistrements de devise sont synchronisés avant les enregistrements client. La synchronisation complète peut durer longtemps et s'exécutera donc en arrière-plan afin que vous puissiez continuer à utiliser [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
-Pour vérifier la progression des projets individuels lors d'une synchronisation complète, accédez au champ **Statut écriture file d'attente des travaux**, **Statut projet Vers la table int.** ou **Statut projet À partir de la table int.** dans la fenêtre **Synchronisation complète CRM. Révision**.
+Pour vérifier la progression des projets individuels lors d'une synchronisation complète, accédez au champ **État écriture file d'attente des travaux**, **État projet Vers la table int.** ou **État projet À partir de la table int.** sur la page **Synchronisation complète CRM. Révision**.
 
-Dans la fenêtre **Configuration de la connexion à Microsoft Dynamics 365**, vous pouvez obtenir des détails sur la synchronisation complète à tout moment. À partir de cette fenêtre, vous pouvez aussi ouvrir la fenêtre **Correspondances table intégration** pour afficher les détails des tables dans [!INCLUDE[d365fin](includes/d365fin_md.md)] et dans la solution Sales à synchroniser.
+Sur la page **Configuration de la connexion Microsoft Dynamics 365**, vous pouvez obtenir des détails sur la synchronisation complète à tout moment. À partir de cette page, vous pouvez aussi ouvrir la page **Correspondances table intégration** pour afficher les détails des tables dans [!INCLUDE[d365fin](includes/d365fin_md.md)] et dans la solution Sales à synchroniser.
 
 ## <a name="handling-special-sales-order-data"></a>Gestion des données de documents de vente spéciaux
-Les documents de vente dans Sales seront transférés automatiquement vers [!INCLUDE[d365fin](includes/d365fin_md.md)] si vous sélectionnez la case à cocher **Créer automatiquement des documents de vente** dans la fenêtre **Configuration de la connexion à Microsoft Dynamics 365**. Sur ces documents de vente, le champ **Nom** de la commande d'origine est transféré et associé au champ **Numéro de document externe** du document de vente dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
+Les documents de vente dans Sales seront transférés automatiquement à [!INCLUDE[d365fin](includes/d365fin_md.md)] si vous sélectionnez la case à cocher **Créer automatiquement des documents de vente** sur la page **Configuration de la connexion Microsoft Dynamics 365**. Sur ces documents de vente, le champ **Nom** de la commande d'origine est transféré et associé au champ **Numéro de document externe** du document de vente dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
-Ceci peut également fonctionner si le document de vente d'origine contient des produits hors catalogue, c'est-à-dire des articles ou des ressources qui ne sont enregistrés dans aucun produit. Dans ce cas, vous devez renseigner les champs **Type produit hors catalogue** et **N° produit hors catalogue** de la fenêtre **Paramètres ventes**, de sorte que ces ventes de produits non enregistrées soient mappées à un nombre donné d'articles/de ressources pour l'analyse financière.
+Ceci peut également fonctionner si le document de vente d'origine contient des produits hors catalogue, c'est-à-dire des articles ou des ressources qui ne sont enregistrés dans aucun produit. Dans ce cas, vous devez renseigner les champs **Type produit hors catalogue** et **N° produit hors catalogue** sur la page **Configuration ventes & à recevoir**, de sorte que ces ventes de produits non enregistrées soient mappées à un nombre donné d'articles/de ressources pour l'analyse financière.
 
 Si la description de l'article sur le document de vente d'origine est très longue, une ligne document de vente supplémentaire de type Commentaire est créée pour stocker le texte intégral du document de vente dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
 

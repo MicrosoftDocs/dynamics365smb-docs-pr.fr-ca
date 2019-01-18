@@ -11,10 +11,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 6739a7fc1400e9c1cfbc276c0a9ebeb3f95467b2
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 35eaf9776508d608a48aaa38e6d83ae879cd05af
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="walkthrough-picking-and-shipping-in-basic-warehouse-configurations"></a>Procédure pas à pas : Prélèvement et expédition dans les configurations de stockage de base
@@ -32,7 +32,7 @@ Pour plus d'informations, reportez\-vous à [Détails de conception : flux de d
 La procédure pas à pas suivante illustre la méthode B dans la table précédente.  
 
 ## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas  
-Pour les configurations d'entrepôt de base, lorsque votre emplacement est configuré pour exiger un traitement des prélèvements mais pas un traitement des livraisons, vous utilisez la fenêtre **Prélèvement inventaire** pour enregistrer et reporter les informations de prélèvement et de livraison pour vos documents sources sortants. Le document origine sortant peut être un document de vente, un retour achat, un transfert sortant ou un bon de production avec un besoin de composantes.  
+Pour les configurations d'entrepôt de base, lorsqu'un emplacement est défini pour exiger un traitement des prélèvements mais pas un traitement des livraisons, vous utilisez la page **Prélèvement inventaire** pour enregistrer et reporter les informations de prélèvement et de livraison pour vos documents origine sortants. Le document origine sortant peut être un document de vente, un retour achat, un transfert sortant ou un bon de production avec un besoin de composantes.  
 
 Cette procédure pas à pas présente les tâches suivantes :  
 
@@ -56,7 +56,7 @@ Pour exécuter ce processus pas à pas, vous devez :
 -   Pour devenir magasinier dans un emplacement ARGENT, procédez comme suit :  
 
     1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Employés d'entrepôt**, puis sélectionnez le lien associé.  
-    2.  Choisissez le champ **ID utilisateur** et sélectionnez votre propre compte utilisateur dans la fenêtre **Utilisateurs**.  
+    2.  Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs**.  
     3.  Dans le champ **Code magasin**, entrez ARGENT.  
     4.  Sélectionnez le champ **Par défaut**.  
 
@@ -73,10 +73,10 @@ Pour exécuter ce processus pas à pas, vous devez :
     3.  Choisissez l'action **Reporter**, puis cliquez sur le bouton **Oui**.  
 
 ## <a name="story"></a>Scénario  
-Ellen, la gestionnaire d'entrepôt de CRONUS, configure l'entrepôt ARGENT pour le prélèvement de base dans lequel les magasiniers traitent les commandes sortantes individuellement. Susan, préparatrice de commandes, crée un document de vente pour 30 unités de l'article LS-81 à livrer au client 10000 depuis l'entrepôt ARGENT. Jean, le magasinier, doit s'assurer que la livraison est préparée et livrée au client. Jean gère toutes les tâches impliquées dans la fenêtre **Prélèvement inventaire**, qui pointe automatiquement vers les zones où LS-81 est stocké.  
+Ellen, la gestionnaire d'entrepôt de CRONUS, configure l'entrepôt ARGENT pour le prélèvement de base dans lequel les magasiniers traitent les commandes sortantes individuellement. Susan, préparatrice de commandes, crée un document de vente pour 30 unités de l'article LS-81 à livrer au client 10000 depuis l'entrepôt ARGENT. Jean, le magasinier, doit s'assurer que la livraison est préparée et livrée au client. Jean gère toutes les tâches impliquées sur la page **Prélèvement inventaire**, qui indique automatiquement les zones où LS-81 est stocké.  
 
 ## <a name="setting-up-the-location"></a>Configuration de l'emplacement  
-La configuration de la fenêtre **Fiche magasin** définit les flux d'entrepôt de la société.  
+La configuration de la page **Fiche emplacement** définit les flux d'entrepôt de la compagnie.  
 
 ### <a name="to-set-up-the-location"></a>Pour configurer l'emplacement  
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, puis sélectionnez le lien associé.  
@@ -102,7 +102,7 @@ Les commandes vente sont le type de document d'origine sortant le plus répandu.
     Jean procède au prélèvement et à la livraison des articles vendus.  
 
 ## <a name="picking-and-shipping-items"></a>Prélèvement et livraison d'articles  
-Dans la fenêtre **Prélèvement stock**, vous pouvez gérer toutes les activités entrepôt sortantes pour un document d'origine spécifique, tel qu'une commande vente.  
+Sur la page **Prélèvement inventaire**, vous pouvez gérer toutes les activités entrepôt sortantes pour un document d'origine spécifique, tel qu'un document de vente.  
 
 ### <a name="to-pick-and-ship-items"></a>Pour prélever et livrer des articles  
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Prélèvements inventaire**, puis sélectionnez le lien associé.  

@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: jswymer
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 681540708d9807aafebcf5701232a282a189e47b
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: b4c3d7350ee6557a68c7efd087a463277aec7fd3
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="updating-report-or-document-layouts"></a>Mise à jour des présentations de rapport ou de document
@@ -32,7 +32,7 @@ Certaines modifications de l'ensemble de données de rapport peuvent être autom
   
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Présentations rapport**, puis sélectionnez le lien associé.  
   
-2.  Dans la fenêtre **Présentations rapport**, si vous souhaitez mettre à jour un rapport spécifique, sélectionnez la présentation dans la liste, puis choisissez l'action **Mettre à jour présentation**. Ou, si vous souhaitez mettre à jour toutes les présentations de rapport personnalisées pour la compagnie, choisissez l'action **Mettre à jour toutes les présentations**.  
+2.  Sur la page **Présentations rapport**, si vous souhaitez mettre à jour un rapport spécifique, sélectionnez la présentation dans la liste, puis choisissez l'action **Mettre à jour présentation**. Ou, si vous souhaitez mettre à jour toutes les présentations de rapport personnalisées pour la compagnie, choisissez l'action **Mettre à jour toutes les présentations**.  
 
 Si aucune erreur ne se produit, la mise à jour est appliquée aux présentations de rapport. Si des erreurs se produisent, un message contenant les erreurs s'affiche. Vous devez ensuite modifier manuellement la présentation de rapport personnalisée pour corriger l'erreur. Pour plus d'informations, consultez [Résolution des erreurs](ui-update-report-layouts.md#FixErrors).  
 
@@ -40,9 +40,9 @@ Si aucune erreur ne se produit, la mise à jour est appliquée aux présentation
   
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Sélection présentation rapport**, puis sélectionnez le lien associé.  
   
-2.  Dans la fenêtre **Sélection présentation rapport**, choisissez l'action **Mises à jour présentation test**.  
+2.  Sur la page **Sélection présentation rapport**, choisissez l'action **Mises à jour présentation test**.  
   
- Les modifications des présentations de rapport sont testées mais pas appliquées aux présentations de rapport réelles. La fenêtre **Journal mise à jour présentation rapport** s'affiche pour indiquer l'état des mises à jour potentielles pour chaque présentation de rapport. Si une présentation de rapport contient des erreurs, vous pouvez y accéder directement à partir du message pour résoudre les problèmes. Pour plus d'informations, consultez [Résolution des erreurs](ui-update-report-layouts.md#FixErrors).  
+ Les modifications des présentations de rapport sont testées mais pas appliquées aux présentations de rapport réelles. Une page **Journal mise à jour présentation rapport** s'affiche pour indiquer l'état des mises à jour potentielles pour chaque présentation de rapport. Si une présentation de rapport contient des erreurs, vous pouvez y accéder directement à partir du message pour résoudre les problèmes. Pour plus d'informations, consultez [Résolution des erreurs](ui-update-report-layouts.md#FixErrors).  
   
 ##  <a name="UpdateLimitations"></a> Limitations de la mise à jour d'une présentation de rapport personnalisée  
  Il existe plusieurs types de modifications que la mise à jour automatique peut appliquer à des présentations de rapport personnalisées, par exemple, un champ utilisé dans la présentation a été supprimé de l'ensemble de données du rapport. Toutefois, la mise à jour automatique ne peut pas gérer les modifications ci-après apportées à un ensemble de données de rapport.  

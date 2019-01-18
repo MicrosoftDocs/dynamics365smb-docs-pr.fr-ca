@@ -13,30 +13,30 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: b92e6a5227fc2e1c60498ef2aafaae55deaedab8
+ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
+ms.openlocfilehash: 6aa07d1f37c15901951ab5b81b771838abf95126
 ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/26/2018
 
 ---
 # <a name="create-bin-contents"></a>Créer le contenus de la zone
-Une fois la configuration des emplacements terminée, vous pouvez configurer leur contenu. En d'autres termes, vous pouvez configurer les articles à stocker dans une zone donnée et définir les règles qui régissent le remplissage de la zone avec un article spécifique. Vous pouvez effectuer cette opération manuellement dans la fenêtre **Contenu de la zone** ou automatiquement dans la fenêtre **Créer la feuille contenu de la zone**.
+Une fois la configuration des emplacements terminée, vous pouvez configurer leur contenu. En d'autres termes, vous pouvez configurer les articles à stocker dans une zone donnée et définir les règles qui régissent le remplissage de la zone avec un article spécifique. Vous pouvez effectuer cette opération manuellement sur la page **Contenu de la zone** ou automatiquement sur la page **Créer feuille contenu de la zone**.
 
 ## <a name="to-create-bin-content-manually"></a>Pour créer le contenu de la zone manuellement  
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'emplacement à partir duquel vous souhaitez créer des contenus de la zone, puis choisissez l'action **Zones**.  
 3.  Sélectionnez la zone à partir de laquelle vous souhaitez configurer un contenu, puis choisissez l'action **Contenus**.  
-4.  Pour chaque article que vous souhaitez stocker dans l'emplacement, renseignez une ligne de la fenêtre **Contenu emplacement** avec les informations appropriées. Certains champs sont déjà renseignés avec des informations relatives à la zone.  
+4.  Pour chaque article que vous souhaitez stocker dans la zone, renseignez une ligne de la page **Contenus de la zone** avec les informations appropriées. Certains champs sont déjà renseignés avec des informations relatives à la zone.  
 5.  Renseignez d'abord le champ **N° article**, puis, si vous utilisez un prélèvement et un rangement suggérés, renseignez les autres champs tels que **Code unité de mesure**, **Qté max** et **Qté min**.  
 
 Sélectionnez le champ **Fixe** si nécessaire. Si l'emplacement doit être utilisé comme emplacement par défaut pour l'article, sélectionnez le champ **Emplacement par défaut**.  
 
-Si vous utilisez un prélèvement et un rangement suggérés et que vous avez saisi, via la fiche article, les dimensions exactes des unités de mesure de chaque article, la quantité maximale que vous avez saisie dans la fenêtre **Contenu de la zone** est comparée aux capacités physiques de la zone. Les quantités minimales et maximales sont alors utilisées lors du calcul du réapprovisionnement de la zone et des rangements proposés.  
+Si vous utilisez un prélèvement et un rangement suggérés et que vous avez saisi, via la fiche article, les dimensions exactes des unités de mesure de chaque article, la quantité maximale que vous avez saisie sur la page **Contenus de la zone** est comparée aux capacités physiques de la zone. Les quantités minimales et maximales sont alors utilisées lors du calcul du réapprovisionnement de la zone et des rangements proposés.  
 
 Si vous sélectionnez le champ **Fixe**, vous associez l'article à l'emplacement de manière statique, ce qui signifie que [!INCLUDE[d365fin](includes/d365fin_md.md)] essaie de placer cet article dans l'emplacement si l'espace libre est suffisant et conserve l'enregistrement qui associe l'article de manière statique à l'emplacement, même lorsque la quantité à l'emplacement est égale à 0. Il est possible de placer d'autres articles dans la zone, même si un article a été associé à cette zone.  
 
 > [!NOTE]  
->  Vous pouvez configurer simultanément plusieurs contenus emplacement dans la fenêtre **Feuille création contenu emplacement**.  
+>  Vous pouvez configurer simultanément plusieurs contenus de la zone sur la page **Feuille création contenu de la zone**.  
 
 ## <a name="to-create-bin-content-with-a-worksheet"></a>Pour créer le contenu de la zone avec une feuille  
 Lorsque vous avez créé vos zones, vous pouvez créer le contenu de chaque zone dans la feuille de création de contenu de la zone.
