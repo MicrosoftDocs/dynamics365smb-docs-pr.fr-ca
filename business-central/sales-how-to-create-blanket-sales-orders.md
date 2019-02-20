@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 10/01/2018
+ms.date: 12/20/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 4989933a0034e5d496e09824ad0ca621a2373825
+ms.sourcegitcommit: 5801fcc1284edfe1b8578518c084455c336d5a40
+ms.openlocfilehash: ac2582e48d03738974d5db51841e1efdf4c0a316
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
+ms.lasthandoff: 12/27/2018
 
 ---
 # <a name="work-with-blanket-sales-orders"></a>Utiliser des commandes permanentes ventes
@@ -27,7 +27,7 @@ Sur la commande permanente, vous pouvez configurer chaque livraison comme une li
 Vous pouvez utiliser une commande permanente ventes, par exemple, lorsqu'un client appelle pour passer une commande de 1 000 unités d'un article et souhaite des livraisons par lot de 250 unités chaque semaine du mois suivant.
 
 > [!NOTE]
-> Les commandes permanentes achats fonctionnent de la même manière que les commandes permanentes ventes. Cette documentation ne couvre pas les commandes permanentes achats.
+> Les commandes permanentes achats fonctionnent de la même manière que les commandes permanentes ventes. Cette documentation ne concerne que les commandes permanentes ventes.
 
 ## <a name="to-create-a-blanket-sales-order"></a>Pour créer une commande permanente ventes  
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes permanentes ventes**, puis sélectionnez le lien associé.  
@@ -38,7 +38,7 @@ Vous pouvez utiliser une commande permanente ventes, par exemple, lorsqu'un clie
 
 ## <a name="to-create-a-sales-order-from-a-blanket-sales-order"></a>Pour créer un document de vente à partir d'une commande permanente ventes  
 
-1.  Pour créer une commande pour l'une des lignes de l'ordre d'assemblage ouvert, effacez la quantité du champ **Qté à expédier** de toutes les lignes que vous ne voulez PAS expédier actuellement.  
+1.  Pour créer une commande pour l'une des lignes de la commande permanente ventes, effacez la quantité du champ **Qté à livrer** de toutes les lignes que vous ne voulez pas livrer pour le moment.  
 2.  Lorsque vous êtes prêt à créer les commandes, sélectionnez **Créer commande**, puis **Oui**. Un message s'affiche, vous informant que la commande ouverte a été associée à un numéro de commande. Remarquez que la commande ouverte n'a pas été supprimée.  
 3.  Cliquez sur le bouton **OK**.  
 4.  Pour afficher les résultats des étapes précédentes, sélectionnez l'action **Ligne**, l'action **Lignes non reportées**, puis l'action **Commandes**.  
@@ -55,17 +55,17 @@ Ce qui suit affecte les documents de vente après leur création à partir de do
 - La commande ouverte vente facturée reste dans le système jusqu'à ce qu'elle soit supprimée, soit en supprimant les commandes ouvertes individuelles, soit en exécutant le traitement par lots **Suppr. cdes vente ouv. fact.**.  
 - Si un client est également enregistré comme contact dans le module Marketing et si vous avez spécifié un code modèle interaction pour les commandes permanentes ventes sur la page **Configuration Marketing**, lorsque vous sélectionnez **Imprimer** pour imprimer la commande permanente ventes, une interaction est enregistrée automatiquement dans la table Écriture journal interaction.
 
-## <a name="to-view-the-status-of-a-blanket-purchase-order"></a>Pour visualiser l'état d'une commande permanente achats  
-Vous pouvez visualiser l'état d'une commande permanente ventes sur la page **Statistiques Commande permanente achats**. Ceci peut s'avérer utile lorsque vous commencez à facturer une commande créée à partir de la commande permanente achats.  
+## <a name="to-view-the-status-of-a-blanket-sales-order"></a>Pour visualiser l'état d'une commande permanente ventes  
+Vous pouvez afficher l'état d'une commande permanente vente sur la page **Statistiques Commande permanente ventes**. Ceci peut s'avérer utile lorsque vous commencez à facturer la commande créée à partir de la commande permanente ventes.  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes permanentes achats**, puis sélectionnez le lien associé.  
-2.  Sélectionnez une commande permanente achats, puis choisissez l'action **Statistiques**.  
-3.  Sur la page **Statistiques Commande permanente achats**, sur le raccourci **Général**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la commande. Elles se basent sur la quantité totale des **champs Quantité** sur les lignes commande permanente achats.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes permanentes ventes**, puis sélectionnez le lien associé.  
+2.  Sélectionnez une commande permanente ventes, puis sélectionnez l'action **Statistiques**.  
+3.  Sur la page **Statistiques Commande permanente ventes**, sur le raccourci **Général**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la commande. Elles se basent sur la quantité totale des **champs Quantité** sur les lignes commande permanente ventes.  
 
-    - Sur le raccourci **Facturation**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la quantité dans les champs **Qté à facturer** des lignes commande ouverte achat.  
-    - Sur le raccourci **Expédition**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la quantité dans les champs **Qté à recevoir** des lignes commande ouverte achat.  
-    - Sur le raccourci **Paiement anticipé**, vous pouvez visualiser des informations récapitulatives concernant les éventuels montants déjà payés.  
-    - Sur le raccourci **Fournisseur**, vous pouvez visualiser certaines informations de base concernant le fournisseur.    
+- Sur le raccourci **Facturation**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la quantité dans les champs **Qté à facturer** des lignes de la commande vente en cours.  
+- Sur le raccourci **Livraison**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la quantité dans les champs **Qté à recevoir** des lignes de la commande vente en cours.  
+- Sur le raccourci **Paiement anticipé**, vous pouvez visualiser des informations récapitulatives concernant les éventuels montants déjà payés.  
+- Sur le raccourci **Fournisseur**, vous pouvez visualiser certaines informations de base concernant le fournisseur.    
 
 ## <a name="to-view-unposted-and-posted-blanket-sales-order-lines"></a>Pour afficher des lignes commande permanente ventes reportées et non reportées   
 Le lien entre la commande permanente ventes et le document de vente d'origine, et n'importe quel autre document vente, est conservé après report en tant que liste des lignes facture reportées et non reportées de document de vente.  
@@ -74,56 +74,27 @@ Le lien entre la commande permanente ventes et le document de vente d'origine, e
 2. Ouvrez la commande permanente ventes que vous souhaitez afficher.
 3. Pour visualiser les écritures non reportées, sélectionnez la ligne en question, sélectionnez l'action **Ligne**, puis l'action **Lignes non reportées**. Choisissez l'une des options suivantes.  
 
-    <table>
-    <tr>
-    <th>Option</th>
-    <th>Description</th>
-    </tr>
-    <tr>
-    <td>**Commandes**</td>
-    <td>Spécifie les commandes ouvertes associées à la ligne sélectionnée.</td>
-    </tr>
-    <tr>
-    <td>**Factures**</td>
-    <td>Spécifie les factures ouvertes associées à la ligne sélectionnée. Ouvrez les factures associées manuellement à une commande ouverte en entrant le numéro de commande ouverte dans la ligne facture vente.</td>
-    </tr>
-    <tr>
-    <td>**Retours**</td>
-    <td>Spécifie les commandes retour ouvertes associées à la ligne sélectionnée.</td>
-    </tr>
-    <tr>
-    <td>**Avoirs**</td>
-    <td>Spécifie les avoirs ouverts associés à la ligne sélectionnée.</td>
-    </tr>
-    </table>
-4. Pour visualiser les écritures reportées, sélectionnez la ligne en question, choisissez l'action **Ligne**, puis l'action **Lignes reportées**. Choisissez l'une des options suivantes.  
+    |Option|Description|
+    |--|--|
+    |**Commandes**|Spécifie les commandes ouvertes associées à la ligne sélectionnée.|
+    |**Factures**|Spécifie les factures ouvertes associées à la ligne sélectionnée. Ouvrez les factures associées manuellement à une commande ouverte en entrant le numéro de commande ouverte dans la ligne facture vente.|
+    |**Retours**|Spécifie les commandes retour ouvertes associées à la ligne sélectionnée.|
+    |**Avoirs**|Spécifie les avoirs ouverts associés à la ligne sélectionnée.|
 
-    <table>
-    <tr>
-    <th>Option</th>
-    <th>Description</th>
-    </tr>
-    <tr>
-    <td>**Livraisons**</td>
-    <td>Livraisons reportées associées à la ligne sélectionnée.</td>
-    </tr>
-    <tr>
-    <td>**Factures**</td>
-    <td>Factures reportées associées à la ligne sélectionnée.</td>
-    </tr>
-    <tr>
-    <td>**Réceptions retour**</td>
-    <td>Réceptions retour reportées associées à la ligne sélectionnée.</td>
-    </tr>
-    <tr>
-    <td>**Avoirs**</td>
-    <td>Notes de crédit reportées associées à la ligne sélectionnée.</td>
-    </tr>
-    </table>
+4. Pour visualiser les écritures reportées, sélectionnez la ligne en question, sélectionnez l'action **Ligne**, puis l'action **Lignes reportées**. Choisissez l'une des options suivantes.  
+
+    |Option|Description|
+    |---|----|
+    |**Livraisons**|Livraisons reportées associées à la ligne sélectionnée.|
+    |**Factures**|Factures reportées associées à la ligne sélectionnée.|
+    |**Réceptions retour**|Réceptions retour reportées associées à la ligne sélectionnée.|
+    |**Avoirs**|Notes de crédit reportées associées à la ligne sélectionnée.|
+
 5. Sur la page **Lignes vente**, sélectionnez l'action **Afficher document** pour afficher l'écriture.
 
 ## <a name="see-also"></a>Voir aussi
-[Vente](sales-manage-sales.md)  
+[Sales](sales-manage-sales.md)
+[Créer des ordres d'assemblage permanents](assembly-how-to-create-blanket-assembly-orders.md)  
 [Définition des ventes](sales-setup-sales.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 

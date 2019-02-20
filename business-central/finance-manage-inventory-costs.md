@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 11/15/2018
+ms.date: 11/27/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 67400e424305cc705db5c1bd52a8e4de17ecc5a9
-ms.openlocfilehash: d24998281a7e718c5f4ae648eba1a338512eefcb
+ms.sourcegitcommit: add32e82465610830b68a979e238103bfa10d438
+ms.openlocfilehash: d5f5885055aa1094e4172d4a4e327ff1e940f799
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/20/2018
+ms.lasthandoff: 11/29/2018
 
 ---
 # <a name="managing-inventory-costs"></a>Gestion des coûts ajustés
@@ -29,6 +29,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |**Pour**|**Voir**|  
 |------------|-------------|  
 |Lire différentes informations conceptuelles pour comprendre les principes et définitions qui gouvernent la fonctionnalité Comptabilité des coûts de stock [!INCLUDE[d365fin](includes/d365fin_md.md)].|[À propos de l'évaluation des coûts de stock](finance-learn-about-costing.md)|  
+|En savoir plus sur les mécanismes dans le système d'évaluation.|[Détails de conception : stock évaluation stock](design-details-inventory-costing.md)|
 |Obtenir des informations sur la manière dont les périodes d'inventaire permettent à une compagnie de contrôler la valeur de l'inventaire dans le temps en définissant des périodes plus courtes qui peuvent être fermées au report lorsque la fin de l'exercice financier approche.|[Utiliser les périodes d'inventaire](finance-how-to-work-with-inventory-periods.md)|
 |Apprendre pourquoi les coûts standard sont souvent utilisés par les compagnies de production comme base d'évaluation pour les composantes et les produits finis.|[À propos du calcul des coûts standard](finance-about-calculating-standard-cost.md)|
 |Configurer les périodes d'inventaire, les méthodes d'évaluation des coûts et les méthodes d'arrondissement.|[Configuration de l'évaluation de l'inventaire et des coûts](finance-set-up-inventory-valuation-and-costing.md)|
@@ -38,7 +39,6 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Actualisez périodiquement les coûts standard des composantes, dans les nomenclatures d'assemblage ou de production, et remontez les nouveaux coûts dans l'article parent.|[Mise à jour des coûts standard](finance-how-to-update-standard-costs.md)|
 |Visualiser et modifier manuellement certaines écritures affectation article qui sont créées automatiquement lors des transactions d'inventaire.|[Supprimer et appliquer à nouveau des écritures article](finance-how-to-remove-and-reapply-item-entries.md)|
 |Effectuer un contrôle de fin d'exercice et des tâches de création de rapports, comme le calcul de l'inventaire et le report des coûts dans le grand livre.|[Génération de rapports sur les coûts et rapprochement avec le grand livre](finance-report-costs-and-reconcile-with-the-general-ledger.md)|
-|En savoir plus sur les mécanismes dans le système d'évaluation.|[Détails de conception : stock évaluation stock](design-details-inventory-costing.md)|  
 
 ## <a name="see-also"></a>Voir aussi  
  [Finance](finance.md)  

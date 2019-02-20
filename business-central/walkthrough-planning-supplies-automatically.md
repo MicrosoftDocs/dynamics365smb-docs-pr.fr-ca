@@ -1,6 +1,6 @@
 ---
 title: "Procédure pas à pas : planification automatique des approvisionnements | Microsoft Docs"
-description: "Les expressions comme « exécution planification » et « exécution MRP » se rapportent au calcul du programme directeur de production (PDP) et de la planification des besoins de matières (MRP) en fonction de la demande réelle et projetée."
+description: "Les expressions comme « exécution de la planification » et « exécution MRP » se rapportent au calcul du programme directeur de production (PDP) et de la planification des besoins de matières (MRP) en fonction de la demande réelle et projetée."
 services: project-madeira
 documentationcenter: 
 author: SorenGP
@@ -10,17 +10,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 10/01/2018
+ms.date: 01/31/2019
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 778f182d12959e0332d538c0471a8c2e0d1613a1
+ms.sourcegitcommit: a94c4f2f8d622a91b74ba0de6f0f18e7eb84a5ef
+ms.openlocfilehash: c4239904c17db334cee006d5de08ea8c0e80b750
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
+ms.lasthandoff: 01/31/2019
 
 ---
 # <a name="walkthrough-planning-supplies-automatically"></a>Procédure pas à pas : planification automatique des approvisionnements
-Les expressions comme « exécution planification » et « exécution MRP » se rapportent au calcul du programme directeur de production (PDP) et de la planification des besoins de matières (MRP) en fonction de la demande réelle et projetée.  
+
+**Remarque** : Ce guide pas-à-pas doit être effectué sur une compagnie de démonstration avec l'option **Évaluation complète - Renseigner des exemples de données**, disponible dans l'environnement Sandbox. Pour plus d’informations, voir [Création d'un environnement Sandbox](across-how-create-sandbox-environment.md).
+
+Les expressions comme « exécution de la planification » et « exécution MRP » se rapportent au calcul du programme directeur de production (PDP) et de la planification des besoins de matières (MRP) en fonction de la demande réelle et projetée.  
 
 -   Le calcul PDP est le calcul du calendrier de production principal basé sur la demande réelle et la prévision de la demande. Le calcul PDP est utilisé pour les articles finis disposant de prévisions ou d'une ligne document de vente. Ces articles sont appelés « articles PDP » et identifiés de façon dynamique au début du calcul.  
 -   Le calcul MRP est le calcul des besoins matière basé sur la demande réelle de composantes et la prévision de la demande au niveau des composantes. Le calcul MRP n'est effectué que pour les articles qui ne sont pas des articles PDP. Le but global du calcul MRP est de générer des plans formels en phases, par article, afin de fournir le bon article au bon moment, au bon endroit et dans la bonne quantité.  

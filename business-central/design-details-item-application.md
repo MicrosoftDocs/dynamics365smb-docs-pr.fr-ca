@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, items, ledger entries, posting, inventory
-ms.date: 10/01/2018
+ms.date: 12/21/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 5165cb97d73562d9614a955269ebdcbdc2ff33e4
+ms.sourcegitcommit: 5801fcc1284edfe1b8578518c084455c336d5a40
+ms.openlocfilehash: 772702717a250e7068e93d362bc09a5ba719defe
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
+ms.lasthandoff: 12/27/2018
 
 ---
 # <a name="design-details-item-application"></a>Détails de conception : affectation article
@@ -93,9 +93,9 @@ Pour créer une affectation fixe, vous utilisez les champs **Écr. article à af
 ### <a name="example--fixed-application-in-purchase-return"></a>Exemple – affectation fixe dans le retour achat  
 L'exemple suivant, qui illustre l'effet de l'affectation fixe d'un retour achat d'un article utilisant le mode d'évaluation coût FIFO, est basé sur le scénario suivant :  
 
-1. Dans le numéro de séquence 1, l'utilisateur reporte un achat à un coût de 10,00 $.  
-2. Dans le numéro de séquence 2, l'utilisateur reporte un achat à un coût de 20,00 $.  
-3. Dans le numéro de séquence 3, l'utilisateur reporte un retour achat. L'utilisateur effectue une affectation fixe au second achat en saisissant le numéro d'écriture article dans le champ **Écr. article à affecter** sur la ligne retour achat.  
+1. Dans la séquence 1, l'utilisateur reporte un achat à un coût de 10,00 $.  
+2. Dans la séquence 2, l'utilisateur reporte un achat à un coût de 20,00 $.  
+3. Dans la séquence 3, l'utilisateur valide un retour achat. L'utilisateur effectue une affectation fixe au second achat en saisissant le numéro d'écriture article dans le champ **Écr. article à affecter** sur la ligne retour achat.  
 
 La table suivante montre des écritures du grand livre d'articles résultant de ce scénario.  
 
@@ -111,7 +111,7 @@ Le tableau suivant montre l'écriture d'affectation article générée par l'aff
 
 |Date de report|N° écriture article entrant|N° écriture article sortant|Quantité|N° écriture article gr. livre|  
 |------------------|----------------------------------------------|-----------------------------------------------|--------------|---------------------------------------------|  
-|06/01/20|1|3|10|3|  
+|06/01/20|2|3|10|3|  
 
 Le coût du second achat, 20,00 $, est ensuite transmis correctement au retour achat.  
 

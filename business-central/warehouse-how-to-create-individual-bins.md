@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 10/01/2018
+ms.date: 01/22/2019
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 4df1de7eca8127c5ae2c46e04fecc5ca0f2c8302
+ms.sourcegitcommit: c129dd63b3aabeeac15c6684f961e04bd2b08a2a
+ms.openlocfilehash: 7dc7fb43c465cc2098ceacb6f5906303fefd1f9d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
+ms.lasthandoff: 01/24/2019
 
 ---
 # <a name="create-bins"></a>Créer zones
@@ -26,7 +26,17 @@ La méthode la plus efficace pour créer les zones de votre entrepôt consiste �
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, et sélectionnez le lien associé.  
 2.  Sélectionnez l'emplacement à partir duquel vous souhaitez créer une zone, puis choisissez l'action **Zones**.  
 3. Sélectionnez l'action **Nouveau**.
-4. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
+4. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+
+### <a name="the-dedicated-field"></a>Le champ Réservé
+Le champ **Réservé** sur la page **Zones** indique que les quantités de la zone sont protégées des prélèvements d'autres demandes. Toutefois, les quantités des zones réservées peuvent encore être réservées. Par conséquent, les quantités figurant dans des zones réservées sont incluses dans le champ **Quantité totale disponible** de la page **Réservation**.
+
+La réservation d'une zone est, dans l'entreposage de base, une fonctionnalité similaire à l'utilisation des types de zone, uniquement disponible dans l'entreposage avancé. Pour plus d'informations, voir [Configurer des types de zone](warehouse-how-to-set-up-bin-types.md).
+
+**Par exemple :** un atelier est configuré avec un code de zone dans le champ **Code zone avant production**. Les lignes composante bon de production présentant ce code de zone nécessitent que les composantes consommées en aval soient stockées à cet emplacement. Toutefois, jusqu'à la consommation des composantes de cette zone, d'autres demandes de composantes peuvent y effectuer un prélèvement ou une consommation, car elles sont encore considérées comme du contenu zone disponible. Pour vous assurer que le contenu de la zone est uniquement disponible pour la demande de composantes qui utilise cette zone avant production, vous devez sélectionner le champ **Réservé** sur la ligne de ce code de zone.
+
+> [!Caution]
+> Des articles dans des zones réservées ne sont pas protégés lorsqu'ils sont prélevés et consommés comme composantes d'assemblage ou de production sur la page **Prélèvement inventaire**. Pour plus d'informations, consultez [Prélever pour la fabrication ou l'assemblage dans les configurations de stockage de base](warehouse-how-to-pick-for-production.md).
 
 ## <a name="to-create-bins-individually-in-the-bin-creation-worksheet"></a>Pour créer séparément des zones dans la feuille de création de zones  
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille création zone**, puis sélectionnez le lien associé.  

@@ -3,20 +3,20 @@ title: Configurer les processus financiers| Microsoft Docs
 description: "En savoir plus sur les tâches pour paramétrer les finances de votre société afin de les adapter à votre comptabilité ou vos audits."
 services: project-madeira
 documentationcenter: 
-author: edupont04
+author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
-ms.date: 11/15/2018
-ms.author: edupont
+ms.date: 12/19/2018
+ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 67400e424305cc705db5c1bd52a8e4de17ecc5a9
-ms.openlocfilehash: c52121b89a08b78750c8b46377b2bf47c7a948df
+ms.sourcegitcommit: aa1e7b13cf6cc56df1a6922a9b123e7cc19580c6
+ms.openlocfilehash: 377e7f8eb3cb78adf68e3f4167a215d8f027f972
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/20/2018
+ms.lasthandoff: 12/19/2018
 
 ---
 # <a name="setting-up-finance"></a>Configuration de Finance
@@ -36,6 +36,8 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Définissez comment déclarer les montants de taxe sur la valeur ajoutée que vous avez recueillis sur les ventes aux autorités fiscales. |[Configuration des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md)|
 |Se préparer à gérer la TVA non réalisée en association avec des méthodes comptables basées sur la trésorerie.|[Configurer la TVA non réalisée pour la comptabilité basée sur la trésorerie](finance-setup-unrealized-vat.md)|
 | Définissez vos fonctionnalités Ventes et Achats pour gérer les paiements dans des devises étrangères.|[Activer l'affectation d'écritures en devises différentes](finance-how-enable-application-ledger-entries-different-currencies.md)
+|Définissez une ou plusieurs devises additionnelles afin que les montants soient automatiquement reportés en $ et dans une devise de report additionnelle sur chaque écriture et sur d'autres écritures.|[Configurer une devise de report additionnelle](finance-how-setup-additional-currencies.md)|
+|Ajustez régulièrement les équivalents en devise supplémentaire pour compenser la fluctuation des taux de change.|[Mettre à jour des taux de change devise](finance-how-update-currencies.md)|
 |Définir plusieurs taux d'intérêt à utiliser pour différentes périodes pour les paiements retardés dans les transactions commerciales.|[Paramétrer plusieurs taux d'intérêt](finance-how-to-set-up-multiple-interest-rates.md)|
 |Préparer à arrondir les montants des factures automatiquement lors de la création de celles-ci.|[Configuration de la fonction arrondissement facture](finance-set-up-invoice-rounding.md)|
 | Ajouter de nouveaux comptes au plan comptable existant. |[Configuration du plan comptable](finance-setup-chart-accounts.md) |
@@ -43,6 +45,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Activer la facturation d'un client qui n'est pas configuré dans le système.|[Configurer des clients effectuant un achat au comptoir](finance-how-to-set-up-cash-customers.md)|
 | Configurez le rapport Intrastat et envoyez-le à une administration | [Configurer et soumettre une déclaration Intrastat](finance-how-setup-report-intrastat.md)|
 |Préparer le rapport Balance de vérification consolidée dans le tableau de bord Comptable pour obtenir un aperçu financier entre plusieurs compagnies.|[Consolidation des données financières de plusieurs compagnies](finance-consolidated-company-reporting.md)|
+|Vérifiez qu'une écriture dans un journal général est affectée à plusieurs comptes lors du report du journal, soit par quantité, pourcentage ou montant.|[Utiliser les clés d'affectation dans les journaux généraux](ui-how-use-allocation-keys-general-journals.md)|
 
 ## <a name="see-also"></a>Voir aussi
 [Finance](finance.md)  

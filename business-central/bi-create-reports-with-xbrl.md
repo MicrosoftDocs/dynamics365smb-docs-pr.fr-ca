@@ -13,10 +13,10 @@ ms.search.keywords:
 ms.date: 10/01/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: e187a6d66804066f68af910c75d74f639e852446
+ms.sourcegitcommit: add32e82465610830b68a979e238103bfa10d438
+ms.openlocfilehash: 2b17ad5dabed505b358b8c2be6414b17228724b8
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
+ms.lasthandoff: 11/29/2018
 
 ---
 # <a name="create-reports-with-xbrl"></a>Création d'états avec XBRL
@@ -53,7 +53,7 @@ Une taxonomie peut se composer d'une taxonomie de base, par exemple les taxonomi
 ## <a name="linkbases"></a>Liens ressources  
  Dans la spécification 2 du langage XBRL, la taxonomie est décrite dans plusieurs fichiers XML. Le fichier XML principal est le fichier schéma de la taxonomie (fichier .xsd), qui ne contient qu'une liste désordonnée d'éléments ou d'informations à communiquer. Des liens ressources (fichiers .xml) y sont généralement associés. Les liens ressources contiennent des données complémentaires à la taxonomie brute (fichier .xsd). Il existe six types de lien ressources, dont quatre concernent le langage XBRL pour nom de produit. Il s'agit des types suivants :  
 
--   Liens ressources libellés : Ce lien ressources contient les libellés ou noms des éléments. Ce fichier peut contenir des libellés en plusieurs langues identifiées par l'attribut XML 'lang'. Les identificateurs de langue XML sont généralement des abréviations de deux lettres. Ces abréviations sont le plus souvent explicites, mais n'ont aucun lien avec les codes de langue utilisés par Windows ou dans les données de démonstration. Ainsi, lorsque l'utilisateur recherche les langues d'une taxonomie, il peut visualiser tous les libellés du premier élément de la taxonomie et donc voir les différentes langues utilisées. Une taxonomie peut être associée à plusieurs liens ressources libellés si chaque lien ressources correspond à une langue.  
+-   Liens ressources libellés : Ce lien ressources contient les libellés ou noms des éléments. Ce fichier peut contenir des libellés en plusieurs langues identifiées par l'attribut XML 'lang'. Les identificateurs de langage XML sont généralement des abréviations de deux lettres. Ces abréviations sont le plus souvent explicites, mais n'ont aucun lien avec les codes de langue utilisés par Windows ou dans les données de démonstration. Ainsi, lorsque l'utilisateur recherche les langues d'une taxonomie, il peut visualiser tous les libellés du premier élément de la taxonomie et donc voir les différentes langues utilisées. Une taxonomie peut être associée à plusieurs liens ressources libellés si chaque lien ressources correspond à une langue.  
 
 -   Liens ressources présentation : Ce lien de ressources comprend des informations sur la structure des éléments, ou plus précisément, il explique comment le créateur de la taxonomie propose de présenter la taxonomie à l'utilisateur. Le lien de ressources affiche une série de liens. Chacun d'entre eux connecte deux éléments, dans une relation parent-enfant. En appliquant tous ces liens, les éléments peuvent s'afficher de manière hiérarchique. Notez que les liens de ressources de présentation servent principalement à présenter les éléments à l'utilisateur.  
 

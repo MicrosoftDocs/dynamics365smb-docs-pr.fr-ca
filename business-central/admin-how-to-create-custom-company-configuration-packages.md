@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 10/01/2018
+ms.date: 12/07/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
-ms.openlocfilehash: 868972e4d53d858834ba5985a3de3ffa1d4dcc6b
+ms.sourcegitcommit: 8a73de1aa2f4a0f633c401ea341bb7bde6579723
+ms.openlocfilehash: a51628085e640cc2e5f022272eccb89d5cec38b7
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/22/2018
+ms.lasthandoff: 12/11/2018
 
 ---
 # <a name="create-custom-company-configuration-packages"></a>Créer des packages de configuration de compagnie personnalisés
@@ -39,12 +39,11 @@ Autrement, vous pouvez créer un colis qui inclut les tables qui définissent la
 -   Configuration report de taxe  
 -   Configuration du report d'inventaire  
 
-Pour visualiser la liste complète des tables de configuration, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration**, puis sélectionnez le lien associé.  
+Pour visualiser la liste complète des tables de configuration, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration manuelle**, puis sélectionnez le lien associé.  
 
 ## <a name="to-create-a-custom-company-configuration-package"></a>Pour créer un package de configuration de compagnie personnalisé  
-1.  Créez une [!INCLUDE[d365fin](includes/d365fin_md.md)]. ***Lien NON POSSIBLE pour aider à la « création d'un abonné »***.   
-2.  Créez une compagnie pour le modèle solution ou secteur d'utilisation. Pour plus d’informations, voir [Créer une compagnie](admin-how-to-create-a-new-company.md).  
-3.  Configurer la nouvelle compagnie en tenant compte de vos besoins. Renseignez toutes les tables de configuration nécessaires.  
+1.  Créer une nouvelle compagnie. Pour plus d'informations, voir [Création de compagnies dans Business Central](about-new-company.md).  
+3.  Configurez la nouvelle compagnie en tenant compte de vos besoins. Renseignez toutes les tables de configuration nécessaires.  
 4.  Ouvrir la nouvelle compagnie.
 5. Ouvrir la page **Feuille configuration**.  
 6.  Ajoutez les tables que vous souhaitez transférer vers une autre compagnie à la feuille. Affecter des lignes feuille au colis.  

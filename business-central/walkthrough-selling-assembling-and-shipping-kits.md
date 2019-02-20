@@ -10,16 +10,19 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 10/01/2018
+ms.date: 01/31/2019
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 2bd235844f191c52f3f5d3e34b43c4fdf75fb464
+ms.sourcegitcommit: a94c4f2f8d622a91b74ba0de6f0f18e7eb84a5ef
+ms.openlocfilehash: b1c0f2549420bec5efc8f224f88f46d8c5874968
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
+ms.lasthandoff: 01/31/2019
 
 ---
 # <a name="walkthrough-selling-assembling-and-shipping-kits"></a>Procédure pas-à-pas : vente, assemblage et expédition de kits
+
+**Remarque** : Ce guide pas-à-pas doit être effectué sur une compagnie de démonstration avec l'option **Évaluation complète - Renseigner des exemples de données**, disponible dans l'environnement Sandbox. Pour plus d’informations, voir [Création d'un environnement Sandbox](across-how-create-sandbox-environment.md).
+
 Pour prendre en charge un inventaire juste-à-temps (JIT) et permettre la personnalisation des produits conformément aux demandes client, il est possible de créer des ordres d’assemblage et de les lier automatiquement dès que la ligne document de vente est créée. Le lien entre la demande vente et l’approvisionnement d’assemblage permet aux préparateurs de documents de vente de personnaliser l’article d’assemblage et de proposer des dates de livraison en fonction de la disponibilité des composantes. En outre, la consommation et le résultat d'assemblage sont reportés automatiquement avec la livraison du document de vente associé.  
 
 La fonctionnalité spéciale permet de gérer l’expédition des quantités « assembler pour commande », dans des configurations d’entrepôt de base et avancées. Lorsque les travailleurs chargés de l'assemblage finissent d'assembler les pièces ou l'ensemble de la quantité à assembler pour commande, ils l'enregistrent dans le champ **Qté à livrer** de la ligne livraison entrepôt dans les configurations avancées et sélectionnent ensuite **Reporter livraison**. Par conséquent, le résultat d’assemblage correspondant est reporté, y compris la consommation de composantes liée, et une livraison vente de la quantité est reportée pour le document de vente lié. Cette procédure pas à pas présente le processus entrepôt avancé.  
@@ -140,12 +143,12 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
     |**N° d'article**|**Code zone**|**Code de zone**|**Quantité**|  
     |-----------------------------------|---------------------------------------|--------------------------------------|------------------------------------|  
-    |80001|PRELEV.|W-01-0001|2.0|  
-    |80005|PRELEV.|W-01-0001|2.0|  
-    |80011|PRELEV.|W-01-0001|2.0|  
-    |80014|PRELEV.|W-01-0001|2.0|  
-    |80203|PRELEV.|W-01-0001|2.0|  
-    |80209|PRELEV.|W-01-0001|2.0|  
+    |80001|PRELEV.|W-01-0001|20|  
+    |80005|PRELEV.|W-01-0001|20|  
+    |80011|PRELEV.|W-01-0001|20|  
+    |80014|PRELEV.|W-01-0001|20|  
+    |80203|PRELEV.|W-01-0001|20|  
+    |80209|PRELEV.|W-01-0001|20|  
 
 4.  Sous l’onglet **Accueil**, dans le groupe **Enregistrement**, choisissez **Enregistrer**, puis sélectionnez le bouton **Oui**.  
 

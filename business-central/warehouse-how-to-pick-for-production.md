@@ -10,23 +10,23 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 
-ms.date: 10/01/2018
+ms.date: 01/22/2019
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 33531bf23b8ae03a38ff176f31de3b7395ace052
+ms.sourcegitcommit: 1acac32a417f794801da50c866db2643ea0a4c2d
+ms.openlocfilehash: 115bd8ef6d4069674f1d04878d0ec704214383ce
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
+ms.lasthandoff: 01/22/2019
 
 ---
-# <a name="pick-for-production-or-assembly"></a>Prélever pour la fabrication et l'assemblage
+# <a name="pick-for-production-or-assembly-in-basic-warehouse-configurations"></a>Prélever pour la fabrication ou l'assemblage dans les configurations de stockage de base.
 Le mode de rangement de vos composantes de prélèvement pour les bons de production ou les ordres d'assemblage dépend de la configuration de l'entrepôt en tant qu'emplacement. Pour plus d'informations, voir [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).
 
 Dans les configurations d'entrepôt de base où l'emplacement nécessite un traitement de prélèvement sans nécessiter de traitement de livraison, vous pouvez utiliser la page **Prélèvement inventaire** pour organiser et enregistrer le prélèvement des composantes.  
 
 Dans les configurations d'entrepôt de base, vous devez prélever les ordres d'assemblage à l'aide de la page **Mouvement d'inventaire**. Pour plus d'informations, reportez-vous à la section « Traitement d'un article à assembler pour commande dans les prélèvements stock » dans [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).  
 
-Dans les configurations d'entrepôt avancées où les emplacements nécessitent des prélèvements et des livraisons, vous utilisez la page **Prélèvement entrepôt** pour ajouter des composantes aux bons de production ou aux ordres d'assemblage.
+Dans les configurations d'entrepôt avancées où les emplacements nécessitent des prélèvements et des livraisons, vous utilisez la page **Prélèvement entrepôt** pour ajouter des composantes aux bons de production ou aux ordres d'assemblage. Pour plus d'informations, consultez [Prélever pour la fabrication ou l'assemblage dans les configurations de stockage avancées](warehouse-how-to-pick-for-internal-operations-in-advanced-warehousing.md).
 
 > [!NOTE]  
 >  Les importantes différences suivantes existent entre les prélèvements inventaire et les mouvements d'inventaire :  
@@ -66,42 +66,9 @@ Si un flux de résultats d'assemblage est configuré pour l'emplacement, la vale
 
 Si aucun code de zone n'est spécifié sur la ligne document de vente et qu'aucun flux résultats d'assemblage n'est configuré pour l'emplacement, le champ **Code de zone** de la ligne prélèvement inventaire est vide. L'employé d'entrepôt doit ouvrir la page **Contenus de la zone** et sélectionner la zone où les articles d'assemblage sont assemblés.
 
-Dans les scénarios de combinaison, où une partie de la quantité doit d'abord être assemblée et l'autre doit être prélevée à partir de l'inventaire, un minimum de deux lignes prélèvement inventaire sont créées. Une ligne prélèvement est calculée pour la quantité à assembler pour commande. L'autre ligne prélèvement dépend de quelles zones peuvent satisfaire à la quantité restante en inventaire. Les codes de zone sur les deux lignes sont renseignés de différentes manières comme indiqué pour les deux types de vente différents respectivement. Pour plus d'informations, voir la section « Scénarios de combinaison » dans [Description des processus Assembler pour commande et Assembler pour stock](assembly-assemble-to-order-or-assemble-to-stock.md).
+Dans les scénarios de combinaison, où une partie de la quantité doit d'abord être assemblée et l'autre doit être prélevée à partir de l'inventaire, un minimum de deux lignes prélèvement inventaire sont créées. Une ligne prélèvement est calculée pour la quantité à assembler pour commande. L'autre ligne prélèvement dépend de quelles zones peuvent satisfaire à la quantité restante en inventaire. Les codes de zone sur les deux lignes sont renseignés de différentes manières comme indiqué pour les deux types de vente différents respectivement. Pour plus d'informations, voir la section « Scénarios de combinaison » dans [Description des processus Assembler pour commande et Assembler pour inventaire](assembly-assemble-to-order-or-assemble-to-stock.md).
 
-## <a name="to-pick-components-in-advanced-warehouse-configurations"></a>Pour prélever les composantes pour les configurations d'entrepôt avancées
-Dans les configurations d'entrepôt avancées, dans lesquelles l'emplacement est configuré pour utiliser le prélèvement ainsi que la livraison, vous pouvez prélever des composantes pour les activités de production et d'assemblage à l'aide de la page **Prélèvement entrepôt**. Pour plus d'informations, voir [Prélever des articles avec les prélèvements entrepôt](warehouse-how-to-pick-items-for-warehouse-shipment.md).
-
-Vous pouvez également utiliser la page **Feuille mouvement** pour déplacer des articles entre zones ad hoc, c'est-à-dire sans référence à un document origine. Pour plus d'informations, voir [Déplacer des articles dans les configurations de stockage avancées](warehouse-how-to-move-items-in-advanced-warehousing.md).  
-
-Vous ne pouvez pas créer de toutes pièces un document prélèvement entrepôt car une activité de prélèvement fait toujours partie d'un flux de travail, soit dans un scénario d'extraction, soit dans un scénario de déplacement.  
-
-Vous pouvez créer le document prélèvement entrepôt par déplacement en sélectionnant l'action **Créer un prélèvement d'entrepôt** dans le document source, par exemple, un ordre d'assemblage ou une livraison entrepôt libérée. Pour plus d'informations, voir [Prélever des articles avec les prélèvements entrepôt](warehouse-how-to-pick-items-for-warehouse-shipment.md).  
-
-Sinon, vous pouvez créer le document prélèvement entrepôt par extraction à l'aide de la page **Feuille prélèvement** pour détecter les demandes de prélèvement, à la fois pour la livraison et les opérations internes, puis créer les documents prélèvement entrepôt requis.  
-
-La procédure suivante explique un scénario d'extraction dans lequel vous prélevez des composantes d'un bon de production libéré via la page **Feuille prélèvement**. Cette procédure s'applique également aux ordres d'assemblage.  
-
-Pour créer des demandes de prélèvement dans le cadre de scénarios d'extraction et de déplacement, il faut que les documents origine en question soient libérés. Libérez les documents origine des opérations internes en procédant comme suit.  
-
- |Document origine|Méthode de libération|  
- |---------------------|--------------------|  
- |Bon de production|Remplacez le type commande par un bon de production libéré.|  
- |Ordre d'assemblage|Remplacez l'état actuel par l'état Libéré.|  
-
-## <a name="to-pick-components-using-the-pick-worksheet"></a>Pour prélever des composants à partir des feuilles prélèvement  
-
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille prélèvement**, puis sélectionnez le lien associé.  
-2.  Choisissez l'action **Extraire documents entrepôt**, puis sélectionnez les lignes composante du bon de production libéré.  
-3.  Vérifiez les lignes, triez-les pour assurer un prélèvement optimisé et, si nécessaire, combinez les avec d'autres lignes de la feuille pour utiliser au mieux la disponibilité de l'employé.  
-4.  Choisissez l'action **Créer prélèvement**.  
-5.  Définissez le mode de création des documents prélèvement entrepôt et la manière de trier les lignes prélèvement en renseignant les champs de la page **Créer prélèvement** .  
-6.  Cliquez sur le bouton **OK**.
-
-Les documents prélèvement entrepôt sont maintenant créés avec des lignes prélèvement pour chaque composante devant servir à l'opération interne.
-
-Si la zone Opérations internes (par exemple, un atelier de production) est configurée avec une zone par défaut pour les composantes à utiliser dans l'opération, ce code de zone est inséré dans les lignes Emplacement qui figurent sur le document prélèvement entrepôt pour indiquer aux magasiniers où placer les articles. Pour plus d'informations, voir [Configurer des entrepôts de base avec les zones d'opérations](warehouse-how-to-set-up-basic-warehouses-with-operations-areas.md).
-
-## <a name="filling-the-consumption-bin"></a>Renseignement de la zone consommation
+## <a name="filling-the-consumption-bin"></a>Renseigner la zone consommation
 Ce graphique indique comment le champ **Code de zone** sur les lignes composante bon de production est renseigné en fonction de la configuration de votre emplacement.
 
 ![Organigramme Flux d'emplacement](media/binflow.png "BinFlow")

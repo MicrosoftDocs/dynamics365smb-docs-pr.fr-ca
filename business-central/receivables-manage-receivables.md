@@ -10,13 +10,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: customer payment, debtor, balance due, AR
-ms.date: 11/15/2018
+ms.date: 11/28/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
-ms.openlocfilehash: 2e677a1170be8f55421869ca0308fb31961b58f7
+ms.sourcegitcommit: add32e82465610830b68a979e238103bfa10d438
+ms.openlocfilehash: 5621345418f8da0165fa5685fd3b4a50dd43ae9d
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/22/2018
+ms.lasthandoff: 11/29/2018
 
 ---
 # <a name="managing-receivables"></a>Gestion des comptes client
@@ -40,6 +40,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | --- | --- |
 | Affecter des paiements aux écritures client ou fournisseur ouvertes sur la base d'un fichier ou flux de relevé de compte bancaire importé, et rapprocher le compte bancaire lorsque tous les paiements sont affectés. |[Lettrage automatique des paiements et rapprochement des comptes bancaires](receivables-apply-payments-auto-reconcile-bank-accounts.md) |
 |Configurez des mappages entre le texte des paiements et des comptes de débit, de crédit et de contrepartie spécifiques afin que ces paiements soient reportés dans les comptes spécifiés lorsque vous reportez le journal rapprochement de paiement.|[Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique](receivables-how-map-text-recurring-payments-accounts-auto-reconcilliation.md)|
+|Sur la page **Affectation paiement**, visualisez toutes les écritures ouvertes candidates au paiement et affichez les informations détaillées pour chaque écriture sur la correspondance des données sur laquelle une affectation de paiement est basée.|[Réviser ou affecter les paiements manuellement après une affectation automatique](receivables-how-review-apply-payments-auto-application.md)|
 | Affectez des paiements à des écritures client ouvertes selon la saisie manuelle dans la liste des documents vente non payés. |[Rapprocher les paiements client manuellement à partir de la liste des documents vente échus](receivables-how-reconcile-customer-payments-list-unpaid-sales-documents.md) |
 | Reportez des encaissements ou des remboursements pour des clients dans le journal des encaissements et affectez-les à des écritures client, à partir du journal ou des écritures reportées. |[Rapprocher les paiements client manuellement](receivables-how-apply-sales-transactions-manually.md) |
 | Rappeler aux clients les soldes échus, calculer les intérêts et les frais financiers, et gérer les comptes clients. |[Collecte des soldes restants](receivables-collect-outstanding-balances.md) |

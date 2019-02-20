@@ -11,10 +11,10 @@ ms.search.keywords: access, right, security
 ms.date: 11/08/2018
 ms.author: sgroespe
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 6cbce557e03788f760cb9f73dccf1619aa6a9e8c
+ms.sourcegitcommit: add32e82465610830b68a979e238103bfa10d438
+ms.openlocfilehash: 78e83ee0740531935bd30a5988a72d1421a1fd89
 ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
+ms.lasthandoff: 11/29/2018
 
 ---
 # <a name="managing-users-and-permissions"></a>Gestion des utilisateurs et des autorisations
@@ -64,7 +64,7 @@ Les administrateurs peuvent définir les périodes de temps pendant lesquelles l
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration utilisateur**, puis sélectionnez le lien associé.
 2. Sur la page **Configuration des utilisateurs**, qui s'ouvre, sélectionnez l'action **Nouveau**.
-3. Dans le champ **Code utilisateur**, entrez le code d'un utilisateur, ou cliquez sur le champ pour visualiser tous les utilisateurs Windows actuels dans le système.
+3. Dans le champ **ID utilisateur**, entrez l'ID d'un utilisateur, ou cliquez sur le champ pour visualiser tous les utilisateurs Windows actuels dans le système.
 4. Renseignez les champs selon vos besoins.
 
 ## <a name="to-create-or-modify-a-permission-set"></a>Pour créer ou modifier un ensemble d'autorisations
