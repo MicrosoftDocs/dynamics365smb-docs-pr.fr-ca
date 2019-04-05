@@ -1,8 +1,8 @@
 ---
 title: Codes IGRF au Canada | Microsoft Docs
-Description: In Canada, you can set up General Index of Financial Information (GIFI) codes and assign them to posting accounts
+Description: Au Canada, vous pouvez définir l'Index général des renseignements financiers (IGRF) et l'affecter aux comptes de report
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: local
 ms.date: 10/01/2018
 ms.author: SorenGP
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 2ada7e3cb796b8907b6a7e79a2dbadb4741ddc86
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "826555"
 ---
 # <a name="work-with-gifi-codes"></a>Utiliser des codes IGRF
 Les informations fiscales peuvent inclure des comptes généraux, des états, des comptes de gestion, des bilans et des relevés des bénéfices non répartis. Les informations fiscales sont classifiées par le biais de codes. L'utilisation de codes aide le gouvernemental à traiter les informations, à préparer l'archivage électronique et à valider les informations fiscales par voie électronique. L'utilisation de codes aide également les organisations statistiques à travailler plus efficacement, en rendant les données financières plus facilement disponibles. Pour plus d'informations, reportez-vous au [site Web de l'Agence de revenu du Canada](https://www.cra-arc.gc.ca/).
@@ -66,4 +66,3 @@ Vous pouvez exporter les informations de solde à l'aide de codes IGRF et enregi
 [Fonctionnalités locales Canada](canada-local-functionality.md)  
 [Finance](../../finance.md)   
 [Configuration de Finance](../../finance.md)
-

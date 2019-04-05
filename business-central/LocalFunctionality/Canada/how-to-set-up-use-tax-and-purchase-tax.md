@@ -1,23 +1,23 @@
 ---
 title: "Procédure : configurer la taxe de service et la taxe d'achat | Microsoft Docs"
-description: "La taxe de vente inclut les taxes payées par les compagnies pour utiliser des articles"
+description: La taxe de vente inclut les taxes payées par les compagnies pour utiliser des articles
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 1ae26dc10725541b64dd77b237e3b2fb458d5b1d
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "826551"
 ---
 # <a name="set-up-use-tax-and-purchase-tax"></a>Configurer la taxe de service et la taxe d'achat
 La taxe de vente inclut les taxes payées par les compagnies pour utiliser des articles :  
@@ -89,4 +89,3 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 [Déclaration de la taxe de vente au Canada](ca-sales-tax.md)  
 [Finance](../../finance.md)  
 [Configuration de Finance](../../finance.md)  
-
