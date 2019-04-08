@@ -1,8 +1,8 @@
 ---
-title: Rapprocher les paiements fournisseur manuellement| Microsoft Docs
-description: "Pour traiter, mettre en correspondance ou rapprocher des paiements ou des remboursements fournisseur manuellement, vous affectez le montant à une ou plusieurs écritures fournisseur ouvertes."
+title: Rapprocher des paiements fournisseur avec le journal paiement ou à partir des écritures fournisseur | Microsoft Docs
+description: Pour traiter, mettre en correspondance ou rapprocher des paiements ou des remboursements fournisseur manuellement, vous affectez le montant à une ou plusieurs écritures fournisseur ouvertes.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,14 +12,14 @@ ms.workload: na
 ms.search.keywords: payment application, payment processing, match payments
 ms.date: 10/01/2018
 ms.author: sgroespe
+ms.openlocfilehash: e8c740bd32aeceb273f3accbda7b912350c9be12
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: cb62661da68e1fd5255e285288de5089e8547b64
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813714"
 ---
-# <a name="reconcile-vendor-payments-manually"></a>Rapprocher les paiements fournisseur manuellement
+# <a name="reconcile-vendor-payments-with-the-payment-journal-or-from-vendor-ledger-entries"></a>Rapprocher des paiements fournisseur avec le journal paiement ou à partir des écritures fournisseur
 Lorsque vous envoyez un règlement à un fournisseur ou recevez un remboursement de sa part, vous devez décider si vous souhaitez affecter le paiement ou le rembourser à une ou plusieurs écritures ouvertes. Vous pouvez indiquer le montant exact que vous souhaitez affecter à la réception paiement ou au remboursement, puis n'affecter que partiellement les écritures fournisseur. Vous devez affecter toutes les écritures fournisseur pour obtenir des rapports et statistiques fournisseur corrects des relevés de compte et des frais financiers.
 
 > [!NOTE]  
@@ -123,4 +123,3 @@ Lorsque vous annulez une affectation erronée, des écritures de correction (éc
 [Fournisseurs](payables-manage-payables.md)  
 [Achats](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

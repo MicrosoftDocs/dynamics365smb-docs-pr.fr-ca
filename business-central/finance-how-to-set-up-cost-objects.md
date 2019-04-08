@@ -1,24 +1,24 @@
 ---
-title: "Procédure : configurer des objets de coûts | Microsoft Docs"
-description: "Découvrez comment configurer des objets de coûts, qui sont similaires aux dimensions pour le grand livre."
+title: 'Procédure : configurer des objets de coûts | Microsoft Docs'
+description: Découvrez comment configurer des objets de coûts, qui sont similaires aux dimensions pour le grand livre.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 11/13/2018
 ms.author: sgroespe
 redirect_url: finance-set-up-cost-accounting
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 616fcbe937e556c17e8beb79f68bc961ea8bbe18
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "814069"
 ---
 # <a name="set-up-cost-objects"></a>Configurer les objets de coûts
 Les objets de coûts sont les projets, les biens ou les services d'une compagnie. Le plan des objets de coûts est semblable aux informations sur la dimension pour le grand livre. Vous pouvez configurer le plan des coûts associés comme suit :  
@@ -44,7 +44,7 @@ Vous pouvez configurer et gérer les objets de coûts, soit sur la page **Fiche 
 3.  Dans le champ **Nom**, saisissez le nom du coût associé.  
 4.  Sélectionnez la flèche déroulante dans le champ **Type ligne** pour spécifier l'objectif de l'objet de coûts.  
 
-    * Pour les objets de coûts de type de ligne **Total**, renseignez le champ **Total De/À**. Utilisez l'opérateur **or**, qui est une ligne verticale (**&#124;**), pour définir les plages des coûts associés.  
+    * Pour les objets de coûts de type de ligne **Total**, renseignez le champ **Total De/À**. Utilisez l'opérateur **or**, qui est une ligne verticale (**&#124;**), pour définir les plages des objets de coûts.  
     * Pour les objets de coûts de type de ligne **Fin total**, ce champ est renseigné automatiquement lorsque vous utilisez la fonction de décalage.  
 5.  Renseignez le champ **Ordre de tri**.  
 6.  Choisissez la ligne vide suivante pour créer un nouvel objet de coûts, puis répétez les phases 2 à 5.  
@@ -61,4 +61,3 @@ Vous pouvez configurer et gérer les objets de coûts, soit sur la page **Fiche 
 [Terminologie en comptabilité analytique](finance-terminology-in-cost-accounting.md)   
 [À propos de la comptabilité analytique](finance-about-cost-accounting.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

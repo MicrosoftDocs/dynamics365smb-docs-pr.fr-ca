@@ -1,23 +1,23 @@
 ---
-title: "Procédure de configuration de nouvelles compagnies | Microsoft Docs"
-description: "Vous pouvez configurer et personnaliser une nouvelle compagnie que vous avez créée. Pour détailler votre implémentation, vous procédez en trois phases pour terminer votre configuration."
+title: Procédure de configuration de nouvelles compagnies | Microsoft Docs
+description: Vous pouvez configurer et personnaliser une nouvelle compagnie que vous avez créée. Pour détailler votre implémentation, vous procédez en trois phases pour terminer votre configuration.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
-ms.date: 10/01/2018
+ms.search.keywords: ''
+ms.date: 03/01/2019
 ms.author: sgroespe
+ms.openlocfilehash: b1c953b0a5e1247115b26a8984a632478f80cdda
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: a52a95bf3fc96b89e664041e3d2b289b6042c046
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "814248"
 ---
 # <a name="configure-new-companies"></a>Configurer de nouvelles compagnies
 Pour configurer une nouvelle compagnie dans votre implémentation de la solution, vous suivez habituellement trois phases. Dans la première phase, vous importez le package configuration, un fichier .rapidstart avec les informations de configuration. Dans la deuxième phase, vous modifiez les informations de configuration, puis vous les appliquez à votre nouvelle compagnie. Dans la phase finale, vous vérifiez et corrigez les erreurs.  
@@ -71,10 +71,9 @@ Il existe certains types d’erreurs qui surviennent lorsque vous appliquez des 
     > [!NOTE]  
     >  Si vous importez le même colis à nouveau, vous pouvez remplacer toutes les modifications des données que vous avez déjà apportées. Pour ce motif, vous pouvez ajouter toutes les nouvelles tables dans un nouveau package, et les importer.  
 
-7. Appliquez les données dans la base de données, comme décrit dans la section « Pour modifier et appliquer les données de package ».
+7. Appliquez les données dans la base de données, comme décrit dans [Pour modifier et appliquer les données de package](admin-how-to-configure-new-companies.md#to-modify-and-apply-package-data).
 
 ## <a name="see-also"></a>Voir aussi  
-[Appliquer des configurations à de nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
+[Appliquer des configurations aux nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)
-

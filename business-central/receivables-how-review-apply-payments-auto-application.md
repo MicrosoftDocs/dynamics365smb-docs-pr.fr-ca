@@ -1,8 +1,8 @@
 ---
-title: "Vérifier les paiements affectés automatiquement et appliquer à nouveau les paiements manuellement | Microsoft Docs"
-description: "Après l'affectation automatique des paiements, vous pouvez consulter toutes les écritures d'un paiement et appliquer à nouveau manuellement celles dont l'affectation était incorrecte."
+title: Vérifier les paiements affectés automatiquement et appliquer à nouveau les paiements manuellement | Microsoft Docs
+description: Après l'affectation automatique des paiements, vous pouvez consulter toutes les écritures d'un paiement et appliquer à nouveau manuellement celles dont l'affectation était incorrecte.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: payment process, reconcile payment, expenses, cash receipts
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 4ac7d32decd6c6ba7161398836f70c847f4b4436
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813668"
 ---
 # <a name="review-or-apply-payments-manually-after-automatic-application"></a>Réviser ou affecter les paiements manuellement après une affectation automatique
 Pour chaque ligne journal représentant un paiement sur la page **Journal rapprochement paiement**, vous pouvez ouvrir la page **Affectation paiement** pour afficher toutes les écritures ouvertes candidates au paiement et les informations détaillées pour chaque écriture sur la correspondance des données sur laquelle une affectation de paiement est basée. Ici, vous pouvez affecter les paiements manuellement ou réaffecter les paiements qui ont été automatiquement affectés à une écriture incorrecte. Pour plus d'informations sur l'affectation automatique, voir [Rapprocher les paiements à l'aide de l'affectation automatique](receivables-how-reconcile-payments-auto-application.md).
@@ -55,4 +55,3 @@ La page **Affectation paiement** se ferme puis, dans la fenêtre **Journal rappr
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Ventes](sales-manage-sales.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

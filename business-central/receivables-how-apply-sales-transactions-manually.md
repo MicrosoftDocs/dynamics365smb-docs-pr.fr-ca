@@ -1,6 +1,6 @@
 ---
-title: "Affecter des écritures client pour rapprocher les paiements | Microsoft Docs"
-description: "Décrit comment affecter des règlements ou des remboursements client dans une ou plusieurs écritures client ouvertes et rapprocher des paiements client."
+title: Affecter des écritures client pour rapprocher les paiements | Microsoft Docs
+description: Décrit comment affecter des règlements ou des remboursements client dans une ou plusieurs écritures client ouvertes et rapprocher des paiements client.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -8,36 +8,36 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, cash receipt
-ms.date: 10/01/2018
+ms.date: 02/08/2019
 ms.author: sgroespe
+ms.openlocfilehash: f18cbb872d01daec391ca0c078f842a5cf89d74d
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 5f685ca69d9cf434e04e0c5205626eb24af3b5be
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813792"
 ---
-# <a name="reconcile-customer-payments-manually"></a>Rapprocher les paiements client manuellement
+# <a name="reconcile-customer-payments-with-the-cash-receipt-journal-or-from-customer-ledger-entries"></a>Rapprocher des paiements clients avec le journal des encaissements ou à partir des écritures client
 Lorsque vous recevez un paiement en liquide d'un client ou que vous effectuez un remboursement en liquide, vous devez décider si vous souhaitez affecter le paiement ou le remboursement pour fermer une ou plusieurs écritures débit ou crédit ouvertes. Vous pouvez indiquer le montant que vous souhaitez affecter. Par exemple, vous pouvez affecter des paiements partiels à des écritures client. La fermeture des écritures client permet de garantir que des informations telles que les statistiques clients, les relevés de compte bancaire et les frais financiers sont corrects.
 
-> [!NOTE]  
+> [!TIP]  
 >   Sur la page **Écritures client**, le rouge signifie que le paiement associé a dépassé sa date d'échéance. Si les paiements échus deviennent un problème, nous pouvons vous aider à minimiser leur fréquence. Vous pouvez activer l'extension **Prévisions des retards de paiement**, qui utilise un modèle prédictif que nous avons généré dans Azure Machine Learning pour prévoir les délais de paiement. Ces prévisions vous permettent de réduire les créances ouvertes et d'ajuster votre stratégie de collectes. Par exemple, si un retard de paiement est prévu, vous pouvez ajuster les conditions de paiement ou le mode de règlement du client. Pour plus d'informations, consultez [Prévisions de retard de paiement](ui-extensions-late-payment-prediction.md).  
 
 Vous pouvez affecter les écritures client de plusieurs manières :
 
-* En entrant des informations sur les pages dédiées, telles que la fenêtre **Journal des encaissements** et la page **Journal rapprochement paiement**.
-* À partir des documents note de crédit vente.
-* À partir des écritures client une fois que les documents vente sont reportés mais non affectés.
+* En entrant des informations sur les pages dédiées :
+    * La page **Journal rapprochement paiement**. Pour plus d'informations, reportez-vous à [Lettrage automatique des paiements et rapprochement des comptes bancaires](receivables-apply-payments-auto-reconcile-bank-accounts.md).
+    * La page **Enregistrement de paiement**. Pour plus d'informations, voir [Rapprocher les paiements client dans une liste des documents vente échus](receivables-how-reconcile-customer-payments-list-unpaid-sales-documents.md).
+    * Le **Journal des encaissements**. Cette dernière est décrite ci-dessous.
+* En renseignant le champ **N° doc. référence** sur les documents note de crédit vente. Cette dernière est décrite ci-dessous.
+* Grâce à l'action **Définir Code référence** d'une écriture client. Cette dernière est décrite ci-dessous.
 
 > [!NOTE]  
->   Si le champ **Mode de lettrage** de la fiche client contient **Au plus ancien**, les paiements sont automatiquement lettrés avec l'écriture de crédit ouverte la plus ancienne sauf si vous spécifiez une écriture manuellement. Si le mode de lettrage pour un fournisseur est **Manuel**, vous devez toujours lettrer les écritures manuellement.
-
-Vous pouvez affecter les paiements des clients manuellement sur la page **Journal des encaissements**. Un journal des encaissements est un type de journal général, de sorte que vous pouvez l'utiliser pour reporter des transactions sur des comptes GL, bancaires, client, fournisseur et immobilisations. Vous pouvez affecter le paiement à une ou plusieurs écritures débit lorsque vous reportez le paiement ou vous pouvez l'affecter à partir des écritures reportées ultérieurement.
-
-Vous pouvez également affecter les paiements client et fournisseur sur la page **Journal rapprochement paiement** à l'aide des fonctions dédiées à l'importation de relevés bancaires, l'affectation automatique et le rapprochement de comptes bancaires. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md). Sinon, vous pouvez rapprocher les paiements client en fonction de la liste des documents vente échus sur la page **Enregistrement de paiement**. Pour plus d'informations, voir [Rapprocher les paiements client dans une liste des documents vente échus](receivables-how-reconcile-customer-payments-list-unpaid-sales-documents.md).
+>   Si le champ **Méthode d'affectation** de la fiche client contient **Au plus ancien**, les paiements sont affectés à l'écriture crédit ouverte la plus ancienne, sauf si vous spécifiez une écriture manuellement. Si la méthode d'affectation est **Manuel**, vous devez toujours affecter les écritures manuellement.
 
 ## <a name="to-fill-and-post-a-cash-receipt-journal"></a>Pour renseigner et reporter un journal des encaissements
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal des encaissements**, puis sélectionnez le lien associé.
+Un journal des encaissements est un type de journal général, que vous pouvez utiliser pour reporter des transactions sur des comptes GL, banque, client, fournisseur et immobilisations. Vous pouvez affecter le paiement à une ou plusieurs écritures débit lorsque vous reportez le paiement ou vous pouvez l'affecter à partir des écritures reportées ultérieurement.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journal des encaissements**, puis sélectionnez le lien associé.
 2. Sélectionnez **Modifier journal**.
 3. Sélectionnez le nom de traitement par lots souhaité dans le champ **Nom de la feuille**.
 4. Renseignez le champ **Date comptabilisation**.  
@@ -159,4 +159,3 @@ Lorsque vous corrigez une affectation, des écritures de correction (écritures 
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Ventes](sales-manage-sales.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

@@ -1,6 +1,6 @@
 ---
 title: Configurer le report des transactions intercompagnies | Microsoft Docs
-description: "Créez vos fournisseurs et vos clients intersociétés en tant que partenaires intersociétés, et configurez un plan comptable intersociétés."
+description: Créez vos fournisseurs et vos clients intersociétés en tant que partenaires intersociétés, et configurez un plan comptable intersociétés.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: IC, group, consolidation, affiliate, subsidiary
-ms.date: 10/01/2018
+ms.date: 03/11/2019
 ms.author: sgroespe
+ms.openlocfilehash: a549dd926894e8c14a5f57437ca9402e2ddde5d1
+ms.sourcegitcommit: d09f5ee0e164c7716f4ccb2ed71e2f9732a1f4f9
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 7d6e72ed68f2ab28ebd4daef423304a945a719ed
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "852549"
 ---
 # <a name="set-up-intercompany"></a>Configuration des fonctionnalités intersociétés
 Pour envoyer une transaction (ligne journal vente) à partir d'une compagnie et créer automatiquement la transaction correspondante (ligne journal achat) dans la compagnie partenaire, les compagnies concernées doivent s'accorder sur un plan comptable et un ensemble de dimensions communs à utiliser pour les transactions intercompagnies. Le plan de compte intercompagnie peut être, par exemple, une version simplifiée du plan de compte de la compagnie mère. Chaque compagnie associe son plan de compte au plan de compte intercompagnie partagé, ainsi que ses dimensions aux dimensions intercompagnies.  
@@ -24,10 +24,10 @@ Vous devez également configurer un code partenaire Intercompagnie pour chaque c
 
 Si vous créez ou recevez des lignes intersociétés contenant des articles, vous pouvez soit utiliser vos propres numéros d'article, soit configurer ceux de votre partenaire pour chaque article concerné, dans le champ **Référence fournisseur** ou **N° article commun** de la fiche article. Vous pouvez également utiliser la fonction **Référence externe article** : pour mapper vos numéros d'article avec vos descriptions de partenaires intercompagnies pour les articles, ouvrez la fiche de chaque article, puis choisissez l'action **Références externes** afin de configurer les références externes entre vos descriptions d'article et celles du partenaire intercompagnie.  
 
-Si vous créez des transactions de vente intercompagnies incluant des ressources, vous devez renseigner le champ **N° cpte G/L partenaire ach. IC** de la fiche ressource de chaque ressource concernée. Il s'agit du numéro du compte du grand livre intercompagnie sur lequel le montant de cette ressource va être reporté dans la compagnie partenaire. Pour plus d'informations, voir .  
+Si vous créez des transactions de vente intercompagnies incluant des ressources, vous devez renseigner le champ **N° cpte G/L partenaire ach. IC** de la fiche ressource de chaque ressource concernée. Il s'agit du numéro du compte GL intercompagnie sur lequel le montant de cette ressource va être reporté dans la compagnie partenaire. Pour plus d'informations, reportez-vous à [Configuration de ressources](projects-how-setup-resources.md).
 
 ## <a name="to-set-up-companies-for-intercompany-transactions"></a>Pour configurer des compagnies pour les transactions intercompagnies
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Informations compagnie**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Informations compagnie**, puis sélectionnez le lien associé.  
 2. Sur la page **Informations compagnie**, renseignez les champs **Code Partenaire intercompagnie**, **Type de boîte de réception intercompagnie**. et **Détails boîte de réception intersociétés**. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 ## <a name="to-set-intercompany-partners"></a>Pour paramétrer les partenaires intersociétés
@@ -45,9 +45,9 @@ Si vous créez des transactions de vente intercompagnies incluant des ressources
 ## <a name="to-set-up-intercompany-charts-of-accounts"></a>Pour configurer le plan comptable intersociété
 Pour qu'un groupe de compagnies puisse créer des transactions intercompagnies, ses membres doivent convenir du plan comptable qui servira de référence commune. Avec vos compagnies partenaires, vous devez décider des numéros de compte à utiliser pour créer des transactions intercompagnies. Par exemple, la compagnie mère du groupe génère une version simplifiée de son propre plan comptable, l'exporte de sa base de données vers un fichier XML et la distribue à chaque compagnie du groupe.  
 
-Si votre compagnie est la compagnie parent et contient le plan comptable intercompagnie qui servira de référence commune au groupe, suivez la procédure « Pour configurer le plan comptable intercompagnie ».  
+Si votre compagnie est la compagnie mère qui contient le plan comptable intercompagnie qui servira de référence commune au groupe, suivez la procédure [Configurer le plan comptable intercompagnie de définition](intercompany-how-setup.md#to-set-up-the-defining-intercompany-chart-of-accounts).  
 
-Si votre compagnie est une filiale et que vous recevez un fichier XML contenant le plan comptable intercompagnie commun, suivez la procédure « Pour importer le plan comptable intercompagnie ».  
+Si votre compagnie est une filiale et que vous recevez un fichier XML contenant le tableau de compte commun intercompagnie, suivez la procédure [Pour importer le plan comptable intercompagnie](intercompany-how-setup.md#to-import-the-intercompany-chart-of-accounts).  
 
 ### <a name="to-set-up-the-defining-intercompany-chart-of-accounts"></a>Pour configurer la définition du plan comptable intersociété
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable intersociétés**, puis sélectionnez le lien associé.
@@ -83,18 +83,18 @@ Lorsque vous créez une ligne vente ou achat intercompagnie à envoyer comme tra
 Ensuite, si vous indiquez un compte GL dans le champ **N° compte de solde** d'une ligne intercompagnie avec **Partenaire intercompagnie** dans le champ **Type de compte**, le champ **Compte du grand livre Partenaire IC** est renseigné automatiquement.  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable**, puis sélectionnez le lien associé.  
-2. Sur la ligne d'un compte du grand livre utilisé pour les transactions intercompagnies, dans le champ **Compte du grand livre par défaut du partenaire IC**, entrez le compte GL intercompagnie que votre partenaire utilisera lors du report sur le compte GL de la ligne.  
-3. Répétez l'étape 3 pour chaque compte que vous entrez souvent dans le champ **N° compte de solde** sur une ligne dans un document ou journal intercompagnie.
+2. Sur la ligne d'un compte du grand livre utilisé pour les transactions intercompagnies, dans le champ **Compte du grand livre par défaut de partenaire IC**, entrez le compte GL intercompagnie que votre partenaire utilisera lors du report du compte GL de la ligne.  
+3. Répétez l'étape 2 pour chaque compte que vous entrez souvent dans le champ **N° compte de solde** sur une ligne dans un document ou journal intercompagnie.
 
 ## <a name="to-set-up-intercompany-dimensions"></a>Pour configurer des dimensions intercompagnies
 Si vous et vos partenaires intercompagnies souhaitez pouvoir échanger des transactions auxquelles des dimensions sont liées, vous devrez vous entendre sur les dimensions que vous allez tous utiliser. Par exemple, la compagnie mère du groupe génère une version simplifiée de ses propres dimensions, l'exporte dans un fichier XML et la distribue à chaque compagnie du groupe. Chaque filiale importe ensuite ce fichier XML sur la page **Dimensions intercompagnies** et associe les dimensions intercompagnies à celles figurant dans sa propre page **Dimensions**.  
 
-Si votre compagnie est la compagnie parent et contient l'ensemble de définition des dimensions intercompagnies qui serviront de référence commune au groupe, suivez la procédure « Pour définir les dimensions intercompagnies ».
+Si votre compagnie est la compagnie mère qui contient l'ensemble de définition des dimensions intercompagnies qui serviront de référence commune au groupe, suivez la procédure [Définir les dimensions intercompagnies](intercompany-how-setup.md#to-define-the-intercompany-dimensions).
 
-Si votre compagnie est une filiale et que vous recevez un fichier XML contenant les dimensions intercompagnies qui serviront de référence commune au groupe, suivez la procédure « Pour importer des dimensions intercompagnies ».
+Si votre compagnie est une filiale et que vous recevez un fichier XML contenant les dimensions intercompagnies qui serviront de référence commune au groupe, suivez la procédure [Pour importer des dimensions intercompagnies](intercompany-how-setup.md#to-import-the-intercompany-dimensions).
 
 ### <a name="to-define-the-intercompany-dimensions"></a>Pour définir les dimensions intercompagnies
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Dimensions intercompagnie**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Dimensions intercompagnies**, puis sélectionnez le lien associé.  
 2. Sur la page **Dimensions intercompagnies**, entrez chaque dimension sur une ligne.
 
     Si vos dimensions intercompagnies sont identiques ou semblables aux dimensions de votre compagnie, vous pouvez renseigner la page automatiquement en utilisant la fonction **Copier à partir des dimensions**, puis modifier les lignes ainsi obtenues.  
@@ -133,4 +133,3 @@ Si certaines dimensions intercompagnies possèdent le même code que les dimensi
 [Configuration de Finance](finance-setup-finance.md)  
 [Utilisation de feuilles comptabilité](ui-work-general-journals.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

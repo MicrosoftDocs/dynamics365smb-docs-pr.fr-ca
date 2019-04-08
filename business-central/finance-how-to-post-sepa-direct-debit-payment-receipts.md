@@ -1,22 +1,22 @@
 ---
-title: "Reporter des paiements par prélèvement SEPA | Microsoft Docs"
-description: "Lorsqu'un recouvrement prélèvement est correctement traité par votre banque, vous pouvez procéder au report de la réception du paiement pour les factures vente impliquées."
+title: Reporter des paiements par prélèvement SEPA | Microsoft Docs
+description: Lorsqu'un recouvrement prélèvement est correctement traité par votre banque, vous pouvez procéder au report de la réception du paiement pour les factures vente impliquées.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
 redirect_url: finance-collect-payments-with-sepa-direct-debit
+ms.openlocfilehash: 6d24df38b980542b1c77d737b8f661fac0df29fa
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: d427ab28e1344ece77baaab8ceefe4043d3beaa0
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813931"
 ---
 # <a name="post-sepa-direct-debit-payment-receipts"></a>Reporter des réceptions règlement de prélèvement SEPA
 Lorsqu'un recouvrement prélèvement est correctement traité par votre banque, vous pouvez procéder au report de la réception du paiement pour les factures vente impliquées. Pour plus d'informations, voir [Créer des écritures de collection prélèvement automatique SEPA et les exporter vers un fichier bancaire](finance-how-create-sepa-direct-debit-collection-entries-export-bank-file.md).  
@@ -41,4 +41,3 @@ Vous pouvez reporter la réception paiement directement à partir de la page **R
 ## <a name="see-also"></a>Voir aussi  
  [Recouvrement de paiements par prélèvement automatique SEPA](finance-collect-payments-with-sepa-direct-debit.md)   
  [Ventes](sales-manage-sales.md)
-

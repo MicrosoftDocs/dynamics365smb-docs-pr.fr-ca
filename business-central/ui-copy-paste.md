@@ -1,6 +1,6 @@
 ---
-title: "Copier et coller des données"
-description: "Copier des champs et des lignes depuis des pages Business Central et les coller à d'autres emplacements."
+title: Copier et coller des données
+description: Copier des champs et des lignes depuis des pages Business Central et les coller à d'autres emplacements.
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,16 +10,15 @@ ms.workload: na
 ms.search.keywords: accessibility, shortcuts, keyboarding
 ms.date: 10/01/2018
 ms.author: jswymer
+ms.openlocfilehash: 6f731940714a754275611026749afa4d79a94443
+ms.sourcegitcommit: d09f5ee0e164c7716f4ccb2ed71e2f9732a1f4f9
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: e924eeb10e98b81035837ca498ec4f1a7b28bf60
-ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "853081"
 ---
-
-# <a name="copying-and-pasting-in-included365finincludesd365finmdmd"></a>Copier et coller dans [!INCLUDE[d365fin](includes/d365fin_md.md)]
-Vous pouvez copier une ou plusieurs lignes dans une liste ou un champ unique sur une page, puis collez ce que vous avez copié dans la même page, une autre page ou un document externe (comme Microsoft Excel et un courriel Outlook). En raccourci, pour copier, appuyez sur CTRL+C (cmd+C dans macOS) sur votre clavier. Pour coller, appuyez sur CTRL+V (cmd+V dans macOS).
+# <a name="copying-and-pasting"></a>Copier et coller
+Vous pouvez copier une ou plusieurs lignes à partir d'une liste ou d'un champ unique sur une page, puis collez ce que vous avez copié dans la même page, une autre page ou un document externe (comme Microsoft Excel et la messagerie Outlook). En raccourci, pour copier, appuyez sur CTRL+C (cmd+C dans macOS) sur votre clavier. Pour coller, appuyez sur CTRL+V (cmd+V dans macOS).
 
 Plusieurs autres raccourcis clavier permettent de copier et coller afin de faire gagner du temps pendant la saisie des données. Pour plus d'informations sur ceux-ci, reportez-vous à [Raccourcis clavier](keyboard-shortcuts.md#CopyRows).
 
@@ -43,7 +42,7 @@ Sélectionnez une ligne vide, puis appuyez sur Ctrl+V. Pour remplacer des lignes
 
 <!-- Rows are pasted directly where your cursor is located. If you paste into an empty line, any existing subsequent lines will be moved after the pasted lines. If you paste into an existing line or lines, this will be overwritten.-->
 
-## <a name="can-i-paste-rows-into-an-outlook-email-or-onenote"></a>Puis-je coller des lignes dans un courriel Outlook ou OneNote ?
+## <a name="can-i-paste-rows-into-an-outlook-email-or-onenote"></a>Puis-je coller des lignes dans un courriel Outlook ou OneNote?
 Oui. Le collage s'effectue dans un tableau convivial qui conserve l'indentation, l'alignement numérique et les couleurs, tout comme vous le verriez dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
 ## <a name="does-copy-and-paste-work-with-tiles"></a>La fonction Copier/Coller fonctionne-t-elle avec des vignettes ?
@@ -72,4 +71,3 @@ Lorsque vous collez dans [!INCLUDE[d365fin](includes/d365fin_md.md)], chaque lig
 [Mise en route](product-get-started.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 [Forum Aux Questions](across-faq.md)  
-

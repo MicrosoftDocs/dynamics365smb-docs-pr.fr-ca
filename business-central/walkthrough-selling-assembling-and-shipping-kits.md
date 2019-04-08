@@ -1,23 +1,23 @@
 ---
-title: "Procédure pas-à-pas : vente, assemblage et expédition de kits | Microsoft Docs"
-description: "Pour prendre en charge un inventaire juste-à-temps (JIT) et permettre la personnalisation des produits conformément aux demandes client, il est possible de créer des ordres d’assemblage et de les lier automatiquement dès que la ligne document de vente est créée. Le lien entre la demande vente et l’approvisionnement d’assemblage permet aux préparateurs de documents de vente de personnaliser l’article d’assemblage et de proposer des dates de livraison en fonction de la disponibilité des composantes. En outre, la consommation et le résultat d'assemblage sont reportés automatiquement avec la livraison du document de vente associé."
+title: 'Procédure pas-à-pas : vente, assemblage et expédition de kits | Microsoft Docs'
+description: Pour prendre en charge un inventaire juste-à-temps (JIT) et permettre la personnalisation des produits conformément aux demandes client, il est possible de créer des ordres d’assemblage et de les lier automatiquement dès que la ligne document de vente est créée. Le lien entre la demande vente et l’approvisionnement d’assemblage permet aux préparateurs de documents de vente de personnaliser l’article d’assemblage et de proposer des dates de livraison en fonction de la disponibilité des composantes. En outre, la consommation et le résultat d'assemblage sont reportés automatiquement avec la livraison du document de vente associé.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 01/31/2019
 ms.author: sgroespe
+ms.openlocfilehash: 4cbefdb46c6ba09dad64650123d6459135aa7afe
+ms.sourcegitcommit: d09f5ee0e164c7716f4ccb2ed71e2f9732a1f4f9
 ms.translationtype: HT
-ms.sourcegitcommit: a94c4f2f8d622a91b74ba0de6f0f18e7eb84a5ef
-ms.openlocfilehash: b1c0f2549420bec5efc8f224f88f46d8c5874968
-ms.contentlocale: fr-ca
-ms.lasthandoff: 01/31/2019
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "852710"
 ---
 # <a name="walkthrough-selling-assembling-and-shipping-kits"></a>Procédure pas-à-pas : vente, assemblage et expédition de kits
 
@@ -27,7 +27,7 @@ Pour prendre en charge un inventaire juste-à-temps (JIT) et permettre la person
 
 La fonctionnalité spéciale permet de gérer l’expédition des quantités « assembler pour commande », dans des configurations d’entrepôt de base et avancées. Lorsque les travailleurs chargés de l'assemblage finissent d'assembler les pièces ou l'ensemble de la quantité à assembler pour commande, ils l'enregistrent dans le champ **Qté à livrer** de la ligne livraison entrepôt dans les configurations avancées et sélectionnent ensuite **Reporter livraison**. Par conséquent, le résultat d’assemblage correspondant est reporté, y compris la consommation de composantes liée, et une livraison vente de la quantité est reportée pour le document de vente lié. Cette procédure pas à pas présente le processus entrepôt avancé.  
 
-Dans les configurations entrepôt de base, lorsqu’une quantité à assembler pour commande est prête à être livrée, l'employé d'entrepôt responsable reporte un prélèvement inventaire pour les lignes document de vente. Cela crée un mouvement d'inventaire pour les composantes et reporte le résultat d’assemblage et la livraison du document de vente. Pour plus d’informations, reportez-vous à la section « Traitement des articles à assembler pour commande dans les prélèvements inventaire » dans Prélèvement inventaire.  
+Dans les configurations entrepôt de base, lorsqu’une quantité à assembler pour commande est prête à être livrée, l'employé d'entrepôt responsable reporte un prélèvement inventaire pour les lignes document de vente. Cela crée un mouvement d'inventaire pour les composantes et reporte le résultat d’assemblage et la livraison du document de vente. Pour plus d’informations, reportez-vous à [Traitement des articles assembler pour commande dans les prélèvements inventaire](warehouse-how-to-pick-items-with-inventory-picks.md#handling-assemble-to-order-items-with-inventory-picks).  
 
 ## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas  
 Cette procédure pas à pas présente les tâches suivantes :  
@@ -106,10 +106,10 @@ Supprimez le délai par défaut pour les processus internes en procédant comme 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration de la fabrication**, puis sélectionnez le lien associé.  
 2.  Sur la page **Configuration fabrication**, sous le raccourci **Planification**, supprimez la valeur dans le champ **Délai de sécurité par défaut**.  
 
-Créez un inventaire pour des composantes d'assemblage en suivant la section « Préparer des exemples de données » dans cette procédure pas à pas.  
+Créez un inventaire pour des composantes d'assemblage en suivant la procédure [Préparation d'exemples de données](walkthrough-selling-assembling-and-shipping-kits.md#setting-up-the-sample-data).  
 
 ## <a name="story"></a>Scénario  
-Le 23 janvier, Susan, préparatrice de documents de vente, accepte une commande de The Device Shop pour trois unités de kit B, autrement dit, un article « assembler pour commande ». Les trois unités sont personnalisées et doivent contenir la carte graphique élevée et un bloc de RAM supplémentaire. Les lecteurs de disque sont mis à niveau vers DWD car les lecteurs de CD ne sont pas disponibles. Susan sait que les unités peuvent être assemblées immédiatement, c'est pourquoi elle laisse la date de livraison suggérée du 23 janvier.  
+Le 23 janvier, Susan, préparatrice de documents de vente, accepte une commande de The Device Shop pour trois unités de kit B, c’est-à-dire un article « assembler pour commande ». Les trois unités sont personnalisées et doivent contenir la carte graphique élevée et un bloc de RAM supplémentaire. Les lecteurs de disque sont mis à niveau vers DWD car les lecteurs de CD ne sont pas disponibles. Susan sait que les unités peuvent être assemblées immédiatement, c'est pourquoi elle laisse la date de livraison suggérée du 23 janvier.  
 
 En même temps, le client commande quinze unités du kit A avec une demande spéciale de cinq unités personnalisées contenant une carte graphique. Même si le kit A est généralement un article « assembler pour stock », le préparateur de commandes combine les quantités des lignes vente pour vendre dix unités du stock et assembler cinq unités personnalisées dans la commande. Les dix unités du kit A ne sont pas disponibles et doivent d’abord être fournies à l'inventaire par un ordre d’assemblage en fonction de la politique d’assemblage de l’article. Susan apprend du département d’assemblage que les unités du kit A ne peuvent pas être fournies pour la semaine en cours. Elle définit la date de livraison de la deuxième ligne document de vente, pour la quantité « assembler pour commande » et la quantité en inventaire, sur le 27 janvier et informe le client que les 15 unités du kit A seront livrées quatre jours après les trois unités du kit B. Pour signaler au département Livraison que ce document de vente requiert un processus d’assemblage, Susan crée le document livraison entrepôt depuis le document de vente.  
 
@@ -135,9 +135,9 @@ Sammy emballe les dix unités « assembler pour stock » avec les cinq unités
 
 Lorsque le document de vente est reporté ultérieurement comme étant entièrement facturé, le document de vente et les ordres d'assemblage associés sont supprimés.  
 
-## <a name="setting-up-the-sample-data"></a>Configuration des exemples de données  
+## <a name="prepare-sample-data"></a>Préparation d'exemples de données  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux article entrepôt**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux article entrepôt**, puis sélectionnez le lien associé.  
 2.  Choisissez le champ **Nom de lot**, puis sélectionnez le journal par défaut.  
 3.  Créez des ajustements positifs d'inventaire à l'emplacement BLANC à la date de travail, le 23 janvier, en entrant les informations suivantes.  
 
@@ -431,7 +431,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
     Notez que le champ **Quantité livrée** affiche la quantité totale des deux lignes.  
 
-    Lorsque The Device Shop paie pour la réception des 18 ordinateurs de CRONUS, le document de vente et ses ordres d'assemblage liés sont supprimés.  
+    Lorsque The Device Shop paie pour la réception des 18 ordinateurs de CRONUS, le document de vente et ses ordres d’assemblage liés sont supprimés.  
 
 ## <a name="see-also"></a>Voir aussi  
  [Description des processus Assembler pour commande et Assembler pour stock](assembly-assemble-to-order-or-assemble-to-stock.md)   
@@ -443,4 +443,3 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
  [Détails de conception : flux d'entrepôt internes](design-details-internal-warehouse-flows.md)   
  [Détails de conception : flux de désenlogement](design-details-outbound-warehouse-flow.md)   
  [Procédure pas à pas : planification automatique des approvisionnements](walkthrough-planning-supplies-automatically.md)
-

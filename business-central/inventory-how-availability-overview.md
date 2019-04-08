@@ -1,7 +1,7 @@
 ---
-title: "Obtenir un aperçu des disponibilités| Microsoft Docs"
-description: "Vous obtenez des informations sur la disponibilité des articles ou du stock dans tous les emplacements, par événement vente ou achat, par période ou par position de l'article sur une nomenclature d'assemblage ou de production."
-documentationcenter: 
+title: Obtenir un aperçu des disponibilités| Microsoft Docs
+description: Vous obtenez des informations sur la disponibilité des articles ou du stock dans tous les emplacements, par événement vente ou achat, par période ou par position de l'article sur une nomenclature d'assemblage ou de production.
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: stock
 ms.date: 10/01/2018
 ms.author: SorenGP
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 47634e2af9b109c8102c527508c4a9d94a3cb7c0
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813589"
 ---
 # <a name="view-the-availability-of-items"></a>Voir la disponibilité des articles
 Dans le contexte d'une tâche professionnelle, vous pouvez obtenir des informations avancées sur la disponibilité et l'emplacement d'un article, par exemple en discutant avec un client à propos d'une date de livraison.
@@ -121,4 +121,3 @@ Si un ou plusieurs composantes d'assemblage ne sont pas disponibles, cela est al
 [Vendre des produits](sales-how-sell-products.md)      
 [Utilisation de Business Central](ui-work-product.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)
-

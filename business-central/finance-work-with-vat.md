@@ -1,8 +1,8 @@
 ---
-title: "Procédure d'utilisation de la TVA sur les ventes et les achats | Microsoft Docs"
-description: "Cette rubrique décrit comment effectuer des tâches telles que la correction de la TVA reportée. Dans les pays/régions de l'UE, chaque transaction de vente et d'achat est soumise à des calculs de TVA. Elle décrit la procédure à suivre."
+title: Procédure d'utilisation de la TVA sur les ventes et les achats | Microsoft Docs
+description: Cette rubrique décrit comment effectuer des tâches telles que la correction de la TVA reportée. Dans les pays/régions de l'UE, chaque transaction de vente et d'achat est soumise à des calculs de TVA. Elle décrit la procédure à suivre.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: VAT, sales, purchases,
 ms.date: 10/01/2018
 ms.author: bholtorf
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 9d6f3cf74582283e633d9c3347def5289aeb8f88
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813664"
 ---
 # <a name="work-with-vat-on-sales-and-purchases"></a>Utiliser la TVA sur les ventes et les achats
 Si votre pays ou région vous demande de calculer la TVA sur les transactions de vente et d'achat afin de pouvoir déclarer les montants à une administration fiscale, vous pouvez configurer [!INCLUDE[d365fin](includes/d365fin_md.md)] pour calculer automatiquement la TVA sur les documents vente et achat. Pour plus d'informations, voir [Configuration des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md).
@@ -174,4 +174,3 @@ Pour afficher un groupe de certificats, vous commencez à partir de la page **Ce
 ## <a name="see-also"></a>Voir aussi  
 [Configuration des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md)   
 [Procédure : déclarer la TVA à une administration fiscale](finance-how-report-vat.md)   
-

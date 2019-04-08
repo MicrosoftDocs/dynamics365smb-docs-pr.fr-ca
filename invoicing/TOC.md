@@ -1,0 +1,15 @@
+# [Bienvenue dans Microsoft Invoicing](index.md)
+## Démarrer
+### [Configurer les informations sur votre entreprise](set-up-business-profile.md)
+### [Gestion des informations sur les clients](add-customers.md)
+### [Ajouter des produits ou des services](add-items.md)
+### [Ajouter la taxe sur la valeur ajoutée (TVA) à vos factures](add-vat.md)
+### [Taux de taxe américaine dans Invoicing](us-sales-tax.md)
+### [Définir le message de courriel par défaut](customize-email.md)
+### [Informer votre comptable](notify-accountant.md)
+### [Exporter les données](export-data.md)
+### [Dépannage](about-troubleshooting.md)
+## Envoyer des factures et des estimations à vos clients
+### [Envoyer une facture à un nouveau client](send-invoice.md)
+### [Envoyer une estimation à un client](send-estimate.md)
+### [Indiquer un escompte](give-discount.md)

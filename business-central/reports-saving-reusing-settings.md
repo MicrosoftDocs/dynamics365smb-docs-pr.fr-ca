@@ -1,6 +1,6 @@
 ---
-title: "Affecter et modifier les paramètres enregistrés dans des rapports | Microsoft Docs"
-description: "Décrit l'utilisation d'options et filtre prédéfinis pour personnaliser un rapport et pour générer les données exactes."
+title: Affecter et modifier les paramètres enregistrés dans des rapports | Microsoft Docs
+description: Décrit l'utilisation d'options et filtre prédéfinis pour personnaliser un rapport et pour générer les données exactes.
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,19 +10,19 @@ ms.workload: na
 ms.search.keywords: customization, personalization
 ms.date: 10/01/2018
 ms.author: jswymer
+ms.openlocfilehash: cbbb072c4be3ec41684e426451c394cfa978c390
+ms.sourcegitcommit: d09f5ee0e164c7716f4ccb2ed71e2f9732a1f4f9
 ms.translationtype: HT
-ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
-ms.openlocfilehash: 9fd086831c0d145570d87c33c62a003c166aca87
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/22/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "853127"
 ---
 # <a name="managing-saved-settings-on-reports"></a>Gestion des paramètres enregistrés dans les rapports
 Lors de l'exécution d'un rapport, les utilisateurs voient généralement une page qui leur permet de définir certaines options et certains filtres pour modifier les données incluses dans le rapport généré. Cette page est appelée la page de demande du rapport. Un rapport peut inclure un ou plusieurs *paramètres enregistrés* que les utilisateurs peuvent appliquer au rapport à partir de la page de demande. Les *Paramètres enregistrés* sont essentiellement des options et des filtres prédéfinis. Le fait d'utiliser les paramètres enregistrés est une façon rapide et fiable de générer de façon cohérente des états qui contiennent les données adéquates. Pour plus d'informations sur l'utilisation des paramètres enregistrés, voir [Utilisation des paramètres enregistrés](ui-work-report.md#SavedSettings).
 
 Si vous avez les bonnes autorisations, vous pouvez visualiser, créer et modifier les paramètres enregistrés pour tous les rapports pour tous les utilisateurs de la compagnie. Vous pouvez attribuer les paramètres enregistrés d'un rapport à des utilisateurs en particulier ou à tous les utilisateurs de la compagnie.
 
-<!-- 
+<!--
 ## Apply saved settings to a report
 1. Open the report.
 
@@ -53,5 +53,4 @@ Dans la page **Paramètres du rapport**, vous pouvez :
 > La fonctionnalité Paramètres enregistrés n'est disponible que pour les rapports où la [propriété SaveValues](https://docs.microsoft.com/en-us/dynamics-nav/savevalues-property) de la page de demande du rapport est définie sur `Yes`. La propriété **SaveValues** est définie dans l'environnement de développement.  
 
 ## <a name="see-also"></a>Voir aussi
-[Utilisation des rapports](ui-work-report.md)  
-
+[Utilisation des rapports et des traitements en lot](ui-work-report.md)  

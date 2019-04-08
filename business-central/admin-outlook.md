@@ -1,6 +1,6 @@
 ---
 title: Utilisation de Business Central avec Outlook | Microsoft Docs
-description: "Ce service bénéficie d'une intégration complète à Office 365, ce qui vous permet de gérer tous vos interactions et courriels d'affaires avec les clients et les fournisseurs directement dans Outlook."
+description: Ce service bénéficie d'une intégration complète à Office 365, ce qui vous permet de gérer tous vos interactions et courriels d'affaires avec les clients et les fournisseurs directement dans Outlook.
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: get-started-article
@@ -10,20 +10,20 @@ ms.workload: na
 ms.search.keywords: SMTP, mail, Office 365
 ms.date: 12/10/2018
 ms.author: edupont
-ms.translationtype: HT
-ms.sourcegitcommit: 8a73de1aa2f4a0f633c401ea341bb7bde6579723
 ms.openlocfilehash: a91f2d34cd023994dcd8eb67a9360d50d2cf3747
-ms.contentlocale: fr-ca
-ms.lasthandoff: 12/11/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813513"
 ---
 # <a name="using-business-central-as-your-business-inbox-in-outlook"></a>Utilisation de Business Central en tant que boîte de réception professionnelle dans Outlook
-[!INCLUDE[d365fin](includes/d365fin_md.md)] vous permet désormais de gérer les interactions commerciales avec vos clients et fournisseurs, directement dans Microsoft Outlook. Avec le complément Outlook de [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez afficher des informations financières associées à des clients et des fournisseurs, ainsi que créer et envoyer des documents financiers, comme des devis et des factures.  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] vous permet désormais de gérer les interactions commerciales avec vos clients et fournisseurs, directement dans Microsoft Outlook. Avec les compléments Outlook de [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez afficher des informations financières associées à des clients et des fournisseurs, ainsi que créer et envoyer des documents financiers, comme des devis et des factures.  
 
 ## <a name="getting-the-add-in"></a>Obtention du complément
 Vous pouvez aisément démarrer avec le complément [!INCLUDE[d365fin](includes/d365fin_md.md)] pour Outlook. Dans le guide de configuration assistée **Configurer votre boîte de réception professionnelle dans Outlook**, vous pouvez configurer la connexion pour vous-même ou pour votre organisation. Si votre organisation utilise Office 365, vous devez indiquer vos nom d'utilisateur et mot de passe Office 365. Si votre organisation n'utilise pas Office 365, vous devez spécifier des informations sur le serveur Exchange que vous utilisez. Le complément [!INCLUDE[d365fin](includes/d365fin_md.md)] est alors automatiquement ajouté à votre Outlook.  
 
-Ensuite, lorsque vous ouvrez Outlook, vous voyez un courriel dans Dynamics 365 Business Central Admin. Les nouveaux compléments sont ajoutés au ruban Outlook, et dans l'application Outlook Web, les compléments [!INCLUDE[d365fin](includes/d365fin_md.md)] apparaissent au-dessus ou au dessous du corps du message. Les compléments sont mis à jour régulièrement, et vous êtes informé qu'une nouvelle version est prête dans Outlook.  
+Ensuite, lorsque vous ouvrez Outlook, vous voyez un courriel dans Dynamics 365 Business Central Admin. Les nouveaux compléments sont ajoutés au ruban Outlook et, dans l'application Outlook Web, les compléments [!INCLUDE[d365fin](includes/d365fin_md.md)] apparaissent immédiatement au-dessus ou en dessous du corps du courriel. Les compléments sont mis à jour régulièrement, et vous êtes informé qu'une nouvelle version est prête dans Outlook.  
 
 Certaines compagnies utilisant Office 365 n'autorisent pas leurs utilisateurs à déployer des compléments. Ainsi vous devez vous assurer que vous disposez d'un abonnement Office 365 comprenant la messagerie et qui vous permet de déployer des compléments. Si vous souhaitez tout de même essayer le complément, vous pouvez [essayer gratuitement Office 365](https://products.office.com/try).  
 
@@ -64,4 +64,3 @@ Dans les deux cas, si [!INCLUDE[d365fin](includes/d365fin_md.md)] n'est toujours
 [Finance](finance.md)  
 [Ventes](sales-manage-sales.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-

@@ -1,8 +1,8 @@
 ---
 title: "Procédure : Vente d'articles à assembler pour commande | Microsoft Docs"
-description: "Si l'article est configuré pour un assemblage pour commande, l'article ne devrait pas être en inventaire, il doit être assemblé spécifiquement pour un document de vente. Lorsque vous entrez l'article dans une ligne document de vente, un ordre d'assemblage est automatiquement créé et lié au document de vente."
+description: Si l'article est configuré pour un assemblage pour commande, l'article ne devrait pas être en inventaire, il doit être assemblé spécifiquement pour un document de vente. Lorsque vous entrez l'article dans une ligne document de vente, un ordre d'assemblage est automatiquement créé et lié au document de vente.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: kit, kitting
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 5540c45eefb1272c5dfa5c790586f6b33b4f4848
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813790"
 ---
 # <a name="sell-items-assembled-to-order"></a>Vente d'articles à assembler pour commande
 Si le champ **Politique d'assemblage** de la fiche article d'un élément d'assemblage est **Assembler pour commande**, l'article n'est pas supposé être en inventaire et doit être assemblé spécifiquement dans un document de vente. Lorsque vous entrez l'article dans une ligne document de vente, un ordre d'assemblage est automatiquement créé et lié au document de vente.  
@@ -65,4 +65,3 @@ Dans cette procédure, vous effectuez la vente d'un article que vous assemblez s
 [Stock](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

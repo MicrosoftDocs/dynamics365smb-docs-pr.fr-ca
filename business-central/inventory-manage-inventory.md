@@ -1,7 +1,7 @@
 ---
 title: Gestion de l'inventaire| Microsoft Docs
-description: "Décrit comment gérer les biens physiques que vous commercialisez, par exemple, la gestion du stock de votre entrepôt."
-documentationcenter: 
+description: Décrit comment gérer les biens physiques que vous commercialisez, par exemple, la gestion du stock de votre entrepôt.
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -9,16 +9,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: warehouse, stock
-ms.date: 10/01/2018
+ms.date: 03/11/2019
 ms.author: sgroespe
+ms.openlocfilehash: dc32b5e210332fe0fd73b6423441cb66a5c171fb
+ms.sourcegitcommit: d09f5ee0e164c7716f4ccb2ed71e2f9732a1f4f9
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 1f79c20cb68ff1802bb97914a7ac1e458ca28f3a
-ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "852480"
 ---
-
 # <a name="inventory"></a>Stocks
 Pour chaque produit physique que vous commercialisez, vous devez créer une fiche article de type **Stock**. Les articles que vous proposez aux clients, mais que vous n'avez pas en inventaire, peuvent être enregistrés comme articles de catalogue. Vous pouvez ensuite les convertir en articles d'inventaire, le cas échéant. Vous pouvez augmenter ou diminuer la quantité d'un article en inventaire en reportant directement les écritures de l'article, par exemple, après un comptage physique ou si vous n'enregistrez pas les achats.
 
@@ -45,7 +44,9 @@ Bien que les coûts inventaire soient automatiquement reportés dans le grand li
 |Afficher la disponibilité des articles par emplacement, par période, par événement de vente ou d'achat, ou encore en fonction de leur utilisation dans les nomenclatures d'assemblage ou de production.|[Voir la disponibilité des articles](inventory-how-availability-overview.md)|
 |Transférez des articles en inventaire entre des emplacements avec des ordres de transfert pour gérer les activités entrepôt ou avec le journal reclassement article.|[Transfert d'inventaire entre des emplacements](inventory-how-transfer-between-locations.md)|
 |Réservez des articles en inventaire ou entrants pour les documents de vente, les bons de commande, les commandes service, les ordres d'assemblage ou les bons de production.|[Réserver des articles](inventory-how-to-reserve-items.md)|
+|Configurer la description propre à un fournisseur ou à un client pour un article, afin de pouvoir insérer facilement leur description de l'article dans les documents commerciaux.|[Utiliser les références externes article](inventory-how-use-item-cross-refs.md)|
 |Affectez des numéros de série ou de lot à n'importe quel document ou ligne journal entrant ou sortant, par exemple pour suivre les articles dans le cas d'un rappel.|[Utiliser les numéros de lot et de série](inventory-how-work-item-tracking.md)|
+|Configurer la description d'un article propre à un fournisseur ou à un client sur votre fiche article, afin de pouvoir insérer rapidement leur description de l'article dans les documents commerciaux.|[Utiliser les références externes article](inventory-how-use-item-cross-refs.md)|
 |Rechercher où un numéro de série ou de lot a été utilisé dans sa chaîne d'approvisionnement, par exemple dans les situations de rappel.|[Tracer des articles - Articles suivis](inventory-how-to-trace-item-tracked-items.md)|
 |Bloquez des articles pour empêcher leur saisie dans des lignes vente ou achat, ou leur report dans n'importe quelle transaction.|[Bloquer les articles](inventory-how-block-items.md)|
 |Gérez les opérations commerciales dans les bureaux de vente, les départements d'achat ou les bureaux de planification d'usine pour plusieurs emplacements.|[Utiliser les centres de gestion](inventory-responsibility-centers.md)|
@@ -58,4 +59,3 @@ Bien que les coûts inventaire soient automatiquement reportés dans le grand li
 [Fonctionnalités marché](ui-across-business-areas.md)
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
-

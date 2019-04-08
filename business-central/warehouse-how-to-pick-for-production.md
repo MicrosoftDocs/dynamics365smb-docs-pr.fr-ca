@@ -1,30 +1,30 @@
 ---
-title: "Comment prélever pour la fabrication dans les configurations de stockage de base | Microsoft Docs"
-description: "Lorsque l'emplacement entrepôt nécessite un traitement de prélèvement sans nécessiter de traitement de livraison, vous pouvez utiliser la page **Prélèvement inventaire** pour organiser et enregistrer le prélèvement des composantes."
+title: Comment prélever pour la fabrication dans les configurations de stockage de base | Microsoft Docs
+description: Lorsque l'emplacement entrepôt nécessite un traitement de prélèvement sans nécessiter de traitement de livraison, vous pouvez utiliser la page **Prélèvement inventaire** pour organiser et enregistrer le prélèvement des composantes.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
-ms.date: 01/22/2019
+ms.search.keywords: ''
+ms.date: 03/01/2019
 ms.author: sgroespe
+ms.openlocfilehash: c4616282a204077665a9dfb7e8e59ee51f2846ce
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 1acac32a417f794801da50c866db2643ea0a4c2d
-ms.openlocfilehash: 115bd8ef6d4069674f1d04878d0ec704214383ce
-ms.contentlocale: fr-ca
-ms.lasthandoff: 01/22/2019
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813582"
 ---
 # <a name="pick-for-production-or-assembly-in-basic-warehouse-configurations"></a>Prélever pour la fabrication ou l'assemblage dans les configurations de stockage de base.
 Le mode de rangement de vos composantes de prélèvement pour les bons de production ou les ordres d'assemblage dépend de la configuration de l'entrepôt en tant qu'emplacement. Pour plus d'informations, voir [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).
 
 Dans les configurations d'entrepôt de base où l'emplacement nécessite un traitement de prélèvement sans nécessiter de traitement de livraison, vous pouvez utiliser la page **Prélèvement inventaire** pour organiser et enregistrer le prélèvement des composantes.  
 
-Dans les configurations d'entrepôt de base, vous devez prélever les ordres d'assemblage à l'aide de la page **Mouvement d'inventaire**. Pour plus d'informations, reportez-vous à la section « Traitement d'un article à assembler pour commande dans les prélèvements stock » dans [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).  
+Dans les configurations d'entreposage de base, vous devez prélever les ordres d'assemblage à l'aide de la page **Mouvement d'inventaire**. Pour plus d’informations, voir [Traitement des articles assembler pour commande dans les prélèvements inventaire](warehouse-how-to-pick-for-production.md#handling-assemble-to-order-items-with-inventory-picks).  
 
 Dans les configurations d'entrepôt avancées où les emplacements nécessitent des prélèvements et des livraisons, vous utilisez la page **Prélèvement entrepôt** pour ajouter des composantes aux bons de production ou aux ordres d'assemblage. Pour plus d'informations, consultez [Prélever pour la fabrication ou l'assemblage dans les configurations de stockage avancées](warehouse-how-to-pick-for-internal-operations-in-advanced-warehousing.md).
 
@@ -80,4 +80,3 @@ Ce graphique indique comment le champ **Code de zone** sur les lignes composante
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

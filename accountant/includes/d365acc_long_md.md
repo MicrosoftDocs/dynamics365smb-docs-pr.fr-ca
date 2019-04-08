@@ -1,1 +1,1 @@
-Dynamics 365 — Portail Comptable
+Dynamics 365 — Accountant Hub

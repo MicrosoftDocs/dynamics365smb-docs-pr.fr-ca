@@ -1,21 +1,21 @@
 ---
-title: "Détails de conception - Configuration d'entrepôt | Microsoft Docs"
-description: "La fonctionnalité d'entrepôt dans Business Central contient différents niveaux de complexité, tels que définis par les autorisations de licence dans les granules proposés. Le niveau de complexité dans une solution entrepôt est en grande partie défini par la configuration des zones sur les fiches emplacement, qui est lui-même contrôlé par licence afin que l'accès aux champs de configuration des zones soit défini par la licence."
+title: Détails de conception - Configuration d'entrepôt | Microsoft Docs
+description: La fonctionnalité d'entrepôt dans Business Central contient différents niveaux de complexité, tels que définis par les autorisations de licence dans les granules proposés. Le niveau de complexité dans une solution entrepôt est en grande partie défini par la configuration des zones sur les fiches emplacement, qui est lui-même contrôlé par licence afin que l'accès aux champs de configuration des zones soit défini par la licence.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 0c813187ee6d11fcdb729cb64048386238406528
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813658"
 ---
 # <a name="design-details-warehouse-setup"></a>Détails de conception : paramètres entrepôt
 La fonctionnalité d'entrepôt dans [!INCLUDE[d365fin](includes/d365fin_md.md)] contient différents niveaux de complexité, tels que définis par les autorisations de licence dans les granules proposés. Le niveau de complexité dans une solution entrepôt est en grande partie défini par la configuration des zones sur les fiches emplacement, qui est lui-même contrôlé par licence afin que l'accès aux champs de configuration des zones soit défini par la licence. En outre, les objets d'application de la licence déterminent le document d'interface utilisateur à utiliser pour les activités entrepôt prises en charge.  
@@ -35,7 +35,7 @@ Les granules liés à l'entrepôt suivants existent :
 
 Pour plus d'informations sur chaque granule, voir [Feuilles de prix [!INCLUDE[d365fin](includes/d365fin_md.md)]](https://go.microsoft.com/fwlink/?LinkId=238341) (requiert un compte PartnerSource).  
 
-Le tableau suivant indique les granules requis pour définir les différents niveaux de complexité entrepôt, les documents de l'interface utilisateur qui prennent en charge chaque niveau, et les codes d'emplacement qui reflètent ces niveaux dans la base de données de démonstration [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+Le tableau suivant indique les granules requis pour définir les différents niveaux de complexité entrepôt, les documents de l'interface utilisateur qui prennent en charge chaque niveau et les codes d'emplacement qui reflètent ces niveaux dans la base de données de démonstration [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
 |Niveau de complexité|Description|Document d'interface utilisateur|Emplacement CRONUS|Granule minimum requis|  
 |----------------------|---------------------------------------|-----------------|---------------------------------|---------------------------------|  
@@ -130,4 +130,3 @@ Le modèle rangement peut être affecté à un article et à un emplacement. Le 
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)   
 [Détails de conception : disponibilité dans l'entrepôt](design-details-availability-in-the-warehouse.md)
-

@@ -1,20 +1,20 @@
 ---
-title: "Utilisation de journaux généraux pour reporter directement dans le grand livre| Microsoft Docs"
-description: "Découvrez comment utiliser les journaux pour reporter des transactions financières dans les comptes GL et dans d'autres comptes, tels que les comptes bancaires et fournisseur."
+title: Utilisation de journaux généraux pour reporter directement dans le grand livre| Microsoft Docs
+description: Découvrez comment utiliser les journaux pour reporter des transactions financières dans les comptes GL et dans d'autres comptes, tels que les comptes bancaires et fournisseur.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/27/2018
+ms.date: 03/01/2019
 ms.author: sgroespe
+ms.openlocfilehash: ddcda93c59df3f8390dc3852595d4f07f03648f5
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: f715dc4994fb3507d73f44bc9adc689f6d3f71cb
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813617"
 ---
 # <a name="working-with-general-journals"></a>Utilisation de feuilles comptabilité
 
@@ -35,9 +35,9 @@ Les informations que vous saisissez dans un journal sont temporaires et peuvent 
 
 ## <a name="using-journal-templates-and-batches"></a>Utilisation de modèles et lots de journal
 
-Il existe plusieurs modèles journal général. Chaque modèle journal est représenté par une page dédiée avec des fonctions particulières et les champs nécessaires pour la prise en charge de ces fonctions, notamment la page **Journal rapprochement paiement** qui permet de traiter les paiements bancaires et la page **Journal paiement** qui permet de payer vos fournisseurs ou de rembourser vos employés. Pour plus d'informations, voir [Exécuter des paiements](payables-make-payments.md) et [Rapprocher des paiements client manuellement](receivables-how-apply-sales-transactions-manually.md).
+Il existe plusieurs modèles journal général. Chaque modèle journal est représenté par une page dédiée avec des fonctions particulières et les champs nécessaires pour la prise en charge de ces fonctions, notamment la page **Journal rapprochement paiement** qui permet de traiter les paiements bancaires et la page **Journal paiement** qui permet de payer vos fournisseurs ou de rembourser vos employés. Pour plus d'informations, voir [Exécuter des paiements](payables-make-payments.md) et [Rapprocher les paiements clients avec le journal des encaissements ou les écritures client](receivables-how-apply-sales-transactions-manually.md).
 
-Pour chaque modèle journal, vous pouvez configurer votre propre journal personnel sous forme de lot de journal. Par exemple, vous pouvez définir votre propre lot de journal pour le journal paiement doté de votre présentation et de vos paramètres personnels. Le conseil suivant est un exemple de la manière de personnaliser un journal.
+Pour chaque modèle journal, vous pouvez configurer votre propre journal personnel sous forme de lot journal. Par exemple, vous pouvez définir votre propre lot de journal pour le journal paiement doté de votre présentation et de vos paramètres personnels. Le conseil suivant est un exemple de la manière de personnaliser un journal.
 
 > [!TIP]  
 > Si vous cochez la case **Suggérer le montant contrepartie** de la ligne pour votre lot sur la page **Lots journal général**, le champ **Montant** dans, par exemple, les lignes journal général pour le même numéro de document est automatiquement prérempli avec la valeur nécessaire à la contrepartie du document. Pour plus d'informations, voir [Laisser [!INCLUDE[d365fin](includes/d365fin_md.md)] suggérer des valeurs](ui-let-system-suggest-values.md).
@@ -49,7 +49,7 @@ Si vous avez configuré des comptes de contrepartie par défaut pour les lots jo
 >   La TVA est calculée séparément pour le compte principal et le compte de contrepartie, afin qu'ils puissent utiliser des taux de pourcentage de TVA différents.
 
 ## <a name="working-with-recurring-journals"></a>Utilisation de journaux récurrents
-Un journal récurrent est un journal général contenant des champs spécifiques pour la gestion des transactions que vous reportez fréquemment avec peu ou pas de modifications comme le loyer, les abonnements, l'électricité et le chauffage. Utilisez ces champs dans le cadre des transactions récurrentes pour reporter les montants fixes et variables. Vous pouvez également définir des écritures inversion automatiques le lendemain de la date de report. Vous pouvez également utiliser des clés d'affectation pour répartir les écritures récurrentes entre plusieurs comptes. Pour plus d'informations, reportez-vous à la section « Affectation de montants journal récurrent à plusieurs comptes ».
+Un journal récurrent est un journal général contenant des champs spécifiques pour la gestion des transactions que vous reportez fréquemment avec peu ou pas de modifications comme le loyer, les abonnements, l'électricité et le chauffage. Utilisez ces champs dans le cadre des transactions récurrentes pour reporter les montants fixes et variables. Vous pouvez également définir des écritures inversion automatiques le lendemain de la date de report. Vous pouvez également utiliser des clés d'affectation pour répartir les écritures récurrentes entre plusieurs comptes. Pour plus d'informations, voir [Affectation de montants journal récurrent à plusieurs comptes](ui-work-general-journals.md#allocating-recurring-journal-amounts-to-several-accounts).
 
 Avec un journal récurrent, les écritures qui sont régulièrement reportées ne sont saisies qu'une fois. Les comptes, dimensions, valeurs de dimension, etc., que vous saisissez restent ainsi dans le journal après report. Si des ajustements sont nécessaires, vous pouvez les faire à chaque report.
 
@@ -60,7 +60,7 @@ Ce champ détermine la manière dont le montant de la ligne journal est traité 
 | --- | --- |
 |Statique|Le montant de la ligne journal est conservé après report.|
 |Variable|Le montant de la ligne journal est supprimé après report.|
-|Solde|Le montant reporté sur le compte de la ligne sera affecté sur les comptes spécifiés pour la ligne de la table Imputation journal général. Le solde du compte est donc positionné à zéro. Pensez à renseigner le champ **% affectation** sur la page **Affectations**. Pour plus d'informations, reportez-vous à la section « Affectation de montants journal récurrent à plusieurs comptes ».|
+|Solde|Le montant reporté sur le compte de la ligne sera affecté sur les comptes spécifiés pour la ligne de la table Imputation journal général. Le solde du compte est donc positionné à zéro. Pensez à renseigner le champ **% affectation** sur la page **Affectations**. Pour plus d'informations, voir [Affectation de montants journal récurrent à plusieurs comptes](ui-work-general-journals.md#allocating-recurring-journal-amounts-to-several-accounts).|
 |Inversion fixe|Le montant de la ligne journal est conservé après report, et une écriture contrepartie est reportée le lendemain.|
 |Inversion variable|Le montant de la ligne journal est supprimé après report, et une écriture contrepartie est reportée le lendemain.|
 |Inversion solde|Le montant reporté sur le compte de la ligne sera affecté sur les comptes spécifiés pour la ligne de la page **Affectations**. Le solde du compte est défini sur zéro, et une écriture contrepartie est reportée le lendemain.|
@@ -69,7 +69,7 @@ Ce champ détermine la manière dont le montant de la ligne journal est traité 
 >  Les champs TVA peuvent être renseignés sur la ligne journal récurrent ou sur la ligne journal affectation, mais pas sur les deux. Ils peuvent être renseignés sur la page **Affectations** uniquement si les lignes correspondantes du journal récurrent ne sont pas renseignées.
 
 ### <a name="recurring-frequency-field"></a>Champ Périodicité récurrente
-Ce champ détermine la fréquence de report de l'écriture de la ligne journal. Il s'agit d'un champ de formule de date qui doit être renseigné pour les lignes journal récurrent. Pour plus d'informations reportez-vous à la section « Utilisation de formules date » dans [Saisie de données](ui-enter-data.md).
+Ce champ détermine la fréquence de report de l'écriture de la ligne journal. Il s'agit d'un champ de formule de date qui doit être renseigné pour les lignes journal récurrent. Pour plus d'informations, voir [Utilisation de formules date](ui-enter-date-ranges.md#using-date-formulas).
 
 #### <a name="examples"></a>Exemples
 Si la ligne journal doit être reportée tous les mois, saisissez « 1M ». Après chaque report, la date du champ **Date de report** est mise à jour, elle est remplacée par la même date du mois suivant.
@@ -164,4 +164,3 @@ Les valeurs dans le champ **N° document** sont modifiées, le cas échéant, po
 [Répartition des coûts et du revenu](year-allocate-costs-income.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

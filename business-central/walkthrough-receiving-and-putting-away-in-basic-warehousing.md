@@ -1,21 +1,21 @@
 ---
-title: "Procédure pas à pas : Réception et rangement dans les configurations de stockage de base | Microsoft Docs"
-description: "Dans Business Central, les processus entrants de réception et de rangement peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt."
+title: 'Procédure pas à pas : Réception et rangement dans les configurations de stockage de base | Microsoft Docs'
+description: Dans Business Central, les processus entrants de réception et de rangement peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 01/31/2019
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: a94c4f2f8d622a91b74ba0de6f0f18e7eb84a5ef
 ms.openlocfilehash: 2f92a8977905f5507fdcfd26613d422ebf6c23b2
-ms.contentlocale: fr-ca
-ms.lasthandoff: 01/31/2019
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "814008"
 ---
 # <a name="walkthrough-receiving-and-putting-away-in-basic-warehouse-configurations"></a>Procédure pas à pas : Réception et rangement dans les configurations de stockage de base
 
@@ -44,7 +44,7 @@ Cette procédure pas à pas présente les tâches suivantes.
 
 -   Configuration de l'emplacement ARGENT pour les rangements inventaire.  
 -   Configuration de l'emplacement ARGENT pour la gestion de zone.  
--   Définissez une zone par défaut pour l'article LS-81. (LS-75 est déjà défini dans CRONUS.)  
+-   Définissez une zone par défaut pour l'article LS-81. (LS-75 est déjà défini dans CRONUS).  
 -   Créez un bon de commande pour le fournisseur 10 000 pour 40 haut-parleurs.  
 -   Vérifier que les zones de rangement sont prédéfinies par la configuration.  
 -   Lancement du bon de commande pour le traitement en entrepôt.  
@@ -63,7 +63,7 @@ Cette procédure pas à pas présente les tâches effectuées par les rôles uti
 Pour exécuter ce processus pas à pas, vous devez :  
 
 -   avoir CRONUS International Ltd. installé.  
--   Pour devenir magasinier dans un emplacement ARGENT, procédez comme suit :  
+-   Pour devenir employé d'entrepôt dans l'emplacement ARGENT, procédez comme suit :  
 
     1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Employés d'entrepôt**, puis sélectionnez le lien associé.  
     2.  Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs**.  
@@ -71,7 +71,7 @@ Pour exécuter ce processus pas à pas, vous devez :
     4.  Sélectionnez le champ **Par défaut**.  
 
 ## <a name="story"></a>Scénario  
-Ellen, responsable d'entrepôt chez CRONUS International Ltd., crée un bon de commande de 10 unités de l'article LS-75 et 30 unités de l'article LS-81 du fournisseur 10000, qui doivent être approvisionnés à l'entrepôt ARGENT. Lorsque la livraison arrive à l'entrepôt, Jean, l'employé de l'entrepôt, range les articles dans les zones par défaut définies pour les articles. Lorsque Jean reporte le rangement, les articles sont reportés comme étant reçus dans l'inventaire et disponibles à la vente ou pour d'autres demandes.  
+Ellen, responsable d'entrepôt chez CRONUS International Ltd., crée un bon de commande de 10 unités de l'article LS-75 et 30 unités de l'article LS-81 du fournisseur 10000, qui doivent être livrées à l'entrepôt ARGENT. Lorsque la livraison arrive à l'entrepôt, Jean, l'employé de l'entrepôt, range les articles dans les zones par défaut définies pour les articles. Lorsque Jean reporte le rangement, les articles sont reportés comme étant reçus dans l'inventaire et disponibles à la vente ou pour d'autres demandes.  
 
 ## <a name="setting-up-the-location"></a>Configuration de l'emplacement  
  La configuration de la page **Fiche emplacement** définit les flux d'entrepôt de la compagnie.  
@@ -145,4 +145,3 @@ Sur la page **Rangement inventaire**, vous pouvez gérer toutes les activités e
  [Détails de conception : flux d'enlogement](design-details-inbound-warehouse-flow.md)   
  [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)  
  [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

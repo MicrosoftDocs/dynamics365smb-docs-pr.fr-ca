@@ -1,6 +1,6 @@
 ---
 title: Nuage intelligent | Microsoft Docs
-description: "Obtenez une copie nuage de vos données afin d'être connecté au nuage intelligent."
+description: Obtenez une copie nuage de vos données afin d'être connecté au nuage intelligent.
 author: bmeier94
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -11,17 +11,16 @@ ms.reviewer: edupont
 ms. search.keywords: cloud, edge
 ms.date: 10/01/2018
 ms.author: bmeier
+ms.openlocfilehash: 932b6f45ed4f8704b48873518ba2b096efc33e7a
+ms.sourcegitcommit: d09f5ee0e164c7716f4ccb2ed71e2f9732a1f4f9
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: 0abf01698e25ae04a2e34696fb2443ff7d413a26
-ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "852148"
 ---
+# <a name="your-access-to-the-intelligent-cloud-with-includeprodshortincludesprodshortmd"></a>Votre accès au nuage intelligent avec [!INCLUDE[prodshort](includes/prodshort.md)]
 
-# <a name="your-access-to-the-intelligent-cloud-with-includeprodlongincludesprodlongmd"></a>Votre accès au nuage intelligent avec [!INCLUDE[prodlong](includes/prodlong.md)]
-
-En tant qu'utilisateur de [!INCLUDE[prodshort](includes/prodshort.md)] online, vous avez un accès complet aux scénarios basés sur le nuage intelligent, tels que la modification des données dans Excel et l'application des modifications dans [!INCLUDE[prodshort](includes/prodshort.md)], ou lorsque vous consultez vos données dans Power BI. Toutefois, bien que [!INCLUDE[prodshort](includes/prodshort.md)] est un service basé d'abord sur le nuage, les clients qui doivent exécuter leurs charges de travail entièrement sur site ou sur la périphérie intelligente connectée au nuage peuvent également le faire.  
+En tant qu'utilisateur de [!INCLUDE[prodshort](includes/prodshort.md)] en ligne, vous avez un accès complet aux scénarios basés sur le nuage intelligent, comme la modification des données dans Excel ou l'application des modifications dans [!INCLUDE[prodshort](includes/prodshort.md)], ou lorsque vous consultez vos données dans Power BI. Toutefois, même si [!INCLUDE[prodshort](includes/prodshort.md)] est un service basé sur le nuage, les clients qui doivent exécuter leurs charges de travail entièrement sur site ou sur la périphérie intelligente connectée au nuage peuvent également le faire.  
 
 Si vous êtes intéressé par [!INCLUDE[prodshort](includes/prodshort.md)], vous pouvez vous inscrire à une version d'évaluation gratuite de la solution de déploiement sur le nuage par défaut, ou vous pouvez choisir d'utiliser un partenaire pour déployer [!INCLUDE[prodshort](includes/prodshort.md)] localement sur le matériel de votre choix. Vous pouvez ensuite décider de vous connecter au nuage via votre abonné sur le nuage. Par conséquent, les données de votre [!INCLUDE[prodshort](includes/prodshort.md)] déployé localement seront répliquées sur le nuage pour les scénarios de nuage intelligent.  
 
@@ -53,4 +52,3 @@ Lorsque votre revendeur Dynamics 365 a acquis la bonne licence pour votre solut
 [Extension de nuage intelligent Business Central](ui-extensions-intelligent-cloud.md)  
 [Extension réplication de données](ui-extensions-data-replication.md)  
 [Connexion au nuage intelligent](/dynamics365/business-central/dev-itpro/administration/about-intelligent-edge)  
-

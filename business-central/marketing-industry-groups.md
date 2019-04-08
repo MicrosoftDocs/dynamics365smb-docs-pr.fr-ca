@@ -1,8 +1,8 @@
 ---
-title: "Configurer des secteurs d'activité pour des compagnies contact| Microsoft Docs"
-description: "Décrit comment définir un secteur d'activité et l'affecter à une compagnie contact, par exemple, le marché de détail ou l'industrie automobile."
+title: Configurer des secteurs d'activité pour des compagnies contact| Microsoft Docs
+description: Décrit comment définir un secteur d'activité et l'affecter à une compagnie contact, par exemple, le marché de détail ou l'industrie automobile.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.keywords: relationship, prospect
 ms.date: 10/01/2018
 ms.author: jswymer
 redirect_url: marketing-setup-contacts
+ms.openlocfilehash: 61d1385691a0ed2bdc11745e98b14fa57e50475a
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 96be04b6226fb44fd3e910e547a1d2590352b04d
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813942"
 ---
 # <a name="set-up-industry-groups-for-contact-companies"></a>Configurer des secteurs d'activité pour des compagnies contact
 Les secteurs d'activité vous permettent d'indiquer le type de secteur auquel vos contacts appartiennent, par exemple la grande distribution et l'industrie automobile.
@@ -48,6 +48,5 @@ Le nombre de secteurs d'activité que vous avez affectés au contact s'affiche d
 Une fois que vous avez affecté des secteurs d'activité à vos contacts, vous pouvez utiliser ces informations pour sélectionner des contacts pour vos segments. Pour plus d'informations, reportez-vous à [Ajouter des contacts à des segments](marketing-add-contact-segment.md).
 
 ## <a name="see-also"></a>Voir aussi
-[Création de sociétés contact](marketing-create-contact-companies.md)  
+[Création de contacts](marketing-create-contact-companies.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

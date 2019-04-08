@@ -1,23 +1,23 @@
 ---
-title: "Procédure d'exécution d'une planification complète et d'un calcul PDP et MRP | Microsoft Docs"
-description: "Les termes « exécution de la feuille planification » ou « exécution d'un calcul MRP » font référence au calcul du calendrier de production principal et aux réquisitions de matériel sur la base de la demande réelle et prévue. Le système de planification peut calculer le calendrier de planification principal (MPS, Master Planning Schedule) ou la planification des besoins matière (MRP, Material Requirements Planning) à la demande, ou calculer les deux simultanément."
+title: Procédure d'exécution d'une planification complète et d'un calcul PDP et MRP | Microsoft Docs
+description: Les termes « exécution de la feuille planification » ou « exécution d'un calcul MRP » font référence au calcul du calendrier de production principal et aux réquisitions de matériel sur la base de la demande réelle et prévue. Le système de planification peut calculer le calendrier de planification principal (MPS, Master Planning Schedule) ou la planification des besoins matière (MRP, Material Requirements Planning) à la demande, ou calculer les deux simultanément.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 3cb3c77600ef8e83612bb144f1ddfc3abed0eff1
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813865"
 ---
 # <a name="run-full-planning-mps-or-mrp"></a>Exécuter une planification complète et un calcul PDP ou MRP
 Les termes « exécution de la feuille planification » ou « exécution d'un calcul MRP » font référence au calcul du calendrier de production principal et aux réquisitions de matériel sur la base de la demande réelle et prévue. Le système de planification peut calculer le calendrier de planification principal (MPS, Master Planning Schedule) ou la planification des besoins matière (MRP, Material Requirements Planning) à la demande, ou calculer les deux simultanément.  
@@ -114,4 +114,3 @@ En réponse à tout déséquilibre entre l'approvisionnement et la demande, les 
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
 [Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

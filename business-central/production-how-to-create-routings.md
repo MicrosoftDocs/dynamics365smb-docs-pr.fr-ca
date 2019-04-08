@@ -1,23 +1,23 @@
 ---
-title: "Procédure de création d'itinéraires | Microsoft Docs"
-description: "Un itinéraire contient les données de base qui capturent les exigences du traitement correspondant à un article produit donné. Après la création d'un bon de production pour cet article, son itinéraire gouvernera la planification des opérations tels que représenté sur la page **Itinéraire bon de prod.** sous le bon de production."
+title: Procédure de création d'itinéraires | Microsoft Docs
+description: Un itinéraire contient les données de base qui capturent les exigences du traitement correspondant à un article produit donné. Après la création d'un bon de production pour cet article, son itinéraire gouvernera la planification des opérations tels que représenté sur la page **Itinéraire bon de prod.** sous le bon de production.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
+ms.openlocfilehash: 6eb16bd42357646a9e88c4799a3f110be0e294eb
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: d6f64c04f6451701bbbac23e82678c5649a7df56
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "814062"
 ---
 # <a name="create-routings"></a>Créer des itinéraires
 Les compagnies manufacturières utilisent des itinéraires pour visualiser et gérer le processus de fabrication.
@@ -43,11 +43,11 @@ Pour pouvoir configurer un itinéraire, les éléments suivants doivent être en
 6.  Dans le champ **N° opération**, entrez le numéro de la première opération \(par exemple, **10**\).  
 7.  Dans le champ **Type**, sélectionnez le type de ressource utilisé, par exemple, **Centre de charge**.  
 8.  Dans le champ **N°**, sélectionnez la ressource à utiliser, ou entrez\-la.  
-9.  Dans le champ **Code lien gamme**, vous pouvez entrer un code permettant de lier le composant à une opération spécifique. Pour plus d'informations, voir la section « Pour créer des liens itinéraire ».
-10.  Dans les champs **Temps d'exécution** et **Temps de préparation**, entrez les temps opératoires nécessaires pour exécuter l'opération.  
+9.  Dans le champ **Code lien itinéraire**, vous pouvez entrer un code permettant de lier la composante à une opération spécifique. Pour plus d'informations, voir [Pour créer des liens itinéraire](production-how-to-create-routings.md#to-create-routing-links).
+10.  Dans les champs **Temps d'exécution** et **Temps de préparation**, entrez les temps opératoires nécessaires pour exécuter l'opération.
 
-    > [!NOTE]  
-    >  Le temps de préparation est calculé par bon de production, tandis que le temps d'exécution est calculé par article produit.  
+    > [!NOTE]
+    > Le temps de préparation est calculé par bon de production, tandis que le temps d'exécution est calculé par article produit.  
 
 11.  Dans le champ **Capacités simultanées** , indiquez combien d'unités de la ressource sélectionnée sont utilisées pour exécuter l'opération. Par exemple, deux personnes affectées à une opération de livraison diviseront par deux le temps d'exécution.  
 12.  Poursuivez le remplissage des lignes pour toutes les opérations intervenant dans la production de l'article en question.  
@@ -126,4 +126,3 @@ La validité de la version est définie par le champ **Date début**.
 [Stock](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

@@ -1,8 +1,8 @@
 ---
-title: "Programmation d'un rapport à exécuter à une date et une heure spécifiques | Microsoft Docs"
-description: "En savoir plus sur l'entrée d'un rapport dans une file d'attente de projets et la programmation de son traitement à une date et une heure spécifiques."
+title: Programmation d'un rapport à exécuter à une date et une heure spécifiques | Microsoft Docs
+description: En savoir plus sur l'intégration d'un rapport dans une file d'attente des travaux et la programmation de son traitement à une date et une heure spécifiques.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,23 +12,32 @@ ms.workload: na
 ms.search.keywords: task, process, report
 ms.date: 10/01/2018
 ms.author: jswymer
+ms.openlocfilehash: 98d51b10d3ca415a463b58405cb3c4f2449b75ad
+ms.sourcegitcommit: d09f5ee0e164c7716f4ccb2ed71e2f9732a1f4f9
 ms.translationtype: HT
-ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
-ms.openlocfilehash: 706464cf1b9a264f7575156c7835540ce3c254b0
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/22/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "852434"
 ---
-# <a name="working-with-reports"></a>Utilisation des rapports
+# <a name="working-with-reports-and-batch-jobs"></a>Utilisation des rapports et des traitements en lot
 Un rapport regroupe des informations en fonction d'un ensemble de critères spécifié, et organise et présente les informations dans un format imprimable et facilement lisible. Il existe de nombreux rapports accessibles dans l'ensemble de l'application. Les rapports fournissent généralement des informations relatives au contexte de la page où vous vous trouvez. Par exemple, la page **Client** comprend des rapports pour les 10 principaux clients et les statistiques de vente, et plus encore.
 
-Vous pouvez rechercher des rapports dans l'onglet **Rapports** sur les pages sélectionnées, ou utiliser la recherche ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") pour rechercher des rapports par leur nom.
+Les traitements en lot sont plus ou moins identiques aux rapports mais ils ont pour objectif d'exécuter un processus. Par exemple, le traitement en lot **Créer des rappels** crée des rappels pour les clients ayant des paiements échus.  
+
+> [!NOTE]
+> Cette rubrique fait principalement référence aux « rapports », mais des informations similaires s'appliquent aux traitements en lot.
+
+Vous pouvez rechercher des rapports dans l'onglet **Rapports** sur les pages sélectionnées, ou utiliser la recherche ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") pour rechercher les rapports par nom.
 
 
 ## <a name="specifying-the-data-to-include-in-the-report"></a>Définition des données à inclure dans le rapport
 Lorsque vous ouvrez un rapport, une page s'affiche généralement pour vous permettre de définir plusieurs options et filtres qui déterminent les éléments à inclure dans le rapport. Cette page est appelée la page de demande du rapport. Par exemple, la page de demande du rapport vous permet de créer un rapport pour un client spécifique, une plage de dates spécifique, ou encore de définir l'ordre des informations dans le rapport. Voici un exemple de page de demande du rapport :
 
 ![Options de rapport](media/report_options.png "Options de rapport")
+
+> [!Caution]
+> La section **Afficher résultats** sur une page de demande propose une fonctionnalité de filtrage générique pour les rapports. Ces filtres sont optionnels.<br /><br /> Certains rapports ignoreront ces filtres, ce qui signifie que quel que soit le filtre défini dans la section **Afficher résultats**, la sortie du rapport est identique. Il est impossible de fournir une liste des champs ignorés dans les rapports, vous devez donc expérimenter avec des filtres lorsque vous les utiliserez.<br /><br />
+**Exemple** : Lorsque vous utilisez le traitement en lot **Créer rappels**, un filtre pour le champ **Écritures client** de **Niveau dernier rappel émis** sera ignoré, car les filtres sont fixes pour ce traitement en lot.
 
 ### <a name="SavedSettings"></a>Utilisation des paramètres enregistrés
 Avec certains rapports, selon la manière dont ils sont conçus, la page de rapport peut inclure la section **Paramètres enregistrés** qui contient une ou plusieurs entrées dans la zone **Utiliser les valeurs par défaut de**. Les entrées de cette zone sont appelées *paramètres enregistrés*. Un paramètre enregistré est fondamentalement un groupe prédéfini d'options et de filtres que vous pouvez appliquer au rapport avant d'en afficher un aperçu ou de l'envoyer vers un fichier. L'écriture de paramètres enregistrés appelée **Options et filtres récemment utilisés** est toujours disponible. Cette écriture permet de faire en sorte que le rapport réutilise les options et les filtres utilisés la dernière fois que vous l'avez consulté.
@@ -46,8 +55,8 @@ Les filtres vous permettent d'afficher les données selon des critères spécifi
 Vous pouvez ajouter d'autres filtres en définissant les zones **Ajouter**. Lorsque vous avez défini plusieurs filtres, seuls les résultats qui répondent aux critères de tous les filtres seront inclus dans le rapport.
 
 Selon le champ de type que vous filtrez, vous pouvez spécifier les critères de filtre pour rechercher une correspondance exacte, une correspondance partielle, une plage de valeurs, etc. Pour obtenir de l'aide sur la configuration des filtres, voir :
--   [Filtrage](ui-enter-criteria-filters.md#FilterCriteria)
--   [Saisie de plages de dates](ui-enter-date-ranges.md)
+-   [filtres](ui-enter-criteria-filters.md#FilterCriteria) ;
+-   [Utilisation de dates civiles et les heures](ui-enter-date-ranges.md)
 
 ## <a name="previewing-a-report"></a>Affichage de l'aperçu d'un rapport
 Sélectionnez **Aperçu** pour visualiser le rapport dans le navigateur Internet. Pointez un zone du rapport pour afficher la barre de menus.  
@@ -88,4 +97,3 @@ Une présentation de rapport contrôle les éléments affichés sur un rapport, 
 [Spécifier la sélection de l'imprimante pour les états](ui-specify-printer-selection-reports.md)  
 [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

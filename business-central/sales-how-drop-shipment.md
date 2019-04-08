@@ -1,8 +1,8 @@
 ---
-title: "Lier un document de vente à un bon de commande pour une livraison directe | Microsoft Docs"
-description: "Décrit comment créer un document de vente liée à un bon de commande pour permettre la livraison directe du fournisseur au client."
+title: Lier un document de vente à un bon de commande pour une livraison directe | Microsoft Docs
+description: Décrit comment créer un document de vente liée à un bon de commande pour permettre la livraison directe du fournisseur au client.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: direct shipment
-ms.date: 10/01/2018
+ms.date: 03/01/2019
 ms.author: sgroespe
+ms.openlocfilehash: 77bed1563a5c0187e78f7e7013dfed4a723d7702
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 68af9892db003a2200bd0ceb9b9fa839952dce36
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813569"
 ---
 # <a name="make-drop-shipments"></a>Effectuer des livraisons directes
 Lors d'une livraison directe, un ou plusieurs articles de l'un de vos fournisseurs sont livrés directement chez l'un de vos clients.
@@ -36,8 +36,8 @@ Pour préparer une livraison directe pour l'article mis en vente, vous créez un
 1. Créez un bon de commande. Ne remplissez pas les champs sur les lignes. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 2. Dans le champ **N° donneur d'ordre** , sélectionnez le client auquel vous souhaitez vendre l'article en question.
 3. Choisissez l'action **Livraisons directes**, puis choisissez l'option **Extraire commande vente**.
-4. Sur la page **Liste des ventes**, sélectionnez le document de vente que vous avez préparé dans la section « Créer un document de vente pour livraison directe ».
-5. Cliquez sur le bouton **OK**.
+4. Sur la page **Liste des ventes**, sélectionnez le document de vente que vous avez préparée dans la section [Créer un document de vente pour livraison directe](sales-how-drop-shipment.md#to-create-a-sales-order-for-drop-shipment).
+5. Choisissez le bouton **OK**.
 
 Les informations de ligne du document de vente sont insérées sur la/les ligne(s) bon de commande.
 
@@ -49,9 +49,9 @@ Vous pouvez maintenant informer le fournisseur quant à la livraison des article
 ## <a name="to-post-a-drop-shipment"></a>Pour reporter une livraison directe
 Lorsque le fournisseur a livré les articles, vous pouvez reporter le document de vente comme envoyé. Vous pouvez également valider la commande achat, mais uniquement avec l'option **Réceptionner** jusqu'à ce que la commande vente ait été facturée.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.
-2. Ouvrez le document de vente que vous avez créé dans la section « Pour créer un document de vente pour une livraison directe ».
-3. Dans le champ **Qté à expédier**, spécifiez la quantité de commandes à envoyer, la quantité de commandes partielles ou totales.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
+2. Ouvrez les documents de vente que vous avez créés dans la section [Pour créer un document de vente pour une livraison directe]().
+3. Dans le champ **Qté à livrer**, spécifiez quelle quantité de la commande livrer : la quantité totale ou partielle.
 4. Sélectionnez l'action **Valider** ou **Valider et envoyer**.
 5. Sélectionnez l'option **Livrer** pour facturer ultérieurement ou l'option **Livrer et facturer** pour facturer immédiatement.
 
@@ -63,4 +63,3 @@ Lorsque le fournisseur a livré les articles, vous pouvez reporter le document d
 [Ventes](sales-manage-sales.md)  
 [Stock](inventory-manage-inventory.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

@@ -1,23 +1,23 @@
 ---
-title: "Détails de conception : report de bon de production | Microsoft Docs"
-description: "Comme pour le report d'ordre d'assemblage, les composantes consommées et le temps du poste utilisé sont convertis et sortis en tant qu'article produit lorsque le bon de production est terminé."
+title: 'Détails de conception : report de bon de production | Microsoft Docs'
+description: Comme pour le report d'ordre d'assemblage, les composantes consommées et le temps du poste utilisé sont convertis et sortis en tant qu'article produit lorsque le bon de production est terminé.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
 ms.openlocfilehash: b71f12ad075197f1630e681b826ec3dff1f4ddff
-ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813749"
 ---
 # <a name="design-details-production-order-posting"></a>Détails de conception : validation d'ordre de fabrication
 Comme pour le report d'ordre d'assemblage, les composantes consommées et le temps du poste utilisé sont convertis et sortis en tant qu'article produit lorsque le bon de production est terminé. Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-assembly-order-posting.md). Toutefois, le flux des coûts des ordres d'assemblage est moins complexe, notamment parce que le report du coût d'assemblage ne se produit qu'une fois et ne génère donc pas d'inventaire travaux en cours.
@@ -112,4 +112,3 @@ Dans des environnements de coût standard, l'évaluation du stock d'un ordre de 
  [Détails de conception : validation d'ordre d'assemblage](design-details-assembly-order-posting.md)  
  [Gestion des coûts ajustés](finance-manage-inventory-costs.md) [Finance](finance.md)  
  [Utilisation de Business Central](ui-work-product.md)
-

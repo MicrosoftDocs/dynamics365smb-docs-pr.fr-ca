@@ -12,7 +12,7 @@
   </Node>
   <Node Name="" DisplayName="Conseils" Page="ui-work-product.html">
     <Node Name="" DisplayName="Utilisation de Business Central" Page="ui-work-product.html"/>
-    <Node Name="" DisplayName="Utilisation de l'icône Page ou état pour la recherche" Page="ui-search.html"/>
+    <Node Name="" DisplayName="Utilisation de l'icône Page ou rapport pour la recherche" Page="ui-search.html"/>
     <Node Name="" DisplayName="Modification des paramètres de base" Page="ui-change-basic-settings.html"/>
     <Node Name="" DisplayName="Procédure : changer de Tableau de bord" Page="change-role.html"/>
     <Node Name="" DisplayName="Personnalisation de Business Central" Page="ui-customizing-overview.html"/>
@@ -281,8 +281,8 @@
     <Node Name="" DisplayName="Gestion des clients et des ventes créés dans Dynamics 365 for Sales" Page="marketing-integrate-dynamicscrm.html"/>
   </Node>
   <Node Name="" DisplayName="Ressources humaines" Page="hr-manage-human-resources.html">
-    <Node Name="" DisplayName="Procédure : enregistrer les employés" Page="hr-how-register-employees.html"/>
-    <Node Name="" DisplayName="Procédure : gérer les absences des employés" Page="hr-how-manage-absence.html"/>
+    <Node Name="" DisplayName="Procédure : Enregistrer les employés" Page="hr-how-register-employees.html"/>
+    <Node Name="" DisplayName="Procédure : Gérer les absences des employés" Page="hr-how-manage-absence.html"/>
   </Node>
   <Node Name="" DisplayName="Planification" Page="production-planning.html">
     <Node Name="" DisplayName="À propos de la fonctionnalité Planification" Page="production-about-planning-functionality.html"/>
@@ -398,7 +398,7 @@
     <Node Name="" DisplayName="Espagne" Page="LocalFunctionality/Spain/spain-local-functionality.html"/>
     <Node Name="" DisplayName="Suède" Page="LocalFunctionality/Sweden/sweden-local-functionality.html"/>
     <Node Name="" DisplayName="Suisse" Page="LocalFunctionality/Switzerland/switzerland-local-functionality.html"/>
-    <Node Name="" DisplayName="Anglais (Royaume-Uni)" Page="LocalFunctionality/UnitedKingdom/united-kingdom-local-functionality.html"/>
+    <Node Name="" DisplayName="Royaume-Uni" Page="LocalFunctionality/UnitedKingdom/united-kingdom-local-functionality.html"/>
     <Node Name="" DisplayName="États-Unis" Page="LocalFunctionality/UnitedStates/united-states-local-functionality.html"/>
   </Node>
 </Node>

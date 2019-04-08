@@ -1,7 +1,7 @@
 ---
-title: "Consolider les données de plusieurs compagnies | Microsoft Docs"
-description: "Obtenez une vue récapitulative de la santé financière de vos entreprises."
-documentationcenter: 
+title: Consolider les données de plusieurs compagnies | Microsoft Docs
+description: Obtenez une vue récapitulative de la santé financière de vos entreprises.
+documentationcenter: ''
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -9,16 +9,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: consolidation, subsidiaries, consolidate
-ms.date: 10/01/2018
+ms.date: 03/11/2019
 ms.author: bholtorf
+ms.openlocfilehash: feda9d1f681c40746db488027fdd8ae1d06a4d94
+ms.sourcegitcommit: 2b2c3b488a610a5d3b51fc8218c40b0b732fddf3
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 4208616e0d4d865a2cc113cd888abde8285dc202
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832607"
 ---
-
 # <a name="consolidating-financial-data-from-multiple-companies"></a>Consolidation des données financières de plusieurs compagnies
 Si vous avez plusieurs compagnies dans [!INCLUDE[d365fin](includes/d365fin_md.md)], le rapport Balance de vérification consolidée du tableau de bord Comptable peut vous donner un aperçu de leur santé financière dans leur ensemble.  
 
@@ -35,7 +34,7 @@ Vous pouvez consolider :
 
 En fonction de la complexité de vos activités, il existe deux façons de configurer le rapport :
 
-* Si les paramètres avancés ne sont pas nécessaires, par exemple l'ajout d'une compagnie que vous détenez en partie, vous pouvez utiliser le guide de configuration assistée **Consolidation de la compagnie** pour configurer rapidement une consolidation. Le guide vous aide à effectuer les étapes de base.
+* Si les paramètres avancés ne sont pas nécessaires, par exemple l'ajout d'une compagnie que vous détenez uniquement en partie, vous pouvez utiliser le guide de configuration assistée **Consolidation de la compagnie** pour configurer rapidement une consolidation. Le guide vous aide à effectuer les étapes de base.
 * Si d'autres paramètres avancés sont nécessaires, vous pouvez configurer vous-même la compagnie consolidée et les unités fonctionnelles.
 
 ## <a name="to-do-a-simple-consolidation-setup"></a>Pour configurer une consolidation simple
@@ -55,8 +54,11 @@ Si des paramètres plus avancés sont nécessaires pour votre consolidation, vou
 [!INCLUDE[d365fin](includes/d365fin_md.md)] vous permet de configurer une liste de compagnies à consolider, de vérifier les données comptables avant leur consolidation, d'importer des fichiers et de générer des rapports de consolidation.  
 
 1. Connectez-vous à la compagnie consolidée.
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
-3. Sélectionnez **Nouveau**, puis renseignez les champs requis.  
+2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
+3. Sélectionnez **Nouveau**, puis renseignez les champs requis. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+
+> [!IMPORTANT]
+> Lorsque vous renseignez les champs **Date début** et **Date de fin**, assurez-vous de vous conformer aux règles GAAP concernant les périodes fiscales de l'unité fonctionnelle par rapport à la compagnie mère.
 
 Si votre unité fonctionnelle utilise une devise étrangère, indiquez le taux de change à utiliser dans la consolidation. Vous devez également entrer des informations de consolidation sur les comptes du grand livre de l'unité fonctionnelle. Ces processus sont décrits dans les sections suivantes.
 
@@ -120,7 +122,31 @@ Une fois les données testées, vous pouvez les transférer vers la compagnie co
 1. Connectez-vous à la compagnie consolidée.  
 2. Dans le **Tableau de bord Comptable**, choisissez l'action **Exécuter la consolidation**.  
 3. Renseignez les champs requis.  
-4. Dans le champ **Où**, choisissez **Nom de la compagnie**, puis choisissez la compagnie consolidée dans le champ **est**.  
+4. Dans le champ **Où**, choisissez **Nom de la compagnie**, puis choisissez la compagnie consolidée dans le champ **est**.
+
+## <a name="to-eliminate-repeated-transactions"></a>Pour éliminer les transactions répétées
+Après que vous avez consolidé toutes les compagnies, vous devez rechercher toutes les transactions enregistrées plusieurs fois dans des compagnies, puis reporter les écritures élimination pour les supprimer.
+
+Le traitement d'éliminations de consolidation est un processus manuel. Vous pouvez procéder comme suit :
+1. Recherchez des transactions qui doivent peut-être être ajustées et entrez les lignes journal général pour les éliminer.
+2. Exécutez le rapport **Éliminations consolidation GL** pour évaluer l'effet des lignes journal général avant le report.
+3. Reportez les transactions d'ajustement.
+
+Le rapport **Éliminations consolidation GL** affiche une tentative de balance de vérification où vous pouvez simuler les conséquences de l'élimination des écritures en comparant les écritures de la compagnie consolidée avec les éliminations entrées dans le journal général.
+
+Pour qu'une unité fonctionnelle puisse être incluse dans le rapport, elle doit être configurée sur la page **Unités fonctionnelles** et le champ **Consolider** doit être sélectionné.
+
+Chaque compte s'affiche individuellement sur une ligne, selon la structure du plan comptable. Un compte n'est pas affiché si tous les montants de la ligne sont égaux à 0. Les informations suivantes sont données pour chaque compte :
+
+* Numéro de compte
+* Nom du compte.
+* Si vous avez sélectionné un ou plusieurs codes unité fonctionnelle dans le champ **Code unité fonctionnelle** de la page de demande, un total excluant les éliminations et les unités fonctionnelles sélectionnées est affiché pour la compagnie consolidée. Si le champ **Code unité fonctionnelle** n'est pas renseigné, un total excluant les éliminations est affiché pour la compagnie consolidée.
+* Si vous avez sélectionné un code unité fonctionnelle dans le champ **Code unité fonctionnelle** de la page de demande, un total est affiché pour les écritures importées à partir de l'unité fonctionnelle. Si le champ **Code unité fonctionnelle** n'est pas renseigné, un total est affiché pour les éliminations reportées dans la compagnie consolidée.
+* Le total de la compagnie consolidée, avec toutes les unités fonctionnelles et toutes les éliminations reportées.
+* Les éliminations à effectuer dans la compagnie consolidée, c'est-à-dire les écritures du journal général sélectionné sur la page de demande.
+* Le texte de report copié à partir du journal général.
+* Le total de la compagnie consolidée après les éliminations, si elles sont reportées.
+
 
 ## <a name="to-export-and-import-consolidated-data-between-databases"></a>Pour exporter et importer des données consolidées entre des bases de données
 Si les données d'une unité fonctionnelle se trouvent dans une autre base de données, vous devez exporter les données dans un fichier avant de les inclure dans la consolidation. Chaque compagnie doit être exportée séparément. À cette fin, utilisez le traitement par lots **Exporter fichier consolidation**.  
@@ -138,4 +164,3 @@ Les écritures exportées contiennent les champs suivants : **N° compte**, **D
 [Gestion des transactions intersociétés](intercompany-manage.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 [Exportation de vos données métier vers Excel](about-export-data.md)
-

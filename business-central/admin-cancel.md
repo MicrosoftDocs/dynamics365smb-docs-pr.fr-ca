@@ -1,6 +1,6 @@
 ---
 title: Annulation de Business Central | Microsoft Docs
-description: "Décrit comment annuler ou supprimer votre expérience Business Central."
+description: Décrit comment annuler ou supprimer votre expérience Business Central.
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: remove, delete
 ms.date: 10/01/2018
 ms.author: edupont
-ms.translationtype: HT
-ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
 ms.openlocfilehash: 3da4de9eee04f240d88d4128fefe273999f20cfc
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/22/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813863"
 ---
 # <a name="unsubscribe-remove-or-reset-included365finincludesd365finmdmd"></a>Annuler un abonnement, supprimer, ou réinitialiser [!INCLUDE[d365fin](includes/d365fin_md.md)]
 Si vous souhaitez ne plus utiliser [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez fermer votre compte ou faire supprimer la licence de votre compte. La procédure à suivre est différente si vous utilisez actuellement la version d'évaluation gratuite ou si vous disposez d'un abonnement mensuel dans le cadre d'un compte Office 365.  
@@ -32,10 +32,10 @@ Les comptes utilisateur et les licences sont gérés à partir du [portail Offic
 ## <a name="closing-your-free-trial-of-included365finincludesd365finmdmd"></a>Fermeture de votre version d'évaluation gratuite de [!INCLUDE[d365fin](includes/d365fin_md.md)]
 Si vous vous êtes inscrit à la version d'évaluation gratuite et si vous ne souhaitez pas passer à [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez fermer votre compte à tout moment. Nous vous recommandons d'exporter les données avant de fermer votre compte.  
 
-Pour fermer votre compte, actuellement, vous devez contacter l'équipe d'annulation [!INCLUDE[d365fin](includes/d365fin_md.md)] en envoyant un courriel à l'adresse cancelbusinesscentra@microsoft.com. Vous devez inclure votre nom d'abonné [!INCLUDE[d365fin](includes/d365fin_md.md)] dans le message de sorte que nous puissions vous identifier. La méthode la plus facile consiste à copier l'URL de votre page d'accueil [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+Pour fermer votre compte, vous devez pour l'instant contacter l'équipe d'annulation [!INCLUDE[d365fin](includes/d365fin_md.md)] en envoyant un courriel à l'adresse cancelbusinesscentra@microsoft.com. Vous devez inclure votre nom d'abonné [!INCLUDE[d365fin](includes/d365fin_md.md)] dans le message de sorte que nous puissions vous identifier. La méthode la plus facile consiste à copier l'URL de votre page d'accueil [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
 ## <a name="unsubscribing-from-included365finincludesd365finmdmd-without-office-365"></a>Annuler un abonnement à [!INCLUDE[d365fin](includes/d365fin_md.md)] sans Office 365
-Si vous vous êtes abonné à [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide d'un compte Office 365 non professionnel, vous n'avez pas d'administrateur Office 365. Au lieu de cela, vous devez annuler votre abonnement en contactant l'équipe d'annulation [!INCLUDE[d365fin](includes/d365fin_md.md)] en envoyant un courriel à l'adresse cancelbusinesscentra@microsoft.com. Vous devez inclure votre nom d'abonné [!INCLUDE[d365fin](includes/d365fin_md.md)] dans le message de sorte que nous puissions vous identifier. La méthode la plus facile consiste à copier l'URL de votre page d'accueil [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+Si vous vous êtes abonné à [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide d'un compte Office 365 non professionnel, vous n'avez pas d'administrateur Office 365. Au lieu de cela, vous devez annuler votre abonnement en contactant l'équipe d'annulation [!INCLUDE[d365fin](includes/d365fin_md.md)] en lui envoyant un courriel à l'adresse cancelbusinesscentra@microsoft.com. Vous devez inclure votre nom d'abonné [!INCLUDE[d365fin](includes/d365fin_md.md)] dans le message de sorte que nous puissions vous identifier. La méthode la plus facile consiste à copier l'URL de votre page d'accueil [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
 ## <a name="resetting-your-included365finincludesd365finmdmd-experience"></a>Réinitialisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]
 Si vous avez ajouté des données à votre version d'évaluation gratuite de [!INCLUDE[d365fin](includes/d365fin_md.md)] et que vous souhaitez recommencer à zéro, vous pouvez créer une compagnie avant de réinitialiser la première compagnie. Si vous ouvrez la page **Sociétés**, vous pouvez créer une copie de votre société actuelle, vous déconnecter et vous connecter à votre nouvelle société, puis réinitialiser la société d'origine.  
@@ -51,4 +51,3 @@ Si vous souhaitez masquer [!INCLUDE[d365fin](includes/d365fin_md.md)] de votre l
 [Exportation de vos données métier vers Excel](about-export-data.md)  
 [Portail Office](https://portal.office.com)  
 [Combien de temps dure la période d'essai et comment annuler ?](https://community.dynamics.com/business/b/financials/archive/2016/11/28/how-long-is-the-trial-period-and-how-do-i-cancel)  
-

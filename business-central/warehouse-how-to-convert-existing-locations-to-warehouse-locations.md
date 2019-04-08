@@ -1,23 +1,23 @@
 ---
-title: "Comment convertir des emplacements existants en emplacements entrepôt | Microsoft Docs"
-description: "Vous pouvez permettre à un emplacement d'inventaire d'utiliser les zones et de devenir l'entrepôt."
+title: Comment convertir des emplacements existants en emplacements entrepôt | Microsoft Docs
+description: Vous pouvez permettre à un emplacement d'inventaire d'utiliser les zones et de devenir l'entrepôt.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
-ms.date: 10/01/2018
+ms.search.keywords: ''
+ms.date: 03/01/2019
 ms.author: sgroespe
+ms.openlocfilehash: 6f5c798587c832b25ef2ead944fc5f5f8ea89644
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 9dbd92409ba02281f008246194f3ce0c53e4e001
-ms.openlocfilehash: c97e6995a0e27d0eebcadf5b783cd9aa56cb5fde
-ms.contentlocale: fr-ca
-ms.lasthandoff: 09/28/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "814104"
 ---
 # <a name="convert-existing-locations-to-warehouse-locations"></a>Convertir des emplacements existants en entrepôts
 Vous pouvez permettre à un emplacement d'inventaire d'utiliser les zones et de devenir l'entrepôt.  
@@ -32,9 +32,9 @@ Vous pouvez créer des zones et des emplacements avant ou après la conversion. 
 ## <a name="to-enable-an-existing-location-to-operate-as-a-warehouse-location"></a>Activation d'un emplacement existant en tant qu'entrepôt  
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Création emplacement entrepôt**, puis sélectionnez le lien associé.  
 2.  Dans le champ **Code magasin**, indiquez le magasin que vous souhaitez activer pour un traitement d'entrepôt.  
-3.  Dans le champ **Code empl. ajustement**, indiquez à quel emplacement du magasin les écritures entrepôt non synchronisées sont enregistrées. Pour plus d'informations, reportez-vous à la section « Pour synchroniser les écritures entrepôt ajustées avec les écritures article associées » dans [Nombre, ajustement et reclassement de l'inventaire](inventory-how-count-adjust-reclassify.md).  
+3.  Dans le champ **Code de zone d'ajustement**, spécifiez dans quelle zone de l'emplacement les écritures entrepôt non synchronisées sont enregistrées. Pour plus d'informations, voir [Pour synchroniser les écritures entrepôt ajustées avec les écritures article associées](inventory-how-count-adjust-reclassify.md#to-synchronize-the-adjusted-warehouse-entries-with-the-related-item-ledger-entries).  
 
-    À l'aide des écritures article ouvertes de l'emplacement, des lignes journal entrepôt sont créées qui additionnent les combinaisons N° article, Code variante, Code unité de mesure et, si nécessaire, N° lot et N° de série dans les écritures article. Les lignes journal entrepôt sont ensuite reportées. Ce report crée des écritures d'entrepôt qui placent l'inventaire dans la zone d'ajustement entrepôt. Le **code emplacement ajustement** est également défini dans la fiche magasin.  
+    À l'aide des écritures article ouvertes pour l'emplacement spécifié, des lignes journal entrepôt sont créées, lesquelles additionnent les combinaisons N° article, Code variante, Code unité de mesure et, si nécessaire, N° lot et N° de série dans les écritures article. Les lignes journal entrepôt sont ensuite reportées. Ce report crée des écritures d'entrepôt qui placent l'inventaire dans la zone d'ajustement entrepôt. Le **code emplacement ajustement** est également défini dans la fiche magasin.  
 
 4.  Pour savoir quels articles ont été ajoutés à l'emplacement ajustement pendant le traitement par lots, vous pouvez exécuter l'état **Emplacement ajust. mag**.  
 5.  Une fois le traitement par lots **Création entrepôt** terminé, vous devez effectuer et valider un inventaire physique entrepôt. Pour plus d'informations, voir [Nombre, ajustement et reclassement de l'inventaire](inventory-how-count-adjust-reclassify.md).  
@@ -51,4 +51,3 @@ Vous pouvez créer des zones et des emplacements avant ou après la conversion. 
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

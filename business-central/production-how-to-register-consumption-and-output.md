@@ -1,23 +1,23 @@
 ---
 title: Enregistrer la consommation et la production pour un ordre de fabrication | Microsoft Docs
-description: "Cette tâche d'exécution est réalisée sur la page **Journal production** . Le journal combine les fonctions des journaux de sortie et de consommation distincts en un seul journal. Vous accédez directement au journal combiné depuis un bon de production libéré. Son objectif principal est de reporter manuellement la consommation de composantes, la quantité d'articles finis produits et le temps passé dans les opérations."
+description: Cette tâche d'exécution est réalisée sur la page **Journal production** . Le journal combine les fonctions des journaux de sortie et de consommation distincts en un seul journal. Vous accédez directement au journal combiné depuis un bon de production libéré. Son objectif principal est de reporter manuellement la consommation de composantes, la quantité d'articles finis produits et le temps passé dans les opérations.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 673f2800c3c65af3fd50e08b0d042e6812bb29f4
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "814098"
 ---
 # <a name="register-consumption-and-output-for-one-released-production-order-line"></a>Enregistrer la consommation et la production pour une ligne bon de production libéré
 Cette tâche d'exécution est réalisée sur la page **Journal production** . Le journal combine les fonctions des journaux de sortie et de consommation distincts en un seul journal. Vous accédez directement au journal combiné depuis un bon de production libéré. Son objectif principal est de reporter manuellement la consommation de composantes, la quantité d'articles finis produits et le temps passé dans les opérations. Les valeurs sont reportées dans le grand livre sous le bon de production libéré. Les quantités consommées sont reportées comme écritures article négatives, les quantités sorties sont reportées comme écritures positives et les heures passées sont reportées comme écritures du grand livre de capacité. Ces valeurs reportées peuvent également être visualisées au bas du journal sous forme de quantités réelles.  
@@ -73,4 +73,3 @@ S'il reste des valeurs à reporter, le journal les contiendra la prochaine fois 
 [Stock](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

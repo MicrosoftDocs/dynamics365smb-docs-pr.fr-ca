@@ -1,21 +1,21 @@
 ---
-title: "Procédure pas à pas : configuration et facturation de paiements anticipés | Microsoft Docs"
-description: "Les paiements anticipés sont des paiements qui sont facturés et reportés dans une commande paiement anticipé vente ou achat avant la facturation finale. Vous pouvez demander un acompte avant de produire les articles commandés ou demander à ce que le paiement soit effectué avant de livrer les articles à un client. Vous utilisez la fonctionnalité de paiements anticipés dans Business Central pour facturer et collecter les dépôts requis des clients ou régler des dépôts aux fournisseurs. Vous pouvez ainsi vous assurer que tous les paiements sont reportés sur une facture."
+title: 'Procédure pas à pas : configuration et facturation de paiements anticipés | Microsoft Docs'
+description: Les paiements anticipés sont des paiements qui sont facturés et reportés dans une commande paiement anticipé vente ou achat avant la facturation finale. Vous pouvez demander un acompte avant de produire les articles commandés ou demander à ce que le paiement soit effectué avant de livrer les articles à un client. Vous utilisez la fonctionnalité de paiements anticipés dans Business Central pour facturer et collecter les dépôts requis des clients ou régler des dépôts aux fournisseurs. Vous pouvez ainsi vous assurer que tous les paiements sont reportés sur une facture.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 01/31/2019
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: a94c4f2f8d622a91b74ba0de6f0f18e7eb84a5ef
 ms.openlocfilehash: 5fb8201f85fe94ac124e80014a4f3ff5073fbf65
-ms.contentlocale: fr-ca
-ms.lasthandoff: 01/31/2019
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813740"
 ---
 # <a name="walkthrough-setting-up-and-invoicing-sales-prepayments"></a>Procédure pas à pas : configuration et facturation de paiements anticipés vente
 
@@ -219,4 +219,3 @@ La fonctionnalité d'acompte de [!INCLUDE[d365fin](includes/d365fin_md.md)] faci
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)
-

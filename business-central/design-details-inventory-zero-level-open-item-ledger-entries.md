@@ -1,21 +1,21 @@
 ---
-title: "écritures article ouvertes"
-description: "Découvrez pourquoi le niveau d'inventaire est nul alors qu'il existe des écritures article ouvertes."
+title: écritures article ouvertes
+description: Découvrez pourquoi le niveau d'inventaire est nul alors qu'il existe des écritures article ouvertes.
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: edupont
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 0bb558fe24d8c5bc717ef72e8c94ba0154a06a55
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813899"
 ---
 # <a name="design-details-known-item-application-issue"></a>Détails de conception : problème connu lié à l'affectation d'articles
 Cet article traite du problème de niveau d'inventaire nul alors qu'il existe des écritures article ouvertes dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
@@ -151,4 +151,3 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : affectation article](design-details-item-application.md)   
 [Détails de conception : stock évaluation stock](design-details-inventory-costing.md)  
-

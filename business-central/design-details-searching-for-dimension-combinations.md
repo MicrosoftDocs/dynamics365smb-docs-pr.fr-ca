@@ -1,21 +1,21 @@
 ---
-title: "Détails de conception - recherche des combinaisons de dimensions | Microsoft Docs"
-description: "Lorsque vous fermez une page après avoir modifié un ensemble de dimensions, Business Central évalue si l'ensemble de dimensions modifié existe. Si l'ensemble n'existe pas, un nouvel ensemble est créé et le code de combinaisons de dimensions est retourné."
+title: Détails de conception - recherche des combinaisons de dimensions | Microsoft Docs
+description: Lorsque vous fermez une page après avoir modifié un ensemble de dimensions, Business Central évalue si l'ensemble de dimensions modifié existe. Si l'ensemble n'existe pas, un nouvel ensemble est créé et le code de combinaisons de dimensions est retourné.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
-ms.date: 10/01/2018
+ms.search.keywords: ''
+ms.date: 02/11/2019
 ms.author: sgroespe
+ms.openlocfilehash: 499ac8e6e42eeafa12ddee650661200ff876805f
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
-ms.openlocfilehash: 1814d6e34fc2ab2d0c64a26ba85fa19074be4dda
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/22/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813971"
 ---
 # <a name="design-details-searching-for-dimension-combinations"></a>Détails de conception : recherche des combinaisons de dimensions
 Lorsque vous fermez une page après avoir modifié un ensemble de dimensions, [!INCLUDE[d365fin](includes/d365fin_md.md)] évalue si l'ensemble de dimensions modifié existe. Si l'ensemble n'existe pas, un nouvel ensemble est créé et le code de combinaisons de dimensions est retourné.  
@@ -48,7 +48,7 @@ Lorsque vous fermez une page après avoir modifié un ensemble de dimensions, [!
  ![Exemple de structure arborescente des dimensions dans NAV 2013](media/nav2013_dimension_tree_example2.png "Exemple de structure arborescente des dimensions dans NAV 2013")  
 
 ### <a name="finding-dimension-set-id"></a>Recherche du code ensemble de dimensions  
- Au niveau conceptuel, **Code parent**, **Dimension** et **Section analytique**, dans l'arbre de recherche, sont combinés et sont utilisés comme clé primaire, car [!INCLUDE[d365fin](includes/d365fin_md.md)] parcourt l'arborescence dans le même ordre que les écritures analytiques. La fonction GET (enregistrement) est utilisée pour rechercher le code de l'ensemble de dimensions L'exemple de code suivant indique comment trouver le code d'ensemble de dimensions lorsqu'il existe trois valeurs de dimension.  
+ Au niveau conceptuel, **Code parent**, **Dimension** et **Valeur de dimension**, dans l'arborescence de recherche, sont combinés et sont utilisés comme clé primaire, car [!INCLUDE[d365fin](includes/d365fin_md.md)] parcourt l'arborescence dans le même ordre que les écritures dimension. La fonction GET (enregistrement) est utilisée pour rechercher le code de l'ensemble de dimensions L'exemple de code suivant indique comment trouver le code d'ensemble de dimensions lorsqu'il existe trois valeurs de dimension.  
 
 ```  
 DimSet."Parent ID" := 0;  // 'root'  
@@ -60,7 +60,7 @@ EXIT(DimSet.ID);
 
 ```  
 
- Toutefois, pour préserver la capacité de [!INCLUDE[d365fin](includes/d365fin_md.md)] de renommer un axe et une section analytique, la table 348 **Section analytique** est étendue avec un champ d'entier **ID section analytique**. Ce tableau convertit la paire de champs **Axe analytique** et **Section analytique** sur une valeur entière. Lorsque vous renommez la dimension et la valeur de dimension, la valeur d'entier n'est pas modifiée.  
+ Toutefois, pour préserver la capacité de [!INCLUDE[d365fin](includes/d365fin_md.md)] de renommer une dimension et une valeur de dimension, la table 349 **Valeur de dimension** est étendue avec un champ d'entier **Code valeur de dimension**. Ce tableau convertit la paire de champs **Dimension** et **Valeur de dimension** en une valeur d'entier. Lorsque vous renommez la dimension et la valeur de dimension, la valeur d'entier n'est pas modifiée.  
 
 ```  
 DimSet."Parent ID" := 0;  // 'root'  
@@ -79,4 +79,3 @@ EXIT(DimSet.ID);
  [Détails de conception : structure de la table](design-details-table-structure.md)   
  [Détails de conception : Codeunit 408 Gestion des dimensions](design-details-codeunit-408-dimension-management.md)   
  [Détails de conception : exemples de code de motifs modifiés dans les modifications](design-details-code-examples-of-changed-patterns-in-modifications.md)
-

@@ -1,6 +1,6 @@
 ---
-title: "Tarifs et escomptes fournisseur spéciaux et secondaires | Microsoft Docs"
-description: "Vous pouvez définir différentes ententes en termes de prix et d'escomptes et les affecter aux documents achat pour les fournisseurs."
+title: Tarifs et escomptes fournisseur spéciaux et secondaires | Microsoft Docs
+description: Vous pouvez définir différentes ententes en termes de prix et d'escomptes et les affecter aux documents achat pour les fournisseurs.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -8,21 +8,21 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: special price, alternate price, pricing
-ms.date: 10/01/2018
+ms.date: 03/01/2019
 ms.author: sgroespe
+ms.openlocfilehash: ffdb6c4abc4c3a14714c84c8b53798ab8dcee7f2
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 0a718c45256a1e7cc7fbde794491814f1c26dd4a
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813995"
 ---
 # <a name="record-special-purchase-prices-and-discounts"></a>Enregistrer les prix d'achat spéciaux et les escomptes
 Vous devez définir les différentes ententes de prix et d'escompte qui s'appliquent lors d'achats effectués auprès de plusieurs fournisseurs de sorte que les valeurs et règles convenues s'appliquent aux documents achat créés à l'intention des fournisseurs.
 
-Lorsque vous avez enregistré des prix spéciaux et des remises de ligne pour les ventes et les achats, [!INCLUDE[d365fin](includes/d365fin_md.md)] s'assure que votre marge pour l'article est toujours optimale en calculant automatiquement le meilleur prix dans les documents achat et vente, sur le projet et les lignes feuille article. Pour plus d'informations, voir la section « Calcul du meilleur prix ».
+Lorsque vous avez enregistré des prix spéciaux et des escomptes de ligne pour les ventes et les achats, [!INCLUDE[d365fin](includes/d365fin_md.md)] s'assure que votre profit pour l'article est toujours optimal en calculant automatiquement le meilleur prix dans les documents achat et vente, sur les lignes journal article et projet. Pour plus d'informations, voir [Calcul du meilleur prix](purchasing-how-record-purchase-price-discount-payment-agreements.md#best-price-calculation).
 
-En ce qui concerne les prix, un prix d'achat spécial peut être inséré sur les lignes achat s'il existe une certaine combinaison de fournisseur, d'article, de quantité minimum, d'unité de mesure ou de date début/date de fin.
+En ce qui concerne les prix, un prix d'achat spécial peut être inséré sur les lignes achat s'il existe une certaine combinaison de fournisseur, d'article, de quantité minimum, d'unité de mesure ou de date de début/date de fin.
 
 En ce qui concerne les remises, vous pouvez définir et utiliser deux types de remises achat :
 
@@ -125,4 +125,3 @@ Si aucun prix spécial ne peut être calculé pour l'article de la ligne, alors 
 [Définition des achats](purchasing-setup-purchasing.md)  
 [Achats](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

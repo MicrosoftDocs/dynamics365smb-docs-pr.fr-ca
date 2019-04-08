@@ -1,6 +1,6 @@
 ---
-title: "Facturer vos réservations dans Business Central | Microsoft Docs"
-description: "Apprenez comment vous pouvez effectuer des facturations en vrac à partir de Microsoft Bookings dans Business Central."
+title: Facturer vos réservations dans Business Central | Microsoft Docs
+description: Apprenez comment vous pouvez effectuer des facturations en vrac à partir de Microsoft Bookings dans Business Central.
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,14 +10,14 @@ ms.workload: na
 ms.search.keywords: invoicing, bookings
 ms.date: 01/07/2019
 ms.author: edupont
-ms.translationtype: HT
-ms.sourcegitcommit: a98027c3ef3171491f84197897f93cbed4e288c2
 ms.openlocfilehash: 65542f3855eff3a5ed117bff3247adbf05def6e2
-ms.contentlocale: fr-ca
-ms.lasthandoff: 01/07/2019
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813968"
 ---
-# <a name="bulk-invoicing-for-microsoft-bookings-in-included365finincludesd365finmdmd"></a>Facturation en vrac pour les réservations Microsoft dans [!INCLUDE[d365fin](includes/d365fin_md.md)]
+# <a name="bulk-invoicing-for-microsoft-bookings-in-included365finincludesd365finmdmd"></a>Facturation en vrac pour Microsoft Bookings dans [!INCLUDE[d365fin](includes/d365fin_md.md)]
 Si votre compagnie utilise l'application Bookings d'Office 365, vous pouvez effectuer la facturation en vrac des rendez-vous. La page **Réservations non facturées** de [!INCLUDE[d365fin](includes/d365fin_md.md)] fournit une liste des réservations effectuées par la société. Cette page vous permet de rapidement sélectionner les rendez-vous à facturer et de créer des factures provisoires pour les services fournis.  
 
 ## <a name="connect-to-bookings"></a>Connexion à Réservations
@@ -39,8 +39,7 @@ Lorsqu'il est temps d'envoyer les factures pour les réservations terminées, vo
 Le prise en charge de la facturation des rendez-vous dans Réservations est plus simple que le flux de travail plus complet consistant à utiliser des devis, des commandes vente, et des factures vente. Pour plus d'informations, reportez-vous à [Facturer des ventes](sales-how-invoice-sales.md). Vous pouvez choisir de vendre vos services à l'aide de [!INCLUDE[d365fin](includes/d365fin_md.md)] ou d'utiliser Réservations, selon les besoins de votre activité.  
 
 ## <a name="see-also"></a>Voir aussi
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Facturer des ventes](sales-how-invoice-sales.md)  
 [Définition des ventes](sales-setup-sales.md)  
-[Réservations Microsoft](https://products.office.com/en-us/business/scheduling-and-booking-app)  
-
+[Microsoft Bookings](https://products.office.com/en-us/business/scheduling-and-booking-app)  

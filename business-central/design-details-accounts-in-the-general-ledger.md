@@ -1,23 +1,23 @@
 ---
-title: "Détails de conception : comptes du grand livre | Microsoft Docs"
-description: "Pour rapprocher l'inventaire et les écritures du grand livre de capacité dans le grand livre, les écritures valeur associées sont reportées dans différents comptes dans le grand livre."
+title: 'Détails de conception : comptes du grand livre | Microsoft Docs'
+description: Pour rapprocher l'inventaire et les écritures du grand livre de capacité dans le grand livre, les écritures valeur associées sont reportées dans différents comptes dans le grand livre.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
+ms.openlocfilehash: e5ce2fe305d94378b2bef118237917db6bfba5b8
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 40bad9c2772627f70c0e33c8138539e88a76bdbb
-ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813525"
 ---
 # <a name="design-details-accounts-in-the-general-ledger"></a>Détails de conception : comptes du grand livre
 Pour rapprocher l'inventaire et les écritures du grand livre de capacité dans le grand livre, les écritures valeur associées sont reportées dans différents comptes dans le grand livre. Pour plus d'informations, voir [Détails de conception : rapprochement de comptabilité](design-details-reconciliation-with-the-general-ledger.md).  
@@ -102,4 +102,3 @@ Le tableau suivant montre la manière dont les montants à reporter dans le gran
  [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
  [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
-

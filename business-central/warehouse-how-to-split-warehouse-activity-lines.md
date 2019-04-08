@@ -1,23 +1,23 @@
 ---
-title: "Comment répartir des lignes activité entrepôt | Microsoft Docs"
-description: "Dans le cadre de rangements, mouvements ou prélèvements entrepôt et de rangements et prélèvements inventaire, des zones sont proposées pour le prélèvement et le rangement des articles. Il arrive parfois que la quantité réelle disponible dans la zone soit insuffisante ou que l'espace de la zone proposé soit insuffisant pour le rangement de la quantité nécessaire. Dans ces cas, vous devez répartir la ligne de telle sorte que les articles d'une ligne soient prélevés ou placés dans plusieurs zones."
+title: Comment répartir des lignes activité entrepôt | Microsoft Docs
+description: Dans le cadre de rangements, mouvements ou prélèvements entrepôt et de rangements et prélèvements inventaire, des zones sont proposées pour le prélèvement et le rangement des articles. Il arrive parfois que la quantité réelle disponible dans la zone soit insuffisante ou que l'espace de la zone proposé soit insuffisant pour le rangement de la quantité nécessaire. Dans ces cas, vous devez répartir la ligne de telle sorte que les articles d'une ligne soient prélevés ou placés dans plusieurs zones.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
+ms.openlocfilehash: 821d3bed8e90d7221fe343156b46663cdf601dcf
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: dfb633ef874b77a3cf6060311f0bcbbf66e05102
-ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813871"
 ---
 # <a name="split-warehouse-activity-lines"></a>Répartir des lignes activité entrepôt
 Dans le cadre de rangements, mouvements ou prélèvements entrepôt et de rangements et prélèvements inventaire, des zones sont proposées pour le prélèvement et le rangement des articles. Il arrive parfois que la quantité réelle disponible dans la zone soit insuffisante ou que l'espace de la zone proposé soit insuffisant pour le rangement de la quantité nécessaire. Dans ces cas, vous devez répartir la ligne de telle sorte que les articles d'une ligne soient prélevés ou placés dans plusieurs zones.  
@@ -40,4 +40,3 @@ La procédure suivante s'applique aux documents entrepôt, à savoir les lignes 
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

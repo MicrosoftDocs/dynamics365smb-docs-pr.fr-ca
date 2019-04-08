@@ -1,6 +1,6 @@
 ---
 title: Traiter les retours ou annulations de ventes | Microsoft Docs
-description: "Décrit comment créer une note de crédit vente, directement ou par l'intermédiaire d'un retour vente, pour traiter un retour, une annulation ou un remboursement pour les articles ou les services qui vous ont déjà été payés."
+description: Décrit comment créer une note de crédit vente, directement ou par l'intermédiaire d'un retour vente, pour traiter un retour, une annulation ou un remboursement pour les articles ou les services qui vous ont déjà été payés.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -8,22 +8,22 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: undo, credit memo, return
-ms.date: 10/01/2018
+ms.date: 03/01/2019
 ms.author: sgroespe
+ms.openlocfilehash: 46ea7cb3402f65d897cc8519a062ebbf8fb9b383
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 1c1bcb570f06719cfbb8930667a2f2847003d93c
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813505"
 ---
 # <a name="process-sales-returns-or-cancellations"></a>Traiter les retours ou annulations de ventes
 Si votre client souhaite retourner des articles ou obtenir un remboursement pour des articles, ou encore annuler des services, que vous lui avez vendus et pour lesquels vous avez reçu un paiement, vous devez créer et reporter une note de crédit vente qui indique la modification demandée. Pour inclure les informations de facture vente correctes, vous pouvez créer la note de crédit vente à partir de la facture vente reportée ou vous pouvez créer une note de crédit vente avec les informations copiées de la facture.
 
-Si vous souhaitez davantage de contrôle sur le processus de retour vente, par exemple les documents entrepôt pour la manutention des articles ou une meilleure vue d'ensemble lors de la réception d'articles à partir de plusieurs documents vente avec un retour vente, vous pouvez créer des retours vente. Un retour vente émet automatiquement la note de crédit vente associée et les autres documents relatifs au retour, comme un document de vente de remplacement, le cas échéant. Pour plus d'informations, voir la section « Créer un retour vente à partir d'un ou de plusieurs documents vente reportés ».
+Si vous souhaitez davantage de contrôle sur le processus de retour vente, par exemple les documents entrepôt pour la manutention des articles ou une meilleure vue d'ensemble lors de la réception d'articles à partir de plusieurs documents vente avec un retour vente, vous pouvez créer des retours vente. Un retour vente émet automatiquement la note de crédit vente associée et les autres documents relatifs au retour, comme un document de vente de remplacement, le cas échéant. Pour plus d'informations, voir [Pour créer un retour vente à partir d'un ou de plusieurs documents vente reportés](sales-how-process-sales-returns-cancellations.md#to-create-a-sales-return-order-based-on-one-or-more-a-posted-sales-documents).
 
 > [!NOTE]  
->   Si une facture vente validée n'a pas encore été payée, vous pouvez utiliser les fonctions **Corriger** ou **Annuler** sur la facture vente validée pour contrepasser automatiquement les transactions associées. Ces fonctions ne fonctionnent que pour les factures impayées, elles ne prennent pas en charge des retours partiels ou les annulations. Pour plus d'informations, voir [Corriger ou annuler des factures vente impayées](sales-how-correct-cancel-sales-invoice.md).
+>   Si une facture vente reportée n'a pas encore été payée, vous pouvez utiliser les fonctions **Corriger** ou **Annuler** sur la facture vente reportée pour inverser automatiquement les transactions associées. Ces fonctions ne fonctionnent que pour les factures impayées, elles ne prennent pas en charge des retours partiels ou les annulations. Pour plus d'informations, voir [Corriger ou annuler des factures vente impayées](sales-how-correct-cancel-sales-invoice.md).
 
 Un retour ou un remboursement peut en effet se rapporter uniquement à certains des articles ou des services figurant sur la facture vente initiale. Dans ce cas, vous devez modifier les informations des lignes de la note de crédit vente ou du retour vente. Lors du report de la note de crédit vente ou du retour vente, les documents vente affectés par la modification sont inversés et un paiement de remboursement peut être créé pour le client. Pour plus d'informations, reportez-vous à [Effectuer des paiements](payables-make-payments.md).  
 
@@ -40,7 +40,7 @@ Vous pouvez affecter l'inversion de même coût automatiquement de deux façons.
 
 |Fonction.|Description|  
 |------------------|---------------------------------------|  
-|Fonction**Extraire des lignes document reportées à inverser** sur la page **Retour vente**|Copie les lignes d'un ou de plusieurs documents reportés afin de les inverser dans le retour vente. Pour plus d'informations, voir la section « Créer un retour vente, et la note de crédit vente associée, pour une ou plusieurs factures vente reportées ».|  
+|Fonction**Extraire des lignes document reportées à inverser** sur la page **Retour vente**|Copie les lignes d'un ou plusieurs documents reportés afin de les inverser dans le retour vente. Pour plus d'informations, voir [Pour créer un retour vente à partir d'une ou de plusieurs factures vente reportées](sales-how-process-sales-returns-cancellations.md#to-create-a-sales-return-order-based-on-one-or-more-a-posted-sales-documents).|  
 |Fonction**Copier document** des pages **Note de crédit vente** et **Retour vente**|Copie l'en-tête et les lignes d'un document reporté à inverser.<br /><br /> Requiert que la case à cocher **Coût d'inversion exact obligatoire** soit sélectionnée sur la page **Configuration ventes & à recevoir**.|
 
 Pour réaliser manuellement l'inversion exacte, sélectionnez **Écriture article à affecter** sur n'importe quelle ligne de document retour, puis sélectionnez le numéro de l'écriture vente initiale. Cela crée un lien entre la note de crédit vente ou le retour vente et l'écriture vente initiale, et garantit que l'article est évalué en fonction du coût unitaire initial.
@@ -78,9 +78,9 @@ Les documents vente reportés auxquels vous avez affecté la note de crédit son
 6. Sélectionnez le champ **N° document** pour ouvrir la page **Factures vente reportées**, puis sélectionnez la facture vente reportée qui contient les lignes que vous souhaitez inverser.
 7. Activez la case à cocher **Recalculer lignes** si vous souhaitez que les lignes facture vente validées copiées soient mises à jour avec les modifications apportées au prix article et au coût unitaire depuis la validation de la facture.
 8. Cliquez sur le bouton **OK**. Les lignes facture copiées sont insérées dans la note de crédit vente.
-9. Remplissez la note de crédit vente en vous reportant à la section « Pour créer une note de crédit vente à partir d'une facture vente reportée » de cette rubrique.
+9. Remplissez la note de crédit vente en vous reportant à la procédure [Pour créer une note de crédit vente à partir d'une facture vente reportée](sales-how-process-sales-returns-cancellations.md#to-create-a-sales-credit-memo-from-a-posted-sales-invoice).
 
-## <a name="to-create-a-sales-return-order-based-on-one-or-more-a-posted-sales-documents"></a>Pour créer un retour vente à partir d'un ou de plusieurs documents vente reportés
+## <a name="to-create-a-sales-return-order-based-on-one-or-more-posted-sales-documents"></a>Créer un retour vente à partir d'un ou de plusieurs documents vente reportés
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Retours vente**, et sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.  
 3. Renseignez les champs dans le raccourci **Général** selon les besoins.
@@ -220,4 +220,3 @@ Vous pouvez également supprimer chacune des commandes retour vente manuellement
 [Définition des ventes](sales-setup-sales.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

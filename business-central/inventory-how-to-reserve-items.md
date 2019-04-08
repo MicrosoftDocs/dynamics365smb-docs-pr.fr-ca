@@ -1,23 +1,23 @@
 ---
-title: "Procédure : réserver des articles | Microsoft Docs"
-description: "Vous pouvez réserver des articles pour les documents de vente, les bons de commande et les bons de production. Vous pouvez réserver des articles en inventaire ou entrants sur les lignes document ouvertes."
+title: 'Procédure : réserver des articles | Microsoft Docs'
+description: Vous pouvez réserver des articles pour les documents de vente, les bons de commande et les bons de production. Vous pouvez réserver des articles en inventaire ou entrants sur les lignes document ouvertes.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
-ms.date: 10/01/2018
+ms.search.keywords: ''
+ms.date: 03/01/2019
 ms.author: sgroespe
+ms.openlocfilehash: 531489dddc80530b1d2c33a828388a90784db6c0
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: aa7e25f8e1d837dde55ac05812306634c4ac37bf
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813951"
 ---
 # <a name="reserve-items"></a>Réserver des articles
 Vous pouvez réserver des articles pour les documents de vente, les bons de commande, les commandes service, les ordres d'assemblage et les bons de production. Vous pouvez réserver des articles en inventaire ou entrants sur les lignes document ou journal ouvertes. Vous effectuez le travail sur la page **Réservation**.
@@ -38,9 +38,9 @@ Ce qui suit décrit comment réserver des articles pour un document de vente. Le
     |**Annuler la réservation de la ligne courante**|Permet d'annuler la réservation d'articles sur la ligne du document que vous avez sélectionnée.|
 
 > [!NOTE]  
->  Si des lignes traçabilité article existent pour le document de vente, le système de réservation vous fera suivre une procédure spéciale : Pour plus d'informations à ce sujet, consultez la rubrique « Pour réserver un numéro de série ou de lot particulier ».  
+>  Si des lignes traçabilité article existent pour le document de vente, le système de réservation vous fera suivre une procédure spéciale : Pour plus d'informations, voir [Pour réserver un numéro de série ou de lot particulier](inventory-how-to-reserve-items.md#to-reserve-a-specific-serial-or-lot-number).  
 
-## <a name="to-reserve-an-item-for-a-production-order-line"></a>Pour réserver un article pour une ligne bon de production  
+## <a name="to-reserve-an-item-for-a-production-order-line"></a>Pour réserver un article pour une ligne O.F.  
 Vous pouvez réserver des articles pour des ordres de fabrication. Vous devez distinguer les lignes bon de production, correspondant à l'article parent, et les composantes bon de production.
 
 La procédure suivante se base sur un bon de production planifié ferme.   
@@ -101,4 +101,3 @@ La procédure suivante se base sur un document de vente.
 [Détails de conception : traçabilité et réservations](design-details-item-tracking-and-reservations.md)  
 [Utiliser les numéros de lot et de série](inventory-how-work-item-tracking.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

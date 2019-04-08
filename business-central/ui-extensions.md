@@ -1,7 +1,7 @@
 ---
 title: Installation d'extensions pour personnaliser Business Central | Microsoft Docs
-description: "En savoir plus sur l'ajout des fonctionnalités et la personnalisation de Business Central en installant des extensions."
-documentationcenter: 
+description: En savoir plus sur l'ajout des fonctionnalités et la personnalisation de Business Central en installant des extensions.
+documentationcenter: ''
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: app, add-in, manifest, customize
 ms.date: 11/27/2018
 ms.author: edupont
+ms.openlocfilehash: f093a9ce2a654d5ee693ee91f32e87f6546279d1
+ms.sourcegitcommit: d09f5ee0e164c7716f4ccb2ed71e2f9732a1f4f9
 ms.translationtype: HT
-ms.sourcegitcommit: add32e82465610830b68a979e238103bfa10d438
-ms.openlocfilehash: 8b68012cc6032d14071ec0eb30c0efaf947344a0
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/29/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "852457"
 ---
 # <a name="customizing-business-central-using-extensions"></a>Personnalisation de Business Central à l'aide d'extensions
 Vous pouvez modifier [!INCLUDE[d365fin](includes/d365fin_md.md)] en installant des extensions qui ajoutent des fonctionnalités, modifient le comportement de l'application, ou vous permettent d'accéder à de nouveaux services en ligne, par exemple.
@@ -33,7 +33,7 @@ La page **Gestion des extensions** vous permet de gérer les extensions. Vous po
 ## <a name="installing-an-extension"></a>Installation d'une extension
 Vous pouvez obtenir de nouvelles extensions depuis le marché à l'adresse [AppSource.microsoft.com](https://appsource.microsoft.com/en-us/marketplace/apps?src=dynamics365website&product=dynamics-365-business-central). Ici, vous trouverez toutes les extensions disponibles pour [!INCLUDE[d365fin](includes/d365fin_md.md)], et vous pourrez obtenir des applications, des extensions et des packs de contenu pour d'autres produits Microsoft. Définissez les filtres appropriés, observez les informations pour chaque extension et obtenez une extension pour votre [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 > [!NOTE]  
->   Connectez-vous au site [AppSource.microsoft.com](https://appsource.microsoft.com/) à l'aide du compte de messagerie électronique que vous utilisez pour [!INCLUDE[d365fin](includes/d365fin_md.md)]. Utilisez le même compte de messagerie électronique pour d'autres services et produits pour une expérience agréable.  
+>   Connectez-vous au site [AppSource.microsoft.com](https://appsource.microsoft.com/) à l'aide du compte de messagerie que vous utilisez pour [!INCLUDE[d365fin](includes/d365fin_md.md)]. Utilisez le même compte de messagerie pour d'autres services et produits pour une expérience agréable.  
 
 Vous pouvez également accéder au marché à partir de [!INCLUDE[d365fin](includes/d365fin_md.md)]. Sur la page **Gestion des extensions**, vous pouvez voir les extensions actuellement installées, et vous pouvez ouvrir la page **Marché des extensions** qui affiche les extensions [!INCLUDE[d365fin](includes/d365fin_md.md)] actuellement disponibles dans AppSource. Si vous optez pour le lien *Plus d'applications*, vous êtes dirigé vers le site [AppSource.microsoft.com](https://appsource.microsoft.com/en-us/marketplace/apps?product=dynamics-365%3Bdynamics-365-for-financials&page=1).  
 
@@ -53,12 +53,12 @@ Microsoft fournit les extensions suivantes :
 * [Microsoft Pay](ui-extensions-microsoft-pay-payments.md)  
 * [PayPal Payments Standard](ui-extensions-paypal-payments-standard.md)  
 * [Extension QuickBooks Data Migration](ui-extensions-quickbooks-data-migration.md)  
-* [Prévision des ventes et de l'inventaire](ui-extensions-sales-forecast.md)  
+* [Prévision de l'inventaire et des ventes](ui-extensions-sales-forecast.md)  
 * [Extension Ceridian Payroll](ui-extensions-ceridian-payroll.md)  
 * [Extension Importer le fichier de paie de Quickbooks](ui-extensions-quickbooks-payroll.md)  
-* [Extension WorldPay Payments Standard](ui-extensions-worldpay-payments-standard.md)  
+* [WorldPay Payments Standard](ui-extensions-worldpay-payments-standard.md)  
 * [Extension GetAddress.io UK Postcodes](ui-extensions-getaddressio.md)  
-* [Extension QuickBooks Online Data Migration](ui-extensions-quickbooks-online-data-migration.md)  
+* [Migration des données QuickBooks Online](ui-extensions-quickbooks-online-data-migration.md)  
 * [Portail Comptable](ui-extensions-accountant-portal.md)  
 * [Analyseur Image](ui-extensions-image-analyzer.md)  
 * [Paiements et rapprochements (DK)](ui-extensions-payments-reconciliation-formats-dk.md)  
@@ -71,6 +71,7 @@ Microsoft fournit les extensions suivantes :
 
 ## <a name="see-also"></a>Voir aussi
 [Extension de Dynamics 365 Business Central](about-develop-extensions.md)  
+[Extensions Business Central par d'autres fournisseurs](ui-extensions-other.md)  
 [Configurer le service de flux de la Envestnet Yodlee Bank](bank-how-setup-bank-statement-service.md)  
 [Activer les paiements client via Paypal](sales-how-enable-payment-service-extensions.md)  
 [Migration des données métier à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  
@@ -79,4 +80,3 @@ Microsoft fournit les extensions suivantes :
 [Mise en route](product-get-started.md)  
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
-

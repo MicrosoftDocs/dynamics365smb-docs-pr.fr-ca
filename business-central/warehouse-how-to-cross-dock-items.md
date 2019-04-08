@@ -1,23 +1,23 @@
 ---
 title: Comment transborder des articles | Microsoft Docs
-description: "La fonctionnalité de transbordement est disponible si l'emplacement est configuré pour appeler un traitement des réceptions et des rangements entrepôt."
+description: La fonctionnalité de transbordement est disponible si l'emplacement est configuré pour appeler un traitement des réceptions et des rangements entrepôt.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 8cf67f83434f135226eaa677cd64d86090a0ab0f
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813495"
 ---
 # <a name="cross-dock-items"></a>Transborder des articles
 La fonctionnalité de transbordement est disponible si l'emplacement est configuré pour appeler un traitement des réceptions et des rangements entrepôt.  
@@ -62,7 +62,7 @@ Le programme ne crée pas d'enregistrement distinct concernant les articles tran
 2.  Créer des réceptions entrepôt pour un article qui est arrivé et qui pourrait nécessiter un transbordement. Pour plus d'informations, voir [Réceptionner des articles](warehouse-how-receive-items.md).  
 3.  Renseignez le champ **Qté à recevoir**, puis choisissez l'action **Calculer transbordement**.  
 
-    Les documents sources sortants demandant les articles programmés pour quitter l'entrepôt durant la période indiquée par la formule date sont identifiés.  [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule les quantités pour que vous puissiez effectuer un maximum de transbordements pour éviter de ranger des articles, sans entasser trop d'articles dans la zone de transbordement. La valeur du champ **Qté à transborder** est ainsi la plus petite de ces deux valeurs : la somme de toutes les lignes sortantes demandant l'article avant la fin de la période de prévision des transbordements, moins la quantité d'articles déjà placés dans la zone de transbordement ou la valeur du champ **Qté à recevoir** de la ligne réception. Vous ne pouvez pas transborder plus d'articles que vous en avez reçus.  
+    Les documents sources sortants demandant les articles programmés pour quitter l'entrepôt durant la période indiquée par la formule date sont identifiés.  [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule les quantités pour que vous puissiez effectuer un maximum de transbordements pour éviter de ranger des articles, sans entasser trop d'articles dans la zone de transbordement. La valeur du champ **Qté à transborder** est ainsi la plus petite de ces deux valeurs : la somme de toutes les lignes sortantes demandant l'article avant la fin de la période de prévision des transbordements, moins la quantité d'articles déjà placés dans la zone de transbordement ou la valeur du champ **Qté à recevoir** de la ligne réception. (Vous ne pouvez pas transborder plus d'articles que vous en avez reçus.  
 
 4.  Pour transborder la quantité en suivant la procédure indiquée, reportez la réception. Vous pouvez aussi décider de modifier la quantité à transborder pour augmenter ou réduire sa valeur, puis reporter la réception.  
 
@@ -107,4 +107,3 @@ Si vous n'utilisez pas de zones, n'oubliez pas de vérifier, de temps en temps, 
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
-

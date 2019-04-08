@@ -1,23 +1,23 @@
 ---
-title: "Procédure pas à pas : planification automatique des approvisionnements | Microsoft Docs"
-description: "Les expressions comme « exécution de la planification » et « exécution MRP » se rapportent au calcul du programme directeur de production (PDP) et de la planification des besoins de matières (MRP) en fonction de la demande réelle et projetée."
+title: 'Procédure pas à pas : planification automatique des approvisionnements | Microsoft Docs'
+description: Les expressions comme « exécution de la planification » et « exécution MRP » se rapportent au calcul du programme directeur de production (PDP) et de la planification des besoins de matières (MRP) en fonction de la demande réelle et projetée.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 01/31/2019
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: a94c4f2f8d622a91b74ba0de6f0f18e7eb84a5ef
 ms.openlocfilehash: c4239904c17db334cee006d5de08ea8c0e80b750
-ms.contentlocale: fr-ca
-ms.lasthandoff: 01/31/2019
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "814150"
 ---
 # <a name="walkthrough-planning-supplies-automatically"></a>Procédure pas à pas : planification automatique des approvisionnements
 
@@ -33,7 +33,7 @@ Les expressions comme « exécution de la planification » et « exécution MR
  Le résultat de la planification est obtenu en partie grâce aux ensembles d'offre et de demande de la base de données et en partie grâce à la configuration des fiches unité de stock ou des fiches article, des nomenclatures de production et des itinéraires.  
 
 ## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas  
- Cette procédure pas à pas démontre comment utiliser le système de planification de l'approvisionnement pour planifier automatiquement tous les bons de production et toutes les bons de commande nécessaires à la production de 15 vélos de cyclotourisme figurant sur différentes documents de vente. Pour que cette procédure soit claire et réaliste, le nombre de lignes planification a été délimité en filtrant tous les autres ensembles d'offre et de demande de la compagnie fictive CRONUS International Ltd., à l'exception de la demande de vente pour l'emplacement BLUE.  
+ Cette procédure pas à pas démontre comment utiliser le système de planification de l'approvisionnement pour planifier automatiquement tous les bons de production et toutes les bons de commande nécessaires à la production de 15 vélos de cyclotourisme figurant sur différentes documents de vente. Pour que cette procédure soit claire et réaliste, le nombre de lignes planification a été délimité en filtrant tous les autres ensembles d'offre et de demande de la compagnie de démonstration CRONUS International Ltd., à l'exception de la demande de vente pour l'emplacement BLUE.  
 
  Cette procédure pas à pas présente les tâches suivantes :  
 
@@ -50,7 +50,7 @@ Les expressions comme « exécution de la planification » et « exécution MR
 ## <a name="prerequisites"></a>Conditions préalables  
  Pour exécuter ce processus pas à pas, vous devez :  
 
--   Utilisez la compagnie de démonstration CRONUS International Ltd.  
+-   La compagnie de démonstration CRONUS International Ltd.  
 -   Pour modifier plusieurs valeurs de configuration des articles, suivez les instructions de la section « Préparation d'exemples de données », dans la suite de cette procédure.  
 
 ## <a name="story"></a>Scénario  
@@ -269,4 +269,3 @@ Les expressions comme « exécution de la planification » et « exécution MR
  [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)   
  [Procédure pas à pas : planification manuelle des approvisionnements](walkthrough-planning-supplies-manually.md)   
  [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)
-

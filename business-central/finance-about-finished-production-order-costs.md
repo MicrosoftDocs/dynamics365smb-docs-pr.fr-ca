@@ -1,18 +1,18 @@
 ---
-title: "À propos des coûts des O.F. terminés | Microsoft Docs"
-description: "L'achèvement du bon de production est une tâche importante dans l'évaluation du cycle de vie de l'article en cours de production. Les coûts finaux, notamment les écarts dans un environnement de coût standard, les valeurs réelles dans un environnement de coût FIFO, moyen ou LIFO, sont calculés à l'aide du traitement en lot Ajuster coûts - Écr. article."
+title: À propos des coûts des O.F. terminés | Microsoft Docs
+description: L'achèvement du bon de production est une tâche importante dans l'évaluation du cycle de vie de l'article en cours de production. Les coûts finaux, notamment les écarts dans un environnement de coût standard, les valeurs réelles dans un environnement de coût FIFO, moyen ou LIFO, sont calculés à l'aide du traitement en lot Ajuster coûts - Écr. article.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 67400e424305cc705db5c1bd52a8e4de17ecc5a9
 ms.openlocfilehash: 39a5a63141f298de17b0e1ea100f72d956ca8fe3
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/20/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "814167"
 ---
 # <a name="about-finished-production-order-costs"></a>À propos des coûts des bons de production achevés
 L'achèvement du bon de production est une tâche importante dans l'évaluation du cycle de vie de l'article en cours de production. Les coûts finaux, notamment les écarts dans un environnement de coût standard, les valeurs réelles dans un environnement de coût FIFO, Moyenne ou LIFO, sont calculés à l'aide du traitement en lot **Ajuster coûts - Écr. article** qui permet d'opérer un rapprochement financier des coûts de production d'un article. Pour qu'un ordre de fabrication soit pris en considération pour un ajustement de coût, son statut doit être **Produit fini**. Il est donc essentiel qu'au moment de son achèvement, le statut d'un ordre de fabrication soit modifié en **Produit fini**.  
@@ -24,4 +24,3 @@ L'achèvement du bon de production est une tâche importante dans l'évaluation 
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Production](production-manage-manufacturing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

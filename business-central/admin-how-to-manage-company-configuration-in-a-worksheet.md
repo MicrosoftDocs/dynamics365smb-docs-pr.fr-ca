@@ -1,30 +1,30 @@
 ---
-title: "Procédure de gestion de la configuration de la compagnie dans une feuille | Microsoft Docs"
-description: "La feuille configuration est l’emplacement principal dans lequel vous pouvez planifier, suivre et effectuer votre travail de configuration. Vous pouvez créer une feuille pour chaque compagnie avec laquelle vous travaillez ou créer une feuille configuration standard qui peut être utilisée pour configurer plusieurs compagnies identiques."
+title: Procédure de gestion de la configuration de la compagnie dans une feuille | Microsoft Docs
+description: La feuille configuration est l’emplacement principal dans lequel vous pouvez planifier, suivre et effectuer votre travail de configuration. Vous pouvez créer une feuille pour chaque compagnie avec laquelle vous travaillez ou créer une feuille configuration standard qui peut être utilisée pour configurer plusieurs compagnies identiques.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 12/07/2018
 ms.author: sgroespe
+ms.openlocfilehash: bd228a418db3b3ee0b3094a0da520dea6139281c
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 8a73de1aa2f4a0f633c401ea341bb7bde6579723
-ms.openlocfilehash: 1ba27ee0ac252bbe1fd47b900654980df5b18fdf
-ms.contentlocale: fr-ca
-ms.lasthandoff: 12/11/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813859"
 ---
 # <a name="manage-company-configuration-in-a-worksheet"></a>Gérer la configuration de la compagnie dans une feuille
 La feuille configuration est l’emplacement principal dans lequel vous pouvez planifier, suivre et effectuer votre travail de configuration. Vous pouvez créer une feuille pour chaque compagnie avec laquelle vous travaillez ou créer une feuille configuration standard qui peut être utilisée pour configurer plusieurs compagnies identiques.  
 
 La première étape de la préparation d’un package de configuration est de sélectionner une compagnie que vous avez déjà configurée et modifiée pour l’adapter à la plupart des besoins de votre solution. Cette compagnie sert de base à votre travail de configuration pour les nouvelles compagnies. Dans la feuille, vous indiquez les tables que vous souhaitez que votre configuration contrôle et traite. Étant donné que la plupart des tables de [!INCLUDE[d365fin](includes/d365fin_md.md)] ont des relations et des dépendances avec d’autres tables, vous devez également inclure ces tables liées en cas de besoin. Ensemble, ces tables serviront ensuite de structure à partir de laquelle vous établirez une nouvelle compagnie. La procédure suivante vous permet de créer un colis, puis de déployer votre configuration.  
 
-Pour vous aider à suivre et à consulter votre travail, utilisez le récapitulatif **Table package config.** pour visualiser les informations sur les enregistrements. Utilisez le récapitulatif **Config. Related Tables** pour contrôler les relations de table.  
+Pour vous aider à suivre et à consulter votre travail, utilisez le récapitulatif **Table package config.** pour visualiser les informations sur les enregistrements. Utilisez le récapitulatif **Tables de config. associées** pour contrôler les relations de table.  
 
 Les procédures suivantes expliquent comment ajouter et personnaliser les informations de table pour votre configuration.  
 
@@ -74,7 +74,7 @@ Les procédures suivantes expliquent comment ajouter et personnaliser les inform
     > Exemple : si vous obtenez des tables liées pour la table **Client**, la table **Emplacement** n'est pas ajoutée, car elle est uniquement liée conditionnellement à la table **Client**, à savoir si le champ **Code d'emplacement** dans la table **Client** est renseigné.  
     > - La table liée est filtrée.  
     > Exemple : un champ dans la table liée a une clause WHERE. La raison en est que les informations des relations associées sont stockées dans la table virtuelle **Champ** et ne sont pas disponibles sur des pages telles que la feuille de configuration, pour des raisons de performances.  
-    > Vous devez ajouter des tables associées avec ces relations complexes manuellement en suivant l'étape 4 dans la section « Pour ajouter une table à la feuille ».
+    > Vous devez ajouter des tables associées avec ces relations complexes manuellement en suivant l'étape 4 dans [Pour ajouter une table à la feuille](admin-how-to-manage-company-configuration-in-a-worksheet.md#to-add-a-table-to-the-worksheet).
 
 7. Pour supprimer des tables dans la liste des tables résultantes, sélectionnez une table à supprimer, puis sélectionnez l'action **Supprimer**.  
 
@@ -128,4 +128,3 @@ Lors de la création d’un colis configuration pour une solution, vous pouvez c
 [Configurer une société](admin-set-up-company-configuration.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)
-
