@@ -1,1 +1,1 @@
-<span data-ttu-id="2adc6-101">Démarrer une [évaluation gratuite](https://go.microsoft.com/fwlink/?linkid=847861)</span><span class="sxs-lookup"><span data-stu-id="2adc6-101">Start a [free trial!](https://go.microsoft.com/fwlink/?linkid=847861)</span></span>
+<span data-ttu-id="6dcc5-101">Démarrer une [évaluation gratuite](https://go.microsoft.com/fwlink/?linkid=847861)</span><span class="sxs-lookup"><span data-stu-id="6dcc5-101">Start a [free trial!](https://go.microsoft.com/fwlink/?linkid=847861)</span></span>
