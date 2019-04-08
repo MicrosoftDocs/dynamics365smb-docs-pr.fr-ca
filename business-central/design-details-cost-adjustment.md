@@ -1,21 +1,21 @@
 ---
-title: "Détails de conception - Ajustement des coûts | Microsoft Docs"
-description: "L'objet principal de l'ajustement des coûts est de transférer les changements depuis les sources de coût aux destinataires de coût, selon le mode d'évaluation coût d'un article, pour fournir une évaluation de l'inventaire correcte."
+title: Détails de conception - Ajustement des coûts | Microsoft Docs
+description: L'objet principal de l'ajustement des coûts est de transférer les changements depuis les sources de coût aux destinataires de coût, selon le mode d'évaluation coût d'un article, pour fournir une évaluation de l'inventaire correcte.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: ace9e09a1f57310e93bb86422c492383690bc04b
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813184"
 ---
 # <a name="design-details-cost-adjustment"></a>Détails de conception : ajustement des coûts
 L'objet principal de l'ajustement des coûts est de transférer les changements depuis les sources de coût aux destinataires de coût, selon le mode d'évaluation coût d'un article, pour fournir une évaluation de l'inventaire correcte.  
@@ -179,4 +179,3 @@ Si vous avez configuré l'ajustement automatique des coûts pour l'affecter aux 
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
-

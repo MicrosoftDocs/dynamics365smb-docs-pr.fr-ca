@@ -1,6 +1,6 @@
 ---
 title: Utilisation de l'extension QuickBooks Data Migration | Microsoft Docs
-description: "Décrit comment utiliser l'extension pour migrer des clients, des fournisseurs, des articles, et des comptes de QuickBooks Online à Business Central."
+description: Décrit comment utiliser l'extension pour migrer des clients, des fournisseurs, des articles, et des comptes de QuickBooks Online dans Business Central.
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,19 +10,18 @@ ms.workload: na
 ms. search.keywords: extension, migrate, data, QuickBooks, import
 ms.date: 10/01/2018
 ms.author: bholtorf
-ms.translationtype: HT
-ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
 ms.openlocfilehash: e158f1e92bdf7ebeab0eb4d538d2a141a590b7cd
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/22/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813108"
 ---
-
-# <a name="the-quickbooks-online-data-migration-extension"></a>L'extension de migration de données QuickBooks Online
-Cette extension est incluse dans le guide d'installation facilité **Migration des données** pour vous aider à migrer les données métier pertinentes de QuickBooks Online vers [!INCLUDE[d365fin](includes/d365fin_md.md)]. Par exemple, c'est utile si votre activité se développe, et que vous avez décidé de mettre à niveau votre application de gestion d'entreprise en commençant à utiliser [!INCLUDE[d365fin](includes/d365fin_md.md)].
+# <a name="the-quickbooks-online-data-migration-extension"></a>Extension de migration des données QuickBooks Online
+Cette extension est incluse dans le guide de configuration assistée **Migration des données** pour vous aider à migrer les données métier pertinentes de QuickBooks Online vers [!INCLUDE[d365fin](includes/d365fin_md.md)]. Par exemple, c'est utile si votre activité se développe, et que vous avez décidé de mettre à niveau votre application de gestion d'entreprise en commençant à utiliser [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
 ## <a name="what-data-can-i-import-from-quickbooks-online"></a>Quelles données puis-je importer de QuickBooks Online ?
-Vous pouvez importer les données suivantes de QuickBooks Online vers [!INCLUDE[d365fin](includes/d365fin_md.md)]:  
+Vous pouvez importer les données suivantes de QuickBooks Online vers [!INCLUDE[d365fin](includes/d365fin_md.md)] :  
 
 * Clients
 * Fournisseurs
@@ -46,7 +45,7 @@ Une grande partie du processus de migration consiste à spécifier les comptes v
 
 [!INCLUDE[d365fin](includes/d365fin_md.md)] nécessite que les comptes généraux aient des numéros de compte. S'assurer que les numéros de compte sont affectés aux comptes dans QuickBooks Online.
 
-Si les transactions de QuickBooks Online ont des montants de taxe, vous devez créer un compte taxes pour vos administrations fiscales dans [!INCLUDE[d365fin](includes/d365fin_md.md)] avant de pouvoir valider des transactions.
+Si les transactions de QuickBooks Online ont des montants de taxe, vous devez créer un compte taxes pour vos juridictions fiscales dans [!INCLUDE[d365fin](includes/d365fin_md.md)] avant de pouvoir reporter des transactions.
 
 ## <a name="how-do-i-start-using-the-extension"></a>Comment commencer à utiliser à l'extension ?
 La mise en route est simple. Il vous suffit d'exécuter le guide d'installation assistée **Migration des données**. Voici comment :
@@ -59,11 +58,10 @@ Après avoir effectué une migration des données, les transactions ont le statu
 
 Il existe quelques éléments en particulier que vous devez effectuer :
 
-* Si les transactions dans QuickBooks Online avaient des montants de majoration ou remise, vous devez ajouter manuellement les montants aux transactions associées dans [!INCLUDE[d365fin](includes/d365fin_md.md)] avant de les valider.
+* Si les transactions dans QuickBooks Online avaient des montants de majoration ou d'escompte, vous devez ajouter manuellement les montants aux transactions associées dans [!INCLUDE[d365fin](includes/d365fin_md.md)] avant de les reporter.
 * Si vous utilisez la taxe sur la valeur ajoutée (TVA), vous devez ajouter un groupe de report marché et un groupe de report produit à la configuration du report de manière à pouvoir reporter les montants TVA.
 * Vérifiez les soldes de début des comptes du grand livre. QuickBooks Online ne stocke pas le solde actuel de tous les comptes, vous pouvez être amené à corriger les soldes d'ouverture.
 
 ## <a name="see-also"></a>Voir aussi
 [Importation des données métier à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  
 [Personnalisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide des extensions](ui-extensions.md)  
-

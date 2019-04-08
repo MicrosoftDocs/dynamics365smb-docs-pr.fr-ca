@@ -1,23 +1,23 @@
 ---
-title: "État commande service et état réparation | Microsoft Docs"
-description: "Le champ État de la page Commande service et l'état de réparation de l'article de service, qui est représenté par le champ Code d'état de réparation sur la page Commande service ont une certaine relation dans le module Service management. L'état commande service reflète l'état réparation de tous les articles de service de la commande service."
+title: État commande service et état réparation | Microsoft Docs
+description: Le champ État de la page Commande service et l'état de réparation de l'article de service, qui est représenté par le champ Code d'état de réparation sur la page Commande service ont une certaine relation dans le module Service management. L'état commande service reflète l'état réparation de tous les articles de service de la commande service.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: a7ef1f214bda9c78113b320ddbd331b5a3e7de33
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813134"
 ---
 # <a name="service-order-status-and-repair-status"></a>État commande service et état réparation
 Le champ **État** de la page **Commande service** et l'état de réparation de l'article de service, qui est représenté par le champ **Code d'état de réparation** sur la page **Commande service** ont une certaine relation dans le module Service management. L'état commande service reflète l'état réparation de tous les articles de service de la commande service.  
@@ -65,4 +65,3 @@ Par exemple, si un article de service présente l'état réparation **Initial** 
 ## <a name="see-also"></a>Voir aussi  
 [Configurer les états des commandes service et des réparations](service-order-repair-status.md)  
 [Paramétrage de la gestion des services](service-setup-service.md)  
-

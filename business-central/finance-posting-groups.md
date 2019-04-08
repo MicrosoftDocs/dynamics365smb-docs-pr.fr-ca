@@ -1,8 +1,8 @@
 ---
 title: Configuration du groupe de report| Microsoft Docs
-description: "Aperçu des groupes de report que vous pouvez utiliser pour gagner du temps et éviter des erreurs lorsque vous reportez des transactions."
+description: Aperçu des groupes de report que vous pouvez utiliser pour gagner du temps et éviter des erreurs lorsque vous reportez des transactions.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: posting setup, initialize
-ms.date: 10/01/2018
+ms.date: 03/05/2019
 ms.author: bholtorf
+ms.openlocfilehash: d62742e7dbee8a4f050d95444b66fa06521b707b
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 732b69df44681d3cc63391bc87c0645ed7e5e1a5
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813079"
 ---
 # <a name="setting-up-posting-groups"></a>Configuration de groupes comptabilisation
 Les groupes comptabilisation mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes généraux. Ils vous font gagner du temps et permettent d'éviter des erreurs lorsque vous reportez des transactions. Les valeurs de transaction vont dans les comptes spécifiés dans le groupe de report pour cette entité particulière. Il vous suffit seulement d'avoir un plan comptable. Pour plus d'informations, reportez-vous à [Configuration du plan comptable](finance-setup-chart-accounts.md).  
@@ -38,9 +38,9 @@ Les tables suivantes décrivent les groupes comptabilisation dans chaque catégo
 
 | Groupes comptabilisation spécifiques | Description |
 | --- | --- |
-| Groupes de report du client |Définissez les comptes à utiliser lorsque vous reportez des transactions Comptabilité client. Si vous utilisez un inventaire conjointement avec des clients, le groupe de report marché affecté au client et le groupe de report produit affecté à l'article dans l'inventaire déterminent les comptes sur lesquels les écritures lignes document de vente effectuent le report. Définissez cela sur la page **Groupes de report du client**. |
+| Groupes de report du client |Définissez les comptes à utiliser lorsque vous reportez des transactions Comptabilité client. Si vous utilisez un inventaire conjointement avec des clients, le groupe de report marché affecté au client et le groupe de report produit affecté à l'article dans l'inventaire déterminent les comptes sur lesquels les lignes document de vente sont reportées. Voir « Groupe de report marché » et « Groupe de report produit » sous **Groupes de report généraux** ci-dessus. Définissez cela sur la page **Groupes de report du client**. |
 | Groupes de report du fournisseur |Définissez où reporter les transactions des comptes fournisseur, des comptes frais forfaitaires, et des comptes d'escompte de paiement. Cela est similaire aux groupes comptabilisation client. Définissez cela sur la page **Groupes de report du fournisseur**. |
-| Groupes de report inventaire |Définissez les comptes inventaire de bilan. Ils offrent également un bon moyen d'organiser votre inventaire, vous pouvez ainsi séparer des articles par groupe de report lors de la génération de rapports. Définissez cela sur la page **Groupes report inventaire**. |
+| Groupes de report inventaire |Définissez des groupes de report inventaire que vous devez ensuite affecter aux comptes article appropriés sur la page **Configuration report inventaire**. Ainsi, lorsque vous reportez des écritures concernant un article, le système effectue le report sur le compte du grand livre qui est configuré pour la combinaison groupe de report inventaire/emplacement liée à l'article. Des groupes de report inventaire constituent également un moyen idéal d'organiser votre inventaire. Ainsi, vous pouvez séparer des articles par groupe de report lors de la génération de rapports. Définissez cela sur la page **Groupes report inventaire**. |
 | Groupes de report compte bancaire |Définissez des comptes bancaires. Par exemple, cela peut simplifier les processus de traçabilité des transactions et des rapprochements bancaires. Définissez cela sur la page **Groupes de report compte bancaire**. |
 | Groupes comptabilisation immobilisations |Définissez des comptes pour les différents types de dépenses et frais, tels que les coûts d'acquisition, les montants d'amortissement cumulés, les coûts d'acquisition sur cession, l'amortissement cumulé sur cession, les gains sur cession, les pertes sur cession, les frais d'entretien et les frais d'amortissement. Définissez cela sur la page **Groupes de reports d'immobilisation**. |
 
@@ -79,4 +79,3 @@ Plus il y a de groupes de report produit et marché, plus la page Configuration 
 [Les écritures comptables et le plan comptable](finance-general-ledger.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

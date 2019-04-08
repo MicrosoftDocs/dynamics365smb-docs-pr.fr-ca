@@ -1,8 +1,8 @@
 ---
-title: "Détails de conception - rapprochement avec le grand livre | Microsoft Docs"
-description: "Cette rubrique décrit le rapprochement avec le grand livre lorsque vous reportez des transactions inventaire, telles que des livraisons vente, des sorties de production ou des ajustements négatifs."
+title: Détails de conception - rapprochement avec le grand livre | Microsoft Docs
+description: Cette rubrique décrit le rapprochement avec le grand livre lorsque vous reportez des transactions inventaire, telles que des livraisons vente, des sorties de production ou des ajustements négatifs.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: design, reconciliation, general ledger, inventory
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 9655a65fe6a5e6f90ba2c0f1a00c6c8f2cc977ad
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813245"
 ---
 # <a name="design-details-reconciliation-with-the-general-ledger"></a>Détails de conception : rapprochement de GL
 Lorsque vous reportez des mouvements d'inventaire, tels que des livraisons vente, des productions ou des ajustements négatifs, les modifications de quantité et de valeur effectuées dans l'inventaire sont enregistrées respectivement dans les écritures du grand livre article et les écritures valeur. L'étape suivante de ce processus consiste à reporter les valeurs de l'inventaire dans les comptes inventaire du grand livre.  
@@ -126,4 +126,3 @@ Pour plus d'informations sur les relations entre les types de compte et les diff
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

@@ -1,6 +1,6 @@
 ---
-title: "Configurer un représentant | Microsoft Docs"
-description: "Vous pouvez configurer un identificateur pour chacun de vos représentants, afin de pouvoir suivre les performances de la personne ou affecter un représentant à un contact."
+title: Configurer un représentant | Microsoft Docs
+description: Vous pouvez configurer un identificateur pour chacun de vos représentants, afin de pouvoir suivre les performances de la personne ou affecter un représentant à un contact.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: sales rep
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: ddc6ab85e0db5065fffc6187c26ba4d67e1a1ee9
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813008"
 ---
 # <a name="set-up-salespeople"></a>Configurer des représentants
 Beaucoup de compagnies souhaitent suivre les performances individuelles d'un collaborateur afin d'avoir une base de calcul pour les commissions et les bonus. Reportez-vous, par exemple, au rapport **Commissions représentant**. Une compagnie peut également souhaiter affecter un représentant à chacun de ses contacts.
@@ -32,4 +32,3 @@ Vous pouvez utiliser les représentants dans la gestion des relations et les div
 [Définition des ventes](sales-setup-sales.md)  
 [Ventes](sales-manage-sales.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
-

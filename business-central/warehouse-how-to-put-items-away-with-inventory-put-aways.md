@@ -1,23 +1,23 @@
 ---
 title: Comment ranger des articles avec le rangement stock | Microsoft Docs
-description: "Lorsque votre emplacement est configuré pour exiger un traitement des classements, mais qu'il ne l'est pas pour un traitement des réceptions, vous utilisez le document **Article dans l'inventaire à classer** pour enregistrer et reporter les informations de classement et de réception pour vos documents origine. Le document source entrant peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un bon de production dont la production est prête à être rangée."
+description: Lorsque votre emplacement est configuré pour exiger un traitement des classements, mais qu'il ne l'est pas pour un traitement des réceptions, vous utilisez le document **Article dans l'inventaire à classer** pour enregistrer et reporter les informations de classement et de réception pour vos documents origine. Le document source entrant peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un bon de production dont la production est prête à être rangée.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
 ms.openlocfilehash: 410439c6a7b0aacc31f1a191b9b4540d0aa6a5e8
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/22/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813315"
 ---
 # <a name="put-items-away-with-inventory-put-aways"></a>Ranger des articles avec le rangement stock
 Lorsque votre emplacement est configuré pour exiger un traitement des rangements, mais pas un traitement des réceptions, vous utilisez le document **Rangement inventaire** pour enregistrer et reporter les informations de rangement et de réception pour vos documents sources. Le document source entrant peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un ordre d'assemblage/un bon de production dont la production est prête à être rangée.  
@@ -80,4 +80,3 @@ Le processus de report reporte la réception, ou la production pour les bons de 
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
-

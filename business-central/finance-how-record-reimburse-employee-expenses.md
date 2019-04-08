@@ -1,8 +1,8 @@
 ---
-title: "Enregistrer et rembourser les dépenses professionnelles des employés | Microsoft Docs"
-description: "Reportez les dépenses des employés avec le journal général sur le compte de l'employé et reportez par la suite un paiement sur le compte bancaire de l'employé pour rembourser les frais professionnels."
+title: Enregistrer et rembourser les dépenses professionnelles des employés | Microsoft Docs
+description: Reportez les dépenses des employés avec le journal général sur le compte de l'employé et reportez par la suite un paiement sur le compte bancaire de l'employé pour rembourser les frais professionnels.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: reimbursement
 ms.date: 11/27/2018
 ms.author: sgroespe
+ms.openlocfilehash: 5932823e2ed18e2e2c61317d2a23a635ee66c609
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 30d10c443bd69acfec9a30bacef5a8f0d8aece3f
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813169"
 ---
 # <a name="record-and-reimburse-employees-expenses"></a>Enregistrer et rembourser les frais des employés
 [!INCLUDE[d365fin](includes/d365fin_md.md)] prend en charge les transactions des employés de la même manière que pour les fournisseurs. Par conséquent, les groupes de report employé existent pour s'assurer que les écritures d'un employé sont reportées dans les comptes correspondants du grand livre.
@@ -50,7 +50,7 @@ Vous remboursez des employés en reportant les paiements sur leur compte bancair
 5. Sélectionnez l'action **Reporter** pour enregistrer le remboursement.  
 
 ## <a name="to-reconcile-reimbursements-with-employee-ledger-entries"></a>Pour rapprocher les remboursements avec les écritures de l'employé
-Affectez les paiements des employés à leurs écritures employés ouvertes de la même façon que vous le faites pour les paiements des fournisseurs, par exemple sur la page **Journal rapprochement paiement**, en fonction des écritures de relevé bancaire connexes. Pour plus d'informations, reportez-vous à [Lettrage automatique des paiements et rapprochement des comptes bancaires](receivables-apply-payments-auto-reconcile-bank-accounts.md). Sinon, vous pouvez effectuer une affectation manuelle sur la page **Écritures employés**. Pour plus d'informations, voir [Rapprocher les paiements fournisseur manuellement](payables-how-apply-purchase-transactions-manually.md).  
+Affectez les paiements des employés à leurs écritures employés ouvertes de la même façon que vous le faites pour les paiements des fournisseurs, par exemple sur la page **Journal rapprochement paiement**, en fonction des écritures de relevé bancaire connexes. Pour plus d'informations, reportez-vous à [Lettrage automatique des paiements et rapprochement des comptes bancaires](receivables-apply-payments-auto-reconcile-bank-accounts.md). Sinon, vous pouvez effectuer une affectation manuelle sur la page **Écritures employés**. Pou plus d'informations, voir [Rapprocher des paiements fournisseur avec le journal paiement ou à partir des écritures fournisseur](payables-how-apply-purchase-transactions-manually.md).  
 
 ## <a name="see-also"></a>Voir aussi
 [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)  
@@ -58,4 +58,3 @@ Affectez les paiements des employés à leurs écritures employés ouvertes de l
 [Inverser des reports](finance-how-reverse-journal-posting.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
-

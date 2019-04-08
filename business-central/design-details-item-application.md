@@ -1,6 +1,6 @@
 ---
-title: "Détails de conception - Affectation article | Microsoft Docs"
-description: "Cette rubrique décrit où la quantité et la valeur d'inventaire sont enregistrées lorsque vous reportez une transaction inventaire."
+title: Détails de conception - Affectation article | Microsoft Docs
+description: Cette rubrique décrit où la quantité et la valeur d'inventaire sont enregistrées lorsque vous reportez une transaction inventaire.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: design, items, ledger entries, posting, inventory
 ms.date: 12/21/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 5801fcc1284edfe1b8578518c084455c336d5a40
 ms.openlocfilehash: 772702717a250e7068e93d362bc09a5ba719defe
-ms.contentlocale: fr-ca
-ms.lasthandoff: 12/27/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813313"
 ---
 # <a name="design-details-item-application"></a>Détails de conception : affectation article
 Lorsque vous reportez une transaction d'inventaire, le report de quantité est enregistré dans les écritures article, le report de valeur dans les écritures valeur. Pour plus d'informations, voir [Détails de conception : comptabilisation stock](design-details-inventory-posting.md).  
@@ -34,7 +34,7 @@ Les lettrages article peuvent être effectués des manières suivantes.
 |Méthode|Description|Type d'affectation|  
 |------------|---------------------------------------|----------------------|  
 |Automatique|Se produit en tant que transfert de coûts général selon le mode évaluation stock|Quantité affectée|  
-|Statique|Effectué par l'utilisateur lorsque :<br /><br /> \-   Traitement des retours<br />\-   Report de corrections<br />\-   Annulation des validations de quantité<br />-   Création de livraisons directes **Remarque :**  L'affectation fixe peut être effectuée manuellement en saisissant un numéro d'écriture dans le champ **Écriture article à affecter** ou à l'aide d'une fonction, telle que **Extraire les lignes de document reportées à inverser**.|Quantité affectée<br /><br /> Affectation coût **Remarque :**  L'affectation coût se produit uniquement dans les transactions entrantes dont le champ **Écriture article à affecter** est renseigné pour créer une affectation fixe. Consultez la table suivante.|  
+|Statique|Effectué par l'utilisateur lorsque :<br /><br /> -   Traitement des retours<br />-   Report de corrections<br />-   Annulation des reports de quantité<br />-   Création de livraisons directes **Remarque :** L'affectation fixe peut être effectuée manuellement en saisissant un numéro d'écriture dans le champ **Écriture article à affecter** ou à l'aide d'une fonction, telle que **Afficher les lignes de document reportées à inverser**.|Quantité affectée<br /><br /> Affectation coût **Remarque :**  L'affectation coût se produit uniquement dans les transactions entrantes dont le champ **Écriture article à affecter** est renseigné pour créer une affectation fixe. Consultez la table suivante.|  
 
 L'affectation de quantités ou de coûts dépend de la direction de la transaction d'inventaire et de si l'affectation d'article est automatique ou fixe, en fonction des processus spécifiques.  
 
@@ -248,4 +248,3 @@ En raison du mode de calcul du coût unitaire d'un article, une affectation arti
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
-

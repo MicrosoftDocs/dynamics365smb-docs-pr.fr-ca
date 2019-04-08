@@ -1,6 +1,6 @@
 ---
-title: "Rappeler ou pénaliser les clients pour les impayés| Microsoft Docs"
-description: "Décrit comment envoyer un rappel à un client concernant un paiement dû et ajouter des frais, ou des commissions au paiement en raison du retard."
+title: Rappeler ou pénaliser les clients pour les impayés| Microsoft Docs
+description: Décrit comment envoyer un rappel à un client concernant un paiement dû et ajouter des frais, ou des commissions au paiement en raison du retard.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment due, debt, overdue, fee, charge, reminder
-ms.date: 10/01/2018
+ms.date: 03/01/2019
 ms.author: sgroespe
+ms.openlocfilehash: f33d8a851c1c5a8f3c464a44ebd1d6319131af09
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 3dfc2d9edbb72de196238748ab90ce8dd4990adb
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813299"
 ---
 # <a name="collect-outstanding-balances"></a>Collecte des soldes restants
 La gestion des clients comprend le contrôle du règlement des montants à temps. Si des clients ont des paiements échus, vous pouvez commencer par envoyer le rapport du Relevé client en guise de rappel. Sinon, vous pouvez émettre de relances.
@@ -82,29 +82,29 @@ Si vous créez plus de relances qu'il n'y a de niveaux relance, les conditions u
     Pour chaque niveau relance, vous pouvez indiquer le texte à imprimer avant (**Texte début**) ou après (**Texte fin**) les écritures de la relance.
 
 6. Choisissez les actions **Texte de début** ou **Texte de fin** respectivement, puis renseignez la page **Texte rappel**.
-7. Pour insérer automatiquement des valeurs correspondantes dans le texte de relance résultant, entrez les espaces réservés suivants dans le champ **Texte**.  
+7. Pour insérer automatiquement des valeurs correspondantes dans le texte de rappel résultant, entrez les espaces réservés suivants dans le champ **Texte**.  
 
 |Paramètre substituable|Valeur|  
 |-----------------|-----------|  
-|%1|Contenu du champ **Date du document** de l'en\-tête de relance|  
-|%2|Contenu du champ **Date d'échéance** de l'en\-tête de relance|  
-|%3|Contenu du champ **Taux d'intérêt** dans les conditions d'intérêts de retard associées|  
-|%4|Contenu du champ **Montant ouvert** de l'en\-tête de relance|  
-|%5|Contenu du champ **Montant intérêts** de l'en\-tête de relance|  
-|%6|Contenu du champ **Frais supplémentaires** de l'en\-tête de relance|  
+|%1|Contenu du champ **Date du document** de l'en-tête de rappel|  
+|%2|Contenu du champ **Date d'échéance** de l'en-tête de rappel|  
+|%3|Contenu du champ **Taux d'intérêt** dans les modalités de frais financiers associées|  
+|%4|Contenu du champ **Montant ouvert** de l'en-tête de rappel|  
+|%5|Contenu du champ **Montant intérêts** de l'en-tête de rappel|  
+|%6|Contenu du champ **Frais supplémentaires** de l'en-tête de rappel|  
 |%7|Montant total du rappel|  
-|%8|Contenu du champ **Niveau relance** de l'en\-tête de relance|  
-|%9|Contenu du champ **Code devise** de l'en\-tête de relance|  
-|%10|Contenu du champ **Date de validation** de l'en\-tête de relance|  
+|%8|Contenu du champ **Niveau rappel** de l'en-tête de rappel|  
+|%9|Contenu du champ **Code devise** de l'en-tête de rappel|  
+|%10|Contenu du champ **Date de report** de l'en-tête de rappel|  
 |%11|Nom de la compagnie|  
-|%12|Contenu du champ **Frais supplémentaires par ligne** de l'en-tête de relance|  
+|%12|Contenu du champ **Frais supplémentaires par ligne** de l'en-tête de rappel|  
 
-Par exemple, si vous entrez **Vous devez %9 %7 dus au %2.**, le rappel résultant contiendra le texte suivant : **Vous devez 1 200,50 USD dus au 02-02-2014**.
+Par exemple, si vous saisissez **Vous devez %9 %7 dus au %2.**, le rappel résultant contiendra le texte suivant : Vous devez **1 200,50 USD dus au 02/02/2014.**.
 
 > [!NOTE]
-> La date d'échéance est calculée selon la formule de date que vous saisissez. Pour plus d'informations reportez-vous à la section « Utilisation de formules date » dans [Saisie de plages de dates](ui-enter-date-ranges.md).
+> La date d'échéance est calculée selon la formule de date que vous saisissez. Pour plus d'informations, voir [Utilisation de formules date](ui-enter-date-ranges.md#using-date-formulas).
 
-Si vous avez configuré les modalités de rappel (avec des niveaux et du texte supplémentaires), entrez l'un des codes sur chaque fiche client. Pour plus d'informations, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).
+Si vous avez configuré les modalités de rappel (avec des niveaux et du texte supplémentaires), saisissez l'un des codes sur chaque fiche client. Pour plus d'informations, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).
 
 ## <a name="to-create-a-reminder-automatically"></a>Pour créer automatiquement un rappel
 Un rappel est identique à une facture. Lorsque vous créez un rappel, un en-tête rappel, ainsi qu'une ou plusieurs lignes rappel, doivent être renseignés. Vous pouvez utiliser une fonction pour créer des relances pour tous les clients automatiquement.
@@ -191,19 +191,19 @@ En outre, chaque code de la table Modalités de frais financiers est lié à une
 
     Pour chaque condition intérêts, vous pouvez spécifier le texte à imprimer avant (**Texte début**) ou après (**Texte fin**) les écritures de la facture d'intérêts.  
 6. Choisissez les actions **Texte de début** ou **Texte de fin** respectivement, puis renseignez la page **Texte frais financiers**.
-7. Pour insérer automatiquement des valeurs correspondantes dans le texte facture d'intérêts résultant, entrez les espaces réservés suivants dans le champ **Texte**.
+7. Pour insérer automatiquement des valeurs correspondantes dans le texte frais financiers résultant, entrez les espaces réservés suivants dans le champ **Texte**.
 
 |Paramètre substituable|Valeur|  
 |-----------------|-----------|  
-|%1|Contenu du champ **Date du document** de l'en-tête de facture d'intérêts|  
-|%2|Contenu du champ **Date d'échéance** de l'en-tête de facture d'intérêts|  
-|%3|Contenu du champ **Taux d'intérêt** dans les conditions d'intérêts de retard associées|  
-|%4|Contenu du champ **Montant ouvert** de l'en-tête de facture d'intérêts|  
-|%5|Contenu du champ **Montant intérêts** de l'en-tête de facture d'intérêts|  
-|%6|Contenu du champ **Frais supplémentaires** de l'en-tête de facture d'intérêts|  
+|%1|Contenu du champ **Date du document** de l'en-tête de note de frais financiers|  
+|%2|Contenu du champ **Date d'échéance** de l'en-tête de note de frais financiers|  
+|%3|Contenu du champ **Taux d'intérêt** dans les modalités de frais financiers associées|  
+|%4|Contenu du champ **Montant restant** de l'en-tête de note de frais financiers|  
+|%5|Contenu du champ **Montant intérêts** de l'en-tête de note de frais financiers|  
+|%6|Contenu du champ **Frais supplémentaires** de l'en-tête de note de frais financiers|  
 |%7|Montant total du rappel|  
-|%8|Contenu du champ **Code devise** de l'en-tête de facture d'intérêts|  
-|%9|Contenu du champ **Date comptabilisation** de l'en-tête de facture d'intérêts|  
+|%8|Contenu du champ **Code devise** de l'en-tête de note de frais financiers|  
+|%9|Contenu du champ **Date de report** de l'en-tête de note de frais financiers|  
 
 ## <a name="to-create-a-finance-charge-memo-manually"></a>Pour créer manuellement des notes de frais financiers  
 Une note de frais financiers ressemble à une facture. Vous pouvez renseigner un en-tête manuellement et faire renseigner les lignes, ou créer des factures d'intérêts automatiquement pour tous les clients.
@@ -254,4 +254,3 @@ Lorsque vous émettez un rappel, une écriture rappel est créée sur la page **
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Ventes](sales-manage-sales.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

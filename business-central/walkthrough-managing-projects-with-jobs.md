@@ -1,23 +1,23 @@
 ---
-title: "Procédure pas à pas : gestion des projets | Microsoft Docs"
-description: "Cette procédure pas-à-pas présente les fonctionnalités de gestion de projets dans les projets. Les projets vous permettent de programmer l'utilisation des ressources de votre compagnie et de suivre les différents objet de coûts à l'utilisation des ressources sur un projet spécifique. Les projets impliquent la consommation d'heures employé, d'heures machines, d'articles dans l'inventaire et d'autres types d'utilisation pouvant faire l'objet d'un suivi au fur et à mesure de l'avancée du projet."
+title: 'Procédure pas à pas : gestion des projets | Microsoft Docs'
+description: Cette procédure pas-à-pas présente les fonctionnalités de gestion de projets dans les projets. Les projets vous permettent de programmer l'utilisation des ressources de votre compagnie et de suivre les différents objet de coûts à l'utilisation des ressources sur un projet spécifique. Les projets impliquent la consommation d'heures employé, d'heures machines, d'articles dans l'inventaire et d'autres types d'utilisation pouvant faire l'objet d'un suivi au fur et à mesure de l'avancée du projet.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 1f228296cfa750670e1270a100755e67885c783a
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813007"
 ---
 # <a name="walkthrough-managing-projects-with-jobs"></a>Procédure pas à pas : gestion des projets
 Cette procédure pas-à-pas présente les fonctionnalités de gestion de projets dans les projets. Les projets vous permettent de programmer l'utilisation des ressources de votre compagnie et de suivre les différents objet de coûts à l'utilisation des ressources sur un projet spécifique. Les projets impliquent la consommation d'heures employé, d'heures machines, d'articles dans l'inventaire et d'autres types d'utilisation pouvant faire l'objet d'un suivi au fur et à mesure de l'avancée du projet.  
@@ -485,4 +485,3 @@ Ce procédure pas à pas se concentre sur la société CRONUS International Ltd.
  [Surveillance de la progression et des performances](projects-how-monitor-progress-performance.md)   
  [Facturation des projets](projects-how-invoice-jobs.md)  
  [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

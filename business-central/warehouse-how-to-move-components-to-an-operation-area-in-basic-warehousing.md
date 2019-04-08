@@ -1,23 +1,23 @@
 ---
 title: "Procédure : déplacer les composantes vers une zone opérations dans les configurations d'entrepôt de base | Microsoft Docs"
-description: "Si des opérations de traitement d'articles se produisent dans votre entrepôt, vous pouvez être amené à déplacer des articles entre différents zones internes pour satisfaire aux documents origine internes, tels que la production, l'assemblage ou les commandes service dans l'emplacement."
+description: Si des opérations de traitement d'articles se produisent dans votre entrepôt, vous pouvez être amené à déplacer des articles entre différents zones internes pour satisfaire aux documents origine internes, tels que la production, l'assemblage ou les commandes service dans l'emplacement.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
-ms.date: 10/01/2018
+ms.search.keywords: ''
+ms.date: 03/01/2019
 ms.author: sgroespe
+ms.openlocfilehash: a5f103ae832231be521e9faf1d9024cbbb393c33
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: afbc3bbfa0ef8d655ef66aab219bcd7bcfb930b2
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813370"
 ---
 # <a name="move-components-to-an-operation-area-in-basic-warehouse-configurations"></a>Déplacer les composantes vers une zone opérations dans les configurations de stockage de base
 Si des opérations de traitement d'articles se produisent dans votre entrepôt, vous pouvez être amené à déplacer des articles entre différents zones internes pour satisfaire aux documents origine internes, tels que la production, l'assemblage ou les commandes service dans l'emplacement.  
@@ -44,7 +44,7 @@ Sinon, un magasinier peut le créer en pointant l'ordre d'assemblage libéré en
 > [!NOTE]  
 >  Si le mouvement concerne un ordre d'assemblage pour lequel l'article est assemblé à un document de vente, vous pouvez faire en sorte que le document mouvement d'inventaire soit automatiquement créé lorsque vous générez le document prélèvement inventaire qui prend l'article d'assemblage terminé et reporte la livraison. Pour configurer cela, sélectionnez le champ **Créer des mouvements automatiquement** sur la page **Configuration d'assemblage**.  
 >   
->  Pour plus d'informations sur les ordres d'assemblage et les configurations entrepôt de base, reportez-vous à la section « Traitement des articles à assembler pour commande dans les prélèvements stock » dans [Prélever pour la fabrication et l'assemblage](warehouse-how-to-pick-for-production.md).  
+>  Pour plus d'informations sur les ordres d'assemblage et les configurations d'entreposage de base, voir [Traitement des articles assembler pour commande dans les prélèvements inventaire](warehouse-how-to-pick-for-production.md#handling-assemble-to-order-items-with-inventory-picks).  
 
 Cette procédure explique comment créer un mouvement d'inventaire à partir de la page **Mouvement d'inventaire** en référençant un ordre d'assemblage libéré en tant que document origine. La procédure est la même lorsque vous déplacez les composants pour les ordres de fabrication et les commandes service.  
 
@@ -79,4 +79,3 @@ Cette procédure explique comment créer un mouvement d'inventaire à partir de 
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

@@ -1,23 +1,23 @@
 ---
-title: "Procédure : créer les contenus de la zone | Microsoft Docs"
-description: "Une fois la configuration des emplacements terminée, vous pouvez configurer leur contenu. En d'autres termes, vous pouvez configurer les articles à stocker dans une zone donnée et définir les règles qui régissent le remplissage de la zone avec un article spécifique."
+title: 'Procédure : créer les contenus de la zone | Microsoft Docs'
+description: Une fois la configuration des emplacements terminée, vous pouvez configurer leur contenu. En d'autres termes, vous pouvez configurer les articles à stocker dans une zone donnée et définir les règles qui régissent le remplissage de la zone avec un article spécifique.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 6aa07d1f37c15901951ab5b81b771838abf95126
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813372"
 ---
 # <a name="create-bin-contents"></a>Créer le contenus de la zone
 Une fois la configuration des emplacements terminée, vous pouvez configurer leur contenu. En d'autres termes, vous pouvez configurer les articles à stocker dans une zone donnée et définir les règles qui régissent le remplissage de la zone avec un article spécifique. Vous pouvez effectuer cette opération manuellement sur la page **Contenu de la zone** ou automatiquement sur la page **Créer feuille contenu de la zone**.
@@ -63,4 +63,3 @@ Dans cette feuille, vous pouvez utiliser des lignes contenu de la zone pour plus
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

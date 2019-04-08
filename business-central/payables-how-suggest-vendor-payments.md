@@ -1,8 +1,8 @@
 ---
 title: Utilisez le traitement en lot Proposer paiements fournisseur| Microsoft Docs
-description: "Vous pouvez spécifier les paramètres du paiement fournisseur pour obtenir des suggestions ou des propositions pour les paiements arrivant à échéance ou donnant lieu à un escompte."
+description: Vous pouvez spécifier les paramètres du paiement fournisseur pour obtenir des suggestions ou des propositions pour les paiements arrivant à échéance ou donnant lieu à un escompte.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: vendor payment, creditor, debt, balance due, AP
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 5e13b28e2cf75f061246dab56a9f4b3d4a16e1ce
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813101"
 ---
 # <a name="suggest-vendor-payments"></a>Proposer paiements fournisseur
 Sur la page **Journal paiement**, vous pouvez utiliser le traitement en lot **Proposer paiements fournisseur** pour proposer des lignes paiement. Des lignes pour les paiements échus à courte échéance ou les paiements pour lesquels un escompte de paiement est disponible, sont proposées en fonction de vos paramètres.
@@ -43,7 +43,7 @@ Pour bénéficier pleinement des suggestions de paiement, vous devez d'abord att
 Lorsque vous utilisez le traitement par lots **Proposer paiements fournisseur** pour créer des lignes de paiement pour vos fournisseurs, vous pouvez remplir deux champs spéciaux pour vous assurer que les lignes générées utilisent la date d'échéance pour calculer la date comptabilisation. Ces champs sont **Calculer la date comptabilisation à partir de la date d'échéance doc. lettrage** et **Décalage date d'échéance doc. lettrage**.  
 
 > [!IMPORTANT]  
->   Vous ne pouvez pas utiliser le champ **Calculate Posting Date from Applies-to-Doc Due Date** avec le champ **Find Payment Discounts** ou le champ **Summarize per Vendor**. Si la date de report est basée sur la date d'échéance, des escomptes de paiement risquent de ne pas être calculés correctement, parce que la date de report peut se trouver après la date d'escompte de paiement.  
+>   Vous ne pouvez pas utiliser le champ **Calculer la date de report à partir de la date d'échéance doc. référence** avec le champ **Trouver escomptes de paiement** ou le champ **Résumer par fournisseur**. Si la date de report est basée sur la date d'échéance, des escomptes de paiement risquent de ne pas être calculés correctement, parce que la date de report peut se trouver après la date d'escompte de paiement.  
 
 De plus, si la date de report calculée se trouve dans le passé, la date de report est déplacée à la date de travail, et un message d'attention s'affiche.  
 
@@ -57,4 +57,3 @@ Vous pouvez aussi créer manuellement des lignes de paiement à l'aide de la dat
 [Effectuer des paiements](payables-make-payments.md)  
 [Utilisation de feuilles comptabilité](ui-work-general-journals.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
-

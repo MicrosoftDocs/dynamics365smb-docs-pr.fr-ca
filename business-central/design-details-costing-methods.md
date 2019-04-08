@@ -1,23 +1,23 @@
 ---
-title: "Détails de conception - Modes évaluation | Microsoft Docs"
-description: "Le mode d'évaluation du stock détermine si une valeur réelle ou budgétée est capitalisée et prise en compte dans le calcul des coûts. Au même titre que la date de report et la séquence, le mode d'évaluation coût a aussi une incidence sur l'enregistrement du flux des coûts."
+title: Détails de conception - Modes évaluation | Microsoft Docs
+description: Le mode d'évaluation du stock détermine si une valeur réelle ou budgétée est capitalisée et prise en compte dans le calcul des coûts. Au même titre que la date de report et la séquence, le mode d'évaluation coût a aussi une incidence sur l'enregistrement du flux des coûts.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
 ms.openlocfilehash: cd83ddd7dcda539327167e34489c227cd1fdb70e
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/22/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "812833"
 ---
 # <a name="design-details-costing-methods"></a>Détails de conception : modes évaluation stock
 Le mode d'évaluation du stock détermine si une valeur réelle ou budgétée est capitalisée et prise en compte dans le calcul des coûts. Au même titre que la date de report et la séquence, le mode d'évaluation coût a aussi une incidence sur l'enregistrement du flux des coûts. Les méthodes suivantes sont prises en charge dans [!INCLUDE[d365fin](includes/d365fin_md.md)] :  
@@ -159,4 +159,3 @@ Le mode d'évaluation du stock détermine si une valeur réelle ou budgétée es
  [Détails de conception : Affectation article](design-details-item-application.md) [Gestion des coûts inventaire](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
  [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
-

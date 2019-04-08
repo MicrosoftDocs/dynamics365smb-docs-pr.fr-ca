@@ -1,7 +1,7 @@
 ---
-title: "Créer des séries de numéros | Microsoft Docs"
-description: "Découvrez comment configurer des séries de numéros qui affectent des codes d'identification uniques aux comptes et aux documents dans Business Central."
-documentationcenter: 
+title: Créer des séries de numéros | Microsoft Docs
+description: Découvrez comment configurer des séries de numéros qui affectent des codes d'identification uniques aux comptes et aux documents dans Business Central.
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -11,18 +11,18 @@ ms.workload: na
 ms.search.keywords: numbers, numbering
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 46131d6ad5f77a02ffe33d24f1210a226c3041c1
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813109"
 ---
 # <a name="create-number-series"></a>Créer des séries de numéros
 Pour chaque compagnie que vous configurez, vous devez affecter des codes d'identification uniques aux éléments tels que les comptes du grand livre, les comptes client et fournisseur, les factures et d'autres documents. La numérotation est importante, pas uniquement pour l'identification. Un système de numérotation bien conçu facilite également la gestion et l'analyse de la compagnie et permet de réduire les erreurs de saisie des données.
 
 > [!NOTE]  
->   Il est recommandé d'utiliser les mêmes codes série de numéros que ceux répertoriés sur la page **Liste de séries de numéros** de la compagnie de démonstration CRONUS. Des codes tels que *P-INV+* ne vont pas vous paraître significatifs au premier abord, mais [!INCLUDE[d365fin](includes/d365fin_md.md)] dispose d'un certain nombre de paramètres par défaut en fonction de ces codes souche de numéros.
+>   Il est recommandé d'utiliser les mêmes codes série de numéros que ceux répertoriés sur la page **Liste de séries de numéros** de la compagnie de démonstration CRONUS. Des codes tels que *P-INV+* ne vont pas vous paraître significatifs au premier abord, mais [!INCLUDE[d365fin](includes/d365fin_md.md)] dispose d'un certain nombre de paramètres par défaut qui dépendent de ces codes série de numéros.
 
 Vous créez un système de numérotation en définissant un ou plusieurs codes pour chaque type de données de base ou de document. Par exemple, vous pouvez définir un code pour la numérotation de clients, un code pour la numérotation des factures vente et un autre code pour la numérotation des documents dans les feuilles comptabilité. Une fois que vous avez défini un code, vous devez définir au moins une ligne série de numéros. Celle-ci contient des informations telles que les premier et dernier numéros de la série et la date début. Vous pouvez définir plusieurs lignes série de numéros par code série de numéros, avec une date début différente pour chaque ligne. Les séries sont utilisées de manière consécutive, chaque série commençant à la date début respective.
 
@@ -75,4 +75,3 @@ Désormais, pour créer un élément nécessitant un numéro, vous pourrez utili
 ## <a name="see-also"></a>Voir aussi
 [Configuration de [!INCLUDE[d365fin](includes/d365fin_md.md)]](setup.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
-

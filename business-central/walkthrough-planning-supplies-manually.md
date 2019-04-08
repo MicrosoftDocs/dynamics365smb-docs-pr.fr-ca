@@ -1,23 +1,23 @@
 ---
-title: "Procédure pas à pas : planification manuelle des approvisionnements | Microsoft Docs"
-description: "Cette procédure pas à pas présente le processus de planification des commandes approvisionnement en vue de répondre à la nouvelle demande. Vous pouvez lancer la planification des approvisionnements à des intervalles fixes, par exemple, tous les matins ou tous les lundis, ou lorsque vous recevez une notification du département Ventes ou Production, en fonction du type de demande."
+title: 'Procédure pas à pas : planification manuelle des approvisionnements | Microsoft Docs'
+description: Cette procédure pas à pas présente le processus de planification des commandes approvisionnement en vue de répondre à la nouvelle demande. Vous pouvez lancer la planification des approvisionnements à des intervalles fixes, par exemple, tous les matins ou tous les lundis, ou lorsque vous recevez une notification du département Ventes ou Production, en fonction du type de demande.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 01/31/2019
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: a94c4f2f8d622a91b74ba0de6f0f18e7eb84a5ef
 ms.openlocfilehash: bed38cf158e5372ff9c4e2f23667fba8af93ec74
-ms.contentlocale: fr-ca
-ms.lasthandoff: 01/31/2019
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813043"
 ---
 # <a name="walkthrough-planning-supplies-manually"></a>Procédure pas à pas : planification manuelle des approvisionnements
 
@@ -56,7 +56,7 @@ Cette procédure pas à pas présente le processus de planification des commande
  Dans un environnement de fabrication plus complexe, la feuille planification permet de planifier l'approvisionnement sur la base des paramètres d'article, tels que la période de reprogrammation, le délai de sécurité, le point de réapprovisionnement et les calculs par lots de la demande consolidée à partir de tous les niveaux de produit.  
 
 ## <a name="setting-up-the-sample-data"></a>Configuration des exemples de données  
- La compagnie de démonstration CRONUS standard dispose actuellement d'un grand nombre de demandes non planifiées. Au cours des différentes tâches de planification de cette procédure pas à pas, vous devrez passer outre le flux commercial réaliste : utilisez la demande dont les dates d'échéance sont ultérieures plutôt que celle dont les dates sont échues.  
+ La société de démonstration CRONUS standard dispose actuellement d'un grand nombre de demandes non planifiées. Au cours des différentes tâches de planification de cette procédure pas à pas, vous devrez passer outre le flux commercial réaliste : utilisez la demande dont les dates d'échéance sont ultérieures plutôt que celle dont les dates sont échues.  
 
 ## <a name="using-the-order-planning-page"></a>Utilisation de la page Planification commande  
 
@@ -86,7 +86,7 @@ The **Order Planning** page can be accessed from several different locations on 
 
      À la fin du calcul, la page affiche toutes les demandes insatisfaites sous la forme de lignes en-tête commande réduites triées par date de demande la plus proche.  
 
-     Remarque : CRONUS inclut plusieurs commandes dont la demande est insatisfaite. Chaque ligne planification en gras représente une commande, un document de vente ou un bon de production, comprenant au moins une ligne commande avec une disponibilité insuffisante.  
+     Notez que CRONUS inclut plusieurs commandes dont la demande est insatisfaite. Chaque ligne planification en gras représente une commande, un document de vente ou un bon de production, comprenant au moins une ligne commande avec une disponibilité insuffisante.  
 
 4.  Dans le champ **Afficher la demande en tant que**, sélectionnez le filtre **Toutes les demandes**.  
 
@@ -237,4 +237,3 @@ The **Order Planning** page can be accessed from several different locations on 
 ## <a name="see-also"></a>Voir aussi  
  [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)   
  [Procédure pas à pas : planification automatique des approvisionnements](walkthrough-planning-supplies-automatically.md)
-

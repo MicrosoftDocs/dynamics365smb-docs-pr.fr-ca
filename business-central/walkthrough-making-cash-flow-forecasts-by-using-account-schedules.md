@@ -1,23 +1,23 @@
 ---
 title: "Procédure pas-à-pas : Créer des prévisions de la trésorerie à l'aide des tableaux d'analyse | Microsoft Docs"
-description: "Cette procédure pas-à-pas décrit le mode d'utilisation des tableaux d'analyse pour élaborer des prévisions de trésorerie. Les tableaux d'analyse procèdent aux calculs qui ne peuvent pas être effectués directement dans le plan comptable de trésorerie. Dans les tableaux d'analyse, vous pouvez configurer des sous-totaux pour les réceptions et les décaissements de trésorerie. Ces sous-totaux peuvent être inclus dans les nouveaux totaux pour élaborer des prévisions de trésorerie."
+description: Cette procédure pas-à-pas décrit le mode d'utilisation des tableaux d'analyse pour élaborer des prévisions de trésorerie. Les tableaux d'analyse procèdent aux calculs qui ne peuvent pas être effectués directement dans le plan comptable de trésorerie. Dans les tableaux d'analyse, vous pouvez configurer des sous-totaux pour les réceptions et les décaissements de trésorerie. Ces sous-totaux peuvent être inclus dans les nouveaux totaux pour élaborer des prévisions de trésorerie.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 652a151ff50c8492b3dc7df5d17c04ff2d00faad
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813040"
 ---
 # <a name="walkthrough-making-cash-flow-forecasts-by-using-account-schedules"></a>Procédure pas-à-pas : Créer des prévisions de trésorerie à l'aide de les tableaux d'analyse
 Cette procédure pas-à-pas décrit le mode d'utilisation des tableaux d'analyse pour élaborer des prévisions de trésorerie. Les tableaux d'analyse procèdent aux calculs qui ne peuvent pas être effectués directement dans le plan comptable de trésorerie. Dans les tableaux d'analyse, vous pouvez configurer des sous-totaux pour les réceptions et les décaissements de trésorerie. Ces sous-totaux peuvent être inclus dans les nouveaux totaux pour élaborer des prévisions de trésorerie.  
@@ -43,7 +43,7 @@ Cette procédure pas à pas présente les tâches effectuées par le rôle utili
 - Contrôleur  
 
 ## <a name="story"></a>Scénario  
-Ken est un contrôleur chez CRONUS, chargé d'élaborer des prévisions mensuelles de la trésorerie. Il inclut les finances, les ventes, les achats et les immobilisations dans les prévisions, puis les présente à CFO Sara dans un souci de visibilité commerciale.  
+Ken est un contrôleur chez CRONUS, chargé d'élaborer des prévisions mensuelles de trésorerie. Il inclut les finances, les ventes, les achats et les immobilisations dans les prévisions, puis les présente à CFO Sara dans un souci de visibilité commerciale.  
 
 ## <a name="setting-up-a-new-account-schedule-name"></a>Configuration d'un nouveau nom du tableau d'analyse  
 Un tableau d'analyse est composé d'un nom de tableau d'analyse de trésorerie avec une série de lignes et une présentation de colonne.  
@@ -91,4 +91,3 @@ Ken est désormais prêt à affecter la présentation de colonne au nom de table
  [Utilisation des tableaux d'analyse](bi-how-work-account-schedule.md)   
  [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)  
  [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

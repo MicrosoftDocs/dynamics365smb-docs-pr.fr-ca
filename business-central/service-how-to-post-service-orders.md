@@ -1,23 +1,23 @@
 ---
 title: Comment reporter des commandes service | Microsoft Docs
-description: "Après avoir créé une commande service, fourni toutes les informations et apporté les éventuelles modifications, vous pouvez reporter cette commande. Pour que vous puissiez reporter une commande, celle-ci doit contenir au moins une ligne article de service et une ligne service. Si la commande contient plusieurs lignes service, toutes les lignes sont reportées en même temps."
+description: Après avoir créé une commande service, fourni toutes les informations et apporté les éventuelles modifications, vous pouvez reporter cette commande. Pour que vous puissiez reporter une commande, celle-ci doit contenir au moins une ligne article de service et une ligne service. Si la commande contient plusieurs lignes service, toutes les lignes sont reportées en même temps.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: a6554708a40b50275a88a0c414be51cc99ccda85
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813476"
 ---
 # <a name="post-service-orders-and-credit-memos"></a>Reporter des commandes et des notes de crédit de service
 Après avoir créé une commande service, fourni toutes les informations et apporté les éventuelles modifications, vous pouvez reporter cette commande. Pour que vous puissiez reporter une commande, celle-ci doit contenir au moins une ligne article de service et une ligne service. Si la commande contient plusieurs lignes service, toutes les lignes sont reportées en même temps.  
@@ -134,4 +134,3 @@ La procédure suivante décrit le report de la livraison directement à partir d
 ## <a name="see-also"></a>Voir aussi  
 [Report dans la Gestion des services](service-service-posting.md)  
 [Créer une commande service](service-how-to-create-service-orders.md)  
-

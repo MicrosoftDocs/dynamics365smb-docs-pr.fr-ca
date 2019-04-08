@@ -1,23 +1,23 @@
 ---
-title: "Configuration de la comptabilité analytique | Microsoft Docs"
-description: "Avant d'utiliser la comptabilité analytique, vous devez effectuer des tâches de configuration."
+title: Configuration de la comptabilité analytique | Microsoft Docs
+description: Avant d'utiliser la comptabilité analytique, vous devez effectuer des tâches de configuration.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 11/13/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: ca6f16a22c3eb84584e8e522a15eadac6b21ca6a
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813285"
 ---
 # <a name="setting-up-cost-accounting"></a>Paramétrage du contrôle de gestion
 Avant d'utiliser la comptabilité analytique, vous devez effectuer des tâches de configuration.
@@ -117,7 +117,7 @@ Vous pouvez configurer et gérer les centres de coût, soit sur la page **Fiche 
 4. Sélectionnez la flèche déroulante dans le champ **Type ligne** pour spécifier l'objectif du centre de coûts.  
 
     - Pour les centres de coûts de type **Total**, vous devez renseigner le champ **Totalisation**. Utilisez l'opérateur **or**, qui est une ligne verticale (**&#124;**) pour définir les plages des centres de coûts.  
-    - Pour les centres de coûts ayant comme type de ligne **Fin total**, ce champ est renseigné automatiquement lorsque vous utilisez la fonction de décalage.  
+    - Pour les centres de coûts de type de ligne **Fin total**, ce champ est renseigné automatiquement lorsque vous utilisez la fonction de décalage.  
 5.  Renseignez les champs **Ordre de tri** et **Sous\-type coût**.  
 6.  Choisissez la ligne vide suivante pour créer un centre de coûts, puis répétez les étapes 2 à 5.  
 7.  Après avoir défini tous les centres de coûts, choisissez l'action **Décaler les centres de coûts**. Cliquez sur le bouton **Oui**.  
@@ -149,7 +149,7 @@ Vous pouvez configurer et gérer les objets de coûts, soit sur la page **Fiche 
 3.  Dans le champ **Nom**, saisissez le nom du coût associé.  
 4.  Sélectionnez la flèche déroulante dans le champ **Type ligne** pour spécifier l'objectif de l'objet de coûts.  
 
-    * Pour les objets de coûts de type de ligne **Total**, renseignez le champ **Total De/À**. Utilisez l'opérateur **or**, qui est une ligne verticale (**&#124;**), pour définir les plages des coûts associés.  
+    * Pour les objets de coûts de type de ligne **Total**, renseignez le champ **Total De/À**. Utilisez l'opérateur **or**, qui est une ligne verticale (**&#124;**), pour définir les plages des objets de coûts.  
     * Pour les objets de coûts de type de ligne **Fin total**, ce champ est renseigné automatiquement lorsque vous utilisez la fonction de décalage.  
 5.  Renseignez le champ **Ordre de tri**.  
 6.  Choisissez la ligne vide suivante pour créer un nouvel objet de coûts, puis répétez les phases 2 à 5.  
@@ -185,4 +185,3 @@ Pour chaque compte général, vous pouvez définir des sections analytiques par 
 [Transfert et report des écritures de coûts](finance-transfer-and-post-cost-entries.md)   
 [Définition et répartition des coûts](finance-define-and-allocate-costs.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

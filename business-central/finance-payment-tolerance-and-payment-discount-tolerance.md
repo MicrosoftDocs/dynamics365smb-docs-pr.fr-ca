@@ -1,23 +1,23 @@
 ---
-title: "Tolérance de règlement et tolérance d'escompte de paiement | Microsoft Docs"
-description: "Vous pouvez configurer la tolérance de règlement de manière à fermer une facture lorsque le paiement ne couvre pas entièrement le montant de la facture."
+title: Tolérance de règlement et tolérance d'escompte de paiement | Microsoft Docs
+description: Vous pouvez configurer la tolérance de règlement de manière à fermer une facture lorsque le paiement ne couvre pas entièrement le montant de la facture.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
-ms.date: 10/01/2018
+ms.search.keywords: ''
+ms.date: 03/01/2019
 ms.author: sgroespe
+ms.openlocfilehash: 83680cb4583cfe24deca310cb9c74ba9ab7b50f1
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: abbfa389e38e60b7b5470f1f390d370f8d43c6b5
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "812832"
 ---
 # <a name="work-with-payment-tolerances-and-payment-discount-tolerances"></a>Utilisation des tolérances de règlement et des tolérances d'escompte de paiement
 Vous pouvez configurer une tolérance de règlement de manière à fermer une facture lorsque le paiement ne couvre pas entièrement le montant de la facture. Vous pouvez configurer une tolérance d'escompte de paiement pour accorder un escompte de paiement après expiration de la date d'escompte de paiement.  
@@ -31,16 +31,16 @@ Un document unique comporte la même tolérance de règlement, qu'il soit affect
 
 *date d'escompte < date de règlement dans l'écriture sélectionnée <= date d'écart de règlement*  
 
-Cette règle détermine également la nécessité d'afficher des alertes lorsque vous affectez la tolérance de règlement à plusieurs documents. L'avertissement lié à la tolérance d'escompte de paiement s'affiche pour chaque écriture répondant aux critères de date. Pour plus d'informations, reportez-vous à la section « Exemple 2 - Calculs de la tolérance pour plusieurs documents ».
+Cette règle détermine également la nécessité d'afficher des alertes lorsque vous affectez la tolérance de règlement à plusieurs documents. L'avertissement lié à la tolérance d'escompte de paiement s'affiche pour chaque écriture répondant aux critères de date. Pour plus d'informations, voir [Exemple 2 - Calculs de la tolérance pour plusieurs documents](finance-payment-tolerance-and-payment-discount-tolerance.md#example-2---tolerance-calculations-for-multiple-documents).
 
 Vous pouvez afficher une alerte en fonction des situations relatives à la tolérance.  
 
 - Le premier avertissement concerne la tolérance d'escompte de paiement. Vous êtes informé que vous pouvez accepter un escompte de paiement en retard. Vous pouvez ensuite décider s'il faut accepter la tolérance sur la date d'escompte.  
 - Le second avertissement concerne la tolérance de règlement. Vous êtes informé que toutes les écritures peuvent être fermées car la différence est inférieure à la tolérance de règlement maximum pour les écritures affectées. Vous pouvez ensuite décider s'il faut accepter la tolérance sur le montant du paiement.
 
-Pour plus d'informations, voir la section « Pour activer ou désactiver les alertes de tolérance de règlement ».     
+Pour plus d'informations, voir [Pour activer ou désactiver l'avertissement de tolérance de règlement](finance-payment-tolerance-and-payment-discount-tolerance.md#to-enable-or-disable-payment-tolerance-warnings).     
 
-## <a name="to-set-up-tolerances"></a>Pour configurer les écarts  
+## <a name="to-set-up-tolerances"></a>Pour configurer les tolérances  
 Le fait de configurer des tolérances pour la date ou le montant permet de fermer une facture alors que le règlement ne couvre pas le montant indiqué sur la facture, que ce soit parce que la date d'échéance de l'escompte de paiement est dépassée ou que des marchandises ont été déduites, ou suite à une erreur anodine. Ceci est également vrai pour les remboursements et les notes de crédit.  
 
 Pour configurer l'écart, vous devez configurer plusieurs comptes écart, spécifier des méthodes de comptabilisation d'écart escompte et d'écart règlement, puis exécuter le traitement par lots **Modifier écart de règlement**.  
@@ -60,11 +60,11 @@ Pour configurer l'écart, vous devez configurer plusieurs comptes écart, spéci
 >  Vous n'avez configuré la tolérance que pour la devise locale. Si vous souhaitez que [!INCLUDE[d365fin](includes/d365fin_md.md)] gère la tolérance pour les paiements, les notes de crédit et les remboursements en devise étrangère, vous devez exécuter le traitement en lot **Modifier la tolérance de paiement** avec une valeur dans le champ **Code devise**.  
 
 > [!NOTE]  
->  Si vous souhaitez recevoir une alerte tolérance de règlement chaque fois que vous reportez une affectation dans la tolérance, vous devez activer l'avertissement tolérance de règlement. Pour plus d'informations, voir la section « Pour activer ou désactiver les alertes de tolérance de règlement ».  
+>  Si vous souhaitez recevoir une alerte tolérance de règlement chaque fois que vous reportez une affectation dans la tolérance, vous devez activer l'avertissement tolérance de règlement. Pour plus d'informations, voir [Pour activer ou désactiver l'avertissement de tolérance de règlement](finance-payment-tolerance-and-payment-discount-tolerance.md#to-enable-or-disable-payment-tolerance-warnings).  
 >   
->  Pour désactiver la tolérance pour un client ou un fournisseur, vous devez bloquer les tolérances sur la fiche client ou fournisseur correspondante. Pour plus d'informations, voir la section « Pour bloquer la tolérance de règlement pour des clients ».  
+>  Pour désactiver la tolérance pour un client ou un fournisseur, vous devez bloquer les tolérances sur la fiche client ou fournisseur correspondante. Pour plus d'informations, voir [Pour bloquer la tolérance de règlement pour des clients](finance-payment-tolerance-and-payment-discount-tolerance.md#to-block-payment-tolerance-for-customers).  
 >   
->  Lorsque vous configurez un écart, [!INCLUDE[d365fin](includes/d365fin_md.md)] vérifie s'il existe des écritures ouvertes et calcule l'écart pour ces écritures.
+>  Lorsque vous configurez une tolérance, [!INCLUDE[d365fin](includes/d365fin_md.md)] vérifie s'il existe des écritures ouvertes et calcule la tolérance pour ces écritures.
 
 ## <a name="to-enable-or-disable-payment-tolerance-warnings"></a>Pour activer ou désactiver les alertes de tolérance de règlement
 L'avertissement de tolérance de règlement apparaît lorsque vous reportez une affectation dont le solde respecte la tolérance autorisée. Vous pouvez alors choisir comment reporter et journaliser le solde.    
@@ -97,24 +97,24 @@ Scénarios comportant deux alternatives, A et B. En voici la signification :
 
 |—|Fact.|Escompte de paiement|Tolérance règlement max.|Date d'escompte de paiement|Tolérance d'escompte de paiement Date|Date de paiement|Règl.|Type de tolérance|Toutes les écritures fermées|Tolérance d'escompte de paiement Cpta/CL|Tolérance règlement Grand livre|  
 |-------|----------|----------------|-----------------------|---------------------|--------------------------|------------------|----------|--------------------|------------------------|------------------------------|----------------------------|  
-|1|1,000|2.0|5|01/15/03|01/20/03|<=15/01/03|985|Tolérance règlement|Oui|0|-5|  
+|1|1,000|20|5|01/15/03|01/20/03|<=15/01/03|985|Tolérance règlement|Oui|0|-5|  
 |2|**1,000**|**20**|**5**|**15/01/03**|**20/01/03**|**<=15/01/03**|**980**|**Aucun**|**Oui**|**0**|**0**|  
-|3|1,000|2.0|5|01/15/03|c|<=15/01/03|975|Tolérance règlement|Oui|0|5|  
-|4A|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|1005|Tolérance d'escompte de paiement|Non, 25 sur Règl.|20/-20|0|  
-|5A|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|1000|Tolérance d'escompte de paiement|Non, 20 sur Règl.|20/-20|0|  
-|6A|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|995|Tolérance d'escompte de paiement|Non, 15 sur Règl.|20/-20|0|  
-|4B|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|1005|Tolérance règlement|Oui|0|-5|  
+|3|1,000|20|5|01/15/03|c|<=15/01/03|975|Tolérance règlement|Oui|0|5|  
+|4A|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|1005|Tolérance d'escompte de paiement|Non, 25 sur Règl.|20/-20|0|  
+|5A|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|1000|Tolérance d'escompte de paiement|Non, 20 sur Règl.|20/-20|0|  
+|6A|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|995|Tolérance d'escompte de paiement|Non, 15 sur Règl.|20/-20|0|  
+|4B|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|1005|Tolérance règlement|Oui|0|-5|  
 |**5B**|**1,000**|**20**|**5**|**15/01/03**|**20/01/03**|**16/01/03 20/01/03**|**1000**|**Aucun**|**Oui**|**0**|**0**|  
-|6B|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|995|Tolérance règlement|Oui|0|5|  
-|7|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|985|Tolérance d'escompte de paiement & Écart règlement|Oui|20/-20|-5|  
-|8|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|980|Tolérance d'escompte de paiement|Oui|20/-20|0|  
-|9|1,000|2.0|5|01/15/03|01/20/03|16/01/03 20/01/03|975|Tolérance d'escompte de paiement & Écart règlement|Oui|20/-20|5|  
-|10|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|1005|Tolérance règlement|Oui|0|-5|  
+|6B|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|995|Tolérance règlement|Oui|0|5|  
+|7|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|985|Tolérance d'escompte de paiement & Écart règlement|Oui|20/-20|-5|  
+|8|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|980|Tolérance d'escompte de paiement|Oui|20/-20|0|  
+|9|1,000|20|5|01/15/03|01/20/03|16/01/03 20/01/03|975|Tolérance d'escompte de paiement & Écart règlement|Oui|20/-20|5|  
+|10|1,000|20|5|01/15/03|01/20/03|>20/01/03|1005|Tolérance règlement|Oui|0|-5|  
 |**11**|**1,000**|**20**|**5**|**15/01/03**|**20/01/03**|**>20/01/03**|**1000**|**Aucun**|**Oui**|**0**|**0**|  
-|12|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|995|Tolérance règlement|Oui|0|5|  
-|13|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|985|Aucun|Non, 15 sur la facture|0|0|  
-|14|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|980|Aucun|Non, 20 sur la facture|0|0|  
-|15|1,000|2.0|5|01/15/03|01/20/03|>20/01/03|975|Aucun|Non, 25 sur la facture|0|0|  
+|12|1,000|20|5|01/15/03|01/20/03|>20/01/03|995|Tolérance règlement|Oui|0|5|  
+|13|1,000|20|5|01/15/03|01/20/03|>20/01/03|985|Aucun|Non, 15 sur la facture|0|0|  
+|14|1,000|20|5|01/15/03|01/20/03|>20/01/03|980|Aucun|Non, 20 sur la facture|0|0|  
+|15|1,000|20|5|01/15/03|01/20/03|>20/01/03|975|Aucun|Non, 25 sur la facture|0|0|  
 
 ### <a name="payment-range-diagrams"></a>Schémas de chaîne de paiement  
 Sur la base du scénario ci-avant, les diagrammes des plages de dates de règlement se présentent sous la forme suivante :  
@@ -262,4 +262,3 @@ Règles d'affectation normales
 [Configuration de Finance](finance-setup-finance.md)  
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

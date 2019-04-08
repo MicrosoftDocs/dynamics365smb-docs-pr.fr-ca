@@ -1,8 +1,8 @@
 ---
 title: "Détails de conception : réservation, chaînage et message d'action | Microsoft Docs"
-description: "Le système de réservation est complet et inclut les fonctionnalités étroitement liées et parallèles du Chaînage et des Messages d'action."
+description: Le système de réservation est complet et inclut les fonctionnalités étroitement liées et parallèles du Chaînage et des Messages d'action.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: design, replenishment, reordering
 ms.date: 11/05/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: f44bbe229db6067531e894be9ae768eb909727e7
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813289"
 ---
 # <a name="design-details-reservation-order-tracking-and-action-messaging"></a>Détails de conception : réservation, chaînage et message d'action
 Le système de réservation est complet et inclut les fonctionnalités étroitement liées et parallèles du Chaînage et des Messages d'action.  
@@ -36,7 +36,7 @@ Le système de réservation est complet et inclut les fonctionnalités étroitem
 ## <a name="reservation"></a>Réservation  
  Une réservation est un lien ferme qui connecte une demande spécifique à un approvisionnement spécifique. Ce lien affecte directement la transaction d'inventaire ultérieure et garantit l'affectation correcte des écritures article à des fins d'évaluation des coûts. Une réservation remplace le mode d'évaluation du stock par défaut d'un article. Pour plus d'informations, voir « Détails de conception : modes évaluation stock ».  
 
- La page **Réservation** est accessible à partir de toutes les lignes d'ordre à la fois des types demande et approvisionnement. Sur la page, l'utilisateur peut spécifier avec quelle écriture demande ou approvisionnement créer un lien réservation. La réservation comporte deux enregistrements qui partagent le même numéro de séquence. Un enregistrement contient un signe négatif et pointe vers la demande. L'autre enregistrement a un signe positif et pointe vers l'approvisionnement. Ces enregistrements sont stockés dans la table **Reservation Entry** avec la valeur d'état **Reservation**. L'utilisateur peut afficher toutes les réservations sur la page **Écritures réservation**.  
+ La page **Réservation** est accessible à partir de toutes les lignes d'ordre à la fois des types demande et approvisionnement. Sur la page, l'utilisateur peut spécifier avec quelle écriture demande ou approvisionnement créer un lien réservation. La réservation comporte deux enregistrements qui partagent le même numéro de séquence. Un enregistrement contient un signe négatif et pointe vers la demande. L'autre enregistrement a un signe positif et pointe vers l'approvisionnement. Ces enregistrements sont stockés dans la table **Écriture de réservation** avec la valeur d'état **Reservation**. L'utilisateur peut afficher toutes les réservations sur la page **Écritures réservation**.  
 
 ### <a name="offsetting-in-reservations"></a>Compensation dans les réservations  
  Les réservations sont effectuées par rapport aux quantités disponibles article. La disponibilité article est calculée en termes de base comme suit :  
@@ -232,4 +232,3 @@ Sur la page **Configuration de la fabrication**, le champ **Composantes à l'emp
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : concepts centraux du système de planification](design-details-central-concepts-of-the-planning-system.md)   
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)
-

@@ -1,8 +1,8 @@
 ---
-title: "Créer des nouvelles écritures valeur pour des articles de l'inventaire| Microsoft Docs"
-description: "Décrit comment réévaluer ou amortir les entrées valeur d'un ou de plusieurs articles dans l'inventaire en reportant leur valeur actuelle calculée."
+title: Créer des nouvelles écritures valeur pour des articles de l'inventaire Microsoft Docs
+description: Décrit comment réévaluer ou amortir les entrées valeur d'un ou de plusieurs articles dans l'inventaire en reportant leur valeur actuelle calculée.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: costing, inventory cost, value entries
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 7dd38fc58ed7bd2aafafa09042a9e23c821c76e4
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813212"
 ---
 # <a name="revalue-inventory"></a>Réévaluer l'inventaire
 Pour réévaluer ou amortir un article ou une écriture article spécifique, vous devez utiliser le journal réévaluation.
@@ -40,4 +40,3 @@ Les nouvelles écritures valeur sont alors créées pour refléter les apprécia
 [Vente](sales-manage-sales.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

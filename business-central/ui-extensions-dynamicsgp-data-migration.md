@@ -1,7 +1,7 @@
 ---
-title: "Migrer des données de Dynamics GP avec l'extension Data Migration | Microsoft Docs"
+title: Migrer des données de Dynamics GP avec l'extension Data Migration | Microsoft Docs
 description: Utilisez l'extension Dynamics GP Data Migration pour migrer des clients, des fournisseurs, des articles en inventaire, des comptes GL, des transactions fournisseurs ouvertes et des transactions clients ouvertes de Dynamics GP vers Business Central.
-documentationcenter: 
+documentationcenter: ''
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -11,12 +11,12 @@ ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize, import, implement
 ms.date: 10/01/2018
 ms.author: edupont
-ms.translationtype: HT
-ms.sourcegitcommit: 34a6789780fb3d55c0a97b29408dca659992f781
 ms.openlocfilehash: 1441e15785b159f7a8c13ee59c8ebea4c32512dc
-ms.contentlocale: fr-ca
-ms.lasthandoff: 01/30/2019
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813103"
 ---
 # <a name="the-dynamics-gp-data-migration-extension"></a>Extension Dynamics GP Data Migration 
 Cette extension permet de migrer facilement des clients, des fournisseurs, des articles en inventaire, des comptes GL, des transactions fournisseurs ouvertes et des transactions clients ouvertes de Dynamics GP vers [!INCLUDE[prodshort](includes/prodshort.md)]. Si votre entreprise utilise Dynamics GP aujourd'hui, vous pouvez exporter les enregistrements appropriés, puis ouvrir un guide de configuration assistée pour ajouter les données vers [!INCLUDE[prodshort](includes/prodshort.md)]. L'extension de migration fonctionne pour toutes les versions prises en charge de Microsoft Dynamics GP. Pour plus d'informations, voir [Importation des données métier à partir d'autres systèmes financiers](across-import-data-configuration-packages.md).
@@ -60,4 +60,3 @@ La dernière option qui apparaît dans l'assistant Migration de données pour Dy
 ## <a name="see-also"></a>Voir aussi
 [Importation des données métier à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  
 [Personnalisation de [!INCLUDE[prodshort](includes/prodshort.md)] à l'aide des extensions ](ui-extensions.md)  
-

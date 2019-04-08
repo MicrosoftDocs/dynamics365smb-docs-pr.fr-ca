@@ -1,23 +1,23 @@
 ---
-title: "Détails de conception - Composantes des coûts | Microsoft Docs"
-description: "Les composantes de coût sont différents types de coûts qui constituent la valeur d'une augmentation ou diminution d'inventaire."
+title: Détails de conception - Composantes des coûts | Microsoft Docs
+description: Les composantes de coût sont différents types de coûts qui constituent la valeur d'une augmentation ou diminution d'inventaire.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
+ms.openlocfilehash: 72538ae86b81ff80154c787ea9306fef7978d1c1
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: e1410e2511b2f1dd27e80ea23d6e08b2b5063158
-ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813272"
 ---
 # <a name="design-details-cost-components"></a>Détails de conception : composants des coûts
 Les composantes de coût sont différents types de coûts qui constituent la valeur d'une augmentation ou diminution d'inventaire.  
@@ -47,4 +47,3 @@ Les composantes de coût sont différents types de coûts qui constituent la val
  [Détails de conception : Ecart](design-details-variance.md) [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
  [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
-

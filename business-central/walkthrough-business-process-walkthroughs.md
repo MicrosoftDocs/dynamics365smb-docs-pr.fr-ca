@@ -1,31 +1,31 @@
 ---
-title: "Procédures pas à pas liées au processus entreprise | Microsoft Docs"
-description: "Cette sélection de procédures fournit des processus commerciaux pas à pas et de bout en bout que vous pouvez suivre avec la compagnie de démonstration CRONUS International Ltd. Elles comportent différentes procédures : certaines d'entre elles sont généralement suivies par un utilisateur, tandis que d'autres impliquent plusieurs rôles utilisateur. Pour simuler l'environnement de travail, certaines procédures pas à pas contiennent les étapes de configuration nécessaires pour effectuer les exercices décrits. Ces étapes indiquent aux utilisateurs le type d'informations qu'ils doivent partager avec les responsables informatiques de leur compagnie."
+title: Procédures pas à pas liées au processus entreprise | Microsoft Docs
+description: "Cette sélection de procédures fournit des processus entreprise pas à pas et de bout en bout que vous pouvez suivre avec la compagnie de démonstration CRONUS International Ltd. Elles comportent différentes procédures : certaines d'entre elles sont généralement suivies par un utilisateur, tandis que d'autres impliquent plusieurs rôles utilisateur. Pour simuler l'environnement de travail, certaines procédures pas à pas contiennent les étapes de configuration nécessaires pour effectuer les exercices décrits. Ces étapes indiquent aux utilisateurs le type d'informations qu'ils doivent partager avec les responsables informatiques de leur compagnie."
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 01/31/2019
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: a94c4f2f8d622a91b74ba0de6f0f18e7eb84a5ef
 ms.openlocfilehash: 350ce32ffff947b8e6aa2182d69e238b5782802f
-ms.contentlocale: fr-ca
-ms.lasthandoff: 01/31/2019
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813042"
 ---
 # <a name="business-process-walkthroughs"></a>Procédures pas à pas liées au processus entreprise
-Cette sélection de procédures fournit des processus commerciaux pas à pas et de bout en bout que vous pouvez suivre avec la compagnie de démonstration CRONUS International Ltd. Elles comportent différentes procédures : certaines d'entre elles sont généralement suivies par un utilisateur, tandis que d'autres impliquent plusieurs rôles utilisateur. Pour simuler l'environnement de travail, certaines procédures pas à pas contiennent les étapes de configuration nécessaires pour effectuer les exercices décrits. Ces étapes indiquent aux utilisateurs le type d'informations qu'ils doivent partager avec les responsables informatiques de leur compagnie.  
+Cette sélection de procédures fournit des processus entreprise pas à pas et de bout en bout que vous pouvez suivre avec la compagnie de démonstration CRONUS International Ltd. Elles comportent différentes procédures : certaines d'entre elles sont généralement suivies par un utilisateur, tandis que d'autres impliquent plusieurs rôles utilisateur. Pour simuler l'environnement de travail, certaines procédures pas à pas contiennent les étapes de configuration nécessaires pour effectuer les exercices décrits. Ces étapes indiquent aux utilisateurs le type d'informations qu'ils doivent partager avec les responsables informatiques de leur compagnie.  
 
  Les procédures pas à pas sont des scénarios complets que vous devez exécuter dans leur intégralité pour en tirer pleinement profit. Nombre d'entre elles sont basées sur les démonstrations [!INCLUDE[d365fin](includes/d365fin_md.md)] et vous permettent de tester les procédures par vous-même, à votre rythme.  
 
 > [!NOTE]
-> Certains guides pas-à-pas utilisent les données de démonstration qui ne sont pas disponibles dans la compagnie CRONUS standard. Pour ces guides pas-à-pas, vous devez effectuer les étapes dans une compagnie créée avec l'option **Évaluation complète - Renseigner des exemples de données**, disponible dans l'environnement Sandbox. Pour plus d’informations, voir [Création d'un environnement Sandbox](across-how-create-sandbox-environment.md).
+> Certains guides pas-à-pas utilisent les données de démonstration qui ne sont pas disponibles dans la compagnie CRONUS standard. Pour ces guides pas-à-pas, vous devez effectuer la procédure dans une compagnie créée avec l'option **Évaluation complète - Exemple de données complètes**, disponible dans l'environnement sandbox. Pour plus d’informations, voir [Création d'un environnement Sandbox](across-how-create-sandbox-environment.md).
 
 |À|Voir|  
 |--------|---------|  
@@ -46,4 +46,3 @@ Cette sélection de procédures fournit des processus commerciaux pas à pas et 
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
-

@@ -1,23 +1,23 @@
 ---
-title: "Procédure : calculer le réapprovisionnement de la zone | Microsoft Docs"
-description: "Lorsque l'emplacement est configuré pour utiliser le prélèvement et le rangement suggérés, les priorités du modèle de rangement de l'emplacement sont prises en compte lors du rangement des réceptions."
+title: 'Procédure : calculer le réapprovisionnement de la zone | Microsoft Docs'
+description: Lorsque l'emplacement est configuré pour utiliser le prélèvement et le rangement suggérés, les priorités du modèle de rangement de l'emplacement sont prises en compte lors du rangement des réceptions.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
+ms.search.keywords: ''
 ms.date: 10/01/2018
 ms.author: sgroespe
-ms.translationtype: HT
-ms.sourcegitcommit: caf7cf5afe370af0c4294c794c0ff9bc8ff4c31c
 ms.openlocfilehash: 9708b248eb9e9f8f1f0e14f9b8d9f02ea84767fa
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/22/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "812949"
 ---
 # <a name="calculate-bin-replenishment"></a>Calculer le réapprovisionnement de la zone
 Lorsque l'emplacement est configuré pour utiliser le prélèvement et le rangement suggérés, les priorités du modèle de rangement de l'emplacement sont prises en compte lors du rangement des réceptions. Les priorités incluent les quantités minimale et maximale du contenu de la zone qui ont été définies pour une zone particulière, ainsi que les classements de zone. Par conséquent, si des articles arrivent régulièrement, les zones prélèvement les plus utilisées sont remplies dès qu'elles sont vides.  
@@ -55,4 +55,3 @@ Lorsque vous calculez un nouvel approvisionnement zone, les propositions supprim
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

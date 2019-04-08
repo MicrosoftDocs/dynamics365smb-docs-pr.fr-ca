@@ -1,23 +1,23 @@
 ---
-title: "Détails de conception- Structure de la table | Microsoft Docs"
-description: "Pour comprendre comment le stockage et le report d'écriture de dimension sont conçus, il est important de comprendre la structure des tables."
+title: Détails de conception- Structure de la table | Microsoft Docs
+description: Pour comprendre comment le stockage et le report d'écriture de dimension sont conçus, il est important de comprendre la structure des tables.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
-ms.date: 10/01/2018
+ms.search.keywords: ''
+ms.date: 02/11/2019
 ms.author: sgroespe
+ms.openlocfilehash: b2e87b2ef999c04cc4c878d4ad087329d644b709
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: d7fb34e1c9428a64c71ff47be8bcff174649c00d
-ms.openlocfilehash: 900605cd276698e3e6146d18e36ed18363b6c99c
-ms.contentlocale: fr-ca
-ms.lasthandoff: 03/22/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813203"
 ---
 # <a name="design-details-table-structure"></a>Détails de conception : structure de la table
 Pour comprendre comment le stockage et le report d'écriture de dimension sont conçus, il est important de comprendre la structure des tables.  
@@ -26,9 +26,9 @@ Pour comprendre comment le stockage et le report d'écriture de dimension sont c
  Trois nouveaux tableaux ont été conçus pour gérer les écritures d'ensemble de dimensions.  
 
 ### <a name="table-480-dimension-set-entry"></a>Table 480 : Écriture de l'ensemble de dimensions  
- La table 480 **Écriture de l'ensemble de dimensions** est une nouvelle table. Vous ne pouvez pas modifier cette table. Une fois les données écrites dans la table, vous ne pouvez plus les supprimer ou les modifier. La suppression de données requiert de vérifier toutes les occurrences du code de l'ensemble de dimensions dans la totalité de la base de données, y compris des solutions partenaire.  
+ Vous ne pouvez pas modifier cette table. Une fois les données écrites dans la table, vous ne pouvez plus les supprimer ou les modifier.
 
-|N° champ|Nom du champ|Type de données|Commentaire|  
+|N° champ|Nom de champ|Type de données|Commentaire|  
 |---------------|----------------|---------------|-------------|  
 |1|**Code**|Entier|>0,0 est réservé à l'ensemble de dimensions vide. Champ de références 3 dans la table 481.|  
 |2|**Code axe analytique**|Code 20|Relation de table avec la table 348.|  
@@ -37,8 +37,8 @@ Pour comprendre comment le stockage et le report d'écriture de dimension sont c
 |5|**Nom axe analytique**|Texte 30|CalcField. Rechercher dans la table 348.|  
 |6|**Nom de la section analytique**|Texte 30|CalcField. Rechercher dans la table 349.|  
 
-#### <a name="table-481-dimension-set-tree-node"></a>Table 481 : Nœud d'arbre ensemble de dimensions  
- La table 481 **Nœud d'arbre ensemble de dimensions** est une nouvelle table. Vous ne pouvez pas modifier cette table. Elle est utilisée pour trouver un ensemble de dimensions. Si l'ensemble de dimensions est introuvable, un nouvel ensemble est créé.  
+### <a name="table-481-dimension-set-tree-node"></a>Table 481 : Nœud d'arborescence ensemble de dimensions  
+ Vous ne pouvez pas modifier cette table. Elle est utilisée pour trouver un ensemble de dimensions. Si l'ensemble de dimensions est introuvable, un nouvel ensemble est créé.  
 
 |N° champ|Nom du champ|Type de données|Commentaire|  
 |---------------|----------------|---------------|-------------|  
@@ -47,12 +47,12 @@ Pour comprendre comment le stockage et le report d'écriture de dimension sont c
 |3|**ID ensemble de dimensions**|Entier|Incrémentez automatiquement. Utilisé dans le champ 1 du tableau 480.|  
 |4|**Utilisé**|Booléen|Faux si non utilisé.|  
 
-##### <a name="table-482-reclas-dimension-set-buffer"></a>Table 482 : Tampon ensemble de dimensions reclass.  
- La table 482 **Tampon ensemble de dimensions reclass.** est une nouvelle table. La table est utilisée pour modifier un Code d'ensemble de dimensions. Il est nécessaire lorsque vous modifiez un code section analytique et un nouveau code section analytique, par exemple, dans la table **Feuille reclassement article**.  
+### <a name="table-482-reclas-dimension-set-buffer"></a>Table 482 : Tampon ensemble de dimensions reclass.  
+ La table est utilisée lorsque vous modifiez un code valeur de dimension, par exemple, pour une écriture article en utilisant la page **Journal reclassement article**.  
 
-|N° champ|Nom du champ|Type de données|Commentaire|  
+|N° champ|Nom de champ|Type de données|Commentaire|  
 |---------------|----------------|---------------|-------------|  
-|1|**Code axe analytique**|Code 20|Relation de table avec la table 348.|  
+|1|**Code de dimension**|Code 20|Relation de table avec la table 348.|  
 |2|**Code section**|Code 20|Relation de table avec la table 349.|  
 |3|**ID section analytique**|Entier|Champ de références 12 dans la table 349.|  
 |4|**Nouveau code section**|Code 20|Relation de table avec la table 349.|  
@@ -71,7 +71,7 @@ Pour comprendre comment le stockage et le report d'écriture de dimension sont c
 |---------------|----------------|---------------|-------------|  
 |480|**ID ensemble de dimensions**|Entier|Champ de références 1 dans la table 480.|  
 
-#### <a name="changes-to-table-83-item-journal-line"></a>Modifications de la ligne journal article de la table 83  
+### <a name="changes-to-table-83-item-journal-line"></a>Modifications de la ligne journal article de la table 83  
  Deux nouveaux champs ont été ajoutés au tableau 83 **Ligne feuille article**.  
 
 |N° champ|Nom du champ|Type de données|Commentaire|  
@@ -79,14 +79,14 @@ Pour comprendre comment le stockage et le report d'écriture de dimension sont c
 |480|**ID ensemble de dimensions**|Entier|Champ de références 1 dans la table 480.|  
 |481|**ID du nouvel ensemble de dimensions**|Entier|Champ de références 1 dans la table 480.|  
 
-##### <a name="changes-to-table-349-dimension-value"></a>Modifications de la valeur de dimension de la table 349  
+### <a name="changes-to-table-349-dimension-value"></a>Modifications de la valeur de dimension de la table 349  
  Un nouveau champ a été ajouté à la table 349 **Section analytique**.  
 
 |N° champ|Nom du champ|Type de données|Commentaire|  
 |---------------|----------------|---------------|-------------|  
 |12|**ID section analytique**|Entier|Incrémentez automatiquement. Utilisé pour références dans le tableau 480 et le tableau 481.|  
 
-###### <a name="tables-that-get-new-field-480-dimension-set-id"></a>Tables qui obtiennent le code d'ensemble de dimensions du nouveau champ 480  
+### <a name="tables-that-get-new-field-480-dimension-set-id"></a>Tables qui obtiennent le code d'ensemble de dimensions du nouveau champ 480  
  Un nouveau champ, 480, **ID ensemble de dimensions** a été ajouté aux tables suivantes. Pour les tables qui stockent des données reportées, le champ fournit seulement un affichage non modifiable des dimensions, marqué comme vue détaillée. Pour les tables qui stockent des documents de travail, le champ peut être modifié. Les tables tampon qui sont utilisées en interne n'ont pas besoin de fonctionnalités modifiables ou non modifiables.  
 
  Le champ 480 ne peut pas être modifié dans les tables suivantes.  
@@ -195,4 +195,3 @@ Pour comprendre comment le stockage et le report d'écriture de dimension sont c
  [Détails de conception : recherche des croisements analytiques](design-details-searching-for-dimension-combinations.md)   
  [Détails de conception : Codeunit 408 Gestion des dimensions](design-details-codeunit-408-dimension-management.md)   
  [Détails de conception : exemples de code de motifs modifiés dans les modifications](design-details-code-examples-of-changed-patterns-in-modifications.md)
-

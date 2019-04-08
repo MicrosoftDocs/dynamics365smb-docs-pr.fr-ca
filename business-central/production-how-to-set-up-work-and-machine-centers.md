@@ -1,23 +1,23 @@
 ---
-title: "Procédure : configurer des ateliers et des unités de production | Microsoft Docs"
-description: "Les fiches **centre de charge** organisent les exigences et les valeurs fixes des ressources de production, et régissent ainsi la production des centres de charge."
+title: 'Procédure : configurer des ateliers et des unités de production | Microsoft Docs'
+description: Les fiches **centre de charge** organisent les exigences et les valeurs fixes des ressources de production, et régissent ainsi la production des centres de charge.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 
-ms.date: 10/01/2018
+ms.search.keywords: ''
+ms.date: 03/08/2019
 ms.author: sgroespe
+ms.openlocfilehash: 2b2db4a7750a9313cc5970ef480518cdbbdca959
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 12d192338fc683cd1de8aa8092b781a559872df1
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813199"
 ---
 # <a name="set-up-work-centers-and-machine-centers"></a>Configurer des ateliers et des unités de production
 L'application distingue trois types de capacité. Ces capacités sont ordonnées de façon hiérarchique. Chaque niveau contient les niveaux subordonnés.  
@@ -48,22 +48,22 @@ La procédure suivante décrit essentiellement comment configurer un atelier. La
 
 9.  Dans le champ **Unité de coût**, indiquez si le calcul ci-dessus doit être basé sur le délai passé : **Heure** ou sur le nombre d'unités produites : **Unités**.  
 10.  Sélectionnez le champ **Coût unitaire spécifique** pour définir le coût unitaire du centre de charge sur la ligne gamme dans laquelle il est utilisé. Ceci peut s'avérer utile pour les opérations dont les coûts capacité diffèrent radicalement de ceux normalement traités dans l'atelier.  
-11.  Dans le champ **Méthode consommation**, indiquez si la validation de production du centre de charge doit être calculée et validée manuellement ou automatiquement, de l'une des manières suivantes.  
+11.  Dans le champ **Méthode consommation**, indiquez si la validation de production du centre de charge doit être calculée et validée manuellement ou automatiquement, de l'une des manières suivantes.
 
-    |Option|Description|  
-    |----------------------------------|---------------------------------------|  
-    |**Manuel**|La consommation est reportée manuellement dans le journal de sortie ou le journal de production.|
-    |**Aval**|La consommation est calculée et reportée automatiquement lorsque le bon de production est libéré.|  
-    |**Amont**|La consommation est calculée et reportée automatiquement lorsque le bon de production est terminé.|  
+|Option|Description|
+|------|-----------|
+|**Manuel**|La consommation est reportée manuellement dans le journal de sortie ou le journal de production.|
+|**Aval**|La consommation est calculée et reportée automatiquement lorsque le bon de production est libéré.|
+|**Amont**|La consommation est calculée et reportée automatiquement lorsque le bon de production est terminé.|
 
-    > [!NOTE]  
-    >  Si nécessaire, vous pouvez modifier la méthode de consommation sélectionnée ici et sur la fiche **article** pour des opérations précises en modifiant le paramétrage des lignes gamme.
+> [!NOTE]
+> Si nécessaire, vous pouvez modifier la méthode de consommation sélectionnée ici et sur la fiche **Article** pour des opérations spécifiques en modifiant le paramètre des lignes itinéraire
 
-12.  Dans le champ **Code unité**, entrez l'unité de temps utilisée pour le calcul de coût et la planification de capacité du centre de charge.
+12.  Dans le champ **Code unité de mesure**, entrez l'unité de temps utilisée pour le calcul de coût et la planification de capacité de l'atelier.
     Pour contrôler en permanence la consommation, vous devez d'abord définir une méthode de mesure. Les unités que vous saisissez sont des unités de base. Par exemple, la durée de traitement est mesurée en heures et en minutes.
 
-    > [!NOTE]  
-    > Si vous choisissez d'utiliser Jours, n'oubliez pas qu'1 jour = 24 heures et non 8 (heures de travail).
+> [!NOTE]  
+> Si vous choisissez d'utiliser Jours, n'oubliez pas qu'1 jour = 24 heures et non 8 (heures de travail).
 
 13.  Dans le champ **Capacité**, indiquez si le centre de charge a plusieurs postes ou personnes travaillant simultanément. Si votre installation de [!INCLUDE[d365fin](includes/d365fin_md.md)] n'inclut pas la fonctionnalité Unité de production, la valeur de ce champ doit être **1**.  
 14.  Dans le champ **Rendement**, entrez le pourcentage de la production standard prévue qui est réalisé par le centre de charge. Si vous entrez **100**, cela signifie que la production réelle du centre de charge est identique à la production standard.  
@@ -106,4 +106,3 @@ Lors de la planification avec des ressources avec contraintes de capacité, le s
 [Stock](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

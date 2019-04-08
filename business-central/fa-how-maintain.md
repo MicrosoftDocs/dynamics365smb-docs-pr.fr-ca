@@ -1,8 +1,8 @@
 ---
-title: "Mettre à jour des immobilisations| Microsoft Docs"
-description: "Vous conservez un enregistrement d'entretien de toutes les réparations et service des immobilisations."
+title: Mettre à jour des immobilisations| Microsoft Docs
+description: Vous conservez un enregistrement d'entretien de toutes les réparations et service des immobilisations.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: repair, service
-ms.date: 10/01/2018
+ms.date: 03/01/2019
 ms.author: sgroespe
+ms.openlocfilehash: af2b52e9bed7661e33945187d45c986ebd9e41f1
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: c19838a8db1200595cb18456884afed9bd35d859
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "812786"
 ---
 # <a name="maintain-fixed-assets"></a>Mettre à jour des immobilisations
 Les frais d'entretien sont des coûts périodiques de routine engagés pour préserver la valeur des immobilisations. Contrairement aux améliorations de capital, ils n'augmentent pas les valeurs.
@@ -43,8 +43,8 @@ Vous pouvez enregistrer chaque tâche entretien, telle qu'une visite de service,
 7. Sélectionnez l'action **Insérer contrepartie immo.**. Une seconde ligne journal est créée pour le compte de contrepartie qui est configuré pour le report de l'entretien.
 
     > [!NOTE]  
-    >   L'étape 7 ne fonctionne que si vous avez configuré ce qui suit : sur la page **Fiche groupe de report immo.** du groupe de report de l'immobilisation, le champ **Compte entretien** contient le compte débit GL et le champ **Compte contrepartie entretien** contient le compte GL dans lequel vous souhaitez reporter les écritures contrepartie pour appréciation. Pour en savoir plus, voir la section « Pour configurer des groupes de report d'immobilisation » dans [Configurer des informations d'immobilisation générales pour les immobilisations](fa-how-setup-general.md).
-8. Sélectionnez l'action **Valider**.
+    >   L'étape 7 ne fonctionne que si vous avez configuré ce qui suit : sur la page **Fiche groupe de report immo.** du groupe de report de l'immobilisation, le champ **Compte entretien** contient le compte débit GL et le champ **Compte contrepartie entretien** contient le compte GL dans lequel vous souhaitez reporter les écritures contrepartie pour appréciation. Pour plus d'informations, voir [Pour configurer des groupes de report immobilisation](fa-how-setup-general.md#to-set-up-fixed-asset-posting-groups).
+8. Sélectionnez l'action **Reporter**.
 
 ## <a name="to-follow-up-on-fixed-assets-service-visits"></a>Pour effectuer le suivi des visites d'entretien des immobilisations
 Vous pouvez imprimer l'état **Maintenance - Service suivant** afin de connaître les immobilisations pour lesquelles vous avez programmé une visite de service. Vous pouvez également utiliser cet état lorsque vous mettez à jour le champ **Date prochain service** des fiches immobilisation.  
@@ -90,4 +90,3 @@ Dans l'état **Maintenance - Détails**, vous pouvez afficher ou imprimer les é
 [Finance](finance.md)  
 [Mise en route](product-get-started.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

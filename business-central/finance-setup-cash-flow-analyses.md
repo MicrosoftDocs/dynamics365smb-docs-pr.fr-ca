@@ -1,8 +1,8 @@
 ---
-title: "Configuration d'une analyse de trésorerie| Microsoft Docs"
-description: "Configurez les graphiques du tableau de bord Comptes pour aider à analyser le flux de trésorerie dans vos activités, y compris les dépenses et les recettes, liquidités, et les règlements entrants moins les règlements sortants."
+title: Configuration d'une analyse de trésorerie| Microsoft Docs
+description: Configurez les graphiques du tableau de bord Comptes pour aider à analyser le flux de trésorerie dans vos activités, y compris les dépenses et les recettes, liquidités, et les règlements entrants moins les règlements sortants.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: money flow, expense and income, liquidity, cash receipts minus cash payments, Cartera, funds
 ms.date: 01/18/2019
 ms.author: bholtorf
-ms.translationtype: HT
-ms.sourcegitcommit: c129dd63b3aabeeac15c6684f961e04bd2b08a2a
 ms.openlocfilehash: 24fad5d816260764a3eb2c476e5bff86268790a1
-ms.contentlocale: fr-ca
-ms.lasthandoff: 01/24/2019
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813365"
 ---
 # <a name="setting-up-cash-flow-analysis"></a>Configuration d'une analyse de trésorerie
 Si vous souhaitez de l'aide pour décider quelles opérations effectuer avec votre trésorerie, consultez les graphiques dans le tableau de bord Comptable :  
@@ -58,7 +58,7 @@ Pour les configurer, recherchez **comptes de trésorerie**, choisissez le lien, 
 ## <a name="set-up-cash-flow-forecasts"></a>Configurer les prévisions de trésorerie
 Le graphique **Prévision de trésorerie** utilise les comptes de trésorerie, les paramétrages de trésorerie et les prévisions de trésorerie. Certains comptes sont fournis, cependant, vous pouvez définir les vôtres à l'aide d'un guide de configuration assistée. Le guide vous aide à spécifier des éléments, tels que la fréquence de mise à jour des prévisions, les comptes sur lesquels les baser, les informations concernant l'échéance de paiement des taxes et s'il convient d'utiliser [Cortana Intelligence](https://www.microsoft.com/en-us/cloud-platform/what-is-cortana-intelligence-suite).  
 
-Les prévisions de la trésorerie peuvent utiliser Cortana Intelligence pour inclure des documents contenant une date d'échéance future. Le résultat est une prévision plus complète. La connexion à Cortana Intelligence est déjà configurée pour vous. Vous devez juste l'activer. Lorsque vous vous connectez à [!INCLUDE[d365fin](includes/d365fin_md.md)], une notification s'affiche dans une barre bleue et inclut un lien vers le paramétrage par défaut de trésorerie. La notification s'affiche une seule fois. Si vous la fermez, mais décidez d'activer Cortana Intelligence, vous pouvez utiliser le guide de configuration assistée ou un processus manuel.  
+Les prévisions de la trésorerie peuvent utiliser Cortana Intelligence pour inclure des documents contenant une date d'échéance future. Le résultat est une prévision plus complète. La connexion à Cortana Intelligence est déjà configurée pour vous. Vous devez juste l'activer. Lorsque vous vous connectez à [!INCLUDE[d365fin](includes/d365fin_md.md)], une notification s'affiche dans une barre bleue et inclut un lien vers la configuration par défaut de la trésorerie. La notification s'affiche une seule fois. Si vous la fermez, mais décidez d'activer Cortana Intelligence, vous pouvez utiliser le guide de configuration assistée ou un processus manuel.  
 
 > [!NOTE]  
 >   Sinon, vous pouvez utiliser votre propre service Web prévisionnel. Pour plus d'informations, voir [Créer et utiliser votre propre service Web prévisionnel pour des prévisions de trésorerie](#AnchorText).  
@@ -72,9 +72,9 @@ Pour utiliser le guide de configuration assistée :
 
 Pour utiliser une procédure manuelle :  
 
-1. Dans le tableau de bord Comptable, recherchez **Paramètres trésorerie**, puis sélectionnez le lien associé.  
-2. Développez le raccourci **Cortana Intelligence**, puis cochez la case **Cortana Intelligence activé**.  
-3. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Prévision de la trésorerie**, puis sélectionnez le lien associé.
+1. Dans le tableau de bord Comptable, recherchez **Configuration trésorerie**, puis sélectionnez le lien associé.  
+2. Affichez l'organisateur **Cortana Intelligence**, puis activez la case à cocher **Cortana Intelligence Activé**.  
+3. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prévision de la trésorerie**, puis sélectionnez le lien associé.
 4. Sur la page **Prévision de la trésorerie**, choisissez l'action **Recalculer la prévision**.  
 
 > [!TIP]  
@@ -88,11 +88,10 @@ Vous pouvez aussi utiliser votre propre service Web prévisionnel basé sur un m
 3. Utilisez votre compte Microsoft pour enregistrer un espace de travail, puis copiez le modèle.  
 4. Exécutez le modèle, et publiez-le comme service Web.  
 5. Notez l'URL d'API et la clé d'API. Vous allez utiliser ces informations d'identification pour une configuration de trésorerie.  
-6. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration trésorerie**, puis sélectionnez le lien associé.  
-7. Développez le raccourci **Cortana Intelligence**, puis complétez les champs.  
+6. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration trésorerie**, puis sélectionnez le lien associé.  
+7. Développez l'organisateur **Cortana Intelligence** et renseignez les champs.  
 
 ## <a name="see-also"></a>Voir aussi
-[Analyse de la trésorerie dans votre société](finance-analyze-cash-flow.md)  
+[Analyse de la trésorerie dans votre compagnie](finance-analyze-cash-flow.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

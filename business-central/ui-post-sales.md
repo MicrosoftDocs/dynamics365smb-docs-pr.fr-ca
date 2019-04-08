@@ -1,8 +1,8 @@
 ---
 title: Familiarisation avec le report des documents vente | Microsoft Docs
-description: "En savoir plus sur les différentes fonctions de report pour reporter des documents vente."
+description: En savoir plus sur les différentes fonctions de report pour reporter des documents vente.
 services: project-madeira
-documentationcenter: 
+documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/01/2018
 ms.author: solsen
-ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
 ms.openlocfilehash: 7ada688f7946d7f857dc6d4a6518b8bcb4e5c707
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813385"
 ---
 # <a name="posting-sales"></a>Report des ventes
 Dans le groupe **Validation** sur un document vente, vous pouvez faire votre choix parmi les fonctions de validation suivantes :
@@ -46,5 +46,4 @@ Lorsque le report est terminé, les lignes vente reportées sont supprimées de 
 [Ventes](sales-manage-sales.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-
 

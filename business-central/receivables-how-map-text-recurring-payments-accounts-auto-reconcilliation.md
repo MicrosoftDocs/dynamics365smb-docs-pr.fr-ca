@@ -1,6 +1,6 @@
 ---
-title: "Paramétrage de la mise en correspondance du texte avec le compte pour les paiements récurrents | Microsoft Docs"
-description: "Lier le texte sur les paiements à des comptes spécifiques, afin que les paiements soient reportés dans les comptes lorsque vous reportez le journal rapprochement bancaire."
+title: Paramétrage de la mise en correspondance du texte avec le compte pour les paiements récurrents | Microsoft Docs
+description: Lier le texte sur les paiements à des comptes spécifiques, afin que les paiements soient reportés dans les comptes lorsque vous reportez le journal rapprochement bancaire.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: account linking, direct payment posting, automatic payment processing, reconcile payment, recurring expense, recurring cash receipt
-ms.date: 10/01/2018
+ms.date: 03/05/2019
 ms.author: sgroespe
+ms.openlocfilehash: 357febcb3984db658c0742f013aff65301ae6f42
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: 492ab7550a82f291566c0170ae42ba46de0ad292
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813021"
 ---
 # <a name="map-text-on-recurring-payments-to-accounts-for-automatic-reconciliation"></a>Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique
 Sur la page **Correspondance texte et compte** à laquelle vous accédez à partir de la page **Journal rapprochement paiement**, vous pouvez configurer des mappages entre le texte des paiements et des comptes de débit, de crédit et de contrepartie spécifiques afin que ces paiements soient reportés dans les comptes spécifiés lorsque vous reportez le journal rapprochement de paiement.
@@ -53,10 +53,7 @@ Pour toujours reporter les frais de carburant encourus aux stations service Shel
 
 | Correspondance texte | N° cpte débit | N° cpte crédit | Type origine solde | N° origine solde |
 | --- | --- | --- | --- | --- |
-| Shell |VIDE |8510 |Compte général |VIDE |
-
-> [!TIP]  
->   Pour plus d'informations sur l'utilisation des champs et des colonnes, reportez-vous à [Utilisation de [!INCLUDE[d365fin](includes/d365fin_long_md.md)]](ui-work-product.md). Pour plus d'informations sur la recherche de pages spécifiques, reportez-vous à [Rechercher](ui-search.md)..
+| Shell |VIDE |8510 |Compte du grand livre |VIDE |
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion des comptes client](receivables-manage-receivables.md)  
@@ -64,4 +61,3 @@ Pour toujours reporter les frais de carburant encourus aux stations service Shel
 [Configurer le service de flux de la Envestnet Yodlee Bank](bank-how-setup-bank-statement-service.md)  
 [Personnalisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide des extensions](ui-extensions.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

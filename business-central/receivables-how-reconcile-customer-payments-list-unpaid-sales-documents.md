@@ -1,6 +1,6 @@
 ---
-title: "Affecter des paiements à des documents vente échus | Microsoft Docs"
-description: "Vous affectez les montants payés par les clients avec des documents vente associés et reportez le paiement pour mettre à jour le client, le grand livre et les écritures bancaires."
+title: Affecter des paiements à des documents vente échus | Microsoft Docs
+description: Vous affectez les montants payés par les clients aux documents vente associés et reportez le paiement pour mettre à jour les écritures client, grand livre et banque.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -8,22 +8,22 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, cash receipts, customer payment
-ms.date: 10/17/2018
+ms.date: 03/01/2019
 ms.author: sgroespe
+ms.openlocfilehash: b437246b22583e8e040bef78811765297ae2e675
+ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
 ms.translationtype: HT
-ms.sourcegitcommit: 33b900f1ac9e295921e7f3d6ea72cc93939d8a1b
-ms.openlocfilehash: e00d7bb259ad8a8a494016746179b428b7975a8f
-ms.contentlocale: fr-ca
-ms.lasthandoff: 11/26/2018
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "813138"
 ---
-# <a name="reconcile-customer-payments-manually-from-a-list-of-unpaid-sales-documents"></a>Rapprocher les paiements client manuellement à partir de la liste des documents vente échus
+# <a name="reconcile-customer-payments-from-a-list-of-unpaid-sales-documents"></a>Rapprocher les paiements client à partir de la liste des documents vente échus
 Lorsque vos clients ont effectué des paiements sur votre compte bancaire électronique, vous devez affecter chaque montant payé au document vente associé, puis reporter le paiement pour mettre à jour les écritures client, grand livre et banque. Selon les besoins de votre entreprise, vous pouvez être payé et enregistrer ce paiement de diverses manières : manuellement, automatiquement, et via des services de paiement.  
 
 > [!NOTE]  
 >   Vous pouvez effectuer les mêmes tâches, y compris les paiements fournisseur sur la page **Journal rapprochement paiement** à l'aide des fonctions dédiées à l'importation de relevés bancaires, à l'affectation automatique et au rapprochement de comptes bancaires. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
 
-La page **Enregistrer les paiements client** est conçue pour vous aider à réaliser les tâches de contrepartie des comptes internes à l'aide des chiffres réels pour vous assurer que les paiements sont collectés de façon efficace auprès des clients. Cet outil de traitement des paiements vous permet de vérifier et de reporter rapidement des paiements individuels ou forfaitaires, de traiter les paiements avec escompte, et de rechercher des documents impayés spécifiques pour lesquels un paiement est effectué.
+La page **Enregistrer les paiements client** est conçue pour vous aider à réaliser les tâches de contrepartie des comptes internes à l'aide des chiffres réels pour vous assurer que les paiements sont collectés de façon efficace auprès des clients. Cet outil de traitement des paiements vous permet de vérifier et de reporter rapidement des paiements individuels ou forfaitaires, de traiter les paiements avec escomptes, et de rechercher des documents impayés spécifiques pour lesquels un paiement est effectué.
 
 Les paiements pour des clients différents qui ont des dates d'échéance différentes doivent être reportés en tant que paiements individuels. Les paiements pour le même client qui ont la même date d'échéance peuvent être reportés comme paiement forfaitaire. Cela est utile, par exemple, lorsqu'un client a effectué un paiement unique qui couvre plusieurs factures vente.
 
@@ -54,12 +54,12 @@ Les informations de paiement saisies sont validées pour les documents représen
 
 Les écritures paiement sont reportées sur les comptes grand livre, bancaire et client. Chaque paiement est affecté au document vente reporté lié.  
 
-## <a name="to-reconcile-lump-payments"></a>Pour rapprocher des paiements forfaitaires
+## <a name="to-reconcile-lump-sum-payments"></a>Pour rapprocher des paiements forfaitaires
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Enregistrement de paiement**, puis sélectionnez le lien associé.
-2. Cochez la case **Paiement effectué** pour les lignes représentant les documents validés pour le même client pour lequel un paiement forfaitaire a été effectué.  
+2. Cochez la case **Paiement effectué** pour les lignes représentant les documents reportés pour le même client pour lequel un paiement forfaitaire a été effectué.  
 
     > [!NOTE]  
-    >   Le champ **Nom** du client doit être le même sur toutes les lignes validées comme paiement forfaitaire.  
+    >   Le client dans le champ **Nom** doit être identique sur toutes les lignes reportées comme paiement forfaitaire.  
 
     Si la case **Renseigner automatiquement la date de réception** est cochée sur la page **Configuration de l'enregistrement de paiement**, la date de travail est renseignée dans le champ **Date de réception**.  
 3. Dans le champ **Date de réception**, entrez la date de réception du paiement. Cette date peut être différent de la date de travail.  
@@ -69,17 +69,17 @@ Les écritures paiement sont reportées sur les comptes grand livre, bancaire et
 4. Dans le champ **Montant reçu**, entrez les montants sur plusieurs lignes pour obtenir le paiement forfaitaire.  
 
     > [!TIP]  
-    >   Essayez de reporter le plus de paiements intégraux possible avec le montant forfaitaire. Entrez des montants identiques au montant du champ **Montant ouvert** sur autant de lignes que possible.  
-5. Répétez les phases 2 à 4 pour les autres lignes représentant les documents reportés pour le même client pour lequel un paiement forfaitaire a été effectué.  
-6. Sélectionnez l'action **Valider comme paiement forfaitaire**. Les informations de paiement saisies sont validées pour les documents représentés par les lignes dont la case **Paiement effectué** est cochée.  
+    > Essayez de reporter le plus de paiements intégraux possible avec le montant forfaitaire. Entrez des montants identiques au montant du champ **Montant ouvert** sur autant de lignes que possible.  
+5. Répétez les étapes 2 à 4 pour les autres lignes représentant les documents reportés pour le même client pour lequel un paiement forfaitaire a été effectué.  
+6. Sélectionnez l'action **Reporter comme paiement forfaitaire**. Les informations de paiement saisies sont validées pour les documents représentés par les lignes dont la case **Paiement effectué** est cochée.  
 
 Les écritures paiement sont reportées sur les comptes grand livre, bancaire et client. Chaque paiement est affecté au document vente reporté lié.  
 
-Si un paiement à la banque n'est pas représenté par une ligne sur la page **Enregistrement de paiement**, cela peut être parce que le document connexe n'a pas encore été reporté. Dans ce cas, vous pouvez utiliser la fonction de recherche pour trouver rapidement le document et le reporter pour traiter le paiement. Pour plus d'informations, voir la section « Pour rechercher un document vente spécifique qui n'est pas totalement facturé ».  
+Si un paiement à la banque n'est pas représenté par une ligne sur la page **Enregistrement de paiement**, cela peut être parce que le document connexe n'a pas encore été reporté. Dans ce cas, vous pouvez utiliser la fonction de recherche pour trouver rapidement le document et le reporter pour traiter le paiement. Pour plus d'informations, voir [Pour rechercher un document vente spécifique qui n'est pas totalement facturé](receivables-how-reconcile-customer-payments-list-unpaid-sales-documents.md#to-find-a-specific-sales-document-that-is-not-fully-invoiced).  
 
-Si un paiement avec la banque n'est représenté par aucun document dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez ouvrir une ligne journal général préremplie depuis la page **Enregistrement de paiement** pour reporter le paiement directement dans le compte de contrepartie sans affecter le paiement à un document. Sinon, vous pouvez enregistrer le paiement dans le journal jusqu'à ce que l'origine du paiement soit résolue. Pour plus d'informations, reportez-vous à la section « Pour enregistrer ou reporter un paiement sans document connexe ».  
+Si un paiement avec la banque n'est représenté par aucun document dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez ouvrir un journal général prérempli depuis la page **Enregistrement de paiement** pour reporter le paiement directement dans le compte de contrepartie sans affecter le paiement à un document. Sinon, vous pouvez enregistrer le paiement dans le journal jusqu'à ce que l'origine du paiement soit résolue. Pour plus d'informations, voir [Pour enregistrer ou reporter un paiement sans document connexe](receivables-how-reconcile-customer-payments-list-unpaid-sales-documents.md#to-record-or-post-a-payment-without-a-related-document).  
 
-## <a name="to-process-customer-payments-with-discounts-manually"></a>Pour traiter manuellement les paiements client avec remises
+## <a name="to-process-customer-payments-with-discounts-manually"></a>Pour traiter manuellement les paiements client avec escomptes
 Si vous avez convenu d'un escompte de paiement avec le client, les montants règlement peuvent être inférieurs aux montants facture si le paiement est effectué avant la date d'escompte convenue.  
 
 Les procédures suivantes expliquent quatre méthodes différentes permettant de reporter des paiements avec escompte sur la page **Enregistrement de paiement**.  
@@ -187,4 +187,3 @@ Si vous laissez la ligne journal non reportée, elle s'ajoutera à la valeur du 
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Ventes](sales-manage-sales.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-
