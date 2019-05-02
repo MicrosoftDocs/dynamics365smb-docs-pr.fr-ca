@@ -1,1 +1,0 @@
-<span data-ttu-id="ecfef-101">Dynamics 365 for Finance and Operations, Business edition</span><span class="sxs-lookup"><span data-stu-id="ecfef-101">Dynamics 365 for Finance and Operations, Business edition</span></span>
