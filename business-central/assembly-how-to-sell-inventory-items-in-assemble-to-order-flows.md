@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: kit, kitting
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 5b01e3cb4d8ea09d08a546fb0af25dc0879111eb
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: 188df39e5381f331da338aec1284b44f4e329977
+ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "813494"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "931828"
 ---
 # <a name="sell-inventory-items-in-assemble-to-order-flows"></a>Vente d'articles d'inventaire dans des flux à assembler pour commande
 Si le champ **Politique d'assemblage** de la fiche article d'un élément d'assemblage indique **Assembler pour commande**, le processus par défaut de document de vente considère que l'article n'est pas en inventaire et doit être assemblé pour ce document de vente spécifique. Par conséquent, un ordre d'assemblage lié est automatiquement créé lorsque vous ajoutez l'article à une ligne document de vente. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md). Toutefois, si une partie de la quantité sur commande vente est déjà disponible en stock, alors vous pouvez diminuer la quantité d'ordre d'assemblage en changeant le champ **Quantité à assembler pour commande** de la ligne commande vente.  

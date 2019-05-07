@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: dda69814c0f8b2a21a3e927e2e357817090549f4
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: 4ee990616a15beda08a6277b1568f1fc8eef44e8
+ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "813515"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "917611"
 ---
 # <a name="design-details-integration-with-inventory"></a>Détails de conception : intégration avec l'inventaire
 Les modules Warehouse Management et Inventaire interagissent dans l'inventaire physique et dans l'ajustement de l'inventaire ou de l'entrepôt.  

@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 03/01/2019
+ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 6f5c798587c832b25ef2ead944fc5f5f8ea89644
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: 9996dce18755a48be903fabdfcb381a5d6ee5398
+ms.sourcegitcommit: addfb47612cc2e4e98dfd7e338b6f41cde405d5c
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "814104"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "939210"
 ---
 # <a name="convert-existing-locations-to-warehouse-locations"></a>Convertir des emplacements existants en entrepôts
 Vous pouvez permettre à un emplacement d'inventaire d'utiliser les zones et de devenir l'entrepôt.  
@@ -37,10 +37,10 @@ Vous pouvez créer des zones et des emplacements avant ou après la conversion. 
     À l'aide des écritures article ouvertes pour l'emplacement spécifié, des lignes journal entrepôt sont créées, lesquelles additionnent les combinaisons N° article, Code variante, Code unité de mesure et, si nécessaire, N° lot et N° de série dans les écritures article. Les lignes journal entrepôt sont ensuite reportées. Ce report crée des écritures d'entrepôt qui placent l'inventaire dans la zone d'ajustement entrepôt. Le **code emplacement ajustement** est également défini dans la fiche magasin.  
 
 4.  Pour savoir quels articles ont été ajoutés à l'emplacement ajustement pendant le traitement par lots, vous pouvez exécuter l'état **Emplacement ajust. mag**.  
-5.  Une fois le traitement par lots **Création entrepôt** terminé, vous devez effectuer et valider un inventaire physique entrepôt. Pour plus d'informations, voir [Nombre, ajustement et reclassement de l'inventaire](inventory-how-count-adjust-reclassify.md).  
+5.  Une fois le traitement par lots **Création entrepôt** terminé, vous devez effectuer et valider un inventaire physique entrepôt. Pour plus d'informations, voir [Inventaire, ajustement et reclassement de l'inventaire avec les journaux](inventory-how-count-adjust-reclassify.md).  
 
 > [!NOTE]  
->  Il est recommandé de lancer le traitement par lots **Création entrepôt** à un moment où il ne risque pas de nuire au fonctionnement habituel du système. Étant donné que ce processus traite chaque écriture de la table **Écriture comptable article**, il peut durer plusieurs heures si cette table en comporte un grand nombre.  
+>  Il est recommandé de lancer le traitement en lot **Création entrepôt** à un moment où il ne risque pas de nuire au fonctionnement habituel du système. Étant donné que ce processus traite chaque écriture de la table **Écriture comptable article**, il peut durer plusieurs heures si cette table en comporte un grand nombre.  
 
  Dans le cas d'emplacements n'ayant pas utilisé de documents de gestion d'entrepôt avant la conversion, vous devez rouvrir et libérer les documents sources dont la réception ou la livraison n'était que partielle avant la conversion.  
 

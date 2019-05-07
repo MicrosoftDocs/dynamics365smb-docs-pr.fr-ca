@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: ace9e09a1f57310e93bb86422c492383690bc04b
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: f5dbe1ec1dfa765ead07b7fcd0dd2c860d055ae1
+ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "813184"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "916361"
 ---
 # <a name="design-details-cost-adjustment"></a>Détails de conception : ajustement des coûts
 L'objet principal de l'ajustement des coûts est de transférer les changements depuis les sources de coût aux destinataires de coût, selon le mode d'évaluation coût d'un article, pour fournir une évaluation de l'inventaire correcte.  

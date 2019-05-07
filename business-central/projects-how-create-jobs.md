@@ -1,23 +1,19 @@
 ---
 title: Créer une fiche projet pour un projet et spécifier des tâches| Microsoft Docs
 description: Pour un nouveau projet, vous créez une fiche projet qui contient les tâches projet et les lignes planification, pour vous aider à gérer la progression et les budgets.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: project management, task
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 5db9709500ce20bc09e2dc651ae6b7aa763c0e5f
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: 2e2ab155f4d326ab16b7730e64711d5b91343768
+ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "813274"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "915633"
 ---
 # <a name="create-jobs"></a>Créer des projets
 Lorsque vous démarrez un nouveau projet, vous devez créer une fiche projet avec des tâches intégrées et des lignes planification structurées en deux couches.  
@@ -28,11 +24,11 @@ La seconde couche inclut les lignes planification projet, qui spécifient l'util
 
 La structure de couche permet de séparer le projet en tâches plus petites et ainsi d'utiliser des détails plus spécifiques dans l'établissement du budget, les devis et l'enregistrement. En outre, elle vous donne un aperçu de la progression d'un projet. Par exemple, vous pouvez rechercher si vous respectez les étapes importantes fixées ou si vous êtes en passe de satisfaire les attentes budgétaires.
 
-> [!NOTE]  
->   L'action **Nouveau projet** du tableau de bord **Chef de projet** lance une configuration assistée qui vous guide dans les étapes de création d'un projet avec des tâches intégrées et des lignes planning. La procédure suivante décrit comment exécuter les étapes manuellement.
+> [!TIP]
+> Choisissez l'action **Nouveau projet** du tableau de bord **Chef de projet** pour lancer un guide de configuration assistée qui vous dirige à travers les étapes de création d'un projet avec des tâches intégrées et des lignes planification. La procédure suivante décrit comment exécuter les étapes manuellement. Pour obtenir un exemple de la procédure pour créer manuellement un projet, reportez-vous à la rubrique [Vidéo : Créer un projet dans Dynamics 365 Business Central](https://www.youtube.com/watch?v=VqaPWr7BWmw).
 
 ## <a name="to-create-a-job-card"></a>Pour créer une fiche projet
-Vous devez créer une fiche projet, puis créer des Lignes tâche projet et des lignes planification projet pour ce projet.
+Vous devez créer une fiche projet, puis créez des Lignes tâche projet et des lignes planification projet pour ce projet.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projets**, puis sélectionnez le lien associé.  
 2. Cliquez sur **Nouveau**, puis renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -68,11 +64,13 @@ Une ligne planification projet peut avoir l'un des types suivants :
 2. Ouvrez la fiche projet appropriée.
 3. Sélectionnez une tâche projet pour laquelle le champ **Type tâche projet** contient **Validation** puis, cliquez sur **Lignes planning projet**.  
 4. Sur la page **Lignes planification projet**, renseignez les champs, le cas échéant sur une nouvelle ligne.
-5. Répétez les phases 3 et 4 pour toutes les lignes planification dont vous avez besoin pour la tâche projet.
+5. Répétez les étapes 3 et 4 pour toutes les lignes planification dont vous avez besoin pour la tâche projet.
 
 ## <a name="see-also"></a>Voir aussi
+
 [Gestion de projets](projects-manage-projects.md)  
+[Vidéo : Créer un projet dans Dynamics 365 Business Central](https://www.youtube.com/watch?v=VqaPWr7BWmw)  
 [Finances](finance.md)  
-[Achats](purchasing-manage-purchasing.md)         
-[Ventes](sales-manage-sales.md)      
+[Achats](purchasing-manage-purchasing.md)  
+[Ventes](sales-manage-sales.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

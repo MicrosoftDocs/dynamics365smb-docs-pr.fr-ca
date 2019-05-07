@@ -8,19 +8,19 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 11/26/2018
+ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 0a8172f0c8770235291e7b9a29663f15932f38b4
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: 382a95a579482a56597ffae053c53dab92f3739a
+ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "813710"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "914437"
 ---
 # <a name="set-up-data-exchange-definitions"></a>Configurer les définitions d'échange de données
 Vous pouvez configurer [!INCLUDE[d365fin](includes/d365fin_md.md)] pour échanger des données de tables spécifiques avec des données de fichiers externes, par exemple pour recevoir et envoyer des documents électroniques, importer et exporter des données bancaires ou d'autres données, telles que les salaires, les taux de change des devises et les catalogues article. Pour plus d'informations, voir [Échanger des données par voir électronique](across-data-exchange.md).  
 
-Afin de vous préparer à créer une définition d'échange de données pour un fichier ou un flux de données, vous pouvez utiliser le schéma XML associé pour les définir les éléments de données à inclure dans le raccourci **Définitions de colonnes**. Consultez l'étape 6 dans la section « Décrire le formatage de lignes et de colonnes dans un fichier ». Pour plus d'informations, voir [Utiliser des schémas XML pour préparer des définitions d'échange de données](across-how-to-use-xml-schemas-to-prepare-data-exchange-definitions.md).  
+Afin de vous préparer à créer une définition d'échange de données pour un fichier ou un flux de données, vous pouvez utiliser le schéma XML associé pour les définir les éléments de données à inclure dans le raccourci **Définitions de colonnes**. Consultez l'étape 6 dans la section [Décrire le formatage de lignes et de colonnes dans un fichier](across-how-to-set-up-data-exchange-definitions.md#to-describe-the-formatting-of-lines-and-columns-in-the-file). Pour plus d'informations, voir [Utiliser des schémas XML pour préparer des définitions d'échange de données](across-how-to-use-xml-schemas-to-prepare-data-exchange-definitions.md).  
 
 Créez des définitions d'échange de données normalement sur la page **Définition d'échange de données**. Néanmoins, lorsque vous déterminez la définition d'échange de données pour le service d'actualisation des taux de change des devises, démarrez le processus sur la page simplifiée **Fiche Configuration de mise à jour des taux de change**.  
 
@@ -39,7 +39,10 @@ La création d'une définition d'échange de données implique deux tâches :
 1. Sur la page **Définition d'échange de données**, décrivez la mise en forme des lignes et des colonnes du fichier.  
 2. Sur la page **Correspondance échange de données**, associez les colonnes du fichier de données avec les champs de [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
-     Ceci est décrit dans les procédures suivantes.  
+Ceci est décrit dans les procédures suivantes.  
+
+> [!TIP]
+> Pour voir quels codeunits Microsoft utilise dans les définitions existantes dans le produit standard, consultez les trois champs **Codeunit** de l'en-tête de la page **Mappage de champs** pour chaque définition.
 
 #### <a name="to-describe-the-formatting-of-lines-and-columns-in-the-file"></a>Pour décrire le formatage des lignes et des colonnes dans le fichier  
 1. Dans la zone **Rechercher**, entrez **Définitions d'échange de données**, puis sélectionnez le lien associé.  

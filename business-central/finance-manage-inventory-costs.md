@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 11/27/2018
+ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: d5f5885055aa1094e4172d4a4e327ff1e940f799
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: 45cb61d9aad987c06be4b9d0701dba1fb50bb78a
+ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "813562"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "929129"
 ---
 # <a name="managing-inventory-costs"></a>Gestion des coûts ajustés
 La gestion des coûts, aussi appelée « évaluation des coûts », se charge de l'enregistrement et du report des coûts d'exploitation de la compagnie. Inclut le report des coûts de fabrication et des coûts inventaire qui constituent la valeur des articles.   

@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize, budget
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.author: edupont
-ms.openlocfilehash: 3ae36c5cb7f1738bded3947c99c197221a621f07
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: 6f31f95b521135ce51a8bc9c82dd6b48cec103bf
+ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "813908"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "916182"
 ---
 # <a name="the-sales-and-inventory-forecast-extension"></a>Extension Prévision des ventes et de l'inventaire
 La gestion de l'inventaire est un compromis entre le service client et la gestion de vos coûts. D'une part, un inventaire faible exige un capital de travail inférieur, mais d'autre part, les ruptures d'inventaire mènent potentiellement à des ventes non concrétisées. L'extension Prévision des ventes et de l'inventaire prévoit les ventes potentielles à l'aide des données historiques et donne une présentation claire des ruptures d'inventaire prévues. Selon la prévision, l'extension aide à créer des demandes de réapprovisionnement auprès de vos fournisseurs et vous fait gagner du temps.  

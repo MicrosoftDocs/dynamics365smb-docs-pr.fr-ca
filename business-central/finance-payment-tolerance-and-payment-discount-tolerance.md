@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 03/01/2019
+ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 83680cb4583cfe24deca310cb9c74ba9ab7b50f1
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: def9338cea3a1998aafac671e304c55f83fdece7
+ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "812832"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "932728"
 ---
 # <a name="work-with-payment-tolerances-and-payment-discount-tolerances"></a>Utilisation des tolérances de règlement et des tolérances d'escompte de paiement
 Vous pouvez configurer une tolérance de règlement de manière à fermer une facture lorsque le paiement ne couvre pas entièrement le montant de la facture. Vous pouvez configurer une tolérance d'escompte de paiement pour accorder un escompte de paiement après expiration de la date d'escompte de paiement.  

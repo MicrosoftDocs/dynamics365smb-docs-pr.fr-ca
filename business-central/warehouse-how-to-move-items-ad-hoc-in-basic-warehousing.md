@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 7b753f291ebc4fefee523430e1b10d091e86cd0e
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: b3760be8694f8c65ae07abaea9234a5dd524bb47
+ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "814162"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "913117"
 ---
 # <a name="move-items-ad-hoc-in-basic-warehouse-configurations"></a>Déplacer des articles ad hoc dans les configurations de stockage de base
 Vous pouvez être amené à déplacer des articles d'une zone interne vers une autre (et non vers des zones de réception ou de livraison) sans demande spécifique issue d'un document source. Vous pouvez exécuter ces mouvements ad hoc, par exemple, pour réorganiser l'entrepôt, pour acheminer des articles vers une zone d'inspection, ou pour déplacer des articles supplémentaires vers et depuis une zone de production sans qu'il existe une relation système avec le document origine du bon de production.  
@@ -57,7 +57,7 @@ Dans les configurations d'entrepôt de base, où les emplacements utilisent le c
     Vous effectuez le reste du mouvement ad hoc sur la page **Mouvement d'inventaire** de la même manière que pour un mouvement basé sur des documents origine. Pour plus d'informations, voir par exemple [Déplacer les composantes vers une zone opérations dans les configurations de stockage de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md)  
 
 ## <a name="to-move-items-with-the-item-reclassification-journal"></a>Pour déplacer des articles à l'aide du journal reclassement article
-Au lieu d'utiliser des documents mouvement entrepôt, vous pouvez enregistrer le déplacement d'articles en reclassant leurs codes de zone. Pour plus d'informations, voir [Nombre, ajustement et reclassement de l'inventaire](inventory-how-count-adjust-reclassify.md).   
+Au lieu d'utiliser des documents mouvement entrepôt, vous pouvez enregistrer le déplacement d'articles en reclassant leurs codes de zone. Pour plus d'informations, voir [Inventaire, ajustement et reclassement de l'inventaire avec les journaux](inventory-how-count-adjust-reclassify.md).   
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal reclassement article**, puis sélectionnez le lien associé.  
 2.  Sur chaque ligne feuille, définissez les emplacements depuis et vers lesquels vous souhaitez déplacer des articles en renseignant les champs **Code emplacement** et **Nouveau code emplacement**.  
 

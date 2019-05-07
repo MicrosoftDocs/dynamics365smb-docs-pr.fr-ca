@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: a3c8910ad937ec4283ce0803f787a4fe6aed071d
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: a26cafc11479d7065645947f63fa93d28ddb824f
+ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "813310"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "941783"
 ---
 # <a name="design-details-assembly-order-posting"></a>Détails de conception : report d'un ordre d'assemblage
 Le report d'ordre d'assemblage est basé sur les mêmes principes que le report des activités similaires des documents de vente et de la consommation de production/production. Cependant, les principes sont combinés du fait que les ordres d'assemblage ont leur propre interface utilisateur de report, comme celle des documents de vente, alors que le report des écritures réel se produit en arrière-plan en tant que report direct d'article et de journal ressource, comme pour la consommation de production, la production et la capacité.  

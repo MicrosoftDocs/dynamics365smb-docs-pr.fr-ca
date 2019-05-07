@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: analysis, history, track
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: ac8d1f84c3daacbee931d559e6f67f4351df73c5
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: 9072bd45d5189ec42e8f1adaa3554fa182c36f1f
+ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "814133"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "920852"
 ---
 # <a name="working-with-dimensions"></a>Utilisation des axes analytiques
 Vous pouvez utiliser des axes analytiques pour faciliter l'exécution de l'analyse sur des commandes vente, par exemple. Les axes analytiques sont des attributs et des valeurs qui permettent de catégoriser les écritures afin de pouvoir les suivre et les analyser. Ils peuvent par exemple indiquer de quel projet ou département provient une écriture.  
@@ -46,14 +46,14 @@ Lorsque vous créez une ligne de journal, un en-tête de document ou une ligne d
 ## <a name="setting-up-dimensions"></a>Configuration d'axes
 Vous pouvez définir les axes et les sections analytiques pour classer des feuilles et des documents par catégorie, comme des commandes vente et achat. La page **Dimensions** permet de créer une ligne pour chaque dimension, par exemple *Projet*, *Département*, *Zone* et *Représentant*.
 
-Vous pouvez également définir des valeurs pour des axes. Il peut par exemple s'agir de départements de votre compagnie. Les sections analytiques peuvent être paramétrées sous forme de structure hiérarchique similaire au plan comptable, de manière à ce que les données puissent être réparties en plusieurs niveaux de granularité et à ce que des sous-ensembles de sections analytiques puissent être totalisés. Vous pouvez définir autant de dimensions et de valeurs de dimension que nécessaire, tous les membres de votre compagnie peuvent les utiliser.
+Vous pouvez également définir des valeurs pour des axes. Il peut par exemple s'agir de départements de votre compagnie. Les sections analytiques peuvent être paramétrées sous forme de structure hiérarchique similaire au plan comptable, de manière à ce que les données puissent être réparties en plusieurs niveaux de granularité et à ce que des sous-ensembles de sections analytiques puissent être totalisés. Vous pouvez définir autant de dimensions et de valeurs de dimension que nécessaire, et tous les membres de votre compagnie peuvent les utiliser.
 
-Vous pouvez également configurer des axes principaux et des raccourcis axe :  
+Lorsque les dimensions et les valeurs sont configurées, vous pouvez définir les dimensions principales et les raccourcis de dimension sur la page **Configuration du grand livre** qui seront toujours disponibles pour sélection comme champs sur les lignes journal et document, sans avoir à ouvrir la page **Dimensions** en premier lieu. Pour plus d'informations, reportez-vous à la rubrique [Configurer les dimensions principales et les raccourcis de dimension](finance-dimensions.md#to-set-up-global-and-shortcut-dimensions).
 
-* Les **axes principaux** sont utilisés comme filtres, dans les états et les traitements par lots. Vous pouvez uniquement utiliser deux axes principaux, choisissez donc des axes que vous utilisez souvent.
-* Les **raccourcis axe** sont disponibles sous forme de champ dans les lignes feuille et document. Vous pouvez en créer six au maximum.  
+* Les **dimensions principales** sont utilisées comme filtres, par exemple, dans les rapports et les traitements en lot. Vous pouvez uniquement utiliser deux axes principaux, choisissez donc des axes que vous utilisez souvent.
+* Les **raccourcis de dimension** sont disponibles sous forme de champs dans les lignes journal et document. Vous pouvez en créer six au maximum.  
 
-### <a name="setting-up-default-dimensions-for-customers-vendors-and-other-accounts"></a>Paramétrage des axes analytiques par défaut pour les clients, les fournisseurs, et d'autres comptes
+### <a name="to-set-up-default-dimensions-for-customers-vendors-and-other-accounts"></a>Pour configurer des dimensions par défaut pour les clients, les fournisseurs et d'autres comptes
 Vous pouvez attribuer une dimension par défaut pour un compte spécifique. La dimension est copiée sur le journal ou le document lorsque vous saisissez le numéro de compte dans une ligne, mais vous pouvez supprimer ou modifier le code sur la ligne si nécessaire. Vous pouvez également rendre une dimension obligatoire pour reporter une écriture avec un type de compte spécifique.  
 
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Dimensions**, puis choisissez le lien associé.  
@@ -100,17 +100,23 @@ Pour éviter de reporter des écritures avec des dimensions contradictoires ou i
 >   
 >  L'option sélectionnée s'affiche uniquement lorsque vous quittez le champ.  
 >   
->  Pour visualiser le nom des axes à la place du code, sélectionnez le champ **Afficher nom colonne**.
+>  Pour afficher le nom des dimensions à la place du code, sélectionnez le champ **Afficher nom colonne**.
 
-### <a name="getting-an-overview-of-dimensions-used-multiple-times"></a>Affichage d'un aperçu des dimensions utilisées plusieurs fois
-La page **Dimensions par défaut - Multiples** spécifie la manière dont un groupe de comptes utilise les dimensions et valeurs de dimension. Vous pouvez effectuer cette opération en sélectionnant plusieurs comptes, et en spécifiant des dimensions et valeurs de dimension par défaut pour tous les comptes sélectionnés dans la liste des comptes. Lorsque vous spécifiez des dimensions par défaut pour les comptes sélectionnés, le programme propose ces dimensions et valeurs de dimension à chaque fois que l'un de ces comptes est utilisé, par exemple sur une ligne journal. Le report des écritures est ainsi facilité, car les champs de dimension sont renseignés automatiquement. Cependant, les valeurs de dimension proposées peuvent être modifiées, par exemple sur une ligne journal.
+### <a name="to-set-up-global-and-shortcut-dimensions"></a>Pour configurer des dimensions principales et des raccourcis de dimension
+Les dimensions principales et les raccourcis peuvent être utilisés comme filtre n'importe où dans [!INCLUDE[d365fin](includes/d365fin_md.md)], y compris sur les rapports, les traitements en lot et les vues d'analyse. Les dimensions principales et les raccourcis de dimension sont toujours disponibles pour être insérés directement sans ouvrir tout d'abord la page **Dimensions**. Sur les lignes journal et document, vous pouvez sélectionner les dimensions principales et les raccourcis de dimension dans un champ sur la ligne. Vous pouvez définir deux dimensions principales et huit raccourcis de dimension. Sélectionnez les dimensions que vous utilisez le plus souvent.
 
-La page **Dimensions par défaut - Multiples** contient les champs suivants :
-|Champ|Description|
-|----------------------------------|---------------------------------------|  
-|**Code axe analytique**|Affiche toutes les dimensions définies comme dimensions par défaut sur un ou plusieurs comptes sélectionnés. Si vous cliquez sur le champ, vous pouvez visualiser la liste de toutes les dimensions disponibles. Si vous sélectionnez une dimension, la dimension sélectionnée est définie comme dimension par défaut pour tous les comptes sélectionnés.|
-|**Code section**|Affiche une valeur de dimension ou le terme (Conflit). Si le champ indique une valeur de dimension, tous les comptes sélectionnés ont la même valeur de dimension par défaut pour une dimension donnée. Si le champ indique le terme (Conflit), les comptes sélectionnés n'ont pas tous la même valeur de dimension par défaut pour une dimension donnée. Si vous cliquez sur le champ, vous pouvez visualiser la liste de toutes les valeurs de dimension disponibles pour une dimension. Si vous sélectionnez une valeur de dimension, la valeur de dimension sélectionnée est définie comme valeur de dimension par défaut pour tous les comptes sélectionnés.|
-|**Contrôle validation**|Affiche une règle de report valeur ou le terme (Conflit). Si le champ indique une règle de report valeur, tous les comptes sélectionnés ont la même règle de report valeur pour une valeur de dimension donnée. Si le champ indique le terme (Conflit), les comptes sélectionnés n'ont pas tous la même règle de report valeur pour une valeur de dimension donnée. Si vous cliquez sur le champ Report valeur, vous pouvez visualiser la liste des règles de report valeur. Si vous sélectionnez une règle de report valeur, elle s'applique à tous les comptes sélectionnés.|
+> [!Important]  
+> La modification d'une dimension principale ou d'un raccourci de dimension nécessite la mise à jour de toutes les écritures reportées à l'aide de cette dimension. Vous pouvez exécuter cette tâche avec la fonction **Modifier les dimensions principales**, mais cela peut se révéler chronophage et peut avoir un impact sur les performances. Par conséquent, sélectionnez vos dimensions principales et vos raccourcis de dimension avec soin afin que vous n'ayez pas à les changer ultérieurement.
+
+> [!Note]
+> Lorsque vous ajoutez ou modifiez une dimension principale ou un raccourci, vous êtes automatiquement déconnecté et la nouvelle valeur est préparée pour un usage dans toute l'application.
+
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration du grand livre**, puis sélectionnez le lien associé.
+2. Sur le raccourci **Dimensions**, renseignez les champs. [!INCLUDE [tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+
+#### <a name="to-change-global-dimensions"></a>Pour modifier les dimensions principales
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modifier les dimensions principales**, puis sélectionnez le lien associé.
+2. Passez le curseur sur les actions et les champs sur la page pour découvrir comment modifier les dimensions principales et les raccourcis de dimension.
 
 ### <a name="example-of-dimension-setup"></a>Exemple de configuration de dimension
 Imaginons que votre compagnie souhaite suivre les transactions selon la structure organisationnelle et les situations géographiques. Pour ce faire, vous pouvez configurer deux dimensions sur la page **Dimensions** :
@@ -137,7 +143,8 @@ Pour **ZONE**, vous pouvez ajouter les sections analytiques suivantes :
 | 80 |Non-UE |Standard |
 | 90 |Europe, Total |Fin total |
 
-Pour les deux zones géographiques principales, Amériques et Europe, ajoutez des sous-catégories pour les régions en décalant les valeurs de dimension. Cela vous permet de déclarer les ventes ou les dépenses dans les comtés, et d'obtenir les totaux des zones géographiques plus étendues. Vous pouvez également choisir d'utiliser des pays ou régions en tant que valeurs de dimension, ou des comtés ou des villes, en fonction de votre entreprise.  
+Pour les deux zones géographiques principales, Amériques et Europe, ajoutez des sous-catégories pour les régions en décalant les valeurs de dimension. Cela vous permet de déclarer les ventes ou les dépenses dans les comtés, et d'obtenir les totaux des zones géographiques plus étendues. Vous pouvez également choisir d'utiliser des pays ou régions en tant que valeurs de dimension, ou des comtés ou des villes, en fonction de votre entreprise.
+
 > [!NOTE]  
 >   Pour configurer une hiérarchie, veillez à trier les codes dans l'ordre alphabétique. Ceci inclut les codes des sections analytiques fournis dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
@@ -147,18 +154,29 @@ Pour **DÉPARTEMENT**, vous pouvez ajouter les sections analytiques suivantes :
 | --- | --- | --- |
 | ADMIN |Administration |Standard |
 | FABR |Fabrication |Standard |
-| VENTES |Vente |Standard |
+| VENTES |Ventes |Standard |
 
-Avec ce paramètre, vous devez ensuite ajouter les deux dimensions en tant que dimensions principales sur la page **Configuration du grand livre**. Cela signifie que vous pouvez utiliser ZONE et DÉPARTEMENT comme filtres pour les écritures du grand livre, ainsi que dans tous les rapports et les tableaux d'analyse. Les deux axes principaux sont mis à disposition automatiquement pour être utilisés dans les lignes écriture et les en-têtes document comme raccourcis axe.  
+Avec cette configuration, vous pouvez ajouter vos deux dimensions en tant que dimensions principales sur la page **Configuration du grand livre**. Cela signifie que vous pouvez utiliser ZONE et DÉPARTEMENT comme filtres pour les écritures du grand livre, ainsi que dans tous les rapports et les tableaux d'analyse. Les deux dimensions principales sont mises à disposition automatiquement pour être utilisées dans les lignes écriture et les en-têtes document comme raccourcis de dimension.
 
-## <a name="using-dimensions"></a>Utilisation des axes analytiques
+## <a name="getting-an-overview-of-dimensions-used-multiple-times"></a>Affichage d'un aperçu des dimensions utilisées plusieurs fois
+La page **Dimensions par défaut - Multiples** spécifie la manière dont un groupe de comptes utilise les dimensions et valeurs de dimension. Vous pouvez effectuer cette opération en sélectionnant plusieurs comptes, et en spécifiant des dimensions et valeurs de dimension par défaut pour tous les comptes sélectionnés dans la liste des comptes. Lorsque vous spécifiez des dimensions par défaut pour les comptes sélectionnés, le programme propose ces dimensions et valeurs de dimension à chaque fois que l'un de ces comptes est utilisé, par exemple sur une ligne journal. Le report des écritures est ainsi facilité, car les champs de dimension sont renseignés automatiquement. Cependant, les valeurs de dimension proposées peuvent être modifiées, par exemple sur une ligne journal.
+
+La page **Dimensions par défaut - Multiples** contient les champs suivants :
+
+|Champ|Description|
+|-----|-----------|  
+|**Code axe analytique**|Affiche toutes les dimensions définies comme dimensions par défaut sur un ou plusieurs comptes sélectionnés. Si vous cliquez sur le champ, vous pouvez visualiser la liste de toutes les dimensions disponibles. Si vous sélectionnez une dimension, la dimension sélectionnée est définie comme dimension par défaut pour tous les comptes sélectionnés.|
+|**Code section**|Affiche une valeur de dimension ou le terme (Conflit). Si le champ indique une valeur de dimension, tous les comptes sélectionnés ont la même valeur de dimension par défaut pour une dimension donnée. Si le champ indique le terme (Conflit), les comptes sélectionnés n'ont pas tous la même valeur de dimension par défaut pour une dimension donnée. Si vous cliquez sur le champ, vous pouvez visualiser la liste de toutes les valeurs de dimension disponibles pour une dimension. Si vous sélectionnez une valeur de dimension, la valeur de dimension sélectionnée est définie comme valeur de dimension par défaut pour tous les comptes sélectionnés.|
+|**Contrôle validation**|Affiche une règle de report valeur ou le terme (Conflit). Si le champ indique une règle de report valeur, tous les comptes sélectionnés ont la même règle de report valeur pour une valeur de dimension donnée. Si le champ indique le terme (Conflit), les comptes sélectionnés n'ont pas tous la même règle de report valeur pour une valeur de dimension donnée. Si vous cliquez sur le champ Report valeur, vous pouvez visualiser la liste des règles de report valeur. Si vous sélectionnez une règle de report valeur, elle s'applique à tous les comptes sélectionnés.|
+
+## <a name="using-dimensions"></a>Utilisation des dimensions
 Dans un document tel qu'un document de vente, vous pouvez ajouter des informations de dimension pour une seule ligne document et pour le document lui-même. Par exemple, sur la page **Document de vente**, vous pouvez saisir des valeurs de dimension pour les deux premiers raccourcis dimensions directement sur les lignes vente individuelles et ajouter des informations de dimension complémentaires si vous cliquez sur le bouton **Dimensions**.  
 
 Si vous travaillez plutôt sur un journal, vous pouvez également ajouter à une écriture des informations de dimension de la même manière, si vous avez configuré des raccourcis de dimension en tant que champs directement dans les lignes journal.  
 
 Vous pouvez configurer des axes analytiques par défaut pour des comptes ou des types de compte, de sorte que les axes et les sections analytiques soient renseignés automatiquement.
 
-## <a name="to-view-global-dimensions-in-ledger-entry-pages"></a>Pour afficher les dimensions principales dans les pages écriture  
+### <a name="to-view-global-dimensions-in-ledger-entry-pages"></a>Pour afficher les dimensions principales dans les pages écriture  
 Les dimensions principales sont toujours définies et nommées par la compagnie\-. Pour visualiser les dimensions globales de votre compagnie, ouvrez la page **Configuration du grand livre**.  
 
 Dans une page écriture, vous pouvez voir si des dimensions principales sont associées aux écritures. Les deux axes principaux sont différents des autres axes car vous pouvez les utiliser en tant que filtres n'importe où dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
@@ -169,10 +187,30 @@ Dans une page écriture, vous pouvez voir si des dimensions principales sont ass
 4.  Pour visualiser toutes les dimensions d'une écriture, sélectionnez l'écriture, puis cliquez sur l'action **Dimensions**.  
 
 > [!NOTE]  
->  La page **Dimensions - Écritures** affiche les dimensions d'une écriture à la fois. Lorsque vous faites défiler les écritures, le contenu de la page **Dimensions - Écritures** est modifié en conséquence.  
+>  La page **Dimensions - Écritures** affiche les dimensions d'une écriture à la fois. Lorsque vous faites défiler les écritures, le contenu de la page **Dimensions - Écritures** est modifié en conséquence.
+
+## <a name="troubleshooting-dimensions-errors"></a>Dépannage des erreurs liées aux dimensions
+Lorsque vous reportez des documents ou des lignes journal qui contiennent des dimensions, différentes erreurs peuvent survenir, généralement liées à un défaut de configuration ou d'affectation des dimensions.
+
+> [!NOTE]
+> Dans la liste suivante des messages d'erreur potentielle, les codes *%X*sont des espaces réservés pour les variables de données qui le message réel contient dans l'interface utilisateur selon le contexte. Par exemple, *%1 %2 est bloqué.* pourrait s'afficher dans l'interface utilisateur comme « La ZONE du code de dimension est bloquée ».  
+
+|Problème|Message d'erreur|Solution possible|
+|-----|-------------|-----------------|
+|Dimension bloquée|%1 %2 est bloqué.|- Recherchez les documents non reportés contenant l'ensemble de dimensions avec la dimension bloquée et débloquez-la.<br />- Supprimez la ligne ensemble de dimensions pour la dimension bloquée.|
+|Dimension supprimée|%1 %2 est introuvable.|- Restaurez la dimension manquante.<br />- Recherchez les documents non reportés contenant l'ensemble de dimensions avec la dimension manquante et ajoutez-la.<br />- Supprimez la ligne ensemble de dimensions pour la dimension manquante.|
+|Valeur de dimension bloquée|%1 %2 - %3 est bloqué.|- Recherchez les documents non reportés contenant l'ensemble de dimensions avec la valeur de dimension bloquée et débloquez-la.<br />- Supprimez la ligne ensemble de dimensions pour la valeur de dimension bloquée.|
+|Valeur de dimension supprimée|   %1 pour %2 est manquant.|- Restaurez la valeur de dimension manquante.<br />- Recherchez les documents non reportés contenant l'ensemble de dimensions avec la valeur de dimension manquante et ajoutez-la.<br />- Supprimez la ligne ensemble de dimensions pour la valeur de dimension manquante.|
+|Valeur de dimension interdite|Le type de valeur de dimension pour %1 %2 - %3 ne doit pas être %4.|- Modifiez le champ **Type de valeur de dimension** sur la page **Valeurs de dimension** avec **Standard** ou **Début total**.<br />- Supprimez la ligne ensemble de dimensions pour la valeur de dimension bloquée.|
+|Combinaison de dimensions bloquée|Les dimensions %1 et %2 ne peuvent pas être utilisées ensemble.|- Recherchez les documents non reportés contenant l'ensemble de dimensions avec la combinaison de dimensions bloquée et débloquez-la.<br />- Modifiez une des lignes d'ensembles d'autorisation en conflit pour la combinaison de dimensions.|
+|Combinaison de valeurs de dimension bloquée|Les combinaisons de dimensions %1 - %2 et %3 - %4 ne peuvent pas être utilisées ensemble.|- Recherchez les documents non reportés contenant l'ensemble de dimensions avec la combinaison de valeurs de dimensions bloquée et débloquez-la.<br />- Modifiez une des lignes d'ensembles d'autorisation en conflit pour la combinaison de valeurs de dimension.|
+|Code de valeur de dimension vide pour la dimension par défaut où le champ **Report valeur** contient **Code obligatoire**|- Sélectionnez un %1 pour le %2 %3.<br />- Sélectionnez un %1 pour le %2 %3 pour %4 %5.|- Modifiez le champ **Report valeur** sur la page **Dimension par défaut**.<br />- Saisissez une valeur de dimension non vide pour la dimension en conflit dans l'ensemble de dimensions.|
+|Code de valeur de dimension erroné pour la dimension par défaut où le champ **Report valeur** contient **Même code**|- Sélectionnez %1 %2 pour le %3 %4.<br />- Sélectionnez %1 %2 pour le %3 %4 pour %5 %6.|- Modifiez le champ **Report valeur** sur la page **Dimension par défaut**.<br />- Saisissez la valeur de dimension requise pour la dimension en conflit dans l'ensemble de dimensions.|
+|Code de valeur de dimension non vide pour la dimension par défaut vide où le champ **Report valeur** contient **Même code**|-%1 %2 doit être vierge.<br />-%1 %2 doit être vierge pour %3 %4.|- Modifiez le champ **Report valeur** sur la page **Dimension par défaut**.<br />- Saisissez un code de valeur de dimension vide pour la dimension en conflit dans l'ensemble de dimensions.|
+|Valeur de dimension inattendue pour la dimension par défaut où le champ **Report valeur** contient **Pas de code**|-%1 %2 ne doit pas être mentionné.<br />- %1 %2 ne doit pas être mentionné pour %3 %4.|- Modifiez le champ **Report valeur** sur la page **Dimension par défaut**.<br />- Supprimez la ligne en conflit de l'ensemble de dimensions.|
 
 ## <a name="see-also"></a>Voir aussi
 [Veille économique](bi.md)  
-[Finance](finance.md)  
-[Analyse des données par axe analytique](bi-how-analyze-data-dimension.md)  
+[Finances](finance.md)  
+[Analyse des données par dimensions](bi-how-analyze-data-dimension.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

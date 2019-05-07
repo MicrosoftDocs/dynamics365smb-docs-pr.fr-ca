@@ -10,21 +10,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 41fb80f39edc87aabce18c5ef39e799148eb0058
-ms.sourcegitcommit: d09f5ee0e164c7716f4ccb2ed71e2f9732a1f4f9
+ms.openlocfilehash: b0fdc5b1c0b76db96652e363979e6eb55f3c6c24
+ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "852204"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "929584"
 ---
 # <a name="planning"></a>Planification
 Les opérations de production nécessaires à la transformation d'entrées en produits finis doivent être planifiées de manière quotidienne ou hebdomadaire en fonction du volume et de la nature des produits. [!INCLUDE[d365fin](includes/d365fin_md.md)] fournit des fonctionnalités permettant de répondre à la demande réelle et anticipée des ventes, de l'assemblage et de la production, et inclut des fonctionnalités pour une planification de la distribution basée sur les unités de stock et les transferts d'emplacement.
 
 > [!NOTE]
-> Cette rubrique décrit essentiellement la planification des compagnies impliquées dans la fabrication ou la gestion d'assemblage, où les commandes d'approvisionnement qui en résultent peuvent être des ordres de production, d'assemblage, de transfert ou des bons de commande. L'interface principale de cette tâche de planification est la page **Feuille planification**.
-
+> Cette rubrique décrit essentiellement la planification des compagnies impliquées dans la fabrication ou la gestion d'assemblage, où les commandes d'approvisionnement qui en résultent peuvent être des ordres de production, d'assemblage, de transfert ou des bons de commande. L'interface principale de cette tâche de planification est la page **Feuille planification**.<br /><br />
 > [!INCLUDE[d365fin](includes/d365fin_md.md)] prend également en charge la planification de l'approvisionnement pour les compagnies de vente en gros, où les commandes d'approvisionnement qui en résultent peuvent être des ordres de transfert et des bons de commande. L'interface principale de cette tâche de planification est la page **Feuille de réquisition**, qui est décrite indirectement dans cette rubrique, car la plupart des fonctionnalités de planification s'appliquent aux deux feuilles.
 
 Avant de planifier et d'exécuter des bons de production, vous devez configurer des capacités de production, par exemple créer des calendriers usine, des itinéraires, des nomenclatures production et des unités de production. Pour plus d'informations, voir [Paramétrage de la production](production-configure-production-processes.md).

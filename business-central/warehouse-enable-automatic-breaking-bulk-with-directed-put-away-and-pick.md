@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: c328df334d1bb1be33ced814677c3ef3ea634799
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: 966aab82c2290c0cdc3af521583f1a4b1efbe76b
+ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "813611"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "924934"
 ---
 # <a name="enable-automatic-breaking-bulk-with-directed-put-away-and-pick"></a>Activer la rupture de charge automatique avec prélèvement et rangement dirigé
 Pour les emplacements qui utilisent un prélèvement et un rangement suggérés, [!INCLUDE[d365fin](includes/d365fin_md.md)] peut procéder, dans de nombreux cas, à un déconditionnement automatique (division d'une unité de mesure plus grande en unités de mesure plus petites) lorsqu'il crée des instructions entrepôt répondant aux exigences de documents sources, de bons de production ou de prélèvements et de rangements internes. Parfois, le déconditionnement peut également nécessiter le regroupement de petites unités de mesure afin de répondre à des demandes sortantes en divisant l'unité de mesure la plus grande du document origine ou du bon de production en unités de mesure plus petites disponibles dans l'entrepôt.   
