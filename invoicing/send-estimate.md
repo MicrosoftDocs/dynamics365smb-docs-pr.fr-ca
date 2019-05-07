@@ -9,12 +9,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/18/2018
 ms.author: edupont
-ms.openlocfilehash: 28da10249751ba56dd356fb1bc6c2e5777d59fe0
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.openlocfilehash: 7cc7dec1bd8cfb6a8d0691edfdf643a56adaed21
+ms.sourcegitcommit: addfb47612cc2e4e98dfd7e338b6f41cde405d5c
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "826237"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "938388"
 ---
 # <a name="send-an-estimate-to-a-customer-in-included365invlongincludesd365invlongmd"></a>Envoyer une estimation à un client dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
 Vous pouvez envoyer une estimation (comme un devis ou une offre) à des clients ou prospects existants. Cette procédure est quasiment similaire à l'envoi d'une facture, mais avec l'estimation, vous envoyez un brouillon que le client peut accepter ou non.  
