@@ -10,11 +10,11 @@ ms.workload: na
 ms.date: 10/01/2018
 ms.author: edupont
 ms.openlocfilehash: fad44ecb12276ed27a941ee918c748edb5b07481
-ms.sourcegitcommit: 2b2c3b488a610a5d3b51fc8218c40b0b732fddf3
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "832641"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1254116"
 ---
 # <a name="welcome-to-included365invlongincludesd365invlongmd"></a>Bienvenue dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
 

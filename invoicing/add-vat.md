@@ -10,11 +10,11 @@ ms.workload: na
 ms.date: 07/18/2018
 ms.author: edupont
 ms.openlocfilehash: 5bfe6a249f59f41bd27765ae93a17799f510e108
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "826251"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1254110"
 ---
 # <a name="add-value-added-tax-vat-to-your-invoices-in-included365invlongincludesd365invlongmd"></a>Ajouter la taxe sur la valeur ajoutée (TVA) à vos factures dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
 

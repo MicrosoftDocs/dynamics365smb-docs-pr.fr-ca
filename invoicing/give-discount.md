@@ -10,11 +10,11 @@ ms.workload: na
 ms.date: 09/20/2018
 ms.author: edupont
 ms.openlocfilehash: 9d5cd7fcb03647e0dd7e26409fecf4439a6c1d89
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "826231"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1254101"
 ---
 # <a name="give-a-discount-using-in-included365invlongincludesd365invlongmd"></a>Appliquer un escompte dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
 
