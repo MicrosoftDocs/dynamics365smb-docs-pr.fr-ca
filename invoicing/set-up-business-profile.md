@@ -10,11 +10,11 @@ ms.workload: na
 ms.date: 10/01/2018
 ms.author: edupont
 ms.openlocfilehash: d644cc3b44ef726a76cd667d8c96624eb928af95
-ms.sourcegitcommit: 1bcfaa99ea302e6b84b8361ca02730b135557fc1
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "826249"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1237367"
 ---
 # <a name="set-up-your-business-information-in-included365invlongincludesd365invlongmd"></a>Configurer les informations sur votre entreprise dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
 

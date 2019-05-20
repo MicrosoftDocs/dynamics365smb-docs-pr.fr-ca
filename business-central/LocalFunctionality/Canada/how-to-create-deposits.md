@@ -13,11 +13,11 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: d2c7378a4f96bbac27fa26bd43ced375c31dcd42
-ms.sourcegitcommit: a1890e0c959f4a07a4e4d9807be98ec5fe20c0f7
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "938415"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1237619"
 ---
 # <a name="create-deposits"></a>Créer des dépôts
 Vous pouvez créer des dépôts pour tenir à jour un enregistrement de transaction contenant des renseignements pouvant être appliqués aux notes de crédit et factures en attente.  
@@ -29,7 +29,7 @@ Vous pouvez créer des dépôts pour tenir à jour un enregistrement de transact
 
     |Champ|Description|  
     |---------------------------------|---------------------------------------|  
-    |**Non.**|Numéro d'identification unique du dépôt.|  
+    |**N°**|Numéro d'identification unique du dépôt.|  
     |**N° de compte bancaire**|Numéro de compte bancaire pour le dépôt.|  
     |**Montant total de dépôt**|Montant total du dépôt reporté sur le grand livre bancaire.<br /><br /> Vous pouvez reporter ce dépôt uniquement si la somme des lignes dépôt est égale à la valeur de ce champ.|  
     |**Date de report**|Date de report du dépôt.|  

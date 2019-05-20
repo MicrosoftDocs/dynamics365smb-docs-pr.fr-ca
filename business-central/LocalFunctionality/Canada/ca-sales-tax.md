@@ -13,11 +13,11 @@ ms.search.keywords: local
 ms.date: 04/01/2019
 ms.author: edupont
 ms.openlocfilehash: 7b476bee3792058ff102dca7d7ddf9ca3e939eca
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "915112"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1237585"
 ---
 # <a name="reporting-sales-tax-in-canada"></a>Déclaration de la taxe de vente au Canada
 Lorsque vous commencez à utiliser [!INCLUDE[d365fin](../../includes/d365fin_md.md)], vous pouvez exécuter un guide de configuration assistée afin de rapidement et facilement configurer les informations relatives à la Sales Tax pour votre société, vos clients et vos fournisseurs. En quelques minutes, vous êtes prêt à créer des documents vente et des documents achat pour lesquels la taxe de vente est calculée correctement. Ceci est expliqué [dans notre billet de blog](https://madeira.microsoft.com/blog/sales-tax-setup-made-easy).

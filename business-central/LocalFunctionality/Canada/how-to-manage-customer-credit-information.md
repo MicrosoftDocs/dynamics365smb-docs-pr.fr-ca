@@ -12,11 +12,11 @@ ms.date: 04/01/2019
 ms.author: sgroespe
 redirect_url: ../../receivables-how-block-customers
 ms.openlocfilehash: c7f6c01c18c02f14cf4a748a6b6672f938454bcf
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "916873"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1237737"
 ---
 # <a name="manage-customer-credit-information"></a>Gérer les renseignements sur le crédit client
 Dans [!INCLUDE[d365fin](../../includes/d365fin_md.md)], vous pouvez ajouter des commentaires aux renseignements sur le crédit client. Vous pouvez aussi mettre en attente et bloquer des clients présentant une mauvaise situation de crédit avant la livraison ou la facturation.  
