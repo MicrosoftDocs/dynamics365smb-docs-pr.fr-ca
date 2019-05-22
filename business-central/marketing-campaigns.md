@@ -11,11 +11,11 @@ ms.search.keywords: marketing, campaign, promo, prospect
 ms.date: 04/01/2019
 ms.author: edupont
 ms.openlocfilehash: e3ca7a52bb01b9d4a7b6417be14396cc616131ca
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "929060"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1241830"
 ---
 # <a name="managing-marketing-campaigns"></a>Gestion de campagnes marketing
 Disposer d'une solide stratégie marketing permet d'identifier, d'attirer et de fidéliser les clients. Une stratégie marketing est composée de diverses campagnes ainsi que d'interactions en relation avec vos activités de vente et de marketing. Lors de la planification d'une promotion, vous devez choisir les contacts à cibler, le type de promotion (salon, courriel direct) et le représentant chargé de chaque tâche.

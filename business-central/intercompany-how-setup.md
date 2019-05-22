@@ -11,11 +11,11 @@ ms.search.keywords: IC, group, consolidation, affiliate, subsidiary
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: eca41d78ca6665f8e64f99c448d0d771f7d2ad26
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "926806"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1244226"
 ---
 # <a name="set-up-intercompany"></a>Configuration des fonctionnalités intersociétés
 Pour envoyer une transaction (ligne journal vente) à partir d'une compagnie et créer automatiquement la transaction correspondante (ligne journal achat) dans la compagnie partenaire, les compagnies concernées doivent s'accorder sur un plan comptable et un ensemble de dimensions communs à utiliser pour les transactions intercompagnies. Le plan de compte intercompagnie peut être, par exemple, une version simplifiée du plan de compte de la compagnie mère. Chaque compagnie associe son plan de compte au plan de compte intercompagnie partagé, ainsi que ses dimensions aux dimensions intercompagnies.  

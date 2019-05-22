@@ -13,11 +13,11 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: 04d665ac1cfcf66c2581d97bac05d636114a5ef4
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "914796"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1244333"
 ---
 # <a name="setting-up-a-company-with-rapidstart-services"></a>Configuration d'une compagnie avec RapidStart Services
 Vous pouvez configurer une nouvelle compagnie dans [!INCLUDE[d365fin](includes/d365fin_md.md)] avec RapidStart Services, qui est un outil conçu pour réduire les temps de déploiement, améliorer la qualité de l’implémentation, présenter une approche reproductible des implémentations et augmenter la productivité en automatisant et en simplifiant des tâches récurrentes.  
@@ -46,7 +46,7 @@ Vous pouvez utiliser les composantes suivantes pour accélérer la configuration
 |Configurer les enregistrements de données de base à l'aide de modèles pour préparer la migration des données client existantes.|[Préparer la migration des données client](admin-use-templates-to-prepare-customer-data-for-migration.md)|  
 |Définissez les tables et les champs, validez les données client existantes et migrez les données vers la base de données [!INCLUDE[d365fin](includes/d365fin_md.md)].|[Migrer des données client](admin-migrate-customer-data.md)|
 |Préparez-vous à réutiliser des configurations de compagnie dans d'autres compagnies.|[Créer des packages de configuration de compagnie personnalisés](admin-how-to-create-custom-company-configuration-packages.md)|
-|Rechercher des solutions aux problèmes connus dans le kit d’outils RapidStart Services.|[Conseils : services RapidStart](admin-tips-and-tricks-rapidstart-services.md)|  
+|Rechercher des solutions aux problèmes connus dans le kit d’outils RapidStart Services.|[Conseils : RapidStart Services](admin-tips-and-tricks-rapidstart-services.md)|  
 
 ## <a name="see-also"></a>Voir aussi  
 [Administration](admin-setup-and-administration.md)  

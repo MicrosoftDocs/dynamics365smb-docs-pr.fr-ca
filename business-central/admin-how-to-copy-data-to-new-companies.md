@@ -13,23 +13,23 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: daf11bb8f219367506cff4fff46caa4f75ec6c86
-ms.sourcegitcommit: addfb47612cc2e4e98dfd7e338b6f41cde405d5c
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "938998"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1239876"
 ---
 # <a name="copy-data-to-new-companies"></a>Copier des données vers de nouvelles compagnies
 Vous pouvez copier des valeurs couramment utilisées d’une compagnie existante dans une nouvelle compagnie, à partir du moment où ces compagnies figurent dans la même base de données. Par exemple, si vous disposez d'une liste standard de codes symptôme qui est commune à toutes les implémentations de gestion des services, vous pouvez facilement copier ces codes d'une compagnie dans une autre.  
 
 ## <a name="to-copy-data-to-a-new-company-using-rapidstart-services"></a>Pour copier des données vers une nouvelle compagnie à l’aide de RapidStart Services  
-1. Ouvrir la nouvelle compagnie.  
+1. Ouvrez la nouvelle compagnie.  
 2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille configuration**, puis sélectionnez le lien associé.  
 3. Sélectionnez **Copier les données à partir de la compagnie**.  
 4. Sur la page **Copier données compagnie**, sélectionnez une compagnie à copier dans le champ **Copier de**, puis cliquez sur le bouton **OK**.  
 5. Sélectionnez une table dans l’un des package configuration que vous avez importés, puis sélectionnez l'action **Copier données**.
 
 ## <a name="see-also"></a>Voir aussi
-[Appliquer des configurations à de nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
+[Appliquer des configurations aux nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)

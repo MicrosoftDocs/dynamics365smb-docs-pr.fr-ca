@@ -1,6 +1,6 @@
 ---
 title: 'Détails de conception : comparaison entre écritures traçabilité actives et historiques | Microsoft Docs'
-description: Lorsque des parties d'une quantité de ligne document sont reportées, seule cette quantité en particulier est transférée vers les écritures du grand livre d'articles et ses numéros de suivi. Toutefois, vous voudrez accéder à toutes les informations de traçabilité pertinentes directement à partir de la ligne document actif. C'est-à-dire, non seulement vous voudrez visualiser les écritures relatives à la quantité restante, mais vous voudrez également des informations sur les unités reportées. Lorsque vous consultez ou modifiez la page **Item Tracking Lines**, le contenu collectif du tableau **Spécification traçabilité** (T336) et du tableau **Écriture de réservation** (T337) est présenté dans une version temporaire de T336. Ceci garantit que les données de suivi article historiques et actives sont accessibles en même temps.
+description: Lorsque des parties d'une quantité de ligne document sont reportées, seule cette quantité en particulier est transférée vers les écritures du grand livre d'articles et ses numéros de suivi. Toutefois, vous voudrez accéder à toutes les informations de traçabilité pertinentes directement à partir de la ligne document actif. C'est-à-dire, non seulement vous voudrez visualiser les écritures relatives à la quantité restante, mais vous voudrez également des informations sur les unités reportées. Lorsque vous consultez ou modifiez la page **Lignes traçabilité**, le contenu collectif du tableau **Spécification traçabilité** (T336) et du tableau **Écriture de réservation** (T337) est présenté dans une version temporaire de T336. Ceci garantit que les données de suivi article historiques et actives sont accessibles en même temps.
 services: project-madeira
 documentationcenter: ''
 author: SorenGP
@@ -13,14 +13,14 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: 0f99bc9af80f1efa91892fc1ce6f59a8ac987bef
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "928194"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1243254"
 ---
 # <a name="design-details-active-versus-historic-item-tracking-entries"></a>Détails de conception : comparaison entre écritures traçabilité actives et historiques
-Lorsque des parties d'une quantité de ligne document sont reportées, seule cette quantité en particulier est transférée vers les écritures du grand livre d'articles et ses numéros de suivi. Toutefois, vous voudrez accéder à toutes les informations de traçabilité pertinentes directement à partir de la ligne document actif. C'est-à-dire, non seulement vous voudrez visualiser les écritures relatives à la quantité restante, mais vous voudrez également des informations sur les unités reportées. Lorsque vous consultez ou modifiez la page **Item Tracking Lines**, le contenu collectif du tableau **Spécification traçabilité** (T336) et du tableau **Écriture de réservation** (T337) est présenté dans une version temporaire de T336. Ceci garantit que les données de suivi article historiques et actives sont accessibles en même temps.  
+Lorsque des parties d'une quantité de ligne document sont reportées, seule cette quantité en particulier est transférée vers les écritures du grand livre d'articles et ses numéros de suivi. Toutefois, vous voudrez accéder à toutes les informations de traçabilité pertinentes directement à partir de la ligne document actif. C'est-à-dire, non seulement vous voudrez visualiser les écritures relatives à la quantité restante, mais vous voudrez également des informations sur les unités reportées. Lorsque vous consultez ou modifiez la page **Lignes traçabilité**, le contenu collectif du tableau **Spécification traçabilité** (T336) et du tableau **Écriture de réservation** (T337) est présenté dans une version temporaire de T336. Ceci garantit que les données de suivi article historiques et actives sont accessibles en même temps.  
 
  Le tableau suivant montre la manière dont T336 et T337 sont utilisés dans un scénario achat. Les chiffres en gras représentent les valeurs entrées manuellement par l'utilisateur sur la page **Lignes traçabilité**.  
 

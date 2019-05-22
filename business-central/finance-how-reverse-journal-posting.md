@@ -13,11 +13,11 @@ ms.search.keywords: reimbursement
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: f2767fca96e1f3689fc4806d878381d02622f261
-ms.sourcegitcommit: addfb47612cc2e4e98dfd7e338b6f41cde405d5c
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "938601"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1243743"
 ---
 # <a name="reverse-postings"></a>Inverser des reports
 Pour annuler un report journal erroné, sélectionnez l'écriture et créez une écriture inverse (écritures identiques aux écritures originales mais avec le signe opposé dans le champ de montant) portant les mêmes numéro de document et date de report que l'écriture d'origine. Une fois l'écriture inversée, créez l'écriture correcte.

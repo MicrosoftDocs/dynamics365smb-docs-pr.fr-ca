@@ -1,6 +1,6 @@
 ---
-title: Procédure de configuration d'une compagnie avec l’assistant RapidStart | Microsoft Docs
-description: Vous pouvez rapidement configurer une nouvelle compagnie que vous avez créée à l’aide de l’assistant de configuration de RapidStart Services.
+title: Procédure de configuration d’une compagnie avec l’assistant RapidStart | Microsoft Docs
+description: Vous pouvez rapidement configurer une nouvelle compagnie que vous avez créée à l’aide de l’Assistant Configuration de RapidStart Services.
 services: project-madeira
 documentationcenter: ''
 author: SorenGP
@@ -13,20 +13,20 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: 3784b8e0cc0c0c07300895ce448ff82f9acc91c9
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "919281"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1239922"
 ---
 # <a name="configure-a-company-with-the-rapidstart-wizard"></a>Configurer une compagnie avec l'assistant RapidStart
-Vous pouvez rapidement configurer une nouvelle compagnie que vous avez créée à l’aide de l’assistant de configuration de RapidStart Services.
+Vous pouvez rapidement configurer une nouvelle compagnie que vous avez créée à l’aide de l’Assistant Configuration de RapidStart Services.
 
-Dans la procédure suivante, vous avez fourni au client un colis configuration, qui est ensuite installé sur un ordinateur. Le client ouvre la nouvelle compagnie, qui ne contient aucune donnée client. Le client ou vous-même suivez ensuite les étapes de l’Assistant RapidStart Services, décrites dans cette procédure, pour spécifier des informations de base sur la compagnie. L’Assistant importe le package de configuration, puis l'affecte à la compagnie.  
+Dans la procédure suivante, vous avez fourni au client un package configuration, qui est ensuite installé sur un ordinateur. Le client ouvre la nouvelle compagnie, qui ne contient aucune donnée client. Vous ou le client suivez les étapes de l’Assistant RapidStart Services, décrites dans cette procédure, pour spécifier des informations de base sur la compagnie. L’Assistant importe le package de configuration, puis l'affecte à la compagnie.  
 
 ## <a name="to-configure-a-new-company"></a>Pour configurer une nouvelle compagnie  
-1. Dans le tableau de bord Responsable de l'implémentation de RapidStart Services, sélectionnez l'action **Assistant RapidStart**.  
-2. Affichez le raccourci **Étape 1**, qui contient des informations générales sur la nouvelle société. Entrez les informations appropriées sur la nouvelle compagnie dans les champs. Il existe un champ que vous devez renseigner : **Nom**. Les autres champs sont facultatifs.  
+1. Dans le tableau de bord Responsable de l'implémentation de RapidStart Services, choisissez l'action **Assistant RapidStart**.  
+2. Affichez le raccourci **Étape 1**, qui contient des informations générales sur la nouvelle compagnie. Entrez les informations appropriées sur la nouvelle compagnie dans les champs. Il existe un champ que vous devez renseigner : **Nom**. Les autres champs sont facultatifs.  
 3. Affichez le raccourci **Étape 2**, qui contient des informations de communication et de contact pour la nouvelle société. Entrez les informations appropriées sur la nouvelle compagnie dans les champs.
 4. Affichez le raccourci **Étape 3**, qui contient des informations sur le compte bancaire et sur le paiement pour la nouvelle société. Entrez les informations appropriées sur la nouvelle compagnie dans les champs.  
 5. Développez le raccourci **Étape 4**. Choisissez le bouton **AssistEdit** pour sélectionner le colis configuration à lettrer. Le nom du colis configuration est affiché. Vous pouvez ensuite effectuer les actions suivantes, dans l’ordre déterminé :  
@@ -48,6 +48,6 @@ La page **Informations compagnie** contient les informations que vous avez spéc
 Vous avez désormais configuré la compagnie, et des données lui ont été affectées.  
 
 ## <a name="see-also"></a>Voir aussi  
-[Appliquer des configurations à de nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
+[Appliquer des configurations aux nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)

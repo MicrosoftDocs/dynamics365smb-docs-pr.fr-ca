@@ -13,11 +13,11 @@ ms.search.keywords: costing, inventory cost, value entries
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: 602381b34a057120cc53deca4dd293f939777dc5
-ms.sourcegitcommit: addfb47612cc2e4e98dfd7e338b6f41cde405d5c
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "939021"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1243099"
 ---
 # <a name="revalue-inventory"></a>Réévaluer l'inventaire
 Pour réévaluer ou amortir un article ou une écriture article spécifique, vous devez utiliser le journal réévaluation.

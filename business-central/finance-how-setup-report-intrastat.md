@@ -13,11 +13,11 @@ ms.search.keywords: electronic document, Intrastat, trade, EU, European Union
 ms.date: 04/01/2019
 ms.author: bholtorf
 ms.openlocfilehash: 57ac1956c2e7b22a04615c4ebd0ab5b502787a93
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "918842"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1240658"
 ---
 # <a name="how-to-set-up-and-report-intrastat"></a>Procédure : configurer et soumettre une déclaration Intrastat
 Toutes les compagnies de l'Union européenne doivent déclarer leurs échanges avec les autres pays/régions de l'Union européenne. Vous devez déclarer les mouvements de marchandises aux autorités statistiques de votre pays/région mensuellement et le rapport doit être remis aux autorités fiscales. Il s'agit de la déclaration Intrastat. La page **Journal Intrastat** permet de remplir des rapports Intrastat périodiques.  

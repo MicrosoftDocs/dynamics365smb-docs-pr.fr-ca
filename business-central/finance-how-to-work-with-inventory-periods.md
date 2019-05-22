@@ -13,11 +13,11 @@ ms.search.keywords: inventory, periods
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: 309de0c582e125eb4bf5fb5b0c6b901adb1d0bfc
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "929251"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1242685"
 ---
 # <a name="work-with-inventory-periods"></a>Utiliser les périodes d'inventaire
 Les périodes d'inventaire sont des périodes au cours desquelles vous pouvez reporter des modifications d'inventaire. Une période d'inventaire est définie par la date à laquelle elle se termine (date fin). Lorsque vous fermez une période d'inventaire, vous ne pouvez pas reporter de modifications d'inventaire, qu'elles soient prévues ou facturées, avant cette date fin. Vous ne pouvez pas reporter de nouvelles valeurs dans l'inventaire avant la date de fin. Si vous avez des écritures du grand livre d'articles ouvertes dans la période fermée, ce qui signifie des quantités positives qui n'ont pas encore été affectées sur des transactions sortantes, vous pouvez encore affecter des quantités sortantes sur ces écritures, même si la période est fermée.  

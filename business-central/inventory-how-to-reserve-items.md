@@ -13,11 +13,11 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: bca330009730caf5d8f4d6d82eb6bedab5e762c0
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "932182"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1243132"
 ---
 # <a name="reserve-items"></a>Réserver des articles
 Vous pouvez réserver des articles pour les documents de vente, les bons de commande, les commandes service, les ordres d'assemblage et les bons de production. Vous pouvez réserver des articles en inventaire ou entrants sur les lignes document ou journal ouvertes. Vous effectuez le travail sur la page **Réservation**.

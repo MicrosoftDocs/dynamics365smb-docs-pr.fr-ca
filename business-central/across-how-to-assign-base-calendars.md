@@ -13,11 +13,11 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: cbcb2a9d4262a8057b82d8f87fc619d218c97e67
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "914125"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1241256"
 ---
 # <a name="set-up-base-calendars"></a>Configurer des calendriers principaux
 Vous pouvez affecter un calendrier principal à votre compagnie et à ses partenaires commerciaux, tels que ses clients, ses fournisseurs ou ses emplacements. Les dates de livraison et de réception sur les lignes document de vente, bon de commande, ordre de transfert et bon de production futures sont calculées en fonction des jours ouvrés définis dans le calendrier. Lorsque vous configurez un nouveau calendrier principal, votre tâche consiste essentiellement à indiquer et à définir les jours chômés à appliquer.  

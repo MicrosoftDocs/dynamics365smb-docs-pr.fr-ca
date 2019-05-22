@@ -13,11 +13,11 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: f15f965237401f668325ab1a10d1e154bf00254f
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "935245"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1240336"
 ---
 # <a name="design-details-production-order-posting"></a>Détails de conception : validation d'ordre de fabrication
 Comme pour le report d'ordre d'assemblage, les composantes consommées et le temps du poste utilisé sont convertis et sortis en tant qu'article produit lorsque le bon de production est terminé. Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-assembly-order-posting.md). Toutefois, le flux des coûts des ordres d'assemblage est moins complexe, notamment parce que le report du coût d'assemblage ne se produit qu'une fois et ne génère donc pas d'inventaire travaux en cours.

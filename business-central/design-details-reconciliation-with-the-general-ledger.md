@@ -13,11 +13,11 @@ ms.search.keywords: design, reconciliation, general ledger, inventory
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: 2cb3e743dfd28e96a404209f086caa3f9e84be6c
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "928991"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1241699"
 ---
 # <a name="design-details-reconciliation-with-the-general-ledger"></a>Détails de conception : rapprochement de GL
 Lorsque vous reportez des mouvements d'inventaire, tels que des livraisons vente, des productions ou des ajustements négatifs, les modifications de quantité et de valeur effectuées dans l'inventaire sont enregistrées respectivement dans les écritures du grand livre article et les écritures valeur. L'étape suivante de ce processus consiste à reporter les valeurs de l'inventaire dans les comptes inventaire du grand livre.  

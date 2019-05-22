@@ -11,11 +11,11 @@ ms.search.keywords: IC, group, consolidation, affiliate, subsidiary
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: d98cd2c8f4b88856ad55ad607370f130c6421a4d
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "928826"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1238590"
 ---
 # <a name="work-with-intercompany-documents-and-journals"></a>Utiliser les documents et les journaux intersociétés
 Les documents ou journaux intercompagnies permettent de reporter les transactions effectuées avec vos partenaires intercompagnies. Lorsque vous reportez un document ou une ligne journal intercompagnie dans votre compagnie, le programme crée le document ou la ligne journal correspondante dans votre boîte d'envoi intercompagnie : vous pouvez le transmettre au partenaire concerné. Celui-ci peut ensuite reporter la transaction correspondante dans sa compagnie sans avoir à entrer à nouveau les données.

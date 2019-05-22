@@ -11,11 +11,11 @@ ms.search.keywords: phone, tablet
 ms.date: 04/01/2019
 ms.author: edupont
 ms.openlocfilehash: 48dd62ab962c2a3ee0ad243a9e7d00d953c60dca
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "912399"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1244548"
 ---
 # <a name="getting-business-central-on-your-mobile-device"></a>Obtention de Business Central sur votre périphérique mobile
 Accédez à vos données [!INCLUDE[d365fin](includes/d365fin_md.md)] à partir de votre périphérique mobile. Vous pouvez naviguer dans vos données commerciales, utiliser des fonctionnalités telles que l'envoi vers Excel ou Office 365, afficher des graphiques et des indicateurs de performance clés actualisés, envoyer par courriel des devis et des factures, mais aussi prendre des photos et les ajouter en pièces jointes grâce à votre appareil photo. Suivez la procédure ci-dessous pour télécharger l'application et démarrer.
