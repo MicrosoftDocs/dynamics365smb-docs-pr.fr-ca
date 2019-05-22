@@ -11,11 +11,11 @@ ms.search.keywords: payment process, cash receipts
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: d96f46d7c0bd2b8a20294ff934ed645a76298e42
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "926639"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1251893"
 ---
 # <a name="reconcile-payments-that-cannot-be-applied-automatically"></a>Rapprocher les paiements qui ne peuvent pas être affectés automatiquement
 Vous serez parfois amené à gérer des paiements sur votre compte bancaire, qui ne peuvent pas être affectés à une écriture client, fournisseur ou compte bancaire ouverte associée. Les motifs peuvent être qu'il n'existe dans [!INCLUDE[d365fin](includes/d365fin_md.md)] aucun document auquel le paiement puisse être lettré, ou que le document associé dans [!INCLUDE[d365fin](includes/d365fin_md.md)] affiche un montant différent du montant de la transaction, par exemple, en raison du taux de change. Sur la page **Journal rapprochement paiement**, tous les montants de transaction pour les paiements qui n'ont pas encore été affectés s'affichent dans le champ **Différence**, y compris les montants qui ne peuvent pas être affectés pour des motifs tels que celui qui précède.

@@ -12,11 +12,11 @@ ms.workload: na
 ms.date: 04/01/2019
 ms.author: bholtorf
 ms.openlocfilehash: c70a8fd066ffd5d312716891aa4cdf7768cd102a
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "926686"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1249225"
 ---
 # <a name="managing-notifications"></a>Gérer les notifications
 [!INCLUDE[d365fin](includes/d365fin_md.md)] vous aide à travailler de façon plus intelligente en vous informant de certains événements ou modification d'état, par exemple, lorsque vous êtes sur le point de facturer un client présentant un solde échu, ou lorsque l'inventaire disponible est inférieur à la quantité que vous êtes sur le point de vendre, par exemple. Ces notifications s'affichent sous la forme d'astuces subtiles dans le contexte de la tâche que vous effectuez, et vous pouvez choisir de les ignorer ou d'en savoir plus sur la question.  

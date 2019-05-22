@@ -13,11 +13,11 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: ecfa992e5a228225c6ef18ced95e477519ce0fd7
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "925568"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1245447"
 ---
 # <a name="configure-new-companies"></a>Configurer de nouvelles compagnies
 Pour configurer une nouvelle compagnie dans votre implémentation de la solution, vous suivez habituellement trois phases. Dans la première phase, vous importez le package configuration, un fichier .rapidstart avec les informations de configuration. Dans la deuxième phase, vous modifiez les informations de configuration, puis vous les appliquez à votre nouvelle compagnie. Dans la phase finale, vous vérifiez et corrigez les erreurs.  
@@ -26,7 +26,7 @@ Les procédures suivantes supposent que vous avez créé et enregistré un colis
 
 Les procédures suivantes supposent que vous avez initialisé et ouvert votre nouvelle compagnie et que vous utilisez le tableau de bord Responsable de l'implémentation de RapidStart Services.
 
-## <a name="to-import-a-configuration-package"></a>Pour importer un colis configuration  
+## <a name="to-import-a-configuration-package"></a>Pour importer un package configuration  
 1. Ouvrez la nouvelle compagnie dans la base de données [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Packages configuration**, et sélectionnez le lien associé.  
 3. Sélectionnez l'action **Importer package**.  

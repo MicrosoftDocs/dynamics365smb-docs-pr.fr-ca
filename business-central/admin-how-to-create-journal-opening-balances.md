@@ -13,11 +13,11 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: 535a899ed43e2d7112699fff9aa3ebc6f4289292
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "923822"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1246742"
 ---
 # <a name="create-journal-opening-balances"></a>Créer des soldes ouverts journal
 [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut plusieurs traitements par lots qui sont livrés pour aider au transfert des soldes de compte hérité vers une société nouvellement configurée. Vous pouvez facilement transférer ces données avec le journal clients, le journal fournisseurs, le journal articles ou le journal GL.
@@ -27,7 +27,7 @@ La première étape consiste à créer un package de configuration incluant les 
 Avant de commencer, vérifiez que vous vous trouvez sur la page du tableau de bord Responsable de l'implémentation de RapidStart Services, car elle fournit le contexte correct pour votre travail de configuration. Pour plus d'informations, voir [Modification des paramètres de base](ui-change-basic-settings.md).
 
 ## <a name="to-apply-the-entries-in-a-journal-to-a-new-company"></a>Pour affecter les écritures d'un journal à une compagnie  
-1. Configurez une nouvelle compagnie et appliquez-lui un package de configuration. Pour plus d'informations, voir [Configurer une compagnie avec l’assistant RapidStart](admin-how-to-configure-a-company-with-the-rapidstart-wizard.md).  
+1. Configurez une nouvelle compagnie et appliquez-lui un package configuration. Pour plus d'informations, voir [Configurer une compagnie avec l’assistant RapidStart](admin-how-to-configure-a-company-with-the-rapidstart-wizard.md).  
 
     La nouvelle compagnie ne contient pas d’informations sur les soldes ouverts journal.  
 
@@ -42,6 +42,6 @@ Avant de commencer, vérifiez que vous vous trouvez sur la page du tableau de bo
 10. Répétez les étapes pour importer et reporter les autres soldes ouverts.  
 
 ## <a name="see-also"></a>Voir aussi  
-[Appliquer des configurations à de nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
+[Appliquer des configurations aux nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)

@@ -11,11 +11,11 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: 3b847791283820d8b9996f417e2bae1ca8c0e461
-ms.sourcegitcommit: addfb47612cc2e4e98dfd7e338b6f41cde405d5c
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "939380"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1246322"
 ---
 # <a name="design-details-warehouse-setup"></a>Détails de conception : paramètres entrepôt
 La fonctionnalité d'entrepôt dans [!INCLUDE[d365fin](includes/d365fin_md.md)] contient différents niveaux de complexité, tels que définis par les autorisations de licence dans les granules proposés. Le niveau de complexité dans une solution entrepôt est en grande partie défini par la configuration des zones sur les fiches emplacement, qui est lui-même contrôlé par licence afin que l'accès aux champs de configuration des zones soit défini par la licence. En outre, les objets d'application de la licence déterminent le document d'interface utilisateur à utiliser pour les activités entrepôt prises en charge.  

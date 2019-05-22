@@ -13,11 +13,11 @@ ms.search.keywords: procurement, supply, vendor order
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: 738cbfece41121eb05aeb598f9ea4367173f29a5
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "918781"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1251847"
 ---
 # <a name="purchasing"></a>Procédure d'achat
 Vous créez une facture achat ou un bon de commande pour enregistrer le coût d'achats et suivre les créances. Si vous devez contrôler un inventaire, les factures achat sont également utilisées pour mettre à jour les niveaux d'inventaire de manière dynamique afin que vous puissiez réduire vos coûts d'inventaire et fournir un meilleur service au client. Le prix d'achat, notamment les frais de service, et les valeurs d'inventaire qui résultent du report des factures achat contribuent aux chiffres du profit et à d'autres KPI financiers sur votre Tableau de bord.

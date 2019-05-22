@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
 ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 68128de48b014e7ca44fba3909cf72dcf0d87135
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.openlocfilehash: c64b58c036395764191c05f47f8327c6479a4c6f
+ms.sourcegitcommit: dac212009aadf3227e54c99976c438f6e56f182a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "920425"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "1447047"
 ---
 # <a name="setting-up-finance"></a>Configuration de Finance
 Pour vous aider à démarrer rapidement, [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut des configurations standard pour la plupart des processus financiers. Si vous devez modifier les configurations en fonction de votre activité, n'hésitez pas. Par exemple, à partir du tableau de bord, vous pouvez utiliser un guide de configuration assistée pour configurer la taxe de vente en fonction de votre situation géographique.  
@@ -43,8 +43,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Ajouter de nouveaux comptes au plan comptable existant. |[Configuration du plan comptable](finance-setup-chart-accounts.md) |
 | Configurez les graphiques de veille économique pour analyser la trésorerie. |[Configuration d'une analyse de trésorerie](finance-setup-cash-flow-analyses.md) |
 |Activer la facturation d'un client qui n'est pas configuré dans le système.|[Configurer des clients effectuant un achat au comptoir](finance-how-to-set-up-cash-customers.md)|
-| Configurez le rapport Intrastat et envoyez-le à une administration | [Configurer et soumettre une déclaration Intrastat](finance-how-setup-report-intrastat.md)|
-|Préparer le rapport Balance de vérification consolidée dans le tableau de bord Comptable pour obtenir un aperçu financier entre plusieurs compagnies.|[Consolidation des données financières de plusieurs compagnies](finance-consolidated-company-reporting.md)|
+| Configurez le rapport Intrastat et envoyez-le à une administration | [Configurer et enregistrer un rapport Intrastat](finance-how-setup-report-intrastat.md)|
 |Vérifiez qu'une écriture dans un journal général est affectée à plusieurs comptes lors du report du journal, soit par quantité, pourcentage ou montant.|[Utiliser les clés d'affectation dans les journaux généraux](ui-how-use-allocation-keys-general-journals.md)|
 
 ## <a name="see-also"></a>Voir aussi

@@ -13,11 +13,11 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: 66b3f7fb4955d66202818a22aaa2a36235c77e9d
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "913420"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1245295"
 ---
 # <a name="manage-company-configuration-in-a-worksheet"></a>Gérer la configuration de la compagnie dans une feuille
 La feuille configuration est l’emplacement principal dans lequel vous pouvez planifier, suivre et effectuer votre travail de configuration. Vous pouvez créer une feuille pour chaque compagnie avec laquelle vous travaillez ou créer une feuille configuration standard qui peut être utilisée pour configurer plusieurs compagnies identiques.  
@@ -125,6 +125,6 @@ Lors de la création d’un colis configuration pour une solution, vous pouvez c
 3.  Révisez les informations disponibles. Modifiez-les selon vos besoins en supprimant les enregistrements qui ne sont pas appropriés ou en ajoutant de nouveaux enregistrements.
 
 ## <a name="see-also"></a>Voir aussi  
-[Configurer une société](admin-set-up-company-configuration.md)  
+[Configurer une compagnie](admin-set-up-company-configuration.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)

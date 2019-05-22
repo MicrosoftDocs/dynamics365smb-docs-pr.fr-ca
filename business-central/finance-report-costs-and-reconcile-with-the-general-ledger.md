@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 05/02/2019
 ms.author: sgroespe
-ms.openlocfilehash: 7ebdf239e592faedd1502c8fff50dd91e474352f
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.openlocfilehash: d92d732b99eedb06eb0185d1227252e1ace95334
+ms.sourcegitcommit: dac212009aadf3227e54c99976c438f6e56f182a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "917729"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "1446886"
 ---
 # <a name="reporting-costs-and-reconciling-with-the-general-ledger"></a>Génération de rapports sur les coûts et rapprochement avec le grand livre
 À la fin de la période comptable (mensuelle, annuelle, etc.), une série de tâches de contrôle des coûts et d'audit doivent être effectuées pour déclarer une valeur d'inventaire correcte et équilibrée au département Finances. Outre les tâches habituelles de report qui transfèrent les écritures valeur de chaque article vers les comptes du grand livre appropriés, l'auditeur ou le contrôleur responsable de cette tâche critique a accès à plusieurs rapports et fonctions de suivi, ainsi qu'à un outil de rapprochement.  
@@ -30,8 +30,7 @@ ms.locfileid: "917729"
 |Afficher la valeur inventaire des bons de production sélectionnés dans votre inventaire TEC, telle que les quantités et valeurs de consommation, l'utilisation des capacités et de production dans les bons de production en cours.|Rapport **Évaluation de l'inventaire - TEC**|  
 |Afficher la valeur d'inventaire des articles sélectionnés, y compris leur coût réel et prévu à la date spécifiée.|Rapport **Évaluation de l'inventaire - Spécification coût**|  
 |Utiliser un rapport pour analyser les raisons des évolutions de coûts ou pour obtenir un aperçu du coût des marchandises vendues (CMV).|Rapport **Analyse du partage des coûts**|  
-|Reporter périodiquement les écritures valeur des transactions article depuis le livre inventaire vers les comptes du grand livre associés pour rapprocher les deux livres.|[Rapprocher les coûts de l'inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md)|  
-|Utiliser une page pour vérifier le rapprochement du livre inventaire et du grand livre.|[Rapprocher les coûts de l'inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md)|  
+|Reporter périodiquement les écritures valeur des transactions article de l'écriture inventaire dans les comptes du grand livre associés pour rapprocher les deux livres.|[Rapprocher les coûts de l'inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md)|  
 |Déterminez le montant TEC devant être reporté dans les comptes de bilan pour la génération des rapports de fin d'exercice.|[Surveiller la progression et les performances](projects-how-monitor-progress-performance.md)|
 
 ## <a name="see-also"></a>Voir aussi  

@@ -13,11 +13,11 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: fde77f873897d801e6bf06d55d57e9406f352eed
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "941644"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1245869"
 ---
 # <a name="prepare-a-configuration-package"></a>Préparer un package configuration
 Lorsque vous configurez une nouvelle compagnie, les relations de table sont reconnues et traitées. Les données sont importées et affectées dans le bon ordre. Les tables de dimensions sont également importées si elles sont incluses dans le package configuration. Pour plus d'informations, voir [Pour importer les données client](admin-migrate-customer-data.md#to-import-customer-data). 
@@ -136,6 +136,6 @@ Une fois que vous avez contrôlé et testé toutes vos informations de configura
 
 ## <a name="see-also"></a>Voir aussi  
 [Collecter les valeurs de configuration client](admin-gather-customer-setup-values.md)  
-[Configurer une société](admin-set-up-company-configuration.md)  
+[Configurer une compagnie](admin-set-up-company-configuration.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)

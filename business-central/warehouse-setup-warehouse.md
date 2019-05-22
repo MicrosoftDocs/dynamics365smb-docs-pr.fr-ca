@@ -13,11 +13,11 @@ ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
 ms.openlocfilehash: df77998dc9e5ee06531f3be158a7d9ca2604fc05
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "914748"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1248712"
 ---
 # <a name="setting-up-warehouse-management"></a>Configuration de la gestion des entrepôts
 La stratégie de distribution d'une compagnie se reflète dans la configuration de ses processus entrepôt : Cela inclut la définition de la manière dont différents articles sont traités dans différents entrepôts (par exemple, degré de contrôle des zones et étendue du flux de travail requis entre les activités entrepôt).  

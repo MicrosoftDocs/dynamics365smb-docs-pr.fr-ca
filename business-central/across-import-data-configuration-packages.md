@@ -11,11 +11,11 @@ ms.search.keywords: migration, Excel
 ms.date: 04/01/2019
 ms.author: edupont
 ms.openlocfilehash: 0d31e710c0b5d9e1dfa63c9c653b740fdcc12f11
-ms.sourcegitcommit: bd78a5d990c9e83174da1409076c22df8b35eafd
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "926542"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1245534"
 ---
 # <a name="importing-business-data-from-other-finance-systems"></a>Importation des données métier à partir d'autres systèmes financiers
 Lorsque vous effectuez votre inscription à [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez choisir de créer une société vierge afin d'être en mesure de télécharger vos propres données et de tester votre société [!INCLUDE[d365fin](includes/d365fin_md.md)]. En fonction de la solution financière qu'utilise votre compagnie aujourd'hui, vous pouvez transférer des informations sur les clients, les fournisseurs, l'inventaire et les comptes bancaires.  
@@ -30,7 +30,7 @@ Vous pouvez importer des données de base et des données transactionnelles à p
 > Sinon, utilisez l'assistant de migration de données pour importer des données de QuickBooks ou de Dynamics GP. Pour plus d'informations, voir [Migration de données QuickBooks](ui-extensions-quickbooks-data-migration.md) ou [Migration de données Dynamics GP](ui-extensions-dynamicsgp-data-migration.md).
 
 > [!NOTE]  
-> Pour des travaux d'implémentation plus importants, vous pouvez utiliser RapidStart Services pour [!INCLUDE[d365fin](includes/d365fin_md.md)], une boîte à outils étendue de configuration de nouvelles solutions basées sur les besoins métier et les données de configuration des clients. Les services RapidStart offrent également une fonctionnalité d'importation des données métier. Pour plus d'informations, voir [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md).
+> Pour des travaux d'implémentation plus importants, vous pouvez utiliser RapidStart Services pour [!INCLUDE[d365fin](includes/d365fin_md.md)], une boîte à outils étendue de configuration de nouvelles solutions basées sur les besoins métier et les données de configuration des clients. RapidStart Services offre également une fonctionnalité d'importation des données métier. Pour plus d'informations, voir [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md).
 
 Pour importer des images d'article, vous pouvez utiliser une fonction dédiée sur la page **Configuration de l'inventaire**. Pour plus d'informations, reportez-vous à la section [Importer plusieurs images d'article](inventory-how-import-item-pictures.md).
 
@@ -73,7 +73,7 @@ Le package de configuration par défaut prend en charge les tables suivantes :
 -   Config. paramètres report
 -   Territoire
 -   Catégorie d'article
--   Prix de vente
+-   Prix vente
 -   Prix achat
 
 ## <a name="see-also"></a>Voir aussi
