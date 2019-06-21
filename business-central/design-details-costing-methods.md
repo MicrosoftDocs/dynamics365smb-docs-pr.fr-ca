@@ -10,17 +10,23 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 06/03/2019
 ms.author: sgroespe
-ms.openlocfilehash: 1175a7fe058de5f8e7876014d8a71227b7cc46d8
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 99d3a5b4048756e71711abf9fa24bef12c12d963
+ms.sourcegitcommit: 04581558f6c5488c705a7ac392cf297be10b5f4f
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1243950"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "1621078"
 ---
 # <a name="design-details-costing-methods"></a>Détails de conception : modes évaluation stock
-Le mode d'évaluation du stock détermine si une valeur réelle ou budgétée est capitalisée et prise en compte dans le calcul des coûts. Au même titre que la date de report et la séquence, le mode d'évaluation coût a aussi une incidence sur l'enregistrement du flux des coûts. Les méthodes suivantes sont prises en charge dans [!INCLUDE[d365fin](includes/d365fin_md.md)] :  
+Le mode d'évaluation du stock détermine si une valeur réelle ou budgétée est capitalisée et prise en compte dans le calcul des coûts. Au même titre que la date de report et la séquence, le mode d'évaluation coût a aussi une incidence sur l'enregistrement du flux des coûts.
+
+> [!NOTE]
+> Vous ne pouvez pas modifier le mode évaluation coût d'un article si des écritures article existent pour l'article.<br /><br />
+> Des informations seront bientôt publiées ici sur des solutions de contournement pour modifier un mode évaluation stock dans des situations spéciales.
+
+Les méthodes suivantes sont prises en charge dans [!INCLUDE[d365fin](includes/d365fin_md.md)] :  
 
 |Mode évaluation du stock|Description|Quand utiliser|  
 |--------------------|---------------------------------------|-----------------|  

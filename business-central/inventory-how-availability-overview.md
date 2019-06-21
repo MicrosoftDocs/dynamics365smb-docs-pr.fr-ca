@@ -9,14 +9,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: stock
-ms.date: 04/01/2019
+ms.date: 06/03/2019
 ms.author: SorenGP
-ms.openlocfilehash: ab3e23f9d3128045e722bf2677b1b687b2218b10
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: f1c7fbe75dfa9767e5a5dfbfbe354fbd3f9448b5
+ms.sourcegitcommit: 04581558f6c5488c705a7ac392cf297be10b5f4f
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1243287"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "1621009"
 ---
 # <a name="view-the-availability-of-items"></a>Voir la disponibilité des articles
 Dans le contexte d'une tâche professionnelle, vous pouvez obtenir des informations avancées sur la disponibilité et l'emplacement d'un article, par exemple en discutant avec un client à propos d'une date de livraison.
@@ -24,11 +24,13 @@ Dans le contexte d'une tâche professionnelle, vous pouvez obtenir des informati
 Vous pouvez afficher la disponibilité de tous les articles par emplacement, et vous pouvez afficher la disponibilité de chaque article par événement, par période, ou par emplacement. Un événement désigne tout mouvement d'inventaire prévu, par exemple une livraison vente ou une réception transfert entrant.
 
 > [!NOTE]  
->   Les vues de disponibilité par emplacement nécessitent la mise à jour de l'inventaire à plusieurs emplacements. Pour plus d'informations, voir [Configurer des emplacements](inventory-how-setup-locations.md).
+>   Les vues de disponibilité par emplacement nécessitent la mise à jour de l'inventaire à plusieurs emplacements. Pour plus d'informations, reportez-vous à [Configurer des emplacements](inventory-how-setup-locations.md).
 
-Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les chiffres de disponibilité sont affichés dans deux champs de définition différents.
+Si vous utilisez la fonctionnalité entrepôt, la disponibilité varie selon les affectations au niveau de la zone quand des activités entrepôt, par exemple des prélèvements et des mouvements, se produisent et quand le système de réservation d'inventaire impose des restrictions à respecter. Un algorithme plutôt complexe vérifie que toutes les conditions sont remplies avant d'affecter des quantités aux prélèvements pour les flux sortants. Pour plus d'informations, voir [Détails de conception : disponibilité dans l'entrepôt](design-details-availability-in-the-warehouse.md).
 
-* Le champ **Quantité disponible** affiche la quantité réelle en fonction des écritures comptables articles validées.
+Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les chiffres de disponibilité sont généralement affichés dans deux champs de définition différents.
+
+* Le champ **Quantité disponible**, dans certains emplacements nommés **Inventaire**, affiche la quantité réelle en fonction des écritures article reportées.
 * Le champ **Stock prévisionnel** est calculé et affiche la quantité disponible plus les réceptions planifiées moins les besoins bruts. (Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les réceptions programmées incluent des quantités sur des bons de commande et des ordres de transfert entrants. Les besoins bruts incluent des quantités sur les documents de vente et les transferts sortants.)
 
 > [!TIP]  
