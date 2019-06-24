@@ -1,11 +1,10 @@
 ---
 redirect_url: send-invoice
+ms.openlocfilehash: 63afb945fa218d2d2d659cf5086d9e71530284b7
+ms.sourcegitcommit: 92c7b6c5f0a5d8becbef106ab85258906765bc3e
 ms.translationtype: HT
-ms.sourcegitcommit: 9389d90852d8ebb15bb1293a7d0ee7d26126fbc9
-ms.openlocfilehash: 16f5e5e077c03eda58d6b120df10fb77dbed21af
-ms.contentlocale: fr-ca
-ms.lasthandoff: 02/08/2019
-
+ms.contentlocale: fr-CA
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "1540361"
 ---
-<!--redirect only, do not translate-->
-
+redirection uniquement, ne pas traduire
