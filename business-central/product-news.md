@@ -4,29 +4,34 @@ description: Décrit comment obtenir les dernières nouveautés et mises à jour
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: get-started-article
-ms.search.keywords: news, release notes, roadmap, whats new
-ms.date: 04/01/2019
+ms.search.keywords: news, release plan, roadmap, whats new
+ms.date: 06/13/2019
 ms.author: edupont
-ms.openlocfilehash: 74d31e773020351fb5231fb4452ab83bbbb97d69
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 3b1372b5a4a567820e0a4d4d87fffa51fc5bd52b
+ms.sourcegitcommit: f2e3b571eab6e01d9f5aa8ef47056b6bd313dcbd
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1253595"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "1629813"
 ---
-# <a name="whats-new-in-dynamics-365-business-central"></a><span data-ttu-id="d9041-103">Nouveautés dans Dynamics 365 Business Central</span><span class="sxs-lookup"><span data-stu-id="d9041-103">What's New in Dynamics 365 Business Central</span></span>
-
-<span data-ttu-id="d9041-104">Cette page pointe vers des rubriques qui vous aident à découvrir les nouvelles fonctionnalités des dernières versions de [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)].</span><span class="sxs-lookup"><span data-stu-id="d9041-104">This page points you to topics that can help you learn about the new features in the latest versions of [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)].</span></span> <span data-ttu-id="d9041-105">Si ce n'est pas encore fait, inscrivez-vous à une [version d'évaluation](https://trials.dynamics.com/). Nous vous présenterons ensuite les bases de ce que vous pouvez réaliser grâce à [!INCLUDE[d365fin](includes/d365fin_md.md)], avant de vous laisser faire vos premiers pas par vous-même.</span><span class="sxs-lookup"><span data-stu-id="d9041-105">If you haven't already, then sign up for a [trial](https://trials.dynamics.com/), get introduced to the basics of what you can do with [!INCLUDE[d365fin](includes/d365fin_md.md)], and then try things out on your own for a while.</span></span> <span data-ttu-id="d9041-106">Lorsque vous êtes prêt, vous pouvez ouvrir une compagnie vierge et effectuer vos propres configurations.</span><span class="sxs-lookup"><span data-stu-id="d9041-106">When you are ready, you can open a blank company and set things up for yourself.</span></span>  
-
-<span data-ttu-id="d9041-107">Régulièrement, nous mettrons à jour [!INCLUDE[d365fin](includes/d365fin_md.md)] avec des fonctionnalités supplémentaires dans l'application de base et avec les nouvelles [extensions](ui-extensions.md).</span><span class="sxs-lookup"><span data-stu-id="d9041-107">On a regular basis, we will update [!INCLUDE[d365fin](includes/d365fin_md.md)] with additional capabilities in the core application and with new [extensions](ui-extensions.md).</span></span>  
+# <a name="whats-new-in-dynamics-365-business-central"></a><span data-ttu-id="fdb1d-103">Nouveautés dans Dynamics 365 Business Central</span><span class="sxs-lookup"><span data-stu-id="fdb1d-103">What's New in Dynamics 365 Business Central</span></span>
 
 [!include [release notes](includes/release-notes.md)]
 
-## <a name="check-the-business-central-blog"></a><span data-ttu-id="d9041-108">Consulter le blog de Business Central</span><span class="sxs-lookup"><span data-stu-id="d9041-108">Check the Business Central Blog</span></span>
-<span data-ttu-id="d9041-109">Nous discutons également des nouvelles fonctionnalités sur le [blog de Business Central](https://community.dynamics.com/business/b/financials/), notamment leur date de disponibilité et les éventuelles considérations particulières.</span><span class="sxs-lookup"><span data-stu-id="d9041-109">We also talk about new capabilities on [the Business Central blog](https://community.dynamics.com/business/b/financials/), including when they are made available, and if there are special considerations.</span></span>  
+<span data-ttu-id="fdb1d-104">Cette page pointe vers des rubriques qui vous aident à découvrir les nouvelles fonctionnalités des dernières versions de [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)].</span><span class="sxs-lookup"><span data-stu-id="fdb1d-104">This page points you to topics that can help you learn about the new features in the latest versions of [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)].</span></span> <span data-ttu-id="fdb1d-105">Si ce n'est pas encore fait, inscrivez-vous à une [version d'évaluation](https://trials.dynamics.com/). Nous vous présenterons ensuite les bases de ce que vous pouvez réaliser grâce à [!INCLUDE[d365fin](includes/d365fin_md.md)], avant de vous laisser faire vos premiers pas par vous-même.</span><span class="sxs-lookup"><span data-stu-id="fdb1d-105">If you haven't already, then sign up for a [trial](https://trials.dynamics.com/), get introduced to the basics of what you can do with [!INCLUDE[d365fin](includes/d365fin_md.md)], and then try things out on your own for a while.</span></span> <span data-ttu-id="fdb1d-106">Lorsque vous êtes prêt, vous pouvez ouvrir une compagnie vierge et effectuer vos propres configurations.</span><span class="sxs-lookup"><span data-stu-id="fdb1d-106">When you are ready, you can open a blank company and set things up for yourself.</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="d9041-110">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="d9041-110">See Also</span></span>
-[<span data-ttu-id="d9041-111">Mise en route</span><span class="sxs-lookup"><span data-stu-id="d9041-111">Getting Started</span></span>](product-get-started.md)  
-<span data-ttu-id="d9041-112">[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="d9041-112">[Working with [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span></span>  
-[<span data-ttu-id="d9041-113">Tarification de Business Central</span><span class="sxs-lookup"><span data-stu-id="d9041-113">Business Central pricing</span></span>](https://dynamics.microsoft.com/en-us/business-central/overview/#pricing)  
-[<span data-ttu-id="d9041-114">Communauté Dynamics 365 Business Central</span><span class="sxs-lookup"><span data-stu-id="d9041-114">Dynamics 365 Business Central Community</span></span>](https://community.dynamics.com/business/)  
+<span data-ttu-id="fdb1d-107">Régulièrement, nous mettrons à jour [!INCLUDE[d365fin](includes/d365fin_md.md)] avec des fonctionnalités supplémentaires dans l'application de base et avec les nouvelles extensions.</span><span class="sxs-lookup"><span data-stu-id="fdb1d-107">On a regular basis, we will update [!INCLUDE[d365fin](includes/d365fin_md.md)] with additional capabilities in the core application and with new extensions.</span></span> <span data-ttu-id="fdb1d-108">Pour la liste actuelle des extensions Microsoft, voir [Personnalisation de Business Central à l'aide d'extensions](ui-extensions.md).</span><span class="sxs-lookup"><span data-stu-id="fdb1d-108">For the current list of Microsoft extensions, see [Customizing Business Central Using Extensions](ui-extensions.md).</span></span>
+
+<span data-ttu-id="fdb1d-109">Pour voir toutes les extensions proposées par les partenaires [!INCLUDE[d365fin](includes/d365fin_md.md)], voir [AppSource, Business Central](http://go.microsoft.com/fwlink/?linkid=2081646).</span><span class="sxs-lookup"><span data-stu-id="fdb1d-109">To see all extensions offered by [!INCLUDE[d365fin](includes/d365fin_md.md)] partners, see [AppSource, Business Central](http://go.microsoft.com/fwlink/?linkid=2081646).</span></span>  
+
+## <a name="check-the-business-central-blog"></a><span data-ttu-id="fdb1d-110">Consulter le blog de Business Central</span><span class="sxs-lookup"><span data-stu-id="fdb1d-110">Check the Business Central Blog</span></span>
+<span data-ttu-id="fdb1d-111">Nous discutons également des nouvelles fonctionnalités sur le [blog de Business Central](https://community.dynamics.com/business/b/financials/), notamment leur date de disponibilité et les éventuelles considérations particulières.</span><span class="sxs-lookup"><span data-stu-id="fdb1d-111">We also talk about new capabilities on [the Business Central blog](https://community.dynamics.com/business/b/financials/), including when they are made available, and if there are special considerations.</span></span>  
+
+## <a name="see-also"></a><span data-ttu-id="fdb1d-112">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="fdb1d-112">See Also</span></span>
+[<span data-ttu-id="fdb1d-113">Mise en route</span><span class="sxs-lookup"><span data-stu-id="fdb1d-113">Getting Started</span></span>](product-get-started.md)  
+<span data-ttu-id="fdb1d-114">[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="fdb1d-114">[Working with [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span></span>  
+[<span data-ttu-id="fdb1d-115">Tarification de Business Central</span><span class="sxs-lookup"><span data-stu-id="fdb1d-115">Business Central pricing</span></span>](https://dynamics.microsoft.com/en-us/business-central/overview/#pricing)  
+[<span data-ttu-id="fdb1d-116">Communauté Dynamics 365 Business Central</span><span class="sxs-lookup"><span data-stu-id="fdb1d-116">Dynamics 365 Business Central Community</span></span>](https://community.dynamics.com/business/)
+
+## [!INCLUDE[d365fin](includes/free_trial_md.md)]
+## [!INCLUDE[d365fin](includes/training_link_md.md)]  
