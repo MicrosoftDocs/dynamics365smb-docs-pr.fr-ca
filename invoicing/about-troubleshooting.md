@@ -9,12 +9,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/12/2018
 ms.author: edupont
-ms.openlocfilehash: aed202d5de052d6c938e307b961e049be322da0b
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: bea5ed403aad64779b2a79d5031a98441f627cea
+ms.sourcegitcommit: 8fe694b7bbe7fc0456ed5a9e42291218d2251b05
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1254113"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "1726952"
 ---
 # <a name="troubleshooting-included365invlongincludesd365invlongmd"></a>Dépannage de [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
 Lisez cette section pour obtenir des conseils et des informations de dépannage sur [!INCLUDE[d365inv](includes/d365inv.md)].
@@ -35,7 +35,7 @@ Vous pouvez le faire dans les paramètres de [!INCLUDE[d365inv](includes/d365inv
 Le numéro est généré lorsque vous envoyez la facture. Jusqu'alors, elle n'a pas de numéro. Vous pouvez voir le numéro suivant attendu dans la page **Paramètres**.  
 
 ## <a name="can-i-change-the-design-of-my-invoice"></a>Puis-je modifier la conception de ma facture ?
-Pas encore. Nous travaillons sur cette fonctionnalité et nous mettrons à jour notre contenu dès qu'elle sera disponible.  
+Non, vous ne pouvez pas modifier la mise en page ou la couleur des factures, mais vous pouvez ajouter une image, par exemple le logo de votre compagnie. Pour plus d'informations, voir [Configurer les informations sur votre entreprise](set-up-business-profile.md). 
 
 ## <a name="how-can-i-delete-an-invoice"></a>Comment puis-je supprimer une facture ?
 Si vous avez envoyé une facture à un client, vous pouvez annuler la facture, mais vous ne pouvez pas la supprimer. Lorsque vous supprimez une facture, votre client reçoit un courriel d'annulation et votre comptable pourra voir que la facture a été annulée. Pour annuler une facture, procédez comme suit :

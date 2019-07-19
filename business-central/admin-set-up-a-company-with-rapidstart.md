@@ -1,8 +1,6 @@
 ---
 title: Configurer une compagnie avec RapidStart Services | Microsoft Docs
 description: Vous pouvez configurer une nouvelle compagnie dans Business Central avec RapidStart Services, qui est un outil conçu pour réduire les temps de déploiement, améliorer la qualité de l’implémentation, présenter une approche reproductible des implémentations et augmenter la productivité en automatisant et en simplifiant des tâches récurrentes.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 07/04/2019
 ms.author: sgroespe
-ms.openlocfilehash: 04d665ac1cfcf66c2581d97bac05d636114a5ef4
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 1e7976e19641bd49c1c1d94a31de902aea1a9769
+ms.sourcegitcommit: 8fe694b7bbe7fc0456ed5a9e42291218d2251b05
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1244333"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "1726938"
 ---
 # <a name="setting-up-a-company-with-rapidstart-services"></a>Configuration d'une compagnie avec RapidStart Services
 Vous pouvez configurer une nouvelle compagnie dans [!INCLUDE[d365fin](includes/d365fin_md.md)] avec RapidStart Services, qui est un outil conçu pour réduire les temps de déploiement, améliorer la qualité de l’implémentation, présenter une approche reproductible des implémentations et augmenter la productivité en automatisant et en simplifiant des tâches récurrentes.  
@@ -39,7 +37,6 @@ Vous pouvez utiliser les composantes suivantes pour accélérer la configuration
 
 |**Pour**|**Voir**|  
 |------------|-------------|  
-|Configurer l'interface utilisateur principale de RapidStart Services.|[Utiliser le tableau de bord Responsable de l'implémentation de RapidStart Services](admin-how-to-use-the-rapidstart-services-role-center-to-track-progress.md)|  
 |Créer une compagnie et importer les données de configuration et les modèles de base.|[Configurer une société](admin-set-up-company-configuration.md)|  
 |Déployer le package configuré vers votre client pour l'implémentation.|[Appliquer des configurations à de nouvelles compagnies](admin-apply-configuration-to-new-companies.md)|
 |Définir et valider les valeurs de configuration de votre client pour toutes les zones de base, telles que les informations sur la compagnie, le grand livre, l'inventaire, les ventes ou la fabrication.|[Collecter les valeurs de configuration client](admin-gather-customer-setup-values.md)|  
