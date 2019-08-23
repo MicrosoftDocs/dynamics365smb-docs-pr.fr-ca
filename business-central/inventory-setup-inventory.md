@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: warehouse, stock
-ms.date: 04/01/2019
+ms.date: 06/20/2019
 ms.author: SorenGP
-ms.openlocfilehash: 038e3a9bfdb66a8d714f4f9452f0322623e6ddc4
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 53214df635c637e265c6d302498beee08e9b806c
+ms.sourcegitcommit: acbbe80503e61296310ea7f787a9d7f4bc6dccd7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1238519"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "1870533"
 ---
 # <a name="setting-up-inventory"></a>Configuration de l'inventaire
 Avant de pouvoir gérer les activités entrepôt et les coûts d'inventaire, vous devez configurer les règles et les valeurs qui définissent les stratégies d'inventaire de la compagnie.
@@ -32,6 +32,7 @@ Lorsque vous avez configuré votre inventaire, vous pouvez gérer différents pr
 |Configurez un modèle de distribution efficace avec une combinaison de différents emplacements et centres de gestion affectés aux partenaires commerciaux ou aux employés.|[Utiliser les centres de gestion](inventory-responsibility-centers.md)|
 | Organisez votre inventaire dans plusieurs emplacements, y compris des acheminements transfert. |[Configurer des emplacements](inventory-how-register-new-items.md) |
 | Créez des fiches article pour les articles en inventaire, hors inventaire ou service que vous négociez. |[Enregistrer de nouveaux articles](inventory-how-register-new-items.md) |
+|Utilisez la fonction **Copier l'élément** pour créer rapidement une nouvelle fiche article basée sur une fiche existante.|[Copier des articles existants pour créer de nouveaux articles](inventory-how-copy-items.md)|
 |Apprendre comment renseigner le champ **Type** sur les fiches article en fonction de l'objectif commercial.|[À propos des types d'articles](inventory-about-item-types.md)|
 |Définissez plusieurs unités de mesure pour un article afin de pouvoir l'utiliser comme UOM secondaire, par exemple pour les transactions de ventes, d'achat ou de production.|[Configurer des unités de mesure article](inventory-how-setup-units-of-measure.md)|
 |En complément des fiches article, enregistrer des informations relatives à vos articles dans un emplacement spécifique ou d'une variante spécifique.|[Configurer des unités de stock](inventory-how-to-set-up-stockkeeping-units.md)|

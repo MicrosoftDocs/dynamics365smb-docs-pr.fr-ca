@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: trade, sell
-ms.date: 04/01/2019
+ms.date: 07/30/2019
 ms.author: sgroespe
-ms.openlocfilehash: 6f80d2e1a1a864d5aaff0660d21603f91c5ce229
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: c0f2f591bf43113b160bd81cd37b03d6efc8d41e
+ms.sourcegitcommit: a88d1e9c0ab647cb8d9d81d32c0bdc82843f4145
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1251525"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "1796825"
 ---
 # <a name="sales"></a>Vente
 Vous créez une facture vente ou un document de vente pour enregistrer votre entente avec un client pour vendre certains produits selon certaines méthodes de livraison et de paiement.
@@ -41,8 +41,9 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Créer une fiche client pour chaque client auquel vous vendez des éléments.|[Enregistrer de nouveaux clients](sales-how-register-new-customers.md)|
 | Créer un devis dans lequel vous proposer des biens selon des conditions négociables avant de convertir le devis en facture vente. |[Créer des devis](sales-how-make-offers.md) |
 | Créer une facture vente pour enregistrer votre entente avec un client pour vendre des biens selon certaines méthodes de livraison et de paiement. |[Facturer des ventes](sales-how-invoice-sales.md) |
-| Traiter une document de vente qui implique un envoi partiel ou une livraison directe. |[Vendre des produits](sales-how-sell-products.md) |
-|Paramétrez les lignes vente ou achat standard que vous pouvez rapidement insérer dans les documents, par exemple, pour les ordres de réapprovisionnement récurrents.|[Créer des lignes ventes et achat récurrentes](sales-how-work-standard-lines.md)|  
+| Traiter un document de vente qui implique une livraison partielle ou un envoi direct. |[Vendre des produits](sales-how-sell-products.md) |
+|Comprendre ce qui se passe lorsque vous reportez des documents vente.|[Report des ventes](ui-post-sales.md)|
+|Configurez les lignes vente ou achat standard que vous pouvez rapidement insérer dans les documents, par exemple, pour les ordres de réapprovisionnement récurrents.|[Créer des lignes ventes et achat récurrentes](sales-how-work-standard-lines.md)|  
 | Lier un document de vente à un bon de commande pour vendre un article qui sera livré directement de votre fournisseur à votre client. |[Effectuer des livraisons directes](sales-how-drop-shipment.md) |
 |Faites livrer par un fournisseur un article de catalogue à votre entrepôt pour pouvoir le livrer à votre client.|[Créer des commandes spéciales](sales-how-to-create-special-orders.md)|
 | Effectuez une action sur une facture vente reportée impayée pour créer automatiquement une note de crédit et annulez la facture vente ou recréez-la pour que vous puissiez y apporter des corrections. |[Corriger ou annuler des factures vente impayées](sales-how-correct-cancel-sales-invoice.md) |

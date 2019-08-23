@@ -1,8 +1,6 @@
 ---
 title: Afficher des rapports Power BI personnalisés| Microsoft Docs
 description: Vous pouvez utiliser des rapports Power BI pour obtenir des informations supplémentaires sur les données dans les listes.
-services: project-madeira
-documentationcenter: ''
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,20 +8,21 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: business intelligence, KPI, Odata, Power App, SOAP, analysis
-ms.date: 04/01/2019
+ms.date: 07/08/2019
 ms.author: edupont
-ms.openlocfilehash: 29c7b7656632d2103a16025848a6ddc82650353e
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: acf9462db8b4f559a5fbc40381b4e5009cdac088
+ms.sourcegitcommit: 519623f9a5134c9ffa97eeaed0841ae59835f453
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1241612"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "1755205"
 ---
-# <a name="viewing-list-data-in-power-bi-reports-in-business-central"></a>Affichage de données de liste dans des rapports Power BI dans Business Central 
-[!INCLUDE[d365fin](includes/d365fin_md.md)] inclut un élément de contrôle Récapitulatif sur un certain nombre de pages Liste des clés fournissant des informations supplémentaires sur les données de la liste. Lorsque vous vous déplacez entre les lignes de la liste, le rapport est mis à jour et filtré pour l'écriture sélectionnée. Vous pouvez créer des rapports personnalisés pour qu'ils s'affichent dans ce contrôle, mais il y a certaines règles à suivre lors de la création des rapports pour s'assurer qu'ils adoptent le comportement souhaité.  
+# <a name="viewing-list-data-in-power-bi-reports-in-business-central"></a>Affichage de données de liste dans des rapports Power BI dans Business Central
+
+[!INCLUDE[prodlong](includes/prodlong.md)] inclut un élément de contrôle Récapitulatif sur un certain nombre de pages Liste des clés fournissant des informations supplémentaires sur les données de la liste. Lorsque vous vous déplacez entre les lignes de la liste, le rapport est mis à jour et filtré pour l'écriture sélectionnée. Vous pouvez créer des rapports personnalisés pour qu'ils s'affichent dans ce contrôle, mais il y a certaines règles à suivre lors de la création des rapports pour s'assurer qu'ils adoptent le comportement souhaité.  
 
 > [!NOTE]  
->   Vous devez disposer d'un compte valide avec [!INCLUDE[d365fin](includes/d365fin_md.md)] et avec Power BI. En outre, vous devez télécharger [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/). Pour plus d'informations, voir [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] comme source de données Power BI](across-how-use-financials-data-source-powerbi.md).  
+> Vous devez disposer d'un compte valide avec [!INCLUDE[prodshort](includes/prodshort.md)] et avec Power BI. En outre, pour créer des rapports personnalisés, vous devez télécharger [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/). Pour plus d'informations, voir [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] comme source de données Power BI](across-how-use-financials-data-source-powerbi.md).  
 
 ## <a name="report-data-set"></a>Ensemble de données de rapport
 Lorsque vous créez le rapport dans Power BI Desktop, spécifiez la source de données ou le service Web qui contient les données concernant la liste que vous souhaitez associer au rapport. Par exemple, si vous souhaitez créer un rapport pour la liste Ventes, assurez-vous que l'ensemble des données contient les informations liées aux ventes.  
@@ -50,7 +49,7 @@ De même, si vous souhaitez que l'arrière-plan du rapport se fonde avec la coul
 Avec Power BI, vous pouvez créer un seul rapport avec plusieurs pages. Les visuels que vous souhaitez afficher dans les pages de liste [!INCLUDE[d365fin](includes/d365fin_md.md)] doivent se trouver sur la première page du rapport dans Power BI.  
 
 > [!NOTE]  
->  Le contrôle Récapitulatif Power BI affiche uniquement la première page de votre rapport. Pour afficher d'autres pages, vous devez développer le rapport et utiliser les onglets situés en bas pour accéder aux autres pages.  
+> Le contrôle Récapitulatif Power BI affiche uniquement la première page de votre rapport. Pour afficher d'autres pages, vous devez développer le rapport et utiliser les onglets situés en bas pour accéder aux autres pages.  
 
 ## <a name="saving-your-report"></a>Enregistrement de votre rapport
 
@@ -72,7 +71,9 @@ Cette section fournit une solution de contournement pour les problèmes les plus
 Vérifiez que la taille du rapport est configurée sur 325 pixels x 310 pixels. Enregistrez le rapport, puis actualisez la page de liste.  
 
 ## <a name="see-also"></a>Voir aussi
+
+[Activation de vos données commerciales pour Power BI](admin-powerbi.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] comme source de données Power BI](across-how-use-financials-data-source-powerbi.md)  
-[Mise en route](product-get-started.md)    
-[Configuration de [!INCLUDE[d365fin](includes/d365fin_md.md)]](setup.md)    
+[Mise en route](product-get-started.md)  
+[Configuration de [!INCLUDE[d365fin](includes/d365fin_md.md)]](setup.md)  
 [Finances](finance.md)  

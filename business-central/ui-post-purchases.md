@@ -1,25 +1,24 @@
 ---
 title: Familiarisation avec le report des documents achat | Microsoft Docs
-description: En savoir plus sur les différentes fonctions de report pour reporter des documents achat.
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
+description: En savoir plus sur les différentes fonctions de report pour reporter des documents achat et comment mettre à jour les documents reportés.
+author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
-ms.openlocfilehash: cc3d2e5b0f3425c329e5567e7d00908cb7f5c7d5
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.reviewer: edupont
+ms.date: 07/17/2019
+ms.author: sgroespe
+ms.openlocfilehash: 55a910e471db7b674b0107022647cfd7af7a500d
+ms.sourcegitcommit: a88d1e9c0ab647cb8d9d81d32c0bdc82843f4145
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1247868"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "1796928"
 ---
 # <a name="posting-purchases"></a>Report des achats
-Dans le groupe **Validation** sur un document achat, vous pouvez faire votre choix parmi les fonctions de validation suivantes :
+Dans le **groupe de report** sur un document achat, vous pouvez faire votre choix parmi les fonctions de report suivantes :
 
 * **Valider**
 * **Aperçu compta.**
@@ -45,7 +44,9 @@ Vous pouvez soit reporter, soit reporter et imprimer. Si vous choisissez de repo
 Lorsque le report est terminé, les lignes achat reportées sont supprimées de la commande. Un message vous indique lorsque le report est terminé. Vous pouvez ensuite afficher les écritures reportées dans les diverses pages qui contiennent les écritures reportées, comme les pages **Écritures fournisseur**, **Écritures**, **Écritures article**, **Réceptions achat** et **Factures achat reportées**.
 
 ## <a name="see-also"></a>Voir aussi
-[Procédure d'achat](purchasing-manage-purchasing.md)  
-[Valider des documents et des feuilles](ui-post-documents-journals.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 
+[Achats](purchasing-manage-purchasing.md)  
+[Reporter des documents et des journaux](ui-post-documents-journals.md)  
+[Corriger ou annuler des factures achat impayées](purchasing-how-correct-cancel-unpaid-purchase-invoices.md)  
+[Utilisation de la fonction Tell Me pour trouver des fonctions et des informations](ui-search.md)  
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

@@ -1,25 +1,24 @@
 ---
-title: Familiarisation avec le report des documents vente | Microsoft Docs
-description: En savoir plus sur les différentes fonctions de report pour reporter des documents vente.
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
+title: Report des documents vente | Microsoft Docs
+description: En savoir plus sur les différentes fonctions de report pour reporter des documents vente et comment mettre à jour les documents reportés.
+author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
+ms.reviewer: edupont
 ms.date: 04/01/2019
-ms.author: solsen
-ms.openlocfilehash: d1b2d29c4c5b8397bd6e9e05088e7ea50d68fd20
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.author: sgroespe
+ms.openlocfilehash: 01e831ddddeffe6a64c6de24b4cd8c1b94bad9c3
+ms.sourcegitcommit: a88d1e9c0ab647cb8d9d81d32c0bdc82843f4145
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1247922"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "1796905"
 ---
 # <a name="posting-sales"></a>Report des ventes
-Dans le groupe **Validation** sur un document vente, vous pouvez faire votre choix parmi les fonctions de validation suivantes :
+Dans le **groupe de report** sur un document vente, vous pouvez faire votre choix parmi les fonctions de report suivantes :
 
 * **Valider**
 * **Impression test**
@@ -40,10 +39,12 @@ Pour chaque ligne commande vente, une écriture comptable article est créée da
 > [!IMPORTANT]  
 >   Lorsque vous reportez une commande, vous pouvez créer une livraison et une facture. Ceci peut être effectué de manière simultanée ou indépendante. Vous pouvez également créer une expédition partielle et une facture partielle en renseignant les champs **Qté à expédier** et **Qté à facturer** sur chaque ligne commande vente avant la validation. Notez que vous ne pouvez pas créer de facture pour un article qui n'est pas livré. C'est-à-dire que, avant de pouvoir facturer, vous devez avoir reporté une livraison, ou vous devez choisir de livrer et de facturer en même temps.
 
-Lorsque le report est terminé, les lignes vente reportées sont supprimées de la commande. Un message vous indique lorsque le report est terminé. Vous pouvez ensuite afficher les écritures reportées dans les diverses pages qui contiennent les écritures reportées, telles que **Écritures client**, **Écritures**, **Écritures article**, **Livraisons vente reportées** et **Factures vente reportées**.
+Lorsque le report est terminé, les lignes vente reportées sont supprimées de la commande. Un message vous indique lorsque le report est terminé. Vous pouvez ensuite afficher les écritures reportées dans les diverses pages qui contiennent les écritures reportées, telles que **Écritures client**, **Écritures**, **Écritures article**, **Livraisons vente reportées** et **Factures vente reportées**.  
 
 ## <a name="see-also"></a>Voir aussi
+
 [Ventes](sales-manage-sales.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
+[Corriger ou annuler des factures vente impayées](sales-how-correct-cancel-sales-invoice.md)  
+[Utilisation de la fonction Tell Me pour trouver des fonctions et des informations](ui-search.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-

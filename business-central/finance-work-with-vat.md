@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: VAT, sales, purchases,
-ms.date: 04/01/2019
+ms.date: 07/24/2019
 ms.author: bholtorf
-ms.openlocfilehash: 1665985ba00b291469146536a69a0dcfe9dec85a
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 09aa4b5f6e08265e49a02e3014ffe6724edfcffd
+ms.sourcegitcommit: a88d1e9c0ab647cb8d9d81d32c0bdc82843f4145
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1238910"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "1796859"
 ---
 # <a name="work-with-vat-on-sales-and-purchases"></a>Utiliser la TVA sur les ventes et les achats
 Si votre pays ou région vous demande de calculer la TVA sur les transactions de vente et d'achat afin de pouvoir déclarer les montants à une administration fiscale, vous pouvez configurer [!INCLUDE[d365fin](includes/d365fin_md.md)] pour calculer automatiquement la TVA sur les documents vente et achat. Pour plus d'informations, voir [Configuration des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md).
@@ -55,34 +55,42 @@ Même si vous avez peut-être configuré une ou plusieurs combinaisons pour trai
 
 Si un escompte de paiement a été calculé sur la base d'un montant de facture TTC, vous inversez la partie escompte de paiement du montant TVA lorsque l'escompte de paiement est accordé. Remarque : vous devez activer le champ **Ajust. pour esc. paiement** à la fois dans la configuration du grand livre en général et dans la configuration du report TVA, pour des combinaisons particulières d'un groupe de report de marché TVA et d'un groupe de report de produit TVA.  
 
-#### <a name="to-manually-enter-vat-in-sales-documents"></a>Pour entrer la TVA manuellement dans des documents vente  
+### <a name="to-set-the-system-up-for-manual-vat-entry-in-sales-documents"></a>Pour configurer le système pour la saisie manuelle de la TVA dans les documents de vente
+La section suivante explique comment activer les modifications manuelles de la TVA sur les documents de vente. Les étapes sont similaires sur la page **Configuration achats et à payer**.
+
 1. Sur la page **Configuration du grand livre**, spécifiez une **Différence TVA max. autorisée** entre le montant calculé par le programme et le montant calculé manuellement.  
 2. Dans la page **Paramètres ventes**, activez le champ **Autoriser différence TVA**.  
 
-#### <a name="to-adjust-vat-for-a-sales-document"></a>Pour ajuster la TVA pour un document vente  
+### <a name="to-adjust-vat-for-a-sales-document"></a>Pour ajuster la TVA pour un document vente  
 1. Ouvrez le document de vente approprié.  
 2. Sélectionnez l'action **Statistiques**.  
-3. Sélectionnez le raccourci **Facturation**.  
+3. Dans l'organisateur **Facturation**, choisissez la valeur dans le champ **Nbre de lignes fiscales**.
+4. Modifiez le champ **Montant TVA**.   
 
-    > [!NOTE]  
-    >  Le montant de TVA total de la facture et l'identificateur TVA s'affichent dans les lignes. Vous pouvez ajuster les montants manuellement dans le champ **Montant TVA** des lignes correspondant à chaque identifiant TVA. Lorsque vous modifiez la valeur du champ **Montant TVA**, le programme vérifie que vous n'avez pas modifié la TVA d'une valeur supérieure à celle du montant spécifié comme différence maximale autorisée. Si le montant se situe en dehors de la plage **Différence TVA max. autorisée**, un avertissement s'affiche, indiquant la différence maximale autorisée. Vous ne pouvez pas poursuivre tant que le montant n'est pas ajusté conformément aux paramètres acceptables. Cliquez sur **OK** , puis entrez un autre **Montant TVA** s'inscrivant dans la plage autorisée. Si la différence TVA est inférieure ou égale à la différence maximale autorisée, la TVA est répartie de façon proportionnelle entre les lignes document ayant le même identificateur TVA.  
+> [!NOTE]  
+> Le montant de TVA total de la facture et l'identificateur TVA s'affichent dans les lignes. Vous pouvez ajuster les montants manuellement dans le champ **Montant TVA** des lignes correspondant à chaque identifiant TVA. Lorsque vous modifiez la valeur du champ **Montant TVA**, le programme vérifie que vous n'avez pas modifié la TVA d'une valeur supérieure à celle du montant spécifié comme différence maximale autorisée. Si le montant se situe en dehors de la plage **Différence TVA max. autorisée**, un avertissement s'affiche, indiquant la différence maximale autorisée. Vous ne pouvez pas poursuivre tant que le montant n'est pas ajusté conformément aux paramètres acceptables. Cliquez sur **OK** , puis entrez un autre **Montant TVA** s'inscrivant dans la plage autorisée. Si la différence TVA est inférieure ou égale à la différence maximale autorisée, la TVA est répartie de façon proportionnelle entre les lignes document ayant le même identificateur TVA.  
 
 ## <a name="calculating-vat-manually-using-journals"></a>Calcul manuel de la TVA à l'aide de journaux  
 Vous pouvez également ajuster les montants TVA dans les journaux généraux, vente et achat. Par exemple, vous devrez peut-être le faire lorsque vous entrez une facture fournisseur dans votre journal et qu'il y a une différence entre le montant de TVA calculé par [!INCLUDE[d365fin](includes/d365fin_md.md)] et le montant de TVA figurant sur la facture que vous avez reçue du fournisseur.  
 
-#### <a name="before-you-manually-enter-vat-on-a-general-journal"></a>Avant de saisir manuellement la TVA dans un journal général  
-1. Sur la page **Configuration du grand livre**, spécifiez une **Différence TVA max. autorisée** entre le montant calculé par le programme et le montant calculé manuellement.  
-2. Sur la page **Modèles journal général**, cochez la case **Autoriser différence TVA** pour le journal approprié.  
+### <a name="to-set-the-system-up-for-manual-vat-entry-in-a-general-journals"></a>Pour configurer le système pour la saisie manuelle de la TVA dans les journaux généraux
+Vous devez suivre les étapes suivantes avant de saisir manuellement la TVA dans un journal général.  
 
-#### <a name="before-you-manually-enter-vat-on-sales-and-purchase-journals"></a>Avant d'entrer manuellement la TVA dans les feuilles vente et achat  
-1. Sur la page **Paramètres achats**, activez la case à cocher **Autoriser différence TVA**.  
-2. Après avoir effectué la configuration décrite ci-avant, vous pouvez ajuster la valeur du champ **Montant TVA** de la ligne journal général ou du champ **Montant TVA contrepartie** de la ligne journal achat ou vente. [!INCLUDE[d365fin](includes/d365fin_md.md)] vérifie que la différence n'est pas supérieure à la valeur maximale spécifiée.  
+1. Sur la page **Configuration du grand livre**, spécifiez une **Différence TVA max. autorisée** entre le montant calculé par le programme et le montant calculé manuellement.  
+2. Sur la page **Modèles journal général**, cochez la case **Autoriser différence TVA** pour la journal appropriée.  
+
+### <a name="to-set-the-system-up-for-manual-vat-entry-in-a-sales-and-purchase-journals"></a>Pour configurer le système pour la saisie manuelle de la TVA dans les journaux vente et achat
+Vous devez suivre les étapes suivantes avant de saisir manuellement la TVA dans un journal vente et achat.
+
+1. Sur la page **Configuration achats et à payer**, cochez la case **Autoriser différence TVA**.  
+2. Répétez l'étape 1 pour la page **Configuration ventes & à recevoir**.
+3. Après avoir effectué la configuration décrite ci-avant, vous pouvez ajuster la valeur du champ **Montant TVA** de la ligne journal général ou du champ **Montant TVA contrepartie** de la ligne journal achat ou vente. [!INCLUDE[d365fin](includes/d365fin_md.md)] vérifie que la différence n'est pas supérieure à la valeur maximale spécifiée.  
 
     > [!NOTE]  
     > Si la différence est supérieure, un avertissement s'affiche, indiquant la différence maximale autorisée. Pour continuer, vous devez ajuster le montant. Sélectionnez **OK**, puis entrez un montant compris dans la plage autorisée. Si la différence de TVA est inférieure ou égale à la valeur maximale autorisée, [!INCLUDE[d365fin](includes/d365fin_md.md)] affiche la différence dans le champ **Différence TVA**.  
 
-## <a name="to-post-import-vat-with-purchase-invoices"></a>Pour reporter la TVA à l'importation avec les factures achat
-Au lieu d'utiliser un journal général pour reporter une facture TVA importation, vous pouvez utiliser une facture achat.  
+## <a name="posting-import-vat-with-purchase-invoices"></a>Reporter la TVA à l'importation dans les factures achat
+Au lieu d'utiliser des journaux comptabilité pour reporter une facture TVA importation, vous pouvez utiliser une facture achat.  
 
 ### <a name="to-set-up-purchasing-for-posting-import-vat-invoices"></a>Pour configurer les achats pour le report des factures TVA à l'importation  
 1. Paramétrer une fiche fournisseur pour l'administration d'importation qui vous envoie la facture TVA à l'importation. Les champs **Groupe compta. marché** et **Groupe compta. marché TVA** doivent être configurés de la même manière que le compte général pour la TVA à l'importation.  
@@ -102,7 +110,7 @@ Au lieu d'utiliser un journal général pour reporter une facture TVA importatio
 6. Dans le champ **Coût unitaire direct HT**, indiquez le montant de la TVA.  
 7. Reportez la facture.  
 
-## <a name="to-process-certificates-of-supply"></a>Pour traiter les certificats d'approvisionnement
+## <a name="processing-certificates-of-supply"></a>Traitement des certificats d'approvisionnement
 Lorsque vous vendez des biens à un client dans un autre pays/une autre région de l'UE, vous devez envoyer au client un certificat d'approvisionnement que le client doit signer et vous renvoyer. Les procédures suivantes servent à traiter les certificats d'approvisionnement pour des livraisons vente, mais les mêmes phases s'appliquent aux livraisons service des articles, ainsi qu'aux livraisons retour aux fournisseurs.  
 
 ### <a name="to-view-certificate-of-supply-details"></a>Pour afficher les détails d'un certificat d'approvisionnement  
