@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2019
 ms.author: solsen
-ms.openlocfilehash: 9cb6047a5293a3134a433ea9610e31dca5943e1d
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 95408ec41a2252eff5655004a34f376f466b5972
+ms.sourcegitcommit: f46793abdb3efd8384c10eb7992e076383251f2c
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1249340"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1921394"
 ---
 # <a name="preview-posting-results"></a>Aperçu des résultats du report
 Sur chaque document et feuille qui peuvent être validés, vous pouvez cliquer sur le bouton **Aperçu compta.** pour examiner différents types d'entrées qui seront créées lorsque vous validez le document ou la feuille.
@@ -26,9 +26,9 @@ Sur chaque document et feuille qui peuvent être validés, vous pouvez cliquer s
 2. Créez une facture achat. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 3. Sélectionnez **Aperçu compta.**.
 4. Sur la page **Aperçu report**, sélectionnez **Écriture**, puis sélectionnez **Afficher écritures associées**.  
-   La page **Aperçu des écritures** affiche les écritures qui seront créées lorsque vous reporterez la facture achat.
+   La page **Aperçu des écritures** affiche les écritures qui seront créées lorsque vous reportez la facture achat.
 
 ## <a name="see-also"></a>Voir aussi
-[Reporter des documents et des journaux](ui-post-documents-journals.md)  
+[Report des documents et des journaux](ui-post-documents-journals.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)

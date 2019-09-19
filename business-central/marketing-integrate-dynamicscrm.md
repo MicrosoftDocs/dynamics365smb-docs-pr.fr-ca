@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: integration, synchronize, map, Sales
 ms.date: 06/13/2019
 ms.author: bholtorf
-ms.openlocfilehash: 716e195b4e8c5b4150d7a288918c3fb84f6ac713
-ms.sourcegitcommit: 8fe694b7bbe7fc0456ed5a9e42291218d2251b05
+ms.openlocfilehash: d0f1dfd88b30a4ec2e3a9bfd3366005a93d97f82
+ms.sourcegitcommit: 6ef7d2fae52feff786f2e15e2863d7f5aaa762be
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "1726869"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1917378"
 ---
 # <a name="using-dynamics-365-for-sales-from-business-central"></a>Utilisation de Dynamics 365 for Sales depuis Business Central
 Si vous utilisez Dynamics 365 for Sales for Customer Engagement, bénéficiez de l'intégration parfaite dans le processus allant du prospect à l'encaissement à l'aide de [!INCLUDE[d365fin](includes/d365fin_md.md)] pour les activités principales, telles que le traitement des commandes, la gestion de l'inventaire et de vos finances.
@@ -65,7 +65,7 @@ Pour vérifier la progression de divers projets dans le cadre d'une synchronisat
 Sur la page **Configuration de la connexion Microsoft Dynamics 365**, vous pouvez obtenir des détails sur la synchronisation complète à tout moment. À partir de cette page, vous pouvez aussi ouvrir la page **Correspondances table intégration** pour afficher les détails des tables dans [!INCLUDE[d365fin](includes/d365fin_md.md)] et dans Sales à synchroniser.
 
 ## <a name="handling-sales-order-data"></a>Gestion des données de documents de vente
-Les documents de vente que les vendeurs envoient dans [!INCLUDE[crm_md](includes/crm_md.md)] seront transférés automatiquement vers [!INCLUDE[d365fin](includes/d365fin_md.md)] si vous sélectionnez la case à cocher **Créer automatiquement des documents de vente** sur la page **Configuration de la connexion Microsoft Dynamics 365**.
+Les documents de vente que les utilisateurs envoient dans [!INCLUDE[crm_md](includes/crm_md.md)] seront transférés automatiquement vers [!INCLUDE[d365fin](includes/d365fin_md.md)] si vous sélectionnez la case à cocher **Créer automatiquement des documents de vente** sur la page **Configuration de la connexion à Microsoft Dynamics 365**.
 Sinon, vous pouvez convertir manuellement les documents de vente envoyés depuis [!INCLUDE[crm_md](includes/crm_md.md)] à l'aide de l'action **Créer dans [!INCLUDE[d365fin](includes/d365fin_md.md)]** disponible sur la page **Documents de vente - Dynamics 365 for Sales**.
 Pour ces documents de vente, le champ **Nom** de la commande d'origine est transféré et associé au champ **Numéro de document externe** du document de vente dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
@@ -75,10 +75,13 @@ Si la description de l'article sur le document de vente d'origine est longue, al
 
 Les mises à jour vers les champs d'en-tête de document de vente, tels que Date dernière livraison ou Date livraison demandée, qui sont mappés dans DOCUMENTDEVENTE-COMMANDE **Mappage de table d'intégration** sont synchronisées régulièrement vers [!INCLUDE[crm_md](includes/crm_md.md)]. Les processus tels que lancer une document de vente et expédier ou facturer une document de vente sont reportés vers la chronologie de document de vente dans [!INCLUDE[crm_md](includes/crm_md.md)]. Pour en savoir plus, voir [Introduction aux flux d'activité](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-activity-feeds).
 
+> [!NOTE]  
+> La synchronisation périodique basée sur le **Mappage de table d'intégration** DOCUMENTDEVENTE-COMMANDE fonctionne uniquement lorsque l'intégration des document de vente est activée. Pour en savoir plus, voir [Connecté à Dynamics 365 for Sales](admin-how-to-set-up-a-dynamics-crm-connection.md). Seuls les documents de vente créés à partir de documents de vente envoyés dans [!INCLUDE[crm_md](includes/crm_md.md)] sont synchronisés. Pour plus d'informations, voir [Activer l'intégration du traitement des documents de vente](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/sales-enterprise/developer/enable-sales-order-processing-integration).
+
 > [!VIDEO https://go.microsoft.com/fwlink/?linkid=2098170]
 
 ## <a name="handling-sales-quotes-data"></a>Gestion des données de devis
-Les devis activés dans [!INCLUDE[crm_md](includes/crm_md.md)] seront transférés automatiquement vers [!INCLUDE[d365fin](includes/d365fin_md.md)] si vous sélectionnez la case à cocher **Traiter automatiquement les devis** sur la page **Configuration de la connexion Microsoft Dynamics 365**.
+Les devis vente activés dans [!INCLUDE[crm_md](includes/crm_md.md)] seront transférés vers [!INCLUDE[d365fin](includes/d365fin_md.md)] si vous sélectionnez la case à cocher **Traiter automatiquement les devis** sur la page **Configuration de la connexion Microsoft Dynamics 365**.
 Sinon, vous pouvez convertir manuellement les devis envoyés depuis [!INCLUDE[crm_md](includes/crm_md.md)] à l'aide de l'action **Traiter dans [!INCLUDE[d365fin](includes/d365fin_md.md)]** disponible sur la page **Devis - Dynamics 365 for Sales**.
 Pour ces devis, le champ **Nom** du devis d'origine est transféré et associé au champ **Numéro de document externe** du document de vente dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. En outre, le champ **Applicable jusqu'à** du devis est transféré et mappé vers le champ **Devis valide jusqu'à** du devis dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 

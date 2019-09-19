@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment journal, print check, vendor payment, creditor, debt, balance due, AP
-ms.date: 04/01/2019
+ms.date: 09/06/2019
 ms.author: sgroespe
-ms.openlocfilehash: 97b98a334428f697e83bf655c1ec15a3539d3dea
-ms.sourcegitcommit: 0854c074b500c3031eaf86fde9d452f93f238081
+ms.openlocfilehash: ab769498741a8da17b64eebb4bccf9e177d95e37
+ms.sourcegitcommit: d3035c32bb79b51179540787b98579ac0c528cc4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "1701208"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "1985773"
 ---
 # <a name="make-check-payments"></a>Effectuer des paiements par chèque
 Vous pouvez émettre des chèques par voie électronique et manuelle dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Ces deux méthodes utilisent le journal paiement pour émettre des chèques aux fournisseurs. Vous pouvez également annuler des chèques et afficher les écritures du grand livre de contrôle chèque.
@@ -24,8 +24,8 @@ La procédure suivante explique comment payer un fournisseur avec un chèque inf
 
 Vous pouvez payer avec deux types de chèques. Pour les deux types, le champ **Type compte contrepartie** ou **Type compte** doit contenir **Compte bancaire**.
 
-- **Informatique** : sélectionnez cette option si vous souhaitez imprimer un chèque du montant de la ligne feuille paiement. Vous devez imprimer les chèques avant de pouvoir reporter les lignes journal. Vous pouvez uniquement sélectionner **Informatique** si
-- **Manuel** : sélectionnez cette option si vous avez créé un chèque manuellement et que vous souhaitez créer une écriture comptable chèque correspondante de ce montant. Si vous utilisez cette option, vous ne pouvez pas imprimer le chèque.
+- **Informatique** : sélectionnez cette option si vous souhaitez imprimer un chèque du montant de la ligne feuille paiement. Vous devez imprimer les chèques avant de pouvoir reporter les lignes journal.
+- **Manuel** : sélectionnez cette option si vous avez créé un chèque manuellement et que vous souhaitez créer une écriture chèque correspondante pour ce montant. Si vous utilisez cette option, vous ne pouvez pas imprimer le chèque.
 
 > [!NOTE]  
 > Pour s'assurer que la banque efface uniquement les chèques et les montants validés, vous pouvez envoyer un fichier contenant des informations de paiement, du chèque et du fournisseur. Pour plus d'informations, voir [Exporter des fichiers Positive Pay](finance-how-positive-pay.md).

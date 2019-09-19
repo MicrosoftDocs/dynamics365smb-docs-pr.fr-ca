@@ -8,23 +8,23 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 08/22/2019
 ms.author: sgroespe
-ms.openlocfilehash: 20ef2d88bb5f96326962efb53fd724b8fc706dc5
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 23561ba8ec0a93f8409abab483385a65d9853900
+ms.sourcegitcommit: 6ef7d2fae52feff786f2e15e2863d7f5aaa762be
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1248507"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1917447"
 ---
 # <a name="use-automated-data-capture-systems-adcs"></a>Utilisation des systèmes de saisie automatisée (ADCS)
 
 > [!NOTE]
 > Dans la version standard de [!INCLUDE[d365fin](includes/d365fin_md.md)], ADCS fonctionne uniquement dans les déploiements sur site. Toutefois, un partenaire Microsoft peut le faire fonctionner dans les déploiements en ligne à l'aide de PowerApps ou similaire.
 
-Vous pouvez utiliser votre système de saisie automatisée (ADCS) pour enregistrer le mouvement des articles dans l'entrepôt et certaines activités du journal, notamment les ajustements de quantité dans le journal article entrepôt et les inventaires physiques.  
+Vous pouvez utiliser votre système de saisie automatisée (ADCS) pour enregistrer le mouvement des articles dans l'entrepôt et certaines activités du journal, notamment les ajustements de quantité dans le journal article entrepôt et les inventaires physiques. ADCS implique généralement la numérisation des codes à barres. 
 
-Pour utiliser votre système de saisie automatisée, vous devez attribuer un identificateur article à chaque article de l'entrepôt. Vous devez également configurer les écrans, fonctions de portable, échanges de données, et spécifier des paramètres pour les champs contrôlant l'ADCS. Vous spécifiez s'il faut utiliser l'ADCS sur la fiche emplacement d'un entrepôt.
+Pour utiliser votre système de saisie automatisée, vous devez attribuer un identificateur article à chaque article stocké dans l'entrepôt. Vous devez également configurer les écrans, fonctions de portable, échanges de données, et spécifier des paramètres pour les champs contrôlant l'ADCS. Vous spécifiez s'il faut utiliser l'ADCS sur la fiche emplacement d'un entrepôt.
 
 En fonction des besoins de votre entrepôt, définissez la quantité d'informations affichées dans la configuration des mini-formulaires pour un terminal de saisie portable donné. Voici des exemples d'informations que vous pouvez afficher :  
 

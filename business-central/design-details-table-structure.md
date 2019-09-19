@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 688c448f920a032a0f137bab7abdb9de51af1f96
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 1dd1877540a536d95c8ea1613a23d2bd40e9c990
+ms.sourcegitcommit: 1fa3d33db7bc71e3a27c826308a80ff24a436a72
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1246191"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "1970957"
 ---
 # <a name="design-details-table-structure"></a>Détails de conception : structure de la table
 Pour comprendre comment les écritures dimension sont enregistrées et reportées, il est important de comprendre la structure de la table.  
@@ -185,7 +185,6 @@ Le champ 480 existe dans les tables suivantes.
 
 ## <a name="see-also"></a>Voir aussi  
  [Détails de conception : écritures d'ensemble de dimensions](design-details-dimension-set-entries.md)   
- [Aperçu des écritures de l'ensemble de dimensions](design-details-dimension-set-entries-overview.md)   
- [Détails de conception : recherche des croisements analytiques](design-details-searching-for-dimension-combinations.md)   
- [Détails de conception : Codeunit 408 Gestion des dimensions](design-details-codeunit-408-dimension-management.md)   
- [Détails de conception : exemples de code de motifs modifiés dans les modifications](design-details-code-examples-of-changed-patterns-in-modifications.md)
+ [Aperçu des écritures d'ensemble de dimensions](design-details-dimension-set-entries-overview.md)   
+ [Détails de conception : recherche des combinaisons de dimensions](design-details-searching-for-dimension-combinations.md)   
+ 

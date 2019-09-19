@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: payment due, debt, overdue, fee, charge, reminder
 ms.date: 04/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: a39e43a430720c0453ba5bd9bccf864237b8ae6f
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: a4b6f58c434c563021e94e55e47c547d39967502
+ms.sourcegitcommit: d3035c32bb79b51179540787b98579ac0c528cc4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1252767"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "1985896"
 ---
 # <a name="collect-outstanding-balances"></a>Collecte des soldes restants
 La gestion des clients comprend le contrôle du règlement des montants à temps. Si des clients ont des paiements échus, vous pouvez commencer par envoyer le rapport du Relevé client en guise de rappel. Sinon, vous pouvez émettre de relances.
@@ -179,7 +179,7 @@ Les frais financiers peuvent être calculés en utilisant la méthode du solde j
 En outre, chaque code de la table Modalités de frais financiers est lié à une autre table, la table Texte frais financiers. Pour chaque ensemble de modalités de frais financiers, vous pouvez définir un texte début et un texte fin à inclure dans la note de frais financiers.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modalités de frais financiers**, puis sélectionnez le lien associé.  
-2. Renseignez les champs selon vos besoins.  
+2. Renseignez les champs selon vos besoins.
 3. Pour utiliser plusieurs combinaisons de modalités de frais financiers, créez un code pour chacun d'eux.
 
     Pour chaque modalité de frais financiers, vous pouvez spécifier des modalités particulières, qui peuvent inclure des frais supplémentaires en devise locale ($) et en devise étrangère. Vous pouvez définir des frais supplémentaires en devise étrangère pour chaque code sur la page **Modalités de frais financiers**.

@@ -1,24 +1,24 @@
 ---
 title: Aperçu du report des documents et des journaux | Microsoft Docs
-description: Décrit les tâches de report et les méthodes vous permettant de reporter des documents et des journaux.
+description: Décrit les actions de report et les méthodes vous permettant de reporter des documents et des journaux.
 services: project-madeira
 documentationcenter: ''
-author: SusanneWindfeldPedersen
+author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
-ms.openlocfilehash: c9f7a6e3539efa1a1923f05796c03ad70bbb5e58
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.date: 07/24/2019
+ms.author: sgroespe
+ms.openlocfilehash: a3fabec129de3e59eff30f70d1084e3969fa9ddc
+ms.sourcegitcommit: f46793abdb3efd8384c10eb7992e076383251f2c
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1247935"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1921371"
 ---
-# <a name="post-documents-and-journals"></a>Reporter des documents et des journaux
+# <a name="posting-documents-and-journals"></a>Report des documents et des journaux
 Le report est une tâche de comptabilité qui consiste à enregistrer des transactions commerciales dans les divers livres de la compagnie.
 
 Quasiment chaque document et feuille de [!INCLUDE[d365fin](includes/d365fin_md.md)] propose un groupe **Validation** à partir duquel vous pouvez choisir entre différentes actions de validation, par exemple **Valider**, **Aperçu compta.**, **Valider et envoyer** et **Valider et envoyer par e-mail**.
@@ -34,6 +34,6 @@ Le tableau suivant décrit les tâches associées, et inclut des liens vers les 
 | Obtenir un aperçu, dans un rapport, des écritures qui seront créées lors du report. |[Afficher des rapports de test avant le report](ui-how-view-test-reports-posting.md) |
 
 ## <a name="see-also"></a>Voir aussi
+[Modifier les documents reportés](across-edit-posted-document.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
-
