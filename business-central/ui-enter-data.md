@@ -1,27 +1,27 @@
 ---
 title: Procédure de saisie de données dans les champs | Microsoft Docs
 description: En savoir plus sur les fonctions générales qui vous permettent de saisir les données dans les champs.
-author: jswymer
+author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/03/2019
-ms.author: jswymer
-ms.openlocfilehash: d0fac96313b41a0e41ea96ab4fedd25565498f12
-ms.sourcegitcommit: 04581558f6c5488c705a7ac392cf297be10b5f4f
+ms.date: 09/17/2019
+ms.author: sgroespe
+ms.openlocfilehash: 83bf26c7059146978d46820144e5701fdbb3aa31
+ms.sourcegitcommit: 7ce8005806465417c7040c61da1d6cada29cd9c0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "1621170"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "2000797"
 ---
 # <a name="entering-data"></a>Saisie de données
 
 Plusieurs fonctions générales vous permettent de saisir vos données de manière plus facile, rapide et précise. Les fonctions générales de saisie de données sont décrites dans cet article.  
 
-<!-- The examples in this article use the demonstration data.-->
+Les exemples contenus dans cet article utilisent les données de démonstration.
 
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
@@ -155,9 +155,9 @@ Plutôt que de saisir une date spécifique, vous pouvez saisir l'un de ces codes
 |Code|Résultat|  
 |--------------|----------------|  
 |a|Il s'agit de la date du jour (la date système de l'ordinateur).|  
-|p|Cela précise une période comptable où `p`signifie la première période comptable, `p2` indique la seconde période comptable, etc. |
+|p|Cela précise une période comptable, où p signifie la première période comptable, p2 la deuxième période comptable, etc. |
 |t|Il s'agit de la date de travail configurée dans l'application. Pour modifier la date de travail, voir [Modification des paramètres de base](ui-change-basic-settings.md). Vous souhaiterez peut-être utiliser une date de travail si vous avez beaucoup de transactions avec une date différente de la date d'aujourd'hui.|
-|c|Cela spécifie que la date après `c` est une date de fermeture, par exemple `C123101`.|  
+|f|Cela spécifie que la date après f est une date de fermeture, par exemple F123101.|  
 
 ## <a name="entering-times"></a>Saisie des heures
 
@@ -185,16 +185,16 @@ Le tableau suivant répertorie les différents formats de saisie possibles pour 
 
 |Écriture|Interprétation|  
 |---------------|------------------------|  
-|131202 132455|13-12-02 13:24:55|  
-|1-12-02 10|01-12-02 10:00:00|  
+|131202 132455|13/12/02 13:24:55|  
+|1-12-02 10|01/12/02 10:00:00|  
 |1.12.02 5|01/12/02 05:00:00|  
 |1.12.02|01/12/02 00:00:00|  
-|11/12|11-mois en cours-année en cours 12:00:00|  
-|1112 12|11-12-année en cours 12:00:00|  
-|a ou date du jour|date du jour 00:00:00|  
-|a heure|date du jour heure réelle|  
-|a 10:30|date du jour 10:30:00|  
-|a 3:3:3|date du jour 03:03:03|  
+|11 12|11/mois en cours/année en cours 12:00:00|  
+|1112 12|11/12/année en cours 12:00:00|  
+|a ou aujourd'hui|aujourd'hui 00:00:00|  
+|a heure|aujourd'hui heure réelle|  
+|a 10:30|aujourd'hui 10:30:00|  
+|a 3:3:3|aujourd'hui 03:03:03|  
 |t ou date de travail|date de travail 00:00:00|  
 |lu ou lundi|Lundi de la semaine en cours 00:00:00|  
 |ma ou mardi|Mardi de la semaine en cours 00:00:00|  
@@ -207,7 +207,6 @@ Le tableau suivant répertorie les différents formats de saisie possibles pour 
 |ma 3:3:3|Mardi de la semaine en cours 03:03:03|  
 
 ## <a name="entering-duration"></a>Saisie des durées
-
 Vous entrez une durée sous la forme d'un nombre suivi d'une unité de mesure.  
 
 Voilà quelques exemples.  
@@ -226,86 +225,6 @@ Voilà quelques exemples.
  Pour connaître l'unité de mesure utilisée pour un champ de durée, entrez un nombre et observez l'unité de mesure dans laquelle il est converti.  
 
  Si l'unité de mesure est « heures », 5 est converti en 5h.  
-
-<!--OnPrem  ##  <a name="BKMK_SettingDateRanges"></a> Setting Date Ranges  
- You can set filters containing a start date and an end date to display only the data contained in that date range or time interval. Special rules apply to the way you set date ranges.  
-
-|**Meaning**|**Sample expression**|**Entries included**|  
-|-----------------|---------------------------|--------------------------|  
-|**Equal to**|12 15 00|Only those posted on 12 15 00.|  
-|**Interval**|12 15 00..01 15 01<br /><br /> ..12 15 00|Those posted on dates between and including 12 15 00 and 01 15 01.<br /><br /> Those posted on 12 15 00 or earlier.|  
-|**Either/or**|12 15 00&#124;12 16 00|Those posted on either 12 15 00 or 12 16 00. If there are entries posted on both days, they will all be displayed.|  
-
- You can also combine the various format types.  
-
-|**Sample expression**|**Entries included**|  
-|---------------------------|--------------------------|  
-|12 15 00&#124;12 01 00..12 10 00|Entries posted either on 12 15 00 or on dates between and including 12 01 00 and 12 10 00.|  
-|..12 14 00&#124;12 30 00..|Entries posted on 12 14 00 or earlier, or entries posted on 12 30 00 or later - that is, all entries except those posted on dates between and including 12 15 00 and 12 29 00.|
-
-## Using Date Formulas
-
- A date formula is a short, abbreviated combination of letters and numbers that specifies how to calculate dates. You can enter date formulas in various date calculation fields and in recurring frequency fields in recurring journals.  
-
-> [!NOTE]  
->  In all data formula fields, one day is automatically included to cover today as the day when the period starts. Accordingly, if you enter 1W, for example, then the period is actually eight days because today is included. To specify a period of seven days (one true week) including the period starting date, then you must enter 6D or 1W-1D.  
-
- Here are some examples of how date formulas can be used:  
-
--   The date formula in the recurring frequency field in recurring journals determines how often the entry on the journal line will be posted.  
-
--   The date formula in the Grace Period field for a specified reminder level determines the period of time that must pass from the due date (or from the date of the previous reminder) before a reminder will be created.  
-
--   The date formula in the Due Date Calculation field determines how to calculate the due date on the reminder.  
-
- The date calculation formula can contain a maximum of 20 characters, both numbers and letters. You can use the following letters, which are abbreviations for time specifications.  
-
-|||  
-|-|-|  
-|C|Current|  
-|D|Day(s)|  
-|W|Week(s)|  
-|M|Month(s)|  
-|Q|Quarter(s)|  
-|Y|Year(s)|  
-
- You can construct a date formula in three ways.  
-
- The following example shows how current plus a time unit.  
-
-|||  
-|-|-|  
-|CW|Current week|  
-|CM|Current month|  
-
- The following example shows how a number and a time unit. A number cannot be larger than 9999.  
-
-|||  
-|-|-|  
-|10D|10 days from today|  
-|2W|2 weeks from today|  
-
- The following example shows how a time unit and a number.  
-
-|||  
-|-|-|  
-|D10|The next 10th day of a month|  
-|WD4|The next 4th day of a week (Thursday)|  
-
- The following example shows how you can combine these three forms as needed.  
-
-|||  
-|-|-|  
-|CM+10D|Current month + 10 days|  
-
- The following example shows how you can use a minus sign to indicate a date in the past.  
-
-|||  
-|-|-|  
-|-1Y|1 year ago from today|
-
-[!CAUTION]  
->  If the location uses a base calendar, then the date formula that you enter in, for example, the **Shipping Time** field is interpreted according to the calendar working days. For example, a 1W means seven working days. For more information, see Base Calendar Card.-->
 
 ## <a name="see-also"></a>Voir aussi  
  [Tri, recherche et filtrage de listes](ui-enter-criteria-filters.md)  
