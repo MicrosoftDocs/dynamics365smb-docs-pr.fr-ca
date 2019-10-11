@@ -8,16 +8,16 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: tax rates
-ms.date: 09/20/2018
+ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: f9b33875c5831d3caac8ce29140104f570048754
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: ba3f70bc38a8a295fc8afa4de84901bd2ea4fb8b
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1246596"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2313734"
 ---
-# <a name="us-tax-rates-in-included365invlongincludesd365invlongmd"></a>Taux de taxe américaine dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
+# <a name="us-tax-rates-in-included365inv_longincludesd365inv_longmd"></a>Taux de taxe américaine dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
 Vous pouvez ajouter des taux de taxe à la volée lorsque vous créez des estimations et des factures. Vous pouvez voir les taux de taxe que vous avez déjà ajoutés dans les paramètres de Microsoft Invoicing, et vous pouvez également ajouter de nouveaux taux de taxe.  
 
 Vous pouvez également gérer les taux de taxe nécessaires dans la page **Paramètres**. C'est également dans cette page que vous définissez vos propres informations de taxe. Le taux de taxe par défaut est celui que vous spécifiez pour votre adresse professionnelle.  

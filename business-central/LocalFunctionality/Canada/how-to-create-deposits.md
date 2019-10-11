@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: d2c7378a4f96bbac27fa26bd43ced375c31dcd42
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 3f76226c6d3a55449162b9727fe0382101a68936
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1237619"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2301369"
 ---
 # <a name="create-deposits"></a>Créer des dépôts
 Vous pouvez créer des dépôts pour tenir à jour un enregistrement de transaction contenant des renseignements pouvant être appliqués aux notes de crédit et factures en attente.  

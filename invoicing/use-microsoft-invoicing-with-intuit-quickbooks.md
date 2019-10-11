@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: QuickBooks
-ms.date: 01/29/2019
+ms.date: 10/01/2019
 ms.author: bholtorf
-ms.openlocfilehash: 47fc5dac681dfa747470879f544623c5d405513f
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 90d8fcd650aab1ba49742ae06c0288abb2ad749a
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1237422"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2313730"
 ---
 # <a name="connect-to-intuit-quickbooks"></a>Se connecter à Intuit QuickBooks
 Vous utilisez Microsoft Invoicing pour créer et envoyer des estimations et des factures à vos clients, mais vous souhaitez utiliser un autre système pour gérer vos achats, votre inventaire ou votre comptabilité. Si vous utilisez Intuit QuickBooks, vous pouvez vous connecter à Invoicing. QuickBooks devient le système principal d'Invoicing, et vos clients et vos articles en inventaire sont synchronisés de façon transparente entre les deux applications. Vos factures sont synchronisées de Invoicing vers QuickBooks, mais pas dans l'autre sens.

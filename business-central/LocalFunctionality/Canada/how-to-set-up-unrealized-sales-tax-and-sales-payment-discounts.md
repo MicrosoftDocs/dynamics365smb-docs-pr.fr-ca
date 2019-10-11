@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 6127ffee4e298b81e32924b728f80c921282cbb4
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: c16a9e6b4798780558c8255440063843e99813fe
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1237799"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2300230"
 ---
 # <a name="set-up-unrealized-sales-tax-and-sales-payment-discounts"></a>Configurer les escomptes de paiement de vente et la taxe de vente non réalisée
 Vous pouvez utiliser la page **Configuration du grand livre** pour configurer la taxe de vente non réalisée. Vous pouvez également configurer des montants de taxe de correction maximum de manière à limiter les montants de correction de taxe qui sont entrés pour les ventes et les achats. Cela vous permet de remplacer la taxe calculée lorsqu'il existe des différences d'arrondissement entre ce qui est calculé sur le bon de commande et ce qui est calculé sur la facture achat du fournisseur.  

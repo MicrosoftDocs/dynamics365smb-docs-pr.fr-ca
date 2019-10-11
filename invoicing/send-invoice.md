@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2018
+ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: 468dc8db4ab4184fb9e172904e512029145d4b27
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 00c4c83c8dfe48c36df98ee37280e19e81678562
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1237459"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2313738"
 ---
-# <a name="send-an-invoice-to-a-new-customer-in-included365invlongincludesd365invlongmd"></a>Envoyer une facture à un nouveau client dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
+# <a name="send-an-invoice-to-a-new-customer-in-included365inv_longincludesd365inv_longmd"></a>Envoyer une facture à un nouveau client dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
 Vous créez une facture pour enregistrer votre entente avec un client afin de vendre certains produits selon certaines modalités de paiement et de livraison. Vous pouvez facilement créer une facture pour un client que vous n'avez pas encore enregistré en appuyant sur Nouvelle facture dans l'onglet Facturation.  
 
 ## <a name="to-create-a-new-invoice"></a>Pour créer une facture

@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/20/2018
+ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: 9b8820c1660f50dc3ad68cb82d48bc7fd1460d4a
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: e8d37eda7f4ee38bad97a94b3d9582716927b3ff
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1254104"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2314365"
 ---
-# <a name="create-a-product-or-service-in-included365invlongincludesd365invlongmd"></a>Créer un produit ou un service dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
+# <a name="create-a-product-or-service-in-included365inv_longincludesd365inv_longmd"></a>Créer un produit ou un service dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
 Les produits sont la base de votre activité, les biens ou les services que vous commercialisez. Chaque produit doit être enregistré comme article dans la liste Prix. Un article contient les informations nécessaires à l'achat, le stockage, la vente, la livraison et la comptabilisation des produits que vous vendez.  
 
 > [!VIDEO https://www.youtube.com/embed/A_eCrHibuGU]

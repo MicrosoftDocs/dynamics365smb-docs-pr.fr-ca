@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/12/2018
+ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: bea5ed403aad64779b2a79d5031a98441f627cea
-ms.sourcegitcommit: 8fe694b7bbe7fc0456ed5a9e42291218d2251b05
+ms.openlocfilehash: d741214d8d0e768283775a336cd9675e7a723e79
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "1726952"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2314322"
 ---
-# <a name="troubleshooting-included365invlongincludesd365invlongmd"></a>Dépannage de [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
+# <a name="troubleshooting-included365inv_longincludesd365inv_longmd"></a>Dépannage de [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
 Lisez cette section pour obtenir des conseils et des informations de dépannage sur [!INCLUDE[d365inv](includes/d365inv.md)].
 
 ## <a name="how-do-i-save-my-changes"></a>Comment puis-je enregistrer mes modifications ?

@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: local
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: SorenGP
-ms.openlocfilehash: 130af0997a7813d7b6a4d25464aad33fdf51038a
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 70de3ef317a2d322fdf7c57a9f99d6f27db35b9c
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1237626"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2301366"
 ---
 # <a name="work-with-gifi-codes"></a>Utiliser des codes IGRF
 Les informations fiscales peuvent inclure des comptes généraux, des états, des comptes de gestion, des bilans et des relevés des bénéfices non répartis. Les informations fiscales sont classifiées par le biais de codes. L'utilisation de codes aide le gouvernemental à traiter les informations, à préparer l'archivage électronique et à valider les informations fiscales par voie électronique. L'utilisation de codes aide également les organisations statistiques à travailler plus efficacement, en rendant les données financières plus facilement disponibles. Pour plus d'informations, reportez-vous au [site Web de l'Agence de revenu du Canada](https://www.cra-arc.gc.ca/).

@@ -7,16 +7,16 @@ ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2018
+ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: fad44ecb12276ed27a941ee918c748edb5b07481
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 706b48ac9a35ee5c1df2c80ad0a442e43fc49260
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1254116"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2314374"
 ---
-# <a name="welcome-to-included365invlongincludesd365invlongmd"></a>Bienvenue dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
+# <a name="welcome-to-included365inv_longincludesd365inv_longmd"></a>Bienvenue dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
 
 [!INCLUDE[d365inv](includes/d365inv.md)] est une application en ligne et mobile conviviale qui vous aide à envoyer des factures, à gérer vos dépenses et à surveiller votre trésorerie. [!INCLUDE[d365inv](includes/d365inv.md)] vous permet d'être payé plus rapidement en créant, en modifiant et en envoyant des factures, mais aussi en acceptant des paiements de façon transparente. Il est facile d'ajouter de nouveaux clients, de marquer des factures comme payées lorsque vous recevez le paiement et d'afficher les ventes mensuelles et annuelles.
 

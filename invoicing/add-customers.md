@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/20/2019
+ms.date: 10/01/2019
 ms.author: bholtorf
-ms.openlocfilehash: 0f74ace105aa92e0188af9ded99762a387e18772
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 0f8ee16195036611702326fecf0762cbf6608266
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1254107"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2313754"
 ---
 # <a name="managing-information-about-customers"></a>Gestion des informations sur les clients
 En tenant les informations sur vos clients à jour, il est plus rapide et facile de créer des estimations et des factures. Par exemple, lorsque vous choisissez le client lors de la création d'une facture, Invoicing renseigne les informations sur le client pour vous.  
