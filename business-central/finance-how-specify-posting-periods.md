@@ -11,14 +11,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: user setup
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 8e3fb38377719b6fd10d2c3e3f1f162ea8bfdf62
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 14ffdb7d4be38949a31aebeb86e6312a5e3128aa
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1242709"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2306158"
 ---
 # <a name="specify-posting-periods"></a>Spécifier des périodes de report
 Utilisez des périodes de report pour spécifier quand les utilisateurs peuvent reporter dans le grand livre.  

@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: kit, kitting
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 776a39f10041dc540de53e5aa724db6fd755c2d6
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 22ebbde0d04dfeb03fa52978e2d1e82d40713445
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1247102"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2307623"
 ---
 # <a name="undo-assembly-posting"></a>Annuler le report d'assemblage
 Vous pouvez parfois être amené à annuler un ordre d'assemblage reporté, par exemple, si la commande a été reportée avec des erreurs qui doivent être corrigées, ou parce qu'il n'aurait pas dû être reporté en premier et doit être annulé.
@@ -39,7 +39,7 @@ De plus, les ordres d'assemblage existants ne peuvent être restaurés que si le
 > [!TIP]  
 >  Pour résoudre les conflits dus à des modifications de ligne, vous pouvez rétablir manuellement les modifications sur les lignes en question avant d'annuler l'ordre d'assemblage reporté associé. Sinon, vous pouvez reporter l'ordre d'assemblage entièrement et choisir de le recréer lorsque vous annulez le report.  
 
-La procédure suivante décrit comment annuler les ordres d'assemblage reportés dans lesquels les articles ont été assemblés pour stock. Si vous souhaitez annuler les ordres d'assemblage validés pour lesquels les articles ont été assemblés pour une commande vente, vous devez exécuter la fonction **Annuler expédition** sur l'expédition validée qui se rapporte à l'ordre d'assemblage validé. Pour plus d'informations, voir [Inverser des reports](finance-how-reverse-journal-posting.md). L'annulation de l'ordre d'assemblage reporté se produit alors automatiquement de la même manière que décrit dans cette rubrique.  
+La procédure suivante décrit comment annuler les ordres d'assemblage reportés dans lesquels les articles ont été assemblés pour stock. Si vous souhaitez annuler les ordres d'assemblage validés pour lesquels les articles ont été assemblés pour une commande vente, vous devez exécuter la fonction **Annuler expédition** sur l'expédition validée qui se rapporte à l'ordre d'assemblage validé. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md). L'annulation de l'ordre d'assemblage reporté se produit alors automatiquement de la même manière que décrit dans cette rubrique.  
 
 ## <a name="to-undo-posting-of-an-assembly-order"></a>Pour annuler le report d'un ordre d'assemblage  
 1.  Pour annuler un ordre d'assemblage entièrement ou partiellement reporté, choisissez l'icone ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Ordres d'assemblage reportés**, puis sélectionnez le lien associé.  
@@ -57,7 +57,7 @@ Le champ **Contrepassé** de l'en\-tête d'ordre d'assemblage prend la valeur **
 
 ## <a name="see-also"></a>Voir aussi  
 [Gestion d'assemblage](assembly-assemble-items.md)  
-[Inverser des reports](finance-how-reverse-journal-posting.md)  
+[Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)  
 [Traiter les retours ou annulations de ventes](sales-how-process-sales-returns-cancellations.md)    
 [Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
 [Stock](inventory-manage-inventory.md)  

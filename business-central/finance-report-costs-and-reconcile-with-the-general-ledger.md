@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 05/02/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: d92d732b99eedb06eb0185d1227252e1ace95334
-ms.sourcegitcommit: dac212009aadf3227e54c99976c438f6e56f182a
+ms.openlocfilehash: eafcf0bdd26e26903c17e43d37ca7e35b96f240c
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "1446886"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2301838"
 ---
 # <a name="reporting-costs-and-reconciling-with-the-general-ledger"></a>Génération de rapports sur les coûts et rapprochement avec le grand livre
 À la fin de la période comptable (mensuelle, annuelle, etc.), une série de tâches de contrôle des coûts et d'audit doivent être effectuées pour déclarer une valeur d'inventaire correcte et équilibrée au département Finances. Outre les tâches habituelles de report qui transfèrent les écritures valeur de chaque article vers les comptes du grand livre appropriés, l'auditeur ou le contrôleur responsable de cette tâche critique a accès à plusieurs rapports et fonctions de suivi, ainsi qu'à un outil de rapprochement.  

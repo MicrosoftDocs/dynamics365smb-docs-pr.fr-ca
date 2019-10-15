@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 529f1c71111fd6ea0b93e7d29d2f5f6b6f1df3ae
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 025b8fb9100d8418e9e157e8098afe19d24843fc
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1247512"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2303758"
 ---
 # <a name="design-details-central-concepts-of-the-planning-system"></a>Détails de conception : concepts centraux du système de planification
 Les fonctions de planification se trouvent dans un traitement en lot qui sélectionne d'abord les articles appropriés et la période à planifier. Puis, en fonction du code de bas niveau de chaque article (ligne nomenclature), le traitement en lot appelle un codeunit qui calcule un programme d'approvisionnement en équilibrant les séries offre-demande et en suggérant des actions possibles que l'utilisateur doit prendre. Les actions suggérées apparaissent sous forme de lignes dans la feuille planification ou la feuille de réquisition.  
@@ -26,7 +26,7 @@ Les fonctions de planification se trouvent dans un traitement en lot qui sélect
 
 Le gestionnaire d'une compagnie, par exemple un acheteur ou un gestionnaire de production, est censé être l'utilisateur du système de planification. Le système de planification aide l'utilisateur en effectuant les calculs étendus mais relativement simples d'une planification. L'utilisateur peut alors se consacrer à résoudre les problèmes plus difficiles, par exemple lorsque les choses diffèrent de la normale.  
 
-Le système de planification est guidé par la demande prévue et réelle des clients, par exemple, les commandes prévisionnelles et les documents de vente. L'exécution du calcul de planification a pour effet que le programme suggère à l'utilisateur de prendre des mesures spécifiques concernant l'approvisionnement possible auprès des fournisseurs, des départements Production ou Assemblage, ou les transferts à partir d'autres entrepôts. Ces actions suggérées peuvent être de créer de nouvelles commandes d'approvisionnement, comme des bons de commande ou de production. S'il y a déjà des commandes d'approvisionnement, les actions suggérées peuvent être d'augmenter ou d'accélérer les commandes pour répondre à l'évolution de la demande.  
+Le système de planification est guidé par la demande prévue et réelle des clients, par exemple, les commandes prévisionnelles et les documents de vente. L'exécution du calcul de planification a pour effet que l'application suggère à l'utilisateur de prendre des mesures spécifiques concernant l'approvisionnement possible auprès des fournisseurs, des départements Production ou Assemblage, ou les transferts à partir d'autres entrepôts. Ces actions suggérées peuvent être de créer de nouvelles commandes d'approvisionnement, comme des bons de commande ou de production. S'il y a déjà des commandes d'approvisionnement, les actions suggérées peuvent être d'augmenter ou d'accélérer les commandes pour répondre à l'évolution de la demande.  
 
 Un autre objectif du système de planification est de garantir que l'inventaire n'augmente pas inutilement. En cas de baisse de la demande, le système de planification suggère à l'utilisateur de reporter, de réduire ou d'annuler des commandes d'approvisionnement existantes.  
 
@@ -66,7 +66,7 @@ Dans les compagnies avec un faible flux d'articles et des structures de produits
 ### <a name="dynamic-order-tracking-versus-the-planning-system"></a>Comparaison entre le chaînage dynamique et le système de planification  
 À première vue, il peut être difficile de différencier le système de planification du chaînage dynamique. Les deux fonctions affichent une sortie dans la feuille planification en suggérant les actions que le gestionnaire doit entreprendre. Toutefois, la manière dont cette production est produite diffère.  
 
-Le système de planification traite l'ensemble de la configuration de demande et d'approvisionnement d'un article au travers de tous les niveaux de la hiérarchie de nomenclature, alors que le chaînage dynamique gère uniquement la situation de la commande qui l'a activée. Lors de l'équilibre de l'offre et de la demande, le système de planification crée des liens dans un mode de lots activé par l'utilisateur, alors que le suivi de commande dynamique crée les liens automatiquement et à la volée, chaque fois que l'utilisateur saisit une demande ou une offre dans le programme, comme un document de vente ou un bon de commande.  
+Le système de planification traite l'ensemble de la configuration de demande et d'approvisionnement d'un article au travers de tous les niveaux de la hiérarchie de nomenclature, alors que le chaînage dynamique gère uniquement la situation de la commande qui l'a activée. Lors de l'équilibre de l'offre et de la demande, le système de planification crée des liens dans un mode de lots activé par l'utilisateur, alors que le suivi de commande dynamique crée les liens automatiquement et à la volée, chaque fois que l'utilisateur saisit une demande ou une offre dans l'application, comme un document de vente ou un bon de commande.  
 
 Le chaînage dynamique crée des liens entre la demande et l'approvisionnement lorsque les données sont saisies, sur la base du principe premier arrivé, premier servi. Cela peut conduire du désordre dans les priorités. Par exemple, un document de vente saisi en premier, avec une date d'échéance au mois suivant, peut être lié à l'approvisionnement en inventaire, alors que le document de vente suivant à échéance le lendemain peut entraîner la création d'un bon de commande par un message d'action afin de le couvrir, comme illustré ci-dessous.  
 
@@ -97,9 +97,9 @@ Pour plus d'informations sur la fabrication, voir [Détails de conception : cha
 ### <a name="locations--transfer-level-priority"></a>Emplacements/priorité de niveau transfert  
 Les compagnies actives dans plusieurs emplacements peuvent être amenées à planifier chaque emplacement individuellement. Par exemple, le niveau d'inventaire de sécurité d'un article et sa méthode de réapprovisionnement peuvent différer d'un emplacement à un autre. Dans ce cas, les paramètres de planification doivent être spécifiés par article et également par emplacement.  
 
-Ceci est pris en charge avec l'utilisation des unités de stock, où des paramètres de planification individuels peuvent être spécifiés au niveau des unités de stock. Une unité de stock peut être considérée comme un article dans un emplacement spécifique. Si l'utilisateur n'a pas défini une unité de stock pour cet emplacement, le programme utilisera par défaut les paramètres définis sur la fiche article. Le programme calcule un plan pour les emplacements actifs uniquement, c'est-à-dire les emplacements où il existe une offre et une demande pour l'article donné.  
+Ceci est pris en charge avec l'utilisation des unités de stock, où des paramètres de planification individuels peuvent être spécifiés au niveau des unités de stock. Une unité de stock peut être considérée comme un article dans un emplacement spécifique. Si l'utilisateur n'a pas défini une unité de stock pour cet emplacement, l'application utilisera par défaut les paramètres définis sur la fiche article. L'application calcule un plan pour les emplacements actifs uniquement, c'est-à-dire les emplacements où il existe une offre et une demande pour l'article donné.  
 
-En principe, tout article peut être traité dans n'importe quel emplacement, mais l'approche du programme vis-à-vis du concept d'emplacement est assez stricte. Par exemple, un document de vente dans un emplacement ne peut pas être satisfait par une certaine quantité en inventaire dans un autre emplacement. La quantité en inventaire doit d'abord être transférée à l'emplacement spécifié sur le document de vente.  
+En principe, tout article peut être traité dans n'importe quel emplacement, mais l'approche de l'application vis-à-vis du concept d'emplacement est assez stricte. Par exemple, un document de vente dans un emplacement ne peut pas être satisfait par une certaine quantité en inventaire dans un autre emplacement. La quantité en inventaire doit d'abord être transférée à l'emplacement spécifié sur le document de vente.  
 
 ![Planification pour unités de stock](media/NAV_APP_supply_planning_1_SKU_planning.png "Planification pour unités de stock")  
 
@@ -124,7 +124,7 @@ Si l'utilisateur a saisi un document de vente ou en a modifié une existante, il
 
 Le système de planification contrôle ces événements et affecte les articles appropriés pour la planification.  
 
-Pour plusieurs emplacements, l'affectation se fait au niveau de l'article par combinaison d'emplacements. Si, par exemple, un document de vente a été créée à un seul emplacement, le programme affecte l'article à cet emplacement spécifique pour la planification.  
+Pour plusieurs emplacements, l'affectation se fait au niveau de l'article par combinaison d'emplacements. Si, par exemple, un document de vente a été créé à un seul emplacement, l'application affecte l'article à cet emplacement spécifique pour la planification.  
 
 La raison de la sélection d'articles pour la planification est une question de performances système. Si aucune modification du motif demande-approvisionnement d'un article n'a été apportée, le système de planification ne propose aucune action à effectuer. Sans l'affectation de planification, le système devrait effectuer les calculs pour tous les articles afin de déterminer quoi planifier, et cela purgerait des ressources du système.  
 
@@ -146,7 +146,7 @@ L'offre et la demande peuvent contenir des codes variante et des codes d'emplace
 
 Le système traite les codes de variante et d'emplacement en tant que dimensions d'article sur une ligne document de vente, une écriture inventaire, etc. Par conséquent, il calcule un plan pour chaque combinaison de variante et d'emplacement, comme si la combinaison était un numéro d'article distinct.  
 
-Au lieu de calculer une combinaison théorique de variante et emplacement, le programme ne calcule que les combinaisons réellement existantes dans la base de données.  
+Au lieu de calculer une combinaison théorique de variante et emplacement, l'application ne calcule que les combinaisons réellement existantes dans la base de données.  
 
 Pour plus d'informations sur la manière dont le système de planification traite les codes d'emplacement sur demande, voir [Détails de conception : demande à un emplacement vide](design-details-balancing-demand-and-supply.md).  
 
@@ -252,7 +252,7 @@ L'avertissement Attention est affiché dans trois situations :
 ## <a name="error-logs"></a>Journaux des erreurs  
 Dans la page de demande Calculer le plan, l'utilisateur peut sélectionner le champ **Arrêter et afficher la première erreur** pour arrêter l'exécution de la planification quand il rencontre la première erreur. Au même moment, un message affiche des informations sur l'erreur. S'il y a une erreur, seules les lignes planification traitées avant la détection de l'erreur apparaissent dans la feuille planification.  
 
-Si le champ n'est pas activé, le traitement en lot Calculer planification se poursuit jusqu'à ce qu'il soit terminé. Les erreurs éventuelles n'interrompent pas le traitement en lot. S'il y a une ou plusieurs erreurs, une fois l'exécution du programme terminée, celui-ci affiche un message indiquant le nombre d'articles concernés par les erreurs. La page **Journal des erreurs de planification** s'ouvre ensuite pour afficher des informations supplémentaires sur l'erreur et pour fournir des liens vers les documents ou les fiches de configuration concernés.  
+Si le champ n'est pas activé, le traitement en lot Calculer planification se poursuit jusqu'à ce qu'il soit terminé. Les erreurs éventuelles n'interrompent pas le traitement en lot. S'il y a une ou plusieurs erreurs, une fois l'exécution de l'application terminée, celle-ci affiche un message indiquant le nombre d'articles concernés par les erreurs. La page **Journal des erreurs de planification** s'ouvre ensuite pour afficher des informations supplémentaires sur l'erreur et pour fournir des liens vers les documents ou les fiches de configuration concernés.  
 
 ![Messages d'erreur dans la feuille planification](media/NAV_APP_supply_planning_1_error_log.png "Messages d'erreur dans la feuille planification")  
 

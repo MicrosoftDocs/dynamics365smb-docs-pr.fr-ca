@@ -10,15 +10,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
 redirect_url: design-details-handling-reordering-policies
-ms.openlocfilehash: 1212c6f2f7e9da03a15c7fb39496d85869ef3e73
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: a48e2998195bccb4ac877e8339612f6cfabb0f3b
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1238657"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2303062"
 ---
 # <a name="design-details-reordering-policies"></a>Détails de conception : méthodes de réapprovisionnement
 Les méthodes de réapprovisionnement définissent la quantité à commander lorsque l'article doit être réapprovisionné. Quatre différentes méthodes de réapprovisionnement existent.  
@@ -71,7 +71,7 @@ Si la date programmée est un jour chômé, le système de planification déplac
 ## <a name="order"></a>Ordre
 Dans un environnement de fabrication à la commande, un article est acheté ou produit pour couvrir exclusivement une demande spécifique. Généralement, il se rapporte aux articles A, et la motivation pour choisir cette méthode de réapprovisionnement de commande peut être que la demande n'est pas fréquente, le délai de production est insignifiant ou les attributs requis varient.  
 
-Le programme crée un lien commande à commande, qui agit en tant que connexion préliminaire entre l'approvisionnement, une commande d'approvisionnement ou un inventaire, et la demande qu'il va traiter.  
+L'application crée un lien commande à commande, qui agit en tant que connexion préliminaire entre l'approvisionnement, une commande d'approvisionnement ou un inventaire, et la demande qu'il va traiter.  
 
 Outre l'utilisation de la méthode de commande, le lien commande à commande peut s'appliquer lors de la planification, comme suit :  
 

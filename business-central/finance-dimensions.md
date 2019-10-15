@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: analysis, history, track
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 9072bd45d5189ec42e8f1adaa3554fa182c36f1f
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 74e4c2e26ec4b51c00ece9ff8f56f7d556b74416
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1244732"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2302390"
 ---
 # <a name="working-with-dimensions"></a>Utilisation des axes analytiques
 Vous pouvez utiliser des axes analytiques pour faciliter l'exécution de l'analyse sur des commandes vente, par exemple. Les axes analytiques sont des attributs et des valeurs qui permettent de catégoriser les écritures afin de pouvoir les suivre et les analyser. Ils peuvent par exemple indiquer de quel projet ou département provient une écriture.  
@@ -50,7 +50,7 @@ Vous pouvez également définir des valeurs pour des axes. Il peut par exemple s
 
 Lorsque les dimensions et les valeurs sont configurées, vous pouvez définir les dimensions principales et les raccourcis de dimension sur la page **Configuration du grand livre** qui seront toujours disponibles pour sélection comme champs sur les lignes journal et document, sans avoir à ouvrir la page **Dimensions** en premier lieu. Pour plus d'informations, reportez-vous à la rubrique [Configurer les dimensions principales et les raccourcis de dimension](finance-dimensions.md#to-set-up-global-and-shortcut-dimensions).
 
-* Les **dimensions principales** sont utilisées comme filtres, par exemple, dans les rapports et les traitements en lot. Vous pouvez uniquement utiliser deux axes principaux, choisissez donc des axes que vous utilisez souvent.
+* Les **dimensions principales** sont utilisées comme filtres, par exemple, dans les rapports, les traitements en lot et les objets XMLport. Vous pouvez uniquement utiliser deux axes principaux, choisissez donc des axes que vous utilisez souvent.
 * Les **raccourcis de dimension** sont disponibles sous forme de champs dans les lignes journal et document. Vous pouvez en créer six au maximum.  
 
 ### <a name="to-set-up-default-dimensions-for-customers-vendors-and-other-accounts"></a>Pour configurer des dimensions par défaut pour les clients, les fournisseurs et d'autres comptes
@@ -159,7 +159,7 @@ Pour **DÉPARTEMENT**, vous pouvez ajouter les sections analytiques suivantes :
 Avec cette configuration, vous pouvez ajouter vos deux dimensions en tant que dimensions principales sur la page **Configuration du grand livre**. Cela signifie que vous pouvez utiliser ZONE et DÉPARTEMENT comme filtres pour les écritures du grand livre, ainsi que dans tous les rapports et les tableaux d'analyse. Les deux dimensions principales sont mises à disposition automatiquement pour être utilisées dans les lignes écriture et les en-têtes document comme raccourcis de dimension.
 
 ## <a name="getting-an-overview-of-dimensions-used-multiple-times"></a>Affichage d'un aperçu des dimensions utilisées plusieurs fois
-La page **Dimensions par défaut - Multiples** spécifie la manière dont un groupe de comptes utilise les dimensions et valeurs de dimension. Vous pouvez effectuer cette opération en sélectionnant plusieurs comptes, et en spécifiant des dimensions et valeurs de dimension par défaut pour tous les comptes sélectionnés dans la liste des comptes. Lorsque vous spécifiez des dimensions par défaut pour les comptes sélectionnés, le programme propose ces dimensions et valeurs de dimension à chaque fois que l'un de ces comptes est utilisé, par exemple sur une ligne journal. Le report des écritures est ainsi facilité, car les champs de dimension sont renseignés automatiquement. Cependant, les valeurs de dimension proposées peuvent être modifiées, par exemple sur une ligne journal.
+La page **Dimensions par défaut - Multiples** spécifie la manière dont un groupe de comptes utilise les dimensions et valeurs de dimension. Vous pouvez effectuer cette opération en sélectionnant plusieurs comptes, et en spécifiant des dimensions et valeurs de dimension par défaut pour tous les comptes sélectionnés dans la liste des comptes. Lorsque vous spécifiez des dimensions par défaut pour les comptes sélectionnés, l'application propose ces dimensions et valeurs de dimension chaque fois que l'un de ces comptes est utilisé, par exemple sur une ligne journal. Le report des écritures est ainsi facilité, car les champs de dimension sont renseignés automatiquement. Cependant, les valeurs de dimension proposées peuvent être modifiées, par exemple sur une ligne journal.
 
 La page **Dimensions par défaut - Multiples** contient les champs suivants :
 

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: direct posting, general ledger
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 54f2cf573d12c50ba26c26fd4c11ad20a1d52db3
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 0908d3fedb9946dafdaa0795edd6d018785bd3e5
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1241129"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2302270"
 ---
 # <a name="post-transactions-directly-to-the-general-ledger"></a>Reporter les transactions directement dans le grand livre
 
@@ -25,7 +25,7 @@ Une utilisation classique du journal général est de reporter les dépenses des
 
 Les journaux généraux reportent les transactions financières directement sur les comptes du grand livre et d'autres comptes tels que les comptes bancaires, clients, fournisseurs et employés. Le report avec un journal général crée toujours des écritures dans les comptes du grand livre. C'est le cas même lorsque, par exemple, vous reportez une ligne journal sur un compte client, parce qu'une écriture est reportée dans un compte client du grand livre via un groupe de report. Vous pouvez personnaliser votre version d'un journal général en configurant un lot ou un modèle journal. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 
-Contrairement aux écritures qui sont reportées avec des documents qui nécessitent un processus de note de crédit, vous pouvez correctement inverser les écritures reportées avec le journal général. Pour plus d'informations, voir [Inverser des reports](finance-how-reverse-journal-posting.md).
+Contrairement aux écritures qui sont reportées avec des documents qui nécessitent un processus de note de crédit, vous pouvez correctement inverser les écritures reportées avec le journal général. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md).
 
 ## <a name="to-post-a-transaction-directly-to-a-general-ledger-account"></a>Pour reporter une transaction directement dans le compte GL
 
@@ -43,8 +43,8 @@ Contrairement aux écritures qui sont reportées avec des documents qui nécessi
 
 ## <a name="see-also"></a>Voir aussi
 
-[Utilisation de feuilles comptabilité](ui-work-general-journals.md)  
+[Utilisation de journaux généraux](ui-work-general-journals.md)  
 [Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md)  
-[Inverser des reports](finance-how-reverse-journal-posting.md)  
+[Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

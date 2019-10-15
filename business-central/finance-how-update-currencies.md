@@ -5,14 +5,14 @@ author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.search.keywords: multiple currencies, adjust exchange rates
-ms.date: 06/04/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 2958cf5dd124fd9437217214ea0df28944d07651
-ms.sourcegitcommit: 04581558f6c5488c705a7ac392cf297be10b5f4f
+ms.openlocfilehash: 7376abd7806eb664bbfcbf3f3505df00ababba9e
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "1621101"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2305822"
 ---
 # <a name="update-currency-exchange-rates"></a>Mettre à jour des taux de change devise
 Les compagnies opérant dans un nombre croissant de pays/régions, il est de plus en plus important qu'elles puissent échanger ou générer des rapports financiers dans plusieurs devises. Vous devez définir un code pour chaque devise utilisée si vous achetez ou vendez dans des devises différentes de votre devise locale, si vous disposez de comptes client ou fournisseur dans d'autres devises, ou si vous enregistrez des transactions GL dans des devises différentes.
@@ -20,7 +20,7 @@ Les compagnies opérant dans un nombre croissant de pays/régions, il est de plu
 Votre grand livre est configuré pour utiliser votre devise locale ($), mais vous pouvez le configurer pour utiliser une autre devise avec un taux de change courant. Si vous désignez une deuxième devise comme « devise de report additionnelle », [!INCLUDE[d365fin](includes/d365fin_md.md)] enregistre automatiquement les montants en $ et dans cette devise de report additionnelle pour chaque écriture, ainsi que pour d'autres écritures, telles que les écritures TVA. Pour plus d'informations, voir [Configurer une devise de report additionnelle](finance-how-setup-additional-currencies.md).
 
 ## <a name="adjusting-exchange-rates"></a>Ajustement des taux de change
-Comme les taux de change ne cessent de fluctuer, il convient d'ajuster périodiquement les équivalents devise supplémentaires de votre système. À défaut d'effectuer ces ajustements, les montants convertis à partir de devises étrangères (ou additionnelles) et reportés dans le grand livre en $ risquent d'être erronés. En outre, les écritures quotidiennes reportées avant la saisie d'un taux de change quotidien dans le programme doivent être mises à jour après la saisie quotidienne des informations de taux de change.
+Comme les taux de change ne cessent de fluctuer, il convient d'ajuster périodiquement les équivalents devise supplémentaires de votre système. À défaut d'effectuer ces ajustements, les montants convertis à partir de devises étrangères (ou additionnelles) et reportés dans le grand livre en $ risquent d'être erronés. En outre, les écritures quotidiennes reportées avant la saisie d'un taux de change quotidien dans l'application doivent être mises à jour après la saisie quotidienne des informations de taux de change.
 
 Le traitement en lot **Ajuster taux de change** permet d'ajuster manuellement les taux de change des écritures client, fournisseur et compte bancaire reportées. D'autres montants en devise de report additionnelle peuvent également être mis à jour dans les écritures. Vous pouvez aussi faire ajuster les taux de change automatiquement à l'aide d'un service. Pour plus d'informations, reportez vous à [Configurer un service de taux de change des devises](finance-how-update-currencies.md#to-set-up-a-currency-exchange-rate-service).
 

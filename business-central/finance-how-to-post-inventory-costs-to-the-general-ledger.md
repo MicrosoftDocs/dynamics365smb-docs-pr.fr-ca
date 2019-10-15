@@ -9,14 +9,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: warehouse, stock
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: c8a399b6e8c37206003492bb1598120dc6e06929
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: eed219bb8bc6401c0f2bbc5cab7600fe1bfc3d53
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1239673"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2306086"
 ---
 # <a name="reconcile-inventory-costs-with-the-general-ledger"></a>Rapprocher les coûts de l'inventaire avec le grand livre
 Lorsque vous reportez des transactions inventaire, tels que des livraisons vente, des factures achat ou des ajustements inventaire, les coûts article modifiés sont enregistrés dans les écritures valeur article. Pour refléter ces modifications de la valeur inventaire dans vos livres financiers, les coûts inventaire sont automatiquement reportés dans les comptes inventaire associés dans le grand livre. Pour chaque transaction inventaire que vous reportez, les valeurs appropriées sont reportées dans le compte inventaire, le compte ajustement et le compte variation inventaire dans le grand livre.
@@ -59,7 +59,7 @@ La colonne **Différence** représente la différence entre la valeur des champs
 
 En haut de la page **Rapprochement inventaire avec GL**, vous pouvez appliquer des filtres pour limiter, par exemple, la période sur laquelle vous voulez obtenir des informations.
 
-Si vous cochez la case **Afficher avertissement** et s'il y a des différences entre les totaux inventaire et les totaux GL, le programme affiche des messages dans le champ **Avertissement** de la grille, qui expliquent la différence. Si vous cliquez sur le champ Alerte, le programme fournit des informations supplémentaires sur la signification de l'alerte.
+Si vous cochez la case **Afficher avertissement** et s'il y a des différences entre les totaux inventaire et les totaux GL, l'application affiche des messages dans le champ **Avertissement** de la grille, qui expliquent la différence. Si vous cliquez sur le champ Alerte, l'application fournit des informations supplémentaires sur la signification de l'alerte.
 
 Après avoir entré tous les filtres appropriés, choisissez l'action **Afficher la matrice**. Les données sont calculées et la page de la matrice s'affiche.
 

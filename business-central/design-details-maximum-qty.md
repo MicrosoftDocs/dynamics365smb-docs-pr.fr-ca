@@ -10,15 +10,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
 redirect_url: design-details-handling-reordering-policies
-ms.openlocfilehash: 857a01bac28d85a35668f3aa01e8807a6f6dc845
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: e186beea06fcada9bc0396fc5627c90bbfb06b4e
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1239163"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2303158"
 ---
 # <a name="design-details-maximum-qty"></a>Détails de conception : qté maximum.
 La stratégie de la quantité maximum permet de conserver l'inventaire à l'aide d'un point de réapprovisionnement.  

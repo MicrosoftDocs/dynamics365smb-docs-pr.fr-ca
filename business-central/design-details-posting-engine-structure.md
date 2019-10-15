@@ -4,20 +4,20 @@ description: L'interface de report et certaines autres fonctions dans le codeuni
 services: project-madeira
 documentationcenter: ''
 author: SorenGP
-ms.service: dynamics365-financials
+ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 07/01/2017
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 76d59049191f91131df014771ef8546326a51439
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: b4bc639675591bb91ad2fa4e56f4e3ed88fed975
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1238703"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2303086"
 ---
 # <a name="design-details-posting-engine-structure"></a>Détails de conception : Structure du moteur de report
 L'interface de report et certaines autres fonctions dans le codeunit 12 utilisent des fonctions de moteur de report pour préparer et insérer l'écriture et les enregistrements d'écriture TVA. Le moteur de report est également chargé de la création du registre du grand livre.  
@@ -29,7 +29,7 @@ L'interface de report et certaines autres fonctions dans le codeunit 12 utilise
 |StartPosting|Initialise le tampon de report TempGLEntryBuf, verrouille les tables Écriture GL et Écriture TVA et initialise la période comptable, le registre GL et le taux de change. Ne devrait être appelé qu'une fois, alors NextEntryNo est 0.|  
 |ContinuePosting|Vérifie et reporte la TVA non réalisée pour le précédent incrément de transaction NextTransactionNo et prépare le report de la ligne suivante.|  
 |FinishPosting|Renseigne le report en insérant des écritures à partir d'un tampon temporaire dans la table de base de données. Toujours utilisé avec StartPosting. Vérifie les incohérences.|  
-|InitGLEntry|Utilisé pour lancer la nouvelle écriture pour Ligne journal général. Retourne GLEntry comme paramètre.|  
+|InitGLEntry|Utilisé pour lancer la nouvelle écriture pour Jnl Line. Retourne GLEntry comme paramètre.|  
 |InitGLEntryVAT|Semblable à InitGLEntry, mais affecte également Numéro de compte contrepartie et SummarizeVAT.|  
 |InitGLEntryVATCopy|Semblable à InitGLEntryVAT, mais copie également les données des groupes de validation de l'écriture TVA avant SummarizeVAT.|  
 |InsertGLEntry|La seule fonction qui insère l'écriture dans la table TempGLEntryBuf globale. Utilisez toujours cette fonction pour insérer.|  

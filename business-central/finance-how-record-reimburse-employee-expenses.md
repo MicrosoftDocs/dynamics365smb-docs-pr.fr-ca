@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: reimbursement
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 660cb4d9f2238bffeb1c7eaf49d5d70dbb654f45
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 825658d88ea38a3c0c93d77c760707ae086f796f
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1244801"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2306211"
 ---
 # <a name="record-and-reimburse-employees-expenses"></a>Enregistrer et rembourser les frais des employés
 [!INCLUDE[d365fin](includes/d365fin_md.md)] prend en charge les transactions des employés de la même manière que pour les fournisseurs. Par conséquent, les groupes de report employé existent pour s'assurer que les écritures d'un employé sont reportées dans les comptes correspondants du grand livre.
@@ -54,7 +54,7 @@ Affectez les paiements des employés à leurs écritures employés ouvertes de l
 
 ## <a name="see-also"></a>Voir aussi
 [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)  
-[Utilisation de feuilles comptabilité](ui-work-general-journals.md)  
-[Inverser des reports](finance-how-reverse-journal-posting.md)  
+[Utilisation de journaux généraux](ui-work-general-journals.md)  
+[Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

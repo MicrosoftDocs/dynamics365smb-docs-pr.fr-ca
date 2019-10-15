@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: IC, group, consolidation, affiliate, subsidiary
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: eca41d78ca6665f8e64f99c448d0d771f7d2ad26
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: e6f44cfc8dc5eb3591aadd520a4ec58086d5f823
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1244226"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2300101"
 ---
 # <a name="set-up-intercompany"></a>Configuration des fonctionnalités intersociétés
 Pour envoyer une transaction (ligne journal vente) à partir d'une compagnie et créer automatiquement la transaction correspondante (ligne journal achat) dans la compagnie partenaire, les compagnies concernées doivent s'accorder sur un plan comptable et un ensemble de dimensions communs à utiliser pour les transactions intercompagnies. Le plan de compte intercompagnie peut être, par exemple, une version simplifiée du plan de compte de la compagnie mère. Chaque compagnie associe son plan de compte au plan de compte intercompagnie partagé, ainsi que ses dimensions aux dimensions intercompagnies.  
@@ -112,7 +112,7 @@ Les lignes des pages **Dimensions intercompagnies** et **Valeurs de dimension in
 ### <a name="to-map-intercompany-dimensions-to-your-companys-dimensions"></a>Pour associer les dimensions intercompagnies aux dimensions de votre compagnie
 Après avoir défini ou importé les dimensions que vos partenaires intercompagnies et vous avez décidé d'utiliser, vous devez associer chaque dimension intercompagnie à l'une des dimensions de votre compagnie, et vice versa. Sur la page **Dimensions intercompagnies**, indiquez comment les dimensions intercompagnies des transactions entrantes doivent être converties en dimensions à partir de la liste des dimensions de votre compagnie. Sur la page **Dimensions**, précisez comment vos dimensions doivent être converties en dimensions intercompagnies dans les transactions sortantes.
 
-Si certaines dimensions intercompagnies possèdent le même code que les dimensions correspondantes de la liste des dimensions de votre compagnie, vous pouvez demander au programme d'associer automatiquement ces comptes.
+Si certaines dimensions intercompagnies possèdent le même code que les dimensions correspondantes de la liste des dimensions de votre compagnie, vous pouvez demander à l'application d'associer automatiquement les dimensions, ensuite vous pourrez associer automatiquement ces comptes.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Dimensions intercompagnie**, puis sélectionnez le lien associé.
 2. Sur la page **Dimensions intercompagnies**, sélectionnez les lignes à associer automatiquement, puis choisissez l'action **Établir une correspondance à la dimension du même code**.

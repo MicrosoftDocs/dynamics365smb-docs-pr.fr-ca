@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
-ms.date: 05/02/2019
+ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: 4f62954b7cc427eac84e78a4cb19a61387d423b3
-ms.sourcegitcommit: dac212009aadf3227e54c99976c438f6e56f182a
+ms.openlocfilehash: 69014460131bd80bf08403a079e30b61d56cf307
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "1446978"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2301550"
 ---
 # <a name="finance"></a>Finance
 [!INCLUDE[d365fin](includes/d365fin_md.md)] comprend une configuration standard de la plupart des processus financiers, mais vous pouvez modifier la configuration pour l'adapter à votre activité. Pour plus d'informations, reportez-vous à [Configuration de Finance](finance-setup-finance.md).
@@ -40,7 +40,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Ajouter des dimensions pour un veille économique enrichie. |[Utilisation des dimensions](finance-dimensions.md) |
 | Créez des budgets GL pour prévoir différentes activités financières et affecter des dimensions à des fins de veille économique. |[Créer des budgets GL](finance-how-create-budgets.md) |
 |Enregistrez les revenus ou les frais directement dans le grand livre sans reporter les documents commerciaux appropriés.|[Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)|
-|Reporter les écritures de contrepassation pour annuler les reports de valeur dans le journal général ou les reports de quantité sur des documents achat et vente. |[Inverser des reports](finance-how-reverse-journal-posting.md)|
+|Reporter les écritures de contrepassation pour annuler les reports de valeur dans le journal général ou les reports de quantité sur des documents achat et vente. |[Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)|
 |Ventiler une écriture d'un journal général dans différents comptes lorsque vous reportez le journal. |[Répartition des coûts et du revenu](year-allocate-costs-income.md) |
 | Affectez les surcoûts, tels que le fret et la manutention que vous encourez lors de la transaction, jusqu'aux articles impliqués afin que les coûts soient répercutées dans l'évaluation de l'inventaire. |[Utiliser Frais annexes pour comptabiliser les coûts commerciaux supplémentaires](payables-how-assign-item-charges.md) |
 |Reporter les dépenses personnelles des employés pour leurs activités professionnelles et remboursez les employés en effectuant le paiement sur leur compte bancaire.|[Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md)|

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accountant, accounting, financial report
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: b816d7ff9f8446aa81746b980fd47b3b531e1396
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 70ee472953e470fe5d069ce3536d729677a1a135
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1239046"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2302572"
 ---
 # <a name="analyzing-financial-statements-in-microsoft-excel"></a>Analyse des états financiers dans Microsoft Excel
 Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez visualiser les KPI et obtenir des aperçus de l'état financier de la compagnie. Vous pouvez également ouvrir des listes dans Excel et analyser les données afférentes. De plus, vous pouvez exporter des relevés financiers volumineux, tels que le bilan ou l'état des résultats vers Excel, analyser les données et imprimer les rapports.  
@@ -36,7 +36,7 @@ Supposons que vous souhaitiez analyser en profondeur votre trésorerie. À parti
 
 Dans Excel, vous pouvez voir un onglet où les données sont présentées sur la première feuille. Toutes les données qui ont été exportées sont également présentes dans d'autres feuilles en cas de besoin. Vous pouvez imprimer le rapport tel qu'il est, ou vous pouvez le modifier jusqu'à ce que vous ayez l'aperçu et les détails que vous souhaitez. Utilisez le complément [!INCLUDE[d365fin](includes/d365fin_md.md)] pour Excel afin de mieux filtrer et analyser les données.  
 
-## <a name="the-included365finincludesd365finmdmd-excel-add-in"></a>Complément [!INCLUDE[d365fin](includes/d365fin_md.md)] pour Excel
+## <a name="the-included365finincludesd365fin_mdmd-excel-add-in"></a>Complément [!INCLUDE[d365fin](includes/d365fin_md.md)] pour Excel
 Votre expérience [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut un complément pour Excel. Selon votre abonnement, vous êtes connecté automatiquement, ou vous devez spécifier les mêmes détails d'ouverture de session utilisés pour [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
 Le complément vous permet d'obtenir des données actualisées à partir de [!INCLUDE[d365fin](includes/d365fin_md.md)] et d'appliquer les modifications à [!INCLUDE[d365fin](includes/d365fin_md.md)]. Toutefois, la possibilité de transférer les données vers la base de données est désactivée pour les rapports financiers Excel dans la liste ci-dessus.  

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: migration, Excel
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: 0d31e710c0b5d9e1dfa63c9c653b740fdcc12f11
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: e4399c16c28d97c0c1c6d8826af14e1b4a48e454
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1245534"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2304982"
 ---
 # <a name="importing-business-data-from-other-finance-systems"></a>Importation des données métier à partir d'autres systèmes financiers
 Lorsque vous effectuez votre inscription à [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez choisir de créer une société vierge afin d'être en mesure de télécharger vos propres données et de tester votre société [!INCLUDE[d365fin](includes/d365fin_md.md)]. En fonction de la solution financière qu'utilise votre compagnie aujourd'hui, vous pouvez transférer des informations sur les clients, les fournisseurs, l'inventaire et les comptes bancaires.  
@@ -62,14 +62,14 @@ Le package de configuration par défaut prend en charge les tables suivantes :
 -   Ligne de paiement
 -   En-tête achat
 -   Ligne achat
--   Ligne journal général
+-   Groupe. Ligne journal
 -   Ligne journal article
 -   Groupe de report client
 -   Paramètre report fournisseur
 -   Groupe de report inventaire
 -   Unité de mesure
--   Paramètre report marché
--   Paramètre report produit
+-   Groupe. Groupe de report marché
+-   Groupe. Groupe de report produit
 -   Config. paramètres report
 -   Territoire
 -   Catégorie d'article

@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: postpone
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 046d2469c13358942fec767b58f6e9ffe46e7799
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 6fab25e6f8a3e840dd0b40f616b2a21abe13a9ad
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1243467"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2302345"
 ---
 # <a name="defer-revenues-and-expenses"></a>Echelonner les recettes et les dépenses
 Pour identifier une recette ou une dépense dans une période autre que la période de report de la transaction, vous pouvez utiliser la fonctionnalité pour échelonner automatiquement les recettes et les dépenses selon un calendrier précis.
@@ -78,7 +78,7 @@ Exemple : la date de report est le 06/02/2016. Si vous saisissez « Dépenses 
 1. Sur la page **Facture vente** sélectionnez l'action **Aperçu report**.
 2. Sur la page **Aperçu report**, sélectionnez l'action **Écriture**, puis sélectionnez l'action **Afficher écritures associées**.
 
-Les écritures à reporter au compte d'échelonnement spécifié, par exemple, les revenus comptabilisés d'avance, sont désignées par la description que vous avez saisie dans le champ **Description de la période** du modèle d'échelonnement, par exemple « Dépenses échelonnées pour février 2016 ».
+Les écritures à reporter vers le compte d'échelonnement spécifié, par exemple, les Revenus comptabilisés d'avance, sont désignées par la description que vous avez saisie dans le champ **Description de la période** du modèle d'échelonnement, par exemple « Dépenses échelonnées pour février 2016 ».
 
 ## <a name="to-review-posted-deferrals-in-the-sales-deferral-summary-report"></a>Pour examiner les échelonnements reportés dans le rapport Résumé échelonnement ventes
 > [!NOTE]  

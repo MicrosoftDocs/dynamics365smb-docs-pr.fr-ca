@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 8daa5d57ed2f12daf3f3eef3572b2f7dbd39d92c
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 5f27bb652009c740066dfa0ef3659bb9e53cfb0e
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1243421"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2307358"
 ---
 # <a name="codeunit-12-changes-changes-in-general-journal-post-procedures"></a>Codeunit 12 modifications : modifications dans les procédures de report de journal général
 Les modifications suivantes ont été mises en œuvre de cette version de [!INCLUDE[d365fin](includes/d365fin_md.md)].  
@@ -139,19 +139,19 @@ Les modifications suivantes ont été mises en œuvre de cette version de [!INCL
 |CheckCalcPmtDiscCVVend||Déplacé dans Codeunit 426 Gestion de tolérance de règlement|  
 |CheckCalcPmtDiscVend||Déplacé dans Codeunit 426 Gestion de tolérance de règlement|  
 |CheckCalcPmtDiscGenJnlVend||Déplacé dans Codeunit 426 Gestion de tolérance de règlement|  
-|Inverser|Inverser|Déplacé dans Codeunit 17 journal général-Report inversé|  
-|ReverseCustLedgEntry|ReverseCustLedgEntry|Déplacé dans Codeunit 17 journal général-Report inversé|  
-|ReverseVendLedgEntry|ReverseVendLedgEntry|Déplacé dans Codeunit 17 journal général-Report inversé|  
-|ReverseBankAccLedgEntry|ReverseBankAccLedgEntry|Déplacé dans Codeunit 17 journal général-Report inversé|  
-|ReverseVAT|ReverseVAT|Déplacé dans Codeunit 17 journal général-Report inversé|  
-|SetReversalDescription|SetReversalDescription|Déplacé dans Codeunit 17 journal général-Report inversé|  
-|ApplyCustLedgEntryByReversal|ApplyCustLedgEntryByReversal|Déplacé dans Codeunit 17 journal général-Report inversé|  
-|ApplyVendLedgEntryByReversal|ApplyVendLedgEntryByReversal|Déplacé dans Codeunit 17 journal général-Report inversé|  
-|PostPmtDiscountVATByUnapply|PostPmtDiscountVATByUnapply|Déplacé dans Codeunit 17 journal général-Report inversé|  
-||CheckDimComb|Ajouté dans le Codeunit 17 journal général-Report inversé|  
-||CopyCustLedgEntry|Ajouté dans le Codeunit 17 journal général-Report inversé|  
-||CopyVendLedgEntry|Ajouté dans le Codeunit 17 journal général-Report inversé|  
-||CopyBankAccLedgEntry|Ajouté dans le Codeunit 17 journal général-Report inversé|  
+|Inverser|Inverser|Déplacé dans Codeunit 17 Gen. Jnl.-Report inversé|  
+|ReverseCustLedgEntry|ReverseCustLedgEntry|Déplacé dans Codeunit 17 Gen. Jnl.-Report inversé|  
+|ReverseVendLedgEntry|ReverseVendLedgEntry|Déplacé dans Codeunit 17 Gen. Jnl.-Report inversé|  
+|ReverseBankAccLedgEntry|ReverseBankAccLedgEntry|Déplacé dans Codeunit 17 Gen. Jnl.-Report inversé|  
+|ReverseVAT|ReverseVAT|Déplacé dans Codeunit 17 Gen. Jnl.-Report inversé|  
+|SetReversalDescription|SetReversalDescription|Déplacé dans Codeunit 17 Gen. Jnl.-Report inversé|  
+|ApplyCustLedgEntryByReversal|ApplyCustLedgEntryByReversal|Déplacé dans Codeunit 17 Gen. Jnl.-Report inversé|  
+|ApplyVendLedgEntryByReversal|ApplyVendLedgEntryByReversal|Déplacé dans Codeunit 17 Gen. Jnl.-Report inversé|  
+|PostPmtDiscountVATByUnapply|PostPmtDiscountVATByUnapply|Déplacé dans Codeunit 17 Gen. Jnl.-Report inversé|  
+||CheckDimComb|Ajouté à Codeunit 17 Gen. Jnl.-Report inversé|  
+||CopyCustLedgEntry|Ajouté à Codeunit 17 Gen. Jnl.-Report inversé|  
+||CopyVendLedgEntry|Ajouté à Codeunit 17 Gen. Jnl.-Report inversé|  
+||CopyBankAccLedgEntry|Ajouté à Codeunit 17 Gen. Jnl.-Report inversé|  
 |HandlDtlAddjustment|HandleDtldAdjustment|Mis à jour|  
 |CollectAddjustment|CollectAdjustment|Mis à jour|  
 |SetOverDimErr|SetOverDimErr|Mis à jour|  
@@ -163,7 +163,7 @@ Les modifications suivantes ont été mises en œuvre de cette version de [!INCL
 |GetApplnRoundPrecision|GetApplnRoundPrecision|Mis à jour|  
 |CheckDimValueForDisposal|CheckDimValueForDisposal|Mis à jour|  
 |CalculateCurrentBalance|CalculateCurrentBalance|Mis à jour|  
-|IncludeVATAmount||Déplacé dans le tableau 81 Ligne journal général|  
+|IncludeVATAmount||Déplacé dans Table 81 Gen. Ligne journal|  
 |CalcVATAmountFromVATEntry|CalcVATAmountFromVATEntry|Mis à jour|  
 ||TotalVATAmountOnJnlLines|Ajouté|  
 ||SetGLRegReverse|Ajouté|  

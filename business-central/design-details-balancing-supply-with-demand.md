@@ -10,15 +10,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
 redirect_url: design-details-balancing-demand-and-supply
-ms.openlocfilehash: 13ab8097b9c6d75f838a58c347af31d560fa9374
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 1bef0ad2a94e64ecf95614707b6746e6a381fcb0
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1242892"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2307406"
 ---
 # <a name="design-details-balancing-supply-with-demand"></a>Détails de conception : équilibrage de l'approvisionnement avec la demande
 L'élément principal du système de planification implique l'équilibrage de l'approvisionnement et de la demande en proposant des actions utilisateur pour rectifier les commandes approvisionnement en cas de déséquilibre. Cela est opéré par combinaison de variante et d'emplacement.  
@@ -109,7 +109,7 @@ Deux raisons expliquent cela :
 
 Avec le temps, les liens de chaînage dynamiques deviennent déséquilibrés puisque le réseau de chaînage entier n'est pas réorganisé tant qu'un événement de demande ou d'approvisionnement n'est pas réellement fermé.  
 
-Avant d'équilibrer un approvisionnement par demande, le programme supprime les liens de chaînage existants. Puis au cours de la procédure de contrepartie, lorsqu'un événement de demande ou d'approvisionnement est fermé, il crée de nouveaux liens de suivi de commande entre la demande et l'approvisionnement.  
+Avant d'équilibrer un approvisionnement par demande, l'application supprime les liens de suivi de commande existants. Puis au cours de la procédure de contrepartie, lorsqu'un événement de demande ou d'approvisionnement est fermé, il crée de nouveaux liens de suivi de commande entre la demande et l'approvisionnement.  
 
 > [!NOTE]  
 >  Même si l'article n'est pas configuré pour le chaînage dynamique, le système planifié crée des liens de chaînage équilibrés comme expliqué ci-dessus.  

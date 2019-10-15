@@ -10,21 +10,21 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 76523523253a0bce8640aadab022e4880133c949
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 3bc3699e7ec5d356ed1bd1b85ad574f2e50d831b
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1239117"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2303230"
 ---
 # <a name="design-details-planning-assignment-table"></a>Détails de conception : tableau d'affectation de planification
 Tous les articles doivent être planifiés. Cependant, il n'existe aucune raison de calculer une planification pour un article à moins qu'il n'y ait eu une modification de la configuration de l'offre ou de la demande depuis la dernière fois qu'un plan a été calculé.  
 
 Si l'utilisateur a saisi un document de vente ou en a modifié une existante, il existe un motif au recalcul de la planification. Les autres motifs sont notamment une modification de prévision ou la quantité de stock de sécurité souhaitée. La modification de nomenclatures lorsque vous ajoutez ou supprimez une composante indique très probablement une modification, mais pour la composante uniquement.  
 
-Pour plusieurs emplacements, l'affectation se fait au niveau de l'article par combinaison d'emplacements. Si, par exemple, un document de vente a été créée à un seul emplacement, le programme affecte l'article à cet emplacement spécifique pour la planification.  
+Pour plusieurs emplacements, l'affectation se fait au niveau de l'article par combinaison d'emplacements. Si, par exemple, un document de vente a été créé à un seul emplacement, l'application affecte l'article à cet emplacement spécifique pour la planification.  
 
 La raison de la sélection d'articles pour la planification est une question de performances système. Si aucune modification du motif demande-approvisionnement d'un article n'a été apportée, le système de planification ne propose aucune action à effectuer. Sans l'affectation de planification, le système devrait effectuer les calculs pour tous les articles afin de déterminer quoi planifier, et cela purgerait des ressources du système.  
 

@@ -9,14 +9,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: account schedule, analysis, reporting, financial report, business intelligence, KPI
 ms.reviewer: edupont
-ms.date: 07/08/2019
+ms.date: 10/01/2019
 ms.author: bmeier
-ms.openlocfilehash: 4223d3eba6253f87aee3f86b3a9dfe4107d48947
-ms.sourcegitcommit: 519623f9a5134c9ffa97eeaed0841ae59835f453
+ms.openlocfilehash: e17485563e331f7e78500650e174f6b2b57bbb8e
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "1755274"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2307982"
 ---
 # <a name="enabling-your-business-data-for-power-bi"></a>Activation de vos données commerciales pour Power BI
 
@@ -27,7 +27,7 @@ Vous devez disposer d'un compte valide avec [!INCLUDE[prodshort](includes/prodsh
 > [!IMPORTANT]
 > Les applications Power BI décrites dans cet article sont conçues pour utiliser Azure Active Directory comme mécanisme d'authentification sauf indication contraire. Pour installer une application Power BI, vous devez également avoir une licence Power BI Pro.  Une fois que l'application Power BI est installée, elle peut être partagée avec les utilisateurs avec n'importe quel type de licence.
 
-Microsoft a publié les applications suivantes pour Power BI :
+[!INCLUDE [prodlong](includes/prodlong.md)] a publié les applications suivantes pour Power BI:
 
 - [!INCLUDE [prodlong](includes/prodlong.md)] - CRM  
 - [!INCLUDE [prodlong](includes/prodlong.md)] - Finance  
@@ -64,7 +64,7 @@ Les applications sont conçues pour fonctionner avec les données de toute compa
 <!--    ![Choose apps from online services that you use.](./media/across-how-to-connect-powerbi-d365-content-packs/powerbi-online-services-get.png)-->
 4. Sélectionnez **Applications** dans l'onglet **Applications pour Power BI** et choisissez l'application **Microsoft Dynamics 365 Business Central** à utiliser, puis cliquez sur **Obtenir maintenant**.  
 <!--    ![Select Dynamics 365 Business Central and select Get it now](./media/across-how-to-connect-powerbi-d365-content-packspowerbi-dynamics365-for-financials-get-it-now.png)/-->
-5. Lorsque vous y êtes invité(e), entrez le nom de la compagnie dans votre [!INCLUDE[prodshort](includes/prodshort.md)] auquel vous souhaitez vous connecter. Il ne s'agit pas du nom complet. Vous pourrez trouver le nom de la compagnie dans la page **Compagnies** de votre instance [!INCLUDE[prodshort](includes/prodshort.md)].  
+5. Lorsque vous y êtes invité(e), entrez le nom de l'environnement et de la compagnie dans votre application [!INCLUDE[prodshort](includes/prodshort.md)] à laquelle vous souhaitez vous connecter. Si vous n'avez pas créé plusieurs environnements, entrez **Production**. Pour le paramètre Compagnie, assurez-vous d'entrer le nom et non le nom d'affichage. Vous pourrez trouver le nom de la compagnie dans la page **Compagnies** de votre instance [!INCLUDE[prodshort](includes/prodshort.md)].  
 
     > [!NOTE]
     > Si vous vous connectez à [!INCLUDE [prodshort](includes/prodshort.md)] sur site, vous devez spécifier le paramètre *URL du service Web*. Trouvez ceci sur la page **Services Web** dans [!INCLUDE [prodshort](includes/prodshort.md)]. Votre instance [!INCLUDE [server](includes/server.md)] doit être configurée pour l'authentification de base et vous devez spécifier un utilisateur et la clé d'accès Web de cet utilisateur comme mot de passe. Dans l'exemple suivant, remplacez *myserver :7048* par votre nom [!INCLUDE [server](includes/server.md)] et *CRONUS%20US* par le nom de votre compagnie.  
@@ -162,6 +162,10 @@ Le tableau de bord Power BI s'appuie sur les services Web publiés qui sont rép
 
 Aucun compte Power BI n'a été créé. Afin d'avoir un compte Power BI valide, vous devez avoir une licence et vous devez avoir déjà ouvert une session dans Power BI, pour pouvoir créer votre espace de travail Power BI.  
 
+### <a name="message-there-are-no-enabled-reports-choose-select-report-to-see-a-list-of-reports-that-you-can-display"></a>Message : Aucun rapport n'est activé. Choisissez Sélectionner un rapport pour afficher la liste des rapports disponibles.
+
+Ce message apparaîtra si le rapport par défaut n’a pas été déployé sur votre espace de travail Power BI ou s'il a été déployé mais que l’actualisation n’a pas réussi. Si cela se produit, accédez au rapport dans votre espace de travail Power BI, sélectionnez **Ensemble de données**, **Paramètres**, puis mettez à jour les informations d'identification manuellement. Une fois le jeu de données actualisé, revenez dans Business Central et sélectionnez manuellement le rapport dans la page **Sélectionner des rapports**. 
+
 ### <a name="you-need-a-power-bi-pro-license-to-install-the-include-prodshortincludesprodshortmd-app-in-power-bi"></a>Vous devez disposer d'une licence Power BI Pro pour installer l'application [!INCLUDE [prodshort](includes/prodshort.md)] dans Power BI
 
 Les applications Power BI ne peuvent être installées que par les utilisateurs disposant d'une licence Power BI Pro. Une fois que l'application Power BI est installée, vous pouvez la partager avec des utilisateurs ne disposant pas d'une licence Power BI Pro.  
@@ -170,6 +174,7 @@ Les applications Power BI ne peuvent être installées que par les utilisateurs 
 
 Cette erreur indique qu'un ou plusieurs paramètres ne sont pas valides.
 
+- Le paramètre d'environnement spécifié ne correspond à aucun environnement de production ou sandbox [!INCLUDE [prodshort](includes/prodshort.md)] existant. 
 - Le paramètre de compagnie spécifié ne correspond à aucune compagnie [!INCLUDE [prodshort](includes/prodshort.md)] existante. Vérifiez le nom de la compagnie dans la page **Compagnies** dans [!INCLUDE [prodshort](includes/prodshort.md)].
 - Si vous vous connectez à [!INCLUDE [prodshort](includes/prodshort.md)] sur site. vous avez entré une URL non valide. Vous pouvez vérifier l’URL sur la page **Services Web** dans [!INCLUDE [prodshort](includes/prodshort.md)]  
 - Un port n'est pas ouvert pour permettre à la demande de passer par votre pare-feu.
@@ -200,10 +205,10 @@ L'application Power BI affichera uniquement les données de la compagnie [!INCLU
 
 ## <a name="see-also"></a>Voir aussi
 
-[Mise en route avec Power BI](/power-bi/service-get-started)  
-[Power BI - Concepts de base](/power-bi/service-basic-concepts)  
-[Applications dans Power BI](/power-bi/consumer/end-user-app)  
+[Power BI pour les consommateurs](/power-bi/consumer/end-user-consumer)  
+[Le « nouveau look » du service Power BI](/power-bi/service-new-look)  
 [Démarrage rapide : Se connecter aux données dans Power BI Desktop](/power-bi/desktop-quickstart-connect-to-data)  
+[Documentation Power BI](/power-bi/)  
 [Veille économique](bi.md)  
 [Mise en route](product-get-started.md)  
 [Importation des données métier à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  

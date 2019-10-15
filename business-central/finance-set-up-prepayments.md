@@ -5,14 +5,14 @@ author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.search.keywords: prepayment
-ms.date: 06/24/2019
+ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: 77e53c7492a1c9ab5bd1e4d150b291ebd2b61917
-ms.sourcegitcommit: 0854c074b500c3031eaf86fde9d452f93f238081
+ms.openlocfilehash: 2c594da7c8cc11a08420f6bf8a5fb16cccb5ec0b
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "1701162"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2305630"
 ---
 # <a name="set-up-prepayments"></a>Configuration des acomptes
 Si vous voulez que vos clients fassent des paiements avant de leur livrer une commande ou si votre fournisseur exige que vous fassiez un paiement avant de vous livrer une commande, vous pouvez utiliser la fonctionnalité Paiement anticipé. Cette fonctionnalité vous permet de facturer et de collecter les dépôts requis des clients ou de régler des dépôts aux fournisseurs, et de vous assurer que tous les paiements partiels sont reportés sur une facture. Pour plus d'informations, voir [Créer des factures de paiement anticipé](finance-how-to-create-prepayment-invoices.md).

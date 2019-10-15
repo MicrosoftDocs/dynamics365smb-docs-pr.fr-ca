@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, transfer, sku, locations, warehouse
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 56988064297cac55c48624071a19d510f6126495
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 72a9455810b017510947b78e40c88116e9935d20
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1248052"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2306734"
 ---
 # <a name="design-details-transfers-in-planning"></a>Détails de conception : transferts de planification
 Les ordres de transfert sont également une source d'approvisionnement lorsque vous travaillez au niveau des unités de stock. Lors de l'utilisation de plusieurs emplacements (entrepôts), le système de réapprovisionnement des unités de stock peut être défini sur Transfert, ce qui implique que l'emplacement est réapprovisionné en transférant des biens à partir d'un autre emplacement. Dans une situation avec plusieurs entrepôts, les compagnies peuvent avoir une chaîne de transferts où l'approvisionnement vers l'emplacement VERT est transféré à partir de l'emplacement JAUNE, l'approvisionnement vers JAUNE est transféré depuis ROUGE et ainsi de suite. Au début de la chaîne, il existe un système de réapprovisionnement d'Ordre de fabrication ou d'achat.  
@@ -29,7 +29,7 @@ Lors de la comparaison de la situation où une commande approvisionnement rencon
 ![Exemple d'équilibre de l'offre et de la demande dans les transferts](media/nav_app_supply_planning_7_transfers2.png "Exemple d'équilibre de l'offre et de la demande dans les transferts")  
 
 ## <a name="why-is-transfer-a-special-case"></a>Pourquoi le transfert est-il un cas spécial ?  
-Un ordre de transfert ressemble aux autres ordres du programme. Toutefois, en coulisse, c'est très différent.  
+Un ordre de transfert ressemble aux autres ordres de l'application. Toutefois, en coulisse, c'est très différent.  
 
 L'un aspect fondamental qui distingue les transferts dans la planification entre les commandes achat et les ordres de fabrication est qu'une ligne transfert représente la demande et l'approvisionnement en même temps. La partie sortante, qui est livrée à partir de l'ancien emplacement, est la demande. La partie entrante, qui doit être reçue au nouvel emplacement, est un approvisionnement à cet emplacement.  
 
