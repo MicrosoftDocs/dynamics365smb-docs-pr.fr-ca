@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: d97b1bb4c7e079c479eebd47e6919d5ede5b1f55
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: aaf527802d9b49f84e0c4261d4658f01382efa45
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1248558"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2313890"
 ---
 # <a name="put-items-away-with-inventory-put-aways"></a>Ranger des articles avec le rangement stock
 Lorsque votre emplacement est configuré pour exiger un traitement des rangements, mais pas un traitement des réceptions, vous utilisez le document **Rangement inventaire** pour enregistrer et reporter les informations de rangement et de réception pour vos documents sources. Le document source entrant peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un ordre d'assemblage/un bon de production dont la production est prête à être rangée.  

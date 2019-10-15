@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: account linking, direct payment posting, automatic payment processing, reconcile payment, recurring expense, recurring cash receipt
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 0df165440ebe34c35da8a59289f051239821ea5a
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: cde0798a6cd74837c16ccd47a2d669e012925e11
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1251939"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2312302"
 ---
 # <a name="map-text-on-recurring-payments-to-accounts-for-automatic-reconciliation"></a>Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique
 Sur la page **Correspondance texte et compte** à laquelle vous accédez à partir de la page **Journal rapprochement paiement**, vous pouvez configurer des mappages entre le texte des paiements et des comptes de débit, de crédit et de contrepartie spécifiques afin que ces paiements soient reportés dans les comptes spécifiés lorsque vous reportez le journal rapprochement de paiement.
@@ -57,7 +57,7 @@ Pour toujours reporter les frais de carburant encourus aux stations service Shel
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion des comptes client](receivables-manage-receivables.md)  
-[Ventes](sales-manage-sales.md)  
+[Vente](sales-manage-sales.md)  
 [Configurer le service Envestnet Yodlee Bank Feeds](bank-how-setup-bank-statement-service.md)  
 [Personnalisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide des extensions](ui-extensions.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

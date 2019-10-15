@@ -9,22 +9,21 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: dates, reporting, filter, calendar, shorthand, range
-ms.date: 09/17/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 96471b07d48120db7fda5e48a14c9ca0147688fb
-ms.sourcegitcommit: 7ce8005806465417c7040c61da1d6cada29cd9c0
+ms.openlocfilehash: 22014c6df6ccffa08ff2fed25d40ce4c0312d57d
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "2000773"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2315598"
 ---
 # <a name="working-with-calendar-dates-and-times"></a>Utilisation de dates civiles et les heures
 
 [!INCLUDE[d365fin](includes/d365fin_long_md.md)] offre plusieurs méthodes principales de saisie des dates et des heures, y compris des fonctions puissantes qui accélèrent la saisie de données, ou vous permettent de saisir des expressions de calendrier complexes. Il existe différents emplacements dans toute l'application où vous pouvez entrer des dates et des heures dans les champs. Par exemple, sur un document de vente, vous pouvez définir la date de livraison. En filtrant des listes ou des données de rapports, vous pouvez entrer des dates et des heures pour désigner uniquement les données qui vous intéressent.
 
 ## <a name="check-your-region-and-language-settings"></a>Vérifiez les paramètres de zone et de langue
-
-La page [**Mes paramètres**](https://businesscentral.dynamics.com?page=9176 "Accéder directement à votre page de paramètres utilisateurs dans Business Central") spécifie **Région** et **Langue** que vous utilisez dans l'application. Ces paramètres ont une incidence sur la manière dont vous saisissez des dates et des heures.
+La page **Mes paramètres** spécifie la **Région** et la **Langue** que vous utilisez dans l'application. Ces paramètres ont une incidence sur la manière dont vous saisissez des dates et des heures.
 
 -   Le paramètre **Région** détermine la manière dont les dates, heures, nombres et devises sont affichés ou mis en forme.
 
@@ -51,7 +50,7 @@ Tout champ affichant une icône de calendrier peut être paramétré à l'aide d
 
 ![Champs de date](media/ui-date-field.png "Exemple d'un champ de date")
 
-Voir aussi [Raccourcis clavier du sélecteur de date civile](keyboard-shortcuts.md#calendarshortcuts)
+Voir aussi [Raccourcis clavier du sélecteur de date civile](keyboard-shortcuts.md#calendarshortcuts).
 
 ### <a name="day-week-year-pattern"></a>Modèle jour\-semaine\-année
 
@@ -85,11 +84,11 @@ Les périodes comptables sont définies sur la page **Périodes comptables**. Po
 
 La fonction de date de travail vous permet d'enregistrer des transactions en utilisant une date qui est différente de la date du jour.
 
-Le mot « date de travail », dans la langue définie par le paramètre **Langue**, définit la date à laquelle la date de travail configurée actuellement est spécifiée sur la page [**Mes paramètres**](https://businesscentral.dynamics.com?page=9176 "Accéder directement à votre page de paramètres utilisateurs dans Business Central"). Au lieu de saisir le mot entier, vous pouvez saisir une partie du mot, en commençant du début, comme "t" pour travail.
+Le mot « date de travail », dans la langue définie par le paramètre **Langue**, définit la date à laquelle la date de travail configurée actuellement est spécifiée sur la page **Mes paramètres**. Au lieu de saisir le mot entier, vous pouvez saisir une partie du mot, en commençant du début, comme "t" pour travail.
 
 Si vous ne définissez pas de date de travail, la date actuelle sera utilisée comme date de travail. Vous souhaiterez peut-être utiliser une date de travail si vous avez beaucoup de transactions avec une date différente de la date d'aujourd'hui.
 
-Voir aussi [Modification des paramètres de base, comme la date de travail](ui-change-basic-settings.md#work-date).
+Voir aussi [Modifier les paramètres de base, comme la date de travail](ui-change-basic-settings.md#work-date).
 
 ### <a name="closing-date"></a>Date de fermeture
 
@@ -129,8 +128,8 @@ Sous Listes, totaux et rapports, vous pouvez définir des filtres sur les dates,
 |**Signification**|**Exemple d'expression (Date)**|**Données incluses dans le filtre**|
 |-----------|---------------------|--------------------|
 |Intervalle|15 12 00..15 01 01<br /><br />..15 12 00<br /><br />p1..p4|Enregistrements dont les dates sont comprises entre le 15/12/00 et le 15/01/01 inclusivement.<br /><br />Enregistrements dont les dates sont le 15/12/00 ou avant.<br /><br />Plage de dates qui comprend la deuxième, la troisième et la quatrième période comptable, par exemple 01/01/20..30/04/20.|
-|Et/ou|15 12 00|16 12 00|Enregistrement dont les dates sont le 15/12/00 ou le 16/12/00. Si des enregistrements comportent des dates pendant ces deux jours, ils sont tous affichés.|
-|Combinaison|15 12 00|01 12 00..10 12 00  \n..14 12 00|30 12 00..|Enregistrements avec pour dates le 15/12/00 ou entre le 01/12/00 et le 10/12/00 inclus.  \Enregistrements avec dates le 14/12/00 ou avant, ou le 30/12/00 ou après, c'est-à-dire tous les enregistrements exceptés ceux avec des dates comprises entre le 15/12/00 et le 29/12/00 inclusivement.|
+|Et/ou|12 15 00\|12 16 00|Enregistrement dont les dates sont le 15/12/00 ou le 16/12/00. Si des enregistrements comportent des dates pendant ces deux jours, ils sont tous affichés.|
+|Combinaison|12 15 00\|12 01 00..12 10 00  <br /><br />..12 14 00\|12 30 00..|Enregistrements avec pour dates le 15/12/00 ou entre le 01/12/00 et le 10/12/00 inclus.  <br /><br />Enregistrements avec dates le 14/12/00 ou avant, ou le 30/12/00 ou après, c'est-à-dire tous les enregistrements exceptés ceux avec des dates comprises entre le 15/12/00 et le 29/12/00 inclusivement.|
 
 Vous pouvez utiliser l'un des formats valides dans les filtres Plage de dates. Par exemple, lu14 3..a 4p appliqué pour un champ Date/heure engendre un filtre à partir de 3 h du matin le lundi de la semaine 14 de l'année de la date de travail en cours, incluse, jusqu'à aujourd'hui à 16 h, inclus.
 

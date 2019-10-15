@@ -7,14 +7,14 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 9ba3873284f5e40e46eeee8615974dd6053d4991
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 635e53040ab9920780cd1cf05a14f6dfa17496d9
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1249961"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2314974"
 ---
 # <a name="working-with-general-journals"></a>Utilisation de feuilles comptabilité
 
@@ -28,7 +28,7 @@ Mais dans de nombreux cas, vous devrez utiliser les journaux qui sont optimisée
 
 Les journaux généraux vous permettent de reporter des transactions financières directement dans les comptes GL et dans d'autres comptes tels que les comptes bancaires, client, fournisseur et employé. Le report avec un journal général crée toujours des écritures dans les comptes du grand livre. C'est le cas même lorsque, par exemple, vous reportez une ligne journal sur un compte client, parce qu'une écriture est reportée dans un compte client du grand livre via un groupe de report.
 
-Les informations que vous saisissez dans un journal sont temporaires et peuvent être modifiées tant qu'elles sont dans le journal. Lorsque vous reportez le journal, les informations sont transférées vers des écritures de comptes individuels, où elles ne peuvent pas être modifiées. Toutefois, vous pouvez annuler l'affectation des écritures reportées et reporter des écritures d'inversion ou de correction. Pour plus d'informations, voir [Inverser des reports](finance-how-reverse-journal-posting.md).
+Les informations que vous saisissez dans un journal sont temporaires et peuvent être modifiées tant qu'elles sont dans le journal. Lorsque vous reportez le journal, les informations sont transférées vers des écritures de comptes individuels, où elles ne peuvent pas être modifiées. Toutefois, vous pouvez annuler l'affectation des écritures reportées et reporter des écritures d'inversion ou de correction. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md).
 
 > [!NOTE]
 > [!INCLUDE[journal-showhide-columns-inline-tip](includes/journal-showhide-columns-inline-tip.md)]  
@@ -60,7 +60,7 @@ Ce champ détermine la manière dont le montant de la ligne journal est traité 
 | --- | --- |
 |Statique|Le montant de la ligne journal est conservé après report.|
 |Variable|Le montant de la ligne journal est supprimé après report.|
-|Solde|Le montant reporté sur le compte de la ligne sera affecté sur les comptes spécifiés pour la ligne de la table Imputation journal général. Le solde du compte est donc positionné à zéro. Pensez à renseigner le champ **% affectation** sur la page **Affectations**. Pour plus d'informations, voir [Affectation de montants journal récurrent à plusieurs comptes](ui-work-general-journals.md#allocating-recurring-journal-amounts-to-several-accounts).|
+|Solde|Le montant reporté sur le compte de la ligne est affecté sur les comptes spécifiés pour la ligne de la table Affectation journal. Le solde du compte est donc positionné à zéro. Pensez à renseigner le champ **% affectation** sur la page **Affectations**. Pour plus d'informations, voir [Affectation de montants journal récurrent à plusieurs comptes](ui-work-general-journals.md#allocating-recurring-journal-amounts-to-several-accounts).|
 |Inversion fixe|Le montant de la ligne journal est conservé après report, et une écriture contrepartie est reportée le lendemain.|
 |Inversion variable|Le montant de la ligne journal est supprimé après report, et une écriture contrepartie est reportée le lendemain.|
 |Inversion solde|Le montant reporté sur le compte de la ligne sera affecté sur les comptes spécifiés pour la ligne de la page **Affectations**. Le solde du compte est défini sur zéro, et une écriture contrepartie est reportée le lendemain.|
@@ -113,7 +113,7 @@ Lorsque vous créez des lignes journal dont vous savez que vous risquez de les r
     Si vous avez déjà créé une ou plusieurs feuilles article standard et souhaitez en remplacer une avec la nouvelle série de lignes feuille article, dans le champ Code, sélectionnez le code souhaité.
 6. Choisissez le bouton **OK** pour vérifier que vous souhaitez écraser la feuille article standard existante et remplacer tout son contenu.
 7. Sélectionnez le champ **Enregistrer le montant unitaire** si vous souhaitez enregistrer les valeurs dans le champ **Montant unitaire** de la feuille article standard.
-8. Sélectionnez le champ **Enregistrer la quantité** si vous souhaitez que le programme enregistre les valeurs dans le champ **Quantité**.
+8. Sélectionnez le champ **Enregistrer la quantité** si vous souhaitez que l'application enregistre les valeurs dans le champ **Quantité**.
 9. Cliquez sur le bouton **OK** pour enregistrer la feuille article standard.
 
 Une fois l'enregistrement du journal article standard effectué, la page Journal article s'affiche. Vous pouvez alors procéder au report tout en sachant que vous pouvez très facilement recréer ce journal si vous devez reporter des lignes identiques ou analogues.
@@ -160,7 +160,7 @@ Les valeurs dans le champ **N° document** sont modifiées, le cas échéant, po
 
 ## <a name="see-also"></a>Voir aussi
 [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)  
-[Inverser des reports](finance-how-reverse-journal-posting.md)  
+[Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)  
 [Répartition des coûts et du revenu](year-allocate-costs-income.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: relationship, prospect
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: d337da227214c88b8358eb07261f18443d9c5d93
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 8a3cce098b254111b219f94baf1c507d6edbcd23
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1242305"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2308726"
 ---
 # <a name="set-up-contacts"></a>Configurer les contacts
 Lors de la création de contacts, vous pouvez saisir des informations spécifiques, telles que le secteur d'activité du contact et votre relation d'affaires avec elles.
@@ -142,9 +142,9 @@ Lorsque vous modifiez l'un des champs dans la fiche compagnie contact, les même
 Pour plus d'informations, reportez-vous à [Créer des contacts](marketing-create-contact-companies.md).
 
 ## <a name="using-predefined-defaults-on-new-contacts"></a>Utilisation de paramètres par défaut prédéfinis sur les nouveaux contacts
-Vous pouvez configurer l'application pour qu'elle affecte automatiquement des codes langue, territoire, représentant et pays/région spécifiques par défaut à chaque nouveau contact que vous créez. Vous pouvez également entrer un code cycle de vente par défaut que le programme affecte automatiquement à chaque nouvelle opportunité. Vous définissez cela à partir du raccourci **Valeurs par défaut** sur la page **Configuration marketing**
+Vous pouvez configurer l'application pour qu'elle affecte automatiquement des codes langue, territoire, représentant et pays/région spécifiques par défaut à chaque nouveau contact que vous créez. Vous pouvez également entrer un code cycle de vente par défaut que l'application affecte automatiquement à chaque nouvelle opportunité. Vous définissez cela à partir du raccourci **Valeurs par défaut** sur la page **Configuration marketing**
 
-Les valeurs héritées des champs sont prioritaires sur les valeurs par défaut que vous avez définies. Par exemple, si vous avez choisi le français comme langue par défaut alors que la langue de la compagnie contact est l'allemand, le programme affecte automatiquement le code langue de l'allemand aux personnes contact enregistrées pour cette compagnie.
+Les valeurs héritées des champs sont prioritaires sur les valeurs par défaut que vous avez définies. Par exemple, si vous avez choisi le français comme langue par défaut alors que la langue de la compagnie de contact est l'allemand, l'application affecte automatiquement le code langue de l'allemand aux personnes de contact enregistrées pour cette compagnie.
 
 ## <a name="synchronizing-contacts-with-customers-vendors-and-bank-accounts"></a>Synchronisation des contacts avec les clients, les fournisseurs et les comptes bancaires
 Pour synchroniser la fiche contact avec une fiche client, fournisseur ou compte bancaire liée, vous devez renseigner le champ approprié dans la section **Code relation d'affaires pour** sur le raccourci **Interactions** de la page **Configuration marketing**.  
@@ -152,7 +152,7 @@ Pour synchroniser la fiche contact avec une fiche client, fournisseur ou compte 
 Pour plus d'informations, reportez-vous à [Procédure de synchronisation des contacts avec les clients, les fournisseurs et les comptes bancaires](marketing-create-contact-companies.md#synchronizing-contacts-with-customers-vendors-and-bank-accounts).
 
 ## <a name="searching-for-duplicate-contacts"></a>Recherche de doublons de contacts
-Vous pouvez configurer le programme pour qu'il recherche automatiquement les doublons chaque fois que vous créez un contact ou vous pouvez choisir d'effectuer une recherche manuelle lorsque les contacts sont créés. Vous pouvez également configurer le programme pour qu'il mette automatiquement à jour les chaînes de recherche chaque fois que vous modifiez les données de contact ou que vous créez un contact. Vous pouvez choisir le pourcentage de chaînes communes, c'est-à-dire le pourcentage de chaînes qui doivent être identiques dans deux contacts pour que le système les considère comme des doublons. Vous définissez cela à partir de l'organisateur **Doublons** sur la page **Configuration marketing**.
+Vous pouvez configurer l'application pour qu'elle recherche automatiquement les doublons chaque fois que vous créez un contact ou vous pouvez choisir d'effectuer une recherche manuelle lorsque les contacts sont créés. Vous pouvez également configurer l'application pour qu'elle mette automatiquement à jour les chaînes de recherche chaque fois que vous modifiez les données de contact ou que vous créez un contact. Vous pouvez choisir le pourcentage de chaînes communes, c'est-à-dire le pourcentage de chaînes qui doivent être identiques dans deux contacts pour que l'application les considère comme des doublons. Vous définissez cela à partir de l'organisateur **Doublons** sur la page **Configuration marketing**.
 
 Une fois que vous avez trouvé un doublon de contact, vous pouvez utilisez la page **Fusionner le doublon** pour le fusionner en un enregistrement de contact existant que vous souhaitez conserver. Pour en savoir plus, reportez-vous à la rubrique [Fusionner l'enregistrement des doublons](sales-how-merge-duplicate-records.md).
 

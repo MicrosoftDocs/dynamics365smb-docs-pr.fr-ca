@@ -8,23 +8,23 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 1dac30e8c48e37464bc503fcc1d2961cc5721868
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 020fde81b868a2aba65ae5d5acae2047a007eaa5
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1253020"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2313070"
 ---
 # <a name="subcontract-manufacturing"></a>Sous-traiter la production
 La sous-traitance des opérations sélectionnées au fournisseur est courante dans de nombreuses compagnies manufacturières. La sous-traitance peut être occasionnelle ou faire partie intégrante des processus de production.
 
-Le programme fournit plusieurs outils pour gérer le travail de sous-traitance :  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] fournit plusieurs outils pour gérer le travail de sous-traitance :  
 
 - Ateliers avec fournisseur affecté : cette fonctionnalité permet de configurer un atelier associé à un fournisseur (sous-traitant). Il s'agit d'un atelier sous-traitant. Vous pouvez spécifier un atelier sous-traitant sur une opération d'itinéraire, ce qui permet de traiter aisément l'activité sous-traitée. En outre, le coût de l'opération peut être indiqué au niveau de l'itinéraire ou de l'atelier.  
-- Coût de l'atelier basé sur des unités de temps : cette fonctionnalité permet de spécifier si les coûts associés à l'atelier sont basés sur le temps de fabrication ou un coût unitaire. Bien que les sous-traitants utilisent généralement un coût unitaire pour facturer leurs services, le programme peut gérer les deux options (temps de fabrication et coût unitaire).  
-- Feuille de sous-traitance : cette fonctionnalité vous permet de rechercher les bons de production dont les matériaux sont prêts pour envoi à un sous-traitant et de créer automatiquement des bons de commande pour sous-traiter des opérations à partir d'itinéraires de bon de production. Ensuite, le programme reporte automatiquement les frais de bon de commande dans le bon de production durant le report du bon de commande. Seuls les bons de production dont l'état est libéré sont accessibles et utilisables à partir d'une feuille de sous-traitance.  
+- Coût de l'atelier basé sur des unités de temps : cette fonctionnalité permet de spécifier si les coûts associés à l'atelier sont basés sur le temps de fabrication ou un coût unitaire. Bien que les sous-traitants utilisent généralement un coût unitaire pour facturer leurs services, l'application peut gérer les deux options (temps de fabrication et coût unitaire).  
+- Feuille de sous-traitance : cette fonctionnalité vous permet de rechercher les bons de production dont les matériaux sont prêts pour envoi à un sous-traitant et de créer automatiquement des bons de commande pour sous-traiter des opérations à partir d'itinéraires de bon de production. L'application reporte automatiquement les frais de bon de commande dans le bon de production durant le report du bon de commande. Seuls les bons de production dont l'état est libéré sont accessibles et utilisables à partir d'une feuille de sous-traitance.  
 
 ## <a name="subcontract-work-centers"></a>Centres de charge sous-traitants  
 Les centres de charge sous-traitants sont configurés de la même manière que les centres de charge ordinaires avec des informations supplémentaires. Ils sont affectés à des gammes de la même manière que d'autres centres de charge.  

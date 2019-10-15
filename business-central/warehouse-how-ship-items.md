@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 188cbf7d63795167a0cbbf0b0debf904b153992d
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 239810db7fa6f7cd74aaebf94581f9ad76fd5599
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1248834"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2314686"
 ---
 # <a name="ship-items"></a>Livrer des articles
 Lorsque vous livrez des articles provenant d'un entrepôt qui n'est pas configuré pour un traitement de livraison entrepôt, enregistrez simplement la livraison du document d'entreprise associé, comme un document de vente, une commande service, un retour vente ou un ordre de transfert sortant.
@@ -25,7 +25,7 @@ Lorsque vous livrez des articles provenant d'un entrepôt qui n'est pas configur
 Lorsque vous livrez des articles à partir d'un entrepôt qui est configuré pour un traitement de livraison entrepôt, vous ne pouvez livrer des articles que sur la base des documents sources que d'autres centres de la compagnie ont libérés et transmis à l'entrepôt en vue d'une action.
 
 > [!NOTE]
-> Si votre entrepôt utilise le transbordement et les zones, vous pouvez visualiser la quantité d'articles placés dans les zones transbordement. Le programme calcule automatiquement ces quantités chaque fois que les champs de le livraison sont mis à jour. S'il s'agit des articles correspondant à la livraison que vous préparez, vous pouvez créer un prélèvement pour toutes les lignes, puis terminer la livraison. Pour plus d'informations, voir [Transborder des articles](warehouse-how-to-cross-dock-items.md).
+> Si votre entrepôt utilise le transbordement et les zones, vous pouvez visualiser pour chaque ligne la quantité d'articles placés dans les zones transbordement. L'application calcule automatiquement ces quantités chaque fois que les champs de la livraison sont mis à jour. S'il s'agit des articles correspondant à la livraison que vous préparez, vous pouvez créer un prélèvement pour toutes les lignes, puis terminer la livraison. Pour plus d'informations, voir [Transborder des articles](warehouse-how-to-cross-dock-items.md).
 
 ## <a name="to-ship-items-with-a-sales-order"></a>Pour livrer des articles avec un document de vente
 La section suivante décrit comment recevoir des articles avec un bon de commande. Les étapes sont similaires pour les retours achat, les commandes service et les ordres de transfert sortants.  

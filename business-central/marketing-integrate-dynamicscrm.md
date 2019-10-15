@@ -1,6 +1,6 @@
 ---
-title: Gérer les clients utilisant Dynamics 365 for Sales | Microsoft Docs
-description: Vous pouvez utiliser Dynamics 365 for Sales depuis Business Central pour mapper les données et avoir une intégration et une synchronisation parfaites dans le processus allant du prospect à l'encaissement.
+title: Gérer les clients à l'aide de Dynamics 365 Sales | Microsoft Docs
+description: Vous pouvez utiliser Dynamics 365 Sales depuis Business Central pour mapper les données et avoir une intégration et une synchronisation parfaites dans le processus allant du prospect à l'encaissement.
 documentationcenter: ''
 author: bholtorf
 ms.service: dynamics365-business-central
@@ -9,22 +9,22 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: integration, synchronize, map, Sales
-ms.date: 06/13/2019
+ms.date: 10/01/2019
 ms.author: bholtorf
-ms.openlocfilehash: d0f1dfd88b30a4ec2e3a9bfd3366005a93d97f82
-ms.sourcegitcommit: 6ef7d2fae52feff786f2e15e2863d7f5aaa762be
+ms.openlocfilehash: de3456884d3c5f46ef246aa6fcd02bec5b001377
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1917378"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2309014"
 ---
-# <a name="using-dynamics-365-for-sales-from-business-central"></a>Utilisation de Dynamics 365 for Sales depuis Business Central
-Si vous utilisez Dynamics 365 for Sales for Customer Engagement, bénéficiez de l'intégration parfaite dans le processus allant du prospect à l'encaissement à l'aide de [!INCLUDE[d365fin](includes/d365fin_md.md)] pour les activités principales, telles que le traitement des commandes, la gestion de l'inventaire et de vos finances.
+# <a name="using-dynamics-365-sales-from-business-central"></a>Utilisation de Dynamics 365 Sales depuis Business Central
+Si vous utilisez Dynamics 365 Sales for Customer Engagement, bénéficiez de l'intégration parfaite dans le processus allant du prospect à l'encaissement à l'aide de [!INCLUDE[d365fin](includes/d365fin_md.md)] pour les activités principales, telles que le traitement des commandes, la gestion de l'inventaire et de vos finances.
 
-Avant de pouvoir utiliser les fonctionnalités d’intégration, vous devez configurer la connexion et définir les utilisateurs de [!INCLUDE[crm_md](includes/crm_md.md)]. Pour plus d'informations, reportez-vous à la rubrique [Intégration à Dynamics 365 for Sales](admin-prepare-dynamics-365-for-sales-for-integration.md).
+Avant de pouvoir utiliser les fonctionnalités d’intégration, vous devez configurer la connexion et définir les utilisateurs de [!INCLUDE[crm_md](includes/crm_md.md)]. Pour plus d'informations, reportez-vous à la rubrique [Intégration à Dynamics 365 Sales](admin-prepare-dynamics-365-for-sales-for-integration.md).
 
 > [!NOTE]
-> Ces étapes décrivent le processus d'intégration des versions en ligne de [!INCLUDE[crm_md](includes/crm_md.md)] et [!INCLUDE[d365fin](includes/d365fin_md.md)]. Pour plus d'informations sur la configuration sur site, voir [Préparation de Dynamics 365 for Sales pour l'intégration sur site](/dynamics365/business-central/dev-itpro/administration/prepare-dynamics-365-for-sales-for-integration).
+> Ces étapes décrivent le processus d'intégration des versions en ligne de [!INCLUDE[crm_md](includes/crm_md.md)] et [!INCLUDE[d365fin](includes/d365fin_md.md)]. Pour plus d'informations sur la configuration sur site, voir [Préparation de l'intégration à Dynamics 365 Sales On-Premises](/dynamics365/business-central/dev-itpro/administration/prepare-dynamics-365-for-sales-for-integration).
 
 Intégrer les applications vous permet d'accéder aux données dans Sales depuis [!INCLUDE[d365fin](includes/d365fin_md.md)], et dans certains cas, inversement. Vous pouvez utiliser et synchroniser les données communes aux deux services, par exemple clients, contacts et informations de vente, et mettre à jour les données dans les deux applications.  
 
@@ -33,14 +33,14 @@ Par exemple, un vendeur dans Sales peut utiliser les tarifs dans [!INCLUDE[d365f
 Inversement, les préparateurs de commandes dans [!INCLUDE[d365fin](includes/d365fin_md.md)] peuvent gérer les documents de vente qui sont automatiquement ou manuellement transférés depuis Sales. Par exemple, ils peuvent créer et reporter des lignes de document de vente pour les articles ou les ressources saisies dans Sales comme produits hors-catalogue. Pour plus d'informations, reportez-vous à la rubrique [Gestion des données de documents de vente spéciaux](marketing-integrate-dynamicscrm.md#handling-sales-order-data).
 
 > [!IMPORTANT]  
-> [!INCLUDE[d365fin](includes/d365fin_md.md)] s'intègre uniquement à Dynamics 365 for Sales. Les autres applications Dynamics 365 qui modifient le flux de travail ou le modèle de données standard dans Sales, par exemple Project Service Automation, peuvent désactiver l'intégration entre [!INCLUDE[d365fin](includes/d365fin_md.md)] et Sales.
+> [!INCLUDE[d365fin](includes/d365fin_md.md)] s'intègre à Dynamics 365 Sales uniquement. Les autres applications Dynamics 365 qui modifient le flux de travail ou le modèle de données standard dans Sales, par exemple Project Service Automation, peuvent désactiver l'intégration entre [!INCLUDE[d365fin](includes/d365fin_md.md)] et Sales.
 
 ### <a name="coupling-records"></a>Enregistrements couplage
 Le guide de configuration assistée vous permet de choisir les données à synchroniser. Ultérieurement, vous pouvez également configurer la synchronisation pour les enregistrements spécifiques. C'est ce qu'on appelle le *couplage*. Par exemple, vous pouvez associer un compte spécifique dans Sales avec un client spécifique dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Cette rubrique décrit ce qu'il convient de prendre en compte lorsque vous couplez des enregistrements.
 
 Par exemple, si vous souhaitez afficher les comptes dans Sales en tant que clients dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous devez coupler les deux types d'enregistrements. Pour ce faire, sur la page de la liste **Clients** dans [!INCLUDE[d365fin](includes/d365fin_md.md)], utilisez l'action **Configurer le couplage**. Puis vous devez spécifier quels clients [!INCLUDE[d365fin](includes/d365fin_md.md)] correspondent à quels comptes dans Sales.
 
-Vous pouvez également créer (et coupler) un compte dans Sales selon, par exemple, l'enregistrement client dans [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide de l'option **Créer un compte dans Dynamics 365 for Sales**, ou vice-versa, à l'aide de l'option **Créer un client dans [!INCLUDE[d365fin](includes/d365fin_md.md)]**.
+Vous pouvez également créer (et coupler) un compte dans Sales selon, par exemple, l'enregistrement client dans [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide de l'option **Créer un compte dans Dynamics 365 Sales** ou vice-versa, à l'aide de l'option **Créer un client dans [!INCLUDE[d365fin](includes/d365fin_md.md)]**.
 
 Lorsque vous configurez un couplage entre deux enregistrements, vous pouvez également demander manuellement que l'enregistrement actuel, par exemple un client, soit remplacé immédiatement par les données de compte depuis Sales (ou depuis [!INCLUDE[d365fin](includes/d365fin_md.md)]) à l'aide de l'action **Synchroniser maintenant**. L'action**Synchroniser maintenant** vous demandera de remplacer les données dans Sales ou les données d'enregistrement [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
@@ -58,9 +58,9 @@ Dans certains cas, vous devez coupler certains ensembles de données avant d'aut
 Dans Sales, les documents de vente dépendent d'informations comme les clients, les unités de mesure, les devis, les groupes tarifs client, les articles et/ou les ressources. Pour assurer une intégration avec les documents de vente, vous devez coupler des clients, des unités de mesure, des devises, des groupes tarifs client, des articles et/ou des ressources.
 
 ### <a name="fully-synchronizing-records"></a>Synchronisation complète des enregistrements
-À la fin du guide de configuration assistée, vous pouvez sélectionner l'action **Exécuter une synchronisation complète** pour démarrer la synchronisation de tous les enregistrements [!INCLUDE[d365fin](includes/d365fin_md.md)] avec tous les enregistrements associés dans Sales. Sur la page **Révision synchronisation complète Dynamics 365 for Sales**, choisissez l'action **Démarrer**. La synchronisation complète peut prendre un certain temps, mais vous pouvez continuer à travailler dans [!INCLUDE[d365fin](includes/d365fin_md.md)] pendant qu'elle fonctionne à l'arrière-plan.
+À la fin du guide de configuration assistée, vous pouvez sélectionner l'action **Exécuter une synchronisation complète** pour démarrer la synchronisation de tous les enregistrements [!INCLUDE[d365fin](includes/d365fin_md.md)] avec tous les enregistrements associés dans Sales. Sur la page **Révision synchronisation complète Dynamics 365 Sales**, sélectionnez l'action **Démarrer**. La synchronisation complète peut prendre un certain temps, mais vous pouvez continuer à travailler dans [!INCLUDE[d365fin](includes/d365fin_md.md)] pendant qu'elle fonctionne à l'arrière-plan.
 
-Pour vérifier la progression de divers projets dans le cadre d'une synchronisation complète, sur la page **Révision synchronisation complète Dynamics 365 for Sales**, choisissez un enregistrement pour afficher les détails. Pour mettre à jour l'état pendant la synchronisation, actualisez la page.
+Pour vérifier la progression de divers projets dans le cadre d'une synchronisation complète, sur la page **Révision synchronisation complète Dynamics 365 Sales**, choisissez un enregistrement pour afficher les détails. Pour mettre à jour l'état pendant la synchronisation, actualisez la page.
 
 Sur la page **Configuration de la connexion Microsoft Dynamics 365**, vous pouvez obtenir des détails sur la synchronisation complète à tout moment. À partir de cette page, vous pouvez aussi ouvrir la page **Correspondances table intégration** pour afficher les détails des tables dans [!INCLUDE[d365fin](includes/d365fin_md.md)] et dans Sales à synchroniser.
 
@@ -82,7 +82,7 @@ Les mises à jour vers les champs d'en-tête de document de vente, tels que Date
 
 ## <a name="handling-sales-quotes-data"></a>Gestion des données de devis
 Les devis vente activés dans [!INCLUDE[crm_md](includes/crm_md.md)] seront transférés vers [!INCLUDE[d365fin](includes/d365fin_md.md)] si vous sélectionnez la case à cocher **Traiter automatiquement les devis** sur la page **Configuration de la connexion Microsoft Dynamics 365**.
-Sinon, vous pouvez convertir manuellement les devis envoyés depuis [!INCLUDE[crm_md](includes/crm_md.md)] à l'aide de l'action **Traiter dans [!INCLUDE[d365fin](includes/d365fin_md.md)]** disponible sur la page **Devis - Dynamics 365 for Sales**.
+Sinon, vous pouvez convertir manuellement les devis envoyés depuis [!INCLUDE[crm_md](includes/crm_md.md)] à l'aide de l'action **Traiter dans [!INCLUDE[d365fin](includes/d365fin_md.md)]** disponible sur la page **Devis - Dynamics 365 Sales**.
 Pour ces devis, le champ **Nom** du devis d'origine est transféré et associé au champ **Numéro de document externe** du document de vente dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. En outre, le champ **Applicable jusqu'à** du devis est transféré et mappé vers le champ **Devis valide jusqu'à** du devis dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
 Les devis subissent de nombreuses révisions avant d'être finalisés. Le traitement automatique et manuel des devis dans [!INCLUDE[d365fin](includes/d365fin_md.md)] garantit que les versions précédentes des devis sont archivées avant traitement des nouvelles révisions de devis depuis [!INCLUDE[crm_md](includes/crm_md.md)].
@@ -93,11 +93,11 @@ Après l'exécution d'un document de vente, les factures associées seront cré�
 Une fois que le paiement client est reçu pour la facture vente dans [!INCLUDE[d365fin](includes/d365fin_md.md)], l'état de la facture vente sera modifié en **Payé** avec la **raison de l'état** définie sur **Partielle** si elle est partiellement payée, ou **Totale** si elle est totalement payée, lorsque vous exécutez **Mettre à jour les statistiques compte** sur la page du client dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. La fonction **Mettre à jour les statistiques compte** actualisera également des valeurs telles que le **solde** et les **ventes totales** dans le **récapitulatif Statistiques compte [!INCLUDE[d365fin](includes/d365fin_md.md)]** dans [!INCLUDE[crm_md](includes/crm_md.md)]. Sinon, les projets programmés (statistiques client et POSTEDSALESINV-INV) peuvent exécuter automatiquement ces deux processus en arrière-plan.
 
 ## <a name="see-also"></a>Voir aussi
-[Intégration à Dynamics 365 for Sales](admin-prepare-dynamics-365-for-sales-for-integration.md)  
+[Intégration à Dynamics 365 Sales](admin-prepare-dynamics-365-for-sales-for-integration.md)  
 [Gestion des relations](marketing-relationship-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
-[Modification des fonctionnalités affichées](ui-experiences.md)  
-[Gestion des utilisateurs et des autorisations](ui-how-users-permissions.md)    
-[Intégrer l'organisation et les utilisateurs dans Dynamics 365 (online)](/dynamics365/customer-engagement/admin/onboard-your-organization-and-users-to-dynamics-365-online)  
+[Modifier les fonctionnalités affichées](ui-experiences.md)  
+[Gérer les utilisateurs et les autorisations](ui-how-users-permissions.md)    
+[Vue d'ensemble de Sales et du centre des ventes](/dynamics365/customer-engagement/sales-enterprise/overview)  
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]  

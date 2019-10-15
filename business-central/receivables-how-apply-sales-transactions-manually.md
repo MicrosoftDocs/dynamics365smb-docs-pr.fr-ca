@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, cash receipt
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 2e7f24f6c8bca209fbb53f215d644517f495978e
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: d32f614ce86f6ad1b3f846631d3b4062788b755a
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1252307"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2312350"
 ---
 # <a name="reconcile-customer-payments-with-the-cash-receipt-journal-or-from-customer-ledger-entries"></a>Rapprocher des paiements clients avec le journal des encaissements ou à partir des écritures client
 Lorsque vous recevez un paiement en liquide d'un client ou que vous effectuez un remboursement en liquide, vous devez décider si vous souhaitez affecter le paiement ou le remboursement pour fermer une ou plusieurs écritures débit ou crédit ouvertes. Vous pouvez indiquer le montant que vous souhaitez affecter. Par exemple, vous pouvez affecter des paiements partiels à des écritures client. La fermeture des écritures client permet de garantir que des informations telles que les statistiques clients, les relevés de compte bancaire et les frais financiers sont corrects.
@@ -89,7 +89,7 @@ Un journal des encaissements est un type de journal général, que vous pouvez u
 3. Pour affecter la note de crédit à une seule écriture client lors du report, dans le champ **N° doc. affecté à**, sélectionnez l'écriture à laquelle affecter le paiement.
 4. Sur la ligne du champ **Montant à lettrer**, entrez le montant à lettrer avec l'écriture.  
 
-    Si vous n'entrez aucun montant, le programme affecte automatiquement le montant maximal. Au bas de la page **Affecter écritures client**, vous voyez le montant spécifique dans le champ **Montant affecté** et constatez si l'affectation est équilibrée.    
+    Si vous n'entrez aucun montant, l'application affecte automatiquement le montant maximal. Au bas de la page **Affecter écritures client**, vous voyez le montant spécifique dans le champ **Montant affecté** et constatez si l'affectation est équilibrée.    
 5. Cliquez sur le bouton **OK**. La page **Note de crédit** affiche désormais l'écriture que vous avez saisie dans les champs **Type doc. référence** et **N° doc. référence**. Et le montant de la note de crédit à reporter, escomptes de paiement éventuels déduits.
 6. Reportez la note de crédit.
 

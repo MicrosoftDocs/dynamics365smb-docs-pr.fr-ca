@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, reconcile payment, expenses, cash receipts
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 3c175e15c9a1cf1fae4879a520c26232195b289d
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: e87b4c4c22c83f482fcc777eac95df72acbb9eb6
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1251809"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2316534"
 ---
 # <a name="review-or-apply-payments-manually-after-automatic-application"></a>Réviser ou affecter les paiements manuellement après une affectation automatique
 Pour chaque ligne journal représentant un paiement sur la page **Journal rapprochement paiement**, vous pouvez ouvrir la page **Affectation paiement** pour afficher toutes les écritures ouvertes candidates au paiement et les informations détaillées pour chaque écriture sur la correspondance des données sur laquelle une affectation de paiement est basée. Ici, vous pouvez affecter les paiements manuellement ou réaffecter les paiements qui ont été automatiquement affectés à une écriture incorrecte. Pour plus d'informations sur l'affectation automatique, voir [Rapprocher les paiements à l'aide de l'affectation automatique](receivables-how-reconcile-payments-auto-application.md).

@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 640e04a51fe16fb531d533a8ff43710421fa6cb4
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 1033775d7b988fcb79742165ecbf527462e28aad
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1253066"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2313214"
 ---
 # <a name="register-consumption-and-output-for-one-released-production-order-line"></a>Enregistrer la consommation et la production pour une ligne bon de production libéré
 Cette tâche d'exécution est réalisée sur la page **Journal production** . Le journal combine les fonctions des journaux de sortie et de consommation distincts en un seul journal. Vous accédez directement au journal combiné depuis un bon de production libéré. Son objectif principal est de reporter manuellement la consommation de composantes, la quantité d'articles finis produits et le temps passé dans les opérations. Les valeurs sont reportées dans le grand livre sous le bon de production libéré. Les quantités consommées sont reportées comme écritures article négatives, les quantités sorties sont reportées comme écritures positives et les heures passées sont reportées comme écritures du grand livre de capacité. Ces valeurs reportées peuvent également être visualisées au bas du journal sous forme de quantités réelles.  

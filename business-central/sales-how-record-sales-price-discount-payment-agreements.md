@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: special price, alternate price, pricing
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 25dc281d83860742b9d699aeba9794f70f786202
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 9814da8c8a29c29e5bfee5da85f6d9b522a03e9d
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1252491"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2312158"
 ---
 # <a name="record-special-sales-prices-and-discounts"></a>Enregistrer les prix de vente spéciaux et les escomptes
 Vous devez définir les différentes ententes de prix et d'escompte qui s'appliquent lors de la vente à différents clients de sorte que les valeurs et règles convenues s'appliquent aux documents vente créés à l'intention des clients.
@@ -75,7 +75,7 @@ Lorsque vous utilisez des escomptes de facture, la valeur du montant de la factu
 
 Sur la page **Escomptes facture client**, vous pouvez également ajouter des frais de service aux factures supérieures à un montant donné.  
 
-Pour pouvoir utiliser les remises facture avec les ventes, vous devez saisir certaines informations dans le programme. Vous devez décider des éléments suivants  
+Pour pouvoir utiliser les escomptes facture avec les ventes, vous devez saisir certaines informations dans l'application. Vous devez décider des éléments suivants  
 
 - les clients qui se verront accorder ce type d'escompte.  
 - les pourcentages d'escompte à utiliser.  
@@ -89,7 +89,7 @@ Vous pouvez associer les pourcentages escompte à des montants de facture spéci
 En plus du pourcentage d'escompte (ou à sa place), vous pouvez lier un montant de frais forfaitaires au montant d'une facture.  
 
 > [!TIP]  
->  Avant de saisir ces informations dans le programme, il est conseillé de préparer la structure de l'escompte de paiement que vous souhaitez utiliser. Ainsi, vous pouvez visualiser plus facilement les clients pouvant être liés à la même page d'escompte facture. Plus le nombre de pages à configurer est faible, plus vous pouvez saisir rapidement les informations de base.  
+>  Avant de saisir ces informations dans l'application, il est conseillé de préparer la structure de l'escompte que vous souhaitez utiliser. Ainsi, vous pouvez visualiser plus facilement les clients pouvant être liés à la même page d'escompte facture. Plus le nombre de pages à configurer est faible, plus vous pouvez saisir rapidement les informations de base.  
 
 ## <a name="best-price-calculation"></a>Calcul du meilleur prix
 Lorsque vous avez enregistré des prix spéciaux et des remises de ligne pour les ventes et les achats, [!INCLUDE[d365fin](includes/d365fin_md.md)] s'assure que votre marge pour l'article est toujours optimale en calculant automatiquement le meilleur prix dans les documents achat et vente, sur le projet et les lignes feuille article.

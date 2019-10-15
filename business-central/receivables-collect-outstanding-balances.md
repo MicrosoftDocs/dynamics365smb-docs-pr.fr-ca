@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment due, debt, overdue, fee, charge, reminder
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: a4b6f58c434c563021e94e55e47c547d39967502
-ms.sourcegitcommit: d3035c32bb79b51179540787b98579ac0c528cc4
+ms.openlocfilehash: ca99b44b7c96037d07c00902df3411db81745d86
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "1985896"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2316654"
 ---
 # <a name="collect-outstanding-balances"></a>Collecte des soldes restants
 La gestion des clients comprend le contrôle du règlement des montants à temps. Si des clients ont des paiements échus, vous pouvez commencer par envoyer le rapport du Relevé client en guise de rappel. Sinon, vous pouvez émettre de relances.
@@ -161,6 +161,11 @@ De plus, émettre un rappel peut créer des écritures de TVA.
 
 Le rappel est imprimé pour être envoyé à une adresse de courriel spécifiée en tant que pièce jointe PDF.
 
+### <a name="to-cancel-an-issued-reminder"></a>Pour annuler un rappel émis
+Si des rappels ont été émis par erreur, vous pouvez les annuler avant leur envoi. Vous pouvez les annuler un par un ou en lot.
+1. Sur la page **Rappels émis**, sélectionnez une ou plusieurs lignes pour les rappels émis que vous souhaitez annuler, puis choisissez l'action **Annuler**.
+2. Sur la page **Annuler les rappels émis**, renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**.
+
 ## <a name="to-set-up-finance-charge-terms"></a>Pour configurer des modalités de frais financiers
 Vous devez configurer un code qui représente un calcul de frais financiers. Vous pouvez ensuite entrer ce code dans le champ **Code condition intérêts** des fiches client ou fournisseur.
 
@@ -243,6 +248,11 @@ De plus, émettre une note de frais financiers peut créer des écritures de TVA
 4. Cliquez sur le bouton **OK**.
 
 La note de frais financiers est imprimée pour être envoyée à une adresse de courriel spécifiée en tant que pièce jointe PDF.
+
+### <a name="to-cancel-an-issued-finance-charge-memo"></a>Pour annuler une note de frais financiers émise
+Si des notes de frais financiers ont été émises par erreur, vous pouvez les annuler avant leur envoi. Vous pouvez les annuler une par une ou par lots.
+1. Sur la page **Notes de frais financiers émises**, sélectionnez une ou plusieurs lignes pour les notes de frais financiers émises que vous souhaitez annuler, puis choisissez l'action **Annuler**.
+2. Sur la page **Annuler les notes de frais financiers émises**, renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**.
 
 ## <a name="to-view-reminder-and-finance-charge-entries"></a>Pour afficher les écritures rappel et note de frais financiers  
 Lorsque vous émettez un rappel, une écriture rappel est créée sur la page **Écritures rappel/frais financiers** pour chaque ligne rappel contenant une écriture client. Vous pouvez ensuite obtenir un aperçu des écritures rappel créées pour un client spécifique.    

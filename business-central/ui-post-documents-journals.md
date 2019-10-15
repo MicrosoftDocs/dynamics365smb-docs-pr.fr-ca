@@ -9,14 +9,14 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/24/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: a3fabec129de3e59eff30f70d1084e3969fa9ddc
-ms.sourcegitcommit: f46793abdb3efd8384c10eb7992e076383251f2c
+ms.openlocfilehash: 21329a8c6232fe0aba2f0ef99cc58ce4ea699d68
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1921371"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2310713"
 ---
 # <a name="posting-documents-and-journals"></a>Report des documents et des journaux
 Le report est une tâche de comptabilité qui consiste à enregistrer des transactions commerciales dans les divers livres de la compagnie.
@@ -27,9 +27,10 @@ Le tableau suivant décrit les tâches associées, et inclut des liens vers les 
 
 | À | Voir |
 | --- | --- |
-| En savoir plus sur le report de documents achat. |[Validation des achats](ui-post-purchases.md) |
-| En savoir plus sur le report de documents de vente. |[Validation des ventes](ui-post-sales.md) |
-| En savoir plus sur le report des journaux généraux. |[Utilisation de feuilles comptabilité](ui-work-general-journals.md) |
+| En savoir plus sur le report de documents achat. |[Report des achats](ui-post-purchases.md) |
+| En savoir plus sur le report de documents de vente. |[Report des ventes](ui-post-sales.md) |
+| Reportez plusieurs documents vente ou achat ensemble, immédiatement ou selon une programmation.|[Reporter plusieurs documents en même temps](ui-batch-posting.md)|
+| En savoir plus sur le report des journaux généraux. |[Utilisation de journaux généraux](ui-work-general-journals.md) |
 | Obtenir un aperçu, sur la page, des écritures qui seront créées lors du report. |[Aperçu des résultats du report](ui-how-preview-post-results.md) |
 | Obtenir un aperçu, dans un rapport, des écritures qui seront créées lors du report. |[Afficher des rapports de test avant le report](ui-how-view-test-reports-posting.md) |
 

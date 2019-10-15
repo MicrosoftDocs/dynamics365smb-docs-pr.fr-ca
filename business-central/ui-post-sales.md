@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms.date: 08/27/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: a2eb27a541033b755b9ab9d4ea9156bf7de9cab4
-ms.sourcegitcommit: f46793abdb3efd8384c10eb7992e076383251f2c
+ms.openlocfilehash: c389a93a71b251b5b0e11f4450251fdf68b64345
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1921440"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2310790"
 ---
 # <a name="posting-sales"></a>Report des ventes
 Sous le menu **Report** dans un document vente, vous pouvez choisir parmi les fonctions de report suivantes :
@@ -39,14 +39,17 @@ Pour chaque ligne commande vente, une écriture comptable article est créée da
 > [!IMPORTANT]  
 >   Lorsque vous reportez une commande, vous pouvez créer une livraison et une facture. Ceci peut être effectué de manière simultanée ou indépendante. Vous pouvez également créer une expédition partielle et une facture partielle en renseignant les champs **Qté à expédier** et **Qté à facturer** sur chaque ligne commande vente avant la validation. Notez que vous ne pouvez pas créer de facture pour un article qui n'est pas livré. C'est-à-dire que, avant de pouvoir facturer, vous devez avoir reporté une livraison, ou vous devez choisir de livrer et de facturer en même temps.
 
+Vous pouvez soit reporter, soit reporter et imprimer. Si vous choisissez de reporter et d’imprimer, un rapport est imprimé lorsque la commande est reportée. Vous pouvez aussi choisir la fonction **Valider par lot**, qui vous permet de valider plusieurs commandes en même temps. Pour plus d'informations, voir [Reporter plusieurs documents en même temps](ui-batch-posting.md).
+
 Lorsque le report est terminé, les lignes vente reportées sont supprimées de la commande. Un message vous indique lorsque le report est terminé. Vous pouvez ensuite afficher les écritures reportées dans les diverses pages qui contiennent des écritures reportées, telles que **Écritures client**, **Écritures**, **Écritures article**, **Livraisons vente reportées** et **Factures vente reportées**.  
 
 Vous pouvez modifier certains champs sur les documents vente reportés, tels que le champ **N° de suivi du colis**. . Pour plus d'informations, voir [Modifier les documents reportés](across-edit-posted-document.md).
 
 ## <a name="see-also"></a>Voir aussi
-[Ventes](sales-manage-sales.md)  
+[Vente](sales-manage-sales.md)  
+[Reporter plusieurs documents en même temps](ui-batch-posting.md)  
 [Modifier les documents reportés](across-edit-posted-document.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Corriger ou annuler des factures vente impayées](sales-how-correct-cancel-sales-invoice.md)  
-[Utilisation de la fonction Tell Me pour trouver des fonctions et des informations](ui-search.md)  
+[Recherche de pages et d'informations avec Tell Me](ui-search.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

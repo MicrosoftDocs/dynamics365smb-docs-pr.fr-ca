@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: cancel, undo, correct
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 78a67f214de9e3d4d1df673a21c5a2c1b3ec1f64
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 496873cf36ec696b081f7f29bcf8b2b9bb3c026f
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1252537"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2312518"
 ---
 # <a name="process-purchase-returns-or-cancellations"></a>Traiter les retours ou annulations d'achats
 Si vous souhaitez retourner des articles à votre fournisseur ou annuler des services que vous avez achetés, vous pouvez créer et reporter une note de crédit achat qui indique la modification demandée par rapport à la facture achat d'origine. Pour inclure les informations de facture achat correctes, vous pouvez créer la note de crédit achat à partir de la facture achat reportée ou vous pouvez créer une note de crédit achat avec les informations copiées de la facture.
@@ -119,7 +119,7 @@ La note de crédit achat est supprimée et remplacée par un nouveau document da
 
     -   Si la ligne document reportée contient des lignes traçabilité, le champ **Écr. article à affecter** sur les lignes traçabilité est renseigné à l'aide des numéros d'écriture article appropriés des lignes traçabilité reportées.  
 
-     Lors de la copie à partir d'une facture ou d'une note de crédit reportée, le programme copie les escomptes de la facture et les escomptes de paiement ligne adéquates comme valides au moment du report de ce document, de la ligne document reportée vers la nouvelle ligne document. Notez toutefois que si l'option **Calculer escompte facture** est activée sur la page **Configuration des achats et des comptes à payer**, l'escompte facture est de nouveau calculé lorsque vous reportez la nouvelle ligne document. Le montant ligne de la nouvelle ligne peut par conséquent être différent du montant ligne de la ligne document reportée, en fonction du nouveau calcul de l'escompte facture.  
+     Lors de la copie à partir d'une facture ou d'une note de crédit reportée, l'application copie les escomptes facture et les escomptes ligne adéquats comme valides au moment du report de ce document, de la ligne document reportée vers la nouvelle ligne document. Notez toutefois que si l'option **Calculer escompte facture** est activée sur la page **Configuration des achats et des comptes à payer**, l'escompte facture est de nouveau calculé lorsque vous reportez la nouvelle ligne document. Le montant ligne de la nouvelle ligne peut par conséquent être différent du montant ligne de la ligne document reportée, en fonction du nouveau calcul de l'escompte facture.  
 
     > [!NOTE]  
     >  Si une partie de la quantité de la ligne document reportée a déjà été inversée ou vendue ou consommée, une ligne n'est créée que pour la quantité restant en inventaire qui n'a pas encore été renvoyée. Si la quantité totale de la ligne document reportée a déjà été inversée, aucune ligne document n'est créée.  

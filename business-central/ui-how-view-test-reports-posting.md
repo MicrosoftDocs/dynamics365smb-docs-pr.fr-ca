@@ -9,14 +9,14 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: solsen
-ms.openlocfilehash: 2a0de959150584e56c488335688950a79430da25
-ms.sourcegitcommit: f46793abdb3efd8384c10eb7992e076383251f2c
+ms.openlocfilehash: ab2bcb78479e91c111868c21bd3019c7971d9ffb
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1921325"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2310886"
 ---
 # <a name="view-test-reports-before-posting"></a>Afficher des rapports de test avant le report
 Lorsque vous êtes prêt à reporter un document (commande, facture ou note de crédit, par exemple), vous pouvez vérifier le document pour vous assurer qu'aucun problème ne risque de bloquer le report.

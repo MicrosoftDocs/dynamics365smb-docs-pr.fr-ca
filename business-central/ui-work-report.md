@@ -1,67 +1,51 @@
 ---
 title: Programmation d'un rapport à exécuter à une date et une heure spécifiques | Microsoft Docs
 description: En savoir plus sur l'intégration d'un rapport dans une file d'attente des travaux et la programmation de son traitement à une date et une heure spécifiques.
-author: jswymer
+author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: task, process, report
-ms.date: 05/16/2019
-ms.author: jswymer
-ms.openlocfilehash: 508a6406fe11099f19ce46c70147d62ba74278d1
-ms.sourcegitcommit: f4beaa63e2f32e2947de1c794c5619ed40a47301
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: 709e444d185e6950d6367036db622b30c8062f25
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1586162"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2310622"
 ---
-# <a name="working-with-reports-and-batch-jobs"></a>Utilisation des rapports et des traitements en lot
-Un rapport regroupe des informations en fonction d'un ensemble de critères spécifié, et organise et présente les informations dans un format imprimable et facilement lisible. Il existe de nombreux rapports accessibles dans l'ensemble de l'application. Les rapports fournissent généralement des informations relatives au contexte de la page où vous vous trouvez. Par exemple, la page **Client** comprend des rapports pour les 10 principaux clients et les statistiques de vente, et plus encore.
+# <a name="working-with-reports-batch-jobs-and-xmlports"></a>Utilisation des rapports, des traitements en lot et des objets XMLport
+Un rapport regroupe des informations en fonction d'un ensemble de critères spécifié, et organise et présente les informations dans un format facilement lisible que vous pouvez imprimer ou enregistrer en tant que fichier. Il existe de nombreux rapports accessibles dans l'ensemble de l'application. Les rapports fournissent généralement des informations relatives au contexte de la page où vous vous trouvez. Par exemple, la page **Client** comprend des rapports pour les 10 principaux clients et les statistiques de vente, et plus encore.
 
-Les traitements en lot sont plus ou moins identiques aux rapports mais ils ont pour objectif d'exécuter un processus. Par exemple, le traitement en lot **Créer des rappels** crée des rappels pour les clients ayant des paiements échus.  
+Les traitements en lot et les objets XMLport sont plus ou moins identiques aux rapports mais ils ont pour objectif d'exécuter un processus ou d'exporter des données. Par exemple, le traitement en lot **Créer des rappels** crée des rappels pour les clients ayant des paiements échus.  
 
 > [!NOTE]
-> Cette rubrique fait principalement référence aux « rapports », mais des informations similaires s'appliquent aux traitements en lot.
+> Cette rubrique fait référence surtout aux « rapports », mais des informations similaires s'appliquent aux traitements en lot et aux objets XMLport.
 
 Vous pouvez rechercher des rapports dans l'onglet **Rapports** sur les pages sélectionnées, ou utiliser la recherche ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") pour rechercher les rapports par nom.
 
+## <a name="specifying-the-data-to-include-in-reports"></a>Définition des données à inclure dans les rapports
+Lorsque vous ouvrez un rapport, un traitement en lot ou un XMLport, une page de demande s'affiche généralement pour vous permettre de définir plusieurs options et filtres qui déterminent les éléments à inclure dans le rapport.
 
-## <a name="specifying-the-data-to-include-in-the-report"></a>Définition des données à inclure dans le rapport
-Lorsque vous ouvrez un rapport, une page s'affiche généralement pour vous permettre de définir plusieurs options et filtres qui déterminent les éléments à inclure dans le rapport. Cette page est appelée la page de demande du rapport. Par exemple, la page de demande du rapport vous permet de créer un rapport pour un client spécifique, une plage de dates spécifique, ou encore de définir l'ordre des informations dans le rapport. Voici un exemple de page de demande du rapport :
-
-![Options de rapport](media/report_options.png "Options de rapport")
+Vous devez définir des filtres dans un rapport de la même manière que vous le faites sur des listes. Pour plus d'informations, reportez-vous à la rubrique [Filtrage](ui-enter-criteria-filters.md#-filtering).
 
 > [!Caution]
-> La section **Afficher résultats** sur une page de demande propose une fonctionnalité de filtrage générique pour les rapports. Ces filtres sont optionnels.<br /><br /> Certains rapports ignoreront ces filtres, ce qui signifie que quel que soit le filtre défini dans la section **Afficher résultats**, la sortie du rapport est identique. Il est impossible de fournir une liste des champs ignorés dans les rapports, vous devez donc expérimenter avec des filtres lorsque vous les utiliserez.<br /><br />
+> La section **Filtrer la liste par** sur une page de demande fournit une capacité de filtrage générique pour les rapports. Ces filtres sont optionnels.<br /><br /> Certains rapports ignoreront ces filtres, ce qui signifie que quel que soit le filtre défini dans la section **Filtrer la liste par**, la sortie du rapport est identique. Il est impossible de fournir une liste des champs ignorés dans les rapports, vous devez donc expérimenter avec des filtres lorsque vous les utiliserez.<br /><br />
 **Exemple** : Lorsque vous utilisez le traitement en lot **Créer rappels**, un filtre pour le champ **Écritures client** de **Niveau dernier rappel émis** sera ignoré, car les filtres sont fixes pour ce traitement en lot.
 
-### <a name="SavedSettings"></a>Utilisation des paramètres enregistrés
-Avec certains rapports, selon la manière dont ils sont conçus, la page de rapport peut inclure la section **Paramètres enregistrés** qui contient une ou plusieurs entrées dans la zone **Utiliser les valeurs par défaut de**. Les entrées de cette zone sont appelées *paramètres enregistrés*. Un paramètre enregistré est fondamentalement un groupe prédéfini d'options et de filtres que vous pouvez appliquer au rapport avant d'en afficher un aperçu ou de l'envoyer vers un fichier. L'écriture de paramètres enregistrés appelée **Options et filtres récemment utilisés** est toujours disponible. Cette écriture permet de faire en sorte que le rapport réutilise les options et les filtres utilisés la dernière fois que vous l'avez consulté.
+## <a name="SavedSettings"></a>Utilisation des paramètres enregistrés
+La page de demande peut inclure la section **Paramètres enregistrés** qui contient une ou plusieurs entrées dans la zone **Utiliser les valeurs par défaut de**. Un paramètre enregistré est fondamentalement un groupe prédéfini d'options et de filtres que vous pouvez appliquer au rapport avant d'en afficher un aperçu ou de l'envoyer vers un fichier. L'écriture de paramètres enregistrés appelée **Options et filtres récemment utilisés** est toujours disponible. Cette écriture permet de faire en sorte que le rapport utilise les options et les filtres qui ont été utilisés la dernière fois que vous l'avez utilisé.
 
-Le fait d'utiliser les paramètres enregistrés est une façon rapide et fiable de générer de façon cohérente des états qui contiennent les données adéquates. Après avoir défini la zone **Utiliser les valeurs par défaut de** sur une entrée de paramètres enregistrés, vous pouvez modifier les options et les filtres avant d'afficher un aperçu ou d'enregistrer le rapport. Vos modifications ne seront pas enregistrées dans l'entrée de paramètres enregistrés que vous avez sélectionnée, mais elles seront sauvegardées dans la zone **Options et filtres récemment utilisés**.
+Le fait d'utiliser les paramètres enregistrés est une façon rapide et fiable de générer de façon cohérente des états qui contiennent les données adéquates. Après avoir défini la zone **Utiliser les valeurs par défaut de** sur une entrée de paramètres enregistrés, vous pouvez modifier les options et les filtres avant d'afficher un aperçu ou d'enregistrer le rapport. Vos modifications ne seront pas enregistrées dans l'entrée de paramètres enregistrés que vous avez sélectionnée, mais elles seront sauvegardées dans l'entrée **Options et filtres récemment utilisés**.
 
 >[!NOTE]
->Si vous êtes un administrateur, vous pouvez créer et gérer les paramètres enregistrés des rapports pour tous les utilisateurs. Pour plus d'informations, voir [Gestion des paramètres enregistrés dans les rapports](reports-saving-reusing-settings.md).
-
-### <a name="setting-options-and-filters"></a>Définition des options et des filtres
-Si vous souhaitez limiter davantage ou localiser les données incluses dans un rapport, vous pouvez définir des options et des filtres supplémentaires.
-
-Les filtres vous permettent d'afficher les données selon des critères spécifiques. Les filtres sont regroupés selon l'entité à laquelle ils appartiennent, par exemple **Client** dans l'illustration ci-dessus. Vous spécifiez un filtre en définissant la zone **Où** sur le champ de filtre, puis en ajoutant les critères dans la zone **est :**.
-
-Vous pouvez ajouter davantage de filtres en renseignant les cases **Et** et **est**. Lorsque vous avez plusieurs filtres, seuls les résultats qui répondent aux critères de tous les filtres seront inclus dans le rapport.
-
-Selon le champ de type que vous filtrez, vous pouvez spécifier les critères de filtre pour rechercher une correspondance exacte, une correspondance partielle, une plage de valeurs, etc. Pour obtenir de l'aide sur la configuration des filtres, voir :
--   [filtres](ui-enter-criteria-filters.md#FilterCriteria) ;
--   [Utilisation de dates civiles et les heures](ui-enter-date-ranges.md)
+>Si vous êtes un administrateur, vous pouvez créer et gérer les paramètres enregistrés des rapports pour tous les utilisateurs. Pour plus d'informations, voir [Gérer les paramètres enregistrés pour les rapports et les traitements en lot](reports-saving-reusing-settings.md).
 
 ## <a name="previewing-a-report"></a>Affichage de l'aperçu d'un rapport
-Sélectionnez **Aperçu** pour visualiser le rapport dans le navigateur Internet. Pointez un zone du rapport pour afficher la barre de menus.  
-
-![Barre d'outils Aperçu du rapport](media/report_viewer.png "Barre d'outils Aperçu du rapport")
-
-Utilisez la barre de menus pour :
+Cliquez sur le bouton **Aperçu** pour afficher le rapport. Utilisez la barre de menus dans l'aperçu du rapport pour :
 
 -   Naviguer entre les pages
 -   Effectuer un zoom avant et arrière
@@ -76,14 +60,13 @@ Utilisez la barre de menus pour :
 -   Téléchargez un fichier PDF sur votre ordinateur ou votre réseau.
 -   Imprimer
 
-
 ## <a name="saving-a-report"></a>Enregistrement d'un rapport
-Vous pouvez enregistrer un rapport dans un document PDF, un document Microsoft Word ou un document Microsoft Excel en sélectionnant **Envoyer à**, puis en effectuant votre sélection.
+Vous pouvez enregistrer un rapport dans un document PDF, un document Microsoft Word ou un document Microsoft Excel en sélectionnant le bouton **Envoyer à**, puis en effectuant votre sélection.
 
 ## <a name="ScheduleReport"></a> Programmation d'un rapport à exécuter
-Vous pouvez programmer un rapport à exécuter à une date et une heure spécifiques. Les rapports prévus sont entrés dans la file d'attente projets et traités au moment prévu, comme les autres projets. Vous pouvez choisir de sauvegarder le rapport traité dans un fichier, par exemple, Excel, Word ou PDF, de l'imprimer sur une imprimante sélectionnée ou de traiter le rapport uniquement. Si vous choisissez d'enregistrer le rapport dans un fichier, le rapport traité est envoyé à la zone **Boîte de réception rapport** sur votre tableau de bord, où vous pouvez l'afficher.
+Vous pouvez programmer ou traiter en lot un rapport à exécuter à une date et une heure spécifiques. Les rapports ou les traitements en lot programmés sont entrés dans la file d'attente des travaux et traités au moment programmé, comme les autres projets. Vous devez choisir l'option **Programmé** après avoir cliqué sur le bouton **Envoyer à**, puis vous devez entrer des informations telles que l’imprimante, l’heure et la date. Le rapport est alors ajouté à la file d'attente des travaux et sera exécuté au moment spécifié. Lorsque le rapport a été traité, l'article est supprimé de la file d'attente projets. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
-Vous pouvez programmer un rapport lorsque vous l'ouvrez. Vous devez sélectionner **Planifier** et entrer des informations telles que l'imprimante, ainsi que la date et l'heure. Le rapport est alors ajouté à la file d'attente des travaux et sera exécuté au moment spécifié. Lorsque le rapport a été traité, l'article est supprimé de la file d'attente projets. Si vous avez enregistré l'état traité dans un fichier, il est disponible dans la **Boîte de réception état**.
+Vous pouvez choisir de sauvegarder le rapport traité dans un fichier, par exemple, Excel, Word ou PDF, de l'imprimer sur une imprimante sélectionnée ou de traiter le rapport uniquement. Si vous choisissez d'enregistrer le rapport dans un fichier, le rapport traité est envoyé à la zone **Boîte de réception rapport** sur votre tableau de bord, où vous pouvez l'afficher.
 
 ## <a name="PrintReport"></a>Impression d'un rapport
 Vous pouvez imprimer un rapport à l'aide du bouton **Imprimer** sur la page d'options qui s'affiche lorsque vous ouvrez le rapport ou dans la barre de menu dans l'aperçu.  
@@ -93,10 +76,11 @@ Spécifiquement pour la version thaïlandaise de [!INCLUDE[prodshort](includes/p
 
 Sinon, vous pouvez demander à votre administrateur de créer une présentation rapport Word pour vos rapports les plus utilisés. Pour plus d'informations, voir [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md).  
 
-## <a name="changing-the-layout-and-look-of-a-report"></a>Modification de la présentation et de l'apparence d'un rapport
-Une présentation de rapport contrôle les éléments affichés sur un rapport, leur agencement et leur mise en forme. Si vous souhaitez changer de présentation, voir [Modification de la présentation actuellement utilisée sur un rapport](ui-how-change-layout-currently-used-report.md). Ou, si vous souhaitez personnaliser votre propre présentation de rapport, voir [Créer et modifier une présentation de rapport personnalisée](ui-how-create-custom-report-layout.md).
+## <a name="changing-report-layouts"></a>Modification des présentations de rapport
+Une présentation de rapport contrôle les éléments affichés sur un rapport, leur agencement et leur mise en forme. Si vous souhaitez changer de présentation, voir [Modifier la présentation actuelle du rapport](ui-how-change-layout-currently-used-report.md). Ou, si vous souhaitez personnaliser votre propre présentation de rapport, voir [Créer et modifier une présentation de rapport personnalisée](ui-how-create-custom-report-layout.md).
 
 ## <a name="see-also"></a>Voir aussi
 [Spécifier la sélection de l'imprimante pour les états](ui-specify-printer-selection-reports.md)  
+[Utilisation de dates civiles et les heures](ui-enter-date-ranges.md)  
 [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

@@ -9,17 +9,21 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: numbers, numbering
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: a650bb8dec324e94801da828d7e967b514ae3ca1
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 65d4562e133d8fa2383bd1fb5092ea001d577396
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1251387"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2311414"
 ---
 # <a name="create-number-series"></a>Créer des séries de numéros
 Pour chaque compagnie que vous configurez, vous devez affecter des codes d'identification uniques aux éléments tels que les comptes du grand livre, les comptes client et fournisseur, les factures et d'autres documents. La numérotation est importante, pas uniquement pour l'identification. Un système de numérotation bien conçu facilite également la gestion et l'analyse de la compagnie et permet de réduire les erreurs de saisie des données.
+
+> [!Important]
+> Par défaut, les écarts dans les séries de numéros ne sont pas autorisés car l'historique exact des transactions financières doit être disponible pour audit, conformément à la loi, et doit donc suivre une séquence ininterrompue sans numéros supprimés.<br /><br />
+Si vous souhaitez autoriser des écarts dans certaines séries de numéros, commencez par consulter l'auditeur ou le responsable de la comptabilité pour vous assurer de respecter les exigences légales en vigueur dans votre pays/région. Pour plus d'informations, voir [Écarts dans les séries de numéros](ui-create-number-series.md#gaps-in-number-series).
 
 > [!NOTE]  
 >   Il est recommandé d'utiliser les mêmes codes série de numéros que ceux répertoriés sur la page **Liste de séries de numéros** de la compagnie de démonstration CRONUS. Des codes tels que *P-INV+* ne vont pas vous paraître significatifs au premier abord, mais [!INCLUDE[d365fin](includes/d365fin_md.md)] dispose d'un certain nombre de paramètres par défaut qui dépendent de ces codes série de numéros.
@@ -30,6 +34,9 @@ Vous devez généralement définir votre série de numéros pour insérer automa
 
 Si vous voulez utiliser plusieurs codes série de numéros pour un type de données de base (par exemple, si vous voulez utiliser différentes séries de numéros pour diverses catégories d'articles), vous pouvez utiliser des liens de séries de numéros.
 
+## <a name="gaps-in-number-series"></a>Écarts dans les séries de numéros
+Tous les enregistrements que vous créez dans [!INCLUDE[d365fin](includes/d365fin_md.md)] ne sont pas des transactions financières qui doivent utiliser une numérotation séquentielle. Les fiches client, les devis, et les activités d'entrepôt sont des exemples d'enregistrements auxquels un numéro d'une série de numéros est attribué, mais qui ne sont pas soumis à l'audit financier et/ou peuvent être supprimés. Pour ces séries de numéros, vous pouvez cocher la case **Autoriser les écarts dans les numéros** sur la page **Lignes série de n°**. Pour plus d’informations, voir [Pour créer des séries de numéros](ui-create-number-series.md#to-create-a-new-number-series).
+
 ## <a name="behavior-of-the-no-field-on-documents-and-cards"></a>Comportement du champ N° sur des documents et des fiches
 Sur les documents de vente, d'achat et de transfert ainsi que sur toutes les fiches, le champ **N°** peut être renseigné automatiquement depuis une série de numéros ou manuellement et peut être configuré pour être invisible.
 
@@ -38,9 +45,9 @@ Le champ **N°** peut être renseigné de trois manières :
 1. S'il existe une seule série de numéros pour le type de document ou de fiche pour laquelle la case **N° par défaut** est cochée et la case **N° manuels** n'est pas cochée, alors le champ est renseigné automatiquement avec le numéro suivant de la série, et le champ **N°** n'est pas visible.
 
     > [!NOTE]  
-    > Si la série de numéros ne fonctionne pas, par exemple parce qu'elle manque de numéros, le champ **N°** est visible et vous pouvez saisir manuellement un numéro ou résoudre les problèmes sur la page **Liste de souches de numéros**.
+    > Si la série de numéros ne fonctionne pas, par exemple parce qu'elle manque de numéros, le champ **N°** est visible et vous pouvez saisir manuellement un numéro ou résoudre les problèmes sur la page **Souches de n°**.
 
-2. S'il existe plusieurs séries de numéros pour le type de document ou de fiche, et si la case **N° par défaut** n'est pas cochée pour la série de numéros qui est actuellement affectée, le champ **N°** est visible, et vous pouvez accéder à la page **Liste Série de n°** et sélectionnez la série de numéros que vous souhaitez utiliser. Le numéro suivant dans la souche sélectionnée est inséré dans le champ **N°** .
+2. S'il existe plusieurs séries de numéros pour le type de document ou de fiche, et si la case **N° par défaut** n'est pas cochée pour la série de numéros qui est actuellement affectée, le champ **N°** est visible, et vous pouvez accéder à la page **Série de numéros** et sélectionnez la série de numéros que vous souhaitez utiliser. Le numéro suivant dans la souche sélectionnée est inséré dans le champ **N°** .
 
 3. Si vous n'avez défini aucune série de numéros pour le type de document ou de fiche ou si le champ **N° manuels** est sélectionné pour la série de numéros, alors le champ **N°** est visible et vous devez saisir manuellement les numéros. Vous pouvez entrer au maximum 20 caractères, des chiffres ou des lettres.
 
@@ -53,6 +60,9 @@ Lorsque vous ouvrez un nouveau document ou une nouvelle fiche pour lequel il exi
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Souches de n°**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Sur la nouvelle ligne, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+4. Sélectionnez l'option **Lignes**.
+5. Sur la page **Lignes série de n°**, remplissez les champs pour définir l’utilisation réelle et le contenu de la série de numéros créée à l’étape 2.
+6. Répétez l'étape 5 pour autant d'utilisations différentes de la série de numéros dont vous avez besoin. Le champ **Date début** définit quelle ligne de série de numéros est active.
 
 ## <a name="to-set-up-where-a-number-series-is-used"></a>Pour définir l'emplacement d'utilisation de la série de numéros
 La procédure suivante indique comment définir des séries de numéros pour la zone Ventes. La procédure est identique pour d'autres secteurs.

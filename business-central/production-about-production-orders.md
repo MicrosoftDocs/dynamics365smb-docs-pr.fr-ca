@@ -10,21 +10,21 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: b02aa262089d5c341fb3b535f2af82c7085e99ee
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.openlocfilehash: 6a99066c784a6526bf06c816431b912b1db73f06
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1252974"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2313451"
 ---
 # <a name="about-production-orders"></a>À propos des ordres de fabrication
 Les ordres de fabrication permettent de gérer la conversion de matières achetées en articles fabriqués. La gamme de bons de production utilise divers ateliers ou unités de production dans l'atelier.  
 
 Avant de commencer la production, la plupart des compagnies effectuent une planification des approvisionnements, généralement une fois par semaine, pour calculer le nombre de bons de production et de bons de commande à exécuter pour répondre à une demande de vente de la semaine en cours. Les commandes achat fournissent les composants requis en fonction de la nomenclature de production pour produire les produits finis.
 
-Les ordres de fabrication sont les composants centraux de la fonctionnalité de fabrication du programme et contiennent les informations suivantes :  
+Les bons de production sont les composantes centrales de la fonctionnalité de fabrication de l'application et contiennent les informations suivantes :  
 
 -   produits planifiés pour fabrication ;  
 -   matières requises pour les ordres de fabrication planifiés ;  
@@ -63,7 +63,7 @@ Pour plus d'informations, voir [Suivre les relations entre l'offre et la demande
 Les ordres de fabrication créés par d'autres moyens ne sont pas automatiquement réservés et tracés.   
 
 ## <a name="production-order-status"></a>État du bon de production  
-L'état du bon de production contrôle la manière dont le bon de production se comporte dans le programme. La forme et le contenu de la production sont dictés par l'état de la commande. Les bons de production sont affichés sur différentes pages en fonction de leur état. Vous ne pouvez pas modifier le statut d'un ordre de fabrication manuellement ; vous devez utiliser la fonction **Modifier statut**.  
+L'état du bon de production contrôle la manière dont le bon de production se comporte dans l'application. La forme et le contenu de la production sont dictés par l'état de la commande. Les bons de production sont affichés sur différentes pages en fonction de leur état. Vous ne pouvez pas modifier le statut d'un ordre de fabrication manuellement ; vous devez utiliser la fonction **Modifier statut**.  
 
 ### <a name="simulated-production-order"></a>Bon de production simulé  
 Le bon de production simulé est unique en raison des caractéristiques suivantes :  
@@ -115,9 +115,9 @@ Après qu'un bon de production a été créé et programmé, il doit être libé
 Ces informations peuvent être enregistrées manuellement ou via une génération d'état automatique, en fonction des articles définis dans le champ Méthode consommation.  
 
 ### <a name="material-consumption"></a>Consommation matière  
-Le programme offre une série d'options concernant la manière dont une compagnie manufacturière peut enregistrer une consommation matière. Par exemple, une consommation matière peut être enregistrée manuellement, ce qui peut être souhaitable en cas de remplacements fréquents de composantes ou de rebuts plus importants que prévu.  
+L'application offre une série d'options concernant la manière dont une compagnie manufacturière peut enregistrer une consommation matière. Par exemple, une consommation matière peut être enregistrée manuellement, ce qui peut être souhaitable en cas de remplacements fréquents de composantes ou de rebuts plus importants que prévu.  
 
-La consommation de matières peut être traitée via le journal consommation, mais peut également être enregistrée automatiquement par le programme à l'aide du processus de génération de rapport automatique. Les méthodes de génération de rapport sont les suivantes :  
+La consommation de matières peut être traitée via le journal consommation, mais peut également être enregistrée automatiquement par l'application à l'aide du processus de génération de rapport automatique. Les méthodes de génération de rapport sont les suivantes :  
 
 -   Manuel  
 -   Suivant  
@@ -143,7 +143,7 @@ L'avantage de la consommation automatique est qu'elle réduit considérablement 
 - Consommation en amont de l'ordre entier  
 
 #### <a name="automatic-reporting---forward-flush-the-entire-order"></a>Génération de rapport automatique - Consommation en aval de l'ordre entier  
-Si vous consommez en aval le bon de production au début du projet, le comportement du programme est très similaire à une consommation manuelle. La principale différence réside dans le fait que la consommation est effectuée automatiquement.  
+Si vous consommez en aval le bon de production au début du projet, le comportement de l'application est très similaire à une consommation manuelle. La principale différence réside dans le fait que la consommation est effectuée automatiquement.  
 
 - Le contenu entier de la nomenclature de production est consommé et déduit de l'inventaire lors de l'actualisation du bon de production libéré.  
 - La quantité consommée est la quantité par assemblage indiquée dans la nomenclature de production, multipliée par le nombre d'articles parents que vous créez.  
@@ -185,9 +185,9 @@ Aucun composant n'est prélevé tant que le statut de l'ordre de fabrication lan
 La consommation en amont du bon de production tout entier requiert la même configuration que pour la consommation en aval : la méthode de génération de rapport doit être définie sur amont dans la fiche article de tous les articles de la nomenclature parente pour que le rapport soit généré. En outre, tous les codes lien itinéraire doivent être supprimés de la nomenclature de production.  
 
 ### <a name="production-output"></a>Production  
-Le programme offre la possibilité de suivre le temps consacré à un ordre de fabrication, en plus de l'enregistrement de la quantité produite. Ces informations permettent de déterminer plus précisément les coûts de production. De même, les fabricants utilisant un système d'évaluation standard peuvent souhaiter enregistrer des informations réelles afin de pouvoir développer de meilleures normes.  
+L'application offre la possibilité de suivre le temps consacré à un bon de production, en plus de l'enregistrement de la quantité produite. Ces informations permettent de déterminer plus précisément les coûts de production. De même, les fabricants utilisant un système d'évaluation standard peuvent souhaiter enregistrer des informations réelles afin de pouvoir développer de meilleures normes.  
 
-La sortie peut être traitée via le journal de sortie, mais aussi enregistrée automatiquement par le programme. Le programme copie la méthode de consommation de la fiche unité de production ou atelier vers l'itinéraire du bon de production lors de l'actualisation. Comme pour la consommation matière, trois méthodes de génération de rapport s'appliquent à la production :  
+La sortie peut être traitée via le journal de sortie, mais aussi enregistrée automatiquement par l'application. L'application copie la méthode de consommation de la fiche unité de production ou atelier vers l'itinéraire du bon de production lors de l'actualisation. Comme pour la consommation matière, trois méthodes de génération de rapport s'appliquent à la production :  
 
 - Manuel  
 - Suivant  
