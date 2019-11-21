@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 127d0dd747fa29926852be9e99e36d992e7d0ea1
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: fc8f52e5ef9fdeb8a2add9cf030a348012f25366
+ms.sourcegitcommit: 02f1633213793bfc040ad0d2a96fe76572215aa5
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2305726"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "2798509"
 ---
 # <a name="setting-up-finance"></a>Configuration de Finance
 Pour vous aider à démarrer rapidement, [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut des configurations standard pour la plupart des processus financiers. Si vous devez modifier les configurations en fonction de votre activité, n'hésitez pas. Par exemple, à partir du tableau de bord, vous pouvez utiliser un guide de configuration assistée pour configurer la taxe de vente en fonction de votre situation géographique.  
@@ -33,7 +33,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Créer des tableaux d'analyse et définir des catégories de compte pour définir le contenu des graphiques et rapports financiers, tels que les rapports Bilan et État des résultats.|[Préparer la génération de rapports financiers avec des tableaux d'analyse et des catégories de compte](bi-how-work-account-schedule.md)|
 |Configurer une valeur de tolérance selon laquelle le système ferme une facture même si le paiement, tenant compte d'éventuels escomptes, ne couvre pas intégralement le montant de la facture.|[Utilisation des tolérances de règlement et des tolérances d'escompte de paiement](finance-payment-tolerance-and-payment-discount-tolerance.md)|
 | Définir les périodes fiscales. |[Ouvrir un nouvel exercice financier](finance-how-open-new-fiscal-year.md) |
-| Définissez comment déclarer les montants de taxe sur la valeur ajoutée que vous avez recueillis sur les ventes aux autorités fiscales. |[Configuration des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md)|
+| Définissez comment déclarer les montants de taxe sur la valeur ajoutée que vous avez recueillis sur les ventes aux autorités fiscales. |[Configuration de la TVA](finance-setup-vat.md)|
 |Se préparer à gérer la TVA non réalisée en association avec des méthodes comptables basées sur la trésorerie.|[Configurer la TVA non réalisée pour la comptabilité basée sur la trésorerie](finance-setup-unrealized-vat.md)|
 | Définissez vos fonctionnalités Ventes et Achats pour gérer les paiements dans des devises étrangères.|[Activer l'affectation d'écritures en devises différentes](finance-how-enable-application-ledger-entries-different-currencies.md)
 |Définissez une ou plusieurs devises additionnelles afin que les montants soient automatiquement reportés en $ et dans une devise de report additionnelle sur chaque écriture et sur d'autres écritures.|[Configurer une devise de report additionnelle](finance-how-setup-additional-currencies.md)|

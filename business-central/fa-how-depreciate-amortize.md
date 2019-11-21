@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: write down
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 9bf9de93ca218d00cc1db467c74e0af9942f21d0
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 93411d5469373a1084579b1235dcd2befdf921a8
+ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2302846"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2554288"
 ---
 # <a name="depreciate-or-amortize-fixed-assets"></a>Amortir des immobilisations
 L'amortissement permet de ventiler le coût des immobilisations, telles que les machines et le matériel, sur leur durée d'amortissement. Vous devez définir la méthode d'amortissement de chaque immobilisation.  
@@ -51,7 +51,7 @@ Une fois par mois, ou à la fréquence de votre choix, vous pouvez lancer le tra
 2. Créez une ligne journal initiale et complétez les champs, le cas échéant.  
 3. Dans le champ **Type compta. immo**, sélectionnez **Amortissement**.  
 4. Sélectionnez l'action **Insérer contrepartie immo.**. Une seconde ligne journal est créée pour le compte de contrepartie qui est configuré pour le report de l'amortissement. Pour plus d'informations, voir [Pour configurer des groupes de report immobilisation](fa-how-setup-general.md#to-set-up-fixed-asset-posting-groups).
-5. Sous l'onglet **Accueil**, sélectionnez **Reporter** pour reporter le journal.  
+5. Choisissez l'action **Reporter** pour reporter le journal.  
 
 Si vous avez configuré des clés d'affectation immobilisation pour affecter des montants entre plusieurs départements ou plusieurs projets, les montants sont affectés lors du report. Pour en savoir plus, voir [Configurer des informations générales sur les immobilisations](fa-how-setup-general.md).  
 
@@ -62,7 +62,7 @@ Lorsqu'une immobilisation est utilisée par plusieurs départements, vous pouvez
 2. Créez une feuille initiale et complétez les champs, le cas échéant.
 3. Dans le champ **Type compta. immo**, sélectionnez **Ventilation**.  
 4. Sélectionnez l'action **Insérer contrepartie immo.**. Une seconde ligne journal est créée pour le compte de contrepartie qui est configuré pour le report de l'affectation.  
-5. Sous l'onglet **Accueil**, sélectionnez **Valider** pour valider la feuille.  
+5. Choisissez l'action **Reporter** pour reporter le journal.  
 
 ## <a name="use-duplication-lists-to-prepare-to-post-to-multiple-depreciation-books"></a>Utilisez les listes de duplication pour préparer le report vers plusieurs registres amortissement
 Lorsque vous renseignez les lignes journal à reporter dans un registre amortissement, vous pouvez dupliquer les lignes dans un autre journal afin de pouvoir reporter dans un autre registre amortissement. Pour en savoir plus, voir [Pour reporter des écritures vers différents registres amortissement](fa-how-depreciate-amortize.md#to-post-entries-to-different-depreciation-books).

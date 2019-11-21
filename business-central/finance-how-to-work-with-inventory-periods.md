@@ -12,17 +12,17 @@ ms.workload: na
 ms.search.keywords: inventory, periods
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 64c47b78555e1364bbc0e1d4be97ed4910bca04a
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 1a88456e91b3398ac9cae1b64ebdd80644b5d0aa
+ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2305865"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2554048"
 ---
 # <a name="work-with-inventory-periods"></a>Utiliser les périodes d'inventaire
 Les périodes d'inventaire sont des périodes au cours desquelles vous pouvez reporter des modifications d'inventaire. Une période d'inventaire est définie par la date à laquelle elle se termine (date fin). Lorsque vous fermez une période d'inventaire, vous ne pouvez pas reporter de modifications d'inventaire, qu'elles soient prévues ou facturées, avant cette date fin. Vous ne pouvez pas reporter de nouvelles valeurs dans l'inventaire avant la date de fin. Si vous avez des écritures du grand livre d'articles ouvertes dans la période fermée, ce qui signifie des quantités positives qui n'ont pas encore été affectées sur des transactions sortantes, vous pouvez encore affecter des quantités sortantes sur ces écritures, même si la période est fermée.  
 
-Les sections suivantes décrivent comment :  
+Les sections suivantes décrivent comment :
 
 * Créer des périodes inventaire.  
 * Fermer des périodes d'inventaire.  
@@ -45,7 +45,7 @@ Vous pouvez fermer toute période d'inventaire, pour autant que les conditions s
 Cela signifie que toutes les quantités de transaction sortante, telles que celles des documents de vente, transferts sortants, factures vente, retours achat ou notes de crédit achat doivent être affectées à la quantité en inventaire.  
 
 ### <a name="to-close-an-inventory-period"></a>Pour fermer une période d'inventaire  
-1. Avant de clôturer une période inventaire, exécutez le traitement par lot **Ajuster coût écritures article** pour vous assurer que tous les ajustements des coûts sont validés. Sur l'onglet **Actions**, dans le groupe **Fonctions**, choisissez **Ajuster coût écritures article**.  
+1. Avant de fermer une période d'inventaire, choisissez l'action **Ajuster coût écritures article** pour vous assurer que tous les ajustements des coûts sont reportés.
 
      Exécutez l'état **Clôturer période inventaire – Test** pour déterminer s'il y a des écritures article sortant ouvertes dans la période inventaire ou des articles dont le coût n'a pas encore été ajusté.  
 2. Choisissez l'action **Fermer la période d'inventaire - Test**.  

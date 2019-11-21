@@ -10,21 +10,23 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: warehouse, stock
-ms.date: 10/01/2019
+ms.date: 11/12/2019
 ms.author: SorenGP
-ms.openlocfilehash: bf81f57aad5178a7f875381b274e43cab50899ad
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 36c5446a2297dd0208104d22a7d2fd96077b3590
+ms.sourcegitcommit: 02f1633213793bfc040ad0d2a96fe76572215aa5
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2309886"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "2798411"
 ---
 # <a name="set-up-general-inventory-information"></a>Configurer des informations générales relatives à l'inventaire
 Vous pouvez spécifier votre configuration d'inventaire générale sur la page **Configuration de l'inventaire**.
 
 ## <a name="to-set-up-general-inventory-information"></a>Pour configurer des informations générales relatives à l'inventaire
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration de l'inventaire**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration inventaire**, puis sélectionnez le lien associé.
 2. Sur la page **Configuration de l'inventaire**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+
+Pour des informations détaillées sur les champs d'évaluation du coût, **Report coûts automatique** et **Report coût prévu au GL**, consultez [Rapprocher les coûts de l'inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md) et [Détails de conception : report du coût prévu](design-details-expected-cost-posting.md).
 
 Vous pouvez inclure un délai entrepôt par défaut pour votre inventaire sur la page **Configuration de l'inventaire** ou pour votre emplacement dans le calcul de la promesse de livraison sur la ligne achat. Pour plus d'informations, voir [Calculer des dates promesse livraison](sales-how-to-calculate-order-promising-dates.md).  
 

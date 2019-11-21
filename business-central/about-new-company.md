@@ -8,20 +8,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: company, setup wizard
-ms.date: 10/01/2019
+ms.date: 11/01/2019
 ms.author: edupont
-ms.openlocfilehash: e22b93182627a5954b2aa2f1fb1fa4938d89be89
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 70bd78244c4d8570a5e9b8fbe2d1e8a4c74d7530
+ms.sourcegitcommit: 49309bdff9b680a35032b355fe97c565845dba15
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2300747"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2695129"
 ---
 # <a name="creating-new-companies-in-included365finincludesd365fin_mdmd"></a>Création de compagnies dans [!INCLUDE[d365fin](includes/d365fin_md.md)]
-Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les conteneurs pour les données métier appartenant à une unité fonctionnelle ou une entité juridique sont désignés en tant que *compagnie*. Lorsque vous vous connectez à [!INCLUDE[d365fin](includes/d365fin_md.md)], une compagnie de démonstration et une compagnie vide vous sont attribuées, *Ma compagnie*. Le basculement entre compagnies est facile - accédez simplement à **Mes paramètres** et passez à l'autre compagnie. Vous pouvez également créer de nouvelles compagnies dans [!INCLUDE[d365fin](includes/d365fin_md.md)], selon les besoins de votre compagnie. Lorsque vous créez une compagnie, un guide de configuration assistée vous permet de mettre en place les fondements. Ensuite, vous pouvez importer des données appropriées à partir de votre système hérité ou d'une autre compagnie dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les conteneurs pour les données métier appartenant à une unité fonctionnelle ou une entité juridique sont désignés en tant que *compagnie*. Lorsque vous vous connectez à [!INCLUDE[d365fin](includes/d365fin_md.md)], une compagnie de démonstration et une compagnie vide vous sont attribuées, *Ma compagnie*. Le basculement entre compagnies est facile : accédez simplement à **Mes paramètres** et passez à l'autre compagnie. Vous pouvez également créer de nouvelles compagnies dans [!INCLUDE[d365fin](includes/d365fin_md.md)], selon les besoins de votre activité. Lorsque vous créez une compagnie, un guide de configuration assistée vous permet de mettre en place les fondements. Ensuite, vous pouvez importer des données appropriées à partir de votre système hérité ou d'une autre compagnie dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
-## <a name="create-new-company"></a>Créer une nouvelle compagnie
-Si vous décidez d'ajouter une compagnie à votre [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez utiliser le guide de configuration assistée **Créer une nouvelle compagnie** pour démarrer. L'assistant de configuration est disponible à partir de la page **Compagnies** et depuis la zone de recherche dans le champ **Compagnie** sous **Mes paramètres**.  
+## <a name="creating-a-new-company"></a>Création d'une compagnie
+Si vous décidez d'ajouter une compagnie à votre [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez utiliser le guide de configuration assistée **Créer une nouvelle compagnie** pour démarrer. L'assistant de configuration est disponible à partir de la page **Compagnies** et depuis la zone de recherche dans le champ **Compagnie** sur la page **Mes paramètres**.  
 
 L'assistant de configuration offre trois modèles :
 
@@ -39,6 +39,12 @@ Si vous souhaitez démarrer facilement avec une nouvelle compagnie, sélectionne
 >   Lorsque vous créez une compagnie, cela prend quelques minutes avant de pouvoir y accéder dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. L'état de configuration sur la page **Compagnies** s'affiche lorsque la nouvelle compagnie est prête pour vous. Ensuite, vous pouvez basculer vers la nouvelle compagnie en utilisant **Mes paramètres**.  
 
 Au cours de votre période d'évaluation de 30 jours, vous pouvez créer autant de compagnies que vous voulez, mais elles ne seront disponibles que durant cette période d'évaluation. Pour plus d'informations, contactez votre partenaire [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+
+## <a name="copying-a-company"></a>Copie d'une compagnie
+Sur la page **Compagnies**, vous pouvez utiliser l'action **Copier** pour créer une deuxième compagnie sur la base du contenu d’une compagnie existante. Ceci est utile, par exemple, lorsque vous souhaitez tester une compagnie sans perturber les données de production.
+
+> [!Important]
+> Cette fonction ne peut pas être utilisée pour sauvegarder une compagnie. La sauvegarde d'une compagnie commence par l'exportation de la base de données sous la forme d'un fichier .bacpac. Pour plus d'informations, voir [Exportation de bases de données](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-database-export) dans Aide dédiée à l'équipe IT et aux développeurs.
 
 ## <a name="company-setup"></a>Configuration de la compagnie
 Lorsque vous vous connectez à une nouvelle compagnie, l'Assistant **Configuration de la compagnie** s'exécute automatiquement et vous permet de démarrer. Il vous sera demandé des informations sur votre activité, telles que l'adresse, les coordonnées bancaires et le mode d'évaluation du stock. Ces informations sont nécessaires parce qu'elles servent de base dans plusieurs zones de [!INCLUDE[d365fin](includes/d365fin_md.md)], ce qui vous évitera de les configurer manuellement plus tard.  

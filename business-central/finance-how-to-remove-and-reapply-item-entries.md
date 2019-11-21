@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 3d9d602690b8d4ca7714b328759a705204c740ee
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 898548bd33bbc9a5a7ae7400c626bf7a7820bfd4
+ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2306062"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2554144"
 ---
 # <a name="remove-and-reapply-item-ledger-entries"></a>Supprimer et appliquer à nouveau des écritures article
 Sur la page **Feuille affectation**, vous pouvez visualiser et modifier manuellement certaines écritures affectation article qui sont créées automatiquement lors des transactions d'inventaire.  
@@ -61,7 +61,7 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
 ## <a name="to-reapply-an-item-application-by-using-the-application-worksheet"></a>Pour appliquer à nouveau une affectation article en utilisant le journal affectation  
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille affectation**, puis sélectionnez le lien associé.  
 2.  La page **Feuille affectation** s'ouvre en affichant les écritures article existantes de tous les articles.  
-3.  Pour appliquer à nouveau des écritures qui ont été supprimées depuis l'ouverture de la feuille, sélectionnez l'écriture du grand livre d'articles que vous souhaitez appliquer à nouveau. Sur l'onglet **Actions** , dans le groupe **Fonctions**, choisissez **Relettrer**.  
+3.  Pour affecter à nouveau des écritures supprimées depuis l'ouverture de la feuille, sélectionnez l'écriture article que vous souhaitez affecter à nouveau et choisissez l'action **Affecter à nouveau**.  
 
     > [!NOTE]  
     >  Cette nouvelle affectation vers le solde de départ se produit aussi automatiquement lorsque vous fermez la page **Feuille affectation**.  

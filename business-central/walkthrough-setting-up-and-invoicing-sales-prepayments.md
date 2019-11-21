@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: f1724f95652194e426a353b4ebb89c54ef384754
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: d9fdc5deab54647f5a4387b62862fd45bc36dd39
+ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2310550"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2554630"
 ---
 # <a name="walkthrough-setting-up-and-invoicing-sales-prepayments"></a>Procédure pas à pas : configuration et facturation de paiements anticipés vente
 
@@ -169,7 +169,7 @@ Le jour suivant, le client appelle Susan et modifie sa commande. Il souhaite deu
 2.  Sur la ligne de l'article **1100**, dans le champ **Quantité**, entrez **2**.  
 
     Faites défiler pour afficher les champs de paiement anticipé. Le champ **Montant acompte HT** affiche à présent **630** et le champ **Montant fact. acompte HT** indique **315**. Ceci indique qu'il existe un montant de paiement anticipé supplémentaire qui n'a pas encore été facturé.  
-3.  Pour valider une facture pour le montant d'acompte supplémentaire, sur l'onglet **Actions**, dans le groupe **Validation**, sélectionnez **Acompte**, puis **Valider facture acompte**.  
+3.  Pour reporter une facture pour le montant paiement anticipé supplémentaire, choisissez l'action **Reporter facture paiement anticipé**.  
 
 ## <a name="applying-the-prepayments"></a>Affectation des paiements anticipés  
 Le client paie le montant des paiements anticipés. Arnie, qui travaille au département Comptabilité, enregistre le paiement et l'affecte aux factures paiement anticipé.  

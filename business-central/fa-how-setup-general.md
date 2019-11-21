@@ -9,12 +9,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: 20e934c3556f408a48e595e6c5ef4f46809aa742
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 898167c1b76a757dc4b6b06f8df64eef3a3c2b59
+ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2302726"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2554264"
 ---
 # <a name="set-up-general-fixed-assets-information"></a>Configurer des informations générales pour les immobilisations
 Avant de pouvoir gérer les immobilisations, vous devez configurer les comptes du grand livre par défaut, les clés d'affectation, les modèles journal et les lots pour le report et le reclassement des immobilisations. Vous pouvez classer les immobilisations par catégorie, telles que Corporelles et Incorporelles.
@@ -105,7 +105,7 @@ Si vous utilisez les immobilisations dans [!INCLUDE[d365fin](includes/d365fin_md
 
     Activez l'intégration dans le grand livre en procédant comme suit. Premièrement, assurez-vous que l'intégration dans le grand livre est désactivée pour tous les registres amortissement, puis reportez les écritures ouvertes, et enfin activez l'intégration dans le grand livre.  
 4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Registres amortissement**, puis sélectionnez le lien associé.  
-5. Sélectionnez le registre amortissement approprié. Sous l'onglet **Accueil**, dans le groupe **Gérer**, choisissez **Modifier** pour ouvrir la page **Fiche loi d'amortissement**.
+5. Sélectionnez le registre amortissement pertinent, puis choisissez l'action **Modifier** pour ouvrir la page **Fiche registre amortissement**.
 6. Sur le raccourci **Intégration**, assurez-vous que tous les champs sont vides en retirant toutes les coches. Si vous disposez de plusieurs registres amortissement, désactivez l'intégration avec le grand livre pour chacune d'elles.  
 7. Dans le journal immobilisation, entrez les lignes suivantes pour chaque immobilisation :
    * Ligne avec le coût d'acquisition.

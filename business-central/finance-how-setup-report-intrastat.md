@@ -12,20 +12,20 @@ ms.workload: na
 ms.search.keywords: electronic document, Intrastat, trade, EU, European Union
 ms.date: 10/01/2019
 ms.author: bholtorf
-ms.openlocfilehash: cdf0eb137984bbc1988677ca53991d75659c022a
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: ddcc935a6ae539ad82894d6153f7c7f4b6fdeb48
+ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2302198"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2554168"
 ---
-# <a name="how-to-set-up-and-report-intrastat"></a>Procédure : configurer et soumettre une déclaration Intrastat
+# <a name="set-up-and-report-intrastat"></a>Configurer et enregistrer un rapport Intrastat
 Toutes les compagnies de l'Union européenne doivent déclarer leurs échanges avec les autres pays/régions de l'Union européenne. Vous devez déclarer les mouvements de marchandises aux autorités statistiques de votre pays/région mensuellement et le rapport doit être remis aux autorités fiscales. Il s'agit de la déclaration Intrastat. La page **Journal Intrastat** permet de remplir des rapports Intrastat périodiques.  
 
 ## <a name="required-and-optional-setups"></a>Paramètres obligatoires et facultatifs
 Avant d'utiliser le journal intrastat pour enregistrer des informations Intrastat, plusieurs éléments doivent être configurés :  
 
-* **Configuration Intrastat** : la page Configuration Intrastat permet d'activer la déclaration Intrastat et de définir des valeurs par défaut. Vous pouvez spécifier si vous devez enregistrer la déclaration Intrastat à partir des livraisons (envois), des réceptions (arrivées) ou des deux, selon les seuils définis par vos réglementations locales. Vous pouvez également définir des types de transaction par défaut pour les documents classiques et de retour, utilisés pour la nature des rapports de transaction. 
+* **Configuration Intrastat** : la page Configuration Intrastat permet d'activer la déclaration Intrastat et de définir des valeurs par défaut. Vous pouvez spécifier si vous devez enregistrer la déclaration Intrastat à partir des livraisons (envois), des réceptions (arrivées) ou des deux, selon les seuils définis par vos réglementations locales. Vous pouvez également définir des types de transaction par défaut pour les documents classiques et de retour, utilisés pour la nature des rapports de transaction.
 * **Modèles de journal Intrastat** : Vous devez configurer les lots et les modèles de journal Intrastat que vous utiliserez. Comme la déclaration Intrastat doit être soumise mensuellement, vous devez créer 12 lots journal Intrastat basés sur le même modèle.  
 * **Codes marchandise** : les autorités douanières et fiscales ont établi des codes numériques pour classer les articles et les services. Vous spécifiez ces codes sur les articles.
 * **Codes nature de transaction** : les pays et les régions ont différents codes pour les types de transactions Intrastat, comme l'achat et la vente ordinaires, l'échange de marchandises retournées et l'échange de marchandises non retournées. Configurez tous les codes qui s'appliquent à votre pays/région. Utilisez ces codes dans les documents achat et vente, et lorsque vous traitez des retours.  
@@ -47,7 +47,7 @@ Vous pouvez exporter les écritures vers un fichier que vous pouvez envoyer à v
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modèles de journaux Intrastat**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]. Créez un modèle pour chaque formulaire Intrastat que vous utilisez.  
-3. Pour créer des feuilles, choisissez l'onglet **Naviguer**, puis choisissez **Noms feuilles**.  
+3. Pour créer des lots, sélectionnez l'action **Lots**.  
 4. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]. Créez un modèle pour chaque formulaire Intrastat que vous utilisez.  
 
 > [!Note]
@@ -76,7 +76,7 @@ Dans certains pays, tels que l'Espagne et le R-U, les autorités nécessitent qu
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration Intrastat**, puis sélectionnez le lien associé.
 2. Choisissez l'action **Configuration de la liste de vérification Intrastat**.
-3. Sur la page **Configuration liste de vérification Intrastat**, cliquez dans **Nom de champ** pour prélever le champ de déclaration Intrastat que vous souhaitez rendre obligatoire. 
+3. Sur la page **Configuration liste de vérification Intrastat**, cliquez dans **Nom de champ** pour prélever le champ de déclaration Intrastat que vous souhaitez rendre obligatoire.
 
 ## <a name="to-report-intrastat"></a>Pour soumettre une déclaration Intrastat
 Après avoir renseigné le journal Intrastat, vous pouvez exécuter l'action **Rapport liste de vérification** pour vérifier que toutes les informations du journal sont correctes. Les champs obligatoires que vous avez définis sur la page **Configuration liste de vérification Intrastat** qui ont des valeurs manquantes, seront affichés dans le récapitulatif des erreurs et des avertissements de la page **Journal Intrastat**. Ensuite, vous pouvez imprimer un rapport Intrastat en tant que formulaire, ou créer un fichier à envoyer à l'administration fiscale de votre pays/région.  
@@ -98,7 +98,7 @@ Pour obtenir les informations requises sur le formulaire Intrastat à partir des
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux Intrastat**, puis sélectionnez le lien associé.  
 2. Sur la page **Journal Intrastat**, choisissez le lot journal concerné dans le champ **Nom du lot**.  
-3. Si ce n'est déjà fait, renseignez le journal manuellement ou sélectionnez **Proposer lignes**.  
+3. Si ce n'est déjà fait, renseignez le journal manuellement ou sélectionnez l'action **Proposer lignes**.  
 4. Choisissez l'action **Imprime le journal Intrastat**.  
 5. Sur le raccourci **Ligne journal Intrastat**, ajoutez un filtre **Type**, puis spécifiez s'il s'agit d'une **Réception** ou d'une **Livraison**.  
 6. Choisissez **Envoyer à** pour imprimer le rapport.  
@@ -108,9 +108,9 @@ Vous pouvez envoyer la déclaration Intrastat en tant que fichier. Avant de cré
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal Intrastat**, puis sélectionnez le lien associé.  
 2. Sur la page **Journal Intrastat**, sélectionnez le lot journal concerné dans le champ **Nom du lot**.  
-3. Si ce n'est déjà fait, renseignez le journal manuellement ou en sélectionnant **Proposer lignes**.  
+3. Si ce n'est déjà fait, renseignez le journal manuellement ou sélectionnez l'action **Proposer lignes**.  
 4. Choisissez l'action **Créer fichier**.  
-5. Sur la page de traitement en lot, choisissez **OK**.  
+5. Dans la page de traitement en lot, sélectionnez le bouton **OK**.  
 6. Choisissez **Enregistrer**.  
 7. Sélectionnez l'emplacement d'enregistrement du fichier, entrez son nom, puis choisissez **Enregistrer**.
 
@@ -119,7 +119,7 @@ Parce que vous devez soumettre un rapport Intrastat chaque mois et créer un nou
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux Intrastat**, puis sélectionnez le lien associé.  
 2. Pour afficher les options, choisissez le champ **Nom de la feuille**.  
-3. Cliquez sur les lots journal à supprimer, puis choisissez **Supprimer**.  
+3. Choisissez les lots journal à supprimer, puis sélectionnez le bouton **Supprimer**.  
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion financière](finance.md)
