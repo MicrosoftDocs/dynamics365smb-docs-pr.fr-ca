@@ -8,6 +8,7 @@
 ### [Définir le message de courriel par défaut](customize-email.md)
 ### [Informer votre comptable](notify-accountant.md)
 ### [Exporter les données](export-data.md)
+### [Réponse aux demandes relatives aux données personnelles](personal-data.md)
 ### [Dépannage](about-troubleshooting.md)
 ## Envoyer des factures et des estimations à vos clients
 ### [Envoyer une facture à un nouveau client](send-invoice.md)
