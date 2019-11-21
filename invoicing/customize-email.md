@@ -9,14 +9,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: e3927afbac34ffea7bbc4af03c29fa5ce33de58f
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 5bb25466ad75cfc3a7422f074138384ab02c6d4d
+ms.sourcegitcommit: a64e1abcc3c1974c87fe3e33fa6983ea7fbbb3ff
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2313746"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "2778095"
 ---
 # <a name="define-the-default-email-message-in-included365inv_longincludesd365inv_longmd"></a>Définir le message de courriel par défaut dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
+> [!Note]
+> [!INCLUDE[d365inv_discont](includes/d365inv_discont.md)]
 
 Lorsque vous commencez à utiliser [!INCLUDE[d365inv](includes/d365inv.md)], vos factures sont envoyées avec un texte de courriel standard, mais vous pouvez le modifier selon les besoins de votre entreprise.  
 

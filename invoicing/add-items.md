@@ -9,14 +9,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: e8d37eda7f4ee38bad97a94b3d9582716927b3ff
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 3ce9d93307684b0ea11b30319b8b38f9df81b003
+ms.sourcegitcommit: a64e1abcc3c1974c87fe3e33fa6983ea7fbbb3ff
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314365"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "2778115"
 ---
 # <a name="create-a-product-or-service-in-included365inv_longincludesd365inv_longmd"></a>Créer un produit ou un service dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
+> [!Note]
+> [!INCLUDE[d365inv_discont](includes/d365inv_discont.md)]
+
 Les produits sont la base de votre activité, les biens ou les services que vous commercialisez. Chaque produit doit être enregistré comme article dans la liste Prix. Un article contient les informations nécessaires à l'achat, le stockage, la vente, la livraison et la comptabilisation des produits que vous vendez.  
 
 > [!VIDEO https://www.youtube.com/embed/A_eCrHibuGU]

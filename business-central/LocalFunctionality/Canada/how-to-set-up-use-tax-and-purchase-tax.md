@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: f32e32b4dce6b329e8bdfcc53c0d78772e691c0f
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: ec79a9f0a6b28d75002170afa771c166749af7e0
+ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2301365"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553936"
 ---
 # <a name="set-up-use-tax-and-purchase-tax"></a>Configurer la taxe de service et la taxe d'achat
 La taxe de vente inclut les taxes payées par les compagnies pour utiliser des articles :  
@@ -27,7 +27,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 
 ## <a name="to-set-up-use-tax-for-a-purchase-order"></a>Pour configurer la taxe de service pour un bon de commande  
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Bons de commande**, puis sélectionnez le lien associé.  
-2.  Sur la page **Bons de commande**, sous l'onglet **Accueil**, dans le groupe **Nouveau**, choisissez **Nouveau**.  
+2.  Sur la page **Bons de commande**, sélectionnez l'action **Nouveau**.  
 3.  Sur le raccourci **Lignes**, complétez les champs, comme nécessaire. [!INCLUDE[tooltip-inline-tip](../../includes/tooltip-inline-tip_md.md)]  
 4.  Sur le raccourci **Facturation**, renseignez les champs comme décrit dans le tableau ci-dessous.  
 

@@ -1,0 +1,2 @@
+**Microsoft Invoicing ne sera bientôt plus disponible**<br><br>
+À partir du 8 février 2020, Microsoft Invoicing ne sera plus disponible. Vous pouvez exporter les données à tout moment avant cette date.

@@ -1,27 +1,36 @@
 ---
 title: Exporter des données | Invoicing
 description: Découvrez comment exporter des données, par exemple supprimer des contacts dans le cadre d'une demande de sujet de données.
-author: edupont04
+author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2019
-ms.author: edupont
-ms.openlocfilehash: 106f9132124226a3dd8650fa257b566119f8e933
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.date: 11/08/2019
+ms.author: bholtorf
+ms.openlocfilehash: 02f7152e69ac9b810240f3f370740d033c94b5cc
+ms.sourcegitcommit: 02f1633213793bfc040ad0d2a96fe76572215aa5
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314382"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "2798423"
 ---
 # <a name="export-or-delete-data-from-included365inv_longincludesd365inv_longmd"></a>Exporter ou supprimer des données de [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
+> [!Note]
+> [!INCLUDE[d365inv_discont](includes/d365inv_discont.md)]
 
-Si vous voulez supprimer un contact ou un client de [!INCLUDE[d365inv](includes/d365inv.md)], il est facile de le faire.  
+## <a name="export-all-of-your-data"></a>Exporter toutes vos données
+Si vous êtes administrateur, [!INCLUDE[d365inv](includes/d365inv.md)] fournit un guide de configuration assistée qui vous permet d'exporter les données pour les clients, les prix, les factures, les estimations et les paiements vers Excel, le tout en une seule opération, puis d'envoyer le classeur vers une adresse de courriel. Le classeur Excel liste les informations dans des onglets distincts. Vous pouvez démarrer le guide de deux manières :
 
-## <a name="to-delete-an-existing-customer"></a>Pour supprimer un client existant
+* Lorsque vous vous connectez, une notification s'affiche. Pour démarrer le guide, choisissez **Exporter**.
+* Dans votre Tableau de bord, Sous **Informations importantes**, choisissez **Étapes suivantes**.    
 
+## <a name="export-invoices-only"></a>Exporter des factures uniquement
+Si vous souhaitez simplement exporter des factures, sur la page de liste **Factures**, choisissez **Gérer**, puis **Exporter des factures**. Entrez des dates de début et de fin pour la période pour laquelle exporter des factures et assurez-vous que l'adresse de courriel correcte est entrée. Invoicing exporte les documents vers Excel, puis envoie le classeur vers l'adresse de courriel.
+
+## <a name="delete-an-existing-customer"></a>Supprimer un client existant
+Si vous voulez supprimer un contact ou un client de [!INCLUDE[d365inv](includes/d365inv.md)], il est facile de le faire.
 1. Sur la page d'accueil, choisissez **Clients** pour ouvrir la liste des clients.
 2. Recherchez le contact, puis choisissez le nom pour ouvrir les détails.
 3. Cliquez sur l'action **Supprimer**.
@@ -31,41 +40,14 @@ Si vous voulez supprimer un contact ou un client de [!INCLUDE[d365inv](includes/
 
 Si le contact n'a pas été ajouté comme client, vous pouvez l'ajouter en créant une facture provisoire.
 
-## <a name="to-add-a-contact-as-a-customer-and-then-delete-the-customer"></a>Pour ajouter un contact comme client et supprimer le client
-
+## <a name="add-a-contact-as-a-customer-and-then-delete-the-customer"></a>Ajouter un contact comme client et supprimer le client
 1. Sur la page Accueil, choisissez **Nouvelle facture**
 2. Dans le champ **Nom du client**, commencez à saisir le nom du contact.
 3. Sélectionnez votre contact dans la recherche, puis fermez la fenêtre.
 4. Supprimez la facture provisoire qui vient d'être créée.
 5. Suivez les étapes pour supprimer le client comme décrit ci-dessus.
 
-## <a name="responding-to-requests-about-personal-data"></a>Réponse aux demandes relatives aux données personnelles
-
-Les sujets des données peuvent demander plusieurs types d'actions concernant leurs données personnelles. Par exemple, en vertu du Règlement général sur la protection des données (RGPD), les résidents de l'UE ont le droit de demander l'exportation, la suppression et la modification de leurs données personnelles. Cela est appelé *Demande du sujet des données*.  
-
-### <a name="requests-for-deletion"></a>Demandes de suppression
-
-Un sujet des données peut demander la suppression de ses données personnelles. Si un contact ou un client vous demande de le supprimer dans le cadre d'une demande de sujet de données, vous pouvez suivre les étapes décrites ci-dessus.  
-
-### <a name="requests-for-exporting-privacy-data"></a>Demandes d'exportation des données de confidentialité
-
-Un sujet des données peut faire une demande de portabilité des données, ce qui signifie que vous devez exporter les données personnelles du sujet des données à partir de vos systèmes et les fournir dans un format couramment utilisé et structuré.  Si un contact ou un client vous demande de lui envoyer ses informations à partir de [!INCLUDE[d365inv](includes/d365inv.md)], vous pouvez vous envoyer ses informations de contact par courriel.  
-
-#### <a name="to-export-privacy-data"></a>Pour exporter les données de confidentialité
-
-1. Sur la page d'accueil, choisissez **Clients** pour ouvrir la liste des clients.
-2. Recherchez le contact approprié, puis choisissez le nom pour ouvrir les détails.
-3. Développez l'onglet **Confidentialité**, puis choisissez **Exporter les données de confidentialité du client**.
-4. Dans la page **Exporter les données du client**, vérifiez que vous êtes sur le point d'envoyer le courriel à vous-même, puis cliquez sur le bouton OK.
-
-Le courriel que vous recevez contient un classeur Excel avec des informations sur le client, notamment les factures que vous lui avez envoyées. Selon la demande d'origine, vous pouvez choisir de supprimer une partie des informations avant de transférer le courriel au client.  
-
-### <a name="requests-for-correction"></a>Demandes de correction
-
-Un sujet des données peut demander la correction des données personnelles incorrectes. Si un contact ou un client vous demande de mettre à jour les informations le concernant dans [!INCLUDE[d365inv](includes/d365inv.md)], vous pouvez le faire dans les détails du client.  
-
-## <a name="see-also"></a>Voir aussi .
-
+## <a name="see-also"></a>Voir aussi
 [Configurer les informations sur votre entreprise](set-up-business-profile.md)  
 [Envoyer une facture à un nouveau client](send-invoice.md)  
 [Dépannage](about-troubleshooting.md)  

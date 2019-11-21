@@ -9,14 +9,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: f14768f1ed10cf17e6d53d65683600aabf99346a
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 46c2f2abf723f2cdb5f3417d0cdb0c9b414d5ac7
+ms.sourcegitcommit: a64e1abcc3c1974c87fe3e33fa6983ea7fbbb3ff
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314318"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "2778144"
 ---
 # <a name="let-your-accountant-know-you-sent-an-invoice-with-included365inv_longincludesd365inv_longmd"></a>Informer votre comptable de l'envoi d'une facture avec [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
+> [!Note]
+> [!INCLUDE[d365inv_discont](includes/d365inv_discont.md)]
 
 Pour tenir votre comptable informé lorsque vous envoyez des factures à vos clients par courriel, vous pouvez ajouter le comptable comme destinataire de tous les courriels de facturation.  
 

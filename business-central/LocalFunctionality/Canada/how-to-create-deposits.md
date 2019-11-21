@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 3f76226c6d3a55449162b9727fe0382101a68936
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: a86ff1b5855ccb49710f153aca4e83f94f5d29f5
+ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2301369"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553886"
 ---
 # <a name="create-deposits"></a>Créer des dépôts
 Vous pouvez créer des dépôts pour tenir à jour un enregistrement de transaction contenant des renseignements pouvant être appliqués aux notes de crédit et factures en attente.  
@@ -46,7 +46,7 @@ Vous pouvez créer des dépôts pour tenir à jour un enregistrement de transact
     |**N° du document**|Numéro de document de l'écriture ligne journal.|  
     |**Montant crédit**|Montant total du crédit sur la ligne journal.|  
 
-5.  Éventuellement, sous l'onglet **Naviguer**, choisissez **Dimensions**, puis ajoutez les dimensions correspondantes sur la page **Écritures de l'ensemble de dimensions**.  
+5.  Éventuellement, choisissez l'action **Dimensions**, puis ajoutez les dimensions correspondantes sur la page **Écritures de l'ensemble de dimensions**.  
 
 Après avoir créé un dépôt, vous devez le reporter.  
 

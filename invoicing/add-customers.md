@@ -9,14 +9,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/01/2019
 ms.author: bholtorf
-ms.openlocfilehash: 0f8ee16195036611702326fecf0762cbf6608266
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: fee580992bda258a338123fb53a0e0ba722bc0e8
+ms.sourcegitcommit: a64e1abcc3c1974c87fe3e33fa6983ea7fbbb3ff
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2313754"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "2778114"
 ---
 # <a name="managing-information-about-customers"></a>Gestion des informations sur les clients
+> [!Note]
+> [!INCLUDE[d365inv_discont](includes/d365inv_discont.md)]
+
 En tenant les informations sur vos clients à jour, il est plus rapide et facile de créer des estimations et des factures. Par exemple, lorsque vous choisissez le client lors de la création d'une facture, Invoicing renseigne les informations sur le client pour vous.  
 
 Dans Invoicing, vous pouvez ajouter et gérer les informations sur les clients dans la liste **Clients**, et vous pouvez également créer des clients à la volée lorsque vous créez des estimations et des factures. Si le client ne figure pas déjà dans votre liste de clients, Invoicing ajoute le client et les informations le concernant à la liste Clients. Cela se produit automatiquement, autrement dit, vous n'avez rien à faire. Si vous voulez ultérieurement ajouter d'autres détails sur le client, ou les supprimer, vous trouverez le client dans la liste Clients.    <br></br>
