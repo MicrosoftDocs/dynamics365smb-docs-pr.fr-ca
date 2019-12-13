@@ -1,8 +1,6 @@
 ---
 title: 'Procédure : créer des dépôts | Microsoft Docs'
 description: Vous pouvez créer des dépôts pour tenir à jour un enregistrement de transaction contenant des renseignements pouvant être appliqués aux notes de crédit et factures en attente.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,18 +10,18 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: a86ff1b5855ccb49710f153aca4e83f94f5d29f5
-ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
+ms.openlocfilehash: f34d15c73da85e8bd486c00f691b1da14423d9b3
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553886"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2878725"
 ---
 # <a name="create-deposits"></a>Créer des dépôts
 Vous pouvez créer des dépôts pour tenir à jour un enregistrement de transaction contenant des renseignements pouvant être appliqués aux notes de crédit et factures en attente.  
 
 ## <a name="to-create-a-deposit"></a>Pour créer un dépôt  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Dépôts**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Dépôts**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Sous le raccourci **Général**, renseignez les champs requis comme indiqué dans le tableau ci-dessous.  
 

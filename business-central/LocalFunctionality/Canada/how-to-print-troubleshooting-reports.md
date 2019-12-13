@@ -1,8 +1,6 @@
 ---
 title: 'Procédure : impression de rapports de dépannage | Microsoft Docs'
 description: Plusieurs rapports de dépannage sont disponibles pour aider les partenaires certifiés Microsoft à résoudre les problèmes.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 398a7b87330f8045db3b89f44af2cad21c6bf841
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 2f67e89c5e46efc06d86f2596b10c5e6f51c248c
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2301361"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2878723"
 ---
 # <a name="print-troubleshooting-reports"></a>Imprimer des rapports de dépannage
 Les rapports de dépannage suivants sont disponibles pour aider les partenaires certifiés Microsoft à résoudre les problèmes :  

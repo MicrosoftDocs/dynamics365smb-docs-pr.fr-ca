@@ -1,8 +1,6 @@
 ---
 title: "Procédure : configurer la taxe de service et la taxe d'achat | Microsoft Docs"
 description: La taxe de vente inclut les taxes payées par les compagnies pour utiliser des articles
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: ec79a9f0a6b28d75002170afa771c166749af7e0
-ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
+ms.openlocfilehash: cc854aae6a8c140c88718e9fd60ea672bb74dcf6
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553936"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2881455"
 ---
 # <a name="set-up-use-tax-and-purchase-tax"></a>Configurer la taxe de service et la taxe d'achat
 La taxe de vente inclut les taxes payées par les compagnies pour utiliser des articles :  
@@ -26,7 +24,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 - Taxe achat (Canada) – La taxe d'achat est une taxe de vente canadienne payée par une compagnie sur les articles achetés à un fournisseur. Lorsqu'une compagnie achète des articles pour son propre usage, le fournisseur facture la taxe de vente appropriée pour les articles.  
 
 ## <a name="to-set-up-use-tax-for-a-purchase-order"></a>Pour configurer la taxe de service pour un bon de commande  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Bons de commande**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Bons de commande**, puis sélectionnez le lien associé.  
 2.  Sur la page **Bons de commande**, sélectionnez l'action **Nouveau**.  
 3.  Sur le raccourci **Lignes**, complétez les champs, comme nécessaire. [!INCLUDE[tooltip-inline-tip](../../includes/tooltip-inline-tip_md.md)]  
 4.  Sur le raccourci **Facturation**, renseignez les champs comme décrit dans le tableau ci-dessous.  
@@ -40,7 +38,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 5.  Cliquez sur le bouton **OK**.  
 
 ## <a name="to-set-up-use-tax-details"></a>Pour configurer les détails de la taxe de service  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Détails fiscaux**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Détails fiscaux**, puis sélectionnez le lien associé.  
 2.  Sur la page **Détails fiscaux**, sélectionnez l'action **Nouveau**.  
 3.  Sur la page **Nouveau - Détails fiscaux**, renseignez les champs comme décrit dans le tableau suivant.  
 
@@ -52,7 +50,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 4.  Cliquez sur le bouton **OK**.  
 
 ## <a name="to-set-up-purchase-tax-for-a-company"></a>Pour configurer la taxe d'achat pour une compagnie  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Informations compagnie**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Informations sur la compagnie**, puis sélectionnez le lien associé.  
 2.  Sur la page **Informations sur la compagnie**, dans le raccourci **Taxe**, renseignez les champs comme décrit dans le tableau ci-dessous.  
 
     |Champ|Description|  
@@ -63,7 +61,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 3.  Cliquez sur le bouton **OK**.  
 
 ## <a name="to-set-up-purchase-tax-for-a-location"></a>Pour configurer la taxe d'achat pour un emplacement  
-1.  Sélectionnez l'icône ![Page ou état pour la recherche](../../media/ui-search/search_small.png "icône Page ou état pour la recherche"), saisissez **Magasins**, puis sélectionnez le lien connexe.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Sur la page **Emplacements**, sélectionnez l'emplacement requis, puis cliquez sur l'action **Modifier**.  
 3.  Sous le raccourci **Général**, renseignez les champs comme indiqué dans le tableau ci-dessous.  
 
@@ -76,7 +74,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 4.  Cliquez sur le bouton **OK**.  
 
 ## <a name="to-set-up-purchase-tax-for-non-recoverable-tax"></a>Pour configurer la taxe d'achat pour une taxe non recouvrable  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "icône Page ou rapport pour la recherche"), entrez **Détails fiscaux**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Détails fiscaux**, puis sélectionnez le lien associé.  
 2.  Sur la page **Détails fiscaux**, sélectionnez l'action **Nouveau**.  
 3.  Cochez la case **Dépense/Capitaliser**.  
 

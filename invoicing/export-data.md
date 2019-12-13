@@ -9,12 +9,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/08/2019
 ms.author: bholtorf
-ms.openlocfilehash: 02f7152e69ac9b810240f3f370740d033c94b5cc
-ms.sourcegitcommit: 02f1633213793bfc040ad0d2a96fe76572215aa5
+ms.openlocfilehash: aa3e598721a3c0fcfde31ee5edbe2a1fe47e96b9
+ms.sourcegitcommit: 893e13fa75b2d04dedd4a29abda216e3e54b24ae
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "2798423"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "2809247"
 ---
 # <a name="export-or-delete-data-from-included365inv_longincludesd365inv_longmd"></a>Exporter ou supprimer des données de [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
 > [!Note]
@@ -25,6 +25,9 @@ Si vous êtes administrateur, [!INCLUDE[d365inv](includes/d365inv.md)] fournit u
 
 * Lorsque vous vous connectez, une notification s'affiche. Pour démarrer le guide, choisissez **Exporter**.
 * Dans votre Tableau de bord, Sous **Informations importantes**, choisissez **Étapes suivantes**.    
+
+> [!Note]
+> Seuls les administrateurs système peuvent exporter des données à partir de [!INCLUDE[d365inv](includes/d365inv.md)].
 
 ## <a name="export-invoices-only"></a>Exporter des factures uniquement
 Si vous souhaitez simplement exporter des factures, sur la page de liste **Factures**, choisissez **Gérer**, puis **Exporter des factures**. Entrez des dates de début et de fin pour la période pour laquelle exporter des factures et assurez-vous que l'adresse de courriel correcte est entrée. Invoicing exporte les documents vers Excel, puis envoie le classeur vers l'adresse de courriel.

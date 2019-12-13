@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2019
+ms.date: 11/25/2019
 ms.author: edupont
-ms.openlocfilehash: 1fb7b3f8befe54bca4cfdf9423827a9368158b87
-ms.sourcegitcommit: a64e1abcc3c1974c87fe3e33fa6983ea7fbbb3ff
+ms.openlocfilehash: aabf632ccc229949e39909b0185441149af1d9b1
+ms.sourcegitcommit: e97e1df1f5d7b1d8af477580960a8737fcea4d16
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778127"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832381"
 ---
 # <a name="troubleshooting-included365inv_longincludesd365inv_longmd"></a>Dépannage de [!INCLUDE[d365inv_long](includes/d365inv_long.md)]
 > [!Note]
@@ -50,11 +50,11 @@ Si vous avez envoyé une facture à un client, vous pouvez annuler la facture, m
 Pas encore.  
 
 ## <a name="who-has-access-to-included365invincludesd365invmd"></a>Qui a accès à [!INCLUDE[d365inv](includes/d365inv.md)] ?
-Pour accéder à [!INCLUDE[d365inv](includes/d365inv.md)], vous devez souscrire un [abonnement Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium). La personne qui s'inscrit devient ce qu'on appelle un « administrateur global » pour l'abonnement et peut accéder à toutes les applications et gérer les paramètres et les informations sur l'entreprise. Cela inclut la gestion de l'accès aux applications par d'autres personnes. Invoicing fait partie de la licence Microsoft 365 Business. 
+Pour accéder à [!INCLUDE[d365inv](includes/d365inv.md)], vous devez souscrire un [abonnement Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium). La personne qui s'inscrit devient ce qu'on appelle un *administrateur global* pour l'abonnement et peut accéder à toutes les applications et gérer les paramètres et les informations sur l'entreprise. Cela inclut la gestion de l'accès aux applications par d'autres personnes. Invoicing fait partie de la licence Microsoft 365 Business. 
 
 Cependant, les petites entreprises traitent souvent des informations sensibles sur les clients, comme les numéros de carte de crédit, les numéros de sécurité sociale ou les dossiers médicaux. Dans le monde de la technologie, cela est appelé « informations personnellement identifiables », ou PII en abrégé. ll incombe au chef d'entreprise de protéger ces informations. Un des moyens de protéger les informations PII est de contrôler les employés qui y ont accès. Le chef d'entreprise et l'administrateur global, s'il ne s'agit pas de la même personne, peuvent travailler ensemble pour contrôler l'accès aux informations en sélectionnant ou en désélectionnant des applications. Par exemple, si vous choisissez de ne pas autoriser l'accès à [!INCLUDE[d365inv](includes/d365inv.md)] à un ou plusieurs employés, vous pouvez désélectionner la licence qui leur est associée afin qu'ils ne puissent pas accéder à l'application.   
 
-Pour activer ou désactiver des licences pour les utilisateurs, dans la page d'accueil de Microsoft Office, choisissez la vignette **Administrateur** pour ouvrir le centre d'administration de Office 365. Choisissez ensuite **Utilisateurs actifs**, choisissez un ou plusieurs utilisateurs, puis choisissez **Modifier** en regard de **Licences produit**. Sélectionnez ou désélectionnez les licences des produits pour l'utilisateur.  
+Pour activer ou désactiver des licences pour les utilisateurs, dans la page d'accueil de Microsoft Office, choisissez la vignette **Administrateur** pour ouvrir le centre d'administration de Microsoft 365. Choisissez ensuite **Utilisateurs actifs**, choisissez un ou plusieurs utilisateurs, puis choisissez **Modifier** en regard de **Licences produit**. Sélectionnez ou désélectionnez les licences des produits pour l'utilisateur.  
 
 ## <a name="can-i-cancel-my-subscription"></a>Puis-je annuler mon inscription ?
 Oui, vous pouvez supprimer [!INCLUDE[d365inv](includes/d365inv.md)] de votre abonnement Office 365. Mais vous pouvez également choisir de ne pas utiliser [!INCLUDE[d365inv](includes/d365inv.md)].  
