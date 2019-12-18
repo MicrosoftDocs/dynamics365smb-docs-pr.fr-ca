@@ -1,8 +1,6 @@
 ---
 title: Procédure de création de bons de production à partir de documents de vente | Microsoft Docs
 description: Vous pouvez créer des ordres de fabrication à partir des commandes vente dans le département Ventes & marketing.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,19 +10,19 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: d1851131512f194f708f7873978a201d85a9e248
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 362429f34c326996d9097ff23a0aec02787b2781
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314154"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883320"
 ---
 # <a name="create-production-orders-from-sales-orders"></a>Créer des bons de production à partir de documents de vente
 Vous pouvez créer des bons de production pour les articles produits directement à partir des documents de vente.  
 
 ## <a name="to-create-a-production-order-from-a-sales-order"></a>Pour créer un bon de production à partir d'un document de vente  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Sélectionnez le document de vente pour lequel vous voulez créer un bon de production.  
 3.  Sélectionnez l'action **Planification**. Sur la page **Planification document de vente**, vous pouvez afficher la disponibilité de l'article de document de vente.  
 4.  Sélectionnez l'action **Créer O.F**.  

@@ -1,8 +1,6 @@
 ---
 title: Comment prélever pour des opérations internes dans les configurations de stockage avancées | Microsoft Docs
 description: Dans les configurations d'entrepôt avancées, dans lesquelles l'emplacement est configuré pour utiliser le prélèvement ainsi que la livraison, vous pouvez prélever des composantes pour les activités de production et d'assemblage à l'aide de la page **Prélèvement entrepôt**.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 064ef2019c91d077a28612b4f322f65fb613c6a8
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 4272512046a3951eb933fb25c869d5e9d7a3b416
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314010"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2876617"
 ---
 # <a name="pick-for-production-or-assembly-in-advanced-warehouse-configurations"></a>Prélever pour la fabrication ou l'assemblage dans les configurations de stockage avancées.
 Dans les configurations d'entrepôt avancées, dans lesquelles l'emplacement est configuré pour utiliser le prélèvement ainsi que la livraison, vous pouvez prélever des composantes pour les activités de production et d'assemblage à l'aide de la page **Prélèvement entrepôt**.  
@@ -42,7 +40,7 @@ Pour créer des demandes de prélèvement dans le cadre de scénarios d'extracti
 |Ordre d'assemblage|Remplacez l'état actuel par l'état Libéré.|  
 
 ## <a name="to-pick-components-using-the-pick-worksheet"></a>Pour prélever des composants à partir des feuilles prélèvement  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille prélèvement**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille prélèvement**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Extraire documents entrepôt**, puis sélectionnez les lignes composante du bon de production libéré.  
 3.  Vérifiez les lignes, triez-les pour assurer un prélèvement optimisé et, si nécessaire, combinez les avec d'autres lignes de la feuille pour utiliser au mieux la disponibilité de l'employé.  
 4.  Choisissez l'action **Créer prélèvement**.  
@@ -54,11 +52,11 @@ Si la zone Opérations internes (par exemple, un atelier de production) est conf
 ## <a name="filling-the-consumption-bin"></a>Renseignement de la zone consommation
 Ce graphique indique comment le champ **Code de zone** sur les lignes composante bon de production est renseigné en fonction de la configuration de votre emplacement.
 
-![Organigramme Flux d'emplacement](media/binflow.png "BinFlow")  
+![Organigramme Flux de zone](media/binflow.png "BinFlow")  
 
 ## <a name="see-also"></a>Voir aussi
-[Gestion d'entrepôt](warehouse-manage-warehouse.md)  
-[Stock](inventory-manage-inventory.md)  
+[Gestion d’entrepôt](warehouse-manage-warehouse.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  

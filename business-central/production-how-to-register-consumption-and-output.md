@@ -1,8 +1,6 @@
 ---
 title: Enregistrer la consommation et la production pour un ordre de fabrication | Microsoft Docs
 description: Cette tâche d'exécution est réalisée sur la page **Journal production** . Le journal combine les fonctions des journaux de sortie et de consommation distincts en un seul journal. Vous accédez directement au journal combiné depuis un bon de production libéré. Son objectif principal est de reporter manuellement la consommation de composantes, la quantité d'articles finis produits et le temps passé dans les opérations.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 1033775d7b988fcb79742165ecbf527462e28aad
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 747a38ae8390c45995091c377c5c05d3140949dc
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2313214"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2877913"
 ---
 # <a name="register-consumption-and-output-for-one-released-production-order-line"></a>Enregistrer la consommation et la production pour une ligne bon de production libéré
 Cette tâche d'exécution est réalisée sur la page **Journal production** . Le journal combine les fonctions des journaux de sortie et de consommation distincts en un seul journal. Vous accédez directement au journal combiné depuis un bon de production libéré. Son objectif principal est de reporter manuellement la consommation de composantes, la quantité d'articles finis produits et le temps passé dans les opérations. Les valeurs sont reportées dans le grand livre sous le bon de production libéré. Les quantités consommées sont reportées comme écritures article négatives, les quantités sorties sont reportées comme écritures positives et les heures passées sont reportées comme écritures du grand livre de capacité. Ces valeurs reportées peuvent également être visualisées au bas du journal sous forme de quantités réelles.  
@@ -29,7 +27,7 @@ Cette tâche d'exécution est réalisée sur la page **Journal production** . Le
 >  Les composantes ne comportant pas de code lien itinéraire apparaissent en haut du journal.  
 
 ## <a name="to-register-consumption-and-output"></a>Pour enregistrer la consommation et la sortie  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de production libérés**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de production libérés**, puis sélectionnez le lien associé.  
 2.  Ouvrez une ligne de bon de production libéré qui est prête à être enregistrée, puis, sur le raccourci **Lignes**, choisissez l'action **Ligne**, puis l'action **Journal production**.  
 
     La page **Journal production** s'ouvre et affiche les lignes journal pour la ligne bon de production en fonction des pages **Composante bon de production** et **Itinéraire bon de production**. Ces lignes proviennent de la nomenclature de production et de l'itinéraire affectés à l'article en cours de production. Pour plus d'informations, voir [Créer des nomenclatures de production](production-how-to-create-routings.md).  
@@ -70,6 +68,6 @@ S'il reste des valeurs à reporter, le journal les contiendra la prochaine fois 
 [Production](production-manage-manufacturing.md)    
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Planification](production-planning.md)      
-[Stock](inventory-manage-inventory.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

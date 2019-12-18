@@ -1,8 +1,6 @@
 ---
 title: Procédure de création d'itinéraires | Microsoft Docs
 description: Un itinéraire contient les données de base qui capturent les exigences du traitement correspondant à un article produit donné. Après la création d'un bon de production pour cet article, son itinéraire gouvernera la planification des opérations tels que représenté sur la page **Itinéraire bon de prod.** sous le bon de production.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: aa03051a02309944c66d3fdf89de12627af8c4bf
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 79875b770dba5ef7b074bd3b7c52858f37951c25
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314106"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883296"
 ---
 # <a name="create-routings"></a>Créer des itinéraires
 Les compagnies manufacturières utilisent des itinéraires pour visualiser et gérer le processus de fabrication.
@@ -32,7 +30,7 @@ Pour pouvoir configurer un itinéraire, les éléments suivants doivent être en
 - Les ressources de production sont configurées. Pour plus d'informations, voir [Configurer des ateliers et des unités de production](production-how-to-set-up-work-and-machine-centers.md).
 
 ## <a name="to-create-a-routing"></a>Pour créer un itinéraire  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Itinéraires**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Itinéraires**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4.  Dans le champ **Type**, sélectionnez **Série** pour calculer la gamme de fabrication en fonction de la valeur de **N° opération** . .   
@@ -63,7 +61,7 @@ Vous pouvez créer des liens itinéraire pour lier des composantes à des opéra
 
 Les composantes et opérations liées apparaissent dans une structure opératoire logique lorsque vous utilisez la page **Journal production** pour le report de la production et de la consommation, ce qui constitue un autre avantage majeur.  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Itinéraires**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Itinéraires**, puis sélectionnez le lien associé.  
 2.  Ouvrez l'itinéraire contenant les opérations que vous voulez lier.  
 
     Vérifiez que le statut de la gamme est **Modification en cours**.  
@@ -94,7 +92,7 @@ Les composantes sélectionnées seront liées aux opérations sélectionnées lo
 ## <a name="to-assign-personnel-tools-and-quality-measures-to-routing-operations"></a>Pour affecter des qualifications, des outils et des contrôles qualité à des opérations itinéraire.
 Si vous avez besoin de personnes ayant des qualifications, un savoir-faire particulier, ou bénéficiant d'une autorisation spéciale pour une opération, vous pouvez affecter ces personnes à l'opération. En outre, vous pouvez affecter des outils et des exigences de qualité à l'opération. Cette procédure décrit l'affectation de qualifications. Les étapes sont similaires pour d'autres types d'informations sur l'opération.
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Itinéraires**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Itinéraires**, puis sélectionnez le lien associé.  
 2.  Ouvrez l'itinéraire approprié.  
 3.  Sur le raccourci **Lignes**, sélectionnez la ligne à traiter, puis choisissez l'action **Qualifications**.  
 4.  Renseignez les champs de la page **Itinéraires personnels**.  
@@ -103,7 +101,7 @@ Si vous avez besoin de personnes ayant des qualifications, un savoir-faire parti
 ## <a name="to-create-a-new-versions-of-a-routing"></a>Pour créer une nouvelle version d'un itinéraire  
 Le principe de la version permet de gérer différentes versions d'un itinéraire. La structure d'une version d'itinéraire correspond à la structure de l'itinéraire composée d'un en-tête et de lignes version d'itinéraire. La différence de base est définie par la date début.  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Itinéraires**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Itinéraires**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'itinéraire à copier, puis choisissez l'action **Versions**.  
 3. Sur la page **Versions de l'itinéraire**, sélectionnez l'action **Nouveau**.
 4. Renseignez les champs selon vos besoins.
@@ -123,6 +121,6 @@ La validité de la version est définie par le champ **Date début**.
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Production](production-manage-manufacturing.md)    
 [Planification](production-planning.md)   
-[Stock](inventory-manage-inventory.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

@@ -1,8 +1,6 @@
 ---
 title: Définition et Répartition des coûts | Microsoft Docs
 description: Les affectations de coûts déplacent les coûts et les revenus entre les types de coûts, les centres de coûts et les coûts associés. Vous pouvez définir autant d'affectations que nécessaire.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 8261dee0b2ba56d9aec707b5614999697e19ef62
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 7e66411200823961936e5c596461a9f227a85d9f
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2306398"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2879810"
 ---
 # <a name="defining-and-allocating-costs"></a>Définition et répartition des coûts
 Les affectations de coûts déplacent les coûts et les revenus entre les types de coûts, les centres de coûts et les coûts associés. Vous pouvez définir autant d'affectations que nécessaire. Chaque affectation comporte les éléments suivants :  
@@ -40,14 +38,14 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 Chaque affectation comporte une source et au moins une cible. La source d'affectation définit les coûts à affecter. Les cibles d'affectation déterminent où affecter ces coûts.  
 
 ### <a name="to-set-up-cost-allocations"></a>Pour configurer les affectations de coûts  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Affectation des coûts**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Affectation des coûts**, puis sélectionnez le lien associé.  
 2.  Sur la page **Affectation des coûts**, sélectionnez l'action **Modifier**.  
 3.  Dans le champ **ID**, entrez un ID pour la source d’affectation.  
 4.  Définissez un niveau compris entre les chiffres 1 et 99 dans le champ **Niveau**. Le report de l’affectation suit l’ordre des niveaux.  
 5.  Entrez un type de coût pour définir les types de coût à affecter dans le champ **Plage type de coûts**. Si tous les coûts pour un type donné sont affectés, aucune plage n'est définie.  
 6.  Entrez un centre de coûts avec des coûts à affecter dans le champ **Code centre de coûts**.  
 7.  Entrez un coût associé avec des coûts à affecter dans le champ **Code coûts associés**. Ce champ reste vide la plupart du temps car les coûts associés sont rarement affectés à d'autres coûts associés.  
-8.  Entrez un type de coût dans le champ **Type de crédit\\\/coût**. Les coûts affectés sont crédités dans le type de coût d’origine. Le report des crédits est reporté sur le type de coût spécifié ici.  
+8.  Entrez un type de coût dans le champ **Type de crédit\/coût**. Les coûts affectés sont crédités dans le type de coût d’origine. Le report des crédits est reporté sur le type de coût spécifié ici.  
 9. Sur le raccourci **Lignes**, définissez les cibles d’affectation. Sur la première ligne, entrez un type de coût dans le champ **Type coût cible**. Il définit le type de coût à partir duquel l'affectation est débitée.  
 10. Sur la première ligne, saisissez la première cible d'affectation dans le champ **Centre de coûts cible** ou **Objet de coûts cible**. Ces deux champs définissent le centre de coûts ou l'objet de coûts à partir desquels l'affectation est débitée. Vous pouvez renseigner uniquement l'un de ces champs, mais pas les deux.  
 11. Répétez les mêmes étapes sur la deuxième ligne pour configurer les cibles d'affectation supplémentaires.  
@@ -84,13 +82,13 @@ Cette rubrique décrit comment définir trois nouveaux objet de coûts pour la c
 
 ### <a name="to-define-the-allocation-source-prod-cost-center-on-the-general-fasttab"></a>Pour définir le centre de coûts PROD de la source d'affectation sur le raccourci Général  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Affectation des coûts**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Affectation des coûts**, puis sélectionnez le lien associé.  
 2.  Sur la page **Affectation des coûts**, sélectionnez l'action **Nouveau**.  
 3.  Dans le champ **ID**, appuyez sur Entrée ou saisissez un ID.  
 4.  Dans le champ **Niveau**, saisissez **1**.  
 5.  Dans les champs **Valide à partir de** et **Valide jusque**, entrez les dates appropriées.  
 6.  Dans le champ **Code centre de coûts**, entrez **PROD**.  
-7.  Dans le champ **Type de crédit\\\/coût**, entrez le type de coût **9903**.  
+7.  Dans le champ **Type de crédit\/coût**, entrez le type de coût **9903**.  
 
 ### <a name="to-define-the-allocation-target-cost-objects-on-the-lines-fasttab"></a>Pour définir les coûts associés de la cible d'affectation sur le raccourci Lignes  
 
@@ -121,13 +119,13 @@ Cette rubrique explique comment définir les affectations à l'aide du mode d'af
 
 ### <a name="to-define-dynamic-allocations-based-on-items-sold-in-the-previous-year"></a>Pour définir les ventilations dynamique en fonction des articles vendus de l'exercice précédent  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Affectations des coûts**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Affectations des coûts**, puis sélectionnez le lien associé.  
 2.  Sur la page **Affectation des coûts**, sélectionnez l'action **Nouveau**.  
 3.  Dans le champ **ID**, appuyez sur Entrée ou saisissez un ID.  
 4.  Dans le champ **Niveau**, saisissez **1**.  
 5.  Dans les champs **Valide à partir de** et **Valide jusque**, entrez les dates appropriées.  
 6.  Dans le champ **Code centre de coûts**, entrez **VENTES**.  
-7.  Dans le champ **Type de crédit\\\/coût**, entrez le type de coût **9903**.  
+7.  Dans le champ **Type de crédit\/coût**, entrez le type de coût **9903**.  
 8.  Dans le champ **Type coût cible**, entrez le type de coût **9903**.  
 9. Dans le champ **Objet de coûts cible**, sélectionnez **Nouveau** pour créer un nouvel objet de coût ÉQUIPEMENT IT et renseigner les champs, le cas échéant. Sélectionnez **ÉQUIPEMENT IT**. Laissez le champ **Centre de coûts cible** vide.  
 10. Dans le champ **Type cible affectation**, sélectionnez **Tous les coûts** pour définir le mode d'affectation de tous les coûts cumulés.  

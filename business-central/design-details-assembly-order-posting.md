@@ -1,8 +1,6 @@
 ---
 title: "Détails de conception : report d'ordre d'assemblage | Microsoft Docs"
 description: Le report d'ordre d'assemblage est basé sur les mêmes principes que le report des activités similaires des documents de vente et de la consommation de production/production. Cependant, les principes sont combinés du fait que les ordres d'assemblage ont leur propre interface utilisateur de report, comme celle des documents de vente, alors que le report des écritures réel se produit en arrière-plan en tant que report direct d'article et de journal ressource, comme pour la consommation de production, la production et la capacité.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 3106cb9b89f25470c433b6f33e0e541bcf7c8e31
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 4a64e6bf09914ebd24e7d00ac54a286a33cd2026
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2307454"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2880650"
 ---
 # <a name="design-details-assembly-order-posting"></a>Détails de conception : report d'un ordre d'assemblage
 Le report d'ordre d'assemblage est basé sur les mêmes principes que le report des activités similaires des documents de vente et de la consommation de production/production. Cependant, les principes sont combinés du fait que les ordres d'assemblage ont leur propre interface utilisateur de report, comme celle des documents de vente, alors que le report des écritures réel se produit en arrière-plan en tant que report direct d'article et de journal ressource, comme pour la consommation de production, la production et la capacité.  
@@ -33,7 +31,7 @@ Les reports journal suivants se produisent lors du report d'un ordre d'assemblag
 
 Le schéma suivant montre la structure des écritures article et ressource qui résultent du report d'un ordre d'assemblage.  
 
-![Article, ressource et écritures capacité résultant du report d'ordres d'assemblage](media/design_details_assembly_posting_1.png "Article, ressource et écritures capacité résultant du report d'ordres d'assemblage")  
+![Écritures article, ressource et capacité résultant du report d'ordre d'assemblage](media/design_details_assembly_posting_1.png "Écritures article, ressource et capacité résultant du report d'ordre d'assemblage")  
 
 > [!NOTE]  
 >  Les postes et ateliers sont inclus pour illustrer que les écritures du grand livre de capacité sont créées à la fois à partir de la production et de l'assemblage.  
@@ -79,7 +77,7 @@ La répartition des ajustements détectés entre les coûts matière et ressourc
 -   Effectuer un ajustement d'ordre d'assemblage : qui transmet le coût d'utilisation des matières et des ressources à l'écriture de résultat d'assemblage. Les lignes 5 et 6 dans l'algorithme ci-dessous sont responsables de cela.  
 -   Effectuer des ajustements à niveau unique : ce qui transfère les coûts des différents articles en utilisant leur mode d'évaluation de l'inventaire. Les lignes 9 et 10 dans l'algorithme ci-dessous sont responsables de cela.  
 
-![Résumé de l'algorithme d'ajustement des coûts pour report de l'assemblage](media/design_details_assembly_posting_4.jpg "Résumé de l'algorithme d'ajustement des coûts pour report de l'assemblage")  
+![Résumé de l'algorithme d'ajustement des coûts pour le report d'assemblage](media/design_details_assembly_posting_4.jpg "Résumé de l'algorithme d'ajustement des coûts pour le report d'assemblage")  
 
 > [!NOTE]  
 >  L'élément Effectuer des ajustements de TEC, dans les lignes 7 et 8, est responsable du transfert du matériel de production et de l'utilisation de la capacité vers la production des ordres de fabrication non terminés. Ceci n'est pas utilisé lors de l'ajustement des coûts d'ordre d'assemblage, car le concept de TEC ne s'applique pas à l'assemblage.  

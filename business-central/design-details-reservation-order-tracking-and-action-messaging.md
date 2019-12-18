@@ -1,8 +1,6 @@
 ---
 title: "Détails de conception : réservation, chaînage et message d'action | Microsoft Docs"
 description: Le système de réservation est complet et inclut les fonctionnalités étroitement liées et parallèles du Chaînage et des Messages d'action.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: design, replenishment, reordering
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 1408c3e97ffd54f516bf18823442f3f986131038
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: a3b7c5c52590644a8f61c0d97312d7dd1342fc97
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2306854"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2878447"
 ---
 # <a name="design-details-reservation-order-tracking-and-action-messaging"></a>Détails de conception : réservation, chaînage et message d'action
 Le système de réservation est complet et inclut les fonctionnalités étroitement liées et parallèles du Chaînage et des Messages d'action.  
@@ -31,7 +29,7 @@ Le système de réservation est complet et inclut les fonctionnalités étroitem
 
  Le système de réservation forme également la base structurelle du système de traçabilité. Pour plus d'informations, voir [Détails de conception : traçabilité](design-details-item-tracking.md).  
 
- Pour plus d'informations détaillées sur le fonctionnement du système de réservation, reportez-vous au livre blanc « table Ecriture réservation » sur [PartnerSource](http://go.microsoft.com/fwlink/?LinkId=258348).  
+ Pour plus d'informations détaillées sur le fonctionnement du système de réservation, reportez-vous au livre blanc « table Ecriture réservation » sur [PartnerSource](https://go.microsoft.com/fwlink/?LinkId=258348).  
 
 ## <a name="reservation"></a>Réservation  
  Une réservation est un lien ferme qui connecte une demande spécifique à un approvisionnement spécifique. Ce lien affecte directement la transaction d'inventaire ultérieure et garantit l'affectation correcte des écritures article à des fins d'évaluation des coûts. Une réservation remplace le mode d'évaluation du stock par défaut d'un article. Pour plus d'informations, voir « Détails de conception : modes évaluation stock ».  
@@ -110,7 +108,7 @@ Le système de réservation est complet et inclut les fonctionnalités étroitem
 
  Ce principe implique qu'un changement dans une demande entraîne un déséquilibre correspondant du côté de l'approvisionnement du réseau d'ordres. Inversement, une modification d'approvisionnement entraîne un déséquilibre correspondant du côté de la demande du réseau d'ordres. En réalité, le réseau d'ordres se trouve dans un état de flux constant tant que les utilisateurs saisissent, modifient et suppriment des commandes. Le chaînage traite les commandes dynamiquement, en réagissant à chaque modification au moment où elle entre dans le système et devient une partie du réseau d'ordres. Dès que de nouveaux enregistrements de chaînage sont créés, le réseau d'ordres est équilibré, mais uniquement jusqu'à la prochaine modification.  
 
- Pour augmenter la transparence des calculs dans le système de planification, la page **Éléments planification sans suivi** affiche les quantités non suivies, qui représentent la différence de quantité entre la demande connue et l'approvisionnement proposé. Chaque ligne de la page fait référence à la cause de l'excédent, par exemple, **Commande ouverte**, **Niveau d'inventaire de sécurité**, **Qté fixe de commande**, **Qté minimum commande**, **Arrondissement** ou **Seuil**.  
+ Pour augmenter la transparence des calculs dans le système de planification, la page **Éléments planification sans suivi** affiche les quantités non suivies, qui représentent la différence de quantité entre la demande connue et l'approvisionnement proposé. Chaque ligne de la page fait référence à la cause de l'excédent, par exemple, **Commande permanente**, **Niveau de stock de sécurité**, **Quantité de réapprovisionnement fixe**, **Qté minimum commande**, **Arrondissement** ou **Seuil**.  
 
 ### <a name="offsetting-in-order-tracking"></a>Compensation dans le chaînage  
  Contrairement aux réservations, qui ne peuvent être exécutées que pour des quantités d'article disponibles, le chaînage est possible sur toutes les entités réseau de commande qui sont incluses dans le calcul des besoins nets du système de planification. Les besoins nets sont calculés comme suit :  
@@ -137,7 +135,7 @@ Sur la page **Configuration de la fabrication**, le champ **Composantes à l'emp
 
  Les écritures de chaînage suivantes existent dans la table **Ecriture réservation**, en fonction des données de la table.  
 
- ![Écritures suivi commande dans la table Écriture réservation](media/supply_planning_RTAM_1.png "supply_planning_RTAM_1")  
+ ![Écritures chaînage dans la table Écriture réservation](media/supply_planning_RTAM_1.png "supply_planning_RTAM_1")  
 
 ### <a name="entry-numbers-8-and-9"></a>Numéros d'écriture 8 et 9  
  Pour le besoin composante de LOTA et de LOTB respectivement, des liens traçabilité commande sont créés entre la demande dans la table 5407, **Composante bon de production**, et l'approvisionnement dans la table 32, **Écriture article**. Le champ **État de la réservation** contient **Traçabilité** pour indiquer que ces écritures sont des liens de suivi de commande dynamiques entre l'approvisionnement et la demande.  
@@ -155,7 +153,7 @@ Sur la page **Configuration de la fabrication**, le champ **Composantes à l'emp
 
  À présent, les écritures de chaînage suivantes existent dans la table **Ecriture réservation**.  
 
- ![Écritures suivi commande dans la table Écriture réservation](media/supply_planning_RTAM_2.png "supply_planning_RTAM_2")  
+ ![Écritures chaînage dans la table Écriture réservation](media/supply_planning_RTAM_2.png "supply_planning_RTAM_2")  
 
 ### <a name="entry-numbers-8-and-9"></a>Numéros d'écriture 8 et 9  
  Les écritures suivi de commande pour les deux lots de la composante correspondant à la demande dans la table 5407 sont modifiées d'un état de réservation **Traçabilité** à **Excédent**. La raison est que les approvisionnements qui ont été liés précédemment, dans la table 32, ont été utilisés par la livraison de l'ordre de transfert.  
@@ -167,24 +165,24 @@ Sur la page **Configuration de la fabrication**, le champ **Composantes à l'emp
 
  À ce stade du scénario, l'ordre de transfert des composantes de l'emplacement BLEU vers l'emplacement ROUGE est reporté comme étant reçu.  
 
- À présent, les écritures de chaînage suivantes existent dans la table **Écriture réservation**.  
+ À présent, les écritures de chaînage suivantes existent dans la table **Ecriture réservation**.  
 
- ![Écritures suivi commande dans la table Écriture réservation](media/supply_planning_RTAM_3.png "supply_planning_RTAM_3")  
+ ![Écritures chaînage dans la table Écriture réservation](media/supply_planning_RTAM_3.png "supply_planning_RTAM_3")  
 
  Les écritures suivi de commande sont à présent similaires au premier point dans ce scénario, avant le report de l'ordre de transfert comme livré uniquement, sauf que les écritures de la composante ont à présent l'état de réservation **Excédent**. Ceci est dû au fait que le besoin de composante est toujours à l'emplacement ROUGE, reflétant ainsi que le champ **Code emplacement** de la ligne composante du bon de production contient **ROUGE** tel que configuré dans le champ de configuration **Composantes à l'emplacement**. L'approvisionnement qui a été affecté à cette demande auparavant a été transféré à l'emplacement BLEU et ne peut à présent pas être entièrement suivi à moins que le besoin de composante de la ligne bon de production ne soit modifié sur emplacement BLEU.  
 
  À ce stade du scénario, le **Code emplacement** de la ligne bon de production est défini sur **BLEU**. En outre, sur la page **Lignes traçabilité**, les 30 unités de LOTA et les 70 unités de LOTB sont affectées à la ligne O.F.  
 
- À présent, les écritures de chaînage suivantes existent dans la table **Écriture réservation**.  
+ À présent, les écritures de chaînage suivantes existent dans la table **Ecriture réservation**.  
 
- ![Écritures suivi commande dans la table Écriture réservation](media/supply_planning_RTAM_4.png "supply_planning_RTAM_4")  
+ ![Écritures chaînage dans la table Écriture réservation](media/supply_planning_RTAM_4.png "supply_planning_RTAM_4")  
 
 ### <a name="entry-numbers-21-and-22"></a>Numéros d'écriture 21 et 22  
  Comme le besoin composante a été modifié sur emplacement BLEU, et que l'approvisionnement est disponible comme écritures article à l'emplacement BLEU, toutes les écritures suivi commande pour les deux numéros de lot sont à présent entièrement suivies, comme indiqué par l'état **Traçabilité**de la réservation.  
 
  Le champ **N° lot** est désormais renseigné dans l'écriture suivi de commande de la table 5407, car les numéros de lot ont été affectés aux lignes composante bon de production.  
 
- Pour plus d'exemples des écritures traçabilité dans la table **Écriture réservation**, reportez-vous au livre blanc « table Écriture réservation » sur [PartnerSource](http://go.microsoft.com/fwlink/?LinkId=258348) (nécessite une ouverture de session).
+ Pour plus d'exemples des écritures traçabilité dans la table **Écriture réservation**, reportez-vous au livre blanc « table Écriture réservation » sur [PartnerSource](https://go.microsoft.com/fwlink/?LinkId=258348) (nécessite une ouverture de session).
 
 ## <a name="action-messaging"></a>Messages d'action  
  Lorsque le système de suivi d'ordre détecte un déséquilibre dans le réseau d'ordres, il crée automatiquement un message d'action pour en informer l'utilisateur. Les messages d'action sont des appels générés par le système en vue d'une action de l'utilisateur. Ils indiquent les détails du déséquilibre et suggèrent des propositions sur la façon de restaurer l'équilibre dans le réseau d'ordres. Elles sont affichées comme lignes de planification sur la page **Feuille de travail de planification** lorsque vous choisissez **Obtenir les messages d'action**. En outre, des messages d'action s'affichent sur les lignes planification qui sont générés par l'exécution de la planification pour tenir compte des propositions du système de planification sur la façon de rétablir l'équilibre du réseau d'ordres. Dans les deux cas, les propositions sont effectuées sur le réseau d'ordres, lorsque vous choisissez **Traiter messages d'action**.  

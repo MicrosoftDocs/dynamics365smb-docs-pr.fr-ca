@@ -1,8 +1,6 @@
 ---
 title: Procédure de création d'une compagnie | Microsoft Docs
 description: Lorsque vous utilisez RapidStart Services, des tables et des pages sont créées, mais elles ne contiennent pas de données.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 697613b170d3d7c2db33ab91acd660f2d09ddea1
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: bbd845f7974ce2d0b6ade27d290e1173fad42f37
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2304598"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2878899"
 ---
 # <a name="create-a-new-company"></a>Créer une compagnie
 Pour utiliser RapidStart Services pour [!INCLUDE[d365fin](includes/d365fin_md.md)], vous devez d'abord créer une compagnie pour laquelle vous souhaitez effectuer une implémentation client. Lorsque vous créez une société, les tables et les pages standard de [!INCLUDE[d365fin](includes/d365fin_md.md)] sont créées, mais elles ne contiennent pas de données.
@@ -28,7 +26,7 @@ Des exemples de packages de configuration, qui comprennent des fichiers spécifi
 
 ## <a name="to-use-the-sample-basicconfig-configuration-package"></a>Pour utiliser l'exemple de package de configuration BASICCONFIG  
 1. Ouvrez la compagnie CRONUS International Ltd. Pour plus d'informations, voir [Modifier les paramètres de base](ui-change-basic-settings.md).
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Packages configuration**, puis sélectionnez le lien associé.  
+2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Packages configuration**, puis choisissez le lien associé.  
 3. Sélectionnez le package BASICCONFIG dans la liste, puis sélectionnez l'action **Exporter package**.  
 
 Suivez la procédure suivante pour créer une compagnie, puis utilisez le package BASICCONFIG dans le cadre du processus.  
@@ -75,6 +73,6 @@ Outre des tables de données de configuration, [!INCLUDE[d365fin](includes/d365f
   
 
 ## <a name="see-also"></a>Voir aussi  
-[Appliquer des configurations aux nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
+[Appliquer des configurations à de nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)

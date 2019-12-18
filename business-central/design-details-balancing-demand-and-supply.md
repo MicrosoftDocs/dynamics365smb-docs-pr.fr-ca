@@ -1,8 +1,6 @@
 ---
 title: Détails de conception - Équilibrage la demande et de l'approvisionnement | Microsoft Docs
 description: Pour comprendre comment fonctionne le système de planification, il est nécessaire de comprendre les objectifs priorisés du système de planification, dont les plus importants sont de s'assurer que toute demande est satisfaite par suffisamment d'approvisionnement et n'importe quel approvisionnement atteint un but.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: b8e4cb09e8b391f9818c9dabbc25d88eeca4aeac
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 1dda414746c8661e5a9cee3eee5ce569cfa83e16
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2303782"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2882960"
 ---
 # <a name="design-details-balancing-demand-and-supply"></a>Détails de conception : équilibrage de la demande et de l'approvisionnement
 Pour comprendre comment fonctionne le système de planification, il est nécessaire de comprendre les objectifs priorisés du système de planification, dont les plus importants sont de s'assurer que :  
@@ -127,7 +125,7 @@ L'inventaire de sécurité est une quantité en inventaire mise de côté pour c
 ### <a name="forecast-demand-is-reduced-by-sales-orders"></a>La demande de prévision est réduite par les commandes vente  
 La prévision de la demande exprime une future demande anticipée. Lorsqu'une demande réelle est saisie, généralement comme commandes vente pour les articles produits, elle consomme la prévision.  
 
-La prévision proprement dite n'est pas réellement réduite par les commandes vente ; elle reste la même. Cependant, les quantités prévues utilisées dans le calcul de planification sont réduites (par les quantités de document de vente) avant que la quantité restante, le cas échéant, soit saisie dans le profil de l'inventaire de demande. Lorsque le système de planification examine les ventes réelles pendant une période, les documents de vente ouvertes et les écritures du grand livre d'articles des ventes livrées sont inclus, à moins qu'ils ne proviennent d'une commande ouverte.  
+La prévision proprement dite n'est pas réellement réduite par les commandes vente ; elle reste la même. Cependant, les quantités prévues utilisées dans le calcul de planification sont réduites (par les quantités de document de vente) avant que la quantité restante, le cas échéant, soit saisie dans le profil de l'inventaire de demande. Lorsque le système de planification examine les ventes réelles pendant une période, les documents de vente ouverts et les écritures article issus des ventes livrées sont inclus, à moins qu'ils ne proviennent d'une commande permanente.  
 
 Un utilisateur doit définir une période de prévision valide. La date de la quantité prévue définit le début de la période, et la date de la prévision suivante définit la fin de la période.  
 
@@ -135,10 +133,10 @@ La prévision pour les périodes antérieures à la période de planification n'
 
 La prévision peut être pour une demande indépendante, telle que des documents de vente, ou une demande dépendante, comme des composantes de bon de production (prévision module). Un article peut avoir deux types de prévision. Lors de la planification, la consommation a lieu séparément, d'abord pour une demande indépendante puis pour une demande dépendante.  
 
-### <a name="blanket-order-demand-is-reduced-by-sales-orders"></a>La demande de commande ouverte est réduite par les commandes vente  
-Des prévisions sont renseignées par la commande permanente ventes comme moyen de spécifier une future demande pour un client spécifique. Comme pour la prévision (non spécifiée), les ventes réelles doivent consommer la demande prévue, et la quantité restante doit être entrée dans le profil de l'inventaire de demande. À nouveau, la consommation ne réduit pas réellement la commande ouverte.  
+### <a name="blanket-order-demand-is-reduced-by-sales-orders"></a>La demande de commande permanente est réduite par les documents de vente  
+Des prévisions sont renseignées par la commande permanente ventes comme moyen de spécifier une future demande pour un client spécifique. Comme pour la prévision (non spécifiée), les ventes réelles doivent consommer la demande prévue, et la quantité restante doit être entrée dans le profil de l'inventaire de demande. À nouveau, la consommation ne réduit pas réellement la commande permanente.  
 
-Le calcul de planification tient compte des commandes vente ouvertes liées à la ligne spécifique de la commande ouverte, mais ne tient compte d'aucune période valide. Il ne prend pas non plus en compte les commandes reportées, étant donné que la procédure de report a déjà réduit la quantité restante de commande ouverte.
+Le calcul de planification tient compte des documents de vente ouverts liés à la ligne commande permanente spécifique, mais ne tient compte d'aucune période valide. Il ne prend pas non plus en compte les commandes reportées, étant donné que la procédure de report a déjà réduit la quantité restante de commande permanente.
 
 ## <a name="prioritizing-orders"></a>Hiérarchisation des commandes
 Dans une unité de stock donnée, la date demandée ou disponible représente la priorité la plus élevée ; la demande du jour doit être traitée avant la demande de la semaine suivante. Mais en plus de cette priorité générale, le système de planification suggère également que le type de demande doit être rempli avant de répondre à une autre demande. De même, il suggère que la source d'approvisionnement soit affectée avant d'affecter d'autres sources d'approvisionnement. Ceci est effectué en fonction des priorités de la commande.  

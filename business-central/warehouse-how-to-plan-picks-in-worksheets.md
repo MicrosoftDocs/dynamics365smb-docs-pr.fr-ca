@@ -1,8 +1,6 @@
 ---
 title: Comment planifier des prélèvements dans des feuilles | Microsoft Docs
 description: Lorsque l'entrepôt est configuré pour exiger un traitement des prélèvements et des livraisons, le fonctionnement de l'entrepôt peut être établi de telle sorte que les lignes des documents livraison ne soient pas automatiquement transformées en instructions de prélèvement, mais soient plutôt activées sur le journal prélèvement.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: b3f3cf5befb5bcca602b67cdc1f6de6d50ddd320
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 7b1b8f2fd422fd137950b0a83bd14431e843c67e
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2313962"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2881736"
 ---
 # <a name="plan-picks-in-worksheets"></a>Planifier des prélèvements dans la feuille
 Lorsque l'entrepôt est configuré pour exiger un traitement des prélèvements et des livraisons, le fonctionnement de l'entrepôt peut être établi de telle sorte que les lignes des documents livraison ne soient pas automatiquement transformées en instructions de prélèvement, mais soient plutôt activées sur le journal prélèvement.  
@@ -39,11 +37,11 @@ Si vous triez par date d'échéance, vous pouvez choisir d'effacer de la feuille
 >  Pour plus d'informations sur le prélèvement de composantes pour les ordres d'assemblage en général, notamment les situations où l'élément d'assemblage n'est pas dû dans une livraison vente, voir [Prélever pour l'assemblage ou la production dans les configurations de stockage avancées.](warehouse-how-to-pick-for-internal-operations-in-advanced-warehousing.md).  
 
 ## <a name="to-plan-picks-in-the-worksheet"></a>Pour planifier des prélèvements dans la feuille  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille prélèvement**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille prélèvement**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Extraire documents entrepôt**.  
 3.  Sélectionnez les livraisons pour lesquelles vous souhaitez préparer un prélèvement. Vous pouvez à présent opérer un tri ponctuel, qui ne suivra pas l'instruction globale de prélèvement. Vous pouvez aussi supprimer certaines lignes pour rendre le prélèvement plus efficace. Par exemple, si un certain nombre de lignes comporte des articles situés dans des zones de transbordement, vous pouvez créer un prélèvement pour toutes les lignes associées à ces lignes. Les articles transbordés seront livrés, avec les autres articles des livraisons, et les zones de transbordement pourront à nouveau recevoir d'autres articles entrants.  
 4.  Choisissez l'action **Créer prélèvement**, puis remplissez la page de demande **Créer prélèvement**. Le tri que vous demandez ici organisera les lignes prélèvement que vous créez. Par exemple, vous pouvez créer un prélèvement pour chaque zone et trier les lignes selon le classement de zone au sein de chaque prélèvement.  
-5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Prélèvements**, puis sélectionnez le lien associé. La page **Prélèvements** s'ouvre.  
+5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements**, puis sélectionnez le lien associé. La page **Prélèvements** s'ouvre.  
 6.  Vous pouvez à présent trouver le prélèvement affecté que vous venez de créer en sélectionnant le prélèvement doté du numéro le plus élevé.  
 7.  Dans ce prélèvement, vous pouvez toujours au besoin modifier le code utilisateur de la personne à qui ce prélèvement est affecté, ainsi que le mode de tri des lignes.  
 8.  Choisissez l'action **Imprimer** pour imprimer les instructions relatives au prélèvement.  

@@ -1,8 +1,6 @@
 ---
 title: Comment ranger des articles avec le rangement stock | Microsoft Docs
 description: Lorsque votre emplacement est configuré pour exiger un traitement des classements, mais qu'il ne l'est pas pour un traitement des réceptions, vous utilisez le document **Article dans l'inventaire à classer** pour enregistrer et reporter les informations de classement et de réception pour vos documents origine. Le document source entrant peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un bon de production dont la production est prête à être rangée.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: aaf527802d9b49f84e0c4261d4658f01382efa45
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 35305a5adddf178748811dc66bbf5ed6047d77a1
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2313890"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2881712"
 ---
 # <a name="put-items-away-with-inventory-put-aways"></a>Ranger des articles avec le rangement stock
 Lorsque votre emplacement est configuré pour exiger un traitement des rangements, mais pas un traitement des réceptions, vous utilisez le document **Rangement inventaire** pour enregistrer et reporter les informations de rangement et de réception pour vos documents sources. Le document source entrant peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un ordre d'assemblage/un bon de production dont la production est prête à être rangée.  
@@ -31,11 +29,11 @@ Vous pouvez créer un rangement inventaire de trois manières :
 ## <a name="to-request-an-inventory-put-away-by-releasing-the-source-document"></a>Pour demander un rangement inventaire en libérant le document d'source
 Pour les bons de commande, les retours vente, les ordres de transfert entrants et les ordres d'assemblage, vous créez la demande entrepôt en libérant l'ordre. La section suivante décrit comment procéder à partir d'un bon de commande.  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de commande**, puis sélectionnez le lien associé.
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande**, puis sélectionnez le lien associé.
 2. Sélectionnez le bon de commande que vous voulez libérer, puis sélectionnez l'action **Libérer**.  
 
     Pour les bons de production, vous créez la demande entrepôt en créant une demande entrante à partir du bon de production libéré.  
-3.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de production libérés**, puis sélectionnez le lien associé.  
+3.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de production libérés**, puis sélectionnez le lien associé.  
 4. Choisissez l'action **Créer demande d'enlogement**.  
 
 > [!NOTE]  
@@ -45,7 +43,7 @@ Lorsque la demande entrepôt est créée, un employé d'entrepôt affecté aux r
 
 ## <a name="to-create-an-inventory-put-away-based-on-the-source-document"></a>Pour créer un rangement inventaire sur la base du document source
 Maintenant que la demande est créée, l'employé d'entrepôt peut créer un nouveau rangement inventaire sur la base du document source libéré.   
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rangement inventaire**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Rangement inventaire**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 3. Dans le champ **Document origine**, sélectionnez le type de document origine que vous rangez.  
 4. Dans le champ **N° origine**, sélectionnez le document origine.  
@@ -58,7 +56,7 @@ Maintenant que la demande est créée, l'employé d'entrepôt peut créer un nou
 3. Cliquez sur le bouton **OK**. Un nouveau rangement inventaire est créé.
 
 ## <a name="to-create-multiple-inventory-put-aways-with-a-batch-job"></a>Pour créer plusieurs rangements inventaire avec un traitement en lot  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Créer prélèv./rangement inventaire**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Créer prélèv./rangement inventaire**, puis sélectionnez le lien associé.  
 2.  Sur le raccourci **Demande entrepôt** de la page demande, utilisez les champs **Document origine** et **N° origine** pour opérer un filtrage sur certains types de documents ou des plages de numéros de document.  
 3.  Sur le raccourci **Options**, cochez la case **Créer rangement inventaire**.
 4.  Cliquez sur le bouton **OK**. Les rangements stock spécifiés sont créés.

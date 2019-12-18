@@ -1,8 +1,6 @@
 ---
 title: Procédure de création de packages de configuration de compagnie personnalisés | Microsoft Docs
 description: À mesure que vous développez votre entreprise, vous êtes susceptible d'utiliser un ensemble de types de compagnie pour la plupart de vos clients. Vous pouvez rationaliser votre processus d’implémentation en transformant ces types en packages de configuration de compagnie que vous pouvez réutiliser.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 6fd35133d16056b947db6680cc9a76cfccaa6a3c
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 99fad48961dc201a25af061cf982a1c65d9446bd
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2308097"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2878875"
 ---
 # <a name="create-custom-company-configuration-packages"></a>Créer des packages de configuration de compagnie personnalisés
 À mesure que vous développez votre entreprise, vous êtes susceptible d'utiliser un ensemble de types de compagnie pour la plupart de vos clients. Vous pouvez rationaliser votre processus d’implémentation en transformant ces types en packages de configuration de compagnie que vous pouvez réutiliser.  
@@ -39,7 +37,7 @@ Autrement, vous pouvez créer un colis qui inclut les tables qui définissent la
 -   Configuration report de taxe  
 -   Configuration du report d'inventaire  
 
-Pour visualiser la liste complète des tables de configuration, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration manuelle**, puis sélectionnez le lien associé.  
+Pour visualiser la liste complète des tables de configuration, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration manuelle**, puis sélectionnez le lien associé.  
 
 ## <a name="to-create-a-custom-company-configuration-package"></a>Pour créer un package de configuration de compagnie personnalisé  
 1.  Créer une nouvelle compagnie. Pour plus d'informations, voir [Création de compagnies dans Business Central](about-new-company.md).  

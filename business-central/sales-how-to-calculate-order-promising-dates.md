@@ -1,8 +1,6 @@
 ---
 title: 'Procédure : calculer des dates promesse livraison | Microsoft Docs'
 description: La fonction de configuration des promesses livraison est un outil permettant de calculer la date la plus proche à laquelle un article est disponible pour la livraison. Cette fonction crée également des lignes demande achat pour les dates que vous acceptez.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 575d83652dde83c9b12358788a96d00c70ffcda3
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 0bd5943f9c917f02fd319c07e51c95afb2de0a75
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2316342"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2882984"
 ---
 # <a name="calculate-order-promising-dates"></a>Calculer des dates promesse livraison
 Une compagnie doit pouvoir informer ses clients des dates de livraison de commande. La page **Lignes promesse de livraison** vous permet d'effectuer cette opération à partir d'une ligne document de vente.  
@@ -78,7 +76,7 @@ Le préparateur de commandes finit le processus CTP en acceptant les dates. Cela
 En plus de la promesse de livraison externe que vous pouvez effectuer sur la page **Lignes promesse de livraison**, vous pouvez également promettre des dates de livraison internes ou externes pour les articles de nomenclature. Pour plus d'informations, voir [Voir la disponibilité des articles](inventory-how-availability-overview.md).
 
 ## <a name="to-set-up-order-promising"></a>Pour configurer une promesse livraison  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration de promesse de commande**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration de promesse de commande**, puis sélectionnez le lien associé.  
 2. Entrez un numéro et un code unité de temps dans le champ **Décalage (durée)**. Sélectionnez l'une des options suivantes.  
 
     |Code|Description|  
@@ -96,14 +94,14 @@ En plus de la promesse de livraison externe que vous pouvez effectuer sur la pag
 
 ### <a name="to-enter-inbound-warehouse-handling-time-in-the-inventory-setup-page"></a>Pour entrer un délai d'enlogement sur la page Configuration de l'inventaire  
 Vous pouvez configurer un délai entrepôt par défaut pour l'inventaire et votre emplacement, à inclure dans le calcul de promesse livraison sur la ligne achat.    
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration de l'inventaire**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration inventaire**, puis sélectionnez le lien associé.  
 2. Sur le raccourci **Général**, dans le champ **Délai enlogement**, indiquez le nombre de jours que vous souhaitez inclure dans le calcul de la promesse de livraison.  
 
 > [!NOTE]  
 >  Si vous avez renseigné le champ **Délai enlogement** dans la **fiche magasin** pour votre magasin, ce champ est utilisé en tant que délai d'enlogement par défaut.  
 
 ### <a name="to-enter-inbound-warehouse-handling-time-on-location-cards"></a>Pour entrer des délais d'enlogement dans les fiches emplacement  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacement**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacement**, puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche emplacement appropriée.  
 3.  Sur le raccourci **Entrepôt**, dans le champ **Délai enlogement**, indiquez le nombre de jours que vous souhaitez inclure dans le calcul de la promesse de livraison.  
 
@@ -113,14 +111,14 @@ Vous pouvez configurer un délai entrepôt par défaut pour l'inventaire et votr
 ### <a name="to-enter-outbound-warehouse-handling-time-in-the-inventory-setup-page"></a>Pour entrer un délai de désenlogement sur la page Configuration de l'inventaire  
 Vous pouvez configurer un délai désenlogement par défaut pour l'inventaire, à inclure dans le calcul de promesse livraison sur la ligne de vente.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration de l'inventaire**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration inventaire**, puis sélectionnez le lien associé.  
 2. Sur le raccourci **Général**, dans le champ **Délai enlogement sortant**, indiquez le nombre de jours que vous souhaitez inclure dans le calcul de la promesse de livraison.  
 
 > [!NOTE]  
 >  Si vous avez renseigné le champ **Délai enlogement sortant** dans la fiche magasin pour votre magasin, ce champ est utilisé en tant que délai d'enlogement sortant par défaut.  
 
 ### <a name="to-enter-outbound-warehouse-handling-time-on-location-cards"></a>Pour entrer un délai de désenlogement sortant dans les fiches emplacement  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche emplacement appropriée.  
 3.  Sur le raccourci **Entrepôt**, dans le champ **Délai enlogement sortant**, indiquez le nombre de jours que vous souhaitez inclure dans le calcul de la promesse de livraison.  
 
@@ -129,12 +127,12 @@ Vous pouvez configurer un délai désenlogement par défaut pour l'inventaire, �
 
 ## <a name="to-make-an-item-critical"></a>Pour affecter le statut critique à un article  
 Avant qu'un article puisse être inclus dans le calcul de la promesse de livraison, il doit être signalé comme critique. Cette configuration garantit que les articles non critiques ne génèrent pas de calculs inutiles de promesse de livraison.   
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Articles**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche article appropriée.  
 3.  Sur le raccourci **Planifié**, sélectionnez le champ **Critique**.  
 
 ## <a name="to-calculate-an-order-promising-date"></a>Pour calculer une date promesse livraison  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Document de vente**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Document de vente**, puis sélectionnez le lien associé.  
 2.  Ouvrez le document de vente approprié et sélectionnez les lignes de document de vente que vous souhaitez que l'application calcule.  
 3.  Choisissez l'action **Promesse de livraison**, puis sélectionnez l'action **Lignes promesse de livraison**.  
 4.  Sélectionnez une ligne, puis l'une des options suivantes :  

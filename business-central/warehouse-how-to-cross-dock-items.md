@@ -1,8 +1,6 @@
 ---
 title: Comment transborder des articles | Microsoft Docs
 description: La fonctionnalité de transbordement est disponible si l'emplacement est configuré pour appeler un traitement des réceptions et des rangements entrepôt.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 49e67bbdcf67b750f0de0d0c890df00281e381e6
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 717f6db3e8d53a8b2d75b9a27749e353e5ff28bc
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2310382"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2876809"
 ---
 # <a name="cross-dock-items"></a>Transborder des articles
 La fonctionnalité de transbordement est disponible si l'emplacement est configuré pour appeler un traitement des réceptions et des rangements entrepôt.  
@@ -43,14 +41,14 @@ L'application ne crée pas d'enregistrement distinct concernant les articles tra
 
     Si vous utilisez des zones, créez une zone pour vos zones de transbordement, puis sélectionnez le champ **Zone transbordement**. Pour plus d'informations, voir [Configurer des emplacements de sorte qu'ils utilisent des zones](warehouse-how-to-set-up-locations-to-use-bins.md).  
 
-2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacement**, puis sélectionnez le lien associé.  
+2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacement**, puis sélectionnez le lien associé.  
 3.  Sur la page **Emplacement**, sélectionnez l'emplacement que vous souhaitez configurer pour le transbordement, puis choisissez l'action **Modifier**.  
 4.  Sur le raccourci **Entrepôt**, cochez la case **Utiliser transbordement**, puis renseignez le champ **Calc. date d'échéance transbordement** en y indiquant la période pendant laquelle le programme doit rechercher des opportunités de transbordement.
 
     L'option **Utiliser transbordement** n'est disponible que si vous avez coché les champs **Réception requise**, **Livraison requise**, **Prélèvement requis** et **Rangement requis**.  
 
 5.  Si vous utilisez des zones, dans le raccourci **Zones**, renseignez le champ **Code de zone transbord.** en y insérant le code de la zone à utiliser comme zone de transbordement par défaut.  
-6.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Unité de stock**, puis sélectionnez le lien associé.  
+6.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Unité de stock**, puis sélectionnez le lien associé.  
 7.  Pour chaque article ou unité de stock que vous souhaitez pouvoir transborder, sélectionnez l'article, puis cliquez sur l'action **Modifier**.
 8. Sur la page **Fiche unité de stock**, cochez la case **Utiliser transbordement**.  
 
@@ -58,7 +56,7 @@ L'application ne crée pas d'enregistrement distinct concernant les articles tra
 >  Le transbordement n'est possible que si votre emplacement est configuré pour exiger un traitement des réceptions et des rangements entrepôt.  
 
 ## <a name="to-cross-dock-items-without-viewing-the-opportunities"></a>Pour transborder des articles sans afficher les opportunités  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Réceptions entrepôt**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Réceptions entrepôt**, puis sélectionnez le lien associé.  
 2.  Créer des réceptions entrepôt pour un article qui est arrivé et qui pourrait nécessiter un transbordement. Pour plus d'informations, voir [Réceptionner des articles](warehouse-how-receive-items.md).  
 3.  Renseignez le champ **Qté à recevoir**, puis choisissez l'action **Calculer transbordement**.  
 
@@ -75,7 +73,7 @@ L'application ne crée pas d'enregistrement distinct concernant les articles tra
 7.  Pour enregistrer les articles transbordés comme étant rangés et disponibles pour le prélèvement, choisissez l'action **Enregistrer**.  
 
 ## <a name="to-cross-dock-items-after-viewing-the-opportunities"></a>Pour transborder des articles après avoir affiché les opportunités  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Réceptions entrepôt**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Réceptions entrepôt**, puis sélectionnez le lien associé.  
 2.  Créer des réceptions entrepôt pour un article qui est arrivé et qui pourrait nécessiter un transbordement. Pour plus d'informations, voir [Réceptionner des articles](warehouse-how-receive-items.md).  
 
     Vous souhaitez afficher les lignes document source demandant l'article avant de reporter la réception.  

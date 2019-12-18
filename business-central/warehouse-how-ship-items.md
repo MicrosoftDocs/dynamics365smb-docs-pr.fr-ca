@@ -1,8 +1,6 @@
 ---
 title: Comment livrer des articles | Microsoft Docs
 description: En fonction de votre configuration d'entrepôt, vous pouvez enregistrer la livraison sur le document d'entreprise sortant associé, comme un document de vente, directement, ou vous pouvez utiliser les documents livraison entrepôt qui respectent un flux de travail et s'intègrent à différentes activités entrepôt.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 239810db7fa6f7cd74aaebf94581f9ad76fd5599
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: a2bde69033ee208082662fa771616ac0b124d73e
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314686"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2876785"
 ---
 # <a name="ship-items"></a>Livrer des articles
 Lorsque vous livrez des articles provenant d'un entrepôt qui n'est pas configuré pour un traitement de livraison entrepôt, enregistrez simplement la livraison du document d'entreprise associé, comme un document de vente, une commande service, un retour vente ou un ordre de transfert sortant.
@@ -29,7 +27,7 @@ Lorsque vous livrez des articles à partir d'un entrepôt qui est configuré pou
 
 ## <a name="to-ship-items-with-a-sales-order"></a>Pour livrer des articles avec un document de vente
 La section suivante décrit comment recevoir des articles avec un bon de commande. Les étapes sont similaires pour les retours achat, les commandes service et les ordres de transfert sortants.  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Ouvrez un document de vente existant, ou créez-en un nouveau. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
 3. Dans le champ **Qté à livrer**, indiquez la quantité reçue.
 
@@ -41,7 +39,7 @@ Premièrement, vous créez un document livraison à partir d'un document source 
 
 ### <a name="to-create-a-warehouse-shipment"></a>Pour créer une livraison entrepôt
 Généralement, l'employé chargé de la livraison crée une livraison entrepôt.
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Livraisons entrepôt**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Livraisons entrepôt**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 
     Renseignez les champs du raccourci **Général**. Lorsque vous récupérez des lignes document origine,certaines des informations de l'en-tête sont copiées dans chaque ligne.  
@@ -74,12 +72,12 @@ Lorsque vous disposez des lignes à livrer, vous pouvez lancer le processus qui 
 
 ### <a name="to-pick-and-ship"></a>Pour effectuer un prélèvement et une livraison
 Généralement, un magasinier chargé du prélèvement crée un document prélèvement, ou ouvre un document prélèvement déjà créé.
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Livraisons entrepôt**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Livraisons entrepôt**, puis sélectionnez le lien associé.
 2. Sélectionnez la livraison entrepôt que vous souhaitez prélever, puis sélectionnez l'action **Créer prélèvement**.
 3. Renseignez les champs de la page de demande, puis cliquez sur le bouton **OK**. Le document prélèvement entrepôt spécifié est créé.
 
     Sinon, ouvrez un prélèvement entrepôt existant.
-4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Prélèvements**, puis sélectionnez le lien associé. Sélectionnez le prélèvement entrepôt que vous souhaitez utiliser.
+4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements**, puis sélectionnez le lien associé. Sélectionnez le prélèvement entrepôt que vous souhaitez utiliser.
 
     Si l'entrepôt est configuré pour utiliser des emplacements, alors les lignes prélèvement sont converties en lignes action Prélever et Ranger.
 

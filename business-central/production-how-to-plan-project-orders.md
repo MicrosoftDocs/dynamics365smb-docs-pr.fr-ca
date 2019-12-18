@@ -1,8 +1,6 @@
 ---
 title: Procédure de planification de projets de commandes | Microsoft Docs
 description: Cette tâche de planification est lancée à partir d'un document de vente et utilise la page **Planification document de vente**. Une fois que vous avez créé un bon de production projet, vous pouvez le planifier davantage à l'aide de la page **Planification commande**.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,24 +10,24 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: a9a98b654ee28fad43feeb827f7d97310df6d4a8
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: c090843a5adcca7fcdb5ba857ca06172a805fe90
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2313334"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2877769"
 ---
 # <a name="plan-project-orders"></a>Planifier les O.F. projets
 Cette tâche de planification est lancée à partir d'un document de vente et utilise la page **Planification document de vente**. Une fois que vous avez créé un bon de production projet, vous pouvez le planifier davantage à l'aide de la page **Planification commande**.  
 
 ## <a name="to-create-a-project-production-order"></a>Pour créer un bon de production projet  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Sélectionnez le document de vente qui représente le projet de production, puis choisissez l'action **Planification**.  
 4.  Sur la page **Planification document de vente**, choisissez l'action **Créer bon de prod.**.  
 5.  Sur la page **Créer commande à partir des ventes**, sélectionnez **O.F. projet** dans le champ **Type O.F**.  
 6.  Cliquez sur le bouton **Oui**.  
-7.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Ordres de production**, puis sélectionnez le lien associé.
+7.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de production**, puis sélectionnez le lien associé.
 8. Ouvrez le bon de production que vous venez de créer.  
 
     Notez que le champ **Type origine** de l'ordre de fabrication indique **En-tête vente** et l'ordre comporte plusieurs lignes, une pour chaque article de la ligne vente à produire.  

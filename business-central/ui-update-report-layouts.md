@@ -1,25 +1,23 @@
 ---
 title: Mise à jour d'une présentation de rapport | Microsoft Docs
 description: Vous pouvez être amené à mettre à jour une présentation de rapport personnalisée qui est utilisée dans un rapport. Cela est nécessaire si une modification de conception a été apportée à l'ensemble de données de rapport, par exemple, si un champ utilisé dans la présentation a été supprimé de l'ensemble de données de rapport.
-services: project-madeira
-documentationcenter: ''
-author: jswymer
+author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
-ms.author: jswymer
-ms.openlocfilehash: 9bc4879e6461ad9a2a1f88e2c877bc80d27c2206
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.date: 11/15/2019
+ms.author: sgroespe
+ms.openlocfilehash: 7a9389134c57d60999be2019a1e4394f8c3a00e5
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314998"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2876953"
 ---
-# <a name="updating-report-or-document-layouts"></a>Mise à jour des présentations de rapport ou de document
+# <a name="update-custom-report-layouts"></a>Mettre à jour les présentations de rapport personnalisées
 À l'occasion, vous pouvez être amené à mettre à jour une présentation de rapport personnalisée qui est utilisée dans un rapport. Cela est nécessaire si une modification de conception a été apportée à l'ensemble de données de rapport, par exemple, si un champ utilisé dans la présentation a été supprimé de l'ensemble de données de rapport. Si une présentation de rapport requiert une mise à jour, vous obtiendrez un message d'erreur lorsque vous tentez de visualiser, d'imprimer ou d'enregistrer le rapport.  
 
 Vous pouvez mettre à jour automatiquement une présentation de rapport à partir du message d'erreur qui s'affiche lorsque vous lancez le rapport en cliquant sur le bouton **Oui** du message d'erreur. Ou, avant l'exécution des rapports, vous pouvez mettre à jour des présentations de rapport spécifiques ou toutes les présentations de rapport personnalisées susceptibles d'être affectées par les modifications de l'ensemble de données.  
@@ -30,7 +28,7 @@ Certaines modifications de l'ensemble de données de rapport peuvent être autom
 
 ## <a name="to-update-one-or-more-custom-report-layouts"></a>Pour mettre à jour une ou plusieurs présentations de rapport personnalisées  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Présentations rapport**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Présentations de rapport**, puis sélectionnez le lien associé.  
 
 2.  Sur la page **Présentations rapport**, si vous souhaitez mettre à jour un rapport spécifique, sélectionnez la présentation dans la liste, puis choisissez l'action **Mettre à jour présentation**. Ou, si vous souhaitez mettre à jour toutes les présentations de rapport personnalisées pour la compagnie, choisissez l'action **Mettre à jour toutes les présentations**.  
 
@@ -38,7 +36,7 @@ Si aucune erreur ne se produit, la mise à jour est appliquée aux présentation
 
 ## <a name="to-test-custom-report-layout-updates"></a>Pour tester les mises à jour de présentations de rapport personnalisées  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Sélection présentation rapport**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Sélection de présentation de rapport**, puis sélectionnez le lien associé.  
 
 2.  Sur la page **Sélection présentation rapport**, choisissez l'action **Mises à jour présentation test**.  
 

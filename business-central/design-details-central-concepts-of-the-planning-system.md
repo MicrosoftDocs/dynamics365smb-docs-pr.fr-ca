@@ -1,8 +1,6 @@
 ---
 title: Détails de conception - Concepts centraux du système de planification | Microsoft Docs
 description: Les fonctions de planification se trouvent dans un traitement en lot qui sélectionne d'abord les articles appropriés et la période à planifier. Il suggère ensuite les tâches que l'utilisateur peut effectuer en fonction de la situation offre/demande et des paramètres de planification des articles.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 025b8fb9100d8418e9e157e8098afe19d24843fc
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 92c30770b62b6456a16ab26db2c4ea3cda526b8e
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2303758"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2880602"
 ---
 # <a name="design-details-central-concepts-of-the-planning-system"></a>Détails de conception : concepts centraux du système de planification
 Les fonctions de planification se trouvent dans un traitement en lot qui sélectionne d'abord les articles appropriés et la période à planifier. Puis, en fonction du code de bas niveau de chaque article (ligne nomenclature), le traitement en lot appelle un codeunit qui calcule un programme d'approvisionnement en équilibrant les séries offre-demande et en suggérant des actions possibles que l'utilisateur doit prendre. Les actions suggérées apparaissent sous forme de lignes dans la feuille planification ou la feuille de réquisition.  
@@ -70,11 +68,11 @@ Le système de planification traite l'ensemble de la configuration de demande et
 
 Le chaînage dynamique crée des liens entre la demande et l'approvisionnement lorsque les données sont saisies, sur la base du principe premier arrivé, premier servi. Cela peut conduire du désordre dans les priorités. Par exemple, un document de vente saisi en premier, avec une date d'échéance au mois suivant, peut être lié à l'approvisionnement en inventaire, alors que le document de vente suivant à échéance le lendemain peut entraîner la création d'un bon de commande par un message d'action afin de le couvrir, comme illustré ci-dessous.  
 
-![Exemple de chaînage dans la planification de l'approvisionnement 1](media/NAV_APP_supply_planning_1_dynamic_order_tracking_graph.png "Exemple de chaînage dans la planification de l'approvisionnement 1")  
+![Exemple de chaînage dans la planification de l'approvisionnement 1](media/NAV_APP_supply_planning_1_dynamic_order_tracking_graph.png "Exemple de chaînage dans la planification de l'approvisionnement 1")  
 
 Par contre, le système de planification traite l'ensemble des demandes et approvisionnements pour un article spécifique, par ordre de priorité en fonction des dates d'échéance et des types de commande., c.-à-d., sur la base du principe de priorité selon les besoins. Il supprime les liens traçabilité commande qui ont été créés de façon dynamique et les rétablit en fonction de la priorité date d'échéance. Lorsque le système de planification a été exécuté, il a résolu tous les déséquilibres entre la demande et l'approvisionnement, comme illustré ci-dessous pour les mêmes données.  
 
-![Exemple de chaînage dans la planification de l'approvisionnement 2](media/NAV_APP_supply_planning_1_planning_graph.png "Exemple de chaînage dans la planification de l'approvisionnement 2")  
+![Exemple de chaînage dans la planification de l'approvisionnement 2](media/NAV_APP_supply_planning_1_planning_graph.png "Exemple de chaînage dans la planification de l'approvisionnement 2")  
 
 Après l'exécution de la planification, il ne reste aucun message d'action dans la table Écriture message d'action, parce qu'ils ont été remplacés par les actions suggérées dans la feuille planification  
 
@@ -101,7 +99,7 @@ Ceci est pris en charge avec l'utilisation des unités de stock, où des paramè
 
 En principe, tout article peut être traité dans n'importe quel emplacement, mais l'approche de l'application vis-à-vis du concept d'emplacement est assez stricte. Par exemple, un document de vente dans un emplacement ne peut pas être satisfait par une certaine quantité en inventaire dans un autre emplacement. La quantité en inventaire doit d'abord être transférée à l'emplacement spécifié sur le document de vente.  
 
-![Planification pour unités de stock](media/NAV_APP_supply_planning_1_SKU_planning.png "Planification pour unités de stock")  
+![Planification d'unités de stock](media/NAV_APP_supply_planning_1_SKU_planning.png "Planification d'unités de stock")  
 
 Pour plus d'informations, voir [Détails de conception : transferts de planification](design-details-transfers-in-planning.md)  
 
@@ -110,8 +108,8 @@ Dans une unité de stock donnée, la date demandée ou disponible représente la
 
 Pour plus d'informations, voir [Détails de conception : Affecter une priorité aux commandes](design-details-prioritizing-orders.md).  
 
-## <a name="demand-forecasts-and-blanket-orders"></a>Prévisions de demande et commandes ouvertes  
-Les prévisions et les commandes ouvertes représentent la demande anticipée. La commande ouverte, qui regroupe les achats prévus d'un client sur une certaine période, se charge d'amortir l'incertitude de la prévision globale. La commande ouverte est une prévision spécifique au client qui s'ajoute à la prévision non spécifiée comme illustré ci-dessous.  
+## <a name="demand-forecasts-and-blanket-orders"></a>Prévisions de demande et commandes permanentes  
+Les prévisions et les commandes permanentes représentent la demande anticipée. La commande permanente, qui regroupe les achats prévus d'un client sur une certaine période, contribue à réduire l'incertitude de la prévision globale. La commande permanente est une prévision spécifique au client qui s'ajoute à la prévision non spécifiée comme illustré ci-dessous.  
 
 ![Planification avec prévisions](media/NAV_APP_supply_planning_1_forecast_and_blanket.png "Planification avec prévisions")  
 

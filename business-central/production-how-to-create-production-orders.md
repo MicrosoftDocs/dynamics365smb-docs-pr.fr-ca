@@ -1,8 +1,6 @@
 ---
 title: Procédure de création d'en-têtes d'ordre de fabrication | Microsoft Docs
 description: Vous pouvez créer manuellement un bon de production. Pour cela, la première étape est de créer un en-tête bon de production
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: fc0a0dda33b7b90658ca60285abab0562c28fbbc
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 2088cd12faaefb2d9902cad0cc149d209f905f71
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314130"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2877985"
 ---
 # <a name="create-production-order-headers"></a>Créer des en-têtes O.F.
 Vous pouvez créer manuellement un bon de production. Pour cela, la première étape est de créer un en-tête bon de production
@@ -27,7 +25,7 @@ Les ordres de fabrication sont généralement créés automatiquement par une fo
 La procédure suivante se base sur un bon de production planifié ferme. Vous pouvez aussi créer des bons de production dotés d'un autre état.  
 
 ## <a name="to-create-a-production-order-header"></a>Pour créer un en-tête bon de production  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de production planifiés fermes**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de production planifiés fermes**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Dans le champ **N°**, insérez le numéro suivant de la souche.  
 4.  Dans le champ **Type origine**, sélectionnez la source de l'ordre de fabrication.
@@ -42,6 +40,6 @@ Lorsque les exigences de production évoluent, comme les composantes ou les opé
 [Production](production-manage-manufacturing.md)    
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Planification](production-planning.md)      
-[Stock](inventory-manage-inventory.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

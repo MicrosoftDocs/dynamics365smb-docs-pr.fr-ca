@@ -1,8 +1,6 @@
 ---
 title: Rupture de charge automatique avec prélèvement et rangement dirigé | Microsoft Docs
 description: Pour les emplacements qui utilisent un prélèvement et un rangement suggérés, vous pouvez diviser une unité de mesure plus grande en unités de mesure plus petites lors de la création d'instructions entrepôt répondant aux exigences de documents sources, de bons de production ou de prélèvements et de rangements internes.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: b56da66ac87fddbce761ba2ce63edf281efdab19
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 668837945a850552821d435f56c6374982cc6c8f
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314737"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2876857"
 ---
 # <a name="enable-automatic-breaking-bulk-with-directed-put-away-and-pick"></a>Activer la rupture de charge automatique avec prélèvement et rangement dirigé
 Pour les emplacements qui utilisent un prélèvement et un rangement suggérés, [!INCLUDE[d365fin](includes/d365fin_md.md)] peut procéder, dans de nombreux cas, à un déconditionnement automatique (division d'une unité de mesure plus grande en unités de mesure plus petites) lorsqu'il crée des instructions entrepôt répondant aux exigences de documents sources, de bons de production ou de prélèvements et de rangements internes. Parfois, le déconditionnement peut également nécessiter le regroupement de petites unités de mesure afin de répondre à des demandes sortantes en divisant l'unité de mesure la plus grande du document origine ou du bon de production en unités de mesure plus petites disponibles dans l'entrepôt.   

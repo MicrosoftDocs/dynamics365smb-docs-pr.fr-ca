@@ -1,8 +1,6 @@
 ---
 title: Détails de conception - Flux d'enlogement entrant | Microsoft Docs
 description: Le flux entrant dans un entrepôt commence à l'arrivée des articles dans l'entrepôt de l'emplacement de la compagnie, qu'ils proviennent de sources externes ou d'un autre emplacement de la compagnie. Un employé enregistre les articles, généralement en numérisant un code barre. Depuis le quai de réception, des activités entrepôt sont effectuées à différents niveaux de complexité pour amener les articles dans la zone de stockage.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 1b8a30732b0bf562e54d74c6477c95c36a5ab524
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 8c7dd9f8ed55465a45ef843ebf2a996b79b454f3
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2303494"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2880453"
 ---
 # <a name="design-details-inbound-warehouse-flow"></a>Détails de conception : flux d'enlogement
 Le flux entrant dans un entrepôt commence à l'arrivée des articles dans l'entrepôt de l'emplacement de la compagnie, qu'ils proviennent de sources externes ou d'un autre emplacement de la compagnie. Un employé enregistre les articles, généralement en numérisant un code barre. Depuis le quai de réception, des activités entrepôt sont effectuées à différents niveaux de complexité pour amener les articles dans la zone de stockage.  

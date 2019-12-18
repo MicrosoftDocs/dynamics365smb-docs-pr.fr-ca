@@ -1,8 +1,6 @@
 ---
 title: Configurer la génération de rapports de pannes dans Gestion des services | Microsoft Docs
 description: Découvrez comment configurer les processus de génération de rapports de pannes.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 8c3d770f1ee6e0c50439f5d0a4591c463b91631a
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 26e8e5dcd7ca3e69a3f7fbdfbe8c93d866cbce7d
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2316198"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2882941"
 ---
 # <a name="set-up-fault-reporting"></a>Configurer le rapport de panne
 La génération de rapports de pannes permet d'établir des normes d'enregistrement des informations de panne pour les articles de service. Par exemple, vous pouvez spécifier la nature du problème, les symptômes visibles, le motif du problème et la solution pour le résoudre.  
@@ -25,7 +23,7 @@ La génération de rapports de pannes permet d'établir des normes d'enregistrem
 Les codes panne décrivent les pannes article de service courantes ou les actions effectuées au niveau des articles de service. En fonction du niveau de rapport panne de votre compagnie, il peut être nécessaire de configurer les codes de zone panne et symptôme avant les codes panne. Les zones panne décrivent les zones de pannes article de service. Les codes motif panne décrivent le motif des pannes article de service et, si nécessaire, indiquent si les escomptes garantie et contrat doivent être exclus. Par exemple, vous pouvez être amené à exclure les escomptes garantie et contrat si le client est responsable de la panne de l'article de service. Vous affectez des codes motif panne aux commandes service. Pour plus d'informations, voir [Travailler sur des tâches service](service-how-to-work-on-service-tasks.md).  
 
 ## <a name="to-specify-the-overall-level-of-fault-reporting-to-use"></a>Pour spécifier le niveau global de la génération de rapports de pannes à utiliser
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration du service**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration de service**, puis sélectionnez le lien associé.
 2. Dans le champ **Niveau rapport panne**, sélectionnez l'une des options décrites dans le tableau suivant.  
 
     |**Niveau de panne**|**Description**|  
@@ -41,7 +39,7 @@ Pour terminer la configuration du rapport panne, vous pouvez également spécifi
 <!--this needs to go in a working with topic-->
  Pour pouvoir visualiser, lors de la maintenance des articles, les modes de réparation les plus courants se rapportant à des pannes article particulières, vous devez regrouper des informations sur les relations codes panne/solution. Utilisez le traitement en lot **Insérer relations codes P/S** pour rechercher toutes les combinaisons de codes panne/solution dans des commandes service reportées et les enregistrer sur la page **Relations codes panne/solution**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Insérer relations codes P/S**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Insérer relations codes P/S**, puis sélectionnez le lien associé.  
 2. Entrez des dates pour définir la période à inclure dans le traitement en lot.  
 3. Pour regrouper les relations par groupe d'articles de service, activez la case à cocher **Relations définies à partir des groupes articles de service**.  
 4. Pour conserver les enregistrements que vous avez déjà insérés manuellement sur la page **Relations codes panne/solution**, activez la case à cocher **Conserver enreg. insérés manuellement**.  

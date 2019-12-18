@@ -1,8 +1,6 @@
 ---
 title: Aperçu de la ligne de report dans le journal général | Microsoft Docs
 description: Cette rubrique décrit les modifications du codeunit 12, **Journal général-Ligne report**, qui est l'objet d'application majeur pour le report dans le grand livre et est le seul emplacement pour insérer des écritures grand livre, des écritures TVA et des écritures client et fournisseur.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: design, general ledger, post
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 5589aa476662a9dff69e95d70367ae4c5e45aaba
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 9de46d66fe13a798dda812b74f19b9ed247b84fd
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2303566"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2880410"
 ---
 # <a name="general-journal-post-line-overview"></a>Aperçu de la ligne report de journal général
 Le Codeunit 12, **Journal général-Ligne report**, est l'objet d'application majeur pour le report dans le grand livre et est le seul emplacement pour insérer des écritures GL, TVA, et client et fournisseur. Ce codeunit est également utilisé pour toutes les opérations Affecter, Annuler l'affectation et Inverser.  

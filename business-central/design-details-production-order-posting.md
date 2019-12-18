@@ -1,8 +1,6 @@
 ---
 title: 'Détails de conception : report de bon de production | Microsoft Docs'
 description: Comme pour le report d'ordre d'assemblage, les composantes consommées et le temps du poste utilisé sont convertis et sortis en tant qu'article produit lorsque le bon de production est terminé.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: e6379530eed2c0e3881dd951fbd09602360e5fad
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 9feb2f4f484d2c8769c133696287252663a96997
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2306902"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2878471"
 ---
 # <a name="design-details-production-order-posting"></a>Détails de conception : validation d'ordre de fabrication
 Comme pour le report d'ordre d'assemblage, les composantes consommées et le temps du poste utilisé sont convertis et sortis en tant qu'article produit lorsque le bon de production est terminé. Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-assembly-order-posting.md). Toutefois, le flux des coûts des ordres d'assemblage est moins complexe, notamment parce que le report du coût d'assemblage ne se produit qu'une fois et ne génère donc pas d'inventaire travaux en cours.
@@ -64,7 +62,7 @@ Le schéma suivant montre les routines de report impliquées dans le codeunit 2
 
 Le schéma suivant montre les associations entre les écritures générées et les objets de coûts.  
 
-![Flux d'écritures de fabrication](media/design_details_inventory_costing_14_production_posting_2.png "Flux d'écritures de fabrication")  
+![Flux d'écritures de production](media/design_details_inventory_costing_14_production_posting_2.png "Flux d'écritures de production")  
 
 L'écriture capacité décrit la consommation de la capacité en termes d'unités de temps, alors que l'écriture valeur associée décrit la valeur de la consommation de capacité spécifique.  
 

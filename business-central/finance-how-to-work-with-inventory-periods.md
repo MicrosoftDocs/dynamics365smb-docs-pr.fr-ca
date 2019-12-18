@@ -1,8 +1,6 @@
 ---
 title: "Procédure : utiliser les périodes d'inventaire | Microsoft Docs"
 description: Vous pouvez contrôler le délai de report des modifications de l'inventaire en définissant des périodes d'inventaire.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: inventory, periods
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 1a88456e91b3398ac9cae1b64ebdd80644b5d0aa
-ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
+ms.openlocfilehash: 8b2a34db5d4e40f99fceb844150312d6c6dffc55
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2554048"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2879642"
 ---
 # <a name="work-with-inventory-periods"></a>Utiliser les périodes d'inventaire
 Les périodes d'inventaire sont des périodes au cours desquelles vous pouvez reporter des modifications d'inventaire. Une période d'inventaire est définie par la date à laquelle elle se termine (date fin). Lorsque vous fermez une période d'inventaire, vous ne pouvez pas reporter de modifications d'inventaire, qu'elles soient prévues ou facturées, avant cette date fin. Vous ne pouvez pas reporter de nouvelles valeurs dans l'inventaire avant la date de fin. Si vous avez des écritures du grand livre d'articles ouvertes dans la période fermée, ce qui signifie des quantités positives qui n'ont pas encore été affectées sur des transactions sortantes, vous pouvez encore affecter des quantités sortantes sur ces écritures, même si la période est fermée.  
@@ -29,7 +27,7 @@ Les sections suivantes décrivent comment :
 * Rouvrir des périodes inventaire.  
 
 ## <a name="to-create-an-inventory-period"></a>Pour créer une période d'inventaire  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Périodes d'inventaire**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Périodes d'inventaire**, puis sélectionnez le lien associé.  
 2. Créez une ligne.  
 3. Dans le champ **Date fin**, entrez la dernière date que vous voulez définir pour la période inventaire. Une fois la période fermée, vous ne pouvez plus reporter de modifications d'inventaire antérieures à cette date.  
 4. Saisissez un nom descriptif dans le champ **Nom**. Cliquez sur le bouton **OK**.  
@@ -61,7 +59,7 @@ Cela signifie que toutes les quantités de transaction sortante, telles que cell
 Une fois la période d'inventaire fermée, vous ne pouvez plus la supprimer. En revanche, vous pouvez la rouvrir si vous voulez autoriser son report avant la date fin. La réouverture d'une période rouvre également toutes les périodes inventaire dont la date fin est postérieure à la fin de la période que vous rouvrez.  
 
 ### <a name="to-reopen-an-inventory-period"></a>Pour rouvrir une période d'inventaire  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Périodes d'inventaire**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Périodes d'inventaire**, puis sélectionnez le lien associé.  
 2. Sélectionnez la période d'inventaire que vous voulez rouvrir.  
 3. Sélectionnez l'action de la période **Rouvrir période**. Confirmez que vous voulez réouvrir la période.  
 4. Toutes les périodes inventaire dont la date fin est postérieure à la fin de la période sélectionnée sont réouvertes.  
@@ -69,5 +67,5 @@ Une fois la période d'inventaire fermée, vous ne pouvez plus la supprimer. En 
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : périodes inventaire](design-details-inventory-periods.md)  
 [Finance](finance.md)  
-[Stocks](inventory-manage-inventory.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Utilisation de Financials](ui-work-product.md)

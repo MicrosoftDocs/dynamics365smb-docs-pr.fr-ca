@@ -1,8 +1,6 @@
 ---
 title: Création des budgets des coûts | Microsoft Docs
 description: Cette rubrique décrit l'emplacement où créer et analyser les budgets des coûts.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,21 +10,21 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: c107daa3725cf2f8b06039655738e8763cc0f6b1
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 33999778898c671a87638ef5868103ea34875ff8
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2306422"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2879834"
 ---
 # <a name="creating-cost-budgets"></a>Création des budgets des coûts
 La budgétisation en comptabilité analytique ressemble à la budgétisation dans le grand livre. Un budget de coûts est créé en fonction des types de coûts, tel qu'un budget est créé pour les écritures en fonction des comptes du grand livre.  
 
 Un budget des coûts est créé pour une certaine période, par exemple, un exercice financier. Vous pouvez créer autant de budgets de coûts que vous le souhaitez. Vous pouvez créer un budget de coûts manuellement, en important un budget de coûts ou en copiant un budget de coûts existant comme base budgétaire. Pour plus d'informations, voir [Créer des budgets GL](finance-how-create-budgets.md).
 
-Vous utilisez les pages suivantes pour créer et analyser les budgets de coûts. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), pour rechercher une page et lire l'info-bulle de chacune.
+Vous utilisez les pages suivantes pour créer et analyser les budgets de coûts. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") pour rechercher une page et lire l'info-bulle de chacune.
 
-|À|Voir|  
+|Pour|Voir|  
 |--------|---------|  
 |Transférez des budgets à partir du grand livre.|Traitement en lot **Copier budget GL vers comptabilité analytique**|  
 |Copiez le budget des coûts.|Traitement en lot **Copier le budget des coûts**|  

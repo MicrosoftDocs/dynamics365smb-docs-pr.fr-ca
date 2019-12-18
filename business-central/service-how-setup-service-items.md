@@ -1,8 +1,6 @@
 ---
 title: Configurer des articles de service et des composantes article de service | Microsoft Docs
 description: Découvrez les éléments que vous devez configurer avant de pouvoir utiliser des articles de service, notamment les valeurs par défaut telles que le délai de réponse, le pourcentage escompte de paiement contrat et le groupe tarifs service.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 41c2a4ea5a79f7fe66eaae93c7bffa2c7bbe3d2e
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 196f3d73827f03ce03e4990039779d8f814295ff
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2316126"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2877409"
 ---
 # <a name="set-up-service-items-and-service-item-components"></a>Configurer les articles de service et les composantes article de service
 Pour utiliser les articles de service, vous devez configurer
@@ -30,7 +28,7 @@ Vous pouvez configurer des groupes d'articles associés en termes de réparation
 
 Vous pouvez affecter des groupes articles de service à des articles sur la fiche **Article** et à des articles de service sur la fiche **Article de service**.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Groupes articles de service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Groupes articles de service**, puis sélectionnez le lien associé.  
 2. Créez un groupe articles de service.  
 3. Renseignez les champs **Code** et **Désignation**.  
 4. Dans le champ **% remise contrat par défaut**, saisissez le pourcentage remise contrat par défaut que vous souhaitez attribuer aux articles de service du groupe.  
@@ -41,7 +39,7 @@ Vous pouvez affecter des groupes articles de service à des articles sur la fich
 ## <a name="to-set-up-service-item-components"></a>Pour configurer des composants article de service
 Un article de service peut être constitué de plusieurs composants pouvant être remplacés par des pièces de rechange lors de la maintenance de l'article. Vous pouvez configurer ces composantes sur la page **Liste composantes art. service**. En outre, si vous souhaitez configurer des composantes pour des articles de service qui sont des nomenclatures, vous pouvez copier les articles de nomenclature et les créer en tant que composantes article de service.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Articles de service**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles de service**, puis sélectionnez le lien associé.
 2. Ouvrez l'article de service pour lequel vous voulez configurer des composants.  
 3. Sélectionnez l'action **Composantes**. La page **Liste composantes art. service** s'ouvre.  
 4. Ajouter une nouvelle composante.  
@@ -49,7 +47,7 @@ Un article de service peut être constitué de plusieurs composants pouvant êtr
 6. Dans le champ **N°**, choisissez l'article ou l'article de service qui est une composante de l'article de service.  
 
 ## <a name="to-set-up-service-item-components-from-a-bom"></a>Pour configurer des composants article de service à partir de nomenclatures
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Articles de service**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles de service**, puis sélectionnez le lien associé.  
 2. Ouvrez l'article de service pour lequel vous voulez configurer des composants à partir d'une nomenclature.  
 3. Sélectionnez l'action **Composantes**. La page **Liste composantes art. service** s'ouvre.  
 4. Choisissez l'action **Copier à partir de nomenclature**.  
@@ -59,7 +57,7 @@ Un article de service peut être constitué de plusieurs composants pouvant êtr
 ## <a name="to-set-up-a-service-shelf"></a>Pour configurer une tablette service
 Vous pouvez configurer des tablettes de service qui identifient l'emplacement de stockage de vos articles de service. Vous pouvez affecter des tablettes de service à des articles de service dans les pages **Commande service** et **Feuille activité article de service**.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Tablettes service**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Rayons service**, puis sélectionnez le lien associé.
 2. Renseignez les champs selon vos besoins.
 
 ## <a name="see-also"></a>Voir aussi

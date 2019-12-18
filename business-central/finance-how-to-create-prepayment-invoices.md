@@ -1,8 +1,6 @@
 ---
 title: 'Procédure : créer des factures de paiement anticipé | Microsoft Docs'
 description: Découvrez comment gérer les situations où votre fournisseur ou vous-même exigez un paiement anticipé.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 5841329a2e369be081c2728edf1837e85859f38e
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: ee10367990ebb0e60879ac885ad03072dd877c2a
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2302150"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2879738"
 ---
 # <a name="create-prepayment-invoices"></a>Créer des factures de paiement anticipé
 Si vous voulez que vos clients fassent des paiements avant de leur livrer une commande ou si votre fournisseur exige que vous fassiez un paiement avant de vous livrer une commande, vous pouvez utiliser la fonctionnalité Paiement anticipé.  
@@ -27,7 +25,7 @@ Après avoir créé un document de vente ou un bon de commande, vous pouvez cré
 La procédure suivante décrit comment facturer un paiement anticipé pour des documents de vente. La procédure est identique pour les bons de commande.  
 
 ## <a name="to-create-a-prepayment-invoice"></a>Pour créer une facture paiement anticipé  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2. Créez un document de vente. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).  
 
     Sur le raccourci **Acompte** le champ **% acompte** est renseigné automatiquement si un pourcentage d'acompte par défaut figure sur la fiche client. Vous pouvez modifier le contenu du champ. Le pourcentage de paiement anticipé est uniquement copié à partir de l'en-tête vers les lignes qui ne copient pas le pourcentage de paiement anticipé par défaut à partir de l'article.  
@@ -63,6 +61,6 @@ Vous pouvez émettre des factures paiement anticipé supplémentaires pour la co
 
 ## <a name="see-also"></a>Voir aussi  
 [Facturation de paiements anticipés](finance-invoice-prepayments.md)  
-[Procédure pas à pas : configuration et facturation d'acomptes](walkthrough-setting-up-and-invoicing-sales-prepayments.md)  
+[Procédure pas à pas : Configuration et facturation de paiements anticipés](walkthrough-setting-up-and-invoicing-sales-prepayments.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

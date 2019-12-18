@@ -1,8 +1,6 @@
 ---
 title: 'Procédure : réserver des articles | Microsoft Docs'
 description: Vous pouvez réserver des articles pour les documents de vente, les bons de commande et les bons de production. Vous pouvez réserver des articles en inventaire ou entrants sur les lignes document ouvertes.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 8e951085df03dbb2ca444a9ab62db87447ec1368
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: a6e17d357aeb39f9a77266ae9e8593702080d389
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2309758"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2878299"
 ---
 # <a name="reserve-items"></a>Réserver des articles
 Vous pouvez réserver des articles pour les documents de vente, les bons de commande, les commandes service, les ordres d'assemblage et les bons de production. Vous pouvez réserver des articles en inventaire ou entrants sur les lignes document ou journal ouvertes. Vous effectuez le travail sur la page **Réservation**.
@@ -26,7 +24,7 @@ Chaque ligne de la page **Réservation**, que vous ouvrez pour réserver des art
 
 ## <a name="to-reserve-items-for-sales"></a>Pour réserver des articles pour des ventes
 Ce qui suit décrit comment réserver des articles pour un document de vente. Les étapes sont similaires à celles des commandes achat, service et ordre d'assemblage.  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Dans un document de vente, sur le raccourci **Lignes**, sélectionnez l'action **Réserver**. La page **Réservation** s’affiche.  
 3. sélectionnez la ligne à partir de laquelle vous souhaitez réserver des articles.  
 4. Choisissez l'une des actions suivantes.  
@@ -44,7 +42,7 @@ Ce qui suit décrit comment réserver des articles pour un document de vente. Le
 Vous pouvez réserver des articles pour des ordres de fabrication. Vous devez distinguer les lignes bon de production, correspondant à l'article parent, et les composantes bon de production.
 
 La procédure suivante se base sur un bon de production planifié ferme.   
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **O.F. planifié ferme**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bon de production planifié ferme**, puis sélectionnez le lien associé.  
 2. Ouvrez l'O.F. planifié ferme pour lequel vous souhaitez réserver des articles parents.  
 3. Sélectionnez la ligne bon de production concernée.  
 4. Sur le raccourci **Lignes**, choisissez l'action **Réserver**.
@@ -56,7 +54,7 @@ La quantité entrée dans la ligne bon de production planifié ferme est désorm
 Vous pouvez réserver des articles pour des ordres de fabrication. Vous devez distinguer les lignes bon de production, correspondant à l'article parent, et les composantes bon de production.
 
 La procédure suivante se base sur un bon de production planifié ferme.    
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **O.F. planifié ferme**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bon de production planifié ferme**, puis sélectionnez le lien associé.  
 2. Ouvrez le bon de production planifié ferme pour lequel vous souhaitez réserver des articles composante.  
 3. Sélectionnez la ligne bon de production concernée.  
 4. Sur le raccourci **Lignes**, choisissez **Ligne**, puis **Composantes**.  
@@ -86,7 +84,7 @@ Vous pouvez parfois avoir à annuler une réservation d'article.
 Il s'agit d'une réservation spécifique, parce que vous réservez à partir de la quantité de l'article X qui appartient au Lot X. Si vous réservez seulement à partir des quantités de l'article X, la réservation est normale, non spécifique. Pour plus d'informations, reportez-vous à [Détails de conception : traçabilité et réservations](design-details-item-tracking-and-reservations.md).
 
 La procédure suivante se base sur un document de vente.    
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2. Créez une ligne document de vente d'un article suivi.  
 3. Affectez des numéros de série et de lot à la ligne document de vente. Pour plus d'informations, voir [Utiliser les numéros de lot et de série](inventory-how-work-item-tracking.md).
 4. Sur la ligne document de vente, sélectionnez l'action **Réserver**.  

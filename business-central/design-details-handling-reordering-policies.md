@@ -1,8 +1,6 @@
 ---
 title: Détails de conception - Gestion des méthodes de réapprovisionnement | Microsoft Docs
 description: Aperçu des tâches pour définir une méthode de réapprovisionnement dans la planification des approvisionnements.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 53d9d0ff2d9d1f42bb7f9c05ed49aa4df20f2a92
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 0708a78be4dbd70d8555b8c088fedd88d3fb5459
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2307166"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2880482"
 ---
 # <a name="design-details-handling-reordering-policies"></a>Détails de conception : gestion des méthodes de réapprovisionnement
 Pour qu'un article participe à la planification des approvisionnements, une méthode de regroupement doit être définie. Les quatre méthodes de réapprovisionnement disponibles sont les suivantes :  
@@ -105,7 +103,7 @@ Lors de l'utilisation des stratégies Qté maximum et Qté fixe de commande, le 
 
 *Attention : l'inventaire prévisionnel [xx] est supérieur au niveau de dépassement de capacité [xx] à la date d'échéance [xx].*  
 
-![Niveau de dépassement de capacité d'inventaire](media/supplyplanning_2_overflow1_new.png "Niveau de dépassement de capacité d'inventaire")  
+![Niveau de dépassement de la capacité d'inventaire](media/supplyplanning_2_overflow1_new.png "Niveau de dépassement de la capacité d'inventaire")  
 
 ###  <a name="calculating-the-overflow-level"></a>Calcul du niveau de dépassement de capacité  
 Le niveau de dépassement de capacité est calculé de différentes manières en fonction de la configuration de planification.  
@@ -181,7 +179,7 @@ Dans ce scénario, un client modifie une document de vente de 70 à 40 pièces
 #### <a name="resulting-planning-lines"></a>Lignes planification résultantes  
  Une ligne planification (avertissement) est créée pour réduire l'achat de 30 pour passer de 90 à 60 pour conserver l'inventaire prévisionnel à 100 conformément au niveau de dépassement de capacité.  
 
-![Planifier en fonction de niveau de dépassement de capacité](media/nav_app_supply_planning_2_overflow2.png "Planifier en fonction de niveau de dépassement de capacité")  
+![Planifier en fonction du niveau de dépassement de capacité](media/nav_app_supply_planning_2_overflow2.png "Planifier en fonction du niveau de dépassement de capacité")  
 
 > [!NOTE]  
 >  Sans la fonction Dépassement de capacité, aucun avertissement n'est créé si le niveau d'inventaire prévisionnel dépasse l'inventaire maximum. Cela pourrait entraîner un approvisionnement superflu de 30.
@@ -280,7 +278,7 @@ Même si une compagnie manufacturière se considère comme un environnement de f
 Contrairement à la plupart des ensembles approvisionnement-demande, les commandes liées avec des dates d'échéance antérieures à la date début de la planification sont entièrement planifiées par le système. La raison commerciale de cette exception est que les ensembles spécifiques approvisionnement-demande doivent être synchronisés jusqu'à l'exécution. Pour plus d'informations sur la zone gelée qui s'applique à la plupart des types de demande-approvisionnement, voir [Détails de conception : traiter les commandes avant la date début de la planification](design-details-dealing-with-orders-before-the-planning-starting-date.md).
 
 ### <a name="lot-for-lot"></a>Lot pour lot
-La méthode lot pour lot est la plus souple, parce que le système réagit uniquement à la demande réelle, de plus il agit sur une demande anticipée à partir de commandes de prévision et de commandes ouvertes, puis détermine la quantité commande en fonction de la demande. La méthode lot pour lot cible les articles A et B pour lesquels l'inventaire peut être accepté mais doit être évité.  
+La méthode lot pour lot est la plus souple, car le système réagit uniquement à la demande réelle. De plus, il agit sur la demande anticipée à partir des prévisions et des commandes permanentes, puis détermine la quantité de commande en fonction de la demande. La méthode lot pour lot cible les articles A et B pour lesquels l'inventaire peut être accepté mais doit être évité.  
 
 Par certains côtés, la méthode lot pour lot ressemble à la méthode de commande, mais elle a une approche générique des articles ; elle peut accepter des quantités en inventaire, et elle regroupe une demande et un approvisionnement correspondants dans des plages de temps définies par l'utilisateur.  
 

@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: 21e3defe178a3619df58d712c86935515e303692
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: abca7de7ce91ebe32e8c17a2288c49684b53455c
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2308414"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2879212"
 ---
 # <a name="use-job-queues-to-schedule-tasks"></a>Utiliser des files d'attente des travaux pour programmer des tâches
 Des files d'attente des travaux dans [!INCLUDE[d365fin](includes/d365fin_md.md)] permettent aux utilisateurs de planifier et d'exécuter des états et codeunits spécifiques. Vous pouvez définir des projets à exécuter une fois, ou sur une base récurrente. Par exemple, vous pouvez être amené à exécuter le rapport **Représentant : Statistiques ventes** chaque semaine pour suivre les ventes hebdomadaires d'un représentant, ou vous pouvez être amené à exécuter le codeunit **Traiter file d'attente courriels service** chaque jour pour vérifier si des courriels adressés aux clients concernant leurs commandes service sont envoyés en temps utile.
@@ -38,7 +38,7 @@ La procédure suivante explique comment configurer le report en arrière-plan de
 3. Pour filtrer les écritures de file d'attente des travaux pour le report de documents de vente, choisissez le champ **Code catégorie de la file d'attente des travaux**, puis sélectionnez la catégorie **ReportVente**.
 
     Un objet de file d'attente des travaux, codeunit 88 **Report des ventes via la file d'attente des travaux**, est créé. Pour l'activer, passez à la page **Écritures file d'attente des travaux**.
-4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Écritures file d'attente des travaux**, puis choisissez le lien associé.
+4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Écritures file d'attente des travaux**, puis sélectionnez le lien associé.
 5. Sur la page **Écritures file d'attente des travaux**, choisissez l'action **Nouveau**.
 6. Dans le champ **Type objet à exécuter**, sélectionnez **Codeunit**.  
 7. Dans le champ **Code objet à exécuter**, sélectionnez 88, **Reporter des ventes via la file d'attente des travaux**.
@@ -56,7 +56,7 @@ Si vous souhaitez également que des documents vente soient imprimés lorsqu'ils
 ## <a name="to-create-a-job-queue-entry-for-batch-posting-of-sales-orders"></a>Pour créer une écriture file d'attente des travaux pour le report en lot des documents de vente
 La procédure suivante décrit comment configurer le rapport **Reporter en lot des documents de vente** pour reporter automatiquement les documents de vente libérés à 16 h 00 les jours de semaine.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Écritures file d'attente des travaux**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Écritures file d'attente des travaux**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 3. Dans le champ **Type objet à exécuter**, sélectionnez **Rapport**.  
 4. Dans le champ **Code objet à exécuter**, sélectionnez 296, **Reporter en lot des documents de vente**.
@@ -85,7 +85,7 @@ Une fois qu'un projet s'est terminé correctement, il est supprimé de la liste 
 Les données qui sont générées lors de l'exécution d'une file d'attente des travaux sont stockées dans la base de données, de sorte que vous puissiez résoudre les erreurs de la file d'attente des travaux.
 
 ### <a name="to-view-status-for-any-job"></a>Pour visualiser l'état de tous les travaux
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Écritures file d'attente des travaux**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Écritures file d'attente des travaux**, puis sélectionnez le lien associé.
 2. Sur la page **Écritures file d'attente des travaux**, sélectionnez une écriture file d'attente des travaux, puis sélectionnez l'action **Écritures journal**.  
 
 ### <a name="to-view-status-from-a-sales-or-purchase-document"></a>Pour afficher l'état à partir d'un document vente ou achat
@@ -111,6 +111,9 @@ Lorsqu'une file d'attente des travaux est activée manuellement, elle s'exécute
 
 ## <a name="using-job-queues-effectively"></a>Utilisation efficace des files d'attente des travaux  
 L'enregistrement des écritures file d'attente des travaux possède plusieurs champs dont l'objectif est d'exécuter des paramètres dans un codeunit que vous avez indiqué comme devant être exécuté avec une file d'attente des travaux. Cela signifie également que les codeunits devant être exécutés via la file d'attente des travaux doivent être indiqués avec l'enregistrement des écritures file d'attente des travaux en tant que paramètre dans le déclencheur **OnRun**. Un niveau de sécurité supplémentaire est ainsi assuré, car les utilisateurs ne peuvent pas exécuter de codeunits aléatoires via la file d'attente des travaux. Si l'utilisateur doit transmettre des paramètres à un rapport, il n'a d'autre choix que celui d'inclure l'exécution du rapport dans un codeunit, lequel analyse ensuite les paramètres d'entrée et les intègre dans le rapport avant de l'exécuter.  
+
+## <a name="scheduling-synchronization-between-included365finincludesd365fin_mdmd-and-includecrm_mdincludescrm_mdmd"></a>Planification de la synchronisation entre [!INCLUDE[d365fin](includes/d365fin_md.md)] et [!INCLUDE[crm_md](includes/crm_md.md)]
+Si vous avez intégré [!INCLUDE[d365fin](includes/d365fin_md.md)] à [!INCLUDE[crm_md](includes/crm_md.md)], vous pouvez utiliser la file d'attente des travaux pour programmer à quel moment vous souhaitez synchroniser les données des enregistrements que vous avez couplés dans les deux applications métier. Selon la direction et les règles que vous avez définies pour l'intégration, les tâches de synchronisation peuvent également créer des enregistrements dans l'application de destination pour correspondre à ceux de la source. Par exemple, si un représentant crée un contact dans [!INCLUDE[crm_md](includes/crm_md.md)], la tâche de synchronisation peut créer ce contact pour le représentant couplé dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Pour plus d'informations, voir [Planification d'une synchronisation entre Business Central et Dynamics 365 Sales](admin-scheduled-synchronization-using-the-synchronization-job-queue-entries.md).
 
 ## <a name="see-also"></a>Voir aussi  
 [Administration](admin-setup-and-administration.md)  

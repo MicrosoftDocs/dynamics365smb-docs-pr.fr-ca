@@ -1,8 +1,6 @@
 ---
 title: Détails de conception - Flux d'entrepôt internes | Microsoft Docs
 description: Circulation des articles entre les zones dans les centres d'une compagnie lors du prélèvement des composantes, du rangement des articles finis pour les ordres d'assemblage ou les bons de production et les mouvements ad-hoc, tels que les réapprovisionnements de zone, sans relation avec les documents sources.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: bce55cda1ba5fd5dd89ad75b224651df719d76d5
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 55f58acc0f65469261903c28b71942010d44c695
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2303470"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2880362"
 ---
 # <a name="design-details-internal-warehouse-flows"></a>Détails de conception : flux d'entrepôt internes
 Circulation des articles entre les zones dans les centres d'une compagnie lors du prélèvement des composantes, du rangement des articles finis pour les ordres d'assemblage ou les bons de production et les mouvements ad-hoc, tels que les réapprovisionnements de zone, sans relation avec les documents sources. La portée et la nature des activités impliquées varient entre l'entreposage de base et l'entreposage avancé.  
@@ -116,7 +114,7 @@ Circulation des articles entre les zones dans les centres d'une compagnie lors d
 
  La figure ci-après indique la date à laquelle le champ **Code de zone** de la liste des composantes est renseigné en fonction de la configuration de votre emplacement ou unité de production/atelier.  
 
- ![Aperçu de quand/comment le champ Code de zone est renseigné](media/binflow.png "Aperçu de quand/comment le champ Code de zone est renseigné")  
+ ![Aperçu du moment/de la manière de renseigner le champ Code de zone](media/binflow.png "Aperçu du moment/de la manière de renseigner le champ Code de zone")  
 
 ## <a name="see-also"></a>Voir aussi  
  [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)

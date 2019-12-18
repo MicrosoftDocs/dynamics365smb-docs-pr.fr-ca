@@ -1,8 +1,6 @@
 ---
 title: Tolérance de règlement et tolérance d'escompte de paiement | Microsoft Docs
 description: Vous pouvez configurer la tolérance de règlement de manière à fermer une facture lorsque le paiement ne couvre pas entièrement le montant de la facture.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: a3bed8b9298b668e627691be11598ca8c78238db
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 229602a4ca5eb7b2da926171a7ba86a8d103b133
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2305750"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2879618"
 ---
 # <a name="work-with-payment-tolerances-and-payment-discount-tolerances"></a>Utilisation des tolérances de règlement et des tolérances d'escompte de paiement
 Vous pouvez configurer une tolérance de règlement de manière à fermer une facture lorsque le paiement ne couvre pas entièrement le montant de la facture. Vous pouvez configurer une tolérance d'escompte de paiement pour accorder un escompte de paiement après expiration de la date d'escompte de paiement.  
@@ -44,13 +42,13 @@ Pour plus d'informations, voir [Pour activer ou désactiver l'avertissement de t
 Le fait de configurer des tolérances pour la date ou le montant permet de fermer une facture alors que le règlement ne couvre pas le montant indiqué sur la facture, que ce soit parce que la date d'échéance de l'escompte de paiement est dépassée ou que des marchandises ont été déduites, ou suite à une erreur anodine. Ceci est également vrai pour les remboursements et les notes de crédit.  
 
 Pour configurer l'écart, vous devez configurer plusieurs comptes écart, spécifier des méthodes de comptabilisation d'écart escompte et d'écart règlement, puis exécuter le traitement par lots **Modifier écart de règlement**.  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration du report général**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du report général**, puis sélectionnez le lien associé.  
 2. Sur la page **Configuration report général**, configurez un compte tolérance de règlement crédit et débit pour les ventes et un autre pour les achats.  
-3. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Groupes de report client**, puis sélectionnez le lien associé.    
+3. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Groupes de report client**, puis sélectionnez le lien associé.    
 4. Sur la page **Groupes report client**, configurez un compte tolérance de règlement débit et un compte tolérance de règlement crédit. Pour plus d'informations, voir [Configuration de groupes de report](finance-posting-groups.md).  
-5. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration report fournisseur**, puis sélectionnez le lien associé.  
+5. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du report fournisseur**, puis sélectionnez le lien associé.  
 6. Sur la page **Groupes report fournisseur**, configurez un compte tolérance de règlement débit et un compte tolérance de règlement crédit.  
-7. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration du grand livre**, puis sélectionnez le lien associé.  
+7. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.  
 8. Ouvrez la page **Configuration du grand livre**.  
 9. Sur le raccourci **Application**, renseignez les champs **Validation écart d'escompte**, **Période carence escompte** et **Validation écart de règlement**.   
 10. Choisissez l'action **Modifier la tolérance de règlement**.
@@ -68,7 +66,7 @@ Pour configurer l'écart, vous devez configurer plusieurs comptes écart, spéci
 
 ## <a name="to-enable-or-disable-payment-tolerance-warnings"></a>Pour activer ou désactiver les alertes de tolérance de règlement
 L'avertissement de tolérance de règlement apparaît lorsque vous reportez une affectation dont le solde respecte la tolérance autorisée. Vous pouvez alors choisir comment reporter et journaliser le solde.    
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration du grand livre**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.  
 2. Sur la page **Configuration du grand livre**, sur le raccourci **Affectation**, cochez la case **Avertissement tolérance de règlement** pour activer l'avertissement. Pour désactiver l'alerte, désactivez la case à cocher.  
 
 > [!NOTE]  
@@ -77,7 +75,7 @@ L'avertissement de tolérance de règlement apparaît lorsque vous reportez une 
 ## <a name="to-block-payment-tolerance-for-customers"></a>Pour bloquer la tolérance de règlement pour des clients  
 Par défaut, une tolérance de règlement est accordée. Pour ne pas accorder une tolérance de règlement à un certain client ou fournisseur, vous devez bloquer la tolérance sur la fiche fournisseur ou client appropriée. Ce qui suit décrit comment l'exécuter pour un client. La procédure est identique pour un fournisseur.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Client** ou **Fournisseur**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Client** ou **Fournisseur**, puis sélectionnez le lien associé.  
 2. Sur le raccourci **Paiements**, cochez la case **Bloquer écart de règlement**.  
 
 > [!NOTE]  
@@ -124,7 +122,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les tolérances de règlement uniques 1](media/singlePmtTolRules(Pre1503).gif "Règles sur les tolérances de règlement uniques 1")  
+![Règles sur les tolérances de règlement uniques 1](media/singlePmtTolRules(Pre1503).gif "Règles sur les tolérances de règlement uniques 1")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -135,7 +133,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les tolérances de règlement uniques 2](media/singlePmtTolRules(GracePeriod).gif "Règles sur les tolérances de règlement uniques 2")  
+![Règles sur les tolérances de règlement uniques 2](media/singlePmtTolRules(GracePeriod).gif "Règles sur les tolérances de règlement uniques 2")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -146,7 +144,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les tolérances de règlement uniques 3](media/singlePmtTolRules(Post0120).gif "Règles sur les tolérances de règlement uniques 3")  
+![Règles sur les tolérances de règlement uniques 3](media/singlePmtTolRules(Post0120).gif "Règles sur les tolérances de règlement uniques 3")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -207,7 +205,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les tolérances de règlement multiples 1](media/multiplePmtTolRules(Pre1503).gif "Règles sur les tolérances de règlement multiples 1")  
+![Règles sur les tolérances de règlement multiples 1](media/multiplePmtTolRules(Pre1503).gif "Règles sur les tolérances de règlement multiples 1")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -218,7 +216,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les tolérances de règlement multiples 2](media/multiplePmtTolRules(GracePeriodInv1-2).gif "Règles sur les tolérances de règlement multiples 2")  
+![Règles sur les tolérances de règlement multiples 2](media/multiplePmtTolRules(GracePeriodInv1-2).gif "Règles sur les tolérances de règlement multiples 2")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -229,7 +227,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les tolérances de règlement multiples 3](media/multiplePmtTolRules(GracePeriodInv1).gif "Règles sur les tolérances de règlement multiples 3")  
+![Règles sur les tolérances de règlement multiples 3](media/multiplePmtTolRules(GracePeriodInv1).gif "Règles sur les tolérances de règlement multiples 3")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -240,7 +238,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les tolérances de règlement multiples 4](media/multiplePmtTolRules(GracePeriodInv2).gif "Règles sur les tolérances de règlement multiples 4")  
+![Règles sur les tolérances de règlement multiples 4](media/multiplePmtTolRules(GracePeriodInv2).gif "Règles sur les tolérances de règlement multiples 4")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -251,7 +249,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les tolérances de règlement multiples 5](media/multiplePmtTolRules(Post0122).gif "Règles sur les tolérances de règlement multiples 5")  
+![Règles sur les tolérances de règlement multiples 5](media/multiplePmtTolRules(Post0122).gif "Règles sur les tolérances de règlement multiples 5")  
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 

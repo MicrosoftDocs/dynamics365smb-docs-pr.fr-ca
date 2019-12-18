@@ -1,8 +1,6 @@
 ---
 title: Comment prélever des articles avec les prélèvements stock | Microsoft Docs
 description: Si un emplacement est configuré pour exiger un traitement des prélèvements mais pas un traitement des livraisons, vous utilisez les documents prélèvement inventaire pour enregistrer et reporter les informations de prélèvement et de livraison pour vos documents sources.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 66b4d9c3f9f84e9342cffd9446a4b3992ff62a57
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 0f6f157de1d3d65eddf7e2db9c40f27ec56443de
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2310286"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2876641"
 ---
 # <a name="pick-items-with-inventory-picks"></a>Prélever des articles avec les prélèvements stock
 Lorsque votre emplacement est configuré pour exiger un traitement des prélèvements mais pas un traitement des livraisons, vous utilisez la page **Prélèvement inventaire** pour enregistrer et reporter les informations de prélèvement et de livraison pour vos documents origine. Le document source sortant peut être un document de vente, un retour achat, un transfert sortant ou un bon de production dont les composantes sont prêtes à être prélevées.
@@ -36,7 +34,7 @@ Vous pouvez créer un prélèvement inventaire de trois manières :
 ## <a name="to-request-an-inventory-pick-by-releasing-the-source-document"></a>Pour demander un prélèvement inventaire en libérant le document source  
 Pour les documents de vente, les retours achat et les ordres de transfert sortants, vous créez la demande entrepôt en libérant l'ordre. La section suivante décrit comment procéder à partir d'un document de vente.
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Sélectionnez le document de vente que vous voulez libérer, puis sélectionnez l'action **Libérer**.
 
 Pour les bons de production, vous créez automatiquement la demande entrepôt pour le prélèvement de composantes, appelé *purge* lorsque l'état du bon de production passe à **Libéré** ou lorsque le bon de production libéré est créé. Pour plus d'informations, voir [Prélever pour la fabrication ou l'assemblage](warehouse-how-to-pick-for-production.md).
@@ -45,7 +43,7 @@ Une fois la demande entrepôt créée, l'employé d'entrepôt affecté aux prél
 
 ## <a name="to-create-an-inventory-pick-based-on-the-source-document"></a>Pour créer un prélèvement inventaire en fonction du document source
 Maintenant que la demande est créée, l'employé d'entrepôt peut créer un nouveau prélèvement inventaire sur la base du document source libéré.
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Prélèvements inventaire**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements inventaire**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3. Dans le champ **Document origine**, sélectionnez le type de document origine relatif au prélèvement.  
 4. Dans le champ **N° origine**, sélectionnez le document origine.  
@@ -58,7 +56,7 @@ Maintenant que la demande est créée, l'employé d'entrepôt peut créer un nou
 3.  Cliquez sur le bouton **OK**. Un nouveau prélèvement inventaire sera créé.
 
 ## <a name="to-create-multiple-inventory-picks-with-a-batch-job"></a>Pour créer plusieurs prélèvements inventaire avec un traitement en lot  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Créer prélèv./rangement inventaire**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Créer prélèv./rangement inventaire**, puis sélectionnez le lien associé.  
 2.  Sur le raccourci **Demande entrepôt**, utilisez les champs **Document origine** et **N° origine** pour opérer un filtrage sur certains types de documents ou des plages de numéros de document. Par exemple, vous pouvez créer des prélèvements uniquement pour des documents de vente.  
 3. Sur le raccourci **Options**, cochez la case **Créer prélèvement inventaire**.
 4. Cliquez sur le bouton **OK**. Les prélèvements stock spécifiés sont créés.
@@ -69,7 +67,7 @@ Maintenant que la demande est créée, l'employé d'entrepôt peut créer un nou
 >  Dans les configurations d'entrepôt de base, les articles qui sont assemblés aux documents de vente sont prélevés à partir du document de vente associé, comme expliqué dans cette rubrique. Pour plus d’informations, reportez-vous à la section « Traitement des articles à assembler pour commande dans les prélèvements inventaire » dans Prélèvement inventaire.  
 
 ## <a name="to-record-the-inventory-picks"></a>Pour enregistrer les prélèvements stock  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Prélèvement inventaire**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvement inventaire**, puis sélectionnez le lien associé.  
 2. Dans le champ **Code de zone** sur les lignes prélèvement, la zone à partir de laquelle les articles doivent être prélevés est proposée sur la base d'une zone par défaut de l'article. Vous pouvez modifier la zone sur cette page, si nécessaire.  
 3. Exécutez le prélèvement et saisissez les informations pour la quantité effectivement rangée dans le champ **Quantité à traiter**.
 

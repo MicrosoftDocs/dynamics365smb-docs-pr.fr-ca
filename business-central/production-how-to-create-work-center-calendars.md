@@ -1,8 +1,6 @@
 ---
 title: Procédure de configuration des calendriers usine | Microsoft Docs
 description: Les calendriers d'atelier spécifient les jours ouvrés et les heures de travail, les équipes, les jours fériés et les absences déterminant la capacité disponible brute de l'atelier, mesurée en unités de temps, en fonction des valeurs d'efficacité et de capacité définies. La création et l'activation d'un calendrier d'atelier nécessite plusieurs phases préliminaires.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 1663f9092c21e1955f3e2531efc9935ba1c68982
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: cc40361150d8368c46f9045451c0d542eff13779
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314082"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2877961"
 ---
 # <a name="set-up-shop-calendars"></a>Paramétrer des calendriers usine
 Les calendriers d'atelier ou de poste de charge spécifient les jours ouvrés et les heures de travail, les équipes, les jours fériés et les absences déterminant la capacité disponible brute de l'atelier, mesurée en unités de temps, en fonction des valeurs d'efficacité et de capacité définies.
@@ -27,7 +25,7 @@ Avant de calculer un calendrier d'unité de production ou d'atelier spécifique,
 La procédure suivante décrit comment configurer des calendriers d'atelier. Les étapes sont similaires lorsque vous configurez des calendriers d'unité de production.  
 
 ## <a name="to-create-work-shifts"></a>Pour créer des équipes  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Équipes**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Équipes**, puis sélectionnez le lien associé.  
 2.  Sur une ligne blanche, entrez le numéro d'identification de l'équipe, par exemple, **1**, dans le champ **Code**.  
 3.  Dans le champ **Désignation**, entrez la désignation de l'équipe, par exemple, **1ère équipe**.  
 4.  Vous pouvez également renseignez les lignes d'une deuxième ou troisième équipe.  
@@ -35,7 +33,7 @@ La procédure suivante décrit comment configurer des calendriers d'atelier. Les
 Même si vos centres de charge n'ont pas recours à diverses équipes, entrez au moins un code équipe.  
 
 ## <a name="to-set-up-a-shop-calendar"></a>Pour configurer un calendrier usine  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Calendriers usine**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Calendriers usine**, puis sélectionnez le lien associé.  
 2.  Sur une ligne blanche, entrez le numéro d'identification du calendrier usine dans le champ **Code**.  
 3.  Dans le champ **Désignation**, entrez la désignation du calendrier usine.  
 4.  Choisissez l'action **Jours ouvrés**.
@@ -70,7 +68,7 @@ Le calendrier usine peut ensuite être attribué à un atelier pour calculer le 
 
 ## <a name="to-calculate-a-work-center-calendar"></a>Pour calculer un calendrier d'atelier  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Ateliers**, puis sélectionnez le lien associé.
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Ateliers**, puis sélectionnez le lien associé.
 2. Ouvrez l'atelier que vous voulez mettre à jour.  
 3. Dans le champ **Code calendrier usine**, sélectionnez le calendrier usine à utiliser comme base pour le calendrier d'atelier.  
 4. Sélectionnez l'action **Calendrier**.  
@@ -109,7 +107,7 @@ La capacité du jour sélectionné est réduite conformément aux heures d'absen
 
 ## <a name="see-also"></a>Voir aussi  
 [Configurer des calendriers principaux](across-how-to-assign-base-calendars.md)  
-[Configurer des ateliers et des unités de production](production-how-to-set-up-work-and-machine-centers.md)  
+[Configurer les ateliers et les unités de production](production-how-to-set-up-work-and-machine-centers.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Production](production-manage-manufacturing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

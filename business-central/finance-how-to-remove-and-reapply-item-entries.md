@@ -1,8 +1,6 @@
 ---
 title: 'Procédure : supprimer et affecter à nouveau des écritures article | Microsoft Docs'
 description: Vous pouvez visualiser et modifier manuellement certaines écritures d'affectation article qui sont créées automatiquement lors des transactions d'inventaire.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 898548bd33bbc9a5a7ae7400c626bf7a7820bfd4
-ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
+ms.openlocfilehash: 81565950191b40f2c54646d17f02ee857856c436
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2554144"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2882709"
 ---
 # <a name="remove-and-reapply-item-ledger-entries"></a>Supprimer et appliquer à nouveau des écritures article
 Sur la page **Feuille affectation**, vous pouvez visualiser et modifier manuellement certaines écritures affectation article qui sont créées automatiquement lors des transactions d'inventaire.  
@@ -43,7 +41,7 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
     - La feuille de travail affectation ne peut pas effectuer une affectation dans le cas suivant : si la quantité en stock est insuffisante pour l'affectation, la feuille de travail affectation ne peut pas effectuer une affectation lorsque vous tentez d'affecter une écriture diminution d'inventaire sans informations de traçabilité sur une écriture augmentation d'inventaire avec informations de traçabilité.
 
 ## <a name="to-remove-an-item-application-by-using-the-application-worksheet"></a>Pour supprimer une affectation article en utilisant le journal affectation  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille affectation**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille affectation**, puis sélectionnez le lien associé.  
 2.  La page **Feuille affectation** s'ouvre en affichant les écritures article existantes de tous les articles.  
 3.  Définissez les filtres du raccourci **Général** pour faciliter la recherche de l'écriture comptable article pour laquelle vous souhaitez modifier le lettrage.  
 4.  Sélectionnez l'écriture article, puis sélectionnez l'action **Écritures affectées**. La page **Voir écritures affectées - Écritures affectées** s'ouvre et affiche la ou les écritures article actuellement affectées pour l'écriture sélectionnée.  
@@ -59,7 +57,7 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
 >  **Il est impossible d'effectuer cette action car l'affectation des écritures pour l'article <item> est annulée dans la feuille de travail affectation par l'utilisateur <user>.**  
 
 ## <a name="to-reapply-an-item-application-by-using-the-application-worksheet"></a>Pour appliquer à nouveau une affectation article en utilisant le journal affectation  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Feuille affectation**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille affectation**, puis sélectionnez le lien associé.  
 2.  La page **Feuille affectation** s'ouvre en affichant les écritures article existantes de tous les articles.  
 3.  Pour affecter à nouveau des écritures supprimées depuis l'ouverture de la feuille, sélectionnez l'écriture article que vous souhaitez affecter à nouveau et choisissez l'action **Affecter à nouveau**.  
 
@@ -77,6 +75,6 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
 ## <a name="see-also"></a>Voir aussi  
 [Fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal article](finance-how-to-close-open-item-ledger-entries-resulting-from-fixed-application-in-the-item-journal.md)  
  [Traiter les retours ou annulations d'achats](purchasing-how-process-purchase-returns-cancellations.md)  
- [Gestion des coûts ajustés](finance-manage-inventory-costs.md)   
- [Détails de conception : lettrage article](design-details-item-application.md)  
+ [Gestion des coûts inventaire](finance-manage-inventory-costs.md)   
+ [Détails de conception : Affectation article](design-details-item-application.md)  
  [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

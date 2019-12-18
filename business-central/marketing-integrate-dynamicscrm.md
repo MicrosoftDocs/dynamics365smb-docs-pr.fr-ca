@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: integration, synchronize, map, Sales
 ms.date: 10/01/2019
 ms.author: bholtorf
-ms.openlocfilehash: df539a8c1aa42fe8bc732e4819db10cbfbdaec2a
-ms.sourcegitcommit: cd5d3d288feee76d058d325720135275f4c8ad85
+ms.openlocfilehash: 33b2931e14cb7e41cc3e71c327d2237cd8308466
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2775581"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2878207"
 ---
 # <a name="using-dynamics-365-sales-from-business-central"></a>Utilisation de Dynamics 365 Sales depuis Business Central
 Si vous utilisez Dynamics 365 Sales for Customer Engagement, bénéficiez de l'intégration parfaite dans le processus allant du prospect à l'encaissement à l'aide de [!INCLUDE[d365fin](includes/d365fin_md.md)] pour les activités principales, telles que le traitement des commandes, la gestion de l'inventaire et de vos finances.
@@ -73,10 +73,10 @@ Ceci peut également fonctionner si le document de vente d'origine indique les b
 
 Si la description de l'article sur le document de vente d'origine est longue, alors une ligne document de vente supplémentaire de type **Commentaire** est créée pour stocker le texte intégral du document de vente dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
-Les mises à jour vers les champs d'en-tête de document de vente, tels que Date dernière livraison ou Date livraison demandée, qui sont mappés dans DOCUMENTDEVENTE-COMMANDE **Mappage de table d'intégration** sont synchronisées régulièrement vers [!INCLUDE[crm_md](includes/crm_md.md)]. Les processus tels que lancer une document de vente et expédier ou facturer une document de vente sont reportés vers la chronologie de document de vente dans [!INCLUDE[crm_md](includes/crm_md.md)]. Pour en savoir plus, voir [Introduction aux flux d'activité](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-activity-feeds).
+Les mises à jour vers les champs d'en-tête de document de vente, tels que Date dernière livraison ou Date livraison demandée, qui sont mappés dans DOCUMENTDEVENTE-COMMANDE **Mappage de table d'intégration** sont synchronisées régulièrement vers [!INCLUDE[crm_md](includes/crm_md.md)]. Les processus tels que lancer une document de vente et expédier ou facturer une document de vente sont reportés vers la chronologie de document de vente dans [!INCLUDE[crm_md](includes/crm_md.md)]. Pour en savoir plus, voir [Introduction aux flux d'activité](/dynamics365/customer-engagement/developer/introduction-activity-feeds).
 
 > [!NOTE]  
-> La synchronisation périodique basée sur le **Mappage de table d'intégration** DOCUMENTDEVENTE-COMMANDE fonctionne uniquement lorsque l'intégration des document de vente est activée. Pour en savoir plus, voir [Connecté à Dynamics 365 for Sales](admin-how-to-set-up-a-dynamics-crm-connection.md). Seuls les documents de vente créés à partir de documents de vente envoyés dans [!INCLUDE[crm_md](includes/crm_md.md)] sont synchronisés. Pour plus d'informations, voir [Activer l'intégration du traitement des documents de vente](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/sales-enterprise/developer/enable-sales-order-processing-integration).
+> La synchronisation périodique basée sur le **Mappage de table d'intégration** DOCUMENTDEVENTE-COMMANDE fonctionne uniquement lorsque l'intégration des document de vente est activée. Pour en savoir plus, voir [Connecté à Dynamics 365 for Sales](admin-how-to-set-up-a-dynamics-crm-connection.md). Seuls les documents de vente créés à partir de documents de vente envoyés dans [!INCLUDE[crm_md](includes/crm_md.md)] sont synchronisés. Pour plus d'informations, voir [Activer l'intégration du traitement des documents de vente](/dynamics365/customer-engagement/sales-enterprise/developer/enable-sales-order-processing-integration).
 
 > [!VIDEO https://go.microsoft.com/fwlink/?linkid=2098170]
 

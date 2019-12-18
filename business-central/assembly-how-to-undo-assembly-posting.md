@@ -1,8 +1,6 @@
 ---
 title: "Procédure : annuler le report d'assemblage | Microsoft Docs"
 description: Vous pouvez parfois être amené à annuler un ordre d'assemblage reporté, par exemple, si la commande a été reportée avec des erreurs qui doivent être corrigées, ou parce qu'il n'aurait pas dû être reporté en premier et doit être annulé.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: kit, kitting
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 22ebbde0d04dfeb03fa52978e2d1e82d40713445
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 11041ebb7c7154eed6959a99ec5b100c73ccd8c6
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2307623"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2880770"
 ---
 # <a name="undo-assembly-posting"></a>Annuler le report d'assemblage
 Vous pouvez parfois être amené à annuler un ordre d'assemblage reporté, par exemple, si la commande a été reportée avec des erreurs qui doivent être corrigées, ou parce qu'il n'aurait pas dû être reporté en premier et doit être annulé.
@@ -42,7 +40,7 @@ De plus, les ordres d'assemblage existants ne peuvent être restaurés que si le
 La procédure suivante décrit comment annuler les ordres d'assemblage reportés dans lesquels les articles ont été assemblés pour stock. Si vous souhaitez annuler les ordres d'assemblage validés pour lesquels les articles ont été assemblés pour une commande vente, vous devez exécuter la fonction **Annuler expédition** sur l'expédition validée qui se rapporte à l'ordre d'assemblage validé. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md). L'annulation de l'ordre d'assemblage reporté se produit alors automatiquement de la même manière que décrit dans cette rubrique.  
 
 ## <a name="to-undo-posting-of-an-assembly-order"></a>Pour annuler le report d'un ordre d'assemblage  
-1.  Pour annuler un ordre d'assemblage entièrement ou partiellement reporté, choisissez l'icone ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Ordres d'assemblage reportés**, puis sélectionnez le lien associé.  
+1.  Pour annuler un ordre d'assemblage entièrement ou partiellement reporté, choisissez l'icone ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Ordres d'assemblage reportés**, puis sélectionnez le lien associé.  
 
     La page **Ordres d'assemblage reportés** s'ouvre avec un ou plusieurs ordres d'assemblage qui ont été reportés à partir de l'ordre d'assemblage en question. Chaque report partiel crée un ordre d'assemblage reporté distinct.  
 2.  Ouvrez l'ordre d'assemblage reporté que vous souhaitez annuler, puis choisissez **Annuler l'assemblage**.  
@@ -60,6 +58,6 @@ Le champ **Contrepassé** de l'en\-tête d'ordre d'assemblage prend la valeur **
 [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)  
 [Traiter les retours ou annulations de ventes](sales-how-process-sales-returns-cancellations.md)    
 [Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
-[Stock](inventory-manage-inventory.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

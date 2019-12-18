@@ -1,8 +1,6 @@
 ---
 title: Détails de conception - Report inventaire | Microsoft Docs
 description: Chaque transaction inventaire, par exemple une réception achat ou une livraison vente, reporte deux écritures de différents types.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 71ee3624868f546ec7b45f5177dcc61acc5b7a21
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: dc3e997d0ca29c680cd6a915751a368dd77a5433
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2303417"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2880314"
 ---
 # <a name="design-details-inventory-posting"></a>Détails de conception : report inventaire
 Chaque transaction inventaire, par exemple une réception achat ou une livraison vente, reporte deux écritures de différents types.  
@@ -33,7 +31,7 @@ Chaque transaction inventaire, par exemple une réception achat ou une livraison
 
  À intervalles réguliers, les écritures valeur créées parmi les écritures du grand livre d'inventaire sont reportées dans le grand livre pour rapprocher les deux grands livres à des fins de contrôle financier. Pour plus d'informations, voir [Détails de conception : rapprochement de comptabilité](design-details-reconciliation-with-the-general-ledger.md).  
 
- ![Flux d'écriture lors du rapprochement de l'inventaire avec le GL](media/design_details_inventory_costing_1_entry_flow.png "Flux d'écriture lors du rapprochement de l'inventaire avec le GL")  
+ ![Flux d'écriture lors du rapprochement de l'inventaire avec le grand livre](media/design_details_inventory_costing_1_entry_flow.png "Flux d'écriture lors du rapprochement de l'inventaire avec le grand livre")  
 
 ## <a name="example"></a>Exemple :  
  L'exemple suivant indique comment les écritures article, les écritures valeur et les écritures d'affectation article créent des écritures dans le grand livre.  

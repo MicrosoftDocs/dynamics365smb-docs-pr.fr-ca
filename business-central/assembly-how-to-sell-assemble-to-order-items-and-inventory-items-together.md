@@ -1,8 +1,6 @@
 ---
 title: Vendre simultanément des articles à assembler pour commande et des articles en inventaire | Microsoft Docs
 description: Si l'élément d'assemblage est configuré pour un assemblage pour stock, le processus par défaut de document de vente se base sur l'hypothèse que l'article est déjà assemblé et peut être prélevé de l'inventaire, s'il est disponible. Mais si une partie (ou la totalité) de la quantité n'est pas disponible, vous avez la possibilité de créer un ordre d'assemblage pour la quantité restante à la volée.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,12 +10,12 @@ ms.workload: na
 ms.search.keywords: kit, kitting
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 95feecd98debfe6595ca66b23bf38085f245f025
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 88564e7bb1f62a504a70b675774e021fd7e1eee9
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2304142"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2880842"
 ---
 # <a name="sell-assemble-to-order-items-and-inventory-items-together"></a>Vente simultanée d'articles à assembler pour commande et d'articles d'inventaire
 Si le champ **Politique d'assemblage** de la fiche article d'un élément d'assemblage indique **Assembler pour stock**, le processus par défaut de document de vente se base sur l'hypothèse que l'article est déjà assemblé et peut être prélevé de l'inventaire, s'il est disponible. Par conséquent, aucun ordre d'assemblage n'est automatiquement créé et n'est lié à la ligne document de vente. Toutefois, si une partie (ou la totalité) de la quantité n'est pas disponible, vous avez la possibilité de créer un ordre d'assemblage pour la quantité restante lorsque vous renseignez le champ **Quantité à assembler pour commande** de la ligne document de vente. De cette manière, vous pouvez assembler l'article à commander même s'il est configuré pour être assemblé pour stock par défaut.  
