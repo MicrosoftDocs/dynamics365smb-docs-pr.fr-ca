@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: change Role Center, notification, change company, change work date
-ms.date: 10/01/2019
+ms.date: 01/13/2020
 ms.author: sgroespe
-ms.openlocfilehash: ecceb1fc9ccc5245ef5305d9723f26e6270de79e
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 5f6f62e146f6799cad552e60b399f74636091ea7
+ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2311438"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2953328"
 ---
 # <a name="change-basic-settings"></a>Modifier les paramètres de base
 
@@ -30,7 +30,7 @@ Le tableau de bord représente la page d'accueil, un écran de démarrage conçu
 
 ### <a name="to-change-the-role"></a>Pour modifier le rôle
 Le rôle par défaut est **Gestionnaire d'activité**, mais vous pouvez sélectionner un autre rôle pour utiliser un Tableau de bord qui correspond mieux à vos besoins.
-1. Dans le coin supérieur droit, sélectionnez l'icône **Paramètres** ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis sélectionnez l'action **Mes paramètres**.
+1. Dans le coin supérieur droit, sélectionnez l'icône **Paramètres** ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez l'action **Mes paramètres**.
 2. Sur la page **Mes paramètres**, dans le champ **Rôle** , sélectionnez le rôle que vous souhaitez utiliser par défaut. Par exemple, sélectionnez **Comptable**.
 3. Choisissez le bouton **OK**.
 
@@ -83,6 +83,8 @@ La langue initiale est déterminée par l'administrateur ou par les paramètres 
 
 ## <a name="changing-when-i-receive-notifications"></a>Modification lorsque je reçois des notifications
 Sélectionnez ce lien pour afficher ou modifier les notifications que vous recevez au sujet de certains événements ou modifications d'état, lorsque vous êtes sur le point de facturer un client avec un solde échu, ou lorsque l'inventaire disponible est inférieur à la quantité que vous êtes sur le point de vendre. Pour plus d'informations, voir [Gérer les notifications](ui-smart-notifications.md).
+
+## <a name="see-related-training-at-microsoft-learnlearnmodulespersonalize-ui-dynamics-365-business-centralindex"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/personalize-ui-dynamics-365-business-central/index)
 
 ## <a name="see-also"></a>Voir aussi
 [Création de compagnies](about-new-company.md)  

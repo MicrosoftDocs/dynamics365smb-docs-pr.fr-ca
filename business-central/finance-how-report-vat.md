@@ -8,16 +8,16 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: VAT, tax, report, EC sales list, statement
-ms.date: 10/01/2019
+ms.date: 01/13/2020
 ms.author: bholtorf
-ms.openlocfilehash: 4560de9740d0b4918d685fb0278b905baf1a8ecd
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: e7671e54f95a48322df186b5aed5a81552f9f91f
+ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2306251"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2953789"
 ---
-# <a name="report-vat-to-a-tax-authority"></a>Déclarer la TVA à une autorité fiscale
+# <a name="report-vat-to-tax-authorities"></a>Déclarer la TVA aux autorités fiscales
 Cette rubrique décrit les rapports dans [!INCLUDE[d365fin](includes/d365fin_md.md)] que vous pouvez utiliser pour envoyer des informations sur les montants de la taxe sur la valeur ajoutée (TVA) relatifs aux ventes et achats à l'administration fiscale de votre région.
 
 Vous pouvez utiliser les rapports suivants :
@@ -25,7 +25,7 @@ Vous pouvez utiliser les rapports suivants :
 * La déclaration de liste des ventes de l'Union européenne (EU) **Liste des ventes UE** répertorie les montants de la taxe sur la valeur ajoutée (TVA) que vous avez collectés pour les ventes aux clients enregistrés dans les pays de l'Union européenne (UE).  
 * Le rapport **Retour TVA** inclut la TVA pour les ventes et les achats aux clients dans tous les pays utilisant la TVA.
 
-Si vous souhaitez afficher un historique complet des écritures TVA, chaque report impliquant la TVA crée une écriture dans la page **Écritures TVA**. Ces écritures sont utilisées pour calculer le montant du relevé de TVA, tel que paiement et remboursement, pour une période donnée. Pour afficher les écritures TVA, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Écritures TVA**, puis sélectionnez le lien associé.
+Si vous souhaitez afficher un historique complet des écritures TVA, chaque report impliquant la TVA crée une écriture dans la page **Écritures TVA**. Ces écritures sont utilisées pour calculer le montant du relevé de TVA, tel que paiement et remboursement, pour une période donnée. Pour afficher des écritures TVA, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Écritures TVA**, puis sélectionnez le lien associé.
 
 ## <a name="about-the-ec-sales-list-report"></a>À propos du rapport Liste des ventes UE
 Au Royaume-Uni, toutes les compagnies qui vendent des marchandises et des services aux clients enregistrés à la TVA, y compris les clients dans d'autres pays de l'Union européenne (UE), doivent envoyer une version électronique du rapport Liste des ventes de la Communauté européenne (CE) au format XML sur le site Web du service de la fiscalité et des douanes du Royaume-Uni. Le rapport de liste des ventes de l'Union européenne ne fonctionne que pour les pays de l'UE.
@@ -67,7 +67,7 @@ Pour déclarer la TVA à une administration par voie électronique, vous devez c
 3. Choisissez la série de numéros à utiliser pour chaque rapport.  
 
 ## <a name="to-prepare-and-submit-a-vat-report"></a>Pour préparer et soumettre un rapport TVA
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Liste des ventes UE** ou **Retour TVA**, et sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Liste des ventes UE** ou **Retour TVA**, puis sélectionnez le lien associé.  
 2. Sélectionnez **Nouveau**, puis renseignez les champs requis. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 3. Pour générer le contenu de l'état, sélectionnez l'action **Proposer lignes**.  
 
@@ -111,7 +111,9 @@ Le tableau suivant décrit les codeunits que vous devez créer pour votre rappor
 > [!Note]
 > Lorsque vous créez des codeunits pour le rapport, faites attention à la valeur du champ **Version de la déclaration TVA**. Ce champ doit refléter la version du rapport qui est ou a été requis par l'administration fiscale. Par exemple, vous pouvez saisir **2017** dans le champ pour indiquer que l'état remplit les conditions qui étaient en place cette année. Pour trouver la version en cours, contactez votre administration fiscale.
 
-## <a name="see-also"></a>Voir aussi .
+## <a name="see-related-training-at-microsoft-learnlearnpathsprocess-vat-dynamics-365-business-central"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/process-vat-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi
 [Configuration des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md)  
 [Utiliser la TVA sur les ventes et les achats](finance-work-with-vat.md)  
 [Définition des ventes](sales-setup-sales.md)  

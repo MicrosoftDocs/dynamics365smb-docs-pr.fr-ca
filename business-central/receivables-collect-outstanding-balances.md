@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment due, debt, overdue, fee, charge, reminder
-ms.date: 10/01/2019
+ms.date: 01/13/2020
 ms.author: sgroespe
-ms.openlocfilehash: ca99b44b7c96037d07c00902df3411db81745d86
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 575e46f7988184f52cddf8e986a7aef05a61804b
+ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2316654"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2953477"
 ---
 # <a name="collect-outstanding-balances"></a>Collecte des soldes restants
 La gestion des clients comprend le contrôle du règlement des montants à temps. Si des clients ont des paiements échus, vous pouvez commencer par envoyer le rapport du Relevé client en guise de rappel. Sinon, vous pouvez émettre de relances.
@@ -59,7 +59,7 @@ Lorsque vous configurez des modalités de frais financiers et des modalités de 
 ## <a name="to-set-up-reminder-terms"></a>Pour configurer des modalités de rappel
 Si des clients ont des impayés, vous devez décider quand et comment leur envoyer un rappel. En outre, vous pouvez être amené à débiter leurs comptes d'intérêts ou de frais. Vous pouvez configurer autant de modalités de rappel que vous le souhaitez. Vous pouvez définir un nombre illimité de niveaux rappel pour chaque code modalités de rappel.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modalités de rappel**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modalités de rappel**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins.  
 3. Pour utiliser plusieurs combinaisons de modalités de rappel, créez un code pour chacun d'eux.
 
@@ -68,7 +68,7 @@ La première fois qu'un rappel est créé pour un client, la configuration utili
 
 Si vous créez plus de relances qu'il n'y a de niveaux relance, les conditions utilisées seront celles du niveau le plus élevé. Vous pouvez utiliser autant de relances que le champ **Nombre max. de relances** des conditions relance le permet.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modalités de rappel**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modalités de rappel**, puis sélectionnez le lien associé.  
 2. Sur la page **Modalités de rappel**, cliquez sur la ligne comportant les conditions pour lesquelles configurer des niveaux, puis cliquez sur l'action **Niveaux**.  
 3. Renseignez les champs selon vos besoins.  
 
@@ -183,7 +183,7 @@ Les frais financiers peuvent être calculés en utilisant la méthode du solde j
 
 En outre, chaque code de la table Modalités de frais financiers est lié à une autre table, la table Texte frais financiers. Pour chaque ensemble de modalités de frais financiers, vous pouvez définir un texte début et un texte fin à inclure dans la note de frais financiers.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modalités de frais financiers**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modalités de frais financiers**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins.
 3. Pour utiliser plusieurs combinaisons de modalités de frais financiers, créez un code pour chacun d'eux.
 
@@ -256,11 +256,13 @@ Si des notes de frais financiers ont été émises par erreur, vous pouvez les a
 
 ## <a name="to-view-reminder-and-finance-charge-entries"></a>Pour afficher les écritures rappel et note de frais financiers  
 Lorsque vous émettez un rappel, une écriture rappel est créée sur la page **Écritures rappel/frais financiers** pour chaque ligne rappel contenant une écriture client. Vous pouvez ensuite obtenir un aperçu des écritures rappel créées pour un client spécifique.    
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clients**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients**, puis sélectionnez le lien associé.  
 2. Ouvrez la fiche client appropriée, puis sélectionnez l'action **Écritures comptables**.
 3. Sur la page **Écritures client**, cliquez sur la ligne de l'écriture pour laquelle vous souhaitez visualiser les écritures rappel, puis sélectionnez l'action **Écritures rappel/frais financiers**.
 
+## <a name="see-related-training-at-microsoft-learnlearnpathsprocess-financial-periodic-activities-dynamics-365-business-central"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/process-financial-periodic-activities-dynamics-365-business-central/)
+
 ## <a name="see-also"></a>Voir aussi
 [Gestion des comptes client](receivables-manage-receivables.md)  
-[Ventes](sales-manage-sales.md)  
+[Vente](sales-manage-sales.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

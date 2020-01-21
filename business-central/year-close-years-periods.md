@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: year closing, close accounting period, close fiscal year, bank account detailed trial balance
-ms.date: 10/01/2019
+ms.date: 01/13/2020
 ms.author: jswymer
-ms.openlocfilehash: 0862806e6ad92dd3988c4a23090e3db7657fde1a
-ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
+ms.openlocfilehash: ef2f3f5e11b9593dce1ba1eb2039c0c0edd32aba
+ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2554606"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2953141"
 ---
 # <a name="closing-years-and-periods"></a>Fermeture des exercices et des périodes
 À la fin d'un exercice financier, vous devez exécuter un certain nombre de tâches administratives, par exemple vous assurer que tous les documents et journaux sont reportés, veiller que les données de devise sont à jour, que les registres sont fermés, etc. Les tâches réelles dépendent de votre compagnie.
@@ -36,9 +36,10 @@ Le tableau suivant fournit un aperçu des tâches que vous devez généralement 
 | Fermer les périodes comptables et l'exercice financier, transférer des soldes d'état des résultats sur des comptes de bilan et reporter l'écriture de fermeture de fin d'exercice. |[Clôture plans](year-close-books.md) |
 | Imprimer des états qui peuvent vous aider à créer des états financiers. |[Préparation des états de clôture](year-prepare-close-statement.md) |
 
+## <a name="see-related-training-at-microsoft-learnlearnmodulesclose-fiscal-year-dynamics-365-business-centralindex"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/close-fiscal-year-dynamics-365-business-central/index)
+
 ## <a name="see-also"></a>Voir aussi
 [Ouvrir un nouvel exercice financier](finance-how-open-new-fiscal-year.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
- 

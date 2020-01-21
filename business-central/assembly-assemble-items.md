@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: kit, kitting
-ms.date: 10/01/2019
+ms.date: 01/13/2020
 ms.author: sgroespe
-ms.openlocfilehash: 636b8a23d3952536a8cd8de92d44402baf4a56e5
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 1b7936a73274545dc0e8a9fcddec2fe68fdb62c9
+ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2878947"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2953885"
 ---
 # <a name="assembly-management"></a>Gestion d'assemblage
 Pour prendre en charge les sociétés qui fournissent des produits à leurs clients en combinant des composants dans des processus simples sans recourir aux fonctionnalités de fabrication, [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut des fonctions permettant d'assembler les articles. Ces fonctions s'intègrent à celles existantes \(ventes, planification, réservations et entreposage\).  
@@ -44,11 +44,13 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Créez des éléments d'assemblage personnalisés pour les commandes permanentes ventes avant de créer périodiquement les documents de vente réels en fonction de l'entente commande permanente.|[Création d'ordres d'assemblage permanents](assembly-how-to-create-blanket-assembly-orders.md)|
 |Annulez un ordre d'assemblage reporté, par exemple parce que l'ordre a été reporté avec des erreurs qui doivent être corrigées.|[Annuler le report d'assemblage](assembly-how-to-undo-assembly-posting.md)|
 |En savoir plus sur la différence entre les nomenclatures d'assemblage et les nomenclatures de production et les différences de traitement impliquées.|[Utiliser les nomenclatures](inventory-how-work-BOMs.md)|
-|Apprendre la manière dont la consommation d'assemblage et la production sont traitées lorsque vous reportez des ordres d'assemblage, et découvrir comment les coûts ressource et article sont traités et distribués aux écritures.|[Détails de conception : validation d'ordre d'assemblage](design-details-assembly-order-posting.md)|  
+|Apprendre la manière dont la consommation d'assemblage et la production sont traitées lorsque vous reportez des ordres d'assemblage, et découvrir comment les coûts ressource et article sont traités et distribués aux écritures.|[Détails de conception : Report d'ordre d'assemblage](design-details-assembly-order-posting.md)|  
+
+## <a name="see-related-training-at-microsoft-learnlearnpathsassemble-items-dynamics-365-business-central"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/assemble-items-dynamics-365-business-central/)
 
 ## <a name="see-also"></a>Voir aussi  
 [Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
-[Stock](inventory-manage-inventory.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 

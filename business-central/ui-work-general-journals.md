@@ -7,14 +7,14 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2019
+ms.date: 01/13/2020
 ms.author: sgroespe
-ms.openlocfilehash: 635e53040ab9920780cd1cf05a14f6dfa17496d9
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 5ea488bc03ffa64b0d6c4b5c1466ddf01ca52ab1
+ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314974"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2953909"
 ---
 # <a name="working-with-general-journals"></a>Utilisation de feuilles comptabilité
 
@@ -104,7 +104,7 @@ Lorsque vous créez des lignes journal dont vous savez que vous risquez de les r
 >   La procédure suivante traite du journal article mais affecte également le journal général.
 
 ### <a name="to-save-a-standard-journal"></a>Pour enregistrer un journal standard
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux article**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux article**, puis sélectionnez le lien associé.
 2. Entrez une ou plusieurs lignes journal.
 3. Sélectionnez les lignes journal à réutiliser.
 4. Choisissez l'action **Enregistrer en tant que feuille standard**.
@@ -119,7 +119,7 @@ Lorsque vous créez des lignes journal dont vous savez que vous risquez de les r
 Une fois l'enregistrement du journal article standard effectué, la page Journal article s'affiche. Vous pouvez alors procéder au report tout en sachant que vous pouvez très facilement recréer ce journal si vous devez reporter des lignes identiques ou analogues.
 
 ### <a name="to-reuse-a-standard-journal"></a>Pour réutiliser un journal standard
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux article**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux article**, puis sélectionnez le lien associé.
 2. Choisissez l'action **Obtenir les feuilles standard**.
 
     La page Journaux article standard qui s'ouvre alors contient des codes et des descriptions de tous les journaux article standard existants.
@@ -157,6 +157,8 @@ La procédure suivante est basée sur la page **Journal général**, mais s'appl
 2. Lorsque vous êtes prêt à valider la feuille, choisissez l'action **Renuméroter les numéros de document**.
 
 Les valeurs dans le champ **N° document** sont modifiées, le cas échéant, pour que le numéro de document sur les lignes journal individuelles ou groupées soit dans un ordre séquentiel. Une fois que les documents sont renumérotés, vous pouvez procéder au report du journal.
+
+## <a name="see-related-training-at-microsoft-learnlearnpathsuse-journals-dynamics-365-business-central"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/use-journals-dynamics-365-business-central/)
 
 ## <a name="see-also"></a>Voir aussi
 [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)  

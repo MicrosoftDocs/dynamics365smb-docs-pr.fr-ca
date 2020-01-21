@@ -10,19 +10,23 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
-ms.date: 10/01/2019
+ms.date: 01/13/2020
 ms.author: sgroespe
-ms.openlocfilehash: fc8f52e5ef9fdeb8a2add9cf030a348012f25366
-ms.sourcegitcommit: 02f1633213793bfc040ad0d2a96fe76572215aa5
+ms.openlocfilehash: fa8b324c0a63f7c00209579878b9739af8178041
+ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "2798509"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2953669"
 ---
 # <a name="setting-up-finance"></a>Configuration de Finance
-Pour vous aider à démarrer rapidement, [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut des configurations standard pour la plupart des processus financiers. Si vous devez modifier les configurations en fonction de votre activité, n'hésitez pas. Par exemple, à partir du tableau de bord, vous pouvez utiliser un guide de configuration assistée pour configurer la taxe de vente en fonction de votre situation géographique.  
+Avant de commencer à gérer votre activité, vous devez spécifier des règles et des valeurs par défaut concernant le mode de gestion souhaité des processus financiers de cette compagnie. Pour commencer, vous devez configurer l'élément essentiel des enregistrements comptables de la compagnie, à savoir le plan comptable. Configurez ensuite des groupes de report afin d'accroître l'efficacité du processus d'affectation des comptes de report de grand livre par défaut aux clients, fournisseurs et articles.
 
-Toutefois, il existe quelques éléments que vous devez configurer vous-même. Par exemple, si vous souhaitez utiliser les axes analytiques comme base pour la veille économique.  
+Certaines configurations financières peuvent être effectuées automatiquement avec des guides de configuration assistée, d'autres doivent être effectuées manuellement. Pour plus d'informations, voir [Préparation aux activités commerciales](ui-get-ready-business.md).
+
+Vous pouvez utiliser des dimensions pour ajouter différents types d'informations à chaque transaction. Vous pouvez configurer les dimensions de base de votre compagnie, tels que les projets et les départements. Vous pouvez ensuite ajouter, le cas échéant, des dimensions supplémentaires, et configurer des dimensions temporaires à utiliser pendant une période limitée, par exemple, dans le cadre d'une promotion de vente. Pour plus d'informations, reportez-vous à [Utilisation des axes](finance-dimensions.md).
+
+De nombreuses tâches de configuration doivent être effectuées avant l'enregistrement des transactions financières, mais vous pouvez modifier la plupart des paramètres ultérieurement. Certaines tâches de configuration sont facultatives, par exemple, vous ne configurez des consolidations et des reports intercompagnies que si vous utilisez plusieurs compagnies. D'autres tâches de configuration, telles que la spécification de la période durant laquelle le report est autorisé, devront probablement être répétées régulièrement.  
 
 Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.
 
@@ -46,10 +50,12 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Configurez le rapport Intrastat et envoyez-le à une administration | [Configurer et enregistrer un rapport Intrastat](finance-how-setup-report-intrastat.md)|
 |Vérifiez qu'une écriture dans un journal général est affectée à plusieurs comptes lors du report du journal, soit par quantité, pourcentage ou montant.|[Utiliser les clés d'affectation dans les journaux généraux](ui-how-use-allocation-keys-general-journals.md)|
 
+## <a name="see-related-training-at-microsoft-learnlearnpathsset-up-financial-management-dynamics-365-business-central"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/set-up-financial-management-dynamics-365-business-central/)
+
 ## <a name="see-also"></a>Voir aussi
 [Finance](finance.md)  
-[Gestion des comptes bancaires](bank-manage-bank-accounts.md)  
-[Utilisation des axes analytiques](finance-dimensions.md)  
+[Rapprochement de comptes bancaires](bank-manage-bank-accounts.md)  
+[Utilisation des dimensions](finance-dimensions.md)  
 [Importation des données métier à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  
 [Analyse de la trésorerie dans votre société](finance-analyze-cash-flow.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

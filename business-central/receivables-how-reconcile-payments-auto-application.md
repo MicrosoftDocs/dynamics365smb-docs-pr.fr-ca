@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, direct payment posting, reconcile payment, expenses, cash receipts
-ms.date: 10/01/2019
+ms.date: 12/17/2019
 ms.author: sgroespe
-ms.openlocfilehash: 121212f41d5dadff53a10f828c88279865828788
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: c0746551b21f96dde6e938e6bdbcc573ded2066a
+ms.sourcegitcommit: 3d128a00358668b3fdd105ebf4604ca4e2b6743c
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2316582"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2911057"
 ---
 # <a name="reconcile-payments-using-automatic-application"></a>Rapprocher les paiements à l'aide de l'affectation automatique
 La page **Journal rapprochement paiement** spécifie les paiements (entrants ou sortants) qui ont été enregistrés en tant que transactions sur votre compte bancaire en ligne et que vous pouvez affecter à leurs écritures ouvertes client, fournisseur et compte bancaire. Vous renseignez les lignes du journal en important un relevé bancaire sous forme de fichier ou flux bancaire.
@@ -33,7 +33,7 @@ L'action **Mapper le texte avec le compte** vous permet de configurer des mappag
 
 Une fonctionnalité similaire existe pour rapprocher les montants excédentaires sur les lignes journal rapprochement paiement de façon ponctuelle. Pour plus d'informations, voir [Rapprocher les paiements qui ne peuvent pas être affectés](receivables-how-reconcile-payments-cannot-apply-auto.md).
 
-Vous utilisez la fonction **Affecter automatiquement**, soit automatiquement lorsque vous importez un fichier ou flux bancaire avec des transactions de paiement ou lorsque vous l'activez, pour affecter des paiements à leurs écritures ouvertes associées sur la base d'une correspondance entre le texte d'une ligne relevé bancaire (ligne journal) et le texte d'une ou plusieurs écritures ouvertes.
+Vous utilisez la fonction **Affecter automatiquement**, soit automatiquement lorsque vous importez un fichier ou flux bancaire avec des transactions de paiement ou lorsque vous l'activez, pour affecter des paiements à leurs écritures ouvertes associées sur la base d'une correspondance entre le texte d'une ligne relevé bancaire (ligne journal) et le texte d'une ou plusieurs écritures ouvertes. Pour plus d'informations, voir [Configurer des règles pour l'affectation automatique des paiements](receivables-how-set-up-payment-application-rules.md).
 
 Sur les lignes feuille dans lesquelles un paiement a été lettré automatiquement à une ou plusieurs écritures ouvertes, le champ **Fiabilité correspondance** présente une valeur entre Faible et Élevée pour indiquer la qualité de la correspondance des données sur laquelle le lettrage de paiement suggéré est basée. En outre, les champs **Type de compte** et **N° compte** sont renseignés à l'aide des informations sur le client ou le fournisseur auquel le paiement est affecté. Si vous définissez un mappage de texte à compte, le lettrage automatique peut entraîner une valeur de fiabilité de correspondance **Élevée – Mappage de texte à compte**.
 
@@ -43,7 +43,7 @@ Pour chaque ligne journal de la page **Journal rapprochement paiement**, vous po
 > Vous pouvez lancer l'importation des transactions bancaires en même temps que vous ouvrez la page **Journal rapprochement paiement** pour un journal rapprochement paiement existant sur la page **Journaux rapprochement paiement**. La procédure suivante décrit comment importer des transactions bancaires sur la page **Journal rapprochement paiement** après avoir créé un journal.
 
 ## <a name="to-reconcile-payments-using-automatic-application"></a>Pour rapprocher les paiements à l'aide de l'affectation automatique
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux rapprochement paiement**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux rapprochement bancaire**, puis sélectionnez le lien associé.
 2. Pour travailler dans une nouvelle feuille rapprochement bancaire, sélectionnez l'action **Nouvelle feuille**.
 3. Sur la page **Liste comptes bancaires paiement**, sélectionnez le compte bancaire pour lequel vous voulez rapprocher des paiements, puis cliquez sur le bouton **OK**.
    La page **Journal rapprochement paiement** s'ouvre préparée pour le compte bancaire sélectionné.
@@ -63,7 +63,7 @@ Pour chaque ligne journal de la page **Journal rapprochement paiement**, vous po
 10. Lorsque vous êtes certain que tous les paiements sur les lignes journal sont correctement affectés ou définis sur le report direct, sélectionnez l'action **Reporter**, puis choisissez l'une des options suivantes :
 
     - **Reporter les paiements et rapprocher les comptes bancaires** - Pour reporter les paiements comme affectés et fermer également les écritures de compte bancaire associées comme rapprochées.
-    - **Reporter les paiements uniquement** - Pour reporter uniquement les paiements comme affectés, mais laisser les écritures de compte bancaire associées ouvertes. Requis lorsque vous devez rapprocher le compte bancaire séparément, par exemple. Pour plus d'informations, voir [Rapprocher des comptes bancaires séparément](bank-how-reconcile-bank-accounts-separately.md).
+    - **Reporter les paiements uniquement** - Pour reporter uniquement les paiements comme affectés, mais laisser les écritures de compte bancaire associées ouvertes. Exige que vous rapprochiez le compte bancaire séparément, par exemple. Pour plus d'informations, voir [Rapprocher des comptes bancaires](bank-how-reconcile-bank-accounts-separately.md).
     - **Rapport de test** - Pour examiner le résultat du report avant de reporter. L'état **Relevé de compte bancaire** s'ouvre et affiche les mêmes champs qu'en bas de la page **Journal rapprochement paiement**.
 
 Lorsque vous reportez le journal rapprochement paiement, les écritures ouvertes affectées sont fermées et les comptes client, fournisseur ou grand livre associés sont mis à jour. Pour les paiements sur les lignes journal basés sur le mappage de texte à compte, les comptes du grand livre, client et fournisseur spécifiés sont mis à jour. Pour toutes les lignes journal, des écritures de compte bancaire sont créées. Si vous sélectionnez l'action **Valider les paiements et rapprocher les comptes bancaires**, toutes les écritures comptables compte bancaire ouvertes associées au client lettré ou à des écritures comptables fournisseur sont clôturées Cela signifie que le compte bancaire est automatiquement rapproché pour les paiements que vous reportez avec le journal.
@@ -71,9 +71,9 @@ Lorsque vous reportez le journal rapprochement paiement, les écritures ouvertes
 Vous pouvez comparer la valeur du champ **Solde sur compte bancaire après validation** avec la valeur du champ **Solde final du relevé** pour avoir un suivi lorsque le compte bancaire a fait l'objet d'un rapprochement en fonction des paiements que vous validez.
 
 > [!NOTE]  
->   Si vous ne souhaitez pas rapprocher le compte bancaire à partir de la page **Journal rapprochement paiement**, vous devez utiliser la page **Rapprochement compte bancaire**. Pour plus d'informations, reportez vous à [Rapprocher des comptes bancaires séparément](bank-how-reconcile-bank-accounts-separately.md).
+>   Si vous ne souhaitez pas rapprocher le compte bancaire à partir de la page **Journal rapprochement paiement**, vous devez utiliser la page **Rapprochement compte bancaire**. Pour plus d'informations, voir [Rapprocher des comptes bancaires](bank-how-reconcile-bank-accounts-separately.md).
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion des comptes client](receivables-manage-receivables.md)  
-[Ventes](sales-manage-sales.md)  
+[Vente](sales-manage-sales.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

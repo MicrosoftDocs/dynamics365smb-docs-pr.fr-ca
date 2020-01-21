@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accountant, accounting, financial report
-ms.date: 10/01/2019
+ms.date: 01/13/2020
 ms.author: edupont
-ms.openlocfilehash: 70ee472953e470fe5d069ce3536d729677a1a135
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 858116d656ef264c7c9445596c8b5345da944c8e
+ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2302572"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2952587"
 ---
 # <a name="analyzing-financial-statements-in-microsoft-excel"></a>Analyse des états financiers dans Microsoft Excel
 Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez visualiser les KPI et obtenir des aperçus de l'état financier de la compagnie. Vous pouvez également ouvrir des listes dans Excel et analyser les données afférentes. De plus, vous pouvez exporter des relevés financiers volumineux, tels que le bilan ou l'état des résultats vers Excel, analyser les données et imprimer les rapports.  
@@ -41,8 +41,10 @@ Votre expérience [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut un complém
 
 Le complément vous permet d'obtenir des données actualisées à partir de [!INCLUDE[d365fin](includes/d365fin_md.md)] et d'appliquer les modifications à [!INCLUDE[d365fin](includes/d365fin_md.md)]. Toutefois, la possibilité de transférer les données vers la base de données est désactivée pour les rapports financiers Excel dans la liste ci-dessus.  
 
+## <a name="see-related-training-at-microsoft-learnlearnmodulesconfigure-powerbi-excel-dynamics-365-business-centralindex"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/configure-powerbi-excel-dynamics-365-business-central/index)
+
 ## <a name="see-also"></a>Voir aussi
 [Finance](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
-[Les écritures comptables et le plan comptable](finance-general-ledger.md)  
+[Le grand livre et le plan comptable](finance-general-ledger.md)  
 [Utilisation de Business Central](ui-work-product.md)  

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: special price, alternate price, pricing
-ms.date: 10/01/2019
+ms.date: 01/13/2020
 ms.author: sgroespe
-ms.openlocfilehash: 2495292a967d81cd64694d3a238399e964c1d94f
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: d0f65eeb44b6a9a2608c05f6b7c71f989a0b9386
+ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2316726"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2953525"
 ---
 # <a name="record-special-purchase-prices-and-discounts"></a>Enregistrer les prix d'achat spéciaux et les escomptes
 Vous devez définir les différentes ententes de prix et d'escompte qui s'appliquent lors d'achats effectués auprès de plusieurs fournisseurs de sorte que les valeurs et règles convenues s'appliquent aux documents achat créés à l'intention des fournisseurs.
@@ -34,7 +34,7 @@ En ce qui concerne les remises, vous pouvez définir et utiliser deux types de r
 Dans la mesure où les remises ligne achat et les prix achat sont basés sur une combinaison article/fournisseur, vous pouvez également effectuer cette configuration à partir de la fiche article dans laquelle sont définies les règles et valeurs. Pour plus d'informations, voir [Enregistrer de nouveaux articles](inventory-how-register-new-items.md).
 
 ## <a name="to-set-up-a-special-purchase-price-for-a-vendor"></a>Pour configurer un prix d'achat spécial pour un fournisseur
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Fournisseurs**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche fournisseur appropriée, puis sélectionnez l'action **Prix**.
 
     Le champ **Type d'achat** est prérempli avec **Fournisseur** et le champ **Code achat** est prérempli avec le numéro du fournisseur.
@@ -42,7 +42,7 @@ Dans la mesure où les remises ligne achat et les prix achat sont basés sur une
 4. Remplissez une ligne pour chaque combinaison pour laquelle le fournisseur vous accorde un escompte ligne achat.
 
 ## <a name="to-set-up-a-line-discount-for-a-vendor"></a>Pour configurer un escompte ligne pour un fournisseur
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Fournisseurs**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche fournisseur appropriée, puis sélectionnez l'action **Remises ligne**.
 
     Le champ **Type d'achat** est prérempli avec **Fournisseur** et le champ **Code achat** est prérempli avec le numéro du fournisseur.
@@ -52,7 +52,7 @@ Dans la mesure où les remises ligne achat et les prix achat sont basés sur une
 ## <a name="to-set-up-an-invoice-discount-for-a-vendor"></a>Pour configurer un escompte facture pour un fournisseur
 Une fois que vos fournisseurs vous ont informé des escomptes facture qu'ils accordent, entrez le code escompte facture sur les fiches fournisseur et configurez les conditions pour chaque code.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Fournisseurs**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche fournisseur d'un fournisseur pouvant faire l'objet de remises facture.
 3. Dans le champ **Code remise facture**, sélectionnez un code pour les conditions de remise facture appropriées à utiliser pour calculer les remises facture pour le fournisseur.
 
@@ -73,7 +73,7 @@ Lorsque vous reportez une facture achat qui comprend un ou plusieurs escomptes, 
 
 Avant cela, vous devez avoir configuré les comptes nécessaires pour reporter des montants d'escompte dans le plan comptable. Vous devez également vérifier que vous avez entré les numéros de compte corrects dans les paramètres comptabilisation des champs **Compte remise ligne achat** et **Compte remise fact. achat**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration achats et à payer**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration achats et à payer**, puis sélectionnez le lien associé.
 2. Dans le champ **Comptabilisation remise**, sélectionnez l'un des principes de validation des remises suivants.
 
 |**Principe de validation des remises**|**Remise facture**|**Remise ligne**|  
@@ -121,7 +121,9 @@ Le meilleur prix est le prix le plus bas autorisé associé à l'escompte ligne 
 
 Si aucun prix spécial ne peut être calculé pour l'article de la ligne, alors soit le coût unitaire direct, soit le prix unitaire à partir de la fiche article est inséré.
 
+## <a name="see-related-training-at-microsoft-learnlearnmodulesset-up-prices-discounts-dynamics-365-business-centralindex"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/set-up-prices-discounts-dynamics-365-business-central/index)
+
 ## <a name="see-also"></a>Voir aussi
 [Définition des achats](purchasing-setup-purchasing.md)  
-[Achats](purchasing-manage-purchasing.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
