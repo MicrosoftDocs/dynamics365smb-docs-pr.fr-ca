@@ -10,39 +10,39 @@ ms.workload: na
 ms.search.keywords: COA, cha of acc
 ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: ee789f35118c054fec8129106db0ad60cc48141c
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 901650c2ed61867cdcccd093d54b10fe24ce30a9
+ms.sourcegitcommit: 3d128a00358668b3fdd105ebf4604ca4e2b6743c
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2879475"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2911081"
 ---
-# <a name="setting-up-or-changing-the-chart-of-accounts"></a><span data-ttu-id="c94d5-103">Configuration ou modification du plan comptable</span><span class="sxs-lookup"><span data-stu-id="c94d5-103">Setting Up or Changing the Chart of Accounts</span></span>
-<span data-ttu-id="c94d5-104">Le plan comptable affiche les comptes généraux qui stockent vos données financières.</span><span class="sxs-lookup"><span data-stu-id="c94d5-104">The chart of accounts shows the ledger accounts that store your financial data.</span></span> [!INCLUDE[d365fin](includes/d365fin_md.md)] <span data-ttu-id="c94d5-105">inclut un plan comptable standard prêt à prendre en charge votre société.</span><span class="sxs-lookup"><span data-stu-id="c94d5-105">includes a standard chart of accounts that is ready to support your business.</span></span>
-<span data-ttu-id="c94d5-106">Cependant, vous pouvez modifier les comptes par défaut, et vous pouvez ajouter de nouveaux comptes.</span><span class="sxs-lookup"><span data-stu-id="c94d5-106">However, you can change the default accounts, and you can add new accounts.</span></span> 
+# <a name="setting-up-or-changing-the-chart-of-accounts"></a><span data-ttu-id="68901-103">Configuration ou modification du plan comptable</span><span class="sxs-lookup"><span data-stu-id="68901-103">Setting Up or Changing the Chart of Accounts</span></span>
+<span data-ttu-id="68901-104">Le plan comptable affiche les comptes généraux qui stockent vos données financières.</span><span class="sxs-lookup"><span data-stu-id="68901-104">The chart of accounts shows the ledger accounts that store your financial data.</span></span> [!INCLUDE[d365fin](includes/d365fin_md.md)] <span data-ttu-id="68901-105">inclut un plan comptable standard prêt à prendre en charge votre société.</span><span class="sxs-lookup"><span data-stu-id="68901-105">includes a standard chart of accounts that is ready to support your business.</span></span>
+<span data-ttu-id="68901-106">Cependant, vous pouvez modifier les comptes par défaut, et vous pouvez ajouter de nouveaux comptes.</span><span class="sxs-lookup"><span data-stu-id="68901-106">However, you can change the default accounts, and you can add new accounts.</span></span> 
 <br><br>  
 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE43KO9]
 
 
-## <a name="adding-or-changing-accounts"></a><span data-ttu-id="c94d5-107">Ajout ou modification de comptes</span><span class="sxs-lookup"><span data-stu-id="c94d5-107">Adding or Changing Accounts</span></span>
-<span data-ttu-id="c94d5-108">À partir du plan comptable, vous pouvez ouvrir chaque compte du grand livre et ajouter ou modifier des paramètres.</span><span class="sxs-lookup"><span data-stu-id="c94d5-108">From the chart of accounts, you can open each G/L account and add or change settings.</span></span>
+## <a name="adding-or-changing-accounts"></a><span data-ttu-id="68901-107">Ajout ou modification de comptes</span><span class="sxs-lookup"><span data-stu-id="68901-107">Adding or Changing Accounts</span></span>
+<span data-ttu-id="68901-108">À partir du plan comptable, vous pouvez ouvrir chaque compte du grand livre et ajouter ou modifier des paramètres.</span><span class="sxs-lookup"><span data-stu-id="68901-108">From the chart of accounts, you can open each G/L account and add or change settings.</span></span>
 
 > [!NOTE]  
->   <span data-ttu-id="c94d5-109">Vous pouvez supprimer un compte GL.</span><span class="sxs-lookup"><span data-stu-id="c94d5-109">You can delete a general ledger account.</span></span> <span data-ttu-id="c94d5-110">Toutefois, avant que de le supprimer, les conditions suivantes doivent être réunies :</span><span class="sxs-lookup"><span data-stu-id="c94d5-110">However, before you delete it, the following must be true:</span></span>  
+>   <span data-ttu-id="68901-109">Vous pouvez supprimer un compte GL.</span><span class="sxs-lookup"><span data-stu-id="68901-109">You can delete a general ledger account.</span></span> <span data-ttu-id="68901-110">Toutefois, avant que de le supprimer, les conditions suivantes doivent être réunies :</span><span class="sxs-lookup"><span data-stu-id="68901-110">However, before you delete it, the following must be true:</span></span>  
 >  
->   * <span data-ttu-id="c94d5-111">Le solde du compte doit être nul.</span><span class="sxs-lookup"><span data-stu-id="c94d5-111">The balance on the account must be zero.</span></span>  
->   * <span data-ttu-id="c94d5-112">Le champ **Perm. sup. ctes gr. liv. avant** doit être défini sur la page **Configuration du grand livre**, et le compte ne doit pas comporter d'écritures à cette date ou après celle-ci.</span><span class="sxs-lookup"><span data-stu-id="c94d5-112">The **Allow G/L Acc. Deletion Before** field must be set on the **General Ledger Setup** page, and the account must not have ledger entries on or after that date.</span></span>  
->   * <span data-ttu-id="c94d5-113">Si le champ **Vérifier utilisation cpte GL** de la page **Configuration du grand livre** est sélectionné, le compte ne doit pas être utilisé dans les groupes de report ni dans la configuration de report.</span><span class="sxs-lookup"><span data-stu-id="c94d5-113">If the **Check G/L Account Usage** field on the **General Ledger Setup** page is selected, then the account must not be used in any posting groups or posting setup.</span></span>  
+>   * <span data-ttu-id="68901-111">Le solde du compte doit être nul.</span><span class="sxs-lookup"><span data-stu-id="68901-111">The balance on the account must be zero.</span></span>  
+>   * <span data-ttu-id="68901-112">Le champ **Perm. sup. ctes gr. liv. avant** doit être défini sur la page **Configuration du grand livre**, et le compte ne doit pas comporter d'écritures à cette date ou après celle-ci.</span><span class="sxs-lookup"><span data-stu-id="68901-112">The **Allow G/L Acc. Deletion Before** field must be set on the **General Ledger Setup** page, and the account must not have ledger entries on or after that date.</span></span>  
+>   * <span data-ttu-id="68901-113">Si le champ **Vérifier utilisation cpte GL** de la page **Configuration du grand livre** est sélectionné, le compte ne doit pas être utilisé dans les groupes de report ni dans la configuration de report.</span><span class="sxs-lookup"><span data-stu-id="68901-113">If the **Check G/L Account Usage** field on the **General Ledger Setup** page is selected, then the account must not be used in any posting groups or posting setup.</span></span>  
 
-[!INCLUDE[d365fin](includes/d365fin_md.md)] <span data-ttu-id="c94d5-114">vous empêchera de supprimer un compte général qui stocke les données nécessaires au plan comptable.</span><span class="sxs-lookup"><span data-stu-id="c94d5-114">will prevent you from deleting a general ledger account that stores data that is needed in the chart of accounts.</span></span>  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] <span data-ttu-id="68901-114">vous empêchera de supprimer un compte général qui stocke les données nécessaires au plan comptable.</span><span class="sxs-lookup"><span data-stu-id="68901-114">will prevent you from deleting a general ledger account that stores data that is needed in the chart of accounts.</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="c94d5-115">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="c94d5-115">See Also</span></span>
-[<span data-ttu-id="c94d5-116">Les écritures comptables et le plan comptable</span><span class="sxs-lookup"><span data-stu-id="c94d5-116">The General Ledger and the Chart of Accounts</span></span>](finance-general-ledger.md)  
-[<span data-ttu-id="c94d5-117">Gestion des comptes bancaires</span><span class="sxs-lookup"><span data-stu-id="c94d5-117">Managing Bank Accounts</span></span>](bank-manage-bank-accounts.md)  
-[<span data-ttu-id="c94d5-118">Utilisation des dimensions</span><span class="sxs-lookup"><span data-stu-id="c94d5-118">Working with Dimensions</span></span>](finance-dimensions.md)  
-[<span data-ttu-id="c94d5-119">Importation des données à partir d'autres systèmes financiers</span><span class="sxs-lookup"><span data-stu-id="c94d5-119">Importing Data from Other Finance Systems</span></span>](across-import-data-configuration-packages.md)  
-[<span data-ttu-id="c94d5-120">Utilisation des tableaux d'analyse</span><span class="sxs-lookup"><span data-stu-id="c94d5-120">Work with Account Schedules</span></span>](bi-how-work-account-schedule.md)  
-<span data-ttu-id="c94d5-121">[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="c94d5-121">[Working with [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span></span>  
+## <a name="see-also"></a><span data-ttu-id="68901-115">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="68901-115">See Also</span></span>
+[<span data-ttu-id="68901-116">Le grand livre et le plan comptable</span><span class="sxs-lookup"><span data-stu-id="68901-116">The General Ledger and the Chart of Accounts</span></span>](finance-general-ledger.md)  
+[<span data-ttu-id="68901-117">Rapprochement de comptes bancaires</span><span class="sxs-lookup"><span data-stu-id="68901-117">Reconciling Bank Accounts</span></span>](bank-manage-bank-accounts.md)  
+[<span data-ttu-id="68901-118">Utilisation des dimensions</span><span class="sxs-lookup"><span data-stu-id="68901-118">Working with Dimensions</span></span>](finance-dimensions.md)  
+[<span data-ttu-id="68901-119">Importation des données à partir d'autres systèmes financiers</span><span class="sxs-lookup"><span data-stu-id="68901-119">Importing Data from Other Finance Systems</span></span>](across-import-data-configuration-packages.md)  
+[<span data-ttu-id="68901-120">Utilisation des tableaux d'analyse</span><span class="sxs-lookup"><span data-stu-id="68901-120">Work with Account Schedules</span></span>](bi-how-work-account-schedule.md)  
+<span data-ttu-id="68901-121">[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="68901-121">[Working with [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span></span>  
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]
