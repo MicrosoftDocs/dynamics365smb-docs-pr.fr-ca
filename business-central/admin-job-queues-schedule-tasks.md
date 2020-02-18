@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: abca7de7ce91ebe32e8c17a2288c49684b53455c
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: b8470fa559d8a640e1c05cc6e03ca4caf3a9827e
+ms.sourcegitcommit: 1c286468697d403b9e925186c2c05e724d612b88
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2879212"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "2999793"
 ---
 # <a name="use-job-queues-to-schedule-tasks"></a>Utiliser des files d'attente des travaux pour programmer des tâches
 Des files d'attente des travaux dans [!INCLUDE[d365fin](includes/d365fin_md.md)] permettent aux utilisateurs de planifier et d'exécuter des états et codeunits spécifiques. Vous pouvez définir des projets à exécuter une fois, ou sur une base récurrente. Par exemple, vous pouvez être amené à exécuter le rapport **Représentant : Statistiques ventes** chaque semaine pour suivre les ventes hebdomadaires d'un représentant, ou vous pouvez être amené à exécuter le codeunit **Traiter file d'attente courriels service** chaque jour pour vérifier si des courriels adressés aux clients concernant leurs commandes service sont envoyés en temps utile.
@@ -31,6 +31,11 @@ Vous pouvez réaliser cette opération en configurant la file d'attente des trav
 
 [!INCLUDE[d365fin](includes/d365fin_md.md)] prend en charge le report en arrière-plan de tous les documents de types ventes, achats et service.
 
+> [!NOTE]
+> Certains travaux modifient les données identiques et ne doivent pas s'exécuter en simultané, car cela peut provoquer des conflits. Par exemple, les travaux d'arrière-plan des documents de vente tentent de modifier les données identiques en simultané. Les catégories de file d'attente des travaux permettent d'éviter ces types de conflits en garantissant que lorsqu'un travail est en cours d'exécution, un autre travail appartenant à la même catégorie de file d'attente ne s'exécutera pas avant sa fin. Par exemple, un travail relevant d'une catégorie de file d'attente des travaux de vente attendra que tous les autres travaux liés aux ventes soient terminés. Vous spécifiez une catégorie de file d'attente des travaux sur le raccourci **Report en arrière-plan** sur la page **Configuration ventes & à recevoir**. 
+> 
+> [!INCLUDE[d365fin](includes/d365fin_md.md)] fournit des catégories de file d'attente des travaux pour les reports au grand livre, les ventes et les achats. Nous recommandons que l'une d'entre elles, ou celle que vous créez, soit toujours spécifiée. Si vous rencontrez des échecs en raison de conflits, pensez à configurer une catégorie pour l'ensemble des reports comptables en arrière-plan, des ventes et des achats.
+
 La procédure suivante explique comment configurer le report en arrière-plan des documents de vente. La procédure est identique pour un achat et un service.  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.
@@ -41,7 +46,7 @@ La procédure suivante explique comment configurer le report en arrière-plan de
 4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Écritures file d'attente des travaux**, puis sélectionnez le lien associé.
 5. Sur la page **Écritures file d'attente des travaux**, choisissez l'action **Nouveau**.
 6. Dans le champ **Type objet à exécuter**, sélectionnez **Codeunit**.  
-7. Dans le champ **Code objet à exécuter**, sélectionnez 88, **Reporter des ventes via la file d'attente des travaux**.
+7. Dans le champ **Code objet à exécuter**, sélectionnez **88**. Les champs Description et Légende de l'objet à exécuter affichent le report des ventes via la file d'attente des travaux.
 
     Aucune autre champ n'est valable pour ce scénario.
 8. Choisissez l'action **Attribuer l'état Prêt**.
