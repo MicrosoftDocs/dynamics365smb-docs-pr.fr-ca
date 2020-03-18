@@ -8,17 +8,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 02/19/2020
 ms.author: sgroespe
-ms.openlocfilehash: 84e88e328bacf0e7856be6dccbc83743a7a277ee
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 9167904c831774f0bf0b35c4bb999a54250ca8e7
+ms.sourcegitcommit: d0dc5e5c46b932899e2a9c7183959d0ff37738d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2878721"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076406"
 ---
 # <a name="set-up-unrealized-sales-tax-and-sales-payment-discounts"></a>Configurer les escomptes de paiement de vente et la taxe de vente non réalisée
 Vous pouvez utiliser la page **Configuration du grand livre** pour configurer la taxe de vente non réalisée. Vous pouvez également configurer des montants de taxe de correction maximum de manière à limiter les montants de correction de taxe qui sont entrés pour les ventes et les achats. Cela vous permet de remplacer la taxe calculée lorsqu'il existe des différences d'arrondissement entre ce qui est calculé sur le bon de commande et ce qui est calculé sur la facture achat du fournisseur.  
+
+> [!NOTE]
+> Si vous travaillez avec la taxe d'accise, le système ne vous autorise pas à modifier le champ **Montant taxe** sur la page **Statistiques** pour une facture, par exemple pour ajuster l'arrondissement. Par conséquent, si vous avez configuré une taxe d'accise avec plus de deux décimales et que vous constatez une différence d'arrondissement par rapport aux factures de votre fournisseur, vous devez alors traiter la différence d'arrondissement en reportant une écriture supplémentaire afin que le total corresponde au montant du document. Ce report pourrait être effectué sur un compte dépenses dédié à l'arrondissement des montants.
 
 ## <a name="to-set-up-unrealized-sales-tax"></a>Pour configurer la taxe de vente non réalisée  
 1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.  

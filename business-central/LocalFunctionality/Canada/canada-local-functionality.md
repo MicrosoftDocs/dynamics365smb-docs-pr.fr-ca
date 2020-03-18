@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: soalex
-ms.openlocfilehash: 1c52e16746ce0bbe62238f796cf571a9c0d337ca
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: c3b5b94bfcd9170ec9316a57a6d10fa7a4af8cef
+ms.sourcegitcommit: d0dc5e5c46b932899e2a9c7183959d0ff37738d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2300234"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076401"
 ---
 # <a name="canada-local-functionality"></a>Fonctionnalités locales Canada
 Les rubriques suivantes décrivent les fonctionnalités locales spécifiques à la version canadienne de [!INCLUDE[d365fin](../../includes/d365fin_md.md)].  
@@ -28,9 +28,8 @@ Les rubriques suivantes décrivent les fonctionnalités locales spécifiques à 
     * [Configurer les escomptes de paiement de vente et la taxe de vente non réalisée](how-to-set-up-unrealized-sales-tax-and-sales-payment-discounts.md) **Désormais disponible**
     * [Configurer la taxe de service et la taxe d'achat](how-to-set-up-use-tax-and-purchase-tax.md) **Désormais disponible**
 
-* Opérations bancaires et paiements
+* Banque et paiements
     * [Créer des dépôts](how-to-create-deposits.md) **Désormais disponible**
-    * [Gérer les renseignements sur le crédit client](how-to-manage-customer-credit-information.md) **Désormais disponible**
     * [Effectuer des paiements électroniques](../../finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md#exporting-payments-to-a-bank-file) **Désormais disponible**
 
 * Général
