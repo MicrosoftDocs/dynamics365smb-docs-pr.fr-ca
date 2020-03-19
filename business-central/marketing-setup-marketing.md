@@ -12,26 +12,26 @@ ms.workload: na
 ms.search.keywords: relationship, prospect, client, customer, campaign, promo
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 2be63cdb75a056beebb8648fa151b055a5a4f484
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: da0ef3338a32e797c9ebe21b051fb8cc8babcc6d
+ms.sourcegitcommit: d0dc5e5c46b932899e2a9c7183959d0ff37738d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2308699"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076863"
 ---
 # <a name="setting-up-relationship-management"></a>Paramétrage de la Gestion des relations
 Avant de commencer à travailler avec vos contacts et prospects marketing, vous devez prendre certaines décisions et accomplir certaines étapes afin de configurer la façon dont le module marketing gère certains aspects de vos contacts. Par exemple, vous pouvez décider de synchroniser la fiche contact avec la fiche client, la fiche fournisseur, ou la fiche compte bancaire, spécifier comment les séries de numéros sont définies, ou quelles sont les salutations standard lorsque vous écrivez à vos contacts.
 
 La gestion de vos contacts et la mise en place d'une stratégie visant à identifier, attirer et fidéliser les clients permet d'optimiser votre activité et d'accroître la satisfaction des clients. L'utilisation d'un système de gestion de contacts performant permet également de créer et de maintenir les relations avec vos clients. La communication est la clé de ces relations. Pour assurer la réussite de votre entreprise, il est nécessaire de personnaliser la communication avec les clients, fournisseurs et partenaires commerciaux potentiels et existants en fonction de leurs besoins spécifiques. La première étape consiste à établir une stratégie et à définir la manière dont votre compagnie utilise les informations de contact. Dans la mesure où celles-ci seront consultées par de nombreux groupes différents de votre compagnie, la mise en place d'un système performant permettra d'accroître la productivité.
 
-Vous configurez la gestion du marketing et des contacts à partir de la page **Configuration du marketing**. Pour ouvrir la page **Configuration du marketing**, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration du marketing**, puis sélectionnez le lien associé.
+Vous configurez la gestion du marketing et des contacts à partir de la page **Configuration du marketing**. Pour ouvrir la page **Configuration marketing**, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration marketing**, puis sélectionnez le lien associé.
 
 ## <a name="automatically-copying-specific-information-from-contact-companies-to-contact-persons"></a>Copie automatique des informations spécifiques des compagnies contact vers les personnes contact
 Une partie des données relatives aux compagnies contact sont identiques aux données sur les personnes contact qui travaillent dans ces compagnies, comme l'adresse. Dans la section **Héritage** de la page **Configuration marketing**, vous pouvez définir l'application de sorte qu'elle copie automatiquement des champs spécifiques de la fiche compagnie contact vers la fiche personne contact chaque fois que vous créez une personne contact pour une compagnie contact. Par exemple, vous pouvez choisir de copier un code représentant, les infos adresse (adresse, adresse 2e ligne, ville, code postal et comté), les détails de communication (numéro de télécopieur, numéro de télex et numéro de téléphone), et plus encore.
 
 Lorsque vous modifiez l'un de ces champs dans la fiche de la compagnie de contact, l'application modifie automatiquement le champ dans la fiche de la personne de contact (sauf si vous avez modifié ce champ manuellement).
 
-Pour plus d'informations, reportez-vous à [Créer des personnes contact](marketing-how-create-contact-persons.md).
+Pour plus d'informations, reportez-vous à [Créer des contacts](marketing-create-contact-companies.md).
 
 ## <a name="using-predefined-defaults-on-new-contacts"></a>Utilisation de paramètres par défaut prédéfinis sur les nouveaux contacts
 Vous pouvez configurer l'application pour qu'elle affecte automatiquement des codes langue, territoire, représentant et pays/région spécifiques par défaut à chaque nouveau contact que vous créez. Vous pouvez également entrer un code cycle de vente par défaut que l'application affecte automatiquement à chaque nouvelle opportunité.

@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: print check, vendor payment, creditor, debt, balance due, AP
 ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: 0606d5ab3130844be35bc7d0bcba210c83bf3e70
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 99da82d54a2e769c2ebbaf7d4c103791119517d9
+ms.sourcegitcommit: d0dc5e5c46b932899e2a9c7183959d0ff37738d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2313646"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076472"
 ---
 # <a name="making-payments"></a>Effectuer des paiements
 
@@ -37,7 +37,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Reporter les paiements aux fournisseurs ou aux employés, et les remboursements aux clients et affecter éventuellement les paiements aux factures/notes de crédit impayées pour les fermer comme payées.|[Enregistrer des paiements et des remboursements](payables-how-post-payments-refunds.md)|
 | Utilisez une fonction sur la page **Journal paiement** pour proposer des paiements fournisseur en fonction de critères sélectionnés, tels que la date d'échéance, la possibilité d'escompte et vos liquidités. |[Proposer paiements fournisseur](payables-how-suggest-vendor-payments.md) |
 | Émettre des chèques pour les paiements fournisseur ou les remboursements client, sous forme de documents imprimés ou de chèques informatiques. Annuler des chèques avant ou après le report. |[Effectuer des paiements par chèque](payables-how-work-checks.md) |
-|Effectuer des paiements électroniques conformément à la norme de virement SEPA de l'UE.|[Exécution de paiements avec le service de conversion de données bancaires ou un virement SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md)|
+|Effectuer des paiements électroniques conformément à la norme de virement SEPA de l'UE.|[Réalisation de paiements avec l'extension AMC Banking 365 Fundamentals ou virement SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md)|
 | Payez un fournisseur en liquide ou par chèque et reportez le paiement lorsque vous reportez la facture. |[Établir rapidement des factures achat](finance-how-to-settle-purchase-invoices-promptly.md) |
 | Assurez-vous que la banque efface uniquement les chèques et les montants validés en envoyant un fichier contenant des informations de paiement, du chèque et du fournisseur. |[Exporter un fichier Positive Pay](finance-how-positive-pay.md) |
 

@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 92c30770b62b6456a16ab26db2c4ea3cda526b8e
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: b809743aa25aee409b9a71ca98da77ea64b58fb1
+ms.sourcegitcommit: d0dc5e5c46b932899e2a9c7183959d0ff37738d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2880602"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076524"
 ---
 # <a name="design-details-central-concepts-of-the-planning-system"></a>Détails de conception : concepts centraux du système de planification
 Les fonctions de planification se trouvent dans un traitement en lot qui sélectionne d'abord les articles appropriés et la période à planifier. Puis, en fonction du code de bas niveau de chaque article (ligne nomenclature), le traitement en lot appelle un codeunit qui calcule un programme d'approvisionnement en équilibrant les séries offre-demande et en suggérant des actions possibles que l'utilisateur doit prendre. Les actions suggérées apparaissent sous forme de lignes dans la feuille planification ou la feuille de réquisition.  
@@ -46,7 +46,7 @@ L'ensemble de l'offre et de la demande antérieur à la date début de la pério
 
 En d'autres termes, il est supposé que la planification pour le passé est exécutée conformément au planning donné.  
 
-Pour plus d'informations, voir [Détails de conception : traiter les commandes avant la date début de la planification](design-details-dealing-with-orders-before-the-planning-starting-date.md).  
+Pour plus d'informations, voir [Traiter les commandes avant la date début de la planification](design-details-balancing-demand-and-supply.md#dealing-with-orders-before-the-planning-starting-date).  
 
 ## <a name="dynamic-order-tracking-pegging"></a>Chaînage dynamique (Origine des besoins)  
 Le suivi de commande dynamique, avec sa création simultanée de messages d'action dans la feuille planification, ne fait pas partie du système de planification des approvisionnements dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Cette fonction lie, en temps réel, la demande et des montants qui pourraient les couvrir, chaque fois qu'une nouvelle demande ou un approvisionnement est créé ou modifié.  
@@ -76,7 +76,7 @@ Par contre, le système de planification traite l'ensemble des demandes et appro
 
 Après l'exécution de la planification, il ne reste aucun message d'action dans la table Écriture message d'action, parce qu'ils ont été remplacés par les actions suggérées dans la feuille planification  
 
-Pour plus d'informations, voir Liens de chaînage lors de la planification dans [Détails de conception : équilibrage de l'approvisionnement avec la demande](design-details-balancing-supply-with-demand.md).  
+Pour plus d'informations, voir Liens de chaînage lors de la planification dans [Équilibrage de l'approvisionnement avec la demande](design-details-balancing-demand-and-supply.md#balancing-supply-with-demand).  
 
 ## <a name="sequence-and-priority-in-planning"></a>Séquence et priorité de la planification  
 Lors de l'établissement d'un plan, la séquence des calculs est importante que le travail soit réalisé dans un délai raisonnable. En outre, la gestion des priorités des besoins et ressources joue un rôle important pour obtenir les meilleurs résultats.  
@@ -90,7 +90,7 @@ Dans un environnement de fabrication, la demande d'un article fini et pouvant ê
 
 Les chiffres indiquent dans quelle séquence le système fait des propositions pour les commandes d'approvisionnement au niveau supérieur, et en supposant que l'utilisateur accepte ces propositions, pour tous les articles au niveau inférieur également.  
 
-Pour plus d'informations sur la fabrication, voir [Détails de conception : chargement des profils d'inventaire](design-details-loading-the-inventory-profiles.md).  
+Pour plus d'informations sur la fabrication, voir [Chargement des profils d'inventaire](design-details-balancing-demand-and-supply.md#loading-the-inventory-profiles).  
 
 ### <a name="locations--transfer-level-priority"></a>Emplacements/priorité de niveau transfert  
 Les compagnies actives dans plusieurs emplacements peuvent être amenées à planifier chaque emplacement individuellement. Par exemple, le niveau d'inventaire de sécurité d'un article et sa méthode de réapprovisionnement peuvent différer d'un emplacement à un autre. Dans ce cas, les paramètres de planification doivent être spécifiés par article et également par emplacement.  
@@ -106,14 +106,14 @@ Pour plus d'informations, voir [Détails de conception : transferts de planific
 ### <a name="order-priority"></a>Priorité de commande  
 Dans une unité de stock donnée, la date demandée ou disponible représente la priorité la plus élevée ; la demande du jour doit être traitée avant la demande des jours suivants. Mais en plus de ce certain type de priorité, les différents types de demande et d'approvisionnement doivent être triés en fonction de l'importance commerciale pour choisir quelle demande doit être satisfaite avant de répondre à une autre demande. Du côté de l'approvisionnement, la priorité de la commande indique la source d'approvisionnement qui doit être affectée avant d'affecter d'autres sources d'approvisionnement.  
 
-Pour plus d'informations, voir [Détails de conception : Affecter une priorité aux commandes](design-details-prioritizing-orders.md).  
+Pour en savoir plus, voir [Affecter une priorité aux commandes](design-details-balancing-demand-and-supply.md#prioritizing-orders).  
 
 ## <a name="demand-forecasts-and-blanket-orders"></a>Prévisions de demande et commandes permanentes  
 Les prévisions et les commandes permanentes représentent la demande anticipée. La commande permanente, qui regroupe les achats prévus d'un client sur une certaine période, contribue à réduire l'incertitude de la prévision globale. La commande permanente est une prévision spécifique au client qui s'ajoute à la prévision non spécifiée comme illustré ci-dessous.  
 
 ![Planification avec prévisions](media/NAV_APP_supply_planning_1_forecast_and_blanket.png "Planification avec prévisions")  
 
-Pour plus d'informations, reportez-vous à la section « La demande de prévision est réduite par les documents de vente » dans [Détails de conception : chargement des profils d'inventaire](design-details-loading-the-inventory-profiles.md).  
+Pour plus d'informations, reportez-vous à la section « La demande de prévision est réduite par les documents de vente » dans [Chargement des profils d'inventaire](design-details-balancing-demand-and-supply.md#loading-the-inventory-profiles).  
 
 ## <a name="planning-assignment"></a>Planification des activités  
 Tous les articles doivent être planifiés. Cependant, il n'existe aucune raison de calculer une planification pour un article à moins qu'il n'y ait eu une modification de la configuration de l'offre ou de la demande depuis la dernière fois qu'un plan a été calculé.  
@@ -171,9 +171,9 @@ Les articles avec numéros de série/lot sans configuration de traçabilité sp�
 
 Des demandes-approvisionnements avec des numéros de série et/ou de lot, spécifiques ou non spécifiques, sont considérés comme de haute priorité et sont donc exempts de la zone gelée, c'est-à-dire qu'ils font partie de la planification même s'ils sont dus avant la date début de la planification.  
 
-Pour plus d'informations, reportez-vous à la section « Les numéros de série/lot sont chargés en fonction du niveau de spécification » dans [Détails de conception : chargement des profils d'inventaire](design-details-loading-the-inventory-profiles.md).  
+Pour plus d'informations, reportez-vous à la section « Les numéros de série/lot sont chargés en fonction du niveau de spécification » dans [Chargement des profils d'inventaire](design-details-balancing-demand-and-supply.md#loading-the-inventory-profiles).  
 
-Pour plus d'informations sur la manière dont le système de planification équilibre les attributs, voir « Les numéros de série et/ou de lot et les liens Ordre pour ordre sont exempts de la zone gelée » dans [Détails de conception : traiter les commandes avant la date début de la planification](design-details-dealing-with-orders-before-the-planning-starting-date.md).  
+Pour plus d'informations sur la manière dont le système de planification équilibre les attributs, voir [Les numéros de série et/ou de lot et les liens Ordre pour ordre sont exempts de la zone gelée](design-details-balancing-demand-and-supply.md#seriallot-numbers-and-order-to-order-links-are-exempt-from-the-frozen-zone).  
 
 ## <a name="order-to-order-links"></a>Liens ordre pour ordre  
 Un approvisionnement ordre pour ordre signifie qu'un article est acheté, assemblé ou produit pour couvrir exclusivement une demande spécifique. Généralement, il se rapporte aux A-items et la motivation pour choisir cette méthode peut être que la demande n'est pas fréquente, le délai de production est insignifiant ou les attributs requis varient.  
@@ -223,14 +223,14 @@ L'avertissement Urgence est affiché dans deux situations :
 -   Lorsque l'inventaire est négatif à la date début de la planification.  
 -   Lorsqu'il existe des événements d'offre ou de demande rétroactifs.  
 
-Si l'inventaire d'un article est négatif à la date début de la planification, le système de planification suggère un approvisionnement d'urgence afin que la quantité négative arrive à la date début de la planification. Le texte d'avertissement indique la date début et la quantité de la commande d'urgence. Pour plus d'informations, voir [Détails de conception : traitement de l'inventaire prévisionnel négatif](design-details-handling-projected-negative-inventory.md).  
+Si l'inventaire d'un article est négatif à la date début de la planification, le système de planification suggère un approvisionnement d'urgence afin que la quantité négative arrive à la date début de la planification. Le texte d'avertissement indique la date début et la quantité de la commande d'urgence. Pour plus d'informations, voir [Traitement de l'inventaire négatif prévisionnel](design-details-handling-reordering-policies.md#handling-projected-negative-inventory).  
 
 Les lignes document avec une date d'échéance antérieure à la date début de la planification sont consolidées dans une commande d'approvisionnement d'urgence pour que l'article arrive à la date début de la planification.  
 
 ### <a name="exception"></a>Exception  
 L'avertissement Exception s'affiche si le stock disponible prévu descend en dessous du stock de sécurité. Le système de planification suggère une commande d'approvisionnement pour répondre aux besoins à la date d'échéance. Le texte d'avertissement indique la quantité du stock de sécurité et la date à laquelle elle est entamée.  
 
-Entamer le stock de sécurité est considéré comme une exception car cela ne doit pas se produire si le point de commande a été correctement défini. Pour plus d'informations, voir [Détails de conception : le rôle du point de commande](design-details-the-role-of-the-reorder-point.md).  
+Entamer le stock de sécurité est considéré comme une exception car cela ne doit pas se produire si le point de commande a été correctement défini. Pour plus d'informations, voir [Le rôle du point de commande](design-details-handling-reordering-policies.md#the-role-of-the-reorder-point).  
 
 En règle générale, les propositions de commande exceptionnelles permettent de s'assurer que le stock disponible prévu n'est jamais inférieur au niveau de stock de sécurité. Cela signifie que la quantité proposée est suffisante pour couvrir le stock de sécurité, sans prendre en compte les paramètres de planification. Toutefois, dans certains cas, des modificateurs de commande sont pris en compte.  
 
@@ -242,7 +242,7 @@ L'avertissement Attention est affiché dans trois situations :
 
 -   La date début de la planification est antérieure à la date de travail.  
 -   La ligne planification suggère de changer un bon de commande ou de production libéré.  
--   L'inventaire prévisionnel dépasse le niveau de dépassement de capacité à la date d'échéance. Pour plus d'informations, voir [Détails de conception : rester sous le niveau de dépassement de capacité](design-details-staying-under-the-overflow-level.md).  
+-   L'inventaire prévisionnel dépasse le niveau de dépassement de capacité à la date d'échéance. Pour plus d'informations, voir [Rester sous le niveau de dépassement de capacité](design-details-handling-reordering-policies.md#staying-under-the-overflow-level).  
 
 > [!NOTE]  
 >  Dans les lignes planification comportant des avertissements, le champ **Accepter message d'action** n'est pas sélectionné, car le gestionnaire doit poursuivre l'étude de ces lignes avant de mettre en application ce plan.  

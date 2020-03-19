@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2019
 ms.author: sgroespe
-ms.openlocfilehash: 1dda414746c8661e5a9cee3eee5ce569cfa83e16
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 54e7aabe2989033a33373b960633b1c8f8e38eab
+ms.sourcegitcommit: d0dc5e5c46b932899e2a9c7183959d0ff37738d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2882960"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076422"
 ---
 # <a name="design-details-balancing-demand-and-supply"></a>Détails de conception : équilibrage de la demande et de l'approvisionnement
 Pour comprendre comment fonctionne le système de planification, il est nécessaire de comprendre les objectifs priorisés du système de planification, dont les plus importants sont de s'assurer que :  
@@ -66,7 +66,7 @@ Si l'inventaire disponible d'origine est inférieur à zéro, le système de pla
 ## <a name="loading-the-inventory-profiles"></a>Chargement des profils d'inventaire
 Pour trier les nombreuses sources de demande et d'approvisionnement, le système de planification les organise sur deux chronologies appelées profils d'inventaire.  
 
-Les types normaux de demande et d'approvisionnement dont les dates d'échéance correspondent ou sont ultérieures à la date début de la planification sont chargés dans chaque profil d'inventaire. Une fois chargés, les différents types de demande et d'approvisionnement sont triés en fonction des priorités générales, comme la date d'échéance, les codes de plus bas niveau, l'emplacement et la variante. De plus, des priorités d'ordre s'appliquent aux différents types pour s'assurer que la demande la plus importante soit satisfaite en premier. Pour plus d'informations, voir [Détails de conception : Affecter une priorité aux commandes](design-details-prioritizing-orders.md).  
+Les types normaux de demande et d'approvisionnement dont les dates d'échéance correspondent ou sont ultérieures à la date début de la planification sont chargés dans chaque profil d'inventaire. Une fois chargés, les différents types de demande et d'approvisionnement sont triés en fonction des priorités générales, comme la date d'échéance, les codes de plus bas niveau, l'emplacement et la variante. De plus, des priorités d'ordre s'appliquent aux différents types pour s'assurer que la demande la plus importante soit satisfaite en premier. Pour en savoir plus, voir [Affecter une priorité aux commandes](design-details-balancing-demand-and-supply.md#prioritizing-orders).  
 
 Comme indiqué précédemment, la demande peut également être négative. Cela signifie qu'il doit être traité comme approvisionnement ;, toutefois, contrairement aux types courants d'approvisionnement, la demande négative est considérée comme approvisionnement fixe. Le système de planification peut la prendre en compte, mais ne proposera en aucun cas de la modifier.  
 
