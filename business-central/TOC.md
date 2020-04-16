@@ -28,7 +28,7 @@
 
 # Utilisation de Business Central
 ## [Aperçu](ui-work-product.md)
-## [Aide-mémoire imprimable](ui-work-product.md)
+## [Aide-mémoire imprimable](ui-work-product.md#cheatsheet)
 ## [Recherche de pages et d'informations avec Tell Me](ui-search.md)
 ## [Recherche de pages avec l'explorateur de rôles](ui-role-explorer.md)
 ## [FAQ Tell Me](ui-search-faq.md)
@@ -43,6 +43,7 @@
 ## [Gérer les pièces jointes, les liens et les notes sur les fiches et les documents](ui-how-add-link-to-record.md)
 ## [Modifier les paramètres de base](ui-change-basic-settings.md)
 ## [Gérer les notifications](ui-smart-notifications.md)
+## [Conseils hautes performances pour les utilisateurs professionnels](/dynamics365/business-central/dev-itpro/performance/performance-users?toc=/dynamics365/business-central/toc.json)
 ## Personnalisation de Business Central
 ### [Personnaliser votre espace de travail](ui-personalization-user.md)
 ### [Pourquoi la personnalisation d'une page est bloquée](ui-personalization-locked.md)
@@ -51,7 +52,7 @@
 ### [Affichage de listes de différentes manières](across-display-lists-different-views.md)
 ## Impression de rapports et exécution de traitements en lot et d'objets XMLport
 ### [Utilisation des rapports, des traitements en lot et des objets XMLport](ui-work-report.md)
-### [Spécifier la sélection de l'imprimante pour les états](ui-specify-printer-selection-reports.md)
+### [Paramétrage imprimantes](ui-specify-printer-selection-reports.md)
 ### [Programmer un rapport à exécuter](ui-work-report.md#ScheduleReport)
 ### [Gérer les paramètres enregistrés pour les rapports et les traitements en lot](reports-saving-reusing-settings.md)
 ### [Afficher des rapports de test avant le report](ui-how-view-test-reports-posting.md)
@@ -78,7 +79,7 @@
 ### [Configuration de groupes de report](finance-posting-groups.md)
 ### [Préparer la génération de rapports financiers avec des tableaux d'analyse et des catégories de compte](bi-how-work-account-schedule.md)
 ### [Utilisation des tolérances de règlement et des tolérances d'escompte de paiement](finance-payment-tolerance-and-payment-discount-tolerance.md)
-### [Ouvrir un nouvel exercice financier](finance-how-open-new-fiscal-year.md)
+### [Utiliser des périodes et exercices financiers comptables](finance-accounting-periods-and-fiscal-years.md)
 ### [Configuration de la TVA](finance-setup-vat.md)
 ### [Configurer la TVA non réalisée pour la comptabilité basée sur la trésorerie](finance-setup-unrealized-vat.md)
 ### [Activer l'affectation d'écritures en devises différentes](finance-how-enable-application-ledger-entries-different-currencies.md)
@@ -322,6 +323,7 @@
 ## [Créer des utilisateurs en fonction des licences](ui-how-users-permissions.md)
 ## [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md)
 ## [Gérer les profils](admin-users-profiles-roles.md)
+## [Paramétrage imprimantes](ui-specify-printer-selection-reports.md)
 ## [Classification de la sensibilité des données](admin-classifying-data-sensitivity.md)
 ## [Réponse aux demandes relatives aux données personnelles](admin-responding-to-requests-about-personal-data.md)
 ## [Création de compagnies](about-new-company.md)
@@ -367,13 +369,17 @@
 #### [Extensions Business Central par d'autres fournisseurs](ui-extensions-other.md)
 ## Intégration à Dynamics 365 Sales
 ### [Aperçu](admin-prepare-dynamics-365-for-sales-for-integration.md)
-### [Configuration des comptes d'utilisateur pour l'intégration à Dynamics 365 Sales](admin-setting-up-integration-with-dynamics-sales.md)
-### [Configurer une connexion Dynamics 365 Sales](admin-how-to-set-up-a-dynamics-crm-connection.md)
-### [Synchronisation de Business Central et Dynamics 365 Sales](admin-synchronizing-business-central-and-sales.md)
+## Intégration à Common Data Service
+### [Aperçu](admin-common-data-service.md)
+### [Modèles de propriété de données](admin-cds-company-concept.md)
+### [Configuration des comptes d'utilisateur pour intégration à Common Data Service](admin-setting-up-integration-with-dynamics-sales.md)
+### [Se connecter à Common Data Service](admin-how-to-set-up-a-dynamics-crm-connection.md)
+### [Synchronisation de Business Central et de Common Data Service](admin-synchronizing-business-central-and-sales.md)
 ### [Mappage des tables et des champs à synchroniser](admin-how-to-modify-table-mappings-for-synchronization.md)
 ### [Synchroniser manuellement les mappages de table](admin-manual-synchronization-of-table-mappings.md)
 ### [Programmer une synchronisation](admin-scheduled-synchronization-using-the-synchronization-job-queue-entries.md)
 ### [Dépannage des erreurs de synchronisation](admin-troubleshoot-sales-synchronization.md)
+<!-- ### [Developer Walkthrough: Custom Integration with Common Data Service](admin-walkthrough-customizing-cds-integration.md) moved to devitpro -->
 
 # Finance
 ## [Aperçu](finance.md)
@@ -510,7 +516,8 @@
 ## [Configuration et publication des services Web KPI sur la base de tableaux d'analyse](bi-how-to-set-up-and-publish-kpi-web-services-based-on-account-schedules.md)
 ## [Analyse des données par dimensions](bi-how-analyze-data-dimension.md)
 ## [Créer des rapports d'analyse](bi-how-create-analysis-views-reports.md)
-## [Création de rapports avec XBRL](bi-create-reports-with-xbrl.md)
+## [Création d'états avec XBRL](bi-create-reports-with-xbrl.md)
+## [Gérer l'accès intentionnel à la base de données](admin-data-access-intent.md)
 
 # Ventes
 ## [Aperçu](sales-manage-sales.md)
@@ -627,7 +634,7 @@
 ## [Aperçu](production-planning.md)
 ## [À propos de la fonctionnalité Planification](production-about-planning-functionality.md)
 ## [Sous-traiter la production](production-how-to-subcontract-manufacturing.md)
-## [Planification avec/sans emplacement](production-planning-with-without-locations.md).
+## [Planification avec/sans emplacement](production-planning-with-without-locations.md)
 ## [Créer une prévision](production-how-to-create-a-forecast.md)
 ## [Créer des bons de production à partir de documents de vente](production-how-to-create-production-orders-from-sales-orders.md)
 ## [Planifier les O.F. projets](production-how-to-plan-project-orders.md)
@@ -1390,7 +1397,7 @@
 #### [Taxe sur la valeur ajoutée, Suisse](LocalFunctionality/Switzerland/swiss-value-added-tax.md)
 #### [Taux de TVA pour la Suisse](LocalFunctionality/Switzerland/vat-rates-for-switzerland.md)
 ### Banque et paiements
-#### Code QR sur les bordereaux de paiement suisses
+#### Gestion des factures QR (LocalFunctionality/Switzerland/ui-extensions-qr-bill-management.md)
 #### [Fermer prélèvement LSV](LocalFunctionality/Switzerland/how-to-close-an-lsv-collection.md)
 #### [Exporter des paiements en mode LSV](LocalFunctionality/Switzerland/how-to-export-payments-using-lsv.md)
 #### [Importer des paiements ESR](LocalFunctionality/Switzerland/how-to-import-esr-payments.md)
