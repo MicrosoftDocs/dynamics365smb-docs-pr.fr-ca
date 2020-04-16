@@ -1,16 +1,16 @@
 # [Bienvenue dans Microsoft Invoicing](index.md)
-## Démarrer
-### [Configurer les informations sur votre entreprise](set-up-business-profile.md)
-### [Gestion des informations sur les clients](add-customers.md)
-### [Ajouter des produits ou des services](add-items.md)
-### [Ajouter la taxe sur la valeur ajoutée (TVA) à vos factures](add-vat.md)
-### [Taux de taxe américaine dans Invoicing](us-sales-tax.md)
-### [Définir le message de courriel par défaut](customize-email.md)
-### [Informer votre comptable](notify-accountant.md)
-### [Exporter les données](export-data.md)
-### [Réponse aux demandes relatives aux données personnelles](personal-data.md)
-### [Dépannage](about-troubleshooting.md)
-## Envoyer des factures et des estimations à vos clients
-### [Envoyer une facture à un nouveau client](send-invoice.md)
-### [Envoyer une estimation à un client](send-estimate.md)
-### [Indiquer un escompte](give-discount.md)
+<!--## Get started
+### [Set up your business information](set-up-business-profile.md)
+### [Managing customer information](add-customers.md)
+### [Add products or services](add-items.md)
+### [Add value added tax (VAT) to your invoices](add-vat.md)
+### [US tax rates in Invoicing](us-sales-tax.md)
+### [Define the default email message](customize-email.md)
+### [Notify your accountant](notify-accountant.md)
+### [Export data](export-data.md)
+### [Responding to requests about personal data](personal-data.md)
+### [Troubleshooting](about-troubleshooting.md)
+## Send invoices and estimates to your customers
+### [Send an invoice to a new customer](send-invoice.md)
+### [Send an estimate to a customer](send-estimate.md)
+### [Give a discount](give-discount.md)-->

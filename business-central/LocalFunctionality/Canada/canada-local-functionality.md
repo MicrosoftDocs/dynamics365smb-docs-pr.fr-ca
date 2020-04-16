@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: soalex
-ms.openlocfilehash: c3b5b94bfcd9170ec9316a57a6d10fa7a4af8cef
-ms.sourcegitcommit: d0dc5e5c46b932899e2a9c7183959d0ff37738d6
+ms.openlocfilehash: b04055080608297531cfb40e9cf9ff5aa73c5f9f
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076401"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3180839"
 ---
 # <a name="canada-local-functionality"></a>Fonctionnalités locales Canada
 Les rubriques suivantes décrivent les fonctionnalités locales spécifiques à la version canadienne de [!INCLUDE[d365fin](../../includes/d365fin_md.md)].  

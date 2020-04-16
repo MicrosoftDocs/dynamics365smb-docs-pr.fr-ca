@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: cc854aae6a8c140c88718e9fd60ea672bb74dcf6
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 7e3571ccea6be9cfee47e912516f563a2106d601
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2881455"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3180833"
 ---
 # <a name="set-up-use-tax-and-purchase-tax"></a>Configurer la taxe de service et la taxe d'achat
 La taxe de vente inclut les taxes payées par les compagnies pour utiliser des articles :  
