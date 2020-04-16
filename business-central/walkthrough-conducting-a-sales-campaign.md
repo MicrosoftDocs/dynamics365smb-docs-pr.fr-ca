@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: dc739c364b7e1fba5ab7c885c8c32052fd8f2dc9
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 53bc7faefc01399ae8db1d0763bc6ec91745b7b5
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314902"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3195301"
 ---
 # <a name="walkthrough-conducting-a-sales-campaign"></a>Procédure pas à pas : mise en place d'une promotion de vente
 Une promotion désigne tout type d'utilisation impliquant plusieurs contacts. La sélection du public cible de votre promotion représente une étape importante de la configuration. Pour ce faire, dans [!INCLUDE[d365fin](includes/d365fin_md.md)], créez un segment ou un groupe de contacts à l'aide de filtres.  
@@ -148,11 +148,11 @@ Une promotion désigne tout type d'utilisation impliquant plusieurs contacts. La
 
 9. Les pièces jointes sont envoyées. Lorsque le processus est terminé, cliquez sur le bouton **OK** associé au message qui indique que le segment a été journalisé.  
 
-     Les lettres sont automatiquement imprimées et le segment journalisé. Comme le segment a été journalisé, il ne figure plus dans la liste des segments, mais est déplacé dans la liste des segments journalisés. Pour afficher cette liste, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Segments journalisés**, puis sélectionnez le lien associé.  
+     Les lettres sont automatiquement imprimées et le segment journalisé. Comme le segment a été journalisé, il ne figure plus dans la liste des segments, mais est déplacé dans la liste des segments journalisés. Pour afficher cette liste, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Segments journalisés**, puis choisissez le lien associé.  
 
 10. Une fois le segment enregistré, chaque lettre envoyée est enregistrée en tant qu’interaction, que vous pouvez afficher dans le journal.  
 
-     Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Écritures journal interaction**, puis sélectionnez le lien associé. Chaque lettre envoyée est associée à une entrée.  
+     Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Écritures journal interaction**, puis choisissez le lien associé. Chaque lettre envoyée est associée à une entrée.  
 
 ### <a name="to-send-an-email-message-to-a-contact"></a>Pour envoyer un message électronique à un contact  
 
@@ -165,7 +165,7 @@ Une promotion désigne tout type d'utilisation impliquant plusieurs contacts. La
 7.  Cochez la case **Créer suivi segment**.  
 8.  Cliquez sur le bouton **OK**.  
 
-     Les lettres sont automatiquement envoyées par courriel et le segment journalisé. Comme le segment a été journalisé, il ne figure plus dans la liste des segments, mais est enregistré dans la liste des segments journalisés. Pour afficher cette liste, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Segments journalisés**, puis sélectionnez le lien associé.  
+     Les lettres sont automatiquement envoyées par courriel et le segment journalisé. Comme le segment a été journalisé, il ne figure plus dans la liste des segments, mais est enregistré dans la liste des segments journalisés. Pour afficher cette liste, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Segments journalisés**, puis choisissez le lien associé.  
 
 ## <a name="registering-campaign-responses"></a>Enregistrement des réponses de promotion  
  Au cours des semaines suivantes, les prospects répondent à la lettre. Le directeur marketing souhaite assurer le suivi des réponses et enregistre ces interactions.  

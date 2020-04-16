@@ -8,21 +8,21 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 41fabf67e34813323da0fd0b2acb32a904abeea9
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 5e8aa5a7baaf8ef8ce6d0352bbfd8cd01c77e01d
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2878783"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3188454"
 ---
 # <a name="archive-documents"></a>Archiver des documents
 Vous pouvez archiver des bons de commande, des documents de vente, des devis, des retours et des commandes permanentes, par exemple parce que vous voulez enregistrer une copie d'un document pour la réutiliser plus tard. Vous pouvez archiver des documents vente ou achat plusieurs fois, en enregistrant une version archivée différente chaque fois.
 
 Pour les documents archivés où l'original existe et n'est pas reporté, vous pouvez utiliser la fonction **Restaurer** pour remplacer l'original par la version archivée du document. Ceci est pratique si vous devez restaurer le contenu d'un document à un état antérieur.
 
-Pour les documents archivés où l'original est désactivé, vous pouvez réutiliser le contenu qu'en copiant les données, par exemple avec la fonction **Copier document**.   
+Pour les documents archivés où l'original est désactivé, vous pouvez réutiliser le contenu uniquement en copiant les données, par exemple avec la fonction **Copier à partir du document**.   
 
 ## <a name="to-set-up-automatic-document-archiving"></a>Pour configurer l'archivage automatique des documents  
 Vous pouvez configurer l'archivage automatique des documents de vente, des bons de commande, des devis, des commandes permanentes et des retours, avant de supprimer des documents.

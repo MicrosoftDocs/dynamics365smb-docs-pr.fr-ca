@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: task, process
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: solsen
-ms.openlocfilehash: 2387356fd3e80e5020b4d2e4857280dd4b99788a
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: c54edd1e907c27aca719898319f69f98c0a0a068
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2315214"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3195613"
 ---
 # <a name="run-batch-jobs-and-xmlports"></a>Exécuter des traitements en lot et des objets XMLport
 Un traitement par lots est une routine qui traite les données par lots, par exemple le traitement par lots **Ajuster taux de change**. Il existe des traitements en lot qui exécutent des activités de comptabilité périodiques, comme la fermeture de l'état des résultats à la fin d'un exercice financier. De nombreux traitements en lot exécutent des calculs, tels que le calcul des frais financiers, l'ajustement du taux de change et le calcul des prix unitaires.
@@ -27,7 +27,7 @@ Un traitement en lot est similaire à un rapport, sauf qu'il utilise les résult
 Vous pouvez programmer l'exécution d'un traitement en lot. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
 ## <a name="to-run-a-batch-job"></a>Pour exécuter un traitement en lot
-1. Pour ouvrir la page de demande du traitement en lot approprié, choisissez l'icone ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez le nom du traitement en lot, puis sélectionnez le lien associé.
+1. Pour ouvrir la page de demande du traitement en lot approprié, choisissez l'icone ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez le nom du traitement en lot, puis sélectionnez le lien associé.
 2. Si un raccourci **Options** est disponible pour le traitement par lots, renseignez-en les champs pour déterminer les tâches effectuées par le traitement par lots.
 3. La page peut inclure un ou plusieurs raccourcis avec des filtres que vous pouvez utiliser pour limiter les données incluses dans le traitement en lot. Pour cela, entrez des critères dans les filtres suggérés ou ajoutez des filtres supplémentaires.
 4. Pour démarrer le traitement en lot, cliquez sur le bouton **OK**.

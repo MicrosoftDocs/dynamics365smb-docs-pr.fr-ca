@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 01/13/2020
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 9aec5c57c66ce39bc9d314dc257e2a801ed961ea
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.openlocfilehash: 4fd911a708a929a9c73270c05b7729d17d84ec13
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2952756"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3186150"
 ---
 # <a name="create-reports-with-xbrl"></a>Création d'états avec XBRL
 XBRL, qui signifie eXtensible Business Reporting Language, est basé sur le langage XML et est utilisé pour marquer des données financières et permettre aux entreprises de traiter et de partager leurs données de manière efficace et précise. L'initiative XBRL permet la génération d'états financiers généraux par de nombreux éditeurs de logiciels ERP et organisations comptables internationales. L'objectif de cette initiative est de fournir un standard pour la génération de rapports d'informations financières uniformes pour les banques, les investisseurs et les autorités gouvernementales. Les rapports commerciaux générés de cette manière peuvent inclure :  
@@ -105,7 +105,7 @@ Lorsqu'une taxonomie est modifiée, vous devez mettre à jour la taxonomie actue
 6.  Pour importer le lien de ressources, sélectionnez l'action **Importer**.  
 7.  Cliquez sur le bouton **Oui** pour appliquer le lien de ressources au schéma.  
 
-## <a name="see-related-training-at-microsoft-learnlearnmodulesxbrl-reports-dynamics-365-business-centralindex"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/xbrl-reports-dynamics-365-business-central/index)
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/xbrl-reports-dynamics-365-business-central/index)
 
 ## <a name="see-also"></a>Voir aussi
 [Finances](finance.md)    

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 02/11/2020
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: dfd06fce9aab0de6afb725ab4625138b62305a1a
-ms.sourcegitcommit: d0dc5e5c46b932899e2a9c7183959d0ff37738d6
+ms.openlocfilehash: 44069b903df5426ae2aa3e851404c2b9e01f3979
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076792"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3188190"
 ---
 # <a name="set-up-data-exchange-definitions"></a>Configurer les définitions d'échange de données
 Vous pouvez configurer [!INCLUDE[d365fin](includes/d365fin_md.md)] pour échanger des données de tables spécifiques avec des données de fichiers externes, par exemple pour recevoir et envoyer des documents électroniques, importer et exporter des données bancaires ou d'autres données, telles que les salaires, les taux de change des devises et les catalogues article. Pour plus d'informations, voir [Échanger des données par voir électronique](across-data-exchange.md).  
@@ -139,7 +139,7 @@ Ceci est décrit dans les procédures suivantes.
     |**Libellé champ cible**|Uniquement visible lorsque la case à cocher **Utiliser comme table intermédiaire** est cochée.<br /><br /> Spécifiez le nom du champ dans la table cible auquel la valeur de la colonne **Titre colonne** est mappée lorsque vous utilisez une table intermédiaire pour l'importation des données.|  
     |**En option**|Uniquement visible lorsque la case à cocher **Utiliser comme table intermédiaire** est cochée.<br /><br /> Spécifiez que la correspondance doit être ignorée si le champ est vide. Si vous n'activez pas cette case à cocher, une erreur d'exportation aura lieu si le champ est vide.|  
 
-La définition d'échange de données est désormais prête à être activée pour les utilisateurs. Pour plus d'informations, voir [Configurer l'envoi et la réception de documents électroniques](across-how-to-set-up-electronic-document-sending-and-receiving.md), [Configurer des virements SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md#setting-up-sepa-credit-transfer), [Recueillir des paiements avec un prélèvement SEPA](finance-collect-payments-with-sepa-direct-debit.md) et [Exécuter les paiements avec l'extension AMC Banking 365 Fundamentals ou un virement SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md).  
+La définition d'échange de données est désormais prête à être activée pour les utilisateurs. Pour en savoir plus, consultez [Configurer l'envoi et la réception de documents électroniques](across-how-to-set-up-electronic-document-sending-and-receiving.md), [Configurer des virements SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md#setting-up-sepa-credit-transfer), [Recueillir des paiements avec un prélèvement SEPA](finance-collect-payments-with-sepa-direct-debit.md) et [Exécuter les paiements avec l'extension AMC Banking 365 Fundamentals ou un virement SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md).  
 
 ### <a name="transformation-rules"></a>Règles de transformation
 Si les valeurs des champs que vous associez sont différentes, vous devez utiliser des règles de transformation pour les définitions d'échange de données afin de les rendre identiques. Pour définir des règles de transformation pour des définitions d'échange de données, ouvrez une définition existante ou créez-en une nouvelle, puis, sur le raccourci **Définitions de ligne**, choisissez **Gérer**, puis **Mappage de champs**. Des règles prédéfinies sont fournies, mais vous pouvez également créer les vôtres. Le tableau suivant décrit les types de transformations que vous pouvez effectuer.

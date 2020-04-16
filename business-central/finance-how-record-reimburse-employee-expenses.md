@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: reimbursement
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 825658d88ea38a3c0c93d77c760707ae086f796f
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 5f943006997e4735d4ec224957442f23e2af1324
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2306211"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3184086"
 ---
 # <a name="record-and-reimburse-employees-expenses"></a>Enregistrer et rembourser les frais des employés
 [!INCLUDE[d365fin](includes/d365fin_md.md)] prend en charge les transactions des employés de la même manière que pour les fournisseurs. Par conséquent, les groupes de report employé existent pour s'assurer que les écritures d'un employé sont reportées dans les comptes correspondants du grand livre.
@@ -43,7 +43,7 @@ Reportez les frais employé sur la page **Journal général**.
 
 ## <a name="to-reimburse-an-employee"></a>Pour rembourser un employé
 Vous remboursez des employés en reportant les paiements sur leur compte bancaire sur la page **Journal paiement**.
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux paiement**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux paiement**, puis sélectionnez le lien associé.
 2. Ouvrez le lot journal paiement approprié. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 3. Renseignez les champs selon vos besoins. Pour plus d'informations, reportez-vous à [Effectuer des paiements](payables-make-payments.md).
 4. Sinon, choisissez l'action **Proposer paiements aux employés** pour insérer automatiquement des lignes journal pour les remboursements employé en attente.

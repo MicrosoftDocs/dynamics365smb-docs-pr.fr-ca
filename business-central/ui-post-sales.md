@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms.date: 01/17/2020
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: e6dfedea8f6266186f2a2e380cea74ab6b9404bf
-ms.sourcegitcommit: 877af26e3e4522ee234fbba606615e105ef3e90a
+ms.openlocfilehash: 7c75a96b749469ca4a9fb9794281aa64e8d3678e
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "2992131"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3189541"
 ---
 # <a name="posting-sales"></a>Report des ventes
 Sous le menu **Report** dans un document vente, vous pouvez choisir parmi les fonctions de report suivantes :
@@ -49,7 +49,7 @@ Dans la plupart des cas, vous pouvez ouvrir des écritures à partir de la fiche
 ## <a name="editing-ledger-entries"></a>Modification des écritures
 Vous pouvez modifier certains champs dans les documents d'achat reportés, tels que le champ **N° de suivi du colis**. . Pour plus d'informations, voir [Modifier les documents reportés](across-edit-posted-document.md). Pour les champs plus critiques qui concernent la piste d'audit, vous devez inverser ou annuler le report. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md).
 
-## <a name="see-related-training-at-microsoft-learnlearnmodulesship-invoice-items-dynamics-365-business-centralindex"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/ship-invoice-items-dynamics-365-business-central/index)
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/ship-invoice-items-dynamics-365-business-central/index)
 
 ## <a name="see-also"></a>Voir aussi
 [Vente](sales-manage-sales.md)  

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 362429f34c326996d9097ff23a0aec02787b2781
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 0035ff16fa5f71784209441bc2c6acbe8e4e8af0
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883320"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3191677"
 ---
 # <a name="create-production-orders-from-sales-orders"></a>Créer des bons de production à partir de documents de vente
 Vous pouvez créer des bons de production pour les articles produits directement à partir des documents de vente.  

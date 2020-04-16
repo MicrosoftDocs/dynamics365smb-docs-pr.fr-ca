@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 01/13/2020
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 273da0c35e6c4ca376f38ceede1568f5df5b4b15
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.openlocfilehash: 9345c30b1419e49300746076c48c8d44e9d4a6d1
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2953093"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3189949"
 ---
 # <a name="receive-items"></a>Réceptionner des articles
 Lorsque les articles arrivent dans un entrepôt qui n'est pas configuré pour un traitement de réception entrepôt, enregistrez simplement la réception du document d'entreprise associé, comme un bon de commande, un retour vente ou un ordre de transfert entrant.
@@ -28,8 +28,14 @@ La section suivante décrit comment recevoir des articles avec un bon de command
 2. Ouvrez un bon de commande existant, ou créez-en un nouveau. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 3. Dans le champ **Qté à recevoir**, indiquez la quantité reçue.
 
-    La valeur du champ **Qté reçue** est mise à jour en conséquence. Si c'est une réception partielle, la valeur est inférieure à la valeur dans le champ **Quantité**.
-4. Sélectionnez l'action **Valider**.
+  > [!NOTE]
+  > Si la quantité reçue est supérieure à celle commandée sur le bon de commande, selon le champ **Quantité**, et que le fournisseur a été configuré pour autoriser les sur-réceptions, utilisez le champ **Sur-réception** pour gérer la quantité excédentaire. Pour en savoir plus, consultez [Pour réceptionner plus d'articles que commandés](warehouse-how-receive-items.md#to-receive-more-items-than-ordered).
+4. Sélectionnez l'action **Reporter**.
+
+  La valeur du champ **Qté reçue** est mise à jour en conséquence. Si c'est une réception partielle, la valeur est inférieure à la valeur dans le champ **Quantité**.
+
+> [!NOTE]
+> Si vous utilisez un document entrepôt pour reporter la réception, vous ne pouvez pas utiliser l'action **Reporter** sur le bon de commande. Au lieu de cela, un magasinier a déjà reporté la quantité de la bon de commande telle qu'elle a été reçue. Pour en savoir plus, consultez [Pour réceptionner des articles avec une réception entrepôt](warehouse-how-receive-items.md#to-receive-items-with-a-warehouse-receipt).
 
 ## <a name="to-receive-items-with-a-warehouse-receipt"></a>Pour recevoir des articles avec une réception entrepôt
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Réceptions entrepôt**, puis sélectionnez le lien associé.  
@@ -40,7 +46,7 @@ La section suivante décrit comment recevoir des articles avec un bon de command
     Pour une configuration entrepôt avec un prélèvement et un rangement suggérés : Si l'emplacement possède des zones par défaut pour les réceptions, les champs **Code de zone** et **Code de zone** seront renseignés automatiquement, mais vous pouvez les modifier selon vos besoins.  
 
     > [!NOTE]  
-    >  Pour recevoir des articles portant des codes classe entrepôt différents du code classe de l'emplacement indiqué dans le champ **Code emplacement** de l'en-tête du document, vous devez supprimer la valeur du champ **Code emplacement** de l'en-tête avant d'extraire les lignes des documents origine des articles.  
+    > Pour recevoir des articles portant des codes classe entrepôt différents du code classe de l'emplacement indiqué dans le champ **Code emplacement** de l'en-tête du document, vous devez supprimer la valeur du champ **Code emplacement** de l'en-tête avant d'extraire les lignes des documents origine des articles.  
 3.  Choisissez l'action **Extraire documents origine**. La page **Documents origine** s'ouvre.
 
     À partir d'une réception entrepôt nouvelle ou ouverte, vous pouvez utiliser la page **Filtres pour extr. doc. orig.** afin d'extraire les lignes du document origine libéré qui définissent les articles à recevoir ou à livrer.
@@ -73,9 +79,45 @@ En cas de non-utilisation d'un rangement entrepôt et d'utilisation de zones, le
 > [!NOTE]  
 >  En utilisant la fonction **Reporter et Imprimer**, vous effectuez à la fois le report de la réception et l'impression d'une instruction de rangement qui indique où ranger les articles dans le stock.  
 >   
->  En cas d'utilisation d'un prélèvement et d'un rangement suggérés, les modèles rangement sont utilisés pour procéder au calcul du meilleur emplacement de rangement des articles. Il est ensuite imprimé sur l'instruction de rangement.  
+>  En cas d'utilisation d'un prélèvement et d'un rangement suggérés, les modèles rangement sont utilisés pour procéder au calcul du meilleur emplacement de rangement des articles. Il est ensuite imprimé sur l'instruction de rangement.
 
-## <a name="see-related-training-at-microsoft-learnlearnmodulesreceive-invoice-dynamics-d365-business-centralindex"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/receive-invoice-dynamics-d365-business-central/index)
+## <a name="to-receive-more-items-than-ordered"></a>Pour réceptionner plus d'articles que commandés
+Lorsque vous recevez plus de produits que commandés, vous pouvez les réceptionner au lieu d'annuler la réception. Par exemple, il peut être moins coûteux de conserver les inventaires excédentaires que de les retourner, ou votre fournisseur peut vous proposer un escompte pour les conserver.
+
+### <a name="to-set-up-over-receipts"></a>Pour configurer des sur-réceptions
+Vous devez définir un pourcentage de dépassement autorisé de la quantité commandée lors de la réception. Vous le définissez sous un code de sur-réception, qui contient le pourcentage dans le champ **% de tolérance de sur-réception**. Vous affectez ensuite le code aux fiches des articles et/ou fournisseurs concernés.  
+
+Ce qui suit décrit comment configurer un code de sur-réception et l'attribuer à un article. La procédure est identique pour un fournisseur.
+
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
+2. Ouvrez la fiche pour un article que vous soupçonnez parfois d'être livré avec une quantité supérieure à celle commandée.
+2. Cliquez sur le bouton de recherche dans le champ **Code de sur-réception**.
+3. Sélectionnez l'action **Nouveau**.
+4. Sur la page **Codes de sur-réception**, créez une ou plusieurs lignes définissant différentes stratégies de sur-réception. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)].
+5. Sélectionnez une ligne, puis cliquez sur le bouton **OK**.
+
+Le code de sur-réception est affecté à l'article. Tout bon de commande ou toute réception entrepôt pour l'article permet désormais de réceptionner une quantité supérieure à celle commandée selon le pourcentage de tolérance de sur-réception indiqué.
+
+> [!NOTE]
+> Vous pouvez configurer un flux de travail approbation pour exiger l'approbation des sur-réceptions avant leur traitement. Dans ce cas, vous devez sélectionner le champ **Approbation requise** sur la page **Codes de sur-réception**. Une réponse de flux de travail dédiée, **Approuver la sur-réception** existe dans les données de flux de travail standard à cet effet. Pour plus d'informations, voir [Créer des flux de travail](across-how-to-create-workflows.md).
+
+### <a name="to-perform-an-over-receipt"></a>Pour effectuer une sur-réception
+Sur les lignes achat et les lignes réception entrepôt, le champ **Quantité de sur-réception** permet d'enregistrer les quantités excédentaires reçues, c'est-à-dire les quantités dépassant la valeur dans le champ **Quantité**, la quantité commandée.
+
+Lorsque vous traitez une sur-réception, vous pouvez augmenter la valeur dans le champ **Qté à recevoir** pour la faire correspondre à la quantité réellement reçue. Le champ **Quantité de sur-réception** est ensuite mis à jour pour afficher la quantité excédentaire. Vous pouvez également saisir la quantité excédentaire dans le champ **Quantité de sur-réception**. Le champ **Qté à recevoir** est ensuite mis à jour pour afficher la quantité commandée augmentée de la quantité excédentaire. La procédure suivante décrit comment renseigner le champ **Qté à recevoir**.  
+
+1. Sur un bon de commande ou un document réception entrepôt où la quantité reçue est supérieure à celle commandée, saisissez la quantité réellement reçue dans le champ **Qté à recevoir**.
+
+    Si l'augmentation est inférieure ou égale à la tolérance indiquée par le code de sur-réception attribué, le champ **Quantité de sur-réception** est mis à jour pour afficher la quantité de dépassement de la valeur dans le champ **Quantité**.
+
+    Si l'augmentation est supérieure à la tolérance indiquée, la sur-réception n'est pas autorisée. Dans ce cas, vous pouvez rechercher s'il existe un autre code de sur-réception qui l'autorisera. Sinon, seule la quantité commandée peut être réceptionnée et la quantité excédentaire doit être traitée autrement, par exemple en la renvoyant au fournisseur.
+
+2. Reportez la réception comme vous le feriez pour toute autre réception.
+
+> [!NOTE]
+> [!INCLUDE[d365fin](includes/d365fin_md.md)] n'inclut pas de fonctionnalité permettant d'initier automatiquement l'administration financière des sur-réceptions. Vous devez gérer cela manuellement en accord avec le fournisseur, qui peut par exemple vous envoyer une facture nouvelle ou mise à jour.
+
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/receive-invoice-dynamics-d365-business-central/index)
 
 ## <a name="see-also"></a>Voir aussi  
 [Gestion d’entrepôt](warehouse-manage-warehouse.md)  

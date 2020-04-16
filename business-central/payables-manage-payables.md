@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: vendor payment, creditor, debt, balance due, AP
-ms.date: 01/13/2020
+ms.date: 04/01/2020
 ms.author: edupont
-ms.openlocfilehash: ea3091ecb79a345bf4bed9572e98de057cde38db
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.openlocfilehash: 1248a4932194de68c05ca4343836d345b5284b16
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2954245"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3190194"
 ---
 # <a name="managing-payables"></a>Gestion des comptes fournisseur
 
@@ -35,7 +35,7 @@ Le tableau suivant décrit une série de tâches associées aux comptes fourniss
 |Pour que l'évaluation de l'inventaire soit correcte, affectez les coûts articles ajoutés, tels que le fret, la manutention, les assurances et le transport, que vous encourez lors de l'achat.|[Utiliser Frais annexes pour comptabiliser les coûts commerciaux supplémentaires](payables-how-assign-item-charges.md)|
 |Remboursez les frais personnels des employés pour leurs activités professionnelles en effectuant le paiement sur leur compte bancaire.|[Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md)|
 
-## <a name="see-related-training-at-microsoft-learnlearnpathsprocess-customer-vendor-payments-dynamics-365-business-central"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/process-customer-vendor-payments-dynamics-365-business-central/)
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/process-customer-vendor-payments-dynamics-365-business-central/)
 
 ## <a name="see-also"></a>Voir aussi
 [Procédure d'achat](purchasing-manage-purchasing.md)  

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: adjustment, status, negative, positive, increase, decrease
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 33710cd80ba1218ad59c98ec605bcba98c8b7e1c
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 944ce9e3950ea64fafada118b6f99f5d891242a5
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2309926"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3182214"
 ---
 # <a name="count-inventory-using-documents"></a>Faire l'inventaire à l'aide de documents
 Vous pouvez effectuer l'inventaire d'un inventaire physique de vos articles à l'aide des documents Commande d'inventaire physique et Enregistrement d'inventaire physique. La page **Commande d'inventaire physique** est utilisée pour organiser le projet d'inventaire complet, par exemple un par emplacement. La page **Enregistrement d'inventaire physique** est utilisée pour communiquer et capturer le nombre réel d'articles. Vous pouvez créer plusieurs enregistrements pour une commande, par exemple, pour répartir les groupes d'articles vers différents employés.
@@ -36,9 +36,9 @@ Réaliser l'inventaire à l'aide de documents se produit comme suit :
 ## <a name="to-create-a-physical-inventory-order"></a>Pour créer une commande d'inventaire physique
 Une commande d'inventaire physique est un document complet composé d'un en-tête de commande d'inventaire physique et de quelques lignes de commande d'inventaire physique. Les informations relatives à un en-tête d'inventaire physique décrivent comment effectuer l'inventaire. Les lignes de commande d'inventaire physique contiennent les informations relatives aux articles et à leurs emplacements.
 
-Pour créer les lignes de commande d'inventaire physique, vous utilisez généralement la fonction **Calculer les lignes** pour refléter l'inventaire actuel comme lignes de la commande. Sinon, vous pouvez utiliser la fonction **Copier document** pour compléter les lignes avec le contenu de toute autre commande d'inventaire physique ouverte ou reportée. La procédure suivante décrit uniquement comment utiliser la fonction **Calculer les lignes**.
+Pour créer les lignes de commande d'inventaire physique, vous utilisez généralement la fonction **Calculer les lignes** pour refléter l'inventaire actuel comme lignes de la commande. Sinon, vous pouvez utiliser la fonction **Copier à partir du document** pour compléter les lignes avec le contenu de toute autre commande d'inventaire physique ouverte ou reportée. La procédure suivante décrit uniquement comment utiliser la fonction **Calculer les lignes**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes d'inventaire physique**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes d'inventaire**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Renseignez les champs requis du raccourci **Général**. [!INCLUDE [tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Choisissez l'action **Calculer les lignes**.
@@ -98,7 +98,7 @@ Vous pouvez aussi choisir l'action **Diff. commande inventaire physique** pour v
 
 ### <a name="to-find-duplicate-physical-inventory-order-lines"></a>Pour rechercher les doublons de lignes de commande d'inventaire physique
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes d'inventaire physique**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes d'inventaire**, puis sélectionnez le lien associé.
 2. Ouvrez la commande d'inventaire physique pour laquelle vous souhaitez afficher les doublons de lignes.
 3. Choisissez l'action **Afficher les doublons de lignes**.
 
@@ -111,7 +111,7 @@ Après avoir effectué une commande d'inventaire physique et modifié son état 
 - Chaque ligne de commande d'inventaire physique a été comptabilisée par au moins une ligne d'enregistrement d'inventaire.
 - Les cases à cocher **Dans les lignes enregistrement** et **Qté prévue (calculée)** ont été sélectionnées pour toutes les lignes de commande d'inventaire physique.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes d'inventaire physique**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes d'inventaire**, puis sélectionnez le lien associé.
 2. Sélectionnez la commande d'inventaire physique que vous souhaitez compléter, puis sélectionnez l'action **Modifier**.
 
     Sur la page **Commande d'inventaire physique**, vous visualisez la quantité enregistrée dans le champ **Qté enregistrée (de base)**.
@@ -188,6 +188,6 @@ Sur la page **Commande d'inventaire physique**, le champ **Qté négative (de ba
 [Utiliser les numéros de lot et de série](inventory-how-work-item-tracking.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)    
-[Ventes](sales-manage-sales.md)  
-[Achats](purchasing-manage-purchasing.md)  
+[Vente](sales-manage-sales.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

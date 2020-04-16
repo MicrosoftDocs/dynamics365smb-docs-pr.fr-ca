@@ -5,14 +5,14 @@ author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 509ee1cdbcf9c0ddd362435ed4d2319561a9e731
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: b33c0aae12374722a3ef5c73db50bbf53a35f39c
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2302654"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3184134"
 ---
 # <a name="about-finished-production-order-costs"></a>À propos des coûts des bons de production achevés
 L'achèvement du bon de production est une tâche importante dans l'évaluation du cycle de vie de l'article en cours de production. Les coûts finaux, notamment les écarts dans un environnement de coût standard, les valeurs réelles dans un environnement de coût FIFO, Moyenne ou LIFO, sont calculés à l'aide du traitement en lot **Ajuster coûts - Écr. article** qui permet d'opérer un rapprochement financier des coûts de production d'un article. Pour qu'un ordre de fabrication soit pris en considération pour un ajustement de coût, son statut doit être **Produit fini**. Il est donc essentiel qu'au moment de son achèvement, le statut d'un ordre de fabrication soit modifié en **Produit fini**.  

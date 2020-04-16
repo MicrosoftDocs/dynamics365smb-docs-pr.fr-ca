@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: c567652331d82e4386bcf8829dd7d296f8ebecb4
-ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
+ms.openlocfilehash: 4027fd2d7ce3e514aa451279c8800453ba62711b
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553902"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3195661"
 ---
 # <a name="walkthrough-receiving-and-putting-away-in-advanced-warehouse-configurations"></a>Procédure pas à pas : Réception et rangement dans les configurations de stockage avancées
 
@@ -58,7 +58,7 @@ Pour exécuter ce processus pas à pas, vous devez :
 -   avoir CRONUS International Ltd. installé.  
 -   Pour devenir employé d'entrepôt dans l'emplacement BLANC, procédez comme suit :  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Employés d'entrepôt**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Employés d'entrepôt**, puis sélectionnez le lien associé.  
 2.  Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs**.  
 3.  Dans le champ **Code d'emplacement**, entrez BLANC.  
 4.  Sélectionnez le champ **Par défaut**.  
@@ -71,7 +71,7 @@ La configuration de la page **Fiche emplacement** définit les flux d'entrepôt 
 
 ### <a name="to-review-the-location-setup"></a>Examen de la configuration de l'emplacement  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche emplacement BLANC.  
 3.  Notez que sur le raccourci **Entrepôt**, la case à cocher **Prélèv. et rangement suggérés** est activée.  
 
@@ -86,7 +86,7 @@ Les bons de commande sont le type de document source entrant le plus répandu.
 
 ### <a name="to-create-the-purchase-orders"></a>Pour créer les bons de commande  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de commande**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Créez un bon de commande pour le fournisseur 10 000 à la date de travail (23 janvier) comportant les lignes bon de commande suivantes.  
 
@@ -117,7 +117,7 @@ Les bons de commande sont le type de document source entrant le plus répandu.
 Sur la page **Réception entrepôt**, vous pouvez gérer plusieurs commandes entrantes pour les documents d'origine, tels qu'un bon de commande.  
 
 ### <a name="to-receive-the-items"></a>Réception des articles  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Réceptions entrepôt**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Réceptions entrepôt**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Dans le champ **Code d'emplacement**, entrez BLANC.  
 4.  Choisissez l'action **Filtrer pour extr. doc. orig.**.  

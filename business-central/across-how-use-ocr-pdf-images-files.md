@@ -9,14 +9,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: electronic document, e-invoice, incoming document, OCR, ecommerce, document exchange, import invoice
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: c35ccb10ca67e66697002add56d518f3a7bacc0d
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: c9acd338493ca101d8b8061fb95b9a4faba8eabb
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2305174"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3187878"
 ---
 # <a name="use-ocr-to-turn-pdf-and-image-files-into-electronic-documents"></a>Utiliser un service OCR pour convertir des fichiers PDF et image en documents électroniques
 À partir de fichiers PDF ou image reçus de vos partenaires commerciaux, un service externe de reconnaissance optique de caractères (OCR, Optical Character Recognition) génère des documents électroniques pouvant être convertis en enregistrements de document dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Par exemple, lorsque vous recevez une facture au format PDF de votre fournisseur, vous pouvez l'envoyer au service OCR à partir de la page **Documents entrants**. Ceci est décrit dans la première procédure.
@@ -120,5 +120,5 @@ Les champs du raccourci **Informations financières** de la page **Document entr
 ## <a name="see-also"></a>Voir aussi
 [Traiter les documents entrants](across-process-income-documents.md)  
 [Documents entrants](across-income-documents.md)  
-[Achats](purchasing-manage-purchasing.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

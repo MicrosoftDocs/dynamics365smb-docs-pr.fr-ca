@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: trade
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 76fc6081cf1dd27cc1e8f6c3611e60cb0ef7d37f
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 5fefafc1ca8ac7f5cd9862ff741a0f0fd9fec7ff
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2312110"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3194029"
 ---
 # <a name="sell-products"></a>Vendre des produits
 Vous créez un document de vente ou une facture vente pour enregistrer votre entente avec un client pour vendre certains produits selon certaines méthodes de livraison et de paiement.
@@ -42,7 +42,7 @@ La fiche article peut être de type **Inventaire**, **Service** et **Hors invent
 Vous pouvez remplir les champs relatifs au client sur la document de vente de deux façons selon que le client est déjà enregistré ou non. Reportez-vous aux étapes 2 et 3 de la procédure ci-dessous.
 
 ## <a name="to-create-a-sales-order"></a>Pour créer un document de vente
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Dans le champ **Client**, entrez le nom d'un client existant.
 
     D'autres champs de la page **Document de vente** sont désormais renseignés avec les informations standard sur le client sélectionné. Si le client n'est pas enregistré, procédez comme suit :
@@ -128,6 +128,6 @@ Les écritures article et client associées sont à présent créées dans votre
 ## <a name="see-also"></a>Voir aussi
 [Ventes](sales-manage-sales.md)  
 [Définition des ventes](sales-setup-sales.md)  
-[Stock](inventory-manage-inventory.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

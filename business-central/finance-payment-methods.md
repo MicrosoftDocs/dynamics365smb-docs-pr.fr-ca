@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: check, bank transfer, cash, PayPal
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 753b9f30648059a68c22b524008e21c6c866d19c
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 708ae474b15724e151cba367842091763544a434
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2882552"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3182982"
 ---
 # <a name="defining-payment-methods"></a>Définition des modes de règlement
 Les modes de règlement définissent le mode de paiement que vous souhaitez voir vos clients utiliser, et comment vous souhaitez payer les fournisseurs. Le mode peut varier pour chaque client ou fournisseur. Les exemples de modes de règlement courants sont **virement**, **espèces**, **chèque** ou **dépôt**.
@@ -26,7 +26,7 @@ Les mêmes modes de règlement sont utilisés pour les documents vente et achat.
 
 Toutefois, les notes de crédit pour les retours sont des exceptions, parce que le règlement s'effectue dans le sens inverse, de vous à votre client et de votre fournisseur à vous. Par conséquent, un mode de règlement par défaut n'est pas affecté aux notes de crédit. Il existe, cependant, une solution si vous avez spécifié des conditions de paiement pour le client ou le fournisseur. Bien que le champ **Calculer escompte de paiement sur les notes de crédit** ne soit pas prévu pour cela, si vous activez la case à cocher sur la page **Modalités de paiement**, un mode de règlement par défaut est ajouté lorsque vous créez une note de crédit. <br><br>  
 
-> [!Video https://www.microsoft.com/videoplayer/embed/RE476Ys]
+> [!Video https://www.microsoft.com/videoplayer/embed/RE476Ys?rel=0]
 
 ## <a name="to-set-up-a-payment-method"></a>Pour configurer un mode de règlement
 [!INCLUDE[d365fin](includes/d365fin_md.md)] fournit des modes de règlement que les entreprises utilisent souvent. Vous pouvez cependant en ajouter autant que nécessaire.

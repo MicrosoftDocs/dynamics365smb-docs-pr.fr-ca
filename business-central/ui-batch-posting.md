@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 15b0afcf04ad279000de227523f977fdb695fe01
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 32998248de254facdb225d60a0c8b55066b2707c
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2316797"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3192109"
 ---
 # <a name="post-multiple-documents-at-the-same-time"></a>Reporter plusieurs documents en même temps
 Au lieu de reporter des documents individuels un par un, vous pouvez sélectionner plusieurs documents non reportés dans une liste pour un report immédiat ou un report en lot, conformément à une programmation, à la fin de la journée, par exemple. Cela peut être utile si seul un superviseur peut reporter des documents créés par d'autres utilisateurs ou pour éviter des problèmes de performance du système liés au report pendant les heures de travail.
@@ -23,7 +23,7 @@ Au lieu de reporter des documents individuels un par un, vous pouvez sélectionn
 ## <a name="to-post-multiple-purchase-orders-immediately"></a>Pour reporter plusieurs bons de commande immédiatement
 La procédure suivante explique comment reporter immédiatement plusieurs bons de commande. Les étapes sont similaires pour tous les documents achat et vente.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de commande**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande**, puis sélectionnez le lien associé.
 2. Sur la page **Bons de commande**, sélectionnez toutes les commandes à reporter :
 3. Dans le champ **N°**, choisissez les trois points verticaux pour ouvrir le menu contextuel, puis choisissez l'action **Sélectionner davantage**.
 4. Cochez la case pour toutes les lignes représentant les commandes que vous souhaitez reporter en même temps.
@@ -36,7 +36,7 @@ La procédure suivante explique comment exécuter en lot plusieurs bons de comma
 > [!NOTE]
 > Le report en lot de documents s'effectue en arrière-plan, comme défini par une entrée de file d'attente des travaux, qui doit d'abord être configurée. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de commande**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande**, puis sélectionnez le lien associé.  
 2. Sur la page **Bons de commande**, sélectionnez toutes les commandes à reporter :
 3. Dans le champ **N°**, choisissez les trois points verticaux pour ouvrir le menu contextuel, puis choisissez l'action **Sélectionner davantage**.
 4. Cochez la case pour toutes les lignes représentant les commandes que vous souhaitez reporter en même temps.

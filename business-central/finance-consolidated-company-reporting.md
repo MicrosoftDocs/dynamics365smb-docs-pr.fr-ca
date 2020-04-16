@@ -9,14 +9,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: consolidation, subsidiaries, consolidate
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 2455cbf74520ddbc2ddb6ba6ae2e02064370ac2d
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: fc026d34c39b7f045100e16024d971493041fb80
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2302486"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3183870"
 ---
 # <a name="consolidating-financial-data-from-multiple-companies"></a>Consolidation des données financières de plusieurs compagnies
 Si vous avez plusieurs compagnies dans [!INCLUDE[d365fin](includes/d365fin_md.md)], le rapport Balance de vérification consolidée du tableau de bord Comptable peut vous donner un aperçu de leur santé financière dans leur ensemble.  
@@ -54,7 +54,7 @@ Si des paramètres plus avancés sont nécessaires pour votre consolidation, vou
 [!INCLUDE[d365fin](includes/d365fin_md.md)] vous permet de configurer une liste de compagnies à consolider, de vérifier les données comptables avant leur consolidation, d'importer des fichiers et de générer des rapports de consolidation.  
 
 1. Connectez-vous à la compagnie consolidée.
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
+2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
 3. Sélectionnez **Nouveau**, puis renseignez les champs requis. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 > [!IMPORTANT]
@@ -65,7 +65,7 @@ Si votre unité fonctionnelle utilise une devise étrangère, indiquez le taux d
 ### <a name="to-prepare-general-ledger-accounts-for-consolidation"></a>Pour préparer les comptes GL pour la consolidation
 Si le plan comptable de l'unité fonctionnelle diffère de celui de la compagnie consolidée, vous devez préparer les comptes GL pour la consolidation. Vous pouvez spécifier les comptes sur lesquels reporter les débits et crédits et la méthode à utiliser pour convertir des devises dans la compagnie consolidée. Par exemple, cela est utile si vous exécutez souvent le rapport.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable**, puis sélectionnez le lien associé.  
 2. Ouvrez la fiche du compte, puis renseignez les champs du raccourci **Consolidation**.
 
 ### <a name="to-specify-exchange-rates-for-consolidations"></a>Pour indiquer des taux de change pour les consolidations

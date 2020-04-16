@@ -8,21 +8,21 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 02/04/2020
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: e3270864e184bdb7473a95fd1620ea98c3e3fbd2
-ms.sourcegitcommit: 0cb8a646dcba8f6d6336ebd008587874d25f4629
+ms.openlocfilehash: 9cc15893963672f14aef33b8bd35560957a826ea
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030206"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3183918"
 ---
 # <a name="collect-payments-with-sepa-direct-debit"></a>Recouvrement de paiements par prélèvement automatique SEPA
 Avec le consentement de votre client, vous pouvez collecter les paiements directement à partir du compte bancaire du client en fonction du format SEPA.  
 
  Tout d'abord, définissez le format d'exportation du fichier bancaire qui indique à votre banque comment effectuer un prélèvement automatique. Ensuite, paramétrez le mode de paiement du client. Enfin, configurez le mandat de prélèvement qui reflète votre entente avec le client pour collecter leurs paiements pendant une certaine durée.  
 
- Pour demander à la banque de transférer le montant du paiement du compte bancaire du client vers le compte de votre compagnie, vous créez une écriture de recouvrement de prélèvement, qui conserve des informations sur les comptes bancaires, les factures de vente concernées et le mandat de prélèvement. Vous exportez ensuite un fichier XML basé sur l'écriture de collection, que vous envoyez à votre banque pour traitement. La banque vous communiquera tous les paiements impossibles à traiter, et vous devez rejeter manuellement les écritures de collection prélèvement automatique en question.  
+ Pour demander à la banque de transférer le montant du paiement du compte bancaire du client vers le compte de votre compagnie, vous créez une écriture de collection prélèvement automatique, qui conserve des informations sur les comptes bancaires, les factures de vente concernées et le mandat de prélèvement. Vous exportez ensuite un fichier XML basé sur l'écriture de collection, que vous envoyez à votre banque pour traitement. La banque vous communiquera tous les paiements impossibles à traiter, et vous devez rejeter manuellement les écritures de collection prélèvement automatique en question.  
 
  Vous pouvez définir des codes vente client standard avec les informations de mode et de mandat de prélèvement. Vous pouvez ensuite utiliser le traitement en lot **Créer factures client standard** pour générer plusieurs factures vente avec les informations de prélèvement automatique préremplies. Ceci peut être effectué manuellement ou automatiquement, en fonction de la date d'échéance du paiement.  
 
@@ -92,7 +92,7 @@ Avant de pouvoir traiter les paiements client par voie électronique en exportan
  Le mandat de prélèvement est automatiquement inséré dans le champ **Code mandat de prélèvement** lorsque vous créez une facture vente pour le client que vous avez sélectionné à l'étape 2. Pour plus d'informations, voir [Créer des lignes vente et achat récurrentes](sales-how-work-standard-lines.md).
 
 ## <a name="creating-sepa-direct-debit-collection-entries-and-export-to-a-bank-file"></a>Création d'écritures de collection prélèvement automatique SEPA et les exporter vers un fichier bancaire
- Pour demander à la banque de transférer le montant du paiement du compte bancaire du client vers le compte de votre compagnie, vous créez un recouvrement de prélèvement, qui conserve des informations sur le compte bancaire du client, les factures de vente concernées et le mandat de prélèvement. À partir de l'écriture de collection prélèvement automatique qui en résulte, vous exportez ensuite un fichier XML que vous envoyez ou transférez à votre banque électronique pour traitement. La banque vous communiquera tous les paiements qu'elle n'a pas pu traiter, et vous devez rejeter manuellement les écritures de collection prélèvement automatique en question.  
+ Pour demander à la banque de transférer le montant du paiement du compte bancaire du client vers le compte de votre compagnie, vous créez une écriture de collection prélèvement automatique, qui conserve des informations sur le compte bancaire du client, les factures de vente concernées et le mandat de prélèvement. À partir de l'écriture de collection prélèvement automatique qui en résulte, vous exportez ensuite un fichier XML que vous envoyez ou transférez à votre banque électronique pour traitement. La banque vous communiquera tous les paiements qu'elle n'a pas pu traiter, et vous devez rejeter manuellement les écritures de collection prélèvement automatique en question.  
 
  > [!NOTE]  
  >  Pour réunir les paiements à l'aide du prélèvement SEPA, la devise sur la facture vente doit être l'EURO.  
@@ -137,7 +137,7 @@ Une collection prélèvement automatique est ajoutée à la page **Recouvrements
 
       La collection prélèvement automatique associée est fermée.  
 
- Vous pouvez maintenant passer au report des réceptions de paiement pour les factures vente impliquées. Vous pouvez généralement le faire pendant que vous reportez des réceptions de paiement, comme sur la page **Enregistrement de paiement**, ou vous pouvez reporter les réceptions de paiement directement à partir de la page **Écritures recouvrement prélèvement**. Pour plus d'informations, voir [Reporter des réceptions règlement de prélèvement SEPA](finance-how-to-post-sepa-direct-debit-payment-receipts.md).
+ Vous pouvez maintenant passer au report des réceptions de paiement pour les factures vente impliquées. Vous pouvez généralement le faire pendant que vous reportez des réceptions de paiement, comme sur la page **Enregistrement de paiement**, ou vous pouvez reporter les réceptions de paiement directement à partir de la page **Écritures recouvrement prélèvement**. Pour plus d'informations, voir [Recouvrement de paiements par prélèvement automatique SEPA](finance-collect-payments-with-sepa-direct-debit.md).
 
 ## <a name="posting-sepa-direct-debit-payment-receipts"></a>Report des réceptions règlement de prélèvement SEPA
  Lorsqu'un recouvrement prélèvement est correctement traité par votre banque, vous pouvez procéder au report de la réception du paiement pour les factures vente impliquées. Pour plus d'informations, voir [Créer des écritures de collection prélèvement automatique SEPA et les exporter vers un fichier bancaire](finance-collect-payments-with-sepa-direct-debit.md#creating-sepa-direct-debit-collection-entries-and-export-to-a-bank-file).  

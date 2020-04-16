@@ -9,14 +9,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: SMTP, mail, Office 365, cover, body, PayPal, layout
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: c0f39204777c551eb72af1f1556dcc72d82fff2c
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 25b0d2b85d267f6a85afeed662a26daa0d32c5ce
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2310982"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3195589"
 ---
 # <a name="send-documents-by-email"></a>Envoyer des documents par courriel
 Pour communiquer le contenu des documents commerciaux rapidement à vos partenaires commerciaux, par exemple les informations paiement sur les documents vente aux clients, vous pouvez utiliser la fonctionnalité de présentation des rapports pour définir le contenu spécifique aux documents qui est automatiquement inséré au corps du message. Pour plus d'informations, voir [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md).
@@ -32,7 +32,7 @@ Si le champ **Courriel** sur la page **Envoyer le document à** est défini sur 
 La procédure suivante décrit comment définir l'état **Ventes : Facture** à utiliser pour les corps de message spécifiques à un document lorsque vous envoyez par e-mail des factures vente validées.
 
 ## <a name="to-set-up-a-document-specific-email-body-for-sales-invoices"></a>Pour configurer un corps de message spécifique à un document pour les factures vente
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Sélection de rapports - Ventes**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Sélection des rapports - Ventes**, puis sélectionnez le lien associé.
 2. Sur la page **Sélection de rapport - Ventes**, dans le champ **Utilisation**, sélectionnez **Facture**.
 3. Sur une nouvelle ligne, dans le champ **ID état**, sélectionnez, par exemple, l'état standard 1306.
 4. Cochez la case **Utiliser pour le corps du message e-mail**.
@@ -48,7 +48,7 @@ Désormais, lorsque vous sélectionnez, par exemple, l'action **Envoyer** sur la
 La procédure suivante décrit comment envoyer une facture vente reportée en tant que courriel avec le document en pièce jointe sous forme de fichier PDF et avec un corps de message spécifique au document.
 
 ## <a name="to-send-documents-by-email"></a>Pour envoyer des documents par courriel
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures vente reportées**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures vente reportées**, puis sélectionnez le lien associé.
 2. Sélectionnez la facture vente validée appropriée, puis cliquez sur **Envoyer**. La page **Envoyer le document à** s'affiche.
 3. Dans le champ **E-mail**, sélectionnez **Oui (Afficher une invite pour le réglage des paramètres)**. Pour plus d'informations, reportez vous à [Configurer des profils d'envoi de documents](sales-how-setup-document-send-profiles.md).
 4. Cliquez sur le bouton **OK**. La page **Envoyer courriel** s'affiche.

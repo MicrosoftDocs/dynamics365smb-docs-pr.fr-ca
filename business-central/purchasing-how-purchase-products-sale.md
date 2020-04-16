@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: supply planning, sales demand, replenish
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 1b723eaa62ef51fb6cacd42c29a4e2709a3228e6
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: b2b6ae186fd135904c18fdb0990806a937d9b036
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2312494"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3193979"
 ---
 # <a name="purchase-items-for-a-sale"></a>Acheter des articles pour une vente
 Avec les commandes vente et les factures vente, vous pouvez utiliser des fonctions vous permettant de créer rapidement des documents achat pour des quantités d'articles manquantes requises par la vente. Vous pouvez utiliser deux fonctions distinctes selon le type document.
@@ -31,7 +31,7 @@ Avec les commandes vente et les factures vente, vous pouvez utiliser des fonctio
 ## <a name="to-create-one-or-more-purchase-orders-from-a-sales-order"></a>Pour créer un ou plusieurs bons de commande à partir d'un document de vente
 Pour créer une commande achat pour chaque quantité d'article indisponible de la commande vente, vous utilisez la fonction **Créer des commandes achat**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Ouvrez le document de vente pour lequel vous souhaitez acheter des articles.
 3. Sélectionnez l'action **Créer des commandes achat**.
 
@@ -54,7 +54,7 @@ Pour créer une facture achat unique pour une ou plusieurs lignes d'un document 
 > [!NOTE]  
 >   Cette fonction crée une facture achat pour la quantité d'articles exacte du document vente sélectionné. Pour modifier la quantité d'achat, vous devez modifier la facture achat après qu'elle soit créée.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Ouvrez une facture vente pour laquelle vous souhaitez acheter des articles.
 3. Sélectionnez une ou plusieurs lignes facture vente que vous souhaitez utiliser dans la facture achat. Pour utiliser toutes les lignes facture vente, sélectionnez-les toutes ou ne sélectionnez aucune ligne.
 4. Sélectionnez l'action **Créer une facture achat**.

@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment application, payment processing, match payments
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 1efebf96f1327f2ed50712e1acc3d87a6b2389d3
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 1e7d29d226c0c899a71188bc3ed1036e39939e67
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314251"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3189997"
 ---
 # <a name="reconcile-vendor-payments-with-the-payment-journal-or-from-vendor-ledger-entries"></a>Rapprocher des paiements fournisseur avec le journal paiement ou à partir des écritures fournisseur
 Lorsque vous envoyez un règlement à un fournisseur ou recevez un remboursement de sa part, vous devez décider si vous souhaitez affecter le paiement ou le rembourser à une ou plusieurs écritures ouvertes. Vous pouvez indiquer le montant exact que vous souhaitez affecter à la réception paiement ou au remboursement, puis n'affecter que partiellement les écritures fournisseur. Vous devez affecter toutes les écritures fournisseur pour obtenir des rapports et statistiques fournisseur corrects des relevés de compte et des frais financiers.
@@ -39,7 +39,7 @@ Vous pouvez affecter les paiements fournisseur manuellement à leurs documents a
 Vous pouvez également affecter des paiements fournisseur et des paiements client après que les paiements apparaissent en tant que transactions bancaires négatives dans votre banque. Sur la page **Journal rapprochement paiement**, vous pouvez utiliser les fonctions pour l'importation de relevés bancaires, l'affectation automatique et le rapprochement de comptes bancaires. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
 
 ## <a name="to-apply-a-payment-to-a-single-or-multiple-vendor-ledger-entries"></a>Pour affecter un paiement à une seule ou à plusieurs écritures fournisseur
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal paiement**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journal paiement**, puis sélectionnez le lien associé.
 2. Sur la page **Journal paiement**, dans la première ligne journal, saisissez les informations appropriées sur l'écriture paiement.
 3. Pour affecter une seule écriture fournisseur :
    1. Dans le champ **N° doc. référence**, sélectionnez le champ permettant d'ouvrir la page **Affecter écritures fournisseur**.
@@ -74,7 +74,7 @@ Vous pouvez également affecter des paiements fournisseur et des paiements clien
 7. Cliquez sur le bouton **Valider** pour valider l'avoir achat.
 
 ## <a name="to-apply-posted-vendor-ledger-entries"></a>Pour affecter des écritures fournisseur reportées
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Fournisseurs**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs**, puis sélectionnez le lien associé.
 2. Ouvrez le fournisseur approprié possédant des écritures déjà reportées.
 3. Sélectionnez l'action **Écritures comptables**, puis sélectionnez l'action **Lettrer écritures**.
 4. Sur la page **Affecter écritures fournisseur**, les écritures ouvertes de ce fournisseur s'affichent.
@@ -95,7 +95,7 @@ Si vous achetez des produits auprès d'un fournisseur dans une devise et que vou
 
 Si vous affectez une écriture (Écriture 1) dans une devise à une autre écriture (Écriture 2) dont la devise est différente, la date de report de l'Écriture 1 est utilisée pour trouver le taux de change adéquat et convertir les montants de l'Écriture 2. Le taux de change approprié se trouve sur la page **Taux de change devise**. Dans ce cas, vous devez activer l'affectation des écritures fournisseur en devises différentes. Pour plus d'informations, voir [Activer l'affectation d'écritures en différentes devises](finance-how-enable-application-ledger-entries-different-currencies.md)
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal paiement**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journal paiement**, puis sélectionnez le lien associé.
 2. Ouvrez le journal que vous souhaitez, puis renseignez la première ligne vide du journal à l'aide d'un code devise.
 3. Sélectionnez l'action **Lettrer écritures**.
 4. Sélectionnez la ligne comportant l'écriture à lettrer avec l'écriture de la feuille paiement. Sélectionnez ensuite l'action **Lettrer**, puis sélectionnez l'écriture sur laquelle le lettrage doit être effectué.
@@ -108,7 +108,7 @@ Si vous affectez une écriture (Écriture 1) dans une devise à une autre écri
 ## <a name="to-unapply-an-application-of-vendor-entries"></a>Pour annuler l'affectation des écritures fournisseur
 Lorsque vous annulez une affectation erronée, des écritures de correction (écritures identiques à l'écriture originale mais avec le signe opposé dans le champ du montant) sont créées et reportées pour toutes les écritures comportant des reports comptables issus de l'affectation, comme les escomptes de paiement et les pertes et gains en devise. Les écritures qui sont fermées par l'affectation sont rouvertes.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Fournisseurs**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche fournisseur appropriée.
 3. Sélectionnez l'action **Écritures comptables**.
 4. Sélectionnez l'écriture comptable appropriée, puis sélectionnez l'action **Délettrer les écritures**.
@@ -121,5 +121,5 @@ Lorsque vous annulez une affectation erronée, des écritures de correction (éc
 
 ## <a name="see-also"></a>Voir aussi
 [Fournisseurs](payables-manage-payables.md)  
-[Achats](purchasing-manage-purchasing.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

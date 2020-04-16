@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: f09ff8999629f2fbb3378174823dc4eec478e8d0
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 0af922e2af27cc810b3ba77207c271b8f6a4a22f
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2881567"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3195993"
 ---
 # <a name="warehouse-management"></a>Gestion d'entrepôt
 Entre la réception des biens et leur livraison, une série d'utilisations entrepôt internes a lieu pour assurer un flux efficace dans l'entrepôt, ainsi que pour organiser et mettre à jour les inventaires de la compagnie.
@@ -32,7 +32,7 @@ Les tâches de comptabilisation, d'ajustement et de reclassement d'articles lié
 
 |**Pour**|**Voir**|  
 |------------|-------------|  
-|Enregistrez la réception d'articles dans les emplacements entrepôts, soit avec un bon de commande uniquement, dans les configurations d'emplacement simples, soit avec une réception entrepôt, en cas de traitement d'entrepôt partiellement ou entièrement automatisé dans l'emplacement.|[Réceptionner des articles](warehouse-how-receive-items.md)|
+|Enregistrer la réception (notamment la sur-réception) d'articles dans les entrepôts, soit avec un bon de commande uniquement, dans les configurations d'emplacement simples, soit avec une réception entrepôt, en cas de traitement d'entrepôt partiellement ou entièrement automatisé dans l'emplacement.|[Réceptionner des articles](warehouse-how-receive-items.md)|
 |Contourner les processus de rangement et de prélèvement pour expédier un article directement de la réception ou fabrication à l'expédition.|[Transborder des articles](warehouse-how-to-cross-dock-items.md)|    
 |Ranger les articles provenant des achats, retours vente, transferts ou de la production en fonction du processus d'entrepôt configuré.|[Rangement des articles](warehouse-put-away-items.md)|
 |Déplacez des articles d'une zone à l'autre dans l'entrepôt.|[Déplacement d'articles](warehouse-move-items.md)|

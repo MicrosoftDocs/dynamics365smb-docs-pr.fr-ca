@@ -6,14 +6,14 @@ ms.service: dynamics365-business-central
 ms.topic: article
 ms.workload: na
 ms.search.keywords: project management
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: edupont
-ms.openlocfilehash: 97e0a8743cc9c86f37432c0b7d6cd5351883176b
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: e6d277656ab5b159aaca93e03a333ba6232c3bcc
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2312782"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3191195"
 ---
 # <a name="set-up-jobs"></a>Configuration de projets
 
@@ -44,13 +44,13 @@ Lorsque la case à cocher **Appliquer le lien d'utilisation par défaut** est ac
 >  
 > Si le suivi de l'utilisation des projets n'est *pas* activé, sur la page **Configuration projets** ou sur le projet individuel, et si le champ **Type ligne** de la ligne journal projet est vierge, aucune ligne planification projet n'est créée lorsque vous reportez les lignes journal projet. Pour plus d'informations, voir [Enregistrer l'utilisation pour les projets](projects-how-record-job-usage.md).
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Page ou rapport pour la recherche"), entrez **Configuration des projets**, puis choisissez le lien associé.
+1. Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), saisissez **Configuration projets**, puis sélectionnez le lien associé.
 2. Sélectionnez la case à cocher **Appliquer le lien d'utilisation par défaut**.
 
 ## <a name="to-set-up-prices-for-job-resources"></a>Pour paramétrer des prix pour les ressources de projet
 Vous pouvez paramétrer des prix spécifiques pour les ressources d'un projet. Réalisez cette opération sur la page **Prix ressource projet**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projets**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Projets**, puis sélectionnez le lien associé.  
 2. Sélectionnez le projet concerné, puis l'action **Ressource**.
 3. Sur la page **Prix ressource projet**, renseignez les champs selon vos besoins.
 
@@ -64,7 +64,7 @@ La valeur du champ **Prix unitaire** de la ressource sera utilisée sur les lign
 ## <a name="to-set-up-prices-for-job-items"></a>Pour paramétrer les prix pour les articles
 Vous pouvez paramétrer des prix spécifiques pour les articles d'un projet. Réalisez cette opération sur la page **Prix article projet**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projets**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Projets**, puis sélectionnez le lien associé.  
 2. Sélectionnez le projet concerné, puis cliquez sur **Article**.
 3. Sur la page **Prix article projet**, renseignez les champs selon vos besoins.
 
@@ -78,7 +78,7 @@ La valeur du champ **Prix unitaire** pour l'article sera utilisée sur les ligne
 ## <a name="to-set-up-prices-for-job-general-ledger-accounts"></a>Pour configurer les prix des comptes généraux projet
 Vous pouvez configurer les prix spécifiques des dépenses GL d'un projet. Réalisez cette opération sur la page **Prix compte du grand livre projet**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projets**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Projets**, puis sélectionnez le lien associé.  
 2. Sélectionnez le projet concerné, puis cliquez sur **Compte général**.  
 3. Sur la page **Prix compte du grand livre projet**, renseignez les champs selon vos besoins.
 
@@ -118,7 +118,7 @@ L'un des aspects des projets de planification est de décider quels comptes de r
 [Configurer la gestion de projet](projects-setup-projects.md)  
 [Vidéo : Créer un projet dans Dynamics 365 Business Central](https://www.youtube.com/watch?v=VqaPWr7BWmw)  
 [Gestion des projets](projects-manage-projects.md)  
-[Finances](finance.md)  
-[Achats](purchasing-manage-purchasing.md)  
-[Ventes](sales-manage-sales.md)  
+[Finance](finance.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)  
+[Vente](sales-manage-sales.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

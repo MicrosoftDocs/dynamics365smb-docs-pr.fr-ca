@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: find
-ms.date: 01/13/2020
+ms.date: 04/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 13b3e82d184e83841ea5daeb32c735e5383b3e02
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.openlocfilehash: 37ee56fef2f7424e0655303f2a6111a8b3eae94f
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2953957"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3195325"
 ---
 # <a name="finding-pages-and-information-with-tell-me"></a>Recherche de pages et d'informations avec Tell Me  
 Cette rubrique décrit comment la fonction Tell me peut vous aider à accéder rapidement aux actions, pages ou rapports, à trouver des informations concernant la manière d'exécuter une tâche particulière et à découvrir des applications supplémentaires et des services de conseil pour [!INCLUDE[d365fin](includes/d365fin_md.md)].  
@@ -63,7 +63,7 @@ La fonction **Dites-moi ce que vous voulez faire** n'effectue pas de recherches 
 ## <a name="questions"></a>Vous avez des questions ?
 Nous avons présenté Tell Me à différents acteurs impliqués, noté les questions qu'ils avaient en commun, et transformé nos notes en une liste de questions fréquemment posées. Si cela vous intéresse, voir [FAQ Tell Me](ui-search-faq.md).
 
-## <a name="see-related-training-at-microsoft-learnlearnmodulesuser-interface-dynamics-365-business-centralindex"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/user-interface-dynamics-365-business-central/index)
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/user-interface-dynamics-365-business-central/index)
 
 ## <a name="see-also"></a>Voir aussi
 [Utilisation de Business Central](ui-work-product.md)  

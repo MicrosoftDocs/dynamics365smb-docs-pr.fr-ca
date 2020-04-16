@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: bb114e6ea550ca5cc453c8319e72da5b11cec6e8
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 1563d1a38879379d7f517d50493b310d6d6a70ac
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2882480"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3182862"
 ---
 # <a name="set-up-invoice-rounding"></a>Configuration de la fonction arrondissement facture
 Si vous devez arrondir des montants de factures lorsque vous créez des factures, vous pouvez utiliser la fonction d'arrondissement automatique. Lorsqu'une facture est arrondie, une ligne supplémentaire contenant le montant de l'arrondissement est ajoutée et reportée avec les autres lignes facture.

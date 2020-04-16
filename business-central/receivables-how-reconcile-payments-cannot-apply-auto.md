@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, cash receipts
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 64e2ce149a51466ff458e914f7365026ccb6c3ab
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 95209af5fad9d673ca74a785e821ec1324636edf
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2316558"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3192007"
 ---
 # <a name="reconcile-payments-that-cannot-be-applied-automatically"></a>Rapprocher les paiements qui ne peuvent pas être affectés automatiquement
 Vous serez parfois amené à gérer des paiements sur votre compte bancaire, qui ne peuvent pas être affectés à une écriture client, fournisseur ou compte bancaire ouverte associée. Les motifs peuvent être qu'il n'existe dans [!INCLUDE[d365fin](includes/d365fin_md.md)] aucun document auquel le paiement puisse être lettré, ou que le document associé dans [!INCLUDE[d365fin](includes/d365fin_md.md)] affiche un montant différent du montant de la transaction, par exemple, en raison du taux de change. Sur la page **Journal rapprochement paiement**, tous les montants de transaction pour les paiements qui n'ont pas encore été affectés s'affichent dans le champ **Différence**, y compris les montants qui ne peuvent pas être affectés pour des motifs tels que celui qui précède.
@@ -31,7 +31,7 @@ Pour rapprocher de tels paiements, vous pouvez cliquer sur le bouton **Transfér
 >   Il existe une fonctionnalité similaire permettant de configurer le rapprochement automatique des paiements récurrents qui ne peuvent pas être affectés aux écritures ouvertes associées du grand livre client, fournisseur ou compte bancaire. Pour plus d'informations, voir [Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique](receivables-how-map-text-recurring-payments-accounts-auto-reconcilliation.md).
 
 ## <a name="to-reconcile-payments-that-cannot-be-applied-automatically"></a>Pour rapprocher les paiements qui ne peuvent pas être affectés automatiquement
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux rapprochement paiement**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux rapprochement bancaire**, puis sélectionnez le lien associé.
 2. Ouvrez un journal rapprochement paiement. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
 3. Sélectionnez l'action **Transférer la différence vers un compte**. La page **Transférer la différence vers un compte** s'ouvre.
 4. Dans le champ **Type compte**, spécifiez le type de compte sur lequel le montant du paiement sera validé.
@@ -45,5 +45,5 @@ Si la valeur du champ **Différence** était inférieure à la valeur du champ *
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion des comptes client](receivables-manage-receivables.md)  
-[Ventes](sales-manage-sales.md)  
+[Vente](sales-manage-sales.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

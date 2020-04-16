@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: UOM
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: SorenGP
-ms.openlocfilehash: 672ddb851b14accf4df3f88bbc0badd775319a68
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: f8ddba0ba5507d205e5e8fdf6f04007ac1060462
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2309806"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3182070"
 ---
 # <a name="set-up-item-units-of-measure"></a>Configurer des unités de mesure article
 Vous pouvez configurer plusieurs unités de mesure pour un article afin que vous puissiez affecter des unités de mesure à l'article aux fins suivantes :
@@ -28,7 +28,7 @@ Vous pouvez configurer plusieurs unités de mesure pour un article afin que vous
 Si un article est stocké dans une unité mais produit dans une autre, un ordre de fabrication utilisant une unité de lot de fabrication est créé pour calculer la quantité correcte des composants durant le traitement par lots **Actualiser O.F.**. Une situation dans laquelle un article fabriqué est stocké en pièces mais produit en tonnes est un exemple d'un calcul d'unité de mesure de lot de fabrication. Pour plus d'informations, voir [Utiliser les unités de mesure de lot de fabrication](production-how-to-use-the-manufacturing-batch-unit-of-measure.md).
 
 ## <a name="to-set-up-a-unit-of-measure"></a>Pour configurer une unité de mesure
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Articles**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche article pour laquelle vous souhaitez configurer des unités de mesure de remplacement.
 3. Choisissez l'action **Unités de mesure**. La page **Unités de mesure article** s'ouvre.
 4. Si le champ **Unité de mesure de base** de la fiche article est renseigné, cette unité de mesure est déjà configurée.
@@ -51,7 +51,7 @@ Lorsque vous vendez des articles à des clients étrangers, vous pouvez être am
 ## <a name="to-enter-a-default-unit-of-measure-code-for-sales-and-purchasing-transactions"></a>Pour entrer un code unité de mesure par défaut pour des transactions de ventes et d'achat
 Si vous utilisez habituellement d'autres unités de mesure que l'unité de mesure de base pour vos achats et vos ventes, vous pouvez indiquer des unités de mesure distinctes. Pour ce faire, vous devez configurer les unités de mesure sur la page **Unités de mesure article**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Articles**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche article appropriée pour laquelle vous souhaitez indiquer un code unité de mesure par défaut pour les achats et les ventes.
 3. Pour les ventes, sur le raccourci **Facturation**, dans le champ **Unité de mesure vente**, ouvrez la page **Unités de mesure article**.
 4. Pour les achats, sur le raccourci **Réapprovisionnement**, dans le champ **Unité de mesure achat**, ouvrez la page **Unités de mesure article**.
@@ -59,7 +59,7 @@ Si vous utilisez habituellement d'autres unités de mesure que l'unité de mesur
 
 ## <a name="see-also"></a>Voir aussi
 [Utiliser les unités de mesure de lot de fabrication](production-how-to-use-the-manufacturing-batch-unit-of-measure.md)  
-[Gestion du stock](inventory-manage-inventory.md)  
+[Gestion de l'inventaire](inventory-manage-inventory.md)  
 [Gestion des achats](purchasing-manage-purchasing.md)  
 [Gestion des ventes](sales-manage-sales.md)    
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

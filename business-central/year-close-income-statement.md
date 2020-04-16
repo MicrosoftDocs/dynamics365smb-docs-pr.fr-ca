@@ -1,8 +1,6 @@
 ---
 title: Fermeture des comptes de l'état des résultats | Microsoft Docs
 description: À la fermeture de l'exercice, vous devez exécuter le traitement en lot Fermer l'état des résultats afin de refermer les périodes comptables de l'exercice financier.
-services: project-madeira
-documentationcenter: ''
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,21 +8,21 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: year closing, close accounting period, close fiscal year, bank account detailed trial balance
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: jswymer
-ms.openlocfilehash: fd811a1a472efe53fe1c16bd5c301925d424f274
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 059fda6f088c73c32f82a4029976e7ae6acd40f4
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2313938"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3195837"
 ---
 # <a name="close-income-statement-accounts"></a>Fermer les comptes état des résultats
 Lorsqu'un exercice financier est terminé, vous devez fermer les périodes qui le composent. Vous exécutez pour cela le traitement par lots **Solder les comptes de gestion**. Ce projet transfère le résultat de l'exercice sur un compte du bilan et ferme les comptes état des résultats. Vous créez des lignes dans un journal, que vous pouvez reporter par la suite.
 
 ## <a name="to-run-the-close-income-statement-batch-job"></a>Pour exécuter le traitement en lot Fermer l'état des résultats
 1. Fermez l'exercice financier. L'exercice financier doit être fermé avant l'exécution du traitement en lot. Pour plus d'informations, voir [Fermer des périodes comptables](year-close-account-periods.md).
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Fermer l'état des résultats**, puis sélectionnez le lien associé.
+2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Solder les états des résultats**, puis sélectionnez le lien associé.
 3. Pour lancer le traitement par lots, cliquez sur le bouton **OK**.
 
 ## <a name="about-the-close-income-statement-batch-job"></a>À propos du traitement en lot Fermer l'état des résultats
@@ -37,7 +35,8 @@ La date sur les lignes insérées par le traitement en lot dans le journal est t
 Le traitement par lots **Solder les comptes de gestion** peut être utilisé à plusieurs reprises. Vous pouvez effectuer le report dans un exercice financier précédent, même après la fermeture des comptes d'état des résultats, si vous réexécutez le traitement en lot.
 
 ## <a name="see-also"></a>Voir aussi
+
 [Clôture plans](year-close-books.md)  
 [Reporter l'écriture de fermeture d'exercice](year-how-post-year-end-close-entry.md)  
-[Ouvrir un nouvel exercice financier](finance-how-open-new-fiscal-year.md)  
+[Utiliser des périodes et exercices financiers comptables](finance-accounting-periods-and-fiscal-years.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

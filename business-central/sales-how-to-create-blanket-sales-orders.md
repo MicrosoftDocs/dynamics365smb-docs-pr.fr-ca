@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: edd9e1d65c4bbfadf5c74e296ed1a9c6cffd1dfb
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 2d6037b7310eba798696d0aca7881b4927f1d14b
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2316366"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3194845"
 ---
 # <a name="work-with-blanket-sales-orders"></a>Utiliser des commandes permanentes ventes
 Une commande permanente ventes représente le cadre d'une entente à long terme entre votre client et vous.
@@ -29,20 +29,21 @@ Vous pouvez utiliser une commande permanente ventes, par exemple, lorsqu'un clie
 > [!NOTE]
 > Les commandes permanentes achats fonctionnent de la même manière que les commandes permanentes ventes. Cette documentation ne concerne que les commandes permanentes ventes.
 
-## <a name="to-create-a-blanket-sales-order"></a>Pour créer une commande permanente ventes  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes permanentes ventes**, puis sélectionnez le lien associé.  
+## <a name="to-create-a-blanket-sales-order"></a>Pour créer une commande permanente ventes
+
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Commandes permanentes ventes**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
-4.  Laissez vide le champ **Date commande**. Lors de la création de documents de vente séparés depuis la commande permanente, la date commande du document de vente est définie comme étant égale à la date du jour.
-5. Dans le raccourci **Lignes**, créez des lignes distinctes pour chaque expédition. Par exemple, si le client souhaite 1 000 unités réparties de façon uniforme sur quatre semaines, entrez quatre lignes distinctes de 250 unités chacune.   
+4. Laissez vide le champ **Date commande**. Lors de la création de documents de vente séparés depuis la commande permanente, la date commande du document de vente est définie comme étant égale à la date du jour.
+5. Dans le raccourci **Lignes**, créez des lignes distinctes pour chaque expédition. Par exemple, si le client souhaite 1 000 unités réparties de façon uniforme sur quatre semaines, entrez quatre lignes distinctes de 250 unités chacune.  
 
 ## <a name="to-create-a-sales-order-from-a-blanket-sales-order"></a>Pour créer un document de vente à partir d'une commande permanente ventes  
 
-1.  Pour créer une commande pour l'une des lignes de la commande permanente ventes, effacez la quantité du champ **Qté à livrer** de toutes les lignes que vous ne voulez pas livrer pour le moment.  
-2.  Lorsque vous êtes prêt à créer les commandes, sélectionnez **Créer commande**, puis **Oui**. Un message s'affiche, vous informant que la commande ouverte a été associée à un numéro de commande. Remarquez que la commande ouverte n'a pas été supprimée.  
-3.  Cliquez sur le bouton **OK**.  
-4.  Pour afficher les résultats des étapes précédentes, sélectionnez l'action **Ligne**, l'action **Lignes non reportées**, puis l'action **Commandes**.  
-5.  Sur la page **Lignes vente**, sélectionnez la document de vente appropriée, sélectionnez l'action **Ligne**, sélectionnez Ligne, puis sélectionnez l'action **Afficher document**.  
+1. Pour créer une commande pour l'une des lignes de la commande permanente ventes, effacez la quantité du champ **Qté à livrer** de toutes les lignes que vous ne voulez pas livrer pour le moment.  
+2. Lorsque vous êtes prêt à créer les commandes, sélectionnez **Créer commande**, puis **Oui**. Un message s'affiche, vous informant que la commande ouverte a été associée à un numéro de commande. Remarquez que la commande ouverte n'a pas été supprimée.  
+3. Cliquez sur le bouton **OK**.  
+4. Pour afficher les résultats des étapes précédentes, sélectionnez l'action **Ligne**, l'action **Lignes non reportées**, puis l'action **Commandes**.  
+5. Sur la page **Lignes vente**, sélectionnez la document de vente appropriée, sélectionnez l'action **Ligne**, sélectionnez Ligne, puis sélectionnez l'action **Afficher document**.  
 
 Ce qui suit affecte les documents de vente après leur création à partir de documents de vente ouverts :  
 
@@ -58,7 +59,7 @@ Ce qui suit affecte les documents de vente après leur création à partir de do
 ## <a name="to-view-the-status-of-a-blanket-sales-order"></a>Pour visualiser l'état d'une commande permanente ventes  
 Vous pouvez afficher l'état d'une commande permanente vente sur la page **Statistiques Commande permanente ventes**. Ceci peut s'avérer utile lorsque vous commencez à facturer la commande créée à partir de la commande permanente ventes.  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes permanentes ventes**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Commandes permanentes ventes**, puis sélectionnez le lien associé.  
 2.  Sélectionnez une commande permanente ventes, puis sélectionnez l'action **Statistiques**.  
 3.  Sur la page **Statistiques Commande permanente ventes**, sur le raccourci **Général**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la commande. Elles se basent sur la quantité totale des **champs Quantité** sur les lignes commande permanente ventes.  
 

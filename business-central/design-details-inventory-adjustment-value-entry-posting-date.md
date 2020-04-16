@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: edupont
-ms.openlocfilehash: 2595efa188aed593bf1d112f984acf411446959b
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 843e0590bbcff22b5d0ad40fcae5dd51c64eae3a
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2307142"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185286"
 ---
 # <a name="design-details-posting-date-on-adjustment-value-entry"></a>Détails de conception : date de report de l'écriture valeur d'ajustement
 Cet article fournit des instructions aux utilisateurs de la fonctionnalité Évaluation stock dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. L'article spécifique donne des informations sur la façon dont le traitement en lot **Ajuster coûts - Écr. article** identifie et affecte une date de report aux écritures valeur que le traitement en lot est sur le point de créer.  
@@ -33,7 +33,7 @@ Tout d'abord, le concept du processus est passé en revue, c'est-à-dire la mani
 
  Examinons ce processus plus en détail. Supposons que nous avons une écriture article de type Vente. L'article a été livré le 5 septembre 2013 et il a été facturé le jour suivant.  
 
-![État des écritures article dans le scénario](media/helene/TechArticleAdjustcost1.png "État des écritures article dans le scénario")  
+![Province des écritures article dans le scénario](media/helene/TechArticleAdjustcost1.png "Province des écritures article dans le scénario")  
 
 La première écriture valeur (379) représente la livraison et utilise la même date de report que l'écriture article parent.  
 
@@ -41,7 +41,7 @@ La deuxième écriture valeur (381) représente la facture.
 
  La troisième écriture valeur (391) est un ajustement de l'écriture valeur de facturation (381)  
 
- ![État des écritures valeur dans le scénario](media/helene/TechArticleAdjustcost2.png "État des écritures valeur dans le scénario")  
+ ![Province des écritures valeur dans le scénario](media/helene/TechArticleAdjustcost2.png "Province des écritures valeur dans le scénario")  
 
  Étape 1 : l'écriture valeur d'ajustement à créer a la même date de report que l'écriture qu'elle ajuste, comme illustré ci-dessus par l'écriture valeur 391.  
 
@@ -59,7 +59,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
  Configuration du grand livre :  
 
-![Configuration GL dans le scénario](media/helene/TechArticleAdjustcost4.png "Configuration GL dans le scénario")
+![Configuration grand livre dans le scénario](media/helene/TechArticleAdjustcost4.png "Configuration grand livre dans le scénario")
 
  La première date de report autorisée est la date indiquée dans le champ Début période report : 10 septembre 2013.  
 
@@ -69,7 +69,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
  La date de report affectée initiale était le 6 septembre, comme illustré à l'étape 1. Toutefois, dans la 2e étape, le traitement en lot Ajuster coûts - Écr. article identifie que la date de report autorisée la plus proche est le 10 septembre et affecte donc le 10 septembre à l'écriture valeur d'ajustement ci-dessous.  
 
- ![État des écritures valeur dans le scénario 2](media/helene/TechArticleAdjustcost5.png "État des écritures valeur dans le scénario 2")
+ ![Province des écritures valeur dans le scénario 2](media/helene/TechArticleAdjustcost5.png "Province des écritures valeur dans le scénario 2")
 
  Nous avons passé en revue le concept d'affectation de dates de report aux écritures valeur créées par le traitement en lot Ajuster coûts - Écr. article.  
 
@@ -173,9 +173,9 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
  Les écritures article et les écritures valeur suivantes ont été reportées :  
 
-![Aperçu des écritures article et valeur article résultantes 1](media/helene/TechArticleAdjustcost9.png "Aperçu des écritures article et valeur article résultantes 1")
+![Aperçu des écritures article et valeur article résultantes 1](media/helene/TechArticleAdjustcost9.png "Aperçu des écritures article et valeur article résultantes 1")
 
- ![Aperçu des écritures article et valeur article résultantes 2](media/helene/TechArticleAdjustcost10.png "Aperçu des écritures article et valeur article résultantes 2")
+ ![Aperçu des écritures article et valeur article résultantes 2](media/helene/TechArticleAdjustcost10.png "Aperçu des écritures article et valeur article résultantes 2")
 
  Le traitement en lot Ajuster coûts – Écr article a identifié une modification du coût et ajusté les ajustements négatifs.  
 
@@ -290,7 +290,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
      Reportez la réception et la facture.  
 
-     ![Aperçu des écritures article et valeur article résultantes 3](media/helene/TechArticleAdjustcost11.png "Aperçu des écritures article et valeur article résultantes 3")
+     ![Aperçu des écritures article et valeur article résultantes 3](media/helene/TechArticleAdjustcost11.png "Aperçu des écritures article et valeur article résultantes 3")
 
 6.  À la date du 3 janvier arrive une facture achat, contenant des frais annexes supplémentaires pour l'achat effectué à l'étape 2. La date de document de cette facture est le 30 décembre, elle est donc reportée avec la date de report du 30 décembre 2013.  
 
@@ -314,7 +314,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
      Reportez la réception et la facture.  
 
-   ![Aperçu des écritures article et valeur article résultantes 4](media/helene/TechArticleAdjustcost12.png "Aperçu des écritures article et valeur article résultantes 4")
+   ![Aperçu des écritures article et valeur article résultantes 4](media/helene/TechArticleAdjustcost12.png "Aperçu des écritures article et valeur article résultantes 4")
 
  Le rapport Évaluation de l'inventaire est imprimé à la date du 31 décembre 2013  
 
@@ -363,5 +363,5 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
  Le traitement en lot analyse la table 5811 - Reporter l'écriture de valeur au GL pour identifier les écritures valeur concernées par le report au grand livre. Une fois l'exécution réussie, la table est vidée.
 
 ## <a name="see-also"></a>Voir aussi  
-[Détails de conception : stock évaluation stock](design-details-inventory-costing.md)  
-[Détails de conception : lettrage article](design-details-item-application.md)  
+[Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)  
+[Détails de conception : Affectation article](design-details-item-application.md)  

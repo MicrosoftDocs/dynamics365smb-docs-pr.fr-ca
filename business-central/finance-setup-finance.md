@@ -1,8 +1,6 @@
 ---
 title: Configurer les processus financiers| Microsoft Docs
 description: En savoir plus sur les tâches pour paramétrer les finances de votre société afin de les adapter à votre comptabilité ou vos audits.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
-ms.date: 01/13/2020
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: fa8b324c0a63f7c00209579878b9739af8178041
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.openlocfilehash: 400506fe0b39944e683fd5e65e6b710ffdb9089b
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2953669"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3182742"
 ---
 # <a name="setting-up-finance"></a>Configuration de Finance
 Avant de commencer à gérer votre activité, vous devez spécifier des règles et des valeurs par défaut concernant le mode de gestion souhaité des processus financiers de cette compagnie. Pour commencer, vous devez configurer l'élément essentiel des enregistrements comptables de la compagnie, à savoir le plan comptable. Configurez ensuite des groupes de report afin d'accroître l'efficacité du processus d'affectation des comptes de report de grand livre par défaut aux clients, fournisseurs et articles.
@@ -36,7 +34,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Spécifiez les groupes comptabilisation qui mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes généraux. |[Configuration de groupes comptabilisation](finance-posting-groups.md)|
 |Créer des tableaux d'analyse et définir des catégories de compte pour définir le contenu des graphiques et rapports financiers, tels que les rapports Bilan et État des résultats.|[Préparer la génération de rapports financiers avec des tableaux d'analyse et des catégories de compte](bi-how-work-account-schedule.md)|
 |Configurer une valeur de tolérance selon laquelle le système ferme une facture même si le paiement, tenant compte d'éventuels escomptes, ne couvre pas intégralement le montant de la facture.|[Utilisation des tolérances de règlement et des tolérances d'escompte de paiement](finance-payment-tolerance-and-payment-discount-tolerance.md)|
-| Définir les périodes fiscales. |[Ouvrir un nouvel exercice financier](finance-how-open-new-fiscal-year.md) |
+| Définir les périodes fiscales. |[Utiliser des périodes et exercices financiers comptables](finance-accounting-periods-and-fiscal-years.md) |
 | Définissez comment déclarer les montants de taxe sur la valeur ajoutée que vous avez recueillis sur les ventes aux autorités fiscales. |[Configuration de la TVA](finance-setup-vat.md)|
 |Se préparer à gérer la TVA non réalisée en association avec des méthodes comptables basées sur la trésorerie.|[Configurer la TVA non réalisée pour la comptabilité basée sur la trésorerie](finance-setup-unrealized-vat.md)|
 | Définissez vos fonctionnalités Ventes et Achats pour gérer les paiements dans des devises étrangères.|[Activer l'affectation d'écritures en devises différentes](finance-how-enable-application-ledger-entries-different-currencies.md)
@@ -50,7 +48,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Configurez le rapport Intrastat et envoyez-le à une administration | [Configurer et enregistrer un rapport Intrastat](finance-how-setup-report-intrastat.md)|
 |Vérifiez qu'une écriture dans un journal général est affectée à plusieurs comptes lors du report du journal, soit par quantité, pourcentage ou montant.|[Utiliser les clés d'affectation dans les journaux généraux](ui-how-use-allocation-keys-general-journals.md)|
 
-## <a name="see-related-training-at-microsoft-learnlearnpathsset-up-financial-management-dynamics-365-business-central"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/set-up-financial-management-dynamics-365-business-central/)
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/set-up-financial-management-dynamics-365-business-central/)
 
 ## <a name="see-also"></a>Voir aussi
 [Finance](finance.md)  

@@ -10,17 +10,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: project invoice
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: c7601f659dada023d6f84db1c4a584fe0d815058
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 277e5e6cb212202f930ed49012184aa67a23d03f
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2312902"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3191269"
 ---
 # <a name="invoice-jobs"></a>Facturation des projets
 Au cours du projet, les coûts provenant de l'utilisation de ressources, de matières, et d'achats associés au projet peuvent s'accumuler. Au fur et à mesure de la progression du projet, ces transactions sont reportées dans le journal projet. Il est important que tous les coûts soient enregistrés dans le journal projet avant de facturer le client.
+
+> [!NOTE]
+> Vous pouvez également acheter des ressources externes non liées à un projet, par exemple pour facturer un fournisseur pour le travail livré. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 
 Vous pouvez facturer l'ensemble du projet à partir de la page **Lignes tâche projet** ou facturer uniquement les lignes facturables sélectionnées sur la page **Lignes planification**. La facturation peut avoir lieu une fois le projet terminé ou à certains intervalles au cours du projet sur la base d'une prévision de facture.
 
@@ -32,7 +35,7 @@ Vous pouvez créer une facture pour un projet ou pour une ou plusieurs tâches p
 
 Sur la page **Projets**, vous pouvez facturer un client en sélectionnant le projet, puis en cliquant sur **Créer une facture vente projet**. La procédure suivante explique comment utiliser un traitement en lot pour facturer plusieurs projets.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projet Créer facture vente**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projet Créer facture vente**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 3. Définissez des filtres si vous souhaitez limiter le nombre de projets que le traitement en lot va traiter.
 4. Pour créer les factures, cliquez sur le bouton **OK**.  
@@ -40,7 +43,7 @@ Sur la page **Projets**, vous pouvez facturer un client en sélectionnant le pro
 ## <a name="to-create-multiple-job-sales-invoices-from-job-planning-lines"></a>Pour créer plusieurs factures vente projet à partir de lignes planification projet
 Vous pouvez créer une facture à partir des lignes planification projet et indiquer à ce moment-là la quantité de l'article, la ressource ou le compte du grand livre sur lequel vous souhaitez facturer.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projets**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Projets**, puis sélectionnez le lien associé.
 2. Ouvrez le projet approprié.
 3. Sélectionnez une tâche projet pour laquelle le champ **Type tâche projet** contient **Validation** puis, cliquez sur **Lignes planning projet**.  
 4. Dans une ligne planning projet, dans le champ **Qté à transférer à facturer**, saisissez la quantité de l'article, la ressource, le type de compte général sur lequel vous souhaitez facturer.  
@@ -60,7 +63,7 @@ Vous pouvez créer une facture à partir des lignes planification projet et indi
 ## <a name="to-calculate-and-post-job-completion-entries"></a>Pour calculer et reporter les écritures d'achèvement du projet
 À la fin des activités d'un projet (validation et facturation comprises), vous devez le mettre à jour pour définir le **Statut** du projet sur **Terminé**. Ensuite, vous devez inverser tous les TEC reportés antérieurement dans le grand livre.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projets**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Projets**, puis sélectionnez le lien associé.  
 2. Sélectionnez un projet ouvert, puis cliquez sur **Modifier**.
 3. Dans le champ **Statut**, sélectionnez **Terminé**.
 4. Suivez les phases d'aide pour calculer et reporter les TEC. Sinon, suivez les phases 5 et 6 pour le faire manuellement.  
@@ -76,6 +79,6 @@ Vous pouvez créer une facture à partir des lignes planification projet et indi
 ## <a name="see-also"></a>Voir aussi
 [Gestion des projets](projects-manage-projects.md)  
 [Finance](finance.md)  
-[Procédure d'achat](purchasing-manage-purchasing.md)         
-[Vente](sales-manage-sales.md)      
+[Achats](purchasing-manage-purchasing.md)         
+[Ventes](sales-manage-sales.md)      
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: access, right, security
-ms.date: 11/07/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: a162246fcd0a6f3db07922cc100e21aacbc76fbe
-ms.sourcegitcommit: b570997f93d1f7141bc9539c93a67a91226660a8
+ms.openlocfilehash: c71b56812b67c4ec51ea8d48d095cabc79c585fb
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2943219"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3194485"
 ---
 # <a name="assign-permissions-to-users-and-groups"></a>Attribuer des autorisations aux utilisateurs et aux groupes
 Le système de sécurité de [!INCLUDE[d365fin](includes/d365fin_md.md)] vous permet de contrôler les objets auxquels un utilisateur peut accéder dans chaque base de données ou environnement. Vous pouvez spécifier pour chaque utilisateur s'il peut lire, modifier ou entrer des données dans les objets de base de données sélectionnés. Pour des informations détaillées, voir [Sécurité des données ](/dynamics365/business-central/dev-itpro/security/data-security?tabs=object-level)dans Aide dédiée à l'équipe IT et aux développeurs pour [!INCLUDE[d365fin](includes/d365fin_md.md)].
@@ -130,18 +130,18 @@ Par exemple, un utilisateur peut être autorisé à exécuter le codeunit 80 Ve
 L'utilisateur n'a toutefois pas besoin d'avoir entièrement accès à la table Ligne vente pour exécuter le codeunit. Si une autorisation indirecte a été accordée à l'utilisateur pour la table Ligne vente, alors le codeunit Ventes-Valider s'exécute. Lorsqu'une autorisation indirecte est accordée à un utilisateur, celui-ci peut uniquement modifier la table Ligne vente en exécutant le codeunit Ventes-Valider ou un autre objet autorisé à modifier la table Ligne vente. L'utilisateur peut uniquement modifier la table Ligne vente lorsqu'il procède à partir des modules pris en charge. L'utilisateur ne peut pas exécuter cette fonctionnalité par inadvertance ou par malveillance en suivant d'autres méthodes.
 
 ## <a name="to-create-or-modify-permissions-by-recording-your-actions"></a>Pour créer ou modifier des autorisations en enregistrant vos actions
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Ensembles d'autorisations**, puis sélectionnez le lien associé.
-2.  Sinon, sur la page **Utilisateurs**, sélectionnez l'option **Ensembles d'autorisations**.
-3.  Sur la page **Ensembles d'autorisations**, cliquez sur l'option **Nouveau**.
-4.  Sur une nouvelle ligne, renseignez les champs selon vos besoins.
-5.  Sélectionnez l'option **Autorisations**.
-6.  Sur la page **Autorisations**, choisissez l'action **Enregistrer autorisations**, puis sélectionnez l'action **Démarrer**.
+1.    Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Ensembles d'autorisations**, puis sélectionnez le lien associé.
+2.    Sinon, sur la page **Utilisateurs**, sélectionnez l'option **Ensembles d'autorisations**.
+3.    Sur la page **Ensembles d'autorisations**, cliquez sur l'option **Nouveau**.
+4.    Sur une nouvelle ligne, renseignez les champs selon vos besoins.
+5.    Sélectionnez l'option **Autorisations**.
+6.    Sur la page **Autorisations**, choisissez l'action **Enregistrer autorisations**, puis sélectionnez l'action **Démarrer**.
 
     Cette opération démarre processus d'enregistrement qui capture toutes vos actions dans l'interface utilisateur.
-7.  Accédez aux différentes pages et activités dans [!INCLUDE[d365fin](includes/d365fin_md.md)] auxquelles vous voulez que les utilisateurs avec cet ensemble d'autorisations puissent accéder. Vous devez exécuter les tâches pour lesquelles vous souhaitez enregistrer des autorisations.
-8.  Lorsque vous souhaitez terminer l'enregistrement, revenez sur la page **Autorisations** et choisissez l'option **Arrêter**.
-9.  Cliquez sur le bouton **Oui** pour ajouter les autorisations enregistrées au nouvel ensemble d'autorisations.
-10. Pour chaque objet de la liste enregistrée, indiquez si les utilisateurs peuvent insérer, modifier ou supprimer des enregistrements dans les tables enregistrées.
+7.    Accédez aux différentes pages et activités dans [!INCLUDE[d365fin](includes/d365fin_md.md)] auxquelles vous voulez que les utilisateurs avec cet ensemble d'autorisations puissent accéder. Vous devez exécuter les tâches pour lesquelles vous souhaitez enregistrer des autorisations.
+8.    Lorsque vous souhaitez terminer l'enregistrement, revenez sur la page **Autorisations** et choisissez l'option **Arrêter**.
+9.    Cliquez sur le bouton **Oui** pour ajouter les autorisations enregistrées au nouvel ensemble d'autorisations.
+10.    Pour chaque objet de la liste enregistrée, indiquez si les utilisateurs peuvent insérer, modifier ou supprimer des enregistrements dans les tables enregistrées.
 
 ## <a name="security-filters---to-limit-a-users-access-to-specific-records-in-a-table"></a>Filtres de sécurité : pour limiter l'accès d'un utilisateur à des enregistrements spécifiques dans une table
 Pour la sécurité au niveau des enregistrements dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous utilisez des filtres de sécurité pour limiter l'accès d'un l'utilisateur aux données dans une table. Vous créez des filtres de sécurité sur les données de la table. Un filtre de sécurité décrit un ensemble d'enregistrements dans une table auxquels un utilisateur a l'autorisation d'accéder. Vous pouvez indiquer, par exemple, qu'un utilisateur peut uniquement lire les enregistrements qui contiennent des informations relatives à un client particulier. Cela signifie que l'utilisateur ne peut pas accéder aux enregistrements qui contiennent des informations sur d'autres clients. Pour plus d'informations, voir [Utilisation des filtres de sécurité](/dynamics365/business-central/dev-itpro/security/security-filters) dans l'aide sur Developer and IT Pro.
@@ -204,5 +204,4 @@ Les administrateurs peuvent définir les périodes de temps pendant lesquelles l
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
 [Administration](admin-setup-and-administration.md)  
 [Ajouter des utilisateurs à Office 365 for business](https://aka.ms/CreateOffice365Users)  
-[Guide des licences Microsoft Dynamics 365 Business Central](https://aka.ms/BusinessCentralLicensing)  
 [Sécurité et protection dans Business Central ](/dynamics365/business-central/dev-itpro/security/security-and-protection)dans Aide dédiée à l'équipe IT et aux développeurs

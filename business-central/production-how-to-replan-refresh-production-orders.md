@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: c8c1885abb3913f4bec3246234a08ebe75bd1718
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: eec002d4c813e92633cceb3f074c5ba4f2c4742b
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2313190"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3191581"
 ---
 # <a name="replan-or-refresh-production-orders-directly"></a>Replanifier ou actualiser directement des ordres de fabrication
 La fonction **Replanifier** des bons de production est généralement utilisée après avoir ajouté ou modifié des composantes constituant des bons de production sous-jacents. La fonction calcule les modifications apportées aux composantes et aux lignes itinéraires. Elle inclut les articles situés à des niveaux de nomenclatures de production inférieurs, pour lesquels elle peut générer de nouveaux bons de production.  
@@ -35,7 +35,7 @@ Vous pouvez soit insérer les lignes bon de production manuellement, soit utilis
 > Si vous utilisez la fonction Actualiser pour recalculer des lignes O.F., les anciennes lignes O.F. sont supprimées et de nouvelles lignes sont calculées.  
 
 ## <a name="to-replan-a-production-order"></a>Pour replanifier un bon de production  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de production planifiés fermes**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de production planifiés fermes**, puis sélectionnez le lien associé.  
 2.  Ouvrez l'ordre de fabrication à replanifier.  
 3.  Sur le raccourci **Lignes**, choisissez l'action **Lignes**, puis choisissez l'action **Composantes**.  
 4.  Ajoutez une composante qui soit un article produit ou un sous-ensemble.  
@@ -65,7 +65,7 @@ Vous pouvez soit insérer les lignes bon de production manuellement, soit utilis
 ## <a name="to-refresh-a-production-order"></a>Pour actualiser un bon de production  
 Si vous avez modifié des lignes bon de production, des composantes ou des lignes itinéraire, vous devez aussi actualiser les informations du bon de production. Dans la procédure qui suit, les composantes d'un bon de production planifié ferme sont calculées. La procédure est identique pour les lignes itinéraire.
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **O.F. planifié ferme**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bon de production planifié ferme**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**. Pour plus d'informations, voir [Créer des ordres de fabrication](production-how-to-create-production-orders.md).  
 3.  Sélectionnez l'action **Actualiser**.
 4. Sur la page **Actualiser O.F.**, sélectionnez l'une des options suivantes :

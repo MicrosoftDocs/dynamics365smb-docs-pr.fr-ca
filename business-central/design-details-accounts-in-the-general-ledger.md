@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 1e20b9240f4e6a3b533dd38b4c8089b2520a6ad3
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 6e6af3c9afe8e0d63d5ec2bcfe4905be0a7997df
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2880698"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185886"
 ---
 # <a name="design-details-accounts-in-the-general-ledger"></a>Détails de conception : comptes du grand livre
 Pour rapprocher l'inventaire et les écritures du grand livre de capacité dans le grand livre, les écritures valeur associées sont reportées dans différents comptes dans le grand livre. Pour plus d'informations, voir [Détails de conception : rapprochement de comptabilité](design-details-reconciliation-with-the-general-ledger.md).  

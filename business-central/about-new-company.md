@@ -8,16 +8,16 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: company, setup wizard
-ms.date: 11/01/2019
+ms.date: 04/01/2020
 ms.author: edupont
-ms.openlocfilehash: 70bd78244c4d8570a5e9b8fbe2d1e8a4c74d7530
-ms.sourcegitcommit: 49309bdff9b680a35032b355fe97c565845dba15
+ms.openlocfilehash: 48f540bd1f8de19ab6ae0284febf6c9c87ababdb
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2695129"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3188910"
 ---
-# <a name="creating-new-companies-in-included365finincludesd365fin_mdmd"></a>Création de compagnies dans [!INCLUDE[d365fin](includes/d365fin_md.md)]
+# <a name="creating-new-companies-in-d365fin"></a>Création de compagnies dans [!INCLUDE[d365fin](includes/d365fin_md.md)]
 Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les conteneurs pour les données métier appartenant à une unité fonctionnelle ou une entité juridique sont désignés en tant que *compagnie*. Lorsque vous vous connectez à [!INCLUDE[d365fin](includes/d365fin_md.md)], une compagnie de démonstration et une compagnie vide vous sont attribuées, *Ma compagnie*. Le basculement entre compagnies est facile : accédez simplement à **Mes paramètres** et passez à l'autre compagnie. Vous pouvez également créer de nouvelles compagnies dans [!INCLUDE[d365fin](includes/d365fin_md.md)], selon les besoins de votre activité. Lorsque vous créez une compagnie, un guide de configuration assistée vous permet de mettre en place les fondements. Ensuite, vous pouvez importer des données appropriées à partir de votre système hérité ou d'une autre compagnie dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
 ## <a name="creating-a-new-company"></a>Création d'une compagnie

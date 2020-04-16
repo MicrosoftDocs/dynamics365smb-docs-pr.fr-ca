@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: bill, sale, invoice, order
-ms.date: 01/13/2020
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 4bc122f2d1dc34f4c36fb74d0d6875f3d82c991a
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.openlocfilehash: 9e485f2051cb045db6f106377521973a45546ad7
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2953429"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3193669"
 ---
 # <a name="invoice-sales"></a>Facturer des ventes
 Vous créez une facture vente ou un document de vente pour enregistrer votre entente avec un client pour vendre certains produits selon certaines méthodes de livraison et de paiement.  
@@ -104,7 +104,7 @@ Dans les environnements d'entreprise où le client paie immédiatement, par exem
 
 Vous pouvez même créer des factures à paiement direct pour les clients non enregistrés en configurant une fiche « client en espèces », vers laquelle vous pointez sur la facture vente. Pour plus d'informations, reportez-vous à [Configurer des clients effectuant un achat au comptoir](finance-how-to-set-up-cash-customers.md).  
 
-## <a name="see-related-training-at-microsoft-learnlearnmodulesinvoicing-customers-dynamics-365-business-centralindex"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/invoicing-customers-dynamics-365-business-central/index)
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/invoicing-customers-dynamics-365-business-central/index)
 
 ## <a name="see-also"></a>Voir aussi
 [Vente](sales-manage-sales.md)  

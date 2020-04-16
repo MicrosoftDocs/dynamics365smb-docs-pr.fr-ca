@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: b809743aa25aee409b9a71ca98da77ea64b58fb1
-ms.sourcegitcommit: d0dc5e5c46b932899e2a9c7183959d0ff37738d6
+ms.openlocfilehash: 872e451302ffa3f6dcebe55886b2af943424bba7
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076524"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185694"
 ---
 # <a name="design-details-central-concepts-of-the-planning-system"></a>Détails de conception : concepts centraux du système de planification
 Les fonctions de planification se trouvent dans un traitement en lot qui sélectionne d'abord les articles appropriés et la période à planifier. Puis, en fonction du code de bas niveau de chaque article (ligne nomenclature), le traitement en lot appelle un codeunit qui calcule un programme d'approvisionnement en équilibrant les séries offre-demande et en suggérant des actions possibles que l'utilisateur doit prendre. Les actions suggérées apparaissent sous forme de lignes dans la feuille planification ou la feuille de réquisition.  

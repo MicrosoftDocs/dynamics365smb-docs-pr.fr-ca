@@ -9,14 +9,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: rfq
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 2ee57d1faf3603229e9ef9017a47c681bd78336c
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: a8db87b7dd365123a21633e4905d56dd13bf7b40
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2316438"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3193621"
 ---
 # <a name="make-sales-quotes"></a>Créer des devis
 Vous créez un devis pour enregistrer votre proposition à un client pour vendre certains biens selon certaines méthodes de livraison et modalités de paiement. Vous pouvez envoyer un devis au client pour communiquer la proposition. Vous pouvez envoyer par courriel le document en pièce jointe au format PDF. Vous pouvez également faire en sorte que le corps du message soit prérempli avec un résumé du devis. Pour plus d'informations, voir [Envoyer des documents par courriel](ui-how-send-documents-email.md).
@@ -78,7 +78,7 @@ Vous pouvez remplir les champs relatifs au client sur le devis de deux façons s
 Le devis est supprimé de la base de données. Une facture vente ou un document de vente basé sur les informations du devis et dans lequel vous pouvez traiter la vente est créé. Dans le champ **N° devis** de la facture vente ou du document de vente, vous pouvez visualiser le numéro du devis à partir duquel elle a été réalisée. Pour plus d'informations, voir [Facturer des ventes](sales-how-invoice-sales.md) ou [Vendre des produits](sales-how-sell-products.md).
 
 ## <a name="see-also"></a>Voir aussi
-[Ventes](sales-manage-sales.md)  
+[Vente](sales-manage-sales.md)  
 [Définition des ventes](sales-setup-sales.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

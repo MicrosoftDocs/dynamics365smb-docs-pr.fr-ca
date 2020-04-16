@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 12/19/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 2da58a4f5a3655fc2153647d80c5d69e1356b503
-ms.sourcegitcommit: 35552b250b37c97772129d1cb9fd9e2537c83824
+ms.openlocfilehash: 48ce8c293b5af411763a8730c9f7d16113062d9a
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3097706"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3186870"
 ---
 # <a name="migrate-customer-data"></a>Migrer des données client
 Vous pouvez migrer les données client existantes d'un système ERP existant vers [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide des outils de migration de données de RapidStart Services. Vous pouvez utiliser des fichiers Excel comme supports d’informations. Vous pouvez également déplacer manuellement les données en les entrant directement dans la compagnie.

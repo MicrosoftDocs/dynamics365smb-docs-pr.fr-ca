@@ -9,21 +9,21 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: rfq
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 71c31fc15027d1f2d571afe97ae79f95709c9f06
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: bae0ddeb2a3b22d4f29c04628a54754f4d608ec9
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2312422"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3191029"
 ---
 # <a name="request-quotes"></a>Demander des devis
 Vous pouvez utiliser un devis en tant que phase préliminaire d'un bon de commande, et convertir cette commande en facture achat ou en bon de commande.
 
 
 ## <a name="to-create-a-purchase-quote"></a>Pour créer un devis d'achat
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Devis**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Devis achat**, puis sélectionnez le lien associé.
 2. Créez un document, de la même manière que vous créez un bon de commande. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 
 ## <a name="to-convert-a-purchase-quote-to-a-purchase-order"></a>Pour convertir un devis en bon de commande

@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: electronic document, Intrastat, trade, EU, European Union
-ms.date: 01/13/2020
+ms.date: 04/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 62fc3227c02656713afa1f890f7ea8acbce524be
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.openlocfilehash: 23759b874f7a92bf9ff91cd0822ac8f9bb716ab1
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2952780"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3183534"
 ---
 # <a name="set-up-and-report-intrastat"></a>Configurer et enregistrer un rapport Intrastat
 Toutes les compagnies de l'Union européenne doivent déclarer leurs échanges avec les autres pays/régions de l'Union européenne. Vous devez déclarer les mouvements de marchandises aux autorités statistiques de votre pays/région mensuellement et le rapport doit être remis aux autorités fiscales. Il s'agit de la déclaration Intrastat. La page **Journal Intrastat** permet de remplir des rapports Intrastat périodiques.  
@@ -121,7 +121,7 @@ Parce que vous devez soumettre un rapport Intrastat chaque mois et créer un nou
 2. Pour afficher les options, choisissez le champ **Nom de la feuille**.  
 3. Choisissez les lots journal à supprimer, puis sélectionnez le bouton **Supprimer**.  
 
-## <a name="see-related-training-at-microsoft-learnlearnmodulesprocess-intrastat-dynamics-365-business-centralindex"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/process-intrastat-dynamics-365-business-central/index)
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/process-intrastat-dynamics-365-business-central/index)
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion financière](finance.md)

@@ -1,8 +1,6 @@
 ---
 title: Aperçu des tâches pour fermer les registres | Microsoft Docs
 description: En savoir plus sur le processus de fermeture des registres d'un exercice financier ou d'une période fiscale, et ce qui a lieu après la fermeture, à la fin d'un exercice.
-services: project-madeira
-documentationcenter: ''
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: year closing, close accounting period, close fiscal year, bank account detailed trial balance
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: jswymer
-ms.openlocfilehash: db4ec1033a830cb72b602691797d2b1ff637c2e7
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 0482c797fcc4f7b0ba590cfe757bd616d652d18a
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2310118"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3195861"
 ---
 # <a name="closing-the-books"></a>Fermeture des registres
 Après vous être assuré que tous vos comptes sont à jour et avoir affecté les coûts et les bénéfices, vous pouvez fermer la comptabilité d'un exercice financier ou d'une période comptable.
@@ -54,5 +52,6 @@ Le système génère ensuite une écriture de fermeture mais ne la reporte pas a
 Vous pouvez effectuer le report dans un exercice financier précédent, même après la fermeture des comptes d'état des résultats, si vous réexécutez le traitement en lot Fermer l'état des résultats par la suite.
 
 ## <a name="see-also"></a>Voir aussi
-[Ouvrir un nouvel exercice financier](finance-how-open-new-fiscal-year.md)  
+
+[Utiliser des périodes et exercices financiers comptables](finance-accounting-periods-and-fiscal-years.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

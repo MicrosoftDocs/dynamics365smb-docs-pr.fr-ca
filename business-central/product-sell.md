@@ -8,16 +8,16 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: microsoft partner
-ms.date: 12/20/2019
+ms.date: 04/01/2020
 ms.author: edupont
-ms.openlocfilehash: 36185512ff17e7044dfc9bb6539d3f7b102472b5
-ms.sourcegitcommit: 53565fea987af861f3846e5c1e0e868c279aeb30
+ms.openlocfilehash: 0c0ef6e00c2d1564c2f19c98a07c3cc4771c1d8a
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2918152"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3190069"
 ---
-# <a name="become-a-reseller-of-included365fin_longincludesd365fin_long_mdmd"></a>Devenir revendeur [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)]
+# <a name="become-a-reseller-of-d365fin_long"></a>Devenir revendeur [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)]
 Développez vos opportunités commerciales avec [!INCLUDE[d365fin](includes/d365fin_md.md)]!  
 
 Si vous vous spécialisez dans Office 365 ou SharePoint, dans les solutions de nuage, de secteur, d'analyse, ERP, CRM, dans les logiciels de comptabilité et/ou dans les logiciels/services d'optimisation des processus métier, Business Central représente une nouvelle opportunité.   

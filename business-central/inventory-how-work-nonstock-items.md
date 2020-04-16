@@ -9,14 +9,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: non-inventoriable
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: d7448e9fe95f2ef6821dd4a1d41eae0390d1547c
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: a13eec5bd1df674da6255f732b5f68c8a7fcbaf6
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2309590"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3181854"
 ---
 # <a name="work-with-catalog-items"></a>Utiliser des articles de catalogue
 Vous pouvez proposer certains articles à vos clients pour leur rendre service, que vous ne souhaitez pas gérer dans votre système tant que vous ne commencez pas à les commercialiser. Lorsque vous souhaitez commencer à gérer de tels articles dans votre système, vous pouvez les convertir en fiches article normales de deux façons.
@@ -54,7 +54,7 @@ Pour activer la conversion d'une fiche article de catalogue en une fiche article
 Une nouvelle fiche article pré-remplie avec les informations de l'article de catalogue ainsi qu'un modèle d'article pertinent sont créés. Vous pouvez ensuite remplir ou modifier les champs sur la nouvelle fiche article, le cas échéant. Pour plus d'informations, voir [Enregistrer de nouveaux articles](inventory-how-register-new-items.md).
 
 ## <a name="to-sell-a-catalog-item-and-convert-it-to-a-normal-item"></a>Pour vendre un article de catalogue et le convertir en article normal
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**. Complétez les champs du raccourci **Général** comme pour toute commande vente. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
 3. Sur une nouvelle ligne vente, dans le champ **Type**, sélectionnez **Article**, mais laissez le champ **N°** vide.
 4. Choisissez l'action **Ligne**, puis l'action **Sélectionner articles de catalogue**.

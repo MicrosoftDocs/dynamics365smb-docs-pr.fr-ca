@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: account linking, direct payment posting, automatic payment processing, reconcile payment, recurring expense, recurring cash receipt
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: cde0798a6cd74837c16ccd47a2d669e012925e11
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 01ca3f718ecf469d01d743d1277ce1abc0d6dcde
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2312302"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3193741"
 ---
 # <a name="map-text-on-recurring-payments-to-accounts-for-automatic-reconciliation"></a>Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique
 Sur la page **Correspondance texte et compte** à laquelle vous accédez à partir de la page **Journal rapprochement paiement**, vous pouvez configurer des mappages entre le texte des paiements et des comptes de débit, de crédit et de contrepartie spécifiques afin que ces paiements soient reportés dans les comptes spécifiés lorsque vous reportez le journal rapprochement de paiement.
@@ -30,7 +30,7 @@ Les paiements reportés basés sur le mappage de texte à compte ne sont pas aff
 Sur une ligne journal rapprochement paiement dont le paiement a été défini sur report en fonction du mappage de texte à compte, le champ **Fiabilité correspondance** contient la valeur **Élevé – Mappage de texte à compte**, et les champs **Type compte** et **N° compte** contiennent les comptes mappés.
 
 ## <a name="to-map-text-on-recurring-payments-to-accounts-for-automatic-reconciliation"></a>Pour associer le texte sur les paiements récurrents aux comptes pour un rapprochement automatique
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux rapprochement paiement**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux rapprochement bancaire**, puis sélectionnez le lien associé.
 2. Ouvrez un journal rapprochement paiement. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
 3. Sélectionnez l'action **Mapper le texte avec le compte**. La page **Correspondance texte et compte** s'affiche.
 4. Dans le champ **Correspondance texte**, saisissez n'importe quel texte se produisant sur les paiements que vous souhaitez valider dans les comptes spécifiés sans les appliquer à une écriture ouverte. Vous pouvez entrer jusqu'à 50 caractères.

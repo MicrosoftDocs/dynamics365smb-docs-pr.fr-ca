@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: e3d72eecf3f0d4e92b0255dffdece8dcb795cf96
-ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
+ms.openlocfilehash: dbe03ccde8111a4d14ce34db5b5b5e73297796be
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553804"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3191461"
 ---
 # <a name="subcontract-manufacturing"></a>Sous-traiter la production
 La sous-traitance des opérations sélectionnées au fournisseur est courante dans de nombreuses compagnies manufacturières. La sous-traitance peut être occasionnelle ou faire partie intégrante des processus de production.
@@ -100,6 +100,6 @@ Lorsque le bon de commande est reporté comme facturé, son coût direct est rep
 [Production](production-manage-manufacturing.md)    
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Planification](production-planning.md)      
-[Stock](inventory-manage-inventory.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

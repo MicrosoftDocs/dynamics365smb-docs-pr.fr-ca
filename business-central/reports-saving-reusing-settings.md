@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: customization, personalization
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: a9bb72a85fb49b4316af2160e5823fbf77a18cbf
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 4c43429e4436400dc9e3b991b9ccca59a439372a
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2881411"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3191893"
 ---
 # <a name="manage-saved-settings-for-reports-and-batch-jobs"></a>Gérer les paramètres enregistrés pour les rapports et les traitements en lot
 Lors de l'exécution d'un rapport, les utilisateurs voient généralement une page qui leur permet de sélectionner des options et de définir des filtres pour modifier les données incluses dans le rapport généré. Cette page est appelée la page de demande. Un rapport peut inclure un ou plusieurs *paramètres enregistrés* que les utilisateurs peuvent appliquer au rapport à partir de la page de demande. Les *Paramètres enregistrés* sont essentiellement des options et des filtres prédéfinis. Le fait d'utiliser les paramètres enregistrés est une façon rapide et fiable de générer de façon cohérente des états qui contiennent les données adéquates. Pour plus d'informations, voir [Utilisation des paramètres enregistrés](ui-work-report.md#SavedSettings).

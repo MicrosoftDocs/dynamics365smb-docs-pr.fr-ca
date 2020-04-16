@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: a6797d407b2bb307e963b35ca8d8165982864b98
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 35732cca95a2943c9c80ea1dee96c80e4bbc32fd
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2881058"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3188118"
 ---
 # <a name="view-archived-workflow-step-instances"></a>Afficher des instances d'étape de workflow archivées
 Toutes les instances d'étape de flux de travail terminées sont enregistrées sur la page **Instances d'étape de flux de travail archivées**.  

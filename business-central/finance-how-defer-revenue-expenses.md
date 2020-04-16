@@ -1,7 +1,6 @@
 ---
 title: Echelonner les recettes et les dépenses| Microsoft Docs
 description: Pour identifier des recettes ou des dépenses dans des périodes autres que la période de report de la transaction, vous pouvez utiliser la fonctionnalité pour les échelonner ou les reporter automatiquement selon un calendrier précis.
-services: project-madeira
 documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -10,14 +9,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: postpone
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 6fab25e6f8a3e840dd0b40f616b2a21abe13a9ad
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 0b94dfe59d8d75e8371bcb02c7c306eaa187f8a4
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2302345"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3183702"
 ---
 # <a name="defer-revenues-and-expenses"></a>Echelonner les recettes et les dépenses
 Pour identifier une recette ou une dépense dans une période autre que la période de report de la transaction, vous pouvez utiliser la fonctionnalité pour échelonner automatiquement les recettes et les dépenses selon un calendrier précis.
@@ -25,7 +24,7 @@ Pour identifier une recette ou une dépense dans une période autre que la péri
 Pour répartir les recettes et les dépenses sur les périodes comptables concernées, configurez un modèle d'échelonnement pour la ressource, l'article ou le compte du grand livre pour lequel/laquelle les recettes ou les dépenses seront reportées. Lorsque vous reportez le document vente ou achat concerné, les recettes ou les dépenses sont échelonnées sur les périodes comptables concernées, selon un tableau d'échelonnement régi par des paramètres dans le modèle d'échelonnement et la date de report.
 
 ## <a name="to-set-up-a-gl-account-for-deferral"></a>Pour configurer un compte du grand livre pour échelonnement
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Plan comptable**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Renseignez les champs comme nécessaire afin de créer un compte du grand livre pour les recettes échelonnées Pour plus d'informations, reportez-vous à [Les écritures comptables et le plan comptable](finance-general-ledger.md).
 4. Répétez les étapes 2 et 3 pour créer un nouveau compte du grand livre pour les dépenses échelonnées.
@@ -33,7 +32,7 @@ Pour répartir les recettes et les dépenses sur les périodes comptables concer
 Pour les deux types d'échelonnement, sélectionnez **Bilan** dans le champ **Type** et nommez les comptes en conséquence, comme « Revenus comptabilisés d'avance » pour les recettes différées et « Dépenses impayées » pour les dépenses différées.
 
 ## <a name="to-set-up-a-deferral-template"></a>Pour configurer un modèle d'échelonnement
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modèles échelonnement**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modèles échelonnement**, puis choisissez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Renseignez les champs selon vos besoins.
 4. Dans le champ **Méthode de calcul**, précisez comment le champ **Montant** est calculé pour chaque période sur la page **Tableau d'échelonnement**. Les options suivantes vous sont proposées :
@@ -54,7 +53,9 @@ Pour les deux types d'échelonnement, sélectionnez **Bilan** dans le champ **Ty
 Exemple : la date de report est le 06/02/2016. Si vous saisissez « Dépenses échelonnées pour %4 %6 », la description affichée sera « Dépenses échelonnées pour février 2016 ».
 
 ## <a name="to-assign-a-deferral-template-to-an-item"></a>Pour affecter un modèle d'échelonnement à un article
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modèles échelonnement**, puis sélectionnez le lien associé.
+> [!NOTE]  
+>   Les étapes de cette procédure sont les mêmes que lorsque vous affectez un modèle d'échelonnement à un compte du grand livre ou une ressource.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Article**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche de l'article pour lequel les recettes ou les dépenses doivent être échelonnées selon les périodes comptables lorsque l'article a été vendu ou acheté.
 3. Dans le champ **Modèle échelonnement par défaut**, sélectionnez le modèle d'échelonnement pertinent.
 
@@ -62,7 +63,7 @@ Exemple : la date de report est le 06/02/2016. Si vous saisissez « Dépenses 
 > [!NOTE]  
 >   Les étapes de cette procédure sont identiques lorsque vous modifiez un calendrier d'échelonnement, pour les dépenses, à partir d'une facture achat.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures vente**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures vente**, puis sélectionnez le lien associé.
 2. Créez une facture vente pour un article ayant un modèle d'échelonnement attribué. Pour plus d'informations, reportez-vous à [Facturer des ventes](sales-how-invoice-sales.md).
 
     Notez que dès que vous saisissez l'article (ou la ressource ou le compte général) sur la ligne de facture, le champ **Code d'échelonnement** est complété avec le code du modèle d'échelonnement attribué.
@@ -91,5 +92,5 @@ Les écritures à reporter vers le compte d'échelonnement spécifié, par exemp
 ## <a name="see-also"></a>Voir aussi
 [Finances](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
-[Utilisation de feuilles comptabilité](ui-work-general-journals.md)  
+[Utilisation de journaux généraux](ui-work-general-journals.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

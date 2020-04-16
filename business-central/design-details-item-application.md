@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, items, ledger entries, posting, inventory
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 9f4ef853d62e76ce3ade8062a341eb4336116028
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: bfd2c67c7e7133f13a2e021cb9cf70ba82f6bb21
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2303518"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185166"
 ---
 # <a name="design-details-item-application"></a>Détails de conception : affectation article
 Lorsque vous reportez une transaction d'inventaire, le report de quantité est enregistré dans les écritures article, le report de valeur dans les écritures valeur. Pour plus d'informations, voir [Détails de conception : comptabilisation stock](design-details-inventory-posting.md).  
@@ -189,7 +189,7 @@ Le tableau suivant montre l'effet de la contrepassation du coût exact des écri
 Lorsque vous exécutez le traitement en lot **Ajuster coûts - Écr. article**, le coût augmenté de l'écriture achat, dû aux frais annexes, est transmis à l'écriture vente (écriture numéro 2). L'écriture vente transfère alors ce coût augmenté à l'écriture vente créditrice (numéro de séquence 3). Le résultat final est que le coût est correctement inversé.  
 
 > [!NOTE]  
->  Si vous travaillez sur des retours ou des notes de crédit et que vous avez configuré le champ **Coût retour identique obligatoire** soit sur la page **Configuration des achats et des comptes à payer**, soit sur la page **Configuration des ventes et des comptes à recevoir**, en fonction de votre situation, alors [!INCLUDE[d365fin](includes/d365fin_md.md)] renseigne automatiquement ces champs lorsque vous utilisez la fonction **Copier document**. Si vous utilisez la fonction **Affichage de lignes document validées à contrepasser**, les champs sont toujours renseignés automatiquement.  
+>  Si vous utilisez des retours ou des notes de crédit et que vous avez configuré le champ **Coût d'inversion exact obligatoire** sur la page **Configuration achats** ou **Configuration ventes**, en fonction de votre situation, [!INCLUDE[d365fin](includes/d365fin_md.md)] renseigne automatiquement les différents champs d'écriture d'affectation lorsque vous utilisez la fonction **Copier à partir du document**. Si vous utilisez la fonction **Affichage de lignes document validées à contrepasser**, les champs sont toujours renseignés automatiquement.  
 
 > [!NOTE]  
 >  Si vous reportez une transaction avec une affectation fixe et si l'écriture article que vous affectez doit être fermée, ce qui signifie que la quantité restante est égale à zéro, l'ancienne affectation est automatiquement annulée et l'écriture article est réaffectée à l'aide de l'affectation fixe que vous avez spécifiée.  

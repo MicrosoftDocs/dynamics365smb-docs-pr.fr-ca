@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: undo, credit memo, return
-ms.date: 01/17/2020
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: a8388c81bfdf767463a27d845dded64ee0f08c7e
-ms.sourcegitcommit: 877af26e3e4522ee234fbba606615e105ef3e90a
+ms.openlocfilehash: b0b3179e8931dbf4c647a7bf66ed1b9de45589ce
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "2991938"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3193597"
 ---
 # <a name="process-sales-returns-or-cancellations"></a>Traiter les retours ou annulations de ventes
 Si votre client souhaite retourner des articles ou obtenir un remboursement pour des articles, ou encore annuler des services, que vous lui avez vendus et pour lesquels vous avez reçu un paiement, vous devez créer et reporter une note de crédit vente qui indique la modification demandée. Pour inclure les informations de facture vente correctes, vous pouvez créer la note de crédit vente à partir de la facture vente reportée ou vous pouvez créer une note de crédit vente avec les informations copiées de la facture.
@@ -43,8 +43,8 @@ Vous pouvez affecter l'inversion de même coût automatiquement de deux façons.
 
 |Fonction.|Description|  
 |------------------|---------------------------------------|  
-|Fonction**Extraire des lignes document reportées à inverser** sur la page **Retour vente**|Copie les lignes d'un ou plusieurs documents reportés afin de les inverser dans le retour vente. Pour plus d'informations, voir la section [Pour créer un retour vente à partir d'un ou plusieurs documents vente reportés](sales-how-process-sales-returns-cancellations.md#to-create-a-sales-return-order-based-on-one-or-more-posted-sales-documents).|  
-|Fonction**Copier document** des pages **Note de crédit vente** et **Retour vente**|Copie l'en-tête et les lignes d'un document reporté à inverser.<br /><br /> Requiert que la case à cocher **Coût d'inversion exact obligatoire** soit sélectionnée sur la page **Configuration ventes & à recevoir**.|
+|Fonction**Extraire des lignes document reportées à inverser** sur la page **Retour vente**|Copie les lignes d'un ou plusieurs documents reportés afin de les inverser dans le retour vente. Pour plus d'informations, voir [Pour créer un retour vente à partir d'un ou de plusieurs documents vente reportés](sales-how-process-sales-returns-cancellations.md#to-create-a-sales-return-order-based-on-one-or-more-posted-sales-documents).|  
+|Fonction**Copier à partir du document** des pages **Note de crédit vente** et **Retour vente**|Copie l'en-tête et les lignes d'un document reporté à inverser.<br /><br /> Requiert que la case à cocher **Coût d'inversion exact obligatoire** soit sélectionnée sur la page **Configuration ventes & à recevoir**.|
 
 Pour réaliser manuellement l'inversion exacte, sélectionnez **Écriture article à affecter** sur n'importe quelle ligne de document retour, puis sélectionnez le numéro de l'écriture vente initiale. Cela crée un lien entre la note de crédit vente ou le retour vente et l'écriture vente initiale, et garantit que l'article est évalué en fonction du coût unitaire initial.
 
@@ -76,7 +76,7 @@ Les documents vente reportés auxquels vous avez affecté la note de crédit son
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de crédit vente**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau** pour ouvrir un nouvel avoir vente vierge.
 3. Dans le champ **Client**, entrez le nom d'un client existant.
-4. Sélectionnez l'action **Copier document**.
+4. Sélectionnez l'action **Copier à partir du document**.
 5. Sur la page **Copier document vente**, dans le champ **Type document**, sélectionnez **Facture reportée**.
 6. Sélectionnez le champ **N° document** pour ouvrir la page **Factures vente reportées**, puis sélectionnez la facture vente reportée qui contient les lignes que vous souhaitez inverser.
 7. Activez la case à cocher **Recalculer lignes** si vous souhaitez que les lignes facture vente validées copiées soient mises à jour avec les modifications apportées au prix article et au coût unitaire depuis la validation de la facture.
@@ -90,7 +90,7 @@ Les documents vente reportés auxquels vous avez affecté la note de crédit son
 4. Dans le raccourci **Lignes**, renseignez les lignes manuellement, ou copiez des informations d'autres documents pour renseigner les lignes automatiquement :
 
     - Utilisez la fonction **Extraire les lignes de document reportées à inverser** pour copier une ou plusieurs lignes de document reportées à partir d'un ou de plusieurs documents reportés. Cette fonction inverse toujours exactement les coûts à partir de la ligne de document reportée. Cette fonction est décrite dans les étapes suivantes.    
-    - Utilisez la fonction **Copier document** pour copier un document existant dans le retour. Cette fonction permet de copier l'ensemble du document. Il peut s'agir d'un document reporté ou d'un document non encore reporté. Cette fonction ne permet l'inversion de même coût que lorsque la case **Inversion de même coût obligatoire** est cochée sur la page **Config. ventes et à recevoir**.  
+    - Utilisez la fonction **Copier à partir du document** pour copier un document existant dans le retour. Cette fonction permet de copier l'ensemble du document. Il peut s'agir d'un document reporté ou d'un document non encore reporté. Cette fonction ne permet l'inversion de même coût que lorsque la case **Inversion de même coût obligatoire** est cochée sur la page **Config. ventes et à recevoir**.  
 
 5. Sélectionnez l'action **Extraire les lignes de document reportées à inverser**.
 6. Dans le haut de la page **Lignes document vente reportées**, cochez la case **Afficher uniquement lignes réversibles** si vous voulez n'afficher que les lignes contenant des quantités qui n'ont pas encore été retournées. Par exemple, si une quantité de facture vente reportée a déjà été retournée, il se peut que vous ne vouliez pas retourner cette quantité sur un nouveau document retour vente.
@@ -218,7 +218,7 @@ Lorsque des réceptions retour sont regroupées sur une note de crédit et repor
 
 Vous pouvez également supprimer chacune des commandes retour vente manuellement.   
 
-## <a name="see-related-training-at-microsoft-learnlearnpathsreturn-items-dynamics-365-business-central"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/return-items-dynamics-365-business-central/)
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/return-items-dynamics-365-business-central/)
 
 ## <a name="see-also"></a>Voir aussi
 [Vente](sales-manage-sales.md)  

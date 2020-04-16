@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: transportation, added cost, landed cost
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: a113573ca1732472f5ec926f78273cdb4b94f989
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 2d9228b213d540a6aed034964fbeaa2bd6f49b57
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2878148"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3190333"
 ---
 # <a name="use-item-charges-to-account-for-additional-trade-costs"></a>Utiliser Frais annexes pour comptabiliser les coûts commerciaux supplémentaires
 Pour une évaluation correcte, vos articles de l'inventaire doivent comptabiliser tous les coûts ajoutés, tels que le fret, la manutention, les assurances et le transport, que vous encourez lorsque vous achetez ou vendez des articles. Pour les achats, le coût en magasin d'un article acheté est constitué du prix d'achat au fournisseur et de tous les frais annexes directs pouvant être affectés à chacune des réceptions ou expéditions retour. Pour les ventes, il peut s'avérer aussi fondamental pour votre compagnie de connaître le coût de livraison des articles vendus que le coût en magasin des articles achetés.
@@ -40,7 +40,7 @@ Pour les documents achat et vente, vous pouvez affecter des frais annexes de deu
 ## <a name="example"></a>Exemple :
 Cette vidéo montre comment gérer un coût d'expédition supplémentaire dans le cadre de l'évaluation des coûts de l'inventaire.
 <br><br>  
-> [!Video https://www.microsoft.com/videoplayer/embed/RE4b0SB]
+> [!Video https://www.microsoft.com/videoplayer/embed/RE4b0SB?rel=0]
 
 ## <a name="to-set-up-item-charge-numbers"></a>Pour configurer des numéros de frais annexes
 Utilisez les numéros de frais annexes pour distinguer les différents types de frais annexes utilisés dans votre compagnie.

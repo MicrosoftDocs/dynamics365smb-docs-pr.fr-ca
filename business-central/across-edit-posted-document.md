@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 6fbb4e458b0e4f9068b234748a3921dbca6b3222
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 1041dda83552af3c2c805c08518600d89f0467fb
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2300603"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3188742"
 ---
 # <a name="edit-posted-documents"></a>Modifier les documents reportés
 Parfois, vous devez mettre à jour un document reporté, car les informations pertinentes pour le document ont été modifiées. Sur un document vente reporté, il peut s'agir du numéro de suivi du colis du de l'agent de livraison, par exemple. Sur un document achat reporté, il peut s'agir d'un texte de référence de paiement.
@@ -37,7 +37,7 @@ Les documents supplémentaires suivants peuvent être modifiés dans les version
 ## <a name="to-edit-a-posted-sales-shipment"></a>Pour modifier une livraison vente reportée
 Voici comment modifier une livraison vente reportée. Les étapes sont similaires pour les autres documents pris en charge.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Livraisons vente reportées**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Livraisons vente reportées**, puis sélectionnez le lien associé.
 2. Sélectionnez le document que vous souhaitez modifier, puis sélectionnez l'action **Mettre à jour le document**. Sinon, ouvrez le document, puis choisissez l'action.
 3. Sur la page **Livraison vente reportée - Mettre à jour**, modifiez le champ **N° de suivi du colis** par exemple.
 4. Cliquez sur le bouton **OK**.
@@ -46,6 +46,6 @@ La livraison vente reportée est mise à jour.
 
 ## <a name="see-also"></a>Voir aussi
 [Fonctionnalités marché](ui-across-business-areas.md)  
-[Achats](purchasing-manage-purchasing.md)  
-[Report des documents et des journaux](ui-post-documents-journals.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)  
+[Validation des documents et des feuilles](ui-post-documents-journals.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

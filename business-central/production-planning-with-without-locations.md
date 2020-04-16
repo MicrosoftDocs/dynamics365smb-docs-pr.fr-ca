@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: b5c5c12dedfe3f35737888017ed02e0f7d464443
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 09faf5a92d242addb5805101fe99cb2c12f9f710
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2877697"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3191341"
 ---
 # <a name="planning-with-or-without-locations"></a>Planification avec/sans emplacement
 En ce qui concerne la planification avec ou sans code magasin sur les lignes demande, le système opère directement lorsque :  

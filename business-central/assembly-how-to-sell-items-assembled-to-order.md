@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: kit, kitting
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 464600e473034d5b70745d4c4d94c9a49311ed3b
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: da4a854aa573599db2d2493219d4393366a995f9
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2880794"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3186342"
 ---
 # <a name="sell-items-assembled-to-order"></a>Vente d'articles à assembler pour commande
 Si le champ **Politique d'assemblage** de la fiche article d'un élément d'assemblage est **Assembler pour commande**, l'article n'est pas supposé être en inventaire et doit être assemblé spécifiquement dans un document de vente. Lorsque vous entrez l'article dans une ligne document de vente, un ordre d'assemblage est automatiquement créé et lié au document de vente.  

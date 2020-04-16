@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: edupont
-ms.openlocfilehash: 101fa49a803f03d805bbcdeba4066f34323ad578
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 6168b8a14bc520f811db231e9d8f885e7372a3d6
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2303369"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185214"
 ---
 # <a name="design-details-known-item-application-issue"></a>Détails de conception : problème connu lié à l'affectation d'articles
 Cet article traite du problème de niveau d'inventaire nul alors qu'il existe des écritures article ouvertes dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
@@ -150,4 +150,4 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : affectation article](design-details-item-application.md)   
-[Détails de conception : stock évaluation stock](design-details-inventory-costing.md)  
+[Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)  

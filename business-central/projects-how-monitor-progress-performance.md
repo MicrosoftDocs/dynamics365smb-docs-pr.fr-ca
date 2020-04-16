@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: project management, KPI, work in process, work in progress
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: a11e2064467ffa168603aed74c24f4bb972ea10d
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 368461d6d29f77586e2ee047f571ef4fae583b14
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2312830"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3192829"
 ---
 # <a name="monitor-job-progress-and-performance"></a>Surveiller la progression et les performances
 Au fur et à mesure de la progression du projet, les matières, ressources et autres frais sont consommés et doivent être reportés dans le projet. La fonctionnalité Travaux en cours (TEC) permet d'estimer la valeur financière des projets dans le grand livre au cours des projets. Dans de nombreux cas, vous pouvez reporter les frais pour un projet avant de le facturer. Lorsque seuls les frais sont reportés, l'état financier est incorrect. Pour en savoir plus, reportez-vous à [Comprendre les méthodes TEC](projects-understanding-wip.md).
@@ -38,23 +38,23 @@ Vous pouvez créer une méthode TEC projet qui reflète les besoins de votre org
 > [!NOTE]
 > Après avoir utilisé la nouvelle méthode pour créer des écritures TEC, vous ne pouvez pas supprimer la méthode ou la modifier.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Méthodes TEC projet**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Méthodes TEC projet**, puis sélectionnez le lien associé.  
 2. Cliquez sur **Nouveau**, puis renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 3. Fermez la page.   
-4. Pour que cette nouvelle méthode devienne celle par défaut, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration projets**, puis sélectionnez le lien associé.  
+4. Pour faire de cette nouvelle méthode la valeur par défaut, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration projets**, puis sélectionnez le lien associé.  
 5. Dans le champ **Méthode TEC par défaut**, choisissez la méthode de la liste.
 
 ## <a name="to-define-a-wip-method-for-a-job"></a>Pour définir une méthode TEC pour un projet
 Lorsque vous créez un projet, vous devez spécifier la méthode TEC projet qui s'applique. Dans certains cas, quelle méthode TEC projet utilisable a été paramétrée pour vous par défaut.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projets**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Projets**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**. Pour plus d'informations, voir [Créer des projets](projects-how-create-jobs.md).  
 3. Sur la page **Fiche projet**, dans le champ **Méthode TEC**, sélectionnez une méthode TEC dans la liste. Si une méthode par défaut a été définie, vous pouvez sélectionner une autre option si nécessaire.  
 
 ## <a name="to-calculate-wip"></a>Pour calculer les TEC :
 Vous pouvez déterminer le montant TEC devant être reporté dans les comptes de bilan pour la génération de rapports de fin d'exercice. Pour ce faire, utilisez le traitement par lots **Projet Calculer TEC**.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projet Calculer TEC**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projet Calculer TEC**, puis sélectionnez le lien associé.  
 2. Cliquez sur **Calculer TEC**.
 3. Sur la page **Projet Calculer TEC**, renseignez les champs comme nécessaire.
 4. Cliquez sur le bouton **OK**.  
@@ -77,7 +77,7 @@ Cela vous permet de suivre vos estimations initiales, de les comparer aux résul
 > [!NOTE]  
 >   Les écritures article créent des écritures article et diminuent la quantité de l'inventaire. Le traitement par lots **Valider coûts ajustés** permet de transférer le coût du stock à la comptabilité. Les écritures ressource créent des écritures ressource.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux projet**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux projet**, puis sélectionnez le lien associé.  
 2. Sélectionnez une feuille projet appropriée, puis cliquez sur l'action **Calc. activité restante**.  
 3. Sur la page **Projet Calc. utilisation restante**, entrez le numéro et la date de report du document devant être insérés dans le journal, puis sélectionnez le bouton **OK**.  
 4. Mettez à jour le journal avec toutes les modifications qui peuvent être nécessaires.  
@@ -95,6 +95,6 @@ Sur la page **Écritures projet**, vous pouvez passer en revue les écritures as
 [Gestion des projets](projects-manage-projects.md)
 [Gestion de l'évaluation stock](finance-manage-inventory-costs.md)   
 [Finance](finance.md)  
-[Procédure d'achat](purchasing-manage-purchasing.md)         
-[Vente](sales-manage-sales.md)      
+[Achats](purchasing-manage-purchasing.md)         
+[Ventes](sales-manage-sales.md)      
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

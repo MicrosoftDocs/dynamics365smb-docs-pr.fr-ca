@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: multiple currencies
-ms.date: 01/13/2020
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: c5aacb325eec2a8679aed845c496744e05535e30
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.openlocfilehash: 9802821985550668d460aa3213c9fb64764169c0
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2953741"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3183558"
 ---
 # <a name="set-up-an-additional-reporting-currency"></a>Configurer une devise de report additionnelle
 Les compagnies opérant dans un nombre croissant de pays/régions, il est de plus en plus important qu'elles puissent consulter et générer des rapports de données financières dans plusieurs devises.
@@ -121,7 +121,7 @@ En outre, toutes les écritures futures du même type ont des montants enregistr
 > [!NOTE]  
 >  Le champ **Devise report** n'est activé qu'après que vous avez cliqué sur le bouton **OK** dans le traitement par lots **Ajuster devise report**.  
 
-## <a name="see-related-training-at-microsoft-learnlearnpathsuse-multiple-currencies-dynamics-365-business-central"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/use-multiple-currencies-dynamics-365-business-central/)
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/use-multiple-currencies-dynamics-365-business-central/)
 
 ## <a name="see-also"></a>Voir aussi
 [Mettre à jour des taux de change devise](finance-how-update-currencies.md)  

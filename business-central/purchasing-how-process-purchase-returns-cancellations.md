@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: cancel, undo, correct
-ms.date: 01/13/2020
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 53bc73248b8c69e8c2fcd03270f7698f7f6f503a
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.openlocfilehash: fc2a3a372ac82ce936418f793cdd33eb3b0ea4b9
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2953549"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3194004"
 ---
 # <a name="process-purchase-returns-or-cancellations"></a>Traiter les retours ou annulations d'achats
 Si vous souhaitez retourner des articles à votre fournisseur ou annuler des services que vous avez achetés, vous pouvez créer et reporter une note de crédit achat qui indique la modification demandée par rapport à la facture achat d'origine. Pour inclure les informations de facture achat correctes, vous pouvez créer la note de crédit achat à partir de la facture achat reportée ou vous pouvez créer une note de crédit achat avec les informations copiées de la facture.
@@ -43,7 +43,7 @@ Vous pouvez affecter l'inversion de même coût automatiquement de deux façons.
 |Fonction.|Description|  
 |------------------|---------------------------------------|  
 |Fonction **Afficher des lignes document reportées à inverser** sur la page **Retour commande achat**|Copie les lignes d'un ou de plusieurs documents reportés afin de les inverser dans le retour achat. Pour plus d'informations, voir la section [Pour créer un retour achat à partir d'un ou plusieurs documents achat reportés](purchasing-how-process-purchase-returns-cancellations.md#to-create-a-purchase-return-order-based-on-one-or-more-posted-purchase-documents).|  
-|Fonction **Copier document** des pages **Note de crédit achat** et **Retour achat**|Copie l'en-tête et les lignes d'un document reporté à inverser.<br /><br /> Requiert que la case à cocher **Coût d'inversion exact obligatoire** soit sélectionnée sur la page **Configuration achats et à payer**.|
+|Fonction **Copier à partir du document** des pages **Note de crédit achat** et **Retour achat**|Copie l'en-tête et les lignes d'un document reporté à inverser.<br /><br /> Requiert que la case à cocher **Coût d'inversion exact obligatoire** soit sélectionnée sur la page **Configuration achats et à payer**.|
 
 Pour réaliser manuellement l'inversion exacte, sélectionnez **Écriture article à affecter** sur n'importe quelle ligne de document retour, puis sélectionnez le numéro de l'écriture achat initiale. Cela crée un lien entre la note de crédit achat ou le retour achat et l'écriture achat initiale, et garantit que l'article est évalué en fonction du coût unitaire initial.
 
@@ -73,7 +73,7 @@ La note de crédit achat est supprimée et remplacée par un nouveau document da
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de crédit achat**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau** pour ouvrir un nouvel avoir achat vierge.
 3. Dans le champ **Fournisseur**, entrez le nom d'un fournisseur existant.
-4. Sélectionnez l'action **Copier document**.
+4. Sélectionnez l'action **Copier à partir du document**.
 5. Sur la page **Extraire document achat**, dans le champ **Type document**, sélectionnez **Facture reportée**.
 6. Sélectionnez le champ **N° document** pour ouvrir la page **Factures achat reportées**, puis sélectionnez la facture achat reportée qui contient les lignes que vous souhaitez inverser.
 7. Activez la case à cocher **Recalculer lignes** si vous souhaitez que les lignes facture achat validées copiées soient mises à jour avec les modifications apportées au prix article et au coût unitaire depuis la validation de la facture.
@@ -87,7 +87,7 @@ La note de crédit achat est supprimée et remplacée par un nouveau document da
 4. Dans le raccourci **Lignes**, renseignez les lignes manuellement, ou copiez des informations d'autres documents pour renseigner les lignes automatiquement :
 
     - Utilisez la fonction **Extraire les lignes de document reportées à inverser** pour copier une ou plusieurs lignes de document reportées à partir d'un ou de plusieurs documents reportés. Cette fonction inverse toujours exactement les coûts à partir de la ligne de document reportée. Cette fonction est décrite dans les étapes suivantes.    
-    - Utilisez la fonction **Copier document** pour copier un document existant dans le retour. Cette fonction permet de copier l'ensemble du document. Il peut s'agir d'un document reporté ou d'un document non encore reporté. Cette fonction ne permet l'inversion de même coût que lorsque la case **Inversion de même coût obligatoire** est cochée sur la page **Config. ventes et à recevoir**.  
+    - Utilisez la fonction **Copier à partir du document** pour copier un document existant dans le retour. Cette fonction permet de copier l'ensemble du document. Il peut s'agir d'un document reporté ou d'un document non encore reporté. Cette fonction ne permet l'inversion de même coût que lorsque la case **Inversion de même coût obligatoire** est cochée sur la page **Config. ventes et à recevoir**.  
 
 4. Sélectionnez l'action **Extraire les lignes de document reportées à inverser**.
 5. Dans le haut de la page **Lignes document achat reportées**, cochez la case **Afficher uniquement lignes réversibles** si vous voulez n'afficher que les lignes contenant des quantités qui n'ont pas encore été retournées, ou s'il s'agit de lignes achat, vendues ou consommées. Par exemple, si une quantité de facture achat reportée a déjà été retournée, il se peut que vous ne vouliez pas intégrer cette quantité dans un nouveau document retour achat.
@@ -181,7 +181,7 @@ Lorsque des livraisons retour sont regroupées sur une note de crédit et report
 2.  Renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**.  
 3.  Vous pouvez également supprimer chacun des retours achat manuellement.
 
-## <a name="see-related-training-at-microsoft-learnlearnpathsreturn-items-dynamics-365-business-central"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/return-items-dynamics-365-business-central/)
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/return-items-dynamics-365-business-central/)
 
 ## <a name="see-also"></a>Voir aussi
 [Procédure d'achat](purchasing-manage-purchasing.md)  

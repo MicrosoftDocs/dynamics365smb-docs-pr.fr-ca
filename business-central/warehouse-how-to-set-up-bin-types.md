@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 9876fdc5d68721e15ca449bfe8fd2d790ade9b97
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: f5a5903e3485e4db67b1f169d8c9a0c969058fa1
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2881628"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3191797"
 ---
 # <a name="set-up-bin-types"></a>Configurer des types de zone
 Vous pouvez diriger la circulation des articles vers les emplacements que vous avez définis pour des activités entrepôt particulières. Vous attribuez à chaque zone des activités de flux de base, et définissez de cette façon la manière dont une zone est utilisée, en lui affectant un type.  

@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: policy, coverage
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 7151f1415e87be4775966ad9727cd0ba00b041ab
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: a7dfc768ff3de49a79c77ec187a7da40817764b6
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2306590"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3184254"
 ---
 # <a name="set-up-fixed-asset-insurance"></a>Configurer une assurance immobilisation
 Pour gérer la couverture d'assurance des immobilisations, vous devez tout d'abord configurer certaines informations générales d'assurance ainsi qu'une fiche assurance par police.
@@ -44,13 +44,13 @@ Vous pouvez rassembler des informations sur chaque police d'assurance dans la fi
 ## <a name="to-set-up-insurance-journal-templates"></a>Pour configurer des modèles journal assurance
 [!INCLUDE[d365fin](includes/d365fin_md.md)] crée automatiquement un modèle journal assurance la première fois que vous ouvrez la page **Journal assurance**. Vous pouvez cependant configurer d'autres modèles journal. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modèles de journaux d'assurance**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modèles journal assurance**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins.
 
 ## <a name="to-set-up-insurance-journal-batches"></a>Pour définir des lots journal assurance
 Vous pouvez configurer des lots dans un modèle journal assurance. Les valeurs du lot journal servent de valeurs par défaut si les champs ne sont pas renseignés sur les lignes journal. Pour en savoir plus, voir [Utiliser des feuilles comptabilité](ui-work-general-journals.md)  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modèles de journaux d'assurance**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modèles journal assurance**, puis sélectionnez le lien associé.  
 2. Sélectionnez un modèle feuille assurance, puis l'action **Lots**.
 3. Sur la page **Lots journal assurance**, renseignez les champs selon vos besoins.
 

@@ -9,14 +9,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: rfq
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: f65708a0827a0e428c8bd7e0369c26268bb6ed32
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 4dfb4a530ebcbfd9bcede5e6280fa33360b952a6
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2316270"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3192637"
 ---
 # <a name="track-packages"></a>Suivre des colis
 De nombreux agents de livraison offrent des services sur Internet vous permettant de suivre les colis que vous avez confiés à l'agent de livraison. Si vous utilisez un ou plusieurs de ces agents de livraison, vous pouvez configurer certaines informations de base et utiliser la fonction de traçabilité automatique à partir des livraisons reportées. Pour plus d'informations, voir [Configurer des agents de livraison](sales-how-to-set-up-shipping-agents.md).  
@@ -31,7 +31,7 @@ Votre navigateur par défaut ouvre la page de suivi de l'agent de livraison.
 
 ## <a name="see-also"></a>Voir aussi
 [Configurer des agents de livraison](sales-how-to-set-up-shipping-agents.md)  
-[Ventes](sales-manage-sales.md)  
+[Vente](sales-manage-sales.md)  
 [Définition des ventes](sales-setup-sales.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

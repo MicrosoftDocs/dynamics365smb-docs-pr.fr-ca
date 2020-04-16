@@ -5,14 +5,14 @@ author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.search.keywords: prepayment
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: edupont
-ms.openlocfilehash: 2c594da7c8cc11a08420f6bf8a5fb16cccb5ec0b
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: c1e129947d6230578b5c553fd985030e2f5ebc5c
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2305630"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3182838"
 ---
 # <a name="set-up-prepayments"></a>Configuration des acomptes
 Si vous voulez que vos clients fassent des paiements avant de leur livrer une commande ou si votre fournisseur exige que vous fassiez un paiement avant de vous livrer une commande, vous pouvez utiliser la fonctionnalité Paiement anticipé. Cette fonctionnalité vous permet de facturer et de collecter les dépôts requis des clients ou de régler des dépôts aux fournisseurs, et de vous assurer que tous les paiements partiels sont reportés sur une facture. Pour plus d'informations, voir [Créer des factures de paiement anticipé](finance-how-to-create-prepayment-invoices.md).
@@ -27,7 +27,7 @@ Puisque le montant prépayé appartient à l'acheteur jusqu'à ce qu'il ait reç
 
 ## <a name="to-add-prepayment-accounts-to-the-general-posting-setup"></a>Ajouter des comptes paiement anticipé à la configuration de report générale  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration du report général**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du report général**, puis sélectionnez le lien associé.
 2. Sur la page **Configuration du report général**, vous devez renseigner les champs suivants :  
 
     - **Compte de paiements anticipés de vente**  
@@ -40,13 +40,13 @@ Si vous n'avez pas encore configuré de comptes GL pour les paiements anticipés
 
 ## <a name="to-set-up-number-series-for-prepayment-documents"></a>Configurer des séries de numéros pour des documents paiement anticipé  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration ventes et à recevoir**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.
 2. Sur la page **Configuration ventes et à recevoir**, renseignez les champs suivants :  
 
    - **N° factures pour paiement anticipé reporté**
    - **N° notes de crédit pour paiement anticipé reporté**
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration achats et à payer**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration achats et à payer**, puis sélectionnez le lien associé.
 2. Sur la page **Configuration ventes et à recevoir**, renseignez les champs suivants :
 
     - **N° factures pour paiement anticipé reporté**
@@ -58,13 +58,13 @@ Si vous n'avez pas encore configuré de comptes GL pour les paiements anticipés
 ## <a name="to-set-up-prepayment-percentages-for-items-customers-and-vendors"></a>Pour configurer des pourcentages de paiement anticipé pour des articles, des clients et des fournisseurs  
 Pour un article, vous pouvez configurer un pourcentage de paiement anticipé par défaut pour tous les clients, pour un client spécifique ou pour un groupe prix client.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Articles**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
 2. Sélectionnez un article, puis cliquez sur l'action **Pourcentages paiement anticipé**.  
 3. Sur la page **Pourcentages paiement anticipé vente**, renseignez autant de champs que nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 Pour un client ou un fournisseur, vous pouvez configurer un pourcentage de paiement anticipé par défaut pour tous les articles et tous les types de lignes vente. Vous entrez cette valeur dans la fiche client ou fournisseur.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clients**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche d'un client.
 3. Remplissez le champ **% paiement anticipé**.
 4. Répétez les étapes pour d'autres clients ou fournisseurs.  
@@ -86,6 +86,6 @@ Autrement dit, le pourcentage de paiement anticipé figurant dans la fiche clien
 [Procédure pas à pas : configuration et facturation d'acomptes](walkthrough-setting-up-and-invoicing-sales-prepayments.md)  
 [Calculer la taxe sur les biens et services pour les paiements anticipés en Australie](LocalFunctionality/Australia/how-to-calculate-goods-and-services-tax-on-prepayments.md)  
 [Calculer la taxe sur les biens et services pour les paiements anticipés en Nouvelle-Zélande](LocalFunctionality/NewZealand/how-to-calculate-goods-and-services-tax-on-prepayments.md)  
-[Familiarisation avec les écritures comptables et les COA](finance-general-ledger.md)  
+[Familiarisation avec le grand livre et les COA](finance-general-ledger.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

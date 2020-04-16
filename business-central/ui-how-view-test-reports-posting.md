@@ -9,14 +9,14 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: solsen
-ms.openlocfilehash: ab2bcb78479e91c111868c21bd3019c7971d9ffb
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: e91332cd90ded6560f34bc2378eaf6e286b2eb43
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2310886"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3195517"
 ---
 # <a name="view-test-reports-before-posting"></a>Afficher des rapports de test avant le report
 Lorsque vous êtes prêt à reporter un document (commande, facture ou note de crédit, par exemple), vous pouvez vérifier le document pour vous assurer qu'aucun problème ne risque de bloquer le report.
@@ -32,5 +32,5 @@ Lorsque vous êtes prêt à reporter un document (commande, facture ou note de c
 Tous les éléments de la facture achat sont vérifiés et le résultat est présenté dans un rapport. Si le rapport signale des erreurs ou des informations manquantes, vous devez corriger le problème avant de reporter la facture achat.
 
 ## <a name="see-also"></a>Voir aussi
-[Report des documents et des journaux](ui-post-documents-journals.md)  
+[Validation des documents et des feuilles](ui-post-documents-journals.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

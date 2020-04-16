@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 12/04/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 0218cf1b4982b9e8c5b5c2817590bc5ebd8f1941
-ms.sourcegitcommit: b6e506a45a1cd632294bafa1c959746cc3a144f6
+ms.openlocfilehash: c453a10f30d2a45f6d4641bda8b24ee3659b1a32
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896071"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3182310"
 ---
 # <a name="block-items-from-sales-or-purchasing"></a>Bloquer des articles pour la vente ou pour l'achat
 Vous pouvez bloquer un article pour empêcher sa saisie dans des lignes vente ou achat, et vous pouvez le bloquer pour empêcher son report dans n'importe quelle transaction.  
@@ -31,7 +31,7 @@ Le tableau suivant illustre ce qui se produit lorsque les articles sont bloqués
 > [!NOTE]
 > Les articles bloqués peuvent être retournés. Cela signifie qu'aucun des paramètres ci-dessus ne s'applique lorsque l'article est utilisé sur des retours et des notes de crédit.
 
-Lorsque vous utilisez la fonction **Copier le document** pour créer des documents à partir de documents existants, vous êtes averti si des articles sur les lignes du document source sont bloqués. Les lignes de document bloquées sont exclues du nouveau document et une notification affiche une vue d'ensemble de toutes les lignes de document bloquées dans le document source.
+Lorsque vous utilisez la fonction **Copier à partir du document** pour créer des documents à partir de documents existants, vous êtes averti si des articles sur les lignes du document source sont bloqués. Les lignes de document bloquées sont exclues du nouveau document et une notification affiche une vue d'ensemble de toutes les lignes de document bloquées dans le document source.
 
 ## <a name="to-block-an-item-from-being-entered-on-sales-lines"></a>Pour bloquer un article pour la saisie sur des lignes vente  
 

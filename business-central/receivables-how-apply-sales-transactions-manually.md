@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, cash receipt
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: d32f614ce86f6ad1b3f846631d3b4062788b755a
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 74031e19332bb258323559a51fa22c486c880edb
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2312350"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3192037"
 ---
 # <a name="reconcile-customer-payments-with-the-cash-receipt-journal-or-from-customer-ledger-entries"></a>Rapprocher des paiements clients avec le journal des encaissements ou à partir des écritures client
 Lorsque vous recevez un paiement en liquide d'un client ou que vous effectuez un remboursement en liquide, vous devez décider si vous souhaitez affecter le paiement ou le remboursement pour fermer une ou plusieurs écritures débit ou crédit ouvertes. Vous pouvez indiquer le montant que vous souhaitez affecter. Par exemple, vous pouvez affecter des paiements partiels à des écritures client. La fermeture des écritures client permet de garantir que des informations telles que les statistiques clients, les relevés de compte bancaire et les frais financiers sont corrects.
@@ -37,7 +37,7 @@ Vous pouvez affecter les écritures client de plusieurs manières :
 
 ## <a name="to-fill-and-post-a-cash-receipt-journal"></a>Pour renseigner et reporter un journal des encaissements
 Un journal des encaissements est un type de journal général, que vous pouvez utiliser pour reporter des transactions sur des comptes GL, banque, client, fournisseur et immobilisations. Vous pouvez affecter le paiement à une ou plusieurs écritures débit lorsque vous reportez le paiement ou vous pouvez l'affecter à partir des écritures reportées ultérieurement.
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journal des encaissements**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal des encaissements**, puis sélectionnez le lien associé.
 2. Sélectionnez **Modifier journal**.
 3. Sélectionnez le nom de traitement par lots souhaité dans le champ **Nom de la feuille**.
 4. Renseignez le champ **Date comptabilisation**.  
@@ -53,7 +53,7 @@ Un journal des encaissements est un type de journal général, que vous pouvez u
 12. Reportez le journal.
 
 ## <a name="to-apply-a-payment-to-a-single-customer-ledger-entry"></a>Pour affecter un paiement à une seule écriture client
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal des encaissements**, et sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal des encaissements**, puis sélectionnez le lien associé.
 2. Sélectionnez **Modifier journal**.
 3. Dans la première ligne journal, saisissez les informations appropriées sur l'écriture à affecter.
 4. Dans le champ **Type document**, entrez **Paiement**.
@@ -105,7 +105,7 @@ Un journal des encaissements est un type de journal général, que vous pouvez u
 7. Reportez la note de crédit.
 
 ## <a name="to-apply-posted-customer-ledger-entries"></a>Pour affecter des écritures client reportées
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clients**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche du client possédant les écritures que vous souhaitez affecter.
 3. Sélectionnez l'action **Écritures comptables**, puis sélectionnez la ligne où figure l'écriture qui sera l'écriture lettrage.
 4. Sélectionnez l'action **Lettrer écritures**. La page **Affecter écritures client** s'ouvre et affiche les écritures ouvertes de ce client.
@@ -117,7 +117,7 @@ Un journal des encaissements est un type de journal général, que vous pouvez u
 8. Cliquez sur **OK** pour valider le lettrage.
 
     Si le lettrage validé génère des écritures comptables client lettrées, ces écritures comptables ne sont plus activées dans le champ **Ouvert**.    
-9. Pour afficher les écritures, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clients**, puis sélectionnez le lien associé. Accédez à la fiche du client approprié pour afficher les écritures.  
+9. Pour afficher les écritures, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clients**, puis choisissez le lien associé. Accédez à la fiche du client approprié pour afficher les écritures.  
 
 Dans la liste écritures comptables, sur la ligne contenant l'écriture comptable totalement lettrée vous constatez que la case **Ouvert** n'est pas cochée.  
 
@@ -144,7 +144,7 @@ L'affectation d'écritures client en devises différentes doit être activée. P
 ## <a name="to-correct-an-application-of-customer-entries"></a>Pour corriger une affectation d'écritures
 Lorsque vous corrigez une affectation, des écritures de correction (écritures identiques à l'écriture originale mais avec le signe opposé dans le champ du montant) sont créées et reportées pour toutes les écritures comportant des reports comptables issus de l'affectation, comme les escomptes de paiement et les pertes et gains en devise. Les écritures qui sont fermées par l'affectation sont rouvertes.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clients**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche client appropriée.
 3. Sélectionnez l'action **Écritures comptables**.
 4. Sélectionnez l'écriture comptable appropriée, puis sélectionnez l'action **Délettrer les écritures**.
@@ -157,5 +157,5 @@ Lorsque vous corrigez une affectation, des écritures de correction (écritures 
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion des comptes client](receivables-manage-receivables.md)  
-[Ventes](sales-manage-sales.md)  
+[Vente](sales-manage-sales.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

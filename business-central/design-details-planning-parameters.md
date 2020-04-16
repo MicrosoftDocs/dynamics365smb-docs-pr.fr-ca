@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: planning, design
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 37dfdf4805e5d11f2ede11f8b0454407debe9940
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: e45850539b84e2762d93140e47ae336f2ec6efda
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2306974"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3184902"
 ---
 # <a name="design-details-planning-parameters"></a>Détails de conception : paramètres de planification
 Cette rubrique décrit les différents paramètres de planification que vous pouvez utiliser dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
@@ -80,7 +80,7 @@ Pour obtenir un programme d'approvisionnement rationnel, un gestionnaire régler
 
 Le temps de la période de reprogrammation, de la période tampon, ainsi que de la période de cumul de lot est basé sur une date d'approvisionnement. La plage de temps est basée sur la date de début de la planification, comme l'indique la figure suivante.  
 
-![Éléments de la plage de temps](media/supply_planning_5_time_bucket_elements.png "Éléments de la plage de temps")  
+![Éléments de plage de temps](media/supply_planning_5_time_bucket_elements.png "Éléments de plage de temps")  
 
 Dans les exemples suivants, les flèches noires représentent l'approvisionnement existant (vers le haut) et la demande (vers le bas). Les flèches rouge, verte et orange sont des suggestions de planification.  
 
@@ -98,7 +98,7 @@ Dans les exemples suivants, les flèches noires représentent l'approvisionnemen
 
 **Exemple 4** : il existe une demande pour la période tampon et l'approvisionnement reste à la même date. Toutefois, la quantité d'approvisionnement actif n'est pas suffisante pour répondre à la demande dans la période de cumul de lot, donc une tâche de modification de quantité pour la commande approvisionnement existante est suggérée.  
 
-![Période tampon, période de cumul de lot et Modifier la quantité](media/supply_planning_5_dampener_period_lot_accum_period_change_qty.png "Période tampon, période de cumul de lot et Modifier la quantité")  
+![Période tampon, Période de cumul de lot et Modifier la quantité](media/supply_planning_5_dampener_period_lot_accum_period_change_qty.png "Période tampon, Période de cumul de lot et Modifier la quantité")  
 
 **Valeurs par défaut :** la valeur par défaut du champ **Intervalle de planification** et des trois champs de période de réapprovisionnement est vide. Pour tous les champs, sauf le champ **Période tampon**, cela signifie 0D (zéro jours). Si le champ **Période tampon** est vide, la valeur globale du champ **Période tampon par défaut** de la page **Configuration de la fabrication** sera utilisée.  
 

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, item tracking, posting, inventory
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: a016863dc7dd5667074060a21e352ce4a56444cd
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.openlocfilehash: 5fc178585579d4f4f8b253ecdb696964993e09c8
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2880170"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3184998"
 ---
 # <a name="design-details-item-tracking-posting-structure"></a>Détails de conception : structure de report de traçabilité
 Pour s'aligner sur la fonctionnalité d'évaluation du coût de l'inventaire et obtenir une solution plus simple et plus robuste, les écritures du grand livre d'articles sont utilisées comme principal opérateur des numéros traçabilité.  

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accountant, accounting, financial report
-ms.date: 01/13/2020
+ms.date: 04/01/2020
 ms.author: jswymer
-ms.openlocfilehash: 9fd5c6c242932d75addcfa5c1811bdd1aff99a94
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.openlocfilehash: 2c6600ac7fe9f6e0aa44554883209039faabbd99
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2953064"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3187518"
 ---
 # <a name="viewing-and-editing-in-excel-from-business-central"></a>Affichage et édition dans Excel depuis Business Central
 
@@ -40,20 +40,22 @@ Avec des pages qui affichent une liste d'enregistrements dans des lignes et des 
 
 - Ceci fonctionne uniquement sur Windows, pas macOS.
 
-Cela a été amélioré dans la deuxième vague de publication de 2019. Pour plus d'informations, voir [Améliorations de l'intégration Excel](/dynamics365-release-plan/2019wave2/dynamics365-business-central/enhancements-excel-integration).
+- Vous pouvez changer la compagnie que vous utilisez. Pour ce faire, sélectionnez l'icône **Options**![Options du module complémentaire Excel](media/cogwheel.png "Options du module complémentaire Excel") dans le volet Module complémentaire Excel, puis la compagnie dans le champ **Compagnie**. 
+
+    > [!IMPORTANT]
+    > Lors du changement de compagnie, assurez-vous que le champ **Environnement** n'est pas vide. Si tel est le cas, définissez-le sur l'une des options disponibles ; sinon, le module complémentaire ne fonctionnera pas correctement.  
+
+Le module complémentaire Excel a été amélioré lors de la deuxième vague de publication 2019. Pour plus d'informations, voir [Améliorations de l'intégration Excel](/dynamics365-release-plan/2019wave2/dynamics365-business-central/enhancements-excel-integration).
 
 > [!NOTE]
-> Pour [!INCLUDE[prodshort](includes/prodshort.md)] sur site, l'action **Modifier dans Excel** est disponible uniquement si le module complémentaire Excel a été configuré par votre administrateur. Pour les administrateurs, si vous souhaitez connaître la manière de configurer le module complémentaire Excel, consultez [Configuration du module complémentaire Excel pour modifier des données Business Central](/dynamics365/business-central/dev-itpro/administration/configuring-excel-addin).
-
-> [!NOTE]
-> Pour [!INCLUDE[prodshort](includes/prodshort.md)]sur site, cette fonctionnalité est uniquement disponible pour le client Web.
+> Pour [!INCLUDE[prodshort](includes/prodshort.md)] sur site, l'action **Modifier dans Excel** est disponible seulement si le module complémentaire Excel a été configuré par votre administrateur, et uniquement pour le client web. Pour les administrateurs, si vous souhaitez connaître la manière de configurer le module complémentaire Excel, consultez [Configuration du module complémentaire Excel pour modifier des données Business Central](/dynamics365/business-central/dev-itpro/administration/configuring-excel-addin). Pour [!INCLUDE[prodshort](includes/prodshort.md)] sur site.
 
 ### <a name="see-the-differences-between-the-options"></a>Voir les différences entre les options
 <br><br>  
 
 > [!Video https://go.microsoft.com/fwlink/?linkid=2086039]
 
-## <a name="see-related-training-at-microsoft-learnlearnmodulesconfigure-powerbi-excel-dynamics-365-business-centralindex"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/configure-powerbi-excel-dynamics-365-business-central/index)
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/configure-powerbi-excel-dynamics-365-business-central/index)
 
 ## <a name="see-also"></a>Voir aussi
 [Utilisation de Business Central](ui-work-product.md)  

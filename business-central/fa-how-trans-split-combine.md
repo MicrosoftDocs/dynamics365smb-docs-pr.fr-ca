@@ -9,14 +9,14 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: e3d77e5f9a018325855594da62fc4a45f711e30b
-ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
+ms.openlocfilehash: 2ae58d97e4207d7125be5e3f0936fce20cf39006
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2554240"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3184398"
 ---
 # <a name="transfer-split-or-combine-fixed-assets"></a>Transférer, fractionner ou regrouper les immobilisations
 Vous pouvez utiliser le journal reclassement immobilisation pour transférer, fractionner et regrouper des immobilisations. Vous visualisez ou imprimez les résultats d'un reclassement immobilisation avec l'état **Immo. - Valeur comptable 02**.
@@ -31,7 +31,7 @@ Vous pouvez transférer une immobilisation vers un autre département lorsque, p
 5. Sélectionnez l'action **Reclasser**.
 
     Deux lignes sont maintenant créées dans le journal GL immobilisation à l'aide du modèle et du lot que vous avez indiqués sur la page **Configuration du journal d'immobilisation** pour le registre amortissement spécifié. Pour en savoir plus, voir [Configurer l'amortissement d'immobilisation](fa-how-setup-depreciation.md).
-6. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux GL d'immobilisations**, puis sélectionnez le lien associé.    
+6. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux GL immobilisation**, puis sélectionnez le lien associé.    
 7. Sur la page **Journal GL immo.**, sélectionnez l'action **Reporter** pour reporter le reclassement que vous avez effectué aux étapes 4 et 5.
 
 Si vous avez reporté un coût d'acquisition pour une immobilisation, vous pouvez utiliser le journal reclassement immobilisation pour répartir ce coût sur plusieurs immobilisations.  
@@ -49,7 +49,7 @@ Vous pouvez fractionner une immobilisation en plusieurs immobilisations, par exe
 8. Sélectionnez l'action **Reclasser**.
 
     Deux lignes sont maintenant créées dans le journal GL immobilisation à l'aide du modèle et du lot que vous avez indiqués sur la page **Configuration du journal d'immobilisation** pour le registre amortissement spécifié. Pour en savoir plus, voir [Configurer l'amortissement d'immobilisation](fa-how-setup-depreciation.md).    
-9. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux GL d'immobilisations**, puis sélectionnez le lien associé.
+9. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux GL immobilisation**, puis sélectionnez le lien associé.
 10. Sur la page **Journal GL immo.**, sélectionnez l'action **Reporter** pour reporter le reclassement que vous avez effectué aux étapes 4 à 8.
 
 ## <a name="to-combine-two-fixed-assets-into-one"></a>Pour regrouper deux immobilisations en une
@@ -62,11 +62,11 @@ Vous pouvez regrouper plusieurs immobilisations en une, par exemple lorsque vous
 5. Sélectionnez l'action **Reclasser**.
 
     Deux lignes sont maintenant créées dans le journal GL immobilisation à l'aide du modèle et du lot que vous avez indiqués sur la page **Configuration du journal d'immobilisation** pour le registre amortissement spécifié. Pour en savoir plus, voir [Configurer l'amortissement d'immobilisation](fa-how-setup-depreciation.md).   
-6. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux GL d'immobilisations**, puis sélectionnez le lien associé.
+6. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux GL immobilisation**, puis sélectionnez le lien associé.
 7. Sur la page **Journal GL immo.**, sélectionnez l'action **Reporter** pour reporter le reclassement que vous avez effectué aux étapes 2 à 5.
 
 ## <a name="to-view-changed-depreciation-book-values-due-to-fixed-asset-reclassification"></a>Pour afficher les valeurs du registre amortissement modifiées en raison d'un reclassement immobilisation
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Immo. - Valeur comptable 02**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Valeur comptable immo. 02**, puis sélectionnez le lien associé.
 2. Renseignez les champs selon vos besoins.
 3. Cliquez sur le bouton **Imprimer** ou **Aperçu**.  
 

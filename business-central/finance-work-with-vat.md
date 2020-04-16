@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: VAT, sales, purchases,
-ms.date: 01/13/2020
+ms.date: 04/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: cea6e77533d159884abf38a1e1e70aaebe21ea9c
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.openlocfilehash: b870e3370d6af99320593653f49f69936b179c22
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2953645"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3182646"
 ---
 # <a name="work-with-vat-on-sales-and-purchases"></a>Utiliser la TVA sur les ventes et les achats
 Si votre pays ou région vous demande de calculer la TVA sur les transactions de vente et d'achat afin de pouvoir déclarer les montants à une administration fiscale, vous pouvez configurer [!INCLUDE[d365fin](includes/d365fin_md.md)] pour calculer automatiquement la TVA sur les documents vente et achat. Pour plus d'informations, voir [Configuration des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md).
@@ -177,7 +177,7 @@ Pour afficher un groupe de certificats, vous commencez à partir de la page **Ce
     > * Pour créer manuellement un certificat d'approvisionnement.  
     > * Pour imprimer un certificat d'approvisionnement.
 
-## <a name="see-related-training-at-microsoft-learnlearnpathsprocess-vat-dynamics-365-business-central"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/process-vat-dynamics-365-business-central/)
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/process-vat-dynamics-365-business-central/)
 
 ## <a name="see-also"></a>Voir aussi  
 [Configuration des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md)   

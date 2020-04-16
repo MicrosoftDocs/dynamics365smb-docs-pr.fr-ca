@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: trade, sell
-ms.date: 01/29/2020
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: e6a616bcfc78f0d46ea7e57639a9f27ddfa3d656
-ms.sourcegitcommit: 1c286468697d403b9e925186c2c05e724d612b88
+ms.openlocfilehash: 184c3f1d20790efe984f890c1a88c03698d66ba6
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "2999889"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3194821"
 ---
 # <a name="sales"></a>Vente
 Vous créez une facture vente ou un document de vente pour enregistrer votre entente avec un client pour vendre certains produits selon certaines méthodes de livraison et de paiement.
@@ -57,7 +57,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Enregistrez vos devis pour les ventes à venir, précisés par article et par période, pour qu'ils fonctionnent principalement comme entrée de la planification de production.|[Créer une prévision](production-how-to-create-a-forecast.md)|
 |Résolvez la confusion lorsque deux enregistrements ou plus existent pour le même client.|[Fusionner l'enregistrement des doublons](sales-how-merge-duplicate-records.md)|
 
-## <a name="see-related-training-at-microsoft-learnlearnpathssell-items-services-dynamics-365-business-central"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/sell-items-services-dynamics-365-business-central/)
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/sell-items-services-dynamics-365-business-central/)
 
 ## <a name="see-also"></a>Voir aussi
 [Définition des ventes](sales-setup-sales.md)  

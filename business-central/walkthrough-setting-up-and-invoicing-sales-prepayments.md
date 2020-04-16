@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: d9fdc5deab54647f5a4387b62862fd45bc36dd39
-ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
+ms.openlocfilehash: 95e361d2c7e6901e4650a02b4e30df86bf6b3e45
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2554630"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3193405"
 ---
 # <a name="walkthrough-setting-up-and-invoicing-sales-prepayments"></a>Procédure pas à pas : configuration et facturation de paiements anticipés vente
 
@@ -67,7 +67,7 @@ Les paiements anticipés sont des paiements qui sont facturés et reportés dans
 Les procédures suivantes décrivent le mode d'exécution des tâches de Phyllis :  
 
 #### <a name="to-set-up-number-series-for-prepayments"></a>Pour configurer des séries de numéros pour les paiements anticipés  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration ventes et à recevoir**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.  
 2.  Sur la page **Configuration ventes & à recevoir**, affichez le raccourci **Numérotation**.  
 3.  Vérifiez que la série de numéros des factures paiement anticipé reportées dans le champ **N° factures pour paiement anticipé reporté** est identique à celle des factures vente reportées (**N° facture reportée**) et que la série de numéros des notes de crédit pour paiement anticipé reporté (**N° notes de crédit pour paiement anticipé reporté**) est identique à celle des notes de crédit reportées (**N° note de crédit reportée**).  
 
@@ -81,11 +81,11 @@ Par défaut, Phyllis requiert que le client 20000 soit facturé avec un acompte 
 Phyllis requiert que tous les clients soient facturés avec un acompte de 20 % pour l'article 1100. Le client 20000 a un mauvais historique de paiements. Par conséquent, elle demande un paiement anticipé de 40 % au client 20000 pour l'article 1100. La procédure suivante présente le mode de configuration des pourcentages de paiement anticipé par défaut.  
 
 #### <a name="to-assign-default-prepayment-percentages-to-customers-and-items"></a>Pour affecter des pourcentages de paiement anticipé par défaut aux clients et aux articles  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clients**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients**, puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche pour le client 20000 (Selangorian).
 3.  Dans le champ **% acompte**, entrez **30**.  
 4.  Cliquez sur le bouton **OK** pour fermer la fiche client.  
-5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Articles**, puis sélectionnez le lien associé.  
+5.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.  
 6.  Ouvrez la fiche pour le client 1100.
 7.  Choisissez l'action **Pourcentages paiement anticipé**.  
 8.  Renseignez deux lignes de la page **Pourcentages paiement anticipé vente**, comme suit.  
@@ -101,7 +101,7 @@ Phyllis requiert que tous les clients soient facturés avec un acompte de 20 % 
 9. Fermez toutes les pages.  
 
 #### <a name="to-specify-an-account-for-sales-prepayments-in-general-posting-setup"></a>Pour spécifier un compte pour les paiements anticipés vente dans la configuration de report générale  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration du report général**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du report général**, puis sélectionnez le lien associé.  
 2.  Sélectionnez la ligne où le champ **Groupe report marché** est défini sur **EXPORTATION**, et où le champ **Groupe report produit** est défini sur **DÉTAIL**, puis sélectionnez l'action **Modifier**.  
 3.  Sur la page **Fiche configuration report général**, dans le champ **Compte paiements anticipés vente**, spécifiez le compte approprié.  
 4.  Cliquez sur le bouton **OK**.  
@@ -114,7 +114,7 @@ Le client demande à pouvoir payer 35 %, ce que Susan peut accepter. Elle modif
 Susan crée la facture paiement anticipé et l'envoie au client.  
 
 #### <a name="to-create-a-sales-order-with-a-prepayment"></a>Pour créer un document de vente avec paiement anticipé  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Dans le champ **N° donneur d'ordre** , sélectionnez **20000**.  
 5.  Acceptez l'avertissement de solde échu qui s'affiche.  
@@ -205,7 +205,7 @@ Arnie a été informé que les articles de la commande ont été livrés et que 
 
 Arnie peut afficher l'historique pour vérifier que la facture vente a été créée comme prévue.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures vente reportées**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures vente reportées**, puis sélectionnez le lien associé.  
 
 ## <a name="next-steps"></a>Étapes suivantes  
 Cette procédure pas-à-pas vous a présenté les étapes de configuration de [!INCLUDE[d365fin](includes/d365fin_md.md)] pour la gestion des acomptes. Vous avez configuré des pourcentages de paiement anticipé par défaut pour des clients et des articles et vous avez également utilisé différentes méthodes pour calculer les paiements anticipés d'une commande. Vous avez essayé d'affecter un montant de paiement anticipé total à la commande et vous avez enregistré le montant paiement anticipé calculé en tant que pourcentage de l'ensemble de la commande.  
