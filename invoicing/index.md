@@ -1,44 +1,44 @@
 ---
 title: Se familiariser avec Microsoft Invoicing | Invoicing
-description: Découvrez les fonctionnalités et les scénarios de travail dans Invoicing, une solution de gestion d'entreprise pour les petites entreprises.
+description: Microsoft Invoicing n'est plus disponible.
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.author: edupont
-ms.openlocfilehash: 71676b3c95d3b44417ddb117a8580edab5a14c1f
-ms.sourcegitcommit: a64e1abcc3c1974c87fe3e33fa6983ea7fbbb3ff
+ms.openlocfilehash: 0690308439713de6bab8c8c018c7e50d641cebe8
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778147"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3195797"
 ---
-# <a name="welcome-to-included365inv_longincludesd365inv_longmd"></a><span data-ttu-id="1a146-103">Bienvenue dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]</span><span class="sxs-lookup"><span data-stu-id="1a146-103">Welcome to [!INCLUDE[d365inv_long](includes/d365inv_long.md)]</span></span>
+# <a name="welcome-to-d365inv_long"></a><span data-ttu-id="be5d4-103">Bienvenue dans [!INCLUDE[d365inv_long](includes/d365inv_long.md)]</span><span class="sxs-lookup"><span data-stu-id="be5d4-103">Welcome to [!INCLUDE[d365inv_long](includes/d365inv_long.md)]</span></span>
 > [!Note]
 > [!INCLUDE[d365inv_discont](includes/d365inv_discont.md)]
 
-[!INCLUDE[d365inv](includes/d365inv.md)] <span data-ttu-id="1a146-104">est une application en ligne et mobile conviviale qui vous aide à envoyer des factures, à gérer vos dépenses et à surveiller votre trésorerie.</span><span class="sxs-lookup"><span data-stu-id="1a146-104">is an easy to use online and mobile app that can help send invoices, manage your expenses, and monitor your cash flow.</span></span> <span data-ttu-id="1a146-105">[!INCLUDE[d365inv](includes/d365inv.md)] vous permet d'être payé plus rapidement en créant, en modifiant et en envoyant des factures, mais aussi en acceptant des paiements de façon transparente.</span><span class="sxs-lookup"><span data-stu-id="1a146-105">With [!INCLUDE[d365inv](includes/d365inv.md)], you can get paid faster by seamlessly creating, editing, sending invoices, and accepting payments.</span></span> <span data-ttu-id="1a146-106">Il est facile d'ajouter de nouveaux clients, de marquer des factures comme payées lorsque vous recevez le paiement et d'afficher les ventes mensuelles et annuelles.</span><span class="sxs-lookup"><span data-stu-id="1a146-106">It's easy to add new customers, mark invoices as paid when you receive payment, and view monthly and yearly sales.</span></span>
+<!--[!INCLUDE[d365inv](includes/d365inv.md)] is an easy to use online and mobile app that can help send invoices, manage your expenses, and monitor your cash flow. With [!INCLUDE[d365inv](includes/d365inv.md)], you can get paid faster by seamlessly creating, editing, sending invoices, and accepting payments. It's easy to add new customers, mark invoices as paid when you receive payment, and view monthly and yearly sales.
 
-## <a name="who-can-access-included365invincludesd365invmd"></a><span data-ttu-id="1a146-107">Qui peut accéder à [!INCLUDE[d365inv](includes/d365inv.md)] ?</span><span class="sxs-lookup"><span data-stu-id="1a146-107">Who can access [!INCLUDE[d365inv](includes/d365inv.md)]?</span></span>
-<span data-ttu-id="1a146-108">Pour accéder à [!INCLUDE[d365inv](includes/d365inv.md)], vous devez avoir un [abonnement Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium).</span><span class="sxs-lookup"><span data-stu-id="1a146-108">To get access to [!INCLUDE[d365inv](includes/d365inv.md)], you must have an [Office 365 Business Premium subscription](https://products.office.com/en-us/business/office-365-business-premium).</span></span> <span data-ttu-id="1a146-109">Vous pouvez accéder à [!INCLUDE[d365inv](includes/d365inv.md)] à partir du lanceur d'applications Office 365.</span><span class="sxs-lookup"><span data-stu-id="1a146-109">You can access [!INCLUDE[d365inv](includes/d365inv.md)] from the Office 365 app launcher.</span></span> [!INCLUDE[d365inv](includes/d365inv.md)] <span data-ttu-id="1a146-110">est actuellement disponible pour les clients au Canada, aux États-Unis et au Royaume-Uni.</span><span class="sxs-lookup"><span data-stu-id="1a146-110">is currently available to customers in Canada, the United States, and the United Kingdom.</span></span>
+## Who can access [!INCLUDE[d365inv](includes/d365inv.md)]?
+To get access to [!INCLUDE[d365inv](includes/d365inv.md)], you must have an [Office 365 Business Premium subscription](https://products.office.com/en-us/business/office-365-business-premium). You can access [!INCLUDE[d365inv](includes/d365inv.md)] from the Office 365 app launcher. [!INCLUDE[d365inv](includes/d365inv.md)] is currently available to customers in Canada, the United States, and the United Kingdom.
 
-## <a name="get-to-the-included365invincludesd365invmd-dashboard"></a><span data-ttu-id="1a146-111">Accéder au tableau de bord [!INCLUDE[d365inv](includes/d365inv.md)]</span><span class="sxs-lookup"><span data-stu-id="1a146-111">Get to the [!INCLUDE[d365inv](includes/d365inv.md)] dashboard</span></span>
-<span data-ttu-id="1a146-112">Pour obtenir une vue d'ensemble de votre entreprise, utilisez [!INCLUDE[d365inv](includes/d365inv.md)] comme tableau de bord.</span><span class="sxs-lookup"><span data-stu-id="1a146-112">To get an overview of your business, use [!INCLUDE[d365inv](includes/d365inv.md)] as your dashboard.</span></span> <span data-ttu-id="1a146-113">Connectez-vous simplement à Office 365, choisissez l'icône **Invoicing** (ou recherchez-la) dans le lanceur d'applications.</span><span class="sxs-lookup"><span data-stu-id="1a146-113">Just sign in to Office 365, choose the **Invoicing** icon (or search for it) in the app launcher.</span></span> <span data-ttu-id="1a146-114">Sinon, ajoutez un signet à cette page et connectez-vous avec votre compte Office 365 : [https://businesscentral.dynamics.com/invoicing?redirectedfromsignup=1](https://businesscentral.dynamics.com/invoicing?redirectedfromsignup=1)</span><span class="sxs-lookup"><span data-stu-id="1a146-114">Alternatively, bookmark this page and log in with your Office 365 account: [https://businesscentral.dynamics.com/invoicing?redirectedfromsignup=1](https://businesscentral.dynamics.com/invoicing?redirectedfromsignup=1)</span></span>  
+## Get to the [!INCLUDE[d365inv](includes/d365inv.md)] dashboard
+To get an overview of your business, use [!INCLUDE[d365inv](includes/d365inv.md)] as your dashboard. Just sign in to Office 365, choose the **Invoicing** icon (or search for it) in the app launcher. Alternatively, bookmark this page and log in with your Office 365 account: [https://businesscentral.dynamics.com/invoicing?redirectedfromsignup=1](https://businesscentral.dynamics.com/invoicing?redirectedfromsignup=1)  
 
-<span data-ttu-id="1a146-115">La page d'accueil de [!INCLUDE[d365inv](includes/d365inv.md)] affiche les principaux points d'intérêt sur votre entreprise, comme le montant impayé pour les factures qui n'ont pas encore été payées, et le montant en souffrance pour les factures qui devraient maintenant être payées.</span><span class="sxs-lookup"><span data-stu-id="1a146-115">The [!INCLUDE[d365inv](includes/d365inv.md)] home page shows key points of interest about your business, such as the outstanding amount for invoices that have not yet been paid, and the overdue amount for invoices that should have been paid by now.</span></span>  
+The [!INCLUDE[d365inv](includes/d365inv.md)] home page shows key points of interest about your business, such as the outstanding amount for invoices that have not yet been paid, and the overdue amount for invoices that should have been paid by now.  
 
-<span data-ttu-id="1a146-116">La page d'accueil vous permet également d'accéder facilement aux principales tâches, comme la création de factures ou d'estimations, l'ajout de clients ou de nouveaux produits à la vente.</span><span class="sxs-lookup"><span data-stu-id="1a146-116">The home page also gives you easy access to key tasks, such as creating new invoices or estimates, adding customers or new products to sell.</span></span>  
+The home page also gives you easy access to key tasks, such as creating new invoices or estimates, adding customers or new products to sell.  
 
-## <a name="get-included365invincludesd365invmd-on-your-mobile-device"></a><span data-ttu-id="1a146-117">Installer [!INCLUDE[d365inv](includes/d365inv.md)] sur votre appareil mobile</span><span class="sxs-lookup"><span data-stu-id="1a146-117">Get [!INCLUDE[d365inv](includes/d365inv.md)] on your mobile device</span></span>
-<span data-ttu-id="1a146-118">Accédez à vos données [!INCLUDE[d365inv](includes/d365inv.md)] à partir de votre périphérique mobile.</span><span class="sxs-lookup"><span data-stu-id="1a146-118">Access your [!INCLUDE[d365inv](includes/d365inv.md)] data from your mobile device.</span></span> <span data-ttu-id="1a146-119">Ensuite, commencez à capturer des factures à envoyer à vos clients directement sur votre téléphone.</span><span class="sxs-lookup"><span data-stu-id="1a146-119">Then start capturing invoices to send to your customers right there on your phone.</span></span>
+## Get [!INCLUDE[d365inv](includes/d365inv.md)] on your mobile device
+Access your [!INCLUDE[d365inv](includes/d365inv.md)] data from your mobile device. Then start capturing invoices to send to your customers right there on your phone.
 
-<span data-ttu-id="1a146-120">Installez l'application [!INCLUDE[d365inv](includes/d365inv.md)] sur votre appareil mobile en la téléchargeant à partir d'App Store ou de Google Play.</span><span class="sxs-lookup"><span data-stu-id="1a146-120">Get the [!INCLUDE[d365inv](includes/d365inv.md)] app on your mobile device by downloading the app from the App Store, or Google Play.</span></span>  
-<span data-ttu-id="1a146-121">[![App Store](./media/install-mobile-app/appstore.png)](https://go.microsoft.com/fwlink/?linkid=856735) [![Google Play](./media/install-mobile-app/googleplay.png)](https://go.microsoft.com/fwlink/?linkid=856736)</span><span class="sxs-lookup"><span data-stu-id="1a146-121">[![App Store](./media/install-mobile-app/appstore.png)](https://go.microsoft.com/fwlink/?linkid=856735) [![Google Play](./media/install-mobile-app/googleplay.png)](https://go.microsoft.com/fwlink/?linkid=856736)</span></span>  
+Get the [!INCLUDE[d365inv](includes/d365inv.md)] app on your mobile device by downloading the app from the App Store, or Google Play.  
+[![App Store](./media/install-mobile-app/appstore.png)](https://go.microsoft.com/fwlink/?linkid=856735) [![Google Play](./media/install-mobile-app/googleplay.png)](https://go.microsoft.com/fwlink/?linkid=856736)  
 
-## <a name="see-also"></a><span data-ttu-id="1a146-122">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1a146-122">See Also</span></span>
-[<span data-ttu-id="1a146-123">Configurer les informations sur votre entreprise</span><span class="sxs-lookup"><span data-stu-id="1a146-123">Set up your business information</span></span>](set-up-business-profile.md)  
-[<span data-ttu-id="1a146-124">Envoyer une facture à un nouveau client</span><span class="sxs-lookup"><span data-stu-id="1a146-124">Send an invoice to a new customer</span></span>](send-invoice.md)  
-[<span data-ttu-id="1a146-125">Dépannage</span><span class="sxs-lookup"><span data-stu-id="1a146-125">Troubleshooting</span></span>](about-troubleshooting.md)  
+## See Also
+[Set up your business information](set-up-business-profile.md)  
+[Send an invoice to a new customer](send-invoice.md)  
+[Troubleshooting](about-troubleshooting.md)  -->
