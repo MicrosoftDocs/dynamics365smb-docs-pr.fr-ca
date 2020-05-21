@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 05/05/2020
 ms.author: sgroespe
-ms.openlocfilehash: 279ca56885eb4bab95322387bc6b9f857139c370
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: f2389dad61a943520cf7e09a5d8e0118b61db5c8
+ms.sourcegitcommit: 57e31a8b92feeaf8c6c63eba147f36b38eee7679
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3191317"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3339980"
 ---
 # <a name="planning"></a>Planification
 Les opérations de production nécessaires à la transformation d'entrées en produits finis doivent être planifiées de manière quotidienne ou hebdomadaire en fonction du volume et de la nature des produits. [!INCLUDE[d365fin](includes/d365fin_md.md)] fournit des fonctionnalités permettant de répondre à la demande réelle et anticipée des ventes, de l'assemblage et de la production, et inclut des fonctionnalités pour une planification de la distribution basée sur les unités de stock et les transferts d'emplacement.
@@ -43,14 +43,15 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Recalculez les calendriers d'atelier ou d'unité de production en raison de changements de planification.|[Pour calculer un calendrier d'atelier](production-how-to-create-work-center-calendars.md#to-calculate-a-work-center-calendar)|
 |Suivez la demande de commande (quantité suivie), les prévisions, les commandes permanentes ventes ou les paramètres de planification (quantité non suivie) qui ont donné lieu à la ligne planification en question.|[Suivre les relations entre l'offre et la demande](production-how-track-demand-supply.md)|
 |Afficher le stock disponible prévu sous différents types d'affichage et voir quels besoins bruts, réceptions de commandes planifiées et autres événements l'influencent dans le temps.|[Voir la disponibilité des articles](inventory-how-availability-overview.md)|  
-|Effectuez des activités de planification sélectionnées, comme la modification ou l'ajout de lignes feuille planification, dans une vue graphique du programme d'approvisionnement.|[Modifier les propositions de planification dans une vue graphique](production-how-to-modify-planning-suggestions-in-a-graphical-view.md)|
+<!--|Effectuez des activités de planification sélectionnées, comme la modification ou l'ajout de lignes feuille planification, dans une vue graphique du programme d'approvisionnement.|[Modifier les propositions de planification dans une vue graphique](production-how-to-modify-planning-suggestions-in-a-graphical-view.md)|-->
 
 ## <a name="see-also"></a>Voir aussi
+
 [Paramétrage de la production](production-configure-production-processes.md)  
-[Production](production-manage-manufacturing.md)    
+[Production](production-manage-manufacturing.md)  
 [Stock](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
+[Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)  
 [Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 

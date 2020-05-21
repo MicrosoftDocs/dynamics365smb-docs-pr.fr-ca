@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: CDS, Common Data Service, integration, sync
 ms.date: 01/17/2020
 ms.author: bholtorf
-ms.openlocfilehash: ccd371711a53c598279fcc981c5581be5ee9bdaf
-ms.sourcegitcommit: d67328e1992c9a754b14c7267ab11312c80c38dd
+ms.openlocfilehash: 795656cd5b4ad8d40c48a2edf327cffb56ad6906
+ms.sourcegitcommit: 7d54d8abe52e0546378cf760f5082f46e8441b90
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3196925"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3324064"
 ---
 # <a name="data-ownership-models"></a>Modèles de propriété de données
 [!INCLUDE[d365fin](includes/cds_long_md.md)] nécessite que vous indiquiez un propriétaire pour les données que vous stockez. Pour en savoir plus, consultez [Propriété d'entité](https://docs.microsoft.com/powerapps/maker/common-data-service/types-of-entities#entity-ownership) dans la documentation Power Apps. Lorsque vous configurez l'intégration entre [!INCLUDE[d365fin](includes/cds_long_md.md)] et [!INCLUDE[d365fin](includes/d365fin_md.md)], vous devez choisir l'un des deux modèles de propriété pour les enregistrements synchronisés :
@@ -34,6 +34,9 @@ Comme les unités fonctionnelles n'ont aucune implication juridique ou commercia
 * Nous créons une unité fonctionnelle par défaut qui porte le même nom que la compagnie. Par exemple, Cronus International Ltd. (93555b1a-af3e-ea11-bb35-000d3a492db1).
 * Nous créons une équipe propriétaire distincte portant le même nom que la compagnie et l'associons à l'unité fonctionnelle. Le nom de l'équipe est précédé de « BCI - ». Par exemple, BCI - Cronus International Ltd. (93555b1a-af3e-ea11-bb35-000d3a492db1).
 * Les enregistrements créés et synchronisés avec [!INCLUDE[d365fin](includes/cds_long_md.md)] sont affectés à l'équipe « Propriétaire BCI » associée à l'unité fonctionnelle.
+
+> [!NOTE]
+> Si vous renommez une compagnie en [!INCLUDE[d365fin](includes/d365fin_md.md)], les noms de la compagnie, de l'activité commerciale et de l'équipe que nous créons automatiquement dans [!INCLUDE[d365fin](includes/cds_long_md.md)] ne sont pas mis à jour. Étant donné que seul le code compagnie est utilisé pour l'intégration, cela n'affecte pas la synchronisation. Si vous souhaitez que les noms correspondent, vous devez mettre à jour la compagnie, l'unité fonctionnelle et l'équipe dans [!INCLUDE[d365fin](includes/cds_long_md.md)].
 
 L'image suivante montre un exemple de cette configuration de données dans [!INCLUDE[d365fin](includes/cds_long_md.md)].
 
@@ -56,11 +59,17 @@ La synchronisation détermine l'équipe devant posséder les enregistrements. Ce
 > [!NOTE]
 > Les enregistrements passent en lecture seule après l'ajout et la sauvegarde d'une compagnie. Veillez donc à choisir la compagnie adéquate.
 
-### <a name="choosing-a-different-business-unit"></a>Choix d'une autre unité fonctionnelle
-Vous pouvez modifier l'unité fonctionnelle sélectionnée. Si vous choisissez un autre centre, par exemple un que vous avez créé précédemment dans CDS, il conserve son nom initial. Autrement dit, elle n'est pas suivi du code compagnie. Nous allons créer une équipe qui utilise la convention de nommage.
+## <a name="choosing-a-different-business-unit"></a>Choix d'une autre unité fonctionnelle
+Vous pouvez modifier la sélection de l'unité fonctionnelle si vous utilisez le modèle de propriété Équipes. Si vous utilisez le modèle de propriété Personne, l'unité fonctionnelle par défaut est toujours sélectionnée. 
+
+Si vous choisissez une autre unité fonctionnelle, par exemple une unité que vous avez créée précédemment dans [!INCLUDE[d365fin](includes/cds_long_md.md)], elle conserve son nom initial. Autrement dit, elle n'est pas suivi du code compagnie. Nous allons créer une équipe qui utilise la convention de nommage.
+
+Lorsque vous modifiez une unité fonctionnelle, vous ne pouvez choisir que les unités fonctionnelles situées un niveau en dessous de l'unité fonctionnelle racine.
 
 ## <a name="person-ownership"></a>Propriété Personne
-Si vous choisissez le modèle de propriété Personne, vous devez indiquer chaque représentant qui possédera de nouveaux enregistrements. L'unité fonctionnelle et l'équipe sont créées comme décrit dans la section précédente.  
+Si vous choisissez le modèle de propriété Personne, vous devez indiquer chaque représentant qui possédera de nouveaux enregistrements. L'unité fonctionnelle et l'équipe sont créées comme décrit dans la section [Propriété Équipe](admin-cds-company-concept.md#team-ownership).
+
+L'unité fonctionnelle par défaut est utilisée lorsque le modèle de propriété Personne est choisi et que vous ne pouvez pas choisir une autre unité fonctionnelle. L'équipe associée à l'unité fonctionnelle par défaut détiendra des enregistrements pour des entités communes, telles que l'entité Produit, qui ne sont pas liées à des représentants spécifiques.
 
 ## <a name="see-also"></a>Voir aussi
 [À propos de [!INCLUDE[d365fin](includes/cds_long_md.md)]](admin-common-data-service.md)

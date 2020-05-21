@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 04/22/2020
 ms.author: sgroespe
-ms.openlocfilehash: d559eb54b727a60c2135a10ec23fc31b33241832
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: a317d80b9aa3a82da939d39f515fb4e0d37e887a
+ms.sourcegitcommit: 7d54d8abe52e0546378cf760f5082f46e8441b90
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3190645"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3324352"
 ---
 # <a name="setting-up-manufacturing"></a>Paramétrage de la production
 Pour convertir des matières en articles finis produits, vous devez configurer des ressources de production, telles que les nomenclatures, les itinéraires, les opérateurs machines et les machines, dans le système.
@@ -24,11 +24,14 @@ Les opérateurs et les machines sont représentés dans le système comme des un
 
 Une fois que vous avez paramétré la production, vous pouvez planifier et exécuter des ordres de fabrication. Pour plus d'informations, voir [Planification](production-planning.md) et [Production](production-manage-manufacturing.md).  
 
+
+
  Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.   
 
 |**Pour**|**Voir**|  
 |------------|-------------|  
-|Configurer les fonctionnalités de fabrication, telles que la définition des heures de travail atelier et la sélection des principes de planification.|Page **Configuration de la fabrication**.|  
+|Configurer les fonctionnalités de fabrication, telles que la définition des heures de travail atelier et la sélection des paramètres de planification.|Page **Configuration de la fabrication**.|
+|Dans l'onglet **Planification** de la page **Configuration de la fabrication**, définissez les paramètres de planification globaux qui remplacent les paramètres définis sur les fiches article individuelles.|[Détails de conception : paramètres de planification](design-details-planning-parameters.md)|
 |Définir une semaine de travail standard dans le département Production en termes d'heures de début et de fin de chaque journée de travail et des équipes associées.|[Créer des calendriers usine](production-how-to-create-work-center-calendars.md)|  
 |Organisez les exigences et les valeurs fixes des ressources de production en tant qu'ateliers ou unités de production pour régir leur sortie de production.|[Configurer des ateliers et des unités de production](production-how-to-set-up-work-and-machine-centers.md)|
 |Organisez les opérations de production dans l'ordre requis et affectez-les aux ateliers ou unités de production avec les temps de travail nécessaires.|[Créer des itinéraires](production-how-to-create-routings.md)|

@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: stock
 ms.date: 04/01/2020
 ms.author: SorenGP
-ms.openlocfilehash: fc7a0c6f750958cb35b2a85ed9d548f2e8219484
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: f95544f2090185512d94e9a8ce10975304f0ec2f
+ms.sourcegitcommit: 7d54d8abe52e0546378cf760f5082f46e8441b90
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3182334"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3324256"
 ---
 # <a name="view-the-availability-of-items"></a>Voir la disponibilité des articles
 Dans le contexte d'une tâche professionnelle, vous pouvez obtenir des informations avancées sur la disponibilité et l'emplacement d'un article, par exemple en discutant avec un client à propos d'une date de livraison.
@@ -80,9 +80,9 @@ Vous pouvez afficher la disponibilité de tous vos articles dans tous vos emplac
 3. Sélectionnez la valeur dans le champ **Qté disponible** pour afficher les écritures comptables articles qui constituent la valeur.
 
 ## <a name="to-view-the-availability-of-an-item-by-its-use-in-assembly-or-production-boms"></a>Pour afficher la disponibilité d'un article en fonction de son utilisation dans les nomenclatures d'assemblage ou de production
-Si un article existe dans les nomenclatures d'assemblage ou de production, comme article parent ou composante, vous pouvez afficher le nombre d'unités nécessaires sur la page **Disponibilité article par niveau de nomenclature**. La page indique le nombre d'unités d'un parent vous pouvez réaliser en fonction de la disponibilité des éléments enfants sur les lignes sous-jacentes. Tout article qui a une nomenclature d'assemblage ou de production est affiché sur la page sous forme de ligne réductible. Vous pouvez développer cette ligne pour afficher les composantes sous-jacentes et les sous-ensembles de niveau inférieur avec leurs propres nomenclatures.
+Si un article figure dans les nomenclatures d'assemblage ou de production, comme article parent ou composante, vous pouvez afficher le nombre d'unités nécessaires sur la page **Disponibilité article par niveau de nomenclature**. La page indique le nombre d'unités d'un article parent vous pouvez réaliser en fonction de la disponibilité des éléments enfants sur les lignes sous-jacentes. Tout article qui a une nomenclature d'assemblage ou de production est affiché sur la page sous forme de ligne réductible. Vous pouvez développer cette ligne pour afficher les composantes sous-jacentes et les sous-ensembles de niveau inférieur avec leurs propres nomenclatures.
 
-Vous pouvez utiliser la page pour savoir si vous pouvez traiter un document de vente d'un article à une date spécifique, en consultant sa disponibilité actuelle et les quantités que ses composantes peuvent fournir. Vous pouvez également utiliser la page pour identifier les goulets d'étranglement dans des nomenclatures associées.
+Par exemple, vous pouvez utiliser la page pour déterminer si vous pouvez traiter un document de vente pour un article à une date spécifique, en consultant sa disponibilité actuelle et les quantités que ses composantes peuvent fournir. Vous pouvez également utiliser la page pour identifier les goulets d'étranglement dans des nomenclatures associées.
 
 Sur chaque ligne de la page pour les articles parents et les éléments enfants, les champs clés suivants indiquent les chiffres de disponibilité. Vous pouvez utiliser ces chiffres pour promettre le nombre d'unités d'un parent que vous pouvez fournir si vous lancez le processus d'assemblage lié.
 
@@ -99,8 +99,11 @@ La page **Disponibilité article par niveau de nomenclature** affiche les inform
 
 Le champ **Goulot d'étranglement** spécifie quel article dans la structure de la nomenclature vous empêche de réaliser une quantité supérieure à la quantité affichée dans le champ **Capable de fabriquer le meilleur article**. Par exemple, l'article goulot d'étranglement peut être un composant achat avec une date de réception prévue qui est trop tardive pour fabriquer des unités supplémentaires de l'élément qui le comporte à la date du champ **Requis par date**.
 
-### <a name="to-view-the-availability-of-an-item-by-its-units-of-measure"></a>Pour afficher la disponibilité d'un article par ses unités de mesure
-La page **Disponibilité de l'article par unité de mesure** affiche la disponibilité d'un article ventilée dans les différentes unité de mesures dans lesquelles il est stocké.
+## <a name="to-view-the-availability-of-an-item-by-its-units-of-measure"></a>Pour afficher la disponibilité d'un article par ses unités de mesure
+La page **Disponibilité de l'article par unité de mesure** affiche la disponibilité d'un article dans les unités de mesure dans lesquelles il est stocké.
+
+> [!NOTE]  
+> Pour conserver ces informations exactes, vous devez convertir les unités de mesure article. Par exemple, si vous achetez un article dans une unité de mesure, comme des boîtes, et que vous vendez des articles dans une autre unité de mesure, comme des pièces, vous devez utiliser un journal d'articles pour convertir les unités de mesure, ou "déballer" les articles. Vous pouvez utiliser une ligne journal élément d'ajustement négatif pour réduire l'inventaire dans l'unité de mesure achat, par exemple des boîtes, et un ajustement positif pour augmenter l'inventaire dans l'unité de mesure vente, par exemple des pièces. 
 
 ## <a name="assembly-availability-page"></a>Page Disponibilité assemblage
 La page **Disponibilité assemblage** affiche des informations de disponibilité détaillées pour l'élément d'assemblage. Elle s'ouvre :

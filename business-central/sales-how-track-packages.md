@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: rfq
 ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 4dfb4a530ebcbfd9bcede5e6280fa33360b952a6
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 41584b676db045bdf7317ced9b519f0784b41453
+ms.sourcegitcommit: 8a4e66f7fc8f9ef8bdf34595e0d3983df4749376
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3192637"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262104"
 ---
 # <a name="track-packages"></a>Suivre des colis
 De nombreux agents de livraison offrent des services sur Internet vous permettant de suivre les colis que vous avez confiés à l'agent de livraison. Si vous utilisez un ou plusieurs de ces agents de livraison, vous pouvez configurer certaines informations de base et utiliser la fonction de traçabilité automatique à partir des livraisons reportées. Pour plus d'informations, voir [Configurer des agents de livraison](sales-how-to-set-up-shipping-agents.md).  
@@ -24,8 +24,9 @@ De nombreux agents de livraison offrent des services sur Internet vous permettan
 ## <a name="to-track-a-package"></a>Pour suivre un colis
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Livraison vente reportée**, puis sélectionnez le lien associé.
 2. Ouvrez la livraison appropriée.
-3. Dans le champ **N° récépissé**, entrez le numéro de package que vous avez reçu de l'agent de livraison.
-4. Sélectionnez l'action **Suivre colis**.
+3. Choisissez l'action **Mettre à jour le document**.
+4. Dans le champ **N° récépissé**, entrez le numéro de package que vous avez reçu de l'agent de livraison. Mettez à jour l'**agent de livraison** si nécessaire et fermez la page.
+5. Sélectionnez l'action **Suivre colis**.
 
 Votre navigateur par défaut ouvre la page de suivi de l'agent de livraison.
 

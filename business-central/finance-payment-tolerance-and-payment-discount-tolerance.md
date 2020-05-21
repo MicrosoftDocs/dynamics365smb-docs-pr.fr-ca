@@ -10,15 +10,15 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: a322144f9c55d87ad615122ad321572c476de1ef
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 42f89bc4f62cdcb4b2abcd9c919006a65451330b
+ms.sourcegitcommit: 8a4e66f7fc8f9ef8bdf34595e0d3983df4749376
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3183054"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262248"
 ---
 # <a name="work-with-payment-tolerances-and-payment-discount-tolerances"></a>Utilisation des tolérances de règlement et des tolérances d'escompte de paiement
-Vous pouvez configurer une tolérance de règlement de manière à fermer une facture lorsque le paiement ne couvre pas entièrement le montant de la facture. Vous pouvez configurer une tolérance d'escompte de paiement pour accorder un escompte de paiement après expiration de la date d'escompte de paiement.  
+Vous pouvez configurer une tolérance de règlement de manière à fermer une facture lorsque le paiement ne couvre pas entièrement le montant de la facture. Par exemple, les tolérances de règlement concernent généralement de petits montants qui coûteraient plus cher à corriger qu'à simplement accepter. Vous pouvez configurer une tolérance d'escompte de paiement pour accorder un escompte de paiement après expiration de la date d'escompte de paiement.  
 
 Vous pouvez utiliser les tolérances de règlement pour qu'une tolérance de règlement maximum autorisée soit définie pour chaque montant restant dû. Si la tolérance de règlement est respectée, le montant règlement est analysé. Si le montant règlement est un moins-perçu, alors le montant en commande est totalement fermé par le moins-perçu. Une écriture détaillée est reportée dans l'écriture règlement de sorte qu'il ne subsiste aucun montant ouvert dans l'écriture facture affectée. Si le montant règlement est un trop-perçu, alors une nouvelle écriture détaillée est reportée dans l'écriture règlement de sorte qu'il ne subsiste aucun montant ouvert dans l'écriture règlement.
 
@@ -36,7 +36,10 @@ Vous pouvez afficher une alerte en fonction des situations relatives à la tolé
 - Le premier avertissement concerne la tolérance d'escompte de paiement. Vous êtes informé que vous pouvez accepter un escompte de paiement en retard. Vous pouvez ensuite décider s'il faut accepter la tolérance sur la date d'escompte.  
 - Le second avertissement concerne la tolérance de règlement. Vous êtes informé que toutes les écritures peuvent être fermées car la différence est inférieure à la tolérance de règlement maximum pour les écritures affectées. Vous pouvez ensuite décider s'il faut accepter la tolérance sur le montant du paiement.
 
-Pour plus d'informations, voir [Pour activer ou désactiver l'avertissement de tolérance de règlement](finance-payment-tolerance-and-payment-discount-tolerance.md#to-enable-or-disable-payment-tolerance-warnings).     
+> [!NOTE]
+> L'activation du message d'avertissement vous permettra de choisir comment traiter les paiements dans les limites de la tolérance. Si vous n'activez pas le message et qu'un niveau de tolérance est spécifié, les factures dont les montants se situent dans la tolérance seront automatiquement fermées et vous ne pourrez pas choisir de laisser le montant restant. 
+
+Pour plus d'informations, voir [Pour activer ou désactiver l'avertissement de tolérance de règlement](finance-payment-tolerance-and-payment-discount-tolerance.md#to-enable-or-disable-payment-tolerance-warnings). 
 
 ## <a name="to-set-up-tolerances"></a>Pour configurer les tolérances  
 Le fait de configurer des tolérances pour la date ou le montant permet de fermer une facture alors que le règlement ne couvre pas le montant indiqué sur la facture, que ce soit parce que la date d'échéance de l'escompte de paiement est dépassée ou que des marchandises ont été déduites, ou suite à une erreur anodine. Ceci est également vrai pour les remboursements et les notes de crédit.  
@@ -67,7 +70,7 @@ Pour configurer l'écart, vous devez configurer plusieurs comptes écart, spéci
 ## <a name="to-enable-or-disable-payment-tolerance-warnings"></a>Pour activer ou désactiver les alertes de tolérance de règlement
 L'avertissement de tolérance de règlement apparaît lorsque vous reportez une affectation dont le solde respecte la tolérance autorisée. Vous pouvez alors choisir comment reporter et journaliser le solde.    
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.  
-2. Sur la page **Configuration du grand livre**, sur le raccourci **Affectation**, cochez la case **Avertissement tolérance de règlement** pour activer l'avertissement. Pour désactiver l'alerte, désactivez la case à cocher.  
+2. Sur la page **Configuration du grand livre**, sur le raccourci **Application**, activez le bouton bascule **Alerte tolérance de règlement** pour activer l'alerte. Pour désactiver l'avertissement, désactivez le bouton bascule.  
 
 > [!NOTE]  
 >  L'option par défaut de la page **Alerte tolérance de règlement** est **Laisser le solde ouvert**. L'option par défaut de la page **Avertissement tolérance d'escompte de paiement** est **Ne pas accepter d'escompte de paiement en retard**.

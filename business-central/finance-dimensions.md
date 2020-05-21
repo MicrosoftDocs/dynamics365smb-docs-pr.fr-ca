@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: analysis, history, track
-ms.date: 04/01/2020
+ms.date: 04/14/2020
 ms.author: sgroespe
-ms.openlocfilehash: 61e39b15042a4c3bd21ef1297d90803496305f8f
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: d353381c9267e9039d0b4391aa7fdac1c8a3c405
+ms.sourcegitcommit: 8a4e66f7fc8f9ef8bdf34595e0d3983df4749376
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3183798"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262176"
 ---
 # <a name="working-with-dimensions"></a>Utilisation des axes analytiques
 Vous pouvez utiliser des axes analytiques pour faciliter l'exécution de l'analyse sur des commandes vente, par exemple. Les axes analytiques sont des attributs et des valeurs qui permettent de catégoriser les écritures afin de pouvoir les suivre et les analyser. Ils peuvent par exemple indiquer de quel projet ou département provient une écriture.  
@@ -106,7 +106,8 @@ Pour éviter de reporter des écritures avec des dimensions contradictoires ou i
 Les dimensions principales et les raccourcis peuvent être utilisés comme filtre n'importe où dans [!INCLUDE[d365fin](includes/d365fin_md.md)], y compris sur les rapports, les traitements en lot et les vues d'analyse. Les dimensions principales et les raccourcis de dimension sont toujours disponibles pour être insérés directement sans ouvrir tout d'abord la page **Dimensions**. Sur les lignes journal et document, vous pouvez sélectionner les dimensions principales et les raccourcis de dimension dans un champ sur la ligne. Vous pouvez définir deux dimensions principales et huit raccourcis de dimension. Sélectionnez les dimensions que vous utilisez le plus souvent.
 
 > [!Important]  
-> La modification d'une dimension principale ou d'un raccourci de dimension nécessite la mise à jour de toutes les écritures reportées à l'aide de cette dimension. Vous pouvez exécuter cette tâche avec la fonction **Modifier les dimensions principales**, mais cela peut se révéler chronophage et peut avoir un impact sur les performances. Par conséquent, sélectionnez vos dimensions principales et vos raccourcis de dimension avec soin afin que vous n'ayez pas à les changer ultérieurement.
+> La modification d'une dimension principale ou d'un raccourci de dimension nécessite la mise à jour de toutes les écritures reportées à l'aide de cette dimension. Vous pouvez exécuter cette tâche avec la fonction **Modifier les dimensions principales**, mais cela peut se révéler chronophage et peut avoir un impact sur les performances et les tables peuvent être verrouillées lors de la mise à jour. Par conséquent, sélectionnez vos dimensions principales et vos raccourcis de dimension avec soin afin que vous n'ayez pas à les changer ultérieurement. <br /><br />
+> Pour plus d'informations, voir [Pour modifier les dimensions principales](finance-dimensions.md#to-change-global-dimensions).
 
 > [!Note]
 > Lorsque vous ajoutez ou modifiez une dimension principale ou un raccourci, vous êtes automatiquement déconnecté et la nouvelle valeur est préparée pour un usage dans toute l'application.
@@ -115,8 +116,24 @@ Les dimensions principales et les raccourcis peuvent être utilisés comme filtr
 2. Sur le raccourci **Dimensions**, renseignez les champs. [!INCLUDE [tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 #### <a name="to-change-global-dimensions"></a>Pour modifier les dimensions principales
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modifier les dimensions principales**, puis sélectionnez le lien associé.
-2. Passez le curseur sur les actions et les champs sur la page pour découvrir comment modifier les dimensions principales et les raccourcis de dimension.
+Lorsque vous modifiez une dimension principale ou de raccourci, toutes les écritures reportées avec la dimension en question sont mises à jour. Étant donné que ce processus peut prendre du temps et affecter les performances, deux modes différents sont fournis pour adapter le processus à la taille de la base de données.  
+
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.
+2. Choisissez l'action **Modifier les dimensions principales**.
+3. En haut de la page, sélectionnez l'une des options suivantes pour définir dans quel mode le travail en lot est exécuté.
+
+    |Option|Description|
+    |-|-|
+    |**Séquentiel**|(Par défaut) L'ensemble du changement de dimension est effectué en une seule transaction en ramenant toutes les écritures aux dimensions qu'elles avaient avant le changement.<br /><br />Cette option est recommandée si la compagnie contient relativement peu d'écritures reportées où elle sera la plus rapide à exécuter. Le processus verrouille plusieurs tables et bloque les autres utilisateurs jusqu'à ce qu'il soit terminé. Notez que sur les grandes bases de données, le processus peut ne pas être en mesure de s'effectuer du tout dans ce mode. Dans ce cas, utilisez l'option **Parallèle**.|
+    |**Parallèle**|(Sélectionnez la case à cocher **Traitement parallèle**.) Le changement de dimension s'effectue en plusieurs sessions d'arrière-plan et l'opération est divisée en plusieurs transactions.<br /><br />Cette option est recommandée pour les grandes bases de données ou les compagnies avec de nombreuses écritures reportées où elle sera la plus rapide à exécuter. Notez qu'avec ce mode, le processus de mise à jour ne démarre pas s'il existe plusieurs sessions de base de données actives.|  
+
+4. Dans les champs **Code dimension principale 1** et/ou **Code dimension principale 2**, entrez les nouvelles dimensions. Les dimensions actuelles sont affichées en gris derrière les champs.
+5. Si vous avez sélectionné le mode **Séquentiel**, choisissez l'action **Démarrer**.
+6. Si vous avez sélectionné le mode **Parallèle**, choisissez l'action **Préparer**.
+
+    L'onglet **Écritures journal** contient des informations sur les dimensions qui seront modifiées.
+7. Déconnectez-vous de [!INCLUDE[d365fin](includes/d365fin_md.md)], puis reconnectez-vous.
+8. Choisissez l'action **Démarrer** pour démarrer le traitement parallèle des changements de dimension.
 
 ### <a name="example-of-dimension-setup"></a>Exemple de configuration de dimension
 Imaginons que votre compagnie souhaite suivre les transactions selon la structure organisationnelle et les situations géographiques. Pour ce faire, vous pouvez configurer deux dimensions sur la page **Dimensions** :
