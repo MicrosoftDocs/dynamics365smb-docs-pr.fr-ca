@@ -1,6 +1,6 @@
 ---
-title: Comment bloquer les ventes aux articles clients depuis les ventes ou les achats
-description: Dans Business Central, un article peut être signalé comme bloqué pour la vente, bloqué pour l'achat ou bloqué dans tous les cas.
+title: Comment bloquer les ventes de clients
+description: Si nécessaire, vous pouvez empêcher qu'un client soit ajouté aux documents de vente et d'autres transactions de vente.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,31 +10,31 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 832963169f4c81d65b105ca71722435554d8e262
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 7cc82ab0aaf28b355117571d0d2cc5869141693f
+ms.sourcegitcommit: 4545bb597dd9dc4c563b30af762977ee1d815497
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3193765"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410726"
 ---
 # <a name="block-customers"></a>Bloquer des clients
 Vous pouvez bloquer un client, par exemple à cause de son insolvabilité, afin qu'il ne puisse pas être ajouté à des documents vente ou afin d'empêcher que d'autres transactions soient reportées pour ce client.
 
 En plus de bloquer un client, vous pouvez définir que des transactions à recevoir pour le client soient en attente au niveau des rappels. Pour plus d'informations, voir [Collecte des soldes restants](receivables-collect-outstanding-balances.md).   
 
-Le tableau suivant décrit les différentes options de blocage.  
+Le tableau suivant décrit les options pour bloquer des clients.  
 
 |Option|Description|  
 |--------------------|------------|  
 |**Vide**|Les transactions sont autorisés pour ce client.|
 |**Livraison**|Vous ne pouvez pas créer de commandes ni de livraisons pour ce client. Les livraisons existantes qui ne sont pas encore facturées peuvent être facturées.|  
-|**Facture**|Vous ne pouvez pas créer de commandes, de livraisons ni de factures pour ce client. Les livraisons existantes qui ne sont pas encore facturées ne peuvent pas être facturées.|  
-|**Tout**|Ce client n'est autorisé à effectuer aucune transaction, pas même un paiement.|  
+|**Facture**|Vous ne pouvez pas créer de commandes, de livraisons ni de factures pour ce client. Les livraisons existantes qui ne sont pas encore facturées ne peuvent pas être facturées. Vous pouvez toujours envoyer des rappels et des notes de frais financiers au client.|  
+|**Tous**|Ce client n'est autorisé à effectuer aucune transaction, pas même un paiement.|  
 
 ## <a name="to-block-a-customer"></a>Pour bloquer un client  
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients**, puis sélectionnez le lien associé.
 2. Sélectionnez un client, puis cliquez sur l'action **Modifier**.
-3. Renseignez le champ **Bloqué** avec l'une des options décrites ci-dessus.
+3. Dans le champ **Bloqué**, choisissez ce que vous souhaitez bloquer, comme décrit dans le tableau ci-dessus.
 
 ## <a name="see-also"></a>Voir aussi  
 [Enregistrer de nouveaux clients](sales-how-register-new-customers.md)  
