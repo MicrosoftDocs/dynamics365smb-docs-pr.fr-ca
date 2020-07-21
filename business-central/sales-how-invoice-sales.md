@@ -8,21 +8,23 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: bill, sale, invoice, order
-ms.date: 04/27/2020
+ms.date: 07/03/2020
 ms.author: sgroespe
-ms.openlocfilehash: 2ff842cc12ea820c9a2fe180cd4dd2eef3ecc18f
-ms.sourcegitcommit: 7d54d8abe52e0546378cf760f5082f46e8441b90
+ms.openlocfilehash: 692eb7c5856e7c80f8ab047882539276e1829e45
+ms.sourcegitcommit: 506a433298fc3629231cfa98f64a2d1428094fde
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3324328"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "3534781"
 ---
 # <a name="invoice-sales"></a>Facturer des ventes
+
 Vous créez une facture vente ou un document de vente pour enregistrer votre entente avec un client pour vendre certains produits selon certaines méthodes de livraison et de paiement.  
 
 Dans certains scénarios, vous devez utiliser un document de vente au lieu d'une facture vente :  
 
 * Si vous devez livrer uniquement une partie d'une quantité de commande, par exemple, si la quantité totale n'est pas disponible.  
+* Si vous livrez des produits après avoir reporté les factures vente correspondantes.
 * Si vous vendez des articles que votre fournisseur fournit directement à votre client (une livraison directe). Pour plus d'informations, voir [Effectuer des livraisons directes](sales-how-drop-shipment.md).  
 
 Pour tous les autres aspects, les commandes vente et les factures vente fonctionnent de la même manière. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).

@@ -8,16 +8,17 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 06/23/2020
 ms.author: sgroespe
-ms.openlocfilehash: d19a45caabbd4eecf4a0d37cb1c7d964683f4698
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 7bb145fc93c6adadf13e41317b0ce1ee79bb32d3
+ms.sourcegitcommit: 63102669366eb26f9c32729848170bc2e5c4d6ae
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3183122"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3503477"
 ---
 # <a name="invoicing-prepayments"></a>Facturation de paiements anticipés
+
 Les paiements anticipés sont des paiements qui sont facturés et reportés dans une commande paiement anticipé vente ou achat avant la facturation finale. Vous pouvez demander un acompte avant de produire les articles commandés ou demander à ce que le paiement soit effectué avant de livrer les articles à un client. La fonctionnalité d'acomptes vous permet de facturer et de collecter les acomptes requis des clients ou de régler des acomptes aux fournisseurs. Vous pouvez ainsi vous assurer que tous les paiements sont reportés sur une facture.  
 
  Les conditions de paiement anticipé peuvent être définies pour un client ou un fournisseur pour tous les articles ou pour une sélection d'articles. Lorsque vous avez effectué la configuration requise, vous pouvez générer des factures paiement anticipé à partir des documents de vente et des bons de commande pour le montant paiement anticipé calculé. Au besoin, vous pouvez modifier les montants dans la facture. Par exemple, vous pouvez spécifier un montant total pour la commande entière. Vous pouvez également envoyer des factures paiement anticipé supplémentaires si, par exemple, des articles supplémentaires sont ajoutés à la commande. Vous pouvez augmenter les quantités ou ajouter de nouvelles lignes dans une commande après avoir émis un paiement anticipé, puis vous pouvez reporter une autre facture paiement anticipé. Si vous souhaitez supprimer une ligne pour laquelle un paiement anticipé a déjà été facturé, vous devez émettre une note de crédit paiement anticipé avant de la supprimer.  
@@ -32,7 +33,8 @@ Les paiements anticipés sont des paiements qui sont facturés et reportés dans
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/prepayment-invoices-dynamics-365-business-central/index)
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
+
 [Procédure pas à pas : Configuration et facturation de paiements anticipés](walkthrough-setting-up-and-invoicing-sales-prepayments.md)  
 [Finance](finance.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

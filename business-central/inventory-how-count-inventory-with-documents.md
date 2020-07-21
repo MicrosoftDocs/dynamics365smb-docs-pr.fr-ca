@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: adjustment, status, negative, positive, increase, decrease
 ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 944ce9e3950ea64fafada118b6f99f5d891242a5
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 8152299efea0ef07e1506d5897ff9cd27d21d21a
+ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3182214"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3529073"
 ---
 # <a name="count-inventory-using-documents"></a>Faire l'inventaire à l'aide de documents
 Vous pouvez effectuer l'inventaire d'un inventaire physique de vos articles à l'aide des documents Commande d'inventaire physique et Enregistrement d'inventaire physique. La page **Commande d'inventaire physique** est utilisée pour organiser le projet d'inventaire complet, par exemple un par emplacement. La page **Enregistrement d'inventaire physique** est utilisée pour communiquer et capturer le nombre réel d'articles. Vous pouvez créer plusieurs enregistrements pour une commande, par exemple, pour répartir les groupes d'articles vers différents employés.
@@ -40,7 +40,7 @@ Pour créer les lignes de commande d'inventaire physique, vous utilisez généra
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes d'inventaire**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
-3. Renseignez les champs requis du raccourci **Général**. [!INCLUDE [tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+3. Renseignez les champs requis du raccourci **Général**. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Choisissez l'action **Calculer les lignes**.
 5. Sélectionnez des options, le cas échéant.
 6. Définissez les filtres, par exemple, pour inclure uniquement un sous-ensemble d'articles à comptabiliser avec le premier enregistrement.

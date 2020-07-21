@@ -8,20 +8,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 06/25/2020
 ms.author: sgroespe
-ms.openlocfilehash: a3536c1e23ef5c9def211f9c2a28a719b556d1ac
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 0b7a638ce63cf56d0de156271297a8cc0dbb699d
+ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3195685"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3528295"
 ---
 # <a name="walkthrough-planning-supplies-manually"></a>Procédure pas à pas : planification manuelle des approvisionnements
 
-**Remarque** : Ce guide pas-à-pas doit être effectué sur une compagnie de démonstration avec l'option **Évaluation complète - Renseigner des exemples de données**, disponible dans l'environnement Sandbox. Pour plus d’informations, voir [Création d'un environnement Sandbox](across-how-create-sandbox-environment.md).
+[!INCLUDE[complete_sample_data](includes/complete_sample_data.md)]  
 
-Cette procédure pas à pas présente le processus de planification des commandes d'approvisionnement en vue de répondre à la nouvelle demande. Vous pouvez lancer la planification des approvisionnements à des intervalles fixes, par exemple, tous les matins ou tous les lundis, ou lorsque vous recevez une notification du département Ventes ou Production, en fonction du type de demande. Au cours de cette procédure, vous utiliserez la page **Planification commande**, un outil simplifié de planification des approvisionnements basé sur la prise de décision manuelle plutôt que la planification automatique basée sur des paramètres.  
+Cette procédure pas à pas présente le processus de planification des commandes approvisionnement en vue de répondre à la nouvelle demande. Vous pouvez lancer la planification des approvisionnements à des intervalles fixes, par exemple, tous les matins ou tous les lundis, ou lorsque vous recevez une notification du département Ventes ou Production, en fonction du type de demande. Au cours de cette procédure, vous utiliserez la page **Planification commande**, un outil simplifié de planification des approvisionnements basé sur la prise de décision manuelle plutôt que la planification automatique basée sur des paramètres.  
 
 ## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas  
  Cette procédure pas à pas présente les tâches suivantes :  

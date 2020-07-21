@@ -8,24 +8,27 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: VAT, tax, report, EC sales list, statement
-ms.date: 04/01/2020
+ms.date: 06/25/2020
 ms.author: bholtorf
-ms.openlocfilehash: 7365886f09e1e3d1b67dcbea82594f3d3599f25a
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: f12d12bf4fb6a12a0abe52101f30a16a182bd1b2
+ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3183894"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3528220"
 ---
 # <a name="report-vat-to-tax-authorities"></a>Déclarer la TVA aux autorités fiscales
-Cette rubrique décrit les rapports dans [!INCLUDE[d365fin](includes/d365fin_md.md)] que vous pouvez utiliser pour envoyer des informations sur les montants de la taxe sur la valeur ajoutée (TVA) relatifs aux ventes et achats à l'administration fiscale de votre région.
+Cette rubrique décrit les rapports dans [!INCLUDE[d365fin](includes/d365fin_md.md)] que vous pouvez utiliser pour envoyer des informations sur les montants de la taxe sur la valeur ajoutée (TVA) relatifs aux ventes et achats à l'administration fiscale de votre région. 
 
 Vous pouvez utiliser les rapports suivants :
 
 * La déclaration de liste des ventes de l'Union européenne (EU) **Liste des ventes UE** répertorie les montants de la taxe sur la valeur ajoutée (TVA) que vous avez collectés pour les ventes aux clients enregistrés dans les pays de l'Union européenne (UE).  
-* Le rapport **Retour TVA** inclut la TVA pour les ventes et les achats aux clients dans tous les pays utilisant la TVA.
+* Le rapport **Retour TVA** inclut la TVA pour les ventes et les achats aux clients et auprès des fournisseurs dans tous les pays utilisant la TVA.
 
 Si vous souhaitez afficher un historique complet des écritures TVA, chaque report impliquant la TVA crée une écriture dans la page **Écritures TVA**. Ces écritures sont utilisées pour calculer le montant du relevé de TVA, tel que paiement et remboursement, pour une période donnée. Pour afficher des écritures TVA, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Écritures TVA**, puis sélectionnez le lien associé.
+
+> [!NOTE]
+> Chaque environnement [!INCLUDE[d365fin](includes/d365fin_md.md)] est destiné à gérer les rapports réglementaires dans un seul pays. Par exemple, la version néerlandaise de [!INCLUDE[d365fin](includes/d365fin_md.md)] gère la déclaration de TVA aux Pays-Bas mais pas dans d'autres pays. De même, la version américaine de [!INCLUDE[d365fin](includes/d365fin_md.md)] gère la déclaration 1099 aux États-Unis et ne prend pas en charge la déclaration de TVA dans d'autres pays, sauf si elle est apportée par une extension fournie par notre écosystème partenaire ou une modification de code spécifique au client.
 
 ## <a name="about-the-ec-sales-list-report"></a>À propos du rapport Liste des ventes UE
 Au Royaume-Uni, toutes les compagnies qui vendent des marchandises et des services aux clients enregistrés à la TVA, y compris les clients dans d'autres pays de l'Union européenne (UE), doivent envoyer une version électronique du rapport Liste des ventes de la Communauté européenne (CE) au format XML sur le site Web du service de la fiscalité et des douanes du Royaume-Uni. Le rapport de liste des ventes de l'Union européenne ne fonctionne que pour les pays de l'UE.
@@ -59,7 +62,7 @@ Pour déclarer la TVA à une administration par voie électronique, vous devez c
 2. Renseignez les champs requis. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
     > [!NOTE]  
-    >   Il est judicieux de tester votre connexion. Pour cela, choisissez la case à cocher **Mode test**, puis préparez et envoyez votre rapport TVA comme décrit dans la section _Préparer et envoyer un rapport TVA_. En mode Test, le service vérifie si l'administration fiscale peut recevoir votre rapport, et l'état du rapport indiquera si l'envoi du test a réussi. Il est important de retenir que ce n'est pas un envoi réel. Pour réellement envoyer le rapport, vous devez désactiver la case à cocher **Mode test**, puis répéter le processus d'envoi.
+    > Il est judicieux de tester votre connexion. Pour cela, choisissez la case à cocher **Mode test**, puis préparez et envoyez votre rapport TVA comme décrit dans la section _Préparer et envoyer un rapport TVA_. En mode Test, le service vérifie si l'administration fiscale peut recevoir votre rapport, et l'état du rapport indiquera si l'envoi du test a réussi. Il est important de retenir que ce n'est pas un envoi réel. Pour réellement envoyer le rapport, vous devez désactiver la case à cocher **Mode test**, puis répéter le processus d'envoi.
 
 ## <a name="to-set-up-vat-reports-in-d365fin"></a>Pour configurer les rapports TVA dans [!INCLUDE[d365fin](includes/d365fin_md.md)]
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration déclaration TVA**, puis sélectionnez le lien associé.  
@@ -76,7 +79,7 @@ Pour déclarer la TVA à une administration par voie électronique, vous devez c
 4. Pour valider et préparer le rapport pour l'envoi, choisissez l'action **Libérer**.  
 
     > [!NOTE]  
-    >   [!INCLUDE[d365fin](includes/d365fin_md.md)] confirme que l'état est configuré correctement. Si la validation échoue, les erreurs sont affichées sous **Erreurs et avertissements**, de sorte que vous sachiez quoi corriger. Généralement, si le message concerne un paramètre manquant dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez cliquer sur le message pour ouvrir la page contenant les informations à corriger.  
+    > [!INCLUDE[d365fin](includes/d365fin_md.md)] confirme que l'état est configuré correctement. Si la validation échoue, les erreurs sont affichées sous **Erreurs et avertissements**, de sorte que vous sachiez quoi corriger. Généralement, si le message concerne un paramètre manquant dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez cliquer sur le message pour ouvrir la page contenant les informations à corriger.  
 5. Pour envoyer l'état, sélectionnez l'action **Soumettre**.  
 
 Une fois que vous envoyez la déclaration, [!INCLUDE[d365fin](includes/d365fin_md.md)] surveille le service et conserve un enregistrement de vos communications. Le champ **Statut** indique l'état de la déclaration en cours. Par exemple, lorsque l'administration traite votre déclaration, le statut de celle-ci passe à **Réussie**. Si l'administration fiscale trouve des erreurs dans la déclaration que vous avez envoyée, le statut de celle-ci est **Échec**. Vous pouvez afficher les erreurs sous **Erreurs et avertissements**, corrigez-les, puis envoyez le rapport. Pour visualiser une liste de toutes vos déclarations de liste des ventes UE, consultez la page **États de liste des ventes UE**.  

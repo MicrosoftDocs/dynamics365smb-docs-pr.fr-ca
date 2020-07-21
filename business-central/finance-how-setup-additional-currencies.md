@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: multiple currencies
 ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 9802821985550668d460aa3213c9fb64764169c0
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 34d1c9d1f61f2ab89d58d0c3f4a8c512fe6ea0f1
+ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3183558"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3528848"
 ---
 # <a name="set-up-an-additional-reporting-currency"></a>Configurer une devise de report additionnelle
 Les compagnies opérant dans un nombre croissant de pays/régions, il est de plus en plus important qu'elles puissent consulter et générer des rapports de données financières dans plusieurs devises.
@@ -103,7 +103,7 @@ Pour chaque compte du grand livre, vous devez spécifier la manière dont les mo
 5. Le traitement par lots **Ajuster devise report** s'ouvre.
 
     Ce traitement en lot convertit les montants en devise locale des écritures existantes en devise de report additionnelle. Le traitement en lot utilise un taux de change par défaut copié à partir du taux de change, qui est valide à la date de travail sur la page **Taux de change devise**. Les montants résiduels qui résultent d'une conversion de $ en devise de report additionnelle sont reportés sur les comptes de gains et pertes résiduels spécifiés sur la page **Devises**. La date de report et le numéro de document pour ces écritures sont les mêmes que pour l'écriture originale. Une fois toutes ces écritures résiduelles reportées, le traitement en lot reporte une écriture arrondissement à la date de fermeture de chaque exercice fermé dans le compte de bénéfices non répartis. Cela résulte de la nécessité de s'assurer que le solde de fermeture des comptes produit pour chaque exercice fermé est 0 tant en $ que dans la devise de report additionnelle.
-6. Renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]      
+6. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]      
 7. Pour lancer le traitement en lot, cliquez sur le bouton **OK**.  
 
 Après exécution du traitement en lot, les montants des écritures existantes suivantes sont exprimés en $ et dans la devise de report additionnelle :  

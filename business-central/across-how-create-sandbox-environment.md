@@ -8,25 +8,25 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: sandbox, demo, develop
-ms.date: 04/01/2020
+ms.date: 07/03/2020
 ms.author: solsen
-ms.openlocfilehash: 59b659ca458e6cfe7c13ef5094dbbf80a144c369
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: d85ec46d5514c91e9a6b1403b5f90a7094d9deba
+ms.sourcegitcommit: ca5bf1d934997ef8c0bc9f8ab0e5568f0ed42fa4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3188574"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "3535444"
 ---
-# <a name="creating-a-sandbox-environment-in-prodshort"></a>Créeation d'un environnement Sandbox dans [!INCLUDE [prodshort](includes/prodshort.md)]
+# <a name="creating-a-sandbox-environment-in-prodshort"></a>Créeation d'un environnement Sandbox dans [!INCLUDE[prodshort](includes/prodshort.md)]
 
-Avec [!INCLUDE [prodshort](includes/prodshort.md)], vous pouvez facilement créer un environnement sûr dans lequel vous pouvez effectuer des tests, vous entraîner ou résoudre des problèmes sans perturber les processus de travail ou les données métier de votre compagnie. Cet environnement hors production est appelé *sandbox*. Isolé de la production, un environnement Sandbox est l'emplacement où vous pouvez explorer, apprendre, démontrer, développer et tester en toute sécurité le service sans que les données et les paramètres de votre environnement de production en soient affectés.  
+Avec [!INCLUDE[prodshort](includes/prodshort.md)], vous pouvez facilement créer un environnement sûr dans lequel vous pouvez effectuer des tests, vous entraîner ou résoudre des problèmes sans perturber les processus de travail ou les données métier de votre compagnie. Cet environnement hors production est appelé *sandbox*. Isolé de la production, un environnement Sandbox est l'emplacement où vous pouvez explorer, apprendre, démontrer, développer et tester en toute sécurité le service sans que les données et les paramètres de votre environnement de production en soient affectés.  
 
-Votre administrateur peut créer des environnements sandbox dans le [centre d'administration](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments?toc=/dynamics365/business-central/toc.json), mais si vous voulez effectuer un test rapide, vous pouvez créer un environnement sandbox depuis [!INCLUDE [prodshort](includes/prodshort.md)].  
+Votre administrateur peut créer des environnements sandbox dans le [centre d'administration](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments?toc=/dynamics365/business-central/toc.json), mais si vous voulez effectuer un test rapide, vous pouvez créer un environnement sandbox depuis [!INCLUDE[prodshort](includes/prodshort.md)].  
 
 > [!NOTE]
 > Techniquement, les environnements sandbox sont très différents des environnements de production, même si votre administrateur crée un sandbox incluant des données de production. Vous ne pouvez pas utiliser un sandbox à des fins d'évaluation, et vous ne pouvez pas demander une exportation de base de données, par exemple. Si vous souhaitez créer un sandbox à des fins d'évaluation, votre administrateur peut créer un environnement de production dédié dans le centre d'administration. Pour plus d'informations, voir [Types d'environnements](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments#types-of-environments).
 
-## <a name="to-create-a-sandbox-environment-in-your-prodshort"></a>Pour créer un environnement sandbox dans votre [!INCLUDE [prodshort](includes/prodshort.md)]
+## <a name="to-create-a-sandbox-environment-in-your-prodshort"></a>Pour créer un environnement sandbox dans votre [!INCLUDE[prodshort](includes/prodshort.md)]
 
 1. Connectez-vous à votre instance de production de [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
@@ -67,22 +67,31 @@ Un administrateur peut limiter ou même bloquer l'accès de certains utilisateur
 
 L'environnement sandbox n'est pas moins utile, car il comprend quelques fonctionnalités pratiques.
 
+### <a name="to-enable-the-advanced-user-experience"></a>Pour activer l'expérience utilisateur avancée
+
+Il est possible d'activer et de tester la fonctionnalité complète de la version standard de [!INCLUDE[d365fin](includes/d365fin_md.md)] dans un abonné Sandbox en définissant le champ **Expérience** sur la page **Informations compagnie** sur *Premium*. Trouvez la page **Informations compagnie** dans le menu :::image type="content" source="media/ui-experience/settings_icon_small.png" alt-text="Icône Paramètres":::.  
+
+Après avoir activé l'expérience utilisateur *Premium*, vous avez accès à tous les profils (rôles) et tableaux de bord standard dans la version standard. Vous pouvez également créer une compagnie d'évaluation qui est entièrement configurée et qui inclut des données de démonstration et un accès aux modules avancés du produit. Vous pouvez également contacter un partenaire revendeur pour une démonstration des fonctionnalités. Pour plus d'informations, voir [Comment trouver un partenaire revendeur ?](across-faq.md#findpartner).  
+
+### <a name="to-enable-complete-sample-data"></a>Pour activer des exemples de données complètes
+
+Dans l'environnement sandbox, vous pouvez également créer une nouvelle compagnie avec l'option **Évaluation avancée - Exemples de données complètes** pour que vous puissiez suivre une formation ou parcourir des procédures qui nécessitent des exemples de données supplémentaires, telles que [Procédure pas à pas : réception et stockage dans des configurations d'entrepôt de base](walkthrough-receiving-and-putting-away-in-basic-warehousing.md).  
+
+#### <a name="to-create-a-company-with-complete-sample-data-in-a-sandbox"></a>Pour créer une compagnie avec des exemples de données complètes dans un sandbox
+
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Compagnies**, puis sélectionnez le lien associé.  
+2. Sélectionnez l'action **Nouveau**, puis sélectionnez **Créer une nouvelle compagnie**.  
+3. Sur la page **Configuration assistée pour la création d'une compagnie**, choisissez **Suivant**.  
+4. Spécifiez un nom pour la nouvelle compagnie, puis, dans le champ **Sélectionnez les données et les configurations de mise en route**, choisissez **Évaluation avancée - exemples de données complètes**.  
+5. Exécutez le reste du guide de configuration assistée.  
+
+Une fois le guide de configuration assistée terminé, vous pouvez commencer à explorer la nouvelle compagnie avec les exemples de données complètes. Pour plus d'informations, voir [Création de compagnies dans [!INCLUDE[d365fin](includes/d365fin_md.md)]](about-new-company.md).  
+
 ### <a name="designer"></a>Générateur
 
 Dans un environnement sandbox, la fonctionnalité **Générateur** est activée. Vous pouvez activer la fonctionnalité Générateur en sélectionnant l'icône de conception ![Générateur](./media/across-sandbox/sandbox-inclient-design-icon.png) sur une page, ou en choisissant l'élément de menu **Conception** dans le menu Paramètres ![Paramètres ](media/ui-experience/settings_icon_small.png).
 
 <!-- ![In-client Designer](./media/across-sandbox/sandbox-inclient-designer.png) -->
-
-### <a name="to-enable-the-advanced-user-experience"></a>Pour activer l'expérience utilisateur avancée
-Il est possible d'activer et de tester la fonctionnalité complète de la version standard de [!INCLUDE[d365fin](includes/d365fin_md.md)] dans un abonné Sandbox en définissant le champ **Expérience** sur la page **Informations compagnie**.
-
-<!-- ![Sandbox Environment Advanced](./media/across-sandbox/sandbox-advanced.png) -->
-
-<!-- ![Sandbox Production](./media/across-sandbox/sandbox-production.png) -->
-
-Après avoir activé l'expérience utilisateur *Premium*, vous avez accès à tous les profils (rôles) et tableaux de bord standard dans la version standard. Vous pouvez également créer une compagnie d'évaluation qui est entièrement configurée et qui inclut des données de démonstration et un accès aux modules avancés du produit. Vous pouvez également contacter un partenaire revendeur pour une démonstration des fonctionnalités. Pour plus d'informations, voir [Comment trouver un partenaire revendeur ?](across-faq.md#findpartner).  
-
-<!-- ![Sandbox New Company](./media/across-sandbox/sandbox-newcompany.png) -->
 
 ## <a name="see-also"></a>Voir aussi
 

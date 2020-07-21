@@ -8,16 +8,17 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 06/19/2020
 ms.author: sgroespe
-ms.openlocfilehash: 85f8de1a0e3aadbf55fb8c4292aeb1e216817a23
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 686aa7b0e6bae7fa5fbc639f03ef3ac34237d9e8
+ms.sourcegitcommit: ec3034640ed10e0fd028568ec45f21c84498d3de
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3185646"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3486431"
 ---
 # <a name="design-details-cost-adjustment"></a>Détails de conception : ajustement des coûts
+
 L'objet principal de l'ajustement des coûts est de transférer les changements depuis les sources de coût aux destinataires de coût, selon le mode d'évaluation coût d'un article, pour fournir une évaluation de l'inventaire correcte.  
 
 Un article peut faire l'objet d'une facture vente avant d'avoir été l'objet d'une facture achat, de sorte que la valeur d'inventaire enregistrée de la vente ne corresponde pas au coût d'achat réel. L'ajustement des coûts met à jour le coût des marchandises vendues (COGS) pour les écritures vente historiques afin de s'assurer qu'elles correspondent aux coûts des transactions entrantes sur lesquelles elles sont affectées. Pour plus d'informations, voir [Détails de conception : traçabilité](design-details-item-application.md).  
@@ -26,15 +27,15 @@ Voici l'autre objectif ou les autres fonctions de l'ajustement des coûts :
 
 * Facturer les ordres de fabrication terminés :  
 
-    * Modifiez le statut des écritures valeur de **Prévu** en **Réel**.  
-    * Effacer les comptes TEC. Pour plus d'informations, voir [Détails de conception : validation d'ordre de fabrication](design-details-production-order-posting.md).  
-    * Reportez l'écart. Pour plus d'informations, consultez [Détails de conception : écart](design-details-variance.md)  
-
-* Mettre à jour le coût unitaire de la fiche article.  
+  * Modifiez le statut des écritures valeur de **Prévu** en **Réel**.  
+  * Effacer les comptes TEC. Pour plus d'informations, voir [Détails de conception : validation d'ordre de fabrication](design-details-production-order-posting.md).  
+  * Reportez l'écart. Pour plus d'informations, consultez [Détails de conception : écart](design-details-variance.md)  
+  * Mettre à jour le coût unitaire de la fiche article.  
 
 Les coûts d'inventaire doivent être ajustés avant que les écritures valeur associées puissent être rapprochées avec les écritures. Pour plus d'informations, voir [Détails de conception : rapprochement de comptabilité](design-details-reconciliation-with-the-general-ledger.md).  
 
-## <a name="detecting-the-adjustment"></a>Détection de l'ajustement  
+## <a name="detecting-the-adjustment"></a>Détection de l'ajustement
+
 La tâche consistant à détecter si l'ajustement des coûts doit se produire est principalement effectuée par la routine Ligne report - journal article, tandis que la tâche consistant à calculer et générer des écritures d'ajustement des coûts est effectuée par le traitement en lot **Ajuster coûts - Écr. article**.  
 
 Pour pouvoir transférer les coûts, le mécanisme de détection de détermine quelles sources ont changé en termes de coûts et vers quelle destination ces coûts doivent être transférés. Les trois fonctions de détection suivantes sont disponibles dans [!INCLUDE[d365fin](includes/d365fin_md.md)] :  
@@ -43,19 +44,22 @@ Pour pouvoir transférer les coûts, le mécanisme de détection de détermine q
 * Point d'entrée d'ajustement de coût moyen  
 * Niveau de commande  
 
-### <a name="item-application-entry"></a>Écriture affectation article  
+### <a name="item-application-entry"></a>Écriture affectation article
+
 Cette fonction de détection est utilisée pour les articles qui utilisent les méthodes de coûts FIFO, LIFO, Standard et Specific et pour les scénarios d'applications fixes. La fonction opère comme suit :  
 
 * L'ajustement des coûts est détecté en marquant les écritures comptables article d'origine en tant qu'*Écriture lettrée à ajuster* lorsqu'une écriture comptable article ou une écriture valeur article est validée.  
 * Les coûts sont transférés en fonction des chaînes de coût qui sont stockées dans la table **Ecriture lettrage article**.  
 
-### <a name="average-cost-adjustment-entry-point"></a>Point d'entrée d'ajustement de coût moyen  
+### <a name="average-cost-adjustment-entry-point"></a>Point d'entrée d'ajustement de coût moyen
+
 Cette fonction de détection est utilisée pour les articles qui utilisent le mode de coûts Average. La fonction opère comme suit :  
 
 * L'ajustement des coûts est détecté en marquant un enregistrement dans la table **Point d'entrée ajustement coût moyen** chaque fois qu'une écriture valeur est validée.  
 * Les coûts sont transférés en appliquant les coûts ajustés aux écritures valeur avec une date évaluation ultérieure.  
 
-### <a name="order-level"></a>Niveau de commande  
+### <a name="order-level"></a>Niveau de commande
+
 Cette fonction de détection est utilisée pour les scénarios de conversion, la production et l'assemblage. La fonction opère comme suit :  
 
 * L'ajustement des coûts est détecté en marquant la commande chaque fois que des matières/ressources sont reportées comme étant consommées/utilisées pour la commande.  
@@ -67,7 +71,8 @@ La fonction Niveau de commande est utilisée pour détecter les ajustements dans
 
 Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-assembly-order-posting.md).  
 
-## <a name="manual-versus-automatic-cost-adjustment"></a>Comparaison entre ajustement des coûts automatique et manuel  
+## <a name="manual-versus-automatic-cost-adjustment"></a>Comparaison entre ajustement des coûts automatique et manuel
+
 Vous pouvez exécuter l'ajustement des coûts de deux manières :  
 
 * Manuellement, en exécutant le traitement en lot **Ajuster coûts - Écr. article**. Vous pouvez exécuter ce traitement en lot pour tous les articles ou pour certains articles ou catégories d'article uniquement. Ce traitement en lot effectue un ajustement des coûts pour les articles de l'inventaire pour lesquels une transaction entrante a été réalisée, tel qu'un achat. Pour les articles qui utilisent le mode évaluation stock moyen, le traitement en lot effectue également un ajustement si les transactions sortantes sont créées.  
@@ -81,34 +86,36 @@ Que l'exécution de l'ajustement des coûts soit manuel ou automatique, le proce
 
 Les nouvelles écritures valeur ajustement et arrondissement ont la date de report de la facture associée. Exceptions : si les écritures valeur tombent dans une période comptable ou une période d'inventaire fermée ou si la date de report est antérieure à la date du champ **Début période report** sur la page **Configuration du grand livre**. Si cela se produit, le traitement en lot affecte la date de report comme la première date de la période ouverte suivante.  
 
-## <a name="adjust-cost---item-entries-batch-job"></a>Traitement en lot Ajuster coûts - Écr. article  
+## <a name="adjust-cost---item-entries-batch-job"></a>Traitement en lot Ajuster coûts - Écr. article
+
 Lorsque vous exécutez le traitement en lot **Ajuster coûts - Écr. article**, vous avez la possibilité d'exécuter le traitement en lot pour tous les articles ou pour certains articles ou catégories uniquement.  
 
 > [!NOTE]  
->  Nous vous recommandons de toujours exécuter le traitement en lot pour tous les articles et utilisez uniquement l'option de filtrage pour réduire le temps d'exécution du traitement en lot, ou pour résoudre le coût d'un article donné.  
+> Nous vous recommandons de toujours exécuter le traitement en lot pour tous les articles et utilisez uniquement l'option de filtrage pour réduire le temps d'exécution du traitement en lot, ou pour résoudre le coût d'un article donné.  
 
-### <a name="example"></a>Exemple :  
+### <a name="example"></a>Exemple :
+
 L'exemple suivant montre le cas où vous reportez un article acheté comme étant reçu et facturé le 01/01/20. Vous reportez ultérieurement l'article vendu comme étant livré et facturé le 01-15-20. Ensuite, vous exécutez les traitements en lot **Ajuster &coûts - Écr. article** et **Reporter le coût de l'inventaire au grand livre**. Les écritures suivantes sont créées.  
 
-**Écritures de valeur**  
+#### <a name="value-entries-1"></a>Écritures valeur (1) 
 
 |Date de report|Type d'écriture gr. livre art.|Coût indiqué (réel)|Coût reporté dans grand livre|Quantité facturée|N° séquence |  
-|------------------|----------------------------|----------------------------|-------------------------|-----------------------|---------------|  
+|------------|----------------------|--------------------|------------------|-----------------|---------|  
 |01/01/20|Achat|10.00|10.00|1|1|  
 |15/01/20|Vente|-10,00|-10,00|-1|2|  
 
-**Liens des écritures dans le grand livre – Table liens grand livre article**  
+#### <a name="relation-entries-in-the-gl--item-ledger-relation-table-1"></a>Liens écritures dans le grand livre – Table liens grand livre article (1)
 
 |N° écriture comptable|N° écriture valeur|N° registre GL|  
-|--------------------|---------------------|-----------------------|  
+|-------------|---------------|----------------|  
 |1|1|1|  
 |2|1|1|  
 |3|2|1|  
 |4|2|1|  
 
-**Écritures journal général**  
+#### <a name="general-ledger-entries-1"></a>Écritures de grand livre (1)
 
-|Date de report|Compte général|N° compte (démonstration Fr-FR)|Montant|N° séquence |  
+|Date de report|Compte du grand livre|N° compte (démonstration Fr-FR)|Montant|N° séquence |  
 |------------------|------------------|---------------------------------|------------|---------------|  
 |01/01/20|[Compte inventaire]|2130|10.00|1|  
 |01/01/20|[Compte coût direct affecté]|7291|-10,00|2|  
@@ -117,36 +124,37 @@ L'exemple suivant montre le cas où vous reportez un article acheté comme étan
 
 Ultérieurement, vous reportez des frais annexes achat associés de 2,00 $ facturés le 10/02/20. Vous exécutez le traitement en lot **Ajuster &coûts - Écr. article**, puis le traitement en lot **Reporter le coût de l'inventaire au grand livre**. Le traitement en lot d'ajustement des coûts ajuste le coût de la vente de 2,00 $ en conséquence, et le traitement en lot **Reporter le coût de l'inventaire au grand livre** reporte les nouvelles écritures valeur dans le grand livre. Le résultat est le suivant.  
 
-**Écritures de valeur**  
+#### <a name="value-entries-2"></a>Écritures valeur (2)  
 
 |Date de report|Type d'écriture gr. livre art.|Coût indiqué (réel)|Coût reporté dans grand livre|Quantité facturée|Ajustement|N° séquence |  
-|------------------|----------------------------|----------------------------|-------------------------|-----------------------|----------------|---------------|  
+|------------|----------------------|--------------------|------------------|-----------------|----------|---------|  
 |10/02/20|Achat|2.00|2.00|0|Non|3|  
 |15/01/20|Vente|-2,00|-2,00|0|Oui|4|  
 
-**Liens des écritures dans le grand livre – Table liens grand livre article**  
+#### <a name="relation-entries-in-the-gl--item-ledger-relation-table-2"></a>Liens écritures dans le grand livre – Table liens grand livre article (2)
 
 |N° écriture comptable|N° écriture valeur|N° registre GL|  
-|--------------------|---------------------|-----------------------|  
+|-------------|---------------|----------------|  
 |5|3|2|  
 |6|3|2|  
 |7|4|2|  
 |8|4|2|  
 
-**Écritures journal général**  
+#### <a name="general-ledger-entries-2"></a>Écritures de grand livre (2)
 
-|Date de report|Compte général|N° compte (démonstration Fr-FR)||Montant|N° séquence |  
-|------------------|------------------|---------------------------------|-|------------|---------------|  
-|10/02/20|[Compte inventaire]|2130||2.00|5|  
-|10/02/20|[Compte coût direct affecté]|7291||-2,00|6|  
-|15/01/20|[Compte inventaire]|2130||-2,00|7|  
-|15/01/20|[Compte variation stock]|7290||2.00|8|  
+|Date de report|Compte du grand livre|N° compte (démonstration Fr-FR)|Montant|N° séquence |  
+|------------|-----------|------------------------|------|---------|  
+|10/02/20|[Compte inventaire]|2130|2.00|5|  
+|10/02/20|[Compte coût direct affecté]|7291|-2,00|6|  
+|15/01/20|[Compte inventaire]|2130|-2,00|7|  
+|15/01/20|[Compte variation stock]|7290|2.00|8|  
 
-## <a name="automatic-cost-adjustment"></a>Ajustement automatique des coûts  
+## <a name="automatic-cost-adjustment"></a>Ajustement automatique des coûts
+
 Pour configurer l'exécution automatique de l'ajustement des coûts lorsque vous reportez une transaction d'inventaire, utilisez le champ **Ajustement automatique des coûts** sur la page **Configuration inventaire**. Ce champ vous permet de sélectionner jusqu'où dans le passé vous voulez que l'ajustement automatique des coûts soit effectué. Les options possibles sont les suivantes.  
 
-|Option|Description|  
-|----------------------------------|---------------------------------------|  
+|Option|Description|
+|------|-----------|
 |Jamais|Les coûts ne sont pas ajustés lors du report.|  
 |Jour|Les coûts sont ajustés si le report a lieu dans la journée commençant à la date de travail.|  
 |Semaine|Les coûts sont ajustés si le report a lieu dans la semaine commençant à la date de travail.|  
@@ -157,7 +165,8 @@ Pour configurer l'exécution automatique de l'ajustement des coûts lorsque vous
 
 La sélection effectuée dans le champ **Ajustement automatique des coûts** est importante pour les performances et la précision et de vos coûts. Des périodes plus courtes, telles que **Jour** ou **Semaine**, affectent moins les performances système, car elles offrent la condition plus stricte que seuls les prix validés le jour ou la semaine précédente peuvent être automatiquement ajustés. Cela signifie que l'ajustement automatique des coûts n'est pas effectué aussi fréquemment et affecte donc moins les performances du système. Toutefois, cela signifie également que les coûts unitaires peuvent être moins précis.  
 
-### <a name="example"></a>Exemple :  
+### <a name="example"></a>Exemple :
+
 L'exemple suivant présente scénario d'ajustement automatique des coûts :  
 
 * Le 10 janvier, vous reportez un article acheté comme étant reçu et facturé.  
@@ -169,12 +178,13 @@ Si vous avez défini l'ajustement automatique des coûts pour l'affecter aux rep
 Si vous avez configuré l'ajustement automatique des coûts pour l'affecter aux reports qui se produisent dans la journée ou la semaine à partir de la date en cours, l'ajustement automatique des coûts ne fonctionne pas, et le coût de l'achat n'est pas transmis à la vente tant que vous n'exécutez pas le traitement en lot **Ajuster &coûts - Écr. article**.  
 
 ## <a name="see-also"></a>Voir aussi
-[Ajuster coûts et prix article](inventory-how-adjust-item-costs.md)   
-[Détails de conception : stock évaluation stock](design-details-inventory-costing.md)   
-[Détails de conception : rapprochement de comptabilité](design-details-reconciliation-with-the-general-ledger.md)   
-[Détails de conception : comptabilisation stock](design-details-inventory-posting.md)   
-[Détails de conception : écart](design-details-variance.md)   
-[Détails de conception : report d'un ordre d'assemblage](design-details-assembly-order-posting.md)   
+
+[Ajuster coûts et prix article](inventory-how-adjust-item-costs.md)  
+[Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)  
+[Détails de conception : rapprochement de GL](design-details-reconciliation-with-the-general-ledger.md)  
+[Détails de conception : report inventaire](design-details-inventory-posting.md)  
+[Détails de conception : écart](design-details-variance.md)  
+[Détails de conception : Report d'ordre d'assemblage](design-details-assembly-order-posting.md)  
 [Détails de conception : validation d'ordre de fabrication](design-details-production-order-posting.md)  
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Finance](finance.md)  

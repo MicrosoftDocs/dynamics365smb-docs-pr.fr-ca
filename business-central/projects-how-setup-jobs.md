@@ -8,16 +8,16 @@ ms.workload: na
 ms.search.keywords: project management
 ms.date: 04/01/2020
 ms.author: edupont
-ms.openlocfilehash: e6d277656ab5b159aaca93e03a333ba6232c3bcc
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 358c7ed4068ca90637082f61e24bcff25cef61a3
+ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3191195"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527970"
 ---
 # <a name="set-up-jobs"></a>Configuration de projets
 
-En tant que chef de projet, vous pouvez définir des projets qui définissent chacun des projets que vous gérez dans [!INCLUDE [prodshort](includes/prodshort.md)]. Sur la page **Configuration des projets**, vous devez spécifier comment utiliser certaines fonctions de projet.
+En tant que chef de projet, vous pouvez définir des projets qui définissent chacun des projets que vous gérez dans [!INCLUDE[prodshort](includes/prodshort.md)]. Sur la page **Configuration des projets**, vous devez spécifier comment utiliser certaines fonctions de projet.
 
 Pour chaque projet, vous précisez ensuite les fiches projet individuelles avec des informations concernant les prix pour les articles, les ressources et les comptes du grand livre du projet, puis vous devez configurer des groupes de report projet.
 
