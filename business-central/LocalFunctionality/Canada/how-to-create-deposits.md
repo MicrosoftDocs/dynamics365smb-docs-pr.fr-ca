@@ -10,18 +10,18 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2020
 ms.author: sgroespe
-ms.openlocfilehash: 2c9649ed540c5ce44882a55d4fa0bea689f03036
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: b63717cd602244b39ea98f58bbd64a5ed45cbc60
+ms.sourcegitcommit: 007b331b6974983ee614db0406f00777da359ecb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3180843"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3676927"
 ---
 # <a name="create-deposits"></a>Créer des dépôts
 Vous pouvez créer des dépôts pour tenir à jour un enregistrement de transaction contenant des renseignements pouvant être appliqués aux notes de crédit et factures en attente.  
 
 ## <a name="to-create-a-deposit"></a>Pour créer un dépôt  
-1.  Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Dépôts**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Acomptes**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Sous le raccourci **Général**, renseignez les champs requis comme indiqué dans le tableau ci-dessous.  
 
