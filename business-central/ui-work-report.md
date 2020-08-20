@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: task, process, report
 ms.date: 06/10/2020
 ms.author: sgroespe
-ms.openlocfilehash: 19811dadb284ee9e629c9dc518df5cb989175fdb
-ms.sourcegitcommit: 0b5f8f68b1c9526288bfcce1a3bdc988d2910040
+ms.openlocfilehash: 11c3fa284a457db1de272a3d92ebc7fc873ad933
+ms.sourcegitcommit: 99cecd005f8ede70e9a3d163a457fcb9aadb6843
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454339"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3549902"
 ---
 # <a name="working-with-reports-batch-jobs-and-xmlports"></a>Utilisation des rapports, des traitements en lot et des objets XMLport
 
@@ -50,7 +50,7 @@ Le fait d'utiliser les paramètres enregistrés est une façon rapide et fiable 
 
 ## <a name="previewing-a-report"></a>Affichage de l'aperçu d'un rapport
 
-Cliquez sur le bouton **Aperçu** pour afficher le rapport. Utilisez la barre de menus dans l'aperçu du rapport pour :
+Cliquez sur le bouton **Aperçu** pour afficher le rapport dans la page de demande de rapport. Utilisez la barre de menus dans l'aperçu du rapport pour :
 
 - Naviguer entre les pages
 - Effectuer un zoom avant et arrière
@@ -77,17 +77,32 @@ Lorsque vous programmez l'exécution d'un rapport, vous pouvez spécifier qu'il 
 Vous pouvez choisir de sauvegarder le rapport traité dans un fichier, par exemple, Excel, Word ou PDF, de l'imprimer sur une imprimante sélectionnée ou de traiter le rapport uniquement. Si vous choisissez d'enregistrer le rapport dans un fichier, le rapport traité est envoyé à la zone **Boîte de réception rapport** sur votre tableau de bord, où vous pouvez l'afficher.  
 
 ## <a name="printing-a-report"></a><a name="PrintReport"></a>Impression d'un rapport
-Vous pouvez imprimer un rapport en cliquant sur le bouton **Impression** sur la page de demande de rapport ou dans la barre de menu sur la page **Aperçu**.
 
-Comme [!INCLUDE[prodshort](includes/prodshort.md)] est un service nuage, il ne peut pas atteindre les imprimantes locales connectées aux machines des utilisateurs. Cependant, il peut se connecter aux imprimantes nuage. Dans la version générique de [!INCLUDE[prodshort](includes/prodshort.md)], une imprimante nuage nommée **Imprimante par courriel** est installée en tant qu'extension et prête à l'emploi après la configuration initiale.
+Vous imprimez un rapport en cliquant sur le bouton **Impression** sur la page de demande de rapport ou dans la barre de menu sur la page **Aperçu**.
 
-Si aucune imprimante nuage n'est installée et configurée ou si une imprimante installée échoue, l'impression reprend par défaut les options d'impression du navigateur. Ceci est indiqué par cette valeur dans le champ **Imprimante** sur la page de demande de rapport : *(aucune, gestion par le navigateur)*.
+### <a name="printer-selection"></a>Sélection de l'imprimante
 
-Sur la page **Gestion des imprimantes**, vous pouvez voir les imprimantes configurées. Pour en savoir plus, consultez [Paramétrage imprimantes](ui-specify-printer-selection-reports.md).
+Le rapport est imprimé sur l'imprimante indiquée dans le champ **Imprimante sélectionnée** sur la page de demande de rapport. Vous ne pouvez pas changer d'imprimante sur cette page.
+
+L'imprimante sélectionnée est définie sur la page **Sélections d'imprimantes** ou il s'agit de l'imprimante par défaut configurée sur la page **Gestion des imprimantes**. Si vous souhaitez utiliser une autre imprimante, consultez [Paramétrage imprimantes](ui-specify-printer-selection-reports.md).
+
+Si aucune imprimante n'est spécifiée sur la page **Sélections d'imprimantes** ou n'est définie par défaut sur la page **Gestion des imprimantes**, la fonction d'impression du navigateur est utilisée. Dans ce cas, **Navigateur** s'affiche dans le champ **Imprimante sélectionnée** de la page de demande de rapport. 
+
+### <a name="browser-printing"></a>Impression du navigateur
+
+Comme [!INCLUDE[prodshort](includes/prodshort.md)] est un service en nuage, il ne peut pas atteindre les imprimantes locales connectées à votre ordinateur. Cependant, il peut se connecter aux imprimantes nuage. Dans la version générique de [!INCLUDE[prodshort](includes/prodshort.md)], une imprimante nuage nommée **Imprimante par courriel** est installée en tant qu'extension et prête à l'emploi après la configuration initiale.
+
+Si aucune imprimante nuage n'est installée et configurée ou si une imprimante installée échoue, l'impression reprend par défaut les options d'impression du navigateur.
 
 > [!NOTE]
-> Vous ne pouvez pas modifier le champ **Imprimante** sur la page de demande de rapport. Pour utiliser une autre imprimante, vous devez la sélectionner sur la page **Gestion des imprimantes**.
+> Les options d'impression du navigateur fonctionnent indépendamment de [!INCLUDE[prodshort](includes/prodshort.md)]. Les paramètres d'imprimante qui auraient pu être configurés à partir des imprimantes dans [!INCLUDE[prodshort](includes/prodshort.md)] ne sont pas répercutés dans les options d'impression du navigateur.
 
+<!-- 
+On the **Printer Management** page, you can see the printers that are set up. For more information, see [Set Up Printers](ui-specify-printer-selection-reports.md).
+
+> [!NOTE]
+> You can't change the **Printer** field on the report request page. To use another printer, you must select it from the **Printer Management** page.
+-->
 ### <a name="printing-reports-in-thai"></a>Impression de rapports en thaïlandais
 Spécifiquement pour la version thaïlandaise de [!INCLUDE[prodshort](includes/prodshort.md)], le bouton **Imprimer** ne peut pas imprimer correctement des rapports en raison des limitations du service qui génère le fichier PDF imprimable. À la place, vous pouvez ouvrir le rapport dans Word puis l'enregistrer en tant que fichier PDF imprimable.  
 

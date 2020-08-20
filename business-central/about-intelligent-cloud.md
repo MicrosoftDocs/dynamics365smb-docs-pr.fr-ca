@@ -9,20 +9,20 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge
-ms.date: 04/01/2020
+ms.date: 07/13/2020
 ms.author: bmeier
-ms.openlocfilehash: c2c30715c730aec51f31f80ea95fd896cb1b257f
-ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
+ms.openlocfilehash: 8948864c1e3d00f3955b0952fd70048c13f4585c
+ms.sourcegitcommit: 89d0ea903f61ab0628f99329c762d9f1619c49a7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3528873"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "3577289"
 ---
 # <a name="intelligent-insights-with-prodshort-online"></a>Informations intelligentes avec [!INCLUDE[prodshort](includes/prodshort.md)] Online
 
 En tant qu'utilisateur de [!INCLUDE[prodshort](includes/prodshort.md)] en ligne, vous avez un accès complet aux scénarios basés sur le nuage intelligent, comme les indicateurs de performance clés basés sur Machine Learning, ou lorsque vous consultez vos données dans Power BI. Toutefois, même si [!INCLUDE[prodshort](includes/prodshort.md)] est un service basé sur le nuage, les clients qui doivent exécuter leurs charges de travail entièrement sur site ou sur la périphérie intelligente connectée au nuage peuvent également le faire.  
 
-Si vous êtes intéressé par [!INCLUDE[prodshort](includes/prodshort.md)], vous pouvez vous inscrire à une version d'évaluation gratuite en ligne, ou vous pouvez choisir de faire appel à un partenaire pour déployer [!INCLUDE[prodshort](includes/prodshort.md)] localement sur le matériel de votre choix. Vous pouvez ensuite décider d'obtenir des informations intelligentes en vous connectant à un abonné dans le nuage. Par conséquent, les données de votre [!INCLUDE[prodshort](includes/prodshort.md)] déployé localement seront répliquées sur le nuage pour les scénarios de nuage intelligent.  
+Si vous êtes intéressé par [!INCLUDE[prodshort](includes/prodshort.md)], vous pouvez vous inscrire à une version d'évaluation gratuite en ligne, ou vous pouvez choisir de faire appel à un partenaire pour déployer [!INCLUDE[prodshort](includes/prodshort.md)] localement sur le matériel de votre choix. Vous pouvez ensuite décider d'obtenir des informations intelligentes en vous connectant à un abonné dans le nuage. Par conséquent, les données de votre déploiement local de [!INCLUDE[prodshort](includes/prodshort.md)] sont répliquées sur le nuage pour les scénarios de nuage intelligent.  
 
 La connexion au nuage intelligent d'une solution locale nécessite que votre administrateur spécifie des informations sur votre base de données. Les outils utilisés pour connecter votre déploiement local à [!INCLUDE[prodshort](includes/prodshort.md)] en ligne sont les mêmes que ceux également utilisés pour la migration de la solution locale en solution en ligne. Pour en savoir plus, voir la rubrique [Migration des données locales vers Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-data) dans le contenu d'administration pour [!INCLUDE[prodshort](includes/prodshort.md)].  
 
@@ -49,6 +49,5 @@ Lorsque votre revendeur Dynamics 365 a acquis la bonne licence pour votre soluti
 ## <a name="see-also"></a>Voir aussi
 
 [Bienvenue dans Business Central](index.md)  
-[Extension de nuage intelligent Business Central](ui-extensions-intelligent-cloud.md)  
-[Extension réplication de données](ui-extensions-data-replication.md)  
+[Extensions Nuage intelligent pour la migration vers le nuage](ui-extensions-data-replication.md)  
 [Migration des données locales vers Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-data)  

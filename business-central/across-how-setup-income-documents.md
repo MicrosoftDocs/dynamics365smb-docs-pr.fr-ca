@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: electronic document, e-invoice, incoming document, OCR, ecommerce, document exchange, import invoice
-ms.date: 06/23/2020
+ms.date: 08/10/2020
 ms.author: sgroespe
-ms.openlocfilehash: 09047315c701bd2076f59b6c3f4840ba95eb06cc
-ms.sourcegitcommit: 63102669366eb26f9c32729848170bc2e5c4d6ae
+ms.openlocfilehash: 7438502e14d1aa0eecdd56db0eb4ae2f2790413a
+ms.sourcegitcommit: 007b331b6974983ee614db0406f00777da359ecb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3503554"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677126"
 ---
 # <a name="set-up-incoming-documents"></a>Configurer des documents entrants
 
@@ -23,7 +23,7 @@ Si vous créez des lignes journal général à partir des enregistrements de doc
 
 Si vous ne souhaitez pas que les utilisateurs créent des factures ou des lignes journal général à partir d'enregistrements document entrant, sauf si les documents ont été préalablement approuvés, vous devez configurer des approbateurs de flux de travail.
 
-Pour convertir les fichiers PDF et image en documents électroniques que vous pouvez convertir, par exemple, en factures achat dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous devez d'abord configurer la fonctionnalité OCR et activer le service.
+Pour convertir les fichiers PDF et image en documents électroniques que vous pouvez convertir, par exemple, en factures achat dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous devez d'abord configurer la fonctionnalité OCR et activer le service. Choisissez un package de services adapté à votre organisation et/ou votre pays/région. Vous pouvez également créer des écritures manuellement pour représenter les documents externes.  
 
 Une fois que la fonctionnalité Documents entrants est configurée, vous pouvez utiliser différentes fonctions pour examiner les reçus de dépenses, gérer les tâches OCR et convertir les fichiers document entrant, manuellement ou automatiquement, en documents ou lignes journal appropriés. Les fichiers externes peuvent être joints à n'importe quelle étape du processus, notamment en ce qui concerne les documents reportés et les écritures fournisseur, client et grand livre résultantes. Pour plus d'informations, voir la section [Traitement des documents entrants](across-process-income-documents.md).
 
@@ -38,7 +38,7 @@ Enfin, si vous utilisez un service pour convertir des fichiers PDF ou image repr
 
 ## <a name="to-set-up-approvers-of-incoming-document-records"></a>Configurer des approbateurs d'enregistrements document entrant
 
-Les approbateurs de documents entrants doivent être paramétrés comme des utilisateurs de flux de travail approbation.
+Vous pouvez éventuellement configurer un processus d'approbation pour les documents entrants. Les approbateurs de documents entrants doivent être paramétrés comme des utilisateurs de flux de travail approbation.
 
 Avant de pouvoir créer des workflows qui impliquent des étapes d'approbation, vous devez configurer les utilisateurs du workflow qui sont impliqués dans les processus d'approbation. Sur la page **Configuration d'utilisateur d'approbation**, vous pouvez également définir les limites pour des types spécifiques de demandes et définir des approbateurs remplaçants à qui des demandes d'approbation sont déléguées lorsque l'approbateur initial est absent. Pour plus d'informations, voir [Configurer des utilisateurs d'approbation](across-how-to-set-up-approval-users.md).
 

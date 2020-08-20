@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 08/10/2020
 ms.author: sgroespe
-ms.openlocfilehash: dbe03ccde8111a4d14ce34db5b5b5e73297796be
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: c2d0558febd8bd895bbc591f4165a7a8fdda8600
+ms.sourcegitcommit: 007b331b6974983ee614db0406f00777da359ecb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3191461"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677318"
 ---
 # <a name="subcontract-manufacturing"></a>Sous-traiter la production
 La sous-traitance des opérations sélectionnées au fournisseur est courante dans de nombreuses compagnies manufacturières. La sous-traitance peut être occasionnelle ou faire partie intégrante des processus de production.
@@ -71,13 +71,6 @@ La ligne feuille transformée en bon de commande est supprimée de la feuille. U
 
 ## <a name="posting-subcontract-purchase-orders"></a>Report de bons de commande de sous-traitance  
 Une fois les commandes achat de sous-traitant créées, il est possible de les valider. La réception de la commande reporte une écriture du grand livre de capacité dans le bon de production et la facturation de ce dernier reporte le coût direct du bon de commande dans le bon de production.  
-
-Lorsque l'achat est reporté comme reçu, une écriture journal de sortie est automatiquement reportée pour le bon de production. Ceci est valable uniquement si l'opération de sous-traitance est la dernière opération sur l'itinéraire du bon de production.  
-
-> [!CAUTION]  
->  Le report automatique de la production pour un bon de production en cours lorsque des articles sous-traités reçus ne sont peut-être pas souhaités. Les raisons à cela peuvent être une différence entre la quantité produite prévue reportée et la quantité réelle, et l'inexactitude de la date de report de la production automatique.  
->   
->  Pour éviter que la production prévue d'un bon de production ne soit reportée lorsque les achats de sous-traitance sont réceptionnés, veillez à ce que l'opération sous-traitée ne soit pas la dernière. Sinon, insérez une dernière opération pour la quantité produite finale.
 
 ## <a name="to-post-a-subcontract-purchase-order"></a>Pour reporter un bon de commande de sous-traitance  
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de commande**, puis sélectionnez le lien associé.  

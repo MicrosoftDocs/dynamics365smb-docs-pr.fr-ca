@@ -8,16 +8,17 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, items, ledger entries, posting, inventory
-ms.date: 04/01/2020
+ms.date: 07/23/2020
 ms.author: sgroespe
-ms.openlocfilehash: bfd2c67c7e7133f13a2e021cb9cf70ba82f6bb21
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 098bb0e946d78f69a848ddeb8405ea43579c4597
+ms.sourcegitcommit: 7b5c927ea9a59329daf1b60633b8290b552d6531
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3185166"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "3617637"
 ---
 # <a name="design-details-item-application"></a>Détails de conception : affectation article
+
 Lorsque vous reportez une transaction d'inventaire, le report de quantité est enregistré dans les écritures article, le report de valeur dans les écritures valeur. Pour plus d'informations, voir [Détails de conception : comptabilisation stock](design-details-inventory-posting.md).  
 
 De même, une affectation article est effectuée pour lier le destinataire de coût à sa source de coût pour assurer le transfert de coûts en fonction du mode d'évaluation coût. Pour plus d'informations, [Détails de conception : modes évaluation stock](design-details-costing-methods.md).  
@@ -34,21 +35,21 @@ Les lettrages article peuvent être effectués des manières suivantes.
 |Méthode|Description|Type d'affectation|  
 |------------|---------------------------------------|----------------------|  
 |Automatique|Se produit en tant que transfert de coûts général selon le mode évaluation stock|Quantité affectée|  
-|Statique|Effectué par l'utilisateur lorsque :<br /><br /> -   Traitement des retours<br />-   Report de corrections<br />-   Annulation des reports de quantité<br />-   Création de livraisons directes **Remarque :** L'affectation fixe peut être effectuée manuellement en saisissant un numéro d'écriture dans le champ **Écriture article à affecter** ou à l'aide d'une fonction, telle que **Afficher les lignes de document reportées à inverser**.|Quantité affectée<br /><br /> Affectation coût **Remarque :**  L'affectation coût se produit uniquement dans les transactions entrantes dont le champ **Écriture article à affecter** est renseigné pour créer une affectation fixe. Consultez la table suivante.|  
+|Statique|Effectué par l'utilisateur lorsque :<br /><br /> -   Traitement des retours<br />-   Report de corrections<br />-   Annulation des reports de quantité<br />-   Création de livraisons directes **Remarque :**  L'affectation fixe peut être effectuée manuellement en saisissant un numéro de séquence dans le champ **Écriture article à affecter** ou à l'aide d'une fonction, telle que **Extraire les lignes de document reportées à inverser**.|Quantité affectée<br /><br /> Affectation coût **Remarque :**  L'affectation coût se produit uniquement dans les transactions entrantes dont le champ **Écriture article à affecter** est renseigné pour créer une affectation fixe. Consultez la table suivante.|  
 
 L'affectation de quantités ou de coûts dépend de la direction de la transaction d'inventaire et de si l'affectation d'article est automatique ou fixe, en fonction des processus spécifiques.  
 
 Le tableau suivant montre, à l'aide des champs d'affectation principaux sur les lignes de mouvement d'inventaire, la manière dont les coûts circulent en fonction de la direction de la transaction. Il indique aussi la date et la raison pour laquelle l'affectation article est de type quantité ou coût.  
 
-||Champ Écr. article à lettrer|Champ Écriture article à lettrer|  
+|-|Champ Écr. article à lettrer|Champ Écriture article à lettrer|  
 |-|--------------------------------|----------------------------------|  
 |Affectation pour écriture sortante|L'écriture sortante extrait le coût de l'écriture entrante ouverte.<br /><br /> **Lettrage de quantité**|Non pris en charge|  
 |Affectation pour écriture entrante|L'écriture entrante impose le coût sur l'écriture sortante ouverte.<br /><br /> L'écriture entrante est la source du coût.<br /><br /> **Lettrage de quantité**|L'écriture entrante extrait le coût de l'écriture sortante. **Remarque :** Lors de la réalisation de cette application fixe, la transaction entrante est traitée comme retour vente. Par conséquent, l'écriture sortante affectée reste ouverte. <br /><br /> L'écriture entrante n'est PAS la source du coût.<br /><br /> **Coût lettré**|  
 
 > [!IMPORTANT]  
->  Un retour vente n'est PAS considéré comme une source de coût quand il est affecté de façon fixe.  
->   
->  L'écriture vente reste ouverte jusqu'à ce que la source réelle soit reportée.  
+> Un retour vente n'est PAS considéré comme une source de coût quand il est affecté de façon fixe.  
+>
+> L'écriture vente reste ouverte jusqu'à ce que la source réelle soit reportée.  
 
 Une écriture d'affectation article enregistre les informations suivantes.  
 

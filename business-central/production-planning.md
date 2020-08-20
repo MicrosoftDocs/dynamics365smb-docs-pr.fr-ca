@@ -8,25 +8,27 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 05/05/2020
+ms.date: 07/14/2020
 ms.author: sgroespe
-ms.openlocfilehash: f2389dad61a943520cf7e09a5d8e0118b61db5c8
-ms.sourcegitcommit: 57e31a8b92feeaf8c6c63eba147f36b38eee7679
+ms.openlocfilehash: fc311badfb682bdedb37139bba5618ab60c1d988
+ms.sourcegitcommit: 89d0ea903f61ab0628f99329c762d9f1619c49a7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3339980"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "3577161"
 ---
 # <a name="planning"></a>Planification
+
 Les opérations de production nécessaires à la transformation d'entrées en produits finis doivent être planifiées de manière quotidienne ou hebdomadaire en fonction du volume et de la nature des produits. [!INCLUDE[d365fin](includes/d365fin_md.md)] fournit des fonctionnalités permettant de répondre à la demande réelle et anticipée des ventes, de l'assemblage et de la production, et inclut des fonctionnalités pour une planification de la distribution basée sur les unités de stock et les transferts d'emplacement.
 
 > [!NOTE]
-> Cette rubrique décrit essentiellement la planification des compagnies impliquées dans la fabrication ou la gestion d'assemblage, où les commandes d'approvisionnement qui en résultent peuvent être des ordres de production, d'assemblage, de transfert ou des bons de commande. L'interface principale de cette tâche de planification est la page **Feuille planification**.<br /><br />
+> Cette rubrique décrit essentiellement la planification des compagnies impliquées dans la fabrication ou la gestion d'assemblage, où les commandes d'approvisionnement qui en résultent peuvent être des ordres de production, d'assemblage, de transfert ou des bons de commande. L'interface principale de cette tâche de planification est la page **Feuille planification**.
+>
 > [!INCLUDE[d365fin](includes/d365fin_md.md)] prend également en charge la planification de l'approvisionnement pour les compagnies de vente en gros, où les commandes d'approvisionnement qui en résultent peuvent être des ordres de transfert et des bons de commande. L'interface principale de cette tâche de planification est la page **Feuille de réquisition**, qui est décrite indirectement dans cette rubrique, car la plupart des fonctionnalités de planification s'appliquent aux deux feuilles.
 
 La planification peut être considérée comme la préparation des commandes d'approvisionnement requises dans les départements d'achat, d'assemblage ou de fabrication pour répondre à la demande de vente ou d'articles finis. Pour plus d'informations, voir [Achats](purchasing-manage-purchasing.md), [Gestion d'assemblage](assembly-assemble-items.md) et [Production](production-manage-manufacturing.md).
 
-Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.   
+Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.  
 
 |**Pour**|**Voir**|  
 |------------|-------------|  
@@ -38,7 +40,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Créer un bon de production projet directement à partir d'un document de vente multiligne représentant un projet de production.|[Planifier les O.F. projets](production-how-to-plan-project-orders.md)|
 |Utiliser la page **Planification commande** pour effectuer la planification manuellement pour des ordres de vente ou de fabrication un niveau de nomenclature de production à la fois.|[Planifier de nouvelles demandes commande par commande](production-how-to-plan-for-new-demand.md)|
 |Utiliser la page **Feuille planification** pour exécuter les options PDP et MRP pour créer automatiquement un programme d'approvisionnement détaillé à tous les niveaux d'article.|[Exécuter une planification complète et un calcul PDP ou MRP](production-how-to-run-mps-and-mrp.md)|
-|Exécuter la feuille de réquisition pour créer automatiquement un programme d'approvisionnement détaillé pour répondre à la demande d'articles réapprovisionnés uniquement par achat ou transfert.|Page **Feuille de réquisition**|  
+|Utilisez la page **Feuille de réquisition** pour créer automatiquement un programme d'approvisionnement détaillé pour répondre à la demande d'articles réapprovisionnés uniquement par achat ou transfert.|[Feuille de réquisition](production-about-planning-functionality.md#requisition-worksheet)|  
 |Lancez ou mettez à jour un bon de production en tant qu'opérations programmées approximativement dans le calendrier de production principal.|[Replanifier ou actualiser directement des ordres de fabrication](production-how-to-replan-refresh-production-orders.md)|
 |Recalculez les calendriers d'atelier ou d'unité de production en raison de changements de planification.|[Pour calculer un calendrier d'atelier](production-how-to-create-work-center-calendars.md#to-calculate-a-work-center-calendar)|
 |Suivez la demande de commande (quantité suivie), les prévisions, les commandes permanentes ventes ou les paramètres de planification (quantité non suivie) qui ont donné lieu à la ligne planification en question.|[Suivre les relations entre l'offre et la demande](production-how-track-demand-supply.md)|
