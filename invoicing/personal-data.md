@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2019
-ms.author: bholtof
-ms.openlocfilehash: 4c5efa638bc3f65a3b368ab0b1f9533885b7f654
-ms.sourcegitcommit: a64e1abcc3c1974c87fe3e33fa6983ea7fbbb3ff
+ms.author: bholtorf
+ms.openlocfilehash: 2c113eccbff064b9ccdb9f2691d32e51765e82ad
+ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778250"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3788619"
 ---
 # <a name="responding-to-requests-about-personal-data"></a>Réponse aux demandes relatives aux données personnelles
 > [!Note]

@@ -9,13 +9,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: fb205696631977b3b525cc7d94ef748db07f8960
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.author: edupont
+ms.openlocfilehash: 6516d378541beaf6d984efa975276c2bb86e0f84
+ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3180835"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3778399"
 ---
 # <a name="print-troubleshooting-reports"></a>Imprimer des rapports de dépannage
 Les rapports de dépannage suivants sont disponibles pour aider les partenaires certifiés Microsoft à résoudre les problèmes :  
