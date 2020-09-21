@@ -9,13 +9,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: fe91ed57af6a93f874ead85f53c97358068e0b4c
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.author: edupont
+ms.openlocfilehash: 718df42f71fe5fd23877ce6660b7e3715c3bccb8
+ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3192986"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3779496"
 ---
 # <a name="pick-items-for-warehouse-shipment"></a>Prélever des articles pour une livraison entrepôt
 Lorsque l'emplacement est configuré pour exiger un traitement des prélèvements entrepôt ainsi qu'un traitement des livraisons entrepôt, vous pouvez utiliser les documents prélèvement entrepôt pour créer et traiter les informations de prélèvement avant le report de la livraison entrepôt.  

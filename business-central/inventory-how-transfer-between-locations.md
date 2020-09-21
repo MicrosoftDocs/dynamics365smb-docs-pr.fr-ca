@@ -9,13 +9,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: move, warehouse
 ms.date: 04/01/2020
-ms.author: SorenGP
-ms.openlocfilehash: c7d383fdaf75857013651944207616bdc7208e6d
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.author: edupont
+ms.openlocfilehash: fcd88d3fc8c933863bd79ab8b3405b68a3e1f1e1
+ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3181974"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3778021"
 ---
 # <a name="transfer-inventory-between-locations"></a>Transfert d'inventaire entre des emplacements
 Vous pouvez transférer des articles en inventaire entre des emplacements en créant des ordres de transfert. Vous pouvez également utiliser le journal reclassement article.
