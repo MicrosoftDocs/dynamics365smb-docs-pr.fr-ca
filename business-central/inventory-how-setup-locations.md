@@ -11,13 +11,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: warehouse, distribution center
 ms.date: 04/01/2020
-ms.author: SorenGP
-ms.openlocfilehash: 37815e275e478663a310ee052d16afde973d32ef
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.author: edupont
+ms.openlocfilehash: 805439e0cc50fe0b9dc3132050eb7c7041ffe7a7
+ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3182094"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3785956"
 ---
 # <a name="set-up-locations"></a>Configurer des emplacements
 Si vous achetez, enregistrez, ou vendez des articles à plusieurs emplacements ou entrepôts, vous devez spécifier chaque emplacement avec une fiche emplacement et définir des acheminements transfert.
