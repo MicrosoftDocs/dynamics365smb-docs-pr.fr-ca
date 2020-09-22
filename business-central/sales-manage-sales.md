@@ -9,13 +9,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: trade, sell
 ms.date: 04/27/2020
-ms.author: sgroespe
-ms.openlocfilehash: c7b1d4b82d82b4957d7bd0d295182189ede60a79
-ms.sourcegitcommit: 7d54d8abe52e0546378cf760f5082f46e8441b90
+ms.author: edupont
+ms.openlocfilehash: c05fe3110052eca3edcf06d2cb1835163c327148
+ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3324376"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3788810"
 ---
 # <a name="sales"></a>Vente
 Vous créez une facture vente ou un document de vente pour enregistrer votre entente avec un client pour vendre certains produits selon certaines méthodes de livraison et de paiement.
