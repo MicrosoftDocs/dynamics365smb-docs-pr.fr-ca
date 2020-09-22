@@ -9,21 +9,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 18420ccf63c51b3e6ae30215299bb70329ad63da
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.author: edupont
+ms.openlocfilehash: d49d0d23ea6bd9855db1055cbea8998b623b30fb
+ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3186990"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3783561"
 ---
-# <a name="managing-data-encryption"></a><span data-ttu-id="5e299-103">Gestion du chiffrement des données</span><span class="sxs-lookup"><span data-stu-id="5e299-103">Managing Data Encryption</span></span>
-<span data-ttu-id="5e299-104">Vous pouvez chiffrer des données sur le serveur [!INCLUDE[d365fin](includes/d365fin_md.md)] en générant de nouvelles clés de chiffrement ou en important des clés existantes que vous activez sur l'instance du serveur [!INCLUDE[d365fin](includes/d365fin_md.md)] qui est connectée à la base de données.</span><span class="sxs-lookup"><span data-stu-id="5e299-104">You can encrypt data on the [!INCLUDE[d365fin](includes/d365fin_md.md)] server by generating new or importing existing encryption keys that you enable on the [!INCLUDE[d365fin](includes/d365fin_md.md)] server instance that connects to the database.</span></span>
+# <a name="managing-data-encryption"></a><span data-ttu-id="f3a2c-103">Gestion du chiffrement des données</span><span class="sxs-lookup"><span data-stu-id="f3a2c-103">Managing Data Encryption</span></span>
+<span data-ttu-id="f3a2c-104">Vous pouvez chiffrer des données sur le serveur [!INCLUDE[d365fin](includes/d365fin_md.md)] en générant de nouvelles clés de chiffrement ou en important des clés existantes que vous activez sur l'instance du serveur [!INCLUDE[d365fin](includes/d365fin_md.md)] qui est connectée à la base de données.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-104">You can encrypt data on the [!INCLUDE[d365fin](includes/d365fin_md.md)] server by generating new or importing existing encryption keys that you enable on the [!INCLUDE[d365fin](includes/d365fin_md.md)] server instance that connects to the database.</span></span>
 
-<span data-ttu-id="5e299-105">Pour plus d'informations, voir [Chiffrement des données dans Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-encrypting-data) de l'aide sur Developer and IT Pro.</span><span class="sxs-lookup"><span data-stu-id="5e299-105">For more information, see [Encrypting Data in Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-encrypting-data) in Developer and IT-Pro help.</span></span>
+<span data-ttu-id="f3a2c-105">Pour plus d'informations, voir [Chiffrement des données dans Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-encrypting-data) de l'aide sur Developer and IT Pro.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-105">For more information, see [Encrypting Data in Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-encrypting-data) in Developer and IT-Pro help.</span></span>
 
 > [!Note]
-> <span data-ttu-id="5e299-106">Vous pouvez activer ou désactiver le cryptage uniquement si vous utilisez une version locale de [!INCLUDE[d365fin](includes/d365fin_md.md)].</span><span class="sxs-lookup"><span data-stu-id="5e299-106">You can turn on or turn off encryption only if you are using an on-premises version of [!INCLUDE[d365fin](includes/d365fin_md.md)].</span></span> <span data-ttu-id="5e299-107">Le chiffrement est toujours activé pour les versions en ligne et vous ne pouvez pas le désactiver.</span><span class="sxs-lookup"><span data-stu-id="5e299-107">Encryption is always turned on for online versions, and you cannot turn it off.</span></span>
+> <span data-ttu-id="f3a2c-106">Vous pouvez activer ou désactiver le cryptage uniquement si vous utilisez une version locale de [!INCLUDE[d365fin](includes/d365fin_md.md)].</span><span class="sxs-lookup"><span data-stu-id="f3a2c-106">You can turn on or turn off encryption only if you are using an on-premises version of [!INCLUDE[d365fin](includes/d365fin_md.md)].</span></span> <span data-ttu-id="f3a2c-107">Le chiffrement est toujours activé pour les versions en ligne et vous ne pouvez pas le désactiver.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-107">Encryption is always turned on for online versions, and you cannot turn it off.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="5e299-108">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="5e299-108">See Also</span></span>  
-[<span data-ttu-id="5e299-109">Administration</span><span class="sxs-lookup"><span data-stu-id="5e299-109">Administration</span></span>](admin-setup-and-administration.md)
+## <a name="see-also"></a><span data-ttu-id="f3a2c-108">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="f3a2c-108">See Also</span></span>  
+[<span data-ttu-id="f3a2c-109">Administration</span><span class="sxs-lookup"><span data-stu-id="f3a2c-109">Administration</span></span>](admin-setup-and-administration.md)
