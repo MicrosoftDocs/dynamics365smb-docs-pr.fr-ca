@@ -9,13 +9,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: planning, design
 ms.date: 04/20/2020
-ms.author: sgroespe
-ms.openlocfilehash: 8f988be119132765fb02287c3935495e98f29b31
-ms.sourcegitcommit: 99915b493a7e49d12c530f2f9fda1fcedb518b6e
+ms.author: edupont
+ms.openlocfilehash: 5d7c419158134c78993c00d6644bb828dd3be1a9
+ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3272048"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3787381"
 ---
 # <a name="design-details-planning-parameters"></a>Détails de conception : paramètres de planification
 Cette rubrique décrit les différents paramètres de planification que vous pouvez utiliser dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
@@ -26,10 +26,10 @@ La façon dont le système de planification contrôle l'approvisionnement d'arti
 |-------------|---------------|  
 |Définir si l'article doit être planifié|Méthode de réapprovisionnement = Vide|  
 |Définir la date de réapprovisionnement|Plage de temps<br /><br /> Point de réapprovisionnement<br /><br /> Délai de sécurité|  
-|Définir la quantité à réapprovisionner|Quantité de stocks de sécurité<br /><br /> Méthode de réapprovisionnement :<br /><br /> -   Qté fixe de commande plus Quantité de réappro.<br />-   Qté maximale plus inventaire maximal<br />-   Commande<br />-   Lot pour lot|  
+|Définir la quantité à réapprovisionner|Quantité de stocks de sécurité<br /><br /> Méthode de réapprovisionnement :<br /><br /> -   Qté fixe de commande plus Quantité de réappro.<br />-   Qté maximum plus inventaire maximum<br />-   Ordre<br />-   Lot pour lot|  
 |Optimisez quand et combien réapprovisionner|Période de replanification<br /><br /> Période de cumul de lot<br /><br /> Période tampon|  
 |Modifiez les commandes approvisionnement|Quantité minimum commande<br /><br /> Quantité maximum commande<br /><br /> Commande multiple|  
-|Délimiter l'article planifié|Mode de lancement :<br /><br /> -   Fabrication sur stock<br />-   Fabrication à la commande|  
+|Délimiter l'article planifié|Mode de lancement :<br /><br /> -   Fabrication sur stock.<br />-   Fabrication à la commande.|  
 
 ## <a name="define-if-the-item-will-be-planned"></a>Définir si l'article doit être planifié  
 Pour inclure un article/une unité de stock dans le processus de planification, il doit avoir une méthode de réapprovisionnement sinon il doit être planifié manuellement, par exemple, avec la fonction Planification de commande.  
