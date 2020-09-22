@@ -9,13 +9,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 5d70097cb570217cd4a7be0538474252c31ef46e
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.author: edupont
+ms.openlocfilehash: bb6c3762d9b6ec587cea6915cf292a6bb57e25fd
+ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3194653"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3782503"
 ---
 # <a name="bookmark-a-page-or-report-on-your-role-center"></a>Ajouter un signet vers une page ou un rapport sur votre tableau de bord
 À l'aide de l'icône de signet, vous pouvez ajouter une action qui ouvre une page ou un rapport à partir du menu de navigation de votre tableau de bord. Cela vous permet d'accéder rapidement à votre contenu préféré ou à vos tâches professionnelles. Vous devez ajouter le signet à partir de la page ou du rapport cible, c'est-à-dire l'écran sur lequel vous souhaitez que le lien du tableau de bord s'ouvre.

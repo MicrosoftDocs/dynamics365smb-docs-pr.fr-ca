@@ -9,13 +9,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 8ff874a076aa1a0bba09e1277cb19ee6553eaa8b
-ms.sourcegitcommit: 99915b493a7e49d12c530f2f9fda1fcedb518b6e
+ms.author: edupont
+ms.openlocfilehash: 98b0f0542d5d6123b1d512e343b89bd6059bb739
+ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3271928"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3782553"
 ---
 # <a name="setup-best-practices-planning-parameters"></a>Pratiques de configuration recommandées : paramètres de planification
 Le raccourci **Planning** de la fiche article est le cœur de la chaîne d'approvisionnement de la société. Définir les paramètres de planification corrects est très important pour une gestion rentable des inventaires et un service client de haute qualité.  
