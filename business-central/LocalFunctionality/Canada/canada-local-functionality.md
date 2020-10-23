@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/09/2020
+ms.date: 10/01/2020
 ms.author: soalex
-ms.openlocfilehash: 25df692b71a666d7c8cbdfbff435ac52bca7e2a3
-ms.sourcegitcommit: 0b5f8f68b1c9526288bfcce1a3bdc988d2910040
+ms.openlocfilehash: ecc5a9048a8094b279986de7f17319b6f0d427db
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454318"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3916456"
 ---
 # <a name="canada-local-functionality"></a>Fonctionnalités locales Canada
 
