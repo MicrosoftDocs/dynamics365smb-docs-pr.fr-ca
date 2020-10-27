@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: kit, kitting
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 03b80cc7dd0ae37ba06f453e07bf585a4728039d
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 4d8ce273a2db6c682a205c767e28aee3792ea14b
+ms.sourcegitcommit: 0fb6952376d853a878ed33257e73aadc03b95572
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3782278"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3968316"
 ---
 # <a name="assembly-management"></a>Gestion d'assemblage
 Pour prendre en charge les sociétés qui fournissent des produits à leurs clients en combinant des composants dans des processus simples sans recourir aux fonctionnalités de fabrication, [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut des fonctions permettant d'assembler les articles. Ces fonctions s'intègrent à celles existantes \(ventes, planification, réservations et entreposage\).  
@@ -26,9 +26,9 @@ Pour prendre en charge les sociétés qui fournissent des produits à leurs clie
 
  Pour prendre en charge une stratégie d'inventaire juste-à-temps (JIT) et permettre la personnalisation des produits conformément aux demandes client, il est possible de créer des ordres d'assemblage et de les lier automatiquement dès que la ligne document de vente est créée. Le lien entre la demande de vente et l'approvisionnement d'assemblage permet aux préparateurs de documents de vente de personnaliser l'élément d'assemblage à la volée, d'établir les dates de livraison en fonction de la disponibilité des composantes, et de reporter la production et la livraison de l'article assemblé directement à partir de l'interface de document de vente. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).  
 
- Sur une ligne document de vente, vous pouvez vendre une quantité disponible et qui doit être prélevée à partir de l'inventaire conjointement à une quantité qui doit être assemblée pour commande. Certaines règles existent pour gérer la répartition de ces quantités afin de s'assurer que les quantités assembler pour commande sont prioritaires sur les quantités inventaire lors de livraisons partielles. Pour plus d'informations, voir la section « Scénarios de combinaison » dans [Description des processus Assembler pour commande et Assembler pour stock](assembly-assemble-to-order-or-assemble-to-stock.md).  
+ Sur une ligne document de vente, vous pouvez vendre une quantité disponible et qui doit être prélevée à partir de l'inventaire conjointement à une quantité qui doit être assemblée pour commande. Certaines règles existent pour gérer la répartition de ces quantités afin de s'assurer que les quantités assembler pour commande sont prioritaires sur les quantités inventaire lors de livraisons partielles. Pour plus d’informations, voir la section « Scénarios de combinaison » dans [Description des processus Assembler pour commande et assembler pour inventaire](assembly-assemble-to-order-or-assemble-to-stock.md).  
 
- Il existe une fonctionnalité spéciale qui permet de gérer l'expédition des quantités à assembler pour commande. Lorsqu'une quantité à assembler pour commande est prête à être livrée, l'employé d'entrepôt responsable reporte un prélèvement inventaire pour la ou les lignes document de vente concernées. Cela crée un mouvement d'inventaire pour les composantes et reporte le résultat d'assemblage et la livraison du document de vente. Pour plus d'informations, reportez-vous à la section « Traitement des articles à assembler pour commande dans les prélèvements stock » dans [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).
+ Il existe une fonctionnalité spéciale qui permet de gérer l'expédition des quantités à assembler pour commande. Lorsqu'une quantité à assembler pour commande est prête à être livrée, l'employé d'entrepôt responsable reporte un prélèvement inventaire pour la ou les lignes document de vente concernées. Cela crée un mouvement d'inventaire pour les composantes et reporte le résultat d'assemblage et la livraison du document de vente. Pour plus d’informations, reportez-vous à la section « Traitement des articles à assembler pour commande dans les prélèvements inventaire » dans [Prélever des articles avec les prélèvements inventaire](warehouse-how-to-pick-items-with-inventory-picks.md).
 
 Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.   
 
@@ -36,7 +36,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |------------|-------------|  
 |En savoir plus sur la différence entre l'assemblage des articles juste avant la livraison des documents de vente et l'assemblage des articles destinés au stockage.|[Description des processus Assembler pour commande et Assembler pour stock](assembly-assemble-to-order-or-assemble-to-stock.md)|
 |Renseignez les champs des fiches emplacement et de la configuration inventaire pour définir le flux des articles vers et depuis le département d'assemblage.|[Configurer des entrepôts de base avec les zones d'opérations](warehouse-how-to-set-up-basic-warehouses-with-operations-areas.md)|
-|Personnalisez un élément d'assemblage sur la demande d'un client au cours du processus de vente, et convertissez-le en vente après acceptation.|[Établissement d'un devis de vente Assembler pour commande](assembly-how-to-quote-an-assemble-to-order-sale.md)|
+|Personnalisez un élément d’assemblage sur la demande d’un client au cours du processus de vente, et convertissez-le en vente après acceptation.|[Établissement d'un devis de vente Assembler pour commande](assembly-how-to-quote-an-assemble-to-order-sale.md)|
 |Combinez les composantes pour créer un article dans un processus simple, dans le cadre d'une commande ou d'un stock.|[Assembler des articles](assembly-how-to-assemble-items.md)|  
 |Vendez les éléments d'assemblage qui ne sont pas disponibles actuellement en créant un ordre d'assemblage associé pour fournir la quantité totale ou partielle du document de vente.|[Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md)|
 |Si certains articles à assembler pour commande sont déjà en inventaire, vous pouvez déduire cette quantité de l'ordre d'assemblage et la réserver dans l'inventaire.|[Vente d'articles d'inventaire dans des flux à assembler pour commande](assembly-how-to-sell-inventory-items-in-assemble-to-order-flows.md)|  
@@ -48,10 +48,14 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/assemble-items-dynamics-365-business-central/)
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
+
 [Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
+[Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)  
+[Procédure pas à pas : planification manuelle des approvisionnements](walkthrough-planning-supplies-manually.md)  
+[Procédure pas-à-pas : vente, assemblage et expédition de kits](walkthrough-selling-assembling-and-shipping-kits.md)  
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]  

@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 60b62845a359cec21b52f42c6692edc417a65123
-ms.sourcegitcommit: 4545bb597dd9dc4c563b30af762977ee1d815497
+ms.openlocfilehash: cffe1bf3cc73660a75e6cca5d2d0e1e640c32423
+ms.sourcegitcommit: aea079b66e35c447bf31a11ffc2069cfdaf2ef38
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410757"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970475"
 ---
 # <a name="finance"></a>Finance
 [!INCLUDE[d365fin](includes/d365fin_md.md)] comprend une configuration standard de la plupart des processus financiers, mais vous pouvez modifier la configuration pour l'adapter à votre activité. Pour plus d'informations, reportez-vous à [Configuration de Finance](finance-setup-finance.md).
@@ -54,13 +54,18 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Contrôlez le flux de trésorerie entrant et sortant de votre entreprise. |[Analyse des trésoreries dans votre compagnie](finance-analyze-cash-flow.md) |
 |Procédure de suivi et de bout en bout sur l'utilisation des tableaux d'analyse pour effectuer des prévisions de la trésorerie.|[Procédure pas-à-pas : Créer des prévisions de la trésorerie à l'aide de tableaux d'analyse](walkthrough-making-cash-flow-forecasts-by-using-account-schedules.md)|
 | Utiliser des états financiers et des aperçus dans Excel. |[Analyse des états financiers dans Excel](finance-analyze-excel.md) |
-|Apprendre à utiliser le tableau de bord Comptable, à inviter un comptable externe et à utiliser Accountant Hub pour gérer les comptes de plusieurs clients.|[Expériences de comptables dans Business Central](finance-accounting.md)|  
+|Apprendre à utiliser le tableau de bord Comptable, à inviter un comptable externe et à utiliser le Hub Entreprise pour gérer les comptes de plusieurs clients.|[Expériences de comptables dans Business Central](finance-accounting.md)|  
+
+## <a name="take-a-video-tour"></a>Faire une visite vidéo
+La vidéo suivante présente certaines des fonctionnalités clés de la gestion des finances. <br><br>  
+
+> [!Video https://www.microsoft.com/videoplayer/embed/RE4Fss4?rel=0]
 
 ## <a name="see-also"></a>Voir aussi
 [Configuration de Finance](finance-setup-finance.md)  
-[Ventes](sales-manage-sales.md)  
-[Achats](purchasing-manage-purchasing.md)  
-[Fermeture des périodes fiscales](year-close-years-periods.md)  
+[Vente](sales-manage-sales.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)  
+[Clôture des périodes fiscales](year-close-years-periods.md)  
 [Gestion des projets](projects-manage-projects.md)    
 [Importation des données à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  
 [Utilisation de journaux généraux](ui-work-general-journals.md)  
