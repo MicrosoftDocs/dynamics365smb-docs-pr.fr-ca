@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/26/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: f7df365c6c1fb34943fc5bb9b47145410ef879e3
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 197a98e7bf41dacdd330b420d1e8cdbc7bba4516
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3786156"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3922477"
 ---
 # <a name="administration"></a>Administration
 

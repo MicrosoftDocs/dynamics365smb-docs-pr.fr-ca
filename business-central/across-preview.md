@@ -6,14 +6,14 @@ ms.service: dynamics365-business-central
 ms.topic: article
 ms.workload: na
 ms.search.keywords: preview, trial, sandbox, subscription
-ms.date: 08/12/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 342ffb57090aa78e10b8448b6316c610f6485040
-ms.sourcegitcommit: 79d6d270325f1cc88bd4e9a273f9ff859ceadcbc
+ms.openlocfilehash: d20b1814e6b5a21efee145223b42c703d65a6c2e
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3693109"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924663"
 ---
 # <a name="d365fin_long-trials-and-subscriptions"></a>Versions d'évaluation et abonnements [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)]
 
@@ -53,15 +53,15 @@ Pour vous aider à configurer votre compagnie, la page **Configuration assistée
 | Configurer un flux de travail approbation client |Configure la capacité à avertir automatiquement un approbateur chaque fois qu'un utilisateur essaie de créer ou modifier une fiche client. |
 | Configurer un flux de travail approbation paiement |Configure la capacité d'envoyer une notification à un approbateur lorsqu'un utilisateur soumet des lignes de journal paiement à l'approbation. |
 | Configurer une connexion Dynamics 365 Sales |Configure une connexion vers Dynamics 365 Sales, ce qui vous permet de synchroniser les données telles que les contacts et les informations des documents de vente. |
-| Configurer Prévision de la trésorerie |Configure le graphique Prévision de la trésorerie, de sorte que vous puissiez afficher les prévisions des mouvements de trésorerie entrants et sortants de votre entreprise. Le graphique est disponible dans le **tableau de bord Comptable**. |
+| Configurer Prévision de la trésorerie |Configure le graphique Prévision de la trésorerie, de sorte que vous puissiez afficher les prévisions des mouvements de trésorerie entrants et sortants de votre entreprise. Le graphique est disponible dans le **tableau de bord Comptable** . |
 | Configurer les données de rapport|Configure des ensembles de données que vous pouvez utiliser pour créer des rapports puissants à l'aide d'Excel ou de Power BI, par exemple. |
 | Inviter un comptable externe |Si vous utilisez un comptable externe pour gérer votre comptabilité et vos rapports financiers, vous pouvez l'inviter à votre [!INCLUDE[prodshort](includes/prodshort.md)] afin qu'il puisse travailler avec vous et utiliser vos données fiscales. |
 
-La page **Configuration assistée** peut contenir d'autres entrées. Lorsque vous effectuez une configuration, celle-ci est marquée comme **Terminé**. Vous pouvez configurer des zones supplémentaires de la compagnie à l'aide de la configuration manuelle. Pour plus d'informations, reportez-vous à [Configuration de [!INCLUDE[d365fin](includes/d365fin_md.md)]](setup.md).  
+La page **Configuration assistée** peut contenir d'autres entrées. Lorsque vous effectuez une configuration, celle-ci est marquée comme **Terminé** . Vous pouvez configurer des zones supplémentaires de la compagnie à l'aide de la configuration manuelle. Pour plus d'informations, reportez-vous à [Configuration de [!INCLUDE[d365fin](includes/d365fin_md.md)]](setup.md).  
 
 ### <a name="resetting-your-prodshort-trial-experience"></a>Réinitialisation de votre expérience d'évaluation de [!INCLUDE[prodshort](includes/prodshort.md)]
 
-Si vous avez ajouté des données à votre version d'évaluation gratuite de [!INCLUDE[prodshort](includes/prodshort.md)] et que vous souhaitez recommencer à zéro, vous pouvez créer une autre compagnie d'évaluation avant de supprimer la première compagnie. Ouvrez la page **Compagnies** et choisissez **Nouveau** pour démarrer le guide de configuration assistée **Créer une compagnie**. Le guide peut vous aider à configurer une nouvelle compagnie d'évaluation avec des exemples de données. Vous pouvez également créer une copie de votre compagnie actuelle, vous déconnecter, puis vous connecter à votre nouvelle compagnie.  
+Si vous avez ajouté des données à votre version d'évaluation gratuite de [!INCLUDE[prodshort](includes/prodshort.md)] et que vous souhaitez recommencer à zéro, vous pouvez créer une autre compagnie d'évaluation avant de supprimer la première compagnie. Ouvrez la page **Compagnies** et choisissez **Nouveau** pour démarrer le guide de configuration assistée **Créer une compagnie** . Le guide peut vous aider à configurer une nouvelle compagnie d'évaluation avec des exemples de données. Vous pouvez également créer une copie de votre compagnie actuelle, vous déconnecter, puis vous connecter à votre nouvelle compagnie.  
 
 > [!IMPORTANT]
 > Lorsque vous partagez [!INCLUDE[prodshort](includes/prodshort.md)] avec d'autres collaborateurs de votre entreprise, vous devez vous assurer que personne d'autre n'est connecté lorsque vous supprimez une compagnie.  
@@ -70,7 +70,7 @@ Si vous avez ajouté des données à votre version d'évaluation gratuite de [!I
 
 À chaque connexion au cours de la période gratuite, une notification s'affiche dans une barre bleue en haut et indique le temps restant. Si vous décidez de vous abonner, recherchez un partenaire [!INCLUDE[d365fin](includes/d365fin_md.md)]. Pour plus d'informations, voir [Comment trouver un partenaire revendeur ?](across-faq.md#findpartner). Le partenaire revendeur peut vous aider à configurer [!INCLUDE[prodshort](includes/prodshort.md)] en fonction des besoins de votre entreprise, notamment importer vos données à partir de votre système précédent. Vous pouvez également personnaliser [!INCLUDE[prodshort](includes/prodshort.md)] en ajoutant des applications de [Microsoft AppSource](https://go.microsoft.com/fwlink/?linkid=2081646).  
 
-[!INCLUDE[prodshort](includes/prodshort.md)] en ligne utilise Office 365. Si votre compagnie utilise un autre type de configuration de messagerie, le partenaire revendeur peut vous aider à choisir la procédure de migration, ou si vous devez utiliser [!INCLUDE[prodshort](includes/prodshort.md)] sur site.  
+[!INCLUDE[prodshort](includes/prodshort.md)] en ligne utilise Microsoft 365. Si votre compagnie utilise un autre type de configuration de messagerie, le partenaire revendeur peut vous aider à choisir la procédure de migration, ou si vous devez utiliser [!INCLUDE[prodshort](includes/prodshort.md)] sur site.  
 
 Vous pouvez également contacter l'[[!INCLUDE[d365fin](includes/d365fin_md.md)]équipe commerciale](https://go.microsoft.com/fwlink/?linkid=828707).  
 

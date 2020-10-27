@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: remove, delete
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 163c1522fce412e1877aa63dad914ca0a75c661e
-ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
+ms.openlocfilehash: 8c70989e841da98594e8bc0c2436dbed8cda997b
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3528422"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3927157"
 ---
 # <a name="unsubscribe-or-remove-prodshort"></a>Annuler un abonnement ou supprimer [!INCLUDE[prodshort](includes/prodshort.md)]
 
@@ -25,13 +25,13 @@ Si vous souhaitez ne plus utiliser [!INCLUDE[d365fin](includes/d365fin_md.md)], 
 
 Si vous vous êtes inscrit à la version d'évaluation gratuite et si vous ne souhaitez pas passer à [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez fermer votre compte à tout moment. Nous vous recommandons d'exporter les données avant de fermer votre compte. 
 
-Vous devez demander à votre administrateur Office 365 de supprimer l'abonnement d'évaluation du compte de votre compagnie dans le [centre d'administration Microsoft 365](https://admin.microsoft.com/). 
+Vous devez demander à votre administrateur Microsoft 365 de supprimer l’abonnement d’évaluation du compte de votre compagnie dans le [centre d’administration Microsoft 365](https://admin.microsoft.com/). 
 
-Si vous vous êtes abonné à [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide d'un compte Office 365 non professionnel, vous n'avez pas d'administrateur Office 365. Au lieu de cela, vous devez annuler votre abonnement en contactant l'équipe d'annulation [!INCLUDE[d365fin](includes/d365fin_md.md)] en lui envoyant un courriel à l'adresse cancelbusinesscentra@microsoft.com. Vous devez inclure votre nom d'abonné [!INCLUDE[d365fin](includes/d365fin_md.md)] dans le message de sorte que nous puissions vous identifier. Vous trouverez ces informations dans la page **Aide et support**. Pour plus d'informations, reportez-vous à la rubrique [Ressources pour l'aide et l'assistance technique](product-help-and-support.md).  
+Si vous vous êtes abonné à [!INCLUDE[d365fin](includes/d365fin_md.md)] à l’aide d’un compte Microsoft 365 non professionnel, vous n’avez pas d’administrateur Microsoft 365. Au lieu de cela, vous devez annuler votre abonnement en contactant l'équipe d'annulation [!INCLUDE[d365fin](includes/d365fin_md.md)] en lui envoyant un courriel à l'adresse cancelbusinesscentra@microsoft.com. Vous devez inclure votre nom d'abonné [!INCLUDE[d365fin](includes/d365fin_md.md)] dans le message de sorte que nous puissions vous identifier. Vous trouverez ces informations dans la page **Aide et support** . Pour plus d'informations, reportez-vous à la rubrique [Ressources pour l'aide et l'assistance technique](product-help-and-support.md).  
 
-## <a name="unsubscribing-by-removing-d365fin-from-your-office-365-experience"></a>Annuler un abonnement en supprimant [!INCLUDE[d365fin](includes/d365fin_md.md)] de votre expérience Office 365
+## <a name="unsubscribing-by-removing-d365fin-from-your-microsoft-365-experience"></a>Annuler un abonnement en supprimant [!INCLUDE[d365fin](includes/d365fin_md.md)] de votre expérience Microsoft 365
 
-Si votre compagnie souscrit un abonnement à [!INCLUDE[prodshort](includes/prodshort.md)] mais que vous, en tant qu'utilisateur, ne souhaitez plus y accéder, vous devez demander à votre administrateur ou à votre partenaire revendeur Dynamics 365 de supprimer la licence [!INCLUDE[d365fin](includes/d365fin_md.md)] de votre compte utilisateur Office 365. Si [!INCLUDE[d365fin](includes/d365fin_md.md)] est supprimé de votre compte utilisateur et si votre compagnie continue l'abonnement, vos collègues ont toujours accès à vos données partagées dans la compagnie [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+Si votre compagnie souscrit un abonnement à [!INCLUDE[prodshort](includes/prodshort.md)] mais que vous, en tant qu’utilisateur, ne souhaitez plus y accéder, vous devez demander à votre administrateur ou votre partenaire revendeur Dynamics 365 de supprimer la licence [!INCLUDE[d365fin](includes/d365fin_md.md)] de votre compte utilisateur Microsoft 365. Si [!INCLUDE[d365fin](includes/d365fin_md.md)] est supprimé de votre compte utilisateur et si votre compagnie continue l'abonnement, vos collègues ont toujours accès à vos données partagées dans la compagnie [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
 Si votre compagnie souhaite annuler son abonnement à [!INCLUDE[d365fin](includes/d365fin_md.md)], le partenaire revendeur Dynamics 365 peut supprimer l'abonnement payant du compte de la compagnie. Pour plus d'informations, voir [Administration de Business Central Online](/dynamics365/business-central/dev-itpro/administration/tenant-administration) dans le contenu dédié à l'équipe IT et aux développeurs.  
 

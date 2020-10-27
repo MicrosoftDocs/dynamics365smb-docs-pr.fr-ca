@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 3f2711b50e4cc1fd0f79e8c35a3843783ff14327
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 4f9fd9287055bed116201d13417a6a392cf9b477
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3787656"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3927007"
 ---
 # <a name="design-details-item-tracking-and-planning"></a>Détails de conception : traçabilité et planification d'article
 Puisqu'ils sont enregistrés dans le système de réservation, les numéros de traçabilité sont coordonnés entièrement avec l'enregistrement de chaînage. Cela signifie que les articles qui ont des numéros de suivi de commande peuvent se voir affecter des numéros de suivi d'article. Inversement, les articles qui ont des numéros traçabilité peuvent devenir des enregistrement de chaînage. Pour plus d'informations, voir [Détails de conception : création de traçabilité](design-details-item-tracking-design.md).
@@ -29,7 +29,7 @@ Comme le chaînage est basé uniquement sur l'affectation d'un article spécifiq
 
 Conformément aux principes standard d'équilibrage de l'approvisionnement/de la demande, le système de planification et la fonction chaînage liée ne met en correspondance qu'un approvisionnement et une demande comportant des numéros traçabilité si l'article en question utilise la traçabilité spécifique. Dans tous les autres cas, les systèmes de planification et de chaînage ignorent les numéros traçabilité lors de l'application d'un approvisionnement pour répondre à une demande ou d'une demande à un approvisionnement. Pour plus d'informations, voir [Détails de conception : réservation, chaînage et message d'action](design-details-reservation-order-tracking-and-action-messaging.md).
 
-Par exemple, lorsque le chaînage existe pour un article donné, cela implique que l'enregistrement de l'article est déjà dans la table **Ecriture réservation**, qui est le cœur du système de réservation, avant que les numéros traçabilité ne soient définis. Par conséquent, les restrictions de couplage suivantes s'appliquent aux numéros de suivi des articles pour le suivi de commande :
+Par exemple, lorsque le chaînage existe pour un article donné, cela implique que l'enregistrement de l'article est déjà dans la table **Ecriture réservation** , qui est le cœur du système de réservation, avant que les numéros traçabilité ne soient définis. Par conséquent, les restrictions de couplage suivantes s'appliquent aux numéros de suivi des articles pour le suivi de commande :
 
 - Une demande avec un numéro de série ou un numéro de lot peut couvrir uniquement un approvisionnement de même numéro de série ou de lot.
 - Une demande sans numéro de série ou de lot peut couvrir tout approvisionnement, avec ou sans numéro de série ou de lot.

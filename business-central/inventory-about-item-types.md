@@ -10,17 +10,17 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: b08d5a227f2133989948634f32d88aa614941a0f
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 095daa34ee8a956da8245f4e02c3bd438ba277fb
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3780095"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924013"
 ---
 # <a name="about-item-types"></a>À propos des types d'articles
-Dans le champ **Type** de la page **Fiche article**, vous pouvez sélectionner ce pourquoi l'article est utilisé dans votre activité et donc la manière dont il est géré dans le système. Trois options existent :
+Dans le champ **Type** de la page **Fiche article** , vous pouvez sélectionner ce pourquoi l'article est utilisé dans votre activité et donc la manière dont il est géré dans le système. Trois options existent :
 
 |Option|Objectif courant|
 |------|-----------|
@@ -43,9 +43,9 @@ Les trois types d'article prennent en charge les fonctions suivantes respectivem
 ## <a name="costing-methods-for-types-of-items"></a>Modes évaluation stock pour les types d'articles
 Lorsque vous reportez des transactions d'inventaire, les changements de quantité et de valeur en inventaire sont enregistrés dans les écritures du grand livre d'articles et les écritures valeur, respectivement. 
 
-Pour les articles d'inventaire, le coût est reporté dans le champ **Coût indiqué (réel)** sur la page **Écritures valeur**, et lorsqu'il est rapproché du grand livre, le coût sera indiqué dans le champ **Coût reporté au GL**. Pour plus d'informations, voir [Détails de conception : Évaluation stock](design-details-inventory-costing.md).
+Pour les articles d'inventaire, le coût est reporté dans le champ **Coût indiqué (réel)** sur la page **Écritures valeur** , et lorsqu'il est rapproché du grand livre, le coût sera indiqué dans le champ **Coût reporté au GL** . Pour plus d'informations, voir [Détails de conception : Évaluation stock](design-details-inventory-costing.md).
 
-Pour les articles hors inventaire et de service, le coût est enregistré dans le champ **Coût indiqué (avant bal. stock)** sur la page **Écritures valeur**. Pour les articles hors inventaire et de service, le coût est spécifié sur les documents et journaux de vente, d'assemblage et de production. Le coût par défaut peut être spécifié dans le champ **Coût unitaire** sur les pages **Fiche article** et **Unité de stock**. Les coûts de ces types d'articles ne sont pas rapprochés du grand livre. 
+Pour les articles hors inventaire et de service, le coût est enregistré dans le champ **Coût indiqué (avant bal. stock)** sur la page **Écritures valeur** . Pour les articles hors inventaire et de service, le coût est spécifié sur les documents et journaux de vente, d'assemblage et de production. Le coût par défaut peut être spécifié dans le champ **Coût unitaire** sur les pages **Fiche article** et **Unité de stock** . Les coûts de ces types d'articles ne sont pas rapprochés du grand livre. 
 
 ## <a name="catalog-and-service-items"></a>Articles de catalogue et de service
 Les articles que vous offrez à vos clients mais que vous ne souhaitez pas gérer dans le système jusqu'à ce que vous commenciez à les vendre peuvent être définis comme des articles de catalogue. Les articles de catalogue ne doivent pas être confondus avec les articles normaux de type Hors inventaire. Pour en savoir plus, voir [Utiliser des articles de catalogue](inventory-how-work-nonstock-items.md).

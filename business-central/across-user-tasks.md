@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: tasks, work
-ms.date: 07/14/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: e1e6520aeb39a77ecfcbf652b8c328d1595d6f6f
-ms.sourcegitcommit: 89d0ea903f61ab0628f99329c762d9f1619c49a7
+ms.openlocfilehash: c76751726f5cd680fafc0887fc57a1464d0ac3ca
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "3577211"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3922627"
 ---
 # <a name="define-user-tasks"></a>Définir les tâches utilisateur
 
@@ -25,12 +25,12 @@ Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez créer des tâches
 
 La page **Tâches utilisateur** affiche toutes les tâches, et vous pouvez facilement créer et affecter de nouvelles tâches. Lorsque vous créez une tâche, vous pouvez spécifier la date de début et la date d'échéance, et vous pouvez ajouter un lien vers la page ou le rapport dans [!INCLUDE[d365fin](includes/d365fin_md.md)] où l'utilisateur doit effectuer le travail.  
 
-Par exemple, vous pouvez créer une tâche pour vous-même ou un collègue pour afficher toutes les factures vente reportées. Dans ce cas, vous liez la tâche à la page 143, **Factures vente reportées**. Dans la capture d'écran suivante, quelqu'un crée une tâche pour MeganB pour consulter les factures vente reportées.  
+Par exemple, vous pouvez créer une tâche pour vous-même ou un collègue pour afficher toutes les factures vente reportées. Dans ce cas, vous liez la tâche à la page 143, **Factures vente reportées** . Dans la capture d'écran suivante, quelqu'un crée une tâche pour MeganB pour consulter les factures vente reportées.  
 
 :::image type="content" source="media/across-user-tasks/sample-user-task.png" alt-text="Exemple de tâche utilisateur":::
 
 > [!TIP]  
-> Utilisez la recherche dans le champ **Page**, puis utilisez le champ **Rechercher** pour trouver la page souhaitée.  
+> Utilisez la recherche dans le champ **Page** , puis utilisez le champ **Rechercher** pour trouver la page souhaitée.  
 >
 > Vous pouvez créer un lien vers n'importe quelle page, mais vous ne pouvez pas créer de lien vers des écritures individuelles. La description doit donc être aussi explicite que possible, par exemple en écrivant « Veuillez consulter le numéro de client 10000 et vérifier qu'il n'a pas d'impayés. »
 
@@ -42,7 +42,7 @@ Lorsque vous avez terminé une tâche, marquez-la simplement comme terminée.
 
 ### <a name="deleting-user-tasks"></a>Suppression de tâches utilisateur
 
-Si vous souhaitez supprimer en bloc toutes les tâches utilisateur en uniquement certaines, vous pouvez utiliser le rapport **Supprimer les tâches utilisateur**. Dans la page de demande, vous pouvez définir des filtres pour déterminer les tâches à supprimer.  
+Si vous souhaitez supprimer en bloc toutes les tâches utilisateur en uniquement certaines, vous pouvez utiliser le rapport **Supprimer les tâches utilisateur** . Dans la page de demande, vous pouvez définir des filtres pour déterminer les tâches à supprimer.  
 
 ## <a name="see-also"></a>Voir aussi
 

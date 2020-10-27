@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: OData, Power App, SOAP
-ms.date: 06/22/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 8f0eb7a1562a8300bd7181ef6470c70f60934470
-ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
+ms.openlocfilehash: 718d4378a897b187ba3073449869184fef5cec98
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3528648"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924838"
 ---
 # <a name="connecting-to-your-business-central-data-to-build-a-business-app-using-power-apps"></a>Connexion à vos données Business Central pour générer un application professionnelle à l'aide de Power Apps
 
@@ -27,16 +27,16 @@ Vous pouvez rendre vos données [!INCLUDE[prodshort](includes/prodshort.md)] dis
 ## <a name="to-add-prodshort-as-a-data-source-in-power-apps"></a>Pour ajouter [!INCLUDE[prodshort](includes/prodshort.md)] comme source de données dans Power Apps
 
 1. Dans votre navigateur, accédez à [powerapps.microsoft.com](https://powerapps.microsoft.com/), puis connectez-vous.
-2. Sur la page d'accueil, dans la section **Commencer à partir des données**, choisissez la vignette **Autres sources de données**.  
+2. Sur la page d'accueil, dans la section **Commencer à partir des données** , choisissez la vignette **Autres sources de données** .  
 
     Cela ouvre Power Apps Studio. Lors de la première ouverture de session, vous devez spécifier le pays / la région.  
-3. Dans la liste des connexions disponibles, choisissez **Business Central**, puis choisissez le bouton **Créer**.
+3. Dans la liste des connexions disponibles, choisissez **Business Central** , puis choisissez le bouton **Créer** .
 
     Power Apps se connectera à votre [!INCLUDE[prodshort](includes/prodshort.md)] à l'aide des informations d'identification avec lesquelles vous vous êtes connecté. Si vous n'êtes pas un administrateur de votre [!INCLUDE[prodshort](includes/prodshort.md)], vous devrez peut-être vous connecter avec un autre compte.  
 
-4. Power Apps affiche la liste *Environnements et compagnies* disponibles à partir de [!INCLUDE[prodshort](includes/prodshort.md)]. Choisissez l'environnement et la compagnie contenant les données auxquelles vous souhaitez vous connecter, comme *PRODUCTION - Ma compagnie*.  
+4. Power Apps affiche la liste *Environnements et compagnies* disponibles à partir de [!INCLUDE[prodshort](includes/prodshort.md)]. Choisissez l'environnement et la compagnie contenant les données auxquelles vous souhaitez vous connecter, comme *PRODUCTION - Ma compagnie* .  
 
-5. Ensuite, une liste de tables qui sont exposées dans le cadre de l'API pour votre environnement vous sera présentée. Sélectionnez la table à laquelle vous souhaitez vous connecter, puis choisissez **Connecter**.
+5. Ensuite, une liste de tables qui sont exposées dans le cadre de l'API pour votre environnement vous sera présentée. Sélectionnez la table à laquelle vous souhaitez vous connecter, puis choisissez **Connecter** .
 
 Ces tables sont exposées en tant que points de terminaison par le connecteur [!INCLUDE[prodshort](includes/prodshort.md)] pour Power Apps.  
 

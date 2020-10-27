@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: year closing, close accounting period, close fiscal year, bank account detailed trial balance
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: jswymer
-ms.openlocfilehash: 0482c797fcc4f7b0ba590cfe757bd616d652d18a
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 0b2536d39bf0121f68172429513bce2ad3180110
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3195861"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3925282"
 ---
 # <a name="closing-the-books"></a>Fermeture des registres
 Après vous être assuré que tous vos comptes sont à jour et avoir affecté les coûts et les bénéfices, vous pouvez fermer la comptabilité d'un exercice financier ou d'une période comptable.
@@ -27,7 +27,7 @@ Le processus de fermeture d'un registre inclut les tâches principales suivantes
 
 1. Fermeture de la période comptable.
 
-    Un exercice financier est défini comme une ou plusieurs périodes, telles qu'elles sont définies sur la page **Périodes comptables**. Un exercice financier type contient 12 périodes d'un mois chacune, mais vous pouvez également choisir un autre mode de définition des exercices.
+    Un exercice financier est défini comme une ou plusieurs périodes, telles qu'elles sont définies sur la page **Périodes comptables** . Un exercice financier type contient 12 périodes d'un mois chacune, mais vous pouvez également choisir un autre mode de définition des exercices.
 
     Pour plus d'informations, voir [Fermer des périodes comptables](year-close-account-periods.md).
 2. Enregistrement des écritures de l'exercice précédent.

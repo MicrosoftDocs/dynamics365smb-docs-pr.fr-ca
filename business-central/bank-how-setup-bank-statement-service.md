@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: Yodlee, feed, stream, payment process
-ms.date: 06/24/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 0fb173ee064b5b62ff110fb33dc8ecbc82d0afcd
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: f4927fb91195e88e71a73a6fce774d9dfb0ff685
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3783259"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924438"
 ---
 # <a name="set-up-the-envestnet-yodlee-bank-feeds-service"></a>Configurer le service Envestnet Yodlee Bank Feeds
 
@@ -48,77 +48,77 @@ Lorsque le service de flux bancaire est activé, vous pouvez configurer un compt
 > Si vous utilisez le guide de configuration assistée Configurer la compagnie, certaines étapes des procédures suivantes s'effectuent automatiquement lorsque vous parvenez à la configuration de compte bancaire de la compagnie. Pour plus d'informations, reportez-vous à [Mise en route](product-get-started.md).
 
 ## <a name="to-enable-the-bank-feed-service"></a>Pour activer le service de flux bancaire
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Compte bancaire**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Compte bancaire** , puis sélectionnez le lien associé.
 2. Ouvrez le compte bancaire que vous allez utiliser pour le service de flux bancaire.
-3. Sur la page **Compte bancaire**, dans le champ **Format importation relevé bancaire**, sélectionnez YODLEEBANKFEED.  
+3. Sur la page **Compte bancaire** , dans le champ **Format importation relevé bancaire** , sélectionnez YODLEEBANKFEED.  
 
 Le service de flux bancaire est activé lorsque vous liez un compte bancaire à son compte bancaire en ligne connexe. Consultez la procédure suivante.  
 
 > [!NOTE]
-> Si vous utilisez le guide de configuration assistée **Configuration de la compagnie**, vous activez le service en cochant la case **Utilisez un service de flux bancaire**. Pour plus d'informations, voir [Création de compagnies dans Business Central](about-new-company.md).
+> Si vous utilisez le guide de configuration assistée **Configuration de la compagnie** , vous activez le service en cochant la case **Utilisez un service de flux bancaire** . Pour plus d'informations, voir [Création de compagnies dans Business Central](about-new-company.md).
 
 ## <a name="to-create-a-new-linked-bank-account"></a>Pour créer un compte bancaire lié
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Compte bancaire**, puis sélectionnez le lien associé.
-2. Sélectionnez le compte bancaire approprié, puis sélectionnez **Créer un compte bancaire lié**. La page **Comptes bancaires liés** s'ouvre au bout de quelques instants.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Compte bancaire** , puis sélectionnez le lien associé.
+2. Sélectionnez le compte bancaire approprié, puis sélectionnez **Créer un compte bancaire lié** . La page **Comptes bancaires liés** s'ouvre au bout de quelques instants.
 
     > [!NOTE]  
     > Cette page affiche la page Web réelle du service Envestnet Yodlee Bank Feeds. La terminologie et la fonctionnalité de la page peuvent ne pas correspondre aux instructions fournies dans cette rubrique.  
-3. Sur la page **Comptes bancaires en ligne liés**, dans le volet **Lier un compte**, utilisez la fonction de recherche pour trouver la banque qui abrite un ou plusieurs de vos comptes bancaires en ligne.
+3. Sur la page **Comptes bancaires en ligne liés** , dans le volet **Lier un compte** , utilisez la fonction de recherche pour trouver la banque qui abrite un ou plusieurs de vos comptes bancaires en ligne.
 4. Choisissez le nom de la banque. Le volet **Connexion** s'ouvre.
-5. Saisissez le nom de l'utilisateur et le mot de passe que vous utilisez pour la connexion à la banque en ligne, puis cliquez sur le bouton **Suivant**.  
+5. Saisissez le nom de l'utilisateur et le mot de passe que vous utilisez pour la connexion à la banque en ligne, puis cliquez sur le bouton **Suivant** .  
 6. Le service de flux bancaire se prépare à lier le premier compte bancaire en ligne de la banque spécifiée à un nouveau compte bancaire dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
     > [!NOTE]  
     > Si vous disposez de plusieurs comptes bancaires en ligne dans cette banque, vous devez créer des comptes bancaires supplémentaires pour ceux-ci dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Voir les étapes 8 à 10.  
 
-    À la fin du processus, le nom de la banque s'affiche dans le volet **Mes comptes** sur l'onglet **Lié**. Le numéro entre parenthèses indique le nombre de comptes bancaires en ligne ayant été liés.  
-7. Choisissez le bouton **OK**.
+    À la fin du processus, le nom de la banque s'affiche dans le volet **Mes comptes** sur l'onglet **Lié** . Le numéro entre parenthèses indique le nombre de comptes bancaires en ligne ayant été liés.  
+7. Choisissez le bouton **OK** .
 
     Si vous liez un seul compte bancaire en ligne, la page **Fiche compte bancaire archivé** s'ouvre et affiche le nom du compte bancaire en ligne. Dans ce cas, la tâche de liaison de compte bancaire est terminée. Il ne vous reste plus qu'à configurer le compte bancaire. Pour plus d'informations, reportez vous à [Configuration de comptes bancaires](bank-how-setup-bank-accounts.md).
 
     Si plusieurs comptes bancaires en ligne sont liés, la page **Comptes bancaires liés** s'ouvre et répertorie les comptes bancaires en ligne supplémentaires qui n'ont pas encore été liés à des comptes bancaires dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Dans ce cas, suivez l'étape suivante.  
-8. Sur la page **Comptes bancaires liés**, sélectionnez la ligne correspondant à un compte bancaire en ligne, puis sélectionnez l'action **Lier à un nouveau compte bancaire**.  
+8. Sur la page **Comptes bancaires liés** , sélectionnez la ligne correspondant à un compte bancaire en ligne, puis sélectionnez l'action **Lier à un nouveau compte bancaire** .  
 
     La page **Fiche compte bancaire** pour un nouveau compte bancaire s'ouvre et affiche le nom du compte bancaire en ligne.
 
     Si un compte bancaire existe déjà dans [!INCLUDE[d365fin](includes/d365fin_md.md)] auquel vous souhaitez lier le compte bancaire en ligne supplémentaire, appliquez l'étape suivante.  
-9. Sur la page **Comptes bancaires liés**, sélectionnez la ligne correspondant à un compte bancaire en ligne, puis sélectionnez l'action **Lier à un compte bancaire existant**.
-10. Sur la page **Liste des comptes bancaires**, sélectionnez le compte bancaire que vous voulez lier, puis cliquez sur le bouton **OK**.
+9. Sur la page **Comptes bancaires liés** , sélectionnez la ligne correspondant à un compte bancaire en ligne, puis sélectionnez l'action **Lier à un compte bancaire existant** .
+10. Sur la page **Liste des comptes bancaires** , sélectionnez le compte bancaire que vous voulez lier, puis cliquez sur le bouton **OK** .
 
 ## <a name="to-link-a-bank-account-to-an-online-bank-account"></a>Pour lier un compte bancaire à un compte bancaire en ligne
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Compte bancaire**, puis sélectionnez le lien associé.
-2. Sélectionnez la ligne correspondant à un compte bancaire qui n'est pas lié à un compte bancaire en ligne, puis sélectionnez l'action **Lier au compte bancaire en ligne**. La page **Comptes bancaires en ligne liés** s'ouvre, préremplie avec le nom de la banque dans le volet **Lier un compte**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Compte bancaire** , puis sélectionnez le lien associé.
+2. Sélectionnez la ligne correspondant à un compte bancaire qui n'est pas lié à un compte bancaire en ligne, puis sélectionnez l'action **Lier au compte bancaire en ligne** . La page **Comptes bancaires en ligne liés** s'ouvre, préremplie avec le nom de la banque dans le volet **Lier un compte** .
 3. Choisissez le nom de la banque. Le volet **Connexion** s'ouvre.
-4. Saisissez le nom de l'utilisateur et le mot de passe que vous utilisez pour la connexion à la banque en ligne, puis cliquez sur le bouton **Suivant**.  
+4. Saisissez le nom de l'utilisateur et le mot de passe que vous utilisez pour la connexion à la banque en ligne, puis cliquez sur le bouton **Suivant** .  
 
     Le service de flux bancaire se prépare à lier votre compte bancaire dans [!INCLUDE[d365fin](includes/d365fin_md.md)] au compte bancaire en ligne connexe.  
 
     Une fois le processus terminé avec succès, le nom de la banque s'affiche dans le volet **Mes comptes** sous l'onglet **Lié** . Si la banque a plusieurs comptes bancaires, seul le compte bancaire que vous avez sélectionné à l'étape 2 est lié.  
-5. Cliquez sur le bouton **OK**.
+5. Cliquez sur le bouton **OK** .
 
-Sur la page **Liste des comptes bancaires**, la case **Lié** est cochée.
+Sur la page **Liste des comptes bancaires** , la case **Lié** est cochée.
 
 ## <a name="to-unlink-a-bank-account"></a>Pour détacher un compte bancaire en ligne
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Compte bancaire**, puis sélectionnez le lien associé.  
-2. Sélectionnez la ligne correspondant à un compte bancaire lié que vous souhaitez détacher du compte bancaire en ligne connexe, puis sélectionnez l'action **Détacher le compte bancaire en ligne**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Compte bancaire** , puis sélectionnez le lien associé.  
+2. Sélectionnez la ligne correspondant à un compte bancaire lié que vous souhaitez détacher du compte bancaire en ligne connexe, puis sélectionnez l'action **Détacher le compte bancaire en ligne** .
 
 > [!NOTE]  
 > Si vous choisissez **Oui** dans la boîte de dialogue de confirmation, le lien vers le compte bancaire en ligne est supprimé, et les informations de connexion sont effacées. Pour lier à nouveau le compte bancaire au compte bancaire en ligne, vous devez vous connecter de nouveau à la banque. Pour en savoir plus, voir la section « Pour lier un compte bancaire à un compte bancaire en ligne ».
 
 ## <a name="to-update-bank-account-linking"></a>Pour mettre à jour la liaison des comptes bancaires
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Compte bancaire**, puis sélectionnez le lien associé.
-2. Sélectionnez le compte bancaire approprié, puis sélectionnez l'action **Mettre à jour la liaison des comptes bancaires**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Compte bancaire** , puis sélectionnez le lien associé.
+2. Sélectionnez le compte bancaire approprié, puis sélectionnez l'action **Mettre à jour la liaison des comptes bancaires** .
 
-Si des problèmes existent pour les comptes bancaires liés sur la page **Liste des comptes bancaires**, la page **Comptes bancaires liés** s'ouvre et indique les comptes bancaires affectés par des problèmes. Le meilleur moyen de résoudre ces problèmes est de détacher le compte bancaire en ligne, puis de recréer le lien. Pour en savoir plus, voir la section « Pour lier un compte bancaire à un compte bancaire en ligne ».
+Si des problèmes existent pour les comptes bancaires liés sur la page **Liste des comptes bancaires** , la page **Comptes bancaires liés** s'ouvre et indique les comptes bancaires affectés par des problèmes. Le meilleur moyen de résoudre ces problèmes est de détacher le compte bancaire en ligne, puis de recréer le lien. Pour en savoir plus, voir la section « Pour lier un compte bancaire à un compte bancaire en ligne ».
 
 ## <a name="to-enable-automatic-import-of-bank-statements"></a>Pour activer l'importation automatique des relevés bancaires
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Compte bancaire**, puis sélectionnez le lien associé.
-2. Sélectionnez la ligne correspondant à un compte bancaire lié, puis sélectionnez l'action **Configuration de l'importation de relevés bancaires automatique**.
-3. Sur la page **Configuration de l'importation de relevés bancaires automatique**, dans le champ **Nombre de jours inclus**, indiquez jusqu'à quelle date il faut remonter dans le temps pour obtenir les nouvelles transactions bancaires.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Compte bancaire** , puis sélectionnez le lien associé.
+2. Sélectionnez la ligne correspondant à un compte bancaire lié, puis sélectionnez l'action **Configuration de l'importation de relevés bancaires automatique** .
+3. Sur la page **Configuration de l'importation de relevés bancaires automatique** , dans le champ **Nombre de jours inclus** , indiquez jusqu'à quelle date il faut remonter dans le temps pour obtenir les nouvelles transactions bancaires.
 
     > [!NOTE]  
     > Il est recommandé de définir cette valeur à 7 jours ou plus.  
-4. Cochez la case **Activé**.  
+4. Cochez la case **Activé** .  
 
 Toutes les heures, la page **Journal rapprochement paiement** affichera les nouveaux paiements effectués sur le compte bancaire en ligne.
 

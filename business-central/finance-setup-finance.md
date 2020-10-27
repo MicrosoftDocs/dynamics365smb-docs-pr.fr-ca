@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 8b277c8363ec831a803081898ca6bea591140bac
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 45f32a9f5bbdc13148483b689b5793038c675649
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3779221"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3923025"
 ---
 # <a name="setting-up-finance"></a>Configuration de Finance
 Avant de commencer à gérer votre activité, vous devez spécifier des règles et des valeurs par défaut concernant le mode de gestion souhaité des processus financiers de cette compagnie. Pour commencer, vous devez configurer l'élément essentiel des enregistrements comptables de la compagnie, à savoir le plan comptable. Configurez ensuite des groupes de report afin d'accroître l'efficacité du processus d'affectation des comptes de report de grand livre par défaut aux clients, fournisseurs et articles.
@@ -48,6 +48,9 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Configurez le rapport Intrastat et envoyez-le à une administration | [Configurer et enregistrer un rapport Intrastat](finance-how-setup-report-intrastat.md)|
 |Vérifiez qu'une écriture dans un journal général est affectée à plusieurs comptes lors du report du journal, soit par quantité, pourcentage ou montant.|[Utiliser les clés d'affectation dans les journaux généraux](ui-how-use-allocation-keys-general-journals.md)|
 |Configurer des codes journaux et des codes motif que vous pouvez utiliser pour suivre les pistes d'audit|[Configuration des codes source et des codes de motif pour les pistes d'audit](finance-setup-trail-codes.md)|
+
+> [!TIP]
+> En fonction de votre emplacement géographique, certaines pages peuvent contenir des champs qui ne sont pas décrits dans les articles répertoriés ici, car ils s’appliquent à des fonctionnalités locales ou à des personnalisations. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/set-up-financial-management-dynamics-365-business-central/)
 

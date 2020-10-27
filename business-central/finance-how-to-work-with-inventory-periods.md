@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: inventory, periods
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 18be3b3e5757f3d108ddc9b413eb075aec5ae3af
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: ca5104a8d4268c9f4822e98150a3e969c6c66d48
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3779011"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924163"
 ---
 # <a name="work-with-inventory-periods"></a>Utiliser les périodes d'inventaire
 Les périodes d'inventaire sont des périodes au cours desquelles vous pouvez reporter des modifications d'inventaire. Une période d'inventaire est définie par la date à laquelle elle se termine (date fin). Lorsque vous fermez une période d'inventaire, vous ne pouvez pas reporter de modifications d'inventaire, qu'elles soient prévues ou facturées, avant cette date fin. Vous ne pouvez pas reporter de nouvelles valeurs dans l'inventaire avant la date de fin. Si vous avez des écritures du grand livre d'articles ouvertes dans la période fermée, ce qui signifie des quantités positives qui n'ont pas encore été affectées sur des transactions sortantes, vous pouvez encore affecter des quantités sortantes sur ces écritures, même si la période est fermée.  
@@ -27,10 +27,10 @@ Les sections suivantes décrivent comment :
 * Rouvrir des périodes inventaire.  
 
 ## <a name="to-create-an-inventory-period"></a>Pour créer une période d'inventaire  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Périodes d'inventaire**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Périodes d'inventaire** , puis sélectionnez le lien associé.  
 2. Créez une ligne.  
-3. Dans le champ **Date fin**, entrez la dernière date que vous voulez définir pour la période inventaire. Une fois la période fermée, vous ne pouvez plus reporter de modifications d'inventaire antérieures à cette date.  
-4. Saisissez un nom descriptif dans le champ **Nom**. Cliquez sur le bouton **OK**.  
+3. Dans le champ **Date fin** , entrez la dernière date que vous voulez définir pour la période inventaire. Une fois la période fermée, vous ne pouvez plus reporter de modifications d'inventaire antérieures à cette date.  
+4. Saisissez un nom descriptif dans le champ **Nom** . Cliquez sur le bouton **OK** .  
 
 ## <a name="closing-inventory-periods"></a>Fermeture de périodes d'inventaire  
 Le champ **Clôturé** indique si la période inventaire est clôturée ou non sur des modifications de valeur de stock. Vous ne pouvez pas modifier ce champ.  
@@ -38,7 +38,7 @@ Le champ **Clôturé** indique si la période inventaire est clôturée ou non s
 Vous pouvez fermer toute période d'inventaire, pour autant que les conditions suivantes soient vraies :  
 
 * Il n'y a pas d'écritures du grand livre d'articles sortantes ouvertes (inventaire négatif) dans cette période.  
-* Le coût de tous les articles a été ajusté à l'aide du traitement par lots **Ajuster coût écritures article**.  
+* Le coût de tous les articles a été ajusté à l'aide du traitement par lots **Ajuster coût écritures article** .  
 
 Cela signifie que toutes les quantités de transaction sortante, telles que celles des documents de vente, transferts sortants, factures vente, retours achat ou notes de crédit achat doivent être affectées à la quantité en inventaire.  
 
@@ -46,12 +46,12 @@ Cela signifie que toutes les quantités de transaction sortante, telles que cell
 1. Avant de fermer une période d'inventaire, choisissez l'action **Ajuster coût écritures article** pour vous assurer que tous les ajustements des coûts sont reportés.
 
      Exécutez l'état **Clôturer période inventaire – Test** pour déterminer s'il y a des écritures article sortant ouvertes dans la période inventaire ou des articles dont le coût n'a pas encore été ajusté.  
-2. Choisissez l'action **Fermer la période d'inventaire - Test**.  
+2. Choisissez l'action **Fermer la période d'inventaire - Test** .  
 
      Exécutez le traitement en lot **Reporter le coût de l'inventaire au grand livre** pour vous assurer que tous les coûts sont reportés dans le grand livre.  
-3. Cliquez sur l'action **Reporter inventaire en grand livre**.  
+3. Cliquez sur l'action **Reporter inventaire en grand livre** .  
 4. Ouvrez la page **Périodes d'inventaire** et sélectionnez la période d'inventaire que vous voulez fermer.  
-5. Choisissez l'action **Fermer la période**. Une fois la période d'inventaire fermée, vous ne pouvez pas reporter de modifications d'inventaire avant la date de fin. Le coût de tous les articles doit être ajusté avec le traitement par lots **Ajuster coût écritures article** avant la clôture de la période inventaire.  
+5. Choisissez l'action **Fermer la période** . Une fois la période d'inventaire fermée, vous ne pouvez pas reporter de modifications d'inventaire avant la date de fin. Le coût de tous les articles doit être ajusté avec le traitement par lots **Ajuster coût écritures article** avant la clôture de la période inventaire.  
 6. Choisissez le bouton **Oui** pour confirmer la clôture de la période, ou choisissez **Non** pour annuler la clôture.  
 7. La période d'inventaire est fermée et un message de confirmation est affiché une fois l'opération terminée.  
 
@@ -59,9 +59,9 @@ Cela signifie que toutes les quantités de transaction sortante, telles que cell
 Une fois la période d'inventaire fermée, vous ne pouvez plus la supprimer. En revanche, vous pouvez la rouvrir si vous voulez autoriser son report avant la date fin. La réouverture d'une période rouvre également toutes les périodes inventaire dont la date fin est postérieure à la fin de la période que vous rouvrez.  
 
 ### <a name="to-reopen-an-inventory-period"></a>Pour rouvrir une période d'inventaire  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Périodes d'inventaire**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Périodes d'inventaire** , puis sélectionnez le lien associé.  
 2. Sélectionnez la période d'inventaire que vous voulez rouvrir.  
-3. Sélectionnez l'action de la période **Rouvrir période**. Confirmez que vous voulez réouvrir la période.  
+3. Sélectionnez l'action de la période **Rouvrir période** . Confirmez que vous voulez réouvrir la période.  
 4. Toutes les périodes inventaire dont la date fin est postérieure à la fin de la période sélectionnée sont réouvertes.  
 
 ## <a name="see-also"></a>Voir aussi  

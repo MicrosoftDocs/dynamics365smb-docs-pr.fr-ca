@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: extension, migrate, data, QuickBooks, import
-ms.date: 07/23/2020
+ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 33de4d2b6d75f79c140c7c2fdf5b84b7a77521d6
-ms.sourcegitcommit: 7b5c927ea9a59329daf1b60633b8290b552d6531
+ms.openlocfilehash: 1c4e33593cd7d0084d3c41a22a865160411ef01f
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3617796"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3923505"
 ---
 # <a name="the-quickbooks-online-data-migration-extension"></a>Extension de migration des données QuickBooks Online
 
@@ -52,14 +52,14 @@ Si les transactions de QuickBooks Online ont des montants de taxe, vous devez cr
 
 ## <a name="how-do-i-start-using-the-extension"></a>Comment commencer à utiliser à l'extension ?
 
-La mise en route est simple. Il vous suffit d'exécuter le guide d'installation assistée **Migration des données**. Voici comment :
+La mise en route est simple. Il vous suffit d'exécuter le guide d'installation assistée **Migration des données** . Voici comment :
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration assistée**, puis sélectionnez **Migrer des données métier**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration assistée** , puis sélectionnez **Migrer des données métier** .
 2. Suivez les instructions à chaque étape du guide de configuration assistée.
 
 ## <a name="what-do-i-do-after-i-migrate-data"></a>Que faire après une migration des données ?
 
-Après avoir effectué une migration des données, les transactions ont le statut **Non validé**, vous pouvez les consulter et faire des ajustements. Pour consulter les transactions, accédez à la page où vous les trouveriez normalement. Par exemple, pour examiner les factures vente non validées, accédez à la page **Factures vente**. Pour consulter des feuilles paiement, accédez à la page **Feuilles paiement**.  
+Après avoir effectué une migration des données, les transactions ont le statut **Non validé** , vous pouvez les consulter et faire des ajustements. Pour consulter les transactions, accédez à la page où vous les trouveriez normalement. Par exemple, pour examiner les factures vente non validées, accédez à la page **Factures vente** . Pour consulter des feuilles paiement, accédez à la page **Feuilles paiement** .  
 
 Il existe quelques éléments en particulier que vous devez effectuer :
 

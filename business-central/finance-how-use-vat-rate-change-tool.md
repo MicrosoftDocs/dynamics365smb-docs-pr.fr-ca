@@ -7,14 +7,14 @@ ms.topic: article
 ms.reviewer: edupont
 ms.workload: na
 ms.search.keywords: VAT, VAT rate, posting, tax, value-added tax
-ms.date: 06/19/2020
+ms.date: 10/01/2020
 ms.author: andregu
-ms.openlocfilehash: 1672c163237e23510e2d8f3a5a99760018d023d9
-ms.sourcegitcommit: ec3034640ed10e0fd028568ec45f21c84498d3de
+ms.openlocfilehash: 7d75cb42b064f8541a1142ef149c9641baa6f69a
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "3486331"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3923930"
 ---
 # <a name="managing-vat-rate-changes"></a>Gérer les changements de taux TVA
 
@@ -71,16 +71,16 @@ Avant de configurer l'outil de modification du taux de TVA, vous devez vous pré
 
 ### <a name="to-set-up-the-vat-rate-change-tool"></a>Pour configurer l'outil de modification du taux de TVA
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration modification taux TVA**, puis sélectionnez le lien associé.  
-2. Sur les raccourcis **Données principales**, **Journaux** et **Documents**, sélectionnez la valeur d'un groupe de report dans la liste des options pour les champs requis. Pour chaque groupe, vous pouvez choisir de convertir les groupes de report produit TVA ou les groupes de report produit généraux, ou de convertir les deux valeurs si elles sont disponibles dans l'élément de données de base. Pour certaines zones, vous pouvez également définir un filtre pour convertir uniquement un sous-ensemble de valeurs, par exemple, les comptes du grand livre. 
-3. Sur le raccourci **Prix TTC**, choisissez les types ligne sur les commandes pour lesquelles vous souhaitez mettre à jour les prix unitaires. Les prix unitaires sur les lignes de type Article et Ressource seront toujours mis à jour.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration modification taux TVA** , puis sélectionnez le lien associé.  
+2. Sur les raccourcis **Données principales** , **Journaux** et **Documents** , sélectionnez la valeur d'un groupe de report dans la liste des options pour les champs requis. Pour chaque groupe, vous pouvez choisir de convertir les groupes de report produit TVA ou les groupes de report produit généraux, ou de convertir les deux valeurs si elles sont disponibles dans l'élément de données de base. Pour certaines zones, vous pouvez également définir un filtre pour convertir uniquement un sous-ensemble de valeurs, par exemple, les comptes du grand livre. 
+3. Sur le raccourci **Prix TTC** , choisissez les types ligne sur les commandes pour lesquelles vous souhaitez mettre à jour les prix unitaires. Les prix unitaires sur les lignes de type Article et Ressource seront toujours mis à jour.
 
 ### <a name="to-set-up-product-posting-group-conversion"></a>Pour configurer une conversion du groupe de report produit
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration modification taux TVA**, puis sélectionnez le lien associé.  
-2. Sur la page **Configuration modification taux TVA**, choisissez l'action **Conv. groupe de report produit TVA** ou **Conv. groupe de report produit général**.  
-3. Dans le champ **Code début**, saisissez le groupe de comptabilisation actuel.  
-4. Dans le champ **Code fin**, saisissez le nouveau groupe de comptabilisation.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration modification taux TVA** , puis sélectionnez le lien associé.  
+2. Sur la page **Configuration modification taux TVA** , choisissez l'action **Conv. groupe de report produit TVA** ou **Conv. groupe de report produit général** .  
+3. Dans le champ **Code début** , saisissez le groupe de comptabilisation actuel.  
+4. Dans le champ **Code fin** , saisissez le nouveau groupe de comptabilisation.  
 
 ### <a name="to-perform-vat-rate-change-conversion"></a>Pour exécuter la conversion de modification du taux de TVA
 
@@ -90,16 +90,16 @@ Vous utilisez l'outil de modification de la TVA pour gérer les variations du ta
 * Les modifications sont implémentées dans les comptes du grand livre, les clients, les fournisseurs, les documents ouverts, les lignes de journal, etc.  
 
 > [!IMPORTANT]  
-> Avant d'effectuer la conversion de modification du taux de TVA, vous pouvez tester la conversion. Pour ce faire, suivez la procédure ci-dessous, mais veillez à désactiver les cases à cocher **Effectuer la conversion** et **Outil de modification du taux de TVA terminé**. Lors de la conversion test, le champ **Converti** de la table **Écriture journal modification taux TVA** est supprimé et le champ **Date conversion** de la table **Écriture journal modification taux TVA** est vide. Une fois la conversion terminée, choisissez **Écritures journal modification pour taux de TVA** pour afficher les résultats de la conversion test. Vérifiez chaque écriture avant d'exécuter la conversion. Vérifiez en particulier les transactions qui utilisent un ancien taux de TVA.
+> Avant d'effectuer la conversion de modification du taux de TVA, vous pouvez tester la conversion. Pour ce faire, suivez la procédure ci-dessous, mais veillez à désactiver les cases à cocher **Effectuer la conversion** et **Outil de modification du taux de TVA terminé** . Lors de la conversion test, le champ **Converti** de la table **Écriture journal modification taux TVA** est supprimé et le champ **Date conversion** de la table **Écriture journal modification taux TVA** est vide. Une fois la conversion terminée, choisissez **Écritures journal modification pour taux de TVA** pour afficher les résultats de la conversion test. Vérifiez chaque écriture avant d'exécuter la conversion. Vérifiez en particulier les transactions qui utilisent un ancien taux de TVA.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modification taux TVA**, puis sélectionnez le lien **Configuration modification taux TVA**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modification taux TVA** , puis sélectionnez le lien **Configuration modification taux TVA** .  
 2. Vérifiez que vous avez déjà configuré une conversion de groupe de report produit TVA ou une conversion de groupe de report produit général.  
-3. Activez la case à cocher **Effectuer la conversion**.  
+3. Activez la case à cocher **Effectuer la conversion** .  
 
     > [!IMPORTANT]  
-    >  Désactivez la case à cocher **Outil de modification du taux de TVA terminé**. La case est cochée automatiquement lorsque la conversion de modification du taux de TVA est terminée.  
+    >  Désactivez la case à cocher **Outil de modification du taux de TVA terminé** . La case est cochée automatiquement lorsque la conversion de modification du taux de TVA est terminée.  
 
-4. Sélectionnez l'action **Convertir**.  
+4. Sélectionnez l'action **Convertir** .  
 5. Une fois la conversion terminée, choisissez l'action **Écritures journal modification pour taux de TVA** pour afficher les résultats de la conversion.  
 
 > [!IMPORTANT]  

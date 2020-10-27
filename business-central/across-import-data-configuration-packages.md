@@ -1,5 +1,5 @@
 ---
-title: Utiliser Excel pour importer des données dans Business Central| Microsoft Docs
+title: Utiliser Excel pour importer des données dans Business Central
 description: Utilisez le package de configuration par défaut pour ajouter des données client dans Excel et les importer ensuite dans Business Central.
 author: edupont04
 ms.service: dynamics365-business-central
@@ -8,31 +8,32 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: migration, Excel
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: e5f8ed744e6596e59789b1fa1857e124026ab63b
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 143d40c1005b3ce6b54f9a2f5abc865b3d76b361
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3187830"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924688"
 ---
 # <a name="importing-business-data-from-other-finance-systems"></a>Importation des données métier à partir d'autres systèmes financiers
+
 Lorsque vous effectuez votre inscription à [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez choisir de créer une société vierge afin d'être en mesure de télécharger vos propres données et de tester votre société [!INCLUDE[d365fin](includes/d365fin_md.md)]. En fonction de la solution financière qu'utilise votre compagnie aujourd'hui, vous pouvez transférer des informations sur les clients, les fournisseurs, l'inventaire et les comptes bancaires.  
 
 À partir du tableau de bord, vous pouvez lancer un guide de configuration assistée qui vous aide à transférer les données d'entreprise à partir d'un fichier Excel ou d'autres formats. Le type de fichiers que vous pouvez télécharger dépend des extensions disponibles. Par exemple, vous pouvez migrer des données à partir de QuickBooks, car [!INCLUDE[d365fin](includes/d365fin_md.md)] comprend une extension qui gère la conversion à partir de QuickBooks. Si vous souhaitez migrer des données à partir d'autres solutions financières, vous devez vérifier qu'une extension est disponible pour cette solution ou effectuer l'importation à partir d'Excel.  
 
 [!INCLUDE[d365fin](includes/d365fin_md.md)] n'inclut pas de modèles pour les comptes, les clients, les fournisseurs ni les articles en stock que vous pouvez choisir d'appliquer lorsque vous importez vos données.
 
-Vous pouvez importer des données de base et des données transactionnelles à partir d'autres systèmes financiers basés sur le package de configuration par défaut dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Sur la page **Packages configuration**, vous pouvez utiliser le package pour importer et valider les données avant d'appliquer le package.  
+Vous pouvez importer des données de base et des données transactionnelles à partir d'autres systèmes financiers basés sur le package de configuration par défaut dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Sur la page **Packages configuration** , vous pouvez utiliser le package pour importer et valider les données avant d'appliquer le package.  
 
 > [!TIP]  
-> Sinon, utilisez l'assistant de migration de données pour importer des données de QuickBooks ou de Dynamics GP. Pour plus d'informations, voir [Migration de données QuickBooks](ui-extensions-quickbooks-data-migration.md) ou [Migration de données Dynamics GP](ui-extensions-dynamicsgp-data-migration.md).
+> Nous vous recommandons d’utiliser l’assistant de migration de données pour importer des données de Dynamics GP, Dynamics NAV ou de QuickBooks. Pour en savoir plus, voir la rubrique [Migration des données locales vers Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-data) dans le contenu d’administration ou [Migration de données QuickBooks](ui-extensions-quickbooks-data-migration.md).
 
 > [!NOTE]  
 > Pour des travaux d'implémentation plus importants, vous pouvez utiliser RapidStart Services pour [!INCLUDE[d365fin](includes/d365fin_md.md)], une boîte à outils étendue de configuration de nouvelles solutions basées sur les besoins métier et les données de configuration des clients. RapidStart Services offre également une fonctionnalité d'importation des données métier. Pour plus d'informations, voir [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md).
 
-Pour importer des images d'article, vous pouvez utiliser une fonction dédiée sur la page **Configuration de l'inventaire**. Pour plus d'informations, reportez-vous à la section [Importer plusieurs images d'article](inventory-how-import-item-pictures.md).
+Pour importer des images d'article, vous pouvez utiliser une fonction dédiée sur la page **Configuration de l'inventaire** . Pour plus d'informations, reportez-vous à la section [Importer plusieurs images d'article](inventory-how-import-item-pictures.md).
 
 ## <a name="importing-data-from-configuration-packages"></a>Importation des données à partir des packages configuration
 [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut un package de configuration que vous pouvez exporter vers Excel et y installe vos données. Vous pouvez alors importer les données à nouveau à partir d'Excel. Le package se compose de 27 tables, notamment des données de base telles que les clients, les fournisseurs, les articles, et les comptes, d'autres tables de configuration de base telles que les méthodes de livraison, et les tables de transactions telles que l'en-tête vente et les lignes.  
@@ -81,8 +82,8 @@ Le package de configuration par défaut prend en charge les tables suivantes :
 
 ## <a name="see-also"></a>Voir aussi
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
+[Migration des données locales vers Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-data)  
 [Extension QuickBooks Data Migration](ui-extensions-quickbooks-data-migration.md)  
-[Migration de données Dynamics GP](ui-extensions-dynamicsgp-data-migration.md)  
 [Importer plusieurs images d'article](inventory-how-import-item-pictures.md)
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]  

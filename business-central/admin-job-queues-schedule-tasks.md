@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 09/09/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 6816ba11203e697ff833b9ea96aa85139fbcffe9
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 5e8c611ed5d542436f470781c92d17095ecd1f5d
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3783611"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924588"
 ---
 # <a name="use-job-queues-to-schedule-tasks"></a>Utiliser des files d'attente des travaux pour programmer des tâches
 
@@ -31,19 +31,19 @@ Les files d'attente des travaux sont un outil efficace pour programmer l'exécut
 
 La procédure suivante explique comment configurer le report en arrière-plan des documents de vente. La procédure est identique pour les achats.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.
-2. Sur la page **Configuration ventes & à recevoir**, activez la case à cocher **Reporter avec la file d'attente des travaux**.
-3. Choisissez le champ **Code catégorie de la file d'attente des travaux**, puis spécifiez le code **SALESPOST**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration ventes & à recevoir** , puis sélectionnez le lien associé.
+2. Sur la page **Configuration ventes & à recevoir** , activez la case à cocher **Reporter avec la file d'attente des travaux** .
+3. Choisissez le champ **Code catégorie de la file d'attente des travaux** , puis spécifiez le code **SALESPOST** .
 
     > [!NOTE]
-    > Certains travaux modifient les données identiques et ne doivent pas s'exécuter en simultané, car cela peut provoquer des conflits. Par exemple, les travaux d'arrière-plan des documents de vente tentent de modifier les données identiques en simultané. Les catégories de file d'attente des travaux permettent d'éviter ces types de conflits en garantissant que lorsqu'un travail est en cours d'exécution, un autre travail appartenant à la même catégorie de file d'attente ne s'exécutera pas avant sa fin. Par exemple, un travail relevant d'une catégorie de file d'attente des travaux de vente attendra que tous les autres travaux liés aux ventes soient terminés. Vous spécifiez une catégorie de file d'attente des travaux sur le raccourci **Report en arrière-plan** sur la page **Configuration ventes & à recevoir**.
+    > Certains travaux modifient les données identiques et ne doivent pas s'exécuter en simultané, car cela peut provoquer des conflits. Par exemple, les travaux d'arrière-plan des documents de vente tentent de modifier les données identiques en simultané. Les catégories de file d'attente des travaux permettent d'éviter ces types de conflits en garantissant que lorsqu'un travail est en cours d'exécution, un autre travail appartenant à la même catégorie de file d'attente ne s'exécutera pas avant sa fin. Par exemple, un travail relevant d'une catégorie de file d'attente des travaux de vente attendra que tous les autres travaux liés aux ventes soient terminés. Vous spécifiez une catégorie de file d'attente des travaux sur le raccourci **Report en arrière-plan** sur la page **Configuration ventes & à recevoir** .
     >
     > [!INCLUDE[d365fin](includes/d365fin_md.md)] fournit des catégories de file d'attente des travaux pour les reports au grand livre, les ventes et les achats. Nous recommandons que l'une d'entre elles, ou celle que vous créez, soit toujours spécifiée. Si vous rencontrez des échecs en raison de conflits, pensez à configurer une catégorie pour l'ensemble des reports comptables en arrière-plan, des ventes et des achats.
 
-    Si vous souhaitez également que des documents vente soient imprimés lorsqu'ils sont reportés, sélectionnez la case à cocher **Reporter et imprimer avec la file d'attente des travaux** sur la page **Configuration ventes & à recevoir**.  
+    Si vous souhaitez également que des documents vente soient imprimés lorsqu'ils sont reportés, sélectionnez la case à cocher **Reporter et imprimer avec la file d'attente des travaux** sur la page **Configuration ventes & à recevoir** .  
 
     > [!IMPORTANT]  
-    > Si vous configurez un projet qui reporte et imprime des documents et que l'imprimante affiche une boîte de dialogue, par exemple une demande d'informations d'identification ou un avertissement à propos de la quantité faible d'encre, votre document est reporté mais non imprimé. L'écriture file d'attente de travaux correspondante expire et la valeur du champ **Statut** devient **Erreur**. Par conséquent, nous vous recommandons de ne pas utiliser une configuration d'imprimante nécessitant une interaction avec les boîtes de dialogue de l'imprimante relatives au report en arrière-plan.
+    > Si vous configurez un projet qui reporte et imprime des documents et que l'imprimante affiche une boîte de dialogue, par exemple une demande d'informations d'identification ou un avertissement à propos de la quantité faible d'encre, votre document est reporté mais non imprimé. L'écriture file d'attente de travaux correspondante expire et la valeur du champ **Statut** devient **Erreur** . Par conséquent, nous vous recommandons de ne pas utiliser une configuration d'imprimante nécessitant une interaction avec les boîtes de dialogue de l'imprimante relatives au report en arrière-plan.
 
     La prochaine fois que vous reportez des documents de vente, [!INCLUDE [prodshort](includes/prodshort.md)] crée automatiquement une entrée de file d'attente des travaux pour chaque document et exécute les travaux en arrière-plan, un par un.
 
@@ -53,14 +53,14 @@ La procédure suivante explique comment configurer le report en arrière-plan de
 
 ## <a name="to-create-a-job-queue-entry-for-batch-posting-of-sales-orders"></a>Pour créer une écriture file d'attente des travaux pour le report en lot des documents de vente
 
-Sinon, vous pouvez reporter les reports à des heures pratiques pour votre organisation. Par exemple, il peut sembler raisonnable dans votre activité d’exécuter certaines routines lorsque la plupart de la saisie de données de la journée est achevée. Vous pouvez effectuer cette opération en configurant la file d'attente des travaux pour exécuter différents rapports de report en lot, par exemple, **Reporter en lot documents de vente**, **Reporter en lot factures vente** et des rapports similaires. [!INCLUDE[d365fin](includes/d365fin_md.md)] prend en charge le report en arrière-plan de tous les documents de types ventes, achats et service.
+Sinon, vous pouvez reporter les reports à des heures pratiques pour votre organisation. Par exemple, il peut sembler raisonnable dans votre activité d’exécuter certaines routines lorsque la plupart de la saisie de données de la journée est achevée. Vous pouvez effectuer cette opération en configurant la file d'attente des travaux pour exécuter différents rapports de report en lot, par exemple, **Reporter en lot documents de vente** , **Reporter en lot factures vente** et des rapports similaires. [!INCLUDE[d365fin](includes/d365fin_md.md)] prend en charge le report en arrière-plan de tous les documents de types ventes, achats et service.
 
 La procédure suivante décrit comment définir le rapport **Reporter en lot documents de vente** pour un report automatique des documents de vente lancés à 16 h 00 les jours de semaine.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Écritures file d'attente des travaux**, puis sélectionnez le lien associé.  
-2. Sélectionnez l'action **Nouveau**.  
-3. Dans le champ **Type objet à exécuter**, sélectionnez **Rapport**.  
-4. Dans le champ **Code objet à exécuter**, sélectionnez 296, **Reporter en lot des documents de vente**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Écritures file d'attente des travaux** , puis sélectionnez le lien associé.  
+2. Sélectionnez l'action **Nouveau** .  
+3. Dans le champ **Type objet à exécuter** , sélectionnez **Rapport** .  
+4. Dans le champ **Code objet à exécuter** , sélectionnez 296, **Reporter en lot des documents de vente** .
 
    Vous pouvez également utiliser les rapports suivants :
   
@@ -77,19 +77,19 @@ La procédure suivante décrit comment définir le rapport **Reporter en lot doc
    * 6004 **Reporter en lot factures service**
    * 6001 **Reporter en lot Commandes service**
 
-5. Activez la case à cocher **Page requête rapport**.
-6. Dans la page de demande **Reporter en lot des documents de vente**, définissez ce qu'il faut inclure lors du report automatique des documents de vente, puis sélectionnez le bouton **OK**.
+5. Activez la case à cocher **Page requête rapport** .
+6. Dans la page de demande **Reporter en lot des documents de vente** , définissez ce qu'il faut inclure lors du report automatique des documents de vente, puis sélectionnez le bouton **OK** .
 
     > [!IMPORTANT]
-    > N’oubliez pas de définir des filtres stricts ; sinon, [!INCLUDE [prodshort](includes/prodshort.md)] affichera tous les documents, même s’ils ne sont pas prêts. Pensez à définir un filtre sur le champ **État** pour la valeur *Libéré*, et un filtre sur le champ **Date de report** pour la valeur *..aujourd’hui*. Pour plus d’informations, voir [Tri, recherche et filtrage](ui-enter-criteria-filters.md).
-7. Activez toutes les cases à cocher de **Exécuter le lundi** à **Exécuter le vendredi**.
-8. Dans le champ **Heure début**, entrez 16 h 00.
-9. Choisissez l'action **Attribuer l'état Prêt**.
+    > N’oubliez pas de définir des filtres stricts ; sinon, [!INCLUDE [prodshort](includes/prodshort.md)] affichera tous les documents, même s’ils ne sont pas prêts. Pensez à définir un filtre sur le champ **État** pour la valeur *Libéré* , et un filtre sur le champ **Date de report** pour la valeur *..aujourd’hui* . Pour plus d’informations, voir [Tri, recherche et filtrage](ui-enter-criteria-filters.md).
+7. Activez toutes les cases à cocher de **Exécuter le lundi** à **Exécuter le vendredi** .
+8. Dans le champ **Heure début** , entrez 16 h 00.
+9. Choisissez l'action **Attribuer l'état Prêt** .
 
 Les documents de vente dans les filtres définis sont à présent reportés chaque jour de la semaine à 16 h 00.
 
 > [!NOTE]
-> Si la file d'attente des travaux ne peut pas reporter le document de vente, l'état passe à **Erreur**, et le document de vente est ajouté à la liste des documents de vente que l'utilisateur doit traiter. Pour plus d'informations, voir [Pour afficher l'état ou les erreurs dans la file d'attente](admin-job-queues-schedule-tasks.md#to-view-status-or-errors-in-the-job-queue).
+> Si la file d'attente des travaux ne peut pas reporter le document de vente, l'état passe à **Erreur** , et le document de vente est ajouté à la liste des documents de vente que l'utilisateur doit traiter. Pour plus d'informations, voir [Pour afficher l'état ou les erreurs dans la file d'attente](admin-job-queues-schedule-tasks.md#to-view-status-or-errors-in-the-job-queue).
 
 Une fois les files d'attente des travaux configurées et en cours d'exécution, l'état peut être modifié comme suit au cours de chaque période récurrente :
 
@@ -105,11 +105,11 @@ Une fois qu'un projet s'est terminé correctement, il est supprimé de la liste 
 Les données qui sont générées lors de l'exécution d'une file d'attente des travaux sont stockées dans la base de données, de sorte que vous puissiez résoudre les erreurs de la file d'attente des travaux.
 
 ### <a name="to-view-status-for-any-job"></a>Pour visualiser l'état de tous les travaux
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Écritures file d'attente des travaux**, puis sélectionnez le lien associé.
-2. Sur la page **Écritures file d'attente des travaux**, sélectionnez une écriture file d'attente des travaux, puis sélectionnez l'action **Écritures journal**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Écritures file d'attente des travaux** , puis sélectionnez le lien associé.
+2. Sur la page **Écritures file d'attente des travaux** , sélectionnez une écriture file d'attente des travaux, puis sélectionnez l'action **Écritures journal** .  
 
 ### <a name="to-view-status-from-a-sales-or-purchase-document"></a>Pour afficher l'état à partir d'un document vente ou achat
-1. Dans le document que vous avez essayé de reporter avec le report en arrière-plan, choisissez le champ **État de la file d'attente des travaux**, qui contient **Erreur**.
+1. Dans le document que vous avez essayé de reporter avec le report en arrière-plan, choisissez le champ **État de la file d'attente des travaux** , qui contient **Erreur** .
 2. Examinez le message d’erreur et résolvez le problème.
 
 ## <a name="the-my-job-queue-part"></a>Composant Ma file d'attente des travaux
@@ -118,7 +118,7 @@ Le composant **Ma file d'attente des travaux** sur votre Tableau de bord répert
 Le composant indique les documents avec votre code dans le champ **Code utilisateur affecté** qui sont en cours de traitement ou en attente, y compris ceux associés au report en arrière-plan. La composante peut vous indiquer rapidement s’il y a eu une erreur lors du report d’un document ou s’il existe des erreurs dans une écriture de file d'attente projet. Elle vous permet également d'annuler un report de document en cas de non-exécution.
 
 ### <a name="to-view-an-error-from-the-my-job-queue-part"></a>Pour afficher une erreur dans le composant Ma file d'attente des travaux
-1. Sur une écriture ayant l'état **Erreur**, sélectionnez l'action **Afficher erreur**.
+1. Sur une écriture ayant l'état **Erreur** , sélectionnez l'action **Afficher erreur** .
 2. Examinez le message d’erreur et résolvez le problème.
 
 ## <a name="security"></a>Sécurité  
@@ -130,7 +130,7 @@ Lorsqu'une file d'attente des travaux est activée manuellement, elle s'exécute
 > Si vous utilisez l'ensemble d'autorisations SUPER qui est fourni avec [!INCLUDE[d365fin](includes/d365fin_md.md)], les utilisateurs et vous-même disposez des autorisations pour exécuter tous les objets. Dans ce cas, l'accès accordé à chaque utilisateur est uniquement limité par les autorisations relatives aux données.  
 
 ## <a name="using-job-queues-effectively"></a>Utilisation efficace des files d'attente des travaux  
-L'enregistrement des écritures file d'attente des travaux possède plusieurs champs dont l'objectif est d'exécuter des paramètres dans un codeunit que vous avez indiqué comme devant être exécuté avec une file d'attente des travaux. Cela signifie également que les codeunits devant être exécutés via la file d'attente des travaux doivent être indiqués avec l'enregistrement des écritures file d'attente des travaux en tant que paramètre dans le déclencheur **OnRun**. Un niveau de sécurité supplémentaire est ainsi assuré, car les utilisateurs ne peuvent pas exécuter de codeunits aléatoires via la file d'attente des travaux. Si l'utilisateur doit transmettre des paramètres à un rapport, il n'a d'autre choix que celui d'inclure l'exécution du rapport dans un codeunit, lequel analyse ensuite les paramètres d'entrée et les intègre dans le rapport avant de l'exécuter.  
+L'enregistrement des écritures file d'attente des travaux possède plusieurs champs dont l'objectif est d'exécuter des paramètres dans un codeunit que vous avez indiqué comme devant être exécuté avec une file d'attente des travaux. Cela signifie également que les codeunits devant être exécutés via la file d'attente des travaux doivent être indiqués avec l'enregistrement des écritures file d'attente des travaux en tant que paramètre dans le déclencheur **OnRun** . Un niveau de sécurité supplémentaire est ainsi assuré, car les utilisateurs ne peuvent pas exécuter de codeunits aléatoires via la file d'attente des travaux. Si l'utilisateur doit transmettre des paramètres à un rapport, il n'a d'autre choix que celui d'inclure l'exécution du rapport dans un codeunit, lequel analyse ensuite les paramètres d'entrée et les intègre dans le rapport avant de l'exécuter.  
 
 ## <a name="scheduling-synchronization-between-d365fin-and-d365fin"></a>Planification de la synchronisation entre [!INCLUDE[d365fin](includes/d365fin_md.md)] et [!INCLUDE[d365fin](includes/cds_long_md.md)]
 

@@ -7,14 +7,14 @@ ms.topic: landing-page
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/16/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: dbf101e5bd56069792c2f1d7ddb7d242394ea5ae
-ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
+ms.openlocfilehash: 2b34e29f13cf569d4bee7040f89402712785a525
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3528070"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3922954"
 ---
 # <a name="welcome-to-d365fin_long"></a>Bienvenue dans [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)] !
 
@@ -22,12 +22,14 @@ ms.locfileid: "3528070"
 
 Si vous avez déjà [!INCLUDE[prodshort](includes/prodshort.md)], connectez-vous à [https://businesscentral.dynamics.com](https://businesscentral.dynamics.com). Sinon, [démarrez une évaluation gratuite](https://go.microsoft.com/fwlink/?linkid=847861). Pour plus d'informations sur l'intégration à [!INCLUDE[prodshort](includes/prodshort.md)], voir [Mise en route de [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)]](product-get-started.md).  
 
-[!INCLUDE[d365fin](includes/d365fin_md.md)] est rapide à mettre en œuvre, facile à configurer et la simplicité guide les innovations dans la conception du produit, le développement, l'implémentation et la convivialité. Dans le panneau de navigation à gauche, vous trouverez des informations sur l'utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] dans votre compagnie. Certains articles clés sont également répertoriés dans la première section du tableau suivant. Et si vous êtes un partenaire ou un client et que vous cherchez à étendre les fonctionnalités, vous trouverez des liens appropriés dans la section **Contenu dédié à l'équipe IT et aux développeurs**.  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] est rapide à mettre en œuvre, facile à configurer et la simplicité guide les innovations dans la conception du produit, le développement, l'implémentation et la convivialité. Dans le panneau de navigation à gauche, vous trouverez des informations sur l'utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] dans votre compagnie.  
+
+Certains articles clés sont également répertoriés dans la première section du tableau suivant. Et si vous êtes un partenaire ou un client et que vous cherchez à étendre les fonctionnalités, vous trouverez des liens appropriés dans la section **Contenu dédié d’administration et de développement** . Si vous êtes nouveau dans [!INCLUDE [prodshort](includes/prodshort.md)], nous vous recommandons de commencer par le parcours d’apprentissage [Mise en route de Microsoft Dynamics 365 Business Central](/learn/paths/get-started-dynamics-365-business-central/) sur Microsoft Learn.  
 
 |||  
 |-|-|  
-|**Processus entreprise**|-   [Mise en route](product-get-started.md)<br />-   [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)<br />-   [Configuration [!INCLUDE[d365fin](includes/d365fin_md.md)]](setup.md)<br />-   [Administration](admin-setup-and-administration.md)<br />-   [Fonctionnalités d'entreprise](across-business-functionality.md)<br />-   [Fonctionnalités locales](LocalFunctionality/Austria/austria-local-functionality.md)<br />-   [Fonctionnalités marché](ui-across-business-areas.md)<br />-   [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)<br />-   [Détails de conception de l'application](design-details-application-design.md)|  
-|**Contenu dédié à l'équipe IT et aux développeurs**|-   [Aide dédiée à l'équipe IT et aux développeurs pour [!INCLUDE[prodshort](includes/prodshort.md)] ](/dynamics365/business-central/dev-itpro/index)<br />-   [Développement dans AL](/dynamics365/business-central/dev-itpro/developer/devenv-dev-overview)<br />-   [Environnement de développement AL](/dynamics365/business-central/dev-itpro/developer/devenv-reference-overview)<br />-   [Règles et instructions du code d'AL](/dynamics365/business-central/dev-itpro/compliance/apptest-overview)|  
+|**Processus entreprise**|-   [Mise en route](product-get-started.md)<br />-   [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)<br />-   [Configuration [!INCLUDE[d365fin](includes/d365fin_md.md)]](setup.md)<br />-   [Administration](admin-setup-and-administration.md)<br />-   [Fonctionnalités d'entreprise](across-business-functionality.md)<br />-   [Fonctionnalités locales](LocalFunctionality/Austria/austria-local-functionality.md)<br />-   [Fonctionnalités marché](ui-across-business-areas.md)<br />-   [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)<br />-   [Détails de conception de l'application](design-details-application-design.md)<br />- [Personnaliser Business Central](ui-customizing-overview.md)|  
+|**Contenu de développement et administration**|-   [Développement et administration de [!INCLUDE[prodshort](includes/prodshort.md)] ](/dynamics365/business-central/dev-itpro/index)<br />-   [Développement dans AL](/dynamics365/business-central/dev-itpro/developer/devenv-dev-overview)<br />-   [Environnement de développement AL](/dynamics365/business-central/dev-itpro/developer/devenv-reference-overview)<br />-   [Règles et instructions du code d'AL](/dynamics365/business-central/dev-itpro/compliance/apptest-overview)|  
 |**Ressources de la communauté**|-   [Communauté Microsoft Dynamics 365 Business Central](https://community.dynamics.com/business)<br />-   [Microsoft Dynamics 365 Business Central dans le blog Dynamics 365](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)<br />-   Plans de versions [Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2047422)<br />-   [Feuille de route Microsoft Dynamics 365 Business Central](https://dynamics.microsoft.com/roadmap/business-central/)<br />-   [Microsoft Dynamics PartnerSource \(requiert un compte PartnerSource\)](https://mbs.microsoft.com/partnersource)<br />-   [Microsoft Partner Network \(requiert un compte d'adhésion Microsoft Partner Network\)](https://mspartner.microsoft.com/en/us/windows/index.aspx)|  
 
 > [!TIP]

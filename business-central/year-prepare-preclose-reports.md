@@ -9,14 +9,14 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: jswymer
-ms.openlocfilehash: b45fe3d89502e5a4e42bc43cc4679afe1b13699d
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: b270a7b1f9ffda71d68fa981885aacbe31f55eab
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3191701"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3923130"
 ---
 # <a name="using-pre-closing-reports"></a>Utilisation des rapports préalables à la fermeture
 Il existe de nombreux rapports standard qui vous permettent de vérifier la précision des comptes avant de fermer les registres à la fin d'un exercice ou d'une période. Par exemple, vous pouvez utiliser l'état **Clients : Balance** pour vérifier que le solde d'un groupe comptabilisation client est égal au solde du compte général correspondant à une date donnée.

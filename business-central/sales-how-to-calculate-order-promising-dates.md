@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 2cc3fd679909e51422afe75ee4a1436f5ad8cb9c
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 5e9609ae65cd2cd23abad5680e576c3c16d89493
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3789010"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3926007"
 ---
 # <a name="calculate-order-promising-dates"></a>Calculer des dates promesse livraison
 Une compagnie doit pouvoir informer ses clients des dates de livraison de commande. La page **Lignes promesse de livraison** vous permet d'effectuer cette opération à partir d'une ligne document de vente.  
@@ -69,15 +69,15 @@ Ensuite, [!INCLUDE[d365fin](includes/d365fin_md.md)] vérifie si la date de livr
 
 La date de livraison est utilisée pour effectuer la vérification de disponibilité. Si l'article est disponible à cette date, [!INCLUDE[d365fin](includes/d365fin_md.md)] confirme que la livraison demandée/promise peut être respectée en configurant la date de livraison planifiée à la date de livraison demandée/confirmée. Si l'article n'est pas disponible, il renvoie une date vide et le préparateur de commandes peut alors utiliser la fonctionnalité CTP.  
 
-Sur la base des nouvelles dates et heures, toutes les dates liées sont calculées en fonction des formules répertoriées précédemment dans cette section. Le calcul CTP prend plus de temps, mais donne une date précise à laquelle le client peut attendre la livraison de l'article. Les dates qui sont calculées à partir de la SDD sont présentées dans les champs **Date livraison planifiée** et **Date de livraison au plus tôt** sur la page **Lignes promesse de livraison**.  
+Sur la base des nouvelles dates et heures, toutes les dates liées sont calculées en fonction des formules répertoriées précédemment dans cette section. Le calcul CTP prend plus de temps, mais donne une date précise à laquelle le client peut attendre la livraison de l'article. Les dates qui sont calculées à partir de la SDD sont présentées dans les champs **Date livraison planifiée** et **Date de livraison au plus tôt** sur la page **Lignes promesse de livraison** .  
 
 Le préparateur de commandes finit le processus CTP en acceptant les dates. Cela signifie qu'une ligne de planification et une écriture de réservation sont créées pour l'article avant les dates calculées pour assurer que la commande est satisfaite.  
 
-En plus de la promesse de livraison externe que vous pouvez effectuer sur la page **Lignes promesse de livraison**, vous pouvez également promettre des dates de livraison internes ou externes pour les articles de nomenclature. Pour plus d'informations, voir [Voir la disponibilité des articles](inventory-how-availability-overview.md).
+En plus de la promesse de livraison externe que vous pouvez effectuer sur la page **Lignes promesse de livraison** , vous pouvez également promettre des dates de livraison internes ou externes pour les articles de nomenclature. Pour plus d'informations, voir [Voir la disponibilité des articles](inventory-how-availability-overview.md).
 
 ## <a name="to-set-up-order-promising"></a>Pour configurer une promesse livraison  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration de promesse de commande**, puis sélectionnez le lien associé.  
-2. Entrez un numéro et un code unité de temps dans le champ **Décalage (durée)**. Sélectionnez l'une des options suivantes.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration de promesse de commande** , puis sélectionnez le lien associé.  
+2. Entrez un numéro et un code unité de temps dans le champ **Décalage (durée)** . Sélectionnez l'une des options suivantes.  
 
     |Code|Description|  
     |----------|-----------------|  
@@ -87,54 +87,54 @@ En plus de la promesse de livraison externe que vous pouvez effectuer sur la pag
     |**t**|Trimestre|  
     |**a**|Année|  
 
-    Par exemple, « 3S » indique que le décalage est de trois semaines. Pour indiquer la période en cours, utilisez le préfixe « c » devant l'un de ces codes. Par exemple, si vous souhaitez que le décalage porte sur le mois en cours, entrez **mc**.  
-3. Entrez une série de numéros dans le champ **N° promesse de livraison** en sélectionnant une ligne dans la liste de la page **Séries de n°**.  
-4. Entrez un modèle promesse de livraison dans le champ **Modèle promesse de livraison** en sélectionnant une ligne de la liste de la page **Liste des modèles demande achat**.  
-5. Entrez une feuille de réquisition dans le champ **Feuille promesse de livraison** en sélectionnant une ligne de la liste de la page **Noms demandes achat**.
+    Par exemple, « 3S » indique que le décalage est de trois semaines. Pour indiquer la période en cours, utilisez le préfixe « c » devant l'un de ces codes. Par exemple, si vous souhaitez que le décalage porte sur le mois en cours, entrez **mc** .  
+3. Entrez une série de numéros dans le champ **N° promesse de livraison** en sélectionnant une ligne dans la liste de la page **Séries de n°** .  
+4. Entrez un modèle promesse de livraison dans le champ **Modèle promesse de livraison** en sélectionnant une ligne de la liste de la page **Liste des modèles demande achat** .  
+5. Entrez une feuille de réquisition dans le champ **Feuille promesse de livraison** en sélectionnant une ligne de la liste de la page **Noms demandes achat** .
 
 ### <a name="to-enter-inbound-warehouse-handling-time-in-the-inventory-setup-page"></a>Pour entrer un délai d'enlogement sur la page Configuration de l'inventaire  
 Vous pouvez configurer un délai entrepôt par défaut pour l'inventaire et votre emplacement, à inclure dans le calcul de promesse livraison sur la ligne achat.    
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration inventaire**, puis sélectionnez le lien associé.  
-2. Sur le raccourci **Général**, dans le champ **Délai enlogement**, indiquez le nombre de jours que vous souhaitez inclure dans le calcul de la promesse de livraison.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration inventaire** , puis sélectionnez le lien associé.  
+2. Sur le raccourci **Général** , dans le champ **Délai enlogement** , indiquez le nombre de jours que vous souhaitez inclure dans le calcul de la promesse de livraison.  
 
 > [!NOTE]  
 >  Si vous avez renseigné le champ **Délai enlogement** dans la **fiche magasin** pour votre magasin, ce champ est utilisé en tant que délai d'enlogement par défaut.  
 
 ### <a name="to-enter-inbound-warehouse-handling-time-on-location-cards"></a>Pour entrer des délais d'enlogement dans les fiches emplacement  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacement**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacement** , puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche emplacement appropriée.  
-3.  Sur le raccourci **Entrepôt**, dans le champ **Délai enlogement**, indiquez le nombre de jours que vous souhaitez inclure dans le calcul de la promesse de livraison.  
+3.  Sur le raccourci **Entrepôt** , dans le champ **Délai enlogement** , indiquez le nombre de jours que vous souhaitez inclure dans le calcul de la promesse de livraison.  
 
 > [!NOTE]  
->  Si vous laissez le champ **Délai enlogement** vide, le calcul utilise la valeur de la page **Configuration de l'inventaire**.
+>  Si vous laissez le champ **Délai enlogement** vide, le calcul utilise la valeur de la page **Configuration de l'inventaire** .
 
 ### <a name="to-enter-outbound-warehouse-handling-time-in-the-inventory-setup-page"></a>Pour entrer un délai de désenlogement sur la page Configuration de l'inventaire  
 Vous pouvez configurer un délai désenlogement par défaut pour l'inventaire, à inclure dans le calcul de promesse livraison sur la ligne de vente.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration inventaire**, puis sélectionnez le lien associé.  
-2. Sur le raccourci **Général**, dans le champ **Délai enlogement sortant**, indiquez le nombre de jours que vous souhaitez inclure dans le calcul de la promesse de livraison.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration inventaire** , puis sélectionnez le lien associé.  
+2. Sur le raccourci **Général** , dans le champ **Délai enlogement sortant** , indiquez le nombre de jours que vous souhaitez inclure dans le calcul de la promesse de livraison.  
 
 > [!NOTE]  
 >  Si vous avez renseigné le champ **Délai enlogement sortant** dans la fiche magasin pour votre magasin, ce champ est utilisé en tant que délai d'enlogement sortant par défaut.  
 
 ### <a name="to-enter-outbound-warehouse-handling-time-on-location-cards"></a>Pour entrer un délai de désenlogement sortant dans les fiches emplacement  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements** , puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche emplacement appropriée.  
-3.  Sur le raccourci **Entrepôt**, dans le champ **Délai enlogement sortant**, indiquez le nombre de jours que vous souhaitez inclure dans le calcul de la promesse de livraison.  
+3.  Sur le raccourci **Entrepôt** , dans le champ **Délai enlogement sortant** , indiquez le nombre de jours que vous souhaitez inclure dans le calcul de la promesse de livraison.  
 
 > [!NOTE]  
->  Si vous laissez le champ **Délai désenlogement** vide, le calcul utilise la valeur de la page **Configuration de l'inventaire**.
+>  Si vous laissez le champ **Délai désenlogement** vide, le calcul utilise la valeur de la page **Configuration de l'inventaire** .
 
 ## <a name="to-make-an-item-critical"></a>Pour affecter le statut critique à un article  
 Avant qu'un article puisse être inclus dans le calcul de la promesse de livraison, il doit être signalé comme critique. Cette configuration garantit que les articles non critiques ne génèrent pas de calculs inutiles de promesse de livraison.   
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles** , puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche article appropriée.  
-3.  Sur le raccourci **Planifié**, sélectionnez le champ **Critique**.  
+3.  Sur le raccourci **Planifié** , sélectionnez le champ **Critique** .  
 
 ## <a name="to-calculate-an-order-promising-date"></a>Pour calculer une date promesse livraison  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Document de vente**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Document de vente** , puis sélectionnez le lien associé.  
 2.  Ouvrez le document de vente approprié et sélectionnez les lignes de document de vente que vous souhaitez que l'application calcule.  
-3.  Choisissez l'action **Promesse de livraison**, puis sélectionnez l'action **Lignes promesse de livraison**.  
+3.  Choisissez l'action **Promesse de livraison** , puis sélectionnez l'action **Lignes promesse de livraison** .  
 4.  Sélectionnez une ligne, puis l'une des options suivantes :  
 
     - Choisissez **Disponible à la vente** si vous souhaitez calculer la date la plus proche à laquelle l'article sera disponible pour ce qui est de l'inventaire, des réceptions programmées, et des besoins bruts.  

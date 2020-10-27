@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: sales, crm, integration, sync, synchronize
-ms.date: 07/23/2020
+ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 2c7b7c4175f4c17e01c114f76d0b14834e0409ae
-ms.sourcegitcommit: 7b5c927ea9a59329daf1b60633b8290b552d6531
+ms.openlocfilehash: 9d3f4e86a0da5c26a84ca79b1712f2f240e347a2
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3617714"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3922452"
 ---
 # <a name="synchronizing-data-in-business-central-with-common-data-service"></a>Synchronisation des données dans Business Central avec Common Data Service
 
@@ -43,17 +43,20 @@ Les entités dans [!INCLUDE[d365fin](includes/cds_long_md.md)], telles que des c
 
 Le tableau suivant répertorie le mappage standard entre les entités dans [!INCLUDE[d365fin](includes/d365fin_md.md)] et [!INCLUDE[d365fin](includes/cds_long_md.md)] que [!INCLUDE[d365fin](includes/d365fin_md.md)] fournit.
 
+> [!TIP]
+> Vous pouvez réinitialiser les modifications de configuration apportées aux mappages de table d’intégration et de champ à leurs paramètres par défaut en sélectionnant les mappages, puis en choisissant **Utiliser la configuration de synchronisation par défaut** .
+
 | [!INCLUDE[d365fin](includes/d365fin_md.md)] | [!INCLUDE[d365fin](includes/cds_long_md.md)] | Direction de synchronisation | Filtre par défaut |
 |---------------------------------------------|----------------------------------------------|---------------------------|----------------|
-| Représentant/Acheteur | Utilisateur | [!INCLUDE[d365fin](includes/cds_long_md.md)] -> [!INCLUDE[d365fin](includes/d365fin_md.md)] | Filtre contact [!INCLUDE[d365fin](includes/cds_long_md.md)] : l'**état** est **Non**, l'**Utilisateur sous licence** est **Oui**, le Mode utilisateur de l'intégration est **Non** |
-| Client | Compte | [!INCLUDE[d365fin](includes/d365fin_md.md)] -> [!INCLUDE[d365fin](includes/cds_long_md.md)] et [!INCLUDE[d365fin](includes/cds_long_md.md)] -> [!INCLUDE[d365fin](includes/d365fin_md.md)] | Filtre compte [!INCLUDE[d365fin](includes/cds_long_md.md)] : le **type de relation** est **Client** et l'**état** est **Actif**. Filtre [!INCLUDE[d365fin](includes/d365fin_md.md)] : **Bloqué** est vide (le client n'est pas bloqué). |
-| Fournisseur | Compte | [!INCLUDE[d365fin](includes/d365fin_md.md)] -> [!INCLUDE[d365fin](includes/cds_long_md.md)] et [!INCLUDE[d365fin](includes/cds_long_md.md)] -> [!INCLUDE[d365fin](includes/d365fin_md.md)] | Filtre compte [!INCLUDE[d365fin](includes/cds_long_md.md)] : le **type de relation** est **Fournisseur** et l'**état** est **Actif**. Filtre [!INCLUDE[d365fin](includes/d365fin_md.md)] : **Bloqué** est vide (le fournisseur n'est pas bloqué). |
+| Représentant/Acheteur | Utilisateur | [!INCLUDE[d365fin](includes/cds_long_md.md)] -> [!INCLUDE[d365fin](includes/d365fin_md.md)] | Filtre contact [!INCLUDE[d365fin](includes/cds_long_md.md)] : l' **état** est **Non** , l' **Utilisateur sous licence** est **Oui** , le Mode utilisateur de l'intégration est **Non** |
+| Client | Compte | [!INCLUDE[d365fin](includes/d365fin_md.md)] -> [!INCLUDE[d365fin](includes/cds_long_md.md)] et [!INCLUDE[d365fin](includes/cds_long_md.md)] -> [!INCLUDE[d365fin](includes/d365fin_md.md)] | Filtre compte [!INCLUDE[d365fin](includes/cds_long_md.md)] : le **type de relation** est **Client** et l' **état** est **Actif** . Filtre [!INCLUDE[d365fin](includes/d365fin_md.md)] : **Bloqué** est vide (le client n'est pas bloqué). |
+| Fournisseur | Compte | [!INCLUDE[d365fin](includes/d365fin_md.md)] -> [!INCLUDE[d365fin](includes/cds_long_md.md)] et [!INCLUDE[d365fin](includes/cds_long_md.md)] -> [!INCLUDE[d365fin](includes/d365fin_md.md)] | Filtre compte [!INCLUDE[d365fin](includes/cds_long_md.md)] : le **type de relation** est **Fournisseur** et l' **état** est **Actif** . Filtre [!INCLUDE[d365fin](includes/d365fin_md.md)] : **Bloqué** est vide (le fournisseur n'est pas bloqué). |
 | Contact | Contact | [!INCLUDE[d365fin](includes/d365fin_md.md)] -> [!INCLUDE[d365fin](includes/cds_long_md.md)] et [!INCLUDE[d365fin](includes/cds_long_md.md)] -> [!INCLUDE[d365fin](includes/d365fin_md.md)] | Filtre contact [!INCLUDE[d365fin](includes/d365fin_md.md)] : le champ **Type** est défini sur **Personne** et le contact est affecté à une compagnie. Filtre contact [!INCLUDE[d365fin](includes/cds_long_md.md)] : le contact est affecté à une compagnie et le type de client parent est **Compte** |
 | Devise | Devise de transaction | [!INCLUDE[d365fin](includes/d365fin_md.md)] -> [!INCLUDE[d365fin](includes/cds_long_md.md)] |  |
 
 
 ### <a name="tip-for-admins-viewing-entity-mappings"></a>Astuce dédiée aux administrateurs : affichage des mappages d'entité
-Vous pouvez afficher le mappage entre les entités dans [!INCLUDE[d365fin](includes/cds_long_md.md)] et les tables dans [!INCLUDE[d365fin](includes/d365fin_md.md)] sur la page **Mappages de table d'intégration**, où vous pouvez également appliquer des filtres. Vous définissez le mappage entre les champs des tables [!INCLUDE[d365fin](includes/d365fin_md.md)] et les champs des entités [!INCLUDE[d365fin](includes/cds_long_md.md)] de la page **Mappage de champ d'intégration**, où vous pouvez ajouter une logique de mappage supplémentaire. Par exemple, cela peut être utile si vous devez résoudre un problème de synchronisation.
+Vous pouvez afficher le mappage entre les entités dans [!INCLUDE[d365fin](includes/cds_long_md.md)] et les tables dans [!INCLUDE[d365fin](includes/d365fin_md.md)] sur la page **Mappages de table d'intégration** , où vous pouvez également appliquer des filtres. Vous définissez le mappage entre les champs des tables [!INCLUDE[d365fin](includes/d365fin_md.md)] et les champs des entités [!INCLUDE[d365fin](includes/cds_long_md.md)] de la page **Mappage de champ d'intégration** , où vous pouvez ajouter une logique de mappage supplémentaire. Par exemple, cela peut être utile si vous devez résoudre un problème de synchronisation.
 
 ## <a name="see-also"></a>Voir aussi  
 [Coupler et synchroniser des enregistrements manuellement](admin-how-to-couple-and-synchronize-records-manually.md)   

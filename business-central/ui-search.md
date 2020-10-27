@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: find
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 37ee56fef2f7424e0655303f2a6111a8b3eae94f
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 11efef293064aa5624bc0a5af2c59002ccd914d6
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3195325"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3923380"
 ---
 # <a name="finding-pages-and-information-with-tell-me"></a>Recherche de pages et d'informations avec Tell Me  
 Cette rubrique décrit comment la fonction Tell me peut vous aider à accéder rapidement aux actions, pages ou rapports, à trouver des informations concernant la manière d'exécuter une tâche particulière et à découvrir des applications supplémentaires et des services de conseil pour [!INCLUDE[d365fin](includes/d365fin_md.md)].  
@@ -25,11 +25,11 @@ Cette rubrique décrit comment la fonction Tell me peut vous aider à accéder r
 
 Si vous avez besoin d'aide pour trouver quelque chose, utilisez l'icône ![Dites-moi ce que vous voulez faire](media/ui-search/search.png "Page ou rapport pour la recherche") **Dites-moi ce que vous voulez faire** pour le rechercher. Vous pouvez également utiliser ALT+Q pour commencer à utiliser Tell Me.
 
-Lorsque vous commencez à taper des caractères, [!INCLUDE[d365fin](includes/d365fin_md.md)] affiche immédiatement des correspondances. Les résultats dans la liste change à mesure que vous tapez des caractères. Lorsque vous saisissez le mot « produit » et que les résultats comprennent **Articles**, c'est parce que la fonction Tell me utilise des synonymes et d'autres termes de recherche pour simplifier la recherche d'actions, de pages et de rapports.
+Lorsque vous commencez à taper des caractères, [!INCLUDE[d365fin](includes/d365fin_md.md)] affiche immédiatement des correspondances. Les résultats dans la liste change à mesure que vous tapez des caractères. Lorsque vous saisissez le mot « produit » et que les résultats comprennent **Articles** , c'est parce que la fonction Tell me utilise des synonymes et d'autres termes de recherche pour simplifier la recherche d'actions, de pages et de rapports.
 
 La colonne à droite indique la catégorie générale des résultats. Par exemple, si elle ouvre une page de liste ou s'il s'agit d'une tâche administrative.  
 
-Au bas de la fenêtre **Tell Me** il y a une action appelée **exploration**, qui ouvre un aperçu des fonctionnalités qui vous montre toutes les fonctionnalités disponibles pour votre rôle ou pour tous les rôles. Pour plus d'informations, voir [Recherche de pages avec l'explorateur de rôles ](ui-role-explorer.md).
+Au bas de la fenêtre **Tell Me** il y a une action appelée **exploration** , qui ouvre un aperçu des fonctionnalités qui vous montre toutes les fonctionnalités disponibles pour votre rôle ou pour tous les rôles. Pour plus d'informations, voir [Recherche de pages avec l'explorateur de rôles ](ui-role-explorer.md).
 
 > [!NOTE]  
 >   Si vous préférez utiliser votre clavier, utilisez la touche Tab et les touches de direction pour choisir un article dans les résultats. Si vous appuyez sur Entrée dans votre clavier sans choisir un résultat, [!INCLUDE[d365fin](includes/d365fin_md.md)] ouvre le résultat répertorié en premier.
@@ -43,13 +43,13 @@ La section **Sur la page actuelle** vous permet de rechercher et d'exécuter des
 ### <a name="finding-a-page-or-a-task"></a>Rechercher une page ou une tâche
 Les résultats dans la section **Accéder à Pages et tâches** permet d'accéder aux autres pages et d'exécuter des tâches ou de rechercher des informations. Si vous utilisez souvent ces pages, vous pouvez choisir l’icône de signet pour ajouter un lien vers n’importe quelle page de votre Tableau de bord. Pour plus d'informations, voir [Ajouter une action de page à votre Tableau de bord](ui-bookmarks.md).
 
-Les pages et les tâches répertoriées dépendent de l'expérience utilisateur que vous avez choisie pour votre compagnie. L'expérience de type **Essential** donne accès à moins d'options que l'expérience **Premium**. La première fois que vous vous connectez, vous utilisez l'expérience **Essential**. Pour plus d'informations, voir [Personnalisation de votre expérience [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-experiences.md).
+Les pages et les tâches répertoriées dépendent de l'expérience utilisateur que vous avez choisie pour votre compagnie. L'expérience de type **Essential** donne accès à moins d'options que l'expérience **Premium** . La première fois que vous vous connectez, vous utilisez l'expérience **Essential** . Pour plus d'informations, voir [Personnalisation de votre expérience [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-experiences.md).
 
 ### <a name="finding-a-report-or-archived-information"></a>Rechercher un rapport ou des informations archivées
 La section **Accéder à Rapports et analyse** offre un accès aux outils de création de rapports. Par exemple, vous pouvez ouvrir le rapport **Bilan** dans la liste, ou accéder aux documents archivés et à d'autres informations.  
 
 ### <a name="finding-information-in-the-help"></a>Rechercher des informations dans l'aide
-Sous **Documentation**, vous pouvez visualiser les articles de la documentation [!INCLUDE[d365fin](includes/d365fin_md.md)] qui décrivent les concepts et fournissent des conseils détaillés sur l'exécution de tâches dans l'application.    
+Sous **Documentation** , vous pouvez visualiser les articles de la documentation [!INCLUDE[d365fin](includes/d365fin_md.md)] qui décrivent les concepts et fournissent des conseils détaillés sur l'exécution de tâches dans l'application.    
 
 > [!NOTE]  
 > La documentation des extensions tierces n'est pas incluse dans les résultats.

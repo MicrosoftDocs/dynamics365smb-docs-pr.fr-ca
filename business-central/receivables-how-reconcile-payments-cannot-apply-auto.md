@@ -8,40 +8,40 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, cash receipts
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: e2074a9c6209f6b292db27a4f719fa40b6b2cda6
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 2b4acded234f4cb6aa0ef85c663866032ce49121
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3782834"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3926457"
 ---
 # <a name="reconcile-payments-that-cannot-be-applied-automatically"></a>Rapprocher les paiements qui ne peuvent pas être affectés automatiquement
-Vous serez parfois amené à gérer des paiements sur votre compte bancaire, qui ne peuvent pas être affectés à une écriture client, fournisseur ou compte bancaire ouverte associée. Les motifs peuvent être qu'il n'existe dans [!INCLUDE[d365fin](includes/d365fin_md.md)] aucun document auquel le paiement puisse être lettré, ou que le document associé dans [!INCLUDE[d365fin](includes/d365fin_md.md)] affiche un montant différent du montant de la transaction, par exemple, en raison du taux de change. Sur la page **Journal rapprochement paiement**, tous les montants de transaction pour les paiements qui n'ont pas encore été affectés s'affichent dans le champ **Différence**, y compris les montants qui ne peuvent pas être affectés pour des motifs tels que celui qui précède.
+Vous serez parfois amené à gérer des paiements sur votre compte bancaire, qui ne peuvent pas être affectés à une écriture client, fournisseur ou compte bancaire ouverte associée. Les motifs peuvent être qu'il n'existe dans [!INCLUDE[d365fin](includes/d365fin_md.md)] aucun document auquel le paiement puisse être lettré, ou que le document associé dans [!INCLUDE[d365fin](includes/d365fin_md.md)] affiche un montant différent du montant de la transaction, par exemple, en raison du taux de change. Sur la page **Journal rapprochement paiement** , tous les montants de transaction pour les paiements qui n'ont pas encore été affectés s'affichent dans le champ **Différence** , y compris les montants qui ne peuvent pas être affectés pour des motifs tels que celui qui précède.
 
 Les paiements qui ne peuvent pas être affectés peuvent apparaître sur les lignes journal rapprochement paiement pour les raisons suivantes :
 
-* La valeur du champ **Différence** est égale à celle du champ **Montant transaction**, ce qui indique qu'aucune partie du paiement ne peut être lettrée à une écriture comptable client, fournisseur ou compte bancaire ouverte associée.
-* La valeur du champ **Différence** est inférieure à celle du champ **Montant transaction**, ce qui indique qu'une partie du paiement peut être lettrée à une écriture comptable client, fournisseur ou compte bancaire ouverte associée. La partie restante du paiement ne peut pas être affectée et doit être rapprochée manuellement ou en la reportant directement sur un compte.
+* La valeur du champ **Différence** est égale à celle du champ **Montant transaction** , ce qui indique qu'aucune partie du paiement ne peut être lettrée à une écriture comptable client, fournisseur ou compte bancaire ouverte associée.
+* La valeur du champ **Différence** est inférieure à celle du champ **Montant transaction** , ce qui indique qu'une partie du paiement peut être lettrée à une écriture comptable client, fournisseur ou compte bancaire ouverte associée. La partie restante du paiement ne peut pas être affectée et doit être rapprochée manuellement ou en la reportant directement sur un compte.
 
-Pour rapprocher de tels paiements, vous pouvez cliquer sur le bouton **Transférer la différence vers un compte**, puis spécifier sur quel compte le montant du champ **Différence** sera reporté lorsque vous reportez le journal rapprochement paiement.
+Pour rapprocher de tels paiements, vous pouvez cliquer sur le bouton **Transférer la différence vers un compte** , puis spécifier sur quel compte le montant du champ **Différence** sera reporté lorsque vous reportez le journal rapprochement paiement.
 
 > [!TIP]  
 >   Il existe une fonctionnalité similaire permettant de configurer le rapprochement automatique des paiements récurrents qui ne peuvent pas être affectés aux écritures ouvertes associées du grand livre client, fournisseur ou compte bancaire. Pour plus d'informations, voir [Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique](receivables-how-map-text-recurring-payments-accounts-auto-reconcilliation.md).
 
 ## <a name="to-reconcile-payments-that-cannot-be-applied-automatically"></a>Pour rapprocher les paiements qui ne peuvent pas être affectés automatiquement
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux rapprochement bancaire**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux rapprochement bancaire** , puis sélectionnez le lien associé.
 2. Ouvrez un journal rapprochement paiement. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
-3. Sélectionnez l'action **Transférer la différence vers un compte**. La page **Transférer la différence vers un compte** s'ouvre.
-4. Dans le champ **Type compte**, spécifiez le type de compte sur lequel le montant du paiement sera validé.
-5. Dans le champ **N° compte**, spécifiez le compte dans lequel le montant du paiement sera reporté.
-6. Dans le champ **Description**, spécifiez le texte qui décrit cette validation de prélèvement. Par défaut, le texte du champ **Texte transaction** de la ligne feuille rapprochement bancaire est inséré.
-7. Cliquez sur le bouton **OK**.
+3. Sélectionnez l'action **Transférer la différence vers un compte** . La page **Transférer la différence vers un compte** s'ouvre.
+4. Dans le champ **Type compte** , spécifiez le type de compte sur lequel le montant du paiement sera validé.
+5. Dans le champ **N° compte** , spécifiez le compte dans lequel le montant du paiement sera reporté.
+6. Dans le champ **Description** , spécifiez le texte qui décrit cette validation de prélèvement. Par défaut, le texte du champ **Texte transaction** de la ligne feuille rapprochement bancaire est inséré.
+7. Cliquez sur le bouton **OK** .
 
 Si la valeur du champ **Différence** est égale à la valeur du champ **Montant transaction** lorsque vous validez la feuille rapprochement bancaire, l'intégralité du paiement sur la ligne feuille sera validé directement dans le compte contrepartie spécifié.
 
-Si la valeur du champ **Différence** était inférieure à la valeur du champ **Montant transaction**, une ligne feuille supplémentaire est créée avec le même texte et la même date et avec la différence insérée dans le champ **Montant transaction**. Sur la ligne feuille d'origine, la différence est déduite de la valeur du champ **Montant transaction**, et le paiement demeure lettré à son écriture comptable client, fournisseur ou compte bancaire associée. Lorsque vous reportez le journal rapprochement paiement, une partie du paiement est reportée en tant que paiement affecté. L'autre partie du paiement est reportée directement dans le compte spécifié.
+Si la valeur du champ **Différence** était inférieure à la valeur du champ **Montant transaction** , une ligne feuille supplémentaire est créée avec le même texte et la même date et avec la différence insérée dans le champ **Montant transaction** . Sur la ligne feuille d'origine, la différence est déduite de la valeur du champ **Montant transaction** , et le paiement demeure lettré à son écriture comptable client, fournisseur ou compte bancaire associée. Lorsque vous reportez le journal rapprochement paiement, une partie du paiement est reportée en tant que paiement affecté. L'autre partie du paiement est reportée directement dans le compte spécifié.
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion des comptes client](receivables-manage-receivables.md)  

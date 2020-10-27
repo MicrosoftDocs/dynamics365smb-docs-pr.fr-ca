@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: special price, alternate price, pricing
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: f1269ad2503806669209d642d929bc8b712a5115
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 8027465189507ce9ad78ebadea9dcc086e512ea4
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3783059"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3926832"
 ---
 # <a name="record-special-purchase-prices-and-discounts"></a>Enregistrer les prix d'achat spéciaux et les escomptes
 Vous devez définir les différentes ententes de prix et d'escompte qui s'appliquent lors d'achats effectués auprès de plusieurs fournisseurs de sorte que les valeurs et règles convenues s'appliquent aux documents achat créés à l'intention des fournisseurs.
@@ -34,16 +34,16 @@ En ce qui concerne les remises, vous pouvez définir et utiliser deux types de r
 Dans la mesure où les remises ligne achat et les prix achat sont basés sur une combinaison article/fournisseur, vous pouvez également effectuer cette configuration à partir de la fiche article dans laquelle sont définies les règles et valeurs. Pour plus d'informations, voir [Enregistrer de nouveaux articles](inventory-how-register-new-items.md).
 
 ## <a name="to-set-up-a-special-purchase-price-for-a-vendor"></a>Pour configurer un prix d'achat spécial pour un fournisseur
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs**, puis sélectionnez le lien associé.
-2. Ouvrez la fiche fournisseur appropriée, puis sélectionnez l'action **Prix**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs** , puis sélectionnez le lien associé.
+2. Ouvrez la fiche fournisseur appropriée, puis sélectionnez l'action **Prix** .
 
     Le champ **Type d'achat** est prérempli avec **Fournisseur** et le champ **Code achat** est prérempli avec le numéro du fournisseur.
 3. Renseignez les champs de la ligne selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Remplissez une ligne pour chaque combinaison pour laquelle le fournisseur vous accorde un escompte ligne achat.
 
 ## <a name="to-set-up-a-line-discount-for-a-vendor"></a>Pour configurer un escompte ligne pour un fournisseur
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs**, puis sélectionnez le lien associé.
-2. Ouvrez la fiche fournisseur appropriée, puis sélectionnez l'action **Remises ligne**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs** , puis sélectionnez le lien associé.
+2. Ouvrez la fiche fournisseur appropriée, puis sélectionnez l'action **Remises ligne** .
 
     Le champ **Type d'achat** est prérempli avec **Fournisseur** et le champ **Code achat** est prérempli avec le numéro du fournisseur.
 3. Renseignez les champs de la ligne selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -52,18 +52,18 @@ Dans la mesure où les remises ligne achat et les prix achat sont basés sur une
 ## <a name="to-set-up-an-invoice-discount-for-a-vendor"></a>Pour configurer un escompte facture pour un fournisseur
 Une fois que vos fournisseurs vous ont informé des escomptes facture qu'ils accordent, entrez le code escompte facture sur les fiches fournisseur et configurez les conditions pour chaque code.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs** , puis sélectionnez le lien associé.
 2. Ouvrez la fiche fournisseur d'un fournisseur pouvant faire l'objet de remises facture.
-3. Dans le champ **Code remise facture**, sélectionnez un code pour les conditions de remise facture appropriées à utiliser pour calculer les remises facture pour le fournisseur.
+3. Dans le champ **Code remise facture** , sélectionnez un code pour les conditions de remise facture appropriées à utiliser pour calculer les remises facture pour le fournisseur.
 
     > [!NOTE]  
     >   Les codes escompte facture sont représentés par les fiches fournisseur existantes. Cela vous permet d'affecter rapidement les conditions d'escompte facture aux fournisseurs en sélectionnant le nom d'autres fournisseurs qui bénéficient des mêmes conditions.
 
     Configurez de nouvelles conditions d'escompte facture pour les achats.
-4. Sur la page **Fiche fournisseur**, sélectionnez l'action **Escomptes facture**. La page **Escomptes facture fournisseur** s'ouvre.
-5. Dans le champ **Code devise**, indiquez le code d'une devise à laquelle s'appliquent les conditions de remise facture. Laissez le champ vierge si vous souhaitez configurer des conditions d'escompte facture en USD.
-6. Dans le champ **Montant minimum**, entrez le montant minimal qu'une facture doit présenter pour faire l'objet de la remise.
-7. Dans le champ **% remise**, entrez la remise facture sous la forme d'un pourcentage du montant de la facture.
+4. Sur la page **Fiche fournisseur** , sélectionnez l'action **Escomptes facture** . La page **Escomptes facture fournisseur** s'ouvre.
+5. Dans le champ **Code devise** , indiquez le code d'une devise à laquelle s'appliquent les conditions de remise facture. Laissez le champ vierge si vous souhaitez configurer des conditions d'escompte facture en USD.
+6. Dans le champ **Montant minimum** , entrez le montant minimal qu'une facture doit présenter pour faire l'objet de la remise.
+7. Dans le champ **% remise** , entrez la remise facture sous la forme d'un pourcentage du montant de la facture.
 8. Répétez les étapes 5 à 7 pour chaque devise pour laquelle le fournisseur recevra un escompte facture différent.
 
 L'escompte facture est désormais configuré et affecté au fournisseur concerné. Lorsque vous sélectionnez le code fournisseur dans le champ **Code remise facture** dans d'autres fiches fournisseur, la même remise facture est affecté à ces fournisseurs.
@@ -71,10 +71,10 @@ L'escompte facture est désormais configuré et affecté au fournisseur concern�
 ## <a name="to-choose-a-principle-for-posting-purchase-discounts"></a>Pour sélectionner un principe de report des escomptes achat  
 Lorsque vous reportez une facture achat qui comprend un ou plusieurs escomptes, vous pouvez choisir entre deux principes de report des montants d'escompte. Vous pouvez reporter des escomptes indépendamment ou les soustraire des escomptes facture.  
 
-Avant cela, vous devez avoir configuré les comptes nécessaires pour reporter des montants d'escompte dans le plan comptable. Vous devez également vérifier que vous avez entré les numéros de compte corrects dans les paramètres comptabilisation des champs **Compte remise ligne achat** et **Compte remise fact. achat**.
+Avant cela, vous devez avoir configuré les comptes nécessaires pour reporter des montants d'escompte dans le plan comptable. Vous devez également vérifier que vous avez entré les numéros de compte corrects dans les paramètres comptabilisation des champs **Compte remise ligne achat** et **Compte remise fact. achat** .
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration achats et à payer**, puis sélectionnez le lien associé.
-2. Dans le champ **Comptabilisation remise**, sélectionnez l'un des principes de validation des remises suivants.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration achats et à payer** , puis sélectionnez le lien associé.
+2. Dans le champ **Comptabilisation remise** , sélectionnez l'un des principes de validation des remises suivants.
 
 |**Principe de validation des remises**|**Remise facture**|**Remise ligne**|  
 |------------------------------------|--------------------------|-----------------------|  
@@ -88,7 +88,7 @@ Si vous avez défini des conditions pour les remises facture avec des fournisseu
 
  Avant d'utiliser les remises facture pour les achats, vous devez spécifier les fournisseurs qui vous offriront les remises.  
 
- Vous pouvez associer les pourcentages escompte à des montants de facture spécifiques sur les pages **Escomptes facture fournisseur**. Vous pouvez entrer le nombre de pourcentages de votre choix sur chaque page. Chaque fournisseur peut disposer de sa propre page ou vous pouvez associer plusieurs fournisseurs à une même page.  
+ Vous pouvez associer les pourcentages escompte à des montants de facture spécifiques sur les pages **Escomptes facture fournisseur** . Vous pouvez entrer le nombre de pourcentages de votre choix sur chaque page. Chaque fournisseur peut disposer de sa propre page ou vous pouvez associer plusieurs fournisseurs à une même page.  
 
  En plus du pourcentage d'escompte, vous pouvez lier un montant de frais forfaitaires au montant d'une facture.  
 

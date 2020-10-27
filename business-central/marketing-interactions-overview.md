@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: relationship, prospect
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: c35b44eb016604a74cd8fd22fed655b6b5363eaa
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 0fcdaf30443151919f0760ad18cce1cb7df25d36
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3781620"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3923680"
 ---
 # <a name="managing-interactions"></a>Gestion des interactions
 Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les interactions désignent tous les types de communication entre votre compagnie et vos contacts. Par exemple, les communications peuvent s'effectuer par courriel, par lettre, par téléphone, lors de réunions et ainsi de suite.

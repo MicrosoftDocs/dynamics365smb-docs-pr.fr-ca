@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: warehouse, distribution center
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 805439e0cc50fe0b9dc3132050eb7c7041ffe7a7
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 81ee1ad91bd4ec887d85e940152f18e99a6d464c
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3785956"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3923780"
 ---
 # <a name="set-up-locations"></a>Configurer des emplacements
 Si vous achetez, enregistrez, ou vendez des articles à plusieurs emplacements ou entrepôts, vous devez spécifier chaque emplacement avec une fiche emplacement et définir des acheminements transfert.
@@ -28,19 +28,19 @@ Vous pouvez ensuite créer des lignes document pour un emplacement spécifique, 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE4aQvq?rel=0]
 
 ## <a name="to-create-a-location-card"></a>Pour créer une fiche emplacement
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements**, puis sélectionnez le lien associé.
-2. Sélectionnez l'action **Nouveau**.
-3. Sur la page **Fiche emplacement**, renseignez les champs comme nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements** , puis sélectionnez le lien associé.
+2. Sélectionnez l'action **Nouveau** .
+3. Sur la page **Fiche emplacement** , renseignez les champs comme nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Répétez les étapes 2 et 3 pour chaque emplacement dans lequel vous souhaitez conserver un inventaire.
 
 > [!NOTE]  
 > De nombreux champs de la fiche emplacement se rapportent à la gestion des articles dans les processus enlogement et désenlogement. Pour plus d'informations, voir [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).
 
 ## <a name="to-create-a-transfer-route"></a>Pour créer un acheminement transfert
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Acheminements transfert**, puis sélectionnez le lien associé.
-2. Sinon, à partir de n'importe quelle page **Fiche emplacement**, cliquez sur **Acheminements transfert**.
-3. Sélectionnez l'action **Nouveau**.
-4. Sur la page **Fiche emplacement**, renseignez les champs comme nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Acheminements transfert** , puis sélectionnez le lien associé.
+2. Sinon, à partir de n'importe quelle page **Fiche emplacement** , cliquez sur **Acheminements transfert** .
+3. Sélectionnez l'action **Nouveau** .
+4. Sur la page **Fiche emplacement** , renseignez les champs comme nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 Vous pouvez à présent transférer des articles en inventaire entre deux emplacements. Pour plus d'informations, voir [Transfert d'inventaire entre des emplacements](inventory-how-transfer-between-locations.md).    
 

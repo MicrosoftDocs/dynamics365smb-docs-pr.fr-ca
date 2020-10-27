@@ -10,23 +10,23 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, direct payment posting, reconcile payment, expenses, cash receipts
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 2eb195d194ae2091a10f2d85d1b802577239b268
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: fd26f288ee6128539c9a8dd415d98126d693c3fe
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3781470"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3926632"
 ---
 # <a name="applying-payments-automatically-and-reconciling-bank-accounts"></a>Lettrage automatique des paiements et rapprochement des comptes bancaires
 Vous devez régulièrement rapprocher vos comptes bancaires, créances client et créances fournisseur en affectant les paiements enregistrés au niveau de la banque à leurs factures impayées et notes de crédit associées ou à d'autres écritures ouvertes dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
-Vous pouvez effectuer cette tâche sur la page **Journal rapprochement bancaire**, par exemple, en important un fichier ou un flux de relevé bancaire pour enregistrer rapidement les paiements. Les paiements sont affectés aux écritures client ou fournisseur ouvertes selon les correspondances entre le texte de paiement et les informations d'écriture. Vous pouvez réviser et modifier les affectations automatiques avant de reporter le journal. Vous pouvez choisir de fermer les écritures de compte bancaire ouvertes associées aux écritures affectées lorsque vous reportez le journal. Le compte bancaire est automatiquement rapproché lorsque tous les paiements sont affectés.
+Vous pouvez effectuer cette tâche sur la page **Journal rapprochement bancaire** , par exemple, en important un fichier ou un flux de relevé bancaire pour enregistrer rapidement les paiements. Les paiements sont affectés aux écritures client ou fournisseur ouvertes selon les correspondances entre le texte de paiement et les informations d'écriture. Vous pouvez réviser et modifier les affectations automatiques avant de reporter le journal. Vous pouvez choisir de fermer les écritures de compte bancaire ouvertes associées aux écritures affectées lorsque vous reportez le journal. Le compte bancaire est automatiquement rapproché lorsque tous les paiements sont affectés.
 
 La logique qui gère la correspondance automatique du texte de paiement avec les informations d'écriture est configurée sur la page **Règles affectation paiement** comme une série de règles hiérarchisées que vous pouvez modifier.
 
-Vous pouvez également rapprocher des comptes bancaires sans rapprocher simultanément des paiements. Vous effectuez ce travail sur la page **Rapprochement bancaire**. Pour plus d'informations, voir [Rapprocher des comptes bancaires](bank-how-reconcile-bank-accounts-separately.md).   
+Vous pouvez également rapprocher des comptes bancaires sans rapprocher simultanément des paiements. Vous effectuez ce travail sur la page **Rapprochement bancaire** . Pour plus d'informations, voir [Rapprocher des comptes bancaires](bank-how-reconcile-bank-accounts-separately.md).   
 
 Pour importer des relevés bancaires en tant que flux bancaire, vous devez d'abord configurer et activer le service Envestnet Yodlee Bank Feeds, puis associer vos comptes bancaires aux comptes bancaires connexes en ligne. Pour plus d'informations, voir [Configurer le service Envestnet Yodlee Bank Feeds](bank-how-setup-bank-statement-service.md).  
 
@@ -40,7 +40,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Appliquer manuellement les paiements en affichant des informations détaillées sur les données de correspondance et des suggestions d'écritures ouvertes candidates auxquelles affecter des paiements. |[Réviser ou affecter les paiements après une affectation automatique](receivables-how-review-apply-payments-auto-application.md) |
 | Résoudre les paiements qui ne peuvent pas être affectés automatiquement à leurs écritures ouvertes associées. Par exemple, si les montants sont différents ou si une écriture associée n'existe pas. |[Rapprocher les paiements qui ne peuvent pas être affectés automatiquement](receivables-how-reconcile-payments-cannot-apply-auto.md) |
 | Lier le texte des paiements à des comptes client, fournisseur ou grand livre spécifiques, pour toujours reporter les dépenses ou réceptions récurrentes en liquide sur ces comptes quand elles ne peuvent être affectées à aucun document. |[Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique](receivables-how-map-text-recurring-payments-accounts-auto-reconcilliation.md) |
-|Configurez les règles pour définir comment les paiements/transactions bancaires doivent être automatiquement affectés à leurs écritures ouvertes associées lorsque vous utilisez la fonction **Affecter automatiquement** sur la page **Journal rapprochement bancaire**.|[Configurer des règles pour l'affectation automatique des paiements](receivables-how-set-up-payment-application-rules.md)|
+|Configurez les règles pour définir comment les paiements/transactions bancaires doivent être automatiquement affectés à leurs écritures ouvertes associées lorsque vous utilisez la fonction **Affecter automatiquement** sur la page **Journal rapprochement bancaire** .|[Configurer des règles pour l'affectation automatique des paiements](receivables-how-set-up-payment-application-rules.md)|
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/use-journals-dynamics-365-business-central/index)
 

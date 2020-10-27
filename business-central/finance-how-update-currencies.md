@@ -5,14 +5,14 @@ author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.search.keywords: multiple currencies, adjust exchange rates
-ms.date: 08/18/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 35d478faf6d9eddb7240c2c346d6a7deedc583f0
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 9027fe7cb01efe2e06ef52154f30f2fa8fb41b83
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3778073"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924138"
 ---
 # <a name="update-currency-exchange-rates"></a>Mettre à jour des taux de change devise
 
@@ -27,11 +27,11 @@ Comme les taux de change ne cessent de fluctuer, il convient d'ajuster périodiq
 Le traitement en lot **Ajuster taux de change** permet d'ajuster manuellement les taux de change des écritures client, fournisseur et compte bancaire reportées. D'autres montants en devise de report additionnelle peuvent également être mis à jour dans les écritures.  
 
 > [!TIP]
-> Vous pouvez utiliser un service pour mettre à jour automatiquement les taux de change dans le système. Pour plus d'informations, reportez vous à [Configurer un service de taux de change des devises](finance-how-update-currencies.md#to-set-up-a-currency-exchange-rate-service). Cependant, cela n’ajuste pas les taux de change sur les transactions déjà reportées. Pour mettre à jour les taux de change sur les écritures reportées, utilisez le traitement en lot **Ajuster les taux de change**.
+> Vous pouvez utiliser un service pour mettre à jour automatiquement les taux de change dans le système. Pour plus d'informations, reportez vous à [Configurer un service de taux de change des devises](finance-how-update-currencies.md#to-set-up-a-currency-exchange-rate-service). Cependant, cela n’ajuste pas les taux de change sur les transactions déjà reportées. Pour mettre à jour les taux de change sur les écritures reportées, utilisez le traitement en lot **Ajuster les taux de change** .
 
 ### <a name="effect-on-customers-and-vendors"></a>Effet sur les clients et fournisseurs
 
-Pour les comptes client et fournisseur, le traitement en lot ajuste la devise en utilisant le taux de change qui est valide à la date de report spécifiée dans le traitement en lot. Le traitement en lot calcule les différences pour chaque solde en devise et reporte les montants dans le compte GL spécifié dans le champ **Compte gains non réalisés** ou **Compte pertes non réalisées** de la page **Devises**. Les écritures de contrepartie sont automatiquement reportées sur le compte client/fournisseur dans le grand livre.
+Pour les comptes client et fournisseur, le traitement en lot ajuste la devise en utilisant le taux de change qui est valide à la date de report spécifiée dans le traitement en lot. Le traitement en lot calcule les différences pour chaque solde en devise et reporte les montants dans le compte GL spécifié dans le champ **Compte gains non réalisés** ou **Compte pertes non réalisées** de la page **Devises** . Les écritures de contrepartie sont automatiquement reportées sur le compte client/fournisseur dans le grand livre.
 
 Ce traitement en lot traite toutes les écritures client et toutes les écritures fournisseur ouvertes. En cas de différence du taux de change d'une écriture, le traitement en lot crée une écriture client ou fournisseur détaillée reflétant le montant ajusté dans l'écriture client ou fournisseur.
 
@@ -39,7 +39,7 @@ Ce traitement en lot traite toutes les écritures client et toutes les écriture
 Les dimensions des écritures client/fournisseur sont affectées aux écritures ajustement et les ajustements sont reportés par combinaison de valeurs de dimension.
 
 ### <a name="effect-on-bank-accounts"></a>Effet sur les comptes bancaires
-Pour les comptes bancaires, le traitement en lot ajuste la devise en utilisant le taux de change qui est valide à la date de report spécifiée dans le traitement en lot. Le traitement en lot calcule les différences pour chaque compte bancaire possédant un code devise et reporte les montants dans le compte GL spécifié dans le champ **Compte gains réalisés** ou **Compte pertes réalisées** de la page **Devises**. Les écritures de contrepartie sont automatiquement reportées sur les comptes bancaires du grand livre spécifiés dans les groupes de report compte bancaire. Le traitement en lot calcule une écriture par devise et par groupe de report.
+Pour les comptes bancaires, le traitement en lot ajuste la devise en utilisant le taux de change qui est valide à la date de report spécifiée dans le traitement en lot. Le traitement en lot calcule les différences pour chaque compte bancaire possédant un code devise et reporte les montants dans le compte GL spécifié dans le champ **Compte gains réalisés** ou **Compte pertes réalisées** de la page **Devises** . Les écritures de contrepartie sont automatiquement reportées sur les comptes bancaires du grand livre spécifiés dans les groupes de report compte bancaire. Le traitement en lot calcule une écriture par devise et par groupe de report.
 
 #### <a name="dimensions-on-bank-account-entries"></a>Dimensions sur des écritures compte bancaire
 Les dimensions par défaut du compte bancaire sont affectées aux écritures ajustement pour le compte GL du compte bancaire et pour le compte gain/perte.
@@ -51,24 +51,24 @@ Si vous effectuez le report dans une devise de report additionnelle, vous pouvez
 Les dimensions par défaut des comptes dans lesquels elles sont reportées sont affectées aux écritures ajustement.
 
 > [!Important]
-> Avant de pouvoir utiliser le traitement en lot, vous devez entrer les taux de change ajustement qui sont utilisés pour ajuster les soldes en devises étrangères. Pour ce faire sur la page **Taux de change devise**.<br><br>  
+> Avant de pouvoir utiliser le traitement en lot, vous devez entrer les taux de change ajustement qui sont utilisés pour ajuster les soldes en devises étrangères. Pour ce faire sur la page **Taux de change devise** .<br><br>  
 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE3Q24s?rel=0]
 
 ## <a name="to-set-up-a-currency-exchange-rate-service"></a>Configurer un service de taux de change des devises
 Vous pouvez utiliser un service externe pour tenir vos taux de change des devises à jour, par exemple FloatRates.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Services de taux de change devise**, puis sélectionnez le lien associé.
-2. Sélectionnez l'action **Nouveau**.
-3. Sur la page **Service de taux de change devise**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Services de taux de change devise** , puis sélectionnez le lien associé.
+2. Sélectionnez l'action **Nouveau** .
+3. Sur la page **Service de taux de change devise** , renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Activez la case à cocher **Activé** pour activer le service.
 <br><br>  
   
 > [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE4A1jy?rel=0]
 
 ## <a name="to-update-currency-exchange-rates-through-a-service"></a>Pour mettre à jour les taux de change des devises à partir d'un service
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Devises**, puis sélectionnez le lien associé.
-2. Choisissez l'option **Mettre à jour les taux de change**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Devises** , puis sélectionnez le lien associé.
+2. Choisissez l'option **Mettre à jour les taux de change** .
 
 La valeur dans le champ **Taux de change** de la page **Devises** est mise à jour avec le dernier taux de change des devises.
 

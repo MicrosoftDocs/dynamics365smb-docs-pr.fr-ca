@@ -8,18 +8,18 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: tasks, work
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: f1127bd8e99f8ef6342ec240b4f42b52b11b36bb
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 0d9b84ff608d6778bb20dfe009978fbe624f47c0
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3781895"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924888"
 ---
 # <a name="add-comments-to-cards-and-documents"></a>Ajouter des commentaires aux fiches et aux documents
 Vous pouvez ajouter des informations supplémentaires dans les comptes du grand livre, les fiches client ou les documents de vente pour communiquer des exceptions ou des ententes spéciales à d'autres utilisateurs.
-La plupart des fiches et documents ont une action **Commentaires**, qui ouvre la page **Feuille de commentaires** dans laquelle vous pouvez saisir ou lire les commentaires. Sur les documents, vous pouvez également ajouter des commentaires à différentes lignes.
+La plupart des fiches et documents ont une action **Commentaires** , qui ouvre la page **Feuille de commentaires** dans laquelle vous pouvez saisir ou lire les commentaires. Sur les documents, vous pouvez également ajouter des commentaires à différentes lignes.
 
 Les commentaires sur les documents en cours sont transférés dans le document reporté associé. Par exemple, un commentaire sur un document de vente est transféré sur une livraison vente reportée qui en résulte.
 
@@ -31,10 +31,10 @@ En outre, vous pouvez spécifier si vous souhaitez que des commentaires soient t
 La section suivante décrit comment ajouter un commentaire à une fiche article. Les étapes sont similaires pour toutes les autres fiches et documents, sauf sur les lignes document, l'action **Commentaires** est placée sur un menu d'action de lignes.
 
 ## <a name="to-add-a-comments-to-an-item-card"></a>Pour ajouter des commentaires à une fiche article
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles** , puis sélectionnez le lien associé.
 2. Ouvrez la fiche article appropriée.
-3. Sélectionnez l'action **Commentaires**.
-4. Sur la page **Feuille de commentaires**, vous pouvez saisir le texte, puis choisir le bouton **OK**.
+3. Sélectionnez l'action **Commentaires** .
+4. Sur la page **Feuille de commentaires** , vous pouvez saisir le texte, puis choisir le bouton **OK** .
 
 ## <a name="see-also"></a>Voir aussi
 [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

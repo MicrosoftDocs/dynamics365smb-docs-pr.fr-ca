@@ -1,8 +1,6 @@
 ---
 title: Créer et gérer les contacts de la compagnie| Microsoft Docs
 description: Paramétrez tous les entités externes avec lesquelles vous avez une relation d'affaires (par exemple les prospects, les clients, les fournisseurs, et les consultants) comme contacts.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,17 +8,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: relationship, prospect
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 1e1c951a3eb0a8b519ac5c0f7c5112cb40272219
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: ea0bf893088694115e5cb54f2b9500bb4eacf6ac
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3779271"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3922779"
 ---
 # <a name="managing-contacts"></a>Gestion de contacts
+
 Les employés de notre compagnie rencontrent régulièrement des prospects qui peuvent devenir des relations formelles. Tous ces contacts externes et leurs informations détaillées doivent être enregistrés dans le système, de telle sorte que la communication soit plus réussie et qu'ils se transforment facilement en relations client, fournisseur ou bancaires formelles.
+
+Utilisez la liste **Contacts** pour gérer vos contacts. À partir de là, vous pouvez créer des opportunités et gérer d’autres interactions avec des contacts individuels. Vous pouvez également afficher des statistiques sur un contact et accéder à une gamme de rapports. Pour savoir comment trouver le bon contact dans la liste, voir [Tri, recherche et filtrage](ui-enter-criteria-filters.md).  
 
 Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.
 
@@ -32,5 +33,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Résoudre la confusion lorsque deux enregistrements ou plus existent pour le même contact.|[Fusionner l'enregistrement des doublons](sales-how-merge-duplicate-records.md)|
 
 ## <a name="see-also"></a>Voir aussi
+
 [Gestion des opportunités de ventes](marketing-manage-sales-opportunities.md)  
+[Tri, recherche et filtrage](ui-enter-criteria-filters.md)  
 [Utilisation de Business Central](ui-work-product.md)  

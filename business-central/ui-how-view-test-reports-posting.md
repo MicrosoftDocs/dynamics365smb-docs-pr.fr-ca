@@ -9,14 +9,14 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: solsen
-ms.openlocfilehash: e91332cd90ded6560f34bc2378eaf6e286b2eb43
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: a2c8071abc075caf359d942da5a3638ef811d126
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3195517"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3925631"
 ---
 # <a name="view-test-reports-before-posting"></a>Afficher des rapports de test avant le report
 Lorsque vous êtes prêt à reporter un document (commande, facture ou note de crédit, par exemple), vous pouvez vérifier le document pour vous assurer qu'aucun problème ne risque de bloquer le report.
@@ -25,9 +25,9 @@ Lorsque vous êtes prêt à reporter un document (commande, facture ou note de c
 >   La procédure suivante permet de tester un document achat avant son report. Il s'agit de la même fonctionnalité pour les documents vente.
 
 ## <a name="to-print-a-test-report-before-posting-a-purchase-invoice"></a>Pour réaliser un rapport de test avant de reporter une facture achat
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures achat**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures achat** , puis sélectionnez le lien associé.
 2. Ouvrez la facture achat à tester.
-3. Sélectionnez l'option **Impression test**.  
+3. Sélectionnez l'option **Impression test** .  
 
 Tous les éléments de la facture achat sont vérifiés et le résultat est présenté dans un rapport. Si le rapport signale des erreurs ou des informations manquantes, vous devez corriger le problème avant de reporter la facture achat.
 

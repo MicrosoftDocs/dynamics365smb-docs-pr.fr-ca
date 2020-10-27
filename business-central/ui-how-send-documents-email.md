@@ -5,15 +5,15 @@ author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.workload: na
-ms.search.keywords: SMTP, mail, Office 365, cover, body, PayPal, layout
-ms.date: 05/13/2020
+ms.search.keywords: SMTP, mail, Microsoft 365, cover, body, PayPal, layout
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: d80b76614ad0ddf901a288859d8e6595d908c7ae
-ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
+ms.openlocfilehash: 72ed1cba131e76eba2020e4cca9c900b9b2ed45c
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527995"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3923430"
 ---
 # <a name="send-documents-by-email"></a>Envoyer des documents par courriel
 
@@ -25,43 +25,43 @@ Vous pouvez envoyer en pièce jointe à des courriels pratiquement tous les type
 
 À partir de tous les documents pris en charge, vous initiez l'envoi d'e-mails en sélectionnant l'action **Envoyer** sur les documents validés, ou l'action **Valider et envoyer** sur les documents non validés.
 
-Si le champ **Courriel** sur la page **Envoyer le document à** est défini sur **Oui (Afficher une invite pour le réglage des paramètres)**, la page **Envoyer courriel** s'affiche. Le champ **À :** est prérempli avec le contact et le document est en pièce jointe sous forme de fichier PDF. Dans le champ **Corps**, vous pouvez saisir un texte manuellement ou faire en sorte que le champ contienne un corps de message spécifique au document que vous avez configuré.
+Si le champ **Courriel** sur la page **Envoyer le document à** est défini sur **Oui (Afficher une invite pour le réglage des paramètres)** , la page **Envoyer courriel** s'affiche. Le champ **À :** est prérempli avec le contact et le document est en pièce jointe sous forme de fichier PDF. Dans le champ **Corps** , vous pouvez saisir un texte manuellement ou faire en sorte que le champ contienne un corps de message spécifique au document que vous avez configuré.
 
 La procédure suivante décrit comment définir l'état **Ventes : Facture** à utiliser pour les corps de message spécifiques à un document lorsque vous envoyez par e-mail des factures vente validées.
 
 ## <a name="to-set-up-a-document-specific-email-body-for-sales-invoices"></a>Pour configurer un corps de message spécifique à un document pour les factures vente
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Sélection des rapports - Ventes**, puis sélectionnez le lien associé.
-2. Sur la page **Sélection de rapport - Ventes**, dans le champ **Utilisation**, sélectionnez **Facture**.
-3. Sur une nouvelle ligne, dans le champ **ID état**, sélectionnez, par exemple, l'état standard 1306.
-4. Cochez la case **Utiliser pour le corps du message e-mail**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Sélection des rapports - Ventes** , puis sélectionnez le lien associé.
+2. Sur la page **Sélection de rapport - Ventes** , dans le champ **Utilisation** , sélectionnez **Facture** .
+3. Sur une nouvelle ligne, dans le champ **ID état** , sélectionnez, par exemple, l'état standard 1306.
+4. Cochez la case **Utiliser pour le corps du message e-mail** .
 5. Choisissez le champ **Code présentation du corps du message e-mail** et sélectionnez une présentation dans la liste déroulante.
 
     Les présentations de rapport définissent à la fois le style et le contenu du corps de message, y compris le texte standard qui précède les informations de base relatives au document dans le corps du message. Vous pouvez visualiser toutes les présentations d'état disponibles si vous choisissez le bouton **Sélectionner dans la liste complète** dans la liste déroulante.
-6. Pour afficher ou modifier la présentation sur laquelle le corps du message est basé, sélectionnez la présentation sur la page **Présentations rapport personnalisées**, puis cliquez sur **Modifier présentation**.
+6. Pour afficher ou modifier la présentation sur laquelle le corps du message est basé, sélectionnez la présentation sur la page **Présentations rapport personnalisées** , puis cliquez sur **Modifier présentation** .
 7. Si vous souhaitez proposer à vos clients de payer les ventes par voie électronique, vous pouvez configurer le service de paiement associé, comme Paypal par exemple, puis insérer également les informations et le lien hypertexte Paypal dans le corps du message. Pour plus d'informations, voir [Activer les paiements client via Paypal](sales-how-enable-payment-service-extensions.md).
-8. Cliquez sur le bouton **OK**.
+8. Cliquez sur le bouton **OK** .
 
-Désormais, lorsque vous sélectionnez, par exemple, l'action **Envoyer** sur la page **Facture vente reportée**, le corps du message comporte les informations de document du rapport 1306 précédé d'un texte standard auquel sont appliqués des attributs de style en fonction de la présentation de rapport que vous avez sélectionnée à l'étape 5.
+Désormais, lorsque vous sélectionnez, par exemple, l'action **Envoyer** sur la page **Facture vente reportée** , le corps du message comporte les informations de document du rapport 1306 précédé d'un texte standard auquel sont appliqués des attributs de style en fonction de la présentation de rapport que vous avez sélectionnée à l'étape 5.
 
 La procédure suivante décrit comment envoyer une facture vente reportée en tant que courriel avec le document en pièce jointe sous forme de fichier PDF et avec un corps de message spécifique au document.
 
 ## <a name="to-send-documents-by-email"></a>Pour envoyer des documents par courriel
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures vente reportées**, puis sélectionnez le lien associé.
-2. Sélectionnez la facture vente validée appropriée, puis cliquez sur **Envoyer**. La page **Envoyer le document à** s'affiche.
-3. Dans le champ **E-mail**, sélectionnez **Oui (Afficher une invite pour le réglage des paramètres)**. Pour plus d'informations, reportez vous à [Configurer des profils d'envoi de documents](sales-how-setup-document-send-profiles.md).
-4. Cliquez sur le bouton **OK**. La page **Envoyer courriel** s'affiche.
-5. Dans le champ **À :**, entrez une adresse e-mail valide. La valeur par défaut est l'adresse de courriel du client.
-6. Dans le champ **Objet**, saisissez un texte descriptif de l'objet. La valeur par défaut est le nom du client et le numéro de facture.
-7. Dans le champ **Pièce jointe**, la facture générée est jointe par défaut en tant que fichier PDF.
-8. Dans le champ **Corps**, entrez un message court au destinataire.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures vente reportées** , puis sélectionnez le lien associé.
+2. Sélectionnez la facture vente validée appropriée, puis cliquez sur **Envoyer** . La page **Envoyer le document à** s'affiche.
+3. Dans le champ **E-mail** , sélectionnez **Oui (Afficher une invite pour le réglage des paramètres)** . Pour plus d'informations, reportez vous à [Configurer des profils d'envoi de documents](sales-how-setup-document-send-profiles.md).
+4. Cliquez sur le bouton **OK** . La page **Envoyer courriel** s'affiche.
+5. Dans le champ **À :** , entrez une adresse e-mail valide. La valeur par défaut est l'adresse de courriel du client.
+6. Dans le champ **Objet** , saisissez un texte descriptif de l'objet. La valeur par défaut est le nom du client et le numéro de facture.
+7. Dans le champ **Pièce jointe** , la facture générée est jointe par défaut en tant que fichier PDF.
+8. Dans le champ **Corps** , entrez un message court au destinataire.
 
-    Si le corps d'un courriel spécifique à un document est configuré sur la page **Sélection de rapport - Ventes**, le champ **Corps** est renseigné automatiquement. Pour plus d'informations, voir [Pour configurer le corps d'un courriel spécifique à un document pour les factures vente](ui-how-send-documents-email.md#to-set-up-a-document-specific-email-body-for-sales-invoices).
+    Si le corps d'un courriel spécifique à un document est configuré sur la page **Sélection de rapport - Ventes** , le champ **Corps** est renseigné automatiquement. Pour plus d'informations, voir [Pour configurer le corps d'un courriel spécifique à un document pour les factures vente](ui-how-send-documents-email.md#to-set-up-a-document-specific-email-body-for-sales-invoices).
 9. Cliquez sur le bouton **OK** pour envoyer le courriel.
 
 > [!NOTE]  
-> Si vous ne souhaitez pas spécifier les paramètres de courriel chaque fois que vous envoyez un document par courriel, vous pouvez sélectionner l'option **Oui (Utiliser les paramètres par défaut)** dans le champ **Courriel** de la page **Envoyer le document à**. Dans ce cas, la page **Envoyer courriel** ne s'affiche pas. Reportez-vous à l'étape 4. Pour plus d'informations, reportez vous à [Configurer des profils d'envoi de documents](sales-how-setup-document-send-profiles.md).  
+> Si vous ne souhaitez pas spécifier les paramètres de courriel chaque fois que vous envoyez un document par courriel, vous pouvez sélectionner l'option **Oui (Utiliser les paramètres par défaut)** dans le champ **Courriel** de la page **Envoyer le document à** . Dans ce cas, la page **Envoyer courriel** ne s'affiche pas. Reportez-vous à l'étape 4. Pour plus d'informations, reportez vous à [Configurer des profils d'envoi de documents](sales-how-setup-document-send-profiles.md).  
 
 ## <a name="documents-marked-as-printed-when-they-are-sent"></a>Documents marqués comme imprimés lors de leur envoi
 

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 07/14/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 541d3842977e7b139877d9a26fcc39b448ef9745
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: b6999be84e2fdaca2eefef41c339c366c330a3dc
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3786981"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3925040"
 ---
 # <a name="about-planning-functionality"></a>À propos de la fonctionnalité Planification
 
@@ -97,7 +97,7 @@ Pour plus d'informations, voir [Détails de conception : paramètres de planifi
 Dans la plupart des commandes d'approvisionnement, comme les bons de production, vous pouvez sélectionner **Illimité** ou **Aucun** dans le champ **Flexibilité planification** des lignes.
 
 Cela spécifie si l'approvisionnement représenté par la ligne O.F. est pris en compte par le système de planification lors du calcul des messages d'action.
-Si le champ affiche l'option **Illimitée**, le système de planification inclut la ligne lors du calcul des messages d'action. S'il est paramétré sur **Aucune**, la ligne est ferme et définitive, et le système de planification n'inclut pas la ligne dans le calcul des messages d'action.
+Si le champ affiche l'option **Illimitée** , le système de planification inclut la ligne lors du calcul des messages d'action. S'il est paramétré sur **Aucune** , la ligne est ferme et définitive, et le système de planification n'inclut pas la ligne dans le calcul des messages d'action.
 
 ### <a name="warning"></a>Alerte
 
@@ -148,7 +148,7 @@ La page **Feuille de réquisition** répertorie les articles que vous souhaitez 
 
 - Saisissez les articles manuellement dans la feuille et renseignez les champs correspondants.
 
-- Utilisez le traitement en lot **Calculer planning**. Cette opération permet de calculer un plan de réapprovisionnement pour les articles et les unités de stock ayant été configurés avec un système de réapprovisionnement **Achat** ou **Transfert**. Lorsque vous utilisez ce traitement en lot, le programme renseigne automatiquement le champ **Message d'action** en y indiquant une proposition d'action en vue du réapprovisionnement de l'article. Cette opération peut contribuer, par exemple, à augmenter la quantité d'articles d'une commande existante ou à créer une nouvelle commande.
+- Utilisez le traitement en lot **Calculer planning** . Cette opération permet de calculer un plan de réapprovisionnement pour les articles et les unités de stock ayant été configurés avec un système de réapprovisionnement **Achat** ou **Transfert** . Lorsque vous utilisez ce traitement en lot, le programme renseigne automatiquement le champ **Message d'action** en y indiquant une proposition d'action en vue du réapprovisionnement de l'article. Cette opération peut contribuer, par exemple, à augmenter la quantité d'articles d'une commande existante ou à créer une nouvelle commande.
 
 - Si vous avez utilisé le traitement en lot **Calculer planning** à partir de la page **Feuille planification** pour calculer un plan de réapprovisionnement, vous pouvez utiliser le traitement en lot **Traiter messages d'action** pour copier des propositions bon de commande et ordre transfert de la feuille planification à la feuille de réquisition. Ceci est commode si des utilisateurs séparés sont responsables de la gestion des bons de production et des commandes achat/ordres transfert.
 
@@ -156,7 +156,7 @@ La page **Feuille de réquisition** répertorie les articles que vous souhaitez 
 
 - Vous pouvez utiliser l'action **Commande spéciale** pour renseigner les lignes feuille de réquisition. Cette action utilise le traitement en lot **Extraire documents de vente** pour déterminer les lignes document de vente que vous souhaitez désigner pour une commande spéciale.
 
-Les lignes feuille de réquisition contiennent des informations détaillées sur les articles à recommander. Vous pouvez modifier et supprimer les lignes pour ajuster le plan de réapprovisionnement et poursuivre le traitement des lignes à l'aide du traitement en lot **Traiter messages d'action**.
+Les lignes feuille de réquisition contiennent des informations détaillées sur les articles à recommander. Vous pouvez modifier et supprimer les lignes pour ajuster le plan de réapprovisionnement et poursuivre le traitement des lignes à l'aide du traitement en lot **Traiter messages d'action** .
 
 Pour plus d'informations sur la planification à l'aide d'emplacements et de transferts, voir [Planification avec/sans emplacements](production-planning-with-without-locations.md).
 

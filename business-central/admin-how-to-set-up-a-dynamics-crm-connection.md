@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 07/24/2020
+ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 10a257b60aedfb22066148fd48145779cd6d4a62
-ms.sourcegitcommit: ac492bff0c87bf2a23fa93113e7571da9d5094c7
+ms.openlocfilehash: 51f04f690483fd5b0c3f093ac5f8e2694ca3fdd9
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "3702002"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924638"
 ---
 # <a name="connect-to-common-data-service"></a>Se connecter à Common Data Service
 
@@ -34,7 +34,7 @@ Avant de créer la connexion, quelques informations doivent être préparées :
 
 ## <a name="set-up-a-connection-to-cds_long_md"></a>Configurer une connexion vers [!INCLUDE[cds_long_md](includes/cds_long_md.md)]
 
-Pour tous les types d'authentification autres que l'authentification Office 365, configurez votre connexion à [!INCLUDE[cds_long_md](includes/cds_long_md.md)] sur la page **Configuration de la connexion CDS**. Pour l'authentification Office 365, il est recommandé d'utiliser le guide de configuration assistée **Configurer la connexion Common Data Service**. Le guide facilite la configuration de la connexion et spécifie les fonctions avancées telles que le modèle de propriété et la synchronisation initiale.  
+Pour tous les types d’authentification autres que l’authentification Microsoft 365, configurez votre connexion à [!INCLUDE[cds_long_md](includes/cds_long_md.md)] sur la page **Configuration de la connexion CDS** . Pour l’authentification Microsoft 365, il est recommandé d’utiliser le guide de configuration assistée **Configurer la connexion Common Data Service** . Le guide facilite la configuration de la connexion et spécifie les fonctions avancées telles que le modèle de propriété et la synchronisation initiale.  
 
 > [!IMPORTANT]
 > Pendant la configuration de la connexion à [!INCLUDE[cds_long_md](includes/cds_long_md.md)], l'administrateur sera invité à accorder les autorisations suivantes à l'application Azure enregistrée nommée [!INCLUDE[d365fin](includes/d365fin_md.md)] Intégration à [!INCLUDE[cds_long_md](includes/cds_long_md.md)] :
@@ -47,15 +47,15 @@ Pour tous les types d'authentification autres que l'authentification Office 365,
 
 ### <a name="to-use-the-set-up-common-data-service-connection-assisted-setup-guide"></a>Pour utiliser le guide de configuration assistée Configurer la connexion Common Data Service
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration assistée**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration assistée** , puis sélectionnez le lien associé.
 2. Sélectionnez **Configurer la connexion Common Data Service** pour lancer le guide de configuration assistée.
 3. Renseignez les champs selon vos besoins.
 
 ### <a name="to-create-or-maintain-the-connection-manually"></a>Pour créer ou conserver manuellement la connexion
 
-La procédure suivante décrit comment configurer manuellement la connexion sur la page **Configuration de la connexion CDS**. Il s'agit également de la page sur laquelle vous gérez les paramètres pour l'intégration.
+La procédure suivante décrit comment configurer manuellement la connexion sur la page **Configuration de la connexion CDS** . Il s'agit également de la page sur laquelle vous gérez les paramètres pour l'intégration.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration de la connexion CDS**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration de la connexion CDS** , puis sélectionnez le lien associé.
 2. Saisissez les informations suivantes pour la connexion de [!INCLUDE[cds_long_md](includes/cds_long_md.md)] vers [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
     |Champ|Description|
@@ -63,22 +63,22 @@ La procédure suivante décrit comment configurer manuellement la connexion sur 
     |**URL Environnement**|Si vous possédez des environnements dans [!INCLUDE[cds_long_md](includes/cds_long_md.md)], nous les trouverons lorsque vous exécuterez le guide de configuration. Si vous souhaitez vous connecter à un autre environnement dans un autre abonné, vous pouvez saisir les informations d'identification administrateur pour l'environnement et nous les découvrirons. |
     |**Activé**|Commencez avec l'intégration. Si vous n'activez pas la connexion tout de suite, les paramètres de connexion seront sauvegardés, mais les utilisateurs ne seront pas en mesure d'accéder aux données [!INCLUDE[cds_long_md](includes/cds_long_md.md)] à partir de [!INCLUDE[d365fin](includes/d365fin_md.md)]. Vous pouvez revenir sur cette page et activer la connexion ultérieurement.  |
 
-3. Dans le champ **Modèle de propriété**, choisissez si vous souhaitez une entité Équipe dans [!INCLUDE[cds_long_md](includes/cds_long_md.md)] pour posséder de nouveaux enregistrements, ou un ou plusieurs utilisateurs spécifiques. Si vous choisissez **Personne**, vous devez indiquer chaque utilisateur. Si vous choisissez **Équipe**, l'unité fonctionnelle par défaut BCI_Company s'affiche dans le champ **Unité fonctionnelle couplée**.
+3. Dans le champ **Modèle de propriété** , choisissez si vous souhaitez une entité Équipe dans [!INCLUDE[cds_long_md](includes/cds_long_md.md)] pour posséder de nouveaux enregistrements, ou un ou plusieurs utilisateurs spécifiques. Si vous choisissez **Personne** , vous devez indiquer chaque utilisateur. Si vous choisissez **Équipe** , l'unité fonctionnelle par défaut BCI_Company s'affiche dans le champ **Unité fonctionnelle couplée** .
 
     <!--Need to verify the details in this table, are these specific to Sales maybe?-->
     Saisissez les paramètres avancés suivants.
 
     |Champ|Description|
     |-----|-----|
-    |**Les utilisateurs [!INCLUDE[d365fin](includes/d365fin_md.md)] doivent être associés aux utilisateurs CDS**|Si vous utilisez le modèle de propriété Personne, spécifiez si les comptes d'utilisateur [!INCLUDE[d365fin](includes/d365fin_md.md)] doivent avoir des comptes d'utilisateur correspondants dans [!INCLUDE[cds_long_md](includes/cds_long_md.md)]. L'**adresse de courriel pour l'authentification Office 365** de l'utilisateur [!INCLUDE[d365fin](includes/d365fin_md.md)] doit être identique à l'**adresse de courriel principale** de l'utilisateur [!INCLUDE[crm_md](includes/crm_md.md)].<br /><br /> Si vous définissez la valeur sur **Oui**, les utilisateurs [!INCLUDE[d365fin](includes/d365fin_md.md)] qui n'ont pas un compte d'utilisateur [!INCLUDE[crm_md](includes/crm_md.md)] correspondant ne disposeront pas de fonctions d'intégration de [!INCLUDE[d365fin](includes/d365fin_md.md)] dans l'interface utilisateur. L'accès aux données [!INCLUDE[crm_md](includes/crm_md.md)] directement à partir de [!INCLUDE[d365fin](includes/d365fin_md.md)] se fait au nom du compte d'utilisateur [!INCLUDE[crm_md](includes/crm_md.md)].<br /><br /> Si vous définissez la valeur sur **Non**, tous les utilisateurs [!INCLUDE[d365fin](includes/d365fin_md.md)] disposeront de fonctions d'intégration de [!INCLUDE[crm_md](includes/crm_md.md)] dans l'interface utilisateur. L'accès aux données [!INCLUDE[crm_md](includes/crm_md.md)] directement à partir de [!INCLUDE[crm_md](includes/crm_md.md)] se fait au nom de l'utilisateur (intégration) de connexion.|
+    |**Les utilisateurs [!INCLUDE[d365fin](includes/d365fin_md.md)] doivent être associés aux utilisateurs CDS**|Si vous utilisez le modèle de propriété Personne, spécifiez si les comptes d'utilisateur [!INCLUDE[d365fin](includes/d365fin_md.md)] doivent avoir des comptes d'utilisateur correspondants dans [!INCLUDE[cds_long_md](includes/cds_long_md.md)]. **L’adresse de courriel pour l’authentification Microsoft 365** de l’utilisateur [!INCLUDE[d365fin](includes/d365fin_md.md)] doit être identique à **l’adresse de courriel principale** de l’utilisateur [!INCLUDE[crm_md](includes/crm_md.md)].<br /><br /> Si vous définissez la valeur sur **Oui** , les utilisateurs [!INCLUDE[d365fin](includes/d365fin_md.md)] qui n'ont pas un compte d'utilisateur [!INCLUDE[crm_md](includes/crm_md.md)] correspondant ne disposeront pas de fonctions d'intégration de [!INCLUDE[d365fin](includes/d365fin_md.md)] dans l'interface utilisateur. L'accès aux données [!INCLUDE[crm_md](includes/crm_md.md)] directement à partir de [!INCLUDE[d365fin](includes/d365fin_md.md)] se fait au nom du compte d'utilisateur [!INCLUDE[crm_md](includes/crm_md.md)].<br /><br /> Si vous définissez la valeur sur **Non** , tous les utilisateurs [!INCLUDE[d365fin](includes/d365fin_md.md)] disposeront de fonctions d'intégration de [!INCLUDE[crm_md](includes/crm_md.md)] dans l'interface utilisateur. L'accès aux données [!INCLUDE[crm_md](includes/crm_md.md)] directement à partir de [!INCLUDE[crm_md](includes/crm_md.md)] se fait au nom de l'utilisateur (intégration) de connexion.|
     |**Le représentant Business Central actuel est associé à un utilisateur**|Indique si votre compte d'utilisateur correspond à un compte dans [!INCLUDE[crm_md](includes/crm_md.md)] <!--double check the name of this field-->|
 
-4. Pour tester les paramètres de connexion, choisissez **Connexion**, puis **Tester la connexion**.  
+4. Pour tester les paramètres de connexion, choisissez **Connexion** , puis **Tester la connexion** .  
 
     > [!NOTE]  
-    > Si le chiffrement des données n'est pas activé dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous recevrez un message vous demandant si vous souhaitez l'activer. Pour activer le chiffrement des données, cliquez sur **Oui** et fournissez les informations requises. Sinon, sélectionnez **Non**. Vous pouvez activer le chiffrement des données ultérieurement. Pour plus d'informations, voir [Chiffrement des données dans Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-encrypting-data) de l'aide sur Developer and Administration.  
+    > Si le chiffrement des données n'est pas activé dans [!INCLUDE[d365fin](includes/d365fin_md.md)], vous recevrez un message vous demandant si vous souhaitez l'activer. Pour activer le chiffrement des données, cliquez sur **Oui** et fournissez les informations requises. Sinon, sélectionnez **Non** . Vous pouvez activer le chiffrement des données ultérieurement. Pour plus d'informations, voir [Chiffrement des données dans Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-encrypting-data) de l'aide sur Developer and Administration.  
 
-5. Si la synchronisation de [!INCLUDE[cds_long_md](includes/cds_long_md.md)] n'est pas déjà configurée, vous recevrez un message vous demandant si vous souhaitez utiliser la configuration de synchronisation par défaut. Selon que vous souhaitez conserver ou non les enregistrements alignés dans [!INCLUDE[cds_long_md](includes/cds_long_md.md)] et [!INCLUDE[d365fin](includes/d365fin_md.md)], sélectionnez **Oui** ou **Non**.
+5. Si la synchronisation de [!INCLUDE[cds_long_md](includes/cds_long_md.md)] n'est pas déjà configurée, vous recevrez un message vous demandant si vous souhaitez utiliser la configuration de synchronisation par défaut. Selon que vous souhaitez conserver ou non les enregistrements alignés dans [!INCLUDE[cds_long_md](includes/cds_long_md.md)] et [!INCLUDE[d365fin](includes/d365fin_md.md)], sélectionnez **Oui** ou **Non** .
 
 ## <a name="show-me-the-process"></a>Afficher le processus
 
@@ -88,7 +88,7 @@ La vidéo suivante décrit les étapes pour connecter [!INCLUDE[d365fin](include
 
 ## <a name="connecting-on-premises-versions"></a>Connexion des versions locales
 
-Pour connecter [!INCLUDE[d365fin](includes/d365fin_md.md)] sur site à [!INCLUDE[cds_long_md](includes/cds_long_md.md)], vous devez spécifier quelques informations sur la page **Configuration de la connexion Common Data Service**.
+Pour connecter [!INCLUDE[d365fin](includes/d365fin_md.md)] sur site à [!INCLUDE[cds_long_md](includes/cds_long_md.md)], vous devez spécifier quelques informations sur la page **Configuration de la connexion Common Data Service** .
 
 Si vous souhaitez vous connecter à l'aide d'un compte Azure Active Directory (Azure AD), vous devez enregistrer une application dans Azure AD et fournir le code d'application, le secret Key Vault et l'URL de redirection à utiliser. L'URL de redirection est pré-remplie et devrait fonctionner pour la plupart des installations. Vous devez configurer votre installation pour utiliser HTTPS. Pour plus d'informations, voir [Configuration de SSL pour sécuriser la connexion du client Web Business Central](/dynamics365/business-central/dev-itpro/deployment/configure-ssl-web-client-connection). Si vous configurez votre serveur pour avoir une page d'accueil différente, vous pouvez toujours changer l'URL. Le secret client sera enregistré sous forme de chaîne cryptée dans votre base de données.  
 
@@ -96,20 +96,20 @@ Si vous souhaitez vous connecter à l'aide d'un compte Azure Active Directory (A
 
 Les étapes suivantes supposent que vous utilisez Azure AD pour gérer les identités et les accès. Pour plus d'informations sur l'enregistrement d'une application dans Azure AD, voir [Démarrage rapide : enregistrer une application avec la plateforme d'identité Microsoft](/azure/active-directory/develop/quickstart-register-app). Si vous n'utilisez pas Azure AD, voir [Utilisation d'un autre service de gestion des identités et des accès](admin-how-to-set-up-a-dynamics-crm-connection.md#using-another-identity-and-access-management-service).  
 
-1. Dans le portail Azure, sous **Gérer** dans le volet de navigation, choisissez **Authentification**.  
-2. Sous **Rediriger les URL**, ajoutez l'URL de redirection suggérée sur la page de **Configuration de la connexion Common Data Service** dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
-3. Sous **Gérer**, choisissez **Autorisations d'API**.
-4. Sous **Autorisations configurées**, choisissez **Ajouter une autorisation**, puis ajoutez des autorisations déléguées sur l'onglet **API Microsoft** comme suit :
-    * Pour Business Central, ajoutez les autorisations **Financials.ReadWrite.All**.
-    * Pour Dynamics CRM, ajoutez les autorisations **user_impersonation**.  
+1. Dans le portail Azure, sous **Gérer** dans le volet de navigation, choisissez **Authentification** .  
+2. Sous **Rediriger les URL** , ajoutez l'URL de redirection suggérée sur la page de **Configuration de la connexion Common Data Service** dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
+3. Sous **Gérer** , choisissez **Autorisations d'API** .
+4. Sous **Autorisations configurées** , choisissez **Ajouter une autorisation** , puis ajoutez des autorisations déléguées sur l'onglet **API Microsoft** comme suit :
+    * Pour Business Central, ajoutez les autorisations **Financials.ReadWrite.All** .
+    * Pour Dynamics CRM, ajoutez les autorisations **user_impersonation** .  
 
     > [!NOTE]
     > Le nom de l'API Dynamics CRM peut changer.
 
-5. Sous **Gérer**, choisissez **Certificats et secrets**, puis créez un nouveau secret pour votre application. Vous utiliserez le secret soit dans [!INCLUDE[d365fin](includes/d365fin_md.md)], dans le champ **Secret client** sur la page **Configuration de la connexion Common Data Service** ou stockez-le dans un stockage sécurisé et fournissez-le dans un souscripteur d'événements, comme décrit précédemment dans cette rubrique.
-6. Choisissez **Aperçu**, puis recherchez la valeur **Code application (client)**. Il s'agit du code client de votre application. Vous devez le saisir soit sur la page **Configuration de la connexion Common Data Service** dans le champ **Code client** ou stockez-le dans un stockage sécurisé et fournissez-le à un souscripteur d'événements.
-7. Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], sur la page **Configuration de la connexion Common Data Service**, dans le champ **URL Environnement**, saisissez l'URL de votre environnement [!INCLUDE[cds_long_md](includes/cds_long_md.md)].
-8. Pour activer la connexion à [!INCLUDE[cds_long_md](includes/cds_long_md.md)], activez le bouton bascule **Activé**.
+5. Sous **Gérer** , choisissez **Certificats et secrets** , puis créez un nouveau secret pour votre application. Vous utiliserez le secret soit dans [!INCLUDE[d365fin](includes/d365fin_md.md)], dans le champ **Secret client** sur la page **Configuration de la connexion Common Data Service** ou stockez-le dans un stockage sécurisé et fournissez-le dans un souscripteur d'événements, comme décrit précédemment dans cette rubrique.
+6. Choisissez **Aperçu** , puis recherchez la valeur **Code application (client)** . Il s'agit du code client de votre application. Vous devez le saisir soit sur la page **Configuration de la connexion Common Data Service** dans le champ **Code client** ou stockez-le dans un stockage sécurisé et fournissez-le à un souscripteur d'événements.
+7. Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], sur la page **Configuration de la connexion Common Data Service** , dans le champ **URL Environnement** , saisissez l'URL de votre environnement [!INCLUDE[cds_long_md](includes/cds_long_md.md)].
+8. Pour activer la connexion à [!INCLUDE[cds_long_md](includes/cds_long_md.md)], activez le bouton bascule **Activé** .
 9. Connectez-vous avec votre compte administrateur pour Azure Active Directory (ce compte doit avoir une licence valide pour [!INCLUDE[cds_long_md](includes/cds_long_md.md)] et être administrateur dans votre environnement [!INCLUDE[cds_long_md](includes/cds_long_md.md)]). Une fois connecté, vous serez invité à autoriser votre application enregistrée à se connecter à [!INCLUDE[cds_long_md](includes/cds_long_md.md)] au nom de l'organisation. Vous devez donner votre accord pour terminer la configuration.
 
    > [!NOTE]
@@ -121,8 +121,8 @@ Si vous n'utilisez pas Azure Active Directory pour gérer les identités et les 
 
 ### <a name="to-disconnect-from-cds_long_md"></a>Pour se déconnecter de [!INCLUDE[cds_long_md](includes/cds_long_md.md)]
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration de la connexion CDS**, puis sélectionnez le lien associé.
-2. Sur la page **Configuration de la connexion CDS**, désactivez le bouton bascule **Activé**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration de la connexion CDS** , puis sélectionnez le lien associé.
+2. Sur la page **Configuration de la connexion CDS** , désactivez le bouton bascule **Activé** .  
 
 ## <a name="see-also"></a>Voir aussi
 

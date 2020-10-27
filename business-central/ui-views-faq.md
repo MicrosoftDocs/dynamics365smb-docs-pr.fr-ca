@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: list, filter, pane, views
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: mikebc
-ms.openlocfilehash: 1433e22f232b032242a4464730b07df376cadaf3
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 7b992fe4f5db07605015a88ea69d9a510adbcca4
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3189325"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3925523"
 ---
 # <a name="list-views-faq"></a>FAQ sur les vues de liste
 Cette rubrique répond aux questions fréquemment posées par nos utilisateurs expérimentés sur l'utilisation des vues de liste et la sauvegarde des filtres.  
@@ -42,7 +42,7 @@ Les mêmes vues sont disponibles sur une page de liste si vous y accédez depuis
 Au bas du volet Filtre, choisissez l'action **Réinitialiser les filtres** permettant d'effacer les modifications de filtre apportées à la vue et de revenir aux champs et critères de filtre d'origine.
 
 ### <a name="what-is-the-difference-between-hiding-and-removing-views"></a>Quelle est la différence entre masquer et supprimer des vues ?
-Le fait de supprimer une vue supprime définitivement cette vue. Le fait de masquer une vue vous permet de la masquer temporairement dans le volet Filtre, mais vous pouvez la réafficher ultérieurement en choisissant l'action **Afficher**.
+Le fait de supprimer une vue supprime définitivement cette vue. Le fait de masquer une vue vous permet de la masquer temporairement dans le volet Filtre, mais vous pouvez la réafficher ultérieurement en choisissant l'action **Afficher** .
 
 ### <a name="how-can-i-share-my-views-with-others"></a>Comment puis-je partager mes vues avec d'autres ?
 [!INCLUDE[d365fin](includes/d365fin_md.md)] ne fournit pas un moyen de partager la vue de liste précise, mais vous pouvez partager vos filtres actuels afin que les autres utilisateurs puissent voir une liste similaire d'enregistrements. Dans le navigateur de votre ordinateur de bureau, copiez simplement l’URL et partagez-la avec vos collègues. Le partage des filtres ne garantit pas au destinataire un ensemble de filtres identique à celui que vous voyez dans votre navigateur.
@@ -77,13 +77,13 @@ Notez que les vues système héritées seront supprimées lors d'une prochaine m
 ### <a name="others-in-my-organization-need-similar-list-views-as-standard-what-can-i-do"></a>D'autres membres de mon organisation ont besoin de vues de liste similaires en standard. Que puis-je faire ?
 Le fait d'utiliser des vues personnelles est rapide et efficace, mais [!INCLUDE[d365fin](includes/d365fin_md.md)] fournit des outils supplémentaires pour définir les vues de liste nécessaires à des rôles d'utilisateur spécifiques ou à tous les utilisateurs de l'organisation.
  - Les développeurs peuvent personnaliser l'environnement et créer des vues de liste dans des extensions pour tous les utilisateurs de l'organisation.
- - Les non-codeurs, tels que les administrateurs ou les chefs de service, peuvent créer des vues de liste spécifiques à un rôle lors de la personnalisation d'un rôle à partir de la page **Profils (rôles)**.
+ - Les non-codeurs, tels que les administrateurs ou les chefs de service, peuvent créer des vues de liste spécifiques à un rôle lors de la personnalisation d'un rôle à partir de la page **Profils (rôles)** .
 
 ### <a name="i-work-with-multiple-languages-how-do-i-translate-the-name-of-the-view"></a>Je travaille avec plusieurs langues : comment traduire le nom de la vue ?
-Lorsque vous enregistrez une nouvelle vue ou renommez une vue existante, vous devez entrer un nom reconnaissable et significatif pour cette vue. Le nom est enregistré pour votre langue actuelle et sera également affiché lorsque vous ou d'autres utilisateurs utiliserez [!INCLUDE[d365fin](includes/d365fin_md.md)] dans différentes langues. Pour fournir des noms de vue traduits, vous devez changer de langue à l'aide de la page **Mes paramètres**, puis renommez la vue, ce qui stockera le nom traduit dans la nouvelle langue.
+Lorsque vous enregistrez une nouvelle vue ou renommez une vue existante, vous devez entrer un nom reconnaissable et significatif pour cette vue. Le nom est enregistré pour votre langue actuelle et sera également affiché lorsque vous ou d'autres utilisateurs utiliserez [!INCLUDE[d365fin](includes/d365fin_md.md)] dans différentes langues. Pour fournir des noms de vue traduits, vous devez changer de langue à l'aide de la page **Mes paramètres** , puis renommez la vue, ce qui stockera le nom traduit dans la nouvelle langue.
 
 ### <a name="do-views-with-expressions-work-in-all-languages"></a>Les vues avec des expressions fonctionnent-elles dans toutes les langues ?
-Les expressions n'utilisant que des symboles, tels que '**|**' ou **..**, sont considérés comme sûrs pour les utilisateurs dans toutes les langues. Toutes les vues contenant des expressions comprenant des lettres, des mots-clés ou des jetons de filtre ne fonctionneront que pour la langue dans laquelle elles ont été créées.
+Les expressions n'utilisant que des symboles, tels que ' **|** ' ou **..** , sont considérés comme sûrs pour les utilisateurs dans toutes les langues. Toutes les vues contenant des expressions comprenant des lettres, des mots-clés ou des jetons de filtre ne fonctionneront que pour la langue dans laquelle elles ont été créées.
 
 
 ### <a name="see-also"></a>Voir aussi  

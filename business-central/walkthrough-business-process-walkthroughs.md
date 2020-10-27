@@ -1,6 +1,6 @@
 ---
 title: Procédures pas à pas liées au processus entreprise | Microsoft Docs
-description: "Cette sélection de procédures fournit des processus entreprise pas à pas et de bout en bout que vous pouvez suivre avec la compagnie de démonstration CRONUS International Ltd. Elles comportent différentes procédures : certaines d'entre elles sont généralement suivies par un utilisateur, tandis que d'autres impliquent plusieurs rôles utilisateur. Pour simuler l'environnement de travail, certaines procédures pas à pas contiennent les étapes de configuration nécessaires pour effectuer les exercices décrits. Ces étapes indiquent aux utilisateurs le type d'informations qu'ils doivent partager avec les responsables informatiques de leur compagnie."
+description: Cette sélection de procédures fournit des processus entreprise pas à pas et de bout en bout que vous pouvez suivre avec la compagnie de démonstration CRONUS International Ltd.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/25/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: d278175606927cc1ee1ee2dda86099f6f080822c
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 114124fa73c0de1ec45efedd913ea7ffe3439a57
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3788381"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3923330"
 ---
 # <a name="business-process-walkthroughs"></a>Procédures pas à pas liées au processus entreprise
 
@@ -39,7 +39,8 @@ Cette sélection de procédures fournit des processus entreprise pas à pas et d
 |Planifiez un projet, du début à la fin. **Requiert des exemples de données complets**|[Procédure pas à pas : gestion des projets](walkthrough-managing-projects-with-jobs.md)|  
 |Rapport sur les coûts d'un projet. **Requiert des exemples de données complets**|[Procédure pas à pas : calcul des travaux en cours pour un projet](walkthrough-calculating-work-in-process-for-a-job.md)|  
 |Prélevez des articles pour livraison dans des configurations d'entrepôt de base. **Requiert des exemples de données complets**|[Procédure pas à pas : Prélèvement et expédition dans les configurations de stockage de base](walkthrough-picking-and-shipping-in-basic-warehousing.md)|  
-|Effectuez la gestion des défauts. **Requiert des exemples de données complets**|[Procédure pas à pas : suivi des numéros de série et des numéros de lot](walkthrough-tracing-serial-lot-numbers.md)|  
+|Effectuez la gestion des défauts. **Requiert des exemples de données complets**|[Procédure pas à pas : suivi des numéros de série et des numéros de lot](walkthrough-tracing-serial-lot-numbers.md)|
+|Exportez des données métier à des fins d’audit en Allemagne.|[Procédure pas-à-pas : Exportation de données pour un audit numérique](LocalFunctionality/Germany/walkthrough-exporting-data-for-a-digital-audit.md)|
 
 ## <a name="see-also"></a>Voir aussi
 

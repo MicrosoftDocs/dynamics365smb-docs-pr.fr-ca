@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: customize, personalize, personalization, hide columns, remove fields, move fields
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: d24e78d7f0286e1ef633008e22ceb3f922b48768
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 0bd24833f37fe70f8e642685be4d28dbb593a16d
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3781370"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3923405"
 ---
 # <a name="why-a-page-is-locked-from-personalization"></a>Pourquoi la personnalisation d'une page est verrouillée
 
@@ -38,7 +38,7 @@ Deux raisons expliquent cela :
 
 ### <a name="unlocking-the-page"></a>Déverrouillage de la page
 
-Si vous souhaitez déverrouiller une page et poursuivre sa personnalisation, sélectionnez l'icône ![Verrouillage de personnalisation](media/personalization-lock-icon.png "Verrouillage de personnalisation"), puis l'action **Déverrouiller**.  
+Si vous souhaitez déverrouiller une page et poursuivre sa personnalisation, sélectionnez l'icône ![Verrouillage de personnalisation](media/personalization-lock-icon.png "Verrouillage de personnalisation"), puis l'action **Déverrouiller** .  
 
 Avant de déverrouiller la page, veillez à ce qui suit :
 
@@ -48,7 +48,7 @@ Avant de déverrouiller la page, veillez à ce qui suit :
 
 ## <a name="blocked-from-personalizing"></a>Personnalisation bloquée
 
-S'il y a une icône ![Personnalisation bloquée](media/personalization-blocked-icon.png "Personnalisation bloquée") dans la bannière **Personnalisation**, cela signifie que vous ne pouvez pas apporter de personnalisation à la page.
+S'il y a une icône ![Personnalisation bloquée](media/personalization-blocked-icon.png "Personnalisation bloquée") dans la bannière **Personnalisation** , cela signifie que vous ne pouvez pas apporter de personnalisation à la page.
 
 <!-- Only text is translated, so removing this image for non-English UX reasons.  ![Personalize blocked](media/personalization-blocked.png "Personalize lock") -->
 

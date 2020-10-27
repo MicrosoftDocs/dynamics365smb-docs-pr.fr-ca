@@ -9,14 +9,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: machinery, buildings
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: e1bbdf84a85470aa3d34d34a06efc8efbacd3909
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 4d92b4fc380dfaaf5b4fe2705367dff359eae6e5
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3788581"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3926982"
 ---
 # <a name="setting-up-fixed-assets"></a>Paramétrage d'immobilisations
 Avant de pouvoir utiliser les immobilisations, vous devez définir les éléments suivants :  
@@ -27,9 +27,9 @@ Avant de pouvoir utiliser les immobilisations, vous devez définir les élément
 Le tableau ci-dessous contient des liens vers des informations supplémentaires. Après avoir défini ces éléments, vous pouvez démarrer diverses activités. Pour plus d'informations, reportez-vous à [Immobilisations](fa-manage.md).  
 
 > [!NOTE]  
->   Vous pouvez enregistrer les transactions immobilisation sur les pages **Journal GL immobilisation** ou **Journal immobilisation**, selon que les transactions sont destinées à des rapports financiers ou pour la gestion interne. L'aide pour les immobilisations décrit uniquement la procédure d'utilisation de la page **Feuille compta. immo.**.  
+>   Vous pouvez enregistrer les transactions immobilisation sur les pages **Journal GL immobilisation** ou **Journal immobilisation** , selon que les transactions sont destinées à des rapports financiers ou pour la gestion interne. L'aide pour les immobilisations décrit uniquement la procédure d'utilisation de la page **Feuille compta. immo.** .  
 
-Lorsque vous activez une activité immobilisation dans la section **Intégration GL** sur la page **Fiche registre amortissement**, la page **Journal GL immobilisation** sera utilisée pour reporter les transactions pour l'activité.
+Lorsque vous activez une activité immobilisation dans la section **Intégration GL** sur la page **Fiche registre amortissement** , la page **Journal GL immobilisation** sera utilisée pour reporter les transactions pour l'activité.
 
 Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.  
 

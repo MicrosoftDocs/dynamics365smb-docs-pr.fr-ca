@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 6af01d93f378a7ea96d2ff8f693115804bdd167f
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 19b6cb69d33d76d4263ad75a666eba14deaeeae8
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3788960"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3925957"
 ---
 # <a name="combine-shipments-on-a-single-invoice"></a>Regroupement de livraisons sur une seule facture
 Si vous souhaitez facturer plusieurs bons de livraison à la fois, vous pouvez utiliser la fonction de regroupement des bons de livraison.  
@@ -23,25 +23,25 @@ Si vous souhaitez facturer plusieurs bons de livraison à la fois, vous pouvez u
 Avant de pouvoir regrouper des livraisons, plusieurs livraisons vente pour le même client doivent être reportées dans la même devise. Autrement dit, vous devez avoir créé au moins deux documents de vente et les avoir reportés comme étant livrés, mais pas facturés. 
 
 ## <a name="to-manually-combine-shipments-on-a-single-invoice"></a>Regrouper manuellement les expéditions sur une seule facture  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures vente**, puis sélectionnez le lien associé.  
-2. Sélectionnez l'action **Nouveau**. Pour plus d'informations, reportez-vous à [Facturer des ventes](sales-how-invoice-sales.md).
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures vente** , puis sélectionnez le lien associé.  
+2. Sélectionnez l'action **Nouveau** . Pour plus d'informations, reportez-vous à [Facturer des ventes](sales-how-invoice-sales.md).
 3. Dans le champ **N° donneur d'ordre** entrez le client facturé pour les articles livrés.  
-4. Dans le raccourci **Lignes**, sélectionnez l'action **Extraire lignes livraison**.  
+4. Dans le raccourci **Lignes** , sélectionnez l'action **Extraire lignes livraison** .  
 5. Sélectionnez la ligne livraison que vous voulez inclure dans la facture :  
 
-    - Pour insérer toutes les lignes, sélectionnez-les toutes et sélectionnez le bouton **OK**.  
-    - Pour insérer des lignes spécifiques, sélectionnez-les et sélectionnez le bouton **OK**. Vous pouvez utiliser la touche Ctrl pour sélectionner plusieurs lignes qui ne sont pas séquentielles.  
+    - Pour insérer toutes les lignes, sélectionnez-les toutes et sélectionnez le bouton **OK** .  
+    - Pour insérer des lignes spécifiques, sélectionnez-les et sélectionnez le bouton **OK** . Vous pouvez utiliser la touche Ctrl pour sélectionner plusieurs lignes qui ne sont pas séquentielles.  
 
-    Si une ligne livraison incorrecte a été sélectionnée ou si vous voulez recommencer, supprimez simplement les lignes de la facture, puis exécutez de nouveau la fonction **Extraire lignes livraison**.  
-7. Pour reporter la facture, sélectionnez l'action **Reporter**.  
+    Si une ligne livraison incorrecte a été sélectionnée ou si vous voulez recommencer, supprimez simplement les lignes de la facture, puis exécutez de nouveau la fonction **Extraire lignes livraison** .  
+7. Pour reporter la facture, sélectionnez l'action **Reporter** .  
 
 ## <a name="to-automatically-combine-shipments-on-a-single-invoice"></a>Regrouper automatiquement les expéditions sur une seule facture  
 [!INCLUDE[d365fin](includes/d365fin_md.md)] ne sélectionne que les documents de vente où **Regrouper les B.L.** est coché. 
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Regrouper les livraisons**, puis sélectionnez le lien associé. La page de demande de traitement en lot s'ouvre.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Regrouper les livraisons** , puis sélectionnez le lien associé. La page de demande de traitement en lot s'ouvre.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
-3. Cochez la case **Reporter factures**.  
-4. Choisissez le bouton **OK**.  
+3. Cochez la case **Reporter factures** .  
+4. Choisissez le bouton **OK** .  
 
 > [!NOTE]  
 >  Vous devez valider manuellement les avoirs si la case à cocher **Valider avoirs** n'a pas été activée pour le traitement par lots.  
@@ -51,9 +51,9 @@ Lorsque des livraisons sont regroupées sur une facture et reportées, une factu
 
 Lorsque vous facturez des livraisons de cette manière, les commandes à partir desquelles les livraisons ont été reportées continuent à exister, même si elles ont été entièrement reportées et facturées.   
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Supprimer les documents de vente facturés**, puis sélectionnez le lien.  
-2. Dans le champ de filtre **N°**, les commandes vente à supprimer.  
-3. Cliquez sur le bouton **OK**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Supprimer les documents de vente facturés** , puis sélectionnez le lien.  
+2. Dans le champ de filtre **N°** , les commandes vente à supprimer.  
+3. Cliquez sur le bouton **OK** .  
 
 Il est également possible de supprimer chacune des commandes vente manuellement.  
 

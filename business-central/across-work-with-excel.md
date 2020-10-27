@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accountant, accounting, financial report
-ms.date: 07/03/2020
+ms.date: 10/01/2020
 ms.author: jswymer
-ms.openlocfilehash: f782b3ce19baa29d9268f3fdf742d2aa6112957f
-ms.sourcegitcommit: 506a433298fc3629231cfa98f64a2d1428094fde
+ms.openlocfilehash: b25413c8f0479aaccfc67ae96f2870690f993dfa
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "3534607"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3927282"
 ---
 # <a name="viewing-and-editing-in-excel-from-business-central"></a>Affichage et édition dans Excel depuis Business Central
 
@@ -30,7 +30,7 @@ Avec des pages qui affichent une liste d'enregistrements dans des lignes et des 
 - Cette action fonctionne sur Windows et macOS.
 
 > [!NOTE]
-> Pour [!INCLUDE[prodshort](includes/prodshort.md)] sur site, l'action **Ouvrir dans Excel** est disponible par défaut. Cependant, si vous configurez [!INCLUDE[prodshort](includes/prodshort.md)]sur site pour la modification de données dans Excel, l'action **Ouvrir dans Excel** est alors remplacée par l'action **Modifier dans Excel**.
+> Pour [!INCLUDE[prodshort](includes/prodshort.md)] sur site, l'action **Ouvrir dans Excel** est disponible par défaut. Cependant, si vous configurez [!INCLUDE[prodshort](includes/prodshort.md)]sur site pour la modification de données dans Excel, l'action **Ouvrir dans Excel** est alors remplacée par l'action **Modifier dans Excel** .
 
 ## <a name="edit-in-excel"></a>Modifier dans Excel
 
@@ -40,7 +40,7 @@ Avec des pages qui affichent une liste d'enregistrements dans des lignes et des 
 
 - Ceci fonctionne uniquement sur Windows, pas macOS.
 
-- Vous pouvez changer la compagnie que vous utilisez. Pour ce faire, sélectionnez l'icône **Options**![Options du module complémentaire Excel](media/cogwheel.png "Options du module complémentaire Excel") dans le volet Module complémentaire Excel, puis la compagnie dans le champ **Compagnie**.  
+- Vous pouvez changer la compagnie que vous utilisez. Pour ce faire, sélectionnez l'icône **Options**![Options du module complémentaire Excel](media/cogwheel.png "Options du module complémentaire Excel") dans le volet Module complémentaire Excel, puis la compagnie dans le champ **Compagnie** .  
 
     > [!IMPORTANT]
     > Lors du changement de compagnie, assurez-vous que le champ **Environnement** n'est pas vide. Si tel est le cas, définissez-le sur l'une des options disponibles ; sinon, le module complémentaire ne fonctionnera pas correctement.  
@@ -59,5 +59,6 @@ Si vous apportez des modifications au module complémentaire, vous devez le rech
 
 ## <a name="see-also"></a>Voir aussi
 
+[Analyse des états financiers dans Microsoft Excel](finance-analyze-excel.md)  
 [Utilisation de Business Central](ui-work-product.md)  
 [Améliorations de l'intégration d'Excel dans la deuxième vague de publication 2019](/dynamics365-release-plan/2019wave2/dynamics365-business-central/enhancements-excel-integration)  

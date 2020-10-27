@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: bi, power BI, analysis, KPI
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: e4a08c3c81aa9c59c27da920deb354320559f54c
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 006df06509175a19ee63317ee89526192a924808
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3786481"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924338"
 ---
 # <a name="business-intelligence"></a>Veille économique
 Les entreprises capturent une énorme quantité de données de par leur activité quotidienne. Ces données, qui reflètent par exemple les chiffres de vente de l'organisation, les achats, les dépenses opérationnelles, les salaires des employés et les budgets, peuvent devenir des informations précieuse, ou veille économique, pour les décisionnaires. [!INCLUDE[d365fin](includes/d365fin_md.md)] contient un certain nombre de fonctionnalités qui vous permettent de collecter, d'analyser et de partager les données de votre société.
@@ -25,7 +25,7 @@ Les entreprises capturent une énorme quantité de données de par leur activit�
 La fonctionnalité Axes analytiques joue un rôle important dans la veille économique. Une dimension correspond à des données que vous pouvez ajouter à une écriture comme une sorte de marqueur. Ces données permettent de regrouper des écritures dotées de caractéristiques similaires, telles que les clients, les régions, les produits et les représentants, et de récupérer facilement ces groupes à des fins d'analyse. Entre autres utilisations, vous utilisez des dimensions lors de la définition de vues d'analyse et de la création de tableaux d'analyse pour le rapport. Pour plus d'informations, reportez-vous à [Utilisation des axes](finance-dimensions.md).
 
 > [!TIP]
-> Pour analyser rapidement les données transactionnelles par dimensions, vous pouvez filtrer les totaux du plan comptable et les entrées de toutes les pages **Entrées** par dimensions. Recherchez l'action **Définir le filtre dimension**.  
+> Pour analyser rapidement les données transactionnelles par dimensions, vous pouvez filtrer les totaux du plan comptable et les entrées de toutes les pages **Entrées** par dimensions. Recherchez l'action **Définir le filtre dimension** .  
 
 Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.  
 

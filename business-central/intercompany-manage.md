@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: IC, group, consolidation, affiliate, subsidiary
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 0499ad80020293e73879061a7bc5f8dfdb3c043c
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 070ffe0a25791f8fee51e0e4279a3886a3f18135
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3780120"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924038"
 ---
 # <a name="managing-intercompany-transactions"></a>Gestion des transactions intersociétés
 Votre organisation peut comprendre plusieurs compagnies, mais pourrait ne pas disposer du nombre équivalent d'équipes comptables et administratives. La fonctionnalité Intersociétés vous permet de commercer avec vos filiales et vos organisations partenaires internes de la même manière qu'avec vos fournisseurs et vos clients externes. Vous n'entrez les informations de transaction intersociétés qu'une seule fois dans les documents appropriés. Vous pouvez continuer à utiliser les fonctionnalités que vous connaissez bien, telles que la gestion des clients et des fournisseurs. Les fonctionnalités de mappage pour le plan comptable et les dimensions permettent de veiller à ce que les informations apparaissent aux bons endroits.  

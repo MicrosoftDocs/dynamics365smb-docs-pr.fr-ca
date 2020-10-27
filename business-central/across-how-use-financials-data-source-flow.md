@@ -9,14 +9,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms.search.keywords: workflow, OData, Power App, SOAP
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: bmeier
-ms.openlocfilehash: c2fbd841332ff48bd4716a082b0c9ef2bb9ac6df
-ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
+ms.openlocfilehash: 8f4da5b51b4e0df5cdf6f41f7a78c0a51cf0f083
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3528998"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924863"
 ---
 # <a name="using-prodshort-in-an-automated-workflow"></a>Utilisation de [!INCLUDE[prodshort](includes/prodshort.md)] dans un flux automatisé
 
@@ -32,23 +32,23 @@ Vous pouvez utiliser vos données [!INCLUDE[prodshort](includes/prodshort.md)] d
 
 1. Dans votre navigateur, accédez à [flow.microsoft.com](https://flow.microsoft.com), puis connectez-vous.
 2. Choisissez **Mes flux** dans le ruban en haut de la page.
-3. Il existe 3 façons de créer un flux : **Commencer à partir du modèle**, **Commencer à partir de rien**, et **Commencer à partir d'un connecteur**. Un modèle est un flux prédéfini créé pour vous. Pour utiliser un modèle, il suffit de le sélectionner et de créer une connexion pour chaque service qu'il utilise. Avec les options **Commencer à partir de rien** et **Commencer à partir d'un connecteur**, vous pouvez créer un flux à partir de zéro.
-4. Pour créer à partir de rien, sur la page **Mes flux**, cliquez sur les options **Commencer à partir de rien** et **Flux automatisé**.
-5. Recherchez un connecteur **Microsoft [!INCLUDE[prodlong](includes/prodlong.md)]**.
+3. Il existe 3 façons de créer un flux : **Commencer à partir du modèle** , **Commencer à partir de rien** , et **Commencer à partir d'un connecteur** . Un modèle est un flux prédéfini créé pour vous. Pour utiliser un modèle, il suffit de le sélectionner et de créer une connexion pour chaque service qu'il utilise. Avec les options **Commencer à partir de rien** et **Commencer à partir d'un connecteur** , vous pouvez créer un flux à partir de zéro.
+4. Pour créer à partir de rien, sur la page **Mes flux** , cliquez sur les options **Commencer à partir de rien** et **Flux automatisé** .
+5. Recherchez un connecteur **Microsoft [!INCLUDE[prodlong](includes/prodlong.md)]** .
 6. Définissez un nom et choisissez le déclencheur que vous souhaitez utiliser pour votre flux.
 7. Dans la liste des déclencheurs disponibles, sélectionnez l'un des déclencheurs [!INCLUDE[prodshort](includes/prodshort.md)] disponibles :  
 
-    *Lorsque l'approbation d'un fournisseur est exigée*,  
-    *Lorsque l'approbation d'une ligne journal général est exigée*,  
-    *Lors de la suppression d'un enregistrement*,  
-    *Lors de la modification d'un enregistrement*,  
-    *Lorsqu'un enregistrement est créé*,  
-    *Lorsqu'un enregistrement est modifié*,  
-    *Lorsque l'approbation d'un lot journal général est exigée*,  
-    *Lorsque l'approbation d'un client est exigée*,  
-    *Lorsque l'approbation d'un article est exigée*,  
+    *Lorsque l'approbation d'un fournisseur est exigée* ,  
+    *Lorsque l'approbation d'une ligne journal général est exigée* ,  
+    *Lors de la suppression d'un enregistrement* ,  
+    *Lors de la modification d'un enregistrement* ,  
+    *Lorsqu'un enregistrement est créé* ,  
+    *Lorsqu'un enregistrement est modifié* ,  
+    *Lorsque l'approbation d'un lot journal général est exigée* ,  
+    *Lorsque l'approbation d'un client est exigée* ,  
+    *Lorsque l'approbation d'un article est exigée* ,  
     *Lorsque l'approbation d'un document achat est exigée* ou  
-    *Lorsque l'approbation d'un document vente est exigée*.
+    *Lorsque l'approbation d'un document vente est exigée* .
 
 8. Power Automate vous invite à sélectionner un environnement et une compagnie dans votre abonné [!INCLUDE[prodshort](includes/prodshort.md)], ainsi que les conditions que vous souhaitez surveiller dans vos données.
 
@@ -57,23 +57,23 @@ Vous pouvez utiliser vos données [!INCLUDE[prodshort](includes/prodshort.md)] d
 
     À ce stade, vous êtes connecté à vos données Business Central[!INCLUDE[prodshort](includes/prodshort.md)] et vous êtes prêt à générer votre flux.
 
-9. Pour créer à partir d'un modèle, choisissez l'option **Commencer à partir du modèle**.
-10. Recherchez des modèles **Microsoft [!INCLUDE[prodlong](includes/prodlong.md)]**.
-11. Sélectionnez l'un des modèles dans la liste des modèles disponibles, puis choisissez **Créer**.  
+9. Pour créer à partir d'un modèle, choisissez l'option **Commencer à partir du modèle** .
+10. Recherchez des modèles **Microsoft [!INCLUDE[prodlong](includes/prodlong.md)]** .
+11. Sélectionnez l'un des modèles dans la liste des modèles disponibles, puis choisissez **Créer** .  
 
-    *Demander l'approbation pour les documents de vente Microsoft [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]*,  
-    *Demander l'approbation pour les devis vente [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Microsoft*,  
-    *Demander l'approbation pour les factures vente [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Microsoft*,  
-    *Demander l'approbation pour les notes de crédit vente Microsoft [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]*,  
-    *Demander l'approbation pour les clients [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Microsoft*,  
-    *Demander l'approbation pour les bons de commande Microsoft [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]*,  
-    *Demander l'approbation pour les factures achat [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Microsoft*,  
-    *Demander l'approbation pour les notes de crédit achat Microsoft [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]*,  
-    *Demander l'approbation pour les articles [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Microsoft*,  
-    *Demander l'approbation pour les fournisseurs [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Microsoft*,  
+    *Demander l'approbation pour les documents de vente Microsoft [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]* ,  
+    *Demander l'approbation pour les devis vente [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Microsoft* ,  
+    *Demander l'approbation pour les factures vente [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Microsoft* ,  
+    *Demander l'approbation pour les notes de crédit vente Microsoft [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]* ,  
+    *Demander l'approbation pour les clients [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Microsoft* ,  
+    *Demander l'approbation pour les bons de commande Microsoft [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]* ,  
+    *Demander l'approbation pour les factures achat [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Microsoft* ,  
+    *Demander l'approbation pour les notes de crédit achat Microsoft [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]* ,  
+    *Demander l'approbation pour les articles [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Microsoft* ,  
+    *Demander l'approbation pour les fournisseurs [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Microsoft* ,  
     *Demander l'approbation pour les lots journal général Microsoft [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]* ou    
-    *Demander l'approbation pour les lignes journal général Microsoft [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]*.  
-12. Power Automate affiche la liste des services utilisés dans le modèle de flux et tente de se connecter automatiquement à ces services. Si vous ne vous êtes pas déjà connecté à un service, vous serez invité à vous connecter à chacun des services auxquels vous devez vous connecter. Une coche verte apparaît à côté de chaque service une fois la connexion établie. Sélectionnez **Continuer**.
+    *Demander l'approbation pour les lignes journal général Microsoft [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]* .  
+12. Power Automate affiche la liste des services utilisés dans le modèle de flux et tente de se connecter automatiquement à ces services. Si vous ne vous êtes pas déjà connecté à un service, vous serez invité à vous connecter à chacun des services auxquels vous devez vous connecter. Une coche verte apparaît à côté de chaque service une fois la connexion établie. Sélectionnez **Continuer** .
 13. Power Automate vous invite à sélectionner un environnement et une compagnie dans votre abonné [!INCLUDE[prodshort](includes/prodshort.md)]. Comme chaque étape du flux est indépendante de la suivante, vous devrez peut-être définir plusieurs fois l'environnement et la compagnie lorsque vous utilisez un modèle [!INCLUDE[prodshort](includes/prodshort.md)] Power Automate.
 
 Pour plus d'informations, voir la [documentation Power Automate](/power-automate/getting-started).

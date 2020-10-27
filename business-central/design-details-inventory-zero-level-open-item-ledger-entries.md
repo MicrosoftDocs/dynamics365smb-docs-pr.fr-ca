@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 6168b8a14bc520f811db231e9d8f885e7372a3d6
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 1222f3b7ed3c71ded3f653bb121b920c170c40f5
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3185214"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924281"
 ---
 # <a name="design-details-known-item-application-issue"></a>Détails de conception : problème connu lié à l'affectation d'articles
 Cet article traite du problème de niveau d'inventaire nul alors qu'il existe des écritures article ouvertes dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
@@ -102,25 +102,25 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 
  Pour le scénario 1, identifiez le problème comme suit :  
 
--   Sur la page **Note de crédit vente reportée** ou **Réception retour reportée**, recherchez le champ **Écriture article à affecter** pour voir si le champ est renseigné, et auquel cas, à quelle écriture article le coût de la réception retour est affecté.  
+-   Sur la page **Note de crédit vente reportée** ou **Réception retour reportée** , recherchez le champ **Écriture article à affecter** pour voir si le champ est renseigné, et auquel cas, à quelle écriture article le coût de la réception retour est affecté.  
 
  Pour le scénario 2, identifiez le problème de l'une des manières suivantes :  
 
--   Recherchez une écriture article sortante ouverte et une écriture article entrante avec le même numéro dans le champ **N° document**, et Oui dans le champ **Correction**. Consultez l'exemple suivant d'une écriture article.  
+-   Recherchez une écriture article sortante ouverte et une écriture article entrante avec le même numéro dans le champ **N° document** , et Oui dans le champ **Correction** . Consultez l'exemple suivant d'une écriture article.  
 
 |N° séquence |Date de report|Type écriture|Type document|N° document|Nombre d'articles|Code d'emplacement|Quantité|Coût indiqué (réel)|Quantité facturée|Quantité restante|Ouvert|Correction|  
 |---------|------------|----------|-------------|------------|--------|-------------|--------|------------------------|-----------------|------------------|----|---------|
 |333|01/28/2018|Vente|Livraison de vente|102043|TEST|BLEU|-1|-10|-1|-1|Oui|Non|  
 |334|01/28/2018|Vente|Livraison de vente|102043|TEST|BLEU|1|10|1|1|Oui|**Oui**|  
 
--   Sur la page **Livraison vente reportée**, recherchez le champ **Écriture article à affecter** pour voir si le champ est renseigné, et auquel cas, à quelle écriture article le coût de la réception retour est affecté.  
+-   Sur la page **Livraison vente reportée** , recherchez le champ **Écriture article à affecter** pour voir si le champ est renseigné, et auquel cas, à quelle écriture article le coût de la réception retour est affecté.  
 
 > [!NOTE]  
->  Les affectations de coût ne peuvent pas être identifiés sur la page **Écritures article affectées**, car cette page affiche uniquement les affectations de quantité.  
+>  Les affectations de coût ne peuvent pas être identifiés sur la page **Écritures article affectées** , car cette page affiche uniquement les affectations de quantité.  
 
  Pour les deux scénarios, identifiez l'affectation de coût concernée comme suit :  
 
-1.  Ouvrez la table **Écriture d'affectation article**.  
+1.  Ouvrez la table **Écriture d'affectation article** .  
 
 2.  Filtrez le champ **N° écriture article** à l'aide du numéro de l'écriture article (Retour vente).  
 
@@ -138,7 +138,7 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
  En outre, notez que le coût de l'écriture article entrante 334 est affecté à l'écriture article sortante 333.  
 
 ## <a name="workaround-for-the-issue"></a>Solution de contournement du problème  
- Sur la page **Journal article**, reportez les lignes suivantes pour l'article concerné :  
+ Sur la page **Journal article** , reportez les lignes suivantes pour l'article concerné :  
 
 -   Un ajustement positif pour fermer l'écriture article sortante ouverte.  
 

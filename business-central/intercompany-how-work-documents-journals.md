@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: IC, group, consolidation, affiliate, subsidiary
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: df4fc94bba7b0ffb6ba37363e953fc277c7b6e0a
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 30c8eac184987e82b9bfb158a61efdbbc559207a
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3780145"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924063"
 ---
 # <a name="work-with-intercompany-documents-and-journals"></a>Utiliser les documents et les journaux intersociétés
 Les documents ou journaux intercompagnies permettent de reporter les transactions effectuées avec vos partenaires intercompagnies. Lorsque vous reportez un document ou une ligne journal intercompagnie dans votre compagnie, le programme crée le document ou la ligne journal correspondante dans votre boîte d'envoi intercompagnie : vous pouvez le transmettre au partenaire concerné. Celui-ci peut ensuite reporter la transaction correspondante dans sa compagnie sans avoir à entrer à nouveau les données.
@@ -29,11 +29,11 @@ Vous pouvez envoyer les documents de vente et les bons de commande, ainsi que le
 
 La procédure suivante explique comment renseigner et envoyer un document de vente intercompagnie. La même procédure s'applique aux bons de commande intercompagnie et aux retours, ainsi qu'aux factures et notes de crédit intercompagnie reportés.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente** , puis sélectionnez le lien associé.  
 2. Sélectionnez **Nouveau** pour créer un document de vente. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).  
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Vérifiez que le client est un partenaire intercompagnie.
-5. Pour envoyer le document de vente avant de le reporter, choisissez l'action **Envoi document de vente IC**.
+5. Pour envoyer le document de vente avant de le reporter, choisissez l'action **Envoi document de vente IC** .
 
 > [!NOTE]
 > Si vous effectuez l'étape 4, le document de vente est déplacé vers votre boîte d'envoi intercompagnies, d'où vous pouvez l'envoyer ultérieurement. Pour plus d'informations, voir [Gérer la boîte de réception et la boîte d'envoi intersociétés](intercompany-how-manage-intercompany-inbox.md).
@@ -41,14 +41,14 @@ La procédure suivante explique comment renseigner et envoyer un document de ven
 ## <a name="to-fill-in-and-post-an-intercompany-journal"></a>Pour renseigner et reporter un journal intercompagnie
 Lorsque vous reportez une ligne journal général intercompagnie dans votre compagnie, le programme crée une ligne journal correspondante dans votre boîte d'envoi intercompagnie : vous pouvez la transmettre au partenaire concerné. Celui-ci peut ensuite reporter la transaction correspondante dans sa compagnie sans avoir à entrer à nouveau les données.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux généraux Intersociétés**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux généraux Intersociétés** , puis sélectionnez le lien associé.  
 2. Ouvrez le lot journal approprié. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 3. Renseignez les champs selon vos besoins.
-4. Dans le champ **N° compte G/L du partenaire IC**, saisissez le numéro du compte du grand livre intercompagnie sur lequel le montant sera reporté dans la compagnie de votre partenaire.
+4. Dans le champ **N° compte G/L du partenaire IC** , saisissez le numéro du compte du grand livre intercompagnie sur lequel le montant sera reporté dans la compagnie de votre partenaire.
 
     > [!NOTE]
     > Ce champ doit être renseigné avec une ligne dont l'un des champs **N° compte** ou  **N° compte de solde** contient un compte bancaire ou un compte du grand livre.  
-5. Sélectionnez l'action **Valider**.
+5. Sélectionnez l'action **Valider** .
 
 Les écritures associées sont reportées dans votre compagnie et un journal avec les écritures correspondantes est créé dans votre boîte d'envoi intercompagnie ; vous pouvez l'envoyer à votre partenaire. Pour plus d'informations, voir [Gérer la boîte de réception et la boîte d'envoi intersociétés](intercompany-how-manage-intercompany-inbox.md).
 

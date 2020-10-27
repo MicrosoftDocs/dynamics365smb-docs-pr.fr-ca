@@ -1,16 +1,16 @@
 ---
 title: Catalogue d'apprentissage des ventes et marketing partenaires
-description: Trouvez toutes les formations disponibles pour Business Central.
+description: Recherchez toutes les formations disponibles pour les rôles de vente et de marketing des partenaires dans Business Central.
 author: loreleishannonmsft
-ms.date: 04/30/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.author: margoc
-ms.openlocfilehash: 4b6fd743dd65cacb3d3e9ffa91b46cb9cc69cbd1
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: d0ab1b4894c9e8c586692e17210e8254eadb57eb
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3781495"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3926657"
 ---
 # <a name="partner-sales-and-marketing-learning-catalog"></a>Catalogue d'apprentissage des ventes et marketing partenaires
 
@@ -22,7 +22,7 @@ Le catalogue suivant est organisé en partant des connaissances de base jusqu'au
 
 | Contenu     | Description    | Format                                | Longueur              |
 |-------------|----------------|---------------------------------------|---------------------|
-| [Dynamics 365 Business Central (Blitz)](https://mbspartner.microsoft.com/D365/Videos/101760)                              | (Partenaires uniquement) Cette session expose l'utilité de Business Central. Business Central offre une valeur ajoutée incroyable, car il s’intègre à d’autres services nuage de Microsoft, notamment Office 365. Il peut en outre être personnalisé ou étendu pour des besoins sectoriels spécifiques avec Power Apps, Power Automate et Power BI. | Vidéo                                 | 8 minutes 5 secondes |
+| [Dynamics 365 Business Central (Blitz)](https://mbspartner.microsoft.com/D365/Videos/101760)                              | (Partenaires uniquement) Cette session expose l'utilité de Business Central. Business Central apporte une valeur ajoutée incroyable, car il s’intègre à d’autres services nuage de Microsoft, notamment Microsoft 365. Il peut en outre être personnalisé ou étendu pour des besoins sectoriels spécifiques avec Power Apps, Power Automate et Power BI. | Vidéo                                 | 8 minutes 5 secondes |
 | [Explorer les fonctionnalités de Dynamics 365 Business Central](https://dynamics.microsoft.com/business-central/capabilities/) | Explorer les fonctionnalités de Dynamics 365 Business Central    | Site Web    |                     |
 | [Dynamics 365 Business Central](https://docs.microsoft.com/learn/modules/dynamics-365-business-central/)            | Ce module présente les fonctionnalités de l’application, ses avantages et des exemples de Dynamics 365 Business Central en action.    | Parcours d'apprentissage en ligne gratuit et personnalisé | 24 minutes          |
 
@@ -43,7 +43,6 @@ Le catalogue suivant est organisé en partant des connaissances de base jusqu'au
 | [Rechercher des témoignages clients](https://customers.microsoft.com/search?sq=%22Dynamics%20365%20Business%20Central%20%22&ff=&p=0&so=story_publish_date%20desc)  | Rechercher des témoignages clients de référence pour Dynamics 365 Business Central sur [https://customer.microsoft.com](https://customer.microsoft.com).  | Site Web |                       |
 | [Programme Fournisseur de solutions nuage](https://partner.microsoft.com/membership/cloud-solution-provider)    | (Partenaires uniquement) À propos du programme Fournisseur de solutions nuage     | Site Web |                       |
 | [Marketing dans un monde en nuage](https://mbspartner.microsoft.com/OSS/Topic/19) | (Partenaire uniquement) Vos méthodes d'optimisation de vos pratiques marketing et de refonte de vos principes marketing pour un monde basé sur le nuage sera un facteur déterminant dans le succès ou l'échec de votre organisation. Cette série de vidéos et de ressources présente les meilleures pratiques marketing, des conseils pour la création de contenu, des conseils pragmatiques et des outils utiles pour appliquer les principes de marketing nuage afin de stimuler la demande pour vos solutions. | Page de sujet | 35 minutes |
-| [Business Central](https://www.youtube.com/playlist?list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4)        | (Partenaire uniquement) Vos méthodes d'optimisation de vos pratiques marketing et de refonte de vos principes marketing pour un monde basé sur le nuage sera un facteur déterminant dans le succès ou l'échec de votre organisation. Cette série de vidéos et de ressources présente les meilleures pratiques marketing, des conseils pour la création de contenu, des conseils pragmatiques et des outils utiles pour appliquer les principes de marketing nuage afin de stimuler la demande pour vos solutions.   | Page de sujet    | 35 minutes            |
 | [Programme Fournisseur de solutions nuage - Vente de solutions nuage à la demande](https://docs.microsoft.com/partner-center/csp-overview)  | Le programme CSP (Cloud Solution Provider, Fournisseur de solutions nuage) vous aide à dépasser votre modèle de revente de licences pour vous impliquer davantage dans les activités de vos clients.   | Site Web      |                       |
 | [Programme Fournisseur de solutions nuage - Comparaison des programmes de support des partenaires](https://partner.microsoft.com/support/partnersupport) | Regardez cette vidéo pour savoir comment choisir le bon plan de support partenaire pour votre entreprise. Puis découvrez une comparaison côte à côte ci-dessous.    | Site Web                               |                       |
 | [Vente accélérée nuage SureStep](https://mbspartner.microsoft.com/OSS/Topic/20)  | (Partenaires uniquement) Le processus de vente accélérée nuage SureStep est conçu pour répondre aux besoins de l'acheteur moderne et s'efforce de déclencher un point de basculement stratégique émotionnel et fondé sur l'expérience au tout début du processus de vente. Cette série de vidéos et de ressources explique un processus de vente normatif spécialement conçu pour contrer l’approche traditionnelle de vente de solutions « orientée démo », qui nécessite beaucoup de ressources et conduit généralement à des démonstrations de produits hautement personnalisées, à des cycles de vente complexes et à des projets de longue durée. La bibliothèque de ressources comprend un certain nombre de modèles personnalisables afin que vous puissiez créer votre propre ensemble d'atouts commerciaux pour prendre en charge la vente accélérée. | Site Web     |                       |

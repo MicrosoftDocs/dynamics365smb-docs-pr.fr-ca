@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: customer payment, debtor, balance due, AR
-ms.date: 06/19/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 1083edff26c6f0cc896e2506b6b02512d72e2bff
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 104049b15cb379e65f84b9d1280ee52c4b2215f0
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3782734"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3926382"
 ---
 # <a name="managing-receivables"></a>Gestion des comptes client
 
@@ -31,7 +31,7 @@ D'autres pages vous permettent d'affecter des paiements ou de rapprocher des com
 * La page **Enregistrement de paiement** qui vous permet d'affecter manuellement les paiements reçus en liquide, par chèque ou par transaction bancaire par rapport à une liste générée de documents vente impayés. Notez que cette fonctionnalité est uniquement disponible pour les documents vente. Vous ne pouvez pas affecter des paiements sortants, et vous ne pouvez pas rapprocher des comptes bancaires.
 * La page **Journal des encaissements** où vous pouvez reporter manuellement les réceptions dans un compte général, client ou autre en saisissant une ligne paiement. Vous pouvez affecter la réception ou le remboursement à une ou plusieurs écritures ouvertes avant de reporter le journal des encaissements, ou à partir des écritures client. Vous ne pouvez pas rapprocher des comptes bancaires.
 
-La page **Journal rapprochement bancaire** utilise une logique de correspondance automatique que vous pouvez configurer sur la page **Règles affectation paiement**. Pour plus d'informations, voir [Configurer des règles pour l'affectation automatique des paiements](receivables-how-set-up-payment-application-rules.md).  
+La page **Journal rapprochement bancaire** utilise une logique de correspondance automatique que vous pouvez configurer sur la page **Règles affectation paiement** . Pour plus d'informations, voir [Configurer des règles pour l'affectation automatique des paiements](receivables-how-set-up-payment-application-rules.md).  
 
 Les autres aspects de la gestion des comptes client comprennent le recouvrement des soldes échus, y compris les intérêts de retard et des rappels, et de définir les comptes bancaires pour autoriser le retrait des paiements des clients de leur compte automatiquement.
 
@@ -40,7 +40,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | À | Voir |
 | --- | --- |
 | Affecter des paiements aux écritures client ou fournisseur ouvertes sur la base d'un fichier ou flux de relevé de compte bancaire importé, et rapprocher le compte bancaire lorsque tous les paiements sont affectés. |[Lettrage automatique des paiements et rapprochement des comptes bancaires](receivables-apply-payments-auto-reconcile-bank-accounts.md) |
-| Affecter des paiements aux écritures client ouvertes selon la liste des documents vente échus sur la page **Enregistrement de paiement**. |[Rapprocher les paiements client à partir de la liste des documents vente échus](receivables-how-reconcile-customer-payments-list-unpaid-sales-documents.md) |
+| Affecter des paiements aux écritures client ouvertes selon la liste des documents vente échus sur la page **Enregistrement de paiement** . |[Rapprocher les paiements client à partir de la liste des documents vente échus](receivables-how-reconcile-customer-payments-list-unpaid-sales-documents.md) |
 | Reporter des encaissements ou des remboursements pour des clients dans le journal des encaissements et les affecter à des écritures client, à partir du journal ou des écritures reportées. |[Rapprocher les paiements clients avec le journal des encaissements ou les écritures client](receivables-how-apply-sales-transactions-manually.md) |
 | Rappeler aux clients les soldes échus, calculer les intérêts et les intérêts de retard, et gérer les comptes clients. |[Collecte des soldes restants](receivables-collect-outstanding-balances.md) |
 |Avec le consentement de votre client, collectez les paiements directement à partir du compte bancaire du client en euro uniquement.|[Recouvrement de paiements par prélèvement automatique SEPA](finance-collect-payments-with-sepa-direct-debit.md)|

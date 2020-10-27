@@ -7,14 +7,14 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 45916dc92513a223ca74cb3d76629fb36b8afa39
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 9ea6568f858dd154b7126f6444b45e4e548c6d18
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3189517"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3923355"
 ---
 # <a name="manage-notifications"></a>Gérer les notifications
 
@@ -32,10 +32,10 @@ En outre, certaines notification vous permettent de spécifier les conditions da
 
 L'activation ou la désactivation des notifications et la spécification des conditions s'appliquent uniquement à vous.  
 
-1. Dans le coin supérieur droit, sélectionnez l'icône **Paramètres** ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez l'action **Mes paramètres**.  
-2. Sur la page **Mes paramètres**, dans le champ **Notifications**, choisissez le lien *Modifier lorsque je reçois des notifications.* .  
-3. Dans la page qui apparaît, activez ou désactivez une notification en cochant ou en décochant la case **Activé**.  
-4. Pour spécifier les conditions qui déclenchent une notification, cliquez sur le lien **Afficher les détails du filtre**, puis renseignez les champs.  
+1. Dans le coin supérieur droit, sélectionnez l'icône **Paramètres** ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez l'action **Mes paramètres** .  
+2. Sur la page **Mes paramètres** , dans le champ **Notifications** , choisissez le lien *Modifier lorsque je reçois des notifications.* .  
+3. Dans la page qui apparaît, activez ou désactivez une notification en cochant ou en décochant la case **Activé** .  
+4. Pour spécifier les conditions qui déclenchent une notification, cliquez sur le lien **Afficher les détails du filtre** , puis renseignez les champs.  
 
 ## <a name="see-also"></a>Voir aussi
 
