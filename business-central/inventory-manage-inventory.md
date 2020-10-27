@@ -9,17 +9,17 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: warehouse, stock
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 4c3bcff76a258223b80231e94782ab908077e55e
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 1d1eb5a29a1e83b3dad454426327f03786b8f644
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3785631"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3921777"
 ---
 # <a name="inventory"></a>Stocks
-Pour chaque produit physique que vous commercialisez, vous devez créer une fiche article de type **Stock**. Les articles que vous proposez aux clients, mais que vous n'avez pas en inventaire, peuvent être enregistrés comme articles de catalogue. Vous pouvez ensuite les convertir en articles d'inventaire, le cas échéant. Vous pouvez augmenter ou diminuer la quantité d'un article en inventaire en reportant directement les écritures de l'article, par exemple, après un comptage physique ou si vous n'enregistrez pas les achats.
+Pour chaque produit physique que vous commercialisez, vous devez créer une fiche article de type **Stock** . Les articles que vous proposez aux clients, mais que vous n'avez pas en inventaire, peuvent être enregistrés comme articles de catalogue. Vous pouvez ensuite les convertir en articles d'inventaire, le cas échéant. Vous pouvez augmenter ou diminuer la quantité d'un article en inventaire en reportant directement les écritures de l'article, par exemple, après un comptage physique ou si vous n'enregistrez pas les achats.
 
 Les augmentations et diminutions d'inventaire sont également évidemment enregistrées lorsque vous reportez des documents achat et vente, respectivement. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md), [Vendre des produits](sales-how-sell-products.md) et  [Facturer des ventes](sales-how-invoice-sales.md). Les transferts entre emplacements modifient les quantités dans l'inventaire dans tous les entrepôts de votre compagnie.   
 
@@ -42,7 +42,7 @@ Bien que les coûts inventaire soient automatiquement reportés dans le grand li
 |Conservez un aperçu des articles et simplifiez la recherche et le tri des articles en les organisant par catégorie.|[Catégoriser des articles](inventory-how-categorize-items.md)|
 |Affecter des attributs de différents types de valeurs à vos articles pour vous aider à les trier et à les rechercher.|[Utiliser les attributs d'article](inventory-how-work-item-attributes.md)|
 |Créez des fiches article spéciales pour les articles que vous proposez aux clients, mais que vous ne stockez pas dans l'inventaire.|[Utiliser des articles de catalogue](inventory-how-work-nonstock-items.md)|
-|Exécutez le décompte physique de votre inventaire avec les pages **Commande inventaire physique** et **Enregistrement inventaire physique**.|[Faire l'inventaire à l'aide de documents](inventory-how-count-inventory-with-documents.md)|
+|Exécutez le décompte physique de votre inventaire avec les pages **Commande inventaire physique** et **Enregistrement inventaire physique** .|[Faire l'inventaire à l'aide de documents](inventory-how-count-inventory-with-documents.md)|
 |Effectuer un inventaire physique, faire des ajustements négatifs ou positifs, et modifier des informations, telles que l'emplacement ou le numéro de lot, sur des écritures article.|[Comptabiliser, ajuster et reclasser l'inventaire avec les journaux](inventory-how-count-adjust-reclassify.md)|
 |Afficher la disponibilité des articles par emplacement, par période, par événement de vente ou d'achat, ou encore en fonction de leur utilisation dans les nomenclatures d'assemblage ou de production.|[Voir la disponibilité des articles](inventory-how-availability-overview.md)|
 |Transférez des articles en inventaire entre des emplacements avec des ordres de transfert pour gérer les activités entrepôt ou avec le journal reclassement article.|[Transfert d'inventaire entre des emplacements](inventory-how-transfer-between-locations.md)|

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: sales, crm, integration, sync, synchronize
-ms.date: 07/24/2020
+ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 7e24351bb7382d01a060326ec8e592af555870a7
-ms.sourcegitcommit: edad0d0b129e916c2cfdfa9c4f8d9d83513f4fd1
+ms.openlocfilehash: 2f1b79cdf04075159b5e464e384bace89d9f933c
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "3619394"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3917811"
 ---
 # <a name="scheduling-a-synchronization-between-business-central-and-common-data-service"></a>Planification d'une synchronisation entre Business Central et Common Data Service
 
@@ -29,7 +29,7 @@ Plusieurs projets de synchronisation sont disponibles et prêts à l'emploi. Les
 4. Projet de synchronisation CLIENT - Common Data Service.
 5. Projet de synchronisation REPRÉSENTANTS - Common Data Service.
 
-Vous pouvez visualiser les projets sur la page **Écritures file d'attente des travaux**. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
+Vous pouvez visualiser les projets sur la page **Écritures file d'attente des travaux** . Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
 ## <a name="default-synchronization-job-queue-entries"></a>Écritures de file d'attente projets de synchronisation par défaut
 
@@ -51,7 +51,7 @@ Pour synchroniser les données, les enregistrements d'entité [!INCLUDE[cds_long
 
 - La case à cocher **Synch. uniquement les enregistrements couplés** contrôle si de nouveaux enregistrements sont créés lors de la synchronisation. Par défaut, la case à cocher est activée, ce qui signifie que seuls les enregistrements couplés sont synchronisés. Dans le mappage de la table d'intégration, vous pouvez modifier le mappage de table entre une entité [!INCLUDE[cds_long_md](includes/cds_long_md.md)] et une table [!INCLUDE[d365fin](includes/d365fin_md.md)] afin que les projets de synchronisation de l'intégration créent des enregistrements dans la base de données de destination pour chaque enregistrement de la base de données source qui n'est pas couplé. Pour plus d'informations, voir [Création d'enregistrements](admin-how-to-modify-table-mappings-for-synchronization.md#creating-new-records).
 
-    **Exemple** Si vous désactivez la case à cocher **Synch. uniquement les enregistrements couplés**, lorsque vous synchronisez les clients dans [!INCLUDE[d365fin](includes/d365fin_md.md)] avec les comptes dans [!INCLUDE[cds_long_md](includes/cds_long_md.md)], un nouveau compte est créé pour chaque client dans [!INCLUDE[d365fin](includes/d365fin_md.md)] et couplé automatiquement. En outre, puisque la synchronisation est bidirectionnelle dans ce cas, un client est créé et couplé pour chaque compte [!INCLUDE[cds_long_md](includes/cds_long_md.md)] qui n'est pas encore couplé.  
+    **Exemple** Si vous désactivez la case à cocher **Synch. uniquement les enregistrements couplés** , lorsque vous synchronisez les clients dans [!INCLUDE[d365fin](includes/d365fin_md.md)] avec les comptes dans [!INCLUDE[cds_long_md](includes/cds_long_md.md)], un nouveau compte est créé pour chaque client dans [!INCLUDE[d365fin](includes/d365fin_md.md)] et couplé automatiquement. En outre, puisque la synchronisation est bidirectionnelle dans ce cas, un client est créé et couplé pour chaque compte [!INCLUDE[cds_long_md](includes/cds_long_md.md)] qui n'est pas encore couplé.  
 
     > [!NOTE]  
     > Des règles et des filtres permettent de déterminer les données synchronisées. Pour plus d'informations, reportez-vous à la rubrique [Règles de synchronisation](admin-synchronizing-business-central-and-sales.md).
@@ -70,7 +70,7 @@ Certaines écritures file d'attente des travaux, comme celles qui programment la
 
 :::image type="content" source="media/on-hold-with-inactivity-timeout.png" alt-text="Organigramme de la mise en attente des écritures file d'attente des travaux pour cause d'inactivité.":::
 
-Lorsque la valeur de ce champ n'est pas nulle et que la file d'attente des travaux n'a trouvé aucune modification lors de la dernière exécution, [!INCLUDE[d365fin](includes/d365fin_md.md)] met en attente l'écriture file d'attente des travaux. Lorsque cela se produit, le champ **État de la file d'attente des travaux** indique **En attente en raison d'une inactivité**, et [!INCLUDE[d365fin](includes/d365fin_md.md)] patiente jusqu'à la fin de la période spécifiée dans le champ **Délai d'inactivité** avant d'exécuter à nouveau l'écriture file d'attente des travaux.  
+Lorsque la valeur de ce champ n'est pas nulle et que la file d'attente des travaux n'a trouvé aucune modification lors de la dernière exécution, [!INCLUDE[d365fin](includes/d365fin_md.md)] met en attente l'écriture file d'attente des travaux. Lorsque cela se produit, le champ **État de la file d'attente des travaux** indique **En attente en raison d'une inactivité** , et [!INCLUDE[d365fin](includes/d365fin_md.md)] patiente jusqu'à la fin de la période spécifiée dans le champ **Délai d'inactivité** avant d'exécuter à nouveau l'écriture file d'attente des travaux.  
 
 Par exemple, l'écriture file d'attente des travaux CURRENCY, qui synchronise les devises dans [!INCLUDE[cds_long_md](includes/cds_long_md.md)] avec les taux de change dans [!INCLUDE[d365fin](includes/d365fin_md.md)], recherche par défaut les modifications des taux de change toutes les 30 minutes. Si aucune modification n'est trouvée, [!INCLUDE[d365fin](includes/d365fin_md.md)] met en attente l'écriture file d'attente des travaux CURRENCY pendant 720 minutes (six heures). Si un taux de change est modifié dans [!INCLUDE[d365fin](includes/d365fin_md.md)] pendant que l'écriture file d'attente des travaux est en attente, [!INCLUDE[d365fin](includes/d365fin_md.md)] réactive automatiquement l'écriture file d'attente des travaux et redémarre la file d'attente des travaux. 
 
@@ -79,20 +79,20 @@ Par exemple, l'écriture file d'attente des travaux CURRENCY, qui synchronise le
 
 ## <a name="to-view-the-synchronization-job-log"></a>Pour afficher le journal des projets de synchronisation
 
-1. Choisissez l'icône :::image type="icon" source="media/ui-search/search_small.png" border="false":::, entrez **Journal de synchronisation de l'intégration**, puis choisissez le lien associé.
-2. Si une ou plusieurs erreurs se sont produites pour un projet de synchronisation, le nombre d'erreurs s'affiche dans la colonne **Échec**. Pour afficher les erreurs pour le projet, sélectionnez le numéro.  
+1. Choisissez l'icône :::image type="icon" source="media/ui-search/search_small.png" border="false":::, entrez **Journal de synchronisation de l'intégration** , puis choisissez le lien associé.
+2. Si une ou plusieurs erreurs se sont produites pour un projet de synchronisation, le nombre d'erreurs s'affiche dans la colonne **Échec** . Pour afficher les erreurs pour le projet, sélectionnez le numéro.  
 
     > [!TIP]  
     > Vous pouvez afficher toutes les erreurs du projet de synchronisation en ouvrant directement le journal des erreurs du projet de synchronisation.
 
 ## <a name="to-view-the-synchronization-job-log-from-the-table-mappings"></a>Pour afficher le journal du projet de synchronisation à partir des mappages de table
 
-1. Choisissez l'icône :::image type="icon" source="media/ui-search/search_small.png" border="false":::, entrez **Mappages de table d'intégration**, puis choisissez le lien associé.
-2. Sur la page **Mappages de table d'intégration**, sélectionnez une écriture, puis choisissez **Journal projet synch. intégration**.  
+1. Choisissez l'icône :::image type="icon" source="media/ui-search/search_small.png" border="false":::, entrez **Mappages de table d'intégration** , puis choisissez le lien associé.
+2. Sur la page **Mappages de table d'intégration** , sélectionnez une écriture, puis choisissez **Journal projet synch. intégration** .  
 
 ## <a name="to-view-the-synchronization-error-log"></a>Pour afficher le journal des erreurs de synchronisation
 
-- Choisissez l'icône :::image type="icon" source="media/ui-search/search_small.png" border="false":::, entrez **Erreurs de synchronisation d'intégration**, puis choisissez le lien associé.
+- Choisissez l'icône :::image type="icon" source="media/ui-search/search_small.png" border="false":::, entrez **Erreurs de synchronisation d'intégration** , puis choisissez le lien associé.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 6cfe028d21086269f1492aefde31fe6b659d06b4
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 76a25b3810c41d413c662d77bdcc72678bf8c59f
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3788131"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3917511"
 ---
 # <a name="design-details-central-concepts-of-the-planning-system"></a>Détails de conception : concepts centraux du système de planification
 Les fonctions de planification se trouvent dans un traitement en lot qui sélectionne d'abord les articles appropriés et la période à planifier. Puis, en fonction du code de bas niveau de chaque article (ligne nomenclature), le traitement en lot appelle un codeunit qui calcule un programme d'approvisionnement en équilibrant les séries offre-demande et en suggérant des actions possibles que l'utilisateur doit prendre. Les actions suggérées apparaissent sous forme de lignes dans la feuille planification ou la feuille de réquisition.  
@@ -91,6 +91,14 @@ Dans un environnement de fabrication, la demande d'un article fini et pouvant ê
 Les chiffres indiquent dans quelle séquence le système fait des propositions pour les commandes d'approvisionnement au niveau supérieur, et en supposant que l'utilisateur accepte ces propositions, pour tous les articles au niveau inférieur également.  
 
 Pour plus d'informations sur la fabrication, voir [Chargement des profils d'inventaire](design-details-balancing-demand-and-supply.md#loading-the-inventory-profiles).  
+
+#### <a name="optimizing-performance-for-low-level-calculations"></a>Optimisation des performances pour les calculs plus bas niveau
+Les calculs de code plus bas niveau peuvent avoir un impact sur les performances du système. Pour atténuer l’impact, vous pouvez désactiver **Calcul de code plus bas niveau dynamique** sur la page **Configuration de la fabrication** . Quand vous le faites, [!INCLUDE[d365fin](includes/d365fin_md.md)] vous suggère de créer une écriture file d'attente des travaux récurrente qui met à jour quotidiennement les codes de bas niveau. Vous pouvez vous assurer que la tâche s’exécutera en dehors des heures de travail en spécifiant une heure de début dans le champ **Date/heure de début au plus tôt** .
+
+Vous pouvez également activer la logique qui accélère les calculs de code plus bas niveau en sélectionnant **Optimiser le calcul du code plus bas niveau** sur la page **Configuration de la fabrication** . 
+
+> [!IMPORTANT]
+> Si vous choisissez d’optimiser les performances, [!INCLUDE[d365fin](includes/d365fin_md.md)] utilise de nouvelles méthodes de calcul pour déterminer les codes plus bas niveau. Si vous disposez d’une extension qui repose sur les événements utilisés par les anciens calculs, l’extension peut cesser de fonctionner.   
 
 ### <a name="locations--transfer-level-priority"></a>Emplacements/priorité de niveau transfert  
 Les compagnies actives dans plusieurs emplacements peuvent être amenées à planifier chaque emplacement individuellement. Par exemple, le niveau d'inventaire de sécurité d'un article et sa méthode de réapprovisionnement peuvent différer d'un emplacement à un autre. Dans ce cas, les paramètres de planification doivent être spécifiés par article et également par emplacement.  
@@ -209,7 +217,7 @@ La première colonne dans la feuille planification concerne les champs d'avertis
 
 L'approvisionnement pour les lignes planification avec avertissements n'est normalement pas modifié en fonction des paramètres de planification. Au lieu de cela, le système de planification propose uniquement un approvisionnement pour couvrir la quantité de demande exacte. Cependant, le système peut être configuré pour respecter certains paramètres de planification pour les lignes planification avec certains avertissements. Pour plus d'informations, reportez-vous à la description de ces options pour le traitement par lots **Calc. planning - F. planning** et le traitement en lot **Calculer planification - F. demande** respectivement.  
 
-Les informations d'avertissement sont affichées sur la page **Éléments planification non suivis**, qui est également utilisée pour afficher les liens de suivi de commande vers des entités réseau hors commande. Les types d'alerte suivants existent :  
+Les informations d'avertissement sont affichées sur la page **Éléments planification non suivis** , qui est également utilisée pour afficher les liens de suivi de commande vers des entités réseau hors commande. Les types d'alerte suivants existent :  
 
 -   Urgence  
 -   Exception  

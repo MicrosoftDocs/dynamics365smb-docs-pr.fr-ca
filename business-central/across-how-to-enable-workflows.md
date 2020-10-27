@@ -8,24 +8,24 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 185e35e9b9f44e8cc18b10adf0dc359c3dce1ef0
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: b04f9edd37c96efb9ee6b215d85335c743de6214
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3784242"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3916328"
 ---
 # <a name="enable-workflows"></a>Activer des workflows
 Lorsque vous avez créé un workflow et que vous êtes sûr qu'il est prêt à démarrer, vous devez l'activer.  
 
- Sur la page **Workflow**, créez un workflow en répertoriant les étapes concernées sur les lignes. Chaque étape comprend un événement de workflow modéré par des conditions d'événement, et une réponse de workflow modérée par des options de réponse. Définissez les phases de workflow en renseignez les champs des lignes de workflow à partir de listes fixes de valeurs d'événement et de réponse qui sont les scénarios pris en charge par le code de l'application. Pour plus d'informations, voir [Créer des flux de travail](across-how-to-create-workflows.md).  
+ Sur la page **Workflow** , créez un workflow en répertoriant les étapes concernées sur les lignes. Chaque étape comprend un événement de workflow modéré par des conditions d'événement, et une réponse de workflow modérée par des options de réponse. Définissez les phases de workflow en renseignez les champs des lignes de workflow à partir de listes fixes de valeurs d'événement et de réponse qui sont les scénarios pris en charge par le code de l'application. Pour plus d'informations, voir [Créer des flux de travail](across-how-to-create-workflows.md).  
 
 ## <a name="to-enable-a-workflow"></a>Activer un workflow  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Flux de travail**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Flux de travail** , puis sélectionnez le lien associé.  
 2.  Ouvrez le workflow que vous souhaitez activer.  
-3.  Sur la page **Flux de travail**, désactivez la case à cocher **Activé**.  
+3.  Sur la page **Flux de travail** , désactivez la case à cocher **Activé** .  
 
 ## <a name="see-also"></a>Voir aussi  
  [Créer des workflows](across-how-to-create-workflows.md)   

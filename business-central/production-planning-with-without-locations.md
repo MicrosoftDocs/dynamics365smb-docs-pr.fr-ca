@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 2d9afd30c3b81912797ad95871256207d135b673
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 2cf9c34434136578b6ab31841c5bb7f69f72ae18
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3783992"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3921477"
 ---
 # <a name="planning-with-or-without-locations"></a>Planification avec/sans emplacement
 En ce qui concerne la planification avec ou sans code magasin sur les lignes demande, le système opère directement lorsque :  
@@ -50,7 +50,7 @@ Lors de l'exécution de la planification, le système recherche ces 3 valeurs d
 
     Si non :  
 
-    L’article est planifié comme suit : Stratégie réapprovisionnement = *Lot pour Lot*, Inclure inventaire = *Oui*. Tous les autres paramètres de planification ont la valeur Vide. (Les articles qui suivent l’*ordre* de la méthode réapprovisionnement continuent à  *le* suivre, tout comme les autres paramètres.)  
+    L’article est planifié comme suit : Stratégie réapprovisionnement = *Lot pour Lot* , Inclure inventaire = *Oui* . Tous les autres paramètres de planification ont la valeur Vide. (Les articles qui suivent l’ *ordre* de la méthode réapprovisionnement continuent à  *le* suivre, tout comme les autres paramètres.)  
 
 > [!NOTE]  
 >  Cette solution minimale couvre strictement la demande. Tout paramètre de planification défini est ignoré.  
@@ -58,8 +58,8 @@ Lors de l'exécution de la planification, le système recherche ces 3 valeurs d
 Consultez les variantes des cas de figure ci-dessous.  
 
 ## <a name="demand-at-blank-location"></a>Demande à un emplacement vide  
-Même si la case **Emplacement obligatoire** est cochée, le système autorise la création de lignes demande sans code d'emplacement, ce que l'on appelle également « emplacement *VIDE* ». Il s'agit d'un écart pour le système, car il a plusieurs valeurs de configuration accordées pour gérer les emplacements (voir ci-dessus) et, par conséquent, le moteur de planification ne crée pas de ligne planification pour une telle ligne demande. Si le champ **Emplacement obligatoire** n'est pas sélectionné alors qu'une des valeurs de configuration d'emplacement existe, c'est également considéré comme un écart et le système de planification réagira en proposant la « solution minimale » :   
-L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour lot* (l' *ordre*conserve la valeur *Ordre)*, Inclure inventaire =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
+Même si la case **Emplacement obligatoire** est cochée, le système autorise la création de lignes demande sans code d'emplacement, ce que l'on appelle également « emplacement *VIDE*  ». Il s'agit d'un écart pour le système, car il a plusieurs valeurs de configuration accordées pour gérer les emplacements (voir ci-dessus) et, par conséquent, le moteur de planification ne crée pas de ligne planification pour une telle ligne demande. Si le champ **Emplacement obligatoire** n'est pas sélectionné alors qu'une des valeurs de configuration d'emplacement existe, c'est également considéré comme un écart et le système de planification réagira en proposant la « solution minimale » :   
+L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour lot* (l' *ordre* conserve la valeur *Ordre)* , Inclure inventaire =  *Oui* . Tous les autres paramètres de planification ont la valeur Vide.  
 
 Consultez les variantes des scénarios de configuration ci-dessous.  
 
@@ -79,7 +79,7 @@ L'article est planifié en fonction des paramètres de planification de la fiche
 
 #### <a name="case-13-demand-is-at--green-location"></a>Situation 1.3 : la demande concerne un magasin *VERT*  
 
-L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre*), Inclure inventaire =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
+L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre* ), Inclure inventaire =  *Oui* . Tous les autres paramètres de planification ont la valeur Vide.  
 
 #### <a name="case-14-demand-is-at--blank-location"></a>Situation 1.4 : la demande concerne un magasin *BLANC*  
 
@@ -93,7 +93,7 @@ L'article n'est pas planifié, car aucun emplacement n'est défini sur la ligne 
 
 #### <a name="case-21-demand-is-at--red-location"></a>Situation 2.1 : la demande concerne un magasin *ROUGE*  
 
-L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre*), Inclure inventaire =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
+L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre* ), Inclure inventaire =  *Oui* . Tous les autres paramètres de planification ont la valeur Vide.  
 
 #### <a name="case-22-demand-is-at--blue-location"></a>Situation 2.2 : la demande concerne un magasin *BLEU*  
 
@@ -107,7 +107,7 @@ L'article est planifié en fonction des paramètres de planification de la fiche
 
 #### <a name="case-31-demand-is-at--red-location"></a>Situation 3.1 : la demande concerne un magasin *ROUGE*  
 
-L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre*), Inclure inventaire =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
+L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre* ), Inclure inventaire =  *Oui* . Tous les autres paramètres de planification ont la valeur Vide.  
 
 #### <a name="case-32-demand-is-at--blue-location"></a>Situation 3.2 : la demande concerne un magasin *BLUE*  
 
@@ -115,7 +115,7 @@ L'article est planifié en fonction des paramètres de planification de la fiche
 
 #### <a name="case-33-demand-is-at--blank-location"></a>Situation 3.3 : la demande concerne un magasin *BLANC*  
 
-L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre*), Inclure inventaire =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
+L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre* ), Inclure inventaire =  *Oui* . Tous les autres paramètres de planification ont la valeur Vide.  
 
 ### <a name="setup-4"></a>Configuration 4 :  
 
@@ -125,7 +125,7 @@ L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pou
 
 #### <a name="case-41-demand-is-at--blue-location"></a>Situation 4.1 : la demande concerne un magasin *BLEU*  
 
-L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre*), Inclure inventaire =  *Oui*. Tous les autres paramètres de planification ont la valeur Vide.  
+L'article est planifié comme suit : Stratégie réapprovisionnement =  *Lot pour Lot* (l' *ordre* conserve la valeur  *Ordre* ), Inclure inventaire =  *Oui* . Tous les autres paramètres de planification ont la valeur Vide.  
 
 #### <a name="case-42-demand-is-at--blank-location"></a>Situation 4.2 : la demande concerne un magasin *BLANC*  
 

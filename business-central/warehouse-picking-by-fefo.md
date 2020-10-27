@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 721b980f8c52e07356fe47bc69aaec90c7fc185f
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: a34af93c4aae2d87d17fcad4f0526783a01e8b64
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3784931"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3915953"
 ---
 # <a name="enable-picking-items-by-fefo"></a>Activer le prélèvement d'articles par FEFO
 First-Expired-First-Out (FEFO) est une méthode de tri qui garantit que les articles les plus anciens, ceux qui ont les dates d'expiration les plus anciennes, sont prélevés en premier.  
@@ -38,7 +38,7 @@ Si deux articles avec des numéros de série ou de lot ont la même date de pér
 <br /><br />
 Lors du prélèvement des articles avec numéro de série/de lot dans les emplacements configurés pour un prélèvement et un rangement suggérés, seules les quantités des zones de type *Prélèvement* sont prélevées selon FEFO.  
 <br /><br />
-Pour activer des mouvements selon FEFO, sur la page **Mouvement d'inventaire** ou la page **Feuille mouvement**, vous devez laisser le champ **Depuis zone** vide.  
+Pour activer des mouvements selon FEFO, sur la page **Mouvement d'inventaire** ou la page **Feuille mouvement** , vous devez laisser le champ **Depuis zone** vide.  
 <br /><br />
 Si le champ **Validation de péremption stricte** est sélectionné, seuls les articles non expirés sont inclus dans le prélèvement. Cela s'applique même si vous n'utilisez pas de prélèvement selon FEFO.
 

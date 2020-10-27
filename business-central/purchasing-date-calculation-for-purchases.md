@@ -8,20 +8,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 07/16/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 092b76b7b25958b0df7155c335d7567c2b92fbf9
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 046c829955b38f6f5ea416e0a80c1fe058476942
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3783184"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3918910"
 ---
 # <a name="date-calculation-for-purchases"></a>Calcul de la date des achats
 
 [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule automatiquement la date à laquelle vous devez commander un article pour l'avoir en stock à une certaine date. Il s'agit de la date à laquelle des articles commandés à une date donnée devraient être disponibles pour le prélèvement.  
 
-Si vous saisissez une date de réception souhaitée sur un en-tête de bon de commande, la date de commande calculée est la date à laquelle la commande doit être passée pour recevoir les articles à la date que vous avez demandée. Ensuite, la date à laquelle les articles peuvent être prélevés est calculée et saisie dans le champ **Date réception prévue**.  
+Si vous saisissez une date de réception souhaitée sur un en-tête de bon de commande, la date de commande calculée est la date à laquelle la commande doit être passée pour recevoir les articles à la date que vous avez demandée. Ensuite, la date à laquelle les articles peuvent être prélevés est calculée et saisie dans le champ **Date réception prévue** .  
 
 Si vous n'indiquez aucune date réception demandée, le programme utilise la date commande de la ligne comme point de départ pour le calcul de la date à laquelle vous souhaitez recevoir les articles et la date disponibilité des articles pour leur prélèvement.  
 

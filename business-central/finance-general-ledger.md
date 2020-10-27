@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: analysis, history, track
-ms.date: 05/12/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 098317d09a5ad8c3792de48e5332b4c247eff0e0
-ms.sourcegitcommit: b9264b4ed650feca18776892ec23f2aa7ec43e20
+ms.openlocfilehash: f370bf9bb7e6aa4571a88d4b868ff86376ecb605
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3372553"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3917161"
 ---
 # <a name="understanding-the-general-ledger-and-the-coa"></a>Familiarisation avec le grand livre et les COA
 
@@ -25,13 +25,13 @@ Le grand livre stocke vos données financières, et le plan comptable affiche le
 
 La configuration du grand livre est la composante principale des processus financiers car elle définit comment vous reportez les données.  
 
-Sur la page **Configuration du grand livre**, vous spécifiez comment gérer certains problèmes comptables dans votre compagnie, par exemple :  
+Sur la page **Configuration du grand livre** , vous spécifiez comment gérer certains problèmes comptables dans votre compagnie, par exemple :  
 
 * Les détails arrondissement facture  
 * Les formats d'adresse  
 * Rapports financiers  
 
-De même, sur la page **Configuration du report général**, vous spécifiez comment vous souhaitez configurer les combinaisons de groupes de report général marché et de report général produit. Les groupes comptabilisation mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes généraux. Saisissez une ligne pour chaque combinaison de groupes de report marché et de groupes de report produit. Pour plus d'informations, voir [Configurations du groupe de report](finance-posting-groups.md).  
+De même, sur la page **Configuration du report général** , vous spécifiez comment vous souhaitez configurer les combinaisons de groupes de report général marché et de report général produit. Les groupes comptabilisation mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes généraux. Saisissez une ligne pour chaque combinaison de groupes de report marché et de groupes de report produit. Pour plus d'informations, voir [Configurations du groupe de report](finance-posting-groups.md).  
 
 > [!TIP]
 > La page **Configuration du grand livre** comprend des champs génériques et des champs spécifiques à votre pays ou région. Si vous n'êtes pas sûr de la signification d'un champ, nous vous suggérons de travailler avec votre comptable pour déterminer s'il est pertinent pour votre organisation.  
@@ -54,7 +54,7 @@ Vous pouvez personnaliser la structure de vos états financiers en mappant les c
 
 La page **Catégories de compte du grand livre** affiche vos catégories et sous-catégories et les comptes du grand livre qui leur sont affectés. Vous pouvez créer des sous-catégories et affecter ces catégories à des comptes existants.  
 
-Vous créez un groupe des catégories en effectuant un décalage d'autres sous-catégories sous une ligne de la page **Catégories de compte du grand livre**. Cela vous facilite l'obtention d'une vue d'ensemble, car chaque groupement affiche un solde total. Par exemple, vous pouvez créer des sous-catégories pour différents types d'actifs puis créer des groupes des catégories pour différencier les immobilisations des actifs à court terme, par exemple.  
+Vous créez un groupe des catégories en effectuant un décalage d'autres sous-catégories sous une ligne de la page **Catégories de compte du grand livre** . Cela vous facilite l'obtention d'une vue d'ensemble, car chaque groupement affiche un solde total. Par exemple, vous pouvez créer des sous-catégories pour différents types d'actifs puis créer des groupes des catégories pour différencier les immobilisations des actifs à court terme, par exemple.  
 
 Vous pouvez spécifier si les comptes de chaque sous-catégorie doivent être inclus dans des types spécifiques d'états. Les catégories de compte vous aident à définir la présentation de vos états financiers.  
 
@@ -62,7 +62,7 @@ Par exemple, le solde relevé par défaut solde est doté d'une sous-catégorie 
 
 1. Ajouter deux nouvelles sous-catégories. Une pour le fonds de caisse, et l'autre pour le compte chèque  
 2. Spécifier la définition d'état supplémentaire **Comptes de trésorerie** pour ces sous-catégories.  
-3. Effectuer une indentation sous la sous-catégorie **Trésorerie**.  
+3. Effectuer une indentation sous la sous-catégorie **Trésorerie** .  
 
 À la prochaine génération des tableaux d'analyse, votre relevé solde suivant affichera un solde total pour la trésorerie et deux lignes avec les soldes pour le fonds de caisse et le compte chèque.  
 

@@ -1,6 +1,6 @@
 ---
 title: Détails de conception - Vue d'ensemble d'entrepôt | Microsoft Docs
-description: Pour prendre en charge la manipulation physique des articles au niveau des zones, toutes les informations doivent être suivies pour chaque transaction ou mouvement dans l'entrepôt. Ceci est géré dans la table **Écriture entrepôt**. Chaque transaction est enregistrée dans un registre entrepôt.
+description: Pour prendre en charge la manipulation physique des articles au niveau des zones, toutes les informations doivent être suivies pour chaque transaction ou mouvement dans l'entrepôt. Ceci est géré dans la table **Écriture entrepôt** . Chaque transaction est enregistrée dans un registre entrepôt.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -8,17 +8,17 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 9418354af925099ff469580112d2e748825a47af
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: b265f8a910ba4d6e36856ce6d4485532b4e1337a
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3787006"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3920832"
 ---
 # <a name="design-details-warehouse-overview"></a>Détails de conception : vue d'ensemble d'entrepôt
-Pour prendre en charge la manipulation physique des articles au niveau des zones, toutes les informations doivent être suivies pour chaque transaction ou mouvement dans l'entrepôt. Ceci est géré dans la table **Écriture entrepôt**. Chaque transaction est enregistrée dans un registre entrepôt.  
+Pour prendre en charge la manipulation physique des articles au niveau des zones, toutes les informations doivent être suivies pour chaque transaction ou mouvement dans l'entrepôt. Ceci est géré dans la table **Écriture entrepôt** . Chaque transaction est enregistrée dans un registre entrepôt.  
 
 Les documents entrepôt et un journal entrepôt sont utilisés pour enregistrer des mouvements article dans l'entrepôt. Chaque fois qu'un article dans l'entrepôt est déplacé, reçu, rangé, prélevé, livré ou ajusté, les écritures entrepôt sont enregistrées pour stocker les informations physiques sur les zones et la quantité.
 

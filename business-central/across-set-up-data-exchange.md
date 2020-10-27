@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: d2de430eb3d6a86edaa1d78dd5f364ae74547d5c
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 2741845e82e59e7a8db5839d9bfb0171eb71d3e9
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3785856"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3917986"
 ---
 # <a name="setting-up-data-exchange"></a>Configuration de l'échange de données
 Avant de pouvoir envoyer et recevoir des documents électroniques ou importer et exporter des fichiers bancaires, vous devez configurer l'infrastructure d'échange de données pour traiter les fichiers concernés. En outre, vous devez configurer des zones associées, telles que les clients à qui vous envoyez des factures électroniques ou l’extension AMC Banking 365 Fundamentals si vous utilisez le fournisseur externe de services de conversion de vos fichiers bancaires. Pour plus d'informations, voir [Échanger des données par voir électronique](across-data-exchange.md).  
@@ -28,14 +28,14 @@ Avant de pouvoir envoyer et recevoir des documents électroniques ou importer et
 |------------|-------------|  
 |Configurez le service préconfiguré d'échange de documents pour activer l'envoi et la réception de documents électroniques depuis et vers [!INCLUDE[d365fin](includes/d365fin_md.md)].|[Configurer un service d'échange de document](across-how-to-set-up-a-document-exchange-service.md)|  
 |Configurer le service OCR préconfiguré pour convertir des fichiers PDF ou image en documents électroniques pouvant être convertis en enregistrements de document dans [!INCLUDE[d365fin](includes/d365fin_md.md)]|[Configurer des documents entrants](across-how-setup-income-documents.md)|  
-|Configurer un des deux services préconfigurés pour les taux de change mis à jour pour insérer les taux de change de devise les plus récents sur la page **Devises**.|[Mettre à jour des taux de change devise](finance-how-update-currencies.md)|  
+|Configurer un des deux services préconfigurés pour les taux de change mis à jour pour insérer les taux de change de devise les plus récents sur la page **Devises** .|[Mettre à jour des taux de change devise](finance-how-update-currencies.md)|  
 |Configurez différentes données de base, telles que les informations sur la compagnie, les clients, les fournisseurs, les articles et les unités de mesure relatives à la mise en correspondance des données dans [!INCLUDE[d365fin](includes/d365fin_md.md)]|[Configurer l'envoi et la réception de documents électroniques](across-how-to-set-up-electronic-document-sending-and-receiving.md)|  
 |Configurez un compte bancaire, un fournisseur et un journal des paiements pour le virement SEPA.|[Configurer des virements SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md#setting-up-sepa-credit-transfer)|  
 |Préparez les formats de compte bancaire, les modes de paiement et les accords clients pour le prélèvement automatique SEPA.|[Recouvrement de paiements par prélèvement automatique SEPA](finance-collect-payments-with-sepa-direct-debit.md)|  
 |Configurez l’authentification de l’utilisateur et l’URL du fournisseur de l’extension AMC Banking 365 Fundamentals qui est nécessaire pour que les fichiers bancaires soient convertis au format de votre banque.|[Utilisation de l'extension AMC Banking 365 Fundamentals](ui-extensions-amc-banking.md)|  
 |Configurez et activez un service externe qui vous permet d'importer des relevés bancaires, directement sous forme de flux bancaires.|[Configurer le service de relevés bancaires](bank-how-setup-bank-statement-service.md)|  
 |Une fois le service de relevés bancaires activé, lier les comptes bancaires dans [!INCLUDE[d365fin](includes/d365fin_md.md)]|[Configuration des comptes bancaires](bank-how-setup-bank-accounts.md)|  
-|Préparez-vous pour configurer une nouvelle définition d'échange de données pour un fichier ou flux de données à l'aide du schéma XML du fichier pour préremplir le raccourci **Définitions de colonnes** sur la page **Définitions échange report**.|[Utiliser des schémas XML pour préparer des définitions d'échange de données](across-how-to-use-xml-schemas-to-prepare-data-exchange-definitions.md)|  
+|Préparez-vous pour configurer une nouvelle définition d'échange de données pour un fichier ou flux de données à l'aide du schéma XML du fichier pour préremplir le raccourci **Définitions de colonnes** sur la page **Définitions échange report** .|[Utiliser des schémas XML pour préparer des définitions d'échange de données](across-how-to-use-xml-schemas-to-prepare-data-exchange-definitions.md)|  
 |Configurez l'infrastructure d'échange de données pour permettre aux utilisateurs de recevoir un nouveau format de documents achat, d'envoyer un nouveau format de documents vente, d'importer un nouveau fichier bancaire, ou autre échange de données.|[Configurer les définitions d'échange de données](across-how-to-set-up-data-exchange-definitions.md)|  
 
 ## <a name="see-also"></a>Voir aussi  

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: kit, kitting
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 9a0f3c81aad31eb51d282479e56acbfc935bf1dd
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 84232aadd133527d06ff0bf2b65490d5dfe8d651
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3786081"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3917711"
 ---
 # <a name="create-blanket-assembly-orders"></a>Création d'ordres d'assemblage permanents
 Vous pouvez utiliser la gestion d'assemblage pour personnaliser un élément d'assemblage sur la demande d'un client au cours du processus de vente. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).  
@@ -26,16 +26,16 @@ Vous pouvez utiliser la gestion d'assemblage pour personnaliser un élément d'a
 >  Comme toutes les commandes permanentes, les quantités des commandes permanentes d'assemblage ne sont que des prévisions et ne sont pas opérationnelles avant d'être converties en ordres d'assemblage réels. Par conséquent, la fonctionnalité commande, comme le calcul de disponibilité, la réservation et la traçabilité des articles, n'est pas active sur les ordres d'assemblage permanents.  
 
 ## <a name="to-create-a-blanket-assembly-order-for-an-assemble-to-order-item"></a>Pour créer un ordre d'assemblage permanent pour un article à assembler pour commande  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Commandes permanentes ventes**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Commandes permanentes ventes** , puis sélectionnez le lien associé.  
 2. Créez une commande permanente ventes avec une ligne pour un élément d'assemblage. Pour plus de détails, reportez-vous à la rubrique [Créer des commandes permanentes ventes](sales-how-to-create-blanket-sales-orders.md).  
 3. Dans le champ **Quantité à assembler pour commande** de la ligne d'ordre d'assemblage permanent, saisissez la quantité entière.
 
     > [!NOTE]  
     >  Vous ne devez pas créer d'ententes commande permanente pour une quantité partielle. Par conséquent, vous devez entrer la même quantité que vous avez saisie dans le champ **Quantité** de la ligne commande permanente ventes.  
 
-4. Choisissez l'action **Assembler pour commande**, puis choisissez l'action **Lignes Assembler pour commande**. Sinon, choisissez le champ **Quantité à assembler pour commande** sur la ligne.  
-5. Sur la page **Lignes Assembler pour commande**, vérifiez ou modifiez les lignes d'ordre d'assemblage en fonction de l'entente commande permanente que vous avez passée avec le client. Des informations supplémentaires sont disponibles en choisissant **Afficher document** pour ouvrir l'ordre d'assemblage permanent complet. Vous ne pouvez pas modifier le contenu de la plupart des champs, et vous ne pouvez pas reporter.  
-6. Lorsque vous avez ajusté les lignes d'ordre d'assemblage en fonction de l'entente commande permanente, fermez la page **Lignes Assembler pour commande** pour revenir à la page **Commande permanente ventes**.  
+4. Choisissez l'action **Assembler pour commande** , puis choisissez l'action **Lignes Assembler pour commande** . Sinon, choisissez le champ **Quantité à assembler pour commande** sur la ligne.  
+5. Sur la page **Lignes Assembler pour commande** , vérifiez ou modifiez les lignes d'ordre d'assemblage en fonction de l'entente commande permanente que vous avez passée avec le client. Des informations supplémentaires sont disponibles en choisissant **Afficher document** pour ouvrir l'ordre d'assemblage permanent complet. Vous ne pouvez pas modifier le contenu de la plupart des champs, et vous ne pouvez pas reporter.  
+6. Lorsque vous avez ajusté les lignes d'ordre d'assemblage en fonction de l'entente commande permanente, fermez la page **Lignes Assembler pour commande** pour revenir à la page **Commande permanente ventes** .  
 7. Lorsque le client souhaite créer un document de vente en fonction de la commande permanente ventes convenue, créez un document de vente pour l'élément ou les éléments d'assemblage convenus. Pour plus de détails, reportez-vous à la rubrique [Créer des commandes permanentes ventes](sales-how-to-create-blanket-sales-orders.md).
 
 L'ordre d'assemblage permanent associé et toutes les personnalisations sont liées à ce nouveau document de vente pour préparer l'assemblage de l'article ou des articles à vendre.  

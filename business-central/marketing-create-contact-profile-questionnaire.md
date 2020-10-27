@@ -9,13 +9,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: contacts, profiles
 ms.author: edupont
-ms.date: 04/01/2020
-ms.openlocfilehash: 9cf4817cd85951f193ffadbcd3e7ebc971bcca36
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 10/01/2020
+ms.openlocfilehash: ef8b2c90ef01841e2c641b9fc96348d899d4997e
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3181590"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3919348"
 ---
 # <a name="use-profile-questionnaires-to-classify-business-contacts"></a>Utiliser des questionnaires profil pour classer les contacts professionnels
 Vous pouvez configurer des questionnaires profil à utiliser au moment d'entrer des informations sur les profils de vos contacts. Dans chaque questionnaire, vous pouvez configurer les questions à poser à vos contacts.  
@@ -23,15 +23,15 @@ Vous pouvez configurer des questionnaires profil à utiliser au moment d'entrer 
 Vous pouvez également exécuter le questionnaire pour répondre automatiquement à certaines de ces questions en fonction des données contact, client ou fournisseur.  
 
 ## <a name="to-add-a-profile-questionnaire"></a>Pour ajouter un questionnaire profil
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration questionnaire**, puis sélectionnez le lien associé.  
-2.  Sélectionnez l'action **Nouveau**.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration questionnaire** , puis sélectionnez le lien associé.  
+2.  Sélectionnez l'action **Nouveau** .  
 3.  Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
 ## <a name="to-add-questions-to-a-profile-questionnaire"></a>Pour ajouter des questions à un questionnaire profil
-1.  Choisissez le questionnaire profil approprié, puis sélectionnez l'action **Modifier configuration questionnaire**.  
-2.  Sur la première ligne vide, dans le champ **Type**, choisissez **Question**, puis tapez la question dans le champ **Description**. Renseignez les autres champs sur cette ligne.  
-3.  Sur la ligne vide suivante, dans le champ **Type**, choisissez **Réponse**, puis tapez votre réponse dans le champ **Description**.  
-4.  Dans le champ **Priorité**, sélectionnez la priorité. Dans les champs **Valeur début** et **Valeur fin**, définissez une plage de points. Les contacts obtenant un nombre de points compris dans la plage définie recevront la réponse.  
+1.  Choisissez le questionnaire profil approprié, puis sélectionnez l'action **Modifier configuration questionnaire** .  
+2.  Sur la première ligne vide, dans le champ **Type** , choisissez **Question** , puis tapez la question dans le champ **Description** . Renseignez les autres champs sur cette ligne.  
+3.  Sur la ligne vide suivante, dans le champ **Type** , choisissez **Réponse** , puis tapez votre réponse dans le champ **Description** .  
+4.  Dans le champ **Priorité** , sélectionnez la priorité. Dans les champs **Valeur début** et **Valeur fin** , définissez une plage de points. Les contacts obtenant un nombre de points compris dans la plage définie recevront la réponse.  
 
 Répétez ces étapes pour entrer toutes les questions et réponses du questionnaire profil.
 
@@ -41,7 +41,7 @@ Après avoir créé un questionnaire, vous devez créer des évaluations contact
 > Si vous entrez une question dont la réponse est automatique, choisissez <STRONG>Ligne</STRONG>, puis <STRONG>Questionnaire</STRONG> pour entrer les critères de réponse automatique.
 
 ## <a name="the-automatic-classification-of-contacts"></a>Classification automatique des contacts
-Vous pouvez configurer le programme pour qu'il classe automatiquement les contacts en fonction des données client, fournisseur et contact. Pour cela, configurez des questions profil à réponse automatique sur la page **Configuration quest. profil**.  
+Vous pouvez configurer le programme pour qu'il classe automatiquement les contacts en fonction des données client, fournisseur et contact. Pour cela, configurez des questions profil à réponse automatique sur la page **Configuration quest. profil** .  
 
 > [!NOTE]
 > Vous ne pouvez affecter une classification basée sur les données contact qu'aux contacts enregistrés en tant que clients. De même, seuls les contacts enregistrés en tant que fournisseurs peuvent se voir affecter une classification basée sur les données fournisseur. La classification automatique n'est pas mise à jour automatiquement. Par conséquent, vous pouvez être amené à mettre à jour les questionnaires profil après avoir mis à jour les données client, fournisseur ou contact dont ils dépendent.  

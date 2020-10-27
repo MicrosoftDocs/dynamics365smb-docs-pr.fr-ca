@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: print check, customize
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 8346e8a868f73d3de729a56e86530048c58229aa
-ms.sourcegitcommit: 3945f16d6d9c9853651e6291ce1465a44fd71fc8
+ms.openlocfilehash: 31a3df66b3b82e7901a494c7ef552c27b317ba99
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "3458942"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3917086"
 ---
 # <a name="select-a-check-layout"></a>Sélectionner une mise en page de chèque
 Vous pouvez concevoir vos chèques de sorte à respecter les normes fixées par les autorités locales. Vous pouvez imprimer des images de chèques en anglais, en français ou en espagnol.
@@ -23,8 +23,8 @@ Vous pouvez concevoir vos chèques de sorte à respecter les normes fixées par 
 Les chèques sont conçus pour être imprimés aux formats d'image de chèques américains et canadiens, soit au format chèque-talon-chèque, soit au format talon-talon-chèque.
 
 ## <a name="to-select-a-check-layout"></a>Pour sélectionner une mise en page de chèque
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Sélections de rapports - Compte bancaire**, puis sélectionnez le lien associé.
-2. Sur la page **Sélection du rapport - compte bancaire**, dans le champ **Utilisation**, sélectionnez **Chèque**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Sélections de rapports - Compte bancaire** , puis sélectionnez le lien associé.
+2. Sur la page **Sélection du rapport - compte bancaire** , dans le champ **Utilisation** , sélectionnez **Chèque** .
 3. Sélectionnez l'un des codes rapport suivants.
 
 | Code rapport | Nom du rapport | Description |
@@ -34,7 +34,7 @@ Les chèques sont conçus pour être imprimés aux formats d'image de chèques a
 | 10412 |Chèque (Talon/Chèque/Talon) |Ce rapport est conçu pour imprimer des chèques au format talon/chèque/talon. |
 | 10413 |Trois chèques par page |Ce rapport est conçu pour imprimer trois chèques sur chaque page. |
 
-Une fois que vous avez défini les mises en page de chèques, vous pouvez imprimer des chèques à partir de la page **Journal paiement**. Pour plus d'informations, reportez-vous à [Utilisation des chèques](payables-how-work-checks.md).
+Une fois que vous avez défini les mises en page de chèques, vous pouvez imprimer des chèques à partir de la page **Journal paiement** . Pour plus d'informations, reportez-vous à [Utilisation des chèques](payables-how-work-checks.md).
 
 Pour modifier l'une de ces mises en page de chèque par défaut, utilisez l'intégration Word ou RDLC. Pour plus d'informations, voir [Créer et modifier des présentations de rapport personnalisées](ui-how-create-custom-report-layout.md).
 

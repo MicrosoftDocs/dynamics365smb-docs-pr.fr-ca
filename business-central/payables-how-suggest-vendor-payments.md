@@ -10,22 +10,22 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: vendor payment, creditor, debt, balance due, AP
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 9ffac3e4a7f1275cdd9975f18de0b4c7222d646c
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: a8a18e56af1edde2dfef116ca3545c7d511e6bf3
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3779995"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3916736"
 ---
 # <a name="suggest-vendor-payments"></a>Proposer paiements fournisseur
-Sur la page **Journal paiement**, vous pouvez utiliser le traitement en lot **Proposer paiements fournisseur** pour proposer des lignes paiement. Des lignes pour les paiements échus à courte échéance ou les paiements pour lesquels un escompte de paiement est disponible, sont proposées en fonction de vos paramètres.
+Sur la page **Journal paiement** , vous pouvez utiliser le traitement en lot **Proposer paiements fournisseur** pour proposer des lignes paiement. Des lignes pour les paiements échus à courte échéance ou les paiements pour lesquels un escompte de paiement est disponible, sont proposées en fonction de vos paramètres.
 
 Pour bénéficier pleinement des suggestions de paiement, vous devez d'abord attribuer une priorité à vos fournisseurs. Pour plus d'informations, voir [Octroyer une priorité à des fournisseurs](purchasing-how-prioritize-vendors.md).  
 
 > [!NOTE]  
-> Le traitement en lot n'inclut pas les écritures fournisseur marquées **En attente**.  
+> Le traitement en lot n'inclut pas les écritures fournisseur marquées **En attente** .  
 
 > [!IMPORTANT]  
 >   Si vous souhaitez profiter d'escomptes et que vous avez saisi un montant disponible, ce montant est d'abord utilisé pour :  
@@ -34,16 +34,16 @@ Pour bénéficier pleinement des suggestions de paiement, vous devez d'abord att
     * Les écritures fournisseur ouvertes donnant lieu à un escompte, dans l'ordre des numéros des fournisseurs.  
 
 ## <a name="to-use-the-suggest-vendor-payments-function"></a>Pour utiliser la fonction Proposer paiements fournisseur
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux paiement**, puis sélectionnez le lien associé.  
-2. Ouvrez la feuille appropriée, puis sélectionnez l'action **Proposer paiements fournisseur**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux paiement** , puis sélectionnez le lien associé.  
+2. Ouvrez la feuille appropriée, puis sélectionnez l'action **Proposer paiements fournisseur** .  
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
-4. Cliquez sur le bouton **OK**.  
+4. Cliquez sur le bouton **OK** .  
 
 ## <a name="to-insert-the-due-date-as-posting-date-on-payment-journal-lines"></a>Pour insérer la date d'échéance comme date de report sur les lignes journal paiement
-Lorsque vous utilisez le traitement par lots **Proposer paiements fournisseur** pour créer des lignes de paiement pour vos fournisseurs, vous pouvez remplir deux champs spéciaux pour vous assurer que les lignes générées utilisent la date d'échéance pour calculer la date comptabilisation. Ces champs sont **Calculer la date comptabilisation à partir de la date d'échéance doc. lettrage** et **Décalage date d'échéance doc. lettrage**.  
+Lorsque vous utilisez le traitement par lots **Proposer paiements fournisseur** pour créer des lignes de paiement pour vos fournisseurs, vous pouvez remplir deux champs spéciaux pour vous assurer que les lignes générées utilisent la date d'échéance pour calculer la date comptabilisation. Ces champs sont **Calculer la date comptabilisation à partir de la date d'échéance doc. lettrage** et **Décalage date d'échéance doc. lettrage** .  
 
 > [!IMPORTANT]  
->   Vous ne pouvez pas utiliser le champ **Calculer la date de report à partir de la date d'échéance doc. référence** avec le champ **Trouver escomptes de paiement** ou le champ **Résumer par fournisseur**. Si la date de report est basée sur la date d'échéance, des escomptes de paiement risquent de ne pas être calculés correctement, parce que la date de report peut se trouver après la date d'escompte de paiement.  
+>   Vous ne pouvez pas utiliser le champ **Calculer la date de report à partir de la date d'échéance doc. référence** avec le champ **Trouver escomptes de paiement** ou le champ **Résumer par fournisseur** . Si la date de report est basée sur la date d'échéance, des escomptes de paiement risquent de ne pas être calculés correctement, parce que la date de report peut se trouver après la date d'escompte de paiement.  
 
 De plus, si la date de report calculée se trouve dans le passé, la date de report est déplacée à la date de travail, et un message d'attention s'affiche.  
 

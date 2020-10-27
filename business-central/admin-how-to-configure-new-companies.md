@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: d8951de4a6d44675e92dae9c04c9709caac11c38
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: f294fdce544de36992c3b6793ee397dfc271a319
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3783736"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3917911"
 ---
 # <a name="configure-new-companies"></a>Configurer de nouvelles compagnies
 Pour configurer une nouvelle compagnie dans votre implémentation de la solution, vous suivez habituellement trois phases. Dans la première phase, vous importez le package configuration, un fichier .rapidstart avec les informations de configuration. Dans la deuxième phase, vous modifiez les informations de configuration, puis vous les appliquez à votre nouvelle compagnie. Dans la phase finale, vous vérifiez et corrigez les erreurs.  
@@ -32,41 +32,41 @@ Avant d'importer un package de configuration, il est judicieux de vérifier que 
 
 ## <a name="to-import-a-configuration-package"></a>Pour importer un package configuration  
 1. Ouvrez la nouvelle compagnie dans la base de données [!INCLUDE[d365fin](includes/d365fin_md.md)].  
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Packages configuration**, puis sélectionnez le lien associé.  
-3. Sélectionnez l'action **Importer package**.  
-4. Accédez à l'emplacement où vous avez enregistré le fichier du package de configuration .rapidstart, puis sélectionnez le bouton **Ouvrir**.  
-5. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Informations compagnie**, puis sélectionnez le lien associé. Entrez les informations sur la compagnie dans la fiche Informations compagnie. Incluez des informations, telles que les coordonnées bancaires. Vous pouvez également fournir un logo pour la compagnie.  
+2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Packages configuration** , puis sélectionnez le lien associé.  
+3. Sélectionnez l'action **Importer package** .  
+4. Accédez à l'emplacement où vous avez enregistré le fichier du package de configuration .rapidstart, puis sélectionnez le bouton **Ouvrir** .  
+5. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Informations compagnie** , puis sélectionnez le lien associé. Entrez les informations sur la compagnie dans la fiche Informations compagnie. Incluez des informations, telles que les coordonnées bancaires. Vous pouvez également fournir un logo pour la compagnie.  
 
 Toutes les tables que vous avez désignées pour les inclure à la nouvelle compagnie sont importées. À ce stade, vous pouvez appliquer les données de package dans la base de données, ou ajuster et modifier les données de table pour répondre aux spécifications du client.  
 
 ## <a name="to-apply-package-data"></a>Pour appliquer les données de package  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille configuration**, puis sélectionnez le lien associé.  
-2. Sélectionnez une table pour laquelle vous souhaitez modifier les données, puis sélectionnez l'action **Appliquer données**. Cliquez sur le bouton **Oui** pour confirmer l'affectation.
-3. Pour confirmer que les données se trouvent maintenant dans la base de données et que l’affectation a réussi, revenez à la page **Feuille config** et sélectionnez l'action **Données base de données**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille configuration** , puis sélectionnez le lien associé.  
+2. Sélectionnez une table pour laquelle vous souhaitez modifier les données, puis sélectionnez l'action **Appliquer données** . Cliquez sur le bouton **Oui** pour confirmer l'affectation.
+3. Pour confirmer que les données se trouvent maintenant dans la base de données et que l’affectation a réussi, revenez à la page **Feuille config** et sélectionnez l'action **Données base de données** .  
 
 > [!NOTE]  
 >  Une fois les données appliquées, vous pouvez uniquement les visualiser dans la base de données. Elles ne se trouvent plus dans le colis.  
 
 ## <a name="to-modify-and-apply-package-data"></a>Pour modifier et appliquer les données de package  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille configuration**, puis sélectionnez le lien associé.  
-2. Sélectionnez une table pour laquelle vous souhaitez modifier les données, puis sélectionnez l'action **Données package**.  
-3. Sur la page **Enregistrements package config.**, effectuez vos modifications. Par exemple, vous pouvez supprimer des options qui ne s’appliquent pas.  
-4. Sélectionnez l'action **Appliquer données**, puis le bouton **OK**.  
-5. Pour confirmer que les données se trouvent maintenant dans la base de données et que l’affectation a réussi, revenez à la page **Feuille config** et sélectionnez l'action **Données base de données**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille configuration** , puis sélectionnez le lien associé.  
+2. Sélectionnez une table pour laquelle vous souhaitez modifier les données, puis sélectionnez l'action **Données package** .  
+3. Sur la page **Enregistrements package config.** , effectuez vos modifications. Par exemple, vous pouvez supprimer des options qui ne s’appliquent pas.  
+4. Sélectionnez l'action **Appliquer données** , puis le bouton **OK** .  
+5. Pour confirmer que les données se trouvent maintenant dans la base de données et que l’affectation a réussi, revenez à la page **Feuille config** et sélectionnez l'action **Données base de données** .  
 
 ## <a name="to-locate-and-identify-a-configuration-error"></a>Pour trouver et identifier une erreur de configuration  
 Il existe certains types d’erreurs qui surviennent lorsque vous appliquez des données à une base de données. L’erreur la plus commune est que les tables associées requises ne soient pas incluses. Vous corrigez ces erreurs dans la feuille de configuration.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Packages configuration**, puis sélectionnez le lien associé.  
-2. Sélectionnez le package que vous souhaitez examiner, puis sélectionnez l'action **Modifier**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Packages configuration** , puis sélectionnez le lien associé.  
+2. Sélectionnez le package que vous souhaitez examiner, puis sélectionnez l'action **Modifier** .  
 
-    Toute table présentant des erreurs est mise en surbrillance. Le nombre d’erreurs de colis est affiché dans le champ **Nombre d’erreurs de colis**.  
+    Toute table présentant des erreurs est mise en surbrillance. Le nombre d’erreurs de colis est affiché dans le champ **Nombre d’erreurs de colis** .  
 
-3. Choisissez le champ **Nombre erreurs package** pour ouvrir la page **Enregistrements package config.**, qui répertorie les enregistrements contenant des erreurs.  
+3. Choisissez le champ **Nombre erreurs package** pour ouvrir la page **Enregistrements package config.** , qui répertorie les enregistrements contenant des erreurs.  
 
 ### <a name="to-fix-an-error"></a>Pour corriger une erreur  
 1. Ouvrez la compagnie basée sur votre package de configuration.  
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille configuration**, puis sélectionnez le lien associé.  
+2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille configuration** , puis sélectionnez le lien associé.  
 3. Corrigez les erreurs, par exemple ajoutez des tables liées manquantes à la feuille.  
 4. Ajoutez les tables au colis configuration existant, ou créez un colis qui contient uniquement les nouvelles tables. Pour plus d’informations, voir [Préparer un package configuration](admin-how-to-prepare-a-configuration-package.md).  
 5. Rouvrez la nouvelle compagnie pour laquelle vous implémentez la configuration.  

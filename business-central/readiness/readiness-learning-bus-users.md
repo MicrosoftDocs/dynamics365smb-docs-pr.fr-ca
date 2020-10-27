@@ -2,15 +2,15 @@
 title: Catalogue d'apprentissage Utilisateurs professionnels
 description: Trouvez toutes les formations disponibles pour Business Central.
 author: loreleishannonmsft
-ms.date: 04/20/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.author: margoc
-ms.openlocfilehash: 8fabcd929ecd2ebe0ed81f16625f9ad8aca3ff1f
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 0aeb3adc4f353b85bbd5608176f1e755b55042c9
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3778861"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3918729"
 ---
 # <a name="business-users-learning-catalog"></a>Catalogue d'apprentissage Utilisateurs professionnels
 

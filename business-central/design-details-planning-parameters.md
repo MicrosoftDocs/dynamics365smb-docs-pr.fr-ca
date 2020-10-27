@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: planning, design
-ms.date: 04/20/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 5d7c419158134c78993c00d6644bb828dd3be1a9
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: d7eddf4c988c6edc3ae1a0dbfd045fa7b4f5b4b4
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3787381"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3922003"
 ---
 # <a name="design-details-planning-parameters"></a>Détails de conception : paramètres de planification
 Cette rubrique décrit les différents paramètres de planification que vous pouvez utiliser dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
@@ -26,10 +26,10 @@ La façon dont le système de planification contrôle l'approvisionnement d'arti
 |-------------|---------------|  
 |Définir si l'article doit être planifié|Méthode de réapprovisionnement = Vide|  
 |Définir la date de réapprovisionnement|Plage de temps<br /><br /> Point de réapprovisionnement<br /><br /> Délai de sécurité|  
-|Définir la quantité à réapprovisionner|Quantité de stocks de sécurité<br /><br /> Méthode de réapprovisionnement :<br /><br /> -   Qté fixe de commande plus Quantité de réappro.<br />-   Qté maximum plus inventaire maximum<br />-   Ordre<br />-   Lot pour lot|  
+|Définir la quantité à réapprovisionner|Quantité de stocks de sécurité<br /><br /> Méthode de réapprovisionnement :<br /><br /> -   Qté fixe de commande plus Quantité de réappro.<br />-   Qté maximale plus inventaire maximal<br />-   Commande<br />-   Lot pour lot|  
 |Optimisez quand et combien réapprovisionner|Période de replanification<br /><br /> Période de cumul de lot<br /><br /> Période tampon|  
 |Modifiez les commandes approvisionnement|Quantité minimum commande<br /><br /> Quantité maximum commande<br /><br /> Commande multiple|  
-|Délimiter l'article planifié|Mode de lancement :<br /><br /> -   Fabrication sur stock.<br />-   Fabrication à la commande.|  
+|Délimiter l'article planifié|Mode de lancement :<br /><br /> -   Fabrication sur stock<br />-   Fabrication à la commande|  
 
 ## <a name="define-if-the-item-will-be-planned"></a>Définir si l'article doit être planifié  
 Pour inclure un article/une unité de stock dans le processus de planification, il doit avoir une méthode de réapprovisionnement sinon il doit être planifié manuellement, par exemple, avec la fonction Planification de commande.  
@@ -37,14 +37,14 @@ Pour inclure un article/une unité de stock dans le processus de planification, 
 ## <a name="define-when-to-reorder"></a>Définir la date de réapprovisionnement  
 Les propositions de commande sont généralement libérées seulement lorsque la quantité disponible prévue est inférieure à une certaine quantité donnée. Cette quantité est définie par le point de commande. Sinon, elle est égale à zéro. Zéro peut être ajusté en saisissant une quantité de stock de sécurité. Si l'utilisateur a défini un délai de sécurité, la proposition sera livrée dans la période précédant la date d'échéance demandée.  
 
-Le champ **Plage de temps** est utilisé par les stratégies de point de réapprovisionnement (**Qté fixe de réapprovisionnement** et **Qté maximum**), où le niveau d'inventaire est vérifié après chaque plage de temps. La première plage de temps débute à la date de début de la planification.  
+Le champ **Plage de temps** est utilisé par les stratégies de point de réapprovisionnement ( **Qté fixe de réapprovisionnement** et **Qté maximum** ), où le niveau d'inventaire est vérifié après chaque plage de temps. La première plage de temps débute à la date de début de la planification.  
 
 > [!NOTE]  
->  Lors du calcul des plages de temps, le système de planification ignore les calendriers de travail définis dans le champ **Code calendrier principal** des pages **Informations compagnie** et **Fiche emplacement**.  
+>  Lors du calcul des plages de temps, le système de planification ignore les calendriers de travail définis dans le champ **Code calendrier principal** des pages **Informations compagnie** et **Fiche emplacement** .  
 
 Le délai de sécurité par défaut, sur la page **Configuration de la fabrication** doit être défini à au moins un jour. La date d'échéance de la demande peut être connue, mais pas l'heure d'échéance. La planification planifie en amont pour répondre à la demande brute et, si aucun délai de sécurité n'est défini, les marchandises peuvent arriver trop tard pour répondre à la demande.  
 
-Trois champs de période de réapprovisionnement supplémentaires, **Période de replanification**, **Période de groupement de lots** et **Période tampon**, jouent également un rôle en définissant quand commander à nouveau. Pour plus d'informations, reportez-vous [Optimiser le délai et la quantité de commande](design-details-planning-parameters.md#optimize-when-and-how-much-to-reorder).  
+Trois champs de période de réapprovisionnement supplémentaires, **Période de replanification** , **Période de groupement de lots** et **Période tampon** , jouent également un rôle en définissant quand commander à nouveau. Pour plus d'informations, reportez-vous [Optimiser le délai et la quantité de commande](design-details-planning-parameters.md#optimize-when-and-how-much-to-reorder).  
 
 ## <a name="define-how-much-to-reorder"></a>Définir la quantité à réapprovisionner  
 Si le système de planification détecte un besoin de réapprovisionnement, la méthode de réapprovisionnement sélectionnée est utilisée pour déterminer quand et combien commander.  
@@ -57,7 +57,7 @@ Indépendamment de la méthode de réapprovisionnement, le système de planifica
 4. S'il y a plus de demande brute due avant la date de fin de la proposition commande programmée en aval, et si cette demande amène le stock disponible prévu calculé actuellement en dessous du stock de sécurité, la quantité commandée est augmentée pour compenser le déficit. La commande approvisionnement suggérée est alors programmée en amont à partir de la date d'échéance de la demande brute qui aurait entamé l'inventaire de sécurité.  
 5. Si le champ **Intervalle de planification** n'est pas renseigné, seule la demande brute à la même date d'échéance sera ajoutée.  
 
-     Les champs de période de réapprovisionnement suivants jouent également un rôle dans la définition de la quantité à réapprovisionner : **Période de replanification**, **Période de groupement de lots** et **Période tampon**. Pour plus d'informations, reportez\-vous [Optimiser le délai et la quantité de commande](design-details-planning-parameters.md#optimize-when-and-how-much-to-reorder).  
+     Les champs de période de réapprovisionnement suivants jouent également un rôle dans la définition de la quantité à réapprovisionner : **Période de replanification** , **Période de groupement de lots** et **Période tampon** . Pour plus d'informations, reportez\-vous [Optimiser le délai et la quantité de commande](design-details-planning-parameters.md#optimize-when-and-how-much-to-reorder).  
 
 ### <a name="reordering-policies"></a>Méthodes de réapprovisionnement  
 Les méthodes de réapprovisionnement suivantes affectent la quantité en cours de réapprovisionnement.  
@@ -78,7 +78,7 @@ Pour obtenir un programme d'approvisionnement rationnel, un gestionnaire régler
 |**Période de cumul de lot**|Avec la méthode de réapprovisionnement lot pour lot, ce champ est utilisé pour regrouper plusieurs besoins d'approvisionnement dans une commande d'approvisionnement. À partir du premier approvisionnement prévu, le système cumule tous les besoins d'approvisionnement dans la période de cumul de lot suivante en un approvisionnement unique, effectué lors de la date du premier approvisionnement. La demande effectuée en dehors de la période de cumul de lot n'est pas couverte par cet approvisionnement.|  
 |**Période tampon**|Ce champ permet d'éviter une replanification mineure de l'approvisionnement existant dans le temps. Les modifications de la date approvisionnement jusqu'à une période tampon de la date approvisionnement ne génèrent aucun message d'action.<br /><br /> La période tampon désigne la période pendant laquelle vous ne souhaitez pas que le système de planification propose de reprogrammer les commandes d'approvisionnement existantes en aval. Cela limite le nombre de replanification non significative de l'approvisionnement existant à une date ultérieure si la date replanifiée se situe dans la période tampon.<br /><br /> Par conséquent, un delta positif entre la nouvelle date d'approvisionnement proposée et la date d'approvisionnement d'origine est toujours supérieur à la période tampon.|  
 > [!NOTE]
-> Avec la politique de réorganisation Lot pour Lot, la valeur du champ **Période de cumul de lot** doit être égale ou supérieure à celle du champ **Période tampon**. Sinon, la période tampon sera automatiquement réduite pendant la routine de planification pour correspondre à la période de cumul de lot.  
+> Avec la politique de réorganisation Lot pour Lot, la valeur du champ **Période de cumul de lot** doit être égale ou supérieure à celle du champ **Période tampon** . Sinon, la période tampon sera automatiquement réduite pendant la routine de planification pour correspondre à la période de cumul de lot.  
 
 Le temps de la période de reprogrammation, de la période tampon, ainsi que de la période de cumul de lot est basé sur une date d'approvisionnement. La plage de temps est basée sur la date de début de la planification, comme l'indique la figure suivante.  
 
@@ -86,23 +86,23 @@ Le temps de la période de reprogrammation, de la période tampon, ainsi que de 
 
 Dans les exemples suivants, les flèches noires représentent l'approvisionnement existant (vers le haut) et la demande (vers le bas). Les flèches rouge, verte et orange sont des suggestions de planification.  
 
-**Exemple 1** : la date modifiée est en dehors de la période de replanification, ce qui entraîne l'annulation de l'approvisionnement existant. Un nouvel approvisionnement est proposé pour répondre à la demande dans la période de cumul de lot.  
+**Exemple 1**  : la date modifiée est en dehors de la période de replanification, ce qui entraîne l'annulation de l'approvisionnement existant. Un nouvel approvisionnement est proposé pour répondre à la demande dans la période de cumul de lot.  
 
 ![Période de replanification et période de cumul de lot](media/supply_planning_5_recheduling_period_lot_accumulation_period.png "Période de replanification et période de cumul de lot")  
 
-**Exemple 2** : la date modifiée se trouve dans la période de replanification, ce qui entraîne la replanification de l'approvisionnement existant. Un nouvel approvisionnement est proposé pour répondre à la demande hors de la période de cumul de lot.  
+**Exemple 2**  : la date modifiée se trouve dans la période de replanification, ce qui entraîne la replanification de l'approvisionnement existant. Un nouvel approvisionnement est proposé pour répondre à la demande hors de la période de cumul de lot.  
 
 ![Période de replanification, période de cumul de lot et replanification](media/supply_planning_5_recheduling_period_lot_accum_period_reschedule.png "Période de replanification, période de cumul de lot et replanification")  
 
-**Exemple 3** : il existe une demande pour la période tampon et la quantité d'approvisionnement dans la période de groupement de lots correspond à la quantité d'approvisionnement. La demande suivante n'est pas couverte et un nouvel approvisionnement est proposé.  
+**Exemple 3**  : il existe une demande pour la période tampon et la quantité d'approvisionnement dans la période de groupement de lots correspond à la quantité d'approvisionnement. La demande suivante n'est pas couverte et un nouvel approvisionnement est proposé.  
 
 ![Période tampon et période de cumul de lot](media/supply_planning_5_dampener_period_lot_accumulation_period.png "Période tampon et période de cumul de lot")  
 
-**Exemple 4** : il existe une demande pour la période tampon et l'approvisionnement reste à la même date. Toutefois, la quantité d'approvisionnement actif n'est pas suffisante pour répondre à la demande dans la période de cumul de lot, donc une tâche de modification de quantité pour la commande approvisionnement existante est suggérée.  
+**Exemple 4**  : il existe une demande pour la période tampon et l'approvisionnement reste à la même date. Toutefois, la quantité d'approvisionnement actif n'est pas suffisante pour répondre à la demande dans la période de cumul de lot, donc une tâche de modification de quantité pour la commande approvisionnement existante est suggérée.  
 
 ![Période tampon, Période de cumul de lot et Modifier la quantité](media/supply_planning_5_dampener_period_lot_accum_period_change_qty.png "Période tampon, Période de cumul de lot et Modifier la quantité")  
 
-**Valeurs par défaut :** la valeur par défaut du champ **Intervalle de planification** et des trois champs de période de réapprovisionnement est vide. Pour tous les champs, sauf le champ **Période tampon**, cela signifie 0D (zéro jours). Si le champ **Période tampon** est vide, la valeur globale du champ **Période tampon par défaut** de la page **Configuration de la fabrication** sera utilisée.  
+**Valeurs par défaut :** la valeur par défaut du champ **Intervalle de planification** et des trois champs de période de réapprovisionnement est vide. Pour tous les champs, sauf le champ **Période tampon** , cela signifie 0D (zéro jours). Si le champ **Période tampon** est vide, la valeur globale du champ **Période tampon par défaut** de la page **Configuration de la fabrication** sera utilisée.  
 
 ## <a name="modify-the-supply-orders"></a>Modifiez les commandes approvisionnement  
 Lorsque la quantité de la proposition de commande a été calculée, un ou plusieurs modificateurs de commande peuvent l'ajuster. Par exemple, la quantité maximum commande est supérieure ou égale à la quantité minimum commande, qui est supérieure ou égale au multiple de commande.  

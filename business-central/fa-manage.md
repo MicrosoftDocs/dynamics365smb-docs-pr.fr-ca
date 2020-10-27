@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: machinery, buildings
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: fdcced8a62cb64f28d3e4d274271c4cf8f27d0d7
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 2886548e1af66e0f28eadc16c80f64263f3e1917
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3780270"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3920632"
 ---
 # <a name="fixed-assets"></a>Immobilisations
 Le module Immobilisations dans [!INCLUDE[d365fin](includes/d365fin_md.md)] offre un aperçu des immobilisations et garantit un amortissement périodique correct. Elle vous permet également de connaître les coûts d'entretien, de gérer les polices d'assurance, de reporter les transactions d'immobilisations, et de générer des rapports et des statistiques variés.
@@ -31,7 +31,7 @@ Pour chaque immobilisation, vous pouvez enregistrer des coûts d'entretien et la
 Chaque immobilisation peut être liée à une ou à plusieurs polices d'assurance. Vous pouvez ainsi vérifier facilement la concordance des montants des polices d'assurance avec la valeur des immobilisations associées à ces polices. Cela facilite également le contrôle des primes d'assurance annuelles.
 
 > [!NOTE]  
->   Vous pouvez enregistrer les transactions immobilisation sur la page **Journal GL immobilisation** ou sur la page **Journal immobilisations**, selon que les transactions sont destinées à des rapports financiers ou à la gestion interne. L'aide pour les immobilisations décrit uniquement la procédure d'utilisation de la page **Feuille compta. immo.**. Pour en savoir plus, voir [Configurer l'amortissement d'immobilisation](fa-how-setup-depreciation.md).
+>   Vous pouvez enregistrer les transactions immobilisation sur la page **Journal GL immobilisation** ou sur la page **Journal immobilisations** , selon que les transactions sont destinées à des rapports financiers ou à la gestion interne. L'aide pour les immobilisations décrit uniquement la procédure d'utilisation de la page **Feuille compta. immo.** . Pour en savoir plus, voir [Configurer l'amortissement d'immobilisation](fa-how-setup-depreciation.md).
 
 Pour pouvoir gérer les immobilisations, vous devez configurer les valeurs par défaut, la comptabilité des immobilisations, les groupes de report, les clés d'affectation, les journaux et les types de report. Pour plus d'informations, reportez-vous à [Paramétrage d'immobilisations](fa-setup.md).
 

@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: transportation, added cost, landed cost
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: e01994d44498ab6716b9c86219f17f9a15417e34
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: a4fa309b776fd0a11fafbde1df9f93b6583eddb0
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3788684"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3916811"
 ---
 # <a name="use-item-charges-to-account-for-additional-trade-costs"></a>Utiliser Frais annexes pour comptabiliser les coûts commerciaux supplémentaires
 Pour une évaluation correcte, vos articles de l'inventaire doivent comptabiliser tous les coûts ajoutés, tels que le fret, la manutention, les assurances et le transport, que vous encourez lorsque vous achetez ou vendez des articles. Pour les achats, le coût en magasin d'un article acheté est constitué du prix d'achat au fournisseur et de tous les frais annexes directs pouvant être affectés à chacune des réceptions ou expéditions retour. Pour les ventes, il peut s'avérer aussi fondamental pour votre compagnie de connaître le coût de livraison des articles vendus que le coût en magasin des articles achetés.
@@ -45,27 +45,27 @@ Cette vidéo montre comment gérer un coût d'expédition supplémentaire dans l
 ## <a name="to-set-up-item-charge-numbers"></a>Pour configurer des numéros de frais annexes
 Utilisez les numéros de frais annexes pour distinguer les différents types de frais annexes utilisés dans votre compagnie.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Frais annexes**, puis sélectionnez le lien associé.
-2. Sur la page **Frais annexes**, sélectionnez l'action **Nouveau** pour créer ligne.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Frais annexes** , puis sélectionnez le lien associé.
+2. Sur la page **Frais annexes** , sélectionnez l'action **Nouveau** pour créer ligne.
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 ## <a name="to-assign-an-item-charge-directly-to-the-purchase-invoice-for-the-item"></a>Pour affecter des frais annexes directement à la facture achat pour l'article
 Si vous connaissez les frais annexes au moment de reporter une facture achat pour l'article, procédez comme suit.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures achat**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures achat** , puis sélectionnez le lien associé.
 2. Créez une facture achat. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 3. Assurez-vous que la facture achat a une ou plusieurs lignes de type Article.
-4. Sur une nouvelle ligne, dans le champ **Type**, sélectionnez **Frais annexes**.
-5. Dans le champ **Quantité**, saisissez les unités de ces frais annexes qui vous ont été facturées.
-6. Dans le champ **Coût unitaire direct**, saisissez le montant des frais annexes.
+4. Sur une nouvelle ligne, dans le champ **Type** , sélectionnez **Frais annexes** .
+5. Dans le champ **Quantité** , saisissez les unités de ces frais annexes qui vous ont été facturées.
+6. Dans le champ **Coût unitaire direct** , saisissez le montant des frais annexes.
 7. Renseignez les champs restants selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
     Dans les étapes suivantes, vous créez l'affectation réelle. Jusqu'à ce que les frais annexes soient entièrement affectés, la valeur dans le champ **Qté à affecter** est en rouge.
-8. Sur le raccourci **Lignes**, cliquez sur l'action **Affectation frais annexes**.
+8. Sur le raccourci **Lignes** , cliquez sur l'action **Affectation frais annexes** .
 
-    La page **Affectation frais annexes** s'ouvre affichant une ligne pour chaque ligne de type Article de la facture achat. Pour affecter des frais annexes à une ou plusieurs lignes facture, vous pouvez utiliser une fonction qui les affecte et les distribue pour vous ou vous pouvez renseigner manuellement le champ **Qté à affecter**. Les étapes suivantes décrivent comment utiliser la fonction Suggérer affectation frais annexes.
+    La page **Affectation frais annexes** s'ouvre affichant une ligne pour chaque ligne de type Article de la facture achat. Pour affecter des frais annexes à une ou plusieurs lignes facture, vous pouvez utiliser une fonction qui les affecte et les distribue pour vous ou vous pouvez renseigner manuellement le champ **Qté à affecter** . Les étapes suivantes décrivent comment utiliser la fonction Suggérer affectation frais annexes.
 
-9. Sur la page **Affectation frais annexes**, choisissez l'action **Suggérer affectation frais annexes**.
+9. Sur la page **Affectation frais annexes** , choisissez l'action **Suggérer affectation frais annexes** .
 10. S'il existe plusieurs lignes facture de type Article, choisissez l'une des quatre options de distribution.  
 
 Si les frais annexes sont entièrement affectés, la valeur dans le champ **Qté à affecter** de la facture achat est zéro.
@@ -75,9 +75,9 @@ Les frais annexes sont maintenant affectés à la facture achat. Lorsque vous re
 ## <a name="to-assign-an-item-charge-from-a-separate-invoice-to-the-purchase-invoice-for-the-item"></a>Pour affecter des frais annexes depuis une facture distincte à la facture achat pour l'article
 Si vous avez reçu une facture des frais annexes après avoir reporté la réception achat d'origine, procédez comme suit.
 1. Répétez les étapes 1 à 8 de [Pour affecter des frais annexes directement à la facture achat pour l'article](payables-how-assign-item-charges.md#to-assign-an-item-charge-directly-to-the-purchase-invoice-for-the-item).
-2. Sur la page **Affectation frais annexes**, cliquez sur l'action **Extraire lignes réception**.
-3. Sur la page **Lignes réception achat**, sélectionnez la réception achat reportée de l'article auquel vous souhaitez affecter les frais annexes, puis choisissez le bouton **OK**.
-4. Choisissez l'action **Suggérer affectation frais annexes**.
+2. Sur la page **Affectation frais annexes** , cliquez sur l'action **Extraire lignes réception** .
+3. Sur la page **Lignes réception achat** , sélectionnez la réception achat reportée de l'article auquel vous souhaitez affecter les frais annexes, puis choisissez le bouton **OK** .
+4. Choisissez l'action **Suggérer affectation frais annexes** .
 
 Les frais annexes de la facture achat distincte sont maintenant affectés à l'article sur la réception achat reportée, mettant ainsi à jour la valeur d'inventaire de l'article avec le coût des frais annexes.
 

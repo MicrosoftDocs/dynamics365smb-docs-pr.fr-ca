@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 07/07/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: aa12b250f404f149d790b0768560cad958c26d31
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 83bb0691baada420d8360736b613d1fbb33690e4
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3787431"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3922077"
 ---
 # <a name="design-details-outbound-warehouse-flow"></a>Détails de conception : flux de désenlogement
 
@@ -69,11 +69,11 @@ En outre, les documents origine internes suivants existent qui fonctionnent comm
 
 ### <a name="3-create-inventory-pick-or-movement"></a>3 : Créer un prélèvement inventaire ou un mouvement d'inventaire
 
- Sur la page **Prélèvement inventaire** ou **Mouvement d'inventaire**, l'employé d'entrepôt extrait, en mode extraction, les lignes document origine en attente en fonction des demandes désenlogement. Sinon, les lignes prélèvement inventaire sont déjà créées, par déplacement, par l'utilisateur responsable du document origine.  
+ Sur la page **Prélèvement inventaire** ou **Mouvement d'inventaire** , l'employé d'entrepôt extrait, en mode extraction, les lignes document origine en attente en fonction des demandes désenlogement. Sinon, les lignes prélèvement inventaire sont déjà créées, par déplacement, par l'utilisateur responsable du document origine.  
 
 ### <a name="4-post-inventory-pick-or-register-inventory-movement"></a>4 : reporter un prélèvement inventaire ou enregistrer un mouvement d'inventaire
 
- Sur chaque ligne pour les articles qui ont été prélevées ou déplacés, entièrement ou partiellement, le magasinier renseigne le champ **Quantité**, puis valide le prélèvement stock ou enregistre le mouvement de stock. Les documents origine associés au prélèvement inventaire sont reportés comme étant livrés ou consommés. Les documents origine liés aux mouvements d'inventaire ne sont pas reportés.  
+ Sur chaque ligne pour les articles qui ont été prélevées ou déplacés, entièrement ou partiellement, le magasinier renseigne le champ **Quantité** , puis valide le prélèvement stock ou enregistre le mouvement de stock. Les documents origine associés au prélèvement inventaire sont reportés comme étant livrés ou consommés. Les documents origine liés aux mouvements d'inventaire ne sont pas reportés.  
 
  Pour les prélèvements inventaire, les écritures article négatives sont créées, les écritures entrepôt sont créées, et la demande de prélèvement est supprimée, si elle a été entièrement traitée. Par exemple, le champ **Qté expédiée** sur la ligne document origine sortant est mis à jour. Un document livraison reporté est créé et indique le document de vente, par exemple, ainsi que les articles livrés.  
 
@@ -93,7 +93,7 @@ En outre, les documents origine internes suivants existent qui fonctionnent comm
 
 ### <a name="3-create-warehouse-shipment"></a>3 : Créer livraison entrepôt
 
- Sur la page **Livraison entrepôt**, le responsable de la livraison extrait les lignes document origine en attente en fonction de la demande désenlogement. Plusieurs lignes document source peuvent être combinées dans un document livraison entrepôt.  
+ Sur la page **Livraison entrepôt** , le responsable de la livraison extrait les lignes document origine en attente en fonction de la demande désenlogement. Plusieurs lignes document source peuvent être combinées dans un document livraison entrepôt.  
 
 ### <a name="4-release-shipment--create-warehouse-pick"></a>4 : Libérer la livraison / Créer un prélèvement entrepôt
 
@@ -123,7 +123,7 @@ En outre, les documents origine internes suivants existent qui fonctionnent comm
 
 ### <a name="9-register-warehouse-pick"></a>9 : Enregistrer un prélèvement entrepôt
 
- Sur chaque ligne pour les articles qui ont été prélevés, entièrement ou partiellement, l'employé d'entrepôt renseigne le champ **Quantité** sur la page **Prélèvement entrepôt**, puis enregistre le prélèvement entrepôt.  
+ Sur chaque ligne pour les articles qui ont été prélevés, entièrement ou partiellement, l'employé d'entrepôt renseigne le champ **Quantité** sur la page **Prélèvement entrepôt** , puis enregistre le prélèvement entrepôt.  
 
  Les écritures d'entrepôt sont créées, et les lignes de prélèvement entrepôt sont supprimées, si entièrement traitées. Le document de prélèvement entrepôt reste ouvert jusqu'à ce que la quantité totale de la livraison entrepôt associée soit reportée. Le champ **Qté prélevée** sur les lignes expédition entrepôt est mis à jour en conséquence.  
 

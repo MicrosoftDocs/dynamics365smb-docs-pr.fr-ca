@@ -8,25 +8,25 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: Ceridian, Quickbooks, salary
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 3e8260d747f692a44b09a537aa17cdbf0de83fff
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 2fde597db9f5889678c5501bfdcc5f2412ec47cc
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3782653"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3917011"
 ---
 # <a name="import-payroll-transactions"></a>Importer les transactions de paie
-Pour tenir compte des paiements des salaires et des transactions associées, vous devez importer et reporter des transactions financières effectuées par votre fournisseur de paie dans le grand livre. Pour cela, vous devez commencer par importer un fichier que vous recevez du fournisseur de paie sur la page **Journal général**. Vous devez ensuite mapper les comptes externes du fichier de paie aux comptes généraux appropriés. Enfin, vous devez reporter les transactions de paie en fonction du mappage de compte.
+Pour tenir compte des paiements des salaires et des transactions associées, vous devez importer et reporter des transactions financières effectuées par votre fournisseur de paie dans le grand livre. Pour cela, vous devez commencer par importer un fichier que vous recevez du fournisseur de paie sur la page **Journal général** . Vous devez ensuite mapper les comptes externes du fichier de paie aux comptes généraux appropriés. Enfin, vous devez reporter les transactions de paie en fonction du mappage de compte.
 
 > [!NOTE]  
 >   Pour utiliser cette fonctionnalité, une extension pour l'importation de la paie doit être installée et activée. Les extensions Salaire de Ceridian et Importer le fichier de paie de Quickbooks sont préinstallées dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Pour plus d'informations, voir [Personnalisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide des extensions](ui-extensions.md).
 
 ## <a name="to-import-a-payroll-file"></a>Pour importer un fichier de paie
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux généraux**, puis sélectionnez le lien associé.
-2. Dans le nom feuille comptabilité pertinent, sélectionnez l'action **Importer les transactions de paie**. Un guide de configuration assistée s'ouvre.
-3. Suivez les étapes de la page **Importer les transactions de paie**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux généraux** , puis sélectionnez le lien associé.
+2. Dans le nom feuille comptabilité pertinent, sélectionnez l'action **Importer les transactions de paie** . Un guide de configuration assistée s'ouvre.
+3. Suivez les étapes de la page **Importer les transactions de paie** .
 
     > [!TIP]  
     >   Dans l'étape à propos du mappage des enregistrements de paie externes dans les comptes généraux, les mappages que vous effectuez seront reconnus la prochaine fois que les mêmes enregistrements seront importés. Cela vous permettra d'économiser du temps car vous n'avez pas à remplir manuellement le champ **N° compte** dans le journal général à chaque importation de transactions de paie récurrentes.   

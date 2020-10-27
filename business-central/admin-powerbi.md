@@ -9,14 +9,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: account schedule, analysis, reporting, financial report, business intelligence, KPI
 ms.reviewer: edupont
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: jswymer
-ms.openlocfilehash: a1e2e8ceee41c2c6ed517d000fc7c3a4a6aa274c
-ms.sourcegitcommit: aeaa0dc64e54432a70c4b0e1faf325cd17d01389
+ms.openlocfilehash: e339033e8529f59f548e8bf71fd683f9a2a17eba
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "3697682"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3917886"
 ---
 # <a name="prodshort-and-power-bi"></a>[!INCLUDE[prodshort](includes/prodshort.md)] et Power BI
 
@@ -31,10 +31,10 @@ Il existe différentes fonctionnalités pour utiliser [!INCLUDE[prodshort](inclu
 
 |Fonctionnalité|Description|En ligne|Sur site|Plus d'informations|
 |-------|-----------|--------------|-----------|----------------|
-|Afficher les données [!INCLUDE[prodshort](includes/prodshort.md)] dans Power BI|Vous pouvez consulter vos données depuis [!INCLUDE[prodshort](includes/prodshort.md)] dans les rapports dans Power BI. [!INCLUDE[prodshort](includes/prodshort.md)] en ligne comprend des rapports Power BI prédéfinis. Ou votre organisation a peut-être mis à votre disposition certains rapports personnalisés.|![coche](media/check.png)|![coche](media/check.png)|[Voir…](across-working-with-powerbi.md)|
-|Afficher les rapports Power BI dans le client [!INCLUDE[prodshort](includes/prodshort.md)].| Les rapports Power BI qui affichent les données [!INCLUDE[prodshort](includes/prodshort.md)] peuvent être intégrés directement dans les pages [!INCLUDE[prodshort](includes/prodshort.md)] des composants. Vous pouvez changer de partie pour afficher tout rapport mis à votre disposition. |![coche](media/check.png)|![coche](media/check.png)<sup>[*](#onprem)</sup>|[Voir…](across-working-with-business-central-in-powerbi.md).|
-|Créez des rapports et des tableaux de bord dans Power BI qui affichent les données [!INCLUDE[prodshort](includes/prodshort.md)].|Utilisez Power BI Desktop pour créer vos propres rapports et tableaux de bord. Vous pouvez publier les rapports vers votre propre service Power BI ou les partager avec tous les utilisateurs de votre organisation.|![coche](media/check.png)|![coche](media/check.png)|[Voir…](across-how-use-financials-data-source-powerbi.md)
-|Applications [!INCLUDE[prodshort](includes/prodshort.md)] dans Power BI| [!INCLUDE[prodshort](includes/prodshort.md)] publie trois applications pour Power BI sur Microsoft AppSource. Ces applications créent des rapports et des tableaux de bord détaillés dans votre service Power BI pour visualiser les données [!INCLUDE[prodshort](includes/prodshort.md)]. Les applications disponibles incluent : <ul><li>[!INCLUDE [prodlong](includes/prodlong.md)] - CRM </li><li>[!INCLUDE [prodlong](includes/prodlong.md)] - Finance </li><li>[!INCLUDE [prodlong](includes/prodlong.md)] - Sales </li></ul>  |![coche](media/check.png)||[Voir…](across-powerbi-business-central-apps.md)
+|Afficher les données [!INCLUDE[prodshort](includes/prodshort.md)] dans Power BI|Vous pouvez consulter vos données depuis [!INCLUDE[prodshort](includes/prodshort.md)] dans les rapports dans Power BI. [!INCLUDE[prodshort](includes/prodshort.md)] en ligne comprend des rapports Power BI prédéfinis. Ou votre organisation a peut-être mis à votre disposition certains rapports personnalisés.|![Fonctionne en ligne](media/check.png)|![Fonctionne en local](media/check.png)|[Voir…](across-working-with-powerbi.md)|
+|Afficher les rapports Power BI dans le client [!INCLUDE[prodshort](includes/prodshort.md)].| Les rapports Power BI qui affichent les données [!INCLUDE[prodshort](includes/prodshort.md)] peuvent être intégrés directement dans les pages [!INCLUDE[prodshort](includes/prodshort.md)] des composants. Vous pouvez changer de partie pour afficher tout rapport mis à votre disposition. |![fonctionne en ligne](media/check.png)|![Fonctionne en local](media/check.png)<sup>[*](#onprem)</sup>|[Voir…](across-working-with-business-central-in-powerbi.md).|
+|Créez des rapports et des tableaux de bord dans Power BI qui affichent les données [!INCLUDE[prodshort](includes/prodshort.md)].|Utilisez Power BI Desktop pour créer vos propres rapports et tableaux de bord. Vous pouvez publier les rapports vers votre propre service Power BI ou les partager avec tous les utilisateurs de votre organisation.|![Fonctionne en ligne](media/check.png)|![fonctionne en local](media/check.png)|[Voir…](across-how-use-financials-data-source-powerbi.md)
+|Applications [!INCLUDE[prodshort](includes/prodshort.md)] dans Power BI| [!INCLUDE[prodshort](includes/prodshort.md)] publie trois applications pour Power BI sur Microsoft AppSource. Ces applications créent des rapports et des tableaux de bord détaillés dans votre service Power BI pour visualiser les données [!INCLUDE[prodshort](includes/prodshort.md)]. Les applications disponibles incluent : <ul><li>[!INCLUDE [prodlong](includes/prodlong.md)] - CRM </li><li>[!INCLUDE [prodlong](includes/prodlong.md)] - Finance </li><li>[!INCLUDE [prodlong](includes/prodlong.md)] - Sales </li></ul>  |![Fonctionne en ligne](media/check.png)||[Voir…](across-powerbi-business-central-apps.md)
 
 <a name="onprem"><sup>*</sup></a>Cette fonctionnalité nécessite une application enregistrée pour Business Central dans Microsoft Azure. Pour plus d’informations, consultez [Enregistrer Business Central sur site dans Azure AD pour l’intégration avec d’autres services](/dynamics365/business-central/dev-itpro/administration/register-app-azure).
 

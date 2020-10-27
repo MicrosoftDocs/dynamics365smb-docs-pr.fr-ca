@@ -8,18 +8,18 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 07/02/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 70433ce496c79edcd053ae345b3b0559cf60b744
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: df36e96ce30193344d8c8d92679c16ee9255e658
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3782909"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3918848"
 ---
 # <a name="combine-receipts-on-a-single-invoice"></a>Regroupement de bons de réception sur une seule facture
 
-Si vous voulez facturer plusieurs réceptions achat en une fois, vous pouvez utiliser la fonction **Regroupement des réceptions**.  
+Si vous voulez facturer plusieurs réceptions achat en une fois, vous pouvez utiliser la fonction **Regroupement des réceptions** .  
 
 Avant de pouvoir regrouper des réceptions achat, plusieurs réceptions achat du même fournisseur doivent être reportées dans la même devise. En d'autres termes, vous devez avoir renseigné au moins deux bons de commande et les avoir reportées comme reçues, mais non facturées.  
 
@@ -30,19 +30,19 @@ Lorsque des réceptions achat sont regroupées sur une facture et reportées, un
 
 ## <a name="to-combine-receipts"></a>Pour regrouper des réceptions
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures achat**, puis sélectionnez le lien associé.  
-2. Sélectionnez l'action **Nouveau**. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).  
-3. Dans le raccourci **Lignes**, sélectionnez l'action **Extraire lignes réception**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures achat** , puis sélectionnez le lien associé.  
+2. Sélectionnez l'action **Nouveau** . Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).  
+3. Dans le raccourci **Lignes** , sélectionnez l'action **Extraire lignes réception** .  
 4. Sélectionnez plusieurs lignes réception à inclure dans la facture.  
 
-    Si une ligne réception incorrecte a été sélectionnée ou que vous souhaitez recommencer, il vous suffit de supprimer les lignes de la facture achat et d'utiliser à nouveau la fonction **Extraire lignes réception**.  
-5. Pour reporter la facture, sélectionnez l'action **Reporter**.  
+    Si une ligne réception incorrecte a été sélectionnée ou que vous souhaitez recommencer, il vous suffit de supprimer les lignes de la facture achat et d'utiliser à nouveau la fonction **Extraire lignes réception** .  
+5. Pour reporter la facture, sélectionnez l'action **Reporter** .  
 
 ## <a name="to-remove-open-purchase-orders-after-combined-receipt-posting"></a>Pour supprimer des commandes achat ouvertes après le report de réceptions groupées
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Supprimer les bons de commande facturés**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Supprimer les bons de commande facturés** , puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)].
-3. Cliquez sur le bouton **OK**.  
+3. Cliquez sur le bouton **OK** .  
 
 Vous pouvez également supprimer chacune des commandes manuellement.
 

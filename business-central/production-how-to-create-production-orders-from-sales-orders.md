@@ -8,24 +8,24 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: dd4e78bac5390cfbcdb5496ad7e747e87cab593f
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: ac927f9ef676cbfa433265346f69c92552802fce
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3779920"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3919248"
 ---
 # <a name="create-production-orders-from-sales-orders"></a>Créer des bons de production à partir de documents de vente
 Vous pouvez créer des bons de production pour les articles produits directement à partir des documents de vente.  
 
 ## <a name="to-create-a-production-order-from-a-sales-order"></a>Pour créer un bon de production à partir d'un document de vente  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente** , puis sélectionnez le lien associé.  
 2.  Sélectionnez le document de vente pour lequel vous voulez créer un bon de production.  
-3.  Sélectionnez l'action **Planification**. Sur la page **Planification document de vente**, vous pouvez afficher la disponibilité de l'article de document de vente.  
-4.  Sélectionnez l'action **Créer O.F**.  
+3.  Sélectionnez l'action **Planification** . Sur la page **Planification document de vente** , vous pouvez afficher la disponibilité de l'article de document de vente.  
+4.  Sélectionnez l'action **Créer O.F** .  
 5.  Sélectionnez l'état et le type de commande.  
 6.  Choisissez le bouton **oui** pour créer l'ordre de fabrication.
 

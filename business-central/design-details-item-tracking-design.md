@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, item, tracking, tracing
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: c1742447287273a1661ccb87056ca93abbbab76b
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: a9cdea97b9753adbbe8128b674dc4161178bc6f8
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3787581"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3917436"
 ---
 # <a name="design-details-item-tracking-design"></a>Détails de conception : création de traçabilité
 Dans la première version de Traçabilité de [!INCLUDE[d365fin](includes/d365fin_md.md)] 2.60, les numéros de série ou les numéros de lot étaient enregistrés directement sur les écritures article. Ce design a fourni des informations de disponibilité complète et un suivi unique des écritures historiques, mais il a manqué de flexibilité et de fonctionnalité.  
@@ -34,7 +34,7 @@ Le schéma suivant explique la conception de la fonctionnalité de traçabilité
 
 L'objet de report principal est remodelé pour gérer la sous-classification unique d'une ligne document sous forme de numéros de série ou de lot, et des tables de lien spéciales sont ajoutées pour créer une relation un à plusieurs entre les documents reportés et leurs écritures article et valeur scindées.  
 
-Codeunit 22, **Journal article – Ligne report**, fractionne alors le report en fonction des numéros traçabilité qui sont indiqués sur la ligne document. Chaque numéro traçabilité unique sur la ligne crée sa propre écriture article pour l'article. Cela signifie que le lien de la ligne document reportée vers les écritures article associées est à présent une relation un à plusieurs. Cette relation est traitée par les tableaux de relation de suivi d'article suivants.  
+Codeunit 22, **Journal article – Ligne report** , fractionne alors le report en fonction des numéros traçabilité qui sont indiqués sur la ligne document. Chaque numéro traçabilité unique sur la ligne crée sa propre écriture article pour l'article. Cela signifie que le lien de la ligne document reportée vers les écritures article associées est à présent une relation un à plusieurs. Cette relation est traitée par les tableaux de relation de suivi d'article suivants.  
 
 |Champ|Description|  
 |---------------|---------------------------------------|  

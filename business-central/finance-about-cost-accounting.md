@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 749fb88c57364d445d5bc0a415fb4fcae8d1aa26
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: d8628953230b27ae84ee363d41c43873c81cb11c
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3788556"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3919571"
 ---
 # <a name="about-cost-accounting"></a>À propos de la comptabilité analytique
 La comptabilité analytique vous permet de cerner les coûts liés à l'exploitation d'un activié. Les informations sur la comptabilité analytique sont conçues pour analyser :  

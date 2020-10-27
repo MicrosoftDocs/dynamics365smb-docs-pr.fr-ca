@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 5698110875799fe39cf3544dce0ea39f7c3dd5ba
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 571261190274fc74535e7b18b2c949d7f7714c1b
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3786231"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3917736"
 ---
 # <a name="set-up-company-configuration"></a>Configurer une compagnie
 Le processus d’implémentation commence avec le partenaire Microsoft. Le partenaire est responsable des réflexions sur les détails de la configuration et de la création d’un package qu’un client peut facilement appliquer. Avant de créer une nouvelle compagnie, vous devez en planifier la méthode de configuration. Vous devez prendre en compte les données de configuration de base et les types de données requis par la solution [!INCLUDE[d365fin](includes/d365fin_md.md)]. Vous regroupez toutes ces informations dans des packages configuration.

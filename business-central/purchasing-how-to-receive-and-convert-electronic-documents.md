@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 34a9461a967760b682f9a219389bd4078e3e654c
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: fcc8e97a61c777a7857e95db04fe16973c4c7b07
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3782884"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3918823"
 ---
 # <a name="receive-and-convert-electronic-documents"></a>Recevoir et convertir des documents électroniques
 La version générique de [!INCLUDE[d365fin](includes/d365fin_md.md)] prend en charge la réception de factures et d'avoirs électroniques au format PEPPOL, qui est pris en charge par les principaux fournisseurs de services d'échange de documents. Pour recevoir une facture d'un fournisseur en tant que document électronique PEPPOL, traitez le document sur la page Documents entrants pour le convertir en facture achat ou en ligne journal général dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
@@ -28,7 +28,7 @@ La version générique de [!INCLUDE[d365fin](includes/d365fin_md.md)] prend en c
 
  Le trafic des documents électroniques dans et hors de [!INCLUDE[d365fin](includes/d365fin_md.md)] est géré par la fonctionnalité File projets. Avant de pouvoir recevoir des documents électroniques, la file d'attente des travaux appropriée doit être démarrée.  
 
- Vous pouvez démarrer la conversion des documents électroniques manuellement, comme décrit dans cette procédure, ou vous pouvez activer un flux de travail pour convertir les documents électroniques automatiquement lorsque vous les recevez. La version générique de [!INCLUDE[d365fin](includes/d365fin_md.md)] comprend un modèle de workflow, *Du document électronique entrant via le service OCR au workflow de factures achat ouvertes*, qui est prêt à être copié dans un workflow et activé. Pour plus d'informations, voir [Flux de travail](across-workflow.md).  
+ Vous pouvez démarrer la conversion des documents électroniques manuellement, comme décrit dans cette procédure, ou vous pouvez activer un flux de travail pour convertir les documents électroniques automatiquement lorsque vous les recevez. La version générique de [!INCLUDE[d365fin](includes/d365fin_md.md)] comprend un modèle de workflow, *Du document électronique entrant via le service OCR au workflow de factures achat ouvertes* , qui est prêt à être copié dans un workflow et activé. Pour plus d'informations, voir [Flux de travail](across-workflow.md).  
 
 > [!NOTE]  
 >  Lorsque vous convertissez des documents électroniques reçus du service ROC en documents ou lignes feuille dans [!INCLUDE[d365fin](includes/d365fin_md.md)], plusieurs lignes du document source seront résumées sur une ligne. La ligne unique sera de type Compte du grand livre et les champs **Description** et **N°** (compte du grand livre) seront vides. La valeur du champ **Montant** est égal au montant total hors TVA de toutes les lignes du document source.  
@@ -41,21 +41,21 @@ La version générique de [!INCLUDE[d365fin](includes/d365fin_md.md)] prend en c
 
 ### <a name="to-receive-and-convert-an-electronic-invoice-to-a-purchase-invoice"></a>Pour recevoir une facture électronique et la convertir en une facture achat  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents entrants**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents entrants** , puis sélectionnez le lien associé.  
 
-2.  Sélectionnez la ligne de l'enregistrement du document entrant qui représente une nouvelle facture électronique entrante, puis sélectionnez l'action **Modifier**.  
+2.  Sélectionnez la ligne de l'enregistrement du document entrant qui représente une nouvelle facture électronique entrante, puis sélectionnez l'action **Modifier** .  
 
-     Sur la page **Fiche document entrant**, le fichier XML est joint, et la plupart des champs sont préremplis avec les informations de la facture électronique. Pour plus d'informations, voir [Créer des enregistrements document entrant](across-how-create-income-document-records.md).  
+     Sur la page **Fiche document entrant** , le fichier XML est joint, et la plupart des champs sont préremplis avec les informations de la facture électronique. Pour plus d'informations, voir [Créer des enregistrements document entrant](across-how-create-income-document-records.md).  
 
-3.  Dans le champ **Type échange de données**, sélectionnez **PEPPOL - Facture** ou **OCR - Facture** selon la source du document électronique.  
+3.  Dans le champ **Type échange de données** , sélectionnez **PEPPOL - Facture** ou **OCR - Facture** selon la source du document électronique.  
 
-4.  Pour mapper le texte de la facture fournisseur à un compte débit spécifique, sous l'onglet **Actions**, dans le groupe **Général**, choisissez **Mapper le texte avec le compte**, puis renseignez la page **Feuille activité correspondance texte et compte**.  
+4.  Pour mapper le texte de la facture fournisseur à un compte débit spécifique, sous l'onglet **Actions** , dans le groupe **Général** , choisissez **Mapper le texte avec le compte** , puis renseignez la page **Feuille activité correspondance texte et compte** .  
 
-5.  Choisissez l'action **Créer document**.  
+5.  Choisissez l'action **Créer document** .  
 
      Une facture achat est créée dans [!INCLUDE[d365fin](includes/d365fin_md.md)] sur la base des informations du document électronique.  
 
-     Les erreurs de validation, généralement associées à des données de base erronées ou manquantes dans [!INCLUDE[d365fin](includes/d365fin_md.md)], seront affichées dans le raccourci **Messages d'erreur**.  
+     Les erreurs de validation, généralement associées à des données de base erronées ou manquantes dans [!INCLUDE[d365fin](includes/d365fin_md.md)], seront affichées dans le raccourci **Messages d'erreur** .  
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/electronic-documents-dynamics-365-business-central/index)
 

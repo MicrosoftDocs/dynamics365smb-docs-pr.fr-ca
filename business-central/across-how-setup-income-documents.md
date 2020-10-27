@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: electronic document, e-invoice, incoming document, OCR, ecommerce, document exchange, import invoice
-ms.date: 08/10/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 1b0942c53f435a79cae733fe4d7287e628cf7478
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 0be6c730664d5162bd2359e029f9a387eae0d5d8
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3780520"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3915920"
 ---
 # <a name="set-up-incoming-documents"></a>Configurer des documents entrants
 
@@ -29,7 +29,7 @@ Une fois que la fonctionnalité Documents entrants est configurée, vous pouvez 
 
 ## <a name="to-set-up-the-incoming-documents-feature"></a>Configurer la fonctionnalité Documents entrants
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration des documents entrants**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration des documents entrants** , puis sélectionnez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 Dans le cadre de la configuration, vous devez décider si vous souhaitez exiger l'approbation des documents entrants. Pour demander une approbation, vous devez configurer des approbateurs et des flux de travail approbation. Si votre organisation n'a pas l'intention d'exiger l'approbation, vous pouvez ignorer la section suivante.  
@@ -40,11 +40,11 @@ Enfin, si vous utilisez un service pour convertir des fichiers PDF ou image repr
 
 Vous pouvez éventuellement configurer un processus d'approbation pour les documents entrants. Les approbateurs de documents entrants doivent être paramétrés comme des utilisateurs de flux de travail approbation.
 
-Avant de pouvoir créer des workflows qui impliquent des étapes d'approbation, vous devez configurer les utilisateurs du workflow qui sont impliqués dans les processus d'approbation. Sur la page **Configuration d'utilisateur d'approbation**, vous pouvez également définir les limites pour des types spécifiques de demandes et définir des approbateurs remplaçants à qui des demandes d'approbation sont déléguées lorsque l'approbateur initial est absent. Pour plus d'informations, voir [Configurer des utilisateurs d'approbation](across-how-to-set-up-approval-users.md).
+Avant de pouvoir créer des workflows qui impliquent des étapes d'approbation, vous devez configurer les utilisateurs du workflow qui sont impliqués dans les processus d'approbation. Sur la page **Configuration d'utilisateur d'approbation** , vous pouvez également définir les limites pour des types spécifiques de demandes et définir des approbateurs remplaçants à qui des demandes d'approbation sont déléguées lorsque l'approbateur initial est absent. Pour plus d'informations, voir [Configurer des utilisateurs d'approbation](across-how-to-set-up-approval-users.md).
 
 ## <a name="to-set-up-an-ocr-service"></a>Configurer un service ROC
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration service OCR**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration service OCR** , puis sélectionnez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 > [!NOTE]  

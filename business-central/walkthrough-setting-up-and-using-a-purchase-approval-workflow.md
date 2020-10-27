@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 9254d7b32d96fc97dd1c6facba567f92bbb630b4
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 25d94f27f1a440342c8e24310b5c853aa832b4db
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3786656"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3910215"
 ---
 # <a name="walkthrough-setting-up-and-using-a-purchase-approval-workflow"></a>Procédure pas à pas : Configuration et utilisation d'un flux d'approbation achat
 Vous pouvez automatiser le processus d'approbation d'enregistrements nouveaux ou modifiés, par exemple de documents, de lignes journal et de fiches client, en créant des flux de travail avec des étapes pour les approbations en question. Avant de créer des flux d'approbation, vous devez configurer un approbateur et un approbateur remplaçant pour chaque utilisateur approbation. Vous pouvez également définir les montants maximaux que les approbateurs sont qualifiés à approuver pour les enregistrements de vente et d'achat. Les demandes d'approbation et autres notifications peuvent être envoyées par courriel ou note interne. Pour chaque configuration d'utilisateur d'approbation, vous pouvez également définir à quel moment ils reçoivent les notifications.
@@ -46,8 +46,8 @@ Pour pouvoir configurer des utilisateurs d'approbation et leur méthode de notif
 Une fois connecté comme vous-même, définissez Alicia en tant qu'utilisateur d'approbation dont l'approbateur est vous-même. Configurez vos droits d'approbation et spécifiez comment et quand être averti des demandes d'approbation.  
 
 #### <a name="to-set-up-yourself-and-alicia-as-approval-users"></a>Pour configurer votre propre profil et celui d'Alicia en tant qu'utilisateurs approbation  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration utilisateur approbation**, puis sélectionnez le lien associé.  
-2.  Sur la page **Configuration d'utilisateur d'approbation**, sélectionnez l'action **Nouveau**.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration utilisateur approbation** , puis sélectionnez le lien associé.  
+2.  Sur la page **Configuration d'utilisateur d'approbation** , sélectionnez l'action **Nouveau** .  
 
     > [!NOTE]  
     >  Vous devez configurer un approbateur avant de pouvoir configurer des utilisateurs qui ont besoin de l'approbation de l'approbateur. Par conséquent, vous devez configurer votre propre profil avant de configurer celui d'Alicia.  
@@ -63,42 +63,42 @@ Une fois connecté comme vous-même, définissez Alicia en tant qu'utilisateur d
 Dans cette procédure, l'utilisateur est averti par une note interne concernant les demandes d'approbation. La notification d'approbation peut également se faire par courriel. Pour plus d'informations, voir [Spécifier quand et comment recevoir des notifications](across-how-to-specify-when-and-how-to-receive-notifications.md).
 
 #### <a name="to-set-up-how-and-when-you-are-notified"></a>Pour spécifier comment et quand recevoir les notifications  
-1.  Sur la page **Configuration d'utilisateur d'approbation**, sélectionnez la ligne pour vous-même, puis sélectionnez l'action **Configuration de notification**.  
-2.  Sur la page **Configuration de la notification**, dans le champ **Type de notification**, entrez **Approbation**.  
-3.  Dans le champ **Mode de notification**, choisissez **Note**.  
-6.  Sur la page **Configuration de la notification**, cliquez sur l'action **Calendrier de notification**.  
-7.  Sur la page **Calendrier de notification**, dans le champ **Répétition**, sélectionnez **Immédiatement**.  
+1.  Sur la page **Configuration d'utilisateur d'approbation** , sélectionnez la ligne pour vous-même, puis sélectionnez l'action **Configuration de notification** .  
+2.  Sur la page **Configuration de la notification** , dans le champ **Type de notification** , entrez **Approbation** .  
+3.  Dans le champ **Mode de notification** , choisissez **Note** .  
+6.  Sur la page **Configuration de la notification** , cliquez sur l'action **Calendrier de notification** .  
+7.  Sur la page **Calendrier de notification** , dans le champ **Répétition** , sélectionnez **Immédiatement** .  
 
 ## <a name="creating-the-approval-workflow"></a>Création d'un flux d'approbation  
  Créez le flux d'approbation du bon de commande en copiant les étapes du modèle Flux de travail approbation bon de commande. Laissez les étapes existantes du flux inchangées, puis activez le flux.  
 
 ### <a name="to-create-and-enable-a-purchase-order-approval-workflow"></a>Pour créer et activer un flux de travail d'approbation des bons de commande  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Flux de travail**, puis sélectionnez le lien associé.  
-2.  Sur la page **Flux de travail**, choisissez l'action **Créer flux de travail à partir du modèle**.  
-3.  Sur la page **Modèles de flux de travail**, sélectionnez le modèle de flux de travail nommé Flux de travail approbation bon de commande, puis appuyez le bouton **OK**.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Flux de travail** , puis sélectionnez le lien associé.  
+2.  Sur la page **Flux de travail** , choisissez l'action **Créer flux de travail à partir du modèle** .  
+3.  Sur la page **Modèles de flux de travail** , sélectionnez le modèle de flux de travail nommé Flux de travail approbation bon de commande, puis appuyez le bouton **OK** .  
 
     La page **Flux de travail** s'ouvre pour un nouveau flux de travail contenant toutes les informations du modèle sélectionné. La valeur du champ **Code** est étendue avec « -01 » pour indiquer que ce premier flux de travail est créé à partir du modèle Flux de travail approbation bon de commande.  
-5.  Dans l'en-tête de la page **Flux de travail**, activez la case à cocher **Activé**.  
+5.  Dans l'en-tête de la page **Flux de travail** , activez la case à cocher **Activé** .  
 
 ## <a name="using-the-approval-workflow"></a>Utilisation du flux d'approbation  
 Utilisez le nouveau Flux de travail approbation bon de commande en vous connectant d'abord à [!INCLUDE[d365fin](includes/d365fin_md.md)] en tant qu'Alicia pour demander l'approbation d'un bon de commande. Ensuite, connectez-vous en tant que vous-même, affichez la note dans le Tableau de bord, suivez le lien vers la demande d'approbation, puis approuvez la demande.  
 
 ### <a name="to-request-approval-of-a-purchase-order-as-alicia"></a>Pour demander l'approbation d'un bon de commande en tant qu'Alicia  
 1. Connectez-vous en tant qu'Alicia.
-2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande**, puis sélectionnez le lien associé.  
-3.  Sélectionnez la ligne du bon de commande ouvert 106001, puis choisissez l'action **Modifier**.  
-4.  Sur la page **Bon de commande**, choisissez l'action **Envoyer demande d'approbation**.  
+2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande** , puis sélectionnez le lien associé.  
+3.  Sélectionnez la ligne du bon de commande ouvert 106001, puis choisissez l'action **Modifier** .  
+4.  Sur la page **Bon de commande** , choisissez l'action **Envoyer demande d'approbation** .  
 
-Notez que la valeur du champ **État** est passée à **Approbation en attente**.  
+Notez que la valeur du champ **État** est passée à **Approbation en attente** .  
 
 ### <a name="to-approve-the-purchase-order-as-sean"></a>Pour approuver le bon de commande en tant que Sean  
 1. Connectez-vous en tant que Sean.
-2. Dans le Tableau de bord, dans la zone **Libre-service**, choisissez la vignette **Demandes à approuver**.
-3. Sur la page **Demandes à approuver**, sélectionnez la ligne à propos du bon de commande d'Alicia, puis choisissez l'action **Approuver**.  
+2. Dans le Tableau de bord, dans la zone **Libre-service** , choisissez la vignette **Demandes à approuver** .
+3. Sur la page **Demandes à approuver** , sélectionnez la ligne à propos du bon de commande d'Alicia, puis choisissez l'action **Approuver** .  
 
-La valeur du champ **État** du bon de commande d'Alicia passe à **Libéré**.  
+La valeur du champ **État** du bon de commande d'Alicia passe à **Libéré** .  
 
-Vous venez de configurer et tester un flux de travail d'approbation simple incluant les deux premières étapes du flux de travail approbation bon de commande. Vous pouvez facilement étendre ce flux pour reporter automatiquement le bon de commande d'Alicia lorsque c'est Sean qui l'approuve. Pour cela, vous devez activer le flux de travail facture achat, dans lequel la réponse à une facture d'achat libérée est de la reporter. Vous devez d'abord modifier la condition d'événement de la première étape du flux (achat) en remplaçant **Facturer** par **Commander**.  
+Vous venez de configurer et tester un flux de travail d'approbation simple incluant les deux premières étapes du flux de travail approbation bon de commande. Vous pouvez facilement étendre ce flux pour reporter automatiquement le bon de commande d'Alicia lorsque c'est Sean qui l'approuve. Pour cela, vous devez activer le flux de travail facture achat, dans lequel la réponse à une facture d'achat libérée est de la reporter. Vous devez d'abord modifier la condition d'événement de la première étape du flux (achat) en remplaçant **Facturer** par **Commander** .  
 
 La version générique de [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut un certain nombre de modèles de flux de travail pour les scénarios pris en charge par le code d'application. La plupart concernent des flux d'approbation.  
 

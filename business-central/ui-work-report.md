@@ -1,21 +1,21 @@
 ---
 title: Programmation d'un rapport à exécuter à une date et une heure spécifiques | Microsoft Docs
 description: En savoir plus sur l'intégration d'un rapport dans une file d'attente des travaux et la programmation de son traitement à une date et une heure spécifiques.
-author: SorenGP
+author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: task, process, report
-ms.date: 06/10/2020
-ms.author: edupont
-ms.openlocfilehash: f209088459f29ba5618b065c3a340b0e3bd250e5
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.date: 10/01/2020
+ms.author: jswymer
+ms.openlocfilehash: cdb01a2d74dff2fef15c2207f98ba8893f081aca
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3788411"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3920382"
 ---
 # <a name="working-with-reports-batch-jobs-and-xmlports"></a>Utilisation des rapports, des traitements en lot et des objets XMLport
 
@@ -26,76 +26,107 @@ Les traitements en lot et les objets XMLport sont plus ou moins identiques aux r
 > [!NOTE]
 > Cette rubrique fait référence surtout aux « rapports », mais des informations similaires s'appliquent aux traitements en lot et aux objets XMLport.
 
-Vous pouvez rechercher des rapports dans l'onglet **Rapports** sur les pages sélectionnées ou utiliser la recherche ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") pour rechercher les rapports par nom.
+## <a name="getting-started"></a>Mise en route
 
+Vous pouvez trouver les rapports sous l’onglet **Rapports** sur les pages sélectionnées ou utiliser la recherche ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") pour rechercher les rapports par nom.
+
+Lorsque vous ouvrez un rapport, un traitement en lot ou un XMLport, une page de demande s'affiche généralement pour vous permettre de définir plusieurs options et filtres qui déterminent les éléments à inclure dans le rapport. Les sections suivantes expliquent comment utiliser la page de demande pour créer, afficher un aperçu et imprimer un rapport.
+
+## <a name="using-default-values---predefined-settings"></a><a name="SavedSettings"></a>Utilisation des valeurs par défaut – paramètres prédéfinis 
+
+La plupart des pages de demande incluent le champ **Utiliser les valeurs par défaut de** . Ce champ vous permet de sélectionner des paramètres prédéfinis pour le rapport, qui définissent automatiquement les options et les filtres du rapport. Sélectionnez une entrée dans la liste déroulante, et vous verrez les options et les filtres sur la page de demande se modifier en conséquence.
+
+L’entrée appelée **Options et filtres récemment utilisés** est toujours disponible. Cette entrée permet de faire en sorte que le rapport utilise les options et les filtres qui ont été utilisés la dernière fois que vous l’avez exécuté.
+
+Le champ **Utiliser les valeurs par défaut de** fournit un moyen rapide et fiable de générer de manière cohérente des rapports contenant les données correctes. Après avoir sélectionné une entrée, vous pouvez modifier les options et les filtres avant d’afficher un aperçu ou d’imprimer le rapport. Vos modifications ne seront pas enregistrées dans l’entrée de paramètres prédéfinis que vous avez sélectionnée, mais elles seront sauvegardées dans l’entrée **Options et filtres récemment utilisés** .
+
+>[!NOTE]
+> Les paramètres prédéfinis sont généralement configurés et gérés par un administrateur. Pour en savoir plus, voir [Gérer les paramètres enregistrés pour les rapports et les traitements en lot](reports-saving-reusing-settings.md).
+<!--
+Depending on the report, the request page might include the **Use default values from** field. This field lets you select a predefined set of can include the **Saved Settings** section that contains one or more entries in the **Use default value from** box. A saved setting is basically a predefined group of options and filters that you can apply to the report before previewing or sending the report to a file. The saved settings entry called **Last used options and filters** is always available. This entry sets the report to use options and filters that were used the last time you used the report.
+
+Using saved settings is a fast and reliable way to consistently generate reports that contain the correct data. After you set the **Use default value from** box to a saved settings entry, you can change any of the options and filters before previewing or saving the report. The changes that you make will not be saved to the saved settings entry you selected, but they will be saved to the **Last used options and filters** entry.
+
+>[!NOTE]
+>If you are an administrator, you can create and manage the saved settings for reports for all users. For more information, see [Manage Saved Settings for Reports and Batch Jobs](reports-saving-reusing-settings.md).
+-->
 ## <a name="specifying-the-data-to-include-in-reports"></a>Définition des données à inclure dans les rapports
-Lorsque vous ouvrez un rapport, un traitement en lot ou un XMLport, une page de demande s'affiche généralement pour vous permettre de définir plusieurs options et filtres qui déterminent les éléments à inclure dans le rapport.
 
-Vous devez définir des filtres dans un rapport de la même manière que vous le faites sur des listes. Pour plus d'informations, reportez-vous à la rubrique [Filtrage](ui-enter-criteria-filters.md#filtering).
+Utilisez les champs sous **Options** et **Filtres** pour modifier ou limiter les informations que vous souhaitez dans le rapport. Vous devez définir des filtres dans un rapport de la même manière que vous le faites sur des listes. Pour plus d'informations, reportez-vous à la rubrique [Filtrage](ui-enter-criteria-filters.md#filtering).
 
 > [!CAUTION]
 > La section **Filtrer la liste par** sur une page de demande fournit une capacité de filtrage générique pour les rapports. Ces filtres sont optionnels.
 >
-> Certains rapports ignoreront ces filtres, ce qui signifie que quel que soit le filtre défini dans la section **Filtrer la liste par**, la sortie du rapport est identique. Il est impossible de fournir une liste des champs ignorés dans les rapports, vous devez donc expérimenter avec des filtres lorsque vous les utiliserez.
+> Certains rapports ignoreront ces filtres, ce qui signifie que quel que soit le filtre défini dans la section **Filtrer la liste par** , la sortie du rapport est identique. Il est impossible de fournir une liste des champs ignorés dans les rapports, vous devez donc expérimenter avec des filtres lorsque vous les utiliserez.
 >
-> **Exemple** : Lorsque vous utilisez le traitement en lot **Créer rappels**, un filtre pour le champ **Écritures client** de **Niveau dernier rappel émis** sera ignoré, car les filtres sont fixes pour ce traitement en lot.
-
-## <a name="using-saved-settings"></a><a name="SavedSettings"></a>Utilisation des paramètres enregistrés
-La page de demande peut inclure la section **Paramètres enregistrés** qui contient une ou plusieurs entrées dans la zone **Utiliser les valeurs par défaut de**. Un paramètre enregistré est fondamentalement un groupe prédéfini d'options et de filtres que vous pouvez appliquer au rapport avant d'en afficher un aperçu ou de l'envoyer vers un fichier. L'écriture de paramètres enregistrés appelée **Options et filtres récemment utilisés** est toujours disponible. Cette écriture permet de faire en sorte que le rapport utilise les options et les filtres qui ont été utilisés la dernière fois que vous l'avez utilisé.
-
-Le fait d'utiliser les paramètres enregistrés est une façon rapide et fiable de générer de façon cohérente des états qui contiennent les données adéquates. Après avoir défini la zone **Utiliser les valeurs par défaut de** sur une entrée de paramètres enregistrés, vous pouvez modifier les options et les filtres avant d'afficher un aperçu ou d'enregistrer le rapport. Vos modifications ne seront pas enregistrées dans l'entrée de paramètres enregistrés que vous avez sélectionnée, mais elles seront sauvegardées dans l'entrée **Options et filtres récemment utilisés**.
-
->[!NOTE]
->Si vous êtes un administrateur, vous pouvez créer et gérer les paramètres enregistrés des rapports pour tous les utilisateurs. Pour plus d'informations, voir [Gérer les paramètres enregistrés pour les rapports et les traitements en lot](reports-saving-reusing-settings.md).
+> **Exemple**  : Lorsque vous utilisez le traitement en lot **Créer rappels** , un filtre pour le champ **Écritures client** de **Niveau dernier rappel émis** sera ignoré, car les filtres sont fixes pour ce traitement en lot.
 
 ## <a name="previewing-a-report"></a>Affichage de l'aperçu d'un rapport
 
-Cliquez sur le bouton **Aperçu** pour afficher le rapport dans la page de demande de rapport. Utilisez la barre de menus dans l'aperçu du rapport pour :
+L’aperçu d’un rapport vous permet de voir à quoi il ressemblera avant de l’imprimer. L’aperçu affiche le rapport en fonction de [l’imprimante](#Printer) indiquée dans le champ **Imprimante** sur la page de la demande. Après l’aperçu, vous pouvez revenir à la page de la demande et apporter des modifications aux options et aux filtres si nécessaire.
+
+Pour afficher l’aperçu d’un rapport, choisissez le bouton **Aperçu** ou **Aperçu et fermer** sur la page de demande de rapport. Le bouton qui s’affiche dépend du rapport, certains rapports ont un bouton **Aperçu** , tandis que d’autres ont un bouton **Aperçu et fermer** . Les deux boutons ouvriront un aperçu du rapport. La différence est que l’ **Aperçu** garde la page de demande ouverte afin que vous puissiez y revenir, apporter des modifications, afficher à nouveau un aperçu ou imprimer. Avec **Aperçu et fermer** , la page de demande se ferme, vous devrez donc rouvrir le rapport pour apporter des modifications ou l’imprimer.
+
+> [!NOTE]
+> Si vous utilisez la vague de lancement 1 de 2020 de Business Central ou antérieure, il n’y a qu’un bouton **Aperçu** qui ferme la page de demande lors de l’aperçu, comme décrit pour **Aperçu et fermer** .
+
+### <a name="working-with-the-preview"></a>Utilisation de l’aperçu
+
+Dans l’Aperçu, utilisez la barre de menus dans l’aperçu du rapport pour :
 
 - Naviguer entre les pages
 - Effectuer un zoom avant et arrière
 - Redimensionner à la taille de la page
 - Sélectionner du texte
 
-    Vous pouvez copier le texte d'un rapport puis le coller ailleurs, comme dans une page de [!INCLUDE[d365fin](includes/d365fin_md.md)] ou Microsoft Word.  Avec la souris, par exemple, appuyez et maintenez la pression là où vous souhaitez démarrer, puis déplacez la souris pour sélectionner un ou plusieurs mots, phrases ou paragraphes. Vous pouvez ensuite appuyer sur le bouton droit de la souris et sélectionner **Copier**. Vous pouvez coller le texte sélectionné partout où vous le souhaitez.
+    Vous pouvez copier le texte d'un rapport puis le coller ailleurs, comme dans une page de [!INCLUDE[d365fin](includes/d365fin_md.md)] ou Microsoft Word.  Avec la souris, par exemple, appuyez et maintenez la pression là où vous souhaitez démarrer, puis déplacez la souris pour sélectionner un ou plusieurs mots, phrases ou paragraphes. Appuyez sur le bouton droit de la souris et sélectionnez **Copier** . Ensuite, collez le texte sélectionné partout où vous le souhaitez.
 - Faire défiler le document
 
-    Vous pouvez déplacer la zone visible du rapport dans n'importe quelle direction de manière voir d'autres zones ou le rapport. Ceci est utile si vous avez effectué un zoom pour observer les détails.  À l'aide de la souris, par exemple, appuyez et maintenez le bouton de la souris enfoncé n'importe où dans l'aperçu du rapport, puis déplacez la souris.
+    Vous pouvez déplacer la zone visible du rapport dans n'importe quelle direction de manière voir d'autres zones ou le rapport. Le défilement est utile si vous avez effectué un zoom pour observer les détails.  À l'aide de la souris, par exemple, appuyez et maintenez le bouton de la souris enfoncé n'importe où dans l'aperçu du rapport, puis déplacez la souris.
 
 - Téléchargez un fichier PDF sur votre ordinateur ou votre réseau.
 - Imprimer
 
 ## <a name="saving-a-report"></a>Enregistrement d'un rapport
-Vous pouvez enregistrer un rapport dans un document PDF, un document Microsoft Word ou un document Microsoft Excel en sélectionnant le bouton **Envoyer à**, puis en effectuant votre sélection.
+
+Vous pouvez enregistrer un rapport dans un document PDF, un document Microsoft Word ou un document Microsoft Excel en sélectionnant le bouton **Envoyer à** , puis en effectuant votre sélection.
 
 ## <a name="scheduling-a-report-to-run"></a><a name="ScheduleReport"></a> Programmation d'un rapport à exécuter
 
-Vous pouvez programmer ou traiter en lot un rapport à exécuter à une date et une heure spécifiques. Les rapports ou les traitements en lot programmés sont entrés dans la file d'attente des travaux et traités au moment programmé, comme les autres projets. Vous devez choisir l'option **Programmé** après avoir cliqué sur le bouton **Envoyer à**, puis vous devez entrer des informations telles que l’imprimante, l’heure et la date. Le rapport est alors ajouté à la file d'attente des travaux et sera exécuté au moment spécifié. Lorsque le rapport a été traité, l'article est supprimé de la file d'attente projets. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).  
+Vous pouvez programmer ou traiter en lot un rapport à exécuter à une date et une heure spécifiques. Les rapports ou les traitements en lot programmés sont entrés dans la file d'attente des travaux et traités au moment programmé, comme les autres projets. Vous devez choisir l'option **Programmé** après avoir cliqué sur le bouton **Envoyer à** , puis vous devez entrer des informations telles que l’imprimante, l’heure et la date. Le rapport est alors ajouté à la file d'attente des travaux et sera exécuté au moment spécifié. Lorsque le rapport a été traité, l'article est supprimé de la file d'attente projets. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).  
 
-Lorsque vous programmez l'exécution d'un rapport, vous pouvez spécifier qu'il doit s'exécuter tous les jeudis en définissant le champ **Formule de la date de la prochaine exécution** sur *D4*, par exemple. Pour plus d'informations, voir [Utilisation de formules date](ui-enter-date-ranges.md#using-date-formulas).  
+Lorsque vous programmez l'exécution d'un rapport, vous pouvez spécifier qu'il doit s'exécuter tous les jeudis en définissant le champ **Formule de la date de la prochaine exécution** sur *D4* , par exemple. Pour plus d'informations, voir [Utilisation de formules date](ui-enter-date-ranges.md#using-date-formulas).  
 
-Vous pouvez choisir de sauvegarder le rapport traité dans un fichier, par exemple, Excel, Word ou PDF, de l'imprimer sur une imprimante sélectionnée ou de traiter le rapport uniquement. Si vous choisissez d'enregistrer le rapport dans un fichier, le rapport traité est envoyé à la zone **Boîte de réception rapport** sur votre tableau de bord, où vous pouvez l'afficher.  
+Vous pouvez choisir de sauvegarder le rapport dans un fichier, par exemple, Excel, Word ou PDF, de l’imprimer sur une imprimante sélectionnée ou uniquement de générer le rapport. Si vous choisissez d'enregistrer le rapport dans un fichier, le rapport traité est envoyé à la zone **Boîte de réception rapport** sur votre tableau de bord, où vous pouvez l'afficher.  
 
 ## <a name="printing-a-report"></a><a name="PrintReport"></a>Impression d'un rapport
 
-Vous imprimez un rapport en cliquant sur le bouton **Impression** sur la page de demande de rapport ou dans la barre de menu sur la page **Aperçu**.
+Pour imprimer un rapport, cliquez sur le bouton **Imprimer** sur la page de demande de rapport ou dans la barre de menu de la page **Aperçu** .
 
-### <a name="printer-selection"></a>Sélection de l'imprimante
+<!--
+### Printer selection
 
-Le rapport est imprimé sur l'imprimante indiquée dans le champ **Imprimante sélectionnée** sur la page de demande de rapport. Vous ne pouvez pas changer d'imprimante sur cette page.
+The report prints to the printer shown in the **Selected printer** field on the report request page. You can't change the printer from this page.
 
-L'imprimante sélectionnée est définie sur la page **Sélections d'imprimantes** ou il s'agit de l'imprimante par défaut configurée sur la page **Gestion des imprimantes**. Si vous souhaitez utiliser une autre imprimante, consultez [Paramétrage imprimantes](ui-specify-printer-selection-reports.md).
+The selected printer is either set on the **Printer Selections** page or it's the default printer set up on the **Printer Management** page. If you want to use another printer, see  [Set Up Printers](ui-specify-printer-selection-reports.md).
 
-Si aucune imprimante n'est spécifiée sur la page **Sélections d'imprimantes** ou n'est définie par défaut sur la page **Gestion des imprimantes**, la fonction d'impression du navigateur est utilisée. Dans ce cas, **Navigateur** s'affiche dans le champ **Imprimante sélectionnée** de la page de demande de rapport. 
+If no printer is specified on the **Printer Selections** page or set as default on the **Printer Management** page, the browser printing feature is used. In this case, **Browser** appears in the **Selected printer** field on the report request page.
+-->
+### <a name="printer"></a><a name="Printer"></a>Imprimante
 
-### <a name="browser-printing"></a>Impression du navigateur
+Le champ **Imprimante** de la page de demande de rapport affiche le nom de l’imprimante à laquelle le rapport sera transmis. **(Géré par le navigateur)** indique qu’il n’y a pas d’imprimante désignée pour le rapport. Dans ce cas, le navigateur gérera l’impression et affichera une expérience standard, où vous pourrez choisir une imprimante locale connectée à votre appareil.
 
-Comme [!INCLUDE[prodshort](includes/prodshort.md)] est un service en nuage, il ne peut pas atteindre les imprimantes locales connectées à votre ordinateur. Cependant, il peut se connecter aux imprimantes nuage. Dans la version générique de [!INCLUDE[prodshort](includes/prodshort.md)], une imprimante nuage nommée **Imprimante par courriel** est installée en tant qu'extension et prête à l'emploi après la configuration initiale.
+Vous ne pouvez pas changer d’imprimante à l’aide du champ **Imprimante** . Pour changer d’imprimante, vous devrez accéder aux pages **Sélections d’imprimantes** ou **Gestion des imprimantes** . La configuration de l’imprimante est généralement une tâche d’administrateur. Si vous souhaitez en savoir plus, consultez [Paramétrage imprimantes](ui-specify-printer-selection-reports.md).
 
-Si aucune imprimante nuage n'est installée et configurée ou si une imprimante installée échoue, l'impression reprend par défaut les options d'impression du navigateur.
+<!--
+### Browser printing
+
+Because [!INCLUDE[prodshort](includes/prodshort.md)] is a cloud service, it can't reach local printers connected to your computer. However, it can connect to cloud-enabled printers. In the generic version of [!INCLUDE[prodshort](includes/prodshort.md)], a cloud printer named **Email Printer** is installed as an extension and is ready to use after initial setup.
+
+If a cloud printer is not installed and set up, or if an installed printer fails, then printing will default to the printing options for the browser.
 
 > [!NOTE]
-> Les options d'impression du navigateur fonctionnent indépendamment de [!INCLUDE[prodshort](includes/prodshort.md)]. Les paramètres d'imprimante qui auraient pu être configurés à partir des imprimantes dans [!INCLUDE[prodshort](includes/prodshort.md)] ne sont pas répercutés dans les options d'impression du navigateur.
+> The browser printing options work independently of [!INCLUDE[prodshort](includes/prodshort.md)]. So any printer settings that might have been set up from printers in [!INCLUDE[prodshort](includes/prodshort.md)] aren't carried over to the browser print options.
 
 <!-- 
 On the **Printer Management** page, you can see the printers that are set up. For more information, see [Set Up Printers](ui-specify-printer-selection-reports.md).
@@ -104,12 +135,27 @@ On the **Printer Management** page, you can see the printers that are set up. Fo
 > You can't change the **Printer** field on the report request page. To use another printer, you must select it from the **Printer Management** page.
 -->
 ### <a name="printing-reports-in-thai"></a>Impression de rapports en thaïlandais
-Spécifiquement pour la version thaïlandaise de [!INCLUDE[prodshort](includes/prodshort.md)], le bouton **Imprimer** ne peut pas imprimer correctement des rapports en raison des limitations du service qui génère le fichier PDF imprimable. À la place, vous pouvez ouvrir le rapport dans Word puis l'enregistrer en tant que fichier PDF imprimable.  
+
+Spécifiquement pour la version thaïlandaise de [!INCLUDE[prodshort](includes/prodshort.md)], le bouton **Imprimer** ne peut pas imprimer correctement des rapports du fait des limitations du service qui génère un fichier PDF imprimable. À la place, vous pouvez ouvrir le rapport dans Word puis l'enregistrer en tant que fichier PDF imprimable.  
 
 Sinon, vous pouvez demander à votre administrateur de créer une présentation rapport Word pour vos rapports les plus utilisés. Pour plus d'informations, voir [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md).  
 
 ## <a name="changing-report-layouts"></a>Modification des présentations de rapport
+
 Une présentation de rapport contrôle les éléments affichés sur un rapport, leur agencement et leur mise en forme. Si vous souhaitez changer de présentation, voir [Modifier la présentation actuelle du rapport](ui-how-change-layout-currently-used-report.md). Ou, si vous souhaitez personnaliser votre propre présentation de rapport, voir [Créer et modifier une présentation de rapport personnalisée](ui-how-create-custom-report-layout.md).
+
+## <a name="advanced-options"></a>Options avancées
+
+Les champs sous **Avancé** définissent des limites sur le rapport généré pour contrôler les ressources de l’imprimante. Vous n’aurez généralement pas à modifier ces paramètres, sauf si vous disposez d’un rapport volumineux. Si un rapport dépasse ces limites lorsque vous essayez d’afficher un aperçu ou d’imprimer, un message apparaît vous indiquant quelle limite a été dépassée. Vous pouvez ensuite modifier les paramètres en fonction de votre rapport. Cependant, chaque champ a une valeur maximale que vous devez connaître :
+
+|Champ|Valeur maximale|
+|-----|-------------|
+|Durée maximale de l’affichage|12:00:00|
+|Nombre maximal de lignes|1 000 000|
+|Nombre maximal de documents|500|
+
+> [!NOTE]
+> Les valeurs maximales peuvent être différentes pour [!INCLUDE[d365fin](includes/d365fin_md.md)] sur site et un administrateur peut les modifier. Pour plus d’informations, reportez-vous à la rubrique [Configuration de Business Central Server – Rapports](/dynamics365/business-central/dev-itpro/administration/configure-server-instance#Reports). Pour un aperçu des limites des rapports [!INCLUDE[d365fin](includes/d365fin_md.md)] en ligne, voir [Limites opérationnelles](/dynamics365/business-central/dev-itpro/administration/operational-limits-online).
 
 ## <a name="see-also"></a>Voir aussi
 

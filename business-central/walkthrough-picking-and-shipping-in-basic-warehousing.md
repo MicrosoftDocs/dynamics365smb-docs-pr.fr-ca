@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/24/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: d607037d76f0778aa0f1037ac9540cfd3d497dbd
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: c05456ca45b4508be0ba44acedf81997a92b56bb
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3786831"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3918498"
 ---
 # <a name="walkthrough-picking-and-shipping-in-basic-warehouse-configurations"></a>Procédure pas à pas : Prélèvement et expédition dans les configurations de stockage de base
 
@@ -61,14 +61,14 @@ Pour exécuter ce processus pas à pas, vous devez :
 - Pour [!INCLUDE[prodshort](includes/prodshort.md)] en ligne, une compagnie basée sur l'option **Évaluation avancée - exemples de données complètes** dans un environnement sandbox. Pour [!INCLUDE[prodshort](includes/prodshort.md)] sur site, CRONUS International Ltd. installé.  
 - Pour devenir employé d'entrepôt dans un emplacement ARGENT, procédez comme suit :  
 
-  1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Employés d'entrepôt**, puis sélectionnez le lien associé.  
-  2. Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs**.  
-  3. Dans le champ **Code magasin**, entrez ARGENT.  
-  4. Sélectionnez le champ **Par défaut**.  
+  1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Employés d'entrepôt** , puis sélectionnez le lien associé.  
+  2. Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs** .  
+  3. Dans le champ **Code magasin** , entrez ARGENT.  
+  4. Sélectionnez le champ **Par défaut** .  
 
 - Rend l'article LS-81 disponible dans l'emplacement ARGENT en suivant cette procédure :  
 
-  1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux article**, puis sélectionnez le lien associé.  
+  1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux article** , puis sélectionnez le lien associé.  
   2. Ouvrez le journal par défaut, puis créez deux lignes journal article avec les informations de date de travail suivantes (23 janvier).  
 
         |Type écriture|Numéro d'article|Code d'emplacement|Code de zone|Quantité|  
@@ -76,11 +76,11 @@ Pour exécuter ce processus pas à pas, vous devez :
         |Positif (ajust.)|LS-81|ARGENTE|S-01-0001|20|  
         |Positif (ajust.)|LS-81|ARGENTE|S-01-0002|20|  
 
-  3. Choisissez l'action **Reporter**, puis cliquez sur le bouton **Oui**.  
+  3. Choisissez l'action **Reporter** , puis cliquez sur le bouton **Oui** .  
 
 ## <a name="story"></a>Scénario
 
-Ellen, la gestionnaire d'entrepôt de CRONUS, configure l'entrepôt ARGENT pour le prélèvement de base dans lequel les magasiniers traitent les commandes sortantes individuellement. Susan, préparatrice de commandes, crée un document de vente pour 30 unités de l'article LS-81 à livrer au client 10000 depuis l'entrepôt ARGENT. Jean, le magasinier, doit s'assurer que la livraison est préparée et livrée au client. Jean gère toutes les tâches impliquées sur la page **Prélèvement inventaire**, qui indique automatiquement les zones où LS-81 est stocké.  
+Ellen, la gestionnaire d'entrepôt de CRONUS, configure l'entrepôt ARGENT pour le prélèvement de base dans lequel les magasiniers traitent les commandes sortantes individuellement. Susan, préparatrice de commandes, crée un document de vente pour 30 unités de l'article LS-81 à livrer au client 10000 depuis l'entrepôt ARGENT. Jean, le magasinier, doit s'assurer que la livraison est préparée et livrée au client. Jean gère toutes les tâches impliquées sur la page **Prélèvement inventaire** , qui indique automatiquement les zones où LS-81 est stocké.  
 
 ## <a name="setting-up-the-location"></a>Configuration de l'emplacement
 
@@ -88,9 +88,9 @@ La configuration de la page **Fiche emplacement** définit les flux d'entrepôt 
 
 ### <a name="to-set-up-the-location"></a>Pour configurer l'emplacement
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements** , puis sélectionnez le lien associé.  
 2. Ouvrez la fiche emplacement ARGENT.  
-3. Sur le raccourci **Entrepôt**, cochez la case **Prélèvement requis**.  
+3. Sur le raccourci **Entrepôt** , cochez la case **Prélèvement requis** .  
 
 ## <a name="creating-the-sales-order"></a>Création du document de vente
 
@@ -98,8 +98,8 @@ Les commandes vente sont le type de document d'origine sortant le plus répandu.
 
 ### <a name="to-create-the-sales-order"></a>Pour créer le document de vente
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
-2. Sélectionnez l'action **Nouveau**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente** , puis sélectionnez le lien associé.  
+2. Sélectionnez l'action **Nouveau** .  
 3. Créez une document de vente pour le client 10000 à la date de travail (23 janvier) comportant la ligne document de vente suivante.  
 
     |Article|Code d'emplacement|Quantité|  
@@ -108,28 +108,28 @@ Les commandes vente sont le type de document d'origine sortant le plus répandu.
 
      Informez l'entrepôt que le document de vente est prêt pour la gestion entrepôt.  
 
-4. Sélectionnez l'action **Lancer**.  
+4. Sélectionnez l'action **Lancer** .  
 
     Jean procède au prélèvement et à la livraison des articles vendus.  
 
 ## <a name="picking-and-shipping-items"></a>Prélèvement et livraison d'articles
 
-Sur la page **Prélèvement inventaire**, vous pouvez gérer toutes les activités entrepôt sortantes pour un document d'origine spécifique, tel qu'un document de vente. [!INCLUDE[tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]  
+Sur la page **Prélèvement inventaire** , vous pouvez gérer toutes les activités entrepôt sortantes pour un document d'origine spécifique, tel qu'un document de vente. [!INCLUDE[tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]  
 
 ### <a name="to-pick-and-ship-items"></a>Pour prélever et livrer des articles
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements inventaire**, puis sélectionnez le lien associé.  
-2. Sélectionnez l'action **Nouveau**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements inventaire** , puis sélectionnez le lien associé.  
+2. Sélectionnez l'action **Nouveau** .  
 
     Assurez-vous que le champ **N°** du raccourci **Général** est rempli.
-3. Sélectionnez le champ **Document origine**, puis sélectionnez **Commande vente**.  
-4. Sélectionnez le champ **N° origine**, sélectionnez la ligne correspondant à la vente au client 10000, puis cliquez sur le bouton **OK**.  
+3. Sélectionnez le champ **Document origine** , puis sélectionnez **Commande vente** .  
+4. Sélectionnez le champ **N° origine** , sélectionnez la ligne correspondant à la vente au client 10000, puis cliquez sur le bouton **OK** .  
 
-    Sinon, choisissez l'action **Extraire document origine**, puis sélectionnez le document de vente.  
-5. Choisissez l'action **Remplir automatiquement la quantité à traiter**.  
+    Sinon, choisissez l'action **Extraire document origine** , puis sélectionnez le document de vente.  
+5. Choisissez l'action **Remplir automatiquement la quantité à traiter** .  
 
-    Sinon, dans le champ **Qté à traiter**, saisissez respectivement 10 et 20 sur les deux lignes prélèvement stock.  
-6. Choisissez l'action **Reporter**, sélectionnez **Livrer**, puis cliquez sur le bouton **OK**.  
+    Sinon, dans le champ **Qté à traiter** , saisissez respectivement 10 et 20 sur les deux lignes prélèvement stock.  
+6. Choisissez l'action **Reporter** , sélectionnez **Livrer** , puis cliquez sur le bouton **OK** .  
 
     Les 30 haut-parleurs sont à présent enregistrés comme prélevés depuis les zones S-01-0001 et S-01-0002, et une écriture article négative est créée pour refléter la livraison vente reportée.  
 

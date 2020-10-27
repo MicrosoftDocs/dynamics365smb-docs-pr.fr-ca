@@ -8,18 +8,18 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: sandbox, demo, develop
-ms.date: 07/03/2020
+ms.date: 10/01/2020
 ms.author: solsen
-ms.openlocfilehash: d85ec46d5514c91e9a6b1403b5f90a7094d9deba
-ms.sourcegitcommit: ca5bf1d934997ef8c0bc9f8ab0e5568f0ed42fa4
+ms.openlocfilehash: 5482460acb6ce0e92b1d6dbe876b1b64267974ae
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "3535444"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3919698"
 ---
 # <a name="creating-a-sandbox-environment-in-prodshort"></a>Créeation d'un environnement Sandbox dans [!INCLUDE[prodshort](includes/prodshort.md)]
 
-Avec [!INCLUDE[prodshort](includes/prodshort.md)], vous pouvez facilement créer un environnement sûr dans lequel vous pouvez effectuer des tests, vous entraîner ou résoudre des problèmes sans perturber les processus de travail ou les données métier de votre compagnie. Cet environnement hors production est appelé *sandbox*. Isolé de la production, un environnement Sandbox est l'emplacement où vous pouvez explorer, apprendre, démontrer, développer et tester en toute sécurité le service sans que les données et les paramètres de votre environnement de production en soient affectés.  
+Avec [!INCLUDE[prodshort](includes/prodshort.md)], vous pouvez facilement créer un environnement sûr dans lequel vous pouvez effectuer des tests, vous entraîner ou résoudre des problèmes sans perturber les processus de travail ou les données métier de votre compagnie. Cet environnement hors production est appelé *sandbox* . Isolé de la production, un environnement Sandbox est l'emplacement où vous pouvez explorer, apprendre, démontrer, développer et tester en toute sécurité le service sans que les données et les paramètres de votre environnement de production en soient affectés.  
 
 Votre administrateur peut créer des environnements sandbox dans le [centre d'administration](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments?toc=/dynamics365/business-central/toc.json), mais si vous voulez effectuer un test rapide, vous pouvez créer un environnement sandbox depuis [!INCLUDE[prodshort](includes/prodshort.md)].  
 
@@ -30,9 +30,9 @@ Votre administrateur peut créer des environnements sandbox dans le [centre d'ad
 
 1. Connectez-vous à votre instance de production de [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Environnement sandbox**, puis sélectionnez le lien associé.
+2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Environnement sandbox** , puis sélectionnez le lien associé.
     <!-- ![Sandbox Environment Setup](./media/across-sandbox/sandbox-environment-setup.png) -->
-3. Cliquez sur le bouton **Créer**.  
+3. Cliquez sur le bouton **Créer** .  
 
     Un autre onglet avec [!INCLUDE[d365fin](includes/d365fin_md.md)] s'ouvre à l'endroit où vous pouvez terminer la configuration de votre environnement Sandbox.
 
@@ -69,9 +69,9 @@ L'environnement sandbox n'est pas moins utile, car il comprend quelques fonction
 
 ### <a name="to-enable-the-advanced-user-experience"></a>Pour activer l'expérience utilisateur avancée
 
-Il est possible d'activer et de tester la fonctionnalité complète de la version standard de [!INCLUDE[d365fin](includes/d365fin_md.md)] dans un abonné Sandbox en définissant le champ **Expérience** sur la page **Informations compagnie** sur *Premium*. Trouvez la page **Informations compagnie** dans le menu :::image type="content" source="media/ui-experience/settings_icon_small.png" alt-text="Icône Paramètres":::.  
+Il est possible d'activer et de tester la fonctionnalité complète de la version standard de [!INCLUDE[d365fin](includes/d365fin_md.md)] dans un abonné Sandbox en définissant le champ **Expérience** sur la page **Informations compagnie** sur *Premium* . Trouvez la page **Informations compagnie** dans le menu :::image type="content" source="media/ui-experience/settings_icon_small.png" alt-text="Icône Paramètres":::.  
 
-Après avoir activé l'expérience utilisateur *Premium*, vous avez accès à tous les profils (rôles) et tableaux de bord standard dans la version standard. Vous pouvez également créer une compagnie d'évaluation qui est entièrement configurée et qui inclut des données de démonstration et un accès aux modules avancés du produit. Vous pouvez également contacter un partenaire revendeur pour une démonstration des fonctionnalités. Pour plus d'informations, voir [Comment trouver un partenaire revendeur ?](across-faq.md#findpartner).  
+Après avoir activé l'expérience utilisateur *Premium* , vous avez accès à tous les profils (rôles) et tableaux de bord standard dans la version standard. Vous pouvez également créer une compagnie d'évaluation qui est entièrement configurée et qui inclut des données de démonstration et un accès aux modules avancés du produit. Vous pouvez également contacter un partenaire revendeur pour une démonstration des fonctionnalités. Pour plus d'informations, voir [Comment trouver un partenaire revendeur ?](across-faq.md#findpartner).  
 
 ### <a name="to-enable-complete-sample-data"></a>Pour activer des exemples de données complètes
 
@@ -79,10 +79,10 @@ Dans l'environnement sandbox, vous pouvez également créer une nouvelle compagn
 
 #### <a name="to-create-a-company-with-complete-sample-data-in-a-sandbox"></a>Pour créer une compagnie avec des exemples de données complètes dans un sandbox
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Compagnies**, puis sélectionnez le lien associé.  
-2. Sélectionnez l'action **Nouveau**, puis sélectionnez **Créer une nouvelle compagnie**.  
-3. Sur la page **Configuration assistée pour la création d'une compagnie**, choisissez **Suivant**.  
-4. Spécifiez un nom pour la nouvelle compagnie, puis, dans le champ **Sélectionnez les données et les configurations de mise en route**, choisissez **Évaluation avancée - exemples de données complètes**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Compagnies** , puis sélectionnez le lien associé.  
+2. Sélectionnez l'action **Nouveau** , puis sélectionnez **Créer une nouvelle compagnie** .  
+3. Sur la page **Configuration assistée pour la création d'une compagnie** , choisissez **Suivant** .  
+4. Spécifiez un nom pour la nouvelle compagnie, puis, dans le champ **Sélectionnez les données et les configurations de mise en route** , choisissez **Évaluation avancée - exemples de données complètes** .  
 5. Exécutez le reste du guide de configuration assistée.  
 
 Une fois le guide de configuration assistée terminé, vous pouvez commencer à explorer la nouvelle compagnie avec les exemples de données complètes. Pour plus d'informations, voir [Création de compagnies dans [!INCLUDE[d365fin](includes/d365fin_md.md)]](about-new-company.md).  

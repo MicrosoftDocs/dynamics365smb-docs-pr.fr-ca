@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: b86bc97ec6064ee1e4b8f56c444d03cdecc4cc4b
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: a0ff9ed014897a1a285dc3f6817299ec38bc9886
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3787081"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3920882"
 ---
 # <a name="design-details-variance"></a>Détails de conception : écart
 L'écart est défini comme la différence entre le coût réel et le coût standard, telle que décrite dans la formule suivante.  

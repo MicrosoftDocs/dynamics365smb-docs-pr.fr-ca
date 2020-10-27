@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: reimbursement
-ms.date: 06/23/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 1034765a452bf94ab243c301df58cb8a891f79f9
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: e88cc5ad2eaf449d22dd0c9840a4fc33ae0f56f7
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3783376"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3916178"
 ---
 # <a name="record-and-reimburse-employees-expenses"></a>Enregistrer et rembourser les frais des employés
 
@@ -30,8 +30,8 @@ Si les employés dépensent leur propre argent pendant les activités profession
 > Cet article explique comment enregistrer les frais dans les livres et comment rembourser l'employé. Votre organisation peut avoir un portail ou une application où les employés peuvent soumettre leurs notes de frais.
 
 ## <a name="to-record-an-employees-expense"></a>Pour enregistrer les dépenses des employés
-Reportez les frais employé sur la page **Journal général**.
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux généraux**, puis sélectionnez le lien associé.
+Reportez les frais employé sur la page **Journal général** .
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux généraux** , puis sélectionnez le lien associé.
 2. Ouvrez le lot journal général approprié. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 3. Sur une nouvelle ligne journal, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]    
 
@@ -40,19 +40,19 @@ Reportez les frais employé sur la page **Journal général**.
 4. Répétez l'étape 3 pour tous les frais que l'employé a supportés.
 
     > [!TIP]  
-    > Si vous souhaitez saisir plusieurs lignes de dépenses au-dessus d'une ligne compte contrepartie du compte bancaire de l'employé, activez la case à cocher **Suggérer le montant contrepartie** de la ligne pour votre lot sur la page **Lots journal général**. Puis le champ **Montant** de la ligne compte contrepartie est automatiquement prérempli avec la valeur requise pour équilibrer les dépenses.
+    > Si vous souhaitez saisir plusieurs lignes de dépenses au-dessus d'une ligne compte contrepartie du compte bancaire de l'employé, activez la case à cocher **Suggérer le montant contrepartie** de la ligne pour votre lot sur la page **Lots journal général** . Puis le champ **Montant** de la ligne compte contrepartie est automatiquement prérempli avec la valeur requise pour équilibrer les dépenses.
 5. Choisissez l'action **Reporter** pour enregistrer les frais sur le compte de l'employé.
 
 ## <a name="to-reimburse-an-employee"></a>Pour rembourser un employé
-Vous remboursez des employés en reportant les paiements sur leur compte bancaire sur la page **Journal paiement**.
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux paiement**, puis sélectionnez le lien associé.
+Vous remboursez des employés en reportant les paiements sur leur compte bancaire sur la page **Journal paiement** .
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux paiement** , puis sélectionnez le lien associé.
 2. Ouvrez le lot journal paiement approprié. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 3. Renseignez les champs selon vos besoins. Pour plus d'informations, reportez-vous à [Effectuer des paiements](payables-make-payments.md).
 4. Sinon, choisissez l'action **Proposer paiements aux employés** pour insérer automatiquement des lignes journal pour les remboursements employé en attente.
 5. Sélectionnez l'action **Reporter** pour enregistrer le remboursement.  
 
 ## <a name="to-reconcile-reimbursements-with-employee-ledger-entries"></a>Pour rapprocher les remboursements avec les écritures de l'employé
-Affectez les paiements des employés à leurs écritures employés ouvertes de la même façon que vous le faites pour les paiements des fournisseurs, par exemple sur la page **Journal rapprochement paiement**, en fonction des écritures de relevé bancaire connexes. Pour plus d'informations, reportez-vous à [Lettrage automatique des paiements et rapprochement des comptes bancaires](receivables-apply-payments-auto-reconcile-bank-accounts.md). Sinon, vous pouvez effectuer une affectation manuelle sur la page **Écritures employés**. Pou plus d'informations, voir [Rapprocher des paiements fournisseur avec le journal paiement ou à partir des écritures fournisseur](payables-how-apply-purchase-transactions-manually.md).  
+Affectez les paiements des employés à leurs écritures employés ouvertes de la même façon que vous le faites pour les paiements des fournisseurs, par exemple sur la page **Journal rapprochement paiement** , en fonction des écritures de relevé bancaire connexes. Pour plus d'informations, reportez-vous à [Lettrage automatique des paiements et rapprochement des comptes bancaires](receivables-apply-payments-auto-reconcile-bank-accounts.md). Sinon, vous pouvez effectuer une affectation manuelle sur la page **Écritures employés** . Pou plus d'informations, voir [Rapprocher des paiements fournisseur avec le journal paiement ou à partir des écritures fournisseur](payables-how-apply-purchase-transactions-manually.md).  
 
 ## <a name="see-also"></a>Voir aussi
 [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)  

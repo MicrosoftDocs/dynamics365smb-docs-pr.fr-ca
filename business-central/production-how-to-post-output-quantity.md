@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: cb0f01c84cb82765c346e45273bff82fbd1a53af
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: db613df030a739ac8899b3cea19e89f17dcfe53e
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3778500"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3916585"
 ---
 # <a name="batch-post-output-and-run-times"></a>Exécuter en lot la production et les temps d'exécution
 La quantité produite représente l'avancée des travaux en prenant en compte la quantité achevée.  
@@ -24,9 +24,9 @@ La quantité produite représente l'avancée des travaux en prenant en compte la
 > L'inventaire est automatiquement mis à jour uniquement lorsque vous reportez la quantité sortie durant la dernière opération.  
 
 ## <a name="to-post-output-quantities-for-one-or-more-production-order-lines"></a>Pour reporter les quantités sorties pour une ou plusieurs lignes bon de production
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journal de sortie**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journal de sortie** , puis sélectionnez le lien associé.  
 2. Renseignez les champs en indiquant les données relatives à la fabrication et à la production. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
-3. Si l'opération est achevée, sélectionnez le champ **Terminé**.  
+3. Si l'opération est achevée, sélectionnez le champ **Terminé** .  
 
     Si l'emplacement entrepôt dans lequel les articles doivent être rangés utilise des zones mais n'exige pas le traitement des rangements, affectez un code de zone à la ligne journal pour indiquer l'endroit où les articles doivent être placés dans l'entrepôt. Pour plus d'informations, voir [Rangement du résultat de fabrication ou d'assemblage](warehouse-how-to-put-away-production-output.md).  
 
@@ -35,9 +35,9 @@ La quantité produite représente l'avancée des travaux en prenant en compte la
 ## <a name="to-post-run-times-for-one-or-more-production-order-lines"></a>Pour reporter les temps d'exécution pour une ou plusieurs lignes bon de production
 Le temps d'exécution représente l'avancement des travaux en prenant en compte le temps de travail nécessaire.    
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journal de sortie**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journal de sortie** , puis sélectionnez le lien associé.  
 2. Renseignez les champs en indiquant les données relatives à la fabrication et à la production.  
-3.  Si l'opération est achevée, sélectionnez le champ **Terminé**.  
+3.  Si l'opération est achevée, sélectionnez le champ **Terminé** .  
 4. Choisissez l'action **Reporter** pour reporter le temps passé par opération. Les écritures du grand livre de capacité sont mises à jour pour les unités de production ou les ateliers utilisés.
 
 ## <a name="see-also"></a>Voir aussi  

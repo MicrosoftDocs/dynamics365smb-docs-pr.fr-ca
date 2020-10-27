@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 06747ec283cb4b64f23433fbb81eea4a62e1f832
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: a761d1127e2a0568e59a329fd3e187beffb6b7e5
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3780695"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3918086"
 ---
 # <a name="field-mapping-when-exporting-payment-files-using-the-amc-banking-365-fundamentals-extension"></a>Mappage de champ lors de l’exportation de fichiers de paiement à l’aide de l’extension AMC Banking 365 Fundamentals
 Lorsque vous exportez des fichiers de paiement à l’aide de l’extension AMC Banking 365 Fundamentals, les données que vous exportez sont exposées au fournisseur de service. Le fournisseur de service est responsable de la confidentialité de ces données. Pour plus d'informations sur l’extension AMC Banking 365 Fundamentals, voir [Utilisation de l’extension AMC Banking 365 Fundamentals](ui-extensions-amc-banking.md).  

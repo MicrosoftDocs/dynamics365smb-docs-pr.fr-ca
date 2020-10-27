@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: year closing, close accounting period, close fiscal year, aging, creditor payments, vendor payments
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: jswymer
-ms.openlocfilehash: 2c1836d133c36ba5a8bf44bae0443c252bc13d8e
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 6526760c78cb11d8454b7f5390c6fefe713647d2
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3191773"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3918248"
 ---
 # <a name="overview-of-tasks-to-close-accounting-periods"></a>Aperçu des tâches de fermeture des périodes comptables
 [!INCLUDE[d365fin](includes/d365fin_md.md)] ne vous oblige pas à clôturer les périodes. Toutefois, il existe de nombreuses activités de clôture de période (fin de mois) que vous pouvez effectuer. Cette rubrique présente un aperçu des activités et processus facultatifs pour la fermeture de périodes.  
@@ -30,21 +30,21 @@ ms.locfileid: "3191773"
 * Mettez à jour et reportez les journaux récurrents.  
   <!--* Process Consolidations-->
 * Exécutez les tableaux d'analyse comme suit :  
-  * Ouvrez la page **Tableau d'analyse**, puis sélectionnez l'action **Imprimer**.  
+  * Ouvrez la page **Tableau d'analyse** , puis sélectionnez l'action **Imprimer** .  
 
 ## <a name="sales-and-receivables"></a>Ventes
 * Reportez l'ensemble des documents de vente, factures, notes de crédit et retours vente.  
 * Reportez l'ensemble des journaux des encaissements.  
 * Mettez à jour et reportez les journaux récurrents associés aux ventes.  
 * Rapprocher les comptes clients avec le grand livre.  
-* Exécutez le traitement par lots **Supprimer cdes vente facturées**.  
+* Exécutez le traitement par lots **Supprimer cdes vente facturées** .  
 
 ## <a name="purchases-and-payables"></a>Achats
 * Reportez l'ensemble des bons de commande, factures, notes de crédit et retours achat.  
 * Reportez l'ensemble des journaux paiement.  
 * Mettez à jour et validez les feuilles abonnement associées aux achats.  
 * Générez l'état **Comptabilité fournisseur âgée** et rapprochez la comptabilité fournisseur de la comptabilité.  
-* Exécutez le traitement par lots **Supprimer cdes achat facturées**.  
+* Exécutez le traitement par lots **Supprimer cdes achat facturées** .  
 
 Immobilisations
 * Vérifiez que tous les frais d'entretien ont été reportés via les journaux immobilisation ou les factures.

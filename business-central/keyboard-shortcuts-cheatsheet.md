@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accessibility, shortcuts, keyboarding
-ms.date: 07/23/2020
+ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: f5faf39d37081fc2afd15f23a6101580cdff66e6
-ms.sourcegitcommit: 7b5c927ea9a59329daf1b60633b8290b552d6531
+ms.openlocfilehash: c27d350ae95df7f07caa145bdde12a9762292fe8
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3617871"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3921727"
 ---
 # <a name="keyboard-quick-reference---pc-only"></a>Référence rapide de raccourcis clavier - PC uniquement
 

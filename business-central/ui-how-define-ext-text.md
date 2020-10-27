@@ -7,14 +7,14 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/08/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: cf0418f4182e9d66da88af9262dd807a34dd3572
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 1dd6c3085c0cb8696b6e7011fbea3c3cd9a1c86e
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3782328"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3920457"
 ---
 # <a name="add-extended-text"></a>Ajouter du texte étendu
 
@@ -24,12 +24,12 @@ La section suivante décrit comment ajouter du texte étendu à une description 
 
 ## <a name="to-define-extended-text-for-an-description"></a>Pour définir le texte étendu pour une description
 
-1. Ouvrez la fiche correspondant à l'article auquel vous voulez ajouter du texte étendu, puis sélectionnez **Texte étendu**.
-2. Renseignez les champs **Code** et **Description**.
-3. Choisissez **Nouveau**.
+1. Ouvrez la fiche correspondant à l'article auquel vous voulez ajouter du texte étendu, puis sélectionnez **Texte étendu** .
+2. Renseignez les champs **Code** et **Description** .
+3. Choisissez **Nouveau** .
 4. Renseignez le champ **Code langue** ou activez la case à cocher **Commun toutes langues** si vous utilisez des codes langue.
 5. Renseignez les champs **Date début** et **Date fin** si vous souhaitez limiter les dates d'utilisation du texte étendu.
-6. Dans le champ **Texte**, entrez le texte étendu.
+6. Dans le champ **Texte** , entrez le texte étendu.
 7. Cochez les cases appropriées pour les types de documents où vous souhaitez imprimer le texte étendu.
 8. Fermez la page.
 
@@ -38,7 +38,7 @@ Vous pouvez maintenant ajouter ce texte étendu aux documents. La procédure sui
 ## <a name="to-add-an-extended-item-text-on-a-sales-order-line"></a>Pour ajouter un texte d'article étendu à une ligne document de vente
 
 1. Ouvrez un document de vente avec une ligne vente pour un article avec texte étendu défini. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
-2. Sélectionnez la ligne en question, puis sélectionnez l'action **Insérer textes étendus**.
+2. Sélectionnez la ligne en question, puis sélectionnez l'action **Insérer textes étendus** .
 
 ## <a name="see-also"></a>Voir aussi
 

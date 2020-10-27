@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: warehouse, stock
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 6d0ef9453c9193dd65dc841fc731932fe781bcc9
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 6a8298caadec82b191d345e6b7c75b95187b2fe5
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3783334"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3921752"
 ---
 # <a name="setting-up-inventory"></a>Configuration de l'inventaire
 Avant de pouvoir gérer les activités entrepôt et les coûts d'inventaire, vous devez configurer les règles et les valeurs qui définissent les stratégies d'inventaire de la compagnie.

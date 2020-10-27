@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: f299c9c38211b4dc265402b4079fe283e318113c
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 3da05908a0b19cf0505e3452889f92a21ebc1485
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3780720"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3918136"
 ---
 # <a name="exchanging-data"></a>Échange de données
 Vous pouvez échanger des données entre [!INCLUDE[d365fin](includes/d365fin_md.md)] et des fichiers ou flux externes en relation avec des tâches courantes d'entreprise, comme l'envoi et la réception de documents électroniques et l'importation et l'exportation de fichiers bancaires.  
@@ -33,7 +33,7 @@ Avant de pouvoir envoyer et recevoir des documents électroniques ou importer et
 |Exporter des paiements à partir de la page **Journal paiement** vers un fichier bancaire que vous transférez sur votre compte bancaire électronique pour traitement.|[Exporter des paiements vers un fichier bancaire](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md#exporting-payments-to-a-bank-file)|
 |Effectuer des paiements électroniques conformément à la norme de virement SEPA de l'UE.|[Réalisation de paiements avec l'extension AMC Banking 365 Fundamentals ou le virement SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md)|  
 |Demander à votre banque de transférer les montants de paiement des comptes bancaires de vos clients vers le compte de votre compagnie en fonction de votre configuration du prélèvement automatique SEPA.|[Créer des écritures de collection prélèvement automatique SEPA et les exporter vers un fichier bancaire](finance-collect-payments-with-sepa-direct-debit.md#creating-sepa-direct-debit-collection-entries-and-export-to-a-bank-file)|  
-|Utiliser un fournisseur de services de taux de change des devises pour mettre à jour la page **Devises**.|[Mettre à jour des taux de change devise](finance-how-update-currencies.md)|  
+|Utiliser un fournisseur de services de taux de change des devises pour mettre à jour la page **Devises** .|[Mettre à jour des taux de change devise](finance-how-update-currencies.md)|  
 |Consulter les éléments de fichier mappés aux champs dans [!INCLUDE[d365fin](includes/d365fin_md.md)] lors de l'importation de fichiers de déclaration SEPA CAMT.|[Mappage de champs lors de l'importation de fichiers SEPA CAMT](across-field-mapping-when-importing-sepa-camt-files.md)|  
 |Découvrez quels sont les champs de [!INCLUDE[d365fin](includes/d365fin_md.md)] qui sont mappés à des éléments de fichier lorsque vous exportez des fichiers de paiement à l’aide de l’extension AMC Banking 365 Fundamentals.|[Mappage de champ lors de l’exportation de fichiers de paiement à l’aide de l’extension AMC Banking 365 Fundamentals](across-field-mapping-when-exporting-payment-files-using-bank-data-conversion-service.md)|  
 
