@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 20cca6b2c91c58573d5bef1c8330ca4c691fdfb8
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: d39d30891d822c25b0ce4aaec84bbbbc714ae311
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3780445"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3910765"
 ---
 # <a name="setting-up-cost-accounting"></a>Paramétrage du contrôle de gestion
 Avant d'utiliser la comptabilité analytique, vous devez effectuer des tâches de configuration.
@@ -36,8 +36,8 @@ Le plan des types de coûts a la même fonction que le plan des comptes dans le 
 -   Créez le plan des types de coûts ou ajoutez de nouveaux types de coûts au plan comptable existant des types de coûts. Vous devez créer chaque type de coûts individuellement.  
 
 ### <a name="to-transfer-the-general-ledger-chart-of-accounts-to-the-chart-of-cost-types"></a>Pour transférer le plan des comptes du grand livre vers le plan des types de coûts  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable des types de coûts**, puis sélectionnez le lien associé.  
-2.  Choisissez l'action **Obtenir les types de coûts à partir du plan comptable**. Dans la boîte de dialogue, cliquez sur **Oui** pour confirmer le transfert. La fonction utilise le plan comptable général pour créer le plan des types de coûts.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable des types de coûts** , puis sélectionnez le lien associé.  
+2.  Choisissez l'action **Obtenir les types de coûts à partir du plan comptable** . Dans la boîte de dialogue, cliquez sur **Oui** pour confirmer le transfert. La fonction utilise le plan comptable général pour créer le plan des types de coûts.  
 
     Le plan des types de coûts contient désormais tous les comptes d'état des résultats du grand livre, et comprend les titres et les sous-totaux. Vous pouvez modifier le plan des types de coûts, selon vos besoins. Par exemple, vous pouvez supprimer les types de coûts existants en double.  
 
@@ -49,17 +49,17 @@ Le plan des types de coûts a la même fonction que le plan des comptes dans le 
 2.  Renseignez les champs comme décrit selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
     > [!NOTE]  
-    >  Vous pouvez configurer et gérer les types de coût, soit sur la page **Fiche type de coût**, soit sur la page **Plan comptable des types de coûts**. Dans cette procédure, vous configurez de nouveaux types de coût sur la page **Plan comptable des types de coûts**.
+    >  Vous pouvez configurer et gérer les types de coût, soit sur la page **Fiche type de coût** , soit sur la page **Plan comptable des types de coûts** . Dans cette procédure, vous configurez de nouveaux types de coût sur la page **Plan comptable des types de coûts** .
 
-3.  Après avoir créé tous les types de coûts, choisissez l'action **Décaler les types de coûts**. Dans la boîte de dialogue, cliquez sur **Oui**.  
+3.  Après avoir créé tous les types de coûts, choisissez l'action **Décaler les types de coûts** . Dans la boîte de dialogue, cliquez sur **Oui** .  
 4.  Liez le nouveau type de coût au compte du grand livre correspondant.  
 
     > [!IMPORTANT]  
-    >  Si vous avez entré des définitions dans les champs **Totalisation** pour le type de ligne **Fin total** avant d'exécuter la fonction **Décaler les types de coûts**, vous devez les entrer à nouveau, car cette fonction remplace les valeurs de tous les champs **Fin total**.  
+    >  Si vous avez entré des définitions dans les champs **Totalisation** pour le type de ligne **Fin total** avant d'exécuter la fonction **Décaler les types de coûts** , vous devez les entrer à nouveau, car cette fonction remplace les valeurs de tous les champs **Fin total** .  
 
 ### <a name="to-update-cost-types"></a>Pour mettre à jour les types de coûts  
-1.  Sur la page **Configuration comptabilité analytique**, indiquez si vous souhaitez que le plan des types de coûts soit mis à jour automatiquement lorsque le plan comptable est modifié.  
-2.  Dans le champ **Aligner compte du grand livre**, vous pouvez choisir les options suivantes.  
+1.  Sur la page **Configuration comptabilité analytique** , indiquez si vous souhaitez que le plan des types de coûts soit mis à jour automatiquement lorsque le plan comptable est modifié.  
+2.  Dans le champ **Aligner compte du grand livre** , vous pouvez choisir les options suivantes.  
 
 - **Pas d'alignement** - Il n'existe aucune modification correspondante dans le plan des types de coûts lorsque vous modifiez le plan comptable.  
 - **Automatique** - Une modification correspondante est apportée dans le plan des types de coûts lorsque vous modifiez le plan comptable.  
@@ -71,7 +71,7 @@ La relation entre le type de coût et le compte du grand livre est créée dans 
 * Le champ **Plage compte GL** de la table **Type coût** définit les comptes GL appartenant à un type de coût.  
 * Le champ **N° type coût de solde** du plan comptable définit l'appartenance du compte du grand livre à un type de coût.  
 
-Ces deux champs sont renseignés automatiquement lorsque vous utilisez la fonction **Obtenir les types de coûts à partir du plan comptable**.  
+Ces deux champs sont renseignés automatiquement lorsque vous utilisez la fonction **Obtenir les types de coûts à partir du plan comptable** .  
 
 ### <a name="relationship-between-general-ledger-accounts-and-cost-types"></a>Relations entre les comptes généraux et les types de coûts  
 Une relation n:1 existe entre les comptes généraux et les types de coûts. Plusieurs comptes du grand livre peuvent appartenir à un type de coût, mais chaque compte du grand livre appartient à un seul type de coût. Le tableau suivant décrit la relation en détails.  
@@ -97,9 +97,9 @@ Les centres de coûts sont les départements responsables des coûts et des reve
 -   Créez un nouveau plan de centre de coûts indépendant du grand livre ou ajoutez un nouveau centre de coûts à un plan existant du centre de coûts. Vous devez créer chaque centre de coûts individuellement.  
 
 ### <a name="to-transfer-dimension-values-in-the-general-ledger-to-the-chart-of-cost-centers"></a>Pour transférer des valeurs de dimension du grand livre vers le plan des centres de coûts  
-1.  Définissez une dimension comme dimension des centres de coûts sur la page **Mettre à jour les dimensions de comptabilité analytique**. Seules les valeurs de cette dimension sont transférées.  
-2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable des centres de coûts**, puis sélectionnez le lien associé.  
-3.  Sous l'onglet **Actions**, dans le groupe **Fonctions**, choisissez **Extraire les centres de coûts de l'axe analytique** pour transférer des sections du plan des centres de coûts. La fonction transfère les sections analytiques que vous avez définis dans l'étape 1.  
+1.  Définissez une dimension comme dimension des centres de coûts sur la page **Mettre à jour les dimensions de comptabilité analytique** . Seules les valeurs de cette dimension sont transférées.  
+2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable des centres de coûts** , puis sélectionnez le lien associé.  
+3.  Sous l'onglet **Actions** , dans le groupe **Fonctions** , choisissez **Extraire les centres de coûts de l'axe analytique** pour transférer des sections du plan des centres de coûts. La fonction transfère les sections analytiques que vous avez définis dans l'étape 1.  
 
     > [!NOTE]  
     >  Vous pouvez configurer le champ **Aligner dimension centre de coûts** pour définir la synchronisation unidirectionnelle des valeurs de dimension à partir du grand livre vers le plan des centres de coûts. Vous ne pouvez pas définir une synchronisation du plan des centres de coûts avec les valeurs de dimension issues du grand livre.  
@@ -107,21 +107,21 @@ Les centres de coûts sont les départements responsables des coûts et des reve
 Le plan des centres de coûts comprend désormais toutes les valeurs de dimension spécifiées provenant du grand livre. Il inclut les titres et les sous-totaux.  
 
 ### <a name="to-create-new-cost-centers-in-the-chart-of-cost-centers-page"></a>Pour créer de nouveaux centres de coût sur la page Plan comptable des centres de coûts  
-Vous pouvez configurer et gérer les centres de coût, soit sur la page **Fiche centre de coût**, soit sur la page **Plan comptable des centres de coûts**. Dans cette procédure, vous configurez de nouveaux centres de coût sur la page **Plan comptable des centres de coûts**.  
+Vous pouvez configurer et gérer les centres de coût, soit sur la page **Fiche centre de coût** , soit sur la page **Plan comptable des centres de coûts** . Dans cette procédure, vous configurez de nouveaux centres de coût sur la page **Plan comptable des centres de coûts** .  
 
 1. Ouvrez la page **Plan comptable des centres de coûts** en mode édition.  
-2. Dans le champ **Code**, entrez le code centre de coûts. Tous les centres de coûts doivent avoir un code.  
-3. Dans le champ **Nom**, saisissez le nom du centre de coûts.  
+2. Dans le champ **Code** , entrez le code centre de coûts. Tous les centres de coûts doivent avoir un code.  
+3. Dans le champ **Nom** , saisissez le nom du centre de coûts.  
 4. Sélectionnez la flèche déroulante dans le champ **Type ligne** pour spécifier l'objectif du centre de coûts.  
 
-    - Pour les centres de coûts de type **Total**, vous devez renseigner le champ **Totalisation**. Utilisez l'opérateur **or**, qui est une ligne verticale (**&#124;**) pour définir les plages des centres de coûts.  
-    - Pour les centres de coûts de type de ligne **Fin total**, ce champ est renseigné automatiquement lorsque vous utilisez la fonction de décalage.  
-5.  Renseignez les champs **Ordre de tri** et **Sous\-type coût**.  
+    - Pour les centres de coûts de type **Total** , vous devez renseigner le champ **Totalisation** . Utilisez l'opérateur **or** , qui est une ligne verticale ( **&#124;** ) pour définir les plages des centres de coûts.  
+    - Pour les centres de coûts de type de ligne **Fin total** , ce champ est renseigné automatiquement lorsque vous utilisez la fonction de décalage.  
+5.  Renseignez les champs **Ordre de tri** et **Sous\-type coût** .  
 6.  Choisissez la ligne vide suivante pour créer un centre de coûts, puis répétez les étapes 2 à 5.  
-7.  Après avoir défini tous les centres de coûts, choisissez l'action **Décaler les centres de coûts**. Cliquez sur le bouton **Oui**.  
+7.  Après avoir défini tous les centres de coûts, choisissez l'action **Décaler les centres de coûts** . Cliquez sur le bouton **Oui** .  
 
 > [!IMPORTANT]  
->  Si vous avez saisi des définitions dans les champs **Totalisation** pour les centres de coûts **Fin total** avant d'exécuter la fonction de décalage, vous devez les saisir à nouveau. La fonction remplace les valeurs dans tous les champs **Fin total**.
+>  Si vous avez saisi des définitions dans les champs **Totalisation** pour les centres de coûts **Fin total** avant d'exécuter la fonction de décalage, vous devez les saisir à nouveau. La fonction remplace les valeurs dans tous les champs **Fin total** .
 
 ## <a name="setting-up-cost-objects"></a>Configuration des objets de coûts
 Les objets de coûts sont les projets, les biens ou les services d'une compagnie. Le plan des objets de coûts est semblable aux informations sur la dimension pour le grand livre. Vous pouvez configurer le plan des coûts associés comme suit :  
@@ -130,8 +130,8 @@ Les objets de coûts sont les projets, les biens ou les services d'une compagnie
 * Créez un nouveau plan des objets de coûts, qui est indépendant du grand livre ou ajoutez un nouvel objet de coûts à un plan des objets de coûts existant. Vous devez créer chaque objet de coût individuellement.  
 
 ### <a name="to-transfer-dimension-values-from-the-general-ledger-to-the-chart-of-cost-objects"></a>Pour transférer des valeurs de dimension du grand livre vers le plan des objets de coûts  
-1.  Définissez une dimension comme dimension d'objet de coûts sur la page **Actualiser dimensions CA**. Seules les valeurs de cette dimension sont transférées.  
-2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable des objets de coûts**, puis sélectionnez le lien associé.  
+1.  Définissez une dimension comme dimension d'objet de coûts sur la page **Actualiser dimensions CA** . Seules les valeurs de cette dimension sont transférées.  
+2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable des objets de coûts** , puis sélectionnez le lien associé.  
 3.  Choisissez l'action **Extraire les objets de coûts de la dimension** pour transférer des valeurs de dimension vers le plan comptable des objets de coûts. La fonction transfère les axes analytiques que vous avez définis dans l'étape 1.  
 
     > [!NOTE]  
@@ -140,27 +140,27 @@ Les objets de coûts sont les projets, les biens ou les services d'une compagnie
 Le plan des objets de coûts comprend désormais toutes les valeurs de dimension spécifiées provenant du grand livre. Il inclut les titres et les sous-totaux.  
 
 ### <a name="to-create-new-cost-objects-in-the-chart-of-cost-objects-page"></a>Pour créer de nouveaux objets de coûts sur la page Plan comptable des objets de coûts  
-Vous pouvez configurer et gérer les objets de coûts, soit sur la page **Fiche objet de coûts**, soit sur la page **Plan comptable des objets de coûts**. Dans cette procédure, vous configurez de nouveaux objets de coûts sur la page **Plan comptable des objets de coûts**.  
+Vous pouvez configurer et gérer les objets de coûts, soit sur la page **Fiche objet de coûts** , soit sur la page **Plan comptable des objets de coûts** . Dans cette procédure, vous configurez de nouveaux objets de coûts sur la page **Plan comptable des objets de coûts** .  
 
 1.  Ouvrez la page **Plan comptable des objets de coûts** en mode édition.  
-2.  Dans le champ **Code**, entrez le code coût associé. Tous les coûts associés doivent avoir un code.  
-3.  Dans le champ **Nom**, saisissez le nom du coût associé.  
+2.  Dans le champ **Code** , entrez le code coût associé. Tous les coûts associés doivent avoir un code.  
+3.  Dans le champ **Nom** , saisissez le nom du coût associé.  
 4.  Sélectionnez la flèche déroulante dans le champ **Type ligne** pour spécifier l'objectif de l'objet de coûts.  
 
-    * Pour les objets de coûts de type de ligne **Total**, renseignez le champ **Total De/À**. Utilisez l'opérateur **or**, qui est une ligne verticale (**&#124;**), pour définir les plages des objets de coûts.  
-    * Pour les objets de coûts de type de ligne **Fin total**, ce champ est renseigné automatiquement lorsque vous utilisez la fonction de décalage.  
-5.  Renseignez le champ **Ordre de tri**.  
+    * Pour les objets de coûts de type de ligne **Total** , renseignez le champ **Total De/À** . Utilisez l'opérateur **or** , qui est une ligne verticale ( **&#124;** ), pour définir les plages des objets de coûts.  
+    * Pour les objets de coûts de type de ligne **Fin total** , ce champ est renseigné automatiquement lorsque vous utilisez la fonction de décalage.  
+5.  Renseignez le champ **Ordre de tri** .  
 6.  Choisissez la ligne vide suivante pour créer un nouvel objet de coûts, puis répétez les phases 2 à 5.  
-7.  Après avoir défini tous les objets de coûts, choisissez l'action **Décaler les objets de coûts**. Cliquez sur le bouton **Oui**.  
+7.  Après avoir défini tous les objets de coûts, choisissez l'action **Décaler les objets de coûts** . Cliquez sur le bouton **Oui** .  
 
 > [!IMPORTANT]  
->  Si vous avez saisi des définitions dans les champs **Total De/À** pour les objets de coûts **Fin total** avant d'exécuter la fonction de décalage, vous devez les saisir à nouveau. La fonction remplace les valeurs dans tous les champs **Fin total**.
+>  Si vous avez saisi des définitions dans les champs **Total De/À** pour les objets de coûts **Fin total** avant d'exécuter la fonction de décalage, vous devez les saisir à nouveau. La fonction remplace les valeurs dans tous les champs **Fin total** .
 
 ## <a name="defining-cost-centers-and-cost-objects-for-chart-of-accounts"></a>Définition des centres de coûts et des coûts associés pour le plan comptable
 Vous pouvez transférer automatiquement les écritures de dépenses et de revenus à partir de la comptabilité générale vers la comptabilité analytique, que ce soit pour le report grand livre ou avec un traitement en lot. Lors du transfert, [!INCLUDE[d365fin](includes/d365fin_md.md)] transfère uniquement les écritures déjà liées à un centre de coûts ou aux coûts associés. Pour préparer un transfert pertinent, assurez-vous que les centres de coûts et les coûts associés sont définis correctement.  
 
 ### <a name="defining-default-dimension-values-for-general-ledger-accounts"></a>Définition des sections analytiques par défaut pour des comptes généraux  
-Pour chaque compte général, vous pouvez définir des sections analytiques par défaut dans la table **Affectation analytique**. L'exemple suivant décrit la configuration requise pour avoir un centre de coût DÉPARTEMENT sans jamais avoir d'objet de coûts PROJET lors du report d'un compte du grand livre.  
+Pour chaque compte général, vous pouvez définir des sections analytiques par défaut dans la table **Affectation analytique** . L'exemple suivant décrit la configuration requise pour avoir un centre de coût DÉPARTEMENT sans jamais avoir d'objet de coûts PROJET lors du report d'un compte du grand livre.  
 
 |**Code axe analytique**|**Contrôle validation**|  
 |------------------------------------------|-----------------------------------------|  

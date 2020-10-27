@@ -7,18 +7,18 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: Invoicing, Office 365
-ms.date: 04/30/2020
+ms.search.keywords: Invoicing, Microsoft 365
+ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 7776cd01218f5959734173226574bb4a0d043153
-ms.sourcegitcommit: 866f0e6ed9df3397072b9df838e31c3a1f4b626d
+ms.openlocfilehash: 90f5f913fdaa96b2d4c4a057cc675e3a9edcc95c
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3333870"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3914449"
 ---
-# <a name="using-the-same-office-365-account-in-d365fin-and-microsoft-invoicing"></a>Utilisation du même compte Office 365 dans [!INCLUDE[d365fin](includes/d365fin_long_md.md)] et Microsoft Invoicing
-Lorsque vous êtes inscrit à une version d'évaluation avec [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez passer à une phase d'évaluation de 30 jours, démarrer un abonnement ou encore l'arrêter à l'aide de [!INCLUDE[d365fin](includes/d365fin_md.md)]. Dans tous les cas, vous avez peut-être à un moment donné vu quelque chose appelé **Microsoft Invoicing** et cliqué dessus. Il s'agissait d'une application qui faisait partie de ce qui est maintenant Microsoft 365 Business Standard et était anciennement connue sous le nom de Office 365 Abonnement Business Premium, donc tout le monde n'aura pas vu cette mosaïque au cours de son expérience Office 365.  
+# <a name="using-the-same-microsoft-365-account-in-d365fin-and-microsoft-invoicing"></a>Utilisation du même compte Microsoft 365 dans [!INCLUDE[d365fin](includes/d365fin_long_md.md)] et Microsoft Invoicing
+Lorsque vous êtes inscrit à une version d'évaluation avec [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez passer à une phase d'évaluation de 30 jours, démarrer un abonnement ou encore l'arrêter à l'aide de [!INCLUDE[d365fin](includes/d365fin_md.md)]. Dans tous les cas, vous avez peut-être à un moment donné vu quelque chose appelé **Microsoft Invoicing** et cliqué dessus. Il s’agissait d’une application qui faisait partie de ce qui est maintenant Microsoft 365 Business Standard et était anciennement connue sous le nom de Microsoft 365 Abonnement Business Premium, donc tout le monde n’aura pas vu cette mosaïque au cours de son expérience Microsoft 365.  
 
 Microsoft Invoicing n'est plus disponible, mais si vous devez vous connecter à Invoicing pour récupérer vos données, un message vous indiquant que vous ne pouvez pas accéder à Microsoft Invoicing car votre compte est utilisé dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
@@ -31,15 +31,15 @@ Vous devez donc vous connecter à [!INCLUDE[d365fin](includes/d365fin_md.md)] et
 
 ### <a name="to-rename-your-company"></a>Pour renommer votre compagnie
 1. Connectez-vous à [!INCLUDE[d365fin](includes/d365fin_md.md)].
-2. Dans le coin supérieur droit, sélectionnez l'icône **Paramètres** ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez **Mes paramètres**.
-3. Dans le champ **Compagnie**, sélectionnez une autre compagnie.
-4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Compagnies**, puis sélectionnez le lien associé.  
-5. Sur la page **Compagnies**, sélectionnez le bouton **Modifier la liste**.  
+2. Dans le coin supérieur droit, sélectionnez l'icône **Paramètres** ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez **Mes paramètres** .
+3. Dans le champ **Compagnie** , sélectionnez une autre compagnie.
+4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Compagnies** , puis sélectionnez le lien associé.  
+5. Sur la page **Compagnies** , sélectionnez le bouton **Modifier la liste** .  
 6. Remplacez le nom de l'entrée *Ma compagnie* par un autre nom.  
 
     Patientez quelques minutes. Nous apporterons plusieurs modifications à la base de données sous-jacente, et cette opération prendra un certain temps.
-7.  Lorsque le système est à nouveau prêt, sélectionnez le bouton **Créer une nouvelle compagnie**.  
-8.  Dans la boîte de dialogue qui s'affiche, entrez *Ma compagnie* comme nom et sélectionnez l'option **Production - Données de configuration uniquement**.  
+7.  Lorsque le système est à nouveau prêt, sélectionnez le bouton **Créer une nouvelle compagnie** .  
+8.  Dans la boîte de dialogue qui s'affiche, entrez *Ma compagnie* comme nom et sélectionnez l'option **Production - Données de configuration uniquement** .  
 
 Cette opération prend plusieurs minutes. Lorsque le processus est terminé, vous pouvez accéder à Invoicing dans le cadre de votre expérience Microsoft 365 Business Standard. Mais uniquement pour exporter des données, car l'application Facturation est obsolète.  
 

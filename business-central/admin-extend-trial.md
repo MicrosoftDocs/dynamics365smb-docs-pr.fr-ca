@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 07/01/2020
+ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 78993c655ff4912e212588269f897a39e8441924
-ms.sourcegitcommit: f9aec4a72172d9270e14e2938c5550d69508f1aa
+ms.openlocfilehash: 0af6881b98aae103a6d37ce16b06dfb316c4a9f0
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3532629"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3911540"
 ---
 # <a name="need-more-time-to-decide-whether-to-subscribe"></a>Besoin de plus de temps pour décider si vous voulez vous abonner ?
 
@@ -29,8 +29,8 @@ Le prolongement de la période d'essai par vous-même est une action unique. Vou
 
     Connectez-vous avec le compte de messagerie que vous avez utilisé lors de votre inscription à l'essai.  
 
-    Si vous vous êtes inscrit avec un compte de messagerie dans le cadre d'une [période d'essai de 30 jours pour Office 365](/microsoft-365/commerce/sign-up-for-office-365-trial), vous devez d'abord prolonger votre version d'évaluation d'Office 365 ou acheter un abonnement Office 365. Pour en savoir plus, consultez [Prolonger votre version d'évaluation pour Office 365 pour les entreprises](/microsoft-365/commerce/extend-your-trial).
-2. Dans la notification en haut de l'espace de travail, choisissez **Prolonger la version d'évaluation**.
+    Si vous vous êtes inscrit avec un compte de messagerie dans le cadre d’une [période d’essai de 30 jours pour Microsoft 365](/microsoft-365/commerce/sign-up-for-office-365-trial), vous devez d’abord prolonger votre version d’évaluation de Microsoft 365 ou acheter un abonnement Microsoft 365. Pour en savoir plus, consultez [Prolonger votre version d’évaluation pour Microsoft 365 pour les entreprises](/microsoft-365/commerce/extend-your-trial).
+2. Dans la notification en haut de l'espace de travail, choisissez **Prolonger la version d'évaluation** .
 
     Si vous avez ignoré la notification, vous devez vous déconnecter et vous reconnecter.
 
@@ -43,7 +43,7 @@ Si votre période d'essai de 30 jours a expiré, vous pouvez la prolonger vous-
 
 Si vous avez créé votre propre compagnie, déconnectez-vous et reconnectez-vous avec les informations d'identification de cette compagnie.  
 
-Si votre organisation a établi une relation de revendeur avec un partenaire, il peut se connecter à votre [!INCLUDE[prodshort](includes/prodshort.md)] en tant qu'administrateur délégué et exécuter le même guide **Prolonger la période d'évaluation**. Pour en savoir plus, consultez [Prolongement des périodes d'essai (en tant qu'administrateur)](/dynamics365/business-central/dev-itpro/administration/tenant-administration#extending-trials).  
+Si votre organisation a établi une relation de revendeur avec un partenaire, il peut se connecter à votre [!INCLUDE[prodshort](includes/prodshort.md)] en tant qu'administrateur délégué et exécuter le même guide **Prolonger la période d'évaluation** . Pour en savoir plus, consultez [Prolongement des périodes d'essai (en tant qu'administrateur)](/dynamics365/business-central/dev-itpro/administration/tenant-administration#extending-trials).  
 
 Cependant, après cette deuxième extension qui a donné à votre organisation jusqu'à 90 jours d'essai, vous devez soit vous abonner à [!INCLUDE[prodshort](includes/prodshort.md)] ou abandonner [!INCLUDE[prodshort](includes/prodshort.md)]. Si vous décidez de ne pas continuer, nous vous recommandons d'exporter toutes les données sur lesquelles vous comptez dans votre entreprise.
 

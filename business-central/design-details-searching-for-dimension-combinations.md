@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 962f7762db6cae08b2ac7080898df629015d79e7
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: c8fb1026c871efc1ce61b26e587399f91bdf718f
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3787201"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3910915"
 ---
 # <a name="design-details-searching-for-dimension-combinations"></a>Détails de conception : recherche des combinaisons de dimensions
 Lorsque vous fermez une page après avoir modifié un ensemble de dimensions, [!INCLUDE[d365fin](includes/d365fin_md.md)] évalue si l'ensemble de dimensions modifié existe. Si l'ensemble n'existe pas, un nouvel ensemble est créé et le code de combinaisons de dimensions est retourné.  
@@ -48,7 +48,7 @@ Lorsque vous fermez une page après avoir modifié un ensemble de dimensions, [!
  ![Exemple de structure arborescente des dimensions dans NAV 2013](media/nav2013_dimension_tree_example2.png "Exemple de structure arborescente des dimensions dans NAV 2013")  
 
 ### <a name="finding-dimension-set-id"></a>Recherche du code ensemble de dimensions  
- Au niveau conceptuel, **Code parent**, **Dimension** et **Valeur de dimension**, dans l'arborescence de recherche, sont combinés et sont utilisés comme clé primaire, car [!INCLUDE[d365fin](includes/d365fin_md.md)] parcourt l'arborescence dans le même ordre que les écritures dimension. La fonction GET (enregistrement) est utilisée pour rechercher le code de l'ensemble de dimensions L'exemple de code suivant indique comment trouver le code d'ensemble de dimensions lorsqu'il existe trois valeurs de dimension.  
+ Au niveau conceptuel, **Code parent** , **Dimension** et **Valeur de dimension** , dans l'arborescence de recherche, sont combinés et sont utilisés comme clé primaire, car [!INCLUDE[d365fin](includes/d365fin_md.md)] parcourt l'arborescence dans le même ordre que les écritures dimension. La fonction GET (enregistrement) est utilisée pour rechercher le code de l'ensemble de dimensions L'exemple de code suivant indique comment trouver le code d'ensemble de dimensions lorsqu'il existe trois valeurs de dimension.  
 
 ```  
 DimSet."Parent ID" := 0;  // 'root'  
@@ -60,7 +60,7 @@ EXIT(DimSet.ID);
 
 ```  
 
-Toutefois, pour préserver la capacité de [!INCLUDE[d365fin](includes/d365fin_md.md)] à renommer à la fois une dimension et une valeur de dimension, la table 349 **Valeur de dimension** est étendue avec un champ d'entier **Code valeur de dimension**. Ce tableau convertit la paire de champs **Dimension** et **Valeur de dimension** en une valeur d'entier. Lorsque vous renommez la dimension et la valeur de dimension, la valeur d'entier n'est pas modifiée.  
+Toutefois, pour préserver la capacité de [!INCLUDE[d365fin](includes/d365fin_md.md)] à renommer à la fois une dimension et une valeur de dimension, la table 349 **Valeur de dimension** est étendue avec un champ d'entier **Code valeur de dimension** . Ce tableau convertit la paire de champs **Dimension** et **Valeur de dimension** en une valeur d'entier. Lorsque vous renommez la dimension et la valeur de dimension, la valeur d'entier n'est pas modifiée.  
 
 ```  
 DimSet."Parent ID" := 0;  // 'root'  

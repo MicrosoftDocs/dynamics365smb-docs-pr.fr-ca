@@ -7,13 +7,13 @@ ms.custom: na
 ms.reviewer: na
 ms.service: dynamics365-business-central
 ms.topic: article
-ms.date: 02/03/2020
-ms.openlocfilehash: 5f914904aaa1ec568b396a830ebc18a0fe4e40c1
-ms.sourcegitcommit: 79d6d270325f1cc88bd4e9a273f9ff859ceadcbc
+ms.date: 10/01/2020
+ms.openlocfilehash: 9148217400da88506e41b460157fe00be596a7c5
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3693034"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3911689"
 ---
 # <a name="handling-missing-option-values"></a>Gestion des valeurs option manquantes
 [!INCLUDE[d365fin](includes/cds_long_md.md)] contient seulement trois champs d'ensembles d'options qui contiennent des valeurs option que vous pouvez mapper à des champs [!INCLUDE[d365fin](includes/d365fin_md.md)] de type Option<!-- Option type, not enum? @Onat can you vertify this? --> pour la synchronisation automatique. Lors de la synchronisation, les options non mappées sont ignorées et les options manquantes sont ajoutées à la table [!INCLUDE[d365fin](includes/d365fin_md.md)] associée et à la table système **Mappage option CDS** pour une gestion manuelle ultérieure. Par exemple, en ajoutant les options manquantes dans l'un ou l'autre des produits, puis en mettant à jour le mappage. Cette section décrit comment cela fonctionne.
@@ -36,7 +36,7 @@ La page **Mappage de table d'intégration** contient trois mappages pour les cha
 | Agent de livraison : PLEICHARGE   | 6            | Pleine charge            |
 | Agent de livraison : APPELLERA   | 7            | Appellera            |
 
-Le contenu de la page **Mappage option CDS** est basé sur des valeurs d'énumération dans la table **Compte CDS**. Dans [!INCLUDE[d365fin](includes/cds_long_md.md)], les champs suivants de l'entité Compte sont mappés aux champs des enregistrements client et fournisseur :
+Le contenu de la page **Mappage option CDS** est basé sur des valeurs d'énumération dans la table **Compte CDS** . Dans [!INCLUDE[d365fin](includes/cds_long_md.md)], les champs suivants de l'entité Compte sont mappés aux champs des enregistrements client et fournisseur :
 
 - **Adresse 1 : conditions de transport** du type de données Énumération, où les valeurs sont définies comme suit :
 
@@ -109,7 +109,7 @@ enumextension 50100 "CDS Payment Terms Code Extension" extends "CDS Payment Term
 ### <a name="update-d365fin-option-mapping"></a>Mettre à jour le mappage option [!INCLUDE[d365fin](includes/cds_long_md.md)]
 Vous pouvez maintenant recréer le mappage entre les options [!INCLUDE[d365fin](includes/cds_long_md.md)] et les enregistrements [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
-Sur la page **Mappage de table d'intégration**, choisissez la ligne pour le mappage **Modalités de paiement**, puis l'action **Synchroniser les enregistrements modifiés**. La page **Mappage option CDS** est mise à jour avec les enregistrements supplémentaires ci-dessous.
+Sur la page **Mappage de table d'intégration** , choisissez la ligne pour le mappage **Modalités de paiement** , puis l'action **Synchroniser les enregistrements modifiés** . La page **Mappage option CDS** est mise à jour avec les enregistrements supplémentaires ci-dessous.
 
 |         Enregistrement                 | Valeur option   | Légende valeur option |
 |--------------------------------|----------------|----------------------|

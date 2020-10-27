@@ -9,19 +9,19 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 53e0e97ec0701fc83f1a3f0d084430efda064962
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 2ffba43c94a02a8bf31a09f4705b0f24312e3c17
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3781295"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3912056"
 ---
 # <a name="posting-documents-and-journals"></a>Report des documents et des journaux
 Le report est une tâche de comptabilité qui consiste à enregistrer des transactions commerciales dans les divers livres de la compagnie.
 
-Quasiment chaque document et feuille de [!INCLUDE[d365fin](includes/d365fin_md.md)] propose un groupe **Validation** à partir duquel vous pouvez choisir entre différentes actions de validation, par exemple **Valider**, **Aperçu compta.**, **Valider et envoyer** et **Valider et envoyer par e-mail**.
+Quasiment chaque document et feuille de [!INCLUDE[d365fin](includes/d365fin_md.md)] propose un groupe **Validation** à partir duquel vous pouvez choisir entre différentes actions de validation, par exemple **Valider** , **Aperçu compta.** , **Valider et envoyer** et **Valider et envoyer par e-mail** .
 
 Le tableau suivant décrit les tâches associées, et inclut des liens vers les rubriques qui les décrivent.
 

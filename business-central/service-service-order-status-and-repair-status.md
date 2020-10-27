@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: ed022ead8151d7a17269fd0282fa54cc9acd34dc
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 638b1f560dc28374e0e8d5afbc94f6ef8d416c83
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3777526"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3913156"
 ---
 # <a name="service-order-status-and-repair-status"></a>État commande service et état réparation
 Le champ **État** de la page **Commande service** et l'état de réparation de l'article de service, qui est représenté par le champ **Code d'état de réparation** sur la page **Commande service** ont une certaine relation dans le module Service management. L'état commande service reflète l'état réparation de tous les articles de service de la commande service.  
@@ -28,19 +28,19 @@ Le champ **État** de la page **Commande service** et l'état de réparation de 
 * L'état commande service auquel chaque état réparation est lié. Pour plus d'informations, voir Statut commande service.  
 * Le niveau de priorité de chaque option état commande service. Pour plus d'informations, voir Priorité.  
 
- Lorsque vous convertissez un devis service en commande service, l'état réparation de chaque article de service de la commande est modifié à **Initial** et le statut de la commande service passe à **Suspendu**.  
+ Lorsque vous convertissez un devis service en commande service, l'état réparation de chaque article de service de la commande est modifié à **Initial** et le statut de la commande service passe à **Suspendu** .  
 
 ## <a name="specifying-service-order-status-for-repair-status"></a>Spécification de l'état commande service pour l'état réparation  
-Chaque état réparation est lié à un état commande service précis. Les options de ce statut commande service sont **Suspendu**, **En cours**, **En attente** et **Terminé**. Neuf options d'état réparation sont disponibles : **Initial**, **En cours**, **Expertisé**, **Service en partie réalisé**, **Devis terminé**, **Attente réponse client**, **Pièce de rechange commandée**, **Pièce de rechange reçue** et **Terminé**.  
+Chaque état réparation est lié à un état commande service précis. Les options de ce statut commande service sont **Suspendu** , **En cours** , **En attente** et **Terminé** . Neuf options d'état réparation sont disponibles : **Initial** , **En cours** , **Expertisé** , **Service en partie réalisé** , **Devis terminé** , **Attente réponse client** , **Pièce de rechange commandée** , **Pièce de rechange reçue** et **Terminé** .  
 
 ### <a name="pending"></a>Suspendu  
-Le statut commande service **Suspendu** indique que le service peut démarrer ou continuer à n'importe quel moment. Pour cette raison, les quatre options d'état réparation **Initial**, **Expertisé**, **Service en partie réalisé** et **Pièce de rechange reçue** peuvent toutes être liées à ce statut commande service.  
+Le statut commande service **Suspendu** indique que le service peut démarrer ou continuer à n'importe quel moment. Pour cette raison, les quatre options d'état réparation **Initial** , **Expertisé** , **Service en partie réalisé** et **Pièce de rechange reçue** peuvent toutes être liées à ce statut commande service.  
 
 ### <a name="in-process"></a>En cours  
 Le statut commande service **En cours** indique que le service est en cours. Par conséquent, les deux options d'état de réparation **En cours** et **Pièce de rechange commandée** peuvent être liées à ce statut commande service. Si vous liez le statut **Pièce de rechange commandée** au statut commande service **En cours,** vous devez aussi lier le statut **Pièce de rechange reçue** à ce statut commande service.  
 
 ### <a name="on-hold"></a>En attente  
-Le statut commande service **En attente** indique que le service est momentanément en attente, parce que vous attendez une réponse du client ou des pièces de rechange pour que le service puisse commencer. Pour cette raison, les trois options d'état réparation **Devis terminé**, **Pièce de rechange commandée** et **Attente réponse client** peuvent toutes être liées à ce statut commande service.  
+Le statut commande service **En attente** indique que le service est momentanément en attente, parce que vous attendez une réponse du client ou des pièces de rechange pour que le service puisse commencer. Pour cette raison, les trois options d'état réparation **Devis terminé** , **Pièce de rechange commandée** et **Attente réponse client** peuvent toutes être liées à ce statut commande service.  
 
 ### <a name="finished"></a>Terminé  
 Le statut commande service **Terminé** indique que la maintenance est terminée. Pour cette raison, l'état réparation **Terminé** est lié à ce statut.  
@@ -58,7 +58,7 @@ Voici ci-après un exemple d'affectation de niveau de priorité :
 * En attente - Moyenne  
 * Terminé - Basse  
 
-Par exemple, si un article de service présente l'état réparation **Initial** (lié au statut commande service **Suspendu**), qu'un autre présente le statut **En cours** (lié au statut commande service **En cours**) et que le troisième présente le statut **Pièce de rechange commandée** (lié au statut commande service **En attente**), le statut commande service est **En cours** car il correspond au niveau de priorité le plus élevé.  
+Par exemple, si un article de service présente l'état réparation **Initial** (lié au statut commande service **Suspendu** ), qu'un autre présente le statut **En cours** (lié au statut commande service **En cours** ) et que le troisième présente le statut **Pièce de rechange commandée** (lié au statut commande service **En attente** ), le statut commande service est **En cours** car il correspond au niveau de priorité le plus élevé.  
 
 ## <a name="see-also"></a>Voir aussi  
 [Configurer les états des commandes service et des réparations](service-order-repair-status.md)  

@@ -1,6 +1,6 @@
 ---
-title: 'Pratiques de configuration recommandées : mode évaluation coût | Microsoft Docs'
-description: Le champ Mode évaluation stock de la fiche article spécifie la manière dont le flux des coûts de l'article est enregistré et si une valeur réelle ou budgétée est capitalisée et utilisée dans le calcul des coûts.
+title: 'Configuration de meilleures pratiques : mode évaluation stock'
+description: Le champ Mode évaluation stock de la fiche article spécifie la manière dont le flux des coûts de l’article est enregistré et si une valeur réelle ou budgétée est capitalisée et utilisée dans le calcul des coûts.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -8,28 +8,29 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 67f5b167ff3ba1bb29aa08abcd96cc926a5538c0
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: bf342b4cfcc59f51c2aae8ca6e36f25d7f3f5e35
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3789460"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3912974"
 ---
 # <a name="setup-best-practices-costing-method"></a>Configuration de meilleures pratiques : mode évaluation stock
-Le champ **Mode évaluation stock** de la fiche article spécifie la manière dont le flux des coûts de l'article est enregistré et si une valeur réelle ou budgétée est capitalisée et utilisée dans le calcul des coûts.  
+
+Le champ **Mode évaluation stock** de la fiche article spécifie la manière dont le flux des coûts de l’article est enregistré et si une valeur réelle ou budgétée est capitalisée et utilisée dans le calcul des coûts.  
 
  La définition du mode d'évaluation coût approprié en fonction du type d'article et de l'environnement d'entreprise est importante pour assurer des inventaires économiques.  
 
- Le tableau suivant fournit les meilleures pratiques sur la procédure de configuration du champ **Mode évaluation stock**. Pour plus d'informations, [Détails de conception : modes évaluation stock](design-details-costing-methods.md).  
+ Le tableau suivant fournit les meilleures pratiques sur la procédure de configuration du champ **Mode évaluation stock** . Pour plus d'informations, [Détails de conception : modes évaluation stock](design-details-costing-methods.md).  
 
 |Option de configuration|Meilleure pratique|Commentaire|  
 |------------------|-------------------|-------------|  
 |FIFO|Utilisez ceci lorsque le coût du produit est stable.<br /><br /> Utilisez ceci pour les articles à durée de conservation limitée, car les produits les plus anciens doivent être vendus avant que leur date limite de vente ne soit dépassée.|Le coût unitaire d'un article est la valeur réelle de toute réception de l'article, sélectionnée par la règle FIFO.<br /><br /> Dans l'évaluation de l'inventaire, nous considérons que les premiers articles placés dans l'inventaire sont vendus en premier. **Note :** lorsque les prix augmentent, le bilan indique une valeur plus élevée. Cela signifie que les impôts à payer augmentent, mais que les cotes de crédit et la capacité à emprunter de la trésorerie s'améliorent.|  
 |LIFO|Utilisez ceci lorsque les niveaux des inventaires sont maintenus ou augmentés de façon continue dans le temps.|Le coût unitaire d'un article est la valeur réelle de toute réception de l'article, sélectionnée par la règle LIFO.<br /><br /> Dans l'évaluation de l'inventaire, nous considérons que les derniers articles placés dans l'inventaire sont vendus en premier. **Note :** lorsque les prix augmentent, la valeur du compte de gestion diminue. Cela signifie que les impôts à payer diminuent, mais que la capacité à emprunter de la trésorerie se détériore. **Important :** interdit dans de nombreux pays/régions, car cela peut être utilisé pour réduire le profit.|  
-|Moyenne|Utilisez ceci lorsque le coût du produit n'est pas stable.<br /><br /> Utilisez ceci lorsque les inventaire sont compilés ou mélangés ensemble et ne peuvent pas être différenciés (par exemple, des produits chimiques).|Le coût unitaire d'un article est le coût exact auquel l'unité particulière a été reçue.|  
-|Spécifique|Utilisez ceci pour la fabrication ou la transaction d'articles facilement identifiables ayant des coûts unitaires assez élevés.<br /><br /> Utiliser pour des articles soumis à une régulation.<br /><br /> Utilisez ceci pour les articles ayant des numéros de série.|Le coût unitaire d'un article est calculé comme le coût unitaire moyen à chaque moment après un achat.<br /><br /> Pour l'évaluation de l'inventaire, nous considérons que tous les inventaires sont vendus simultanément.|  
+|Moyenne|Utilisez ceci lorsque le coût du produit n'est pas stable.<br /><br /> Utilisez ceci lorsque les inventaire sont compilés ou mélangés ensemble et ne peuvent pas être différenciés (par exemple, des produits chimiques).|Le coût unitaire d'un article est calculé comme le coût unitaire moyen à chaque moment après un achat.<br /><br /> Pour l’évaluation de l'inventaire, on part de l’hypothèse que tous les inventaires sont vendus simultanément.|
+|Spécifique|Utilisez ceci pour la fabrication ou la transaction d'articles facilement identifiables ayant des coûts unitaires assez élevés.<br /><br /> Utiliser pour des articles soumis à une régulation.<br /><br /> Utilisez ceci pour les articles ayant des numéros de série.|Le coût unitaire d'un article est le coût exact auquel l'unité particulière a été reçue.|
 |Standard|Utilisez ceci lorsque le contrôle des coûts est primordial.<br /><br /> Utilisez ceci pour la fabrication répétitive, afin d'évaluer les coûts matière directs, les frais de main-d'œuvre directs, et les frais généraux matière.<br /><br /> Utilisez ceci lorsqu'il existe une discipline et du personnel pour le maintien des standards.|Le coût unitaire d'un article est prédéfini sur la base d'une estimation.<br /><br /> Lorsque le coût réel est réalisé plus tard, le coût standard doit être ajusté au coût réel à l'aide des valeurs d'écart.|  
 
 ## <a name="see-also"></a>Voir aussi  

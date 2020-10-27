@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 511281b5f4d8c7437324ed123a5a5a62bd4cc51d
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 9e1cf9d530c8af95373cfbdef8a3f6822cbba938
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3783671"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3915794"
 ---
 # <a name="create-custom-company-configuration-packages"></a>Créer des packages de configuration de compagnie personnalisés
 À mesure que vous développez votre entreprise, vous êtes susceptible d'utiliser un ensemble de types de compagnie pour la plupart de vos clients. Vous pouvez rationaliser votre processus d’implémentation en transformant ces types en packages de configuration de compagnie que vous pouvez réutiliser.  
@@ -37,7 +37,7 @@ Autrement, vous pouvez créer un colis qui inclut les tables qui définissent la
 -   Configuration report de taxe  
 -   Configuration du report d'inventaire  
 
-Pour visualiser la liste complète des tables de configuration, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration manuelle**, puis sélectionnez le lien associé.  
+Pour visualiser la liste complète des tables de configuration, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration manuelle** , puis sélectionnez le lien associé.  
 
 > [!IMPORTANT]
 > Soyez prudent si vous choisissez des tables ou des champs qui portent le même nom temporel mais sont différenciés par des caractères spéciaux, tels que %, &, <, >, (, et ). Par exemple, la table « XYZ » peut contenir les champs « Champ 1 » et « Champ 1 % ».
@@ -48,7 +48,7 @@ Pour visualiser la liste complète des tables de configuration, choisissez l'ic�
 1.  Créer une nouvelle compagnie. Pour plus d'informations, voir [Création de compagnies dans Business Central](about-new-company.md).  
 3.  Configurez la nouvelle compagnie en tenant compte de vos besoins. Renseignez toutes les tables de configuration nécessaires.  
 4.  Ouvrir la nouvelle compagnie.
-5. Ouvrir la page **Feuille configuration**.  
+5. Ouvrir la page **Feuille configuration** .  
 6.  Ajoutez les tables que vous souhaitez transférer vers une autre compagnie à la feuille. Affecter des lignes feuille au colis.  
 7.  Créez un questionnaire pour les tables de configuration les plus souvent utilisées.  
 8.  Créez des modèles de configuration pour faciliter la création de données de base, telles que les clients ou les articles.  

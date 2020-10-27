@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/23/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 85a5bbd3c1920aaac3e0560737f921c7518d1d32
-ms.sourcegitcommit: 63102669366eb26f9c32729848170bc2e5c4d6ae
+ms.openlocfilehash: 57284dc738ba35c9865bd25f9c180827d4c59c94
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3503604"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3913381"
 ---
 # <a name="create-prepayment-invoices"></a>Créer des factures de paiement anticipé
 
@@ -29,36 +29,36 @@ La procédure suivante décrit comment facturer un paiement anticipé pour un do
 
 ## <a name="to-create-a-prepayment-invoice"></a>Pour créer une facture paiement anticipé
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente** , puis sélectionnez le lien associé.  
 2. Créez un document de vente pour le client approprié. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).  
 
-    Sur le raccourci **Paiement anticipé**, le champ **% paiement anticipé** spécifie le pourcentage à utiliser pour calculer le montant paiement anticipé. Si un pourcentage de paiement anticipé par défaut figure sur la fiche client, le champ est renseigné automatiquement. Vous pouvez modifier le pourcentage. <!--This percentage is applied to lines where the item on that line does not already specify a prepayment percentage. The prepayment percentage is only copied from the header to lines that do not copy the default prepayment percentage from the item.-->  
+    Sur le raccourci **Paiement anticipé** , le champ **% paiement anticipé** spécifie le pourcentage à utiliser pour calculer le montant paiement anticipé. Si un pourcentage de paiement anticipé par défaut figure sur la fiche client, le champ est renseigné automatiquement. Vous pouvez modifier le pourcentage. <!--This percentage is applied to lines where the item on that line does not already specify a prepayment percentage. The prepayment percentage is only copied from the header to lines that do not copy the default prepayment percentage from the item.-->  
 
     Choisissez le champ **Compresser paiement anticipé** si vous souhaitez créer des lignes sur la facture de paiement anticipé qui combinent des lignes du document de vente si :  
 
     - Elles ont le même compte du grand livre pour les paiements anticipés,comme déterminé par la configuration de report générale.  
     - Elles sont les mêmes dimensions.  
 
-    Si vous souhaitez spécifier une facture paiement anticipé avec une ligne pour chaque ligne document de vente à laquelle un pourcentage de paiement anticipé est associé, alors ne choisissez pas le champ **Compresser paiement anticipé**.  
+    Si vous souhaitez spécifier une facture paiement anticipé avec une ligne pour chaque ligne document de vente à laquelle un pourcentage de paiement anticipé est associé, alors ne choisissez pas le champ **Compresser paiement anticipé** .  
 
-    La date d'échéance du paiement anticipé est calculée automatiquement en fonction de la valeur du **Code modalités de paiement anticipé**.
+    La date d'échéance du paiement anticipé est calculée automatiquement en fonction de la valeur du **Code modalités de paiement anticipé** .
 
 3. Renseignez les lignes vente.  
 
     Si vous avez spécifié un pourcentage paiement anticipé par défaut soit pour le client, soit sur le raccourci **Paiement anticipé** sur ce document, cette valeur est copiée sur chaque ligne. Vous pouvez modifier le contenu du champ **% acompte** sur la ligne.  
 
-4. Pour visualiser le montant du paiement anticipé total, choisissez l'action **Statistiques**.
+4. Pour visualiser le montant du paiement anticipé total, choisissez l'action **Statistiques** .
 
-    Pour ajuster le montant de paiement anticipé total de la commande, vous pouvez modifier le contenu du champ **Montant paiement anticipé** de la page **Statistiques document de vente**.  
+    Pour ajuster le montant de paiement anticipé total de la commande, vous pouvez modifier le contenu du champ **Montant paiement anticipé** de la page **Statistiques document de vente** .  
 
     Si le champ **Prix TVA comprise** est sélectionné, le champ **Montant acompte TTC** est modifiable.  
 
-    Si vous modifiez la valeur du champ **Montant acompte**, le montant est réparti de façon proportionnelle entre toutes les lignes, à l'exception de celles qui contiennent la valeur **0** dans le champ **% acompte**.  
+    Si vous modifiez la valeur du champ **Montant acompte** , le montant est réparti de façon proportionnelle entre toutes les lignes, à l'exception de celles qui contiennent la valeur **0** dans le champ **% acompte** .  
 
-5. Pour effectuer un rapport de test avant de reporter la facture de paiement anticipé, sélectionnez l'action **Paiement anticipé**, puis choisissez **Rapport de test de paiement anticipé**.  
-6. Pour reporter la facture de paiement anticipé, sélectionnez l'action **Paiement anticipé**, puis l'action **Reporter facture paiement anticipé**.  
+5. Pour effectuer un rapport de test avant de reporter la facture de paiement anticipé, sélectionnez l'action **Paiement anticipé** , puis choisissez **Rapport de test de paiement anticipé** .  
+6. Pour reporter la facture de paiement anticipé, sélectionnez l'action **Paiement anticipé** , puis l'action **Reporter facture paiement anticipé** .  
 
-    Pour reporter et imprimer la facture paiement anticipé, choisissez l'action **Reporter et imprimer facture paiement anticipé**.  
+    Pour reporter et imprimer la facture paiement anticipé, choisissez l'action **Reporter et imprimer facture paiement anticipé** .  
 
 Vous pouvez émettre des factures paiement anticipé supplémentaires pour la commande. Pour ce faire, augmentez le montant du paiement anticipé sur une ou plusieurs lignes, ajustez la date document si nécessaire, puis reportez la facture paiement anticipé. Une nouvelle facture est créée pour la différence entre les montants de paiement anticipé facturés jusqu'ici et le nouveau montant de paiement anticipé.  
 

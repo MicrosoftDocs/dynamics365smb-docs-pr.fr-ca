@@ -9,14 +9,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize, import, implement
 ms.reviewer: edupont
-ms.date: 07/13/2020
+ms.date: 10/01/2020
 ms.author: jenolson
-ms.openlocfilehash: 712950571d5b45680aae46bccfd8401b999993cd
-ms.sourcegitcommit: 89d0ea903f61ab0628f99329c762d9f1619c49a7
+ms.openlocfilehash: dde6797139f383948d72c52ca1d05298a280087b
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "3577271"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3915220"
 ---
 # <a name="intelligent-cloud-extensions-for-cloud-migration"></a>Extensions Nuage intelligent pour la migration vers le nuage
 
@@ -28,18 +28,18 @@ Pour en savoir plus, voir la rubrique [Migration des données locales vers Busin
 
 ## <a name="business-central-on-premises"></a>Business Central sur site
 
-Si vous utilisez un déploiement sur site de [!INCLUDE[prodshort](includes/prodshort.md)], obtenez les extensions **Base du nuage intelligent** et **Nuage intelligent Business Central**, puis exécutez le guide de configuration assistée **Configuration de la migration nuage**.  
+Si vous utilisez un déploiement sur site de [!INCLUDE[prodshort](includes/prodshort.md)], obtenez les extensions **Base du nuage intelligent** et **Nuage intelligent Business Central** , puis exécutez le guide de configuration assistée **Configuration de la migration nuage** .  
 
 ## <a name="dynamics-gp"></a>Dynamics GP
 
-Si vous utilisez Dynamics GP, obtenez les extensions **Base du nuage intelligent** et **Nuage intelligent Dynamics GP**, puis exécutez le guide de configuration assistée **Configuration de la migration nuage**.  
+Si vous utilisez Dynamics GP, obtenez les extensions **Base du nuage intelligent** et **Nuage intelligent Dynamics GP** , puis exécutez le guide de configuration assistée **Configuration de la migration nuage** .  
 
 > [!IMPORTANT]
 > La migration à partir de Dynamics GP à l'aide du guide de configuration assistée **Configuration de la migration nuage** n'est actuellement prise en charge que pour les marchés suivants : États-Unis, Canada, Royaume-Uni.
 
 ## <a name="dynamics-sl"></a>Dynamics SL
 
-Si vous utilisez Dynamics SL, obtenez l'extension **Base du nuage intelligent**, l'extension **Nuage intelligent Microsoft Dynamics SL** et l'extension **SmartLists historiques Microsoft Dynamics SL**, puis exécutez le guide de configuration assistée **Configuration de la migration nuage**.  
+Si vous utilisez Dynamics SL, obtenez l'extension **Base du nuage intelligent** , l'extension **Nuage intelligent Microsoft Dynamics SL** et l'extension **SmartLists historiques Microsoft Dynamics SL** , puis exécutez le guide de configuration assistée **Configuration de la migration nuage** .  
 
 ## <a name="see-also"></a>Voir aussi
 

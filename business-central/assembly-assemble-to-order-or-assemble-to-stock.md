@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: kit, kitting
-ms.date: 07/23/2020
+ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: a5fc9b13e28b51d776fad6d02feae4624b756c4c
-ms.sourcegitcommit: 7b5c927ea9a59329daf1b60633b8290b552d6531
+ms.openlocfilehash: 746aa6c0146205cbc3f3ed1796b084825bbfdbdf
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3617946"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3915720"
 ---
 # <a name="understanding-assemble-to-order-and-assemble-to-stock"></a>Description des processus Assembler pour commande et Assembler pour stock
 Les éléments d'assemblage peuvent être fournis dans le cadre des deux processus suivants :  
@@ -41,7 +41,7 @@ Lorsque vous entrez un article à assembler pour commande sur une ligne vente, u
 > [!NOTE]  
 >  Bien que cette tâche ne fasse pas partie du processus par défaut, vous pouvez vendre des quantités d'inventaire avec les quantités à assembler pour commande. Pour plus d’informations, voir [Vente d'articles d'inventaire dans des flux à assembler pour commande](assembly-how-to-sell-inventory-items-in-assemble-to-order-flows.md).  
 
- Pour activer ce processus, il faut que le champ **Politique d'assemblage** de la fiche article contienne la valeur **Assembler pour commande**.  
+ Pour activer ce processus, il faut que le champ **Politique d'assemblage** de la fiche article contienne la valeur **Assembler pour commande** .  
 
 ## <a name="assemble-to-stock"></a>Assembler pour inventaire  
  En règle générale, vous utilisez *l'assemblage pour stock* pour les articles que vous souhaitez assembler avant les ventes (par exemple, pour préparer des articles pour une campagne de kit et les conserver dans le stock jusqu'à ce qu'ils soient commandés). Ces articles sont généralement des articles standard tels que les kits emballés qui ne peuvent pas être personnalisés en fonction des demandes des clients.  
@@ -53,7 +53,7 @@ Lorsque vous entrez un article à assembler pour commande sur une ligne vente, u
 > [!NOTE]  
 >  Bien que cette tâche ne fasse pas partie du processus par défaut, vous pouvez assembler un article pour commande même s'il est configuré pour être assemblé pour stock. Pour plus d’informations, voir [Vente simultanée d'articles à assembler pour commande et d'articles d'inventaire](assembly-how-to-sell-assemble-to-order-items-and-inventory-items-together.md).  
 
- Pour activer ce processus, il faut que le champ **Politique d'assemblage** de la fiche article contienne la valeur **Assembler pour stock**.  
+ Pour activer ce processus, il faut que le champ **Politique d'assemblage** de la fiche article contienne la valeur **Assembler pour stock** .  
 
 ## <a name="combination-scenarios"></a>Scénarios de combinaison  
  Un principe général de la gestion d'assemblage stipule qu'une fois regroupées sur une ligne document de vente, les quantités assembler pour commande doivent être livrées avant les quantités inventaire.  
@@ -64,9 +64,9 @@ Lorsque vous entrez un article à assembler pour commande sur une ligne vente, u
 
  Si toute la quantité de la ligne vente doit être assemblée en vue de la commande et de l’expédition, la valeur du champ **Qté. à expédier** est copiée dans le champ **Quantité à assembler** de l’ordre d’assemblage lié lorsque vous modifiez la quantité à expédier. Ceci assure que la quantité livrée est entièrement approvisionnée par la quantité à assembler pour commande.  
 
- Toutefois, dans les scénarios de combinaison, la valeur du champ **Qté. à expédier** n'est pas copiée dans le champ **Quantité à assembler** de l'en\-tête d'ordre d'assemblage. C'est une valeur par défaut qui est insérée dans le champ **Quantité à assembler**. Cette valeur est calculée à partir du champ **Qté. à livrer** en fonction d'une règle prédéfinie qui garantit la livraison prioritaire des quantités à assembler pour commande.  
+ Toutefois, dans les scénarios de combinaison, la valeur du champ **Qté. à expédier** n'est pas copiée dans le champ **Quantité à assembler** de l'en\-tête d'ordre d'assemblage. C'est une valeur par défaut qui est insérée dans le champ **Quantité à assembler** . Cette valeur est calculée à partir du champ **Qté. à livrer** en fonction d'une règle prédéfinie qui garantit la livraison prioritaire des quantités à assembler pour commande.  
 
- Si vous voulez utiliser une valeur autre que celle par défaut, par exemple, parce que vous souhaitez uniquement assembler une quantité supérieure ou inférieure à celle indiquée dans le champ **Qté à livrer**, vous pouvez modifier le champ **Quantité à assembler**, mais uniquement dans le cadre de règles prédéfinies, comme illustré ci-dessous.  
+ Si vous voulez utiliser une valeur autre que celle par défaut, par exemple, parce que vous souhaitez uniquement assembler une quantité supérieure ou inférieure à celle indiquée dans le champ **Qté à livrer** , vous pouvez modifier le champ **Quantité à assembler** , mais uniquement dans le cadre de règles prédéfinies, comme illustré ci-dessous.  
 
  Par exemple, la raison pour laquelle vous voudriez modifier la quantité à assembler peut être liée au souhait de reporter partiellement la livraison des quantités en inventaire avant que le résultat d'assemblage ne puisse être livré.  
 

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: a014a3c75ab0e0b2f27b519287651bf55a572157
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: a0d0e5f18acf9830fe77a87f9e1c8982da47c257
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3789285"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3913131"
 ---
 # <a name="service-posting"></a>Report de service
 La fonctionnalité de report de service vous permet de traiter vos documents efficacement et de maintenir une stratégie de service client fructueuse. Vous pouvez créer et mettre à jour des documents reportés, et créer des écritures dans le module Service et dans d'autres modules pour garantir une mise à jour correcte.  
@@ -23,7 +23,7 @@ La fonctionnalité de report de service vous permet de traiter vos documents eff
 > [!NOTE]  
 >  La section suivante décrit le report de service indépendamment de la façon dont les articles sont gérés physiquement dans l'entrepôt.  
 >   
->  Dans un emplacement qui n'est pas configuré pour exiger une gestion d'entrepôt, vous effectuez des actions de report directement sur la page **Lignes service**. Dans les emplacements qui impliquent une gestion d'entrepôt, les tâches de report décrites, à l'exception des tâches Livrer et Consommer, sont effectuées indirectement au moyen de différentes fonctions de livraison de l'entrepôt, selon la configuration. Pour plus d'informations, voir [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).  
+>  Dans un emplacement qui n'est pas configuré pour exiger une gestion d'entrepôt, vous effectuez des actions de report directement sur la page **Lignes service** . Dans les emplacements qui impliquent une gestion d'entrepôt, les tâches de report décrites, à l'exception des tâches Livrer et Consommer, sont effectuées indirectement au moyen de différentes fonctions de livraison de l'entrepôt, selon la configuration. Pour plus d'informations, voir [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).  
 
 ## <a name="ship"></a>Livrer  
 La fonction Livraison vous permet d'enregistrer les articles et le temps appropriés entrés dans les lignes d'une commande service après que vous ayez exécuté le service. Une expédition enregistrée est crée et des mises à jour interviennent dans le module Stock, ainsi que d'autres modules dans [!INCLUDE[d365fin](includes/d365fin_md.md)] afin d'indiquer que les articles ont été prélevés sur le stock et envoyés au client. Plus particulièrement, les écritures du grand livre d'articles, du livre garantie, les écritures valeur et les écritures service sont générées.  
@@ -31,7 +31,7 @@ La fonction Livraison vous permet d'enregistrer les articles et le temps appropr
 Si l'emplacement est configuré pour exiger la gestion d'entrepôt, la livraison et le déplacement d'articles de ligne service s'exécutent de la même manière que pour d'autres documents source. La seule différence est que les articles de la ligne service peuvent être consommés en externe ou en interne, ce qui nécessite deux fonctions de libération différentes.
 
 ## <a name="invoice"></a>Facturer  
-Vous devez utiliser l'option de facturation pour émettre une facture à l'adresse du client auquel vous voulez facturer le service. Généralement, il s'agit de la différence entre la quantité expédiée enregistrée par la fonction de **validation de l'expédition** et la quantité consommée enregistrée par la fonction de **validation de la consommation** sujette à facturation. Vous ne pouvez pas facturer ce qui n'a pas été livré. Lors de l'exécution de la fonction de **validation de la facture**, une facture service validée est crée et les documents validés sont mis à jour avant de les rendre cohérents avec les quantités qui sont contenues dans la facture émise. Comme pour les autres procédures de report, les écritures appropriées, qui incluent les écritures, sont générées.  
+Vous devez utiliser l'option de facturation pour émettre une facture à l'adresse du client auquel vous voulez facturer le service. Généralement, il s'agit de la différence entre la quantité expédiée enregistrée par la fonction de **validation de l'expédition** et la quantité consommée enregistrée par la fonction de **validation de la consommation** sujette à facturation. Vous ne pouvez pas facturer ce qui n'a pas été livré. Lors de l'exécution de la fonction de **validation de la facture** , une facture service validée est crée et les documents validés sont mis à jour avant de les rendre cohérents avec les quantités qui sont contenues dans la facture émise. Comme pour les autres procédures de report, les écritures appropriées, qui incluent les écritures, sont générées.  
 
 ## <a name="ship-and-invoice"></a>Livrer et facturer  
 L'option de livraison et de facturation vous permet d'émettre une livraison service et une facture en même temps.  
@@ -42,16 +42,16 @@ L'option Livrer et consommer vous permet d'enregistrer et de reporter des articl
 > [!NOTE]  
 >  La procédure de report de service vous permet d'effectuer un report partiel. Vous pouvez créer une expédition ou une facture partielle en renseignant les champs **Qté à expédier** et **Qté à facturer** sur des lignes service de commandes de service avant la validation. Notez que vous ne pouvez pas créer de facture pour un article qui n'est pas livré. Cela signifie que, avant de pouvoir facturer, vous devez avoir enregistré une livraison ou choisir de livrer et de facturer en même temps.  
 
-Une fois le report terminé, vous pouvez visualiser les documents service reportés depuis les pages correspondantes (**Livraison de service reportée** et **Facture de service reportée**). Vous pouvez visualiser les écritures reportées créées sur diverses pages contenant des écritures reportées (**Écritures**, **Écritures article**, **Écritures entrepôt**, **Écritures service**, **Écritures de grand livre projet**, **Écritures garantie**, etc.).  
+Une fois le report terminé, vous pouvez visualiser les documents service reportés depuis les pages correspondantes ( **Livraison de service reportée** et **Facture de service reportée** ). Vous pouvez visualiser les écritures reportées créées sur diverses pages contenant des écritures reportées ( **Écritures** , **Écritures article** , **Écritures entrepôt** , **Écritures service** , **Écritures de grand livre projet** , **Écritures garantie** , etc.).  
 
 ## <a name="to-view-information-about-a-posted-service-document"></a>Pour visualiser les informations relatives aux documents service reportés  
-Lorsque vous reportez une facture service, une livraison service ou une note de crédit service, les informations du document sont transférées respectivement sur les pages **Facture service reportée**, **Livraison service reportée** ou **Note de crédit service reportée**. Vous ne pouvez rien entrer, modifier ni supprimer sur ces pages. Vous pouvez imprimer un bon de livraison, une facture ou une note de crédit à partir de ces pages.  
+Lorsque vous reportez une facture service, une livraison service ou une note de crédit service, les informations du document sont transférées respectivement sur les pages **Facture service reportée** , **Livraison service reportée** ou **Note de crédit service reportée** . Vous ne pouvez rien entrer, modifier ni supprimer sur ces pages. Vous pouvez imprimer un bon de livraison, une facture ou une note de crédit à partir de ces pages.  
 
 La procédure suivante utilise un exemple de facture service reportée ; cette même procédure est applicable aux livraisons de service et aux notes de crédit reportées.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Facture service reportée**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Facture service reportée** , puis sélectionnez le lien associé.  
 2. Ouvrez la facture service reportée que vous souhaitez afficher.  
-3. Pour obtenir un aperçu de la facture reportée, choisissez l'action **Statistiques**.  
+3. Pour obtenir un aperçu de la facture reportée, choisissez l'action **Statistiques** .  
 
     La page **Statistiques commande service** s'ouvre. La page affiche des informations telles que la quantité, le montant, la TVA, le coût, le profit et la limite de crédit du client pour le document reporté.
 

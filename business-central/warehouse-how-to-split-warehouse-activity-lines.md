@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 4484f4fcaef8f48642f83984f1b3dab8acc14def
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 8a9fef52a67072e15f611162c0c038d92ebd4ff0
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3784981"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3914720"
 ---
 # <a name="split-warehouse-activity-lines"></a>Répartir des lignes activité entrepôt
 Dans le cadre de rangements, mouvements ou prélèvements entrepôt et de rangements et prélèvements inventaire, des zones sont proposées pour le prélèvement et le rangement des articles. Il arrive parfois que la quantité réelle disponible dans la zone soit insuffisante ou que l'espace de la zone proposé soit insuffisant pour le rangement de la quantité nécessaire. Dans ces cas, vous devez répartir la ligne de telle sorte que les articles d'une ligne soient prélevés ou placés dans plusieurs zones.  
@@ -24,8 +24,8 @@ La procédure suivante s'applique aux documents entrepôt, à savoir les lignes 
 
 ## <a name="to-split-warehouse-activity-lines"></a>Pour éclater des lignes activité entrepôt  
 1.  Ouvrez une ligne activité entrepôt dans laquelle vous tentez de traiter une quantité insuffisante.  
-2.  Dans le champ **Quantité à traiter**, entrez la quantité réduite que vous pouvez gérer.  
-3.  Sur le raccourci **Lignes**, choisissez l'action **Actions**, choisissez **Fonctions**, puis choisissez l'action **Eclater ligne**. Une nouvelle ligne s'affiche. Il s'agit d'une copie de la ligne d'origine, à la différence près que la quantité que vous avez retirée de la ligne d'origine figure dans le champ **Quantité à traiter**.  
+2.  Dans le champ **Quantité à traiter** , entrez la quantité réduite que vous pouvez gérer.  
+3.  Sur le raccourci **Lignes** , choisissez l'action **Actions** , choisissez **Fonctions** , puis choisissez l'action **Eclater ligne** . Une nouvelle ligne s'affiche. Il s'agit d'une copie de la ligne d'origine, à la différence près que la quantité que vous avez retirée de la ligne d'origine figure dans le champ **Quantité à traiter** .  
 4.  Affectez à cette nouvelle ligne une zone appropriée et, en cas d'utilisation d'un prélèvement et d'un rangement suggérés, une zone, ou continuez à répartir la ligne autant de fois que nécessaire jusqu'à ce que vous ayez trouvé des zones appropriées pour toute la quantité.  
 
 > [!NOTE]  

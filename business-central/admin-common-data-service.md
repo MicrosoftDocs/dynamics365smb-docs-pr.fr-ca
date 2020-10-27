@@ -7,13 +7,13 @@ ms.custom: na
 ms.reviewer: na
 ms.service: dynamics365-business-central
 ms.topic: article
-ms.date: 06/30/2020
-ms.openlocfilehash: 278797e8a1647fff8fd607cf075657c960004e65
-ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
+ms.date: 10/01/2020
+ms.openlocfilehash: 85823e93b1d239bf4e59ec6a8872cdc4a2cef9c1
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3529398"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3911590"
 ---
 # <a name="integrating-with-common-data-service"></a>Intégration à Common Data Service
 
@@ -31,7 +31,7 @@ Les étapes suivantes offrent un aperçu des étapes pour intégrer [!INCLUDE[d3
 3. Synchronisez les données entre les applications. Pour plus d'informations, voir la rubrique [Synchronisation de Business Central et de Common Data Service](admin-synchronizing-business-central-and-sales.md). 
 
 ## <a name="getting-started-with-d365fin"></a>Mise en route de [!INCLUDE[d365fin](includes/cds_long_md.md)]
-Pour prendre en main [!INCLUDE[d365fin](includes/cds_long_md.md)], vous avez besoin d'un compte Microsoft Power Apps. Si vous ne disposez pas encore d'un compte Power Apps, vous pouvez en obtenir un gratuitement en visitant [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) et en cliquant sur le lien **Démarrer gratuitement**. Pour en savoir plus sur la prise en main de [!INCLUDE[d365fin](includes/cds_long_md.md)], consultez le module [Mise en route avec le module Common Data Service](https://docs.microsoft.com/learn/modules/get-started-with-powerapps-common-data-service/) de Microsoft Learn.
+Pour prendre en main [!INCLUDE[d365fin](includes/cds_long_md.md)], vous avez besoin d'un compte Microsoft Power Apps. Si vous ne disposez pas encore d'un compte Power Apps, vous pouvez en obtenir un gratuitement en visitant [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) et en cliquant sur le lien **Démarrer gratuitement** . Pour en savoir plus sur la prise en main de [!INCLUDE[d365fin](includes/cds_long_md.md)], consultez le module [Mise en route avec le module Common Data Service](https://docs.microsoft.com/learn/modules/get-started-with-powerapps-common-data-service/) de Microsoft Learn.
 
 ## <a name="bi-directional-or-uni-directional-data-synchronization"></a>Synchronisation des données bidirectionnelle ou unidirectionnelle
 Selon les besoins de votre activité, vous pouvez configurer l'intégration pour synchroniser les données vers ou depuis une application métier Dynamics 365 vers une autre, ou dans les deux directions en quasi temps réel au moyen de [!INCLUDE[d365fin](includes/cds_long_md.md)]. Par exemple, si vous intégrez [!INCLUDE[d365fin](includes/d365fin_md.md)] à [!INCLUDE[crm_md](includes/crm_md.md)] au moyen de [!INCLUDE[d365fin](includes/cds_long_md.md)], un représentant peut créer un document de vente dans [!INCLUDE[crm_md](includes/crm_md.md)] et la commande est synchronisée avec [!INCLUDE[d365fin](includes/d365fin_md.md)]. Inversement, à partir de [!INCLUDE[crm_md](includes/crm_md.md)], le représentant peut consulter les informations de [!INCLUDE[d365fin](includes/d365fin_md.md)] sur la disponibilité de l'article sur la commande. 
@@ -53,8 +53,8 @@ Le compte d'administrateur n'est utilisé qu'une seule fois lors de la configura
 
 Outre la personnalisation de [!INCLUDE[d365fin](includes/cds_long_md.md)], la solution crée également les rôles suivants dans [!INCLUDE[d365fin](includes/cds_long_md.md)] pour l'intégration :
 
-* **Administrateur d'intégration** : permet aux utilisateurs de gérer la connexion entre [!INCLUDE[d365fin](includes/d365fin_md.md)] et [!INCLUDE[d365fin](includes/cds_long_md.md)]. En général, cela est attribué uniquement au compte d'utilisateur automatiquement créé pour la synchronisation.  
-* **Utilisateur d'intégration** : permet aux utilisateurs d'accéder aux données synchronisées. En général, cela est attribué au compte d'utilisateur automatiquement créé pour la synchronisation et aux autres utilisateurs devant consulter les données synchronisées ou y accéder.
+* **Administrateur d'intégration**  : permet aux utilisateurs de gérer la connexion entre [!INCLUDE[d365fin](includes/d365fin_md.md)] et [!INCLUDE[d365fin](includes/cds_long_md.md)]. En général, cela est attribué uniquement au compte d'utilisateur automatiquement créé pour la synchronisation.  
+* **Utilisateur d'intégration**  : permet aux utilisateurs d'accéder aux données synchronisées. En général, cela est attribué au compte d'utilisateur automatiquement créé pour la synchronisation et aux autres utilisateurs devant consulter les données synchronisées ou y accéder.
 
 Pour plus de détails sur chaque rôle, tels que les autorisations et les niveaux d'accès, voir [Configuration de comptes d'utilisateurs pour l'intégration avec [!INCLUDE[d365fin](includes/cds_long_md.md)]](admin-setting-up-integration-with-dynamics-sales.md).
 

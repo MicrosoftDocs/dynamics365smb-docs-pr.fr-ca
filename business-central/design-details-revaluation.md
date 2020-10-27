@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: cb3357d2d102dceba9896731c651174a4962bab6
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 43a62271bab9401bfea21663c72b6363884c2ef4
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3787256"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3911015"
 ---
 # <a name="design-details-revaluation"></a>Détails de conception : réévaluation
 Vous pouvez réévaluer l'inventaire en fonction de la base d'évaluation reflétant le plus précisément la valeur d'inventaire. Vous pouvez également antidater une réévaluation, afin que le coût des biens vendus (COGS) soit correctement mis à jour pour les articles qui ont déjà été vendus. Les articles utilisant le mode évaluation stock standard qui n'ont pas été entièrement facturés peuvent également être réévalués.  
@@ -41,7 +41,7 @@ L'exemple suivant montre à quel moment un article TEC se transforme pour deveni
 
 ![Inventaire et réévaluation TEC](media/design_details_inventory_costing_10_revaluation_wip.png "Inventaire et réévaluation TEC")  
 
-**1Q** : l'utilisateur valide les maillons achetés comme étant reçus. Le tableau suivant montre l'écriture article résultante.  
+**1Q**  : l'utilisateur valide les maillons achetés comme étant reçus. Le tableau suivant montre l'écriture article résultante.  
 
 |Date de report|Article|Type écriture|Quantité|N° séquence |  
 |------------------|----------|----------------|--------------|---------------|  
@@ -50,13 +50,13 @@ L'exemple suivant montre à quel moment un article TEC se transforme pour deveni
 > [!NOTE]  
 >  À présent un article utilisant le mode évaluation stock standard est disponible pour la réévaluation.  
 
-**1V** : l'utilisateur reporte les maillons achetés comme étant facturés et les maillons font alors partie de l'inventaire, d'un point de vue financier. Le tableau suivant montre les écritures valeur résultantes.  
+**1V**  : l'utilisateur reporte les maillons achetés comme étant facturés et les maillons font alors partie de l'inventaire, d'un point de vue financier. Le tableau suivant montre les écritures valeur résultantes.  
 
 |Date de report|Type écriture|Date évaluation|Coût indiqué (réel)|N° écriture article gr. livre|N° séquence |  
 |------------------|----------------|--------------------|----------------------------|---------------------------|---------------|  
 |15/01/20|Coût direct|01/01/20|150.00|1|1|  
 
- **2Q + 2V** : l'utilisateur valide les maillons achetés comme étant consommés pour la production de la chaîne en fer. Du point de vue financier, les liens deviennent une partie de l'inventaire TEC.  Le tableau suivant montre l'écriture article résultante.  
+ **2Q + 2V**  : l'utilisateur valide les maillons achetés comme étant consommés pour la production de la chaîne en fer. Du point de vue financier, les liens deviennent une partie de l'inventaire TEC.  Le tableau suivant montre l'écriture article résultante.  
 
 |Date de report|Article|Type écriture|Quantité|N° séquence |  
 |------------------|----------|----------------|--------------|---------------|  
@@ -70,13 +70,13 @@ Le tableau suivant montre l'écriture valeur résultante.
 
 La date d'évaluation est définie sur la date du report de la consommation (02-01-20), en tant que diminution d'inventaire classique.  
 
-**3Q** : l'utilisateur valide la chaîne comme étant en production et finit l'ordre de fabrication. Le tableau suivant montre l'écriture article résultante.  
+**3Q**  : l'utilisateur valide la chaîne comme étant en production et finit l'ordre de fabrication. Le tableau suivant montre l'écriture article résultante.  
 
 |Date de report|Article|Type écriture|Quantité|N° séquence |  
 |------------------|----------|----------------|--------------|---------------|  
 |02-15-20|CHAÎNE|Sortie|1|3|  
 
-**3V** : l'utilisateur exécute le traitement en lot **Ajuster coûts - Écr. article**, qui reporte la chaîne comme facturée pour indiquer que toute la consommation de matériel a été entièrement facturée. Du point de vue financier, les liens ne font plus partie de l'inventaire TEC lorsque la production est entièrement facturée et ajustée. Le tableau suivant montre les écritures valeur résultantes.  
+**3V**  : l'utilisateur exécute le traitement en lot **Ajuster coûts - Écr. article** , qui reporte la chaîne comme facturée pour indiquer que toute la consommation de matériel a été entièrement facturée. Du point de vue financier, les liens ne font plus partie de l'inventaire TEC lorsque la production est entièrement facturée et ajustée. Le tableau suivant montre les écritures valeur résultantes.  
 
 |Date de report|Type écriture|Date évaluation|Coût indiqué (réel)|N° écriture article gr. livre|N° séquence |  
 |------------------|----------------|--------------------|----------------------------|---------------------------|---------------|  
@@ -92,9 +92,9 @@ La quantité réévaluable XE « Quantité réévaluable » XE « Quantité;R
 
 Lors du calcul de la quantité réévaluable pour les articles utilisant le mode d'évaluation coût Standard, les écritures article n'ayant pas été complètement facturées sont incluses dans le calcul. Les écritures sont ensuite réévaluées lorsque vous reportez la réévaluation. Lorsque vous facturez l'écriture réévaluée, les écritures valeur suivantes sont créées :  
 
--   L'écriture valeur facturée habituelle avec un type d'écriture **Coût direct**. Le coût indiqué de cette écriture est le coût direct de la ligne source.  
--   Une écriture valeur avec le type d'écriture **Écart**. Cette écriture enregistre la différence entre le coût facturé et le coût standard réévalué.  
--   Une écriture valeur avec le type d'écriture **Réévaluation**. Cette écriture enregistre l'inversion de la réévaluation du coût prévu.  
+-   L'écriture valeur facturée habituelle avec un type d'écriture **Coût direct** . Le coût indiqué de cette écriture est le coût direct de la ligne source.  
+-   Une écriture valeur avec le type d'écriture **Écart** . Cette écriture enregistre la différence entre le coût facturé et le coût standard réévalué.  
+-   Une écriture valeur avec le type d'écriture **Réévaluation** . Cette écriture enregistre l'inversion de la réévaluation du coût prévu.  
 
 ### <a name="example"></a>Exemple :  
 L'exemple suivant, basé sur la production de la chaîne dans l'exemple précédent, illustre la manière dont les trois types d'écritures sont créés. Il est basé sur le scénario suivant :  
@@ -103,7 +103,7 @@ L'exemple suivant, basé sur la production de la chaîne dans l'exemple précéd
 2.  L'utilisateur reporte ensuite une réévaluation des liens avec un nouveau coût unitaire de 3,00 $, mettant à jour le coût standard à 3,00 $.  
 3.  L'utilisateur valide l'achat d'origine des liens comme facturés, ce qui crée ce qui suit :  
 
-    1.  Une écriture valeur facturée avec le type d'écriture **Coût direct**.  
+    1.  Une écriture valeur facturée avec le type d'écriture **Coût direct** .  
     2.  Une écriture valeur avec le type d'écriture **Réévaluation** pour enregistrer la contrepassation de la réévaluation du coût prévu.  
     3.  Une écriture valeur avec le type d'écriture Écart, qui enregistre la différence entre le coût facturé et le coût standard réévalué.  
 Le tableau suivant montre les écritures valeur résultantes.  
@@ -141,7 +141,7 @@ L'exemple suivant, qui illustre la réévaluation d'un article qui utilise le mo
 6.  Le 01/02/20, l'utilisateur valide une vente de 1 unité.  
 7.  Le 01-03-20, l'utilisateur valide une vente de 1 unité.  
 8.  Le 01-04-20, l'utilisateur valide une vente de 1 unité.  
-9. L'utilisateur exécute le traitement en lot **Ajuster coûts - Écr. article**.  
+9. L'utilisateur exécute le traitement en lot **Ajuster coûts - Écr. article** .  
 
 Le tableau suivant montre les écritures valeur résultantes.  
 

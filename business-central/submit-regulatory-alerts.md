@@ -6,14 +6,14 @@ ms.service: dynamics365-business-central
 ms.topic: article
 ms.reviewer: edupont
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: soalex
-ms.openlocfilehash: 349c930a5103814d6d7befc3a4e8135bc92081b0
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: da0469ddb00e0c29fc04dc421a21724dc247b80b
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3192157"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3912806"
 ---
 # <a name="submit-alerts-about-countryregion-specific-regulatory-features"></a>Envoyer des alertes sur les fonctionnalités de réglementaires spécifiques au pays/à la région
 
@@ -48,10 +48,10 @@ Nous vous invitons à utiliser Microsoft Dynamics Lifecycle Services (LCS) pour 
 
         |Champ        |Description                               |
         |-------------|------------------------------------------|
-        |Titre  | Saisissez un titre descriptif pour identifier la zone de l'impact. Par exemple, entrez *Modifications du document facture à partir du 1er juillet 2019*. |
+        |Titre  | Saisissez un titre descriptif pour identifier la zone de l'impact. Par exemple, entrez *Modifications du document facture à partir du 1er juillet 2019* . |
         |Description  | Saisissez un bref aperçu de la loi. Votre description doit se concentrer sur les questions qui sont pertinentes aux activités ERP (Enterprise Resource Planning), afin que les utilisateurs puissent comprendre les obligations à un niveau élevé sans consulter la législation en premier.|
-        |Pays  | Spécifiez leu pays ou la région auquels la législation s'applique.|
-        |Secteur d’activité| Spécifiez un secteur d'activité, si le besoin s'applique uniquement à des secteurs spécifiques. Par exemple, choisissez **Secteur public**, **Vte detail**, ou **Production**.|
+        |Pays  | Spécifiez le pays ou la région auquels la législation s'applique.|
+        |Secteur d’activité| Spécifiez un secteur d'activité, si le besoin s'applique uniquement à des secteurs spécifiques. Par exemple, choisissez **Secteur public** , **Vte detail** , ou **Production** .|
         |Référence de la fonctionnalité  | Cela n'est pas appropriée à Dynamics 365 Business Central, mais vous pouvez saisir une référence à la fonctionnalité, si vous la connaissez. La liste des fonctionnalités du pays spécifique peut apparaître sur le [Portail de localisation](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) du site CustomerSource. |
         |Date de la mise en application légale  | Spécifiez la date à laquelle les clients concernés doivent commencer à respecter à la loi.|
         |Date d'annonce du gouvernement  | Spécifiez la date à laquelle l'administration fiscale a informé la modification.|
@@ -62,7 +62,7 @@ Nous vous invitons à utiliser Microsoft Dynamics Lifecycle Services (LCS) pour 
         |Courriel de contact  | Adresse de courriel de la personne qui envoie l'alerte.|
         |Processus d'entreprise  | Processus d'entreprise que vous avez sélectionnés via l'Assistant **Soumission d'alerte**|
         |Commentaires  | Saisissez toutes les informations supplémentaires qui peuvent aider les utilisateurs à comprendre ou implémenter la loi. Cliquez sur **Envoyer** pour enregistrer votre commentaire. Plusieurs commentaires peuvent être ajoutés et doivent être envoyés séparément. Les commentaires sont enregistrés dans l'ordre où ils sont ajoutés. |
-        |Pièces jointes  | Cliquez sur le bouton **Télécharger**, puis accédez à un fichier pour l'ajouter comme pièce jointe. Après avoir sélectionné le fichier, il est téléchargé et s'affiche en tant que fichier lié. Vous pouvez ajouter jusqu'à trois fichiers d'une taille de 5 Mo chacun. Pour supprimer les fichiers joints, cliquez sur **Supprimer** sous le titre du fichier. Les pièces jointes doivent être des documents disponibles publiquement. Ils ne peuvent pas être confidentiels ou spécifiques à un client/partenaire.|
+        |Pièces jointes  | Cliquez sur le bouton **Télécharger** , puis accédez à un fichier pour l'ajouter comme pièce jointe. Après avoir sélectionné le fichier, il est téléchargé et s'affiche en tant que fichier lié. Vous pouvez ajouter jusqu'à trois fichiers d'une taille de 5 Mo chacun. Pour supprimer les fichiers joints, cliquez sur **Supprimer** sous le titre du fichier. Les pièces jointes doivent être des documents disponibles publiquement. Ils ne peuvent pas être confidentiels ou spécifiques à un client/partenaire.|
 
         Cliquez sur **Envoyer** pour enregistrer et envoyer l'alerte.
 

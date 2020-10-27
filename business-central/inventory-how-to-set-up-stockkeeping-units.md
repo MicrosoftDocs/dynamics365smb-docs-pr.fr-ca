@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: c94a02cdbd658efcf96c5cff443ebfe03cb3feef
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 4f5a1933e803322367b241e772d796f1365f9d11
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3785906"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3915470"
 ---
 # <a name="set-up-stockkeeping-units"></a>Configurer des unités de stock
 Vous pouvez utiliser des unités de stock pour enregistrer des informations relatives à vos articles pour un code d'emplacement ou variante donné.  
@@ -24,16 +24,16 @@ Vous pouvez utiliser des unités de stock pour enregistrer des informations rela
 
 ## <a name="to-set-up-a-stockkeeping-unit"></a>Pour configurer une unité de stock  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Unités de stock**, puis sélectionnez le lien associé.  
-2.  Sélectionnez l'action **Nouveau**.  
-3.  Renseignez les champs de la fiche. Les champs suivants sont nécessaires : **N° article**, **Code d'emplacement** et/ou **Code variante**. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Unités de stock** , puis sélectionnez le lien associé.  
+2.  Sélectionnez l'action **Nouveau** .  
+3.  Renseignez les champs de la fiche. Les champs suivants sont nécessaires : **N° article** , **Code d'emplacement** et/ou **Code variante** . [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
 Après avoir configuré la première unité de stock pour un article, la case à cocher **Unité de stock existante** sur la fiche **Article** est activée.  
 
-Pour créer plusieurs points de stock pour un article, utilisez le traitement par lots **Créer point de stock**.  
+Pour créer plusieurs points de stock pour un article, utilisez le traitement par lots **Créer point de stock** .  
 
 > [!NOTE]  
->  Les informations de la fiche **Point de stock** sont prioritaires par rapport à celles de la fiche **Article**.
+>  Les informations de la fiche **Point de stock** sont prioritaires par rapport à celles de la fiche **Article** .
 
 > [!Warning]
 > Si l'unité de stock est expédiée à la fabrication, le champ **Coût standard** n'est pas utilisé lors de la facturation et de l'ajustement du coût réel de l'article fabriqué. Celui utilisé est plutôt le champ **Coût standard** de la fiche article sous-jacente. En outre, tous les écarts sont calculés par rapport aux coûts totaux de l'article.<br /><br />

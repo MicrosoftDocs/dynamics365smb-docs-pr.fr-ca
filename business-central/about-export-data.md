@@ -8,20 +8,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: analysis, reporting, financial report, business intelligence, BI, Excel
-ms.date: 05/04/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: eb11098292f9d83fcd0a4b23bde9c1813f4c6c8e
-ms.sourcegitcommit: 866f0e6ed9df3397072b9df838e31c3a1f4b626d
+ms.openlocfilehash: e8b62e04b3b1d44ba53572559c66acc1c05da8c0
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3333894"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3914624"
 ---
 # <a name="exporting-your-business-data-to-excel"></a>Exportation de vos données métier vers Excel
 Si vous souhaitez travailler avec vos données à partir de [!INCLUDE[d365fin](includes/d365fin_md.md)] dans Excel, vous pouvez ouvrir toutes les listes et les utiliser dans Excel. De même, si vous souhaitez annuler votre abonnement à [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez exporter vos données vers Excel afin de pouvoir les transférer par la suite.
 
 ## <a name="opening-lists-in-excel"></a>Ouverture de listes dans Excel
-Vous pouvez ouvrir des données dans Excel à partir de n'importe quel journal, liste ou feuille de calcul. Il vous suffit d'ouvrir la page que vous souhaitez, puis de cliquer sur **Ouvrir dans Excel**. Par exemple, ouvrez la liste des clients (recherchez **Clients**), puis sélectionnez **Ouvrir dans Excel**. Votre navigateur vous invite alors à ouvrir ou à enregistrer le classeur Excel généré.  
+Vous pouvez ouvrir des données dans Excel à partir de n'importe quel journal, liste ou feuille de calcul. Il vous suffit d'ouvrir la page que vous souhaitez, puis de cliquer sur **Ouvrir dans Excel** . Par exemple, ouvrez la liste des clients (recherchez **Clients** ), puis sélectionnez **Ouvrir dans Excel** . Votre navigateur vous invite alors à ouvrir ou à enregistrer le classeur Excel généré.  
 
 > [!NOTE]
 > Utilisez cette option si vous ne souhaitez pas effectuer et publier des modifications à nouveau dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
@@ -42,7 +42,7 @@ Bien entendu, vous pouvez exporter toutes les pages, mais il peut y en avoir tro
 * Banques  
 * Articles  
 
-Si vous souhaitez exporter toutes vos transactions financières également, le volume de données est alors très important et l'exportation prend alors souvent plusieurs minutes. Les transactions financières sont affichées sur la page **Écritures**.  
+Si vous souhaitez exporter toutes vos transactions financières également, le volume de données est alors très important et l'exportation prend alors souvent plusieurs minutes. Les transactions financières sont affichées sur la page **Écritures** .  
 
 Nous recommandons également d'exporter des données à partir des pages suivantes :  
 
@@ -69,7 +69,7 @@ Nous recommandons également d'exporter des données à partir des pages suivant
 > [!NOTE]
 > Vous devez disposer d'au moins l'une des autorisations suivantes pour ouvrir ou modifier des données dans Excel :
 >    - Ensemble d'autorisations *Action Exportation Excel D365*  
->    - Autorisation système 6110 *Autoriser l'action Exporter vers Excel*.  
+>    - Autorisation système 6110 *Autoriser l'action Exporter vers Excel* .  
 
 Pour plus d'informations, voir [Pour afficher ou modifier les autorisations d'un utilisateur](ui-define-granular-permissions.md#to-get-an-overview-of-a-users-permissions).
 

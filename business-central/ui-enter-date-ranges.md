@@ -9,14 +9,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: dates, reporting, filter, calendar, shorthand, range
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 122c1e602f9f7d1c50115ba1e6ba515694fc84a1
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: f658764eafa6f9aa35e33cf8098ca77799fb1e0c
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3785431"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3912481"
 ---
 # <a name="working-with-calendar-dates-and-times"></a>Utilisation de dates civiles et les heures
 
@@ -27,7 +27,7 @@ La page **Mes paramètres** spécifie la **Région** et la **Langue** que vous u
 
 -   Le paramètre **Région** détermine la manière dont les dates, heures, nombres et devises sont affichés ou mis en forme.
 
--   Pour des modèles de date qui impliquent des mots, la langue des mots utilisée doit correspondre au paramètre **Langue**.
+-   Pour des modèles de date qui impliquent des mots, la langue des mots utilisée doit correspondre au paramètre **Langue** .
 
 > [!NOTE]
 > [!INCLUDE[d365fin](includes/d365fin_long_md.md)] utilise le système du calendrier grégorien.
@@ -72,19 +72,19 @@ Vous pouvez saisir deux, quatre, six ou huit chiffres dans un champ date :
 
 ### <a name="today"></a>Aujourd'hui
 
-Entrez le mot pour aujourd'hui, dans la langue définie par le paramètre **Langue**, qui définit la date à la date actuelle. Au lieu de saisir le mot entier, vous pouvez saisir une partie du mot, en commençant par le début par exemple a ou auj , tant que ce n'est pas également le début d'un autre mot.
+Entrez le mot pour aujourd'hui, dans la langue définie par le paramètre **Langue** , qui définit la date à la date actuelle. Au lieu de saisir le mot entier, vous pouvez saisir une partie du mot, en commençant par le début par exemple a ou auj , tant que ce n'est pas également le début d'un autre mot.
 
 ### <a name="period"></a>Période
 
-Pour filtrer une période comptable spécifique, dans un champ de date saisissez la lettre p, ou le mot période, suivi par un numéro qui identifie la période comptable, par exemple p2 ou période4. La période comptable se rapporte à l'exercice financier de la date de travail en cours définie dans votre tableau de bord. Par exemple, si la date de travail est **21/03/20**, alors p1 ou simplement p filtre la première période comptable de l'exercice financier 2020 (par exemple 01/01/20..31/01/20). p15 filtre la quinzième période comptable depuis le début de l'exercice financier 2020 (par exemple 01/03/21..31/03/21).
+Pour filtrer une période comptable spécifique, dans un champ de date saisissez la lettre p, ou le mot période, suivi par un numéro qui identifie la période comptable, par exemple p2 ou période4. La période comptable se rapporte à l'exercice financier de la date de travail en cours définie dans votre tableau de bord. Par exemple, si la date de travail est **21/03/20** , alors p1 ou simplement p filtre la première période comptable de l'exercice financier 2020 (par exemple 01/01/20..31/01/20). p15 filtre la quinzième période comptable depuis le début de l'exercice financier 2020 (par exemple 01/03/21..31/03/21).
 
-Les périodes comptables sont définies sur la page **Périodes comptables**. Pour visualiser ou modifier les périodes comptables, ouvrez la page [ici](https://businesscentral.dynamics.com/?page=100).
+Les périodes comptables sont définies sur la page **Périodes comptables** . Pour visualiser ou modifier les périodes comptables, ouvrez la page [ici](https://businesscentral.dynamics.com/?page=100).
 
 ### <a name="current-work-date"></a>Date de travail actuelle
 
 La fonction de date de travail vous permet d'enregistrer des transactions en utilisant une date qui est différente de la date du jour.
 
-Le mot « date de travail », dans la langue définie par le paramètre **Langue**, définit la date à laquelle la date de travail configurée actuellement est spécifiée sur la page **Mes paramètres**. Au lieu de saisir le mot entier, vous pouvez saisir une partie du mot, en commençant du début, comme "t" pour travail.
+Le mot « date de travail », dans la langue définie par le paramètre **Langue** , définit la date à laquelle la date de travail configurée actuellement est spécifiée sur la page **Mes paramètres** . Au lieu de saisir le mot entier, vous pouvez saisir une partie du mot, en commençant du début, comme "t" pour travail.
 
 Si vous ne définissez pas de date de travail, la date actuelle sera utilisée comme date de travail. Vous souhaiterez peut-être utiliser une date de travail si vous avez beaucoup de transactions avec une date différente de la date d'aujourd'hui.
 
@@ -98,7 +98,7 @@ Pour spécifier qu'une date est une date de fermeture, placez un F devant cette 
 
 ### <a name="examples"></a>Exemples
 
-Le tableau suivant affiche des exemples de dates à l'aide de tous les formats. Il considère les paramètres régionaux selon lesquels format les dates : **jour/mois/année.**, une semaine commençant lundi, et l'anglais.
+Le tableau suivant affiche des exemples de dates à l'aide de tous les formats. Il considère les paramètres régionaux selon lesquels format les dates : **jour/mois/année.** , une semaine commençant lundi, et l'anglais.
 
 |**Écriture**      |**Interprétation**      |
 |---------------|------------------------|
@@ -194,7 +194,7 @@ L'exemple ci-dessous illustre comment vous pouvez utiliser le signe moins pour i
 |-1A|Il y a 1 an à dater d'aujourd'hui|
 
 > [!IMPORTANT]
->  Si l'emplacement utilise un calendrier principal, la formule de date que vous entrez, par exemple le champ **Délai de livraison**, est interprétée en fonction des jours ouvrés du calendrier. Par exemple, 1S signifie sept jours ouvrés.
+>  Si l'emplacement utilise un calendrier principal, la formule de date que vous entrez, par exemple le champ **Délai de livraison** , est interprétée en fonction des jours ouvrés du calendrier. Par exemple, 1S signifie sept jours ouvrés.
 <!--
 # Entering Date Ranges
 You can set filters containing a start date and an end date to display only the data contained in that date range or time interval. Special rules apply to the way you set date ranges. Let's take the **Customer Top 10** as an example:

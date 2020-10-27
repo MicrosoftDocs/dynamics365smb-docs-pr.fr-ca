@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: project budget, forecast
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: a395ba9feee028db02b4fb7786e77afafdeaea0a
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: e8de8d35ee036d2819ba40b1fdf50b6d5ed2dab5
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3783868"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3913181"
 ---
 # <a name="manage-job-budgets"></a>Gérer les budgets de projets
 Vous pouvez configurer un budget pour chaque projet. Le budget permet de planifier les ressources que vous affectez à un projet. Il peut s'agir d'un budget général avec peu d'écritures ou plus détaillé avec des écritures réparties par niveau d'activité. Vous pouvez alors comparer les montants budgétés avec l'utilisation réelle telle qu'elle a été enregistrée dans le journal projet. En surveillant les différences entre l'utilisation réelle et celle budgétée, vous pouvez contrôler un projet en cours et améliorer la qualité des projets futurs en réduisant le risque de sous-estimation des coûts.
@@ -25,14 +25,14 @@ Vous pouvez configurer un budget pour chaque projet. Le budget permet de planifi
 La procédure suivante décrit comment estimer les coûts budgétés lors de la planification. Pour plus d'informations sur l'enregistrement budgété par rapport aux prix et aux coûts réels du projet, voir [Enregistrer l'utilisation pour les projets](projects-how-record-job-usage.md).  
 
 ## <a name="to-estimate-the-budgeted-costs-for-a-job"></a><a name="JobBudgetCosts"></a> Pour estimer les coûts budgétés d'un projet
-Lorsqu'un client souhaite connaître le prix d'un projet qui sera facturé en fonction de l'utilisation, vous devez déterminer les coûts budgétés du projet. Réalisez cette opération sur la page **Lignes tâche projet**.
+Lorsqu'un client souhaite connaître le prix d'un projet qui sera facturé en fonction de l'utilisation, vous devez déterminer les coûts budgétés du projet. Réalisez cette opération sur la page **Lignes tâche projet** .
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Projets**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Projets** , puis sélectionnez le lien associé.  
 2. Ouvrez le projet approprié.
-3. Sélectionnez une ligne tâche de type Validation, puis cliquez sur **Lignes planning projet**.
+3. Sélectionnez une ligne tâche de type Validation, puis cliquez sur **Lignes planning projet** .
 4. Sur une nouvelle ligne, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]   
 
-Reportez-vous aux informations suivantes pour le champ **Type ligne**.  
+Reportez-vous aux informations suivantes pour le champ **Type ligne** .  
 
 | Type ligne | Description |
 | --- | --- |
@@ -41,12 +41,12 @@ Reportez-vous aux informations suivantes pour le champ **Type ligne**.
 | **Facturable** |Le client doit payer l'utilisation. L'utilisation est transférée à la facture, sur la base de la quantité spécifiée dans le champ Qté à transférer à facturer. |
 
 > [!NOTE]  
-> Le champ **Date livraison planifiée** de la ligne planification contient la date prévue de l'achèvement de l'utilisation associée à cette ligne planification. C'est aussi la date à laquelle la ligne planification peut être transférée à une facture vente et être reportée. <br /><br /> Sur la tâche projet sous-jacente de la page **Fiche de projet**, les champs **Date début** et **Date fin** contiennent respectivement la valeur du champ **Date livraison planifiée** sur les lignes planification projet les plus récentes et les dernières de la page **Lignes planification projet** associée.
+> Le champ **Date livraison planifiée** de la ligne planification contient la date prévue de l'achèvement de l'utilisation associée à cette ligne planification. C'est aussi la date à laquelle la ligne planification peut être transférée à une facture vente et être reportée. <br /><br /> Sur la tâche projet sous-jacente de la page **Fiche de projet** , les champs **Date début** et **Date fin** contiennent respectivement la valeur du champ **Date livraison planifiée** sur les lignes planification projet les plus récentes et les dernières de la page **Lignes planification projet** associée.
 
 > [!NOTE]  
->   Quand vous renseignez le champ **Quantité**, toutes les informations prix total et coût total seront désormais calculées et renseignées pour cette ligne planning. Vous pouvez modifier ces informations à tout moment.
+>   Quand vous renseignez le champ **Quantité** , toutes les informations prix total et coût total seront désormais calculées et renseignées pour cette ligne planning. Vous pouvez modifier ces informations à tout moment.
 
-Sur la page **Fiche projet**, vous pouvez désormais voir un résumé des coûts budgétés totaux, des prix budgétés, du coût facturable et du prix facturable pour chaque tâche.
+Sur la page **Fiche projet** , vous pouvez désormais voir un résumé des coûts budgétés totaux, des prix budgétés, du coût facturable et du prix facturable pour chaque tâche.
 
 Pour plus d'informations sur l'enregistrement budgété par rapport aux prix et aux coûts réels du projet, voir [Enregistrer l'utilisation pour les projets](projects-how-record-job-usage.md).
 

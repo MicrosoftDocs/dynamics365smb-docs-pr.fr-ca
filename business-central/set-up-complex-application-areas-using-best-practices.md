@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 37638e84bb7ffd86ebc89f8da482c71429513003
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 9647dcebb949519c187d7289467e462b66dc32a2
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3789238"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3912970"
 ---
 # <a name="set-up-complex-application-areas-using-best-practices"></a>Configurez les modules complexes à l'aide des meilleures pratiques
 Il est important d'entrer des valeurs de configuration correctes dès le début pour garantir le succès de tout nouveau logiciel de gestion.  

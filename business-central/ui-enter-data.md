@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/03/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 1ad2eb6d2e9a423aa1891eb52f71e815f4b89eff
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 31432399981befb3b844c5d951b5b752e1152458
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3785456"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3912506"
 ---
 # <a name="entering-data"></a>Saisie de données
 
@@ -33,7 +33,7 @@ Certains champs modifiables fournissent un sélecteur pour vous aider à spécif
 |------------------|------------------------------------|
 |Sélecteur de date       |Ce sélecteur affiche un calendrier basé sur vos paramètres régionaux actuels. Il vous aide à choisir une date unique.|
 |Menu déroulant          |Les listes déroulantes offrent un choix de valeurs fixes ou d'enregistrements de référence d'une autre table|
-|Commutateur ou case à cocher|Certains champs offrent un choix simple : valeurs *Oui* ou *Non*. Le commutateur est utilisé pour spécifier cette valeur et est toujours affiché sous forme de case à cocher dans les listes|
+|Commutateur ou case à cocher|Certains champs offrent un choix simple : valeurs *Oui* ou *Non* . Le commutateur est utilisé pour spécifier cette valeur et est toujours affiché sous forme de case à cocher dans les listes|
 |Modification assistée       |Certains champs fournissent des sélecteurs personnalisés adaptés à la recherche et au choix de la meilleure valeur pour ce champ, comme une fenêtre contextuelle|
 
 
@@ -41,20 +41,20 @@ Certains champs modifiables fournissent un sélecteur pour vous aider à spécif
 
 Pour modifier la valeur d'un champ, vous devez d'abord définir le focus sur ce champ. Vous définissez le focus en effectuant les actions suivantes :
 
-- Utilisez la touche de **tabulation**. L'action sélectionne la valeur entière.
+- Utilisez la touche de **tabulation** . L'action sélectionne la valeur entière.
 - Effectuez un clic gauche sur votre souris ou un périphérique d'entrée similaire. Cette action ne sélectionnera la valeur entière du champ que si le champ est dans une liste.  
 
 Lorsque vous interagissez avec des champs de l'interface utilisateur, [!INCLUDE[d365fin](includes/d365fin_md.md)] favorise généralement la sélection de la valeur entière du champ pour faciliter le remplacement de cette valeur.
 
 Lorsque toute la valeur du champ est sélectionnée :
-- Remplacez la valeur en tapant simplement pour spécifier une nouvelle valeur. Si le champ propose un sélecteur, vous pouvez l'activer à l'aide du raccourci clavier **Alt + flèche vers le bas**.
+- Remplacez la valeur en tapant simplement pour spécifier une nouvelle valeur. Si le champ propose un sélecteur, vous pouvez l'activer à l'aide du raccourci clavier **Alt + flèche vers le bas** .
 - Utilisez la touche **Supprimer** ou **Retour arrière** pour effacer la valeur.
 
 Appuyez sur la touche **F2** entre la sélection de la valeur entière du champ ou le placement du curseur après la valeur du champ. Le fait de placer le curseur à la fin de la valeur facilite l'ajout à la valeur existante.
 
 Lorsque le curseur apparaît à la fin de la valeur du champ :
 - Ajout à la valeur par simple saisie.
-- Utilisez les touches **Accueil**, **Fin**, **Flèche gauche** et **Flèche droite** pour déplacer le curseur dans la valeur. Si vous modifiez un champ dans une liste, appuyez à nouveau sur la touche **Flèche gauche** lorsque le curseur est au début de la valeur, le focus sera mis sur le champ précédent. De même, en appuyant à nouveau sur la touche **Flèche droite** lorsque le curseur est à la fin de la valeur, le focus sera placé sur le champ suivant.
+- Utilisez les touches **Accueil** , **Fin** , **Flèche gauche** et **Flèche droite** pour déplacer le curseur dans la valeur. Si vous modifiez un champ dans une liste, appuyez à nouveau sur la touche **Flèche gauche** lorsque le curseur est au début de la valeur, le focus sera mis sur le champ précédent. De même, en appuyant à nouveau sur la touche **Flèche droite** lorsque le curseur est à la fin de la valeur, le focus sera placé sur le champ suivant.
 
 > [!NOTE]
 > Après avoir spécifié une valeur, Business Central vérifie uniquement sa validité après avoir cliqué en dehors du champ ou défini le focus sur un autre article, tel que le champ suivant.  
@@ -74,7 +74,7 @@ Vous pouvez utiliser la touche Tab afin de naviguer d'un champ sur une page au c
 
 ### <a name="how-quick-entry-works"></a>Fonction Saisie rapide : fonctionnement
 
-Chaque champ peut être marqué comme *inclus dans la fonction Saisie rapide* ou *exclus de la Saisie rapide*. Les champs inclus dans la fonction Saisie rapide seront inclus dans le chemin lorsque vous appuyez sur Entrée. Les champs exclus de la fonction Saisie rapide ne le seront pas.
+Chaque champ peut être marqué comme *inclus dans la fonction Saisie rapide* ou *exclus de la Saisie rapide* . Les champs inclus dans la fonction Saisie rapide seront inclus dans le chemin lorsque vous appuyez sur Entrée. Les champs exclus de la fonction Saisie rapide ne le seront pas.
 
 Lorsque vous avez fini de saisir les données dans un champ, appuyez simplement sur Entrée pour confirmer les changements et accéder au champ suivant. Si vous souhaitez inverser le sens, et accéder au champ précédent, appuyez sur Maj+Entrée. Pour plus d'informations sur les raccourcis, voir [Raccourcis rapides d'écriture pour les champs](keyboard-shortcuts.md#QuickEntry).
 
@@ -93,8 +93,8 @@ Vous trouverez ci-après les informations utiles concernant la fonction Saisie r
 
 Pour configurer la fonction Saisie rapide sur les champs, vous utilisez la personnalisation.
 
-1. Commencez la personnalisation en sélectionnant l'icône ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis sélectionnez l'action **Personnaliser**.
-2. Sélectionnez un champ que vous souhaitez modifier. Dans les listes, sélectionnez l'en-tête de colonne correspondant. Ensuite, choisissez **Inclure dans la saisie rapide** ou **Exclure de la saisie rapide**.
+1. Commencez la personnalisation en sélectionnant l'icône ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis sélectionnez l'action **Personnaliser** .
+2. Sélectionnez un champ que vous souhaitez modifier. Dans les listes, sélectionnez l'en-tête de colonne correspondant. Ensuite, choisissez **Inclure dans la saisie rapide** ou **Exclure de la saisie rapide** .
 
 Pour plus d'informations sur la personnalisation, voir [Personnaliser votre espace de travail](ui-personalization-user.md).
 
@@ -192,14 +192,14 @@ Vous pouvez saisir des chiffres négatifs de deux manières. Le numéro -20,5 pe
 
  Dans les deux cas, le montant est enregistré comme -20,5.  
 
- Si le dernier caractère de l'expression est **+** ou **-**, l'expression entière est enregistrée avec ce caractère. Par exemple, **10-20+** aboutira à 10 et non -10.  
+ Si le dernier caractère de l'expression est **+** ou **-** , l'expression entière est enregistrée avec ce caractère. Par exemple, **10-20+** aboutira à 10 et non -10.  
 
 ## <a name="entering-dates-and-times"></a>Saisie de dates et d'heures
 
 Vous pouvez entrer des dates et des heures dans tous les champs affectés à des dates (champs Date). Vous pouvez saisir les dates avec ou sans séparateurs.
 
 > [!NOTE]  
-> Le mode de saisie des dates et heures dépend des paramètres **Région**. Pour plus d'informations, voir [Modifier les paramètres de base](ui-change-basic-settings.md).  
+> Le mode de saisie des dates et heures dépend des paramètres **Région** . Pour plus d'informations, voir [Modifier les paramètres de base](ui-change-basic-settings.md).  
 
 ### <a name="entering-dates"></a>Saisie de dates
 

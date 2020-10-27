@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: find
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: a23851dfbca688c5935d967a66ad6ebc8a0abe5e
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: f7534d1e3365dd02b6f9f1afde03b5de76640e1a
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3195349"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3914895"
 ---
 # <a name="tell-me-faq"></a>FAQ Tell Me
 Cette rubrique répond aux questions que nos utilisateurs expérimentés posent souvent à propos de la fonctionnalité Tell Me.
@@ -39,7 +39,7 @@ Vous pouvez utiliser Tell Me dans le client Web local pour trouver des actions, 
 Tell Me est uniquement disponible dans le client Web ou l'application de bureau Windows.
 
 ### <a name="are-the-documentation-results-available-in-any-language"></a>Les résultats de la documentation sont-ils disponibles dans toutes les langues ?
-Les articles de l'aide s'affichent dans la langue spécifiée dans **Mes paramètres**, si l'aide est disponible dans cette langue.
+Les articles de l'aide s'affichent dans la langue spécifiée dans **Mes paramètres** , si l'aide est disponible dans cette langue.
 
 ### <a name="why-dont-i-see-a-bookmark-icon-for-my-search-results"></a>Pourquoi ne vois-je pas d'icône de signet pour mes résultats de recherche ?
 L'icône de signet ne s'affiche pas dans la fenêtre Tell Me lorsque la personnalisation est désactivée pour un rôle d'utilisateur.

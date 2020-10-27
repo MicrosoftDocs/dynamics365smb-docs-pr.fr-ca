@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 07/14/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 9984d61e97ff6c04733bd10818deb1d6cf57a66c
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: a2c2dc42ad600d4e3d05f4f3bdc1e5cbe2947812
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3783636"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3915777"
 ---
 # <a name="create-journal-opening-balances"></a>Créer des soldes ouverts journal
 
@@ -34,13 +34,13 @@ Avant de commencer, vérifiez que vous utilisez la page Tableau de bord Administ
 2. Ouvrez la feuille configuration et importez les données existantes à propos des clients, des articles, des fournisseurs et du grand livre. Pour plus d'informations, voir [Migrer des données client](admin-migrate-customer-data.md).  
 
     Les données de base sont maintenant en place. Ensuite, vous ajoutez les soldes d'ouverture. Les étapes suivantes décrivent comment créer des lignes journal pour les comptes du grand livre, mais la même procédure s'applique à la création de lignes journal pour les clients, les fournisseurs et les articles.  
-3. Choisissez l'action **Créer lignes journal compte du grand livre**.  
-4. Renseignez le raccourci **Options** de la manière appropriée, puis définissez les filtres selon vos besoins. Par exemple, dans le champ **Modèle feuille**, entrez un nom.  
-5. Cliquez sur le bouton **OK**. Les enregistrements se trouvent maintenant dans le journal, mais les montants sont vides.  
+3. Choisissez l'action **Créer lignes journal compte du grand livre** .  
+4. Renseignez le raccourci **Options** de la manière appropriée, puis définissez les filtres selon vos besoins. Par exemple, dans le champ **Modèle feuille** , entrez un nom.  
+5. Cliquez sur le bouton **OK** . Les enregistrements se trouvent maintenant dans le journal, mais les montants sont vides.  
 6. Exportez la table journal vers Excel, puis entrez manuellement le report et les informations de compte de solde à partir des données héritées.
 7. Importez et appliquez les informations de table dans la nouvelle compagnie. Les lignes journal sont prêtes pour le report.  
-8. Dans la feuille configuration, sélectionnez la table ligne journal, puis sélectionnez l'action **Données de base de données**.  
-9. Examinez les informations, puis sélectionnez l'action **Reporter**.  
+8. Dans la feuille configuration, sélectionnez la table ligne journal, puis sélectionnez l'action **Données de base de données** .  
+9. Examinez les informations, puis sélectionnez l'action **Reporter** .  
 10. Répétez les étapes pour importer et reporter les autres soldes ouverts.  
 
 > [!TIP]

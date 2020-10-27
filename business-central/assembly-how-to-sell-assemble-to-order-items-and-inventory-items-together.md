@@ -8,17 +8,17 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: kit, kitting
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: a76c7bfbe3e54fdc582fbaeed6ac88c5bc91148a
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 5dda40147d86bbe67e3eb20860ffa4648e2e9918
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3786256"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3913923"
 ---
 # <a name="sell-assemble-to-order-items-and-inventory-items-together"></a>Vente simultanée d'articles à assembler pour commande et d'articles d'inventaire
-Si le champ **Politique d'assemblage** de la fiche article d'un élément d'assemblage indique **Assembler pour stock**, le processus par défaut de document de vente se base sur l'hypothèse que l'article est déjà assemblé et peut être prélevé de l'inventaire, s'il est disponible. Par conséquent, aucun ordre d'assemblage n'est automatiquement créé et n'est lié à la ligne document de vente. Toutefois, si une partie (ou la totalité) de la quantité n'est pas disponible, vous avez la possibilité de créer un ordre d'assemblage pour la quantité restante lorsque vous renseignez le champ **Quantité à assembler pour commande** de la ligne document de vente. De cette manière, vous pouvez assembler l'article à commander même s'il est configuré pour être assemblé pour stock par défaut.  
+Si le champ **Politique d'assemblage** de la fiche article d'un élément d'assemblage indique **Assembler pour stock** , le processus par défaut de document de vente se base sur l'hypothèse que l'article est déjà assemblé et peut être prélevé de l'inventaire, s'il est disponible. Par conséquent, aucun ordre d'assemblage n'est automatiquement créé et n'est lié à la ligne document de vente. Toutefois, si une partie (ou la totalité) de la quantité n'est pas disponible, vous avez la possibilité de créer un ordre d'assemblage pour la quantité restante lorsque vous renseignez le champ **Quantité à assembler pour commande** de la ligne document de vente. De cette manière, vous pouvez assembler l'article à commander même s'il est configuré pour être assemblé pour stock par défaut.  
 
 Une flexibilité similaire existe lorsque vous vendez des articles à assembler pour la commande et qu'une partie de la quantité est en inventaire, à déduire de l'ordre d'assemblage. Pour plus d’informations, voir [Vente d'articles d'inventaire dans des flux à assembler pour commande](assembly-how-to-sell-inventory-items-in-assemble-to-order-flows.md).  
 
@@ -31,7 +31,7 @@ Une flexibilité similaire existe lorsque vous vendez des articles à assembler 
 ## <a name="to-sell-assemble-to-order-items-and-inventory-items-together"></a>Pour vendre des articles à assembler pour commande et des articles d'inventaire ensemble  
 1.  Sur une ligne de commande vente pour un article qui est configuré pour un assemblage pour stock, entrez une quantité dans le champ **Quantité** qui est supérieure au stock. La page **Vérifier disponibilité** s'affiche. Pour plus d'informations, voir [Voir la disponibilité des articles](inventory-how-availability-overview.md).
 2.  Notez le champ **Quantité totale** (une valeur négative), que vous entrerez dans l'étape suivante.  
-3.  Dans le champ **Quantité à assembler pour commande**, entrez la valeur de l'étape précédente.  
+3.  Dans le champ **Quantité à assembler pour commande** , entrez la valeur de l'étape précédente.  
 4.  Exécutez toutes les modifications dans les composants d'assemblage. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).  
 5.  Libérez le document de vente, préparez-le au prélèvement des articles en inventaire et à l'assemblage des articles indisponibles. Pour plus d'informations sur les étapes d'assemblage standard, voir [Assembler des articles](assembly-how-to-assemble-items.md).  
 

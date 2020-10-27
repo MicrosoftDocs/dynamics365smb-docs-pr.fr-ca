@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: ef4127f7bfe8a135f07b5fa1aa7db4b953489282
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 1dccea4f700f8cf141e05058b54fd20d62665b7b
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3787106"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3910990"
 ---
 # <a name="design-details-table-structure"></a>Détails de conception : structure de la table
 Pour comprendre comment les écritures dimension sont enregistrées et reportées, il est important de comprendre la structure de la table.  
@@ -43,7 +43,7 @@ Vous ne pouvez pas modifier cette table. Elle est utilisée pour trouver un ense
 |4|**Utilisé**|Booléen|Faux si non utilisé.|  
 
 ## <a name="table-482-reclas-dimension-set-buffer"></a>Table 482, Tampon ensemble de dimensions reclass.  
-Cette table est utilisée lorsque vous modifiez un code valeur de dimension, par exemple, pour une écriture article en utilisant la page **Journal reclassement article**.  
+Cette table est utilisée lorsque vous modifiez un code valeur de dimension, par exemple, pour une écriture article en utilisant la page **Journal reclassement article** .  
 
 |N° champ|Nom de champ|Type de données|Commentaire|  
 |---------------|----------------|---------------|-------------|  

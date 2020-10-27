@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: dimension
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: b9b69b539228e92776e1a7ee4c2fb491b20c1a15
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 98916c0843d84c76529e7b6f475ba207b2590a08
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3788006"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3911190"
 ---
 # <a name="dimension-set-entries-overview"></a>Aperçu des écritures de l'ensemble de dimensions
 Cette rubrique décrit comment les écritures de l'ensemble de dimensions sont stockées et validées dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
@@ -38,7 +38,7 @@ Les ensembles de dimensions sont stockés dans la table **Écriture de l'ensembl
 
 Lorsque vous créez une ligne de journal, un en-tête de document ou une ligne de document, vous pouvez spécifier une combinaison de valeurs de dimension. Au lieu d'enregistrer explicitement chaque valeur de dimension dans la base de données, un code d'ensemble de dimensions est affecté à la ligne de journal, à l'en-tête du document ou à la ligne du document pour spécifier l'ensemble de dimensions.  
 
-Lorsque vous modifiez et fermez la page **Modifier les écritures de l'ensemble de dimensions**, une vérification est exécutée pour voir si la combinaison de valeurs de dimension existe comme un ensemble de dimensions dans la table. Si la combinaison se produit dans la table, le code d'ensemble de dimensions correspondant est affecté à la ligne journal, à l'en-tête document ou à la ligne document. Sinon, un nouvel ensemble de dimensions est ajouté à la table, et le nouveau code d'ensemble de dimensions est affecté à la ligne journal, à l'en-tête document ou à la ligne document.
+Lorsque vous modifiez et fermez la page **Modifier les écritures de l'ensemble de dimensions** , une vérification est exécutée pour voir si la combinaison de valeurs de dimension existe comme un ensemble de dimensions dans la table. Si la combinaison se produit dans la table, le code d'ensemble de dimensions correspondant est affecté à la ligne journal, à l'en-tête document ou à la ligne document. Sinon, un nouvel ensemble de dimensions est ajouté à la table, et le nouveau code d'ensemble de dimensions est affecté à la ligne journal, à l'en-tête document ou à la ligne document.
 
 ## <a name="codeunit-408-dimension-management"></a>Codeunit 408 Gestion des dimensions
 Codeunit 408 Gestion des dimensions est une bibliothèque de fonctions qui gère les tâches courantes qui sont liées aux dimensions, telles que copier d'une table à une autre ou d'un document à un autre.

@@ -1,6 +1,6 @@
 ---
 title: Aperçu de la ligne de report dans le journal général | Microsoft Docs
-description: Cette rubrique décrit les modifications du codeunit 12, **Journal général-Ligne report**, qui est l'objet d'application majeur pour le report dans le grand livre et est le seul emplacement pour insérer des écritures grand livre, des écritures TVA et des écritures client et fournisseur.
+description: Cette rubrique décrit les modifications du codeunit 12, **Journal général-Ligne report** , qui est l'objet d'application majeur pour le report dans le grand livre et est le seul emplacement pour insérer des écritures grand livre, des écritures TVA et des écritures client et fournisseur.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -8,17 +8,17 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, general ledger, post
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 3891d97788cbb4751a9ee9e06baab39f7088f67f
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: d778b29a5789d015b26b504ea8699ac64a92286c
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3787956"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3911115"
 ---
 # <a name="general-journal-post-line-overview"></a>Aperçu de la ligne report de journal général
-Le Codeunit 12, **Journal général-Ligne report**, est l'objet d'application majeur pour le report dans le grand livre et est le seul emplacement pour insérer des écritures GL, TVA, et client et fournisseur. Ce codeunit est également utilisé pour toutes les opérations Affecter, Annuler l'affectation et Inverser.  
+Le Codeunit 12, **Journal général-Ligne report** , est l'objet d'application majeur pour le report dans le grand livre et est le seul emplacement pour insérer des écritures GL, TVA, et client et fournisseur. Ce codeunit est également utilisé pour toutes les opérations Affecter, Annuler l'affectation et Inverser.  
   
 Alors que le codeunit a été amélioré dans chaque version au cours des dix dernières années, son architecture est, au fond, restée inchangée. Le codeunit est devenu très grand, avec approximativement 7 600 lignes de code. Avec cette version de [!INCLUDE[d365fin](includes/d365fin_md.md)], l'architecture est modifiée et le codeunit a été rendu plus simple et plus facile à modifier. Cette documentation présente les modifications et fournit les informations dont vous aurez besoin pour la mise à niveau.  
   

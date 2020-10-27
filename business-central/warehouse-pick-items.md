@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/30/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: f051eb1267fd7ce9a45da23bf99007a21f039cf6
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: ef457ddf93e2634345c809b241e15acc94d0593e
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3784906"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3911731"
 ---
 # <a name="pick-items"></a>Prélèvement d'articles
 
@@ -24,7 +24,7 @@ L'activité entrepôt consistant à prélever les articles avant leur livraison 
 Si vous décidez d'organiser et d'enregistrer votre activité de prélèvement avec des documents entrepôt, activez le champ **Prélèvement requis** dans la fiche emplacement. Ceci indique que lorsque vous avez des articles devant être prélevés pour un document origine sortant, vous souhaitez que le prélèvement de ces articles soit contrôlé par le système. Un document source sortant peut être un document de vente, un retour achat, une commande transfert sortant, une commande service ou un bon de production dont les composantes doivent être prélevées.
 
 > [!NOTE]
-> Bien que le paramètre soit appelé **Prélèvement requis**, vous pouvez quand même reporter les livraisons directement à partir des documents commerciaux sources dans lesquels vous cochez cette case.
+> Bien que le paramètre soit appelé **Prélèvement requis** , vous pouvez quand même reporter les livraisons directement à partir des documents commerciaux sources dans lesquels vous cochez cette case.
 
 Si votre emplacement est configuré pour exiger un traitement des prélèvements, mais pas un traitement des livraisons, vous utilisez la page **Prélèvement inventaire** pour organiser les informations de prélèvement, les imprimer, entrer le résultat du prélèvement effectif et reporter les informations de prélèvement, ce qui reporte les informations de livraison des articles. Dans le cas du prélèvement de composantes pour un bon de production, le report du prélèvement reporte également la consommation.
 

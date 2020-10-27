@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/25/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: c10451c0534f7bd32184b9e94011942d6b05bb97
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: e3b0b01eb85cc6b24cc665e340da1d479517924a
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3789211"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3914870"
 ---
 # <a name="walkthrough-calculating-work-in-process-for-a-job"></a>Procédure pas à pas : calcul des travaux en cours pour un projet
 
@@ -46,27 +46,27 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 ## <a name="calculating-wip"></a>Calcul TEC  
  CRONUS a accepté un projet à long terme qui s'est étendu sur plusieurs périodes de reporting. Tricia, membre de l'équipe projet, calcule les travaux en cours (TEC) pour vérifier que l'état financier de la compagnie sera exact.  
 
- Au cours de cette procédure, Tricia sélectionne un groupe de tâches spécifique qui sera inclus dans le calcul TEC. Sur la page **Lignes tâche projet**, elle peut spécifier ces lignes dans la colonne **Total TEC**.  
+ Au cours de cette procédure, Tricia sélectionne un groupe de tâches spécifique qui sera inclus dans le calcul TEC. Sur la page **Lignes tâche projet** , elle peut spécifier ces lignes dans la colonne **Total TEC** .  
 
  Le tableau suivant décrit trois options.  
 
 |Champ|Description|  
 |-------------------------------------|---------------------------------------|  
 |**<blank>**|Laissez le champ vierge si la tâche projet fait partie d'un groupe de tâches.|  
-|**Total**|Définit la plage ou le groupe de tâches incluses dans le calcul des TEC et de la réception. Au sein du groupe, n'importe quelle tâche projet dont le **Type tâche projet** est défini sur **Report** est incluse dans le total TEC, à moins que le champ **TEC-Total** soit paramétré sur **Exclu**.|  
-|**Exclu**|S'applique uniquement à une tâche dont le **Type tâche projet** est défini sur **Validation**. La tâche n'est pas incluse lors du calcul des TEC et de la réception.|  
+|**Total**|Définit la plage ou le groupe de tâches incluses dans le calcul des TEC et de la réception. Au sein du groupe, n'importe quelle tâche projet dont le **Type tâche projet** est défini sur **Report** est incluse dans le total TEC, à moins que le champ **TEC-Total** soit paramétré sur **Exclu** .|  
+|**Exclu**|S'applique uniquement à une tâche dont le **Type tâche projet** est défini sur **Validation** . La tâche n'est pas incluse lors du calcul des TEC et de la réception.|  
 
  Dans la procédure pas-à-pas suivante, Tricia applique la méthode Valeur de coût, la norme de sa compagnie, pour calculer les TEC. Elle indique la partie du projet qui est incluse dans le calcul des TEC en affectant des valeurs Total TEC à différentes lignes tâche projet.  
 
 ### <a name="to-calculate-wip"></a>Pour calculer les TEC :  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Projets**, puis sélectionnez le lien associé.  
-2.  Dans la liste **Projets**, sélectionnez le projet **Deerfield**, puis choisissez l'action **Modifier**. La fiche projet s'ouvre en mode édition.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Projets** , puis sélectionnez le lien associé.  
+2.  Dans la liste **Projets** , sélectionnez le projet **Deerfield** , puis choisissez l'action **Modifier** . La fiche projet s'ouvre en mode édition.  
 
      Les TEC peuvent être calculés en fonction de la méthode sélectionnée dans ce champ : Valeur de coût, Valeur des ventes, Coût des ventes, Pourcentage avancement ou Fin de contrat. Dans cet exemple, CRONUS utilise la méthode Valeur de coût.  
 
-3.  Sur le raccourci **Report**, choisissez le champ **Méthode TEC**, puis sélectionnez **Valeur de coût**.  
-4.  Choisissez l'action **Lignes tâche projet** et définissez les valeurs suivantes dans le champ **Total TEC**.  
+3.  Sur le raccourci **Report** , choisissez le champ **Méthode TEC** , puis sélectionnez **Valeur de coût** .  
+4.  Choisissez l'action **Lignes tâche projet** et définissez les valeurs suivantes dans le champ **Total TEC** .  
 
      Le tableau suivant décrit les valeurs.  
 
@@ -77,34 +77,34 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
     |1210|Exclu|  
     |1310|Exclu|  
 
-5.  Choisissez l'action **TEC**, puis l'action **Calculer TEC**.  
-6.  Dans la page **Projet Calculer TEC**, vous pouvez sélectionner un projet pour lequel vous souhaitez effectuer le calcul TEC. Dans le raccourci **Projet**, sélectionnez **Deerfield** dans le champ **N°** .  
-7.  Dans le champ **Date de report**, entrez une date postérieure à la date de travail.
-8.  Dans le champ **N° document** , saisissez **1**. Cela crée un document auquel vous pourrez vous référer ultérieurement à des fins de traçabilité.  
-9. Pour lancer le traitement par lots, cliquez sur le bouton **OK**. Un message s'affiche. Cliquez sur le bouton **OK** pour continuer. Fermez la page **Lignes tâche projet**.  
+5.  Choisissez l'action **TEC** , puis l'action **Calculer TEC** .  
+6.  Dans la page **Projet Calculer TEC** , vous pouvez sélectionner un projet pour lequel vous souhaitez effectuer le calcul TEC. Dans le raccourci **Projet** , sélectionnez **Deerfield** dans le champ **N°** .  
+7.  Dans le champ **Date de report** , entrez une date postérieure à la date de travail.
+8.  Dans le champ **N° document** , saisissez **1** . Cela crée un document auquel vous pourrez vous référer ultérieurement à des fins de traçabilité.  
+9. Pour lancer le traitement par lots, cliquez sur le bouton **OK** . Un message s'affiche. Cliquez sur le bouton **OK** pour continuer. Fermez la page **Lignes tâche projet** .  
 
     > [!NOTE]  
     >  Le message déclare qu'il y a des avertissements associés au calcul TEC. Vous les examinerez dans la procédure suivante.  
 
-10. Dans la fiche **Projet**, affichez le raccourci **TEC et Réception** afin de visualiser les valeurs calculées. Vous pouvez également visualiser **Date validation TEC** et les valeurs qui ont été validées dans la comptabilité, le cas échéant.  
+10. Dans la fiche **Projet** , affichez le raccourci **TEC et Réception** afin de visualiser les valeurs calculées. Vous pouvez également visualiser **Date validation TEC** et les valeurs qui ont été validées dans la comptabilité, le cas échéant.  
 
- Notez que la valeur de **Montant coûts récep.** est 215,60 dans la colonne **À valider**. Cela reflète les coûts totaux de deux des éléments du groupe de tâches projet 1110 à 1130. Le troisième élément a été défini sur **Exclu**, et n'est donc pas inclus dans le calcul TEC.  
+ Notez que la valeur de **Montant coûts récep.** est 215,60 dans la colonne **À valider** . Cela reflète les coûts totaux de deux des éléments du groupe de tâches projet 1110 à 1130. Le troisième élément a été défini sur **Exclu** , et n'est donc pas inclus dans le calcul TEC.  
 
 ### <a name="to-review-wip-warnings"></a>Pour étudier les avertissements TEC  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Cockpit TEC**, puis sélectionnez le lien associé.  
-2.  Sélectionnez le projet **Deerfield**, puis l'action **Afficher des avertissements**.  
-3.  Sur la page **Avertissements TEC projet**, examinez l'avertissement associé au projet.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Cockpit TEC** , puis sélectionnez le lien associé.  
+2.  Sélectionnez le projet **Deerfield** , puis l'action **Afficher des avertissements** .  
+3.  Sur la page **Avertissements TEC projet** , examinez l'avertissement associé au projet.  
 
  Après la fin de la période comptable, Tricia doit recalculer les TEC afin d'inclure le travail accompli jusqu'à cette date.  
 
 ### <a name="to-recalculate-wip"></a>Pour recalculer les TEC :  
 
-1.  Sur la fiche **Projet**, choisissez l'action **Écritures TEC** pour afficher le calcul TEC.  
+1.  Sur la fiche **Projet** , choisissez l'action **Écritures TEC** pour afficher le calcul TEC.  
 
      La page **Écritures TEC projet** affiche les dernières écritures TEC calculées pour un projet, même si les TEC n'ont pas encore été reportés dans le grand livre.  
 
-2.  Vous pouvez suivre les étapes de la procédure qui explique comment calculer les TEC dans le but de recalculer les TEC. Lors de chaque calcul TEC, une écriture est créée sur la page **Écritures TEC projet**.  
+2.  Vous pouvez suivre les étapes de la procédure qui explique comment calculer les TEC dans le but de recalculer les TEC. Lors de chaque calcul TEC, une écriture est créée sur la page **Écritures TEC projet** .  
 3.  Fermez la page.  
 
 > [!NOTE]  
@@ -115,22 +115,22 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 
 ### <a name="to-post-wip-to-general-ledger"></a>Pour reporter les TEC dans le grand livre  
 
-1.  Dans la liste **Projets**, sélectionnez le projet **Deerfield**.  
-2.  Choisissez l'action **TEC**, puis l'action **Reporter TEC au GL**.  
-3.  Sur la page **Projet - Reporter TEC au GL**, sur le raccourci **Projet**, sélectionnez **Deerfield** dans le champ **N°**. .  
-4.  Sur le raccourci **Options**, dans le champ **N° document contrepassation**, entrez **1**.  
+1.  Dans la liste **Projets** , sélectionnez le projet **Deerfield** .  
+2.  Choisissez l'action **TEC** , puis l'action **Reporter TEC au GL** .  
+3.  Sur la page **Projet - Reporter TEC au GL** , sur le raccourci **Projet** , sélectionnez **Deerfield** dans le champ **N°** . .  
+4.  Sur le raccourci **Options** , dans le champ **N° document contrepassation** , entrez **1** .  
 5.  Cliquez sur le bouton **OK** pour valider les TEC en comptabilité.  
 6.  Cliquez sur le bouton **OK** pour fermez la page de confirmation.  
 
-     Après avoir terminé le report, vous pouvez visualiser les informations le concernant sur la page **Écritures GL TEC**.  
+     Après avoir terminé le report, vous pouvez visualiser les informations le concernant sur la page **Écritures GL TEC** .  
 
-7.  Dans la liste **Projets**, sélectionnez le projet **Deerfield**, puis choisissez l'action **Écritures compta. TEC**.  
+7.  Dans la liste **Projets** , sélectionnez le projet **Deerfield** , puis choisissez l'action **Écritures compta. TEC** .  
 
-     Sur la page **Écritures GL TEC projet**, vérifiez que les TEC ont été reportés dans le grand livre.  
+     Sur la page **Écritures GL TEC projet** , vérifiez que les TEC ont été reportés dans le grand livre.  
 
 8.  Fermez la page.  
-9. Ouvrez la fiche **Projet** pour le projet **Deerfield**.  
-10. Sur le raccourci **TEC et Réception**, vous remarquez que dans la colonne **Reporté**, le champ **Montant GL coûts récep.** est à présent rempli, ce qui indique que les TEC ont bien été reportés dans le grand livre.  
+9. Ouvrez la fiche **Projet** pour le projet **Deerfield** .  
+10. Sur le raccourci **TEC et Réception** , vous remarquez que dans la colonne **Reporté** , le champ **Montant GL coûts récep.** est à présent rempli, ce qui indique que les TEC ont bien été reportés dans le grand livre.  
 11. Cliquez sur le bouton **OK** pour fermer la fiche.  
 
 ## <a name="reversing-a-wip-posting"></a>Inversion d'un report TEC  
@@ -138,17 +138,17 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 
 ### <a name="to-reverse-a-wip-posting"></a>Pour inverser un report TEC  
 
-1.  Dans la liste **Projets**, sélectionnez le projet **Deerfield**.  
-2.  Choisissez l'action **TEC**, puis l'action **Reporter TEC au GL**.  
-3.  Sur la page **Projet - Reporter TEC au GL**, sur le raccourci **Projet**, sélectionnez **Deerfield** dans le champ **N°**. .  
-4.  Sur le raccourci **Options**, dans le champ **N° document contrepassation**, entrez **1**.  
-5.  Dans le champ **Date validation contrepassation**, saisissez la date validation originale. La date doit correspondre à celle utilisée initialement pour calculer les TEC.  
+1.  Dans la liste **Projets** , sélectionnez le projet **Deerfield** .  
+2.  Choisissez l'action **TEC** , puis l'action **Reporter TEC au GL** .  
+3.  Sur la page **Projet - Reporter TEC au GL** , sur le raccourci **Projet** , sélectionnez **Deerfield** dans le champ **N°** . .  
+4.  Sur le raccourci **Options** , dans le champ **N° document contrepassation** , entrez **1** .  
+5.  Dans le champ **Date validation contrepassation** , saisissez la date validation originale. La date doit correspondre à celle utilisée initialement pour calculer les TEC.  
 6.  Sélectionnez le champ **Contrepasser uniquement** . Cela permettra d'inverser les TEC précédemment reportés, sans reporter de nouveaux TEC dans le grand livre.  
 7.  Cliquez sur le bouton **OK** pour exécuter le traitement en lot, puis sur le bouton **OK** pour fermer la page de confirmation.  
-8.  Ouvrez la fiche **Projet** correspondant à **Deerfield**.  
+8.  Ouvrez la fiche **Projet** correspondant à **Deerfield** .  
 9. Sur le raccourci **TEC et Réception** , vérifiez qu'il n'y a pas d'écritures TEC validées.  
 10. Fermez cette page.  
-11. Dans la liste **Projets**, sélectionnez le projet **Deerfield**, choisissez l'action **TEC**, puis l'action **Écritures compta. TEC**. La case du champ **Contre-passé** des écritures TEC est sélectionnée.  
+11. Dans la liste **Projets** , sélectionnez le projet **Deerfield** , choisissez l'action **TEC** , puis l'action **Écritures compta. TEC** . La case du champ **Contre-passé** des écritures TEC est sélectionnée.  
 12. Fermez cette page.  
 13. Ouvrez les **Lignes tâche projet** pour le projet, incluez les sections du projet qui auraient dû faire partie du calcul des TEC, puis recalculez et validez le nouveau résultat en comptabilité.  
 

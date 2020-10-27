@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: trade, sell, configure
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 65064d8c8fb0082c49f230398f22ce1406993f46
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: b7eb82e5fc3dc20449f3fc8352fbda4e80372a20
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3788835"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3910440"
 ---
 # <a name="setting-up-sales"></a>Définition des ventes.
 Avant de pouvoir gérer les processus vente, vous devez configurer les règles et valeurs qui définissent les stratégies de vente de la compagnie.
@@ -32,7 +32,7 @@ La configuration des ventes en relation avec les finances, comme les modes de r�
 | Autoriser les clients à payer via Paypal en sélectionnant le logo Paypal sur les documents vente. |[Activer les paiements client via Paypal](sales-how-enable-payment-service-extensions.md) |
 | Entrer les différentes remises et prix spéciaux accordés aux clients en fonction de l'article, des quantités et/ou de la date. |[Enregistrement des prix de vente, des remises et des accords sur les paiements](sales-how-record-sales-price-discount-payment-agreements.md) |
 | Configurer les représentants de sorte à pouvoir les affecter aux contacts client ou à évaluer les performances des représentants et vous en servir comme base pour calculer la commission et les bonus. |[Configurer des représentants](sales-how-setup-salespeople.md) |
-| Spécifier pour différents clients ou pour tous les clients le moyen par lequel les documents vente sont envoyés par défaut lorsque vous sélectionnez l'action **Valider et envoyer**. |[Configurer des profils d'envoi de documents](sales-how-setup-document-send-profiles.md) |
+| Spécifier pour différents clients ou pour tous les clients le moyen par lequel les documents vente sont envoyés par défaut lorsque vous sélectionnez l'action **Valider et envoyer** . |[Configurer des profils d'envoi de documents](sales-how-setup-document-send-profiles.md) |
 | Configurez votre messagerie de sorte qu'elle contienne un résumé des informations du document de vente qui est envoyé. |[Envoyer des documents par courriel](ui-how-send-documents-email.md). |
 |Utilisez un service Web UE pour vérifier le numéro d'immatriculation de TVA d'un client.|[Vérifier les numéros d'identification TVA](finance-setup-vat.md)|
 |Définissez les différents incoterms que vous proposez aux clients ou que vos fournisseurs vous proposent.|[Configurer des méthodes de livraison](sales-how-set-up-shipment-methods.md)|

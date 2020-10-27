@@ -5,14 +5,14 @@ author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.search.keywords: rfq
-ms.date: 05/28/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: a655768234c262ff98a753b28dfbbd53d1bc1749
-ms.sourcegitcommit: 4545bb597dd9dc4c563b30af762977ee1d815497
+ms.openlocfilehash: 6b0cf72609a180d271604dd276f840efbc6b1aa6
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410702"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3910665"
 ---
 # <a name="track-packages"></a>Suivre des colis
 
@@ -22,11 +22,11 @@ La procédure suivante montre comment suivre un colis à partir d'une livraison 
 
 ## <a name="to-track-a-package"></a>Pour suivre un colis
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Livraison vente reportée**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Livraison vente reportée** , puis sélectionnez le lien associé.
 2. Ouvrez la livraison appropriée.
-3. Choisissez l'action **Mettre à jour le document**.
-4. Dans le champ **N° récépissé**, entrez le numéro de package que vous avez reçu de l'agent de livraison. Mettez à jour l'**agent de livraison** si nécessaire et fermez la page.
-5. Sélectionnez l'action **Suivre colis**.
+3. Choisissez l'action **Mettre à jour le document** .
+4. Dans le champ **N° récépissé** , entrez le numéro de package que vous avez reçu de l'agent de livraison. Mettez à jour l' **agent de livraison** si nécessaire et fermez la page.
+5. Sélectionnez l'action **Suivre colis** .
 
 Votre navigateur par défaut ouvre la page de suivi de l'agent de livraison.
 

@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: dd15339a77fbe04ee823302256e8c9724c369bbf
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 484174bf02377081d9220f9dd4f0b47fdc547c34
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3784217"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3915545"
 ---
 # <a name="set-up-multiple-interest-rates"></a>Paramétrer plusieurs taux d'intérêt
 Plusieurs taux d'intérêt multiples sont utilisés pour différentes périodes pour les paiements retardés dans les transactions commerciales. Par exemple, un gouvernement définit l'intérêt maximum à prélever pour un consommateur. Ce taux d'intérêt peut être modifié deux fois par an le 1er janvier et le 1er juillet inclus. Le taux d'intérêt entre les sociétés (B2B) est accepté par les parties et il n'existe aucune limite à ce groupe de clients. Le taux annoncé est généralement quatre fois supérieur aux intérêts bancaires normaux.
@@ -23,13 +23,13 @@ Plusieurs taux d'intérêt multiples sont utilisés pour différentes périodes 
 Lorsque vous créez des modalités de frais financiers et des modalités de rappel, pour la pénalité de retard de paiement, vous pouvez spécifier plusieurs taux d'intérêt afin que les frais de pénalité soient calculés sur la base de plusieurs taux d'intérêt à différentes périodes. Pour plus d'informations, voir [Collecte des soldes restants](receivables-collect-outstanding-balances.md).
 
 ## <a name="to-set-up-multiple-interest-rates"></a>Pour paramétrer plusieurs taux d'intérêt  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modalités de frais financiers**, puis sélectionnez le lien associé.  
-2.  Sur la page **Modalités frais financiers**, sélectionnez les modalités financières requises, puis sélectionnez l'action **Taux d'intérêt**.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modalités de frais financiers** , puis sélectionnez le lien associé.  
+2.  Sur la page **Modalités frais financiers** , sélectionnez les modalités financières requises, puis sélectionnez l'action **Taux d'intérêt** .  
 3.  Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
-4.  Choisissez le bouton **OK**.  
-5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modalités de rappel**, puis sélectionnez le lien associé.  
-6.  Sur la page **Modalités de rappel**, sélectionnez la modalité de rappel, puis sélectionnez l'action **Niveaux**.  
-7.  Sur la page **Niveaux rappel**, sélectionnez le champ **Calculer intérêts**.  
+4.  Choisissez le bouton **OK** .  
+5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modalités de rappel** , puis sélectionnez le lien associé.  
+6.  Sur la page **Modalités de rappel** , sélectionnez la modalité de rappel, puis sélectionnez l'action **Niveaux** .  
+7.  Sur la page **Niveaux rappel** , sélectionnez le champ **Calculer intérêts** .  
 
 Lorsque vous émettez une note de frais financiers, la note affiche les frais financiers avec plusieurs taux d'intérêt pour une période spécifique. La note affiche également les informations contact du client, de la compagnie émettant la note, du montant supplémentaire, et du montant total. L'écriture ouverture sur la facture est affichée en gras. Les intérêts sont calculés avec plusieurs taux d'intérêt pour une période spécifique et sont imprimés après l'écriture ouverture de la facture.  
 

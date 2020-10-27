@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accessibility, shortcuts, keyboarding
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: d7aafe33ac70546378abd90cc98aea3b1a326c77
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: d53932be1597a96ced906ed7546ce8ff011639e3
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3782478"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3912631"
 ---
 # <a name="copy-and-paste-faq"></a>FAQ sur l'opération Copier et coller
 Vous pouvez copier une ou plusieurs lignes (enregistrements) dans une liste ou un champ unique sur une page, puis collez ce que vous avez copié dans la même page, une autre page, ou un document externe (comme Microsoft Excel et un courriel Outlook). En raccourci, pour copier, appuyez sur CTRL+C (cmd+C dans macOS) sur votre clavier. Pour coller, appuyez sur CTRL+V (cmd+V dans macOS).
@@ -38,7 +38,7 @@ Pour copier une ligne unique, sélectionnez-la, puis appuyez sur Ctrl+C.
 
 Pour copier plusieurs lignes, vous pouvez :
 - Appuyer sur Ctrl+clic sur une autre ligne ou appuyer sur Maj+clic pour sélectionner la ligne et toutes les lignes entre les deux. Voir [Raccourcis clavier](keyboard-shortcuts.md#CopyRows) pour plusieurs combinaisons souris et clavier pour sélectionner des lignes.
-- Sélectionnez ![Afficher plus d'options](media/show-more-options-icon.png "Icône Afficher plus d'options") dans la première colonne, sélectionnez **Sélectionner davantage**, activez la case à cocher à côté de chaque ligne à copier, puis appuyez sur Ctrl+C.
+- Sélectionnez ![Afficher plus d'options](media/show-more-options-icon.png "Icône Afficher plus d'options") dans la première colonne, sélectionnez **Sélectionner davantage** , activez la case à cocher à côté de chaque ligne à copier, puis appuyez sur Ctrl+C.
 
 ## <a name="how-do-i-paste-rows"></a>Comment coller des lignes ?
 Sélectionnez une ligne vide, avec le focus dans n'importe quelle cellule, puis appuyez sur Crtl+V.

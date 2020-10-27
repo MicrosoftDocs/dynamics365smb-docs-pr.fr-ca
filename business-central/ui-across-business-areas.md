@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: feature overview, functionality
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 774c45d50ac56cb0e950ea8687ee86d24cfb9b0a
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 2382fa440c67881411fe67e596a62aaf5d431426
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3782603"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3912756"
 ---
 # <a name="general-business-functionality"></a>Fonctionnalités marché
 [!INCLUDE[d365fin](includes/d365fin_md.md)] fournit des fonctionnalités dédiées pour les domaines d'activité courants, tels que la finance et les ventes. Pour plus d'informations, voir [Fonctionnalités d'entreprise](across-business-functionality.md).
@@ -38,7 +38,7 @@ Le tableau suivant répertorie ces secteurs d'activité généraux avec des lien
 | Définir des codes texte standard de façon à étendre le texte standard en ajoutant des lignes supplémentaires et définir des conditions d'utilisation des lignes supplémentaires. |[Ajouter un texte d'article étendu](ui-how-define-ext-text.md) |
 |Créez des tâches pour vous rappeler le travail à faire. Vous pouvez créer des tâches pour vous-même, mais vous pouvez également affecter des tâches à d'autres personne ou avoir une tâche affectée à vous-même par une autre personne de votre organisation.|[Définir les tâches utilisateur](across-user-tasks.md)|
 |Utilisez vos données Business Central dans Excel.|[Exportation de vos données métier vers Excel](about-export-data.md)|
-|Comprendre ce qui se produit lorsque vous choisissez l'action **Reporter**.|[Validation des documents et des feuilles](ui-post-documents-journals.md)|
+|Comprendre ce qui se produit lorsque vous choisissez l'action **Reporter** .|[Validation des documents et des feuilles](ui-post-documents-journals.md)|
 |Reportez plusieurs documents vente ou achat ensemble, immédiatement ou selon une programmation.|[Reporter plusieurs documents en même temps](ui-batch-posting.md)|  
 |Examinez le résultat du report avant de reporter.|[Aperçu des résultats du report](ui-how-preview-post-results.md)|
 |Modifiez les champs sélectionnés sur les documents vente ou achat reportés.|[Modifier les documents reportés](across-edit-posted-document.md)|

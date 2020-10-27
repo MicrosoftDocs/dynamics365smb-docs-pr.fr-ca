@@ -8,20 +8,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize, import, implement
-ms.date: 06/22/2020
+ms.date: 10/01/2020
 ms.author: edupont
 ROBOTS: NOINDEX
-ms.openlocfilehash: c42f16f588b360b0e382ab2a3a91bd6974cc8a7e
-ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
+ms.openlocfilehash: 7c17c5f54553e7960f4386918bda640fa2e0380e
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3529198"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3915195"
 ---
 # <a name="the-dynamics-gp-data-migration-extension"></a>Extension Dynamics GP Data Migration
 
 > [!NOTE]
-> Cette extension est obsolète dans la mise à jour 15.3. Nous recommandons aux utilisateurs qui souhaitent migrer depuis Dynamics GP d'utiliser plutôt l'assistant **Migration nuage**. L'extension **Migration nuage** a des fonctionnalités plus robustes et apporte plus de données dans Business Central à partir de Dynamics GP. Pour en savoir plus, voir la rubrique [Migrer vers Business Central Online à partir de Dynamics GP](/dynamics365/business-central/dev-itpro/administration/migrate-dynamics-gp) dans le contenu d'administration pour [!INCLUDE[prodshort](includes/prodshort.md)].
+> Cette extension est obsolète dans la mise à jour 15.3. Nous recommandons aux utilisateurs qui souhaitent migrer depuis Dynamics GP d'utiliser plutôt l'assistant **Migration nuage** . L'extension **Migration nuage** a des fonctionnalités plus robustes et apporte plus de données dans Business Central à partir de Dynamics GP. Pour en savoir plus, voir la rubrique [Migrer vers Business Central Online à partir de Dynamics GP](/dynamics365/business-central/dev-itpro/administration/migrate-dynamics-gp) dans le contenu d'administration pour [!INCLUDE[prodshort](includes/prodshort.md)].
 
 ## <a name="see-also"></a>Voir aussi
 

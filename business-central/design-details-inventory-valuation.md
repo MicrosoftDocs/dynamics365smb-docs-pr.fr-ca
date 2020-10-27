@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: d37ef45bc1232bf0811a14123a814f1bf57ee7c2
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 15ad8d52508148449fcb82c8c4b3b5b3c42b8443
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3787706"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3913698"
 ---
 # <a name="design-details-inventory-valuation"></a>Détails de conception : évaluation de l'inventaire
 Évaluation de l'inventaire XE L'évaluation de l'inventaire est la détermination du coût qui est affecté à un article de l'inventaire, comme exprimé par l'équation suivante.  
@@ -27,7 +27,7 @@ Le calcul de l'évaluation de l'inventaire utilise le champ **Coût indiqué (r�
 Les entrées sont affectées les unes en fonction des autres, soit par l'affectation fixe XE « Affectation ; fixe », soit en fonction du principe général du flux de coûts défini par la méthode d'évaluation du coût XE « Méthode ; Évaluation coût » XE « Méthode évaluation coût ». Une écriture de diminution d'inventaire peut être affectée à plusieurs écritures d'augmentation avec des dates de report différentes et éventuellement différents coûts d'acquisition XE « Coût acquisition ». Pour plus d'informations, voir [Détails de conception : traçabilité](design-details-item-application.md). Par conséquent, le calcul de la valeur de l'inventaire XE « Valeur inventaire » d'une date donnée est basé sur l'ajout des écritures valeur positives et négatives.  
 
 ## <a name="inventory-valuation-report"></a>Rapport Évaluation de l'inventaire  
-Pour calculer la valeur du stock dans le rapport **Évaluation du stock**, le rapport commence par calculer la valeur de stock de l'article à une date de début donnée. Il ajoute ensuite la valeur des augmentations d'inventaire et soustrait la valeur des diminutions d'inventaire jusqu'à une date fin donnée. Le résultat final est la valeur inventaire à la date fin. Le rapport calcule ces valeurs en additionnant les valeurs dans le champ **Coût indiqué (réel)** dans les écritures valeur, à l'aide des dates de report en tant que filtres.  
+Pour calculer la valeur du stock dans le rapport **Évaluation du stock** , le rapport commence par calculer la valeur de stock de l'article à une date de début donnée. Il ajoute ensuite la valeur des augmentations d'inventaire et soustrait la valeur des diminutions d'inventaire jusqu'à une date fin donnée. Le résultat final est la valeur inventaire à la date fin. Le rapport calcule ces valeurs en additionnant les valeurs dans le champ **Coût indiqué (réel)** dans les écritures valeur, à l'aide des dates de report en tant que filtres.  
 
 Le rapport imprimé affiche toujours les montants réels, c'est-à-dire le coût des écritures qui ont été reportées comme étant facturées. Le rapport imprime également le coût prévu des écritures reportées comme étant réceptionnées ou livrées, si vous sélectionnez le champ Inclure coûts prévus sur le raccourci Options.  
 

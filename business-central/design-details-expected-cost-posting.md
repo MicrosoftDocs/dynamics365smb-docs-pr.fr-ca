@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 176b0e999f10f7cc055ac40431dd3507ed2836f6
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: d2bd63f38e434d15ba0592126a11c5f92f8611aa
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3787906"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3911140"
 ---
 # <a name="design-details-expected-cost-posting"></a>Détails de conception : report du coût prévu
 Les coûts prévus représentent l'estimation, par exemple, du coût d'un article acheté que vous enregistrez avant la réception de la facture de cet article.  
@@ -25,12 +25,12 @@ Les coûts prévus représentent l'estimation, par exemple, du coût d'un articl
 > [!NOTE]  
 >  Les coûts prévus sont gérés uniquement pour des transactions article. Les coûts prévus ne sont pas pour des types de transaction négligeables, tels que la capacité et les frais annexes.  
 
- Si seule la partie de quantité d'une augmentation d'inventaire a été reportée, la valeur d'inventaire dans le grand livre ne change pas, sauf si vous avez sélectionné la case à cocher **Report coût prévu au GL** sur la page **Configuration inventaire**. Dans ce cas, le coût prévu est reporté dans les comptes provisoires au moment de la réception. Une fois que la réception a été entièrement facturée, les comptes provisoires sont ensuite équilibrés et le coût réel est reporté dans le compte inventaire.  
+ Si seule la partie de quantité d'une augmentation d'inventaire a été reportée, la valeur d'inventaire dans le grand livre ne change pas, sauf si vous avez sélectionné la case à cocher **Report coût prévu au GL** sur la page **Configuration inventaire** . Dans ce cas, le coût prévu est reporté dans les comptes provisoires au moment de la réception. Une fois que la réception a été entièrement facturée, les comptes provisoires sont ensuite équilibrés et le coût réel est reporté dans le compte inventaire.  
 
  Pour prendre en charge le travail de rapprochement et de traçabilité, l'écriture valeur facturée montre que le coût indiqué prévu a été reporté pour équilibrer les comptes provisoires.  
 
 ## <a name="example"></a>Exemple :  
- L'exemple suivant indique le coût prévu si les cases à cocher **Report coûts automatique** et **Report coût prévu au GL** sont sélectionnées sur la page **Configuration inventaire**.  
+ L'exemple suivant indique le coût prévu si les cases à cocher **Report coûts automatique** et **Report coût prévu au GL** sont sélectionnées sur la page **Configuration inventaire** .  
 
  Vous reportez un bon de commande comme reçu. Le coût prévu est 95,00 $.  
 

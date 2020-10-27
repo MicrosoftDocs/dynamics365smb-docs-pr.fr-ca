@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/30/2020
+ms.date: 10/01/2020
 ms.author: jswymer
-ms.openlocfilehash: b46786b60d7c5799b056c49188785bd595db57ff
-ms.sourcegitcommit: 866f0e6ed9df3397072b9df838e31c3a1f4b626d
+ms.openlocfilehash: 98105cb3e3634169b31a850f20a65a3854b006b4
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3333918"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3911565"
 ---
 # <a name="managing-database-access-intent"></a>Gestion de l'accès intentionnel à la base de données 
 
@@ -29,11 +29,11 @@ Lors de l'exécution des objets, l'accès intentionnel à la base de données d�
 
 La page **Liste d'accès intentionnels à la base de données** vous permet de remplacer l'accès intentionnel à la base de données prédéfini pour les objets lors de leur exécution.
 
-En termes de base de données, cette fonction est communément appelée *échelle horizontale en lecture*. Pour en savoir plus sur l'échelle horizontale en lecture et l'accès intentionnel aux données dans [!INCLUDE[prodshort](includes/prodshort.md)], consultez [Utilisation de l'échelle horizontale en lecture pour de meilleures performances](/dynamics365/business-central/dev-itpro/administration/database-read-scale-out-overview) dans l'aide [!INCLUDE[prodshort](includes/prodshort.md)] sur Developer and Administration.
+En termes de base de données, cette fonction est communément appelée *échelle horizontale en lecture* . Pour en savoir plus sur l'échelle horizontale en lecture et l'accès intentionnel aux données dans [!INCLUDE[prodshort](includes/prodshort.md)], consultez [Utilisation de l'échelle horizontale en lecture pour de meilleures performances](/dynamics365/business-central/dev-itpro/administration/database-read-scale-out-overview) dans l'aide [!INCLUDE[prodshort](includes/prodshort.md)] sur Developer and Administration.
 
 ## <a name="to-change-the-database-access-intent"></a>Pour modifier l'accès intentionnel à la base de données
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Liste d'accès intentionnels à la base de données**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Liste d'accès intentionnels à la base de données** , puis choisissez le lien associé.
 
     La page répertorie l'ensemble des rapports, pages et requêtes. La colonne **Accès intentionnel** comprend l'une des valeurs suivantes :
 
@@ -43,12 +43,12 @@ En termes de base de données, cette fonction est communément appelée *échell
     |**Autoriser écriture**|Définit l'objet pour utiliser la base de données principale, permettant à l'utilisateur de modifier les données.|
     |**Lecture seule**|Définit l'objet pour utiliser la réplique de la base de données ; autrement dit, l'utilisateur peut uniquement afficher les données, et non les modifier.|
 
-2. Choisissez l'action **Modifier la liste**.
+2. Choisissez l'action **Modifier la liste** .
 
-3. Sur la page **Modifier : liste d'accès intentionnels à la base de données**, modifiez le champ **Accès intentionnel** pour les objets.
+3. Sur la page **Modifier : liste d'accès intentionnels à la base de données** , modifiez le champ **Accès intentionnel** pour les objets.
 
     > [!NOTE]
-    > Si un objet modifiable, comme la fiche client, est défini sur **Lecture seule**, la base de données principale est toujours utilisée, quelle que soit l'accès intentionnel, permettant aux utilisateurs d'apporter des modifications comme d'habitude.
+    > Si un objet modifiable, comme la fiche client, est défini sur **Lecture seule** , la base de données principale est toujours utilisée, quelle que soit l'accès intentionnel, permettant aux utilisateurs d'apporter des modifications comme d'habitude.
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/deploy-configure-dynamics-365-business-central/)
 

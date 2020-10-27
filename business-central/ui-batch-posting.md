@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms.date: 08/18/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 2c04dac37b043995a9b78e2f662f9411c3cf9ae1
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 1fd25f8b07a359414f62ef4757162f8a73889c27
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3782528"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3912731"
 ---
 # <a name="post-multiple-documents-at-the-same-time"></a>Reporter plusieurs documents en même temps
 
@@ -25,11 +25,11 @@ Au lieu de reporter des documents individuels un par un, vous pouvez sélectionn
 
 La procédure suivante explique comment reporter immédiatement plusieurs bons de commande. Les étapes sont similaires pour tous les documents achat et vente.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande**, puis sélectionnez le lien associé.
-2. Sur la page **Bons de commande**, sélectionnez toutes les commandes à reporter :
-3. Dans le champ **N°**, choisissez les trois points verticaux pour ouvrir le menu contextuel, puis choisissez l'action **Sélectionner davantage**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande** , puis sélectionnez le lien associé.
+2. Sur la page **Bons de commande** , sélectionnez toutes les commandes à reporter :
+3. Dans le champ **N°** , choisissez les trois points verticaux pour ouvrir le menu contextuel, puis choisissez l'action **Sélectionner davantage** .
 4. Cochez la case pour toutes les lignes représentant les commandes que vous souhaitez reporter en même temps.
-5. Choisissez l'action **Report**, puis sélectionnez l'action **Reporter**.
+5. Choisissez l'action **Report** , puis sélectionnez l'action **Reporter** .
 6. Choisissez le bouton **Oui** dans le message de confirmation.
 
 ## <a name="to-batch-post-multiple-purchase-orders"></a>Pour exécuter en lot plusieurs bons de commande
@@ -39,18 +39,18 @@ La procédure suivante explique comment exécuter en lot plusieurs bons de comma
 > [!NOTE]
 > Le report en lot de documents se produit en arrière-plan. [!INCLUDE [prodshort](includes/prodshort.md)] en ligne inclut les travaux par défaut pour le report en arrière-plan et le report en lot. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande**, puis sélectionnez le lien associé.  
-2. Sur la page **Bons de commande**, sélectionnez toutes les commandes à reporter :
-3. Dans le champ **N°**, choisissez les trois points verticaux pour ouvrir le menu contextuel, puis choisissez l'action **Sélectionner davantage**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande** , puis sélectionnez le lien associé.  
+2. Sur la page **Bons de commande** , sélectionnez toutes les commandes à reporter :
+3. Dans le champ **N°** , choisissez les trois points verticaux pour ouvrir le menu contextuel, puis choisissez l'action **Sélectionner davantage** .
 4. Cochez la case pour toutes les lignes représentant les commandes que vous souhaitez reporter en même temps.
-5. Choisissez l'action **Report**, puis sélectionnez l'action **Reporter en lot**.
-6. Sur la page **Exécuter en lot les bons de commande**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
-7. Choisissez le bouton **OK**.
-8. Pour afficher les problèmes potentiels survenus lors du report en lot de documents, ouvrez la page **Registre des messages d'erreur**.
+5. Choisissez l'action **Report** , puis sélectionnez l'action **Reporter en lot** .
+6. Sur la page **Exécuter en lot les bons de commande** , renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+7. Choisissez le bouton **OK** .
+8. Pour afficher les problèmes potentiels survenus lors du report en lot de documents, ouvrez la page **Registre des messages d'erreur** .
 
 Les bons de commande seront désormais ajoutés à une entrée de file d'attente des travaux dédiée, qui définit le moment où les documents sont reportés. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
-Si vous sélectionnez **PDF** dans le champ **Type sortie rapport**, les bons de commande reportés avec succès seront disponibles dans la partie **boîte de réception rapport** de votre tableau de bord.
+Si vous sélectionnez **PDF** dans le champ **Type sortie rapport** , les bons de commande reportés avec succès seront disponibles dans la partie **boîte de réception rapport** de votre tableau de bord.
 
 ## <a name="see-also"></a>Voir aussi
 

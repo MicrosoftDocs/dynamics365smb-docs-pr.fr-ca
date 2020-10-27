@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, items, ledger entries, posting, inventory
-ms.date: 07/23/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: b13bc643a93d7558c4760791af81a9a6cc6190b2
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 14aae820463718357d3bac69524751833f5dd79d
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3787681"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3913673"
 ---
 # <a name="design-details-item-application"></a>Détails de conception : affectation article
 
@@ -35,7 +35,7 @@ Les lettrages article peuvent être effectués des manières suivantes.
 |Méthode|Description|Type d'affectation|  
 |------------|---------------------------------------|----------------------|  
 |Automatique|Se produit en tant que transfert de coûts général selon le mode évaluation stock|Quantité affectée|  
-|Statique|Effectué par l'utilisateur lorsque :<br /><br /> -   Traitement des retours<br />-   Report de corrections<br />-   Annulation des reports de quantité<br />-   Création de livraisons directes **Remarque :** L'affectation fixe peut être effectuée manuellement en saisissant un numéro d'écriture dans le champ **Écriture article à affecter** ou à l'aide d'une fonction, telle que **Afficher les lignes de document reportées à inverser**.|Quantité affectée<br /><br /> Affectation coût **Remarque :**  L'affectation coût se produit uniquement dans les transactions entrantes dont le champ **Écriture article à affecter** est renseigné pour créer une affectation fixe. Consultez la table suivante.|  
+|Statique|Effectué par l'utilisateur lorsque :<br /><br /> -   Traitement des retours<br />-   Report de corrections<br />-   Annulation des reports de quantité<br />-   Création de livraisons directes **Remarque :**  L'affectation fixe peut être effectuée manuellement en saisissant un numéro de séquence dans le champ **Écriture article à affecter** ou à l'aide d'une fonction, telle que **Extraire les lignes de document reportées à inverser** .|Quantité affectée<br /><br /> Affectation coût **Remarque :**  L'affectation coût se produit uniquement dans les transactions entrantes dont le champ **Écriture article à affecter** est renseigné pour créer une affectation fixe. Consultez la table suivante.|  
 
 L'affectation de quantités ou de coûts dépend de la direction de la transaction d'inventaire et de si l'affectation d'article est automatique ou fixe, en fonction des processus spécifiques.  
 
@@ -74,7 +74,7 @@ Le tableau suivant montre l'écriture d'affectation article qui est créée lors
 ## <a name="inventory-decrease"></a>Diminution d'inventaire  
 Lorsque vous reportez une diminution d'inventaire, une écriture d'affectation article qui lie la diminution d'inventaire à une augmentation d'inventaire est créée. Ce lien est créé en utilisant le mode évaluation stock de l'article comme base d'instructions. Pour les articles utilisant les modes évaluation du stock FIFO, standard, et moyen, le lien est basé sur le principe du premier entré, premier sorti. La diminution d'inventaire est affectée avec l'augmentation d'inventaire ayant la date de report future la plus proche. Pour les articles utilisant le mode évaluation stock LIFO, le lien est basé sur le principe du dernier entré, premier sorti. La diminution d'inventaire est affectée à l'augmentation d'inventaire ayant la date de report passée la plus récente.  
 
-Dans la table **Ecriture article**, le champ **Quantité restante** présente la quantité qui n'a pas encore été lettrée. Si la quantité restante est supérieure à 0, la case à cocher **Ouvrir** est activée.  
+Dans la table **Ecriture article** , le champ **Quantité restante** présente la quantité qui n'a pas encore été lettrée. Si la quantité restante est supérieure à 0, la case à cocher **Ouvrir** est activée.  
 
 ### <a name="example"></a>Exemple :  
 L'exemple suivant montre l'écriture d'affectation article créée lors du report d'une livraison vente de 5 unités des articles réceptionnés dans l'exemple précédent. La première écriture d'affectation article est la réception achat. La deuxième écriture d'affectation est la livraison vente.  
@@ -187,10 +187,10 @@ Le tableau suivant montre l'effet de la contrepassation du coût exact des écri
 |01/03/20|Vente (Note de crédit)|1|1100.00|2|3|3|  
 |01/04/20|(Frais annexes)|1|100.00||1|4|  
 
-Lorsque vous exécutez le traitement en lot **Ajuster coûts - Écr. article**, le coût augmenté de l'écriture achat, dû aux frais annexes, est transmis à l'écriture vente (écriture numéro 2). L'écriture vente transfère alors ce coût augmenté à l'écriture vente créditrice (numéro de séquence 3). Le résultat final est que le coût est correctement inversé.  
+Lorsque vous exécutez le traitement en lot **Ajuster coûts - Écr. article** , le coût augmenté de l'écriture achat, dû aux frais annexes, est transmis à l'écriture vente (écriture numéro 2). L'écriture vente transfère alors ce coût augmenté à l'écriture vente créditrice (numéro de séquence 3). Le résultat final est que le coût est correctement inversé.  
 
 > [!NOTE]  
->  Si vous utilisez des retours ou des notes de crédit et que vous avez configuré le champ **Coût d'inversion exact obligatoire** sur la page **Configuration achats** ou **Configuration ventes**, en fonction de votre situation, [!INCLUDE[d365fin](includes/d365fin_md.md)] renseigne automatiquement les différents champs d'écriture d'affectation lorsque vous utilisez la fonction **Copier à partir du document**. Si vous utilisez la fonction **Affichage de lignes document validées à contrepasser**, les champs sont toujours renseignés automatiquement.  
+>  Si vous utilisez des retours ou des notes de crédit et que vous avez configuré le champ **Coût d'inversion exact obligatoire** sur la page **Configuration achats** ou **Configuration ventes** , en fonction de votre situation, [!INCLUDE[d365fin](includes/d365fin_md.md)] renseigne automatiquement les différents champs d'écriture d'affectation lorsque vous utilisez la fonction **Copier à partir du document** . Si vous utilisez la fonction **Affichage de lignes document validées à contrepasser** , les champs sont toujours renseignés automatiquement.  
 
 > [!NOTE]  
 >  Si vous reportez une transaction avec une affectation fixe et si l'écriture article que vous affectez doit être fermée, ce qui signifie que la quantité restante est égale à zéro, l'ancienne affectation est automatiquement annulée et l'écriture article est réaffectée à l'aide de l'affectation fixe que vous avez spécifiée.  
@@ -238,7 +238,7 @@ En raison du mode de calcul du coût unitaire d'un article, une affectation arti
 * Vous souhaitez annuler l'affectation créée automatiquement lors du report, en fonction du mode d'évaluation du coût de l'article.  
 * Vous devez retourner un article sur lequel une vente a déjà été appliquée manuellement, sans utiliser la fonction **Afficher des lignes document validées à contrepasser** et vous devez donc annuler l'application.  
 
-[!INCLUDE[d365fin](includes/d365fin_md.md)] propose une fonction pour analyser et corriger des lettrages article. Cela s'effectue sur la page **Feuille affectation**.  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] propose une fonction pour analyser et corriger des lettrages article. Cela s'effectue sur la page **Feuille affectation** .  
 
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : problème connu lié à l'affectation d'articles](design-details-inventory-zero-level-open-item-ledger-entries.md)  

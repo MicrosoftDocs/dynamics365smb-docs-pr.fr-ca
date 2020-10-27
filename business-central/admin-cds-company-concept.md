@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: CDS, Common Data Service, integration, sync
-ms.date: 01/17/2020
+ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 795656cd5b4ad8d40c48a2edf327cffb56ad6906
-ms.sourcegitcommit: 7d54d8abe52e0546378cf760f5082f46e8441b90
+ms.openlocfilehash: 4f8e5959098e01cd08134a37ae706aa852d88729
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3324064"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3911673"
 ---
 # <a name="data-ownership-models"></a>Modèles de propriété de données
 [!INCLUDE[d365fin](includes/cds_long_md.md)] nécessite que vous indiquiez un propriétaire pour les données que vous stockez. Pour en savoir plus, consultez [Propriété d'entité](https://docs.microsoft.com/powerapps/maker/common-data-service/types-of-entities#entity-ownership) dans la documentation Power Apps. Lorsque vous configurez l'intégration entre [!INCLUDE[d365fin](includes/cds_long_md.md)] et [!INCLUDE[d365fin](includes/d365fin_md.md)], vous devez choisir l'un des deux modèles de propriété pour les enregistrements synchronisés :
@@ -54,7 +54,7 @@ Cependant, le mappage 1:1 entre l'unité fonctionnelle, la compagnie et l'équip
 
 Dans cet exemple, une nouvelle unité fonctionnelle racine EUR (Europe) est créée dans [!INCLUDE[d365fin](includes/cds_long_md.md)] en tant que parent pour Cronus DE (Allemagne) et Cronus ES (Espagne). L'unité fonctionnelle EUR n'est pas associée à la synchronisation. Cependant, il peut donner aux membres de l'équipe commerciale EUR l'accès aux données de compte dans Cronus DE et Cronus ES en définissant la visibilité des données sur **Centre de profit parent/enfant** sur le rôle de sécurité associé dans [!INCLUDE[d365fin](includes/cds_long_md.md)].
 
-La synchronisation détermine l'équipe devant posséder les enregistrements. Ceci est contrôlé par le champ **Équipe propriétaire par défaut** sur l'enregistrement BCI - <ID>. Lorsqu'un enregistrement BCI - <ID> est activé pour la synchronisation, nous créons automatiquement l'unité fonctionnelle associée et l'équipe propriétaire (si elle n'existe pas déjà), et définissons le champ **Équipe propriétaire par défaut**. Lorsque la synchronisation est activée pour une entité, les administrateurs peuvent changer d'équipe propriétaire, mais une équipe doit toujours être affectée.
+La synchronisation détermine l'équipe devant posséder les enregistrements. Ceci est contrôlé par le champ **Équipe propriétaire par défaut** sur l'enregistrement BCI - <ID>. Lorsqu'un enregistrement BCI - <ID> est activé pour la synchronisation, nous créons automatiquement l'unité fonctionnelle associée et l'équipe propriétaire (si elle n'existe pas déjà), et définissons le champ **Équipe propriétaire par défaut** . Lorsque la synchronisation est activée pour une entité, les administrateurs peuvent changer d'équipe propriétaire, mais une équipe doit toujours être affectée.
 
 > [!NOTE]
 > Les enregistrements passent en lecture seule après l'ajout et la sauvegarde d'une compagnie. Veillez donc à choisir la compagnie adéquate.
@@ -70,6 +70,8 @@ Lorsque vous modifiez une unité fonctionnelle, vous ne pouvez choisir que les u
 Si vous choisissez le modèle de propriété Personne, vous devez indiquer chaque représentant qui possédera de nouveaux enregistrements. L'unité fonctionnelle et l'équipe sont créées comme décrit dans la section [Propriété Équipe](admin-cds-company-concept.md#team-ownership).
 
 L'unité fonctionnelle par défaut est utilisée lorsque le modèle de propriété Personne est choisi et que vous ne pouvez pas choisir une autre unité fonctionnelle. L'équipe associée à l'unité fonctionnelle par défaut détiendra des enregistrements pour des entités communes, telles que l'entité Produit, qui ne sont pas liées à des représentants spécifiques.
+
+Lorsque vous associez des représentants [!INCLUDE[d365fin](includes/d365fin_md.md)] aux utilisateurs de [!INCLUDE[d365fin](includes/cds_long_md.md)], [!INCLUDE[d365fin](includes/d365fin_md.md)] ajoute l’utilisateur à l’équipe par défaut dans [!INCLUDE[d365fin](includes/cds_long_md.md)]. Vous pouvez vérifier que les utilisateurs sont ajoutés en consultant la colonne **Membre de l’équipe par défaut** sur la page **Utilisateurs – Common Data Service** . Si l’utilisateur n’est pas ajouté, vous pouvez l’ajouter manuellement en utilisant l’action **Ajouter des utilisateurs couplés à l’équipe** . Pour plus d’informations, voir [Synchronisation des données dans Business Central avec Common Data Service](admin-synchronizing-business-central-and-sales.md).
 
 ## <a name="see-also"></a>Voir aussi
 [À propos de [!INCLUDE[d365fin](includes/cds_long_md.md)]](admin-common-data-service.md)

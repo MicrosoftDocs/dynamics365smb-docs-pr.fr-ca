@@ -9,19 +9,19 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: essential, basic, user interface, application area, experience
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: cc25efa746e7dd3282159b13ecea66ec66ac5e82
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 1e4de0f59788bb49ebaead7a4ee2516ff32147eb
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3785406"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3912456"
 ---
 # <a name="change-which-features-are-displayed"></a>Modifier les fonctionnalités affichées
 [!INCLUDE[d365fin](includes/d365fin_md.md)]est conçu pour vous aider à gérer votre entreprise indépendamment de sa taille et de sa complexité. Au cœur du produit, vous trouverez des fonctionnalités essentielles, telles que la génération de rapports financiers, les ventes, les achats et la gestion de l'inventaire. À mesure que la complexité de l'entreprise augmente, vous pouvez activer des fonctionnalités pour la fabrication et la gestion des services, par exemple.
 
-Vous pouvez définir le niveau de complexité du produit, et donc les fonctionnalités auxquelles les utilisateurs de la compagnie ont accès, en modifiant le paramètre **Expérience** sur la page **Informations compagnie**. Notez que le paramètre d’expérience peut également être modifié par l'ajout de certaines extensions provenant d'AppSource. Pour plus d'informations, voir [Personnalisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide des extensions](ui-extensions.md).
+Vous pouvez définir le niveau de complexité du produit, et donc les fonctionnalités auxquelles les utilisateurs de la compagnie ont accès, en modifiant le paramètre **Expérience** sur la page **Informations compagnie** . Notez que le paramètre d’expérience peut également être modifié par l'ajout de certaines extensions provenant d'AppSource. Pour plus d'informations, voir [Personnalisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide des extensions](ui-extensions.md).
 
 Le tableau suivant répertorie les expériences actuellement disponibles.
 
@@ -40,24 +40,24 @@ Avant de définir le paramètre d'expérience d'une compagnie, vous devez défin
 Le paramètre **Expérience** s'applique à tous les utilisateurs d'une compagnie, mais chaque utilisateur peut personnaliser davantage sa propre expérience en modifiant la mise en page et le contenu. Pour plus d'informations, voir [Personnaliser votre espace de travail](ui-personalization-user.md).
 
 ## <a name="enabling-premium-features-after-upgrading-a-plan"></a>Activation des fonctionnalités Premium après mise à niveau d'un plan
-Les utilisateurs sont affectés à des plans dans le centre d'administration Microsoft 365 dans le cadre de la tâche générale de création des utilisateurs Business Central. Pour plus d'informations, voir [Ajouter des utilisateurs individuellement ou en bloc à Office 365](https://support.office.com/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc).
+Les utilisateurs sont affectés à des plans dans le centre d'administration Microsoft 365 dans le cadre de la tâche générale de création des utilisateurs Business Central. Pour plus d’informations, voir [Ajouter des utilisateurs individuellement ou en bloc à Microsoft 365](https://support.office.com/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc).
 
 ### <a name="to-update-plan-changes-in-users-groups"></a>Pour mettre à jour les modifications de plan des groupes d'utilisateurs
 Si vous avez modifié les plans des utilisateurs dans le centre d'administration Microsoft 365, par exemple en affectant plus d'utilisateurs au plan Premium, vous devez refléter les modifications dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
 1. Connectez-vous en tant qu'administrateur.
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Utilisateurs**, puis sélectionnez le lien associé.
-3. Sur la page **Utilisateurs**, sélectionnez l'option **Actualiser tous les groupes d'utilisateurs**.
+2. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Utilisateurs** , puis sélectionnez le lien associé.
+3. Sur la page **Utilisateurs** , sélectionnez l'option **Actualiser tous les groupes d'utilisateurs** .
 
 Toutes les nouvelles informations relatives aux plans des utilisateurs et aux groupes d'utilisateurs qui leur sont affectés sont maintenant mises à jour en fonction des modifications du plan.
 
 ### <a name="to-select-the-premium-experience"></a>Pour sélectionner l'expérience Premium
 Vous pouvez maintenant sélectionner la nouvelle expérience.
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Informations compagnie**, puis sélectionnez le lien associé.
-2. Sur la page **Informations compagnie**, dans le raccourci **Expérience utilisateur**, sélectionnez Premium dans le champ **Expérience**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Informations compagnie** , puis sélectionnez le lien associé.
+2. Sur la page **Informations compagnie** , dans le raccourci **Expérience utilisateur** , sélectionnez Premium dans le champ **Expérience** .
 
 ## <a name="help-assumes-premium-experience"></a>L'aide implique l'expérience Premium
-Tous les descriptions de fonctions de la documentation utilisateur de [!INCLUDE[d365fin](includes/d365fin_md.md)] assument l'expérience **Premium**, ce qui signifie que les descriptions couvrent la portée complète des éléments de l'interface utilisateur.
+Tous les descriptions de fonctions de la documentation utilisateur de [!INCLUDE[d365fin](includes/d365fin_md.md)] assument l'expérience **Premium** , ce qui signifie que les descriptions couvrent la portée complète des éléments de l'interface utilisateur.
 
 ## <a name="see-also"></a>Voir aussi
 [Personnaliser votre espace de travail](ui-personalization-user.md)  
