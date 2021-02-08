@@ -12,22 +12,22 @@ ms.workload: na
 ms.search.keywords: local
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: b8ea2c6529c7d2857f314e8c95b11baa6ba59f07
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 0e4bf43a68d9fcaa8d6429010bbeb97051497e7c
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3916459"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4749700"
 ---
 # <a name="reporting-sales-tax-in-canada"></a>Déclaration de la taxe de vente au Canada
-Lorsque vous commencez à utiliser [!INCLUDE[d365fin](../../includes/d365fin_md.md)], vous pouvez exécuter un guide de configuration assistée afin de rapidement et facilement configurer les informations relatives à la Sales Tax pour votre société, vos clients et vos fournisseurs. En quelques minutes, vous êtes prêt à créer des documents vente et des documents achat pour lesquels la taxe de vente est calculée correctement. Ceci est expliqué [dans notre billet de blog](https://madeira.microsoft.com/blog/sales-tax-setup-made-easy).
+Lorsque vous commencez à utiliser [!INCLUDE[prod_short](../../includes/prod_short.md)], vous pouvez exécuter un guide de configuration assistée afin de rapidement et facilement configurer les informations relatives à la Sales Tax pour votre société, vos clients et vos fournisseurs. En quelques minutes, vous êtes prêt à créer des documents vente et des documents achat pour lesquels la taxe de vente est calculée correctement. Ceci est expliqué [dans notre billet de blog](https://madeira.microsoft.com/blog/sales-tax-setup-made-easy).
 Si vous passez à la section Ma compagnie vierge, nous vous recommandons de commencer par utiliser chacun des guides de configuration assistée, y compris celui qui concerne la taxe de vente. Si vous préférez configurer la taxe de vente par vous-même, cet article explique ce que vous devez prendre en compte.  
 
 
 ## <a name="tax-groups-tax-areas-and-tax-jurisdictions"></a>Groupes taxes, zones de recouvrement et autorités de recouvrement
-Dans [!INCLUDE[d365fin](../../includes/d365fin_md.md)], un groupe taxes représente un groupe d'articles ou de ressources soumis au même conditions pour ce qui est des taxes. Par exemple, vous pouvez configurer un groupe fiscal pour les articles soumis à la taxe et un autre pour les articles non soumis à la taxe. Vous devez affecter des codes groupe fiscal aux articles en inventaire et aux comptes du grand livre. De même, vous devez affecter des codes de région fiscale aux clients, aux emplacements et aux paramètres de votre compagnie. Le guide de configuration assistée vous aide à effectuer ces opérations.  
+Dans [!INCLUDE[prod_short](../../includes/prod_short.md)], un groupe taxes représente un groupe d'articles ou de ressources soumis au même conditions pour ce qui est des taxes. Par exemple, vous pouvez configurer un groupe fiscal pour les articles soumis à la taxe et un autre pour les articles non soumis à la taxe. Vous devez affecter des codes groupe fiscal aux articles en inventaire et aux comptes du grand livre. De même, vous devez affecter des codes de région fiscale aux clients, aux emplacements et aux paramètres de votre compagnie. Le guide de configuration assistée vous aide à effectuer ces opérations.  
 
-Chaque région fiscale correspond à un regroupement d'autorités fiscales basé sur une situation géographique particulière. Par exemple, la région fiscale de Miami, Floride, comprend trois autorités fiscales de la taxe de vente : la ville (Miami), le comté (Dade) et l'état (Floride). [!INCLUDE[d365fin](../../includes/d365fin_md.md)] inclut un ensemble limité de zones de recouvrement avec une configuration par défaut, mais vous pouvez les modifier et ajouter de nouvelles zones de recouvrement.  
+Chaque région fiscale correspond à un regroupement d'autorités fiscales basé sur une situation géographique particulière. Par exemple, la région fiscale de Miami, Floride, comprend trois autorités fiscales de la taxe de vente : la ville (Miami), le comté (Dade) et l'état (Floride). [!INCLUDE[prod_short](../../includes/prod_short.md)] inclut un ensemble limité de zones de recouvrement avec une configuration par défaut, mais vous pouvez les modifier et ajouter de nouvelles zones de recouvrement.  
 
 Si vous configurez de nouvelles zones et juridictions de recouvrement, vous devez veiller à bien remplir les champs correctement. Au Canada, le gouvernemental fédéral et les provinces sont en mesure de prélever la taxe de vente. Les compagnies recueillent la taxe de vente et la versent aux autorités gouvernementales pour les produits vendus aux utilisateurs finaux. La taxe de vente peut également être facturée sur une taxe de vente existante. Par exemple, la taxe peut être calculée sur un montant facture vente qui comprend déjà la taxe imposée par d'autres autorités.  
 
@@ -44,4 +44,4 @@ Au Canada, lorsque vous vendez à un client dans un lieu où vous n'avez pas de 
 [Configuration de Finance](../../finance-setup-finance.md)  
 [Taxe sur les ventes et taxe sur les biens et les services au Canada](sales-tax-goods-services.md)  
 [Configurer la taxe de vente - Regarder une vidéo](https://www.youtube.com/watch?v=qMs4BoSytN8&index=13&list=PLcakwueIHoT8K1m148oMqo7amR2a7Bz-8)  
-[Utilisation de [!INCLUDE[d365fin](../../includes/d365fin_md.md)]](../../ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](../../includes/prod_short.md)]](../../ui-work-product.md)  

@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: local
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 6d9ae9d4631581d1d5497e3741ed160d403849ee
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: e044d39ad48ffde9e25e2386781d8ed13a83d819
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3916436"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4749687"
 ---
 # <a name="work-with-gifi-codes"></a>Utiliser des codes IGRF
 Les informations fiscales peuvent inclure des comptes généraux, des états, des comptes de gestion, des bilans et des relevés des bénéfices non répartis. Les informations fiscales sont classifiées par le biais de codes. L'utilisation de codes aide le gouvernemental à traiter les informations, à préparer l'archivage électronique et à valider les informations fiscales par voie électronique. L'utilisation de codes aide également les organisations statistiques à travailler plus efficacement, en rendant les données financières plus facilement disponibles. Pour plus d'informations, reportez-vous au [site Web de l'Agence de revenu du Canada](https://www.cra-arc.gc.ca/).
@@ -29,7 +29,7 @@ Lorsqu'un compte est associé à un code IGRF, il est enregistré auprès de l'A
 Vous pouvez exporter les informations de solde par code IGRF et enregistrer le fichier exporté dans Excel, ce qui est utile pour transférer des informations vers votre logiciel d'établissement des déclarations fiscales.
 
 ## <a name="to-set-up-gifi-codes"></a>Pour configurer des codes IGRF
-Dans [!INCLUDE[d365fin](../../includes/d365fin_md.md)], vous devez configurer des codes IGRF pour les comptes GL, les rapports, les bilans, les états de résultats et les relevés de bénéfices non répartis.
+Dans [!INCLUDE[prod_short](../../includes/prod_short.md)], vous devez configurer des codes IGRF pour les comptes GL, les rapports, les bilans, les états de résultats et les relevés de bénéfices non répartis.
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Codes IGRF**, puis sélectionnez le lien associé.
 2. Sur la page **Codes IGRF**, sélectionnez l'action **Nouveau**.
