@@ -10,17 +10,17 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 43a62271bab9401bfea21663c72b6363884c2ef4
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 5ece03828aad360b03a4c2cc4e0b47a6f603e8dc
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3911015"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4751215"
 ---
 # <a name="design-details-revaluation"></a>Détails de conception : réévaluation
 Vous pouvez réévaluer l'inventaire en fonction de la base d'évaluation reflétant le plus précisément la valeur d'inventaire. Vous pouvez également antidater une réévaluation, afin que le coût des biens vendus (COGS) soit correctement mis à jour pour les articles qui ont déjà été vendus. Les articles utilisant le mode évaluation stock standard qui n'ont pas été entièrement facturés peuvent également être réévalués.  
 
-Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], la flexibilité suivante est prise en charge sur la réévaluation :  
+Dans [!INCLUDE[prod_short](includes/prod_short.md)], la flexibilité suivante est prise en charge sur la réévaluation :  
 
 -   La quantité réévaluable peut être calculée pour n'importe quelle date, également dans le passé.  
 -   Pour les articles utilisant le mode évaluation stock standard, les écritures coût prévu sont incluses dans la réévaluation.  
@@ -41,7 +41,7 @@ L'exemple suivant montre à quel moment un article TEC se transforme pour deveni
 
 ![Inventaire et réévaluation TEC](media/design_details_inventory_costing_10_revaluation_wip.png "Inventaire et réévaluation TEC")  
 
-**1Q**  : l'utilisateur valide les maillons achetés comme étant reçus. Le tableau suivant montre l'écriture article résultante.  
+**1Q** : l'utilisateur valide les maillons achetés comme étant reçus. Le tableau suivant montre l'écriture article résultante.  
 
 |Date de report|Article|Type écriture|Quantité|N° séquence |  
 |------------------|----------|----------------|--------------|---------------|  
@@ -50,13 +50,13 @@ L'exemple suivant montre à quel moment un article TEC se transforme pour deveni
 > [!NOTE]  
 >  À présent un article utilisant le mode évaluation stock standard est disponible pour la réévaluation.  
 
-**1V**  : l'utilisateur reporte les maillons achetés comme étant facturés et les maillons font alors partie de l'inventaire, d'un point de vue financier. Le tableau suivant montre les écritures valeur résultantes.  
+**1V** : l'utilisateur reporte les maillons achetés comme étant facturés et les maillons font alors partie de l'inventaire, d'un point de vue financier. Le tableau suivant montre les écritures valeur résultantes.  
 
 |Date de report|Type écriture|Date évaluation|Coût indiqué (réel)|N° écriture article gr. livre|N° séquence |  
 |------------------|----------------|--------------------|----------------------------|---------------------------|---------------|  
 |15/01/20|Coût direct|01/01/20|150.00|1|1|  
 
- **2Q + 2V**  : l'utilisateur valide les maillons achetés comme étant consommés pour la production de la chaîne en fer. Du point de vue financier, les liens deviennent une partie de l'inventaire TEC.  Le tableau suivant montre l'écriture article résultante.  
+ **2Q + 2V** : l'utilisateur valide les maillons achetés comme étant consommés pour la production de la chaîne en fer. Du point de vue financier, les liens deviennent une partie de l'inventaire TEC.  Le tableau suivant montre l'écriture article résultante.  
 
 |Date de report|Article|Type écriture|Quantité|N° séquence |  
 |------------------|----------|----------------|--------------|---------------|  
@@ -70,13 +70,13 @@ Le tableau suivant montre l'écriture valeur résultante.
 
 La date d'évaluation est définie sur la date du report de la consommation (02-01-20), en tant que diminution d'inventaire classique.  
 
-**3Q**  : l'utilisateur valide la chaîne comme étant en production et finit l'ordre de fabrication. Le tableau suivant montre l'écriture article résultante.  
+**3Q** : l'utilisateur valide la chaîne comme étant en production et finit l'ordre de fabrication. Le tableau suivant montre l'écriture article résultante.  
 
 |Date de report|Article|Type écriture|Quantité|N° séquence |  
 |------------------|----------|----------------|--------------|---------------|  
 |02-15-20|CHAÎNE|Sortie|1|3|  
 
-**3V**  : l'utilisateur exécute le traitement en lot **Ajuster coûts - Écr. article** , qui reporte la chaîne comme facturée pour indiquer que toute la consommation de matériel a été entièrement facturée. Du point de vue financier, les liens ne font plus partie de l'inventaire TEC lorsque la production est entièrement facturée et ajustée. Le tableau suivant montre les écritures valeur résultantes.  
+**3V** : l'utilisateur exécute le traitement en lot **Ajuster coûts - Écr. article**, qui reporte la chaîne comme facturée pour indiquer que toute la consommation de matériel a été entièrement facturée. Du point de vue financier, les liens ne font plus partie de l'inventaire TEC lorsque la production est entièrement facturée et ajustée. Le tableau suivant montre les écritures valeur résultantes.  
 
 |Date de report|Type écriture|Date évaluation|Coût indiqué (réel)|N° écriture article gr. livre|N° séquence |  
 |------------------|----------------|--------------------|----------------------------|---------------------------|---------------|  
@@ -85,16 +85,16 @@ La date d'évaluation est définie sur la date du report de la consommation (02-
 |15/02/20|Coût direct|15/02/20|150.00|3|3|  
 
 ## <a name="expected-cost-in-revaluation"></a>Coût prévu de la réévaluation  
-La quantité réévaluable XE « Quantité réévaluable » XE « Quantité;Réévaluable » est calculée comme la somme de la quantité XE "quantité" pour les écritures article XE « Facture »/« Grand livre article » entièrement facturées avec une date de report égale ou antérieure à la date de réévaluation XE « Réévaluation ». Cela signifie que lorsque certains articles sont reçus/livrés mais non facturés, leur valeur d'inventaire ne peut pas être une « valeur d'inventaire » XE calculée. Les articles utilisant le mode évaluation stock standard ne sont pas limités à cet égard. « Valeur » XE  
+La quantité réévaluable est calculée comme la somme de la quantité des écritures article entièrement facturées avec une date de report égale ou antérieure à la date de réévaluation. Cela signifie que lorsque certains articles sont reçus/livrés mais pas facturés, leur valeur d'inventaire ne peut pas être calculée. Les articles utilisant le mode évaluation stock standard ne sont pas limités à cet égard.  
 
 > [!NOTE]  
->  L'inventaire TEC est un autre type de coût prévu qui peut être réévalué, dans le cadre de certaines règles. Pour plus d'informations, voir la section « Réévaluation de l'inventaire TEC » de cette rubrique.  
+>  L'inventaire TEC est un autre type de coût prévu qui peut être réévalué, dans le cadre de certaines règles. Pour plus d’informations, voir [Réévaluation de l'inventaire TEC](design-details-revaluation.md#wip-inventory-revaluation).  
 
-Lors du calcul de la quantité réévaluable pour les articles utilisant le mode d'évaluation coût Standard, les écritures article n'ayant pas été complètement facturées sont incluses dans le calcul. Les écritures sont ensuite réévaluées lorsque vous reportez la réévaluation. Lorsque vous facturez l'écriture réévaluée, les écritures valeur suivantes sont créées :  
+Lors du calcul de la quantité réévaluable pour les articles utilisant le mode d’évaluation Standard, les écritures article n’ayant pas été complètement facturées sont incluses dans le calcul. Les écritures sont ensuite réévaluées lorsque vous reportez la réévaluation. Lorsque vous facturez l'écriture réévaluée, les écritures valeur suivantes sont créées :  
 
--   L'écriture valeur facturée habituelle avec un type d'écriture **Coût direct** . Le coût indiqué de cette écriture est le coût direct de la ligne source.  
--   Une écriture valeur avec le type d'écriture **Écart** . Cette écriture enregistre la différence entre le coût facturé et le coût standard réévalué.  
--   Une écriture valeur avec le type d'écriture **Réévaluation** . Cette écriture enregistre l'inversion de la réévaluation du coût prévu.  
+-   L'écriture valeur facturée habituelle avec un type d'écriture **Coût direct**. Le coût indiqué de cette écriture est le coût direct de la ligne source.  
+-   Une écriture valeur avec le type d'écriture **Écart**. Cette écriture enregistre la différence entre le coût facturé et le coût standard réévalué.  
+-   Une écriture valeur avec le type d'écriture **Réévaluation**. Cette écriture enregistre l'inversion de la réévaluation du coût prévu.  
 
 ### <a name="example"></a>Exemple :  
 L'exemple suivant, basé sur la production de la chaîne dans l'exemple précédent, illustre la manière dont les trois types d'écritures sont créés. Il est basé sur le scénario suivant :  
@@ -103,7 +103,7 @@ L'exemple suivant, basé sur la production de la chaîne dans l'exemple précéd
 2.  L'utilisateur reporte ensuite une réévaluation des liens avec un nouveau coût unitaire de 3,00 $, mettant à jour le coût standard à 3,00 $.  
 3.  L'utilisateur valide l'achat d'origine des liens comme facturés, ce qui crée ce qui suit :  
 
-    1.  Une écriture valeur facturée avec le type d'écriture **Coût direct** .  
+    1.  Une écriture valeur facturée avec le type d'écriture **Coût direct**.  
     2.  Une écriture valeur avec le type d'écriture **Réévaluation** pour enregistrer la contrepassation de la réévaluation du coût prévu.  
     3.  Une écriture valeur avec le type d'écriture Écart, qui enregistre la différence entre le coût facturé et le coût standard réévalué.  
 Le tableau suivant montre les écritures valeur résultantes.  
@@ -116,7 +116,7 @@ Le tableau suivant montre les écritures valeur résultantes.
 |3.b.|15/01/20|Réévaluation|20/01/20|-150,00|0.00|1|4|  
 |3.c.|15/01/20|Écart|15/01/20|0.00|450.00|1|5|  
 
-## <a name="determining-if-an-inventory-decrease-is-affected-by-revaluation"></a>Déterminer si une diminution d'inventaire est affectée par la réévaluation  
+## <a name="determining-whether-an-inventory-decrease-is-affected-by-revaluation"></a>Déterminer si une sortie d'inventaire est liée à la réévaluation  
 La date du report ou de la réévaluation est utilisée pour déterminer si une diminution d'inventaire est affectée par une réévaluation.  
 
 Le tableau suivant montre les critères utilisés pour un article qui n'utilise pas le mode évaluation stock moyen.  
@@ -141,7 +141,7 @@ L'exemple suivant, qui illustre la réévaluation d'un article qui utilise le mo
 6.  Le 01/02/20, l'utilisateur valide une vente de 1 unité.  
 7.  Le 01-03-20, l'utilisateur valide une vente de 1 unité.  
 8.  Le 01-04-20, l'utilisateur valide une vente de 1 unité.  
-9. L'utilisateur exécute le traitement en lot **Ajuster coûts - Écr. article** .  
+9. L'utilisateur exécute le traitement en lot **Ajuster coûts - Écr. article**.  
 
 Le tableau suivant montre les écritures valeur résultantes.  
 
@@ -163,13 +163,13 @@ Le tableau suivant montre les écritures valeur résultantes.
 ## <a name="wip-inventory-revaluation"></a>Réévaluation de l'inventaire TEC  
 La réévaluation de l'inventaire TEC implique de réévaluer les composantes qui sont enregistrées dans le cadre de l'inventaire TEC au moment de la réévaluation.  
 
-Pour cela, il est important d'établir des conventions sur le moment où un article est considéré comme une partie de l'inventaire TEC d'un point de vue financier. Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les conventions disponibles sont les suivantes :  
+Pour cela, il est important d'établir des conventions sur le moment où un article est considéré comme une partie de l'inventaire TEC d'un point de vue financier. Dans [!INCLUDE[prod_short](includes/prod_short.md)], les conventions disponibles sont les suivantes :  
 
 -   Une composante achetée fait partie de l'inventaire de matières premières dès le report d'un achat comme étant facturé.  
--   Un composante achetée/semi-finie fait partie de l'inventaire TEC dès le report de sa consommation par rapport à un bon de production.  
--   Un composante achetée/semi-finie reste dans l'inventaire TEC jusqu'au moment où un bon de production (article fabriqué) est facturé.  
+-   Une composante achetée/semi-finie fait partie de l'inventaire TEC dès le report de sa consommation par rapport à un bon de production.  
+-   Une composante achetée/semi-finie reste dans l'inventaire TEC jusqu’au moment où un bon de production (article fabriqué) est facturé.  
 
-La manière dont la date d'évaluation de l'écriture valeur de la consommation est définie suit les mêmes règles que pour l'inventaire hors TEC. Pour plus d'informations, reportez-vous à la section « Déterminer si une diminution d'inventaire est affectée par une réévaluation » de cette rubrique.  
+La manière dont la date d'évaluation de l'écriture valeur de la consommation est définie suit les mêmes règles que pour l'inventaire hors TEC. Pour plus d’informations, reportez-vous à la section [Déterminer si une sortie d'inventaire est liée à la réévaluation](design-details-revaluation.md#determining-whether-an-inventory-decrease-is-affected-by-revaluation).  
 
 L'inventaire TEC peut être réévalué tant que la date de réévaluation n'est pas ultérieure à la date de report des écritures article correspondantes de type Consommation et tant que le bon de production correspondant n'a pas encore été facturé.  
 
@@ -181,4 +181,4 @@ L'inventaire TEC peut être réévalué tant que la date de réévaluation n'est
  [Détails de conception : modes évaluation stock](design-details-costing-methods.md)   
  [Détails de conception : Évaluation de l'inventaire](design-details-inventory-valuation.md) [Gestion des coûts inventaire](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
- [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+ [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

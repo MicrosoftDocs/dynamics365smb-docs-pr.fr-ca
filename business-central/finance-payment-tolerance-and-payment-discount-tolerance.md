@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 823403fc34ad57cb170fc39bd9533b53c4008950
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 50e37e54d840c82cbcbfc92ab8f5fc009642a6b4
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3910890"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4750540"
 ---
 # <a name="work-with-payment-tolerances-and-payment-discount-tolerances"></a>Utilisation des tolérances de règlement et des tolérances d'escompte de paiement
 Vous pouvez configurer une tolérance de règlement de manière à fermer une facture lorsque le paiement ne couvre pas entièrement le montant de la facture. Par exemple, les tolérances de règlement concernent généralement de petits montants qui coûteraient plus cher à corriger qu'à simplement accepter. Vous pouvez configurer une tolérance d'escompte de paiement pour accorder un escompte de paiement après expiration de la date d'escompte de paiement.  
@@ -44,42 +44,42 @@ Pour plus d'informations, voir [Pour activer ou désactiver l'avertissement de t
 ## <a name="to-set-up-tolerances"></a>Pour configurer les tolérances  
 Le fait de configurer des tolérances pour la date ou le montant permet de fermer une facture alors que le règlement ne couvre pas le montant indiqué sur la facture, que ce soit parce que la date d'échéance de l'escompte de paiement est dépassée ou que des marchandises ont été déduites, ou suite à une erreur anodine. Ceci est également vrai pour les remboursements et les notes de crédit.  
 
-Pour configurer l'écart, vous devez configurer plusieurs comptes écart, spécifier des méthodes de comptabilisation d'écart escompte et d'écart règlement, puis exécuter le traitement par lots **Modifier écart de règlement** .  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du report général** , puis sélectionnez le lien associé.  
-2. Sur la page **Configuration report général** , configurez un compte tolérance de règlement crédit et débit pour les ventes et un autre pour les achats.  
-3. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Groupes de report client** , puis sélectionnez le lien associé.    
-4. Sur la page **Groupes report client** , configurez un compte tolérance de règlement débit et un compte tolérance de règlement crédit. Pour plus d'informations, voir [Configuration de groupes de report](finance-posting-groups.md).  
-5. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du report fournisseur** , puis sélectionnez le lien associé.  
-6. Sur la page **Groupes report fournisseur** , configurez un compte tolérance de règlement débit et un compte tolérance de règlement crédit.  
-7. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre** , puis sélectionnez le lien associé.  
-8. Ouvrez la page **Configuration du grand livre** .  
-9. Sur le raccourci **Application** , renseignez les champs **Validation écart d'escompte** , **Période carence escompte** et **Validation écart de règlement** .   
-10. Choisissez l'action **Modifier la tolérance de règlement** .
-11. Sur la page **Modifier tolérance de règlement** , renseignez les champs **% tolérance de règlement** et **Montant tolérance de règlement max.** , puis cliquez sur le bouton **OK** .
+Pour configurer l'écart, vous devez configurer plusieurs comptes écart, spécifier des méthodes de comptabilisation d'écart escompte et d'écart règlement, puis exécuter le traitement par lots **Modifier écart de règlement**.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du report général**, puis sélectionnez le lien associé.  
+2. Sur la page **Configuration report général**, configurez un compte tolérance de règlement crédit et débit pour les ventes et un autre pour les achats.  
+3. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Groupes de report client**, puis sélectionnez le lien associé.    
+4. Sur la page **Groupes report client**, configurez un compte tolérance de règlement débit et un compte tolérance de règlement crédit. Pour plus d'informations, voir [Configuration de groupes de report](finance-posting-groups.md).  
+5. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du report fournisseur**, puis sélectionnez le lien associé.  
+6. Sur la page **Groupes report fournisseur**, configurez un compte tolérance de règlement débit et un compte tolérance de règlement crédit.  
+7. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.  
+8. Ouvrez la page **Configuration du grand livre**.  
+9. Sur le raccourci **Application**, renseignez les champs **Validation écart d'escompte**, **Période carence escompte** et **Validation écart de règlement**.   
+10. Choisissez l'action **Modifier la tolérance de règlement**.
+11. Sur la page **Modifier tolérance de règlement**, renseignez les champs **% tolérance de règlement** et **Montant tolérance de règlement max.**, puis cliquez sur le bouton **OK**.
 
 > [!IMPORTANT]  
->  Vous n'avez configuré la tolérance que pour la devise locale. Si vous souhaitez que [!INCLUDE[d365fin](includes/d365fin_md.md)] gère la tolérance pour les paiements, les notes de crédit et les remboursements en devise étrangère, vous devez exécuter le traitement en lot **Modifier la tolérance de paiement** avec une valeur dans le champ **Code devise** .  
+>  Vous n'avez configuré la tolérance que pour la devise locale. Si vous souhaitez que [!INCLUDE[prod_short](includes/prod_short.md)] gère la tolérance pour les paiements, les notes de crédit et les remboursements en devise étrangère, vous devez exécuter le traitement en lot **Modifier la tolérance de paiement** avec une valeur dans le champ **Code devise**.  
 
 > [!NOTE]  
 >  Si vous souhaitez recevoir une alerte tolérance de règlement chaque fois que vous reportez une affectation dans la tolérance, vous devez activer l'avertissement tolérance de règlement. Pour plus d'informations, voir [Pour activer ou désactiver l'avertissement de tolérance de règlement](finance-payment-tolerance-and-payment-discount-tolerance.md#to-enable-or-disable-payment-tolerance-warnings).  
 >   
 >  Pour désactiver la tolérance pour un client ou un fournisseur, vous devez bloquer les tolérances sur la fiche client ou fournisseur correspondante. Pour plus d'informations, voir [Pour bloquer la tolérance de règlement pour des clients](finance-payment-tolerance-and-payment-discount-tolerance.md#to-block-payment-tolerance-for-customers).  
 >   
->  Lorsque vous configurez une tolérance, [!INCLUDE[d365fin](includes/d365fin_md.md)] vérifie s'il existe des écritures ouvertes et calcule la tolérance pour ces écritures.
+>  Lorsque vous configurez une tolérance, [!INCLUDE[prod_short](includes/prod_short.md)] vérifie s'il existe des écritures ouvertes et calcule la tolérance pour ces écritures.
 
 ## <a name="to-enable-or-disable-payment-tolerance-warnings"></a>Pour activer ou désactiver les alertes de tolérance de règlement
 L'avertissement de tolérance de règlement apparaît lorsque vous reportez une affectation dont le solde respecte la tolérance autorisée. Vous pouvez alors choisir comment reporter et journaliser le solde.    
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre** , puis sélectionnez le lien associé.  
-2. Sur la page **Configuration du grand livre** , sur le raccourci **Application** , activez le bouton bascule **Alerte tolérance de règlement** pour activer l'alerte. Pour désactiver l'avertissement, désactivez le bouton bascule.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.  
+2. Sur la page **Configuration du grand livre**, sur le raccourci **Application**, activez le bouton bascule **Alerte tolérance de règlement** pour activer l'alerte. Pour désactiver l'avertissement, désactivez le bouton bascule.  
 
 > [!NOTE]  
->  L'option par défaut de la page **Alerte tolérance de règlement** est **Laisser le solde ouvert** . L'option par défaut de la page **Avertissement tolérance d'escompte de paiement** est **Ne pas accepter d'escompte de paiement en retard** .
+>  L'option par défaut de la page **Alerte tolérance de règlement** est **Laisser le solde ouvert**. L'option par défaut de la page **Avertissement tolérance d'escompte de paiement** est **Ne pas accepter d'escompte de paiement en retard**.
 
 ## <a name="to-block-payment-tolerance-for-customers"></a>Pour bloquer la tolérance de règlement pour des clients  
 Par défaut, une tolérance de règlement est accordée. Pour ne pas accorder une tolérance de règlement à un certain client ou fournisseur, vous devez bloquer la tolérance sur la fiche fournisseur ou client appropriée. Ce qui suit décrit comment l'exécuter pour un client. La procédure est identique pour un fournisseur.
 
-1. Choisissez l'icône d' ![ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Client** ou **Fournisseur** , puis sélectionnez le lien associé.  
-2. Sur le raccourci **Paiements** , cochez la case **Bloquer écart de règlement** .  
+1. Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Client** ou **Fournisseur**, puis sélectionnez le lien associé.  
+2. Sur le raccourci **Paiements**, cochez la case **Bloquer écart de règlement**.  
 
 > [!NOTE]  
 >  Si le client ou le fournisseur possède des écritures ouvertes, vous devez d'abord supprimer la tolérance de règlement des écritures actuellement ouvertes.
@@ -208,7 +208,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les tolérances de règlement multiples 1](media/multiplePmtTolRules(Pre1503).gif "Règles sur les tolérances de règlement multiples 1")  
+:::image type="content" source="media/multiplePmtTolRules(Pre1503).gif" alt-text="Règles sur les tolérances de règlement multiples 1a":::
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -219,7 +219,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les tolérances de règlement multiples 2](media/multiplePmtTolRules(GracePeriodInv1-2).gif "Règles sur les tolérances de règlement multiples 2")  
+:::image type="content" source="media/multiplePmtTolRules(GracePeriodInv1-2).gif" alt-text="Règles sur les tolérances de règlement multiples 2":::
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -230,7 +230,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les tolérances de règlement multiples 3](media/multiplePmtTolRules(GracePeriodInv1).gif "Règles sur les tolérances de règlement multiples 3")  
+:::image type="content" source="media/multiplePmtTolRules(GracePeriodInv1).gif" alt-text="Règles sur les tolérances de règlement multiples 3":::
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -241,7 +241,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les tolérances de règlement multiples 4](media/multiplePmtTolRules(GracePeriodInv2).gif "Règles sur les tolérances de règlement multiples 4")  
+:::image type="content" source="media/multiplePmtTolRules(GracePeriodInv2).gif" alt-text="Règles sur les tolérances de règlement multiples 4":::
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -252,7 +252,7 @@ Montant ouvert par
 
 Règles d'affectation normales  
 
-![Règles sur les tolérances de règlement multiples 5](media/multiplePmtTolRules(Post0122).gif "Règles sur les tolérances de règlement multiples 5")  
+:::image type="content" source="media/multiplePmtTolRules(Post0122).gif" alt-text="Règles sur les tolérances de règlement multiples 5":::
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
@@ -262,4 +262,4 @@ Règles d'affectation normales
 [Finance](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 [Gestion des comptes client](receivables-manage-receivables.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

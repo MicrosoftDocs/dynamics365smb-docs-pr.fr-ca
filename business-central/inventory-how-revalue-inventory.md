@@ -12,25 +12,25 @@ ms.workload: na
 ms.search.keywords: costing, inventory cost, value entries
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: b29e93d248e939eb9eb1cea97e53cd1718304e80
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 2bcd09876f18bb948e060b06199d3d36facaa83f
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3923805"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4750065"
 ---
 # <a name="revalue-inventory"></a>Réévaluer l'inventaire
 Pour réévaluer ou amortir un article ou une écriture article spécifique, vous devez utiliser le journal réévaluation.
 
 ## <a name="to-revalue-inventory"></a>Pour réévaluer l'inventaire
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal réévaluation** , puis sélectionnez le lien associé.
-2. Choisissez l'action **Calculer valeur stock** .
-3. Sur la page **Calculer valeur inventaire** , renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
-4. Cliquez sur le bouton **OK** .
-5. Sur chaque ligne de la page **Journal réévaluation** , indiquez le nouveau coût unitaire dans le champ **Coût unitaire (réévalué)** . Vous pouvez aussi indiquer le nouveau montant total dans le champ **Valeur stock (réévaluée)** .
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal réévaluation**, puis sélectionnez le lien associé.
+2. Choisissez l'action **Calculer valeur stock**.
+3. Sur la page **Calculer valeur inventaire**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+4. Cliquez sur le bouton **OK**.
+5. Sur chaque ligne de la page **Journal réévaluation**, indiquez le nouveau coût unitaire dans le champ **Coût unitaire (réévalué)**. Vous pouvez aussi indiquer le nouveau montant total dans le champ **Valeur stock (réévaluée)**.
 
-    Les champs appropriés sont automatiquement mis à jour. Remarque : le champ **Montant** affiche la modification réelle de la valeur du stock pour l'écriture comptable article sélectionnée. Il calcule la différence entre les champs **Valeur stock (calculée)** et **Valeur stock (réévaluée)** .
-6. Lorsque vous avez renseigné toutes les lignes de la feuille réévaluation, choisissez l'action **Valider** .
+    Les champs appropriés sont automatiquement mis à jour. Remarque : le champ **Montant** affiche la modification réelle de la valeur du stock pour l'écriture comptable article sélectionnée. Il calcule la différence entre les champs **Valeur stock (calculée)** et **Valeur stock (réévaluée)**.
+6. Lorsque vous avez renseigné toutes les lignes de la feuille réévaluation, choisissez l'action **Valider**.
 
 Les nouvelles écritures valeur sont alors créées pour refléter les appréciations que vous avez reportées. Vous pouvez visualiser les nouvelles valeurs dans les fiches article concernées.
 
@@ -39,4 +39,4 @@ Les nouvelles écritures valeur sont alors créées pour refléter les apprécia
 [Inventaire](inventory-manage-inventory.md)  
 [Vente](sales-manage-sales.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

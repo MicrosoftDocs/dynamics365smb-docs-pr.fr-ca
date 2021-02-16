@@ -8,18 +8,18 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accessibility, shortcuts, keyboarding, keys
-ms.date: 10/01/2020
+ms.date: 11/26/2020
 ms.author: bholtorf
-ms.openlocfilehash: 73b0044dae3035c7156812b1f4ff4b8722df57c9
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: f3c36a1b5d3477d6564c66ede9c1a6bff51281df
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3922879"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4746126"
 ---
 # <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
-Cet article fournit un aperçu de certaines combinaisons de touches de raccourcis que vous pouvez utiliser avec lorsque vous utilisez [!INCLUDE[prodshort](includes/prodshort.md)].
+Cet article fournit un aperçu de certaines combinaisons de touches de raccourcis que vous pouvez utiliser avec lorsque vous utilisez [!INCLUDE[prod_short](includes/prod_short.md)].
 
 Pour un aperçu des raccourcis clavier les plus courants, voir [Raccourcis clavier (PC uniquement)](keyboard-shortcuts-cheatsheet.md).
 
@@ -37,7 +37,7 @@ Les raccourcis clavier facilitent l'accessibilité et la navigation dans différ
 La plupart des raccourcis sont les mêmes, que le système d'exploitation soit Windows ou macOS. Cependant, certains raccourcis diffèrent pour macOS. Ces raccourcis sont indiqués entre parenthèses dans les sections suivantes.
 
 > [!NOTE]
-> Outre les raccourcis clavier globaux décrits dans cette rubrique, un certain nombre de raccourcis spécifiques à votre activité sont disponibles. Par exemple, dans la version générique de [!INCLUDE[prodshort](includes/prodshort.md)], F9 enregistre un document et Ctrl+F7 affiche les écritures financières d’un enregistrement. (Celles-ci peuvent être différentes dans votre solution.) Le raccourci clavier est affiché dans l'info-bulle de l'action en question.
+> Outre les raccourcis clavier globaux décrits dans cette rubrique, un certain nombre de raccourcis spécifiques à votre activité sont disponibles. Par exemple, dans la version générique de [!INCLUDE[prod_short](includes/prod_short.md)], F9 reporte un document et Ctrl+F7 affiche les écritures pour un enregistrement lorsque vous ouvrez l’enregistrement dans une fiche. (Celles-ci peuvent être différentes dans votre solution.) Le raccourci clavier est affiché dans l'info-bulle de l'action en question.
 
 ##  <a name="general-keyboard-shortcuts"></a><a name="Keyboard"></a> Raccourcis clavier généraux
 
@@ -51,10 +51,10 @@ Le tableau suivant décrit les raccourcis clavier pour naviguer et accéder aux 
 |Alt+F2|Affichez et masquez le volet Récapitulatif.|
 |Alt+Maj+F2|Basculer entre **Détails** et **Pièces jointes** dans le volet Récapitulatif.|
 |Alt+O|Ajouter une nouvelle note pour l'enregistrement sélectionné, même si le volet Récapitulatif n'est pas ouvert.|
-|Alt+Q<br />(Ctrl+Option+Q)|Ouvrir la fenêtre **Tell Me** . Pour plus d'informations, voir [Recherche de pages et d'informations avec Tell Me](ui-search.md).|
-|Alt+N |Ouvrir une page pour créer un nouvel enregistrement. (Semblable au choix des actions **Nouveau** et **+** .)|
+|Alt+Q<br />(Ctrl+Option+Q)|Ouvrir la fenêtre **Tell Me**. Pour plus d'informations, voir [Recherche de pages et d'informations avec Tell Me](ui-search.md).|
+|Alt+N |Ouvrir une page pour créer un nouvel enregistrement. (Semblable au choix des actions **Nouveau** et **+**.)|
 |Alt+Maj+N |Fermer une page nouvellement créée et en ouvrir une nouvelle pour créer un enregistrement. De même, Alt + F9 valide un document et en crée un nouveau.|
-|Alt+T|Ouvrez la page **Mes paramètres** .|
+|Alt+T|Ouvrez la page **Mes paramètres**.|
 |Alt+Flèche vers la droite|Rechercher des informations supplémentaires ou des valeurs sous-jacentes pour un champ contenant le bouton ![AssistEdit](media/assist-edit-icon.png "Bouton AssistEdit"). Ceci est utilisé lorsque le bouton déroulant habituel (Alt + Flèche vers le bas) dans le même champ est utilisé à une autre fin.|
 |Shift+F12|Ouvrir l'explorateur de rôles, une vue d'ensemble des fonctionnalités. Pour plus d'informations, voir [Recherche de pages avec l'explorateur de rôles ](ui-role-explorer.md).|
 |Ctrl+Alt+Maj+C|Afficher des informations dans le badge compagnie.|
@@ -63,13 +63,13 @@ Le tableau suivant décrit les raccourcis clavier pour naviguer et accéder aux 
 |Ctrl+F1|Ouvrez l'aide de Business Central pour la page.|
 |Ctrl+F12|Passez de la vue de mise en page développée à la vue de mise en page réduite.|
 |Ctrl+Clic|Naviguer pendant la personnalisation lorsque l'action est mise en surbrillance avec une flèche. Pour plus d'informations, voir [Personnaliser votre espace de travail](ui-personalization-user.md).|  
-|Ctrl+F5|Rechargez l'application [!INCLUDE[prodshort](includes/prodshort.md)]. (Similaire à sélectionner l'actualisation/rechargement du navigateur.)|
+|Ctrl+F5|Rechargez l'application [!INCLUDE[prod_short](includes/prod_short.md)]. (Similaire à sélectionner l'actualisation/rechargement du navigateur.)|
 |F5|Actualiser les données sur la page actuelle.<br /><br />Utilisez cette touche pour vous assurer que les données sont à jour sur la page avec les modifications que d'autres ont effectués pendant que vous travaillez.|
 |Saisissez|Activer ou accéder à l'élément ou au contrôle qui a le focus.|
 |Echap|Fermer la page actuelle ou la liste déroulante.|
 |Tab|Déplacer le focus sur le contrôle ou l'élément suivant d'une page, par exemple les actions, les boutons, les champs ou les en-têtes d'une liste.|
 |MAJ+Tab|Déplacer le focus sur le contrôle ou l'élément précédent d'une page, par exemple les actions, les boutons, les champs ou les en-têtes d'une liste.|
-|O et N|Activer les boutons **Oui** et **Non** dans les boîtes de dialogue. Les touches réelles varieront en fonction de votre langue actuelle spécifiée dans **Mes paramètres** . Par exemple, appuyez sur J pour activer le bouton **Ja** lorsque vous utilisez la langue allemande.|
+|O et N|Activer les boutons **Oui** et **Non** dans les boîtes de dialogue. Les touches réelles varieront en fonction de votre langue actuelle spécifiée dans **Mes paramètres**. Par exemple, appuyez sur J pour activer le bouton **Ja** lorsque vous utilisez la langue allemande.|
 
 ## <a name="keyboard-shortcuts-in-lists"></a>Raccourcis clavier dans les listes
 
@@ -83,12 +83,12 @@ Le tableau suivant décrit les raccourcis clavier que vous pouvez utiliser dans 
 |Appuyez sur les touches suivantes<br />(dans macOS)|Pour procéder dans une vue de liste|Pour procéder dans une vue en mosaïque |
 |--------------------------------|-------------------------|--------------------------|
 |Alt+F7 |Triez la colonne sélectionnée dans l'ordre croissant ou décroissant.|Non applicable.|
-|Alt+N|Insérer une nouvelle ligne dans une liste modifiable, telle que la page **Budgets GL** .|Identique.|
+|Alt+N|Insérer une nouvelle ligne dans une liste modifiable, telle que la page **Budgets GL**.|Identique.|
 |Shift+F10 |Ouvrir un menu d'options disponibles pour la ligne sélectionnée.|Identique.|
 
 ### <a name="navigating-between-rows-and-columns"></a><a name="navigateshortcuts"></a>Navigation entre les lignes et les colonnes
 
-Des grilles contenant des lignes et des colonnes existent sur de nombreux types de page dans [!INCLUDE[prodshort](includes/prodshort.md)], telles que les pages de liste et les éléments **Lignes** sur les documents. Le passage d'une cellule à une autre sur une grille est entièrement compatible avec le clavier.
+Des grilles contenant des lignes et des colonnes existent sur de nombreux types de page dans [!INCLUDE[prod_short](includes/prod_short.md)], telles que les pages de liste et les éléments **Lignes** sur les documents. Le passage d'une cellule à une autre sur une grille est entièrement compatible avec le clavier.
 
 |Appuyez sur les touches suivantes<br />(dans macOS)|Pour procéder dans une vue de liste |Pour procéder dans une vue en mosaïque |
 |--------------------------------|--------------------------|--------------------------|
@@ -130,11 +130,11 @@ Des grilles contenant des lignes et des colonnes existent sur de nombreux types 
 |Appuyez sur les touches suivantes<br />(dans macOS)|Pour|
 |--------------------------------|----------|
 |F3|Bascule la zone Rechercher.<ul><li>Activez la zone Rechercher pour que vous puissiez commencer à saisir votre texte de recherche.</li><li>Si la zone Rechercher est déjà activée, F3 revient à la liste sans effacer le texte de recherche.</li><ul>|
-|Shift+F3|Ouvrez et refermez le volet Filtre.<ul><li> Si le volet de filtre n'est pas ouvert, Maj + F3 l'ouvre et se concentre sur l'action **+ Filtre** sous **Filtrer la liste par** . Vous pouvez ensuite simplement appuyer sur Entrée pour commencer à ajouter un filtre de champ.</li><li>Si le volet Filtre est déjà ouvert, Maj+F3 le ferme mais n'efface pas les filtres que vous avez ajoutés.</li></ul>|
-|Ctrl+Shift+F3|Ouvrez et refermez le volet Filtre.<ul><li> Si le volet de filtre n'est pas ouvert, Ctrl + Maj + F3 l'ouvre et se concentre sur l'action **+ Filtre** sous **Filtrer le total par** . Vous pouvez ensuite simplement appuyer sur Entrée pour commencer à ajouter un filtre des totaux.</li><li>Si le volet Filtre est déjà ouvert, Ctrl+Maj+F3 le ferme mais n'efface pas les filtres que vous avez ajoutés.</li></ul>  |
+|Shift+F3|Ouvrez et refermez le volet Filtre.<ul><li> Si le volet de filtre n'est pas ouvert, Maj + F3 l'ouvre et se concentre sur l'action **+ Filtre** sous **Filtrer la liste par**. Vous pouvez ensuite simplement appuyer sur Entrée pour commencer à ajouter un filtre de champ.</li><li>Si le volet Filtre est déjà ouvert, Maj+F3 le ferme mais n'efface pas les filtres que vous avez ajoutés.</li></ul>|
+|Ctrl+Shift+F3|Ouvrez et refermez le volet Filtre.<ul><li> Si le volet de filtre n'est pas ouvert, Ctrl + Maj + F3 l'ouvre et se concentre sur l'action **+ Filtre** sous **Filtrer le total par**. Vous pouvez ensuite simplement appuyer sur Entrée pour commencer à ajouter un filtre des totaux.</li><li>Si le volet Filtre est déjà ouvert, Ctrl+Maj+F3 le ferme mais n'efface pas les filtres que vous avez ajoutés.</li></ul>  |
 |Alt+F3|Basculez le filtrage vers la valeur sélectionnée.<ul><li>Applique un filtre de colonne sur la valeur sélectionnée dans la liste. Cela correspond à choisir **Filtrer sur cette valeur** d'un en-tête de colonne. Il ouvre le volet Filtre, définit le filtre sur la valeur sélectionnée, tout en gardant le focus sur la cellule dans la liste.</li><li>Si la colonne est déjà filtrée, Alt+F3 efface le filtre de cette colonne.</li></ul> |
 |Maj+Alt+F3|Ouvrez le volet Filtre et ajoutez un filtre sur la colonne sélectionnée dans la liste. Le focus est sur le nouveau champ filtre ce qui vous permet de commencer à saisir les critères de filtre immédiatement.<br /><br /> Cela correspond à sélectionner **Filtrer** de l'en-tête de colonne.<br /><br />S'il existe déjà un filtre sur le champ, un nouveau filtre est ajouté. |
-|Ctrl+Shift+Alt+F3|Réinitialisez les filtres. Cela correspond à choisir **Réinitialiser les filtres** dans le volet Filtre, et s'applique aux champs et aux filtres de totaux.<br /><br /> Les filtres reviennent aux filtres par défaut de la fenêtre actuelle. Si la fenêtre actuelle est définie sur **Tous** , il s'agit de l'équivalent à revenir à une vue non filtrée avec tous les enregistrements. |
+|Ctrl+Shift+Alt+F3|Réinitialisez les filtres. Cela correspond à choisir **Réinitialiser les filtres** dans le volet Filtre, et s'applique aux champs et aux filtres de totaux.<br /><br /> Les filtres reviennent aux filtres par défaut de la fenêtre actuelle. Si la fenêtre actuelle est définie sur **Tous**, il s'agit de l'équivalent à revenir à une vue non filtrée avec tous les enregistrements. |
 |Ctrl+Enter|Modifiez le focus depuis le volet de filtrage pour revenir à la liste.|
 
 ## <a name="keyboard-shortcuts-in-cards-and-documents"></a>Raccourcis clavier des fiches et documents
@@ -145,8 +145,8 @@ Les raccourcis suivants sont disponibles sur les pages Fiche, telles que **Fiche
 |--------------------------------|----------|
 |Alt+F6|Basculer entre réduire ou développer pour le raccourci ou l'élément (sous-page) actuel.|
 |Alt+G|Ouvrez la page **Rechercher des écritures** pour rechercher des écritures liées au document reporté. Fonctionne également sur les listes.|
-|Alt+N |Ouvrir une page pour créer un nouvel enregistrement ; de la même façon qu'en sélectionnant l'action **Nouveau** . |
-|Alt+Maj+N |Fermer une page et en ouvrir une nouvelle pour créer un enregistrement, de la même façon qu'en sélectionnant l'action **OK & Nouveau** . |
+|Alt+N |Ouvrir une page pour créer un nouvel enregistrement ; de la même façon qu'en sélectionnant l'action **Nouveau**. |
+|Alt+Maj+N |Fermer une page et en ouvrir une nouvelle pour créer un enregistrement, de la même façon qu'en sélectionnant l'action **OK & Nouveau**. |
 |Alt+Maj+W |Ouvrir la fiche ou le document en cours dans une nouvelle fenêtre. Pour plus d'informations, voir [Multitâche sur plusieurs pages ](ui-enter-data.md#multitasking-across-multiple-pages).|
 |Ctrl+Enter|Enregistrer et fermer la page.|
 |Ctrl+Flèche bas|Ouvrez le nouvel enregistrement pour une entité.|
@@ -173,7 +173,7 @@ Lorsque vous définissez un champ de date, vous pouvez saisir la date manuelleme
 
 |Appuyez sur les touches suivantes<br />(dans macOS)|Pour|
 |--------------------------------|----------|
-|Ctrl+Début|Ouvrir le calendrier s'il est fermé. **Remarque**  : Cela ne fonctionne pas si le champ de date est dans une grille, où Ctrl+Début passe à la première ligne.|
+|Ctrl+Début|Ouvrir le calendrier s'il est fermé. **Remarque** : Cela ne fonctionne pas si le champ de date est dans une grille, où Ctrl+Début passe à la première ligne.|
 |Ctrl+Début<br />(Cmd+Accueil)|Accéder au mois actuel, le jour actuel.|
 |Ctrl+Flèche gauche<br />(Cmd+Flèche gauche)|Accéder au jour précédent.|
 |Ctrl+Flèche droite<br />(Cmd+Flèche droite)|Accéder au jour suivant.|
@@ -206,11 +206,19 @@ Lorsque vous définissez un champ de date, vous pouvez saisir la date manuelleme
 |Page suivante<br />(Fn + Flèche bas)|Accédez à la page suivante du rapport.|
 |Page précédente<br />(Fn + flèche haut)|Accédez à la page précédente du rapport.|
 
+## <a name="keyboard-shortcuts-for-zooming-in-and-out"></a><a name="zoomshortcuts"></a>Raccourcis clavier pour le zoom avant et arrière
+
+|Appuyez sur les touches suivantes|Pour|
+|--------------------------------|----------|
+|Ctrl++|Effectuez un zoom avant sur la page actuelle.|  
+|Ctrl+-|Effectuez un zoom arrière sur la page actuelle.|  
+|Ctrl+0|Effectuez un zoom avant ou arrière à 100 % sur la page actuelle.|  
+
 ## <a name="see-also"></a>Voir aussi
 
 [Référence rapide de raccourcis clavier - PC uniquement](keyboard-shortcuts-cheatsheet.md)  
 [Fonctionnalités d'assistance](ui-accessibility.md)  
 [Mise en route](product-get-started.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Forum Aux Questions](across-faq.md)  
 [Rechercher des écritures](ui-find-entries.md)  

@@ -10,20 +10,20 @@ ms.workload: na
 ms.search.keywords: consolidation, subsidiaries, consolidate
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 0961fb9cda09596e0c40ecd7f6478340d40f2e4d
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 6a2100a1f945153d9c89d3cd86fb5d16860c4930
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3913406"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4747101"
 ---
 # <a name="consolidating-financial-data-from-multiple-companies"></a>Consolidation des données financières de plusieurs compagnies
 
-Certaines organisations utilisent [!INCLUDE [prodshort](includes/prodshort.md)] dans plusieurs unités fonctionnelles ou entités juridiques. D’autres utilisent [!INCLUDE [prodshort](includes/prodshort.md)] dans les filiales qui doivent rendre compte aux organisations mères. Dans les deux cas, les comptables utilisent des outils intégrés pour aider à consolider les données financières.  
+Certaines organisations utilisent [!INCLUDE [prod_short](includes/prod_short.md)] dans plusieurs unités fonctionnelles ou entités juridiques. D’autres utilisent [!INCLUDE [prod_short](includes/prod_short.md)] dans les filiales qui doivent rendre compte aux organisations mères. Dans les deux cas, les comptables utilisent des outils intégrés pour aider à consolider les données financières.  
 
 Vous pouvez consolider les écritures d’au moins deux compagnies séparées (filiales) dans une compagnie consolidée. Chaque compagnie individuelle impliquée dans une consolidation est appelée unité fonctionnelle. La compagnie résultant de la combinaison est appelée compagnie consolidée.  
 
-Vous pouvez importer des données dans la compagnie consolidée à partir d’autres compagnies du même abonné [!INCLUDE [prodshort](includes/prodshort.md)], à partir d'abonnés ou à partir de fichiers.  
+Vous pouvez importer des données dans la compagnie consolidée à partir d’autres compagnies du même abonné [!INCLUDE [prod_short](includes/prod_short.md)], à partir d'abonnés ou à partir de fichiers.  
 
 Si les états financiers d’une unité fonctionnelle sont dans une devise différente de celle de la compagnie consolidée, vous devez configurer les taux de change pour la consolidation.  
 
@@ -42,7 +42,7 @@ Vous configurez la compagnie consolidée de la même manière que vous configure
 
 ## <a name="trial-balance"></a>Balance de vérification
 
-Si vous avez plusieurs compagnies dans [!INCLUDE[d365fin](includes/d365fin_md.md)], le rapport **Balance de vérification consolidée** peut vous donner un aperçu de leur santé financière dans leur ensemble.  
+Si vous avez plusieurs compagnies dans [!INCLUDE[prod_short](includes/prod_short.md)], le rapport **Balance de vérification consolidée** peut vous donner un aperçu de leur santé financière dans leur ensemble.  
 
 Le rapport regroupe les écritures de chacune de vos compagnies dans une nouvelle compagnie que vous créez pour stocker les données consolidées. Cette compagnie est généralement appelée « compagnie consolidée ». La compagnie consolidée est un simple conteneur pour les données consolidées, et ne contient pas de données métier en temps réel. Les compagnies que vous incluez dans la compagnie consolidée deviennent des **Unités fonctionnelles** dans le rapport. Pour plus d’informations, voir [Configurer la consolidation de la compagnie](finance-consolidated-company-reporting-setup.md).  
 
@@ -52,21 +52,21 @@ Le processus de transfert des chiffres des unités fonctionnelles vers la compag
 
 ### <a name="to-test-the-data-before-you-consolidate"></a>Pour tester les données avant la consolidation
 
-Vous pouvez tester vos données avant de les transférer vers la compagnie consolidée. [!INCLUDE[d365fin](includes/d365fin_md.md)] recherche des différences dans les informations des unités fonctionnelles et de la compagnie consolidée. Par exemple, si les numéros de compte ou les codes axe sont différents. Vous devez corriger les erreurs avant d'exécuter le rapport. Vous pouvez tester la base de données ou, si vous importez des données à partir d'un fichier XML, vous pouvez tester le fichier.  
+Vous pouvez tester vos données avant de les transférer vers la compagnie consolidée. [!INCLUDE[prod_short](includes/prod_short.md)] recherche des différences dans les informations des unités fonctionnelles et de la compagnie consolidée. Par exemple, si les numéros de compte ou les codes axe sont différents. Vous devez corriger les erreurs avant d'exécuter le rapport. Vous pouvez tester la base de données ou, si vous importez des données à partir d'un fichier XML, vous pouvez tester le fichier.  
 
 1. Ouvrez la compagnie consolidée.  
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Unités fonctionnelles** , puis sélectionnez le lien associé.  
+2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
 3. Exécutez l'une des opérations suivantes :  
 
-    * Pour tester un fichier, choisissez l'action **Tester fichier** , entrez le nom du fichier à tester, puis choisissez **Imprimer** .  
-    * Pour tester la base de données, choisissez **Tester base de données** .  
+    * Pour tester un fichier, choisissez l'action **Tester fichier**, entrez le nom du fichier à tester, puis choisissez **Imprimer**.  
+    * Pour tester la base de données, choisissez **Tester base de données**.  
 
 ### <a name="run-the-consolidation"></a>Exécuter la consolidation
 
 Une fois les données testées, vous pouvez les transférer vers la compagnie consolidée.  
 
 1. Connectez-vous à la compagnie consolidée.  
-2. Dans le **Tableau de bord Comptable** , choisissez l'action **Exécuter la consolidation** .  
+2. Dans le **Tableau de bord Comptable**, choisissez l'action **Exécuter la consolidation**.  
 3. Renseignez les champs requis.  
 4. Dans la section Filtre, définissez un filtre pour l'unité fonctionnelle ou le nom de la compagnie concerné.  
 5. programmez éventuellement le rapport à exécuter à une heure spécifique.  
@@ -100,14 +100,14 @@ Chaque compte s'affiche individuellement sur une ligne, selon la structure du pl
 
 ## <a name="export-and-import-consolidated-data-between-databases"></a>Exporter et importer des données consolidées entre des bases de données
 
-Si les données d'une unité fonctionnelle se trouvent dans une autre base de données, vous devez exporter les données dans un fichier avant de les inclure dans la consolidation. Chaque compagnie doit être exportée séparément. À cette fin, utilisez le traitement par lots **Exporter fichier consolidation** .  
+Si les données d'une unité fonctionnelle se trouvent dans une autre base de données, vous devez exporter les données dans un fichier avant de les inclure dans la consolidation. Chaque compagnie doit être exportée séparément. À cette fin, utilisez le traitement par lots **Exporter fichier consolidation**.  
 
 > [!TIP]
 > Utilisez le même processus pour exporter les données consolidées qui doivent être soumises à Dynamics 365 Finance, par exemple si l'unité fonctionnelle actuelle est une filiale et que la compagnie mère utilise Dynamics 365 Finance.
 
 Après l'exécution du traitement en lot, toutes les écritures des comptes GL sont traitées. Pour chaque combinaison d'axe principal et date sélectionnés, la valeur des champs **Montant** des écritures est totalisée et exportée. La combinaison d'axe principal et date sélectionnés suivante qui a le même numéro de compte est traitée, puis les combinaisons ayant le numéro de compte suivant sont traitées, etc.  
 
-Les écritures exportées contiennent les champs suivants : **N° compte** , **Date comptabilisation** et **Montant** . Si des informations de dimensions ont également été exportées, des codes de dimension et des valeurs de dimension sont également inclus.  
+Les écritures exportées contiennent les champs suivants : **N° compte**, **Date comptabilisation** et **Montant**. Si des informations de dimensions ont également été exportées, des codes de dimension et des valeurs de dimension sont également inclus.  
 
 1. Pour chaque ligne exportée, si le total des champs **Montant** est un débit, le numéro de compte configuré dans le champ **Compte débit consolidation** de l'unité fonctionnelle est exporté vers la ligne. Si le total est un crédit, le numéro correspondant dans le champ **Compte crédit consolidation** est exporté vers la ligne.  
 2. La date utilisée pour chaque ligne exportée est la date de fin de la période ou, si le transfert est opéré chaque jour, la date du calcul.  
@@ -118,5 +118,5 @@ Les écritures exportées contiennent les champs suivants : **N° compte** , **
 
 [Configurer la consolidation de la compagnie](finance-consolidated-company-reporting-setup.md)  
 [Gestion des transactions intersociétés](intercompany-manage.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Exportation de vos données métier vers Excel](about-export-data.md)

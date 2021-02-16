@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 1078b9839920684c4be54e1753db5c87e1694912
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 1bcbd23658ff2a74ae0ab88b6020e1d859f37355
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3912706"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4747728"
 ---
 # <a name="bookmark-a-page-or-report-on-your-role-center"></a>Ajouter un signet vers une page ou un rapport sur votre tableau de bord
 À l'aide de l'icône de signet, vous pouvez ajouter une action qui ouvre une page ou un rapport à partir du menu de navigation de votre tableau de bord. Cela vous permet d'accéder rapidement à votre contenu préféré ou à vos tâches professionnelles. Vous devez ajouter le signet à partir de la page ou du rapport cible, c'est-à-dire l'écran sur lequel vous souhaitez que le lien du tableau de bord s'ouvre.
@@ -35,8 +35,8 @@ Un nom d'action après la page est maintenant ajouté au menu de navigation de v
 Un nom d'action après le rapport est maintenant ajouté au menu de navigation de votre tableau de bord.
 
 ## <a name="to-bookmark-a-page-or-report-from-the-tell-me-window"></a>Pour ajouter un signet à une page ou à un rapport à partir de la fenêtre Tell me
-1. Ouvrez la fenêtre **Tell Me** et entrez, par exemple, **Documents de vente** .
-2. Passez votre souris sur le résultat de la recherche pour la page ou le rapport **Documents de vente** , puis choisissez l'icône ![Signet](media/ui_bookmark_icon.png "Signet").
+1. Ouvrez la fenêtre **Tell Me** et entrez, par exemple, **Documents de vente**.
+2. Passez votre souris sur le résultat de la recherche pour la page ou le rapport **Documents de vente**, puis choisissez l'icône ![Signet](media/ui_bookmark_icon.png "Signet").
 
 Un nom d'action après la page ou le rapport est maintenant ajouté au menu de navigation de votre tableau de bord.
 
@@ -58,7 +58,7 @@ Lors de l'ajout d'un signet à une page ou à un rapport, la nouvelle action est
 La possibilité d'ajouter un signet à une page ou à un rapport est l'une des nombreuses fonctionnalités de personnalisation de l'utilisateur dans Business Central. Si l'icône de signet ne s'affiche pas, il est probable que votre administrateur ait désactivé la personnalisation.
 
 - **Pourquoi ne puis-je pas ajouter un signet à certaines pages ou à certains rapports?**  
-Toutes les pages et tous les rapports ne peuvent pas être mis en signet. Lorsqu'une page ou un rapport est exécuté dans un contexte spécial régi par l'application métier, l'icône de signet ne s'affiche pas. Par exemple, les pages qui sont introuvables dans la fenêtre **Rechercher** , mais qui sont lancées depuis un autre emplacement, n’afficheront pas d’icône de signet. De même, les pages de demande de rapport utilisées uniquement pour collecter des filtres sans exécuter le rapport n'afficheront pas d'icône de signet.
+Toutes les pages et tous les rapports ne peuvent pas être mis en signet. Lorsqu'une page ou un rapport est exécuté dans un contexte spécial régi par l'application métier, l'icône de signet ne s'affiche pas. Par exemple, les pages qui sont introuvables dans la fenêtre **Rechercher**, mais qui sont lancées depuis un autre emplacement, n’afficheront pas d’icône de signet. De même, les pages de demande de rapport utilisées uniquement pour collecter des filtres sans exécuter le rapport n'afficheront pas d'icône de signet.
 
 Voir les détails techniques sur [RunRequestPage](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/report/reportinstance-runrequestpage-method) et [FilterPageBuilder](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/filterpagebuilder/filterpagebuilder-data-type).
 
@@ -81,6 +81,6 @@ Lorsqu'une nouvelle action est ajoutée, tout texte traduit qui était disponibl
 
 ## <a name="see-also"></a>Voir aussi
 [Personnaliser votre espace de travail](ui-personalization-user.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Modifier les paramètres de base](ui-change-basic-settings.md)  
 [Modifier les fonctionnalités affichées](ui-experiences.md)  

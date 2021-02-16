@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: e39de1d4656b272c5c6cf5c01f54d5d6ebeca05b
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: fc491b060d6a4b1039376b0051ef58da104ff1d1
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3914224"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4750365"
 ---
 # <a name="setting-up-source-codes-and-reason-codes-for-audit-trails"></a>Configuration des codes source et des codes de motif pour les pistes d'audit
 
@@ -29,27 +29,27 @@ Parfois, vous souhaitez savoir comment une écriture particulière a été cré�
 
 Le report de journaux, de commandes, de factures ou de notes de crédit, et l'exécution de divers traitement en lot, créent des écritures dans les états financiers. La page **Configuration code source** comporte plusieurs raccourcis, un pour chaque module. Chaque raccourci indique les codes sources applicables pour ce module.
 
-Lorsque vous reportez ou exécutez un traitement en lot, le code source correct est relié automatiquement à l'écriture. Par exemple, lorsque vous reportez à partir du journal général, l'écriture est codée comme *JNLGÉN* . Vous pouvez ensuite filtrer la page **Écritures journal général** pour afficher les écritures qui ont été reportées à partir du journal général ou des documents vente, par exemple
+Lorsque vous reportez ou exécutez un traitement en lot, le code source correct est relié automatiquement à l'écriture. Par exemple, lorsque vous reportez à partir du journal général, l'écriture est codée comme *JNLGÉN*. Vous pouvez ensuite filtrer la page **Écritures journal général** pour afficher les écritures qui ont été reportées à partir du journal général ou des documents vente, par exemple
 
 ### <a name="to-define-source-codes"></a>Pour définir des codes journaux
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), saisissez **Configuration code source** , puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), saisissez **Configuration code source**, puis sélectionnez le lien associé.  
 
-2. Dans la fenêtre **Configuration code source** , pour chaque type de report et traitement en lot, spécifiez le code source approprié.  
+2. Dans la fenêtre **Configuration code source**, pour chaque type de report et traitement en lot, spécifiez le code source approprié.  
 
 Vous pouvez modifier le contenu d'un champ ultérieurement, et cette modification aura alors un impact sur les reports futurs.
 
 ## <a name="change-source-codes"></a>Modifier les codes journaux
 
-Vous pouvez modifier un code journal. Par exemple, vous pouvez remplacer le code journal *GENJNL* par *GNJ* .
+Vous pouvez modifier un code journal. Par exemple, vous pouvez remplacer le code journal *GENJNL* par *GNJ*.
 
 ### <a name="to-change-source-codes"></a>Pour modifier des codes journaux
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), saisissez **Codes source** , puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), saisissez **Codes source**, puis sélectionnez le lien associé.
 
-2. Sur la ligne du code à modifier, sélectionnez le code dans le champ **Code** .
+2. Sur la ligne du code à modifier, sélectionnez le code dans le champ **Code**.
 
-3. Saisissez le nouveau code, puis cliquez sur le bouton **OK** . Vous pouvez également modifier la valeur du champ **Description** .
+3. Saisissez le nouveau code, puis cliquez sur le bouton **OK**. Vous pouvez également modifier la valeur du champ **Description**.
 
 Toutes les nouvelles écritures qui sont reportées à partir du journal général, se verront attribuer un nouveau code source.
 
@@ -59,9 +59,9 @@ Les codes de motif complètent les codes source et sont utilisés pour indiquer 
 
 ### <a name="to-set-up-reason-codes"></a>Pour configurer des codes motif
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), saisissez **Codes motif** , puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), saisissez **Codes motif**, puis sélectionnez le lien associé.
 
-2. Dans la fenêtre **Codes motif** , saisissez le premier code dans le champ **Code** . Dans le champ **Description** , saisissez un texte explicatif.
+2. Dans la fenêtre **Codes motif**, saisissez le premier code dans le champ **Code**. Dans le champ **Description**, saisissez un texte explicatif.
 
 Répétez cette procédure pour chaque code à utiliser. Vous pouvez configurer autant de codes que vous le souhaitez.
 
@@ -69,7 +69,7 @@ La procédure suivante décrit comment ajouter un code motif à un modèle journ
 
 ### <a name="to-assign-reason-codes-to-journal-templates"></a>Pour affecter des codes motif à des modèles journal
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Modèles journal général** , puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Modèles journal général**, puis sélectionnez le lien associé.
 
 2. Sur la ligne du modèle journal sélectionné, renseignez le champ **Code motif** avec le code souhaité.
 
@@ -81,7 +81,7 @@ Le code motif sélectionné est copié dans les nouveaux lots journal créées s
 
 1. Ouvrez le document achat ou vente approprié.
 
-2. Dans l'en-tête achat ou vente, entrez le code dans le champ **Code motif** .
+2. Dans l'en-tête achat ou vente, entrez le code dans le champ **Code motif**.
 
 Lors du report de la facture, le code motif est copié sur chaque écriture du grand livre, client et fournisseur. Vous ne pouvez pas affecter différents codes motif aux lignes achat et vente individuelles, car toutes les lignes sont reportées sous la forme d'une écriture unique.
 
@@ -94,6 +94,6 @@ Lors du report de la facture, le code motif est copié sur chaque écriture du g
 [Utilisation des dimensions](finance-dimensions.md)  
 [Importation des données métier à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  
 [Analyse de la trésorerie dans votre compagnie](finance-analyze-cash-flow.md)  
-[Utilisation de [!INCLUDE[prodshort](includes/prodshort.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
-## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
+## [!INCLUDE[prod_short](includes/free_trial_md.md)]  

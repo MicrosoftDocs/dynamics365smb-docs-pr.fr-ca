@@ -7,19 +7,19 @@ ms.topic: article
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 524ed44ed305fc219ea15afc061994dbe3050503
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: edcaaaedde3bb42c0c0d69c3e71dd659f5475712
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3910740"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4750465"
 ---
 # <a name="setting-up-inventory-valuation-and-costing"></a>Configuration de l'évaluation de l'inventaire et des coûts
 
 Pour vous assurer que les coûts ajustés sont enregistrés correctement, vous devez configurer plusieurs champs et pages avant de commencer à effectuer des transactions article. En règle générale, les entreprises choisissent une méthode d'évaluation des coûts spécifique et l’appliquent aux articles en inventaire, par exemple, pour les aider à suivre la valeur des articles en stock.  
 
 > [!TIP]
-> Pour une introduction à l'évaluation des coûts dans [!INCLUDE [prodshort](includes/prodshort.md)], voir [À propos de l’évaluation des coûts de l'inventaire](finance-learn-about-costing.md).
+> Pour une introduction à l'évaluation des coûts dans [!INCLUDE [prod_short](includes/prod_short.md)], voir [À propos de l’évaluation des coûts de l'inventaire](finance-learn-about-costing.md).
 
 Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.
 

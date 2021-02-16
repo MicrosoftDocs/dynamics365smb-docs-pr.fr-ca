@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 4137064ddb61039a2f748076c415b595e9750bc9
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 2b4d785697d12f00e6a2621d914d696e444faab5
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3914299"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4750615"
 ---
 # <a name="accounting-for-costs"></a>Comptabilité pour les coûts
 La comptabilité analytique vous permet de cerner les coûts liés à l'exploitation d'un activié. Pour vous familiariser avec la comptabilité analytique, reportez-vous aux rubriques suivantes.  
@@ -35,4 +35,4 @@ La comptabilité analytique vous permet de cerner les coûts liés à l'exploita
 ## <a name="see-also"></a>Voir aussi  
 [Finance](finance.md)  
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

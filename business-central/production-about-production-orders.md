@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: cc62673e83fa0a748164af57bf0a075ca325dde4
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: feeb8913f54b003d003caf1363194cbcf1a7a2b8
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3925015"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4749053"
 ---
 # <a name="about-production-orders"></a>À propos des ordres de fabrication
 Les ordres de fabrication permettent de gérer la conversion de matières achetées en articles fabriqués. La gamme de bons de production utilise divers ateliers ou unités de production dans l'atelier.  
@@ -38,7 +38,7 @@ Les ordres de fabrication sont les points de départ pour :
 -   la traçabilité de la fabrication terminée.  
 
 ## <a name="production-order-creation"></a>Création des bons de production  
-Il est possible de créer des bons de production un par un manuellement sur la page **Bon de production** ou de les générer sur les pages **Planification document de vente** et/ou **Planification commande** . La page **Feuille planification** permet de générer plusieurs ordres.  
+Il est possible de créer des bons de production un par un manuellement sur la page **Bon de production** ou de les générer sur les pages **Planification document de vente** et/ou **Planification commande**. La page **Feuille planification** permet de générer plusieurs ordres.  
 
 Les ordres de fabrication sont créés à l'aide d'informations provenant des éléments suivants :  
 
@@ -51,9 +51,9 @@ Les ordres de fabrication sont créés à l'aide d'informations provenant des é
 ## <a name="limitations-on-production-order-creation"></a>Limitations de la création de bons de production  
 Les ordres de fabrication sont automatiquement réservés et tracés sur leur source quand ils sont :  
 
--   créés à partir de la fenêtre **Feuille planification**  ;  
--   Créés avec la fonction Commande sur la page **Planification document de vente**  ;  
--   Créés sur la page **Planification commande**  ;  
+-   créés à partir de la fenêtre **Feuille planification** ;  
+-   Créés avec la fonction Commande sur la page **Planification document de vente** ;  
+-   Créés sur la page **Planification commande** ;  
 -   utilisés avec la fonction **Replanification** des ordres de fabrication.  
 
 Pour plus d'informations, voir [Suivre les relations entre l'offre et la demande](production-how-track-demand-supply.md).
@@ -61,7 +61,7 @@ Pour plus d'informations, voir [Suivre les relations entre l'offre et la demande
 Les ordres de fabrication créés par d'autres moyens ne sont pas automatiquement réservés et tracés.   
 
 ## <a name="production-order-status"></a>État du bon de production  
-L'état du bon de production contrôle la manière dont le bon de production se comporte dans l'application. La forme et le contenu de la production sont dictés par l'état de la commande. Les bons de production sont affichés sur différentes pages en fonction de leur état. Vous ne pouvez pas modifier le statut d'un ordre de fabrication manuellement ; vous devez utiliser la fonction **Modifier statut** .  
+L'état du bon de production contrôle la manière dont le bon de production se comporte dans l'application. La forme et le contenu de la production sont dictés par l'état de la commande. Les bons de production sont affichés sur différentes pages en fonction de leur état. Vous ne pouvez pas modifier le statut d'un ordre de fabrication manuellement ; vous devez utiliser la fonction **Modifier statut**.  
 
 ### <a name="simulated-production-order"></a>Bon de production simulé  
 Le bon de production simulé est unique en raison des caractéristiques suivantes :  
@@ -128,7 +128,7 @@ En aval, la génération de rapports de consommation est basée sur l'hypothèse
 - La consommation en aval doit être activée pour tous les articles de la nomenclature de production de niveau supérieur sur leur fiche article.  
 - Tous les codes lien itinéraire dans la nomenclature de production doivent être supprimés.  
 
-En amont, la génération d'états de consommation enregistre la quantité réelle des matières prélevées ou consommées lorsque le statut d'un ordre de fabrication passe à *Terminé* , sauf en cas d'utilisation de codes lien gamme. En cas d'utilisation de codes lien itinéraire, les matières sont consommées après qu'une quantité d'articles parents a été enregistrée pour l'opération dans le journal de sortie.  
+En amont, la génération d'états de consommation enregistre la quantité réelle des matières prélevées ou consommées lorsque le statut d'un ordre de fabrication passe à *Terminé*, sauf en cas d'utilisation de codes lien gamme. En cas d'utilisation de codes lien itinéraire, les matières sont consommées après qu'une quantité d'articles parents a été enregistrée pour l'opération dans le journal de sortie.  
 
 Lors de l'actualisation du bon de production, la méthode consommation est copiée à partir de la fiche article. Comme la méthode consommation de chaque bon de production contrôle le mode et le moment d'enregistrement de la consommation, il est important de noter que vous pouvez modifier la méthode de consommation d'articles spécifiques directement dans le bon de production.  
 
@@ -178,7 +178,7 @@ La quantité consommée est calculée pour la quantité par assemblage sur la no
 #### <a name="automatic-reporting---back-flushing-the-entire-order"></a>Génération de rapport automatique - Consommation en amont de l'ordre entier  
 Cette méthode de génération de rapport ne tient pas compte des codes lien itinéraire.  
 
-Aucun composant n'est prélevé tant que le statut de l'ordre de fabrication lancé n'est pas *Terminé* . La quantité consommée est calculée pour la quantité par assemblage sur la nomenclature de production multipliée par le nombre d'articles parents terminés et introduits dans l'inventaire.  
+Aucun composant n'est prélevé tant que le statut de l'ordre de fabrication lancé n'est pas *Terminé*. La quantité consommée est calculée pour la quantité par assemblage sur la nomenclature de production multipliée par le nombre d'articles parents terminés et introduits dans l'inventaire.  
 
 La consommation en amont du bon de production tout entier requiert la même configuration que pour la consommation en aval : la méthode de génération de rapport doit être définie sur amont dans la fiche article de tous les articles de la nomenclature parente pour que le rapport soit généré. En outre, tous les codes lien itinéraire doivent être supprimés de la nomenclature de production.  
 
@@ -200,7 +200,7 @@ En amont, cette méthode enregistre la production prévue (et le temps), qui est
 ### <a name="posting-consumption-and-output"></a>Report de la consommation et de la production  
 Vous pouvez utiliser toute combinaison d'informations de consommation automatique et enregistrées manuellement tant pour la consommation que pour la production. Par exemple, vous pouvez consommer automatiquement en aval des composantes, tout en utilisant le journal consommation pour enregistrer les rebuts. De même, vous pouvez enregistrer automatiquement la production tout en utilisant le journal de sortie pour enregistrer les rebuts de l'article parent ou le temps supplémentaire consacré au traitement de l'ordre.  
 
-Enfin, si vous entrez une consommation et une production manuellement, vous devez déterminer l'ordre dans lequel vous allez enregistrer ces informations. Vous pouvez commencer par enregistrer une consommation, puis utiliser une méthode de raccourci pour entrer les informations, basée sur une quantité de production prévue. Vous pouvez également commencer par entrer une production en utilisant la fonction **Éclater gamme** . Vous enregistrez ensuite une consommation sur la base de la quantité de production réelle.  
+Enfin, si vous entrez une consommation et une production manuellement, vous devez déterminer l'ordre dans lequel vous allez enregistrer ces informations. Vous pouvez commencer par enregistrer une consommation, puis utiliser une méthode de raccourci pour entrer les informations, basée sur une quantité de production prévue. Vous pouvez également commencer par entrer une production en utilisant la fonction **Éclater gamme**. Vous enregistrez ensuite une consommation sur la base de la quantité de production réelle.  
 
 ### <a name="production-journal"></a>Journal de production  
 Le journal production combine les fonctions du journal consommation et des journaux production dans un seul journal, directement accessible depuis le bon de production libéré.  
@@ -234,4 +234,4 @@ Dans le journal production, les quantités consommées sont reportées comme éc
 [Planification](production-planning.md)      
 [Stock](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

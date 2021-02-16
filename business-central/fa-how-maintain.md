@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: repair, service
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 3548576f498808a215f52b25302866cd2041269c
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 0aac3f40cb8a6aa7f2e9a3eff182edb86dd1efb8
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3910865"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4749378"
 ---
 # <a name="maintain-fixed-assets"></a>Mettre à jour des immobilisations
 Les frais d'entretien sont des coûts périodiques de routine engagés pour préserver la valeur des immobilisations. Contrairement aux améliorations de capital, ils n'augmentent pas les valeurs.
@@ -27,66 +27,66 @@ Vous pouvez enregistrer et mettre à jour un fichier sur l'entretien et le servi
 L'actualisation permet d'ajuster des valeurs en fonction de modifications générales de niveau de prix. Le traitement par lots **Réévaluer immobilisations** permet de recalculer les coûts de maintenance.
 
 ## <a name="to-record-maintenance-work-on-a-fixed-asset"></a>Pour enregistrer les travaux d'entretien sur une immobilisation
-Vous pouvez enregistrer chaque tâche entretien, telle qu'une visite de service, effectuée pour une immobilisation donnée. Pour cela, utilisez la page **Enregistrements entretien** .  
+Vous pouvez enregistrer chaque tâche entretien, telle qu'une visite de service, effectuée pour une immobilisation donnée. Pour cela, utilisez la page **Enregistrements entretien**.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Immobilisations** , puis sélectionnez le lien associé.  
-2. Sélectionnez l'immobilisation pour laquelle vous souhaitez enregistrer la maintenance, puis sélectionnez l'action **Saisie de la maintenance** .
-3. Sur la page **Enregistrement entretien** , renseignez les champs comme nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Immobilisations**, puis sélectionnez le lien associé.  
+2. Sélectionnez l'immobilisation pour laquelle vous souhaitez enregistrer la maintenance, puis sélectionnez l'action **Saisie de la maintenance**.
+3. Sur la page **Enregistrement entretien**, renseignez les champs comme nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
 ## <a name="to-post-maintenance-costs-from-a-fixed-asset-gl-journal"></a>Pour reporter les coûts d'entretien à partir d'un journal GL immobilisation
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Liste des registres amortissement** , puis choisissez le lien associé.  
-2. Sélectionnez la loi d'amortissement qui est attribuée à une immobilisation, puis sélectionnez l'action **Modifier** .
-3. Sur la page **Fiche registre amortissement** , veillez à ce que la case **Entretien** ne soit pas cochée. Cela garantit que les coûts d'entretien ne sont pas reportés dans le grand livre.
-4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux GL immobilisation** , puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Liste des registres amortissement**, puis choisissez le lien associé.  
+2. Sélectionnez la loi d'amortissement qui est attribuée à une immobilisation, puis sélectionnez l'action **Modifier**.
+3. Sur la page **Fiche registre amortissement**, veillez à ce que la case **Entretien** ne soit pas cochée. Cela garantit que les coûts d'entretien ne sont pas reportés dans le grand livre.
+4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux GL immobilisation**, puis sélectionnez le lien associé.  
 5. Créez une ligne journal initiale et complétez les champs, le cas échéant.
-6. Dans le champ **Type compta. immo** , sélectionnez **Maintenance** .
-7. Sélectionnez l'action **Insérer contrepartie immo.** . Une seconde ligne journal est créée pour le compte de contrepartie qui est configuré pour le report de l'entretien.
+6. Dans le champ **Type compta. immo**, sélectionnez **Maintenance**.
+7. Sélectionnez l'action **Insérer contrepartie immo.**. Une seconde ligne journal est créée pour le compte de contrepartie qui est configuré pour le report de l'entretien.
 
     > [!NOTE]  
     >   L'étape 7 ne fonctionne que si vous avez configuré ce qui suit : sur la page **Fiche groupe de report immo.** du groupe de report de l'immobilisation, le champ **Compte entretien** contient le compte débit GL et le champ **Compte contrepartie entretien** contient le compte GL dans lequel vous souhaitez reporter les écritures contrepartie pour appréciation. Pour plus d'informations, voir [Pour configurer des groupes de report immobilisation](fa-how-setup-general.md#to-set-up-fixed-asset-posting-groups).
-8. Sélectionnez l'action **Reporter** .
+8. Sélectionnez l'action **Reporter**.
 
 ## <a name="to-follow-up-on-fixed-assets-service-visits"></a>Pour effectuer le suivi des visites d'entretien des immobilisations
 Vous pouvez imprimer l'état **Maintenance - Service suivant** afin de connaître les immobilisations pour lesquelles vous avez programmé une visite de service. Vous pouvez également utiliser cet état lorsque vous mettez à jour le champ **Date prochain service** des fiches immobilisation.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Entretien - Service suivant** , puis sélectionnez le lien associé.  
-2. Renseignez les champs **Date début** et **Date fin** .  
-3. Cliquez sur le bouton **Imprimer** ou **Aperçu** .
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Entretien - Service suivant**, puis sélectionnez le lien associé.  
+2. Renseignez les champs **Date début** et **Date fin**.  
+3. Cliquez sur le bouton **Imprimer** ou **Aperçu**.
 
 ## <a name="to-monitor-maintenance-costs"></a>Pour surveiller les coûts d'entretien
 Vous pouvez visualiser les coûts d'entretien lorsque vous consultez les statistiques d'une immobilisation.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Immobilisations** , puis sélectionnez le lien associé.
-2. Sélectionnez l'immobilisation pour laquelle vous souhaitez afficher les coûts de maintenance, puis sélectionnez l'action **Lois d'amortissement** .
-3. Sur la page **Registres amortissement immo.** , sélectionnez le registre amortissement immobilisation pertinent, puis sélectionnez l'action **Statistiques** .
-4. Sur la page **Statistiques immobilisation** , sélectionnez le champ **Entretien** .
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Immobilisations**, puis sélectionnez le lien associé.
+2. Sélectionnez l'immobilisation pour laquelle vous souhaitez afficher les coûts de maintenance, puis sélectionnez l'action **Lois d'amortissement**.
+3. Sur la page **Registres amortissement immo.**, sélectionnez le registre amortissement immobilisation pertinent, puis sélectionnez l'action **Statistiques**.
+4. Sur la page **Statistiques immobilisation**, sélectionnez le champ **Entretien**.
 
-La page **Écritures entretien** s'ouvre, affichant les écritures qui constituent le montant dans le champ **Entretien** .
+La page **Écritures entretien** s'ouvre, affichant les écritures qui constituent le montant dans le champ **Entretien**.
 
 ## <a name="to-view-or-print-maintenance-costs-for-multiple-fixed-assets"></a>Pour afficher ou imprimer les coûts d'entretien pour plusieurs immobilisations
-Dans l'état **Maintenance - Analyse** , vous pouvez choisir de visualiser la maintenance sur un, deux ou trois codes maintenance pour une date ou une période donnée. Vous pouvez également visualiser soit le total de toutes les immobilisations sélectionnées, soit celui de chaque immobilisation.
+Dans l'état **Maintenance - Analyse**, vous pouvez choisir de visualiser la maintenance sur un, deux ou trois codes maintenance pour une date ou une période donnée. Vous pouvez également visualiser soit le total de toutes les immobilisations sélectionnées, soit celui de chaque immobilisation.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Entretien - Analyse** , puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Entretien - Analyse**, puis sélectionnez le lien associé.
 2. Renseignez les champs selon vos besoins.
-3. Cliquez sur le bouton **Imprimer** ou **Aperçu** .
+3. Cliquez sur le bouton **Imprimer** ou **Aperçu**.
 
 ## <a name="to-view-maintenance-ledger-entries"></a>Pour visualiser des écritures entretien
 Vous pouvez également étudier les coûts d'entretien en visualisant les écritures.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Immobilisations** , puis sélectionnez le lien associé.
-2. Sélectionnez l'immobilisation pour laquelle vous souhaitez afficher les écritures comptables, puis sélectionnez l'action **Lois d'amortissement** .
-3. Sur la page **Registres amortissement immo.** , sélectionnez le registre amortissement immobilisation pertinent, puis l'action **Écritures du registre d'entretien** .
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Immobilisations**, puis sélectionnez le lien associé.
+2. Sélectionnez l'immobilisation pour laquelle vous souhaitez afficher les écritures comptables, puis sélectionnez l'action **Lois d'amortissement**.
+3. Sur la page **Registres amortissement immo.**, sélectionnez le registre amortissement immobilisation pertinent, puis l'action **Écritures du registre d'entretien**.
 
 ## <a name="to-view-or-print-maintenance-ledger-entries-for-multiple-fixed-assets"></a>Pour afficher ou imprimer les écritures d'entretien pour plusieurs immobilisations
-Dans l'état **Maintenance - Détails** , vous pouvez afficher ou imprimer les écritures comptables de maintenance pour un ou plusieurs actifs.  
+Dans l'état **Maintenance - Détails**, vous pouvez afficher ou imprimer les écritures comptables de maintenance pour un ou plusieurs actifs.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Entretien - Détails** , puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Entretien - Détails**, puis sélectionnez le lien associé.
 2. Renseignez les champs selon vos besoins.
-3. Cliquez sur le bouton **Imprimer** ou **Aperçu** .
+3. Cliquez sur le bouton **Imprimer** ou **Aperçu**.
 
 ## <a name="see-also"></a>Voir aussi
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  
 [Finance](finance.md)  
 [Mise en route](product-get-started.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

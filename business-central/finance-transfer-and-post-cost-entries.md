@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 9063126f0b8bd1b9ef8deadcbeb0451b3009f10d
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: e70d34effb16c7fc4daa3bde19cf1fb0ac03902c
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3919473"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4750315"
 ---
 # <a name="transferring-and-posting-cost-entries"></a>Transfert et report des écritures de coûts
 Avant de définir des affectations de coûts, vous devez comprendre comment les écritures de coûts proviennent des sources suivantes :  
@@ -40,9 +40,9 @@ Les écritures ne sont pas transférées si :
 -   Les écritures ont des valeurs de dimension ne correspondant ni à un centre de coûts ni à un objet de coûts.  
 -   Les écritures sont égales à zéro.  
 -   Les écritures ont un compte du grand livre qui a été supprimé.  
--   Les écritures ont un compte général qui n'est pas du type **Comptes de gestion** .  
+-   Les écritures ont un compte général qui n'est pas du type **Comptes de gestion**.  
 -   Les écritures ont un compte du grand livre sans type de coût affecté.  
--   La date de report des écritures est antérieure à la **Date début pour transfert grand livre** .  
+-   La date de report des écritures est antérieure à la **Date début pour transfert grand livre**.  
 -   Les écritures ont été reportées avec une date de fermeture. Il s'agit généralement des écritures qui redéfinissent le solde des états des résultats sur la fin de l'exercice.
 
 ## <a name="transferring-general-ledger-entries-to-cost-entries"></a>Transfert des écritures GL vers les écritures de coûts
@@ -52,19 +52,19 @@ Avant d'exécuter le transfert des écritures vers des écritures de coûts, vou
 
 ### <a name="to-prepare-the-transfer"></a>Pour préparer le transfert  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration de la comptabilité analytique** , puis sélectionnez le lien associé.  
-2.  Sur la page **Configuration comptabilité analytique** , vérifiez que le champ **Date début pour transfert GL** est défini sur la valeur appropriée.  
-3.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable des types de coûts** , puis sélectionnez le lien associé.  
-4.  Sur la page **Fiche type de coût** , vérifiez que le champ **Plage compte du grand livre** est lié correctement de sorte que chaque type de coût récupère les écritures du grand livre.  
-5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable** , puis sélectionnez le lien associé.  
-6.  Pour chaque compte GL approprié, sur la page **Fiche compte du grand livre** , vérifiez que le champ **N° type coût** est lié correctement à un type de coût. Pour plus d'informations, voir [Configuration du contrôle de gestion](finance-set-up-cost-accounting.md).  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration de la comptabilité analytique**, puis sélectionnez le lien associé.  
+2.  Sur la page **Configuration comptabilité analytique**, vérifiez que le champ **Date début pour transfert GL** est défini sur la valeur appropriée.  
+3.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable des types de coûts**, puis sélectionnez le lien associé.  
+4.  Sur la page **Fiche type de coût**, vérifiez que le champ **Plage compte du grand livre** est lié correctement de sorte que chaque type de coût récupère les écritures du grand livre.  
+5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable**, puis sélectionnez le lien associé.  
+6.  Pour chaque compte GL approprié, sur la page **Fiche compte du grand livre**, vérifiez que le champ **N° type coût** est lié correctement à un type de coût. Pour plus d'informations, voir [Configuration du contrôle de gestion](finance-set-up-cost-accounting.md).  
 7.  Vérifiez que toutes les écritures GL comprennent des valeurs de dimension correspondant à un centre de coûts et à un objet de coûts.  
 
 ### <a name="to-transfer-general-ledger-entries-to-cost-entries"></a>Pour transférer les écritures vers les écritures de coûts  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Transférer les écritures comptables vers CA** , puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Transférer les écritures comptables vers CA**, puis choisissez le lien associé.  
 2.  Cliquez sur le bouton **Oui** pour démarrer le transfert. Le processus transfère toutes les écritures qui n'ont pas encore été transférées.  
 
-    Lors du transfert, le processus crée des connexions dans les écritures des tables **Écriture de coûts** et **Registre de coûts** . Cela permet d'identifier l'origine des écritures de coûts.
+    Lors du transfert, le processus crée des connexions dans les écritures des tables **Écriture de coûts** et **Registre de coûts**. Cela permet d'identifier l'origine des écritures de coûts.
 
 ## <a name="automatic-transfer-and-combined-entries"></a>Transfert automatique et écritures combinées
 En comptabilité analytique, vous pouvez transférer les écritures vers un type de coût à l'aide d'un report combiné. Vous pouvez spécifier si un type de coût reçoit des écritures combinées dans le champ **Combiner écritures** dans la définition du type de coût. Le tableau suivant décrit les différentes options.  
@@ -76,25 +76,25 @@ En comptabilité analytique, vous pouvez transférer les écritures vers un type
 |Mois|Toutes les écritures du même mois calendaire sont transférées en une seul écriture vers le type de coût correspondant.|  
 
 > [!IMPORTANT]  
->  Si vous avez coché la case **Transférer automatiquement à partir du GL** sur la page **Configuration de la comptabilité analytique** , [!INCLUDE[d365fin](includes/d365fin_md.md)] met à jour la comptabilité analytique après chaque report dans le grand livre. Les écritures combinées ne sont pas possibles.
+>  Si vous avez coché la case **Transférer automatiquement à partir du GL** sur la page **Configuration de la comptabilité analytique**, [!INCLUDE[prod_short](includes/prod_short.md)] met à jour la comptabilité analytique après chaque report dans le grand livre. Les écritures combinées ne sont pas possibles.
 
 ## <a name="results-of-transferring-general-ledger-entries-to-cost-entries"></a>Résultats du transfert des écritures GL vers les écritures de coûts
-Lors du transfert des écritures GL vers les écritures de coûts, [!INCLUDE[d365fin](includes/d365fin_md.md)] crée des connexions dans les écritures des tables **Écriture** , **Écriture de coûts** et **Registre de coûts** pour assurer le suivi des connexions entre les écritures de coûts et les écritures GL.  
+Lors du transfert des écritures GL vers les écritures de coûts, [!INCLUDE[prod_short](includes/prod_short.md)] crée des connexions dans les écritures des tables **Écriture**, **Écriture de coûts** et **Registre de coûts** pour assurer le suivi des connexions entre les écritures de coûts et les écritures GL.  
 
 ### <a name="general-ledger-entries"></a>Écritures journal général  
-Pour chaque écriture GL transférée vers la comptabilité analytique, [!INCLUDE[d365fin](includes/d365fin_md.md)] renseigne le champ **N° écriture** .  
+Pour chaque écriture GL transférée vers la comptabilité analytique, [!INCLUDE[prod_short](includes/prod_short.md)] renseigne le champ **N° écriture**.  
 
 ### <a name="cost-entries"></a>Écritures de coûts  
-Pour chaque écriture de coûts, [!INCLUDE[d365fin](includes/d365fin_md.md)] garde le numéro d'écriture de l'écriture GL correspondante dans le champ **N° Écriture** de la table **Écriture de coûts** .  
+Pour chaque écriture de coûts, [!INCLUDE[prod_short](includes/prod_short.md)] garde le numéro d'écriture de l'écriture GL correspondante dans le champ **N° Écriture** de la table **Écriture de coûts**.  
 
-Pour les écritures de coûts combinées, [!INCLUDE[d365fin](includes/d365fin_md.md)] garde le numéro de la dernière écriture comptable, à savoir l'écriture avec le numéro le plus élevé.  
+Pour les écritures de coûts combinées, [!INCLUDE[prod_short](includes/prod_short.md)] garde le numéro de la dernière écriture comptable, à savoir l'écriture avec le numéro le plus élevé.  
 
 Le champ **Compte du grand livre** de la table **Écriture de coûts** contient le numéro du compte GL, d'où provient l'écriture de coûts.  
 
-Pour les écritures de coûts uniques, [!INCLUDE[d365fin](includes/d365fin_md.md)] transfère le texte de validation depuis l'écriture comptable vers le champ de texte **Description** . Pour les écritures combinées, le champ de texte indique que ces écritures sont transférées en tant qu'écritures combinées. Par exemple, pour une écriture combinée pour octobre 2013, le texte peut être **Écritures combinées, octobre 2013** .  
+Pour les écritures de coûts uniques, [!INCLUDE[prod_short](includes/prod_short.md)] transfère le texte de validation depuis l'écriture comptable vers le champ de texte **Description**. Pour les écritures combinées, le champ de texte indique que ces écritures sont transférées en tant qu'écritures combinées. Par exemple, pour une écriture combinée pour octobre 2013, le texte peut être **Écritures combinées, octobre 2013**.  
 
 ### <a name="cost-register"></a>Registre de coûts  
-Dans la table **Registre de coûts** , [!INCLUDE[d365fin](includes/d365fin_md.md)] crée une écriture à l'aide du transfert source depuis la comptabilité. L'écriture enregistre le premier et le dernier numéros des écritures transférées, en plus des premier et dernier numéros des écritures de coûts créées.
+Dans la table **Registre de coûts**, [!INCLUDE[prod_short](includes/prod_short.md)] crée une écriture à l'aide du transfert source depuis la comptabilité. L'écriture enregistre le premier et le dernier numéros des écritures transférées, en plus des premier et dernier numéros des écritures de coûts créées.
 
 ## <a name="see-also"></a>Voir aussi  
  [À propos de la comptabilité analytique](finance-about-cost-accounting.md)   

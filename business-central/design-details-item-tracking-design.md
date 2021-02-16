@@ -10,31 +10,31 @@ ms.workload: na
 ms.search.keywords: design, item, tracking, tracing
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: a9cdea97b9753adbbe8128b674dc4161178bc6f8
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 87c85de9f501e093679512b709841d0027fe17bf
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3917436"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4751340"
 ---
 # <a name="design-details-item-tracking-design"></a>Détails de conception : création de traçabilité
-Dans la première version de Traçabilité de [!INCLUDE[d365fin](includes/d365fin_md.md)] 2.60, les numéros de série ou les numéros de lot étaient enregistrés directement sur les écritures article. Ce design a fourni des informations de disponibilité complète et un suivi unique des écritures historiques, mais il a manqué de flexibilité et de fonctionnalité.  
+Dans la première version de Traçabilité de [!INCLUDE[prod_short](includes/prod_short.md)] 2.60, les numéros de série ou les numéros de lot étaient enregistrés directement sur les écritures article. Ce design a fourni des informations de disponibilité complète et un suivi unique des écritures historiques, mais il a manqué de flexibilité et de fonctionnalité.  
 
-Depuis [!INCLUDE[d365fin](includes/d365fin_md.md)] 3.00, la fonctionnalité de traçabilité se trouve dans une structure d'objet distincte avec des liens complexes à des documents et des écritures article reportés. Ce design était flexible et riche en fonctionnalités, mais les écritures de suivi d'article n'étaient pas entièrement impliquées dans les calculs de disponibilité.  
+Depuis [!INCLUDE[prod_short](includes/prod_short.md)] 3.00, la fonctionnalité de traçabilité se trouve dans une structure d'objet distincte avec des liens complexes à des documents et des écritures article reportés. Ce design était flexible et riche en fonctionnalités, mais les écritures de suivi d'article n'étaient pas entièrement impliquées dans les calculs de disponibilité.  
 
-Depuis [!INCLUDE[d365fin](includes/d365fin_md.md)] 3.60, la fonctionnalité de traçabilité est intégrée au système de réservation, qui traite la réservation, le chaînage et les messages d'action. Pour plus d'informations, voir « Détails de conception : réservations, chaînage et messages d'action » dans « Détails de conception : planification des approvisionnements ».  
+Depuis [!INCLUDE[prod_short](includes/prod_short.md)] 3.60, la fonctionnalité de traçabilité est intégrée au système de réservation, qui traite la réservation, le chaînage et les messages d'action. Pour plus d'informations, voir « Détails de conception : réservations, chaînage et messages d'action » dans « Détails de conception : planification des approvisionnements ».  
 
-Ce dernier design incorpore les écritures de suivi d'article dans les calculs de disponibilité totaux dans tout le système, y compris la planification, la fabrication, et l'entreposage. L'ancien concept consistant à indiquer les numéros de série et de lot des écritures article est réintroduit pour assurer un accès simple aux données historiques pour la traçabilité. En relation avec les améliorations de traçabilité dans [!INCLUDE[d365fin](includes/d365fin_md.md)] 3.60, le système de réservation a été étendu aux entités réseau sans rapport avec les commandes, telles que les journaux, les factures et les notes de crédit.  
+Ce dernier design incorpore les écritures de suivi d'article dans les calculs de disponibilité totaux dans tout le système, y compris la planification, la fabrication, et l'entreposage. L'ancien concept consistant à indiquer les numéros de série et de lot des écritures article est réintroduit pour assurer un accès simple aux données historiques pour la traçabilité. En relation avec les améliorations de traçabilité dans [!INCLUDE[prod_short](includes/prod_short.md)] 3.60, le système de réservation a été étendu aux entités réseau sans rapport avec les commandes, telles que les journaux, les factures et les notes de crédit.  
 
 Avec l'ajout de numéros de série ou de lot, le système de réservation gère les attributs d'article permanents tout en gérant également les liens intermittents entre l'approvisionnement et la demande sous la forme d'écritures de suivi de commande et d'écritures de réservation. Il existe une autre caractéristique qui différencie les numéros de série ou de lot des données de réservation conventionnelles : leur report peut être effectué partiellement ou en totalité. Par conséquent, la table **Écriture de réservation** (T337) s'exécute à présent avec une table associée, la table **Spécification traçabilité** (T336), qui gère et affiche l'ajout à travers les quantités de suivi article actives et reportées. Pour plus d'informations, voir [Détails de conception : comparaison entre écritures traçabilité actives et historiques](design-details-active-versus-historic-item-tracking-entries.md).  
 
-Le schéma suivant explique la conception de la fonctionnalité de traçabilité dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+Le schéma suivant explique la conception de la fonctionnalité de traçabilité dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 ![Exemple de flux de traçabilité](media/design_details_item_tracking_design.png "Exemple de flux de traçabilité")  
 
 L'objet de report principal est remodelé pour gérer la sous-classification unique d'une ligne document sous forme de numéros de série ou de lot, et des tables de lien spéciales sont ajoutées pour créer une relation un à plusieurs entre les documents reportés et leurs écritures article et valeur scindées.  
 
-Codeunit 22, **Journal article – Ligne report** , fractionne alors le report en fonction des numéros traçabilité qui sont indiqués sur la ligne document. Chaque numéro traçabilité unique sur la ligne crée sa propre écriture article pour l'article. Cela signifie que le lien de la ligne document reportée vers les écritures article associées est à présent une relation un à plusieurs. Cette relation est traitée par les tableaux de relation de suivi d'article suivants.  
+Codeunit 22, **Journal article – Ligne report**, fractionne alors le report en fonction des numéros traçabilité qui sont indiqués sur la ligne document. Chaque numéro traçabilité unique sur la ligne crée sa propre écriture article pour l'article. Cela signifie que le lien de la ligne document reportée vers les écritures article associées est à présent une relation un à plusieurs. Cette relation est traitée par les tableaux de relation de suivi d'article suivants.  
 
 |Champ|Description|  
 |---------------|---------------------------------------|  

@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 42a8fd05fe74276c5b570253b67be20189201071
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 6b86bf4be6a925913e3e2a0a70cf2066e8956681
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3922152"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4751566"
 ---
 # <a name="design-details-inbound-warehouse-flow"></a>Détails de conception : flux d'enlogement
 Le flux entrant dans un entrepôt commence à l'arrivée des articles dans l'entrepôt de l'emplacement de la compagnie, qu'ils proviennent de sources externes ou d'un autre emplacement de la compagnie. Un employé enregistre les articles, généralement en numérisant un code barre. Depuis le quai de réception, des activités entrepôt sont effectuées à différents niveaux de complexité pour amener les articles dans la zone de stockage.  
@@ -35,7 +35,7 @@ Les deux derniers représentent les flux entrants dans l'entrepôt en provenance
 
 Les processus et les documents de l'interface utilisateur dans les flux d'enlogement sont différents pour les configurations d'entrepôt de base et avancées. La principale différence est que les activités sont effectuées par commande dans les configurations d'entrepôt de base, et qu'elles sont regroupées pour plusieurs commandes dans les configurations d'entrepôt avancées. Pour plus d'informations sur les différents niveaux de complexité entrepôt, consultez et [Détails de conception : vue d'ensemble d'entrepôt](design-details-warehouse-setup.md).  
 
-Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les processus entrants de réception et de rangement peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.  
+Dans [!INCLUDE[prod_short](includes/prod_short.md)], les processus entrants de réception et de rangement peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.  
 
 |Méthode|Processus entrant|Zones|Reçus|Rangements|Niveau de complexité (Voir [Détails de conception : configuration d'entrepôt](design-details-warehouse-setup.md))|  
 |------------|---------------------|----------|--------------|----------------|--------------------------------------------------------------------------------------------------------------------|  
@@ -60,10 +60,10 @@ Lorsque les articles sont réceptionnés dans l'entrepôt, l'utilisateur qui est
 Lorsque le document origine entrant est émis, une demande entrepôt entrante est automatiquement créée. Elle contient des références au type et au numéro du document origine et n'est pas visible à l'utilisateur.  
 
 ### <a name="3-create-inventory-put-away"></a>3 : Créer un rangement inventaire  
-Sur la page **Rangement inventaire** , l'employé d'entrepôt extrait, en mode extraction, les lignes document origine en attente en fonction des demandes enlogement. Sinon, les lignes rangement inventaire sont déjà créées, par déplacement, par l'utilisateur responsable du document source.  
+Sur la page **Rangement inventaire**, l'employé d'entrepôt extrait, en mode extraction, les lignes document origine en attente en fonction des demandes enlogement. Sinon, les lignes rangement inventaire sont déjà créées, par déplacement, par l'utilisateur responsable du document source.  
 
 ### <a name="4-post-inventory-put-away"></a>4 : Reporter rangement inventaire  
-Sur chaque ligne pour les articles qui ont été rangés, entièrement ou partiellement, l'employé d'entrepôt renseigne le champ **Quantité** , puis reporte le rangement inventaire. Les documents source associés au rangement inventaire sont reportés comme étant reçus.  
+Sur chaque ligne pour les articles qui ont été rangés, entièrement ou partiellement, l'employé d'entrepôt renseigne le champ **Quantité**, puis reporte le rangement inventaire. Les documents source associés au rangement inventaire sont reportés comme étant reçus.  
 
 Des écritures article positives sont créées, des écritures entrepôt sont créées, et la demande de rangement est supprimée, si entièrement traitée. Par exemple, le champ **Quantité reçue** sur la ligne document origine entrant est mis à jour. Un document réception reporté est créé et indique le bon de commande, par exemple, ainsi que les articles reçus.  
 
@@ -79,7 +79,7 @@ Lorsque les articles sont réceptionnés dans l'entrepôt, l'utilisateur qui est
 Lorsque le document origine entrant est émis, une demande entrepôt entrante est automatiquement créée. Elle contient des références au type et au numéro du document origine et n'est pas visible à l'utilisateur.  
 
 ### <a name="3-create-warehouse-receipt"></a>3 : Créer une réception entrepôt  
-Sur la page **Réception entrepôt** , l'utilisateur qui est responsable de recevoir des articles extrait les lignes document origine en attente en fonction de la demande enlogement. Plusieurs lignes document origine peuvent être combinées dans un document réception entrepôt.  
+Sur la page **Réception entrepôt**, l'utilisateur qui est responsable de recevoir des articles extrait les lignes document origine en attente en fonction de la demande enlogement. Plusieurs lignes document origine peuvent être combinées dans un document réception entrepôt.  
 
 L'utilisateur renseigne le champ **Qté à traiter** et sélectionne la zone et à l'emplacement de réception, si nécessaire.  
 
@@ -87,7 +87,7 @@ L'utilisateur renseigne le champ **Qté à traiter** et sélectionne la zone et 
 L'utilisateur reporte la réception entrepôt. Des écritures positives du grand livre d'articles sont créées. Par exemple, le champ **Quantité reçue** sur la ligne document origine entrant est mis à jour.  
 
 ### <a name="5-create-warehouse-internal-put-away"></a>5 : Créer rangement interne entrepôt  
-L'utilisateur qui est responsable du stockage à partir des opérations internes crée un stockage interne en entrepôt pour les articles à stocker dans l'entrepôt, comme un résultat de production ou d'assemblage. L'utilisateur indique la quantité, la zone, et l'emplacement d'où les articles doivent être rangés, potentiellement à l'aide de la fonction **Extraire contenu emplacement** . L'utilisateur lance le stockage interne en entrepôt, ce qui crée une demande entrepôt d'entrée afin que la tâche puisse être récupérée dans des documents de stockage en entrepôt ou sur la feuille de stockage.  
+L'utilisateur qui est responsable du stockage à partir des opérations internes crée un stockage interne en entrepôt pour les articles à stocker dans l'entrepôt, comme un résultat de production ou d'assemblage. L'utilisateur indique la quantité, la zone, et l'emplacement d'où les articles doivent être rangés, potentiellement à l'aide de la fonction **Extraire contenu emplacement**. L'utilisateur lance le stockage interne en entrepôt, ce qui crée une demande entrepôt d'entrée afin que la tâche puisse être récupérée dans des documents de stockage en entrepôt ou sur la feuille de stockage.  
 
 ### <a name="6-create-put-away-request"></a>6 : Créer demande de rangement entrepôt  
 Lorsque le document d'origine entrant est reporté, une demande de stockage en entrepôt est automatiquement créée. Elle contient des références au type et au numéro du document origine et n'est pas visible à l'utilisateur. En fonction de la configuration, la production à partir d'un bon de production crée une demande de rangement pour ranger les articles finis dans l'inventaire.  
@@ -95,7 +95,7 @@ Lorsque le document d'origine entrant est reporté, une demande de stockage en e
 ### <a name="7-generate-put-away-worksheet-lines-optional"></a>7 : Générer des lignes feuille rangement (facultatif)  
 L'utilisateur qui est responsable de coordonner les stockages copie des lignes de stockage en entrepôt dans la **Feuille rangement** en fonction des reçus entrepôt reportés ou des opérations internes avec résultat. L'utilisateur sélectionne les lignes à ranger et prépare les rangements en spécifiant à partir de quelles zones les prendre, dans quelles zones les placer, et le nombre d'unités à traiter. Les emplacements peuvent être prédéfinis par la configuration d'un entrepôt ou d'une ressource d'opération.  
 
-Lorsque tous les stockages sont planifiés et affectés aux magasiniers, l'utilisateur génère les documents de stockage en entrepôt. Des lignes rangement entièrement affectées sont supprimées de la **Feuille rangement** .  
+Lorsque tous les stockages sont planifiés et affectés aux magasiniers, l'utilisateur génère les documents de stockage en entrepôt. Des lignes rangement entièrement affectées sont supprimées de la **Feuille rangement**.  
 
 > [!NOTE]  
 >  Si le champ **Utiliser feuille rangement** n'est pas sélectionné sur la fiche emplacement, les documents rangement entrepôt sont créés directement sur la base des réceptions entrepôt reportées. Dans ce cas, l'étape 7 est omise.  
@@ -104,7 +104,7 @@ Lorsque tous les stockages sont planifiés et affectés aux magasiniers, l'utili
 L'employé d'entrepôt qui effectue les stockages crée un document de stockage en entrepôt, sur le mode de l'extraction, basé sur le reçu entrepôt reporté. Sinon, le document rangement entrepôt est créé et affecté à un magasinier par déplacement.  
 
 ### <a name="9-register-warehouse-put-away"></a>9 : Enregistrer rangement entrepôt  
-Sur chaque ligne pour les articles qui ont été rangés, entièrement ou partiellement, l'employé d'entrepôt renseigne le champ **Quantité** sur la page **Rangement entrepôt** , puis enregistre le rangement entrepôt.  
+Sur chaque ligne pour les articles qui ont été rangés, entièrement ou partiellement, l'employé d'entrepôt renseigne le champ **Quantité** sur la page **Rangement entrepôt**, puis enregistre le rangement entrepôt.  
 
 Les écritures d'entrepôt sont créées, et les lignes de stockage en entrepôt sont supprimées, si entièrement traitées. Le document de stockage en entrepôt reste ouvert jusqu'à ce que la quantité totale du reçu entrepôt reporté soit enregistrée. Le champ **Qté rangement** sur les lignes d'ordre de réception entrepôt est mis à jour.  
 
