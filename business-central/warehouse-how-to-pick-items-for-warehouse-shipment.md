@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 8da226a21e795228efa253f994d817f60ac5616b
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: dedd89dfceeb17994ccc18b359d2b02eb086cc60
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3910065"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4756193"
 ---
 # <a name="pick-items-for-warehouse-shipment"></a>Prélever des articles pour une livraison entrepôt
 Lorsque l'emplacement est configuré pour exiger un traitement des prélèvements entrepôt ainsi qu'un traitement des livraisons entrepôt, vous pouvez utiliser les documents prélèvement entrepôt pour créer et traiter les informations de prélèvement avant le report de la livraison entrepôt.  
@@ -26,7 +26,7 @@ Vous pouvez créer des documents prélèvement entrepôt en mode extraction en o
 
 Sinon, vous pouvez utiliser la page **Feuille prélèvement** pour extraire et créer les lignes prélèvement en mode lots. Pour plus d'informations, voir [Planifier des prélèvements dans des feuilles](warehouse-how-to-plan-picks-in-worksheets.md).  
 
-Vous pouvez également créer des documents prélèvement entrepôt en mode pousser à partir de la page **Livraison entrepôt** en sélectionnant **Créer prélèvement** .  
+Vous pouvez également créer des documents prélèvement entrepôt en mode pousser à partir de la page **Livraison entrepôt** en sélectionnant **Créer prélèvement**.  
 
 > [!NOTE]  
 >  Le prélèvement pour la livraison entrepôt des articles assemblés au document de vente en cours de livraison suit les mêmes étapes que les prélèvements entrepôt ordinaires pour la livraison, comme décrit dans cette rubrique. Cependant, le nombre de lignes prélèvement par quantité à livrer peut varier considérablement, car ce sont les composantes qui sont prélevées et non l'élément d'assemblage.  
@@ -38,7 +38,7 @@ Vous pouvez également créer des documents prélèvement entrepôt en mode pous
 >  Pour plus d'informations sur le prélèvement de composantes pour les ordres d'assemblage en général, notamment les situations où l'élément d'assemblage n'est pas dû dans une livraison vente, voir [Prélever pour la fabrication ou l'assemblage](warehouse-how-to-pick-for-production.md).  
 
 ## <a name="to-pick-items-for-warehouse-shipment"></a>Pour prélever des articles pour une livraison entrepôt  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements** , puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements**, puis sélectionnez le lien associé.  
 
     Si vous souhaitez travailler à un prélèvement particulier, sélectionnez-le dans la liste ou filtrez cette dernière afin de trouver les prélèvements qui vous ont été spécifiquement affectés. Ouvrez la fiche prélèvement.  
 2.  Si le champ **Code utilisateur affecté** est vide, entrez votre code pour vous identifier si nécessaire.  
@@ -48,7 +48,7 @@ Vous pouvez également créer des documents prélèvement entrepôt en mode pous
 
     Si l'entrepôt est configuré pour utiliser un prélèvement et rangement dirigé, le classement de zone est utilisé pour calculer les meilleures zones à partir desquelles prélever, et ces zones sont ensuite suggérées sur les lignes prélèvement. Les instructions apparaissent sur deux lignes distinctes, une ligne au moins pour chaque type d'action, prélèvement et placement.  
 
-4.  Lorsque vous avez effectué le prélèvement et placé les articles dans la zone de livraison, choisissez l'action **Enregistrer prélèvement** .  
+4.  Lorsque vous avez effectué le prélèvement et placé les articles dans la zone de livraison, choisissez l'action **Enregistrer prélèvement**.  
 
 La personne responsable de la livraison peut alors apporter les articles au quai de chargement et reporter la livraison, dont le document origine lié, sur la page **Livraison entrepôt** . Pour plus d'informations, voir [Livrer des articles](warehouse-how-ship-items.md).   
 
@@ -59,9 +59,9 @@ Dans des scénarios assembler pour commande, le champ **Qté à livrer** sur les
 
 Pour d'autres lignes livraison entrepôt, la valeur du champ **Qté à livrer** est zéro dès le début.
 
-Lorsque les travailleurs chargés de l’assemblage finissent d’assembler les pièces ou l’ensemble de la quantité à assembler pour commande, ils l’enregistrent dans le champ **Qté à livrer** de la ligne livraison entrepôt et sélectionnent ensuite l'action **Reporter livraison** . Le résultat est que le résultat d'assemblage correspondant est reporté, y compris la consommation de composantes. Une livraison vente pour la quantité est reportée pour le document de vente.
+Lorsque les travailleurs chargés de l’assemblage finissent d’assembler les pièces ou l’ensemble de la quantité à assembler pour commande, ils l’enregistrent dans le champ **Qté à livrer** de la ligne livraison entrepôt et sélectionnent ensuite l'action **Reporter livraison**. Le résultat est que le résultat d'assemblage correspondant est reporté, y compris la consommation de composantes. Une livraison vente pour la quantité est reportée pour le document de vente.
 
-À partir de l'ordre d'assemblage, vous pouvez choisir **Ligne livraison entrepôt Assembler pour commande** pour accéder à la ligne livraison entrepôt. Ceci peut être utile pour les travailleurs qui n'utilisent pas généralement la page **Livraison entrepôt** .
+À partir de l'ordre d'assemblage, vous pouvez choisir **Ligne livraison entrepôt Assembler pour commande** pour accéder à la ligne livraison entrepôt. Ceci peut être utile pour les travailleurs qui n'utilisent pas généralement la page **Livraison entrepôt**.
 
 Une fois la livraison entrepôt reportée, divers champs de la ligne document de vente sont mis à jour pour afficher la progression dans l'entrepôt. Les champs suivants sont également mis à jour pour afficher le nombre de quantités à assembler pour commande qui restent à assembler et livrer :
 
@@ -79,4 +79,4 @@ Une fois la livraison entrepôt reportée, divers champs de la ligne document de
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

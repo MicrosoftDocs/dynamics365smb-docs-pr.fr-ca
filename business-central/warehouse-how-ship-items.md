@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 0ff9dd0851b220b9e3e4888e43ffa070397b8943
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 8e5a9c93315c1bc199dbcbfe9076c01828524e96
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3911931"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4759952"
 ---
 # <a name="ship-items"></a>Livrer des articles
 
@@ -30,15 +30,15 @@ Lorsque vous livrez des articles à partir d'un entrepôt qui est configuré pou
 
 Ce qui suit décrit comment livrer des articles pour un document de vente. Les étapes sont similaires pour les retours achat, les commandes service et les ordres de transfert sortants.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente** , puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Ouvrez un document de vente existant, ou créez-en un nouveau. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
-3. Dans le champ **Qté à livrer** , indiquez la quantité livrée.
+3. Dans le champ **Qté à livrer**, indiquez la quantité livrée.
 
-    La valeur du champ **Qté livrée** est mise à jour. Si c'est une livraison partielle, la valeur est inférieure celle dans le champ **Quantité** .
-4. Sélectionnez l'action **Reporter** .
+    La valeur du champ **Qté livrée** est mise à jour. Si c'est une livraison partielle, la valeur est inférieure celle dans le champ **Quantité**.
+4. Sélectionnez l'action **Reporter**.
 
 > [!NOTE]
-> Si votre organisation n'utilise pas de documents de vente, lorsque vous reportez la facture vente, [!INCLUDE [prodshort](includes/prodshort.md)] suppose que vous avez livré la totalité de la quantité. Si cela contredit le fonctionnement de votre organisation, nous vous recommandons d'utiliser les documents de vente et d'enregistrer les livraisons comme expliqué dans cet article.
+> Si votre organisation n'utilise pas de documents de vente, lorsque vous reportez la facture vente, [!INCLUDE [prod_short](includes/prod_short.md)] suppose que vous avez livré la totalité de la quantité. Si cela contredit le fonctionnement de votre organisation, nous vous recommandons d'utiliser les documents de vente et d'enregistrer les livraisons comme expliqué dans cet article.
 
 ## <a name="to-ship-items-with-a-warehouse-shipment"></a>Pour livrer des articles avec une livraison entrepôt
 
@@ -46,33 +46,33 @@ Premièrement, vous créez un document livraison à partir d'un document source 
 
 ### <a name="to-create-a-warehouse-shipment"></a>Pour créer une livraison entrepôt
 
-Généralement, l'employé qui est chargé de la livraison crée une livraison entrepôt. La procédure suivante décrit comment créer la livraison manuellement dans la version par défaut de [!INCLUDE[prodshort](includes/prodshort.md)], mais votre organisation peut avoir automatisé une partie du processus, par exemple en utilisant des scanners portables ou montés pris en charge par des fournisseurs externes.  
+Généralement, l'employé qui est chargé de la livraison crée une livraison entrepôt. La procédure suivante décrit comment créer la livraison manuellement dans la version par défaut de [!INCLUDE[prod_short](includes/prod_short.md)], mais votre organisation peut avoir automatisé une partie du processus, par exemple en utilisant des scanners portables ou montés pris en charge par des fournisseurs externes.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Livraisons entrepôt** , puis sélectionnez le lien associé.  
-2. Sélectionnez l'action **Nouveau** .  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Livraisons entrepôt**, puis sélectionnez le lien associé.  
+2. Sélectionnez l'action **Nouveau**.  
 
-    Renseignez les champs du raccourci **Général** . Lorsque vous récupérez des lignes document origine,certaines des informations de l'en-tête sont copiées dans chaque ligne.  
+    Renseignez les champs du raccourci **Général**. Lorsque vous récupérez des lignes document origine,certaines des informations de l'en-tête sont copiées dans chaque ligne.  
 
     Pour une configuration entrepôt avec un prélèvement et un rangement suggérés : Si l'emplacement possède des zones par défaut pour les livraisons, les champs **Code de zone** et **Code de zone** seront renseignés automatiquement, mais vous pouvez les modifier selon vos besoins.  
 
     > [!NOTE]  
     > Pour livrer des articles portant des codes classe entrepôt différents du code classe de la zone indiqué dans le champ **Code de zone** de l'en-tête du document, vous devez supprimer le contenu du champ **Code de zone** de l'en-tête avant d'extraire les lignes des documents sources des articles.  
-3. Choisissez l'action **Extraire documents origine** . La page **Documents origine** s'ouvre.
+3. Choisissez l'action **Extraire documents origine**. La page **Documents origine** s'ouvre.
 
     À partir d'une livraison entrepôt nouvelle ou ouverte, vous pouvez utiliser la page **Filtres pour extr. doc. orig.** afin d'extraire les lignes du document origine libéré qui définissent les articles à recevoir ou à livrer.
 
-    1. Choisissez l'action **Filtrer pour extr. doc. orig.** .  
-    2. Pour configurer un nouveau filtre, entrez un code descriptif dans le champ **Code** , puis choisissez l'action **Modifier** .  
+    1. Choisissez l'action **Filtrer pour extr. doc. orig.**.  
+    2. Pour configurer un nouveau filtre, entrez un code descriptif dans le champ **Code**, puis choisissez l'action **Modifier**.  
     3. Définissez le type de ligne document origine que vous souhaitez extraire en renseignant les champs de filtre appropriés.  
-    4. Sélectionnez l'action **Exécuter** .  
+    4. Sélectionnez l'action **Exécuter**.  
 
     Toutes les lignes du document origine libéré qui correspondent aux critères du filtre sont à présent insérées sur la page **Livraison entrepôt** à partir de laquelle vous avez activé la fonction filtre.  
 
-    Les combinaisons de filtres que vous définissez sont stockées sur la page **Filtres pour extr. doc. orig.** jusqu'à la prochaine utilisation. Le nombre de combinaisons de filtres est illimité. Vous pouvez modifier les critères à tout moment en choisissant l'action **Modifier** .
+    Les combinaisons de filtres que vous définissez sont stockées sur la page **Filtres pour extr. doc. orig.** jusqu'à la prochaine utilisation. Le nombre de combinaisons de filtres est illimité. Vous pouvez modifier les critères à tout moment en choisissant l'action **Modifier**.
 
-4. Sélectionnez les documents sources pour lesquels vous souhaitez livrer des articles, puis sélectionnez le bouton **OK** .  
+4. Sélectionnez les documents sources pour lesquels vous souhaitez livrer des articles, puis sélectionnez le bouton **OK**.  
 
-Les lignes des documents origine s'affichent sur la page **Livraison entrepôt** . Le champ **Qté à livrer** est renseigné avec la quantité restante pour chaque ligne, mais vous pouvez modifier cette quantité selon vos besoins. Si vous avez supprimé le contenu du champ **Code de zone** du raccourci **Général** avant d'accéder aux lignes, vous devez alors renseigner un code de zone approprié sur chaque ligne livraison.  
+Les lignes des documents origine s'affichent sur la page **Livraison entrepôt**. Le champ **Qté à livrer** est renseigné avec la quantité restante pour chaque ligne, mais vous pouvez modifier cette quantité selon vos besoins. Si vous avez supprimé le contenu du champ **Code de zone** du raccourci **Général** avant d'accéder aux lignes, vous devez alors renseigner un code de zone approprié sur chaque ligne livraison.  
 
 > [!NOTE]  
 > Vous ne pouvez pas livrer un nombre d'articles supérieur au nombre figurant dans le champ **Qté résiduelle** de la ligne document source. Pour livrer des articles supplémentaires, récupérez un autre document source contenant une ligne pour l'article concerné en utilisant la fonction filtre afin d'obtenir les documents sources où figure cet article.  
@@ -83,19 +83,19 @@ Lorsque vous disposez des lignes à livrer, vous pouvez lancer le processus qui 
 
 Généralement, un magasinier chargé du prélèvement crée un document prélèvement, ou ouvre un document prélèvement déjà créé.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Livraisons entrepôt** , puis sélectionnez le lien associé.
-2. Sélectionnez la livraison entrepôt que vous souhaitez prélever, puis sélectionnez l'action **Créer prélèvement** .
-3. Renseignez les champs de la page de demande, puis cliquez sur le bouton **OK** . Le document prélèvement entrepôt spécifié est créé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Livraisons entrepôt**, puis sélectionnez le lien associé.
+2. Sélectionnez la livraison entrepôt que vous souhaitez prélever, puis sélectionnez l'action **Créer prélèvement**.
+3. Renseignez les champs de la page de demande, puis cliquez sur le bouton **OK**. Le document prélèvement entrepôt spécifié est créé.
 
     Sinon, ouvrez un prélèvement entrepôt existant.
-4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements** , puis sélectionnez le lien associé. Sélectionnez le prélèvement entrepôt que vous souhaitez utiliser.
+4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements**, puis sélectionnez le lien associé. Sélectionnez le prélèvement entrepôt que vous souhaitez utiliser.
 
     Si l'entrepôt est configuré pour utiliser des emplacements, alors les lignes prélèvement sont converties en lignes action Prélever et Ranger.
 
     Vous pouvez trier les lignes, affecter un employé au prélèvement, définir un filtre de déconditionnement (en cas d'utilisation d'un prélèvement et d'un rangement suggérés) et imprimer les instructions de prélèvement.
 
 5. Réalisez le prélèvement effectif des articles et placez-les dans la zone livraison spécifiée, ou dans la zone livraison, si vous n'avez pas de zones.
-6. Choisissez l'action **Enregistrer prélèvement** .
+6. Choisissez l'action **Enregistrer prélèvement**.
 
     Les champs **Qté à livrer** et **État document** de l'en-tête du document livraison sont mis à jour. Les articles prélevés ne peuvent plus être prélevés pour d'autres expéditions ou pour des opérations internes.
 7. Imprimez les documents livraison, préparez les colis, puis reportez la livraison.
@@ -105,7 +105,7 @@ Pour plus d'informations sur le prélèvement pour les livraisons entrepôt, voi
 Vous pouvez également utiliser la feuille prélèvement pour regrouper plusieurs instructions de prélèvement en une seule instruction (pour plusieurs livraisons) et optimiser ainsi l'efficacité du prélèvement dans l'entrepôt. Pour plus d'informations, voir [Planifier un prélèvement dans des feuilles](warehouse-how-to-plan-picks-in-worksheets.md).
 
 > [!NOTE]
-> Lorsque vous attendez l'arrivée d'articles spécifiques dans l'entrepôt et que vous utilisez la fonctionnalité de transbordement, [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule, pour chaque ligne journal prélèvement ou livraison, la quantité article figurant dans la zone de transbordement. Il met à jour ce champ chaque fois que vous fermez ou ouvrez la feuille ou le document de livraison. Pour plus d'informations, voir [Transborder des articles](warehouse-how-to-cross-dock-items.md).
+> Lorsque vous attendez l'arrivée d'articles spécifiques dans l'entrepôt et que vous utilisez la fonctionnalité de transbordement, [!INCLUDE[prod_short](includes/prod_short.md)] calcule, pour chaque ligne journal prélèvement ou livraison, la quantité article figurant dans la zone de transbordement. Il met à jour ce champ chaque fois que vous fermez ou ouvrez la feuille ou le document de livraison. Pour plus d'informations, voir [Transborder des articles](warehouse-how-to-cross-dock-items.md).
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -114,4 +114,4 @@ Vous pouvez également utiliser la feuille prélèvement pour regrouper plusieur
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

@@ -10,16 +10,16 @@ ms.workload: na
 ms.search.keywords: change Role Center, notification, change company, change work date
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 3f98cd6423b67fd9bbcc6081d06eca4cb21e81c7
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: df3807f3d5d2baa7f50df4091a0d1f2622d09ff8
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3912681"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4757652"
 ---
 # <a name="change-basic-settings"></a>Modifier les paramètres de base
 
-Sur la page **Mes paramètres** , vous pouvez afficher et modifier les paramètres de base de [!INCLUDE[d365fin](includes/d365fin_md.md)]. Vos modifications affectent uniquement votre espace de travail, et non les espaces de travail des autres utilisateurs.  
+Sur la page **Mes paramètres**, vous pouvez afficher et modifier les paramètres de base de [!INCLUDE[prod_short](includes/prod_short.md)]. Vos modifications affectent uniquement votre espace de travail, et non les espaces de travail des autres utilisateurs.  
 
 ## <a name="role-center"></a><a name="role-center"></a> Tableau de bord
 Le tableau de bord représente la page d'accueil, un écran de démarrage conçu pour les exigences d'un rôle spécifique dans une organisation. Selon votre rôle, le tableau de bord donne une vue d'ensemble de l'entreprise, de votre département ou de vos tâches personnelles. Il vous permet également d'accéder à vos tâches quotidiennes et de rechercher les tâches qui vous sont affectées.
@@ -29,28 +29,28 @@ Le tableau de bord représente la page d'accueil, un écran de démarrage conçu
 -   Le tableau de bord contient une zone **Activités** qui affiche les données actuelles, vous pouvez cliquer ou appuyer dessus pour afficher des informations plus détaillées. Les indicateurs de performance clés peuvent être configurés afin d'afficher un graphique sélectionné pour une représentation visuelle, par exemple, de la trésorerie ou des revenus et des dépenses. Vous pouvez également générer la liste des clients favoris sur le Tableau de bord pour les comptes professionnels avec lesquels vous travaillez souvent ou auxquels vous devez accorder une attention particulière.
 
 ### <a name="to-change-the-role"></a>Pour modifier le rôle
-Le rôle par défaut est **Gestionnaire d'activité** , mais vous pouvez sélectionner un autre rôle pour utiliser un Tableau de bord qui correspond mieux à vos besoins.
-1. Dans le coin supérieur droit, sélectionnez l'icône **Paramètres** ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez l'action **Mes paramètres** .
-2. Sur la page **Mes paramètres** , dans le champ **Rôle** , sélectionnez le rôle que vous souhaitez utiliser par défaut. Par exemple, sélectionnez **Comptable** .
-3. Choisissez le bouton **OK** .
+Le rôle par défaut est **Gestionnaire d'activité**, mais vous pouvez sélectionner un autre rôle pour utiliser un Tableau de bord qui correspond mieux à vos besoins.
+1. Dans le coin supérieur droit, sélectionnez l'icône **Paramètres** ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez l'action **Mes paramètres**.
+2. Sur la page **Mes paramètres**, dans le champ **Rôle** , sélectionnez le rôle que vous souhaitez utiliser par défaut. Par exemple, sélectionnez **Comptable**.
+3. Choisissez le bouton **OK**.
 
 ## <a name="company"></a><a name="company"></a>Compagnie
-Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], une société fonctionne comme un conteneur de données. Une base de données peut contenir plusieurs compagnies, mais vous ne pouvez en sélectionner qu'une seule à la fois.
+Dans [!INCLUDE[prod_short](includes/prod_short.md)], une société fonctionne comme un conteneur de données. Une base de données peut contenir plusieurs compagnies, mais vous ne pouvez en sélectionner qu'une seule à la fois.
 
 La compagnie par défaut est appelée CRONUS et contient uniquement des données de démonstration. Vous pouvez créer une nouvelle compagnie avec des données personnalisées. Pour plus d'informations, voir [Création de compagnies](about-new-company.md).
 
 ## <a name="to-change-the-company-name"></a>Pour changer le nom de la compagnie
-Le nom de la compagnie est toujours affiché dans le coin supérieur gauche et fonctionne comme une action que vous pouvez choisir pour revenir dans le Tableau de bord. Vous pouvez changer ce nom sur la page **Informations compagnie** .
+Le nom de la compagnie est toujours affiché dans le coin supérieur gauche et fonctionne comme une action que vous pouvez choisir pour revenir dans le Tableau de bord. Vous pouvez changer ce nom sur la page **Informations compagnie**.
 
-1. Choisissez simplement l'icône ![Pignon pour ouvrir le menu Paramètres](media/ui-experience/settings_icon_small.png), puis l'action **Informations compagnie** .
-2. Dans le champ **Nom** , saisissez le nom de la nouvelle compagnie.
+1. Choisissez simplement l'icône ![Pignon pour ouvrir le menu Paramètres](media/ui-experience/settings_icon_small.png), puis l'action **Informations compagnie**.
+2. Dans le champ **Nom**, saisissez le nom de la nouvelle compagnie.
 3. Quittez la page. Le système redémarre et affiche la nouvelle compagnie dans le coin supérieur gauche.
 
 ## <a name="to-display-a-company-badge-for-quick-access-to-company-information"></a>Pour afficher un badge de compagnie pour un accès rapide aux informations de la compagnie  
 Vous pouvez ajouter un badge personnalisé dans le coin supérieur droit, vous pouvez ensuite choisir d'afficher rapidement le nom de la compagnie et les informations sur l'abonné dans une fenêtre contextuelle.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Informations compagnie** , puis sélectionnez le lien associé.
-2. Sur le raccourci **Badge compagnie** , renseignez les champs, le cas échéant. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)].
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Informations compagnie**, puis sélectionnez le lien associé.
+2. Sur le raccourci **Badge compagnie**, renseignez les champs, le cas échéant. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)].
 
 > [!NOTE]
 > Si un badge de compagnie est défini, vous ne pouvez pas modifier le nom de la compagnie comme décrit dans [Pour changer le nom de la compagnie](ui-change-basic-settings.md#to-change-the-company-name)
@@ -59,7 +59,7 @@ Vous pouvez ajouter un badge personnalisé dans le coin supérieur droit, vous p
 La date de travail la plus couramment utilisée est la date du jour. Vous pouvez être amené à modifier temporairement la date de travail pour effectuer des tâches telles que l'exécution de transactions à une date différente de la date du jour.
 
 > [!TIP]  
-> Dans tous les champs de date, tapez **t** pour entrer rapidement la date du jour et tapez **w** pour entrer rapidement la date de travail, qui est la valeur du champ **Date de travail** sur la page **Mes paramètres** .
+> Dans tous les champs de date, tapez **t** pour entrer rapidement la date du jour et tapez **w** pour entrer rapidement la date de travail, qui est la valeur du champ **Date de travail** sur la page **Mes paramètres**.
 
 > [!IMPORTANT]  
 >  Une fois la date de travail modifiée, si vous vous déconnectez ou si vous changez de compagnie, les données de travail reviennent à la date de travail par défaut. Ainsi, la prochaine fois que vous vous connecterez ou lorsque vous reviendrez à la compagnie d'origine, vous devrez peut-être redéfinir la date de travail.
@@ -80,9 +80,9 @@ Le paramètre **Région** détermine la manière dont les dates, heures, nombres
 ## <a name="language"></a><a name="language"></a> Langue
 Modifie la langue d'affichage. Ce champ s'affiche uniquement lorsque vous avez le choix entre plusieurs langues.
 
-La langue initiale est déterminée par l'administrateur ou par les paramètres de votre navigateur lorsque vous vous inscrivez à [!INCLUDE[d365fin](includes/d365fin_md.md)]. La langue définie est utilisée sur tous les appareils à partir desquels vous vous connectez, par exemple un téléphone ou une tablette.
+La langue initiale est déterminée par l'administrateur ou par les paramètres de votre navigateur lorsque vous vous inscrivez à [!INCLUDE[prod_short](includes/prod_short.md)]. La langue définie est utilisée sur tous les appareils à partir desquels vous vous connectez, par exemple un téléphone ou une tablette.
 
-Des langues supplémentaires pour [!INCLUDE[prodshort](includes/prodshort.md)] peuvent être installées à partir d'AppSource. Même si toutes les langues d'affichage prises en charge sont affichées dans la liste, l'administrateur doit installer l'application de langue appropriée sur l'abonné avant que les utilisateurs puissent passer à la nouvelle langue dans [!INCLUDE[prodshort](includes/prodshort.md)].  
+Des langues supplémentaires pour [!INCLUDE[prod_short](includes/prod_short.md)] peuvent être installées à partir d'AppSource. Même si toutes les langues d'affichage prises en charge sont affichées dans la liste, l'administrateur doit installer l'application de langue appropriée sur l'abonné avant que les utilisateurs puissent passer à la nouvelle langue dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 ## <a name="changing-when-i-receive-notifications"></a>Modification lorsque je reçois des notifications
 Sélectionnez ce lien pour afficher ou modifier les notifications que vous recevez au sujet de certains événements ou modifications d'état, lorsque vous êtes sur le point de facturer un client avec un solde échu, ou lorsque l'inventaire disponible est inférieur à la quantité que vous êtes sur le point de vendre. Pour plus d'informations, voir [Gérer les notifications](ui-smart-notifications.md).
@@ -91,5 +91,5 @@ Sélectionnez ce lien pour afficher ou modifier les notifications que vous recev
 
 ## <a name="see-also"></a>Voir aussi
 [Création de compagnies](about-new-company.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Modifier les fonctionnalités affichées](ui-experiences.md)  

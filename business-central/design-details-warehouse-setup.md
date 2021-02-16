@@ -10,48 +10,50 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 44cbc7d42827b92f8983aa47b94d76760ddda8d2
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 32c3fedfbeea37a1be315d737ac9fe41b5c7c20a
+ms.sourcegitcommit: adf1a87a677b8197c68bb28c44b7a58250d6fc51
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3924276"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "5035441"
 ---
 # <a name="design-details-warehouse-setup"></a>Détails de conception : paramètres entrepôt
 
-La fonctionnalité d'entrepôt dans [!INCLUDE[d365fin](includes/d365fin_md.md)] contient différents niveaux de complexité, tels que définis par les autorisations de licence dans les granules proposés. Le niveau de complexité dans une solution entrepôt est en grande partie défini par la configuration des zones sur les fiches emplacement, qui est lui-même contrôlé par licence afin que l'accès aux champs de configuration des zones soit défini par la licence. En outre, les objets d'application de la licence déterminent le document d'interface utilisateur à utiliser pour les activités entrepôt prises en charge.  
+La fonctionnalité d'entrepôt dans [!INCLUDE[prod_short](includes/prod_short.md)] contient différents niveaux de complexité, tels que définis par les autorisations de licence dans les granules proposés. Le niveau de complexité dans une solution entrepôt est en grande partie défini par la configuration des zones sur les fiches emplacement, qui est lui-même contrôlé par licence afin que l'accès aux champs de configuration des zones soit défini par la licence. En outre, les objets d'application de la licence déterminent le document d'interface utilisateur à utiliser pour les activités entrepôt prises en charge.  
+<!--
+The following warehouse-related granules exist:  
 
-Les granules liés à l'entrepôt suivants existent :  
+- Basic Inventory (4010)  
+- Bin (4170)  
+- Put Away (4180)  
+- Warehouse Receipt (4190)  
+- Pick (4200)  
+- Warehouse Shipment (4210)  
+- Warehouse Management Systems (4620)  
+- Internal Picks and Put-aways (4630)  
+- Automated Data Capture System (4640)
+- Bin Setup (4660)  
 
-- Inventaire de base (4010)  
-- Zone (4170)  
-- Rangement (4180)  
-- Réception entrepôt (4190)  
-- Prélever (4200)  
-- Livraison entrepôt (4210)  
-- Systèmes de gestion d'entrepôt (4620)  
-- Prélèvements internes et rangements internes (4630)  
-- Système ADCS (4640)
-- Configuration zone (4660)  
+For more information about each granule, see [[!INCLUDE[prod_short](includes/prod_short.md)] Price Sheets](https://go.microsoft.com/fwlink/?LinkId=238341) (requires PartnerSource account). -->
 
-Pour plus d'informations sur chaque granule, voir [Feuilles de prix [!INCLUDE[d365fin](includes/d365fin_md.md)]](https://go.microsoft.com/fwlink/?LinkId=238341) (requiert un compte PartnerSource).  
+Le tableau suivant indique les granules requis pour définir les différents niveaux de complexité entrepôt, les documents de l'interface utilisateur qui prennent en charge chaque niveau et les codes d'emplacement qui reflètent ces niveaux dans la base de données de démonstration [!INCLUDE[prod_short](includes/prod_short.md)].  
 
-Le tableau suivant indique les granules requis pour définir les différents niveaux de complexité entrepôt, les documents de l'interface utilisateur qui prennent en charge chaque niveau et les codes d'emplacement qui reflètent ces niveaux dans la base de données de démonstration [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+[!INCLUDE [locations-cronus](includes/locations-cronus.md)]
 
-|Niveau de complexité|Description|Document d'interface utilisateur|Emplacement CRONUS|Granule minimum requis|  
+|Niveau de complexité|Description|Document d'interface utilisateur|Exemple d’emplacement|Granule minimum requis|  
 |----------------|-----------|-----------|---------------|---------------------------|  
 |1|Aucune activité entrepôt dédiée.<br /><br /> Report recevoir/livrer à partir des commandes.|Ordre|BLEU|Inventaire de base|  
 |2|Aucune activité entrepôt dédiée.<br /><br /> Report recevoir/livrer à partir des commandes.<br /><br /> Le code de zone est requis.|Commande, avec un code de zone|ARGENTE|Inventaire de base/Zone|  
-|3 <br /><br /> **REMARQUE**  : bien que les paramètres soient appelés **Prélèvement requis** et **Rangement requis** , vous pouvez quand même reporter les réceptions et les livraisons directement à partir des documents commerciaux sources dans les emplacements où vous cochez ces cases.|Activité entrepôt de base, par commande.<br /><br /> Report de réception/livraison à partir des documents rangement/prélèvement inventaire. <br /><br /> Le code de zone est requis.|Article dans l'inventaire à classer/Mouvement d'inventaire/Article dans l'inventaire à prélever, avec code de zone|(ARGENT + Rangement requis ou Rangement requis)|Inventaire de base/Zone/Rangement/Prélèvement|  
+|3 <br /><br /> **REMARQUE** : bien que les paramètres soient appelés **Prélèvement requis** et **Rangement requis**, vous pouvez quand même reporter les réceptions et les livraisons directement à partir des documents commerciaux sources dans les emplacements où vous cochez ces cases.|Activité entrepôt de base, par commande.<br /><br /> Report de réception/livraison à partir des documents rangement/prélèvement inventaire. <br /><br /> Le code de zone est requis.|Article dans l'inventaire à classer/Mouvement d'inventaire/Article dans l'inventaire à prélever, avec code de zone|(ARGENT + Rangement requis ou Rangement requis)|Inventaire de base/Zone/Rangement/Prélèvement|  
 |4|Activité entrepôt avancée pour plusieurs ordres/commandes.<br /><br /> Report recevoir/livrer consolidé en fonction des enregistrements de rangement/prélèvement dans l'entrepôt.|Réception entrepôt/Rangement entrepôt/Prélèvement entrepôt/Livraison entrepôt/Feuille prélèvement|VERT|Inventaire de base/Réception entrepôt/Rangement/Prélèvement/Livraison entrepôt|  
 |5|Activité entrepôt avancée pour plusieurs ordres/commandes.<br /><br /> Report recevoir/livrer consolidé en fonction des enregistrements de rangement/prélèvement dans l'entrepôt.<br /><br /> Le code de zone est requis.|Réception entrepôt/Rangement en entrepôt/Prélèvement entrepôt/Livraison entrepôt/Feuille prélèvement/Feuille rangement, avec code de zone|(VERT + Zone obligatoire)|Inventaire de base/Zone/Réception entrepôt/Rangement/Prélèvement/Livraison entrepôt|  
-|6 <br /><br /> **Remarque**  : ce niveau est appelé « WMS », car il requiert le granule le plus avancé, Warehouse Management Systems.|Activité entrepôt avancée pour plusieurs ordres/commandes<br /><br /> Report recevoir/livrer consolidé en fonction des enregistrements de rangement/prélèvement dans l'entrepôt<br /><br /> Le code de zone est requis.<br /><br /> Le code zone/classe est facultatif.<br /><br /> Magasiniers dirigés par flux de travail<br /><br /> Planification de réapprovisionnement des zones<br /><br /> Classement de zone<br /><br /> Configuration de la zone par capacité<br /><br /> Insertion  <!-- Hand-held device integration -->|Réception entrepôt/Rangement entrepôt/Prélèvement entrepôt/Livraison entrepôt/Mouvement entrepôt/Feuille prélèvement/Feuille rangement/Entrepôt interne. Prélèvement/Rangement entrepôt interne, avec code de zone/classe<br /><br /> Différentes feuilles pour la gestion de la zone<br /><br /> Écrans ADCS|BLANC|Inventaire de base/Zone/Rangement/Réception entrepôt/Prélèvement/Livraison entrepôt/Systèmes de gestion d'entrepôt/Prélèvements internes et rangements/Configuration zone<!-- Automated Data Capture System/ -->Configuration zone|  
+|6 <br /><br /> **Remarque** : ce niveau est appelé « WMS », car il requiert le granule le plus avancé, Warehouse Management Systems.|Activité entrepôt avancée pour plusieurs ordres/commandes<br /><br /> Report recevoir/livrer consolidé en fonction des enregistrements de rangement/prélèvement dans l'entrepôt<br /><br /> Le code de zone est requis.<br /><br /> Le code zone/classe est facultatif.<br /><br /> Magasiniers dirigés par flux de travail<br /><br /> Planification de réapprovisionnement des zones<br /><br /> Classement de zone<br /><br /> Configuration de la zone par capacité<br /><br /> Insertion  <!-- Hand-held device integration -->|Réception entrepôt/Rangement entrepôt/Prélèvement entrepôt/Livraison entrepôt/Mouvement entrepôt/Feuille prélèvement/Feuille rangement/Entrepôt interne. Prélèvement/Rangement entrepôt interne, avec code de zone/classe<br /><br /> Différentes feuilles pour la gestion de la zone<br /><br /> Écrans ADCS|BLANC|Inventaire de base/Zone/Rangement/Réception entrepôt/Prélèvement/Livraison entrepôt/Systèmes de gestion d'entrepôt/Prélèvements internes et rangements/Configuration zone<!-- Automated Data Capture System/ -->Configuration zone|  
 
 Pour des exemples d'utilisation des documents de l'interface utilisateur par niveau de complexité entrepôt, voir [Détails de conception : flux d'enlogement](design-details-inbound-warehouse-flow.md).  
 
 ## <a name="bin-and-bin-content"></a>Zone et contenu de la zone
 
-Une zone est un dispositif de stockage conçu pour contenir des éléments distincts. Il s'agit de la plus petite unité de conteneur dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Les quantités d'articles dans des zones sont appelées contenu de la zone. Une recherche à partir du champ **Article** ou du champ **Code de zone** dans n'importe quelle ligne de document entrepôt affiche la disponibilité calculée de l'article dans la zone.  
+Une zone est un dispositif de stockage conçu pour contenir des éléments distincts. Il s'agit de la plus petite unité de conteneur dans [!INCLUDE[prod_short](includes/prod_short.md)]. Les quantités d'articles dans des zones sont appelées contenu de la zone. Une recherche à partir du champ **Article** ou du champ **Code de zone** dans n'importe quelle ligne de document entrepôt affiche la disponibilité calculée de l'article dans la zone.  
 
 Le contenu de la zone peut se voir affecter une propriété fixe, dédiée ou par défaut, pour définir la manière dont le contenu de la zone peut être utilisé. Les zones sans aucune de ces propriétés sont appelées zones dynamiques.  
 
@@ -77,7 +79,7 @@ Dans des installations WMS, vous pouvez définir les activités entrepôt qui so
 |RANG.|Généralement, les articles devant être stockés dans de grandes unités de mesure, mais auxquels vous ne souhaitez pas accéder à des fins de prélèvement. Étant donné que ces zones ne sont pas utilisées pour le prélèvement, que ce soit pour des bons de production ou des livraisons, l'utilisation d'une zone de type Rangement risque d'être limitée, mais ce type de zone peut se révéler utile si vous avez acheté une grande quantité d'articles. La priorité des zones de ce type doit toujours être peu élevée. Ainsi, lors du rangement des articles reçus, ce sont les zones RANGPRÉLÈV. de priorité plus élevée associés à l'article concerné qui sont rangées en premier lieu. Lorsque vous utilisez ce type de zone, vous devez régulièrement procéder au réapprovisionnement des zones, afin que les articles stockés dans ces zones puissent également être disponibles dans les zones de type RANGPRÉLÈV. ou PRÉLÈV.|  
 |PRELEV.|Articles à utiliser uniquement pour prélever. Le réapprovisionnement de ces zones peut uniquement être effectué par mouvement, non par rangement.|  
 |RGMT/PRLVT|Articles dans des zones qui sont proposés à la fois pour les fonctions de rangement et de prélèvement. Les emplacements de ce type ont vraisemblablement un classement différent. Vous pouvez configurer vos zones de stockage en vrac comme ce type de zone avec un classement peu élevé par rapport à vos zones prélèvement ordinaires ou vos zones prélèvement en aval.|  
-|CQ|Cet emplacement est utilisé pour des ajustements stock, si vous le spécifiez sur la fiche magasin dans le champ **Code empl. ajustement** . Vous pouvez également configurer des emplacements de ce type pour des articles défectueux ou en cours de contrôle. Vous pouvez déplacer des articles vers ce type de zone afin que le flux habituel des articles ne puisse pas y accéder. **Remarque :** contrairement à tous les autres types de zone, les cases à cocher pour le traitement des articles sont toutes désactivées par défaut pour le type de zone **CQ** . Cela signifie que tout contenu que vous placez dans une zone de type CQ est exclu des flux d'articles.|  
+|CQ|Cet emplacement est utilisé pour des ajustements stock, si vous le spécifiez sur la fiche magasin dans le champ **Code empl. ajustement**. Vous pouvez également configurer des emplacements de ce type pour des articles défectueux ou en cours de contrôle. Vous pouvez déplacer des articles vers ce type de zone afin que le flux habituel des articles ne puisse pas y accéder. **Remarque :** contrairement à tous les autres types de zone, les cases à cocher pour le traitement des articles sont toutes désactivées par défaut pour le type de zone **CQ**. Cela signifie que tout contenu que vous placez dans une zone de type CQ est exclu des flux d'articles.|  
 
 Pour tous les types de zone, à l'exception de PRÉLÈV, RANGPRÉLÈV et RANGEMENT, aucune autre activité n'est autorisée pour la zone que celle définie par son type de zone. Par exemple, une zone de type **Réception** peut être utilisée uniquement pour recevoir des articles ou pour en prélever.  
 
@@ -102,7 +104,7 @@ Si vous souhaitez définir une quantité maximum pour un article spécifique à 
 Avant de paramétrer des restrictions de capacité pour le contenu de la zone dans une zone, vous devez d'abord vous assurer que les unités de mesure et les dimensions de l'article ont été définies dans la fiche article.  
 
 > [!NOTE]  
-> Il est possible d'utiliser plusieurs unités dans les installations WMS. Dans toutes les autres configurations, les contenus de la zone ne peuvent être que dans l'unité de mesure de base. Dans toutes les transactions avec une unité supérieure à l'unité de base de l'article, la quantité est transformée en unité de base.  
+> Il est possible d'utiliser plusieurs unités dans les installations WMS. Dans toutes les autres configurations, les contenus de la zone ne peuvent être que dans l'unité de mesure de base. Dans toutes les transactions avec une unité supérieure à l’unité de base de l’article, la quantité est transformée en unité de base.  
 
 ## <a name="zone"></a>Zone
 

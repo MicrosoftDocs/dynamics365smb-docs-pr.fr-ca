@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: a34af93c4aae2d87d17fcad4f0526783a01e8b64
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 1c7896988545d6f1b8269ead90dff7350bc6f320
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3915953"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4755847"
 ---
 # <a name="enable-picking-items-by-fefo"></a>Activer le prélèvement d'articles par FEFO
 First-Expired-First-Out (FEFO) est une méthode de tri qui garantit que les articles les plus anciens, ceux qui ont les dates d'expiration les plus anciennes, sont prélevés en premier.  
@@ -38,7 +38,7 @@ Si deux articles avec des numéros de série ou de lot ont la même date de pér
 <br /><br />
 Lors du prélèvement des articles avec numéro de série/de lot dans les emplacements configurés pour un prélèvement et un rangement suggérés, seules les quantités des zones de type *Prélèvement* sont prélevées selon FEFO.  
 <br /><br />
-Pour activer des mouvements selon FEFO, sur la page **Mouvement d'inventaire** ou la page **Feuille mouvement** , vous devez laisser le champ **Depuis zone** vide.  
+Pour activer des mouvements selon FEFO, sur la page **Mouvement d'inventaire** ou la page **Feuille mouvement**, vous devez laisser le champ **Depuis zone** vide.  
 <br /><br />
 Si le champ **Validation de péremption stricte** est sélectionné, seuls les articles non expirés sont inclus dans le prélèvement. Cela s'applique même si vous n'utilisez pas de prélèvement selon FEFO.
 
@@ -48,4 +48,4 @@ Si le champ **Validation de péremption stricte** est sélectionné, seuls les a
 [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md)   
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Stock](inventory-manage-inventory.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

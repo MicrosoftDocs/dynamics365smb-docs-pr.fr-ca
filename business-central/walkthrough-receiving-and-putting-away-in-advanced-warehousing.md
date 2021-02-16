@@ -10,18 +10,18 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: c200d178a00716de99bd88475346ff4396c9bebf
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 88255d775b52aef089431fd3125a899ffafa3747
+ms.sourcegitcommit: adf1a87a677b8197c68bb28c44b7a58250d6fc51
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3918398"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "5035666"
 ---
 # <a name="walkthrough-receiving-and-putting-away-in-advanced-warehouse-configurations"></a>Procédure pas à pas : Réception et rangement dans les configurations de stockage avancées
 
 [!INCLUDE[complete_sample_data](includes/complete_sample_data.md)]  
 
-Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les processus entrants de réception et de rangement peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.  
+Dans [!INCLUDE[prod_short](includes/prod_short.md)], les processus entrants de réception et de rangement peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.  
 
 |Méthode|Processus entrant|Zones|Reçus|Rangements|Niveau de complexité (Voir [Détails de conception : configuration d'entrepôt](design-details-warehouse-setup.md))|  
 |------------|---------------------|----------|--------------|----------------|--------------------------------------------------------------------------------------------------------------------|  
@@ -44,6 +44,8 @@ Cette procédure pas à pas présente les tâches suivantes.
 -   Création et report d'un document réception entrepôt pour plusieurs lignes bon de commande de fournisseurs spécifiques.  
 -   Enregistrement du rangement entrepôt pour les articles reçus.  
 
+> [!NOTE]
+> [!INCLUDE [locations-cronus](includes/locations-cronus.md)]
 ## <a name="roles"></a>Rôles  
 Cette procédure pas à pas présente les tâches effectuées par les rôles utilisateur suivants :  
 
@@ -58,26 +60,26 @@ Pour exécuter ce processus pas à pas, vous devez :
 -   avoir CRONUS International Ltd. installé.  
 -   Pour devenir employé d'entrepôt dans l'emplacement BLANC, procédez comme suit :  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Employés d'entrepôt** , puis sélectionnez le lien associé.  
-2.  Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs** .  
-3.  Dans le champ **Code d'emplacement** , entrez BLANC.  
-4.  Sélectionnez le champ **Par défaut** .  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Employés d'entrepôt**, puis sélectionnez le lien associé.  
+2.  Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs**.  
+3.  Dans le champ **Code d'emplacement**, entrez BLANC.  
+4.  Sélectionnez le champ **Par défaut**.  
 
 ## <a name="story"></a>Scénario  
 Ellen, responsable d'entrepôt chez CRONUS International Ltd., crée deux bons de commande pour des articles accessoires des fournisseurs 10000 et 20000 qui doivent être livrés à l'entrepôt BLANC. Lorsque les livraisons arrivent à l'entrepôt, Sammy, qui est chargé de réceptionner les articles des fournisseurs 10000 et 20000, utilise un filtre pour créer des lignes réception pour les bons de commande provenant des deux fournisseurs. Sammy reporte les articles comme étant reçus dans l'inventaire dans une réception entrepôt et rend les articles disponibles pour la vente ou les autres demandes. Jean, l'employé de l'entrepôt, prélève les articles depuis la zone de réception et les range. Il range toutes les unités dans leurs zones par défaut, à l'exception de 40 des 100 charnières reçues, qu'il range dans le département d'assemblage en fractionnant la ligne rangement. Lorsque Jean enregistre le rangement, le contenu de la zone est mis à jour et les articles sont rendus disponibles pour prélèvement à partir de l'entrepôt.  
 
 ## <a name="reviewing-the-white-location-setup"></a>Examen de la configuration de l'emplacement BLANC  
-La configuration de la page **Fiche emplacement** définit les flux d'entrepôt de la compagnie.  
+La configuration de la page **Fiche emplacement** définit les flux d’entrepôt de la compagnie.  
 
 ### <a name="to-review-the-location-setup"></a>Examen de la configuration de l'emplacement  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements** , puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche emplacement BLANC.  
-3.  Notez que sur le raccourci **Entrepôt** , la case à cocher **Prélèv. et rangement suggérés** est activée.  
+3.  Notez que sur le raccourci **Entrepôt**, la case à cocher **Prélèv. et rangement suggérés** est activée.  
 
     Cela signifie que l'emplacement est configuré pour le niveau de complexité le plus élevé, ce qui est indiqué par le fait que toutes les cases à cocher d'utilisation entrepôt sur le raccourci sont activées.  
 
-4.  Notez sur le raccourci **Zones** que les zones sont spécifiées dans les champs **Code de zone réception** et **Code de zone livraison** .  
+4.  Notez sur le raccourci **Zones** que les zones sont spécifiées dans les champs **Code de zone réception** et **Code de zone livraison**.  
 
 Cela signifie que lorsque vous créez une réception entrepôt, ce code de zone est copié dans l'en-tête du document réception entrepôt par défaut et les lignes des rangements entrepôt qui en résultent.  
 
@@ -86,8 +88,8 @@ Les bons de commande sont le type de document source entrant le plus répandu.
 
 ### <a name="to-create-the-purchase-orders"></a>Pour créer les bons de commande  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande** , puis sélectionnez le lien associé.  
-2.  Sélectionnez l'action **Nouveau** .  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande**, puis sélectionnez le lien associé.  
+2.  Sélectionnez l'action **Nouveau**.  
 3.  Créez un bon de commande pour le fournisseur 10 000 à la date de travail (23 janvier) comportant les lignes bon de commande suivantes.  
 
     |Article|Code d'emplacement|Quantité|  
@@ -97,11 +99,11 @@ Les bons de commande sont le type de document source entrant le plus répandu.
 
     Informez l'entrepôt que le bon de commande est prêt pour le traitement en entrepôt lorsque la livraison arrive.  
 
-4.  Sélectionnez l'action **Lancer** .  
+4.  Sélectionnez l'action **Lancer**.  
 
     Continuez pour créer le deuxième bon de commande.  
 
-5.  Sélectionnez l'action **Nouveau** .  
+5.  Sélectionnez l'action **Nouveau**.  
 6.  Créez un bon de commande pour le fournisseur 20 000 à la date de travail comportant les lignes bon de commande suivantes.  
 
     |Article|Code d'emplacement|Quantité|  
@@ -109,49 +111,49 @@ Les bons de commande sont le type de document source entrant le plus répandu.
     |70100|BLANC|10 BIDONS|  
     |70101|BLANC|12 BIDONS|  
 
-    Sélectionnez l'action **Lancer** .  
+    Sélectionnez l'action **Lancer**.  
 
     Les articles envoyés par les fournisseurs 10000 et 20000 sont arrivés à l'entrepôt BLANC. Sammy commence alors le processus de traitement des réceptions achat.  
 
 ## <a name="receiving-the-items"></a>Réception des articles  
-Sur la page **Réception entrepôt** , vous pouvez gérer plusieurs commandes entrantes pour les documents d'origine, tels qu'un bon de commande.  
+Sur la page **Réception entrepôt**, vous pouvez gérer plusieurs commandes entrantes pour les documents d'origine, tels qu'un bon de commande.  
 
 ### <a name="to-receive-the-items"></a>Réception des articles  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Réceptions entrepôt** , puis sélectionnez le lien associé.  
-2.  Sélectionnez l'action **Nouveau** .  
-3.  Dans le champ **Code d'emplacement** , entrez BLANC.  
-4.  Choisissez l'action **Filtrer pour extr. doc. orig.** .  
-5.  Dans le champ **Code** , entrez **ACCESSOIRE** .  
-6.  Dans le champ **Description** , entrez **Fournisseurs 10000 et 20000** .  
-7.  Sélectionnez l'option **Modifier** .  
-8.  Dans le raccourci **Achats** , dans le champ **Filtre n° fournisseur** , entrez **10000&#124;20000** .  
-9. Sélectionnez l'action **Exécuter** . La réception entrepôt est renseignée avec quatre lignes représentant les lignes bon de commande pour les fournisseurs spécifiés. Le champ **Qté à recevoir** est renseigné parce que vous n'avez pas activé la case à cocher **Ne pas remplir qté à traiter** sur la page **Filtres pour extr. doc. orig.** .  
-10. Éventuellement, si vous souhaitez utiliser un filtre en procédant de la manière décrite précédemment dans cette section, choisissez l'action **Extraire document origine** , puis sélectionnez les bons de commande des fournisseurs en question.  
-11. Choisissez l'action **Reporter réception** , puis cliquez sur le bouton **Oui** .  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Réceptions entrepôt**, puis sélectionnez le lien associé.  
+2.  Sélectionnez l'action **Nouveau**.  
+3.  Dans le champ **Code d'emplacement**, entrez BLANC.  
+4.  Choisissez l'action **Filtrer pour extr. doc. orig.**.  
+5.  Dans le champ **Code**, entrez **ACCESSOIRE**.  
+6.  Dans le champ **Description**, entrez **Fournisseurs 10000 et 20000**.  
+7.  Sélectionnez l'option **Modifier**.  
+8.  Dans le raccourci **Achats**, dans le champ **Filtre n° fournisseur**, entrez **10000&#124;20000**.  
+9. Sélectionnez l'action **Exécuter**. La réception entrepôt est renseignée avec quatre lignes représentant les lignes bon de commande pour les fournisseurs spécifiés. Le champ **Qté à recevoir** est renseigné parce que vous n'avez pas activé la case à cocher **Ne pas remplir qté à traiter** sur la page **Filtres pour extr. doc. orig.**.  
+10. Éventuellement, si vous souhaitez utiliser un filtre en procédant de la manière décrite précédemment dans cette section, choisissez l'action **Extraire document origine**, puis sélectionnez les bons de commande des fournisseurs en question.  
+11. Choisissez l'action **Reporter réception**, puis cliquez sur le bouton **Oui**.  
 
     Des écritures article positives sont créées et reflètent les réceptions achat reportées d'accessoires provenant des fournisseurs 10000 et 20000, et les articles sont prêts à être rangés dans l'entrepôt depuis la zone de réception.  
 
 ## <a name="putting-the-items-away"></a>Rangement des articles  
-Sur la page **Rangement entrepôt** , vous pouvez gérer les rangements pour un document réception entrepôt spécifique couvrant plusieurs documents origine. Comme pour tous les documents activité entrepôt, chaque article dans le rangement entrepôt est représenté par une ligne Prélever et une ligne Emplacement. Dans la procédure suivante, le code de zone sur les lignes Prélever est la zone de réception par défaut à l'emplacement BLANC, W-08-0001.  
+Sur la page **Rangement entrepôt**, vous pouvez gérer les rangements pour un document réception entrepôt spécifique couvrant plusieurs documents origine. Comme pour tous les documents activité entrepôt, chaque article dans le rangement entrepôt est représenté par une ligne Prélever et une ligne Emplacement. Dans la procédure suivante, le code de zone sur les lignes Prélever est la zone de réception par défaut à l'emplacement BLANC, W-08-0001.  
 
 ### <a name="to-put-the-items-away"></a>Rangement des articles  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rangements** , puis sélectionnez le lien associé.  
-2.  Sélectionnez le seul document de rangement d'entrepôt dans la liste, puis choisissez l'action **Modifier** .  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rangements**, puis sélectionnez le lien associé.  
+2.  Sélectionnez le seul document de rangement d'entrepôt dans la liste, puis choisissez l'action **Modifier**.  
 
     Le document rangement entrepôt affiche un total de huit lignes Prélèvement ou Rangement pour les quatre lignes bon de commande.
 
     Il est indiqué à l'employé de l'entrepôt que 40 charnières doivent être amenées au département d'assemblage, et il procède à la répartition de la ligne Emplacement individuelle pour spécifier une seconde ligne Emplacement pour la zone W-02-0001 dans le département d'assemblage, où il place cette partie des charnières reçues.  
 
-3.  Sélectionnez la seconde ligne de la page **Rangement entrepôt** , la ligne d'emplacement pour l'article 70200.  
-4.  Dans le champ **Qté à traiter** , changez la valeur 100 en 60.  
-5.  Sur le raccourci **Lignes** , choisissez **Fonctions** , puis sélectionnez **Eclater ligne** . Une nouvelle ligne est insérée pour l'article 70200 et 40 est indiqué dans le champ **Qté à traiter** .  
-6.  Dans le champ **Code de zone** , entrez W-02-0001. Le champ **Code zone** est renseigné automatiquement.  
+3.  Sélectionnez la seconde ligne de la page **Rangement entrepôt**, la ligne d'emplacement pour l'article 70200.  
+4.  Dans le champ **Qté à traiter**, changez la valeur 100 en 60.  
+5.  Sur le raccourci **Lignes**, choisissez **Fonctions**, puis sélectionnez **Eclater ligne**. Une nouvelle ligne est insérée pour l'article 70200 et 40 est indiqué dans le champ **Qté à traiter**.  
+6.  Dans le champ **Code de zone**, entrez W-02-0001. Le champ **Code zone** est renseigné automatiquement.  
 
     Enregistrez le rangement.  
 
-7.  Choisissez l'action **Enregistrer rangement** , puis cliquez sur le bouton **Oui** .  
+7.  Choisissez l'action **Enregistrer rangement**, puis cliquez sur le bouton **Oui**.  
 
-    Les accessoires reçus sont ensuite rangés dans les zones par défaut des articles, et 40 charnières sont placées dans le département d'assemblage. Les articles reçus sont alors disponibles pour le prélèvement pour une demande interne, tel que des ordres d'assemblage ou une demande externe, telles que des livraisons vente.  
+    Les accessoires reçus sont ensuite rangés dans les zones par défaut des articles, et 40 charnières sont placées dans le département d’assemblage. Les articles reçus sont alors disponibles pour le prélèvement pour une demande interne, tel que des ordres d'assemblage ou une demande externe, telles que des livraisons vente.  
 
 ## <a name="see-also"></a>Voir aussi  
  [Ranger des articles avec le rangement entrepôt](warehouse-how-to-put-items-away-with-warehouse-put-aways.md)   

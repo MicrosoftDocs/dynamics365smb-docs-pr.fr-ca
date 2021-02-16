@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 6888c3cd599b9c85f67615e7f090d72e8cf5fa23
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 29bb70d54c4e5bb1dbc366a8f566e8247f4117ef
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3915420"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4759452"
 ---
 # <a name="setting-up-manufacturing"></a>Paramétrage de la production
 Pour convertir des matières en articles finis produits, vous devez configurer des ressources de production, telles que les nomenclatures, les itinéraires, les opérateurs machines et les machines, dans le système.
@@ -30,8 +30,8 @@ Une fois que vous avez paramétré la production, vous pouvez planifier et exéc
 
 |**Pour**|**Voir**|  
 |------------|-------------|  
-|Configurer les fonctionnalités de fabrication, telles que la définition des heures de travail atelier et la sélection des paramètres de planification.|Page **Configuration de la fabrication** .|
-|Dans l'onglet **Planification** de la page **Configuration de la fabrication** , définissez les paramètres de planification globaux qui remplacent les paramètres définis sur les fiches article individuelles.|[Détails de conception : paramètres de planification](design-details-planning-parameters.md)|
+|Configurer les fonctionnalités de fabrication, telles que la définition des heures de travail atelier et la sélection des paramètres de planification.|Page **Configuration de la fabrication**.|
+|Dans l'onglet **Planification** de la page **Configuration de la fabrication**, définissez les paramètres de planification globaux qui remplacent les paramètres définis sur les fiches article individuelles.|[Détails de conception : paramètres de planification](design-details-planning-parameters.md)|
 |Définir une semaine de travail standard dans le département Production en termes d'heures de début et de fin de chaque journée de travail et des équipes associées.|[Créer des calendriers usine](production-how-to-create-work-center-calendars.md)|  
 |Organisez les exigences et les valeurs fixes des ressources de production en tant qu'ateliers ou unités de production pour régir leur sortie de production.|[Configurer des ateliers et des unités de production](production-how-to-set-up-work-and-machine-centers.md)|
 |Organisez les opérations de production dans l'ordre requis et affectez-les aux ateliers ou unités de production avec les temps de travail nécessaires.|[Créer des itinéraires](production-how-to-create-routings.md)|
@@ -46,4 +46,4 @@ Une fois que vous avez paramétré la production, vous pouvez planifier et exéc
 [Planification](production-planning.md)   
 [Stock](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

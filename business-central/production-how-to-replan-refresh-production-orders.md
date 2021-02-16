@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: edfcb7904f540edad7f471511de9047c511a2cb2
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 6f66d96f03146d60422413c3031405da2338a01f
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3921602"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4759077"
 ---
 # <a name="replan-or-refresh-production-orders-directly"></a>Replanifier ou actualiser directement des ordres de fabrication
 La fonction **Replanifier** des bons de production est généralement utilisée après avoir ajouté ou modifié des composantes constituant des bons de production sous-jacents. La fonction calcule les modifications apportées aux composantes et aux lignes itinéraires. Elle inclut les articles situés à des niveaux de nomenclatures de production inférieurs, pour lesquels elle peut générer de nouveaux bons de production.  
@@ -35,21 +35,21 @@ Vous pouvez soit insérer les lignes bon de production manuellement, soit utilis
 > Si vous utilisez la fonction Actualiser pour recalculer des lignes O.F., les anciennes lignes O.F. sont supprimées et de nouvelles lignes sont calculées.  
 
 ## <a name="to-replan-a-production-order"></a>Pour replanifier un bon de production  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de production planifiés fermes** , puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de production planifiés fermes**, puis sélectionnez le lien associé.  
 2.  Ouvrez l'ordre de fabrication à replanifier.  
-3.  Sur le raccourci **Lignes** , choisissez l'action **Lignes** , puis choisissez l'action **Composantes** .  
+3.  Sur le raccourci **Lignes**, choisissez l'action **Lignes**, puis choisissez l'action **Composantes**.  
 4.  Ajoutez une composante qui soit un article produit ou un sous-ensemble.  
-5.  Dans l'ordre de fabrication, choisissez l'action **Replanifier** .  
+5.  Dans l'ordre de fabrication, choisissez l'action **Replanifier**.  
 
-    Sur la page **Replanifier O.F.** , définissez la procédure et les éléments à replanifier.  
-6.  Dans le champ **Direction** , sélectionnez l'une des options suivantes.  
+    Sur la page **Replanifier O.F.**, définissez la procédure et les éléments à replanifier.  
+6.  Dans le champ **Direction**, sélectionnez l'une des options suivantes.  
 
     |Option|Description|  
     |----------------------------------|---------------------------------------|  
     |**Retour**|Calcule la séquence d'opérations en amont, de la date fin la plus proche possible, définie par la date d'échéance et/ou d'autres commandes programmées, à la date début la plus éloignée possible. **Note :** cette option par défaut convient à la majorité des cas.|  
     |**Aval**|Calcule la séquence d'opérations en aval, de la date début la plus éloignée possible, définie par la date d'échéance et/ou d'autres commandes programmées, à la date fin la plus proche possible. **Note :** cette option n'est utile que pour les commandes urgentes.|  
 
-7.  Dans le champ **Planifier** , choisissez l'option correspondant au mode de calcul des exigences de production des articles produits sur la nomenclature, comme suit.  
+7.  Dans le champ **Planifier**, choisissez l'option correspondant au mode de calcul des exigences de production des articles produits sur la nomenclature, comme suit.  
 
     |Option|Description|  
     |----------------------------------|---------------------------------------|  
@@ -57,7 +57,7 @@ Vous pouvez soit insérer les lignes bon de production manuellement, soit utilis
     |**Un niveau**|Planifie une demande fabrication pour le premier niveau. Des ordres de fabrication de premier niveau peuvent être créés.|  
     |**Tous niveaux**|Planifie une demande fabrication pour tous les niveaux. Des ordres de fabrication multi-niveaux peuvent être créés.|  
 
-8.  Sélectionnez **Un niveau** , puis choisissez le bouton **OK** pour replanifier l'ordre de fabrication, et calculer et créer un ordre de fabrication sous-jacent pour le nouveau sous-ensemble, s'il n'est pas totalement disponible.  
+8.  Sélectionnez **Un niveau**, puis choisissez le bouton **OK** pour replanifier l'ordre de fabrication, et calculer et créer un ordre de fabrication sous-jacent pour le nouveau sous-ensemble, s'il n'est pas totalement disponible.  
 
 > [!NOTE]  
 >  Les modifications mises en œuvre via la fonction **Replanifier** risquent fortement de modifier la capacité nécessaire de l'ordre de fabrication et de vous obliger à effectuer par la suite une replanification des opérations.  
@@ -65,10 +65,10 @@ Vous pouvez soit insérer les lignes bon de production manuellement, soit utilis
 ## <a name="to-refresh-a-production-order"></a>Pour actualiser un bon de production  
 Si vous avez modifié des lignes bon de production, des composantes ou des lignes itinéraire, vous devez aussi actualiser les informations du bon de production. Dans la procédure qui suit, les composantes d'un bon de production planifié ferme sont calculées. La procédure est identique pour les lignes itinéraire.
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bon de production planifié ferme** , puis sélectionnez le lien associé.  
-2.  Sélectionnez l'action **Nouveau** . Pour plus d'informations, voir [Créer des ordres de fabrication](production-how-to-create-production-orders.md).  
-3.  Sélectionnez l'action **Actualiser** .
-4. Sur la page **Actualiser O.F.** , sélectionnez l'une des options suivantes :
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bon de production planifié ferme**, puis sélectionnez le lien associé.  
+2.  Sélectionnez l'action **Nouveau**. Pour plus d'informations, voir [Créer des ordres de fabrication](production-how-to-create-production-orders.md).  
+3.  Sélectionnez l'action **Actualiser**.
+4. Sur la page **Actualiser O.F.**, sélectionnez l'une des options suivantes :
 
     |Option|Description|  
     |----------------------------------|---------------|---------------------------------------|  
@@ -92,4 +92,4 @@ Si vous avez modifié des lignes bon de production, des composantes ou des ligne
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
 [Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

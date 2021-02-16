@@ -10,20 +10,20 @@ ms.workload: na
 ms.search.keywords: special price, alternate price, pricing
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 5e12f68f56c5ffe06bf37c51b2e85ea1074a4c92
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 0873c45262dd9606ac187f5aab07b09677f6c1c8
+ms.sourcegitcommit: adf1a87a677b8197c68bb28c44b7a58250d6fc51
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3926113"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "5035616"
 ---
 # <a name="record-special-sales-prices-and-discounts"></a>Enregistrer les prix de vente spéciaux et les escomptes
 
 Vous devez définir les différentes ententes de prix et d'escompte qui s'appliquent lors de la vente à différents clients de sorte que les valeurs et règles convenues s'appliquent aux documents vente créés à l'intention des clients.
 
-Lorsque vous avez enregistré des prix spéciaux et des escomptes de ligne pour les ventes et les achats, [!INCLUDE[d365fin](includes/d365fin_md.md)] s'assure que votre profit pour l'article est toujours optimal en calculant automatiquement le meilleur prix dans les documents achat et vente, sur les lignes journal article et projet. Pour plus d'informations, voir [Calcul du meilleur prix](sales-how-record-sales-price-discount-payment-agreements.md#best-price-calculation).
+Lorsque vous avez enregistré des prix spéciaux et des escomptes de ligne pour les ventes et les achats, [!INCLUDE[prod_short](includes/prod_short.md)] s'assure que votre profit pour l'article est toujours optimal en calculant automatiquement le meilleur prix dans les documents achat et vente, sur les lignes journal article et projet. Pour plus d'informations, voir [Calcul du meilleur prix](sales-how-record-sales-price-discount-payment-agreements.md#best-price-calculation).
 
-En ce qui concerne les prix, un prix de vente spécial peut être inséré sur les lignes vente s'il existe une certaine combinaison de client, d'article, de quantité minimum, d'unité de mesure ou de date de début/date de fin.
+En ce qui concerne les prix, un prix de vente spécial peut être inséré sur les lignes vente s'il existe une certaine combinaison de client, d'article, de quantité minimum, d'unité de mesure ou de date de début/date de fin. Pour plus d’informations, consultez les sections [Pour définir un prix de vente pour un client](#to-set-up-a-sales-price-for-a-customer) et [Calcul du meilleur prix](#best-price-calculation).  
 
 En ce qui concerne les remises, vous pouvez définir et utiliser deux types de remises vente :
 
@@ -37,123 +37,125 @@ Dans la mesure où les prix de vente et les escomptes ligne vente sont basés su
 > [!NOTE]  
 > Si vous ne souhaitez qu'un article soit vendu à un prix réduit, il suffit de laisser les champs d'escompte de la fiche article vides, et de ne pas inclure l'article dans une quelconque configuration d'escompte ligne.
 
-## <a name="to-set-up-a-sales-price-for-a-customer"></a>Pour définir un prix de vente pour un client
-
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients** , puis sélectionnez le lien associé.
-2. Ouvrez la fiche client appropriée, puis sélectionnez l'action **Prix** .
-
-    Sur la page **Prix de vente** , le champ **Type vente** est prérempli avec la valeur **Client** et le champ **Code vente** est prérempli avec le numéro du client.
-3. Renseignez les champs de la ligne selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)] Renseignez une ligne pour chaque combinaison qui accorde un prix de vente spécial au client.
-
-## <a name="to-set-up-a-sales-line-discount-for-a-customer"></a>Pour définir un escompte de ligne vente pour un client
-
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients** , puis sélectionnez le lien associé.
-2. Ouvrez la fiche client appropriée, puis sélectionnez l'action **Remises ligne** .
-
-    Sur la page **Escomptes de ligne de vente** , le champ **Type de vente** est prérempli avec la valeur **Client** et le champ **Code vente** est prérempli avec le numéro du client.
-3. Renseignez les champs de la ligne selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)] Renseignez une ligne pour chaque combinaison qui accorde une remise ligne vente au client.
-
-> [!Note]
-> Lorsque vous ouvrez les fenêtres **Prix de vente** et **Escomptes de ligne de vente** à partir d'un client spécifique, les champs **Filtre type vente** et **Filtre code vente** sont définis pour le client et ne peuvent pas être modifiés ou supprimés, ce qui est indiqué par la couleur grise de la valeur du champ **Filtre code vente** .
->
-> Pour configurer des prix ou des escomptes ligne pour tous les clients, un groupe de prix client ou une promotion, vous devez ouvrir les fenêtres à partir d'une fiche article. Sinon, pour les prix de vente, utilisez la page **Feuille prix vente** . Pour plus d'informations, voir [Mettre à jour en bloc des prix d'articles](sales-how-record-sales-price-discount-payment-agreements.md#to-bulk-update-item-prices).  
-
-## <a name="to-set-up-an-invoice-discount-for-a-customer"></a>Pour configurer un escompte facture pour un client
-
-Une fois que vous avez décidé des clients pouvant faire l'objet d'escomptes facture, entrez le code escompte facture sur les fiches client et configurez les conditions pour chaque code.
-
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients** , puis sélectionnez le lien associé.
-2. Ouvrez la fiche client d'un client pouvant faire l'objet de remises facture.
-3. Dans le champ **Code remise facture** , sélectionnez un code pour les conditions de remise facture appropriées à utiliser pour calculer les remises facture pour le client.
-
-> [!NOTE]  
-> Les codes escompte facture sont représentés par les fiches client existantes. Cela vous permet d'affecter rapidement les conditions d'escompte facture aux clients en sélectionnant le nom d'autres clients qui bénéficient des mêmes conditions.
-
-Configurez de nouvelles conditions d'escompte facture pour les ventes.
-
-1. Sur la page **Fiche client** , sélectionnez l'action **Escomptes facture** . La page **Escomptes facture client** s'ouvre.
-2. Dans le champ **Code devise** , indiquez le code d'une devise à laquelle s'appliquent les conditions de remise facture. Laissez le champ vierge si vous souhaitez configurer des conditions d'escompte facture en USD.
-3. Dans le champ **Montant minimum** , entrez le montant minimal qu'une facture doit présenter pour faire l'objet de la remise.
-4. Dans le champ **% remise** , entrez la remise facture sous la forme d'un pourcentage du montant de la facture.
-5. Répétez les étapes 5 à 7 pour chaque devise pour laquelle le client recevra un escompte facture différent.
-
-L'escompte facture est désormais configuré et affecté au client concerné. Lorsque vous sélectionnez le code client dans le champ **Code remise facture** dans d'autres fiches client, la même remise facture est affecté à ces clients.
-
-## <a name="to-work-with-sales-invoice-discounts-and-service-charges"></a>Utiliser des escomptes facture vente et des frais forfaitaires
+## <a name="sales-invoice-discounts-and-service-charges"></a>Escomptes facture vente et frais forfaitaires
 
 Lorsque vous utilisez des escomptes de facture, la valeur du montant de la facture détermine celle de l'escompte accordé.  
 
-Sur la page **Escomptes facture client** , vous pouvez également ajouter des frais de service aux factures supérieures à un montant donné.  
+Sur la page **Escomptes facture client**, vous pouvez également ajouter des frais de service aux factures supérieures à un montant donné.  
 
-Pour pouvoir utiliser les escomptes facture avec les ventes, vous devez saisir certaines informations dans l'application. Vous devez décider des éléments suivants  
+Pour pouvoir utiliser les escomptes facture avec les ventes, vous devez spécifier certaines informations. Vous devez décider ce qui suit :  
 
-- les clients qui se verront accorder ce type d'escompte.  
-- les pourcentages d'escompte à utiliser.  
+- les clients qui se verront accorder ce type d'escompte  
+- les pourcentages d'escompte à utiliser  
 
-Sur la page **Configuration des ventes et des comptes à recevoir** , vous pouvez spécifier si les escomptes facture doivent être calculés automatiquement.  
+Sur la page **Configuration des ventes**, vous pouvez spécifier si les escomptes facture doivent être calculés automatiquement.  
 
 Pour chaque client, vous pouvez indiquer si vous accordez des remises facture si la condition est remplie (si le montant facture est suffisamment élevé). Vous pouvez définir les conditions pour l'escompte facture en devise locale pour les clients nationaux et en devise étrangère pour les clients étrangers.  
 
-Vous pouvez associer les pourcentages escompte à des montants de facture spécifiques sur les pages **Escomptes facture client** . Vous pouvez entrer le nombre de pourcentages de votre choix sur chaque page. Chaque client peut avoir sa propre page, ou vous pouvez lier plusieurs clients à la même page.  
+Vous pouvez associer les pourcentages escompte à des montants de facture spécifiques sur la page **Escomptes facture client** pour chaque client. Vous pouvez entrer le nombre de pourcentages de votre choix. Chaque client peut avoir sa propre page, ou vous pouvez lier plusieurs clients à la même page.  
 
 En plus du pourcentage d'escompte (ou à sa place), vous pouvez lier un montant de frais forfaitaires au montant d'une facture.  
 
 > [!TIP]  
 > Avant d'entrer ces informations, il est conseillé de préparer la structure de l'escompte que vous souhaitez utiliser. Ainsi, vous pouvez visualiser plus facilement les clients pouvant être liés à la même page d'escompte facture. Plus le nombre de pages à configurer est faible, plus vous pouvez saisir rapidement les informations de base.
 
-Pour plus d'informations sur les escomptes sur les ventes, voir [Configurer des escomptes pour vos clients](/learn/modules/customer-discounts-dynamics-365-business-central/index) sur Microsoft Learn.  
+Pour la formation sur les escomptes sur les ventes, voir [Configurer des escomptes pour vos clients](/learn/modules/customer-discounts-dynamics-365-business-central/index) sur Microsoft Learn.  
+
+### <a name="calculating-invoice-discounts-on-sales"></a>Calcul d'escomptes facture pour des ventes
+
+[!INCLUDE [sales-invoice-discounts](includes/sales-invoice-discounts.md)]
+
+## <a name="to-set-up-a-sales-line-discount-for-a-customer"></a>Pour définir un escompte de ligne vente pour un client
+
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients**, puis sélectionnez le lien associé.
+2. Ouvrez la fiche client appropriée, puis sélectionnez l'action **Remises ligne**.
+
+    Sur la page **Escomptes de ligne de vente**, le champ **Type de vente** est prérempli avec la valeur **Client** et le champ **Code vente** est prérempli avec le numéro du client.
+3. Renseignez les champs de la ligne selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)] Renseignez une ligne pour chaque combinaison qui accorde une remise ligne vente au client.
+
+> [!Note]
+> Lorsque vous ouvrez les fenêtres **Prix de vente** et **Escomptes de ligne de vente** à partir d'un client spécifique, les champs **Filtre type vente** et **Filtre code vente** sont définis pour le client et ne peuvent pas être modifiés ou supprimés, ce qui est indiqué par la couleur grise de la valeur du champ **Filtre code vente**.
+>
+> Pour configurer des prix ou des escomptes ligne pour tous les clients, un groupe de prix client ou une promotion, vous devez ouvrir les fenêtres à partir d'une fiche article. Sinon, pour les prix de vente, utilisez la page **Feuille prix vente**. Pour plus d'informations, voir [Mettre à jour en bloc des prix d'articles](sales-how-record-sales-price-discount-payment-agreements.md#to-bulk-update-item-prices).  
+
+## <a name="to-set-up-an-invoice-discount-for-a-customer"></a>Pour configurer un escompte facture pour un client
+
+Une fois que vous avez décidé des clients pouvant faire l'objet d'escomptes facture, entrez le code escompte facture sur les fiches client et configurez les conditions pour chaque code.
+
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients**, puis sélectionnez le lien associé.
+2. Ouvrez la fiche client d'un client pouvant faire l'objet de remises facture.
+3. Dans le champ **Code remise facture**, sélectionnez un code pour les conditions de remise facture appropriées à utiliser pour calculer les remises facture pour le client.
+
+    > [!NOTE]  
+    > Les codes escompte facture sont représentés par les fiches client existantes. Cela vous permet d'affecter rapidement les conditions d'escompte facture aux clients en sélectionnant le nom d'autres clients qui bénéficient des mêmes conditions. Pour configurer des conditions d'escompte sur facture spécifiques au client, définissez le champ **Code escompte facture** sur le code client du client, puis passez à l’étape suivante.
+
+4. Sur la page **Fiche client**, sélectionnez l'action **Escomptes facture**. La page **Escomptes facture client** s'ouvre.
+5. Dans le champ **Code devise**, indiquez le code d'une devise à laquelle s'appliquent les conditions de remise facture. Laissez le champ vierge si vous souhaitez configurer des conditions d'escompte facture en USD.
+6. Sinon, dans le champ **Montant minimum**, entrez le montant minimal qu’une facture doit présenter pour faire l’objet de l'escompte.
+7. Dans le champ **% remise**, entrez la remise facture sous la forme d'un pourcentage du montant de la facture.
+8. Répétez les étapes 5 à 7 pour chaque devise pour laquelle le client recevra un escompte facture différent.
+
+L'escompte facture est désormais configuré et affecté au client concerné. Lorsque vous sélectionnez le code client dans le champ **Code remise facture** dans d'autres fiches client, la même remise facture est affecté à ces clients.
+
+## <a name="to-set-up-a-sales-price-for-a-customer"></a>Pour définir un prix de vente pour un client
+
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients**, puis sélectionnez le lien associé.
+2. Ouvrez la fiche client appropriée, puis sélectionnez l'action **Prix**.
+
+    Sur la page **Prix de vente**, le champ **Type vente** est prérempli avec la valeur **Client** et le champ **Code vente** est prérempli avec le numéro du client.
+3. Renseignez les champs de la ligne selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)] Renseignez une ligne pour chaque combinaison qui accorde un prix de vente spécial au client.
+
+## <a name="to-copy-sales-prices"></a>Pour copier des prix de vente
+
+Pour copier des prix de vente, comme les prix appliqués à un client et qui doivent être appliqués à tout un groupe de clients, vous devez lancer le traitement par lots **Suggérer prix vente**. traitement en lot, que vous lancez depuis la page **Feuille prix vente**.  
+
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille prix vente**, puis choisissez le lien associé.  
+2. Sélectionnez l'action **Suggérer prix vente**    
+3. Sur le raccourci **Prix vente**, renseignez les champs **Type vente** et **Code vente** avec les prix de vente d'origine à copier.  
+4. Dans la partie supérieure de la page de demande, indiquez dans les champs **Type vente** et **Code vente** le type et le nom sous lesquels vous souhaitez copier les prix de vente.  
+5. Pour que le traitement en lot crée des prix, cochez la case **Créer nouveaux prix**.  
+6. Choisissez le bouton **OK** pour renseigner les lignes de la page **Feuille prix vente** avec les nouveaux prix proposés, en précisant qu'ils sont applicables au type vente sélectionné.  
+
+> [!NOTE]  
+> Ce traitement en lot crée uniquement des propositions ; il n'effectue pas les modifications proposées. Si les propositions vous conviennent et que vous souhaitez les appliquer, c'est-à-dire les insérer sur la page **Prix vente**, choisissez l'action **Implémenter des modifications de prix**, sur la page **Feuille prix vente**.
+
+## <a name="to-bulk-update-item-prices"></a>Pour mettre à jour en bloc des prix d'articles
+
+Si vous souhaitez mettre à jour en bloc des prix article, tels que l'augmentation de tous les prix article par un certain pourcentage, vous devez exécuter **Suggérer prix article**. traitement en lot. Vous pouvez rechercher un lien vers le traitement en lot sur la page **Feuille prix vente**.  
+
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille prix vente**, puis choisissez le lien associé.  
+2. Sélectionnez l'action **Suggérer prix article**    
+3. Sur le raccourci **Article**, renseignez le champ **N°**, ou **Groupe de report inventaire** ou d'autres champs avec les prix article d'origine à mettre à jour.  
+4. Dans la partie supérieure de la page de demande, indiquez dans les champs **Type vente** et **Code vente** le type et le nom sous lesquels vous souhaitez copier les prix de vente.
+5. Si vous souhaitez que le traitement en lot ajuste automatiquement les prix article proposés, saisissez l'ajustement dans le champ **Facteur ajustement**. Par exemple, vous devez entrer 1,15 dans **Facteur appliqué** pour une augmentation de 15 % des prix unitaires.  
+6. Pour que le traitement par lots crée des prix, sélectionnez le champ **Créer nouveaux prix**.  
+7. Choisissez le bouton **OK** pour renseigner les lignes de la page **Feuille prix vente** avec les nouveaux prix proposés, en précisant qu'ils sont applicables au l'**article** sélectionné.  
+
+> [!NOTE]
+> Ce traitement en lot crée uniquement des propositions ; il n'effectue pas les modifications proposées. Si les propositions vous conviennent et que vous souhaitez les appliquer, c'est-à-dire les insérer dans la table **Prix vente**, vous pouvez utiliser le traitement en lot **Implémenter nouveaux prix**, accessible via l'onglet **Actions**, dans le groupe **Fonctions**, sur la page **Feuille prix vente**.
 
 ## <a name="best-price-calculation"></a>Calcul du meilleur prix
 
-Lorsque vous avez enregistré des prix spéciaux et des remises de ligne pour les ventes et les achats, [!INCLUDE[d365fin](includes/d365fin_md.md)] s'assure que votre marge pour l'article est toujours optimale en calculant automatiquement le meilleur prix dans les documents achat et vente, sur le projet et les lignes feuille article.
+Lorsque vous avez enregistré des prix spéciaux et des remises de ligne pour les ventes et les achats, [!INCLUDE[prod_short](includes/prod_short.md)] s'assure que votre marge pour l'article est toujours optimale en calculant automatiquement le meilleur prix dans les documents achat et vente, sur le projet et les lignes feuille article.
 
-Le meilleur prix est le prix le plus bas autorisé associé à l'escompte ligne le plus élevé autorisé à une date donnée. [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule automatiquement cette valeur lorsqu'il insère le prix unitaire et le pourcentage de remise de ligne pour des articles dans le nouveau document et les lignes feuille.
+Le meilleur prix est le prix le plus bas autorisé associé à l'escompte ligne le plus élevé autorisé à une date donnée. [!INCLUDE[prod_short](includes/prod_short.md)] calcule automatiquement cette valeur lorsqu'il insère le prix unitaire et le pourcentage de remise de ligne pour des articles dans le nouveau document et les lignes feuille.
 
 > [!NOTE]  
 > Voici une description du calcul du meilleur prix pour la vente. Le calcul est le même pour les achats.
 
-1. [!INCLUDE[d365fin](includes/d365fin_md.md)] vérifie la combinaison client facturé et article, et calcule le prix unitaire applicable et le pourcentage remise de ligne à l'aide des critères suivants :
+1. [!INCLUDE[prod_short](includes/prod_short.md)] vérifie la combinaison client facturé et article, et calcule le prix unitaire applicable et le pourcentage remise de ligne à l'aide des critères suivants :
 
     - Ce client a-t-il une entente pour des prix ou des escomptes ou appartient-il à un groupe bénéficiant d'un telle entente?
     - L'article ou le groupe escompte article sur la ligne est-il inclus dans l'une ou l'autre de ces ententes prix/escompte?
     - La date de commande (ou la date de report pour la facture et la note de crédit) est-elle comprise entre les dates début et de fin de l'entente prix/escompte?
-    - Un code unité de mesure est-il spécifié? Si c'est le cas, [!INCLUDE[d365fin](includes/d365fin_md.md)] recherche des prix/remises possédant le même code unité, et des prix/remises sans code unité.
+    - Un code unité de mesure est-il spécifié? Si c'est le cas, [!INCLUDE[prod_short](includes/prod_short.md)] recherche des prix/remises possédant le même code unité, et des prix/remises sans code unité.
 
-2. [!INCLUDE[d365fin](includes/d365fin_md.md)] vérifie si des accords prix/remise s'appliquent à des informations sur le document ou la ligne feuille, puis insère le prix unitaire applicable et le pourcentage remise de ligne, à l'aide des critères suivants :
+2. [!INCLUDE[prod_short](includes/prod_short.md)] vérifie si des accords prix/remise s'appliquent à des informations sur le document ou la ligne feuille, puis insère le prix unitaire applicable et le pourcentage remise de ligne, à l'aide des critères suivants :
 
     - Existe-t-il une quantité minimum à respecter dans l'entente de prix/escompte?
-    - Existe-t-il une exigence en matière de devise à respecter dans l'entente de prix/escompte? Si c'est le cas, le prix le plus bas et l'escompte ligne le plus élevé pour cette devise sont insérés, même si la devise locale permettrait d'offrir un meilleur prix. S'il n'existe aucune entente de prix/escompte pour le code devise indiqué, [!INCLUDE[d365fin](includes/d365fin_md.md)] insère le prix le plus bas et l'escompte de ligne le plus élevé dans votre devise locale.
+    - Existe-t-il une exigence en matière de devise à respecter dans l'entente de prix/escompte? Si c'est le cas, le prix le plus bas et l'escompte ligne le plus élevé pour cette devise sont insérés, même si la devise locale permettrait d'offrir un meilleur prix. S'il n'existe aucune entente de prix/escompte pour le code devise indiqué, [!INCLUDE[prod_short](includes/prod_short.md)] insère le prix le plus bas et l'escompte de ligne le plus élevé dans votre devise locale.
 
 Si aucun prix spécial ne peut être calculé pour l'article de la ligne, alors soit le coût unitaire direct, soit le prix unitaire à partir de la fiche article est inséré.
-
-## <a name="to-copy-sales-prices"></a>Pour copier des prix de vente
-
-Pour copier des prix de vente, comme les prix appliqués à un client et qui doivent être appliqués à tout un groupe de clients, vous devez lancer le traitement par lots **Suggérer prix vente** . traitement en lot, que vous lancez depuis la page **Feuille prix vente** .  
-
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille prix vente** , puis choisissez le lien associé.  
-2. Sélectionnez l'action **Suggérer prix vente**    
-3. Sur le raccourci **Prix vente** , renseignez les champs **Type vente** et **Code vente** avec les prix de vente d'origine à copier.  
-4. Dans la partie supérieure de la page de demande, indiquez dans les champs **Type vente** et **Code vente** le type et le nom sous lesquels vous souhaitez copier les prix de vente.  
-5. Pour que le traitement en lot crée des prix, cochez la case **Créer nouveaux prix** .  
-6. Choisissez le bouton **OK** pour renseigner les lignes de la page **Feuille prix vente** avec les nouveaux prix proposés, en précisant qu'ils sont applicables au type vente sélectionné.  
-
-> [!NOTE]  
-> Ce traitement en lot crée uniquement des propositions ; il n'effectue pas les modifications proposées. Si les propositions vous conviennent et que vous souhaitez les appliquer, c'est-à-dire les insérer sur la page **Prix vente** , choisissez l'action **Implémenter des modifications de prix** , sur la page **Feuille prix vente** .
-
-## <a name="to-bulk-update-item-prices"></a>Pour mettre à jour en bloc des prix d'articles
-
-Si vous souhaitez mettre à jour en bloc des prix article, tels que l'augmentation de tous les prix article par un certain pourcentage, vous devez exécuter **Suggérer prix article** . traitement en lot. Vous pouvez rechercher un lien vers le traitement en lot sur la page **Feuille prix vente** .  
-
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille prix vente** , puis choisissez le lien associé.  
-2. Sélectionnez l'action **Suggérer prix article**    
-3. Sur le raccourci **Article** , renseignez le champ **N°** , ou **Groupe de report inventaire** ou d'autres champs avec les prix article d'origine à mettre à jour.  
-4. Dans la partie supérieure de la page de demande, indiquez dans les champs **Type vente** et **Code vente** le type et le nom sous lesquels vous souhaitez copier les prix de vente.
-5. Si vous souhaitez que le traitement en lot ajuste automatiquement les prix article proposés, saisissez l'ajustement dans le champ **Facteur ajustement** . Par exemple, vous devez entrer 1,15 dans **Facteur appliqué** pour une augmentation de 15 % des prix unitaires.  
-6. Pour que le traitement par lots crée des prix, sélectionnez le champ **Créer nouveaux prix** .  
-7. Choisissez le bouton **OK** pour renseigner les lignes de la page **Feuille prix vente** avec les nouveaux prix proposés, en précisant qu'ils sont applicables au l' **article** sélectionné.  
-
-> [!NOTE]
-> Ce traitement en lot crée uniquement des propositions ; il n'effectue pas les modifications proposées. Si les propositions vous conviennent et que vous souhaitez les appliquer, c'est-à-dire les insérer dans la table **Prix vente** , vous pouvez utiliser le traitement en lot **Implémenter nouveaux prix** , accessible via l'onglet **Actions** , dans le groupe **Fonctions** , sur la page **Feuille prix vente** .
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/manage-sales-prices-dynamics-365-business-central/index)
 
@@ -161,4 +163,4 @@ Si vous souhaitez mettre à jour en bloc des prix article, tels que l'augmentati
 
 [Définition des ventes](sales-setup-sales.md)  
 [Vente](sales-manage-sales.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: design, items, ledger entries, posting, inventory
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 14aae820463718357d3bac69524751833f5dd79d
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: df1baacad6a1bca50c3d1891ab69e920fd375b12
+ms.sourcegitcommit: adf1a87a677b8197c68bb28c44b7a58250d6fc51
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3913673"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "5035492"
 ---
 # <a name="design-details-item-application"></a>Détails de conception : affectation article
 
@@ -23,7 +23,7 @@ Lorsque vous reportez une transaction d'inventaire, le report de quantité est e
 
 De même, une affectation article est effectuée pour lier le destinataire de coût à sa source de coût pour assurer le transfert de coûts en fonction du mode d'évaluation coût. Pour plus d'informations, [Détails de conception : modes évaluation stock](design-details-costing-methods.md).  
 
-[!INCLUDE[d365fin](includes/d365fin_md.md)] effectue deux types de lettrage article.  
+[!INCLUDE[prod_short](includes/prod_short.md)] effectue deux types de lettrage article.  
 
 |Type d'affectation|Description|  
 |----------------------|---------------------------------------|  
@@ -35,7 +35,7 @@ Les lettrages article peuvent être effectués des manières suivantes.
 |Méthode|Description|Type d'affectation|  
 |------------|---------------------------------------|----------------------|  
 |Automatique|Se produit en tant que transfert de coûts général selon le mode évaluation stock|Quantité affectée|  
-|Statique|Effectué par l'utilisateur lorsque :<br /><br /> -   Traitement des retours<br />-   Report de corrections<br />-   Annulation des reports de quantité<br />-   Création de livraisons directes **Remarque :**  L'affectation fixe peut être effectuée manuellement en saisissant un numéro de séquence dans le champ **Écriture article à affecter** ou à l'aide d'une fonction, telle que **Extraire les lignes de document reportées à inverser** .|Quantité affectée<br /><br /> Affectation coût **Remarque :**  L'affectation coût se produit uniquement dans les transactions entrantes dont le champ **Écriture article à affecter** est renseigné pour créer une affectation fixe. Consultez la table suivante.|  
+|Statique|Effectué par l'utilisateur lorsque :<br /><br /> -   Traitement des retours<br />-   Report de corrections<br />-   Annulation des reports de quantité<br />-   Création de livraisons directes **Remarque :**  L'affectation fixe peut être effectuée manuellement en saisissant un numéro de séquence dans le champ **Écriture article à affecter** ou à l'aide d'une fonction, telle que **Extraire les lignes de document reportées à inverser**.|Quantité affectée<br /><br /> Affectation coût **Remarque :**  L'affectation coût se produit uniquement dans les transactions entrantes dont le champ **Écriture article à affecter** est renseigné pour créer une affectation fixe. Consultez la table suivante.|  
 
 L'affectation de quantités ou de coûts dépend de la direction de la transaction d'inventaire et de si l'affectation d'article est automatique ou fixe, en fonction des processus spécifiques.  
 
@@ -74,7 +74,7 @@ Le tableau suivant montre l'écriture d'affectation article qui est créée lors
 ## <a name="inventory-decrease"></a>Diminution d'inventaire  
 Lorsque vous reportez une diminution d'inventaire, une écriture d'affectation article qui lie la diminution d'inventaire à une augmentation d'inventaire est créée. Ce lien est créé en utilisant le mode évaluation stock de l'article comme base d'instructions. Pour les articles utilisant les modes évaluation du stock FIFO, standard, et moyen, le lien est basé sur le principe du premier entré, premier sorti. La diminution d'inventaire est affectée avec l'augmentation d'inventaire ayant la date de report future la plus proche. Pour les articles utilisant le mode évaluation stock LIFO, le lien est basé sur le principe du dernier entré, premier sorti. La diminution d'inventaire est affectée à l'augmentation d'inventaire ayant la date de report passée la plus récente.  
 
-Dans la table **Ecriture article** , le champ **Quantité restante** présente la quantité qui n'a pas encore été lettrée. Si la quantité restante est supérieure à 0, la case à cocher **Ouvrir** est activée.  
+Dans la table **Ecriture article**, le champ **Quantité restante** présente la quantité qui n'a pas encore été lettrée. Si la quantité restante est supérieure à 0, la case à cocher **Ouvrir** est activée.  
 
 ### <a name="example"></a>Exemple :  
 L'exemple suivant montre l'écriture d'affectation article créée lors du report d'une livraison vente de 5 unités des articles réceptionnés dans l'exemple précédent. La première écriture d'affectation article est la réception achat. La deuxième écriture d'affectation est la livraison vente.  
@@ -89,7 +89,7 @@ Le tableau suivant montre les deux écritures d'affectation article qui résulte
 ## <a name="fixed-application"></a>Affectation fixe  
 Vous effectuez une affectation fixe lorsque vous spécifiez que le coût d'une augmentation d'inventaire doit être affecté à une diminution d'inventaire spécifique ou inversement. Cette affectation fixe influence les quantités restantes des écritures, mais l'affectation fixe inverse également le coût exact de l'écriture d'origine sur laquelle vous affectez (ou à partir de laquelle vous affectez).  
 
-Pour créer une affectation fixe, vous utilisez les champs **Écr. article à affecter** ou **Écriture article à affecter** des lignes document pour spécifier l'écriture article vers laquelle (ou à partir de laquelle) vous souhaitez affecter la ligne transaction. Par exemple, vous pouvez effectuer une affectation fixe lorsque vous voulez créer un coût affecté qui spécifie qu'un retour vente doit être affecté à une livraison vente spécifique afin d'inverser le coût de la livraison vente. Dans ce cas, [!INCLUDE[d365fin](includes/d365fin_md.md)] ignore le mode d'évaluation du stock et lettre la sortie de stock (ou l'entrée de stock en cas de retour vente) sur l'écriture comptable article que vous spécifiez. L'avantage d'effectuer une affectation fixe est que le coût de la transaction initiale est transmis à la nouvelle transaction.  
+Pour créer une affectation fixe, vous utilisez les champs **Écr. article à affecter** ou **Écriture article à affecter** des lignes document pour spécifier l'écriture article vers laquelle (ou à partir de laquelle) vous souhaitez affecter la ligne transaction. Par exemple, vous pouvez effectuer une affectation fixe lorsque vous voulez créer un coût affecté qui spécifie qu'un retour vente doit être affecté à une livraison vente spécifique afin d'inverser le coût de la livraison vente. Dans ce cas, [!INCLUDE[prod_short](includes/prod_short.md)] ignore le mode d'évaluation du stock et lettre la sortie de stock (ou l'entrée de stock en cas de retour vente) sur l'écriture comptable article que vous spécifiez. L'avantage d'effectuer une affectation fixe est que le coût de la transaction initiale est transmis à la nouvelle transaction.  
 
 ### <a name="example--fixed-application-in-purchase-return"></a>Exemple – affectation fixe dans le retour achat  
 L'exemple suivant, qui illustre l'effet de l'affectation fixe d'un retour achat d'un article utilisant le mode d'évaluation coût FIFO, est basé sur le scénario suivant :  
@@ -120,12 +120,14 @@ Le coût du second achat, 20,00 $, est ensuite transmis correctement au retour 
 L'exemple suivant, qui indique l'effet de l'affectation fixe, est basé sur le scénario suivant pour un article qui utilise le mode évaluation coût moyen :  
 
 1. Dans les numéros de séquence 1 et 2, l'utilisateur reporte deux factures achat. La seconde facture a un coût unitaire direct incorrect de 1000,00 $.  
-2. Dans le numéro de séquence 3, l'utilisateur reporte une note de crédit achat, avec une affectation fixe affectée à l'écriture achat avec le coût unitaire direct incorrect. La somme du champ **Coût indiqué (réel)** des deux écritures valeur affectées fixes devient 0,00  
+2. Dans le numéro de séquence 3, l’utilisateur reporte une note de crédit achat, avec une affectation fixe affectée à l’écriture achat avec le coût unitaire direct incorrect. La somme du champ **Coût indiqué (réel)** des deux écritures valeur affectées fixes devient 0,00  
 3. Dans le numéro de séquence 4, l'utilisateur reporte une autre facture achat avec le coût unitaire direct correct de 100,00 $.  
 4. Dans le numéro de séquence 5, l'utilisateur reporte une facture vente.  
 5. La quantité en inventaire est 0, et la valeur inventaire est aussi égale à 0,00  
 
 Le tableau suivant montre le résultat du scénario dans les écritures valeur de l'article.  
+
+Le tableau suivant présente le résultat du scénario sur les entrées de valeur de l’article une fois le report terminé et l’ajustement des coûts exécuté.
 
 |Date de report|Type d'écriture gr. livre art.|Quantité valorisée|Coût indiqué (réel)|Écr. article à affecter|Valorisé par coût moyen|N° écriture article gr. livre|N° séquence |  
 |-------------------------------------|-----------------------------------------------|-----------------------------------------|------------------------------------------------|--------------------------------------------|-------------------------------------------------|-----------------------------------------------|----------------------------------|  
@@ -187,10 +189,10 @@ Le tableau suivant montre l'effet de la contrepassation du coût exact des écri
 |01/03/20|Vente (Note de crédit)|1|1100.00|2|3|3|  
 |01/04/20|(Frais annexes)|1|100.00||1|4|  
 
-Lorsque vous exécutez le traitement en lot **Ajuster coûts - Écr. article** , le coût augmenté de l'écriture achat, dû aux frais annexes, est transmis à l'écriture vente (écriture numéro 2). L'écriture vente transfère alors ce coût augmenté à l'écriture vente créditrice (numéro de séquence 3). Le résultat final est que le coût est correctement inversé.  
+Lorsque vous exécutez le traitement en lot **Ajuster coûts - Écr. article**, le coût augmenté de l'écriture achat, dû aux frais annexes, est transmis à l'écriture vente (écriture numéro 2). L'écriture vente transfère alors ce coût augmenté à l'écriture vente créditrice (numéro de séquence 3). Le résultat final est que le coût est correctement inversé.  
 
 > [!NOTE]  
->  Si vous utilisez des retours ou des notes de crédit et que vous avez configuré le champ **Coût d'inversion exact obligatoire** sur la page **Configuration achats** ou **Configuration ventes** , en fonction de votre situation, [!INCLUDE[d365fin](includes/d365fin_md.md)] renseigne automatiquement les différents champs d'écriture d'affectation lorsque vous utilisez la fonction **Copier à partir du document** . Si vous utilisez la fonction **Affichage de lignes document validées à contrepasser** , les champs sont toujours renseignés automatiquement.  
+>  Si vous utilisez des retours ou des notes de crédit et que vous avez configuré le champ **Coût d'inversion exact obligatoire** sur la page **Configuration achats** ou **Configuration ventes**, en fonction de votre situation, [!INCLUDE[prod_short](includes/prod_short.md)] renseigne automatiquement les différents champs d'écriture d'affectation lorsque vous utilisez la fonction **Copier à partir du document**. Si vous utilisez la fonction **Affichage de lignes document validées à contrepasser**, les champs sont toujours renseignés automatiquement.  
 
 > [!NOTE]  
 >  Si vous reportez une transaction avec une affectation fixe et si l'écriture article que vous affectez doit être fermée, ce qui signifie que la quantité restante est égale à zéro, l'ancienne affectation est automatiquement annulée et l'écriture article est réaffectée à l'aide de l'affectation fixe que vous avez spécifiée.  
@@ -203,30 +205,30 @@ L'exemple suivant, qui indique comment les écritures de transfert sont affecté
 
 1. L'utilisateur achète l'article à un montant de 10,00 $.  
 2. L'utilisateur achète à nouveau l'article à un montant de 20,00 $.  
-3. L'utilisateur transfère l'article de l'emplacement BLEU à ROUGE.  
+3. L’utilisateur transfère l’article de l'emplacement EAST vers l'emplacement WEST.  
 
 Le tableau suivant montre l'effet du transfert sur les écritures valeur de l'article.  
 
 |Date de report|Type d'écriture gr. livre art.|Code d'emplacement|Quantité valorisée|Coût indiqué (réel)|N° séquence |  
 |-------------------------------------|-----------------------------------------------|--------------------------------------|-----------------------------------------|------------------------------------------------|----------------------------------|  
-|01/01/20|Achat|BLEU|1|10.00|1|  
-|01/01/20|Achat|BLEU|1|20.00|2|  
-|01/02/20|Virement|BLEU|-1|15.00|3|  
-|01/02/20|Virement|ROUGE|1|15.00|4|  
+|01/01/20|Achat|EAST|1|10.00|1|  
+|01/01/20|Achat|EAST|1|20.00|2|  
+|01/02/20|Virement|EAST|-1|15.00|3|  
+|01/02/20|Virement|WEST|1|15.00|4|  
 
 ### <a name="example--standard-costing-method"></a>Exemple – Mode d'évaluation du stock Standard  
 L'exemple suivant, qui indique comment les écritures de transfert sont affectées, est basé sur le scénario suivant pour un article utilisant le mode évaluation stock Standard et une période coût moyen Jour.  
 
 1. L'utilisateur achète l'article à un montant standard de 10,00 $.  
-2. L'utilisateur transfère l'article à partir de l'emplacement BLEU à ROUGE à un coût standard de 12,00 $.  
+2. L’utilisateur transfère l’article de l'emplacement EAST vers l'emplacement WEST à un coût standard de 12,00 $.  
 
 Le tableau suivant montre l'effet du transfert sur les écritures valeur de l'article.  
 
 |Date de report|Type d'écriture gr. livre art.|Code d'emplacement|Quantité valorisée|Coût indiqué (réel)|N° séquence |  
 |-------------------------------------|-----------------------------------------------|--------------------------------------|-----------------------------------------|------------------------------------------------|----------------------------------|  
-|01/01/20|Achat|BLEU|1|10.00|1|  
-|01/02/20|Virement|BLEU|-1|10.00|2|  
-|01/02/20|Virement|ROUGE|1|10.00|3|  
+|01/01/20|Achat|EAST|1|10.00|1|  
+|01/02/20|Virement|EAST|-1|10.00|2|  
+|01/02/20|Virement|WEST|1|10.00|3|  
 
 Étant donné que la valeur de l'augmentation d'inventaire d'origine est de 10,00 $, le transfert est évalué à ce coût, et non à 12,00 $.  
 
@@ -238,7 +240,7 @@ En raison du mode de calcul du coût unitaire d'un article, une affectation arti
 * Vous souhaitez annuler l'affectation créée automatiquement lors du report, en fonction du mode d'évaluation du coût de l'article.  
 * Vous devez retourner un article sur lequel une vente a déjà été appliquée manuellement, sans utiliser la fonction **Afficher des lignes document validées à contrepasser** et vous devez donc annuler l'application.  
 
-[!INCLUDE[d365fin](includes/d365fin_md.md)] propose une fonction pour analyser et corriger des lettrages article. Cela s'effectue sur la page **Feuille affectation** .  
+[!INCLUDE[prod_short](includes/prod_short.md)] propose une fonction pour analyser et corriger des lettrages article. Cela s'effectue sur la page **Feuille affectation**.  
 
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : problème connu lié à l'affectation d'articles](design-details-inventory-zero-level-open-item-ledger-entries.md)  
@@ -248,4 +250,4 @@ En raison du mode de calcul du coût unitaire d'un article, une affectation arti
 [Détails de conception : ajustement des coûts](design-details-cost-adjustment.md)  
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Finance](finance.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

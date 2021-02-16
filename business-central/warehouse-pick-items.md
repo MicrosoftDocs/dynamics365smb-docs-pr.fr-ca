@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: ef457ddf93e2634345c809b241e15acc94d0593e
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: b9e4bf86ec68ad06a22c0a9dcca37eecffb0316b
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3911731"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4755802"
 ---
 # <a name="pick-items"></a>Prélèvement d'articles
 
@@ -24,7 +24,7 @@ L'activité entrepôt consistant à prélever les articles avant leur livraison 
 Si vous décidez d'organiser et d'enregistrer votre activité de prélèvement avec des documents entrepôt, activez le champ **Prélèvement requis** dans la fiche emplacement. Ceci indique que lorsque vous avez des articles devant être prélevés pour un document origine sortant, vous souhaitez que le prélèvement de ces articles soit contrôlé par le système. Un document source sortant peut être un document de vente, un retour achat, une commande transfert sortant, une commande service ou un bon de production dont les composantes doivent être prélevées.
 
 > [!NOTE]
-> Bien que le paramètre soit appelé **Prélèvement requis** , vous pouvez quand même reporter les livraisons directement à partir des documents commerciaux sources dans lesquels vous cochez cette case.
+> Bien que le paramètre soit appelé **Prélèvement requis**, vous pouvez quand même reporter les livraisons directement à partir des documents commerciaux sources dans lesquels vous cochez cette case.
 
 Si votre emplacement est configuré pour exiger un traitement des prélèvements, mais pas un traitement des livraisons, vous utilisez la page **Prélèvement inventaire** pour organiser les informations de prélèvement, les imprimer, entrer le résultat du prélèvement effectif et reporter les informations de prélèvement, ce qui reporte les informations de livraison des articles. Dans le cas du prélèvement de composantes pour un bon de production, le report du prélèvement reporte également la consommation.
 
@@ -51,4 +51,4 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

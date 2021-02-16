@@ -11,15 +11,15 @@ ms.workload: na
 ms.search.keywords: warehouse, stock
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 1d1eb5a29a1e83b3dad454426327f03786b8f644
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 3fa97eb12cc7343c1cfb659736ed6ad6b43d0633
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3921777"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4755477"
 ---
 # <a name="inventory"></a>Stocks
-Pour chaque produit physique que vous commercialisez, vous devez créer une fiche article de type **Stock** . Les articles que vous proposez aux clients, mais que vous n'avez pas en inventaire, peuvent être enregistrés comme articles de catalogue. Vous pouvez ensuite les convertir en articles d'inventaire, le cas échéant. Vous pouvez augmenter ou diminuer la quantité d'un article en inventaire en reportant directement les écritures de l'article, par exemple, après un comptage physique ou si vous n'enregistrez pas les achats.
+Pour chaque produit physique que vous commercialisez, vous devez créer une fiche article de type **Stock**. Les articles que vous proposez aux clients, mais que vous n'avez pas en inventaire, peuvent être enregistrés comme articles de catalogue. Vous pouvez ensuite les convertir en articles d'inventaire, le cas échéant. Vous pouvez augmenter ou diminuer la quantité d'un article en inventaire en reportant directement les écritures de l'article, par exemple, après un comptage physique ou si vous n'enregistrez pas les achats.
 
 Les augmentations et diminutions d'inventaire sont également évidemment enregistrées lorsque vous reportez des documents achat et vente, respectivement. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md), [Vendre des produits](sales-how-sell-products.md) et  [Facturer des ventes](sales-how-invoice-sales.md). Les transferts entre emplacements modifient les quantités dans l'inventaire dans tous les entrepôts de votre compagnie.   
 
@@ -33,16 +33,20 @@ La planification d'articles pour répondre à la demande est couverte dans le ca
 ## <a name="inventory-reconciliation"></a>Rapprochement inventaire
 Lorsque vous reportez des transactions inventaire, tels que des livraisons vente, des factures achat ou des ajustements inventaire, les coûts article modifiés sont enregistrés dans les écritures valeur article. Pour refléter ces modifications de la valeur inventaire dans vos livres financiers, les coûts inventaire sont automatiquement reportés dans les comptes inventaire associés dans le grand livre. Pour chaque transaction inventaire que vous reportez, les valeurs appropriées sont reportées dans le compte inventaire, le compte ajustement et le compte variation inventaire dans le grand livre. Pour plus d'informations, voir [Rapprocher les coûts de l'inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md).
 
-Bien que les coûts inventaire soient automatiquement reportés dans le grand livre, il est malgré tout nécessaire de vous assurer que les coûts des biens sont transmis à la transaction de vente sortante associée, notamment dans les situations où vous vendez des biens avant de facturer l'achat. Il s'agit d'un ajustement des coûts. Le coût des articles est ajusté automatiquement lorsque vous reportez des transactions article, mais vous pouvez également les ajuster manuellement. Pour en savoir plus, voir [Ajuster coûts article](inventory-how-adjust-item-costs.md).
+Bien que les coûts inventaire soient automatiquement reportés dans le grand livre, il est malgré tout nécessaire de vous assurer que les coûts des biens sont transmis à la transaction de vente sortante associée, notamment dans les situations où vous vendez des biens avant de facturer l'achat. Il s'agit d'un ajustement des coûts. Le coût des articles est ajusté automatiquement lorsque vous reportez des transactions article, mais vous pouvez également les ajuster manuellement. Pour en savoir plus, voir [Ajuster coûts article](inventory-how-adjust-item-costs.md).  
 
-|À |Voir |
+## <a name="related-tasks"></a>Tâches connexes
+
+Le tableau suivant présente les tâches associées.
+
+|Pour |Voir |
 |---|----|
 |Créer des fiches article pour les articles en inventaire que vous commercialisez.|[Enregistrer de nouveaux articles](inventory-how-register-new-items.md)|
 |Structurez les articles parents que vous vendez sous forme de kits constitués des composants du parent ou que vous assemblez pour commande ou stock.|[Utiliser les nomenclatures](inventory-how-work-BOMs.md)|
 |Conservez un aperçu des articles et simplifiez la recherche et le tri des articles en les organisant par catégorie.|[Catégoriser des articles](inventory-how-categorize-items.md)|
 |Affecter des attributs de différents types de valeurs à vos articles pour vous aider à les trier et à les rechercher.|[Utiliser les attributs d'article](inventory-how-work-item-attributes.md)|
 |Créez des fiches article spéciales pour les articles que vous proposez aux clients, mais que vous ne stockez pas dans l'inventaire.|[Utiliser des articles de catalogue](inventory-how-work-nonstock-items.md)|
-|Exécutez le décompte physique de votre inventaire avec les pages **Commande inventaire physique** et **Enregistrement inventaire physique** .|[Faire l'inventaire à l'aide de documents](inventory-how-count-inventory-with-documents.md)|
+|Exécutez le décompte physique de votre inventaire avec les pages **Commande inventaire physique** et **Enregistrement inventaire physique**.|[Faire l'inventaire à l'aide de documents](inventory-how-count-inventory-with-documents.md)|
 |Effectuer un inventaire physique, faire des ajustements négatifs ou positifs, et modifier des informations, telles que l'emplacement ou le numéro de lot, sur des écritures article.|[Comptabiliser, ajuster et reclasser l'inventaire avec les journaux](inventory-how-count-adjust-reclassify.md)|
 |Afficher la disponibilité des articles par emplacement, par période, par événement de vente ou d'achat, ou encore en fonction de leur utilisation dans les nomenclatures d'assemblage ou de production.|[Voir la disponibilité des articles](inventory-how-availability-overview.md)|
 |Transférez des articles en inventaire entre des emplacements avec des ordres de transfert pour gérer les activités entrepôt ou avec le journal reclassement article.|[Transfert d'inventaire entre des emplacements](inventory-how-transfer-between-locations.md)|
@@ -53,14 +57,14 @@ Bien que les coûts inventaire soient automatiquement reportés dans le grand li
 |Rechercher où un numéro de série ou de lot a été utilisé dans sa chaîne d'approvisionnement, par exemple dans les situations de rappel.|[Tracer des articles - Articles suivis](inventory-how-to-trace-item-tracked-items.md)|
 |Bloquez des articles pour empêcher leur saisie dans des lignes vente ou achat, ou leur report dans n'importe quelle transaction.|[Bloquer les articles](inventory-how-block-items.md)|
 |Gérez les opérations commerciales dans les bureaux de vente, les départements d'achat ou les bureaux de planification d'usine pour plusieurs emplacements.|[Utiliser les centres de gestion](inventory-responsibility-centers.md)|
+|Utilisez des ressources avec des compétences spécifiques pour divers services et éléments de service.|[Configurer l'affectation des ressources](service-how-setup-resource-allocation.md)|
 
+## <a name="see-also"></a>Voir aussi
 
-
-## <a name="see-also"></a>Voir aussi  
-[Gestion d'entrepôt](warehouse-manage-warehouse.md)  
+[Gestion d’entrepôt](warehouse-manage-warehouse.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Ventes](sales-manage-sales.md)    
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
-[Fonctionnalités marché](ui-across-business-areas.md)
+[Vente](sales-manage-sales.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Fonctionnalités marché](ui-across-business-areas.md)  
 
-## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
+## [!INCLUDE[prod_short](includes/free_trial_md.md)]  

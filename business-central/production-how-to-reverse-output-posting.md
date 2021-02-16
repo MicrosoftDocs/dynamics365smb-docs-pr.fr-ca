@@ -10,20 +10,20 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: b33b0642d8cee6e26edeeece47c8fceb72c2bfa1
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: ed275469dd172af43ceb96b85d5ac0aa99e96a2f
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3921577"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4759052"
 ---
 # <a name="reverse-output-posting"></a>Inverser un report de production
 Il arrive qu'un report de production doive être inversé. C'est le cas, par exemple, si une erreur de saisie de données a été commise et qu'une quantité de production incorrecte a été reportée sur un bon de production.  
 
 ## <a name="to-reverse-an-output-posting"></a>Pour inverser un report de production  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journal de sortie** , puis sélectionnez le lien associé. Sélectionnez votre lot.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journal de sortie**, puis sélectionnez le lien associé. Sélectionnez votre lot.  
 2. Renseignez les champs selon vos besoins. Pour plus d'informations, voir [Exécuter en lot la production et les temps d'exécution](production-how-to-post-output-quantity.md).
-3.  Dans le champ **Écriture de référence** , sélectionnez l'écriture article associée. Cette opération inverse les écritures capacité et du grand livre d'articles.  
+3.  Dans le champ **Écriture de référence**, sélectionnez l'écriture article associée. Cette opération inverse les écritures capacité et du grand livre d'articles.  
 4. Reportez la contrepassation en reportant le journal.  
 
 Les écritures journal production sont reportées dans le grand livre article comme un ajustement positif.  
@@ -34,4 +34,4 @@ Les écritures journal production sont reportées dans le grand livre article co
  [Planification](production-planning.md)      
  [Inventaire](inventory-manage-inventory.md)  
  [Procédure d'achat](purchasing-manage-purchasing.md)  
- [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+ [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

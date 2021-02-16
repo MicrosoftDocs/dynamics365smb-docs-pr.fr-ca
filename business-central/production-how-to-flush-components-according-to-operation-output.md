@@ -1,6 +1,6 @@
 ---
 title: 'Procédure : consommer des composantes en fonction de la sortie réalisée | Microsoft Docs'
-description: Pour les articles créés avec la méthode de consommation en amont le comportement par défaut est de calculer et de valider la consommation de composants lorsque vous affectez à l'ordre de fabrication lancé le statut **Terminé** . Pour plus d'informations, voir Méthode consommation.
+description: Pour les articles créés avec la méthode de consommation en amont le comportement par défaut est de calculer et de valider la consommation de composants lorsque vous affectez à l'ordre de fabrication lancé le statut **Terminé**. Pour plus d'informations, voir Méthode consommation.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,15 +10,15 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 366c450924367ba70eece30809035895c42a0838
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: f7f6c0c4be56c5f7e25f44063923cfe02e03e4c8
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3921627"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4759302"
 ---
 # <a name="flush-components-according-to-operation-output"></a>Consommer en aval des composantes en fonction de la production réalisée
-Pour les articles créés avec la méthode de consommation en amont le comportement par défaut est de calculer et de valider la consommation de composants lorsque vous affectez à l'ordre de fabrication lancé le statut **Terminé** .  
+Pour les articles créés avec la méthode de consommation en amont le comportement par défaut est de calculer et de valider la consommation de composants lorsque vous affectez à l'ordre de fabrication lancé le statut **Terminé**.  
 
 Si vous définissez également les codes lien itinéraire, le calcul et le report ont lieu lorsque chaque opération est terminée et que la quantité effectivement consommée au cours de l'opération est reportée. Pour plus d'informations, voir [Créer des itinéraires](production-how-to-create-routings.md).  
 
@@ -33,16 +33,16 @@ Cette fonctionnalité est utile pour les motifs suivants :
 La procédure suivante montre comment combiner la consommation en amont et les codes lien itinéraire pour que la quantité consommée par chaque opération soit proportionnelle à la production réelle de cette opération terminée.  
 
 ## <a name="to-flush-components-according-to-operation-output"></a>Pour consommer en aval des composants en fonction de la production réalisée  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles** , puis sélectionnez le lien associé.  
-2.  Choisissez l'action **Modifier** .  
-3.  Sur le raccourci **Réapprovisionnement** , dans le champ **Méthode consommation** , sélectionnez **En aval** .  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.  
+2.  Choisissez l'action **Modifier**.  
+3.  Sur le raccourci **Réapprovisionnement**, dans le champ **Méthode consommation**, sélectionnez **En aval**.  
 
     > [!NOTE]  
     >  Sélectionnez **Prélèvement + Aval** si la composante est utilisée dans un emplacement configuré pour un prélèvement et un rangement suggérés.  
 
-4.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Itinéraires** , puis sélectionnez le lien associé.  
+4.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Itinéraires**, puis sélectionnez le lien associé.  
 5.  Définir les codes lien itinéraire pour chaque opération qui consomme la composante. Pour plus d'informations, voir [Créer des itinéraires](production-how-to-create-routings.md).  
-6.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Nomenclature production** , puis sélectionnez le lien associé.  
+6.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Nomenclature production**, puis sélectionnez le lien associé.  
 7.  Associe aux codes lien itinéraire de chaque instance de la composante l'opération dans laquelle elle est consommée.
 
     > [!IMPORTANT]  
@@ -55,4 +55,4 @@ La procédure suivante montre comment combiner la consommation en amont et les c
 [Planification](production-planning.md)   
 [Inventaire](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

@@ -1,6 +1,6 @@
 ---
 title: Procédure de planification de projets de commandes | Microsoft Docs
-description: Cette tâche de planification est lancée à partir d'un document de vente et utilise la page **Planification document de vente** . Une fois que vous avez créé un bon de production projet, vous pouvez le planifier davantage à l'aide de la page **Planification commande** .
+description: Cette tâche de planification est lancée à partir d'un document de vente et utilise la page **Planification document de vente**. Une fois que vous avez créé un bon de production projet, vous pouvez le planifier davantage à l'aide de la page **Planification commande**.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,29 +10,29 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 09fea87bb1d8606390fe8c0ed5b2e3780dbc4978
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 87f113e1fedc759fc90443fb3d0a4eb0c1aa9233
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3919198"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4759227"
 ---
 # <a name="plan-project-orders"></a>Planifier les O.F. projets
-Cette tâche de planification est lancée à partir d'un document de vente et utilise la page **Planification document de vente** . Une fois que vous avez créé un bon de production projet, vous pouvez le planifier davantage à l'aide de la page **Planification commande** .  
+Cette tâche de planification est lancée à partir d'un document de vente et utilise la page **Planification document de vente**. Une fois que vous avez créé un bon de production projet, vous pouvez le planifier davantage à l'aide de la page **Planification commande**.  
 
 ## <a name="to-create-a-project-production-order"></a>Pour créer un bon de production projet  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente** , puis sélectionnez le lien associé.  
-2.  Sélectionnez le document de vente qui représente le projet de production, puis choisissez l'action **Planification** .  
-4.  Sur la page **Planification document de vente** , choisissez l'action **Créer bon de prod.** .  
-5.  Sur la page **Créer commande à partir des ventes** , sélectionnez **O.F. projet** dans le champ **Type O.F** .  
-6.  Cliquez sur le bouton **Oui** .  
-7.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de production** , puis sélectionnez le lien associé.
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
+2.  Sélectionnez le document de vente qui représente le projet de production, puis choisissez l'action **Planification**.  
+4.  Sur la page **Planification document de vente**, choisissez l'action **Créer bon de prod.**.  
+5.  Sur la page **Créer commande à partir des ventes**, sélectionnez **O.F. projet** dans le champ **Type O.F**.  
+6.  Cliquez sur le bouton **Oui**.  
+7.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de production**, puis sélectionnez le lien associé.
 8. Ouvrez le bon de production que vous venez de créer.  
 
     Notez que le champ **Type origine** de l'ordre de fabrication indique **En-tête vente** et l'ordre comporte plusieurs lignes, une pour chaque article de la ligne vente à produire.  
-9. Sélectionnez l'action **Planification** .
-10. Sur la page **Planification commande** , choisissez l'action **Actualiser** pour calculer la nouvelle demande.  
+9. Sélectionnez l'action **Planification**.
+10. Sur la page **Planification commande**, choisissez l'action **Actualiser** pour calculer la nouvelle demande.  
 
 La ligne d'en-tête de commande de la commande projet s'affiche avec toutes les lignes de demandes non satisfaites développées en-dessous. Bien que le bon de production contienne les lignes de plusieurs articles produits, la demande totale pour toutes les lignes de bon de production est répertoriée sous une ligne d'en-tête de commande sur la page **Planification commande** et le nom du client d'origine s'affiche. Vous pouvez maintenant passer à la planification de la demande en vous reportant à [Planifier de nouvelles demandes commande par commande](production-how-to-plan-for-new-demand.md).  
 
@@ -47,4 +47,4 @@ La ligne d'en-tête de commande de la commande projet s'affiche avec toutes les 
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
 [Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

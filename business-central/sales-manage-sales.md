@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: trade, sell
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: a065585c01d55c35575ef06853b5ef4a7ec8e4f9
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: ed0ce67b1093fae2e0a20d2a2b871681ddff214d
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3910465"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4758052"
 ---
 # <a name="sales"></a>Vente
 Vous créez une facture vente ou un document de vente pour enregistrer votre entente avec un client pour vendre certains produits selon certaines méthodes de livraison et de paiement.
@@ -26,7 +26,7 @@ Vous pouvez négocier avec le client en créant d'abord un devis, que vous pouve
 
 Vous pouvez facilement corriger ou annuler une facture vente reportée avant qu'elle ne soit payée. Cela est utile si vous souhaitez corriger une erreur de saisie, ou si le client demande une modification tôt dans le processus de commande. Si la facture vente reportée est payée, vous devez créer une note de crédit vente ou un retour vente pour inverser la vente.
 
-Les pratiques recommandées en matière de vente et de marketing reposent toutes sur la prise de décisions appropriées au bon moment. La fonctionnalité Marketing de [!INCLUDE[d365fin](includes/d365fin_md.md)] fournit une vue d'ensemble précise et opportune de vos informations de contact afin d'offrir des services à vos prospects de manière plus efficace et d'accroître la satisfaction de la clientèle. Pour plus d'informations, reportez-vous à [Gestion des relations](marketing-relationship-management.md).
+Les pratiques recommandées en matière de vente et de marketing reposent toutes sur la prise de décisions appropriées au bon moment. La fonctionnalité Marketing de [!INCLUDE[prod_short](includes/prod_short.md)] fournit une vue d'ensemble précise et opportune de vos informations de contact afin d'offrir des services à vos prospects de manière plus efficace et d'accroître la satisfaction de la clientèle. Pour plus d'informations, reportez-vous à [Gestion des relations](marketing-relationship-management.md).
 
 Si vous utilisez Dynamics 365 Sales for Customer Engagement, vous pouvez bénéficier de l'intégration parfaite dans le processus allant du prospect à l'encaissement à l'aide de Business Central pour les activités principales, telles que le traitement des commandes, la gestion de l'inventaire et de vos finances. Pour plus d'informations, voir [Utilisation de Dynamics 365 Sales depuis Business Central](marketing-integrate-dynamicscrm.md).
 
@@ -66,7 +66,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
 [Gestion de projets](projects-manage-projects.md)    
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)
 
-## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
+## [!INCLUDE[prod_short](includes/free_trial_md.md)]  

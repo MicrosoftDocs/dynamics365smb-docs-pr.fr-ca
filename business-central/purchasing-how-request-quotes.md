@@ -11,25 +11,25 @@ ms.workload: na
 ms.search.keywords: rfq
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 34a063feaeaef390c9eee8023d42a912a29582f8
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: cff54e778beb1bb08342835419998242eed4adf3
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3918917"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4758477"
 ---
 # <a name="request-quotes"></a>Demander des devis
 Vous pouvez utiliser un devis en tant que phase préliminaire d'un bon de commande, et convertir cette commande en facture achat ou en bon de commande.
 
 
 ## <a name="to-create-a-purchase-quote"></a>Pour créer un devis d'achat
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Devis achat** , puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Devis achat**, puis sélectionnez le lien associé.
 2. Créez un document, de la même manière que vous créez un bon de commande. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 
 ## <a name="to-convert-a-purchase-quote-to-a-purchase-order"></a>Pour convertir un devis en bon de commande
 Lorsque vous avez accepté le devis du fournisseur, vous pouvez le convertir en facture achat ou en commande pour procéder à l'achat.
 
-1. Ouvrez un devis d'achat qui est prêt à être converti, puis sélectionnez l'action **Créer commande** .
+1. Ouvrez un devis d'achat qui est prêt à être converti, puis sélectionnez l'action **Créer commande**.
 
 Le devis d'achat est supprimé de la base de données. Une facture achat ou un bon de commande basé sur les informations du devis et dans lequel vous pouvez traiter l'achat est créé. Dans le champ **N° devis** de la facture achat ou du bon de commande, vous pouvez visualiser le numéro de devis à partir duquel elle a été réalisée.
 
@@ -37,4 +37,4 @@ Le devis d'achat est supprimé de la base de données. Une facture achat ou un b
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Définition des achats](purchasing-setup-purchasing.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

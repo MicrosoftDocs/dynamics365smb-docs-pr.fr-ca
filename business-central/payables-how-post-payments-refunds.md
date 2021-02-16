@@ -10,18 +10,18 @@ ms.workload: na
 ms.search.keywords: payment journal, print check, vendor payment, customer refund, creditor, debt, balance due, AP
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 353b2074edf80ddba705004e62a86e47943a4366
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: b45b4c109d33773ead4e920d5692a615faa7a366
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3916786"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4759602"
 ---
 # <a name="record-payments-and-refunds-in-the-payment-journal"></a>Enregistrer les paiements et remboursements dans le journal paiement
 
-Sur la page **Journal paiement** , vous enregistrez les paiements effectués aux fournisseurs et les remboursements effectués aux clients. Lorsque vous reportez une ligne journal des paiements, le montant payé est enregistré sur le compte bancaire système spécifié. Vous devez ensuite effectuer des actions pour procéder au transfert d'argent réel à partir du compte bancaire associé.  
+Sur la page **Journal paiement**, vous enregistrez les paiements effectués aux fournisseurs et les remboursements effectués aux clients. Lorsque vous reportez une ligne journal des paiements, le montant payé est enregistré sur le compte bancaire système spécifié. Vous devez ensuite effectuer des actions pour procéder au transfert d'argent réel à partir du compte bancaire associé.  
 
-Le journal paiement est un journal général qui est optimisé pour effectuer des paiements. Vous pouvez rapidement ajouter des lignes manuellement, vous pouvez laisser [!INCLUDE[d365fin](includes/d365fin_md.md)] proposer des paiements fournisseur, et vous pouvez affecter le paiement à des documents reportés. Bien que vous effectuiez des paiements, vous entrez un montant positif dans le champ **Montant du document** . Selon le type de document de la ligne journal, ce montant est ensuite converti en montant négatif dans les transactions sous-jacentes. Ainsi, il est plus rapide pour vous d'ajouter des lignes journal manuellement. Si vous préférez saisir des montants négatifs, vous pouvez personnaliser le journal paiement pour afficher le champ **Montant** à la place.  
+Le journal paiement est un journal général qui est optimisé pour effectuer des paiements. Vous pouvez rapidement ajouter des lignes manuellement, vous pouvez laisser [!INCLUDE[prod_short](includes/prod_short.md)] proposer des paiements fournisseur, et vous pouvez affecter le paiement à des documents reportés. Bien que vous effectuiez des paiements, vous entrez un montant positif dans le champ **Montant du document**. Selon le type de document de la ligne journal, ce montant est ensuite converti en montant négatif dans les transactions sous-jacentes. Ainsi, il est plus rapide pour vous d'ajouter des lignes journal manuellement. Si vous préférez saisir des montants négatifs, vous pouvez personnaliser le journal paiement pour afficher le champ **Montant** à la place.  
 
 - Affecter des paiements à des factures ou des notes de crédit
 
@@ -37,16 +37,16 @@ Le journal paiement est un journal général qui est optimisé pour effectuer de
 
 ## <a name="to-make-payments-in-the-payment-journal"></a>Pour effectuer des paiements dans le journal paiement
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux paiement** , puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux paiement**, puis sélectionnez le lien associé.
 2. Ouvrez le lot journal dédié aux paiements.
 3. Si vous savez qui payer ou rembourser, renseignez les champs manuellement. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
-4. Pour affecter également le paiement à la facture ou la note de crédit associée, sélectionnez le champ **N° doc. référence** , sur la page **Affecter écritures fournisseur** , sélectionnez la facture ou la note de crédit appropriée, puis cliquez sur le bouton **OK** .
+4. Pour affecter également le paiement à la facture ou la note de crédit associée, sélectionnez le champ **N° doc. référence**, sur la page **Affecter écritures fournisseur**, sélectionnez la facture ou la note de crédit appropriée, puis cliquez sur le bouton **OK**.
 
-    De nombreux champs, tels que **Montant du document** et **Date d'échéance** , sont maintenant renseignés avec les informations du document sélectionné.
-5. Sinon, utilisez la fonction **Proposer paiements fournisseur** . Tous les montants et informations de référence sont également saisis sur les lignes journal. Pour plus d'informations, reportez vous à [Proposer des paiements fournisseur](payables-how-suggest-vendor-payments.md).
+    De nombreux champs, tels que **Montant du document** et **Date d'échéance**, sont maintenant renseignés avec les informations du document sélectionné.
+5. Sinon, utilisez la fonction **Proposer paiements fournisseur**. Tous les montants et informations de référence sont également saisis sur les lignes journal. Pour plus d'informations, reportez vous à [Proposer des paiements fournisseur](payables-how-suggest-vendor-payments.md).
 
     Les messages vous aident à renseigner correctement les champs obligatoires.
-6.  Lorsque toutes les lignes journal des paiements sont renseignées, cliquez sur **Reporter** .
+6.  Lorsque toutes les lignes journal des paiements sont renseignées, cliquez sur **Reporter**.
 
 ## <a name="see-also"></a>Voir aussi
 [Effectuer des paiements par chèque](payables-how-work-checks.md)  
@@ -56,4 +56,4 @@ Le journal paiement est un journal général qui est optimisé pour effectuer de
 [Exporter un fichier Positive Pay](finance-how-positive-pay.md)  
 [Utilisation de journaux généraux](ui-work-general-journals.md)  
 [Personnaliser votre espace de travail](ui-personalization-user.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
