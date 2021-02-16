@@ -11,24 +11,24 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/01/2020
 ms.author: solsen
-ms.openlocfilehash: fa57a5ecce6553ce9315e4cd205f3367d9664bda
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 06e498444879a9b77b1418c44f4dd39395c8a4b5
+ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3910190"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4756902"
 ---
-# <a name="preview-posting-results"></a><span data-ttu-id="fc832-103">Aperçu des résultats du report</span><span class="sxs-lookup"><span data-stu-id="fc832-103">Preview Posting Results</span></span>
-<span data-ttu-id="fc832-104">Sur chaque document et feuille qui peuvent être validés, vous pouvez cliquer sur le bouton **Aperçu compta.** pour examiner différents types d'entrées qui seront créées lorsque vous validez le document ou la feuille.</span><span class="sxs-lookup"><span data-stu-id="fc832-104">On every document and journal that can be posted, you can choose the **Preview Posting** button to review the different types of entries that will be created when you post the document or journal.</span></span>
+# <a name="preview-posting-results"></a><span data-ttu-id="202b9-103">Aperçu des résultats du report</span><span class="sxs-lookup"><span data-stu-id="202b9-103">Preview Posting Results</span></span>
+<span data-ttu-id="202b9-104">Sur chaque document et feuille qui peuvent être validés, vous pouvez cliquer sur le bouton **Aperçu compta.** pour examiner différents types d'entrées qui seront créées lorsque vous validez le document ou la feuille.</span><span class="sxs-lookup"><span data-stu-id="202b9-104">On every document and journal that can be posted, you can choose the **Preview Posting** button to review the different types of entries that will be created when you post the document or journal.</span></span>
 
-## <a name="to-preview-gl-entries-that-will-result-from-posting-a-purchase-invoice"></a><span data-ttu-id="fc832-105">Pour afficher un aperçu des écritures qui résulteront du report d'une facture achat</span><span class="sxs-lookup"><span data-stu-id="fc832-105">To preview G/L entries that will result from posting a purchase invoice</span></span>
-1. <span data-ttu-id="fc832-106">Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures achat** , puis sélectionnez le lien associé.</span><span class="sxs-lookup"><span data-stu-id="fc832-106">Choose the ![Lightbulb that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Purchase Invoices** , and then choose the related link.</span></span>
-2. <span data-ttu-id="fc832-107">Créez une facture achat.</span><span class="sxs-lookup"><span data-stu-id="fc832-107">Create a purchase invoice.</span></span> <span data-ttu-id="fc832-108">Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).</span><span class="sxs-lookup"><span data-stu-id="fc832-108">For more information, see [Record Purchases](purchasing-how-record-purchases.md).</span></span>
-3. <span data-ttu-id="fc832-109">Sélectionnez **Aperçu compta.** .</span><span class="sxs-lookup"><span data-stu-id="fc832-109">Choose **Preview Posting** .</span></span>
-4. <span data-ttu-id="fc832-110">Sur la page **Aperçu report** , sélectionnez **Écriture** , puis sélectionnez **Afficher écritures associées** .</span><span class="sxs-lookup"><span data-stu-id="fc832-110">On the **Posting Preview** page, select **G/L Entry** , and then choose **Show Related Entries** .</span></span>  
-   <span data-ttu-id="fc832-111">La page **Aperçu des écritures** affiche les écritures qui seront créées lorsque vous reportez la facture achat.</span><span class="sxs-lookup"><span data-stu-id="fc832-111">The **G/L Entries Preview** page shows which entries will be created when you post the purchase invoice.</span></span>
+## <a name="to-preview-gl-entries-that-will-result-from-posting-a-purchase-invoice"></a><span data-ttu-id="202b9-105">Pour afficher un aperçu des écritures qui résulteront du report d'une facture achat</span><span class="sxs-lookup"><span data-stu-id="202b9-105">To preview G/L entries that will result from posting a purchase invoice</span></span>
+1. <span data-ttu-id="202b9-106">Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures achat**, puis sélectionnez le lien associé.</span><span class="sxs-lookup"><span data-stu-id="202b9-106">Choose the ![Lightbulb that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Purchase Invoices**, and then choose the related link.</span></span>
+2. <span data-ttu-id="202b9-107">Créez une facture achat.</span><span class="sxs-lookup"><span data-stu-id="202b9-107">Create a purchase invoice.</span></span> <span data-ttu-id="202b9-108">Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).</span><span class="sxs-lookup"><span data-stu-id="202b9-108">For more information, see [Record Purchases](purchasing-how-record-purchases.md).</span></span>
+3. <span data-ttu-id="202b9-109">Sélectionnez **Aperçu compta.**.</span><span class="sxs-lookup"><span data-stu-id="202b9-109">Choose **Preview Posting**.</span></span>
+4. <span data-ttu-id="202b9-110">Sur la page **Aperçu report**, sélectionnez **Écriture**, puis sélectionnez **Afficher écritures associées**.</span><span class="sxs-lookup"><span data-stu-id="202b9-110">On the **Posting Preview** page, select **G/L Entry**, and then choose **Show Related Entries**.</span></span>  
+   <span data-ttu-id="202b9-111">La page **Aperçu des écritures** affiche les écritures qui seront créées lorsque vous reportez la facture achat.</span><span class="sxs-lookup"><span data-stu-id="202b9-111">The **G/L Entries Preview** page shows which entries will be created when you post the purchase invoice.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="fc832-112">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="fc832-112">See Also</span></span>
-[<span data-ttu-id="fc832-113">Validation des documents et des feuilles</span><span class="sxs-lookup"><span data-stu-id="fc832-113">Posting Documents and Journals</span></span>](ui-post-documents-journals.md)  
-<span data-ttu-id="fc832-114">[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="fc832-114">[Working with [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)</span></span>  
-[<span data-ttu-id="fc832-115">Fonctionnalités marché</span><span class="sxs-lookup"><span data-stu-id="fc832-115">General Business Functionality</span></span>](ui-across-business-areas.md)
+## <a name="see-also"></a><span data-ttu-id="202b9-112">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="202b9-112">See Also</span></span>
+[<span data-ttu-id="202b9-113">Validation des documents et des feuilles</span><span class="sxs-lookup"><span data-stu-id="202b9-113">Posting Documents and Journals</span></span>](ui-post-documents-journals.md)  
+<span data-ttu-id="202b9-114">[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="202b9-114">[Working with [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)</span></span>  
+[<span data-ttu-id="202b9-115">Fonctionnalités marché</span><span class="sxs-lookup"><span data-stu-id="202b9-115">General Business Functionality</span></span>](ui-across-business-areas.md)
