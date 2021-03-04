@@ -62,3 +62,6 @@ L'adresse de courriel du contact est maintenant insérée sur la ligne de prése
 [Gestion des présentations de rapport](ui-manage-report-layouts.md)  
 [Utilisation des rapports, des traitements en lot et des objets XMLport](ui-work-report.md)  
 [Utilisation des rapports, des traitements en lot et des objets XMLport](ui-work-report.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

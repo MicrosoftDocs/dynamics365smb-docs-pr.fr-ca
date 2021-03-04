@@ -41,3 +41,6 @@ La procédure suivante explique comment restreindre le report de bons de command
 ## <a name="see-also"></a>Voir aussi  
 [Créer des workflows](across-how-to-create-workflows.md)   
 [Flux de travail](across-workflow.md)   
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

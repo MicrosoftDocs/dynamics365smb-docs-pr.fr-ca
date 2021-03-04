@@ -29,3 +29,6 @@ Une fois la connexion configurée, vous pouvez migrer les données ou gérer les
 [Informations intelligentes](about-intelligent-cloud.md)  
 [Exécution de l’outil de migration vers le nuage](/dynamics365/business-central/dev-itpro/administration/migration-tool)  
 [Extensions Nuage intelligent pour la migration vers le nuage](ui-extensions-data-replication.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

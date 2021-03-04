@@ -85,3 +85,6 @@ La procédure d'annulation d'une livraison retour reportée d'articles ou de res
 [Utilisation de journaux généraux](ui-work-general-journals.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

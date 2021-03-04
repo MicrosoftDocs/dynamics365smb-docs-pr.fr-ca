@@ -50,3 +50,6 @@ Pour reporter les coûts d'entretien, vous devez tout d'abord saisir un numéro 
 [Finance](finance.md)  
 [Mise en route](product-get-started.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

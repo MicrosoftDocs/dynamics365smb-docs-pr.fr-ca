@@ -182,3 +182,6 @@ L'inventaire TEC peut être réévalué tant que la date de réévaluation n'est
  [Détails de conception : Évaluation de l'inventaire](design-details-inventory-valuation.md) [Gestion des coûts inventaire](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
  [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

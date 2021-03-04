@@ -74,3 +74,6 @@ Versions d'évaluation et abonnements [[!INCLUDE[prod_long](includes/prod_long.m
 [Ressources pour l'aide et l'assistance technique](product-help-and-support.md)  
 
 ## [!INCLUDE[prod_short](includes/free_trial_md.md)]  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Dans la page **Paramètres du rapport** , vous pouvez :
 
 ## <a name="see-also"></a>Voir aussi
 [Utilisation des rapports, des traitements en lot et des objets XMLport](ui-work-report.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Vous pouvez importer et exporter une présentation de rapport personnalisée exi
  [Créer et modifier une présentation de rapport personnalisée](ui-how-create-custom-report-layout.md)   
  [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md)  
  [Utilisation des rapports, des traitements en lot et des objets XMLport](ui-work-report.md)    
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Après avoir configuré les modalités de paiement, affectez-les aux clients et 
 [Enregistrer de nouveaux fournisseurs](purchasing-how-register-new-vendors.md)  
 [Vente](sales-manage-sales.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

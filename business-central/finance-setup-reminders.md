@@ -103,3 +103,6 @@ Si vous avez configuré les modalités de rappel (avec des niveaux et du texte s
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
 [Configurer les modalités de frais financiers](finance-setup-finance-charges.md)  
 [Configuration de Finance](finance-setup-finance.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Avant de commencer, vérifiez que vous utilisez la page Tableau de bord Administ
 [Appliquer des configurations à de nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

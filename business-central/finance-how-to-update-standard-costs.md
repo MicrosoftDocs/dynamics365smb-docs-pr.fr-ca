@@ -47,3 +47,6 @@ Pour plus d'informations, voir [À propos du calcul des coûts standard](finance
  [Gestion des coûts inventaire](finance-manage-inventory-costs.md)   
  [Détails de conception : modes évaluation stock](design-details-costing-methods.md) [Finance](finance.md)  
  [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

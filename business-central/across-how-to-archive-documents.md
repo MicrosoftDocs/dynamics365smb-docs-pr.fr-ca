@@ -66,3 +66,6 @@ La procédure suivante décrit comment supprimer des documents de vente archivé
 [Vente](sales-manage-sales.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

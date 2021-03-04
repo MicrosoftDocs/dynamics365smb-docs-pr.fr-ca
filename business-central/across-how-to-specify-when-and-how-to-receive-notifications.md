@@ -66,3 +66,6 @@ Lorsque vous configurez des utilisateurs dans des flux de travail d'approbation,
  [Configuration de notifications de workflow](across-setting-up-workflow-notifications.md)   
  [Paramétrage des workflows](across-set-up-workflows.md)   
  [Utilisation des workflows](across-use-workflows.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

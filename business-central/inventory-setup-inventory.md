@@ -49,3 +49,6 @@ Lorsque vous avez configuré votre inventaire, vous pouvez gérer différents pr
 [Gestion des ventes](sales-manage-sales.md)    
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

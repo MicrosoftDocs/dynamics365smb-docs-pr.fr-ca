@@ -31,3 +31,6 @@ Les informations sur les taxes dans les documents achat permettent de générer 
 [Configuration de Finance](../../finance-setup-finance.md)  
 [Déclaration de la taxe de vente au Canada](ca-sales-tax.md)  
 [Utilisation de [!INCLUDE[prod_short](../../includes/prod_short.md)]](../../ui-work-product.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

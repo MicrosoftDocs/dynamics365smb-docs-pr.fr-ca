@@ -91,3 +91,6 @@ Vous ou l'administrateur pouvez également utiliser la page **Sélections d'impr
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Exécuter des traitements en lot](ui-how-run-batch-jobs.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

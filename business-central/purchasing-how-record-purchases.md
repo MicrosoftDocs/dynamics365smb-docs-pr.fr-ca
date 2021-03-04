@@ -100,3 +100,6 @@ L'achat est désormais visible dans l'inventaire, les livres ressource et les en
 [Enregistrer de nouveaux fournisseurs](purchasing-how-register-new-vendors.md)  
 [Préparer des livraisons directes](sales-how-drop-shipment.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Pour plus d'informations sur la manière d'utiliser l'une ou l'autre présentati
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Utilisation des rapports, des traitements en lot et des objets XMLport](ui-work-report.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

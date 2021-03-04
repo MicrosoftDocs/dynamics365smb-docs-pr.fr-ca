@@ -61,3 +61,6 @@ Vous pouvez utiliser des adresses de livraison secondaires pour conserver un his
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Modifier les fonctionnalités affichées](ui-experiences.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

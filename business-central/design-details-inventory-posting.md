@@ -135,3 +135,6 @@ Pour plus d'informations, voir [Détails de conception : modes évaluation stoc
  [Détails de conception : Composantes des coûts](design-details-cost-components.md) [Gestion des coûts inventaire](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
  [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

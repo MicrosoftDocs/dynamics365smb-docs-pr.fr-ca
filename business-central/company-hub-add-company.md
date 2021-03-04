@@ -47,3 +47,6 @@ Lorsque vous avez ajouté vos environnements, vos compagnies s’affichent autom
 
 [Gérer le travail entre plusieurs compagnies dans le Hub Entreprise](company-hub.md)  
 [Ressources pour l'aide et l'assistance technique](product-help-and-support.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -54,3 +54,6 @@ La livraison vente reportée est mise à jour.
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Validation des documents et des feuilles](ui-post-documents-journals.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

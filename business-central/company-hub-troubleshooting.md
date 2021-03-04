@@ -50,3 +50,6 @@ Si vous avez ajouté une compagnie, mais qu’elle ne s’affiche pas dans la li
 [Gérer le travail entre plusieurs compagnies dans le Hub Entreprise](company-hub.md)  
 [Ajouter des compagnies à votre Hub Entreprise](company-hub-add-company.md)  
 [Expériences de comptables dans Business Central](finance-accounting.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

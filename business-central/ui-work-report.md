@@ -163,3 +163,6 @@ Les champs sous **Avancé** définissent des limites sur le rapport généré po
 [Utilisation de dates civiles et les heures](ui-enter-date-ranges.md)  
 [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

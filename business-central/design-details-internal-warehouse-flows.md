@@ -118,3 +118,6 @@ Circulation des articles entre les zones dans les centres d'une compagnie lors d
 
 ## <a name="see-also"></a>Voir aussi  
  [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

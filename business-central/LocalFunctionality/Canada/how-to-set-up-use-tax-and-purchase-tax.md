@@ -27,3 +27,6 @@ ms.locfileid: "3931345"
 [Déclaration de la taxe de vente au Canada](ca-sales-tax.md)  
 [Finance](../../finance.md)  
 [Configuration de Finance](../../finance.md)  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

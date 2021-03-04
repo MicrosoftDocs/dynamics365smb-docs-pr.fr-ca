@@ -93,3 +93,6 @@ Pour plus d’informations, voir [Pour configurer le report en arrière-plan ave
 [Configuration de Business Central](setup.md)  
 [Modifier les paramètres de base](ui-change-basic-settings.md)  
 [Analyse de la télémétrie de suivi du cycle de vie de la file d'attente des travaux](/dynamics365smb-devitpro\dev-itpro\administration\telemetry-job-queue-lifecycle-trace)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

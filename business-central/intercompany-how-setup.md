@@ -146,3 +146,6 @@ Dans les étapes suivantes, vous devez d’abord mapper les dimensions intercomp
 [Configuration de Finance](finance-setup-finance.md)  
 [Utilisation de journaux généraux](ui-work-general-journals.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

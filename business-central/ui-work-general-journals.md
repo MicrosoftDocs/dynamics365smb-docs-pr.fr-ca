@@ -210,3 +210,6 @@ Les valeurs dans le champ **N° document** sont modifiées, le cas échéant, po
 [Rapprocher les paiements clients avec le journal des encaissements ou les écritures client](receivables-how-apply-sales-transactions-manually.md)  
 [Rapprocher des paiements fournisseur avec le journal paiement ou à partir des écritures fournisseur](payables-how-apply-purchase-transactions-manually.md)  
 [Utiliser les documents et les journaux intersociétés](intercompany-how-work-documents-journals.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

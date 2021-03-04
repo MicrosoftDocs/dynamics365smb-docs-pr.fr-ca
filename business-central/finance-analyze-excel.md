@@ -56,3 +56,6 @@ Le complément vous permet d'obtenir des données actualisées à partir de [!IN
 [Configuration de Finance](finance-setup-finance.md)  
 [Le grand livre et le plan comptable](finance-general-ledger.md)  
 [Utilisation de Business Central](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

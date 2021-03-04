@@ -41,3 +41,6 @@ L'évaluation des coûts d'inventaire, ou gestion des coûts, se charge de l'enr
 [Détails de conception : comptes de la comptabilité](design-details-accounts-in-the-general-ledger.md)  
 [Détails de conception : évaluation de l'inventaire](design-details-inventory-valuation.md)  
 [Détails de conception : réévaluation](design-details-revaluation.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

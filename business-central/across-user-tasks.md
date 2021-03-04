@@ -48,3 +48,6 @@ Si vous souhaitez supprimer en bloc toutes les tâches utilisateur en uniquement
 
 [Recherche d'une page ou d'un rapport](ui-search.md)  
 [Expériences de comptable dans [!INCLUDE[prod_short](includes/prod_short.md)]](finance-accounting.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

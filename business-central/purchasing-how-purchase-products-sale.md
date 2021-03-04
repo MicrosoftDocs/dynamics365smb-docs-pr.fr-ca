@@ -70,3 +70,6 @@ Pour créer une facture achat unique pour une ou plusieurs lignes d'un document 
 [Facturer des ventes](sales-how-invoice-sales.md)  
 [Enregistrer de nouveaux fournisseurs](purchasing-how-register-new-vendors.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

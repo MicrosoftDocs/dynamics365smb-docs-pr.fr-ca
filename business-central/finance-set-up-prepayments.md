@@ -94,3 +94,6 @@ Autrement dit, le pourcentage de paiement anticipé figurant dans la fiche clien
 [Familiarisation avec le grand livre et les COA](finance-general-ledger.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

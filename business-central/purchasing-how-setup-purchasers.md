@@ -38,3 +38,6 @@ Si plusieurs acheteurs travaillent dans votre compagnie, vous pouvez les configu
 [Définition des achats](purchasing-setup-purchasing.md)  
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

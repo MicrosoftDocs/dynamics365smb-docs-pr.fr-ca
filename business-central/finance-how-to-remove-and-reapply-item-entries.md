@@ -78,3 +78,6 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
  [Gestion des coûts inventaire](finance-manage-inventory-costs.md)   
  [Détails de conception : Affectation article](design-details-item-application.md)  
  [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

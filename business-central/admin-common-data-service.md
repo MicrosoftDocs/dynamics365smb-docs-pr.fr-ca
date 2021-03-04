@@ -67,3 +67,6 @@ Lors de la configuration de la connexion, les mappages de table d'intégration n
 
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

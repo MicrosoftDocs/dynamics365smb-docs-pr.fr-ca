@@ -45,3 +45,6 @@ Au Canada, lorsque vous vendez à un client dans un lieu où vous n'avez pas de 
 [Taxe sur les ventes et taxe sur les biens et les services au Canada](sales-tax-goods-services.md)  
 [Configurer la taxe de vente - Regarder une vidéo](https://www.youtube.com/watch?v=qMs4BoSytN8&index=13&list=PLcakwueIHoT8K1m148oMqo7amR2a7Bz-8)  
 [Utilisation de [!INCLUDE[prod_short](../../includes/prod_short.md)]](../../ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

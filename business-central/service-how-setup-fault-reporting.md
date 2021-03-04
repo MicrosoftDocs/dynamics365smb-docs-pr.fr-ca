@@ -47,3 +47,6 @@ Pour terminer la configuration du rapport panne, vous pouvez également spécifi
 ## <a name="see-also"></a>Voir aussi
 [Paramétrage de la gestion des services](service-setup-service.md)  
 [Gestion des services](service-service.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

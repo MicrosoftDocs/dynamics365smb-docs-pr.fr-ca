@@ -30,3 +30,5 @@ Vous pouvez configurer des instructions de dépannage qui aident les techniciens
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion des services](service-service.md)
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

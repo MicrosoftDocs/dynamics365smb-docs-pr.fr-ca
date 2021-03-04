@@ -24,3 +24,6 @@ Cette documentation fournit une analyse technique détaillée des concepts et pr
 [Aperçu des écritures d'ensemble de dimensions](design-details-dimension-set-entries-overview.md)  
 [Détails de conception : recherche des combinaisons de dimensions](design-details-searching-for-dimension-combinations.md)  
 [Détails de conception : structure de la table](design-details-table-structure.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

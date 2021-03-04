@@ -49,3 +49,6 @@ Vous avez désormais configuré la compagnie, et des données lui ont été affe
 [Appliquer des configurations à de nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

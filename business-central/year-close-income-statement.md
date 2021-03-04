@@ -40,3 +40,6 @@ Le traitement par lots **Solder les comptes de gestion** peut être utilisé à 
 [Reporter l'écriture de fermeture d'exercice](year-how-post-year-end-close-entry.md)  
 [Utiliser des périodes et exercices financiers comptables](finance-accounting-periods-and-fiscal-years.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

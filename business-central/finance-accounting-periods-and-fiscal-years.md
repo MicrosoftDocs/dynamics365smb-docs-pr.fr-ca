@@ -70,3 +70,6 @@ Même si un exercice financier est fermé, vous pouvez toujours y reporter des �
 [Fermeture des registres](year-close-books.md)  
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
 [Procédure d'utilisation des tableaux d'analyse](bi-how-work-account-schedule.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

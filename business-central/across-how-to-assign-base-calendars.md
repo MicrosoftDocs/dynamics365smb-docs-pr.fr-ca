@@ -117,3 +117,6 @@ Les calendriers principaux sont affectés à votre propre compagnie, à vos clie
 [Production](production-manage-manufacturing.md)    
 [Inventaire](inventory-manage-inventory.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

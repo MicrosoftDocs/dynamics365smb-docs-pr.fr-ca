@@ -38,3 +38,6 @@ Le devis d'achat est supprimé de la base de données. Une facture achat ou un b
 [Définition des achats](purchasing-setup-purchasing.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

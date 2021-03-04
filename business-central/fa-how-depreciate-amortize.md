@@ -112,3 +112,6 @@ Les lignes copiées sont créées dans le journal GL immobilisation ou le journa
 [Paramétrage d'immobilisations](fa-setup.md)  
 [Finance](finance.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

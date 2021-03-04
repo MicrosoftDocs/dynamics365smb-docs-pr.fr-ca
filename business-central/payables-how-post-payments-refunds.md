@@ -57,3 +57,6 @@ Le journal paiement est un journal général qui est optimisé pour effectuer de
 [Utilisation de journaux généraux](ui-work-general-journals.md)  
 [Personnaliser votre espace de travail](ui-personalization-user.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

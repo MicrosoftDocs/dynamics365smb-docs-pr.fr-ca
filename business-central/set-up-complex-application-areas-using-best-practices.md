@@ -35,3 +35,6 @@ Il est important d'entrer des valeurs de configuration correctes dès le début 
 
 ## [!INCLUDE[prod_short](includes/free_trial_md.md)]  
  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

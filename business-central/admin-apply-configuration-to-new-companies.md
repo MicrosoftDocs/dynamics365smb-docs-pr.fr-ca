@@ -33,3 +33,6 @@ Après avoir créé un colis configuration, l’étape suivante consiste à dép
 ## <a name="see-also"></a>Voir aussi  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

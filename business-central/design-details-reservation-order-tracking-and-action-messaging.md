@@ -233,3 +233,6 @@ Sur la page **Configuration de la fabrication**, le champ **Composantes à l'emp
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : concepts centraux du système de planification](design-details-central-concepts-of-the-planning-system.md)   
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

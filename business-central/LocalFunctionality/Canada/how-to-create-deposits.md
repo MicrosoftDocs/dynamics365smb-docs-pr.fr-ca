@@ -26,3 +26,6 @@ ms.locfileid: "3931351"
 [Fonctionnalités locales Canada](canada-local-functionality.md)  
 [Finance](../../finance.md)  
 [Configuration de Finance](../../finance.md)  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

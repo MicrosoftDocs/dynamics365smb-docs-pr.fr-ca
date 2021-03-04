@@ -127,3 +127,6 @@ Si aucun prix spécial ne peut être calculé pour l'article de la ligne, alors 
 [Définition des achats](purchasing-setup-purchasing.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

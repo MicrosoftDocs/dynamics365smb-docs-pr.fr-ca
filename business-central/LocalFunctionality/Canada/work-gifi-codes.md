@@ -66,3 +66,6 @@ Vous pouvez exporter les informations de solde à l'aide de codes IGRF et enregi
 [Fonctionnalités locales Canada](canada-local-functionality.md)  
 [Finance](../../finance.md)   
 [Configuration de Finance](../../finance.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

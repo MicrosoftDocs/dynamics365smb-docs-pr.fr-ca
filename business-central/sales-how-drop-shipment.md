@@ -81,3 +81,6 @@ Lorsque le fournisseur a livré les articles, vous pouvez reporter le document d
 [Vente](sales-manage-sales.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -365,3 +365,6 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)  
 [Détails de conception : Affectation article](design-details-item-application.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

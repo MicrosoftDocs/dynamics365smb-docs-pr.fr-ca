@@ -63,3 +63,6 @@ Vous pouvez configurer des tablettes de service qui identifient l'emplacement de
 ## <a name="see-also"></a>Voir aussi
 [Configurer des codes prestations standards](service-how-setup-service-coding.md)   
 [Configurer le dépannage](service-how-setup-troubleshooting.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -50,3 +50,6 @@ L'icône de signet ne s'affiche pas dans la fenêtre Tell Me lorsque la personna
 [Recherche de pages et d'informations avec Tell Me](ui-search.md)  
 [Recherche de pages avec l'explorateur de rôles](ui-role-explorer.md)  
 [Ajouter un signet à une page ou à un rapport sur votre tableau de bord](ui-bookmarks.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

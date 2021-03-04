@@ -36,3 +36,6 @@ Vous pouvez programmer l'exécution d'un traitement en lot. Pour plus d'informat
 [Tri, recherche et filtrage de listes](ui-enter-criteria-filters.md)  
 [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

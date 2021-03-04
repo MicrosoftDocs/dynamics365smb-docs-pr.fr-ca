@@ -132,3 +132,6 @@ La procédure suivante décrit le report de la livraison directement à partir d
 ## <a name="see-also"></a>Voir aussi  
 [Report dans la Gestion des services](service-service-posting.md)  
 [Créer une commande service](service-how-to-create-service-orders.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

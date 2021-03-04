@@ -55,3 +55,6 @@ Le champ **Importer l'état** est mis à jour pour montrer si l'importation de l
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Vente](sales-manage-sales.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

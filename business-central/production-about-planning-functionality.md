@@ -170,3 +170,6 @@ Pour plus d'informations sur la planification à l'aide d'emplacements et de tra
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

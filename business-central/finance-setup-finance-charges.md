@@ -73,3 +73,6 @@ En outre, chaque modalité de la table Modalités de frais financiers est lié �
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
 [Configurer les niveaux et modalités de rappel](finance-setup-reminders.md)  
 [Configuration de Finance](finance-setup-finance.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

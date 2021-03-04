@@ -47,3 +47,6 @@ Vous pouvez ventiler une écriture dans un journal général dans différents co
 [Utilisation de journaux généraux](ui-work-general-journals.md)  
 [Validation des documents et des feuilles](ui-post-documents-journals.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

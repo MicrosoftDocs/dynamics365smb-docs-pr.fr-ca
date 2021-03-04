@@ -151,3 +151,6 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : affectation article](design-details-item-application.md)   
 [Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -197,3 +197,6 @@ La base de données de la compagnie du client est maintenant configurée et les 
 ## <a name="see-also"></a>Voir aussi  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

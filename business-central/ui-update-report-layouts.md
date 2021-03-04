@@ -67,3 +67,6 @@ Une fois que vous avez modifié la présentation, essayez de mettre de nouveau �
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des présentations de rapport](ui-manage-report-layouts.md)  
  [Utilisation des rapports, des traitements en lot et des objets XMLport](ui-work-report.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

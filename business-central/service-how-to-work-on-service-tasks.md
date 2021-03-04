@@ -107,3 +107,6 @@ Après avoir réparé un article de service, vous pouvez enregistrer le code pan
 [Configurer le rapport de panne](service-how-setup-fault-reporting.md)
 [État affectation et état réparation](service-allocation-status-and-repair-status.md)  
 [Validation de service](service-service-posting.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

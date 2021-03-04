@@ -85,3 +85,6 @@ Pour chaque registre amortissement, vous définissez une configuration par défa
 [Finance](finance.md)  
 [Mise en route](product-get-started.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

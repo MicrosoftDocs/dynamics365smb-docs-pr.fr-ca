@@ -110,3 +110,6 @@ Les écritures d'entrepôt sont créées, et les lignes de stockage en entrepôt
 
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

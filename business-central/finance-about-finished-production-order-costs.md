@@ -24,3 +24,6 @@ L'achèvement du bon de production est une tâche importante dans l'évaluation 
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Production](production-manage-manufacturing.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

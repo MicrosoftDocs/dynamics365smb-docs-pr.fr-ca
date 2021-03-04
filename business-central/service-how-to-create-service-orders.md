@@ -110,3 +110,6 @@ Les commandes de service ne sont pas supprimées automatiquement, cependant, si 
 [Paramétrage de la gestion des services](service-setup-service.md)  
 [Travailler sur des tâches service](service-how-to-work-on-service-tasks.md)  
 [Affecter des ressources](service-how-to-allocate-resources.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

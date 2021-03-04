@@ -27,3 +27,6 @@ Pour plus d'informations, voir [Chiffrement des données dans Dynamics 365 Busin
 
 ## <a name="see-also"></a>Voir aussi  
 [Administration](admin-setup-and-administration.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

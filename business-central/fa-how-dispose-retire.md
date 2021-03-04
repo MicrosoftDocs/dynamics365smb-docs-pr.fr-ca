@@ -59,3 +59,6 @@ La page **Écritures** s'ouvre. Vous pouvez y voir les écritures résultant du 
 [Mise en route](product-get-started.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Rechercher des écritures](ui-find-entries.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
