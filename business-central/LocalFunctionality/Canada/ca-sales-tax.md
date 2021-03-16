@@ -5,19 +5,19 @@ services: project-madeira
 documentationcenter: ''
 author: edupont04
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: local
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 0e4bf43a68d9fcaa8d6429010bbeb97051497e7c
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: e5110ed10d505961492da9c5c54f0221dba7e758
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4749700"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5379755"
 ---
 # <a name="reporting-sales-tax-in-canada"></a>Déclaration de la taxe de vente au Canada
 Lorsque vous commencez à utiliser [!INCLUDE[prod_short](../../includes/prod_short.md)], vous pouvez exécuter un guide de configuration assistée afin de rapidement et facilement configurer les informations relatives à la Sales Tax pour votre société, vos clients et vos fournisseurs. En quelques minutes, vous êtes prêt à créer des documents vente et des documents achat pour lesquels la taxe de vente est calculée correctement. Ceci est expliqué [dans notre billet de blog](https://madeira.microsoft.com/blog/sales-tax-setup-made-easy).

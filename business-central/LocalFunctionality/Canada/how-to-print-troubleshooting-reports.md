@@ -3,19 +3,19 @@ title: 'Procédure : imprimer des rapports de dépannage [CA]'
 description: Plusieurs rapports de dépannage sont disponibles pour aider les partenaires certifiés Microsoft à résoudre les problèmes dans la version canadienne.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 02b7b78b742a6f4b3ed8b85f2d69e504aaa0ef1a
-ms.sourcegitcommit: 428f180604e5afcf94fa0e92a0615f58c88e13cd
+ms.openlocfilehash: 7e9d06add8c7d6aa32dfc0a86ce593960610c047
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "3931368"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5379746"
 ---
 # <a name="print-troubleshooting-reports-in-the-canadian-version"></a>Imprimer des rapports de dépannage dans la version canadienne
 
