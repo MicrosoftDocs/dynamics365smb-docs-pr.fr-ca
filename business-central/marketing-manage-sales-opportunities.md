@@ -5,34 +5,37 @@ services: project-madeira
 documentationcenter: ''
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: relationship, prospect
 ms.date: 10/01/2020
 ms.author: jswymer
-ms.openlocfilehash: f6ba8df61a2c375c9a938cbe5b0c1a30032c5d9d
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: aeb0c872a9f89874abbd6c5049b0b4d3594e4399
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4755352"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5390440"
 ---
-# <a name="managing-sales-opportunities"></a><span data-ttu-id="72f86-103">Gestion des opportunités de ventes</span><span class="sxs-lookup"><span data-stu-id="72f86-103">Managing Sales Opportunities</span></span>
-<span data-ttu-id="72f86-104">Tout prospect entrant peut être considéré comme une opportunité de vente.</span><span class="sxs-lookup"><span data-stu-id="72f86-104">Any incoming lead can be considered a sales opportunity.</span></span> <span data-ttu-id="72f86-105">Vous pouvez créer des opportunités et les associer à un représentant afin de pouvoir suivre les ventes potentielles.</span><span class="sxs-lookup"><span data-stu-id="72f86-105">You can create opportunities and associate them to a salesperson so that you can keep track of potential sales.</span></span>
+# <a name="managing-sales-opportunities"></a><span data-ttu-id="b0195-103">Gestion des opportunités de ventes</span><span class="sxs-lookup"><span data-stu-id="b0195-103">Managing Sales Opportunities</span></span>
+<span data-ttu-id="b0195-104">Tout prospect entrant peut être considéré comme une opportunité de vente.</span><span class="sxs-lookup"><span data-stu-id="b0195-104">Any incoming lead can be considered a sales opportunity.</span></span> <span data-ttu-id="b0195-105">Vous pouvez créer des opportunités et les associer à un représentant afin de pouvoir suivre les ventes potentielles.</span><span class="sxs-lookup"><span data-stu-id="b0195-105">You can create opportunities and associate them to a salesperson so that you can keep track of potential sales.</span></span>
 
-<span data-ttu-id="72f86-106">Avant de pouvoir utiliser la gestion des opportunités, vous devez configurer les cycles de vente et les étapes correspondantes.</span><span class="sxs-lookup"><span data-stu-id="72f86-106">Before you can start using opportunity management, you must set up sales cycles and sales cycle stages.</span></span> <span data-ttu-id="72f86-107">Lors de la création des opportunités, vous devez fournir des informations sur le contact, le représentant, le cycle de vente et les dates, ainsi que vos estimations en termes de valeur de vente de l'opportunité et de chances de réussite.</span><span class="sxs-lookup"><span data-stu-id="72f86-107">As you create opportunities, you should provide information about the contact, salesperson, sales cycle, and dates, as well as your estimates for the sales value of the opportunity and your estimation of the chances of its success.</span></span>
+<span data-ttu-id="b0195-106">Avant de pouvoir utiliser la gestion des opportunités, vous devez configurer les cycles de vente et les étapes correspondantes.</span><span class="sxs-lookup"><span data-stu-id="b0195-106">Before you can start using opportunity management, you must set up sales cycles and sales cycle stages.</span></span> <span data-ttu-id="b0195-107">Lors de la création des opportunités, vous devez fournir des informations sur le contact, le représentant, le cycle de vente et les dates, ainsi que vos estimations en termes de valeur de vente de l'opportunité et de chances de réussite.</span><span class="sxs-lookup"><span data-stu-id="b0195-107">As you create opportunities, you should provide information about the contact, salesperson, sales cycle, and dates, as well as your estimates for the sales value of the opportunity and your estimation of the chances of its success.</span></span>
 
-<span data-ttu-id="72f86-108">Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.</span><span class="sxs-lookup"><span data-stu-id="72f86-108">The following table describes a sequence of tasks, with links to the topics that describe them.</span></span>
+<span data-ttu-id="b0195-108">Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.</span><span class="sxs-lookup"><span data-stu-id="b0195-108">The following table describes a sequence of tasks, with links to the topics that describe them.</span></span>
 
-| <span data-ttu-id="72f86-109">À</span><span class="sxs-lookup"><span data-stu-id="72f86-109">To</span></span> | <span data-ttu-id="72f86-110">Voir</span><span class="sxs-lookup"><span data-stu-id="72f86-110">See</span></span> |
+| <span data-ttu-id="b0195-109">À</span><span class="sxs-lookup"><span data-stu-id="b0195-109">To</span></span> | <span data-ttu-id="b0195-110">Voir</span><span class="sxs-lookup"><span data-stu-id="b0195-110">See</span></span> |
 | --- | --- |
-| <span data-ttu-id="72f86-111">Configurer les cycles de vente que vous suivez habituellement et les différentes étapes de chaque cycle de vente opportunité.</span><span class="sxs-lookup"><span data-stu-id="72f86-111">Set up the sales cycles that you usually follow, and the different stages within each opportunity sales cycle.</span></span> |[<span data-ttu-id="72f86-112">Configurer des cycles de vente opportunité et des phases de cycle</span><span class="sxs-lookup"><span data-stu-id="72f86-112">Set Up Opportunity Sales Cycles and Cycle Stages</span></span>](marketing-how-setup-opportunity-sales-cycles-stages.md) |
-| <span data-ttu-id="72f86-113">Créer des opportunités de vente à partir de vos contacts.</span><span class="sxs-lookup"><span data-stu-id="72f86-113">Create sales opportunities that you have from your contacts.</span></span> |[<span data-ttu-id="72f86-114">Créer des opportunités</span><span class="sxs-lookup"><span data-stu-id="72f86-114">Create Opportunities</span></span>](marketing-how-create-opportunities.md) |
-| <span data-ttu-id="72f86-115">Déplacer une opportunité de vente au sein du cycle de vente jusqu'à l'achèvement.</span><span class="sxs-lookup"><span data-stu-id="72f86-115">Move a sales opportunity through the sales cycle to completion.</span></span> |[<span data-ttu-id="72f86-116">Traiter des opportunités de vente</span><span class="sxs-lookup"><span data-stu-id="72f86-116">Process Sales Opportunities</span></span>](marketing-processing-sales-opportunities.md) |
+| <span data-ttu-id="b0195-111">Configurer les cycles de vente que vous suivez habituellement et les différentes étapes de chaque cycle de vente opportunité.</span><span class="sxs-lookup"><span data-stu-id="b0195-111">Set up the sales cycles that you usually follow, and the different stages within each opportunity sales cycle.</span></span> |[<span data-ttu-id="b0195-112">Configurer des cycles de vente opportunité et des phases de cycle</span><span class="sxs-lookup"><span data-stu-id="b0195-112">Set Up Opportunity Sales Cycles and Cycle Stages</span></span>](marketing-how-setup-opportunity-sales-cycles-stages.md) |
+| <span data-ttu-id="b0195-113">Créer des opportunités de vente à partir de vos contacts.</span><span class="sxs-lookup"><span data-stu-id="b0195-113">Create sales opportunities that you have from your contacts.</span></span> |[<span data-ttu-id="b0195-114">Créer des opportunités</span><span class="sxs-lookup"><span data-stu-id="b0195-114">Create Opportunities</span></span>](marketing-how-create-opportunities.md) |
+| <span data-ttu-id="b0195-115">Déplacer une opportunité de vente au sein du cycle de vente jusqu'à l'achèvement.</span><span class="sxs-lookup"><span data-stu-id="b0195-115">Move a sales opportunity through the sales cycle to completion.</span></span> |[<span data-ttu-id="b0195-116">Traiter des opportunités de vente</span><span class="sxs-lookup"><span data-stu-id="b0195-116">Process Sales Opportunities</span></span>](marketing-processing-sales-opportunities.md) |
 
-## <a name="see-also"></a><span data-ttu-id="72f86-117">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="72f86-117">See Also</span></span>
-[<span data-ttu-id="72f86-118">Ventes</span><span class="sxs-lookup"><span data-stu-id="72f86-118">Sales</span></span>](sales-manage-sales.md)  
-[<span data-ttu-id="72f86-119">Création et gestion des contacts</span><span class="sxs-lookup"><span data-stu-id="72f86-119">Creating and Managing Contacts</span></span>](marketing-contacts.md)  
-<span data-ttu-id="72f86-120">[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="72f86-120">[Working with [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)</span></span>
+## <a name="see-also"></a><span data-ttu-id="b0195-117">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="b0195-117">See Also</span></span>
+[<span data-ttu-id="b0195-118">Ventes</span><span class="sxs-lookup"><span data-stu-id="b0195-118">Sales</span></span>](sales-manage-sales.md)  
+[<span data-ttu-id="b0195-119">Création et gestion des contacts</span><span class="sxs-lookup"><span data-stu-id="b0195-119">Creating and Managing Contacts</span></span>](marketing-contacts.md)  
+<span data-ttu-id="b0195-120">[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="b0195-120">[Working with [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)</span></span>
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
