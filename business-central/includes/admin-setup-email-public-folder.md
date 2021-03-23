@@ -4,12 +4,12 @@ ms.service: dynamics365-accountant
 ms.topic: include
 ms.date: 10/02/2020
 ms.author: edupont
-ms.openlocfilehash: 1b9f60eab5b0bcf812343e82389087ac5535301a
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: d58d8d628577f163d36199b8fc5785982aac830a
+ms.sourcegitcommit: a9d48272ce61e5d512a30417412b5363e56abf30
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4749790"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5493010"
 ---
 Avant de pouvoir configurer la connexion au courriel, vous devez préparer votre Exchange Online avec [dossiers publics](/exchange/collaboration/public-folders/public-folders?view=exchserver-2019&preserve-view=true ). Vous pouvez le faire dans le [Centre d'administration Exchange](/Exchange/architecture/client-access/exchange-admin-center?view=exchserver-2019&preserve-view=true ), ou vous pouvez utiliser le [shell de gestion Exchange](/powershell/exchange/exchange-management-shell?view=exchange-ps&preserve-view=true ).  
 
@@ -72,4 +72,4 @@ La liste suivante décrit les principales étapes avec des liens pour en savoir 
   Pour plus d'informations, voir [Gérer les règles de flux de courriel dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) et [Actions des règles de flux de courriel dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
 > [!NOTE]
-> Si vous apportez des modifications dans le shell de gestion Exchange, les modifications deviennent visibles dans le centre d'administration Exchange après un certain délai. De plus, les modifications apportées dans Exchange seront disponibles dans [!INCLUDE[prod_short](prod_short.md)] après un délai.
+> Si vous apportez des modifications dans le shell de gestion Exchange, les modifications deviennent visibles dans le centre d'administration Exchange après un certain délai. De plus, les modifications apportées dans Exchange seront disponibles dans [!INCLUDE[prod_short](prod_short.md)] après un délai. Le retard peut être de plusieurs heures.

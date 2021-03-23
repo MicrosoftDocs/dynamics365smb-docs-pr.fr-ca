@@ -3,19 +3,19 @@ title: 'Détails de conception : report de bon de production | Microsoft Docs'
 description: Comme pour le report d'ordre d'assemblage, les composantes consommées et le temps du poste utilisé sont convertis et sortis en tant qu'article produit lorsque le bon de production est terminé.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 7e2c8aeda1d71c7f01e7999dd540ce9194806dc5
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: b64fc6117ce1b241152a94e0c0006c1dbe66c542
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3917311"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5390750"
 ---
 # <a name="design-details-production-order-posting"></a>Détails de conception : validation d'ordre de fabrication
 Comme pour le report d'ordre d'assemblage, les composantes consommées et le temps du poste utilisé sont convertis et sortis en tant qu'article produit lorsque le bon de production est terminé. Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-assembly-order-posting.md). Toutefois, le flux des coûts des ordres d'assemblage est moins complexe, notamment parce que le report du coût d'assemblage ne se produit qu'une fois et ne génère donc pas d'inventaire travaux en cours.
@@ -103,7 +103,7 @@ Dans des environnements de coût standard, l'évaluation du stock d'un ordre de 
 
     > [!NOTE]  
     >  Cela diffère du report d'ordre d'assemblage, qui reporte toujours les coûts réels. Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-assembly-order-posting.md).  
-2.  Lorsque le bon de production est défini sur **Terminé** , la commande est facturée en exécutant le traitement en lot **Ajuster coûts - Écr. article** . Par conséquent, le coût total de la commande est calculé en fonction du coût standard des matières et de la capacité consommées. Les écarts entre les coûts standard calculés et les coûts de production réels sont calculés et reportés.  
+2.  Lorsque le bon de production est défini sur **Terminé**, la commande est facturée en exécutant le traitement en lot **Ajuster coûts - Écr. article**. Par conséquent, le coût total de la commande est calculé en fonction du coût standard des matières et de la capacité consommées. Les écarts entre les coûts standard calculés et les coûts de production réels sont calculés et reportés.  
 
 ## <a name="see-also"></a>Voir aussi  
  [Détails de conception : stock évaluation stock](design-details-inventory-costing.md)   

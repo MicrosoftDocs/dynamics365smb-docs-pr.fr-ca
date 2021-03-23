@@ -3,19 +3,19 @@ title: Configurer un relevé fiscal | Microsoft Docs
 description: Configurer un relevé fiscal
 author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: VAT, posting, tax, value-added tax
 ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 9e750f5c68361d0582ce59784bab41337d331152
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 05c186b87935efa4a0adbafb6f3096f0dd26abae
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3913648"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5389059"
 ---
 # <a name="set-up-a-vat-statement"></a>Configurer un relevé fiscal
 
@@ -25,24 +25,24 @@ Les autorités fiscales peuvent modifier et modifient leurs exigences de report 
 ## <a name="to-define-a-vat-statements"></a>Pour définir un relevé fiscal
 Les relevés fiscaux vous permettent de calculer le montant du relevé fiscal pour une période donnée, par exemple, un trimestre.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Relevés fiscaux** , puis sélectionnez le lien associé.  
-2. Choisissez le champ **Nom** , puis sélectionnez **Nouveau** sur la page **Noms de relevé fiscal** .
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Relevés fiscaux**, puis sélectionnez le lien associé.  
+2. Choisissez le champ **Nom**, puis sélectionnez **Nouveau** sur la page **Noms de relevé fiscal**.
 3. Renseignez les champs requis. Généralement, vous souhaitez avoir un paramètre pour chaque combinaison de groupe de report marché TVA/groupe de report produit TVA. Pour les numéros de ligne, il est logique d'utiliser des numéros ou des codes équivalents comme dans votre relevé fiscal officiel [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)] 
 
 
 > [!Tip]
-> Vous pouvez filtrer les informations de la déclaration, selon votre sélection dans le champ **Type** . L'option **Totalisation comptes** est utile lorsque vous souhaitez calculer la TVA à partir d'un compte spécifique.
-L'option **Total écriture TVA** permet d'obtenir la TVA pour les comptes affectés aux sélections dans les champs **Type de report général** , **Groupe de report de marché TVA** et/ou **Groupe de report produit TVA** . L'option **Total de lignes** permet de saisir une valeur ou des critères de filtre rapide dans le champ **Total de lignes** . Pour plus d'informations, voir [Recherche, filtrage et tri des données](ui-enter-criteria-filters.md). L'option **Description** est souvent utilisée pour ajouter une note à la déclaration. Par exemple, vous pouvez l'utiliser comme en-tête si vous avez utilisé Total de lignes.
+> Vous pouvez filtrer les informations de la déclaration, selon votre sélection dans le champ **Type**. L'option **Totalisation comptes** est utile lorsque vous souhaitez calculer la TVA à partir d'un compte spécifique.
+L'option **Total écriture TVA** permet d'obtenir la TVA pour les comptes affectés aux sélections dans les champs **Type de report général**, **Groupe de report de marché TVA** et/ou **Groupe de report produit TVA**. L'option **Total de lignes** permet de saisir une valeur ou des critères de filtre rapide dans le champ **Total de lignes**. Pour plus d'informations, voir [Recherche, filtrage et tri des données](ui-enter-criteria-filters.md). L'option **Description** est souvent utilisée pour ajouter une note à la déclaration. Par exemple, vous pouvez l'utiliser comme en-tête si vous avez utilisé Total de lignes.
 
 ## <a name="to-preview-the-vat-statement"></a>Afficher le relevé fiscal
 Après avoir défini un relevé fiscal, vous pouvez en afficher un aperçu pour vérifier qu'il répond à vos besoins.
 > [!Tip]
-> Il est préférable d'avoir une section de la déclaration TVA utilisant comme **Type** **Totalisation de l'écriture TVA** et une autre section en dessous utilisant comme **Type** **Totalisation comptes** pour rapprocher les montants en fonction de la table **Écriture TVA** par rapport au montant des **comptes du grand livre** . Vous pouvez également utiliser le rapport **GL - Rapprochement TVA** à cet effet.
+> Il est préférable d'avoir une section de la déclaration TVA utilisant comme **Type** **Totalisation de l'écriture TVA** et une autre section en dessous utilisant comme **Type** **Totalisation comptes** pour rapprocher les montants en fonction de la table **Écriture TVA** par rapport au montant des **comptes du grand livre**. Vous pouvez également utiliser le rapport **GL - Rapprochement TVA** à cet effet.
 
-1. Choisissez **Aperçu** .
+1. Choisissez **Aperçu**.
 2. Entrez un filtre de date pour limiter la déclaration à une période spécifique. Pour plus d'informations sur la personnalisation de la page pour afficher le filtre de date, voir [Recherche, filtrage et tri des données](ui-enter-criteria-filters.md).
 3. Vous pouvez sélectionner diverses options pour indiquer le type des écritures TVA à inclure dans la déclaration.
-4. Sur les lignes où le champ **Type** indique la valeur **TVA** , vous pouvez afficher la liste des écritures TVA en choisissant le montant figurant dans le champ **Montant colonne** .
+4. Sur les lignes où le champ **Type** indique la valeur **TVA**, vous pouvez afficher la liste des écritures TVA en choisissant le montant figurant dans le champ **Montant colonne**.
 5. Vous pouvez utiliser la personnalisation pour afficher plus de champs dans les lignes. Par exemple, le montant de base non réalisé et le montant de TVA non réalisé, si vous utilisez la TVA non réalisée.
 
 ## <a name="see-also"></a>Voir aussi  

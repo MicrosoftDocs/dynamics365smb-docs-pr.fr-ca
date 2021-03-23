@@ -3,15 +3,15 @@ title: Gérer le stockage en supprimant des documents ou en compressant des donn
 description: Découvrez comment conserver vos données historiques en compressant les écritures ou en les supprimant.
 author: edupont04
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: f0d713f57345c312ddbfe6b5462f2623b1088dfc
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: b17e4df039ef713bf5c0048d258aefd175157ba4
+ms.sourcegitcommit: a9d48272ce61e5d512a30417412b5363e56abf30
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4753877"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5493057"
 ---
 # <a name="manage-storage-by-deleting-documents-or-compressing-data"></a>Gérer le stockage en supprimant des documents ou en compressant des données
 
@@ -47,7 +47,13 @@ Vous pouvez compresser les types de données suivants dans [!INCLUDE [prod_short
   Après la compression, l’option **Conserver champs** vous permet de conserver la valeur des champs **N° document, Notre contact**, **Code dimension principal 1** et **Code dimension principal 2**.
 * Écritures fournisseur
 
-  Après la compression, le contenu des champs suivants sera toujours conservé : **Date de report**, **N° fournisseur**, **Type de document**, **Code devise**, **Groupe de report**, **Montant**, **Montant ouvert**, **Montant initial $**, **Montant ouvert $**, **Montant $**, **Achat $**, **Escompte facture $**, **Escompte de paiement accordé $** et **Escompte de paiement possible**.
+> [!NOTE]
+> Les écritures compressées pour les clients, les fournisseurs, les banques et la comptabilité auxiliaire des immobilisations sont reportées légèrement différemment du report standard. Cela permet de réduire le nombre de nouvelles écritures de grand livre créées par compression de date et est particulièrement important lorsque vous conservez des informations telles que les dimensions et les numéros de document. La compression de date crée de nouvelles entrées comme suit :
+>* Sur la page **Écritures de grand livre**, de nouvelles entrées sont créées avec de nouveaux numéros d’entrée pour les entrées compressées. Le champ **Description** contient l’information **Compression écritures** afin que les entrées compressées soient faciles à identifier. 
+>* Sur les pages comptables, telles que la page **Écritures client**, une ou plusieurs entrées sont créées avec de nouveaux numéros d’entrée. 
+> Le processus de report crée des écarts dans la série de numéros pour les entrées sur la page **Écritures de grand livre**. Ces numéros sont attribués aux écritures sur les pages comptables uniquement. La plage de numéros affectée aux entrées est disponible sur la **page Registre GL** dans les champs **N° séquence début** et **N° séquence fin**. 
+
+Après la compression, le contenu des champs suivants sera toujours conservé : **Date de report**, **N° fournisseur**, **Type de document**, **Code devise**, **Groupe de report**, **Montant**, **Montant ouvert**, **Montant initial $**, **Montant ouvert $**, **Montant $**, **Achat $**, **Escompte facture $**, **Escompte de paiement accordé $** et **Escompte de paiement possible**.
 
   Avec l’option **Conserver champs**, vous pouvez également conserver la valeur de ces champs supplémentaires : **N° document**, **N° fournisseur**, **Code acheteur**, **Code dimension principal 1** et **Code dimension principal 2**.
 

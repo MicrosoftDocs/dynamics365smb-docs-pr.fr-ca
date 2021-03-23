@@ -1,21 +1,21 @@
 ---
-title: Comment créer un rangement à partir du rangement interne | Microsoft Docs
+title: Créer un rangement à partir du rangement interne
 description: Une fois les articles rangés et avant qu'ils ne soient prélevés pour répondre aux besoins d'un bon de production ou d'une livraison, ils sont stockés dans l'entrepôt comme faisant partie de l'inventaire disponible.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 5095b4dde92b2d6982bfc8a984f10f5b62454800
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: d0f91182196aebf9b0123225603ed303cd39e66f
+ms.sourcegitcommit: 026484766988b8727649c02fc8990b0646999bf1
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4756252"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5498622"
 ---
 # <a name="pick-and-put-away-without-a-source-document"></a>Prélever et ranger sans document origine
 Une fois les articles rangés et avant qu'ils ne soient prélevés pour répondre aux besoins d'un bon de production ou d'une livraison, ils sont stockés dans l'entrepôt comme faisant partie de l'inventaire disponible.  
@@ -35,19 +35,25 @@ Les **rangements internes** vous permettent d'effectuer des rangements sans avoi
 
 ## <a name="to-create-an-internal-pick"></a>Pour créer un prélèvement interne  
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvement interne entrepôt**, puis sélectionnez le lien associé.  
-2.  Renseignez le champ **N°** et **Vers code emplacement** du raccourci **Général**. Le champ **Du code emplacement** indique l'emplacement où se trouvent les articles que vous souhaitez. Pour des raisons de production, cette zone représente la zone enlogement ou la zone d'atelier ouvert. Pour d'autres raisons, vous devez choisir un code de zone de destination d'un type de zone qui n'est pas utilisé pour le prélèvement (par exemple, une zone d'échelonnement, de livraison ou une zone spéciale).  
-3.  Sélectionnez un article dans le champ **N° article**, puis renseignez les quantités à prélever.  
-4. Choisissez l'action **Créer prélèvement**. Une instruction prélèvement entrepôt est maintenant créée pour un magasinier.  
+2. Sélectionnez l'action **Nouveau**.
+3. Renseignez le champ **N°** le champ **Code d'emplacement** et le champ **Du code de zone** du raccourci **Général**. Le champ **Du code de zone** indique où placer les articles prélevés. Pour des raisons de production, cette zone représente la zone enlogement ou la zone d'atelier ouvert. Pour d’autres applications, vous devez choisir un code de zone d’un type zone qui n’est pas utilisé pour le prélèvement (par exemple, une zone affectation, livraison ou une zone spéciale).  
+4.  Sélectionnez un article dans le champ **N° article**, puis renseignez les quantités à prélever.  
+5. Choisissez l'action **Créer prélèvement**. Une instruction prélèvement entrepôt est maintenant créée pour un magasinier. Vous pouvez également choisir l’action **Libérer** et créer des prélèvements entrepôt à l’aide de la **Feuille prélèvements**. Pour plus d’informations, voir [Planifier des prélèvements dans des feuilles](warehouse-how-to-plan-picks-in-worksheets.md)
 
 ## <a name="to-create-an-internal-put-away"></a>Pour créer un rangement interne  
 1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Rangement interne entrepôt**, puis sélectionnez le lien associé.  
-2.  Renseignez le champ **N°** et **Du code emplacement** du raccourci **Général**. Le champ **Du code emplacement** indique l'emplacement où se trouvent les articles retournés à l'entrepôt (par l'unité de production, par exemple).  
-3.  Renseignez les numéros article et les quantités sur les lignes.  
-4.  Choisissez l'action **Créer rangement**. Une instruction rangement entrepôt est maintenant créée pour un employé d'entrepôt.  
+2. Sélectionnez l'action **Nouveau**.
+3. Renseignez l’en-tête d’un nouveau rangement interne en y indiquant au moins le **N°** et le **Code d’emplacement**.
+4. Renseignez une ligne pour chaque article à déplacer vers l'entrepôt. Vous ne devez renseigner que les champs **N° article** et **Quantité**.
+
+  > [!NOTE]  
+  > Lorsque vous sélectionnez le champ **N° article**, la **liste des contenus de la zone** s’ouvre à la place de la **liste des articles**. En effet, vous souhaitez ranger un article qui se trouve dans une zone particulière, le *contenu de la zone* et pas uniquement un article, et vous connaissez déjà la zone dans laquelle l’article doit être prélevé.  <!--If you filled in **From Bin Code** in the header, the bin content will be filtered by value defined in the **From Bin Code**.-->
+5. Pour compléter les lignes en y indiquant l’ensemble du contenu de la zone ou le contenu de la zone filtré des zones de l’emplacement, choisissez l’action **Extraire contenu de la zone**.  
+6. Choisissez l'action **Créer rangement**. Une instruction rangement entrepôt est maintenant créée pour un employé d'entrepôt. Vous pouvez également choisir l’action **Libérer** et créer des rangements entrepôt à l’aide de la **Feuille rangement**. Pour plus d’informations, voir [Planifier des rangements dans la feuille](warehouse-how-to-plan-put-aways-in-worksheets.md)
 
 ## <a name="see-also"></a>Voir aussi  
-[Gestion d'entrepôt](warehouse-manage-warehouse.md)  
-[Stock](inventory-manage-inventory.md)  
+[Gestion d’entrepôt](warehouse-manage-warehouse.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  

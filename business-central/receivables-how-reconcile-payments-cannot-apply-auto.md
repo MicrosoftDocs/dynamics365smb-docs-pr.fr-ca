@@ -3,29 +3,34 @@ title: Utilisation de la fonction Transférer la différence vers un compte pour
 description: Décrit comment traiter les paiements qui ne peuvent pas être affectés dans un document, par exemple lorsqu'un taux de change entraîne un changement de montants.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, cash receipts
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: aa43e57adc60f7ec01bd7bf4c3bcdd20cdd476fd
-ms.sourcegitcommit: 311e86d6abb9b59a5483324d8bb4cd1be7949248
+ms.openlocfilehash: b37ee7ebf29503da0b205ac7eac11d9233375321
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5013827"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5376772"
 ---
 # <a name="reconcile-payments-that-cannot-be-applied-automatically"></a>Rapprocher les paiements qui ne peuvent pas être affectés automatiquement
 Vous serez parfois amené à gérer des paiements sur votre compte bancaire, qui ne peuvent pas être affectés à une écriture client, fournisseur ou compte bancaire ouverte associée. Les motifs peuvent être qu'il n'existe dans [!INCLUDE[prod_short](includes/prod_short.md)] aucun document auquel le paiement puisse être lettré, ou que le document associé dans [!INCLUDE[prod_short](includes/prod_short.md)] affiche un montant différent du montant de la transaction, par exemple, en raison du taux de change. Sur la page **Journal rapprochement paiement**, tous les montants de transaction pour les paiements qui n'ont pas encore été affectés s'affichent dans le champ **Différence**, y compris les montants qui ne peuvent pas être affectés pour des motifs tels que celui qui précède.
+
+Méthodes de résolution de ces types de paiements non lettrés :
+* Affecter manuellement
+* Utiliser le mappage de texte à compte
+* Transférez un montant excédentaire vers une ligne journal pour créer et reporter l’écriture requise, comme le remboursement d’un trop-perçu.
 
 Les paiements qui ne peuvent pas être affectés peuvent apparaître sur les lignes journal rapprochement paiement pour les raisons suivantes :
 
 * La valeur du champ **Différence** est égale à celle du champ **Montant transaction**, ce qui indique qu'aucune partie du paiement ne peut être lettrée à une écriture comptable client, fournisseur ou compte bancaire ouverte associée.
 * La valeur du champ **Différence** est inférieure à celle du champ **Montant transaction**, ce qui indique qu'une partie du paiement peut être lettrée à une écriture comptable client, fournisseur ou compte bancaire ouverte associée. La partie restante du paiement ne peut pas être affectée et doit être rapprochée manuellement ou en la reportant directement sur un compte.
 
-Pour rapprocher de tels paiements, vous pouvez cliquer sur le bouton **Transférer la différence vers un compte**, puis spécifier sur quel compte le montant du champ **Différence** sera reporté lorsque vous reportez le journal rapprochement paiement.
+Pour rapprocher de tels paiements, vous pouvez choisir l’action **Transférer la différence vers un compte**, puis spécifier sur quel compte le montant du champ **Différence** sera reporté lorsque vous reportez le journal rapprochement bancaire. Vous pouvez le faire soit à partir de la page **Journal rapprochement bancaire** ou à partir de la page **Révision affectation paiement** que vous ouvrez en choisissant la valeur dans le champ **Fiabilité correspondance** ou en choisissant le champ **Différence**.
 
 > [!TIP]  
 >   Il existe une fonctionnalité similaire permettant de configurer le rapprochement automatique des paiements récurrents qui ne peuvent pas être affectés aux écritures ouvertes associées du grand livre client, fournisseur ou compte bancaire. Pour plus d'informations, voir [Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique](receivables-how-map-text-recurring-payments-accounts-auto-reconcilliation.md).

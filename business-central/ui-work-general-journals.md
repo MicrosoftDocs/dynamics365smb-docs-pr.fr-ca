@@ -1,21 +1,21 @@
 ---
-title: Utilisation de journaux généraux pour reporter directement dans le grand livre| Microsoft Docs
-description: Découvrez comment utiliser les journaux pour reporter des transactions financières dans les comptes GL et dans d'autres comptes, tels que les comptes bancaires et fournisseur.
+title: Utilisation de journaux généraux pour reporter directement dans le grand livre
+description: Découvrez comment utiliser les journaux pour reporter des transactions financières dans les comptes GL et dans d'autres comptes, tels que les comptes bancaires et fournisseur. Utilisez des journaux récurrents pour reporter les régularisations et allouer les soldes par valeurs de dimension.
 author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: journals, recurring, accrual
-ms.date: 10/01/2020
+ms.date: 02/15/2021
 ms.author: edupont
-ms.openlocfilehash: 18c36bf409b2bb5d4e67eeccfdf16193ec4dac62
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: c6a2c6ed0c3fe163f64a3eb7d55f8e128f53a50d
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4760120"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5393609"
 ---
 # <a name="working-with-general-journals"></a>Utilisation de feuilles comptabilité
 
@@ -74,24 +74,27 @@ Si vous avez configuré des comptes de contrepartie par défaut pour les lots jo
 >   La TVA est calculée séparément pour le compte principal et le compte de contrepartie, afin qu'ils puissent utiliser des taux de pourcentage de TVA différents.
 
 ## <a name="working-with-recurring-journals"></a>Utilisation de journaux récurrents
-Un journal récurrent est un journal général contenant des champs spécifiques pour la gestion des transactions que vous reportez fréquemment avec peu ou pas de modifications comme le loyer, les abonnements, l'électricité et le chauffage. Utilisez ces champs dans le cadre des transactions récurrentes pour reporter les montants fixes et variables. Vous pouvez également définir des écritures inversion automatiques le lendemain de la date de report. Vous pouvez également utiliser des clés d'affectation pour répartir les écritures récurrentes entre plusieurs comptes. Pour plus d'informations, voir [Affectation de montants journal récurrent à plusieurs comptes](ui-work-general-journals.md#allocating-recurring-journal-amounts-to-several-accounts).
+Un journal récurrent est un journal général contenant des champs spécifiques pour la gestion des transactions que vous reportez fréquemment avec peu ou pas de modifications comme le loyer, les abonnements, l'électricité et le chauffage. Utilisez ces champs dans le cadre des transactions récurrentes pour reporter les montants fixes et variables. Vous pouvez également définir des écritures inversion automatiques le lendemain de la date de report. Vous pouvez également utiliser des clés d'affectation pour répartir les écritures récurrentes entre plusieurs comptes. Pour plus d'informations, voir [Affectation de montants journal récurrent à plusieurs comptes](#allocating-recurring-journal-amounts-to-several-accounts).
 
 Avec un journal récurrent, les écritures qui sont régulièrement reportées ne sont saisies qu'une fois. Les comptes, dimensions, valeurs de dimension, etc., que vous saisissez restent ainsi dans le journal après report. Si des ajustements sont nécessaires, vous pouvez les faire à chaque report.
 
 ### <a name="recurring-method-field"></a>Champ Mode récurrent
+
 Ce champ détermine la manière dont le montant de la ligne journal est traité après report. Par exemple, si vous utilisez le même montant chaque fois que vous reportez la ligne, vous pouvez conserver ce montant. Si vous utilisez les mêmes comptes et le même texte pour la ligne mais que le montant varie chaque fois que vous reportez, vous pouvez choisir de supprimer le montant après report.
 
-| À | Voir |
+| Pour | Voir |
 | --- | --- |
-|Statique|Le montant de la ligne journal est conservé après report.|
-|Variable|Le montant de la ligne journal est supprimé après report.|
-|Solde|Le montant reporté sur le compte de la ligne est affecté sur les comptes spécifiés pour la ligne de la table Affectation journal. Le solde du compte est donc positionné à zéro. Pensez à renseigner le champ **% affectation** sur la page **Affectations**. Pour plus d'informations, voir [Affectation de montants journal récurrent à plusieurs comptes](ui-work-general-journals.md#allocating-recurring-journal-amounts-to-several-accounts).|
-|Inversion fixe|Le montant de la ligne journal est conservé après report, et une écriture contrepartie est reportée le lendemain.|
-|Inversion variable|Le montant de la ligne journal est supprimé après report, et une écriture contrepartie est reportée le lendemain.|
-|Inversion solde|Le montant reporté sur le compte de la ligne sera affecté sur les comptes spécifiés pour la ligne de la page **Affectations**. Le solde du compte est défini sur zéro, et une écriture contrepartie est reportée le lendemain.|
+|F Fixe|Le montant de la ligne journal est conservé après report.|
+|V Variable|Le montant de la ligne journal est supprimé après report.|
+|S Solde|Le montant reporté sur le compte de la ligne est affecté sur les comptes spécifiés pour la ligne de la table Affectation journal. Le solde du compte est donc positionné à zéro. Pensez à renseigner le champ **% affectation** sur la page **Affectations**. Pour plus d'informations, voir [Affectation de montants journal récurrent à plusieurs comptes](#allocating-recurring-journal-amounts-to-several-accounts).|
+|FI Fixe inversion|Le montant de la ligne journal est conservé après report, et une écriture contrepartie est reportée le lendemain.|
+|VI Variable inversion|Le montant de la ligne journal est supprimé après report, et une écriture contrepartie est reportée le lendemain.|
+|SI Solde inversion|Le montant reporté sur le compte de la ligne sera affecté sur les comptes spécifiés pour la ligne de la page **Affectations**. Le solde du compte est défini sur zéro, et une écriture contrepartie est reportée le lendemain.|
+|Solde BD par dimension|La ligne journal répartit les coûts en fonction du solde d’un compte du grand livre par dimension. Vous serez invité à définir les filtres dimension à utiliser pour calculer le solde du compte du grand livre source par dimension à partir de laquelle vous souhaitez allouer les coûts. Sinon, choisissez l’action **Définir des filtres dimension** ultérieurement.|
+|Solde inversion RBD par dimension|La ligne journal répartit les coûts en fonction du solde inversion d’un compte du grand livre par dimension. Vous serez invité à définir les filtres dimension à utiliser pour calculer le solde du compte du grand livre source par dimension à partir de laquelle vous souhaitez allouer les coûts. Sinon, choisissez l’action **Définir des filtres dimension** ultérieurement.|
 
 > [!NOTE]  
->  Les champs TVA peuvent être renseignés sur la ligne journal récurrent ou sur la ligne journal affectation, mais pas sur les deux. Ils peuvent être renseignés sur la page **Affectations** uniquement si les lignes correspondantes du journal récurrent ne sont pas renseignées.
+> Les champs TVA peuvent être renseignés sur la ligne journal récurrent ou sur la ligne journal affectation, mais pas sur les deux. Ils peuvent être renseignés sur la page **Affectations** uniquement si les lignes correspondantes du journal récurrent ne sont pas renseignées.
 
 ### <a name="recurring-frequency-field"></a>Champ Périodicité récurrente
 Ce champ détermine la fréquence de report de l'écriture de la ligne journal. Il s'agit d'un champ de formule de date qui doit être renseigné pour les lignes journal récurrent. Pour plus d'informations, voir [Utilisation de formules date](ui-enter-date-ranges.md#using-date-formulas).
@@ -113,11 +116,19 @@ L'avantage d'utiliser ce champ réside dans le fait que la ligne n'est pas immé
 Si le champ est blanc, la ligne est reportée à chaque report, jusqu'à ce qu'elle soit supprimée du journal.
 
 ### <a name="allocating-recurring-journal-amounts-to-several-accounts"></a>Affectation de montants journal récurrent à plusieurs comptes
+
 Sur la page **Journal général récurrent**, vous pouvez choisir l'action **Affectations** pour visualiser ou gérer la manière dont les montants de la ligne journal récurrent sont affectés à plusieurs comptes et dimensions. Notez qu'une affectation fonctionne comme une ligne compte de contrepartie pour la ligne journal récurrent.
 
 Tout comme dans un journal récurrent, vous n'avez à saisir qu'une fois une affectation. L'affectation reste dans le journal affectation après report, ainsi vous n'avez pas à saisir les montants et les affectations chaque fois que vous reportez la ligne journal récurrent.
 
-Si le mode récurrent du journal récurrent est défini sur **Solde** ou sur **Solde inverse**, tous les codes valeur de dimension du journal récurrent sont ignorés lorsque le compte est défini sur zéro. Par conséquent, si vous affectez une ligne récurrente à diverses valeurs de dimension sur la page **Affectations**, une seule écriture de contrepassation est créée. De ce fait, si vous affectez une ligne journal récurrent qui comporte un code section, vous ne devez pas saisir le même code sur la page **Affectations**. Si vous le faites, les valeurs de dimension sont incorrectes.
+Si le *mode récurrent* est paramétré sur **Solde** ou sur **Solde inversion**, tous les codes valeur de dimension du journal récurrent sont ignorés lorsque le compte est défini sur zéro. Par conséquent, si vous affectez une ligne récurrente à diverses valeurs de dimension sur la page **Affectations**, une seule écriture de contrepassation est créée. De ce fait, si vous affectez une ligne journal récurrent qui comporte un code section, vous ne devez pas saisir le même code sur la page **Affectations**. Si vous le faites, les valeurs de dimension sont incorrectes.  
+
+Pour allouer des montants de journal récurrent en fonction des dimensions, définissez le champ **Mode récurrent** sur **Solde par dimension** ou **Solde inversion par dimension**. Si le mode récurrent est paramétré sur **Solde par dimension** ou sur **Solde inversion par dimension**, tous les codes valeur de dimension du journal récurrent sont pris en compte lorsque le compte est défini sur zéro. Ainsi, si vous allouez une ligne récurrente à différentes valeurs de dimension sur la page **Affectations**, alors un certain nombre d’écritures de contrepassation correspondant au nombre de combinaisons de valeur de dimension dont le solde est composé sont créées. Si vous allouez le solde du compte via le journal récurrent qui contient un code de valeur de dimension, n’oubliez pas d’utiliser **Solde par dimension** ou **Solde inversion par dimension** pour vous assurer que les valeurs de dimension sont correctement équilibrées ou inversées à partir du compte source.  
+
+Par exemple, votre compagnie a quelques unités fonctionnelles et une poignée de départements que vos contrôleurs ont configurés en tant que dimensions. Pour accélérer le processus de saisie des factures achat, vous décidez de demander aux personnes chargées des comptes fournisseurs de saisir uniquement les dimensions des unités fonctionnelles. Étant donné que chaque unité fonctionnelle dispose de clés d’affectation spécifiques pour la dimension Département, par exemple en fonction du nombre d’employés, vous pouvez utiliser les modes récurrents **Solde BD par dimension** ou **Solde inversion RBD par dimension** pour réaffecter les dépenses de chaque unité fonctionnelle aux départements qui conviennent en fonction des clés d’affectation.  
+
+> [!NOTE]
+> Les dimensions que vous définissez sur les lignes affectation ne sont pas calculées automatiquement et vous devez spécifier les valeurs de dimension à définir sur les comptes d’affectation. Si vous souhaitez conserver le lien entre la dimension du compte source et la dimension du compte d’affectation, nous vous recommandons d’utiliser la fonctionnalité [Comptabilité analytique](finance-about-cost-accounting.md) à la place.
 
 #### <a name="example-allocating-rent-payments-to-different-departments"></a>Exemple : Ventilation des paiements du loyer entre plusieurs départements
 Vous payez un loyer tous les mois, vous avez saisi le montant du loyer sur le compte caisse d'une ligne journal récurrent. Sur la page **Affectations**, vous pouvez diviser les dépenses entre plusieurs départements (dimension Département) selon le nombre de mètres carrés occupé par chacun d'eux. Le calcul est basé sur le pourcentage d'affectation de chaque ligne. Vous pouvez saisir divers comptes sur différentes lignes affectation (si le loyer est aussi divisé entre plusieurs comptes) ou saisir le même compte, mais avec divers codes valeur de dimension pour la dimension Département sur chaque ligne.
@@ -167,7 +178,7 @@ Une fois l'enregistrement du journal article standard effectué, la page Journal
 
     le journal article est alors rempli avec les lignes enregistrées en tant que journal article standard. Si des lignes journal figurent déjà dans le journal article, les lignes insérées sont placées en dessous.
 
-    Si vous n'avez pas coché le champ **Enregistrer le montant unitaire** au cours de la tâche de fonction **Enregistrer en tant que feuille article standard**, alors le champ **Montant unitaire** des lignes insérées adopte automatiquement la valeur actuelle de l'article, copiée du champ **Coût unitaire** de la fiche article.
+    Si vous n’avez pas coché le champ **Enregistrer le montant unitaire** au cours de la tâche de fonction **Enregistrer en tant que journal article standard**, alors le champ **Montant unitaire** des lignes insérées adopte automatiquement la valeur actuelle de l’article, copiée du champ **Coût unitaire** de la fiche article.
 
     > [!NOTE]  
     >   Si vous avez sélectionné les champs **Enregistrer le montant unitaire** ou **Enregistrer la quantité**, assurez-vous que les valeurs insérées sont adaptées à cet ajustement de stock précis avant de valider la feuille article.

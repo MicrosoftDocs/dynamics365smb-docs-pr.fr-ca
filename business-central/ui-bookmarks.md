@@ -3,19 +3,19 @@ title: Ajouter un signet à un lien vers une page ou un rapport sur votre tablea
 description: Découvrez comment ajouter un lien à votre tableau de bord.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 1bcbd23658ff2a74ae0ab88b6020e1d859f37355
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: 5e85c6200f9fafa800e2e44978a5efb10ececefb
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4747728"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5376697"
 ---
 # <a name="bookmark-a-page-or-report-on-your-role-center"></a>Ajouter un signet vers une page ou un rapport sur votre tableau de bord
 À l'aide de l'icône de signet, vous pouvez ajouter une action qui ouvre une page ou un rapport à partir du menu de navigation de votre tableau de bord. Cela vous permet d'accéder rapidement à votre contenu préféré ou à vos tâches professionnelles. Vous devez ajouter le signet à partir de la page ou du rapport cible, c'est-à-dire l'écran sur lequel vous souhaitez que le lien du tableau de bord s'ouvre.

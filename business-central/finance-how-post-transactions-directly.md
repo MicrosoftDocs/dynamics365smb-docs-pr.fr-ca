@@ -3,19 +3,19 @@ title: Enregistrer les frais ou les revenus directement dans le grand livre| Mic
 description: Pour les activités économiques qui ne sont pas représentés par un document, comme de plus petits frais ou encaissements, vous pouvez créer les transactions associées en reportant des lignes de journal sur la page Journal général.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: direct posting, general ledger
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 72e2851ee60d6cb79f722d12e16ddcb30e95fdbe
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: 04fb69cb471596065df0a05deefe51080bd2fdbd
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4746951"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5386434"
 ---
 # <a name="post-transactions-directly-to-the-general-ledger"></a>Reporter les transactions directement dans le grand livre
 

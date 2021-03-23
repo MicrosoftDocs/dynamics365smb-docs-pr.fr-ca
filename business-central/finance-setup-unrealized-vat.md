@@ -3,19 +3,19 @@ title: Configuration de la TVA non réalisée | Microsoft Docs
 description: Si vous utilisez la comptabilité basée sur la trésorerie, vous pouvez spécifier comment gérer la TVA non réalisée pour les ventes et les achats.
 author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: cash, VAT, unrealized, cash-based
 ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 36404306909fb7c2e9d2de97e43fa181dc65a069
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: 9320a06b8224aae334e8b3b8682df4d8b5fbdb81
+ms.sourcegitcommit: a9d48272ce61e5d512a30417412b5363e56abf30
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4746533"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5492902"
 ---
 # <a name="set-up-unrealized-vat-for-cash-based-accounting"></a>Configurer la TVA non réalisée pour la comptabilité basée sur la trésorerie
 Si vous utilisez des méthodes comptables basées sur la trésorerie, vous pouvez configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour gérer la TVA non réalisée.
@@ -49,7 +49,6 @@ Pour utiliser les comptes pour la TVA non réalisée, procédez comme suit :
 > Le montant de la TVA est reporté sur ce compte jusqu'à ce que le paiement de la facture soit reporté. Le montant est alors transféré sur le compte pour la TVA achat.
 
 ## <a name="see-also"></a>Voir aussi
-[Configuration de la TVA](finance-setup-vat.md)
-
+[Configurer des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

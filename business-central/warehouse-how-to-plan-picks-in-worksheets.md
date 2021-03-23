@@ -3,19 +3,19 @@ title: Comment planifier des prélèvements dans des feuilles | Microsoft Docs
 description: Lorsque l'entrepôt est configuré pour exiger un traitement des prélèvements et des livraisons, le fonctionnement de l'entrepôt peut être établi de telle sorte que les lignes des documents livraison ne soient pas automatiquement transformées en instructions de prélèvement, mais soient plutôt activées sur le journal prélèvement.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 250d85308e60f93ccba28e2354e47be185918d52
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: 977db9c072defbbd7a76ef58bdbcf739116a858d
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4756152"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5393233"
 ---
 # <a name="plan-picks-in-worksheets"></a>Planifier des prélèvements dans la feuille
 

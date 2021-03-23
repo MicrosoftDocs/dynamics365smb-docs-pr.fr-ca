@@ -1,21 +1,21 @@
 ---
-title: Créer une fiche client pour enregistrer de nouveaux clients | Microsoft Docs
+title: Enregistrer de nouveaux clients en créant une fiche client
 description: Décrit comment créer une fiche client pour enregistrer des informations sur chaque nouveau client ou client auquel vous vendez.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: client
-ms.date: 10/01/2020
+ms.search.keywords: client, customer, credit
+ms.date: 03/09/2021
 ms.author: edupont
-ms.openlocfilehash: 86527387653d198bc8cf6f7817058b5ff551e1d0
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: d873c1546cebfccc6d2549b1de2b9d111589c553
+ms.sourcegitcommit: 35f7e24c301926b39094aa64fe608afd04fdb8e1
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4748329"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5573436"
 ---
 # <a name="register-new-customers"></a>Enregistrer de nouveaux clients
 
@@ -64,6 +64,29 @@ Le modèle client est ajouté à la liste des modèles client. Vous pouvez ainsi
 
 Si vous avez reporté une transaction pour un client, vous ne pouvez pas supprimer la fiche, car les écritures peuvent être nécessaires pour l'audit. Pour supprimer des fiches client avec des écritures, contactez votre partenaire Microsoft pour le faire via le code.  
 
+## <a name="managing-credit-limits"></a>Gestion des limites de crédit
+
+Les limites de crédit, les soldes échus et les modalités de paiement permettent à [!INCLUDE [prod_short](includes/prod_short.md)] d’émettre une alerte limite de crédit ou solde échu lorsque vous entrez un document de vente.  De plus, les options modalités de rappel et modalités de frais financiers vous permettent de facturer des intérêts et des frais supplémentaires.  
+
+Le champ **Limite de crédit** sur une fiche client spécifie le montant maximal de dépassement du solde de paiement que vous autorisez le client à dépasser avant que des alertes ne soient émises. Ensuite, lorsque vous saisissez des informations dans des journaux, des devis, des commandes et des factures, [!INCLUDE [prod_short](includes/prod_short.md)] teste l’en-tête vente et les lignes vente individuelles pour voir si la limite de crédit a été dépassée.
+
+Vous pouvez reporter même si la limite de crédit a été dépassée. Si vous laissez le champ blanc, il n’y a pas de limite de crédit pour ce client.  
+
+Vous pouvez choisir de ne pas afficher les alertes vous indiquant que la limite de crédit du client a été dépassée et vous pouvez spécifier les types d’avertissement que vous souhaitez voir.
+
+### <a name="to-specify-credit-limit-warnings"></a>Pour spécifier les alertes limite de crédit
+
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.
+
+2. Sur le raccourci **Général**, dans le champ **Alertes crédit**, choisissez l’option appropriée comme décrit dans le tableau suivant :
+
+    |Option| Description|
+    |------|------------|
+    |**Toutes les alertes**| Le programme contrôle à la fois les champs **Limite de crédit** et **Solde dû** de la fiche client, et affiche une alerte si le client a dépassé sa limite de crédit ou si le client a un solde échu.|
+    |**Limite de crédit**|Le programme compare la valeur du champ **Limite de crédit** de la fiche client et le solde du client, et affiche une alerte si le solde du client dépasse ce montant.|
+    |**Solde échu**|Le champ **Solde dû** de la fiche client est contrôlé et une alerte s’affiche si le client a un solde échu.|
+    |**Aucune alerte**|Aucune alerte n’est affichée sur l’état du client.|
+
 ## <a name="see-also"></a>Voir aussi
 
 [Définition des modes de règlement](finance-payment-methods.md)  
@@ -72,6 +95,5 @@ Si vous avez reporté une transaction pour un client, vous ne pouvez pas supprim
 [Vente](sales-manage-sales.md)  
 [Définition des ventes](sales-setup-sales.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

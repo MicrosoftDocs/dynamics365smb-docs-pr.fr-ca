@@ -3,19 +3,19 @@ title: Détails de conception - Ajustement des coûts | Microsoft Docs
 description: L'objet principal de l'ajustement des coûts est de transférer les changements depuis les sources de coût aux destinataires de coût, selon le mode d'évaluation coût d'un article, pour fournir une évaluation de l'inventaire correcte.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 51f60e938ddb8ffd53b37b5664cf6e1ba8ba396f
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: 9b00ab8cd91b921a35c3228972e50e8933ed4ee5
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4751790"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5387009"
 ---
 # <a name="design-details-cost-adjustment"></a>Détails de conception : ajustement des coûts
 
@@ -95,7 +95,7 @@ Lorsque vous exécutez le traitement en lot **Ajuster coûts - Écr. article**, 
 
 ### <a name="example"></a>Exemple :
 
-L'exemple suivant montre le cas où vous reportez un article acheté comme étant reçu et facturé le 01/01/20. Vous reportez ultérieurement l'article vendu comme étant livré et facturé le 01-15-20. Ensuite, vous exécutez les traitements en lot **Ajuster coûts - Écr. article** et **Reporter le coût de l'inventaire au grand livre**. Les écritures suivantes sont créées.  
+L'exemple suivant montre le cas où vous reportez un article acheté comme étant reçu et facturé le 01/01/20. Vous reportez ultérieurement l'article vendu comme étant livré et facturé le 01-15-20. Ensuite, vous exécutez les traitements en lot **Ajuster &coûts - Écr. article** et **Reporter le coût de l'inventaire au grand livre**. Les écritures suivantes sont créées.  
 
 #### <a name="value-entries-1"></a>Écritures valeur (1) 
 
@@ -122,7 +122,7 @@ L'exemple suivant montre le cas où vous reportez un article acheté comme étan
 |15/01/20|[Compte inventaire]|2130|-10,00|3|  
 |15/01/20|[Compte variation stock]|7290|10.00|4|  
 
-Ultérieurement, vous reportez des frais annexes achat associés de 2,00 $ facturés le 10/02/20. Vous exécutez le traitement en lot **Ajuster coûts - Écr. article**, puis le traitement en lot **Reporter le coût de l'inventaire au grand livre**. Le traitement en lot d'ajustement des coûts ajuste le coût de la vente de 2,00 $ en conséquence, et le traitement en lot **Reporter le coût de l'inventaire au grand livre** reporte les nouvelles écritures valeur dans le grand livre. Le résultat est le suivant.  
+Ultérieurement, vous reportez des frais annexes achat associés de 2,00 $ facturés le 10/02/20. Vous exécutez le traitement en lot **Ajuster &coûts - Écr. article**, puis le traitement en lot **Reporter le coût de l'inventaire au grand livre**. Le traitement en lot d'ajustement des coûts ajuste le coût de la vente de 2,00 $ en conséquence, et le traitement en lot **Reporter le coût de l'inventaire au grand livre** reporte les nouvelles écritures valeur dans le grand livre. Le résultat est le suivant.  
 
 #### <a name="value-entries-2"></a>Écritures valeur (2)  
 
@@ -175,7 +175,7 @@ L'exemple suivant présente scénario d'ajustement automatique des coûts :
 
 Si vous avez défini l'ajustement automatique des coûts pour l'affecter aux reports qui se produisent à un mois ou un trimestre de la date en cours, l'ajustement automatique des coûts fonctionne et transmet le coût de l'achat à la vente.  
 
-Si vous avez configuré l'ajustement automatique des coûts pour l'affecter aux reports qui se produisent dans la journée ou la semaine à partir de la date en cours, l'ajustement automatique des coûts ne fonctionne pas, et le coût de l'achat n'est pas transmis à la vente tant que vous n'exécutez pas le traitement en lot **Ajuster coûts - Écr. article**.  
+Si vous avez configuré l'ajustement automatique des coûts pour l'affecter aux reports qui se produisent dans la journée ou la semaine à partir de la date en cours, l'ajustement automatique des coûts ne fonctionne pas, et le coût de l'achat n'est pas transmis à la vente tant que vous n'exécutez pas le traitement en lot **Ajuster &coûts - Écr. article**.  
 
 ## <a name="see-also"></a>Voir aussi
 

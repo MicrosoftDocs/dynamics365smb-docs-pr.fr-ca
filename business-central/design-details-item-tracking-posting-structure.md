@@ -3,19 +3,19 @@ title: 'Détails de conception : structure de report de traçabilité | Microso
 description: Découvrez comment utiliser les écritures article comme principal opérateur des numéros traçabilité article.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, item tracking, posting, inventory
 ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 697b83fd7e6e2b220b2851d5a1770ed9f74a9bdd
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 95e6c596e9a9782aa6f457164310b9d0942332d7
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3917386"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5390909"
 ---
 # <a name="design-details-item-tracking-posting-structure"></a>Détails de conception : structure de report de traçabilité
 Pour s'aligner sur la fonctionnalité d'évaluation du coût de l'inventaire et obtenir une solution plus simple et plus robuste, les écritures du grand livre d'articles sont utilisées comme principal opérateur des numéros traçabilité.  
@@ -25,12 +25,12 @@ Les numéros traçabilité sur les entités réseau de commande et les entités 
 La page **Lignes traçabilité** extrait les informations de T337 et les écritures article et les affiche par le biais de la table temporaire, **Spécification traçabilité** (T336). T336 contient également les données temporaires dans la **page lignes traçabilité** pour les quantités de traçabilité article restant à facturer.  
   
 ## <a name="one-to-many-relation"></a>Relation un-à-plusieurs  
-La table **Lien écriture article** , qui sert à lier une ligne document validée avec ses écritures comptables article correspondantes, est composée de deux parties principales :  
+La table **Lien écriture article**, qui sert à lier une ligne document validée avec ses écritures comptables article correspondantes, est composée de deux parties principales :  
   
-* Un pointeur vers la ligne document validée, le champ **N° ligne commande** . .  
-* Un numéro de séquence pointant vers une écriture comptable article, le champ **N° écriture article** .  
+* Un pointeur vers la ligne document validée, le champ **N° ligne commande**. .  
+* Un numéro de séquence pointant vers une écriture comptable article, le champ **N° écriture article**.  
   
-La fonctionnalité du champ **N° écriture** existant, qui relie une écriture article à une ligne document reporté, gère la relation typique un à un lorsqu'aucun numéro traçabilité n'est indiqué sur la ligne document reportée. Si des numéros traçabilité existent, le champ **N° séquence** est laissé vide, et la relation un à plusieurs est gérée par la table **Lien écriture article** . Si la ligne document reportée possède des numéros traçabilité, mais n'est liée qu'à une seule écriture du grand livre d'articles, le champ **N° séquence** gère la relation, et le n° d'enregistrement est créé dans la table **Lien écriture article** .  
+La fonctionnalité du champ **N° écriture** existant, qui relie une écriture article à une ligne document reporté, gère la relation typique un à un lorsqu'aucun numéro traçabilité n'est indiqué sur la ligne document reportée. Si des numéros traçabilité existent, le champ **N° séquence** est laissé vide, et la relation un à plusieurs est gérée par la table **Lien écriture article**. Si la ligne document reportée possède des numéros traçabilité, mais n'est liée qu'à une seule écriture du grand livre d'articles, le champ **N° séquence** gère la relation, et le n° d'enregistrement est créé dans la table **Lien écriture article**.  
   
 ## <a name="codeunits-80-and-90"></a>Codeunits 80 et 90  
 Pour répartir les écritures du grand livre d'articles lors du report, le code dans codeunit 80 et codeunit 90 est encerclé par des boucles qui s'exécutent à travers des variables de bilan temporaire global. Ce code appelle codeunit 22 avec une ligne journal article. Ces variables sont initialisées lorsque les numéros de suivi des articles existent pour la ligne document. Pour garder un code simple, cette structure de bouclage est toujours utilisée. Si aucun numéro traçabilité n'existe pour la ligne document, un enregistrement unique est inséré, et la boucle ne s'exécute qu'une fois.  

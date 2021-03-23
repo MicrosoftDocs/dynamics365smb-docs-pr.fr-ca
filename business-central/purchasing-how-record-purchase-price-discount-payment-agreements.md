@@ -1,23 +1,26 @@
 ---
 title: Tarifs et escomptes fournisseur spéciaux et secondaires | Microsoft Docs
 description: Vous pouvez définir différentes ententes en termes de prix et d'escomptes et les affecter aux documents achat pour les fournisseurs.
-author: SorenGP
+author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: special price, alternate price, pricing
 ms.date: 10/01/2020
-ms.author: edupont
-ms.openlocfilehash: 4fbc36a1dbe9970932718336d21b7ea7c4dc2a71
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.author: bholtorf
+ms.openlocfilehash: f1c036b33d80d3f8a4f7b45e38b823631b93fc53
+ms.sourcegitcommit: a9b771cc2b4b75aed835efca63ef7a6a44219d59
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4748779"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476755"
 ---
 # <a name="record-special-purchase-prices-and-discounts"></a>Enregistrer les prix d'achat spéciaux et les escomptes
+> [!NOTE]
+> Dans la deuxième vague de lancement de 2020, nous avons libéré des processus rationalisés pour la configuration et la gestion des prix et des escomptes. Si vous êtes un nouveau client utilisant cette version, vous utilisez la nouvelle expérience. Si vous êtes un client existant, l’utilisation ou non de la nouvelle expérience dépend du fait que votre administrateur a activé ou non la fonctionnalité **Nouvelle tarification des ventes** dans **Gestion des fonctionnalités**. Pour plus d’informations, consultez [Activer les fonctionnalités à venir à l’avance](/dynamics365/business-central/dev-itpro/administration/feature-management).
+
 Vous devez définir les différentes ententes de prix et d'escompte qui s'appliquent lors d'achats effectués auprès de plusieurs fournisseurs de sorte que les valeurs et règles convenues s'appliquent aux documents achat créés à l'intention des fournisseurs.
 
 Lorsque vous avez enregistré des prix spéciaux et des escomptes de ligne pour les ventes et les achats, [!INCLUDE[prod_short](includes/prod_short.md)] s'assure que votre profit pour l'article est toujours optimal en calculant automatiquement le meilleur prix dans les documents achat et vente, sur les lignes journal article et projet. Pour plus d'informations, voir [Calcul du meilleur prix](purchasing-how-record-purchase-price-discount-payment-agreements.md#best-price-calculation).
@@ -31,15 +34,29 @@ En ce qui concerne les remises, vous pouvez définir et utiliser deux types de r
 | **Remise ligne achat** |Un escompte sous forme de montant inséré sur les lignes achat s'il existe une certaine combinaison de fournisseur, d'article, de quantité minimum, d'unité de mesure ou de date de début/date de fin. Cela fonctionne de la même manière que pour les prix d'achat. |
 | **Remise facture** |Un escompte sous forme de pourcentage qui est soustrait du total du document si la valeur de toutes les lignes d'un document achat dépasse un montant minimal donné. |
 
-Dans la mesure où les remises ligne achat et les prix achat sont basés sur une combinaison article/fournisseur, vous pouvez également effectuer cette configuration à partir de la fiche article dans laquelle sont définies les règles et valeurs. Pour plus d'informations, voir [Enregistrer de nouveaux articles](inventory-how-register-new-items.md).
+Dans la mesure où les remises ligne achat et les prix achat sont basés sur une combinaison article/fournisseur, vous pouvez également effectuer cette configuration à partir de la fiche article dans laquelle sont définies les règles et valeurs. Pour plus d'informations, reportez vous à [Enregistrer de nouveaux articles](inventory-how-register-new-items.md).
 
 ## <a name="to-set-up-a-special-purchase-price-for-a-vendor"></a>Pour configurer un prix d'achat spécial pour un fournisseur
+
+#### <a name="current-experience"></a>[Expérience actuelle](#tab/current-experience)  
+
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche fournisseur appropriée, puis sélectionnez l'action **Prix**.
-
-    Le champ **Type d'achat** est prérempli avec **Fournisseur** et le champ **Code achat** est prérempli avec le numéro du fournisseur.
 3. Renseignez les champs de la ligne selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Remplissez une ligne pour chaque combinaison pour laquelle le fournisseur vous accorde un escompte ligne achat.
+
+#### <a name="new-experience"></a>[Nouvelle expérience](#tab/new-experience)  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs**, puis sélectionnez le lien associé.
+2. Choisissez le fournisseur, puis sélectionnez l’action **Listes prix vente**. 
+3. Sélectionnez **Nouveau** pour créer une liste prix achat.
+4. Sur les raccourcis **Général** et **Taxes**, complétez les champs, comme nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+5. Pour ajouter des éléments à la liste, effectuez l’une des opérations suivantes :
+   * Pour ajouter de nombreux éléments, choisissez **Proposer lignes**, puis entrez des critères de filtre pour spécifier les types d’éléments à ajouter. Si vous le souhaitez, vous pouvez également saisir des paramètres supplémentaires pour les articles spécifiques à la liste de prix. Si nécessaire, vous pouvez les modifier ultérieurement.
+   * Pour copier des articles d’une autre liste de prix, choisissez **Copier lignes**, puis choisissez la liste de prix à copier.
+   * Pour ajouter des éléments manuellement, dans la grille, dans le champ **Type de produit**, choisissez le type de produit auquel la liste de prix est destinée. En fonction de votre sélection, renseignez les champs restants selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+6. Pour commencer à utiliser la liste de prix, dans le champ **État**, choisissez **Actif**.
+
+---
 
 ## <a name="to-set-up-a-line-discount-for-a-vendor"></a>Pour configurer un escompte ligne pour un fournisseur
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs**, puis sélectionnez le lien associé.
