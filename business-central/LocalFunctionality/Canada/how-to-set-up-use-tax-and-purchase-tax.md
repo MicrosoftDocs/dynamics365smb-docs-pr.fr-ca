@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: bb7ccfc7828e7729925418a58ae838de5bb030b4
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: 172555e329d650489893c3f4583491046d02aa6d
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5379737"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5779189"
 ---
 # <a name="set-up-use-tax-and-purchase-tax-in-the-canadian-version"></a>Configurer la taxe de service et la taxe d'achat dans la version canadienne
 

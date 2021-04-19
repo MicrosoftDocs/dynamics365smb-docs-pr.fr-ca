@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 7ebe18caba61396d62ae8e67bd066401a069152e
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: f2242bc35becb569e1ccecb4c55314d053816378
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5379743"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5773274"
 ---
 # <a name="set-up-unrealized-sales-tax-and-sales-payment-discounts-in-the-canadian-version"></a>Configurer les escomptes de paiement de vente et la taxe de vente non réalisée dans la version canadienne
 

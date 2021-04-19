@@ -2,20 +2,20 @@
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: include
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 408275139c5fae50c59d3df4a92feac60a2c9026
-ms.sourcegitcommit: 428f180604e5afcf94fa0e92a0615f58c88e13cd
+ms.openlocfilehash: 28ef50ac5e297a81bd51f17cd36f8125c99751ee
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "3959615"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5771423"
 ---
 Vous pouvez créer des dépôts pour tenir à jour un enregistrement de transaction contenant des renseignements pouvant être appliqués aux notes de crédit et factures en attente.  
 
 La page **Dépôt** spécifie des informations sur les dépôts bancaires. Ces informations incluent le numéro de compte bancaire, le montant de dépôt total, les lignes dépôt, la date de report, la date de document, le code de département, le code de devise et les notes de dépôt. Vous pouvez utiliser cette page pour créer des dépôts, reporter des dépôts, imprimer des dépôts, afficher des commentaires sur les dépôts ou consulter un rapport qui indique le montant du dépôt à rapprocher.
 
-Le rapport **Dépôt**affiche les dépôts clients et fournisseurs avec le montant du dépôt initial, le montant du dépôt qui reste ouvert et le montant affecté. Le rapport indique également le montant total des dépôts reportés à rapprocher.
+Le rapport **Dépôt** affiche les dépôts clients et fournisseurs avec le montant du dépôt initial, le montant du dépôt qui reste ouvert et le montant affecté. Le rapport indique également le montant total des dépôts reportés à rapprocher.
 
 Les lignes dépôt contiennent des informations sur les différents éléments faisant l'objet de dépôts, tels que les chèques des clients. Ces informations comprennent la date et le numéro du document, le type et le numéro du compte et le montant. Le total des montants sur les lignes doit s'additionner pour correspondre au montant total du dépôt inscrit dans l'en-tête du dépôt.
 
