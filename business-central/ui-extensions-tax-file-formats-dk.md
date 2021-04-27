@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: extension, bank, formats
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 44811b83fc80faff7f48aa983a4b433d7c5c4dbd
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: 3bce5ae507aa77ca21d927bd0986cdf19c2df8f5
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5376947"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5788268"
 ---
 # <a name="the-tax-file-formats-dk-extension"></a>Extension Formats de fichier fiscal (DK)
 Si vous effectuez des transactions commerciales avec des compagnies, ou des succursales/filiales internes situées, dans d'autres pays de l'UE, vous devez déclarer les informations concernant ces activités au SKAT et à l'Office des statistiques du Danemark. Si vous utilisez les fonctionnalités de déclaration de TVA et Intrastat de [!INCLUDE[prod_short](includes/prod_short.md)], cette extension vous donne la garantie que le fichier que vous exportez est compatible avec les exigences de ces organisations. L'extension ajoute les codeunits de soumission des lignes d'exportation Intrastat et du fichier d'exportation de la déclaration MS-ECSL à la configuration de votre déclaration de TVA, de sorte que vous pouvez exporter les données au nouveau format immédiatement.

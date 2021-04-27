@@ -1,5 +1,5 @@
 ---
-title: Extensions Nuage intelligent Business Central pour la migration nuage | Microsoft Docs
+title: Extensions de migration vers le nuage
 description: Utilisez les extensions de migration nuage pour migrer vos données locales vers Business Central Online. Ces extensions déplacent vos données locales vers le nuage afin que vous puissiez utiliser Business Central Online avec vos données existantes.
 author: jenolson
 ms.service: dynamics365-business-central
@@ -9,16 +9,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize, import, implement
 ms.reviewer: edupont
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 5d6110744f14cb959494e2fd5c9b970bd339a77f
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: f02face497affd1fd1467c118e10e69f2be39b85
+ms.sourcegitcommit: 951d3c9d541f0b1d26712d37e253c2958dae3321
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5377358"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889134"
 ---
-# <a name="intelligent-cloud-extensions-for-cloud-migration"></a>Extensions Nuage intelligent pour la migration vers le nuage
+# <a name="cloud-migration-extensions-for-migrating-to-business-central-online"></a>Extensions de migration vers le nuage pour la migration vers Business Central Online
 
 En fonction de votre solution sur site, vous devez utiliser différentes extensions pour connecter vos données à [!INCLUDE[prod_short](includes/prod_short.md)] en ligne afin de migrer votre solution vers le nuage.  
 
@@ -43,8 +43,7 @@ Si vous utilisez Dynamics SL, obtenez l'extension **Base du nuage intelligent**,
 
 ## <a name="see-also"></a>Voir aussi
 
-[Informations intelligentes](about-intelligent-cloud.md)  
-[Extension Base du nuage intelligent](ui-extensions-intelligent-cloud.md)  
-
+[Extension Base de migration vers le nuage](ui-extensions-intelligent-cloud.md)  
+[Migration des données locales vers Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-data)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

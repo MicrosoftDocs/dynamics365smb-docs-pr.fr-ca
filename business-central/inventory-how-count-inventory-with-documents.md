@@ -1,31 +1,32 @@
 ---
-title: Faire l’inventaire avec la fonctionnalité basée sur un document
-description: Décrit comment effectuer l'inventaire à l'aide des pages Commande d'inventaire physique et Enregistrement d'inventaire physique.
+title: Inventaire et ajustement d'inventaire
+description: Décrit comment effectuer l'inventaire physique à l'aide des pages Commandes d'inventaire physique et Enregistrement de l'inventaire physique et effectuer des ajustements négatifs ou positifs avec les documents d'inventaire.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: adjustment, status, negative, positive, increase, decrease
-ms.date: 10/20/2020
+ms.search.keywords: adjustment, status, negative, positive, increase, decrease, inventory
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: be22209240f3bff70619a31f60cb0acac7e51228
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: 8804f64dd2cee60514d18785feee4f8fd6cf67aa
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5393184"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5785958"
 ---
-# <a name="count-inventory-using-documents"></a>Faire l'inventaire à l'aide de documents
+# <a name="count-and-adjust-inventory-using-documents"></a>Faire l’inventaire et l'ajuster à l’aide de documents
 
-Vous pouvez effectuer l'inventaire d'un inventaire physique de vos articles à l'aide des documents Commande d'inventaire physique et Enregistrement d'inventaire physique. La page **Commande d'inventaire physique** est utilisée pour organiser le projet d'inventaire complet, par exemple un par emplacement. La page **Enregistrement d'inventaire physique** est utilisée pour communiquer et capturer le nombre réel d'articles. Vous pouvez créer plusieurs enregistrements pour une commande, par exemple, pour répartir les groupes d'articles vers différents employés.
+Vous pouvez effectuer l'inventaire d'un inventaire physique de vos articles à l'aide des documents Commande d'inventaire physique et Enregistrement d'inventaire physique. La page **Commande d'inventaire physique** est utilisée pour organiser le projet d'inventaire complet, par exemple un par emplacement. La page **Enregistrement d'inventaire physique** est utilisée pour communiquer et capturer le nombre réel d’articles. Vous pouvez créer plusieurs enregistrements pour une commande, par exemple, pour répartir les groupes d'articles vers différents employés.
 
 Le rapport **Enregistrement d'inventaire physique** peut être imprimé depuis chaque enregistrement et contient des champs de quantité vides pour saisir l'inventaire. Quand un utilisateur a terminé l’inventaire et quand les quantités sont saisies sur la page **Enregistrement d'inventaire physique**, sélectionnez l’action **Terminer**. Cela transfère les quantités vers les lignes concernées sur la page **Enregistrement d'inventaire physique**. La fonctionnalité s'assure qu'aucun inventaire d'articles ne peut être enregistré à deux reprises.  
 
 > [!NOTE]
-> Cet article décrit comment effectuer un inventaire à l’aide de documents, une méthode qui offre un plus grand contrôle et prend en charge la répartition de l’inventaire vers plusieurs employés. Vous pouvez également effectuer la tâche à l’aide de journaux, comme les pages **Journaux inventaire physique** et **Journaux inventaire physique entrepôt**. Pour plus d'informations, voir [Inventaire, ajustement et reclassement de l'inventaire avec les journaux](inventory-how-count-adjust-reclassify.md).<br /><br />
-> Notez que si vous utilisez la fonctionnalité Zones, vous ne pouvez pas utiliser les commandes d'inventaire physique. À la place, utilisez la page **Journal inventaire physique entrepôt** pour faire l’inventaire de vos écritures d’entrepôt avant de les synchroniser avec les écritures article.
+> L'utilisation de documents pour effectuer un inventaire offre un plus grand contrôle et prend en charge la répartition de l’inventaire vers plusieurs employés. Vous pouvez également effectuer la tâche à l’aide de journaux, comme les pages **Journaux inventaire physique** et **Journaux inventaire physique entrepôt**. Pour plus d'informations, voir [Inventaire, ajustement et reclassement de l'inventaire avec les journaux](inventory-how-count-adjust-reclassify.md). Cet article décrit comment effectuer un inventaire physique à l'aide de documents.
+>
+> Si vous utilisez des zones, vous ne pouvez pas utiliser de commandes d'inventaire. À la place, utilisez la page **Journal inventaire physique entrepôt** pour faire l’inventaire de vos écritures d’entrepôt avant de les synchroniser avec les écritures article.
 
 Réaliser l'inventaire à l'aide de documents se produit comme suit :
 
@@ -77,7 +78,6 @@ En cas de décompte manuel, vous pouvez imprimer une liste, le rapport **Enregis
 9. Choisissez l'action **Imprimer** pour préparer le document physique que les employés utiliseront pour écrire les quantités comptabilisées.
 
 ## <a name="to-finish-a-physical-inventory-recording"></a>Pour finaliser un enregistrement d'inventaire physique
-
 Lorsque les employés ont comptabilisé les quantités d'inventaire, vous devez préparer leur enregistrement dans le système.
 
 1. Sur la page **Liste des enregistrements d'inventaire physique**, sélectionnez l'enregistrement d'inventaire physique que vous souhaitez terminer, puis sélectionnez l'action **Modifier**.
@@ -185,8 +185,52 @@ Un article suivi est enregistré dans l'inventaire avec la série de numéros «
 
 Sur la page **Commande d'inventaire physique**, le champ **Qté négative (de base)** contiendra *8*. Pour la ligne de commande en question, la page **Liste traçabilité inventaire physique** contiendra les quantités positives ou négatives pour les numéros de lot individuels.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="inventory-documents"></a>Documents d'inventaire
+Les types de documents suivants sont utiles pour gérer votre entrepôt :
 
+- Utilisez **Réception d'inventaire** pour enregistrer les ajustements positifs des articles en fonction de la qualité, de la quantité et du coût.
+- Utilisez **Livraisons d'inventaire** pour radier les marchandises manquantes ou endommagées.
+
+Vous pouvez imprimer ces documents à tout moment, les libérer et les rouvrir, et attribuer des valeurs communes, y compris des dimensions, dans l'en-tête. Si vous souhaitez réimprimer les documents après leur publication, vous pouvez le faire sur les pages **Réception inventaire reportée** et **Livraison inventaire reportée**.
+
+> [!NOTE]
+> Avant de pouvoir utiliser ces documents, vous devez spécifier une série de numéros pour créer leurs identificateurs. Pour plus d’informations, voir la section suivante.
+
+### <a name="to-set-up-numbering-for-inventory-documents"></a>Pour configurer la numérotation des documents d'inventaire
+La procédure suivante indique comment définir la numérotation des documents inventaire.
+
+1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration inventaire**, puis sélectionnez le lien associé.
+2. Sur le Raccourci **Numérotation**, spécifiez dans les champs suivants la série de numéros pour les documents :
+   - **N° réception inventaire**  
+   - **N° réceptions inventaire reportées**  
+   - **N° livraison inventaire**  
+   - **N° livraison inventaire reportée**  
+
+### <a name="to-create-and-post-an-inventory-document"></a>Pour créer et reporter un document d'inventaire
+La procédure suivante montre comment créer, imprimer et reporter un reçu d'inventaire. La procédure est identique pour des livraisons d'inventaire.
+
+1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Réceptions inventaire**, puis sélectionnez le lien associé.  
+2. Dans l'en-tête de la page **Réception de inventaire**, choisissez l'emplacement dans le champ **Code d'emplacement**, puis remplissez les champs restants si nécessaire.
+3. Sur le Raccourci **Lignes**, dans le champ **Article**, choisissez l'article en inventaire. Dans le champ **Quantité**, saisissez le nombre d’articles à ajouter. 
+4. Pour imprimer un rapport **Réception inventaire** de la page **Réception inventaire**, choisissez l'action **Imprimer**.
+
+Les fonctions suivantes sont disponibles sur la page **Réception inventaire** :
+
+- Choisissez les actions **Libérer** ou **Rouvrir** pour définir l'état de la prochaine phase de traitement  
+- Choisissez l'action **Reporter** pour reporter la réception inventaire, ou choisissez **Publier et imprimer** pour reporter la réception et imprimer le rapport de test  
+
+## <a name="printing-inventory-documents"></a>Impression des documents inventaire
+Vous pouvez spécifier les rapports à imprimer à différentes phases en choisissant l'une des options suivantes dans le champ **Utilisation** de la page **Sélection de rapports – inventaire** :
+
+- Réception inventaire
+- Livraison inventaire
+- Réception inventaire reportée
+- Livraison inventaire reportée
+
+> [!NOTE]
+> Les rapports disponibles peuvent varier en fonction de la localisation de votre pays. L'application de base n'inclut aucune disposition.
+
+## <a name="see-also"></a>Voir aussi
 [Comptabiliser, ajuster et reclasser l'inventaire avec les journaux](inventory-how-count-adjust-reclassify.md)  
 [Utiliser les numéros de lot et de série](inventory-how-work-item-tracking.md)  
 [Inventaire](inventory-manage-inventory.md)  
