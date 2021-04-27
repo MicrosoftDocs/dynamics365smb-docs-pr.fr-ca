@@ -8,29 +8,29 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, supply, planning, reordering, replenishment
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 154714e5fff91e4287895b8b447a179063530c10
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: 73fcf9a9cb79259f617ef95ec967d01b9adfb621
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5388584"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5785304"
 ---
-# <a name="design-details-supply-planning"></a><span data-ttu-id="de91d-103">Détails de conception : planification de l'approvisionnement</span><span class="sxs-lookup"><span data-stu-id="de91d-103">Design Details: Supply Planning</span></span>
-<span data-ttu-id="de91d-104">Cette documentation fournit une analyse technique détaillée des concepts et principes qui sont utilisés dans les fonctions Supply Planning dans [!INCLUDE[prod_short](includes/prod_short.md)].</span><span class="sxs-lookup"><span data-stu-id="de91d-104">This documentation provides detailed technical insight to the concepts and principles that are used within the Supply Planning features in [!INCLUDE[prod_short](includes/prod_short.md)].</span></span>  
+# <a name="design-details-supply-planning"></a><span data-ttu-id="3b334-103">Détails de conception : planification de l'approvisionnement</span><span class="sxs-lookup"><span data-stu-id="3b334-103">Design Details: Supply Planning</span></span>
+<span data-ttu-id="3b334-104">Cette documentation fournit une analyse technique détaillée des concepts et principes qui sont utilisés dans les fonctions Supply Planning dans [!INCLUDE[prod_short](includes/prod_short.md)].</span><span class="sxs-lookup"><span data-stu-id="3b334-104">This documentation provides detailed technical insight to the concepts and principles that are used within the Supply Planning features in [!INCLUDE[prod_short](includes/prod_short.md)].</span></span>  
 
-<span data-ttu-id="de91d-105">Elle explique comment le système de planification fonctionne et comment modifier les algorithmes pour répondre aux exigences de planification dans différents environnements.</span><span class="sxs-lookup"><span data-stu-id="de91d-105">It explains how the planning system works and how to adjust the algorithms to meet planning requirements in different environments.</span></span> <span data-ttu-id="de91d-106">Il présente d'abord les concepts centraux de la solution, puis décrit la logique du mécanisme central, l'équilibrage d'approvisionnement, avant d'indiquer la manière dont la planification de l'inventaire est exécutée à l'aide de méthodes de réapprovisionnement.</span><span class="sxs-lookup"><span data-stu-id="de91d-106">It first introduces central solution concepts and then describes the logic of the central mechanism, supply balancing, before proceeding to explain how inventory planning is performed with the use of reordering policies.</span></span>  
+<span data-ttu-id="3b334-105">Elle explique comment le système de planification fonctionne et comment modifier les algorithmes pour répondre aux exigences de planification dans différents environnements.</span><span class="sxs-lookup"><span data-stu-id="3b334-105">It explains how the planning system works and how to adjust the algorithms to meet planning requirements in different environments.</span></span> <span data-ttu-id="3b334-106">Il présente d'abord les concepts centraux de la solution, puis décrit la logique du mécanisme central, l'équilibrage d'approvisionnement, avant d'indiquer la manière dont la planification de l'inventaire est exécutée à l'aide de méthodes de réapprovisionnement.</span><span class="sxs-lookup"><span data-stu-id="3b334-106">It first introduces central solution concepts and then describes the logic of the central mechanism, supply balancing, before proceeding to explain how inventory planning is performed with the use of reordering policies.</span></span>  
 
-## <a name="in-this-section"></a><span data-ttu-id="de91d-107">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="de91d-107">In This Section</span></span>  
-[<span data-ttu-id="de91d-108">Détails de conception : concepts centraux du système de planification</span><span class="sxs-lookup"><span data-stu-id="de91d-108">Design Details: Central Concepts of the Planning System</span></span>](design-details-central-concepts-of-the-planning-system.md)  
-[<span data-ttu-id="de91d-109">Détails de conception : réservation, chaînage et message d'action</span><span class="sxs-lookup"><span data-stu-id="de91d-109">Design Details: Reservation, Order Tracking, and Action Messaging</span></span>](design-details-reservation-order-tracking-and-action-messaging.md)  
-[<span data-ttu-id="de91d-110">Détails de conception : équilibrage de la demande et de l'approvisionnement</span><span class="sxs-lookup"><span data-stu-id="de91d-110">Design Details: Balancing Demand and Supply</span></span>](design-details-balancing-demand-and-supply.md)  
-[<span data-ttu-id="de91d-111">Détails de conception : gestion des méthodes de réapprovisionnement</span><span class="sxs-lookup"><span data-stu-id="de91d-111">Design Details: Handling Reordering Policies</span></span>](design-details-handling-reordering-policies.md)  
-[<span data-ttu-id="de91d-112">Détails de conception : paramètres de planification</span><span class="sxs-lookup"><span data-stu-id="de91d-112">Design Details: Planning Parameters</span></span>](design-details-planning-parameters.md)  
-[<span data-ttu-id="de91d-113">Détails de conception : tableau d'affectation de planification</span><span class="sxs-lookup"><span data-stu-id="de91d-113">Design Details: Planning Assignment Table</span></span>](design-details-planning-assignment-table.md)  
-[<span data-ttu-id="de91d-114">Détails de conception : demande à un magasin vide.</span><span class="sxs-lookup"><span data-stu-id="de91d-114">Design Details: Demand at Blank Location</span></span>](design-details-demand-at-blank-location.md)  
-[<span data-ttu-id="de91d-115">Détails de conception : transferts de planification</span><span class="sxs-lookup"><span data-stu-id="de91d-115">Design Details: Transfers in Planning</span></span>](design-details-transfers-in-planning.md)
+## <a name="in-this-section"></a><span data-ttu-id="3b334-107">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="3b334-107">In This Section</span></span>  
+[<span data-ttu-id="3b334-108">Détails de conception : concepts centraux du système de planification</span><span class="sxs-lookup"><span data-stu-id="3b334-108">Design Details: Central Concepts of the Planning System</span></span>](design-details-central-concepts-of-the-planning-system.md)  
+[<span data-ttu-id="3b334-109">Détails de conception : réservation, chaînage et message d'action</span><span class="sxs-lookup"><span data-stu-id="3b334-109">Design Details: Reservation, Order Tracking, and Action Messaging</span></span>](design-details-reservation-order-tracking-and-action-messaging.md)  
+[<span data-ttu-id="3b334-110">Détails de conception : équilibrage de la demande et de l'approvisionnement</span><span class="sxs-lookup"><span data-stu-id="3b334-110">Design Details: Balancing Demand and Supply</span></span>](design-details-balancing-demand-and-supply.md)  
+[<span data-ttu-id="3b334-111">Détails de conception : gestion des méthodes de réapprovisionnement</span><span class="sxs-lookup"><span data-stu-id="3b334-111">Design Details: Handling Reordering Policies</span></span>](design-details-handling-reordering-policies.md)  
+[<span data-ttu-id="3b334-112">Détails de conception : paramètres de planification</span><span class="sxs-lookup"><span data-stu-id="3b334-112">Design Details: Planning Parameters</span></span>](design-details-planning-parameters.md)  
+[<span data-ttu-id="3b334-113">Détails de conception : tableau d'affectation de planification</span><span class="sxs-lookup"><span data-stu-id="3b334-113">Design Details: Planning Assignment Table</span></span>](design-details-planning-assignment-table.md)  
+[<span data-ttu-id="3b334-114">Détails de conception : demande à un magasin vide.</span><span class="sxs-lookup"><span data-stu-id="3b334-114">Design Details: Demand at Blank Location</span></span>](design-details-demand-at-blank-location.md)  
+[<span data-ttu-id="3b334-115">Détails de conception : transferts de planification</span><span class="sxs-lookup"><span data-stu-id="3b334-115">Design Details: Transfers in Planning</span></span>](design-details-transfers-in-planning.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

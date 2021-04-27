@@ -1,6 +1,6 @@
 ---
-title: Base du nuage intelligent | Microsoft Docs
-description: Utilisez l'extension Base du nuage intelligent pour connecter votre solution sur site à Business Central en ligne.
+title: Extension Base de migration vers le nuage
+description: Utilisez l'extension Base de migration vers le nuage pour connecter votre solution sur site à Business Central Online.
 author: edupont04
 manager: edupont
 ms.service: dynamics365-business-central
@@ -9,26 +9,25 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize, import, implement
-ms.date: 12/04/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: c3bf4f306911ff3ca0533a36cdc2555c3ab8b289
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: 7b6c312192f2c20ce54c20241d2cc77e3ca1fda5
+ms.sourcegitcommit: 951d3c9d541f0b1d26712d37e253c2958dae3321
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5393634"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889190"
 ---
-# <a name="intelligent-cloud-base-extension"></a><span data-ttu-id="c1fb7-103">Extension Base du nuage intelligent</span><span class="sxs-lookup"><span data-stu-id="c1fb7-103">Intelligent Cloud Base Extension</span></span>
+# <a name="cloud-migration-base-extension"></a><span data-ttu-id="a2ab4-103">Extension Base de migration vers le nuage</span><span class="sxs-lookup"><span data-stu-id="a2ab4-103">Cloud Migration Base Extension</span></span>
 
-<span data-ttu-id="c1fb7-104">Cette extension vous guidera tout au long du processus de configuration d’une connexion entre votre solution sur site et votre environnement [!INCLUDE [prod_short](includes/prod_short.md)] en ligne, soit parce que vous migrez vers le nuage, soit parce que vous vous connectez au nuage intelligent à partir de votre solution sur site.</span><span class="sxs-lookup"><span data-stu-id="c1fb7-104">This extension will take you through the process to configure a connection between your on-premises solution and your [!INCLUDE [prod_short](includes/prod_short.md)] online environment, either because you are migrating to the cloud, or because you're connecting to the Intelligent Cloud from your on-premises solution.</span></span>  
+<span data-ttu-id="a2ab4-104">Cette extension vous guidera tout au long du processus de configuration d'une connexion entre votre solution sur site et votre environnement [!INCLUDE [prod_short](includes/prod_short.md)] Online lorsque vous démarrez la migration vers le nuage.</span><span class="sxs-lookup"><span data-stu-id="a2ab4-104">This extension will take you through the process to configure a connection between your on-premises solution and your [!INCLUDE [prod_short](includes/prod_short.md)] online environment when you start the migration to the cloud.</span></span>  
 
-<span data-ttu-id="c1fb7-105">Une fois la connexion configurée, vous pouvez migrer les données ou gérer les réplications de données de votre solution sur site vers votre locataire de nuage [!INCLUDE[prod_short](includes/prod_short.md)].</span><span class="sxs-lookup"><span data-stu-id="c1fb7-105">Once the connection is configured, you can migrate data or manage data replications from your on-premises solution to your [!INCLUDE[prod_short](includes/prod_short.md)] cloud tenant.</span></span> <span data-ttu-id="c1fb7-106">Cette extension doit s'exécuter en combinaison avec une extension de réplication de données disponible pour votre solution sur site spécifique.</span><span class="sxs-lookup"><span data-stu-id="c1fb7-106">This extension will work in conjunction with a data replication extension available for your specific on-premises solution.</span></span> <span data-ttu-id="c1fb7-107">Pour plus d’informations, consultez [Exécuter l’outil de migration vers le nuage](/dynamics365/business-central/dev-itpro/administration/migration-tool).</span><span class="sxs-lookup"><span data-stu-id="c1fb7-107">For more information, see [Running the Cloud Migration Tool](/dynamics365/business-central/dev-itpro/administration/migration-tool).</span></span>  
+<span data-ttu-id="a2ab4-105">Une fois la connexion configurée, vous pouvez migrer les données de votre solution sur site vers [!INCLUDE[prod_short](includes/prod_short.md)] Online.</span><span class="sxs-lookup"><span data-stu-id="a2ab4-105">Once the connection is configured, you can migrate data from your on-premises solution to [!INCLUDE[prod_short](includes/prod_short.md)] online.</span></span> <span data-ttu-id="a2ab4-106">Cette extension doit s'exécuter en combinaison avec une extension de réplication de données disponible pour votre solution sur site spécifique.</span><span class="sxs-lookup"><span data-stu-id="a2ab4-106">This extension will work in conjunction with a data replication extension available for your specific on-premises solution.</span></span> <span data-ttu-id="a2ab4-107">Pour plus d’informations, consultez [Exécuter l’outil de migration vers le nuage](/dynamics365/business-central/dev-itpro/administration/migration-tool).</span><span class="sxs-lookup"><span data-stu-id="a2ab4-107">For more information, see [Running the Cloud Migration Tool](/dynamics365/business-central/dev-itpro/administration/migration-tool).</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="c1fb7-108">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="c1fb7-108">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a2ab4-108">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="a2ab4-108">See Also</span></span>
 
-[<span data-ttu-id="c1fb7-109">Informations intelligentes</span><span class="sxs-lookup"><span data-stu-id="c1fb7-109">Intelligent Insights</span></span>](about-intelligent-cloud.md)  
-[<span data-ttu-id="c1fb7-110">Exécution de l’outil de migration vers le nuage</span><span class="sxs-lookup"><span data-stu-id="c1fb7-110">Running the Cloud Migration Tool</span></span>](/dynamics365/business-central/dev-itpro/administration/migration-tool)  
-[<span data-ttu-id="c1fb7-111">Extensions Nuage intelligent pour la migration vers le nuage</span><span class="sxs-lookup"><span data-stu-id="c1fb7-111">Intelligent Cloud Extensions for Cloud Migration</span></span>](ui-extensions-data-replication.md)  
+[<span data-ttu-id="a2ab4-109">Exécution de l’outil de migration vers le nuage</span><span class="sxs-lookup"><span data-stu-id="a2ab4-109">Running the Cloud Migration Tool</span></span>](/dynamics365/business-central/dev-itpro/administration/migration-tool)  
+[<span data-ttu-id="a2ab4-110">Extensions Nuage intelligent pour la migration vers le nuage</span><span class="sxs-lookup"><span data-stu-id="a2ab4-110">Intelligent Cloud Extensions for Cloud Migration</span></span>](ui-extensions-data-replication.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
