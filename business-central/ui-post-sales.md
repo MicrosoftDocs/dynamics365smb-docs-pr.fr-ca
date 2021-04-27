@@ -1,5 +1,5 @@
 ---
-title: Report des documents vente | Microsoft Docs
+title: Report de documents vente
 description: En savoir plus sur les différentes fonctions de report pour reporter des documents vente et la manière de mettre à jour les documents reportés.
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms.date: 12/03/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: e0d1bd7770eb3bb44a2e9b3203ffa158a246cfa9
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: e59c48c31e897d235c7920f4231313a2332fdf06
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5392059"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5783269"
 ---
 # <a name="posting-sales"></a>Report des ventes
 
@@ -28,7 +28,8 @@ Sous le menu **Report** dans un document vente, vous pouvez choisir parmi les fo
 * **Valider par lot**
 * **Rapport de test**
 
-> [REMARQUE!] Pour les documents de vente, vous pouvez également voir les options liées à la fonctionnalité de paiements anticipés. Pour plus d’informations, voir [Facturation des paiements anticipés](finance-invoice-prepayments.md). 
+> [!NOTE]
+> Pour les documents de vente, vous pouvez également voir les options liées à la fonctionnalité de paiement anticipé. Pour plus d’informations, voir [Facturation des paiements anticipés](finance-invoice-prepayments.md).
 
 Lorsque vous avez renseigné toutes les lignes et entré toutes les informations du document de vente, vous pouvez le reporter. Cela crée une livraison et une facture.
 
@@ -65,5 +66,4 @@ Vous pouvez modifier certains champs dans les documents d'achat reportés, tels 
 [Recherche de pages et d'informations avec Tell Me](ui-search.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]  

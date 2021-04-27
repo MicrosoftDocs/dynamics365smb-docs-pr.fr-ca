@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 5cb802e98c44f9049ec6774b1cc2045b94c46f47
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: 8f795c5c6d33e6b2609ff91bdf196ad82ba71f9d
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5384259"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5774596"
 ---
 # <a name="track-document-lines"></a>Suivre des lignes document
 Vous pouvez afficher les documents associés aux lignes document de vente et aux lignes bon de commande, notamment à partir des lignes commande archivées. Les documents associés que vous pouvez suivre comprennent les devis, les livraisons, les réceptions et les commandes permanentes. Cela vous aide à identifier les documents utilisés pour traiter les commandes.  

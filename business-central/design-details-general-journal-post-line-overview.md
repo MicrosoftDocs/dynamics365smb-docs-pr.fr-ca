@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, general ledger, post
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 7ed6c60ddf1be51bbbc14eb8384cdc4ac05337ac
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: 6866e852899df3de3de2c4560c26ad981e46fda5
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5390234"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5777858"
 ---
 # <a name="general-journal-post-line-overview"></a>Aperçu de la ligne report de journal général
 Le Codeunit 12, **Journal général-Ligne report**, est l'objet d'application majeur pour le report dans le grand livre et est le seul emplacement pour insérer des écritures GL, TVA, et client et fournisseur. Ce codeunit est également utilisé pour toutes les opérations Affecter, Annuler l'affectation et Inverser.  

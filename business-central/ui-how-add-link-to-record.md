@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 6aa7018a43db8c663c209894e118518c3de2f7cf
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: 3acc0113cb14170b84363ab40a803da8b7551c75
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5393903"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5771145"
 ---
 # <a name="manage-attachments-links-and-notes-on-cards-and-documents"></a>Gérer les pièces jointes, les liens et les notes sur les fiches et les documents
 
@@ -26,7 +26,9 @@ Pour afficher ou modifier l’un de ces types d’informations jointes, vous dev
 Les pièces jointes, les liens et les notes restent attachés au fur et à mesure du traitement de la fiche ou du document dans d'autres états, par exemple d'un document de vente en cours vers une facture vente reportée. Cependant, aucun type de pièce jointe n'est sorti du système, par exemple lors de l'impression ou de l'enregistrement dans un fichier.
 
 > [!NOTE]
-> Lorsque vous livrez et facturez partiellement un document de vente ou un bon de commande, la pièce jointe ne sera annexée qu'à la facture finale de cette commande. De même, lorsque vous facturez à l'aide de la fonction Reports, la pièce jointe est uniquement annexée aux écritures pour le document, mais pas pour les écritures report.
+> Lorsque vous livrez et facturez partiellement un document de vente ou un bon de commande, la pièce jointe ne sera annexée qu'à la facture finale de cette commande. De même, lorsque vous facturez à l’aide de la fonction Reports, la pièce jointe est annexé aux écritures GL pour le document, mais pas pour les écritures report.
+>
+> Si vous supprimez une commande avant qu'elle ne soit facturée, la pièce jointe est également supprimée. Lorsque vous facturez des bons de commande à l'aide de l'action Obtenir des lignes de réception à partir d'une facture achat, la pièce jointe sur les bons de commande n'est pas ajoutée à la facture achat.
 
 ## <a name="to-attach-a-file-to-a-purchase-invoice"></a>Pour joindre un fichier à une facture achat
 Vous pouvez joindre tout type de fichier contenant du texte, des images ou des vidéos à une fiche ou à un document. Ceci est utile, par exemple, lorsque vous souhaitez stocker la facture d’un fournisseur sous forme de fichier PDF sur la facture achat correspondante dans [!INCLUDE[prod_short](includes/prod_short.md)].
