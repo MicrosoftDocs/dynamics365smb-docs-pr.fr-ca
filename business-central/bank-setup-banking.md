@@ -10,31 +10,31 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: Yodlee, feed, stream, data exchange, AMC, link
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: cddfc8c8bb053c314c6c6dddf98b2cfd86c9878f
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: a8e10161f2ad137cf26e1e28d8ccf89049b51ad8
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5386259"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5779692"
 ---
-# <a name="setting-up-banking"></a><span data-ttu-id="4e0bd-103">Paramétrage des opérations bancaires</span><span class="sxs-lookup"><span data-stu-id="4e0bd-103">Setting Up Banking</span></span>
-<span data-ttu-id="4e0bd-104">Les fiches compte bancaire vous permettent de gérer tous vos comptes bancaires, dans n'importe quelle devise.</span><span class="sxs-lookup"><span data-stu-id="4e0bd-104">Using bank account cards, you can keep track of all your bank accounts, in any currency.</span></span> <span data-ttu-id="4e0bd-105">Une fois que vous avez configuré les comptes bancaires, vous pouvez également utiliser l'option d'impression de chèque.</span><span class="sxs-lookup"><span data-stu-id="4e0bd-105">After you have set up the bank accounts, you can also use the check printing option.</span></span>
+# <a name="setting-up-banking"></a><span data-ttu-id="4b7ef-103">Paramétrage des opérations bancaires</span><span class="sxs-lookup"><span data-stu-id="4b7ef-103">Setting Up Banking</span></span>
+<span data-ttu-id="4b7ef-104">Les fiches compte bancaire vous permettent de gérer tous vos comptes bancaires, dans n'importe quelle devise.</span><span class="sxs-lookup"><span data-stu-id="4b7ef-104">Using bank account cards, you can keep track of all your bank accounts, in any currency.</span></span> <span data-ttu-id="4b7ef-105">Une fois que vous avez configuré les comptes bancaires, vous pouvez également utiliser l'option d'impression de chèque.</span><span class="sxs-lookup"><span data-stu-id="4b7ef-105">After you have set up the bank accounts, you can also use the check printing option.</span></span>
 
-<span data-ttu-id="4e0bd-106">Pour utiliser les services bancaires électroniques pour importer des relevés bancaires et exporter des paiements, vous devez d'abord configurer et activer les services en question.</span><span class="sxs-lookup"><span data-stu-id="4e0bd-106">To use electronic banking services to import bank statements and  export payments, you must set up and enable the involved services.</span></span>
+<span data-ttu-id="4b7ef-106">Pour utiliser les services bancaires électroniques pour importer des relevés bancaires et exporter des paiements, vous devez d'abord configurer et activer les services en question.</span><span class="sxs-lookup"><span data-stu-id="4b7ef-106">To use electronic banking services to import bank statements and  export payments, you must set up and enable the involved services.</span></span>
 
-| <span data-ttu-id="4e0bd-107">À</span><span class="sxs-lookup"><span data-stu-id="4e0bd-107">To</span></span> | <span data-ttu-id="4e0bd-108">Voir</span><span class="sxs-lookup"><span data-stu-id="4e0bd-108">See</span></span> |
+| <span data-ttu-id="4b7ef-107">À</span><span class="sxs-lookup"><span data-stu-id="4b7ef-107">To</span></span> | <span data-ttu-id="4b7ef-108">Voir</span><span class="sxs-lookup"><span data-stu-id="4b7ef-108">See</span></span> |
 | --- | --- |
-| <span data-ttu-id="4e0bd-109">Configurer des fiches compte bancaire pour chacun de vos comptes bancaires, de manière à ce que vous puissiez gérer vos transactions bancaires.</span><span class="sxs-lookup"><span data-stu-id="4e0bd-109">Set up bank account cards for each of your bank accounts, so you can keep track of banking transactions.</span></span> |[<span data-ttu-id="4e0bd-110">Configuration des comptes bancaires</span><span class="sxs-lookup"><span data-stu-id="4e0bd-110">Set Up Bank Accounts</span></span>](bank-how-setup-bank-accounts.md) |
-| <span data-ttu-id="4e0bd-111">Configurez un service externe qui vous permet d'importer des relevés de compte bancaire sous forme de flux bancaires pour l'affectation des paiements et les rapprochements bancaires.</span><span class="sxs-lookup"><span data-stu-id="4e0bd-111">Set up an external service that enables you to import bank statements as bank feeds for payment application and bank reconciliation.</span></span> |[<span data-ttu-id="4e0bd-112">Configurer le service Envestnet Yodlee Bank Feeds</span><span class="sxs-lookup"><span data-stu-id="4e0bd-112">Set Up the Envestnet Yodlee Bank Feeds Service</span></span>](bank-how-setup-bank-statement-service.md) |
-| <span data-ttu-id="4e0bd-113">Configurez un service externe qui vous permet d'exporter vos paiements vers la banque pour traitement et d'importer des relevés de compte bancaire sous forme de fichiers bancaires pour l'affectation des paiements et les rapprochements bancaires.</span><span class="sxs-lookup"><span data-stu-id="4e0bd-113">Set up an external service that enables you to export your payments to the bank for processing  and import bank statements as bank files for payment application and bank reconciliation.</span></span> |[<span data-ttu-id="4e0bd-114">Utilisation de l'extension AMC Banking 365 Fundamentals</span><span class="sxs-lookup"><span data-stu-id="4e0bd-114">Using the AMC Banking 365 Fundamentals extension</span></span>](ui-extensions-amc-banking.md) |
+| <span data-ttu-id="4b7ef-109">Configurer des fiches compte bancaire pour chacun de vos comptes bancaires, de manière à ce que vous puissiez gérer vos transactions bancaires.</span><span class="sxs-lookup"><span data-stu-id="4b7ef-109">Set up bank account cards for each of your bank accounts, so you can keep track of banking transactions.</span></span> |[<span data-ttu-id="4b7ef-110">Configuration des comptes bancaires</span><span class="sxs-lookup"><span data-stu-id="4b7ef-110">Set Up Bank Accounts</span></span>](bank-how-setup-bank-accounts.md) |
+| <span data-ttu-id="4b7ef-111">Configurez un service externe qui vous permet d'importer des relevés de compte bancaire sous forme de flux bancaires pour l'affectation des paiements et les rapprochements bancaires.</span><span class="sxs-lookup"><span data-stu-id="4b7ef-111">Set up an external service that enables you to import bank statements as bank feeds for payment application and bank reconciliation.</span></span> |[<span data-ttu-id="4b7ef-112">Configurer le service Envestnet Yodlee Bank Feeds</span><span class="sxs-lookup"><span data-stu-id="4b7ef-112">Set Up the Envestnet Yodlee Bank Feeds Service</span></span>](bank-how-setup-bank-statement-service.md) |
+| <span data-ttu-id="4b7ef-113">Configurez un service externe qui vous permet d'exporter vos paiements vers la banque pour traitement et d'importer des relevés de compte bancaire sous forme de fichiers bancaires pour l'affectation des paiements et les rapprochements bancaires.</span><span class="sxs-lookup"><span data-stu-id="4b7ef-113">Set up an external service that enables you to export your payments to the bank for processing  and import bank statements as bank files for payment application and bank reconciliation.</span></span> |[<span data-ttu-id="4b7ef-114">Utilisation de l'extension AMC Banking 365 Fundamentals</span><span class="sxs-lookup"><span data-stu-id="4b7ef-114">Using the AMC Banking 365 Fundamentals extension</span></span>](ui-extensions-amc-banking.md) |
 
-## <a name="see-also"></a><span data-ttu-id="4e0bd-115">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="4e0bd-115">See Also</span></span>
-[<span data-ttu-id="4e0bd-116">Rapprochement de comptes bancaires</span><span class="sxs-lookup"><span data-stu-id="4e0bd-116">Reconciling Bank Accounts</span></span>](bank-manage-bank-accounts.md)  
-[<span data-ttu-id="4e0bd-117">Gestion des comptes client</span><span class="sxs-lookup"><span data-stu-id="4e0bd-117">Managing Receivables</span></span>](receivables-manage-receivables.md)  
-[<span data-ttu-id="4e0bd-118">Gestion des comptes fournisseur</span><span class="sxs-lookup"><span data-stu-id="4e0bd-118">Managing Payables</span></span>](payables-manage-payables.md)  
-<span data-ttu-id="4e0bd-119">[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="4e0bd-119">[Working with [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)</span></span>
+## <a name="see-also"></a><span data-ttu-id="4b7ef-115">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="4b7ef-115">See Also</span></span>
+[<span data-ttu-id="4b7ef-116">Rapprochement de comptes bancaires</span><span class="sxs-lookup"><span data-stu-id="4b7ef-116">Reconciling Bank Accounts</span></span>](bank-manage-bank-accounts.md)  
+[<span data-ttu-id="4b7ef-117">Gestion des comptes client</span><span class="sxs-lookup"><span data-stu-id="4b7ef-117">Managing Receivables</span></span>](receivables-manage-receivables.md)  
+[<span data-ttu-id="4b7ef-118">Gestion des comptes fournisseur</span><span class="sxs-lookup"><span data-stu-id="4b7ef-118">Managing Payables</span></span>](payables-manage-payables.md)  
+<span data-ttu-id="4b7ef-119">[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)</span><span class="sxs-lookup"><span data-stu-id="4b7ef-119">[Working with [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)</span></span>
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

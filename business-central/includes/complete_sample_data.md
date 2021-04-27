@@ -2,14 +2,14 @@
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: include
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 42d004c8cd7111079b4c3ed512e8076a08f61ffe
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: 4e5c282f18074117f9c9e1c8d3f7ccccd40c5bd5
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4756402"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5771939"
 ---
 > [!NOTE]
-> <span data-ttu-id="068c5-101">Cette procédure pas à pas nécessite des exemples de données qui ne sont pas disponibles dans la compagnie de démonstration par défaut dans [!INCLUDE[prod_short](prod_short.md)].</span><span class="sxs-lookup"><span data-stu-id="068c5-101">This walkthrough requires sample data that is not available in the default demonstration company in [!INCLUDE[prod_short](prod_short.md)].</span></span> <span data-ttu-id="068c5-102">Pour plus d'informations, voir [Pour créer une compagnie avec des exemples de données complètes dans un sandbox](../across-how-create-sandbox-environment.md#to-create-a-company-with-complete-sample-data-in-a-sandbox).</span><span class="sxs-lookup"><span data-stu-id="068c5-102">For more information, see [To create a company with complete sample data in a sandbox](../across-how-create-sandbox-environment.md#to-create-a-company-with-complete-sample-data-in-a-sandbox).</span></span>  
+> <span data-ttu-id="749fb-101">Cette procédure pas à pas nécessite des exemples de données qui ne sont pas disponibles dans la compagnie de démonstration par défaut dans [!INCLUDE[prod_short](prod_short.md)].</span><span class="sxs-lookup"><span data-stu-id="749fb-101">This walkthrough requires sample data that is not available in the default demonstration company in [!INCLUDE[prod_short](prod_short.md)].</span></span> <span data-ttu-id="749fb-102">Pour plus d'informations, voir [Pour créer une compagnie avec des exemples de données complètes dans un sandbox](../across-how-create-sandbox-environment.md#to-create-a-company-with-complete-sample-data-in-a-sandbox).</span><span class="sxs-lookup"><span data-stu-id="749fb-102">For more information, see [To create a company with complete sample data in a sandbox](../across-how-create-sandbox-environment.md#to-create-a-company-with-complete-sample-data-in-a-sandbox).</span></span>  
