@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: Teams, MS Teams, Microsoft Teams, Skype, Link, Microsoft 365, contacts, search, messaging extensions
 ms.date: 04/12/2021
 ms.author: jswymer
-ms.openlocfilehash: 77108cab69a05165616ad5e1a44f1a3ddc9d4cd9
-ms.sourcegitcommit: e13b80d4e5141f414109e660e0918eae561acb36
+ms.openlocfilehash: 6d094e365ad0c7da73467e5a3160d926902c45d9
+ms.sourcegitcommit: c11ad91a389ed72532f5513654fdc7909b20aed9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5882511"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935171"
 ---
 # <a name="searching-for-customers-vendors-and-other-contacts-from-microsoft-teams"></a>Recherche de clients, de fournisseurs et autres contacts dans Microsoft Teams
 
@@ -25,7 +25,7 @@ ms.locfileid: "5882511"
 
 - Rechercher des contacts [!INCLUDE [prod_short](includes/prod_short.md)] dans la boîte de commande Teams ou dans la zone de rédaction du message. Les contacts peuvent inclure des prospects, des fournisseurs, des clients ou d'autres relations commerciales.
 - Partagez un contact sous forme de carte dans une conversation Teams.
-- Affichez des détails sur les informations de contact, l'historique des interactions et d'autres informations telles que les paiements impayés ou les documents ouverts.
+- Affichez des détails sur le contact, l′historique des interactions et d′autres informations telles que les paiements impayés ou les documents ouverts.
 
 ## <a name="prerequisites"></a>Conditions préalables
 

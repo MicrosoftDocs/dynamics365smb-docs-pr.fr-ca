@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: Teams, MS Teams, Microsoft Teams, Skype, Link, Microsoft 365, collaborate, collaboration, teamwork, faq, errors
 ms.date: 04/12/2021
 ms.author: jswymer
-ms.openlocfilehash: 86e540a34efba3fccbc0615cac692fd6c405bee0
-ms.sourcegitcommit: e13b80d4e5141f414109e660e0918eae561acb36
+ms.openlocfilehash: 6980e56f8bda750f9afae9bed6577bb1ab1fec49
+ms.sourcegitcommit: c11ad91a389ed72532f5513654fdc7909b20aed9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5882240"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935221"
 ---
 # <a name="teams-faq"></a>FAQ Teams
 
@@ -230,7 +230,7 @@ Oui. La recherche de contacts dans Teams est basée sur les API [!INCLUDE [prod_
 
 Après vous être connecté à l'application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams pour la première fois, l'application tentera de déterminer votre compagnie préférée dans [!INCLUDE [prod_short.md](includes/prod_short.md)]. Si l'application ne parvient pas à déterminer la compagnie, vous devrez peut-être accéder aux **Paramètres** et choisissez la compagnie dans laquelle vous souhaitez effectuer la recherche. Cette situation se produit, par exemple, si vous avez accès à plusieurs compagnies dans les environnements de votre organisation. Dans ce cas, vous devrez choisir une compagnie avant de pouvoir commencer la recherche.  
 
-L'application peut également vous demander de visiter les **Paramètres** si vous ne semblez pas avoir d'abonnement [!INCLUDE [prod_short.md](includes/prod_short.md)], aucun environnement [!INCLUDE [prod_short.md](includes/prod_short.md)], ou votre compte n'a pas de Licence [!INCLUDE [prod_short.md](includes/prod_short.md)].
+L′application peut également vous demander de visiter les **Paramètres** si vous n′avez pas d′abonnement [!INCLUDE [prod_short.md](includes/prod_short.md)], si aucun environnement [!INCLUDE [prod_short.md](includes/prod_short.md)] n′apparaît ou votre compte n′a pas de licence [!INCLUDE [prod_short.md](includes/prod_short.md)].
 
 ### <a name="id-like-to-search-for-items-or-records-from-other-tables-can-i-do-this-from-teams"></a>Je voudrais rechercher des éléments ou des enregistrements d'autres tables. Puis-je faire cela depuis Teams ?
 

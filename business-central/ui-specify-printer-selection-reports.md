@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: online printing, email printing, cloud printing, Universal Print
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: 67e6c0fe9a9653d243b7fd221ed004a1f1495ddf
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 69c5ab889ae1fe98d50c04e31f47ecc28cc0e1b0
+ms.sourcegitcommit: 08ca5798cf3f04fc3ea38fff40c1860196a70adf
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5783144"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "5985422"
 ---
 # <a name="set-up-printers"></a>Paramétrage imprimantes
 
@@ -36,11 +36,13 @@ Pour répondre à vos besoins d'impression, [!INCLUDE[prod_short](includes/prod_
 
 L'impression universelle est un service basé sur un abonnement Microsoft 365 qui s'exécute entièrement sur Microsoft Azure. Il vous offre une gestion centralisée des imprimantes via le portail Impression universelle. [!INCLUDE[prod_short](includes/prod_short.md)] met les imprimantes configurées dans l'impression universelle à la disposition des utilisateurs clients via l'extension **Intégration d'impression universelle**.
 
+![Configuration de l′impression universelle](media/Universal-Print-arch.png)
+
 La configuration complète nécessite que vous travailliez dans les deux Microsoft Azure, en utilisant le [Portail Azure](https://posrtal.azure.com), et dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
 ### <a name="supported-printers"></a>Imprimantes prises en charge
 
-[!INCLUDE[prod_short](includes/prod_short.md)] prend en charge les mêmes imprimantes que l'impression universelle, qui peuvent être des imprimantes compatibles ou non compatibles avec l'impression universelle. Les imprimantes non compatibles ne peuvent pas communiquer directement avec l'impression universelle, elles nécessitent donc un logiciel de connecteur supplémentaire, fourni par l'impression universelle. Certaines imprimantes plus anciennes peuvent ne pas être prises en charge.
+[!INCLUDE[prod_short](includes/prod_short.md)] prend en charge les mêmes imprimantes que l'impression universelle, qui peuvent être des imprimantes compatibles ou non compatibles avec l'impression universelle. Les imprimantes non compatibles ne peuvent pas communiquer directement avec l'impression universelle, elles nécessitent donc un logiciel de connecteur supplémentaire, fourni par l'impression universelle. Certaines imprimantes plus anciennes peuvent ne pas être prises en charge. 
 
 <!-- TODO If not installed, go to AppSource -->
 

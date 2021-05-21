@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.search.keywords: reporting
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: a36e40796978ddd20df818c3bccb1e148d50a4e1
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: dd4ae64c008c45fb6876387d98dac27440f17141
+ms.sourcegitcommit: c11ad91a389ed72532f5513654fdc7909b20aed9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5783782"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935296"
 ---
 # <a name="financial-reports-in-business-central"></a>Rapports financiers dans Business Central
 
@@ -24,7 +24,6 @@ Le tableau suivant décrit certains des principaux rapports dans les rapports fi
 
 |Rapport |Description  |
 |---------|---------|
-|**Ajuster coûts : Écr. article** | Ajuste les valeurs d’inventaire des écritures valeur afin que vous utilisiez le coût ajusté correct pour la mise à jour des écritures de grand livre et que les statistiques vente et profit soient à jour. L’ajustement des coûts transfère les modifications de coût des écritures entrantes, telles que celles des sorties achat ou production, aux écritures sortantes correspondantes, telles que les ventes ou les transferts.  |
 |**Balance de vérification**| Affiche le plan comptable avec les soldes et les soldes périodes. Vous pouvez choisir de visualiser la balance de vérification générale relative à des dimensions sélectionnées. Vous pouvez l’utiliser lors de la fermeture d’une période comptable ou d’un exercice financier. |
 |**Balance par période**  | Présente le solde d’ouverture par compte GL, les mouvements pour la période sélectionnée (mois, trimestre ou année) et le solde de fermeture qui en résulte.         |
 |**Balance de vérification/budget** | Affiche la balance de vérification comparée à un budget. Vous pouvez choisir de visualiser la balance de vérification générale relative à des dimensions sélectionnées. Vous pouvez l’utiliser lors de la fermeture d’une période comptable ou d’un exercice financier.        |

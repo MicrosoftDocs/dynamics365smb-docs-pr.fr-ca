@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: analysis, history, track, business intelligence
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: aa97686299648b81e68aef1a3701e0c32d73138a
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 7e3bc7abb3908afc1819ac88c910dff85010c735
+ms.sourcegitcommit: cbd00f24fb471381bbfd64670237eda176bd78e5
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5774090"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5947448"
 ---
 # <a name="working-with-dimensions"></a>Utilisation des axes analytiques
 Les dimensions sont des valeurs qui permettent de catégoriser les écritures afin de pouvoir les suivre et les analyser sur les documents, tels que les documents de vente. Les dimensions peuvent, par exemple, indiquer de quel projet ou département provient une écriture.  
@@ -34,6 +34,9 @@ La fonctionnalité Dimensions joue un rôle important dans la veille économique
 
 > [!TIP]
 > Pour analyser rapidement les données transactionnelles par dimensions, vous pouvez utiliser le filtre **Définir le filtre dimension** pour filtrer les totaux du plan comptable et les entrées de toutes les pages par dimensions.
+
+> [!NOTE]
+> Les vues d′analyse utilisent souvent les données des dimensions. Si vous découvrez qu'une dimension incorrecte a été utilisée sur les écritures reportées, vous pouvez corriger les valeurs de dimension et mettre à jour vos vues d'analyse. Cela vous aidera à garder vos rapports et analyses financières exactes. Pour plus d’informations, voir [Dépannage et correction des dimensions](finance-troubleshooting-correcting-dimensions.md#changing-dimension-assignments-after-posting)
 
 ## <a name="dimension-sets"></a>Ensembles de dimensions
 <!--we describe what they are, but not their value.-->
@@ -204,93 +207,6 @@ Dans une page écriture, vous pouvez voir si des dimensions principales sont ass
 
 > [!NOTE]  
 >  La page **Dimensions - Écritures** affiche les dimensions d'une écriture à la fois. Lorsque vous faites défiler les écritures, le contenu de la page **Dimensions - Écritures** est modifié en conséquence.
-
-## <a name="troubleshooting-dimensions-errors"></a>Dépannage des erreurs liées aux dimensions
-Lorsque vous reportez des documents ou des lignes journal qui contiennent des dimensions, différentes erreurs peuvent survenir, généralement liées à un défaut de configuration ou d'affectation des dimensions.
-
-> [!NOTE]
-> Dans la liste suivante des messages d'erreur potentielle, les codes *%X* sont des espaces réservés pour les variables de données qui le message réel contient dans l'interface utilisateur selon le contexte. Par exemple, *%1 %2 est bloqué.* pourrait s'afficher dans l'interface utilisateur comme « La ZONE du code de dimension est bloquée ».  
-
-|Problème|Message d'erreur|Solution possible|
-|-----|-------------|-----------------|
-|Dimension bloquée|%1 %2 est bloqué.|- Recherchez les documents non reportés contenant l'ensemble de dimensions avec la dimension bloquée et débloquez-la.<br />- Supprimez la ligne ensemble de dimensions pour la dimension bloquée.|
-|Dimension supprimée|%1 %2 est introuvable.|- Restaurez la dimension manquante.<br />- Recherchez les documents non reportés contenant l'ensemble de dimensions avec la dimension manquante et ajoutez-la.<br />- Supprimez la ligne ensemble de dimensions pour la dimension manquante.|
-|Valeur de dimension bloquée|%1 %2 - %3 est bloqué.|- Recherchez les documents non reportés contenant l'ensemble de dimensions avec la valeur de dimension bloquée et débloquez-la.<br />- Supprimez la ligne ensemble de dimensions pour la valeur de dimension bloquée.|
-|Valeur de dimension supprimée|    %1 pour %2 est manquant.|- Restaurez la valeur de dimension manquante.<br />- Recherchez les documents non reportés contenant l'ensemble de dimensions avec la valeur de dimension manquante et ajoutez-la.<br />- Supprimez la ligne ensemble de dimensions pour la valeur de dimension manquante.|
-|Valeur de dimension interdite|Le type de valeur de dimension pour %1 %2 - %3 ne doit pas être %4.|- Modifiez le champ **Type de valeur de dimension** sur la page **Valeurs de dimension** avec **Standard** ou **Début total**.<br />- Supprimez la ligne ensemble de dimensions pour la valeur de dimension bloquée.|
-|Combinaison de dimensions bloquée|Les dimensions %1 et %2 ne peuvent pas être utilisées ensemble.|- Recherchez les documents non reportés contenant l'ensemble de dimensions avec la combinaison de dimensions bloquée et débloquez-la.<br />- Modifiez une des lignes d'ensembles d'autorisation en conflit pour la combinaison de dimensions.|
-|Combinaison de valeurs de dimension bloquée|Les combinaisons de dimensions %1 - %2 et %3 - %4 ne peuvent pas être utilisées ensemble.|- Recherchez les documents non reportés contenant l'ensemble de dimensions avec la combinaison de valeurs de dimensions bloquée et débloquez-la.<br />- Modifiez une des lignes d'ensembles d'autorisation en conflit pour la combinaison de valeurs de dimension.|
-|Code de valeur de dimension vide pour la dimension par défaut où le champ **Report valeur** contient **Code obligatoire**|- Sélectionnez un %1 pour le %2 %3.<br />- Sélectionnez un %1 pour le %2 %3 pour %4 %5.|- Modifiez le champ **Report valeur** sur la page **Dimension par défaut**.<br />- Saisissez une valeur de dimension non vide pour la dimension en conflit dans l'ensemble de dimensions.|
-|Code de valeur de dimension erroné pour la dimension par défaut où le champ **Report valeur** contient **Même code**|- Sélectionnez %1 %2 pour le %3 %4.<br />- Sélectionnez %1 %2 pour le %3 %4 pour %5 %6.|- Modifiez le champ **Report valeur** sur la page **Dimension par défaut**.<br />- Saisissez la valeur de dimension requise pour la dimension en conflit dans l'ensemble de dimensions.|
-|Code de valeur de dimension non vide pour la dimension par défaut vide où le champ **Report valeur** contient **Même code**|-%1 %2 doit être vierge.<br />-%1 %2 doit être vierge pour %3 %4.|- Modifiez le champ **Report valeur** sur la page **Dimension par défaut**.<br />- Saisissez un code de valeur de dimension vide pour la dimension en conflit dans l'ensemble de dimensions.|
-|Valeur de dimension inattendue pour la dimension par défaut où le champ **Report valeur** contient **Pas de code**|-%1 %2 ne doit pas être mentionné.<br />- %1 %2 ne doit pas être mentionné pour %3 %4.|- Modifiez le champ **Report valeur** sur la page **Dimension par défaut**.<br />- Supprimez la ligne en conflit de l'ensemble de dimensions.|
-|Une correction de dimension ne se termine pas correctement.||-Choisissez **Réinitialiser** pour rétablir la correction à un état brouillon. Cela réinitialise les modifications et vous pouvez réexécuter la correction.|
-
-## <a name="changing-dimension-assignments-after-posting"></a>Modification des attributions de dimension après le report
-Si vous découvrez qu'une dimension incorrecte a été utilisée sur les écritures reportées, vous pouvez corriger les valeurs de dimension et mettre à jour vos vues d'analyse. Cela vous aidera à garder vos rapports et analyses financières exactes.
-
-### <a name="setting-up-dimension-corrections"></a>Configuration des corrections de dimensions
-Il y a deux choses à prendre en compte lors de la configuration des corrections de dimension :
-
-* Y a-t-il des dimensions que vous ne souhaitez pas permettre aux gens de changer? Sur la page **Paramètres de correction de dimensions**, spécifiez les dimensions que vous souhaitez bloquer pour les modifications.
-* À qui souhaitez-vous autoriser le changement de dimensions? Pour autoriser les utilisateurs à apporter des modifications, attribuez l'autorisation **CORRECTION AXE D365** aux utilisateurs. Les autorisations leur permettent de créer des corrections de dimensions, de les exécuter et de les annuler si nécessaire. Ils pourront également spécifier des dimensions bloquées. Pour en savoir plus, voir [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md). 
-
-### <a name="correcting-a-dimension"></a>Correction d’une dimension
-Vous pouvez sélectionner manuellement une ou plusieurs écritures ou utiliser des filtres pour sélectionner des séries d'entrées. Si nécessaire, vous pouvez également ajouter ou supprimer des dimensions. 
-
-1. Pour démarrer une correction de dimensions, utilisez l'une des pages suivantes :
-
-* Sur la page **GL/Registre**, en sélectionnant un registre, puis en choisissant l'action **Corriger les dimensions**. Ceci lance une correction pour les entrées dans le registre sélectionné.
-* Sur la page **Écritures**, en choisissant l'action **Correction de dimensions**. 
-
-2. Dans le champ **Description**, entrez les informations sur la modification. D'autres personnes pourraient utiliser ces informations plus tard pour comprendre ce qui a été fait.
-3. Sur le Raccourci **Écritures sélectionnées**, choisissez les entrées appropriées.
-
-> [!IMPORTANT]
-> Lorsque vous modifiez une sélection, les valeurs du Raccourci **Modifications de correction de dimensions** sont réinitialisées. Par conséquent, sélectionnez toujours les entrées avant de spécifier les changements de valeur de dimensions.
-
-   Le tableau suivant décrit les options.
-
-   |Option  |Description  |
-   |---------|---------|
-   |Ajouter les écritures associées     |Ajoutez les écritures GL qui sont dans le même registre GL.|   
-   |Ajouter par filtre     |Utilisez des critères de filtre lors de l'ajout d'écritures GL.|
-   |Sélection manuelle     |Sélectionnez des écritures GL spécifiques.         |
-   |Ajouter par dimensions     |Filtrez les écritures GL par dimensions.         |
-   |Supprimer des écritures     |Désélectionnez des écritures GL.         |
-   |Gérer les critères de sélection     |Suivez le processus de sélection et annulez les sélections si nécessaire.         |
-
-4. Sur le Raccourci **Modifications de correction de dimensions**, choisissez la dimension analytique que vous souhaitez modifier dans le champ **Code de dimension** et la nouvelle valeur dans le champ **Nouveau code de valeur de dimension**.
-5. Pour valider la correction, choisissez **Valider les changements de dimensions**. Pour plus d'informations, consultez [Validation des corrections de dimensions](finance-dimensions.md#validating-dimension-corrections).
-6. Choisir **Exécuter**.
-
-### <a name="validating-dimension-corrections"></a>Validation des corrections de dimensions
-Avant d'exécuter une correction, il est conseillé de la valider d'abord. La validation vérifie les restrictions sur le report des valeurs pour les comptes du grand livre, les restrictions pour les dimensions et si les valeurs des dimensions sont bloquées. Lors de la validation, l'état de la correction est défini sur **Validation en cours**. Après avoir validé une correction, le résultat s'affiche dans le champ **État de validation**. Si des erreurs ont été trouvées, vous pouvez utiliser l'action **Afficher les erreurs** pour les enquêter. Après avoir corrigé une erreur, vous devez utiliser l'action **Rouvrir** pour exécuter la correction ou une nouvelle validation.
-
-Vous pouvez soit exécuter une correction immédiatement, soit la programmer pour une exécution ultérieure. Si vous exécutez des corrections sur un jeu de données volumineux, nous vous recommandons de le programmer pour qu'il s'exécute en dehors des heures ouvrables. Pour plus d'informations, consultez [Corrections de dimensions sur des jeux de données volumineux](finance-dimensions.md#dimension-corrections-on-large-data-sets).
-
-### <a name="undoing-a-correction"></a>Annuler une correction
-Après avoir corrigé une dimension, si vous n'aimez pas ce que vous voyez, vous pouvez utiliser l'action **Annuler** pour réinitialiser la valeur précédente. Cependant, vous ne pouvez annuler que la correction la plus récente. Avant d'annuler une correction, vous pouvez valider les modifications que l'annulation apportera. Par exemple, cela est utile si les restrictions de dimensions ont changé après la correction.
-
-Si l'action Annuler n'est pas disponible, par exemple parce que vous avez effectué de nombreuses corrections, vous pouvez utiliser l'action **Copier dans le brouillon** pour démarrer une nouvelle correction pour les mêmes entrées.
-
-### <a name="dimension-corrections-on-large-data-sets"></a>Corrections de dimensions sur des jeux de données volumineux
-Soyez prudent lorsque vous corrigez de grands ensembles d'entrées, par exemple, des ensembles comprenant plus de 10 000 entrées. Si vous le pouvez, nous vous recommandons d'utiliser les filtres pour exécuter les corrections sur des jeux de données plus petits. Il est également judicieux d'exécuter des corrections en dehors des heures normales de bureau. 
-
-### <a name="using-analysis-views-with-dimension-corrections"></a>Utilisation des vues d'analyse avec des corrections de dimensions
-Si **Mise à jour lors du report** est activé pour une vue d'analyse, [!INCLUDE[prod_short](includes/prod_short.md)] peut afficher la vue lorsque les documents et les journaux sont reportés. Vous pouvez également mettre à jour les vues avec ce paramètre activé avec les résultats des corrections de dimensions. Pour ce faire, activez le bouton de basculement **Mettre à jour les vues d'analyse**. La mise à jour des vues d'analyse peut avoir un impact sur les performances, en particulier pour les grands jeux de données, c'est pourquoi nous vous recommandons de mettre à jour les vues d'analyse uniquement pour les petits jeux de données.  
-
-### <a name="viewing-historical-dimension-corrections"></a>Affichage des corrections de dimensions historiques
-Si une écriture GL a été corrigée, vous pouvez étudier la modification en utilisant l'action **Historique des corrections de dimensions**.
-
-### <a name="handling-incomplete-corrections"></a>Traitement des corrections incomplètes
-Si une correction ne se termine pas, un avertissement s'affiche sur la carte de correction. Si cela se produit, vous pouvez utiliser l'action **Réinitialiser** pour rétablir la correction à un état de brouillon et annuler les modifications. Vous pouvez ensuite exécuter à nouveau la correction.
-
-> [!NOTE]
-> La réinitialisation d'une correction incomplète n'affectera pas les mises à jour des vues d'analyse, car celles-ci se produisent à la fin du processus de correction.
-
-### <a name="using-cost-accounting-with-corrected-gl-entries"></a>Utilisation de la comptabilité analytique avec les écritures GL corrigées
-Une fois les dimensions corrigées, vos données pour la comptabilité analytique seront désynchronisées. La comptabilité analytique utilise des dimensions pour agréger les montants des centres de coûts et des objets de coûts, et pour exécuter les affectations de coûts. La modification des dimensions des écritures GL signifiera probablement que vous réexécuterez vos modèles de comptabilité analytique. Que vous deviez simplement supprimer quelques registres de coûts et réexécuter les affectations, ou tout supprimer et réexécuter tous vos modèles, dépend des données qui ont été mises à jour et de la configuration de vos fonctionnalités de comptabilité analytique. Identifier où les corrections de dimensions auront un impact sur la comptabilité analytique et où des mises à jour sont nécessaires est un processus manuel. [!INCLUDE[prod_short](includes/prod_short.md)] ne propose pas actuellement de moyen automatisé de le faire.  
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/dimensions-dynamics-365-business-central/index)
 

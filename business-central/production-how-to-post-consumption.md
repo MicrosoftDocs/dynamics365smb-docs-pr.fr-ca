@@ -1,6 +1,6 @@
 ---
 title: Exécuter en lot la consommation
-description: Si le champ Méthode consommation indique **Manuelle**, vous devez valider les composants manuellement à l'aide d'une feuille consommation.
+description: Si la méthode consommation est définie sur Manuel, vous devez reporter les composantes manuellement à l’aide d’un journal consommation.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -10,44 +10,41 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 66a19b624c74ec844806c27c490c300746b46704
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 0b3ee6ca54e21605b4e9cf340b04656694c9801e
+ms.sourcegitcommit: c11ad91a389ed72532f5513654fdc7909b20aed9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5787912"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935196"
 ---
 # <a name="batch-post-production-consumption"></a>Exécuter en lot la consommation de la production
 
 Si le champ Méthode consommation indique **Manuelle**, vous devez valider les composants manuellement à l'aide d'une feuille consommation.  
 
 >[!NOTE]
-> Si vous avez activé le champ **Prélèvement requis** sur la fiche emplacement pour indiquer que l'emplacement requiert un traitement de prélèvement inventaire, vous ne devez pas utiliser ce traitement en lot. [!INCLUDE[prod_short](includes/prod_short.md)] gérera la consommation lorsque vous reporterez le prélèvement inventaire. Pour plus d’informations, voir [Prélever pour la Production ou l’Assemblage](warehouse-how-to-pick-for-production.md#to-pick-components-in-basic-warehouse-configurations). 
+> Si vous avez activé le champ **Prélèvement requis** sur la fiche emplacement pour indiquer que l'emplacement requiert un traitement de prélèvement inventaire, vous ne devez pas utiliser ce traitement en lot. [!INCLUDE[prod_short](includes/prod_short.md)] gérera la consommation lorsque vous reporterez le prélèvement inventaire. Pour plus d’informations, voir [Prélever pour la fabrication dans les configurations d′entrepôt de base](warehouse-how-to-pick-for-production.md#pick-for-production-in-basic-warehouse-configurations).  
 
 Vous pouvez également configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour reporter automatiquement (*consommer*) les composantes lorsque vous lancez ou terminez des bons de production. Pour plus d'informations, voir [Activer la consommation des composantes en fonction de la sortie réalisée](production-how-to-flush-components-according-to-operation-output.md).
 
 ## <a name="to-post-consumption-for-one-or-more-production-order-lines"></a>Pour reporter la consommation pour une ou plusieurs lignes bon de production
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journal consommation**, puis sélectionnez le lien associé.  
-2.  Renseignez les champs en indiquant les données relatives au bon de production et à la consommation. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journal consommation**, puis sélectionnez le lien associé.  
+2. Renseignez les champs en indiquant les données relatives au bon de production et à la consommation. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
     Utilisez l'action **Calculer consommation** pour générer les lignes journal des bons de production basés sur la production réelle (quantité de produits finis figurant dans le rapport) ou sur la production prévue (quantité de produits finis que vous prévoyez de fabriquer).
 
     > [!NOTE]
     > Si vous avez configuré la fiche emplacement pour exiger le traitement des prélèvements en entrepôt, seules les quantités déjà prélevées via une activité entrepôt peuvent être saisies dans le champ **Quantité** de la page **Journal consommation**, pas la quantité calculée. Pour plus d’informations, consultez [Prélever pour la production ou l’assemblage dans les configurations de stockage avancées](warehouse-how-to-pick-for-internal-operations-in-advanced-warehousing.md)
 
-3.  Choisissez l'action **Reporter** pour reporter la consommation. Les stocks associés sont réduits.
-
-
+3. Choisissez l'action **Reporter** pour reporter la consommation. Les stocks associés sont réduits.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Production](production-manage-manufacturing.md)    
+[Production](production-manage-manufacturing.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  
-[Planification](production-planning.md)      
+[Planification](production-planning.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
