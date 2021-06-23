@@ -8,22 +8,22 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/08/2021
 ms.author: edupont
-ms.openlocfilehash: 3685a2145186d3e26da7ba0ad6ace0af0b8c0dd7
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 918a450ea40676447f872ba95eb489c7cc210211
+ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5786792"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6215113"
 ---
 # <a name="design-details-posting-date-on-adjustment-value-entry"></a>Détails de conception : date de report de l'écriture valeur d'ajustement
 Cet article fournit des instructions aux utilisateurs de la fonctionnalité Évaluation stock dans [!INCLUDE[prod_short](includes/prod_short.md)]. L'article spécifique donne des informations sur la façon dont le traitement en lot **Ajuster coûts - Écr. article** identifie et affecte une date de report aux écritures valeur que le traitement en lot est sur le point de créer.  
 
-Tout d'abord, le concept du processus est passé en revue, c'est-à-dire la manière dont le traitement en lot identifie et affecte la date de report à l'écriture valeur à créer. Ensuite, des scénarios communs que l'équipe de support rencontre parfois sont décrits. Enfin, les concepts utilisés à partir de la version 3.0 sont résumés.  
+Tout d'abord, le concept du processus est passé en revue, c'est-à-dire la manière dont le traitement en lot identifie et affecte la date de report à l'écriture valeur à créer. Ensuite, des scénarios communs que l’équipe de support rencontre parfois sont décrits. Enfin, les concepts utilisés sont résumés.  
 
 ## <a name="the-concept"></a>Le concept  
-À partir de la version 5.0, le traitement en lot **Ajuster coûts - Écr. article** affecte une date de report à l'écriture valeur qu'il est sur le point de créer dans les étapes suivantes :  
+Le traitement en lot **Ajuster coûts - Écr. article** affecte une date de report à l’écriture valeur qu’il est sur le point de créer dans les étapes suivantes :  
 
 1.  Initialement, la date de report de l'écriture à créer est la même que celle de l'écriture qu'elle ajuste.  
 
@@ -31,7 +31,7 @@ Tout d'abord, le concept du processus est passé en revue, c'est-à-dire la mani
 
 3.  Affectation d'une date de report : si la date de report initiale n'est pas comprise dans la plage de dates de report autorisées, le traitement en lot affecte une date de report autorisée à partir de la Configuration du grand livre ou de la Période d'inventaire. Si les périodes d'inventaire et les dates de report autorisées dans la configuration du grand livre sont définies, la date la plus récente des deux est affectée à l'écriture valeur d'ajustement.  
 
- Examinons ce processus plus en détail. Supposons que nous avons une écriture article de type Vente. L'article a été livré le 5 septembre 2013 et il a été facturé le jour suivant.  
+ Examinons ce processus plus en détail. Supposons que nous avons une écriture article de type Vente. L’article a été livré le 5 septembre 2013 et il a été facturé le jour suivant.  
 
 ![Province des écritures article dans le scénario](media/helene/TechArticleAdjustcost1.png "Province des écritures article dans le scénario")  
 
@@ -55,7 +55,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
 ![Périodes d'inventaire dans le scénario](media/helene/TechArticleAdjustcost3.png "Périodes d'inventaire dans le scénario")
 
- La première date de report autorisée est le premier jour de la première période ouverte. 1er septembre 2013.  
+ La première date de report autorisée est le premier jour de la première période ouverte. 1 septembre 2013.  
 
  Configuration du grand livre :  
 
@@ -67,7 +67,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
  Étape 3 : affectation d'une date de report autorisée.  
 
- La date de report affectée initiale était le 6 septembre, comme illustré à l'étape 1. Toutefois, dans la 2e étape, le traitement en lot Ajuster coûts - Écr. article identifie que la date de report autorisée la plus proche est le 10 septembre et affecte donc le 10 septembre à l'écriture valeur d'ajustement ci-dessous.  
+ La date de report initiale était le 6 septembre, comme illustré à l’étape 1. Toutefois, dans la 2e étape, le traitement en lot Ajuster coûts - Écr. article identifie que la date de report autorisée la plus proche est le 10 septembre et affecte donc le 10 septembre à l'écriture valeur d'ajustement ci-dessous.  
 
  ![Province des écritures valeur dans le scénario 2](media/helene/TechArticleAdjustcost5.png "Province des écritures valeur dans le scénario 2")
 
@@ -92,7 +92,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
 ![Aperçu de la configuration de la date de report impliquée](media/helene/TechArticleAdjustcost8.png "Aperçu de la configuration de la date de report impliquée")
 
- L'article de la Base de connaissances [952996](https://mbs2.microsoft.com/Knowledgebase/kbdisplay.aspx?WTNTZSMNWUKNTMMYXUPYZQPOUXNXSPSYOQQYYMLUQLOYYMWP) décrit des scénarios supplémentaires associés au message d'erreur indiqué.  
+ L’article de la Base de connaissances [952996](https://mbs2.microsoft.com/Knowledgebase/kbdisplay.aspx?WTNTZSMNWUKNTMMYXUPYZQPOUXNXSPSYOQQYYMLUQLOYYMWP) décrit des scénarios supplémentaires associés au message d’erreur indiqué.  
 
 ### <a name="scenario-ii-posting-date-on-adjustment-value-entry-versus-posting-date-on-entry-causing-the-adjustment-such-as-revaluation-or-item-charge"></a>Scénario II : comparaison entre la date de report de l'écriture valeur d'ajustement et la date de report de l'écriture à l'origine de l'ajustement, comme une réévaluation ou des frais annexes.  
 
@@ -111,13 +111,13 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
  Configuration du grand livre :  
 
--   Début période report = 1er janvier 2014  
+-   Début période report = 1er janvier 2014  
 
 -   Fin période report = Vide  
 
  Configuration des utilisateurs :  
 
--   Début période report = 1er décembre 2013.  
+-   Début période report = 1er décembre 2013.  
 
 -   Fin période report = Vide  
 
@@ -133,7 +133,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
 2.  Ouvrez le journal article, puis créez et reportez une ligne comme suit :  
 
-     Date de report = 15 décembre 2013  
+     Date de report = 15 décembre 2013  
 
      Article = TEST  
 
@@ -155,7 +155,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
 4.  Ouvrez le journal article, puis créez et reportez une ligne comme suit :  
 
-     Date = 15 janvier 2014  
+     Date = 15 janvier 2014  
 
      Article = TEST  
 
@@ -183,7 +183,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
  **Ajustement négatif à l'étape 3 :** la date de report affectée est le 1er janvier, qui est fournie par la configuration du grand livre. La date de report de l'écriture valeur concernée par l'ajustement est le 20 décembre 2013. Selon la configuration du grand livre, la date n'est pas comprise dans la plage de dates de report autorisées. Par conséquent, la date de report indiquée dans le champ Début période report de la configuration du grand livre est affectée à l'écriture valeur d'ajustement.  
 
- **Ajustement négatif à l'étape 4 :** la date de report affectée est le 15 janvier. L'écriture valeur concernée par l'ajustement a une date de report fixée au 15 janvier, qui est comprise dans la plage de dates de report autorisées selon la configuration du grand livre.  
+ **Ajustement négatif à l’étape 4 :** la date de report affectée est le 15 janvier. L’écriture valeur concernée par l’ajustement a une date de report fixée au 15 janvier, qui est comprise dans la plage de dates de report autorisées selon la configuration du grand livre.  
 
  L'ajustement effectué pour l'ajustement négatif à l'étape 3 fait l'objet d'une discussion. La date de report favorable pour l'écriture valeur d'ajustement aurait été le 20 décembre ou au moins une date en décembre, car la réévaluation à l'origine du changement de COGS a été reportée en décembre.  
 
@@ -191,7 +191,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
  **Conclusion :**  
 
- Avec les expériences tirées de ce scénario et en tenant compte de la configuration la plus appropriée de la plage de dates de report autorisées pour une compagnie, la recommandation suivante peut être utile : tant que les modifications de la valeur d'inventaire peuvent être reportées dans une période, décembre en l'occurrence, la configuration utilisée par la compagnie pour les plages de dates de report autorisées doit être alignée sur cette décision. Lorsque l'option Début période report dans la configuration du grand livre est définie sur le 1er décembre, la réévaluation effectuée en décembre peut être transférée vers les écritures sortantes affectées dans la même période.  
+ Avec les expériences tirées de ce scénario et en tenant compte de la configuration la plus appropriée de la plage de dates de report autorisées pour une compagnie, l’information suivante peut s’avérer utile : tant que vous autorisez le report des modifications de la valeur d'inventaire dans une période, décembre en l’occurrence, la configuration utilisée par la compagnie pour les plages de dates de report autorisées doit être alignée sur cette décision. Lorsque l'option Début période report dans la configuration du grand livre est définie sur le 1er décembre, la réévaluation effectuée en décembre peut être transférée vers les écritures sortantes affectées dans la même période.  
 
  Les groupes d'utilisateurs qui ne sont pas autorisés à effectuer des reports en décembre mais en janvier, ce qui était probablement censé être limité par la configuration du grand livre dans ce scénario, devront plutôt être gérés via la configuration des utilisateurs.  
 
@@ -210,13 +210,13 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
  Configuration du grand livre :  
 
--   Début période report = 1er décembre 2013.  
+-   Début période report = 1er décembre 2013.  
 
 -   Fin période report = Vide  
 
  Configuration des utilisateurs :  
 
--   Début période report = 1er décembre 2013.  
+-   Début période report = 1er décembre 2013.  
 
 -   Fin période report = Vide  
 
@@ -234,7 +234,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
      Numéro du fournisseur : 10000  
 
-     Date de report = 15 décembre 2013  
+     Date de report = 15 décembre 2013  
 
      N° facture fournisseur : 1234  
 
@@ -252,7 +252,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
      N° débiteur : 10000  
 
-     Date de report = 16 décembre 2013  
+     Date de report = 16 décembre 2013  
 
      Sur la ligne document de vente :  
 
@@ -266,7 +266,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
 4.  Configuration du grand livre :  
 
-     Début période report = 1er janvier 2014  
+     Début période report = 1er janvier 2014  
 
      Fin période report = Vide  
 
@@ -292,13 +292,13 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
      ![Aperçu des écritures article et valeur article résultantes 3](media/helene/TechArticleAdjustcost11.png "Aperçu des écritures article et valeur article résultantes 3")
 
-6.  À la date du 3 janvier arrive une facture achat, contenant des frais annexes supplémentaires pour l'achat effectué à l'étape 2. La date de document de cette facture est le 30 décembre, elle est donc reportée avec la date de report du 30 décembre 2013.  
+6.  À la date du 3 janvier arrive une facture achat, contenant des frais annexes supplémentaires pour l’achat effectué à l’étape 2. La date de document de cette facture est le 30 décembre, elle est donc reportée avec la date de report du 30 décembre 2013.  
 
      Créez un bon de commande :  
 
      Numéro du fournisseur : 10000  
 
-     Date de report = 30 décembre 2013  
+     Date de report = 30 décembre 2013  
 
      N° facture fournisseur : 3456  
 
@@ -324,43 +324,29 @@ Le traitement en lot **Ajuster coûts - Écr. article** détermine si la date de
 
  Le scénario décrit se termine avec un rapport Évaluation de l'inventaire indiquant Quantité = 0 alors que la valeur = 2. Les frais annexes reportés à l'étape 11 font partie de la valeur d'augmentation d'inventaire de décembre alors que la diminution d'inventaire pour la même période n'est pas affectée.  
 
- Définir l'option Début période report au 1er janvier dans la configuration du grand livre était recommandé pour les premiers frais annexes. Les coûts de l'augmentation et de la diminution d'inventaire ont été enregistrés dans la même période. Cependant, pour les deuxièmes frais annexes, le changement de COGS est reconnu dans la période suivante.  
+ Définir l’option Début période report au 1er janvier dans la configuration du grand livre était recommandé pour les premiers frais annexes. Les coûts de l'augmentation et de la diminution d'inventaire ont été enregistrés dans la même période. Cependant, pour les deuxièmes frais annexes, le changement de COGS est reconnu dans la période suivante.  
 
  **Conclusion :**  
 
  Il est difficile d'avoir le rapport Évaluation de l'inventaire indiquant Quantité = 0 alors que la valeur <> 0. Dans ce cas, il est également plus difficile d'exprimer des paramètres optimaux, étant donné que les factures achat arrivent le même jour mais couvrent différentes périodes ou même différents exercices financiers. Le passage à un nouvel exercice financier nécessite généralement une planification et à cet effet, le processus Ajuster coûts – Écr article qui reconnaît COGS, doit être pris en compte.  
 
- Dans ce scénario, une solution aurait pu être que le champ Début période report dans la Configuration du grand livre indique une date en décembre pour quelques jours de plus et que le report des premiers frais annexes soit postposé pour que tous les coûts de la période ou de l'exercice financier précédent soient reconnus pour la période à laquelle ils appartiennent. Ainsi, le traitement en lot Ajuster coûts – Écr. article serait exécuté et la date de report autorisée serait déplacée vers la nouvelle période ou le nouvel exercice financier. Les premiers frais annexes avec la date de report du 2 janvier peuvent ensuite être reportés.  
+ Dans ce scénario, une solution aurait pu être que le champ Début période report dans la Configuration du grand livre indique une date en décembre pour quelques jours de plus et que le report des premiers frais annexes soit postposé pour que tous les coûts de la période ou de l'exercice financier précédent soient reconnus pour la période à laquelle ils appartiennent. Ainsi, le traitement en lot Ajuster coûts – Écr. article serait exécuté et la date de report autorisée serait déplacée vers la nouvelle période ou le nouvel exercice financier. Les premiers frais annexes avec la date de report du 2 janvier peuvent ensuite être reportés.  
 
 ## <a name="history-of-adjust-cost--item-entries-batch-job"></a>Historique du traitement en lot Ajuster coûts – Écr. article  
- Voici un résumé du concept d'affectation de dates de report aux écritures valeur d'ajustement par le traitement en lot Ajuster coûts – Écr article depuis la version 3.0.  
+ Voici un résumé du concept d’affectation de dates de report aux écritures valeur d’ajustement par le traitement en lot Ajuster coûts – Écr article.  
 
-### <a name="from-version-30370a"></a>À partir de la version 3.0..3.70.A  
- Dans le formulaire de demande du traitement en lot Ajuster coûts - Écr. article, la date de report doit être saisie par l'utilisateur. Le traitement en lot exécute toutes les modifications nécessaires et crée des écritures valeur avec la date de report saisie dans le formulaire de demande. La date de report suggérée à utiliser est la date du jour.  
-
-### <a name="version-370b40"></a>Version 3.70.B..4.0  
- Dans le formulaire de demande du traitement en lot Ajuster coûts - Écr. article, la date de report écriture période fermée doit être saisie par l'utilisateur. Le traitement en lot exécute toutes les modifications nécessaires et crée des écritures valeur avec la date de report de l'écriture article parent (date de livraison de la vente concernée par l'ajustement). Si la date de report de l'écriture article parent n'est pas comprise dans la plage de dates de report autorisées, la date de report indiquée comme date de report écriture période fermée sera affectée à l'écriture valeur d'ajustement. Une date est considérée comme incluse dans une période fermée lorsqu'elle est antérieure à la date indiquée dans le champ Début période report dans la Configuration du grand livre.  
-
-### <a name="from-version-50"></a>À partir de la version 5.0 :  
+### <a name="about-the-request-form-posting-date"></a>À propos de la date de report du formulaire de sélection :  
  Il n'est plus nécessaire d'indiquer une date de report dans le formulaire de demande du traitement en lot Ajuster coûts - Écr. article. Le traitement en lot exécute toutes les modifications nécessaires et crée des écritures valeur avec la date de report de l'écriture valeur qu'il ajuste. Si la date de report n'est pas comprise dans la plage de dates de report autorisées dans le champ Début période report de la configuration du grand livre ou si les périodes d'inventaire sont utilisées, la date la plus récente des deux sera utilisée. Reportez-vous au concept décrit ci-dessus.  
 
 ## <a name="history-of-post-inventory-cost-to-gl-batch-job"></a>Historique du traitement en lot Reporter le coût de l'inventaire dans le grand livre  
  Le traitement en lot Reporter le coût de l'inventaire dans le grand livre est étroitement lié au traitement en lot Ajuster coûts – Écr article. C'est pourquoi l'historique de ce traitement en lot est résumé et partagé ici également.  
-
-### <a name="from-version-30370a"></a>À partir de la version 3.0..3.70.A  
- Dans le formulaire de demande du traitement en lot Reporter le coût de l'inventaire dans le grand livre, une date de report doit être saisie par l'utilisateur. Le traitement en lot exécute toutes les écritures valeur correspondant au filtre, le cas échéant, et crée des écritures avec la date de report saisie dans le formulaire de demande.  
-
-### <a name="version-370b40"></a>Version 3.70.B..4.0  
- Dans le formulaire de demande du traitement en lot Reporter le coût de l'inventaire dans le grand livre, le champ Date de report écriture période fermée est disponible. L'application utilise la date que vous saisissez dans ce champ comme date de report pour les écritures qu'il crée pour les écritures valeur dont les dates de report se trouvent dans des périodes comptables fermées. Sinon, les écritures auront la même date de report que les écritures valeur d'origine. Une date est considérée comme incluse dans une période fermée lorsqu'elle est antérieure à la date indiquée dans le champ Début période report dans la Configuration du grand livre. En cas de report dans le grand livre par groupe de report, les écritures auront la date de report spécifiée dans le champ Date de report du formulaire de demande.  
-
- Dans la version 3 et 4, le traitement en lot analyse toutes les écritures valeur pour détecter s'il existe des écritures valeur dont le coût indiqué (réel) diffère du coût reporté au GL. Si une différence est détectée, le montant différent sera reporté dans une écriture. Si le report des coûts prévus est utilisé, les champs correspondants sont traités de la même manière.  
-
+ 
 ![Coût réel comparé au coût prévu](media/helene/TechArticleAdjustcost14.png "Coût réel comparé au coût prévu")
 
-### <a name="from-version-50"></a>À partir de la version 5.0 :  
- Il n'est plus nécessaire d'indiquer une date de report dans le formulaire de demande du traitement en lot Reporter le coût de l'inventaire dans le grand livre. L'écriture est créée avec la même date de report que l'écriture valeur associée. Pour exécuter le traitement en lot, la plage de dates de report autorisées doit autoriser la date de report de l'écriture créée. Sinon, la plage de dates de report autorisées doit être temporairement rouverte en modifiant ou en supprimant les dates des champs Début période report et Fin période report dans la configuration du grand livre. Pour éviter les problèmes de rapprochement, la date de report de l'écriture doit correspondre à la date de report de l'écriture valeur.  
+### <a name="about-the-posting-date"></a>À propos de la date de report
+ Il n'est plus nécessaire d'indiquer une date de report dans le formulaire de demande du traitement en lot Reporter le coût de l'inventaire dans le grand livre. L'écriture est créée avec la même date de report que l'écriture valeur associée. Pour exécuter le traitement en lot, la plage de dates de report autorisées doit autoriser la date de report de l’écriture GL créée. Sinon, la plage de dates de report autorisées doit être temporairement rouverte en modifiant ou en supprimant les dates des champs Début période report et Fin période report dans la configuration du grand livre. Pour éviter les problèmes de rapprochement, la date de report de l’écriture GL doit correspondre à la date de report de l’écriture valeur.  
 
- Le traitement en lot analyse la table 5811 - Reporter l'écriture de valeur au GL pour identifier les écritures valeur concernées par le report au grand livre. Une fois l'exécution réussie, la table est vidée.
+ Le traitement en lot analyse la table 5811 - Reporter l'écriture de valeur au GL pour identifier les écritures valeur concernées par le report au grand livre. Une fois l’exécution réussie, la table est vidée.
 
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)  

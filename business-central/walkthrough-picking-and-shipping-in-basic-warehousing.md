@@ -1,25 +1,25 @@
 ---
-title: Prélèvement et expédition dans les configurations de stockage de base | Microsoft Docs
+title: Prélèvement et expédition dans les configurations d’entrepôt de base
 description: Dans Business Central, les processus sortants de prélèvement et d'expédition peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.
-author: SorenGP
+author: jill-kotel-andersson
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 05/27/2021
 ms.author: edupont
-ms.openlocfilehash: 68b35b6c007dd22c964bd616b1d59df2841db411
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: e1763e6288c8b8218955049ba7ef4c461ee5164e
+ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5772089"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6214663"
 ---
 # <a name="walkthrough-picking-and-shipping-in-basic-warehouse-configurations"></a>Procédure pas à pas : Prélèvement et expédition dans les configurations de stockage de base
 
-[!INCLUDE[complete_sample_data](includes/complete_sample_data.md)]
+<!-- [!INCLUDE[complete_sample_data](includes/complete_sample_data.md)] -->
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], les processus sortants de prélèvement et d'expédition peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.  
 
@@ -34,23 +34,17 @@ Pour plus d'informations, reportez\-vous à [Détails de conception : flux de d
 
 La procédure pas à pas suivante illustre la méthode B dans la table précédente.  
 
-> [!NOTE]
-> [!INCLUDE [locations-cronus](includes/locations-cronus.md)]
-
 ## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas
 
 Pour les configurations d'entrepôt de base, lorsqu'un emplacement est défini pour exiger un traitement des prélèvements mais pas un traitement des livraisons, vous utilisez la page **Prélèvement inventaire** pour enregistrer et reporter les informations de prélèvement et de livraison pour vos documents origine sortants. Le document origine sortant peut être un document de vente, un retour achat, un transfert sortant ou un bon de production avec un besoin de composantes.  
 
 Cette procédure pas à pas présente les tâches suivantes :  
 
-- Configuration d'un emplacement ARGENT pour les prélèvements inventaire.  
-- Créez un document de vente pour le client 10000 pour 30 haut-parleurs.  
+- Configuration de l'emplacement SUD pour les prélèvements inventaire.  
+- Créez un document de vente pour le client 10000 pour 30 lampes Amsterdam.  
 - Libération du document de vente pour la gestion entrepôt.  
 - Créez un prélèvement inventaire sur la base d'un document origine libéré.  
 - Enregistrement d'un mouvement entrepôt à partir de l'entrepôt et report simultané de la livraison vente pour le document de vente d'origine.  
-
-> [!NOTE]
-> [!INCLUDE [locations-cronus](includes/locations-cronus.md)]
 
 ## <a name="roles"></a>Rôles
 
@@ -60,43 +54,54 @@ Cette procédure pas à pas présente les tâches effectuées par les rôles uti
 - Préparateur de commandes  
 - Magasinier  
 
-## <a name="prerequisites"></a>Conditions préalables
+<!-- ## Prerequisites
 
-Pour exécuter ce processus pas à pas, vous devez :  
+To complete this walkthrough, you will need:  
 
-- Pour [!INCLUDE[prod_short](includes/prod_short.md)] en ligne, une compagnie basée sur l'option **Évaluation avancée - exemples de données complètes** dans un environnement sandbox. Pour [!INCLUDE[prod_short](includes/prod_short.md)] sur site, CRONUS International Ltd. installé.  
-- Pour devenir employé d'entrepôt dans un emplacement ARGENT, procédez comme suit :  
+- For [!INCLUDE[prod_short](includes/prod_short.md)] online, a company based on the **Advanced Evaluation - Complete Sample Data** option in a sandbox environment. For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, CRONUS installed.
+ -->
 
-  1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Employés d'entrepôt**, puis sélectionnez le lien associé.  
-  2. Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs**.  
-  3. Dans le champ **Code magasin**, entrez ARGENT.  
-  4. Sélectionnez le champ **Par défaut**.  
+## <a name="story"></a>Scénario
 
-- Rend l'article LS-81 disponible dans l'emplacement ARGENT en suivant cette procédure :  
+Ellen, la gestionnaire d’entrepôt de CRONUS, configure l’entrepôt SUD pour le prélèvement de base dans lequel les magasiniers traitent les commandes sortantes individuellement. Susan, préparatrice de commandes, crée un document de vente pour 30 unités de l’article 1928-S à livrer au client 10000 depuis l’entrepôt SUD. Jean, le magasinier, doit s'assurer que la livraison est préparée et livrée au client. Jean gère toutes les tâches impliquées sur la page **Prélèvement inventaire**, qui indique automatiquement les zones où 1928-S est stocké.
 
-  1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux article**, puis sélectionnez le lien associé.  
+[!INCLUDE[set_up_location.md](includes/set_up_location.md)]
+
+### <a name="setting-up-the-bin-codes"></a>Configuration des codes de zone
+Une fois que vous avez configuré l'emplacement, vous devez ajouter deux zones.
+
+#### <a name="to-setup-the-bin-codes"></a>Pour configurer les codes de zone
+
+1. Sélectionnez l’action **Zones**.
+2. Créez deux zones, avec les codes *S-01-0001* et *S-01-0002*.
+
+### <a name="making-yourself-a-warehouse-employee-at-location-south"></a>Se définir comme employé d'entrepôt à l'emplacement SUD
+
+Pour utiliser cette fonctionnalité, vous devez vous ajouter à l'emplacement en tant qu'employé d'entrepôt. 
+
+#### <a name="to-make-yourself-a-warehouse-employee"></a>Pour vous définir comme employé d'entrepôt
+
+  1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me premier](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Employés d'entrepôt**, puis sélectionnez le lien associé.  
+  2. Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Employés d'entrepôt**.
+  3. Dans le champ **Code d'emplacement**, choisissez SUD.  
+  4. Sélectionnez le champ **Par défaut**, puis cliquez sur le bouton **Oui**.  
+
+### <a name="making-item-1928-s-available"></a>Rendre l’article 1928-S disponible
+
+Pour rendre l’article 1928-S disponible dans l'emplacement SUD, suivez cette procédure :  
+
+  1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me deuxième](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux article**, puis sélectionnez le lien associé.  
   2. Ouvrez le journal par défaut, puis créez deux lignes journal article avec les informations de date de travail suivantes (23 janvier).  
 
         |Type écriture|Numéro d'article|Code d'emplacement|Code de zone|Quantité|  
         |----------------|-----------------|-------------------|--------------|--------------|  
-        |Positif (ajust.)|LS-81|ARGENTE|S-01-0001|20|  
-        |Positif (ajust.)|LS-81|ARGENTE|S-01-0002|20|  
+        |Positif (ajust.)|1928-S|SUD|S-01-0001|20|  
+        |Positif (ajust.)|1928-S|SUD|S-01-0002|20|  
 
-  3. Choisissez l'action **Reporter**, puis cliquez sur le bouton **Oui**.  
+        Par défaut, le champ **Code de zone** des lignes vente est masqué, vous devez donc l’afficher. Pour cela, vous devez personnaliser la page. Pour plus d’informations, consultez [Commencer à personnaliser une page au moyen de la bannière Personnalisation](ui-personalization-user.md#to-start-personalizing-a-page-through-the-personalizing-banner).
 
-## <a name="story"></a>Scénario
-
-Ellen, la gestionnaire d'entrepôt de CRONUS, configure l'entrepôt ARGENT pour le prélèvement de base dans lequel les magasiniers traitent les commandes sortantes individuellement. Susan, préparatrice de commandes, crée un document de vente pour 30 unités de l'article LS-81 à livrer au client 10000 depuis l'entrepôt ARGENT. Jean, le magasinier, doit s'assurer que la livraison est préparée et livrée au client. Jean gère toutes les tâches impliquées sur la page **Prélèvement inventaire**, qui indique automatiquement les zones où LS-81 est stocké.  
-
-## <a name="setting-up-the-location"></a>Configuration de l'emplacement
-
-La configuration de la page **Fiche emplacement** définit les flux d’entrepôt de la compagnie.  
-
-### <a name="to-set-up-the-location"></a>Pour configurer l'emplacement
-
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements**, puis sélectionnez le lien associé.  
-2. Ouvrez la fiche emplacement ARGENT.  
-3. Sur le raccourci **Entrepôt**, cochez la case **Prélèvement requis**.  
+  3. Choisissez **Actions**, puis **Report**, puis **Reporter**.  
+  4. Sélectionnez le bouton **Oui**.  
 
 ## <a name="creating-the-sales-order"></a>Création du document de vente
 
@@ -104,13 +109,13 @@ Les commandes vente sont le type de document d'origine sortant le plus répandu.
 
 ### <a name="to-create-the-sales-order"></a>Pour créer le document de vente
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
+1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me troisième](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 3. Créez une document de vente pour le client 10000 à la date de travail (23 janvier) comportant la ligne document de vente suivante.  
 
-    |Article|Code d'emplacement|Quantité|  
+    |Article ;|Code d'emplacement|Quantité|  
     |----|-------------|--------|  
-    |LS_81|ARGENTE|30|  
+    |1928-S|SUD|30|  
 
      Informez l'entrepôt que le document de vente est prêt pour la gestion entrepôt.  
 
@@ -124,7 +129,7 @@ Sur la page **Prélèvement inventaire**, vous pouvez gérer toutes les activit�
 
 ### <a name="to-pick-and-ship-items"></a>Pour prélever et livrer des articles
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements inventaire**, puis sélectionnez le lien associé.  
+1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me quatrième](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements inventaire**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 
     Assurez-vous que le champ **N°** du raccourci **Général** est rempli.
@@ -137,7 +142,7 @@ Sur la page **Prélèvement inventaire**, vous pouvez gérer toutes les activit�
     Sinon, dans le champ **Qté à traiter**, saisissez respectivement 10 et 20 sur les deux lignes prélèvement stock.  
 6. Choisissez l'action **Reporter**, sélectionnez **Livrer**, puis cliquez sur le bouton **OK**.  
 
-    Les 30 haut-parleurs sont à présent enregistrés comme prélevés depuis les zones S-01-0001 et S-01-0002, et une écriture article négative est créée pour refléter la livraison vente reportée.  
+    Les 30 lampes Amsterdam sont à présent enregistrées comme prélevées depuis les zones S-01-0001 et S-01-0002, et une écriture article négative est créée pour refléter la livraison vente reportée.  
 
 ## <a name="see-also"></a>Voir aussi
 

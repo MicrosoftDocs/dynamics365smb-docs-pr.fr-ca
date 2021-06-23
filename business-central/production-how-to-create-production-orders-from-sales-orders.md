@@ -1,6 +1,6 @@
 ---
-title: Procédure de création de bons de production à partir de documents de vente | Microsoft Docs
-description: Vous pouvez créer des ordres de fabrication à partir des commandes vente dans le département Ventes & marketing.
+title: Créer des bons de production à partir de documents de vente
+description: Vous pouvez créer des bons de production à partir de documents de vente.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 05/28/2021
 ms.author: edupont
-ms.openlocfilehash: 8765bf3af62444712e8de8c40408a30c95f2374e
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 438f4d4e1833ba607ceedb9f5d9450c0a4dbb680
+ms.sourcegitcommit: f9a190933eadf4608f591e2f1b04c69f1e5c0dc7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5779288"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115246"
 ---
 # <a name="create-production-orders-from-sales-orders"></a>Créer des bons de production à partir de documents de vente
 Vous pouvez créer des bons de production pour les articles produits directement à partir des documents de vente.  
@@ -27,14 +27,27 @@ Vous pouvez créer des bons de production pour les articles produits directement
 3.  Sélectionnez l'action **Planification**. Sur la page **Planification document de vente**, vous pouvez afficher la disponibilité de l'article de document de vente.  
 4.  Sélectionnez l'action **Créer O.F**.  
 5.  Sélectionnez l'état et le type de commande.  
-6.  Choisissez le bouton **oui** pour créer l'ordre de fabrication.
+6.  Choisissez le bouton **Oui** pour créer un ou plusieurs bons de production pour les lignes ayant **Bon de production** dans le champ **Système réapprovisionnement**.
 
-Vous pouvez également choisir de créer un ordre de fabrication projet. Pour en savoir plus, voir [Planifier les projets de commandes](production-how-to-plan-project-orders.md).   
+
+> [!NOTE]  
+> Les lignes de demandes du bon de production créé qui ont **Bon de production** dans le champ **Système réapprovisionnement** représentent des bons de production sous-jacents. Après avoir généré ces bons de production, n’oubliez pas d’identifier toute demande de composante non réalisée pour ceux-ci à l’aide de la page **Planification commande** ou de la fonction **Replanifier** à partir d’ordres créés. 
+
+## <a name="order-type"></a>Type de commande  
+Vous pouvez choisir entre deux façons de créer les bons de production, comme indiqué dans le tableau suivant.
+
+|Option|Description|
+|------|-----------|
+|O.F. article|Un bon de production est créé pour chaque bon de production nécessaire qui est représenté par une ligne dans la fenêtre **Planification document de vente**.|
+|O.F. projet|Un bon de production est créé pour tous les bons de production nécessaires qui sont représentés par des lignes dans la fenêtre **Planification document de vente**. |
+
+Lorsque vous utilisez des projets de commande, le champ **Type origine** du bon de production indique **En-tête vente** et la commande comporte plusieurs lignes, une pour chaque article de la ligne vente à produire.  
+
 
 ## <a name="see-also"></a>Voir aussi  
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Production](production-manage-manufacturing.md)    
-[Stock](inventory-manage-inventory.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
 [Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  

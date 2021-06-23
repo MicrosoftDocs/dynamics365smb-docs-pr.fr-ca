@@ -1,5 +1,5 @@
 ---
-title: Planification de l'approvisionnement| Microsoft Docs
+title: Planifications des approvisionnements
 description: Préparez un programme exécutable détaillé ainsi que le calendrier de production de l'assemblage final pour la demande de vente et de production.
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 81befcda5dc4ae9e46ff02e98701fcb9c7a074dc
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 63e20afbfeda9450c4b636a660549c822cc0e5da
+ms.sourcegitcommit: f9a190933eadf4608f591e2f1b04c69f1e5c0dc7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5785408"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115500"
 ---
 # <a name="planning"></a>Planification
 
@@ -36,8 +36,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Comprendre tous les aspects du système de planification et modifier les algorithmes pour répondre aux exigences de planification dans différents environnements.|[Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)|
 |Découvrez comment la logique de planification établit la différence entre la demande dans les emplacements en fonction de la configuration des unités de stock et la demande sans codes emplacement.|[Planification avec/sans emplacement](production-planning-with-without-locations.md)|
 |Prévoir la demande présentée par les composantes vente et fabrication prévues.|[Créer une prévision de la demande](production-how-to-create-a-forecast.md)|  
-|Créez automatiquement des bons de production un à un à partir d'un document de vente pour couvrir la demande exacte des lignes document de vente.|[Créer des bons de production à partir de documents de vente](production-how-to-create-production-orders-from-sales-orders.md)|
-|Créer un bon de production projet directement à partir d'un document de vente multiligne représentant un projet de production.|[Planifier les O.F. projets](production-how-to-plan-project-orders.md)|
+|Créer des bons de production de projet ou un à un à partir d’un document de vente pour couvrir la demande exacte de ce document de vente.|[Créer des bons de production à partir de documents de vente](production-how-to-create-production-orders-from-sales-orders.md)|
 |Utiliser la page **Planification commande** pour effectuer la planification manuellement pour des ordres de vente ou de fabrication un niveau de nomenclature de production à la fois.|[Planifier de nouvelles demandes commande par commande](production-how-to-plan-for-new-demand.md)|
 |Utiliser la page **Feuille planification** pour exécuter les options PDP et MRP pour créer automatiquement un programme d'approvisionnement détaillé à tous les niveaux d'article.|[Exécuter une planification complète et un calcul PDP ou MRP](production-how-to-run-mps-and-mrp.md)|
 |Utilisez la page **Feuille de réquisition** pour créer automatiquement un programme d'approvisionnement détaillé pour répondre à la demande d'articles réapprovisionnés uniquement par achat ou transfert.|[Feuille de réquisition](production-about-planning-functionality.md#requisition-worksheet)|  
