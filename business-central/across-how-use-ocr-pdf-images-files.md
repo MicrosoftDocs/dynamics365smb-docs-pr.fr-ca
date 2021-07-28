@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: electronic document, e-invoice, incoming document, OCR, ecommerce, document exchange, import invoice
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 81fb35e3bfc4e55e0327cb436974cc3d1730e9e6
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: cb71c71ec67514e4ed2df02a83afe2a56e36868e
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5777551"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6440959"
 ---
 # <a name="use-ocr-to-turn-pdf-and-image-files-into-electronic-documents"></a>Utiliser un service OCR pour convertir des fichiers PDF et image en documents électroniques
 À partir de fichiers PDF ou image reçus de vos partenaires commerciaux, un service externe de reconnaissance optique de caractères (OCR, Optical Character Recognition) génère des documents électroniques pouvant être convertis en enregistrements de document dans [!INCLUDE[prod_short](includes/prod_short.md)]. Par exemple, lorsque vous recevez une facture au format PDF de votre fournisseur, vous pouvez l'envoyer au service OCR à partir de la page **Documents entrants**. Ceci est décrit dans la première procédure.
@@ -30,7 +30,7 @@ Comme le service OCR est basé sur la reconnaissance optique, il est probable qu
 Le trafic des fichiers entrants et sortants du service OCR est traité par une écriture de la file d'attente des travaux dédiée, qui est créée automatiquement lorsque vous activez la connexion au service correspondant. Pour plus d'informations, voir [Configurer des documents entrants](across-how-setup-income-documents.md).
 
 ## <a name="to-send-a-pdf-or-image-file-to-the-ocr-service-from-the-incoming-documents-page"></a>Pour envoyer un fichier PDF ou image au service OCR à partir de la page **Documents entrants**
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents entrants**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents entrants**, puis choisissez le lien associé.
 2. Créez un enregistrement de document entrant et joignez le fichier. Pour plus d'informations, voir [Créer des enregistrements document entrant](across-how-create-income-document-records.md).  
 3. Sur la page **Documents entrants**, sélectionnez une ou plusieurs lignes, puis sélectionnez l'action **Envoyer à la file d'attente des travaux**.
 
@@ -107,7 +107,7 @@ Comme le service OCR est basé sur la reconnaissance optique, il est probable qu
 
 La page **Correction des données OCR**, que vous ouvrez à partir de la page **Document entrant**, affiche les champs du raccourci **Informations financières** dans deux colonnes, une avec les données OCR modifiables et une avec les données OCR en lecture seule. Lorsque vous sélectionnez le bouton **Envoyer des commentaires OCR**, le contenu de la page **Correction des données OCR** est envoyé au service OCR. La prochaine fois que le service traite les fichiers PDF ou image contenant les données en question, vos corrections seront intégrées pour éviter les mêmes erreurs.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents entrants**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents entrants**, puis choisissez le lien associé.
 2. Ouvrez un enregistrement de document entrant contenant les données reçues du service OCR, que vous souhaitez corriger.
 3. Sur la page **Document entrant**, sélectionnez l'action **Corriger les données OCR**.
 4. Sur la page **Correction des données OCR**, remplacez les données de la colonne modifiable pour chaque champ dont la valeur est incorrecte.

@@ -10,16 +10,18 @@ ms.service: dynamics365-business-central
 author: jswymer
 ms.author: jswymer
 ms.date: 04/01/2021
-ms.openlocfilehash: 09dba629e977707921129261ea2540cc223c15dc
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 99dd133c3f3ab05806976c5fe840f81dcd8e1403
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5784950"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6440909"
 ---
 # <a name="inspecting-pages-in-business-central"></a>Inspection des pages dans Business Central
 
 La fonction Inspection des pages vous permet d'obtenir des détails sur une page : elle vous donne ainsi un aperçu du format de la page, des différents éléments qui la constituent ainsi que de la source qui se cache derrière les données qu'elle diffuse. La fonction Inspection des pages est conçue notamment pour les administrateurs, les utilisateurs avancés, le personnel du support technique ainsi que les développeurs. Elle est parfaite pour découvrir quel modèle de données se cache derrière une page et pour le dépannage. Par exemple, si vous rencontrez un problème avec une page, vous pouvez utiliser la fonction d'inspection des pages pour obtenir les informations à transmettre à votre administrateur système ou à votre personnel du support technique.
+
+[!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
 ## <a name="working-with-page-inspection"></a>Utilisation de la fonction Inspection des pages
 
@@ -27,7 +29,7 @@ Vous commencez l'inspection des pages dans la page **Aide et support**. Cliquez 
 
 Le volet **Inspection des pages** s'ouvre sur le côté. La figure suivante illustre le volet **Inspection des pages** sur la page **Document de vente**.
 
-![Inspection des pages](media/page-inspection-example.png)
+![Inspection des pages.](media/page-inspection-example.png)
 
 Lorsque le volet **Inspection des pages** s'ouvre pour la première fois, il affiche les informations qui concernent le principal objet de la page.
 

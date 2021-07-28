@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: app, import, migrate, data, transfer, QuickBooks, customize
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 9cf2d377476eed7dd8b38dc824bd6e23f2902818
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 12ac21b237188b391dac943dd1f0352cddb82602
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5787142"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6440784"
 ---
 # <a name="changing-from-a-quickbooks-app-to-dynamics-365-business-central"></a>Le passage d'une application QuickBooks à Dynamics 365 Business Central
 De plus en plus de sociétés croissantes passent d'applications financières comme QuickBooks Desktop et QuickBooks Online, qui sont conçues pour les startups et autres petites entreprises, à [!INCLUDE[prod_short](includes/prod_short.md)], qui prend en charge également des organisations plus grandes et plus complexes. 
@@ -32,7 +32,7 @@ Pour plus d'informations sur l'extension correspondant à votre application Quic
 * [Extension de migration des données QuickBooks Online](ui-extensions-quickbooks-online-data-migration.md)
 
 ## <a name="ready-now"></a>Vous êtes prêt ?
-Si vous êtes prêt à commencer, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration assistée**, puis sélectionnez le lien associé. Choisissez **Migrer des données métier**, puis suivez les étapes du guide.
+Si vous êtes prêt à commencer maintenant, choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration assistée**, puis choisissez le lien associé. Choisissez **Migrer des données métier**, puis suivez les étapes du guide.
 
 ## <a name="see-also"></a>Voir aussi
 [Importation des données métier à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  

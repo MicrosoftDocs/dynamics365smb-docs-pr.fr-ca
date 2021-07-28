@@ -1,6 +1,6 @@
 ---
-title: Afficher des rapports Power BI personnalisés pour les données Business Central
-description: Vous pouvez utiliser des rapports Power BI pour obtenir des informations supplémentaires sur les données dans les listes.
+title: Afficher les rapports Power BI personnalisés
+description: Vous pouvez utiliser le récapitulatif Power BI pour afficher les rapports Power BI et obtenir des informations supplémentaires sur les données des enregistrements dans les listes clés.
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: business intelligence, KPI, Odata, Power App, SOAP, analysis
-ms.date: 04/26/2021
+ms.date: 06/11/2021
 ms.author: jswymer
-ms.openlocfilehash: d2ce2588604ae676ba8b2cb73878a2d8dfd32b63
-ms.sourcegitcommit: 652e4b0e1a09bff265014d9f8eb3b038ab0db79e
+ms.openlocfilehash: b5858d3852eddc19501f0b3dc1c5f4071b07baee
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "6087704"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6440934"
 ---
 # <a name="creating-power-bi-reports-for-displaying-list-data-in-prod_short"></a>Création de rapports Power BI pour afficher les données de liste dans [!INCLUDE[prod_short](includes/prod_short.md)]
 
@@ -53,7 +53,7 @@ For more information about getting started, see [Using [!INCLUDE[prod_short](inc
     2. Faites glisser le champ vers le volet **Filtres** et déposez-le dans le zone **Filtres sur toutes les pages**.
     3. Définissez le **Type de filtre** sur **Filtrage de base**. Il ne peut pas s’agir d’un filtre de page, visuel ou avancé.
 
-    ![Définition du filtre de rapport pour le rapport Activités Facture vente](./media/across-how-use-powerbi-reports-factbox/financials-powerbi-report-filter-v3.png)
+    ![Définition du filtre de rapport pour le rapport Activités Facture vente.](./media/across-how-use-powerbi-reports-factbox/financials-powerbi-report-filter-v3.png)
 4. Concevez la disposition du rapport.
 
     Créez la disposition en faisant glisser des champs et en ajoutant des visualisations. Pour plus d'informations, voir [Utiliser la vue Rapport dans Power BI Desktop](/power-bi/create-reports/desktop-report-view) dans la documentation Power BI.
@@ -86,7 +86,7 @@ For more information about getting started, see [Using [!INCLUDE[prod_short](inc
 
 La taille du rapport doit être configurée sur 325 pixels par 310 pixels. Cette taille offre une mise à l’échelle appropriée du rapport dans l’espace disponible du contrôle Récapitulatif Power BI dans [!INCLUDE[prod_short](includes/prod_short.md)]. Pour définir la taille du rapport, placez le focus en dehors de la zone de présentation de rapport, puis choisissez l'icône en forme de rouleau de peinture.
 
-![Définition de la largeur et de la hauteur du rapport pour le rapport Activités Facture vente](./media/across-how-use-powerbi-reports-factbox/financials-powerbi-report-sizing-v3.png)
+![Définition de la largeur et de la hauteur du rapport pour le rapport Activités Facture vente.](./media/across-how-use-powerbi-reports-factbox/financials-powerbi-report-sizing-v3.png)
 
 Vous pouvez modifier la largeur et la hauteur de l'état en choisissant **Personnalisé** dans le champ **Type**.
 

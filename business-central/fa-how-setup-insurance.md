@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: policy, coverage
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 0ebb62a4ef9ea84ec5bfddc099dfb6120a4e6405
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 0e9eab4b00e0729f13adb4cd38b7b4992a160539
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5774051"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6440659"
 ---
 # <a name="set-up-fixed-asset-insurance"></a>Configurer une assurance immobilisation
 Pour gérer la couverture d'assurance des immobilisations, vous devez tout d'abord configurer certaines informations générales d'assurance ainsi qu'une fiche assurance par police.
@@ -25,32 +25,32 @@ Pour gérer la couverture d'assurance des immobilisations, vous devez tout d'abo
 ## <a name="to-set-up-general-insurance-information"></a>Pour définir des informations générales relatives aux assurances
 Pour utiliser les fonctions d'assurance dans [!INCLUDE[prod_short](includes/prod_short.md)], vous devez définir certaines informations générales relatives aux assurances.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Paramètres immobilisations**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Paramètres immobilisations**, puis choisissez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
 ## <a name="to-set-up-insurance-types"></a>Pour définir des types d'assurance
 Vous pouvez regrouper vos polices d'assurance en catégories (assurances contre le vol, assurances incendie, etc.). Les types d'assurance sont utilisés sur la fiche assurance.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Types assurance**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Types d’assurance**, puis choisissez le lien associé.  
 2. Renseignez les champs selon vos besoins.
 
 ## <a name="to-set-up-insurance-cards"></a>Pour définir des fiches assurance
 Vous pouvez rassembler des informations sur chaque police d'assurance dans la fiche assurance.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Assurance**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Assurance**, puis choisissez le lien associé.  
 2. Sur la page **Assurance**, sélectionnez l'action **Nouveau** pour créer une fiche assurance.  
 3. Renseignez les champs selon vos besoins.
 
 ## <a name="to-set-up-insurance-journal-templates"></a>Pour configurer des modèles journal assurance
 [!INCLUDE[prod_short](includes/prod_short.md)] crée automatiquement un modèle journal assurance la première fois que vous ouvrez la page **Journal assurance**. Vous pouvez cependant configurer d'autres modèles journal. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modèles journal assurance**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modèles journal assurance**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins.
 
 ## <a name="to-set-up-insurance-journal-batches"></a>Pour définir des lots journal assurance
 Vous pouvez configurer des lots dans un modèle journal assurance. Les valeurs du lot journal servent de valeurs par défaut si les champs ne sont pas renseignés sur les lignes journal. Pour en savoir plus, voir [Utiliser des feuilles comptabilité](ui-work-general-journals.md)  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Modèles journal assurance**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modèles journal assurance**, puis sélectionnez le lien associé.  
 2. Sélectionnez un modèle feuille assurance, puis l'action **Lots**.
 3. Sur la page **Lots journal assurance**, renseignez les champs selon vos besoins.
 

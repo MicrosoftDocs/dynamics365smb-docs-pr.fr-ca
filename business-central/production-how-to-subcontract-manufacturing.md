@@ -1,6 +1,6 @@
 ---
-title: Procédure de sous-traitance de la production | Microsoft Docs
-description: Une fois que le bon de commande a été créée à partir de la feuille sous-traitant, il peut être reporté.
+title: 'Procédure : sous-traiter la production'
+description: Cette rubrique donne un aperçu détaillé des fonctionnalités étendues de la sous-traitance dans Business Central, y compris les champs d’atelier et d’itinéraire.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: 08b717e5674130661e12b48e6c0f37473098b892
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 821e705e07b5ced42ad2ae41f2da340573004c7e
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5787712"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6441532"
 ---
 # <a name="subcontract-manufacturing"></a>Sous-traiter la production
 La sous-traitance des opérations sélectionnées au fournisseur est courante dans de nombreuses compagnies manufacturières. La sous-traitance peut être occasionnelle ou faire partie intégrante des processus de production.
@@ -52,7 +52,7 @@ La page **Feuille sous-traitance** fonctionne comme la **Feuille planification**
 >  Seuls les ordres de fabrication dont l'état est **Lancé** sont accessibles et utilisables à partir d'une proposition sous-traitance.  
 
 ### <a name="to-calculate-the-subcontracting-worksheet"></a>Pour calculer des propositions sous-traitance  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Propositions sous-traitance**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille de calcul de sous-traitance**, puis sélectionnez le lien associé.  
 2.  Pour calculer la feuille, choisissez l'action **Générer sous-traitances**.  
 3.  Sur la page **Générer sous-traitances**, définissez des filtres pour les opérations de sous-traitance, ou les ateliers où celles-ci sont effectuées, pour ne calculer que les bons de production appropriés.  
 4.  Cliquez sur le bouton **OK**.  
@@ -60,7 +60,7 @@ La page **Feuille sous-traitance** fonctionne comme la **Feuille planification**
     Examinez les lignes de la page **Propositions sous-traitance**. Les informations de cette feuille proviennent des lignes du bon de production et de l'itinéraire du bon de production et sont insérées dans le bon de commande lors de la création de ce document. Vous pouvez supprimer une ligne de la feuille sans toucher aux informations d'origine, tout comme vous pouvez le faire avec les autres feuilles. Les informations réapparaissent à la prochaine exécution de la fonction **Générer sous-traitances**.  
 
 ### <a name="to-create-the-subcontract-purchase-order"></a>Pour créer le bon de commande de sous-traitance  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Propositions sous-traitance**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille de calcul de sous-traitance**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Traiter message d'action**.  
 3.  Sélectionnez le champ **Imprimer commandes** pour imprimer la commande achat lors de sa création.  
 4.  Cliquez sur le bouton **OK**.  
@@ -73,7 +73,7 @@ La ligne feuille transformée en bon de commande est supprimée de la feuille. U
 Une fois les commandes achat de sous-traitant créées, il est possible de les valider. La réception de la commande reporte une écriture du grand livre de capacité dans le bon de production et la facturation de ce dernier reporte le coût direct du bon de commande dans le bon de production.  
 
 ## <a name="to-post-a-subcontract-purchase-order"></a>Pour reporter un bon de commande de sous-traitance  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de commande**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de commande**, puis sélectionnez le lien associé.  
 2.  Ouvrez un bon de commande créé à partir de la feuille de sous-traitance.  
 
     Sur les lignes du bon de commande, vous pouvez visualiser les mêmes informations que celles figurant sur la feuille. Les champs **N° ordre de fabrication**, **N° ligne O.F.**, **N° opération** et **N° centre de charge** sont renseignés avec les informations du bon de production source.  

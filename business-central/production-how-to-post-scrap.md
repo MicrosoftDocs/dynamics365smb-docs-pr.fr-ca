@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: b0abd3da4abd0b91b7541fb545606c569f98b987
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: d13bfaf069a10cb1ff92806dbceb46811a770fac
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5787862"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6441582"
 ---
 # <a name="post-scrap-manually"></a>Reporter le rebut manuellement
 Si le traitement produit un rebut, vous pouvez entrer ce rebut dans le journal de sortie. 
@@ -24,7 +24,7 @@ Si le traitement produit un rebut, vous pouvez entrer ce rebut dans le journal d
 > La quantité mise au rebut n'augmente pas la quantité produite.  
 
 ## <a name="to-post-scrap-manually"></a>Pour reporter le rebut manuellement  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journal de sortie**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal de sortie**, puis choisissez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 3. Dans le champ **Quantité rebutée**, saisissez la quantité perte.  
 4. Dans le champ **Code rebut**, saisissez le code rebut.  

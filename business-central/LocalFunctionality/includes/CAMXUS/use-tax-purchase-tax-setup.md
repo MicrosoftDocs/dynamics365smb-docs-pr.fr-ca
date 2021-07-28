@@ -4,12 +4,12 @@ ms.service: dynamics365-business-central
 ms.topic: include
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 652c57d5bc7393c0b3769c1a56587ad2587d74a6
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: cb954947a9c7b5223c2758d05f037d28a3545dfe
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5771412"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6441364"
 ---
 La taxe de vente inclut les taxes payées par les compagnies pour utiliser des articles :  
 
@@ -17,7 +17,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 - Taxe achat (Canada) – La taxe d'achat est une taxe de vente canadienne payée par une compagnie sur les articles achetés à un fournisseur. Lorsqu'une compagnie achète des articles pour son propre usage, le fournisseur facture la taxe de vente appropriée pour les articles.  
 
 ## <a name="to-set-up-use-tax-for-a-purchase-order"></a>Pour configurer la taxe de service pour un bon de commande  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Bons de commande**, puis sélectionnez le lien associé.  
 2.  Sur la page **Bons de commande**, sélectionnez l'action **Nouveau**.  
 3.  Sur le raccourci **Lignes**, complétez les champs, comme nécessaire. [!INCLUDE[tooltip-inline-tip](../../../includes/tooltip-inline-tip_md.md)]  
 4.  Sur le raccourci **Facturation**, renseignez les champs comme décrit dans le tableau ci-dessous.  
@@ -31,7 +31,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 5.  Choisissez le bouton **OK**.  
 
 ## <a name="to-set-up-use-tax-details"></a>Pour configurer les détails de la taxe de service  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Détails fiscaux**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Détails fiscaux**, puis sélectionnez le lien associé.  
 2.  Sur la page **Détails fiscaux**, sélectionnez l'action **Nouveau**.  
 3.  Sur la page **Nouveau - Détails fiscaux**, renseignez les champs comme décrit dans le tableau suivant.  
 
@@ -43,7 +43,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 4.  Choisissez le bouton **OK**.  
 
 ## <a name="to-set-up-purchase-tax-for-a-company"></a>Pour configurer la taxe d'achat pour une compagnie  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Informations compagnie**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Informations sur la compagnie**, puis sélectionnez le lien associé.  
 2.  Sur la page **Informations sur la compagnie**, dans le raccourci **Taxe**, renseignez les champs comme décrit dans le tableau ci-dessous.  
 
     |Champ|Description|  
@@ -54,7 +54,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 3.  Choisissez le bouton **OK**.  
 
 ## <a name="to-set-up-purchase-tax-for-a-location"></a>Pour configurer la taxe d'achat pour un emplacement  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Sur la page **Emplacements**, sélectionnez l'emplacement requis, puis cliquez sur l'action **Modifier**.  
 3.  Sous le raccourci **Général**, renseignez les champs comme indiqué dans le tableau ci-dessous.  
 
@@ -67,7 +67,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 4.  Choisissez le bouton **OK**.  
 
 ## <a name="to-set-up-purchase-tax-for-non-recoverable-tax"></a>Pour configurer la taxe d'achat pour une taxe non recouvrable  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Détails fiscaux**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Détails fiscaux**, puis sélectionnez le lien associé.  
 2.  Sur la page **Détails fiscaux**, sélectionnez l'action **Nouveau**.  
 3.  Cochez la case **Dépense/Capitaliser**.  
 

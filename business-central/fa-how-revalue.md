@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: c17aec818a65aef9e298b40301142cbb40715306
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 2e178778e51d63c3398fd4a870bf41fa8b1a086f
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5782341"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6442220"
 ---
 # <a name="revalue-fixed-assets"></a>Réévaluer les immobilisations
 La réévaluation des immobilisations peut consister en réévaluations, dépréciations ou corrections de valeurs générales.
@@ -28,7 +28,7 @@ Lorsque la valeur d'une immobilisation a diminué, vous reportez une ligne journ
 L'actualisation permet d'ajuster plusieurs valeurs immobilisation, par exemple, en fonction de modifications générales de niveau de prix. Le traitement par lots **Réévaluer immobilisations** permet de modifier divers montants, tels que les montants de dépréciation et de réévaluation.
 
 ## <a name="to-post-an-appreciation-from-the-fixed-asset-gl-journal"></a>Pour reporter une appréciation à partir du journal GL immobilisation
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux GL immobilisation**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux GL immobilisation**, puis choisissez le lien associé.  
 2. Créez une ligne journal initiale et complétez les champs, le cas échéant.
 3. Dans le champ **Type compta. immo**, sélectionnez **Réévaluation**.
 4. Sélectionnez l'action **Insérer contrepartie immo.**. Une seconde ligne journal est créée pour le compte de contrepartie qui est configuré pour le report de l'appréciation.
@@ -38,7 +38,7 @@ L'actualisation permet d'ajuster plusieurs valeurs immobilisation, par exemple, 
 5. Sélectionnez l'action **Reporter**.
 
 ## <a name="to-post-a-write-down-from-the-fixed-asset-gl-journal"></a>Pour reporter une dépréciation à partir du journal GL immobilisation
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux GL immobilisation**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux GL immobilisation**, puis choisissez le lien associé.  
 2. Créez une ligne journal initiale et complétez les champs, le cas échéant.
 3. Dans le champ **Type compta. immo**, sélectionnez **Dépréciation**.
 4. Sélectionnez l'action **Insérer contrepartie immo.**. Une seconde ligne journal est créée pour le compte de contrepartie qui est configuré pour le report de la dépréciation.
@@ -50,12 +50,12 @@ L'actualisation permet d'ajuster plusieurs valeurs immobilisation, par exemple, 
 ## <a name="to-perform-general-revaluation-of-fixed-assets"></a>Pour exécuter une réévaluation générale des immobilisations
 L'actualisation permet d'ajuster plusieurs valeurs immobilisation, par exemple, en fonction de modifications générales de niveau de prix. Le traitement par lots **Réévaluer immobilisations** permet de modifier divers montants, tels que les montants de dépréciation et de réévaluation. La case **Autoriser actualisation** sur la page **Loi d'amortissement** doit être cochée.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Réévaluer immobilisations**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Actualiser immobilisations**, puis choisissez le lien associé.  
 2. Renseignez les champs selon vos besoins.
 3. Cliquez sur le bouton **OK**.
 
     Les lignes de réévaluation sont créées conformément à vos paramètres à l'étape 2. Les lignes sont créées dans le journal immobilisation ou le journal GL immobilisation., selon votre modèle et la configuration par lot sur la page **Configuration journal immo.**. Pour en savoir plus, voir [Configurer des informations générales sur les immobilisations](fa-how-setup-general.md).
-4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux GL immobilisation**, puis sélectionnez le lien associé.  
+4. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux GL immobilisation**, puis choisissez le lien associé.  
 5. Sélectionnez la feuille avec les immobilisations que vous souhaitez réévaluer, puis sélectionnez l'action **Écritures comptables**.  
 6. Vérifiez les écritures créées, puis sélectionnez l'action **Valider** pour valider la feuille.
 

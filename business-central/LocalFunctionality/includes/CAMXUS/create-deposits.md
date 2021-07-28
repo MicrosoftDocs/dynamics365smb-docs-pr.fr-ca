@@ -4,12 +4,12 @@ ms.service: dynamics365-business-central
 ms.topic: include
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 28ef50ac5e297a81bd51f17cd36f8125c99751ee
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 442c1b2fd54c1dd24a42b5cf7e120c71fb85a0ad
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5771423"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6441384"
 ---
 Vous pouvez créer des dépôts pour tenir à jour un enregistrement de transaction contenant des renseignements pouvant être appliqués aux notes de crédit et factures en attente.  
 
@@ -22,7 +22,7 @@ Les lignes dépôt contiennent des informations sur les différents éléments f
 Après avoir renseigné les informations de dépôt et les lignes dépôt associées, vous devez les reporter afin de mettre à jour le grand livre bancaire, le grand livre général, le grand livre client et tout autre grand livre pertinent. Les dépôts reportés sont stockés pour référence ultérieure et peuvent être consultés sur la page **Dépôts reportés**.
 
 ## <a name="to-create-a-deposit"></a>Pour créer un dépôt  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Acomptes**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Dépôts**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Sous le raccourci **Général**, renseignez les champs requis comme indiqué dans le tableau ci-dessous.  
 

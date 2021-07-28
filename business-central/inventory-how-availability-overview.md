@@ -1,6 +1,6 @@
 ---
-title: Obtenir un aperçu des disponibilités| Microsoft Docs
-description: Vous obtenez des informations sur la disponibilité des articles ou du stock dans tous les emplacements, par événement vente ou achat, par période ou par position de l'article sur une nomenclature d'assemblage ou de production.
+title: Obtenir un aperçu des disponibilités
+description: Vous obtenez des informations sur la disponibilité des articles ou du stock dans tous les emplacements, par événement de vente ou d’achat ou par période, etc.
 documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -9,19 +9,19 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: stock
-ms.date: 04/01/2021
+ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: e5be238c74496ca92c0f26ef0c2a1377a6c93466
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 1f5913dd06e56e4a49169827a90b96405b294b5e
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5786078"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6441203"
 ---
 # <a name="view-the-availability-of-items"></a>Voir la disponibilité des articles
 Dans le contexte d'une tâche professionnelle, vous pouvez obtenir des informations avancées sur la disponibilité et l'emplacement d'un article, par exemple en discutant avec un client à propos d'une date de livraison.
 
-Vous pouvez afficher la disponibilité de tous les articles par emplacement, et vous pouvez afficher la disponibilité de chaque article par événement, par période, ou par emplacement. Un événement désigne tout mouvement d'inventaire prévu, par exemple une livraison vente ou une réception transfert entrant.
+Vous pouvez afficher la disponibilité de tous les articles par emplacement, et vous pouvez afficher la disponibilité de chaque article par événement ou par période. Un événement désigne tout mouvement d'inventaire prévu, par exemple une livraison vente ou une réception transfert entrant.
 
 > [!NOTE]  
 >   Les vues de disponibilité par emplacement nécessitent la mise à jour de l'inventaire à plusieurs emplacements. Pour plus d'informations, reportez-vous à [Configurer des emplacements](inventory-how-setup-locations.md).
@@ -42,7 +42,7 @@ Dans [!INCLUDE[prod_short](includes/prod_short.md)], les chiffres de disponibili
 ## <a name="to-view-the-availability-of-an-item-according-to-when-it-will-be-received-or-shipped"></a>Pour afficher la disponibilité d'un article en fonction de sa réception ou de sa livraison
 Vous pouvez afficher la disponibilité d'un article en fonction des mouvements de stock programmés sur la page **Disponibilité par événement**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
 2. Ouvrez la fiche d'un article dont vous voulez afficher la disponibilité.
 3. Cliquez sur **Disponibilité article par**, puis sur **Événement**.
 
@@ -52,7 +52,7 @@ Vous pouvez afficher la disponibilité d'un article en fonction des mouvements d
 ## <a name="to-view-the-availability-of-an-item-in-different-periods"></a>Pour afficher la disponibilité d'un article dans différentes périodes
 Vous pouvez visualiser la disponibilité d'un article dans le temps pour les périodes définies sur la page **Disponibilité art. par période**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
 2. Ouvrez la fiche d'un article dont vous voulez afficher la disponibilité.
 3. Cliquez sur **Disponibilité article par**, puis sur **Période**.
 
@@ -62,7 +62,7 @@ Vous pouvez visualiser la disponibilité d'un article dans le temps pour les pé
 ## <a name="to-view-the-availability-of-an-item-at-the-locations-where-it-is-stored"></a>Pour afficher la disponibilité d'un article dans les magasins dans lesquels il est stocké
 Vous pouvez afficher la disponibilité d'un article aux différents endroits où il est stocké sur la page **Disponibilité art. par emplacement**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
 2. Ouvrez la fiche d'un article dont vous voulez afficher la disponibilité.
 3. Cliquez sur **Disponibilité article par**, puis sur **Magasin**.
 
@@ -73,7 +73,7 @@ Vous pouvez afficher la disponibilité d'un article aux différents endroits où
 ## <a name="to-view-the-availability-of-all-items-by-the-location-where-they-are-stored"></a>Pour afficher la disponibilité de tous les articles en fonction des emplacements où ils sont stockés
 Vous pouvez afficher la disponibilité de tous vos articles dans tous vos emplacements sur la page **Articles par emplacement**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
 2. Cliquez sur **Articles par magasin**.
 
     La page **Articles par emplacement** indique pour tous les articles les quantités disponibles dans chaque emplacement.

@@ -1,6 +1,6 @@
 ---
-title: Détails de conception - Flux d'entrepôt internes | Microsoft Docs
-description: Circulation des articles entre les zones dans les centres d'une compagnie lors du prélèvement des composantes, du rangement des articles finis pour les ordres d'assemblage ou les bons de production et les mouvements ad-hoc, tels que les réapprovisionnements de zone, sans relation avec les documents sources.
+title: 'Détails de conception : flux d’entrepôt internes'
+description: Le flux entre les zones se concentre sur le prélèvement des composantes et le stockage des produits finis pour les ordres d’assemblage ou les bons de production et les mouvements ad hoc, sans documents source.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/08/2021
+ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: 7be0a3907b59a17e6f77e4ae8eb3a36fc62d8f7a
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: 6749921fc02776fc267f7f40cde7ccea4b8fe6cf
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215138"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6441757"
 ---
 # <a name="design-details-internal-warehouse-flows"></a>Détails de conception : flux d'entrepôt internes
 Circulation des articles entre les zones dans les centres d'une compagnie lors du prélèvement des composantes, du rangement des articles finis pour les ordres d'assemblage ou les bons de production et les mouvements ad-hoc, tels que les réapprovisionnements de zone, sans relation avec les documents sources. La portée et la nature des activités impliquées varient entre l'entreposage de base et l'entreposage avancé.  
@@ -114,7 +114,7 @@ Circulation des articles entre les zones dans les centres d'une compagnie lors d
 
  La figure ci-après indique la date à laquelle le champ **Code de zone** de la liste des composantes est renseigné en fonction de la configuration de votre emplacement ou unité de production/atelier.  
 
- ![Aperçu du moment/de la manière de renseigner le champ Code de zone](media/binflow.png "Aperçu du moment/de la manière de renseigner le champ Code de zone")  
+ ![Aperçu de quand/comment le champ Code de zone est renseigné.](media/binflow.png "Aperçu du moment/de la manière de renseigner le champ Code de zone")  
 
 ## <a name="see-also"></a>Voir aussi  
  [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)

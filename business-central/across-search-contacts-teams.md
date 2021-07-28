@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: Teams, MS Teams, Microsoft Teams, Skype, Link, Microsoft 365, contacts, search, messaging extensions
 ms.date: 04/12/2021
 ms.author: jswymer
-ms.openlocfilehash: 6d094e365ad0c7da73467e5a3160d926902c45d9
-ms.sourcegitcommit: c11ad91a389ed72532f5513654fdc7909b20aed9
+ms.openlocfilehash: 18a0eaf953c99050edb3b047cb5b4a31c83feeeb
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5935171"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6440759"
 ---
 # <a name="searching-for-customers-vendors-and-other-contacts-from-microsoft-teams"></a>Recherche de clients, de fournisseurs et autres contacts dans Microsoft Teams
 
@@ -42,13 +42,13 @@ La boîte de commande est en haut de chaque écran dans Teams. Il vous permet de
 
 1. Dans la zone de commande, saisissez **@Business Central**, puis sélectionnez l'application Business Central dans les résultats.
 
-    ![Ouvrez l'application Business Central pour rechercher des contacts à partir de la boîte de commande](media/teams-contacts-command-1.png)
+    ![Ouvrez l’application Business Central pour rechercher des contacts à partir de la boîte de commande.](media/teams-contacts-command-1.png)
 
 2. Dans la zone **Business Central**, commencez à saisir le texte de recherche, comme un nom, une adresse ou un numéro de téléphone.
 
     Au fur et à mesure de votre saisie, les résultats correspondants s'affichent.
 
-    ![Rechercher des contacts Business Central à partir de la boîte de commande dans Teams](media/teams-contacts-command-2.png)
+    ![Rechercher des contacts Business Central à partir de la boîte de commande dans Teams.](media/teams-contacts-command-2.png)
 3. Sélectionnez un contact parmi les résultats.
 
     La carte de visite apparaît sous la boîte de commande.
@@ -65,13 +65,13 @@ L'avantage d'utiliser la boîte de rédaction de message est que vous pouvez ajo
 
     Si vous ne voyez pas l'icône **Business Central**, sélectionnez **... (Extensions de messagerie)**.
 
-    ![Ouvrez l'application Business Central pour rechercher des contacts à partir de la zone de message](media/teams-contacts-message-box.png)
+    ![Ouvrez l’application Business Central pour rechercher des contacts à partir de la zone de message.](media/teams-contacts-message-box.png)
 
 2. Dans la zone **Business Central**, commencez à saisir le texte de recherche, comme un nom, une adresse ou un numéro de téléphone.
 
     Au fur et à mesure de votre saisie, les résultats correspondants s'affichent.
 
-    ![Rechercher les contacts Business Central à partir de la zone de message](media/teams-contacts-5.png)
+    ![Recherchez les contacts Business Central à partir de la zone de message.](media/teams-contacts-5.png)
 3. Sélectionnez un contact parmi les résultats.
 
     La carte de visite apparaît dans la zone de rédaction du message.
@@ -101,6 +101,8 @@ La carte de visite fonctionne exactement comme les fiches pour les enregistremen
 [Vue d’ensemble de l’intégration de Business Central et Microsoft Teams](across-teams-overview.md)  
 [Installer l’application [!INCLUDE [prod_short](includes/prod_short.md)] pour Microsoft Teams](across-install-app-for-teams.md)  
 [FAQ Teams](teams-faq.md)  
+[Modification de la compagnie et d’autres paramètres dans Teams](across-teams-settings.md)  
+[Partager des enregistrements dans Microsoft Teams](across-working-with-teams.md)  
 [Dépannage dans Teams](admin-teams-troubleshooting.md)  
 [Développement pour l’intégration de Teams](/dynamics365/business-central/dev-itpro/developer/devenv-develop-for-teams)  
 

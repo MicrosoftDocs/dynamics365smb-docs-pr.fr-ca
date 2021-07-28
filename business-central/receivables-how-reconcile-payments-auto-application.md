@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: payment process, direct payment posting, reconcile payment, expenses, cash receipts
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 5c13e41d102e2a7ff2ca80275571a1a05eea225e
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: a39798d56aa18dffa929d719cecd68a522bde00d
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5779057"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6441995"
 ---
 # <a name="reconcile-payments-using-automatic-application"></a>Rapprocher les paiements à l'aide de l'affectation automatique
 
@@ -44,7 +44,7 @@ Pour chaque ligne journal de la page **Journal rapprochement paiement**, vous po
 > Vous pouvez lancer l’importation des transactions bancaires en même temps que vous ouvrez la page **Journal rapprochement bancaire** pour un journal existant. La procédure suivante décrit comment importer des transactions bancaires sur la page **Journal rapprochement paiement** après avoir créé un journal.
 
 ## <a name="to-reconcile-payments-using-automatic-application"></a>Pour rapprocher les paiements à l'aide de l'affectation automatique
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux rapprochement bancaire**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux rapprochement bancaire**, puis sélectionnez le lien associé.
 2. Pour travailler dans une nouvelle feuille rapprochement bancaire, sélectionnez l'action **Nouvelle feuille**.
 3. Sur la page **Liste comptes bancaires paiement**, sélectionnez le compte bancaire pour lequel vous voulez rapprocher des paiements, puis cliquez sur le bouton **OK**.
    La page **Journal rapprochement paiement** s'ouvre préparée pour le compte bancaire sélectionné.
