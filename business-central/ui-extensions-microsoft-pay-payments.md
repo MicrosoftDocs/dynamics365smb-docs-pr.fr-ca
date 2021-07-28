@@ -1,6 +1,6 @@
 ---
-title: Microsoft Pay Standard | Microsoft Docs
-description: Fournit des informations sur l'extension Microsoft Pay
+title: Microsoft Pay Standard
+description: L'extension Microsoft Pay ajoute un lien Microsoft Pay à vos documents de vente afin que les clients peuvent facilement effectuer des paiements à l'aide de Microsoft Pay.
 services: project-madeira
 documentationcenter: ''
 author: SorenGP
@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 58c7ff08a7359b4f577b7ba40b23bc1f6310da4c
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 574ebae554b21c5184a5e1c2bcd5ae9b0d34f817
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5787337"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6322937"
 ---
 # <a name="the-microsoft-pay-extension"></a>Extension Microsoft Pay
 

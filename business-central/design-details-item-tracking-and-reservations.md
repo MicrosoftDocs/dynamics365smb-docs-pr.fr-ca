@@ -1,5 +1,5 @@
 ---
-title: Détails de conception - Traçabilité et réservations | Microsoft Docs
+title: 'Détails de conception : traçabilité et réservations'
 description: Cette rubrique présente la traçabilité et les réservations, et décrit les concepts qui leur sont associés.
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/08/2021
+ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: 0765cf63162cebcdd4eb2a52f9b76d0ed7c508cc
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: d2c5032983bd20fc1e8fa902bd6ed522506fc5b3
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215013"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6320898"
 ---
 # <a name="design-details-item-tracking-and-reservations"></a>Détails de conception : traçabilité et réservations
 

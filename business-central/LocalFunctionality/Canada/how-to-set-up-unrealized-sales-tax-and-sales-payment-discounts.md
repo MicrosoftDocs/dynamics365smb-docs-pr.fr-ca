@@ -1,6 +1,6 @@
 ---
-title: 'Procédure : configurer les escomptes de paiement de vente et la taxe de vente non réalisée [CA]'
-description: Vous pouvez utiliser la page Configuration du grand livre pour configurer la taxe de vente non réalisée dans la version canadienne. Vous pouvez également configurer des montants de taxe de correction maximum de manière à limiter les montants de correction de taxe qui sont entrés pour les ventes et les achats. Cela vous permet de remplacer la taxe calculée lorsqu'il existe des différences d'arrondissement entre ce qui est calculé sur le bon de commande et ce qui est calculé sur la facture achat du fournisseur.
+title: Escomptes de paiement de vente et la taxe de vente non réalisée [CA]
+description: Vous pouvez utiliser la page Configuration du grand livre pour configurer des escomptes de paiement de vente et la taxe de vente non réalisée dans la version canadienne.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: f2242bc35becb569e1ccecb4c55314d053816378
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 1933fd9ff38f1052002f7d16e78727ab5ec00789
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5773274"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6318866"
 ---
 # <a name="set-up-unrealized-sales-tax-and-sales-payment-discounts-in-the-canadian-version"></a>Configurer les escomptes de paiement de vente et la taxe de vente non réalisée dans la version canadienne
 

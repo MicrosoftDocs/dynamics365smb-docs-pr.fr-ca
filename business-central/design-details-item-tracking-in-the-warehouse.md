@@ -1,6 +1,6 @@
 ---
-title: Détails de conception - Traçabilité dans l'entrepôt | Microsoft Docs
-description: La gestion de numéro de série et de numéro de lot est surtout une tâche d'entrepôt, et donc tous les documents entrepôt enlogement et désenlogement ont une fonctionnalité standard pour affecter et sélectionner des numéros traçabilité. Toutefois, comme le système de réservation est basé sur les écritures article, les documents activité entrepôt qui enregistrent uniquement les écritures entrepôt ne sont pas totalement pris en charge.
+title: 'Détails de conception : traçabilité dans l’entrepôt'
+description: Les documents d’entrepôt entrants et sortants ont une fonctionnalité standard pour l’attribution et la sélection des numéros de traçabilité.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, item, tracking, serial number, lot number, outbound documents
-ms.date: 04/01/2021
+ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: fdd76b21254fc40d2d02332f29c2e002900fdc8b
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 3bf30b7739e488eeb3610d191cfb4f3b20e0e79e
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5775150"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6320374"
 ---
 # <a name="design-details-item-tracking-in-the-warehouse"></a>Détails de conception : traçabilité dans l'entrepôt
 La gestion de numéro de série et de numéro de lot est surtout une tâche d'entrepôt, et donc tous les documents entrepôt enlogement et désenlogement ont une fonctionnalité standard pour affecter et sélectionner des numéros traçabilité.  

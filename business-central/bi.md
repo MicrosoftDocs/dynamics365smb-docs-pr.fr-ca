@@ -1,6 +1,6 @@
 ---
-title: Veille économique| Microsoft Docs
-description: Capturez et analysez des données métier, par exemple les chiffres de vente de l'organisation, les achats, les dépenses opérationnelles, les salaires des employés et les budgets, peuvent être des informations précieuses, pour la veille économique ou pour les décisionnaires.
+title: Veille économique
+description: Business Central contient un certain nombre de fonctionnalités qui vous aident à collecter, analyser et partager des données de compagnie précieuses pour la veille économique et la prise de décision.
 services: project-madeira
 documentationcenter: ''
 author: SorenGP
@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: bi, power BI, analysis, KPI
-ms.date: 04/01/2021
+ms.date: 06/14/2021
 ms.author: edupont
-ms.openlocfilehash: 6a3d3e9aec61b3dab7673c7b99b482f80501a919
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 866cfa9c35e7af7abb17ba9c9171244e2107de4d
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5786572"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6323753"
 ---
 # <a name="business-intelligence"></a>Veille économique
 Les entreprises capturent une énorme quantité de données de par leur activité quotidienne. Ces données, qui reflètent par exemple les chiffres de vente de l'organisation, les achats, les dépenses opérationnelles, les salaires des employés et les budgets, peuvent devenir des informations précieuse, ou veille économique, pour les décisionnaires. [!INCLUDE[prod_short](includes/prod_short.md)] contient un certain nombre de fonctionnalités qui vous permettent de collecter, d'analyser et de partager les données de votre société.

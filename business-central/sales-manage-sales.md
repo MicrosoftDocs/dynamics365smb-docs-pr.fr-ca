@@ -1,6 +1,6 @@
 ---
-title: Aperçu des tâches permettant de gérer la comptabilité fournisseur | Microsoft Docs
-description: Décrit comment gérer les activités des ventes.
+title: Aperçu des tâches permettant de gérer vos ventes
+description: Découvrez comment utiliser les services de Business Central pour gérer les activités de vente avec vos clients avec des factures de vente, des commandes, des devis et plus encore.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,16 +8,16 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: trade, sell
-ms.date: 04/01/2021
+ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 8c80cbbc4ed4feb088116577157407dd8fb98aaf
-ms.sourcegitcommit: c11ad91a389ed72532f5513654fdc7909b20aed9
+ms.openlocfilehash: 376e2af791a8e9e37b72b27d7f4fcfbe8d9a654b
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5935021"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6322001"
 ---
-# <a name="sales"></a>Vente
+# <a name="sales"></a>Ventes
 Vous créez une facture vente ou un document de vente pour enregistrer votre entente avec un client pour vendre certains produits selon certaines méthodes de livraison et de paiement.
 
 Vous devez utiliser des documents de vente si votre processus de vente requiert que vous livriez des parties d'une quantité de commande, par exemple, si la quantité totale est pas disponible d'un coup. Si vous commercialisez des articles en les livrant directement du fournisseur au client, vous devez également utiliser les documents de vente. Pour tous les autres aspects, les commandes vente fonctionnent de la même manière que les factures vente. Dans les documents de vente, vous pouvez également utiliser la fonctionnalité de promesse de livraison pour assurer avec certitude des dates de livraison à vos clients.  

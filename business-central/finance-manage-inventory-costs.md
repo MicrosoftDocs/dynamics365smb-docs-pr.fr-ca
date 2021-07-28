@@ -1,6 +1,6 @@
 ---
-title: Gestion des coûts ajustés | Microsoft Docs
-description: La gestion des coûts, aussi appelée « évaluation des coûts », se charge de l'enregistrement et du report des coûts d'exploitation de la compagnie. Inclut le report des coûts de fabrication et des coûts inventaire qui constituent la valeur des articles.
+title: Gestion des coûts de l'inventaire
+description: La gestion des coûts consiste à enregistrer et à déclarer les coûts d’exploitation de l’entreprise, y compris la déclaration des coûts de fabrication et des coûts de l’inventaire.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,16 +8,16 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: c1dc6cade08a3aab9c5d1cda4b6a2c64995988df
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: a0b466979f749e2d42afac06899a9c079f23ff56
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5780842"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6321897"
 ---
-# <a name="managing-inventory-costs"></a>Gestion des coûts ajustés
+# <a name="managing-inventory-costs"></a>Gestion des coûts de l'inventaire
 La gestion des coûts, aussi appelée « évaluation des coûts », se charge de l'enregistrement et du report des coûts d'exploitation de la compagnie. Inclut le report des coûts de fabrication et des coûts inventaire qui constituent la valeur des articles.   
 
 Il est essentiel de comprendre les principes suivants : les méthodes d'évaluation du coût définissent le mode d'évaluation des articles lors de leur sortie de l'inventaire, l'ajustement des coûts met à jour le coût des marchandises vendues avec les coûts d'achat associés reportés après la vente, les valeurs en inventaire doivent être reportées sur les comptes du grand livre appropriés à intervalles réguliers.
