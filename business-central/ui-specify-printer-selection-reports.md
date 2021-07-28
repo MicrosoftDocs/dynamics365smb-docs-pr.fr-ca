@@ -1,6 +1,6 @@
 ---
 title: Paramétrage imprimantes
-description: Découvrez comment configurer les imprimantes que vous pouvez utiliser pour les rapports et les documents.
+description: Découvrez comment configurer des imprimantes que vous pouvez utiliser pour les rapports et les documents et les différentes fonctionnalités d’impression disponibles dans Business Central.
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: online printing, email printing, cloud printing, Universal Print
-ms.date: 05/17/2021
+ms.date: 06/24/2021
 ms.author: jswymer
-ms.openlocfilehash: c98006d85607a62f99286e1179728b969fa4d005
-ms.sourcegitcommit: 61e279b253370cdf87b7bc1ee0f927e4f0521344
+ms.openlocfilehash: 4f59ac35a6c5ffb266603ac2e98c513d279ddd1e
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6063462"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6437226"
 ---
 # <a name="set-up-printers"></a>Paramétrage imprimantes
 
@@ -25,8 +25,8 @@ Pour répondre à vos besoins d'impression, [!INCLUDE[prod_short](includes/prod_
 
 |Fonctionnalité|Description|Client web| Application mobile|Application pour Teams|
 |-------|-----------|----------|-----------|--------------|
-|Impression universelle|L'impression universelle est une solution de gestion d'imprimante disponible en tant que service en nuage de Microsoft. Avec cette fonction, vous pouvez configurer vos imprimantes dans l'impression universelle, puis les enregistrer pour une utilisation dans [!INCLUDE[prod_short](includes/prod_short.md)]. Cette fonctionnalité nécessite un abonnement d'impression universelle et l'extension **Intégration d'impression universelle**|![fonctionne en ligne](media/check.png)|![fonctionne en ligne](media/check.png)|![fonctionne en ligne](media/check.png)|
-|Impression par courriel|Cette fonction vous permet de configurer des imprimantes compatibles avec la messagerie électronique. [!INCLUDE[prod_short](includes/prod_short.md)] envoie ensuite les travaux d'impression à une imprimante à l'aide de l'adresse de courriel de l'imprimante. Cette fonction nécessite des imprimantes compatibles avec la messagerie électronique et l'extension **Envoyer à une imprimante par courriel**.|![fonctionne en ligne](media/check.png)|![fonctionne en ligne](media/check.png)|![fonctionne en ligne](media/check.png)|
+|Impression universelle|L'impression universelle est une solution de gestion d'imprimante disponible en tant que service en nuage de Microsoft. Avec cette fonction, vous pouvez configurer vos imprimantes dans l'impression universelle, puis les enregistrer pour une utilisation dans [!INCLUDE[prod_short](includes/prod_short.md)]. Cette fonctionnalité nécessite un abonnement d'impression universelle et l'extension **Intégration d'impression universelle**|![fonctionne en ligne.](media/check.png)|![fonctionne en ligne.](media/check.png)|![fonctionne en ligne](media/check.png)|
+|Impression par courriel|Cette fonction vous permet de configurer des imprimantes compatibles avec la messagerie électronique. [!INCLUDE[prod_short](includes/prod_short.md)] envoie ensuite les travaux d'impression à une imprimante à l'aide de l'adresse de courriel de l'imprimante. Cette fonction nécessite des imprimantes compatibles avec la messagerie électronique et l'extension **Envoyer à une imprimante par courriel**.|![fonctionne en ligne.](media/check.png)|![fonctionne en ligne](media/check.png)|![fonctionne en ligne](media/check.png)|
 |Impression du navigateur|Les travaux d'impression sont gérés par la fonctionnalité d'impression du navigateur de l'utilisateur. Si aucune imprimante en nuage n’est installée et configurée ou si une imprimante installée échoue, l’impression reprend par défaut les options d’impression du navigateur. Le champ **Imprimante** de la page de demande de rapport affichera *(Géré par le navigateur)*.|![fonctionne en ligne](media/check.png)|||
 
 > [!NOTE]
@@ -36,7 +36,7 @@ Pour répondre à vos besoins d'impression, [!INCLUDE[prod_short](includes/prod_
 
 L'impression universelle est un service basé sur un abonnement Microsoft 365 qui s'exécute entièrement sur Microsoft Azure. Il vous offre une gestion centralisée des imprimantes via le portail Impression universelle. [!INCLUDE[prod_short](includes/prod_short.md)] met les imprimantes configurées dans l'impression universelle à la disposition des utilisateurs clients via l'extension **Intégration d'impression universelle**.
 
-![Configuration de l′impression universelle](media/Universal-Print-arch.png)
+![Configuration de l′impression universelle.](media/Universal-Print-arch.png)
 
 La configuration complète nécessite que vous travailliez dans Microsoft Azure, en utilisant le [Portail Azure](https://portal.azure.com), et dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
@@ -146,7 +146,7 @@ L'ajout d'imprimantes individuellement vous permet de configurer plusieurs fois 
   
 <!-- To Do Adding printers individually lets you duplicate printers with custom , like different paper trays and paper size and orientation.  To add printers individually, you'll need to know printer's share name in Universal Print. -->
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Gestion des imprimantes**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Gestion des imprimantes**, puis sélectionnez le lien associé.
 2. Sélectionnez **l'impression universelle**, puis l’une des options suivantes :
 
     - **Ajouter toutes les imprimantes l'impression universelle** pour ajouter toutes les imprimantes qui ne sont pas déjà ajoutées. Vous pouvez utiliser cette option même si des imprimantes ont déjà été ajoutées. 
@@ -206,7 +206,7 @@ There is a technical problem withe the printer. Unsupported document-format: app
 
 La page **Gestion des imprimantes** affiche les imprimantes configurées actuellement. La page vous donne également accès à la page **Paramètres** de chaque imprimante pour modifier une configuration existante ou configurer une nouvelle imprimante.
 
-1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Gestion des imprimantes**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Gestion des imprimantes**, puis sélectionnez le lien associé.
 2. Sélectionnez **Imprimer par courriel**, puis choisissez **Ajouter une imprimante par courriel**.
 3. Sur la page **Paramètres de l'imprimante par courriel**, renseignez les champs nécessaires. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
@@ -230,7 +230,7 @@ Il existe plusieurs façons de configurer les imprimantes qui seront utilisées 
 
 La page **Gestion des imprimantes** vous permet de configurer une imprimante comme imprimante par défaut pour tous les travaux d'impression. Vous pouvez spécifier l'imprimante par défaut pour vous uniquement ou pour tous les utilisateurs.
 
-1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Gestion des imprimantes**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Gestion des imprimantes**, puis sélectionnez le lien associé.
 
     > [!TIP]
     > Vous pouvez également ouvrir la page **Gestion des imprimantes** de la page **Sélections d'imprimantes** en choisissant **Gestion des imprimantes**.  
@@ -246,7 +246,7 @@ La page **Sélections d'imprimantes** vous permet de spécifier l'imprimante qu'
 > [!IMPORTANT]
 > Pour [!INCLUDE[prod_short](includes/prod_short.md)] sur site, la page **Sélections d'imprimantes** ne peut être utilisée que pour les imprimantes en nuage définies par les extensions d'imprimante, telles que les imprimantes Impression par courriel et Impression universelle. Elle ne peut pas être utilisée pour les imprimantes locales.
 
-1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Sélections d’imprimantes**, puis sélectionnez le lien associé. Sinon, sur la page **Gestion des imprimantes**, sélectionnez une imprimante, puis l’action **Sélections d’imprimantes**.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Sélections d’imprimantes**, puis sélectionnez le lien associé. Sinon, sur la page **Gestion des imprimantes**, sélectionnez une imprimante, puis l’action **Sélections d’imprimantes**.
 2. Choisissez l'action **Nouveau** pour ajouter une sélection d'imprimante pour un rapport spécifique.
 3. Renseignez les champs selon vos besoins.
 

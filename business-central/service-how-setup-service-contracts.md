@@ -1,6 +1,6 @@
 ---
-title: Configurer des contrats de service | Microsoft Docs
-description: Découvrez comment configurer des contrats de service.
+title: Configurer des contrats de service
+description: Découvrez comment configurer des contrats de service avec les conditions préalables requises, notamment des groupes de contrats de service, des modèles de contrat et des modèles de client.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: service, cost, service order
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: 216bbd775c66fca619d792ff578d198405fc7612
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 65bee9492ebf24eb90ef8b22025a09e36d3602fa
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5781541"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6436586"
 ---
 # <a name="set-up-service-contracts"></a>Configurer des contrats de service
 Avant de pouvoir utiliser les contrats, vous devez définir les éléments suivants : 
@@ -26,19 +26,19 @@ Avant de pouvoir utiliser les contrats, vous devez définir les éléments suiva
 * **Modèles client** : permettent de créer des devis pour les contacts ou les clients potentiels qui ne sont pas enregistrés comme clients dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 ## <a name="to-set-up-a-service-contract-group"></a>Pour configurer un groupe de contrats de service  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Groupes contrats de service**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Groupes de contrats de service**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 3. Activez la case à cocher **Escompte sur cdes contrat seulement** si vous souhaitez que les escomptes de paiement contrat ou service ne soient valides que pour les commandes contrat de service, telles qu'un entretien.  
 
 ## <a name="to-set-up-a-service-contract-account-group"></a>Pour configurer un groupe comptes contrats de service  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Groupes comptes contrat serv.**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Groupes comptes contrat serv.**, puis sélectionnez le lien associé.  
 2. Créez un groupe comptes contrat de service.   
 3. Renseignez les champs **Code** et **Désignation**. Ces champs décrivent le groupe compte service.  
 4. Renseignez le champ **Compte contrat non prépayé**, puis sélectionnez le numéro de compte du grand livre du compte non prépayé.  
 5. Dans le champ **Compte contrat prépayé**, sélectionnez le numéro de compte du grand livre du compte prépayé.  
 
 ## <a name="to-set-up-a-contract-template"></a>Pour configurer un modèle de contrat  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modèles contrat de service**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modèles de contrats de service**, puis sélectionnez le lien associé.  
 2. Créez un modèle contrat de service.  
 3. Dans le champ **N°**, saisissez le numéro du modèle de contrat.  
   
@@ -48,7 +48,7 @@ Avant de pouvoir utiliser les contrats, vous devez définir les éléments suiva
 5. Sélectionnez l'action **Escomptes service** pour ajouter des escomptes contrat.  
 
 ## <a name="to-set-up-a-customer-template"></a>Pour configurer un modèle client  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modèles client**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modèles client**, puis sélectionnez le lien associé.  
 2. Créez une fiche modèle client.  
 3. Sur le raccourci **Général**, entrez un code et une description pour le modèle client respectivement dans les champs **Code** et **Description**. 
 4. Pour définir les critères de recherche, renseignez les autres champs tels que **Code pays/région**, **Code secteur** et **Code langue**.  

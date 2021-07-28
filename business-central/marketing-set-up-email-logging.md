@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: relationship, prospect, opportunity, email
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 5c46fc5107413c4b00b7283e29a75d835de5434e
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 6e2a72b1917fdf419b0f103db39b5cdf84f8b425
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5777683"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6437587"
 ---
 # <a name="track-email-message-exchanges-between-salespeople-and-contacts"></a>Suivre les échanges de courriels entre les représentants et les contacts
 
@@ -105,7 +105,7 @@ Les étapes suivantes supposent que vous utilisez Azure Active Directory pour g�
 Si vous n'utilisez pas Azure Active Directory pour gérer les identités et les accès, vous aurez besoin de l'aide d'un développeur. Si vous préférez stocker le code d'application et le secret dans un emplacement différent, vous pouvez laisser les champs Code client et Secret client vides et écrire une extension pour récupérer le code et le secret depuis l'emplacement. Vous pouvez fournir le secret lors de l’exécution en vous abonnant aux événements OnGetEmailLoggingClientId et OnGetEmailLoggingClientSecret dans codeunit 1641 « Configuration de la connexion à la messagerie ».
 
 ### <a name="to-stop-logging-email"></a>Pour arrêter la connexion à la messagerie
-1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration marketing**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration marketing**, puis choisissez le lien associé.
 2. Désactivez le bouton bascule **Activé**.
 
 ## <a name="see-also"></a>Voir aussi

@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: incoterms
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 8390c95083eb02c208e97f0309a725e8ec4d7730
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 9ee6cdceb716331e2d8338e178def4b8b1e5cfe8
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5778582"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6436711"
 ---
 # <a name="set-up-shipment-methods"></a>Configurer les méthodes de livraison
 
@@ -25,7 +25,7 @@ Vous définissez la description et le code de chaque méthode de livraison sur l
 
 ## <a name="to-set-up-a-shipment-method"></a>Pour configurer une méthode de livraison
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Méthodes de livraison**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Méthodes de livraison**, puis sélectionnez le lien associé.
 2. Sur la page **Méthodes de livraison**, sélectionnez l'action **Nouveau**.
 3. Sur la nouvelle ligne, indiquez un code et une description pour les méthode de livraison.
 

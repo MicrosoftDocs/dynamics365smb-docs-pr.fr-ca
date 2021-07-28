@@ -1,6 +1,6 @@
 ---
 title: Créer un environnement sandbox
-description: Créez un environnement à des fins d’exploration, d’apprentissage, de démonstration, de développement et de test depuis Business Central.
+description: Créez un environnement « test » de type sandbox à des fins sécurisées d’exploration, d’apprentissage, de démonstration, de développement, de dépannage et de test depuis Business Central.
 author: SusanneWindfeldPedersen
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: sandbox, demo, develop
 ms.date: 06/08/2021
 ms.author: solsen
-ms.openlocfilehash: a76ae33815b8e9368f45b72fd8703bfc47cbd079
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: 2f4ca6a98aac49fa5fea7d8658ef51a9510c97d7
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215638"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6437687"
 ---
 # <a name="creating-a-sandbox-environment-in-prod_short"></a>Créeation d'un environnement Sandbox dans [!INCLUDE[prod_short](includes/prod_short.md)]
 
@@ -30,8 +30,8 @@ Votre administrateur gère des environnements sandbox dans le [centre d’admini
 
 1. Connectez-vous à votre instance de production de [!INCLUDE[prod_short](includes/prod_short.md)].
 
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Environnement sandbox**, puis sélectionnez le lien associé.
-    <!-- ![Sandbox Environment Setup](./media/across-sandbox/sandbox-environment-setup.png) -->
+2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Environnement Sandbox**, puis choisissez le lien associé.
+    <!-- ![Sandbox Environment Setup.](./media/across-sandbox/sandbox-environment-setup.png) -->
 3. Cliquez sur le bouton **Créer**.  
 
     Un autre onglet avec [!INCLUDE[prod_short](includes/prod_short.md)] s'ouvre à l'endroit où vous pouvez terminer la configuration de votre environnement Sandbox.
@@ -40,12 +40,12 @@ Votre administrateur gère des environnements sandbox dans le [centre d’admini
     >  Si le bloqueur de fenêtres publicitaires est activé dans votre navigateur, modifiez-le pour autoriser les URL provenant de l'adresse *.businesscentral.dynamics.com.
 
 Lorsque l'environnement Sandbox est prêt, vous êtes redirigé vers l'assistant Bienvenue de l'environnement Sandbox.
-<!-- ![Sandbox Welcome Wizard](./media/across-sandbox/sandbox-wizard.png) -->
+<!-- ![Sandbox Welcome Wizard.](./media/across-sandbox/sandbox-wizard.png) -->
 
 Vous pouvez choisir le bouton **En savoir plus** pour obtenir plus d'informations sur les scénarios de développeur que vous pouvez essayer dans un environnement sandbox, ou le bouton **Fermer** pour passer au Tableau de bord de votre instance sandbox [!INCLUDE[prod_short](includes/prod_short.md)].
 
 En haut du tableau de bord, une notification s'affiche pour vous informer qu'il s'agit d'un environnement Sandbox. Vous pouvez également voir le type de l'environnement dans la barre de titre du client.
-    <!-- ![Sandbox RoleCenter Notification](./media/across-sandbox/sandbox-rolecenter-notification.png) -->
+    <!-- ![Sandbox RoleCenter Notification.](./media/across-sandbox/sandbox-rolecenter-notification.png) -->
 
 > [!NOTE]
 > Un environnement Sandbox créé de cette manière ne contient que les données de démonstration par défaut pour la compagnie CRONUS. Aucune donnée n'est copiée ou autrement transférée à partir de l'environnement de production.
@@ -53,11 +53,11 @@ En haut du tableau de bord, une notification s'affiche pour vous informer qu'il 
 > Vous pouvez également créer un environnement sandbox basé sur les données de production. Vous devez le faire via le Centre d'administration. Pour plus d’informations, voir [Gestion des environnements](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments) dans le contenu dédié à l’équipe Administration et aux développeurs.  
 
 <!--To switch between your production and sandbox environments, you can use the Business Central app launcher.
-    ![Sandbox Dynamics365 Menu](./media/across-sandbox/sandbox-dynamics365-menu.png) -->
+    ![Sandbox Dynamics365 Menu.](./media/across-sandbox/sandbox-dynamics365-menu.png) -->
 
 Un administrateur peut limiter ou même bloquer l'accès de certains utilisateurs à l'environnement sandbox. Ceci peut être effectué à l'aide des fonctions de sécurité standard du produit, telles que la fiche utilisateur, les groupes d'utilisateurs et les ensembles d'autorisations. Pour en savoir plus, voir [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md).  
 
-<!-- ![Sandbox Permission Sets](./media/across-sandbox/sandbox-permission-sets.png) -->
+<!-- ![Sandbox Permission Sets.](./media/across-sandbox/sandbox-permission-sets.png) -->
 
 ## <a name="advanced-functionality-in-the-sandbox-environment"></a>Fonctionnalités avancées de l'environnement Sandbox
 
@@ -69,9 +69,9 @@ L’environnement sandbox n’est pas moins utile, car il comprend quelques fonc
 
 ### <a name="advanced-user-experience"></a>Expérience utilisateur avancée
 
-Il est possible d'activer et de tester la fonctionnalité complète de la version standard de [!INCLUDE[prod_short](includes/prod_short.md)] dans un abonné Sandbox en définissant le champ **Expérience** sur la page **Informations compagnie** sur *Premium*. Trouvez la page **Informations compagnie** dans le menu :::image type="content" source="media/ui-experience/settings_icon_small.png" alt-text="Icône Paramètres":::.  
+Il est possible d'activer et de tester la fonctionnalité complète de la version standard de [!INCLUDE[prod_short](includes/prod_short.md)] dans un abonné Sandbox en définissant le champ **Expérience** sur la page **Informations compagnie** sur *Premium*. Trouvez la page **Informations sur la compagnie** dans le menu :::image type="content" source="media/ui-experience/settings_icon_small.png" alt-text="Icône Paramètres."::: .  
 
-Après avoir activé l'expérience utilisateur *Premium*, vous avez accès à tous les profils (rôles) et tableaux de bord standard dans la version standard. Vous pouvez également créer une compagnie d'évaluation qui est entièrement configurée et qui inclut des données de démonstration et un accès aux modules avancés du produit. Vous pouvez également contacter un partenaire revendeur pour une démonstration des fonctionnalités. Pour plus d’informations, voir [Comment trouver un partenaire revendeur ?](/dynamics365/business-central/across-faq.yml#findpartner).  
+Après avoir activé l'expérience utilisateur *Premium*, vous avez accès à tous les profils (rôles) et tableaux de bord standard dans la version standard. Vous pouvez également créer une compagnie d'évaluation qui est entièrement configurée et qui inclut des données de démonstration et un accès aux modules avancés du produit. Vous pouvez également contacter un partenaire revendeur pour une démonstration des fonctionnalités. Pour plus d’informations, voir [Comment trouver un partenaire revendeur ?](across-faq.yml#how-do-i-find-a-reselling-partner).  
 
 ### <a name="complete-sample-data"></a>Exemples de données complets
 
@@ -80,7 +80,7 @@ Pour les situations où vous avez besoin d’exemples de données supplémentair
 
 #### <a name="to-create-a-company-with-complete-sample-data-in-a-sandbox"></a>Pour créer une compagnie avec des exemples de données complètes dans un sandbox
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Compagnies**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Compagnies**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Nouveau**, puis sélectionnez **Créer une nouvelle compagnie**.  
 3. Sur la page **Configuration assistée pour la création d'une compagnie**, choisissez **Suivant**.  
 4. Spécifiez un nom pour la nouvelle compagnie, puis, dans le champ **Sélectionnez les données et les configurations de mise en route**, choisissez **Évaluation avancée - exemples de données complètes**.  
@@ -90,11 +90,11 @@ Une fois le guide de configuration assistée terminé, vous pouvez commencer à 
 
 ### <a name="designer"></a>Générateur
 
-Dans un environnement sandbox, la fonctionnalité **Générateur** est activée. Vous pouvez activer la fonctionnalité Générateur en sélectionnant l'icône de conception ![Générateur](./media/across-sandbox/sandbox-inclient-design-icon.png) sur une page, ou en choisissant l'élément de menu **Conception** dans le menu Paramètres ![Paramètres ](media/ui-experience/settings_icon_small.png).  
+Dans un environnement sandbox, la fonctionnalité **Générateur** est activée. Vous pouvez activer Concepteur en sélectionnant l’icône de générateur ![Générateur.](./media/across-sandbox/sandbox-inclient-design-icon.png) sur une page, ou en choisissant l’élément de menu **Conception** dans le menu ![Paramètres](media/ui-experience/settings_icon_small.png).  
 
 Pour plus d’informations, consultez [Utilisation du Générateur](/dynamics365/business-central/dev-itpro/developer/devenv-inclient-designer) dans le contenu dédié à l’équipe Administration et aux développeurs (en anglais uniquement).  
 
-<!-- ![In-client Designer](./media/across-sandbox/sandbox-inclient-designer.png) -->
+<!-- ![In-client Designer.](./media/across-sandbox/sandbox-inclient-designer.png) -->
 
 ## <a name="see-also"></a>Voir aussi
 

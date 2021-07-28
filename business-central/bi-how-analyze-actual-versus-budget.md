@@ -1,6 +1,6 @@
 ---
-title: Analyse des montants réalisés et des montants budgétés| Microsoft Docs
-description: Décrit comment analyser les montants réalisés et les montants budgétés.
+title: Analyse comparative Réel/Budget
+description: Cette rubrique explique comment analyser les montants réels par rapport aux montants budgétés afin de collecter, d’analyser et de partager les données de votre compagnie.
 services: project-madeira
 documentationcenter: ''
 author: SorenGP
@@ -10,24 +10,24 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: bi, power BI, analysis, KPI
-ms.date: 04/01/2021
+ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: 9c601dc3507b0777f3aeecb063e6cebe8866768c
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 9011f3d488c659b7b2b44f8801c4af055f51bc54
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5781132"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6437111"
 ---
 # <a name="analyze-actual-amounts-versus-budgeted-amounts"></a>Analyser les montants réalisés et les montants budgétés
 Dans le cadre de la collecte, de l'analyse et du partage des données de votre compagnie, vous voyez les montants réels comparés aux montants budgétés de tous les comptes et pour plusieurs périodes.
 
-Pour analyser les montants budgétés, vous devez d'abord créer des budgets comptabilité. Pour plus d'informations, voir [Créer des budgets GL](finance-how-create-budgets.md).
+Pour analyser les montants budgétés, vous devez d’abord créer des budgets grand livre. Pour plus d'informations, voir [Créer des budgets GL](finance-how-create-budgets.md).
 
 ## <a name="to-view-a-gl-budget"></a>Pour visualiser un budget GL
 Dans un budget doté d'axes, vous pouvez filtrer les écritures et visualiser des budgets spécifiques.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Budgets grand livre**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Budgets GL**, puis choisissez le lien associé.
 2. Sur la page **Budgets GL**, ouvrez le budget que vous souhaitez visualiser.  
 3. En haut de la page, renseignez les champs nécessaires pour définir ce qui est affiché. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
@@ -43,7 +43,7 @@ Dans un budget doté d'axes, vous pouvez filtrer les écritures et visualiser de
 ## <a name="to-view-actual-and-budgeted-amounts-for-all-accounts"></a>Pour afficher les montants budgétés et réalisés de tous les comptes  
 Vous pouvez afficher des budgets et les comparer aux chiffres réels dans différents modules de [!INCLUDE[prod_short](includes/prod_short.md)].
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.  
 2. Sur la page **Plan comptable**, choisissez l'action **Solde/budget du grand livre**.
 3. En haut de la page, renseignez les champs nécessaires pour définir ce qui est affiché.  
 4. Pour voir le détail d'un montant affiché, sélectionnez ce champ.  
@@ -59,7 +59,7 @@ Les colonnes les plus à gauche contiennent le plan comptable. Sur les cinq colo
 ## <a name="to-view-actual-and-budgeted-amounts-for-several-periods"></a>Pour afficher les montants budgétés et réalisés de plusieurs périodes  
 Au lieu de visualiser les montants budgétés et réalisés de tous les comptes au sein d'une seule période, vous pouvez afficher un certain nombre de périodes pour un seul compte.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.  
 2. Sur la page **Plan comptable**, sélectionnez le compte GL approprié, puis choisissez l'action **Solde/budget de compte du grand livre**.  
 3. En haut de la page, renseignez les champs nécessaires pour définir ce qui est affiché.   
 4. Pour voir le détail d'un montant affiché, sélectionnez ce champ.  

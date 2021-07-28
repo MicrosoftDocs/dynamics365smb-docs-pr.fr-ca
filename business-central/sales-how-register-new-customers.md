@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: client, customer, credit
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 178bc8374d50bac5b7f7a6793c596c5109943fa6
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: bb323a5cceb4988035d442d6bc8347125f927bf4
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5778607"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6436761"
 ---
 # <a name="register-new-customers"></a>Enregistrer de nouveaux clients
 
@@ -34,7 +34,7 @@ Pour enregistrer un nouveau client, vous devez remplir une fiche client. Vous po
 
 ### <a name="to-create-a-new-customer-card"></a>Pour créer une fiche client
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.  
 2. Sur la page **Clients**, sélectionnez l'action **Nouveau**.
 
     Si un seul modèle client existe, une nouvelle fiche client avec certains champs renseignés à l'aide des informations provenant du modèle s'ouvre.
@@ -76,7 +76,7 @@ Vous pouvez choisir de ne pas afficher les alertes vous indiquant que la limite 
 
 ### <a name="to-specify-credit-limit-warnings"></a>Pour spécifier les alertes limite de crédit
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration ventes & à recevoir**, puis choisissez le lien associé.
 
 2. Sur le raccourci **Général**, dans le champ **Alertes crédit**, choisissez l’option appropriée comme décrit dans le tableau suivant :
 

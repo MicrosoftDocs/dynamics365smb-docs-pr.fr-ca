@@ -1,6 +1,6 @@
 ---
-title: Traiter les retours ou annulations de ventes | Microsoft Docs
-description: Décrit comment créer une note de crédit vente, directement ou par l'intermédiaire d'un retour vente, pour traiter un retour, une annulation ou un remboursement pour les articles ou les services qui vous ont déjà été payés.
+title: Traiter les retours ou annulations de ventes
+description: Décrit comment créer un note de crédit vente pour traiter un retour, annulation, ou un remboursement pour les articles ou les services qui vous ont déjà été payés.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: undo, credit memo, return
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: b5f6daba9251dad73b8924312e35a5cb1474bdb3
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: b668e37e7cbe9348aab84b2892543a73bc658b43
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5778707"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6436811"
 ---
 # <a name="process-sales-returns-or-cancellations"></a>Traiter les retours ou annulations de ventes
 Si votre client souhaite retourner des articles ou obtenir un remboursement pour des articles, ou encore annuler des services, que vous lui avez vendus et pour lesquels vous avez reçu un paiement, vous devez créer et reporter une note de crédit vente qui indique la modification demandée. Pour inclure les informations de facture vente correctes, vous pouvez créer la note de crédit vente à partir de la facture vente reportée ou vous pouvez créer une note de crédit vente avec les informations copiées de la facture.
@@ -51,7 +51,7 @@ Pour réaliser manuellement l'inversion exacte, sélectionnez **Écriture articl
 Pour plus d'informations, voir [Détails de conception : Évaluation stock](design-details-inventory-costing.md).
 
 ## <a name="to-create-a-sales-credit-memo-from-a-posted-sales-invoice"></a>Pour créer une note de crédit vente à partir d'une facture vente reportée
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures vente reportées**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures vente reportées**, puis sélectionnez le lien associé.  
 2. Sur la page **Factures vente reportées**, sélectionnez la facture vente reportée que vous souhaitez inverser, puis sélectionnez l'action **Créer une note de crédit de correction**.
 
     L'en-tête de la note de crédit vente affiche des informations sur la facture vente reportée. Vous pouvez les modifier, par exemple avec de nouvelles informations qui reflètent l'entente de retour.  
@@ -73,7 +73,7 @@ La boîte de dialogue **Valider et envoyer la confirmation** s'ouvre et indique 
 Les documents vente reportés auxquels vous avez affecté la note de crédit sont à présent inversés, et un remboursement peut être créé pour le client. La note de crédit vente est supprimée et remplacée par un nouveau document dans la liste des notes de crédit vente reportées.
 
 ## <a name="to-create-a-sales-credit-memo-by-copying-a-posted-sales-invoice"></a>Pour créer une note de crédit vente en copiant une facture vente reportée
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de crédit vente**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de crédit vente**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau** pour ouvrir un nouvel avoir vente vierge.
 3. Dans le champ **Client**, entrez le nom d'un client existant.
 4. Sélectionnez l'action **Copier à partir du document**.
@@ -84,7 +84,7 @@ Les documents vente reportés auxquels vous avez affecté la note de crédit son
 9. Remplissez la note de crédit vente en vous reportant à la procédure [Pour créer une note de crédit vente à partir d'une facture vente reportée](sales-how-process-sales-returns-cancellations.md#to-create-a-sales-credit-memo-from-a-posted-sales-invoice).
 
 ## <a name="to-create-a-sales-return-order-based-on-one-or-more-posted-sales-documents"></a>Créer un retour vente à partir d'un ou de plusieurs documents vente reportés
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Retours vente**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Retours vente**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.  
 3. Renseignez les champs dans le raccourci **Général** selon les besoins.
 4. Dans le raccourci **Lignes**, renseignez les lignes manuellement, ou copiez des informations d'autres documents pour renseigner les lignes automatiquement :
@@ -164,7 +164,7 @@ Lorsque vous reportez la commande retour vente, les frais de restockage sont ajo
 Vous pouvez envoyer une note de crédit à un client avec une réduction si le client a reçu des articles légèrement endommagés ou avec du retard.  
 Vous pouvez reporter ce prix réduit en tant que frais annexes dans une note de crédit ou un retour et l'affecter à la livraison reportée. Ce qui suit décrit la procédure pour une note de crédit vente, mais la même procédure s'applique à un retour vente.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de crédit vente**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de crédit vente**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau** pour ouvrir un nouvel avoir vente vierge.
 3. Renseignez l'en-tête note de crédit avec les informations appropriées sur le client à qui vous accordez un rabais sur ventes.  
 4. Dans le champ **Type** du raccourci **Lignes**, sélectionnez **Frais annexes**.  
@@ -187,7 +187,7 @@ Pour regrouper les réceptions retour, activez la case à cocher **Combiner les 
 
 ### <a name="to-manually-combine-return-receipts"></a>Pour regrouper manuellement des réceptions retour  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Note de crédit vente**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Note de crédit vente**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.
 3. Sur le raccourci **Général**, complétez les champs, comme nécessaire.  
 4. Choisissez l'action **Extraire lignes récept. retour**.  
@@ -203,7 +203,7 @@ Pour regrouper les réceptions retour, activez la case à cocher **Combiner les 
 ### <a name="to-automatically-combine-return-receipts"></a>Pour regrouper automatiquement des réceptions retour  
 Vous pouvez regrouper automatiquement des réceptions retour et avez la possibilité de reporter automatiquement les notes de crédit à l'aide de la fonction **Regrouper réceptions retour**.  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Regrouper réceptions retour**, puis sélectionnez le lien associé.
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Regrouper réceptions retour**, puis sélectionnez le lien associé.
 2. Sur la page **Regrouper réceptions retour**, renseignez les champs pour choisir les réceptions retour appropriées.
 3. Cochez la case **Reporter notes de crédit**. Sinon, vous devrez reporter manuellement les notes de crédit achat qui en résulteront.
 4.  Cliquez sur le bouton **OK**.  
@@ -212,7 +212,7 @@ Vous pouvez regrouper automatiquement des réceptions retour et avez la possibil
 Lorsque vous facturez des réceptions retour de cette manière, les commandes retour à partir desquelles les réceptions retour ont été reportées continuent à exister, même si elles ont été entièrement reçues et facturées.  
 
 Lorsque des réceptions retour sont regroupées sur une note de crédit et reportées, une note de crédit reportée est créé pour les lignes créditées. Le champ **Quantité facturée** dans le retour vente d'origine est mis à jour sur la base de la quantité facturée.   
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Supprimer les retours vente facturés**, puis sélectionnez le lien.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Supprimer retours vente facturé**, puis sélectionnez le lien associé.  
 2.  Dans le champ de filtre **N°**, spécifiez les retours vente à supprimer.  
 3.  Cliquez sur le bouton **OK**.  
 

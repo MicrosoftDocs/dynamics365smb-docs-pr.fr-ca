@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: sales rep
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: a16c48821aef828aeba61e8bc859007b5678a473
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 07fa5963f79f091dffd49af7d20669616923797f
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5778532"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6436661"
 ---
 # <a name="set-up-salespeople"></a>Configurer des représentants
 Beaucoup de compagnies souhaitent suivre les performances individuelles d'un collaborateur afin d'avoir une base de calcul pour les commissions et les bonus. Reportez-vous, par exemple, au rapport **Commissions représentant**. Une compagnie peut également souhaiter affecter un représentant à chacun de ses contacts.
@@ -25,7 +25,7 @@ Une fois que vous avez configuré un représentant sur la page **Représentants*
 > [!Video https://www.microsoft.com/videoplayer/embed/RE43Vhm?rel=0]
 
 ## <a name="to-set-up-a-salesperson-code"></a>Pour configurer un code représentant
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Représentants**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Représentants**, puis sélectionnez le lien associé.
 2. Sur la page **Représentants**, sélectionnez l'action **Nouveau**.
 
 Vous pouvez utiliser les représentants dans la gestion des relations et les divers travaux de marketing. Par exemple, vous pouvez affecter des tâches aux représentants, afin que les tâches soient incorporées dans les opportunités de vente affectées au représentant. Pour plus d'informations, voir [Configurer des cycles de vente opportunité et des phases de cycle](marketing-how-setup-opportunity-sales-cycles-stages.md).

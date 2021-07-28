@@ -1,6 +1,6 @@
 ---
-title: Analyse des données par axe analytique| Microsoft Docs
-description: Décrit comment analyser les diverses données métier par axe analytique.
+title: Analyse des données par axe analytique
+description: Cette rubrique décrit comment analyser les diverses données métier par dimension. Les dimensions vous donnent un meilleur aperçu de votre entreprise afin que vous puissiez évaluer les informations.
 services: project-madeira
 documentationcenter: ''
 author: edupont
@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: bi, power BI, analysis, KPI
-ms.date: 04/01/2021
+ms.date: 06/14/2021
 ms.author: edupont
-ms.openlocfilehash: ea949363506e9bc0d9bb3a1a4d53937501e8a5bb
-ms.sourcegitcommit: cbd00f24fb471381bbfd64670237eda176bd78e5
+ms.openlocfilehash: 9637aabd44f0714983a5d0ce129bf5bc9f1eaee4
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947398"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6437086"
 ---
 #  <a name="analyze-data-by-dimensions"></a>Analyse des données par axe analytique
 En analyse financière, une dimension correspond à des données que vous pouvez ajouter à une écriture comme une sorte de marqueur. Ces données permettent de regrouper des écritures dotées de caractéristiques similaires, telles que les clients, les régions, les produits et les représentants, et de récupérer facilement ces groupes à des fins d'analyse. Les axes peuvent être utilisés sur des écritures de feuilles, de documents et de budgets. Le terme dimension décrit la manière dont l'analyse est effectuée. Une analyse à deux axes, par exemple, est une analyse des ventes par zone. Cependant, si vous utilisez plus de deux dimensions lors de la création d'une écriture, vous pouvez mener une analyse plus complexe, telle que des ventes par promotion de vente, par groupe client et par zone. Pour plus d'informations, reportez-vous à [Utilisation des axes](finance-dimensions.md).
@@ -33,7 +33,7 @@ L'analyse de données par dimensions vous permet d'obtenir un meilleur aperçu d
 ## <a name="to-set-up-an-analysis-view"></a>Pour configurer une vue d'analyse :  
 Une analyse par dimensions affiche une combinaison sélectionnée de dimensions. Vous pouvez stocker et récupérer chaque analyse que vous avez configurée. Les informations de configuration des vues analytiques sont stockées sur des fiches **Vue d'analyse** afin de simplifier une éventuelle analyse ultérieure.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Vues d'analyse**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Vues d’analyse**, puis sélectionnez le lien associé.  
 2. Sur la page **Liste des vues d'analyse**, cliquez sur l'action **Nouveau**.
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Pour ajouter des codes axe aux quatre codes du raccourci **Axes analytiques**, cliquez sur **Filtre**, renseignez les champs et cliquez sur **OK**.  
@@ -42,7 +42,7 @@ Une analyse par dimensions affiche une combinaison sélectionnée de dimensions.
 ## <a name="to-analyze-by-dimensions"></a>Pour effectuer une analyse par axe analytique
 La matrice **Vues analytiques** peut vous permettre de consulter les montants de votre comptabilité à l'aide des vues d'analyse que vous avez déjà configurées. Complétez la page **Analyse par dimension** pour définir les éléments affichés dans la matrice, puis choisissez l'action **Afficher matrice** pour afficher la matrice.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Vues d'analyse**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Vues d’analyse**, puis sélectionnez le lien associé.  
 2. Sélectionnez la vue d'analyse appropriée et choisissez l'action **Analyse par dimensions**.
 3. Sur la page **Analyse par dimensions**, renseignez les champs pour définir les données affichées et leur présentation.
 4. Choisissez l'action **Afficher matrice** pour ouvrir la page matricielle respective de la vue d'analyse définie.
@@ -65,7 +65,7 @@ Les montants affichés sur la page **Analyse par dimensions** offrent une image 
 
 La procédure suivante permet de mettre à jour une vue d'analyse à partir de la page **Analyse par dimensions**. Les étapes sont similaires entre les pages **Fiche vue d'analyse** et les pages **Liste des vues d'analyse**.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Vues d'analyse**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Vues d’analyse**, puis sélectionnez le lien associé.
 2. Sélectionnez la vue d'analyse appropriée et choisissez l'action **Analyse par dimensions**.
 2. Sur la page **Analyse par dimensions**, sélectionnez le champ **Code vue d'analyse**.  
 3. Sélectionnez la ligne contenant la vue d'analyse appropriée.  

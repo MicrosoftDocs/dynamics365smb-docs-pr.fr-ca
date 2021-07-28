@@ -1,6 +1,6 @@
 ---
-title: Modifier les documents vente et achat reportés | Microsoft Docs
-description: En savoir plus sur les différentes fonctions de report pour reporter des documents achat et la manière de mettre à jour les documents reportés.
+title: Modifier les documents vente et achat reportés
+description: Cette rubrique explique comment mettre à jour les informations sur un document reporté comme une livraison de vente ou une facture d’achat lorsque des informations pertinentes ont changé.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms.date: 04/01/2021
+ms.search.keywords: Posted document, editable, posted sales shipment, posted purchase invoice, posted return shipment, posted return receipt, Business Central, business document
+ms.date: 06/10/2021
 ms.author: edupont
-ms.openlocfilehash: ef23d98aaeeb63c17e836fd25b547703787264da
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 6a2be703bfc58fbac85dd4776e5256b614eb46cc
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5776207"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6437812"
 ---
 # <a name="edit-posted-documents"></a>Modifier les documents reportés
 
@@ -41,7 +42,7 @@ Les documents supplémentaires suivants peuvent être modifiés dans les pays ou
 
 Voici comment modifier une livraison vente reportée. Les étapes sont similaires pour les autres documents pris en charge.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Livraisons vente reportées**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Livraisons vente reportées**, puis sélectionnez le lien associé.
 2. Sélectionnez le document que vous souhaitez modifier, puis sélectionnez l'action **Mettre à jour le document**. Sinon, ouvrez le document, puis choisissez l'action.
 3. Sur la page **Livraison vente reportée - Mettre à jour**, modifiez le champ **N° de suivi du colis** par exemple.
 4. Cliquez sur le bouton **OK**.

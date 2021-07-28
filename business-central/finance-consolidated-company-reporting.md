@@ -1,6 +1,6 @@
 ---
-title: Consolider les données de plusieurs compagnies | Microsoft Docs
-description: Obtenez une vue récapitulative de la santé financière entre vos unités fonctionnelles.
+title: Consolider les données de plusieurs compagnies
+description: Cette rubrique explique comment vous pouvez consolider les écritures d’au moins deux compagnies séparées (filiales) dans une compagnie consolidée.
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: consolidation, subsidiaries, consolidate
-ms.date: 04/01/2021
+ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 2be133009314b714d7b86e6257f642f13720b5e8
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 24b9dd8d332091508a21620c3ac1d32fd7be8d55
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5774339"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6436258"
 ---
 # <a name="consolidating-financial-data-from-multiple-companies"></a>Consolidation des données financières de plusieurs compagnies
 
@@ -55,7 +55,7 @@ Le processus de transfert des chiffres des unités fonctionnelles vers la compag
 Vous pouvez tester vos données avant de les transférer vers la compagnie consolidée. [!INCLUDE[prod_short](includes/prod_short.md)] recherche des différences dans les informations des unités fonctionnelles et de la compagnie consolidée. Par exemple, si les numéros de compte ou les codes axe sont différents. Vous devez corriger les erreurs avant d'exécuter le rapport. Vous pouvez tester la base de données ou, si vous importez des données à partir d'un fichier XML, vous pouvez tester le fichier.  
 
 1. Ouvrez la compagnie consolidée.  
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
+2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Unités fonctionnelles**, puis choisissez le lien associé.  
 3. Exécutez l'une des opérations suivantes :  
 
     * Pour tester un fichier, choisissez l'action **Tester fichier**, entrez le nom du fichier à tester, puis choisissez **Imprimer**.  

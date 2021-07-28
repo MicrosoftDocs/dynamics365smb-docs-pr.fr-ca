@@ -1,5 +1,5 @@
 ---
-title: Imprimer la liste des prélèvements inventaire d’un document de vente
+title: Imprimer la liste des prélèvements inventaire à partir d’un document de vente
 description: Vous pouvez imprimer une liste des prélèvements inventaire directement à partir d'un document de vente, des ventes, de la facture et d'autres documents vente sortants.
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 4cddce48df3be0a3fadaa74ed751b274ccce7f31
-ms.sourcegitcommit: f9a190933eadf4608f591e2f1b04c69f1e5c0dc7
+ms.openlocfilehash: 50c0a9836a45bac0dfd4a190040c908d28d5617f
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115471"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6436836"
 ---
 # <a name="print-the-picking-list"></a>Imprimer la liste des prélèvements
 
@@ -27,7 +27,7 @@ Ce rapport est généralement utilisé dans les compagnies sans fonctionnalité 
 
 La procédure suivante se base sur un document de vente. Les étapes sont similaires pour tous les autres documents pouvant être utilisés pour lancer la livraison d’articles, par exemple un ordre transfert.
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
+1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2. Ouvrez le document de vente pour lequel vous souhaitez prélever des articles.  
 3. Choisir l'action **Rapport**, puis choisissez l'action **Liste de prélèvement par ordre**.  
 4. Sélectionnez le bouton **Imprimer** pour imprimer la liste de prélèvements, ou le bouton **Aperçu** pour l'afficher à l'écran.

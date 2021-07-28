@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 05/28/2021
 ms.author: edupont
-ms.openlocfilehash: abb6a3a910f8ac628587a58637b96d69bca4266f
-ms.sourcegitcommit: f9a190933eadf4608f591e2f1b04c69f1e5c0dc7
+ms.openlocfilehash: 2841473825ebc0fee7c9357e14e7520b94fd3793
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6116043"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6437787"
 ---
 # <a name="enter-external-document-numbers"></a>Entrer des numéros de document externe
 
@@ -28,7 +28,7 @@ La procédure suivante explique comment spécifier un numéro de document extern
 
 ## <a name="to-enter-external-document-numbers-in-a-sales-order"></a>Pour entrer des numéros de document externe dans un document de vente  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2. Sélectionnez le document de vente concerné, puis cliquez sur l’action **Modifier**.  
 3. Dans le raccourci **Général** du champ **N° doc. externe**, entrez le numéro de facture.  
 

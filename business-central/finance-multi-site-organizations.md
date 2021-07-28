@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: hub-and-spoke, multi-site, headquarter, sites
 ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 7002c5a3f523943e87757f7e2196e683888c21fe
-ms.sourcegitcommit: 652e4b0e1a09bff265014d9f8eb3b038ab0db79e
+ms.openlocfilehash: c6821a8e542b27338ee6f9ce0c14875896019449
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "6087679"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6437376"
 ---
 # <a name="business-central-for-multi-site-and-international-organizations"></a>Business Central pour les organisations multisites et internationales
 Les organisations qui ont plusieurs sites utilisent souvent un modèle commercial en étoile dans lequel une compagnie mère, ou siège social, gère les opérations globales de l′entreprise tandis que chaque site fonctionne comme une entité unique et autonome. Les sites sont souvent répartis géographiquement et ont des besoins différents en matière de partage d′informations avec le siège social. De plus, les sites n′ont généralement pas besoin du même niveau de complexité et manquent souvent des ressources nécessaires pour conserver un système volumineux.
@@ -30,7 +30,7 @@ Cet article présente certaines façons où [!INCLUDE[prod_short](includes/prod_
 
 Le schéma suivant est un exemple de différents sites intégrés à un siège social.
 
-![Description du diagramme générée automatiquement](media/multisite-headquarter-sites.png)
+![Description du diagramme générée automatiquement.](media/multisite-headquarter-sites.png)
 
 ## <a name="meet-the-needs-of-domestic-and-international-sites"></a>Répondre aux besoins des sites nationaux et internationaux
 
@@ -101,7 +101,7 @@ Les sites ont souvent besoin d′un accès à la chaîne d′approvisionnement e
 
 Le siège social doit être en mesure de réagir rapidement face aux changements commerciaux sur chaque site. En combinaison avec Power Automate, [!INCLUDE[prod_short](includes/prod_short.md)] peut servir de mécanisme d’alerte précoce.
 
-![Capture d′écran d′une description de publication sur les réseaux sociaux générée automatiquement](media/multisite-apps.png)
+![Capture d′écran d′une description de publication sur les réseaux sociaux générée automatiquement.](media/multisite-apps.png)
 
 | **Exigence commerciale** | **Comment Business Central la prend en charge** | **En savoir plus** |
 |-------------------------|-------------------------|-------------------------|
