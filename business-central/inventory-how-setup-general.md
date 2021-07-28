@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: warehouse, stock
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 1430123f433cfc101e0ae94ce0598d9c0cdd58b2
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: a99de8575891e15712e221f28bbf3f4a46f2f771
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5785833"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6435632"
 ---
 # <a name="set-up-general-inventory-information"></a>Configurer des informations générales relatives à l'inventaire
 
@@ -23,7 +23,7 @@ Vous pouvez spécifier votre configuration d'inventaire générale sur la page *
 
 ## <a name="to-set-up-general-inventory-information"></a>Pour configurer des informations générales relatives à l'inventaire
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration inventaire**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration de l’inventaire**, puis choisissez le lien associé.
 2. Sur la page **Configuration de l'inventaire**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 Pour des informations détaillées sur les champs d'évaluation des coûts **Report coûts automatique**, **Report coûts prévus** et **Mode évaluation coûts par défaut**, consultez [Rapprocher les coûts de l'inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md), [Détails de conception : évaluation du coût de l'inventaire](design-details-inventory-costing.md) et [Détails de conception : report du coût prévu](design-details-expected-cost-posting.md). Pour plus d’informations sur l'évaluation des coûts en général, voir [Gestion des coûts d'inventaire](finance-manage-inventory-costs.md).  

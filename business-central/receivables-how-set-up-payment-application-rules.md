@@ -1,6 +1,6 @@
 ---
-title: Configurer des règles pour l'affectation automatique des paiements
-description: Sur la page Règles d'affectation de paiement, vous définissez des règles pour définir comment les paiements/transactions bancaires doivent être automatiquement affectés à leurs écritures ouvertes associées lorsque vous utilisez la fonction Affecter automatiquement sur la page Journal rapprochement bancaire.
+title: Règles pour l’affectation automatique des paiements
+description: Découvrez comment configurer des règles pour l’affectation automatique des paiements sur la page Règles d’affectation des paiements.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, direct payment posting, reconcile payment, expenses, cash receipts
-ms.date: 04/01/2021
+ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 57f9fa038c8631db87d03d9054dcf8a17a874345
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 5205f5ed9e8f668a6705d2edfe0e07d328869b16
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5778982"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6435069"
 ---
 # <a name="set-up-rules-for-automatic-application-of-payments"></a>Configurer des règles pour l'affectation automatique des paiements
 
@@ -40,7 +40,7 @@ Outre les critères de correspondance, les remarques suivantes s'appliquent conc
 - Pour les montants positifs, une correspondance est d'abord établie par rapport aux écritures ouvertes représentant les factures fournisseur, et ensuite par rapport aux notes de crédit client.
 
 ## <a name="to-set-up-a-payment-application-rule"></a>Pour configurer une règle d'affectation de paiement
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Règles affectation paiement**, puis sélectionné le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Règles d’affectation des paiements**, puis choisissez le lien associé.
 2. Définissez une règle d'affectation de paiement, nouvelle ou modifiée, en renseignant les champs sur une ligne tel que décrit dans le tableau suivant.
 
 |Champ|Description|

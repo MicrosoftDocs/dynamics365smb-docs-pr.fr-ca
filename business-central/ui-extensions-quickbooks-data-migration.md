@@ -1,5 +1,5 @@
 ---
-title: Extension QuickBooks Data Migration | Microsoft Docs
+title: Extension QuickBooks Data Migration
 description: Décrit comment utiliser l'extension pour importer des clients, des fournisseurs, des articles, et des comptes de QuickBooks Desktop dans Business Central.
 author: edupont04
 ms.service: dynamics365-business-central
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize, import, implement
-ms.date: 04/01/2021
+ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: d6b44ccfc11438930450dd86cab53736f00995c5
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: a7f6a3ac5fdbaf34cf4280be3b8520dde55c7c71
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5785045"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6434971"
 ---
 # <a name="the-quickbooks-data-migration-extension"></a>Extension QuickBooks Data Migration
 
@@ -57,7 +57,7 @@ Afin d'obtenir vos données de l'application QuickBooks Desktop, vous devez tél
 
 ## <a name="finding-the-quickbooks-data-migration-extension"></a>Recherche de l'extension QuickBooks Data Migration
 
-L'extension QuickBooks Data Migration est installée et prête à être utilisée comme partie intégrante du guide de configuration assistée Migration des données. Si vous êtes prêt à commencer et avez exporté vos données de QuickBooks, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration assistée**, puis sélectionnez le lien associé. Choisissez **Migrer des données métier**, puis suivez les étapes du guide.  
+L'extension QuickBooks Data Migration est installée et prête à être utilisée comme partie intégrante du guide de configuration assistée Migration des données. Si vous êtes prêt à commencer maintenant et à exporter vos données depuis QuickBooks, choisissez l’![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration assistée**, puis choisissez le lien associé. Choisissez **Migrer des données métier**, puis suivez les étapes du guide.  
 
 ## <a name="what-do-i-do-after-i-migrate-data"></a>Que faire après une migration des données ?
 

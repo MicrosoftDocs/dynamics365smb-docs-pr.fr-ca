@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: adjustment, status, negative, positive, increase, decrease, inventory
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 8804f64dd2cee60514d18785feee4f8fd6cf67aa
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: fccbb5d15c73a2ab74d6b14e54be1fa098dc3a12
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5785958"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6435682"
 ---
 # <a name="count-and-adjust-inventory-using-documents"></a>Faire l’inventaire et l'ajuster à l’aide de documents
 
@@ -40,7 +40,7 @@ Une commande d'inventaire physique est un document complet composé d'un en-têt
 
 Pour créer les lignes de commande d'inventaire physique, vous utilisez généralement la fonction **Calculer les lignes** pour refléter l'inventaire actuel comme lignes de la commande. Sinon, vous pouvez utiliser la fonction **Copier à partir du document** pour compléter les lignes avec le contenu de toute autre commande d'inventaire physique ouverte ou reportée. La procédure suivante décrit uniquement comment utiliser la fonction **Calculer les lignes**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes d'inventaire**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Commandes d’inventaire**, puis choisissez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Renseignez les champs requis du raccourci **Général**. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Choisissez l'action **Calculer les lignes**.
@@ -100,7 +100,7 @@ Vous pouvez aussi choisir l'action **Diff. commande inventaire physique** pour v
 
 ### <a name="to-find-duplicate-physical-inventory-order-lines"></a>Pour rechercher les doublons de lignes de commande d'inventaire physique
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes d'inventaire**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Commandes d’inventaire**, puis choisissez le lien associé.
 2. Ouvrez la commande d'inventaire physique pour laquelle vous souhaitez afficher les doublons de lignes.
 3. Choisissez l'action **Afficher les doublons de lignes**.
 
@@ -113,7 +113,7 @@ Après avoir effectué une commande d'inventaire physique et modifié son état 
 - Chaque ligne de commande d'inventaire physique a été comptabilisée par au moins une ligne d'enregistrement d'inventaire.
 - Les cases à cocher **Dans les lignes enregistrement** et **Qté prévue (calculée)** ont été sélectionnées pour toutes les lignes de commande d'inventaire physique.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes d'inventaire**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Commandes d’inventaire**, puis choisissez le lien associé.
 2. Sélectionnez la commande d'inventaire physique que vous souhaitez compléter, puis sélectionnez l'action **Modifier**.
 
     Sur la page **Commande d'inventaire physique**, vous visualisez la quantité enregistrée dans le champ **Qté enregistrée (de base)**.
@@ -127,7 +127,7 @@ Les écritures article concernées sont mises à jour ainsi que les écritures d
 ### <a name="to-view-posted-physical-inventory-orders"></a>Pour afficher les commandes d'inventaire physique reportées
 Après report, la commande d'inventaire physique est supprimée et vous pouvez afficher et évaluer le document en tant que commande d'inventaire physique reportée, y compris ses enregistrements d'inventaire physique et tout commentaire effectué.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Commandes d'inventaire physique reportées**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Commandes inventaire physique reportées**, puis choisissez le lien associé.
 2. Sur la page **Commandes inventaire physique reportées**, sélectionnez la commande d'inventaire reportée que vous souhaitez afficher, puis sélectionnez l'action **Afficher**.
 3. Pour afficher une liste des enregistrements d'inventaire physique concernés, sélectionnez l'action **Enregistrements**.
 
@@ -199,7 +199,7 @@ Vous pouvez imprimer ces documents à tout moment, les libérer et les rouvrir, 
 ### <a name="to-set-up-numbering-for-inventory-documents"></a>Pour configurer la numérotation des documents d'inventaire
 La procédure suivante indique comment définir la numérotation des documents inventaire.
 
-1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration inventaire**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration de l’inventaire**, puis choisissez le lien associé.
 2. Sur le Raccourci **Numérotation**, spécifiez dans les champs suivants la série de numéros pour les documents :
    - **N° réception inventaire**  
    - **N° réceptions inventaire reportées**  
@@ -209,7 +209,7 @@ La procédure suivante indique comment définir la numérotation des documents i
 ### <a name="to-create-and-post-an-inventory-document"></a>Pour créer et reporter un document d'inventaire
 La procédure suivante montre comment créer, imprimer et reporter un reçu d'inventaire. La procédure est identique pour des livraisons d'inventaire.
 
-1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Réceptions inventaire**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Réceptions d’inventaire**, puis choisissez le lien associé.  
 2. Dans l'en-tête de la page **Réception de inventaire**, choisissez l'emplacement dans le champ **Code d'emplacement**, puis remplissez les champs restants si nécessaire.
 3. Sur le Raccourci **Lignes**, dans le champ **Article**, choisissez l'article en inventaire. Dans le champ **Quantité**, saisissez le nombre d’articles à ajouter. 
 4. Pour imprimer un rapport **Réception inventaire** de la page **Réception inventaire**, choisissez l'action **Imprimer**.

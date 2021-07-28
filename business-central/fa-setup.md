@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: machinery, buildings
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: a35bd9a83ec05a25bc087722fb2009ca27bbfa2f
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 54ade14f58d9be5957c77a768096b5f475db5798
+ms.sourcegitcommit: a8a01561f46c0a60f8bfd7985be0dcd3e28441fa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5770426"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343559"
 ---
 # <a name="setting-up-fixed-assets"></a>Paramétrage d'immobilisations
 Avant de pouvoir utiliser les immobilisations, vous devez définir les éléments suivants :  
@@ -40,6 +40,8 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Activer l'assurance des immobilisations, configurer les informations générales d'assurance, une fiche assurance par police et préparer les journaux pour reporter les coûts d'assurance. |[Configurer une assurance immobilisation](fa-how-setup-insurance.md) |
 | Activer l'entretien des immobilisations, configurer les informations générales propres à l'entretien, configurer les comptes de report de l'entretien et définir les types de travaux d'entretien. |[Configurer l'entretien d'une immobilisation](fa-how-setup-maintenance.md) |
 | En savoir plus sur les différentes méthodes d'amortissement des immobilisations. |[Méthodes d'amortissement](fa-depreciation-methods.md) |
+| Découvrez comment affecter des méthodes d’amortissement paramétrables. |[Définir des méthodes d’amortissement paramétrables](fa-how-setup-user-defined-depreciation-method.md) |
+
 
 ## <a name="see-also"></a>Voir aussi
 [Immobilisations](fa-manage.md)  

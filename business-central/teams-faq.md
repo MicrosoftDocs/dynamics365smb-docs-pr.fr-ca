@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: Teams, MS Teams, Microsoft Teams, Skype, Link, Microsoft 365, collaborate, collaboration, teamwork, faq, errors
 ms.date: 05/19/2021
 ms.author: jswymer
-ms.openlocfilehash: f3c9626fa73247b2109e5f179aef405e80b44b07
-ms.sourcegitcommit: 5a916b0aa0a2eef0c22b5722a0af041757e6d7c2
+ms.openlocfilehash: 325783df3cacd37250c1efa75320386ef9c4cb19
+ms.sourcegitcommit: eeaf9651c26e49974254e29b7e2d16200c818dad
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6074650"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6341518"
 ---
 # <a name="teams-faq"></a>FAQ Teams
 
@@ -325,7 +325,10 @@ Les invités n’ont pas accès au marché des applications pour installer eux-m
 
 [Vue d’ensemble de l’intégration [!INCLUDE [prod_short](includes/prod_short.md)] et Microsoft Teams ](across-teams-overview.md)  
 [Installer l’application [!INCLUDE [prod_short](includes/prod_short.md)] pour Microsoft Teams](across-install-app-for-teams.md)  
+[Recherche de clients, de fournisseurs et autres contacts dans Microsoft Teams](across-search-contacts-teams.md)  
+[Partager des enregistrements dans Microsoft Teams](across-working-with-teams.md)  
 [Dépannage dans Teams](admin-teams-troubleshooting.md)  
+[Modification de la compagnie et d’autres paramètres dans Teams](across-teams-settings.md)  
 [Développement pour l’intégration de Teams](/dynamics365/business-central/dev-itpro/developer/devenv-develop-for-teams)  
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]  

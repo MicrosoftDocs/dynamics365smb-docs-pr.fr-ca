@@ -1,6 +1,6 @@
 ---
-title: Comment répartir des lignes activité entrepôt | Microsoft Docs
-description: Dans le cadre de rangements, mouvements ou prélèvements entrepôt et de rangements et prélèvements inventaire, des zones sont proposées pour le prélèvement et le rangement des articles. Il arrive parfois que la quantité réelle disponible dans la zone soit insuffisante ou que l'espace de la zone proposé soit insuffisant pour le rangement de la quantité nécessaire. Dans ces cas, vous devez répartir la ligne de telle sorte que les articles d'une ligne soient prélevés ou placés dans plusieurs zones.
+title: 'Procédure : répartir des lignes activité entrepôt'
+description: Découvrez comment décloisonner les lignes d’activité entrepôt si la capacité disponible dans une zone suggérée n’est pas suffisante.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 08cebf3fb140fd76396add89bf8d7418aa4f115a
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 46ac47dbf3b1df3f89b83c56215831100edb3827
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5784152"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6325253"
 ---
 # <a name="split-warehouse-activity-lines"></a>Répartir des lignes activité entrepôt
 Dans le cadre de rangements, mouvements ou prélèvements entrepôt et de rangements et prélèvements inventaire, des zones sont proposées pour le prélèvement et le rangement des articles. Il arrive parfois que la quantité réelle disponible dans la zone soit insuffisante ou que l'espace de la zone proposé soit insuffisant pour le rangement de la quantité nécessaire. Dans ces cas, vous devez répartir la ligne de telle sorte que les articles d'une ligne soient prélevés ou placés dans plusieurs zones.  

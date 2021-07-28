@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: dimension, correction, correct, business intelligence
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 018e0ebdb96e155959fc0042e4c2a9b778ecffb0
-ms.sourcegitcommit: cbd00f24fb471381bbfd64670237eda176bd78e5
+ms.openlocfilehash: 0475e814807c2218b2dcc72f3c07359b80546cc3
+ms.sourcegitcommit: 8566399d5181f1c171c7536fff9c890a34e94ba4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947499"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "6373248"
 ---
 # <a name="troubleshooting-and-correcting-dimensions"></a>Dépannage et correction des dimensions
 Les rapports financiers et les vues d′analyse reposent souvent sur les données des dimensions. Malgré les garanties disponibles, il se produit parfois une erreur pouvant entraîner des imprécisions. Cette rubrique décrit certaines erreurs classiques et explique comment corriger les affectations de dimensions sur les transactions reportées afin que les rapports financiers soient précis.
@@ -109,3 +109,17 @@ Si une correction ne se termine pas, un avertissement s'affiche sur la carte de 
 
 ### <a name="using-cost-accounting-with-corrected-gl-entries"></a>Utilisation de la comptabilité analytique avec les écritures GL corrigées
 Une fois les dimensions corrigées, vos données pour la comptabilité analytique seront désynchronisées. La comptabilité analytique utilise des dimensions pour agréger les montants des centres de coûts et des objets de coûts, et pour exécuter les affectations de coûts. La modification des dimensions des écritures GL signifiera probablement que vous réexécuterez vos modèles de comptabilité analytique. Que vous deviez simplement supprimer quelques registres de coûts et réexécuter les affectations, ou tout supprimer et réexécuter tous vos modèles, dépend des données qui ont été mises à jour et de la configuration de vos fonctionnalités de comptabilité analytique. Identifier où les corrections de dimensions auront un impact sur la comptabilité analytique et où des mises à jour sont nécessaires est un processus manuel. [!INCLUDE[prod_short](includes/prod_short.md)] ne propose pas actuellement de moyen automatisé de le faire.
+
+## <a name="correcting-number-assignments-for-global-dimensions"></a>Corriger les attributions de numéros pour les dimensions globales
+Dans la table Écriture de l’ensemble des dimensions, les dimensions globales sont affectées à la valeur **0** dans le raccourci N° de dimension. et les dimensions de raccourci reçoivent leur numéro de dimension de raccourci, qui peut être compris entre 1 et 8. Certains rapports utilisent ces attributions de numéro pour déterminer les valeurs à utiliser dans les calculs.
+
+Lorsque les valeurs de dimension sont importées à l’aide de packages de configuration créés sans exécuter de déclencheurs de validation, ou en utilisant un code personnalisé pour appeler les méthodes d’insertion ou de modification sans exécuter les déclencheurs de validation OnInsert ou OnModify, les dimensions de raccourci se voient parfois attribuer un numéro différent de 0. Lorsque cela se produit, les calculs sont incorrects pour les dimensions des journaux généraux récurrents qui utilisent les méthodes récurrentes Solde BD par compte ou Solde BD par dimensions. 
+
+Si un numéro incorrect est attribué, lorsque vous essayez de reporter ou de prévisualiser des journaux sur la page **Journaux généraux récurrents**, la page **Messages d’erreur** s’affiche. À partir de la page Messages d’erreur, vous pouvez choisir le lien dans le champ **Source** pour exécuter un rapport qui corrigera les affectations de numéros de dimension de raccourci dans la table Écriture de l’ensemble des dimensions. Alternativement, vous pouvez également rechercher **Mettre à jour le n° dimension principal pour les écritures de l’ensemble de dimensions** pour exécuter le rapport.
+
+Après avoir exécuté le rapport, sur la page **Écritures journal modification** vous pouvez consulter les modifications apportées au numéro dans le champ Numéro de dimension globale. . [!INCLUDE[prod_short](includes/prod_short.md)] enregistre toujours les valeurs précédentes et les nouvelles. 
+
+## <a name="see-also"></a>Voir aussi
+[Vue d’ensemble des écritures de l’ensemble des dimensions](design-details-dimension-set-entries-overview.md)
+[Utilisation des dimensions](finance-dimensions.md)
+[Analyser les données par dimensions](bi-how-analyze-data-dimension.md)

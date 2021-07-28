@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: year closing, close accounting period, close fiscal year, aging, creditor payments, vendor payments, assets, liabilities, equity, analysis, reporting, financial report, business intelligence, BI, Power Bi, KPI
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: f58ee0ab43e8d43ae2d08e67cec52a9dd63ac202
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: dadfa25189aa44c032dd03aee053be39d87bc4d2
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5776651"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6435919"
 ---
 # <a name="preparing-closing-statements"></a>Préparation des relevés de fermeture
 Il existe plusieurs rapports standard que vous pouvez utiliser pour rassembler les informations dont vous avez besoin pour préparer les relevés de fermeture de votre compagnie.
@@ -32,7 +32,7 @@ Le tableau suivant décrit un certain nombre d'états qui peuvent être utiles d
 | Imprimez un tableau d'analyse pour analyser les chiffres des comptes du grand livre ou comparer les écritures GL réelles et les écritures budget du grand livre. |**Tableau d'analyse** |
 | Vérifier que les écritures client et fournisseur sont équilibrées avec les écritures correspondantes du grand livre. |**Rappr. cptes clients et fourn.** |
 
-Pour visualiser un rapport, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez le nom qui s'affiche dans la table, puis sélectionnez le lien associé.
+Pour voir un rapport, sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez le nom tel qu’il apparaît dans le tableau, puis choisissez le lien associé.
 
 ## <a name="see-also"></a>Voir aussi
 [Clôture des exercices et des périodes](year-close-years-periods.md)  

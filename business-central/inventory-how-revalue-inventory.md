@@ -12,18 +12,18 @@ ms.workload: na
 ms.search.keywords: costing, inventory cost, value entries
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 3fe164e6e71756ee56990610bc6c6cb0557ad2c3
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 01710b23c56634b91b86f3f1c6e6c87415a787c6
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5785858"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6435607"
 ---
 # <a name="revalue-inventory"></a>Réévaluer l'inventaire
 Pour réévaluer ou amortir un article ou une écriture article spécifique, vous devez utiliser le journal réévaluation.
 
 ## <a name="to-revalue-inventory"></a>Pour réévaluer l'inventaire
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal réévaluation**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal réévaluation**, puis choisissez le lien associé.
 2. Choisissez l'action **Calculer valeur stock**.
 3. Sur la page **Calculer valeur inventaire**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Cliquez sur le bouton **OK**.

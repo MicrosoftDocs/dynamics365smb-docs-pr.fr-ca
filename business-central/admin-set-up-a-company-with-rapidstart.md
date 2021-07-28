@@ -1,6 +1,6 @@
 ---
-title: Configurer une compagnie avec RapidStart Services | Microsoft Docs
-description: Vous pouvez configurer une nouvelle compagnie dans Business Central avec RapidStart Services, qui est un outil conçu pour réduire les temps de déploiement, améliorer la qualité de l’implémentation, présenter une approche reproductible des implémentations et augmenter la productivité en automatisant et en simplifiant des tâches récurrentes.
+title: Configurer une compagnie avec RapidStart Services
+description: Vous pouvez créer une compagnie dans Business Central avec RapidStart Services pour améliorer la productivité en automatisant et en simplifiant les tâches récurrentes.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/14/2021
 ms.author: edupont
-ms.openlocfilehash: 1f471bcebf634eeac92e10a816e65460f03a1de5
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 46ce62b98e02f934b859dc7191d7fea69ae44af0
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5777276"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6325436"
 ---
 # <a name="setting-up-a-company-with-rapidstart-services"></a>Configuration d'une compagnie avec RapidStart Services
 Vous pouvez configurer une nouvelle compagnie dans [!INCLUDE[prod_short](includes/prod_short.md)] avec RapidStart Services, qui est un outil conçu pour réduire les temps de déploiement, améliorer la qualité de l’implémentation, présenter une approche reproductible des implémentations et augmenter la productivité en automatisant et en simplifiant des tâches récurrentes.  

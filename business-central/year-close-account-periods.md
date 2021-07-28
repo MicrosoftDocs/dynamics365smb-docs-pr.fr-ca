@@ -1,6 +1,6 @@
 ---
-title: Fermer des périodes comptables pour un exercice financier | Microsoft Docs
-description: Décrit comment fermer les périodes comptables de l'exercice financier.
+title: Fermer des périodes comptables pour un exercice financier
+description: Cet article décrit comment fermer les périodes comptables de l’exercice financier comptable pour la fermeture de l’exercice.
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,20 +8,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: year closing, close accounting period, close fiscal year, bank account detailed trial balance
-ms.date: 04/01/2021
+ms.date: 06/25/2021
 ms.author: jswymer
-ms.openlocfilehash: a26baaf947fdac133e3bfcd50489d680231d9971
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 5f668104fe6b0bbd9dbbf9295034547e298df916
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5786692"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6436008"
 ---
 # <a name="close-accounting-periods"></a>Fermer des périodes comptables
 Lorsqu'un exercice financier est terminé, vous devez fermer les périodes qui le composent.
 
 ## <a name="to-close-accounting-periods"></a>Pour fermer des périodes comptables
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Périodes comptables**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Périodes comptables**, puis sélectionnez le lien associé.
 2. Sur la page **Périodes comptables**, sélectionnez l'action **Fermer exercice**.
 
     Si plusieurs exercices financiers sont ouverts, le plus ancien est automatiquement sélectionné pour la fermeture. Un message identifiant l'exercice qu'il compte fermer s'affiche et indique les conséquences de la fermeture.

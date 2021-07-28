@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: Teams, MS Teams, Microsoft Teams, Skype, Link, Microsoft 365, collaborate, collaboration, teamwork, troubleshooting, errors
 ms.date: 04/12/2021
 ms.author: jswymer
-ms.openlocfilehash: a26414ae33b0139257c542966ba9ccd934241a66
-ms.sourcegitcommit: 921f0c4043dcda2fb8fc35df1b64310bf32270d7
+ms.openlocfilehash: ed1d44f7aa1fe7adc899c429a6595cef23251075
+ms.sourcegitcommit: eeaf9651c26e49974254e29b7e2d16200c818dad
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017134"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6341313"
 ---
 # <a name="troubleshooting-microsoft-teams-integration-with-prod_short"></a>Dépannage de l’intégration de Microsoft Teams avec [!INCLUDE [prod_short](includes/prod_short.md)]
 
@@ -154,7 +154,10 @@ En tant qu’administrateur, avec des autorisations d’administrateur Azure Act
 
 [Vue d’ensemble de l’intégration [!INCLUDE [prod_short](includes/prod_short.md)] et Microsoft Teams ](across-teams-overview.md)  
 [Installer l’application [!INCLUDE [prod_short](includes/prod_short.md)] pour Microsoft Teams](across-install-app-for-teams.md)  
+[Recherche de clients, de fournisseurs et autres contacts dans Microsoft Teams](across-search-contacts-teams.md)  
+[Partager des enregistrements dans Microsoft Teams](across-working-with-teams.md)  
 [FAQ Teams](teams-faq.md)  
+[Modification de la compagnie et d’autres paramètres dans Teams](across-teams-settings.md)  
 [Développement pour l’intégration de Teams](/dynamics365/business-central/dev-itpro/developer/devenv-develop-for-teams)  
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]  

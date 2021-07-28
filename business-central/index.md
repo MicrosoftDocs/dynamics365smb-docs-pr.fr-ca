@@ -9,12 +9,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 9042f49795f5ee6bb9e0bced2b8ba48ba1e093b4
-ms.sourcegitcommit: f9a190933eadf4608f591e2f1b04c69f1e5c0dc7
+ms.openlocfilehash: e84f9df3d688ccd6e6355f90e3bf76069b371d83
+ms.sourcegitcommit: eeaf9651c26e49974254e29b7e2d16200c818dad
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115271"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6341368"
 ---
 # <a name="welcome-to-prod_long"></a>Bienvenue dans [!INCLUDE[prod_long](includes/prod_long.md)] !
 
@@ -88,6 +88,15 @@ Vous pouvez également visionner des vidéos de fonctionnalités nouvelles et co
 - [Feuille de route Microsoft Dynamics 365 Business Central](https://dynamics.microsoft.com/roadmap/business-central/)
 - [Microsoft Partner Network \(requiert un compte d'adhésion Microsoft Partner Network\)](https://mspartner.microsoft.com/en/us/windows/index.aspx)|  
 
+## <a name="get-notified-about-changes-through-an-rss-feed"></a>Soyez informé des changements via un flux RSS
+
+Pour vous abonner à un flux RSS (Really Simple Syndication) de toutes les mises à jour apportées au contenu sur docs.microsoft.com à travers le contenu des fonctionnalités commerciales pour [!INCLUDE [prod_short](includes/prod_short.md)], utilisez le lien suivant :
+
+[Flux RSS](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-bc-app%27)&locale=en-us)
+
+> [!NOTE]
+> Le flux RSS renvoie une liste des 100 articles les plus récemment mis à jour. La liste n’est pas triée par date.  
+
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 
 ## <a name="see-also"></a>Voir aussi
@@ -109,7 +118,5 @@ Vous pouvez également visionner des vidéos de fonctionnalités nouvelles et co
 [Présentation de docs.microsoft.com (article de blog original)](/teamblog/introducing-docs-microsoft-com)  
 
 ## [!INCLUDE[prod_short](includes/free_trial_md.md)]
-
-<!--comment out for 3 days[![RSS Subscription](/dynamics365-release-plan/media/feed-icon.png "RSS Subscription")](https://go.microsoft.com/fwlink/?linkid=2161350) Updates to Dynamics 365 Business Central documentation-->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

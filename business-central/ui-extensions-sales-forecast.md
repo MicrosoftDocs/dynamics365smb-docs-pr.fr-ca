@@ -12,12 +12,12 @@ ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize, budget
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: f55bad5c26e1f1fbb336090ff862e0e931ff9c39
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 86ff1e678882e4bfb7e95c253f55558c5b57defd
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5784750"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6434844"
 ---
 # <a name="the-sales-and-inventory-forecast-extension"></a>Extension Prévision des ventes et de l'inventaire
 La gestion de l'inventaire est un compromis entre le service client et la gestion de vos coûts. D'une part, un inventaire faible exige un capital de travail inférieur, mais d'autre part, les ruptures d'inventaire mènent potentiellement à des ventes non concrétisées. L'extension Prévision des ventes et de l'inventaire prévoit les ventes potentielles à l'aide des données historiques et donne une présentation claire des ruptures d'inventaire prévues. Selon la prévision, l'extension aide à créer des demandes de réapprovisionnement auprès de vos fournisseurs et vous fait gagner du temps.  
@@ -56,7 +56,7 @@ Vous pouvez aussi utiliser votre propre service Web prévisionnel basé sur un m
 3. Utilisez votre compte Microsoft pour enregistrer un espace de travail, puis copiez le modèle.  
 4. Exécutez le modèle, et publiez-le comme service Web.  
 5. Notez l'URL d'API et la clé d'API. Vous allez utiliser ces informations d'identification pour une configuration de trésorerie.  
-6. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration des prévisions de l'inventaire et des ventes prévues**, puis sélectionnez le lien associé.  
+6. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration de la prévision des ventes et de l’inventaire**, puis sélectionnez le lien associé.  
 7. Développez le raccourci **Général**, puis renseignez les champs URL d'API et Clé d'API.  
 
 

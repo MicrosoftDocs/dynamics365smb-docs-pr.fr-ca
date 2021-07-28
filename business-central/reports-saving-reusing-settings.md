@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: customization, personalization
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 4437d723834a8189a7155d59812c8e2e1f16b933
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 6d83597057975757354da06668a7e71e94e5273f
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5778932"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6435773"
 ---
 # <a name="manage-saved-settings-for-reports-and-batch-jobs"></a>Gérer les paramètres enregistrés pour les rapports et les traitements en lot
 Lors de l'exécution d'un rapport, les utilisateurs voient généralement une page qui leur permet de sélectionner des options et de définir des filtres pour modifier les données incluses dans le rapport généré. Cette page est appelée la page de demande. Un rapport peut inclure un ou plusieurs *paramètres enregistrés* que les utilisateurs peuvent appliquer au rapport à partir de la page de demande. Les *Paramètres enregistrés* sont essentiellement des options et des filtres prédéfinis. Le fait d'utiliser les paramètres enregistrés est une façon rapide et fiable de générer de façon cohérente des états qui contiennent les données adéquates. Pour plus d'informations, voir [Utilisation des paramètres enregistrés](ui-work-report.md#SavedSettings).
@@ -38,7 +38,7 @@ Si vous avez les bonnes autorisations, vous pouvez visualiser, créer et modifie
 
 ## <a name="to-create-and-modify-saved-settings-for-all-users"></a>Pour créer et modifier les paramètres enregistrés pour tous les utilisateurs
 Vous devez gérer les paramètres enregistrés à partir de la page **Paramètres des rapports**. Deux méthodes sont disponibles pour ouvrir cette page :
--   Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Paramètres des rapports**, puis sélectionnez le lien associé.
+-   Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Paramètres du rapport**, puis choisissez le lien associé.
 -   Ouvrez un rapport, sélectionnez la fonction de recherche dans le champ **Utiliser les valeurs par défaut de**, puis choisissez l'action **Sélectionner dans la liste complète**.
 
 La page affiche toutes les entrées de paramètres enregistrés existants pour tous les utilisateurs. Si un nom d'utilisateur est indiqué dans le champ **Affecté à**, seul cet utilisateur peut utiliser les paramètres enregistrés pour le rapport associé. Si le champ **Partager avec tous les utilisateurs** est coché, tous les utilisateurs peuvent utiliser les paramètres enregistrés pour le rapport.

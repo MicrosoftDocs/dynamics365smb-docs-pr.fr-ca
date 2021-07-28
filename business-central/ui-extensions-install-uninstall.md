@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: app, add-in, manifest, customize, install, uninstall
 ms.date: 06/03/2021
 ms.author: solsen
-ms.openlocfilehash: 564b9574188acd63acaa660f4a440be791846ef7
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: 09d1998bcd8cdf522b1533fe4768a0bbf0aca776
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216215"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6435046"
 ---
 # <a name="installing-and-uninstalling-extensions-in-business-central"></a>Installation et désinstallation d’extensions dans Business Central
 
@@ -32,7 +32,7 @@ Vous pouvez modifier [!INCLUDE[prod_short](includes/prod_short.md)] en installan
 
 ## <a name="installing-an-extension"></a>Installation d'une extension
 
-La page **Gestion des extensions** vous permet de gérer les extensions. Vous pouvez accéder à cette page à partir de la page d'accueil. Sinon, choisissez l'icône **Page ou rapport pour la recherche**![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") dans le coin supérieur droit, entrez **Extension**, puis sélectionnez le lien associé.  
+La page **Gestion des extensions** vous permet de gérer les extensions. Vous pouvez accéder à cette page à partir de la page d'accueil. Sinon, choisissez l’icône **Page ou rapport pour la recherche** ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") dans le coin supérieur droit, entrez **Extension**, puis choisissez le lien associé.  
 
 Vous pouvez obtenir de nouvelles extensions depuis le marché à l'adresse [AppSource.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2081646). Ici, vous trouverez toutes les extensions disponibles pour [!INCLUDE[prod_short](includes/prod_short.md)], et vous pourrez obtenir des applications, des extensions et des packs de contenu pour d'autres produits Microsoft. Définissez les filtres appropriés, observez les informations pour chaque extension et obtenez une extension pour votre [!INCLUDE[prod_short](includes/prod_short.md)].  
 

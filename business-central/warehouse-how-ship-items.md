@@ -1,6 +1,6 @@
 ---
-title: Comment livrer des articles | Microsoft Docs
-description: En fonction de votre configuration d'entrepôt, vous pouvez enregistrer la livraison sur le document d'entreprise sortant associé, comme un document de vente, directement, ou vous pouvez utiliser les documents livraison entrepôt qui respectent un flux de travail et s'intègrent à différentes activités entrepôt.
+title: Comment livrer des articles
+description: Cette rubrique décrit comment livrer des articles depuis votre entrepôt en fonction de la configuration de votre entrepôt pour le traitement des livraisons.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,20 +8,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 22404e97c578f6bcaaa5f74ec40408beca7fe3c8
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 60274947bb0f38ed6e116767ac5c74357482298c
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5782769"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6435944"
 ---
 # <a name="ship-items"></a>Livrer des articles
 
 Lorsque vous livrez des articles provenant d'un entrepôt qui n'est pas configuré pour un traitement de livraison entrepôt, enregistrez simplement la livraison du document d'entreprise associé, comme un document de vente, une commande service, un retour vente ou un ordre de transfert sortant.
 
-Lorsque vous livrez des articles à partir d'un entrepôt qui est configuré pour un traitement de livraison entrepôt, vous ne pouvez livrer des articles que sur la base des documents sources que d'autres centres de la compagnie ont libérés et transmis à l'entrepôt en vue d'une action.
+Lorsque vous livrez des articles à partir d’un entrepôt qui est configuré pour un traitement d’livraison entrepôt, vous ne pouvez livrer des articles que sur la base des documents origine que d’autres centres de la compagnie ont libérés et transmis à l’entrepôt en vue d’une action.
 
 > [!NOTE]
 > Si votre entrepôt utilise le transbordement et les zones, vous pouvez visualiser pour chaque ligne la quantité d'articles placés dans les zones transbordement. L'application calcule automatiquement ces quantités chaque fois que les champs de la livraison sont mis à jour. S'il s'agit des articles correspondant à la livraison que vous préparez, vous pouvez créer un prélèvement pour toutes les lignes, puis terminer la livraison. Pour plus d'informations, voir [Transborder des articles](warehouse-how-to-cross-dock-items.md).
@@ -30,7 +30,7 @@ Lorsque vous livrez des articles à partir d'un entrepôt qui est configuré pou
 
 Ce qui suit décrit comment livrer des articles pour un document de vente. Les étapes sont similaires pour les retours achat, les commandes service et les ordres de transfert sortants.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Ouvrez un document de vente existant, ou créez-en un nouveau. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
 3. Dans le champ **Qté à livrer**, indiquez la quantité livrée.
 
@@ -48,7 +48,7 @@ Premièrement, vous créez un document livraison à partir d'un document source 
 
 Généralement, l'employé qui est chargé de la livraison crée une livraison entrepôt. La procédure suivante décrit comment créer la livraison manuellement dans la version par défaut de [!INCLUDE[prod_short](includes/prod_short.md)], mais votre organisation peut avoir automatisé une partie du processus, par exemple en utilisant des scanners portables ou montés pris en charge par des fournisseurs externes.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Livraisons entrepôt**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Livraisons entrepôt**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 
     Renseignez les champs du raccourci **Général**. Lorsque vous récupérez des lignes document origine,certaines des informations de l'en-tête sont copiées dans chaque ligne.  
@@ -83,12 +83,12 @@ Lorsque vous disposez des lignes à livrer, vous pouvez lancer le processus qui 
 
 Généralement, un magasinier chargé du prélèvement crée un document prélèvement, ou ouvre un document prélèvement déjà créé.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Livraisons entrepôt**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Livraisons entrepôt**, puis sélectionnez le lien associé.
 2. Sélectionnez la livraison entrepôt que vous souhaitez prélever, puis sélectionnez l'action **Créer prélèvement**.
 3. Renseignez les champs de la page de demande, puis cliquez sur le bouton **OK**. Le document prélèvement entrepôt spécifié est créé.
 
     Sinon, ouvrez un prélèvement entrepôt existant.
-4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements**, puis sélectionnez le lien associé. Sélectionnez le prélèvement entrepôt que vous souhaitez utiliser.
+4. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvements**, puis choisissez le lien associé. Sélectionnez le prélèvement entrepôt que vous souhaitez utiliser.
 
     Si l'entrepôt est configuré pour utiliser des emplacements, alors les lignes prélèvement sont converties en lignes action Prélever et Ranger.
 

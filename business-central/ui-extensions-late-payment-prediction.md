@@ -1,6 +1,6 @@
 ---
-title: Prévoir des retards de paiement pour les documents vente | Microsoft Docs
-description: Utilisez notre modèle prédictif pour prévoir si une facture sera payée à temps.
+title: Prévoir un retard de paiement pour les documents vente
+description: Cette rubrique explique comment utiliser notre modèle prédictif pour prévoir si une facture sera payée à temps.
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: customer, payment, invoice, sales, invoice, quote
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.author: bholtorf
-ms.openlocfilehash: 93889510c01a2feecface046440de19dcb1e83eb
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: be2916e266e404ae1975eb4b721a8b83f1d02791
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5787362"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6434918"
 ---
 # <a name="the-late-payment-prediction-extension"></a>Extension Prévisions de retard de paiement  
 Une gestion efficace des créances est importante pour la santé financière générale d'une société. L'extension de prévision de retard de paiement peut vous aider à minimiser les créances ouvertes et à ajuster votre stratégie de collectes en prévoyant si les factures vente seront payées à temps. Par exemple, si un retard de paiement est prévu, vous pouvez décider d'ajuster les conditions de paiement ou le mode de règlement du client.
@@ -26,7 +26,7 @@ Lorsque vous ouvrez un document vente reporté, une notification s'affiche en ha
 
 Pour activer manuellement l'extension, procédez comme suit :
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration des prévisions de retard de paiement**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration de prévision de paiement en retard**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins.
 
 > [!Note]
@@ -91,7 +91,7 @@ S'il s'avère que vos processus ne correspondent pas au modèle standard, vous p
 [!INCLUDE[prod_short](includes/prod_short.md)] exécute automatiquement la formation et l'évaluation lorsque le nombre de factures payées et en retard est suffisant, mais vous pouvez l'exécuter manuellement quand vous le souhaitez.
 
 #### <a name="to-train-and-use-your-model"></a>Pour former et utiliser votre modèle
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration des prévisions de retard de paiement**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration de prévision de paiement en retard**, puis sélectionnez le lien associé.  
 2. Dans le champ **Modèle sélectionné**, choisissez **Mon modèle**.
 3. Choisissez l'action **Créer mon modèle** pour former le modèle sur vos données.  
 
@@ -103,7 +103,7 @@ Vous pouvez également utiliser votre propre service web prévisionnel basé sur
 3. Utilisez votre compte Microsoft pour enregistrer un espace de travail, puis copiez le modèle.  
 4. Exécutez le modèle, et publiez-le comme service Web.  
 5. Notez l'URL d'API et la clé d'API. Vous allez utiliser ces informations d'identification pour une configuration de trésorerie.  
-6. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration des prévisions de retard de paiement**, puis sélectionnez le lien associé.  
+6. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration de prévision de paiement en retard**, puis sélectionnez le lien associé.  
 7. Activez la case à cocher **Utiliser mon abonnement Azure**.
 8. Sur l'organisateur **Mes informations d'identification du modèle**, saisissez l'URL d'API et la clé API de votre modèle.  .  
 
