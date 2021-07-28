@@ -1,6 +1,6 @@
 ---
-title: Inventaire, ajustement et reclassement de l'inventaire| Microsoft Docs
-description: Décrit la manière d'effectuer un inventaire physique, faire des ajustements négatifs ou positifs, et comment modifier des informations, telles que l'emplacement ou le numéro de lot, sur des écritures article ou des écritures entrepôt.
+title: Inventaire, ajustement et reclassement de l'inventaire
+description: Effectuer un inventaire physique, faire des ajustements négatifs ou positifs, et modifier des informations, telles que l’emplacement ou le numéro de lot, sur le grand livre article ou des écritures entrepôt.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: adjustment, negative, positive, increase, decrease
-ms.date: 04/01/2021
+ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: d2052d2d6cc5d06eb001d2b29eb6d5fc79d8b00c
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 3c975a6d851693cef2b139d2493f825299770fac
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5785983"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6440465"
 ---
 # <a name="count-adjust-and-reclassify-inventory-using-journals"></a>Comptabiliser, ajuster et reclasser l'inventaire avec les journaux
 Vous devez effectuer un inventaire physique (c'est-à-dire compter tous les articles disponibles) au moins une fois par exercice financier pour vérifier si la quantité enregistrée dans la base de données est identique à la quantité réelle en stock dans les entrepôts. Lorsque vous connaissez la quantité physique réelle, vous devez la reporter dans le grand livre dans le cadre de l'évaluation de l'inventaire de fin d'exercice.
@@ -48,7 +48,7 @@ Vous pouvez effectuer l'inventaire physique de l'une des manières suivantes en 
 -   Si votre emplacement utilise les prélèvement et rangement suggérés (configuration d'entrepôt avancée), vous utilisez d'abord la page **Journal inventaire physique entrepôt**, puis vous utilisez la page **Journal article** pour exécuter la fonction **Calculer ajustement entrepôt**.
 
 ### <a name="to-calculate-the-expected-inventory-in-basic-warehouse-configurations"></a>Pour calculer l'inventaire prévu dans les configurations d'entrepôt de base
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux inventaire**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journaux inventaire**, puis choisissez le lien associé.
 2. Choisissez l'action **Calculer stock**.
 3. Sur la page **Calculer inventaire**, indiquez les conditions à utiliser pour créer les lignes journal, par exemple si vous souhaitez inclure les articles pour lesquels aucun inventaire n'est enregistré.
 4. Définissez des filtres si vous souhaitez uniquement calculer l'inventaire de certains articles, zones, emplacements ou dimensions.
@@ -80,13 +80,13 @@ Les employés peuvent maintenant poursuivre le comptage de l'inventaire et noter
 
     Les écritures du grand livre d'articles et les écritures du grand livre de l'inventaire physique sont créées. Ouvrez la fiche article pour visualiser les écritures de grand livre d'inventaire physique ainsi obtenues.
 
-3. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
+3. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
 4. Pour vérifier l'inventaire de stock, ouvrez la fiche article en question, puis choisissez **Écritures comptables inventaire**.
 
 ### <a name="to-calculate-the-expected-inventory-in-advanced-warehouse-configurations"></a>Pour calculer l'inventaire prévu dans les configurations d'entrepôt avancées
 Synchronisez le grand livre article et l'entrepôt avant d’effectuer l’inventaire physique de l'entrepôt, sinon les résultats que vous reportez dans le journal inventaire physique et le grand livre article dans la partie définitive de la procédure seront les résultats de l’inventaire physique combinés avec d’autres ajustements entrepôt pour les articles qui ont été comptés. Pour plus d’informations, consultez [Synchroniser les quantités dans le grand livre article et l'entrepôt](inventory-how-count-adjust-reclassify.md#to-synchronize-the-adjusted-warehouse-entries-with-the-related-item-ledger-entries)
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal inventaire entrepôt**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journal d’inventaire d’entrepôt**, puis choisissez le lien associé.  
 2. Choisissez l'action **Calculer stock**. La page de demande de traitement en lot **Calculer inventaire entrepôt** s'ouvre.  
 3. Positionnez les filtres permettant de limiter les articles comptés dans la feuille, puis sélectionnez le bouton **OK**.
 
@@ -96,7 +96,7 @@ Synchronisez le grand livre article et l'entrepôt avant d’effectuer l’inven
 
 
 ### <a name="to-print-the-report-to-be-used-when-counting"></a>Pour imprimer le rapport à utiliser lors du comptage
-1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Liste d’inventaire entrepôt**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Liste d’inventaire entrepôt**, puis choisissez le lien associé.  
 2. Ouvrez la page de sélection du rapport, puis imprimez les listes sur lesquelles vous souhaitez que les employés enregistrent la quantité d'articles qu'ils comptent dans chaque zone.  
 
 Les employés peuvent maintenant poursuivre le comptage de l'inventaire et noter les éventuelles différences sur le rapport imprimé.
@@ -130,24 +130,24 @@ Un inventaire est généralement effectué en fonction d'intervalles récurrents
 
 Configurez les périodes d'inventaire que vous souhaitez utiliser, puis affectez-en une à chaque article. Lorsque vous effectuez un inventaire et que vous utilisez **Calculer période d'inventaire** de la feuille inventaire, les lignes des articles sont créées automatiquement.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Périodes inventaire**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Périodes inventaire**, puis choisissez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 ### <a name="to-assign-a-counting-period-to-an-item"></a>Pour affecter une période d'inventaire à un article  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.  
 2. Sélectionnez l'article auquel vous souhaitez affecter une période d'inventaire.  
 3. Dans le champ **Code période inventaire stock**, sélectionnez la période d'inventaire appropriée.  
 4. Cliquez sur le bouton **Oui** pour modifier le code et la calculer la première période d'inventaire de l'article. La prochaine fois que vous choisissez de calculer une période d'inventaire dans le journal inventaire physique, l'article s'affichera en tant que ligne sur la page **Sélection article inventaire physique**. Vous pouvez ensuite commencer à compter l'article sur une base périodique.
 
 ### <a name="to-initiate-a-count-based-on-counting-periods-in-basic-warehouse-configurations"></a>Pour lancer un décompte selon des périodes d'inventaire dans les configurations d'entrepôt de base
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal inventaire**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journal inventaire**, puis choisissez le lien associé.
 2. Choisissez l'action **Calculer la période d'inventaire**.
 
     La page **Sélection article inventaire** qui s'ouvre affiche les articles auxquels des périodes d'inventaire ont été affectés et qui doivent être comptés en fonction de leurs périodes d'inventaire.
 3. Effectuer l'inventaire physique. Pour plus d'informations, voir [Pour effectuer un inventaire entrepôt](inventory-how-count-adjust-reclassify.md#to-perform-a-physical-inventory).
 
 ### <a name="to-initiate-a-count-based-on-counting-periods-in-advanced-warehouse-configurations"></a>Pour lancer un décompte selon des périodes d'inventaire dans les configurations d'entrepôt avancées
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **-Journal inventaire entrepôt**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journal d’inventaire d’entrepôt**, puis choisissez le lien associé.  
 2. Choisissez l'action **Calculer la période d'inventaire**.
 
     La page **Sélection article inventaire** qui s'ouvre affiche les articles auxquels des périodes d'inventaire ont été affectés et qui doivent être comptés en fonction de leurs périodes d'inventaire.
@@ -159,7 +159,7 @@ Configurez les périodes d'inventaire que vous souhaitez utiliser, puis affectez
 ## <a name="to-adjust-the-inventory-of-one-item"></a>Pour ajuster l'inventaire d'un article
 Après avoir effectué un inventaire d'un article dans votre module Distribution - Stocks, vous pouvez utiliser la fonction **Ajuster stock** pour enregistrer la quantité réelle en stock.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
 2. Sélectionnez l'article pour lequel vous souhaitez ajuster le stock, puis sélectionnez l'action **Ajuster stock**.
 3. Dans le champ **Nouveau stock**, entrez la quantité en stock que vous souhaitez enregistrer pour l'article.
 4. Cliquez sur le bouton **OK**.
@@ -176,7 +176,7 @@ Sur la page **journal article**, vous pouvez reporter la transaction article dir
 
 Si vous utilisez fréquemment le journal article pour reporter des lignes journal identiques ou analogues (par exemple, des lignes en rapport avec la consommation de matériel), vous pouvez utiliser la page **Journal article standard** pour simplifier cette tâche récurrente. Pour plus d'informations, voir [Utilisation des journaux standard](ui-work-general-journals.md#working-with-standard-journals).
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux article**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux article**, puis choisissez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 3. Choisissez l'action **Valider** pour créer des ajustements de stock.
 
@@ -185,7 +185,7 @@ Si votre emplacement utilise des prélèvement et rangement suggérés, vous pou
 
 Contrairement au report des ajustements dans le journal article inventaire, l'utilisation du journal article entrepôt permet d'obtenir un autre niveau d'ajustement des enregistrements de quantité encore plus précis, à tout moment. Par conséquent, l'entrepôt dispose toujours d'un enregistrement complet indiquant le nombre d'articles disponibles et leur lieu de stockage, mais les enregistrements ajustement ne sont pas immédiatement reportés dans le grand livre article. Au cours de l'enregistrement, le programme crédite ou débite la zone de l'ajustement quantité, et crée une écriture de compensation dans la zone d'ajustement entrepôt (zone virtuelle sans articles réels). Cette zone a été définie dans le **Code de zone d'ajustement inventaire** sur la fiche emplacement.
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal article entrepôt**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal article entrepôt**, puis choisissez le lien associé.  
 2.  Renseignez les informations d'ent-ête.  
 3.  Renseignez le champ **N° article** de la ligne.  
 4.  Saisissez la zone dans laquelle vous placez les articles supplémentaires ou dans laquelle des articles sont manquants.  
@@ -195,7 +195,7 @@ Contrairement au report des ajustements dans le journal article inventaire, l'ut
 ## <a name="to-synchronize-the-adjusted-warehouse-entries-with-the-related-item-ledger-entries"></a>Pour synchroniser les écritures entrepôt ajustées avec les écritures article associées
 Suivant les intervalles définis par la politique de la compagnie, vous devez reporter les enregistrements des zones d'ajustement entrepôt dans le grand livre article. Certaines compagnies choisissent de reporter quotidiennement les ajustements dans l'écriture article, alors que d'autres préfèrent effectuer une simulation de manière moins fréquente.
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal article**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal article**, puis choisissez le lien associé.  
 2.  Renseignez les champs de chaque ligne journal.  
 3.  Sélectionnez l'action **Calculer ajustement entrepôt** et renseignez les filtres selon vos besoins dans la page de demande de traitement en lot. Les ajustements sont calculés uniquement pour les écritures de la zone d'ajustement qui répondent aux exigences des filtres.  
 4.  Sur le raccourci **Options**, entrez manuellement un numéro dans le champ **N° document**. Étant donné qu'aucune série de numéros n'a été configurée pour ce traitement en lot, utilisez le modèle de numéros configuré par l'entrepôt ou saisissez la date suivie de vos initiales.  
@@ -209,7 +209,7 @@ Des étapes spéciales s'appliquent lorsque vous souhaitez reclasser les numéro
 
 L'exemple suivant est basé sur un code d'emplacement. Les étapes sont similaires pour d'autres types d'attributs d'article.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux reclassement article**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux reclassement article**, puis choisissez le lien associé.
 2. Sur la page **Journal reclassement article**, renseignez les champs selon vos besoins.
 3. Dans le champ **Code d'emplacement**, entrez le code d'emplacement actuel de l'article.
 4. Dans le champ **Nouveau code d'emplacement**, entrez le nouveau code d'emplacement de l'article.

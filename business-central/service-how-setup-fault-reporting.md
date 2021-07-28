@@ -1,6 +1,6 @@
 ---
-title: Configurer la génération de rapports de pannes dans Gestion des services | Microsoft Docs
-description: Découvrez comment configurer les processus de génération de rapports de pannes.
+title: Configurer le rapport panne dans la gestion des services
+description: Le rapport panne permet d’établir des normes d’enregistrement des informations de panne pour les articles de service avec les codes par défaut, etc.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,22 +8,22 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: cc4f646e8bd01425be99944ad4b013dfbd570787
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: b3563d840976b6a3c586e5a75a2f76379e8c5526
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5773740"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6440138"
 ---
 # <a name="set-up-fault-reporting"></a>Configurer le rapport de panne
 La génération de rapports de pannes permet d'établir des normes d'enregistrement des informations de panne pour les articles de service. Par exemple, vous pouvez spécifier la nature du problème, les symptômes visibles, le motif du problème et la solution pour le résoudre.  
 
 Les codes panne décrivent les pannes article de service courantes ou les actions effectuées au niveau des articles de service. En fonction du niveau de rapport panne de votre compagnie, il peut être nécessaire de configurer les codes de zone panne et symptôme avant les codes panne. Les zones panne décrivent les zones de pannes article de service. Les codes motif panne décrivent le motif des pannes article de service et, si nécessaire, indiquent si les escomptes garantie et contrat doivent être exclus. Par exemple, vous pouvez être amené à exclure les escomptes garantie et contrat si le client est responsable de la panne de l'article de service. Vous affectez des codes motif panne aux commandes service. Pour plus d'informations, voir [Travailler sur des tâches service](service-how-to-work-on-service-tasks.md).  
 
-## <a name="to-specify-the-overall-level-of-fault-reporting-to-use"></a>Pour spécifier le niveau global de la génération de rapports de pannes à utiliser
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration de service**, puis sélectionnez le lien associé.
+## <a name="to-specify-the-overall-level-of-fault-reporting"></a>Pour spécifier le niveau global du rapport panne
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration services**, puis choisissez le lien associé.
 2. Dans le champ **Niveau rapport panne**, sélectionnez l'une des options décrites dans le tableau suivant.  
 
     |**Niveau de panne**|**Description**|  
@@ -33,13 +33,13 @@ Les codes panne décrivent les pannes article de service courantes ou les action
     |Panne + Symptôme | Vous entrez une combinaison de codes dans les tables **Codes panne** et **Codes symptôme**. Les codes symptôme courants incluent des indicateurs qu'un client peut utiliser pour décrire un problème (bruit, qualité, etc).|  
     |Panne + Symptôme + Zone. | Vous utilisez les codes Panne, Symptôme et Zone panne dans le cadre de la mise en œuvre du système International Repair Coding System (IRIS).|  
 
-Pour terminer la configuration du rapport panne, vous pouvez également spécifier les réparations ou solutions associées à une panne ou un défaut. Pour ce faire, utilisez la page **Relations codes panne/solution**, qui vous permet de configurer des combinaisons de codes pour le groupe d'articles de service de l'article de service à partir duquel vous accédez à la fenêtre, ainsi que le nombre d'occurrences de chacune d'elles.
+Pour terminer la configuration du rapport panne, vous pouvez également spécifier les réparations ou solutions associées à une panne ou un défaut. Pour ce faire, utilisez la page **Relations codes panne/solution**, qui vous permet de configurer des combinaisons de codes pour le groupe d’articles de service de l’article de service à partir duquel vous accédez à la fenêtre, ainsi que le nombre d’occurrences de chacune d’elles.
 
 ## <a name="to-create-fault-and-resolution-code-relationships"></a>Pour créer des relations codes panne/solution
 <!--this needs to go in a working with topic-->
  Pour pouvoir visualiser, lors de la maintenance des articles, les modes de réparation les plus courants se rapportant à des pannes article particulières, vous devez regrouper des informations sur les relations codes panne/solution. Utilisez le traitement en lot **Insérer relations codes P/S** pour rechercher toutes les combinaisons de codes panne/solution dans des commandes service reportées et les enregistrer sur la page **Relations codes panne/solution**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Insérer relations codes P/S**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Insérer relations codes PS**, puis sélectionnez le lien associé.  
 2. Entrez des dates pour définir la période à inclure dans le traitement en lot.  
 3. Pour regrouper les relations par groupe d'articles de service, activez la case à cocher **Relations définies à partir des groupes articles de service**.  
 4. Pour conserver les enregistrements que vous avez déjà insérés manuellement sur la page **Relations codes panne/solution**, activez la case à cocher **Conserver enreg. insérés manuellement**.  

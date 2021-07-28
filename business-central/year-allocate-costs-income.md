@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 8fec3a7c079058e73cda2b6f8940e3778b405bac
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 3f7b6089a3cdcba323d13a745ae2cb8e06f3bb8a
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5775050"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6439780"
 ---
 # <a name="allocate-costs-and-income"></a>Répartition des coûts et du revenu
 Vous pouvez ventiler une écriture dans un journal général dans différents comptes lorsque vous reportez le journal. L'affectation peut être effectuée de trois manières différentes :
@@ -32,7 +32,7 @@ Les procédures suivantes décrivent comment se préparer à affecter des coûts
 
 ## <a name="to-set-up-allocation-keys"></a>Pour définir des clés de ventilation
 Vous pouvez affecter une écriture dans un journal général récurrent dans différents comptes lorsque vous reportez le journal. L'affectation peut être effectuée par quantité, pourcentage ou montant.
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal général récurrent**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal général récurrent**, puis sélectionnez le lien associé.
 2. Sélectionnez le champ **Nom du lot** pour ouvrir la page **Lots journal général**.
 3. Vous pouvez soit modifier les ventilations sur un lot existant dans la liste ou créer un lot avec des ventilations.
    * Pour créer un lot, sélectionnez l'action **Nouveau**, et passez à l'étape suivante.
@@ -47,7 +47,7 @@ Vous pouvez affecter une écriture dans un journal général récurrent dans dif
 11. Reportez le journal.
 
 ## <a name="to-change-an-allocation-key-that-has-already-been-set-up"></a>Pour modifier une clé d'affectation déjà configurée
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal général récurrent**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal général récurrent**, puis sélectionnez le lien associé.
 2. Sur la page **Journal général récurrent**, sélectionnez le journal contenant l'affectation.
 3. Sélectionnez la ligne de la ventilation, puis sélectionnez l'action **Ventilations**.
 4. Modifiez les champs appropriés, puis cliquez sur le bouton **OK**.

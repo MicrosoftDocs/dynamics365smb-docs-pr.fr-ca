@@ -11,12 +11,12 @@ ms.reviewer: edupont
 ms.search.keywords: user settings, preferences, language, region, time zone, regional settings
 ms.date: 04/01/2021
 ms.author: soalex
-ms.openlocfilehash: 36850a2d0d8f85a0436b5d268c3cd2653b2f785f
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: fff79b56d6846547230788b6caa831e7bf3a11d7
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5779767"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6438962"
 ---
 # <a name="manage-user-settings-and-preferences"></a>Gérer les paramètres et les préférences de l'utilisateur
 
@@ -74,7 +74,7 @@ En tant qu'administrateur, vous pouvez obtenir un aperçu des modifications indi
 
 ## <a name="to-review-or-delete-user-personalizations"></a>Pour consulter ou supprimer les personnalisations des utilisateurs
 
-1. Sélectionnez l’icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), saisissez **Pages personnalisées**, puis sélectionnez le lien associé.
+1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Pages personnalisées**, puis sélectionnez le lien associé.
 2. Cela montre la liste des utilisateurs et leurs pages personnalisées. Pour effacer la personnalisation d'un utilisateur, cliquez sur la ligne appropriée ou choisissez **Gérer**, puis **Supprimer**.
 
 Cela supprime la personnalisation, et l'expérience de l'utilisateur de la page concernée revient à l'état par défaut.

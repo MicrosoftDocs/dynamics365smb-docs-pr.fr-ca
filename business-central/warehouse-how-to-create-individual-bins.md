@@ -1,6 +1,6 @@
 ---
-title: 'Procédure : créer des zones | Microsoft Docs'
-description: La méthode la plus efficace pour créer les zones de votre entrepôt consiste à générer des groupes de zones identiques dans la feuille de création de zones, mais vous pouvez également créer vos zones séparément.
+title: Comment créer des zones
+description: Générez des groupes de zones similaires dans la feuille de calcul prévue à cet effet, créez des zones individuellement sur la carte d’emplacement ou automatiquement sur la feuille de calcul de création des zones.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,20 +8,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 0c426fa5a617a8457a562333d96cc7924ddc6669
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 89b1c6b6252cc91fb10c2698b0a8b4869dc39853
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5782719"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6440088"
 ---
 # <a name="create-bins"></a>Créer zones
 La méthode la plus efficace pour créer les zones de votre entrepôt consiste à générer des groupes de zones identiques dans la feuille de création de zones, mais vous pouvez également créer vos zones séparément à partir de la fiche emplacement. Vous pouvez également utiliser une fonction de la page **Feuille création zone** pour créer des zones automatiquement.  
 
 ## <a name="to-create-a-bin-from-the-location-card"></a>Pour créer une zone à partir de la fiche emplacement  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **emplacements**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
 2.  Sélectionnez l'emplacement à partir duquel vous souhaitez créer une zone, puis choisissez l'action **Zones**.  
 3. Sélectionnez l'action **Nouveau**.
 4. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -37,7 +37,7 @@ La réservation d'une zone est, dans l'entreposage de base, une fonctionnalité 
 > Des articles dans des zones réservées ne sont pas protégés lorsqu'ils sont prélevés et consommés comme composantes d'assemblage ou de production sur la page **Prélèvement inventaire**. Pour plus d'informations, consultez [Prélever pour la fabrication ou l'assemblage dans les configurations de stockage de base](warehouse-how-to-pick-for-production.md).
 
 ## <a name="to-create-bins-individually-in-the-bin-creation-worksheet"></a>Pour créer séparément des zones dans la feuille de création de zones  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille de création de zone**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille création zone**, et choisissez le lien associé.  
 2.  Sur chaque ligne, renseignez les champs requis pour nommer et caractériser les emplacements que vous créez.  
 3.  Choisissez l'action **Créer zones**.  
 
@@ -49,7 +49,7 @@ Avant de commencer à créer automatiquement des zones, déterminez les types de
 
 Pour travailler avec la page **Feuille création zone**, vous devez être configuré comme employé d'entrepôt à l'emplacement où les zones existent. Pour plus d'informations, voir [Configurer des employés d'entrepôt](warehouse-how-to-set-up-warehouse-employees.md).    
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille de création de zone**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille de création de zone**, et choisissez le lien associé.  
 2.  Choisissez l'action **Calculer zones**.
 3. Sur la page **Calculer zones**, sous **Code modèle zone**, sélectionnez le modèle zone à utiliser comme modèle pour les zones que vous créez.
 4.  Saisissez une description pour les emplacements que vous êtes en train de créer.  

@@ -1,18 +1,18 @@
 ---
-title: Procédure de suivi des colis | Microsoft Docs
-description: Utilisez le service de suivi des agents de livraison pour voir la progression d'une livraison.
+title: 'Procédure : suivre des colis'
+description: Utilisez le service de suivi des agents de livraison sur Internet pour suivre les colis et suivre l’avancement d’une livraison.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keywords: rfq
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: fea12afc4c9c1273fe8ba6da563240781fb1bc9d
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: c4272e26021cecd04d6bd81ec66957032def6a8e
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5778357"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6440213"
 ---
 # <a name="track-packages"></a>Suivre des colis
 
@@ -22,7 +22,7 @@ La procédure suivante montre comment suivre un colis à partir d'une livraison 
 
 ## <a name="to-track-a-package"></a>Pour suivre un colis
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Livraison vente reportée**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Livraison vente reportée**, puis sélectionnez le lien associé.
 2. Ouvrez la livraison appropriée.
 3. Choisissez l'action **Mettre à jour le document**.
 4. Dans le champ **N° récépissé**, entrez le numéro de package que vous avez reçu de l'agent de livraison. Mettez à jour l'**agent de livraison** si nécessaire et fermez la page.

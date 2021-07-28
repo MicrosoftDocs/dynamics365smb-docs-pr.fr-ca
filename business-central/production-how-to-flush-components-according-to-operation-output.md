@@ -1,6 +1,6 @@
 ---
 title: Consommer en aval des composantes en fonction de la production réalisée
-description: Pour les articles configurés avec la méthode de consommation en amont, le comportement par défaut est de calculer et de reporter la consommation de composantes lorsque vous affectez au bon de production libéré l'état Terminé.
+description: Cette rubrique décrit comment rincer les composantes en fonction de la sortie de l’opération ainsi que d’autres méthodes de rinçage impliquées.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: 82d5148bd99870b623a0b37693e105bcf8b862b2
-ms.sourcegitcommit: f9a190933eadf4608f591e2f1b04c69f1e5c0dc7
+ms.openlocfilehash: f774c3e626ae7db282d87797a59f0f0aaf89d599
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115875"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6439103"
 ---
 # <a name="flush-components-according-to-operation-output"></a>Consommer en aval des composantes en fonction de la production réalisée
 Vous pouvez définir différentes stratégies de consommation, pour automatiser l'enregistrement de la consommation des composantes. 
@@ -91,18 +91,18 @@ Par exemple, si un bon de production de 800 mètres nécessite pour son exécut
 
 ## <a name="to-flush-components-according-to-operation-output"></a>Pour consommer en aval des composants en fonction de la production réalisée
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.  
 2.  Choisissez l'action **Modifier**.  
 3.  Sur le raccourci **Réapprovisionnement**, dans le champ **Méthode consommation**, sélectionnez **En amont**.  
 
     > [!NOTE]  
     >  Sélectionnez **Prélèvement + Amont** si la composante est utilisée dans un emplacement configuré pour un prélèvement et un rangement suggérés.  
 
-4.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Itinéraires**, puis sélectionnez le lien associé.  
+4.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Itinéraires**, puis sélectionnez le lien associé.  
 5.  Définir les codes lien itinéraire pour chaque opération qui consomme la composante. Pour plus d'informations, voir [Créer des itinéraires](production-how-to-create-routings.md).  
     > [!IMPORTANT]  
     > N'utilisez pas le même lien d'itinéraire pour différentes opérations dans l'itinéraire, car cela entraînera l'enregistrement de la consommation de composante pour chaque opération liée.  
-6.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Nomenclature production**, puis sélectionnez le lien associé.  
+6.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Nomenclature de production**, puis choisissez le lien associé.  
 7.  Associe aux codes lien itinéraire de chaque instance de la composante l'opération dans laquelle elle est consommée.
 
 La consommation sera reportée automatiquement lorsque vous enregistrez la sortie. Pour plus d’informations, voir [Exécuter en lot la production et les temps d’exécution](production-how-to-post-output-quantity.md)

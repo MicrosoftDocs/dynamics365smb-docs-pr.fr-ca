@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 815a4a6d66fad42a5d1467b87eaef7d6a1688ee1
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: ca03ba59e02dd1efe1b76c679e12e77044ca95e3
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5780017"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6439670"
 ---
 # <a name="configure-a-company-with-the-rapidstart-wizard"></a>Configurer une compagnie avec l'assistant RapidStart
 Vous pouvez rapidement configurer une nouvelle compagnie que vous avez créée à l’aide de l’Assistant Configuration de RapidStart Services.
@@ -39,7 +39,7 @@ Dans la procédure suivante, vous avez fourni au client un package configuration
     >  Modifiez votre Tableau de bord uniquement après avoir effectué la configuration de la compagnie. Si vous avez d’autres informations de configuration à prendre en compte et à modifier, utilisez d’abord la feuille de configuration pour effectuer votre travail. Enfin, revenez à l’Assistant pour mettre à jour votre profil Tableau de bord, ou sélectionnez l'action **Configuration terminée**.
 
 7. Cliquez sur le bouton **OK**.  
-8. Pour vérifier que les informations de configuration ont été appliquées à la nouvelle compagnie, choisissez l'icône ![Ampoule qui ouvre la fonction Tell](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Informations compagnie**, puis sélectionnez le lien associé.
+8. Pour vérifier que les informations de configuration ont été appliquées à la nouvelle compagnie, choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Informations sur la compagnie**, puis choisissez le lien associé.
 
 La page **Informations compagnie** contient les informations que vous avez spécifiées.   
 

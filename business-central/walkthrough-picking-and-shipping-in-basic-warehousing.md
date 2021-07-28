@@ -1,6 +1,6 @@
 ---
 title: Prélèvement et expédition dans les configurations d’entrepôt de base
-description: Dans Business Central, les processus sortants de prélèvement et d'expédition peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.
+description: Dans Business Central, les processus sortants de prélèvement et d’expédition peuvent être effectués de quatre manières, en fonction du niveau de complexité de l’entrepôt.
 author: jill-kotel-andersson
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 05/27/2021
+ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: e1763e6288c8b8218955049ba7ef4c461ee5164e
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: 3eefe17d0ebe89d006c5904cb73a75975b6c38f2
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6214663"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6439078"
 ---
 # <a name="walkthrough-picking-and-shipping-in-basic-warehouse-configurations"></a>Procédure pas à pas : Prélèvement et expédition dans les configurations de stockage de base
 
@@ -81,7 +81,7 @@ Pour utiliser cette fonctionnalité, vous devez vous ajouter à l'emplacement en
 
 #### <a name="to-make-yourself-a-warehouse-employee"></a>Pour vous définir comme employé d'entrepôt
 
-  1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me premier](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Employés d'entrepôt**, puis sélectionnez le lien associé.  
+  1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me pour la première fois.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Employés entrepôt**, puis sélectionnez le lien associé.  
   2. Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Employés d'entrepôt**.
   3. Dans le champ **Code d'emplacement**, choisissez SUD.  
   4. Sélectionnez le champ **Par défaut**, puis cliquez sur le bouton **Oui**.  
@@ -90,7 +90,7 @@ Pour utiliser cette fonctionnalité, vous devez vous ajouter à l'emplacement en
 
 Pour rendre l’article 1928-S disponible dans l'emplacement SUD, suivez cette procédure :  
 
-  1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me deuxième](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux article**, puis sélectionnez le lien associé.  
+  1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me pour la deuxième fois.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux article**, puis choisissez le lien associé.  
   2. Ouvrez le journal par défaut, puis créez deux lignes journal article avec les informations de date de travail suivantes (23 janvier).  
 
         |Type écriture|Numéro d'article|Code d'emplacement|Code de zone|Quantité|  
@@ -109,7 +109,7 @@ Les commandes vente sont le type de document d'origine sortant le plus répandu.
 
 ### <a name="to-create-the-sales-order"></a>Pour créer le document de vente
 
-1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me troisième](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me pour la troisième fois.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 3. Créez une document de vente pour le client 10000 à la date de travail (23 janvier) comportant la ligne document de vente suivante.  
 
@@ -129,7 +129,7 @@ Sur la page **Prélèvement inventaire**, vous pouvez gérer toutes les activit�
 
 ### <a name="to-pick-and-ship-items"></a>Pour prélever et livrer des articles
 
-1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me quatrième](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements inventaire**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me pour la quatrième fois.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvements inventaire**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 
     Assurez-vous que le champ **N°** du raccourci **Général** est rempli.

@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: Power BI, reports, faq, errors
 ms.date: 04/22/2021
 ms.author: jswymer
-ms.openlocfilehash: 939b280e631113d3196f6fbbc90d9bf19b9fc408
-ms.sourcegitcommit: a76475f124e79440a5bba20577b335c4d50a2d83
+ms.openlocfilehash: ef63963c7c37f36db34e3e8292e73d64c1b67538
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6025843"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6438762"
 ---
 # <a name="power-bi--faq"></a>FAQ Power BI
 
@@ -65,8 +65,20 @@ Nous n′avons aucun contrôle sur cette exigence. Cette exigence est définie p
 <!-- 7 -->
 ### <a name="does-the-connector-work-with-api-pages"></a>Le connecteur fonctionne-t-il avec les pages API ?
 
-Pas encore. Mais à compter de juin 2021, le nouveau connecteur Power BI prendra en charge à la fois les services Web Business Central et les pages API. Pour plus d′informations, voir [Activer le connecteur Power BI pour utiliser les API Business Central plutôt que les services Web uniquement](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/enable-power-bi-connector-work-business-central-apis-instead-web-services-only).
+Oui. À compter de juin 2021, le nouveau connecteur Power BI prend en charge à la fois les services Web Business Central et les pages API. Pour plus d′informations, voir [Activer le connecteur Power BI pour utiliser les API Business Central plutôt que les services Web uniquement](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/enable-power-bi-connector-work-business-central-apis-instead-web-services-only).
 
+### <a name="can-i-build-a-power-bi-report-using-the-sales-invoice-lines-or-journal-lines-apis"></a>Puis-je établir un rapport Power BI à l’aide des lignes facture vente ou des API lignes journal?
+
+Les enregistrements de ligne les plus couramment utilisés sont disponibles dans les [API Business Central v2.0](/dynamics365/business-central/dev-itpro/api-reference/v2.0/)). Vous pouvez donc les utiliser pour créer des rapports dans Power BI en les sélectionnant dans le connecteur **Dynamics 365 Business Central**. Cependant, les API de **lignes** sont conçues pour être utilisées uniquement avec certains filtres très spécifiques et peuvent ne pas fonctionner dans votre scénario. Vous pouvez obtenir une erreur similaire à « Vous devez spécifier un code ou un code document pour obtenir les lignes ». Pour résoudre ce problème, procédez comme suit lors de l’obtention des données de Business Central pour le rapport dans Power BI Desktop :
+
+1. au lieu d’inclure la source de données pour l’entité Lignes, ajoutez la source de données parent. Par exemple, ajoutez **Facture vente** à la place de **Lignes facture vente**.
+2. Sélectionnez **Transformer les données** dans la barre d’action Power BI Desktop.
+3. Sélectionnez la requête que vous venez d’ajouter, par exemple **Factures vente**.
+4. Appliquez tout filtrage nécessaire sur les enregistrements pour réduire le nombre d’enregistrements chargés dans votre rapport.
+5. Faites défiler vers la droite jusqu’à ce que vous trouviez une colonne nommée comme les lignes, par exemple **SalesInvoiceLines**.
+6. Sélectionnez le bouton Développer dans l’en-tête de la colonne, à côté du nom de la colonne.
+
+   :::image type="content" source="media/saleinvoicelines.png" alt-text="Affiche la colonne SalesInvoiceLines dans Power BI Desktop .":::
 <!-- 11 --> 
 ### <a name="is-it-possible-to-choose-which-business-central-environment-to-get-data-from-for-power-bi-for-example-like-a-sandbox-or-production-environment"></a>Est-il possible de choisir depuis quel environnement Business Central obtenir les données pour Power BI, comme un bac à sable ou un environnement de production ? 
 
@@ -137,14 +149,23 @@ En ce qui concerne les services Web, les requêtes publiées sont généralement
 Dès que le nouveau connecteur sera disponible en juin 2021, nous vous encourageons à utiliser les pages API plutôt que les requêtes publiées en tant que services Web.
 
 <!-- 13 --> 
-### <a name="is-there-a-way-for-an-end-user-to-create-a-web-service-with-a-column-thats-in-a-business-central-table-but-not-a-page-or-will-developer-have-to-create-a-custom-query"></a>Existe-t-il un moyen pour un utilisateur final de créer un service Web avec une colonne qui se trouve dans une table Business Central, mais pas dans une page ? Ou le développeur doit-il créer une requête personnalisée ? 
+### <a name="is-there-a-way-for-an-end-user-to-create-a-web-service-with-a-column-thats-in-a-business-central-table-but-not-a-page-or-will-the-developer-have-to-create-a-custom-query"></a>Existe-t-il un moyen pour un utilisateur final de créer un service Web avec une colonne qui se trouve dans une table Business Central, mais pas dans une page ? Ou le développeur doit-il créer une requête personnalisée ? 
 
-Pas encore. Mais dès que le nouveau connecteur sera disponible en juin 2021, un développeur pourra créer une nouvelle page API pour répondre à cette exigence. 
+Oui. Avec la publication du nouveau connecteur en juin 2021, un développeur pourra créer une nouvelle page API pour répondre à cette exigence. 
 
 <!-- 28 --> 
 ### <a name="can-i-connect-power-bi-to-a-read-only-database-server-of-business-central-online"></a>Puis-je connecter Power BI à un serveur de base de données en lecture seule de Business Central Online ? 
 
 Non. Mais nous avons cette fonctionnalité sur notre feuille de route à long terme. 
+
+### <a name="how-do-i-change-or-clear-the-user-account-im-currently-using-to-connect-to-business-central-from-power-bi-desktop"></a><a name="perms"></a>Comment modifier ou effacer le compte utilisateur que j’utilise actuellement pour me connecter à Business Central depuis Power BI Desktop ?
+
+Dans Power BI Desktop, exécutez l’une des étapes suivantes :
+
+1. Dans le menu Fichier, sélectionnez **Options et paramètres** > **Paramètres de la source de données**.
+2. Sélectionnez **Dynamics Business Central** dans la liste, puis sélectionnez **Effacer les autorisations** > **Effacer**.
+
+Ensuite, la prochaine fois que vous vous connecterez à Business Central pour obtenir des données, vous serez invité à vous connecter.
 
 ## <a name="performance"></a>[Performances](#tab/performance)
 

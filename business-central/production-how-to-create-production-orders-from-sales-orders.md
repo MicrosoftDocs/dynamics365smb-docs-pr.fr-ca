@@ -1,6 +1,6 @@
 ---
 title: Créer des bons de production à partir de documents de vente
-description: Vous pouvez créer des bons de production à partir de documents de vente.
+description: Découvrez les différentes façons de créer des bons de production pour les articles produits directement à partir des documents de vente.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,21 +8,21 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 05/28/2021
+ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: 438f4d4e1833ba607ceedb9f5d9450c0a4dbb680
-ms.sourcegitcommit: f9a190933eadf4608f591e2f1b04c69f1e5c0dc7
+ms.openlocfilehash: a432b8f00a24771578716a1b51678904d2e29ec5
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115246"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6438637"
 ---
 # <a name="create-production-orders-from-sales-orders"></a>Créer des bons de production à partir de documents de vente
 Vous pouvez créer des bons de production pour les articles produits directement à partir des documents de vente.  
 
 ## <a name="to-create-a-production-order-from-a-sales-order"></a>Pour créer un bon de production à partir d'un document de vente  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Sélectionnez le document de vente pour lequel vous voulez créer un bon de production.  
 3.  Sélectionnez l'action **Planification**. Sur la page **Planification document de vente**, vous pouvez afficher la disponibilité de l'article de document de vente.  
 4.  Sélectionnez l'action **Créer O.F**.  

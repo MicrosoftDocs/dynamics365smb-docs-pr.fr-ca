@@ -5,16 +5,16 @@ author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keywords: year closing, close accounting period, close fiscal year, bank account detailed trial balance
-ms.date: 04/01/2021
+ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 5c822685ae5723bc6b13f9fedad45dbddefdb956
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 6dfba7323eeaad538cf45525d11212a6e5d7438e
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5776602"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6438537"
 ---
-# <a name="post-the-year-end-closing-entry"></a>Reporter l'écriture de fermeture d'exercice
+# <a name="posting-the-year-end-closing-entry"></a>Report de l’écriture de fermeture d’exercice
 
 Après avoir utilisé le traitement par lots **Solder les comptes de gestion** pour générer les écritures de clôture d'exercice, vous devez ouvrir la feuille spécifiée dans le traitement par lots, puis consulter et valider les écritures.  
 
@@ -23,7 +23,7 @@ Après avoir utilisé le traitement par lots **Solder les comptes de gestion** p
 
 ## <a name="to-post-the-year-end-closing-entry"></a>Pour reporter l'écriture de fermeture de fin d'exercice
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal général**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal général**, puis choisissez le lien associé.
 2. Sur la page **Journal général**, dans le champ **Nom de lot**, sélectionnez le lot qui contient les écritures de fermeture.
 3. Examinez les écritures.
 4. Pour valider la feuille, sélectionnez l'action **Valider**.
