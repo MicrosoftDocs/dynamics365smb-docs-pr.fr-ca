@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: design, item, tracking, tracing
 ms.date: 06/08/2021
 ms.author: edupont
-ms.openlocfilehash: 5bb97f1c26ca9264718a96a9f2f7803e248927b3
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: 992673cd800d7ee720e86050004c2d38796ee529
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6214988"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6445030"
 ---
 # <a name="design-details-item-tracking-design"></a>Détails de conception : création de traçabilité
 
@@ -27,7 +27,7 @@ Avec l’ajout de numéros de série, lot et de paquets, le système de réserva
 
 Le schéma suivant explique la conception de la fonctionnalité de traçabilité dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
-![Exemple de flux de traçabilité](media/design_details_item_tracking_design.png "Exemple de flux de traçabilité")  
+![Exemple de flux de traçabilité.](media/design_details_item_tracking_design.png "Exemple de flux de traçabilité")  
 
 L'objet de report principal est remodelé pour gérer la sous-classification unique d'une ligne document sous forme de numéros de série ou de lot, et des tables de lien spéciales sont ajoutées pour créer une relation un à plusieurs entre les documents reportés et leurs écritures article et valeur scindées.  
 

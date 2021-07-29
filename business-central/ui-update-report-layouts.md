@@ -1,6 +1,6 @@
 ---
-title: Mise à jour d'une présentation de rapport | Microsoft Docs
-description: Vous pouvez être amené à mettre à jour une présentation de rapport personnalisée qui est utilisée dans un rapport. Cela est nécessaire si une modification de conception a été apportée à l'ensemble de données de rapport, par exemple, si un champ utilisé dans la présentation a été supprimé de l'ensemble de données de rapport.
+title: Mise à jour d’une présentation de rapport
+description: Découvrez comment mettre à jour une présentation de rapport personnalisée utilisée sur un rapport lorsque des modifications de conception sont apportées à l’ensemble de données du rapport, par exemple.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 90bace16ede000d618d4e1be8855ee16786c3bb2
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 99b0f191bf9890683bb6cbb68f7baef0342f9737
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5783069"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6445286"
 ---
 # <a name="update-custom-report-layouts"></a>Mettre à jour les présentations de rapport personnalisées
 À l'occasion, vous pouvez être amené à mettre à jour une présentation de rapport personnalisée qui est utilisée dans un rapport. Cela est nécessaire si une modification de conception a été apportée à l'ensemble de données de rapport, par exemple, si un champ utilisé dans la présentation a été supprimé de l'ensemble de données de rapport. Si une présentation de rapport requiert une mise à jour, vous obtiendrez un message d'erreur lorsque vous tentez de visualiser, d'imprimer ou d'enregistrer le rapport.  
@@ -28,7 +28,7 @@ Certaines modifications de l'ensemble de données de rapport peuvent être autom
 
 ## <a name="to-update-one-or-more-custom-report-layouts"></a>Pour mettre à jour une ou plusieurs présentations de rapport personnalisées  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Présentations de rapport**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Présentations de rapport**, puis choisissez le lien associé.  
 
 2.  Sur la page **Présentations rapport**, si vous souhaitez mettre à jour un rapport spécifique, sélectionnez la présentation dans la liste, puis choisissez l'action **Mettre à jour présentation**. Ou, si vous souhaitez mettre à jour toutes les présentations de rapport personnalisées pour la compagnie, choisissez l'action **Mettre à jour toutes les présentations**.  
 
@@ -36,7 +36,7 @@ Si aucune erreur ne se produit, la mise à jour est appliquée aux présentation
 
 ## <a name="to-test-custom-report-layout-updates"></a>Pour tester les mises à jour de présentations de rapport personnalisées  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Sélection de présentation de rapport**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Sélection présentation rapport**, puis sélectionnez le lien associé.  
 
 2.  Sur la page **Sélection présentation rapport**, choisissez l'action **Mises à jour présentation test**.  
 

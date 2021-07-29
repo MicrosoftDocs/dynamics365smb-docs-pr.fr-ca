@@ -1,6 +1,6 @@
 ---
-title: Enregistrer les frais ou les revenus directement dans le grand livre| Microsoft Docs
-description: Pour les activités économiques qui ne sont pas représentés par un document, comme de plus petits frais ou encaissements, vous pouvez créer les transactions associées en reportant des lignes de journal sur la page Journal général.
+title: Enregistrer les frais ou des revenus directement dans le grand livre
+description: Pour les activités économiques qui ne sont pas représentées par un document, vous pouvez créer les transactions associées en reportant des lignes de journal sur la page Journal général.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: direct posting, general ledger
-ms.date: 04/01/2021
+ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: e0beff15352fb8e57f57c9d0ffdcd76bc28afbb9
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: b27406f2020b95bc5dd9bc8771b9d632aa6c740f
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5782390"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6444547"
 ---
 # <a name="post-transactions-directly-to-the-general-ledger"></a>Reporter les transactions directement dans le grand livre
 
@@ -29,7 +29,7 @@ Contrairement aux écritures qui sont reportées avec des documents qui nécessi
 
 ## <a name="to-post-a-transaction-directly-to-a-general-ledger-account"></a>Pour reporter une transaction directement dans le compte GL
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux généraux**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux généraux**, puis choisissez le lien associé.
 2. Ouvrez le lot journal général approprié. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 3. Sur une nouvelle ligne journal, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]    
 

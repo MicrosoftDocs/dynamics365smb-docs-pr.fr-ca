@@ -1,6 +1,6 @@
 ---
-title: Créer une fiche fournisseur pour enregistrer un nouveau fournisseur | Microsoft Docs
-description: Apprendre comment créer une fiche fournisseur pour enregistrer un nouveau fournisseur.
+title: Créer une fiche fournisseur pour enregistrer de nouveaux fournisseurs
+description: Dans cette rubrique, découvrez comment créer une fiche fournisseur pour enregistrer un nouveau fournisseur et enregistrer les fiches fournisseur en tant que modèle.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: supplier
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: f1028b91101f8faa38d4d4d5d2695ee498ff6d2e
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 2d4943415af6f5cd91ac35c68a9d8433e024b6be
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5772664"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6445387"
 ---
 # <a name="register-new-vendors"></a>Enregistrer de nouveaux fournisseurs
 
@@ -40,7 +40,7 @@ Pour enregistrer un nouveau fournisseur, vous devez remplir une fiche fournisseu
 
 ### <a name="to-create-a-new-vendor-card"></a>Pour créer une fiche fournisseur
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Fournisseurs**, puis choisissez le lien associé.  
 2. Sur la page **Fournisseurs**, choisissez **Nouveau**.
 
     Si plusieurs modèles de fournisseur existent, une page s'affiche et vous permet de sélectionner un modèle fournisseur. Dans ce cas, suivez les deux étapes suivantes.

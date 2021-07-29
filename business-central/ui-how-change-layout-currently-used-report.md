@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: customized report, document layout, logo, personalize
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: ad5dd28d10df38fbd780ec4df5d4a87056670b99
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 8e833d29df72d10786b050222d342b2d6dce927e
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5771095"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6444764"
 ---
 # <a name="change-the-current-report-layout"></a>Modifier la présentation actuelle du rapport
 Un rapport peut être créé avec plus d'une présentation de rapport, que vous pouvez ensuite changer au besoin.
@@ -30,7 +30,7 @@ Lorsque des présentations de rapport personnalisées sont définies, vous pouve
 > Les rapports de document (pas les listes) qui utilisent une mise en page de rapport Word sont généralement plus rapides que ceux qui utilisent une mise en page de rapport RDLC. Ainsi, si vous avez la possibilité de choisir entre une mise en page de rapport Word ou RDLC pour un rapport de document, utilisez la mise en page de rapport Word pour de meilleures performances.
 
 ## <a name="to-change-which-report-layout-to-use-for-a-report-or-document"></a>Pour modifier la présentation de rapport à utiliser pour un rapport ou un document
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Sélection de présentation de rapport**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Sélection présentation rapport**, puis sélectionnez le lien associé.  
    La page **Sélection de présentation de rapport** répertorie tous les rapports disponibles pour la compagnie spécifiée dans le champ **Compagnie** en haut de la page. Le champ **Présentation sélectionnée** spécifie la présentation qui est actuellement utilisée sur le rapport.
 2. Définissez le champ **Compagnie** en haut de la page sur la compagnie qui inclut le rapport.
 3. Pour modifier la présentation utilisée par un rapport, sur la ligne correspondant au rapport, définissez le champ **Présentation sélectionnée** sur l'une des options suivantes :

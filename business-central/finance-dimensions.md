@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: analysis, history, track, business intelligence
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 7e3bc7abb3908afc1819ac88c910dff85010c735
-ms.sourcegitcommit: cbd00f24fb471381bbfd64670237eda176bd78e5
+ms.openlocfilehash: ddcb3b3074a33fa279aa9a7cc0b04e5b5904fbac
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947448"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6444697"
 ---
 # <a name="working-with-dimensions"></a>Utilisation des axes analytiques
 Les dimensions sont des valeurs qui permettent de catégoriser les écritures afin de pouvoir les suivre et les analyser sur les documents, tels que les documents de vente. Les dimensions peuvent, par exemple, indiquer de quel projet ou département provient une écriture.  
@@ -57,7 +57,7 @@ Lorsque les dimensions et les valeurs sont configurées, vous pouvez définir le
 ### <a name="to-set-up-default-dimensions-for-customers-vendors-and-other-accounts"></a>Pour configurer des dimensions par défaut pour les clients, les fournisseurs et d'autres comptes
 Vous pouvez attribuer une dimension par défaut pour un compte spécifique. La dimension est copiée sur le journal ou le document lorsque vous saisissez le numéro de compte dans une ligne, mais vous pouvez supprimer ou modifier le code sur la ligne si nécessaire. Vous pouvez également rendre une dimension obligatoire pour reporter une écriture avec un type de compte spécifique.  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Dimensions**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Dimensions**, puis sélectionnez le lien associé.  
 2.  Sur la page **Dimensions** sélectionnez la dimension appropriée, puis cliquez sur **Dimension par défaut du type de compte**.  
 4.  Complétez une ligne pour chaque nouvelle dimension par défaut à configurer. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
@@ -73,7 +73,7 @@ Vous pouvez attribuer une dimension par défaut pour un compte spécifique. La d
 ### <a name="to-set-up-default-dimension-priorities"></a>Pour configurer des priorités de dimensions par défaut  
 Des types de compte différents, tels qu'un compte client et un compte article, peuvent avoir des affectations analytiques différentes. Par conséquent, plusieurs dimensions par défaut peuvent être proposées pour une dimension dans une écriture. Pour éviter de tels conflits, vous pouvez appliquer des règles de priorité aux différentes sources.  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Priorités de dimensions par défaut**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Priorités de dimensions par défaut**, puis sélectionnez le lien associé.  
 2.  Sur la page **Priorités dimension par défaut**, dans le champ **Code source**, entrez le code source pour la table écriture à laquelle les priorités de dimension par défaut s'appliquent.  
 3.  Complétez une ligne pour chaque priorité de dimensions par défaut souhaitée pour le code d'origine sélectionné.
 4.  Répétez la procédure pour chaque code d'origine pour lequel vous souhaitez configurer des priorités de dimensions par défaut.  
@@ -84,7 +84,7 @@ Des types de compte différents, tels qu'un compte client et un compte article, 
 ### <a name="to-set-up-dimension-combinations"></a>Pour configurer des combinaisons de dimensions  
 Pour éviter de reporter des écritures avec des dimensions contradictoires ou inappropriées, vous pouvez bloquer ou limiter des combinaisons spécifiques de deux dimensions. Lorsqu'une combinaison de dimensions est bloquée, vous ne pouvez pas reporter les deux dimensions sur la même écriture, quelles que soient les valeurs de la dimension. Lorsqu'une combinaison de dimensions est limitée, vous pouvez reporter les deux dimensions sur la même écriture, mais uniquement pour certaines combinaisons de valeurs de dimensions.
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Combinaisons de dimensions**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Combinaisons de dimensions**, puis sélectionnez le lien associé.  
 2.  Sur la page **Combinaisons de dimensions**, sélectionnez le champ de la combinaison de dimensions et sélectionnez l'une des options suivantes.  
 
     |Champ|Description|
@@ -113,13 +113,13 @@ Les dimensions principales et les raccourcis de dimension peuvent être utilisé
 > [!Note]
 > Lorsque vous ajoutez ou modifiez une dimension principale ou un raccourci dimension, vous êtes automatiquement déconnecté et la nouvelle valeur est préparée pour l'utilisation.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du grand livre**, puis choisissez le lien associé.
 2. Sur le raccourci **Dimensions**, renseignez les champs. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 #### <a name="to-change-global-dimensions"></a>Pour modifier les dimensions principales
 Lorsque vous modifiez une dimension principale ou de raccourci, toutes les écritures reportées avec la dimension en question sont mises à jour. Étant donné que ce processus peut prendre du temps et affecter les performances, deux modes différents sont fournis pour adapter le processus à la taille de la base de données.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du grand livre**, puis choisissez le lien associé.
 2. Choisissez l'action **Modifier les dimensions principales**.
 3. En haut de la page, sélectionnez l'une des options suivantes pour définir dans quel mode le travail en lot est exécuté.
 
@@ -200,7 +200,7 @@ Les dimensions principales sont toujours définies et nommées par la compagnie\
 
 Dans une page écriture, vous pouvez voir si des dimensions principales sont associées aux écritures. Les deux axes principaux sont différents des autres axes car vous pouvez les utiliser en tant que filtres n'importe où dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.  
 2.  Sur la page **Plan comptable**, choisissez l'action **Écritures**.  
 3.  Pour ne visualiser que certaines écritures, positionnez au moins un filtre sur la page.  
 4.  Pour visualiser toutes les dimensions d'une écriture, sélectionnez l'écriture, puis cliquez sur l'action **Dimensions**.  

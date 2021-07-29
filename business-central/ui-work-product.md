@@ -7,16 +7,17 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 3dff984847a3c74a6c4dad41385839c4cefdc75e
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 9781e2d064d48b7ce72b3c7f279c33cbfd42be7a
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5772139"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6445261"
 ---
 # <a name="working-with-prod_short"></a>Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]
+
 Dans le cadre de l'exécution des tâches, vous interagissez avec des données de différentes manières : création d'enregistrements et saisie de données, tri et filtrage de données, rédaction de procédures et sortie de données vers d'autres applications.
 
 Par exemple, vous pouvez ajuster la taille et la position de n'importe quelle page, étendre la largeur des colonnes et augmenter la hauteur des en-têtes de colonnes, puis modifiez le tri des données dans les colonnes. Si vous souhaitez utiliser la barre de défilement horizontale pour afficher toutes les colonnes dans une page de liste ou des lignes document, vous constatez la présence d'un volet Figer vertical pour empêcher le défilement de certaines colonnes.
@@ -26,7 +27,7 @@ Par exemple, vous pouvez ajuster la taille et la position de n'importe quelle pa
 > [!TIP]
 > Pour obtenir un aperçu facile à imprimer des fonctions les plus utilisées, sélectionnez l'image suivante et téléchargez le fichier PDF.
 >
-> [ ![Icône pour le fichier PDF](media/cheat_sheet_inline.png) ](media/cheat_sheet.pdf "Icône qui ouvre un PDF")
+> [ ![Icône pour le fichier PDF.](media/cheat_sheet_inline.png) ](media/cheat_sheet.pdf "Icône qui ouvre un PDF")
 
 ## <a name="links-to-learn-more"></a>Liens pour en savoir plus
 
@@ -67,6 +68,21 @@ Voici une courte vidéo sur la manière de parcourir [!INCLUDE[prod_short](inclu
 
     Internet Explorer n’est plus pris en charge. Pour en savoir plus, consultez [Documentation Microsoft Edge](https://support.microsoft.com/hub/4337664/microsoft-edge-help).
 - Maintenez votre navigateur toujours à jour avec la dernière version.
+
+## <a name="action-bars"></a>Barres d’action
+
+Dans [!INCLUDE [prod_short](includes/prod_short.md)], vous effectuez la plupart de votre travail dans une liste, un document ou une carte. Les trois types de pages ont une barre avec des actions qui sont pertinentes pour la page particulière, et les actions sont presque les mêmes pour la carte ou le document individuel et pour la liste des entités. De cette façon, vous pouvez gérer une document de vente individuelle dans la page **Documents de vente** et dans la liste **Documents de vente**, y compris son report et sa facturation.  
+
+Mais les actions peuvent également apparaître différemment, voire ne pas être présentes, selon la façon dont vous ouvrez la page. Notamment pour les pages de liste, la page de liste que vous ouvrez à partir de la page d’accueil et la page qui s’affiche lorsque vous la recherchez à l’aide de l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") ne sont pas identiques.  
+
+Lorsque vous recherchez une page de liste ouverte, telle que la liste **Documents de vente**, elle est en mode visualisation. Les actions de modification, d’affichage ou de suppression d’une entité individuelle, telle qu’un document de vente, s’affichent lorsque vous choisissez l’action **Gérer**.  
+
+> [!TIP]
+> Si vous savez que vous utiliserez souvent des actions sur ce deuxième niveau de la barre d’action, choisissez l’icône :::image type="icon" source="media/pin.png" border="false"::: pour épingler la barre d’action et afficher immédiatement les actions sous les différents menus.
+>
+> Pour faire à nouveau disparaître le deuxième niveau de la barre d’action, choisissez l’icône :::image type="icon" source="media/unpin.png" border="false":::.
+
+Mais lorsque vous ouvrez la même page de liste à partir de votre page d’accueil, l’action **Gérer** n’est pas présente. Au lieu de cela, pour ouvrir un document de vente individuel, il vous suffit de sélectionner le champ **Nombre**. Dans cette vue, vous ne pouvez pas épingler la barre d’action.  
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/work-pro-data-dynamics-365-business-central/)
 

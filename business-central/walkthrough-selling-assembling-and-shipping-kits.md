@@ -1,6 +1,6 @@
 ---
-title: 'Procédure pas-à-pas : vente, assemblage et expédition de kits | Microsoft Docs'
-description: Pour prendre en charge un inventaire juste-à-temps (JIT) et permettre la personnalisation des produits conformément aux demandes client, il est possible de créer des ordres d’assemblage et de les lier automatiquement dès que la ligne document de vente est créée. Le lien entre la demande vente et l’approvisionnement d’assemblage permet aux préparateurs de documents de vente de personnaliser l’article d’assemblage et de proposer des dates de livraison en fonction de la disponibilité des composantes. En outre, la consommation et le résultat d'assemblage sont reportés automatiquement avec la livraison du document de vente associé.
+title: Vente, assemblage et expédition de kits
+description: Pour prendre en charge un inventaire juste-à-temps (JIT), des ordres d’assemblage peuvent être créés automatiquement et associés dès que la ligne document de vente est créée.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 98fe9a8e3600156f158cdfc1ce37ad3349cafa1b
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: f14defdd15acd82df76d1446b56d86ecda6e3cb6
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216315"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6445211"
 ---
 # <a name="walkthrough-selling-assembling-and-shipping-kits"></a>Procédure pas-à-pas : vente, assemblage et expédition de kits
 
@@ -82,7 +82,7 @@ Avant d'exécuter cette procédure pas à pas, veuillez suivre les instructions 
 -   Installez [!INCLUDE[prod_short](includes/prod_short.md)].  
 -   Devenez employé d'entrepôt dans un emplacement BLANC en procédant comme suit :  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Employés d'entrepôt**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Employés entrepôt**, puis sélectionnez le lien associé.  
 2.  Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs**.  
 3.  Dans le champ **Code d'emplacement**, entrez BLANC.  
 4.  Sélectionnez le champ **Par défaut**.  
@@ -92,7 +92,7 @@ Avant d'exécuter cette procédure pas à pas, veuillez suivre les instructions 
 
 Préparez l'emplacement BLANC pour le traitement d’assemblage en procédant comme suit :  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
 2.  Ouvrez la fiche emplacement de l'emplacement BLANC.  
 3.  Dans le raccourci **Zones**, entrez **W-10-0001** dans le champ **Code de zone vers assemblage**.  
 
@@ -104,7 +104,7 @@ Préparez l'emplacement BLANC pour le traitement d’assemblage en procédant co
 
 Supprimez le délai par défaut pour les processus internes en procédant comme suit :  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration de la fabrication**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration production**, puis choisissez le lien associé.  
 2.  Sur la page **Configuration fabrication**, sous le raccourci **Planification**, supprimez la valeur dans le champ **Délai de sécurité par défaut**.  
 
 <!-- Create inventory for assembly components by following [Prepare Sample Data](walkthrough-selling-assembling-and-shipping-kits.md#prepare-sample-data).   -->
@@ -138,7 +138,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
 ## <a name="prepare-sample-data"></a>Préparation d'exemples de données  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux article entrepôt**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux article entrepôt**, puis choisissez le lien associé.  
 2.  Choisissez le champ **Nom de lot**, puis sélectionnez le journal par défaut.  
 3.  Créez des ajustements positifs d'inventaire à l'emplacement BLANC à la date de travail, le 23 janvier, en entrant les informations suivantes.  
 
@@ -155,14 +155,14 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
     Ensuite, synchronisez les nouvelles écritures entrepôt avec l'inventaire.  
 
-5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux article**, puis sélectionnez le lien associé. La page **Journal article** s'ouvre.  
+5.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux article**, puis choisissez le lien associé. La page **Journal article** s'ouvre.  
 6.  Sélectionnez l'action **Calculer ajustement entrepôt**.  
 7.  Sur la page **Calculer ajustement entrepôt**, cliquez sur le bouton **OK** .  
 8.  Sur la page **Journal article**, choisissez l'action **Reporter**, puis cliquez sur le bouton **Oui**.  
 
 ### <a name="creating-the-assembly-items"></a>Création des articles d’assemblage  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Créez le premier article d’assemblage sur la base des informations suivantes.  
 
@@ -213,7 +213,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
 ### <a name="selling-the-assembly-items"></a>Vente des articles d’assemblage  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Créez deux lignes document de vente pour le client 62000, The Device Shop, à la date de travail avec les informations suivantes.  
 
@@ -266,7 +266,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
 ### <a name="planning-for-the-unavailable-ats-items"></a>Planification pour les articles « assembler pour stock » non disponibles  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille planification**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille planification**, puis choisissez le lien associé.  
 2.  Choisissez l'action **Calculer planning régénératif**.  
 3.  Sur la page **Calculer planning**, définissez les filtres suivants.  
 
@@ -284,7 +284,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
 ### <a name="assembling-and-shipping-the-first-ato-quantity"></a>Assemblage et expédition de la première quantité « assembler pour commande »  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Livraison entrepôt**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Livraison entrepôt**, puis choisissez le lien associé.  
 
     > [!NOTE]  
     >  Dans cette section, la personne responsable de la livraison est chargée d'enregistrer le travail d'assemblage « assembler pour commande » effectué sur la ligne livraison entrepôt. Ce flux de travail peut apparaître dans des environnements où le travail d’assemblage est effectué par la personne responsable de l’expédition ou par des ouvriers d’assemblage dans l’emplacement expédition.  
@@ -303,7 +303,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
     Ensuite, effectuez la tâche de la personne en charge du prélèvement.  
 
-4.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements**, puis sélectionnez le lien associé.  
+4.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvements**, puis choisissez le lien associé.  
 5.  Ouvrez le document prélèvement entrepôt que vous avez créé à l’étape 3 de cette section.  
 
     Prenez note de la valeur du champ **Document origine** et que toutes les lignes prélèvement sont pour les composantes d’assemblage.  
@@ -344,7 +344,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
 ### <a name="assembling-and-recording-the-second-ato-quantity"></a>Assemblage et enregistrement de la seconde quantité « assembler pour commande »  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Ordres d'assemblage**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Ordres d’assemblage**, puis sélectionnez le lien associé.  
 
     Remarquez que la commande « assembler pour commande » pour les unités livrées du kit B se trouve toujours dans la liste, bien que le champ **Quantité restante** soit vide. Cela s'explique par le fait que le document de vente liée n'a toujours pas été entièrement facturé.  
 
@@ -368,7 +368,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
 ### <a name="assembling-the-ats-quantity"></a>Assemblage de la quantité « assembler pour stock »  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Ordres d'assemblage**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Ordres d’assemblage**, puis sélectionnez le lien associé.  
 2.  Ouvrez l’ordre d’assemblage pour dix unités de kit A.  
 
     Notez que le champ  **Quantité à assembler** est renseigné avec la quantité prévue.  
@@ -380,7 +380,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
     Ensuite, effectuez la tâche de la personne en charge du prélèvement.  
 
-5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements**, puis sélectionnez le lien associé.  
+5.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvements**, puis choisissez le lien associé.  
 6.  Ouvrez le document prélèvement entrepôt que vous avez créé à l’étape 4 de cette section.  
 
      Enregistrez le prélèvement sans modifier les informations par défaut.  
@@ -396,7 +396,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
 ### <a name="shipping-the-remaining-items-partly-from-stock-and-partly-assembled-to-the-order"></a>Expédition des autres articles, en partie du stock et en partie assemblés pour la commande  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Livraison entrepôt**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Livraison entrepôt**, puis choisissez le lien associé.  
 2.  Ouvrez la livraison entrepôt la plus récente créée à l'emplacement BLANC.  
 
     Notez que sur la ligne pour les dix unités de kit A les champs **Qté à livrer** et **Qté prélevée** sont vides.  
@@ -407,7 +407,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
     Ensuite, effectuez la dernière tâche de la personne en charge du prélèvement pour cette livraison entrepôt.  
 
-4.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements**, puis sélectionnez le lien associé.  
+4.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvements**, puis choisissez le lien associé.  
 5.  Ouvrez le document prélèvement entrepôt que vous avez créé à l’étape 3 de cette section.  
 
     Remarquez que ce document prélèvement concerne l’article d’assemblage, pas les composantes d’assemblage.  
@@ -427,7 +427,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
     Le document livraison entrepôt a été supprimé, ce qui indique que les activités entrepôt impliquées sont terminées. Vérifiez ensuite que le document de vente a été traité.  
 
-10. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
+10. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 11. Ouvrez le document de vente pour The Device Shop.  
 
     Notez que le champ **Quantité livrée** affiche la quantité totale des deux lignes.  

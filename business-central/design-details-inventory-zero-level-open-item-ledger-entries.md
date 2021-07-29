@@ -1,6 +1,6 @@
 ---
-title: écritures article ouvertes
-description: Découvrez pourquoi le niveau d'inventaire est nul alors qu'il existe des écritures article ouvertes.
+title: Écritures du grand livre d’articles ouvertes non disponibles en inventaire
+description: Cet article traite du problème de niveau d’inventaire nul alors qu’il existe des écritures du grand livre d’articles ouvertes.
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/08/2021
+ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: febd7b4ff379d064f392eb55b7868697a59aacf5
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: 75cf8f2ccbf7738c753a25c98ea9c79e13b9d53d
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215938"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6445005"
 ---
 # <a name="design-details-known-item-application-issue"></a>Détails de conception : problème connu lié à l'affectation d'articles
 Cet article traite du problème de niveau d'inventaire nul alors qu'il existe des écritures article ouvertes dans [!INCLUDE[prod_short](includes/prod_short.md)].  
@@ -54,7 +54,7 @@ L'article commence par répertorier les symptômes courants du problème, puis d
 
  Le schéma suivant montre la façon dont les affectations de quantité sont effectuées.  
 
-![Flux de l'ajustement des coûts de l'achat à la vente](media/helene/TechArticleInventoryZero2.png "Flux de l'ajustement des coûts de l'achat à la vente")
+![Flux de l’ajustement des coûts de l’achat à la vente.](media/helene/TechArticleInventoryZero2.png "Flux de l'ajustement des coûts de l'achat à la vente")
 
  En outre, notez que l'écriture article 1 (Achat) est le fournisseur de l'article et la source de coût de l'écriture article affectée, c'est-à-dire l'écriture article 2 (Vente).  
 
@@ -78,7 +78,7 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 
  Le schéma suivant illustre le flux de coûts.  
 
-![Flux de l'ajustement des coûts de la vente au retour vente](media/helene/TechArticleInventoryZero4.png "Flux de l'ajustement des coûts de la vente au retour vente")
+![Flux de l’ajustement des coûts de la vente au retour vente.](media/helene/TechArticleInventoryZero4.png "Flux de l'ajustement des coûts de la vente au retour vente")
 
  En outre, notez que le coût est transféré vers l'écriture article 2 (Vente), puis vers l'écriture article 3 (Retour vente) et enfin vers l'écriture article 4 (Vente 2).  
 
@@ -91,7 +91,7 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 
  Le schéma suivant illustre la façon dont les affectations d'article sont effectuées dans les deux scénarios.  
 
-![Le flux de l'ajustement des coûts va dans les deux directions](media/helene/TechArticleInventoryZero6.png "Le flux de l'ajustement des coûts va dans les deux directions")  
+![Le flux de l’ajustement des coûts va dans les deux directions.](media/helene/TechArticleInventoryZero6.png "Le flux de l'ajustement des coûts va dans les deux directions")  
 
  En outre, notez qu'une affectation de coût est effectuée (représentée par les flèches bleues) pour garantir que l'écriture article 2 (Retour vente) a les mêmes coûts que l'écriture article qu'elle inverse, c'est-à-dire l'écriture article 1 (Vente 1). Toutefois, une affectation de quantité (représentée par les flèches rouges) n'est pas effectuée.  
 
@@ -133,7 +133,7 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
      |N° séquence |N° écriture article gr. livre|N° écriture article entrant|N° écriture article sortant|Quantité|Date de report|Coût appliqué|  
      |---------|---------------------|----------------------|-----------------------|--------|------------|----------------|  
      |299|334|334|333|1|01/28/2018|Oui|  
-<!--![Why is inventory zero 8](media/helene/TechArticleInventoryZero8.png "Whyisinventoryzero\_8")  -->
+<!--![Why is inventory zero 8.](media/helene/TechArticleInventoryZero8.png "Whyisinventoryzero\_8")  -->
 
  En outre, notez que le coût de l'écriture article entrante 334 est affecté à l'écriture article sortante 333.  
 

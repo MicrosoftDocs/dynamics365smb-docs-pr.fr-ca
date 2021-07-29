@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: access, right, security
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 852eb61a479f03b61c648904e2179168a5c18001
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: ba584f11b1ac52146a7539b8ac08cb9ed67bcdba
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5774496"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6445311"
 ---
 # <a name="create-users-according-to-licenses"></a>Créer des utilisateurs en fonction des licences
 
@@ -43,7 +43,7 @@ Pour plus d'informations, voir [Administration de Business Central Online](/dyna
 Après avoir ajouté des utilisateurs ou modifié les informations utilisateur dans le centre d’administration Microsoft 365, vous pouvez importer rapidement les informations utilisateur dans [!INCLUDE[prod_short](includes/prod_short.md)]. Cela inclut les attributions de licence. 
 
 1. Connectez-vous à [!INCLUDE[prod_short](includes/prod_short.md)] en tant qu’administrateur.
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Utilisateurs**, puis sélectionnez le lien associé.  
+2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.  
 3. Choisissez **Mettre à jour les utilisateurs de Microsoft 365**.
 
 Si vous ajoutez de nouveaux utilisateurs, l’étape suivante consiste à attribuer des groupes d’utilisateurs et des autorisations. Pour en savoir plus, voir [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md). Si vous mettez à jour les informations utilisateur et que la mise à jour inclut un changement de licence, les utilisateurs seront affectés au groupe d’utilisateurs approprié et leurs ensembles d’autorisations seront mis à jour. Pour plus d'informations, voir [Pour gérer les autorisations via les groupes d'utilisateurs](ui-define-granular-permissions.md).  
@@ -60,7 +60,7 @@ Pour en savoir plus sur la synchronisation des informations utilisateur avec Mic
 
 Dans les déploiements en ligne, vous pouvez supprimer l'accès d'un utilisateur à [!INCLUDE[prod_short](includes/prod_short.md)]. Toutes les références à l'utilisateur sont conservées, mais il ne peut plus se connecter et ses sessions actives sont arrêtées.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Utilisateurs**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.
 2. Ouvrez la page **Fiche utilisateur** pour l’utilisateur concerné, puis, dans le champ **État**, sélectionnez **Désactivé**.
 3. Pour donner à nouveau accès à l’utilisateur, définissez le paramètre du champ **État** sur **Activé**.
 
@@ -137,7 +137,7 @@ Pour les déploiements sur site, l’administrateur crée, édite et supprime le
 
 ### <a name="to-edit-or-delete-a-user-in-an-on-premises-deployment"></a>Pour modifier ou supprimer un utilisateur dans un déploiement sur site
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Utilisateurs**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.
 2. Sélectionnez l'utilisateur que vous souhaitez modifier, puis choisissez l'action **Modifier**.
 3. Sur la page **Fiche utilisateur**, modifiez les informations si nécessaire.  
 4. Pour supprimer un utilisateur, sélectionnez l'utilisateur que vous souhaitez supprimer, puis choisissez l'action **Supprimer**.

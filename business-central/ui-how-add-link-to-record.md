@@ -1,6 +1,6 @@
 ---
-title: Ajouter des pièces jointes, des liens et des notes sur des enregistrements | Microsoft Docs
-description: Joignez un lien hypertexte pointant vers un document ou un site Web à un enregistrement spécifique, tel qu'une fiche client ou un document.
+title: Ajouter des pièces jointes, des liens et des notes sur des enregistrements
+description: Joignez un lien hypertexte pointant vers un document ou un site Web à un enregistrement spécifique, tel qu’une fiche client ou un document.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 3acc0113cb14170b84363ab40a803da8b7551c75
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: eb03f2cd47624e753766f0363e037ee793f8f777
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5771145"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6444778"
 ---
 # <a name="manage-attachments-links-and-notes-on-cards-and-documents"></a>Gérer les pièces jointes, les liens et les notes sur les fiches et les documents
 
@@ -38,7 +38,7 @@ Vous pouvez joindre tout type de fichier contenant du texte, des images ou des v
 
 La procédure suivante se base sur une facture achat. Les étapes sont similaires pour tous les autres documents et fiches pris en charge.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures achat**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures achat**, puis sélectionnez le lien associé.
 2. Ouvrez les documents de vente auxquels vous souhaitez joindre un fichier.
 3. Dans le Récapitulatif, ouvrez l'onglet **Pièces jointes**.
 4. Choisissez la valeur associée au champ **Documents**, telle que « 0 ».
@@ -58,7 +58,7 @@ Chaque fois que vous devez enregistrer un document en tant que fichier, vous pou
 
 La procédure suivante se base sur un document de vente. Les étapes sont similaires pour tous les autres documents pris en charge.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Sélectionnez un document de vente, puis l'action **Joindre en tant que PDF**.
 
 Un fichier PDF avec le contenu actuel du document de vente est ajouté à l'onglet **Pièces jointes** du récapitulatif.
@@ -68,7 +68,7 @@ Vous pouvez ajouter un lien à partir d'une fiche ou d'un document à n’import
 
 La procédure suivante se base sur une fiche article. Les étapes sont similaires pour toutes les autres fiches et tous les documents pris en charge.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
 2. Sélectionnez l'article à partir duquel vous souhaitez ajouter un lien, puis choisissez l'onglet **Pièces jointes** dans le Récapitulatif.
 3. Dans la section **Liens**, choisissez l'icône **+**.
 4. Entrez le lien dans le champ **Adresse du lien**.
@@ -88,7 +88,7 @@ Vous pouvez écrire une note sur un document ou une ficher, par exemple pour com
 
 La procédure suivante se base sur un document de vente. Les étapes sont similaires pour tous les autres documents et fiches pris en charge.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Sélectionnez le document de vente pour lequel vous souhaitez écrire une note, puis choisissez l'onglet **Pièces jointes** dans le Récapitulatif.
 3. Dans la section **Notes**, choisissez l'icône **+**.
 4. Dans le champ **Note**, écrivez n’importe quel texte, par exemple « Ceci est une commande urgente ».

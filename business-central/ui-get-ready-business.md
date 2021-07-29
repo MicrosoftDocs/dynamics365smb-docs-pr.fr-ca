@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: SMTP, mail, Microsoft 365, setup, wizard, experience
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: bb9ace03ee8e47b25a7812e1ace624b8e88e990c
-ms.sourcegitcommit: 5a916b0aa0a2eef0c22b5722a0af041757e6d7c2
+ms.openlocfilehash: 6bac247787efde5e23a7460b696c241e93f5de89
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6074672"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6444830"
 ---
 # <a name="getting-ready-for-doing-business"></a>Préparation aux activités commerciales
 
@@ -23,9 +23,9 @@ Félicitations, vous venez de créer votre première société dans [!INCLUDE[pr
 
 Pour vous aider à vous préparer pour vos activités commerciales, vous pouvez visiter la page **Configuration assistée** dans laquelle vous pouvez lancer des guides de configuration assistée, des vidéos ou des rubriques d'aide pour les tâches de configuration sélectionnées. Pour accéder à la page, il suffit de choisir [ce lien](https://businesscentral.dynamics.com/?page=1801).  
 
-Vous pouvez également choisir l’icône ![Pignon pour ouvrir le menu Paramètres](media/ui-experience/settings_icon_small.png), puis l’action **Configuration assistée**.
+Sinon, choisissez l’icône ![Pignon pour ouvrir le menu Paramètres.](media/ui-experience/settings_icon_small.png) puis l’action **Configuration assistée**.
 
-Vous pouvez également accéder à la liste des guides de configuration assistée si vous choisissez l’icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration assistée**, puis sélectionnez le lien associé.  
+Vous pouvez également retrouver la liste des guides de configuration assistée si vous choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration assistée**, puis choisissez le lien associé.  
 
 > [!TIP]
 > [!INCLUDE [ua-get-help](includes/ua-get-help.md)]
@@ -36,7 +36,7 @@ Vous pouvez également accéder à la liste des guides de configuration assisté
 
 Une fois que vous avez effectué la migration des données telles que les fournisseurs, les clients et les articles de votre système financier existant, vous êtes prêt à commencer. Mais en fonction de vos besoins, demandez-vous si les autres guides de configuration assistée peuvent vous aider.
 
-Si une zone n'est pas couverte par une configuration assistée, choisissez l'icône ![Pignon pour ouvrir le menu configuration](media/ui-experience/settings_icon_small.png), puis l'action **Configuration avancée**. Dans **Configuration avancée**, la section **Configuration manuelle** permet d'accéder aux pages de configuration où vous pouvez renseigner manuellement les champs de configuration pour toutes les zones. Pour plus d'informations, reportez-vous à [Configuration de [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md).
+Si une zone n’est pas couverte par une configuration assistée, choisissez ![l’icône Pignon pour ouvrir le menu configuration.](media/ui-experience/settings_icon_small.png) puis l’action **Configuration avancée**. Dans **Configuration avancée**, la section **Configuration manuelle** permet d'accéder aux pages de configuration où vous pouvez renseigner manuellement les champs de configuration pour toutes les zones. Pour plus d'informations, reportez-vous à [Configuration de [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md).
 
 > [!NOTE]  
 > La liste des guides de configuration assistée, des extensions et des services disponibles diffèrent selon l'expérience de l'utilisateur que vous choisissez pour votre compagnie. L'expérience de type **Essential** donne accès à moins d'options que l'expérience **Premium**.
