@@ -4,12 +4,12 @@ ms.service: dynamics365-business-central
 ms.topic: include
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: a5c15b1f1542bb442c76d4da230a7f655bb6fc92
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 35d7ee3f999cf67c8a22240cd65a3ec63ea4480c
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5773270"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6442918"
 ---
 Vous pouvez utiliser la page **Configuration du grand livre** pour configurer la taxe de vente non réalisée. Vous pouvez également configurer des montants de taxe de correction maximum de manière à limiter les montants de correction de taxe qui sont entrés pour les ventes et les achats. Cela vous permet de remplacer la taxe calculée lorsqu'il existe des différences d'arrondissement entre ce qui est calculé sur le bon de commande et ce qui est calculé sur la facture achat du fournisseur.  
 
@@ -17,7 +17,7 @@ Vous pouvez utiliser la page **Configuration du grand livre** pour configurer la
 > Si vous travaillez avec la taxe d'accise, le système ne vous autorise pas à modifier le champ **Montant taxe** sur la page **Statistiques** pour une facture, par exemple pour ajuster l'arrondissement. Par conséquent, si vous avez configuré une taxe d'accise avec plus de deux décimales et que vous constatez une différence d'arrondissement par rapport aux factures de votre fournisseur, vous devez alors traiter la différence d'arrondissement en reportant une écriture supplémentaire afin que le total corresponde au montant du document. Ce report pourrait être effectué sur un compte dépenses dédié à l'arrondissement des montants.
 
 ## <a name="to-set-up-unrealized-sales-tax"></a>Pour configurer la taxe de vente non réalisée  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Paramètres comptables généraux**, puis sélectionnez le lien associé.  
 2.  Sur la page **Configuration du grand livre**, dans le raccourci **Général**, renseignez les champs comme décrit dans le tableau ci-dessous.  
 
     |Champ|Description|  
@@ -28,7 +28,7 @@ Vous pouvez utiliser la page **Configuration du grand livre** pour configurer la
 3.  Choisissez le bouton **OK**.  
 
 ## <a name="to-set-up-unrealized-tax-for-jurisdictions"></a>Pour configurer la taxe non réalisée pour les juridictions  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Juridictions fiscales**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Juridictions fiscales**, puis sélectionnez le lien associé.  
 2.  Sur la page **Juridictions fiscales**, sélectionnez l'action **Modifier la liste**.  
 3.  Renseignez les champs comme indiqué dans le tableau suivant.  
 
@@ -41,7 +41,7 @@ Vous pouvez utiliser la page **Configuration du grand livre** pour configurer la
 4.  Cliquez sur le bouton **OK**.  
 
 ## <a name="to-set-up-adjustments-for-payment-discounts-in-a-tax-posting-group"></a>Pour configurer des ajustements pour les escomptes de paiement dans un groupe de report de taxe  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration de report de taxe**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Configuration de report de taxe**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Modifier**.  
 3.  Sur la page **Fiche de configuration de report de taxe**, sélectionnez la case à cocher **Ajust. pour escompte paiement**.  
 
@@ -50,13 +50,13 @@ Vous pouvez utiliser la page **Configuration du grand livre** pour configurer la
 4.  Choisissez le bouton **OK**.  
 
 ## <a name="to-set-up-maximum-tax-correction-amounts"></a>Pour configurer des montants de correction de taxe maximum  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.  
 2.  Sur la page **Configuration des ventes & des comptes à recevoir**, sur le raccourci **Général**, cochez la case **Autoriser différence de taxe**.  
 3.  Choisissez le bouton **OK**.  
-4.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration achats et à payer**, puis sélectionnez le lien associé.  
+4.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Configuration achats et à payer**, puis sélectionnez le lien associé.  
 5.  Sur la page **Configuration des achats & des comptes à payer**, sur le raccourci **Général**, cochez la case **Autoriser différence de taxe**.  
 6.  Choisissez le bouton **OK**.  
-7.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.  
+7.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Paramètres comptables généraux**, puis sélectionnez le lien associé.  
 8.  Sur la page **Configuration du grand livre**, dans le champ **Différence taxe max. autorisée**, entrez le montant de correction de taxe maximum autorisé pour la devise locale.  
 
     > [!NOTE]  

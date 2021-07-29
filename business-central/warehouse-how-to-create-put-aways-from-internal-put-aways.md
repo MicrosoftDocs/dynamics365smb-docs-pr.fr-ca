@@ -1,6 +1,6 @@
 ---
 title: Créer un rangement à partir du rangement interne
-description: Une fois les articles rangés et avant qu'ils ne soient prélevés pour répondre aux besoins d'un bon de production ou d'une livraison, ils sont stockés dans l'entrepôt comme faisant partie de l'inventaire disponible.
+description: Cette rubrique explique comment prélever et ranger sans document source, à la fois comment créer un prélèvement interne et comment créer un rangement interne.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 66abeaaf1d009e994e302fc333c32dae3c3b6abd
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 198c4fb8ead4179667e35957046b3446ce5d8065
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5771839"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6444190"
 ---
 # <a name="pick-and-put-away-without-a-source-document"></a>Prélever et ranger sans document origine
 Une fois les articles rangés et avant qu'ils ne soient prélevés pour répondre aux besoins d'un bon de production ou d'une livraison, ils sont stockés dans l'entrepôt comme faisant partie de l'inventaire disponible.  
@@ -34,14 +34,14 @@ Les **rangements internes** vous permettent d'effectuer des rangements sans avoi
 >  Lorsque l'emplacement utilise le prélèvement et le rangement suggérés et, par conséquent, utilise des types de zone, vous ne pouvez pas déplacer manuellement des articles vers ou depuis une zone de type RÉCEPTIONNER, car les articles dans ce type de zone doivent être enregistrés comme étant rangés avant de faire partie de l'inventaire disponible.  
 
 ## <a name="to-create-an-internal-pick"></a>Pour créer un prélèvement interne  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvement interne entrepôt**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvement interne entrepôt**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.
 3. Renseignez le champ **N°** le champ **Code d'emplacement** et le champ **Du code de zone** du raccourci **Général**. Le champ **Du code de zone** indique où placer les articles prélevés. Pour des raisons de production, cette zone représente la zone enlogement ou la zone d'atelier ouvert. Pour d’autres applications, vous devez choisir un code de zone d’un type zone qui n’est pas utilisé pour le prélèvement (par exemple, une zone affectation, livraison ou une zone spéciale).  
 4.  Sélectionnez un article dans le champ **N° article**, puis renseignez les quantités à prélever.  
 5. Choisissez l'action **Créer prélèvement**. Une instruction prélèvement entrepôt est maintenant créée pour un magasinier. Vous pouvez également choisir l’action **Libérer** et créer des prélèvements entrepôt à l’aide de la **Feuille prélèvements**. Pour plus d’informations, voir [Planifier des prélèvements dans des feuilles](warehouse-how-to-plan-picks-in-worksheets.md)
 
 ## <a name="to-create-an-internal-put-away"></a>Pour créer un rangement interne  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Rangement interne entrepôt**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rangement interne entrepôt**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.
 3. Renseignez l’en-tête d’un nouveau rangement interne en y indiquant au moins le **N°** et le **Code d’emplacement**.
 4. Renseignez une ligne pour chaque article à déplacer vers l'entrepôt. Vous ne devez renseigner que les champs **N° article** et **Quantité**.

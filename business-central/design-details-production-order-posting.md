@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/08/2021
 ms.author: edupont
-ms.openlocfilehash: 966760ae57f9908ec7245f8e97f6d35591142332
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: 98dee9205b2d2f66365d111608cd69c151951ca2
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6214888"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6442370"
 ---
 # <a name="design-details-production-order-posting"></a>Détails de conception : validation d'ordre de fabrication
 Comme pour le report d'ordre d'assemblage, les composantes consommées et le temps du poste utilisé sont convertis et sortis en tant qu'article produit lorsque le bon de production est terminé. Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-assembly-order-posting.md). Toutefois, le flux des coûts des ordres d'assemblage est moins complexe, notamment parce que le report du coût d'assemblage ne se produit qu'une fois et ne génère donc pas d'inventaire travaux en cours.
@@ -58,11 +58,11 @@ Le report des bons de production sur l'inventaire TEC implique la production, la
 
 Le schéma suivant montre les routines de report impliquées dans le codeunit 22.  
 
-![Routines de report des bons de production](media/design_details_inventory_costing_14_production_posting_1.png "Routines de report des bons de production")  
+![Routines de report des bons de production.](media/design_details_inventory_costing_14_production_posting_1.png "Routines de report des bons de production")  
 
 Le schéma suivant montre les associations entre les écritures générées et les objets de coûts.  
 
-![Flux d'écritures de production](media/design_details_inventory_costing_14_production_posting_2.png "Flux d'écritures de production")  
+![Flux d’écritures de production.](media/design_details_inventory_costing_14_production_posting_2.png "Flux d'écritures de production")  
 
 L'écriture capacité décrit la consommation de la capacité en termes d'unités de temps, alors que l'écriture valeur associée décrit la valeur de la consommation de capacité spécifique.  
 

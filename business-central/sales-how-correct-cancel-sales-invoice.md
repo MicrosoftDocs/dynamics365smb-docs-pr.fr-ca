@@ -1,6 +1,6 @@
 ---
 title: Corriger ou annuler une facture vente reportée
-description: Décrit comment corriger, rétablir ou annuler une facture vente reportée et affecter une note de crédit vente.
+description: Cette rubrique décrit comment corriger, annuler, ou annuler une facture vente reportée et affecter un note de crédit vente.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: undo, credit memo, return
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: 0d6e05a52cb4028087e4c52c56fb9d2f5ab78795
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 4656e99f1227668cdf784ab950d38462da6f6c1c
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5778882"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6443442"
 ---
 # <a name="correct-or-cancel-unpaid-sales-invoices"></a>Corriger ou annuler des factures vente impayées
 
@@ -38,7 +38,7 @@ Lorsque vous corrigez ou annulez une facture vente reportée, la note de crédit
 
 ## <a name="to-cancel-a-posted-sales-invoice"></a>Pour annuler une facture vente reportée
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures vente reportées**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures vente reportées**, puis sélectionnez le lien associé.  
 2. Sélectionnez la facture vente reportée à annuler.
 
     > [!NOTE]  
@@ -54,7 +54,7 @@ Si l'annulation est liée à un report de facture partiel, la ligne de document 
 
 ## <a name="to-correct-a-posted-sales-invoice"></a>Pour corriger une facture vente reportée
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures vente reportées**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures vente reportées**, puis sélectionnez le lien associé.  
 2. Sélectionnez la facture vente reportée à corriger.
 
     > [!NOTE]  

@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/08/2021
 ms.author: edupont
-ms.openlocfilehash: 544cb3a1844aaf85ab937031a23d6d00506ffa74
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: c93bf82f92a5e24e023bd59033c31877ab72993b
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215763"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6444290"
 ---
 # <a name="design-details-searching-for-dimension-combinations"></a>Détails de conception : recherche des combinaisons de dimensions
 Lorsque vous fermez une page après avoir modifié un ensemble de dimensions, [!INCLUDE[prod_short](includes/prod_short.md)] évalue si l'ensemble de dimensions modifié existe. Si l'ensemble n'existe pas, un nouvel ensemble est créé et le code de combinaisons de dimensions est retourné.  
@@ -26,7 +26,7 @@ Lorsque vous fermez une page après avoir modifié un ensemble de dimensions, [!
 ### <a name="example-1"></a>Exemple 1  
  Le schéma suivant représente un arbre de recherche avec six ensembles de dimensions. Seule l'écriture d'ensemble de dimensions distinctive est affichée dans le schéma.  
 
- ![Exemple de structure arborescente des dimensions](media/nav2013_dimension_tree.png "Exemple de structure arborescente des dimensions")  
+ ![Exemple de structure arborescente des dimensions.](media/nav2013_dimension_tree.png "Exemple de structure arborescente des dimensions")  
 
  Le tableau suivant décrit une liste complète des écritures d'ensemble de dimensions qui constituent chaque ensemble de dimensions.  
 
@@ -45,7 +45,7 @@ Lorsque vous fermez une page après avoir modifié un ensemble de dimensions, [!
 
  D'abord, [!INCLUDE[prod_short](includes/prod_short.md)] met également à jour la table **Nœud d'arbre ensemble de dimensions** pour s'assurer que l'arbre de recherche ressemble au schéma suivant. Ainsi, l'ensemble de dimensions 7 devient un enfant de l'ensemble de dimensions 5.  
 
- ![Exemple de structure arborescente des dimensions dans NAV 2013](media/nav2013_dimension_tree_example2.png "Exemple de structure arborescente des dimensions dans NAV 2013")  
+ ![Exemple de structure arborescente des dimensions dans NAV 2013.](media/nav2013_dimension_tree_example2.png "Exemple de structure arborescente des dimensions dans NAV 2013")  
 
 ### <a name="finding-dimension-set-id"></a>Recherche du code ensemble de dimensions  
  Au niveau conceptuel, **Code parent**, **Dimension** et **Valeur de dimension**, dans l'arborescence de recherche, sont combinés et sont utilisés comme clé primaire, car [!INCLUDE[prod_short](includes/prod_short.md)] parcourt l'arborescence dans le même ordre que les écritures dimension. La fonction GET (enregistrement) est utilisée pour rechercher le code de l'ensemble de dimensions L'exemple de code suivant indique comment trouver le code d'ensemble de dimensions lorsqu'il existe trois valeurs de dimension.  

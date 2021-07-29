@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: design, replenishment, reordering
 ms.date: 06/08/2021
 ms.author: edupont
-ms.openlocfilehash: d53d813871b154a705676483559f7464bf8469fd
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: f814157dc11737074b1a4b1a83545615c2f4c64d
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6214913"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6442320"
 ---
 # <a name="design-details-reservation-order-tracking-and-action-messaging"></a>Détails de conception : réservation, chaînage et message d'action
 Le système de réservation est complet et inclut les fonctionnalités étroitement liées et parallèles du Chaînage et des Messages d'action.  
@@ -138,7 +138,7 @@ Sur la page **Configuration de la fabrication**, le champ **Composantes à l'emp
 
  Les écritures de chaînage suivantes existent dans la table **Ecriture réservation**, en fonction des données de la table.  
 
- ![Premier exemple d’écritures chaînage dans la table Écriture réservation](media/supply_planning_RTAM_1.png "supply_planning_RTAM_1")  
+ ![Premier exemple d’écritures chaînage dans la table Écriture réservation.](media/supply_planning_RTAM_1.png "supply_planning_RTAM_1")  
 
 ### <a name="entry-numbers-8-and-9"></a>Numéros d'écriture 8 et 9  
  Pour le besoin composante de LOTA et de LOTB respectivement, des liens traçabilité commande sont créés entre la demande dans la table 5407, **Composante bon de production**, et l'approvisionnement dans la table 32, **Écriture article**. Le champ **État de la réservation** contient **Traçabilité** pour indiquer que ces écritures sont des liens de suivi de commande dynamiques entre l'approvisionnement et la demande.  
@@ -156,7 +156,7 @@ Sur la page **Configuration de la fabrication**, le champ **Composantes à l'emp
 
  À présent, les écritures de chaînage suivantes existent dans la table **Ecriture réservation**.  
 
- ![Deuxième exemple d’écritures chaînage dans la table Écriture réservation](media/supply_planning_RTAM_2.png "supply_planning_RTAM_2")  
+ ![Deuxième exemple d’écritures chaînage dans la table Écriture réservation.](media/supply_planning_RTAM_2.png "supply_planning_RTAM_2")  
 
 ### <a name="entry-numbers-8-and-9"></a>Numéros d'écriture 8 et 9  
  Les écritures suivi de commande pour les deux lots de la composante correspondant à la demande dans la table 5407 sont modifiées d'un état de réservation **Traçabilité** à **Excédent**. La raison est que les approvisionnements qui ont été liés précédemment, dans la table 32, ont été utilisés par la livraison de l'ordre de transfert.  
@@ -170,7 +170,7 @@ Sur la page **Configuration de la fabrication**, le champ **Composantes à l'emp
 
  À présent, les écritures de chaînage suivantes existent dans la table **Ecriture réservation**.  
 
- ![Troisième exemple d’écritures chaînage dans la table Écriture réservation](media/supply_planning_RTAM_3.png "supply_planning_RTAM_3")  
+ ![Troisième exemple d’écritures chaînage dans la table Écriture réservation.](media/supply_planning_RTAM_3.png "supply_planning_RTAM_3")  
 
  Les écritures suivi de commande sont à présent similaires au premier point dans ce scénario, avant le report de l'ordre de transfert comme livré uniquement, sauf que les écritures de la composante ont à présent l'état de réservation **Excédent**. Ceci est dû au fait que le besoin de composante est toujours à l'emplacement WEST, reflétant ainsi que le champ **Code d'emplacement** de la ligne composante du bon de production contient **WEST** tel que configuré dans le champ de configuration **Composantes à l'emplacement**. L’approvisionnement qui a été affecté à cette demande auparavant a été transféré à l'emplacement EAST et ne peut pas être entièrement suivi à moins que le besoin de composante de la ligne bon de production ne soit modifié sur l'emplacement EAST.  
 
@@ -178,7 +178,7 @@ Sur la page **Configuration de la fabrication**, le champ **Composantes à l'emp
 
  À présent, les écritures de chaînage suivantes existent dans la table **Ecriture réservation**.  
 
- ![Quatrième exemple d’écritures chaînage dans la table Écriture réservation](media/supply_planning_RTAM_4.png "supply_planning_RTAM_4")  
+ ![Quatrième exemple d’écritures chaînage dans la table Écriture réservation.](media/supply_planning_RTAM_4.png "supply_planning_RTAM_4")  
 
 ### <a name="entry-numbers-21-and-22"></a>Numéros d'écriture 21 et 22  
  Comme le besoin composante a été modifié à l'emplacement EAST, et que l’approvisionnement est disponible comme écritures article à l'emplacement EAST, toutes les écritures chaînage pour les deux numéros de lot sont à présent entièrement suivies, comme indiqué par l'état **Traçabilité** de la réservation.  

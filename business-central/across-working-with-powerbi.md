@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: account schedule, analysis, reporting, financial report, business intelligence, KPI
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: 7f2e2fe9719d25e13a33cf1943e7a054a70edffd
-ms.sourcegitcommit: c11ad91a389ed72532f5513654fdc7909b20aed9
+ms.openlocfilehash: dcd316d7d1d360733ff15b67cc5a293576812611
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5935371"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6444053"
 ---
 # <a name="working-with-power-bi-reports-in-prod_short"></a>Utilisation des rapports Power BI dans [!INCLUDE [prod_short](includes/prod_short.md)]
 
@@ -27,7 +27,7 @@ Les rapports Power BI vous donnent un aperçu de votre [!INCLUDE[prod_short](inc
 
 [!INCLUDE [prod_short](includes/prod_short.md)] utilise le service Power BI. Les rapports à afficher dans [!INCLUDE [prod_short](includes/prod_short.md)] sont stockés dans un service Power BI. Dans [!INCLUDE [prod_short](includes/prod_short.md)], vous pouvez changer le rapport affiché dans la partie Power BI par tout rapport Power BI disponible dans votre service Power BI. La première fois que vous vous connectez à [!INCLUDE [prod_short](includes/prod_short.md)], et jusqu’à ce que vous vous connectiez à un service Power BI, les pièces restent vides, comme indiqué ici :
 
-![Partie Power BI dans Business Central](./media/power-bi-part.png)
+![Partie Power BI dans Business Central.](./media/power-bi-part.png)
 
 ## <a name="get-started"></a>Démarrer
 

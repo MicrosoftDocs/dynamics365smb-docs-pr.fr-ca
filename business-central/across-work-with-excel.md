@@ -10,37 +10,41 @@ ms.workload: na
 ms.search.keywords: accountant, accounting, financial report
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: 7e3abf36444c4701229ffaac7ceade11bb1879cc
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 6bf12f55f6bce843c4ed12f2a40db542367fffde
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5786942"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6443491"
 ---
 # <a name="viewing-and-editing-in-excel-from-business-central"></a>Affichage et édition dans Excel depuis Business Central
 
-Avec des pages qui affichent une liste d'enregistrements dans des lignes et des colonnes, comme une liste de clients, de commandes client ou de factures, vous pouvez également afficher les enregistrements à l'aide de Microsoft Excel. Pour cela, vous avez deux possibilités. Vous pouvez sélectionner l'action **Ouvrir dans Excel** ou l'action **Modifier dans Excel** sur la page. Les différences entre les deux actions sont les suivantes :  
+Avec des pages qui affichent une liste d'enregistrements dans des lignes et des colonnes, comme une liste de clients, de commandes client ou de factures, vous pouvez également afficher les enregistrements à l'aide de Microsoft Excel. Selon la page, vous avez deux options pour l’affichage dans Excel. Vous pouvez sélectionner l'action **Ouvrir dans Excel** ou l'action **Modifier dans Excel** sur la page. Cet article explique les différences entre les deux actions.
 
 ## <a name="open-in-excel"></a>Ouvrir dans Excel
 
+Avec l’action **Ouvrir dans Excel**, vous pouvez apporter des modifications aux enregistrements dans Excel, mais vous ne pouvez pas publier les modifications dans [!INCLUDE[prod_short](includes/prod_short.md)]. Vous ne pouvez enregistrer les modifications apportées au fichier Excel que sur votre ordinateur.
+
 - Avec cette action, Excel tient compte de tous les filtres de la page qui limitent les enregistrements affichés. Le classeur Excel contiendra les mêmes lignes et colonnes figurant sur la page dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
-- Vous pouvez apporter des modifications à des enregistrements dans Excel, mais vous ne pouvez pas publier les modifications dans [!INCLUDE[prod_short](includes/prod_short.md)]. Vous ne pouvez enregistrer les modifications apportées au fichier Excel que sur votre ordinateur.
-
 - Cette action fonctionne sur Windows et macOS.
+
+- À partir de la mise à jour 18.3, vous pouvez également afficher les listes affichées dans les parties de page, comme les lignes d’un document de vente. Pour l’instant, cette fonctionnalité est une fonctionnalité facultative, qui nécessite que vous activiez **Exporter n’importe quelle partie de liste vers Excel** dans **Gestion des fonctionnalités**. Pour plus d’informations, consultez [Activer les fonctionnalités à venir à l’avance](/dynamics365/business-central/dev-itpro/administration/feature-management). 
 
 > [!NOTE]
 > Pour [!INCLUDE[prod_short](includes/prod_short.md)] sur site, l'action **Ouvrir dans Excel** est disponible par défaut. Cependant, si vous configurez [!INCLUDE[prod_short](includes/prod_short.md)]sur site pour la modification de données dans Excel, l'action **Ouvrir dans Excel** est alors remplacée par l'action **Modifier dans Excel**.
 
+[!INCLUDE [send-report-excel](includes/send-report-excel.md)]  
+
 ## <a name="edit-in-excel"></a>Modifier dans Excel
+
+Avec l’action **Modifier dans Excel**, vous pouvez apporter des modifications aux enregistrements dans Excel, mais vous ne pouvez pas publier les modifications dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
 - Avec cette action, Excel respecte la plupart des filtres de la page qui limitent les enregistrements affichés, de sorte que le classeur Excel contiendra presque les mêmes enregistrements et colonnes.
 
-- L'avantage de l'action **Modifier dans Excel** est qu'elle vous permet d'apporter des modifications à des enregistrements dans Excel puis de les publier dans [!INCLUDE[prod_short](includes/prod_short.md)].
-
 - Ceci fonctionne uniquement sur Windows, pas macOS.
 
-- Vous pouvez changer la compagnie que vous utilisez. Pour ce faire, sélectionnez l’icône **Options** ![Options du complément Excel](media/cogwheel.png "Options du module complémentaire Excel") dans le volet Complément Excel, puis la compagnie dans le champ **Compagnie**.  
+- Vous pouvez changer la compagnie que vous utilisez. Pour changer de compagnie, sélectionnez l’icône **Options** ![Options de complément Excel.](media/cogwheel.png "Options du module complémentaire Excel") dans le volet Complément Excel, puis sélectionnez la compagnie dans le champ **Compagnie**.  
 
     > [!IMPORTANT]
     > Lors du changement de compagnie, assurez-vous que le champ **Environnement** n'est pas vide. Si tel est le cas, définissez-le sur l'une des options disponibles ; sinon, le module complémentaire ne fonctionnera pas correctement.  

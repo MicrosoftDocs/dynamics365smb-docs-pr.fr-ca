@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: essential, basic, user interface, application area, experience
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 6991b640319abf43718c1832b8bbea17bce0a0f1
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: d56c8d6be69e12ced2dc83b884650360e95c0ab2
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5784302"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6443628"
 ---
 # <a name="change-which-features-are-displayed"></a>Modifier les fonctionnalités affichées
 [!INCLUDE[prod_short](includes/prod_short.md)]est conçu pour vous aider à gérer votre entreprise indépendamment de sa taille et de sa complexité. Au cœur du produit, vous trouverez des fonctionnalités essentielles, telles que la génération de rapports financiers, les ventes, les achats et la gestion de l'inventaire. À mesure que la complexité de l'entreprise augmente, vous pouvez activer des fonctionnalités pour la fabrication et la gestion des services, par exemple.
@@ -46,14 +46,14 @@ Les utilisateurs sont affectés à des plans dans le centre d'administration Mic
 Si vous avez modifié les plans des utilisateurs dans le centre d'administration Microsoft 365, par exemple en affectant plus d'utilisateurs au plan Premium, vous devez refléter les modifications dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
 1. Connectez-vous en tant qu'administrateur.
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Utilisateurs**, puis sélectionnez le lien associé.
+2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.
 3. Sur la page **Utilisateurs**, sélectionnez l'option **Actualiser tous les groupes d'utilisateurs**.
 
 Toutes les nouvelles informations relatives aux plans des utilisateurs et aux groupes d’utilisateurs qui leur sont affectés sont maintenant mises à jour en fonction des modifications du plan.
 
 ### <a name="to-select-the-premium-experience"></a>Pour sélectionner l'expérience Premium
 Vous pouvez maintenant sélectionner la nouvelle expérience.
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Informations compagnie**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Informations sur la compagnie**, puis choisissez le lien associé.
 2. Sur la page **Informations compagnie**, dans le raccourci **Expérience utilisateur**, sélectionnez Premium dans le champ **Expérience**.
 
 ## <a name="help-assumes-premium-experience"></a>L'aide implique l'expérience Premium

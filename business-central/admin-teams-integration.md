@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: Teams, MS Teams, Microsoft Teams, Skype, Link, Microsoft 365, collaborate, collaboration, teamwork
 ms.date: 04/12/2021
 ms.author: jswymer
-ms.openlocfilehash: ecb3f88bf14c74f026f10fd49efe28f189036589
-ms.sourcegitcommit: e13b80d4e5141f414109e660e0918eae561acb36
+ms.openlocfilehash: ad1fd27bf6687993fed82ab418d621520e3439a1
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5882215"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6443216"
 ---
 # <a name="managing-microsoft-teams-integration-with-prod_short"></a>Gestion de l’intégration de Microsoft Teams à [!INCLUDE [prod_short](includes/prod_short.md)]
 
@@ -35,7 +35,7 @@ Cette section décrit la configuration minimale requise pour les fonctionnalité
 
     |Quoi|Licence Teams|Licence [!INCLUDE [prod_short](includes/prod_short.md)]|
     |----|---|---|
-    |Recherche de contacts [!INCLUDE [prod_short](includes/prod_short.md)].|![coche](media/check.png "coche")|![coche](media/check.png "coche")|
+    |Recherche de contacts [!INCLUDE [prod_short](includes/prod_short.md)].|![coche.](media/check.png "coche")|![coche](media/check.png "coche")|
     |Coller un lien vers un enregistrement [!INCLUDE [prod_short](includes/prod_short.md)] dans une conversation et l’envoyer sous forme de fiche.|![coche](media/check.png "coche")|![coche](media/check.png "coche")|
     |Afficher une fiche d’un enregistrement [!INCLUDE [prod_short](includes/prod_short.md)] dans une conversation.|![coche](media/check.png "coche")||
     |Afficher plus de détails d’une fiche pour un enregistrement [!INCLUDE [prod_short](includes/prod_short.md)] dans une conversation.|![coche](media/check.png "coche")|![coche](media/check.png "coche")|

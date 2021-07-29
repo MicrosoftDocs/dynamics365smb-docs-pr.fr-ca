@@ -1,6 +1,6 @@
 ---
-title: Définir les autorisations granulaires | Microsoft Docs
-description: Décrit comment accorder aux utilisateurs l'accès aux objets en leur attribuant des ensembles d'autorisations.
+title: Définir des autorisations granulaires
+description: Cette rubrique décrit comment définir des autorisations granulaires en donnant à certains utilisateurs l’accès aux objets et en leur attribuant des ensembles d’autorisations.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,20 +8,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: access, right, security
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: 52a3963267a7f476943f5a6d67f1d51c395ca927
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 3a3025e94fa05d3e0c0bf49e9afd1f13a55a60fb
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5776727"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6443727"
 ---
 # <a name="assign-permissions-to-users-and-groups"></a>Attribuer des autorisations aux utilisateurs et aux groupes
 
 Le système de sécurité de [!INCLUDE[prod_short](includes/prod_short.md)] vous permet de contrôler les objets auxquels un utilisateur peut accéder dans chaque base de données ou environnement. Vous pouvez spécifier pour chaque utilisateur s'il peut lire, modifier ou entrer des données dans les objets de base de données sélectionnés. Pour des informations détaillées, voir [Sécurité des données ](/dynamics365/business-central/dev-itpro/security/data-security?tabs=object-level)dans Aide dédiée à l'équipe IT et aux développeurs pour [!INCLUDE[prod_short](includes/prod_short.md)].
 
-Avant d’attribuer des autorisations à des utilisateurs et à des groupes d'utilisateurs, vous devez définir ceux qui peuvent se connecter en créant des utilisateurs en fonction de la licence définie dans le Centre d'administration Microsoft 365. Pour plus d’informations, voir [Créer des utilisateurs conformément aux licences](ui-how-users-permissions.md).
+Avant d’attribuer des autorisations à des utilisateurs et à des groupes d’utilisateurs, vous devez définir ceux qui peuvent se connecter en créant des utilisateurs en fonction de la licence définie dans le Centre d’administration Microsoft 365. Pour plus d’informations, voir [Créer des utilisateurs conformément aux licences](ui-how-users-permissions.md).
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], il existe deux niveaux d'autorisations pour les objets de base de données :
 
@@ -53,7 +53,7 @@ Vous pouvez affecter des ensembles d'autorisations aux utilisateurs de deux mani
 
 ### <a name="to-assign-a-permission-set-on-a-user-card"></a>Pour affecter un ensemble d'autorisations sur une fiche utilisateur
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Utilisateurs**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.
 2. Sélectionnez l'utilisateur auquel affecter des autorisations.
 Tous les ensembles d’autorisations qui sont affectés à l’utilisateur sont affichés dans le récapitulatif **Ensemble d’autorisations utilisateur**.
 3. Sélectionnez l'option **Modifier** pour ouvrir la page **Fiche utilisateur**.
@@ -61,20 +61,20 @@ Tous les ensembles d’autorisations qui sont affectés à l’utilisateur sont 
 
 ### <a name="to-assign-a-permission-set-on-the-permission-set-by-user-page"></a>Pour affecter un ensemble d'autorisations sur la page Ensemble d'autorisations par utilisateur
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Utilisateurs**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.
 2. Sur la page **Utilisateurs**, sélectionnez l'utilisateur approprié, puis cliquez sur l'action **Ensemble d'autorisations par utilisateur**.
 3. Sur la page **Ensemble d'autorisations par utilisateur**, activez la case à cocher **[nom d'utilisateur]** sur une ligne pour l'ensemble d'autorisations approprié pour affecter l'ensemble à l'utilisateur.
 4. Activez la case à cocher **Tous les utilisateurs** pour affecter l'ensemble d'autorisations à tous les utilisateurs.
 
 ## <a name="to-get-an-overview-of-a-users-permissions"></a>Pour afficher l'aperçu des autorisations d'un utilisateur
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Utilisateurs**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.
 2. Ouvrez la fiche de l'utilisateur approprié.
 3. Sélectionnez l'option **Autorisations effectives**.
 
     La section **Autorisations** répertorie tous les objets de base de données auxquels l'utilisateur a accès. Vous ne pouvez pas modifier cette section.
 
-    La section **Par ensemble d'autorisations** affiche les ensembles d'autorisations affectés via lesquels les autorisations sont accordées à l'utilisateur, la source et le type d'ensemble d'autorisations, et l'étendue des différents types d'accès sont autorisés.
+    La section **Par ensemble d’autorisations** affiche les ensembles d’autorisations affectés via lesquels les autorisations sont accordées à l’utilisateur, la source et le type d’ensemble d’autorisations, et l’étendue des différents types d’accès sont autorisés.
 
     Pour chaque ligne sélectionnée dans la section **Autorisations**, la section **Par ensemble d'autorisations** affiche les ensembles d'autorisations ou les ensembles via lesquels l'autorisation est accordée. Dans cette section, vous pouvez modifier la valeur de chacun des cinq champs de types d'accès, **Lecture**, **Insertion**, **Modification**, **Suppression** et **Exécution**.
 
@@ -103,7 +103,7 @@ Les ensembles d'autorisations fonctionnent comme des conteneurs d'autorisations,
 
 ### <a name="to-create-new-permission-set-from-scratch"></a>Pour créer un nouvel ensemble d'autorisations à partir de zéro
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Ensembles d'autorisations**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Ensembles d’autorisations**, puis choisissez le lien associé.
 2. Pour un créer un ensemble d'autorisations, choisissez l'action **Nouveau**.
 3. Sur la nouvelle ligne, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)] Lorsque vous avez créé un ensemble d'autorisations, vous devez ajouter les autorisations réelles. Pour plus d'informations, voir [Pour créer ou modifier des autorisations manuellement](ui-define-granular-permissions.md#to-create-or-modify-permissions-manually).
 
@@ -168,7 +168,7 @@ L'utilisateur n'a toutefois pas besoin d'avoir entièrement accès à la table L
 
 ## <a name="to-create-or-modify-permissions-by-recording-your-actions"></a>Pour créer ou modifier des autorisations en enregistrant vos actions
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Ensembles d'autorisations**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Ensembles d’autorisations**, puis choisissez le lien associé.
 2. Sinon, sur la page **Utilisateurs**, sélectionnez l'option **Ensembles d'autorisations**.
 3. Sur la page **Ensembles d'autorisations**, cliquez sur l'option **Nouveau**.
 4. Sur une nouvelle ligne, renseignez les champs selon vos besoins.
@@ -197,7 +197,7 @@ Les ensembles d'autorisations attribués à un utilisateur via un groupe d'utili
 
 La procédure suivante explique comment créer manuellement des groupes d'utilisateurs. Pour créer automatiquement des groupes d'utilisateurs, voir [Pour copier un groupe d'utilisateurs et tous ses ensembles d'autorisations](ui-define-granular-permissions.md#to-copy-a-user-group-and-all-its-permission-sets).
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Groupes d'utilisateurs**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Groupes utilisateur**, puis choisissez le lien associé.
 2. Sinon, sur la page **Utilisateurs**, sélectionnez l'option **Groupes d'utilisateurs**.
 3. Sur la page **Groupe d'utilisateurs**, sélectionnez l'action **Membres du groupe d'utilisateurs**.
 4. Sur la page **Groupe d'utilisateurs**, choisissez l'action **Ajouter des utilisateurs**.
@@ -209,7 +209,7 @@ Pour définir rapidement un nouveau groupe d'utilisateurs, vous pouvez copier to
 > [!NOTE]
 > Les membres du groupe d'utilisateurs ne sont pas copié vers le nouveau groupe d'utilisateurs. Vous devez les ajouter manuellement ensuite. Pour plus d'informations, reportez-vous à [Pour regrouper des utilisateurs dans des groupes d'utilisateurs](ui-define-granular-permissions.md#to-group-users-in-user-groups).
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Groupes d'utilisateurs**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Groupes utilisateur**, puis choisissez le lien associé.
 2. Sélectionnez le groupe d'utilisateurs à partir duquel vous souhaitez copier, puis choisissez l'action **Copier groupe d'utilisateurs**.
 3. Dans le champ **Nouveau code du groupe d'utilisateurs**, spécifiez le nom du nouveau groupe, puis cliquez sur le bouton **OK**.
 
@@ -217,7 +217,7 @@ Le nouveau groupe d'utilisateurs est ajouté à la page **Groupes d'utilisateurs
 
 ### <a name="to-assign-permission-sets-to-user-groups"></a>Pour affecter des ensembles d'autorisations à des groupes d'utilisateurs
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Groupes d'utilisateurs**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Groupes utilisateur**, puis choisissez le lien associé.
 2. Sélectionnez le groupe d'utilisateurs auquel affecter des autorisations.
 Tous les ensembles d’autorisations qui sont affectés à l’utilisateur sont affichés dans le récapitulatif **Ensemble d’autorisations utilisateur**.
 3. Choisissez l'action **Ensemble d’autorisations utilisateur** pour ouvrir la page **Ensembles d’autorisations utilisateur**.
@@ -227,7 +227,7 @@ Tous les ensembles d’autorisations qui sont affectés à l’utilisateur sont 
 
 La procédure suivante explique comment affecter des ensembles d'autorisations à un groupe d'utilisateurs sur la page **Ensemble d'autorisations par groupe d'utilisateurs**.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Utilisateurs**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.
 2. Sur la page **Utilisateurs**, sélectionnez l'utilisateur approprié, puis cliquez sur l'action **Ensemble d'autorisations par groupe d'utilisateurs**.
 3. Sur la page **Ensemble d'autorisations par groupe d'utilisateurs**, activez la case à cocher **[nom groupe d'utilisateurs]** sur une ligne pour l'ensemble d'autorisations approprié pour affecter l'ensemble au groupe d'utilisateurs.
 4. Activez la case à cocher **Tous les groupes d'utilisateurs** pour affecter l'ensemble d'autorisations à tous les groupes d'utilisateurs.
@@ -240,7 +240,7 @@ La procédure suivante explique comment affecter des ensembles d'autorisations �
 
 Les administrateurs peuvent définir les périodes de temps pendant lesquelles les utilisateurs spécifiés peuvent reporter, et spécifier également si le système enregistre la durée pendant laquelle les utilisateurs spécifiés ont ouvert une session. Les administrateurs peuvent également affecter des centres de gestion à des utilisateurs. Pour plus d'informations, voir [Utiliser les centres de gestion](inventory-responsibility-centers.md).
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration utilisateur**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration utilisateur**, puis choisissez le lien associé.
 2. Sur la page **Configuration des utilisateurs**, qui s'ouvre, sélectionnez l'action **Nouveau**.
 3. Dans le champ **ID utilisateur**, entrez l'ID d'un utilisateur, ou cliquez sur le champ pour visualiser tous les utilisateurs Windows actuels dans le système.
 4. Renseignez les champs selon vos besoins.

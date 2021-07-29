@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: b4daacd73987e4e747f97d288ecfb51b564de7e6
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: e348ce883493ec621b6dbe4bc5855e0c8318178b
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5781046"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6442835"
 ---
 # <a name="working-with-accounting-periods-and-fiscal-years"></a>Utilisation des périodes comptables et exercices financiers
 
@@ -35,7 +35,7 @@ Vous pouvez créer des périodes comptables en bloc, à l'aide du traitement en 
 
 Utilisez le traitement en lot **Créer exercice financier** pour diviser un exercice financier en périodes de même durée.  
 
-1. Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Périodes comptables**, puis sélectionnez le lien associé.  
+1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Périodes comptables**, puis sélectionnez le lien associé.  
 2. Choisissez l'action **Créer exercice**.  <!--What about the Scheduling option? Should we mention that? There's also the Report Output Type field...-->
 3. Dans le champ **Date début**, saisissez la date à laquelle l'exercice financier commence.  
 4. Dans le champ **Nombre de périodes**, spécifiez le nombre de périodes comptables composant l'exercice financier. Il peut y avoir un maximum de 365 périodes dans une année.  
@@ -46,7 +46,7 @@ Utilisez le traitement en lot **Créer exercice financier** pour diviser un exer
 
 Si les périodes comptables de l'exercice financier ont différentes durées, comme le calendrier 4-4-5 utilisé dans la vente au détail, vous pouvez les configurer manuellement.  
   
-1. Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Périodes comptables**, puis sélectionnez le lien associé.  
+1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Périodes comptables**, puis sélectionnez le lien associé.  
 2. Dans le champ **Date début**, saisissez la date à laquelle l'exercice financier commence. Le champ **Nom** affiche à présent le nom du mois.  
 3. Activez la case à cocher **Nouvel exercice financier** pour indiquer qu'il s'agit de la première période de l'exercice. [!INCLUDE[prod_short](includes/prod_short.md)] utilise cette période pour déterminer les périodes à fermer en fin d'exercice.
 4. Répétez les étapes 2 et 3 pour chaque période restante.  
@@ -58,7 +58,7 @@ Fermer l'exercice financier est l'une des tâches pour fermer les livres. Une fo
 > [!NOTE]  
 > Vous devez toujours avoir au moins un exercice financier ouvert. Lorsque vous fermez un exercice, assurez-vous qu'un exercice a été créé. De plus, sachez que lorsque vous fermez un exercice, vous ne pouvez pas modifier la date début de l'exercice suivant.
 
-1. Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Périodes comptables**, puis sélectionnez le lien associé.  
+1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Périodes comptables**, puis sélectionnez le lien associé.  
 2. Choisissez l'action **Clôturer exercice**.  
 
 ## <a name="posting-entries-to-a-closed-fiscal-year"></a>Report d'écritures dans un exercice financier fermé

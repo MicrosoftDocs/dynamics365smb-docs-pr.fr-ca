@@ -1,6 +1,6 @@
 ---
 title: Modifier les paramètres de base pour l'utilisateur actuel
-description: Découvrez comment modifier certains paramètres de base, par exemple, votre tableau de bord, la compagnie ou la date de travail.
+description: Découvrez comment modifier certains paramètres de base dans Business Central, par exemple, votre rôle et votre centre de rôles, votre compagnie, votre date de travail et vos fuseaux horaires.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: change Role Center, notification, change company, change work date
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: a0a504aa7c06c08d2e9f4251128e4203f0f90dee
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: e79ebc40ea98e8e488b0394a19014cefd78c2fd0
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5787462"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6443778"
 ---
 # <a name="change-basic-settings"></a>Modifier les paramètres de base
 
@@ -33,7 +33,7 @@ Le rôle détermine la page d’accueil, un écran de démarrage conçu pour les
 
 Le rôle par défaut est **Gestionnaire d'activité**, mais vous pouvez sélectionner un autre rôle pour utiliser un Tableau de bord qui correspond mieux à vos besoins.  
 
-1. Dans le coin supérieur droit, sélectionnez l'icône **Paramètres** ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez l'action **Mes paramètres**.
+1. Dans le coin supérieur droit, sélectionnez l’icône **Paramètres** ![Paramètres.](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez l’action **Mes paramètres**.
 2. Sur la page **Mes paramètres**, dans le champ **Rôle** , sélectionnez le rôle que vous souhaitez utiliser par défaut. Par exemple, sélectionnez **Comptable**.
 3. Choisissez le bouton **OK**.
 
@@ -47,7 +47,7 @@ La compagnie par défaut est appelée CRONUS et contient uniquement des données
 
 Le nom de la compagnie est toujours affiché dans le coin supérieur gauche et fonctionne comme une action que vous pouvez choisir pour revenir dans le Tableau de bord. Vous pouvez changer ce nom sur la page **Informations compagnie**.
 
-1. Choisissez simplement l'icône ![Pignon pour ouvrir le menu Paramètres](media/ui-experience/settings_icon_small.png), puis l'action **Informations compagnie**.
+1. Choisissez l’icône ![Pignon pour ouvrir le menu Paramètres.](media/ui-experience/settings_icon_small.png) puis choisissez l’action **Informations sur la compagnie**.
 2. Dans le champ **Nom**, saisissez le nom de la nouvelle compagnie.
 3. Quittez la page. Le système redémarre et affiche la nouvelle compagnie dans le coin supérieur gauche.
 
@@ -55,7 +55,7 @@ Le nom de la compagnie est toujours affiché dans le coin supérieur gauche et f
 
 Vous pouvez ajouter un badge personnalisé dans le coin supérieur droit, vous pouvez ensuite choisir d’afficher rapidement le nom de la compagnie et les informations sur l’abonné dans une fenêtre contextuelle. Le badge compagnie est également utile lorsque [!INCLUDE[prod_short](includes/prod_short.md)] est intégré dans une autre application, comme Microsoft Teams ou dans une autre application Web. Dans ces cas, parce que le [!INCLUDE[web_client](includes/web_client.md)] affiche moins d’informations contextuelles adjacentes, le badge compagnie est le seul moyen de déterminer à quelle compagnie ou à quel environnement appartient un enregistrement.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Informations compagnie**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Informations sur la compagnie**, puis choisissez le lien associé.
 2. Sur le raccourci **Badge compagnie**, renseignez les champs, le cas échéant. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)].
 
 > [!NOTE]

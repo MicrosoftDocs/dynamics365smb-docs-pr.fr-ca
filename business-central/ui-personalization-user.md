@@ -1,6 +1,6 @@
 ---
-title: Personnalisation des pages | Microsoft Docs
-description: Découvrez comment personnaliser l'interface utilisateur pour l'adapter à votre méthode de travail dans Business Central.
+title: Personnalisation des pages
+description: Découvrez comment personnaliser l’interface utilisateur et votre espace de travail pour l’adapter à votre façon de travailler et aux préférences personnelles dans Business Central.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: customize, personalize, personalization, hide columns, remove fields, move fields, resize column, change column width
-ms.date: 04/01/2021
+ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 6069e3d1bcfde5c7aead1daeb33b35201c9f05a4
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: dbcf9f396c3f92093241a17cb6a358580f015cbe
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5783321"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6442685"
 ---
 # <a name="personalize-your-workspace"></a>Personnaliser votre espace de travail
 Vous pouvez personnaliser votre espace de travail pour l'adapter à vos habitudes et préférences en modifiant les pages afin qu'elles n'affichent que les informations dont vous avez besoin, où vous avez en besoin. Les modifications de personnalisation que vous apportez n'affectent que ce que vous voyez, pas ce que voient les autres utilisateurs.
@@ -42,7 +42,7 @@ En ce qui concerne les autres personnalisations, les modifications apportées à
 
 ## <a name="to-start-personalizing-a-page-through-the-personalizing-banner"></a>Pour commencer à personnaliser une page au moyen de la bannière **Personnalisation**
 1. Ouvrez une page quelconque à personnaliser.
-2. Dans l'angle supérieur droit, sélectionnez l'icône ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez l'action **Personnaliser**.
+2. Dans l’angle supérieur droit, sélectionnez l’icône ![Paramètres.](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord") puis l’action **Personnaliser**.
 
     La bannière **Personnalisation** s'affiche en haut, ce qui indique que vous pouvez commencer à apporter des modifications.
 

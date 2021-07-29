@@ -11,12 +11,12 @@ ms.reviewer: edupont
 ms. search.keywords: cloud, migrate, insights
 ms.date: 04/12/2021
 ms.author: edupont
-ms.openlocfilehash: b64b1ad037743364b7bd0f4544dbcdb351e2daba
-ms.sourcegitcommit: 951d3c9d541f0b1d26712d37e253c2958dae3321
+ms.openlocfilehash: d98f876648f642484fe44e91da14120265e9a451
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889265"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6442620"
 ---
 # <a name="intelligent-insights-in-prod_short-online"></a>Informations intelligentes dans [!INCLUDE[prod_short](includes/prod_short.md)] Online
 
@@ -36,7 +36,7 @@ Dans [!INCLUDE[prod_short](includes/prod_short.md)] Online, la page **Informatio
 En regard des graphiques KPI, vous obtenez des informations sur des domaines de préoccupation potentiels, y compris les paiements dus. Choisissez chaque information pour explorer les données.  
 
 > [!div class="mx-imgBorder"]
-> ![Informations sur le nuage intelligent](media/across-intelligent-cloud/intelligentcloudApril19.png "Affiche la page Informations sur le nuage intelligent dans Business Central Online")
+> ![Informations sur le nuage intelligent.](media/across-intelligent-cloud/intelligentcloudApril19.png "Affiche la page Informations sur le nuage intelligent dans Business Central Online")
 
 La page se connecte également à Power BI pour encore plus d'informations. En option, connectez-vous à Azure AI pour des informations encore plus intelligentes. Pour plus d'informations, voir [Extension Prévision de l'inventaire et des ventes](ui-extensions-sales-forecast.md).  
 

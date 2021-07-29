@@ -1,6 +1,6 @@
 ---
-title: 'Procédure : configurer des types de zone | Microsoft Docs'
-description: Vous pouvez diriger la circulation des articles vers les emplacements que vous avez définis pour des activités entrepôt particulières. Vous attribuez à chaque zone des activités de flux de base, et définissez de cette façon la manière dont une zone est utilisée, en lui affectant un type.
+title: Comment configurer des types de zone
+description: Affectez des types et des activités de flux de base aux zones et, ce faisant, définissez la manière dont les zones sont utilisées pour des activités entrepôt particulières.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 5fc0fa5493a42329515bcb9b114028eb5e65c2c6
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 987db7dda73bb527cfa025b7641c445b08cced2a
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5782476"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6442989"
 ---
 # <a name="set-up-bin-types"></a>Configurer des types de zone
 Vous pouvez diriger la circulation des articles vers les emplacements que vous avez définis pour des activités entrepôt particulières. Vous attribuez à chaque zone des activités de flux de base, et définissez de cette façon la manière dont une zone est utilisée, en lui affectant un type.  
@@ -23,7 +23,7 @@ Vous pouvez diriger la circulation des articles vers les emplacements que vous a
 Il existe six types. Votre entrepôt peut fonctionner avec la totalité de ces six types de zones, mais vous pouvez également décider de n'utiliser que les types RÉCEPT., RANGPRÉLÈV., LIVR. et CQ. Ces quatre types de zones permettent à des propositions relatives à la prise en charge du flux des articles d'être effectuées et vous permettent d'enregistrer les différences d'inventaire.  
 
 ## <a name="to-set-up-the-bin-types-you-want-to-use"></a>Pour configurer les types de zones que vous souhaitez utiliser  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Types de zone**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Types de zone**, puis sélectionnez le lien associé.  
 2.  Sur la page **Types zone**, créez un code à 10 caractères pour chaque type de zone.  
 3.  Sélectionnez les activités qui peuvent être effectuées avec chaque type de zone.  
 

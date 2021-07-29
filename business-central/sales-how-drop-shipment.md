@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: direct shipment
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: beb78a3526b95af228ab313b67174633902e7bd7
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: c5ca9eb1dc14a75d84072f28e7f72fc8b5e89373
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5778832"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6443417"
 ---
 # <a name="make-drop-shipments"></a>Effectuer des livraisons directes
 
@@ -52,7 +52,7 @@ Vous pouvez maintenant informer le fournisseur quant à la livraison des article
 
 Vous pouvez également utiliser la feuille de réquisition pour créer le bon de commande du fournisseur. L'avantage d'utiliser la feuille de réquisition est qu'elle permet de créer des bons de commande pour toutes les livraisons directes en attente, il n'est donc pas nécessaire de créer chacun d'eux individuellement.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Demandes achat**, puis choisissez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Demandes achat**, puis sélectionnez le lien associé.
 2. Choisissez l'action **Livraisons directes**, puis choisissez l'option **Extraire document de vente**.
 3. Choisissez le bouton **OK**.
 4. Passez en revue les lignes bon de commande et, dans le champ **N° fournisseur**, sélectionnez le fournisseur qui fournit les marchandises requises. 
@@ -66,7 +66,7 @@ Vous pouvez également utiliser la feuille de réquisition pour créer le bon de
 
 Lorsque le fournisseur a livré les articles, vous pouvez reporter le document de vente comme envoyé. Vous pouvez également valider la commande achat, mais uniquement avec l'option **Réceptionner** jusqu'à ce que la commande vente ait été facturée.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Ouvrez le document de vente que vous avez créé dans [Pour créer un document de vente pour une livraison directe](#to-create-a-sales-order-for-drop-shipment).
 3. Dans le champ **Qté à livrer**, spécifiez quelle quantité de la commande livrer : la quantité totale ou partielle.
 4. Sélectionnez l'action **Valider** ou **Valider et envoyer**.

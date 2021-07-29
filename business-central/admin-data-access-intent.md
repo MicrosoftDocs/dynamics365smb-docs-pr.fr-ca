@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: 5fe04fc290f10324105d4d9ca01e13166bf2ad8f
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 3a85a8acda1789997639c78c5d6028a14dbb75af
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5773089"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6443953"
 ---
 # <a name="managing-database-access-intent"></a>Gestion de l'accès intentionnel à la base de données 
 
@@ -33,7 +33,7 @@ En termes de base de données, cette fonction est communément appelée *échell
 
 ## <a name="to-change-the-database-access-intent"></a>Pour modifier l'accès intentionnel à la base de données
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Liste d'accès intentionnels à la base de données**, puis choisissez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Liste d’accès intentionnels à la base de données**, puis choisissez le lien associé.
 
     La page répertorie l'ensemble des rapports, pages et requêtes. La colonne **Accès intentionnel** comprend l'une des valeurs suivantes :
 

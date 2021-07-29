@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: design, reconciliation, general ledger, inventory
 ms.date: 06/08/2021
 ms.author: edupont
-ms.openlocfilehash: ad155e604780af087c93e4e245002f3511d3d5a9
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: eafc3f6ac86584cbf2bab6e5a5a82639ea718fc5
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215812"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6442345"
 ---
 # <a name="design-details-reconciliation-with-the-general-ledger"></a>Détails de conception : rapprochement de GL
 Lorsque vous reportez des mouvements d'inventaire, tels que des livraisons vente, des productions ou des ajustements négatifs, les modifications de quantité et de valeur effectuées dans l'inventaire sont enregistrées respectivement dans les écritures du grand livre article et les écritures valeur. L'étape suivante de ce processus consiste à reporter les valeurs de l'inventaire dans les comptes inventaire du grand livre.  
@@ -82,16 +82,16 @@ Le tableau suivant montre la manière dont l'atelier est paramétré sur la fich
     1. Les comptes d'attente sont supprimés. (Vente)  
     2. Le coût des marchandises vendues est reporté. (Vente)  
 
-        ![Résultats du report des ventes sur les comptes généraux](media/design_details_inventory_costing_3_gl_posting_sales.png "Résultats du report des ventes sur les comptes généraux")  
+        ![Résultats du report des ventes sur les comptes du grand livre.](media/design_details_inventory_costing_3_gl_posting_sales.png "Résultats du report des ventes sur les comptes généraux")  
 5. L'utilisateur reporte la consommation de 150 liens, qui est le nombre de liens utilisés pour produire une chaîne. (Consommation, Matière)  
 
-    ![Résultats du report des matières sur les comptes généraux](media/design_details_inventory_costing_3_gl_posting_material.png "Résultats du report des matières sur les comptes généraux")  
+    ![Résultats du report des matières sur les comptes du grand livre.](media/design_details_inventory_costing_3_gl_posting_material.png "Résultats du report des matières sur les comptes généraux")  
 6. L'atelier a pris 60 minutes pour produire la chaîne. L'utilisateur reporte le coût de conversion. (Consommation, Capacité)  
 
     1. Les coûts directs sont reportés. (Consommation, Capacité)  
     2. Les coûts indirects sont calculés et reportés. (Consommation, Capacité)  
 
-        ![Résultats du report de la capacité sur les comptes généraux](media/design_details_inventory_costing_3_gl_posting_capacity.png "Résultats du report de la capacité sur les comptes généraux")  
+        ![Résultats du report de la capacité sur les comptes du grand livre.](media/design_details_inventory_costing_3_gl_posting_capacity.png "Résultats du report de la capacité sur les comptes généraux")  
 7. L'utilisateur reporte le coût prévu d'une chaîne. (Production)  
 8. L'utilisateur termine le bon de production et exécute le traitement en lot **Ajuster coûts - Écr. article**. (Production)  
 
@@ -100,7 +100,7 @@ Le tableau suivant montre la manière dont l'atelier est paramétré sur la fich
     3. Le coût indirect (frais généraux) est transféré du compte des coûts indirects vers le compte inventaire. (Production)  
     4. Cela a pour résultat une quantité de tolérance de 157,00 $. Les écarts sont uniquement calculés pour les articles de coût standard. (Production)  
 
-        ![Résultats du report de la production sur les comptes généraux](media/design_details_inventory_costing_3_gl_posting_output.png "Résultats du report de la production sur les comptes généraux")  
+        ![Résultats du report de la production sur les comptes du grand livre.](media/design_details_inventory_costing_3_gl_posting_output.png "Résultats du report de la production sur les comptes généraux")  
 
         > [!NOTE]  
         >  Pour des raisons de simplicité, un seul compte écart est affiché. En réalité, cinq comptes différents existent :  
@@ -113,7 +113,7 @@ Le tableau suivant montre la manière dont l'atelier est paramétré sur la fich
 
 9. L'utilisateur réévalue la chaîne de 150,00 $ à 140,00 $. (Ajustement/Réévaluation/Arrondissement/Transfert)  
 
-    ![Résultats du report de l'ajustement sur les comptes généraux](media/design_details_inventory_costing_3_gl_posting_adjustment.png "Résultats du report de l'ajustement sur les comptes généraux")  
+    ![Résultats du report de l’ajustement sur les comptes du grand livre.](media/design_details_inventory_costing_3_gl_posting_adjustment.png "Résultats du report de l'ajustement sur les comptes généraux")  
 
 Pour plus d'informations sur les relations entre les types de compte et les différents types d'écritures valeur, voir [Détails de conception : comptes de la comptabilité](design-details-accounts-in-the-general-ledger.md).  
 

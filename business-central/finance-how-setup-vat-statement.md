@@ -1,6 +1,6 @@
 ---
-title: Configurer un relevé fiscal | Microsoft Docs
-description: Configurer un relevé fiscal
+title: Configurer un relevé fiscal
+description: Cette rubrique vous explique comment configurer un modèle de relevé fiscal et des noms de relevé fiscal pour répondre aux exigences en pleine évolution de l’administration fiscale.
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: VAT, posting, tax, value-added tax
-ms.date: 04/01/2021
+ms.date: 06/16/2021
 ms.author: bholtorf
-ms.openlocfilehash: 8a7373a22cff16a32fe92bf2f2d9064d2f12e950
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 322a501a4b1d404ef39523e93b45409eb60d7c4b
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5775461"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6444397"
 ---
 # <a name="set-up-a-vat-statement"></a>Configurer un relevé fiscal
 
@@ -25,7 +25,7 @@ Les autorités fiscales peuvent modifier et modifient leurs exigences de report 
 ## <a name="to-define-a-vat-statements"></a>Pour définir un relevé fiscal
 Les relevés fiscaux vous permettent de calculer le montant du relevé fiscal pour une période donnée, par exemple, un trimestre.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Relevés fiscaux**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Relevés fiscaux**, puis choisissez le lien associé.  
 2. Choisissez le champ **Nom**, puis sélectionnez **Nouveau** sur la page **Noms de relevé fiscal**.
 3. Renseignez les champs requis. Généralement, vous souhaitez avoir un paramètre pour chaque combinaison de groupe de report marché TVA/groupe de report produit TVA. Pour les numéros de ligne, il est logique d'utiliser des numéros ou des codes équivalents comme dans votre relevé fiscal officiel [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)] 
 

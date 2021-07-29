@@ -1,9 +1,7 @@
 ---
-title: Configuration des devises supplémentaires | Microsoft Docs
+title: Configuration des devises supplémentaires
 description: Votre grand livre est configuré pour utiliser votre devise locale ($) et une autre devise est configurée comme devise additionnelle, à laquelle est affecté un taux de change courant.
-services: project-madeira
-documentationcenter: ''
-author: SorenGP
+author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
@@ -12,20 +10,23 @@ ms.workload: na
 ms.search.keywords: multiple currencies
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 96ca4139f7a19ea9a5bb3361099cde9910491488
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 23e9f521e43373ff3ee0fd5f8218b2d467b54d72
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5775535"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6444447"
 ---
 # <a name="set-up-an-additional-reporting-currency"></a>Configurer une devise de report additionnelle
+
 Les compagnies opérant dans un nombre croissant de pays/régions, il est de plus en plus important qu'elles puissent consulter et générer des rapports de données financières dans plusieurs devises.
 
 Votre grand livre est configuré pour utiliser votre devise locale ($), mais vous pouvez le configurer pour utiliser une autre devise avec un taux de change courant. Si vous désignez une deuxième devise comme « devise de report additionnelle », [!INCLUDE[prod_short](includes/prod_short.md)] enregistre automatiquement les montants en $ et dans cette devise de report additionnelle pour chaque écriture, ainsi que pour d'autres écritures, telles que les écritures TVA.
 
 > [!Warning]
-> Il est déconseillé d'utiliser la fonctionnalité de devise de report additionnelle comme base pour une conversion d'état financier. Cet outil ne permet pas d'effectuer une conversion d'états financiers de filiale étrangère dans le cadre d'une consolidation de compagnie. La fonctionnalité de devise de report additionnelle peut uniquement être utilisée pour préparer des rapports dans une autre devise, comme s'il s'agissait de la devise locale de la compagnie.
+> Il est déconseillé d’utiliser la fonctionnalité de devise de report additionnelle comme base pour une conversion d’états financiers sauf si vous comprenez les limites. Cet outil ne permet pas d'effectuer une conversion d'états financiers de filiale étrangère dans le cadre d'une consolidation de compagnie. La fonctionnalité de devise de report additionnelle peut uniquement être utilisée pour préparer des rapports dans une autre devise, comme s’il s’agissait de la devise locale de la compagnie.
+>
+> Par exemple, vous avez un grand nombre de comptes clients en livres sterling (GBP) et vous avez configuré votre devise de report additionnelle (dev. add.) en GBP. Dans ce scénario, les montants des comptes clients qui utilisent la livre sterling ne seront pas ajustés pour les gains/pertes de change dans la dev. add., mais uniquement les montants des comptes clients qui sont dans d’autres devises. Cela signifie que si vous utilisez la dev. add. pour déclarer vos rétats financiers, cela peut entraîner des soldes impayés sous-estimés ou surestimés des comptes débiteurs.
 
 ## <a name="displaying-reports-and-amounts-in-the-additional-reporting-currency"></a>Affichage de rapports et de montants dans la devise de report additionnelle
 L'utilisation d'une devise de report additionnelle peut faciliter le processus de génération de rapports d'une compagnie dans les cas suivants :
@@ -48,7 +49,7 @@ Pour configurer une devise de report additionnelle, procédez comme suit :
 
 ### <a name="to-specify-general-ledger-accounts-for-posting-exchange-rate-adjustments"></a>Pour spécifier les comptes du grand livre pour le report des ajustements de taux de change  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Devises**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Devises**, puis choisissez le lien associé.  
 2. Sur la page **Devises**, renseignez les champs suivants pour la devise de report additionnelle.  
 
 |Champ|Description|  
@@ -64,7 +65,7 @@ Pour configurer une devise de report additionnelle, procédez comme suit :
 Pour chaque compte du grand livre, vous devez spécifier la manière dont les montants de grand livre du compte sont ajustés en fonction des fluctuations de taux de change entre $ et la devise de report additionnelle.  
 
 ### <a name="to-specify-the-exchange-rate-adjustment-method-for-all-general-ledger-accounts"></a>Pour spécifier la méthode d'ajustement de taux de change pour tous les comptes généraux  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.  
 2. Sur la page **Plan comptable**, sélectionnez le compte approprié, puis cliquez sur l'action **Modifier**.  
 3. Sur la page **Fiche compte général**, sélectionnez la méthode adéquate dans le champ **Ajustement taux de change**.  
 
@@ -81,7 +82,7 @@ Pour chaque compte du grand livre, vous devez spécifier la manière dont les mo
 4.  Fermez la page **Fiche compte du grand livre**.  
 
 ### <a name="to-specify-exchange-rate-adjustment-method-for-vat-entries"></a>Pour spécifier la méthode d'ajustement de taux de change pour toutes les écritures TVA  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du grand livre**, puis choisissez le lien associé.  
 2. Sur la page **Configuration du grand livre**, sélectionnez la méthode adéquate dans le champ **Ajustement tx de change TVA**.  
 3. Si vous reportez dans une devise de report additionnelle, vous pouvez spécifier dans le champ **Ajustement taux de change TVA** la manière dont les comptes configurés pour le report de la TVA sur la page **Configuration report TVA** sont ajustés pour les fluctuations de taux de change entre $ et devise de report additionnelle.  
 
@@ -96,7 +97,7 @@ Pour chaque compte du grand livre, vous devez spécifier la manière dont les mo
     |**Ajuster montant devise report**|La devise de report additionnelle est ajustée pour les gains ou les pertes de change. Les gains ou pertes sur le taux de change sont reportés dans le compte du grand livre, dans le champ **Montant devise additionnelle**, et dans les comptes que vous avez spécifiés pour les gains ou les pertes dans le champ **Cpte gains constatés GL** et **Cpte pertes constatées GL** de la page **Devises**.|  
 
 ### <a name="to-activate-the-additional-reporting-currency"></a>Pour activer la devise de report additionnelle  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du grand livre**, puis choisissez le lien associé.  
 2. Sur la page **Configuration du grand livre**, choisissez le champ **Devise de report additionnelle** pour sélectionner la devise additionnelle que vous souhaitez utiliser pour vos déclarations.  
 3. Lorsque vous quittez le champ, [!INCLUDE[prod_short](includes/prod_short.md)] affiche un message de confirmation décrivant les effets de l'activation de la devise report.  
 4. Cliquez sur **Oui** pour confirmer que vous souhaitez activer la devise.  

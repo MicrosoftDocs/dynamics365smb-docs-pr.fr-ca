@@ -1,6 +1,6 @@
 ---
-title: Spécifier des périodes de report| Microsoft Docs
-description: Vous spécifiez des dates début et fin de report pour configurer quand les utilisateurs peuvent reporter dans le grand livre.
+title: Spécifier des périodes de report
+description: Vous spécifiez des périodes de report (dates début et fin) pour configurer quand les utilisateurs peuvent reporter en grand livre.
 services: project-madeira
 documentationcenter: ''
 author: SorenGP
@@ -11,20 +11,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: user setup
-ms.date: 04/01/2021
+ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 6f1745dfec453f5864b748d0c876e5ef040fc2df
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: e4fb495fc29f28dffd34e492cb33d162d671fbd3
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5775484"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6444372"
 ---
-# <a name="specify-posting-periods"></a>Spécifier des périodes de report
+# <a name="how-to-specify-posting-periods"></a>Procédure de définition des périodes de report
 Utilisez des périodes de report pour spécifier quand les utilisateurs peuvent reporter dans le grand livre.  
 
 ## <a name="to-specify-posting-periods"></a>Pour définir des périodes de report
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration du grand livre**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du grand livre**, puis choisissez le lien associé.  
 2. Sur la page **Configuration du grand livre**, définissez la période en entrant des dates dans les champs **Début période report** et **Fin période report**.  
 
 > [!NOTE]  

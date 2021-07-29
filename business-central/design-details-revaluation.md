@@ -1,6 +1,6 @@
 ---
-title: Détails de conception - Réévaluation | Microsoft Docs
-description: Vous pouvez réévaluer l'inventaire en fonction de la base d'évaluation reflétant le plus précisément la valeur d'inventaire. Vous pouvez également antidater une réévaluation, afin que le coût des biens vendus (COGS) soit correctement mis à jour pour les articles qui ont déjà été vendus. Les articles utilisant le mode évaluation stock standard qui n'ont pas été entièrement facturés peuvent également être réévalués.
+title: Détails de conception : réévaluation
+description: Vous pouvez réévaluer l'inventaire en fonction de la base d'évaluation reflétant le plus précisément la valeur d'inventaire.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/08/2021
+ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: a052f726169fde9e09e83aeb690169580eaee948
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: 2af7425324314c14039ef56bc7e124db033fd8ef
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215788"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6444315"
 ---
 # <a name="design-details-revaluation"></a>Détails de conception : réévaluation
 Vous pouvez réévaluer l'inventaire en fonction de la base d'évaluation reflétant le plus précisément la valeur d'inventaire. Vous pouvez également antidater une réévaluation, afin que le coût des biens vendus (COGS) soit correctement mis à jour pour les articles qui ont déjà été vendus. Les articles utilisant le mode évaluation stock standard qui n'ont pas été entièrement facturés peuvent également être réévalués.  
@@ -39,7 +39,7 @@ Une fois qu'une réévaluation a été reportée, vous pouvez reporter une dimin
 ### <a name="example"></a>Exemple :  
 L'exemple suivant montre à quel moment un article TEC se transforme pour devenir une partie de l'inventaire. L'exemple est basé sur la production d'une chaîne de 150 liens.  
 
-![Inventaire et réévaluation TEC](media/design_details_inventory_costing_10_revaluation_wip.png "Inventaire et réévaluation TEC")  
+![Inventaire et réévaluation TEC.](media/design_details_inventory_costing_10_revaluation_wip.png "Inventaire et réévaluation TEC")  
 
 **1Q** : l'utilisateur valide les maillons achetés comme étant reçus. Le tableau suivant montre l'écriture article résultante.  
 
