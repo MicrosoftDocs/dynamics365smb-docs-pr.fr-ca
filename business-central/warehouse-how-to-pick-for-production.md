@@ -1,6 +1,6 @@
 ---
-title: Prélever pour la fabrication ou l'assemblage dans les configurations de stockage de base.
-description: Lorsque l'emplacement entrepôt nécessite un traitement de prélèvement sans nécessiter de traitement de livraison, vous pouvez utiliser la page **Prélèvement inventaire** pour organiser et enregistrer le prélèvement des composantes.
+title: Prélever pour la production ou l’assemblage dans le stockage de base
+description: Lorsque l’entrepôt appelle un traitement de prélèvement sans appeler de traitement de livraison, vous pouvez utiliser la page Prélèvement inventaire pour organiser et enregistrer le prélèvement des composantes.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 005532799378248f67ff21b8e50955342ff1c24a
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: c3827bb8ab272b38972c17d79933ce0aa187e32d
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5782619"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6445807"
 ---
 # <a name="pick-for-production-or-assembly-in-basic-warehouse-configurations"></a>Prélever pour la fabrication ou l'assemblage dans les configurations de stockage de base.
 Le mode de rangement de vos composantes de prélèvement pour les bons de production ou les ordres d'assemblage dépend de la configuration de l'entrepôt en tant qu'emplacement. Pour plus d'informations, voir [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).
@@ -43,7 +43,7 @@ Si une condition préalable du système pour le prélèvement ou le déplacement
 ## <a name="to-pick-production-components-in-basic-warehouse-configurations-using-inventory-pick"></a>Pour prélever des composantes de production dans des configurations d'entrepôt de base à l'aide du prélèvement inventaire
 Dans les configurations d'entrepôt de base où l'emplacement est configuré pour utiliser uniquement le prélèvement, vous pouvez prélever des composantes pour les activités de production à l'aide de la page **Prélèvement inventaire**. Pour plus d'informations, voir [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements inventaire**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvements inventaire**, puis choisissez le lien associé.  
 2.  Pour accéder aux composantes du bon de production, choisissez l'action **Extraire documents sources**, puis sélectionnez le bon de production libéré.  
 3.  Procédez au prélèvement, puis enregistrez les informations sur le prélèvement réel dans le champ **Qté à traiter**.  
 4.  Lorsque les lignes sont prêtes à être reportées, choisissez l'action **Reporter**. Les écritures entrepôt nécessaires sont alors créées et la consommation des articles est reportée.  
@@ -81,7 +81,7 @@ Dans les scénarios de combinaison, où une partie de la quantité doit d'abord 
 ## <a name="filling-the-consumption-bin"></a>Renseigner la zone consommation
 Ce graphique indique comment le champ **Code de zone** sur les lignes composante bon de production est renseigné en fonction de la configuration de votre emplacement.
 
-![Organigramme Flux de zone](media/binflow.png "BinFlow")
+![Organigramme Flux de zone.](media/binflow.png "BinFlow")
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion d’entrepôt](warehouse-manage-warehouse.md)  

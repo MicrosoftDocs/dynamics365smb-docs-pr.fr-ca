@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: Teams, MS Teams, Microsoft Teams, Skype, Link, Microsoft 365, collaborate, collaboration, teamwork
 ms.date: 04/12/2021
 ms.author: jswymer
-ms.openlocfilehash: 15a6f009095c2e20cf65d38503a7c737e64e7bb8
-ms.sourcegitcommit: 5a916b0aa0a2eef0c22b5722a0af041757e6d7c2
+ms.openlocfilehash: c1912cda437b16495e52120eb353830751b1c06a
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6074697"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6446475"
 ---
 # <a name="business-central-and-microsoft-teams-integration"></a>Intégration de Business Central et Microsoft Teams
 
@@ -33,11 +33,11 @@ L'application [!INCLUDE [prod_short](includes/prod_short.md)] pour Teams offre l
 
 Où que vous soyez dans Teams, vous pouvez rechercher des détails sur les clients, les fournisseurs et autres contacts [!INCLUDE [prod_short](includes/prod_short.md)]. Cette fonctionnalité vous permet non seulement d'afficher des informations générales sur les contacts, mais donne également accès à l'historique des interactions, aux documents associés, etc.
 
- [![Rechercher des contacts Business Central à partir de la boîte de commande Teams](media/teams-contacts-overview.png)](media/teams-contacts-overview.png#lightbox)
+ [![Rechercher des contacts Business Central à partir de la boîte de commande Teams.](media/teams-contacts-overview.png)](media/teams-contacts-overview.png#lightbox)
 
 Vous pouvez également partager des détails de contact dans une conversation. De là, les participants ont également accès à encore plus de détails sur le contact.
 
- [![Rechercher des contacts Business Central à partir de la boîte de composition Teams](media/teams-contacts.png)](media/teams-contacts.png#lightbox)
+ [![Rechercher des contacts Business Central à partir de la boîte de composition Teams.](media/teams-contacts.png)](media/teams-contacts.png#lightbox)
 
 Pour plus d’informations, reportez-vous à la [Recherche de doublons de contact dans Microsoft Teams](across-search-contacts-teams.md).
 
@@ -45,7 +45,7 @@ Pour plus d’informations, reportez-vous à la [Recherche de doublons de contac
 
 Copier un lien vers n’importe quel enregistrement Business Central et le coller dans une conversation Teams à partager avec vos collègues. L’application étendra le lien dans une carte interactive compacte qui affiche des informations sur l’enregistrement.
 
-[![Intégration Teams avec Business Central](media/teams-intro-v3.png)](media/teams-intro-v3.png#lightbox)
+[![Intégration Teams avec Business Central.](media/teams-intro-v3.png)](media/teams-intro-v3.png#lightbox)
 
 Une fois dans la conversation, vous et vos collègues pouvez afficher plus de détails sur l’enregistrement, modifier les données et prendre des mesures, sans quitter Teams.
 
@@ -68,6 +68,7 @@ Pour plus d’informations, consultez [Partage d'enregistrements dans Microsoft 
 
 [FAQ Teams](teams-faq.md)  
 [Dépannage dans Teams](admin-teams-troubleshooting.md)  
+[Modification de la compagnie et d’autres paramètres dans Teams](across-teams-settings.md)  
 [Développement pour l’intégration de Teams](/dynamics365/business-central/dev-itpro/developer/devenv-develop-for-teams)
   
 ## [!INCLUDE[prod_short](includes/free_trial_md.md)]  

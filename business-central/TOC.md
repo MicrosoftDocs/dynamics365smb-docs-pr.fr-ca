@@ -165,6 +165,7 @@
 #### [Configurer des informations générales pour les immobilisations](fa-how-setup-general.md)
 #### [Configurer un amortissement immobilisation](fa-how-setup-depreciation.md)
 #### [Définir des méthodes d'amortissement.](fa-depreciation-methods.md)
+#### [Définir des méthodes d’amortissement paramétrables](fa-how-setup-user-defined-depreciation-method.md)
 #### [Configurer une assurance immobilisation](fa-how-setup-insurance.md)
 #### [Configurer la entretien d'une immobilisation](fa-how-setup-maintenance.md)
 ### Configuration de la gestion des entrepôts
@@ -265,10 +266,10 @@
 ##### Administrateur
 ###### [Vue d’ensemble de l’intégration](admin-powerbi-overview.md)
 ###### [Activation de l’intégration Power BI](admin-powerbi-setup.md)
-##### Générateur
+##### Créateur de rapport
 ###### [Familiarisation avec la création de rapports](across-how-use-financials-data-source-powerbi.md)
 ###### [Création de rapports pour afficher les données de liste](across-how-use-powerbi-reports-factbox.md)
-##### Consommateur
+##### Utilisateur professionnel
 ###### [Utilisation des rapports Power BI dans Business Central](across-working-with-powerbi.md)
 ###### [Utilisation des données Business Central dans Power BI](across-working-with-business-central-in-powerbi.md)
 ###### [Utilisation des applications Business Central dans Power BI](across-powerbi-business-central-apps.md)
@@ -449,6 +450,7 @@
 ### [Rapports financiers ](finance-reports.md)
 ### Gestion des comptes client
 #### [Vue d’ensemble de la comptabilité client](receivables-manage-receivables.md)
+#### [Rapports Comptabilité client et analyse](receivables-reports.md)
 #### Lettrage automatique des paiements et rapprochement des comptes bancaires
 ##### [Vue d’ensemble de l'affectation paiement](receivables-apply-payments-auto-reconcile-bank-accounts.md)
 ##### [Rapprocher les paiements à l'aide de l'application automatique](receivables-how-reconcile-payments-auto-application.md)
@@ -466,6 +468,7 @@
 
 ### Gestion des comptes fournisseur
 #### [Vue d’ensemble de la comptabilité fournisseur](payables-manage-payables.md)
+#### [Rapports Comptabilité fournisseur et analyse](payables-reports.md)
 #### Effectuer des paiements
 ##### [Effectuer des paiements](payables-make-payments.md)
 ##### [Utilisation de journaux généraux](ui-work-general-journals.md)
@@ -664,6 +667,7 @@
 
 ## COMPTES D'IMMOBILISATIONS
 ### [Vue d’ensemble des immobilisations](fa-manage.md)
+### [Rapports et analyses des immobilisations](fa-reports.md)
 ### [Acquérir des immobilisations](fa-how-acquire.md)
 ### [Mettre à jour des immobilisations](fa-how-maintain.md)
 ### [Assurer les immobilisations](fa-how-insure.md)
@@ -893,15 +897,8 @@
 ##### [Paramétrer les fournisseurs pour des suggestions de règlement automatique](LocalFunctionality/Belgium/how-to-set-up-vendors-for-automatic-payment-suggestions.md)
 ##### [Créer des modèles et des lots de journal paiement](LocalFunctionality/Belgium/how-to-create-payment-journal-templates-and-batches.md)
 ##### [Tester les paiements électroniques](LocalFunctionality/Belgium/how-to-test-electronic-payments.md)
-##### [Imprimer les fichiers de paiement](LocalFunctionality/Belgium/how-to-print-payment-files.md)
-##### [Activer les règlements SEPA](LocalFunctionality/Belgium/how-to-activate-sepa-payments.md)
-##### [Remplir les paiements SEPA non euros](LocalFunctionality/Belgium/how-to-file-non-euro-sepa-payments.md)
+##### [Exporter les fichiers de paiement](LocalFunctionality/Belgium/how-to-print-payment-files.md)
 ##### [Prélèvement à l'aide de la domiciliation](LocalFunctionality/Belgium/direct-debit-using-domiciliation.md)
-##### [Paramétrer les domiciliations](LocalFunctionality/Belgium/how-to-set-up-domiciliations.md)
-##### [Modifier et supprimer les lignes domiciliation](LocalFunctionality/Belgium/how-to-edit-and-delete-domiciliation-lines.md)
-##### [Tester les domiciliations](LocalFunctionality/Belgium/how-to-test-domiciliations.md)
-##### [Exporter et reporter les domiciliations](LocalFunctionality/Belgium/how-to-export-and-post-domiciliations.md)
-##### [Générer des suggestions de domiciliation](LocalFunctionality/Belgium/how-to-generate-domiciliation-suggestions.md)
 ##### [Relevés bancaires CODA](LocalFunctionality/Belgium/coda-bank-statements.md)
 ##### [Affecter les relevés CODA](LocalFunctionality/Belgium/how-to-apply-coda-statements.md)
 ##### [Transférer et reporter automatiquement les relevés CODA](LocalFunctionality/Belgium/how-to-automatically-transfer-and-post-coda-statements.md)
@@ -1002,16 +999,14 @@
 ##### [Exporter des écritures du grand livre vers un fichier XML](LocalFunctionality/France/how-to-export-general-ledger-entries-to-an-xml-file.md)
 ##### [Configuration requise pour la déclaration d'échanges de biens](LocalFunctionality/France/requirements-for-reporting-declaration-of-trade-in-goods.md)
 #### Banque et paiements
+##### [Gestion des paiements](LocalFunctionality/France/payment-management.md)
 ##### [Configurer des adresses de paiement](LocalFunctionality/France/how-to-set-up-payment-addresses.md)
-##### [Configurer les états de règlement](LocalFunctionality/France/how-to-set-up-payment-statuses.md)
-##### [Paramétrer des étapes règlement](LocalFunctionality/France/how-to-set-up-payment-steps.md)
 ##### [Paramétrer des types de règlement](LocalFunctionality/France/how-to-set-up-payment-classes.md)
-##### [Archiver les bordereaux de paiement](LocalFunctionality/France/how-to-archive-payment-slips.md)
 ##### [Créer bordereaux paiement](LocalFunctionality/France/how-to-create-payment-slips.md)
 ##### [Exporter des paiements](LocalFunctionality/France/how-to-export-payments.md)
-##### [Exporter ou importer les paramètres de configuration de la gestion des paiements](LocalFunctionality/France/how-to-export-or-import-payment-management-setup-parameters.md)
-##### [Gestion des paiements](LocalFunctionality/France/payment-management.md)
 ##### [Reporter des bordereaux paiement](LocalFunctionality/France/how-to-post-payment-slips.md)
+##### [Archiver les bordereaux de paiement](LocalFunctionality/France/how-to-archive-payment-slips.md)
+##### [Exporter ou importer les paramètres de configuration de la gestion des paiements](LocalFunctionality/France/how-to-export-or-import-payment-management-setup-parameters.md)
 #### Finances principales
 ##### [Grand livre](LocalFunctionality/France/general-ledger.md)
 ##### [Affecter des écritures](LocalFunctionality/France/how-to-apply-general-ledger-entries.md)
@@ -1554,6 +1549,7 @@
 #### Général
 ##### [Configurer un avertissement de date de report](LocalFunctionality/UnitedKingdom/how-to-set-up-a-posting-date-warning.md)
 ##### [Entrer les informations statutaires](LocalFunctionality/UnitedKingdom/how-to-enter-statutory-information.md)
+##### [Envoyer des données de prévention de la fraude](LocalFunctionality/UnitedKingdom/fraud-prevention-data.md)
 ##### [Extension GetAddress.io UK Postcodes](LocalFunctionality/UnitedKingdom/ui-extensions-getaddressio.md)
 ##### [Configurer l'extension GetAddress.io UK Postcodes](LocalFunctionality/UnitedKingdom/uk-setup-postal-code-service.md)
 
@@ -1577,7 +1573,7 @@
 ## Sécurité et protection
 ### [Vue d’ensemble de la sécurité et de la protection (en anglais uniquement)](/dynamics365/business-central/dev-itpro/security/security-and-protection?toc=/dynamics365/business-central/toc.json)
 ## Confidentialité
-### [Confidentialité (microsoft.com)](https://www.microsoft.com/en-us/trust-center/privacy)
+### [Confidentialité (microsoft.com)](https://www.microsoft.com/trust-center/privacy)
 ## Conformité
 ### [Vue d’ensemble de la conformité](compliance/compliance-overview.md)
 ### [Conformité des applications](compliance/compliance-application-compliance.md)

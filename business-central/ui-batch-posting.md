@@ -1,6 +1,6 @@
 ---
-title: Comment reporter plusieurs documents en même temps | Microsoft Docs
-description: Au lieu de reporter des documents individuels un par un, vous pouvez sélectionner plusieurs documents non reportés dans une liste afin de les reporter en lot, soit pour un report immédiat, soit pour un report programmé, par exemple, à la fin de la journée.
+title: Reporter plusieurs documents en même temps
+description: Plutôt que de valider des documents individuels un à un, vous pouvez sélectionner plusieurs documents non reportés dans une liste pour report par lot immédiate ou programmée.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms.date: 04/01/2021
+ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: d26b98bac791bca2dc910f010c135fe187d6abff
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 33e21834dc1417f5177b167e911e002ca56f648c
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5773640"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6446057"
 ---
 # <a name="post-multiple-documents-at-the-same-time"></a>Reporter plusieurs documents en même temps
 
@@ -25,7 +25,7 @@ Au lieu de reporter des documents individuels un par un, vous pouvez sélectionn
 
 La procédure suivante explique comment reporter immédiatement plusieurs bons de commande. Les étapes sont similaires pour tous les documents achat et vente.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de commande**, puis choisissez le lien associé.
 2. Sur la page **Bons de commande**, sélectionnez toutes les commandes à reporter :
 3. Dans le champ **N°**, choisissez les trois points verticaux pour ouvrir le menu contextuel, puis choisissez l'action **Sélectionner davantage**.
 4. Cochez la case pour toutes les lignes représentant les commandes que vous souhaitez reporter en même temps.
@@ -36,7 +36,7 @@ La procédure suivante explique comment reporter immédiatement plusieurs bons d
 
 La procédure suivante explique comment exécuter en lot plusieurs bons de commande. Les étapes sont similaires pour tous les documents achat et vente où l'action **Exécuter en lot** est disponible.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de commande**, puis choisissez le lien associé.  
 2. Sur la page **Bons de commande**, sélectionnez toutes les commandes à reporter :
 3. Dans le champ **N°**, choisissez les trois points verticaux pour ouvrir le menu contextuel, puis choisissez l'action **Sélectionner davantage**.
 4. Cochez la case pour toutes les lignes représentant les commandes que vous souhaitez reporter en même temps.
@@ -53,7 +53,7 @@ Les files d'attente des travaux sont un outil efficace pour programmer l'exécut
 
 La procédure suivante explique comment configurer le report en arrière-plan des documents de vente. La procédure est identique pour les achats.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration ventes & à recevoir**, puis choisissez le lien associé.
 2. Sur la page **Configuration ventes & à recevoir**, activez la case à cocher **Reporter avec la file d'attente des travaux**.
 3. Choisissez le champ **Code catégorie de la file d'attente des travaux**, puis spécifiez le code **SALESPOST**.
 
@@ -86,7 +86,7 @@ Sinon, vous pouvez reporter les reports à des heures pratiques pour votre organ
 
 La procédure suivante décrit comment définir le rapport **Reporter en lot documents de vente** pour un report automatique des documents de vente lancés à 16 h 00 les jours de semaine.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Écritures file d'attente des travaux**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures file d’attente des travaux**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 3. Dans le champ **Type objet à exécuter**, sélectionnez **Rapport**.  
 4. Dans le champ **Code objet à exécuter**, sélectionnez 296, **Reporter en lot des documents de vente**.

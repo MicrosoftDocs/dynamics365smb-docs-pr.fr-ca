@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: sales, crm, integration, sync, synchronize, table mapping
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 9c11e4f5acb0055b42a2d172f9a7deba75edfb08
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 185d0a1c55830f6e4ed979154744076d457b5724
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5779817"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6446400"
 ---
 # <a name="mapping-the-tables-and-fields-to-synchronize"></a>Mappage des tables et des champs à synchroniser
 [!INCLUDE[prod_short](includes/cc_data_platform_banner.md)]
@@ -68,7 +68,7 @@ Les couplages peuvent être configurés automatiquement à l'aide des projets de
 Si vous ne souhaitez pas synchroniser toutes les lignes pour une table spécifique dans [!INCLUDE[prod_short](includes/cds_long_md.md)] ou une table dans [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez définir des filtres pour limiter les données synchronisées. Vous configurez des filtres sur la page **Mappages de table d'intégration**.  
 
 #### <a name="to-filter-records-or-rows-for-synchronization"></a>Pour filtrer des enregistrements ou lignes en vue d’une synchronisation  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Mappages de table d'intégration**, puis choisissez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Mappages de table d’intégration**, puis choisissez le lien associé.
 
 2.  Pour filtrer les enregistrements [!INCLUDE[prod_short](includes/prod_short.md)], définissez le champ **Filtre table**.  
 
@@ -80,7 +80,7 @@ Par défaut, seuls les enregistrements dans [!INCLUDE[prod_short](includes/prod_
 Par exemple, le projet de synchronisation Dynamics 365 Sales - REPRÉSENTANTS utilise le mappage de table REPRÉSENTANTS. Le projet de synchronisation copie les données des utilisateurs dans [!INCLUDE[prod_short](includes/cds_long_md.md)] vers les représentants dans [!INCLUDE[prod_short](includes/prod_short.md)]. Si vous définissez le mappage de table pour créer des enregistrements, pour chaque utilisateur dans [!INCLUDE[prod_short](includes/cds_long_md.md)] qui n’est pas encore couplé à un représentant dans [!INCLUDE[prod_short](includes/prod_short.md)], une ligne de représentant est créée dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 #### <a name="to-create-new-records-during-synchronization"></a>Pour créer des enregistrements durant la synchronisation  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Mappages de table d'intégration**, puis choisissez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Mappages de table d’intégration**, puis choisissez le lien associé.
 
 2.  Dans l'écriture de mappage de table de la liste, désactivez le champ **Synch. uniquement les enregistrements couplés**.  
 
@@ -96,7 +96,7 @@ Si vous installez la configuration de synchronisation par défaut, deux modèles
 -   Le compte **CDSACCOUNT** permet de créer et synchroniser de nouveaux comptes dans [!INCLUDE[prod_short](includes/cds_long_md.md)] sur la base d'un compte dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 #### <a name="to-specify-configuration-templates-on-a-table-mapping"></a>Pour spécifier des modèles de configuration dans un mappage de table  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Mappages de table d'intégration**, puis choisissez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Mappages de table d’intégration**, puis choisissez le lien associé.
 
 2.  Dans l'écriture de mappage de table de la liste, dans le champ **Code modèle config. table**, choisissez le modèle de configuration à utiliser pour les nouveaux enregistrements dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 

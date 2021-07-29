@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.search.keywords: reporting
 ms.date: 06/01/2021
 ms.author: andreipa
-ms.openlocfilehash: 5fc64db4120b80203f99742ed3ed834b23370c47
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: 3f818e556b2ebe3f50189b0057f1302a5598d904
+ms.sourcegitcommit: a486aa1760519c380b8cdc8fdf614bed306b65ea
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216434"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6543180"
 ---
 # <a name="purchase-reports-and-analytics-in-business-central"></a>Rapports et analyses d'achat dans Business Central
 
@@ -24,8 +24,7 @@ Le tableau suivant décrit certains des principaux rapports dans les rapports d'
 
 |Rapport |Code objet|Description  |
 |---------|---------|---------|
-|**Statistique achat**|312|Affiche les statistiques achat pour chaque fournisseur. Cela inclut des informations pour cinq périodes, à partir de la date que vous spécifiez.<br>
-Le rapport comprend les informations concernant le total des achats, les paiements, les frais financiers et les escomptes, y compris les escomptes de paiement gagnés et perdus. Les statistiques sont calculées pour les achats antérieurs à la date saisie, trois fois à un mois d’intervalle à compter de la date saisie et pour une période incluant tous les achats effectués après le troisième intervalle d’un mois.|
+|**Statistiques achat**|312|[!INCLUDE [reports-purchase-statistics](includes/reports-purchase-statistics.md)]|
 |**Fournisseur – Liste des 10 meilleurs**|311|Affiche des informations sur les achats aux fournisseurs pour une période déterminée. Vous pouvez choisir le nombre de fournisseurs inclus dans le rapport.<br>Les fournisseurs sont triés par montant, et vous pouvez choisir s’ils doivent être triés par montant d’achat ou par solde. Le rapport vous donne un bref aperçu des fournisseurs à qui vous achetez le plus et ceux à qui vous devez le plus d’argent.|
 |**Catalogue article fournisseur** ou **Catalogue fournisseur/article**|320 ou 720|Affiche une liste des fournisseurs pour les articles sélectionnés ou des articles pour les fournisseurs sélectionnés. Pour chaque combinaison d’article et de fournisseur, l’état indique le coût unitaire direct, le délai de réapprovisionnement et la référence fournisseur.<br>Ce rapport n’est pas disponible aux États-Unis, au Canada et au Mexique. Utilisez plutôt le rapport **Catalogue Article/Fournisseur** (10164).|
 |**Achats Fournisseur/Article**|313|Affiche la liste des écritures article de chaque fournisseur pendant la période choisie. Le rapport affiche des informations sur la quantité facturée, le montant et les escomptes possibles. Il peut être utilisé, par exemple, pour analyser les achats d’articles d’une compagnie et pour voir s’il existe une relation entre les escomptes et les achats d’articles.|

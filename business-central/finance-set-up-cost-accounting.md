@@ -1,6 +1,6 @@
 ---
-title: Configuration de la comptabilité analytique | Microsoft Docs
-description: Avant d'utiliser la comptabilité analytique, vous devez effectuer des tâches de configuration.
+title: Paramétrage du contrôle de gestion
+description: Avant d’utiliser la comptabilité analytique, vous devez effectuer des tâches de configuration. Chaque écriture de coût doit avoir un type de coût et un centre de coût ou un objet de coûts associé.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 808efe140a0330d9892c01839090b28ef2c0d50c
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 0ed9b58b9ceec962d7f55ef5687ac36e11fbd681
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5783757"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6446375"
 ---
 # <a name="setting-up-cost-accounting"></a>Paramétrage du contrôle de gestion
 Avant d'utiliser la comptabilité analytique, vous devez effectuer des tâches de configuration.
@@ -36,7 +36,7 @@ Le plan des types de coûts a la même fonction que le plan des comptes dans le 
 -   Créez le plan des types de coûts ou ajoutez de nouveaux types de coûts au plan comptable existant des types de coûts. Vous devez créer chaque type de coûts individuellement.  
 
 ### <a name="to-transfer-the-general-ledger-chart-of-accounts-to-the-chart-of-cost-types"></a>Pour transférer le plan des comptes du grand livre vers le plan des types de coûts  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable des types de coûts**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable des types de coûts**, puis choisissez le lien associé.  
 2.  Choisissez l'action **Obtenir les types de coûts à partir du plan comptable**. Dans la boîte de dialogue, cliquez sur **Oui** pour confirmer le transfert. La fonction utilise le plan comptable général pour créer le plan des types de coûts.  
 
     Le plan des types de coûts contient désormais tous les comptes d'état des résultats du grand livre, et comprend les titres et les sous-totaux. Vous pouvez modifier le plan des types de coûts, selon vos besoins. Par exemple, vous pouvez supprimer les types de coûts existants en double.  
@@ -98,7 +98,7 @@ Les centres de coûts sont les départements responsables des coûts et des reve
 
 ### <a name="to-transfer-dimension-values-in-the-general-ledger-to-the-chart-of-cost-centers"></a>Pour transférer des valeurs de dimension du grand livre vers le plan des centres de coûts  
 1.  Définissez une dimension comme dimension des centres de coûts sur la page **Mettre à jour les dimensions de comptabilité analytique**. Seules les valeurs de cette dimension sont transférées.  
-2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable des centres de coûts**, puis sélectionnez le lien associé.  
+2.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable des centres de coûts**, puis choisissez le lien associé.  
 3.  Sous l'onglet **Actions**, dans le groupe **Fonctions**, choisissez **Extraire les centres de coûts de l'axe analytique** pour transférer des sections du plan des centres de coûts. La fonction transfère les sections analytiques que vous avez définis dans l'étape 1.  
 
     > [!NOTE]  
@@ -131,7 +131,7 @@ Les objets de coûts sont les projets, les biens ou les services d'une compagnie
 
 ### <a name="to-transfer-dimension-values-from-the-general-ledger-to-the-chart-of-cost-objects"></a>Pour transférer des valeurs de dimension du grand livre vers le plan des objets de coûts  
 1.  Définissez une dimension comme dimension d'objet de coûts sur la page **Actualiser dimensions CA**. Seules les valeurs de cette dimension sont transférées.  
-2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable des objets de coûts**, puis sélectionnez le lien associé.  
+2.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable des objets de coûts**, puis choisissez le lien associé.  
 3.  Choisissez l'action **Extraire les objets de coûts de la dimension** pour transférer des valeurs de dimension vers le plan comptable des objets de coûts. La fonction transfère les axes analytiques que vous avez définis dans l'étape 1.  
 
     > [!NOTE]  

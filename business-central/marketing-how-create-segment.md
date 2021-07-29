@@ -12,18 +12,18 @@ ms.workload: na
 ms.search.keywords: relationship, prospect
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: a6a8b12623f12cdc590114dd36ff10c399e38a99
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: ddddcfa3439fe917a930a0a6cbd3605a273c540f
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5780692"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6445611"
 ---
 # <a name="create-segments"></a>Création de segments
 Vous pouvez créer des segments pour sélectionner un groupe contacts, par exemple pour créer une interaction concernant plusieurs contacts, comme un courriel direct.
 
 ## <a name="to-create-a-segment"></a>Pour créer un segment
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Segments**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Segments**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Dans la section **Général**, dans le champ **N°**, saisissez le numéro du segment.
 

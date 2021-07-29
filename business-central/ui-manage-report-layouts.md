@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: customized report, document layout, logo, personalize
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 8c62a19a9dda2f9af72f03130c7b3cc5e00c1d41
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 2b3dcc5c40346f6bd63d431b3024d64bc5a0d434
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5776676"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6445957"
 ---
 # <a name="managing-report-and-document-layouts"></a>Gestion des présentations de rapport et de document
 Une présentation de rapport contrôle le contenu et le format du rapport, dont les champs de données d'un ensemble de données de rapport apparaissant sur le rapport et la façon ils sont organisés, le style de texte, les images, et plus encore. À partir de [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez modifier la présentation utilisée sur un rapport, créer une nouvelle présentation ou modifier les présentations existantes.
@@ -39,7 +39,7 @@ Il existe deux types de présentations que vous pouvez utiliser pour les rapport
 ## <a name="word-report-layout-overview"></a>Aperçu de la présentation de rapport Word
 Une présentation de rapport Word est basé sur un document Word (type de fichier .docx). Les présentations de rapport Word vous permettent de concevoir des présentations de rapport à l'aide de Microsoft Word 2013 ou une version ultérieure. Une présentation de rapport Word détermine le contenu du rapport, contrôle la manière dont les éléments de contenu sont organisés ainsi que leur apparence. Un document de présentation de rapport Word utilisera généralement des tableaux pour organiser le contenu, dans lequel les cellules peuvent contenir des champs de données, du texte ou des images.
 
- ![Exemple de document de présentation de rapport Word pour NAV](media/nav_wordreportlayout_edit_in_word_example.png "NAV_WordReportLayout_Edit_In_Word_Example")  
+ ![Exemple de document de présentation de rapport Word pour NAV.](media/nav_wordreportlayout_edit_in_word_example.png "NAV_WordReportLayout_Edit_In_Word_Example")  
 
 ## <a name="rdlc-layout-overview"></a>Aperçu de la présentation RDLC
 Les présentations RDLC sont basées sur les présentations de définition de rapport client (types de fichier .rdlc or .rdl). Ces présentations sont créées et modifiées à l'aide du Générateur de rapports SQL Server. Le concept des présentations RDLC est similaire à celui des présentations Word, où la présentation définit le format général du rapport et détermine les champs de l'ensemble de données à inclure. La création de présentations RDLC est plus avancée que les présentations Word. Pour plus d'informations, voir [Création de présentations de rapport RDLC](/dynamics-nav/Designing-RDLC-Report-Layouts).

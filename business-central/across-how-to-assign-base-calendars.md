@@ -1,6 +1,6 @@
 ---
-title: Procédure de configuration des calendriers principaux | Microsoft Docs
-description: Vous pouvez affecter un calendrier principal à votre compagnie et à ses partenaires commerciaux, tels que ses clients, ses fournisseurs ou ses emplacements. Les dates de livraison et de réception sur les lignes document de vente, bon de commande, ordre de transfert et bon de production futures sont calculées en fonction des jours ouvrés définis dans le calendrier.
+title: Comment configurer des calendriers principaux
+description: Vous pouvez affecter un calendrier de base à votre compagnie et à ses partenaires commerciaux, pour calculer les dates de livraison et de réception en fonction des jours ouvrés spécifiés.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,20 +8,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 06/11/2021
 ms.author: edupont
-ms.openlocfilehash: 87b68711db42ec5240382cc4c9d052fb80fc2a31
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 5c82ce068f22e9cf458fdedf84504c880838c648
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5775882"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6446500"
 ---
 # <a name="set-up-base-calendars"></a>Configurer des calendriers principaux
 Vous pouvez affecter un calendrier principal à votre compagnie et à ses partenaires commerciaux, tels que ses clients, ses fournisseurs ou ses emplacements. Les dates de livraison et de réception sur les lignes document de vente, bon de commande, ordre de transfert et bon de production futures sont calculées en fonction des jours ouvrés définis dans le calendrier. Lorsque vous configurez un nouveau calendrier principal, votre tâche consiste essentiellement à indiquer et à définir les jours chômés à appliquer.  
 
 ## <a name="to-set-up-a-base-calendar"></a>Pour configurer un calendrier principal  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Calendrier principal**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Calendrier principal**, puis choisissez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Complétez le champ **Code**.  
 4. Choisissez l'action **Gérer modifications calendrier principal**.
@@ -64,7 +64,7 @@ Par exemple, bien qu'un calendrier principal définisse en général tous les sa
 
 La procédure suivante illustre l'exemple d'un emplacement. Remarquez que, à ce stade, vous avez déjà affecté un calendrier principal à l'emplacement.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.
 2. Ouvrez l'emplacement que vous voulez mettre à jour, puis sélectionnez le champ **Calendrier personnalisé**. Notez qu'un calendrier doit être sélectionné dans le champ **Code calendrier principal**.
 3. Sur la page **Écritures calendrier personnalisé** qui s'ouvre, choisissez l'action **Conserver modifications calendrier personnalisé**.
 4. Dans la fenêtre **Modifications calendrier personnalisé**, ajoutez des lignes pour les écritures calendrier personnalisé.
@@ -100,7 +100,7 @@ Les calendriers principaux sont affectés à votre propre compagnie, à vos clie
 -   Sur la fiche **Magasin**, le calendrier principal est affecté sur le raccourci **Entrepôt**.  
 -   Sur la page **Agents de livraison** , le calendrier principal est affecté sur la page **Services agent de livraison**.  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.  
 2.  Ouvrez la fiche **Client** pour laquelle vous allez affecter un calendrier principal.  
 3.  Sur le raccourci **Expédition**, dans le champ **Code calendrier principal**, sélectionnez le calendrier principal à affecter.  
 

@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: document, mail, merge, Word, template, email
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: d29e29eca7dfc24ded51aed994ac7003fb4d30ab
-ms.sourcegitcommit: 6bce51954f17b80491e180f25d67ff18b1618a88
+ms.openlocfilehash: 84b6a9fa74cea99f8b939edcf0cd883e39eb6937
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6110964"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6445982"
 ---
 # <a name="using-word-templates-for-bulk-communication"></a>Utilisation de modèles Word pour la communication en masse
 Les modèles Microsoft Word peuvent faciliter la communication de masse avec des entités telles que les clients et les fournisseurs. Par exemple, vous pouvez créer des brochures pour alerter les clients sur une promotion de vente, des lettres pour informer les fournisseurs d'une nouvelle politique d'achat ou des invitations à attirer des contacts pour un événement à venir.
@@ -38,7 +38,7 @@ Lorsque vous configurez le modèle dans Word, sur l'onglet **Publipostage** vous
 Lorsque votre modèle Word est prêt, sur la page **Modèles Word**, vous pouvez choisir **Appliquer** pour générer les documents. Vous pouvez créer un document contenant des sections pour chaque entité ou fractionner l'opération pour créer un document pour chaque entité.
 
 ## <a name="to-create-a-word-template"></a>Pour créer un modèle Word
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modèles Word**, puis choisissez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuilles Word**, puis choisissez le lien associé.
 2. Suivez les étapes du guide de configuration assistée. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 ## <a name="see-also"></a>Voir aussi

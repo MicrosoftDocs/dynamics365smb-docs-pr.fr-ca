@@ -1,6 +1,6 @@
 ---
-title: Configuration d'une analyse de trésorerie| Microsoft Docs
-description: Configurez les graphiques du tableau de bord Comptes pour aider à analyser le flux de trésorerie dans vos activités, y compris les dépenses et les recettes, liquidités, et les règlements entrants moins les règlements sortants.
+title: Configuration d’une analyse de trésorerie
+description: Utilisez les graphiques du tableau de bord Comptes pour aider à analyser le flux de trésorerie dans vos activités, y compris les dépenses et les recettes, liquidités, et les règlements entrants moins les règlements sortants.
 services: project-madeira
 documentationcenter: ''
 author: bholtorf
@@ -10,14 +10,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: money flow, expense and income, liquidity, cash receipts minus cash payments, Cartera, funds
-ms.date: 04/01/2021
+ms.date: 06/16/2021
 ms.author: bholtorf
-ms.openlocfilehash: e197155f272d4435f838fbc67fb336f339c1a290
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 919c5cc5781f0f93fbfb79b9e306e42180eb6968
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5783682"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6446300"
 ---
 # <a name="setting-up-cash-flow-analysis"></a>Configuration d'une analyse de trésorerie
 Si vous souhaitez de l'aide pour décider quelles opérations effectuer avec votre trésorerie, consultez les graphiques dans le tableau de bord Comptable :  
@@ -70,14 +70,14 @@ Pour utiliser le guide de configuration assistée :
 
 1. Dans le tableau de bord Comptable, sous le graphique **Prévisions de trésorerie**, sélectionnez l'action **Ouvrir la configuration assistée**.  
 2. Complétez les champs de chaque étape du guide.  
-3. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prévision de la trésorerie**, puis sélectionnez le lien associé.
+3. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prévision de la trésorerie**, puis sélectionnez le lien associé.
 4. Sur la page **Prévision de la trésorerie**, choisissez l'action **Recalculer la prévision**.  
 
 Pour utiliser une procédure manuelle :  
 
 1. Dans le tableau de bord Comptable, recherchez **Configuration trésorerie**, puis sélectionnez le lien associé.  
 2. Affichez l'organisateur **Azure AI**, puis activez la case à cocher **Azure AI activé**.  
-3. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prévision de la trésorerie**, puis sélectionnez le lien associé.
+3. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prévision de la trésorerie**, puis sélectionnez le lien associé.
 4. Sur la page **Prévision de la trésorerie**, choisissez l'action **Recalculer la prévision**.  
 
 > [!TIP]  
@@ -123,7 +123,7 @@ Vous pouvez aussi utiliser votre propre service Web prévisionnel basé sur un m
 3. Utilisez votre compte Microsoft pour enregistrer un espace de travail, puis copiez le modèle.  
 4. Exécutez le modèle, et publiez-le comme service Web.  
 5. Notez l'URL d'API et la clé d'API. Vous allez utiliser ces informations d'identification pour une configuration de trésorerie.  
-6. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration de la trésorerie**, puis sélectionnez le lien associé.  
+6. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration de trésorerie**, puis sélectionnez le lien associé.  
 7. Développez l'organisateur **Azure AI** et renseignez les champs.  
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/forecast-cash-flow-dynamics-365-business-central/index)

@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: cancel, undo, correct
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 5dbb243225e4e5362a715165f28dff00c6fbf47b
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: e43f5c5dd2a785a0268b9cf61794de1f8fa73a9a
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5772764"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6445561"
 ---
 # <a name="process-purchase-returns-or-cancellations"></a>Traiter les retours ou annulations d'achats
 
@@ -50,7 +50,7 @@ Pour plus d'informations, voir [Détails de conception : Évaluation stock](des
 
 ## <a name="to-create-a-purchase-credit-memo-from-a-posted-purchase-invoice"></a>Pour créer une note de crédit achat à partir d'une facture achat reportée
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures achat reportées**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures achat reportées**, puis sélectionnez le lien associé.  
 2. Sur la page **Factures achat reportées**, sélectionnez la facture achat reportée que vous souhaitez inverser, puis sélectionnez l'action **Créer une note de crédit de correction**.
 
     La plupart des champs de l'en-tête de la note de crédit achat sont renseignés avec les informations de la facture achat reportée. Vous pouvez modifier tous les champs, par exemple avec de nouvelles informations qui reflètent l'entente de retour.
@@ -71,7 +71,7 @@ La note de crédit achat est supprimée et remplacée par un nouveau document da
 
 ## <a name="to-create-a-purchase-credit-memo-by-copying-a-posted-purchase-invoice"></a>Pour créer une note de crédit achat en copiant une facture achat reportée
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de crédit achat**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de crédit achat**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau** pour ouvrir un nouvel avoir achat vierge.
 3. Dans le champ **Fournisseur**, entrez le nom d'un fournisseur existant.
 4. Sélectionnez l'action **Copier à partir du document**.
@@ -83,7 +83,7 @@ La note de crédit achat est supprimée et remplacée par un nouveau document da
 
 ## <a name="to-create-a-purchase-return-order-based-on-one-or-more-posted-purchase-documents"></a>Pour créer un retour achat à partir d'un ou de plusieurs documents achat reportés
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Retours achat**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Retours achat**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 3. Renseignez les champs dans le raccourci **Général** selon les besoins.
 4. Dans le raccourci **Lignes**, renseignez les lignes manuellement, ou copiez des informations d'autres documents pour renseigner les lignes automatiquement :
@@ -146,7 +146,7 @@ Si vous recevez de votre fournisseur des articles que vous ne souhaitez pas, par
 
 Vous pouvez reporter ce coût d'achat réduit en tant que frais annexes sur une note de crédit ou un retour et le lier à la réception reportée. Ce qui suit décrit la procédure pour un retour achat, mais la même procédure s'applique à une note de crédit achat.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de crédit achat**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de crédit achat**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau** pour ouvrir un nouvel avoir achat vierge.  
 3. Renseignez l'en-tête note de crédit à l'aide des informations relatives au fournisseur qui vous a envoyé le rabais.  
 4. Dans le champ **Type** du raccourci **Lignes**, sélectionnez **Frais annexes**.  
@@ -172,7 +172,7 @@ Lorsque des livraisons retour sont regroupées sur une note de crédit et report
 > [!NOTE]  
 > Dans la procédure suivante, on suppose qu'il existe plusieurs retours achat pour le fournisseur et qu'ils ont été reportés comme étant livrés.     
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de crédit achat**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de crédit achat**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 3. Sur le raccourci **Général**, complétez les champs, comme nécessaire.  
 4. Choisissez l'action **Extraire les lignes de livraison de retour**.  
@@ -183,7 +183,7 @@ Lorsque des livraisons retour sont regroupées sur une note de crédit et report
 
 ### <a name="to-remove-open-purchase-return-orders-after-combined-return-shipment-posting"></a>Pour supprimer des retours achat ouverts après le report de livraisons retour groupées  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Supprimer les retours achat facturés**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Supprimer retours achat facturé**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**.  
 3. Vous pouvez également supprimer chacun des retours achat manuellement.
 

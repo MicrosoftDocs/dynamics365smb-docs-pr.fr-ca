@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: numbers, numbering
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 75bcb6763c9253bba72ca7f1ff980222263b4e9c
-ms.sourcegitcommit: 8b44a7bcba45ae852cc6dd07b90b9a383c1be488
+ms.openlocfilehash: 3e2404a0ab9de8a761d5721da669004e393cf55c
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "5870008"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6446007"
 ---
 # <a name="create-number-series"></a>Créer des séries de numéros
 Pour chaque compagnie que vous configurez, vous devez affecter des codes d'identification uniques aux éléments tels que les comptes du grand livre, les comptes client et fournisseur, les factures et d'autres documents. La numérotation est importante, pas uniquement pour l'identification. Un système de numérotation bien conçu facilite également la gestion et l'analyse de la compagnie et permet de réduire les erreurs de saisie des données.
@@ -60,7 +60,7 @@ Lorsque vous ouvrez un nouveau document ou une nouvelle fiche pour lequel il exi
 > Si vous devez activer la numérotation manuelle, par exemple, les nouvelles fiches article qui ont été créées avec un processus de migration des données pour lesquelles le champ **N°** est masqué par défaut, allez ensuite sur la page **Configuration de l'inventaire** et choisissez le champ **N° article** pour ouvrir et définir la série de numéros sur **N° manuels**.
 
 ## <a name="to-create-a-new-number-series"></a>Pour créer des séries de numéros
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Souches de n°**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Souches de n°**, puis choisissez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Sur la nouvelle ligne, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Sélectionnez l'option **Lignes**.
@@ -69,7 +69,7 @@ Lorsque vous ouvrez un nouveau document ou une nouvelle fiche pour lequel il exi
 
 ## <a name="to-set-up-where-a-number-series-is-used"></a>Pour définir l'emplacement d'utilisation de la série de numéros
 La procédure suivante indique comment définir des séries de numéros pour la zone Ventes. La procédure est identique pour d'autres secteurs.
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Ventes**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Paramètres ventes**, puis choisissez le lien associé.
 2. Sur la page **Ventes**, dans le raccourci **Série de numéros**, sélectionnez la série de numéros souhaitée pour chaque fiche ou document vente.
 
 Le numéro sélectionné est désormais utilisé pour renseigner le champ **N°** sur la fiche ou le document en question, en fonction des paramètres définis sur la ligne série de numéros.
@@ -77,7 +77,7 @@ Le numéro sélectionné est désormais utilisé pour renseigner le champ **N°*
 ## <a name="to-create-relationships-between-number-series"></a>Pour créer des liens entre des séries de numéros
 Si vous avez défini plusieurs codes série de numéros pour un même type d'informations ou de transactions de base, vous pouvez créer des liens entre ces codes. Cette fonction peut vous aider à choisir parmi ces codes lorsque vous utilisez un numéro.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Souches de n°**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Souches de n°**, puis choisissez le lien associé.
 2. Sélectionnez la ligne avec la souche de numéros pour laquelle vous souhaitez créer des relations, puis cliquez sur **Relations**.
 3. Dans le champ **Code souche**, entrez le code de la souche de numéros à lier à la souche sélectionnée à l'étape 2.
 4. Ajoutez une ligne pour chaque code à lier à la série de numéros sélectionnée.
