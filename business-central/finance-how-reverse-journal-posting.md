@@ -1,5 +1,5 @@
 ---
-title: Annuler un report en reportant une écriture de contrepassation | Microsoft Docs
+title: Annuler un report en reportant une écriture de contrepassation
 description: Si vous avez effectué une erreur de report dans le journal général, vous pouvez utiliser la fonction Inverser la transaction pour annuler le report avec une piste d'audit correcte.
 services: project-madeira
 documentationcenter: ''
@@ -10,17 +10,17 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: reimbursement
-ms.date: 04/01/2021
+ms.date: 07/22/2021
 ms.author: edupont
-ms.openlocfilehash: fc759d1fdb08b847028bf4a24157c17c4d2f74e1
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: c23dcaed561997b5c0f38b4cd5ad5631b8519706
+ms.sourcegitcommit: e904da8dc45e41cdd1434111c15e2a9d9edd3fa2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6444472"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6660166"
 ---
 # <a name="reverse-journal-postings-and-undo-receiptsshipments"></a>Inverser des reports journal et annuler des réceptions/livraisons
-Pour annuler un report journal erroné, sélectionnez l'écriture et créez une écriture inverse (écritures identiques aux écritures originales mais avec le signe opposé dans le champ de montant) portant les mêmes numéro de document et date de report que l'écriture d'origine. Une fois l'écriture inversée, créez l'écriture correcte.
+L’inversion des reports journal n’est pas seulement utilisée pour corriger les erreurs, mais elle peut également être utilisée pour effacer une ancienne écriture de régularisation avant d’en saisir une nouvelle, par exemple. Vous sélectionnez l’écriture et créez une écriture de contrepassation (écritures identiques aux écritures originales mais avec le signe opposé dans le champ du montant) portant le même numéro de document et la même date de report que l’écriture d’origine. Une fois l'écriture inversée, créez l'écriture correcte.
 
 Vous pouvez uniquement inverser les écritures reportées à partir d'une ligne journal général. Une écriture ne peut être inversée qu'une seule fois.
 

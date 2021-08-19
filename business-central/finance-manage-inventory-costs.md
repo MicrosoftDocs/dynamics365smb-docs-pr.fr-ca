@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: a0b466979f749e2d42afac06899a9c079f23ff56
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.openlocfilehash: 561401c985fc0e2f25c4f6e719252d19e76e7fe8
+ms.sourcegitcommit: 769d20d299155cba30c35636d02b2ef021e4ecc1
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6321897"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "6688353"
 ---
 # <a name="managing-inventory-costs"></a>Gestion des coûts de l'inventaire
 La gestion des coûts, aussi appelée « évaluation des coûts », se charge de l'enregistrement et du report des coûts d'exploitation de la compagnie. Inclut le report des coûts de fabrication et des coûts inventaire qui constituent la valeur des articles.   
@@ -37,7 +37,8 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Utiliser les fonctions d'évaluation des coûts spéciales pour les transactions article quotidiennes dans les opérations liées aux articles.|[Gestion des coûts inventaire et des coûts de fabrication](finance-handle-inventory-and-manufacturing-costs.md)|  
 |Actualisez périodiquement les coûts standard des composantes, dans les nomenclatures d'assemblage ou de production, et remontez les nouveaux coûts dans l'article parent.|[Mise à jour des coûts standard](finance-how-to-update-standard-costs.md)|
 |Visualiser et modifier manuellement certaines écritures affectation article qui sont créées automatiquement lors des transactions d'inventaire.|[Supprimer et appliquer à nouveau des écritures article](finance-how-to-remove-and-reapply-item-entries.md)|
-|Effectuer un contrôle de fin d'exercice et des tâches de création de rapports, comme le calcul de l'inventaire et le report des coûts dans le grand livre.|[Rapprocher les coûts de l'inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md)|
+|Effectuer un contrôle de clôture d’exercice et des tâches de création de rapports, tels que le calcul de la valeur de l’inventaire et le report des coûts dans le grand livre.|[Génération de rapports sur les coûts et rapprochement avec le grand livre](finance-report-costs-and-reconcile-with-the-general-ledger.md)|
+|Découvrez comment vous pouvez utiliser la file d’attente des travaux pour déplacer les tâches d’ajustement du coût de l’inventaire ou de rapprochement avec le grand livre en arrière-plan.|[Ajuster et rapprocher le coût de l’inventaire avec le grand livre avec la file d’attente des travaux](finance-manage-inventory-costs.md)|
 
 ## <a name="see-also"></a>Voir aussi  
  [Finance](finance.md)  

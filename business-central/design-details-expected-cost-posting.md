@@ -1,5 +1,5 @@
 ---
-title: 'Détails de conception : report de coûts prévus | Microsoft Docs'
+title: Détails de conception - report du coût prévu
 description: Les coûts prévus représentent l'estimation, par exemple, du coût d'un article acheté que vous enregistrez avant la réception de la facture de cet article.
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/08/2021
+ms.date: 07/20/2021
 ms.author: edupont
-ms.openlocfilehash: 181b0168dc73aba7bb4d09b7cda7a2ce7028e142
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: 1327eaf9a26ff2bbf8aa3dab8f2e7f64b8f00ab4
+ms.sourcegitcommit: ecbabd2d0fdf2566cea4a05a25b09ff6ca6256c6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215288"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6649847"
 ---
 # <a name="design-details-expected-cost-posting"></a>Détails de conception : report du coût prévu
 Les coûts prévus représentent l'estimation, par exemple, du coût d'un article acheté que vous enregistrez avant la réception de la facture de cet article.  
@@ -29,10 +29,22 @@ Les coûts prévus représentent l'estimation, par exemple, du coût d'un articl
 
  Pour prendre en charge le travail de rapprochement et de traçabilité, l'écriture valeur facturée montre que le coût indiqué prévu a été reporté pour équilibrer les comptes provisoires.  
 
-## <a name="example"></a>Exemple :  
- L'exemple suivant indique le coût prévu si les cases à cocher **Report coûts automatique** et **Report coût prévu au GL** sont sélectionnées sur la page **Configuration inventaire**.  
+## <a name="prerequisites-for-posting-expected-costs"></a>Conditions préalables au report des coûts prévus
 
- Vous reportez un bon de commande comme reçu. Le coût prévu est 95,00 $.  
+Pour rendre possible le report des coûts prévus, vous devez procéder comme suit :
+1. Dans la page **Configuration inventaire**, cochez la case **Report coûts automatique** et la case **Report coût prévu au GL**.
+2. Configurez les comptes provisoires à utiliser pendant le processus de report des coûts prévus.  
+
+  Dans la page **Configuration report inventaire**, vérifiez les champs **Compte inventaire** et **Compte inventaire (attente)** pour le **Code d’emplacement et Code groupe de report inventaire** de l’article que vous allez acheter. Pour en savoir plus sur ces comptes, voir [Détails de conception - Comptes du grand livre](design-details-accounts-in-the-general-ledger.md).
+3. Dans la page **Configuration report**, vérifiez le champ **Compte ajust. inventaire (attente)** pour le **Groupe de report de marché** et le **Groupe de report de produit** que vous utiliserez.
+4. Lorsque vous créez un bon de commande, la valeur par défaut est que le champ **N° facture fournisseur** est requis. Vous devez le désactiver dans la page **Configuration achats**, en désélectionnant le champ **N° doc. ext. obligatoire**.
+
+## <a name="example"></a>Exemple :  
+
+> [!NOTE]  
+> Les numéros de compte utilisés dans cet exemple servent uniquement de référence et seront différents dans votre système. Configurez-les comme indiqué dans les conditions préalables ci-dessus.
+
+Vous reportez un bon de commande comme reçu. Le coût prévu est 95,00 $.  
 
  **Écritures de valeur**  
 
@@ -73,7 +85,7 @@ Les coûts prévus représentent l'estimation, par exemple, du coût d'un articl
 
  **Écritures journal général**  
 
-|Date de report|Compte général|N° compte (démonstration Fr-FR)|Montant|N° séquence |  
+|Date de report|Compte du grand livre|N° de compte (uniquement des exemples !)|Montant|N° séquence |  
 |------------------|------------------|---------------------------------|------------|---------------|  
 |15/01/20|Compte ajustement inventaire (provisoire)|5530|95.00|4|  
 |15/01/20|Compte inventaire (attente)|2131|-95,00|3|  

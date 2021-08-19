@@ -1,6 +1,6 @@
 ---
 title: Reporter plusieurs documents en même temps
-description: Plutôt que de valider des documents individuels un à un, vous pouvez sélectionner plusieurs documents non reportés dans une liste pour report par lot immédiate ou programmée.
+description: Découvrez comment sélectionner plusieurs documents non reportés dans une liste pour un report par lots immédiat ou programmé dans Business Central.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.workload: na
 ms.reviewer: edupont
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 33e21834dc1417f5177b167e911e002ca56f648c
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 4920e363af9b35afb4369682ca0310f095b02bb0
+ms.sourcegitcommit: ecbabd2d0fdf2566cea4a05a25b09ff6ca6256c6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6446057"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6649697"
 ---
 # <a name="post-multiple-documents-at-the-same-time"></a>Reporter plusieurs documents en même temps
 
@@ -78,13 +78,13 @@ Si la file d'attente des travaux ne peut pas reporter le document de vente, l'é
 1. Dans le document que vous avez essayé de reporter avec le report en arrière-plan, choisissez le champ **État de la file d'attente des travaux**, qui contient **Erreur**.
 2. Examinez le message d’erreur et résolvez le problème.
 
-Sinon, vous pouvez vérifier sur la page **Écritures journal file d'attente des travaux** si le document de vente a été reporté avec succès. Pour plus d'informations, voir [Pour afficher l'état ou les erreurs dans la file d'attente](admin-job-queues-schedule-tasks.md#to-view-status-or-errors-in-the-job-queue).
+Sinon, vous pouvez vérifier sur la page **Écritures journal file d’attente des travaux** si le document de vente a été reporté avec succès. Pour plus d’informations, consultez la section [Surveiller la file d’attente des travaux](#monitor-the-job-queue).
 
 ## <a name="to-create-a-job-queue-entry-for-batch-posting-of-sales-orders"></a>Pour créer une écriture file d'attente des travaux pour le report en lot des documents de vente
 
 Sinon, vous pouvez reporter les reports à des heures pratiques pour votre organisation. Par exemple, il peut sembler raisonnable dans votre activité d’exécuter certaines routines lorsque la plupart de la saisie de données de la journée est achevée. Vous pouvez effectuer cette opération en configurant la file d'attente des travaux pour exécuter différents rapports de report en lot, par exemple, **Reporter en lot documents de vente**, **Reporter en lot factures vente** et des rapports similaires. [!INCLUDE[prod_short](includes/prod_short.md)] prend en charge le report en arrière-plan de tous les documents de types ventes, achats et service.
 
-La procédure suivante décrit comment définir le rapport **Reporter en lot documents de vente** pour un report automatique des documents de vente lancés à 16 h 00 les jours de semaine.  
+La procédure suivante décrit comment définir le rapport **Exécuter en lot documents de vente** pour un report automatique des documents de vente lancés à 16 h 00 les jours de semaine.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures file d’attente des travaux**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -117,6 +117,11 @@ La procédure suivante décrit comment définir le rapport **Reporter en lot doc
 
 Les documents de vente dans les filtres définis sont à présent reportés chaque jour de la semaine à 16 h 00.
 
+## <a name="monitor-the-job-queue"></a>Surveiller la file d’attente des travaux
+
+Si vous configurez le report en arrière-plan avec les files d’attente des travaux, convertissez-le en une tâche périodique pour surveiller la file d’attente des travaux et détecter les éventuels problèmes. Vous pouvez suivre l’état dans la page **Écritures file d’attente des travaux**. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).  
+
+En tant qu’administrateur, vous pouvez utiliser [Application Insights](/azure/azure-monitor/app/app-insights-overview) pour recueillir et analyser la télémétrie que vous pouvez utiliser pour identifier les problèmes. Pour plus d’informations, consultez [Surveillance et analyse de la télémétrie](/dynamics365/business-central/dev-itpro/administration/telemetry-overview) dans le contenu pour développeurs et administrateurs.  
 
 ## <a name="see-also"></a>Voir aussi
 
