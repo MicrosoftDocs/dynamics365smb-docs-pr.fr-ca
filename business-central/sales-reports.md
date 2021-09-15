@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.search.keywords: reporting
 ms.date: 06/01/2021
 ms.author: andreipa
-ms.openlocfilehash: 76f93a75f9f7fd52b2495d75bffe648d53f9c844
-ms.sourcegitcommit: a486aa1760519c380b8cdc8fdf614bed306b65ea
+ms.openlocfilehash: b738eeef9771185c6907d963f368c462ae02f2d2
+ms.sourcegitcommit: e891484daad25f41c37b269f7ff0b97df9e6dbb0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6543257"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7440401"
 ---
 # <a name="sales-reports-and-analytics-in-business-central"></a>Rapports et analyses de vente dans Business Central
 
@@ -36,6 +36,7 @@ Le tableau suivant décrit certains des principaux rapports dans les rapports de
 |**État livraison entrepôt**|7313|Ce rapport peut être utilisé pour tous les emplacements pour lesquels le champ **Livraison requise** est sélectionné. Le rapport **État livraison entrepôt** vous montre tous les documents de livraison d’entrepôt non reportés, y compris les emplacements, les codes de zone, l'état document, les quantités, etc. Ce rapport est parfait pour avoir une vue d’ensemble.|
 |**Liste des prélèvements inventaire**|813|Affiche la liste des documents de vente dans lesquels un article est inclus. Les informations suivantes sont données pour chaque article : ligne document de vente avec le nom du client, code de variante, code d'emplacement, code de zone, date de livraison, quantité à livrer et unité de mesure. La quantité à livrer est totalisée pour chaque article. Le rapport peut être utilisé lorsque des articles vont être retirés de l'inventaire.<br>**Remarque** : ce rapport n’est pas disponible pour les fonctionnalités d’entrepôt avancées.|
 |**Commandes en retard vente inventaire**|718|Affiche une liste qui comprend les lignes commande dont la date de livraison est dépassée. Les informations suivantes sont données pour chaque article d’une commande : numéro, nom du client, numéro de téléphone du client, date de livraison, quantité commandée et quantité sur commande en attente. Le rapport indique aussi s’il y a d’autres articles en commande en souffrance pour le client.|
+|**Détails de commande d'inventaire**|708|Affiche la liste des commandes qui n’ont pas encore été livrées, ainsi que les articles commandés. Il indique le numéro de commande, le nom du client, la date de livraison, la quantité commandée, la quantité retardée, la quantité en attente, la quantité ouverte et le prix unitaire, ainsi que les pourcentages d'escompte possibles et leur montant. La quantité sur commande en attente, la quantité ouverte et le montant sont totalisés pour chaque article. Utilisez le rapport pour visualiser s’il y a des problèmes de livraison ou s’il risque d’y en avoir.|
 
 
 

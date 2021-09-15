@@ -6,14 +6,14 @@ metadata:
   ms.service: dynamics365-business-central
   ms.topic: conceptual
   ms.search.keywords: FAQ, email, Microsoft 365, subscription, subscribe, trial, plan, application area, experience, support, buy, upgrade, extend
-  ms.date: 04/01/2021
+  ms.date: 08/24/2021
   ms.author: edupont
-  ms.openlocfilehash: 4d4864b0baa6b8455e51931701d72eea8923545f
-  ms.sourcegitcommit: 0c8428e1468d4f5c18fbe35c79d6bbe509b79620
+  ms.openlocfilehash: 3cc1b5fc394d63cd3741337263eafecdfa878fbb
+  ms.sourcegitcommit: e891484daad25f41c37b269f7ff0b97df9e6dbb0
   ms.translationtype: HT
   ms.contentlocale: fr-CA
-  ms.lasthandoff: 06/01/2021
-  ms.locfileid: "6124013"
+  ms.lasthandoff: 08/27/2021
+  ms.locfileid: "7440701"
 title: Foire aux questions sur l’utilisation de Business Central
 summary: "Cette section contient des réponses aux questions les plus fréquentes sur l'inscription à une version d'évaluation, l'achat d'un abonnement et l'utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]. Vous pouvez également apprendre comment obtenir le support technique.  \n"
 sections:
@@ -67,6 +67,10 @@ sections:
       Quels sont les ententes de niveau de service pour le nuage?
     answer: >
       [!INCLUDE [service-terms](includes/service-terms.md)]
+  - question: >
+      À quelle fréquence Business Central Online est-il mis à jour ?
+    answer: >
+      [!INCLUDE[prod_short](includes/prod_short.md)] Online est un service qui se compose d’une plateforme et de fonctionnalités commerciales gérées par Microsoft. De nombreux partenaires Microsoft fournissent des fonctionnalités commerciales supplémentaires, par exemple pour répondre à des besoins spécifiques du secteur ou de la localisation. Les fonctionnalités commerciales et les composantes de service sont surveillées en permanence et mises à jour le cas échéant. Vous pouvez toujours consulter le [plan de versions](/dynamics365/release-plans/) pour obtenir un aperçu des nouvelles fonctionnalités et des fonctionnalités à venir. Pour plus d’informations, consultez [Présentation du service pour Business Central Online](/dynamics365/business-central/dev-itpro/service-overview) (en anglais seulement) et [Nouveautés et prévisions](product-news.md).
   - question: >
       Notre administrateur m’a déplacé vers un autre plan pour me donner un autre rôle, mais je vois toujours le même écran d’accueil dans Business Central.
     answer: "C'est un peu compliqué, mais il semble que votre administrateur n'a pas modifié votre le rôle attribué et a affecté des groupes d'utilisateurs qui correspondent à la nouvelle licence. Votre accès à [!INCLUDE[prod_short](includes/prod_short.md)] est essentiellement déterminé par le type de plan (licence) que vous avez, cela définit les autorisations, le rôle attribué et l'écran d'accueil par défaut. Vous pouvez modifier votre rôle manuellement dans Mes paramètres, mais si vous êtes passé à un autre plan (du plan Marché au plan Membres de l'équipe, par exemple), vous pouvez voir l'ancien écran d'accueil car vos autorisations n'ont pas été modifiées.  \n"

@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: warehouse, stock
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 24337d2cd96e4511f1917980c94af407381e96d2
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.openlocfilehash: 022d48ad3069729736794976301db7fe2c6a6b47
+ms.sourcegitcommit: 04055135ff13db551dc74a2467a1f79d2953b8ed
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6325328"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7482282"
 ---
 # <a name="how-to-manage-inventory"></a>Comment gérer l’inventaire
 Pour chaque produit physique que vous commercialisez, vous devez créer une fiche article de type **Stock**. Les articles que vous proposez aux clients, mais que vous n'avez pas en inventaire, peuvent être enregistrés comme articles de catalogue. Vous pouvez ensuite les convertir en articles d'inventaire, le cas échéant. Vous pouvez augmenter ou diminuer la quantité d'un article en inventaire en reportant directement les écritures de l'article, par exemple, après un comptage physique ou si vous n'enregistrez pas les achats.
@@ -28,7 +28,7 @@ Pour accroître votre aperçu d'articles et pour vous aider à les trouver, vous
 > [!NOTE]
 > Le traitement physique des articles est appelé Activités entrepôt. Pour plus d'informations, voir [Gestion d'entrepôt](warehouse-manage-warehouse.md).
 
-La planification d'articles pour répondre à la demande est couverte dans le cadre de la fonctionnalité de planification de l'offre. Pour plus d'informations, voir [Planification](production-planning.md).  
+La planification d’articles pour répondre à la demande est couverte dans le cadre de la fonctionnalité de planification de l’offre. Pour plus d'informations, voir [Planification](production-planning.md).  
 
 ## <a name="inventory-reconciliation"></a>Rapprochement inventaire
 Lorsque vous reportez des transactions inventaire, tels que des livraisons vente, des factures achat ou des ajustements inventaire, les coûts article modifiés sont enregistrés dans les écritures valeur article. Pour refléter ces modifications de la valeur inventaire dans vos livres financiers, les coûts inventaire sont automatiquement reportés dans les comptes inventaire associés dans le grand livre. Pour chaque transaction inventaire que vous reportez, les valeurs appropriées sont reportées dans le compte inventaire, le compte ajustement et le compte variation inventaire dans le grand livre. Pour plus d'informations, voir [Rapprocher les coûts de l'inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md).
@@ -51,9 +51,10 @@ Le tableau suivant présente les tâches associées.
 |Afficher la disponibilité des articles par emplacement, par période, par événement de vente ou d'achat, ou encore en fonction de leur utilisation dans les nomenclatures d'assemblage ou de production.|[Voir la disponibilité des articles](inventory-how-availability-overview.md)|
 |Transférez des articles en inventaire entre des emplacements avec des ordres de transfert pour gérer les activités entrepôt ou avec le journal reclassement article.|[Transfert d'inventaire entre des emplacements](inventory-how-transfer-between-locations.md)|
 |Réservez des articles en inventaire ou entrants pour les documents de vente, les bons de commande, les commandes service, les ordres d'assemblage ou les bons de production.|[Réserver des articles](inventory-how-to-reserve-items.md)|
-|Affectez des numéros de série ou de lot à n'importe quel document ou ligne journal entrant ou sortant, par exemple pour suivre les articles dans le cas d'un rappel.|[Utiliser les numéros de lot et de série](inventory-how-work-item-tracking.md)|
-|Configurer la description d'un article propre à un fournisseur ou à un client sur votre fiche article, afin de pouvoir insérer rapidement leur description de l'article dans les documents commerciaux.|[Utiliser les références externes article](inventory-how-use-item-cross-refs.md)|
+|Configurez la traçabilité afin de pouvoir suivre les numéros de série des articles, par exemple pour suivre les articles en cas de rappel.|[Configuration du suivi des articles avec les numéros lot, de série et paquet](inventory-how-setup-item-tracking.md)|
+|Attribuez des numéros de série ou de lot à n'importe quel document ou ligne journal sortant ou entrant.|[Utiliser les numéros de lot et de série](inventory-how-work-item-tracking.md)|
 |Rechercher où un numéro de série ou de lot a été utilisé dans sa chaîne d'approvisionnement, par exemple dans les situations de rappel.|[Tracer des articles - Articles suivis](inventory-how-to-trace-item-tracked-items.md)|
+|Configurer la description d'un article propre à un fournisseur ou à un client sur votre fiche article, afin de pouvoir insérer rapidement leur description de l'article dans les documents commerciaux.|[Utiliser les références externes article](inventory-how-use-item-cross-refs.md)|
 |Bloquez des articles pour empêcher leur saisie dans des lignes vente ou achat, ou leur report dans n'importe quelle transaction.|[Bloquer les articles](inventory-how-block-items.md)|
 |Gérez les opérations commerciales dans les bureaux de vente, les départements d'achat ou les bureaux de planification d'usine pour plusieurs emplacements.|[Utiliser les centres de gestion](inventory-responsibility-centers.md)|
 |Utilisez des ressources avec des compétences spécifiques pour divers services et éléments de service.|[Configurer l'affectation des ressources](service-how-setup-resource-allocation.md)|

@@ -10,18 +10,18 @@ ms.workload: na
 ms.search.keywords: IC, group, consolidation, affiliate, subsidiary
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 9f43141d4280fcadedc8072194f0d4d52e50cdf2
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 4de43cc0430522b6d4e3566e43eaba945cd2dff2
+ms.sourcegitcommit: e891484daad25f41c37b269f7ff0b97df9e6dbb0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6441278"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7440476"
 ---
 # <a name="set-up-intercompany-transaction-posting"></a>Configurer le report des transactions intercompagnies
 
-Pour envoyer une transaction (ligne journal vente) à partir d'une compagnie et créer automatiquement la transaction correspondante (ligne journal achat) dans la compagnie partenaire, les compagnies concernées doivent s'accorder sur un plan comptable et un ensemble de dimensions communs à utiliser pour les transactions intercompagnies. Le plan de compte intercompagnie peut être, par exemple, une version simplifiée du plan de compte de la compagnie mère. Chaque compagnie associe son plan de compte au plan de compte intercompagnie partagé, ainsi que ses dimensions aux dimensions intercompagnies.  
+Pour envoyer une transaction (ligne journal vente) à partir d’une compagnie et créer automatiquement la transaction correspondante (ligne journal achat) dans la compagnie partenaire, les compagnies concernées doivent s’accorder sur un plan comptable et un ensemble de dimensions communs à utiliser pour les transactions intercompagnies. Le plan de compte intercompagnie peut être, par exemple, une version simplifiée du plan de compte de la compagnie mère. Chaque compagnie associe son plan de compte au plan de compte intercompagnie partagé, ainsi que ses dimensions aux dimensions intercompagnies.  
 
-Vous devez également configurer un code partenaire Intercompagnie pour chaque compagnie partenaire, ce qui est convenu par toutes les compagnies, puis les affecter respectivement aux fiches client et fournisseur en renseignant le champ **Code partenaire intercompagnie**.  
+Vous devez également configurer un code partenaire intercompagnie pour chaque compagnie partenaire, ce qui est convenu par toutes les compagnies, puis les affecter respectivement aux fichiers client et fournisseur en renseignant le champ **Code partenaire intercompagnie**.  
 
 Si vous créez ou recevez des lignes intersociétés contenant des articles, vous pouvez soit utiliser vos propres numéros d'article, soit configurer ceux de votre partenaire pour chaque article concerné, dans le champ **Référence fournisseur** ou **N° article commun** de la fiche article. Vous pouvez également utiliser la fonction **Référence externe article** pour mapper vos numéros d’article avec vos descriptions de partenaires intercompagnies des articles, ouvrir la fiche de chaque article, puis choisir l’action **Références externes** afin de configurer les références externes entre vos descriptions d’article et celles du partenaire intercompagnie. Pour plus d'informations, voir [Utiliser les références externes article](inventory-how-use-item-cross-refs.md). 
 
@@ -34,7 +34,7 @@ Si vous créez des transactions de vente intercompagnies incluant des ressources
 ## <a name="to-set-intercompany-partners"></a>Pour paramétrer les partenaires intersociétés
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Partenaires intercompagnie**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
-3. Sur la page **Partenaire intercompagnies**, renseignez les champs si nécessaire.[!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+3. Sur la page **Partenaire intercompagnie**, renseignez les champs comme nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 > [!NOTE]
 > Dans [!INCLUDE[prod_short](includes/prod_short.md)] en ligne, vous ne pouvez pas utiliser les emplacements de fichiers pour transférer des transactions à vos partenaires, car [!INCLUDE[prod_short](includes/prod_short.md)] n’a pas accès à votre réseau local. Par conséquent, si vous choisissez **Emplacement du fichier** dans le champ **Type de transfert**, le champ **Chemin du dossier** n’est pas disponible. Au lieu de cela, le fichier sera téléchargé dans le dossier Téléchargements de votre ordinateur. Vous envoyez ensuite le fichier à une personne de la compagnie partenaire, par exemple par courriel. Pour un processus plus direct, nous vous recommandons de choisir plutôt **Courriel**.
@@ -51,7 +51,7 @@ Pour qu'un groupe de compagnies puisse créer des transactions intercompagnies, 
 
 Si votre compagnie est la compagnie mère qui contient le plan comptable intercompagnie qui servira de référence commune au groupe, suivez la procédure [Configurer le plan comptable intercompagnie de définition](intercompany-how-setup.md#to-set-up-the-defining-intercompany-chart-of-accounts).  
 
-Si votre compagnie est une filiale et que vous recevez un fichier XML contenant le tableau de compte commun intercompagnie, suivez la procédure [Pour importer le plan comptable intercompagnie](intercompany-how-setup.md#to-import-the-intercompany-chart-of-accounts).  
+Si votre compagnie est une filiale et que vous recevez un fichier XML contenant le plan comptable intercompagnie commun, suivez la procédure [Pour importer le plan comptable intercompagnie](intercompany-how-setup.md#to-import-the-intercompany-chart-of-accounts).  
 
 ### <a name="to-set-up-the-defining-intercompany-chart-of-accounts"></a>Pour configurer la définition du plan comptable intersociété
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable intersociété**, puis choisissez le lien associé.
@@ -65,7 +65,7 @@ Pour permettre à vos partenaires Intersociétés d'importer la définition du p
 3. Indiquez le nom et l'emplacement d'enregistrement du fichier XML, puis cliquez sur le bouton **Enregistrer**.  
 
 ### <a name="to-import-the-intercompany-chart-of-accounts"></a>Pour importer le plan comptable intersociétés  
-Lorsqu'un fichier existe pour la définition du plan comptable intersociété, les partenaires intersociétés peuvent l'importer pour vérifier qu'ils ont les mêmes comptes.  
+Lorsqu’un fichier existe pour la définition du plan comptable intercompagnie, les partenaires intercompagnies peuvent l’importer pour vérifier qu’ils ont les mêmes comptes.  
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable intersociété**, puis choisissez le lien associé.  
 2. Sur la page **Plan comptable intersociétés**, choisissez l'action **Importer**.  
 3. Sélectionnez le nom et l'emplacement du fichier XML, puis cliquez sur le bouton **Ouvrir**.  
@@ -82,7 +82,7 @@ Si les comptes du plan comptable intersociétés possèdent les mêmes numéros 
 3. Pour chaque compte du grand livre intercompagnie qui n'a pas été associé automatiquement, renseignez le champ **N° cpte G/L de correspondance**.  
 
 ## <a name="to-set-up-default-intercompany-partner-general-ledger-accounts"></a>Pour configurer des comptes généraux par défaut des partenaires intersociétés  
-Lorsque vous créez une ligne vente ou achat intercompagnie à envoyer comme transaction sortante, vous indiquez un compte du plan comptable intercompagnie en tant que compte par défaut associé au compte de la compagnie de votre partenaire sur lequel le montant est reporté. Sur la page **Plan comptable**, pour les comptes que vous utilisez souvent dans des lignes vente ou achat intercompagnies sortantes, vous pouvez spécifier un compte GL par défaut de partenaire Intercompagnie. Par exemple, pour les comptes client, vous pouvez entrer les comptes fournisseur correspondants du plan comptable intersociété.  
+Lorsque vous créez une ligne vente ou achat intercompagnie à envoyer comme transaction sortante, vous indiquez un compte du plan comptable intercompagnie en tant que compte par défaut associé au compte de la compagnie de votre partenaire sur lequel le montant est reporté. Sur la page **Plan comptable**, pour les comptes que vous utilisez régulièrement dans des lignes vente ou achat intercompagnies sortantes, vous pouvez spécifier un compte GL par défaut de partenaire intercompagnie. Par exemple, pour les comptes client, vous pouvez entrer les comptes fournisseur correspondants du plan comptable intersociété.  
 
 Ensuite, si vous indiquez un compte GL dans le champ **N° compte de solde** d'une ligne intercompagnie avec **Partenaire intercompagnie** dans le champ **Type de compte**, le champ **Compte du grand livre Partenaire IC** est renseigné automatiquement.  
 

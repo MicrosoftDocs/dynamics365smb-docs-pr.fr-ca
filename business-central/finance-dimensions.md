@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: analysis, history, track, business intelligence
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: ddcb3b3074a33fa279aa9a7cc0b04e5b5904fbac
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 982f61396f1d49eeaa688d580801c14ac9c33ccb
+ms.sourcegitcommit: 04055135ff13db551dc74a2467a1f79d2953b8ed
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6444697"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7482233"
 ---
 # <a name="working-with-dimensions"></a>Utilisation des axes analytiques
 Les dimensions sont des valeurs qui permettent de catégoriser les écritures afin de pouvoir les suivre et les analyser sur les documents, tels que les documents de vente. Les dimensions peuvent, par exemple, indiquer de quel projet ou département provient une écriture.  
@@ -53,6 +53,9 @@ Lorsque les dimensions et les valeurs sont configurées, vous pouvez définir le
 
 * Les **dimensions principales** sont utilisées comme filtres, par exemple, dans les rapports, les traitements en lot et les objets XMLport. Vous pouvez uniquement utiliser deux axes principaux, choisissez donc des axes que vous utilisez souvent.
 * Les **Raccourcis dimension** sont disponibles sous forme de champs dans les lignes journaux et document, et les écritures. Vous pouvez en créer huit au maximum.  
+
+> [!NOTE]
+> Après avoir utilisé une nouvelle dimension dans une écriture, telle qu’une ligne ou un nouvel enregistrement, vous ne pouvez pas supprimer la dimension, même si vous ne reportez pas l’écriture. Ceci est dû au fait que [!INCLUDE[prod_short](includes/prod_short.md)] crée immédiatement un ensemble de dimensions pour la ligne ou l’enregistrement. Pour plus d’informations, voir [Ensembles de dimensions](finance-dimensions.md#dimension-sets).
 
 ### <a name="to-set-up-default-dimensions-for-customers-vendors-and-other-accounts"></a>Pour configurer des dimensions par défaut pour les clients, les fournisseurs et d'autres comptes
 Vous pouvez attribuer une dimension par défaut pour un compte spécifique. La dimension est copiée sur le journal ou le document lorsque vous saisissez le numéro de compte dans une ligne, mais vous pouvez supprimer ou modifier le code sur la ligne si nécessaire. Vous pouvez également rendre une dimension obligatoire pour reporter une écriture avec un type de compte spécifique.  

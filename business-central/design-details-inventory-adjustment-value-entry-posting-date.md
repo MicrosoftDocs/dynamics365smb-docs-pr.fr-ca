@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 07/27/2021
+ms.date: 08/19/2021
 ms.author: edupont
-ms.openlocfilehash: 2a3d35672905094e714f85ac4758cbf39ec88cb6
-ms.sourcegitcommit: 769d20d299155cba30c35636d02b2ef021e4ecc1
+ms.openlocfilehash: 3dcda7f44797f52e50babe4dbec90e3b2be6f19d
+ms.sourcegitcommit: e891484daad25f41c37b269f7ff0b97df9e6dbb0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "6688324"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7440748"
 ---
 # <a name="design-details-posting-date-on-adjustment-value-entry"></a>Détails de conception : date de report de l'écriture valeur d'ajustement  
 
@@ -94,7 +94,7 @@ La première date de report autorisée est le premier jour de la première péri
 |Registre temps :       |         |
 |Format adresse local :|   Code postal      |  
 
- La première date de report autorisée est la date indiquée dans le champ Début période report : 1 septembre 2020.  
+ La première date de report autorisée est la date indiquée dans le champ Début période report : 10 septembre 2020.  
  Si les périodes d'inventaire et les dates de report autorisées dans la configuration du grand livre sont définies, la date la plus récente des deux définit la plage de dates de report autorisées.  
 
  Étape 3 : affectation d'une date de report autorisée.  
@@ -164,7 +164,7 @@ Tri : Code utilisateur
 
 |Code utilisateur  |Début période report  | Fin période report  |
 |---------|---------|--------|
-|<name> |  2020/09/11      |2020/09/30      |
+|USERNAME |  2020/09/10      |2020/09/30      |
 
  En attribuant à l’utilisateur une plage de dates de report autorisée plus large (ou identique) que dans la période d’inventaire ou la configuration grand livre, le conflit mentionné sera évité. L’écriture valeur d’ajustement avec la date de report du 10 septembre sera reportée avec succès avec cette configuration.
 
