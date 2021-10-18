@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 921eb4cc054ee61ffac543b68f19097927c511e1
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 4ec0aba869d2a171e12c42822ecf1726ed4ac81e
+ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6442120"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7587925"
 ---
 # <a name="remove-and-reapply-item-ledger-entries"></a>Supprimer et appliquer à nouveau des écritures article
 Sur la page **Feuille affectation**, vous pouvez visualiser et modifier manuellement certaines écritures affectation article qui sont créées automatiquement lors des transactions d'inventaire.  
@@ -40,8 +40,9 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
     - Vous pouvez supprimer des affectations à partir de plusieurs écritures en même temps dans la feuille de travail affectation. Toutefois, comme l'affectation d'écritures affecte l'ensemble des écritures qui sont disponibles pour l'affectation, vous ne pouvez pas créer une affectation pour plusieurs écritures à la fois.
     - La feuille de travail affectation ne peut pas effectuer une affectation dans le cas suivant : si la quantité en stock est insuffisante pour l'affectation, la feuille de travail affectation ne peut pas effectuer une affectation lorsque vous tentez d'affecter une écriture diminution d'inventaire sans informations de traçabilité sur une écriture augmentation d'inventaire avec informations de traçabilité.
 
-## <a name="to-remove-an-item-application-by-using-the-application-worksheet"></a>Pour supprimer une affectation article en utilisant le journal affectation  
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille affectation**, puis sélectionnez le lien associé.  
+## <a name="to-remove-an-item-application-by-using-the-application-worksheet"></a>Pour supprimer une affectation article en utilisant le journal affectation
+
+1.  Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 1.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille affectation**, puis sélectionnez le lien associé.  
 2.  La page **Feuille affectation** s'ouvre en affichant les écritures article existantes de tous les articles.  
 3.  Définissez les filtres du raccourci **Général** pour faciliter la recherche de l'écriture comptable article pour laquelle vous souhaitez modifier le lettrage.  
 4.  Sélectionnez l'écriture article, puis sélectionnez l'action **Écritures affectées**. La page **Voir écritures affectées - Écritures affectées** s'ouvre et affiche la ou les écritures article actuellement affectées pour l'écriture sélectionnée.  
@@ -54,10 +55,11 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
 > [!IMPORTANT]  
 >  Vous ne devez pas laisser des écritures affectation non affectées pendant de longues périodes, car d'autres utilisateurs ne peuvent pas traiter les articles concernés tant que vous n'affectez pas à nouveau les écritures affectation ou que vous fermez la page **Feuille affectation**. Le message d'erreur suivant s'affiche si vous essayez d'exécuter des tâches qui concernent une écriture d'affectation dont l'affectation a été supprimée manuellement :  
 >   
->  **Il est impossible d'effectuer cette action car l'affectation des écritures pour l'article <item> est annulée dans la feuille de travail affectation par l'utilisateur <user>.**  
+>  **Il est impossible d’effectuer cette action car l'affectation des écritures de l’article \<item\> est annulée dans la feuille affectation par l’utilisateur \<user\>.**  
 
-## <a name="to-reapply-an-item-application-by-using-the-application-worksheet"></a>Pour appliquer à nouveau une affectation article en utilisant le journal affectation  
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille affectation**, puis sélectionnez le lien associé.  
+## <a name="to-reapply-an-item-application-by-using-the-application-worksheet"></a>Pour appliquer à nouveau une affectation article en utilisant le journal affectation
+
+1.  Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 2.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille affectation**, puis sélectionnez le lien associé.  
 2.  La page **Feuille affectation** s'ouvre en affichant les écritures article existantes de tous les articles.  
 3.  Pour affecter à nouveau des écritures supprimées depuis l'ouverture de la feuille, sélectionnez l'écriture article que vous souhaitez affecter à nouveau et choisissez l'action **Affecter à nouveau**.  
 
@@ -72,7 +74,8 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
     >  Si vous avez choisi d'effectuer une affectation qui créerait une boucle infinie dans le processus d'ajustement des coûts, l'affectation que vous avez proposée n'est pas appliquée. Cela peut se produire lorsque les écritures originales ont créé un stock négatif. L'affectation n'est pas effectuée. Par conséquent, vous devez sélectionner une autre écriture pour l'affectation.  
 6.  Si, dans les **Paramètres stock**, le champ **Ajustement automatique des coûts** est défini sur **Toujours**, le traitement par lots d'ajustement des coûts est exécuté automatiquement après que vous avez effectué un relettrage. Sinon, exécutez le traitement en lot **Ajuster coûts - Écr. article** pour être sûr que tous les coûts sont actualisés.  
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
+
 [Fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal article](finance-how-to-close-open-item-ledger-entries-resulting-from-fixed-application-in-the-item-journal.md)  
  [Traiter les retours ou annulations d'achats](purchasing-how-process-purchase-returns-cancellations.md)  
  [Gestion des coûts inventaire](finance-manage-inventory-costs.md)   

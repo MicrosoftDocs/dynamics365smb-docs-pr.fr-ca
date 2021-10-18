@@ -12,15 +12,15 @@ ms.workload: na
 ms.search.keywords: posting setup, initialize
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 384bbdbc3630928298367956da133b0b488559b8
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: fc57271d36d02c3ca7dcb8ad30ce597d9f9a7673
+ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5783519"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7588817"
 ---
 # <a name="setting-up-posting-groups"></a>Configuration de groupes comptabilisation
-Les groupes comptabilisation mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes généraux. Ils vous font gagner du temps et permettent d'éviter des erreurs lorsque vous reportez des transactions. Les valeurs de transaction vont dans les comptes spécifiés dans le groupe de report pour cette entité particulière. Il vous suffit seulement d'avoir un plan comptable. Pour plus d'informations, reportez-vous à [Configuration du plan comptable](finance-setup-chart-accounts.md).  
+Les groupes de report mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes GL. Ils vous font gagner du temps et permettent d'éviter des erreurs lorsque vous reportez des transactions. Les valeurs de transaction vont dans les comptes spécifiés dans le groupe de report pour cette entité particulière. Il vous suffit seulement d'avoir un plan comptable. Pour plus d'informations, reportez-vous à [Configuration du plan comptable](finance-setup-chart-accounts.md).  
 
 Les groupes comptabilisation sont traités dans trois catégories :  
 
@@ -75,8 +75,16 @@ Votre configuration détermine quand le report a lieu. Par exemple, la synchroni
 ## <a name="copying-posting-setup-lines"></a>Copie de lignes configuration report
 Plus il y a de groupes de report produit et marché, plus la page Configuration du report général contient de lignes. Cela peut entraîner la nécessité d'entrer un grand nombre de données pour configurer les paramètres de report pour la compagnie. S'il peut y avoir un grand nombre de combinaisons différentes de groupes de report marché et produit, différentes combinaisons peuvent encore reporter dans les mêmes comptes du grand livre. Pour limiter le nombre de saisies manuelles, copiez les comptes GL à partir d'une ligne existante sur la page **Configuration report général**.
 
-## <a name="see-also"></a>Voir aussi .
-[Les écritures comptables et le plan comptable](finance-general-ledger.md)  
+## <a name="troubleshooting-posting-group-errors"></a>Résolution des erreurs de groupe de report
+Les groupes de report sont l’un des concepts les plus avancés à configurer dans [!INCLUDE[prod_short](includes/prod_short.md)]. S’ils ne sont pas configurés correctement, des erreurs peuvent se produire lors du report de documents ou de lignes journal. Par exemple, ces erreurs sont généralement causées par une erreur d’affectation des comptes du grand livre ou de combinaison des groupes de report.
+
+Quand quelque chose ne va pas, [!INCLUDE[prod_short](includes/prod_short.md)] affiche la page **Messages d’erreur**. La page **Messages d’erreur** peut faciliter l’identification et la résolution du problème. Cette page propose une description de l’erreur qui signale la configuration du groupe de report qui nécessite une attention particulière. Par exemple, le message peut indiquer « Il manque une configuration de report générale au compte paiement anticipé vente ». Il existe également un lien pour ouvrir la page qui est à l’origine du problème, afin que vous puissiez le résoudre rapidement.  
+
+> [!NOTE]
+> La gestion des erreurs décrite ci-dessus n’est pas disponible sur les journaux article, ressource, employé et immobilisation, ni pour les comptes du grand livre ajoutés dans des versions locales des groupes de report.
+
+## <a name="see-also"></a>Voir aussi
+[Le grand livre et le plan comptable](finance-general-ledger.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

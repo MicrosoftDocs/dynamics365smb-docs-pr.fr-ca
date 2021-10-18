@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: IC, group, consolidation, affiliate, subsidiary
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 4de43cc0430522b6d4e3566e43eaba945cd2dff2
-ms.sourcegitcommit: e891484daad25f41c37b269f7ff0b97df9e6dbb0
+ms.openlocfilehash: 1d822b61c9ed64d970d2d17939a359d898513e2d
+ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7440476"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7587601"
 ---
 # <a name="set-up-intercompany-transaction-posting"></a>Configurer le report des transactions intercompagnies
 
@@ -23,7 +23,7 @@ Pour envoyer une transaction (ligne journal vente) à partir d’une compagnie e
 
 Vous devez également configurer un code partenaire intercompagnie pour chaque compagnie partenaire, ce qui est convenu par toutes les compagnies, puis les affecter respectivement aux fichiers client et fournisseur en renseignant le champ **Code partenaire intercompagnie**.  
 
-Si vous créez ou recevez des lignes intersociétés contenant des articles, vous pouvez soit utiliser vos propres numéros d'article, soit configurer ceux de votre partenaire pour chaque article concerné, dans le champ **Référence fournisseur** ou **N° article commun** de la fiche article. Vous pouvez également utiliser la fonction **Référence externe article** pour mapper vos numéros d’article avec vos descriptions de partenaires intercompagnies des articles, ouvrir la fiche de chaque article, puis choisir l’action **Références externes** afin de configurer les références externes entre vos descriptions d’article et celles du partenaire intercompagnie. Pour plus d'informations, voir [Utiliser les références externes article](inventory-how-use-item-cross-refs.md). 
+Si vous créez ou recevez des lignes intersociétés contenant des articles, vous pouvez soit utiliser vos propres numéros d'article, soit configurer ceux de votre partenaire pour chaque article concerné, dans le champ **Référence fournisseur** ou **N° article commun** de la fiche article. Vous pouvez également utiliser la fonction **Référence article** : pour mapper vos numéros d’article avec vos descriptions de partenaires intercompagnies des articles, ouvrez la fiche de chaque article, puis choisissez l’action **Références article** afin de configurer les références entre vos descriptions d’article et celles du partenaire intercompagnie. Pour plus d’informations, voir [Utiliser les références article](inventory-how-use-item-cross-refs.md). 
 
 Si vous créez des transactions de vente intercompagnies incluant des ressources, vous devez renseigner le champ **N° cpte G/L partenaire ach. IC** de la fiche ressource de chaque ressource concernée. Il s'agit du numéro du compte GL intercompagnie sur lequel le montant de cette ressource va être reporté dans la compagnie partenaire. Pour plus d'informations, reportez-vous à [Configuration de ressources](projects-how-setup-resources.md).
 

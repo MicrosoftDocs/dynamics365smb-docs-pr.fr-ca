@@ -8,19 +8,21 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: dimension, correction, correct, business intelligence
-ms.date: 04/01/2021
+ms.date: 09/27/2021
 ms.author: bholtorf
-ms.openlocfilehash: 0475e814807c2218b2dcc72f3c07359b80546cc3
-ms.sourcegitcommit: 8566399d5181f1c171c7536fff9c890a34e94ba4
+ms.openlocfilehash: 111e9b3dae70cc984ecc495a815de3d41ef42133
+ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "6373248"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7589017"
 ---
 # <a name="troubleshooting-and-correcting-dimensions"></a>Dépannage et correction des dimensions
+
 Les rapports financiers et les vues d′analyse reposent souvent sur les données des dimensions. Malgré les garanties disponibles, il se produit parfois une erreur pouvant entraîner des imprécisions. Cette rubrique décrit certaines erreurs classiques et explique comment corriger les affectations de dimensions sur les transactions reportées afin que les rapports financiers soient précis.
 
 ## <a name="troubleshooting-dimensions-errors"></a>Dépannage des erreurs liées aux dimensions
+
 Lorsque vous reportez des documents ou des lignes journal qui contiennent des dimensions, différentes erreurs peuvent survenir, généralement liées à un défaut de configuration ou d'affectation des dimensions.
 
 > [!NOTE]
@@ -42,30 +44,33 @@ Lorsque vous reportez des documents ou des lignes journal qui contiennent des di
 |Une correction de dimension ne se termine pas correctement.||-Choisissez **Réinitialiser** pour rétablir la correction à un état brouillon. Cela réinitialise les modifications et vous pouvez réexécuter la correction.|
 
 ## <a name="changing-dimension-assignments-after-posting"></a>Modification des attributions de dimension après le report
+
 Si vous découvrez qu'une dimension incorrecte a été utilisée sur les écritures reportées, vous pouvez corriger les valeurs de dimension et mettre à jour vos vues d'analyse. Cela vous aidera à garder vos rapports et analyses financières exactes.
 
 > [!IMPORTANT]
 > Les fonctionnalités de correction des dimensions visent uniquement à rendre les rapports financiers précis. Les corrections de dimensions s′appliquent uniquement aux écritures GL. Ils ne modifient pas les dimensions affectées aux écritures d'autres livres pour la même transaction. Un problème de correspondance existe entre les dimensions affectées dans le grand livre et les grands livres auxiliaires.
 
 ### <a name="setting-up-dimension-corrections"></a>Configuration des corrections de dimensions
+
 Il y a deux choses à prendre en compte lors de la configuration des corrections de dimension :
 
 * Y a-t-il des dimensions que vous ne souhaitez pas permettre aux gens de changer? Sur la page **Paramètres de correction de dimensions**, spécifiez les dimensions que vous souhaitez bloquer pour les modifications.
 * À qui souhaitez-vous autoriser le changement de dimensions? Pour autoriser les utilisateurs à apporter des modifications, attribuez l'autorisation **CORRECTION AXE D365** aux utilisateurs. Les autorisations leur permettent de créer des corrections de dimensions, de les exécuter et de les annuler si nécessaire. Ils pourront également spécifier des dimensions bloquées. Pour en savoir plus, voir [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md). 
 
 ### <a name="correcting-a-dimension"></a>Correction d’une dimension
+
 Vous pouvez sélectionner manuellement une ou plusieurs écritures ou utiliser des filtres pour sélectionner des séries d'entrées. Si nécessaire, vous pouvez également ajouter ou supprimer des dimensions. 
 
 1. Pour démarrer une correction de dimensions, utilisez l'une des pages suivantes :
 
-* Sur la page **GL/Registre**, en sélectionnant un registre, puis en choisissant l'action **Corriger les dimensions**. Ceci lance une correction pour les entrées dans le registre sélectionné.
-* Sur la page **Écritures**, en choisissant l'action **Correction de dimensions**. 
+    * Sur la page **GL/Registre**, en sélectionnant un registre, puis en choisissant l'action **Corriger les dimensions**. Ceci lance une correction pour les entrées dans le registre sélectionné.
+    * Sur la page **Écritures**, en choisissant l'action **Correction de dimensions**. 
 
 2. Dans le champ **Description**, entrez les informations sur la modification. D'autres personnes pourraient utiliser ces informations plus tard pour comprendre ce qui a été fait.
 3. Sur le Raccourci **Écritures sélectionnées**, choisissez les entrées appropriées.
 
-> [!IMPORTANT]
-> Lorsque vous modifiez une sélection, les valeurs du Raccourci **Modifications de correction de dimensions** sont réinitialisées. Par conséquent, sélectionnez toujours les entrées avant de spécifier les changements de valeur de dimensions.
+    > [!IMPORTANT]
+    > Lorsque vous modifiez une sélection, les valeurs du Raccourci **Modifications de correction de dimensions** sont réinitialisées. Par conséquent, sélectionnez toujours les entrées avant de spécifier les changements de valeur de dimensions.
 
    Le tableau suivant décrit les options.
 
@@ -83,43 +88,41 @@ Vous pouvez sélectionner manuellement une ou plusieurs écritures ou utiliser d
 6. Choisir **Exécuter**.
 
 ### <a name="validating-dimension-corrections"></a>Validation des corrections de dimensions
+
 Avant d'exécuter une correction, il est conseillé de la valider d'abord. La validation vérifie les restrictions sur le report des valeurs pour les comptes du grand livre, les restrictions pour les dimensions et si les valeurs des dimensions sont bloquées. Lors de la validation, l'état de la correction est défini sur **Validation en cours**. Après avoir validé une correction, le résultat s'affiche dans le champ **État de validation**. Si des erreurs ont été trouvées, vous pouvez utiliser l'action **Afficher les erreurs** pour les enquêter. Après avoir corrigé une erreur, vous devez utiliser l'action **Rouvrir** pour exécuter la correction ou une nouvelle validation.
 
 Vous pouvez soit exécuter une correction immédiatement, soit la programmer pour une exécution ultérieure. Si vous exécutez des corrections sur un jeu de données volumineux, nous vous recommandons de le programmer pour qu'il s'exécute en dehors des heures ouvrables. Pour plus d′informations, voir [Corrections de dimensions sur des jeux de données volumineux](finance-troubleshooting-correcting-dimensions.md#dimension-corrections-on-large-data-sets).
 
 ### <a name="undoing-a-correction"></a>Annuler une correction
+
 Après avoir corrigé une dimension, si vous n'aimez pas ce que vous voyez, vous pouvez utiliser l'action **Annuler** pour réinitialiser la valeur précédente. Cependant, vous ne pouvez annuler que la correction la plus récente. Avant d'annuler une correction, vous pouvez valider les modifications que l'annulation apportera. Par exemple, cela est utile si les restrictions de dimensions ont changé après la correction.
 
 Si l'action Annuler n'est pas disponible, par exemple parce que vous avez effectué de nombreuses corrections, vous pouvez utiliser l'action **Copier dans le brouillon** pour démarrer une nouvelle correction pour les mêmes entrées.
 
 ### <a name="dimension-corrections-on-large-data-sets"></a>Corrections de dimensions sur des jeux de données volumineux
+
 Soyez prudent lorsque vous corrigez de grands ensembles d'entrées, par exemple, des ensembles comprenant plus de 10 000 entrées. Si vous le pouvez, nous vous recommandons d'utiliser les filtres pour exécuter les corrections sur des jeux de données plus petits. Il est également judicieux d'exécuter des corrections en dehors des heures normales de bureau. 
 
 ### <a name="using-analysis-views-with-dimension-corrections"></a>Utilisation des vues d'analyse avec des corrections de dimensions
+
 Si **Mise à jour lors du report** est activé pour une vue d'analyse, [!INCLUDE[prod_short](includes/prod_short.md)] peut afficher la vue lorsque les documents et les journaux sont reportés. Vous pouvez également mettre à jour les vues avec ce paramètre activé avec les résultats des corrections de dimensions. Pour ce faire, activez le bouton de basculement **Mettre à jour les vues d'analyse**. La mise à jour des vues d'analyse peut avoir un impact sur les performances, en particulier pour les grands jeux de données, c'est pourquoi nous vous recommandons de mettre à jour les vues d'analyse uniquement pour les petits jeux de données.  
 
 ### <a name="viewing-historical-dimension-corrections"></a>Affichage des corrections de dimensions historiques
+
 Si une écriture GL a été corrigée, vous pouvez étudier la modification en utilisant l'action **Historique des corrections de dimensions**.
 
 ### <a name="handling-incomplete-corrections"></a>Traitement des corrections incomplètes
+
 Si une correction ne se termine pas, un avertissement s'affiche sur la carte de correction. Si cela se produit, vous pouvez utiliser l'action **Réinitialiser** pour rétablir la correction à un état de brouillon et annuler les modifications. Vous pouvez ensuite exécuter à nouveau la correction.
 
 > [!NOTE]
 > La réinitialisation d'une correction incomplète n'affectera pas les mises à jour des vues d'analyse, car celles-ci se produisent à la fin du processus de correction.
 
 ### <a name="using-cost-accounting-with-corrected-gl-entries"></a>Utilisation de la comptabilité analytique avec les écritures GL corrigées
-Une fois les dimensions corrigées, vos données pour la comptabilité analytique seront désynchronisées. La comptabilité analytique utilise des dimensions pour agréger les montants des centres de coûts et des objets de coûts, et pour exécuter les affectations de coûts. La modification des dimensions des écritures GL signifiera probablement que vous réexécuterez vos modèles de comptabilité analytique. Que vous deviez simplement supprimer quelques registres de coûts et réexécuter les affectations, ou tout supprimer et réexécuter tous vos modèles, dépend des données qui ont été mises à jour et de la configuration de vos fonctionnalités de comptabilité analytique. Identifier où les corrections de dimensions auront un impact sur la comptabilité analytique et où des mises à jour sont nécessaires est un processus manuel. [!INCLUDE[prod_short](includes/prod_short.md)] ne propose pas actuellement de moyen automatisé de le faire.
 
-## <a name="correcting-number-assignments-for-global-dimensions"></a>Corriger les attributions de numéros pour les dimensions globales
-Dans la table Écriture de l’ensemble des dimensions, les dimensions globales sont affectées à la valeur **0** dans le raccourci N° de dimension. et les dimensions de raccourci reçoivent leur numéro de dimension de raccourci, qui peut être compris entre 1 et 8. Certains rapports utilisent ces attributions de numéro pour déterminer les valeurs à utiliser dans les calculs.
-
-Lorsque les valeurs de dimension sont importées à l’aide de packages de configuration créés sans exécuter de déclencheurs de validation, ou en utilisant un code personnalisé pour appeler les méthodes d’insertion ou de modification sans exécuter les déclencheurs de validation OnInsert ou OnModify, les dimensions de raccourci se voient parfois attribuer un numéro différent de 0. Lorsque cela se produit, les calculs sont incorrects pour les dimensions des journaux généraux récurrents qui utilisent les méthodes récurrentes Solde BD par compte ou Solde BD par dimensions. 
-
-Si un numéro incorrect est attribué, lorsque vous essayez de reporter ou de prévisualiser des journaux sur la page **Journaux généraux récurrents**, la page **Messages d’erreur** s’affiche. À partir de la page Messages d’erreur, vous pouvez choisir le lien dans le champ **Source** pour exécuter un rapport qui corrigera les affectations de numéros de dimension de raccourci dans la table Écriture de l’ensemble des dimensions. Alternativement, vous pouvez également rechercher **Mettre à jour le n° dimension principal pour les écritures de l’ensemble de dimensions** pour exécuter le rapport.
-
-Après avoir exécuté le rapport, sur la page **Écritures journal modification** vous pouvez consulter les modifications apportées au numéro dans le champ Numéro de dimension globale. . [!INCLUDE[prod_short](includes/prod_short.md)] enregistre toujours les valeurs précédentes et les nouvelles. 
+Une fois les dimensions corrigées, vos données pour la comptabilité analytique seront désynchronisées. La comptabilité analytique utilise des dimensions pour agréger les montants des centres de coûts et des objets de coûts, et pour exécuter les affectations de coûts. La modification des dimensions des écritures GL signifiera probablement que vous réexécuterez vos modèles de comptabilité analytique. Que vous deviez simplement supprimer quelques registres de coûts et réexécuter les affectations, ou tout supprimer et réexécuter tous vos modèles, dépend des données qui ont été mises à jour et de la configuration de vos fonctionnalités de comptabilité analytique. Vous devez manuellement identifier où les corrections de dimensions auront un impact sur la comptabilité analytique et où des mises à jour sont nécessaires. [!INCLUDE[prod_short](includes/prod_short.md)] ne propose pas actuellement de moyen automatisé de le faire.
 
 ## <a name="see-also"></a>Voir aussi
-[Vue d’ensemble des écritures de l’ensemble des dimensions](design-details-dimension-set-entries-overview.md)
-[Utilisation des dimensions](finance-dimensions.md)
-[Analyser les données par dimensions](bi-how-analyze-data-dimension.md)
+
+[Utilisation des Dimensions](finance-dimensions.md)
+[Analyser les données par dimension](bi-how-analyze-data-dimension.md)  

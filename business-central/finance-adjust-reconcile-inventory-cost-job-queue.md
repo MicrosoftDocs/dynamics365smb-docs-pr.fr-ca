@@ -1,5 +1,5 @@
 ---
-title: Ajuster et rapprocher le coût avec le grand livre à l’aide de la file d’attente des travaux
+title: Programmer des tâches pour ajuster et rapprocher le coûts de l'inventaire
 description: Découvrez comment vous pouvez utiliser la file d’attente des travaux pour déplacer les tâches d’ajustement du coût de l’inventaire ou de rapprochement avec le grand livre en arrière-plan. Par exemple, si votre compagnie exécute de nombreuses tâches ou traite de nombreuses transactions.
 author: AndreiPanko
 ms.service: dynamics365-business-central
@@ -8,35 +8,36 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms.date: 07/28/2021
+ms.date: 09/23/2021
 ms.author: andreipa
-ms.openlocfilehash: e44936d9d9ec39d9232285d7293c152c57ab0a56
-ms.sourcegitcommit: 769d20d299155cba30c35636d02b2ef021e4ecc1
+ms.openlocfilehash: 7ba496cecd6eb473dbffde03598c49c15c2ebc3a
+ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "6688473"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7589042"
 ---
-# <a name="adjust-and-reconcile-inventory-cost-with-general-ledger-with-job-queue"></a>Ajuster et rapprocher le coût de l’inventaire avec le grand livre avec la file d’attente des travaux
+# <a name="schedule-jobs-for-adjusting-and-reconciling-inventory-cost-with-the-general-ledger"></a>Programmer des tâches pour ajuster et rapprocher le coût de l'inventaire avec le grand livre
 
 Pour optimiser l’expérience, l’ajustement automatique des coûts et le report dans le grand livre sont activés par défaut. Cependant, à mesure que les données s’accumulent au fil du temps, cela peut affecter les performances. Pour réduire la charge de l’application, il est souvent utile d’utiliser les écritures file d’attente des travaux pour déplacer les tâches à exécuter en arrière-plan.
 
 ## <a name="move-the-task-of-adjusting-item-costs-to-the-background-with-the-help-of-assisted-setup"></a>Déplacez la tâche d’ajustement des coûts article en arrière-plan à l’aide de la configuration assistée
 
-La création des écritures file d’attente des travaux peut être compliquée, même pour un consultant expérimenté; par conséquent, nous avons un guide de configuration assistée pour faciliter le processus d’ajustement des coûts article. 
+La création des écritures file d’attente des travaux peut être compliquée, même pour un consultant expérimenté; par conséquent, nous avons un guide de configuration assistée pour faciliter le processus d’ajustement des coûts article.  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration inventaire**, puis sélectionnez le lien associé.  
 2. Dans la page **Configuration inventaire**, activez le champ **Report coûts automatique** ou spécifiez **Jamais** dans le champ **Ajustement automatique des coûts**.  
-3. Dans la notification qui s’affiche maintenant en haut de la page, choisissez le lien **Programmer écriture file d’attente des travaux**.
+3. Dans la notification qui s’affiche maintenant en haut de la page, choisissez le lien **Programmer écriture file d’attente des travaux**. Cela ouvre le guide de configuration assistée **Programmer l’ajustement et le report des coûts**.  
 4. Spécifiez la tâche que vous souhaitez programmer.  
 
   > [!NOTE]
-  > Vous ne pouvez pas créer une nouvelle écriture file d’attente des travaux si une écriture file d’attente des travaux pour la tâche spécifiée existe déjà. 
+  > Vous ne pouvez pas créer une nouvelle écriture file d’attente des travaux si une écriture file d’attente des travaux pour la tâche spécifiée existe déjà.
+
 5. Sélectionnez le champ **Afficher les écritures file d’attente des travaux quand vous avez terminé** pour réviser et ajuster les paramètres. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).  
 
 ## <a name="to-create-a-job-queue-entry-for-adjusting-and-reconciling-inventory-cost-manually"></a>Pour créer une écriture file d’attente des travaux pour ajuster et rapprocher manuellement le coût de l’inventaire
 
-Vous pouvez également créer des écritures file d’attente des travaux manuellement. La procédure suivante montre comment définir le traitement en lot **Ajuster coût écritures article** pour s’exécuter automatiquement chaque jour, mais les mêmes étapes s’appliquent au traitement en lot **Reporter le coût de l’inventaire au grand livre**. 
+Vous pouvez également créer des écritures file d’attente des travaux manuellement. La procédure suivante montre comment définir le traitement en lot **Ajuster coût écritures article** pour s’exécuter automatiquement chaque jour, mais les mêmes étapes s’appliquent au traitement en lot **Reporter le coût de l’inventaire au grand livre**.  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Écritures file d'attente des travaux**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -50,9 +51,8 @@ Maintenant, le coût de l’inventaire sera mis à jour toutes les nuits.
 
 Pour programmer une tâche de rapprochement de l’inventaire avec le grand livre, choisissez Codeunit 2846 **Reporter le coût de l’inventaire au grand livre**.
 
-
-> [!NOTE]
-> Pour éviter le verrouillage, ne programmez pas de tâches pour le traitement en lot **Ajuster coût écritures article**, le codeunit **Reporter le coût de l’inventaire au grand livre** et les tâches de report des transactions de vente ou d’achat en même temps, et assurez-vous qu’ils utilisent la même catégorie de file d’attente des travaux.
+> [!TIP]
+> Pour éviter le verrouillage, ne programmez pas de tâches pour le traitement en lot **Ajuster coûts : Écr. article**, le codeunit **Reporter le coût de l'inventaire au grand livre** et les tâches de report des transactions de vente ou d’achat en même temps. Assurez-vous également qu’ils utilisent la même catégorie de file d'attente des travaux.
 
 ## <a name="see-also"></a>Voir aussi
 

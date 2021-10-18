@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: UOM
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 92fc62cf5b1e2db5d1eb34ab2aa9f86823cfe3bb
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 499ed3db4b82a92d147f4fcdffef4df516a80bf1
+ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6435557"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7588586"
 ---
 # <a name="set-up-units-of-measure"></a>Configuration d'unités de mesure
 
@@ -27,6 +27,8 @@ Vous pouvez configurer plusieurs unités de mesure pour un article afin que vous
 - Affectez d'autres unités de mesure pour les documents d'achat, de production, ou de vente pour spécifier le nombre d'unités de mesure de base que vous gérez dans ces processus. Par exemple, vous pouvez acheter l'article en palettes et n'utiliser que des pièces individuelles en production.
 
 Si un article est stocké dans une unité mais produit dans une autre, un ordre de fabrication utilisant une unité de lot de fabrication est créé pour calculer la quantité correcte des composants durant le traitement par lots **Actualiser O.F.**. Une situation dans laquelle un article fabriqué est stocké en pièces mais produit en tonnes est un exemple d'un calcul d'unité de mesure de lot de fabrication. Pour plus d'informations, voir [Utiliser les unités de mesure de lot de fabrication](production-how-to-use-the-manufacturing-batch-unit-of-measure.md).  
+
+Un autre outil qui facilite l’utilisation de plusieurs unités de mesure pour les articles est la possibilité de spécifier une précision d’arrondissement pour les unités de mesure de base. La spécification d’une précision d’arrondissement fournit des indications sur ce qu’une personne doit saisir pour un processus métier donné et aide à atténuer les problèmes d’arrondissement. Lorsque vous utilisez d’autres unité de mesures, la valeur dans le champ **Qté. par unité de mesure** permet de calculer la quantité dans l’unité de mesure de base, ce qui peut entraîner des problèmes d’arrondissement. Par exemple, imaginez que vous recevez une boîte contenant six articles. Lorsque la boîte arrive à votre entrepôt, vous découvrez qu’il manque l’un des six articles. Vous décidez de ne pas reporter la réception d’une boîte, mais de modifier à la place la quantité reçue à cinq des six pièces. Cela conduirait à une réception de 4,99998 pièces au lieu de cinq. Sur la page **Unités de mesure article**, le champ **Précision arrondissement quantité** vous permet de spécifier une valeur qui convertira la quantité en un nombre plus facile à comprendre. En continuant avec l’exemple, nous entrons **1** dans le champ pour arrondir la valeur à cinq pièces.
 
 ## <a name="to-set-up-units-of-measure"></a>Pour configurer des unités de mesure
 
@@ -57,11 +59,11 @@ Lorsque vous enregistrez un nouvel article, vous pouvez choisir l'unité de mesu
 
     Dans le champ **Unité de mesure de base** situé au bas de la fenêtre, vous pouvez visualiser ou modifier l'unité de mesure de base de l'article. Vous pouvez également modifier l'unité de mesure de base dans le champ **Unité de mesure de base** de la fiche article. Sur la page **Unité de mesures article**, l'unité de mesure de base doit avoir la valeur **1** dans le champ **Qté par unité de mesure**.
 
-Vous pouvez désormais utiliser les unités de mesure alternatives sur les documents d'achat, de production et de vente, comme décrit dans la section [Pour entrer un code unité de mesure par défaut pour des transactions de ventes et d'achat](#to-enter-a-default-unit-of-measure-code-for-sales-and-purchasing-transactions).  
+Vous pouvez maintenant utiliser les unités de mesure de remplacement sur les documents achat, production et vente. Pour plus d’informations, consultez [Pour entrer un code unité de mesure par défaut pour des transactions de vente et d’achat](#to-enter-a-default-unit-of-measure-code-for-sales-and-purchasing-transactions).  
 
 ## <a name="to-set-up-unit-of-measure-translations"></a>Pour configurer des traductions d'unités de mesure
 
-Lorsque vous vendez des articles à des clients étrangers, vous pouvez être amené à indiquer l'unité de mesure dans leur langue. Pour cela, vous devez d'abord configurer les traductions d'unités de mesure nécessaires.
+Lorsque vous vendez des articles à des clients étrangers, vous pouvez être amené à indiquer l’unité de mesure dans leur langue. Vous pouvez le faire en spécifiant des traductions pour les unités de mesure.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Unités de mesure**, puis choisissez le lien associé.
 2. Sélectionnez le code pour lequel vous souhaitez définir des traductions, puis cliquez sur **Traductions**.
