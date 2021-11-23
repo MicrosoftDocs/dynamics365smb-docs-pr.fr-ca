@@ -1,8 +1,6 @@
 ---
 title: Déclaration de la taxe de vente au Canada [CA]
 description: En savoir plus sur la manière dont la taxe de vente est configurée, et sur le fonctionnement des groupes fiscaux, des régions fiscales (états, comtés, villes et localités), des juridictions de taxe et des spécifications de taxe au Canada.
-services: project-madeira
-documentationcenter: ''
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -10,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: local
-ms.date: 06/29/2021
+ms.date: 10/12/2021
 ms.author: edupont
-ms.openlocfilehash: 809233d44c66dda108b9398b4f9f3b14e87e9fe4
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.openlocfilehash: 4a0200e9f76e72653293caabbf3be6634e782274
+ms.sourcegitcommit: c35a132cc615629e4f873177755a39ab58783e38
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6323993"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7643910"
 ---
 # <a name="reporting-sales-tax-in-canada"></a>Déclaration de la taxe de vente au Canada
 
@@ -31,7 +29,7 @@ Au Canada, les montants de taxe doivent être détaillés dans les documents con
 
 La page **Détails fiscaux** affiche différentes combinaisons de juridictions de taxe de vente et de groupes de taxe de vente afin d'établir des taux de taxe de vente. Pour chaque juridiction fiscale, nous vous recommandons de configurer un groupe fiscal pour la taxe de vente normale, un autre groupe fiscal pour les articles ou les services qui ne sont pas soumis à la taxe et un groupe fiscal supplémentaire pour chaque type d'article ou de service traité avec un taux de taxe de vente différent dans cette juridiction fiscale. [!INCLUDE [tooltip-inline-tip_md](../../includes/tooltip-inline-tip_md.md)]  
 
-Au Canada, lorsque vous vendez à un client dans un lieu où vous n'avez pas de *situs*(ou un lieu légal dans cette province), vous ne percevez pas la taxe de vente. Pour les magasins dans lesquels vous n'avez pas de situs, assurez-vous que la valeur des champs **Taxe inférieure minimum** and **Taxe supérieure maximum** est égale à 0,00.  
+<!--COMMENTING OUT DUE TO ISSUE #535: In Canada, when you sell to a customer at a location where you do not have a *situs*—or a legal location in that state—you do not collect sales tax. For locations in which you do not have a situs, ensure that both the **Tax Below Minimum** and **Tax Above Maximum** fields are 0.00.  -->
 
 ## <a name="see-also"></a>Voir aussi
 
