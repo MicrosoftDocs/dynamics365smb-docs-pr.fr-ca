@@ -5,30 +5,31 @@ author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keywords: rfq
+ms.search.form: 103, 142, 800, 806
 ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: c4272e26021cecd04d6bd81ec66957032def6a8e
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 8c05c4a86e0bf9ace996dfc879b719324dc99593
+ms.sourcegitcommit: a9e2aaee735870af566db68532cfa697347d68e0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6440213"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752376"
 ---
 # <a name="track-packages"></a>Suivre des colis
-
-De nombreux agents de livraison offrent des services sur Internet vous permettant de suivre les colis que vous avez confiés à l'agent de livraison. Si vous utilisez un ou plusieurs de ces agents de livraison, vous pouvez configurer certaines informations de base et utiliser la fonction de traçabilité automatique à partir des livraisons reportées, des factures vente reportées, des notes de crédit vente reportées et des réceptions retour reportées. Pour plus d'informations, voir [Configurer des agents de livraison](sales-how-to-set-up-shipping-agents.md).  
+La plupart des agents de livraison proposent un service web qui vous permet de suivre l'état de vos colis pendant leur livraison. Ces informations peuvent être utiles dans de nombreux processus d’entreprise, par exemple, lors de la prestation d’un service clientèle. Si vous utilisez certains de ces agents de livraison, vous pouvez saisir certaines informations de base les concernant, puis utiliser leur service de suivi de livraison directement auprès des pages Livraisons vente reportées, Factures vente reportées, Notes de crédit vente reportées et Accusés de réception retour reportés. Pour plus d'informations, voir [Configurer des agents de livraison](sales-how-to-set-up-shipping-agents.md). 
 
 La procédure suivante montre comment suivre un colis à partir d'une livraison vente reportée, mais les mêmes étapes s'appliquent à l'activation du suivi des colis à partir des pages Facture vente reportée, Note de crédit vente reportée et Réception retour reportée.  
 
 ## <a name="to-track-a-package"></a>Pour suivre un colis
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Livraison vente reportée**, puis sélectionnez le lien associé.
-2. Ouvrez la livraison appropriée.
-3. Choisissez l'action **Mettre à jour le document**.
-4. Dans le champ **N° récépissé**, entrez le numéro de package que vous avez reçu de l'agent de livraison. Mettez à jour l'**agent de livraison** si nécessaire et fermez la page.
-5. Sélectionnez l'action **Suivre colis**.
+> [!NOTE]
+> La procédure suivante utilise la page Livraison vente reportée comme exemple. Les étapes de suivi d’un colis sont les mêmes sur les pages Factures vente reportées, Notes de crédit vente reportées et Accusés de réception retour reportés.
 
-Votre navigateur par défaut ouvre la page de suivi de l'agent de livraison.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Livraison vente reportée**, puis sélectionnez le lien associé.
+2. Ouvrez la livraison à suivre, puis sélectionnez l’action **Mettre à jour le document**.
+3. Dans le champ **N° récépissé**, entrez le numéro de récépissé reçu de l'agent de livraison. 
+4. Assurez-vous que l'agent de livraison et le niveau de service sont corrects, puis fermez la page.
+5. Choisissez l’action **Suivre colis** pour ouvrir le service de suivi des colis de l'agent de livraison.
 
 ## <a name="see-also"></a>Voir aussi
 

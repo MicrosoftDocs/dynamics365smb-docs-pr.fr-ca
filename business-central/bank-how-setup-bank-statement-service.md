@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: Yodlee, feed, stream, payment process
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: a01bbbcb158e975c2b6f21ce2dd2468f8b3fa431
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 8c27b2c158d817a6e58a72d49d65d75bb8470f65
+ms.sourcegitcommit: 2b34394a855845457bb705178470e2cbfa77141c
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6443533"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651472"
 ---
 # <a name="set-up-the-envestnet-yodlee-bank-feeds-service"></a>Configurer le service Envestnet Yodlee Bank Feeds
 
@@ -97,6 +97,11 @@ Le service de flux bancaire est activé lorsque vous liez un compte bancaire à 
 5. Cliquez sur le bouton **OK**.
 
 Sur la page **Liste des comptes bancaires**, la case **Lié** est cochée.
+
+## <a name="to-edit-the-credentials-for-an-online-bank-account"></a>Pour modifier les informations d’identification d’un compte bancaire en ligne
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Compte bancaire**, puis sélectionnez le lien associé.  
+2. Sélectionnez la ligne correspondant à un compte bancaire qui est liée à un compte bancaire en ligne, puis sélectionnez l’action **Modifier les informations sur le compte bancaire en ligne**.
+3. Mettez à jour les informations de connexion.
 
 ## <a name="to-unlink-a-bank-account"></a>Pour détacher un compte bancaire en ligne
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Comptes bancaires**, puis sélectionnez le lien associé.  

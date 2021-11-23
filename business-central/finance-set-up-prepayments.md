@@ -5,14 +5,14 @@ author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keyword: prepayment
-ms.date: 06/29/2021
+ms.date: 10/27/2021
 ms.author: edupont
-ms.openlocfilehash: a8b647e52457fc4bc2c7377ad6d4fb4f40d6dc58
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 517d815e323f2b1d0e3c120808a5543bff462ff3
+ms.sourcegitcommit: 400554d3a8aa83d442f134c55da49e2e67168308
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6446325"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7701525"
 ---
 # <a name="set-up-prepayments"></a>Configuration des acomptes
 Si vous voulez que vos clients fassent des paiements avant de leur livrer une commande ou si votre fournisseur exige que vous fassiez un paiement avant de vous livrer une commande, vous pouvez utiliser la fonctionnalité Paiement anticipé. La fonctionnalité paiements anticipés vous permet de facturer et de collecter les paiements anticipés requis des clients ou de régler des paiements anticipés aux fournisseurs, et de vous assurer que tous les paiements partiels sont reportés sur une facture. Pour plus d'informations, voir [Créer des factures de paiement anticipé](finance-how-to-create-prepayment-invoices.md).
@@ -60,14 +60,15 @@ Si vous n'avez pas encore configuré de comptes GL pour les paiements anticipés
 > [!NOTE]  
 > Vous pouvez utiliser les mêmes séries de numéros pour des factures paiement anticipé et des factures normales, ou utiliser des séries de numéros différentes. Si vous utilisez des souches différentes, elles ne doivent pas se chevaucher car vous ne pouvez pas avoir des numéros identiques dans les deux souches.  
 
-## <a name="to-set-up-prepayment-percentages-for-items-customers-and-vendors"></a>Pour configurer des pourcentages de paiement anticipé pour des articles, des clients et des fournisseurs  
-Pour un article, vous pouvez configurer un pourcentage de paiement anticipé par défaut pour tous les clients, pour un client spécifique ou pour un groupe prix client.  
+## <a name="to-set-up-prepayment-percentages-for-items-customers-and-vendors"></a>Pour configurer des pourcentages de paiement anticipé pour des articles, des clients et des fournisseurs
+
+Pour un article, vous pouvez configurer un pourcentage de paiement anticipé par défaut pour tous les clients, pour un client spécifique ou pour un groupe prix client. Si vous ne souhaitez pas appliquer le même pourcentage de paiement anticipé à tous les clients, vous devez spécifier à quels clients ou à quels groupes de prix client s’applique le pourcentage de paiement anticipé.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
 2. Sélectionnez un article, puis cliquez sur l'action **Pourcentages paiement anticipé**.  
 3. Sur la page **Pourcentages paiement anticipé vente**, renseignez autant de champs que nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
-Pour un client ou un fournisseur, vous pouvez configurer un pourcentage de paiement anticipé par défaut pour tous les articles et tous les types de lignes vente. Vous entrez cette valeur dans la fiche client ou fournisseur.
+Pour un client ou un fournisseur, vous pouvez configurer un pourcentage de paiement anticipé par défaut pour tous les articles et tous les types de lignes vente. Vous entrez cette valeur dans la fiche client ou fournisseur. La procédure suivante montre comment spécifier un pourcentage de paiement anticipé pour un client, mais des étapes similaires s’appliquent aux fournisseurs.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.
 2. Ouvrez la fiche d'un client.

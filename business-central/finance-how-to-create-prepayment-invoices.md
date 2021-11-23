@@ -1,5 +1,5 @@
 ---
-title: Comment créer des factures de paiement anticipé
+title: Créer des factures de paiement anticipé
 description: Traitez les situations où votre fournisseur ou vous-même exigez un paiement anticipé. Utilisez les pourcentages par défaut pour chaque ligne vente ou achat, ou ajustez le montant en fonction si nécessaire.
 author: edupont04
 ms.service: dynamics365-business-central
@@ -10,18 +10,18 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 94822d323c5b50cae66196b314316eb7a5c93a1d
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 2d5f6a7b39ccc5c77ee68d7a62e33bd166551095
+ms.sourcegitcommit: 400554d3a8aa83d442f134c55da49e2e67168308
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6442195"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7701575"
 ---
 # <a name="create-prepayment-invoices"></a>Créer des factures de paiement anticipé
 
 Si vous demandez à vos clients de soumettre le paiement avant de leur livrer une commande, vous pouvez utiliser la fonctionnalité de paiement anticipé. Il en va de même si votre fournisseur vous demande de soumettre un paiement avant de vous livrer une commande.  
 
-Vous pouvez lancer le traitement du paiement anticipé lorsque vous créez un document vente ou un bon de commande. Si vous avez un pourcentage paiement anticipé par défaut pour ce client ou fournisseur, celui-ci sera automatiquement inclus dans la facture paiement anticipé résultante. Vous pouvez également spécifier un pourcentage paiement anticipé pour l'ensemble du document.
+Vous pouvez lancer le traitement du paiement anticipé lorsque vous créez un document vente ou un bon de commande. Si vous avez un pourcentage paiement anticipé par défaut pour un article donné sur la commande ou pour le client ou fournisseur, celui-ci sera automatiquement inclus dans la facture paiement anticipé résultante. Vous pouvez également spécifier un pourcentage paiement anticipé pour l'ensemble du document.
 
 Après avoir créé un document de vente ou un bon de commande, vous pouvez créer une facture paiement anticipé. Vous pouvez utiliser les pourcentages par défaut pour chaque ligne vente ou achat, ou ajuster le montant en fonction si nécessaire. Par exemple, vous pouvez spécifier un montant total pour la commande entière.  
 

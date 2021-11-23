@@ -12,12 +12,12 @@ ms.workload: na
 ms.search.keywords: purchase fixed asset
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 8d57fedc09b6c94ecfce7e24e1eea097f837030e
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 47eb44e7915407c1091791153ed62eb7b473a3a0
+ms.sourcegitcommit: c35a132cc615629e4f873177755a39ab58783e38
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6442295"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7643940"
 ---
 # <a name="acquire-fixed-assets"></a>Acquérir des immobilisations
 Pour chaque immobilisation, vous devez créer une fiche contenant des informations la concernant. Vous pouvez configurer des bâtiments ou un équipement de production en tant qu'immobilisation principale avec une liste de composantes et vous pouvez les regrouper de différentes façons, comme par catégorie, département ou emplacement. Un registre amortissement doit être configuré et assigné à chaque immobilisation avant que vous puissiez l'acquérir.
@@ -75,7 +75,7 @@ La procédure suivante décrit comment acquérir manuellement une immobilisation
 ## <a name="to-cancel-an-acquisition-cost-posting-for-one-fixed-asset"></a>Pour annuler le report du coût d'une acquisition pour une immobilisation
 Si vous faites une erreur lors de la validation d'un coût d'acquisition, vous pouvez supprimer l'écriture à l'aide du traitement par lots **Annuler écritures immo**, puis valider l'écriture d'acquisition correcte. Les écritures erronées sont transférées vers la page **Erreur écritures immo.**.
 
-Par exemple, si vous reportez une acquisition avec une date erronée, vous devez la corriger dès que possible, car la date de report de l'immobilisation est utilisée dans de nombreux calculs essentiels.
+Par exemple, si vous reportez une acquisition avec une date erronée, vous devez la corriger dès que possible, car la date de report de l’immobilisation est utilisée pour de nombreux calculs.
 
 > [!IMPORTANT]  
 >   Vous ne pouvez pas utiliser la fonction **Transaction contrepassée** pour les écritures comptables immobilisation.
@@ -90,9 +90,12 @@ Pour annuler les écritures comptables pour plusieurs immobilisations à la fois
 ## <a name="to-post-the-salvage-value-together-with-the-acquisition-cost"></a>Pour reporter la valeur résiduelle ainsi que le coût d'acquisition
 Vous pouvez reporter la valeur résiduelle avec le coût d'acquisition à partir d'un journal immobilisation.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux immobilisation**, puis choisissez le lien associé.
+> [!NOTE]
+> Ce processus peut nécessiter que vous personnalisiez la page journaux immobilisations en ajoutant le champ Valeur résiduelle. Par défaut, le champ À ne s’affiche pas sur la page. Pour plus d'informations, voir [Personnaliser votre espace de travail](ui-personalization-user.md).
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journaux immobilisation**, puis choisissez le lien associé.
 2. Sur la page **Journaux immobilisation**, créez la ligne d'acquisition. Pour en savoir plus, voir [Pour reporter manuellement une acquisition immobilisation avec le journal GL immobilisation](fa-how-acquire.md#to-post-a-fixed-asset-acquisition-manually-with-the-fixed-asset-gl-journal).
-3. Dans le champ **Valeur résiduelle** de la ligne journal, saisissez le montant de la valeur résiduelle comme crédit (avec un signe moins).
+3. Dans le champ **Valeur résiduelle** de la ligne journal, saisissez le montant de la valeur résiduelle comme crédit (préfixe du montant avec un signe moins, par exemple, **-** 100).
 4. Sélectionnez l'action **Reporter**.
 
 > [!NOTE]

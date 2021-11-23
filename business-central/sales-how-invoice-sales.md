@@ -8,14 +8,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: bill, sale, invoice, order
+ms.search.form: 42, 43, 48, 9301, 9305
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 4cd53cab788f5ee9a7f32f697faa35e8cd2638ae
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 125d28f1621e23f14cda9ce57a935a7da71e43cb
+ms.sourcegitcommit: a9e2aaee735870af566db68532cfa697347d68e0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6443367"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752478"
 ---
 # <a name="invoice-sales"></a>Facturer des ventes
 

@@ -1229,6 +1229,8 @@
 ##### [Préparation pour les rapports de transactions de TVA](LocalFunctionality/Italy/how-to-prepare-for-vat-transactions-reports.md)
 ##### [Imprimer et réimprimer les registres GL et les registres de TVA](LocalFunctionality/Italy/how-to-print-and-reprint-g-l-books-and-vat-registers.md)
 ##### [Imprimer des rapports Intrastat pour l'Italie](LocalFunctionality/Italy/how-to-print-intrastat-reports-for-italy.md)
+#### Retenue à la source
+##### [Configurer la retenue à la source dans la version italienne](LocalFunctionality/Italy/set-up-withholding-tax.md)
 ##### [Pour imprimer des rapports de retenue à la source](LocalFunctionality/Italy/how-to-print-withholding-tax-reports.md)
 #### Banque et paiements
 ##### [Configurer des modalités de paiement](LocalFunctionality/Italy/how-to-set-up-payment-terms.md)
@@ -1258,11 +1260,7 @@
 #### [Fonctionnalité locale dans la version mexicaine](LocalFunctionality/Mexico/mexico-local-functionality.md)
 #### Taxes
 ##### [Configurer et générer des rapports DIOT](LocalFunctionality/Mexico/ui-extensions-setup-and-generate-diot-report-mx.md)
-##### [Taxe de vente Mexique](LocalFunctionality/Mexico/mexico-sales-tax.md)  
-##### [Configurer la taxe de service et la taxe d'achat](LocalFunctionality/Mexico/how-to-set-up-use-tax-and-purchase-tax.md)  
-##### [Configurer les escomptes de paiement de vente et la taxe de vente non réalisée](LocalFunctionality/Mexico/how-to-set-up-unrealized-sales-tax-and-sales-payment-discounts.md)
-##### [Déclaration de la taxe de vente au Mexique](LocalFunctionality/Mexico/mexico-sales-tax.md)
-##### [Créer des acomptes](LocalFunctionality/Mexico/how-to-create-deposits.md)  
+##### [Configurer des méthodes de calcul et de report de la TVA](finance-setup-vat.md)  
 ##### [Types d'identification taxe du Mexique](LocalFunctionality/Mexico/tax-identification-types-for-mexico.md)
 ##### [Nouveau calcul TVA](LocalFunctionality/Mexico/vat-recalculation.md)
 #### Facturation électronique
@@ -1274,12 +1272,13 @@
 #### Général
 ##### [Paramétrer services web PAC](LocalFunctionality/Mexico/how-to-set-up-pac-web-services.md)
 ##### [Imprimer des rapports de dépannage](LocalFunctionality/Mexico/how-to-print-troubleshooting-reports.md)  
+##### [Créer des acomptes](LocalFunctionality/Mexico/how-to-create-deposits.md)  
 
 ### Pays-Bas
 #### [Fonctionnalité locale dans la version néerlandaise](LocalFunctionality/Netherlands/netherlands-local-functionality.md)
 #### TVA
 ##### [Créer un fichier d'audit pour l'administration fiscale](LocalFunctionality/Netherlands/how-to-create-an-audit-file-for-the-tax-authority.md)
-##### [Paramétrer les catégories TVA](LocalFunctionality\Netherlands\how-to-set-up-vat-categories.md)
+##### [Paramétrer les catégories TVA](LocalFunctionality/Netherlands/how-to-set-up-vat-categories.md)
 ##### [Déclarations TVA et ICP électroniques](LocalFunctionality/Netherlands/electronic-vat-and-icp-declarations.md)
 ##### [Paramétrer les déclarations TVA et ICP électroniques](LocalFunctionality/Netherlands/how-to-set-up-electronic-vat-and-icp-declarations.md)
 ##### [Soumission des déclarations TVA et ICP électroniques](LocalFunctionality/Netherlands/electronic-vat-and-icp-declarations.md)
@@ -1290,7 +1289,7 @@
 ##### [Scénario de paiement 1 - Paiements nationaux ($ en $)](LocalFunctionality/Netherlands/payment-scenario-1-domestic-payments-lcy-to-lcy-.md)  
 ##### [Scénario de paiement 2 - paiement étranger (DS en DS)](LocalFunctionality/Netherlands/payment-scenario-2-foreign-payment-fcy-to-fcy-.md)  
 ##### [Scénario de paiement 3 - Paiement étranger ($ en $)](LocalFunctionality/Netherlands/payment-scenario-3-foreign-payment-lcy-to-fcy-.md)
-##### [Créer des propositions](LocalFunctionality\Netherlands\how-to-create-proposals.md)
+##### [Créer des propositions](LocalFunctionality/Netherlands/how-to-create-proposals.md)
 ##### [Rapports du registre](LocalFunctionality/Netherlands/docket-reports.md)
 ##### [Indiquer et reporter les journaux de trésorerie et opérations bancaires et les journaux de virement](LocalFunctionality/Netherlands/how-to-enter-and-post-cash-and-bank-or-giro-journals.md)
 ##### [Imprimer des rapports de test pour la trésorerie et les opérations bancaires ou les journaux de virement](LocalFunctionality/Netherlands/how-to-print-the-test-reports-for-cash-and-bank-or-giro-journals.md)
@@ -1298,7 +1297,7 @@
 ##### [Activer les règlements SEPA](LocalFunctionality/Netherlands/how-to-activate-sepa-payments.md)
 ##### [Envoyer des paiements fournisseur électroniques au format de paiement ISO 20022 de SEPA](LocalFunctionality/Netherlands/how-to-submit-vendor-payments-electronically-in-sepa-iso-20022-payment-format.md)
 ##### [Créer et exporter l'historique des paiements](LocalFunctionality/Netherlands/how-to-create-and-export-payment-history.md)
-##### [Importer et rapprocher les relevés bancaires](LocalFunctionality\Netherlands\how-to-import-and-reconcile-bank-statements.md)
+##### [Importer et rapprocher les relevés bancaires](LocalFunctionality/Netherlands/how-to-import-and-reconcile-bank-statements.md)
 #### Finances principales
 ##### [Affecter des écritures et annuler leur affectation](LocalFunctionality/Netherlands/how-to-apply-and-unapply-general-ledger-entries.md)
 ##### [Descriptions requises dans les écritures](LocalFunctionality/Netherlands/required-descriptions-in-g-l-entry.md)

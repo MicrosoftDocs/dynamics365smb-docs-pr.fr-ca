@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: 507, 509, 6620, 6622, 6623, 9303, 9310
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 2ac3d45bb7de166a4861e22e1919c9c722602b13
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 4299924a1845245eb8b73192bb14232bad25d80b
+ms.sourcegitcommit: a9e2aaee735870af566db68532cfa697347d68e0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6442710"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752590"
 ---
 # <a name="work-with-blanket-sales-orders-or-blanket-purchase-orders"></a>Utiliser des commandes permanentes ventes ou des commandes permanentes achats
 
@@ -67,7 +67,7 @@ Vous pouvez afficher l'état d'une commande permanente vente sur la page **Stati
 - Sur le raccourci **Facturation**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la quantité dans les champs **Qté à facturer** des lignes de la commande vente en cours.  
 - Sur le raccourci **Livraison**, vous pouvez visualiser des informations récapitulatives concernant l'intégralité de la quantité dans les champs **Qté à recevoir** des lignes de la commande vente en cours.  
 - Sur le raccourci **Paiement anticipé**, vous pouvez visualiser des informations récapitulatives concernant les éventuels montants déjà payés.  
-- Sur le raccourci **Fournisseur**, vous pouvez visualiser certaines informations de base concernant le fournisseur.    
+- Sur le raccourci **Fournisseur**, vous pouvez visualiser certaines informations de base concernant le fournisseur.
 
 ## <a name="to-view-unposted-and-posted-blanket-sales-order-lines"></a>Pour afficher des lignes commande permanente ventes reportées et non reportées   
 Le lien entre la commande permanente ventes et le document de vente d'origine, et n'importe quel autre document vente, est conservé après report en tant que liste des lignes facture reportées et non reportées de document de vente.  
@@ -76,21 +76,21 @@ Le lien entre la commande permanente ventes et le document de vente d'origine, e
 2. Ouvrez la commande permanente ventes que vous souhaitez afficher.
 3. Pour visualiser les écritures non reportées, sélectionnez la ligne en question, sélectionnez l'action **Ligne**, puis l'action **Lignes non reportées**. Choisissez l'une des options suivantes.  
 
-    |Option|Description|
-    |--|--|
-    |**Commandes**|Spécifie les commandes ouvertes associées à la ligne sélectionnée.|
-    |**Factures**|Spécifie les factures ouvertes associées à la ligne sélectionnée. Ouvrez les factures associées manuellement à une commande ouverte en entrant le numéro de commande ouverte dans la ligne facture vente.|
-    |**Retours**|Spécifie les commandes retour ouvertes associées à la ligne sélectionnée.|
-    |**Avoirs**|Spécifie les avoirs ouverts associés à la ligne sélectionnée.|
+|Option|Description|
+|--|--|
+|**Commandes**|Spécifie les commandes ouvertes associées à la ligne sélectionnée.|
+|**Factures**|Spécifie les factures ouvertes associées à la ligne sélectionnée. Ouvrez les factures associées manuellement à une commande ouverte en entrant le numéro de commande ouverte dans la ligne facture vente.|
+|**Retours**|Spécifie les commandes retour ouvertes associées à la ligne sélectionnée.|
+|**Avoirs**|Spécifie les avoirs ouverts associés à la ligne sélectionnée.|
 
 4. Pour visualiser les écritures reportées, sélectionnez la ligne en question, sélectionnez l'action **Ligne**, puis l'action **Lignes reportées**. Choisissez l'une des options suivantes.  
 
-    |Option|Description|
-    |---|----|
-    |**Livraisons**|Livraisons reportées associées à la ligne sélectionnée.|
-    |**Factures**|Factures reportées associées à la ligne sélectionnée.|
-    |**Réceptions retour**|Réceptions retour reportées associées à la ligne sélectionnée.|
-    |**Avoirs**|Notes de crédit reportées associées à la ligne sélectionnée.|
+|Option|Description|
+|---|----|
+|**Livraisons**|Livraisons reportées associées à la ligne sélectionnée.|
+|**Factures**|Factures reportées associées à la ligne sélectionnée.|
+|**Réceptions retour**|Réceptions retour reportées associées à la ligne sélectionnée.|
+|**Avoirs**|Notes de crédit reportées associées à la ligne sélectionnée.|
 
 5. Sur la page **Lignes vente**, sélectionnez l'action **Afficher document** pour afficher l'écriture.
 

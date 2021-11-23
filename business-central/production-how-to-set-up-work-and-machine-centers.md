@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : configurer des ateliers et des unités de production | Microsoft Docs'
+title: Configurer des ateliers et des unités de production
 description: Les fiches **centre de charge** organisent les exigences et les valeurs fixes des ressources de production, et régissent ainsi la production des centres de charge.
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: b247cdc220ad522fe42085528df8a25200d6dd48
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 3cc89545cced46acbe5d148853ac46c4135d251e
+ms.sourcegitcommit: 400554d3a8aa83d442f134c55da49e2e67168308
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6440313"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "7714532"
 ---
 # <a name="set-up-work-centers-and-machine-centers"></a>Configurer des ateliers et des unités de production
 
@@ -55,12 +55,12 @@ La procédure suivante décrit essentiellement comment configurer un atelier. La
 
     |Option|Description|
     |------|-----------|
-    |**Manuel**|La consommation est reportée manuellement dans le journal de sortie ou de production.|
-    |**Aval**|La consommation est calculée et reportée automatiquement lorsque le bon de production est libéré.|
-    |**Amont**|La consommation est calculée et reportée automatiquement lorsque le bon de production est terminé.|
+    |**Manuel**| Le temps consacré et la quantité de production et de rebut sont reportés manuellement dans le journal de sortie ou le journal production.|
+    |**Aval**|La quantité de production est reportée automatiquement lorsque le bon de production est émis.|
+    |**Amont**|La quantité de production est reportée automatiquement lorsque le bon de production est terminé.|
 
     > [!NOTE]
-    > Si nécessaire, vous pouvez modifier la méthode de consommation sélectionnée ici et sur la fiche **Article** pour des opérations spécifiques en modifiant le paramètre des lignes itinéraire
+    > Si nécessaire, vous pouvez modifier la méthode de consommation sélectionnée ici pour des opérations précises en modifiant le paramétrage des lignes itinéraire
 
 12. Dans le champ **Code unité de mesure**, entrez l'unité de temps utilisée pour le calcul de coût et la planification de capacité de l'atelier.
     Pour contrôler en permanence la consommation, vous devez d'abord définir une méthode de mesure. Les unités que vous saisissez sont des unités de base. Par exemple, la durée de traitement est mesurée en heures et en minutes.
@@ -77,7 +77,81 @@ La procédure suivante décrit essentiellement comment configurer un atelier. La
 > [!NOTE]
 > Utilisez les file d'attentes pour fournir un tampon entre le moment où une composante arrive sur une unité de production ou un atelier et le moment où l’opération démarre réellement. Par exemple, une pièce est livrée à une unité de production à 10h00, mais il faut une heure pour la monter sur la machine, de sorte que l’opération ne démarre pas avant 11h00. Pour tenir compte de cette heure, la durée file d’attente serait d’une heure. La valeur du champ **Durée file d'attente** sur une fiche unité de production ou atelier plus la somme des valeurs des champs **Temps de préparation**, **Temps d'exécution**, **Temps d’attente** et **Temps de transfert** sur la ligne itinéraire article se combinent pour donner le délai de fabrication de l’article. Cela permet de fournir des temps de production globaux précis.  
 
-## <a name="example---different-machine-centers-assigned-to-a-work-center"></a>Exemple - Plusieurs unités de production sont affectées à un atelier
+## <a name="considerations-about-capacity"></a>Considérations sur la capacité
+
+La capacité et l’efficacité spécifiées pour un atelier et une unité de production n’affectent pas seulement la capacité disponible. Elles ont également un impact sur le temps de production global qui se compose du temps de préparation et du temps d’exécution, qui sont tous deux définis sur la ligne itinéraire.  
+
+Lorsqu’une ligne itinéraire spécifique est affectée à un atelier ou une unité de production, le système calcule la capacité nécessaire et le temps nécessaire pour terminer l’opération.  
+
+### <a name="run-time"></a>Temps d’exécution
+
+Pour calculer le temps d’exécution, le système alloue le temps exact qui est défini dans le champ **Durée** de la ligne itinéraire. Ni l’efficacité ni la capacité n’ont d’impact sur le temps affecté. Par exemple, si le temps d’exécution est défini sur 2 heures, le temps affecté sera de 2 heures, quelles que soient les valeurs des champs d’efficacité et de capacité de l'atelier.  
+
+> [!NOTE]
+> La capacité utilisée dans les calculs est définie comme la valeur minimale entre la capacité définie dans l'atelier ou l'unité de production et la capacité concurrente définie pour la ligne itinéraire. Si un atelier a une capacité de 100, mais que la capacité concurrente de la ligne itinéraire est de 2, alors *2* sera utilisé dans les calculs.
+
+La *durée* d’une opération, au contraire, considère à la fois l’efficacité et la capacité. La durée est calculée comme *Temps d’exécution / Efficacité / Capacité*. La liste suivante montre quelques exemples de calcul de durée pour un même temps d’exécution, qui est défini comme 2 heures pour la ligne itinéraire :
+
+- Une efficacité de 80 % signifie que vous aurez besoin de 2,5 heures au lieu de deux heures  
+- Une efficacité de 200 % signifie que vous pouvez terminer le travail en une heure : vous pouvez creuser le trou deux fois plus vite si vous avez une pelle deux fois plus grande que la plus petite  
+
+    Vous pouvez obtenir le même résultat si vous utilisez deux petites pelles au lieu d’une grande : utilisez *2* comme la capacité et *100 %* comme l’efficacité  
+
+La capacité fractionnelle est délicate, et nous en discuterons plus tard. 
+
+### <a name="setup-time"></a>Temps de préparation
+
+La répartition du temps pour le temps de préparation dépend de la capacité et est calculée comme *Temps de préparation * Capacité*. Par exemple, si la capacité est définie sur *2*, votre temps de préparation affecté sera doublé, car vous devez configurer deux machines pour l’opération.  
+
+La *Durée* du temps de préparation dépend de l’efficacité et est calculée comme *Temps de préparation / Efficacité*. 
+
+- Une efficacité de 80 % signifie que vous aurez besoin de 2,5 h au lieu de deux heures la préparation  
+- Une efficacité de 200 % signifie que vous pouvez terminer la configuration en 1 h au lieu des 2 heures définies dans la ligne itinéraire  
+
+La capacité fractale n’est pas quelque chose de facile à employer, et elle est utilisée dans des cas très spécifiques.
+
+### <a name="work-center-processing-multiple-orders-simultaneously"></a>Atelier traitant plusieurs commandes simultanément
+
+Prenons l’exemple d’une cabine de peinture au pistolet. Elle a la même configuration et le même temps d’exécution pour chaque lot traité. Mais chaque lot peut contenir plusieurs commandes individuelles peintes simultanément.  
+
+Dans ce cas, le temps et le coût affectés s aux commandes sont gérés par le temps de préparation et la capacité concurrente. Nous vous recommandons de ne pas utiliser le temps d’exécution dans les lignes itinéraire.  
+
+Le temps de préparation affecté pour chaque ordre individuel sera dans l’ordre inverse du nombre d’ordres (quantités) qui sont exécutés simultanément. Voici quelques autres exemples de calcul du temps préparation lorsqu’il est défini sur deux heures pour la ligne itinéraire :
+
+- S’il y a deux ordres, la capacité concurrente dans la ligne itinéraire doit être définie sur 0,5.
+
+    En conséquence, la capacité affectée pour chacun sera d’une heure, mais la durée de chaque ordre restera de deux heures.
+- S’il y a deux ordres avec une quantité de un et quatre, respectivement, la capacité concurrente pour la ligne itinéraire du premier ordre est de 0,2 et de 0,8 pour la seconde.  
+
+    En conséquence, la capacité affectée pour le premier ordre sera de 24 min et pour la seconde de 96. La durée des deux ordres reste de deux heures.  
+
+Dans les deux cas, le temps total affecté pour tous les ordres est de deux heures.
+
+
+### <a name="efficient-resource-can-dedicate-only-part-of-their-work-date-to-productive-work"></a>Une ressource efficace ne peut consacrer qu’une partie de sa date de travail à un travail productif
+
+> [!NOTE]
+> Ce scénario n’est pas recommandé. Nous vous recommandons d’utiliser plutôt l’efficacité. 
+
+L’un de vos ateliers représente un collaborateur expérimenté qui travaille avec 100 % d’efficacité sur les tâches. Mais il ne peut consacrer que 50 % de son temps de travail à des tâches, car le reste du temps, il résout des tâches administratives. Bien que ce collaborateur soit capable d’accomplir une tâche de deux heures en deux heures exactement, vous devez en moyenne attendre encore deux heures pendant que la personne s’occupe d’autres tâches.  
+
+Le temps d’exécution affecté est de deux heures et la durée est de quatre heures.  
+
+N’utilisez pas le temps de préparation pour de tels scénarios, car le système n’allouera que 50 % du temps. Si le temps de préparation est défini sur *2*, le temps de préparation affecté est d’une heure et la durée de deux heures.
+
+### <a name="consolidated-calendar"></a>Calendrier consolidé
+
+Lorsque le champ **Calendrier consolidé** est sélectionné, l'atelier n’a pas de capacité propre. Au lieu de cela, sa capacité est égale à la somme des capacités de toutes les unités de production qui sont affectées à l'atelier.  
+
+> [!NOTE]
+>  L’efficacité de l'unité de production est convertie en capacité de l'atelier.
+
+Par exemple, si vous avez deux unités de production avec une efficacité de 80 et 70, respectivement, l’entrée de calendrier consolidé aura une efficacité de 100, une capacité de 1,5 et une capacité totale de 12 heures (huit heures de décalage * capacité de 1,5). 
+
+> [!NOTE]
+>  Utilisez le champ **Calendrier consolidé** lorsque vous structurez vos itinéraires pour programmer les opérations de production au niveau de l'unité de production, et non au niveau de l'atelier. Lorsque vous consolidez le calendrier, la page **Charge atelier** et les rapports deviennent une vue d’ensemble de la charge globale dans toutes les unités de production qui sont affectées à l'atelier.
+
+### <a name="example---different-machine-centers-assigned-to-a-work-center"></a>Exemple - Plusieurs unités de production sont affectées à un atelier
 
 Lors de la configuration des postes et des centres de charge, il convient de planifier les capacités constituant la capacité totale.
 
