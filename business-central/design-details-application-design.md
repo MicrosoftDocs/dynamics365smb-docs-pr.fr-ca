@@ -1,36 +1,37 @@
 ---
-title: Détails de conception | Microsoft Docs
+title: Détails de conception de l’application
 description: Ce contenu comprend des informations techniques détaillées sur les fonctionnalités d'application complexes dans Business Central.
 author: SorenGP
-documentationcenter: ''
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/08/2021
+ms.date: 11/26/2021
 ms.author: edupont
-ms.openlocfilehash: df7ea4e62608d64763288b978d4ee48a103e8424
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: 06fa9254f59e283abb673f66190c61e464d510af
+ms.sourcegitcommit: 641d7018f7ee21345a67651bfa4603e6dd2c4bab
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215563"
+ms.lasthandoff: 11/27/2021
+ms.locfileid: "7865687"
 ---
-# <a name="design-details"></a>Détails de conception
-Ce contenu comprend des informations techniques détaillées sur les fonctionnalités complexes de l'application dans [!INCLUDE[prod_short](includes/prod_short.md)].  
+# <a name="application-design-details"></a>Détails de conception de l’application
 
- Le contenu des détails de conception est destiné aux implémenteurs, développeurs et super utilisateurs qui ont besoin d'une analyse approfondie pour implémenter, personnaliser ou créer les fonctionnalités en question.  
+Les articles de cette section contiennent des informations techniques détaillées sur les fonctionnalités d’application complexes de [!INCLUDE[prod_short](includes/prod_short.md)].  
+
+Le contenu des détails de conception est destiné aux implémenteurs, développeurs et super utilisateurs qui ont besoin d'une analyse approfondie pour implémenter, personnaliser ou créer les fonctionnalités en question.  
 
 |**Pour**|**Voir**|  
 |------------|-------------|  
+|Comprenez les mécanismes dans le moteur d'évaluation, comme le mode d'évaluation et l'ajustement des coûts, et pour quels principes de compatibilité ils sont conçus.|[Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)|  
+|Découvrez comment le traitement en lot Ajuster coûts - Écr. article identifie et affecte une date de report aux écritures valeur que le traitement en lot est sur le point de créer.|[Détails de conception : date de report de l'écriture valeur d'ajustement](design-details-inventory-adjustment-value-entry-posting-date.md)|
+|En savoir plus sur la conception des dimensions de stockage et report, notamment des exemples de code sur la façon de migrer et mettre à niveau le code de dimension.|[Détails de conception : écritures d’ensemble de dimensions](design-details-dimension-set-entries-overview.md)|
 |En savoir plus sur la manière dont le système de planification fonctionne et comment modifier les algorithmes pour répondre aux exigences de planification dans différents environnements.|[Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)|  
-|Comprenez les mécanismes dans le moteur d'évaluation, comme le mode d'évaluation et l'ajustement des coûts, et pour quels principes de compatibilité ils sont conçus.|[Détails de conception : stock évaluation stock](design-details-inventory-costing.md)|  
 |En savoir plus sur les principes centraux derrière les fonctions entrepôt avancées et de base et comment elles s'intègrent avec d'autres fonctionnalités de chaîne d'approvisionnement.|[Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)|  
 |En savoir plus sur l'historique et la conception actuelle de la fonctionnalité de traçabilité et la manière dont elle s'intègre avec le système de réservation pour inclure les numéros de série/lot dans les calculs de disponibilité.|[Détails de conception : traçabilité](design-details-item-tracking.md)|  
-|En savoir plus sur la fonction de ligne report de journal général, y compris les simplifications récentes apportées à la conception du codeunit 12.|[Détails de conception : Ligne report de journal général](design-details-general-journal-post-line.md)|
-|En savoir plus sur la conception des dimensions de stockage et report, notamment des exemples de code sur la façon de migrer et mettre à niveau le code de dimension.|[Détails de conception : écritures d’ensemble de dimensions](design-details-dimension-set-entries-overview.md)|
+|En savoir plus sur la fonction de ligne report de journal général.|[Détails de conception : Ligne report de journal général](design-details-general-journal-post-line.md)|
 
 ## <a name="see-also"></a>Voir aussi
 

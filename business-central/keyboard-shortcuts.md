@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: accessibility, shortcuts, keyboarding, keys
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: cf59fb5169419698e3593e1326a38898543b2ac9
-ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
+ms.openlocfilehash: a2acba6a6140be088d38d7473557fc4b7cd40fae
+ms.sourcegitcommit: a6000804ad9a176de5750372d3951547ddb71006
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7588261"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "7865452"
 ---
 # <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
@@ -37,7 +37,7 @@ Les raccourcis clavier facilitent l'accessibilité et la navigation dans différ
 La plupart des raccourcis sont les mêmes, que le système d'exploitation soit Windows ou macOS. Cependant, certains raccourcis diffèrent pour macOS. Ces raccourcis sont indiqués entre parenthèses dans les sections suivantes.
 
 > [!NOTE]
-> Outre les raccourcis clavier globaux décrits dans cette rubrique, un certain nombre de raccourcis spécifiques à votre activité sont disponibles. Par exemple, dans la version générique de [!INCLUDE[prod_short](includes/prod_short.md)], F9 reporte un document et Ctrl+F7 affiche les écritures pour un enregistrement lorsque vous ouvrez l’enregistrement dans une fiche. (Celles-ci peuvent être différentes dans votre solution.) Le raccourci clavier est affiché dans l'info-bulle de l'action en question.
+> Outre les raccourcis clavier globaux décrits dans cet article, un certain nombre de raccourcis spécifiques à votre activité sont disponibles. Par exemple, dans la version générique de [!INCLUDE[prod_short](includes/prod_short.md)], F9 reporte un document et Ctrl+F7 affiche les écritures pour un enregistrement lorsque vous ouvrez l’enregistrement dans une fiche. Cet article inclut certains des raccourcis spécifiques à l’entreprise les plus courants, qui sont affichés en italique. Sachez que les raccourcis réels peuvent être différents dans votre solution. Dans l’interface utilisateur, le raccourci clavier est affiché dans l’info-bulle de l’action en question.
 
 ##  <a name="general-keyboard-shortcuts"></a><a name="Keyboard"></a> Raccourcis clavier généraux
 
@@ -83,7 +83,15 @@ Le tableau suivant décrit les raccourcis clavier que vous pouvez utiliser dans 
 |--------------------------------|-------------------------|--------------------------|
 |Alt+F7 |Triez la colonne sélectionnée dans l'ordre croissant ou décroissant.|Non applicable.|
 |Alt+N|Insérer une nouvelle ligne dans une liste modifiable, telle que la page **Budgets GL**.|Identique.|
+|Shift+F9|Reporter et imprimer un document.|Identique.|
 |Shift+F10 |Ouvrir un menu d'options disponibles pour la ligne sélectionnée.|Identique.|
+|Alt+D|Ouvrir les écritures de l’ensemble de dimensions.|Identique.|
+|Ctrl+F7|Ouvrir les écritures, les écritures journal, les écritures coûts, etc.|
+|Ctrl+F9|Libérer un document.|Identique.|
+|*F7*|Ouvrir les statistiques.|Identique.|
+|*F9*|Reporter, émettre, enregistrer ou inverser un document.|Identique.|
+|*Shift+Ctrl+F*|Envoyer les lignes suggérées sur la page des feuilles de calcul des flux de trésorerie.|Non applicable.|
+|*Shift+Ctrl+I*|Afficher les numéros de série et de lot qui sont affectés à l’élément de ligne sur le document ou le journal.|Non applicable.|
 
 ### <a name="navigating-between-rows-and-columns"></a><a name="navigateshortcuts"></a>Navigation entre les lignes et les colonnes
 
@@ -103,7 +111,7 @@ Des grilles contenant des lignes et des colonnes existent sur de nombreux types 
 | Flèche vers le haut | Accédez au champ de la ligne du dessus au sein de la même colonne | Accédez au champ de la vignette du dessus au sein de la même colonne |
 | Flèche vers la droite | Dans une liste en lecture seule, accédez au prochain champ à droite de la même ligne.<br /><br />Dans une liste modifiable, allez à droite dans le champ actuel. | Accédez à la prochaine vignette à droite de la même ligne. |
 | Flèche vers la gauche | Dans une liste en lecture seule, accédez au champ précédent à gauche de la même ligne. <br /><br />Dans une liste modifiable, allez à gauche dans le champ actuel. | Accédez à la vignette précédente à gauche de la même ligne. |
-| Tab | Dans une liste modifiable, accédez au prochain champ à droite de la même ligne. | Non applicable. |  |
+| Tab | Dans une liste modifiable, accédez au prochain champ à droite de la même ligne. | Non applicable. | 
 | MAJ+Tab | Dans une liste modifiable, accédez au champ suivant à gauche de la même ligne. | Non applicable. |
 
 ### <a name="selecting-copying-and-pasting"></a><a name="CopyRows"></a>Sélection, copie et collage
@@ -142,7 +150,9 @@ Les raccourcis suivants sont disponibles sur les pages Fiche, telles que **Fiche
 
 |Appuyez sur les touches suivantes<br />(dans macOS)|Pour|
 |--------------------------------|----------|
+|Alt+D|Ouvrir les écritures de l’ensemble de dimensions.|
 |Alt+F6|Basculer entre réduire ou développer pour le raccourci ou l'élément (sous-page) actuel.|
+|Alt+F9|Créer un document et le reporter.|
 |Alt+G|Ouvrez la page **Rechercher des écritures** pour rechercher des écritures liées au document reporté. Fonctionne également sur les listes.|
 |Alt+N |Ouvrir une page pour créer un nouvel enregistrement ; de la même façon qu'en sélectionnant l'action **Nouveau**. |
 |Alt+Maj+N |Fermer une page et en ouvrir une nouvelle pour créer un enregistrement, de la même façon qu'en sélectionnant l'action **OK & Nouveau**. |
@@ -152,9 +162,15 @@ Les raccourcis suivants sont disponibles sur les pages Fiche, telles que **Fiche
 |Ctrl+Flèche haut |Ouvrez le précédent enregistrement pour une entité.|
 |Ctrl+Inser |Insérer une nouvelle ligne sur des documents.|
 |Ctrl+Suppr |Supprimer la ligne sur des documents, des journaux ou des feuilles de calcul.|
+|Ctrl+F7|Ouvrir les écritures, les écritures journal, les écritures coûts, etc.|
+|Ctrl+F9|Libérer un document.|
 |Ctrl+Shift+F12 |Maximiser la partie des éléments de ligne sur une page de document. Appuyez à nouveau sur les touches pour revenir à l'écran normal. Pour en savoir plus, reportez-vous à la rubrique [Concentration sur les articles de ligne](ui-enter-data.md#Focus).|
 |F6|Accéder au raccourci ou à l'élément suivant (sous-page).|
+|*F7*|Ouvrir les statistiques.|
+|*F9*|Reporter, émettre, enregistrer ou inverser un document.|
+|*Shift+Ctrl+F9*|Reporter, imprimer et ranger la réception entrepôt.|
 |Shift+F6|Accédez au raccourci ou à l'élément précédent (sous-page).|
+|*Shift+F9*|Reporter et imprimer un document.|
 
 ## <a name="quick-entry-shortcuts-for-fields"></a><a name="QuickEntry"></a>Raccourcis rapides d'écriture pour les champs
 
