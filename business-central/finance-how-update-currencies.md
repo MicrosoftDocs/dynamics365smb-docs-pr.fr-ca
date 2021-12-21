@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.search.keywords: multiple currencies, adjust exchange rates, FX rates
 ms.date: 07/23/2021
 ms.author: edupont
-ms.openlocfilehash: c4072e0371499982fc86d6c16b4d614552bc4533
-ms.sourcegitcommit: e904da8dc45e41cdd1434111c15e2a9d9edd3fa2
+ms.openlocfilehash: 44dd13f986098283d29e58d3e8c4ce0218b4a083
+ms.sourcegitcommit: 41876b559872fe7adbfa5b59a6e1a71dc907fb15
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "6660191"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921068"
 ---
 # <a name="update-currency-exchange-rates"></a>Mettre à jour des taux de change devise
 
@@ -174,7 +174,10 @@ Les dimensions par défaut des comptes dans lesquels elles sont reportées sont 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE3Q24s?rel=0]
 
 ## <a name="to-set-up-a-currency-exchange-rate-service"></a>Configurer un service de taux de change des devises
-Vous pouvez utiliser un service externe pour tenir vos taux de change des devises à jour, par exemple FloatRates.
+Vous pouvez utiliser un service externe pour tenir vos taux de change des devises à jour, par exemple FloatRates. 
+
+> [!NOTE]
+> La plupart des services de taux de change fournissent des données compatibles avec le processus d’importation dans [!INCLUDE[prod_short](includes/prod_short.md)]. Cependant, les données sont parfois formatées différemment et vous devrez personnaliser votre processus d’importation. Pour cela, vous pouvez utiliser l’infrastructure d’échange de données en ajoutant votre propre codeunit. Vous aurez probablement besoin de l’aide d’un développeur. Pour plus d'informations, voir [Configurer les définitions d'échange de données](across-how-to-set-up-data-exchange-definitions.md).
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Services de taux de change des devises**, puis choisissez le lien associé.
 2. Sélectionnez l'action **Nouveau**.

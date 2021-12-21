@@ -7,14 +7,15 @@ ms.topic: conceptual
 ms.search.keyword: prepayment
 ms.date: 10/27/2021
 ms.author: edupont
-ms.openlocfilehash: 517d815e323f2b1d0e3c120808a5543bff462ff3
-ms.sourcegitcommit: 400554d3a8aa83d442f134c55da49e2e67168308
+ms.openlocfilehash: a09f0cd35c62b65bf690fd785c0fc9a4b4b178d7
+ms.sourcegitcommit: 4223484b0eeceb0258dae5abfd04e1a9a4a0990d
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7701525"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7889830"
 ---
 # <a name="set-up-prepayments"></a>Configuration des acomptes
+
 Si vous voulez que vos clients fassent des paiements avant de leur livrer une commande ou si votre fournisseur exige que vous fassiez un paiement avant de vous livrer une commande, vous pouvez utiliser la fonctionnalité Paiement anticipé. La fonctionnalité paiements anticipés vous permet de facturer et de collecter les paiements anticipés requis des clients ou de régler des paiements anticipés aux fournisseurs, et de vous assurer que tous les paiements partiels sont reportés sur une facture. Pour plus d'informations, voir [Créer des factures de paiement anticipé](finance-how-to-create-prepayment-invoices.md).
 
 Avant de reporter des factures paiement anticipé, vous devez configurer les comptes de report dans le grand livre et configurer des séries de numéros pour les documents paiement anticipé. Vous devez spécifier un compte pour les paiements anticipés liés aux ventes et un compte pour les paiements anticipés liés aux achats. Vous pouvez spécifier les mêmes comptes report à utiliser pour tous les paiements anticipés liés à tous les groupes de report marché ou groupes report produit, ou vous pouvez spécifier des comptes spécifiques pour des groupes de report spécifiques pour les ventes et les achats, respectivement. Cela dépend des exigences de votre compagnie en matière de suivi des paiements anticipés.  
@@ -23,6 +24,7 @@ Vous pouvez définir le pourcentage du montant ligne qui sera facturé pour paie
 
 > [!NOTE]
 > Nous vous recommandons de ne pas utiliser un pourcentage de paiement anticipé de 100 % dans les cas suivants :
+>
 > * Si vous résidez en Amérique du Nord. En raison du mode de calcul des taxes, un pourcentage de paiement anticipé de 100 % peut entraîner des problèmes avec les factures de paiement anticipé.
 > * Dans toutes les régions, si vous déduisez manuellement un escompte de paiement de la facture. Un pourcentage de paiement anticipé de 100 % ne laissera pas automatiquement un montant duquel déduire l'escompte. 
 
@@ -33,10 +35,10 @@ Puisque le montant prépayé appartient à l'acheteur jusqu'à ce qu'il ait reç
 ## <a name="to-add-prepayment-accounts-to-the-general-posting-setup"></a>Ajouter des comptes paiement anticipé à la configuration de report générale  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du report général**, puis choisissez le lien associé.
-2. Sur la page **Configuration du report général**, vous devez renseigner les champs suivants :  
+2. Sur la page **Configuration du report général**, renseignez les champs suivants pour les lignes appropriées :  
 
-    - **Compte de paiements anticipés de vente**  
-    - **Compte de paiements anticipés d'achat**  
+    * **Compte de paiements anticipés de vente**  
+    * **Compte de paiements anticipés d'achat**  
 
 > [!TIP]
 > Si vous ne pouvez pas voir les champs de la page **Configuration du report général**, utilisez la barre de défilement horizontale au bas de la page pour faire défiler l'affichage vers la droite.  
@@ -45,17 +47,17 @@ Si vous n'avez pas encore configuré de comptes GL pour les paiements anticipés
 
 ## <a name="to-set-up-number-series-for-prepayment-documents"></a>Configurer des séries de numéros pour des documents paiement anticipé  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration ventes & à recevoir**, puis choisissez le lien associé.
-2. Sur la page **Configuration ventes et à recevoir**, renseignez les champs suivants :  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.
+2. Sur la page **Configuration ventes**, sur le raccourci **Séries de numéros**, remplissez les champs suivants :  
 
-   - **N° factures pour paiement anticipé reporté**
-   - **N° notes de crédit pour paiement anticipé reporté**
+   * **N° factures pour paiement anticipé reporté**
+   * **N° notes de crédit pour paiement anticipé reporté**
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration achats et à payer**, puis choisissez le lien associé.
-2. Sur la page **Configuration ventes et à recevoir**, renseignez les champs suivants :
+3. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Configuration achats et à payer**, puis sélectionnez le lien associé.
+4. Sur la page **Configuration achats**, sur le raccourci **Séries de numéros**, remplissez les champs suivants :
 
-    - **N° factures pour paiement anticipé reporté**
-    - **N° notes de crédit pour paiement anticipé reporté**
+    * **N° factures pour paiement anticipé reporté**
+    * **N° notes de crédit pour paiement anticipé reporté**
 
 > [!NOTE]  
 > Vous pouvez utiliser les mêmes séries de numéros pour des factures paiement anticipé et des factures normales, ou utiliser des séries de numéros différentes. Si vous utilisez des souches différentes, elles ne doivent pas se chevaucher car vous ne pouvez pas avoir des numéros identiques dans les deux souches.  
@@ -74,6 +76,9 @@ Pour un client ou un fournisseur, vous pouvez configurer un pourcentage de paiem
 2. Ouvrez la fiche d'un client.
 3. Remplissez le champ **% paiement anticipé**.
 4. Répétez les étapes pour d'autres clients ou fournisseurs.  
+
+> [!TIP]
+> Vous pouvez également accéder à la page **Pourcentages paiement anticipé vente** à partir de la fiche client ou fournisseur.
 
 ### <a name="to-determine-which-prepayment-percentage-has-first-priority"></a>Pour déterminer quel pourcentage de paiement anticipé a la priorité  
 

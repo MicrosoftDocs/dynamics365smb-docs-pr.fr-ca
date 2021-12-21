@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.topic: conceptual
 ms.service: dynamics365-business-central
 ms.author: edupont
-ms.date: 07/09/2021
-ms.openlocfilehash: 3dc07c19093ff2068a2d749fdf2b260ea82c4672
-ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
+ms.date: 10/26/2021
+ms.openlocfilehash: bc04ebdbd8092fc480fdaa00043b4e4c49fa823e
+ms.sourcegitcommit: 41876b559872fe7adbfa5b59a6e1a71dc907fb15
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7588061"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920938"
 ---
 # <a name="resources-for-help-and-support"></a>Ressources pour l'Aide et le support
 
@@ -22,7 +22,7 @@ Dans [!INCLUDE[prod_long](includes/prod_long.md)], l’article du menu Aide (le 
 
 [!INCLUDE [2021_releasewave2](includes/2021_releasewave2.md)]
 
-La deuxième vague de lancement 2021 comprend un nouveau volet d’aide doté d’un onglet de recherche. Utilisez le champ de recherche pour rechercher des conseils sur l’utilisation du produit, les capacités intégrées et les modules de formation disponibles. Selon vos termes de recherche, le volet affiche 5 liens ou plus, avec une courte description. Choisissez un lien ou affinez vos termes de recherche. Lorsque vous choisissez un lien, l’article cible s’ouvre dans un nouvel onglet de navigateur. Vous pouvez ensuite choisir de désancrer l’onglet du navigateur afin de pouvoir afficher les informations pertinentes côte à côte avec [!INCLUDE [prod_short](includes/prod_short.md)]. Le volet reste ouvert pendant que vous naviguez dans [!INCLUDE [prod_short](includes/prod_short.md)], de sorte que le contenu que vous avez recherché reste visible.  
+La deuxième vague de lancement 2021 comprend un nouveau volet d’aide doté d’un onglet de recherche. Utilisez le champ de recherche pour rechercher des conseils sur l’utilisation du produit, les capacités intégrées et les modules de formation disponibles. Selon vos termes de recherche, le volet affiche cinq liens ou plus, avec une courte description. Choisissez un lien ou affinez vos termes de recherche. Lorsque vous choisissez un lien, l’article cible s’ouvre dans un nouvel onglet de navigateur. Vous pouvez ensuite choisir de désancrer l’onglet du navigateur afin de pouvoir afficher les informations pertinentes côte à côte avec [!INCLUDE [prod_short](includes/prod_short.md)]. Le volet reste ouvert pendant que vous naviguez dans [!INCLUDE [prod_short](includes/prod_short.md)], de sorte que le contenu que vous avez recherché reste visible.  
 
 > [!NOTE]
 > Dans la version actuelle de [!INCLUDE [prod_short](includes/prod_short.md)], le champ de recherche du volet d’aide s’applique uniquement au contenu publié sur le site docs.microsoft.com.
@@ -59,7 +59,7 @@ La section **Rechercher** inclut deux liens vers l'Aide des produits :
 
 - Aide concernant la page que vous venez d'afficher dans [!INCLUDE[prod_short](includes/prod_short.md)]  
 
-  Ce lien est généré automatiquement. Si [!INCLUDE[prod_short](includes/prod_short.md)] ne trouve pas le lien pertinent, la page de destination sur [Docs.microsoft.com](index.md) pour la version par défaut de [!INCLUDE[prod_short](includes/prod_short.md)] s'affiche. Par exemple, si la page faisait partie d'une application qui n'a pas ajouté de mappage d'aide contextuelle à [!INCLUDE[prod_short](includes/prod_short.md)], le *Lien d'apprentissage* accède par défaut à la page de destination.  
+  Ce lien est généré automatiquement. Si [!INCLUDE[prod_short](includes/prod_short.md)] ne trouve pas le lien pertinent, la page de destination sur [Docs.microsoft.com](index.md) pour la version par défaut de [!INCLUDE[prod_short](includes/prod_short.md)] s’affiche. Par exemple, si la page faisait partie d’une application qui n’a pas ajouté de mappage d’aide contextuelle à [!INCLUDE[prod_short](includes/prod_short.md)], le *Lien d’apprentissage* accède par défaut à la page de destination.  
 - Page de destination de l'aide pour [!INCLUDE[prod_short](includes/prod_short.md)]  
 
   La fonctionnalité de la version par défaut de [!INCLUDE[prod_short](includes/prod_short.md)] est décrite sur le site [Docs.microsoft.com](/dynamics365/business-central). Pour plus d’informations, voir la section [Utilisation du site docs.microsoft.com pour en savoir plus](#use-the-docsmicrosoftcom-site-to-learn-more). Vous pouvez également étendre et personnaliser [!INCLUDE[prod_short](includes/prod_short.md)] avec des applications de AppSource. Toutes les applications fournissent des liens vers l'Aide relative aux produits pertinents afin que vous trouviez toujours des instructions pour les différents flux des opérations de votre version de [!INCLUDE[prod_short](includes/prod_short.md)].  
@@ -85,7 +85,7 @@ Pour l'aperçu à plus long terme, la [!INCLUDE[prod_short](includes/prod_short.
 Cette section vous donne des raccourcis vers Microsoft AppSource où vous trouverez des solutions et des services auprès de partenaires [!INCLUDE[prod_short](includes/prod_short.md)]. Utilisez les liens pour explorer l'intégralité des fonctionnalités de [!INCLUDE[prod_short](includes/prod_short.md)] avant de décider si vous souhaitez souscrire à un abonnement. Vous y trouverez également un lien pour contacter l'équipe commerciale.
 
 > [!NOTE]
-> Cette section est disponible uniquement dans les versions d'évaluation. Si vous avez déjà acheté [!INCLUDE[prod_short](includes/prod_short.md)], la section n'est plus disponible.
+> Cette section est disponible uniquement dans les versions d’évaluation [!INCLUDE[prod_short](includes/prod_short.md)] online. Si vous avez déjà acheté [!INCLUDE[prod_short](includes/prod_short.md)], la section n’est plus disponible.
 
 ### <a name="give-feedback"></a>Envoyer des commentaires
 
@@ -95,11 +95,11 @@ Veillez à effectuer votre recherche dans la liste des suggestions proposées. I
 
 ### <a name="troubleshooting"></a>Dépannage
 
-La section **Dépannage** propose des informations techniques que votre administrateur ou votre partenaire [!INCLUDE[prod_short](includes/prod_short.md)] peut utiliser pour aider les utilisateurs à trouver une solution. Cela inclut des informations sur le dernier message d'erreur, la version actuelle de [!INCLUDE[prod_short](includes/prod_short.md)] ainsi qu'un lien pour accéder à la page **Inspection des pages**. Pour plus d'informations, reportez-vous à la section [Inspection des pages dans Business Central](across-inspect-page.md).  
+La section **Dépannage** propose des informations techniques que votre administrateur ou votre partenaire [!INCLUDE[prod_short](includes/prod_short.md)] peut utiliser pour aider les utilisateurs à trouver une solution. Cette section comprend des informations sur le dernier message d’erreur, la version actuelle de [!INCLUDE[prod_short](includes/prod_short.md)] ainsi qu’un lien pour accéder à la page **Inspection des pages**. Pour plus d'informations, reportez-vous à la section [Inspection des pages dans Business Central](across-inspect-page.md).  
 
 Pour vous aider, vous ou votre partenaire d’assistance, à résoudre les problèmes, vous pouvez activer la journalisation supplémentaire dans la section **Signaler un problème**. Vous pouvez ensuite analyser la télémétrie supplémentaire dans le centre d’administration ou Application Insights, par exemple.  
 
-En tant qu'administrateur interne, vous avez accès au centre d'administration où vous pouvez poursuivre le dépannage. Vous pouvez afficher la télémétrie, gérer les environnements et gérer les sessions utilisateur. Les articles suivants du contenu d’administration offrent davantage d’informations :
+En tant qu’administrateur interne, vous avez accès au centre d’administration où vous pouvez poursuivre le dépannage. Vous pouvez afficher la télémétrie, gérer les environnements et gérer les sessions utilisateur. Les articles suivants du contenu d’administration offrent davantage d’informations :
 
 - [Recherche d’informations techniques](/dynamics365/business-central/dev-itpro/administration/manage-technical-support#finding-technical-information)  
 - [Gestion des environnements](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments)  
@@ -108,18 +108,23 @@ En tant qu'administrateur interne, vous avez accès au centre d'administration o
 
 ### <a name="report-a-problem"></a>Signaler un problème
 
-Votre partenaire revendeur [!INCLUDE[prod_short](includes/prod_short.md)] est tenu de vous aider en matière de support technique. Cette section facilite le contact de votre partenaire commercial s’il a envoyé ses informations de contact de support. Si votre partenaire [!INCLUDE[prod_short](includes/prod_short.md)] ne peut pas résoudre le problème, il déclenchera un ticket d'assistance avec Microsoft.  
+Votre partenaire revendeur [!INCLUDE[prod_short](includes/prod_short.md)] est tenu de vous aider en matière de support technique. Cette section facilite le contact de votre partenaire commercial s’il a envoyé ses informations de contact de support. Si votre partenaire [!INCLUDE[prod_short](includes/prod_short.md)] ne peut pas résoudre le problème, il déclenchera un ticket d’assistance avec Microsoft.  
 
 Pour plus d'informations, voir [Réaffectation des problèmes de support à Microsoft](/dynamics365/business-central/dev-itpro/administration/manage-technical-support#escalating-support-issues-to-microsoft) dans le contenu d'administration.  
 
 > [!NOTE]
-> Cette section est disponible uniquement si vous avez souscrit à un abonnement [!INCLUDE[prod_short](includes/prod_short.md)]. Si vous vous êtes inscrit pour une évaluation et que vous n'avez pas encore acheté [!INCLUDE[prod_short](includes/prod_short.md)], vous n'avez pas de partenaire revendeur, et vous ne pouvez pas contacter l'équipe de support technique Microsoft. Vous pouvez rechercher un partenaire [!INCLUDE[prod_short](includes/prod_short.md)] sur la page [Je recherche un fournisseur de solution](https://go.microsoft.com/fwlink/?linkid=2038145). Pour plus d’informations, voir [Comment trouver un partenaire revendeur ?](/dynamics365/business-central/across-faq#findpartner).  
+> Avec [!INCLUDE[prod_short](includes/prod_short.md)] en ligne, la section **Signaler un problème** n’est disponible que si vous avez payé un abonnement [!INCLUDE[prod_short](includes/prod_short.md)]. Si vous vous êtes inscrit pour une évaluation et que vous n’avez pas encore acheté [!INCLUDE[prod_short](includes/prod_short.md)], vous n’avez pas de partenaire revendeur, et vous ne pouvez pas contacter l’équipe de support technique Microsoft. Vous pouvez rechercher un partenaire [!INCLUDE[prod_short](includes/prod_short.md)] sur la page [Je recherche un fournisseur de solution](https://go.microsoft.com/fwlink/?linkid=2038145). Pour plus d’informations, voir [Comment trouver un partenaire revendeur ?](/dynamics365/business-central/across-faq#findpartner).  
+>
+> Avec [!INCLUDE[prod_short](includes/prod_short.md)] sur site, cette section n’est disponible qu’à partir de la deuxième vague de lancement 2020 (version 18).
 
 ### <a name="support-contacts"></a>Contacts de support
 
 La section **Signaler un problème** affiche une adresse de courriel ou un lien hypertexte vous permettant de contacter la personne ou l’équipe du support client. Si vous êtes le partenaire revendeur [!INCLUDE[prod_short](includes/prod_short.md)] pour un abonné, vous pouvez définir les informations de contact de support dans le centre d'administration. Pour en savoir plus, reportez-vous à la rubrique [Configuration de l’expérience de support](/dynamics365/business-central/dev-itpro/technical-support#configuring-the-support-experience) dans le contenu d’administration.  
 
 Pour alerter votre partenaire en cas de problème, choisissez le lien pour envoyer un courriel ou ouvrir son site de support dans un nouvel onglet de navigateur. Vous pouvez ensuite ajouter les informations techniques sur votre abonné Azure Active Directory à partir de la section **Dépannage** et toute autre information que vous trouvez pertinente.  
+
+> [!NOTE]
+> Les informations sur les contacts du support technique ne sont pas disponibles avec [!INCLUDE[prod_short](includes/prod_short.md)] on-premises.
 
 ## <a name="use-the-docsmicrosoftcom-site-to-learn-more"></a>Utiliser le site docs.microsoft.com pour en savoir plus
 
@@ -135,7 +140,7 @@ Dans cette section, vous pouvez découvrir comment naviguer dans le contenu des 
 
 ### <a name="content-on-the-site"></a>Contenu sur le site
 
-[Cette section](index.md) du site docs.microsoft.com héberge du contenu de Microsoft qui représente le pilier *En savoir plus* du modèle d'assistance aux utilisateurs. En partie, le contenu *En savoir plus* a l'intention de répondre aux questions auxquelles l'interface utilisateur ne peut pas répondre, telles que les suivantes :
+[Cette section](index.md) du site docs.microsoft.com héberge du contenu de Microsoft qui représente le pilier *En savoir plus* du modèle d'assistance aux utilisateurs. En partie, le contenu *En savoir plus* a l’intention de répondre aux questions auxquelles l’interface utilisateur ne peut pas répondre, telles que les suivantes :
 
 - Où cette page s'intègre-t-elle dans le workflow plus large ?  
 - Que ce passe t-il après ?  
@@ -143,9 +148,9 @@ Dans cette section, vous pouvez découvrir comment naviguer dans le contenu des 
 
 Depuis l’intérieur du produit, vous pouvez accéder à ce contenu soit via le lien *En savoir plus* dans les info-bulles et des conseils d'apprentissage, ou en utilisant le raccourci clavier *Ctrl + F1*.  
 
-Le panneau de navigation à gauche, la table des matières, regroupe les articles par domaine d'activité. Par exemple, vous lisez l'article [Acheter des articles pour une vente](purchasing-how-purchase-products-sale.md), puis la table des matières vous montre qu'il existe également un article intitulé [Corriger ou annuler des factures achat impayées](purchasing-how-correct-cancel-unpaid-purchase-invoices.md). Les deux articles sont dans le groupe appelé *Achat*, qui regroupe les articles liés au module Achats dans [!INCLUDE [prod_short](includes/prod_short.md)].  
+Le panneau de navigation à gauche, la table des matières, regroupe les articles par domaine d'activité. Par exemple, vous lisez l’article [Acheter des articles pour une vente](purchasing-how-purchase-products-sale.md), puis la table des matières vous montre qu’il existe également un article intitulé [Corriger ou annuler des factures achat impayées](purchasing-how-correct-cancel-unpaid-purchase-invoices.md). Les deux articles sont dans le groupe appelé *Achat*, qui regroupe les articles liés au module Achats dans [!INCLUDE [prod_short](includes/prod_short.md)].  
 
-La table des matières comprend un groupe de contenu qui décrit les [fonctionnalités locales](about-localization.md) pour les pays pris en charge par Microsoft. Si votre pays n'y figure pas, c'est probablement parce que votre pays est localisé par un partenaire. Pour plus d'informations, voir [Disponibilité par pays/région et langues prises en charge](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations).  
+La table des matières comprend un groupe de contenu qui décrit les [fonctionnalités locales](about-localization.md) pour les pays pris en charge par Microsoft. Si votre pays n’y figure pas, c’est probablement parce que votre pays est localisé par un partenaire. Pour plus d'informations, voir [Disponibilité par pays/région et langues prises en charge](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations).  
 
 Le contenu des fonctionnalités locales décrit les capacités de [!INCLUDE [prod_short](includes/prod_short.md)] qui peuvent vous aider à être conforme sur les marchés pris en charge, telles que les déclarations fiscales et autres rapports. Dans certains cas, la différence entre la version par défaut et la version spécifique au pays est invisible pour les utilisateurs. Dans d'autres cas, les utilisateurs doivent configurer le rapport ou la facturation électronique d'une manière spécifique. Si vous ne trouvez pas la description d’un certain bouton ou d’une action dans la section générale, vous pouvez espérer la trouver dans la section *Fonctionnalités locales*.  
 
@@ -167,7 +172,7 @@ Si vous arrivez sur un article qui ne répond pas à votre question, vous pouvez
 
 ### <a name="languages"></a>Langues
 
-Le contenu sur les fonctionnalités d’entreprise est publié dans plusieurs langues. Lorsque vous atterrissez sur le site docs.microsoft.com depuis l'intérieur du produit, vous voyez le contenu dans la même langue que celle que vous avez spécifiée dans [!INCLUDE [prod_short](includes/prod_short.md)], sauf si cette langue n'est pas disponible sur le site docs.microsoft.com.  
+Le contenu sur les fonctionnalités d’entreprise est publié dans plusieurs langues. Lorsque vous atterrissez sur le site docs.microsoft.com depuis l’intérieur du produit, vous voyez le contenu dans la même langue que celle que vous avez spécifiée dans [!INCLUDE [prod_short](includes/prod_short.md)], sauf si cette langue n’est pas disponible sur le site docs.microsoft.com.  
 
 Vous pouvez changer la langue en changeant l’URL, ou vous pouvez utiliser la bascule de langue dans le coin inférieur gauche du site web.  
 
@@ -181,7 +186,7 @@ En mars 2021, une nouvelle section est apparue sous la plupart des articles du 
 
 ### <a name="tell-us-what-you-think"></a>Dites-nous ce que vous pensez
 
-Sur docs.microsoft.com, chaque article a deux boutons à la fin de l'article. Le bouton *Ce produit* vous envoie sur le site Idées et le bouton *Cette page* vous permet d’envoyer des commentaires sur le contenu via GitHub. Dans les deux cas, vous devez créer un compte si vous n'en avez pas déjà. Pour *Commentaires sur le produit*, vous devez vous connecter avec votre compte de courriel professionnel ou organisationnel. Pour *accès à GitHub*, vous pouvez utiliser n'importe quelle adresse de courriel lorsque vous créez un compte.  
+Sur docs.microsoft.com, chaque article a deux boutons à la fin de l'article. Le bouton *Ce produit* vous dirige vers le site Idées et le bouton **Cette page** vous permet d’envoyer des commentaires sur le contenu via GitHub. Dans les deux cas, vous devez créer un compte si vous n’en avez pas déjà. Pour *Commentaires sur le produit*, vous devez vous connecter avec votre compte de courriel professionnel ou organisationnel. Pour *accès à GitHub*, vous pouvez utiliser n'importe quelle adresse de courriel lorsque vous créez un compte.  
 
 Nous nous félicitons de vos contributions, à la fois sous forme de demandes d'extraction avec des suggestions ou des corrections au contenu, et en tant que problèmes GitHub avec des bugs ou des questions. Mais n'oubliez pas que les commentaires et contributions au repo *Dynamics365smb-docs* concernent le contenu, pas le produit.  
 
@@ -194,7 +199,7 @@ Le site docs.microsoft.com héberge du contenu pour d’autres produits et d’a
 
 ## <a name="apps-and-other-solutions"></a>Applications et autres solutions
 
-Si votre instance de [!INCLUDE [prod_short](includes/prod_short.md)] inclut une fonctionnalité qui n'est pas fournie par Microsoft, alors le fournisseur de cette fonctionnalité fournit également le contenu *En savoir plus* sur leur propre site web. Vous pouvez accéder à ce contenu de la même manière que dans la version par défaut de [!INCLUDE [prod_short](includes/prod_short.md)], par exemple en utilisant le raccourci clavier *Ctrl+F1*.  
+Si votre instance de [!INCLUDE [prod_short](includes/prod_short.md)] inclut une fonctionnalité qui n’est pas fournie par Microsoft, alors le fournisseur de cette fonctionnalité fournit également le contenu *En savoir plus* sur leur propre site web. Vous pouvez accéder à ce contenu de la même manière que dans la version par défaut de [!INCLUDE [prod_short](includes/prod_short.md)], par exemple en utilisant le raccourci clavier *Ctrl+F1*.  
 
 La même chose s'applique si vous utilisez [!INCLUDE [prod_short](includes/prod_short.md)] sur site.  
 

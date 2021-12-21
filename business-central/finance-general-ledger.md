@@ -8,16 +8,16 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: analysis, history, track
-ms.date: 06/16/2021
+ms.date: 12/03/2021
 ms.author: edupont
-ms.openlocfilehash: 2e939ef134fbe008268d190d601c70694d81297c
-ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
+ms.openlocfilehash: 183aa0cee83c826d51f582faead9d3a53b02ce71
+ms.sourcegitcommit: 4223484b0eeceb0258dae5abfd04e1a9a4a0990d
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7588637"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7889804"
 ---
-# <a name="understanding-the-general-ledger-and-the-coa"></a>Familiarisation avec le grand livre et les COA
+# <a name="understanding-the-general-ledger-and-the-chart-of-accounts"></a>Comprendre le grand livre et le plan comptable
 
 Le grand livre stocke vos données financières, et le plan comptable affiche les comptes sur lesquels toutes les écritures sont reportées. [!INCLUDE[prod_short](includes/prod_short.md)] inclut un plan comptable standard prêt à prendre en charge votre société.
 
@@ -31,10 +31,13 @@ Sur la page **Configuration du grand livre**, vous spécifiez comment gérer cer
 * Les formats d'adresse  
 * Rapports financiers  
 
-De même, sur la page **Configuration du report général**, vous spécifiez comment vous souhaitez configurer les combinaisons de groupes de report général marché et de report général produit. Les groupes comptabilisation mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes généraux. Saisissez une ligne pour chaque combinaison de groupes de report marché et de groupes de report produit. Pour plus d'informations, voir [Configurations du groupe de report](finance-posting-groups.md).  
-
 > [!TIP]
 > La page **Configuration du grand livre** comprend des champs génériques et des champs spécifiques à votre pays ou région. Si vous n'êtes pas sûr de la signification d'un champ, nous vous suggérons de travailler avec votre comptable pour déterminer s'il est pertinent pour votre organisation.  
+
+De même, sur la page **Configuration du report général**, vous spécifiez comment vous souhaitez configurer les combinaisons de groupes de report général marché et de report général produit. Les groupes comptabilisation mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes généraux. Saisissez une ligne pour chaque combinaison de groupes de report marché et de groupes de report produit. Mais vous pouvez également ouvrir chaque ligne dans sa propre fiche configuration report. Pour plus d'informations, voir [Configurations du groupe de report](finance-posting-groups.md).  
+
+> [!TIP]
+> Si vous ne pouvez pas voir les champs que vous recherchez sur la page **Configuration du report général**, utilisez la barre de défilement horizontale au bas de la page pour faire défiler l’affichage vers la droite.  
 
 ## <a name="the-chart-of-accounts"></a>Le plan comptable
 
