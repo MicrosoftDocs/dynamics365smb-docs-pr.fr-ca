@@ -1,8 +1,6 @@
 ---
 title: Codes IGRF au Canada
 description: Au Canada, vous pouvez définir l'Index général des renseignements financiers (IGRF) et l'affecter aux comptes de report.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -10,14 +8,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: local
+ms.search.form: 10017
 ms.date: 06/29/2021
 ms.author: edupont
-ms.openlocfilehash: d7c59c8737a04884b657c74903a72d47c7f1b1d7
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 3454c1233ee9ea96ef6933d1e921a031fd5c4c6f
+ms.sourcegitcommit: f7e46d0f7b16d3b41e751aa9f337da18d37c11db
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6438454"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "7947071"
 ---
 # <a name="work-with-gifi-codes-in-the-canadian-version"></a>Utiliser les codes IGRF dans la version canadienne
 Les informations fiscales peuvent inclure des comptes généraux, des états, des comptes de gestion, des bilans et des relevés des bénéfices non répartis. Les informations fiscales sont classifiées par le biais de codes. L'utilisation de codes aide le gouvernemental à traiter les informations, à préparer l'archivage électronique et à valider les informations fiscales par voie électronique. L'utilisation de codes aide également les organisations statistiques à travailler plus efficacement, en rendant les données financières plus facilement disponibles. Pour plus d'informations, reportez-vous au [site Web de l'Agence de revenu du Canada](https://www.cra-arc.gc.ca/).

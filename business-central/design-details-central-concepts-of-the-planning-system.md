@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: ddf848c3fb4845f802276843dfa6521eca20f896
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: b3c459ab6c4056b40c5e83db70a0cafab48359a1
+ms.sourcegitcommit: 13b811918b3c9f1598150b5cbbf387974b2a6df6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6442495"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "7949104"
 ---
 # <a name="design-details-central-concepts-of-the-planning-system"></a>Détails de conception : concepts centraux du système de planification
 
@@ -87,7 +87,7 @@ Pour plus d’informations, voir [Liens traçabilité commande lors de la planif
 
 Lors de l'établissement d'un plan, la séquence des calculs est importante que le travail soit réalisé dans un délai raisonnable. En outre, la gestion des priorités des besoins et ressources joue un rôle important pour obtenir les meilleurs résultats.  
 
-Le système de planification dans [!INCLUDE[prod_short](includes/prod_short.md)] est axé sur les demandes. Les articles de niveau supérieur doivent être planifiés avant les articles de bas niveau, car la planification des articles de niveau supérieur peut générer une demande supplémentaire d'articles de niveau inférieur. Ceci signifie, par exemple, que les emplacements de détail doivent être planifiés avant que les centres de distribution ne soient planifiés, car le programme pour un emplacement de détail peut inclure une demande supplémentaire du centre de distribution. Sur un niveau d'équilibre détaillé, cela signifie également qu'un document de vente ne doit pas déclencher une commande d'approvisionnement si une commande d'approvisionnement déjà libérées peut couvrir le document de vente. De même, un approvisionnement portant un numéro de lot spécifique ne doit pas être affecté pour couvrir une demande générique si une autre demande requiert ce lot spécifique.  
+Le système de planification dans [!INCLUDE[prod_short](includes/prod_short.md)] est axé sur les demandes. Les articles de niveau supérieur doivent être planifiés avant les articles de bas niveau, car la planification des articles de niveau supérieur peut générer une demande supplémentaire d'articles de niveau inférieur. Ceci signifie, par exemple, que les emplacements de détail doivent être planifiés avant que les centres de distribution ne soient planifiés, car le programme pour un emplacement de détail peut inclure une demande supplémentaire du centre de distribution. Sur un niveau d’équilibre détaillé, cela signifie également qu’un document de vente ne doit pas déclencher une nouvelle commande d’approvisionnement si une commande d’approvisionnement déjà libérée peut couvrir le document de vente. De même, un approvisionnement portant un numéro de lot spécifique ne doit pas être affecté pour couvrir une demande générique si une autre demande requiert ce lot spécifique.  
 
 ### <a name="item-priority--low-level-code"></a>Priorité d'article / Code plus bas niveau
 
@@ -122,7 +122,7 @@ Pour plus d'informations, voir [Détails de conception : transferts de planific
 
 ### <a name="order-priority"></a>Priorité de commande
 
-Dans une unité de stock donnée, la date demandée ou disponible représente la priorité la plus élevée ; la demande du jour doit être traitée avant la demande des jours suivants. Mais en plus de ce certain type de priorité, les différents types de demande et d'approvisionnement doivent être triés en fonction de l'importance commerciale pour choisir quelle demande doit être satisfaite avant de répondre à une autre demande. Du côté de l'approvisionnement, la priorité de la commande indique la source d'approvisionnement qui doit être affectée avant d'affecter d'autres sources d'approvisionnement.  
+Dans une unité de stock donnée, la date demandée ou disponible représente la priorité la plus élevée ; la demande du jour doit être traitée avant la demande des jours suivants. Mais en plus de ce type de priorité, les différents types de demande et d’approvisionnement doivent être triés en fonction de l’importance commerciale pour choisir quelle demande doit être satisfaite avant de répondre à une autre demande. Du côté de l'approvisionnement, la priorité de la commande indique la source d'approvisionnement qui doit être affectée avant d'affecter d'autres sources d'approvisionnement.  
 
 Pour en savoir plus, voir [Affecter une priorité aux commandes](design-details-balancing-demand-and-supply.md#prioritizing-orders).  
 

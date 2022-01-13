@@ -8,14 +8,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
+ms.search.form: 10140, 10141, 10143,10144,10146,10147,10148,36646
 ms.date: 06/17/2021
 ms.author: edupont
-ms.openlocfilehash: a8d15ed1ff3335cd851c3e98a1d89d616c84345b
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.openlocfilehash: 63102753d2d3d3fa1de3b5d4ce999adb6dc20cf5
+ms.sourcegitcommit: f7e46d0f7b16d3b41e751aa9f337da18d37c11db
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6323987"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "7947068"
 ---
 # <a name="create-deposits-in-the-canadian-version"></a>Créer des dépôts dans la version canadienne
 

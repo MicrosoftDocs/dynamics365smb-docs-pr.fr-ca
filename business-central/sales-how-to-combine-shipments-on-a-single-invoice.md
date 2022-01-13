@@ -8,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 12/16/2021
 ms.author: edupont
-ms.openlocfilehash: 1465ce4baadec43d28731dab50870af3c10bd77e
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: e111c08dc9251898ccecff4e65f768984b123c15
+ms.sourcegitcommit: 088bb19634f60891a12736c034ab3e86bdb91891
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6442735"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7929590"
 ---
 # <a name="combine-shipments-on-a-single-invoice"></a>Regroupement de livraisons sur une seule facture
 Si vous souhaitez facturer plusieurs bons de livraison à la fois, vous pouvez utiliser la fonction de regroupement des bons de livraison.  
@@ -34,6 +34,9 @@ Avant de pouvoir regrouper des livraisons, plusieurs livraisons vente pour le m�
 
     Si une ligne livraison incorrecte a été sélectionnée ou si vous voulez recommencer, supprimez simplement les lignes de la facture, puis exécutez de nouveau la fonction **Extraire lignes livraison**.  
 7. Pour reporter la facture, sélectionnez l'action **Reporter**.  
+
+> [!TIP]  
+> Si vous avez livré des commandes pour lesquelles le **N° débiteur** est différent du **N° client facturé**. Ces lignes ne sont pas affichées dans le rapport **Extraire lignes livraison**. Utilisez la personnalisation pour ajouter le champ **N° débiteur** à la page et supprimez le filtre. Vous pouvez désormais ajouter des lignes livraison à la facture quelle que soit la valeur du champ **N° débiteur** tant que le champ **N° client facturé** sur les lignes livraison correspond à la valeur sur la facture vente.  
 
 ## <a name="to-automatically-combine-shipments-on-a-single-invoice"></a>Regrouper automatiquement les expéditions sur une seule facture  
 [!INCLUDE[prod_short](includes/prod_short.md)] ne sélectionne que les documents de vente où **Regrouper les B.L.** est coché. 

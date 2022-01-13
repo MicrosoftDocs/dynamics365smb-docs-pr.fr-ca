@@ -1,8 +1,6 @@
 ---
 title: Configuration du groupe de report| Microsoft Docs
 description: Aperçu des groupes de report que vous pouvez utiliser pour gagner du temps et éviter des erreurs lorsque vous reportez des transactions.
-services: project-madeira
-documentationcenter: ''
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -10,14 +8,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: posting setup, initialize
-ms.date: 04/01/2021
+ms.date: 12/17/2021
 ms.author: bholtorf
-ms.openlocfilehash: fc57271d36d02c3ca7dcb8ad30ce597d9f9a7673
-ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
+ms.openlocfilehash: ed369b94948846ca380a3480e79660a6aafe292a
+ms.sourcegitcommit: 4c97f38fc53c1c1ec534054a4a100d8cfb73175b
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7588817"
+ms.lasthandoff: 12/20/2021
+ms.locfileid: "7940761"
 ---
 # <a name="setting-up-posting-groups"></a>Configuration de groupes comptabilisation
 Les groupes de report mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes GL. Ils vous font gagner du temps et permettent d'éviter des erreurs lorsque vous reportez des transactions. Les valeurs de transaction vont dans les comptes spécifiés dans le groupe de report pour cette entité particulière. Il vous suffit seulement d'avoir un plan comptable. Pour plus d'informations, reportez-vous à [Configuration du plan comptable](finance-setup-chart-accounts.md).  
@@ -74,6 +72,17 @@ Votre configuration détermine quand le report a lieu. Par exemple, la synchroni
 
 ## <a name="copying-posting-setup-lines"></a>Copie de lignes configuration report
 Plus il y a de groupes de report produit et marché, plus la page Configuration du report général contient de lignes. Cela peut entraîner la nécessité d'entrer un grand nombre de données pour configurer les paramètres de report pour la compagnie. S'il peut y avoir un grand nombre de combinaisons différentes de groupes de report marché et produit, différentes combinaisons peuvent encore reporter dans les mêmes comptes du grand livre. Pour limiter le nombre de saisies manuelles, copiez les comptes GL à partir d'une ligne existante sur la page **Configuration report général**.
+
+## <a name="set-up-posting-groups-on-the-go"></a>Configurer des groupes de report en déplacement
+
+Pour que les utilisateurs démarrent plus rapidement, [!INCLUDE[prod_short](includes/prod_short.md)] offre une assistance via des notifications de comptes du grand livre manquants dans diverses configurations de groupe de report dans des documents. Pour recevoir ces notifications, assurez-vous que la notification **Compte du grand livre manquant dans le groupe de report ou la configuration** est sélectionnée dans la page **Mes notifications**, à laquelle vous pouvez accéder à partir du champ **Modifier lorsque je reçois des notifications** dans la page **Mes paramètres**.  
+
+De cette façon, lorsque vous travaillez sur un document qui utilise une configuration ou un groupe de report pour lequel il manque un compte GL requis, vous recevez une notification. Choisissez le lien dans la notification pour ouvrir une page où vous pouvez apporter les modifications appropriées, à condition que vous y soyez autorisé.  
+
+> [!NOTE]
+> Afin de vous diriger directement vers la configuration ou le groupe de report auquel il manque un compte GL, [!INCLUDE[prod_short](includes/prod_short.md)] crée un espace réservé pour une configuration ou un groupe de report. Les configurations et les groupes de report constituent, pour le comptable, un moyen de contrôler la manière dont les écritures sont reportées dans le grand livre. Ainsi, la création juste à temps de configurations et de groupes de report peut ne pas être autorisée dans votre organisation.  
+> 
+> Dans ce cas, désactivez la notification **Compte du grand livre manquant dans le groupe de report ou la configuration**, puis collaborez avec votre comptable pour apporter les modifications appropriées au groupe de report, à la configuration ou à votre document. Il s’agit d’une étape importante, car une fois les documents reportés, les paramètres ou les groupes de report utilisés de manière incorrecte ne peuvent pas être supprimés car des écritures sont créées pour eux. 
 
 ## <a name="troubleshooting-posting-group-errors"></a>Résolution des erreurs de groupe de report
 Les groupes de report sont l’un des concepts les plus avancés à configurer dans [!INCLUDE[prod_short](includes/prod_short.md)]. S’ils ne sont pas configurés correctement, des erreurs peuvent se produire lors du report de documents ou de lignes journal. Par exemple, ces erreurs sont généralement causées par une erreur d’affectation des comptes du grand livre ou de combinaison des groupes de report.

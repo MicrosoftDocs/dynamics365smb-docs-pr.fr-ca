@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: analysis, history, track
 ms.date: 12/03/2021
 ms.author: edupont
-ms.openlocfilehash: 183aa0cee83c826d51f582faead9d3a53b02ce71
-ms.sourcegitcommit: 4223484b0eeceb0258dae5abfd04e1a9a4a0990d
+ms.openlocfilehash: 2af34c84c7b359d2cae64d19a9aec151e0d9a3bb
+ms.sourcegitcommit: 088bb19634f60891a12736c034ab3e86bdb91891
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7889804"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7928832"
 ---
 # <a name="understanding-the-general-ledger-and-the-chart-of-accounts"></a>Comprendre le grand livre et le plan comptable
 
@@ -45,7 +45,7 @@ Le plan comptable affiche tous les comptes généraux. Vous pouvez effectuer les
 
 * Afficher les rapports qui affichent les écritures et les soldes.  
 * Fermez votre état des résultats.  
-* Ouvrir la fiche compte du grand livre pour ajouter ou modifier des paramètres.  
+* Ouvrez la fiche compte général pour ajouter ou modifier des paramètres.  
 * Consulter la liste des groupes de report qui effectuent les reports vers ce compte.
 * Afficher les soldes débit et crédit d'un seul compte  
 
@@ -55,7 +55,7 @@ Vous pouvez ajouter, modifier ou supprimer des comptes généraux. Toutefois, po
 
 Vous pouvez personnaliser la structure de vos états financiers en mappant les comptes généraux aux catégories de comptes.  
 
-La page **Catégories de compte du grand livre** affiche vos catégories et sous-catégories et les comptes du grand livre qui leur sont affectés. Vous pouvez créer des sous-catégories et affecter ces catégories à des comptes existants.  
+La page **Catégories de compte du grand livre** affiche vos catégories et sous-catégories et les comptes GL qui leur sont affectés. Vous pouvez créer des sous-catégories et affecter ces catégories à des comptes existants.  
 
 Vous créez un groupe des catégories en effectuant un décalage d'autres sous-catégories sous une ligne de la page **Catégories de compte du grand livre**. Cela vous facilite l'obtention d'une vue d'ensemble, car chaque groupement affiche un solde total. Par exemple, vous pouvez créer des sous-catégories pour différents types d'actifs puis créer des groupes des catégories pour différencier les immobilisations des actifs à court terme, par exemple.  
 
