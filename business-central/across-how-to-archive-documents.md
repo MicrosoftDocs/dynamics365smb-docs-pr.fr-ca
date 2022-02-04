@@ -1,21 +1,15 @@
 ---
 title: Archiver les documents vente et les documents achat
-description: Vous pouvez archiver des bons de commande et des documents de vente, des devis, des retours et des commandes permanentes, et vous pouvez utiliser le document archivé pour recréer le document d’origine.
+description: 'Vous pouvez archiver des bons de commande et des documents de vente, des devis, des retours et des commandes permanentes, et vous pouvez utiliser le document archivé pour recréer le document d’origine.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '42, 49, 50, 459, 460, 5159, 5162, 5164, 5167, 6627, 6630, 6644, 9305, 9306, 9346, 9347, 9348, 9349'
 ms.date: 06/29/2021
 ms.author: edupont
-ms.openlocfilehash: a12d8d7a11e581a6cfe93b6a1f4588cd87efc98f
-ms.sourcegitcommit: a486aa1760519c380b8cdc8fdf614bed306b65ea
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6543282"
 ---
 # <a name="archive-documents"></a>Archiver des documents
 Vous pouvez archiver des bons de commande, des documents de vente, des devis, des retours et des commandes permanentes, par exemple parce que vous voulez enregistrer une copie d'un document pour la réutiliser plus tard. Vous pouvez archiver des documents vente ou achat plusieurs fois, en enregistrant une version archivée différente chaque fois.

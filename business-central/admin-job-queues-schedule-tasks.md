@@ -1,21 +1,15 @@
 ---
 title: Programmer des projets à exécuter automatiquement
-description: Les tâches programmées sont gérées par la file d'attente des travaux. Ces projets exécutent des rapports et des codeunits. Vous pouvez définir des projets à exécuter une fois, ou sur une base récurrente.
+description: 'Les tâches programmées sont gérées par la file d''attente des travaux. Ces projets exécutent des rapports et des codeunits. Vous pouvez définir des projets à exécuter une fois, ou sur une base récurrente.'
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '672, 673, 674, 671'
 ms.date: 10/01/2021
 ms.author: edupont
-ms.openlocfilehash: fdacd0fcfd681d641f7c81249632662e90707951
-ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7588892"
 ---
 # <a name="use-job-queues-to-schedule-tasks"></a>Utiliser des files d'attente des travaux pour programmer des tâches
 
@@ -71,6 +65,7 @@ Par exemple, si la compagnie actuelle se trouve dans un environnement qui est un
 > Les administrateurs internes et les utilisateurs peuvent programmer l’exécution des tâches. Les administrateurs délégués ne le peuvent pas.
 
 ## <a name="the-my-job-queue-part"></a>Composant Ma file d'attente des travaux
+
 Le composant **Ma file d'attente des travaux** sur votre Tableau de bord répertorie les écritures files d'attente des travaux que vous avez commencées, mais qui ne sont pas encore terminées. Par défaut, le composant n'est pas visible et vous devez donc l'ajouter à votre tableau de bord. Pour plus d'informations, voir [Personnaliser votre espace de travail](ui-personalization-user.md).  
 
 Le composant indique les documents avec votre code dans le champ **Code utilisateur affecté** qui sont en cours de traitement ou en attente, y compris ceux associés au report en arrière-plan. La composante peut vous indiquer rapidement s’il y a eu une erreur lors du report d’un document ou s’il existe des erreurs dans une écriture de file d'attente projet. Elle vous permet également d'annuler un report de document en cas de non-exécution.

@@ -1,18 +1,13 @@
 ---
 title: Configuration des acomptes
-description: Découvrez comment configurer Business Central afin de pouvoir utiliser les paiements anticipés pour facturer et collecter les paiements anticipés requis des clients ou régler des paiements anticipés aux fournisseurs.
+description: "Découvrez comment configurer Business\_Central afin de pouvoir utiliser les paiements anticipés pour facturer et collecter les paiements anticipés requis des clients ou régler des paiements anticipés aux fournisseurs."
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keyword: prepayment
+ms.search.form: '314, 459, 460, 664'
 ms.date: 10/27/2021
 ms.author: edupont
-ms.openlocfilehash: a09f0cd35c62b65bf690fd785c0fc9a4b4b178d7
-ms.sourcegitcommit: 4223484b0eeceb0258dae5abfd04e1a9a4a0990d
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7889830"
 ---
 # <a name="set-up-prepayments"></a>Configuration des acomptes
 

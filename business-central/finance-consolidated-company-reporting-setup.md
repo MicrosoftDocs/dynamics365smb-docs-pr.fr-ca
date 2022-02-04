@@ -7,16 +7,12 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: consolidation, subsidiaries, consolidate
+ms.search.keywords: 'consolidation, subsidiaries, consolidate'
+ms.search.form: '1826, 1827'
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 861893c2784bc5eed837c26d070fb98c2826772b
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6439470"
 ---
+
 # <a name="set-up-company-consolidation"></a>Configurer la consolidation de la compagnie
 
 Avant de pouvoir consolider les écritures de deux ou plusieurs compagnies distinctes (filiales) dans une compagnie consolidée, vous devez préparer le plan comptable et la compagnie de consolidation.  

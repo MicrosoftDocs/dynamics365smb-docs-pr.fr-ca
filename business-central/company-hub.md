@@ -4,16 +4,12 @@ description: En savoir plus sur le Hub Entreprise Dynamics 365 Business Central 
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.search.keywords: accountant, accounting, financial report
+ms.search.keywords: 'accountant, accounting, financial report'
+ms.search.form: '1151, 1154, 1165, 1166'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 1757f1c02bb6623f59996d372f544f224b94237e
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6445736"
 ---
+
 # <a name="manage-work-across-multiple-companies-in-the-company-hub"></a>Gérer le travail entre plusieurs compagnies dans le Hub Entreprise
 
 Certaines personnes travaillent dans plusieurs compagnies [!INCLUDE [prod_short](includes/prod_short.md)], et certaines travaillent également dans plusieurs organisations, comme des comptables externes, ou des employés et des gestionnaires d'entreprises ayant plusieurs filiales. Pour ces utilisateurs, et bien d’autres, le Hub Entreprise sert de page de destination pour gérer le travail dans les différents environnements dans lesquels ils travaillent, entre les compagnies, les environnements et les régions.  
@@ -86,7 +82,7 @@ Mais pour ajouter une compagnie, vous devez avoir accès à une ou plusieurs ins
 
 Par exemple, si vous êtes comptable, vos clients peuvent vous inviter à leur [!INCLUDE [prod_short](includes/prod_short.md)]. Pour plus d’informations, voir [Inviter votre comptable externe dans votre Business Central](finance-accounting.md#inviteaccountant).  
 
-Les administrateurs peuvent utiliser le même guide de configuration assistée pour vous ajouter à leur [!INCLUDE [prod_short](includes/prod_short.md)], ou ils peuvent vous ajouter au compte Azure AD dans le centre d’administration Microsoft 365. Pour en savoir plus, voir [Gérer les utilisateurs et les groupes](/microsoft-365/admin/add-users/?view=o365-worldwide&preserve-view=true).  
+Les administrateurs peuvent utiliser le même guide de configuration assistée pour vous ajouter à leur [!INCLUDE [prod_short](includes/prod_short.md)], ou ils peuvent vous ajouter au compte Azure AD approprié dans le centre d’administration Microsoft 365. Pour en savoir plus, voir [Gérer les utilisateurs et les groupes](/microsoft-365/admin/add-users/?view=o365-worldwide&preserve-view=true).  
 
 ## <a name="see-also"></a>Voir aussi
 

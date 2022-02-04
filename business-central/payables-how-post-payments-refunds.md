@@ -7,15 +7,10 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: payment journal, print check, vendor payment, customer refund, refund check, creditor, debt, balance due, AP
+ms.search.keywords: 'payment journal, print check, vendor payment, customer refund, refund check, creditor, debt, balance due, AP'
+ms.search.form: '256, 251, 233, 624, 1228'
 ms.date: 07/09/2021
 ms.author: edupont
-ms.openlocfilehash: 61a47f68de6466c177ab8683f4167a77ec04dc3f
-ms.sourcegitcommit: a486aa1760519c380b8cdc8fdf614bed306b65ea
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6543207"
 ---
 # <a name="record-payments-and-refunds-in-the-payment-journal"></a>Enregistrer les paiements et remboursements dans le journal paiement
 

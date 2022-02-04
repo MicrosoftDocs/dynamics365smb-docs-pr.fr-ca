@@ -1,21 +1,16 @@
 ---
 title: Configuration des devises supplémentaires
-description: Votre grand livre est configuré pour utiliser votre devise locale ($) et une autre devise est configurée comme devise additionnelle, à laquelle est affecté un taux de change courant.
+description: 'Votre grand livre est configuré pour utiliser votre devise locale ($) et une autre devise est configurée comme devise additionnelle, à laquelle est affecté un taux de change courant.'
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: multiple currencies, foreign exchange rates
+ms.search.keywords: 'multiple currencies, foreign exchange rates'
+ms.search.form: '5, 16,118, 483, 495'
 ms.date: 07/23/2021
 ms.author: edupont
-ms.openlocfilehash: e1a6c902bdf4ce8270def3c830138511adf6eba3
-ms.sourcegitcommit: e904da8dc45e41cdd1434111c15e2a9d9edd3fa2
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "6660216"
 ---
 # <a name="set-up-an-additional-reporting-currency"></a>Configurer une devise de report additionnelle
 
@@ -41,15 +36,17 @@ L'utilisation d'une devise de report additionnelle peut faciliter le processus d
 Plusieurs rapports financiers sont basés sur les écritures. Pour afficher les données de rapport dans la devise de report additionnelle, activez simplement le champ **Afficher les montants dans la devise de report additionnelle** sur le raccourci **Options** pour le rapport GL approprié.
 
 ## <a name="adjusting-exchange-rates"></a>Ajustement des taux de change
+
 Comme les taux de change ne cessent de fluctuer, il convient d'ajuster périodiquement les équivalents devise supplémentaires de votre système. À défaut d'effectuer ces ajustements, les montants convertis à partir de devises étrangères (ou additionnelles) et reportés dans le grand livre en $ risquent d'être erronés. En outre, les écritures quotidiennes reportées avant la saisie d'un taux de change quotidien dans l'application doivent être mises à jour après la saisie quotidienne des informations de taux de change. Le traitement par lots **Ajuster taux de change** permet d'ajuster les taux de change d'écritures client, fournisseur et compte bancaire validées. D'autres montants en devise de report additionnelle peuvent également être mis à jour dans les écritures. Pour plus d'informations, voir [Mettre à jour les taux de change devise](finance-how-update-currencies.md).
 
 ## <a name="setting-up-an-additional-reporting-currency"></a>Configuration d'une devise de report additionnelle
+
 Pour configurer une devise de report additionnelle, procédez comme suit :
 
--   Spécifiez les comptes du grand livre pour le report des ajustements de taux de change.  
--   Spécifiez la méthode d'ajustement de taux de change pour tous les comptes généraux.  
--   Spécifiez la méthode d'ajustement de taux de change pour les écritures TVA.  
--   Activez la devise de report additionnelle.  
+- Spécifiez les comptes du grand livre pour le report des ajustements de taux de change.  
+- Spécifiez la méthode d'ajustement de taux de change pour tous les comptes généraux.  
+- Spécifiez la méthode d'ajustement de taux de change pour les écritures TVA.  
+- Activez la devise de report additionnelle.  
 
 ### <a name="to-specify-general-ledger-accounts-for-posting-exchange-rate-adjustments"></a>Pour spécifier les comptes du grand livre pour le report des ajustements de taux de change  
 
@@ -68,7 +65,8 @@ Pour configurer une devise de report additionnelle, procédez comme suit :
 
 Pour chaque compte du grand livre, vous devez spécifier la manière dont les montants de grand livre du compte sont ajustés en fonction des fluctuations de taux de change entre $ et la devise de report additionnelle.  
 
-### <a name="to-specify-the-exchange-rate-adjustment-method-for-all-general-ledger-accounts"></a>Pour spécifier la méthode d'ajustement de taux de change pour tous les comptes généraux  
+### <a name="to-specify-the-exchange-rate-adjustment-method-for-all-general-ledger-accounts"></a>Pour spécifier la méthode d'ajustement de taux de change pour tous les comptes généraux
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.  
 2. Sur la page **Plan comptable**, sélectionnez le compte approprié, puis cliquez sur l'action **Modifier**.  
 3. Sur la page **Fiche compte général**, sélectionnez la méthode adéquate dans le champ **Ajustement taux de change**.  
@@ -85,7 +83,8 @@ Pour chaque compte du grand livre, vous devez spécifier la manière dont les mo
 
 4.  Fermez la page **Fiche compte du grand livre**.  
 
-### <a name="to-specify-exchange-rate-adjustment-method-for-vat-entries"></a>Pour spécifier la méthode d'ajustement de taux de change pour toutes les écritures TVA  
+### <a name="to-specify-exchange-rate-adjustment-method-for-vat-entries"></a>Pour spécifier la méthode d'ajustement de taux de change pour toutes les écritures TVA
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du grand livre**, puis choisissez le lien associé.  
 2. Sur la page **Configuration du grand livre**, sélectionnez la méthode adéquate dans le champ **Ajustement tx de change TVA**.  
 3. Si vous reportez dans une devise de report additionnelle, vous pouvez spécifier dans le champ **Ajustement taux de change TVA** la manière dont les comptes configurés pour le report de la TVA sur la page **Configuration report TVA** sont ajustés pour les fluctuations de taux de change entre $ et devise de report additionnelle.  
@@ -124,11 +123,12 @@ Après exécution du traitement en lot, les montants des écritures existantes s
 En outre, toutes les écritures futures du même type ont des montants enregistrés en $ et dans la devise de report additionnelle.  
 
 > [!NOTE]  
->  Le champ **Devise report** n'est activé qu'après que vous avez cliqué sur le bouton **OK** dans le traitement par lots **Ajuster devise report**.  
+> Le champ **Devise report** n'est activé qu'après que vous avez cliqué sur le bouton **OK** dans le traitement par lots **Ajuster devise report**.  
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/use-multiple-currencies-dynamics-365-business-central/)
 
 ## <a name="see-also"></a>Voir aussi
+
 [Mettre à jour des taux de change devise](finance-how-update-currencies.md)  
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

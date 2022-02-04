@@ -1,5 +1,5 @@
 ---
-title: Expériences de comptables dans Business Central (contient une vidéo)
+title: "Expériences de comptables dans Business\_Central (contient une vidéo)"
 description: En savoir plus sur le Tableau de bord Comptable et le Hub Entreprise qui prennent en charge les comptables internes et externes de la compagnie du client.
 author: edupont04
 ms.service: dynamics365-business-central
@@ -7,15 +7,10 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: accountant, accounting, financial report
+ms.search.keywords: 'accountant, accounting, financial report'
+ms.search.form: '100, 1156, 1157, 1314, 1315, 1316, 9027'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: c2c92e72f20c26fe1505834e70d58981093c24b8
-ms.sourcegitcommit: 4c97f38fc53c1c1ec534054a4a100d8cfb73175b
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 12/20/2021
-ms.locfileid: "7940236"
 ---
 # <a name="accountant-experiences-in-prod_long"></a>Expériences de comptable dans [!INCLUDE[prod_long](includes/prod_long.md)]
 
@@ -49,9 +44,9 @@ Nous avons simplifié pour vous la façon d'inviter votre comptable externe. Ouv
 > [!IMPORTANT]  
 > L'adresse de courriel du comptable doit être une adresse professionnelle basée sur Azure Active Directory. Si le comptable utilise un autre type de courriel, l'invitation ne peut pas être envoyée.
 >
-> Cette tâche nécessite un accès à la gestion des utilisateurs et des licences dans Azure Active Directory. L’utilisateur qui envoie cette invitation doit se voir attribuer le rôle **Administrateur général** ou **Administrateur utilisateur** dans le centre d’administration Microsoft 365. Pour plus d'informations, voir [À propos des rôles d'administrateur](/microsoft-365/admin/add-users/about-admin-roles) dans le centre d'administration Microsoft 365.  
+> Cette tâche nécessite un accès à la gestion des utilisateurs et des licences dans Azure Active Directory. L’utilisateur qui envoie cette invitation doit se voir attribuer le rôle **Administrateur général** ou **Administrateur utilisateur** dans le centre d’administration Microsoft 365. Pour plus d’informations, voir [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles) dans le centre d’administration Microsoft 365.  
 
-### <a name="adding-your-accountant-to-your-microsoft-365-in-the-azure-portal"></a>Ajout de votre comptable à votre Microsoft 365 via le Portail Azure
+### <a name="adding-your-accountant-to-your-microsoft-365-in-the-azure-portal"></a>Ajout de votre comptable à votre Microsoft 365 dans le Portail Azure
 
 Si votre administrateur ou partenaire revendeur ne souhaite pas utiliser le guide **Inviter un comptable externe**, il peut ajouter un utilisateur externe dans le Portail Azure et attribuer à cet utilisateur la licence *Comptable externe*. Pour plus d'informations, voir [Démarrage rapide : Ajouter des utilisateurs invités à votre annuaire dans le portail Azure](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
 
@@ -92,7 +87,7 @@ Le comptable recevra un courriel l'informant qu'on lui a accordé l'accès à vo
 
 1. Ouvrez la compagnie [!INCLUDE[prod_short](includes/prod_short.md)] à laquelle vous souhaitez donner accès au comptable sur [https://businesscentral.dynamics.com](https://businesscentral.dynamics.com).
 2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.  
-3. Choisissez l’action **Obtenir de nouveaux utilisateurs à partir de Microsoft 365**.
+3. Choisissez l’action **Obtenir de nouveaux utilisateurs à partir de Microsoft 365**.
 
 Cela a pour effet d'importer dans la compagnie le compte utilisateur que vous avez créé dans le portail Azure. Pour plus d'informations, voir [Pour ajouter un utilisateur dans Business Central](ui-how-users-permissions.md#adduser).  
 

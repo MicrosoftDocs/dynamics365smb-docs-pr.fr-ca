@@ -1,21 +1,16 @@
 ---
 title: Affectation et gestion des tâches
-description: Découvrez comment attribuer des tâches aux utilisateurs, y compris votre comptable, dans Business Central, et comment vous choisissez et effectuez des tâches.
+description: 'Découvrez comment attribuer des tâches aux utilisateurs, y compris votre comptable, dans Business Central, et comment vous choisissez et effectuez des tâches.'
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: tasks, work
+ms.search.keywords: 'tasks, work'
+ms.search.form: '1164, 1170, 1171, 1172, 1175, 1176, 1177'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 6c1e9a1e296abab8a77e47564eb70e97bfa7d57e
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6446425"
 ---
 # <a name="define-user-tasks"></a>Définir les tâches utilisateur
 

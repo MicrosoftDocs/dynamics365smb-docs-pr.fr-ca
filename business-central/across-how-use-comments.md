@@ -1,23 +1,19 @@
 ---
-title: Ajouter des commentaires aux fiches et aux documents | Microsoft Docs
-description: Ajoutez des informations supplémentaires dans les comptes, les fiches client ou les documents de vente pour communiquer des ententes, telles qu'un prix spécial ou un mode de livraison, pour d'autres utilisateurs.
+title: Ajouter des commentaires aux fiches et aux documents
+description: 'Ajoutez des informations supplémentaires dans les comptes, les fiches client ou les documents de vente pour communiquer des ententes, telles qu''un prix spécial ou un mode de livraison, pour d''autres utilisateurs.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: tasks, work
+ms.search.keywords: 'tasks, work'
+ms.search.form: '124, 30'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 2be53efdd942128d27ff42358fa60bfe501c8ede
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6440984"
 ---
 # <a name="add-comments-to-cards-and-documents"></a>Ajouter des commentaires aux fiches et aux documents
+
 Vous pouvez ajouter des informations supplémentaires dans les comptes du grand livre, les fiches client ou les documents de vente pour communiquer des exceptions ou des ententes spéciales à d'autres utilisateurs.
 La plupart des fiches et documents ont une action **Commentaires**, qui ouvre la page **Feuille de commentaires** dans laquelle vous pouvez saisir ou lire les commentaires. Sur les documents, vous pouvez également ajouter des commentaires à différentes lignes.
 
@@ -31,12 +27,14 @@ En outre, vous pouvez spécifier si vous souhaitez que des commentaires soient t
 La section suivante décrit comment ajouter un commentaire à une fiche article. Les étapes sont similaires pour toutes les autres fiches et documents, sauf sur les lignes document, l'action **Commentaires** est placée sur un menu d'action de lignes.
 
 ## <a name="to-add-a-comments-to-an-item-card"></a>Pour ajouter des commentaires à une fiche article
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
 2. Ouvrez la fiche article appropriée.
 3. Sélectionnez l'action **Commentaires**.
 4. Sur la page **Feuille de commentaires**, vous pouvez saisir le texte, puis choisir le bouton **OK**.
 
 ## <a name="see-also"></a>Voir aussi
+
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)
 

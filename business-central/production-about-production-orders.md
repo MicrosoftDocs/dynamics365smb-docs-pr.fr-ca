@@ -7,35 +7,30 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '99000813, 99000814, 99000815, 99000816, 99000829, 99000830, 99000831, 99000832, 99000833, 99000838, 99000839, 99000867, 99000868, 99000882, 99000897, 99000898, 99000900, 99000912, 99000913, 99000914, 99000917'
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: 689fbf78a5337076e7f10a8825d01cd77018c670
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6321401"
 ---
 # <a name="about-production-orders"></a>À propos des ordres de fabrication
+
 Les ordres de fabrication permettent de gérer la conversion de matières achetées en articles fabriqués. La gamme de bons de production utilise divers ateliers ou unités de production dans l'atelier.  
 
 Avant de commencer la production, la plupart des compagnies effectuent une planification des approvisionnements, généralement une fois par semaine, pour calculer le nombre de bons de production et de bons de commande à exécuter pour répondre à une demande de vente de la semaine en cours. Les commandes achat fournissent les composants requis en fonction de la nomenclature de production pour produire les produits finis.
 
 Les bons de production sont les composantes centrales de la fonctionnalité de fabrication de l'application et contiennent les informations suivantes :  
 
--   produits planifiés pour fabrication ;  
--   matières requises pour les ordres de fabrication planifiés ;  
--   produits qui viennent d'être fabriqués ;  
--   matières déjà sélectionnées ;  
--   produits fabriqués par le passé ;  
--   matières utilisées dans des opérations de fabrication précédentes.  
+- produits planifiés pour fabrication ;  
+- matières requises pour les ordres de fabrication planifiés ;  
+- produits qui viennent d'être fabriqués ;  
+- matières déjà sélectionnées ;  
+- produits fabriqués par le passé ;  
+- matières utilisées dans des opérations de fabrication précédentes.  
 
 Les ordres de fabrication sont les points de départ pour :  
 
--   Planification de la fabrication future  
--   le contrôle de la fabrication en cours ;  
--   la traçabilité de la fabrication terminée.  
+- Planification de la fabrication future  
+- le contrôle de la fabrication en cours ;  
+- la traçabilité de la fabrication terminée.  
 
 ## <a name="production-order-creation"></a>Création des bons de production  
 Il est possible de créer des bons de production un par un manuellement sur la page **Bon de production** ou de les générer sur les pages **Planification document de vente** et/ou **Planification commande**. La page **Feuille planification** permet de générer plusieurs ordres.  
@@ -51,10 +46,10 @@ Les ordres de fabrication sont créés à l'aide d'informations provenant des é
 ## <a name="limitations-on-production-order-creation"></a>Limitations de la création de bons de production  
 Les ordres de fabrication sont automatiquement réservés et tracés sur leur source quand ils sont :  
 
--   créés dans la **[Feuille planification](production-how-to-run-mps-and-mrp.md)**  
--   créés sur la page **[Planification document de vente](production-how-to-create-production-orders-from-sales-orders.md)**  
--   créés sur la page **[Planification commande](production-how-to-plan-for-new-demand.md)**  
--   Utilisation de la fonction **[Replanification](production-how-to-replan-refresh-production-orders.md)** des bons de production  
+- créés dans la **[Feuille planification](production-how-to-run-mps-and-mrp.md)**  
+- créés sur la page **[Planification document de vente](production-how-to-create-production-orders-from-sales-orders.md)**  
+- créés sur la page **[Planification commande](production-how-to-plan-for-new-demand.md)**  
+- Utilisation de la fonction **[Replanification](production-how-to-replan-refresh-production-orders.md)** des bons de production  
 
 Pour plus d'informations, voir [Suivre les relations entre l'offre et la demande](production-how-track-demand-supply.md).
 
@@ -117,9 +112,9 @@ L'application offre une série d'options concernant la manière dont une compagn
 
 La consommation de matières peut être traitée via le [journal consommation](production-how-to-post-consumption.md), mais peut également être enregistrée automatiquement par l’application à l’aide du processus de génération de rapport automatique (consommation). Les méthodes de génération de rapport sont les suivantes :  
 
--   Manuel  
--   Suivant  
--   Amont  
+- Manuel  
+- Suivant  
+- Amont  
 
 La génération de rapports de consommation manuelle utilise le journal consommation pour spécifier un prélèvement de matière.  
 
@@ -181,9 +176,9 @@ Toutefois, le journal production diffère des journaux production et consommatio
 Dans le journal production, les quantités consommées sont reportées comme écritures article négatives, les quantités sorties sont reportées comme écritures positives et les heures passées sont reportées comme écritures du grand livre de capacité.  
 
 ## <a name="see-also"></a>Voir aussi
-[Production](production-manage-manufacturing.md)    
+[Production](production-manage-manufacturing.md)
 [Paramétrage de la production](production-configure-production-processes.md)  
-[Planification](production-planning.md)      
+[Planification](production-planning.md)  
 [Stock](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

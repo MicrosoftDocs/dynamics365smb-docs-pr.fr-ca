@@ -1,21 +1,16 @@
 ---
 title: Gestion financière (contient une vidéo)
-description: Découvrez comment Business Central répond à vos besoins en matière de gestion financière, de comptabilité, d’audit ou de tenue des registres.
+description: "Découvrez comment Business\_Central répond à vos besoins en matière de gestion financière, de comptabilité, d’audit ou de tenue des registres."
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: accounting, auditing, bookkeeping
+ms.search.keywords: 'accounting, auditing, bookkeeping'
+ms.search.form: '1151, 1166, 9027, 9004'
 ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: fd83ef3f2930900aae70fafa9489bb8f7c01f713
-ms.sourcegitcommit: 4c97f38fc53c1c1ec534054a4a100d8cfb73175b
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 12/20/2021
-ms.locfileid: "7939863"
 ---
 # <a name="financial-management"></a>Gestion financière
 

@@ -1,5 +1,5 @@
 ---
-title: Comment créer des soldes ouverts journal
+title: Créer des soldes ouverts journal
 description: Les traitements en lot qui sont livrés pour aider au transfert des soldes de compte hérité vers une compagnie nouvellement configurée. Vous pouvez facilement transférer ces données avec des reports de journal.
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -7,15 +7,9 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
-ms.date: 06/14/2021
+ms.search.keywords: null
+ms.date: 01/24/2022
 ms.author: edupont
-ms.openlocfilehash: ac7fea479237d985204820d54953689566f5c2ac
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6319548"
 ---
 # <a name="create-journal-opening-balances"></a>Créer des soldes ouverts journal
 
@@ -45,6 +39,9 @@ Avant de commencer, vérifiez que vous utilisez la page Tableau de bord Administ
 
 > [!TIP]
 > Vous pouvez utiliser les mêmes traitements en lot pour ajouter des soldes d'ouverture chaque fois que vous enregistrez un nouveau client ou fournisseur avec lequel vous avez déjà traité mais qui n'est pas enregistré dans [!INCLUDE [prod_short](includes/prod_short.md)]. Recherchez simplement la tâche appropriée, puis choisissez le lien approprié.
+
+> [!IMPORTANT]
+> Notamment pour les soldes d’ouverture des comptes bancaires, ne suivez pas les étapes de cet article pour reporter directement sur les comptes du grand livre associés aux comptes bancaires concernés. Pour plus d'informations, reportez vous à [Configuration de comptes bancaires](bank-how-setup-bank-accounts.md).  
 
 ## <a name="see-also"></a>Voir aussi
 

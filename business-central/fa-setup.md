@@ -1,22 +1,16 @@
 ---
-title: Paramétrer les immobilisations| Microsoft Docs
-description: En savoir plus sur la série de tâches que vous devez effectuer pour configurer les immobilisations, telles que les machines ou les bâtiments.
-documentationcenter: ''
-author: SorenGP
+title: Configurer des immobilisations
+description: 'En savoir plus sur la série de tâches que vous devez effectuer pour configurer les immobilisations, telles que les machines ou les bâtiments.'
+author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: machinery, buildings
+ms.search.keywords: 'machinery, buildings'
+ms.search.form: 5607
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 54ade14f58d9be5957c77a768096b5f475db5798
-ms.sourcegitcommit: a8a01561f46c0a60f8bfd7985be0dcd3e28441fa
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6343559"
 ---
 # <a name="setting-up-fixed-assets"></a>Paramétrage d'immobilisations
 Avant de pouvoir utiliser les immobilisations, vous devez définir les éléments suivants :  

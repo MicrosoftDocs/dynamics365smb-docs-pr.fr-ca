@@ -1,7 +1,6 @@
 ---
 title: Echelonner les recettes et les dépenses
-description: Pour identifier des recettes ou des dépenses dans des période autres que la période de report de la transaction, vous pouvez utiliser la fonctionnalité pour les échelonner ou les reporter automatiquement selon un calendrier précis.
-documentationcenter: ''
+description: 'Pour identifier des recettes ou des dépenses dans des période autres que la période de report de la transaction, vous pouvez utiliser la fonctionnalité pour les échelonner ou les reporter automatiquement selon un calendrier précis.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -9,21 +8,18 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: postpone
+ms.search.form: '1700, 1701, 1702, 1703, 1704, 1705, 1706, 1707'
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 7df3f75a106503f63d4306bd05345c2fc6af9393
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6442785"
 ---
 # <a name="defer-revenues-and-expenses"></a>Echelonner les recettes et les dépenses
+
 Pour identifier une recette ou une dépense dans une période autre que la période de report de la transaction, vous pouvez utiliser la fonctionnalité pour échelonner automatiquement les recettes et les dépenses selon un calendrier précis.
 
 Pour répartir les recettes et les dépenses sur les périodes comptables concernées, configurez un modèle d'échelonnement pour la ressource, l'article ou le compte du grand livre pour lequel/laquelle les recettes ou les dépenses seront reportées. Lorsque vous reportez le document vente ou achat concerné, les recettes ou les dépenses sont échelonnées sur les périodes comptables concernées, selon un tableau d'échelonnement régi par des paramètres dans le modèle d'échelonnement et la date de report.
 
 ## <a name="to-set-up-a-gl-account-for-deferral"></a>Pour configurer un compte du grand livre pour échelonnement
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Renseignez les champs comme nécessaire afin de créer un compte du grand livre pour les recettes échelonnées Pour plus d'informations, reportez-vous à [Les écritures comptables et le plan comptable](finance-general-ledger.md).
@@ -32,6 +28,7 @@ Pour répartir les recettes et les dépenses sur les périodes comptables concer
 Pour les deux types d'échelonnement, sélectionnez **Bilan** dans le champ **Type** et nommez les comptes en conséquence, comme « Revenus comptabilisés d'avance » pour les recettes différées et « Dépenses impayées » pour les dépenses différées.
 
 ## <a name="to-set-up-a-deferral-template"></a>Pour configurer un modèle d'échelonnement
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modèles échelonnement**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Renseignez les champs selon vos besoins.
@@ -53,15 +50,18 @@ Pour les deux types d'échelonnement, sélectionnez **Bilan** dans le champ **Ty
 Exemple : la date de report est le 06/02/2016. Si vous saisissez « Dépenses échelonnées pour %4 %6 », la description affichée sera « Dépenses échelonnées pour février 2016 ».
 
 ## <a name="to-assign-a-deferral-template-to-an-item"></a>Pour affecter un modèle d'échelonnement à un article
+
 > [!NOTE]  
->   Les étapes de cette procédure sont les mêmes que lorsque vous affectez un modèle d'échelonnement à un compte du grand livre ou une ressource.
+> Les étapes de cette procédure sont les mêmes que lorsque vous affectez un modèle d'échelonnement à un compte du grand livre ou une ressource.
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Article**, puis choisissez le lien associé.
 2. Ouvrez la fiche de l'article pour lequel les recettes ou les dépenses doivent être échelonnées selon les périodes comptables lorsque l'article a été vendu ou acheté.
 3. Dans le champ **Modèle échelonnement par défaut**, sélectionnez le modèle d'échelonnement pertinent.
 
 ## <a name="to-change-a-deferral-schedule-from-a-sales-invoice"></a>Pour modifier un calendrier d'échelonnement à partir d'une facture vente
+
 > [!NOTE]  
->   Les étapes de cette procédure sont identiques lorsque vous modifiez un calendrier d'échelonnement, pour les dépenses, à partir d'une facture achat.
+> Les étapes de cette procédure sont identiques lorsque vous modifiez un calendrier d'échelonnement, pour les dépenses, à partir d'une facture achat.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures vente**, puis sélectionnez le lien associé.
 2. Créez une facture vente pour un article ayant un modèle d'échelonnement attribué. Pour plus d'informations, reportez-vous à [Facturer des ventes](sales-how-invoice-sales.md).
@@ -73,8 +73,9 @@ Exemple : la date de report est le 06/02/2016. Si vous saisissez « Dépenses 
 6. Cliquez sur le bouton **OK**. Le tableau d'échelonnement est mis à jour pour la facture vente. Le modèle d'échelonnement associé reste inchangé.
 
 ## <a name="to-preview-how-deferred-revenues-or-expenses-will-be-posted-to-the-general-ledger"></a>Pour obtenir un aperçu de la façon dont les recettes et les dépenses seront reportées dans le grand livre
+
 > [!NOTE]  
->   Les étapes de cette procédure sont identiques lorsque vous prévisualisez la manière dont les échelonnements des dépenses sont reportés.
+> Les étapes de cette procédure sont identiques lorsque vous prévisualisez la manière dont les échelonnements des dépenses sont reportés.
 
 1. Sur la page **Facture vente** sélectionnez l'action **Aperçu report**.
 2. Sur la page **Aperçu report**, sélectionnez l'action **Écriture**, puis sélectionnez l'action **Afficher écritures associées**.
@@ -82,14 +83,16 @@ Exemple : la date de report est le 06/02/2016. Si vous saisissez « Dépenses 
 Les écritures à reporter vers le compte d'échelonnement spécifié, par exemple, les Revenus comptabilisés d'avance, sont désignées par la description que vous avez saisie dans le champ **Description de la période** du modèle d'échelonnement, par exemple « Dépenses échelonnées pour février 2016 ».
 
 ## <a name="to-review-posted-deferrals-in-the-sales-deferral-summary-report"></a>Pour examiner les échelonnements reportés dans le rapport Résumé échelonnement ventes
+
 > [!NOTE]  
->   Les étapes de cette procédure sont identiques lorsque vous passez en revue le rapport Résumé échelonnement achats.
+> Les étapes de cette procédure sont identiques lorsque vous passez en revue le rapport Résumé échelonnement achats.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Résumé échelonnement vente**, puis sélectionnez le lien associé.
 2. Sur la page **Résumé échelonnement ventes**, dans le champ **Balance au**, saisissez la date à laquelle vous souhaitez voir les recettes échelonnées.
 3. Cliquez sur le bouton **Aperçu**.
 
 ## <a name="see-also"></a>Voir aussi
+
 [Finances](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 [Utilisation de journaux généraux](ui-work-general-journals.md)  

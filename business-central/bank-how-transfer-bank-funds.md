@@ -1,21 +1,16 @@
 ---
 title: Transfert de fonds à la banque
-description: Vous pouvez transférer des montants d'un compte bancaire à un autre, y compris dans différentes devises, en reportant la transaction dans le journal général.
+description: 'Vous pouvez transférer des montants d''un compte bancaire à un autre, y compris dans différentes devises, en reportant la transaction dans le journal général.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: bank account transfer, multiple currencies
+ms.search.keywords: 'bank account transfer, multiple currencies'
+ms.search.form: 39
 ms.date: 04/29/2021
 ms.author: edupont
-ms.openlocfilehash: e9a285db48593828fbb01b281459df6c1e3111d0
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6437161"
 ---
 # <a name="transfer-bank-funds"></a>Transfert de fonds à la banque
 

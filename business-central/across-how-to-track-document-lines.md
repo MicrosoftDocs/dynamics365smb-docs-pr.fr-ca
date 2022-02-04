@@ -1,21 +1,15 @@
 ---
 title: Suivre des lignes document vers documents associés
-description: Affichez les documents liés aux lignes de bon de commande et de document de vente, comme les devis, les livraisons, les réceptions et les commandes permanentes, pour identifier les documents utilisés pour traiter les commandes.
+description: 'Affichez les documents liés aux lignes de bon de commande et de document de vente, comme les devis, les livraisons, les réceptions et les commandes permanentes, pour identifier les documents utilisés pour traiter les commandes.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '6560, 42, 50, 507, 509'
 ms.date: 06/11/2021
 ms.author: edupont
-ms.openlocfilehash: 4c469d3f521e526f3c121da5bf8265fc92f01289
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6439905"
 ---
 # <a name="track-document-lines"></a>Suivre des lignes document
 Vous pouvez afficher les documents associés aux lignes document de vente et aux lignes bon de commande, notamment à partir des lignes commande archivées. Les documents associés que vous pouvez suivre comprennent les devis, les livraisons, les réceptions et les commandes permanentes. Cela vous aide à identifier les documents utilisés pour traiter les commandes.  

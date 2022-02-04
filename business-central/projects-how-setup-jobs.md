@@ -1,19 +1,14 @@
 ---
-title: Configurer des projets, des prix et des groupes de report projet
-description: Décrit comment configurer des informations générales de projets et des prix d'articles de projet, des ressources, ainsi que des comptes du grand livre et des groupes de report projet.
+title: 'Configurer des projets, des prix et des groupes de report projet'
+description: 'Décrit comment configurer des informations générales de projets et des prix d''articles de projet, des ressources, ainsi que des comptes du grand livre et des groupes de report projet.'
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.workload: na
 ms.search.keywords: project management
+ms.search.form: '211, 463, 1012'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: cff8ae1b376079aa1b9162cade59e88da985e263
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6436158"
 ---
 # <a name="set-up-jobs-prices-and-job-posting-groups"></a>Configurer des projets, des prix et des groupes de report projet
 

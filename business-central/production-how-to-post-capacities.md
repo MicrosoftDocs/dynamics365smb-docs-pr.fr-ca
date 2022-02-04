@@ -1,5 +1,5 @@
 ---
-title: Comment reporter les capacités
+title: Reporter des capacités
 description: Reportez les capacités consommées qui ne sont pas affectées u bon de production dans le journal capacité et affichez les capacités reportées sur la page des écritures du grand livre de capacité.
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -7,15 +7,9 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '5832, 99000802, 99000820'
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: 024985cb4a2615f374465e5a387901976509a5db
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6444215"
 ---
 # <a name="post-capacities"></a>Reporter des capacités
 Le journal capacité vous permet de reporter les capacités consommées qui ne sont pas affectées au bon de production. Par exemple, les travaux d'entretien doivent être affectés à une capacité, mais non à un bon de production.  

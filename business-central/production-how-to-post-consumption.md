@@ -1,23 +1,17 @@
 ---
-title: Exécuter en lot la consommation
-description: Si la méthode consommation est définie sur Manuel, vous devez reporter les composantes manuellement à l’aide d’un journal consommation.
+title: Reporter en lot la consommation
+description: 'Si la méthode consommation est définie sur Manuel, vous devez reporter les composantes manuellement à l’aide d’un journal consommation.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '99000846, 99000850'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 2f31c7f48e88a44eb3f437827b6b24f255180d9a
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6440438"
 ---
-# <a name="batch-post-production-consumption"></a>Exécuter en lot la consommation de la production
+# <a name="batch-post-production-consumption"></a>Reporter en lot la consommation de la production
 
 Si le champ Méthode consommation indique **Manuelle**, vous devez valider les composants manuellement à l'aide d'une feuille consommation.  
 

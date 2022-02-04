@@ -1,21 +1,15 @@
 ---
 title: Créer le contenus de la zone
-description: Une fois que vous avez configuré vos zones, vous pouvez spécifier les articles à y stocker et configurer des règles qui contrôlent la fréquence de remplissage des zones.
+description: 'Une fois que vous avez configuré vos zones, vous pouvez spécifier les articles à y stocker et configurer des règles qui contrôlent la fréquence de remplissage des zones.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: 7374
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 575b2fdd00b7761fa615b9265fa5f21d402e096d
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6443014"
 ---
 # <a name="create-bin-contents"></a>Créer le contenus de la zone
 

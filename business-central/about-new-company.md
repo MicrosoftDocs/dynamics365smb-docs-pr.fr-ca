@@ -1,21 +1,16 @@
 ---
-title: Créer des compagnies en utilisant un guide de configuration assistée | Microsoft Docs
-description: Il est facile de créer une nouvelle compagnie vide dans Business Central. Un guide de configuration assistée vous aide à l'aide de procédures, et vous pouvez importer les données métier existantes.
+title: Créer des compagnies en utilisant le guide de configuration assistée
+description: 'Il est facile de créer une nouvelle compagnie vide dans Business Central. Un guide de configuration assistée vous aide à l''aide de procédures, et vous pouvez importer les données métier existantes.'
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: company, setup wizard
+ms.search.keywords: 'company, setup wizard'
+ms.search.form: 1803
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: cb1639a57dcfed21b71d9c9cd57cd6090e5e81d7
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5776382"
 ---
 # <a name="creating-new-companies-in-prod_short"></a>Création de compagnies dans [!INCLUDE[prod_short](includes/prod_short.md)]
 

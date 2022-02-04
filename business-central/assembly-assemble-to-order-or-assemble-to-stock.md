@@ -7,15 +7,9 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: kit, kitting
+ms.search.keywords: 'kit, kitting'
 ms.date: 06/15/2021
 ms.author: bholtorf
-ms.openlocfilehash: deaefbebf1520bc936c078ff7f74b18c34de4d89
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6326348"
 ---
 # <a name="understanding-assemble-to-order-and-assemble-to-stock"></a>Description des processus Assembler pour commande et Assembler pour stock
 Les éléments d'assemblage peuvent être fournis dans le cadre des deux processus suivants :  
@@ -70,20 +64,29 @@ Lorsque vous entrez un article à assembler pour commande sur une ligne vente, u
 
  Par exemple, la raison pour laquelle vous voudriez modifier la quantité à assembler peut être liée au souhait de reporter partiellement la livraison des quantités en inventaire avant que le résultat d'assemblage ne puisse être livré.  
 
- La table suivante explique les règles qui définissent les valeurs minimale et maximale que vous pouvez saisir dans le champ **Quantité à assembler** pour spécifier une valeur autre que celle par défaut dans un scénario de combinaison. Le tableau affiche un scénario de combinaison dont le champ **Qté. à expédier** de la ligne commande vente liée passe de 7 à 4 ; le champ **Quantité à assembler** prend donc par défaut la valeur 4.  
+ Les tables suivantes expliquent les règles qui définissent les valeurs minimale et maximale que vous pouvez saisir dans le champ **Quantité à assembler** pour spécifier une valeur autre que celle par défaut dans un scénario de combinaison. Le tableau affiche un scénario de combinaison dont le champ **Qté. à expédier** de la ligne commande vente liée passe de 7 à 4 ; le champ **Quantité à assembler** prend donc par défaut la valeur 4.  
 
-|-|Ligne de document de vente|En-tête d'ordre d'assemblage|||||||  
-|-|----------------------|---------------------------|-|-|-|-|-|-|  
-||**Quantité**|**Qté à livrer**|**Qté vers Assembler pour commande**|**Qté livrée**|**Quantité**|**Quantité à assembler**|**Quantité assemblée**|**Quantité restante**|  
-|Initial|10|7|7|0|7|7|0|7|  
-|Activer||4||||4 (valeur insérée par défaut)|||  
+- Ligne de document de vente
 
- D'après la situation présentée ci\-dessus, vous ne pouvez modifier que le champ **Quantité à assembler** comme suit :  
+    |                | **Quantité** | **Qté à livrer** | **Qté vers Assembler pour commande** | **Qté livrée** |
+    |----------------|--------------|------------------|-------------------------------|----------------------|
+    |**Valeur initiale**| 10          | 7                | 7                             | 0                    |
+    |**Modification**      |              | 4                |                               |                      |
 
--   La quantité minimum que vous pouvez saisir est 1. En effet, vous devez assembler au moins une unité pour pouvoir vendre les quatre, en supposant que les trois autres soient disponibles dans l'inventaire.  
--   La quantité maximum que vous pouvez saisir est 4. Cela permet de s'assurer que vous n'assemblez pas une quantité d'articles assemblés pour commande supérieure à celle requise pour la vente.  
+- En-tête d'ordre d'assemblage
 
-## <a name="see-also"></a>Voir aussi  
+    |                | **Quantité** | **Qté à livrer** | **Qté vers Assembler pour commande** | **Qté livrée** |
+    |----------------|--------------|------------------|-------------------------------|----------------------|
+    |**Valeur initiale**| 7           | 7                | 0                             | 7                    |
+    |**Modification**      |              | 4 (valeur insérée par défaut)|                         |                      |
+
+D’après cet exemple, vous ne pouvez modifier que le champ **Quantité à assembler** comme suit :  
+
+- La quantité minimum que vous pouvez saisir est 1. En effet, vous devez assembler au moins une unité pour pouvoir vendre les quatre, en supposant que les trois autres soient disponibles dans l'inventaire.  
+- La quantité maximum que vous pouvez saisir est 4. Cela permet de s'assurer que vous n'assemblez pas une quantité d'articles assemblés pour commande supérieure à celle requise pour la vente.  
+
+## <a name="see-also"></a>Voir aussi
+
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
 [Stock](inventory-manage-inventory.md)  

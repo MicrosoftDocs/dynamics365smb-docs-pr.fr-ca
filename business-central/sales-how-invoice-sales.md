@@ -1,22 +1,16 @@
 ---
 title: Facturer des ventes
-description: Décrit comment créer une facture vente, un document de vente ou, enregistrer votre entente avec un client pour vendre des produits à des conditions spécifiques.
+description: 'Décrit comment créer une facture vente, un document de vente ou, enregistrer votre entente avec un client pour vendre des produits à des conditions spécifiques.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: bill, sale, invoice, order
-ms.search.form: 42, 43, 48, 9301, 9305
+ms.search.keywords: 'bill, sale, invoice, order'
+ms.search.form: '42, 43, 48, 9301, 9305'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 125d28f1621e23f14cda9ce57a935a7da71e43cb
-ms.sourcegitcommit: a9e2aaee735870af566db68532cfa697347d68e0
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752478"
 ---
 # <a name="invoice-sales"></a>Facturer des ventes
 
@@ -28,7 +22,7 @@ Dans certains scénarios, vous devez utiliser un document de vente au lieu d'une
 * Si vous livrez des produits après avoir reporté les factures vente correspondantes.
 * Si vous vendez des articles que votre fournisseur fournit directement à votre client (une livraison directe). Pour plus d'informations, voir [Effectuer des livraisons directes](sales-how-drop-shipment.md).  
 
-Pour tous les autres aspects, les commandes vente et les factures vente fonctionnent de la même manière. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
+Pour tous les autres aspects, les commandes vente et les factures vente fonctionnent de la même manière. Pour plus d’informations sur l’utilisation des documents de vente, reportez-vous à [Vendre des produits](sales-how-sell-products.md).
 
 Vous pouvez négocier avec le client en créant d'abord un devis, que vous pouvez convertir en facture vente lorsque vous êtes d'accord sur la vente. Pour plus d'informations, voir [Créer des devis](sales-how-make-offers.md).
 

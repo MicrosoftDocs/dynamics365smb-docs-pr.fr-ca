@@ -1,21 +1,15 @@
 ---
 title: Aperçu de la ligne report de journal général
-description: Cette rubrique présente les modifications apportées à Codeunit 12, Gen. Journal général-Ligne report, et est le seul endroit pour insérer les écritures du grand livre, de la TVA et des clients et fournisseurs.
+description: 'Cette rubrique présente les modifications apportées à Codeunit 12, Gen. Journal général-Ligne report, et est le seul endroit pour insérer les écritures du grand livre, de la TVA et des clients et fournisseurs.'
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: design, general ledger, post
+ms.search.keywords: 'design, general ledger, post'
 ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: 9642c33d9d5994c6982029e4ae96897a7648b8c8
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6322482"
 ---
 # <a name="general-journal-post-line-overview"></a>Aperçu de la ligne report de journal général
 

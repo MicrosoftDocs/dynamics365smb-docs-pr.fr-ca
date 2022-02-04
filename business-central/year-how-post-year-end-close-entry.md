@@ -1,18 +1,13 @@
 ---
 title: Reporter l'écriture de fermeture d'exercice
-description: Décrit comment ouvrir le journal spécifié dans le traitement en lot Fermer l'état des résultats, puis examiner et reporter l'écriture de fermeture de fin d'exercice.
+description: 'Décrit comment ouvrir le journal spécifié dans le traitement en lot Fermer l''état des résultats, puis examiner et reporter l''écriture de fermeture de fin d''exercice.'
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.search.keywords: year closing, close accounting period, close fiscal year, bank account detailed trial balance
+ms.search.keywords: 'year closing, close accounting period, close fiscal year, bank account detailed trial balance'
+ms.search.form: 100
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 6dfba7323eeaad538cf45525d11212a6e5d7438e
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6438537"
 ---
 # <a name="posting-the-year-end-closing-entry"></a>Report de l’écriture de fermeture d’exercice
 

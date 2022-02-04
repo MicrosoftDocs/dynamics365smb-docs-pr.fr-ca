@@ -1,5 +1,5 @@
 ---
-title: Utiliser des revenus récurrents | Microsoft Docs
+title: Utiliser des revenus récurrents
 description: Découvrez les options disponibles pour automatiser l'envoi de factures d'abonnement à vos clients et enregistrer des revenus récurrents.
 author: AndreiPanko
 ms.service: dynamics365-business-central
@@ -7,16 +7,11 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: recurring, invoicing, subscription, billing
+ms.search.keywords: 'recurring, invoicing, subscription, billing'
+ms.search.form: 283
 ms.reviewer: edupont
 ms.date: 04/01/2021
 ms.author: andreipa
-ms.openlocfilehash: e61f4406e754a2cf02aafcda21eec86b55eff053
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5780792"
 ---
 # <a name="work-with-recurring-revenue-in-prod_short"></a>Utiliser des revenus récurrents dans [!INCLUDE[prod_short](includes/prod_short.md)]
 

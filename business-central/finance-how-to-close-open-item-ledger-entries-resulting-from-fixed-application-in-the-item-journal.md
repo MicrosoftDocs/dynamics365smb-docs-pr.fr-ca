@@ -7,15 +7,9 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: 40
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 4fac4871fdf42210dfd48ca6dd7d9c2fede0c7ef
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5788293"
 ---
 # <a name="close-open-item-ledger-entries-resulting-from-fixed-application-in-the-item-journal"></a>Fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal article
 
@@ -41,7 +35,7 @@ La procédure suivante explique comment fermer des écritures de ce genre au cou
 
 ## <a name="see-also"></a>Voir aussi
 
-[Supprimer et appliquer à nouveau des écritures article](finance-how-to-remove-and-reapply-item-entries.md)  
+[Supprimer et affecter à nouveau des écritures article](finance-how-to-remove-and-reapply-item-entries.md)  
 [Traiter les retours et annulations de ventes](sales-how-process-sales-returns-cancellations.md)  
 [Configuration de l'évaluation de l'inventaire et des coûts](finance-set-up-inventory-valuation-and-costing.md)  
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  

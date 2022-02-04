@@ -1,21 +1,17 @@
 ---
 title: Afficher les informations sur les tables
-description: Découvrez comment afficher des informations sur les tables de base de données directement depuis l’interface client de Business Central.
+description: "Découvrez comment afficher des informations sur les tables de base de données directement depuis l’interface client de Business\_Central."
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
+ms.search.form: 8700
 ms.date: 06/14/2021
 ms.author: jswymer
-ms.openlocfilehash: 581d92010fa566c33775ffd6238ca6e0cfca0837
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6443089"
 ---
+
 # <a name="viewing-table-information"></a>Affichage d'informations sur les tables
 
 La page **Informations sur les tables 8700** fournit des informations sur toutes les tables système et métier d'une solution Business Central. En particulier, la page affiche des informations sur la quantité de données contenues dans les tables.

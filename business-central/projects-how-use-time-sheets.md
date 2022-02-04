@@ -1,22 +1,16 @@
 ---
 title: Utiliser des feuilles de temps
-description: Décrit comment créer une feuille de temps, définir les types de travaux, renseigner la feuille de temps et la soumettre pour approbation.
+description: 'Décrit comment créer une feuille de temps, définir les types de travaux, renseigner la feuille de temps et la soumettre pour approbation.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: project management, capacity, staff, resource, time sheets
-ms.search.form: 973
+ms.search.keywords: 'project management, capacity, staff, resource, time sheets'
+ms.search.form: '950, 951, 973'
 ms.date: 12/13/2021
 ms.author: edupont
-ms.openlocfilehash: a5fdd86d63fa19a0a7f473d58abf34242e4e5cd5
-ms.sourcegitcommit: 41876b559872fe7adbfa5b59a6e1a71dc907fb15
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920913"
 ---
 # <a name="use-time-sheets"></a>Utiliser des feuilles de temps
 
@@ -36,7 +30,7 @@ Avant de pouvoir utiliser des feuilles de temps, vous devez définir des informa
 Vous pouvez utiliser le traitement par lots **Créer des feuilles de temps** pour configurer des feuilles de temps pour un nombre donné de périodes ou de semaines. Une fois qu'une feuille de temps est créée, son propriétaire peut l'ouvrir et y enregistrer le temps consacré à une tâche.  
 
 > [!IMPORTANT]
-> Vous devez disposer d'autorisations pour pouvoir créer des feuilles de temps.
+> Vous devez disposer d'autorisations pour pouvoir créer des feuilles de temps. Pour plus d'informations, voir [Paramétrer des feuilles de temps](projects-how-setup-time-sheets.md).
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuilles de temps**, puis choisissez le lien associé.
 2. Sur la page **Feuilles de temps**, choisissez l’action **Créer des feuilles de temps**.

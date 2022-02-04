@@ -7,20 +7,17 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: year closing, close accounting period, close fiscal year, bank account detailed trial balance
+ms.search.keywords: 'year closing, close accounting period, close fiscal year, bank account detailed trial balance'
+ms.search.form: 100
 ms.date: 06/25/2021
 ms.author: jswymer
-ms.openlocfilehash: 5f668104fe6b0bbd9dbbf9295034547e298df916
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6436008"
 ---
 # <a name="close-accounting-periods"></a>Fermer des périodes comptables
+
 Lorsqu'un exercice financier est terminé, vous devez fermer les périodes qui le composent.
 
 ## <a name="to-close-accounting-periods"></a>Pour fermer des périodes comptables
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Périodes comptables**, puis sélectionnez le lien associé.
 2. Sur la page **Périodes comptables**, sélectionnez l'action **Fermer exercice**.
 
@@ -30,7 +27,7 @@ Lorsqu'un exercice financier est terminé, vous devez fermer les périodes qui l
 L'exercice comptable est désormais clôturé, et les champs **Fermé** et **Verrouillage date** sont sélectionnés pour toutes les périodes de l'exercice. Vous ne pouvez pas rouvrir l'exercice comptable ni supprimer la coche des champs **Fermé** et **Verrouillage date**.
 
 > [!NOTE]  
->   Vous ne pouvez pas fermer un exercice financier avant d'en avoir créé un nouveau. Sachez que lorsqu'un exercice financier est fermé, vous ne pouvez pas modifier la date début de l'exercice financier suivant.
+> Vous ne pouvez pas fermer un exercice financier avant d'en avoir créé un nouveau. Sachez que lorsqu'un exercice financier est fermé, vous ne pouvez pas modifier la date début de l'exercice financier suivant.
 
 Même si un exercice financier a été fermé, vous pouvez toujours y reporter des écritures. Dans ce cas, les écritures sont marquées comme validées dans un exercice comptable clôturé et le champ **Ecr. exercice précédent** est activé.
 

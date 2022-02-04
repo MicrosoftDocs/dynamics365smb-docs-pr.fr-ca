@@ -1,26 +1,22 @@
 ---
 title: Terminologie en comptabilité analytique
-description: Cette rubrique définit les termes clés utilisés dans la comptabilité analytique, tels que la clé d’affectation et la source d’affectation.
+description: 'Cette rubrique définit les termes clés utilisés dans la comptabilité analytique, tels que la clé d’affectation et la source d’affectation.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 02afd4709ef950a621043ed6955c79bf71dac6fd
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6326973"
 ---
 # <a name="terminology-in-cost-accounting"></a>Terminologie en comptabilité analytique
+
 Cette rubrique définit les conditions principales qui sont utilisés en comptabilité analytique.  
 
-## <a name="key-terms"></a>Conditions principales  
+## <a name="key-terms"></a>Conditions principales
+
  Le tableau suivant définit les conditions principales en comptabilité analytique.  
 
 |**Terme**|**Définition**|  

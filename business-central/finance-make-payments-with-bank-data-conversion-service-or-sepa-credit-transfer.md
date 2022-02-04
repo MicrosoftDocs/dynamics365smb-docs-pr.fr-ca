@@ -7,15 +7,10 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
+ms.search.form: '256, 1205, 1206, 1209, 10810, 10811'
 ms.date: 07/06/2021
 ms.author: bholtorf
-ms.openlocfilehash: f54abce68049db1a6ff9330eb5569f2c26cf12ed
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6437426"
 ---
 # <a name="make-payments-with-the-amc-banking-365-fundamentals-extension-or-sepa-credit-transfer"></a>Effectuer des paiements avec l'extension AMC Banking 365 Fundamentals ou virement SEPA
 
@@ -67,7 +62,7 @@ Avant de pouvoir traiter le paiement par voie électronique lorsque vous exporte
 3. Sur le raccourci **Paiement**, dans le champ **Code mode de règlement**, sélectionnez **BANQUE**.  
 4. Dans le champ **Compte bancaire préféré**, cliquez sur la banque sur laquelle l'argent est transféré lorsqu'il est traité par votre banque électronique.  
 
-     Si vous n'avez pas encore créé de banque pour ce fournisseur, vous pouvez le faire maintenant. Pour plus d'informations, consultez [Configurer les comptes bancaires des fournisseurs pour l'exportation des fichiers bancaires](bank-how-setup-bank-accounts.md#to-set-up-vendor-bank-accounts-for-export-of-bank-files). La valeur du champ **Compte bancaire préféré** est copiée dans le champ **Cpte bancaire destinataire** de la page **Journal paiement**.  
+    Si vous n'avez pas encore créé de banque pour ce fournisseur, vous pouvez le faire maintenant. Pour plus d'informations, consultez [Configurer les comptes bancaires des fournisseurs pour l'exportation des fichiers bancaires](bank-how-setup-bank-accounts.md#to-set-up-vendor-bank-accounts-for-export-of-bank-files). La valeur du champ **Compte bancaire préféré** est copiée dans le champ **Cpte bancaire destinataire** de la page **Journal paiement**.  
 
 ### <a name="to-set-the-payment-journal-up-to-export-payment-files"></a>Pour définir le journal de paiement jusqu'aux fichiers de paiement d'exportation
 

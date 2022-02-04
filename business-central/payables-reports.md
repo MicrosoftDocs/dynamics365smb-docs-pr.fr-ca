@@ -1,18 +1,13 @@
 ---
 title: Rapports Comptabilité fournisseur et analyse
-description: Découvrez les rapports et analyses disponibles dans la version standard de Business Central afin que vous puissiez suivre vos comptes fournisseur.
+description: "Découvrez les rapports et analyses disponibles dans la version standard de Business\_Central afin que vous puissiez suivre vos comptes fournisseur."
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keywords: reporting
+ms.search.form: 347
 ms.date: 07/13/2021
 ms.author: edupont
-ms.openlocfilehash: 774fd24bc15cb4cefb56991289d9c72c0909a319
-ms.sourcegitcommit: a486aa1760519c380b8cdc8fdf614bed306b65ea
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6543396"
 ---
 # <a name="accounts-payable-reports-and-analytics-in-business-central"></a>Rapports comptabilité fournisseur et analyses d’immobilisation dans Business Central
 

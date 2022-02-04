@@ -1,23 +1,20 @@
 ---
-title: Envoyer les rapports TVA destinés à l'administration fiscale | Microsoft Docs
-description: Apprendre à préparer les rapports qui répertorient la TVA des ventes au cours d'une période, ou à partir des ventes et achats, et envoyer le rapport à l'administration fiscale.
+title: Envoyer les déclarations de TVA aux autorités fiscales
+description: 'Apprendre à préparer les rapports qui répertorient la TVA des ventes au cours d''une période, ou à partir des ventes et achats, et envoyer le rapport à l''administration fiscale.'
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: VAT, tax, report, EC sales list, statement
+ms.search.keywords: 'VAT, tax, report, EC sales list, statement'
+ms.search.form: '321, 322, 323, 474, 475, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 9401'
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 0342f6009f91140cea9695caca1517a920ac6613
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6444497"
 ---
+
 # <a name="report-vat-to-tax-authorities"></a>Déclarer la TVA aux autorités fiscales
+
 Cette rubrique décrit les rapports dans [!INCLUDE[prod_short](includes/prod_short.md)] que vous pouvez utiliser pour envoyer des informations sur les montants de la taxe sur la valeur ajoutée (TVA) relatifs aux ventes et achats à l'administration fiscale de votre région. 
 
 Vous pouvez utiliser les rapports suivants :

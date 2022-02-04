@@ -1,21 +1,16 @@
 ---
-title: Aperçu des tâches permettant de paramétrer vos achats | Microsoft Docs
+title: Aperçu des tâches permettant de paramétrer vos achats
 description: Décrit les tâches permettant de définir les stratégies d'approvisionnement de votre compagnie et de déterminer vos processus d'achat.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: procurement, supply, vendor order
+ms.search.keywords: 'procurement, supply, vendor order'
+ms.search.form: '175, 176, 177, 178, 460, 5727, 5729'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 9d0058c707862144592278d08a494175adf67a2a
-ms.sourcegitcommit: f9a190933eadf4608f591e2f1b04c69f1e5c0dc7
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115446"
 ---
 # <a name="setting-up-purchasing"></a>Définition des achats
 Avant de pouvoir gérer les processus achat, vous devez configurer les règles et valeurs qui définissent les stratégies d'achat de la compagnie.

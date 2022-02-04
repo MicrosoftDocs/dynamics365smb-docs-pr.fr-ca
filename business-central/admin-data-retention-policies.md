@@ -1,5 +1,5 @@
 ---
-title: Nettoyer les données avec des stratégies de rétention | Microsoft Docs
+title: Nettoyer les données avec des stratégies de rétention
 description: Vous pouvez spécifier la fréquence à laquelle vous souhaitez supprimer certains types de données.
 author: bholtorf
 ms.service: dynamics365-business-central
@@ -7,15 +7,10 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: delete, data, retention, policy, policies
+ms.search.keywords: 'delete, data, retention, policy, policies'
+ms.search.form: '3903, 3901'
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 3ee0149461730e20e996f31dc7175ff3325bceca
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6443928"
 ---
 # <a name="define-retention-policies"></a>Définir des stratégies de rétention
 Les administrateurs peuvent définir des stratégies de rétention pour spécifier à quelle fréquence ils souhaitent que [!INCLUDE[prod_short](includes/prod_short.md)] supprime les données obsolètes dans les tables contenant des entrées de journal et des enregistrements archivés. Par exemple, le nettoyage des entrées de journal peut faciliter l’utilisation des données réellement pertinentes. Les stratégies peuvent inclure toutes les données des tables qui ont dépassé la date d’expiration, ou vous pouvez ajouter des critères de filtre qui n’incluront que certaines données expirées dans la stratégie. 

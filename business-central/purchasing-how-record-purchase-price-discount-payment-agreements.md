@@ -1,5 +1,5 @@
 ---
-title: Tarifs et escomptes fournisseur spéciaux et secondaires | Microsoft Docs
+title: Enregistrer les prix d'achat spéciaux et les escomptes
 description: Vous pouvez définir différentes ententes en termes de prix et d'escomptes et les affecter aux documents achat pour les fournisseurs.
 author: bholtorf
 ms.service: dynamics365-business-central
@@ -7,15 +7,10 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: special price, alternate price, pricing
+ms.search.keywords: 'special price, alternate price, pricing'
+ms.search.form: '26, 1346, 7012, 7014, 7017, 7018, 7189, 7190'
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 580a2b248b43ccac272b95656207439a8e02cc85
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6438562"
 ---
 # <a name="record-special-purchase-prices-and-discounts"></a>Enregistrer les prix d'achat spéciaux et les escomptes
 > [!NOTE]

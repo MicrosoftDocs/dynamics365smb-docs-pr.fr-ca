@@ -1,23 +1,18 @@
 ---
-title: 'Procédure : configurer des calendriers usine'
-description: La création et l’activation d’un calendrier d’atelier impliquent plusieurs tâches, notamment la configuration des calendriers d’atelier et la création de quarts de travail.
+title: Paramétrer des calendriers usine
+description: 'La création et l’activation d’un calendrier d’atelier impliquent plusieurs tâches, notamment la configuration des calendriers d’atelier et la création de quarts de travail.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '9291, 9293, 9295, 99000750, 99000751, 99000752, 99000753, 99000759, 99000769, 99000770, 99000771, 99000772, 99000920'
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: 9d473d6c1e657828ce2d47e33608b691ee45fd38
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6440413"
 ---
 # <a name="set-up-shop-calendars"></a>Paramétrer des calendriers usine
+
 Les calendriers d'atelier ou de poste de charge spécifient les jours ouvrés et les heures de travail, les équipes, les jours fériés et les absences déterminant la capacité disponible brute de l'atelier, mesurée en unités de temps, en fonction des valeurs d'efficacité et de capacité définies.
 
 Avant de calculer un calendrier d'unité de production ou d'atelier spécifique, vous devez configurer un ou plusieurs calendriers usine généraux. Les calendriers usine définissent la semaine de travail standard en fonction des heures de début et de fin de chaque jour ouvré et des changements d'équipe. En outre, ils déterminent les jours fériés fixes de l'année.  

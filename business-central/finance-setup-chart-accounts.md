@@ -1,21 +1,16 @@
 ---
 title: Configurer le plan comptable (contient une vidéo)
-description: Le plan comptable affiche les comptes généraux qui stockent vos données financières. Vous pouvez modifier les comptes par défaut dans le plan comptable, et vous pouvez ajouter de nouveaux comptes.
+description: 'Le plan comptable affiche les comptes généraux qui stockent vos données financières. Vous pouvez modifier les comptes par défaut dans le plan comptable, et vous pouvez ajouter de nouveaux comptes.'
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: COA, cha of acc
+ms.search.keywords: 'COA, cha of acc'
+ms.search.form: '16, 17, 18, 118, 386, 391'
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: 0ef1a35805413619c6da19654a8f501525997d35
-ms.sourcegitcommit: 4c97f38fc53c1c1ec534054a4a100d8cfb73175b
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 12/20/2021
-ms.locfileid: "7940561"
 ---
 # <a name="setting-up-or-changing-the-chart-of-accounts"></a>Configuration ou modification du plan comptable
 

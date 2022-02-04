@@ -1,5 +1,5 @@
 ---
-title: Comment livrer des articles
+title: Livrer des articles
 description: Cette rubrique décrit comment livrer des articles depuis votre entrepôt en fonction de la configuration de votre entrepôt pour le traitement des livraisons.
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -7,15 +7,9 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '7335, 7337, 7339, 7340, 7341, 7362'
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 60274947bb0f38ed6e116767ac5c74357482298c
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6435944"
 ---
 # <a name="ship-items"></a>Livrer des articles
 

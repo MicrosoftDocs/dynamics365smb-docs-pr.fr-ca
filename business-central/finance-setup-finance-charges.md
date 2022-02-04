@@ -1,21 +1,16 @@
 ---
 title: Configurer les modalités de frais financiers
-description: Découvrez comment configurer Business Central afin de pouvoir informer les clients des frais supplémentaires en envoyant des notes de frais financiers.
+description: "Découvrez comment configurer Business\_Central afin de pouvoir informer les clients des frais supplémentaires en envoyant des notes de frais financiers."
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: payment due, debt, overdue, fee, charge
+ms.search.keywords: 'payment due, debt, overdue, fee, charge'
+ms.search.form: '6, 494'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 36d841a7231794e1cfb61a928efbbf3f83bbdc27
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6446275"
 ---
 # <a name="set-up-finance-charge-terms"></a>Configurer les modalités de frais financiers
 

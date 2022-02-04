@@ -7,14 +7,10 @@ ms.custom: na
 ms.reviewer: na
 ms.service: dynamics365-business-central
 ms.topic: conceptual
+ms.search.form: 1752
 ms.date: 06/14/2021
-ms.openlocfilehash: b5df66798db4a77504176d03bd46156d5d99fc56
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6326548"
 ---
+
 # <a name="classifying-data-sensitivity-fields"></a>Champs Classification de la sensibilité des données
 Pour classer les champs contenant des données sensibles ou personnelles, un partenaire Microsoft peut définir la propriété ```DataClassification``` des champs. Cela nécessite un accès aux tables de base de données, par le biais de l'environnement de développement ou en exécutant un script Windows PowerShell. Pour plus d'informations, voir [Classification des données](/dynamics365/business-central/dev-itpro/developer/devenv-classifying-data).  
 

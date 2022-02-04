@@ -1,8 +1,6 @@
 ---
 title: Annuler un report en reportant une écriture de contrepassation
-description: Si vous avez effectué une erreur de report dans le journal général, vous pouvez utiliser la fonction Inverser la transaction pour annuler le report avec une piste d'audit correcte.
-services: project-madeira
-documentationcenter: ''
+description: 'Si vous avez effectué une erreur de report dans le journal général, vous pouvez utiliser la fonction Inverser la transaction pour annuler le report avec une piste d''audit correcte.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -10,16 +8,12 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: reimbursement
+ms.search.form: '20, 25, 29, 38, 202, 5912,'
 ms.date: 07/22/2021
 ms.author: edupont
-ms.openlocfilehash: c23dcaed561997b5c0f38b4cd5ad5631b8519706
-ms.sourcegitcommit: e904da8dc45e41cdd1434111c15e2a9d9edd3fa2
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "6660166"
 ---
 # <a name="reverse-journal-postings-and-undo-receiptsshipments"></a>Inverser des reports journal et annuler des réceptions/livraisons
+
 L’inversion des reports journal n’est pas seulement utilisée pour corriger les erreurs, mais elle peut également être utilisée pour effacer une ancienne écriture de régularisation avant d’en saisir une nouvelle, par exemple. Vous sélectionnez l’écriture et créez une écriture de contrepassation (écritures identiques aux écritures originales mais avec le signe opposé dans le champ du montant) portant le même numéro de document et la même date de report que l’écriture d’origine. Une fois l'écriture inversée, créez l'écriture correcte.
 
 Vous pouvez uniquement inverser les écritures reportées à partir d'une ligne journal général. Une écriture ne peut être inversée qu'une seule fois.
@@ -80,6 +74,7 @@ La procédure d'annulation d'une livraison retour reportée d'articles ou de res
 8.  Corrigez l'écriture dans le champ **Quantité** et reportez à nouveau le retour achat.  
 
 ## <a name="see-also"></a>Voir aussi
+
 [Annuler le report d'assemblage](assembly-how-to-undo-assembly-posting.md)  
 [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)  
 [Utilisation de journaux généraux](ui-work-general-journals.md)  

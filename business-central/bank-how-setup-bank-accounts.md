@@ -1,21 +1,16 @@
 ---
 title: Configurer des comptes bancaires (contient une vidéo)
-description: Découvrez comment les comptes bancaires sont utilisés dans Business Central et comment vous pouvez rapprocher les montants avec votre banque.
+description: "Découvrez comment les comptes bancaires sont utilisés dans Business\_Central et comment vous pouvez rapprocher les montants avec votre banque."
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: Yodlee, feed, stream
-ms.date: 06/22/2021
+ms.search.keywords: 'Yodlee, feed, stream'
+ms.search.form: '370, 371, 372, 373, 375, 423, 424, 425, 426, 1240, 1280'
+ms.date: 01/24/2022
 ms.author: edupont
-ms.openlocfilehash: f7984f5bf96208582be5a25a817cabb77589fe99
-ms.sourcegitcommit: 4c97f38fc53c1c1ec534054a4a100d8cfb73175b
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 12/20/2021
-ms.locfileid: "7940611"
 ---
 # <a name="set-up-bank-accounts"></a>Configuration des comptes bancaires
 
@@ -90,6 +85,8 @@ Plus les informations de mappage que vous faites dans le journal de rapprochemen
 2. Sur la page **Comptes bancaires**, sélectionnez l'action **Nouveau**.
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
+    Par exemple, le champ **Groupe de report cpte bancaire** connecte le compte bancaire au compte du grand livre sous-jacent dans le bilan. Pour plus d’informations, voir [Configuration des groupes de report](finance-posting-groups.md).
+
 > [!TIP]
 > Certains champs sont masqués jusqu’à ce que vous choisissiez l’action **Afficher plus**, généralement parce qu’ils sont rarement utilisés. D’autres doivent être ajoutés par personnalisation. Pour plus d'informations, voir [Personnaliser votre espace de travail](ui-personalization-user.md).
 
@@ -152,7 +149,12 @@ The following table explains key fields.
 |Payment Export Format|Specifies the format of the bank file that will be exported when you choose the Export Payments to File button in the Payment Journal window.|
 -->
 > [!NOTE]
-> Pour renseigner le champ **Solde** avec un solde ouvert, vous devez reporter une écriture de compte bancaire avec le montant en question. Vous pouvez effectuer cette opération en effectuant un rapprochement bancaire. Pour plus d'informations, voir [Rapprocher des comptes bancaires](bank-how-reconcile-bank-accounts-separately.md). Sinon, vous pouvez appliquer le solde ouvert dans le cadre de la création des données générales de nouvelles compagnies à l'aide du guide de configuration assistée **Effectuer migration données métier**. Pour plus d'informations, voir [Préparation aux activités commerciales](ui-get-ready-business.md). Pour savoir comment créer des soldes d’ouverture dans [!INCLUDE[prod_short](includes/prod_short.md)], voir [Comment créer des soldes ouverts journal](admin-how-to-create-journal-opening-balances.md).
+> Pour renseigner le champ **Solde** avec un solde ouvert, vous devez reporter une écriture de compte bancaire avec le montant en question. Vous pouvez effectuer cette opération en effectuant un rapprochement bancaire. Pour plus d'informations, voir [Rapprocher des comptes bancaires](bank-how-reconcile-bank-accounts-separately.md).  
+>
+> Sinon, vous pouvez appliquer le solde ouvert dans le cadre de la création des données générales de nouvelles compagnies à l'aide du guide de configuration assistée **Effectuer migration données métier**. Pour plus d'informations, voir [Préparation aux activités commerciales](ui-get-ready-business.md).  
+
+> [!IMPORTANT]
+> Il est important que vous ne reportiez pas le solde d’ouverture directement dans le grand livre. Le fait d’avoir des écritures dans le compte du grand livre qui sont reportées directement sur le compte du grand livre vous empêchera généralement de rapprocher le compte bancaire ou, dans le cas de comptes bancaires en devise étrangère, entraînera l’accumulation de différences au fur et à mesure que vous reportez plus de rapprochements bancaires. Souvent, vous reportez le solde bancaire d’ouverture directement sur le compte bancaire, et le montant se retrouve ensuite dans le compte du grand livre. Sinon, inversez-le plus tard sur un compte du grand livre désigné que vous avez utilisé pour équilibrer le solde d’ouverture du grand livre. Dans les deux cas, vous devez équilibrer toute écriture directe sur le compte du grand livre avant de commencer votre premier rapprochement bancaire, et surtout si le compte bancaire est en devise étrangère.  
 
 ## <a name="to-set-up-your-bank-account-for-import-or-export-of-bank-files"></a>Pour configurer votre compte bancaire pour importer ou exporter des fichiers bancaires
 

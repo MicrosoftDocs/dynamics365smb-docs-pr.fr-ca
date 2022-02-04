@@ -1,25 +1,20 @@
 ---
-title: Configuration des modèles d'API | Microsoft Docs
+title: Configuration des modèles d'API
 description: Décrit la procédure à suivre pour configurer des modèles d'API pour Dynamics 365 Business Central.
-services: project-madeira
-documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: API templates, configuring templates
+ms.search.keywords: 'API templates, configuring templates'
+ms.search.form: 5469
 ms.date: 04/01/2021
 ms.author: solsen
-ms.openlocfilehash: fef3b56de7724745dcf8385c0e4665e3e2d4743d
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6444003"
 ---
+
 # <a name="configuring-api-templates"></a>Configuration des modèles d'API
+
 La bibliothèque d'API de [!INCLUDE[prod_short_md](includes/prod_short.md)] fournit une représentation simplifiée des entités sous-jacentes. Toutes les propriétés de l'application ne sont pas exposées via l'API associée. La page **Configuration API** permet de définir des modèles qui sont utilisés pour remplir les propriétés vides d'une entité lorsque vous créez une action POST via l'API. 
 
 Par exemple, si un modèle de configuration est défini pour l'entité article, lorsqu'un nouvel enregistrement d'article est créé via l'API de l'article, les propriétés du nouvel article qui ne sont pas définies dans l'appel de l'API sont remplies à partir du modèle sélectionné. Si, par exemple, aucune valeur n'est définie pour le champ **Groupe de report de produit** via l'API, mais qu'une valeur est définie dans le modèle sélectionné, la valeur du groupe de report définie dans le modèle est appliquée au nouvel article. 

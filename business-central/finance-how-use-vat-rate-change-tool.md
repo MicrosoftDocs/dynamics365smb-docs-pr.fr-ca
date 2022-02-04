@@ -6,16 +6,12 @@ ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.reviewer: edupont
 ms.workload: na
-ms.search.keywords: VAT, VAT rate, posting, tax, value-added tax
+ms.search.keywords: 'VAT, VAT rate, posting, tax, value-added tax'
+ms.search.form: '550,'
 ms.date: 06/16/2021
 ms.author: andregu
-ms.openlocfilehash: 9d90364691e393ddb376b0446d298ba96a92b383
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6437401"
 ---
+
 # <a name="managing-vat-rate-changes"></a>Gérer les changements de taux TVA
 
 Les taux TVA peuvent changer en fonction de la législation locale. Tout changement de TVA a un impact sur vos données [!INCLUDE[prod_short](includes/prod_short.md)] si le taux TVA est abaissé, augmenté ou supprimé. La TVA est liée à de nombreuses entités dans [!INCLUDE[prod_short](includes/prod_short.md)], telles que les clients, les fournisseurs, les articles, les ressources, les frais annexes et les comptes GL. Les modifications des taux TVA se produisent généralement à une date spécifique, à partir de laquelle vous devrez modifier la configuration de la TVA, les groupes de report, etc. pour vous assurer que les nouveaux documents de vente et les bons de commande sont créés avec le nouveau taux TVA.

@@ -1,5 +1,5 @@
 ---
-title: Traiter les retours ou annulations | Microsoft Docs
+title: Traiter les retours ou annulations
 description: Explique comment créer et reporter une note de crédit achat lorsque vous souhaitez retourner des articles à un fournisseur ou annuler des services achetés.
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -7,15 +7,10 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: cancel, undo, correct
+ms.search.keywords: 'cancel, undo, correct'
+ms.search.form: '6640, 6643'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: e43f5c5dd2a785a0268b9cf61794de1f8fa73a9a
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6445561"
 ---
 # <a name="process-purchase-returns-or-cancellations"></a>Traiter les retours ou annulations d'achats
 

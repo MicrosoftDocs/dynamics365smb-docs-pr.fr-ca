@@ -1,26 +1,21 @@
 ---
 title: Configuration des processus entrepôt
-description: La stratégie de distribution d’une compagnie se reflète dans la configuration de ses processus entrepôt, par exemple les emplacements d’entrepôt.
+description: 'La stratégie de distribution d’une compagnie se reflète dans la configuration de ses processus entrepôt, par exemple les emplacements d’entrepôt.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '5775, 7300, 7301, 7302, 7303, 7304, 7305, 7306, 7307, 7308, 7325, 7344, 7346, 7347, 7353, 7366'
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: b4578a02405b2aa972dac81a1d8d8e30ad713f3c
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6324724"
 ---
 # <a name="setting-up-warehouse-management"></a>Configuration de la gestion des entrepôts
+
 La stratégie de distribution d'une compagnie se reflète dans la configuration de ses processus entrepôt : Cela inclut la définition de la manière dont différents articles sont traités dans différents entrepôts (par exemple, degré de contrôle des zones et étendue du flux de travail requis entre les activités entrepôt).  
 
- Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.   
+Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.  
 
 |**Pour**|**Voir**|  
 |------------|-------------|  
@@ -42,11 +37,12 @@ La stratégie de distribution d'une compagnie se reflète dans la configuration 
 |Intégrez les lecteurs de code barres à votre solution de gestion d'entrepôt. Uniquement pour le déploiement sur site.|[Utilisation des systèmes de saisie automatisée (ADCS)](warehouse-use-automated-data-capture-systems-adcs.md)|
 |Spécifiez les rapports par défaut à utiliser pour différents types de documents.|[Sélection des rapports dans Business Central](across-report-selections.md)|
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
+
 [Gestion d’entrepôt](warehouse-manage-warehouse.md)  
 [Inventaire](inventory-manage-inventory.md)  
-[Gestion d'assemblage](assembly-assemble-items.md)    
-[Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
+[Gestion d’assemblage](assembly-assemble-items.md)
+[Détails de conception : Warehouse Management](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 

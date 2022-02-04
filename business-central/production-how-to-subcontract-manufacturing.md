@@ -1,23 +1,18 @@
 ---
-title: 'Procédure : sous-traiter la production'
-description: Cette rubrique donne un aperçu détaillé des fonctionnalités étendues de la sous-traitance dans Business Central, y compris les champs d’atelier et d’itinéraire.
+title: Sous-traiter la production
+description: "Cette rubrique donne un aperçu détaillé des fonctionnalités étendues de la sous-traitance dans Business\_Central, y compris les champs d’atelier et d’itinéraire."
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: 99000886
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: 821e705e07b5ced42ad2ae41f2da340573004c7e
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6441532"
 ---
 # <a name="subcontract-manufacturing"></a>Sous-traiter la production
+
 La sous-traitance des opérations sélectionnées au fournisseur est courante dans de nombreuses compagnies manufacturières. La sous-traitance peut être occasionnelle ou faire partie intégrante des processus de production.
 
 [!INCLUDE[prod_short](includes/prod_short.md)] fournit plusieurs outils pour gérer le travail de sous-traitance :  

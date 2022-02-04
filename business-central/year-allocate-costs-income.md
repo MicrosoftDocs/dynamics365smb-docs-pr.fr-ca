@@ -1,24 +1,18 @@
 ---
-title: Aperçu des tâches de ventilation des coûts et des revenus | Microsoft Docs
+title: Aperçu des tâches de ventilation des coûts et des revenus
 description: Décrit les tâches pour affecter une écriture dans un journal général dans différents comptes lorsque vous reportez le journal.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
+ms.search.form: 283
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 3f7b6089a3cdcba323d13a745ae2cb8e06f3bb8a
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6439780"
 ---
 # <a name="allocate-costs-and-income"></a>Répartition des coûts et du revenu
+
 Vous pouvez ventiler une écriture dans un journal général dans différents comptes lorsque vous reportez le journal. L'affectation peut être effectuée de trois manières différentes :
 
 * Quantité
@@ -31,7 +25,9 @@ Les fonctions d'affectation peuvent être utilisées avec les journaux générau
 Les procédures suivantes décrivent comment se préparer à affecter des coûts dans un journal général récurrent en définissant des clés d'affectation. Lorsque des clés d'affectation sont définies, vous renseignez et reportez le journal comme tout autre journal général récurrent. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 
 ## <a name="to-set-up-allocation-keys"></a>Pour définir des clés de ventilation
-Vous pouvez affecter une écriture dans un journal général récurrent dans différents comptes lorsque vous reportez le journal. L'affectation peut être effectuée par quantité, pourcentage ou montant.
+
+Vous pouvez affecter une écriture dans un journal général récurrent dans différents comptes lorsque vous reportez le journal. L'affectation peut être effectuée par quantité, pourcentage ou montant.  
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal général récurrent**, puis sélectionnez le lien associé.
 2. Sélectionnez le champ **Nom du lot** pour ouvrir la page **Lots journal général**.
 3. Vous pouvez soit modifier les ventilations sur un lot existant dans la liste ou créer un lot avec des ventilations.

@@ -1,21 +1,16 @@
 ---
-title: Aperçu des tâches permettant de gérer les paiements aux fournisseurs| Microsoft Docs
-description: Décrit les tâches permettant de gérer les paiements aux fournisseurs ou aux créditeurs, y compris le report de lignes paiement et l'obtention d'un aperçu du solde échu.
+title: Aperçu des tâches permettant de gérer les paiements aux fournisseurs
+description: 'Décrit les tâches permettant de gérer les paiements aux fournisseurs ou aux créditeurs, y compris le report de lignes paiement et l''obtention d''un aperçu du solde échu.'
 author: edupont04
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: print check, vendor payment, creditor, debt, balance due, AP
+ms.search.keywords: 'print check, vendor payment, creditor, debt, balance due, AP'
+ms.search.form: '256, 1190, 1191, 1227, 1228, 1229'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 70b1696bf09265a0b405e18a255089720821d6c3
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5779567"
 ---
 # <a name="making-payments"></a>Effectuer des paiements
 

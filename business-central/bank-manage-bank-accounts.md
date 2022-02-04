@@ -1,21 +1,16 @@
 ---
 title: Gérer les comptes bancaires
 description: Vous devez régulièrement rapprocher les écritures bancaires avec les transactions bancaires associées à vos comptes bancaires.
-author: SorenGP
+author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: reconcile
+ms.search.form: '377, 378, 165, 1284'
 ms.date: 06/14/2021
 ms.author: edupont
-ms.openlocfilehash: 0e98609dfe176a685d46112a233d3394eb312eaf
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6323778"
 ---
 # <a name="manage-and-reconcile-your-bank-accounts"></a>Gérer et rapprocher vos comptes bancaires
 

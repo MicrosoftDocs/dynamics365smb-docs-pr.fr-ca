@@ -1,29 +1,28 @@
 ---
-title: Configuration de la TVA non réalisée | Microsoft Docs
-description: Si vous utilisez la comptabilité basée sur la trésorerie, vous pouvez spécifier comment gérer la TVA non réalisée pour les ventes et les achats.
+title: Configuration de la TVA non réalisée
+description: 'Si vous utilisez la comptabilité basée sur la trésorerie, vous pouvez spécifier comment gérer la TVA non réalisée pour les ventes et les achats.'
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: cash, VAT, unrealized, cash-based
+ms.search.keywords: 'cash, VAT, unrealized, cash-based'
+ms.search.form: '118, 472, 473'
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: ca04192ef31e281e7d3e07e2f1823079e1f89151
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6446200"
 ---
+
 # <a name="set-up-unrealized-vat-for-cash-based-accounting"></a>Configurer la TVA non réalisée pour la comptabilité basée sur la trésorerie
+
 Si vous utilisez des méthodes comptables basées sur la trésorerie, vous pouvez configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour gérer la TVA non réalisée.
 
 ## <a name="to-use-general-ledger-accounts-for-unrealized-vat"></a>Pour utiliser les comptes GL pour la TVA non réalisée
+
 Vous pouvez choisir de calculer et de reporter les montants de TVA sur un compte du grand livre temporaire lorsqu'une facture est reportée, puis de les reporter sur le compte du grand livre correct et de les inclure dans les relevés fiscaux lorsque le paiement réel de la facture est reporté. Avant de pouvoir le faire, vous devez finaliser la configuration du report TVA.
 
 Pour utiliser les comptes pour la TVA non réalisée, procédez comme suit :
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") et entrez **Configuration du grand livre**.
 2. Sur la page **Configuration du grand livre**, cochez la case **TVA non réalisée**.
 3. Choisissez l’icône **Page ou rapport pour la recherche** ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), puis saisissez **Configuration report TVA**.

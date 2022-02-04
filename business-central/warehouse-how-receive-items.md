@@ -1,21 +1,15 @@
 ---
-title: 'Procédure : réceptionner des articles'
-description: Cette rubrique donne un aperçu des différentes manières de recevoir des articles dans un entrepôt, par exemple des articles avec un bon de commande ou des articles avec un reçu d’entrepôt.
+title: Réceptionner des articles
+description: 'Cette rubrique donne un aperçu des différentes manières de recevoir des articles dans un entrepôt, par exemple des articles avec un bon de commande ou des articles avec un reçu d’entrepôt.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '5768, 7330, 7332, 7333, 7342, 7363, 8510'
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: f71e348a5f6b8a232d05c8729a03a7f41534caa8
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6445136"
 ---
 # <a name="receive-items"></a>Réceptionner des articles
 

@@ -1,32 +1,27 @@
 ---
-title: Créer des séries de numéros | Microsoft Docs
+title: Créer des séries de numéros
 description: Découvrez comment configurer des séries de numéros qui affectent des codes d'identification uniques aux comptes et aux documents dans Business Central.
-documentationcenter: ''
-author: SorenGP
+author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: numbers, numbering
+ms.search.keywords: 'numbers, numbering'
+ms.search.form: 456
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 3e2404a0ab9de8a761d5721da669004e393cf55c
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6446007"
 ---
 # <a name="create-number-series"></a>Créer des séries de numéros
+
 Pour chaque compagnie que vous configurez, vous devez affecter des codes d'identification uniques aux éléments tels que les comptes du grand livre, les comptes client et fournisseur, les factures et d'autres documents. La numérotation est importante, pas uniquement pour l'identification. Un système de numérotation bien conçu facilite également la gestion et l'analyse de la compagnie et permet de réduire les erreurs de saisie des données.
 
 > [!Important]
 > Par défaut, les écarts dans les séries de numéros ne sont pas autorisés car l'historique exact des transactions financières doit être disponible pour audit, conformément à la loi, et doit donc suivre une séquence ininterrompue sans numéros supprimés.<br /><br />
-Si vous souhaitez autoriser des écarts dans certaines séries de numéros, commencez par consulter l'auditeur ou le responsable de la comptabilité pour vous assurer de respecter les exigences légales en vigueur dans votre pays/région. Pour plus d'informations, voir [Écarts dans les séries de numéros](ui-create-number-series.md#gaps-in-number-series).
+> Si vous souhaitez autoriser des écarts dans certaines séries de numéros, commencez par consulter l'auditeur ou le responsable de la comptabilité pour vous assurer de respecter les exigences légales en vigueur dans votre pays/région. Pour plus d’informations, voir la section [Écarts dans les séries de numéros](#gaps-in-number-series).
 
 > [!NOTE]  
->   Il est recommandé d'utiliser les mêmes codes série de numéros que ceux répertoriés sur la page **Liste de séries de numéros** de la compagnie de démonstration CRONUS. Des codes tels que *P-INV+* ne vont pas vous paraître significatifs au premier abord, mais [!INCLUDE[prod_short](includes/prod_short.md)] dispose d'un certain nombre de paramètres par défaut qui dépendent de ces codes série de numéros.
+> Il est recommandé d'utiliser les mêmes codes série de numéros que ceux répertoriés sur la page **Liste de séries de numéros** de la compagnie de démonstration CRONUS. Des codes tels que *P-INV+* ne vont pas vous paraître significatifs au premier abord, mais [!INCLUDE[prod_short](includes/prod_short.md)] dispose d'un certain nombre de paramètres par défaut qui dépendent de ces codes série de numéros.
 
 Vous créez un système de numérotation en définissant un ou plusieurs codes pour chaque type de données de base ou de document. Par exemple, vous pouvez définir un code pour la numérotation de clients, un code pour la numérotation des factures vente et un autre code pour la numérotation des documents dans les feuilles comptabilité. Une fois que vous avez défini un code, vous devez définir au moins une ligne série de numéros. Celle-ci contient des informations telles que les premier et dernier numéros de la série et la date début. Vous pouvez définir plusieurs lignes série de numéros par code série de numéros, avec une date début différente pour chaque ligne. Les séries sont utilisées de manière consécutive, chaque série commençant à la date début respective.
 

@@ -1,21 +1,16 @@
 ---
-title: 'Procédure : utiliser la TVA sur les ventes et les achats'
-description: Cette rubrique décrit les différentes manières de travailler avec la TVA à la fois manuellement et avec la configuration automatique, pour vous aider à respecter les réglementations spécifiques à chaque pays.
+title: "Procédure\_: utiliser la TVA sur les ventes et les achats"
+description: 'Cette rubrique décrit les différentes manières de travailler avec la TVA à la fois manuellement et avec la configuration automatique, pour vous aider à respecter les réglementations spécifiques à chaque pays.'
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: VAT, sales, purchases,
+ms.search.keywords: 'VAT, sales, purchases'
+ms.search.form: '118, 130, 142, 459, 460, 525'
 ms.date: 06/16/2021
 ms.author: bholtorf
-ms.openlocfilehash: 5c4efb0be09769770fdaf8ec0e503018119ce081
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6439445"
 ---
 # <a name="work-with-vat-on-sales-and-purchases"></a>Utiliser la TVA sur les ventes et les achats
 Si votre pays ou région vous demande de calculer la TVA sur les transactions de vente et d'achat afin de pouvoir déclarer les montants à une administration fiscale, vous pouvez configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour calculer automatiquement la TVA sur les documents vente et achat. Pour plus d'informations, voir [Configuration des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md).
@@ -87,8 +82,8 @@ Vous devez suivre les étapes suivantes avant de saisir manuellement la TVA dans
 2. Répétez l'étape 1 pour la page **Configuration ventes & à recevoir**.
 3. Après avoir effectué la configuration décrite ci-avant, vous pouvez ajuster la valeur du champ **Montant TVA** de la ligne journal général ou du champ **Montant TVA contrepartie** de la ligne journal achat ou vente. [!INCLUDE[prod_short](includes/prod_short.md)] vérifie que la différence n'est pas supérieure à la valeur maximale spécifiée.  
 
-    > [!NOTE]  
-    > Si la différence est supérieure, un avertissement s'affiche, indiquant la différence maximale autorisée. Pour continuer, vous devez ajuster le montant. Sélectionnez **OK**, puis entrez un montant compris dans la plage autorisée. Si la différence de TVA est inférieure ou égale à la valeur maximale autorisée, [!INCLUDE[prod_short](includes/prod_short.md)] affiche la différence dans le champ **Différence TVA**.  
+> [!NOTE]  
+> Si la différence est supérieure, un avertissement s'affiche, indiquant la différence maximale autorisée. Pour continuer, vous devez ajuster le montant. Sélectionnez **OK**, puis entrez un montant compris dans la plage autorisée. Si la différence de TVA est inférieure ou égale à la valeur maximale autorisée, [!INCLUDE[prod_short](includes/prod_short.md)] affiche la différence dans le champ **Différence TVA**.  
 
 ## <a name="posting-import-vat-with-purchase-invoices"></a>Reporter la TVA à l'importation dans les factures achat
 Au lieu d'utiliser des journaux comptabilité pour reporter une facture TVA importation, vous pouvez utiliser une facture achat.  
@@ -120,34 +115,34 @@ Lorsque vous vendez des biens à un client dans un autre pays/une autre région 
 3. Sélectionnez **Détails certificat d'approvisionnement**.  
 4. Par défaut, si la case **Certificat d'approvisionnement requis** est cochée pour la configuration du groupe de report TVA pour le client, le champ **État** est défini sur **Requis**. Vous pouvez mettre à jour le champ pour indiquer si le client a retourné le certificat.  
 
-    > [!Note]  
-    >  Si la configuration de groupes comptabilisation TVA n'a pas la case **Certificat d'approvisionnement requis** cochée, alors un enregistrement est créé et le champ **Statut** est défini sur **Non applicable**. Vous pouvez mettre à jour le champ pour tenir compte des informations d'état correctes. Vous pouvez modifier manuellement le statut de **Non applicable** en **Requis**, et de **Requis** en **Non applicable** selon vos besoins.  
+> [!Note]  
+>  Si la configuration de groupes comptabilisation TVA n'a pas la case **Certificat d'approvisionnement requis** cochée, alors un enregistrement est créé et le champ **Statut** est défini sur **Non applicable**. Vous pouvez mettre à jour le champ pour tenir compte des informations d'état correctes. Vous pouvez modifier manuellement le statut de **Non applicable** en **Requis**, et de **Requis** en **Non applicable** selon vos besoins.  
 
    Lorsque vous mettez à jour le champ **Statut** sur **Requis**, **Reçu** ou **Non reçu**, un certificat est créé.  
 
-    > [!TIP]  
-    >  Vous pouvez utiliser la page **Certificats d'approvisionnement** pour obtenir une vue d'état de toutes les livraisons reportées pour lesquelles un certificat d'approvisionnement a été créé.  
+> [!TIP]  
+>  Vous pouvez utiliser la page **Certificats d'approvisionnement** pour obtenir une vue d'état de toutes les livraisons reportées pour lesquelles un certificat d'approvisionnement a été créé.  
 
 5. Sélectionnez **Imprimer le certificat d'approvisionnement**.  
 
-    > [!Note]  
-    >  Vous pouvez afficher un aperçu ou imprimer le document. Lorsque vous choisissez **Imprimer le certificat d'approvisionnement** et que vous imprimez le document, la case à cocher **Imprimé** est automatiquement sélectionnée. En outre, s'il n'est pas déjà renseigné, le statut du certificat est mis à jour sur **Requis**. Si nécessaire, vous incluez le certificat imprimé avec la livraison.  
+> [!Note]  
+>  Vous pouvez afficher un aperçu ou imprimer le document. Lorsque vous choisissez **Imprimer le certificat d'approvisionnement** et que vous imprimez le document, la case à cocher **Imprimé** est automatiquement sélectionnée. En outre, s'il n'est pas déjà renseigné, le statut du certificat est mis à jour sur **Requis**. Si nécessaire, vous incluez le certificat imprimé avec la livraison.  
 
 ### <a name="to-print-a-certificate-of-supply"></a>Pour imprimer un certificat d'approvisionnement  
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Livraisons vente reportées**, puis sélectionnez le lien associé.  
 2. Sélectionnez la livraison vente appropriée à un client dans un autre pays/une autre région de l'UE.  
 3. Sélectionnez l'action **Imprimer le certificat d'approvisionnement**.  
 
-    > [!NOTE]  
-    >  Sinon, vous pouvez imprimer un certificat à partir de la page **Certificat d'approvisionnement**.  
+> [!NOTE]  
+>  Sinon, vous pouvez imprimer un certificat à partir de la page **Certificat d'approvisionnement**.  
 
 4. Pour inclure des informations des lignes dans le document expédition sur le certificat d'approvisionnement, sélectionnez la case à cocher **Imprimer détails de ligne**.  
 5. Cochez la case **Créer des certificats d'approvisionnement s'ils n'ont pas encore été créés** pour que [!INCLUDE[prod_short](includes/prod_short.md)] crée des certificats pour les livraisons reportées qui n'en ont pas au moment de l'exécution. Lorsque vous cochez la case, de nouveaux certificats sont créés pour toutes les livraisons reportées qui n'ont pas de certificats compris dans la plage sélectionnée.  
 6. Par défaut, les paramètres de filtre concernent le document livraison que vous avez sélectionné. Renseignez les informations de filtre pour sélectionner un certificat d'approvisionnement spécifique à imprimer.  
 7. Dans la page **Certificat d'approvisionnement**, sélectionnez l'action **Imprimer** pour imprimer le rapport ou l'action **Aperçu** pour l'afficher à l'écran.  
 
-    > [!Note]  
-    > Le champ **État Certificat d'approvisionnement** et le champ **Imprimé** sont mis à jour pour la livraison sur la page **Certificats d'approvisionnement**.  
+> [!Note]  
+> Le champ **État Certificat d'approvisionnement** et le champ **Imprimé** sont mis à jour pour la livraison sur la page **Certificats d'approvisionnement**.  
 
 8. Envoyez le certificat d'approvisionnement imprimé au client pour signature.  
 
@@ -174,11 +169,11 @@ Pour afficher un groupe de certificats, vous commencez à partir de la page **Ce
 
    Vous pouvez modifier la date pour tenir compte de la date à laquelle vous avez reçu le certificat d'approvisionnement signé. Vous pouvez également ajouter un lien vers le certificat signé à l'aide des liaisons de document standard de [!INCLUDE[prod_short](includes/prod_short.md)].  
 
-    > [!NOTE]  
-    >  Vous ne pouvez pas créer un nouveau certificat d'approvisionnement sur la page **Certificat d'approvisionnement** lorsque vous y accédez à l'aide de cette procédure. Pour créer un certificat pour une livraison qui n'a pas été configurée pour en exiger, ouvrez la livraison vente reportée et utilisez l'une des deux procédures décrites ci-dessus :  
-    >
-    > * Pour créer manuellement un certificat d'approvisionnement.  
-    > * Pour imprimer un certificat d'approvisionnement.
+> [!NOTE]
+> Vous ne pouvez pas créer un nouveau certificat d'approvisionnement sur la page **Certificat d'approvisionnement** lorsque vous y accédez à l'aide de cette procédure. Pour créer un certificat pour une livraison qui n'a pas été configurée pour en exiger, ouvrez la livraison vente reportée et utilisez l'une des deux procédures décrites ci-dessus :  
+>
+> * Pour créer manuellement un certificat d'approvisionnement.  
+> * Pour imprimer un certificat d'approvisionnement.
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/process-vat-dynamics-365-business-central/)
 

@@ -1,21 +1,15 @@
 ---
 title: Facturation des paiements anticipés
-description: Découvrez comment utiliser les paiements anticipés pour facturer et collecter les paiements anticipés requis des clients ou régler des paiements anticipés aux fournisseurs dans Business Central.
+description: "Découvrez comment utiliser les paiements anticipés pour facturer et collecter les paiements anticipés requis des clients ou régler des paiements anticipés aux fournisseurs dans Business\_Central."
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '42, 42, 48, 50, 52, 9305, 9307'
 ms.date: 12/03/2021
 ms.author: edupont
-ms.openlocfilehash: 3c919a5d63e4468b7f3182afe04890c6733d0cad
-ms.sourcegitcommit: 4223484b0eeceb0258dae5abfd04e1a9a4a0990d
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7889904"
 ---
 # <a name="invoicing-prepayments"></a>Facturation de paiements anticipés
 

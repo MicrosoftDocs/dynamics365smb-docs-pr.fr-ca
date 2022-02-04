@@ -1,21 +1,15 @@
 ---
 title: Aperçu des tâches permettant de paramétrer Business Central
-description: Découvrez une vue d’ensemble des tâches pour paramétrer, initialiser et configurer Business Central selon vos besoins.
+description: "Découvrez une vue d’ensemble des tâches pour paramétrer, initialiser et configurer Business\_Central selon vos besoins."
 author: edupont04
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: configure, initialize
+ms.search.keywords: 'configure, initialize'
 ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: 5cbd8a674945fa5c33d502cffb865677c66bce39
-ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7588486"
 ---
 # <a name="overview-of-tasks-to-set-up-prod_short"></a>Aperçu des tâches permettant de paramétrer [!INCLUDE[prod_short](includes/prod_short.md)]
 

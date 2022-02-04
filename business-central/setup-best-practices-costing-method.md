@@ -1,29 +1,23 @@
 ---
-title: 'Configuration de meilleures pratiques : mode évaluation stock'
+title: "Configuration de meilleures pratiques\_: mode évaluation stock"
 description: Le champ Mode évaluation stock de la fiche article spécifie la manière dont le flux des coûts de l’article est enregistré et si une valeur réelle ou budgétée est capitalisée et utilisée dans le calcul des coûts.
-author: SorenGP
+author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '30, 42, 43'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 87c3616a4d680f94a0997d503aa1569fd871bc9f
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5778082"
 ---
 # <a name="setup-best-practices-costing-method"></a>Configuration de meilleures pratiques : mode évaluation stock
 
 Le champ **Mode évaluation stock** de la fiche article spécifie la manière dont le flux des coûts de l’article est enregistré et si une valeur réelle ou budgétée est capitalisée et utilisée dans le calcul des coûts.  
 
- La définition du mode d'évaluation coût approprié en fonction du type d'article et de l'environnement d'entreprise est importante pour assurer des inventaires économiques.  
+La définition du mode d'évaluation coût approprié en fonction du type d'article et de l'environnement d'entreprise est importante pour assurer des inventaires économiques.  
 
- Le tableau suivant fournit les meilleures pratiques sur la procédure de configuration du champ **Mode évaluation stock**. Pour plus d'informations, [Détails de conception : modes évaluation stock](design-details-costing-methods.md).  
+Le tableau suivant fournit les meilleures pratiques sur la procédure de configuration du champ **Mode évaluation stock**. Pour plus d'informations, [Détails de conception : modes évaluation stock](design-details-costing-methods.md).  
 
 |Option de configuration|Meilleure pratique|Commentaire|  
 |------------------|-------------------|-------------|  
@@ -33,11 +27,12 @@ Le champ **Mode évaluation stock** de la fiche article spécifie la manière do
 |Spécifique|Utilisez ceci pour la fabrication ou la transaction d'articles facilement identifiables ayant des coûts unitaires assez élevés.<br /><br /> Utiliser pour des articles soumis à une régulation.<br /><br /> Utilisez ceci pour les articles ayant des numéros de série.|Le coût unitaire d'un article est le coût exact auquel l'unité particulière a été reçue.|
 |Standard|Utilisez ceci lorsque le contrôle des coûts est primordial.<br /><br /> Utilisez ceci pour la fabrication répétitive, afin d'évaluer les coûts matière directs, les frais de main-d'œuvre directs, et les frais généraux matière.<br /><br /> Utilisez ceci lorsqu'il existe une discipline et du personnel pour le maintien des standards.|Le coût unitaire d'un article est prédéfini sur la base d'une estimation.<br /><br /> Lorsque le coût réel est réalisé plus tard, le coût standard doit être ajusté au coût réel à l'aide des valeurs d'écart.|  
 
-## <a name="see-also"></a>Voir aussi  
- [Détails de conception : modes évaluation stock](design-details-costing-methods.md)   
- [Détails de conception : stock évaluation stock](design-details-inventory-costing.md)   
- [Configurez les modules complexes à l'aide des meilleures pratiques](set-up-complex-application-areas-using-best-practices.md)  
- [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+## <a name="see-also"></a>Voir aussi
+
+[Détails de conception : modes évaluation stock](design-details-costing-methods.md)  
+[Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)  
+[Configurez les modules complexes à l'aide des meilleures pratiques](set-up-complex-application-areas-using-best-practices.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

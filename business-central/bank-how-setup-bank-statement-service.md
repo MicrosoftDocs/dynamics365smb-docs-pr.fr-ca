@@ -7,15 +7,10 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: Yodlee, feed, stream, payment process
+ms.search.keywords: 'Yodlee, feed, stream, payment process'
+ms.search.form: '1280, 1290'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 8c27b2c158d817a6e58a72d49d65d75bb8470f65
-ms.sourcegitcommit: 2b34394a855845457bb705178470e2cbfa77141c
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "7651472"
 ---
 # <a name="set-up-the-envestnet-yodlee-bank-feeds-service"></a>Configurer le service Envestnet Yodlee Bank Feeds
 

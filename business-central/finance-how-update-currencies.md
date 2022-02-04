@@ -1,18 +1,13 @@
 ---
 title: Mettre à jour les taux de change (contient une vidéo)
-description: Suivez des montants dans différentes devises à l’aide de codes devise, et laissez Business Central ajuster les taux de devise étrangère des écritures reportées avec un service externe.
+description: 'Suivez des montants dans différentes devises à l’aide de codes devise, et laissez Business Central ajuster les taux de devise étrangère des écritures reportées avec un service externe.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.search.keywords: multiple currencies, adjust exchange rates, FX rates
+ms.search.keywords: 'multiple currencies, adjust exchange rates, FX rates'
+ms.search.form: '5, 118'
 ms.date: 07/23/2021
 ms.author: edupont
-ms.openlocfilehash: 24dbc235c45fab4f59f816f22c16b699a3fd61f9
-ms.sourcegitcommit: 4c97f38fc53c1c1ec534054a4a100d8cfb73175b
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 12/20/2021
-ms.locfileid: "7939936"
 ---
 # <a name="update-currency-exchange-rates"></a>Mettre à jour des taux de change devise
 

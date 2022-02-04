@@ -1,23 +1,18 @@
 ---
-title: 'Procédure : exécuter une planification complète et un calcul PDP et MRP'
-description: Le système de planification peut calculer le calendrier de planification principal (MPS, Master Planning Schedule) ou la planification des besoins matière (MRP, Material Requirements Planning) à la demande, ou les deux simultanément.
+title: Exécuter une planification complète et un calcul PDP ou MRP
+description: 'Le système de planification peut calculer le calendrier de planification principal (MPS, Master Planning Schedule) ou la planification des besoins matière (MRP, Material Requirements Planning) à la demande, ou les deux simultanément.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '99000852, 99000860'
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: 73b40d3174497c05446d5b6ae6465f23a420f308
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6440338"
 ---
 # <a name="run-full-planning-mps-or-mrp"></a>Exécuter une planification complète et un calcul PDP ou MRP
+
 Les termes « exécution de la feuille planification » ou « exécution d'un calcul MRP » font référence au calcul du calendrier de production principal et aux réquisitions de matériel sur la base de la demande réelle et prévue. Le système de planification peut calculer le calendrier de planification principal (MPS, Master Planning Schedule) ou la planification des besoins matière (MRP, Material Requirements Planning) à la demande, ou calculer les deux simultanément.  
 
 -   Le calcul PDP est le calcul du calendrier de production principal basé sur la demande réelle et la prévision de la demande. Le calcul PDP est utilisé pour les articles finis disposant de prévisions ou d'une ligne document de vente. Ces articles sont appelés « articles PDP » et identifiés de façon dynamique au début du calcul.  

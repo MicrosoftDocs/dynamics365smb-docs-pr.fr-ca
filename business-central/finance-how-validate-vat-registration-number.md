@@ -1,20 +1,16 @@
 ---
 title: Valider des numéros d’identification intracommunautaire
-description: Laissez Business Central valider les numéros d’identification intra-communautaire et d’autres informations sur la société pour vos contacts, clients et fournisseurs, sur la base du service de validation du numéro d’identification intra-communautaire de l’Union européenne.
+description: "Laissez Business\_Central valider les numéros d’identification intra-communautaire et d’autres informations sur la société pour vos contacts, clients et fournisseurs, sur la base du service de validation du numéro d’identification intra-communautaire de l’Union européenne."
 author: andregu
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.reviewer: edupont
-ms.search.keywords: VAT, posting, tax, value-added tax
+ms.search.keywords: 'VAT, posting, tax, value-added tax'
+ms.search.form: '249, 575, 1279'
 ms.date: 06/16/2021
 ms.author: andregu
-ms.openlocfilehash: 093fec7b7d456f4145e8450d06f17f1aa78ad4c1
-ms.sourcegitcommit: a486aa1760519c380b8cdc8fdf614bed306b65ea
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6543232"
 ---
+
 # <a name="validate-vat-registration-numbers"></a>Valider des numéros d’identification intracommunautaire
 
 Il est important que les numéros d’identification intra-communautaire des clients, fournisseurs et contacts soient valides, si vous utilisez [!INCLUDE [prod_short](includes/prod_short.md)] dans un pays où la TVA est utilisée. Par exemple, les compagnies modifient parfois leur état d’assujettissement à la TVA, et dans certains pays, les autorités fiscales peuvent vous demander de fournir des rapports, tels que le rapport **Liste des ventes UE**, qui répertorient les numéros d’identification intra-communautaire à utiliser lorsque vous faites des affaires.

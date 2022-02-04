@@ -7,16 +7,11 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: 630
 ms.date: 06/14/2021
 ms.author: bholtorf
-ms.openlocfilehash: 032c425f10bae29416cf8602d0c339f3ffaa3043
-ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7589608"
 ---
+
 # <a name="the-data-archive-extension"></a>L’extension d’archivage de données
 Au fil du temps, votre entreprise accumulera une quantité substantielle de données et, en tant qu’administrateur, il est probablement judicieux d’avoir une stratégie d’archivage des données. Avoir beaucoup de données peut ralentir les choses. Par exemple, il peut falloir un peu plus de temps pour générer des rapports, ou même pour verrouiller des enregistrements. De plus, de grandes quantités de données peuvent entraîner une augmentation des coûts de stockage.
 
@@ -39,19 +34,19 @@ Les extensions Data Archive sont utilisées par les traitements en lot suivants 
 
 |Traitements en lot  |
 |---------|
-|Comp. Date Écritures budget article     |
-|Compresser écritures banque     |
-|Compr. date écritures client     |
-|Compr. date écritures immo.     |
-|Compr. date écritures GL     |
-|Compr. date écritures assur.     |
-|Compresser écritures maint.     |
-|Compresser écritures maint.     |
-|Compr. date écritures ress.     |
-|Compresser écritures TVA     |
-|Compr. date écritures fourn.     |
-|Compresser écritures Écritures     |
-|Compr. Date Écritures budget     |
+|Comp. Date Écritures budget article |
+|Compresser écritures banque |
+|Compr. date écritures client |
+|Compr. date écritures immo. |
+|Compr. date écritures GL |
+|Compr. date écritures assur. |
+|Compresser écritures maint. |
+|Compresser écritures maint. |
+|Compr. date écritures ress. |
+|Compresser écritures TVA |
+|Compr. date écritures fourn. |
+|Compresser écritures Écritures |
+|Compr. Date Écritures budget |
 
 Pour démarrer l’archivage des données lorsque vous exécutez l’un des traitements en lot, activez le bouton à bascule **Archiver les entrées supprimées**.
 

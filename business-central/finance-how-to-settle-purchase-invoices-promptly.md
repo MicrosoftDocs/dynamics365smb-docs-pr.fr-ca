@@ -1,18 +1,12 @@
 ---
 title: Établir rapidement des factures achat
-description: Si vous devez payer le fournisseur en liquide ou par chèque, vous pouvez effectuer toutes les opérations nécessaires lorsque vous reportez la facture.
+description: 'Si vous devez payer le fournisseur en liquide ou par chèque, vous pouvez effectuer toutes les opérations nécessaires lorsque vous reportez la facture.'
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.search.keywords: ''
+ms.search.form: '51, 9308'
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 76dff6fb1977ea4333e326f8a3456aeb5530cfd8
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6439495"
 ---
 # <a name="settle-purchase-invoices-promptly"></a>Établir rapidement des factures achat
 

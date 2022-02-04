@@ -7,17 +7,12 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '99000842, 99000843, 99000861, 99000862, 99000863'
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 901427baf8845505c264a6e06ec6aebacbfe1ee0
-ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7589242"
 ---
 # <a name="replan-or-refresh-production-orders-directly"></a>Replanifier ou actualiser directement des ordres de fabrication
+
 La fonction **Replanifier** des bons de production est généralement utilisée après avoir ajouté ou modifié des composantes constituant des bons de production sous-jacents. La fonction calcule les modifications apportées aux composantes et aux lignes itinéraires. Elle inclut les articles situés à des niveaux de nomenclatures de production inférieurs, pour lesquels elle peut générer de nouveaux bons de production.  
 
 Sur la base des modifications apportées aux composants et aux lignes gamme, la fonction Replanifier calcule et planifie toutes les nouvelles demandes de l'ordre de fabrication.  

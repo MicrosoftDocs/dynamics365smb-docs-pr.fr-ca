@@ -1,25 +1,19 @@
 ---
-title: Méthodes TEC pour calculer et enregistrer la progression d'un projet| Microsoft Docs
-description: Décrit les différentes méthodes de travaux en cours (TEC) qui peuvent être utilisées pour reporter, surveiller et calculer les données financières des projets en cours.
-services: project-madeira
-documentationcenter: ''
+title: Méthodes TEC pour calculer et enregistrer la progression d’un projet
+description: 'Décrit les différentes méthodes de travaux en cours (TEC) qui peuvent être utilisées pour reporter, surveiller et calculer les données financières des projets en cours.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: work in process, work in progress, calculate project WIP
+ms.search.keywords: 'work in process, work in progress, calculate project WIP'
+ms.search.form: 1010
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: f27d0629c475d52cb8f99bb13dd4021d96f3df68
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5780292"
 ---
-# <a name="understanding-wip-methods"></a>Comprendre les méthodes TEC
+# <a name="understanding-wip-methods-in-project-management"></a>Comprendre les méthodes TEC dans la gestion de projet
+
 Au fur et à mesure de la progression du projet, les matières, ressources et autres frais sont consommés et doivent être reportés dans le projet. La fonctionnalité Travaux en cours (TEC) permet d'estimer la valeur financière des projets dans le grand livre au cours des projets. Dans de nombreux cas, vous pouvez reporter les frais pour un projet avant de le facturer. Lorsque seuls les frais sont reportés, l'état financier est incorrect.
 
 Pour effectuer le suivi de la valeur dans le grand livre, vous pouvez calculer les TEC et reporter la valeur dans le grand livre. Pour plus d'informations, voir [Surveiller la progression et les performances](projects-how-monitor-progress-performance.md).
@@ -35,10 +29,11 @@ Pour effectuer le suivi de la valeur dans le grand livre, vous pouvez calculer l
 | Contrat complété |Montant TEC = Coût indiqué TEC = Utilisation (coût total)<br /><br /> Montant vente TEC = Facturable (Prix facturé) |La méthode Fin de contrat ne réceptionne pas les revenus et les coûts avant la fin du projet. Cela peut être utile lorsque l'estimation des coûts et des revenus du projet est excessivement difficile.<br /><br /> L'ensemble de l'utilisation est reporté dans le compte Coûts TEC (actif) et toutes les ventes facturées sont reportées dans le compte Ventes facturées TEC (passif) jusqu'à la fin du projet. |
 
 ## <a name="see-also"></a>Voir aussi
+
 [Gestion de projets](projects-manage-projects.md)  
 [Finance](finance.md)  
-[Achats](purchasing-manage-purchasing.md)         
-[Ventes](sales-manage-sales.md)      
+[Procédure d'achat](purchasing-manage-purchasing.md)  
+[Vente](sales-manage-sales.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 

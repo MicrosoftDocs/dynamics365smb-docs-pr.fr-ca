@@ -1,21 +1,16 @@
 ---
 title: Configurer le report des transactions intercompagnies
-description: Créez vos fournisseurs et vos clients intersociétés en tant que partenaires intersociétés, et configurez un plan comptable intersociétés.
+description: 'Créez vos fournisseurs et vos clients intersociétés en tant que partenaires intersociétés, et configurez un plan comptable intersociétés.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: IC, group, consolidation, affiliate, subsidiary
+ms.search.keywords: 'IC, group, consolidation, affiliate, subsidiary'
+ms.search.form: '605, 620, 602, 603, 601, 600, 652, 606, 607, 609, 608, 621'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 1d822b61c9ed64d970d2d17939a359d898513e2d
-ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7587601"
 ---
 # <a name="set-up-intercompany-transaction-posting"></a>Configurer le report des transactions intercompagnies
 

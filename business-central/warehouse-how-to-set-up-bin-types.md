@@ -1,21 +1,15 @@
 ---
-title: Comment configurer des types de zone
-description: Affectez des types et des activités de flux de base aux zones et, ce faisant, définissez la manière dont les zones sont utilisées pour des activités entrepôt particulières.
+title: Configurer des types de zone
+description: 'Affectez des types et des activités de flux de base aux zones et, ce faisant, définissez la manière dont les zones sont utilisées pour des activités entrepôt particulières.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: 7367
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 987db7dda73bb527cfa025b7641c445b08cced2a
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6442989"
 ---
 # <a name="set-up-bin-types"></a>Configurer des types de zone
 Vous pouvez diriger la circulation des articles vers les emplacements que vous avez définis pour des activités entrepôt particulières. Vous attribuez à chaque zone des activités de flux de base, et définissez de cette façon la manière dont une zone est utilisée, en lui affectant un type.  

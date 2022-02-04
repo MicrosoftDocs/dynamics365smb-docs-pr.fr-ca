@@ -1,21 +1,16 @@
 ---
-title: Fermer un exercice financier et des périodes comptables | Microsoft Docs
-description: Décrit les tâches permettant de fermer un exercice financier ou une période comptable, par exemple, en vérifiant que les documents et les journaux sont reportés et en vérifiant les soldes bancaires.
+title: Fermer un exercice financier et des périodes comptables
+description: 'Décrit les tâches permettant de fermer un exercice financier ou une période comptable, par exemple, en vérifiant que les documents et les journaux sont reportés et en vérifiant les soldes bancaires.'
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: year closing, close accounting period, close fiscal year, bank account detailed trial balance
+ms.search.keywords: 'year closing, close accounting period, close fiscal year, bank account detailed trial balance'
+ms.search.form: 100
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: 3dba46a74fb5f0f6f13c4a6f0fa2c93f5d2ba372
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5773321"
 ---
 # <a name="closing-years-and-periods"></a>Fermeture des exercices et des périodes
 

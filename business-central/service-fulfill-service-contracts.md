@@ -1,23 +1,17 @@
 ---
 title: Aperçu des tâches d’exécution des contrats de service
-description: Décrit les tâches impliquées dans l’exécution des contrats de service avec vos clients, comme la mise en place d’ententes contractuelles standard avec des modèles personnalisables, etc.
+description: 'Décrit les tâches impliquées dans l’exécution des contrats de service avec vos clients, comme la mise en place d’ententes contractuelles standard avec des modèles personnalisables, etc.'
 services: project-madeira
 documentationcenter: ''
 author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: contract, agreement, configure
+ms.search.keywords: 'contract, agreement, configure'
 ms.date: 06/23/2021
 ms.author: bholtorf
-ms.openlocfilehash: 343308cb004ada356eaad14e620f29fb9cf043ee
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6326823"
 ---
 # <a name="fulfilling-service-contracts"></a>Exécution des contrats de service 
 Pour configurer une activité de gestion des services, vous pouvez mettre en place des accords contractuels standard entre vous et vos clients afin de décrire le niveau de service et les attentes en matière de services. Vous pouvez créer des modèles de contrat dans lesquels figurent les informations nécessaires (client, date de début du contrat, période de facturation, etc.).  

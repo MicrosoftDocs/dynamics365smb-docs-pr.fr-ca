@@ -1,21 +1,16 @@
 ---
 title: Modifier les paramètres de base pour l'utilisateur actuel
-description: Découvrez comment modifier certains paramètres de base dans Business Central, par exemple, votre rôle et votre centre de rôles, votre compagnie, votre date de travail et vos fuseaux horaires.
+description: "Découvrez comment modifier certains paramètres de base dans Business\_Central, par exemple, votre rôle et votre centre de rôles, votre compagnie, votre date de travail et vos fuseaux horaires."
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: change Role Center, notification, change company, change work date, decimal separator
+ms.search.keywords: 'change Role Center, notification, change company, change work date, decimal separator'
+ms.search.form: '9022, 9019, 9027'
 ms.date: 10/01/2021
 ms.author: jswymer
-ms.openlocfilehash: 6197adc163d781f2d7588e7109b37649e1611551
-ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7589192"
 ---
 # <a name="change-basic-settings"></a>Modifier les paramètres de base
 

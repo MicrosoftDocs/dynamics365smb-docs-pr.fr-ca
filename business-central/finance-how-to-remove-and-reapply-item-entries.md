@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : supprimer et affecter à nouveau des écritures article | Microsoft Docs'
+title: Supprimer et affecter à nouveau des écritures article
 description: Vous pouvez visualiser et modifier manuellement certaines écritures d'affectation article qui sont créées automatiquement lors des transactions d'inventaire.
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -7,17 +7,11 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '506, 521, 9125'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 4ec0aba869d2a171e12c42822ecf1726ed4ac81e
-ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7587925"
 ---
-# <a name="remove-and-reapply-item-ledger-entries"></a>Supprimer et appliquer à nouveau des écritures article
+# <a name="remove-and-reapply-item-ledger-entries"></a>Supprimer et affecter à nouveau des écritures article
 Sur la page **Feuille affectation**, vous pouvez visualiser et modifier manuellement certaines écritures affectation article qui sont créées automatiquement lors des transactions d'inventaire.  
 
 Lorsque vous reportez une transaction dans laquelle des articles entrent ou sortent de l'inventaire, une affectation article est créée entre chaque augmentation et diminution d'inventaire. Ces affectations déterminent le flux des coûts des marchandises entrant dans l'inventaire vers les coûts des marchandises sortant de l'inventaire. En raison du mode de calcul du coût unitaire, une affectation article incorrecte peut engendrer une erreur au niveau du coût moyen ou du coût unitaire. Pour plus d'informations, voir Détails de conception : traçabilité.
@@ -57,7 +51,7 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
 >   
 >  **Il est impossible d’effectuer cette action car l'affectation des écritures de l’article \<item\> est annulée dans la feuille affectation par l’utilisateur \<user\>.**  
 
-## <a name="to-reapply-an-item-application-by-using-the-application-worksheet"></a>Pour appliquer à nouveau une affectation article en utilisant le journal affectation
+## <a name="to-reapply-an-item-application-by-using-the-application-worksheet"></a>Pour affecter à nouveau une affectation article en utilisant le journal affectation
 
 1.  Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 2.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille affectation**, puis sélectionnez le lien associé.  
 2.  La page **Feuille affectation** s'ouvre en affichant les écritures article existantes de tous les articles.  

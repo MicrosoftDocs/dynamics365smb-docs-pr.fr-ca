@@ -1,21 +1,15 @@
 ---
 title: Aperçu des tâches permettant de gérer vos ventes
-description: Découvrez comment utiliser les services de Business Central pour gérer les activités de vente avec vos clients avec des factures de vente, des commandes, des devis et plus encore.
+description: "Découvrez comment utiliser les services de Business\_Central pour gérer les activités de vente avec vos clients avec des factures de vente, des commandes, des devis et plus encore."
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: trade, sell
+ms.search.keywords: 'trade, sell'
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 376e2af791a8e9e37b72b27d7f4fcfbe8d9a654b
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6322001"
 ---
 # <a name="sales"></a>Ventes
 Vous créez une facture vente ou un document de vente pour enregistrer votre entente avec un client pour vendre certains produits selon certaines méthodes de livraison et de paiement.

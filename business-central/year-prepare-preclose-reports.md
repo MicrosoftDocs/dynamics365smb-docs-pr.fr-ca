@@ -1,24 +1,18 @@
 ---
-title: Aperçu des rapports préalables à la fermeture pour vérifier l'exactitude des comptes | Microsoft Docs
+title: Aperçu des rapports préalables à la fermeture pour vérifier l'exactitude des comptes
 description: Fournit un aperçu des rapports qui vous permettent de vérifier l'exactitude des comptes avant de fermer les registres à la fin d'un exercice ou d'une période.
-services: project-madeira
-documentationcenter: ''
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
+ms.search.form: '1393, 1394'
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: 96fe7c7c1f955d3c489429bf3ee64f9f3f925de7
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6439245"
 ---
 # <a name="using-pre-closing-reports"></a>Utilisation des rapports préalables à la fermeture
+
 Il existe de nombreux rapports standard qui vous permettent de vérifier la précision des comptes avant de fermer les registres à la fin d'un exercice ou d'une période. Par exemple, vous pouvez utiliser l'état **Clients : Balance** pour vérifier que le solde d'un groupe comptabilisation client est égal au solde du compte général correspondant à une date donnée.
 
 Le tableau suivant décrit un certain nombre d'états qui peuvent être utiles dans ce processus.
@@ -38,6 +32,7 @@ Le tableau suivant décrit un certain nombre d'états qui peuvent être utiles d
 Pour voir un rapport, sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez le nom tel qu’il apparaît dans le tableau, puis choisissez le lien associé.
 
 ## <a name="see-also"></a>Voir aussi
+
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

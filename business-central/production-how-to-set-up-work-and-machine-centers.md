@@ -1,21 +1,15 @@
 ---
 title: Configurer des ateliers et des unités de production
-description: Les fiches **centre de charge** organisent les exigences et les valeurs fixes des ressources de production, et régissent ainsi la production des centres de charge.
+description: 'Les fiches atelier organisent les exigences et les valeurs fixes des ressources de production, et régissent ainsi la production des ateliers.'
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: '99000754, 99000755, 99000756, 99000758, 99000760, 99000761, 99000762'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 3cc89545cced46acbe5d148853ac46c4135d251e
-ms.sourcegitcommit: 400554d3a8aa83d442f134c55da49e2e67168308
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 10/28/2021
-ms.locfileid: "7714532"
 ---
 # <a name="set-up-work-centers-and-machine-centers"></a>Configurer des ateliers et des unités de production
 
