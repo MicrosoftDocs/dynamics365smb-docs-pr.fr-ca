@@ -7,10 +7,16 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'access, right, security'
-ms.search.form: '119, 9807, 9808, 9830, 9831, 9838, 9818, 9062, 9173'
+ms.search.keywords: access, right, security
+ms.search.form: 119, 6300, 6301, 6302, 9800, 9807, 9808, 9830, 9831, 9838, 9818, 9062, 9173
 ms.date: 04/01/2021
 ms.author: edupont
+ms.openlocfilehash: 5e11c7b88a17998086f0f11e809415248ad8f389
+ms.sourcegitcommit: c05806689d289d101bd558696199cefbd989473e
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8115350"
 ---
 # <a name="create-users-according-to-licenses"></a>Créer des utilisateurs en fonction des licences
 

@@ -1,15 +1,21 @@
 ---
 title: Collecte des soldes restants
-description: Découvrez comment envoyer un rappel à un client sur un paiement dû et ajouter des frais ou des commissions au paiement en raison du retard.
+description: Découvrez comment rappeler à vos clients les impayés. Envoyez un relevé client, émettez un rappel ou envoyez une note de frais financiers.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'payment due, debt, overdue, fee, charge, reminder'
-ms.date: 04/01/2021
+ms.search.keywords: payment due, debt, overdue, fee, charge, reminder
+ms.date: 02/09/2022
 ms.author: edupont
+ms.openlocfilehash: 3002a343128feaf6035ea8e72cddc0e713ad5cc0
+ms.sourcegitcommit: 8a968e9176a913635e47e5170c66962e485e6689
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "8105734"
 ---
 # <a name="collect-outstanding-balances"></a>Collecte des soldes restants
 
@@ -23,7 +29,7 @@ Vous pouvez utiliser des relances pour rappeler aux clients les soldes échus. V
 
 ### <a name="to-send-the-customer-statement-report"></a>Pour envoyer le rapport Relevé client
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Relevé client**, puis choisissez le lien associé.
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 10.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Relevé client**, puis choisissez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 3. Dans **Options sortie**, sélectionnez la manière dont l'état est envoyé au client.
 
@@ -32,82 +38,7 @@ Vous pouvez utiliser des relances pour rappeler aux clients les soldes échus. V
 
 ## <a name="reminders"></a>Rappels
 
-Avant de pouvoir créer des rappels, vous devez configurer des modalités de rappel et les affecter à vos clients. Pour plus d’informations, voir [Configurer les niveaux et modalités de rappel](finance-setup-reminders.md). [!INCLUDE [reminder-terms](includes/reminder-terms.md)] Le contenu de la page **Modalités de frais financiers** détermine si les intérêts sont calculés dans le rappel.  
-
-Vous pouvez exécuter périodiquement le traitement par lots **Création de relances** afin de créer des relances pour tous les clients ayant des soldes échus. Vous pouvez également créer manuellement une relance pour un client spécifique et demander à ce que les lignes soient calculées et renseignées automatiquement.  
-
-Une fois que vous avez créé les relances, vous pouvez les modifier. Le texte apparaissant au début et à la fin de chaque relance est déterminé par les conditions niveau de relance de la colonne **Désignation**. Si un montant calculé a été inséré automatiquement dans le texte de début ou de fin, ce texte ne sera pas ajusté si vous supprimez des lignes. Vous devez alors utiliser la fonction **Mettre à jour texte relance**.  
-
-Une écriture comptable client pour laquelle le champ **En attente** est renseigné ne génèrera pas la création d'une relance. Néanmoins, si un rappel est créé à partir d'une autre écriture, une écriture échue en attente d'approbation est incluse dans le rappel. Les intérêts ne sont pas calculés sur les lignes avec ces écritures.
-
-Après avoir créé les rappels et effectué toutes les modifications souhaitées, vous pouvez imprimer les rapports de test ou émettre les rappels, en général par courriel.
-
-### <a name="to-create-a-reminder-automatically"></a>Pour créer automatiquement un rappel
-
-Un rappel est identique à une facture. Lorsque vous créez un rappel, un en-tête rappel, ainsi qu'une ou plusieurs lignes rappel, doivent être renseignés. Vous pouvez utiliser une fonction pour créer des relances pour tous les clients automatiquement.
-
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rappels**, puis sélectionnez le lien associé.
-2. Sur la page **Rappel**, cliquez sur l'action **Créer rappels**.
-3. Sur la page **Créer rappels**, renseignez les champs pour définir comment et pour qui les rappels sont créées.
-4. Cliquez sur le bouton **OK**.
-
-### <a name="to-create-a-reminder-manually"></a>Pour créer un rappel manuellement
-
-Sur la page **Rappel**, vous pouvez renseigner le raccourci **Général** manuellement et ensuite renseigner les lignes automatiquement.
-
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rappels**, puis sélectionnez le lien associé.
-2. Sélectionnez l'action **Nouveau**.
-3. Sur le raccourci **Général**, complétez les champs, comme nécessaire.
-4. Choisissez l'action **Proposer lignes relance**.
-5. Dans le traitement par lots **Proposer lignes relance**, renseignez les champs pour définir comment et pour qui les relances sont créées.
-6. Activez la case à cocher **Inclure les écritures en attente** si vous souhaitez que les relances contiennent des écritures ouvertes impayées qui sont en attente.
-7. Sélectionnez la case à cocher **Seulement écritures dont l'échéance est dépassée** si vous souhaitez que les rappels contiennent uniquement des écritures ouvertes impayées. Seuls les factures et les paiements seront affichés car ce sont les écritures pour lesquelles les paiements de vos clients peuvent être en retard.
-
-    > [!Important]
-    > Les écritures ouvertes en attente sont insérées, indépendamment du paramètre de la case à cocher **Seulement écritures dont l'échéance est dépassée**.
-
-8. Cliquez sur le bouton **OK**.
-
-### <a name="to-replace-reminder-texts"></a>Pour remplacer les textes rappel
-
-Vous pouvez déterminer de plusieurs manières le texte devant figurer sur le rappel imprimé. Dans certains cas, vous pouvez remplacer les textes début et fin définis pour le niveau actuel par ceux d'un autre niveau.
-
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rappels**, puis sélectionnez le lien associé.
-2. Ouvrez la relance appropriée, puis cliquez sur l'action **Mettre à jour texte relance**.
-3. Sur la page **Mettre à jour texte rappel**, entrez le niveau requis dans le champ **Niveau rappel**.
-4. Cliquez sur le bouton **OK** pour que le programme mette à jour les textes début et fin.
-
-### <a name="to-issue-a-reminder"></a>Pour émettre un rappel
-
-Après avoir créé les relances et effectué toutes les modifications souhaitées, vous pouvez lancer les impressions test ou émettre les relances.
-
-Lorsque vous émettez une rappel, les données sont transférées vers une page séparée pour les rappels émis. Les écritures rappel sont simultanément reportées. Si des intérêts ou des frais supplémentaires ont été calculés, les écritures sont reportées dans les écritures client et dans le grand livre.
-
-Lorsqu'une rappel est émise, les écritures sont reportées selon les spécifications de la page **Modalités de rappel**. Cette spécification détermine si les intérêts et les frais supplémentaires sont reportés sur le compte client et dans le grand livre. La configuration sur la page **Groupes report client** détermine les comptes qui seront utilisés.
-
-Pour chaque écriture client de la note de frais financiers, une écriture est créée sur la page **Écritures rappel/frais financiers**.
-
-Si les cases à cocher **Reporter intérêts** ou le champ **Reporter frais supplémentaires** de la page **Modalités de rappel** sont activées, les écritures suivantes sont aussi créées :
-
-- Une écriture sur la page **Écritures client**,
-- Une écriture à recevoir sur le compte du grand livre approprié
-- Une écriture intérêts et/ou une écriture frais supplémentaires dans le compte du grand livre approprié
-
-De plus, émettre un rappel peut créer des écritures de TVA.
-
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rappels**, puis sélectionnez le lien associé.
-2. Sélectionnez la relance concernée, puis cliquez sur l'action **Émission**.
-3. Sur la page **Émettre rappels**, renseignez les champs selon vos besoins.
-4. Cliquez sur le bouton **OK**.
-
-Le rappel est imprimé pour être envoyé à une adresse de courriel spécifiée en tant que pièce jointe PDF.
-
-### <a name="to-cancel-an-issued-reminder"></a>Pour annuler un rappel émis
-
-Si des rappels ont été émis par erreur, vous pouvez les annuler avant leur envoi. Vous pouvez les annuler un par un ou en lot.
-
-1. Sur la page **Rappels émis**, sélectionnez une ou plusieurs lignes pour les rappels émis que vous souhaitez annuler, puis choisissez l'action **Annuler**.
-2. Sur la page **Annuler les rappels émis**, renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**.
+[!INCLUDE [receivables-reminders](includes/receivables-reminders.md)]
 
 ## <a name="finance-charges"></a>Frais financiers
 
@@ -128,7 +59,7 @@ Une fois que vous avez créé des notes de frais financiers et effectué toutes 
 
 Une note de frais financiers ressemble à une facture. Vous pouvez renseigner un en-tête manuellement et faire renseigner les lignes, ou créer des factures d'intérêts automatiquement pour tous les clients.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de frais financiers**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 2.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de frais financiers**, puis sélectionnez le lien associé.  
 2. Cliquez sur **Nouveau**, puis renseignez les champs selon vos besoins.  
 3. Sélectionnez **Proposer lignes fact. intérêts**.
 4. Sur la page **Proposer lignes note de frais financiers**, définissez un filtre sur le raccourci **Écriture client** si vous souhaitez créer des notes de frais financiers uniquement pour des écritures spécifiques.
@@ -140,7 +71,7 @@ Une note de frais financiers ressemble à une facture. Vous pouvez renseigner un
 ### <a name="to-update-finance-charge-memo-texts"></a>Pour mettre à jour des textes de notes de frais financiers  
 Dans certains cas, vous pouvez modifier les textes début et fin définis pour les modalités de frais financiers. Si vous le faites au moment où vous avez créé, mais pas encore émis, les factures d'intérêts, vous pouvez mettre à jour ces factures avec le texte modifié.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Note de frais financiers**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 3.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Note de frais financiers**, puis sélectionnez le lien associé.  
 2. ouvrez la facture d'intérêts dont vous souhaitez modifier le texte, puis sélectionnez **MAJ texte fact. d'intérêts**.
 3. Sur la page **Mettre à jour texte frais financiers**, vous pouvez définir un filtre pour mettre à jour plusieurs notes.
 4. Cliquez sur le bouton **OK** pour que le programme mette à jour les textes début et fin.  
@@ -160,7 +91,7 @@ Si les cases à cocher **Reporter intérêts** ou **Reporter frais supplémentai
 
 De plus, émettre une note de frais financiers peut créer des écritures de TVA.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de frais financiers**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 4.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de frais financiers**, puis sélectionnez le lien associé.
 2. Sélectionnez la facture concernée, puis cliquez sur l'action **Emettre**.
 3. Sur la page **Émettre notes de frais financiers**, renseignez les champs selon vos besoins.
 4. Cliquez sur le bouton **OK**.
@@ -174,7 +105,7 @@ Si des notes de frais financiers ont été émises par erreur, vous pouvez les a
 
 ### <a name="to-view-reminder-and-finance-charge-entries"></a>Pour afficher les écritures rappel et note de frais financiers  
 Lorsque vous émettez un rappel, une écriture rappel est créée sur la page **Écritures rappel/frais financiers** pour chaque ligne rappel contenant une écriture client. Vous pouvez ensuite obtenir un aperçu des écritures rappel créées pour un client spécifique.    
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 5.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.  
 2. Ouvrez la fiche client appropriée, puis sélectionnez l'action **Écritures comptables**.
 3. Sur la page **Écritures client**, cliquez sur la ligne de l'écriture pour laquelle vous souhaitez visualiser les écritures rappel, puis sélectionnez l'action **Écritures rappel/frais financiers**.
 

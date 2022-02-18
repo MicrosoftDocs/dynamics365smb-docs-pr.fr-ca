@@ -1,16 +1,22 @@
 ---
 title: Configurer les niveaux et modalités de rappel
-description: "Découvrez comment configurer Business\_Central de telle sorte que vous puissiez envoyer un rappel à un client sur un paiement dû et ajouter des frais, ou des commissions au paiement en raison de retard."
+description: Découvrez comment configurer Business Central de telle sorte que vous puissiez envoyer un rappel à un client sur un paiement dû et ajouter des frais, ou des commissions au paiement en raison de retard.
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'payment due, debt, overdue, fee, charge, reminder'
-ms.search.form: '431, 432, 478'
-ms.date: 04/01/2021
+ms.search.keywords: payment due, debt, overdue, fee, charge, reminder
+ms.search.form: 431, 432, 436, 478
+ms.date: 02/09/2022
 ms.author: edupont
+ms.openlocfilehash: caa31498ac63d376d4fb13f83c66664a1cf78bcd
+ms.sourcegitcommit: 8a968e9176a913635e47e5170c66962e485e6689
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "8105784"
 ---
 # <a name="set-up-reminder-terms-and-levels"></a>Configurer les niveaux et modalités de rappel
 
@@ -96,6 +102,7 @@ Si vous avez configuré les modalités de rappel (avec des niveaux et du texte s
 ## <a name="see-also"></a>Voir aussi
 
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
+[Envoyer des rappels de soldes impayés](receivables-send-reminders.md)  
 [Configurer les modalités de frais financiers](finance-setup-finance-charges.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 

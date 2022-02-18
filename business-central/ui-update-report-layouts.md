@@ -1,5 +1,5 @@
 ---
-title: Mise à jour d’une présentation de rapport
+title: Mettre à jour les présentations de rapport personnalisées
 description: Découvrez comment mettre à jour une présentation de rapport personnalisée utilisée sur un rapport lorsque des modifications de conception sont apportées à l’ensemble de données du rapport, par exemple.
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -7,17 +7,18 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.form: 9652, 9650
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 99b0f191bf9890683bb6cbb68f7baef0342f9737
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: a3d3aabe01a9969e8665f24479d8b11b26b54d5b
+ms.sourcegitcommit: f4b32ba1f926a2a712400c36305616f320757723
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6445286"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8101487"
 ---
 # <a name="update-custom-report-layouts"></a>Mettre à jour les présentations de rapport personnalisées
+
 À l'occasion, vous pouvez être amené à mettre à jour une présentation de rapport personnalisée qui est utilisée dans un rapport. Cela est nécessaire si une modification de conception a été apportée à l'ensemble de données de rapport, par exemple, si un champ utilisé dans la présentation a été supprimé de l'ensemble de données de rapport. Si une présentation de rapport requiert une mise à jour, vous obtiendrez un message d'erreur lorsque vous tentez de visualiser, d'imprimer ou d'enregistrer le rapport.  
 
 Vous pouvez mettre à jour automatiquement une présentation de rapport à partir du message d'erreur qui s'affiche lorsque vous lancez le rapport en cliquant sur le bouton **Oui** du message d'erreur. Ou, avant l'exécution des rapports, vous pouvez mettre à jour des présentations de rapport spécifiques ou toutes les présentations de rapport personnalisées susceptibles d'être affectées par les modifications de l'ensemble de données.  

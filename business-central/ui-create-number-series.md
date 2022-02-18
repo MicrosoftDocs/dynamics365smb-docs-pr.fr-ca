@@ -7,10 +7,16 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'numbers, numbering'
-ms.search.form: 456
+ms.search.keywords: numbers, numbering
+ms.search.form: 456, 457, 458, 459, 460, 461, 21, 22, 26, 27, 31
 ms.date: 04/01/2021
 ms.author: edupont
+ms.openlocfilehash: f886656262853acd34007118248a52af2184b36a
+ms.sourcegitcommit: c05806689d289d101bd558696199cefbd989473e
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8115376"
 ---
 # <a name="create-number-series"></a>Créer des séries de numéros
 
@@ -55,22 +61,22 @@ Lorsque vous ouvrez un nouveau document ou une nouvelle fiche pour lequel il exi
 > Si vous devez activer la numérotation manuelle, par exemple, les nouvelles fiches article qui ont été créées avec un processus de migration des données pour lesquelles le champ **N°** est masqué par défaut, allez ensuite sur la page **Configuration de l'inventaire** et choisissez le champ **N° article** pour ouvrir et définir la série de numéros sur **N° manuels**.
 
 ## <a name="to-create-a-new-number-series"></a>Pour créer des séries de numéros
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Souches de n°**, puis choisissez le lien associé.
-2. Sélectionnez l'action **Nouveau**.
-3. Sur la nouvelle ligne, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
-4. Sélectionnez l'option **Lignes**.
-5. Sur la page **Lignes série de n°**, remplissez les champs pour définir l’utilisation réelle et le contenu de la série de numéros créée à l’étape 2.
-6. Répétez l'étape 5 pour autant d'utilisations différentes de la série de numéros dont vous avez besoin. Le champ **Date début** définit quelle ligne de série de numéros est active.
+2. Sélectionnez l'action **Nouveau**.  
+3. Sur la nouvelle ligne, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
+4. Sélectionnez l'option **Lignes**.  
+5. Sur la page **Lignes série de n°**, remplissez les champs pour définir l’utilisation réelle et le contenu de la série de numéros créée à l’étape 2.  
+6. Répétez l'étape 5 pour autant d'utilisations différentes de la série de numéros dont vous avez besoin. Le champ **Date début** définit quelle ligne de série de numéros est active.  
 
-## <a name="to-set-up-where-a-number-series-is-used"></a>Pour définir l'emplacement d'utilisation de la série de numéros
-La procédure suivante indique comment définir des séries de numéros pour la zone Ventes. La procédure est identique pour d'autres secteurs.
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Paramètres ventes**, puis choisissez le lien associé.
-2. Sur la page **Ventes**, dans le raccourci **Série de numéros**, sélectionnez la série de numéros souhaitée pour chaque fiche ou document vente.
+> [!TIP]
+> Pour permettre aux utilisateurs de spécifier manuellement des numéros lorsqu’ils enregistrent un nouveau client ou fournisseur, par exemple, choisissez le champ **Numéros manuels** sur la série de numéros proprement dite. Pour interdire le numéro manuel, effacez le champ.
 
-Le numéro sélectionné est désormais utilisé pour renseigner le champ **N°** sur la fiche ou le document en question, en fonction des paramètres définis sur la ligne série de numéros.
+Vous pouvez attribuer des séries de numéros aux modèles que vous configurez pour les différents types de clients et de fournisseurs que vos commerciaux et acheteurs ajoutent le plus souvent à votre fichier [!INCLUDE [prod_short](includes/prod_short.md)]. Dans ce cas, configurez la série de numéros appropriée, liez-la via des relations, puis ajoutez la première série de numéros dans la relation appropriée à la page de configuration appropriée.  
 
 ## <a name="to-create-relationships-between-number-series"></a>Pour créer des liens entre des séries de numéros
-Si vous avez défini plusieurs codes série de numéros pour un même type d'informations ou de transactions de base, vous pouvez créer des liens entre ces codes. Cette fonction peut vous aider à choisir parmi ces codes lorsque vous utilisez un numéro.
+
+Si vous avez défini plusieurs codes série de numéros pour un même type d'informations ou de transactions de base, vous pouvez créer des liens entre ces codes. Cette fonction peut vous aider à choisir parmi ces codes lorsque vous utilisez un numéro. Lorsque vous établissez un lien entre plusieurs séries de numéros, vous associez toutes les séries de numéros liées à un code série de numéros. Ensuite, vous pouvez entrer ce code dans un champ sur le Raccourci **Numérotage** dans l’une des pages de configuration pertinentes, telles que **Configuration des ventes**.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Souches de n°**, puis choisissez le lien associé.
 2. Sélectionnez la ligne avec la souche de numéros pour laquelle vous souhaitez créer des relations, puis cliquez sur **Relations**.
@@ -79,6 +85,17 @@ Si vous avez défini plusieurs codes série de numéros pour un même type d'inf
 5. Fermez la page.
 
 Désormais, pour créer un élément nécessitant un numéro, vous pourrez utiliser les liens ainsi créés et choisir parmi les séries de numéros liées.
+
+## <a name="to-set-up-where-a-number-series-is-used"></a>Pour définir l'emplacement d'utilisation de la série de numéros
+
+La procédure suivante indique comment définir des séries de numéros pour la zone Ventes. La procédure est identique pour d'autres secteurs.  
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Paramètres ventes**, puis choisissez le lien associé.
+2. Sur la page **Ventes**, dans le raccourci **Série de numéros**, sélectionnez la série de numéros souhaitée pour chaque fiche ou document vente.
+
+Le numéro sélectionné est désormais utilisé pour renseigner le champ **N°** sur la fiche ou le document en question, en fonction des paramètres définis sur la ligne série de numéros.  
+
+
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/number-series-trail-codes-dynamics-365-business-central/index)
 

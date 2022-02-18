@@ -7,14 +7,15 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
+ms.search.forms: 36, 5872, 5870, 5874, 911, 917, 912
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 2f23357fde2dc86e0be0ee09099d57623056365c
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: d058b15ad55713a22ee70862f666301d36d53e0a
+ms.sourcegitcommit: 189bf08d7ddf6c8b7ef2c09058c6847aa6e590d3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6444930"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060048"
 ---
 # <a name="work-with-bills-of-material"></a>Utiliser les nomenclatures
 Les nomenclatures permettent de structurer les articles parents qui doivent être assemblés ou produits par des ressources ou des unités de production à partir de composantes. Une nomenclature d'assemblage peut également être utilisée pour vendre un article parent sous la forme d'un kit constitué de ses composantes.
@@ -71,7 +72,7 @@ Sur la page **Nomenclature d'assemblage**, vous pouvez ouvrir une page distincte
 ## <a name="to-replace-the-assembly-item-with-its-components-on-document-lines"></a>Pour remplacer l'article d'assemblage par ses composantes dans les lignes document
 Dans n'importe quel document vente et achat qui contient un élément d'assemblage, vous pouvez utiliser une fonction spéciale pour remplacer la ligne de l'élément d'assemblage par de nouvelles lignes pour ses composantes. Cette option est utile, par exemple, si vous souhaitez vendre des composantes sous forme de kit représentant l'élément d'assemblage.
 
-La fonction Éclater nomenclature est également disponible sur la page **Nomenclature d'assemblage** en tant que méthode pour afficher les éléments enfants sur tous les sous-assemblages d'une nomenclature d'assemblage.
+L’action **Éclater nomenclature** est également disponible sur la page **Nomenclature d’assemblage** en tant que méthode pour afficher les éléments de sous-ensemble sur une nomenclature d’assemblage.
 
 > [!CAUTION]  
 >  Lorsque vous avez utilisé la fonction **Éclater nomenclature**, vous ne pouvez pas facilement l'annuler. Vous devez supprimer les lignes document de vente représentant les composantes, puis réentrer une ligne document de vente de l'élément d'assemblage.

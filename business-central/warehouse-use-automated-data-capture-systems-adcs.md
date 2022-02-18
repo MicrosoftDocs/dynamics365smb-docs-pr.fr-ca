@@ -8,9 +8,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: barcode
-ms.search.form: '7700, 7703, 7704, 7706, 7707, 7710'
+ms.search.form: 7700, 7703, 7704, 7706, 7707, 7710, 9813, 9814
 ms.date: 06/25/2021
 ms.author: edupont
+ms.openlocfilehash: da293a02360dced863687fc37f87a668eed91284
+ms.sourcegitcommit: c05806689d289d101bd558696199cefbd989473e
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8115182"
 ---
 # <a name="use-automated-data-capture-systems-adcs"></a>Utilisation des systèmes de saisie automatisée (ADCS)
 

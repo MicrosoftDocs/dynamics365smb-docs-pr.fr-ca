@@ -1,6 +1,6 @@
 ---
 title: Obtenir un aperçu des disponibilités
-description: 'Vous obtenez des informations sur la disponibilité des articles ou du stock dans tous les emplacements, par événement de vente ou d’achat ou par période, etc.'
+description: Vous obtenez des informations sur la disponibilité des articles ou du stock dans tous les emplacements, par événement de vente ou d’achat ou par période, etc.
 documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
@@ -9,8 +9,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: stock
+ms.search.form: 908, 909, 925, 926, 504, 501, 500, 499, 99000896, 342, 515, 5417, 5415, 5871, 5530, 492, 157, 5540, 5416, 5414, 1872, 1873, 99000902, 353, 491, 9231, 5390
 ms.date: 06/16/2021
 ms.author: edupont
+ms.openlocfilehash: 01efc9191cad10414c344b4fe3a28ae2cef63ef9
+ms.sourcegitcommit: 189bf08d7ddf6c8b7ef2c09058c6847aa6e590d3
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060126"
 ---
 # <a name="view-the-availability-of-items"></a>Voir la disponibilité des articles
 Dans le contexte d'une tâche professionnelle, vous pouvez obtenir des informations avancées sur la disponibilité et l'emplacement d'un article, par exemple en discutant avec un client à propos d'une date de livraison.

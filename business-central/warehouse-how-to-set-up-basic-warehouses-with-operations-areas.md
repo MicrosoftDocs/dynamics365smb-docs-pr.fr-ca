@@ -8,14 +8,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
+ms.search.form: 6774, 6775, 6776
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 35482dca465da05be01c4eed86e93d30a75e6dcf
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 6dbf91bcf720a3b57f7e6e9446b0a46d1e053987
+ms.sourcegitcommit: c05806689d289d101bd558696199cefbd989473e
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6441407"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8115208"
 ---
 # <a name="set-up-basic-warehouses-with-operations-areas"></a>Configurer des entrepôts de base avec les zones d'opérations
 Si les zones Opérations internes telles que la production ou l'assemblage existent dans les configurations entrepôt de base dans lesquelles les emplacements utilisent le champ de configuration **Zone obligatoire** et éventuellement les champs **Prélèvement requis** et **Rangement requis**, vous pouvez utiliser les documents d'entrepôt de base suivants pour enregistrer vos activités entrepôt pour des zones Opérations internes :  
@@ -46,14 +47,15 @@ Les procédures suivantes sont basées sur la configuration d'activités entrep�
 3.  Sur le raccourci **Entrepôt**, cochez la case **Rangement requis** pour indiquer que lorsqu'un document source entrant ou interne avec un code de zone est libéré, il est possible de créer un document rangement inventaire ou mouvement d'inventaire.  
 4.  Cochez la case **Prélèvement requis** pour indiquer que lorsqu'un document source sortant ou interne avec un code de zone est créé, il est obligatoire de créer un document prélèvement inventaire ou mouvement d'inventaire.  
 
-## <a name="to-define-a-default-bin-structure-in-the-production-area"></a>Pour définir une structure de zone par défaut dans la zone de production  
+## <a name="to-define-a-default-bin-structure-in-the-production-area"></a>Pour définir une structure de zone par défaut dans la zone de production
+
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.
 2. Ouvrez l'emplacement que vous voulez configurer.  
 3.  Sur le raccourci **Emplacements**, dans le champ **Code empl. atelier ouvert**, entrez le code de l'emplacement dans la zone de production comportant des composants en nombre suffisant que l'opérateur machine peut consommer sans demander une activité entrepôt pour les apporter à l'emplacement. Les articles qui sont stockés dans cette zone sont habituellement configurés pour le report automatique ou la consommation. Cela signifie que le champ **Méthode consommation** indique **Aval** ou **Amont**.  
 4. Dans le champ **Code de zone avant production**, saisissez le code de la zone dans la zone de production où les composantes qui sont prélevées pour la production dans cet emplacement sont stockées par défaut avant de pouvoir être consommées. Les articles qui sont stockés dans cette zone sont habituellement configurés pour le report manuel de la consommation. Cela signifie que le champ **Méthode consommation** indique **Manuel**, **Prélèvement + Aval** ou **Prélèvement + Amont** pour les prélèvements entrepôt et les mouvements d'inventaire.  
 
     > [!NOTE]  
-    >  Lorsque vous utilisez des prélèvements stock, le champ **Code emplacement** sur une ligne composant d'ordre de fabrication. définit l'emplacement de *prélèvement* où les composants sont déduits lors de la validation de la consommation. Lorsque vous utilisez des mouvements de stock, le **Code emplacement** sur des lignes composant d'ordre cde fabrication définit l'emplacement *placement* dans la zone Opérations où l'employé du magasin doit placer les composants.  
+    > Lorsque vous utilisez des prélèvements stock, le champ **Code emplacement** sur une ligne composant d'ordre de fabrication. définit l'emplacement de *prélèvement* où les composants sont déduits lors de la validation de la consommation. Lorsque vous utilisez des mouvements de stock, le **Code emplacement** sur des lignes composant d'ordre cde fabrication définit l'emplacement *placement* dans la zone Opérations où l'employé du magasin doit placer les composants.  
 
 5. Sur le raccourci **Zones**, dans le champ **Code de zone post-production**, entrez le code de la zone dans la zone de production où les produits finis sont extraits par défaut si le processus implique une activité entrepôt. Dans les configurations entrepôt de base, l'activité est enregistrée en tant que rangement inventaire ou mouvement d'inventaire.  
 
@@ -61,7 +63,7 @@ Désormais, les lignes composante bon de production présentant ce code de zone 
 
 Ce graphique indique comment le champ **Code emplacement** sur les lignes composant O.F. est renseigné en fonction de votre configuration.  
 
-![Organigramme Flux de zone.](media/binflow.png "BinFlow")    
+![Organigramme Flux de zone.](media/binflow.png "BinFlow")
 
 ## <a name="to-define-a-default-bin-structure-in-the-assembly-area"></a>Pour définir une structure de zone par défaut dans la zone d'assemblage
 Les composantes pour les commandes d'assemblage ne peuvent pas être prélevées ni reportées avec des prélèvements inventaire. À la place, utilisez la page **Mouvement d'inventaire**. Pour plus d'informations, voir [Déplacer les composantes vers une zone opérations dans le stockage de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md).
@@ -136,8 +138,8 @@ La réservation d'une zone fournit une fonctionnalité similaire à l'utilisatio
 ## <a name="see-also"></a>Voir aussi  
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  
 [Stock](inventory-manage-inventory.md)  
-[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
-[Gestion d'assemblage](assembly-assemble-items.md)    
+[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
+[Gestion d'assemblage](assembly-assemble-items.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 

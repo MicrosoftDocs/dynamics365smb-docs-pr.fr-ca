@@ -7,10 +7,16 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'electronic document, Intrastat, trade, EU, European Union'
-ms.search.form: '308, 309, 310, 311, 325, 326, 327, 328, 405, 406, 8451, 12202, 31077'
-ms.date: 04/01/2021
+ms.search.keywords: electronic document, Intrastat, trade, EU, European Union
+ms.search.form: 308, 309, 310, 311, 325, 326, 327, 328, 405, 406, 8451, 12202, 31077
+ms.date: 01/28/2022
 ms.author: bholtorf
+ms.openlocfilehash: d51e1657d6c28581a49af9b65b7bee8a27baa57f
+ms.sourcegitcommit: 1508643075dafc25e9c52810a584b8df1d14b1dc
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8049676"
 ---
 # <a name="set-up-and-report-intrastat"></a>Configurer et enregistrer un rapport Intrastat
 
@@ -22,7 +28,11 @@ Avant d'utiliser le journal intrastat pour enregistrer des informations Intrasta
 * **Configuration Intrastat** : la page Configuration Intrastat permet d'activer la déclaration Intrastat et de définir des valeurs par défaut. Vous pouvez spécifier si vous devez enregistrer la déclaration Intrastat à partir des livraisons (envois), des réceptions (arrivées) ou des deux, selon les seuils définis par vos réglementations locales. Vous pouvez également définir des types de transaction par défaut pour les documents classiques et de retour, utilisés pour la nature des rapports de transaction.
 * **Modèles de journal Intrastat** : Vous devez configurer les lots et les modèles de journal Intrastat que vous utiliserez. Comme la déclaration Intrastat doit être soumise mensuellement, vous devez créer 12 lots journal Intrastat basés sur le même modèle.  
 * **Codes marchandise** : les autorités douanières et fiscales ont établi des codes numériques pour classer les articles et les services. Vous spécifiez ces codes sur les articles.
-* **Codes nature de transaction** : les pays et les régions ont différents codes pour les types de transactions Intrastat, comme l'achat et la vente ordinaires, l'échange de marchandises retournées et l'échange de marchandises non retournées. Configurez tous les codes qui s'appliquent à votre pays/région. Utilisez ces codes dans les documents achat et vente, et lorsque vous traitez des retours.  
+* **Codes nature de transaction** : les pays et les régions ont différents codes pour les types de transactions Intrastat, comme l'achat et la vente ordinaires, l'échange de marchandises retournées et l'échange de marchandises non retournées. Configurez tous les codes qui s'appliquent à votre pays/région. Utilisez ces codes dans les documents achat et vente, et lorsque vous traitez des retours. 
+
+    > [!NOTE]
+    > À partir de janvier 2022, Intrastat exige un code de nature de transaction différent pour les envois aux particuliers ou aux entreprises non assujetties à la TVA et aux entreprises assujetties à la TVA. Pour se conformer à cette exigence, nous vous recommandons de revoir et/ou d’ajouter de nouveaux codes de nature de transaction dans la page **Types de transactions** selon les exigences de votre pays. Vous devriez également revoir et mettre à jour le champ **Type de partenaire** sur *Personne* pour les clients particuliers ou entreprises non assujetties à la TVA dans la page **Client**. Si vous n’êtes pas sûr du type de partenaire ou de transaction correct à utiliser, nous vous recommandons de demander à un expert dans votre pays ou votre région. 
+ 
 * **Modes de transport**: Il existe sept codes à un chiffre pour les modes de transport Intrastat. **1** Mer, **2** Chemin de fer, **3** Route, **4** Air **5** Voie postale, **7** Transports fixes et **9** Propulsion propre (par exemple le transport en voiture en la conduisant). [!INCLUDE[prod_short](includes/prod_short.md)] ne requiert pas ces codes, cependant, il est préférable que les descriptions offrent une signification similaire.  
 * **Régimes** : Vous pouvez les utiliser pour renseigner les descriptions des types de transaction.  
 * **Pays d’origine** : Utilisez les codes ISO Alpha à deux lettres pour le pays où le bien a été obtenu ou produit. Si le bien a été produit dans plusieurs pays, le pays d’origine est le dernier pays où il a été transformé de manière significative. 
@@ -104,7 +114,19 @@ Après avoir renseigné le journal Intrastat, vous pouvez exécuter l'action **R
 Le traitement en lot récupère toutes les écritures article de la période statistique et les insère sous forme de lignes dans le journal Intrastat. Vous pouvez modifier au besoin les nouvelles lignes.  
 
 > [!IMPORTANT]  
-> Le traitement en lot récupère uniquement les écritures qui contiennent un code pays/région pour lequel un code Intrastat a été entré dans la page **Pays/Régions**. Vous devez donc entrer les codes Intrastat correspondant aux codes pays/région pour lesquels vous allez lancer le traitement en lot.  
+> Le traitement en lot récupère uniquement les écritures qui contiennent un code pays/région pour lequel un code Intrastat a été entré dans la page **Pays/Régions**. Vous devez donc entrer les codes Intrastat correspondant aux codes pays/région pour lesquels vous allez lancer le traitement en lot. Le traitement en lot définit le champ **Numéro de TVA du partenaire** sur *QV999999999999* pour les particuliers ou les entreprises non assujetties à la TVA (clients avec le champ **Type de partenaire** défini sur *Personne*), et il utilise la valeur du champ **Type de transaction** de l’écriture article ou de l’écriture projet reportée. 
+
+### <a name="to-modify-intrastat-journals-lines"></a>Pour modifier les lignes des journaux Intrastat
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journal Intrastat**, puis choisissez le lien associé.  
+2. Sur la page **Journal Intrastat**, dans le champ **Nom de lot**, sélectionnez le lot journal concerné, puis sélectionnez **OK**.  
+3. Utilisez le volet de filtre pour filtrer les lignes du journal Intrastat en fonction de certains critères. Par exemple, filtrez les champs **Numéro de TVA du partenaire** avec la valeur *QV999999999999*.
+4. Choisissez l’icône **Partager**![Partager une page dans une autre application.](media/share-icon.png) et sélectionnez **Modifier dans Excel**
+5. Dans Excel, modifiez les lignes de journal Intrastat que vous avez filtrées. Par exemple, modifiez les valeurs du champ **Type de transaction**.  
+6. Publiez les modifications que vous avez apportées dans Excel dans [!INCLUDE[prod_short](includes/prod_short.md)]
+
+> [!Note]
+> Dans les versions de [!INCLUDE[prod_short](includes/prod_short.md)] qui ne prennent pas en charge [**Modifier dans Excel**](across-work-with-excel.md#edit-in-excel) pour les journaux, vous pouvez [créer des packages de configuration](admin-how-to-prepare-a-configuration-package.md#to-create-a-configuration-package) pour exporter et importer des lignes de journal Intrastat vers Excel. 
 
 ### <a name="report-intrastat-on-a-form-or-a-file"></a>Rapport Intrastat sur un formulaire ou un fichier
 

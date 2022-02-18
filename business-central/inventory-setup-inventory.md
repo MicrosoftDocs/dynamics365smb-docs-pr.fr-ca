@@ -1,16 +1,22 @@
 ---
 title: Configuration de l'inventaire
-description: 'Décrit comment configurer les processus d''inventaire, y compris les acheminements pour le transfert et les emplacements, tels que des entrepôts.'
+description: Décrit comment configurer les processus d'inventaire, y compris les acheminements pour le transfert et les emplacements, tels que des entrepôts.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'warehouse, stock'
-ms.search.form: 30
+ms.search.keywords: warehouse, stock
+ms.search.form: 30, 461
 ms.date: 04/01/2021
 ms.author: edupont
+ms.openlocfilehash: 870bcf2e7980ccf5717cbb93ada44087afe95c4d
+ms.sourcegitcommit: 189bf08d7ddf6c8b7ef2c09058c6847aa6e590d3
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8059467"
 ---
 # <a name="setting-up-inventory"></a>Configuration de l'inventaire
 Avant de pouvoir gérer les activités entrepôt et les coûts d'inventaire, vous devez configurer les règles et les valeurs qui définissent les stratégies d'inventaire de la compagnie.

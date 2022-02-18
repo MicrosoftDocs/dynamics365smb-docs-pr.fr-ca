@@ -7,10 +7,16 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'warehouse, stock'
-ms.search.form: '30, 461'
+ms.search.keywords: warehouse, stock
+ms.search.form: 30, 456, 461
 ms.date: 07/28/2021
 ms.author: edupont
+ms.openlocfilehash: a4912baa7dc9bfd69c5306b95b63312bc1d29f10
+ms.sourcegitcommit: c05806689d289d101bd558696199cefbd989473e
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8115041"
 ---
 # <a name="set-up-general-inventory-information"></a>Configurer des informations générales relatives à l'inventaire
 

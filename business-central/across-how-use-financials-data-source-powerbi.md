@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: business intelligence, KPI, Odata, Power App, SOAP, analysis
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: ef81b4fd16e66c4ec1453798ae77f947b12c975e
-ms.sourcegitcommit: eeaf9651c26e49974254e29b7e2d16200c818dad
+ms.openlocfilehash: db872c8049550a497e2ee56a4a62bb69fa6a1854
+ms.sourcegitcommit: 1508643075dafc25e9c52810a584b8df1d14b1dc
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6341343"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8049858"
 ---
 # <a name="building-power-bi-reports-to-display-prod_long-data"></a>Création de rapports Power BI pour afficher des données [!INCLUDE [prod_long](includes/prod_long.md)]
 
@@ -150,6 +150,39 @@ Il existe plusieurs façons de transmettre des rapports à vos collègues et à 
 - Partager un rapport à partir de votre service Power BI
 
     Si vous avez une licence Power BI Pro, vous pouvez partager le rapport avec d’autres, directement depuis votre service Power BI. Pour plus d’informations, consultez [Power BI - Partager un tableau de bord ou un rapport](/power-bi/collaborate-share/service-share-dashboards#share-a-dashboard-or-report).
+
+## <a name="fixing-problems"></a>Résolution des problèmes
+
+### <a name="cannot-insert-a-record-current-connection-intent-is-read-only-error-connecting-to-custom-api-page"></a>« Impossible d’insérer un enregistrement. L’intention de connexion actuelle est en lecture seule. » erreur de connexion à la page API personnalisée
+
+> **S’APPLIQUE À :** Business Central Online
+
+À compter de février 2022, les nouveaux rapports qui utilisent les données Business Central se connecteront par défaut à une réplique en lecture seule de la base de données Business Central. Dans de rares cas, selon la conception de la page, vous obtenez une erreur lorsque vous essayez de vous connecter et d’obtenir des données à partir de la page.
+
+1. Lancez Power BI Desktop.
+2. Sur le ruban, cliquez sur **Obtenir les données** > **Services en ligne**.
+3. Dans le volet **Services en ligne**, sélectionnez **Dynamics 365 Business Central**, puis **Connecter**.
+4. Dans la fenêtre **Navigateur**, sélectionnez le point de terminaison d’API à partir duquel vous souhaitez charger les données.
+5. Dans le volet d’aperçu sur la droite, vous verrez l’erreur suivante :
+
+   *Dynamics365BusinessCentral : Échec de la requête : le serveur distant a renvoyé une erreur : (400) Requête incorrecte. (Impossible d’insérer un enregistrement. L’intention de connexion actuelle est en lecture seule. CorrelationId : [...]) ».*
+
+6. Sélectionner **Transformer les données** à la place de **Charger** comme vous le feriez normalement.
+7. Dans **l’éditeur Power Query**, sélectionnez **Éditeur avancé** du ruban.
+8. Dans la ligne qui commence par **Source =**, remplacez le texte suivant :
+
+   ```
+   Dynamics365BusinessCentral.ApiContentsWithOptions(null, null, null, null)
+   ```
+
+   par :
+
+   ```
+   Dynamics365BusinessCentral.ApiContentsWithOptions(null, null, null, [UseReadOnlyReplica = false])
+   ```
+
+9. Cliquez sur **Terminé**.
+10. Sélectionnez **Fermer et appliquer** à partir du ruban pour enregistrer les modifications et fermer l’éditeur Power Query.
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/configure-powerbi-excel-dynamics-365-business-central/index)
 

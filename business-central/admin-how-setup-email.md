@@ -1,16 +1,22 @@
 ---
 title: Configurer la messagerie dans Business Central (contient une vidéo)
-description: "Décrit comment connecter des comptes de messagerie à Business\_Central afin que vous puissiez envoyer des messages sortants sans avoir à ouvrir une autre application."
+description: Décrit comment connecter des comptes de messagerie à Business Central afin que vous puissiez envoyer des messages sortants sans avoir à ouvrir une autre application.
 author: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: get-started-article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'SMTP, email, Office 365, connector'
-ms.search.form: 1805
+ms.search.keywords: SMTP, email, Office 365, connector
+ms.search.form: 1805, 9813, 9814, 1262, 1263
 ms.date: 04/01/2021
 ms.author: bholtorf
+ms.openlocfilehash: 7e71694e59dcd17072bb7616324953ca02117a89
+ms.sourcegitcommit: c05806689d289d101bd558696199cefbd989473e
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8115076"
 ---
 # <a name="set-up-email"></a>Configurer la messagerie
 Les utilisateurs au sein des entreprises envoient des informations et des documents, tels que des documents de vente, des bons de commande et des factures, par courriel, au quotidien. Les administrateurs peuvent faciliter cette tâche en connectant un ou plusieurs comptes de messagerie à [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez donc envoyer des documents sans avoir à ouvrir une application de messagerie. Vous pouvez composer chaque message individuellement avec des outils de mise en forme de base, tels que des polices, des styles, des couleurs, etc., et ajouter des pièces jointes pouvant atteindre 100 Mo. Les administrateurs peuvent également configurer des présentations de rapports qui incluent uniquement les informations clés des documents. Pour plus d'informations, voir [Envoyer des documents par courriel](ui-how-send-documents-email.md).

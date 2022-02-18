@@ -7,34 +7,21 @@ ms.topic: conceptual
 ms.search.keywords: reporting
 ms.date: 04/12/2021
 ms.author: edupont
-ms.openlocfilehash: 26dbb93fe003caf140caaad07d31b85be508085b
-ms.sourcegitcommit: a486aa1760519c380b8cdc8fdf614bed306b65ea
+ms.openlocfilehash: 5488ba8331494ba662960e84d4907de76a68e72b
+ms.sourcegitcommit: 2c972dfc94d27245eaa99efcf638d030dedafb22
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6543155"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102353"
 ---
 # <a name="financial-reports-and-analytics-in-business-central"></a>Rapports financiers et analyses dans Business Central
 
 La génération de rapports financiers dans [!INCLUDE [prod_short](includes/prod_short.md)] permet aux professionnels de la finance et des affaires de créer, maintenir, déployer et consulter des rapports financiers. Ils vont au-delà des contraintes des rapports traditionnels pour vous aider à concevoir efficacement divers types de rapports. [!INCLUDE [prod_short](includes/prod_short.md)] comprend plusieurs rapports, fonctions de traçage et outils qui aident les auditeurs ou contrôleurs chargés de rendre compte au service financier. La génération de rapports financiers inclut la prise en charge des dimensions, de sorte que les segments de compte ou les dimensions sont immédiatement disponibles. Aucun autre outil ou étape de configuration supplémentaire n’est requis.  
 
+[!INCLUDE [tip_open_report_from_docs](includes/tip-open-report-from-docs.md)]
+
 ## <a name="reports"></a>Rapports
-
-Le tableau suivant décrit certains des principaux rapports dans les rapports financiers.
-
-| Rapport | Code objet | Description |
-|--|--|--|
-| **Balance de vérification** | 6 | Affiche le plan comptable avec les soldes et les soldes périodes. Vous pouvez choisir de visualiser la balance de vérification générale relative à des dimensions sélectionnées. Vous pouvez l’utiliser lors de la fermeture d’une période comptable ou d’un exercice financier. |
-| **Balance par période** | 38 | Présente le solde d’ouverture par compte GL, les mouvements pour la période sélectionnée (mois, trimestre ou année) et le solde de fermeture qui en résulte. |
-| **Balance de vérification/budget** | 9 | Affiche la balance de vérification comparée à un budget. Vous pouvez choisir de visualiser la balance de vérification générale relative à des dimensions sélectionnées. Vous pouvez l’utiliser lors de la fermeture d’une période comptable ou d’un exercice financier. |
-| **Balance de vérification détaillée** | 4 | Affiche la balance de vérification détaillée pour les comptes GL sélectionnés. Vous pouvez l’utiliser lors de la fermeture d’une période comptable ou d’un exercice financier. Vous pouvez définir les comptes qui seront inclus dans le rapport en définissant des filtres. |
-| **Balance de vérification N/N-1** | 7 | Affiche la balance de vérification comparée aux chiffres de l’année précédente. Vous pouvez choisir de visualiser la balance de vérification générale relative à des dimensions sélectionnées. Vous pouvez l’utiliser lors de la fermeture d’une période comptable ou d’un exercice financier. *L’année précédente* signifie la même période de l’année calendaire précédente. |
-| **Tableau d'analyse** | 25 | Les tableaux d’analyse peuvent être utilisés pour afficher les comptes GL d’une manière différente que dans le plan comptable. Par exemple, les tableaux d’analyse peuvent être utilisés pour les rapports qui concernent des chiffres-clés. |
-<!-- | **Bilan** (Tableau d’analyse ou Excel) ou **Balance de vérification** |  |  |
-| **Déclaration des trésoreries** (Tableau d’analyse) |  |  |
-| **Détail/Résumé balance de vérification** |  |  |
-| **État des résultats** (Tableau d’analyse ou Excel) |  |  |
-| **Budget** |  |  | -->
+[!INCLUDE [finance_reports](includes/finance-reports-include.md)]
 
 ## <a name="tasks"></a>Tâches
 

@@ -1,13 +1,19 @@
 ---
 title: Configuration des acomptes
-description: "Découvrez comment configurer Business\_Central afin de pouvoir utiliser les paiements anticipés pour facturer et collecter les paiements anticipés requis des clients ou régler des paiements anticipés aux fournisseurs."
+description: Découvrez comment configurer Business Central afin de pouvoir utiliser les paiements anticipés pour facturer et collecter les paiements anticipés requis des clients ou régler des paiements anticipés aux fournisseurs.
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keyword: prepayment
-ms.search.form: '314, 459, 460, 664'
+ms.search.form: 314, 459, 460, 664
 ms.date: 10/27/2021
 ms.author: edupont
+ms.openlocfilehash: 9d9decead1e6207915fd3a162cadae0354f0f257
+ms.sourcegitcommit: f4b32ba1f926a2a712400c36305616f320757723
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8100913"
 ---
 # <a name="set-up-prepayments"></a>Configuration des acomptes
 
@@ -18,10 +24,12 @@ Avant de reporter des factures paiement anticipé, vous devez configurer les com
 Vous pouvez définir le pourcentage du montant ligne qui sera facturé pour paiement anticipé, pour un client ou un fournisseur, pour tous les articles ou pour une sélection d'articles. Une fois la configuration terminée, vous pouvez générer des factures paiement anticipé à partir des documents de vente et des bons de commande. Vous pouvez utiliser les pourcentages par défaut pour chaque ligne vente ou achat, ou, au besoin, modifier les montants de la facture. Par exemple, vous pouvez spécifier un montant total pour la commande entière.  
 
 > [!NOTE]
-> Nous vous recommandons de ne pas utiliser un pourcentage de paiement anticipé de 100 % dans les cas suivants :
+> Nous vous recommandons de ne pas utiliser un pourcentage de paiement anticipé de 100 dans les cas suivants :
 >
-> * Si vous résidez en Amérique du Nord. En raison du mode de calcul des taxes, un pourcentage de paiement anticipé de 100 % peut entraîner des problèmes avec les factures de paiement anticipé.
-> * Dans toutes les régions, si vous déduisez manuellement un escompte de paiement de la facture. Un pourcentage de paiement anticipé de 100 % ne laissera pas automatiquement un montant duquel déduire l'escompte. 
+> * Si vous résidez en Amérique du Nord. En raison du mode de calcul des taxes, un pourcentage de paiement anticipé de 100 peut entraîner des problèmes avec les factures de paiement anticipé.
+> * Dans toutes les régions, si vous déduisez manuellement un escompte de paiement de la facture. Un pourcentage de paiement anticipé de 100 ne laissera pas automatiquement un montant sur lequel déduire l'escompte.
+>
+> En outre, lorsque vous utilisez un pourcentage de paiement anticipé de 100, [!INCLUDE[prod_short](includes/prod_short.md)] peut avoir besoin de créer des écritures d’arrondissement décalées. Lorsque cela se produit, vous devrez choisir un compte du grand livre dans le champ **Compte d’arrondissement de facture** sur la page **Groupes de report client**. Ceci est vrai même si vous n’avez pas activé le bouton de basculement **Arrondissement facture** sur la page **Configuration des ventes**. Si vous ne spécifiez pas de compte, vous ne pourrez pas reporter de factures de paiement anticipé. 
 
 Puisque le montant prépayé appartient à l'acheteur jusqu'à ce qu'il ait reçu les biens ou les services, vous devez configurer des comptes du grand livre pour recevoir les montants de paiement anticipé jusqu'au report de la facture finale. Les paiements anticipés vente doivent être enregistrés dans un compte passif jusqu'à la livraison des articles. Les acomptes achat doivent être enregistrés dans un compte immobilisations jusqu'à la réception des articles. En outre, vous devez configurer un compte du grand livre séparé pour chaque identificateur TVA.  
 
