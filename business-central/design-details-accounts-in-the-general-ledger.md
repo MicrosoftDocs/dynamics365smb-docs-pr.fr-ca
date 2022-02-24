@@ -3,19 +3,19 @@ title: 'Détails de conception : comptes du grand livre | Microsoft Docs'
 description: Pour rapprocher l'inventaire et les écritures du grand livre de capacité dans le grand livre, les écritures valeur associées sont reportées dans différents comptes dans le grand livre.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/08/2021
-ms.author: edupont
-ms.openlocfilehash: 41b94d44ba374ecbcad64a2b1da100fcf3e1a2ab
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 6e6af3c9afe8e0d63d5ec2bcfe4905be0a7997df
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215588"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185886"
 ---
 # <a name="design-details-accounts-in-the-general-ledger"></a>Détails de conception : comptes du grand livre
 Pour rapprocher l'inventaire et les écritures du grand livre de capacité dans le grand livre, les écritures valeur associées sont reportées dans différents comptes dans le grand livre. Pour plus d'informations, voir [Détails de conception : rapprochement de comptabilité](design-details-reconciliation-with-the-general-ledger.md).  
@@ -99,7 +99,4 @@ Le tableau suivant montre la manière dont les montants à reporter dans le gran
  [Détails de conception : validation du coût prévu](design-details-expected-cost-posting.md)  
  [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
- [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+ [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

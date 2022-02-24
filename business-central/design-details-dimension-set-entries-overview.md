@@ -1,18 +1,24 @@
 ---
-title: Aperçu des écritures de l'ensemble de dimensions
-description: Cet article vous donne un aperçu de la manière dont les entrées d’ensemble de dimensions sont stockées et comment elles sont reportées.
+title: Aperçu des écritures de l'ensemble de dimensions | Microsoft Docs
+description: Cette rubrique décrit comment les écritures de l'ensemble de dimensions sont stockées et reportées dans Dynamics 365.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: overview
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: dimension
-ms.date: 06/14/2021
-ms.author: edupont
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: f35184a6a69ed0fa1ccd504525a19af6bd9c5955
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185526"
 ---
 # <a name="dimension-set-entries-overview"></a>Aperçu des écritures de l'ensemble de dimensions
-Cette rubrique décrit comment les écritures de l'ensemble de dimensions sont stockées et validées dans [!INCLUDE[prod_short](includes/prod_short.md)].  
+Cette rubrique décrit comment les écritures de l'ensemble de dimensions sont stockées et validées dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
 
 ## <a name="dimension-sets"></a>Ensembles de dimensions  
 Un ensemble de dimensions est une combinaison unique de sections analytiques. Il est stocké comme des écritures de l'ensemble de dimensions dans la base de données. Chaque écriture de l'ensemble de dimensions représente une valeur de dimension unique. L'ensemble de dimensions est identifié par un code commun, qui est affecté à chaque écriture correspondante qui appartient à l'ensemble de dimensions.  
@@ -28,7 +34,7 @@ L'exemple suivant présente un ensemble de dimensions constitué de trois écrit
 ## <a name="dimension-set-entries"></a>Écritures de l'ensemble de dimensions  
 Les ensembles de dimensions sont stockés dans la table **Écriture de l'ensemble de dimensions** telles des écritures de l'ensemble de dimensions avec le même ID.  
 
-![Flux des écritures de l’ensemble de dimensions.](media/dimensionentrynav7.png "Flux des écritures de l'ensemble de dimensions")  
+![Flux des écritures de l'ensemble de dimensions](media/dimensionentrynav7.png "Flux des écritures de l'ensemble de dimensions")  
 
 Lorsque vous créez une ligne de journal, un en-tête de document ou une ligne de document, vous pouvez spécifier une combinaison de valeurs de dimension. Au lieu d'enregistrer explicitement chaque valeur de dimension dans la base de données, un code d'ensemble de dimensions est affecté à la ligne de journal, à l'en-tête du document ou à la ligne du document pour spécifier l'ensemble de dimensions.  
 
@@ -40,10 +46,7 @@ Codeunit 408 Gestion des dimensions est une bibliothèque de fonctions qui gère
 ## <a name="performance-improvement"></a>Amélioration des performances  
 En enregistrant les ensembles de dimensions dans la base de données, l'espace de la base de données est conservé et les performances globales sont améliorées.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi  
 [Détails de conception : recherche des combinaisons de dimensions](design-details-searching-for-dimension-combinations.md)   
 [Détails de conception : structure de la table](design-details-table-structure.md)   
 [Détails de conception : écritures d'ensemble de dimensions](design-details-dimension-set-entries.md)   
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,21 +1,21 @@
 ---
-title: 'Détails de conception : flux de désenlogement'
-description: Cette rubrique traite de la séquence du flux de désenlogement des documents source libérés aux articles prêts à être livrés.
+title: Détails de conception - Flux d'enlogement sortant | Microsoft Docs
+description: Le flux sortant dans l'entrepôt commence par une demande provenant des documents origine libérés pour amener les articles hors de l'entrepôt, pour les livrer soit à un tiers, soit à un autre emplacement de la compagnie. Depuis la zone de stockage, des activités entrepôt sont effectuées à différents niveaux de complexité pour sortir les articles pour les amener au quai de livraison.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/15/2021
-ms.author: edupont
-ms.openlocfilehash: 985ef683426c2de2e917b3c3f8d860115d462d83
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 07/07/2020
+ms.author: sgroespe
+ms.openlocfilehash: 68fa5ebf2b35f0df821e0ef21ddeb286aa744408
+ms.sourcegitcommit: 8b2f02dd5189c46ecff33c07223ed62b36842d34
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6442395"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "3542552"
 ---
 # <a name="design-details-outbound-warehouse-flow"></a>Détails de conception : flux de désenlogement
 
@@ -37,7 +37,7 @@ En outre, les documents origine internes suivants existent qui fonctionnent comm
 
  Les processus et les documents de l'interface utilisateur dans les flux de désenlogement sont différents pour les configurations d'entrepôt de base et avancées. La principale différence est que les activités sont effectuées par commande dans les configurations d'entrepôt de base, et qu'elles sont regroupées pour plusieurs commandes dans les configurations d'entrepôt avancées. Pour plus d'informations sur les différents niveaux de complexité entrepôt, consultez et [Détails de conception : vue d'ensemble d'entrepôt](design-details-warehouse-setup.md).  
 
- Dans [!INCLUDE[prod_short](includes/prod_short.md)], les processus sortants de prélèvement et d'expédition peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.  
+ Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les processus sortants de prélèvement et d'expédition peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.  
 
 |Méthode|Processus sortant|Zones|Prélèvements|Livraisons|Niveau de complexité (Voir [Détails de conception : configuration d'entrepôt](design-details-warehouse-setup.md))|  
 |------|----------------|----|-----|---------|-------------------------------------------------------------------------------------|  
@@ -54,7 +54,7 @@ En outre, les documents origine internes suivants existent qui fonctionnent comm
 
  Le schéma suivant présente les flux de désenlogement par type de document dans les configurations d'entrepôt de base. Les numéros dans le schéma correspondent aux étapes dans les sections suivant le schéma.  
 
- ![Flux sortant dans les configurations d’entrepôt de base.](media/design_details_warehouse_management_outbound_basic_flow.png "Flux sortant dans les configurations d'entrepôt de base")  
+ ![Flux sortant dans les configurations d'entrepôt de base](media/design_details_warehouse_management_outbound_basic_flow.png "Flux sortant dans les configurations d'entrepôt de base")  
 
 ### <a name="1-release-source-document--create-inventory-pick-or-movement"></a>1 : Libérer le document source / Créer un prélèvement ou un mouvement d'inventaire
 
@@ -81,7 +81,7 @@ En outre, les documents origine internes suivants existent qui fonctionnent comm
 
  Le schéma suivant présente le flux de désenlogement par type de document dans les configurations d'entrepôt avancées. Les numéros dans le schéma correspondent aux étapes dans les sections suivant le schéma.  
 
- ![Flux sortant dans les configurations d’entrepôt avancées.](media/design_details_warehouse_management_outbound_advanced_flow.png "Flux sortant dans les configurations d'entrepôt avancées")  
+ ![Flux sortant dans les configurations d'entrepôt avancées](media/design_details_warehouse_management_outbound_advanced_flow.png "Flux sortant dans les configurations d'entrepôt avancées")  
 
 ### <a name="1-release-source-document"></a>1 : Libérez le document origine
 
@@ -134,6 +134,3 @@ En outre, les documents origine internes suivants existent qui fonctionnent comm
 ## <a name="see-also"></a>Voir aussi
 
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

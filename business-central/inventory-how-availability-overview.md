@@ -1,38 +1,37 @@
 ---
-title: Obtenir un aperçu des disponibilités
-description: Vous obtenez des informations sur la disponibilité des articles ou du stock dans tous les emplacements, par événement de vente ou d’achat ou par période, etc.
+title: Obtenir un aperçu des disponibilités| Microsoft Docs
+description: Vous obtenez des informations sur la disponibilité des articles ou du stock dans tous les emplacements, par événement vente ou achat, par période ou par position de l'article sur une nomenclature d'assemblage ou de production.
 documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: overview
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: stock
-ms.search.form: 908, 909, 925, 926, 504, 501, 500, 499, 99000896, 342, 515, 5417, 5415, 5871, 5530, 492, 157, 5540, 5416, 5414, 1872, 1873, 99000902, 353, 491, 9231, 5390
-ms.date: 06/16/2021
-ms.author: edupont
-ms.openlocfilehash: 01efc9191cad10414c344b4fe3a28ae2cef63ef9
-ms.sourcegitcommit: 189bf08d7ddf6c8b7ef2c09058c6847aa6e590d3
+ms.date: 04/01/2020
+ms.author: SorenGP
+ms.openlocfilehash: f95544f2090185512d94e9a8ce10975304f0ec2f
+ms.sourcegitcommit: 7d54d8abe52e0546378cf760f5082f46e8441b90
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060126"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3324256"
 ---
 # <a name="view-the-availability-of-items"></a>Voir la disponibilité des articles
 Dans le contexte d'une tâche professionnelle, vous pouvez obtenir des informations avancées sur la disponibilité et l'emplacement d'un article, par exemple en discutant avec un client à propos d'une date de livraison.
 
-Vous pouvez afficher la disponibilité de tous les articles par emplacement, et vous pouvez afficher la disponibilité de chaque article par événement ou par période. Un événement désigne tout mouvement d'inventaire prévu, par exemple une livraison vente ou une réception transfert entrant.
+Vous pouvez afficher la disponibilité de tous les articles par emplacement, et vous pouvez afficher la disponibilité de chaque article par événement, par période, ou par emplacement. Un événement désigne tout mouvement d'inventaire prévu, par exemple une livraison vente ou une réception transfert entrant.
 
 > [!NOTE]  
 >   Les vues de disponibilité par emplacement nécessitent la mise à jour de l'inventaire à plusieurs emplacements. Pour plus d'informations, reportez-vous à [Configurer des emplacements](inventory-how-setup-locations.md).
 
 Si vous utilisez la fonctionnalité entrepôt, la disponibilité varie selon les affectations au niveau de la zone quand des activités entrepôt, par exemple des prélèvements et des mouvements, se produisent et quand le système de réservation d'inventaire impose des restrictions à respecter. Un algorithme plutôt complexe vérifie que toutes les conditions sont remplies avant d'affecter des quantités aux prélèvements pour les flux sortants. Pour plus d'informations, voir [Détails de conception : disponibilité dans l'entrepôt](design-details-availability-in-the-warehouse.md).
 
-Dans [!INCLUDE[prod_short](includes/prod_short.md)], les chiffres de disponibilité sont généralement affichés dans deux champs de définition différents.
+Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les chiffres de disponibilité sont généralement affichés dans deux champs de définition différents.
 
 * Le champ **Quantité disponible**, dans certains emplacements nommés **Inventaire**, affiche la quantité réelle en fonction des écritures article reportées.
-* Le champ **Stock prévisionnel** est calculé et affiche la quantité disponible plus les réceptions planifiées moins les besoins bruts. (Dans [!INCLUDE[prod_short](includes/prod_short.md)], les réceptions programmées incluent des quantités sur des bons de commande et des ordres de transfert entrants. Les besoins bruts incluent des quantités sur les documents de vente et les transferts sortants.)
+* Le champ **Stock prévisionnel** est calculé et affiche la quantité disponible plus les réceptions planifiées moins les besoins bruts. (Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les réceptions programmées incluent des quantités sur des bons de commande et des ordres de transfert entrants. Les besoins bruts incluent des quantités sur les documents de vente et les transferts sortants.)
 
 > [!TIP]  
 >   Le stock prévisionnel disponible s'avère particulièrement utile dans les pages **Disponibilité art. par période** et **Disponibilité article par événement**, car ils contiennent la dimension de date.  
@@ -43,7 +42,7 @@ Dans [!INCLUDE[prod_short](includes/prod_short.md)], les chiffres de disponibili
 ## <a name="to-view-the-availability-of-an-item-according-to-when-it-will-be-received-or-shipped"></a>Pour afficher la disponibilité d'un article en fonction de sa réception ou de sa livraison
 Vous pouvez afficher la disponibilité d'un article en fonction des mouvements de stock programmés sur la page **Disponibilité par événement**.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche d'un article dont vous voulez afficher la disponibilité.
 3. Cliquez sur **Disponibilité article par**, puis sur **Événement**.
 
@@ -53,7 +52,7 @@ Vous pouvez afficher la disponibilité d'un article en fonction des mouvements d
 ## <a name="to-view-the-availability-of-an-item-in-different-periods"></a>Pour afficher la disponibilité d'un article dans différentes périodes
 Vous pouvez visualiser la disponibilité d'un article dans le temps pour les périodes définies sur la page **Disponibilité art. par période**.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche d'un article dont vous voulez afficher la disponibilité.
 3. Cliquez sur **Disponibilité article par**, puis sur **Période**.
 
@@ -63,7 +62,7 @@ Vous pouvez visualiser la disponibilité d'un article dans le temps pour les pé
 ## <a name="to-view-the-availability-of-an-item-at-the-locations-where-it-is-stored"></a>Pour afficher la disponibilité d'un article dans les magasins dans lesquels il est stocké
 Vous pouvez afficher la disponibilité d'un article aux différents endroits où il est stocké sur la page **Disponibilité art. par emplacement**.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche d'un article dont vous voulez afficher la disponibilité.
 3. Cliquez sur **Disponibilité article par**, puis sur **Magasin**.
 
@@ -74,7 +73,7 @@ Vous pouvez afficher la disponibilité d'un article aux différents endroits où
 ## <a name="to-view-the-availability-of-all-items-by-the-location-where-they-are-stored"></a>Pour afficher la disponibilité de tous les articles en fonction des emplacements où ils sont stockés
 Vous pouvez afficher la disponibilité de tous vos articles dans tous vos emplacements sur la page **Articles par emplacement**.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
 2. Cliquez sur **Articles par magasin**.
 
     La page **Articles par emplacement** indique pour tous les articles les quantités disponibles dans chaque emplacement.
@@ -130,6 +129,3 @@ Si un ou plusieurs composantes d'assemblage ne sont pas disponibles, cela est al
 [Vendre des produits](sales-how-sell-products.md)      
 [Utilisation de Business Central](ui-work-product.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

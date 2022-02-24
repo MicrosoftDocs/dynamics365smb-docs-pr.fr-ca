@@ -1,21 +1,21 @@
 ---
-title: Détails de conception - Arrondissement
-description: Des reliquats d’arrondissement peuvent se produire lorsque vous évaluez le coût d’une sortie d’inventaire qui est mesurée dans une quantité différente de l’entrée d’inventaire correspondante.
+title: Détails de conception - Arrondissement | Microsoft Docs
+description: Des arrondissements résiduels peuvent se produire lorsque vous évaluez le coût d'une diminution d'inventaire qui est mesurée dans une quantité différente de l'augmentation d'inventaire correspondante. Les reliquats d'arrondissement sont calculés pour tous les modes d'évaluation du coût lorsque vous exécutez le traitement en lot **Ajuster coûts - Écr. article**.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/08/2021
-ms.author: edupont
-ms.openlocfilehash: 518433903f06c255c80dbba6d7e2982974a325a1
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: b5185b7cc70e6b57a4641cbcd3b45cbf9682285d
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6318444"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3184758"
 ---
 # <a name="design-details-rounding"></a>Détails de conception : arrondissement
 Des arrondissements résiduels peuvent se produire lorsque vous évaluez le coût d'une diminution d'inventaire qui est mesurée dans une quantité différente de l'augmentation d'inventaire correspondante. Les reliquats d'arrondissement sont calculés pour tous les modes d'évaluation du coût lorsque vous exécutez le traitement en lot **Ajuster coûts - Écr. article**.  
@@ -64,7 +64,4 @@ Des arrondissements résiduels peuvent se produire lorsque vous évaluez le coû
  [Détails de conception : ajustement des coûts](design-details-cost-adjustment.md)   
  [Détails de conception : Modes évaluation stock](design-details-costing-methods.md) [Gestion des composants des coûts](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
- [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+ [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

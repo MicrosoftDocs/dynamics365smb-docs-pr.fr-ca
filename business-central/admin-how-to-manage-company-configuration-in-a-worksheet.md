@@ -1,34 +1,34 @@
 ---
-title: 'Procédure : gérer la configuration de la compagnie dans une feuille'
-description: La feuille configuration est l’emplacement principal dans lequel vous pouvez planifier, suivre et effectuer votre travail de configuration de la compagnie.
+title: Procédure de gestion de la configuration de la compagnie dans une feuille | Microsoft Docs
+description: La feuille configuration est l’emplacement principal dans lequel vous pouvez planifier, suivre et effectuer votre travail de configuration. Vous pouvez créer une feuille pour chaque compagnie avec laquelle vous travaillez ou créer une feuille configuration standard qui peut être utilisée pour configurer plusieurs compagnies identiques.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/14/2021
-ms.author: edupont
-ms.openlocfilehash: 34d21b0daca39c1b7895800a5f7fbc48485c6c20
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: ab8b53ec5f913e07b80cc04a44805d77b10ffe86
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6437972"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3187134"
 ---
 # <a name="manage-company-configuration-in-a-worksheet"></a>Gérer la configuration de la compagnie dans une feuille
 La feuille configuration est l’emplacement principal dans lequel vous pouvez planifier, suivre et effectuer votre travail de configuration. Vous pouvez créer une feuille pour chaque compagnie avec laquelle vous travaillez ou créer une feuille configuration standard qui peut être utilisée pour configurer plusieurs compagnies identiques.  
 
-La première étape de la préparation d’un package de configuration est de sélectionner une compagnie que vous avez déjà configurée et modifiée pour l’adapter à la plupart des besoins de votre solution. Cette compagnie sert de base à votre travail de configuration pour les nouvelles compagnies. Dans la feuille, vous indiquez les tables que vous souhaitez que votre configuration contrôle et traite. Étant donné que la plupart des tables de [!INCLUDE[prod_short](includes/prod_short.md)] ont des relations et des dépendances avec d’autres tables, vous devez également inclure ces tables liées en cas de besoin. Ensemble, ces tables serviront ensuite de structure à partir de laquelle vous établirez une nouvelle compagnie. La procédure suivante vous permet de créer un colis, puis de déployer votre configuration.  
+La première étape de la préparation d’un package de configuration est de sélectionner une compagnie que vous avez déjà configurée et modifiée pour l’adapter à la plupart des besoins de votre solution. Cette compagnie sert de base à votre travail de configuration pour les nouvelles compagnies. Dans la feuille, vous indiquez les tables que vous souhaitez que votre configuration contrôle et traite. Étant donné que la plupart des tables de [!INCLUDE[d365fin](includes/d365fin_md.md)] ont des relations et des dépendances avec d’autres tables, vous devez également inclure ces tables liées en cas de besoin. Ensemble, ces tables serviront ensuite de structure à partir de laquelle vous établirez une nouvelle compagnie. La procédure suivante vous permet de créer un colis, puis de déployer votre configuration.  
 
 Pour vous aider à suivre et à consulter votre travail, utilisez le récapitulatif **Table package config.** pour visualiser les informations sur les enregistrements. Utilisez le récapitulatif **Tables de config. associées** pour contrôler les relations de table.  
 
 Les procédures suivantes expliquent comment ajouter et personnaliser les informations de table pour votre configuration.  
 
 ## <a name="to-open-the-configuration-worksheet"></a>Pour ouvrir la feuille configuration  
-1.  Dans [!INCLUDE[prod_short](includes/prod_short.md)], ouvrez la compagnie qui sert de base pour la configuration, puis ouvrez son tableau de bord Responsable de l'implémentation de RapidStart Services.  
-2.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille de calcul de configuration**, puis sélectionnez le lien associé.  
+1.  Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], ouvrez la compagnie qui sert de base pour la configuration, puis ouvrez son tableau de bord Responsable de l'implémentation de RapidStart Services.  
+2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille configuration**, puis choisissez le lien associé.  
 
 ## <a name="to-add-a-table-to-the-worksheet"></a>Pour ajouter une table à la feuille  
 1.  Sur la page **Feuille config.**, sélectionnez l'action **Modifier la liste**.  
@@ -62,7 +62,7 @@ Les procédures suivantes expliquent comment ajouter et personnaliser les inform
     |**Inclure les tables autorisées uniquement**|Activez la case à cocher pour n’inclure que les tables auxquelles la licence de création de la feuille vous permet d’accéder.|
 
 3. Sur le raccourci **Objet**, définissez des filtres de manière appropriée pour spécifier les types de tables que vous souhaitez inclure ou exclure.  
-4. Cliquez sur le bouton **OK**. Les tables [!INCLUDE[prod_short](includes/prod_short.md)] sont ajoutées à la feuille. Chaque écriture dans la liste a un type **Table**.  
+4. Cliquez sur le bouton **OK**. Les tables [!INCLUDE[d365fin](includes/d365fin_md.md)] sont ajoutées à la feuille. Chaque écriture dans la liste a un type **Table**.  
 5. Pour supprimer les informations de table en doublon, qui peuvent résulter de l'action **Extraire tables**, sélectionnez l'action **Supprimer les lignes en doublon**. Il supprime les tableaux en doublon ayant le même code de lot.  
 6. Vous pouvez ajouter à la feuille des tables liées à une table que vous avez sélectionnée. Relisez les informations dans le récapitulatif **Tables associées** pour voir si des tables sont manquantes. Pour ajouter des tables liées pour une table spécifique, sélectionnez la table dans la liste, puis sélectionnez l'action **Extraire tables associées**.  
 
@@ -97,7 +97,7 @@ La procédure suivante décrit comment ajouter des désignations de zone et de g
 4. Dans le champ **Type ligne**, choisissez **Groupe**. Dans le champ **Nom**, entrez un nom pour la zone. Le nom du groupe est automatiquement décalé.  
 5. Pour déplacer des tables vers la catégorie appropriée, sélectionnez une table à déplacer, puis choisissez l'action **Déplacer vers le haut** ou **Déplacer vers le bas**. Sinon, vous pouvez supprimer une ligne feuille et réinsérer la table à l'emplacement requis.  
 
-Certaines tables [!INCLUDE[prod_short](includes/prod_short.md)] sont standard et les données qu’elles contiennent ne sont pas susceptibles d’être modifiées d’une implémentation à l’autre. Par conséquent, pour aider votre client à se concentrer, vous pouvez supprimer ces tables de la feuille une fois que vous les avez incluses dans le colis configuration. Une fois ajoutées, les tables demeurent une partie des colis configuration.  
+Certaines tables [!INCLUDE[d365fin](includes/d365fin_md.md)] sont standard et les données qu’elles contiennent ne sont pas susceptibles d’être modifiées d’une implémentation à l’autre. Par conséquent, pour aider votre client à se concentrer, vous pouvez supprimer ces tables de la feuille une fois que vous les avez incluses dans le colis configuration. Une fois ajoutées, les tables demeurent une partie des colis configuration.  
 
 ## <a name="to-remove-a-standard-table-in-the-worksheet"></a>Pour supprimer une table standard dans la feuille  
 Après avoir ajouté toutes les tables nécessaires à un colis configuration, déterminez quelles tables ne requerront pas l’attention du client.  
@@ -114,11 +114,11 @@ Lors de la création d’un colis configuration pour une solution, vous pouvez c
 1.  Sur la page **Feuille de configuration**, identifiez les tables dont vous souhaitez afficher ou personnaliser les données.  
 
     > [!NOTE]  
-    >  Assurez-vous que chaque table dispose d’un Code page qui lui est affecté. Pour les tables [!INCLUDE[prod_short](includes/prod_short.md)] standard, cette valeur est automatiquement insérée. Pour les tables personnalisées, vous devez fournir le code.  
+    >  Assurez-vous que chaque table dispose d’un Code page qui lui est affecté. Pour les tables [!INCLUDE[d365fin](includes/d365fin_md.md)] standard, cette valeur est automatiquement insérée. Pour les tables personnalisées, vous devez fournir le code.  
 
 2.  Choisissez l'action **Données base de données**.  
 
-     La page [!INCLUDE[prod_short](includes/prod_short.md)] pour la page s’ouvre.  
+     La page [!INCLUDE[d365fin](includes/d365fin_md.md)] pour la page s’ouvre.  
 
 3.  Révisez les informations disponibles. Modifiez-les selon vos besoins en supprimant les enregistrements qui ne sont pas appropriés ou en ajoutant de nouveaux enregistrements.
 
@@ -126,6 +126,3 @@ Lors de la création d’un colis configuration pour une solution, vous pouvez c
 [Configurer une compagnie](admin-set-up-company-configuration.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

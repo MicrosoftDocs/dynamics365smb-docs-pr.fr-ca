@@ -5,25 +5,25 @@ services: project-madeira
 documentationcenter: ''
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: marketing, campaign, promo, prospect, contact, client, customer
-ms.date: 04/01/2021
+ms.date: 04/01/2020
 ms.author: jswymer
-ms.openlocfilehash: 4095cfd39ad37037f7fad2a5bded7c5c71241f6a
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 7383fe5e716fbd63012e8ab5ffa236af9e7a979e
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6438887"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3181710"
 ---
 # <a name="add-contacts-to-segments"></a>Ajouter des contacts à des segments
 Lorsque vous avez créé un segment et saisi les informations de base le concernant, vous pouvez être amené à ajouter des contacts au segment. Pour ce faire, vous pouvez renseigner manuellement les lignes de la page **Segment** ou utiliser l'action **Ajouter contacts** (plus simple et plus rapide).
 
 ## <a name="to-add-a-contact-to-a-segment"></a>Pour ajouter un contact à un segment
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Segments**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Segments**, puis sélectionnez le lien associé.  
 2. Sélectionnez le segment, puis sélectionnez l'action **Ajouter contacts**. La page de traitement en lot **Ajouter contacts** s'affiche.
 3. Dans la section **Contact**, définissez les filtres spécifiant les informations en fonction desquelles vous souhaitez sélectionner des contacts.
 
@@ -57,7 +57,4 @@ Vous pouvez réduire un segment aussi souvent que vous le souhaitez. Sélectionn
 [Créer un segment](marketing-how-create-segment.md)   
 [Gestion des segments](marketing-segments.md)  
 [Gestion des opportunités de ventes](marketing-manage-sales-opportunities.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

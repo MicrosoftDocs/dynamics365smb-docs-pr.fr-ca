@@ -1,24 +1,24 @@
 ---
-title: Calcul de la date des ventes
-description: L’affectation calcule automatiquement la date à laquelle vous devez commander un article pour l’avoir en inventaire à une certaine date et disponible pour prélèvement.
+title: Calcul de la date des ventes | Microsoft Docs
+description: L'application calcule automatiquement la date à laquelle vous devez commander un article pour l'avoir en inventaire à une certaine date. Il s'agit de la date à laquelle des articles commandés à une date donnée devraient être disponibles pour le prélèvement.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/23/2021
-ms.author: edupont
-ms.openlocfilehash: 221580cebab85be781cd56d461e9d75bb321c15b
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 7cbaeda98b06b742175563646f513ca78f874b70
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6320216"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3191869"
 ---
 # <a name="date-calculation-for-sales"></a>Calcul de la date des ventes
-[!INCLUDE[prod_short](includes/prod_short.md)] calcule automatiquement la première date possible à laquelle un article d'une ligne commande vente peut être expédié.
+[!INCLUDE[d365fin](includes/d365fin_md.md)] calcule automatiquement la première date possible à laquelle un article d'une ligne commande vente peut être expédié.
 
 Si le client a demandé une date livraison particulière, alors la date à laquelle les articles doivent pouvoir être prélevés est calculée pour permettre une livraison à cette date.
 
@@ -45,7 +45,4 @@ Si vous ne spécifiez aucune date livraison demandée sur la ligne document de v
 ## <a name="see-also"></a>Voir aussi  
  [Calcul de la date des achats](purchasing-date-calculation-for-purchases.md)   
  [Calculer des dates promesse livraison](sales-how-to-calculate-order-promising-dates.md)  
- [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+ [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

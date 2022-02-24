@@ -1,21 +1,21 @@
 ---
-title: Prélever des articles pour une livraison entrepôt
-description: Découvrez comment utiliser les documents de prélèvement entrepôt pour créer et traiter les informations de prélèvement avant de reporter la livraison entrepôt.
+title: 'Procédure : prélever des articles pour une livraison entrepôt | Microsoft Docs'
+description: Lorsque l'emplacement est configuré pour exiger un traitement des prélèvements entrepôt ainsi qu'un traitement des livraisons entrepôt, vous pouvez utiliser les documents prélèvement entrepôt pour créer et traiter les informations de prélèvement avant le report de la livraison entrepôt.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
-ms.author: edupont
-ms.openlocfilehash: b5b92c04fea101959c32775c768bbbaab22a7c3e
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: fe91ed57af6a93f874ead85f53c97358068e0b4c
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6441870"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3192986"
 ---
 # <a name="pick-items-for-warehouse-shipment"></a>Prélever des articles pour une livraison entrepôt
 Lorsque l'emplacement est configuré pour exiger un traitement des prélèvements entrepôt ainsi qu'un traitement des livraisons entrepôt, vous pouvez utiliser les documents prélèvement entrepôt pour créer et traiter les informations de prélèvement avant le report de la livraison entrepôt.  
@@ -38,7 +38,7 @@ Vous pouvez également créer des documents prélèvement entrepôt en mode pous
 >  Pour plus d'informations sur le prélèvement de composantes pour les ordres d'assemblage en général, notamment les situations où l'élément d'assemblage n'est pas dû dans une livraison vente, voir [Prélever pour la fabrication ou l'assemblage](warehouse-how-to-pick-for-production.md).  
 
 ## <a name="to-pick-items-for-warehouse-shipment"></a>Pour prélever des articles pour une livraison entrepôt  
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvements**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Prélèvements**, puis sélectionnez le lien associé.  
 
     Si vous souhaitez travailler à un prélèvement particulier, sélectionnez-le dans la liste ou filtrez cette dernière afin de trouver les prélèvements qui vous ont été spécifiquement affectés. Ouvrez la fiche prélèvement.  
 2.  Si le champ **Code utilisateur affecté** est vide, entrez votre code pour vous identifier si nécessaire.  
@@ -79,7 +79,4 @@ Une fois la livraison entrepôt reportée, divers champs de la ligne document de
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

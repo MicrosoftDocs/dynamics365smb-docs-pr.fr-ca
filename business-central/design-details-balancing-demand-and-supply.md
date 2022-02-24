@@ -1,21 +1,21 @@
 ---
-title: 'Détails de conception : équilibrage de la demande et de l’approvisionnement'
-description: Pour comprendre le fonctionnement du système de planification, il est nécessaire de comprendre les objectifs prioritaires du système de planification obtenu en équilibrant l’offre et la demande.
+title: Détails de conception - Équilibrage la demande et de l'approvisionnement | Microsoft Docs
+description: Pour comprendre comment fonctionne le système de planification, il est nécessaire de comprendre les objectifs priorisés du système de planification, dont les plus importants sont de s'assurer que toute demande est satisfaite par suffisamment d'approvisionnement et n'importe quel approvisionnement atteint un but.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/15/2021
-ms.author: edupont
-ms.openlocfilehash: 8ff08e03196aac03a9e57519f47a37e284e8c9ff
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: a1e55d983abae5f85807039da6dd4d846c3e40b3
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6442520"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185718"
 ---
 # <a name="design-details-balancing-demand-and-supply"></a>Détails de conception : équilibrage de la demande et de l'approvisionnement
 Pour comprendre comment fonctionne le système de planification, il est nécessaire de comprendre les objectifs priorisés du système de planification, dont les plus importants sont de s'assurer que :  
@@ -43,7 +43,7 @@ Pour comprendre comment fonctionne le système de planification, il est nécessa
 
    L'objectif du mécanisme de planification est d'équilibrer la demande et l'approvisionnement d'un article pour s'assurer que l'approvisionnement correspond à la demande de manière faisable, telle qu'elle est définie par les paramètres et les règles de planification.  
 
-   ![Vue d’ensemble de l’équilibrage de la demande et de l’approvisionnement.](media/nav_app_supply_planning_2_balancing.png "Vue d'ensemble de l'équilibrage de la demande et de l'approvisionnement")
+   ![Vue d'ensemble de l'équilibrage de la demande et de l'approvisionnement](media/nav_app_supply_planning_2_balancing.png "Vue d'ensemble de l'équilibrage de la demande et de l'approvisionnement")
 
 ## <a name="dealing-with-orders-before-the-planning-starting-date"></a>Traiter les commandes avant la date début de la planification
 Pour éviter qu'un programme d'approvisionnement affiche des suggestions impossibles et donc inutiles, le système de planification considère la période jusqu'à la date début de la planification comme une zone gelée pour laquelle rien n'est programmé. La règle suivante affecte la zone gelée :  
@@ -291,6 +291,3 @@ Cela conclut les descriptions de la manière dont la demande et l'approvisionnem
  [Détails de conception : concepts centraux du système de planification](design-details-central-concepts-of-the-planning-system.md)   
  [Détails de conception : gestion des méthodes de réapprovisionnement](design-details-handling-reordering-policies.md)   
  [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

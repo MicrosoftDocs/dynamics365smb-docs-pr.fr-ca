@@ -1,20 +1,24 @@
 ---
-title: 'Paramétrer les ressources, les feuilles de temps et les projets'
-description: 'Cette rubrique décrit comment configurer les ressources, les feuilles de temps et les projets pour la gestion des projets et leurs budgets.'
+title: Paramétrer les ressources, les feuilles de temps et les projets| Microsoft Docs
+description: Décrit comment configurer les ressources, les feuilles de temps et les projets pour la gestion des projets.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: projects
-ms.search.form: '289, 290, 376, 462, 463, 1029, 8904, 9014, 9015'
-ms.date: 06/22/2021
-ms.author: edupont
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: f2c02cdcad7c0b33ad172df0b8a4d821f7fcd2df
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2312638"
 ---
 # <a name="setting-up-project-management"></a>Configuration de la gestion de projet
-
-Avant de pouvoir utiliser le module [!INCLUDE[prod_short](includes/prod_short.md)] pour gérer les projets, vous devez définir des ressources, des feuilles de temps et des projets.
+Avant de pouvoir utiliser le module [!INCLUDE[d365fin](includes/d365fin_md.md)] pour gérer les projets, vous devez définir des ressources, des feuilles de temps et des projets.
 
 Vous pouvez ensuite créer des projets, programmer des ressources pour des projets ainsi que gérer des budgets et suivre les heures des employés et des postes avec des feuilles de temps. Pour plus d'informations, reportez-vous à [Gestion des projets](projects-manage-projects.md).  
 
@@ -34,7 +38,4 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 [Finances](finance.md)  
 [Achats](purchasing-manage-purchasing.md)  
 [Ventes](sales-manage-sales.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

@@ -1,27 +1,27 @@
 ---
-title: Configurer le prélèvement et le rangement dirigés
-description: Configurez les emplacements d’entrepôt pour prélèvement et rangement suggérés, ce qui vous permet de disposer de nouvelles fonctionnalités pour vous aider à exploiter l’entrepôt le plus efficacement possible.
+title: Configurer les prélèvements et rangements suggérés | Microsoft Docs
+description: Lorsque vous configurez un emplacement entrepôt pour prélèvement et rangement suggérés, vous disposez de nouvelles fonctionnalités pour vous aider à exploiter l'entrepôt le plus efficacement possible.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/25/2021
-ms.author: edupont
-ms.openlocfilehash: 0c7a49208216b12c234c0b40576b26f4f39e9ab5
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: 5e76ef000ffc9242cf98e11be353b604990bf5ea
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6438042"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2876422"
 ---
 # <a name="set-up-items-and-locations-for-directed-put-away-and-pick"></a>Configurer des articles et des emplacements pour prélèvement et rangement suggérés
 Lorsque vous configurez un emplacement entrepôt pour prélèvement et rangement suggérés, vous disposez de nouvelles fonctionnalités pour vous aider à exploiter l'entrepôt le plus efficacement possible. Afin de pouvoir utiliser pleinement cette fonctionnalité, vous devez fournir des informations supplémentaires concernant les articles, permettant ainsi d'exécuter les calculs nécessaires pour suggérer les méthodes les plus efficaces pour gérer les activités de l'entrepôt. Pour plus d'informations, reportez\-vous à [Détails de conception : Paramètres entrepôt](design-details-warehouse-setup.md).
 
 ## <a name="to-set-up-an-item-for-directed-put-away-and-pick"></a>Pour configurer l'article pour prélèvement et rangement suggérés  
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche de l'article que vous souhaitez configurer pour prélèvement et rangement suggérés.
 3. Sur le raccourci **Entrepôt** de la fiche article, renseignez les champs pour définir la façon dont l'article doit être traité dans l'entrepôt.  
 4.  Choisissez l'action **Unités de mesure**.
@@ -33,7 +33,7 @@ Lorsque vous configurez un emplacement entrepôt pour prélèvement et rangement
 Les prélèvement et rangement suggérés permettent d'accéder à des fonctionnalités de configuration entrepôt évoluées qui peuvent améliorer considérablement votre efficacité et la fiabilité de vos données. Pour pouvoir utiliser cette fonctionnalité, vous devez tout d'abord définir divers paramètres dans votre entrepôt.  
 
 Pour utiliser la fonctionnalité prélèvement et rangement suggérés, vous devez l'activer dans la fiche emplacement.    
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'emplacement dans lequel vous souhaitez utiliser les prélèvement et rangement suggérés, puis choisissez l'action **Modifier**.  
 3.  Sur le raccourci **Entrepôt**, cochez la case **Prélèv. et rangement suggérés**.  
 
@@ -49,7 +49,7 @@ Vous pouvez également définir des codes classe entrepôt si l'entrepôt compre
 Vous pouvez maintenant configurer des zones, si vous souhaitez en utiliser dans votre entrepôt. L'utilisation de zones réduit le nombre de champs à renseigner lors de la configuration des emplacements, étant donné que les emplacements créés dans une zone héritent de plusieurs propriétés de cette zone. Les zones peuvent également faciliter l'orientation des nouveaux employés ou des intérimaires dans l'entrepôt. Notez que le flux est contrôlé par des emplacements ; vous pouvez donc choisir d'utiliser plusieurs emplacements et une seule zone.  
 
 ## <a name="to-set-up-a-zone-in-your-warehouse"></a>Pour configurer une zone de l'entrepôt  
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'emplacement dans lequel vous souhaitez configurer une zone et ouvrez la fiche emplacement, puis choisissez l'action **Zones**.  
 3.  Renseignez les champs nécessaires sur la page **Zones**. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
@@ -68,7 +68,4 @@ En outre, vous devez créer des modèles et les périodes d'inventaire de rangem
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

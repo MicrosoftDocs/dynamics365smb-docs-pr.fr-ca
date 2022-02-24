@@ -1,22 +1,26 @@
 ---
-title: Terminologie en comptabilité analytique
-description: 'Cette rubrique définit les termes clés utilisés dans la comptabilité analytique, tels que la clé d’affectation et la source d’affectation.'
+title: Terminologie de la comptabilité analytique | Microsoft Docs
+description: Cette rubrique définit les conditions principales qui sont utilisés en comptabilité analytique.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: null
-ms.date: 06/16/2021
-ms.author: edupont
+ms.search.keywords: ''
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 12d6f671843fe82cb83fa3128ae1cb8908d98bf4
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3182694"
 ---
 # <a name="terminology-in-cost-accounting"></a>Terminologie en comptabilité analytique
-
 Cette rubrique définit les conditions principales qui sont utilisés en comptabilité analytique.  
 
-## <a name="key-terms"></a>Conditions principales
-
+## <a name="key-terms"></a>Conditions principales  
  Le tableau suivant définit les conditions principales en comptabilité analytique.  
 
 |**Terme**|**Définition**|  
@@ -46,7 +50,4 @@ Cette rubrique définit les conditions principales qui sont utilisés en comptab
 ## <a name="see-also"></a>Voir aussi  
  [À propos de la comptabilité analytique](finance-about-cost-accounting.md)   
  [Comptabilité pour les coûts](finance-manage-cost-accounting.md)  
- [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+ [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

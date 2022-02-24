@@ -1,34 +1,41 @@
 ---
-title: Gérer les fournitures pour un projet
-description: Décrit les différentes façons de gérer l’approvisionnement et l’achat de matériel et de services pour les projets.
+title: Acheter des articles ou des services pour un projet et gérer les fournitures| Microsoft Docs
+description: Décrit comment gérer l'approvisionnement et l'achat de matériel et de services pour les projets.
+services: project-madeira
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'project management, material, purchase'
-ms.search.form: '98, 1020'
-ms.date: 06/22/2021
-ms.author: edupont
+ms.search.keywords: project management, material, purchase
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: 676658e869d0310fac71dda592c892994dac0edc
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2312854"
 ---
 # <a name="manage-job-supplies"></a>Gérer les fournitures pour un projet
 La gestion des fournitures des projets relatifs à des articles, services et dépenses est l'un des aspects essentiels de l'exécution d'un projet. Vous pouvez utiliser les quantités en inventaire ou effectuer des achats spécifiques au projet en utilisant des bons de commande ou des factures achat. Par exemple, un projet de service sur un ordinateur requiert un nouveau disque. Vous devez donc créer une facture achat pour l'acheter et pour enregistrer le projet pour lequel il sera utilisé.
 
-Si le processus d'achat ne requiert pas d'enregistrement séparé de la transaction physique, un achat peut être traité sur la page **Feuille compta. projet**. Pour plus d′informations, voir [Pour reporter des dépenses liés à un projet](projects-how-manage-project-supplies.md#to-post-a-job-related-expense).
+Si le processus d'achat ne requiert pas d'enregistrement séparé de la transaction physique, un achat peut être traité sur la page **Feuille compta. projet**. Pour plus d'informations, voir [Enregistrer l'utilisation pour les projets](projects-how-record-job-usage.md).
 
 ## <a name="to-purchase-items-or-services-for-a-job"></a>Pour acheter des articles ou des services pour un projet
 La procédure suivante indique comment utiliser une facture achat pour acheter des produits pour un projet. Les mêmes phases s'appliquent lors de l'utilisation d'un bon de commande.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures achat**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures achat**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**, puis renseignez les champs selon vos besoins. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
-3. Dans les champs **N° projet** et **N° tâche projet**, sélectionnez les informations du projet pour lequel vous souhaitez acheter des articles ou des services. Utilisez les outils de personnalisation si un champ n’est pas visible. Pour plus d'informations, voir [Personnaliser votre espace de travail](ui-personalization-user.md).
+3. Dans les champs **N° projet** et **N° tâche projet**, sélectionnez les informations du projet pour lequel vous souhaitez acheter des articles ou des services. Utilisez la fonction **Choisir les colonnes** si le champ n'est pas visible. Pour plus d'informations, voir [Personnaliser votre espace de travail](ui-personalization-user.md).
 
     La valeur que vous sélectionnez dans le champ **Type ligne projet** définit si une ligne planning est créée lorsque vous validez l'activité de l'article. Si le champ indique **Facturable**, les lignes planning projet prêtes pour facturation sont créées. Pour plus d'informations, voir [Facturation des projets](projects-how-invoice-jobs.md).
 4. Sélectionnez l'action **Valider**.
 
 ## <a name="to-view-the-value-of-purchases-for-a-job"></a>Pour afficher la valeur des achats pour un projet
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Projets**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projets**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche projet appropriée.
 
     Dans le raccourci **Tâches**, le champ **Commandes ouvertes** affiche le montant total en commande, en devise société, des articles en stock et des services sur les documents achat pour la tâche projet ligne.  
@@ -39,16 +46,13 @@ La procédure suivante indique comment utiliser une facture achat pour acheter d
 ## <a name="to-post-a-job-related-expense"></a>Pour reporter des frais liés à un projet
 Si vous supportez les dépenses extraordinaires ou exceptionnelles du projet, vous pouvez utiliser la page **Journal GL projet** pour les reporter directement dans le compte projet approprié.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux GL projet**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux GL de projet**, puis sélectionnez le lien associé.  
 2. Créez une ligne et renseignez les informations concernant les frais, notamment les informations dans les champs **N° projet** et **N° tâche projet**.  
 3. Lorsque la feuille est renseignée, cliquez sur **Valider**.
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion de projets](projects-manage-projects.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Achats](purchasing-manage-purchasing.md)         
 [Ventes](sales-manage-sales.md)      
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

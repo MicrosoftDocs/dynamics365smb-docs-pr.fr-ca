@@ -1,30 +1,32 @@
 ---
-title: Report de documents vente
+title: Report des documents vente | Microsoft Docs
 description: En savoir plus sur les différentes fonctions de report pour reporter des documents vente et la manière de mettre à jour les documents reportés.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms.search.form: '130, 142, 1350'
-ms.date: 04/01/2021
-ms.author: edupont
+ms.date: 01/17/2020
+ms.author: sgroespe
+ms.openlocfilehash: e6dfedea8f6266186f2a2e380cea74ab6b9404bf
+ms.sourcegitcommit: 877af26e3e4522ee234fbba606615e105ef3e90a
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "2992131"
 ---
 # <a name="posting-sales"></a>Report des ventes
-
 Sous le menu **Report** dans un document vente, vous pouvez choisir parmi les fonctions de report suivantes :
 
 * **Reporter**
 * **Reporter et créer**
 * **Reporter et envoyer**
 * **Aperçu report**
-* **Valider par lot**
+* **Facture provisoire**
+* **Facture pro forma**
 * **Rapport de test**
-
-> [!NOTE]
-> Pour les documents de vente, vous pouvez également voir les options liées à la fonctionnalité de paiement anticipé. Pour plus d’informations, voir [Facturation des paiements anticipés](finance-invoice-prepayments.md).
 
 Lorsque vous avez renseigné toutes les lignes et entré toutes les informations du document de vente, vous pouvez le reporter. Cela crée une livraison et une facture.
 
@@ -34,30 +36,26 @@ Pour chaque commande vente, une écriture vente est créée dans la table **Écr
 
 Pour chaque ligne commande vente, une écriture comptable article est créée dans la table **Écriture comptable article** (si les lignes vente contiennent des numéros des articles) ou une écriture comptable est créée dans la table **Écriture comptable** (si les lignes vente contiennent un compte général). En outre, les commandes vente sont toujours enregistrées dans les tables **En-tête expédition vente** et **En-tête facture vente**.
 
-[!INCLUDE [order-ship-invoice](includes/order-ship-invoice.md)]
+> [!IMPORTANT]  
+>   Lorsque vous reportez une commande, vous pouvez créer une livraison et une facture. Ceci peut être effectué de manière simultanée ou indépendante. Vous pouvez également créer une expédition partielle et une facture partielle en renseignant les champs **Qté à expédier** et **Qté à facturer** sur chaque ligne commande vente avant la validation. Notez que vous ne pouvez pas créer de facture pour un article qui n'est pas livré. C'est-à-dire que, avant de pouvoir facturer, vous devez avoir reporté une livraison, ou vous devez choisir de livrer et de facturer en même temps.
 
-Vous pouvez reporter, ou reporter et envoyer. Si vous choisissez de reporter et d'envoyer, un fichier PDF est généré, lequel peut être envoyé par la suite. Vous pouvez aussi choisir la fonction **Valider par lot**, qui vous permet de valider plusieurs commandes en même temps. Pour plus d'informations, voir [Reporter plusieurs documents en même temps](ui-batch-posting.md).
+Vous pouvez soit reporter, soit reporter et imprimer. Si vous choisissez de reporter et d’imprimer, un rapport est imprimé lorsque la commande est reportée. Vous pouvez aussi choisir la fonction **Valider par lot**, qui vous permet de valider plusieurs commandes en même temps. Pour plus d'informations, voir [Reporter plusieurs documents en même temps](ui-batch-posting.md).
 
 ## <a name="viewing-ledger-entries"></a>Affichage des écritures
-
 Lorsque le report est terminé, les lignes vente reportées sont supprimées de la commande. Un message vous indique lorsque le report est terminé. Vous pouvez ensuite afficher les écritures reportées dans les diverses pages qui contiennent des écritures reportées, telles que **Écritures client**, **Écritures**, **Écritures article**, **Livraisons vente reportées** et **Factures vente reportées**.  
 
 Dans la plupart des cas, vous pouvez ouvrir des écritures à partir de la fiche ou du document concerné. Par exemple, sur la page **Fiche client**, sélectionnez l'action **Écritures**.
 
 ## <a name="editing-ledger-entries"></a>Modification des écritures
-
 Vous pouvez modifier certains champs dans les documents d'achat reportés, tels que le champ **N° de suivi du colis**. . Pour plus d'informations, voir [Modifier les documents reportés](across-edit-posted-document.md). Pour les champs plus critiques qui concernent la piste d'audit, vous devez inverser ou annuler le report. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md).
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/ship-invoice-items-dynamics-365-business-central/index)
 
 ## <a name="see-also"></a>Voir aussi
-
 [Vente](sales-manage-sales.md)  
 [Reporter plusieurs documents en même temps](ui-batch-posting.md)  
 [Modifier les documents reportés](across-edit-posted-document.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Corriger ou annuler des factures vente impayées](sales-how-correct-cancel-sales-invoice.md)  
 [Recherche de pages et d'informations avec Tell Me](ui-search.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]  
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

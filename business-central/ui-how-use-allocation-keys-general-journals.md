@@ -1,28 +1,29 @@
 ---
-title: Utiliser les clés d'affectation dans les journaux généraux
-description: Vous pouvez ventiler une écriture dans un journal général dans différents comptes lorsque vous reportez le journal.
+title: Utiliser les clés d'affectation dans les journaux généraux | Microsoft Docs
+description: En savoir plus sur l'utilisation des clés de ventilation dans les feuilles.
+services: project-madeira
+documentationcenter: ''
 author: edupont04
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: cost accounting
-ms.search.form: 283, 284
-ms.date: 06/29/2021
+ms.date: 10/01/2019
 ms.author: edupont
-ms.openlocfilehash: 347e4999be079d31aa06cc80a1b7c9858d19ff57
-ms.sourcegitcommit: f4b32ba1f926a2a712400c36305616f320757723
+ms.openlocfilehash: 9c540b04b7dcda7cd3b656a86679228af08261c9
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "8101305"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2310934"
 ---
 # <a name="use-allocation-keys-in-general-journals"></a>Utiliser les clés d'affectation dans les journaux généraux
 Vous pouvez ventiler une écriture dans un journal général dans différents comptes lorsque vous reportez le journal. L'affectation peut être effectuée par quantité, pourcentage ou montant.
 
 ## <a name="to-set-up-allocation-keys"></a>Pour définir des clés de ventilation
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal général récurrent**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal général récurrent**, puis sélectionnez le lien associé.
 2. Sélectionnez le champ **Nom du lot** pour ouvrir la page **Lots journal général**.
 3. Vous pouvez soit modifier les ventilations sur un lot existant dans la liste ou créer un lot avec des ventilations.
    * Pour créer un lot, sélectionnez l'action **Nouveau**, et passez à l'étape suivante.
@@ -37,15 +38,12 @@ Vous pouvez ventiler une écriture dans un journal général dans différents co
 11. Reportez le journal.
 
 ## <a name="to-change-an-allocation-key-that-has-already-been-set-up"></a>Pour modifier une clé d'affectation déjà configurée
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal général récurrent**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal général récurrent**, puis sélectionnez le lien associé.
 2. Sur la page **Journal général récurrent**, sélectionnez le journal contenant l'affectation.
 3. Sélectionnez la ligne de la ventilation, puis sélectionnez l'action **Ventilations**.
 4. Modifiez les champs appropriés, puis cliquez sur le bouton **OK**.
 
 ## <a name="see-also"></a>Voir aussi
-[Utilisation de journaux généraux](ui-work-general-journals.md)  
+[Utilisation de feuilles comptabilité](ui-work-general-journals.md)  
 [Validation des documents et des feuilles](ui-post-documents-journals.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

@@ -1,18 +1,23 @@
 ---
-title: Suivre les relations entre l'offre et la demande
-description: 'Cette rubrique explique les différentes manières de suivre les relations entre la demande et l’offre, telles que le suivi des articles associés et le traitement des éléments de planning non suivis.'
+title: Procédure de suivi des relations entre l'offre et la demande | Microsoft Docs
+description: À partir d'un document d'approvisionnement ou de demande dans le réseau d'ordres, vous pouvez suivre la demande de commande (quantité suivie), les prévisions, les commandes permanentes ventes ou les paramètres de planification (quantité non suivie) qui ont donné lieu à la ligne planification en question.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: '5830, 9101, 99000822, 99000855'
-ms.date: 06/25/2021
-ms.author: edupont
+ms.search.keywords: ''
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: 3d387ebaf9b7c5e20d50f22b0400d3089e973f8b
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2877721"
 ---
 # <a name="track-relations-between-demand-and-supply"></a>Suivre les relations entre l'offre et la demande
-
 À partir d'un document d'approvisionnement ou de demande dans le réseau d'ordres, vous pouvez suivre la demande de commande (quantité suivie), les prévisions, les commandes permanentes ventes ou les paramètres de planification (quantité non suivie) qui ont donné lieu à la ligne planification en question.
 
 Les feuilles planification incluent également des informations de planification sur les entités sans rapport avec les commandes pour aider le gestionnaire à obtenir un programme d'approvisionnement optimal. Pour plus d'informations, voir [Éléments planification sans suivi](production-how-track-demand-supply.md#untracked-planning-elements).
@@ -22,7 +27,7 @@ Par l'intermédiaire des systèmes de planification et de réservation, le suivi
 
 La procédure suivante décrit comment chaîner des articles liés sur un ordre de fabrication planifié ferme. La procédure est similaire pour tous les autres types de commande, et à partir des lignes feuille planification.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bon de production planifié ferme**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bon de production planifié ferme**, puis sélectionnez le lien associé.
 2. Ouvrez le bon de production planifié ferme approprié dans la liste.
 3. Sur le raccourci **Lignes**, choisissez l'action **Fonctions**, puis l'action **Chaînage**.
 
@@ -56,7 +61,4 @@ la page inclut les écritures représentant une quantité excédentaire non cha�
 [Détails de conception : réservation, chaînage et message d'action](design-details-reservation-order-tracking-and-action-messaging.md)  
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
 [Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

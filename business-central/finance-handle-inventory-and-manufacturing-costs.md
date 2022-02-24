@@ -1,21 +1,21 @@
 ---
-title: Gestion des coûts de l’inventaire et des coûts de fabrication
-description: Découvrez comment un certain nombre de champs, de pages et de rapports sont destinés aux utilisateurs qui gèrent directement ou indirectement le coût des articles ou des opérations.
+title: Gestion des coûts inventaire et des coûts de fabrication | Microsoft Docs
+description: Bien que la comptabilité analytique soit constituée de processus ne nécessitant pas d'interaction utilisateur, telle que l'affectation d'écritures et l'ajustement automatique des coûts, un certain nombre de champs, pages et rapports sont destinés aux utilisateurs qui gèrent directement ou indirectement le coût des articles ou opérations.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/16/2021
-ms.author: edupont
-ms.openlocfilehash: 82221de7c57e6130a3259ae7cf7be095e3c0571e
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: e61174dd162111f6e7580026c5e91454b2ffa918
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6323350"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3183750"
 ---
 # <a name="handling-inventory-and-manufacturing-costs"></a>Gestion des coûts inventaire et des coûts de fabrication
 Bien que la comptabilité analytique soit constituée de processus ne nécessitant pas d'interaction utilisateur, telle que l'affectation d'écritures et l'ajustement automatique des coûts, un certain nombre de champs, pages et rapports sont destinés aux utilisateurs qui gèrent directement ou indirectement le coût des articles ou opérations.  
@@ -38,6 +38,3 @@ Bien que la comptabilité analytique soit constituée de processus ne nécessita
 ## <a name="see-also"></a>Voir aussi  
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)
 [Détails de conception : Évaluation stock](design-details-inventory-costing.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

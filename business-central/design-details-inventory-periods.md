@@ -1,21 +1,21 @@
 ---
-title: Détails de conception - Périodes d’inventaire
-description: La fonction Périodes d’inventaire permet d’éviter ces problèmes avec les soldes et les évaluations de l’inventaire en ouvrant ou en fermant des périodes d’inventaire pour limiter le report dans une période définie.
+title: Détails de conception - Périodes d'inventaire | Microsoft Docs
+description: Des transactions antidatées ou des ajustements des coûts affectent souvent les soldes et les évaluations de l'inventaire pour des périodes comptables qui peuvent être considérées comme fermées. Ceci peut avoir des effets négatifs sur la précision des rapports, notamment dans des sociétés internationales. La fonction Périodes d'inventaire permet d'éviter ces problèmes en ouvrant ou en fermant des périodes d'inventaire pour limiter le report dans une période définie.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/15/2021
-ms.author: edupont
-ms.openlocfilehash: 66624cd4a6992ed227055748f5e8bc972187a8dc
-ms.sourcegitcommit: 641d7018f7ee21345a67651bfa4603e6dd2c4bab
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 3c7b00ebf328ae61bb298b4c9d64762b3bd528d1
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 11/27/2021
-ms.locfileid: "7865706"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185262"
 ---
 # <a name="design-details-inventory-periods"></a>Détails de conception : périodes inventaire
 Des transactions antidatées ou des ajustements des coûts affectent souvent les soldes et les évaluations de l'inventaire pour des périodes comptables qui peuvent être considérées comme fermées. Ceci peut avoir des effets négatifs sur la précision des rapports, notamment dans des sociétés internationales. La fonction Périodes d'inventaire permet d'éviter ces problèmes en ouvrant ou en fermant des périodes d'inventaire pour limiter le report dans une période définie.  
@@ -30,12 +30,6 @@ Des transactions antidatées ou des ajustements des coûts affectent souvent les
 
  Lorsque vous fermez une période d'inventaire, une écriture période d'inventaire est créée à l'aide du numéro du dernier registre d'article tombant dans la période d'inventaire. En outre, le délai, la date et le code utilisateur de l'utilisateur fermant la période sont enregistrés dans l'écriture période d'inventaire. À l'aide des informations associées au dernier registre d'article de la période précédente, vous pouvez visualiser les mouvements d'inventaire qui ont été reportés pour la période d'inventaire. Il est également possible de rouvrir des périodes d'inventaire si vous devez reporter dans une période fermée. Lorsque vous rouvrez une période d'inventaire, une écriture période d'inventaire est créée.  
 
-## <a name="see-also"></a>Voir aussi
-
-[Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)  
-[Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
-[Finance](finance.md)  
-[Utilisation de Business Central](ui-work-product.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+## <a name="see-also"></a>Voir aussi  
+ [Détails de conception : Coûts ajustés](design-details-inventory-costing.md) [Gestion des coûts ajustés](finance-manage-inventory-costs.md) [Finance](finance.md)  
+ [Utilisation de Business Central](ui-work-product.md)

@@ -1,22 +1,22 @@
 ---
-title: Afficher des informations exploitables dans les tableaux de bord
-description: Découvrez comment l’extension Informations commerciales essentielles fait défiler une série d’informations commerciales sur les tableaux de bord.
+title: Afficher des informations exploitables dans les tableaux de bord | Microsoft Docs
+description: L'extension Informations commerciales essentielles fait défiler une série d'informations commerciales sur les tableaux de bord.
 documentationcenter: ''
 author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: BI, add-in, insight, headline, data
-ms.date: 06/23/2021
+ms.date: 10/01/2019
 ms.author: bholtorf
-ms.openlocfilehash: 458e7826979b75c370cb0a90d90c2d64c9ab599e
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.openlocfilehash: 08a955f9fb2698b95e8cc92648be0e7c0bfe6e6c
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6322679"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2311270"
 ---
 # <a name="the-essential-business-insights-extension"></a>Extension Informations commerciales essentielles
 L'extension Informations commerciales essentielles recherche des faits commerciaux intéressants dans les données de votre compagnie et les affiche sous forme de titres de journaux sur les tableaux de bord. Selon ce que l'extension trouve dans les données, des les informations datent de la semaine, du mois ou du trimestre précédent la date du jour. Les informations se mettent à jour toutes les 10 minutes.  
@@ -37,7 +37,4 @@ Le tableau suivant décrit les informations que cette extension fournit à chaqu
 |Administrateur| Affiche une salutation, et le lien vers des informations sur le produit.|
 
 ## <a name="see-also"></a>Voir aussi
-[Personnalisation de [!INCLUDE[prod_short](includes/prod_short.md)] à l'aide des extensions](ui-extensions.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Personnalisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide des extensions](ui-extensions.md)

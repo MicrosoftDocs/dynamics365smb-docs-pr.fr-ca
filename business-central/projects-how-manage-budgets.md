@@ -1,16 +1,23 @@
 ---
-title: Paramétrer et gérer un budget pour un projet
+title: Paramétrer et gérer un budget pour un projet| Microsoft Docs
 description: Décrit comment planifier des ressources et prévoir et contrôler les coûts d'un projet en définissant un budget pour chaque projet.
+services: project-madeira
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'project budget, forecast'
-ms.search.form: '1002, 1007'
-ms.date: 04/01/2021
-ms.author: edupont
+ms.search.keywords: project budget, forecast
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: 639955ef4ac9e782207d4cfee7a89f38d5c99501
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2312878"
 ---
 # <a name="manage-job-budgets"></a>Gérer les budgets de projets
 Vous pouvez configurer un budget pour chaque projet. Le budget permet de planifier les ressources que vous affectez à un projet. Il peut s'agir d'un budget général avec peu d'écritures ou plus détaillé avec des écritures réparties par niveau d'activité. Vous pouvez alors comparer les montants budgétés avec l'utilisation réelle telle qu'elle a été enregistrée dans le journal projet. En surveillant les différences entre l'utilisation réelle et celle budgétée, vous pouvez contrôler un projet en cours et améliorer la qualité des projets futurs en réduisant le risque de sous-estimation des coûts.
@@ -20,7 +27,7 @@ La procédure suivante décrit comment estimer les coûts budgétés lors de la 
 ## <a name="to-estimate-the-budgeted-costs-for-a-job"></a><a name="JobBudgetCosts"></a> Pour estimer les coûts budgétés d'un projet
 Lorsqu'un client souhaite connaître le prix d'un projet qui sera facturé en fonction de l'utilisation, vous devez déterminer les coûts budgétés du projet. Réalisez cette opération sur la page **Lignes tâche projet**.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Projets**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projets**, puis sélectionnez le lien associé.  
 2. Ouvrez le projet approprié.
 3. Sélectionnez une ligne tâche de type Validation, puis cliquez sur **Lignes planning projet**.
 4. Sur une nouvelle ligne, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]   
@@ -48,7 +55,4 @@ Pour plus d'informations sur l'enregistrement budgété par rapport aux prix et 
 [Finance](finance.md)  
 [Achats](purchasing-manage-purchasing.md)         
 [Ventes](sales-manage-sales.md)      
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

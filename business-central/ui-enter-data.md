@@ -1,21 +1,21 @@
 ---
-title: Procédure de saisie de données dans Business Central
-description: Plusieurs fonctions générales vous permettent de saisir vos données de manière plus facile, rapide et précise. Les principes de base et les fonctionnalités avancées sont décrits ici.
-author: jswymer
+title: Procédure de saisie de données dans Business Central | Microsoft Docs
+description: En savoir plus sur les fonctions générales qui vous permettent de saisir les données dans les champs.
+author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: decimal separator, data entry, focus
-ms.date: 10/01/2021
-ms.author: jswymer
-ms.openlocfilehash: 1e6dbdd5880902c7b649464ad967f01cc599f37f
-ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
+ms.search.keywords: ''
+ms.date: 04/03/2020
+ms.author: sgroespe
+ms.openlocfilehash: f3af601f0de00445a42c88bb47053084b05fc14b
+ms.sourcegitcommit: 8a4e66f7fc8f9ef8bdf34595e0d3983df4749376
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7588967"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262152"
 ---
 # <a name="entering-data"></a>Saisie de données
 
@@ -24,7 +24,7 @@ Plusieurs fonctions générales vous permettent de saisir vos données de maniè
 Les exemples contenus dans cet article utilisent les données de démonstration.
 
 ## <a name="working-with-editable-fields"></a>Utilisation des champs modifiables
-Les champs dans [!INCLUDE[prod_short](includes/prod_short.md)] peuvent contenir différentes données modifiables, telles que des montants de texte ou de devise. Les champs modifiables affichent généralement une zone de saisie dans laquelle vous pouvez taper ou choisir une valeur. Les champs non modifiables sont généralement affichés sur fond gris.   
+Les champs dans [!INCLUDE[d365fin](includes/d365fin_md.md)] peuvent contenir différentes données modifiables, telles que des montants de texte ou de devise. Les champs modifiables affichent généralement une zone de saisie dans laquelle vous pouvez taper ou choisir une valeur. Les champs non modifiables sont généralement affichés sur fond gris.   
 
 Certains champs modifiables fournissent un sélecteur pour vous aider à spécifier une valeur.  
 
@@ -36,6 +36,7 @@ Certains champs modifiables fournissent un sélecteur pour vous aider à spécif
 |Commutateur ou case à cocher|Certains champs offrent un choix simple : valeurs *Oui* ou *Non*. Le commutateur est utilisé pour spécifier cette valeur et est toujours affiché sous forme de case à cocher dans les listes|
 |Modification assistée       |Certains champs fournissent des sélecteurs personnalisés adaptés à la recherche et au choix de la meilleure valeur pour ce champ, comme une fenêtre contextuelle|
 
+
 ### <a name="modifying-a-field-value"></a>Modification d'une valeur de champ
 
 Pour modifier la valeur d'un champ, vous devez d'abord définir le focus sur ce champ. Vous définissez le focus en effectuant les actions suivantes :
@@ -43,7 +44,7 @@ Pour modifier la valeur d'un champ, vous devez d'abord définir le focus sur ce 
 - Utilisez la touche de **tabulation**. L'action sélectionne la valeur entière.
 - Effectuez un clic gauche sur votre souris ou un périphérique d'entrée similaire. Cette action ne sélectionnera la valeur entière du champ que si le champ est dans une liste.  
 
-Lorsque vous interagissez avec des champs de l'interface utilisateur, [!INCLUDE[prod_short](includes/prod_short.md)] favorise généralement la sélection de la valeur entière du champ pour faciliter le remplacement de cette valeur.
+Lorsque vous interagissez avec des champs de l'interface utilisateur, [!INCLUDE[d365fin](includes/d365fin_md.md)] favorise généralement la sélection de la valeur entière du champ pour faciliter le remplacement de cette valeur.
 
 Lorsque toute la valeur du champ est sélectionnée :
 - Remplacez la valeur en tapant simplement pour spécifier une nouvelle valeur. Si le champ propose un sélecteur, vous pouvez l'activer à l'aide du raccourci clavier **Alt + flèche vers le bas**.
@@ -57,6 +58,7 @@ Lorsque le curseur apparaît à la fin de la valeur du champ :
 
 > [!NOTE]
 > Après avoir spécifié une valeur, Business Central vérifie uniquement sa validité après avoir cliqué en dehors du champ ou défini le focus sur un autre article, tel que le champ suivant.  
+
 
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
@@ -83,7 +85,7 @@ Vous trouverez ci-après les informations utiles concernant la fonction Saisie r
 - Elle est disponible pour tout champ modifiable.
 - Elle fonctionne également à travers les colonnes et les lignes.
 - Elle n'empêche pas d'accéder à d'autres articles d'une page, comme des actions. Ces articles restent accessibles en utilisant la touche Tab et la combinaison des touches Maj+Tab.  
-- Il n'est pas nécessaire que les raccourcis soient étendus pour que l'entrée rapide fonctionne. Si le champ suivant Saisie rapide se situe dans un raccourci réduit, ce raccourci développe automatiquement et se concentre sur le champ choisi. [!INCLUDE[prod_short](includes/prod_short.md)] se souviendra que le raccourci devrait être développé la prochaine fois que vous visiterez la page.  
+- Il n'est pas nécessaire que les raccourcis soient étendus pour que l'entrée rapide fonctionne. Si le champ suivant Saisie rapide se situe dans un raccourci réduit, ce raccourci développe automatiquement et se concentre sur le champ choisi. [!INCLUDE[d365fin](includes/d365fin_md.md)] se souviendra que le raccourci devrait être développé la prochaine fois que vous visiterez la page.  
 - La fonction Saisie rapide fonctionne peu importe si les champs sont obligatoires ou non. Ainsi, il est recommandé de veiller à ce que les champs obligatoires soient inclus dans la fonction Saisie rapide.
 - Par défaut, la plupart des champs sont automatiquement inclus dans la fonction Saisie rapide. Ainsi, à la base, il est fort probable que votre tâche exclura les champs de la fonction Saisie rapide.
 
@@ -91,7 +93,7 @@ Vous trouverez ci-après les informations utiles concernant la fonction Saisie r
 
 Pour configurer la fonction Saisie rapide sur les champs, vous utilisez la personnalisation.
 
-1. Commencez la personnalisation en sélectionnant l’icône ![Paramètres.](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord") puis l’action **Personnaliser**.
+1. Commencez la personnalisation en sélectionnant l'icône ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis sélectionnez l'action **Personnaliser**.
 2. Sélectionnez un champ que vous souhaitez modifier. Dans les listes, sélectionnez l'en-tête de colonne correspondant. Ensuite, choisissez **Inclure dans la saisie rapide** ou **Exclure de la saisie rapide**.
 
 Pour plus d'informations sur la personnalisation, voir [Personnaliser votre espace de travail](ui-personalization-user.md).
@@ -118,7 +120,7 @@ Vous pouvez copier une ou plusieurs lignes d'une liste ou d'un seul champ sur un
 
 Dans une liste, pour copier le champ dans la même colonne de la ligne précédente, et le coller dans la ligne actuelle, il vous suffit d'appuyer sur F8.
 
-Pour plus d'informations, voir [FAQ sur l'opération Copier et coller](faq-copy-paste.yml).
+Pour plus d'informations, voir [FAQ sur l'opération Copier et coller](ui-copy-paste.md).
 
 ## <a name="filtering-line-items"></a>Filtrage des articles de ligne
 
@@ -134,9 +136,9 @@ Vous bénéficierez particulièrement lorsque vous travaillez avec de grandes li
 
 ### <a name="switching-the-focus-on-and-off"></a>Activation/Désactivation du focus
 
-Pour vous concentrer sur les éléments de ligne, sélectionnez n’importe où dans la partie de l’élément de ligne, puis choisissez l’![icône du mode de focus.](media/focus-mode.png "Icône du mode Focalisation") dans le coin supérieur droit ou appuyez sur Ctrl+Maj+F12.
+Pour vous concentrer sur les articles de ligne, faites votre sélection n'importe où dans la partie des articles de ligne, puis sélectionnez ![icône mode Focalisation](media/focus-mode.png "Icône du mode Focalisation") dans l'angle supérieur droit ou appuyez sur Ctrl+Maj+F12.
 
-Pour revenir à la vue normale, choisissez ![l’icône du mode de focus.](media/focus-mode.png "Icône du mode Focalisation") ou appuyez à nouveau sur Ctrl+Maj+F12.
+Pour revenir à la vue normale, sélectionnez ![icône mode Focalisation](media/focus-mode.png "Icône du mode Focalisation") ou appuyez à nouveau sur Ctrl+Maj+F12.
 
 ## <a name="multitasking-across-multiple-pages"></a>Multitâche sur plusieurs pages
 
@@ -146,21 +148,21 @@ Vous pouvez ouvrir une page de carte ou de document dans une nouvelle fenêtre. 
 - Gérez les interruptions de la tâche en cours, comme prendre un appel entrant.
 - Gardez une fenêtre ouverte pour une tâche en cours pendant que vous démarrez ou terminez une autre tâche dans les fenêtres.
 
-Pour ouvrir la carte ou le document actuel dans une nouvelle fenêtre, choisissez ![Ouvrir une nouvelle fenêtre.](media/open-new-window-icon.png "Icône Ouvrir dans une nouvelle fenêtre") dans le coin supérieur droit ou appuyez sur Alt+Maj+W.
+Pour ouvrir la fiche ou le document en cours dans une nouvelle fenêtre, choisissez ![Ouvrir dans une nouvelle fenêtre](media/open-new-window-icon.png "Icône Ouvrir dans une nouvelle fenêtre") dans le coin supérieur droit, ou appuyez sur Alt+Maj+W.
 
 <!--
 When working on multiple tasks at a time or when managing interruptions to the current task, such as taking an incoming call, you can open a card or document page in a new window. This allows you to keep a window open for an ongoing task while you start or complete another task in one or more other windows.
 -->
-Pour ouvrir la carte ou le document actuel dans une nouvelle fenêtre, choisissez ![Ouvrir une nouvelle fenêtre.](media/open-new-window-icon.png "Icône Ouvrir dans une nouvelle fenêtre") dans le coin supérieur droit ou appuyez sur Alt+Maj+W.
+Pour ouvrir la fiche ou le document en cours dans une nouvelle fenêtre, choisissez ![Ouvrir dans une nouvelle fenêtre](media/open-new-window-icon.png "Icône Ouvrir dans une nouvelle fenêtre") dans le coin supérieur droit, ou appuyez sur Alt+Maj+W.
 
 > [!NOTE]
-> Lorsque vous ouvrez d’autres pages d’une fiche ou d’un document ouvert dans une nouvelle fenêtre, ces pages s’ouvrent dans une nouvelle fenêtre même si vous ne choisissez pas ![Ouvrir dans une nouvelle fenêtre.](media/open-new-window-icon.png "Icône Ouvrir dans une nouvelle fenêtre").
+> Lorsque vous ouvrez d'autres pages d'une fiche ou d'un document ouvert dans une nouvelle fenêtre, ces pages s'ouvrent dans une nouvelle fenêtre même si vous ne choisissez pas ![Ouvrir dans une nouvelle fenêtre](media/open-new-window-icon.png "Icône Ouvrir dans une nouvelle fenêtre").
 
 > [!NOTE]
 > Si vous travaillez dans le navigateur Safari, un bloqueur de fenêtres publicitaires intempestives peut empêcher la nouvelle fenêtre de s'ouvrir. Si tel est le cas, spécifiez l'URL du produit en tant que site Web autorisé. Pour plus d'informations, voir [Modifier les préférences dans Safari ](https://go.microsoft.com/fwlink/?LinkId=2102965).<br /><br />
-> La même chose peut se produire dans d’autres navigateurs, tels que Firefox. Pour plus d’informations, voir [Paramètres du bloqueur de fenêtres publicitaires intempestives dans Firefox](https://go.microsoft.com/fwlink/?LinkId=2116400).  
+> La même chose peut se produire dans d'autres navigateurs, tels que Firefox. Pour plus d'informations, voir [Paramètres du bloqueur de fenêtres publicitaires intempestives dans Firefox](https://go.microsoft.com/fwlink/?LinkId=2116400).  
 
-Une autre façon d'effectuer plusieurs tâches simultanément consiste à ouvrir [!INCLUDE[prod_short](includes/prod_short.md)] sur deux ou plusieurs onglets du navigateur. Pour ce faire, vous devez créer un onglet, puis copier/coller l'URL de l'onglet initial dans le nouvel onglet. Cela crée une session.   
+Une autre façon d'effectuer plusieurs tâches simultanément consiste à ouvrir [!INCLUDE[d365fin](includes/d365fin_md.md)] sur deux ou plusieurs onglets du navigateur. Pour ce faire, vous devez créer un onglet, puis copier/coller l'URL de l'onglet initial dans le nouvel onglet. Cela crée une session.   
 
 > [!NOTE]
 > N'utilisez pas la fonction **Dupliquer** du navigateur pour créer l'onglet : cela peut entraîner des actions sur un onglet pour bloquer des actions sur d'autres onglets, car elles font partie de la même session.
@@ -240,9 +242,34 @@ Le tableau suivant répertorie les différents formats de saisie possibles pour 
 
  Saisissez deux chiffres par unité temporelle si vous n'utilisez pas de séparateur.  
 
-## <a name="entering-combined-datetimes"></a>Saisie de dates et d’heures combinées
+## <a name="entering-datetimes"></a>Saisie des dates/heures
 
-[!INCLUDE [datetimes](includes/datetimes.md)]
+Lors de la saisie des dates/heures, vous devez saisir un espace entre la date et l'heure.  
+
+Le tableau suivant répertorie les différents formats de saisie possibles pour les dates/heures, ainsi que leur interprétation.  
+
+|Écriture|Interprétation|  
+|---------------|------------------------|  
+|`131202` 132455|13/12/02 13:24:55|  
+|1-12-02 10|01/12/02 10:00:00|  
+|1.12.02 5|01/12/02 05:00:00|  
+|1.12.02|01/12/02 00:00:00|  
+|11 12|11/mois en cours/année en cours 12:00:00|  
+|1112 12|11/12/année en cours 12:00:00|  
+|a ou aujourd'hui|aujourd'hui 00:00:00|  
+|a heure|aujourd'hui heure réelle|  
+|a 10:30|aujourd'hui 10:30:00|  
+|a 3:3:3|aujourd'hui 03:03:03|  
+|t ou date de travail|date de travail 00:00:00|  
+|lu ou lundi|Lundi de la semaine en cours 00:00:00|  
+|ma ou mardi|Mardi de la semaine en cours 00:00:00|  
+|me ou mercredi|Mercredi de la semaine en cours 00:00:00|  
+|je ou jeudi|Jeudi de la semaine en cours 00:00:00|  
+|ve ou vendredi|Vendredi de la semaine en cours 00:00:00|  
+|sa ou samedi|Samedi de la semaine en cours 00:00:00|  
+|di ou dimanche|Dimanche de la semaine en cours 00:00:00|  
+|ma 10:30|Mardi de la semaine en cours 10:30:00|  
+|ma 3:3:3|Mardi de la semaine en cours 03:03:03|  
 
 ## <a name="entering-duration"></a>Saisie des durées
 
@@ -265,16 +292,6 @@ Voilà quelques exemples.
 
  Si l'unité de mesure est « heures », 5 est converti en 5h.  
 
-## <a name="setting-the-decimal-separator-used-by-numeric-keyboards"></a><a name="decimal"></a>Définition du séparateur décimal utilisé par les claviers numériques
-
-Lorsque vous utilisez la touche du séparateur décimal du clavier numérique pour saisir des données, le séparateur décimal réel entré dans le champ est déterminé par le paramètre régional de votre Business Central. Vous définissez la région de Business Central sur la page **Mes paramètres**.
-
-Par exemple, supposons que vous utilisez un clavier numérique qui utilise un point (.) comme touche de séparateur décimal. Cependant, vous entrez des données pour une langue régionale qui utilise une virgule (**,**) comme séparateur décimal, comme le danois (Danemark) ou le français (France). Donc, vous voulez que les décimales telles que « 1.23 » soient saisies comme « 1,23 ». Dans ce cas, vous pouvez vous rendre sur la page **Mes paramètres** et définir la **Région** sur la langue régionale cible, telles que le **Danois (Danemark)** ou le **Français (france)**. Pour plus d’informations, voir [Modifier les paramètres de base](ui-change-basic-settings.md#region).
-
-## <a name="see-also"></a>Voir aussi
-
-[Tri, recherche et filtrage de listes](ui-enter-criteria-filters.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+## <a name="see-also"></a>Voir aussi  
+ [Tri, recherche et filtrage de listes](ui-enter-criteria-filters.md)  
+ [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

@@ -3,19 +3,19 @@ title: Configurer des promotions marketing dans Business Central | Microsoft Doc
 description: Décrit la manière dont vous pouvez configurer et mener des promotions marketing dans Business Central afin de vous aider à identifier et attirer des prospects et à fidéliser les clients.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: marketing, campaign, promo, prospect
-ms.date: 04/01/2021
+ms.date: 04/01/2020
 ms.author: edupont
-ms.openlocfilehash: 5e9ed545daaa9600beb96ebb19aaeb36fb3a518c
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: a51fc3a0fdd4ea1e622f3f69f2e6faf9902178bc
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5780742"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3181665"
 ---
 # <a name="managing-marketing-campaigns"></a>Gestion de campagnes marketing
 Disposer d'une solide stratégie marketing permet d'identifier, d'attirer et de fidéliser les clients. Une stratégie marketing est composée de diverses campagnes ainsi que d'interactions en relation avec vos activités de vente et de marketing. Lors de la planification d'une promotion, vous devez choisir les contacts à cibler, le type de promotion (salon, courriel direct) et le représentant chargé de chaque tâche.
@@ -51,6 +51,3 @@ Les promotions sont conduites par les représentants, vous devez créer des acti
 [Gestion des segments](marketing-segments.md)  
 [Gestion des opportunités de ventes](marketing-manage-sales-opportunities.md)  
 [Utilisation de Business Central](ui-work-product.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

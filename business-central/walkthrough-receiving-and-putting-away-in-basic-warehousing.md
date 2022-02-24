@@ -1,27 +1,27 @@
 ---
-title: 'Procédure pas à pas : Réception et rangement dans les configurations de stockage de base'
-description: Dans Business Central, les processus entrants de réception et de rangement peuvent être effectués de quatre manières, à l’aide de différentes fonctionnalités en fonction du niveau de complexité de l’entrepôt.
+title: 'Procédure pas à pas : Réception et rangement dans les configurations de stockage de base | Microsoft Docs'
+description: Dans Business Central, les processus entrants de réception et de rangement peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
-ms.author: edupont
-ms.openlocfilehash: c5d3ce9b7bb02c12da8d62413c6c5722c59ee1d8
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: 31ac21dbba331748c9eef7bce199a5709147016b
+ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6439320"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2554654"
 ---
 # <a name="walkthrough-receiving-and-putting-away-in-basic-warehouse-configurations"></a>Procédure pas à pas : Réception et rangement dans les configurations de stockage de base
 
-<!-- [!INCLUDE[complete_sample_data](includes/complete_sample_data.md)]   -->
+**Remarque** : Ce guide pas-à-pas doit être effectué sur une compagnie de démonstration avec l'option **Évaluation complète - Renseigner des exemples de données**, disponible dans l'environnement Sandbox. Pour plus d’informations, voir [Création d'un environnement Sandbox](across-how-create-sandbox-environment.md).
 
-Dans [!INCLUDE[prod_short](includes/prod_short.md)], les processus entrants de réception et de rangement peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.  
+Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les processus entrants de réception et de rangement peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.  
 
 |Méthode|Processus entrant|Zones|Reçus|Rangements|Niveau de complexité (Voir [Détails de conception : configuration d'entrepôt](design-details-warehouse-setup.md))|  
 |------------|---------------------|----------|--------------|----------------|--------------------------------------------------------------------------------------------------------------------|  
@@ -52,9 +52,6 @@ Cette procédure pas à pas présente les tâches suivantes.
 -   Vérifier que les zones de rangement sont héritées du bon de commande.  
 -   Enregistrement d'un mouvement entrepôt dans l'entrepôt et en même temps report de la réception achat pour le bon de commande d'origine.  
 
-> [!NOTE]
-> [!INCLUDE [locations-cronus](includes/locations-cronus.md)]
-
 ## <a name="roles"></a>Rôles  
 Cette procédure pas à pas présente les tâches effectuées par les rôles utilisateur suivants :  
 
@@ -68,7 +65,7 @@ Pour exécuter ce processus pas à pas, vous devez :
 -   avoir CRONUS International Ltd. installé.  
 -   Pour devenir employé d'entrepôt dans l'emplacement ARGENT, procédez comme suit :  
 
-    1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Employés entrepôt**, puis sélectionnez le lien associé.  
+    1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Employés d'entrepôt**, puis sélectionnez le lien associé.  
     2.  Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs**.  
     3.  Dans le champ **Code magasin**, entrez ARGENT.  
     4.  Sélectionnez le champ **Par défaut**.  
@@ -77,11 +74,11 @@ Pour exécuter ce processus pas à pas, vous devez :
 Ellen, responsable d'entrepôt chez CRONUS International Ltd., crée un bon de commande de 10 unités de l'article LS-75 et 30 unités de l'article LS-81 du fournisseur 10000, qui doivent être livrées à l'entrepôt ARGENT. Lorsque la livraison arrive à l'entrepôt, Jean, l'employé de l'entrepôt, range les articles dans les zones par défaut définies pour les articles. Lorsque Jean reporte le rangement, les articles sont reportés comme étant reçus dans l'inventaire et disponibles à la vente ou pour d'autres demandes.  
 
 ## <a name="setting-up-the-location"></a>Configuration de l'emplacement  
- La configuration de la page **Fiche emplacement** définit les flux d’entrepôt de la compagnie.  
+ La configuration de la page **Fiche emplacement** définit les flux d'entrepôt de la compagnie.  
 
 ### <a name="to-set-up-the-location"></a>Pour configurer l'emplacement  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche emplacement ARGENT.  
 3.  Activez la case à cocher **Rangement requis**.  
 
@@ -101,7 +98,7 @@ Les bons de commande sont le type de document source entrant le plus répandu.
 
 ### <a name="to-create-the-purchase-order"></a>Pour créer le bon de commande  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de commande**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Bons de commande**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Créez un bon de commande pour le fournisseur 10 000 à la date de travail (23 janvier) comportant les lignes bon de commande suivantes.  
 
@@ -111,7 +108,7 @@ Les bons de commande sont le type de document source entrant le plus répandu.
     |LS-81|ARGENTE|S-01-0001|30|  
 
     > [!NOTE]  
-    >  Le code de zone est renseigné automatiquement en fonction de la configuration de la section « Configuration de l'emplacement ».  
+    >  Le code de zone est renseigné automatiquement en fonction de la configuration effectuée dans la section « Configuration de l'emplacement ».  
 
     Informez l'entrepôt que le bon de commande est prêt pour le traitement en entrepôt lorsque la livraison arrive.  
 
@@ -124,7 +121,7 @@ Sur la page **Rangement inventaire**, vous pouvez gérer toutes les activités e
 
 ### <a name="to-receive-and-put-the-items-away"></a>Pour recevoir et ranger des articles  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rangements inventaire**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Rangements inventaire**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Sélectionnez le champ **Document source**, puis sélectionnez **Bon de commande**.  
 4.  Sélectionnez le champ **N° origine**, sélectionnez la ligne correspondant à l'achat au fournisseur 10000, puis cliquez sur le bouton **OK**.  
@@ -147,7 +144,4 @@ Sur la page **Rangement inventaire**, vous pouvez gérer toutes les activités e
  [Déplacer des articles ad hoc dans les configurations de stockage de base](warehouse-how-to-move-items-ad-hoc-in-basic-warehousing.md)   
  [Détails de conception : flux d'enlogement](design-details-inbound-warehouse-flow.md)   
  [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)  
- [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+ [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

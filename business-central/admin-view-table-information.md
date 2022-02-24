@@ -1,17 +1,20 @@
 ---
 title: Afficher les informations sur les tables
-description: "Découvrez comment afficher des informations sur les tables de base de données directement depuis l’interface client de Business\_Central."
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: 8700
-ms.date: 06/14/2021
+ms.date: 04/20/2020
 ms.author: jswymer
+ms.openlocfilehash: de93063a60e6b64405b1491a67489c8bfa4657ad
+ms.sourcegitcommit: 99915b493a7e49d12c530f2f9fda1fcedb518b6e
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275328"
 ---
-
 # <a name="viewing-table-information"></a>Affichage d'informations sur les tables
 
 La page **Informations sur les tables 8700** fournit des informations sur toutes les tables système et métier d'une solution Business Central. En particulier, la page affiche des informations sur la quantité de données contenues dans les tables.
@@ -20,7 +23,7 @@ Ces informations sont utiles pour résoudre les problèmes de performances, car 
 
 ## <a name="viewing-table-information"></a>Affichage d'informations sur les tables
 
-Pour ouvrir cette page, sélectionnez l’icône ![Rechercher une page ou un rapport.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Informations table**, puis choisissez le lien associé.
+Pour ouvrir cette page, choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Informations sur la table**, puis sélectionnez le lien associé.
 
 Le tableau suivant décrit les informations fournies pour chaque table :
 
@@ -36,6 +39,3 @@ Le tableau suivant décrit les informations fournies pour chaque table :
 
 [Inspection des pages](across-inspect-page.md)  
 [Articles sur les performances pour les développeurs](/dynamics365/business-central/dev-itpro/performance/performance-developer)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

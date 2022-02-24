@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : Vente d’articles à assembler pour commande'
-description: Si l'article est configuré pour un assemblage pour commande, l'article ne devrait pas être en inventaire, il doit être assemblé spécifiquement pour un document de vente.
+title: "Procédure : Vente d'articles à assembler pour commande | Microsoft Docs"
+description: Si l'article est configuré pour un assemblage pour commande, l'article ne devrait pas être en inventaire, il doit être assemblé spécifiquement pour un document de vente. Lorsque vous entrez l'article dans une ligne document de vente, un ordre d'assemblage est automatiquement créé et lié au document de vente.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: kit, kitting, substitute items
-ms.date: 07/29/2021
-ms.author: edupont
-ms.openlocfilehash: 05060eaf315ac85f50509aec3df46ec3e9319deb
-ms.sourcegitcommit: e891484daad25f41c37b269f7ff0b97df9e6dbb0
+ms.search.keywords: kit, kitting
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: da4a854aa573599db2d2493219d4393366a995f9
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7440626"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3186342"
 ---
 # <a name="sell-items-assembled-to-order"></a>Vente d'articles à assembler pour commande
 Si le champ **Politique d'assemblage** de la fiche article d'un élément d'assemblage est **Assembler pour commande**, l'article n'est pas supposé être en inventaire et doit être assemblé spécifiquement dans un document de vente. Lorsque vous entrez l'article dans une ligne document de vente, un ordre d'assemblage est automatiquement créé et lié au document de vente.  
@@ -29,7 +29,7 @@ Dans cette procédure, vous effectuez la vente d'un article que vous assemblez s
 >  La procédure suivante n'inclut pas les phases standard de document de vente avant l'étape où vous entrez l'article à assembler pour commande dans une ligne document de vente.  
 
 ## <a name="to-sell-an-item-that-is-assembled-to-order"></a>Vendre un article qui est assemblé pour commande  
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Créez un document de vente. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).  
 3.  Dans le champ **N°**, , entrez un article qui est configuré pour l'assemblage pour commande.  
 4.  Dans le champ **Code magasin**, définissez le magasin à partir duquel l'article sera vendu. Le processus d'assemblage a lieu à cet emplacement.  
@@ -57,15 +57,9 @@ Dans cette procédure, vous effectuez la vente d'un article que vous assemblez s
 10. Sur le document de vente, choisissez l'action **Libérer** pour informer le département d’assemblage que le processus d’assemblage peut démarrer.  
 11. Dans le département d'assemblage, suivez la procédure d'assemblage des articles qui sont vendus au cours de cette procédure. Pour plus d'informations, voir [Assembler des articles](assembly-how-to-assemble-items.md).  
 
-> [!NOTE]  
-> Sachez que les substitutions d'articles n’entraîneront pas automatiquement le remplacement d’un article par un autre, par exemple lors de la création d’un document de vente ou dans une nomenclature. Au lieu de cela, vous serez alerté du fait qu’un substitut est disponible pour vous.
-
 ## <a name="see-also"></a>Voir aussi  
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-[Enregistrer de nouveaux articles](inventory-how-register-new-items.md)
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

@@ -1,21 +1,21 @@
 ---
-title: Configurer des recommandations - Configuration de planification
-description: Cette rubrique décrit les bonnes pratiques sur la façon de configurer les champs de paramètres de planification sélectionnés avec le raccourci Planification de la fiche article.
+title: 'Pratiques de configuration recommandées : paramètres de planification | Microsoft Docs'
+description: Le raccourci Planning de la fiche article est le cœur de la chaîne d'approvisionnement de la société. Définir les paramètres de planification corrects est très important pour une gestion rentable des inventaires et un service client de haute qualité.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/23/2021
-ms.author: edupont
-ms.openlocfilehash: 72d6f07ca98fad0bed123c648025665add723c23
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 8ff874a076aa1a0bba09e1277cb19ee6553eaa8b
+ms.sourcegitcommit: 99915b493a7e49d12c530f2f9fda1fcedb518b6e
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6320066"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3271928"
 ---
 # <a name="setup-best-practices-planning-parameters"></a>Pratiques de configuration recommandées : paramètres de planification
 Le raccourci **Planning** de la fiche article est le cœur de la chaîne d'approvisionnement de la société. Définir les paramètres de planification corrects est très important pour une gestion rentable des inventaires et un service client de haute qualité.  
@@ -45,7 +45,4 @@ Le raccourci **Planning** de la fiche article est le cœur de la chaîne d'appro
  [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
  [Configurez les modules complexes à l'aide des meilleures pratiques](set-up-complex-application-areas-using-best-practices.md)  
  [Détails de conception : demande à un magasin vide.](design-details-demand-at-blank-location.md)  
- [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+ [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

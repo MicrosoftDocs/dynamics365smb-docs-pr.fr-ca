@@ -5,25 +5,25 @@ services: project-madeira
 documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: electronic document, e-invoice, incoming document, OCR, ecommerce, document exchange, import invoice
-ms.date: 04/01/2021
-ms.author: edupont
-ms.openlocfilehash: a9f64ef35a2304152dd4e98a9925b470b13f0cf4
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 0b31d225083d566967b3c9cb7facee564c3d3466
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6437662"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3188550"
 ---
 # <a name="find-posted-documents-without-incoming-document-records"></a>Rechercher des enregistrements reportés sans enregistrements document entrant
 Depuis les pages **Plan comptable** et **Écritures**, vous pouvez utiliser la fonction de recherche pour rechercher les écritures pour des documents achat et vente reportés qui n'ont pas d'enregistrement de document entrant, puis les lier de façon centralisée à des enregistrements existants ou en créer de nouveaux avec des fichiers joints.
 
 ## <a name="to-find-posted-documents-without-incoming-document-records"></a>Rechercher des enregistrements reportés sans enregistrements document entrant
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable**, puis sélectionnez le lien associé.
 2. Sélectionnez une ligne pour un compte général pour les écritures comptables duquel vous souhaitez voir les documents ventes et achats validés sans enregistrement document entrant, puis sélectionnez l'action **Documents validés sans document entrant**.
 3. Sinon, sélectionnez l'action **Écritures comptables**.
 4. Sur la page **Écritures**, sélectionnez l'action **Documents reportés sans documents entrants**.
@@ -41,7 +41,4 @@ Si un enregistrement document entrant approprié n'existe pas sur la page **Docu
 [Traiter les documents entrants](across-process-income-documents.md)  
 [Documents entrants](across-income-documents.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

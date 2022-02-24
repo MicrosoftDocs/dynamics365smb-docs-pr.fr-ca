@@ -1,23 +1,27 @@
 ---
-title: Configurer des calendriers principaux
-description: 'Vous pouvez affecter un calendrier de base à votre compagnie et à ses partenaires commerciaux, pour calculer les dates de livraison et de réception en fonction des jours ouvrés spécifiés.'
+title: Procédure de configuration des calendriers principaux | Microsoft Docs
+description: Vous pouvez affecter un calendrier principal à votre compagnie et à ses partenaires commerciaux, tels que ses clients, ses fournisseurs ou ses emplacements. Les dates de livraison et de réception sur les lignes document de vente, bon de commande, ordre de transfert et bon de production futures sont calculées en fonction des jours ouvrés définis dans le calendrier.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: '7600, 7601, 7602, 5703'
-ms.date: 06/11/2021
-ms.author: edupont
+ms.search.keywords: ''
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 52bbf5f1092ad449be003021642c30651f38e780
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3188430"
 ---
 # <a name="set-up-base-calendars"></a>Configurer des calendriers principaux
-
 Vous pouvez affecter un calendrier principal à votre compagnie et à ses partenaires commerciaux, tels que ses clients, ses fournisseurs ou ses emplacements. Les dates de livraison et de réception sur les lignes document de vente, bon de commande, ordre de transfert et bon de production futures sont calculées en fonction des jours ouvrés définis dans le calendrier. Lorsque vous configurez un nouveau calendrier principal, votre tâche consiste essentiellement à indiquer et à définir les jours chômés à appliquer.  
 
-## <a name="to-set-up-a-base-calendar"></a>Pour configurer un calendrier principal
-
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Calendrier principal**, puis choisissez le lien associé.  
+## <a name="to-set-up-a-base-calendar"></a>Pour configurer un calendrier principal  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Calendrier principal**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Complétez le champ **Code**.  
 4. Choisissez l'action **Gérer modifications calendrier principal**.
@@ -38,7 +42,6 @@ Lorsque vous créez une écriture, le champ **Jour chômé** est sélectionné. 
 Spécifie une formule date pour le délai nécessaire au réapprovisionnement de l'article. Permet de calculer le champ **Date planifiée de réception**, si calcul en aval, et le champ **Date commande**, si calcul en amont. Voir [Calcul du délai](across-how-to-assign-base-calendars.md#lead-time-calculation).
 
 ## <a name="lead-time-calculation"></a>Calcul du délai
-
 Le calendrier principal défini pour le fournisseur ou l'emplacement affecte la manière dont les dates sont calculées et arrondies en jours ouvrés. En conséquence, les deux champs date sur les lignes bon de commande sont calculés comme suit sous différentes conditions.
 
 |Direction de calcul|Calendrier fournisseur défini|Calendrier fournisseur non défini|
@@ -61,7 +64,7 @@ Par exemple, bien qu'un calendrier principal définisse en général tous les sa
 
 La procédure suivante illustre l'exemple d'un emplacement. Remarquez que, à ce stade, vous avez déjà affecté un calendrier principal à l'emplacement.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Emplacements**, puis sélectionnez le lien associé.
 2. Ouvrez l'emplacement que vous voulez mettre à jour, puis sélectionnez le champ **Calendrier personnalisé**. Notez qu'un calendrier doit être sélectionné dans le champ **Code calendrier principal**.
 3. Sur la page **Écritures calendrier personnalisé** qui s'ouvre, choisissez l'action **Conserver modifications calendrier personnalisé**.
 4. Dans la fenêtre **Modifications calendrier personnalisé**, ajoutez des lignes pour les écritures calendrier personnalisé.
@@ -97,7 +100,7 @@ Les calendriers principaux sont affectés à votre propre compagnie, à vos clie
 -   Sur la fiche **Magasin**, le calendrier principal est affecté sur le raccourci **Entrepôt**.  
 -   Sur la page **Agents de livraison** , le calendrier principal est affecté sur la page **Services agent de livraison**.  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Clients**, puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche **Client** pour laquelle vous allez affecter un calendrier principal.  
 3.  Sur le raccourci **Expédition**, dans le champ **Code calendrier principal**, sélectionnez le calendrier principal à affecter.  
 
@@ -113,7 +116,4 @@ Les calendriers principaux sont affectés à votre propre compagnie, à vos clie
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Production](production-manage-manufacturing.md)    
 [Inventaire](inventory-manage-inventory.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

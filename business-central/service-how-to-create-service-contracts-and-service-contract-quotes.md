@@ -1,27 +1,29 @@
 ---
 title: Comment utiliser des contrats de service et des devis contrat de service | Microsoft Docs
 description: Vous pouvez créer un contrat de service manuellement ou à partir d'un devis contrat de service. Vous pouvez créer un contrat en fonction d'un devis contrat de service.
+services: project-madeira
+documentationcenter: ''
 author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
+ms.date: 10/01/2019
 ms.author: bholtorf
-ms.openlocfilehash: d011b97c81492af0ac796d08693084cf65bb7712
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 69cc8f393e60d30b5dd7fefdd3f5a49df5aaede3
+ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6436386"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553926"
 ---
 # <a name="work-with-service-contracts-and-service-contract-quotes"></a>Utiliser des contrats de service et des devis contrat de service
 Vous pouvez créer un contrat de service manuellement ou à partir d'un devis contrat de service. Vous pouvez utiliser un devis contrat de service en tant qu'étape préliminaire d'un contrat de service, dans laquelle votre compagnie fait une offre au client et qui nécessite d'obtenir l'approbation du client pour pouvoir être convertie en contrat de service. Les procédures de création d'un contrat de service ou d'un devis contrat de service sont identiques.  
 
 ## <a name="to-create-a-service-contract-or-service-contract-quote"></a>Pour créer un contrat de service ou un devis contrat de service  
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Contrats de service** ou **Devis contrat de service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Contrats de services** ou **Devis contrat de service**, puis sélectionnez le lien associé.  
 2. Pour créer un contrat de service ou un devis contrat de service.  
 3. Renseignez le champ **N°** . Une boîte de dialogue s'ouvre, vous demandant si vous souhaitez renseigner les données communes à partir d'un modèle contrat. Si vous souhaitez créer un tel contrat de service ou devis contrat de service, sélectionnez le bouton **Oui**. La page **Liste des modèles contrat de service** s'ouvre.  
 4. Sélectionnez le modèle approprié, puis choisissez **OK** afin de l'utiliser pour créer le contrat de service ou le devis contrat de service.  
@@ -46,7 +48,7 @@ Pour les contrats non détaillés, le montant facturé est calculé de la maniè
 * montant facturé = (montant annuel / nombre de jours de l'année) * nombre de jours de la période de début.  
 * Si le contrat expire avant la fin de la période de début, la date d'expiration devient la date fin de la période de début.    
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Devis de contrats de service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Devis contrat de service**, puis sélectionnez le lien associé.  
 2. Ouvrez le devis contrat de service que vous voulez convertir en contrat de service.  
 3. Sélectionnez l'action **Créer contrat**.  
 4. Si la date de début du contrat est antérieure au début de la période de facturation suivante, vous serez invité à créer une facture pour la période de démarrage du contrat. Choisissez **Oui**.  
@@ -56,7 +58,7 @@ Pour les contrats non détaillés, le montant facturé est calculé de la maniè
 ## <a name="to-create-contract-service-credit-memos"></a>Pour créer des notes de crédit service contrat
 Vous pouvez utiliser une note de crédit service contrat lorsqu'un client annule un contrat de service prépayé ou supprime un article de service d'un contrat prépayé. Vous pouvez également l'utiliser pour corriger une facture service erronée.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de crédit service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Notes de crédit service**, puis sélectionnez le lien associé.  
 2. Créez une note de crédit service.  
 3. Renseignez le champ **N°** .  
 4. Dans le champ **N° client**, entrez le numéro du client du contrat de service.  
@@ -64,7 +66,7 @@ Vous pouvez utiliser une note de crédit service contrat lorsqu'un client annule
      Le raccourci **Facturation** affiche des informations copiées à partir de la fiche **Client**. Si vous souhaitez reporter la note de crédit pour un autre client que celui indiqué sur le raccourci **Général**, entrez le numéro de ce client dans le champ **N° client facturé** .  
 
     > [!NOTE]  
-    >  Vous pouvez comparer la note de crédit avec le document reporté initialement sur la page **Factures service reportées**. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures de service reportées**, puis sélectionnez le lien associé.  
+    >  Vous pouvez comparer la note de crédit avec le document reporté initialement sur la page **Factures service reportées**. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Factures service reportées**, puis sélectionnez le lien associé.  
 
 5. Renseignez les champs **Date de report** et **Date document**.  
 6. Sur les lignes note de crédit, entrez les informations relatives aux articles retournés ou retirés, ou à la réduction qui est envoyée. Vous pouvez également utiliser le traitement en lot **Obtenir écr. contrat prépayé**.  
@@ -81,7 +83,7 @@ Vous pouvez modifier le statut du contrat, initialement défini sur **Verrouill�
 ## <a name="to-add-a-contract-line-to-a-service-contract-or-contract-quote"></a>Pour ajouter une ligne contrat à un contrat de service ou à un devis contrat  
 Lorsqu'un client achète un nouvel article et souhaite l'inclure dans le contrat de service ou le devis de contrat existant, vous pouvez enregistrer l'article en tant qu'article de service et l'ajouter ensuite en tant que nouvelle ligne contrat au contrat ou au devis de contrat.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Contrats de service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Contrats de service**, puis sélectionnez le lien associé.  
 2. Ouvrez le contrat de service ou devis de contrat de service auquel vous voulez ajouter une ligne.  
 3. Choisissez l'action **Ouvrir contrat** pour ouvrir le contrat de service ou le devis contrat de service et le modifier.  
 4. Accédez au raccourci **Détail facture** et activez le champ **Autoriser montants non soldés** si vous souhaitez modifier le montant annuel et répartir la différence du montant annuel manuellement dans les lignes de contrat. Sinon, désactivez le champ **Autoriser montants non soldés**. Une fois que vous avez modifié le montant annuel, cela répartit automatiquement la différence du montant annuel dans les lignes contrat.  
@@ -91,7 +93,7 @@ Lorsqu'un client achète un nouvel article et souhaite l'inclure dans le contrat
 ## <a name="to-remove-contract-lines"></a>Pour retirer des lignes contrat  
 Vous pouvez supprimer des lignes du contrat de service lorsque vous supprimez du contrat de service les articles de service correspondants. Généralement, vous supprimez une ligne contrat expirée ou qui correspond à l'article de service qui est tombé en panne.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Contrats de service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Contrats de service**, puis sélectionnez le lien associé.  
 2. Ouvrez le contrat de service dont vous voulez supprimer des lignes.  
 3. Choisissez l'action **Ouvrir contrat** pour ouvrir le contrat de service et le modifier.  
 4. Choisissez la ligne contrat à supprimer. Renseignez le champ **Date expiration contrat** avec la date à compter de laquelle vous souhaitez supprimer la ligne. Par exemple, vous pourriez saisir la date à laquelle l'article de service est tombé en panne.  
@@ -122,7 +124,7 @@ Sur les lignes contrat de service, les montants des champs **Coût ligne** et **
 ## <a name="to-add-a-contract-discount-to-service-contract-quotes"></a>Pour ajouter un escompte contrat pour des devis contrats de service  
 Vous pouvez ajouter des remises contrat sur des services pour les devis contrat et les contrats de service. Les remises peuvent être accordées sur les pièces de rechange d'un groupe article de service particulier, sur les heures ressource des ressources d'un groupe ressources particulier, et sur des coûts service particuliers.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Devis de contrats de service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Devis contrat de service**, et sélectionnez le lien associé.  
 2. Choisissez le devis auquel ajouter des escomptes.  
 3. Choisissez l'action **Escomptes service**. La page **Escompte contrat/service** s'affiche.  
 4. Pour créer un escompte contrat, choisissez l'action **Nouveau**.  
@@ -142,7 +144,7 @@ Vous pouvez devoir changer le propriétaire d'un contrat de service. Si un artic
 >   
 >  Par exemple, supposons que l'article de service n° 8 est inclus dans les contrats SC00003 et SC00015. Le contrat SC00015 contient également l'article de service n° 15, qui est aussi inclus dans le contrat SC00080. Dans ce cas, le propriétaire des trois contrats et des articles de service est modifié.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Contrats de service**, puis sélectionnez le lien associé. Ouvrez le contrat de service dont vous voulez modifier le propriétaire.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Contrats de service**, puis sélectionnez le lien associé. Ouvrez le contrat de service dont vous voulez modifier le propriétaire.  
 2. Choisissez l'action **Ouvrir contrat** pour ouvrir le contrat et le modifier.  
 3. Choisissez l'action **Modifier client**. La page **Modifier le client du contrat** s'ouvre.  
 4. Dans les champs **N° contrat** et **N° article de service**, vous pouvez voir les numéros du contrat et de l'article de service du client sélectionné. Si le client possède plusieurs contrats contenant plusieurs articles de service, la valeur de ces champs est **Multiple**. Pour visualiser la liste des contrats ou des articles de service correspondants, sélectionnez ces valeurs de champ.  
@@ -154,7 +156,7 @@ Vous pouvez devoir changer le propriétaire d'un contrat de service. Si un artic
 ## <a name="to-update-a-service-contract-price"></a>Réviser un tarif de contrat de service  
 Vous pouvez mettre à jour les tarifs des contrats de service en indiquant un pourcentage révision tarif.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Réviser tarifs contrat service**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Réviser tarifs contrat service**, puis sélectionnez le lien associé.
 2. Choisissez le contrat de service.  
 3. Dans le champ **Date révision**, saisissez une date. Le traitement en lot révise les tarifs de tous les contrats dont la prochaine date de mise à jour de tarif est antérieure ou égale à cette date.  
 4. Saisissez le pourcentage à utiliser pour la révision des tarifs dans le champ **% révision tarif**.  
@@ -165,7 +167,7 @@ Si vous utilisez des contrats de service prépayés, vous devez reporter réguli
 
 Avant de pouvoir reporter les écritures contrat prépayées, vous devez spécifier une série de numéros dans le champ **N° doc. report paiement anticipé** de la page **Configuration Gestion des services**.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Reporter écr. contrat prépayé**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Reporter les écritures de contrat prépayées**, puis sélectionnez le lien associé.  
 2. Dans le champ **Dernière date de report**, entrez une date. Le traitement en lot reporte les écritures service dont la date de report est antérieure à cette date.  
 4. Dans le champ **Date comptabilisation**, saisissez la date que vous souhaitez utiliser comme date comptabilisation sur les lignes feuille comptabilité.  
 5. Dans le champ **Action**, choisissez **Reporter transactions prépayées**.  
@@ -183,7 +185,7 @@ Vous pouvez annuler un contrat de service lorsqu'il a expiré ou qu'il a été a
 > [!NOTE]  
 >  Vous ne pouvez pas rouvrir un contrat après l'avoir annulé.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Contrats de service**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Contrats de service**, puis sélectionnez le lien associé.  
 2. Ouvrez le contrat de service à annuler.  
 3. Choisissez l'action **Ouvrir contrat** pour ouvrir le contrat de service et le modifier.  
 4. Dans le champ **Code motif annulation**, choisissez le code motif adéquat. Pour ajouter des codes motif, cliquez sur l'action **Avancé**.  
@@ -194,12 +196,9 @@ Vous pouvez annuler un contrat de service lorsqu'il a expiré ou qu'il a été a
 6. S'il existe des factures, des notes de crédit ou des écritures prépayées ouvertes non reportées pour le contrat, un message de confirmation apparaît. Dans la zone de message, choisissez **Non** pour revenir au contrat et reporter les documents, ou **Oui** pour poursuivre l'annulation du contrat.  
 
 ## <a name="filing-a-service-contract-or-contract-quote"></a>Remplir un contrat de service ou un devis contrat  
-Vous pouvez archiver à tout moment des contrats de service et des devis contrat pour enregistrer et archiver une copie du contrat ou du devis contrat. [!INCLUDE[prod_short](includes/prod_short.md)] archive automatiquement les contrats de service lorsque vous convertissez les devis contrat en contrats de service ou que vous annulez des contrats de service. Vous pouvez archiver un contrat ou un devis vous-même en choisissant l'action **Archiver contrat** sur les pages **Contrats de service** ou **Devis contrat de service**. Vous pouvez consulter vos contrats ou devis archivés en recherchant **Contrats archivés**.
+Vous pouvez archiver à tout moment des contrats de service et des devis contrat pour enregistrer et archiver une copie du contrat ou du devis contrat. [!INCLUDE[d365fin](includes/d365fin_md.md)] archive automatiquement les contrats de service lorsque vous convertissez les devis contrat en contrats de service ou que vous annulez des contrats de service. Vous pouvez archiver un contrat ou un devis vous-même en choisissant l'action **Archiver contrat** sur les pages **Contrats de service** ou **Devis contrat de service**. Vous pouvez consulter vos contrats ou devis archivés en recherchant **Contrats archivés**.
 
 ## <a name="see-also"></a>Voir aussi  
 [Configurer des contrats de service](service-how-setup-service-contracts.md)  
 [Gestion des services](service-service.md)  
 [Convertir les contrats de service incluant des montants TVA](service-how-to-convert-service-contracts.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

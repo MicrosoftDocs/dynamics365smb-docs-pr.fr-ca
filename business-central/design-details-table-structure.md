@@ -3,19 +3,19 @@ title: Détails de conception- Structure de la table | Microsoft Docs
 description: Pour comprendre comment le stockage et le report d'écriture de dimension sont conçus, il est important de comprendre la structure de tableau.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/08/2021
-ms.author: edupont
-ms.openlocfilehash: 6d418633eb884f0b8cfca2f46fc69103a8fabdb2
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 04e9fda4d784f8e1fa049455ddcab989691e821c
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215738"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3184638"
 ---
 # <a name="design-details-table-structure"></a>Détails de conception : structure de la table
 Pour comprendre comment les écritures dimension sont enregistrées et reportées, il est important de comprendre la structure de la table.  
@@ -181,7 +181,8 @@ Le champ 480 existe dans les tables suivantes.
 |5637|**GL tampon report immo.**|  
 |7136|**Tampon de budget d'article**|  
 
-## <a name="see-also"></a>Voir aussi
-
-[Aperçu des écritures d'ensemble de dimensions](design-details-dimension-set-entries-overview.md)  
-[Détails de conception : Recherche des combinaisons de dimensions](design-details-searching-for-dimension-combinations.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Détails de conception : écritures d'ensemble de dimensions](design-details-dimension-set-entries.md)   
+ [Aperçu des écritures d'ensemble de dimensions](design-details-dimension-set-entries-overview.md)   
+ [Détails de conception : recherche des combinaisons de dimensions](design-details-searching-for-dimension-combinations.md)   
+ 

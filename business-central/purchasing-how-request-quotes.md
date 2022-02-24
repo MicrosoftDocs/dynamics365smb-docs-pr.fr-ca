@@ -1,23 +1,29 @@
 ---
-title: Créer un devis d’achat pour demander une offre
+title: Créer un devis d'achat pour demander une offre | Microsoft Docs
 description: Décrit comment créer une offre vente offrent ou un document de demande de proposition pour enregistrer votre offre à un client pour vendre des produits dans certaines conditions.
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: rfq
-ms.search.form: '49, 97, 9306, 9346'
-ms.date: 06/23/2021
-ms.author: edupont
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: 71c31fc15027d1f2d571afe97ae79f95709c9f06
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2312422"
 ---
 # <a name="request-quotes"></a>Demander des devis
-
 Vous pouvez utiliser un devis en tant que phase préliminaire d'un bon de commande, et convertir cette commande en facture achat ou en bon de commande.
 
+
 ## <a name="to-create-a-purchase-quote"></a>Pour créer un devis d'achat
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Devis achat**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Devis**, puis sélectionnez le lien associé.
 2. Créez un document, de la même manière que vous créez un bon de commande. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 
 ## <a name="to-convert-a-purchase-quote-to-a-purchase-order"></a>Pour convertir un devis en bon de commande
@@ -31,7 +37,4 @@ Le devis d'achat est supprimé de la base de données. Une facture achat ou un b
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Définition des achats](purchasing-setup-purchasing.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

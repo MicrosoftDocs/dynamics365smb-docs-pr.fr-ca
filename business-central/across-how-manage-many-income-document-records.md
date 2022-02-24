@@ -5,19 +5,19 @@ services: project-madeira
 documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: electronic document, e-invoice, incoming document, OCR, ecommerce, document exchange, import invoice
-ms.date: 04/01/2021
-ms.author: edupont
-ms.openlocfilehash: 69c807a9c99b105782240c43d096a73ff01e2664
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: c245690690a02bb4d7fccb6c07737b71c96f14d5
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5775982"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3188526"
 ---
 # <a name="manage-many-incoming-document-records"></a>Gérer de nombreux enregistrements document entrant
 Lors de la création ou du traitement des enregistrements document, le nombre de lignes sur la page **Documents entrants** peut croître de telle façon que vous perdez la vue d'ensemble. Par conséquent, vous pouvez définir les enregistrements de documents entrants sur Traité afin de les supprimer de la vue par défaut. Lorsque vous choisissez l'action **Afficher tout**, vous pouvez afficher les enregistrements traités et non traités.
@@ -56,7 +56,4 @@ Tous les enregistrements de documents entrants sont affichés, y compris ceux po
 [Traiter les documents entrants](across-process-income-documents.md)  
 [Documents entrants](across-income-documents.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

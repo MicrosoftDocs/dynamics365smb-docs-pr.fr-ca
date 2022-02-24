@@ -1,18 +1,23 @@
 ---
-title: Déplacement d’articles
-description: 'Lorsque les articles sont en inventaire, il peut être nécessaire de les déplacer entre plusieurs zones pour prendre en charge les activités entrepôt quotidiennes permettant de conserver le flux d''articles dans l''entrepôt.'
+title: Déplacement d'articles | Microsoft Docs
+description: Lorsque les articles sont en inventaire, il peut être nécessaire de les déplacer entre plusieurs zones pour prendre en charge les activités entrepôt quotidiennes permettant de conserver le flux d'articles dans l'entrepôt. Certains mouvements se produisent en relation directe avec les opérations internes ; par exemple, lorsqu'un bon de production impose que des composantes soient livrées ou que des produits finis soient rangés. D'autres mouvements se produisent dans le cadre d'une simple optimisation de l'espace des entrepôts ou en tant que mouvements ad-hoc depuis ou vers des opérations.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: '7315, 7349, 7351, 7382, 7384, 7386, 7387, 7399, 7400, 9314, 9330, 9345'
-ms.date: 06/25/2021
-ms.author: edupont
+ms.search.keywords: ''
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: f7fd88c88a69806e6cc914c27737d3a8b823bc51
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2876498"
 ---
 # <a name="moving-items"></a>Déplacement d'articles
-
 L'activité entrepôt consistant à déplacer les articles dans l'entrepôt s'exécute différemment selon la configuration des fonctionnalités du module Gestion d'entrepôt. Le niveau de complexité du paramétrage varie : aucune fonctionnalité entrepôt, configurations de stockage de base pour le traitement par commande dans une ou plusieurs activités uniquement, configurations avancées dans lesquelles toutes les activités entrepôt doivent être exécutées dans un flux suggéré. Pour plus d'informations, voir [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).
 
 Dans un emplacement entrepôt, il peut être nécessaire de déplacer les articles entre plusieurs zones pour prendre en charge les activités entrepôt quotidiennes permettant de conserver le flux d'articles dans l'entrepôt. Certains mouvements se produisent en relation directe avec les opérations internes ; par exemple, lorsqu'un bon de production impose que des composantes soient livrées ou que des produits finis soient rangés. D'autres mouvements se produisent dans le cadre d'une simple optimisation de l'espace des entrepôts ou en tant que mouvements ad-hoc depuis ou vers des opérations.
@@ -34,14 +39,10 @@ Les tâches de comptabilisation, d'ajustement et de reclassement d'articles lié
 |Mettre à jour la fréquence de réapprovisionnement des emplacements (emplacements prélèvement, etc.) suite aux fluctuations de la demande.|[Calculer le réapprovisionnement de la zone](warehouse-how-to-calculate-bin-replenishment.md)|
 |Restructurez votre entrepôt avec de nouveaux codes et caractéristiques de zone et déplacez-les le cas échéant.|[Restructurer les entrepôts](warehouse-how-to-restructure-warehouses.md)|  
 
-## <a name="see-also"></a>Voir aussi
-
+## <a name="see-also"></a>Voir aussi  
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  
 [Stock](inventory-manage-inventory.md)  
-[Configuration de Warehouse Management](warehouse-setup-warehouse.md) 
-[Gestion d’assemblage](assembly-assemble-items.md)
-[Détails de conception : Warehouse Management](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
+[Gestion d'assemblage](assembly-assemble-items.md)    
+[Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

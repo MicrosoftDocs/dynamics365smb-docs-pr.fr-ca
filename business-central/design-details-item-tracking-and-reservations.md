@@ -1,24 +1,23 @@
 ---
-title: 'Détails de conception : traçabilité et réservations'
+title: Détails de conception - Traçabilité et réservations | Microsoft Docs
 description: Cette rubrique présente la traçabilité et les réservations, et décrit les concepts qui leur sont associés.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/15/2021
-ms.author: edupont
-ms.openlocfilehash: d2c5032983bd20fc1e8fa902bd6ed522506fc5b3
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: bfa2706b4d6d44a6f565685a66668c336b7a20e3
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6320898"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185118"
 ---
 # <a name="design-details-item-tracking-and-reservations"></a>Détails de conception : traçabilité et réservations
-
 L'utilisation simultanée de la réservation et de la traçabilité spécifique est rare, parce qu'elles créent toutes les deux un couplage entre l'approvisionnement et la demande. Sauf pour les situations où un client ou un gestionnaire de production demande un lot spécifique, il est rarement judicieux de réserver des articles de l'inventaire qui possèdent déjà des numéros traçabilité pour une affectation spécifique. Bien qu'il soit possible de réserver des articles nécessitant une traçabilité, une fonctionnalité spéciale est nécessaire pour éviter les conflits de disponibilité entre les préparateurs de commandes qui demandent les mêmes articles suivis.  
   
 Le concept de Lien tardif garantit qu'une réservation non spécifique d'un numéro de série ou d'un numéro de lot reste légèrement couplée jusqu'au report. Au moment du report, le système de réservation peut remanier les réservations non spécifiques pour s'assurer que l'affectation fixe est possible par rapport au numéro de série/lot prélevé de manière effective. Par ailleurs, le numéro de lot ou de série est disponible pour une réservation spécifique dans d'autres documents demandant ce numéro de série ou de lot spécifique.  
@@ -26,7 +25,7 @@ Le concept de Lien tardif garantit qu'une réservation non spécifique d'un num�
 Une réservation non spécifique est une réservation pour laquelle l'utilisateur ne se soucie pas de l'article prélevé en particulier, alors qu'une réservation spécifique est une réservation pour laquelle l'utilisateur se soucie de l'article prélevé en particulier.  
   
 > [!NOTE]  
-> La fonctionnalité Lien tardif concerne uniquement les articles qui sont paramétrés avec une traçabilité spécifique, et elle s'applique uniquement aux réservations de l'inventaire, et non aux commandes approvisionnement entrantes.  
+>  La fonctionnalité Lien tardif concerne uniquement les articles qui sont paramétrés avec une traçabilité spécifique, et elle s'applique uniquement aux réservations de l'inventaire, et non aux commandes approvisionnement entrantes.  
   
 La réservation des numéros traçabilité se classe en deux catégories, comme indiqué dans le tableau ci-dessous.  
   
@@ -36,11 +35,12 @@ La réservation des numéros traçabilité se classe en deux catégories, comme 
 |Non spécifique|Vous ne sélectionnez pas un numéro de série ou de lot spécifique lorsque vous réservez l'article en inventaire à partir d'une demande, comme un document de vente.<br /><br /> Il s'agit d'un état qui est imposé à une écriture de réservation pour les numéros de série ou de lot qui ne sont pas spécifiquement sélectionnés. **Remarque :** la demande n'indique pas les numéros de série ou de lot. <br /><br /> Par exemple, vous souhaitez réserver une boîte de peinture bleue de n'importe quel lot de votre document de vente. Une boîte de peinture bleue de n'importe quel numéro de série ou numéro de lot est livrée au client.|  
   
 La principale différence entre la réservation spécifique et la réservation non spécifique est définie par l'existence des numéros de série ou des numéros de lot du côté de la demande, comme l'indique le tableau ci-dessous.  
-
-| Type            | Approvisionnement                | Demande                   |
-|-----------------|-----------------------|--------------------------|
-| **Spécifique**    | Numéro de série ou de lot. | Numéro de série ou de lot.    |
-| **Non spécifique** | Numéro de série ou de lot. | Aucun numéro de série ou de lot |
+  
+||||  
+|-|-|-|  
+||**Approvisionnement**|**Demande**|  
+|**Spécifique**|Numéro de série ou de lot.|Numéro de série ou de lot.|  
+|**Non spécifique**|Numéro de série ou de lot.|Aucun numéro de série ou de lot|  
   
 Lorsque vous réservez des quantités en inventaire à partir d'une ligne document sortant pour un article ayant des numéros de traçabilité article affectés et étant configuré pour une traçabilité d'article spécifique, la page **Réservation** vous conduit à travers différents flux de travail en fonction de votre besoin de numéros de série ou de lot.  
   
@@ -92,5 +92,3 @@ Ce scénario d'utilisation est pris en charge par la fonctionnalité Late Bindin
   
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : traçabilité](design-details-item-tracking.md)
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

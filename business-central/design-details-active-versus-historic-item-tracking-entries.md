@@ -1,21 +1,21 @@
 ---
-title: Détails de conception - Comparaison entre écritures traçabilité actives et historiques
-description: Lorsque des parties d’une quantité de ligne document sont reportées, seule cette quantité est transférée vers les écritures article et ses numéros de suivi.
+title: 'Détails de conception : comparaison entre écritures traçabilité actives et historiques | Microsoft Docs'
+description: Lorsque des parties d'une quantité de ligne document sont reportées, seule cette quantité en particulier est transférée vers les écritures du grand livre d'articles et ses numéros de suivi. Toutefois, vous voudrez accéder à toutes les informations de traçabilité pertinentes directement à partir de la ligne document actif. C'est-à-dire, non seulement vous voudrez visualiser les écritures relatives à la quantité restante, mais vous voudrez également des informations sur les unités reportées. Lorsque vous consultez ou modifiez la page **Lignes traçabilité**, le contenu collectif du tableau **Spécification traçabilité** (T336) et du tableau **Écriture de réservation** (T337) est présenté dans une version temporaire de T336. Ceci garantit que les données de suivi article historiques et actives sont accessibles en même temps.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/15/2021
-ms.author: edupont
-ms.openlocfilehash: 167a765774d365a7890fa39a20923ab0c78e53a4
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 35fafa5ed84c2435b2227b2c1e4c9ca683fe7a22
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6326148"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185862"
 ---
 # <a name="design-details-active-versus-historic-item-tracking-entries"></a>Détails de conception : comparaison entre écritures traçabilité actives et historiques
 Lorsque des parties d'une quantité de ligne document sont reportées, seule cette quantité en particulier est transférée vers les écritures du grand livre d'articles et ses numéros de suivi. Toutefois, vous voudrez accéder à toutes les informations de traçabilité pertinentes directement à partir de la ligne document actif. C'est-à-dire, non seulement vous voudrez visualiser les écritures relatives à la quantité restante, mais vous voudrez également des informations sur les unités reportées. Lorsque vous consultez ou modifiez la page **Lignes traçabilité**, le contenu collectif du tableau **Spécification traçabilité** (T336) et du tableau **Écriture de réservation** (T337) est présenté dans une version temporaire de T336. Ceci garantit que les données de suivi article historiques et actives sont accessibles en même temps.  
@@ -62,6 +62,3 @@ Lorsque des parties d'une quantité de ligne document sont reportées, seule cet
 ## <a name="see-also"></a>Voir aussi  
  [Détails de conception : traçabilité](design-details-item-tracking.md)   
  [Détails de conception : page Lignes traçabilité](design-details-item-tracking-lines-window.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

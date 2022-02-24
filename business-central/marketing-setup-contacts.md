@@ -5,19 +5,19 @@ services: project-madeira
 documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: relationship, prospect
-ms.date: 04/01/2021
-ms.author: edupont
-ms.openlocfilehash: ed9a7b84798ac7b0bf103329c9e06ea0468aa03b
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 69e5cbb897527a903594af893c0af44a48dbee27
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5788087"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3181261"
 ---
 # <a name="set-up-contacts"></a>Configurer les contacts
 Lors de la création de contacts, vous pouvez saisir des informations spécifiques, telles que le secteur d'activité du contact et votre relation d'affaires avec elles.
@@ -149,7 +149,7 @@ Les valeurs héritées des champs sont prioritaires sur les valeurs par défaut 
 ## <a name="synchronizing-contacts-with-customers-vendors-and-bank-accounts"></a>Synchronisation des contacts avec les clients, les fournisseurs et les comptes bancaires
 Pour synchroniser la fiche contact avec une fiche client, fournisseur ou compte bancaire liée, vous devez renseigner le champ approprié dans la section **Code relation d'affaires pour** sur le raccourci **Interactions** de la page **Configuration marketing**.  
 
-Pour plus d'informations, reportez-vous à [Procédure de synchronisation des contacts avec les clients, les fournisseurs et les comptes bancaires](marketing-create-contact-companies.md#synchronizing-contacts-with-customers-vendors-employees-and-bank-accounts).
+Pour plus d'informations, reportez-vous à [Procédure de synchronisation des contacts avec les clients, les fournisseurs et les comptes bancaires](marketing-create-contact-companies.md#synchronizing-contacts-with-customers-vendors-and-bank-accounts).
 
 ## <a name="searching-for-duplicate-contacts"></a>Recherche de doublons de contacts
 Vous pouvez configurer l'application pour qu'elle recherche automatiquement les doublons chaque fois que vous créez un contact ou vous pouvez choisir d'effectuer une recherche manuelle lorsque les contacts sont créés. Vous pouvez également configurer l'application pour qu'elle mette automatiquement à jour les chaînes de recherche chaque fois que vous modifiez les données de contact ou que vous créez un contact. Vous pouvez choisir le pourcentage de chaînes communes, c'est-à-dire le pourcentage de chaînes qui doivent être identiques dans deux contacts pour que l'application les considère comme des doublons. Vous définissez cela à partir de l'organisateur **Doublons** sur la page **Configuration marketing**.
@@ -160,7 +160,4 @@ Une fois que vous avez trouvé un doublon de contact, vous pouvez utilisez la pa
 [Gestion de contacts](marketing-contacts.md)  
 [Créez des contacts](marketing-create-contact-companies.md)  
 [Gestion des opportunités de ventes](marketing-manage-sales-opportunities.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

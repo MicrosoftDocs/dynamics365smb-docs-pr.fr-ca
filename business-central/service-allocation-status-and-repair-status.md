@@ -1,21 +1,23 @@
 ---
 title: État affectation et état réparation | Microsoft Docs
 description: Découvrez la relation entre l'état réparation des articles de service et l'état affectation des écritures d'affectation associées.
+services: project-madeira
+documentationcenter: ''
 author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: resources, allocation, status, repairs
-ms.date: 04/01/2021
+ms.date: 10/01/2019
 ms.author: bholtorf
-ms.openlocfilehash: 9cf3349d654a4e007079075c64e9e56654619810
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: cffd91900c5644ab31764290c0a3ff78a4685171
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5772414"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2316246"
 ---
 # <a name="allocation-status-and-repair-status-of-service-items"></a>État affectation et état réparation des articles de service
 L'état réparation des articles de service et l'état affectation des écritures affectation des articles de service sont liés dans le module Gestion des services. L'état affectation change lorsque vous modifiez l'état réparation de l'article de service en **Terminé** ou **Service en partie réalisé**, et lorsque vous convertissez un devis service en commande service. L'état réparation de l'article de service change lorsque vous annulez l'affectation de l'article de service, ou que vous réaffectez l'article à une autre ressource. Vous pouvez visualiser l'état réparation des articles de service sur la page **Tâches service** et vous pouvez mettre à jour l'état réparation dans le champ **Code état réparation** de la page **Feuille activité article de service**. Vous pouvez visualiser l'état affectation dans le champ **État** de la page **Affectations ressources**.  
@@ -38,7 +40,7 @@ Lorsque vous convertissez un devis service en commande service, la commande serv
 * Une recherche d'écritures affectation de tous les articles de service de la commande service qui présentent le statut **Actif** est effectuée. s'il en est trouvé, leur état affectation passe de **Actif** à **Réaffectation nécessaire**.  
   
 ## <a name="canceling-allocations"></a>Annulation d'affectations  
-Lorsque vous annulez une affectation d'un article de service, [!INCLUDE[prod_short](includes/prod_short.md)] met à jour l'état affectation de l'écriture affectation correspondante de **Actif** à **Réaffectation nécessaire**.
+Lorsque vous annulez une affectation d'un article de service, [!INCLUDE[d365fin](includes/d365fin_md.md)] met à jour l'état affectation de l'écriture affectation correspondante de **Actif** à **Réaffectation nécessaire**.
 
 L'état réparation de l'article de service de l'écriture affectation est mis à jour comme suit :  
   
@@ -70,6 +72,3 @@ Une nouvelle écriture affectation comportant la nouvelle ressource est créée 
 [Configurer les affectations des ressources](service-how-setup-resource-allocation.md)  
 [Affecter des ressources](service-how-to-allocate-resources.md)  
 
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

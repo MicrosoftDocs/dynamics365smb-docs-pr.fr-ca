@@ -1,25 +1,25 @@
 ---
-title: Fonctionnalités locales Canada
-description: Les rubriques suivantes décrivent la fonctionnalité locale unique à la version canadienne de Business Central.
+title: Fonctionnalités locales Canada | Microsoft Docs
+description: Les rubriques suivantes décrivent la fonctionnalité locale dans la version canadienne de Business Central.
 author: sorenfriisalexandersen
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/17/2021
+ms.date: 06/09/2020
 ms.author: soalex
-ms.openlocfilehash: 3cf565c1067f6fbbc3cde22959dcd16adac43263
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.openlocfilehash: 25df692b71a666d7c8cbdfbff435ac52bca7e2a3
+ms.sourcegitcommit: 0b5f8f68b1c9526288bfcce1a3bdc988d2910040
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6323990"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454318"
 ---
-# <a name="local-functionality-in-the-canadian-version"></a>Fonctionnalité locale dans la version canadienne
+# <a name="canada-local-functionality"></a>Fonctionnalités locales Canada
 
-Les rubriques suivantes décrivent les fonctionnalités locales spécifiques à la version canadienne de [!INCLUDE[prod_short](../../includes/prod_short.md)].  
+Les rubriques suivantes décrivent les fonctionnalités locales spécifiques à la version canadienne de [!INCLUDE[d365fin](../../includes/d365fin_md.md)].  
 
 ## <a name="feature-availability"></a>Disponibilité des fonctionnalités
 
@@ -39,10 +39,7 @@ Les rubriques suivantes décrivent les fonctionnalités locales spécifiques à 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Utilisation de [!INCLUDE[prod_short](../../includes/prod_short.md)]](../../ui-work-product.md)  
+[Utilisation de [!INCLUDE[d365fin](../../includes/d365fin_md.md)]](../../ui-work-product.md)  
 [Disponibilité par pays/région et langues prises en charge](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations)  
 
-## [!INCLUDE[prod_short](../../includes/free_trial_md.md)]  
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+## [!INCLUDE[d365fin](../../includes/free_trial_md.md)]  

@@ -5,22 +5,28 @@ services: project-madeira
 documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: overview
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'service, service items, respond, response'
-ms.date: 04/01/2021
-ms.author: edupont
+ms.search.keywords: service, service items, respond, response
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: 08989bb6903aa9f236b89d55d4b54af4db51cf1a
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2311918"
 ---
 # <a name="delivering-service"></a>Fournir un service
-[!INCLUDE[prod_short](includes/prod_short.md)] inclut des fonctionnalités qui vous permettent d'offrir le service correspondant aux contrats créés et les commandes service que vous vous êtes engagé à traiter. Grâce au **Tableau d'affectation**, les techniciens de service et agents d'affectation ont facilement accès aux commandes service en attente. Le **Tableau d'affectation** affiche les commandes en cours et les commandes terminées.  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] inclut des fonctionnalités qui vous permettent d'offrir le service correspondant aux contrats créés et les commandes service que vous vous êtes engagé à traiter. Grâce au **Tableau d'affectation**, les techniciens de service et agents d'affectation ont facilement accès aux commandes service en attente. Le **Tableau d'affectation** affiche les commandes en cours et les commandes terminées.  
   
 La fenêtre **Tâches service**, qui affiche vos obligations de service, permet également de consulter les commandes service en attente. Elle indique la position de la commande dans le flux de service et permet de modifier cet état pour refléter les interactions avec le client.  
   
 Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.   
 
-Une application de gestion des services doit interagir avec une demande client pour le service. Cette demande de service est généralement convertie en commande service. [!INCLUDE[prod_short](includes/prod_short.md)] inclut des outils qui permettent de créer une commande directement en réponse à une demande client ou dans le cadre du traitement du contrat, selon la configuration de votre application.  
+Une application de gestion des services doit interagir avec une demande client pour le service. Cette demande de service est généralement convertie en commande service. [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut des outils qui permettent de créer une commande directement en réponse à une demande client ou dans le cadre du traitement du contrat, selon la configuration de votre application.  
   
 Le cas échéant, vous pouvez gérer un programme d'articles de prêt pour vos clients. Vous pouvez également déterminer votre échelle de tarification, mettre les offres de tarification service dans des groupements logiques et créer des ajustements prix.  
   
@@ -40,6 +46,3 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 [Services de planification](service-plan-service.md)  
 [Exécution des contrats de service](service-fulfill-service-contracts.md)  
 [Gestion des projets](projects-manage-projects.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

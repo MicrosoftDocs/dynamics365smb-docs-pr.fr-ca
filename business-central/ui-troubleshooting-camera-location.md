@@ -3,23 +3,23 @@ title: "Dépannage : accès à la caméra et à l'emplacement"
 description: Cet article décrit comment résoudre les problèmes d'accès à la caméra et aux informations d'emplacement dans Business Central.
 author: blrobl
 ms.author: t-blrobl
-ms.date: 04/01/2021
+ms.date: 04/22/2020
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: conceptual
-ms.service: dynamics365-business-central
-ms.openlocfilehash: d6323ef6ce1a278d0dfd5fc0ecb4c7f8e9632aa1
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.topic: article
+ms.prod: dynamics365-business-central
+ms.openlocfilehash: befb7af01ba26512a4b62005e81b5a3ff351b02f
+ms.sourcegitcommit: 7d54d8abe52e0546378cf760f5082f46e8441b90
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5783094"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3324488"
 ---
 # <a name="troubleshooting-accessing-camera-and-location"></a>Dépannage : accès à la caméra et à l'emplacement
 
-Vous pouvez rencontrer des problèmes lorsque vous essayez d'accéder à la caméra et aux informations d'emplacement d'un appareil à partir de [!INCLUDE[prod_short](includes/prod_short.md)]. Vous pouvez trouver les causes possibles de ces problèmes et comment les contourner ci-dessous.
+Vous pouvez rencontrer des problèmes lorsque vous essayez d'accéder à la caméra et aux informations d'emplacement d'un appareil à partir de [!INCLUDE[prodshort](includes/prodshort.md)]. Vous pouvez trouver les causes possibles de ces problèmes et comment les contourner ci-dessous.
 
 ## <a name="device-must-have-camera-and-location-capabilities"></a>L'appareil doit avoir des fonctionnalités de caméra et d'emplacement
 
@@ -29,11 +29,11 @@ Si votre appareil possède des fonctionnalités de caméra et d'emplacement, mai
 
 ## <a name="access-permissions-not-enabled"></a>Autorisations d'accès non activées
 
-Vous devez autoriser l'accès général à la caméra et à l'emplacement depuis les paramètres de confidentialité de votre appareil et donner explicitement l'autorisation de [!INCLUDE[prod_short](includes/prod_short.md)] pour y accéder. Par exemple, pour voir ou modifier les autorisations pour un appareil fonctionnant sous Windows, accédez à **Paramètres**, choisissez **Confidentialité**, puis **Autorisations d'application**. 
+Vous devez autoriser l'accès général à la caméra et à l'emplacement depuis les paramètres de confidentialité de votre appareil et donner explicitement l'autorisation de [!INCLUDE[prodshort](includes/prodshort.md)] pour y accéder. Par exemple, pour voir ou modifier les autorisations pour un appareil fonctionnant sous Windows, accédez à **Paramètres**, choisissez **Confidentialité**, puis **Autorisations d'application**. 
 
-Pour les appareils mobiles, vous devez accorder des autorisations d'accès à la caméra et à l'emplacement à l'application mobile [!INCLUDE[prod_short](includes/prod_short.md)]. Pour ce faire pour un appareil iOS, accédez à **Paramètres**, choisissez **Confidentialité**, puis **Caméra** ou **Emplacement**. Pour les appareils Android, accédez à **Paramètres**, choisissez **Applications et notifications**, **Avancée**, **Gestionnaire des autorisations**, puis **Caméra** ou **Emplacement**.
+Pour les appareils mobiles, vous devez accorder des autorisations d'accès à la caméra et à l'emplacement à l'application mobile [!INCLUDE[prodshort](includes/prodshort.md)]. Pour ce faire pour un appareil iOS, accédez à **Paramètres**, choisissez **Confidentialité**, puis **Caméra** ou **Emplacement**. Pour les appareils Android, accédez à **Paramètres**, choisissez **Applications et notifications**, **Avancée**, **Gestionnaire des autorisations**, puis **Caméra** ou **Emplacement**.
 
-De plus, si vous utilisez [!INCLUDE[prod_short](includes/prod_short.md)] dans un navigateur, vous devez également accorder l'autorisation du site [!INCLUDE[prod_short](includes/prod_short.md)] pour accéder à la caméra ou aux informations d'emplacement. Pour voir ou modifier les autorisations d'un site dans le navigateur Microsoft Edge, allez à **Paramètres**, choisissez **Autorisations de site**, puis **Caméra** ou **Emplacement**. Notez que cela peut être différent pour d'autres navigateurs.
+De plus, si vous utilisez [!INCLUDE[prodshort](includes/prodshort.md)] dans un navigateur, vous devez également accorder l'autorisation du site [!INCLUDE[prodshort](includes/prodshort.md)] pour accéder à la caméra ou aux informations d'emplacement. Pour voir ou modifier les autorisations d'un site dans le navigateur Microsoft Edge, allez à **Paramètres**, choisissez **Autorisations de site**, puis **Caméra** ou **Emplacement**. Notez que cela peut être différent pour d'autres navigateurs.
 
 Par défaut, l'appareil ou le navigateur affichera une demande d'accès à ces fonctionnalités lorsque l'utilisateur les activera pour la première fois.
 
@@ -49,7 +49,7 @@ La seule exception est la connexion à `http://localhost`, utilisé à des fins 
 
 ## <a name="working-with-virtualization-technologies"></a>Utilisation des technologies de virtualisation
 
-Lors de la connexion à [!INCLUDE[prod_short](includes/prod_short.md)] via Remote Desktop ou une autre virtualisation, l'accès à la caméra ou à l'emplacement peut ne pas être disponible. Si tel est le cas, utilisez plutôt le système physique.
+Lors de la connexion à [!INCLUDE[prodshort](includes/prodshort.md)] via Remote Desktop ou une autre virtualisation, l'accès à la caméra ou à l'emplacement peut ne pas être disponible. Si tel est le cas, utilisez plutôt le système physique.
 
 ## <a name="antivirus-software"></a>Logiciel antivirus
 Certains logiciels antivirus bloquent l'accès à la caméra et à l'emplacement par défaut. N'oubliez pas de vérifier les paramètres de votre logiciel antivirus.
@@ -57,6 +57,3 @@ Certains logiciels antivirus bloquent l'accès à la caméra et à l'emplacement
 ## <a name="see-also"></a>Voir aussi
 [Implémentation de la caméra dans AL](/dynamics365/business-central/dev-itpro/developer/devenv-implement-camera-al)  
 [Implémentation de l'emplacement dans AL](/dynamics365/business-central/dev-itpro/developer/devenv-implement-location-al)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

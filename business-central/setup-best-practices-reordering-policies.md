@@ -3,19 +3,19 @@ title: 'Pratiques de configuration recommandées : méthodes de réapprovisionn
 description: Sur les fiches article, le champ Méthode réapprovisionnement propose quatre méthodes de planification différentes qui déterminent le mode d'interaction de chacun des paramètres de planification.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
-ms.author: edupont
-ms.openlocfilehash: e788fc7af4335eab99ddce35bf2822e52332a9b9
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 7a6a7193d02d8d42987da7f7eeb9f5ed1ec3e2fd
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6441457"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3192205"
 ---
 # <a name="setup-best-practices-reordering-policies"></a>Pratiques de configuration recommandées : méthodes de réapprovisionnement
 Sur les fiches article, le champ **Méthode réapprovisionnement** propose quatre méthodes de planification différentes qui déterminent le mode d'interaction de chacun des paramètres de planification.  
@@ -28,9 +28,9 @@ Pour sélectionner une méthode de réapprovisionnement, la classification ABC d
 |B|20|20|
 |C|60 à 70|10 à 30|
 
-La classification ABC révèle qu'il est possible de réduire les efforts et de réaliser des économies en appliquant aux articles de faible valeur-volume un contrôle moins strict qu'aux articles ayant une valeur ou un volume élevé. La figure ci-après indique quelle méthode de réapprovisionnement dans [!INCLUDE[prod_short](includes/prod_short.md)] est la mieux adaptée aux articles A, B et C, respectivement.
+La classification ABC révèle qu'il est possible de réduire les efforts et de réaliser des économies en appliquant aux articles de faible valeur-volume un contrôle moins strict qu'aux articles ayant une valeur ou un volume élevé. La figure ci-après indique quelle méthode de réapprovisionnement dans [!INCLUDE[d365fin](includes/d365fin_md.md)] est la mieux adaptée aux articles A, B et C, respectivement.
 
-![Classification ABC.](media/abc_classification.png "abc_classification")
+![Classification ABC](media/abc_classification.png "abc_classification")
 
 Le tableau suivant propose des recommandations pour effectuer son choix parmi ces quatre méthodes.  
 
@@ -45,7 +45,4 @@ Le tableau suivant propose des recommandations pour effectuer son choix parmi ce
  [Pratiques de configuration recommandées : planification de l'approvisionnement](setup-best-practices-supply-planning.md)   
  [Détails de conception : gestion des méthodes de réapprovisionnement](design-details-handling-reordering-policies.md)   
  [Configurez les modules complexes à l'aide des meilleures pratiques](set-up-complex-application-areas-using-best-practices.md)  
- [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+ [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

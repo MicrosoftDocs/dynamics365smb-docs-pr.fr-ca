@@ -1,16 +1,23 @@
 ---
-title: Assurer les immobilisations
-description: Vous pouvez attribuer une ou plusieurs immobilisations à une police d’assurance lors du report sur les livres couverture d’assurance à partir de la page **Journal assurance**.
-author: edupont04
+title: Assurer les immobilisations| Microsoft Docs
+Description: Vous pouvez affecter une immobilisation à une police d'assurance, ce qui est représenté par une fiche assurance.
+services: project-madeira
+documentationcenter: ''
+author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'policy, coverage'
-ms.search.form: '5647, 5644, 5653, 5651, 5655, 5652, 5645, 5656, 5646, 5648, 9275'
-ms.date: 06/29/2021
-ms.author: edupont
+ms.search.keywords: policy, coverage
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 3e26786d1568cdae30be0bcb17de7a5ed824c364
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3184470"
 ---
 # <a name="insure-fixed-assets"></a>Assurer les immobilisations
 Une police d'assurance pour une immobilisation est représentée par une fiche assurance. Vous pouvez attribuer une immobilisation ou plusieurs immobilisations à une police d'assurance.
@@ -31,7 +38,7 @@ Une police d'assurance pour une immobilisation doit être représentée par une 
 
 Lorsque vous recevez des informations concernant les modifications du montant de la couverture, vous devez saisir les nouvelles informations sur la page **Fiche assurance** pour vous assurer que vous avez analysé correctement la couverture de la police d'assurance.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Assurance**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Assurance**, puis sélectionnez le lien associé.
 2. Choisissez l'action **Nouveau** pour créer une fiche pour une police d'assurance. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 3. Sinon, sélectionnez la police d'assurance que vous souhaitez modifier, puis sélectionnez l'action **Modifier**.
 
@@ -40,7 +47,7 @@ Vous affectez une immobilisation à une police d'assurance en reportant sur les 
 
 La procédure suivante explique comment créer une ligne journal assurance manuellement. Si la case **Report assurance auto.** est cochée sur la page **Configuration immobilisations**, les lignes journal assurance sont ensuite créées automatiquement lorsque vous reportez des coûts d'acquisition. Dans ce cas, tout ce que vous avez à faire consiste à reporter le journal.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux assurance**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux assurance**, puis sélectionnez le lien associé.  
 2. Ouvrez le journal pertinent, puis complétez les lignes journal, le cas échéant.  
 3. Pour affecter plusieurs immobilisations à une police d'assurance, créez des lignes journal avec la même valeur dans le champ **N° assurance** et d'autres valeurs dans le champ **N° immo.**.  
 4. Sélectionnez l'action **Valider**.  
@@ -51,7 +58,7 @@ La procédure suivante explique comment créer une ligne journal assurance manue
 ## <a name="to-update-the-insurance-value-of-a-fixed-asset"></a>Pour mettre à jour la valeur assurance d'une immobilisation
 Vous pouvez utiliser le traitement par lots **Réévaluer assurance** pour mettre à jour la valeur des immobilisations couvertes.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Réévaluer assurance**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Réévaluer assurance**, puis sélectionnez le lien associé.
 2. Renseignez les champs selon vos besoins.
 
     > [!NOTE]  
@@ -59,11 +66,11 @@ Vous pouvez utiliser le traitement par lots **Réévaluer assurance** pour mettr
 3. Cliquez sur le bouton **OK**.  
 
    Le traitement en lot calcule le nouveau montant en tant que pourcentage de la valeur totale assurée à partir de la page **Statistiques assurance**, puis crée une ligne dans le journal assurance.  
-4. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux assurance**, puis choisissez le lien associé.  
+4. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux assurance**, puis sélectionnez le lien associé.  
 5. Ouvrez le journal assurance pertinent, examinez les valeurs créées, puis reportez-les sur les écritures couverture d'assurance.  
 
 ## <a name="to-monitor-insurance-coverage"></a>Pour surveiller la couverture assurance
-[!INCLUDE[prod_short](includes/prod_short.md)] fournit des rapports dédiés et des pages de statistiques à utiliser pour analyser les polices d'assurance et si vos immobilisations sont sur- ou sous-assurées.  
+[!INCLUDE[d365fin](includes/d365fin_md.md)] fournit des rapports dédiés et des pages de statistiques à utiliser pour analyser les polices d'assurance et si vos immobilisations sont sur- ou sous-assurées.  
 
 ### <a name="overview-of-insurance-policies"></a>Aperçu des polices d'assurance
 Pour obtenir un aperçu de vos polices d'assurance, afficher un aperçu ou imprimer l'état **Assurances - Liste**. Le rapport indique toutes les polices et les champs les plus importants des fiches assurance.  
@@ -85,13 +92,13 @@ Pour vérifier que toutes les immobilisations sont attribuées à une police d'a
 ## <a name="to-view-insurance-coverage-ledger-entries"></a>Pour visualiser des écritures couverture d'assurance
 Vous pouvez visualiser les écritures que vous avez créées dans le grand livre couverture d'assurance.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Assurance**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Assurance**, puis sélectionnez le lien associé.  
 2. Sélectionnez la police d'assurance appropriée, puis sélectionnez l'action **Écritures comptables couverture**.  
 
 ## <a name="to-view-the-total-insurance-value-of-fixed-assets"></a>Pour afficher la valeur d'assurance totale des immobilisations
 Une page de matrice dédiée affiche les valeurs d'assurance qui sont enregistrées pour chaque police d'assurance pour chaque immobilisation suite aux montants d'assurance que vous avez reportés.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Assurance**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Assurance**, puis sélectionnez le lien associé.  
 2. Sélectionnez la police d'assurance appropriée, puis sélectionnez l'action **Valeur totale assurée par immo.**.  
 3. Renseignez les champs selon vos besoins.  
 4. Choisissez l'action **Afficher matrice**.  
@@ -100,7 +107,7 @@ Une page de matrice dédiée affiche les valeurs d'assurance qui sont enregistr�
 ## <a name="to-correct-insurance-coverage-entries"></a>Pour corriger des écritures couverture assurance
 Si une immobilisation a été jointe à la mauvaise police d'assurance, vous pouvez y remédier en créant deux écritures de reclassement à partir du journal assurance.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux assurance**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux assurance**, puis sélectionnez le lien associé.  
 2. Créez une ligne feuille pour l'immobilisation et la police d'assurance appropriée lorsque la valeur du champ **Montant** est positive.  
 3. Créez une autre ligne feuille pour l'immobilisation et la police d'assurance incorrecte lorsque la valeur du champ **Montant** est négative.  
 4. Sélectionnez l'action **Valider**.  
@@ -111,7 +118,4 @@ L'immobilisation sera détachée de la police d'assurance incorrecte, sur la sec
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  
 [Finance](finance.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

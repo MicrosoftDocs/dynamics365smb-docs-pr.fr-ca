@@ -1,16 +1,21 @@
 ---
-title: Surveiller la progression et les performances
+title: Définir une méthode TEC et surveiller la progression du projet | Microsoft Docs
 description: Décrit la manière dont vous pouvez créer une méthode de travaux en cours (TEC) et calculer les TEC pour estimer la valeur financière des projets lorsqu'ils sont en cours.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'project management, KPI, work in process, work in progress'
-ms.search.form: '89, 92, 1010'
-ms.date: 04/01/2021
-ms.author: edupont
+ms.search.keywords: project management, KPI, work in process, work in progress
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 368461d6d29f77586e2ee047f571ef4fae583b14
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3192829"
 ---
 # <a name="monitor-job-progress-and-performance"></a>Surveiller la progression et les performances
 Au fur et à mesure de la progression du projet, les matières, ressources et autres frais sont consommés et doivent être reportés dans le projet. La fonctionnalité Travaux en cours (TEC) permet d'estimer la valeur financière des projets dans le grand livre au cours des projets. Dans de nombreux cas, vous pouvez reporter les frais pour un projet avant de le facturer. Lorsque seuls les frais sont reportés, l'état financier est incorrect. Pour en savoir plus, reportez-vous à [Comprendre les méthodes TEC](projects-understanding-wip.md).
@@ -33,23 +38,23 @@ Vous pouvez créer une méthode TEC projet qui reflète les besoins de votre org
 > [!NOTE]
 > Après avoir utilisé la nouvelle méthode pour créer des écritures TEC, vous ne pouvez pas supprimer la méthode ou la modifier.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Méthodes TEC projet**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Méthodes TEC projet**, puis sélectionnez le lien associé.  
 2. Cliquez sur **Nouveau**, puis renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 3. Fermez la page.   
-4. Pour faire de cette nouvelle méthode la méthode par défaut, sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration projets**, puis choisissez le lien associé.  
+4. Pour faire de cette nouvelle méthode la valeur par défaut, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration projets**, puis sélectionnez le lien associé.  
 5. Dans le champ **Méthode TEC par défaut**, choisissez la méthode de la liste.
 
 ## <a name="to-define-a-wip-method-for-a-job"></a>Pour définir une méthode TEC pour un projet
 Lorsque vous créez un projet, vous devez spécifier la méthode TEC projet qui s'applique. Dans certains cas, quelle méthode TEC projet utilisable a été paramétrée pour vous par défaut.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Projets**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Projets**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**. Pour plus d'informations, voir [Créer des projets](projects-how-create-jobs.md).  
 3. Sur la page **Fiche projet**, dans le champ **Méthode TEC**, sélectionnez une méthode TEC dans la liste. Si une méthode par défaut a été définie, vous pouvez sélectionner une autre option si nécessaire.  
 
 ## <a name="to-calculate-wip"></a>Pour calculer les TEC :
 Vous pouvez déterminer le montant TEC devant être reporté dans les comptes de bilan pour la génération de rapports de fin d'exercice. Pour ce faire, utilisez le traitement par lots **Projet Calculer TEC**.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Projet calculer TEC**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projet Calculer TEC**, puis sélectionnez le lien associé.  
 2. Cliquez sur **Calculer TEC**.
 3. Sur la page **Projet Calculer TEC**, renseignez les champs comme nécessaire.
 4. Cliquez sur le bouton **OK**.  
@@ -60,30 +65,28 @@ Vous pouvez déterminer le montant TEC devant être reporté dans les comptes de
 ## <a name="to-post-wip"></a>Pour reporter les TEC
 Quand vous avez calculé les TEC, vous pouvez les reporter pour équilibrer les comptes bilan pour le rapport de fin de période. Pour ce faire, utilisez le traitement par lots **Projet Valider TEC en comptabilité**.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Projet - Reporter TEC au GL**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Projet - Reporter TEC au GL**, puis sélectionnez le lien associé.  
 2. Sur la page **Projet - Reporter TEC au GL**, renseignez les champs selon vos besoins.  
-3. Choisissez le bouton **OK**.
+3. Cliquez sur le bouton **OK**.
 
-## <a name="to-calculate-and-post-job-completion-entries"></a>Pour calculer et reporter les écritures d'achèvement du projet
-À la fin des activités d'un projet (validation et facturation comprises), vous devez le mettre à jour pour définir le **Statut** du projet sur **Terminé**. Ensuite, vous devez inverser tous les TEC reportés antérieurement dans le grand livre.
+## <a name="to-view-job-usage-estimates-and-post-updates"></a>Pour visualiser les estimations projet et reporter les mises à jour
+Vous pouvez visualiser les utilisations projet jusqu'à leur achèvement en une étape. Pour ce faire, utilisez le traitement par lots **Projet Calc. activité restante** pour toutes les tâches jusqu'à la fin du projet.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Projets**, puis choisissez le lien associé.  
-2. Sélectionnez un projet ouvert, puis cliquez sur **Modifier**.
-3. Dans le champ **Statut**, sélectionnez **Terminé**.
-4. Suivez les phases d'aide pour calculer et reporter les TEC. Sinon, suivez les phases 5 et 6 pour le faire manuellement.  
-5. Cliquez sur **Calculer TEC**.
-6. Sur la page **Projet Calculer TEC**, renseignez les champs comme nécessaire.  
+Cela vous permet de suivre vos estimations initiales, de les comparer aux résultats réels, ainsi que d'apporter des modifications et d'ajouter de nouvelles écritures, selon les besoins. Par exemple, alors que vous aviez estimé qu'un projet nécessitait 10 heures de travail, vous en avez effectué 15. Vous pouvez ajouter les cinq heures supplémentaires à la ligne journal existante ou créer une ligne journal pour les déclarer en tant qu'heures supplémentaires, ce qui constitue un autre type de tâche. Le coût et le prix appropriés sont calculés. Vous pouvez les reporter dans le journal.  
 
-     Les écritures TEC projet créées par le traitement par lots auront la case **Projet terminé** cochée pour indiquer qu'il s'agit d'écritures d’achèvement.  
-7. Cliquez sur **Projet Valider TEC en comptabilité**.
-8. Sur la page **Projet - Reporter TEC au GL**, renseignez les champs selon vos besoins.  
+> [!NOTE]  
+>   Les écritures article créent des écritures article et diminuent la quantité de l'inventaire. Le traitement par lots **Valider coûts ajustés** permet de transférer le coût du stock à la comptabilité. Les écritures ressource créent des écritures ressource.  
 
-     Les écritures comptabilité TEC projet créées par le traitement par lots verront la case **Projet terminé** cochée pour indiquer qu'il s'agit d'écritures d’achèvement.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux projet**, puis sélectionnez le lien associé.  
+2. Sélectionnez une feuille projet appropriée, puis cliquez sur l'action **Calc. activité restante**.  
+3. Sur la page **Projet Calc. utilisation restante**, entrez le numéro et la date de report du document devant être insérés dans le journal, puis sélectionnez le bouton **OK**.  
+4. Mettez à jour le journal avec toutes les modifications qui peuvent être nécessaires.  
+5. Sélectionnez l'action **Valider**.
 
 ## <a name="to-view-job-ledger-entries"></a>Pour visualiser des écritures projet
 Toutes les écritures liées à des projets sont enregistrées dans des historiques des transactions projet et sont numérotées de manière séquentielle à partir de 1. Le registre de projet permet d'obtenir un aperçu de toutes les écritures projet.    
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Registres de projet**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Registres de projet**, puis sélectionnez le lien associé.
 2. Sélectionnez un historique approprié, puis cliquez sur **Écritures projet**
 
 Sur la page **Écritures projet**, vous pouvez passer en revue les écritures associées à un projet.  
@@ -94,7 +97,4 @@ Sur la page **Écritures projet**, vous pouvez passer en revue les écritures as
 [Finance](finance.md)  
 [Achats](purchasing-manage-purchasing.md)         
 [Ventes](sales-manage-sales.md)      
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

@@ -1,21 +1,21 @@
 ---
-title: Comment configurer des agents de livraison
-description: Découvrez comment configurer un code pour chacun de vos agents de livraison et saisir des informations descriptives concernant chacun d’entre eux et les services qu’ils proposent.
+title: 'Procédure : configurer des agents de livraison | Microsoft Docs'
+description: Vous pouvez définir un code pour chacun de vos transporteurs et saisir les informations qui les concernent.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/23/2021
-ms.author: edupont
-ms.openlocfilehash: 1e74be125909db7f7d1c4301a33da1b12648e70a
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: d6a4bac4d540a65cc164029b23b063c8c9dbc1fb
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6440238"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3192674"
 ---
 # <a name="set-up-shipping-agents"></a>Configurer des agents de livraison
 Vous pouvez définir un code pour chacun de vos transporteurs et saisir les informations qui les concernent.  
@@ -28,7 +28,7 @@ Pour chaque agent de livraison, vous pouvez configurer un nombre illimité de se
 Lorsque vous avez affecté une service agent de livraison à une ligne document de vente, le délai de livraison du service est inclus dans le calcul de la promesse de livraison, pour cette ligne. Pour plus d'informations, voir [Calculer des dates promesse livraison](sales-how-to-calculate-order-promising-dates.md).
 
 ## <a name="to-set-up-a-shipping-agent"></a>Pour configurer un agent de livraison  
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Agents de livraison**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Agents de livraison**, puis sélectionnez le lien associé.  
 2.  Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)].  
 3.  Sélectionnez l'action **Services agent de livraison**.
 4. Dans la fenêtre **Services agent de livraison**, renseignez les champs selon vos besoins.
@@ -44,7 +44,4 @@ Lorsque vous avez affecté une service agent de livraison à une ligne document 
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

@@ -3,29 +3,29 @@ title: Vérifier les paiements affectés automatiquement et appliquer à nouveau
 description: Après l'affectation automatique des paiements, vous pouvez consulter toutes les écritures d'un paiement et appliquer à nouveau manuellement celles dont l'affectation était incorrecte.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, reconcile payment, expenses, cash receipts
-ms.date: 04/01/2021
-ms.author: edupont
-ms.openlocfilehash: dce6cdfdf70d968ae06c88ad4d567ad5cde803dd
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: e37d9ab5aae53ef0e6af6e04a0d94077569e62a3
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6443251"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3191965"
 ---
-# <a name="review-and-apply-payments-manually-after-automatic-application"></a>Réviser et affecter les paiements manuellement après un affectation automatique
+# <a name="review-or-apply-payments-manually-after-automatic-application"></a>Réviser ou affecter les paiements manuellement après une affectation automatique
 Pour chaque ligne journal représentant un paiement sur la page **Journal rapprochement paiement**, vous pouvez ouvrir la page **Affectation paiement** pour afficher toutes les écritures ouvertes candidates au paiement et les informations détaillées pour chaque écriture sur la correspondance des données sur laquelle une affectation de paiement est basée. Ici, vous pouvez affecter les paiements manuellement ou réaffecter les paiements qui ont été automatiquement affectés à une écriture incorrecte. Pour plus d'informations sur l'affectation automatique, voir [Rapprocher les paiements à l'aide de l'affectation automatique](receivables-how-reconcile-payments-auto-application.md).
 
 > [!IMPORTANT]  
->   Lorsque le compte bancaire pour lequel vous rapprochez des paiements est configuré pour la devise locale, la page **Affectation paiement** affiche toutes les écritures ouvertes dans la devise locale, y compris les écritures ouvertes pour les documents qui ont été initialement facturés en devise étrangère. Les paiements appliqués aux écritures avec devises converties peuvent donc être validés avec différents montants que celui qui figure sur le document d'origine en raison des taux de change potentiellement différents utilisés respectivement par la banque et [!INCLUDE[prod_short](includes/prod_short.md)].
+>   Lorsque le compte bancaire pour lequel vous rapprochez des paiements est configuré pour la devise locale, la page **Affectation paiement** affiche toutes les écritures ouvertes dans la devise locale, y compris les écritures ouvertes pour les documents qui ont été initialement facturés en devise étrangère. Les paiements appliqués aux écritures avec devises converties peuvent donc être validés avec différents montants que celui qui figure sur le document d'origine en raison des taux de change potentiellement différents utilisés respectivement par la banque et [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
 Par conséquent, nous vous recommandons de rechercher les codes devise étrangère dans le champ **Code devise** de la page **Affectation paiement** pour vérifier si les affectations sont basés sur des devises converties. Pour rechercher le montant du document initial dans la devise étrangère et visualiser le taux de change utilisé, choisissez le champ **N° écriture référence**, puis, dans le menu contextuel, sélectionnez le bouton de vue détaillée pour ouvrir la page **Écritures client** ou **Écritures fournisseur**.
 
-Aucun ajustement profits et pertes requis en raison de conversions de devise n'est géré automatiquement par [!INCLUDE[prod_short](includes/prod_short.md)]..
+Aucun ajustement profits et pertes requis en raison de conversions de devise n'est géré automatiquement par [!INCLUDE[d365fin](includes/d365fin_md.md)]..
 
 > [!NOTE]  
 >   Vous ne pouvez pas affecter des écritures avec un signe différent du signe figurant sur le paiement. Par exemple, pour fermer une note de crédit négative et sa facture positive associée, vous devez d'abord affecter la note de crédit à la facture, puis affecter le paiement à la facture avec le montant restant réduit.
@@ -37,7 +37,7 @@ Aucun ajustement profits et pertes requis en raison de conversions de devise n'e
 >   Vous ne pouvez affecter un paiement qu'à un seul compte. Si vous souhaitez diviser l'affectation sur plusieurs écritures ouvertes, par exemple pour affecter le paiement d'une somme forfaitaire, les écritures ouvertes doivent être pour le même compte. Pour plus d'informations, reportez-vous aux étapes 7 et 8 de la procédure de cette rubrique.
 
 ## <a name="to-review-or-apply-payments-after-automatic-application"></a>Pour réviser ou affecter les paiements après une affectation automatique
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux rapprochement bancaire**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux rapprochement bancaire**, puis sélectionnez le lien associé.
 2. Ouvrez le journal de rapprochement de paiement pour un compte bancaire pour lequel vous souhaitez rapprocher les paiements. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
 3. Sur la page **Journal rapprochement paiement**, sélectionnez un paiement que vous souhaitez réviser ou affecter manuellement à une ou plusieurs écritures ouvertes, puis sélectionnez l'action **Affecter manuellement**.
 4. Cochez la case **Lettré** sur la ligne de l'écriture ouverte à laquelle vous voulez lettrer le paiement.
@@ -52,7 +52,4 @@ La page **Affectation paiement** se ferme puis, dans la fenêtre **Journal rappr
 ## <a name="see-also"></a>Voir aussi
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Vente](sales-manage-sales.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

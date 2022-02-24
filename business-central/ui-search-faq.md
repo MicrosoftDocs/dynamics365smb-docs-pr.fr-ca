@@ -1,21 +1,21 @@
 ---
-title: Foire aux questions sur la fonction Tell Me
-description: Cet article fournit des réponses aux questions que nos partenaires et clients posent souvent sur la fonction Tell Me.
+title: Forum Aux Questions sur Tell Me | Microsoft Docs
+description: Cet article fournit des réponses aux questions que nos partenaires et clients posent souvent sur Tell Me.
 author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: find
-ms.date: 06/24/2021
+ms.date: 02/12/2020
 ms.author: bholtorf
-ms.openlocfilehash: 20493ffc3dd20da07d5f27602f4c766a0ebfbd87
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.openlocfilehash: 67dd65491710206245a2ff83dce3d3eb94484770
+ms.sourcegitcommit: c78df3aefb3e2ed8c28e5ac8340d56ab787212e8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6325873"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071920"
 ---
 # <a name="tell-me-faq"></a>FAQ Tell Me
 Cette rubrique répond aux questions que nos utilisateurs expérimentés posent souvent à propos de la fonctionnalité Tell Me.
@@ -32,7 +32,7 @@ Les actions, les pages, et les rapports qui proviennent d'extensions sont extrai
 ### <a name="what-makes-this-different-from-what-was-previously-known-as-page-search"></a>Quelles sont les différences avec la recherche de page précédente ?
 La recherche de page s'est transformée en Tell Me pour vous aider à obtenir rapidement des résultats. La recherche de page pouvait uniquement vous aider à accéder aux pages ou aux rapports. À un niveau technique, Tell Me n'est plus basé sur le concept MenuSuite hérité.
 
-### <a name="i-use-on-premises-prod_short-does-that-include-tell-me"></a>J'utilise [!INCLUDE[prod_short](includes/prod_short.md)] local. La fonction Tell Me est-elle incluse ?
+### <a name="i-use-on-premises-d365fin-does-that-include-tell-me"></a>J'utilise [!INCLUDE[d365fin](includes/d365fin_md.md)] local. La fonction Tell Me est-elle incluse ?
 Vous pouvez utiliser Tell Me dans le client Web local pour trouver des actions, des pages et des rapports, mais pas la documentation ou les applications et les services de conseils sur AppSource.
 
 ### <a name="is-tell-me-available-for-all-form-factors"></a>La fonction Tell Me est-elle disponible pour tous les facteurs d'écrans ?
@@ -50,6 +50,3 @@ L'icône de signet ne s'affiche pas dans la fenêtre Tell Me lorsque la personna
 [Recherche de pages et d'informations avec Tell Me](ui-search.md)  
 [Recherche de pages avec l'explorateur de rôles](ui-role-explorer.md)  
 [Ajouter un signet à une page ou à un rapport sur votre tableau de bord](ui-bookmarks.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

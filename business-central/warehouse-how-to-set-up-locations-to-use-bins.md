@@ -1,21 +1,23 @@
 ---
-title: Comment configurer des emplacements de sorte qu’ils utilisent des zones
-description: Les zones représentent la structure d’entrepôt de base et sont utilisées pour faire des propositions relatives à l’emplacement des articles.
+title: "Procédure : configurer des emplacements pour qu'ils utilisent des zones | Microsoft Docs"
+description: Les emplacements représentent la structure d'entrepôt de base et sont utilisés pour faire des propositions relatives à l'emplacement des articles. Lorsque vous avez créé vos zones, vous pouvez définir précisément le contenu que vous souhaitez placer dans chacune d'entre elles, ou la zone peut être utilisée en tant que zone dynamique sans contenu spécifié.
+services: project-madeira
+documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/25/2021
-ms.author: edupont
-ms.openlocfilehash: 29ee70ffa50b018073b8f44a66588df3d822b5cc
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: f2d7ecc163737c103c91b2a28a6a8072fad89279
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6442964"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2310190"
 ---
 # <a name="set-up-locations-to-use-bins"></a>Configurer des emplacements de sorte qu'ils utilisent des zones
 Les emplacements représentent la structure d'entrepôt de base et sont utilisés pour faire des propositions relatives à l'emplacement des articles. Lorsque vous avez créé vos zones, vous pouvez définir précisément le contenu que vous souhaitez placer dans chacune d'entre elles, ou la zone peut être utilisée en tant que zone dynamique sans contenu spécifié.  
@@ -26,7 +28,7 @@ Pour utiliser la fonctionnalité liée au magasin, vous devez d'abord l'activer 
 >  Avant de pouvoir spécifier les codes de zones sur la fiche emplacement, il convient de les créer. Pour plus d'informations, voir [Créer zones](warehouse-how-to-create-individual-bins.md).  
 
 ## <a name="to-set-up-a-location-to-use-bins"></a>Pour configurer un emplacement de sorte qu'il utilise des zones  
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'emplacement dans lequel vous souhaitez utiliser des zones.  
 3.  Choisissez l'action **Modifier**.  
 4.  Sur le raccourci **Entrepôt**, cochez la case **Zone obligatoire**.  
@@ -41,15 +43,12 @@ Pour utiliser la fonctionnalité liée au magasin, vous devez d'abord l'activer 
 ## <a name="filling-the-consumption-bin"></a>Renseignement de la zone consommation
 Ce graphique indique comment le champ **Code de zone** sur les lignes composante bon de production est renseigné en fonction de la configuration de votre emplacement.
 
-![Organigramme Flux de zone.](media/binflow.png "BinFlow")  
+![Organigramme Flux d'emplacement](media/binflow.png "BinFlow")  
 
 ## <a name="see-also"></a>Voir aussi
-[Gestion d’entrepôt](warehouse-manage-warehouse.md)  
-[Inventaire](inventory-manage-inventory.md)  
+[Gestion d'entrepôt](warehouse-manage-warehouse.md)  
+[Stock](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

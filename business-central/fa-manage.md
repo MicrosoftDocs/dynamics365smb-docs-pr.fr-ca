@@ -1,24 +1,30 @@
 ---
-title: Gérer les immobilisations (contient une vidéo)
-description: En savoir plus sur la fonctionnalité d’immobilisations et afficher un aperçu de l’utilisation et de la gestion de vos immobilisations.
-author: edupont04
+title: Gérer les immobilisations| Microsoft Docs
+description: En savoir plus sur la fonctionnalité d'immobilisations et afficher un aperçu de l'utilisation des immobilisations.
+services: project-madeira
+documentationcenter: ''
+author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'machinery, buildings'
-ms.search.form: '5604, 5606, 5664, 5601, 5602, 5658, 5603, 5671, 5641, 5634, 5649, 5622, 5650'
-ms.date: 06/15/2021
-ms.author: edupont
+ms.search.keywords: machinery, buildings
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 8b332e50d722ff56625fce45a9617ea67ec2201a
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3184206"
 ---
-# <a name="managing-fixed-assets"></a>Gestion des immobilisations
-
-Le module Immobilisations dans [!INCLUDE[prod_short](includes/prod_short.md)] offre un aperçu des immobilisations et garantit un amortissement périodique correct. Elle vous permet également de connaître les coûts d'entretien, de gérer les polices d'assurance, de reporter les transactions d'immobilisations, et de générer des rapports et des statistiques variés.
+# <a name="fixed-assets"></a>Immobilisations
+Le module Immobilisations dans [!INCLUDE[d365fin](includes/d365fin_md.md)] offre un aperçu des immobilisations et garantit un amortissement périodique correct. Elle vous permet également de connaître les coûts d'entretien, de gérer les polices d'assurance, de reporter les transactions d'immobilisations, et de générer des rapports et des statistiques variés.
 
 Pour chaque immobilisation, vous devez créer une fiche contenant des informations la concernant. Vous pouvez configurer des bâtiments ou un équipement de production en tant qu'immobilisation principale avec une liste de composantes et vous pouvez les regrouper de différentes façons, comme par catégorie, département ou emplacement. Puis, vous pouvez commencer à acquérir, maintenir et commercialiser les immobilisations. Vous pouvez également paramétrer des immobilisations budgétées. Cela permet d'inclure dans des états des acquisitions et des ventes anticipées.
 
-Pour conserver une trace des amortissements d'immobilisations ainsi que des autres transactions financières propres aux immobilisations, vous configurez un, voire plusieurs registres amortissement pour chaque immobilisation au sein de votre compagnie. L'amortissement est effectué en exécutant un rapport afin de calculer l'amortissement périodique et compléter un journal avec les écritures résultantes, prêtes à être reportées. [!INCLUDE[prod_short](includes/prod_short.md)] prend en charge plusieurs méthodes d'amortissement. Pour en savoir plus, voir [Méthodes d'amortissement](fa-depreciation-methods.md). Vous pouvez configurer plusieurs registres amortissement par immobilisation à différentes fins, telles qu'une pour la déclaration fiscale, et une autre pour les rapports internes.
+Pour conserver une trace des amortissements d'immobilisations ainsi que des autres transactions financières propres aux immobilisations, vous configurez un, voire plusieurs registres amortissement pour chaque immobilisation au sein de votre compagnie. L'amortissement est effectué en exécutant un rapport afin de calculer l'amortissement périodique et compléter un journal avec les écritures résultantes, prêtes à être reportées. [!INCLUDE[d365fin](includes/d365fin_md.md)] prend en charge plusieurs méthodes d'amortissement. Pour en savoir plus, voir [Méthodes d'amortissement](fa-depreciation-methods.md). Vous pouvez configurer plusieurs registres amortissement par immobilisation à différentes fins, telles qu'une pour la déclaration fiscale, et une autre pour les rapports internes.
 
 Pour chaque immobilisation, vous pouvez enregistrer des coûts d'entretien et la date de la prochaine visite d'entretien. Le suivi des frais d'entretien peut être utile dans le cadre de l'élaboration du budget et de la prise de décisions concernant le remplacement éventuel d'une immobilisation.
 
@@ -42,20 +48,12 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Reporter les transactions de cession, visualiser les écritures cession et reporter les cessions partielles. |[Céder ou annuler des immobilisations](fa-how-dispose-retire.md) |
 | Gérer les budgets d'immobilisations, budgéter les coûts d'acquisition, les cessions d'immobilisations et l'amortissement. |[Gérer les budgets pour les immobilisations](fa-how-manage-budgets.md) |
 
-## <a name="video-overview"></a>Présentation de la vidéo
-La vidéo suivante couvre les notions de base des immobilisations.
-
-> [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE4AegS?rel=0]
-
 ## <a name="see-also"></a>Voir aussi
 [Paramétrage d'immobilisations](fa-setup.md)  
 [Modifier les fonctionnalités affichées](ui-experiences.md)  
 [Finance](finance.md)  
-[Préparation aux activités commerciales](ui-get-ready-business.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Mise en route](product-get-started.md)  
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 
-## [!INCLUDE[prod_short](includes/free_trial_md.md)]  
+## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

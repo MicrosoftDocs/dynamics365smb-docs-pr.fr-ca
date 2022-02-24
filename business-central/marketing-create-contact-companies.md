@@ -1,55 +1,51 @@
 ---
-title: Créer des contacts professionnels
-description: Décrit les tâches impliquées dans la création de contacts et la définition de vos relations commerciales sur la fiche de contact.
-author: bholtorf
+title: Créer des compagnies contact| Microsoft Docs
+ddescription: Outlines the tasks to create contact companies, including assigning relevant data about prospects and defining the business relationships you have with companies.
+services: project-madeira
+documentationcenter: ''
+author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: relationship, prospect
-ms.date: 07/08/2021
-ms.author: edupont
-ms.openlocfilehash: 4ab9b6051f93daa9f1b342ed8a5fbaa7bbd9c4b2
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 7a6be696756643496954b8ee0940efff7996f352
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6435329"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3181614"
 ---
 # <a name="create-contacts"></a>Créez des contacts
+Vous rencontrez régulièrement des personnes d'autres compagnies, ce qui peut générer de nouvelles relations commerciales, comme une relation client. À la création d'un tel contact, il convient d'enregistrer le plus d'informations possible sur une fiche contact afin que la communication puisse se poursuivre.
 
-Lorsque vous développez une relation d’affaires avec quelqu’un dans une autre compagnie, ajoutez-la en tant que contact dans [!INCLUDE[prod_short](includes/prod_short.md)]. Ensuite, ajoutez toute information sur eux, ou leur compagnie, qui peut être utile pour de futures communications. Sur la page **Fiche contact**, vous pouvez créer les types de contacts suivants :
+Vous pouvez créer le contact de type **Compagnie**, par exemple, si la relation n’est pas une personne physique, mais une entité, telle qu’un contractant ou une banque. Vous pouvez aussi créer le contact de type **Personne**. La fonctionnalité est plus ou moins la même pour les deux types et les deux peuvent être modifiés à mesure que la relation évolue.
 
-* **Personne à contacter** : En règle générale, c’est lorsque vous avez eu un contact direct avec quelqu’un et que vous avez ses coordonnées.
-* **Compagnie** : Par exemple, si le contact n’est pas une personne physique, mais une entité, telle qu’un contractant ou une banque. 
+Lorsqu'une fiche contact est convertie en fiche client, par exemple, la personne de contact ou la compagnie de contact devient le nom du client. La fiche contact reste en mémoire et les données sur les deux cartes seront synchronisées à l'avenir si vous les liez.
 
-Les informations pertinentes pour chaque type de contact étant différentes, les champs et les actions disponibles sont différents. Par exemple, vous pouvez affecter des responsabilités uniquement à une personne et un secteur d’activité à une compagnie. 
+## <a name="person-or-company"></a>Personne ou compagnie
+Vous pouvez décider de configurer un contact comme une personne ou une compagnie, généralement si vous connaissez le nom du contact au moment de la création. Vous y parvenez en complétant le champ **Type** sur la page **Fiche contact**. Vous pouvez également conserver les fiches contact pour une compagnie et une ou plusieurs personnes travaillant au sein de la compagnie. Cela se produit automatiquement lorsque vous complétez le champ **Nom de la compagnie** sur une fiche contact de type **Personne**.
 
-Vous pouvez modifier ultérieurement la valeur du champ **Type**. Vous pouvez également utiliser les champs du raccourci **Héritage** sur la page **Configuration marketing** pour spécifier les données à partager entre une personne et sa compagnie. Pour plus d'informations, reportez-vous à la rubrique [Paramétrage des contacts](marketing-setup-contacts.md).
-
-Lorsqu’une fiche contact est convertie en fiche client, par exemple, la personne à contacter ou la compagnie de contact devient le nom du client. L’enregistrement du contact est conservé et vous pouvez lier le contact et le client afin que leurs données soient synchronisées à l’avenir.
-
-> [!NOTE]
-> Si vous activez la [mise à jour des fonctionnalités pour les modèles de conversion](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-conversion-templates-convert-contacts-vendors-employees), vous pouvez également créer des fournisseurs ou des employés à partir de contacts professionnels.
->
-> Cependant, si vous utilisez déjà la fonctionnalité intégrée pour créer automatiquement des clients ou des articles, cette mise à jour de fonctionnalité ne prend pas en charge les champs personnalisés et les clients ou articles nouvellement créés n’incluront pas ces données.
+La fonctionnalité est la même pour les deux types, hormis le fait que les options pour des informations supplémentaires changent selon le type. Par exemple, vous pouvez affecter des responsabilités professionnelles uniquement à une personne et un groupe d'activités à une compagnie. Cela est indiqué dans l'interface utilisateur en faisant apparaître en gris les champs et les actions qui ne s'appliquent pas. Vous pouvez modifier la valeur du champ **Type** ultérieurement, ou vous pouvez utiliser les champs du raccourci **Héritage** sur la page **Configuration du marketing** pour contrôler les données partagées entre une personne et la compagnie associée. Pour plus d'informations, reportez-vous à la rubrique [Paramétrage des contacts](marketing-setup-contacts.md).
 
 ## <a name="to-create-a-contact-manually"></a>Pour créer un contact manuellement
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Contacts**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Contacts**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Dans le champ **N°**, saisissez le numéro du contact.
 
-    Si vous avez configuré une série de numéros pour les contacts sur la page **Configuration Marketing**, appuyez sur la touche **Entrée** pour insérer le numéro de contact suivant.  
-5. Renseignez les champs restants selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+    Si vous avez configuré une série de numéros pour les contacts sur la page **Configuration Marketing**, appuyez sur la touche Entrée pour insérer le numéro de contact suivant.  
+5. Renseignez les champs restants selon vos besoins. [!INCLUDE [tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 ## <a name="to-create-a-contact-from-a-customer-vendor-or-bank-account"></a>Pour créer un contact à partir d'un client, d'un fournisseur ou d'un compte bancaire
-Si vous avez des clients, des fournisseurs et des comptes bancaires pour lesquels vous souhaitez créer des fiches contact, vous pouvez utiliser les traitements en lot **Créer des contacts à partir de** pour créer des contacts à partir des données existantes. Lorsque vous créez un contact de cette façon, les informations de contact sont synchronisées ensuite avec les informations du client, du fournisseur ou du compte bancaire associé. Pour plus d'informations, reportez-vous à [Procédure de synchronisation des contacts avec les clients, les fournisseurs et les comptes bancaires](marketing-create-contact-companies.md#synchronizing-contacts-with-customers-vendors-employees-and-bank-accounts).
+Si vous avez des clients, des fournisseurs et des comptes bancaires pour lesquels vous souhaitez créer des fiches contact, vous pouvez utiliser les traitements en lot **Créer des contacts à partir de** pour créer des contacts sur la base des données existantes. Lorsque vous créez un contact de cette façon, les informations de contact sont synchronisées ensuite avec les informations du client, du fournisseur ou du compte bancaire associé. Pour plus d'informations, reportez-vous à [Procédure de synchronisation des contacts avec les clients, les fournisseurs et les comptes bancaires](marketing-create-contact-companies.md#synchronizing-contacts-with-customers-vendors-and-bank-accounts).
 
 > [!NOTE]  
 > Avant de pouvoir créer des contacts basés sur des données existantes, vous devez spécifier un code relation d'affaires pour les clients, les fournisseurs ou les comptes bancaires sur le raccourci **Interactions** de la page **Configuration marketing**. Pour plus d'informations, voir [Configuration de contacts](marketing-setup-contacts.md).
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez l’un des choix suivants, selon l’élément à partir duquel vous souhaitez créer des contacts, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez une des actions suivantes, selon l'élément à partir duquel vous souhaitez créer des contacts, puis sélectionnez le lien associé.
    * **Créer des contacts à partir des clients**
    * **Créer des contacts à partir des fournisseurs**
    * **Créer des contacts à partir des comptes bancaires**
@@ -59,69 +55,58 @@ Si vous avez des clients, des fournisseurs et des comptes bancaires pour lesquel
 Les numéros de contact suivants de la série de numéros sont affectés aux nouveaux contacts. Les relations d'affaires spécifiées sur la page **Configuration Marketing** sont affectées aux contacts nouvellement créés.
 
 > [!TIP]  
-> Vous pouvez également effectuer cette opération inversement, à savoir en créant un client, un fournisseur, ou un compte bancaire à partir d'un contact. Pour plus d'informations, reportez-vous à [Pour créer un contact comme client, fournisseur ou compte bancaire](marketing-create-contact-companies.md#to-create-a-customer-vendor-employee-or-bank-account-from-a-contact).
+> Vous pouvez également effectuer cette opération inversement, à savoir en créant un client, un fournisseur, ou un compte bancaire à partir d'un contact. Pour plus d'informations, reportez-vous à [Pour créer un contact comme client, fournisseur ou compte bancaire](marketing-create-contact-companies.md#to-create-a-customer-vendor-or-bank-account-from-a-contact).
 
-## <a name="to-create-a-customer-vendor-employee-or-bank-account-from-a-contact"></a>Pour créer un client, un fournisseur, un employé ou un compte bancaire depuis un contact
-Si vous avez un client, un fournisseur, un employé ou un compte bancaire pour la compagnie pour laquelle vous souhaitez créer un contact, vous pouvez utiliser l’action **Créer comme**. Lorsque vous créez un contact de cette façon, les informations de contact sont synchronisées ensuite avec les informations du client, de l’employé du fournisseur ou du compte bancaire associé. Pour plus d'informations, reportez-vous à [Procédure de synchronisation des contacts avec les clients, les fournisseurs et les comptes bancaires](marketing-create-contact-companies.md#synchronizing-contacts-with-customers-vendors-employees-and-bank-accounts).
+## <a name="to-create-a-customer-vendor-or-bank-account-from-a-contact"></a>Pour créer un client, un fournisseur ou un compte bancaire depuis un contact
+Si vous avez un compte bancaire, un client ou un fournisseur pour la compagnie pour lequel vous souhaitez créer un contact, vous pouvez utiliser la fonction **Créer comme**. Lorsque vous créez un contact de cette façon, les informations de contact sont synchronisées ensuite avec les informations du client, du fournisseur ou du compte bancaire associé. Pour plus d'informations, reportez-vous à [Procédure de synchronisation des contacts avec les clients, les fournisseurs et les comptes bancaires](marketing-create-contact-companies.md#synchronizing-contacts-with-customers-vendors-and-bank-accounts).
 
 > [!NOTE]  
-> Avant de créer des clients, fournisseurs, employés ou comptes bancaires à partir des contacts, vous devez spécifier un code relation d’affaires sur le raccourci **Interactions** de la page **Configuration du marketing**. Pour plus d'informations, reportez-vous à [Paramétrage des contacts](marketing-setup-contacts.md).
+> Avant de pouvoir créer des clients, des fournisseurs ou des comptes bancaires à partir de contacts, vous devez spécifier un code relation d'affaires pour les clients, les fournisseurs ou les comptes bancaires sur le raccourci **Interactions** de la page **Configuration marketing**. Pour plus d'informations, reportez-vous à [Paramétrage des contacts](marketing-setup-contacts.md).
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Contacts**, puis sélectionnez le lien associé.
-2. Sélectionnez le contact que vous souhaitez créer comme client, fournisseur, employé ou compte bancaire.
-3. Sélectionnez l’action **Créer comme**, puis sélectionnez **Client**, **Fournisseur**, **Banque** ou **Employé**.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Contacts**, puis sélectionnez le lien associé.
+2. Sélectionnez le contact que vous souhaitez créer comme client, fournisseur ou compte bancaire.
+3. Sélectionnez l'action **Créer comme**, puis sélectionnez **Client**, **Fournisseur** ou **Banque**.
 4. Choisissez le bouton **OK**.
 
-Les informations du contact sont transférées depuis la fiche contact vers une nouvelle fiche compte bancaire, client, fournisseur ou employé. Vous pouvez ajouter des informations spécifiques à chacune des fiches, telles que des informations sur les factures ou les paiements. Pour plus d'informations, voir, par exemple, [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).
+Les informations du contact sont transférées depuis la fiche contact vers une nouvelle fiche compte bancaire, client ou fournisseur. Vous pouvez ajouter des informations spécifiques à chacune des fiches, telles que des informations sur les factures ou les paiements. Pour plus d'informations, voir, par exemple, [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).
 
-## <a name="to-link-a-contact-to-an-existing-customer-vendor-employee-or-bank-account"></a>Pour lier un contact à un client, un fournisseur, un employé un compte bancaire existant
-Si vous disposez d’un contact et d’un client, d’un fournisseur, d’un employé ou d’un compte bancaire pour la même compagnie, vous pouvez lier les deux entités afin de synchroniser les données.
+## <a name="to-link-a-contact-to-an-existing-customer-vendor-or-bank-account"></a>Pour lier un contact à un client, un fournisseur ou un compte bancaire existant
+Si vous disposez d'un contact et d'un client, d'un fournisseur ou d'un compte bancaire pour la même compagnie, vous pouvez lier les deux entités afin que les données communes soient synchronisées.
 
 1. Ouvrez le contact que vous souhaitez lier.
-2. Sélectionnez l’action **Lier avec existant**, puis sélectionnez l’action **Client**, **Fournisseur**, **Banque** ou **Employé**.
-3. Sur a page qui s’affiche, sélectionnez le client, le fournisseur, l’employé ou le compte bancaire à lier.
-4. Dans le champ **Champs prioritaires**, spécifiez les champs à considérer comme prioritaires en cas de conflit d’informations entre les champs communs au contact et au client, au fournisseur à l’employé ou au compte bancaire. Par exemple, si le code représentant est différent sur le contact et le client, vous pouvez décider de conserver celui de la fiche contact en sélectionnant **Contact**.
-5. Choisissez le bouton **OK**.
+2. Sélectionnez l'action **Lier avec existant**, puis sélectionnez l'action **Client**, **Fournisseur** ou **Banque**.
+3. Sur a page qui s'affiche, sélectionnez le client, le fournisseur ou le compte bancaire à lier.
+4. Dans le champ **Champs prioritaires**, spécifiez les champs à considérer comme prioritaires en cas de conflit d'informations entre les champs communs au contact et au client, au fournisseur ou au compte. Par exemple, si le code représentant est différent sur la fiche contact et la fiche client, vous pouvez décider de conserver celui de la fiche contact en sélectionnant **Contact**.
+5. Cliquez sur le bouton **OK**.
 
-## <a name="to-remove-a-link-between-a-contact-and-an-existing-customer-vendor-employee-or-bank-account"></a>Pour supprimer un lien entre un contact et un client, un fournisseur, un employé un compte bancaire existant
+## <a name="synchronizing-contacts-with-customers-vendors-and-bank-accounts"></a>Synchronisation des contacts avec les clients, les fournisseurs et les comptes bancaires
+Si certains de vos contacts sont également des clients, des fournisseurs ou des comptes bancaires, vous pouvez synchroniser les informations de contact avec le client, le fournisseur ou le compte bancaire correspondant.
 
-Si vous avez lié par erreur un contact et un client, fournisseur, employé ou compte bancaire, supprimez le lien entre les entités afin que les données ne se synchronisent plus.
+Lorsqu'un contact est synchronisé sur un client, un fournisseur ou un compte bancaire de cette façon, les avantages suivants s'offrent à vous :
 
-1. Ouvrez le contact qui a le mauvais lien.  
-2. Choisissez l’action **Relations d’affaires**.  
-3. Sur a page qui s’affiche, sélectionnez le client, le fournisseur, l’employé ou le compte bancaire à partir duquel supprimer le lien.  
-4. Cliquez sur l'action **Supprimer**.  
-
-> [!NOTE]  
-> N’utilisez pas la fenêtre **Relations d’affaires** pour modifier les relations existantes. À la place, supprimez la relation et utilisez l’action **Lien avec existant**. Pour plus d’informations, consultez la section [Lier un contact à un client, fournisseur ou compte bancaire existant](marketing-create-contact-companies.md#to-link-a-contact-to-an-existing-customer-vendor-employee-or-bank-account).
-
-## <a name="synchronizing-contacts-with-customers-vendors-employees-and-bank-accounts"></a>Synchronisation des contacts avec les clients, les fournisseurs, les employés et les comptes bancaires
-Si certains de vos contacts sont également des clients, des fournisseurs, des employés ou des comptes bancaires, vous pouvez synchroniser ensuite les données du contact et profiter des avantages suivants :
-
-* Vous n'avez besoin de mettre à jour les données que dans une seule fiche. Par exemple, si vous modifiez le numéro de téléphone au niveau du contact, le numéro de téléphone est automatiquement mis à jour pour le client, le fournisseur, l’employé ou le compte bancaire.
-* Si vous avez spécifié une série de numéros pour les contacts, un contact est automatiquement créé pour le client, le fournisseur, l’employé ou le compte bancaire.
-* Vous pouvez créer des devis vente et des commandes, et aussi des devis achat et des commandes à partir du contact.
-* Vous pouvez enregistrer vos interactions, telles que l’impression de commandes et de commandes permanentes, la création de commandes de service ventes, l’envoi d’courriels, etc.
-* Si vous supprimez un contact lié à un client, un fournisseur, un employé ou un compte bancaire, seule le contact est effacé. Le client, le fournisseur, l’employé ou le compte bancaire est conservé.
-* Si vous supprimez un client, un fournisseur, un employé ou un compte bancaire lié à un contact, le contact est conservé.
+* Vous n'avez besoin de mettre à jour les données que dans une seule fiche. Par exemple, si vous modifiez le numéro de téléphone au niveau du contact, le numéro de téléphone est automatiquement mis à jour avec la même modification au niveau du client, du fournisseur ou du compte bancaire.
+* Si vous avez spécifié une série de numéros pour les contacts, une fiche contact est automatiquement créée pour le compte client, fournisseur ou bancaire lorsque vous créez une fiche client, fournisseur ou compte bancaire.
+* Vous pouvez créer des devis (achat et vente), des documents de vente et des bons de commande à partir du contact.
+* Vous pouvez enregistrer vos interactions lorsque vous effectuez des actions telles que l'impression de commandes et de commandes permanentes, la création de commandes pour le service des ventes, l'envoi de courriels, etc.
+* Si vous supprimez un contact lié à un client, un fournisseur ou un compte bancaire, seule le contact est effacé. Le client, le fournisseur ou le bancaire est conservé.
+* Si vous supprimez un client, un fournisseur ou un compte bancaire lié à un contact, le contact est conservé.
 
 > [!NOTE]  
-> Certaines informations, par exemple concernant la facturation et le report, ne sont pas disponibles pour les contacts. Lorsque vous créez des contacts en tant que clients, fournisseurs, employés ou comptes bancaires, vous souhaitez peut-être les ajouter manuellement.
+> Certaines informations, par exemple concernant la facturation et le report, n'apparaissent pas sur la fiche contact. Par conséquent, vous pouvez les ajouter manuellement sur la fiche client, la fiche fournisseur ou la fiche compte bancaire lorsque vous créez des contacts en tant que clients, fournisseurs ou comptes bancaires.
 
-La synchronisation des données entre les contacts et les clients, les fournisseurs, les employés ou les comptes bancaires est activée de trois manières :
+La synchronisation des données communes entre les contacts et clients, les fournisseurs, ou les comptes bancaires associés est activée de trois manières :
 
-* Lorsque vous créez des contacts à partir des clients, fournisseurs, les employés ou comptes bancaires. Voir [Pour créer un contact à partir d'un client, d'un fournisseur ou d'un compte bancaire](marketing-create-contact-companies.md#to-create-a-contact-from-a-customer-vendor-or-bank-account).
-* Lorsque vous créez des clients, fournisseurs, employés ou comptes bancaires à partir des contacts. Voir [Pour créer un client, un fournisseur ou un compte bancaire depuis un contact](marketing-create-contact-companies.md#to-create-a-customer-vendor-employee-or-bank-account-from-a-contact).
-* Lorsque vous liez les contacts avec des clients, des fournisseurs, des employés ou des comptes bancaires existants à partir de la fiche contact. Voir [Pour lier un contact à un client, un fournisseur ou un compte bancaire existant](marketing-create-contact-companies.md#to-link-a-contact-to-an-existing-customer-vendor-employee-or-bank-account).
+* Lorsque vous créez des contacts à partir des clients, fournisseurs ou comptes bancaires. Voir [Pour créer un contact à partir d'un client, d'un fournisseur ou d'un compte bancaire](marketing-create-contact-companies.md#to-create-a-contact-from-a-customer-vendor-or-bank-account).
+* Lorsque vous créez des clients, fournisseurs ou comptes bancaires à partir de contacts. Voir [Pour créer un client, un fournisseur ou un compte bancaire depuis un contact](marketing-create-contact-companies.md#to-create-a-customer-vendor-or-bank-account-from-a-contact).
+* Lorsque vous liez les contacts avec des clients, des fournisseurs ou des comptes bancaires existants à partir de la fiche contact. Voir [Pour lier un contact à un client, un fournisseur ou un compte bancaire existant](marketing-create-contact-companies.md#to-link-a-contact-to-an-existing-customer-vendor-or-bank-account).
 
-## <a name="to-view-which-customer-vendor-employee-or-bank-account-a-contact-is-related-to"></a>Pour voir à quel client, fournisseur, employé ou compte bancaire un contact est associé
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Contacts**, puis sélectionnez le lien associé.
-2. Sélectionnez la ligne pour un contact, choisissez l’action **Informations connexes**, puis choisissez l’action **Client/Fournisseur/Employé/Compte bancaire**.
+## <a name="to-view-which-customer-vendor-or-bank-account-a-contact-is-related-to"></a>Pour voir à quel client, fournisseur ou compte bancaire un contact est associé
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Contacts**, puis sélectionnez le lien associé.
+2. Sélectionnez la ligne pour un contact, choisissez l'action **Informations connexes**, puis choisissez l'action **Client/Fournisseur/Compte bancaire**.
+
+La page de la fiche associée s'ouvre.
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion de contacts](marketing-contacts.md)  
 [Paramétrage des contacts](marketing-setup-contacts.md)  
 [Utilisation de Business Central](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

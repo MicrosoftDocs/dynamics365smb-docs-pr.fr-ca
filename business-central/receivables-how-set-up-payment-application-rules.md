@@ -1,19 +1,27 @@
 ---
-title: Règles pour l’affectation automatique des paiements
-description: Découvrez comment configurer des règles pour l’affectation automatique des paiements sur la page Règles d’affectation des paiements.
+title: Utilisation de l'affectation automatique pour rapprocher les paiements | Microsoft Docs
+description: Sur la page Règles d'affectation de paiement, vous définissez des règles pour définir comment les paiements/transactions bancaires doivent être automatiquement affectés à leurs écritures ouvertes associées lorsque vous utilisez la fonction Affecter automatiquement sur la page Journal rapprochement bancaire.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'payment process, direct payment posting, reconcile payment, expenses, cash receipts'
-ms.date: 06/25/2021
-ms.author: edupont
+ms.search.keywords: payment process, direct payment posting, reconcile payment, expenses, cash receipts
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 64756cdc1a95cc0bb866fa4b7f87ecea0f1282ff
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3191941"
 ---
 # <a name="set-up-rules-for-automatic-application-of-payments"></a>Configurer des règles pour l'affectation automatique des paiements
+Sur la page **Règles affectation paiement**, vous définissez des règles pour définir comment le texte de paiement (sur une transaction bancaire) est automatiquement mis en correspondance avec le texte des écritures ouvertes dans les deux processus suivants :
+- Affecter automatiquement les paiements à leurs factures ouvertes (impayées), notes de crédit ou autres écritures associées lorsque vous utilisez la fonction **Affecter automatiquement** sur la page **Journal rapprochement bancaire**. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
 
-Sur la page **Règles d'affectation de paiement**, vous configurez des règles pour définir comment le texte de paiement (sur une transaction bancaire) doit être automatiquement mis en correspondance avec le texte sur les factures, notes de crédit ou autres écritures ouvertes (impayées) associées lorsque vous utilisez la fonction **Affecter automatiquement** sur la page **Journal rapprochement paiement**. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
+- Faites correspondre automatiquement les transactions bancaires avec leurs écritures de compte bancaire internes associées lorsque vous choisissez l'action **Faire correspondre automatiquement** sur la page **Rapprochement bancaire**. Pour plus d'informations, voir [Rapprocher des comptes bancaires](bank-how-reconcile-bank-accounts-separately.md).
 
 Pour définir de nouvelles règles d'affectation de paiement, choisissez quels types de données sur une ligne journal rapprochement bancaire doivent correspondre aux données sur une ou plusieurs écritures ouvertes avant que le paiement associé ne soit automatiquement affecté aux écritures ouvertes. La qualité de chaque affectation automatique est indiquée par une valeur de **Faible** à **Élevée** dans le champ **Fiabilité correspondance** sur la page **Journal rapprochement bancaire** selon la règle d'affectation de paiement qui a été utilisée.
 
@@ -30,7 +38,7 @@ Outre les critères de correspondance, les remarques suivantes s'appliquent conc
 - Pour les montants positifs, une correspondance est d'abord établie par rapport aux écritures ouvertes représentant les factures fournisseur, et ensuite par rapport aux notes de crédit client.
 
 ## <a name="to-set-up-a-payment-application-rule"></a>Pour configurer une règle d'affectation de paiement
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Règles d’affectation des paiements**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Règles affectation paiement**, puis sélectionné le lien associé.
 2. Définissez une règle d'affectation de paiement, nouvelle ou modifiée, en renseignant les champs sur une ligne tel que décrit dans le tableau suivant.
 
 |Champ|Description|
@@ -38,14 +46,13 @@ Outre les critères de correspondance, les remarques suivantes s'appliquent conc
 |**Fiabilité correspondance**|Spécifie la fiabilité de la règle d'affectation que vous définissez sur la ligne. <br /></br>Une valeur spécifiée dans ce champ est affichée dans le champ **Fiabilité correspondance** sur la page **Journal rapprochement bancaire** en fonction de la qualité de l'affectation de paiement automatique sur la ligne journal.|
 |**Priorité**|Spécifie la priorité de la règle d'affectation par rapport aux autres règles d'affectation définies en tant que lignes sur la page **Règles affectation paiement**. 1 représente la priorité la plus élevée.|
 |**Correspondance partie associée**|Spécifie la quantité d'informations sur le client ou le fournisseur (par exemple, l'adresse, le nom de la ville et le numéro de compte bancaire) sur la ligne journal rapprochement bancaire qui doivent correspondre aux informations sur l'écriture ouverte avant que la règle d'affectation soit utilisée pour affecter automatiquement le paiement à l'écriture ouverte.|
-|**Correspondance N° doc./N° doc. ext.**|Spécifie si le texte de la ligne journal rapprochement bancaire doit correspondre à la valeur du champ **N° document** ou du champ **N° document externe** sur l’écriture ouverte avant que la règle d’affectation soit utilisée pour affecter automatiquement le paiement avec l’écriture ouverte.|
+|**Correspondance N° doc./N° doc. ext.**|Spécifie si le texte de la ligne journal rapprochement bancaire doit correspondre à la valeur du champ **N° document** ou du champ **N° document externe** sur l'écriture ouverte avant que la règle d'affectation soit utilisée pour affecter automatiquement le paiement à l'écriture ouverte.|
 |**Correspondance montant avec tolérance**|Spécifie combien d'écritures pour un client ou un fournisseur doivent correspondre au montant (tolérance de règlement comprise) avant que la règle d'affectation soit utilisée pour affecter automatiquement un paiement à l'écriture ouverte.|
-|**Révision requise**|Spécifie si l’affectation de paiement automatique doit être révisée manuellement par l’utilisateur avant le report. Choisissez le champ **Lignes à vérifier** sur la page **Journal des affectations de paiement** pour démarrer une expérience guidée dans laquelle vous pouvez facilement examiner plusieurs affectations en série sur la page **Révision affectation paiement**.|
 
-Le tableau suivant décrit les règles d’affectation de paiement standard dans [!INCLUDE[prod_short](includes/prod_short.md)].
+Le tableau suivant montre les règles d'affectation de paiement définies dans la version générique de [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
 > [!Important]
-> Les règles d'affectation de paiement peuvent être différentes dans votre implémentation de [!INCLUDE[prod_short](includes/prod_short.md)].
+> Les règles d'affectation de paiement peuvent être différentes dans votre implémentation de [!INCLUDE[d365fin](includes/d365fin_md.md)].
 
 | Fiabilité correspondance | Priorité | Correspondance partie associée | Correspondance N° doc./N° doc. ext. | Correspondance montant avec tolérance |
 |------------------|----------|-----------------------|--------------------------------|--------------------------------|
@@ -80,7 +87,4 @@ Le tableau suivant décrit les règles d’affectation de paiement standard dans
 [Rapprocher les paiements à l'aide de l'application automatique](receivables-how-reconcile-payments-auto-application.md)  
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Vente](sales-manage-sales.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

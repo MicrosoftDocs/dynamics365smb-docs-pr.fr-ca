@@ -1,27 +1,27 @@
 ---
-title: Comment trouver vos affectations d’entrepôt
-description: Cette rubrique explique comment rechercher les affectations d’entrepôt qui vous sont affectées sur la page Fiche article lorsque des instructions ont été créées pour vous.
+title: Comment trouver vos affectations d'entrepôt | Microsoft Docs
+description: Pour rechercher les affectations entrepôt, ouvrez la page correspondant à une article sélectionné. Si des instructions entrepôt ont été créées, les lignes Prélever et Emplacement sont visibles, et vous pouvez commencer à utiliser une affectation. Dans certains entrepôts, le responsable peut affecter des instructions propres à chaque magasinier.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/24/2021
-ms.author: edupont
-ms.openlocfilehash: 6c861ed1f068d6381d99ef0761244befd08ba43a
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: fa9fd11847a2da603288ce406722eb765cecc3a0
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6444140"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3193141"
 ---
 # <a name="find-your-warehouse-assignments"></a>Trouver vos affectations d'entrepôt
 Pour rechercher les affectations entrepôt, ouvrez la page correspondant à une article sélectionné. Si des instructions entrepôt ont été créées, les lignes Prélever et Emplacement sont visibles, et vous pouvez commencer à utiliser une affectation. Dans certains entrepôts, le responsable peut affecter des instructions propres à chaque magasinier. Pour plus d'informations, voir [Configurer des employés d'entrepôt](warehouse-how-to-set-up-warehouse-employees.md).
 
 ## <a name="to-find-an-instruction-assigned-to-you"></a>Pour rechercher une instruction qui vous est affectée  
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rangements entrepôt**, **Prélèvements entrepôt** ou **Mouvement entrepôt**, puis cliquez sur le lien associé.
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Rangements entrepôt**, **Prélèvements entrepôt** ou **Mouvement entrepôt**, puis sélectionnez le lien associé.
 
     Les trois pages affichent les affectations de l'ensemble des emplacements entrepôts.  
 
@@ -36,7 +36,4 @@ Vous pouvez utiliser le champ **Code utilisateur affecté** de l'en-tête pour d
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md) 
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md) 

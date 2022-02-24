@@ -1,21 +1,21 @@
 ---
-title: 'Détails de conception : flux d’entrepôt internes'
-description: Le flux entre les zones se concentre sur le prélèvement des composantes et le stockage des produits finis pour les ordres d’assemblage ou les bons de production et les mouvements ad hoc, sans documents source.
+title: Détails de conception - Flux d'entrepôt internes | Microsoft Docs
+description: Circulation des articles entre les zones dans les centres d'une compagnie lors du prélèvement des composantes, du rangement des articles finis pour les ordres d'assemblage ou les bons de production et les mouvements ad-hoc, tels que les réapprovisionnements de zone, sans relation avec les documents sources.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/15/2021
-ms.author: edupont
-ms.openlocfilehash: 6749921fc02776fc267f7f40cde7ccea4b8fe6cf
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 7fa2f139935e279af47548b5c8e8a28b84845521
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6441757"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185334"
 ---
 # <a name="design-details-internal-warehouse-flows"></a>Détails de conception : flux d'entrepôt internes
 Circulation des articles entre les zones dans les centres d'une compagnie lors du prélèvement des composantes, du rangement des articles finis pour les ordres d'assemblage ou les bons de production et les mouvements ad-hoc, tels que les réapprovisionnements de zone, sans relation avec les documents sources. La portée et la nature des activités impliquées varient entre l'entreposage de base et l'entreposage avancé.  
@@ -35,7 +35,7 @@ Circulation des articles entre les zones dans les centres d'une compagnie lors d
 
  Les champs **Code de zone avant production**, **Code de zone post-production**, et **Code de zone d'atelier ouvert** de la fiche emplacement ou des fiches unité de production/atelier définissent les flux par défaut depuis ou vers les zones de production.  
 
- Pour plus d’informations sur la manière dont la consommation de composantes est vidée des zones d'atelier ouvert ou avant production, reportez-vous à la section « Purge des composantes de production dans l’entrepôt » de cette rubrique.  
+ Pour plus d'informations sur la manière dont la consommation de composantes est purgée des zones avant production ou des zones d'atelier ouvert, reportez-vous à la section « Purge des composantes de production dans l'entrepôt » de cette rubrique.  
 
 ### <a name="flows-to-and-from-assembly"></a>Flux entrants et sortants de l'assemblage  
  La principale intégration entre les ordres d'assemblage et les activités d'entrepôt de base est représentée par la capacité à déplacer les composantes d'assemblage vers la zone d'assemblage.  
@@ -72,7 +72,7 @@ Circulation des articles entre les zones dans les centres d'une compagnie lors d
 
  Les champs **Code de zone avant production**, **Code de zone post-production**, et **Code de zone d'atelier ouvert** de la fiche emplacement ou des fiches unité de production/atelier définissent les flux par défaut depuis ou vers les zones de production.  
 
- Pour plus d’informations sur la manière dont la consommation de composantes est vidée des zones d'atelier ouvert ou avant production, reportez-vous à la section « Purge des composantes de production dans l’entrepôt » de cette rubrique.  
+ Pour plus d'informations sur la manière dont la consommation de composantes est purgée des zones avant production ou des zones d'atelier ouvert, reportez-vous à la section « Purge des composantes de production dans l'entrepôt » de cette rubrique.  
 
 ### <a name="flows-to-and-from-assembly"></a>Flux entrants et sortants de l'assemblage  
  La principale intégration entre les ordres d'assemblage et les activités d'entrepôt avancées est représentée par la capacité de prélever des composantes d'assemblage, aussi bien à l'aide de la page **Prélèvement entrepôt** que de la page **Feuille prélèvement**. Cette fonctionnalité est identique au prélèvement des composantes pour les bons de production.  
@@ -90,7 +90,7 @@ Circulation des articles entre les zones dans les centres d'une compagnie lors d
 ## <a name="flushing-production-components-in-the-warehouse"></a>Purge des composantes de production dans l'entrepôt  
  Si cela est configuré dans la fiche article, les composantes prélevées avec des prélèvements entrepôt sont reportées comme étant consommées par le bon de production lorsque le prélèvement entrepôt est enregistré. En utilisant la méthode **Prélèvement + Aval** et la méthode de consommation **Prélèvement + Amont**, l'enregistrement de prélèvement déclenche le report des consommations associées lorsque la première opération commence ou lorsque la dernière opération finit, respectivement.  
 
- Considérez le scénario suivant basé sur la base de données de démonstration [!INCLUDE[prod_short](includes/prod_short.md)].  
+ Considérez le scénario suivant basé sur la base de données de démonstration [!INCLUDE[d365fin](includes/d365fin_md.md)], emplacement BLANC.  
 
  Il existe un ordre de fabrication pour 15 pièces de l'article LS-100. Certains articles sur la liste des composantes doivent être purgés manuellement dans un journal consommation et d'autres articles de la liste peuvent être prélevés et purgés automatiquement à l'aide de la méthode consommation **Prélèvement + Amont**.  
 
@@ -114,10 +114,7 @@ Circulation des articles entre les zones dans les centres d'une compagnie lors d
 
  La figure ci-après indique la date à laquelle le champ **Code de zone** de la liste des composantes est renseigné en fonction de la configuration de votre emplacement ou unité de production/atelier.  
 
- ![Aperçu de quand/comment le champ Code de zone est renseigné.](media/binflow.png "Aperçu du moment/de la manière de renseigner le champ Code de zone")  
+ ![Aperçu du moment/de la manière de renseigner le champ Code de zone](media/binflow.png "Aperçu du moment/de la manière de renseigner le champ Code de zone")  
 
 ## <a name="see-also"></a>Voir aussi  
  [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

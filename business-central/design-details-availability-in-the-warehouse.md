@@ -3,19 +3,19 @@ title: Détails de conception - disponibilité dans l'entrepôt | Microsoft Docs
 description: Le système doit conserver un contrôle constant de la disponibilité des articles dans l'entrepôt, afin que les commandes sortantes puissent s'écouler efficacement et fournir des livraisons optimales.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/08/2021
-ms.author: edupont
-ms.openlocfilehash: 7d23dc10ffb215ee2ac160c9ec9b9fd1ddb5cc2d
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 10eb4e51a90437d847d01fdbf577adba8c8275eb
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6442545"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185766"
 ---
 # <a name="design-details-availability-in-the-warehouse"></a>Détails de conception : disponibilité dans l'entrepôt
 Le système doit conserver un contrôle constant de la disponibilité des articles dans l'entrepôt, afin que les commandes sortantes puissent s'écouler efficacement et fournir des livraisons optimales.  
@@ -47,7 +47,7 @@ Si une ou plusieurs conditions ne sont pas remplies, différents messages d'erre
 
  Le schéma suivant montre les différents éléments du calcul.  
 
- ![Disponible pour prélever avec chevauchement de réservation.](media/design_details_warehouse_management_availability_2.png "Disponible pour prélever avec chevauchement de réservation")  
+ ![Disponible pour prélever avec chevauchement de réservation](media/design_details_warehouse_management_availability_2.png "Disponible pour prélever avec chevauchement de réservation")  
 
 ## <a name="quantity-available-to-reserve"></a>Quantité disponible à réserver  
  Dans la mesure où les concepts de réservation et contenu de la zone coexistent, le nombre d'articles disponibles pour réservation doit être aligné avec les affectations aux documents de désenlogement.  
@@ -72,11 +72,8 @@ Si une ou plusieurs conditions ne sont pas remplies, différents messages d'erre
 
  Le schéma suivant montre les différents éléments du calcul.  
 
- ![Disponible pour réserver par affectation entrepôt.](media/design_details_warehouse_management_availability_3.png "Disponible pour réserver par affectation entrepôt")  
+ ![Disponible pour réserver par affectation entrepôt](media/design_details_warehouse_management_availability_3.png "Disponible pour réserver par affectation entrepôt")  
 
 ## <a name="see-also"></a>Voir aussi  
  [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
  [Voir la disponibilité des articles](inventory-how-availability-overview.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

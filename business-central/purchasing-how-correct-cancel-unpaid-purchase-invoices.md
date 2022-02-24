@@ -1,29 +1,33 @@
 ---
-title: Corriger ou annuler des factures achat impayées (contient une vidéo)
-description: 'Explique comment corriger, rétablir ou annuler une facture achat reportée et créer automatiquement une note de crédit achat.'
+title: Corriger ou annuler des factures achat impayées | Microsoft Docs
+description: Explique comment corriger, rétablir ou annuler une facture achat reportée et créer automatiquement une note de crédit achat.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'undo, credit memo, return'
-ms.search.form: '138, 140, 146'
-ms.date: 04/01/2021
-ms.author: edupont
+ms.search.keywords: undo, credit memo, return
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 3d0d1234a6459b153a436ed2dfe9a3a2f667ab89
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3192757"
 ---
 # <a name="correct-or-cancel-unpaid-purchase-invoices"></a>Corriger ou annuler des factures achat impayées
-
 Vous pouvez corriger ou annuler une facture achat reportée. Cela est utile si vous souhaitez corriger une erreur de saisie, ou si vous souhaitez modifier l'achat assez tôt dans le processus de commande.
 
-Si vous avez déjà payé des produits sur la facture achat reportée, vous ne pouvez pas la corriger ni l'annuler à partir de la facture achat reportée elle-même. Au lieu de cela, vous devez créer manuellement une note de crédit achat pour inverser l'achat, éventuellement géré à l'aide d'un retour achat. Il en va de même si vous souhaitez modifier une facture achat reportée basée sur des réceptions achat combinées. Pour plus d'informations, reportez-vous à [Traiter les retours ou annulations d'achats](purchasing-how-process-purchase-returns-cancellations.md).
+Si vous avez déjà payé des produits sur la facture achat reportée, vous ne pouvez pas la corriger ni l'annuler à partir de la facture achat reportée elle-même. Au lieu de cela, vous devez créer manuellement une note de crédit achat pour inverser l'achat, éventuellement géré à l'aide d'un retour achat. Pour plus d'informations, reportez-vous à [Traiter les retours ou annulations d'achats](purchasing-how-process-purchase-returns-cancellations.md).
 
 Sur la page **Facture achat reportée**, vous pouvez cliquer sur le bouton **Corriger** ou **Annuler**. Lorsque vous corrigez ou annulez une facture achat reportée, la note de crédit achat de correction est affectée à toutes les écritures du grand livre et de l'inventaire physique créées lors du report de la facture achat initiale. Cette action inverse la facture achat reportée dans vos enregistrements financiers et laisse la note de crédit achat reportée de correction pour votre piste de vérification. L'utilisation des boutons **Corriger** et **Annuler** est décrite ci-après.
 <br><br>
 > [!Video https://www.microsoft.com/videoplayer/embed/RE4dhoc?rel=0]
 
 ## <a name="to-correct-a-posted-purchase-invoice"></a>Pour corriger une facture achat reportée
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures achat reportées**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures achat reportées**, puis sélectionnez le lien associé.  
 2. Sélectionnez la facture achat reportée à corriger.  
 
     > [!NOTE]  
@@ -36,7 +40,7 @@ Sur la page **Facture achat reportée**, vous pouvez cliquer sur le bouton **Cor
 4. Sélectionnez **Afficher un avoir correctif** pour afficher l'avoir achat validé qui annule la facture achat validée initiale.
 
 ## <a name="to-cancel-a-posted-purchase-invoice"></a>Pour annuler une facture achat reportée
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures achat reportées**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures achat reportées**, puis sélectionnez le lien associé.  
 2. Sélectionnez la facture achat reportée à annuler.
 
     > [!NOTE]  
@@ -52,7 +56,4 @@ Si l'annulation est liée à un report de facture partiel, la ligne de bon de co
 ## <a name="see-also"></a>Voir aussi
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Enregistrer des achats](purchasing-how-record-purchases.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

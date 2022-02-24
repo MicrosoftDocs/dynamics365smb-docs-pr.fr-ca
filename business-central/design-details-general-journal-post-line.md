@@ -1,38 +1,31 @@
 ---
-title: Détails de conception - Ligne report de journal général
+title: Détails de conception - ligne de report dans le journal général | Microsoft Docs
 description: Cette rubrique fournit une analyse des concepts et principes qui sont utilisés pour reconcevoir la fonction de ligne de report au journal général dans Business Central.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, general journal, posting, codeunit 12
-ms.date: 06/14/2021
-ms.author: edupont
-ms.openlocfilehash: 69a7c92dede230f90b0982d866a48d831b933046
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 1a8654b53dec476b175101a4d9c08f15ab3d6d6f
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6322457"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185382"
 ---
 # <a name="design-details-general-journal-post-line"></a>Détails de conception : Ligne report de journal général
+Cette documentation fournit une analyse technique détaillée des concepts et principes qui sont utilisés pour reconcevoir la fonction de ligne validation feuille comptabilité dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. La nouvelle conception rend le codeunit 12 plus simple et plus facile à modifier. La documentation commence par des présentations conceptuelles de la nouvelle conception. Alors il explique l'architecture technique pour indiquer les modifications découlant de la nouvelle conception.  
 
-Cette documentation fournit une analyse technique détaillée des concepts et principes qui ont été utilisés pour reconcevoir la fonction de ligne report de journal général dans [!INCLUDE[prod_short](includes/prod_short.md)]. La nouvelle conception a rendu le codeunit 12 plus simple et plus facile à modifier. La documentation commence par des présentations conceptuelles de la nouvelle conception. Alors il explique l'architecture technique pour indiquer les modifications découlant de la nouvelle conception.  
-
-> [!IMPORTANT]
-> Les informations de cette section s’appliquent à la nouvelle conception dans une version antérieure du produit, Microsoft Dynamics NAV 2013 R2.
-
-## <a name="in-this-section"></a>Dans cette section
-
-[Aperçu de la ligne report de journal général](design-details-general-journal-post-line-overview.md)  
-[Détails de conception : Structure de l'interface de report](design-details-posting-interface-structure.md)  
+## <a name="in-this-section"></a>Dans cette section  
+[Aperçu de la ligne validation de feuille comptabilité](design-details-general-journal-post-line-overview.md)  
+[Détails de conception : Structure de l'interface de validation](design-details-posting-interface-structure.md)  
 [Détails de conception : Structure du moteur de validation](design-details-posting-engine-structure.md)  
+[Codeunit 12 modifications : variables globales de mappage pour la ligne de validation de feuille comptabilité](design-details-codeunit-12-changes-mapping-global-variables-for-general-journal-post-line.md)  
+[Codeunit 12 modifications : modifications dans les procédures de validation de feuille comptabilité](design-details-codeunit-12-changes-changes-in-general-journal-post-procedures.md)  
 
-## <a name="see-also"></a>Voir aussi
-
-[Utilisation de journaux généraux](ui-work-general-journals.md)
-[Détails de conception : Ligne report de journal général (Dynamics NAV)](/dynamics-nav-app/design-details-general-journal-post-line)  
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+## <a name="see-also"></a>Voir aussi  
+[Utilisation de feuilles comptabilité](ui-work-general-journals.md)

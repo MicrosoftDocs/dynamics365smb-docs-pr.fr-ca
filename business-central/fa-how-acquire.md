@@ -1,16 +1,23 @@
 ---
-title: Acquérir des immobilisations
-description: 'Vous pouvez configurer une immobilisation, attribuer un registre amortissement et enregistrer le coût d''acquisition de l''immobilisation.'
-author: edupont04
+title: Acquérir des immobilisations| Microsoft Docs
+description: Vous pouvez configurer une immobilisation, attribuer un registre amortissement et enregistrer le coût d'acquisition de l'immobilisation.
+services: project-madeira
+documentationcenter: ''
+author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: purchase fixed asset
-ms.search.form: '5605, 5551, 5600, 5628, 5629'
-ms.date: 12/03/2021
-ms.author: edupont
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: e5d1d56f4035311e3c90d3dba9d4e8d49df48d25
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3184566"
 ---
 # <a name="acquire-fixed-assets"></a>Acquérir des immobilisations
 Pour chaque immobilisation, vous devez créer une fiche contenant des informations la concernant. Vous pouvez configurer des bâtiments ou un équipement de production en tant qu'immobilisation principale avec une liste de composantes et vous pouvez les regrouper de différentes façons, comme par catégorie, département ou emplacement. Un registre amortissement doit être configuré et assigné à chaque immobilisation avant que vous puissiez l'acquérir.
@@ -24,7 +31,7 @@ L'actualisation permet d'ajuster des valeurs en fonction de modifications géné
 ## <a name="to-create-a-fixed-asset-and-acquire-it-automatically"></a>Pour créer une immobilisation et l'acquérir automatiquement
 La procédure suivante décrit comment créer une immobilisation, puis l'acquérir via la page **Acquisition d'immobilisation assistée** pour créer et reporter les lignes journal GL immobilisation requises. Vous pouvez également créer et reporter les lignes journal manuellement. Pour en savoir plus, voir [Pour reporter manuellement une acquisition immobilisation avec le journal GL immobilisation](fa-how-acquire.md#to-post-a-fixed-asset-acquisition-manually-with-the-fixed-asset-gl-journal).
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Immobilisations**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Immobilisations**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**, puis renseignez les champs du raccourci **Général**, le cas échéant. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 3. Sur le raccourci **Loi d'amortissement**, renseignez les champs, le cas échéant. Cette étape attribue un registre amortissement à l'immobilisation.  
 4. Si vous devez assigner plusieurs registres amortissement à l'immobilisation, sélectionnez l'action **Ajouter d'autres registres amortissement**. Pour en savoir plus, voir [Pour attribuer une loi d'amortissement à une immobilisation](fa-how-setup-depreciation.md#to-assign-a-depreciation-book-to-a-fixed-asset).
@@ -41,14 +48,14 @@ Lorsque vous sélectionnez **Terminer**, le champ **Valeur comptable** de la pag
 ## <a name="to-set-up-a-component-list-for-a-main-asset"></a>Pour configurer une liste de composantes pour une immobilisation principale
 Vous pouvez regrouper les immobilisations en immobilisations principales divisées en composants. Par exemple, si vous disposez d'une machine de production composée de différentes pièces, vous pouvez regrouper ces pièces de cette manière.  
 
-Vous devez définir à la fois l'immobilisation principale et ses composants en tant que fiches immobilisation individuelles. Une fois la liste de composants créée, [!INCLUDE[prod_short](includes/prod_short.md)] renseigne automatiquement les champs **Immo. principale/Composant** et **Composant immo. principale** sur les fiches immobilisation.
+Vous devez définir à la fois l'immobilisation principale et ses composants en tant que fiches immobilisation individuelles. Une fois la liste de composants créée, [!INCLUDE[d365fin](includes/d365fin_md.md)] renseigne automatiquement les champs **Immo. principale/Composant** et **Composant immo. principale** sur les fiches immobilisation.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Immobilisations**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Immobilisations**, puis sélectionnez le lien associé.
 2. Sélectionnez l'immobilisation principale, puis l'action **Composants immo. principale**.
 3. Sur la page **Composantes immo. principale**, choisissez **N° immo.**., puis sélectionnez l'immobilisation que vous souhaitez ajouter comme composante de l'immobilisation principale.
 4. Fermez la page.
 5. Répétez les étapes 3 et 4 pour chaque composante de l'immobilisation que vous souhaitez ajouter.
-6. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration immobilisations**, puis choisissez le lien associé.
+6. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration des immobilisations**, puis sélectionnez le lien associé.
 7. Cochez la case **Compta. immo. princip.**.
 
 ## <a name="to-post-a-fixed-asset-acquisition-manually-with-the-fixed-asset-gl-journal"></a>Pour reporter manuellement une acquisition immobilisation avec le journal GL immobilisation
@@ -57,38 +64,35 @@ La procédure suivante décrit comment acquérir manuellement une immobilisation
 > [!NOTE]  
 >   Vous pouvez également reporter le coût d'acquisition en tant que crédit. Dans ce cas, n'oubliez pas que la valeur du champ **Montant** doit comporter un signe moins pour indiquer un avoir.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux GL immobilisation**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux GL immobilisation**, puis sélectionnez le lien associé.
 2. Sur la page **Journal GL immobilisation**, dans le champ **Type report immo.**, sélectionnez **Coût acquisition**.
 3. Renseignez les champs restants selon vos besoins.
 4. Sélectionnez l'action **Valider**.  
 
 > [!TIP]  
->   Si vous renseignez le champ **N° assurance** dans le journal GL immobilisation lorsque vous reportez un coût d'acquisition, [!INCLUDE[prod_short](includes/prod_short.md)] valide également le coût d'acquisition de l'immobilisation dans le livre couverture d'assurance. Pour en savoir plus, voir [Assurer des immobilisations](fa-how-insure.md).
+>   Si vous renseignez le champ **N° assurance** dans le journal GL immobilisation lorsque vous reportez un coût d'acquisition, [!INCLUDE[d365fin](includes/d365fin_md.md)] valide également le coût d'acquisition de l'immobilisation dans le livre couverture d'assurance. Pour en savoir plus, voir [Assurer des immobilisations](fa-how-insure.md).
 
 ## <a name="to-cancel-an-acquisition-cost-posting-for-one-fixed-asset"></a>Pour annuler le report du coût d'une acquisition pour une immobilisation
 Si vous faites une erreur lors de la validation d'un coût d'acquisition, vous pouvez supprimer l'écriture à l'aide du traitement par lots **Annuler écritures immo**, puis valider l'écriture d'acquisition correcte. Les écritures erronées sont transférées vers la page **Erreur écritures immo.**.
 
-Par exemple, si vous reportez une acquisition avec une date erronée, vous devez la corriger dès que possible, car la date de report de l’immobilisation est utilisée pour de nombreux calculs.
+Par exemple, si vous reportez une acquisition avec une date erronée, vous devez la corriger dès que possible, car la date de report de l'immobilisation est utilisée dans de nombreux calculs essentiels.
 
 > [!IMPORTANT]  
-> Vous ne pouvez pas utiliser la fonction **Transaction contrepassée** pour les écritures comptables immobilisation.
+>   Vous ne pouvez pas utiliser la fonction **Transaction contrepassée** pour les écritures comptables immobilisation.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures immobilisation**, puis sélectionnez le lien associé.  
-2. Sur la page **Écritures immobilisation**, sélectionnez la ou les écritures à annuler.  
-3. Choisissez le menu **Actions**, puis choisissez l’action **Annuler les entrées**.
-4. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
-5. Pour lancer le traitement en lot, cliquez sur le bouton **OK**.
-6. Lorsqu'une écriture incorrecte ou lorsque plusieurs écritures incorrectes sont annulées, continuez à reporter le coût d'acquisition exact.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Annuler écritures immo.**, puis choisissez le lien associé.
+2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+3. Pour lancer le traitement par lots, cliquez sur le bouton **OK**.
+4. Lorsqu'une écriture incorrecte ou lorsque plusieurs écritures incorrectes sont annulées, continuez à reporter le coût d'acquisition exact.
+
+Pour annuler les écritures comptables pour plusieurs immobilisations à la fois, utilisez le traitement par lots **Annuler les écritures comptables immobilisation**.
 
 ## <a name="to-post-the-salvage-value-together-with-the-acquisition-cost"></a>Pour reporter la valeur résiduelle ainsi que le coût d'acquisition
 Vous pouvez reporter la valeur résiduelle avec le coût d'acquisition à partir d'un journal immobilisation.
 
-> [!NOTE]
-> Ce processus peut nécessiter que vous personnalisiez la page journaux immobilisations en ajoutant le champ Valeur résiduelle. Par défaut, le champ À ne s’affiche pas sur la page. Pour plus d'informations, voir [Personnaliser votre espace de travail](ui-personalization-user.md).
-
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journaux immobilisation**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux immobilisation**, puis sélectionnez le lien associé.
 2. Sur la page **Journaux immobilisation**, créez la ligne d'acquisition. Pour en savoir plus, voir [Pour reporter manuellement une acquisition immobilisation avec le journal GL immobilisation](fa-how-acquire.md#to-post-a-fixed-asset-acquisition-manually-with-the-fixed-asset-gl-journal).
-3. Dans le champ **Valeur résiduelle** de la ligne journal, saisissez le montant de la valeur résiduelle comme crédit (préfixe du montant avec un signe moins, par exemple, **-** 100).
+3. Dans le champ **Valeur résiduelle** de la ligne journal, saisissez le montant de la valeur résiduelle comme crédit (avec un signe moins).
 4. Sélectionnez l'action **Reporter**.
 
 > [!NOTE]
@@ -98,8 +102,5 @@ Vous pouvez reporter la valeur résiduelle avec le coût d'acquisition à partir
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  
 [Finance](finance.md)  
-[Préparation aux activités commerciales](ui-get-ready-business.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Mise en route](product-get-started.md)  
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

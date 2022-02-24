@@ -1,18 +1,24 @@
 ---
-title: Aperçu des rapports préalables à la fermeture pour vérifier l'exactitude des comptes
+title: Aperçu des rapports préalables à la fermeture pour vérifier l'exactitude des comptes | Microsoft Docs
 description: Fournit un aperçu des rapports qui vous permettent de vérifier l'exactitude des comptes avant de fermer les registres à la fin d'un exercice ou d'une période.
+services: project-madeira
+documentationcenter: ''
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: overview
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: '1393, 1394'
-ms.date: 04/01/2021
+ms.date: 04/01/2019
 ms.author: jswymer
+ms.openlocfilehash: d3e522f1fedf4e5ea5beaccd0e0fc015414b87c6
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1249708"
 ---
 # <a name="using-pre-closing-reports"></a>Utilisation des rapports préalables à la fermeture
-
 Il existe de nombreux rapports standard qui vous permettent de vérifier la précision des comptes avant de fermer les registres à la fin d'un exercice ou d'une période. Par exemple, vous pouvez utiliser l'état **Clients : Balance** pour vérifier que le solde d'un groupe comptabilisation client est égal au solde du compte général correspondant à une date donnée.
 
 Le tableau suivant décrit un certain nombre d'états qui peuvent être utiles dans ce processus.
@@ -29,13 +35,9 @@ Le tableau suivant décrit un certain nombre d'états qui peuvent être utiles d
 | Imprimer un rapport Balance de vérification comprenant les soldes et les soldes période pour les comptes du grand livre. |Balance de vérification |
 | Imprimez une balance de vérification pour une compagnie consolidée. |Balance de vérification consolidée |
 
-Pour voir un rapport, sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez le nom tel qu’il apparaît dans le tableau, puis choisissez le lien associé.
+Pour visualiser un rapport, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez le nom tel qu'il s'affiche dans la table, puis sélectionnez le lien associé.
 
 ## <a name="see-also"></a>Voir aussi
-
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
 
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

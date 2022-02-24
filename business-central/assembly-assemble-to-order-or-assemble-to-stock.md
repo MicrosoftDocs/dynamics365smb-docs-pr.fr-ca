@@ -1,15 +1,21 @@
 ---
-title: Description des processus Assembler pour commande et Assembler pour stock
-description: Les éléments d’assemblage peuvent être fournis soit en les assemblant lors de leur commande ou en les assemblant pour les conserver en inventaire jusqu’à ce qu’ils soient nécessaires pour un document de vente.
-author: bholtorf
+title: Description des processus Assembler pour commande et Assembler pour stock | Microsoft Docs
+description: Les éléments d'assemblage peuvent être fournis soit en les assemblant lors de leur commande ou en les assemblant pour les conserver dans l'inventaire jusqu'à ce qu'ils soient nécessaires sur un document de vente.
+author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'kit, kitting'
-ms.date: 06/15/2021
-ms.author: bholtorf
+ms.search.keywords: kit, kitting
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 1f34ee61fa532aa7600baa8883d182cbad545493
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3186822"
 ---
 # <a name="understanding-assemble-to-order-and-assemble-to-stock"></a>Description des processus Assembler pour commande et Assembler pour stock
 Les éléments d'assemblage peuvent être fournis dans le cadre des deux processus suivants :  
@@ -60,38 +66,26 @@ Lorsque vous entrez un article à assembler pour commande sur une ligne vente, u
 
  Toutefois, dans les scénarios de combinaison, la valeur du champ **Qté. à expédier** n'est pas copiée dans le champ **Quantité à assembler** de l'en\-tête d'ordre d'assemblage. C'est une valeur par défaut qui est insérée dans le champ **Quantité à assembler**. Cette valeur est calculée à partir du champ **Qté. à livrer** en fonction d'une règle prédéfinie qui garantit la livraison prioritaire des quantités à assembler pour commande.  
 
- Si vous voulez utiliser une valeur autre que celle par défaut, par exemple, parce que vous souhaitez uniquement assembler une quantité supérieure ou inférieure à celle indiquée dans le champ **Qté à livrer**, vous pouvez modifier le champ **Quantité à assembler**, mais uniquement dans le cadre de règles prédéfinies, comme illustré ci-dessous.  
+ Si vous voulez utiliser une valeur autre que celle par défaut, par exemple, parce que vous souhaitez uniquement assembler une quantité supérieure ou inférieure à celle indiquée dans le champ **Qté. à expédier**, vous pouvez modifier le champ **Quantité à assembler**, mais uniquement dans le cadre de règles prédéfinies, comme illustré ci\-dessous.  
 
  Par exemple, la raison pour laquelle vous voudriez modifier la quantité à assembler peut être liée au souhait de reporter partiellement la livraison des quantités en inventaire avant que le résultat d'assemblage ne puisse être livré.  
 
- Les tables suivantes expliquent les règles qui définissent les valeurs minimale et maximale que vous pouvez saisir dans le champ **Quantité à assembler** pour spécifier une valeur autre que celle par défaut dans un scénario de combinaison. Le tableau affiche un scénario de combinaison dont le champ **Qté. à expédier** de la ligne commande vente liée passe de 7 à 4 ; le champ **Quantité à assembler** prend donc par défaut la valeur 4.  
+ Ce qui suit explique les règles qui définissent les valeurs minimale et maximale que vous pouvez entrer manuellement dans le champ **Quantité à assembler** pour spécifier une valeur autre que celle par défaut dans un scénario de combinaison. Le tableau affiche un scénario de combinaison dont le champ **Qté. à expédier** de la ligne commande vente liée passe de 7 à 4 ; le champ **Quantité à assembler** prend donc par défaut la valeur 4.  
 
-- Ligne de document de vente
+||Ligne de document de vente|En-tête d'ordre d'assemblage|  
+|-|----------------------|---------------------------|  
+||**Quantité**|**Qté à livrer**|**Qté vers Assembler pour commande**|**Qté livrée**|**Quantité**|**Quantité à assembler**|**Quantité assemblée**|**Quantité restante**|  
+|Initial|10|7|7|0|7|7|0|7|  
+|Activer||4||||4 (valeur insérée par défaut)|||  
 
-    |                | **Quantité** | **Qté à livrer** | **Qté vers Assembler pour commande** | **Qté livrée** |
-    |----------------|--------------|------------------|-------------------------------|----------------------|
-    |**Valeur initiale**| 10          | 7                | 7                             | 0                    |
-    |**Modification**      |              | 4                |                               |                      |
+ D'après la situation présentée ci\-dessus, vous ne pouvez modifier que le champ **Quantité à assembler** comme suit :  
 
-- En-tête d'ordre d'assemblage
+-   La quantité minimum que vous pouvez saisir est 1. En effet, vous devez assembler au moins une unité pour pouvoir vendre les quatre, en supposant que les trois autres soient disponibles dans l'inventaire.  
+-   La quantité maximum que vous pouvez saisir est 4. Cela permet de s'assurer que vous n'assemblez pas une quantité d'articles assemblés pour commande supérieure à celle requise pour la vente.  
 
-    |                | **Quantité** | **Qté à livrer** | **Qté vers Assembler pour commande** | **Qté livrée** |
-    |----------------|--------------|------------------|-------------------------------|----------------------|
-    |**Valeur initiale**| 7           | 7                | 0                             | 7                    |
-    |**Modification**      |              | 4 (valeur insérée par défaut)|                         |                      |
-
-D’après cet exemple, vous ne pouvez modifier que le champ **Quantité à assembler** comme suit :  
-
-- La quantité minimum que vous pouvez saisir est 1. En effet, vous devez assembler au moins une unité pour pouvoir vendre les quatre, en supposant que les trois autres soient disponibles dans l'inventaire.  
-- La quantité maximum que vous pouvez saisir est 4. Cela permet de s'assurer que vous n'assemblez pas une quantité d'articles assemblés pour commande supérieure à celle requise pour la vente.  
-
-## <a name="see-also"></a>Voir aussi
-
+## <a name="see-also"></a>Voir aussi  
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
 [Stock](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

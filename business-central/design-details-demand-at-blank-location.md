@@ -3,19 +3,19 @@ title: Détails de conception - Demande et approvisionnement | Microsoft Docs
 description: Cette rubrique présente le concept de demande, qui désigne toute sorte de demande brute, par exemple un document de vente et un besoin composante d'un bon de production.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, demand, supply, inventory, planning
-ms.date: 06/08/2021
-ms.author: edupont
-ms.openlocfilehash: 62abcd0e37a9871efd6158a898538b7c18b6b47f
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: f808865bd4fc2113dd5c04071f7ba2e8793fe3af
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215338"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3185574"
 ---
 # <a name="design-details-demand-at-blank-location"></a>Détails de conception : demande à un magasin vide.
 Quand un utilisateur crée un événement de demande, comme une ligne document de vente, le programme lui permet parfois de spécifier un code d'emplacement et parfois non, autrement dit il doit utiliser un emplacement vide.
@@ -132,6 +132,3 @@ Comme illustré dans le dernier cas de figure, le seul moyen d'obtenir des résu
 [Détails de conception : équilibrage de la demande et de l'approvisionnement](design-details-balancing-demand-and-supply.md)   
 [Détails de conception : concepts centraux du système de planification](design-details-central-concepts-of-the-planning-system.md)   
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

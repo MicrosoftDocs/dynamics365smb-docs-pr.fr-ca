@@ -1,28 +1,28 @@
 ---
-title: Planification des processus de service
-description: Cette rubrique décrit les différentes tâches permettant de configurer des règles et des valeurs pour définir vos stratégies de services et vos processus de vente.
+title: Planification des processus de service | Microsoft Docs
+description: Décrit les tâches permettant de configurer des règles et des valeurs pour définir vos stratégies de services et vos processus de vente.
 services: project-madeira
 documentationcenter: ''
 author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: service, work hours, configure, price, pricing
-ms.date: 06/23/2021
+ms.date: 04/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 93dfc313521d392b3585eac4aacab3c152a43c78
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.openlocfilehash: 4e3e879a2f768e8260693d160c419b006159ed46
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6323012"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3192493"
 ---
 # <a name="planning-services"></a>Services de planification
-Grâce à [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez configurer les tâches standard qui permettent de répondre aux besoins du service clientèle. Pour cela, vous devez déterminer quels articles et offres de service sont pris en charge par votre organisation de prestation de services, et à quel prix.   
+Grâce à [!INCLUDE[d365fin](includes/d365fin_md.md)], vous pouvez configurer les tâches standard qui permettent de répondre aux besoins du service clientèle. Pour cela, vous devez déterminer quels articles et offres de service sont pris en charge par votre organisation de prestation de services, et à quel prix.   
 
-[!INCLUDE[prod_short](includes/prod_short.md)] fournit également des outils statistiques permettant d'évaluer les performances et d'identifier les points à améliorer.
+[!INCLUDE[d365fin](includes/d365fin_md.md)] fournit également des outils statistiques permettant d'évaluer les performances et d'identifier les points à améliorer.
   
 Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.   
   
@@ -41,6 +41,3 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 [Configurer les articles de service et les composantes article de service](service-how-setup-service-items.md)  
 [Configurer les états des commandes service et des réparations](service-order-repair-status.md)  
 [Paramétrage de la gestion des services](service-setup-service.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
