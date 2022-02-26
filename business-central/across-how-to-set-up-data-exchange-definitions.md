@@ -3,22 +3,22 @@ title: Définir le mode d'échange électronique de documents | Microsoft Docs
 description: Vous pouvez utiliser un fournisseur externe de services OCR pour convertir des fichiers PDF ou image en documents électroniques.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 44069b903df5426ae2aa3e851404c2b9e01f3979
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 04/01/2021
+ms.author: edupont
+ms.openlocfilehash: 58e98a2fa3e7a0d61ad6dc49ac2291a21105ddcb
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3188190"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5774696"
 ---
 # <a name="set-up-data-exchange-definitions"></a>Configurer les définitions d'échange de données
-Vous pouvez configurer [!INCLUDE[d365fin](includes/d365fin_md.md)] pour échanger des données de tables spécifiques avec des données de fichiers externes, par exemple pour recevoir et envoyer des documents électroniques, importer et exporter des données bancaires ou d'autres données, telles que les salaires, les taux de change des devises et les catalogues article. Pour plus d'informations, voir [Échanger des données par voir électronique](across-data-exchange.md).  
+Vous pouvez configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour échanger des données de tables spécifiques avec des données de fichiers externes, par exemple pour recevoir et envoyer des documents électroniques, importer et exporter des données bancaires ou d'autres données, telles que les salaires, les taux de change des devises et les catalogues article. Pour plus d'informations, voir [Échanger des données par voir électronique](across-data-exchange.md).  
 
 Afin de vous préparer à créer une définition d'échange de données pour un fichier ou un flux de données, vous pouvez utiliser le schéma XML associé pour les définir les éléments de données à inclure dans le raccourci **Définitions de colonnes**. Consultez l'étape 6 dans la section [Décrire le formatage de lignes et de colonnes dans un fichier](across-how-to-set-up-data-exchange-definitions.md#to-describe-the-formatting-of-lines-and-columns-in-the-file). Pour plus d'informations, voir [Utiliser des schémas XML pour préparer des définitions d'échange de données](across-how-to-use-xml-schemas-to-prepare-data-exchange-definitions.md).  
 
@@ -37,7 +37,7 @@ Cette rubrique couvre les procédures suivantes :
 La création d'une définition d'échange de données implique deux tâches :  
 
 1. Sur la page **Définition d'échange de données**, décrivez la mise en forme des lignes et des colonnes du fichier.  
-2. Sur la page **Correspondance échange de données**, associez les colonnes du fichier de données avec les champs de [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+2. Sur la page **Correspondance échange de données**, associez les colonnes du fichier de données avec les champs de [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 Ceci est décrit dans les procédures suivantes.  
 
@@ -55,7 +55,7 @@ Ceci est décrit dans les procédures suivantes.
     |**Nom**|Saisissez un nom pour la définition d'échange de données.|  
     |**Type de fichier**|Spécifiez le type de fichier pour lequel la définition d'échange de données est utilisée. Vous pouvez sélectionner quatre types de fichiers :<br /><br /> -   **XML** : chaînes multicouches de contenu et de balisage entourées de balises indiquant la fonction.<br />-   **Texte variable** : les enregistrements ont une longueur variable et sont séparés par un caractère, comme une virgule ou un point virgule. Également appelé *fichier délimité*.<br />-   **Texte fixe** : enregistrements de même longueur, utilisant les caractères du clavier et chaque enregistrement est sur une ligne distincte. Également appelé *fichier de longueur fixe*.<br />- **Json** : chaînes multicouches de contenu dans JavaScript.|  
     |**Type**|Spécifiez pour quel type d'activité la définition d'échange de données est utilisée, par exemple **Exportation de paiement**.|  
-    |**Codeunit gestion données**|Spécifiez le codeunit qui transfère les données dans et hors des tables de [!INCLUDE[d365fin](includes/d365fin_md.md)].|  
+    |**Codeunit gestion données**|Spécifiez le codeunit qui transfère les données dans et hors des tables de [!INCLUDE[prod_short](includes/prod_short.md)].|  
     |**Codeunit validation**|Spécifiez le codeunit utilisé pour valider les données par rapport aux règles d'entreprise prédéfinies.|  
     |**Codeunit lecture/écriture**|Spécifiez le codeunit qui traite les données importées avant la mise en correspondance et les données exportées après la correspondance.|  
     |**XMLport lecture/écriture**|Spécifiez le XMLport via lequel un fichier de données importées ou un service passe avant la correspondance et via lequel des données exportées sortent lors d'une écriture dans un fichier de données ou un service après correspondance.|  
@@ -95,22 +95,22 @@ Ceci est décrit dans les procédures suivantes.
     |**N° de colonne**|Spécifiez le numéro qui indique la position de la colonne sur la ligne du fichier.<br /><br /> Pour les fichiers XML, spécifiez le numéro qui indique le type d'élément dans le fichier contenant les données.|  
     |**Nom**|Spécifiez le nom de la colonne.<br /><br /> Pour les fichiers XML, spécifiez le balisage qui indique les données à échanger.|  
     |**Type de données**|Spécifiez si les données à échanger sont de type **Texte**, **Date** ou **Décimale**.|  
-    |**Format données**|Spécifiez le format des données, le cas échéant. Par exemple, **MM/JJ/AAAA** si le type de données est **Date**. **Remarque :** pour l'exportation, spécifiez le format de données en fonction de [!INCLUDE[d365fin](includes/d365fin_md.md)]. Pour l'importation, spécifiez le format de données en fonction du .NET Framework. Pour plus d'informations, voir [Chaînes au format Date et Heure standard](https://go.microsoft.com/fwlink/?LinkID=323466).|  
-    |**Culture mise en forme données**|Spécifiez la culture du format de données, le cas échéant. Par exemple, **en-US** si le type de données est **Décimale** pour être sûr que la virgule est utilisée comme séparateur de .000, conformément au format américain. Pour plus d'informations, voir [Chaînes au format Date et Heure standard](https://go.microsoft.com/fwlink/?LinkID=323466). **Remarque** : ce champ ne s'applique qu'aux importations.|  
+    |**Format données**|Spécifiez le format des données, le cas échéant. Par exemple, **MM/JJ/AAAA** si le type de données est **Date**. **Remarque :** pour l'exportation, spécifiez le format de données en fonction de [!INCLUDE[prod_short](includes/prod_short.md)]. Pour l'importation, spécifiez le format de données en fonction du .NET Framework. Pour plus d’informations, voir [Chaînes de format de date et heure standard](/dotnet/standard/base-types/standard-date-and-time-format-strings).|  
+    |**Culture mise en forme données**|Spécifiez la culture du format de données, le cas échéant. Par exemple, **en-US** si le type de données est **Décimale** pour être sûr que la virgule est utilisée comme séparateur de .000, conformément au format américain. Pour plus d’informations, voir [Chaînes de format de date et heure standard](/dotnet/standard/base-types/standard-date-and-time-format-strings). **Remarque** : ce champ ne s'applique qu'aux importations.|  
     |**Longueur**|Spécifiez la longueur de la ligne de longueur fixe qui comporte la colonne si le fichier de données est de type **Texte fixe**.|  
     |**Description**|Entrez une description de la colonne, à titre d'information.|  
     |**Chemin**|Indiquez la position de l'élément dans le schéma XML lié.|  
     |**Identificateur de signe négatif**|Saisissez la valeur qui est utilisée dans le fichier de données pour identifier les montants négatifs, dans les fichiers de données qui ne peuvent pas contenir des signes négatifs. Cet identificateur est alors utilisé pour inverser les montants identifiés aux montants négatifs lors de l'importation. **Remarque** : ce champ ne s'applique qu'aux importations.|  
     |**Fixe**|Spécifiez les données à exporter dans cette colonne, telles que les informations supplémentaires sur le type de paiement. **Remarque** : ce champ ne s'applique qu'aux exportations.|  
 
-9. Répétez l'étape 8 pour chaque colonne ou élément XML du fichier de données qui contient des données que vous souhaitez échanger avec [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+9. Répétez l'étape 8 pour chaque colonne ou élément XML du fichier de données qui contient des données que vous souhaitez échanger avec [!INCLUDE[prod_short](includes/prod_short.md)].  
 
- L'étape suivante de la création de la définition d'échange de données consiste à choisir les correspondances entre les colonnes ou les éléments XML du fichier de données et les champs de [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+ L'étape suivante de la création de la définition d'échange de données consiste à choisir les correspondances entre les colonnes ou les éléments XML du fichier de données et les champs de [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 > [!NOTE]  
->  La correspondance spécifique dépend de l'objectif commercial du fichier de données à échanger et des variations locales. Même le standard bancaire SEPA a des variations locales. [!INCLUDE[d365fin](includes/d365fin_md.md)] prend en charge en natif l'importation de fichiers de relevé bancaire SEPA CAMT. Ceci est représenté par le code d'enregistrement de définition d'échange de données **SEPA CAMT** sur la page **Définitions d'échange de données**. Pour plus d'informations sur le mappage de champs spécifique de cette prise en charge de SEPA CAMT, voir [Mappage de champs lors de l'importation de fichiers SEPA CAMT](across-field-mapping-when-importing-sepa-camt-files.md).  
+>  La correspondance spécifique dépend de l'objectif commercial du fichier de données à échanger et des variations locales. Même le standard bancaire SEPA a des variations locales. [!INCLUDE[prod_short](includes/prod_short.md)] prend en charge en natif l’importation de fichiers de relevé bancaire SEPA CAMT. Ceci est représenté par le code d'enregistrement de définition d'échange de données **SEPA CAMT** sur la page **Définitions d'échange de données**. Pour plus d'informations sur le mappage de champs spécifique de cette prise en charge de SEPA CAMT, voir [Mappage de champs lors de l'importation de fichiers SEPA CAMT](across-field-mapping-when-importing-sepa-camt-files.md).  
 
-#### <a name="to-map-columns-in-the-data-file-to-fields-in-d365fin"></a>Pour mapper les colonnes du fichier de données aux champs de [!INCLUDE[d365fin](includes/d365fin_md.md)]  
+#### <a name="to-map-columns-in-the-data-file-to-fields-in-prod_short"></a>Pour mapper les colonnes du fichier de données aux champs de [!INCLUDE[prod_short](includes/prod_short.md)]  
 > [!TIP]
 > Parfois, les valeurs des champs que vous souhaitez associer sont différentes. Par exemple, le code langue pour les États-Unis est « U.S. » dans une application métier et « US » dans une autre. Cela signifie que vous devez transformer la valeur lorsque vous échangez des données. Cela se fait via les règles de transformation que vous définissez pour les champs. Pour plus d'informations, voir [Règles de transformation](across-how-to-set-up-data-exchange-definitions.md#transformation-rules).
 
@@ -120,13 +120,13 @@ Ceci est décrit dans les procédures suivantes.
     |Champ|Description|  
     |---------------------------------|---------------------------------------|  
     |**Code de la table**|Indiquez la table qui contient les champs vers lesquels ou à partir desquels des données sont échangées en fonction de la correspondance.|  
-    |**Utiliser comme table intermédiaire**|Spécifiez si la table que vous sélectionnez dans le champ **Code table** est une table intermédiaire de stockage des données importées avant leur mappage vers la table cible.<br /><br /> Vous utilisez généralement une table intermédiaire lorsque la définition d'échange de données est utilisée pour importer et convertir des documents électroniques, tels que des factures fournisseur en factures achat dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Pour plus d'informations, voir [Échanger des données par voir électronique](across-data-exchange.md).|  
+    |**Utiliser comme table intermédiaire**|Spécifiez si la table que vous sélectionnez dans le champ **Code table** est une table intermédiaire de stockage des données importées avant leur mappage vers la table cible.<br /><br /> Vous utilisez généralement une table intermédiaire lorsque la définition d'échange de données est utilisée pour importer et convertir des documents électroniques, tels que des factures fournisseur en factures achat dans [!INCLUDE[prod_short](includes/prod_short.md)]. Pour plus d'informations, voir [Échanger des données par voir électronique](across-data-exchange.md).|  
     |**Nom**|Saisissez un nom pour la configuration de correspondance.|  
-    |**Codeunit pré-mappage**|Spécifiez le codeunit qui prépare la mise en correspondance entre les champs dans [!INCLUDE[d365fin](includes/d365fin_md.md)] et les données externes.|  
-    |**Correspondance du Codeunit**|Spécifiez le codeunit qui est utilisé pour mettre en correspondance les colonnes ou les éléments de données XML spécifiés avec les champs dans [!INCLUDE[d365fin](includes/d365fin_md.md)].|  
-    |**Codeunit post-mappage**|Spécifiez le codeunit qui effectue la mise en correspondance entre les champs dans [!INCLUDE[d365fin](includes/d365fin_md.md)] et les données externes. **Remarque :** lors de l'utilisation de l'extension AMC Banking 365 Fundamentals, le codeunit convertit les données exportées de [!INCLUDE[d365fin](includes/d365fin_md.md)] vers un format générique qui est prêt pour l'exportation. Pour l'importation, le codeunit convertit les données externes dans un format prêt à l'importation dans [!INCLUDE[d365fin](includes/d365fin_md.md)].|  
+    |**Codeunit pré-mappage**|Spécifiez le codeunit qui prépare la mise en correspondance entre les champs dans [!INCLUDE[prod_short](includes/prod_short.md)] et les données externes.|  
+    |**Correspondance du Codeunit**|Spécifiez le codeunit qui est utilisé pour mettre en correspondance les colonnes ou les éléments de données XML spécifiés avec les champs dans [!INCLUDE[prod_short](includes/prod_short.md)].|  
+    |**Codeunit post-mappage**|Spécifiez le codeunit qui effectue la mise en correspondance entre les champs dans [!INCLUDE[prod_short](includes/prod_short.md)] et les données externes. **Remarque :** lors de l’utilisation de l’extension AMC Banking 365 Fundamentals, le codeunit convertit les données exportées depuis [!INCLUDE[prod_short](includes/prod_short.md)] vers un format générique prêt pour l’exportation. Pour l'importation, le codeunit convertit les données externes dans un format prêt à l'importation dans [!INCLUDE[prod_short](includes/prod_short.md)].|  
 
-3.  Sur le raccourci **Correspondance champ**, spécifiez la correspondance entre les colonnes et les champs dans [!INCLUDE[d365fin](includes/d365fin_md.md)] en renseignant les champs comme indiqué dans le tableau suivant.  
+3.  Sur le raccourci **Correspondance champ**, spécifiez la correspondance entre les colonnes et les champs dans [!INCLUDE[prod_short](includes/prod_short.md)] en renseignant les champs comme indiqué dans le tableau suivant.  
 
     |Champ|Description|  
     |---------------------------------|---------------------------------------|  
@@ -139,7 +139,7 @@ Ceci est décrit dans les procédures suivantes.
     |**Libellé champ cible**|Uniquement visible lorsque la case à cocher **Utiliser comme table intermédiaire** est cochée.<br /><br /> Spécifiez le nom du champ dans la table cible auquel la valeur de la colonne **Titre colonne** est mappée lorsque vous utilisez une table intermédiaire pour l'importation des données.|  
     |**En option**|Uniquement visible lorsque la case à cocher **Utiliser comme table intermédiaire** est cochée.<br /><br /> Spécifiez que la correspondance doit être ignorée si le champ est vide. Si vous n'activez pas cette case à cocher, une erreur d'exportation aura lieu si le champ est vide.|  
 
-La définition d'échange de données est désormais prête à être activée pour les utilisateurs. Pour en savoir plus, consultez [Configurer l'envoi et la réception de documents électroniques](across-how-to-set-up-electronic-document-sending-and-receiving.md), [Configurer des virements SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md#setting-up-sepa-credit-transfer), [Recueillir des paiements avec un prélèvement SEPA](finance-collect-payments-with-sepa-direct-debit.md) et [Exécuter les paiements avec l'extension AMC Banking 365 Fundamentals ou un virement SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md).  
+La définition d'échange de données est désormais prête à être activée pour les utilisateurs. Pour en savoir plus, consultez [Configurer l’envoi et la réception de documents électroniques](across-how-to-set-up-electronic-document-sending-and-receiving.md), [Configurer des virements SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md#setting-up-sepa-credit-transfer), [Recueillir des paiements avec un prélèvement SEPA](finance-collect-payments-with-sepa-direct-debit.md) et [Exécuter les paiements avec l’extension AMC Banking 365 Fundamentals ou un virement SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md).  
 
 ### <a name="transformation-rules"></a>Règles de transformation
 Si les valeurs des champs que vous associez sont différentes, vous devez utiliser des règles de transformation pour les définitions d'échange de données afin de les rendre identiques. Pour définir des règles de transformation pour des définitions d'échange de données, ouvrez une définition existante ou créez-en une nouvelle, puis, sur le raccourci **Définitions de ligne**, choisissez **Gérer**, puis **Mappage de champs**. Des règles prédéfinies sont fournies, mais vous pouvez également créer les vôtres. Le tableau suivant décrit les types de transformations que vous pouvez effectuer.
@@ -197,6 +197,9 @@ Lorsque vous avez créé la définition d'échange de données pour un fichier d
 [Configuration de l'échange de données](across-set-up-data-exchange.md)  
 [Configurer l'envoi et la réception de documents électroniques](across-how-to-set-up-electronic-document-sending-and-receiving.md)  
 [Recouvrement de paiements par prélèvement automatique SEPA](finance-collect-payments-with-sepa-direct-debit.md)  
-[Effectuer des paiements avec l'extension AMC Banking 365 Fundamentals ou virement SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md)  
+[Réaliser des paiements avec l’extension AMC Banking 365 Fundamentals ou le virement SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md)  
 [Documents entrants](across-income-documents.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

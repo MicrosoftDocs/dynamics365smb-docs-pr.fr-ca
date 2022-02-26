@@ -5,20 +5,23 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: dynamics365-business-central
 author: jswymer
-ms.date: 04/01/2020
-ms.openlocfilehash: 7790548828595838e6c2f626194d59260ef4e8ab
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.author: jswymer
+ms.date: 04/01/2021
+ms.openlocfilehash: 99dd133c3f3ab05806976c5fe840f81dcd8e1403
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3187782"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6440909"
 ---
 # <a name="inspecting-pages-in-business-central"></a>Inspection des pages dans Business Central
 
 La fonction Inspection des pages vous permet d'obtenir des détails sur une page : elle vous donne ainsi un aperçu du format de la page, des différents éléments qui la constituent ainsi que de la source qui se cache derrière les données qu'elle diffuse. La fonction Inspection des pages est conçue notamment pour les administrateurs, les utilisateurs avancés, le personnel du support technique ainsi que les développeurs. Elle est parfaite pour découvrir quel modèle de données se cache derrière une page et pour le dépannage. Par exemple, si vous rencontrez un problème avec une page, vous pouvez utiliser la fonction d'inspection des pages pour obtenir les informations à transmettre à votre administrateur système ou à votre personnel du support technique.
+
+[!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
 ## <a name="working-with-page-inspection"></a>Utilisation de la fonction Inspection des pages
 
@@ -26,7 +29,7 @@ Vous commencez l'inspection des pages dans la page **Aide et support**. Cliquez 
 
 Le volet **Inspection des pages** s'ouvre sur le côté. La figure suivante illustre le volet **Inspection des pages** sur la page **Document de vente**.
 
-![Inspection des pages](media/page-inspection-example.png)
+![Inspection des pages.](media/page-inspection-example.png)
 
 Lorsque le volet **Inspection des pages** s'ouvre pour la première fois, il affiche les informations qui concernent le principal objet de la page.
 
@@ -44,4 +47,7 @@ Les utilisateurs qui ne disposent pas des autorisations sur **Objet système 533
 
 ## <a name="see-also"></a>Voir aussi
 
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

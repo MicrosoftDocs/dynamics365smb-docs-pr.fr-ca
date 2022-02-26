@@ -4,10 +4,16 @@ description: Découvrez comment ajouter des compagnies d’autres environnements
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.search.keywords: 'accountant, accounting, company hub'
-ms.search.form: '1151, 1155, 1166, 1165'
+ms.search.keywords: accountant, accounting, company hub
+ms.search.form: 1151, 1155, 1166, 1165
 ms.date: 04/01/2021
 ms.author: edupont
+ms.openlocfilehash: 0bafc786f70e95585d3d1d1f4a44e21f057df4a6
+ms.sourcegitcommit: 66c78f6f04bfca6c0794b3299241ed65037b1c08
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "8029072"
 ---
 # <a name="add-companies-to-your-company-hub"></a>Ajouter des compagnies à votre Hub Entreprise
 

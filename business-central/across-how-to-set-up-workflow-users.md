@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : configuration des utilisateurs de flux de travail | Microsoft Docs'
-description: Avant de pouvoir créer des flux de travail, vous devez configurer des utilisateurs qui participent aux flux de travail. Cela est nécessaire, par exemple, pour spécifier qui doit recevoir une notification pour agir sur une étape du flux de travail.
+title: 'Procédure : configurer des utilisateurs de flux de travail'
+description: Avant de pouvoir créer des workflows, vous devez configurer des utilisateurs qui y participent sur la page Groupe d’utilisateurs du workflow.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: reject, delegate, request
-ms.date: 06/08/2020
-ms.author: sgroespe
-ms.openlocfilehash: ba6508c9679923836092ba4df9d3453a39f7fd9b
-ms.sourcegitcommit: 0b5f8f68b1c9526288bfcce1a3bdc988d2910040
+ms.date: 06/11/2021
+ms.author: edupont
+ms.openlocfilehash: 2a6ee1b7fd7a65dba36bae95c8981657b6307bfb
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454281"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6439930"
 ---
 # <a name="set-up-workflow-users"></a>Configurer des utilisateurs de flux de travail
 
@@ -32,7 +32,7 @@ Les utilisateurs de flux de travail dont la fonction est utilisateurs approbatio
 
 ## <a name="to-set-up-a-workflow-user"></a>Configurer un utilisateur de workflow
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Groupes d'utilisateurs du flux de travail**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Groupes utilisateur workflow**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Nouveau**. La page **Groupe d'utilisateurs du flux de travail** s'ouvre.  
 3. Dans le champ **Code**, entrez 20 caractères maximum pour identifier le workflow.  
 4. Dans le champ **Description**, décrivez le workflow.  
@@ -52,3 +52,6 @@ Les utilisateurs de flux de travail dont la fonction est utilisateurs approbatio
 [Utilisation des workflows](across-use-workflows.md)  
 [Procédure pas à pas : configuration et utilisation d'un flux d'approbation achat](walkthrough-setting-up-and-using-a-purchase-approval-workflow.md)  
 [Flux de travail](across-workflow.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

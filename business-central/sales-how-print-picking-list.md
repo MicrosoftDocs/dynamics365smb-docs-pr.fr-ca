@@ -1,31 +1,33 @@
 ---
-title: "Procédure : Imprimer une liste des prélèvements inventaire d'un document de vente"
+title: Imprimer la liste des prélèvements inventaire à partir d’un document de vente
 description: Vous pouvez imprimer une liste des prélèvements inventaire directement à partir d'un document de vente, des ventes, de la facture et d'autres documents vente sortants.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/27/2020
-ms.author: sgroespe
-ms.openlocfilehash: d5eaad5279445375ec00fdf42dd48bffa5d03645
-ms.sourcegitcommit: 7d54d8abe52e0546378cf760f5082f46e8441b90
+ms.date: 06/25/2021
+ms.author: edupont
+ms.openlocfilehash: 50c0a9836a45bac0dfd4a190040c908d28d5617f
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3324487"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6436836"
 ---
 # <a name="print-the-picking-list"></a>Imprimer la liste des prélèvements
-Vous pouvez imprimer une liste des prélèvements inventaire directement à partir d'un document de vente, d'une facture vente, ou d'autres documents qui déclenchent la livraison d'articles.
+
+Vous pouvez imprimer une liste des prélèvements inventaire directement à partir d’un document de vente ou d’autres documents qui déclenchent la livraison des articles.
 
 Ce rapport est généralement utilisé dans les compagnies sans fonctionnalité dédiée à la gestion des entrepôts, de sorte qu'un préposé à l'inventaire peut simplement afficher ou imprimer la liste des prélèvements à partir du document vente associé. Dans les compagnies avec un volume plus élevé ou des processus plus complexes, le prélèvement est planifié et effectué dans des documents entrepôt dédiés. Pour plus d'informations, voir [Prélèvement d'articles](warehouse-pick-items.md).
 
-## <a name="to-print-a-picking-list-from-a-sales-order"></a>Pour imprimer une liste des prélèvements à partir d'un document de vente  
-La procédure suivante se base sur un document de vente. Les étapes sont similaires pour tous les documents vente pouvant être utilisés pour lancer une livraison d'articles.
+## <a name="to-print-a-picking-list-from-a-sales-order"></a>Pour imprimer une liste des prélèvements à partir d'un document de vente
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
+La procédure suivante se base sur un document de vente. Les étapes sont similaires pour tous les autres documents pouvant être utilisés pour lancer la livraison d’articles, par exemple un ordre transfert.
+
+1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2. Ouvrez le document de vente pour lequel vous souhaitez prélever des articles.  
 3. Choisir l'action **Rapport**, puis choisissez l'action **Liste de prélèvement par ordre**.  
 4. Sélectionnez le bouton **Imprimer** pour imprimer la liste de prélèvements, ou le bouton **Aperçu** pour l'afficher à l'écran.
@@ -35,7 +37,10 @@ Vous pouvez également enregistrer la liste des prélèvements en tant que docum
 > [!NOTE]
 > Si vous avez utilisé la fonction **Éclater nomenclature** sur le document de vente, seuls les composantes de l'élément d'assemblage associé sont affichées dans le rapport. Pour plus d'informations, reportez-vous à [Utiliser les nomenclatures](inventory-how-work-BOMs.md).
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
+
 [Inventaire](inventory-manage-inventory.md)  
 [Prélèvement d'articles](warehouse-pick-items.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)   
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

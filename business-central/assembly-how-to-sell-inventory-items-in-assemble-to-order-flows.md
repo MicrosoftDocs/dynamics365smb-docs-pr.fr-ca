@@ -1,23 +1,23 @@
 ---
-title: 'Procédure : vendre des articles en inventaire dans des flux assembler pour commande | Microsoft Docs'
-description: Si l'article est configuré pour la fiche d'assemblage pour commande, le processus par défaut de document de vente considère que l'article n'est pas en inventaire et doit être assemblé pour ce document de vente spécifique. Par conséquent, un ordre d'assemblage lié est automatiquement créé lorsque vous ajoutez l'article à une ligne document de vente.
+title: 'Procédure : Vente d’articles en inventaire dans des flux à assembler pour commande'
+description: Si un article est configuré pour assembler pour commande, l’article doit être assemblé pour les documents de vente et un ordre d’assemblage lié est automatiquement créé.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: kit, kitting
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: e33bc68698a20909e1eda1e6a7e19501b9c38fc5
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 06/14/2021
+ms.author: edupont
+ms.openlocfilehash: 35fa56c5a0b465f07a38bddc44f5f569283b2a1d
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3186366"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6435414"
 ---
-# <a name="sell-inventory-items-in-assemble-to-order-flows"></a>Vente d'articles d'inventaire dans des flux à assembler pour commande
+# <a name="selling-inventory-items-in-assemble-to-order-flows"></a>Vendre des éléments d’inventaire dans des flux à assembler pour commande
 Si le champ **Politique d'assemblage** de la fiche article d'un élément d'assemblage indique **Assembler pour commande**, le processus par défaut de document de vente considère que l'article n'est pas en inventaire et doit être assemblé pour ce document de vente spécifique. Par conséquent, un ordre d'assemblage lié est automatiquement créé lorsque vous ajoutez l'article à une ligne document de vente. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md). Toutefois, si une partie de la quantité sur commande vente est déjà disponible en stock, alors vous pouvez diminuer la quantité d'ordre d'assemblage en changeant le champ **Quantité à assembler pour commande** de la ligne commande vente.  
 
 Ce scénario est rare parce que les articles à assembler pour commande sont toujours censés être personnalisés, et il est peu probable qu'ils soient en inventaire dans la configuration qui est demandée par un autre client. Néanmoins, si une compagnie a des quantités assembler pour commande en inventaire à cause de retours ou d'annulations de commande, ces quantités doivent être prélevées et vendues avant que de nouvelles soient assemblées.  
@@ -33,7 +33,7 @@ Une fonctionnalité similaire est disponible lorsque vous vendez des éléments 
 Dans cette procédure, vous remplacez les quantités à assembler pour commande par les quantités en inventaire sur une ligne document de vente. Les étapes comprennent la vérification des disponibilités existantes, la détection de la quantité de l'ordre d'assemblage associé, puis la réservation de la quantité en inventaire pour s'assurer qu'elle est prélevée et livrée pour la commande.  
 
 ## <a name="to-sell-inventory-items-in-assemble-to-order-flows"></a>Vendre des articles en inventaire dans des flux assembler pour commande  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Créez un document de vente. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).  
 3.  Sur une ligne document de vente pour un article à assembler pour commande, dans le champ **Quantité**, entrez la quantité demandée.  
 4.  Dans le récapitulatif **Détails ligne vente**, déterminez si une partie ou la totalité de la quantité demandée est disponible.  
@@ -54,4 +54,7 @@ Dans cette procédure, vous remplacez les quantités à assembler pour commande 
 [Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,15 +1,21 @@
 ---
 title: Paramétrer des calendriers usine
-description: 'La création et l’activation d’un calendrier d’atelier impliquent plusieurs tâches, notamment la configuration des calendriers d’atelier et la création de quarts de travail.'
+description: La création et l’activation d’un calendrier d’atelier impliquent plusieurs tâches, notamment la configuration des calendriers d’atelier et la création de quarts de travail.
 author: SorenGP
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: '9291, 9293, 9295, 99000750, 99000751, 99000752, 99000753, 99000759, 99000769, 99000770, 99000771, 99000772, 99000920'
+ms.search.form: 9291, 9293, 9295, 99000750, 99000751, 99000752, 99000753, 99000759, 99000769, 99000770, 99000771, 99000772, 99000920
 ms.date: 06/22/2021
 ms.author: edupont
+ms.openlocfilehash: ab690e038c3e7c681cea9677e48b35876c567eac
+ms.sourcegitcommit: 2ab6709741be16ca8029e2afadf19d28cf00fbc7
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7972785"
 ---
 # <a name="set-up-shop-calendars"></a>Paramétrer des calendriers usine
 

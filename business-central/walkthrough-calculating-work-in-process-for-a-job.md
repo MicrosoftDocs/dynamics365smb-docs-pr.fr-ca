@@ -1,25 +1,25 @@
 ---
-title: 'Procédure pas à pas : calcul des travaux en cours pour un projet | Microsoft Docs'
-description: Avec les projets, vous pouvez programmer l'utilisation des ressources de votre compagnie et suivre les différents coûts pour un projet spécifique. Les projets impliquent la consommation d'heures employé, d'heures machines, d'articles en inventaire et d'autres types d'utilisation devant être suivis au fur et à mesure de l'avancée du projet.
+title: 'Procédure pas à pas : calcul des travaux en cours pour un projet'
+description: Les projets impliquent la consommation d'heures employé, d'heures machines, d'articles en inventaire et d'autres types d'utilisation devant être suivis au fur et à mesure de l'avancée du projet.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/25/2020
-ms.author: sgroespe
-ms.openlocfilehash: 3d9a156a1196767b4ae07f63bbb4ca8e2ff5318f
-ms.sourcegitcommit: 3e9c89f90db5eaed599630299353300621fe4007
+ms.date: 04/01/2021
+ms.author: edupont
+ms.openlocfilehash: 8f508ae0f867fe63ee557df6aba727c0165464d1
+ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527918"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7588127"
 ---
 # <a name="walkthrough-calculating-work-in-process-for-a-job"></a>Procédure pas à pas : calcul des travaux en cours pour un projet
 
-[!INCLUDE[complete_sample_data](includes/complete_sample_data.md)]  
+<!-- [!INCLUDE[complete_sample_data](includes/complete_sample_data.md)]   -->
 
 Avec les projets, vous pouvez programmer l'utilisation des ressources de votre compagnie et suivre les différents coûts pour un projet spécifique. Les projets impliquent la consommation d'heures employé, d'heures machines, d'articles en inventaire et d'autres types d'utilisation devant être suivis au fur et à mesure de l'avancée du projet. Si celui-ci couvre une longue période, il se peut que vous souhaitiez transférer les coûts correspondants vers un compte Travaux en cours (TEC) dans le bilan au cours de projet. Vous pouvez ensuite reconnaître les coûts et ventes dans vos comptes état des résultats, le cas échéant.  
 
@@ -38,7 +38,7 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
  Cette procédure pas à pas décrit les activités de Tricia, membre de l'équipe Projet.  
 
 ## <a name="prerequisites"></a>Conditions préalables  
- Avant de pouvoir exécuter les tâches de cette procédure pas à pas, [!INCLUDE[d365fin](includes/d365fin_md.md)] doit être installé sur votre ordinateur.  
+ Avant de pouvoir exécuter les tâches de cette procédure pas à pas, [!INCLUDE[prod_short](includes/prod_short.md)] doit être installé sur votre ordinateur.  
 
 ## <a name="story"></a>Scénario  
  Ce procédure pas à pas se concentre sur la société CRONUS International Ltd., entreprise de conception et de conseil, qui conçoit et équipe de nouvelles infrastructures (telles que des salles de conférence et des bureaux) avec du mobilier, des accessoires et des unités de stockage. La majeure partie du travail à CRONUS est orientée projets et Tricia, membre de l'équipe Projet, utilise les projets pour obtenir un aperçu des projets en cours acceptés par CRONUS, ainsi que des projets terminés. Certains des projets peuvent être très longs et durer plusieurs mois. Tricia peut utiliser un compte TEC pour enregistrer les travaux en cours et suivre les coûts tout au long du projet.  
@@ -52,7 +52,7 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 
 |Champ|Description|  
 |-------------------------------------|---------------------------------------|  
-|**<blank>**|Laissez le champ vierge si la tâche projet fait partie d'un groupe de tâches.|  
+|**\<blank\>**|Laissez le champ vierge si la tâche projet fait partie d'un groupe de tâches.|  
 |**Total**|Définit la plage ou le groupe de tâches incluses dans le calcul des TEC et de la réception. Au sein du groupe, n'importe quelle tâche projet dont le **Type tâche projet** est défini sur **Report** est incluse dans le total TEC, à moins que le champ **TEC-Total** soit paramétré sur **Exclu**.|  
 |**Exclu**|S'applique uniquement à une tâche dont le **Type tâche projet** est défini sur **Validation**. La tâche n'est pas incluse lors du calcul des TEC et de la réception.|  
 
@@ -60,7 +60,7 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 
 ### <a name="to-calculate-wip"></a>Pour calculer les TEC :  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Projets**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Projets**, puis choisissez le lien associé.  
 2.  Dans la liste **Projets**, sélectionnez le projet **Deerfield**, puis choisissez l'action **Modifier**. La fiche projet s'ouvre en mode édition.  
 
      Les TEC peuvent être calculés en fonction de la méthode sélectionnée dans ce champ : Valeur de coût, Valeur des ventes, Coût des ventes, Pourcentage avancement ou Fin de contrat. Dans cet exemple, CRONUS utilise la méthode Valeur de coût.  
@@ -92,7 +92,7 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 
 ### <a name="to-review-wip-warnings"></a>Pour étudier les avertissements TEC  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Cockpit TEC**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Cockpit TEC**, puis choisissez le lien associé.  
 2.  Sélectionnez le projet **Deerfield**, puis l'action **Afficher des avertissements**.  
 3.  Sur la page **Avertissements TEC projet**, examinez l'avertissement associé au projet.  
 
@@ -156,11 +156,14 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
     >  Supposons que Tricia a calculé et reporté les TEC d'un projet avec des dates incorrectes. En suivant la méthode vue précédemment, elle peut inverser les reports incorrects, corriger les dates et reporter à nouveau les TEC dans le grand livre.  
 
 ## <a name="next-steps"></a>Étapes suivantes  
- Cette procédure pas-à-pas vous a montré comment calculer les TEC dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Avec des projets plus vastes, il peut être utile de transférer les coûts vers un compte TEC de manière périodique tandis que le projet est en cours d’achèvement. Cette procédure pas-à-pas vous a montré comment exclure des lignes tâche d'un calcul. Elle vous montre également à quel moment vous devriez avoir à recalculer. Enfin, cette procédure pas-à-pas montre comment reporter les TEC dans le grand livre. Un exemple de la manière d'inverser un report des TEC dans le grand livre est également inclus.  
+ Cette procédure pas-à-pas vous a montré comment calculer les TEC dans [!INCLUDE[prod_short](includes/prod_short.md)]. Avec des projets plus vastes, il peut être utile de transférer les coûts vers un compte TEC de manière périodique tandis que le projet est en cours d’achèvement. Cette procédure pas-à-pas vous a montré comment exclure des lignes tâche d'un calcul. Elle vous montre également à quel moment vous devriez avoir à recalculer. Enfin, cette procédure pas-à-pas montre comment reporter les TEC dans le grand livre. Un exemple de la manière d'inverser un report des TEC dans le grand livre est également inclus.  
 
 ## <a name="see-also"></a>Voir aussi  
  [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)  
  [Procédure pas à pas : gestion des projets](walkthrough-managing-projects-with-jobs.md)   
  [Comprendre les méthodes TEC](projects-understanding-wip.md)   
  [Surveillance de la progression et des performances](projects-how-monitor-progress-performance.md)  
- [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+ [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

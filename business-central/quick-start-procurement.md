@@ -8,11 +8,16 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: quickstart
-ms.search.form: '26, 27, 50, 56'
+ms.search.form: 26, 27, 50, 56
 ms.date: 09/29/2021
 ms.author: edupont
+ms.openlocfilehash: 58476145830438b85e70c03958b2bf997640e2c7
+ms.sourcegitcommit: e008b3d7003c256475d6c606e5f7c9866a6bbb72
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7953119"
 ---
-
 # <a name="procurement-quick-start"></a>Démarrage rapide Approvisionnement
 
 Pour pouvoir acheter des produits et des services, vous devez d’abord configurer des fournisseurs. Une fois cela fait, vous pouvez commencer à enregistrer les bons de commande et à recevoir les factures.  

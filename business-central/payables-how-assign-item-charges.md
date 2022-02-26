@@ -1,23 +1,22 @@
 ---
-title: Affecter les frais annexes aux ventes et aux achats| Microsoft Docs
-description: Si vous voulez que vos articles dans l'inventaire comptabilisent les coûts ajoutés, tels que le fret, la manutention, les assurances et le transport, que vous encourez lorsque vous achetez ou vendez des articles, vous pouvez utiliser la fonction Frais annexes.
-services: project-madeira
-documentationcenter: ''
+title: Affecter les frais annexes aux ventes et aux achats (contient une vidéo)
+description: Affectez les frais annexes lorsque vous avez besoin que les articles d’inventaire comptabilisent les coûts ajoutés, tels que le fret, la manutention, les assurances, et transport, que vous encourez lorsque vous achetez ou vendez des articles.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: transportation, added cost, landed cost
-ms.date: 10/01/2019
-ms.author: sgroespe
-ms.openlocfilehash: a113573ca1732472f5ec926f78273cdb4b94f989
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.search.form: 5709, 5800, 5805, 5814
+ms.date: 06/22/2021
+ms.author: edupont
+ms.openlocfilehash: c49b529bcb93544aef8393a5440b142e722efd1c
+ms.sourcegitcommit: e008b3d7003c256475d6c606e5f7c9866a6bbb72
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2878148"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7953244"
 ---
 # <a name="use-item-charges-to-account-for-additional-trade-costs"></a>Utiliser Frais annexes pour comptabiliser les coûts commerciaux supplémentaires
 Pour une évaluation correcte, vos articles de l'inventaire doivent comptabiliser tous les coûts ajoutés, tels que le fret, la manutention, les assurances et le transport, que vous encourez lorsque vous achetez ou vendez des articles. Pour les achats, le coût en magasin d'un article acheté est constitué du prix d'achat au fournisseur et de tous les frais annexes directs pouvant être affectés à chacune des réceptions ou expéditions retour. Pour les ventes, il peut s'avérer aussi fondamental pour votre compagnie de connaître le coût de livraison des articles vendus que le coût en magasin des articles achetés.
@@ -26,7 +25,7 @@ En plus d'enregistrer les coûts supplémentaires dans votre valeur d'inventaire
 
 - Identifier le coût en magasin d'un article et optimiser le réseau de distribution
 - Détailler le coût ou prix unitaire d'un article à des fins d'analyse
-- Déduire des rabais à partir du coût unitaire et des rabais sur ventes à partir du prix unitaire
+- Inclure des rabais à partir du coût unitaire et des rabais sur ventes à partir du prix unitaire
 
 Avant d'affecter des frais annexes, vous devez configurer des numéros de frais annexes pour les différents types de frais annexes, y compris dans quels comptes GL les frais liés aux ajustements de ventes, d'achats et d'inventaire seront reportés. Un numéro de frais annexes contient une combinaison du groupe de report produit, le code groupe fiscal, le groupe de report produit TVA et de frais annexes. Lorsque vous saisissez le numéro frais annexes dans un document achat ou vente, le compte du grand livre correspondant est récupéré sur la base de la configuration du numéro frais annexes et des informations sur le document.
 
@@ -40,19 +39,19 @@ Pour les documents achat et vente, vous pouvez affecter des frais annexes de deu
 ## <a name="example"></a>Exemple :
 Cette vidéo montre comment gérer un coût d'expédition supplémentaire dans le cadre de l'évaluation des coûts de l'inventaire.
 <br><br>  
-> [!Video https://www.microsoft.com/videoplayer/embed/RE4b0SB]
+> [!Video https://www.microsoft.com/videoplayer/embed/RE4b0SB?rel=0]
 
 ## <a name="to-set-up-item-charge-numbers"></a>Pour configurer des numéros de frais annexes
 Utilisez les numéros de frais annexes pour distinguer les différents types de frais annexes utilisés dans votre compagnie.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Frais annexes**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Frais article**, puis choisissez le lien associé.
 2. Sur la page **Frais annexes**, sélectionnez l'action **Nouveau** pour créer ligne.
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 ## <a name="to-assign-an-item-charge-directly-to-the-purchase-invoice-for-the-item"></a>Pour affecter des frais annexes directement à la facture achat pour l'article
 Si vous connaissez les frais annexes au moment de reporter une facture achat pour l'article, procédez comme suit.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures achat**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures achat**, puis sélectionnez le lien associé.
 2. Créez une facture achat. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 3. Assurez-vous que la facture achat a une ou plusieurs lignes de type Article.
 4. Sur une nouvelle ligne, dans le champ **Type**, sélectionnez **Frais annexes**.
@@ -85,4 +84,7 @@ Les frais annexes de la facture achat distincte sont maintenant affectés à l'a
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
 [Enregistrer des achats](purchasing-how-record-purchases.md)  
 [Facturer des ventes](sales-how-invoice-sales.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,21 +1,21 @@
 ---
-title: Planification avec/sans emplacement | Microsoft Docs
-description: Il est important de comprendre le fonctionnement de la planification avec/sans codes d'emplacement sur les lignes demande.
+title: Planification avec/sans emplacement
+description: Dans cette rubrique, découvrez la production et la fabrication, y compris la planification des approvisionnements, dans Business Central.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
-ms.author: sgroespe
-ms.openlocfilehash: b5c5c12dedfe3f35737888017ed02e0f7d464443
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.date: 07/16/2021
+ms.author: edupont
+ms.openlocfilehash: fa1b63bb94152c130077907dbe2d4e0d08281f40
+ms.sourcegitcommit: acc1871afa889cb699e65b1b318028c05f8e6444
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2877697"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "6636001"
 ---
 # <a name="planning-with-or-without-locations"></a>Planification avec/sans emplacement
 En ce qui concerne la planification avec ou sans code magasin sur les lignes demande, le système opère directement lorsque :  
@@ -25,16 +25,20 @@ En ce qui concerne la planification avec ou sans code magasin sur les lignes dem
 
 Toutefois, si les lignes demande indiquent parfois le code magasin, mais pas de manière systématique, le système de planification suit certaines règles en fonction de la configuration.  
 
+> [!TIP]
+> Si vous planifiez souvent des demandes dans différents emplacements, nous vous recommandons d’utiliser la fonction unités de stock.
+
 ## <a name="demand-at-location"></a>Demande à l'emplacement  
+
 Lorsque le système de planification détecte une demande dans un emplacement (identifiée par une ligne avec code d'emplacement), il peut procéder de plusieurs manières en fonction de 3 valeurs de configuration critiques.  
 
 Lors de l'exécution de la planification, le système recherche ces 3 valeurs de configuration l'une après l'autre et effectue la planification en conséquence :  
 
-1.  Le champ **Magasin obligatoire** est-il activé ?  
+1. Y a-t-il une coche dans le champ **Emplacement obligatoire** de la page **Configuration inventaire**?  
 
     Si oui :  
 
-2.  Existe-t-il une unité de stock pour l'article ?  
+2. Existe-t-il une unité de stock pour l'article ?  
 
     Si oui :  
 
@@ -42,7 +46,7 @@ Lors de l'exécution de la planification, le système recherche ces 3 valeurs d
 
     Si non :  
 
-3.  Le champ **Mag. composant par déf** contient-il le code magasin demandé ?  
+3. Le champ **Composantes à l’emplacement** de la page **Configuration production** contient-il le code d’emplacement demandé?  
 
     Si oui :  
 
@@ -53,9 +57,18 @@ Lors de l'exécution de la planification, le système recherche ces 3 valeurs d
     L’article est planifié comme suit : Stratégie réapprovisionnement = *Lot pour Lot*, Inclure inventaire = *Oui*. Tous les autres paramètres de planification ont la valeur Vide. (Les articles qui suivent l’*ordre* de la méthode réapprovisionnement continuent à  *le* suivre, tout comme les autres paramètres.)  
 
 > [!NOTE]  
->  Cette solution minimale couvre strictement la demande. Tout paramètre de planification défini est ignoré.  
+> Cette solution minimale couvre strictement la demande. Tout paramètre de planification défini est ignoré.  
 
 Consultez les variantes des cas de figure ci-dessous.  
+
+> [!TIP]
+> Le champ **Emplacement obligatoire** de la page **Configuration inventaire** et le champ **Composantes à l’emplacement** de la page Configuration production sont très importants pour régir la façon dont le système de planification traite les lignes de demande avec ou sans codes d’emplacement.
+>
+> En ce qui concerne la demande production achetée (lorsque le moteur de planification est utilisé uniquement à des fins de planification achat et non de planification de la production), [!INCLUDE [prod_short](includes/prod_short.md)] utilise le même emplacement pour les composantes que celui indiqué dans le bon de production. Toutefois, en complétant ce champ, vous pouvez rediriger les composantes vers un autre emplacement.
+>
+> Vous pouvez également définir ceci pour une unité de stock précise en sélectionnant un code d’emplacement différent dans le champ **Mag. composante par déf** de la fiche unité de stock. Remarquez toutefois que cette action est rarement utilisée, comme la logique planification peut être altérée lors de la planification pour la composante unité de stock.
+
+Un autre champ important est le champ **Qté maximum commande** de la fiche **Article**. Il spécifie une quantité maximale autorisée pour une proposition commande article et est utilisé si l’article est expédié dans une unité de transport fixe, telle qu’un conteneur, dont vous souhaitez optimiser l’utilisation. Une fois le besoin de réapprovisionnement reconnu et la taille lot ajustée afin de répondre à la méthode réapprovisionnement spécifiée, la quantité est réduite, si nécessaire, pour satisfaire la quantité maximum commande que vous définissez pour l'article. Si des besoins supplémentaires demeurent, de nouvelles commandes sont calculées pour y répondre. Ce champ est généralement utilisé avec un mode de lancement fabrication sur stock.  
 
 ## <a name="demand-at-blank-location"></a>Demande à un emplacement vide  
 Même si la case **Emplacement obligatoire** est cochée, le système autorise la création de lignes demande sans code d'emplacement, ce que l'on appelle également « emplacement *VIDE* ». Il s'agit d'un écart pour le système, car il a plusieurs valeurs de configuration accordées pour gérer les emplacements (voir ci-dessus) et, par conséquent, le moteur de planification ne crée pas de ligne planification pour une telle ligne demande. Si le champ **Emplacement obligatoire** n'est pas sélectionné alors qu'une des valeurs de configuration d'emplacement existe, c'est également considéré comme un écart et le système de planification réagira en proposant la « solution minimale » :   
@@ -133,14 +146,19 @@ L'article est planifié en fonction des paramètres de planification de la fiche
 
 Comme vous pouvez le voir au dernier cas de figure, le seul moyen d'obtenir des résultats corrects pour une ligne de demande sans code d'emplacement consiste à désactiver toutes les valeurs de configuration relatives aux emplacements. De la même manière, le seul moyen d'obtenir des résultats de planification stables pour les demandes dans des magasins consiste à utiliser des points de stock.  
 
-Par conséquent, si vous planifiez souvent des demandes dans des magasins, il est fortement recommandé d'utiliser la fonctionnalité des points de stock.  
+Par conséquent, si vous planifiez souvent des demandes dans des emplacements, nous vous recommandons d’utiliser la fonction unités de stock.  
 
 ## <a name="see-also"></a>Voir aussi
-[Planification](production-planning.md)    
+
+[Planification](production-planning.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  
-[Production](production-manage-manufacturing.md)    
-[Stock](inventory-manage-inventory.md)  
+[Production](production-manage-manufacturing.md)  
+[Inventaire](inventory-manage-inventory.md)  
+[Configurer des unités de stock](inventory-how-to-set-up-stockkeeping-units.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
+[Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)  
 [Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

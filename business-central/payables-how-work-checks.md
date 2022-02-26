@@ -1,24 +1,26 @@
 ---
-title: Emettre, imprimer et annuler des chèques| Microsoft Docs
+title: Emettre, imprimer et annuler des chèques
 description: Décrit comment émettre des chèques à l'aide du journal paiement, imprimer des chèques, et annuler ou afficher les écritures du grand livre de contrôle chèque dans Business Central.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment journal, print check, vendor payment, creditor, debt, balance due, AP
-ms.date: 10/01/2019
-ms.author: sgroespe
-ms.openlocfilehash: fa250a4125e54025075e85c3ed7c621a361f87b6
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.search.form: 256, 404,
+ms.date: 04/01/2021
+ms.author: edupont
+ms.openlocfilehash: 24e12472ea02f91ff3a0a8d23295865ca2855ca5
+ms.sourcegitcommit: e008b3d7003c256475d6c606e5f7c9866a6bbb72
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2313670"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7953013"
 ---
 # <a name="make-check-payments"></a>Effectuer des paiements par chèque
-Vous pouvez émettre des chèques par voie électronique et manuelle dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Ces deux méthodes utilisent le journal paiement pour émettre des chèques aux fournisseurs. Vous pouvez également annuler des chèques et afficher les écritures du grand livre de contrôle chèque.
+
+Vous pouvez émettre des chèques par voie électronique et manuelle dans [!INCLUDE[prod_short](includes/prod_short.md)]. Ces deux méthodes utilisent le journal paiement pour émettre des chèques aux fournisseurs. Vous pouvez également annuler des chèques et afficher les écritures du grand livre de contrôle chèque.
 
 La procédure suivante explique comment payer un fournisseur avec un chèque informatique en affectant le paiement à la facture fournisseur appropriée, en imprimant le chèque et en reportant le paiement comme payé. Il en résulte des écritures fournisseur positives, affectées aux écritures banque négatives, et des chèques physiques qui seront traités dans la banque.
 
@@ -30,22 +32,23 @@ Vous pouvez payer avec deux types de chèques. Pour les deux types, le champ **T
 > [!NOTE]  
 > Pour s'assurer que la banque efface uniquement les chèques et les montants validés, vous pouvez envoyer un fichier contenant des informations de paiement, du chèque et du fournisseur. Pour plus d'informations, voir [Exporter des fichiers Positive Pay](finance-how-positive-pay.md).
 
-Votre imprimante doit être correctement configurée pour les formulaires chèque, et vous devez définir la mise en page de chèque à utiliser. Pour plus d'informations, voir [Sélectionner une mise en page de chèque](finance-how-define-check-layouts.md)
+> [!IMPORTANT]
+> Votre imprimante doit être correctement configurée pour les formulaires chèque, et vous devez définir la mise en page de chèque à utiliser. Pour plus d'informations, voir [Sélectionner une mise en page de chèque](finance-how-define-check-layouts.md). Vous pouvez également envoyer le chèque au format PDF, par exemple.  
 
 Vous pouvez imprimer jusqu'à 10 factures sur une page pour un talon de chèque. Si un chèque s'applique à plus de 10 factures, lorsque vous imprimez le talon, nous annulons le chèque sur la première page et imprimons le mot NUL sur le chèque. Nous imprimons ensuite les factures restantes et le montant total du chèque sur la deuxième page.
 
 ## <a name="to-pay-a-vendor-invoice-with-a-computer-check"></a>Pour payer une facture fournisseur avec un chèque informatique
 La section suivante décrit comment payer un fournisseur par chèque. La procédure est la même pour rembourser un client par chèque.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux paiement**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux paiement**, puis choisissez le lien associé.
 2. Renseignez les lignes journal paiement. Pour plus d'informations, voir [Enregistrer des paiements et des remboursements](payables-how-post-payments-refunds.md).
 3. Dans le champ **Code mode de règlement**, sélectionnez **Chèque**.
 4. Dans le champ **Mode émission paiement**, sélectionnez **Informatique**.
 5. Choisissez l'action **Imprimer chèque**.
 6. Renseignez les champs nécessaires sur la page **Chèque**. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
-7. Cliquez sur le bouton **Envoyer à**, sélectionnez l'option **Document PDF**, puis cliquez sur le bouton **OK**.
+7. Si votre imprimante est configurée pour imprimer des chèques, choisissez le bouton **Imprimer**. Sinon, choisissez le bouton **Envoyer à**, sélectionnez l'option **Document PDF**, puis cliquez sur le bouton **OK** et imprimez le document PDF.
 
-    Les chèques physiques peuvent maintenant être déposés à la banque pour traitement. Reportez le paiement comme affecté au fournisseur et payé dans le système.
+    Les chèques physiques peuvent maintenant être envoyés aux fournisseurs pour traitement. Reportez le paiement comme affecté au fournisseur et payé dans le système.
 8. Sélectionnez l'action **Valider**.
 
 Des écritures fournisseur et des écritures banque entièrement affectées sont créées.
@@ -59,9 +62,13 @@ Vous pouvez annuler des chèques non reportés après leur impression par l'inte
 1. Sur la page **Journal paiement**, sélectionnez **Annuler chèque**, puis sélectionnez les chèques à annuler.
 
 ## <a name="to-void-checks"></a>Pour annuler des chèques
+
 Lorsque des paiements par chèque ont été reportés, vous pouvez uniquement annuler des chèques à partir des écritures banque ainsi obtenues.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Comptes bancaires**, puis sélectionnez le lien associé.
+> [!IMPORTANT]
+> Si le chèque est affecté à une facture, annulez d’abord l'affectation du chèque afin que la facture puisse être remboursée, puis annulez le chèque. Si le chèque a été imprimé et n’a pas payé de facture, choisissez **Annuler chèque uniquement** comme décrit dans cette section.
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Comptes bancaires**, puis sélectionnez le lien associé.
 2. Sélectionnez le compte bancaire approprié, sélectionnez l'action **Modifier**, puis l'action **Écritures comptables chèque**.
 3. Sur la page **Écritures du grand livre de contrôle chèque**, sélectionnez l'action **Annuler chèque**.
 4. Cochez la case **Annuler chèque uniquement**.
@@ -69,7 +76,7 @@ Lorsque des paiements par chèque ont été reportés, vous pouvez uniquement an
 
 ## <a name="to-view-a-summary-of-posted-checks"></a>Pour afficher un résumé des chèques reportés
 Si vous souhaitez examiner les chèques reportés, par exemple pour vérifier plusieurs chèques payés à un fournisseur, vous pouvez utiliser le rapport **Compte bancaire - Détails sur le chèque**.
-1. Choisissez l'icône de ![l'ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Banque : Liste chèques émis**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Compte bancaire : Liste chèques émis**, puis sélectionnez le lien associé.
 2. Définissez les filtres appropriés, puis cliquez sur le bouton **Aperçu**.
 
 ## <a name="see-also"></a>Voir aussi
@@ -77,4 +84,7 @@ Si vous souhaitez examiner les chèques reportés, par exemple pour vérifier pl
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
 [Paramétrage des opérations bancaires](bank-setup-banking.md)  
 [Exporter un fichier Positive Pay](finance-how-positive-pay.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

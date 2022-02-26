@@ -7,10 +7,16 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'price, pricing, discount, discounting, rebate, sale, purchase, invoice'
-ms.search.form: '459, 460, 7001, 7011, 7015, 7016, 7017, 7018'
+ms.search.keywords: price, pricing, discount, discounting, rebate, sale, purchase, invoice
+ms.search.form: 459, 460, 7001, 7011, 7015, 7016, 7017, 7018
 ms.date: 04/01/2021
 ms.author: bholtorf
+ms.openlocfilehash: 59678264f406fa434cded07d2f6b41aa3cbfbae0
+ms.sourcegitcommit: 8464b37c4f1e5819aed81d9cfdc382fc3d0762fc
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8012559"
 ---
 # <a name="set-up-prices-and-discounts"></a>Configurer les prix et les escomptes
 > [!NOTE]

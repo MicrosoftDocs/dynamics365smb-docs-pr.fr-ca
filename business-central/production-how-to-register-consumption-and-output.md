@@ -1,23 +1,24 @@
 ---
-title: Enregistrer la consommation et la production pour un ordre de fabrication | Microsoft Docs
-description: Cette tâche d'exécution est réalisée sur la page **Journal production** . Le journal combine les fonctions des journaux de sortie et de consommation distincts en un seul journal. Vous accédez directement au journal combiné depuis un bon de production libéré. Son objectif principal est de reporter manuellement la consommation de composantes, la quantité d'articles finis produits et le temps passé dans les opérations.
+title: Enregistrer la sortie de consommation pour l’ordre de fabrication
+description: Cette rubrique explique comment enregistrer la consommation et la sortie pour une ligne du bon de production libéré qui apparaît sur la page Journal production.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
-ms.date: 10/01/2019
-ms.author: sgroespe
-ms.openlocfilehash: 747a38ae8390c45995091c377c5c05d3140949dc
-ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
+ms.search.form: 5510
+ms.date: 06/24/2021
+ms.author: edupont
+ms.openlocfilehash: 43f49adcc182f279126fbb8d2d6652153a626b4d
+ms.sourcegitcommit: 2ab6709741be16ca8029e2afadf19d28cf00fbc7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2877913"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7973823"
 ---
 # <a name="register-consumption-and-output-for-one-released-production-order-line"></a>Enregistrer la consommation et la production pour une ligne bon de production libéré
+
 Cette tâche d'exécution est réalisée sur la page **Journal production** . Le journal combine les fonctions des journaux de sortie et de consommation distincts en un seul journal. Vous accédez directement au journal combiné depuis un bon de production libéré. Son objectif principal est de reporter manuellement la consommation de composantes, la quantité d'articles finis produits et le temps passé dans les opérations. Les valeurs sont reportées dans le grand livre sous le bon de production libéré. Les quantités consommées sont reportées comme écritures article négatives, les quantités sorties sont reportées comme écritures positives et les heures passées sont reportées comme écritures du grand livre de capacité. Ces valeurs reportées peuvent également être visualisées au bas du journal sous forme de quantités réelles.  
 
 > [!NOTE]  
@@ -27,7 +28,7 @@ Cette tâche d'exécution est réalisée sur la page **Journal production** . Le
 >  Les composantes ne comportant pas de code lien itinéraire apparaissent en haut du journal.  
 
 ## <a name="to-register-consumption-and-output"></a>Pour enregistrer la consommation et la sortie  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de production libérés**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de production libérés**, puis sélectionnez le lien associé.  
 2.  Ouvrez une ligne de bon de production libéré qui est prête à être enregistrée, puis, sur le raccourci **Lignes**, choisissez l'action **Ligne**, puis l'action **Journal production**.  
 
     La page **Journal production** s'ouvre et affiche les lignes journal pour la ligne bon de production en fonction des pages **Composante bon de production** et **Itinéraire bon de production**. Ces lignes proviennent de la nomenclature de production et de l'itinéraire affectés à l'article en cours de production. Pour plus d'informations, voir [Créer des nomenclatures de production](production-how-to-create-routings.md).  
@@ -37,15 +38,15 @@ Cette tâche d'exécution est réalisée sur la page **Journal production** . Le
     > [!NOTE]  
     >  Une date de report entrée sur une ligne prime par rapport à la date entrée dans ce champ.  
 
-4.  Dans le champ **Filtre méthode consommation** situé en haut du journal, vous pouvez choisir d'afficher également la consommation et la sortie reportées automatiquement à l'aide des méthodes de consommation définies respectivement pour l'article et pour la ressource.  
+4.  Dans le champ **Filtre méthode consommation** situé en haut du journal, vous pouvez choisir d'afficher également la consommation et la sortie reportées automatiquement à l'aide des méthodes de consommation définies respectivement pour l'article et pour la ressource. Pour plus d'informations, voir [Activer la consommation des composantes en fonction de la sortie réalisée](production-how-to-flush-components-according-to-operation-output.md).   
 
+5.  Entrez maintenant les quantités de consommation et production appropriées dans les champs modifiables.  
+  
     Sur chaque type de ligne du journal, seuls les champs appropriés sont indiqués. Les autres sont vierges et protégés en écriture.  
 
     À l'ouverture du journal, celui-ci comporte les quantités à reporter. Si aucune donnée n'a été reportée jusque-là, tous les champs de quantité affichent par défaut les quantités prévues issues du bon de production. Si des reports partielles ont eu lieu, les champs de quantité des lignes affichent les quantités restantes. Les quantités et délais déjà reportés pour la commande apparaissent au bas du journal en tant qu'écritures réelles.  
 
     Vous avez la possibilité de définir les quantités devant figurer dans le champ **Quantité sortie** lors de la première ouverture du journal. Pour ce faire, utilisez le champ **Configuration de la fabrication** du raccourci **Général** de la page **Quantité sortie prédéfinie**.
-
-5.  Entrez maintenant les quantités de consommation et production appropriées dans les champs modifiables.  
 
     > [!NOTE]  
     >  Seule la quantité sortie figurant sur la dernière ligne journal du type d'écriture **Sortie** ajuste le niveau d'inventaire durant le report du journal. Par conséquent, ne reportez le journal, avec les quantités sorties prévues sur la dernière ligne de sortie, que lorsque tous les articles finis auront été réellement produits.  
@@ -70,4 +71,7 @@ S'il reste des valeurs à reporter, le journal les contiendra la prochaine fois 
 [Planification](production-planning.md)      
 [Inventaire](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

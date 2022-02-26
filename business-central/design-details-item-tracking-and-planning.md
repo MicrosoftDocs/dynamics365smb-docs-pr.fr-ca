@@ -3,19 +3,19 @@ title: Détails de conception - Traçabilité et planification | Microsoft Docs
 description: Puisqu'ils sont enregistrés dans le système de réservation, les numéros de traçabilité sont coordonnés entièrement avec l'enregistrement de chaînage.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: f43523794af06ed5709ec2738cda8bad68fd1b7d
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 06/08/2021
+ms.author: edupont
+ms.openlocfilehash: a01ddb4ac423df3f4ada16740550edf46949886a
+ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3185142"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6215913"
 ---
 # <a name="design-details-item-tracking-and-planning"></a>Détails de conception : traçabilité et planification d'article
 Puisqu'ils sont enregistrés dans le système de réservation, les numéros de traçabilité sont coordonnés entièrement avec l'enregistrement de chaînage. Cela signifie que les articles qui ont des numéros de suivi de commande peuvent se voir affecter des numéros de suivi d'article. Inversement, les articles qui ont des numéros traçabilité peuvent devenir des enregistrement de chaînage. Pour plus d'informations, voir [Détails de conception : création de traçabilité](design-details-item-tracking-design.md).
@@ -56,3 +56,6 @@ Pour plus d'informations, reportez-vous à [Détails de conception : Équilibra
 [Détails de conception : équilibrage de la demande et de l'approvisionnement](design-details-balancing-demand-and-supply.md)  
 [Détails de conception : réservation, chaînage et message d'action](design-details-reservation-order-tracking-and-action-messaging.md)   
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

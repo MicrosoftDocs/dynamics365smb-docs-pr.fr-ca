@@ -3,19 +3,20 @@ title: Configurer des cycles de vente opportunité et des étapes de cycle| Micr
 description: Décrit comment définir des phases de ventes, à partir du contact initial jusqu'à la fermeture, créer un cycle de vente et l'affecter aux opportunités dans Business Central.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: relationship, prospect
-ms.date: 04/01/2020
+ms.search.forms: 5122, 5121, 5120, 5175, 5119
+ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: ba995628679946810b693184dac191988c7daf65
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 16c72d0c0b2b14e73b390b585b505f00956ac4d4
+ms.sourcegitcommit: 189bf08d7ddf6c8b7ef2c09058c6847aa6e590d3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3181503"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8059762"
 ---
 # <a name="set-up-opportunity-sales-cycles-and-cycle-stages"></a>Configurer des cycles de vente opportunité et des phases de cycle
 Avant de pouvoir utiliser les opportunités de vente, vous devez configurer les cycles de vente et les étapes correspondantes. Un cycle de vente est composé d'une série d'étapes allant du contact initial à la fermeture d'une vente. Chaque phase peut avoir certaines exigences à respecter, par exemple pour un devis, avant qu'une opportunité puisse accéder à la phase suivante. Vous pouvez également spécifier si une phase peut être ignorée. Vous pouvez configurer autant de cycles de vente et de phases que nécessaire.
@@ -25,7 +26,7 @@ Mettre en œuvre des cycles de vente opportunité implique la création d'un cyc
 Cette rubrique décrit également comment configurer des tâches et les activités, et comment affecter des tâches aux activités. Pour plus d'informations, voir [Pour configurer des activités avec des tâches](marketing-how-setup-opportunity-sales-cycles-stages.md#to-set-up-activities-with-tasks).
 
 ## <a name="to-set-up-opportunity-sales-cycle-codes"></a>Pour configurer des cycles de vente opportunité
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Cycles de vente**, puis sélectionnez le lien associé. La page **Cycles de vente** s'affiche, et répertorie tous les cycles de vente existants.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Cycles vente**, puis sélectionnez le lien associé. La page **Cycles de vente** s'affiche, et répertorie tous les cycles de vente existants.
 2. Sélectionnez l'action **Nouveau**, puis renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 Répétez ces étapes pour chaque cycle de vente à configurer. Une fois les cycles de vente opportunité configurés, vous pouvez définir les différentes étapes de chaque cycle.
@@ -42,7 +43,7 @@ Après avoir ajouté le cycle d'étapes opportunité, vous pouvez commencer à a
 ## <a name="to-set-up-activities-with-tasks"></a>Pour configurer des activités avec des tâches
 Vous pouvez combiner plusieurs tâches, par exemple les tâches qui représentent chacune une étape, dans les activités. Les tâches d'activité sont liées entre elles par une formule de date. Vous pouvez affecter des activités aux opportunités, aux représentants ou aux contacts.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Activités**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Activités**, puis choisissez le lien associé.
 2. Sélectionnez l'action **Nouveau**, puis renseignez les champs selon vos besoins.
 3. Sur le raccourci **Lignes**, renseignez les champs nécessaires pour définir une ou plusieurs tâches dans l'activité.
 
@@ -52,7 +53,7 @@ Lorsque vous avez créé une tâche, vous pouvez l'affecter à une opportunité 
 > [!NOTE]  
 >   Cette procédure explique comment affecter des tâches d'activité à des opportunités. les étapes sont similaires lorsque vous affectez des tâches aux représentants et aux contacts.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Opportunités**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Opportunités**, puis choisissez le lien associé.
 2. Sélectionnez une opportunité, puis cliquez sur **Tâches**.
 3. Sur la page **Liste des tâches**, sélectionnez l'action **Créer Tâche**.
 4.  Sur la page **Créer Tâche**, renseignez les champs selon vos besoins.
@@ -65,4 +66,7 @@ Lorsque vous avez créé une tâche, vous pouvez l'affecter à une opportunité 
 ## <a name="see-also"></a>Voir aussi
 [Traitement des opportunités de vente](marketing-processing-sales-opportunities.md)  
 [Vente](sales-manage-sales.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: "Vue d’ensemble de l’intégration de Business\_Central et Microsoft Teams | Microsoft Docs"
+title: Vue d’ensemble de l’intégration de Business Central et Microsoft Teams | Microsoft Docs
 description: Partagez des enregistrements Business Central directement dans une conversation Teams.
 author: jswymer
 ms.service: dynamics365-business-central
@@ -7,11 +7,16 @@ ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'Teams, MS Teams, Microsoft Teams, Skype, Link, Microsoft 365, collaborate, collaboration, teamwork'
+ms.search.keywords: Teams, MS Teams, Microsoft Teams, Skype, Link, Microsoft 365, collaborate, collaboration, teamwork
 ms.date: 04/12/2021
 ms.author: jswymer
+ms.openlocfilehash: 943fd46025a736ae7f32f8fbb02fcacbefb32e8e
+ms.sourcegitcommit: 8464b37c4f1e5819aed81d9cfdc382fc3d0762fc
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8011855"
 ---
-
 # <a name="business-central-and-microsoft-teams-integration"></a>Intégration de Business Central et Microsoft Teams
 
 [!INCLUDE [online_only](includes/online_only.md)]

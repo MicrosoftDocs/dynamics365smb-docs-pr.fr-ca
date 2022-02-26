@@ -1,21 +1,21 @@
 ---
-title: Ajouter des pièces jointes, des liens et des notes sur des enregistrements | Microsoft Docs
-description: Joignez un lien hypertexte pointant vers un document ou un site Web à un enregistrement spécifique, tel qu'une fiche client ou un document.
+title: Ajouter des pièces jointes, des liens et des notes sur des enregistrements
+description: Joignez un lien hypertexte pointant vers un document ou un site Web à un enregistrement spécifique, tel qu’une fiche client ou un document.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/27/2020
-ms.author: sgroespe
-ms.openlocfilehash: 9d456fba507977121809124d1de0d23a098406f5
-ms.sourcegitcommit: 7d54d8abe52e0546378cf760f5082f46e8441b90
+ms.date: 06/24/2021
+ms.author: edupont
+ms.openlocfilehash: 76829c832bfde71d46b2fa2a942aa68db9f5701a
+ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3324424"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7588790"
 ---
 # <a name="manage-attachments-links-and-notes-on-cards-and-documents"></a>Gérer les pièces jointes, les liens et les notes sur les fiches et les documents
 
@@ -26,17 +26,19 @@ Pour afficher ou modifier l’un de ces types d’informations jointes, vous dev
 Les pièces jointes, les liens et les notes restent attachés au fur et à mesure du traitement de la fiche ou du document dans d'autres états, par exemple d'un document de vente en cours vers une facture vente reportée. Cependant, aucun type de pièce jointe n'est sorti du système, par exemple lors de l'impression ou de l'enregistrement dans un fichier.
 
 > [!NOTE]
-> Lorsque vous livrez et facturez partiellement un document de vente ou un bon de commande, la pièce jointe ne sera annexée qu'à la facture finale de cette commande. De même, lorsque vous facturez à l'aide de la fonction Reports, la pièce jointe est uniquement annexée aux écritures pour le document, mais pas pour les écritures report.
+> Lorsque vous livrez et facturez partiellement un document de vente ou un bon de commande, la pièce jointe ne sera annexée qu'à la facture finale de cette commande. De même, lorsque vous facturez à l’aide de la fonction Reports, la pièce jointe est annexé aux écritures GL pour le document, mais pas pour les écritures report.
+>
+> Si vous supprimez une commande avant qu'elle ne soit facturée, la pièce jointe est également supprimée. Lorsque vous facturez des bons de commande à l'aide de l'action Obtenir des lignes de réception à partir d'une facture achat, la pièce jointe sur les bons de commande n'est pas ajoutée à la facture achat.
 
 ## <a name="to-attach-a-file-to-a-purchase-invoice"></a>Pour joindre un fichier à une facture achat
-Vous pouvez joindre tout type de fichier contenant du texte, des images ou des vidéos à une fiche ou à un document. Ceci est utile, par exemple, lorsque vous souhaitez stocker la facture d’un fournisseur sous forme de fichier PDF sur la facture achat correspondante dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
+Vous pouvez joindre tout type de fichier contenant du texte, des images ou des vidéos à une fiche ou à un document. Ceci est utile, par exemple, lorsque vous souhaitez stocker la facture d’un fournisseur sous forme de fichier PDF sur la facture achat correspondante dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
 > [!NOTE]
 > Les fichiers joints à la fonction Documents entrants ne sont pas inclus dans l'onglet **Pièces jointes**. Pour plus d'informations, voir [Documents entrants](across-income-documents.md).
 
 La procédure suivante se base sur une facture achat. Les étapes sont similaires pour tous les autres documents et fiches pris en charge.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Factures achat**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures achat**, puis sélectionnez le lien associé.
 2. Ouvrez les documents de vente auxquels vous souhaitez joindre un fichier.
 3. Dans le Récapitulatif, ouvrez l'onglet **Pièces jointes**.
 4. Choisissez la valeur associée au champ **Documents**, telle que « 0 ».
@@ -56,17 +58,17 @@ Chaque fois que vous devez enregistrer un document en tant que fichier, vous pou
 
 La procédure suivante se base sur un document de vente. Les étapes sont similaires pour tous les autres documents pris en charge.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Sélectionnez un document de vente, puis l'action **Joindre en tant que PDF**.
 
 Un fichier PDF avec le contenu actuel du document de vente est ajouté à l'onglet **Pièces jointes** du récapitulatif.
 
 ## <a name="to-add-a-link-from-an-item-card"></a>Pour ajouter un lien à partir d'une fiche article
-Vous pouvez ajouter un lien à partir d'une fiche ou d'un document à n’importe quelle URL ou n’importe quel chemin d'accès. Ceci est utile, par exemple, lorsque vous souhaitez lier une fiche article au catalogue d'articles du fournisseur.
+Vous pouvez ajouter un lien à partir d’une fiche ou d’un document à n’importe quelle URL. Ceci est utile, par exemple, lorsque vous souhaitez lier une fiche article au catalogue d'articles du fournisseur.
 
 La procédure suivante se base sur une fiche article. Les étapes sont similaires pour toutes les autres fiches et tous les documents pris en charge.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
 2. Sélectionnez l'article à partir duquel vous souhaitez ajouter un lien, puis choisissez l'onglet **Pièces jointes** dans le Récapitulatif.
 3. Dans la section **Liens**, choisissez l'icône **+**.
 4. Entrez le lien dans le champ **Adresse du lien**.
@@ -86,7 +88,7 @@ Vous pouvez écrire une note sur un document ou une ficher, par exemple pour com
 
 La procédure suivante se base sur un document de vente. Les étapes sont similaires pour tous les autres documents et fiches pris en charge.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Sélectionnez le document de vente pour lequel vous souhaitez écrire une note, puis choisissez l'onglet **Pièces jointes** dans le Récapitulatif.
 3. Dans la section **Notes**, choisissez l'icône **+**.
 4. Dans le champ **Note**, écrivez n’importe quel texte, par exemple « Ceci est une commande urgente ».
@@ -95,6 +97,9 @@ La procédure suivante se base sur un document de vente. Les étapes sont simila
 La note est maintenant jointe au document de vente.
 
 ## <a name="see-also"></a>Voir aussi  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Documents entrants](across-income-documents.md)  
 [Configuration de notifications de workflow](across-setting-up-workflow-notifications.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

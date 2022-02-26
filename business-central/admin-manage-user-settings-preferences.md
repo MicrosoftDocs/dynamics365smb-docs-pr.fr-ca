@@ -8,10 +8,16 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms.search.keywords: 'user settings, preferences, language, region, time zone, regional settings'
+ms.search.keywords: user settings, preferences, language, region, time zone, regional settings
 ms.search.form: 9204
 ms.date: 04/01/2021
 ms.author: soalex
+ms.openlocfilehash: b3b4c857f006970fa3973a1203a7ddd8cffc2298
+ms.sourcegitcommit: 8464b37c4f1e5819aed81d9cfdc382fc3d0762fc
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8011767"
 ---
 # <a name="manage-user-settings-and-preferences"></a>Gérer les paramètres et les préférences de l'utilisateur
 

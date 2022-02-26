@@ -1,25 +1,24 @@
 ---
-title: Codes IGRF au Canada | Microsoft Docs
-Description: Au Canada, vous pouvez définir l'Index général des renseignements financiers (IGRF) et l'affecter aux comptes de report
-services: project-madeira
-documentationcenter: ''
+title: Codes IGRF au Canada
+description: Au Canada, vous pouvez définir l'Index général des renseignements financiers (IGRF) et l'affecter aux comptes de report.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: local
-ms.date: 04/01/2020
-ms.author: SorenGP
-ms.openlocfilehash: 652e020f5ade36ce4a8794a41f57e438f45c53d0
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.search.form: 10017
+ms.date: 06/29/2021
+ms.author: edupont
+ms.openlocfilehash: 3454c1233ee9ea96ef6933d1e921a031fd5c4c6f
+ms.sourcegitcommit: f7e46d0f7b16d3b41e751aa9f337da18d37c11db
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3180827"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "7947071"
 ---
-# <a name="work-with-gifi-codes"></a>Utiliser des codes IGRF
+# <a name="work-with-gifi-codes-in-the-canadian-version"></a>Utiliser les codes IGRF dans la version canadienne
 Les informations fiscales peuvent inclure des comptes généraux, des états, des comptes de gestion, des bilans et des relevés des bénéfices non répartis. Les informations fiscales sont classifiées par le biais de codes. L'utilisation de codes aide le gouvernemental à traiter les informations, à préparer l'archivage électronique et à valider les informations fiscales par voie électronique. L'utilisation de codes aide également les organisations statistiques à travailler plus efficacement, en rendant les données financières plus facilement disponibles. Pour plus d'informations, reportez-vous au [site Web de l'Agence de revenu du Canada](https://www.cra-arc.gc.ca/).
 
 L'Agence de revenu du Canada utilise les codes IGRF (Index général des renseignements financiers) pour recueillir, valider et traiter les informations financières et fiscales par voie électronique. Les meilleures pratiques suggèrent d'attribuer des codes IGRF uniquement aux comptes de report, afin que tous les totaux soient calculés par votre logiciel d'établissement des déclarations fiscales.
@@ -29,30 +28,30 @@ Lorsqu'un compte est associé à un code IGRF, il est enregistré auprès de l'A
 Vous pouvez exporter les informations de solde par code IGRF et enregistrer le fichier exporté dans Excel, ce qui est utile pour transférer des informations vers votre logiciel d'établissement des déclarations fiscales.
 
 ## <a name="to-set-up-gifi-codes"></a>Pour configurer des codes IGRF
-Dans [!INCLUDE[d365fin](../../includes/d365fin_md.md)], vous devez configurer des codes IGRF pour les comptes GL, les rapports, les bilans, les états de résultats et les relevés de bénéfices non répartis.
+Dans [!INCLUDE[prod_short](../../includes/prod_short.md)], vous devez configurer des codes IGRF pour les comptes GL, les rapports, les bilans, les états de résultats et les relevés de bénéfices non répartis.
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Codes IGRF**, puis sélectionnez le lien associé.
+1. Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Codes IGRF**, puis sélectionnez le lien associé.
 2. Sur la page **Codes IGRF**, sélectionnez l'action **Nouveau**.
 3. Configurer les codes IGRF en renseignant les champs. [!INCLUDE[tooltip-inline-tip](../../includes/tooltip-inline-tip_md.md)]
 
 ## <a name="to-associate-gifi-codes-with-gl-accounts"></a>Pour associer des codes IGRF avec des comptes généraux
 Pour enregistrer des données financières par code IGRF, chaque code IGRF doit être associé aux comptes appropriés dans le plan comptable.
 
-1. Sélectionnez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Plan comptable**, puis sélectionnez le lien associé.
+1. Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Plan comptable**, puis sélectionnez le lien associé.
 2. Sélectionnez un compte général approprié, puis sélectionnez l'action **Modifier**.
 3. Sur le raccourci **Comptabilité analytique**, dans le champ **Code IGRF**, sélectionnez un code IGRF approprié.
 
 ## <a name="to-view-account-balances-using-the-gifi-code-report"></a>Pour afficher les soldes de compte à l'aide du rapport de code IGRF
 Vous pouvez consulter vos soldes de compte par code IGRF par le biais de l'état **Soldes de compte par code IGRF**.
 
-1. Sélectionnez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Solde des comptes par code IGRF**, puis sélectionnez le lien associé.
+1. Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Solde des comptes par code IGRF**, puis sélectionnez le lien associé.
 2. Spécifiez les éléments à inclure dans le rapport en renseignant les champs. [!INCLUDE[tooltip-inline-tip](../../includes/tooltip-inline-tip_md.md)]
 3. Cliquez sur le bouton **Imprimer** ou **Aperçu**.
 
 ## <a name="to-export-balance-information-using-gifi-codes"></a>Pour exporter les informations de solde à l'aide de codes IGRF
 Vous pouvez exporter les informations de solde à l'aide de codes IGRF et enregistrer le fichier exporté dans Excel. Vous pouvez modifier, enregistrer ou supprimer, le fichier. Ce fichier vous permet de transférer des informations vers votre logiciel d'établissement des déclarations fiscales.
 
-1. Choisissez l'icône ![Page ou rapport pour la recherche](../../media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Exporter données IGRF vers fichier Excel**, puis sélectionnez le lien associé.
+1. Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Exporter données IGRF vers fichier Excel**, puis sélectionnez le lien associé.
 2. Spécifiez les éléments à exporter vers Excel en renseignant les champs. [!INCLUDE[tooltip-inline-tip](../../includes/tooltip-inline-tip_md.md)]
 3. Cliquez sur le bouton **OK**.
 
@@ -66,3 +65,6 @@ Vous pouvez exporter les informations de solde à l'aide de codes IGRF et enregi
 [Fonctionnalités locales Canada](canada-local-functionality.md)  
 [Finance](../../finance.md)   
 [Configuration de Finance](../../finance.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

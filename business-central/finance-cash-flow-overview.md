@@ -7,12 +7,17 @@ ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: 'cash flow, money flow, expense and income, liquidity, cash receipts minus cash payments'
-ms.search.form: '841, 849, 1818'
+ms.search.keywords: cash flow, money flow, expense and income, liquidity, cash receipts minus cash payments
+ms.search.form: 841, 849, 1818
 ms.date: 12/20/2021
 ms.author: edupont
+ms.openlocfilehash: e5ce39c435c236719e6ee564217a0b1f7e338cf2
+ms.sourcegitcommit: 8464b37c4f1e5819aed81d9cfdc382fc3d0762fc
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8011106"
 ---
-
 # <a name="cash-flow-overview"></a>Aperçu de trésorerie
 
 La compréhension des encaissements et des décaissements est essentielle pour la gestion fructueuse d’une activité. La trésorerie vous permet de créer facilement des prévisions à court terme, qui prévoient les moyens et les délais de réception et de règlement au sein de votre société. Il est important de savoir que votre société aura suffisamment de fonds pour payer ses créditeurs et ses dépenses à échéance.

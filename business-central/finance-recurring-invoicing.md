@@ -1,27 +1,28 @@
 ---
-title: Utiliser des revenus récurrents | Microsoft Docs
+title: Utiliser des revenus récurrents
 description: Découvrez les options disponibles pour automatiser l'envoi de factures d'abonnement à vos clients et enregistrer des revenus récurrents.
 author: AndreiPanko
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: recurring, invoicing, subscription, billing
+ms.search.form: 283
 ms.reviewer: edupont
-ms.date: 05/27/2020
+ms.date: 04/01/2021
 ms.author: andreipa
-ms.openlocfilehash: a0439557ce69b3c53406bd43b3b76cdf9ae73a10
-ms.sourcegitcommit: 4545bb597dd9dc4c563b30af762977ee1d815497
+ms.openlocfilehash: 696ab59530c81cd19709f4e1bde3324bcaebbf5a
+ms.sourcegitcommit: 2ab6709741be16ca8029e2afadf19d28cf00fbc7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410797"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7970999"
 ---
-# <a name="work-with-recurring-revenue-in-d365fin"></a>Utiliser des revenus récurrents dans [!INCLUDE[d365fin](includes/d365fin_md.md)]
+# <a name="work-with-recurring-revenue-in-prod_short"></a>Utiliser des revenus récurrents dans [!INCLUDE[prod_short](includes/prod_short.md)]
 
 De nombreuses compagnies passent d'un modèle de revenus d'entreprise où les revenus proviennent des achats ponctuels d'un client à un modèle d'abonnement où les revenus sont générés de manière récurrente en échange d'un accès cohérent à la fourniture d'un bien ou d'un service.
-[!INCLUDE[d365fin](includes/d365fin_md.md)] propose les options suivantes pour automatiser l'envoi de factures d'abonnement à vos clients et enregistrer des revenus récurrents. 
+[!INCLUDE[prod_short](includes/prod_short.md)] propose les options suivantes pour automatiser l'envoi de factures d'abonnement à vos clients et enregistrer des revenus récurrents. 
 
 ## <a name="register-revenue-with-a-recurring-general-journal"></a>Enregistrer les revenus avec un journal général récurrent
 
@@ -31,7 +32,7 @@ Un journal récurrent est un journal général contenant des champs spécifiques
 
 Avec cette option, vous définissez des périodes de facturation flexibles avec des [Formules de date](ui-enter-date-ranges.md#using-date-formulas).
 
-Cependant, avec cette option, vous ne pouvez pas imprimer ni envoyer de factures dans la version par défaut de [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+Cependant, avec cette option, vous ne pouvez pas imprimer ni envoyer de factures dans la version par défaut de [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 Pour plus d'informations, voir [Utilisation des journaux récurrents](ui-work-general-journals.md#working-with-recurring-journals).  
 
@@ -57,7 +58,7 @@ Si vous devez souvent créer des lignes vente et des lignes achat comportant des
 
 Avec cette option, vous pouvez attribuer les mêmes lignes récurrentes à plusieurs clients. Vous pouvez définir la période de validité des lignes vente récurrentes pour un client spécifique. Vous pouvez attribuer plusieurs lignes récurrentes au même client et toutes seront incluses dans la facture.
 
-Cependant, il n'y a aucun moyen de définir des prix fixes pour les articles, car [!INCLUDE[d365fin](includes/d365fin_md.md)] utilisera les prix réels et l'escompte en vigueur à la date du document pour essayer de trouver la meilleure combinaison qui donne le prix le plus bas.  
+Cependant, il n'y a aucun moyen de définir des prix fixes pour les articles, car [!INCLUDE[prod_short](includes/prod_short.md)] utilisera les prix réels et l'escompte en vigueur à la date du document pour essayer de trouver la meilleure combinaison qui donne le prix le plus bas.  
 
 Pour plus d'informations, voir [Créer des lignes vente et achat récurrentes](sales-how-work-standard-lines.md).
 
@@ -77,7 +78,7 @@ Cependant, cette option nécessite la licence Premium. La configuration de la ge
 Pour plus d'informations, voir [Utiliser des contrats de service et des devis contrat de service](service-how-to-create-service-contracts-and-service-contract-quotes.md) et [Facturer plusieurs contrats de service](service-how-create-invoices.md#to-invoice-several-service-contracts).
 
 ## <a name="related-features"></a>Fonctionnalités associées
-Il existe plusieurs fonctionnalités associées dans [!INCLUDE[d365fin](includes/d365fin_md.md)].
+Il existe plusieurs fonctionnalités associées dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
 ### <a name="blanket-sales-orders"></a>Commandes permanentes ventes
 
@@ -103,11 +104,11 @@ Avec cette option, vous pouvez choisir entre les prix fixes et les « meilleurs
 
 Toutefois, cette option n'est disponible qu'en Norvège. La période de validité peut être définie au niveau du groupe récurrent.
 
-Pour plus d'informations, voir [Commandes récurrentes (Norvège)](/localfunctionality/norway/recurring-orders.md).
+Pour en savoir plus, voir [Commandes récurrentes](LocalFunctionality/Norway/recurring-orders.md).
 
 ### <a name="recurring-revenue-and-subscription-billing-by-other-providers"></a>Revenus récurrents et facturation d'abonnement par d'autres fournisseurs
 
-Vous pouvez obtenir des extensions pour Business Central sur le site [AppSource.microsoft.com](https://appsource.microsoft.com/). Certaines extensions sont fournies par Microsoft, et d'autres sont fournies par d'autres compagnies. La liste des extensions par d'autres compagnies évolue chaque mois. Tenez-vous informé sur le site [AppSource.microsoft.com](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365%3Bdynamics-365-business-central&page=1) et obtenez des applications pour vous aider à faire votre travail dans Business Central.  
+Vous pouvez obtenir des extensions pour Business Central sur le site [AppSource.microsoft.com](https://appsource.microsoft.com/). Certaines extensions sont fournies par Microsoft, et d'autres sont fournies par d'autres compagnies. La liste des extensions par d'autres compagnies évolue chaque mois. Tenez-vous informé sur le site [AppSource.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2081646) et obtenez des applications pour vous aider à faire votre travail dans Business Central.  
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -120,4 +121,7 @@ Vous pouvez obtenir des extensions pour Business Central sur le site [AppSource.
 [Facturer plusieurs contrats de service](service-how-create-invoices.md#to-invoice-several-service-contracts)  
 [Prévisions de demande et commandes permanentes](design-details-central-concepts-of-the-planning-system.md#demand-forecasts-and-blanket-orders)  
 [Utiliser des commandes permanentes ventes](sales-how-to-create-blanket-sales-orders.md)  
-[Commandes récurrentes (Norvège)](/localfunctionality/norway/recurring-orders.md)  
+[Commandes récurrentes (Norvège)](LocalFunctionality/Norway/recurring-orders.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

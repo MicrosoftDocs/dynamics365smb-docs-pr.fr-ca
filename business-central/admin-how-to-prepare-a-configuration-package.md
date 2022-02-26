@@ -1,21 +1,21 @@
 ---
-title: Procédure de préparation d'un package de configuration | Microsoft Docs
-description: Apprenez maintenant à configurer un package configuration RapidStart qui peut aider à configurer de nouvelles compagnies sur la base des données existantes.
-author: SorenGP
+title: Préparer un package configuration
+description: Apprenez maintenant à préparer un package configuration RapidStart qui peut aider à configurer de nouvelles compagnies sur la base des données existantes.
+author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 07/06/2020
-ms.author: sgroespe
-ms.openlocfilehash: f2550f9df9e2eda87e2f5b3de9f6be00d4758b7a
-ms.sourcegitcommit: 7d05fc049d81cae9b2b711101cdaea037b7ba61f
+ms.date: 07/23/2021
+ms.author: bholtorf
+ms.openlocfilehash: b3b8b7792363d8d44cdfea563b422748ad39de90
+ms.sourcegitcommit: e904da8dc45e41cdd1434111c15e2a9d9edd3fa2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "3535982"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6660241"
 ---
 # <a name="prepare-a-configuration-package"></a>Préparer un package configuration
 
@@ -30,6 +30,12 @@ Plusieurs éléments doivent être pris en considération avant de créer un pac
 ### <a name="tables-that-contain-posted-entries"></a>Tables contenant des écritures reportées
 
 Vous ne pouvez pas importer des données dans des tables qui contiennent des écritures reportées, telles que les tables pour les écritures client, fournisseur et article, et vous ne devez donc pas inclure ces données dans votre package de configuration. Vous pouvez ajouter des écritures à ces tables après avoir importé le package de configuration à l'aide de journaux pour reporter les écritures. Pour plus d'informations, voir [Report de documents et de journaux](ui-post-documents-journals.md).
+
+### <a name="table-names-that-contain-special-characters"></a>Noms de table contenant des caractères spéciaux
+
+Soyez prudent si des tables ou des champs portent le même nom temporel mais sont différenciés par des caractères spéciaux, tels que %, &, <, >, (, et ). Par exemple, la table « XYZ » peut contenir les champs « Champ 1 » et « Champ 1 % ».
+
+Le processeur XML n'accepte que certains caractères spéciaux et supprime ceux qu'il n'accepte pas. Si la suppression d'un caractère spécial, tel que le signe % dans « Champ 1 % », génère deux ou plusieurs tables ou champs avec le même nom, une erreur se produit lorsque vous exportez ou importez un package de configuration. 
 
 ### <a name="licensing"></a>Gestion des licences
 
@@ -50,14 +56,14 @@ Vous pouvez importer un package de configuration qui a été exporté d'une base
 
 ## <a name="to-create-a-configuration-package"></a>Pour créer un colis configuration
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Packages configuration**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Packages de configuration**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 3. Renseignez les champs du raccourci **Général**. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 4. Pour exclure les questionnaires de configuration, les modèles de configuration et les tables de feuille configuration du colis, activez la case à cocher **Exclure les tables de configuration**. Sinon, ces tables sont automatiquement ajoutées à la liste de tables de colis lorsque vous exportez le colis.  
 5. Sélectionnez l'action **Extraire tables**. La page de traitement en lot **Extraire tables package** s'ouvre.  
 6. Choisissez le champ **Sélectionner des tables**. La page **Sélection de config.** s’ouvre.  
 7. Choisissez l'action **Sélectionner tout** pour ajouter toutes les tables au package, ou activez la case à cocher **Sélectionné** pour chaque table dans la liste à ajouter.
-8. Cliquez sur le bouton **OK**. Le nombre de tables que vous avez sélectionnées s’affiche dans le champ **Sélectionner des tables**. Spécifiez les options supplémentaires, puis cliquez sur le bouton **OK**. Les tables [!INCLUDE[d365fin](includes/d365fin_md.md)] sont ajoutées aux lignes de la page **Package config.**.  
+8. Cliquez sur le bouton **OK**. Le nombre de tables que vous avez sélectionnées s’affiche dans le champ **Sélectionner des tables**. Spécifiez les options supplémentaires, puis cliquez sur le bouton **OK**. Les tables [!INCLUDE[prod_short](includes/prod_short.md)] sont ajoutées aux lignes de la page **Package config.**.  
 
     > [!NOTE]  
     >  Vous pouvez également le faire dans la feuille configuration. Sélectionnez les tables que vous souhaitez inclure dans le package, puis choisissez l'action **Affecter package**.
@@ -68,8 +74,20 @@ Spécifier les champs qui sont inclus dans le colis. Par défaut, tous les champ
     - Pour sélectionner uniquement les champs que vous souhaitez inclure, sélectionnez l'action **Effacer Inclus**. Pour ajouter tous les champs, choisissez l'action **Définir inclus**.  
     - Pour indiquer que les données de champ ne doivent pas être validées, désactivez la case à cocher **Champ Valider** pour le champ.  
 
-10. Déterminez si vous avez introduit des erreurs potentielles en choisissant l'action **Valider package**. Cela peut arriver lorsque vous n’incluez pas les tables sur lesquelles votre configuration se fonde.  
-11. Cliquez sur le bouton **OK**.  
+10. En option, pour appliquer des filtres de traitement aux données de la table ou pour ajouter un codeunit avec un code que vous souhaitez inclure dans le package, choisissez la ligne de la table appropriée, puis choisissez l’action **Règles de traitement**.
+
+    1. Dans la page **Config. règles de traitement des tables**, remplissez les champs. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]
+
+        - Pour appliquer des filtres aux données, spécifiez l’action appropriée dans le champ **Action**, choisissez l’action **Filtres de traitement**, puis remplissez les champs.  
+
+            Par exemple, les packages de configuration de Microsoft pour les compagnies d’évaluation définissent les filtres de traitement sur les tables **En-tête vente** et **En-tête achat**.
+        - Pour ajouter un codeunit de traitement, spécifiez-le dans le champ **Code codeunit de traitement personnalisé**.
+
+          > [!NOTE]
+          > Ce codeunit doit utiliser la table 8614 *Enregistrement package config* comme paramètre de la méthode `OnRun`.
+    2. Fermez la page.
+11. Déterminez si vous avez introduit des erreurs potentielles en choisissant l'action **Valider package**. Cela peut arriver lorsque vous n’incluez pas les tables sur lesquelles votre configuration se fonde.  
+12. Cliquez sur le bouton **OK**.  
 
 Une fois que vous avez redéfini la liste des champs à inclure à partir d’une table, vous pouvez vérifier les résultats sous Excel.  
 
@@ -101,7 +119,7 @@ Vous pouvez enregistrer le fichier avec un nom qui est a un sens pour vous, mais
 
 Après avoir créé un colis qui répond à la plupart de vos besoins, vous pouvez l’utiliser comme base de création de colis similaires. Ceci peut accélérer la durée d’implémentation et améliorer l’aspect répétitif de RapidStart Services.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Packages configuration**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Packages de configuration**, puis sélectionnez le lien associé.  
 2. Sélectionnez un package dans la liste, puis sélectionnez l'action **Copier package**.  
 3. Dans le champ **Nouveau code de colis**, entrez un code pour le nouveau colis.  
 4. Cochez la case **Copier données** si vous souhaitez également copier les données de la base de données depuis le colis existant.  
@@ -111,7 +129,7 @@ Après avoir créé un colis qui répond à la plupart de vos besoins, vous pouv
 
 La feuille configuration permet de collecter et de définir les catégories des informations que vous souhaitez utiliser pour configurer une nouvelle compagnie, et réorganiser les tables d’une manière logique. La mise en forme dans la feuille est basée sur une hiérarchie unique : des zones contiennent des groupes, qui contiennent des tables. Les zones et les groupes sont facultatifs, mais nécessaires si vous souhaitez afficher un aperçu du processus de configuration dans le tableau de bord RapidStart Services.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille configuration**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille de calcul de configuration**, puis sélectionnez le lien associé.  
 2. Dans le champ **Type ligne**, choisissez **Zone**. Saisissez un nom descriptif dans le champ **Nom**.  
 3. Dans le champ **Type ligne**, choisissez **Groupe**. Saisissez un nom descriptif dans le champ **Nom**.  
 4. Dans le champ **Type ligne**, choisissez **Table**. Dans le champ **ID table**, sélectionnez la table que vous souhaitez inclure dans la feuille.  
@@ -130,7 +148,7 @@ Après avoir défini les tables à traiter dans le cadre de votre configuration,
 > [!NOTE]  
 > Vous pouvez également créer un package directement, puis ajouter des tables au package. Pour plus d’informations, voir [Pour créer un package configuration](admin-how-to-prepare-a-configuration-package.md#to-create-a-configuration-package).
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille configuration**, puis choisissez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille de calcul de configuration**, puis sélectionnez le lien associé.
 2. Dans la feuille de configuration, sélectionnez une ligne ou un groupe de lignes que vous souhaitez affecter à un package configuration, puis sélectionnez l'action **Affecter package**.  
 3. Sélectionnez un package de la liste, ou choisissez l'action **Nouveau** pour créer un package, puis cliquez sur le bouton **OK**.  
 
@@ -141,11 +159,11 @@ Après avoir défini les tables à traiter dans le cadre de votre configuration,
 
 Lors de la création d’un colis configuration pour une solution, vous pouvez consulter et personnaliser les données de base de données disponibles pour les adapter aux besoins de votre client. La table de base de données doit être associée à une page.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille configuration**, puis choisissez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille de calcul de configuration**, puis sélectionnez le lien associé.
 2. Dans la feuille configuration, identifiez les tables dont vous souhaitez afficher ou personnaliser les données.  
 
     > [!NOTE]  
-    >  Assurez-vous que chaque table dispose d’un Code page qui lui est affecté. Pour les tables [!INCLUDE[d365fin](includes/d365fin_md.md)] standard, cette valeur est automatiquement insérée. Pour les tables personnalisées, vous devez fournir le code.
+    >  Assurez-vous que chaque table dispose d’un Code page qui lui est affecté. Pour les tables [!INCLUDE[prod_short](includes/prod_short.md)] standard, cette valeur est automatiquement insérée. Pour les tables personnalisées, vous devez fournir le code.
 
 3. Choisissez l'action **Données base de données**. La page de la page associée s'ouvre.
 4. Révisez les informations disponibles. Modifiez-les selon vos besoins en supprimant les enregistrements qui ne sont pas appropriés ou en ajoutant de nouveaux enregistrements.  
@@ -155,7 +173,7 @@ Lors de la création d’un colis configuration pour une solution, vous pouvez c
 Une fois que vous avez contrôlé et testé toutes vos informations de configuration, vous pouvez copier des données vers votre environnement de production. Vous créez une compagnie dans la même base de données.
 
 1. Ouvrez et initialisez la nouvelle compagnie.  
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille configuration**, puis choisissez le lien associé.  
+2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille de calcul de configuration**, puis sélectionnez le lien associé.  
 3. Sélectionnez l'action **Copier les données à partir de la compagnie**.  
 4. Sur la page **Copier les données de la compagnie**, choisissez le champ **Copier de**. La page **Compagnies** s'ouvre.  
 5. Sélectionnez la compagnie depuis laquelle copier des données, puis cliquez sur le bouton **OK**. Une liste de tables sélectionnées dans la feuille configuration s’ouvre. Seules les tables qui contiennent des enregistrements sont incluses dans cette liste.
@@ -168,3 +186,7 @@ Une fois que vous avez contrôlé et testé toutes vos informations de configura
 [Configurer une compagnie](admin-set-up-company-configuration.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)  
+[Analyse de la télémétrie de suivi des packages de configuration](/dynamics365/business-central/dev-itpro/administration/telemetry-configuration-package-trace)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

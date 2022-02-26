@@ -1,21 +1,22 @@
 ---
-title: Comment bloquer les achats en provenance/vers des fournisseurs
-description: Vous pouvez empêcher l'inclusion de fournisseurs dans des transactions, ou simplement bloquer de nouveaux paiements qui leur sont destinés.
+title: Bloquer des fournisseurs
+description: Découvrez comment empêcher l’inclusion de fournisseurs dans des transactions, ou simplement comment bloquer de nouveaux paiements qui leur sont destinés.
 author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 01/14/2020
+ms.search.form: 27
+ms.date: 06/22/2021
 ms.author: bholtorf
-ms.openlocfilehash: f28d1c11889d496072d57cfdb70f3c743037bff3
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.openlocfilehash: 2088f6ccc64c3827250878c8f7b1027600f7f558
+ms.sourcegitcommit: e008b3d7003c256475d6c606e5f7c9866a6bbb72
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2954292"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7953145"
 ---
 # <a name="block-vendors"></a>Bloquer des fournisseurs
 Vous pouvez bloquer un fournisseur, par exemple à cause de son insolvabilité, afin que ce fournisseur ne puisse pas être ajouté à des documents achat ou afin d'empêcher que des paiements puissent être reportés pour ce fournisseur.
@@ -29,7 +30,7 @@ Le tableau suivant décrit les options pour bloquer des fournisseurs.
 |**Tous**|Aucune transaction n'est autorisée pour ce fournisseur.|  
 
 ## <a name="to-block-a-vendor"></a>Pour bloquer un fournisseur  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Fournisseurs**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Fournisseurs**, puis choisissez le lien associé.
 2. Sélectionnez le fournisseur que vous souhaitez bloquer.
 3. Dans le champ **Bloqué**, choisissez l'une des options de blocage.
 
@@ -37,3 +38,6 @@ Le tableau suivant décrit les options pour bloquer des fournisseurs.
 [Enregistrer de nouveaux fournisseurs](purchasing-how-register-new-vendors.md)  
 [Effectuer des paiements](payables-make-payments.md)  
 [Gestion des comptes fournisseur](payables-manage-payables.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

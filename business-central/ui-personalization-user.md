@@ -1,21 +1,21 @@
 ---
-title: Personnalisation des pages | Microsoft Docs
-description: Découvrez comment personnaliser l'interface utilisateur pour l'adapter à votre méthode de travail dans Business Central.
+title: Personnalisation des pages (contient une vidéo)
+description: Découvrez comment personnaliser l’interface utilisateur et votre espace de travail pour l’adapter à votre façon de travailler et aux préférences personnelles dans Business Central.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: customize, personalize, personalization, hide columns, remove fields, move fields, resize column, change column width
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: c0fe93df0022f66aa5cc3964c2717e2e6ca76147
-ms.sourcegitcommit: 8a4e66f7fc8f9ef8bdf34595e0d3983df4749376
+ms.date: 06/24/2021
+ms.author: edupont
+ms.openlocfilehash: cd25d18787f8f28b01974e59580f7e83425e54bf
+ms.sourcegitcommit: 4c97f38fc53c1c1ec534054a4a100d8cfb73175b
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "3262200"
+ms.lasthandoff: 12/20/2021
+ms.locfileid: "7940286"
 ---
 # <a name="personalize-your-workspace"></a>Personnaliser votre espace de travail
 Vous pouvez personnaliser votre espace de travail pour l'adapter à vos habitudes et préférences en modifiant les pages afin qu'elles n'affichent que les informations dont vous avez besoin, où vous avez en besoin. Les modifications de personnalisation que vous apportez n'affectent que ce que vous voyez, pas ce que voient les autres utilisateurs.
@@ -28,6 +28,11 @@ Selon le type de page et ce qu'elle inclut, vous pouvez apporter différentes mo
 > Les administrateurs peuvent effectuer les mêmes modifications de présentation que les utilisateurs en personnalisant l'espace de travail pour un profil attribué à plusieurs utilisateurs. Pour plus d'informations, voir [Personnaliser des pages pour les rôles](ui-personalization-manage.md).<br /><br />
 Les administrateurs peuvent aussi remplacer ou désactiver des personnalisations d'utilisateurs et définir les fonctionnalités accessibles dans toutes les compagnies ou des compagnies spécifiques. Pour plus d'informations, voir [Personnalisation de Business Central](ui-customizing-overview.md).
 
+## <a name="video-overview"></a>Présentation de la vidéo
+La vidéo suivante montre quelques-unes des façons dont vous pouvez personnaliser votre tableau de bord.
+
+> [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE4ArUB?rel=0]
+
 ## <a name="to-change-the-width-of-a-column"></a>Pour modifier la largeur d'une colonne
 Vous pouvez facilement redimensionner les colonnes de n'importe quelle liste en faisant glisser la limite entre deux colonnes à gauche ou à droite.
 1. Dans l'en-tête de la liste, sélectionnez et faites glisser la limite entre deux colonnes.
@@ -37,7 +42,7 @@ En ce qui concerne les autres personnalisations, les modifications apportées à
 
 ## <a name="to-start-personalizing-a-page-through-the-personalizing-banner"></a>Pour commencer à personnaliser une page au moyen de la bannière **Personnalisation**
 1. Ouvrez une page quelconque à personnaliser.
-2. Dans l'angle supérieur droit, sélectionnez l'icône ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez l'action **Personnaliser**.
+2. Dans l’angle supérieur droit, sélectionnez l’icône ![Paramètres.](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord") puis l’action **Personnaliser**.
 
     La bannière **Personnalisation** s'affiche en haut, ce qui indique que vous pouvez commencer à apporter des modifications.
 
@@ -60,7 +65,7 @@ En ce qui concerne les autres personnalisations, les modifications apportées à
 |Masquez quelque chose, comme un champ, une colonne d'une liste, une mosaïque, une action ou une section.|Choisissez la pointe de flèche, puis sélectionnez <b>Masquer</b>.|L'élément est grisé lorsque vous êtes en mode de personnalisation. Si le champ que vous masquez s'affiche également sur l'en-tête Raccourci lorsque ce dernier est réduit, le champ n'y apparaîtra plus.|
 |Affichez les actions et les pièces masquées.|Pour un élément grisé (masqué), choisissez la pointe de flèche, puis choisissez <b>Afficher</b>.|L'élément masqué est à nouveau visible.|
 |Ajoutez un champ ou une colonne.|Dans la bannière <b>Personnalisation</b>, choisissez l'action <b>+ Champ</b>.<br /></br>Le volet <b>Ajouter un champ à la page</b> s'ouvre à droite. Il répertorie les champs que vous pouvez ajouter à la page.<br /><br />Pour ajouter un champ, faites-le glisser du volet vers la position que vous souhaitez. La position est indiquée par une ligne verticale ou horizontale épaisse.|Chaque page comprend un ensemble prédéfini de champs que vous pouvez afficher. Utilisez cette procédure pour afficher des champs ou des colonnes qui n'ont pas été précédemment affichés ou pour afficher des champs que vous avez masqués.|
-|Affichez un champ dans l'en-tête d'un raccourci lorsque le raccourci est réduit.|Choisissez la pointe de la flèche, puis cliquez sur <b>Afficher si réduit</b>. <br /> <br />Si vous ne voyez pas cette option, elle est déjà définie. Dans ce cas, pour arrêter d'afficher le champ sur l'en-tête du raccourci, sélectionnez <b>Afficher toujours</b>.|*Raccourci* désigne le terme employé pour un groupe de champs qui s'affichent sous une en-tête commune. Utilisez l'option <b>Afficher si réduit</b> pour afficher les champs les plus importants. Si vous sélectionnez un champ dans l'en-tête, le raccourci s'ouvrira et se concentrera sur le champ sélectionné.<br /><br />Cette option s'applique uniquement si une page a plusieurs raccourcis. S'il s'agit de l'unique raccourci, il ne peut pas être réduit, aussi l'option <b>Afficher si réduit</b> n'est pas disponible.|
+|Affichez un champ dans l’en-tête d’un raccourci lorsqu'il est réduit.|Choisissez la pointe de la flèche, puis cliquez sur <b>Afficher si réduit</b>. <br /> <br />Si vous ne voyez pas cette option, elle est déjà définie. Dans ce cas, pour arrêter d'afficher le champ sur l'en-tête du raccourci, sélectionnez <b>Afficher toujours</b>.|*Raccourci* désigne le terme employé pour un groupe de champs qui s'affichent sous une en-tête commune. Utilisez l'option <b>Afficher si réduit</b> pour afficher les champs les plus importants. Si vous sélectionnez un champ dans l'en-tête, le raccourci s'ouvrira et se concentrera sur le champ sélectionné.<br /><br />Cette option s'applique uniquement si une page a plusieurs raccourcis. S'il s'agit de l'unique raccourci, il ne peut pas être réduit, aussi l'option <b>Afficher si réduit</b> n'est pas disponible.|
 |Affichez un champ uniquement lorsque vous sélectionnez **Afficher plus**.|Choisissez la pointe de flèche, puis cliquez sur <b>Afficher sous « Afficher plus »</b>. <br /> <br />Si vous ne voyez pas l'option <b>Afficher sous « Afficher plus »</b>, elle est déjà définie. Dans ce cas, pour afficher toujours un champ, et non pas uniquement lorsque vous sélectionnez **Afficher plus**, sélectionnez <b>Afficher toujours</b>.||
 |Modifiez le volet Figer d'une liste en d'autres colonnes. |Choisissez la pointe de flèche de la colonne que vous souhaitez être la dernière du volet Figer, puis sélectionnez <b>Définir le volet Figer</b>.<br /><br/>Si vous souhaitez rétablir le volet Figer à sa position d'origine, sélectionnez la pointe de flèche de la colonne actuelle du volet Figer, puis sélectionnez <b>Effacer le volet Figer</b>. Remarque : vous ne pouvez pas supprimer ce volet Figer d'origine.|Le volet Figer spécifie les colonnes qui s'affichent toujours à gauche, même lorsque vous faites défiler horizontalement.|  
 |Survolez un champ tout en appuyant sur Entrée.|Choisissez la pointe de la flèche en regard du champ, ou la première colonne d'une liste, et sélectionnez **Exclure de la saisie rapide**. <br /><br /> Si vous ne voyez pas cette option, le champ est déjà défini pour être ignoré. Dans ce cas, pour arrêter d'ignorer le champ, choisissez **Inclure de la saisie rapide**. |Reportez-vous à la rubrique [Accélérer la saisie de données à l'aide de la fonction Saisie rapide](ui-enter-data.md#QuickEntry)|
@@ -138,6 +143,9 @@ Pour vous aider à mieux comprendre la personnalisation, voici quelques points c
 
 ## <a name="see-also"></a>Voir aussi
 [Personnaliser les pages pour les profils](ui-personalization-manage.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Modifier les paramètres de base](ui-change-basic-settings.md)  
 [Modifier les fonctionnalités affichées](ui-experiences.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

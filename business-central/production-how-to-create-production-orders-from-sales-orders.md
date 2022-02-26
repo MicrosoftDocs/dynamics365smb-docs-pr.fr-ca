@@ -1,43 +1,57 @@
 ---
-title: Procédure de création de bons de production à partir de documents de vente | Microsoft Docs
-description: Vous pouvez créer des ordres de fabrication à partir des commandes vente dans le département Ventes & marketing.
-services: project-madeira
-documentationcenter: ''
+title: Créer des bons de production à partir de documents de vente
+description: Découvrez les différentes façons de créer des bons de production pour les articles produits directement à partir des documents de vente.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
-ms.date: 10/01/2019
-ms.author: sgroespe
-ms.openlocfilehash: d1851131512f194f708f7873978a201d85a9e248
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.search.form: 99000883, 99000884
+ms.date: 06/22/2021
+ms.author: edupont
+ms.openlocfilehash: 493d47e13d9ad1d7a2424dec4cd3691e92068d73
+ms.sourcegitcommit: 2ab6709741be16ca8029e2afadf19d28cf00fbc7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2314154"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7973372"
 ---
 # <a name="create-production-orders-from-sales-orders"></a>Créer des bons de production à partir de documents de vente
 Vous pouvez créer des bons de production pour les articles produits directement à partir des documents de vente.  
 
 ## <a name="to-create-a-production-order-from-a-sales-order"></a>Pour créer un bon de production à partir d'un document de vente  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Documents de vente**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Sélectionnez le document de vente pour lequel vous voulez créer un bon de production.  
 3.  Sélectionnez l'action **Planification**. Sur la page **Planification document de vente**, vous pouvez afficher la disponibilité de l'article de document de vente.  
 4.  Sélectionnez l'action **Créer O.F**.  
 5.  Sélectionnez l'état et le type de commande.  
-6.  Choisissez le bouton **oui** pour créer l'ordre de fabrication.
+6.  Choisissez le bouton **Oui** pour créer un ou plusieurs bons de production pour les lignes ayant **Bon de production** dans le champ **Système réapprovisionnement**.
 
-Vous pouvez également choisir de créer un ordre de fabrication projet. Pour en savoir plus, voir [Planifier les projets de commandes](production-how-to-plan-project-orders.md).   
+
+> [!NOTE]  
+> Les lignes de demandes du bon de production créé qui ont **Bon de production** dans le champ **Système réapprovisionnement** représentent des bons de production sous-jacents. Après avoir généré ces bons de production, n’oubliez pas d’identifier toute demande de composante non réalisée pour ceux-ci à l’aide de la page **Planification commande** ou de la fonction **Replanifier** à partir d’ordres créés. 
+
+## <a name="order-type"></a>Type de commande  
+Vous pouvez choisir entre deux façons de créer les bons de production, comme indiqué dans le tableau suivant.
+
+|Option|Description|
+|------|-----------|
+|O.F. article|Un bon de production est créé pour chaque bon de production nécessaire qui est représenté par une ligne dans la fenêtre **Planification document de vente**.|
+|O.F. projet|Un bon de production est créé pour tous les bons de production nécessaires qui sont représentés par des lignes dans la fenêtre **Planification document de vente**. |
+
+Lorsque vous utilisez des projets de commande, le champ **Type origine** du bon de production indique **En-tête vente** et la commande comporte plusieurs lignes, une pour chaque article de la ligne vente à produire.  
+
 
 ## <a name="see-also"></a>Voir aussi  
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Production](production-manage-manufacturing.md)    
-[Stock](inventory-manage-inventory.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
 [Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

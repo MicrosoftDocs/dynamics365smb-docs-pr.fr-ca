@@ -1,29 +1,32 @@
 ---
 title: Mappage de champ pour exporter des fichiers de paiement bancaire | Microsoft Docs
-description: Lorsque vous exportez des fichiers de paiement à l'aide de l'extension AMC Banking 365 Fundamentals, les données que vous exportez sont exposées au fournisseur de service.
+description: Lorsque vous exportez des fichiers de paiement à l’aide de l’extension AMC Banking 365 Fundamentals, les données que vous exportez sont exposées au fournisseur de service.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 0d85c4e4d882f84781ff119bdf397266c4f8ca1b
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 04/01/2021
+ms.author: edupont
+ms.openlocfilehash: f705334d42d27e22d9108a410ab91a213c725a4d
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3188670"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6437762"
 ---
-# <a name="field-mapping-when-exporting-payment-files-using-the-amc-banking-365-fundamentals-extension"></a>Mappage de champs lors de l'exportation de fichiers de paiement à l'aide de l'extension AMC Banking 365 Fundamentals
-Lorsque vous exportez des fichiers de paiement à l'aide de l'extension AMC Banking 365 Fundamentals, les données que vous exportez sont exposées au fournisseur de service. Le fournisseur de service est responsable de la confidentialité de ces données. Pour plus d'informations sur l'extension AMC Banking 365 Fundamentals, voir [Utilisation de l'extension AMC Banking 365 Fundamentals](ui-extensions-amc-banking.md).  
+# <a name="field-mapping-when-exporting-payment-files-using-the-amc-banking-365-fundamentals-extension"></a>Mappage de champ lors de l’exportation de fichiers de paiement à l’aide de l’extension AMC Banking 365 Fundamentals
+Lorsque vous exportez des fichiers de paiement à l’aide de l’extension AMC Banking 365 Fundamentals, les données que vous exportez sont exposées au fournisseur de service. Le fournisseur de service est responsable de la confidentialité de ces données. Pour plus d'informations sur l’extension AMC Banking 365 Fundamentals, voir [Utilisation de l’extension AMC Banking 365 Fundamentals](ui-extensions-amc-banking.md).  
 
 > [!CAUTION]  
->  Lorsque vous exportez des fichiers de paiement à l'aide de l'extension AMC Banking 365 Fundamentals, certaines de vos données métier sont exposées au fournisseur du service. Le fournisseur de service, AMC Consult A/S, est responsable de la confidentialité de ces données. Pour plus d'informations, reportez\-vous à [Politique de confidentialité AMC](https://go.microsoft.com/fwlink/?LinkId=510158).  
+>  Lorsque vous exportez des fichiers de paiement à l’aide de l’extension AMC Banking 365 Fundamentals, certaines de vos données métier sont exposées au fournisseur du service. Le fournisseur de service, AMC Consult A/S, est responsable de la confidentialité de ces données. Pour plus d'informations, reportez\-vous à [Politique de confidentialité AMC](https://go.microsoft.com/fwlink/?LinkId=510158).  
 
-Le tableau suivant répertorie les champs de [!INCLUDE[d365fin](includes/d365fin_md.md)] à partir desquels vous pouvez exporter des données.  
+> [!NOTE]
+> Dans la version générique de [!INCLUDE[prod_short](includes/prod_short.md)], un fournisseur global de services pour convertir les données bancaires dans n'importe quel format de fichier que votre banque requiert est paramétré et connecté. Dans les versions nord-américaines, le même service peut être utilisé pour envoyer des fichiers de paiement sous forme de transfert de fonds électronique (EFT), par exemple le réseau ACH (Automated Clearing House), mais avec un processus légèrement différent.
+
+Le tableau suivant répertorie les champs de [!INCLUDE[prod_short](includes/prod_short.md)] à partir desquels vous pouvez exporter des données.  
 
 |Champ associé|Champ dans Tableau|Table|Description|  
 |------------------|--------------------|-----------|---------------------------------------|  
@@ -65,10 +68,13 @@ Le tableau suivant répertorie les champs de [!INCLUDE[d365fin](includes/d365fin
 |Code postal banque émetteur|Code postal|Compte bancaire|Le code postal du compte bancaire de l'émetteur qui est spécifié sur la fiche compte bancaire|  
 |Modèle journal général|Nom modèle journal|Ligne journal général|Le modèle du journal général qui est utilisé pour la ligne paiement|  
 |Nom lot de journal général|Nom lot de journal|Ligne journal général|Le nom du lot journal général qui est utilisé pour la ligne paiement|  
-|Nom banque émetteur - Conv. données|Nom banque – Conv. données|Compte bancaire|Le nom du compte bancaire de l'émetteur qui est demandé par l'extension AMC Banking 365 Fundamentals et spécifié sur la fiche compte bancaire|  
+|Nom banque émetteur - Conv. données|Nom banque – Conv. données|Compte bancaire|Nom du compte bancaire de l’émetteur qui est demandé par l’extension AMC Banking 365 Fundamentals et qui est spécifié sur la fiche compte bancaire|  
 
 ## <a name="see-also"></a>Voir aussi  
 [Configuration de l'échange de données](across-set-up-data-exchange.md)  
 [Échanger des données par voie électronique](across-data-exchange.md)
-[Utilisation de l'extension AMC Banking 365 Fundamentals](ui-extensions-amc-banking.md)   
-[Effectuer des paiements avec l'extension AMC Banking 365 Fundamentals ou virement SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md)   
+[Utilisation de l’extension AMC Banking 365 Fundamentals](ui-extensions-amc-banking.md)   
+[Réaliser des paiements avec l’extension AMC Banking 365 Fundamentals ou le virement SEPA](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md)   
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

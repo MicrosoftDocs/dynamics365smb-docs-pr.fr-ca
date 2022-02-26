@@ -1,21 +1,21 @@
 ---
-title: À propos de la comptabilité analytique | Microsoft Docs
-description: La comptabilité analytique vous permet de cerner les coûts liés à l'exploitation d'un activié.
+title: À propos de la comptabilité analytique
+description: La comptabilité analytique vous permet de cerner les coûts liés à l'exploitation d'un activié. Les informations sur la comptabilité analytique sont conçues pour analyser divers problèmes.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 6c61a23499735d694b2769730c5e3ce22ac835b1
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.search.form: 1101, 1103, 1105, 1108, 1111, 1112, 1124
+ms.date: 06/16/2021
+ms.author: edupont
+ms.openlocfilehash: 0d349f186757a38b9473b98fc74bfb490b81892e
+ms.sourcegitcommit: 2ab6709741be16ca8029e2afadf19d28cf00fbc7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3184158"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7973684"
 ---
 # <a name="about-cost-accounting"></a>À propos de la comptabilité analytique
 La comptabilité analytique vous permet de cerner les coûts liés à l'exploitation d'un activié. Les informations sur la comptabilité analytique sont conçues pour analyser :  
@@ -37,7 +37,7 @@ La comptabilité analytique est constituée des composants principaux suivants 
 
 Le schéma suivant présente le flux de travail en comptabilité analytique.  
 
-![Vue d'ensemble de la comptabilité analytique](media/costaccountingoverview.png "CostAccountingOverview")  
+![Vue d’ensemble de la comptabilité analytique.](media/costaccountingoverview.png "CostAccountingOverview")  
 
 ## <a name="cost-types-cost-centers-and-cost-objects"></a>Types de coûts, centres de coûts et coûts associés  
 Vous définissez les types de coûts, les centres de coûts et les coûts associés pour analyser leur type, leur source et la personne qui les prend en charge.  
@@ -72,4 +72,7 @@ La plupart des rapports et des statistiques reposent sur les écritures de coût
  [Comptabilité pour les coûts](finance-manage-cost-accounting.md)  
  [Finance](finance.md)   
  [Terminologie en comptabilité analytique](finance-terminology-in-cost-accounting.md)  
- [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+ [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,40 +1,39 @@
 ---
-title: Comprendre les types d'articles | Microsoft Docs
-description: Vous pouvez ajuster l'évaluation de l'inventaire d'un article à l'aide des méthodes FIFO ou d'évaluation coût moyen, par exemple, lorsque les coûts article sont modifiés pour des motifs autres que les transactions.
-services: project-madeira
+title: Comprendre les types d’articles
+description: Vous pouvez ajuster l’évaluations de l’inventaire d’un article à l’aide des méthodes FIFO ou d’évaluation inventaire moyen, lorsque les coûts article sont modifiés pour des motifs autres que les transactions.
 documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 481e8bbdb13863055c4dc532cb2c214228b8a8ba
-ms.sourcegitcommit: 0b5f8f68b1c9526288bfcce1a3bdc988d2910040
+ms.search.form: 9297, 5845, 30,
+ms.date: 06/16/2021
+ms.author: edupont
+ms.openlocfilehash: acb6ab4436f32760d905701348a242a4374b6b2d
+ms.sourcegitcommit: 189bf08d7ddf6c8b7ef2c09058c6847aa6e590d3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454306"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8059633"
 ---
 # <a name="about-item-types"></a>À propos des types d'articles
-Dans le champ **Type** de la page **Fiche article**, vous pouvez sélectionner ce pourquoi l'article est utilisé dans votre activité et donc la manière dont il est géré dans le système. Trois options existent :
+Dans le champ **Type** de la page **Fiche article**, vous pouvez sélectionner ce pourquoi l’article est utilisé dans votre activité, ce qui a une incidence sur le niveau de gestion que vous pouvez exercer sur l’article en inventaire. Le tableau suivant répertorie et décrit les trois types d’éléments disponibles.
 
 |Option|Objectif courant|
 |------|-----------|
-|Stocks|Une unité réelle, telle qu'une bicyclette, pour la prise en charge totale de l'activité.|
-|Hors inventaire|Une unité réelle, par exemple un boulon, pour une prise en charge limitée de l'activité, par exemple, car l'article est uniquement utilisé en interne et a un coût bas.|
+|Inventaire|Les objets physiques, tels que les vélos, les téléphones et les bureaux, pour lesquels vous souhaitez pouvoir utiliser tous les processus d'inventaire. Cela peut également inclure des éléments non physiques, tels que des licences logicielles et des abonnements, si les éléments ont des numéros d’identification, tels que des numéros de série. Vous pouvez suivre entièrement les valeurs et la disponibilité des articles dans l’inventaire.|
+|Hors inventaire|En règle générale, les articles hors inventaire sont des objets physiques, tels que des boulons ou des stylos, qu’une entreprise consomme mais ne souhaite pas suivre entièrement dans l'inventaire. Par exemple, parce que ce sont des articles qui ne coûtent pas cher et qu’ils ne sont utilisés qu’en interne.|
 |Service|Une unité de temps de travail, telle qu'une heure de conseil, pour la prise en charge limitée de l'activité.|
 
-Le type **Inventaire** implique un suivi complet de la quantité et de la valeur de l'inventaire. Par conséquent, tous les types de transaction article sont pris en charge, et les articles de type Inventaire peuvent être utilisés avec toutes les fonctionnalités de gestion des articles.
+> [!NOTE]
+> Les types **Service** et **Hors inventaire** ne prennent pas en charge le suivi des quantités et les valeurs d'inventaire. Seuls les types de transaction articles et fonctionnalités sélectionnés sont pris en charge.
 
-Les types **Service** et **Hors inventaire** ne requièrent pas le suivi de la quantité et de la valeur de l'inventaire. Par conséquent, seuls les types de transaction articles et fonctionnalités sélectionnés sont pris en charge.
+Le tableau suivant répertorie les fonctions que les trois types d’article prennent en charge.
 
-Les trois types d'article prennent en charge les fonctions suivantes respectivement.
-
-|Type d'article|Vente|Achats|Consommation de projet|Consommation de service|Consommation d'assemblage|Production Consommation|Résultat d'assemblage|Production|Transfert emplacement|Inventaire physique|Réévaluation de l'inventaire|Évaluation stock|Traçabilité|Réservation|Entreposage|Planification|
+|Type d'article|Ventes|Achats|Consommation de projet|Consommation de service|Consommation d'assemblage|Production Consommation|Résultat d'assemblage|Production|Transfert emplacement|Inventaire physique|Réévaluation de l'inventaire|Évaluation stock|Traçabilité|Réservation|Entreposage|Planification|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |Stocks|Oui|Oui|Oui|Oui|Oui|Oui|Oui|Oui|Oui|Oui|Oui|Oui|Oui|Oui|Oui|Oui|
 |Hors inventaire|Oui|Oui|Oui|Oui|Oui|Oui|Non|Non|Non|Non|Non|Non|Non|Non|Non|Non|
@@ -57,4 +56,7 @@ Les articles des clients pour lesquels vous effectuez un service, par exemple un
 [Configuration de stock](inventory-setup-inventory.md)  
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Stock](inventory-manage-inventory.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

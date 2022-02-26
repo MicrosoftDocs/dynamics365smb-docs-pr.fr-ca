@@ -4,10 +4,16 @@ description: Découvrez comment configurer des listes de vérification qui aiden
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.search.keywords: 'setup, wizard, checklist'
-ms.search.form: '1992, 1993, 1994, 1995, 1990, 1997, 1801'
+ms.search.keywords: setup, wizard, checklist
+ms.search.form: 1992, 1993, 1994, 1995, 1990, 1997, 1801
 ms.date: 04/01/2021
 ms.author: edupont
+ms.openlocfilehash: d11c1fa8541669ba496f4d6c2ec42dd6ff0c155b
+ms.sourcegitcommit: 8464b37c4f1e5819aed81d9cfdc382fc3d0762fc
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8011292"
 ---
 # <a name="onboard-users-with-checklists"></a>Utilisateurs intégrés avec des listes de vérification
 

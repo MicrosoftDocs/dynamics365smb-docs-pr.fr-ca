@@ -1,27 +1,27 @@
 ---
-title: Comment restreindre et autoriser l'utilisation d'un enregistrement | Microsoft Docs
-description: Si vous souhaitez restreindre l'utilisation d'un enregistrement à certaines utilisations, par exemple, jusqu'à ce qu'il ait été approuvé, vous pouvez incorporer deux réponses de flux de travail dans un flux de travail qui contrôle l'utilisation de l'enregistrement.
+title: Comment restreindre et autoriser l’utilisation d’un enregistrement
+description: Si vous souhaitez restreindre l’utilisation d’un enregistrement, vous pouvez incorporer deux réponses de workflow dans un workflow qui contrôle l’utilisation de l’enregistrement.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 42598f6774fcd5b60be93c5980ff2689ba718e6a
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 06/11/2021
+ms.author: edupont
+ms.openlocfilehash: bd7382730a70295693a9feb70ff67d9fb6344717
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3188262"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6438317"
 ---
 # <a name="restrict-and-allow-usage-of-a-record"></a>Restreindre et autoriser l'utilisation d'un enregistrement
-Si vous souhaitez restreindre l'utilisation d'un enregistrement à certaines utilisations, par exemple, jusqu'à ce qu'il ait été approuvé, vous pouvez incorporer deux réponses de flux de travail dans un flux de travail qui contrôle l'utilisation de l'enregistrement. Une réponse de flux de travail limitera l'utilisation de l'enregistrement telle que définie par l'événement et les conditions du flux de travail. Une autre réponse de flux de travail autorisera l'utilisation de l'enregistrement telle que définie par l'événement et les conditions du flux de travail. Deux réponses existent dans la version générique de [!INCLUDE[d365fin](includes/d365fin_md.md)] à cet effet : **Restreindre l'utilisation d'un enregistrement** et **Autoriser l'utilisation d'un enregistrement**.
+Si vous souhaitez restreindre l'utilisation d'un enregistrement à certaines utilisations, par exemple, jusqu'à ce qu'il ait été approuvé, vous pouvez incorporer deux réponses de flux de travail dans un flux de travail qui contrôle l'utilisation de l'enregistrement. Une réponse de flux de travail limitera l'utilisation de l'enregistrement telle que définie par l'événement et les conditions du flux de travail. Une autre réponse de flux de travail autorisera l'utilisation de l'enregistrement telle que définie par l'événement et les conditions du flux de travail. Deux réponses existent dans la version générique de [!INCLUDE[prod_short](includes/prod_short.md)] à cet effet : **Restreindre l'utilisation d'un enregistrement** et **Autoriser l'utilisation d'un enregistrement**.
 
 > [!NOTE]  
->  La version générique de [!INCLUDE[d365fin](includes/d365fin_md.md)] permet de restreindre la validation d'un enregistrement, son exportation pour paiement, et l'impression sous la forme d'un chèque. Pour prendre en charge d'autres restrictions, un partenaire Microsoft doit personnaliser le code de l'application.  
+>  La version générique de [!INCLUDE[prod_short](includes/prod_short.md)] permet de restreindre la validation d'un enregistrement, son exportation pour paiement, et l'impression sous la forme d'un chèque. Pour prendre en charge d'autres restrictions, un partenaire Microsoft doit personnaliser le code de l'application.  
 
 > [!NOTE]  
 >  La fonctionnalité de flux de travail pour restreindre et autoriser l'utilisation d'un enregistrement n'est pas liée à la fonctionnalité de blocage du report d'un enregistrement d'article, de client et de fournisseur.
@@ -29,7 +29,7 @@ Si vous souhaitez restreindre l'utilisation d'un enregistrement à certaines uti
 La procédure suivante explique comment restreindre le report de bons de commande tant qu'ils n'ont pas été approuvés. Le nouveau flux de travail sera basé sur le modèle de Flux de travail approbation facture achat existant.  
 
 ## <a name="to-create-a-workflow-step-that-restricts-posting-of-unapproved-purchase-orders"></a>Pour créer une étape de flux de travail qui limite le report de bons de commande non approuvés  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Flux de travail**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Flux de travail**, puis choisissez le lien associé.  
 2. Sur la page **Flux de travail**, créez un flux de travail nommé Flux de travail approbation bon de commande. Pour plus d'informations, voir [Créer des flux de travail](across-how-to-create-workflows.md).  
 3. Choisissez l'action **Copier à partir du modèle de flux de travail**.  
 4. Cliquez sur le champ **Code flux de travail origine**, puis, sur la page **Modèles flux de travail**, sélectionnez le modèle Flux de travail approbation facture achat.  
@@ -41,3 +41,6 @@ La procédure suivante explique comment restreindre le report de bons de command
 ## <a name="see-also"></a>Voir aussi  
 [Créer des workflows](across-how-to-create-workflows.md)   
 [Flux de travail](across-workflow.md)   
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

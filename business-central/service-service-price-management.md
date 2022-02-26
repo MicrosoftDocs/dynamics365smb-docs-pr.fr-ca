@@ -1,21 +1,21 @@
 ---
-title: Configuration de gestion de prix | Microsoft Docs
-description: Cette rubrique décrit comment affecter le meilleur prix à des commandes service, configurer des ententes personnalisés pour le prix des services pour des clients, améliorer le rendement des employés d'entretien et accélérer le processus de facturation.
+title: Configuration de gestion de prix
+description: La gestion des prix de service vous permet de configurer des groupes de prix de service, la tarification des services, l’ajustement des prix de service, etc.
 author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 06/23/2021
 ms.author: bholtorf
-ms.openlocfilehash: cc5593c1ff9f0de1cfabe5deaa903f6b99dc0e64
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 1857efe5dd3accf7f8ec53a57ce9a614efbeacad
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3192421"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6438292"
 ---
 # <a name="service-price-management"></a>Configuration de gestion de prix
 La fonctionnalité de gestion de la tarification des services vous permet d'appliquer le meilleur prix à des commandes service, de configurer des ententes prix service personnalisées pour des clients, d'améliorer le rendement des employés d'entretien et d'accélérer le processus de facturation.  
@@ -29,11 +29,13 @@ Avant d'ajuster le prix d'un article de service sur une commande service, un ape
 Pour finir, les statistiques de groupes tarifs service et les états standard vous permettent d'effectuer le suivi de la rentabilité de chaque groupe tarifs service.  
   
 ## <a name="service-price-adjustment-groups"></a>Groupes d'ajustements de prix de service  
-Vous utilisez les groupes ajustement prix service pour configurer différents types d'ajustement de prix. Par exemple, vous pouvez configurer un groupe ajustement prix service qui ajuste des pièces de rechange, un groupe qui ajuste les prix pour la ressource, un autre qui ajuste les prix pour les coûts, etc. Vous pouvez également indiquer si l'ajustement de prix doit être affecté à un article ou à une ressource spécifique uniquement, ou à tous les articles ou ressources.  
+Vous utilisez les groupes ajustement prix service pour configurer différents types d’ajustement de prix pour des lignes service. Par exemple, vous pouvez configurer un groupe ajustement prix service qui ajuste des pièces de rechange, un groupe qui ajuste les prix pour la ressource, un autre qui ajuste les prix pour les coûts, etc. Vous pouvez également indiquer si l'ajustement de prix doit être affecté à un article ou à une ressource spécifique uniquement, ou à tous les articles ou ressources.  
   
-Chaque groupe ajustement prix service conserve les informations concernant les ajustements que vous souhaitez effectuer sur les lignes service.  
-  
-La fonction d'ajustement prix service ne s'applique pas aux articles de service qui appartiennent à des contrats de service. Vous pouvez ajuster uniquement les prix service des articles faisant partie d'une commande service. Vous ne pouvez pas ajuster le prix d'un article de service s'il possède une garantie. Vous ne pouvez pas ajuster le prix d'un article de service sur une commande service si la ligne service qui y est liée a été reportée, entièrement ou partiellement, comme facture.  
+La fonction d’ajustement prix service ne s’applique pas aux articles de service dans les conditions suivantes :
+
+* L’article appartient à des contrats de service. Vous pouvez ajuster uniquement les prix service des articles faisant partie d'une commande service. 
+* Si l’article de service a une garantie. 
+* Si la ligne service a été reportée en tant que facture, en totalité ou en partie.  
   
 Lorsque vous exécutez la fonction d'ajustement prix service, toutes les remises de la commande sont remplacées par les valeurs de l'ajustement prix service.  
   
@@ -48,6 +50,12 @@ Lorsque vous affectez un groupe tarifs service à un article de service, tous le
 Paramétrez les types de tarification service (prix et type d'ajustement prix) pour une combinaison de groupes prix service et de groupes prix client. Pour chaque type de tarification service, sélectionnez un groupe ajustement prix service. Vous pouvez aussi spécifier le type ajustement prix service (fixe, maximum ou minimum) et le prix réel.  
   
 Par exemple, vous pouvez paramétrer les types de tarifications service d'un groupe tarifs service radio. Dans le cas de clients qui ne sont associés à aucun groupe prix, vous pouvez décider d'appliquer une tarification service impliquant le prix maximum sur la main-d'œuvre, qui est le groupe ajustement prix main-d'œuvre. Dans le cas de clients associés à un groupe prix précis, vous pouvez décider d'appliquer une tarification service avec un prix fixe sur la main-d'œuvre, e même groupe ajustement prix main-d'œuvre.  
+
+#### <a name="current-experience"></a>[Expérience actuelle](#tab/current-experience)
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles de service**, puis choisissez le lien associé.  
+2. Sélectionnez l’article de service, développez le raccourci **Prix et ventes**, choisissez l’action **Ressource**, **Article** ou **Compte du grand livre**.
+3. Sur la page **Prix ressource projet**, **Prix article projet** ou **Prix compte du grand livre projet**, remplissez les champs selon vos besoins.
+
   
 ## <a name="service-price-adjustment"></a>Groupe ajustement prix service  
 L'ajustement prix service vous permet d'ajuster le prix d'un article, d'une ressource, d'un compte du grand livre ou d'un coût sur une commande service.  
@@ -67,3 +75,6 @@ Le tableau suivant décrit les calculs.
 ## <a name="see-also"></a>Voir aussi  
 [Configurer la tarification et les frais supplémentaires pour les services](service-how-setup-service-costs-pricing.md)  
 [Paramétrage de la gestion des services](service-setup-service.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

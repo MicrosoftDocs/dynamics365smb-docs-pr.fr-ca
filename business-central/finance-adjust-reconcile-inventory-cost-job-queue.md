@@ -1,6 +1,6 @@
 ---
 title: Programmer des tâches pour ajuster et rapprocher le coûts de l'inventaire
-description: 'Découvrez comment vous pouvez utiliser la file d’attente des travaux pour déplacer les tâches d’ajustement du coût de l’inventaire ou de rapprochement avec le grand livre en arrière-plan. Par exemple, si votre compagnie exécute de nombreuses tâches ou traite de nombreuses transactions.'
+description: Découvrez comment vous pouvez utiliser la file d’attente des travaux pour déplacer les tâches d’ajustement du coût de l’inventaire ou de rapprochement avec le grand livre en arrière-plan. Par exemple, si votre compagnie exécute de nombreuses tâches ou traite de nombreuses transactions.
 author: AndreiPanko
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -11,6 +11,12 @@ ms.reviewer: edupont
 ms.search.form: 461
 ms.date: 09/23/2021
 ms.author: andreipa
+ms.openlocfilehash: 85fec80ca9b7f2184e67da58f9d05a86534e90ac
+ms.sourcegitcommit: 2ab6709741be16ca8029e2afadf19d28cf00fbc7
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7973554"
 ---
 # <a name="schedule-jobs-for-adjusting-and-reconciling-inventory-cost-with-the-general-ledger"></a>Programmer des tâches pour ajuster et rapprocher le coût de l'inventaire avec le grand livre
 

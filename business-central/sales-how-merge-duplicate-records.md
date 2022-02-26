@@ -1,23 +1,21 @@
 ---
-title: Fusionner les doublons d'enregistrements fournisseur ou client | Microsoft Docs
-description: Décrit comment créer une fiche client pour enregistrer des informations sur chaque nouveau client ou client auquel vous vendez.
-services: project-madeira
-documentationcenter: ''
+title: Fusionner les doublons d’enregistrements fournisseur ou client
+description: Décrit comment consolider les informations sur les clients ou les fournisseurs lorsque vous avez des entrées en double pour certains.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: client
-ms.date: 10/01/2019
-ms.author: sgroespe
-ms.openlocfilehash: 1fb7f049e253e70e9170c257848b3738dec9d176
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.date: 04/01/2021
+ms.author: edupont
+ms.openlocfilehash: 336c10e93a50e7fb880f9bf5856c85b44daef266
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2312182"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6436861"
 ---
 # <a name="merge-duplicate-records"></a>Fusionner les doublons d'enregistrements
 Puisque différents utilisateurs créent de nouvelles fiches contact, fournisseur ou client au fil du temps, ou puisque de nouveaux enregistrements sont créés automatiquement pendant la migration, un client, fournisseur ou contact peut être représenté dans le système avec plusieurs enregistrements. Dans ce cas, vous pouvez utiliser la page **Fusionner le doublon** depuis la fiche de l'enregistrement que vous souhaitez conserver. La page vous donne un aperçu des valeurs de champ dupliquées et vous fournit des fonctions pour sélectionner quelles valeurs conserver ou ignorer lors de la fusion des deux enregistrements en un seul.
@@ -30,7 +28,7 @@ Puisque différents utilisateurs créent de nouvelles fiches contact, fournisseu
 
 La procédure suivante se base sur une fiche article. La procédure est identique pour les fiches fournisseur ou contact.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Clients**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.
 2. Sélectionnez le client pour lequel vous savez, ou vous supposez, qu'il existe un doublon d'enregistrement, puis sélectionnez l'action **Modifier**.
 3. Sur la page **Fiche client**, sélectionnez l'action **Fusionner avec**.
 4. Sur la page **Fusionner le doublon**, dans le champ **Fusionner avec**, sélectionnez le client pour lequel vous soupçonnez qu'il existe un doublon de celui que vous avez ouvert, indiqué dans le champ **Actuel**.
@@ -65,6 +63,9 @@ La procédure suivante se base sur une fiche article. La procédure est identiqu
 > Pour les contacts, vous pouvez utiliser la fonctionnalité pour trouver des doublons de contact avant d'utiliser la page **Fusionner le doublon**. Pour plus d'informations, reportez-vous à la rubrique [Recherche de doublons de contact](marketing-setup-contacts.md#searching-for-duplicate-contacts).
 
 ## <a name="see-also"></a>Voir aussi
-[Ventes](sales-manage-sales.md)  
+[Vente](sales-manage-sales.md)  
 [Configurer les contacts](marketing-setup-contacts.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

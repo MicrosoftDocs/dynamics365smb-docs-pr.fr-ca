@@ -1,26 +1,26 @@
 ---
-title: Configuration des modèles d'API | Microsoft Docs
+title: Configuration des modèles d'API
 description: Décrit la procédure à suivre pour configurer des modèles d'API pour Dynamics 365 Business Central.
-services: project-madeira
-documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: API templates, configuring templates
-ms.date: 04/01/2020
+ms.search.form: 5469
+ms.date: 04/01/2021
 ms.author: solsen
-ms.openlocfilehash: 7e21da444f8dc8858ebe0e5f65335311dfb2a5e7
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: f5f081e4d0042333549453a3ad6af5a05a0e6ca0
+ms.sourcegitcommit: 8464b37c4f1e5819aed81d9cfdc382fc3d0762fc
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3187398"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8011266"
 ---
 # <a name="configuring-api-templates"></a>Configuration des modèles d'API
-La bibliothèque d'API de [!INCLUDE[d365fin_md](includes/d365fin_md.md)] fournit une représentation simplifiée des entités sous-jacentes. Toutes les propriétés de l'application ne sont pas exposées via l'API associée. La page **Configuration API** permet de définir des modèles qui sont utilisés pour remplir les propriétés vides d'une entité lorsque vous créez une action POST via l'API. 
+
+La bibliothèque d'API de [!INCLUDE[prod_short_md](includes/prod_short.md)] fournit une représentation simplifiée des entités sous-jacentes. Toutes les propriétés de l'application ne sont pas exposées via l'API associée. La page **Configuration API** permet de définir des modèles qui sont utilisés pour remplir les propriétés vides d'une entité lorsque vous créez une action POST via l'API. 
 
 Par exemple, si un modèle de configuration est défini pour l'entité article, lorsqu'un nouvel enregistrement d'article est créé via l'API de l'article, les propriétés du nouvel article qui ne sont pas définies dans l'appel de l'API sont remplies à partir du modèle sélectionné. Si, par exemple, aucune valeur n'est définie pour le champ **Groupe de report de produit** via l'API, mais qu'une valeur est définie dans le modèle sélectionné, la valeur du groupe de report définie dans le modèle est appliquée au nouvel article. 
 
@@ -31,7 +31,7 @@ Pour utiliser les modèles avec la bibliothèque d'API, vous devez d'abord confi
 
 Pour affecter un modèle à une API, vous devez effectuer les actions suivantes.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration API**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration API**, puis choisissez le lien associé.
 2. Choisissez **Nouveau**, puis la valeur **Ordre** pour l'enregistrement.  
 Si plusieurs modèles sont sélectionnés pour une API (Code page), les modèles sont appliqués dans l'ordre défini dans la colonne **Ordre**.   
 Lorsque chaque modèle est appliqué, les valeurs de champ définies dans le modèle sont uniquement appliquées aux champs sans valeur déjà définie, soit explicitement dans l'API ou dans un modèle précédemment appliqué dans l'ordre. 
@@ -44,8 +44,10 @@ Le modèle défini est appliqué à un nouvel enregistrement créé via l'API si
 
 ## <a name="see-also"></a>Voir aussi
 [Documentation sur les API](/dynamics-nav/fin-graph)  
-[Développement d'applications connectées pour [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps)  
+[Développement d'applications connectées pour [!INCLUDE[prod_short_md](includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps)  
 [Activation des API](/dynamics-nav/enabling-apis-for-dynamics-nav)  
 [Points de terminaison des API](/dynamics-nav/endpoints-apis-for-dynamics)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

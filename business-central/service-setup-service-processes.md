@@ -3,19 +3,19 @@ title: Configurer les processus de gestion des services | Microsoft Docs
 description: Apprenez comment configurer les processus qui permettent de vérifier que les clients sont satisfaits de votre service client.
 author: bholtorf
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: service, number sequences, setup, warnings, fee, contracts, warranties
-ms.date: 04/01/2020
+ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 80f56b9572e8ff20c29174e738aff135243530b7
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 91a6b16b4a7670fa78ddda0317ce20f259d35892
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3192315"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6438242"
 ---
 # <a name="configure-service-processes"></a>Configuration des processus de service
 Voici quelques exemples des paramètres que vous pouvez appliquer aux processus de gestion des services :  
@@ -27,7 +27,7 @@ Voici quelques exemples des paramètres que vous pouvez appliquer aux processus 
 * Les souches de numéros à utiliser pour les documents et les articles relatifs au service.  
 
 ## <a name="to-enter-general-and-mandatory-settings"></a>Pour saisir les paramètres généraux et obligatoires
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration de la gestion des services**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration Gestion des services**, puis choisissez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
 ## <a name="see-also"></a>Voir aussi  
@@ -37,3 +37,6 @@ Voici quelques exemples des paramètres que vous pouvez appliquer aux processus 
 [Configurer des frais supplémentaires pour les services](service-how-setup-service-costs-pricing.md)  
 [Configurer le dépannage](service-how-setup-troubleshooting.md)  
 [Gestion des services](service-service.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

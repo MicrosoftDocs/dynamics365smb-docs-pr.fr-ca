@@ -1,21 +1,22 @@
 ---
-title: Cession ou annulation d'immobilisations| Microsoft Docs
-description: Vous devez reporter une valeur de cession lorsque vous mettez au rebut, vendez ou annulez une immobilisation.
+title: Cession ou annulation d’immobilisations
+description: Lorsque vous commercialisez ou cédez une immobilisation, la valeur de cession doit être reportée pour calculer et enregistrer le gain ou la perte.
 author: edupont04
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: scrap
-ms.date: 06/04/2020
+ms.search.form: 5628, 5610, 5611
+ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: 29293e957617fea91c9a8e8b8c1f988b06104494
-ms.sourcegitcommit: ccae3ff6aaeaa52db9d6456042acdede19fb9f7b
+ms.openlocfilehash: 1f3a593b96f311cf742fa4edf510d4b2e930b05d
+ms.sourcegitcommit: 66c78f6f04bfca6c0794b3299241ed65037b1c08
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435217"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "8029310"
 ---
 # <a name="dispose-of-or-retire-fixed-assets"></a>Céder ou annuler des immobilisations
 
@@ -28,7 +29,7 @@ Les étapes suivantes supposent que vous avez déjà configuré les groupes de r
 
 ## <a name="to-post-a-disposal-from-the-fixed-asset-gl-journal"></a>Pour reporter une cession à partir du journal GL immobilisation
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux GL immobilisation**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journaux GL immobilisation**, puis choisissez le lien associé.  
 2. Créez une ligne journal initiale et complétez les champs, le cas échéant. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 3. Dans le champ **Type compta. immo**, sélectionnez **Cession**.  
 4. Sélectionnez l'action **Insérer contrepartie immo.**. Une seconde ligne journal est créée pour le compte de contrepartie qui est configuré pour le report de la cession.  
@@ -42,11 +43,11 @@ Si vous vendez une immobilisation ou en cédez une partie, vous devez d'abord di
 ## <a name="to-view-disposal-ledger-entries"></a>Pour visualiser des écritures cession
 Lorsque vous vendez ou cédez une immobilisation, la valeur de cession est reportée dans le grand livre où vous pouvez afficher le résultat.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Immobilisations**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Immobilisations**, puis choisissez le lien associé.  
 2. Sélectionnez l'immobilisation pour laquelle vous souhaitez afficher les écritures, puis sélectionnez l'action **Lois d'amortissement**.  
 3. Sélectionnez la loi d'amortissement pour laquelle vous souhaitez afficher les écritures, puis sélectionnez l'action **Écritures comptables**.  
-4. Sélectionnez une ligne avec **Cession** dans le champ **Catégorie compta. immo.**, puis sélectionnez l'action **Naviguer**.  
-5. Sur la page **Naviguer**, sélectionnez la ligne d'écriture, puis l'action **Afficher**.  
+4. Sélectionnez une ligne avec **Cession** dans le champ **Catégorie report immo.**, puis sélectionnez l’action **Rechercher des écritures**.  
+5. Sur la page **Rechercher des écritures**, sélectionnez la ligne écriture, puis l’action **Afficher les écritures associées**.  
 
 La page **Écritures** s'ouvre. Vous pouvez y voir les écritures résultant du report de la cession.  
 
@@ -56,5 +57,9 @@ La page **Écritures** s'ouvre. Vous pouvez y voir les écritures résultant du 
 [Paramétrage d'immobilisations](fa-setup.md)  
 [Pour configurer des groupes de report immobilisation](fa-how-setup-general.md#to-set-up-fixed-asset-posting-groups).  
 [Finance](finance.md)  
-[Mise en route](product-get-started.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Préparation aux activités commerciales](ui-get-ready-business.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Rechercher des écritures](ui-find-entries.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,21 +1,21 @@
 ---
-title: Détails de conception - Vue d'ensemble d'entrepôt | Microsoft Docs
-description: Pour prendre en charge la manipulation physique des articles au niveau des zones, toutes les informations doivent être suivies pour chaque transaction ou mouvement dans l'entrepôt. Ceci est géré dans la table **Écriture entrepôt**. Chaque transaction est enregistrée dans un registre entrepôt.
+title: Détails de conception : vue d’ensemble d’entrepôt
+description: Pour prendre en charge la manipulation physique des articles au niveau des zones, toutes les informations doivent être suivies pour chaque transaction ou mouvement dans l'entrepôt.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 41f18acde6140ca67050391273e9ace61f48fbb5
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 06/15/2021
+ms.author: edupont
+ms.openlocfilehash: 49c25082d8f43210011cc7f482c4f4af330c1a19
+ms.sourcegitcommit: 8464b37c4f1e5819aed81d9cfdc382fc3d0762fc
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3184590"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8011608"
 ---
 # <a name="design-details-warehouse-overview"></a>Détails de conception : vue d'ensemble d'entrepôt
 Pour prendre en charge la manipulation physique des articles au niveau des zones, toutes les informations doivent être suivies pour chaque transaction ou mouvement dans l'entrepôt. Ceci est géré dans la table **Écriture entrepôt**. Chaque transaction est enregistrée dans un registre entrepôt.  
@@ -28,10 +28,10 @@ Lorsque les reports article se produisent en dehors du module d'entrepôt, une z
 
 La figure suivante présente les flux d'entrepôt courants.  
 
-![Vue d'ensemble des processus entrepôt](media/design_details_warehouse_management_overview.png "Vue d'ensemble des processus entrepôt")  
+![Vue d’ensemble des processus entrepôt.](media/design_details_warehouse_management_overview.png "Vue d'ensemble des processus entrepôt")  
 
 ## <a name="basic-or-advanced-warehousing"></a>Entreposage de base ou avancé  
-La fonctionnalité d'entrepôt dans [!INCLUDE[d365fin](includes/d365fin_md.md)] peut être implémentée à différents niveaux de complexité, selon les processus d'une compagnie et le volume de commande. La principale différence est que les activités sont effectuées par commande dans l'entreposage de base, alors qu'elles sont regroupées pour plusieurs commandes dans l'entreposage avancé.  
+La fonctionnalité d'entrepôt dans [!INCLUDE[prod_short](includes/prod_short.md)] peut être implémentée à différents niveaux de complexité, selon les processus d'une compagnie et le volume de commande. La principale différence est que les activités sont effectuées par commande dans l'entreposage de base, alors qu'elles sont regroupées pour plusieurs commandes dans l'entreposage avancé.  
 
  Pour différencier les différents niveaux de complexité, ces documents font référence à deux dénominations générales de base, Basic et Advanced Warehousing. Cette différenciation simple couvre plusieurs niveaux de complexité différents tels que définis par les granules produit et la configuration de l'emplacement, chacun étant pris en charge par différents documents d'interface utilisateur. Pour plus d'informations, reportez\-vous à [Détails de conception : Paramètres entrepôt](design-details-warehouse-setup.md).  
 
@@ -69,7 +69,7 @@ La fonctionnalité d'entrepôt dans [!INCLUDE[d365fin](includes/d365fin_md.md)] 
 Pour plus d'informations sur chaque document, reportez-vous aux rubriques correspondantes de la page.  
 
 ### <a name="terminology"></a>Terminologie  
-Pour s'aligner avec les concepts financiers d'achats et de ventes, la documentation d'entrepôt [!INCLUDE[d365fin](includes/d365fin_md.md)] fait référence aux termes suivants pour la circulation des articles dans l'entrepôt.  
+Pour s'aligner avec les concepts financiers d'achats et de ventes, la documentation d'entrepôt [!INCLUDE[prod_short](includes/prod_short.md)] fait référence aux termes suivants pour la circulation des articles dans l'entrepôt.  
 
 |Terme|Description|  
 |----------|---------------------------------------|  
@@ -79,3 +79,6 @@ Pour s'aligner avec les concepts financiers d'achats et de ventes, la documentat
 
 ## <a name="see-also"></a>Voir aussi  
  [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

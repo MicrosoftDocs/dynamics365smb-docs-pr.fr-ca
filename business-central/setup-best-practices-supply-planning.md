@@ -1,21 +1,21 @@
 ---
-title: "Pratiques de configuration recommandées : planification de l'approvisionnement | Microsoft Docs"
-description: La planification des approvisionnements est un domaine d'activité critique. Lorsqu'elle est configurée et utilisée correctement, la planification des approvisionnements évite les ruptures de stock et minimise les coûts de commande et d'inventaire.
+title: 'Pratiques de configuration recommandées : planification de l’approvisionnement'
+description: Lorsqu'elle est configurée et utilisée correctement, la planification des approvisionnements évite les ruptures de stock et minimise les coûts de commande et d'inventaire.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 6e80ba7e148e8a415c8b9c71e42bdda13df7050f
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 06/25/2021
+ms.author: edupont
+ms.openlocfilehash: 423d26aad7fe708cf51d614449cb7a3666c27dd6
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3192181"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6320041"
 ---
 # <a name="setup-best-practices-supply-planning"></a>Pratiques de configuration recommandées : planification de l'approvisionnement
 La planification des approvisionnements est un domaine d'activité critique. Lorsqu'elle est configurée et utilisée correctement, la planification des approvisionnements évite les ruptures de stock et minimise les coûts de commande et d'inventaire.  
@@ -34,4 +34,7 @@ La planification des approvisionnements est un domaine d'activité critique. Lor
  [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
  [Détails de conception : paramètres de planification](design-details-planning-parameters.md)   
  [Configurez les modules complexes à l'aide des meilleures pratiques](set-up-complex-application-areas-using-best-practices.md)  
- [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+ [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

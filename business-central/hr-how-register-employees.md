@@ -1,43 +1,48 @@
 ---
-title: Paramétrer les employés et modifier les informations| Microsoft Docs
-description: Décrit comment enregistrer du nouveau personnel ou modifier les informations concernant le personnel existant.
+title: Paramétrer les employés et modifier les informations
+description: Décrit comment utiliser la fonctionnalité Ressources humaines pour enregistrer de nouveaux employés ou modifier les informations sur les employés pour le personnel existant.
 services: project-madeira
 documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: personnel, people, employee, staff, HR
-ms.date: 04/01/2020
-ms.author: SorenGP
-ms.openlocfilehash: 264ae00ff26156bd0d740d015664f260bd062f4a
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.search.form: 5200, 5201
+ms.date: 06/16/2021
+ms.author: edupont
+ms.openlocfilehash: c3e8215f80d2d035643166832b866c569e1d2d1a
+ms.sourcegitcommit: f4b32ba1f926a2a712400c36305616f320757723
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3182574"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8101117"
 ---
 # <a name="register-employees"></a>Enregistrer des employés
-Pour utiliser la fonctionnalité Ressources humaines, vous devez d'abord enregistrer chaque employé en créant une fiche contenant les informations de base et connexes.
+Pour utiliser la fonctionnalité Human Resources, vous devez d’abord ajouter chaque employé en remplissant les champs de la page **Fiche employé**.
 
-Vous pouvez modifier les informations d'un employé à tout moment. La mise à jour des enregistrements relatifs à vos salariés simplifie les tâches de gestion du personnel. Par exemple, si l'adresse d'un employé change, vous pouvez l'enregistrer sur sa fiche employé.
+## <a name="adding-new-customers"></a>Ajout de nouveaux clients
+Vous pouvez ajouter de nouveaux employés manuellement, en remplissant les champs sur la page **Fiche employé**, ou vous pouvez utiliser des modèles contenant des informations prédéfinies. Par exemple, vous pouvez créer des modèles pour différents types de profils d’employé. L’utilisation de modèles permet de gagner du temps lors de l’ajout de nouveaux employés et permet de garantir que les informations sont correctes à chaque fois. Si vous créez des modèles pour plusieurs types d’employé, vous pouvez choisir le modèle à utiliser lorsque vous ajoutez un employé. Si vous ne créez qu’un seul modèle, il sera utilisé pour tous les nouveaux employés. Après avoir créé un modèle, vous pouvez utiliser l’action **Appliquer le modèle** pour l’appliquer à un ou plusieurs employés sélectionnés. Pour créer un modèle, vous remplissez les informations que vous souhaitez réutiliser sur la page Fiche employé, puis l’enregistrez en tant que modèle.
 
-Les procédures suivantes décrivent comment créer une première fiche employé et comment affecter deux types d'informations à un employé. En outre, vous pouvez affecter diverses autres informations connexes, telles que les qualifications et les motifs d'inactivité. Pour affecter les informations concernant les employés, vous devez choisir un champ ou une action sur la page **Fiche employé**.
+> [!TIP]
+> Il peut être utile de personnaliser la page **Modèle d’employé** lorsque vous créez un modèle. Par exemple, vous souhaiterez peut-être ajouter un champ qui n’est pas déjà affiché sur la page. Pour plus d’informations, voir [Personnaliser votre espace de travail](/dynamics365/business-central/ui-personalization-user#to-start-personalizing-a-page-through-the-personalizing-banner).
+
+Vous pouvez modifier les informations d'un employé à tout moment. La tenue à jour des enregistrements relatifs à vos employés peut simplifier les tâches liées à la gestion du personnel. Par exemple, si l’adresse d’un employé change, vous pouvez l’enregistrer sur la page Fiche employé.
 
 > [!NOTE]  
 > Vous pouvez rembourser les frais engagés par les employés durant leurs activités professionnelles. Pour cela, vous devez renseigner les champs du raccourci **Paiements** sur la page **Fiche employé**. Pour plus d'informations, voir [Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md).
 
 ## <a name="to-set-up-an-employee"></a>Pour configurer un employé
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Employés**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Employés**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Sur la page **Fiche employé**, renseignez les champs comme nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 ## <a name="to-insert-a-picture-of-an-employee"></a>Pour insérer une photo d'un employé
-Si vous disposez d'une photo d'un employé au format .bmp, vous pouvez l'insérer sur la fiche de ce dernier.
+Si vous disposez d’une photo d’un employé, vous pouvez l’insérer sur la fiche de ce dernier.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Employés**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Employés**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche de l'employé en question.
 3. Dans le récapitulatif **Photo salarié**, choisissez le bouton déroulant, puis choisissez **Importer**.
 4. Sur la page **Sélectionner une image à charger**, cliquez sur le bouton **Choisir**.
@@ -50,7 +55,7 @@ Sur la fiche employé, vous pouvez définir des informations, telles que l'adhé
 
 Vous pouvez utiliser des adresses de livraison secondaires pour conserver un historique des déplacements de vos employés, par exemple s'ils ont été en poste à l'étranger, en voyages d'affaires de longue durée ou s'ils séjournent dans une résidence d'été.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Employés**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Employés**, puis sélectionnez le lien associé.
 2. Ouvrez la fiche de l'employé en question.
 3. Choisissez l'option **Adresses secondaires**.
 4. Sur la page **Liste des adresses secondaires**, renseignez les champs selon vos besoins.
@@ -59,5 +64,8 @@ Vous pouvez utiliser des adresses de livraison secondaires pour conserver un his
 ## <a name="see-also"></a>Voir aussi
 [Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md)  
 [Finance](finance.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Modifier les fonctionnalités affichées](ui-experiences.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

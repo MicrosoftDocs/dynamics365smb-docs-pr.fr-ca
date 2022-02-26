@@ -1,39 +1,49 @@
 ---
-title: Extensions Nuage intelligent Business Central pour la migration nuage | Microsoft Docs
-description: Utilisez les extensions de migration nuage pour migrer vos données locales vers Business Central Online. Ces extensions déplacent vos données locales vers le nuage afin que vous puissiez utiliser Business Central Online avec vos données existantes.
+title: Extensions de migration vers le nuage
+description: Utilisez les extensions de migration nuage pour migrer vos données locales vers Business Central Online. Ces extensions déplacent vos données sur site vers le nuage.
 author: jenolson
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize, import, implement
 ms.reviewer: edupont
-ms.date: 02/18/2020
-ms.author: jenolson
-ms.openlocfilehash: 8afa05f7e1790ab28f8450a8323b48ec1c5ebd72
-ms.sourcegitcommit: d0dc5e5c46b932899e2a9c7183959d0ff37738d6
+ms.date: 06/23/2021
+ms.author: edupont
+ms.openlocfilehash: f76241497eea8a53dfc054c895bf4a788e2226a4
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076390"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6322307"
 ---
-# <a name="intelligent-cloud-extensions-for-cloud-migration"></a>Extensions Nuage intelligent pour la migration vers le nuage
+# <a name="cloud-migration-extensions-for-migrating-to-business-central-online"></a>Extensions de migration vers le nuage pour la migration vers Business Central Online
 
-Cette extension connecte vos données de [!INCLUDE [prodshort](includes/prodshort.md)] sur site avec [!INCLUDE [prodshort](includes/prodshort.md)] en ligne pour migrer votre solution vers le nuage.  
+En fonction de votre solution sur site, vous devez utiliser différentes extensions pour connecter vos données à [!INCLUDE[prod_short](includes/prod_short.md)] en ligne afin de migrer votre solution vers le nuage.  
 
-Si vous utilisez l'un des produits sur site pris en charge, vous pouvez configurer votre environnement de nuage en fonction d'une extension basée sur le produit. Une fois votre environnement de nuage configuré, vous pouvez migrer des données depuis votre solution sur site vers [!INCLUDE[prodshort](includes/prodshort.md)]. Ceci vous permet de profiter pleinement des avantages que le nuage peut offrir à votre compagnie, comme les analyses optimisées de votre activité, l'intelligence artificielle, l'accès multipériphérique à tout moment et n'importe où.  
+Si vous utilisez l'un des produits sur site pris en charge, vous pouvez configurer votre environnement de nuage en fonction d'une extension basée sur le produit. Une fois votre environnement de nuage configuré, vous pouvez migrer des données depuis votre solution sur site vers [!INCLUDE[prod_short](includes/prod_short.md)]. Ceci vous permet de profiter pleinement des avantages que le nuage peut offrir à votre compagnie, comme les analyses optimisées de votre activité, l'intelligence artificielle, l'accès multipériphérique à tout moment et n'importe où.  
+
+Pour en savoir plus, voir la rubrique [Migration des données locales vers Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-data) dans le contenu d'administration pour [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 ## <a name="business-central-on-premises"></a>Business Central sur site
-Si vous utilisez un déploiement sur site de [!INCLUDE[prodshort](includes/prodshort.md)], obtenez les extensions **Base du nuage intelligent** et **Nuage intelligent Business Central**, puis exécutez le guide de configuration assistée **Configuration de la migration nuage**.  
+
+Si vous utilisez un déploiement sur site de [!INCLUDE[prod_short](includes/prod_short.md)], obtenez les extensions **Base du nuage intelligent** et **Nuage intelligent Business Central**, puis exécutez le guide de configuration assistée **Configuration de la migration nuage**.  
 
 ## <a name="dynamics-gp"></a>Dynamics GP
+
 Si vous utilisez Dynamics GP, obtenez les extensions **Base du nuage intelligent** et **Nuage intelligent Dynamics GP**, puis exécutez le guide de configuration assistée **Configuration de la migration nuage**.  
 
+> [!IMPORTANT]
+> La migration à partir de Dynamics GP à l'aide du guide de configuration assistée **Configuration de la migration nuage** n'est actuellement prise en charge que pour les marchés suivants : États-Unis, Canada, Royaume-Uni.
+
 ## <a name="dynamics-sl"></a>Dynamics SL
-Si vous utilisez Dynamics SL, obtenez les extensions **Base du nuage intelligent**, **Nuage intelligent Microsoft Dynamics SL** et **SmartLists historiques Microsoft Dynamics SL**, puis exécutez le guide de configuration assistée **Configuration de la migration nuage**.  
+
+Si vous utilisez Dynamics SL, obtenez l'extension **Base du nuage intelligent**, l'extension **Nuage intelligent Microsoft Dynamics SL** et l'extension **SmartLists historiques Microsoft Dynamics SL**, puis exécutez le guide de configuration assistée **Configuration de la migration nuage**.  
 
 ## <a name="see-also"></a>Voir aussi
 
-[Informations intelligentes](about-intelligent-cloud.md)  
-[Extension Base du nuage intelligent](ui-extensions-intelligent-cloud.md)  
+[Extension Base de migration vers le nuage](ui-extensions-intelligent-cloud.md)  
+[Migration des données locales vers Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-data)  
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

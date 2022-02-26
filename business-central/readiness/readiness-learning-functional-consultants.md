@@ -2,15 +2,15 @@
 title: Catalogue d'apprentissage Consultants fonctionnels
 description: Trouvez toutes les formations disponibles pour Business Central.
 author: loreleishannonmsft
-ms.date: 04/20/2020
-ms.topic: article
-ms.author: v-lshann
-ms.openlocfilehash: eba4c2c1badc0b686d50b23c8e47600f1cdbed3f
-ms.sourcegitcommit: b9264b4ed650feca18776892ec23f2aa7ec43e20
+ms.date: 04/01/2021
+ms.topic: conceptual
+ms.author: margoc
+ms.openlocfilehash: c7e235f878287a061dfaff25d7a9f2e2e8f40c16
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3372650"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5781898"
 ---
 # <a name="functional-consultant-learning-catalog"></a>Catalogue d'apprentissage Consultant fonctionnel
 
@@ -68,3 +68,6 @@ Le catalogue suivant est organisé en partant des connaissances de base jusqu'au
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------------|
 | [L'avenir est dans le nuage sécurisé](https://www.microsoft.com/trust-center)                                                                                                                                                              | À propos du nuage sécurisé                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Site Web                                                                        |                    |
 | [Ressources de protection des données](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5fa41da9-69b2-47ea-8413-4a91345b299b&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) | Informations sur la manière dont les services Microsoft Cloud Service protègent vos données et sur la manière de gérer la sécurité et la conformité des données nuage pour votre entreprise.                                                                                                                                                                                                                                                                                                                                                | Téléchargement du livre blanc                                                           |                    |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

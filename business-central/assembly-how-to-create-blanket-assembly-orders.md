@@ -3,19 +3,19 @@ title: "Procédure : créer des ordres d'assemblage permanents | Microsoft Docs
 description: Créez des commandes permanentes ventes pour les éléments d'assemblage personnalisés avant d'effectuer régulièrement les documents de vente réels en fonction de l'entente commande permanente.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: kit, kitting
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: cdcc62b92e4fd8a080e3167c50efba1d1235c172
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 04/01/2021
+ms.author: edupont
+ms.openlocfilehash: a62d2b1d84d1139a0e5472d8e95f1c87f13bfa6c
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3186414"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6435479"
 ---
 # <a name="create-blanket-assembly-orders"></a>Création d'ordres d'assemblage permanents
 Vous pouvez utiliser la gestion d'assemblage pour personnaliser un élément d'assemblage sur la demande d'un client au cours du processus de vente. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).  
@@ -26,7 +26,7 @@ Vous pouvez utiliser la gestion d'assemblage pour personnaliser un élément d'a
 >  Comme toutes les commandes permanentes, les quantités des commandes permanentes d'assemblage ne sont que des prévisions et ne sont pas opérationnelles avant d'être converties en ordres d'assemblage réels. Par conséquent, la fonctionnalité commande, comme le calcul de disponibilité, la réservation et la traçabilité des articles, n'est pas active sur les ordres d'assemblage permanents.  
 
 ## <a name="to-create-a-blanket-assembly-order-for-an-assemble-to-order-item"></a>Pour créer un ordre d'assemblage permanent pour un article à assembler pour commande  
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Commandes permanentes ventes**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente permanents**, puis sélectionnez le lien associé.  
 2. Créez une commande permanente ventes avec une ligne pour un élément d'assemblage. Pour plus de détails, reportez-vous à la rubrique [Créer des commandes permanentes ventes](sales-how-to-create-blanket-sales-orders.md).  
 3. Dans le champ **Quantité à assembler pour commande** de la ligne d'ordre d'assemblage permanent, saisissez la quantité entière.
 
@@ -46,4 +46,7 @@ L'ordre d'assemblage permanent associé et toutes les personnalisations sont li�
 [Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

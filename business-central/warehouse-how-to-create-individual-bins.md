@@ -1,55 +1,62 @@
 ---
-title: 'Procédure : créer des zones | Microsoft Docs'
-description: La méthode la plus efficace pour créer les zones de votre entrepôt consiste à générer des groupes de zones identiques dans la feuille de création de zones, mais vous pouvez également créer vos zones séparément.
+title: Créer zones
+description: Générez des groupes de zones similaires dans la feuille de calcul prévue à cet effet, créez des zones individuellement sur la carte d’emplacement ou automatiquement sur la feuille de calcul de création des zones.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: fcb76f9f5cddba76983ff8d3dcbb92a2c08d09b5
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.search.form: 7368, 7369, 7370, 7371, 7372, 7373
+ms.date: 06/24/2021
+ms.author: edupont
+ms.openlocfilehash: b76c6aee2e986580d1c131688d87716e08d338f8
+ms.sourcegitcommit: 2ab6709741be16ca8029e2afadf19d28cf00fbc7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3193213"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7972603"
 ---
 # <a name="create-bins"></a>Créer zones
+
 La méthode la plus efficace pour créer les zones de votre entrepôt consiste à générer des groupes de zones identiques dans la feuille de création de zones, mais vous pouvez également créer vos zones séparément à partir de la fiche emplacement. Vous pouvez également utiliser une fonction de la page **Feuille création zone** pour créer des zones automatiquement.  
 
-## <a name="to-create-a-bin-from-the-location-card"></a>Pour créer une zone à partir de la fiche emplacement  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **emplacements**, puis sélectionnez le lien associé.  
+## <a name="to-create-a-bin-from-the-location-card"></a>Pour créer une zone à partir de la fiche emplacement
+
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
 2.  Sélectionnez l'emplacement à partir duquel vous souhaitez créer une zone, puis choisissez l'action **Zones**.  
 3. Sélectionnez l'action **Nouveau**.
 4. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 ### <a name="the-dedicated-field"></a>Le champ Réservé
-Le champ **Réservé** sur la page **Zones** indique que les quantités de la zone sont protégées des prélèvements d'autres demandes. Toutefois, les quantités des zones réservées peuvent encore être réservées. Par conséquent, les quantités figurant dans des zones réservées sont incluses dans le champ **Quantité totale disponible** de la page **Réservation**.
+
+Le champ **Réservé** sur la page **Zones** indique que les quantités de la zone sont protégées des prélèvements d’autres demandes. Toutefois, les quantités des zones réservées peuvent encore être réservées. Par conséquent, les quantités figurant dans des zones réservées sont incluses dans le champ **Quantité totale disponible** de la page **Réservation**.
 
 La réservation d'une zone est, dans l'entreposage de base, une fonctionnalité similaire à l'utilisation des types de zone, uniquement disponible dans l'entreposage avancé. Pour plus d'informations, voir [Configurer des types de zone](warehouse-how-to-set-up-bin-types.md).
 
-**Par exemple :** un atelier est configuré avec un code de zone dans le champ **Code zone avant production**. Les lignes composante bon de production présentant ce code de zone nécessitent que les composantes consommées en aval soient stockées à cet emplacement. Toutefois, jusqu'à la consommation des composantes de cette zone, d'autres demandes de composantes peuvent y effectuer un prélèvement ou une consommation, car elles sont encore considérées comme du contenu zone disponible. Pour vous assurer que le contenu de la zone est uniquement disponible pour la demande de composantes qui utilise cette zone avant production, vous devez sélectionner le champ **Réservé** sur la ligne de ce code de zone.
+### <a name="example"></a>Exemple :
+
+Un atelier est configuré avec un code de zone dans le champ **Code de zone avant production**. Les lignes composante bon de production présentant ce code de zone nécessitent que les composantes consommées en aval soient stockées à cet emplacement. Toutefois, jusqu'à la consommation des composantes de cette zone, d'autres demandes de composantes peuvent y effectuer un prélèvement ou une consommation, car elles sont encore considérées comme du contenu zone disponible. Pour vous assurer que le contenu de la zone est uniquement disponible pour la demande de composantes qui utilise cette zone avant production, vous devez sélectionner le champ **Réservé** sur la ligne de ce code de zone.
 
 > [!Caution]
 > Des articles dans des zones réservées ne sont pas protégés lorsqu'ils sont prélevés et consommés comme composantes d'assemblage ou de production sur la page **Prélèvement inventaire**. Pour plus d'informations, consultez [Prélever pour la fabrication ou l'assemblage dans les configurations de stockage de base](warehouse-how-to-pick-for-production.md).
 
-## <a name="to-create-bins-individually-in-the-bin-creation-worksheet"></a>Pour créer séparément des zones dans la feuille de création de zones  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille de création de zone**, puis sélectionnez le lien associé.  
+## <a name="to-create-bins-individually-in-the-bin-creation-worksheet"></a>Pour créer séparément des zones dans la feuille de création de zones
+
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille création zone**, et choisissez le lien associé.  
 2.  Sur chaque ligne, renseignez les champs requis pour nommer et caractériser les emplacements que vous créez.  
 3.  Choisissez l'action **Créer zones**.  
 
-## <a name="to-make-bins-automatically-in-the-bin-creation-worksheet"></a>Pour créer des zones automatiquement dans la feuille de création de zones  
+## <a name="to-make-bins-automatically-in-the-bin-creation-worksheet"></a>Pour créer des zones automatiquement dans la feuille de création de zones
+
 Avant de commencer à créer automatiquement des zones, déterminez les types de zone essentiels à vos opérations, ainsi que la circulation des articles la plus pratique dans la structure physique de votre entrepôt.  
 
 > [!NOTE]  
->  Dès que vous utilisez une zone, vous ne pouvez pas la supprimer sauf si elle est vide. En revanche, si vous souhaitez utiliser un autre système d'attribution de nom de zone, vous pouvez utiliser le journal reclassement pour déplacer effectivement vos articles vers un nouveau système de zones. Cependant, ce processus est manuel et prend du temps ; il est donc préférable de configurer correctement vos emplacements dès le début.  
+> Dès que vous utilisez une zone, vous ne pouvez pas la supprimer sauf si elle est vide. En revanche, si vous souhaitez utiliser un autre système d'attribution de nom de zone, vous pouvez utiliser le journal reclassement pour déplacer effectivement vos articles vers un nouveau système de zones. Cependant, ce processus est manuel et prend du temps ; il est donc préférable de configurer correctement vos emplacements dès le début.  
 
 Pour travailler avec la page **Feuille création zone**, vous devez être configuré comme employé d'entrepôt à l'emplacement où les zones existent. Pour plus d'informations, voir [Configurer des employés d'entrepôt](warehouse-how-to-set-up-warehouse-employees.md).    
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille de création de zone**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille de création de zone**, et choisissez le lien associé.  
 2.  Choisissez l'action **Calculer zones**.
 3. Sur la page **Calculer zones**, sous **Code modèle zone**, sélectionnez le modèle zone à utiliser comme modèle pour les zones que vous créez.
 4.  Saisissez une description pour les emplacements que vous êtes en train de créer.  
@@ -70,10 +77,14 @@ Pour travailler avec la page **Feuille création zone**, vous devez être config
 
 Répétez l'opération pour un autre ensemble d'emplacements jusqu'à ce que vous ayez créé tous les emplacements de votre entrepôt.  
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
+
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  
 [Stock](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

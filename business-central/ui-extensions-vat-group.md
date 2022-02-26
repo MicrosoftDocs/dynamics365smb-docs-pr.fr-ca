@@ -8,11 +8,16 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms. search.keywords: 'VAT, value added tax, report'
+ms. search.keywords: VAT, value added tax, report
 ms.date: 04/01/2021
 ms.author: bholtorf
+ms.openlocfilehash: 7148fa8e59a509af3206e7da898a371ffb5332a5
+ms.sourcegitcommit: 66c78f6f04bfca6c0794b3299241ed65037b1c08
+ms.translationtype: HT
+ms.contentlocale: fr-CA
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "8029150"
 ---
-
 # <a name="the-vat-group-management-extension"></a>Extension de gestion du groupe TVA
 
 Vous pouvez rejoindre une ou plusieurs entreprises de votre pays pour consolider la déclaration de TVA sous un numéro d’enregistrement unique. Ce type d’arrangement est connu sous le nom de *Groupe TVA*. Vous pouvez vous engager avec le groupe en tant que membre ou société représentante du groupe.

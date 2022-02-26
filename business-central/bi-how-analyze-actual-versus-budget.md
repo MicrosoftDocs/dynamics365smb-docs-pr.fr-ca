@@ -1,33 +1,31 @@
 ---
-title: Analyse des montants réalisés et des montants budgétés| Microsoft Docs
-description: Décrit comment analyser les montants réalisés et les montants budgétés.
-services: project-madeira
-documentationcenter: ''
+title: Analyser les montants réalisés et les montants budgétés
+description: Cette rubrique explique comment analyser les montants réels par rapport aux montants budgétés afin de collecter, d’analyser et de partager les données de votre compagnie.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: bi, power BI, analysis, KPI
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 32680efab7168ade5c8feca4cb69a37687da708b
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 06/15/2021
+ms.author: edupont
+ms.openlocfilehash: 2bbdce7c34160ffc1eefc7e398574db8b642b657
+ms.sourcegitcommit: 769d20d299155cba30c35636d02b2ef021e4ecc1
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3186126"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "6688288"
 ---
 # <a name="analyze-actual-amounts-versus-budgeted-amounts"></a>Analyser les montants réalisés et les montants budgétés
 Dans le cadre de la collecte, de l'analyse et du partage des données de votre compagnie, vous voyez les montants réels comparés aux montants budgétés de tous les comptes et pour plusieurs périodes.
 
-Pour analyser les montants budgétés, vous devez d'abord créer des budgets comptabilité. Pour plus d'informations, voir [Créer des budgets GL](finance-how-create-budgets.md).
+Pour analyser les montants budgétés, vous devez d’abord créer des budgets grand livre. Pour plus d'informations, voir [Créer des budgets GL](finance-how-create-budgets.md).
 
 ## <a name="to-view-a-gl-budget"></a>Pour visualiser un budget GL
 Dans un budget doté d'axes, vous pouvez filtrer les écritures et visualiser des budgets spécifiques.
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Budgets grand livre**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Budgets GL**, puis choisissez le lien associé.
 2. Sur la page **Budgets GL**, ouvrez le budget que vous souhaitez visualiser.  
 3. En haut de la page, renseignez les champs nécessaires pour définir ce qui est affiché. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
@@ -41,9 +39,9 @@ Dans un budget doté d'axes, vous pouvez filtrer les écritures et visualiser de
 >   Si vous souhaitez modifier le budget, vous pouvez modifier les écritures budget. Choisissez un montant pour afficher les écritures budget sous-jacentes.
 
 ## <a name="to-view-actual-and-budgeted-amounts-for-all-accounts"></a>Pour afficher les montants budgétés et réalisés de tous les comptes  
-Vous pouvez afficher des budgets et les comparer aux chiffres réels dans différents modules de [!INCLUDE[d365fin](includes/d365fin_md.md)].
+Vous pouvez afficher des budgets et les comparer aux chiffres réels dans différents modules de [!INCLUDE[prod_short](includes/prod_short.md)].
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.  
 2. Sur la page **Plan comptable**, choisissez l'action **Solde/budget du grand livre**.
 3. En haut de la page, renseignez les champs nécessaires pour définir ce qui est affiché.  
 4. Pour voir le détail d'un montant affiché, sélectionnez ce champ.  
@@ -59,7 +57,7 @@ Les colonnes les plus à gauche contiennent le plan comptable. Sur les cinq colo
 ## <a name="to-view-actual-and-budgeted-amounts-for-several-periods"></a>Pour afficher les montants budgétés et réalisés de plusieurs périodes  
 Au lieu de visualiser les montants budgétés et réalisés de tous les comptes au sein d'une seule période, vous pouvez afficher un certain nombre de périodes pour un seul compte.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.  
 2. Sur la page **Plan comptable**, sélectionnez le compte GL approprié, puis choisissez l'action **Solde/budget de compte du grand livre**.  
 3. En haut de la page, renseignez les champs nécessaires pour définir ce qui est affiché.   
 4. Pour voir le détail d'un montant affiché, sélectionnez ce champ.  
@@ -72,4 +70,7 @@ Au lieu de visualiser les montants budgétés et réalisés de tous les comptes 
 [Finance](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 [Le grand livre et le plan comptable](finance-general-ledger.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

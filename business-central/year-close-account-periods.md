@@ -1,29 +1,30 @@
 ---
-title: Fermer des périodes comptables pour un exercice financier | Microsoft Docs
-description: Décrit comment fermer les périodes comptables de l'exercice financier.
-services: project-madeira
-documentationcenter: ''
+title: Fermer des périodes comptables pour un exercice financier
+description: Cet article décrit comment fermer les périodes comptables de l’exercice financier comptable pour la fermeture de l’exercice.
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: year closing, close accounting period, close fiscal year, bank account detailed trial balance
-ms.date: 10/01/2019
+ms.search.form: 100
+ms.date: 06/25/2021
 ms.author: jswymer
-ms.openlocfilehash: ba6cd85d50f9d2b4d98fb45cbd38bcc57e08e3a2
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.openlocfilehash: 44f7b577855f1df9967fd59bee5148d9ec06d087
+ms.sourcegitcommit: 2ab6709741be16ca8029e2afadf19d28cf00fbc7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2313818"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7973742"
 ---
 # <a name="close-accounting-periods"></a>Fermer des périodes comptables
+
 Lorsqu'un exercice financier est terminé, vous devez fermer les périodes qui le composent.
 
 ## <a name="to-close-accounting-periods"></a>Pour fermer des périodes comptables
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Périodes comptables**, puis sélectionnez le lien associé.
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Périodes comptables**, puis sélectionnez le lien associé.
 2. Sur la page **Périodes comptables**, sélectionnez l'action **Fermer exercice**.
 
     Si plusieurs exercices financiers sont ouverts, le plus ancien est automatiquement sélectionné pour la fermeture. Un message identifiant l'exercice qu'il compte fermer s'affiche et indique les conséquences de la fermeture.
@@ -32,14 +33,18 @@ Lorsqu'un exercice financier est terminé, vous devez fermer les périodes qui l
 L'exercice comptable est désormais clôturé, et les champs **Fermé** et **Verrouillage date** sont sélectionnés pour toutes les périodes de l'exercice. Vous ne pouvez pas rouvrir l'exercice comptable ni supprimer la coche des champs **Fermé** et **Verrouillage date**.
 
 > [!NOTE]  
->   Vous ne pouvez pas fermer un exercice financier avant d'en avoir créé un nouveau. Sachez que lorsqu'un exercice financier est fermé, vous ne pouvez pas modifier la date début de l'exercice financier suivant.
+> Vous ne pouvez pas fermer un exercice financier avant d'en avoir créé un nouveau. Sachez que lorsqu'un exercice financier est fermé, vous ne pouvez pas modifier la date début de l'exercice financier suivant.
 
 Même si un exercice financier a été fermé, vous pouvez toujours y reporter des écritures. Dans ce cas, les écritures sont marquées comme validées dans un exercice comptable clôturé et le champ **Ecr. exercice précédent** est activé.
 
 Une fois qu'un exercice financier a été fermé, vous devez fermer les comptes d'état des résultats et transférer les résultats de l'exercice sur un compte du bilan. Vous pouvez répéter cette opération chaque fois que vous effectuez un report dans l'exercice financier fermé.
 
 ## <a name="see-also"></a>Voir aussi
+
 [Clôture plans](year-close-books.md)  
 [Reporter l'écriture de fermeture d'exercice](year-how-post-year-end-close-entry.md)  
-[Ouvrir un nouvel exercice financier](finance-how-open-new-fiscal-year.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utiliser des périodes et exercices financiers comptables](finance-accounting-periods-and-fiscal-years.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

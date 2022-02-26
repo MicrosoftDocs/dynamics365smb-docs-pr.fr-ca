@@ -1,21 +1,21 @@
 ---
-title: Détails de conception - Flux d'enlogement entrant | Microsoft Docs
-description: Le flux entrant dans un entrepôt commence à l'arrivée des articles dans l'entrepôt de l'emplacement de la compagnie, qu'ils proviennent de sources externes ou d'un autre emplacement de la compagnie. Un employé enregistre les articles, généralement en numérisant un code barre. Depuis le quai de réception, des activités entrepôt sont effectuées à différents niveaux de complexité pour amener les articles dans la zone de stockage.
+title: 'Détails de conception : flux d’enlogement'
+description: Le flux d’enlogement commence lorsque les articles arrivent à l’emplacement de la compagnie d’entrepôt. Les éléments sont enregistrés et éventuellement mis en correspondance avec les documents source entrants.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 1a20981117fd92751fd9890c8db6feda6120eab8
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 06/15/2021
+ms.author: edupont
+ms.openlocfilehash: a3a300deaaf4b64e7f26e34168ff1f69b72e90de
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3185430"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6441783"
 ---
 # <a name="design-details-inbound-warehouse-flow"></a>Détails de conception : flux d'enlogement
 Le flux entrant dans un entrepôt commence à l'arrivée des articles dans l'entrepôt de l'emplacement de la compagnie, qu'ils proviennent de sources externes ou d'un autre emplacement de la compagnie. Un employé enregistre les articles, généralement en numérisant un code barre. Depuis le quai de réception, des activités entrepôt sont effectuées à différents niveaux de complexité pour amener les articles dans la zone de stockage.  
@@ -35,7 +35,7 @@ Les deux derniers représentent les flux entrants dans l'entrepôt en provenance
 
 Les processus et les documents de l'interface utilisateur dans les flux d'enlogement sont différents pour les configurations d'entrepôt de base et avancées. La principale différence est que les activités sont effectuées par commande dans les configurations d'entrepôt de base, et qu'elles sont regroupées pour plusieurs commandes dans les configurations d'entrepôt avancées. Pour plus d'informations sur les différents niveaux de complexité entrepôt, consultez et [Détails de conception : vue d'ensemble d'entrepôt](design-details-warehouse-setup.md).  
 
-Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], les processus entrants de réception et de rangement peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.  
+Dans [!INCLUDE[prod_short](includes/prod_short.md)], les processus entrants de réception et de rangement peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.  
 
 |Méthode|Processus entrant|Zones|Reçus|Rangements|Niveau de complexité (Voir [Détails de conception : configuration d'entrepôt](design-details-warehouse-setup.md))|  
 |------------|---------------------|----------|--------------|----------------|--------------------------------------------------------------------------------------------------------------------|  
@@ -51,7 +51,7 @@ Dans les méthodes A, B et C, les tâches de réception et de rangement sont com
 ## <a name="basic-warehouse-configurations"></a>Configurations d'entrepôt de base  
 Le schéma suivant présente les flux d'enlogement par type de document dans les configurations d'entrepôt de base. Les numéros dans le schéma correspondent aux étapes dans les sections suivant le schéma.  
 
-![Flux entrant dans les configurations d'entrepôt de base](media/design_details_warehouse_management_inbound_basic_flow.png "Flux entrant dans les configurations d'entrepôt de base")  
+![Flux entrant dans les configurations d’entrepôt de base.](media/design_details_warehouse_management_inbound_basic_flow.png "Flux entrant dans les configurations d'entrepôt de base")  
 
 ### <a name="1-release-source-document--create-inventory-put-away"></a>1 : Libérer le document source / Créer un rangement inventaire  
 Lorsque les articles sont réceptionnés dans l'entrepôt, l'utilisateur qui est responsable de la réception émet le document d'origine, comme un bon de commande ou un ordre de transfert entrant, pour signaler aux magasiniers que les articles reçus peuvent être rangés dans l'inventaire. Sinon, l'utilisateur crée des documents rangement inventaire pour des lignes commande individuelles, par déplacement, selon les zones spécifiées et les quantités à traiter.  
@@ -70,7 +70,7 @@ Des écritures article positives sont créées, des écritures entrepôt sont cr
 ## <a name="advanced-warehouse-configurations"></a>Configurations d'entrepôt avancées  
 Le schéma suivant présente le flux d'enlogement par type de document dans les configurations d'entrepôt avancées. Les numéros dans le schéma correspondent aux étapes dans les sections suivant le schéma.  
 
-![Flux entrant dans les configurations d'entrepôt avancées](media/design_details_warehouse_management_inbound_advanced_flow.png "Flux entrant dans les configurations d'entrepôt avancées")  
+![Flux entrant dans les configurations d’entrepôt avancées.](media/design_details_warehouse_management_inbound_advanced_flow.png "Flux entrant dans les configurations d'entrepôt avancées")  
 
 ### <a name="1-release-source-document"></a>1 : Libérez le document origine  
 Lorsque les articles sont réceptionnés dans l'entrepôt, l'utilisateur qui est responsable de la réception émet le document d'origine, comme un bon de commande ou un ordre de transfert entrant, pour signaler aux magasiniers que les articles reçus peuvent être rangés dans l'inventaire.  
@@ -110,3 +110,6 @@ Les écritures d'entrepôt sont créées, et les lignes de stockage en entrepôt
 
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

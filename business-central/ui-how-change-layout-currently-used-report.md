@@ -1,25 +1,25 @@
 ---
-title: Modifier l'aspect d'un rapport en sélectionnant une présentation différente | Microsoft Docs
+title: Modifier l’aspect d’un rapport en sélectionnant une disposition différente
 description: Vous pouvez utiliser différentes présentations d'un rapport, et passer d'une présentation à l'autre pour modifier l'aspect d'un rapport.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: customized report, document layout, logo, personalize
-ms.date: 01/13/2020
-ms.author: sgroespe
-ms.openlocfilehash: b6c11e58694e68918ab5f4d5bd48bd7a43beb8f1
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.search.form: 9652, 9650
+ms.date: 04/01/2021
+ms.author: edupont
+ms.openlocfilehash: a5115407dd7cfbb8760a5749432ca6fc37f9f933
+ms.sourcegitcommit: f4b32ba1f926a2a712400c36305616f320757723
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2953261"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8101091"
 ---
 # <a name="change-the-current-report-layout"></a>Modifier la présentation actuelle du rapport
+
 Un rapport peut être créé avec plus d'une présentation de rapport, que vous pouvez ensuite changer au besoin.
 
 Selon les présentations qui sont disponibles pour un rapport, vous pouvez choisir d'utiliser une présentation de rapport RDLC intégrée, une présentation de rapport Word, ou une présentation personnalisée. Pour plus d'informations sur les présentations de rapport RDLC et Word, les présentations intégrées et personnalisées, et plus encore, reportez-vous à [Gérer la présentation des états](ui-manage-report-layouts.md).
@@ -30,7 +30,8 @@ Lorsque des présentations de rapport personnalisées sont définies, vous pouve
 > Les rapports de document (pas les listes) qui utilisent une mise en page de rapport Word sont généralement plus rapides que ceux qui utilisent une mise en page de rapport RDLC. Ainsi, si vous avez la possibilité de choisir entre une mise en page de rapport Word ou RDLC pour un rapport de document, utilisez la mise en page de rapport Word pour de meilleures performances.
 
 ## <a name="to-change-which-report-layout-to-use-for-a-report-or-document"></a>Pour modifier la présentation de rapport à utiliser pour un rapport ou un document
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Sélection de présentation de rapport**, puis sélectionnez le lien associé.  
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Sélection présentation rapport**, puis sélectionnez le lien associé.  
    La page **Sélection de présentation de rapport** répertorie tous les rapports disponibles pour la compagnie spécifiée dans le champ **Compagnie** en haut de la page. Le champ **Présentation sélectionnée** spécifie la présentation qui est actuellement utilisée sur le rapport.
 2. Définissez le champ **Compagnie** en haut de la page sur la compagnie qui inclut le rapport.
 3. Pour modifier la présentation utilisée par un rapport, sur la ligne correspondant au rapport, définissez le champ **Présentation sélectionnée** sur l'une des options suivantes :
@@ -59,4 +60,7 @@ Vous pouvez maintenant accéder à vos fiches client et fournisseur pour spécif
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion des présentations de rapport](ui-manage-report-layouts.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

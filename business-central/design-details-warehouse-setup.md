@@ -1,44 +1,46 @@
 ---
-title: Détails de conception - Configuration d'entrepôt | Microsoft Docs
-description: La fonctionnalité d'entrepôt dans Business Central contient différents niveaux de complexité, tels que définis par les autorisations de licence dans les granules proposés. Le niveau de complexité dans une solution entrepôt est en grande partie défini par la configuration des zones sur les fiches emplacement, qui est lui-même contrôlé par licence afin que l'accès aux champs de configuration des zones soit défini par la licence.
+title: Détails de conception - Configuration entrepôt
+description: La fonctionnalité d’entrepôt contient différents niveaux de complexité, qui sont largement définis par la configuration des zones sur les cartes d’emplacement.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/04/2020
-ms.author: sgroespe
-ms.openlocfilehash: cd2a282e95e324e3adbf06cb72c53467f63c227b
-ms.sourcegitcommit: ccae3ff6aaeaa52db9d6456042acdede19fb9f7b
+ms.date: 06/15/2021
+ms.author: edupont
+ms.openlocfilehash: c0559ef10dd8051b64d919b8a27d3af11cce2819
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435241"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6325170"
 ---
 # <a name="design-details-warehouse-setup"></a>Détails de conception : paramètres entrepôt
 
-La fonctionnalité d'entrepôt dans [!INCLUDE[d365fin](includes/d365fin_md.md)] contient différents niveaux de complexité, tels que définis par les autorisations de licence dans les granules proposés. Le niveau de complexité dans une solution entrepôt est en grande partie défini par la configuration des zones sur les fiches emplacement, qui est lui-même contrôlé par licence afin que l'accès aux champs de configuration des zones soit défini par la licence. En outre, les objets d'application de la licence déterminent le document d'interface utilisateur à utiliser pour les activités entrepôt prises en charge.  
+La fonctionnalité d'entrepôt dans [!INCLUDE[prod_short](includes/prod_short.md)] contient différents niveaux de complexité, tels que définis par les autorisations de licence dans les granules proposés. Le niveau de complexité dans une solution entrepôt est en grande partie défini par la configuration des zones sur les fiches emplacement, qui est lui-même contrôlé par licence afin que l'accès aux champs de configuration des zones soit défini par la licence. En outre, les objets d'application de la licence déterminent le document d'interface utilisateur à utiliser pour les activités entrepôt prises en charge.  
+<!--
+The following warehouse-related granules exist:  
 
-Les granules liés à l'entrepôt suivants existent :  
+- Basic Inventory (4010)  
+- Bin (4170)  
+- Put Away (4180)  
+- Warehouse Receipt (4190)  
+- Pick (4200)  
+- Warehouse Shipment (4210)  
+- Warehouse Management Systems (4620)  
+- Internal Picks and Put-aways (4630)  
+- Automated Data Capture System (4640)
+- Bin Setup (4660)  
 
-- Inventaire de base (4010)  
-- Zone (4170)  
-- Rangement (4180)  
-- Réception entrepôt (4190)  
-- Prélever (4200)  
-- Livraison entrepôt (4210)  
-- Systèmes de gestion d'entrepôt (4620)  
-- Prélèvements internes et rangements internes (4630)  
-- Système ADCS (4640)
-- Configuration zone (4660)  
+For more information about each granule, see [[!INCLUDE[prod_short](includes/prod_short.md)] Price Sheets](https://go.microsoft.com/fwlink/?LinkId=238341) (requires PartnerSource account). -->
 
-Pour plus d'informations sur chaque granule, voir [Feuilles de prix [!INCLUDE[d365fin](includes/d365fin_md.md)]](https://go.microsoft.com/fwlink/?LinkId=238341) (requiert un compte PartnerSource).  
+Le tableau suivant indique les granules requis pour définir les différents niveaux de complexité entrepôt, les documents de l'interface utilisateur qui prennent en charge chaque niveau et les codes d'emplacement qui reflètent ces niveaux dans la base de données de démonstration [!INCLUDE[prod_short](includes/prod_short.md)].  
 
-Le tableau suivant indique les granules requis pour définir les différents niveaux de complexité entrepôt, les documents de l'interface utilisateur qui prennent en charge chaque niveau et les codes d'emplacement qui reflètent ces niveaux dans la base de données de démonstration [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+[!INCLUDE [locations-cronus](includes/locations-cronus.md)]
 
-|Niveau de complexité|Description|Document d'interface utilisateur|Emplacement CRONUS|Granule minimum requis|  
+|Niveau de complexité|Description|Document d'interface utilisateur|Exemple d’emplacement|Granule minimum requis|  
 |----------------|-----------|-----------|---------------|---------------------------|  
 |1|Aucune activité entrepôt dédiée.<br /><br /> Report recevoir/livrer à partir des commandes.|Ordre|BLEU|Inventaire de base|  
 |2|Aucune activité entrepôt dédiée.<br /><br /> Report recevoir/livrer à partir des commandes.<br /><br /> Le code de zone est requis.|Commande, avec un code de zone|ARGENTE|Inventaire de base/Zone|  
@@ -51,7 +53,7 @@ Pour des exemples d'utilisation des documents de l'interface utilisateur par niv
 
 ## <a name="bin-and-bin-content"></a>Zone et contenu de la zone
 
-Une zone est un dispositif de stockage conçu pour contenir des éléments distincts. Il s'agit de la plus petite unité de conteneur dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. Les quantités d'articles dans des zones sont appelées contenu de la zone. Une recherche à partir du champ **Article** ou du champ **Code de zone** dans n'importe quelle ligne de document entrepôt affiche la disponibilité calculée de l'article dans la zone.  
+Une zone est un dispositif de stockage conçu pour contenir des éléments distincts. Il s'agit de la plus petite unité de conteneur dans [!INCLUDE[prod_short](includes/prod_short.md)]. Les quantités d'articles dans des zones sont appelées contenu de la zone. Une recherche à partir du champ **Article** ou du champ **Code de zone** dans n'importe quelle ligne de document entrepôt affiche la disponibilité calculée de l'article dans la zone.  
 
 Le contenu de la zone peut se voir affecter une propriété fixe, dédiée ou par défaut, pour définir la manière dont le contenu de la zone peut être utilisé. Les zones sans aucune de ces propriétés sont appelées zones dynamiques.  
 
@@ -102,7 +104,7 @@ Si vous souhaitez définir une quantité maximum pour un article spécifique à 
 Avant de paramétrer des restrictions de capacité pour le contenu de la zone dans une zone, vous devez d'abord vous assurer que les unités de mesure et les dimensions de l'article ont été définies dans la fiche article.  
 
 > [!NOTE]  
-> Il est possible d'utiliser plusieurs unités dans les installations WMS. Dans toutes les autres configurations, les contenus de la zone ne peuvent être que dans l'unité de mesure de base. Dans toutes les transactions avec une unité supérieure à l'unité de base de l'article, la quantité est transformée en unité de base.  
+> Il est possible d'utiliser plusieurs unités dans les installations WMS. Dans toutes les autres configurations, les contenus de la zone ne peuvent être que dans l'unité de mesure de base. Dans toutes les transactions avec une unité supérieure à l’unité de base de l’article, la quantité est transformée en unité de base.  
 
 ## <a name="zone"></a>Zone
 
@@ -139,3 +141,6 @@ Le modèle rangement peut être affecté à un article et à un emplacement. Le 
 
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)   
 [Détails de conception : disponibilité dans l'entrepôt](design-details-availability-in-the-warehouse.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,21 +1,21 @@
 ---
-title: Importation et exportation d'une présentation de rapport et de document | Microsoft Docs
+title: Importer et exporter une disposition de rapport et de document
 description: Vous pouvez importer et exporter une présentation de rapport personnalisée existante sous forme de fichier depuis ou vers un emplacement sur votre ordinateur et le réseau.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
-ms.date: 01/13/2020
-ms.author: sgroespe
-ms.openlocfilehash: 8ec498030368aa2e6378068c88910b787c3632f8
-ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
+ms.search.form: 9652, 9650
+ms.date: 04/01/2021
+ms.author: edupont
+ms.openlocfilehash: cb929e1e18d6e0711fd23ae12255220fdae1080d
+ms.sourcegitcommit: f4b32ba1f926a2a712400c36305616f320757723
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "2954066"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8101357"
 ---
 # <a name="import-and-export-custom-report-layouts"></a>Importer et exporter des présentations de rapport personnalisées
 Vous pouvez importer et exporter une présentation de rapport personnalisée existante sous forme de fichier depuis ou vers un emplacement sur votre ordinateur et le réseau. Par exemple, vous pouvez exporter une présentation de rapport, puis envoyer le fichier à une autre personne pour modification. Cette personne peut ensuite apporter des modifications à la présentation et vous renvoyer le fichier pour que vous puissiez le réimporter.  
@@ -25,7 +25,7 @@ Vous pouvez importer et exporter une présentation de rapport personnalisée exi
 
 ### <a name="to-export-a-report-layout-to-a-file"></a>Pour exporter une présentation de rapport vers un fichier  
 
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Sélection de présentation de rapport**, puis sélectionnez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Sélection présentation rapport**, puis sélectionnez le lien associé.  
 
 2.  Sélectionnez la ligne du rapport qui contient la présentation de rapport personnalisée à exporter, puis choisissez l'action **Présentations personnalisées**.  
 
@@ -39,7 +39,7 @@ Vous pouvez importer et exporter une présentation de rapport personnalisée exi
 
      Un fichier de présentation de rapport Word doit avoir une extension de type .docx. Un fichier de présentation de rapport RDLC doit avoir une extension de type .rdlc ou .rdl.  
 
-2.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Sélection de présentation de rapport**, puis sélectionnez le lien associé.  
+2.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Sélection présentation rapport**, puis sélectionnez le lien associé.  
 
 3.  Sélectionnez la ligne du rapport vers lequel vous souhaitez importer la présentation de rapport, puis choisissez l'action **Présentations personnalisées**.  
 
@@ -51,7 +51,11 @@ Vous pouvez importer et exporter une présentation de rapport personnalisée exi
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/change-documents-dynamics-365-business-central/index)
 
-## <a name="see-also"></a>Voir aussi  
- [Créer et modifier une présentation de rapport personnalisée](ui-how-create-custom-report-layout.md)   
- [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md)  
- [Utilisation des rapports, des traitements en lot et des objets XMLport](ui-work-report.md)    
+## <a name="see-also"></a>Voir aussi
+
+[Créer et modifier une présentation de rapport personnalisée](ui-how-create-custom-report-layout.md)   
+[Gestion des présentations de rapport et de document](ui-manage-report-layouts.md)  
+[Utilisation des rapports, des traitements en lot et des objets XMLport](ui-work-report.md)    
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

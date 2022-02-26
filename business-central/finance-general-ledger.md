@@ -1,25 +1,26 @@
 ---
-title: En savoir plus sur le grand livre et le COA| Microsoft Docs
-description: Décrit le grand livre, le plan comptable, et les catégories de compte.
+title: Familiarisation avec le Grand livre et les COA
+description: Décrit le grand livre, la chartes de comptes et les catégories de compte. Utilisez la page Configuration du grand livre pour préciser la gestion des problèmes comptables dans votre compagnie.
 author: edupont04
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: analysis, history, track
-ms.date: 05/12/2020
+ms.search.form: 18, 20, 37, 65, 99, 312, 313, 395, 552, 569, 570, 634, 790, 791, 1158
+ms.date: 12/03/2021
 ms.author: edupont
-ms.openlocfilehash: 098317d09a5ad8c3792de48e5332b4c247eff0e0
-ms.sourcegitcommit: b9264b4ed650feca18776892ec23f2aa7ec43e20
+ms.openlocfilehash: 98aca02ceba638b65849ff8218bafe07be2190db
+ms.sourcegitcommit: 2ab6709741be16ca8029e2afadf19d28cf00fbc7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3372553"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7973077"
 ---
-# <a name="understanding-the-general-ledger-and-the-coa"></a>Familiarisation avec le grand livre et les COA
+# <a name="understanding-the-general-ledger-and-the-chart-of-accounts"></a>Comprendre le grand livre et le plan comptable
 
-Le grand livre stocke vos données financières, et le plan comptable affiche les comptes sur lesquels toutes les écritures sont reportées. [!INCLUDE[d365fin](includes/d365fin_md.md)] inclut un plan comptable standard prêt à prendre en charge votre société.
+Le grand livre stocke vos données financières, et le plan comptable affiche les comptes sur lesquels toutes les écritures sont reportées. [!INCLUDE[prod_short](includes/prod_short.md)] inclut un plan comptable standard prêt à prendre en charge votre société.
 
 ## <a name="general-ledger-setup-and-general-posting-setup"></a>Configuration du grand livre et configuration du report général
 
@@ -31,10 +32,13 @@ Sur la page **Configuration du grand livre**, vous spécifiez comment gérer cer
 * Les formats d'adresse  
 * Rapports financiers  
 
-De même, sur la page **Configuration du report général**, vous spécifiez comment vous souhaitez configurer les combinaisons de groupes de report général marché et de report général produit. Les groupes comptabilisation mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes généraux. Saisissez une ligne pour chaque combinaison de groupes de report marché et de groupes de report produit. Pour plus d'informations, voir [Configurations du groupe de report](finance-posting-groups.md).  
-
 > [!TIP]
 > La page **Configuration du grand livre** comprend des champs génériques et des champs spécifiques à votre pays ou région. Si vous n'êtes pas sûr de la signification d'un champ, nous vous suggérons de travailler avec votre comptable pour déterminer s'il est pertinent pour votre organisation.  
+
+De même, sur la page **Configuration du report général**, vous spécifiez comment vous souhaitez configurer les combinaisons de groupes de report général marché et de report général produit. Les groupes comptabilisation mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes généraux. Saisissez une ligne pour chaque combinaison de groupes de report marché et de groupes de report produit. Mais vous pouvez également ouvrir chaque ligne dans sa propre fiche configuration report. Pour plus d'informations, voir [Configurations du groupe de report](finance-posting-groups.md).  
+
+> [!TIP]
+> Si vous ne pouvez pas voir les champs que vous recherchez sur la page **Configuration du report général**, utilisez la barre de défilement horizontale au bas de la page pour faire défiler l’affichage vers la droite.  
 
 ## <a name="the-chart-of-accounts"></a>Le plan comptable
 
@@ -42,7 +46,7 @@ Le plan comptable affiche tous les comptes généraux. Vous pouvez effectuer les
 
 * Afficher les rapports qui affichent les écritures et les soldes.  
 * Fermez votre état des résultats.  
-* Ouvrir la fiche compte du grand livre pour ajouter ou modifier des paramètres.  
+* Ouvrez la fiche compte général pour ajouter ou modifier des paramètres.  
 * Consulter la liste des groupes de report qui effectuent les reports vers ce compte.
 * Afficher les soldes débit et crédit d'un seul compte  
 
@@ -52,22 +56,39 @@ Vous pouvez ajouter, modifier ou supprimer des comptes généraux. Toutefois, po
 
 Vous pouvez personnaliser la structure de vos états financiers en mappant les comptes généraux aux catégories de comptes.  
 
-La page **Catégories de compte du grand livre** affiche vos catégories et sous-catégories et les comptes du grand livre qui leur sont affectés. Vous pouvez créer des sous-catégories et affecter ces catégories à des comptes existants.  
+La page **Catégories de compte du grand livre** affiche vos catégories et sous-catégories et les comptes GL qui leur sont affectés. Vous pouvez créer des sous-catégories et affecter ces catégories à des comptes existants.  
 
 Vous créez un groupe des catégories en effectuant un décalage d'autres sous-catégories sous une ligne de la page **Catégories de compte du grand livre**. Cela vous facilite l'obtention d'une vue d'ensemble, car chaque groupement affiche un solde total. Par exemple, vous pouvez créer des sous-catégories pour différents types d'actifs puis créer des groupes des catégories pour différencier les immobilisations des actifs à court terme, par exemple.  
 
 Vous pouvez spécifier si les comptes de chaque sous-catégorie doivent être inclus dans des types spécifiques d'états. Les catégories de compte vous aident à définir la présentation de vos états financiers.  
 
-Par exemple, le solde relevé par défaut solde est doté d'une sous-catégorie pour la trésorerie dans Actifs à court terme. Si vous souhaitez que le solde relevé tienne compte du fonds de caisse et du compte chèque, vous pouvez :  
+### <a name="example"></a>Exemple :
 
-1. Ajouter deux nouvelles sous-catégories. Une pour le fonds de caisse, et l'autre pour le compte chèque  
+Par exemple, le solde relevé par défaut solde est doté d’une sous-catégorie pour la *trésorerie* dans *Actifs à court terme*. Vous souhaitez que le solde relevé tienne compte du fonds de caisse et du compte chèque, vous pouvez donc procéder comme suit :  
+
+1. Ajouter deux nouvelles sous-catégories. :
+
+    * Une pour le fonds de caisse  
+    * Une pour votre compte courant  
 2. Spécifier la définition d'état supplémentaire **Comptes de trésorerie** pour ces sous-catégories.  
 3. Effectuer une indentation sous la sous-catégorie **Trésorerie**.  
 
-À la prochaine génération des tableaux d'analyse, votre relevé solde suivant affichera un solde total pour la trésorerie et deux lignes avec les soldes pour le fonds de caisse et le compte chèque.  
+À la prochaine génération des tableaux d’analyse, votre relevé solde suivant affichera un solde total pour l’argent comptant et deux lignes avec les soldes pour le fonds de caisse et le compte chèque.  
+
+## <a name="getting-a-quick-overview"></a>Obtenir un aperçu rapide
+
+La page Plan comptable affiche les comptes dans une liste hiérarchique qui offre un accès rapide aux informations clés pour chaque compte. Cependant, la liste est statique et si vous avez beaucoup de comptes, vous devrez peut-être défiler quelque peu pour afficher les informations de différents comptes. Si vous souhaitez simplement un aperçu rapide des éléments de base, tels que les variations nettes et les soldes, la page **Vue d’ensemble du plan comptable** est une alternative utile. La disposition des colonnes sur la page est désormais la même que celle que vous trouverez sur la page Plan comptable (il y en a juste moins) ; vous n’aurez donc pas à vous réorienter et vous pourrez développer ou réduire les niveaux hiérarchiques pour condenser la vue. Pour faciliter le passage d’une page à l’autre, la page **Vue d’ensemble du plan comptable** est disponible à partir de la page Plan comptable.
+
+## <a name="access-to-create-and-edit-accounts-and-account-categories"></a>Accès pour créer et modifier des comptes et des catégories de comptes
+
+Dans une petite organisation, comme la compagnie de démonstration CRONUS, la plupart des utilisateurs peuvent modifier la chartes de comptes, à l’exception des utilisateurs disposant d’une licence MEMBRE D’ÉQUIPE. Cependant, dans les grandes organisations, l’accès pour modifier le plan comptable est limité selon les rôles et les autorisations. Si vous êtes administrateur ou si vous avez le rôle de *Chef d’entreprise* ou de *Comptable*, vous pouvez vérifier les autorisations de tous les utilisateurs pour vous assurer que les bonnes personnes ont accès aux tables pertinentes. Pour plus d'informations, voir [Pour afficher ou modifier les autorisations d'un utilisateur](ui-define-granular-permissions.md#to-get-an-overview-of-a-users-permissions).  
 
 ## <a name="see-also"></a>Voir aussi
 
-[Finances](finance.md)  
+[Finance](finance.md)  
 [Configuration ou modification du plan comptable](finance-setup-chart-accounts.md)  
 [Veille économique](bi.md)  
+[Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

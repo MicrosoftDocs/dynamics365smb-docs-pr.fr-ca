@@ -3,24 +3,24 @@ title: Mappage de champs lors de l'importation de fichiers SEPA CAMT | Microsoft
 description: Dans les marchés européens, vous pouvez importer des fichiers de relevé bancaire selon les normes régionales SEPA (Espace unique de paiement en euros).
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 0ddc987b1dd27cf2379b128aa735a78bacb868da
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 04/01/2021
+ms.author: edupont
+ms.openlocfilehash: 567b77764aeacec84ef7577ed94f74dd6b6acc64
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3188646"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5776107"
 ---
 # <a name="field-mapping-when-importing-sepa-camt-files"></a>Mappage de champs lors de l'importation de fichiers SEPA CAMT
-[!INCLUDE[d365fin](includes/d365fin_md.md)] prend en charge les normes régionales SEPA (Espace unique de paiement en euros) pour importer les relevés bancaires SEPA (format CAMT). Pour plus d'informations, voir [Utilisation de l'extension AMC Banking 365 Fundamentals](ui-extensions-amc-banking.md).  
+[!INCLUDE[prod_short](includes/prod_short.md)] prend en charge les normes régionales SEPA (Espace unique de paiement en euros) pour importer les relevés bancaires SEPA (format CAMT). Pour plus d'informations, voir [Utilisation de l'extension AMC Banking 365 Fundamentals](ui-extensions-amc-banking.md).  
 
- La norme SEPA CAMT standard présente elle-même des variations locales. Par conséquent, vous pouvez être amené à modifier la définition d'échange de données générique (représentée par le code **SEPA CAMT** sur la page **Définitions échange report**) pour l'adapter à une variation locale de la norme. Les tables suivantes indiquent la correspondance entre élément et champ pour les tables 81, 273 et 274 dans l'implémentation de SEPA CAMT dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+ La norme SEPA CAMT standard présente elle-même des variations locales. Par conséquent, vous pouvez être amené à modifier la définition d'échange de données générique (représentée par le code **SEPA CAMT** sur la page **Définitions échange report**) pour l'adapter à une variation locale de la norme. Les tables suivantes indiquent la correspondance entre élément et champ pour les tables 81, 273 et 274 dans l'implémentation de SEPA CAMT dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
  Pour plus d'informations sur la création ou l'ajustement de définition d'échange de données, voir [Configurer les définitions d'échange de données](across-how-to-set-up-data-exchange-definitions.md).  
 
@@ -57,10 +57,17 @@ ms.locfileid: "3188646"
 |Stmt/Ntry/NtryDtls/TxDtls/RmtInf/Ustrd|Non structuré|Texte|Les informations à votre disposition pour activer la correspondance/le rapprochement d'une écriture avec les articles que le paiement doit régler, telles que les factures commerciales dans un système comptes-clients, sous forme non structurée||6|Description|  
 |Stmt/Ntry/AddtlNtryInf|AdditionalEntryInformation|Texte|Informations supplémentaires sur l'écriture.||16|Informations transaction|  
 
- Les articles dans le nœud **Ntry** qui sont importés dans [!INCLUDE[d365fin](includes/d365fin_md.md)] mais ne sont associés à aucun champ sont stockés dans la table **Définition colonne échange comptabilité**. Les utilisateurs peuvent afficher ces éléments à partir des pages **Journal rapprochement paiement**, **Affectation paiement** et **Rapprochement bancaire** en choisissant l'action **Détails lignes de relevé bancaire**. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).  
+ Les articles dans le nœud **Ntry** qui sont importés dans [!INCLUDE[prod_short](includes/prod_short.md)] mais ne sont associés à aucun champ sont stockés dans la table **Définition colonne échange comptabilité**. Les utilisateurs peuvent afficher ces éléments à partir des pages **Journal rapprochement paiement**, **Affectation paiement** et **Rapprochement bancaire** en choisissant l'action **Détails lignes de relevé bancaire**. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
+
+> [!IMPORTANT]
+> Dans une importation de relevés bancaires CAMT, [!INCLUDE[prod_short](includes/prod_short.md)] s’attend à ce que chaque transaction soit unique, ce qui signifie que le champ **Code transaction** qui provient de la balise *Stmt/Ntry/NtryDtls/TxDtls/Refs/EndToEndId* dans le fichier CAMT, doit être unique dans le rapprochement du compte bancaire ouvert. Si les informations ne sont pas présentes, [!INCLUDE[prod_short](includes/prod_short.md)] ignore le paiement. Si un rapprochement bancaire antérieur sur le même compte bancaire a été reporté avec le même code de transaction que lors de l’importation en cours, la transaction en cours ne sera pas automatiquement rapprochée, mais elle peut toujours être importée.
+
 ## <a name="see-also"></a>Voir aussi  
 [Configuration de l'échange de données](across-set-up-data-exchange.md)  
 [Échanger des données par voir électronique](across-data-exchange.md)  
-[Utilisation de l'extension AMC Banking 365 Fundamentals](ui-extensions-amc-banking.md)   
+[Utilisation de l’extension AMC Banking 365 Fundamentals](ui-extensions-amc-banking.md)   
 [Utiliser des schémas XML pour préparer des définitions d'échange de données](across-how-to-use-xml-schemas-to-prepare-data-exchange-definitions.md)  
 [Rapprocher les paiements à l'aide de l'application automatique](receivables-how-reconcile-payments-auto-application.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

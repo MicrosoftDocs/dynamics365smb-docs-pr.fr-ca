@@ -1,21 +1,21 @@
 ---
-title: Configurer les processus financiers| Microsoft Docs
+title: Configurer les processus financiers
 description: En savoir plus sur les tâches pour paramétrer les finances de votre société afin de les adapter à votre comptabilité ou vos audits.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: b7a272d916182fda7815e04bb314a5c29942ca98
-ms.sourcegitcommit: b9264b4ed650feca18776892ec23f2aa7ec43e20
+ms.date: 06/16/2021
+ms.author: edupont
+ms.openlocfilehash: d2763e42ae6c31a4f631457ea16b6a5bdcad40db
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3372578"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6327023"
 ---
 # <a name="setting-up-finance"></a>Configuration de Finance
 Avant de commencer à gérer votre activité, vous devez spécifier des règles et des valeurs par défaut concernant le mode de gestion souhaité des processus financiers de cette compagnie. Pour commencer, vous devez configurer l'élément essentiel des enregistrements comptables de la compagnie, à savoir le plan comptable. Configurez ensuite des groupes de report afin d'accroître l'efficacité du processus d'affectation des comptes de report de grand livre par défaut aux clients, fournisseurs et articles.
@@ -28,13 +28,15 @@ De nombreuses tâches de configuration doivent être effectuées avant l'enregis
 
 Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.
 
-| À | Voir |
+| Pour | Voir |
 | --- | --- |
-| Choisissez la méthode pour payer vos fournisseurs. |[Définition des modes de règlement](finance-payment-methods.md) |
+| Indiquez comment vous souhaitez être payé par les clients et comment vous souhaitez payer vos fournisseurs. |[Paramétrer les modes de paiement](finance-payment-methods.md) |
+| Spécifiez des modalités de paiement pour gérer les dates d’échéance et calculer les escomptes de paiement possibles.|[Configurer des modalités de paiement](finance-payment-terms.md) |
 | Spécifiez les groupes comptabilisation qui mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes généraux. |[Configuration de groupes comptabilisation](finance-posting-groups.md)|
 |Créer des tableaux d'analyse et définir des catégories de compte pour définir le contenu des graphiques et rapports financiers, tels que les rapports Bilan et État des résultats.|[Préparer la génération de rapports financiers avec des tableaux d'analyse et des catégories de compte](bi-how-work-account-schedule.md)|
 |Configurer une valeur de tolérance selon laquelle le système ferme une facture même si le paiement, tenant compte d'éventuels escomptes, ne couvre pas intégralement le montant de la facture.|[Utilisation des tolérances de règlement et des tolérances d'escompte de paiement](finance-payment-tolerance-and-payment-discount-tolerance.md)|
 | Définir les périodes fiscales. |[Utiliser des périodes et exercices financiers comptables](finance-accounting-periods-and-fiscal-years.md) |
+|Configurez des modalités de rappel pour vous aider à recouvrer les paiements en retard.|[Configurer les niveaux et modalités de rappel](finance-setup-reminders.md)|
 | Définissez comment déclarer les montants de taxe sur la valeur ajoutée que vous avez recueillis sur les ventes aux autorités fiscales. |[Configuration de la TVA](finance-setup-vat.md)|
 |Se préparer à gérer la TVA non réalisée en association avec des méthodes comptables basées sur la trésorerie.|[Configurer la TVA non réalisée pour la comptabilité basée sur la trésorerie](finance-setup-unrealized-vat.md)|
 | Définissez vos fonctionnalités Ventes et Achats pour gérer les paiements dans des devises étrangères.|[Activer l'affectation d'écritures en devises différentes](finance-how-enable-application-ledger-entries-different-currencies.md)
@@ -48,6 +50,10 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Configurez le rapport Intrastat et envoyez-le à une administration | [Configurer et enregistrer un rapport Intrastat](finance-how-setup-report-intrastat.md)|
 |Vérifiez qu'une écriture dans un journal général est affectée à plusieurs comptes lors du report du journal, soit par quantité, pourcentage ou montant.|[Utiliser les clés d'affectation dans les journaux généraux](ui-how-use-allocation-keys-general-journals.md)|
 |Configurer des codes journaux et des codes motif que vous pouvez utiliser pour suivre les pistes d'audit|[Configuration des codes source et des codes de motif pour les pistes d'audit](finance-setup-trail-codes.md)|
+|Spécifiez les rapports par défaut à utiliser pour différents types de documents.|[Sélection des rapports dans Business Central](across-report-selections.md)|
+
+> [!TIP]
+> En fonction de votre emplacement géographique, certaines pages peuvent contenir des champs qui ne sont pas décrits dans les articles répertoriés ici, car ils s’appliquent à des fonctionnalités locales ou à des personnalisations. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/set-up-financial-management-dynamics-365-business-central/)
 
@@ -58,6 +64,9 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 [Utilisation des dimensions](finance-dimensions.md)  
 [Importation des données métier à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  
 [Analyse de la trésorerie dans votre société](finance-analyze-cash-flow.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
-## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
+## [!INCLUDE[prod_short](includes/free_trial_md.md)]  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

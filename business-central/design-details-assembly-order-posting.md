@@ -1,21 +1,21 @@
 ---
-title: "Détails de conception : report d'ordre d'assemblage | Microsoft Docs"
-description: Le report d'ordre d'assemblage est basé sur les mêmes principes que le report des activités similaires des documents de vente et de la consommation de production/production. Cependant, les principes sont combinés du fait que les ordres d'assemblage ont leur propre interface utilisateur de report, comme celle des documents de vente, alors que le report des écritures réel se produit en arrière-plan en tant que report direct d'article et de journal ressource, comme pour la consommation de production, la production et la capacité.
+title: Détails de conception - Report d’ordre d’assemblage
+description: Le report d'ordre d'assemblage est basé sur les mêmes principes que le report des activités similaires des documents de vente et de la consommation de production/production.
 author: SorenGP
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 2c90a6b4a122c9a224e26ef57a03a7f6c981177f
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 06/15/2021
+ms.author: edupont
+ms.openlocfilehash: 155fbf64c5ca0dcffce22f16f7ffbfc6375250f1
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3185814"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6442570"
 ---
 # <a name="design-details-assembly-order-posting"></a>Détails de conception : report d'un ordre d'assemblage
 Le report d'ordre d'assemblage est basé sur les mêmes principes que le report des activités similaires des documents de vente et de la consommation de production/production. Cependant, les principes sont combinés du fait que les ordres d'assemblage ont leur propre interface utilisateur de report, comme celle des documents de vente, alors que le report des écritures réel se produit en arrière-plan en tant que report direct d'article et de journal ressource, comme pour la consommation de production, la production et la capacité.  
@@ -31,14 +31,14 @@ Les reports journal suivants se produisent lors du report d'un ordre d'assemblag
 
 Le schéma suivant montre la structure des écritures article et ressource qui résultent du report d'un ordre d'assemblage.  
 
-![Écritures article, ressource et capacité résultant du report d'ordre d'assemblage](media/design_details_assembly_posting_1.png "Écritures article, ressource et capacité résultant du report d'ordre d'assemblage")  
+![Écritures article, ressource et du grand livre de capacité résultant du report d’ordre d’assemblage.](media/design_details_assembly_posting_1.png "Écritures article, ressource et capacité résultant du report d'ordre d'assemblage")  
 
 > [!NOTE]  
 >  Les postes et ateliers sont inclus pour illustrer que les écritures du grand livre de capacité sont créées à la fois à partir de la production et de l'assemblage.  
 
 Le schéma suivant montre la manière dont les données d'assemblage circulent dans les écritures au cours du report :  
 
-![Flux d'écritures lié à l'assemblage lors du report](media/design_details_assembly_posting_2.png "Flux d'écritures lié à l'assemblage lors du report")  
+![Flux d’écritures lié à l’assemblage lors du report.](media/design_details_assembly_posting_2.png "Flux d'écritures lié à l'assemblage lors du report")  
 
 ## <a name="posting-sequence"></a>Séquence de report  
 Le report d'un ordre d'assemblage se produit dans l'ordre suivant :  
@@ -69,7 +69,7 @@ La fonction de détection du niveau de commande est utilisée pour les scénario
 
 Le graphique suivant montre la structure d'écriture d'ajustement et comment les coûts d'assemblage sont ajustés.  
 
-![Flux d'écritures lié à l'assemblage lors de l'ajustement des coûts](media/design_details_assembly_posting_3.png "Flux d'écritures lié à l'assemblage lors du report")  
+![Flux d’écritures lié à l’assemblage lors de l’ajustement des coûts.](media/design_details_assembly_posting_3.png "Flux d'écritures lié à l'assemblage lors du report")  
 
 ### <a name="performing-the-adjustment"></a>Procéder à l'ajustement  
 La répartition des ajustements détectés entre les coûts matière et ressource et les écritures de résultat d'assemblage est effectuée par le traitement par lots **Ajuster coûts : Écr. article**. Il contient la fonction Effectuer un ajustement à plusieurs niveaux, qui se compose des deux éléments suivants :  
@@ -77,7 +77,7 @@ La répartition des ajustements détectés entre les coûts matière et ressourc
 -   Effectuer un ajustement d'ordre d'assemblage : qui transmet le coût d'utilisation des matières et des ressources à l'écriture de résultat d'assemblage. Les lignes 5 et 6 dans l'algorithme ci-dessous sont responsables de cela.  
 -   Effectuer des ajustements à niveau unique : ce qui transfère les coûts des différents articles en utilisant leur mode d'évaluation de l'inventaire. Les lignes 9 et 10 dans l'algorithme ci-dessous sont responsables de cela.  
 
-![Résumé de l'algorithme d'ajustement des coûts pour le report d'assemblage](media/design_details_assembly_posting_4.jpg "Résumé de l'algorithme d'ajustement des coûts pour le report d'assemblage")  
+![Résumé de l’algorithme d’ajustement des coûts pour report de l’assemblage.](media/design_details_assembly_posting_4.jpg "Résumé de l'algorithme d'ajustement des coûts pour le report d'assemblage")  
 
 > [!NOTE]  
 >  L'élément Effectuer des ajustements de TEC, dans les lignes 7 et 8, est responsable du transfert du matériel de production et de l'utilisation de la capacité vers la production des ordres de fabrication non terminés. Ceci n'est pas utilisé lors de l'ajustement des coûts d'ordre d'assemblage, car le concept de TEC ne s'applique pas à l'assemblage.  
@@ -115,4 +115,7 @@ Le report de lignes document de vente dont une partie est une quantité en inven
  [Détails de conception : modes évaluation stock](design-details-costing-methods.md)  
  [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
- [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+ [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
