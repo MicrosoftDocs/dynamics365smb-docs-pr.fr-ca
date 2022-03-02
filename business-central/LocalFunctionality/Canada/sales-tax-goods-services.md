@@ -2,7 +2,6 @@
 title: Déclaration GST/HST au Canada
 description: En savoir plus sur la façon de déclarer la taxe de vente et la taxe sur les biens et les services au Canada.
 author: edupont04
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.keywords: sales tax, local
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 064c286fcb72aef9375c0e70ad302382b97c6756
-ms.sourcegitcommit: 41876b559872fe7adbfa5b59a6e1a71dc907fb15
+ms.openlocfilehash: 4f4e756d856edc6c980f5d88cdd8a470388c4b97
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921001"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8144193"
 ---
 # <a name="reporting-goodsservices-tax-and-harmonized-sales-tax-in-canada"></a>Déclaration de la taxe sur les biens/services et de la taxe de vente harmonisée au Canada
 

@@ -2,7 +2,6 @@
 title: Fonctionnalités locales Canada
 description: Les rubriques suivantes décrivent la fonctionnalité locale unique à la version canadienne de Business Central.
 author: sorenfriisalexandersen
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/17/2021
 ms.author: soalex
-ms.openlocfilehash: 3cf565c1067f6fbbc3cde22959dcd16adac43263
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.openlocfilehash: 8292cc9be3a0449651f4b8de2895d2296dccd585
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6323990"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8145118"
 ---
 # <a name="local-functionality-in-the-canadian-version"></a>Fonctionnalité locale dans la version canadienne
 

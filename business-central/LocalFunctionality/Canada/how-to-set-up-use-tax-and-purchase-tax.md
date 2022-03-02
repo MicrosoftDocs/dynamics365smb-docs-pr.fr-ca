@@ -2,7 +2,6 @@
 title: "Procédure : configurer la taxe de service et la taxe d'achat [CA]"
 description: La taxe d'achat et de vente inclut les taxes payées par les compagnies pour utiliser des articles dans la version canadienne.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/17/2021
 ms.author: edupont
-ms.openlocfilehash: 4b8792fde329f8360febd5091e5283cd75f5e75d
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.openlocfilehash: b33cee343c01f88538cabf8396f2c87fb5e3e875
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6322025"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8129379"
 ---
 # <a name="set-up-use-tax-and-purchase-tax-in-the-canadian-version"></a>Configurer la taxe de service et la taxe d'achat dans la version canadienne
 

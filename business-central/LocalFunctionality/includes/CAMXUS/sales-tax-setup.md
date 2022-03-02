@@ -1,15 +1,14 @@
 ---
 author: edupont04
-ms.service: dynamics365-business-central
 ms.topic: include
 ms.date: 04/27/2021
 ms.author: edupont
-ms.openlocfilehash: 9af782d2a8e23759b5e99b3c2adfc73f7644ebe3
-ms.sourcegitcommit: 8746f93c5a11f218d22f95ea06de9c8ec8f8d3f2
+ms.openlocfilehash: 38e5b84c7bd48ed6f092eccd8b4bcb1234fe7774
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "6238728"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8129280"
 ---
 Lorsque vous commencez à utiliser [!INCLUDE[prod_short](../../../includes/prod_short.md)], vous pouvez exécuter un guide de configuration assistée afin de rapidement et facilement configurer les informations relatives à la taxe de vente pour votre compagnie, vos clients et vos fournisseurs. En quelques minutes, vous êtes prêt à créer des documents vente et des documents achat pour lesquels la taxe de vente est calculée correctement. Il suffit de rechercher le guide de configuration assistée **Configuration de la taxe de vente**, puis d'effectuer la procédure du guide. I s'agit de spécifier les comptes à utiliser pour la taxe de vente pour les ventes et les achats.  
 

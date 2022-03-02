@@ -2,7 +2,6 @@
 title: Escomptes de paiement de vente et la taxe de vente non réalisée [CA]
 description: Vous pouvez utiliser la page Configuration du grand livre pour configurer des escomptes de paiement de vente et la taxe de vente non réalisée dans la version canadienne.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 1933fd9ff38f1052002f7d16e78727ab5ec00789
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.openlocfilehash: 1195f96bd238b63001779d52f0ec61d441f69bdb
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6318866"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8148000"
 ---
 # <a name="set-up-unrealized-sales-tax-and-sales-payment-discounts-in-the-canadian-version"></a>Configurer les escomptes de paiement de vente et la taxe de vente non réalisée dans la version canadienne
 

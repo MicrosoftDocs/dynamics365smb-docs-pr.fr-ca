@@ -1,15 +1,14 @@
 ---
 author: edupont04
-ms.service: dynamics365-business-central
 ms.topic: include
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: cb954947a9c7b5223c2758d05f037d28a3545dfe
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 6cfcf808cf9f5e07223b8cf2e690d615e28a7362
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6441364"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8129375"
 ---
 La taxe de vente inclut les taxes payées par les compagnies pour utiliser des articles :  
 
