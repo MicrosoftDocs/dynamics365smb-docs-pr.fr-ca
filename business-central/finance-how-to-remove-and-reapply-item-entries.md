@@ -2,7 +2,6 @@
 title: Supprimer et affecter à nouveau des écritures article
 description: Vous pouvez visualiser et modifier manuellement certaines écritures d'affectation article qui sont créées automatiquement lors des transactions d'inventaire.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.form: 506, 521, 9125
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 9ec35c8f618a916661018719b4da05f7e2b43566
-ms.sourcegitcommit: 2ab6709741be16ca8029e2afadf19d28cf00fbc7
+ms.openlocfilehash: 61998453cb7bd31608dd18e156ca52b5f3f11b71
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "7971040"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8138001"
 ---
 # <a name="remove-and-reapply-item-ledger-entries"></a>Supprimer et affecter à nouveau des écritures article
 Sur la page **Feuille affectation**, vous pouvez visualiser et modifier manuellement certaines écritures affectation article qui sont créées automatiquement lors des transactions d'inventaire.  
@@ -34,7 +33,7 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
 
 > [!Warning]  
 > Il est important de tenir compte des considérations suivantes lorsque vous travaillez sur la feuille de travail affectation :
-    - Vous ne devez pas laisser des écritures affectation non affectées pendant de longues périodes, car d'autres utilisateurs ne peuvent pas traiter les articles tant que vous n'affectez pas à nouveau les écritures affectation ou que vous fermez la page **Feuille affectation**. Les utilisateurs qui essaient d'exécuter des actions qui impliquent une écriture affectation dont l'affectation a été annulée manuellement reçoivent le message d'erreur suivant : « Il est impossible d'effectuer cette opération car l'affectation des écritures pour l'article XXX est annulée dans la feuille de travail affectation par l'utilisateur XXX. »
+    - Vous ne devez pas laisser des écritures affectation non affectées pendant de longues périodes, car d'autres utilisateurs ne peuvent pas traiter les articles tant que vous n'affectez pas à nouveau les écritures affectation ou que vous ne fermez pas la page **Feuille affectation**. Les utilisateurs qui essaient d'exécuter des actions qui impliquent une écriture affectation dont l'affectation a été annulée manuellement reçoivent le message d'erreur suivant : « Il est impossible d'effectuer cette opération car l'affectation des écritures pour l'article XXX est annulée dans la feuille de travail affectation par l'utilisateur XXX. »
     - Vous devez affecter à nouveau uniquement les écritures article en dehors des heures de travail afin d'éviter les conflits avec d'autres utilisateurs qui reportent des transactions portant sur les mêmes articles.
     - Lorsque vous fermez la feuille de travail affectation, [!INCLUDE[prod_short](includes/prod_short.md)] effectue un contrôle pour s'assurer que toutes les écritures sont affectées. Par exemple, si vous supprimez une affectation quantité sans créer une nouvelle affectation et si vous fermez ensuite la feuille de travail affectation, une nouvelle affectation est créée. Cela permet de ne pas toucher au coût. Cependant, si vous supprimez une affectation fixe, une nouvelle affectation fixe n'est pas créée automatiquement lorsque vous fermez la feuille de travail. Vous devez le faire manuellement en créant une nouvelle affectation dans la feuille de travail.
     - Vous pouvez supprimer des affectations à partir de plusieurs écritures en même temps dans la feuille de travail affectation. Toutefois, comme l'affectation d'écritures affecte l'ensemble des écritures qui sont disponibles pour l'affectation, vous ne pouvez pas créer une affectation pour plusieurs écritures à la fois.
@@ -53,7 +52,7 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
  Le champ **Quantité restante** des deux écritures comptables article sont augmentés de la quantité délettrée. L'écriture article supprimée peut à présent être à nouveau affectée sur la page **Afficher les écritures affectées – Écritures non affectées**.  
 
 > [!IMPORTANT]  
->  Vous ne devez pas laisser des écritures affectation non affectées pendant de longues périodes, car d'autres utilisateurs ne peuvent pas traiter les articles concernés tant que vous n'affectez pas à nouveau les écritures affectation ou que vous fermez la page **Feuille affectation**. Le message d'erreur suivant s'affiche si vous essayez d'exécuter des tâches qui concernent une écriture d'affectation dont l'affectation a été supprimée manuellement :  
+>  Vous ne devez pas laisser des écritures affectation non affectées pendant de longues périodes, car d'autres utilisateurs ne peuvent pas traiter les articles concernés tant que vous n'affectez pas à nouveau les écritures affectation ou que vous ne fermez pas la page **Feuille affectation**. Le message d'erreur suivant s'affiche si vous essayez d'exécuter des tâches qui concernent une écriture d'affectation dont l'affectation a été supprimée manuellement :  
 >   
 >  **Il est impossible d’effectuer cette action car l'affectation des écritures de l’article \<item\> est annulée dans la feuille affectation par l’utilisateur \<user\>.**  
 

@@ -2,7 +2,6 @@
 title: Gestion des coûts de l’inventaire et des coûts de fabrication
 description: Découvrez comment un certain nombre de champs, de pages et de rapports sont destinés aux utilisateurs qui gèrent directement ou indirectement le coût des articles ou des opérations.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 82221de7c57e6130a3259ae7cf7be095e3c0571e
-ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
+ms.openlocfilehash: 9203aa99271bc5fba840b3d568adc098686ef961
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6323350"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8136105"
 ---
 # <a name="handling-inventory-and-manufacturing-costs"></a>Gestion des coûts inventaire et des coûts de fabrication
 Bien que la comptabilité analytique soit constituée de processus ne nécessitant pas d'interaction utilisateur, telle que l'affectation d'écritures et l'ajustement automatique des coûts, un certain nombre de champs, pages et rapports sont destinés aux utilisateurs qui gèrent directement ou indirectement le coût des articles ou opérations.  
@@ -32,7 +31,7 @@ Bien que la comptabilité analytique soit constituée de processus ne nécessita
 |Calculer le coût unitaire d'un article de nomenclature à partir des coûts unitaires de ses composants sous-jacents.|[Utiliser les nomenclatures](inventory-how-work-BOMs.md)|  
 |Terminer le cycle de vie de l'évaluation coût d'un article produit en ajustant les coûts et en rapprochant les écritures valeur du grand livre.|[À propos des coûts des bons de production achevés](finance-about-finished-production-order-costs.md)|  
 |Modifiez la valeur d'un article dans l'inventaire ou la valeur d'une écriture du grand livre article, telle qu'une transaction d'achat.|[Réévaluer l'inventaire](inventory-how-revalue-inventory.md)|
-|Annuler manuellement l'affectation d'un article ou affecter à nouveau des écritures article créées par l'application.|[Supprimer et appliquer à nouveau des écritures article](finance-how-to-remove-and-reapply-item-entries.md)|  
+|Annuler manuellement l'affectation d'un article ou affecter à nouveau des écritures article créées par l'application.|[Supprimer et affecter à nouveau des écritures article](finance-how-to-remove-and-reapply-item-entries.md)|  
 |Utilisez le champ **Écriture affectée de** dans le journal article pour créer manuellement une affectation fixe entre une transaction entrante et la transaction sortante initiale.|[Fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal article](finance-how-to-close-open-item-ledger-entries-resulting-from-fixed-application-in-the-item-journal.md)|  
 
 ## <a name="see-also"></a>Voir aussi  

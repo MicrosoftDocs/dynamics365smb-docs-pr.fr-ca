@@ -2,7 +2,6 @@
 title: Comment reporter des commandes service
 description: Après avoir créé une commande service, fourni toutes les informations et apporté les éventuelles modifications, vous pouvez reporter cette commande.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: 08dba596c53186d734a9f30a760f1c69ef635f8b
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: a03fe49eac925022dc169746db35a51a3f522d3f
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6446107"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8139245"
 ---
 # <a name="post-service-orders-and-credit-memos"></a>Reporter des commandes et des notes de crédit de service
 Après avoir créé une commande service, fourni toutes les informations et apporté les éventuelles modifications, vous pouvez reporter cette commande. Pour que vous puissiez reporter une commande, celle-ci doit contenir au moins une ligne article de service et une ligne service. Si la commande contient plusieurs lignes service, toutes les lignes sont reportées en même temps.  
@@ -50,7 +49,7 @@ Vous ne pouvez reporter la consommation que si la ligne contient une quantité q
 
 Lors du report de la commande, les écritures et les documents reportés correspondants sont créés. Les champs appropriés dans le document commande service sont mis à jour.  
 
-## <a name="to-batch-post-service-orders"></a>Pour exécuter en lot des commandes service
+## <a name="to-batch-post-service-orders"></a>Pour reporter en lot des commandes service
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Commandes service**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Reporter par lot**.  
 3.  Vous pouvez positionner un filtre pour sélectionner des numéros commande service ou un intervalle de numéros commande pour le traitement en lot à effectuer.  
@@ -64,7 +63,7 @@ Une fois la note de crédit service créée et renseignée, vous pouvez reporter
 3. Renseignez les champs suivants.  
 4. Sélectionnez l'action **Reporter**. Si vous souhaitez imprimer et reporter la note de crédit simultanément, choisissez plutôt l'action **Reporter et imprimer**.  
 5. Pour tester des notes de crédit avant de les reporter, choisissez **Rapport de test**. Lorsque vous exécutez le rapport, les dates de report spécifiées dans le document sont vérifiées.  
-6. Pour reporter simultanément plusieurs notes de crédits service. exécutez le traitement par lots **TPL valider avoirs service**. Ceci peut être avantageux si vous avez beaucoup de notes de crédit à reporter.  
+6. Pour reporter simultanément plusieurs notes de crédits service. exécutez le traitement en lot **Reporter en lot les notes de crédit service**. Ceci peut être avantageux si vous avez beaucoup de notes de crédit à reporter.  
 
 > [!NOTE]  
 >  Il est important d'entrer toutes les informations nécessaires sur les notes de crédit avant de les exécuter en lot. Sinon, elles risquent de ne pas être reportées. Lorsque le traitement en lot a terminé le report, un message indique le nombre des notes de crédit service reportés.  

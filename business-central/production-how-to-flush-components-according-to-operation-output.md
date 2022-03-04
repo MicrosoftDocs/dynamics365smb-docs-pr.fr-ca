@@ -2,7 +2,6 @@
 title: Consommer en aval des composantes en fonction de la production réalisée
 description: Cette rubrique décrit comment rincer les composantes en fonction de la sortie de l’opération ainsi que d’autres méthodes de rinçage impliquées.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: f774c3e626ae7db282d87797a59f0f0aaf89d599
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 375c333bf6fc56d4dac5a59be0dbf905c8339ec5
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6439103"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8137585"
 ---
 # <a name="flush-components-according-to-operation-output"></a>Consommer en aval des composantes en fonction de la production réalisée
 Vous pouvez définir différentes stratégies de consommation, pour automatiser l'enregistrement de la consommation des composantes. 
@@ -105,7 +104,7 @@ Par exemple, si un bon de production de 800 mètres nécessite pour son exécut
 6.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Nomenclature de production**, puis choisissez le lien associé.  
 7.  Associe aux codes lien itinéraire de chaque instance de la composante l'opération dans laquelle elle est consommée.
 
-La consommation sera reportée automatiquement lorsque vous enregistrez la sortie. Pour plus d’informations, voir [Exécuter en lot la production et les temps d’exécution](production-how-to-post-output-quantity.md)
+La consommation sera reportée automatiquement lorsque vous enregistrez la sortie. Pour plus d’informations, voir [Reporter en lot la production et les temps d’exécution](production-how-to-post-output-quantity.md)
 
 ## <a name="flushing-methods"></a>Méthodes consommation
 

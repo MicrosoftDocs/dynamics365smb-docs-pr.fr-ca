@@ -1,14 +1,13 @@
 ---
 author: edupont04
-ms.service: dynamics365-business-central
 ms.topic: include
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 9e2d49768d53c812d3d31beb1a87f853588b947e
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: bfb01aa016e8c93c5d16c25db6ded1e5d5ac4bad
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5781798"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8132820"
 ---
 Vous pouvez configurer autant de modalités de rappel que vous le souhaitez. Chaque ensemble de conditions est identifié par un code. Chaque modalité de rappel a des niveaux de rappel prédéfinis. Chaque niveau de rappel inclut des règles relatives à l'émission du rappel, par exemple, le nombre de jours après la date d'échéance de la facture ou la date du rappel précédent après laquelle il doit être émis.

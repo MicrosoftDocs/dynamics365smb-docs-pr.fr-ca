@@ -2,7 +2,6 @@
 title: Rapprocher les paiements à l'aide de l'affectation automatique
 description: Décrit comment utiliser la fonction d'affectation automatique pour affecter les paiements ou les encaissements à leurs écritures ouvertes connexes, et rapprocher les paiements.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.keywords: payment process, direct payment posting, reconcile payment, expenses, cash receipts
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: a39798d56aa18dffa929d719cecd68a522bde00d
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 811136e9bac3ddfa8348d66a49f5e8e3d38aa9ee
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6441995"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8139489"
 ---
 # <a name="reconcile-payments-using-automatic-application"></a>Rapprocher les paiements à l'aide de l'affectation automatique
 
@@ -38,7 +37,7 @@ Sur les lignes journal dans lesquelles un paiement a été affecté automatiquem
 
 Certaines affectations de paiement nécessitent que vous les examiniez tel que défini par la règle de correspondance utilisée, comme les lignes avec une fiabilité de correspondance **Faible**. Les autres lignes nécessitent que vous les examiniez ainsi qu’une modification manuelle, car il y a une valeur dans le champ **Différence**. Pour examiner une ou plusieurs affectations de paiement, choisissez le champ **Lignes à vérifier** ou **Lignes avec différence** en bas. La page **Révision affectation paiement** s’ouvre et affiche toutes les informations pertinentes sur le client ou le fournisseur auquel le paiement est affecté, les détails de la correspondance et les actions pour traiter la ligne, telles que l’action **Accepter l’affectation**. (Voir les étapes 7 et 8 ci-dessous.)
 
-Pour chaque ligne journal de la page **Journal rapprochement paiement**, vous pouvez ouvrir la page **Affectation paiement** pour visualiser toutes les écritures ouvertes candidates au paiement et pour afficher les informations détaillées pour chaque écriture sur la correspondance des données sur laquelle une affectation de paiement est basée. Ici, vous pouvez affecter les paiements manuellement ou réaffecter les paiements qui ont été automatiquement affectés à une écriture incorrecte. (Voir l’étape 10 ci-dessous) Pour plus d’informations, voir [Réviser ou affecter les paiements après affectation automatique](receivables-how-review-apply-payments-auto-application.md).
+Pour chaque ligne journal de la page **Journal rapprochement paiement**, vous pouvez ouvrir la page **Affectation paiement** pour visualiser toutes les écritures ouvertes candidates au paiement et pour afficher les informations détaillées pour chaque écriture sur la correspondance des données sur laquelle une affectation de paiement est basée. Ici, vous pouvez affecter les paiements manuellement ou affecter à nouveau les paiements qui ont été automatiquement affectés à une écriture incorrecte. (Voir l’étape 10 ci-dessous) Pour plus d’informations, voir [Réviser ou affecter les paiements après affectation automatique](receivables-how-review-apply-payments-auto-application.md).
 
 > [!NOTE]  
 > Vous pouvez lancer l’importation des transactions bancaires en même temps que vous ouvrez la page **Journal rapprochement bancaire** pour un journal existant. La procédure suivante décrit comment importer des transactions bancaires sur la page **Journal rapprochement paiement** après avoir créé un journal.

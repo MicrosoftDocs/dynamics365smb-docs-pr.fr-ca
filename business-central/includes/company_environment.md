@@ -1,15 +1,14 @@
 ---
 author: edupont04
-ms.service: dynamics365-accountant
 ms.topic: include
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: fa7e5a51696c149e66da0d76cf1042c5e8f7e7e3
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 045f3cc062c3ffec74177f7c7bc41c3bb96c9b8c
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5776406"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8129718"
 ---
 Les gens prennent parfois en charge plus d'une compagnie et doivent facilement passer du travail dans une compagnie à une autre dans [!INCLUDE [prod_short](prod_short.md)]. Par exemple, une entreprise peut avoir des bureaux de vente dans des villes et plusieurs pays, elle a donc créé une unité fonctionnelle pour chaque bureau. Les bureaux situés dans le même pays sont constitués en compagnies distinctes dans un environnement partagé. D'autres bureaux sont créés en tant que compagnies dans des environnements distincts car ils sont géographiquement basés dans d'autres pays.<br><br>  
 

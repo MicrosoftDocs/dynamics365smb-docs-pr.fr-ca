@@ -1,15 +1,14 @@
 ---
 author: edupont04
-ms.service: dynamics365-business-central
 ms.topic: include
 ms.date: 05/27/2021
 ms.author: edupont
-ms.openlocfilehash: 59376b96dcd6f755040b07784ceca53e157bcf14
-ms.sourcegitcommit: f9a190933eadf4608f591e2f1b04c69f1e5c0dc7
+ms.openlocfilehash: f1c6ead7a776d11ccc8917944c3752ec6ac43c66
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6116038"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8132664"
 ---
 Sur les documents et les journaux achat, vous pouvez spécifier un numéro de document faisant référence au système de numérotation du fournisseur. Utilisez ce champ pour enregistrer le numéro que le fournisseur a attribué à la commande, à la facture ou à la note de crédit. Vous pouvez utiliser ce numéro ultérieurement, si vous avez besoin de retrouver l’écriture reportée à l’aide de ce numéro.
 
