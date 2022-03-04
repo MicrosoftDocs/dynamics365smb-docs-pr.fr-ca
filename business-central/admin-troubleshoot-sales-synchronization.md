@@ -2,7 +2,6 @@
 title: Dépannage des erreurs de synchronisation
 description: Cette rubrique offre des instructions pour identifier, dépanner et résoudre les erreurs de synchronisation.
 author: bholtorf
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/14/2021
 ms.author: bholtorf
-ms.openlocfilehash: a643ec77f960114941bcef44ed3b37cb24d4410f
-ms.sourcegitcommit: 1508643075dafc25e9c52810a584b8df1d14b1dc
+ms.openlocfilehash: 0c2252c194b611753e3a84cec42d685a3c561a68
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8049650"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8143826"
 ---
 # <a name="troubleshooting-synchronization-errors"></a>Dépannage des erreurs de synchronisation
 

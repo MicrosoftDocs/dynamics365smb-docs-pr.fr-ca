@@ -2,7 +2,6 @@
 title: FAQ Teams
 description: Obtenez des réponses à certaines questions courantes sur l’utilisation de Teams et de Business Central.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: get-started-article
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.keywords: Teams, MS Teams, Microsoft Teams, Skype, Link, Microsoft 365, collaborate, collaboration, teamwork, faq, errors
 ms.date: 10/01/2021
 ms.author: jswymer
-ms.openlocfilehash: cd53825ced18cafab27571671a203cda82d3dcc9
-ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
+ms.openlocfilehash: 34c669f955bebf84149959182bb1ce8bdeb139a0
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7587875"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8147502"
 ---
 # <a name="teams-faq"></a>FAQ Teams
 
@@ -188,7 +187,7 @@ Dans la fenêtre des détails d'un contact, recherchez l'action **Créer une int
 
 ### <a name="can-i-call-a-contact-from-the-prod_shortmd-app-for-teams"></a>Puis-je appeler un contact de l'application [!INCLUDE [prod_short.md](includes/prod_short.md)] Teams ?
 
-[!INCLUDE [prod_short.md](includes/prod_short.md)] a une intégration limitée aux capacités d'appel Teams. Il n'est pas possible de démarrer instantanément un appel VOIP à partir de la carte de contact ou de la fenêtre des détails du contact. Cependant, lorsque vous affichez les détails du contact dans l'application de bureau Teams, vous pouvez sélectionner le champ de numéro de téléphone pour composer ce numéro si Teams est configuré comme votre application de numérotation par défaut sur votre appareil. Pour composer des numéros de téléphone fixe ou mobile à l'aide du PSTN, le système téléphonique traditionnel, Teams nécessite que vous disposiez de l'application Microsoft 365 Business Voice. Pour en savoir plus, consultez [Qu'est-ce que Microsoft 365 Business Voice ?](/MicrosoftTeams/business-voice/whats-business-voice).
+[!INCLUDE [prod_short.md](includes/prod_short.md)] a une intégration limitée aux capacités d'appel Teams. Il n'est pas possible de démarrer instantanément un appel VOIP à partir de la carte de contact ou de la fenêtre des détails du contact. Cependant, lorsque vous affichez les détails du contact dans l'application de bureau Teams, vous pouvez sélectionner le champ de numéro de téléphone pour composer ce numéro si Teams est configuré comme votre application de numérotation par défaut sur votre appareil. Pour composer des numéros de téléphone fixe ou mobile à l′aide du PSTN, le système téléphonique traditionnel, Teams nécessite que vous disposiez de l′application Microsoft 365 Business Voice. Pour en savoir plus, consultez [Qu′est-ce que Microsoft 365 Business Voice ?](/MicrosoftTeams/business-voice/whats-business-voice).
 
 ### <a name="how-do-i-view-recent-documents-for-a-customer-or-vendor"></a>Comment afficher les documents récents d'un client ou d'un fournisseur ?
 

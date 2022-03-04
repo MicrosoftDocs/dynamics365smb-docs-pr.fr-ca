@@ -2,7 +2,6 @@
 title: Détails de conception - Affectation article | Microsoft Docs
 description: Cette rubrique décrit où la quantité et la valeur d'inventaire sont enregistrées lorsque vous reportez une transaction inventaire.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.keywords: design, items, ledger entries, posting, inventory
 ms.date: 06/08/2021
 ms.author: edupont
-ms.openlocfilehash: fd37ec9ca5cc2de00f18f26bccc32aa81cd5659a
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: 581ffdce943844d466adc6320fe32aaaa29138b6
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215038"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8143566"
 ---
 # <a name="design-details-item-application"></a>Détails de conception : affectation article
 
@@ -233,7 +232,7 @@ Le tableau suivant montre l'effet du transfert sur les écritures valeur de l'ar
 Étant donné que la valeur de l'augmentation d'inventaire d'origine est de 10,00 $, le transfert est évalué à ce coût, et non à 12,00 $.  
 
 ## <a name="reapplication"></a>Nouvelle affectation  
-En raison du mode de calcul du coût unitaire d'un article, une affectation article incorrecte peut produire un coût moyen ou un coût unitaire erroné. Les scénarios suivants peuvent générer des affectations article incorrectes, qui nécessitent d'annuler des affectations article et d'appliquer à nouveau des écritures du grand livre d'articles :  
+En raison du mode de calcul du coût unitaire d'un article, une affectation article incorrecte peut produire un coût moyen ou un coût unitaire erroné. Les scénarios suivants peuvent générer des affectations article incorrectes, qui nécessitent d'annuler des affectations article et d'affecter à nouveau des écritures article :  
 
 * Vous avez oublié d'effectuer une affectation fixe.  
 * Vous avez effectué une affectation fixe incorrecte.  

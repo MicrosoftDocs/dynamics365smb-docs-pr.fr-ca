@@ -2,7 +2,6 @@
 title: Configurer l'entretien des immobilisations
 description: Pour gérer les réparations et l'entretien des immobilisations, spécifiez les informations générales d'entretien, les codes du type de travail, ainsi qu'un compte de report pour les coûts.
 author: edupont04
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -11,12 +10,12 @@ ms.search.keywords: repair, service
 ms.search.form: 5600, 5642
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 1aefc5d0e1453b2f43b9e72f587c0d9f90d07b4e
-ms.sourcegitcommit: 66c78f6f04bfca6c0794b3299241ed65037b1c08
+ms.openlocfilehash: e55b85397ca50995870ab86ed40421bbb0b4cb6d
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "8029492"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8147866"
 ---
 # <a name="set-up-fixed-asset-maintenance"></a>Configurer l'entretien d'une immobilisation
 Pour gérer l'entretien des immobilisations, vous devez configurer tout d'abord certaines informations générales d'entretien, un compte de report pour les coûts d'entretien et les codes d'entretien pour les types de travaux, tels que le service de routine ou la réparation.

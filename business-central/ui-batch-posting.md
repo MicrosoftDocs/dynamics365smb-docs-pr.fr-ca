@@ -2,20 +2,20 @@
 title: Reporter plusieurs documents en même temps
 description: Découvrez comment sélectionner plusieurs documents non reportés dans une liste pour un report par lots immédiat ou programmé dans Business Central.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
+ms.search.form: 9020, 9022, 9026, 9027, 9030, 9000, 9004, 9005, 9018, 9006, 9007, 9010, 9016, 9017
 ms.reviewer: edupont
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 4920e363af9b35afb4369682ca0310f095b02bb0
-ms.sourcegitcommit: ecbabd2d0fdf2566cea4a05a25b09ff6ca6256c6
+ms.openlocfilehash: 024588a5fcb565935a47f63a73b7287879c0db8c
+ms.sourcegitcommit: cdb57f14960f58b1d36a1b373fbf35dfed5fad9e
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "6649697"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "8334990"
 ---
 # <a name="post-multiple-documents-at-the-same-time"></a>Reporter plusieurs documents en même temps
 
@@ -32,16 +32,16 @@ La procédure suivante explique comment reporter immédiatement plusieurs bons d
 5. Choisissez l'action **Report**, puis sélectionnez l'action **Reporter**.
 6. Choisissez le bouton **Oui** dans le message de confirmation.
 
-## <a name="to-batch-post-multiple-purchase-orders"></a>Pour exécuter en lot plusieurs bons de commande
+## <a name="to-batch-post-multiple-purchase-orders"></a>Pour reporter en lot plusieurs bons de commande
 
-La procédure suivante explique comment exécuter en lot plusieurs bons de commande. Les étapes sont similaires pour tous les documents achat et vente où l'action **Exécuter en lot** est disponible.
+La procédure suivante explique comment reporter en lot des bons de commande. Les étapes sont similaires pour tous les documents achat et vente où l'action **Reporter en lot** est disponible.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de commande**, puis choisissez le lien associé.  
 2. Sur la page **Bons de commande**, sélectionnez toutes les commandes à reporter :
 3. Dans le champ **N°**, choisissez les trois points verticaux pour ouvrir le menu contextuel, puis choisissez l'action **Sélectionner davantage**.
 4. Cochez la case pour toutes les lignes représentant les commandes que vous souhaitez reporter en même temps.
 5. Choisissez l'action **Report**, puis sélectionnez l'action **Reporter en lot**.
-6. Sur la page **Exécuter en lot les bons de commande**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+6. Sur la page **Reporter en lot les bons de commande**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 7. Choisissez le bouton **OK**.
 8. Pour afficher les problèmes potentiels survenus lors du report en lot de documents, ouvrez la page **Registre des messages d'erreur**.
 
@@ -84,7 +84,7 @@ Sinon, vous pouvez vérifier sur la page **Écritures journal file d’attente d
 
 Sinon, vous pouvez reporter les reports à des heures pratiques pour votre organisation. Par exemple, il peut sembler raisonnable dans votre activité d’exécuter certaines routines lorsque la plupart de la saisie de données de la journée est achevée. Vous pouvez effectuer cette opération en configurant la file d'attente des travaux pour exécuter différents rapports de report en lot, par exemple, **Reporter en lot documents de vente**, **Reporter en lot factures vente** et des rapports similaires. [!INCLUDE[prod_short](includes/prod_short.md)] prend en charge le report en arrière-plan de tous les documents de types ventes, achats et service.
 
-La procédure suivante décrit comment définir le rapport **Exécuter en lot documents de vente** pour un report automatique des documents de vente lancés à 16 h 00 les jours de semaine.  
+La procédure suivante décrit comment définir le rapport **Reporter en lot des documents de vente** pour un report automatique des documents de vente lancés à 16 h 00 les jours de semaine.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures file d’attente des travaux**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -93,18 +93,18 @@ La procédure suivante décrit comment définir le rapport **Exécuter en lot do
 
    Vous pouvez également utiliser les rapports suivants :
   
-   * 900 **Reporter en lot ordres d’assemblage**
-   * 497 **Reporter en lot factures achat**
-   * 496 **Reporter en lot bons de commande**
-   * 498 **Reporter en lot notes de crédit achat**
-   * 6665 **Reporter en lot retours achat**
-   * 298 **Reporter en lot notes de crédit vente**
-   * 297 **Reporter en lot factures vente**
-   * 296 **Reporter en lot documents de vente**
-   * 6655 **Reporter en lot retours vente**
-   * 6005 **Reporter en lot notes de crédit service**
-   * 6004 **Reporter en lot factures service**
-   * 6001 **Reporter en lot Commandes service**
+   * 900 **Reporter en lot des ordres d’assemblage**
+   * 497 **Reporter en lot des factures achat**
+   * 496 **Reporter en lot des bons de commande**
+   * 498 **Reporter en lot des notes de crédit achat**
+   * 6665 **Reporter en lot des retours achat**
+   * 298 **Reporter en lot des notes de crédit vente**
+   * 297 **Reporter en lot des factures vente**
+   * 296 **Reporter en lot des documents de vente**
+   * 6655 **Reporter en lot des retours vente**
+   * 6005 **Reporter en lot des notes de crédit service**
+   * 6004 **Reporter en lot des factures service**
+   * 6001 **Reporter en lot des commandes service**
 
 5. Activez la case à cocher **Page requête rapport**.
 6. Dans la page de demande **Reporter en lot des documents de vente**, définissez ce qu'il faut inclure lors du report automatique des documents de vente, puis sélectionnez le bouton **OK**.

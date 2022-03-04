@@ -2,7 +2,6 @@
 title: Prélever pour la production ou l’assemblage dans le stockage de base
 description: Lorsque l’entrepôt appelle un traitement de prélèvement sans appeler de traitement de livraison, vous pouvez utiliser la page Prélèvement inventaire pour organiser et enregistrer le prélèvement des composantes.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: c3827bb8ab272b38972c17d79933ce0aa187e32d
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: b824cec7e6169f20d3da6bf853828a103b3c2928
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6445807"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8144369"
 ---
 # <a name="pick-for-production-or-assembly-in-basic-warehouse-configurations"></a>Prélever pour la fabrication ou l'assemblage dans les configurations de stockage de base.
 Le mode de rangement de vos composantes de prélèvement pour les bons de production ou les ordres d'assemblage dépend de la configuration de l'entrepôt en tant qu'emplacement. Pour plus d'informations, voir [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).
@@ -50,7 +49,7 @@ Dans les configurations d'entrepôt de base où l'emplacement est configuré pou
 
 Vous pouvez également créer un **Prélèvement de stock** directement à partir de la commande de fabrication lancée. Choisissez l’action **Créer rangement/prélèvement/mouvement d'inventaire**, cochez la case **Créer prélèvement inventaire**, puis choisissez le bouton **OK**.
 
-Vous pouvez également utiliser le **Mouvement d'inventaire** avec la référence au document source pour déplacer des articles entre les zones. Vous devrez enregistrer la consommation séparément. Pour plus d'informations, voir [Exécuter en lot la consommation de la production](production-how-to-post-consumption.md)
+Vous pouvez également utiliser le **Mouvement d'inventaire** avec la référence au document source pour déplacer des articles entre les zones. Vous devrez enregistrer la consommation séparément. Pour plus d'informations, voir [Reporter en lot la consommation de la production](production-how-to-post-consumption.md)
 
 ## <a name="pick-for-assembly-in-basic-warehouse-configurations"></a>Prélever pour l'Assemblage dans les configurations de stockage de base
 Dans les configurations d’entrepôt avancées où les emplacements requièrent des prélèvements et des livraisons, vous devez utiliser la page **Prélèvement entrepôt** pour ajouter des composantes aux ordres d'assemblage. Pour plus d'informations, consultez [Prélever pour la fabrication ou l'assemblage dans les configurations de stockage avancées](warehouse-how-to-pick-for-internal-operations-in-advanced-warehousing.md).

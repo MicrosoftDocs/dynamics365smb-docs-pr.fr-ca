@@ -1,19 +1,18 @@
 ---
-title: 'Procédure : suivre des colis'
+title: Suivre des colis
 description: Utilisez le service de suivi des agents de livraison sur Internet pour suivre les colis et suivre l’avancement d’une livraison.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keywords: rfq
-ms.search.form: 103, 142, 800, 806
+ms.search.form: 142, 800, 806
 ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: 8c05c4a86e0bf9ace996dfc879b719324dc99593
-ms.sourcegitcommit: a9e2aaee735870af566db68532cfa697347d68e0
+ms.openlocfilehash: b5a819c1aeea44b39f7c8497420e08af3c0ae2ab
+ms.sourcegitcommit: cdb57f14960f58b1d36a1b373fbf35dfed5fad9e
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752376"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "8334496"
 ---
 # <a name="track-packages"></a>Suivre des colis
 La plupart des agents de livraison proposent un service web qui vous permet de suivre l'état de vos colis pendant leur livraison. Ces informations peuvent être utiles dans de nombreux processus d’entreprise, par exemple, lors de la prestation d’un service clientèle. Si vous utilisez certains de ces agents de livraison, vous pouvez saisir certaines informations de base les concernant, puis utiliser leur service de suivi de livraison directement auprès des pages Livraisons vente reportées, Factures vente reportées, Notes de crédit vente reportées et Accusés de réception retour reportés. Pour plus d'informations, voir [Configurer des agents de livraison](sales-how-to-set-up-shipping-agents.md). 

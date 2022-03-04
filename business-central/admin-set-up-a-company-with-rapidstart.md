@@ -2,7 +2,6 @@
 title: Configurer une compagnie avec RapidStart Services
 description: Vous pouvez créer une compagnie dans Business Central avec RapidStart Services pour améliorer la productivité en automatisant et en simplifiant les tâches récurrentes.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/14/2021
 ms.author: edupont
-ms.openlocfilehash: 813ac2b7c8fe074e9c1f2572f947b92156a56d1a
-ms.sourcegitcommit: ecbabd2d0fdf2566cea4a05a25b09ff6ca6256c6
+ms.openlocfilehash: c5e47b4e866ce25a0a2cac84e00630b371f6e2b2
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "6649797"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8147070"
 ---
 # <a name="setting-up-a-company-with-rapidstart-services"></a>Configuration d'une compagnie avec RapidStart Services
 Vous pouvez configurer une nouvelle compagnie dans [!INCLUDE[prod_short](includes/prod_short.md)] avec RapidStart Services, qui est un outil conçu pour réduire les temps de déploiement, améliorer la qualité de l’implémentation, présenter une approche reproductible des implémentations et augmenter la productivité en automatisant et en simplifiant des tâches récurrentes.  

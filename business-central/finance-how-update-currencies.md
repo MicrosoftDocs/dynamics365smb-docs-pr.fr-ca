@@ -2,18 +2,17 @@
 title: Mettre à jour les taux de change (contient une vidéo)
 description: Suivez des montants dans différentes devises à l’aide de codes devise, et laissez Business Central ajuster les taux de devise étrangère des écritures reportées avec un service externe.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keywords: multiple currencies, adjust exchange rates, FX rates
 ms.search.form: 5, 118
-ms.date: 07/23/2021
+ms.date: 02/17/2022
 ms.author: edupont
-ms.openlocfilehash: 93a5059be3810af4d0351c6508c5d6119eaa4015
-ms.sourcegitcommit: 2ab6709741be16ca8029e2afadf19d28cf00fbc7
+ms.openlocfilehash: 04f96b269b842045c1a804f976ffddfd5348befc
+ms.sourcegitcommit: 75a388b1d8917e2bbd49398ef76cf86cf37e6767
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "7972911"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323276"
 ---
 # <a name="update-currency-exchange-rates"></a>Mettre à jour des taux de change devise
 
@@ -28,6 +27,9 @@ Votre grand livre est configuré pour utiliser votre devise locale ($), mais vou
 
 > [!IMPORTANT]
 > Si vous souhaitez utiliser une devise de report additionnelle pour le rapport financier, assurez-vous de bien comprendre les limites. Pour plus d'informations, voir [Configurer une devise de report additionnelle](finance-how-setup-additional-currencies.md).
+
+> [!NOTE]  
+> Lorsque vous effectuez un report dans le grand livre à l’aide d’un code devise, par exemple pour reporter une dépense dans un journal général à l’aide d’un code devise, la transaction est convertie en $ à l’aide du taux de change de la devise à la date de report. L’écriture GL ne contiendra pas d’informations sur la devise utilisée, uniquement sa valeur en $. Si vous voulez garder une trace de la devise d’origine, comme pour une facture, vous devez utiliser les documents de vente et d’achat ainsi que les comptes bancaires qui stockent les informations de code de devise pour les écritures.
 
 ## <a name="currencies"></a>Devises
 
