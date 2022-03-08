@@ -1,21 +1,23 @@
 ---
-title: Restructurer les entrepôts
-description: Découvrez comment restructurer votre entrepôt avec de nouveaux codes de zone et de nouvelles caractéristiques de zone pour atteindre ou maintenir une opération plus efficace.
+title: Comment restructurer des entrepôts | Microsoft Docs
+description: Vous pouvez souhaiter restructurer votre entrepôt avec de nouveaux codes et caractéristiques zone.
+services: project-madeira
+documentationcenter: ''
 author: SorenGP
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.search.form: 9813, 9814
-ms.date: 06/25/2021
-ms.author: edupont
-ms.openlocfilehash: 97a8ff2971ca8cc6e34fb89cd5edbb092ac264a8
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: d615322b183a0b99e16ed0802601dcffa1dc6dd1
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8144291"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2313868"
 ---
 # <a name="restructure-warehouses"></a>Restructurer les entrepôts
 Vous pouvez souhaiter restructurer votre entrepôt avec de nouveaux codes et caractéristiques zone. Ce type d'activité n'intervient que très rarement, mais un reclassement peut s'avérer nécessaire pour mettre à jour une opération ou la rendre plus efficace. Par exemple :  
@@ -27,11 +29,11 @@ Vous pouvez souhaiter restructurer votre entrepôt avec de nouveaux codes et car
 Si votre entrepôt est configuré pour utiliser des zones, mais sans prélèvement ni rangement suggérés, restructurez-le en créant les nouvelles zones à utiliser à l'avenir.  
 
 ## <a name="to-restructure-a-basic-warehouse-that-uses-bins-only"></a>Pour restructurer un entrepôt de base qui utilise uniquement des emplacements  
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Dans le raccourci **Entrepôt**, paramétrez le champ **Sélection zone par déf.** sur **Dernière zone utilisée**.  
 3.  Déplacez le contenu des emplacements actuels vers les emplacements que vous venez de créer.  
 
-    1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal reclassement article**, puis sélectionnez le lien associé.  
+    1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal reclassement article**, puis sélectionnez le lien associé.  
     2.  Sélectionnez une ligne journal, puis choisissez l'action **Extraire contenu de la zone**.  
     3.  Sur le raccourci **Contenu de la zone**, définissez des filtres dans les champs **Code d'emplacement**, **Code de zone** et **N° article** pour indiquer le contenu que vous souhaitez déplacer.  
     4.  Cliquez sur le bouton **OK** pour renseigner une ligne feuille.  
@@ -46,13 +48,13 @@ Vous avez à présent vidé les emplacements où les articles se trouvaient aupa
 1.  Créez les emplacements à utiliser ultérieurement. Pour plus d'informations, voir [Créer zones](warehouse-how-to-create-individual-bins.md).  
 2.  Déplacez le contenu des emplacements actuels vers les emplacements que vous venez de créer.  
 
-    1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal reclassement entrepôt**, puis sélectionnez le lien associé.  
+    1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal reclassement entrepôt**, puis sélectionnez le lien associé.  
     2.  Pour les emplacements sans mouvement réel d'articles, créez une ligne pour chacun de vos emplacements actuels dans la **feuille reclassement entrepôt** avec l'ancien code emplacement , **Du code emplacement**, et le nouveau code emplacement , **Du code emplacement**.  
     3.  Si certains mouvements nécessitent des mouvements physiques réels de la part des employés, utilisez les **feuilles mouvements** pour préparer les instructions mouvement au lieu d'utiliser la feuille reclassement entrepôt. Pour plus d'informations, voir [Déplacer des articles dans les configurations de stockage avancées](warehouse-how-to-move-items-in-advanced-warehousing.md).  
 
 3.  Lorsque les anciens emplacements sont vidés, reclassez-les en tant qu'emplacements de type **CQ** pour vous assurer qu'ils ne sont pas inclus dans les flux d'articles.  
 
-    1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
+    1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, puis sélectionnez le lien associé.  
     2.  Sélectionnez la ligne indiquant l'emplacement, puis, choisissez l'action **Zones**.  
     3.  Sur la page **Zones**, dans le champ **Code type zone**, entrez **CQ** pour chacune des anciennes zones que vous avez vidées à l'étape 3 de la procédure précédente.  
 
@@ -60,7 +62,7 @@ Vous avez à présent supprimé les zones du flux entrepôt et les avez reclass�
 
 ## <a name="to-delete-a-bin"></a>Pour supprimer une zone  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'emplacement à partir duquel vous souhaitez supprimer des zones. Choisissez l'action **Zones**.  
 3.  Sélectionnez les lignes des emplacements que vous souhaitez supprimer.  
 4.  Cliquez sur l'action **Supprimer**.  
@@ -71,7 +73,7 @@ Pour renommer une zone de façon à ce que tous les enregistrements associés à
 
 ## <a name="to-rename-a-bin-and-change-the-bin-code-in-all-records"></a>Pour renommer une zone et modifier le code de zone de tous les enregistrements  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'emplacement dans lequel vous souhaitez renommer une zone ou modifier le code de zone, puis choisissez l'action **Zones**.  
 3.  Sélectionnez l'emplacement que vous souhaitez modifier et entrez un nouveau code emplacement dans le champ **Code**.  
 4.  Cliquez sur le bouton **Oui**.  
@@ -87,7 +89,4 @@ Pour renommer une zone de façon à ce que tous les enregistrements associés à
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

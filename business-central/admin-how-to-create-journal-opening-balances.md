@@ -1,39 +1,36 @@
 ---
-title: Créer des soldes ouverts journal
-description: Les traitements en lot qui sont livrés pour aider au transfert des soldes de compte hérité vers une compagnie nouvellement configurée. Vous pouvez facilement transférer ces données avec des reports de journal.
+title: Procédure de création de soldes ouverts journal | Microsoft Docs
+description: Business Central inclut plusieurs traitements en lot qui sont fournis pour aider au transfert des soldes de compte hérités vers une compagnie nouvellement configurée. Vous pouvez facilement transférer ces données avec des reports de journal.
 author: SorenGP
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 01/24/2022
-ms.author: edupont
-ms.openlocfilehash: de528dd08911b49f7bf09dc541615da93fd190cc
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: 63013d244b5cab25e520bb05af4c84293aa5ed48
+ms.sourcegitcommit: 3d128a00358668b3fdd105ebf4604ca4e2b6743c
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8145045"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2910770"
 ---
 # <a name="create-journal-opening-balances"></a>Créer des soldes ouverts journal
-
-[!INCLUDE[prod_short](includes/prod_short.md)] inclut plusieurs traitements par lots qui sont livrés pour aider au transfert des soldes de compte hérité vers une société nouvellement configurée. Vous pouvez facilement transférer ces données avec le journal clients, le journal fournisseurs, le journal articles ou le journal GL.
+[!INCLUDE[d365fin](includes/d365fin_md.md)] inclut plusieurs traitements par lots qui sont livrés pour aider au transfert des soldes de compte hérité vers une société nouvellement configurée. Vous pouvez facilement transférer ces données avec le journal clients, le journal fournisseurs, le journal articles ou le journal GL.
 
 La première étape consiste à créer un package de configuration incluant les tables de configuration pour ces journaux. La procédure suivante est basée sur l’hypothèse que cette étape est terminée. Pour plus d'informations, voir [Définir une configuration de compagnie](admin-set-up-company-configuration.md). Cette procédure explique les étapes suivantes, comme le lettrage du package qui est fourni par un partenaire.  
 
 Avant de commencer, vérifiez que vous utilisez la page Tableau de bord Administration, car elle fournit le contexte correct pour votre travail de configuration. Pour plus d'informations, voir [Modifier les paramètres de base](ui-change-basic-settings.md).
 
-## <a name="to-apply-the-entries-in-a-journal-to-a-new-company"></a>Pour affecter les écritures d'un journal à une compagnie
-
+## <a name="to-apply-the-entries-in-a-journal-to-a-new-company"></a>Pour affecter les écritures d'un journal à une compagnie  
 1. Configurez une nouvelle compagnie et appliquez-lui un package configuration. Pour plus d'informations, voir [Configurer une compagnie avec l’assistant RapidStart](admin-how-to-configure-a-company-with-the-rapidstart-wizard.md).  
 
     La nouvelle compagnie ne contient pas d’informations sur les soldes ouverts journal.  
 
 2. Ouvrez la feuille configuration et importez les données existantes à propos des clients, des articles, des fournisseurs et du grand livre. Pour plus d'informations, voir [Migrer des données client](admin-migrate-customer-data.md).  
-
-    Les données de base sont maintenant en place. Ensuite, vous ajoutez les soldes d'ouverture. Les étapes suivantes décrivent comment créer des lignes journal pour les comptes du grand livre, mais la même procédure s'applique à la création de lignes journal pour les clients, les fournisseurs et les articles.  
-3. Choisissez l'action **Créer lignes journal compte du grand livre**.  
+3. Choisissez, par exemple, l'action **Créer lignes journal compte général**.  
 4. Renseignez le raccourci **Options** de la manière appropriée, puis définissez les filtres selon vos besoins. Par exemple, dans le champ **Modèle feuille**, entrez un nom.  
 5. Cliquez sur le bouton **OK**. Les enregistrements se trouvent maintenant dans le journal, mais les montants sont vides.  
 6. Exportez la table journal vers Excel, puis entrez manuellement le report et les informations de compte de solde à partir des données héritées.
@@ -42,17 +39,7 @@ Avant de commencer, vérifiez que vous utilisez la page Tableau de bord Administ
 9. Examinez les informations, puis sélectionnez l'action **Reporter**.  
 10. Répétez les étapes pour importer et reporter les autres soldes ouverts.  
 
-> [!TIP]
-> Vous pouvez utiliser les mêmes traitements en lot pour ajouter des soldes d'ouverture chaque fois que vous enregistrez un nouveau client ou fournisseur avec lequel vous avez déjà traité mais qui n'est pas enregistré dans [!INCLUDE [prod_short](includes/prod_short.md)]. Recherchez simplement la tâche appropriée, puis choisissez le lien approprié.
-
-> [!IMPORTANT]
-> Notamment pour les soldes d’ouverture des comptes bancaires, ne suivez pas les étapes de cet article pour reporter directement sur les comptes du grand livre associés aux comptes bancaires concernés. Pour plus d'informations, reportez vous à [Configuration de comptes bancaires](bank-how-setup-bank-accounts.md).  
-
-## <a name="see-also"></a>Voir aussi
-
-[Appliquer des configurations à de nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
+## <a name="see-also"></a>Voir aussi  
+[Appliquer des configurations aux nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
-[Administration](admin-setup-and-administration.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Administration](admin-setup-and-administration.md)

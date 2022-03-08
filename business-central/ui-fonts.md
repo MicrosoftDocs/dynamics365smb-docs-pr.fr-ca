@@ -1,21 +1,21 @@
 ---
 title: Polices disponibles
-description: Découvrez les polices préinstallées que vous pouvez utiliser pour vos rapports externes.
+description: La version en ligne de Business Central contient des polices préinstallées sur les serveurs qui peuvent être utilisées lors de la génération de rapports.
 author: SorenGP
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.search.form: 9020, 9022, 9026, 9027, 9030, 9000, 9004, 9005, 9018, 9006, 9007, 9010, 9016, 9017
-ms.date: 11/30/2021
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: faa581a88a6c7503c34177db459345a24638a95a
-ms.sourcegitcommit: cdb57f14960f58b1d36a1b373fbf35dfed5fad9e
+ms.openlocfilehash: 0cfcf4bcda748ec2f46f24013d887252310596c0
+ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8334967"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7588034"
 ---
 # <a name="available-fonts"></a>Polices disponibles
 
@@ -48,22 +48,15 @@ En plus des polices MICR, des polices de sécurité spéciales sont disponibles 
 Pour plus d'informations, voir [Sélectionner une mise en page de chèque](finance-how-define-check-layouts.md).  
 
 ## <a name="fonts-for-barcodes"></a>Polices pour codes à barres
-Les polices pour générer des codes à barres sont installées et disponibles pour être utilisées dans les présentations de rapport Word et RDLC.
+Les polices pour générer des codes à barres unidimensionnels sont installées et disponibles pour être utilisées dans les présentation de rapport Word et RDLC.
 
-Les symbologies de codes à barres unidimensionnels suivantes sont prises en charge :
+Les symbologies de codes à barres suivantes sont prises en charge :
 * Code 3 sur 9 (Code 39)
 * Code 128
 * Code 93
 * Codabar
 * MSI
 * Entrelacé 2 sur 5
-
-Les symbologies de codes à barres bidimensionnels suivantes sont prises en charge :
-* Aztec
-* Matrice de données
-* Maxicode
-* PDF417
-* QR
 
 Pour plus d′informations, voir [Polices de codes-barres avec Business Central Online](/dynamics365/business-central/dev-itpro/developer/devenv-report-barcode-fonts).
 

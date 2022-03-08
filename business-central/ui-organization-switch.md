@@ -1,18 +1,18 @@
 ---
-title: Passer à une autre compagnie ou un autre environnement
+title: Passer à une autre compagnie ou un autre environnement | Microsoft Docs
 description: Si vous travaillez pour plusieurs organisations, vous pouvez rapidement passer d'un environnement et d'une compagnie à l'autre.
 author: bholtorf
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keywords: environments, companies, tenants, organization
-ms.search.form: 9020, 9022, 9026, 9027, 9030, 9000, 9004, 9005, 9018, 9006, 9007, 9010, 9016, 9017
-ms.date: 10/04/2021
+ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 265974a70dc54bae24ea26aa1385fbf2c2ef9cb5
-ms.sourcegitcommit: cdb57f14960f58b1d36a1b373fbf35dfed5fad9e
+ms.openlocfilehash: f6a5d435243b6912ddac449fd55aa4c2bce3f291
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8335276"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5783410"
 ---
 # <a name="switching-to-another-company-or-environment"></a>Passer à une autre compagnie ou un autre environnement
 
@@ -23,22 +23,17 @@ ms.locfileid: "8335276"
 
 ## <a name="switch-to-another-environment"></a>Passer à un autre environnement
 
-Lorsque vous êtes connecté à [!INCLUDE[prod_short](includes/prod_short.md)], les environnements auxquels vous pouvez accéder sont disponibles sur le site Office.com. 
+Lorsque vous êtes connecté à [!INCLUDE[prod_short](includes/prod_short.md)], les environnements auxquels vous pouvez accéder sont disponibles sur la page d’accueil de Dynamics 365. Vous pouvez ouvrir la page en choisissant l'icône **Lanceur d'applications** ![Lanceur d'applications](media/app-launcher-icon.png "Le lanceur d'applications donne accès à plus de fonctionnalités") et en choisissant **Dynamics 365**. Pour accéder à votre compagnie par défaut dans cet environnement, choisissez la vignette. Il y aura une vignette pour chaque type d'environnement. Si vous disposez de plusieurs environnements d'un certain type, lorsque vous choisissez la vignette, vous pouvez choisir l'environnement auquel accéder.
 
-1. Sélectionnez l’icône **Lanceur d’applications** ![Lanceur d’applications.](media/app-launcher-icon.png "Le lanceur d'applications donne accès à plus de fonctionnalités").
-2. Si vous ne voyez pas d’application pour [!INCLUDE[prod_short](includes/prod_short.md)] dans le volet qui s’ouvre, choisissez **Office 365**. Ensuite, entrez **Business Central** dans la zone **Rechercher**, ou sélectionnez **Toutes les applications** > **Applications métier**.   
-3. Il y en aura une application [!INCLUDE[prod_short](includes/prod_short.md)] répertoriée pour chaque type d’environnement, tels que production et sandbox. Pour passer à un autre environnement, choisissez l’application [!INCLUDE[prod_short](includes/prod_short.md)] pour le type d’environnement dont il s’agit. S’il existe plusieurs environnements d’un certain type, il vous sera demandé de choisir l’environnement auquel accéder.
+L'image suivante montre des vignettes pour accéder aux environnements de production et sandbox sur la page d'accueil de Dynamics 365.
 
-<!--
-The following image shows tiles for accessing production and sandbox environments on the Dynamics 365 Home page.
+:::image type="content" source="media/app-picker-environments.png" alt-text="La page d'accueil de Dynamics 365 montrant les environnements de production et sandbox.":::
 
-:::image type="content" source="media/app-picker-environments.png" alt-text="The Dynamics 365 Home page showing production and sandbox environments.":::
--->
 ## <a name="switch-to-another-company"></a>Passer à une autre compagnie
 
 Lorsque vous êtes connecté à [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez rapidement passer à une autre compagnie. Après avoir effectué le changement, la compagnie que vous choisissez devient votre compagnie par défaut et s'affichera la prochaine fois que vous vous connecterez.
 
-1. Dans le coin supérieur droit, sélectionnez l’icône **Paramètres** ![Paramètres.](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez l’action **Mes paramètres**.
+1. Dans le coin supérieur droit, sélectionnez l’icône **Paramètres** ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez l’action **Mes paramètres**.
 
     > [!TIP]
     > Vous pouvez également utiliser le raccourci clavier Alt + T pour ouvrir rapidement la page Mes paramètres.

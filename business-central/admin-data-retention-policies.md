@@ -1,24 +1,24 @@
 ---
-title: Nettoyer les données avec des stratégies de rétention
+title: Nettoyer les données avec des stratégies de rétention | Microsoft Docs
 description: Vous pouvez spécifier la fréquence à laquelle vous souhaitez supprimer certains types de données.
 author: bholtorf
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: delete, data, retention, policy, policies
-ms.search.form: 3903, 3901
-ms.date: 04/01/2021
+ms.date: 10/01/2020
 ms.author: bholtorf
-ms.openlocfilehash: 955b85020d4cb13f108bc1923de66eb13ade0061
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 279a76751b6652221d83ee453cc171bf357c0328
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8132195"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3927776"
 ---
 # <a name="define-retention-policies"></a>Définir des stratégies de rétention
-Les administrateurs peuvent définir des stratégies de rétention pour spécifier à quelle fréquence ils souhaitent que [!INCLUDE[prod_short](includes/prod_short.md)] supprime les données obsolètes dans les tables contenant des entrées de journal et des enregistrements archivés. Par exemple, le nettoyage des entrées de journal peut faciliter l’utilisation des données réellement pertinentes. Les stratégies peuvent inclure toutes les données des tables qui ont dépassé la date d’expiration, ou vous pouvez ajouter des critères de filtre qui n’incluront que certaines données expirées dans la stratégie. 
+Les administrateurs peuvent définir des stratégies de rétention pour spécifier à quelle fréquence ils souhaitent que [!INCLUDE[prodshort](includes/prodshort.md)] supprime les données obsolètes dans les tables contenant des entrées de journal et des enregistrements archivés. Par exemple, le nettoyage des entrées de journal peut faciliter l’utilisation des données réellement pertinentes. Les stratégies peuvent inclure toutes les données des tables qui ont dépassé la date d’expiration, ou vous pouvez ajouter des critères de filtre qui n’incluront que certaines données expirées dans la stratégie. 
 
 ## <a name="required-setups-and-permissions"></a>Paramètres et autorisations obligatoires
 Avant de pouvoir utiliser des stratégies de rétention, vous devez définir les éléments suivants.
@@ -31,7 +31,7 @@ Avant de pouvoir utiliser des stratégies de rétention, vous devez définir les
 En outre, vous devez disposer des autorisations d’utilisateur AVANCÉ ou de l’ensemble d’autorisations de configuration de la stratégie de rétention. Les utilisateurs disposant de l’ensemble d’autorisations de configuration de la stratégie de rétention peuvent définir des stratégies de rétention pour les tables, même s’ils ne disposent pas des autorisations de lecture et de suppression pour ces tables. L’écriture file d'attente des travaux doit s’exécuter en tant qu’utilisateur disposant des autorisations nécessaires pour lire et supprimer les données. Nous vous recommandons de ne pas accorder l’ensemble d’autorisations de configuration de la stratégie de rétention aux utilisateurs qui ne devraient pas être autorisés à supprimer des données.
 
 > [!NOTE]
-> Si vous utilisez [!INCLUDE[prod_short](includes/prod_short.md)] en local, et que vous souhaitez essayer les stratégies de rétention dans la base de données de démonstration Cronus, vous devez effectuer certaines opérations. La compagnie de démonstration ne contient pas de tables que vous pouvez utiliser avec des stratégies de rétention, vous devez donc les ajouter. Pour ce faire, créez une compagnie vierge dans la base de données de démonstration. Dans la nouvelle compagnie, importez le package de configuration RapidStart pour votre pays qui correspond au package standard NAV17.0.W1.ENU.STANDARD.rapidstart. Les données de configuration des stratégies de rétention seront disponibles dans la nouvelle compagnie.
+> Si vous utilisez [!INCLUDE[prodshort](includes/prodshort.md)] en local, et que vous souhaitez essayer les stratégies de rétention dans la base de données de démonstration Cronus, vous devez effectuer certaines opérations. La compagnie de démonstration ne contient pas de tables que vous pouvez utiliser avec des stratégies de rétention, vous devez donc les ajouter. Pour ce faire, créez une compagnie vierge dans la base de données de démonstration. Dans la nouvelle compagnie, importez le package de configuration RapidStart pour votre pays qui correspond au package standard NAV17.0.W1.ENU.STANDARD.rapidstart. Les données de configuration des stratégies de rétention seront disponibles dans la nouvelle compagnie.
 
 ### <a name="to-create-retention-periods"></a>Pour créer des périodes de rétention
 Les périodes de rétention peuvent être aussi longues ou aussi courtes que vous le souhaitez. Pour créer des périodes de rétention, sur la page **Stratégies de rétention**, utilisez l’action **Durée de rétention**. Les périodes que vous définissez seront disponibles pour toutes les stratégies.
@@ -40,7 +40,7 @@ Les périodes de rétention peuvent être aussi longues ou aussi courtes que vou
 > Pour des raisons de conformité, nous avons défini une période de rétention minimale pour certaines tables. Si vous définissez une période de rétention plus courte que le minimum requis, un message affichera la période obligatoire.
 
 ### <a name="set-up-a-retention-policy"></a>Configurer une stratégie de rétention
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Stratégies de rétention**, puis choisissez le lien associé.
+1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Stratégies de rétention**, puis sélectionnez le lien associé.
 2. Dans le champ **Code table**, sélectionnez la table que vous souhaitez inclure dans la stratégie.
 3. Dans le champ **Durée de rétention**, spécifiez la durée pendant laquelle conserver les données dans la table.
 4. Facultatif : Pour appliquer la stratégie à des données spécifiques dans une table, désactivez le bouton Appliquer à tous les enregistrements. Le raccourci Stratégie de rétention des enregistrements s’affiche, dans lequel vous pouvez définir des filtres pour créer des sous-jeux de données pour chaque ligne. Pour plus d'informations, reportez-vous à la rubrique [Filtrage](ui-enter-criteria-filters.md#filtering).
@@ -59,7 +59,7 @@ Vous pouvez appliquer manuellement une stratégie en utilisant l’action **Appl
 Vous pouvez afficher l’activité liée aux stratégies de rétention dans la page **Journal des stratégies de rétention**. Par exemple, des écritures sont créées lorsqu’une stratégie est appliquée ou si des erreurs se sont produites lorsque cela s’est produit. 
 
 ## <a name="including-your-extension-in-a-retention-policy-requires-help-from-a-developer"></a>Inclusion de votre extension dans une stratégies de rétention (nécessite l’aide d’un développeur)
-Par défaut, les stratégies de rétention couvrent uniquement les tables incluses dans la liste des tableaux [!INCLUDE[prod_short](includes/prod_short.md)] que nous fournissons. Vous pouvez supprimer les tables par défaut de la liste et ajouter des tables qui vous appartiennent. Autrement dit, vous ne pouvez pas ajouter une table que vous n’avez pas créée vous-même. Par exemple, vous ne pouvez pas ajouter d’autres tables à partir de [!INCLUDE[prod_short](includes/prod_short.md)] ou à partir d’une extension que vous avez achetée.
+Par défaut, les stratégies de rétention couvrent uniquement les tables incluses dans la liste des tableaux [!INCLUDE[prodshort](includes/prodshort.md)] que nous fournissons. Vous pouvez supprimer les tables par défaut de la liste et ajouter des tables qui vous appartiennent. Autrement dit, vous ne pouvez pas ajouter une table que vous n’avez pas créée vous-même. Par exemple, vous ne pouvez pas ajouter d’autres tables à partir de [!INCLUDE[prodshort](includes/prodshort.md)] ou à partir d’une extension que vous avez achetée.
 
 Pour ajouter vos tables à la liste des tables autorisées, un développeur doit ajouter du code, par exemple au codeunit d’installation de l’extension (un codeunit avec le sous-type *install*). 
 
@@ -67,7 +67,7 @@ Lorsqu’un développeur ajoute une table, il peut spécifier des filtres obliga
 
 Voici des exemples de la façon d’ajouter une table à la liste des tables autorisées avec et sans filtres obligatoires ou par défaut. Pour un exemple plus complexe, voir codeunit 3999 « Reten. Pol. Install – BaseApp ». 
 
-```al
+```
  trigger OnInstallAppPerCompany()
     var
         RetenPolAllowedTables: Codeunit "Reten. Pol. Allowed Tables";
@@ -78,7 +78,7 @@ Voici des exemples de la façon d’ajouter une table à la liste des tables aut
 
 L’exemple suivant inclut un filtre obligatoire.
 
-```al
+```
  trigger OnInstallAppPerCompany()
     var
         ChangeLogEntry: Record "Change Log Entry";
@@ -98,15 +98,10 @@ L’exemple suivant inclut un filtre obligatoire.
         RetenPolAllowedTables.AddAllowedTable(Database::"Change Log Entry", ChangeLogEntry.FieldNo(SystemCreatedAt), TableFilters);
     end;
 ```
-
 Une fois qu’un développeur a ajouté des tables à la liste, un administrateur peut les inclure dans une stratégie de rétention. 
 
 ## <a name="see-also"></a>Voir aussi
-
-[Analyse de la télémétrie de suivi des stratégies de rétention](/dynamics365/business-central/dev-itpro/administration/telemetry-retention-policy-trace)  
 [Audit des modifications dans Business Central](across-log-changes.md)  
 [Filtrage](ui-enter-criteria-filters.md#filtering)  
 [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

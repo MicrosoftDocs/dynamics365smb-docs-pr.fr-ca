@@ -2,6 +2,7 @@
 title: Gestion de l’intégration de OneDrive avec Business Central
 description: Découvrez ce que vous pouvez faire pour gérer une intégration entre Business Central et OneDrive Entreprise.
 author: bholtorf
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -9,12 +10,12 @@ ms.workload: na
 ms.search.keywords: OneDrive, share, browser
 ms.date: 05/12/2021
 ms.author: bholtorf
-ms.openlocfilehash: 20c6eb27aa3af2557ce77993b11f759f2c329100
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: cceb05c1ad19a95494c188cd2482b45962535c94
+ms.sourcegitcommit: 99c705d160451c05b226350ff94b52fb0c3ae7a0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8144034"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7606420"
 ---
 # <a name="managing-onedrive-integration-with-business-central"></a>Gestion de l’intégration de OneDrive avec Business Central 
 Cet article fournit un aperçu de ce que peut faire un administrateur pour contrôler l’intégration de OneDrive Entreprise avec [!INCLUDE[prod_short](includes/prod_short.md)]. Les clients en ligne de [!INCLUDE[prod_short](includes/prod_short.md)] bénéficient d’une intégration automatique, sans configuration supplémentaire requise, pour utiliser ces fonctionnalités. 
@@ -67,7 +68,7 @@ Un administrateur doit établir la connexion entre [!INCLUDE[prod_short](include
 
    For more information, see [Authenticating Business Central Users with Azure Active Directory](/dynamics365/business-central/dev-itpro/administration/authenticating-users-with-azure-active-directory)-->
 
-Ajoutez une application enregistrée pour Business Central dans votre locataire Azure AD de votre plan Microsoft 365. Comme d′autres services Azure qui fonctionnent avec Business Central, OneDrive nécessite une inscription d′application dans Azure Active Directory (Azure AD). L’enregistrement de l’application fournit des services d’authentification et d’autorisation entre Business Central et SharePoint, qui sont utilisés par OneDrive.
+Ajoutez une application enregistrée pour Business Central dans votre locataire Azure AD de votre plan Microsoft 365. Comme d′autres services Azure qui fonctionnent avec Business Central, OneDrive nécessite une inscription d′application dans Azure Active Directory (Azure AD). L’enregistrement de l’application fournit des services d’authentification et d’autorisation entre Business Central et SharePoint, qui sont utilisés par OneDrive.
 
 Configurez l’application enregistrée avec les autorisations suivantes déléguées à l’API SharePoint :
 

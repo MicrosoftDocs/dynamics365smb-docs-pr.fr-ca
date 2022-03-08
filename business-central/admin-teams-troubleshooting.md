@@ -2,19 +2,20 @@
 title: Dépannage de l’intégration de Microsoft Teams
 description: Découvrez ce que vous pouvez faire en tant qu’administrateur pour contrôler l’intégration Microsoft Teams.
 author: jswymer
+ms.service: dynamics365-business-central
 ms.topic: get-started-article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: Teams, MS Teams, Microsoft Teams, Skype, Link, Microsoft 365, collaborate, collaboration, teamwork, troubleshooting, errors
-ms.date: 10/01/2021
+ms.date: 04/12/2021
 ms.author: jswymer
-ms.openlocfilehash: 7bea8e591b92666c6d92ce34b0849ad774dcc35a
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: a26414ae33b0139257c542966ba9ccd934241a66
+ms.sourcegitcommit: 921f0c4043dcda2fb8fc35df1b64310bf32270d7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8147018"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6017134"
 ---
 # <a name="troubleshooting-microsoft-teams-integration-with-prod_short"></a>Dépannage de l’intégration de Microsoft Teams avec [!INCLUDE [prod_short](includes/prod_short.md)]
 
@@ -148,22 +149,12 @@ En tant qu’administrateur, avec des autorisations d’administrateur Azure Act
 > [!NOTE]
 > Il faudra un certain temps avant que ce changement ne prenne effet.
 
-## <a name="duplicate-text-in-the-share-to-teams-window"></a>Dupliquer du texte dans la fenêtre Partager avec Teams
-
-Lorsque vous collez du texte dans la zone de message de la fenêtre **Partager avec Teams**, le texte est dupliqué. Ce problème est connu de Microsoft et sera résolu dans une mise à jour ultérieure. 
-
-## <a name="unable-to-sign-into-the-share-to-teams-window"></a>Impossible de se connecter à la fenêtre Partager avec Teams 
-
-Ce problème peut être causé par diverses raisons. Par exemple, l’identité que vous utilisez pour vous connecter doit avoir accès à Microsoft Teams, par exemple via un abonnement Microsoft 365.
 
 ## <a name="see-also"></a>Voir aussi
 
 [Vue d’ensemble de l’intégration [!INCLUDE [prod_short](includes/prod_short.md)] et Microsoft Teams ](across-teams-overview.md)  
 [Installer l’application [!INCLUDE [prod_short](includes/prod_short.md)] pour Microsoft Teams](across-install-app-for-teams.md)  
-[Recherche de clients, de fournisseurs et autres contacts dans Microsoft Teams](across-search-contacts-teams.md)  
-[Partager des enregistrements dans Microsoft Teams](across-working-with-teams.md)  
 [FAQ Teams](teams-faq.md)  
-[Modification de la compagnie et d’autres paramètres dans Teams](across-teams-settings.md)  
 [Développement pour l’intégration de Teams](/dynamics365/business-central/dev-itpro/developer/devenv-develop-for-teams)  
 
 ## [!INCLUDE[d365fin](includes/free_trial_md.md)]  

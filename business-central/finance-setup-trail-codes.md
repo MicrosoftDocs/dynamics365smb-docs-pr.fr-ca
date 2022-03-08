@@ -1,21 +1,21 @@
 ---
-title: Configurer des codes pour les pistes d’audit
+title: Configurer des codes pistes d'audit | Microsoft Docs
 description: Découvrez les tâches de configuration des codes source et des codes motif que vous pouvez utiliser pour suivre les pistes d'audit.
 author: edupont04
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
-ms.search.form: 257, 259, 279
-ms.date: 04/01/2021
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 7d89c5795b9f4d0115469a505305bf3264eab613
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 9dab74a6a8debd20de781890c3b391457c6034e3
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8133768"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5386909"
 ---
 # <a name="setting-up-source-codes-and-reason-codes-for-audit-trails"></a>Configuration des codes source et des codes de motif pour les pistes d'audit
 
@@ -33,7 +33,7 @@ Lorsque vous reportez ou exécutez un traitement en lot, le code source correct 
 
 ### <a name="to-define-source-codes"></a>Pour définir des codes journaux
 
-1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") saisissez **Configuration du code source**, puis choisissez le lien associé.  
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), saisissez **Configuration code source**, puis sélectionnez le lien associé.  
 
 2. Dans la fenêtre **Configuration code source**, pour chaque type de report et traitement en lot, spécifiez le code source approprié.  
 
@@ -45,7 +45,7 @@ Vous pouvez modifier un code journal. Par exemple, vous pouvez remplacer le code
 
 ### <a name="to-change-source-codes"></a>Pour modifier des codes journaux
 
-1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Codes journal.**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), saisissez **Codes source**, puis sélectionnez le lien associé.
 
 2. Sur la ligne du code à modifier, sélectionnez le code dans le champ **Code**.
 
@@ -59,7 +59,7 @@ Les codes de motif complètent les codes source et sont utilisés pour indiquer 
 
 ### <a name="to-set-up-reason-codes"></a>Pour configurer des codes motif
 
-1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche")  entrez **Codes de motif**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), saisissez **Codes motif**, puis sélectionnez le lien associé.
 
 2. Dans la fenêtre **Codes motif**, saisissez le premier code dans le champ **Code**. Dans le champ **Description**, saisissez un texte explicatif.
 
@@ -69,7 +69,7 @@ La procédure suivante décrit comment ajouter un code motif à un modèle journ
 
 ### <a name="to-assign-reason-codes-to-journal-templates"></a>Pour affecter des codes motif à des modèles journal
 
-1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche")  entrez **Modèles journal général**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Modèles journal général**, puis sélectionnez le lien associé.
 
 2. Sur la ligne du modèle journal sélectionné, renseignez le champ **Code motif** avec le code souhaité.
 

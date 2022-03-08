@@ -1,22 +1,23 @@
 ---
-title: Effectuer le suivi des segments et des interactions correspondantes
+title: Effectuer le suivi des segments et des interactions correspondantes| Microsoft Docs
 description: En savoir plus sur la création de segments pour définir des groupes de contacts et spécifier des interactions pour des segments.
+services: project-madeira
 documentationcenter: ''
 author: jswymer
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: relationship, prospect
-ms.search.forms: 5139,
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: 792b2172a96287732e9ae81c8af5fd6ba5aeccf7
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: b57ae29a8825e29f5f6faaf536cb1411d74c127f
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8131415"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5782098"
 ---
 # <a name="manage-interactions-for-segments"></a>Gérer les interactions pour les segments
 La page **Segment** est un type de feuille activité dans laquelle vous pouvez effectuer les opérations suivantes :

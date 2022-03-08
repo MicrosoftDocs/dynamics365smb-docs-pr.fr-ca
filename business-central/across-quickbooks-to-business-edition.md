@@ -1,26 +1,27 @@
 ---
-title: Transférer des données à partir d’une application QuickBooks
+title: Transférer des données depuis une application QuickBooks | Microsoft Docs
 description: Vous pouvez migrer les données telles que les clients, les fournisseurs, les articles en inventaire et les comptes du grand livre des applications QuickBooks vers Business Central.
+documentationcenter: ''
 author: bholtorf
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: app, import, migrate, data, transfer, QuickBooks, customize
-ms.search.form: 1808
-ms.date: 04/01/2021
+ms.date: 04/01/2019
 ms.author: bholtorf
-ms.openlocfilehash: 9e8f24712efe1c6902d83e3c454d5c90209629c3
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 44c71104ddbc40c803d4b917279dd3cee8c8fc83
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8134071"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1241035"
 ---
 # <a name="changing-from-a-quickbooks-app-to-dynamics-365-business-central"></a>Le passage d'une application QuickBooks à Dynamics 365 Business Central
-De plus en plus de sociétés croissantes passent d'applications financières comme QuickBooks Desktop et QuickBooks Online, qui sont conçues pour les startups et autres petites entreprises, à [!INCLUDE[prod_short](includes/prod_short.md)], qui prend en charge également des organisations plus grandes et plus complexes. 
+De plus en plus de sociétés croissantes passent d'applications financières comme QuickBooks Desktop et QuickBooks Online, qui sont conçues pour les startups et autres petites entreprises, à [!INCLUDE[d365fin](includes/d365fin_md.md)], qui prend en charge également des organisations plus grandes et plus complexes. 
 
-À mesure qu'elles effectuent leur transition, les compagnies souhaitent généralement emporter leurs données métier avec elles pour ne pas repartir de zéro. Pour faciliter le transfert de données, [!INCLUDE[prod_short](includes/prod_short.md)] offre des extensions intégrées qui migrent les données, telles que les clients, les fournisseurs, les articles en inventaire et les comptes GL. Les extensions suivantes sont installées et prêtes à être utilisées comme parties intégrantes du guide de configuration assistée **Migration des données** :
+À mesure qu'elles effectuent leur transition, les compagnies souhaitent généralement emporter leurs données métier avec elles pour ne pas repartir de zéro. Pour faciliter le transfert de données, [!INCLUDE[d365fin](includes/d365fin_md.md)] offre des extensions intégrées qui migrent les données, telles que les clients, les fournisseurs, les articles en inventaire et les comptes GL. Les extensions suivantes sont installées et prêtes à être utilisées comme parties intégrantes du guide de configuration assistée **Migration des données** :
 
 * QuickBooks Data Migration 
 * Migration des données QuickBooks Online
@@ -31,11 +32,8 @@ Pour plus d'informations sur l'extension correspondant à votre application Quic
 * [Extension de migration des données QuickBooks Online](ui-extensions-quickbooks-online-data-migration.md)
 
 ## <a name="ready-now"></a>Vous êtes prêt ?
-Si vous êtes prêt à commencer maintenant, choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration assistée**, puis choisissez le lien associé. Choisissez **Migrer des données métier**, puis suivez les étapes du guide.
+Si vous êtes prêt à commencer, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration assistée**, puis sélectionnez le lien associé. Choisissez **Migrer des données métier**, puis suivez les étapes du guide.
 
 ## <a name="see-also"></a>Voir aussi
 [Importation des données métier à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  
 [Personnalisation de Business Central à l'aide d'extensions](ui-extensions.md)   
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

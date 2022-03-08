@@ -1,30 +1,48 @@
 ---
-title: 'Procédure : imprimer des rapports de dépannage [CA]'
-description: Plusieurs rapports de dépannage sont disponibles pour aider les partenaires certifiés Microsoft à résoudre les problèmes dans la version canadienne.
+title: 'Procédure : impression de rapports de dépannage | Microsoft Docs'
+description: Plusieurs rapports de dépannage sont disponibles pour aider les partenaires certifiés Microsoft à résoudre les problèmes.
+services: project-madeira
+documentationcenter: ''
 author: SorenGP
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
-ms.author: edupont
-ms.openlocfilehash: 4fc52f0b677a3a9efb9f70e330ffc9c1cee95c68
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: 398a7b87330f8045db3b89f44af2cad21c6bf841
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8148006"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2301361"
 ---
-# <a name="print-troubleshooting-reports-in-the-canadian-version"></a>Imprimer des rapports de dépannage dans la version canadienne
+# <a name="print-troubleshooting-reports"></a>Imprimer des rapports de dépannage
+Les rapports de dépannage suivants sont disponibles pour aider les partenaires certifiés Microsoft à résoudre les problèmes :  
 
-[!INCLUDE [print-troubleshooting-reports](../includes/CAMXUS/print-troubleshooting-reports.md)]
+-   Rapport **Information sur la licence** – Ce rapport contient le numéro de la licence, le nom de l'utilisateur disposant de la licence, les granules d'application qu'il a achetés, ainsi que la date d'expiration de la licence, le cas échéant.  
 
-## <a name="see-also"></a>Voir aussi
+-   Rapport **Dictionnaire de données** (rapport #10315) – Ce rapport vous permet d'imprimer des références de table, des références de champ, ainsi que des propriétés de table pour les objets de table.  
 
+Vous devez avoir accès au Générateur d'objets [!INCLUDE[d365fin](../../includes/d365fin_md.md)], uniquement disponible pour les administrateurs.  
+
+Vous pouvez imprimer ces rapports et les envoyer à votre partenaire certifié Microsoft pour l'aider à résoudre les problèmes liés à votre implémentation de [!INCLUDE[d365fin](../../includes/d365fin_md.md)].  
+
+## <a name="to-print-the-license-information-report"></a>Pour imprimer le rapport Information sur la licence  
+1.  Dans le Générateur d'objets [!INCLUDE[d365fin](../../includes/d365fin_md.md)], dans le menu **Outils**, choisissez **Information sur la licence**.  
+2.  Sur la page **Information sur la licence**, vous pouvez afficher un aperçu des informations de licence ou sélectionner le bouton **Exporter** pour imprimer le rapport **Information sur la licence**.  
+
+## <a name="to-print-the-data-dictionary-report"></a>Pour imprimer le rapport Dictionnaire de données.  
+1.  Dans le Générateur d'objets [!INCLUDE[d365fin](../../includes/d365fin_md.md)], dans le menu **Outils**, choisissez **Générateur d'objets**.  
+2.  Cliquez sur le bouton **Rapport**.  
+3.  Dans la colonne **Type**, recherchez **Code** 10315, qui correspond au rapport **Dictionnaire de données**.  
+4.  Sur la page **Générateur d'objets**, sélectionnez le bouton **Exécuter** pour ouvrir le rapport **Dictionnaire de données**.  
+5.  Sous l'onglet **Options**, entrez les informations adéquates dans les champs.  
+6.  Sélectionnez le bouton **Imprimer** pour imprimer l'état ou le bouton **Aperçu** pour l'afficher à l'écran.  
+
+## <a name="see-also"></a>Voir aussi  
 [Fonctionnalités locales Canada](canada-local-functionality.md)  
 [Finance](../../finance.md)  
-[Configuration de Finance](../../finance.md)  
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Configuration de Finance](../../finance.md)

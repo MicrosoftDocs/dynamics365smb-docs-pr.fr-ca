@@ -1,30 +1,28 @@
 ---
-title: Utilisation de l’extension Formats de fichier fiscal (DK)
-description: L’extension des formats de fichier fiscal facilite l’exportation de fichiers préformatés pour répondre aux exigences bancaires pour les soumissions électroniques.
+title: Utilisation de l'extension Formats de fichier fiscal (DK) | Microsoft Docs
+description: Cette extension facilite l'exportation de fichiers préformatés pour répondre aux exigences bancaires pour les soumissions électroniques.
 services: project-madeira
 documentationcenter: ''
 author: bholtorf
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: extension, bank, formats
-ms.date: 06/23/2021
+ms.date: 04/01/2019
 ms.author: bholtorf
-ms.openlocfilehash: b65d1ee627f4b6c440e1e0f1150fd0ecbdbedc43
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: bc93fe469eea824be20942033db0959f8fe643c8
+ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8129874"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "1249438"
 ---
 # <a name="the-tax-file-formats-dk-extension"></a>Extension Formats de fichier fiscal (DK)
-Si vous effectuez des transactions commerciales avec des compagnies, ou des succursales/filiales internes situées, dans d'autres pays de l'UE, vous devez déclarer les informations concernant ces activités au SKAT et à l'Office des statistiques du Danemark. Si vous utilisez les fonctionnalités de déclaration de TVA et Intrastat de [!INCLUDE[prod_short](includes/prod_short.md)], cette extension vous donne la garantie que le fichier que vous exportez est compatible avec les exigences de ces organisations. L'extension ajoute les codeunits de soumission des lignes d'exportation Intrastat et du fichier d'exportation de la déclaration MS-ECSL à la configuration de votre déclaration de TVA, de sorte que vous pouvez exporter les données au nouveau format immédiatement.
+Si vous effectuez des transactions commerciales avec des compagnies, ou des succursales/filiales internes situées, dans d'autres pays de l'UE, vous devez déclarer les informations concernant ces activités au SKAT et à l'Office des statistiques du Danemark. Si vous utilisez les fonctionnalités de déclaration de TVA et Intrastat de [!INCLUDE[d365fin](includes/d365fin_md.md)], cette extension vous donne la garantie que le fichier que vous exportez est compatible avec les exigences de ces organisations. L'extension ajoute les codeunits de soumission des lignes d'exportation Intrastat et du fichier d'exportation de la déclaration MS-ECSL à la configuration de votre déclaration de TVA, de sorte que vous pouvez exporter les données au nouveau format immédiatement.
 
 L'extension est gratuite, il vous suffit de l'installer.
 
 ## <a name="see-also"></a>Voir aussi
 [Personnalisation de Business Central à l'aide d'extensions](ui-extensions.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

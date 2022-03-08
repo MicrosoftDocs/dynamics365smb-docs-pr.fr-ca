@@ -2,19 +2,20 @@
 title: Comment planifier des mouvements entrepôt dans la feuille | Microsoft Docs
 description: Planifiez les mouvements de la feuille à l'aide de la fonction de réapprovisionnement de zone ou en planifiant manuellement les lignes à créer en tant qu'instructions de mouvement.
 author: SorenGP
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
-ms.author: edupont
-ms.openlocfilehash: 59b81f7cc357c46f0b929dbdde4bf45c230975f7
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 58bfedd22d072a90eef0e3f678a34de29e7f9582
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8139115"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3192901"
 ---
 # <a name="plan-warehouse-movements-in-worksheets"></a>Planifier des mouvements entrepôt dans la feuille
 Planifiez les mouvements de la feuille à l'aide de la fonction de réapprovisionnement de zone ou en planifiant manuellement les lignes à créer en tant qu'instructions de mouvement.  
@@ -22,10 +23,10 @@ Planifiez les mouvements de la feuille à l'aide de la fonction de réapprovisio
 ## <a name="to-calculate-a-replenishment-movement"></a>Pour calculer des mouvements de réapprovisionnement  
 Au fur et à mesure que l'entrepôt livre des articles aux clients, les zones les mieux classées contiennent de moins en moins d'articles. Pour remplir ces zones prélèvement avec des articles issus d'autres zones, exécutez la fonction **Calculer réappro. zone** sur la page **Feuille mouvements**.
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille mouvement**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille mouvement**, puis choisissez le lien associé.  
 2.  Choisissez l'action **Calculer réappro. zone**.  
 
-    [!INCLUDE[prod_short](includes/prod_short.md)] crée des lignes indiquant précisément le mode de déplacement des articles des zones les moins bien classées vers les zones les mieux classées.  
+    [!INCLUDE[d365fin](includes/d365fin_md.md)] crée des lignes indiquant précisément le mode de déplacement des articles des zones les moins bien classées vers les zones les mieux classées.  
 
     > [!NOTE]  
     >  Un mouvement est proposé selon FEFO lorsque vous activez la fonction **Créer mouvement** si les conditions suivantes sont réunies pour un article :  
@@ -43,7 +44,7 @@ Au fur et à mesure que l'entrepôt livre des articles aux clients, les zones le
 ## <a name="to-move-the-entire-contents-of-one-or-more-bins-by-using-the-get-bin-content-function"></a>Pour déplacer l'intégralité du contenu d'une ou de plusieurs zones à l'aide de la fonction Extraire contenu de la zone  
 Vous pouvez également utiliser la feuille mouvement pour planifier d'autres mouvements d'inventaire dans l'entrepôt. Par exemple, lorsque vous souhaitez placer des articles dans une zone pour contrôler la qualité, utilisez la feuille mouvement pour planifier cette tâche et créez un mouvement pour élaborer des instructions destinées à un employé.  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille mouvement**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille mouvement**, puis choisissez le lien associé.  
 2.  Choisissez l'action **Extraire contenu de la zone**. Vous pouvez utiliser la page de demande pour filtrer les zones et les articles que vous souhaitez voir figurer sur les lignes de la feuille mouvement.  
 3.  Renseignez les champs pertinents de la page de demande de traitement en lot. Pour visualiser, par exemple, le contenu emplacement de tous les emplacements d'une zone donnée au niveau de l'emplacement, renseignez le champ **Code zone**. Pour extraire les lignes de chaque zone qui contient un article spécifique, renseignez le champ **N° article**.  
 
@@ -57,7 +58,7 @@ Vous pouvez également utiliser la feuille mouvement pour planifier d'autres mou
     >   
     >  -   L'article a une date de péremption.  
     > -   La case à cocher **Prélèvement selon FEFO** sur la fiche magasin doit être cochée.  
-    > -   La case à cocher **Emplacement obligatoire** de la fiche magasin est cochée.  
+    > -   La case à cocher **Zone obligatoire** de la fiche emplacement est activée.  
     > -   Les champs **De zone** et **D'emplacement** sont vides.  
 
 5.  Complétez certaines des lignes extraites de manière à indiquer les changements à apporter. Pour chaque article à déplacer, vous devez renseigner les champs **N° article**, **Du code emplacement**, **Vers code emplacement** et **Quantité**.  
@@ -70,7 +71,4 @@ Vous pouvez également utiliser la feuille mouvement pour planifier d'autres mou
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)

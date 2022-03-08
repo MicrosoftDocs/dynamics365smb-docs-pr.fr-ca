@@ -2,30 +2,31 @@
 title: Détails de conception - recherche des combinaisons de dimensions | Microsoft Docs
 description: Lorsque vous fermez une page après avoir modifié un ensemble de dimensions, Business Central évalue si l'ensemble de dimensions modifié existe. Si l'ensemble n'existe pas, un nouvel ensemble est créé et le code de combinaisons de dimensions est retourné.
 author: SorenGP
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/08/2021
-ms.author: edupont
-ms.openlocfilehash: 67aa9c5a7b56b00e49573b5232045f032db178c3
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.date: 04/01/2020
+ms.author: sgroespe
+ms.openlocfilehash: 3fe943fd3c2925f1c80107e23b389cd09958a47b
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8145820"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3184710"
 ---
 # <a name="design-details-searching-for-dimension-combinations"></a>Détails de conception : recherche des combinaisons de dimensions
-Lorsque vous fermez une page après avoir modifié un ensemble de dimensions, [!INCLUDE[prod_short](includes/prod_short.md)] évalue si l'ensemble de dimensions modifié existe. Si l'ensemble n'existe pas, un nouvel ensemble est créé et le code de combinaisons de dimensions est retourné.  
+Lorsque vous fermez une page après avoir modifié un ensemble de dimensions, [!INCLUDE[d365fin](includes/d365fin_md.md)] évalue si l'ensemble de dimensions modifié existe. Si l'ensemble n'existe pas, un nouvel ensemble est créé et le code de combinaisons de dimensions est retourné.  
 
 ## <a name="building-search-tree"></a>Création d'un arbre de recherche  
- La table 481 **Nœud d'arbre ensemble de dimensions** est utilisé lorsque [!INCLUDE[prod_short](includes/prod_short.md)] évalue si un ensemble de dimensions existe déjà dans la table **Écriture de l'ensemble de dimensions** de la table 480. L'évaluation est exécutée en parcourant de manière récursive l'arbre de recherche en commençant par le niveau numéroté 0. Le plus haut niveau 0 représente un ensemble de dimensions sans les écritures d'ensemble de dimensions. Les enfants cet ensemble de dimensions représentent des ensembles de dimensions avec une seule écriture d'ensemble de dimensions. Les enfants de ces ensembles de dimensions représentent des ensembles de dimensions avec deux enfants, etc.  
+ La table 481 **Nœud d'arbre ensemble de dimensions** est utilisé lorsque [!INCLUDE[d365fin](includes/d365fin_md.md)] évalue si un ensemble de dimensions existe déjà dans la table **Écriture de l'ensemble de dimensions** de la table 480. L'évaluation est exécutée en parcourant de manière récursive l'arbre de recherche en commençant par le niveau numéroté 0. Le plus haut niveau 0 représente un ensemble de dimensions sans les écritures d'ensemble de dimensions. Les enfants cet ensemble de dimensions représentent des ensembles de dimensions avec une seule écriture d'ensemble de dimensions. Les enfants de ces ensembles de dimensions représentent des ensembles de dimensions avec deux enfants, etc.  
 
 ### <a name="example-1"></a>Exemple 1  
  Le schéma suivant représente un arbre de recherche avec six ensembles de dimensions. Seule l'écriture d'ensemble de dimensions distinctive est affichée dans le schéma.  
 
- ![Exemple de structure arborescente des dimensions.](media/nav2013_dimension_tree.png "Exemple de structure arborescente des dimensions")  
+ ![Exemple de structure arborescente des dimensions](media/nav2013_dimension_tree.png "Exemple de structure arborescente des dimensions")  
 
  Le tableau suivant décrit une liste complète des écritures d'ensemble de dimensions qui constituent chaque ensemble de dimensions.  
 
@@ -40,14 +41,14 @@ Lorsque vous fermez une page après avoir modifié un ensemble de dimensions, [!
 |Ensemble 6|AREA 40, PROJ VW|  
 
 ### <a name="example-2"></a>Exemple 2  
- Cet exemple montre la manière dont [!INCLUDE[prod_short](includes/prod_short.md)] évalue si un ensemble de dimensions constitué des écritures de l'ensemble de dimensions AREA 40, DEPT PROD existe.  
+ Cet exemple montre la manière dont [!INCLUDE[d365fin](includes/d365fin_md.md)] évalue si un ensemble de dimensions constitué des écritures de l'ensemble de dimensions AREA 40, DEPT PROD existe.  
 
- D'abord, [!INCLUDE[prod_short](includes/prod_short.md)] met également à jour la table **Nœud d'arbre ensemble de dimensions** pour s'assurer que l'arbre de recherche ressemble au schéma suivant. Ainsi, l'ensemble de dimensions 7 devient un enfant de l'ensemble de dimensions 5.  
+ D'abord, [!INCLUDE[d365fin](includes/d365fin_md.md)] met également à jour la table **Nœud d'arbre ensemble de dimensions** pour s'assurer que l'arbre de recherche ressemble au schéma suivant. Ainsi, l'ensemble de dimensions 7 devient un enfant de l'ensemble de dimensions 5.  
 
- ![Exemple de structure arborescente des dimensions dans NAV 2013.](media/nav2013_dimension_tree_example2.png "Exemple de structure arborescente des dimensions dans NAV 2013")  
+ ![Exemple de structure arborescente des dimensions dans NAV 2013](media/nav2013_dimension_tree_example2.png "Exemple de structure arborescente des dimensions dans NAV 2013")  
 
 ### <a name="finding-dimension-set-id"></a>Recherche du code ensemble de dimensions  
- Au niveau conceptuel, **Code parent**, **Dimension** et **Valeur de dimension**, dans l'arborescence de recherche, sont combinés et sont utilisés comme clé primaire, car [!INCLUDE[prod_short](includes/prod_short.md)] parcourt l'arborescence dans le même ordre que les écritures dimension. La fonction GET (enregistrement) est utilisée pour rechercher le code de l'ensemble de dimensions L'exemple de code suivant indique comment trouver le code d'ensemble de dimensions lorsqu'il existe trois valeurs de dimension.  
+ Au niveau conceptuel, **Code parent**, **Dimension** et **Valeur de dimension**, dans l'arborescence de recherche, sont combinés et sont utilisés comme clé primaire, car [!INCLUDE[d365fin](includes/d365fin_md.md)] parcourt l'arborescence dans le même ordre que les écritures dimension. La fonction GET (enregistrement) est utilisée pour rechercher le code de l'ensemble de dimensions L'exemple de code suivant indique comment trouver le code d'ensemble de dimensions lorsqu'il existe trois valeurs de dimension.  
 
 ```  
 DimSet."Parent ID" := 0;  // 'root'  
@@ -59,7 +60,7 @@ EXIT(DimSet.ID);
 
 ```  
 
-Toutefois, pour préserver la capacité de [!INCLUDE[prod_short](includes/prod_short.md)] à renommer à la fois une dimension et une valeur de dimension, la table 349 **Valeur de dimension** est étendue avec un champ d'entier **Code valeur de dimension**. Ce tableau convertit la paire de champs **Dimension** et **Valeur de dimension** en une valeur d'entier. Lorsque vous renommez la dimension et la valeur de dimension, la valeur d'entier n'est pas modifiée.  
+Toutefois, pour préserver la capacité de [!INCLUDE[d365fin](includes/d365fin_md.md)] à renommer à la fois une dimension et une valeur de dimension, la table 349 **Valeur de dimension** est étendue avec un champ d'entier **Code valeur de dimension**. Ce tableau convertit la paire de champs **Dimension** et **Valeur de dimension** en une valeur d'entier. Lorsque vous renommez la dimension et la valeur de dimension, la valeur d'entier n'est pas modifiée.  
 
 ```  
 DimSet."Parent ID" := 0;  // 'root'  
@@ -71,12 +72,9 @@ EXIT(DimSet.ID);
 
 ```  
 
-## <a name="see-also"></a>Voir aussi
-    
+## <a name="see-also"></a>Voir aussi  
+ [Fonction GET (Enregistrement)](/dynamics-nav/GET-Function--Record-)    
  [Détails de conception : écritures d'ensemble de dimensions](design-details-dimension-set-entries.md)   
  [Aperçu des écritures d'ensemble de dimensions](design-details-dimension-set-entries-overview.md)   
  [Détails de conception : structure de la table](design-details-table-structure.md)   
  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

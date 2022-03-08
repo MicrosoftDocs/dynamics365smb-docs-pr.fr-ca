@@ -2,19 +2,20 @@
 title: "Procédure : Établissement d'un devis de vente Assembler pour commande | Microsoft Docs"
 description: Vous pouvez utiliser la gestion d'assemblage pour personnaliser un élément d'assemblage sur la demande d'un client au cours du processus de vente.
 author: SorenGP
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: kit, kitting
-ms.date: 04/01/2021
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 86cc9dcb66377deabdae9cc3d44c0c090fccc9f9
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 807c924e64764e7ac1932321603a415101e3bbf3
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8133080"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5386659"
 ---
 # <a name="quote-an-assemble-to-order-sale"></a>Établissement d'un devis de vente Assembler pour commande
 Vous pouvez utiliser la gestion d'assemblage pour personnaliser un élément d'assemblage sur la demande d'un client au cours du processus de vente. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).  
@@ -25,7 +26,7 @@ Lorsque vous vendez tout autre type d'article, vous pouvez également créer un 
 >  Comme tous les types de devis, les quantités sur les devis d'assemblage ne sont pas utilisées en termes de disponibilité, planification ou réservations.  
 
 ## <a name="to-create-a-sales-quote-for-an-assemble-to-order-item"></a>Créer un devis pour un article à assembler pour commande  
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Devis**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Devis**, puis sélectionnez le lien associé.  
 2.  Créez une ligne devis avec une ligne pour un élément d'assemblage. Pour plus d'informations, voir [Créer des devis](sales-how-make-offers.md).  
 3.  Dans le champ **Quantité à assembler pour commande**, entrez la quantité entière.
 

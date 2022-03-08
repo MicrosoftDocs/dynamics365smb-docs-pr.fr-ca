@@ -1,26 +1,28 @@
 ---
-title: Aperçu de la ligne report de journal général
-description: Cette rubrique présente les modifications apportées à Codeunit 12, Gen. Journal général-Ligne report, et est le seul endroit pour insérer les écritures du grand livre, de la TVA et des clients et fournisseurs.
+title: Aperçu de la ligne de report dans le journal général | Microsoft Docs
+description: Cette rubrique décrit les modifications du codeunit 12, **Journal général-Ligne report**, qui est l'objet d'application majeur pour le report dans le grand livre et est le seul emplacement pour insérer des écritures grand livre, des écritures TVA et des écritures client et fournisseur.
+services: project-madeira
+documentationcenter: ''
 author: SorenGP
-ms.topic: overview
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, general ledger, post
-ms.date: 06/15/2021
-ms.author: edupont
-ms.openlocfilehash: 2a4d9715f6fdfaef63bf6ac4090bb71d86346e51
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: 5589aa476662a9dff69e95d70367ae4c5e45aaba
+ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8146706"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2303566"
 ---
 # <a name="general-journal-post-line-overview"></a>Aperçu de la ligne report de journal général
-
 Le Codeunit 12, **Journal général-Ligne report**, est l'objet d'application majeur pour le report dans le grand livre et est le seul emplacement pour insérer des écritures GL, TVA, et client et fournisseur. Ce codeunit est également utilisé pour toutes les opérations Affecter, Annuler l'affectation et Inverser.  
   
-Dans Microsoft Dynamics NAV 2013 R2, le codeunit a été repensé, car il était devenu très grand, avec environ 7 600 lignes de code. L’architecture a été modifiée et le codeunit a été rendu plus simple et plus facile à modifier. Cette documentation décrit les modifications et fournit les informations dont vous aurez besoin pour la mise à niveau.  
+Alors que le codeunit a été amélioré dans chaque version au cours des dix dernières années, son architecture est, au fond, restée inchangée. Le codeunit est devenu très grand, avec approximativement 7 600 lignes de code. Avec cette version de [!INCLUDE[d365fin](includes/d365fin_md.md)], l'architecture est modifiée et le codeunit a été rendu plus simple et plus facile à modifier. Cette documentation présente les modifications et fournit les informations dont vous aurez besoin pour la mise à niveau.  
   
 ## <a name="old-architecture"></a>Ancienne architecture  
 L'ancienne architecture avait les fonctions suivantes :  
@@ -34,7 +36,7 @@ L'ancienne architecture avait les fonctions suivantes :
 * Report, Affecter, Annuler l'affectation, Inverser, Escompte de paiement et tolérance, ainsi qu'Ajustement du taux de change ont été associés dans le codeunit 12 à l'aide d'une longue liste de variables globales.  
   
 ### <a name="new-architecture"></a>Nouvelle architecture  
-Dans [!INCLUDE[prod_short](includes/prod_short.md)], le codeunit 12 présente les améliorations suivantes :  
+Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], le codeunit 12 présente les améliorations suivantes :  
   
 * Le Codeunit 12 a été remanié en procédures plus petites (toutes inférieures à 100 lignes de code).  
 * Des motifs standardisés pour la recherche des comptes du grand livre ont été mis en œuvre à l'aide des fonctions d'aide des tableaux de groupes de report.  
@@ -43,11 +45,6 @@ Dans [!INCLUDE[prod_short](includes/prod_short.md)], le codeunit 12 présente le
 * De nombreuses fonctions de participation ont été transférées vers les tables d'écritures client et fournisseur correspondantes.  
 * L'utilisation des variables globales a été réduite, de façon à ce que chaque procédure utilise des paramètres et contienne sa propre logique d'affectation.  
   
-## <a name="see-also"></a>Voir aussi
-
-[Détails de conception : Structure de l'interface de report](design-details-posting-interface-structure.md)  
-[Détails de conception : Structure du moteur de validation](design-details-posting-engine-structure.md)  
-[Détails de conception : Ligne report de journal général (Dynamics NAV)](/dynamics-nav-app/design-details-general-journal-post-line)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+## <a name="see-also"></a>Voir aussi  
+[Détails de conception : Structure de l'interface de report](design-details-posting-interface-structure.md)   
+[Détails de conception : Structure du moteur de validation](design-details-posting-engine-structure.md)

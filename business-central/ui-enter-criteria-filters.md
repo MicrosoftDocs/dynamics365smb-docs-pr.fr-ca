@@ -1,21 +1,21 @@
 ---
-title: Tri, recherche et filtrage de listes
-description: Travaillez efficacement dans les listes en parcourant toutes vos données, en triant les colonnes, et en affinant les résultats en utilisant des symboles de filtre et des raccourcis clavier.
-author: jswymer
-ms.topic: conceptual
+title: Tri, recherche et filtrage de listes | Microsoft Docs
+description: Travaillez efficacement dans les listes en parcourant toutes vos données, en triant les colonnes, et en affinant les résultats en utilisant des symboles de filtre et des raccourcis clavier puissants.
+author: SorenGP
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: delimit, FlowFilter, totals, limit, advanced
-ms.search.form: 9020, 9022, 9026, 9027, 9030, 9000, 9004, 9005, 9018, 9006, 9007, 9010, 9016, 9017
-ms.date: 04/01/2021
-ms.author: jswymer
-ms.openlocfilehash: 9f5eda0056c4c449a46f9f04064c3f2764087007
-ms.sourcegitcommit: cdb57f14960f58b1d36a1b373fbf35dfed5fad9e
+ms.date: 07/24/2020
+ms.author: edupont
+ms.openlocfilehash: 7e08a4487c9ae6782555530adc0c0cf4cfc5458e
+ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8335020"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3786906"
 ---
 # <a name="sorting-searching-and-filtering"></a>Tri, recherche et filtrage
 
@@ -24,7 +24,7 @@ Il existe quelques fonctions que vous pouvez utiliser pour vous aider à analyse
 Pour les rapports et les XMLports, comme sur des listes, vous pouvez définir des filtres pour délimiter les données à inclure dans le rapport ou le XMLport, mais vous ne pouvez pas trier et rechercher.
 
 > [!TIP]
-> En affichant vos données en tant que vignettes, vous pouvez rechercher et utiliser le filtrage. Pour utiliser l’ensemble complet de puissantes fonctions de tri, de recherche et de filtrage, choisissez l’icône ![Afficher sous forme de liste.](media/ui_show_as_list_icon.png "Afficher sous forme de liste") pour afficher les enregistrements sous forme de liste.
+> En affichant vos données en tant que vignettes, vous pouvez rechercher et utiliser le filtrage de base. Pour utiliser l'ensemble complet de puissantes fonctions de tri, de recherche et de filtrage, choisissez l'icône ![Afficher sous forme de liste](media/ui_show_as_list_icon.png "Afficher sous forme de liste") pour afficher les enregistrements sous forme de liste.
 
 <!--
 When you want to search for data, such as customer names, addresses, or product groups, you enter criteria. In search criteria, you can use all the numbers and letters that you normally use in the specific field. In addition, you can use special symbols to further filter the results. There are two ways to search: using the Quick Filter or column filters.
@@ -32,35 +32,25 @@ When you want to search for data, such as customer names, addresses, or product 
 
 ## <a name="sorting"></a>Tri
 
-Le tri vous permet d'avoir facilement un aperçu de vos données. Par exemple, si vous avez de nombreux clients, vous pouvez choisir de les trier par **N° client**, **Code devise**, **Code pays/région** pour obtenir l’aperçu que vous souhaitez.
+Le tri vous permet d'avoir facilement un aperçu de vos données. Si vous avez de nombreux clients, par exemple, vous pouvez choisir de les trier par **N° client**, **Groupe de report client**, **Code devise**, **Code pays/région** ou **N° d'enregistrement taxe de vente** pour obtenir l'aperçu dont vous avez besoin.
 
-Pour trier une liste, vous pouvez soit :
-
-- Choisir un texte d’en-tête de colonne pour basculer entre l’ordre croissant et décroissant, ou
-- Choisir la flèche déroulante dans l’en-tête de colonne, puis choisir le **Croissant** ou **Décroissant**.  
+Pour trier une liste, vous pouvez choisir un texte d'en-tête de colonne pour permuter entre l'ordre croissant et décroissant, ou cliquer sur la flèche déroulante dans l'en-tête de colonne et choisir l'action **Croissant** ou **Décroissant**.  
 
 > [!NOTE]  
-> Le tri n’est pas pris en charge sur les images, les champs de type BLOB, les FlowFilters, et les champs n’appartenant pas à une table.  
+> Le tri n'est pas pris en charge sur les images, les champs de type BLOB, les FlowFilters, et les champs n'appartenant pas à une table.  
 
 ## <a name="searching"></a>Recherche
 
 <!--## Searching by using the Quick Filter -->
-En haut de chaque page de liste, il y a une ![liste de recherche.](media/ui-search/search-list.png "Icône de liste Rechercher") action **Rechercher** qui fournit une manière rapide et facile de réduire les enregistrements d’une liste et d’afficher uniquement les enregistrements qui contiennent les données que vous souhaitez afficher.
+En haut de chaque page de liste, il existe une action ![Rechercher dans une liste](media/ui-search/search-list.png "Icône de liste Rechercher") **Rechercher** qui fournit une manière rapide et facile de réduire les enregistrements d'une liste et d'afficher uniquement les enregistrements qui contiennent les données que vous souhaitez afficher.
 
-Pour rechercher, sélectionnez simplement l’action **Rechercher**, puis dans la case, entrez le texte souhaité. Vous pouvez saisir des lettres, des chiffres et d'autres symboles.
+Pour rechercher, sélectionnez simplement l'action **Rechercher**, puis dans la case, entrez le texte souhaité. Vous pouvez saisir des lettres, des chiffres et d'autres symboles.
 
-Généralement, la recherche tente de mettre en correspondance le texte entre tous les champs. Elle ne distingue pas les minuscules et les majuscules (en d’autres termes, ne respecte pas la casse), puis met en correspondance le texte placé n’importe où dans le champ (au début, à la fin, ou au milieu).
+### <a name="fine-tuning-the-search"></a>Affinage de la recherche
 
-> [!TIP]
-> Vous pouvez appuyer sur **F3** pour activer et désactiver la zone de recherche. Pour plus d’informations, reportez-vous à [Raccourcis clavier](keyboard-shortcuts.md#KeyboardFilter).
+Généralement, la recherche tente de mettre en correspondance le texte entre tous les champs. Elle ne distingue pas les minuscules et les majuscules (en d'autres termes, ne respecte pas la casse), puis met en correspondance le texte placé n'importe où dans le champ (au début, à la fin, ou au milieu).
 
-> [!NOTE]  
-> La recherche ne correspondra pas aux valeurs des images, des champs de type BLOB, des FlowFilters, et des autres champs n’appartenant pas à une table.
-
-
-### <a name="fine-tuning-the-search-with-filter-criteria"></a>Affiner la recherche avec des critères de filtre
-
-Vous pouvez effectuer une recherche plus précise en utilisant des opérateurs de filtre, des expressions et des jetons de filtre. Contrairement au filtrage, ceux-ci sont appliqués à tous les champs lorsqu’ils sont utilisés dans la zone de recherche, ce qui les rend moins efficaces que le filtrage.
+Cependant, vous pouvez faire une recherche plus précise en utilisant des caractères spéciaux.
 
 - Pour rechercher uniquement des valeurs de champ correspondant à tout le texte et à la casse, placez le texte de recherche entre apostrophes `''` (par exemple, `'man'`).
 
@@ -68,7 +58,7 @@ Vous pouvez effectuer une recherche plus précise en utilisant des opérateurs d
 
 - Pour rechercher des valeurs de champ qui finissent par un certain texte et correspondant à la casse, placez `*` avant le texte de recherche (par exemple, `*man`).
 
-- Lorsque vous utilisez `''` ou `*`, la recherche respecte la casse. Si vous souhaitez que la recherche ne respecte pas la casse, placez `@` avant le texte de recherche (par exemple `@man*`).
+- Lorsque vous utilisez `''` ou `*` la recherche respecte la casse. Si vous souhaitez que la recherche ne respecte pas la casse, placez `@` avant le texte de recherche (par exemple `@man*`).
 
 Le tableau suivant fournit des exemples expliquant comment vous pouvez utiliser la recherche.
 
@@ -80,6 +70,11 @@ Le tableau suivant fournit des exemples expliquant comment vous pouvez utiliser 
 |`@Man*`|Tous les enregistrements commençant par **man**, quelle que soit la casse. Par exemple, **Manchester** et **manuel** mais pas **Sportsman**.|
 |`@*man`|Tous les enregistrements finissant par **man**, quelle que soit la casse. Par exemple, **Sportsman**, mais pas **Manchester** ni **manuel**.|
 
+> [!TIP]
+> Vous pouvez appuyer sur **F3** pour activer et désactiver la zone de recherche. Pour plus d'informations, reportez-vous à [Raccourcis clavier](keyboard-shortcuts.md#KeyboardFilter).
+
+> [!NOTE]  
+> La recherche ne correspondra pas aux valeurs des images, des champs de type BLOB, des FlowFilters, et des autres champs n'appartenant pas à une table.
 
 ## <a name="filtering"></a><a name="filtering"></a>Filtrage
 
@@ -88,7 +83,7 @@ Le filtrage fournit une manière plus avancée et plus souple de contrôler les 
 || **Recherche** | **Filtrage** |
 |--|----------|------------|
 | **Champs applicables** | Les recherches entre tous les champs visibles sur la page. | Filtre un ou plusieurs champs individuellement, en sélectionnant parmi tous les champs de la table, y compris les champs qui ne sont pas visibles dans la page. |
-| **Correspondance** | Affiche les enregistrements avec des champs correspondants au texte de recherche, indépendamment de la casse ou de l’emplacement de ce texte. | Affiche les enregistrements dont le champ correspond exactement au filtre et respecte la casse, sauf si des symboles de filtre spéciaux sont renseignés.
+| **Correspondance** | Affiche les enregistrements avec des champs correspondants au texte de recherche, indépendamment de la casse ou de l'emplacement de ce texte. | Affiche les enregistrement dont le champ correspond exactement au filtre et respecte la casse, sauf si des symboles de filtre spéciaux sont renseignés.
 
 Le filtrage vous permet de visualiser des enregistrements pour des comptes ou les clients, des dates, des montants, ainsi que d'autres informations spécifiques en spécifiant des critères du filtre. Seuls les enregistrements correspondant aux critères sont affichés dans la liste ou inclus dans le rapport, le traitement en lot ou XMLport. Si vous spécifiez des critères pour plusieurs champs, seuls les enregistrements correspondant à tous les critères sont affichés.
 
@@ -115,15 +110,15 @@ Le volet Filtre affiche les filtres actuels de la liste, et permet de définir v
 
 - **Affichages**
 
-  Certaines listes incluent la section **Vues**. Les vues sont des variations de la liste qui ont été préconfigurées avec les filtres. Vous pouvez définir et enregistrer autant de vues que vous le souhaitez par liste. Les vues seront disponibles sur n’importe quel appareil auquel vous vous connectez. Pour plus d'informations, voir [Enregistrer et personnaliser les vues de liste](ui-views.md).
+  Certaines listes incluent la section **Vues**. Les vues sont des variations de la liste qui ont été préconfigurées avec les filtres. Vous pouvez définir et enregistrer autant de vues que vous le souhaitez dans une liste. Ces vues seront disponibles sur n'importe quel appareil auquel vous vous connectez. Pour plus d'informations, voir [Enregistrer et personnaliser les vues de liste](ui-views.md).
 
 - **Filtrer la liste par**
 
-  Cette section vous permet d’ajouter des filtres sur des champs spécifiques pour réduire le nombre d’enregistrements affichés. Pour ajouter un filtre, choisissez l’action **+ Filtre**. Puis, tapez le nom du champ pour lequel vous souhaitez filtrer la liste ou choisissez un champ dans la liste déroulante.
+  Cette section vous permet d'ajouter des filtres sur des champs spécifiques pour réduire le nombre d'enregistrements affichés. Pour ajouter un filtre, choisissez l'action **+ Filtre**, tapez le nom du champ pour lequel vous souhaitez filtrer la liste ou choisissez un champ dans la liste déroulante.
 
 - **Filtrer les totaux par**
 
-  Certaines listes qui affichent des champs calculés, comme des montants et des quantités, incluent la section **Filtrer les totaux par** où vous pouvez ajuster les différentes dimensions qui ont une incidence sur les calculs. Pour ajouter un filtre, choisissez l’action **+ Filtre**. Puis, tapez le nom du champ pour lequel vous souhaitez filtrer la liste ou choisissez un champ dans la liste déroulante.
+  Certaines listes qui affichent des champs calculés, comme des montants et des quantités, incluent la section **Filtrer les totaux par** où vous pouvez ajuster les différentes dimensions qui ont une incidence sur les calculs. Pour ajouter un filtre, choisissez l'action **+ Filtre**, tapez le nom du champ pour lequel vous souhaitez filtrer la liste ou choisissez un champ dans la liste déroulante.
 
   > [!NOTE]
   > Les filtres de la section **Filtrer les totaux par** sont contrôlés par les FlowFilters sur la conception de page. Pour des informations techniques, voir [FlowFilters](/dynamics365/business-central/dev-itpro/developer/devenv-flowfilter-overview).
@@ -134,9 +129,9 @@ Vous pouvez définir un filtre simple directement sur une liste à l'aide du vol
 
 Pour les rapports et les objets XMLport, les filtres sont visibles directement sur la page de demande. La page de demande affiche les derniers filtres utilisés en fonction de votre sélection dans le champ **Utiliser les valeurs par défaut de**. Pour plus d'informations, voir [Utilisation des paramètres enregistrés](ui-work-report.md#SavedSettings).
 
-La section **Filtre** principale affiche les champs de filtre par défaut que vous utilisez pour délimiter les enregistrements à inclure dans le rapport ou le XMLport. Pour ajouter un filtre, choisissez l’action **+ Filtre**. Puis, tapez le nom du champ pour lequel vous souhaitez filtrer la liste ou choisissez un champ dans la liste déroulante.
+La section **Filtre** principale affiche les champs de filtre par défaut que vous utilisez pour délimiter les enregistrements à inclure dans le rapport ou le XMLport. Pour ajouter un filtre, choisissez l'action **+ Filtre**, tapez le nom du champ pour lequel vous souhaitez filtrer ou choisissez un champ dans la liste déroulante.
 
-Dans la section **Filtrer les totaux par**, vous pouvez ajuster diverses dimensions qui influencent les calculs dans le rapport ou le XMLport. Pour ajouter un filtre, choisissez l’action **+ Filtre**. Puis, tapez le nom du champ pour lequel vous souhaitez filtrer la liste ou choisissez un champ dans la liste déroulante.
+Dans la section **Filtrer les totaux par**, vous pouvez ajuster diverses dimensions qui influencent les calculs dans le rapport ou le XMLport. Pour ajouter un filtre, choisissez l'action **+ Filtre**, tapez le nom du champ pour lequel vous souhaitez filtrer ou choisissez un champ dans la liste déroulante.
 
 ## <a name="entering-filter-criteria"></a>Saisie des critères de filtre
 
@@ -144,22 +139,22 @@ Dans le volet Filtre et sur une page de demande, vous devez entrer vos critères
 
 Le type de champ à filtrer détermine les critères que vous pouvez entrer. Par exemple, filtrer un champ avec des valeurs fixes vous permet uniquement de choisir parmi ces valeurs. Pour plus d'informations sur les symboles de filtre spéciaux, consultez [Critères de filtre](#FilterCriteria) et [Jetons de filtre](#FilterTokens).
 
-Les colonnes qui ont déjà des filtres sont signalées par l’![Icône de filtre](media/ui-search/filter-icon.png "Icône de filtre"). dans l’en-tête de la colonne. Pour supprimer un filtre, choisissez la flèche déroulante du titre de la page, puis choisissez l'action **Effacer le filtre**.
+Les colonnes qui ont déjà des filtres sont signalées par l'![Icône de filtre](media/ui-search/filter-icon.png "Icône de filtre") dans l'en-tête de colonne. Pour supprimer un filtre, choisissez la flèche déroulante du titre de la page, puis choisissez l'action **Effacer le filtre**.
 
 > [!TIP]
-> Accélérez la recherche et l'analyse de vos données en utilisant des combinaisons des raccourcis clavier. Par exemple, sélectionnez un champ, utilisez **Maj+Alt+F3** pour ajouter ce champ au volet Filtre, saisissez les critères de filtre, utilisez **Ctrl+Entrée** pour revenir aux lignes, sélectionnez un autre champ, puis utilisez **Alt+F3** pour filtrer selon cette valeur. Pour plus d’informations, reportez-vous à [Raccourcis clavier](keyboard-shortcuts.md#KeyboardFilter).
+> Accélérez la recherche et l'analyse de vos données en utilisant des combinaisons des raccourcis clavier. Par exemple, sélectionnez un champ, utilisez **Maj+Alt+F3** pour ajouter ce champ au volet Filtre, saisissez les critères de filtre, utilisez **Ctrl+Entrée** pour revenir aux lignes, sélectionnez un autre champ, puis utilisez **Alt+F3** pour filtrer selon cette valeur. Pour plus d'informations, reportez-vous à [Raccourcis clavier](keyboard-shortcuts.md#KeyboardFilter).
 
-### <a name="filter-criteria-and-operators"></a><a name="FilterCriteria"> </a>Critères et opérateurs de filtre
+### <a name="filter-criteria-and-symbols"></a><a name="FilterCriteria"> </a>Critères et symboles de filtre
 
-Lorsque vous saisissez des critères, vous pouvez utiliser tous les chiffres et toutes les lettres que vous utilisez habituellement dans ce champ. Mais il existe également un ensemble de symboles spéciaux que vous pouvez utiliser comme opérateurs pour filtrer davantage les résultats. Les sections suivantes décrivent ces symboles et comment les utiliser comme opérateurs dans les filtres.
+Lorsque vous saisissez des critères, vous pouvez utiliser tous les chiffres et toutes les lettres que vous utilisez habituellement dans ce champ. En plus, vous pouvez utiliser des symboles (ou opérateurs) spéciaux pour filtrer davantage les résultats. Les tableaux suivants indiquent les symboles qui peuvent être utilisés dans les filtres. Pour les dates et heures, vous pouvez également vous référer à [Utilisation de dates civiles et les heures](ui-enter-date-ranges.md) pour des informations plus détaillées.
 
-> [!TIP]
-> Pour plus d’informations sur les dates et heures de filtrage, voir [Utilisation de dates civiles et des heures](ui-enter-date-ranges.md).
+> [!IMPORTANT]  
+> Il peut y avoir des instances où les valeurs de champ contiennent ces symboles et vous souhaitez les filtrer. Pour ce faire, vous devez inclure l'expression de filtre qui contient le symbole entre guillemets ("). Par exemple, si vous souhaitez filtrer les enregistrements commençant par le texte *S&R*, l'expression de filtre est `'S&R*'`.
 
-> [!IMPORTANT]
-> - Il peut y avoir des situations où la valeur sur laquelle vous souhaitez filtrer contient un symbole qui est un opérateur. Pour plus d’informations sur la gestion de ces situations, consultez [Filtrage des valeurs contenant des symboles](#symbols) pour plus d’instructions sur la gestion de cette situation.
->
-> - S'il y a plus de 200 opérateurs dans un seul filtre, le système regroupera automatiquement certaines expressions entre parenthèses `()` à des fins de traitement. Cela n'a aucun effet sur le filtre ou les résultats.  
+Les sections suivantes décrivent comment utiliser les différents opérateurs.
+
+> [!NOTE]
+> S'il y a plus de 200 opérateurs dans un seul filtre, le système regroupera automatiquement certaines expressions entre parenthèses `()` à des fins de traitement. Cela n'a aucun effet sur le filtre ou les résultats.  
 
 #### <a name="-interval"></a>(..) Intervalle
 
@@ -219,28 +214,27 @@ Lorsque vous saisissez des critères, vous pouvez utiliser tous les chiffres et 
 
 |Expression|Enregistrements affichés|  
 |-----------------------|-----------------------|  
-|`'man'`|Texte qui correspond exactement à **man** et qui respecte la casse.|  
-|`''`|Texte vide.|  
+|`'man'`|Texte qui correspond exactement à man et qui respecte la casse.|  
 
 #### <a name="-case-insensitive"></a>(@) Non-respect de la casse  
 
 |Expression|Enregistrements affichés|  
 |-----------------------|-----------------------|  
-|`@man*`|Texte qui commence par **man** et qui ne respecte pas la casse.|  
+|`@man*`|Texte qui commence par man et qui ne respecte pas la casse.|  
 
 #### <a name="-an-indefinite-number-of-unknown-characters"></a>(*) Un chiffre quelconque ou des caractères inconnus
 
 |Expression|Enregistrements affichés|  
 |-----------------------|-----------------------|  
-|`*Co*`|Texte qui contient **Co** et respecte la casse.|  
-|`*Co`|Texte qui se termine par **Co** et respecte la casse.|  
-|`Co*`|Texte qui commence par **Co** et respecte la casse.|  
+|`*Co*`|Texte qui contient « Co » et respecte la casse.|  
+|`*Co`|Texte qui se termine par « Co » et respecte la casse.|  
+|`Co*`|Texte qui commence par « Co » et respecte la casse.|  
 
 #### <a name="-one-unknown-character"></a>(?) Un caractère inconnu  
 
 |Expression|Enregistrements affichés|  
 |-----------------------|-----------------------|  
-|`Hans?n`|Texte tel que **Hansen** ou **Hanson**|  
+|`Hans?n`|Texte tel que Hansen ou Hanson|  
 
 #### <a name="combined-format-expressions"></a>Expressions de format combinées  
 
@@ -250,23 +244,8 @@ Lorsque vous saisissez des critères, vous pouvez utiliser tous les chiffres et 
 |`..1299|1400..`|Inclure tous les enregistrements qui portent un numéro inférieur ou égal à 1299 ou un numéro supérieur ou égal à 1400 (tous les numéros sauf ceux compris entre 1300 et 1399).|  
 |`>50&<100`|Inclure les enregistrements qui portent un numéro supérieur à 50 et inférieur à 100 (numéros 51 à 99).|  
 
-### <a name="filtering-on-values-that-contain-symbols"></a><a name="symbols"></a>Filtrage des valeurs contenant des symboles
-
-Il peut y avoir des cas où les valeurs de champ contiennent l’un des symboles suivants :
-
-- &
-- (
-- )
-- =
-- &#124;
-
-Pour filtrer sur l’un de ces symboles, placez l’expression de filtre entre apostrophes (`'<expression with symbol>'`). Par exemple, si vous souhaitez filtrer les enregistrements commençant par le texte *J & V*, l’expression de filtre serait `'J & V*'`.
-
-Cette exigence n’est pas nécessaire pour les autres symboles.
-
 ### <a name="filter-tokens"></a><a name="FilterTokens"> </a>Jetons de filtre
-
-En saisissant des critères de filtre, vous pouvez également saisir des mots avec un sens particulier, appelés des jetons de filtre. Après avoir saisi le mot de jeton, le mot est remplacé par la ou les valeurs qu'il représente. Filtrer les jetons facilite le filtrage en réduisant la nécessité de naviguer vers d’autres pages pour rechercher des valeurs à ajouter à votre filtre. Les tableaux ci-après décrivent certains des jetons que pouvez saisir comme critères de filtre.
+En saisissant des critères de filtre, vous pouvez également saisir des mots avec un sens particulier, appelés des jetons de filtre. Après avoir saisi le mot de jeton, le mot est remplacé par la ou les valeurs qu'il représente. Cela facilite le filtrage en réduisant la nécessité de naviguer vers d'autres pages pour rechercher des valeurs à ajouter à votre filtre. Les tableaux ci-après décrivent certains des jetons que pouvez saisir comme critères de filtre.
 
 > [!TIP]
 > Votre organisation peut utiliser des jetons personnalisés. Pour faire en savoir plus sur l'ensemble complet de jetons disponibles pour vous ou pour ajouter des jetons personnalisés supplémentaires, parlez à votre administrateur. Pour des informations techniques, voir [Ajout de jetons de filtre](/dynamics365/business-central/dev-itpro/developer/devenv-adding-filter-tokens)
@@ -305,9 +284,6 @@ Utilisez `%myvendors` dans le champ **N°** fournisseur pour afficher tous les e
 
 ## <a name="see-also"></a>Voir aussi
 
-[FAQ sur la recherche et le filtrage](ui-search-filter-faq.yml)  
+[FAQ sur la recherche et le filtrage](ui-search-filter-faq.md)  
 [Enregistrer et personnaliser les vues de liste](ui-views.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

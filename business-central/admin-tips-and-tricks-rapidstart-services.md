@@ -2,53 +2,41 @@
 title: Conseils - RapidStart Services | Microsoft Docs
 description: Lorsque vous configurez des compagnies avec RapidStart Services, il est recommandé de suivre certains conseils pour faciliter votre implémentation.
 author: SorenGP
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2021
-ms.author: edupont
-ms.openlocfilehash: 9b08f4ed71afb580438a5fc8d67cbdfc6c0f5ac6
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.date: 10/01/2019
+ms.author: sgroespe
+ms.openlocfilehash: acdac865286577b30f9fe036cca8a50eb7e143a0
+ms.sourcegitcommit: cfc92eefa8b06fb426482f54e393f0e6e222f712
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8129035"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2878996"
 ---
 # <a name="tips-and-tricks-rapidstart-services"></a>Conseils : RapidStart Services
-
 Lorsque vous configurez des compagnies avec RapidStart Services, il est recommandé de suivre certains conseils pour faciliter votre implémentation.  
 
-## <a name="take-advantage-of-configuration-templates"></a>Optimisation des modèles de société
-
+## <a name="take-advantage-of-configuration-templates"></a>Optimisation des modèles de société  
 Les modèles de configuration peuvent vous aider à rationaliser votre processus d’implémentation. Ces modèles vous permettent d'inclure des clients similaires dans des segments, puis de développer un protocole d'implémentation qui traite tous les clients d'un segment de la même façon. Vous pouvez ainsi appliquer un niveau de préconfiguration à chaque segment et procéder rapidement à une implémentation.  
 
-## <a name="configuration-questionnaires"></a>Questionnaires de configuration
-
+## <a name="configuration-questionnaires"></a>Questionnaires de configuration  
 Pour faciliter le remplissage d’un questionnaire de configuration, envisagez de définir des réponses par défaut pour indiquer des recommandations.  
 
-## <a name="batch-creation-of-journal-lines"></a>Création de lignes journal par lots
-
+## <a name="batch-creation-of-journal-lines"></a>Création de lignes journal par lots  
 Il est recommandé d'utiliser les outils de migration de données fournis pour migrer des écritures journal. Sinon, si vous utilisez le traitement en lot pour créer des lignes journal, celui-ci a une portée limitée et ne génère que des champs par défaut dans un journal. Le reste du journal doit ensuite être renseigné manuellement.  
 
-## <a name="migrating-transactions"></a>Migration des transactions
+## <a name="migrating-transactions"></a>Migration des transactions  
+Il est recommandé de migrer des soldes ouverts dans l'ordre suivant.  
 
-Il est recommandé de migrer des soldes ouverts dans l'ordre suivant. <!--Be aware that you cannot insert ledger entries directly. Instead you must use journals to post the journal lines-->
+1.  Migrez les soldes ouverts du grand livre sans utiliser la comptabilité auxiliaire. Utilisez des comptes de compensation propres aux soldes ouverts, avec une configuration pour chaque comptabilité auxiliaire. Configurez les comptes de compensation de manière à activer les imputations directes.  
+2.  Migration des écritures client ouvertes.  
+3.  Effectuez la migration des écritures du grand livre d'articles ouvertes.  
+4.  Migrez les écritures comptables immobilisation ouvertes.  
 
-1. Migrez les soldes ouverts du grand livre sans utiliser la comptabilité auxiliaire. Utilisez des comptes de compensation propres aux soldes ouverts, avec une configuration pour chaque comptabilité auxiliaire. Configurez les comptes de compensation de manière à activer les imputations directes.  
-2. Migration des écritures client ouvertes.  <!--work on these-->
-3. Effectuez la migration des écritures du grand livre d'articles ouvertes.  
-4. Migrez les écritures comptables immobilisation ouvertes.  
-
-## <a name="make-each-package-manageable"></a>Rendre chaque paquet gérable
-
-Lorsque vous utilisez des packages de configuration pour migrer des données, séparez les données en packages séparés pour une portabilité plus facile. Par exemple, si vous souhaitez migrer 20 ans d'écritures, l'importation peut prendre plusieurs heures et jours. Au lieu de cela, divisez les données afin que chaque package devienne plus gérable. Actuellement, il n'y a pas de règles fermes pour rendre un package performant, mais si vous rencontrez des problèmes lors de l'importation ou de l'exportation d'un package, essayez de le réduire et voyez si cela aide.  
-
-## <a name="see-also"></a>Voir aussi
-
+## <a name="see-also"></a>Voir aussi  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
-[Administration](admin-setup-and-administration.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Administration](admin-setup-and-administration.md)

@@ -1,50 +1,40 @@
 ---
-title: Fermer des écritures article provenant de l’utilisation d’une affectation fixe
-description: Découvrez comment vous pouvez créer une affectation fixe entre une transaction entrante et la transaction sortante initiale dans le journal article.
+title: "Procédure : fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal article | Microsoft Docs"
+description: Vous pouvez utiliser le champ **Écriture affectée de** dans la fenêtre **Journal article** pour créer une affectation fixe entre une transaction entrante et la transaction sortante initiale. Par exemple, pour corriger la transaction sortante ou pour traiter un retour.
 author: SorenGP
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: 40
-ms.date: 04/01/2021
+ms.search.keywords: ''
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: dfcab14c585873aca8b9f65d2ebd6d188771b4dc
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 289c0aecbf45bbece3291edeed6e0e72aedb9a6b
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8138580"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3924213"
 ---
 # <a name="close-open-item-ledger-entries-resulting-from-fixed-application-in-the-item-journal"></a>Fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal article
-
-Vous pouvez utiliser le champ **Écriture affectée de** dans la fenêtre **Journal article** pour créer une affectation fixe entre une transaction entrante et la transaction sortante initiale. Par exemple, pour corriger la transaction sortante ou pour traiter un retour.  
+Vous pouvez utiliser le champ **Écriture affectée de** dans la fenêtre **Journal article** pour créer une affectation fixe entre une transaction entrante et la transaction sortante initiale. Par exemple, pour corriger la transaction sortante ou pour traiter un retour. Pour plus d'informations, voir Lettrage à partir écriture.  
 
 > [!IMPORTANT]  
-> Les affectations fixes exécutées de cette manière s'appliquent uniquement au coût et non à la quantité. Par conséquent, l'écriture du grand livre d'articles positive reportée ne ferme pas l'écriture sortante affectée et demeure ouverte elle-même. Cela s'applique également lorsque vous reportez une affectation fixe pour une écriture positive vers une écriture négative qui n'a pas été fermée par une écriture positive ordinaire ; les écritures négatives et positives restent ouvertes.  
->
-> Cela signifie également que vous ne pouvez pas fermer une période d'inventaire si une telle écriture existe.  
-
-Vous pouvez modifier et affecter à nouveau des écritures d'affectation dans certaines conditions à l’aide de la page **Feuille affectation**.  
+>  Les affectations fixes exécutées de cette manière s'appliquent uniquement au coût et non à la quantité. Par conséquent, l'écriture du grand livre d'articles positive reportée ne ferme pas l'écriture sortante affectée et demeure ouverte elle-même. Cela s'applique également lorsque vous reportez une affectation fixe pour une écriture positive vers une écriture négative qui n'a pas été fermée par une écriture positive ordinaire ; les écritures négatives et positives restent ouvertes.  
+>   
+>  Cela signifie également que vous ne pouvez pas fermer une période d'inventaire si une telle écriture existe.  
 
 La procédure suivante explique comment fermer des écritures de ce genre au cours de deux reports de correction dans le journal article.  
 
 ## <a name="to-close-open-item-ledger-entries-that-result-from-a-fixed-application-in-the-item-journal"></a>Pour fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal d'articles  
 
-1. Utilisez le champ **Écriture affectée de** pour reporter un ajustement positif avec la quantité correspondante. Cela permet de fermer l'écriture négative initiale par une affectation fixe.  
+1.  Utilisez le champ **Écriture affectée de** pour reporter un ajustement positif avec la quantité correspondante. Cela permet de fermer l'écriture négative initiale par une affectation fixe.  
+2.  Utilisez le champ **Écriture affectée à** pour reporter un ajustement négatif. Cela permet de fermer l'écriture positive de correction initiale par une affectation fixe.  
 
-    Le champ **Écriture référence** spécifie le numéro de l’écriture article sortant dont le coût est transmis à l’écriture article entrant lorsque vous reportez une transaction entrante de type **Ajustement positif** ou **Achat** avec le journal article.  
-2. Utilisez le champ **Écriture affectée à** pour reporter un ajustement négatif. Cela permet de fermer l'écriture positive de correction initiale par une affectation fixe.  
-
-    Le champ **Écriture référence** spécifie si la quantité dans la ligne journal article doit être affectée à un document déjà reporté. Si c’est le cas, entrez le numéro de l’écriture article à laquelle la ligne journal article doit être affectée.
-
-## <a name="see-also"></a>Voir aussi
-
-[Supprimer et affecter à nouveau des écritures article](finance-how-to-remove-and-reapply-item-entries.md)  
-[Traiter les retours et annulations de ventes](sales-how-process-sales-returns-cancellations.md)  
-[Configuration de l'évaluation de l'inventaire et des coûts](finance-set-up-inventory-valuation-and-costing.md)  
-[Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
-[Détails de conception : modes évaluation stock](design-details-costing-methods.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+## <a name="see-also"></a>Voir aussi  
+[ Supprimer et appliquer à nouveau des écritures article](finance-how-to-remove-and-reapply-item-entries.md)  
+ [Traiter les retours et annulations de ventes](sales-how-process-sales-returns-cancellations.md)   
+ [Configuration de l'évaluation de l'inventaire et des coûts](finance-set-up-inventory-valuation-and-costing.md)   
+ [Gestion des coûts ajustés](finance-manage-inventory-costs.md)   
+ [Détails de conception : modes évaluation stock](design-details-costing-methods.md)

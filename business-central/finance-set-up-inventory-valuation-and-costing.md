@@ -1,17 +1,18 @@
 ---
-title: Configuration de l’évaluation et du coût de l’inventaire
-description: Pour vous assurer que les coûts ajustés sont enregistrés correctement, vous devez configurer plusieurs champs et pages avant de commencer à effectuer des transactions article.
+title: Configuration de l'évaluation de l'inventaire et des coûts | Microsoft Docs
+description: Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.
 author: SorenGP
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keywords: ''
-ms.date: 06/16/2021
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 8dd8b86e7ff07b9500c094bd2e570dbb6a371754
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 2194a29247b6ec3c2ee87dfbfe6631f433d0514e
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8142091"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5783732"
 ---
 # <a name="setting-up-inventory-valuation-and-costing"></a>Configuration de l'évaluation de l'inventaire et des coûts
 

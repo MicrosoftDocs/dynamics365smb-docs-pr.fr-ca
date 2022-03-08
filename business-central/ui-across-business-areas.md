@@ -1,24 +1,26 @@
 ---
-title: Utilisation des Fonctionnalités communes aux différents secteurs d’activité
-description: En savoir plus sur les fonctionnalités utilisées dans différents secteurs d’activité dans Business Central.
+title: Utilisation des Fonctionnalités communes aux différents secteurs d'activité | Microsoft Docs
+description: En savoir plus sur les fonctionnalités utilisées dans différents secteurs d'activité dans Business Central.
+services: project-madeira
+documentationcenter: ''
 author: SorenGP
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: feature overview, functionality
-ms.search.form: 9020, 9022, 9027, 9018
-ms.date: 04/01/2021
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 36edd01c369e83e2020f43ff914b4cc693cba4e3
-ms.sourcegitcommit: 75a388b1d8917e2bbd49398ef76cf86cf37e6767
+ms.openlocfilehash: 2382fa440c67881411fe67e596a62aaf5d431426
+ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8322860"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3912756"
 ---
 # <a name="general-business-functionality"></a>Fonctionnalités marché
-[!INCLUDE[prod_short](includes/prod_short.md)] fournit des fonctionnalités dédiées pour les domaines d'activité courants, tels que la finance et les ventes. Pour plus d'informations, voir [Fonctionnalités d'entreprise](across-business-functionality.md).
+[!INCLUDE[d365fin](includes/d365fin_md.md)] fournit des fonctionnalités dédiées pour les domaines d'activité courants, tels que la finance et les ventes. Pour plus d'informations, voir [Fonctionnalités d'entreprise](across-business-functionality.md).
 
 Pour prendre en charge ces tâches spécifiques à votre secteur d'activité, vous pouvez utiliser diverses fonctionnalités d'entreprise, comme définir un texte étendu pour les lignes document et organiser les tâches professionnelles en flux de travail.
 
@@ -48,10 +50,7 @@ Le tableau suivant répertorie ces secteurs d'activité généraux avec des lien
 | Configurer les définitions d'échange de données afin de pouvoir envoyer et recevoir des documents électroniques. |[Échanger des données par voir électronique](across-data-exchange.md) |
 
 ## <a name="see-also"></a>Voir aussi
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 [Administration](admin-setup-and-administration.md)
 
-## [!INCLUDE[prod_short](includes/free_trial_md.md)]  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+## [!INCLUDE[d365fin](includes/free_trial_md.md)]  

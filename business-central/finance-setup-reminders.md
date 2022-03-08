@@ -2,20 +2,20 @@
 title: Configurer les niveaux et modalités de rappel
 description: Découvrez comment configurer Business Central de telle sorte que vous puissiez envoyer un rappel à un client sur un paiement dû et ajouter des frais, ou des commissions au paiement en raison de retard.
 author: edupont04
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment due, debt, overdue, fee, charge, reminder
-ms.search.form: 431, 432, 436, 478
-ms.date: 02/09/2022
+ms.date: 01/21/2021
 ms.author: edupont
-ms.openlocfilehash: 81c86841bd4000cab881e06783fd521ae18d1cbf
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 1bef0a7598846f0ea3fe74b03bbef70bb5c940ef
+ms.sourcegitcommit: adf1a87a677b8197c68bb28c44b7a58250d6fc51
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8132846"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "5035391"
 ---
 # <a name="set-up-reminder-terms-and-levels"></a>Configurer les niveaux et modalités de rappel
 
@@ -30,7 +30,7 @@ Si des clients ont des impayés, vous devez décider quand et comment leur envoy
 
 ### <a name="to-set-up-reminder-terms"></a>Pour configurer des modalités de rappel
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modalités de rappel**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modalités de rappel**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]  
 3. Pour utiliser plusieurs combinaisons de modalités de rappel, créez un code pour chacun d'eux.
 
@@ -42,7 +42,7 @@ Si vous créez plus de relances qu'il n'y a de niveaux relance, les conditions u
 
 ### <a name="to-set-up-reminder-levels"></a>Pour configurer des niveaux rappel
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modalités de rappel**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modalités de rappel**, puis sélectionnez le lien associé.  
 2. Sur la page **Modalités de rappel**, cliquez sur la ligne comportant les conditions pour lesquelles configurer des niveaux, puis cliquez sur l'action **Niveaux**.  
 3. Renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]  
 
@@ -101,9 +101,5 @@ Si vous avez configuré les modalités de rappel (avec des niveaux et du texte s
 ## <a name="see-also"></a>Voir aussi
 
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
-[Envoyer des rappels de soldes impayés](receivables-send-reminders.md)  
 [Configurer les modalités de frais financiers](finance-setup-finance-charges.md)  
 [Configuration de Finance](finance-setup-finance.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

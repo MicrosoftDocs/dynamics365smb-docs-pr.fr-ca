@@ -2,19 +2,19 @@
 title: Activer les fonctionnalités à venir à l'avance
 description: Découvrez comment activer certaines fonctionnalités facultatives avant qu'elles ne deviennent obligatoires.
 author: mikebcMSFT
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keywords: administration, admin, key, optional, feature management, early access, preview
-ms.search.form: 2610
-ms.date: 06/14/2021
+ms.date: 10/01/2020
 ms.author: mikebc
-ms.openlocfilehash: a3cc650067c18da1594e2381413f8dd76966ab3a
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: eb4eafe98f0d31e34229edb46282066a37080318
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8141395"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5378583"
 ---
-# <a name="enabling-new-and-upcoming-features-ahead-of-time"></a>Activer les fonctionnalités inédites et celles à venir à l’avance
+# <a name="enabling-upcoming-features-ahead-of-time"></a>Activer les fonctionnalités à venir à l'avance
 
 Certaines nouvelles fonctionnalités peuvent être activées à l'avance, vous permettant d'en profiter le plus tôt possible. L'activation précoce des fonctionnalités vous donne le temps de tester et de préparer votre organisation au changement.
 
@@ -24,7 +24,7 @@ En savoir plus sur la [gestion des fonctionnalités](/dynamics365/business-centr
 
 ## <a name="see-also"></a>Voir aussi
 
-[Fonctionnalités nouvelles et prévues](/dynamics365-release-plan/2021wave1/)  
+[Fonctionnalités nouvelles et prévues](https://aka.ms/Dynamics365ReleasePlan)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

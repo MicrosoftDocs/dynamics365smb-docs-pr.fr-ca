@@ -2,6 +2,7 @@
 title: Pratiques recommandées pour la configuration globale de la planification | Microsoft Docs
 description: Le raccourci Planification de la page Configuration de la fabrication comporte plusieurs champs permettant de définir les règles globales pour la planification des approvisionnements.
 author: SorenGP
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -9,12 +10,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 0220502f0c338ead004f5ed7ce704508a780a9f5
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: c91bde42378992ef1c1e9613fb94d9bac2d4f57c
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8146160"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5785358"
 ---
 # <a name="setup-best-practices-global-planning-setup"></a>Pratiques de configuration recommandées : configuration globale de la planification
 Le raccourci **Planification** de la page **Configuration de la fabrication** comporte plusieurs champs permettant de définir les règles globales pour la planification des approvisionnements.  

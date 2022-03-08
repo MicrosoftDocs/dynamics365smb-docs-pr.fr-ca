@@ -1,20 +1,21 @@
 ---
-title: Configuration de tâches standard pour les opérations
-description: Découvrez comment configurer des tâches standard et ajouter des tâches standard aux opérations pour simplifier l’entretien des itinéraires.
+title: Procédure de configuration de tâches standard pour les opérations | Microsoft Docs
+description: Vous pouvez saisir des descriptions des tâches standard.
 author: SorenGP
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: 99000799, 99000803, 99000804, 99000805, 99000807
-ms.date: 06/22/2021
+ms.search.keywords: ''
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 89c6f60e2c68866babb7efd2762766f957325a6a
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 1aba83ed50e0b60710ae3d007b395dc9ebad34d3
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8137611"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5779367"
 ---
 # <a name="set-up-standard-routing-lines"></a>Configurer des lignes itinéraire standard
 
@@ -22,14 +23,14 @@ L'utilisation de tâches standard simplifie la création et l'entretien des itin
 
 ## <a name="to-set-up-a-standard-task"></a>Pour configurer une tâche standard
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Tâches standard**, puis choisissez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Tâches standard**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Choisissez l'action **Outils**, **Personnel**, **Description** ou **Outils**, puis, sur la page qui s'ouvre, ajoutez l'écriture appropriée.
 
 ## <a name="to-add-a-standard-task-to-an-operation"></a>Pour ajouter une tâche standard à une opération
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Itinéraires**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Itinéraires**, puis sélectionnez le lien associé.
 2. Ouvrez l'itinéraire approprié.
 3. Sélectionnez une ligne itinéraire appropriée, choisissez l'action **Opérations**, puis l'action **Outils**, **Qualifications**, **Description** ou **Outils**.
 

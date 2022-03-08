@@ -2,6 +2,7 @@
 title: Mappage des tables et des champs à synchroniser | Microsoft Docs
 description: Découvrez comment mapper des tables et des champs pour synchroniser des données entre Business Central et Microsoft Dataverse.
 author: bholtorf
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -9,15 +10,15 @@ ms.workload: na
 ms.search.keywords: sales, crm, integration, sync, synchronize, table mapping
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 844b053a307d88bd93d945a7927726fd28518000
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 44729a82d50a925d9ad904f8035dd49daee24262
+ms.sourcegitcommit: 6ad0a834fc225cc27dfdbee4a83cf06bbbcbc1c9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8147148"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7588711"
 ---
 # <a name="mapping-the-tables-and-fields-to-synchronize"></a>Mappage des tables et des champs à synchroniser
-
+[!INCLUDE[prod_short](includes/cc_data_platform_banner.md)]
 
 La base de la synchronisation des données consiste à mapper les tables et les champs dans [!INCLUDE[prod_short](includes/prod_short.md)] avec des tables et des colonnes dans [!INCLUDE[prod_short](includes/cds_long_md.md)] afin qu’ils échangent les données. Le mappage s'effectue via des tables d'intégration. 
 

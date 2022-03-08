@@ -1,21 +1,21 @@
 ---
-title: Personnalisation des pages (contient une vidéo)
-description: Découvrez comment personnaliser l’interface utilisateur et votre espace de travail pour l’adapter à votre façon de travailler et aux préférences personnelles dans Business Central.
+title: Personnalisation des pages | Microsoft Docs
+description: Découvrez comment personnaliser l'interface utilisateur pour l'adapter à votre méthode de travail dans Business Central.
 author: SorenGP
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: customize, personalize, personalization, hide columns, remove fields, move fields, resize column, change column width
-ms.search.form: 9020, 9022, 9026, 9027, 9030, 9000, 9004, 9005, 9018, 9006, 9007, 9010, 9016, 9017
-ms.date: 06/24/2021
-ms.author: edupont
-ms.openlocfilehash: 95ed69baac51d4c343c639e8ddcea2db29520340
-ms.sourcegitcommit: cdb57f14960f58b1d36a1b373fbf35dfed5fad9e
+ms.date: 02/07/2020
+ms.author: sgroespe
+ms.openlocfilehash: 8a0814c8fc275e4324195cddadddafe1683d809f
+ms.sourcegitcommit: c78df3aefb3e2ed8c28e5ac8340d56ab787212e8
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8334685"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071992"
 ---
 # <a name="personalize-your-workspace"></a>Personnaliser votre espace de travail
 Vous pouvez personnaliser votre espace de travail pour l'adapter à vos habitudes et préférences en modifiant les pages afin qu'elles n'affichent que les informations dont vous avez besoin, où vous avez en besoin. Les modifications de personnalisation que vous apportez n'affectent que ce que vous voyez, pas ce que voient les autres utilisateurs.
@@ -28,11 +28,6 @@ Selon le type de page et ce qu'elle inclut, vous pouvez apporter différentes mo
 > Les administrateurs peuvent effectuer les mêmes modifications de présentation que les utilisateurs en personnalisant l'espace de travail pour un profil attribué à plusieurs utilisateurs. Pour plus d'informations, voir [Personnaliser des pages pour les rôles](ui-personalization-manage.md).<br /><br />
 Les administrateurs peuvent aussi remplacer ou désactiver des personnalisations d'utilisateurs et définir les fonctionnalités accessibles dans toutes les compagnies ou des compagnies spécifiques. Pour plus d'informations, voir [Personnalisation de Business Central](ui-customizing-overview.md).
 
-## <a name="video-overview"></a>Présentation de la vidéo
-La vidéo suivante montre quelques-unes des façons dont vous pouvez personnaliser votre tableau de bord.
-
-> [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE4ArUB?rel=0]
-
 ## <a name="to-change-the-width-of-a-column"></a>Pour modifier la largeur d'une colonne
 Vous pouvez facilement redimensionner les colonnes de n'importe quelle liste en faisant glisser la limite entre deux colonnes à gauche ou à droite.
 1. Dans l'en-tête de la liste, sélectionnez et faites glisser la limite entre deux colonnes.
@@ -40,9 +35,9 @@ Vous pouvez facilement redimensionner les colonnes de n'importe quelle liste en 
 
 En ce qui concerne les autres personnalisations, les modifications apportées à la largeur des colonnes sont stockées sur votre compte et vous suivent quel que soit le périphérique auquel vous vous connectez.
 
-## <a name="to-start-personalizing-a-page-through-the-personalizing-banner"></a>Pour commencer à personnaliser une page au moyen de la bannière **Personnalisation**
+## <a name="to-personalize-a-page-through-the-personalizing-banner"></a>Pour personnaliser une page via la bannière **Personnalisation**
 1. Ouvrez une page quelconque à personnaliser.
-2. Dans l’angle supérieur droit, sélectionnez l’icône ![Paramètres.](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord") puis l’action **Personnaliser**.
+2. Dans l'angle supérieur droit, sélectionnez l'icône ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord"), puis choisissez l'action **Personnaliser**.
 
     La bannière **Personnalisation** s'affiche en haut, ce qui indique que vous pouvez commencer à apporter des modifications.
 
@@ -65,17 +60,16 @@ En ce qui concerne les autres personnalisations, les modifications apportées à
 |Masquez quelque chose, comme un champ, une colonne d'une liste, une mosaïque, une action ou une section.|Choisissez la pointe de flèche, puis sélectionnez <b>Masquer</b>.|L'élément est grisé lorsque vous êtes en mode de personnalisation. Si le champ que vous masquez s'affiche également sur l'en-tête Raccourci lorsque ce dernier est réduit, le champ n'y apparaîtra plus.|
 |Affichez les actions et les pièces masquées.|Pour un élément grisé (masqué), choisissez la pointe de flèche, puis choisissez <b>Afficher</b>.|L'élément masqué est à nouveau visible.|
 |Ajoutez un champ ou une colonne.|Dans la bannière <b>Personnalisation</b>, choisissez l'action <b>+ Champ</b>.<br /></br>Le volet <b>Ajouter un champ à la page</b> s'ouvre à droite. Il répertorie les champs que vous pouvez ajouter à la page.<br /><br />Pour ajouter un champ, faites-le glisser du volet vers la position que vous souhaitez. La position est indiquée par une ligne verticale ou horizontale épaisse.|Chaque page comprend un ensemble prédéfini de champs que vous pouvez afficher. Utilisez cette procédure pour afficher des champs ou des colonnes qui n'ont pas été précédemment affichés ou pour afficher des champs que vous avez masqués.|
-|Affichez un champ dans l’en-tête d’un raccourci lorsqu'il est réduit.|Choisissez la pointe de la flèche, puis cliquez sur <b>Afficher si réduit</b>. <br /> <br />Si vous ne voyez pas cette option, elle est déjà définie. Dans ce cas, pour arrêter d'afficher le champ sur l'en-tête du raccourci, sélectionnez <b>Afficher toujours</b>.|*Raccourci* désigne le terme employé pour un groupe de champs qui s'affichent sous une en-tête commune. Utilisez l'option <b>Afficher si réduit</b> pour afficher les champs les plus importants. Si vous sélectionnez un champ dans l'en-tête, le raccourci s'ouvrira et se concentrera sur le champ sélectionné.<br /><br />Cette option s'applique uniquement si une page a plusieurs raccourcis. S'il s'agit de l'unique raccourci, il ne peut pas être réduit, aussi l'option <b>Afficher si réduit</b> n'est pas disponible.|
+|Affichez un champ dans l'en-tête d'un raccourci lorsque le raccourci est réduit.|Choisissez la pointe de la flèche, puis cliquez sur <b>Afficher si réduit</b>. <br /> <br />Si vous ne voyez pas cette option, elle est déjà définie. Dans ce cas, pour arrêter d'afficher le champ sur l'en-tête du raccourci, sélectionnez <b>Afficher toujours</b>.|*Raccourci* désigne le terme employé pour un groupe de champs qui s'affichent sous une en-tête commune. Utilisez l'option <b>Afficher si réduit</b> pour afficher les champs les plus importants. Si vous sélectionnez un champ dans l'en-tête, le raccourci s'ouvrira et se concentrera sur le champ sélectionné.<br /><br />Cette option s'applique uniquement si une page a plusieurs raccourcis. S'il s'agit de l'unique raccourci, il ne peut pas être réduit, aussi l'option <b>Afficher si réduit</b> n'est pas disponible.|
 |Affichez un champ uniquement lorsque vous sélectionnez **Afficher plus**.|Choisissez la pointe de flèche, puis cliquez sur <b>Afficher sous « Afficher plus »</b>. <br /> <br />Si vous ne voyez pas l'option <b>Afficher sous « Afficher plus »</b>, elle est déjà définie. Dans ce cas, pour afficher toujours un champ, et non pas uniquement lorsque vous sélectionnez **Afficher plus**, sélectionnez <b>Afficher toujours</b>.||
 |Modifiez le volet Figer d'une liste en d'autres colonnes. |Choisissez la pointe de flèche de la colonne que vous souhaitez être la dernière du volet Figer, puis sélectionnez <b>Définir le volet Figer</b>.<br /><br/>Si vous souhaitez rétablir le volet Figer à sa position d'origine, sélectionnez la pointe de flèche de la colonne actuelle du volet Figer, puis sélectionnez <b>Effacer le volet Figer</b>. Remarque : vous ne pouvez pas supprimer ce volet Figer d'origine.|Le volet Figer spécifie les colonnes qui s'affichent toujours à gauche, même lorsque vous faites défiler horizontalement.|  
 |Survolez un champ tout en appuyant sur Entrée.|Choisissez la pointe de la flèche en regard du champ, ou la première colonne d'une liste, et sélectionnez **Exclure de la saisie rapide**. <br /><br /> Si vous ne voyez pas cette option, le champ est déjà défini pour être ignoré. Dans ce cas, pour arrêter d'ignorer le champ, choisissez **Inclure de la saisie rapide**. |Reportez-vous à la rubrique [Accélérer la saisie de données à l'aide de la fonction Saisie rapide](ui-enter-data.md#QuickEntry)|
 |Réorganisez et supprimez les vues représentant des listes filtrées.|Choisissez la flèche en regard d'une vue, puis choisissez **Déplacer**, **Supprimer** ou **Masquer**.|Voir [Enregistrer et personnaliser les vues de liste](ui-views.md)|  
 |Ajoutez une nouvelle action à une page ou à un rapport sur votre tableau de bord.|Sur la page cible, la page de demande de rapport ou la fenêtre Tell Me, choisissez l'icône de signet.|Voir [Ajouter un signet à une page ou à un rapport sur votre tableau de bord](ui-bookmarks.md)|
-|Toujours démarrer une liste comme développée ou réduite|Choisissez le bouton Développer tout ou Réduire tout dans le coin supérieur gauche de la liste, ou choisissez l'action Développer tout ou Réduire tout dans le menu de la première colonne. |S'applique aux listes hiérarchiques réductibles|
 
 ## <a name="personalizing-actions"></a><a name="Actions"></a>Personnalisation des actions
 
-La personnalisation vous permet de choisir les actions à afficher sur les barres de navigation et d'actions et sur le Tableau de bord et où les afficher. Vous pouvez afficher, masquer ou déplacer les actions individuelles ou groupes d'action. La personnalisation des barres de navigation et d'actions est exécutée essentiellement de la même façon qu'avec les autres éléments de l'interface utilisateur. Toutefois, ce que vous pouvez faire avec une action ou un groupe dépend de l'emplacement de l'action ou du groupe. La meilleure façon de le savoir consiste à passer en mode de personnalisation et à vous laisser guider par les flèches.
+La personnalisation vous permet de choisir quelles actions afficher sur la barre d'actions et sur le Tableau de bord et où les afficher. Vous pouvez afficher, masquer ou déplacer les actions individuelles ou groupes d'action. La personnalisation de la barre d'actions est exécutée essentiellement de la même façon qu'avec les autres éléments de l'interface utilisateur. Toutefois, ce que vous pouvez faire avec une action ou un groupe dépend de l'emplacement de l'action ou du groupe. La meilleure façon de le savoir consiste à passer en mode de personnalisation et à vous laisser guider par les flèches.
 
 Vous devez vous familiariser avec certains termes pour mieux comprendre la personnalisation de la barre d'actions : *groupe d'actions* et *catégorie promue*.  
 
@@ -93,9 +87,9 @@ Lorsque vous souhaitez afficher ou masquer une action, les options situées sous
 
 |Option|Action|
 |------|------------
-|**Supprimer**|Cette option s'affiche si l'action sélectionnée est également affichée ailleurs sur les barres de navigation et d'actions. En choisissant cette option, vous supprimez l'action de l'emplacement sélectionné afin qu'elle n'apparaisse plus. L'action ou le groupe d'actions reste dans les autres emplacements. |
-|**Masquer**|Cette option s'affiche si l'action ou le groupe d'actions apparaît nulle part ailleurs sur les barres de navigation et d'actions. Comme **Supprimer**, choisissez cette option pour inciter l'action ou le groupe d'actions à disparaître des barres de navigation et d'actions. Toutefois, en mode personnalisation, l'action ou le groupe d'actions est toujours affiché dans la position actuelle, sauf si elle/il apparaît atténué(e).|
-|**Afficher**|Cette option s'affiche si l'action ou le groupe d'actions a été précédemment masqué(e) atténué(e). En choisissant cette option, vous permettez à l'action ou au groupe d'actions de figurer dans la barre de navigation ou la barre d'actions.|
+|**Supprimer**|Cette option s'affiche si l'action sélectionnée est également affichée ailleurs sur la barre d'actions. En choisissant cette option, vous supprimez l'action de l'emplacement sélectionné afin qu'elle n'apparaisse plus. L'action ou le groupe d'actions reste dans les autres emplacements. |
+|**Masquer**|Cette option s'affiche si l'action ou le groupe d'actions apparaît nulle part ailleurs sur la barre d'actions. Comme **Supprimer**, choisissez cette option pour inciter l'action ou le groupe d'actions à disparaître de la barre d'actions. Toutefois, en mode personnalisation, l'action ou le groupe d'actions est toujours affiché dans la position actuelle, sauf si elle/il apparaît atténué(e).|
+|**Afficher**|Cette option s'affiche si l'action ou le groupe d'actions a été précédemment masqué(e) atténué(e). En choisissant cette option, vous permettez à l'action ou au groupe d'actions de figurer dans la barre d'actions.|
 
 ### <a name="to-move-actions-and-action-groups"></a>Pour déplacer les actions et groupes d'actions
 L'emplacement où vous pouvez déplacer des actions ou groupes d'actions est indiqué par une ligne horizontale entre deux actions ou une bordure autour d'un groupe d'actions. Les limitations suivantes s'appliquent :
@@ -106,18 +100,6 @@ L'emplacement où vous pouvez déplacer des actions ou groupes d'actions est ind
 1. Pour déplacer une action ou un groupe d'actions, faites-la/le glisser sur la position souhaitée, comme avec les champs et les colonnes.
 2. Pour déplacer une action ou un groupe d'actions dans un autre groupe d'actions vide, déplacez l'action ou le groupe d'actions vers le nouveau groupe et placez-la/le dans la zone **Déplacer une action ici**.
 
-
-## <a name="personalizing-parts"></a><a name="Parts"></a>Personnalisation des pièces
-
-Les pièces sont des zones d'une page généralement composées de plusieurs champs, graphiques ou autres contenus et pouvant être identifiées par une bordure colorée lors du réglage du focus sur la pièce. Par exemple, un écran d'accueil Tableau de bord comporte plusieurs pièces. En raison de sa limite bien définie, vous pouvez personnaliser l'ensemble de la pièce ainsi que son contenu.
-
-- Pour déplacer une pièce, faites-la glisser vers la position souhaitée. Une ligne colorée indique les positions valides sur l'écran. Par exemple, les récapitulatifs peuvent être déplacés uniquement à côté d'autres récapitulatifs dans le volet Récapitulatif.
-- Vous pouvez masquer une pièce en sélectionnant l'option **Masquer** sous la pointe de flèche.
-- Lorsque vous commencez à personnaliser ou accédez à une nouvelle page, toutes les pièces actuellement masquées s'affichent sur la page avec des visuels distinctifs pour indiquer qu'elles sont masquées. Vous pouvez réafficher cette pièce en sélectionnant l'option **Afficher** sous la pointe de flèche.
-
-Vous pouvez effacer toutes les modifications de personnalisation que vous avez apportées dans une seule pièce en sélectionnant l'option **Effacer la personnalisation** sous la pointe de flèche de la pièce. L'effacement de la personnalisation d'une pièce n'affecte que les modifications apportées au contenu de la pièce, et non le placement ou la visibilité de la pièce sur la page.  
-
-
 ## <a name="to-clear-personalization"></a>Pour annuler la personnalisation
 Vous pouvez souhaiter annuler toutes les modifications de personnalisation apportées à une page au fil du temps.
 
@@ -127,9 +109,9 @@ Vous pouvez souhaiter annuler toutes les modifications de personnalisation appor
 |Option|Action|
 |------|------------
 |**Menu de navigation uniquement**|Efface toutes les modifications de personnalisation que vous avez apportées au menu de navigation partagé entre le tableau de bord et d'autres pages. Cela inclut toutes les nouvelles actions ajoutées en tant que signets et toutes les modifications apportées aux liens et aux groupes dans le menu.|  
-|**Actions seules**|Efface toutes les modifications de personnalisation apportées à la barre de navigation ou d'actions sur la page.|
-|**Uniquement les champs, les colonnes et les pièces**|Efface toutes les modifications de personnalisation apportées à la page, hormis celles de la barre de navigation ou d'actions. Cela inclut les modifications apportées aux champs, colonnes, pièces et mosaïques. |
-|**Tous**|Efface toutes les modifications de personnalisation apportées à cette page afin qu'elle retrouve son aspect d'origine. Cela inclut les modifications apportées aux barres de navigation et d'actions, aux champs, colonnes, pièces et mosaïques.|
+|**Actions seules**|Efface toutes les modifications de personnalisation apportées à la barre d'actions sur la page.|
+|**Uniquement les champs, les colonnes et les pièces**|Annule toutes les modifications de personnalisation apportées à la page, hormis celles de la barre d'actions. Cela inclut les modifications apportées aux champs, colonnes, pièces et mosaïques. |
+|**Tous**|Efface toutes les modifications de personnalisation apportées à cette page afin qu'elle retrouve son aspect d'origine. Cela inclut les modifications apportées à la barre d'actions, aux champs, colonnes, pièces et mosaïques.|
 
 ## <a name="additional-points-of-interest"></a>Points d'intérêts supplémentaires
 Pour vous aider à mieux comprendre la personnalisation, voici quelques points clés.
@@ -143,9 +125,6 @@ Pour vous aider à mieux comprendre la personnalisation, voici quelques points c
 
 ## <a name="see-also"></a>Voir aussi
 [Personnaliser les pages pour les profils](ui-personalization-manage.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 [Modifier les paramètres de base](ui-change-basic-settings.md)  
 [Modifier les fonctionnalités affichées](ui-experiences.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

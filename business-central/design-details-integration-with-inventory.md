@@ -1,20 +1,21 @@
 ---
-title: Détails de conception - Intégration avec l’inventaire
-description: Les zones d’affectation Warehouse Management et Inventory interagissent dans l’inventaire physique et dans l’ajustement d’inventaire ou entrepôt.
+title: Détails de conception - Intégration avec l'inventaire | Microsoft Docs
+description: Les modules Warehouse Management et Inventaire interagissent dans l'inventaire physique et dans l'ajustement de l'inventaire ou de l'entrepôt.
 author: SorenGP
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/15/2021
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 58cb2222f2533e2ba952727243a5fdb830b34e75
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 95b0010064fc46213d7565e78319f273400fbac7
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8145898"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5779642"
 ---
 # <a name="design-details-integration-with-inventory"></a>Détails de conception : intégration avec l'inventaire
 Les modules Warehouse Management et Inventaire interagissent dans l'inventaire physique et dans l'ajustement de l'inventaire ou de l'entrepôt.  

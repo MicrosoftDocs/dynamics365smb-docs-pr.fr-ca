@@ -1,22 +1,21 @@
 ---
-title: Gestion de projets
+title: Tâches projet qui utilisent des ressources et des feuilles de temps
 description: Cette rubrique décrit comment utiliser les ressources, les feuilles de temps et les projets pour la gestion des projets et leurs budgets.
 author: edupont04
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.workload: na
 ms.search.keywords: projects
-ms.search.form: 89, 200, 289, 290, 376, 462, 463, 1029, 1615, 8904, 9014, 9015
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: af4801956ce27bc282356400513fc22a03860784
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: bbb0fbf1500daa284ac99e03d01e8c9a64e417bf
+ms.sourcegitcommit: e562b45fda20ff88230e086caa6587913eddae26
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8146264"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6321099"
 ---
 # <a name="project-management"></a>Gestion de projets
-
 Le module [!INCLUDE[prod_short](includes/prod_short.md)] prend en charge les tâches de gestion courantes : configuration d'un projet, planification d'une ressource, spécification des informations nécessaires à la gestion des budgets et à la surveillance de la progression, etc. Vous pouvez suivre les heures machines et employés sur le projet à l'aide de feuilles de temps. Il offre aux chefs de projet un aperçu pertinent des projets individuels, des affectations des employés, des machines et des autres ressources en cours d'utilisation dans le cadre des projets.
 
 Avant de pouvoir utiliser le module [!INCLUDE[prod_short](includes/prod_short.md)] pour gérer les projets, vous devez définir des ressources, des feuilles de temps et des projets. Pour plus d'informations, reportez-vous à [Configuration de la gestion de projet](projects-setup-projects.md).  

@@ -1,20 +1,21 @@
 ---
-title: Préparer la migration des données client avec des modèles
-description: Découvrez comment utiliser des modèles de configuration pour structurer les données client existantes avant de migrer les données principales vers la nouvelle compagnie dans Business Central.
+title: Préparer la migration des données client avec des modèles | Microsoft Docs
+description: Découvrez comment utiliser des modèles de configuration pour structurer les données client existantes avant de migrer les données vers la nouvelle compagnie dans Business Central.
 author: SorenGP
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/14/2021
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: f0d8430be917981f84eb2841c0840a5b36a8d678
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: fa5d6eb28a76da3cd2b98bd5596137509c5ece1e
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8143800"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5387034"
 ---
 # <a name="prepare-to-migrate-customer-data-with-templates"></a>Préparer la migration des données client avec des modèles
 
@@ -46,7 +47,7 @@ Lorsque vous sélectionnez un modèle de données existant, vous devez évaluer 
 > [!TIP]  
 > Vous pouvez également utiliser des modèles de données afin de créer rapidement des enregistrements. Ils vous permettent de créer des données avec une rapidité et une précision accrues. Pour plus d'informations, reportez vous à [Enregistrer de nouveaux articles](inventory-how-register-new-items.md).
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modèles de configuration**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modèles configuration**, puis choisissez le lien associé.  
 2. Sur la page **Modèles configuration**, sélectionnez un modèle de données dans la liste, puis choisissez l'action **Modifier**.  
 
 Si les modèles par défaut ne répondent pas à vos besoins, vous pouvez créer de nouveaux modèles ou ajouter des champs à un modèle existant. Si les modèles par défaut sont suffisants, vous pouvez les utiliser pour créer des enregistrements à partir de modèles de données de base.
@@ -99,7 +100,7 @@ Le code table, le nom de la table, et les lignes du modèle de données existant
 
 Vous pouvez rapidement créer un classeur Excel qui servira de modèle basé sur la structure d’une table de données de base existante. Vous pouvez alors utiliser ce modèle pour rassembler les données du client sous un format cohérent afin de les importer ultérieurement dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille de calcul de configuration**, puis sélectionnez le lien associé.
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille configuration**, puis choisissez le lien associé.
 2. Ajoutez une table dans la liste ou sélectionnez une table existante. Pour plus d'informations, voir [Gérer la configuration de la compagnie dans une feuille](admin-how-to-manage-company-configuration-in-a-worksheet.md).
 3. Choisissez l'action **Afficher les champs** pour définir les champs de la table que vous souhaitez inclure dans le modèle.
 4. Choisissez l'action **Exporter vers modèle**.
@@ -123,29 +124,19 @@ Un enregistrement dont les données sont affectées de cette manière est comple
 > [!NOTE]
 > Si les données des tables du package de configuration contiennent des dates, par exemple, des dates de report sur les factures, les dates sont prises en compte dans le fuseau horaire spécifié dans [!INCLUDE[prod_short](includes/prod_short.md)]. 
 
-
 ## <a name="to-create-a-record-from-a-configuration-template"></a>Pour créer un enregistrement à partir d’un modèle de configuration
 
 Vous pouvez utiliser la structure de données qui est contenue dans les modèles de données pour convertir les informations en enregistrements de la base de données, un par un. Pour ce faire, utilisez la fonction **Créer instance** . Il s'agit d'une version miniature du processus de migration des données et peut être utile pour le prototypage ou le traitement des petites tâches de création de données.  
 
 Les étapes suivantes illustrent la création d'une fiche article d'un modèle données d'article. Vous pouvez créer un enregistrement à partir de n'importe quel modèle de données en utilisant la même procédure.  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modèles de configuration**, puis sélectionnez le lien associé.  
+1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modèles configuration**, puis choisissez le lien associé.  
 2. Sélectionnez le modèle **Article**, puis cliquez sur l'action **Modifier**. Pour plus d’informations, voir [Pour créer un modèle de données](admin-use-templates-to-prepare-customer-data-for-migration.md#to-create-a-new-data-template).
 3. Sélectionnez l'action **Créer instance**. Une fiche article est créée.  
 4. Cliquez sur le bouton **OK**.  
-5. Pour examiner la nouvelle fiche article, sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.  
+5. Pour vérifier la nouvelle fiche article, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles**, puis choisissez le lien associé.  
 6. Ouvrez la nouvelle fiche article.  
 7. Affichez les différents raccourcis, et vérifiez que les informations les concernant ont été créées correctement.  
-
-## <a name="to-use-conversion-templates"></a>Pour utiliser les modèles de conversion
-
-Vous pouvez convertir des contacts en clients, fournisseurs et employés. 
-
-### <a name="to-convert-a-contact-into-a-customer-vendor-or-employee"></a>Pour convertir un contact en client, fournisseur ou employé
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Contacts**, puis sélectionnez le contact approprié. 
-2. Sur la fiche contact, sélectionnez **Actions**, puis **Fonctions**, puis sélectionnez **Créer comme client, fournisseur, banque ou employé**.
-
 
 ## <a name="to-use-a-configuration-template-on-a-record"></a>Pour utiliser un modèle de configuration sur un enregistrement
 
@@ -161,9 +152,6 @@ La procédure suivante se base sur une nouvelle fiche article.
 3. Sur la page **Modèles client**, sélectionnez l'un des modèles, puis cliquez sur le bouton **OK**.  
 
 Les valeurs par défaut du modèle client choisi sont insérées dans la fiche client.
-
-> [!NOTE]
-> Vous ne pouvez pas utiliser Appliquer le modèle pour laisser en blanc les champs des clients, fournisseurs et autres. À la place, vous devez utiliser la fonctionnalité **Modifier dans Excel**. Pour plus d’informations, voir [Modifier dans Excel](across-work-with-excel.md#edit-in-excel).
 
 ## <a name="see-also"></a>Voir aussi
 

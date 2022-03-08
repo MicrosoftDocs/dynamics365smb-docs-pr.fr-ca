@@ -1,20 +1,21 @@
 ---
-title: 'Procédure pas à pas : planification automatique des approvisionnements'
-description: Cette procédure pas à pas démontre comment utiliser le système de planification de l’approvisionnement pour planifier automatiquement tous les bons de production et toutes les commandes achat figurant sur différents documents de vente.
+title: 'Procédure pas à pas : planification automatique des approvisionnements | Microsoft Docs'
+description: Les expressions comme « exécution de la planification » et « exécution MRP » se rapportent au calcul du calendrier de production maître (PDP) et de la planification des besoins de matières (MRP) en fonction de la demande réelle et projetée.
 author: SorenGP
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/24/2021
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: a9bc9b245ec8bcb7146f688da7ad3c94a16c00ec
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 4e790c33cb10e9e71d8ec6f9482615c41562e379
+ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8140277"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6214713"
 ---
 # <a name="walkthrough-planning-supplies-automatically"></a>Procédure pas à pas : planification automatique des approvisionnements
 
@@ -47,7 +48,7 @@ Les expressions comme « exécution de la planification » et « exécution M
 ## <a name="prerequisites"></a>Conditions préalables  
  Pour exécuter ce processus pas à pas, vous devez :  
 
--   utiliser la compagnie de démonstration CRONUS International Ltd. ;  
+-   La compagnie de démonstration CRONUS International Ltd.  
 -   Modifier plusieurs valeurs de configuration des articles en suivant les instructions de la section « Préparation d’exemples de données », dans la suite de cette procédure.  
 
 ## <a name="story"></a>Scénario  
@@ -73,7 +74,7 @@ Les expressions comme « exécution de la planification » et « exécution M
 
 ### <a name="to-change-selected-planning-parameters"></a>Pour modifier des paramètres de planification sélectionnés  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Unités de stock**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Unités de stock**, puis sélectionnez le lien associé.  
 2.  Ouvrez la fiche unité de stock EAST de l’article 1100, Roue avant.  
 3.  Sur le raccourci **Planification**, renseignez les champs comme indiqué dans le tableau ci-dessous.  
 
@@ -90,7 +91,7 @@ Les expressions comme « exécution de la planification » et « exécution M
 
 ### <a name="to-create-the-sales-order"></a>Pour créer le document de vente  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Sur la page **Document de vente**, renseignez les champs comme indiqué dans le tableau suivant.  
 
@@ -102,7 +103,7 @@ Les expressions comme « exécution de la planification » et « exécution M
 
 ### <a name="to-create-a-regenerative-plan-to-fulfill-demand-at-location-east"></a>Pour créer un planning régénératif afin de répondre à la demande de l'emplacement EAST  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille planification**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille planification**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Calculer planning régénératif**.  
 3.  Sur la page **Calc. planning - F. planning**, renseignez les champs comme indiqué dans le tableau suivant.  
 
@@ -125,7 +126,7 @@ Les expressions comme « exécution de la planification » et « exécution M
 
 ### <a name="to-calculate-mrp-to-include-underlying-component-needs"></a>Pour calculer MRP afin d'inclure les besoins sous-jacents en composantes  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille planification**, puis choisissez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille planification**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Calculer planning régénératif**.  
 3.  Sur la page **Calc. planning - F. planning**, renseignez les champs comme indiqué dans le tableau suivant.  
 
@@ -219,7 +220,7 @@ Les expressions comme « exécution de la planification » et « exécution M
 
 3.  Acceptez l'avertissement de disponibilité et cliquez sur le bouton **Oui** pour enregistrer la quantité demandée.  
 4.  Procédez à une replanification afin d'adapter le programme d'approvisionnement actif.  
-5.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille planification**, puis choisissez le lien associé.  
+5.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille planification**, puis sélectionnez le lien associé.  
 6.  Choisissez l'action **Calculer planning par écart**.  
 7.  Sur la page **Calc. planning - F. planning**, renseignez les champs comme indiqué dans le tableau suivant.  
 

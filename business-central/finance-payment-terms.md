@@ -2,16 +2,17 @@
 title: Configurer des modalités de paiement
 description: Dans la version de base de Business Central, utilisez les modalités de paiement pour gérer les dates d’échéance et les escomptes de paiement.
 author: edupont04
-ms.topic: conceptual
-ms.search.form: 4
-ms.date: 04/01/2021
+ms.service: dynamics365-business-central
+ms.topic: article
+ms.search.keywords: ''
+ms.date: 01/21/2021
 ms.author: edupont
-ms.openlocfilehash: 2ad055bef260d732c9f7732c094f660704f6acdf
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: c58db7ddd1047d9228a39e7825a5f5ef04fc925a
+ms.sourcegitcommit: adf1a87a677b8197c68bb28c44b7a58250d6fc51
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8135994"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "5035541"
 ---
 # <a name="set-up-payment-terms"></a>Configurer des modalités de paiement
 
@@ -27,7 +28,7 @@ Si vous souhaitez envoyer à vos clients des rappels de paiements en retard, vou
 
 ## <a name="to-set-up-payment-terms"></a>Pour configurer des modalités de paiement
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modalités de paiement**, puis sélectionnez le lien associé.  
+1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modalités de paiement**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
 Après avoir configuré les modalités de paiement, affectez-les aux clients et fournisseurs. Vous pouvez éventuellement ajouter des modalités de paiement à vos modes de règlement.  
@@ -46,6 +47,3 @@ Après avoir configuré les modalités de paiement, affectez-les aux clients et 
 [Enregistrer de nouveaux fournisseurs](purchasing-how-register-new-vendors.md)  
 [Vente](sales-manage-sales.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -2,20 +2,20 @@
 title: Configuration des opérations bancaires
 description: Utilisez les fiches compte bancaire pour suivre vos comptes bancaires et paramétrer le flux bancaire, telles que Yodlee, pour échanger des données.
 author: SorenGP
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: Yodlee, feed, stream, data exchange, AMC, link
-ms.search.form: 1200
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 21665191cc2b6dbedc09321fd165ef2fab098fc3
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 43a9291fb346596b46d3871a1da7eb84fae3a758
+ms.sourcegitcommit: cde0d97840c8b83cae45afc4a6c65725ffdad56a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8139947"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6248899"
 ---
 # <a name="setting-up-banking"></a>Paramétrage des opérations bancaires
 

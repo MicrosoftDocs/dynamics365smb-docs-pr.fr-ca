@@ -2,6 +2,7 @@
 title: Déclaration de la taxe de vente au Canada [CA]
 description: En savoir plus sur la manière dont la taxe de vente est configurée, et sur le fonctionnement des groupes fiscaux, des régions fiscales (états, comtés, villes et localités), des juridictions de taxe et des spécifications de taxe au Canada.
 author: edupont04
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -9,12 +10,12 @@ ms.workload: na
 ms.search.keywords: local
 ms.date: 10/12/2021
 ms.author: edupont
-ms.openlocfilehash: 20c3f34a11f6386c8921b9cc680af8c3875638ac
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 4a0200e9f76e72653293caabbf3be6634e782274
+ms.sourcegitcommit: c35a132cc615629e4f873177755a39ab58783e38
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8149299"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7643910"
 ---
 # <a name="reporting-sales-tax-in-canada"></a>Déclaration de la taxe de vente au Canada
 

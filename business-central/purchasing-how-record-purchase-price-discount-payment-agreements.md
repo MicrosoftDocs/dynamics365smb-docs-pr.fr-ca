@@ -2,6 +2,7 @@
 title: Enregistrer les prix d'achat spéciaux et les escomptes
 description: Vous pouvez définir différentes ententes en termes de prix et d'escomptes et les affecter aux documents achat pour les fournisseurs.
 author: bholtorf
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +11,12 @@ ms.search.keywords: special price, alternate price, pricing
 ms.search.form: 26, 1346, 7012, 7014, 7017, 7018, 7189, 7190
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 02177f639bed0696a406a427485679bacb23ed18
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 46e86445f60e0326a430acd5d2b4bbb555ba5635
+ms.sourcegitcommit: e008b3d7003c256475d6c606e5f7c9866a6bbb72
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8137351"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7953444"
 ---
 # <a name="record-special-purchase-prices-and-discounts"></a>Enregistrer les prix d'achat spéciaux et les escomptes
 > [!NOTE]

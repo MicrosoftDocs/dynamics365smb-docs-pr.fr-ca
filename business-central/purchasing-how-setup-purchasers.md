@@ -1,21 +1,23 @@
 ---
-title: Configurer des acheteurs d’articles et les affecter aux fournisseurs (contient une vidéo)
+title: Configurer des acheteurs d'articles et les affecter aux fournisseurs| Microsoft Docs
 description: Si plusieurs acheteurs ou agents d'achat travaillent dans votre compagnie, vous pouvez les planifier pour l'analyse statistique.
+services: project-madeira
+documentationcenter: ''
 author: SorenGP
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: purchasing agent
-ms.search.form: 14, 5116
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 17f307f76f4f34e431b8ee2239886d91bc2c26e3
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 452a5fab73d60bea127d19a42c1730fcbd24b06c
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8140719"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6435145"
 ---
 # <a name="set-up-purchasers"></a>Configurer les acheteurs
 Si plusieurs acheteurs travaillent dans votre compagnie, vous pouvez les configurer sur la page et leur attribuer un code. Vous pouvez ensuite utiliser ces codes pour établir des statistiques et filtrer les informations des états imprimés.<br><br>  

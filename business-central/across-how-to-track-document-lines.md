@@ -1,20 +1,21 @@
 ---
-title: Suivre des lignes document vers documents associés
-description: Affichez les documents liés aux lignes de bon de commande et de document de vente, comme les devis, les livraisons, les réceptions et les commandes permanentes, pour identifier les documents utilisés pour traiter les commandes.
+title: Procédure de suivi des lignes commande des documents associés | Microsoft Docs
+description: Vous pouvez afficher les documents associés aux lignes document de vente et aux lignes bon de commande, notamment à partir des lignes commande archivées. Les documents associés que vous pouvez suivre comprennent les devis, les livraisons, les réceptions et les commandes permanentes. Cela vous aide à identifier les documents utilisés pour traiter les commandes.
 author: SorenGP
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: 6560, 42, 50, 507, 509
-ms.date: 06/11/2021
+ms.search.keywords: ''
+ms.date: 10/01/2020
 ms.author: edupont
-ms.openlocfilehash: 6a71c817570dd1a784995bbc41f095f0ce799c6f
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 5cb802e98c44f9049ec6774b1cc2045b94c46f47
+ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8138840"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5384259"
 ---
 # <a name="track-document-lines"></a>Suivre des lignes document
 Vous pouvez afficher les documents associés aux lignes document de vente et aux lignes bon de commande, notamment à partir des lignes commande archivées. Les documents associés que vous pouvez suivre comprennent les devis, les livraisons, les réceptions et les commandes permanentes. Cela vous aide à identifier les documents utilisés pour traiter les commandes.  
@@ -22,7 +23,7 @@ Vous pouvez afficher les documents associés aux lignes document de vente et aux
 ## <a name="to-track-documents-related-to-a-sales-order-line"></a>Pour suivre les documents associés à une ligne document de vente
 La procédure suivante décrit comment effectuer le suivi à partir d'une ligne document de vente. La procédure est identique pour les lignes bon de commande et commande permanente.
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
+1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Ouvrez un document de vente à partir duquel vous souhaitez effectuer le suivi.  
 3.  Sélectionnez une ligne, puis choisissez l'action **Traçabilité ligne document**.
 4. Sur la page **Traçabilité ligne document**, sélectionnez le document que vous voulez afficher, puis choisissez l'action **Afficher** pour afficher la ligne associée.

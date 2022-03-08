@@ -2,15 +2,15 @@
 title: Catalogue d'apprentissage Utilisateurs professionnels
 description: Trouvez toutes les formations disponibles pour Business Central.
 author: loreleishannonmsft
-ms.date: 04/01/2021
-ms.topic: conceptual
-ms.author: margoc
-ms.openlocfilehash: fd0b839e402ff59ec5fb875d026eb5fe2202850e
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.date: 04/01/2020
+ms.topic: article
+ms.author: v-lshann
+ms.openlocfilehash: c169bde62c9ff2bf32160801d258d034d0187371
+ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5772439"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3190861"
 ---
 # <a name="business-users-learning-catalog"></a>Catalogue d'apprentissage Utilisateurs professionnels
 
@@ -33,7 +33,7 @@ Le catalogue suivant est organisé en partant des connaissances de base jusqu'au
 | [Utiliser la comptabilité analytique dans Microsoft Dynamics 365 Business Central](/learn/paths/use-cost-accounting-dynamics-365-business-central/)                                     | Avez-vous besoin d'utiliser la comptabilité analytique dans votre compagnie? Ce parcours de formation peut vous aider à démarrer avec la comptabilité analytique dans Business Central. Il explique la configuration de la comptabilité analytique, comment créer des données de base pour la comptabilité analytique, comment transférer des transactions et allouer des coûts à un groupe de comptes.   | Parcours d'apprentissage en ligne gratuit et personnalisé | 3 heures 16 minutes |
 | [Utiliser des journaux dans Microsoft Dynamics 365 Business Central](/learn/paths/use-journals-dynamics-365-business-central/)                                                   | Avez-vous besoin de créer et de reporter des écritures journal dans Business Central? Alors, ce parcours est fait pour vous. La configuration de modèles de journaux généraux, la création de transactions de journal, y compris les transactions récurrentes, et le report de transactions sont tous traités dans les modules de ce parcours de formation.                  | Parcours d'apprentissage en ligne gratuit et personnalisé | 2 heures 1 minute   |
 | [Rapprocher des comptes bancaires dans Microsoft Dynamics 365 Business Central](/learn/paths/reconcile-bank-accounts-dynamics-365-business-central/)                             | Voulez-vous savoir comment rapprocher des comptes bancaires dans Business Central ? La fonctionnalité de rapprochement bancaire et les journaux de rapprochement sont abordés dans ce parcours de formation.                                                                                                                           | Parcours d'apprentissage en ligne gratuit et personnalisé | 1 heure 3 minutes   |
-| [Utiliser plusieurs devises dans Microsoft Dynamics 365 Business Central](/learn/paths/use-multiple-currencies-dynamics-365-business-central/)                             | Utilisez-vous plusieurs devises ? Si vous le faites, ce parcours vous aidera à comprendre les étapes à suivre pour configurer et utiliser plusieurs devises, traiter les paiements et les factures dans différentes devises et ajuster les taux de change le cas échéant.                                             | Parcours d'apprentissage en ligne gratuit et personnalisé | 3 heures 4 minutes  |
+| [Utiliser plusieurs devises dans Microsoft Dynamics 365 Business Central](https://docs.microsoft.com/learn/paths/use-multiple-currencies-dynamics-365-business-central/)                             | Utilisez-vous plusieurs devises ? Si vous le faites, ce parcours vous aidera à comprendre les étapes à suivre pour configurer et utiliser plusieurs devises, traiter les paiements et les factures dans différentes devises et ajuster les taux de change le cas échéant.                                             | Parcours d'apprentissage en ligne gratuit et personnalisé | 3 heures 4 minutes  |
 | [Créer des rapports financiers dans Microsoft Dynamics 365 Business Central](/learn/paths/create-financial-reports-dynamics-365-business-central/)                           | Êtes-vous responsable de la génération de rapports financiers à partir de Business Central ? Ce parcours de formation traite de la création de budgets et de l'utilisation des calendriers de compte, des dimensions et du langage de rapport d'entreprise eXtensible (XBRL) pour générer les rapports financiers généralement nécessaires à la plupart des entreprises. | Parcours d'apprentissage en ligne gratuit et personnalisé | 3 heures 44 minutes |
 | [Traiter les activités financières périodiques dans Microsoft Dynamics 365 Business Central](/learn/paths/process-financial-periodic-activities-dynamics-365-business-central/) | Êtes-vous responsable des processus de fermeture des périodes et des exercices? Complétez ce module, qui explique comment envoyer des rappels et des notes de frais financiers aux clients. Il couvre également le traitement et la création de rapports Intrastat, ainsi que la fermeture d'un exercice financier.                                                     | Parcours d'apprentissage en ligne gratuit et personnalisé | 3 heures 3 minutes  |
 ## <a name="trade"></a>Commerce<a name="trade"></a>
@@ -48,6 +48,3 @@ Le catalogue suivant est organisé en partant des connaissances de base jusqu'au
 | [Renvoyer des articles dans Microsoft Dynamics 365 Business Central](/learn/paths/return-items-dynamics-365-business-central/)                                                   | Devez-vous renvoyer des articles à des fournisseurs et accepter les retours des clients ? Ce parcours vous aidera à apprendre à traiter les retours.                                                                                                                                                                         | Parcours d'apprentissage en ligne gratuit et personnalisé | 1 heure 25 minutes  |
 | [Réapprovisionner des articles dans Microsoft Dynamics 365 Business Central](/learn/paths/replenish-items-dynamics-365-business-central/)                                             | Avez-vous besoin de réapprovisionner des articles inventaire dans votre entreprise? Ce parcours pédagogique présente les options que vous pouvez utiliser pour réapprovisionner efficacement les articles dans Business Central.                                                                                                                                     | Parcours d'apprentissage en ligne gratuit et personnalisé | 1 heure 46 minutes  |
 | [Assembler des articles dans Microsoft Dynamics 365 Business Central](/learn/paths/assemble-items-dynamics-365-business-central/)                                               | Vendez-vous des articles assemblés ? Ce parcours de formation fournit les informations nécessaires à la gestion d'assemblage et aux éléments. Il fournit également des étapes pour produire des articles assemblés à stocker ou à commander.                                                                                                                | Parcours d'apprentissage en ligne gratuit et personnalisé | 2 heures 26 minutes |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

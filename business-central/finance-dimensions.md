@@ -2,6 +2,7 @@
 title: Utilisation des dimensions pour suivre et analyser facilement les données
 description: Utilisez les dimensions pour classer des écritures par catégorie, par exemple, par service ou projet, afin de facilement suivre et analyser les données pour vous aider à prendre les bonnes décisions commerciales.
 author: edupont04
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +11,12 @@ ms.search.keywords: analysis, history, track, business intelligence
 ms.search.form: 408, 479, 480, 481, 484, 536, 537, 538, 539, 540, 541, 542, 543, 544, 548, 560, 562, 564, 567, 568, 577, 578, 580, 699, 1343, 2580, 2581, 2582, 2583, 2584, 2585, 2586, 2587, 2588, 2590, 2591, 2592, 2593, 9083, 9233, 9251, 9252, 9253
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 31e57e20a7ec6492624684fc5973d1ab972b5de9
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 9d98733568d38d88521ca214e6f760b95fb66878
+ms.sourcegitcommit: 2ab6709741be16ca8029e2afadf19d28cf00fbc7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8145664"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7971207"
 ---
 # <a name="working-with-dimensions"></a>Utilisation des axes analytiques
 

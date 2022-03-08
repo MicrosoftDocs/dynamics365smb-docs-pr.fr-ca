@@ -1,20 +1,20 @@
 ---
-title: Définir des informations générales relatives aux immobilisations
+title: Configurer grand livre immobilisation| Microsoft Docs
 description: Avant d'utiliser des immobilisations, vous devez paramétrer des comptes GL par défaut, des groupes de report, des clés d'affectation, des modèles et lots de journal, ainsi que des codes de classe.
 author: edupont04
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: 5623, 5615, 5661, 5633, 5609, 5631, 5630, 5617, 5612, 5613, 5608, 5609, 5635, 9277, 5662, 5627, 5616, 5620
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: bf837a298d5b9602e1d520dda85c0fb5ab78b8eb
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 8fed97e698cf5613700b53db3aa5a4292d12f554
+ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8133846"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6440684"
 ---
 # <a name="set-up-general-fixed-assets-information"></a>Configurer des informations générales pour les immobilisations
 Avant de pouvoir gérer les immobilisations, vous devez configurer les comptes du grand livre par défaut, les clés d'affectation, les modèles journal et les lots pour le report et le reclassement des immobilisations. Vous pouvez classer les immobilisations par catégorie, telles que Corporelles et Incorporelles.

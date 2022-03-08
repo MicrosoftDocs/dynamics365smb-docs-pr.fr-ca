@@ -1,28 +1,30 @@
 ---
-title: Aperçu des tâches permettant de gérer vos comptes clients
-description: Cette rubrique décrit les tâches permettant de gérer les clients et d’affecter les paiements aux écritures client ou fournisseur.
+title: Aperçu des tâches permettant de gérer la comptabilité client | Microsoft Docs
+description: Décrit les tâches permettant de gérer les montant à recevoir et d'affecter les paiements aux écritures client ou fournisseur.
+services: project-madeira
+documentationcenter: ''
 author: SorenGP
-ms.topic: overview
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: customer payment, debtor, balance due, AR
-ms.date: 06/23/2021
-ms.author: edupont
-ms.openlocfilehash: 50745f63879bf3aa0610a0109950bdd9d88a676c
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.date: 01/13/2020
+ms.author: sgroespe
+ms.openlocfilehash: 387b8269e5da978c25c1c5436f5a737fa055a78c
+ms.sourcegitcommit: ead69ebe5b29927876a4fb23afb6c066f8854591
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8137170"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2954173"
 ---
 # <a name="managing-receivables"></a>Gestion des comptes client
-
 Une étape normale de n'importe quelle opération financière consiste à rapprocher des comptes bancaires, ce qui nécessite d'affecter les paiements entrants avec des écritures fournisseur ou client pour fermer les factures vente et les notes de crédit achat comme payées.
 
 Bien que la plupart des clients dans les environnements B2B payent un certain temps après la livraison en laissant les factures vente reportées ouvertes jusqu'à ce qu'elles soient fermées (affectées) par le département Comptabilité client à la réception du paiement, certaines factures vente peuvent être payées immédiatement, par exemple avec PayPal. Ces factures sont immédiatement affectées comme payées lors de leur report et n'apparaissent donc pas comme paiements à traiter dans la Comptabilité client. Pour plus d'informations, voir [Facturation des ventes](sales-how-invoice-sales.md), par exemple.  
 
-Dans [!INCLUDE[prod_short](includes/prod_short.md)], l'une des méthodes les plus rapides pour enregistrer des paiements est d'accéder à la page **Journal rapprochement bancaire** et d'importer un fichier ou un flux de relevé bancaire. Les paiements sont affectés aux écritures client ou fournisseur ouvertes selon les correspondances entre le texte de paiement et les informations d'écriture. Vous pouvez consulter et modifier les correspondances avant de reporter le journal, puis fermer les écritures compte bancaire pour les écritures lorsque vous reportez le journal. Le compte bancaire est rapproché lorsque tous les paiements sont affectés.
+Dans [!INCLUDE[d365fin](includes/d365fin_md.md)], l'une des méthodes les plus rapides pour enregistrer des paiements est d'accéder à la page **Journal rapprochement bancaire** et d'importer un fichier ou un flux de relevé bancaire. Les paiements sont affectés aux écritures client ou fournisseur ouvertes selon les correspondances entre le texte de paiement et les informations d'écriture. Vous pouvez consulter et modifier les correspondances avant de reporter le journal, puis fermer les écritures compte bancaire pour les écritures lorsque vous reportez le journal. Le compte bancaire est rapproché lorsque tous les paiements sont affectés.
 
 D'autres pages vous permettent d'affecter des paiements ou de rapprocher des comptes bancaires :
 
@@ -30,7 +32,7 @@ D'autres pages vous permettent d'affecter des paiements ou de rapprocher des com
 * La page **Enregistrement de paiement** qui vous permet d'affecter manuellement les paiements reçus en liquide, par chèque ou par transaction bancaire par rapport à une liste générée de documents vente impayés. Notez que cette fonctionnalité est uniquement disponible pour les documents vente. Vous ne pouvez pas affecter des paiements sortants, et vous ne pouvez pas rapprocher des comptes bancaires.
 * La page **Journal des encaissements** où vous pouvez reporter manuellement les réceptions dans un compte général, client ou autre en saisissant une ligne paiement. Vous pouvez affecter la réception ou le remboursement à une ou plusieurs écritures ouvertes avant de reporter le journal des encaissements, ou à partir des écritures client. Vous ne pouvez pas rapprocher des comptes bancaires.
 
-La page **Journal rapprochement bancaire** utilise une logique de correspondance automatique que vous pouvez configurer sur la page **Règles affectation paiement**. Pour plus d'informations, voir [Configurer des règles pour l'affectation automatique des paiements](receivables-how-set-up-payment-application-rules.md).  
+Les pages **Journal rapprochement bancaire** et **Rapprochement bancaire** utilisent une logique de correspondance automatique que vous pouvez configurer sur la page **Règles affectation paiement**. Pour plus d'informations, voir [Configurer des règles pour l'affectation automatique des paiements](receivables-how-set-up-payment-application-rules.md).
 
 Les autres aspects de la gestion des comptes client comprennent le recouvrement des soldes échus, y compris les intérêts de retard et des rappels, et de définir les comptes bancaires pour autoriser le retrait des paiements des clients de leur compte automatiquement.
 
@@ -44,6 +46,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Rappeler aux clients les soldes échus, calculer les intérêts et les intérêts de retard, et gérer les comptes clients. |[Collecte des soldes restants](receivables-collect-outstanding-balances.md) |
 |Avec le consentement de votre client, collectez les paiements directement à partir du compte bancaire du client en euro uniquement.|[Recouvrement de paiements par prélèvement automatique SEPA](finance-collect-payments-with-sepa-direct-debit.md)|
 |Bloquez la saisie ou le report d'un client sur des documents, par exemple à cause de son insolvabilité.|[Bloquer des clients](receivables-how-block-customers.md)|
+|Assurez-vous de connaître le coût des articles livrés en affectant les coûts articles ajoutés, tels que le fret, la manutention, les assurances et le transport, que vous encourez après la vente.|[Utiliser Frais annexes pour comptabiliser les coûts commerciaux supplémentaires](payables-how-assign-item-charges.md)|
 |Configurer une valeur de tolérance selon laquelle le système ferme une facture même si le paiement, tenant compte d'éventuels escomptes, ne couvre pas intégralement le montant de la facture.|[Utilisation des tolérances de règlement et des tolérances d'escompte de paiement](finance-payment-tolerance-and-payment-discount-tolerance.md)|
 | Prévoyez quand les paiements seront exécutés en retard pour les documents vente. | [Extension Prévisions de retard de paiement](ui-extensions-late-payment-prediction.md) |
 
@@ -52,10 +55,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 ## <a name="see-also"></a>Voir aussi
 [Vente](sales-manage-sales.md)  
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)
 
-## [!INCLUDE[prod_short](includes/free_trial_md.md)]  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+## [!INCLUDE[d365fin](includes/free_trial_md.md)]  

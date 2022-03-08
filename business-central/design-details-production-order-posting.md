@@ -2,19 +2,20 @@
 title: 'Détails de conception : report de bon de production | Microsoft Docs'
 description: Comme pour le report d'ordre d'assemblage, les composantes consommées et le temps du poste utilisé sont convertis et sortis en tant qu'article produit lorsque le bon de production est terminé.
 author: SorenGP
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/08/2021
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 21dfc90e25c33c26bc739ff32274d0a5088a6e2f
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 654c95586dfc36f4228a93f664da6124e6eac42e
+ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8146576"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5781139"
 ---
 # <a name="design-details-production-order-posting"></a>Détails de conception : validation d'ordre de fabrication
 Comme pour le report d'ordre d'assemblage, les composantes consommées et le temps du poste utilisé sont convertis et sortis en tant qu'article produit lorsque le bon de production est terminé. Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-assembly-order-posting.md). Toutefois, le flux des coûts des ordres d'assemblage est moins complexe, notamment parce que le report du coût d'assemblage ne se produit qu'une fois et ne génère donc pas d'inventaire travaux en cours.
@@ -57,11 +58,11 @@ Le report des bons de production sur l'inventaire TEC implique la production, la
 
 Le schéma suivant montre les routines de report impliquées dans le codeunit 22.  
 
-![Routines de report des bons de production.](media/design_details_inventory_costing_14_production_posting_1.png "Routines de report des bons de production")  
+![Routines de report des bons de production](media/design_details_inventory_costing_14_production_posting_1.png "Routines de report des bons de production")  
 
 Le schéma suivant montre les associations entre les écritures générées et les objets de coûts.  
 
-![Flux d’écritures de production.](media/design_details_inventory_costing_14_production_posting_2.png "Flux d'écritures de production")  
+![Flux d'écritures de production](media/design_details_inventory_costing_14_production_posting_2.png "Flux d'écritures de production")  
 
 L'écriture capacité décrit la consommation de la capacité en termes d'unités de temps, alors que l'écriture valeur associée décrit la valeur de la consommation de capacité spécifique.  
 

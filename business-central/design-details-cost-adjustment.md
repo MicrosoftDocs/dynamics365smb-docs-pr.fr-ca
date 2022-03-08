@@ -1,20 +1,21 @@
 ---
-title: 'Détails de conception : ajustement des coûts'
-description: L’ajustement des coûts transfère les changements depuis les coûts des sources de coût aux destinataires de coût, selon le mode évaluation inventaire d’un article, pour fournir une évaluation de l’inventaire correcte.
+title: Détails de conception - Ajustement des coûts | Microsoft Docs
+description: L'objet principal de l'ajustement des coûts est de transférer les changements depuis les sources de coût aux destinataires de coût, selon le mode d'évaluation coût d'un article, pour fournir une évaluation de l'inventaire correcte.
 author: SorenGP
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/14/2021
-ms.author: edupont
-ms.openlocfilehash: 5783647c4e70debce32bbb0ca3976efea78ec065
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.date: 06/19/2020
+ms.author: sgroespe
+ms.openlocfilehash: 686aa7b0e6bae7fa5fbc639f03ef3ac34237d9e8
+ms.sourcegitcommit: ec3034640ed10e0fd028568ec45f21c84498d3de
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8143722"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3486431"
 ---
 # <a name="design-details-cost-adjustment"></a>Détails de conception : ajustement des coûts
 
@@ -37,7 +38,7 @@ Les coûts d'inventaire doivent être ajustés avant que les écritures valeur a
 
 La tâche consistant à détecter si l'ajustement des coûts doit se produire est principalement effectuée par la routine Ligne report - journal article, tandis que la tâche consistant à calculer et générer des écritures d'ajustement des coûts est effectuée par le traitement en lot **Ajuster coûts - Écr. article**.  
 
-Pour pouvoir transférer les coûts, le mécanisme de détection de détermine quelles sources ont changé en termes de coûts et vers quelle destination ces coûts doivent être transférés. Les trois fonctions de détection suivantes sont disponibles dans [!INCLUDE[prod_short](includes/prod_short.md)] :  
+Pour pouvoir transférer les coûts, le mécanisme de détection de détermine quelles sources ont changé en termes de coûts et vers quelle destination ces coûts doivent être transférés. Les trois fonctions de détection suivantes sont disponibles dans [!INCLUDE[d365fin](includes/d365fin_md.md)] :  
 
 * Écriture affectation article  
 * Point d'entrée d'ajustement de coût moyen  
@@ -66,7 +67,7 @@ Cette fonction de détection est utilisée pour les scénarios de conversion, la
 
 La fonction Niveau de commande est utilisée pour détecter les ajustements dans le report d'assemblage. Le graphique suivant montre la structure d'écriture d'ajustement :  
 
-![Flux des écritures dans l’ajustement des coûts.](media/design_details_assembly_posting_3.png "Flux des écritures dans l'ajustement des coûts")  
+![Flux des écritures dans l'ajustement des coûts](media/design_details_assembly_posting_3.png "Flux des écritures dans l'ajustement des coûts")  
 
 Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-assembly-order-posting.md).  
 
@@ -81,7 +82,7 @@ C'est une bonne pratique d'exécuter l'ajustement des coûts automatiquement lor
 
 Comme il est important de mettre le coût unitaire d'un article à jour, il est recommandé d'exécuter le traitement en lot pour **Ajuster coûts - Écr. article** aussi souvent que possible, en dehors des heures de travail. Sinon, utilisez l'ajustement automatique des coûts. Cela garantit que le coût unitaire est mis à jour quotidiennement pour les articles.  
 
-Que l'exécution de l'ajustement des coûts soit manuel ou automatique, le processus d'ajustement et ses conséquences sont les mêmes. [!INCLUDE[prod_short](includes/prod_short.md)] calcule la valeur de la transaction entrante et affecte également ce coût à toutes les transactions sortantes, telles que les ventes ou les consommations, qui ont été lettrées sur la transaction entrante. L'ajustement des coûts crée des écritures valeur qui contiennent des montants d'ajustement et des montants qui compensent l'arrondissement.  
+Que l'exécution de l'ajustement des coûts soit manuel ou automatique, le processus d'ajustement et ses conséquences sont les mêmes. [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule la valeur de la transaction entrante et affecte également ce coût à toutes les transactions sortantes, telles que les ventes ou les consommations, qui ont été lettrées sur la transaction entrante. L'ajustement des coûts crée des écritures valeur qui contiennent des montants d'ajustement et des montants qui compensent l'arrondissement.  
 
 Les nouvelles écritures valeur ajustement et arrondissement ont la date de report de la facture associée. Exceptions : si les écritures valeur tombent dans une période comptable ou une période d'inventaire fermée ou si la date de report est antérieure à la date du champ **Début période report** sur la page **Configuration du grand livre**. Si cela se produit, le traitement en lot affecte la date de report comme la première date de la période ouverte suivante.  
 
@@ -187,7 +188,4 @@ Si vous avez configuré l'ajustement automatique des coûts pour l'affecter aux 
 [Détails de conception : validation d'ordre de fabrication](design-details-production-order-posting.md)  
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Finance](finance.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
