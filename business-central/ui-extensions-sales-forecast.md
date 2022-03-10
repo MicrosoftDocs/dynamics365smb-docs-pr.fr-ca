@@ -1,23 +1,20 @@
 ---
 title: Utilisation de l'extension Prévisions de ventes et d'inventaire pour gérer l'inventaire | Microsoft Docs
 description: Cette extension vous aide à prévoir les ventes, avoir un aperçu clair des ruptures de stock prévues, et même de vous aider à créer des demandes de réapprovisionnement aux fournisseurs.
-services: project-madeira
-documentationcenter: ''
 author: edupont04
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize, budget
-ms.date: 04/01/2021
+ms.date: 12/20/2021
 ms.author: edupont
-ms.openlocfilehash: f55bad5c26e1f1fbb336090ff862e0e931ff9c39
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: 4341abd51fa87e36394109dd71452b38df5062e1
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5784750"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8140381"
 ---
 # <a name="the-sales-and-inventory-forecast-extension"></a>Extension Prévision des ventes et de l'inventaire
 La gestion de l'inventaire est un compromis entre le service client et la gestion de vos coûts. D'une part, un inventaire faible exige un capital de travail inférieur, mais d'autre part, les ruptures d'inventaire mènent potentiellement à des ventes non concrétisées. L'extension Prévision des ventes et de l'inventaire prévoit les ventes potentielles à l'aide des données historiques et donne une présentation claire des ruptures d'inventaire prévues. Selon la prévision, l'extension aide à créer des demandes de réapprovisionnement auprès de vos fournisseurs et vous fait gagner du temps.  
@@ -48,7 +45,7 @@ Pour établir des prévisions sur les ventes futures, le service web nécessite 
 
 Avant d'utiliser le service web, [!INCLUDE[prod_short](includes/prod_short.md)] comprime les transactions par **N° article** et **Date de report** sur la base de la valeur dans le champ **Type de période** sur la page **Configuration des prévisions de l'inventaire et des ventes prévues**.
 
-## <a name="create-and-use-your-own-predictive-web-service-for-sales-and-inventory-forecasts"></a><a name="AnchorText"></a>Créer et utiliser votre propre service web prévisionnel pour les prévisions de l'inventaire et les ventes prévues
+## <a name="create-and-use-your-own-predictive-web-service-for-sales-and-inventory-forecasts"></a><a name="AnchorText"> </a>Créer et utiliser votre propre service web prévisionnel pour les prévisions de l'inventaire et les ventes prévues
 Vous pouvez aussi utiliser votre propre service Web prévisionnel basé sur un modèle public intitulé **Modèle de prévision pour Microsoft Business Central**. Ce modèle prévisionnel est disponible en ligne dans la galerie Azure AI. Pour utiliser le modèle, procédez comme suit :  
 
 1. Ouvrez un navigateur et accédez à la [Galerie Azure AI](https://go.microsoft.com/fwlink/?linkid=828352).  
@@ -56,14 +53,16 @@ Vous pouvez aussi utiliser votre propre service Web prévisionnel basé sur un m
 3. Utilisez votre compte Microsoft pour enregistrer un espace de travail, puis copiez le modèle.  
 4. Exécutez le modèle, et publiez-le comme service Web.  
 5. Notez l'URL d'API et la clé d'API. Vous allez utiliser ces informations d'identification pour une configuration de trésorerie.  
-6. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Configuration des prévisions de l'inventaire et des ventes prévues**, puis sélectionnez le lien associé.  
+6. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration de la prévision des ventes et de l’inventaire**, puis sélectionnez le lien associé.  
 7. Développez le raccourci **Général**, puis renseignez les champs URL d'API et Clé d'API.  
+
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/use-sales-inventory-forecast-extension/)
 
 
 ## <a name="see-also"></a>Voir aussi
 [Vente](sales-manage-sales.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Personnalisation de [!INCLUDE[prod_short](includes/prod_short.md)] à l'aide des extensions](ui-extensions.md)  
-
+[Utiliser l’intelligence artificielle dans Microsoft Dynamics 365 Business Central (Microsoft Learn)](/learn/paths/use-artificial-intelligence/)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

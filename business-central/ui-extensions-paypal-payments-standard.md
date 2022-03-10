@@ -1,23 +1,22 @@
 ---
-title: Utilisation de l'extension PayPal Payments Standard | Microsoft Docs
-description: Décrit comment utiliser l'extension pour permettre aux clients d'effectuer des paiements avec Paypal.
+title: Utilisation de l’’extension PayPal Payments Standard
+description: Cette rubrique décrit comment utiliser l’extension standard pour permettre aux clients d’effectuer des paiements avec Paypal.
 services: project-madeira
 documentationcenter: ''
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize
-ms.date: 04/01/2019
-ms.author: sgroespe
-ms.openlocfilehash: f715108b17d355084fee7983e106cd33dd476906
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.date: 06/23/2021
+ms.author: edupont
+ms.openlocfilehash: 6090e81dc4626b05154777d4f84dc0093281f75a
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1249777"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8129900"
 ---
 # <a name="the-paypal-payments-standard-extension"></a>Extension PayPal Payments Standard
 Les clients sont toujours plus exigeants en ce qui concerne le service clientèle, en termes de qualité de produits mais aussi en termes d'options de livraison et de paiement. Le service PayPal Payments Standard vous aide à développer votre service clientèle.
@@ -37,6 +36,9 @@ Le service PayPal Payments Standard fournit les avantages suivants :
 Pour plus d'informations, reportez-vous à [Activer les paiements client via Paypal](sales-how-enable-payment-service-extensions.md).
 
 ## <a name="see-also"></a>Voir aussi
-[Personnalisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide des extensions](ui-extensions.md)  
+[Personnalisation de [!INCLUDE[prod_short](includes/prod_short.md)] à l'aide des extensions](ui-extensions.md)  
 [Définition des ventes](sales-setup-sales.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

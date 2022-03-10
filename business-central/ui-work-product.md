@@ -1,20 +1,20 @@
 ---
-title: Utilisation de la fonctionnalité générale dans Business Central | Microsoft Docs
+title: Utilisation de Business Central (contient une vidéo)
 description: Décrit la fonctionnalité générale que vous utilisez pour interagir avec des données dans Business Central, par exemple entrer les valeurs, trier les données, et modifier les vues.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
+ms.search.form: 9020, 9022, 9026, 9027, 9030, 9000, 9004, 9005, 9018, 9006, 9007, 9010, 9016, 9017
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 9781e2d064d48b7ce72b3c7f279c33cbfd42be7a
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 48efb839720832ffdcfdb390aed64108c032704b
+ms.sourcegitcommit: 75a388b1d8917e2bbd49398ef76cf86cf37e6767
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6445261"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323068"
 ---
 # <a name="working-with-prod_short"></a>Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]
 

@@ -2,17 +2,17 @@
 title: Gérer le travail entre plusieurs compagnies dans le Hub Entreprise
 description: En savoir plus sur le Hub Entreprise Dynamics 365 Business Central que vous utilisez pour gérer votre travail dans plusieurs compagnies.
 author: edupont04
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.search.keywords: accountant, accounting, financial report
-ms.date: 10/29/2020
+ms.search.form: 1151, 1154, 1165, 1166
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: e8a1e6de5cc8889f144e08db8ed77e4543cb9b4c
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: 410e3166674354499e76b9bc5483d66c037c4969
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4752065"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8132065"
 ---
 # <a name="manage-work-across-multiple-companies-in-the-company-hub"></a>Gérer le travail entre plusieurs compagnies dans le Hub Entreprise
 
@@ -30,7 +30,7 @@ Si vous utilisez le rôle de **Hub Entreprise**, votre page d’accueil affiche 
 > [!TIP]
 > Pour accéder à une compagnie spécifique dans [!INCLUDE [prod_short](includes/prod_short.md)], choisissez le nom de la compagnie ou choisissez l’élément de menu **Accéder à la compagnie**, vous êtes connecté automatiquement dans un nouvel onglet de navigateur.
 
-:::image type="content" source="media/company-hub-company-list-actions.png" alt-text="Actions pour une compagnie répertoriée dans le Hub Entreprise":::
+:::image type="content" source="media/company-hub-company-list-actions.png" alt-text="Actions pour une compagnie répertoriée dans le Hub Compagnie.":::
 
 Vous pouvez ajouter de nouvelles compagnies, par exemple lorsque vous obtenez un nouveau client ou lorsque votre société ajoute une nouvelle filiale. Pour plus d’informations, voir [Ajouter des compagnies à votre Hub Entreprise](company-hub-add-company.md).  
 
@@ -86,7 +86,7 @@ Mais pour ajouter une compagnie, vous devez avoir accès à une ou plusieurs ins
 
 Par exemple, si vous êtes comptable, vos clients peuvent vous inviter à leur [!INCLUDE [prod_short](includes/prod_short.md)]. Pour plus d’informations, voir [Inviter votre comptable externe dans votre Business Central](finance-accounting.md#inviteaccountant).  
 
-Les administrateurs peuvent utiliser le même guide de configuration assistée pour vous ajouter à leur [!INCLUDE [prod_short](includes/prod_short.md)], ou ils peuvent vous ajouter au compte Azure AD dans le centre d’administration Microsoft 365. Pour en savoir plus, voir [Gérer les utilisateurs et les groupes](/microsoft-365/admin/add-users/?view=o365-worldwide&preserve-view=true).  
+Les administrateurs peuvent utiliser le même guide de configuration assistée pour vous ajouter à leur [!INCLUDE [prod_short](includes/prod_short.md)], ou ils peuvent vous ajouter au compte Azure AD approprié dans le centre d’administration Microsoft 365. Pour en savoir plus, voir [Gérer les utilisateurs et les groupes](/microsoft-365/admin/add-users/?view=o365-worldwide&preserve-view=true).  
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -94,3 +94,6 @@ Les administrateurs peuvent utiliser le même guide de configuration assistée p
 [Expériences de comptables dans Business Central](finance-accounting.md)  
 [Hub Entreprise pour l’extension Business Central](ui-extensions-company-hub.md)  
 [Modifier les paramètres de base](ui-change-basic-settings.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

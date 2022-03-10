@@ -2,26 +2,25 @@
 title: Comment prêter des articles de service de substitution | Microsoft Docs
 description: Vous pouvez prêter aux clients des articles de prêt pour remplacer temporairement les articles de service en cours de maintenance.
 author: bholtorf
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
+ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 7398c89877551cfe1d5a78cb902d1c66e9efc9c6
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: ddf4dd090246bd1b102a3f812db7955f48ad0afb
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3192613"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8132586"
 ---
 # <a name="lend-and-receive-loaners"></a>Prêter et recevoir des articles de prêt
 Vous pouvez prêter aux clients des articles de prêt pour remplacer temporairement les articles de service en cours de maintenance.  
   
 ## <a name="to-lend-a-loaner-item"></a>Pour prêter un article de prêt    
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Commandes service**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Commandes service**, puis choisissez le lien associé.  
 2. Ouvrez la fiche de commande service.  
 3. sélectionnez la ligne article de service comportant l'article que vous souhaitez remplacer par un article de prêt.  
 4. Dans le champ **N° article de prêt**, choisissez l'article de prêt concerné.  
@@ -30,7 +29,7 @@ Vous pouvez prêter aux clients des articles de prêt pour remplacer temporairem
 ## <a name="to-receive-a-loaner"></a>Pour recevoir un article de prêt  
 Lorsque vous recevez un article de prêt d'un client, vous devez enregistrer la réception. Pour ce faire, utilisez les pages **Commande service**, **Livraison de service reportée** et **Fiche article de prêt**. Cette procédure explique comment recevoir les articles de prêt sur la page **Commande service**.  
   
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Commandes service**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Commandes service**, puis choisissez le lien associé.  
 2. Ouvrez la commande service.  
 3. Choisissez la ligne article de service contenant l'article de prêt à recevoir.  
 4. Choisissez **Actions**, sélectionnez **Fonctions**, puis choisissez **Réceptionner article de prêt**.  
@@ -38,7 +37,7 @@ Lorsque vous recevez un article de prêt d'un client, vous devez enregistrer la 
 ## <a name="to-register-loaner-comments"></a>Pour enregistrer des commentaires article de prêt  
 Vous pouvez utiliser la page **Général Feuille commentaires service** pour enregistrer des commentaires sur des articles de prêt enregistrés.  
   
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Articles de prêt**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles de prêt**, puis choisissez le lien associé.  
 2. Ouvrez la fiche d'article de prêt.  
 3. Sélectionnez l'action **Commentaires**. La page **Général Feuille commentaires service** s'ouvre.  
 4. Dans le champ **Date**, saisissez une date.  
@@ -46,3 +45,6 @@ Vous pouvez utiliser la page **Général Feuille commentaires service** pour enr
   
 ## <a name="see-also"></a>Voir aussi  
 [Configuration d'un programme d'articles de prêt](service-how-setup-loaner-program.md)   
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,21 +1,20 @@
 ---
-title: Procédure de configuration des heures de travail et des heures de service | Microsoft Docs
-description: Vous pouvez spécifier les heures de travail service habituelles de votre compagnie. Ces heures de service sont utilisées pour calculer la date et l'heure de réponse des commandes et des devis service, et envoyer des alertes relatives au délai de réponse.
+title: 'Procédure : configurer des heures de travail et des heures de service'
+description: Découvrez comment configurer les heures ouvrées et de service pour calculer la date et le délai de réponse pour les commandes service et les devis.
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: 043d745b0676a6fe939a6d236fefe4dad01ca742
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: 919b9c19f93e82c1dc738894e0828fc91f2af46c
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4748028"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8139271"
 ---
 # <a name="set-up-work-hours-and-service-hours"></a>Configurer des heures de travail et des heures de service
 Généralement, un système de gestion de services suit les heures ressource et les états commande service afin de prévoir les besoins en charges de travail et en service. [!INCLUDE[prod_short](includes/prod_short.md)] intègre des outils que vous pouvez personnaliser afin d'enregistrer ce type d'informations.  
@@ -27,7 +26,7 @@ Lorsque vous travaillez sur une commande service, vous pouvez mettre à jour son
 ## <a name="to-set-up-default-service-hours"></a>Pour configurer des heures de service par défaut  
 La page **Heures de service par défaut** permet de configurer les heures de travail service habituelles de votre compagnie. Ces heures de service sont utilisées pour calculer la date et l'heure de réponse des commandes et des devis service, et envoyer des alertes relatives au délai de réponse. Les heures de service par défaut sont utilisées pour les contrats de service si vous ne spécifiez pas d'heures de service spéciales pour un contrat.  
   
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Heures de service par défaut**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Heures de service par défaut**, puis choisissez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
   
 > [!IMPORTANT]  
@@ -36,7 +35,7 @@ La page **Heures de service par défaut** permet de configurer les heures de tra
 ## <a name="to-set-up-work-hour-templates"></a>Pour configurer des modèles heure de travail
 Vous pouvez utiliser la page **Modèle heure de travail** pour configurer des modèles contenant les heures de travail habituelles de votre compagnie. Par exemple, vous pouvez créer des modèles pour les techniciens à temps plein et à temps partiel. Vous pouvez utiliser des modèles heure de travail lorsque vous ajoutez de la capacité à des ressources.  
   
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Modèles heure de travail**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modèles heures ouvrées**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
   
 > [!Note]
@@ -47,7 +46,7 @@ Vous pouvez utiliser la page **Heures de service** pour configurer des heures de
   
 Si vous ne configurez pas d'heures de service spécifiques pour le contrat de service, les heures de service par défaut des contrats de service sont utilisées.  
   
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Contrats de service**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Contrats de service**, puis sélectionnez le lien associé.  
 2. Ouvrez le contrat de service pour lequel vous voulez configurer des heures de service spécifiques, puis sélectionnez **Heures de service**.  
 4. Pour configurer des heures de service en fonction des heures de service par défaut, sélectionnez l'action **Copier heures de service par défaut**.  
 5. Modifiez les champs des écritures heures de service. Insérez ou supprimer des écritures pour configurer les heures de service du contrat. Les champs **Jour**, **Heure début** et **Heure fin** sont obligatoires pour chaque ligne.  
@@ -58,3 +57,6 @@ Si vous ne configurez pas d'heures de service spécifiques pour le contrat de se
 [Description de l'état d'affectation et de l'état réparation](service-allocation-status-and-repair-status.md)  
 [Paramétrage de la gestion des services](service-setup-service.md)  
 [Description des commandes service et de l'état réparation](service-order-repair-status.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,22 +1,21 @@
 ---
-title: WorldPay Payments Standard| Microsoft Docs
-description: Fournit des informations sur l'extension WorldPay Payments Standard
+title: WorldPay Payments Standard
+description: L'extension WorldPay Payments Standard Standard vous permet de fournir aux clients une alternative pratique pour effectuer des paiements par transfert bancaire ou carte de crédit.
 services: project-madeira
 documentationcenter: ''
 author: bholtorf
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.author: bholtorf
-ms.openlocfilehash: 9aa5b0218ffcedd6b3d6039cabdbcf60a1eab4b9
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: dfb523d70938cd4110cca9f963de05bdf8033623
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5394059"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8132404"
 ---
 # <a name="the-worldpay-payments-standard-extension"></a>Extension WorldPay Payments Standard
 L'extension WorldPay Payments Standard Standard vous permet de fournir aux clients une alternative pratique pour effectuer des paiements par transfert bancaire ou carte de crédit. En outre, les paiements effectués par les services de paiement arrivent habituellement sur votre compte bancaire plus rapidement.

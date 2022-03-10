@@ -1,24 +1,23 @@
 ---
-title: Configurer des offres de service | Microsoft Docs
-description: Découvrez comment configurer les services que vous proposez à vos clients.
+title: Configurer des offres de service
+description: Lorsque vous configurez la gestion des services, vous devez choisir les services que vous allez fournir aux clients et les programmer.
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: components, service item, service
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 2f6d9b02e3364d34339ea7176c08fdff7de5eb90
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 06/23/2021
+ms.author: edupont
+ms.openlocfilehash: 8d031b444233085a67279c6f2cc39d4f459bac96
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3195085"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8136935"
 ---
 # <a name="set-up-service-offerings"></a>Configurer des offres de service
-Lorsque vous configurez la gestion des services, vous devez choisir les services que vous allez fournir aux clients et les programmer. Un service correspond à un type de travail exécuté par une ou plusieurs ressources et fourni à un client. Ce peut être un type de réparation informatique. Un article de service correspond à l'équipement ou l'article nécessitant une maintenance : par exemple, un ordinateur à réparer, installé chez un client spécifique. Vous pouvez configurer des services afin de les intégrer au groupe d'articles de réparation ou de maintenance associés.  
+Lorsque vous configurez la gestion des services, vous devez choisir les services que vous allez fournir aux clients et les programmer. Un service correspond à un type de travail exécuté par une ou plusieurs ressources et fourni à un client. Ce peut être un type de réparation informatique. Un article de service correspond à l'équipement ou l'article nécessitant une maintenance : par exemple, un ordinateur à réparer, installé chez un client spécifique. Vous pouvez configurer les services afin de les intégrer au groupe d'articles de réparation ou d'entretien associés.  
   
 Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.  
   
@@ -29,3 +28,5 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
   
 ## <a name="see-also"></a>Voir aussi  
 [Paramétrage de la gestion des services](service-setup-service.md)   
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

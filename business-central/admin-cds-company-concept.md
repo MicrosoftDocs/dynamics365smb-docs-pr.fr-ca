@@ -2,23 +2,22 @@
 title: Mappage des compagnies et des unités fonctionnelles | Microsoft Docs
 description: Les compagnies sont des entités à la fois juridiques et commerciales, qui permettent de sécuriser et visualiser les données métier.
 author: bholtorf
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: CDS, , integration, sync
+ms.search.keywords: CDS, Dataverse, integration, sync
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: abeab28a87c395328accfd850a0753649515f8dc
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: c1af1f571170a167d59b20d85010fdd8d70d07cd
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5773346"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8134002"
 ---
 # <a name="data-ownership-models"></a>Modèles de propriété de données
-[!INCLUDE[prod_short](includes/cc_data_platform_banner.md)]
+
 
 [!INCLUDE[prod_short](includes/cds_long_md.md)] nécessite que vous indiquiez un propriétaire pour les données que vous stockez. Pour en savoir plus, consultez [Types de tables](/powerapps/maker/data-platform/types-of-entities) dans la documentation Power Apps. Lorsque vous configurez l’intégration entre [!INCLUDE[prod_short](includes/cds_long_md.md)] et [!INCLUDE[prod_short](includes/prod_short.md)], vous devez choisir la propriété **Utilisateur ou équipe** pour les enregistrements synchronisés. Les actions pouvant être effectuées sur ces enregistrements peuvent être contrôlées au niveau de l'utilisateur. <!--We recommend the Team ownership model because it makes it easier to manage ownership for multiple people.NO LONGER TRUE IN DATAVERSE-->
 
@@ -39,11 +38,11 @@ L'image suivante montre un exemple de cette configuration de données dans [!INC
 
 ![L'unité fonctionnelle racine est en haut, les équipes au centre, puis les compagnies en bas.](media/cds_bu_team_company.png)
 
-Dans cette configuration, les enregistrements associés à la compagnie Cronus US appartiennent à une équipe associée à l'unité fonctionnelle Cronus US <ID> dans [!INCLUDE[prod_short](includes/cds_long_md.md)]. Les utilisateurs pouvant accéder à cette unité fonctionnelle au moyen d'un rôle de sécurité défini sur la visibilité au niveau de l'unité fonctionnelle dans [!INCLUDE[prod_short](includes/cds_long_md.md)] peuvent maintenant voir ces enregistrements. L'exemple suivant montre comment utiliser des équipes pour fournir l'accès à ces enregistrements.
+Dans cette configuration, les enregistrements associés à la compagnie Cronus US appartiennent à une équipe associée à l'unité fonctionnelle Cronus US dans [!INCLUDE[prod_short](includes/cds_long_md.md)]. Les utilisateurs pouvant accéder à cette unité fonctionnelle au moyen d'un rôle de sécurité défini sur la visibilité au niveau de l'unité fonctionnelle dans [!INCLUDE[prod_short](includes/cds_long_md.md)] peuvent maintenant voir ces enregistrements. L'exemple suivant montre comment utiliser des équipes pour fournir l'accès à ces enregistrements.
 
 * Le rôle de responsable commercial est attribué aux membres de l'équipe commerciale de Cronus US.
 * Les utilisateurs ayant le rôle de responsable commercial peuvent accéder aux enregistrements de compte pour les membres de la même unité fonctionnelle.
-* L'équipe commerciale de Cronus US est associée à l'unité fonctionnelle de Cronus US mentionnée précédemment. Les membres de l’équipe commerciale de Cronus US peuvent voir tout compte appartenant à l’utilisateur Cronus US <ID>, qui proviendrait de la table Compagnie Cronus US dans [!INCLUDE[prod_short](includes/prod_short.md)].
+* L'équipe commerciale de Cronus US est associée à l'unité fonctionnelle de Cronus US mentionnée précédemment. Les membres de l’équipe commerciale de Cronus US peuvent voir tout compte appartenant à l’utilisateur Cronus US, qui proviendrait de la table compagnie Cronus US dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
 Cependant, le mappage 1:1 entre l'unité fonctionnelle, la compagnie et l'équipe n'est qu'un point de départ, comme le montre l'image suivante.
 
@@ -51,7 +50,7 @@ Cependant, le mappage 1:1 entre l'unité fonctionnelle, la compagnie et l'équip
 
 Dans cet exemple, une nouvelle unité fonctionnelle racine EUR (Europe) est créée dans [!INCLUDE[prod_short](includes/cds_long_md.md)] en tant que parent pour Cronus DE (Allemagne) et Cronus ES (Espagne). L'unité fonctionnelle EUR n'est pas associée à la synchronisation. Cependant, il peut donner aux membres de l'équipe commerciale EUR l'accès aux données de compte dans Cronus DE et Cronus ES en définissant la visibilité des données sur **Centre de profit parent/enfant** sur le rôle de sécurité associé dans [!INCLUDE[prod_short](includes/cds_long_md.md)].
 
-La synchronisation détermine l'équipe devant posséder les enregistrements. Ceci est contrôlé par le champ **Équipe propriétaire par défaut** sur la ligne BCI - <ID>. Lorsqu'un enregistrement BCI - <ID> est activé pour la synchronisation, nous créons automatiquement l'unité fonctionnelle associée et l'équipe propriétaire (si elle n'existe pas déjà), et définissons le champ **Équipe propriétaire par défaut**. Lorsque la synchronisation est activée pour une table, les administrateurs peuvent changer d’équipe propriétaire, mais une équipe doit toujours être affectée.
+La synchronisation détermine l'équipe devant posséder les enregistrements. Ceci est contrôlé par le champ **Équipe propriétaire par défaut** sur la ligne BCI. Lorsqu’un enregistrement BCI est activé pour la synchronisation, nous créons automatiquement l'unité fonctionnelle associée et l’équipe propriétaire (si elle n’existe pas encore), et définissons le champ **Équipe propriétaire par défaut**. Lorsque la synchronisation est activée pour une table, les administrateurs peuvent changer d’équipe propriétaire, mais une équipe doit toujours être affectée.
 
 > [!NOTE]
 > Les enregistrements passent en lecture seule après l'ajout et la sauvegarde d'une compagnie. Veillez donc à choisir la compagnie adéquate.

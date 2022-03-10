@@ -2,20 +2,19 @@
 title: Configurer la connexion à la messagerie | Microsoft Docs
 description: Apprenez à transformer les interactions de messagerie entre les représentants et les clients en véritables opportunités de vente.
 author: bholtorf
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: relationship, prospect, opportunity, email
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: a431eba8881eb6bb32e01d67f25ea53981da445e
-ms.sourcegitcommit: cb06aa973f5c767df774b0e1e199c6fbe0e85b88
+ms.openlocfilehash: 2abc0406fa8e86646d2382a4c7bbb1e228439728
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470347"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8148418"
 ---
 # <a name="track-email-message-exchanges-between-salespeople-and-contacts"></a>Suivre les échanges de courriels entre les représentants et les contacts
 
@@ -31,31 +30,36 @@ Ensuite, vous connectez [!INCLUDE[prod_short](includes/prod_short.md)] à Exchan
 
 Pour démarrer la connexion à la messagerie, effectuez deux étapes simples :
 
-1. Connectez [!INCLUDE[prod_short](includes/prod_short.md)] à Exchange Online pour votre abonnement Microsoft 365. Exchange Online gère vos courriels. Nous avons facilité cette étape en fournissant un guide de configuration assisté. Vous avez juste besoin de vos identifiants d’administrateur pour votre compte d’administrateur dans Microsoft 365. Pour commencer le guide, accédez à **Configuration assistée**, puis choisissez **Configurer la connexion à la messagerie**.  
+1. Connectez [!INCLUDE[prod_short](includes/prod_short.md)] à Exchange Online pour votre abonnement Microsoft 365. Exchange Online gère vos courriels. Nous avons facilité cette étape en fournissant un guide de configuration assisté. Vous avez juste besoin de vos identifiants d’administrateur pour votre compte d’administrateur dans Microsoft 365. Pour commencer le guide, accédez à la page **Configuration assistée**, puis sélectionnez le guide **Configurer la connexion à la messagerie**.  
 
 2. Assurez-vous que des adresses de courriel valides ont été entrées dans [!INCLUDE[prod_short](includes/prod_short.md)] pour vos représentants et vos contacts, selon qu’il s'agisse de clients potentiels ou existants. Pour ce faire, pour chaque client ou représentant, ouvrez la fiche **Contact** ou **Représentant/Acheteur** et regardez le champ **Courriel**.
 
 > [!Tip]
-> Une fois les étapes du guide terminées, vous pouvez vérifier si la connexion a réussi. Recherchez **Configuration marketing**, choisissez **Traiter**, puis **Fonctions** et **Valider la configuration de la connexion à la messagerie**.
+> Une fois les étapes du guide terminées, vous pouvez vérifier si la connexion a réussi. Recherchez **Configuration marketing**, sélectionnez **Accéder**, puis **Fonctions** et **Valider la configuration de la connexion à la messagerie**.
 
 ## <a name="viewing-email-message-exchanges-in-the-interaction-log"></a>Affichage des échanges de courriels dans le journal des interactions
-[!INCLUDE[prod_short](includes/prod_short.md)] crée une entrée sur la page **Journal des interactions** chaque fois qu'un représentant et un contact échangent un courriel. Pour afficher le journal des interactions, ouvrez la fiche **Contact** ou **Représentant/Acheteur** pour la personne, puis choisissez **Historique**, et **Écritures journal interaction**. Nous pouvons faire certaines choses avec chaque entrée du journal, par exemple :
 
-- Affichez le contenu du courriel échangé en cliquant sur l'action **Afficher les pièces jointes**.
-- Transformez un échange de courriels en opportunité de vente. Si une entrée semble prometteuse, vous pouvez la transformer en opportunité, puis gérer son évolution vers une vente. Pour cela, sélectionnez l'entrée, puis cliquez sur l'action **Créer une opportunité**. Pour plus d'informations, voir [Gérer des opportunités de vente](marketing-manage-sales-opportunities.md).
+[!INCLUDE[prod_short](includes/prod_short.md)] crée une entrée sur la page **Journal des interactions** chaque fois qu'un représentant et un contact échangent un courriel. Pour afficher le journal des interactions, ouvrez la fiche **Contact** pour la personne, puis choisissez **Association**, **Historique**, et **Écritures feuille interaction**. Vous pouvez faire certaines choses avec chaque entrée de la feuille, par exemple :
+
+- Affichez le contenu du courriel échangé en sélectionnant **Traitement**, puis **Afficher les pièces jointes**.
+- Transformez un échange de courriels en opportunité de vente. Si une entrée semble prometteuse, vous pouvez la transformer en opportunité, puis gérer son évolution vers une vente. Pour ce faire, sélectionnez l’écriture, **Traitement**, puis **Créer opportunité**. Pour plus d'informations, voir [Gérer des opportunités de vente](marketing-manage-sales-opportunities.md).
 
 ## <a name="connecting-on-premises-versions-to-microsoft-exchange"></a>Connexion des versions locales à Microsoft Exchange
-Vous pouvez vous connecter à [!INCLUDE[prod_short](includes/prod_short.md)] sur site vers Exchange sur site ou Exchange Online pour la connexion à la messagerie. Pour les deux versions d’Exchange, les configuration de connexion sont disponibles sur la page **Configuration du marketing**. Pour Exchange Online, vous pouvez également utiliser un guide de configuration assistée. 
+
+Vous pouvez vous connecter à [!INCLUDE[prod_short](includes/prod_short.md)] sur site vers Exchange sur site ou Exchange Online pour la connexion à la messagerie. Pour les deux versions d’Exchange, les configuration de connexion sont disponibles sur la page **Configuration du marketing**. Pour Exchange Online, vous pouvez également utiliser un guide de configuration assistée.
 
 ### <a name="connecting-to-exchange-on-premises"></a>Connexion à Exchange sur site
-Pour connecter [!INCLUDE[prod_short](includes/prod_short.md)] sur site à Exchange sur site, sur la page **Configuration marketing**, vous pouvez utiliser **De base** comme **Type d’identification**, puis entrez les informations d’identification pour le compte d’utilisateur pour Exchange sur site. Puis activez le bouton bascule **Activé** pour commencer à enregistrer les courriels. 
+
+Pour connecter [!INCLUDE[prod_short](includes/prod_short.md)] sur site à Exchange sur site, sur la page **Configuration marketing**, vous pouvez utiliser **De base** comme **Type d’identification**, puis entrez les informations d’identification pour le compte d’utilisateur pour Exchange sur site. Puis activez le bouton bascule **Activé** pour commencer à enregistrer les courriels.
 
 ### <a name="connecting-to-exchange-online"></a>Connexion à Exchange Online
-Pour se connecter à Exchange Online, vous devez utiliser **OAuth2** comme **Type d’identification**. Vous devez également enregistrer une application dans Azure Active Directory et fournir le code d’application, le secret Key Vault et l’URL de redirection à utiliser. L'URL de redirection est pré-remplie et devrait fonctionner pour la plupart des installations. Pour plus d’informations, consultez [Enregistrer une application dans Azure AD pour se connecter de Business Central à Exchange Online](marketing-set-up-email-logging.md#to-register-an-application-in-azure-ad-for-connecting-from-business-central-to-exchange-online). 
+
+Pour se connecter à Exchange Online, vous devez utiliser **OAuth2** comme **Type d’identification**. Vous devez également enregistrer une application dans Azure Active Directory et fournir le code d’application, le secret Key Vault et l’URL de redirection à utiliser. L'URL de redirection est pré-remplie et devrait fonctionner pour la plupart des installations. Pour plus d’informations, consultez Pour enregistrer une application dans Azure AD pour se connecter de Business Central à Exchange Online ci-dessous.
 
 Vous devez configurer votre installation pour utiliser HTTPS. Pour plus d'informations, voir [Configuration de SSL pour sécuriser la connexion du client Web Business Central](/dynamics365/business-central/dev-itpro/deployment/configure-ssl-web-client-connection). Si vous configurez votre serveur pour avoir une page d’accueil différente, vous pouvez changer l’URL. Le secret client sera enregistré sous forme de chaîne cryptée dans votre base de données.
 
 ### <a name="to-register-an-application-in-azure-ad-for-connecting-from-business-central-to-exchange-online"></a>Pour enregistrer une application dans Azure AD pour se connecter de Business Central à Exchange Online
+
 Les étapes suivantes supposent que vous utilisez Azure Active Directory pour gérer les identités et les accès. Pour plus d’informations, voir [Démarrage rapide : enregistrer une application avec la plateforme d’identité Microsoft](/azure/active-directory/develop/quickstart-register-app). Si vous n'utilisez pas Azure Active Directory, voir [Utilisation d'un autre service de gestion des identités et des accès](marketing-set-up-email-logging.md#using-another-identity-and-access-management-service). 
 
 1. Dans le portail Azure, sous **Gérer**, choisissez **Authentification**.
@@ -105,7 +109,7 @@ Les étapes suivantes supposent que vous utilisez Azure Active Directory pour g�
 Si vous n'utilisez pas Azure Active Directory pour gérer les identités et les accès, vous aurez besoin de l'aide d'un développeur. Si vous préférez stocker le code d'application et le secret dans un emplacement différent, vous pouvez laisser les champs Code client et Secret client vides et écrire une extension pour récupérer le code et le secret depuis l'emplacement. Vous pouvez fournir le secret lors de l’exécution en vous abonnant aux événements OnGetEmailLoggingClientId et OnGetEmailLoggingClientSecret dans codeunit 1641 « Configuration de la connexion à la messagerie ».
 
 ### <a name="to-stop-logging-email"></a>Pour arrêter la connexion à la messagerie
-1. Choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration marketing**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration marketing**, puis choisissez le lien associé.
 2. Désactivez le bouton bascule **Activé**.
 
 ## <a name="see-also"></a>Voir aussi

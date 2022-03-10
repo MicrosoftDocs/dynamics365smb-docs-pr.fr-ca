@@ -1,23 +1,22 @@
 ---
-title: Aperçu des tâches d'exécution des contrats de service | Microsoft Docs
-description: Décrit les tâches de gestion des contrats de service avec les clients.
+title: Aperçu des tâches d’exécution des contrats de service
+description: Décrit les tâches impliquées dans l’exécution des contrats de service avec vos clients, comme la mise en place d’ententes contractuelles standard avec des modèles personnalisables, etc.
 services: project-madeira
 documentationcenter: ''
 author: bholtorf
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: contract, agreement, configure
-ms.date: 04/01/2020
+ms.date: 06/23/2021
 ms.author: bholtorf
-ms.openlocfilehash: 57e10efcd6ec5a2ed54df2bdaa4f2a647a1e981c
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.openlocfilehash: 0290246fa9fa648a9d0ff4ede4c71464b3208017
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3194725"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8140615"
 ---
 # <a name="fulfilling-service-contracts"></a>Exécution des contrats de service 
 Pour configurer une activité de gestion des services, vous pouvez mettre en place des accords contractuels standard entre vous et vos clients afin de décrire le niveau de service et les attentes en matière de services. Vous pouvez créer des modèles de contrat dans lesquels figurent les informations nécessaires (client, date de début du contrat, période de facturation, etc.).  
@@ -37,3 +36,6 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 [Exécution du service](service-deliver-service.md)  
 [Paramétrage de la gestion des services](service-setup-service.md)  
 [Créer des devis et contrats de service](service-how-to-create-service-contracts-and-service-contract-quotes.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,21 +1,20 @@
 ---
-title: 'Détails de conception : structure de report de traçabilité | Microsoft Docs'
-description: Découvrez comment utiliser les écritures article comme principal opérateur des numéros traçabilité article.
+title: Détails de conception - Structure de report de traçabilité
+description: Découvrez comment utiliser les écritures article comme principal opérateur des numéros traçabilité dans la structure de report de traçabilité.
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, item tracking, posting, inventory
-ms.date: 10/01/2020
+ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: 697b83fd7e6e2b220b2851d5a1770ed9f74a9bdd
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: b568e62a71b907e8d2f9cbc8eba43773be655b44
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3917386"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8136332"
 ---
 # <a name="design-details-item-tracking-posting-structure"></a>Détails de conception : structure de report de traçabilité
 Pour s'aligner sur la fonctionnalité d'évaluation du coût de l'inventaire et obtenir une solution plus simple et plus robuste, les écritures du grand livre d'articles sont utilisées comme principal opérateur des numéros traçabilité.  
@@ -48,3 +47,5 @@ Codeunit 22 se répète en boucle via les numéros traçabilité et répartit l
 ## <a name="see-also"></a>Voir aussi  
 [Détails de conception : traçabilité](design-details-item-tracking.md)   
 [Détails de conception : création de traçabilité](design-details-item-tracking-design.md)
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

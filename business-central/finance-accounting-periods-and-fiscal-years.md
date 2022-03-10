@@ -1,21 +1,20 @@
 ---
-title: Utilisation des périodes comptables et exercices financiers | Microsoft Docs
+title: Utilisation des périodes comptables et exercices financiers
 description: En savoir plus sur l'utilisation des périodes comptables pour définir le moment où votre compagnie fait état de ses performances financières.
 author: bholtorf
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
-ms.date: 09/09/2020
+ms.search.form: 100
+ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 0cbfbf6730a62b1c0f0e743362075a2085cf3813
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: 8d7927c8adcf19fae55af48ea699ea9b852d6974
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3788456"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8136176"
 ---
 # <a name="working-with-accounting-periods-and-fiscal-years"></a>Utilisation des périodes comptables et exercices financiers
 
@@ -23,7 +22,7 @@ Les périodes comptables, également appelées périodes de report, sont des pé
 
 Pour la plupart des compagnies, l'exercice financier ne s'aligne pas sur l'année civile. Par exemple, l'exercice financier peut se terminer le 30 juin au lieu du 31 décembre. Pour les compagnies que vous venez de créer, l'exercice financier peut être en réalité supérieur à 12 mois.  
 
-[!INCLUDE[d365fin](includes/d365fin_md.md)] nécessite uniquement des périodes comptables si vous souhaitez fermer un état des résultats, ou exécuter des tâches de compression de données. 
+[!INCLUDE[prod_short](includes/prod_short.md)] nécessite uniquement des périodes comptables si vous souhaitez fermer un état des résultats, ou exécuter des tâches de compression de données. 
 
 Vous pouvez utiliser des périodes comptables dans le rapport. Par exemple, lorsque vous consultez les écritures reportées sur la page **Réalisé/budget** où l'intervalle de rapport peut être spécifié. L'une des options consiste à spécifier la génération de rapport par période comptable. Vous pouvez également créer un tableau d'analyse qui compare les résultats de différentes périodes comptables.
 
@@ -35,7 +34,7 @@ Vous pouvez créer des périodes comptables en bloc, à l'aide du traitement en 
 
 Utilisez le traitement en lot **Créer exercice financier** pour diviser un exercice financier en périodes de même durée.  
 
-1. Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Périodes comptables**, puis sélectionnez le lien associé.  
+1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Périodes comptables**, puis sélectionnez le lien associé.  
 2. Choisissez l'action **Créer exercice**.  <!--What about the Scheduling option? Should we mention that? There's also the Report Output Type field...-->
 3. Dans le champ **Date début**, saisissez la date à laquelle l'exercice financier commence.  
 4. Dans le champ **Nombre de périodes**, spécifiez le nombre de périodes comptables composant l'exercice financier. Il peut y avoir un maximum de 365 périodes dans une année.  
@@ -46,9 +45,9 @@ Utilisez le traitement en lot **Créer exercice financier** pour diviser un exer
 
 Si les périodes comptables de l'exercice financier ont différentes durées, comme le calendrier 4-4-5 utilisé dans la vente au détail, vous pouvez les configurer manuellement.  
   
-1. Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Périodes comptables**, puis sélectionnez le lien associé.  
+1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Périodes comptables**, puis sélectionnez le lien associé.  
 2. Dans le champ **Date début**, saisissez la date à laquelle l'exercice financier commence. Le champ **Nom** affiche à présent le nom du mois.  
-3. Activez la case à cocher **Nouvel exercice financier** pour indiquer qu'il s'agit de la première période de l'exercice. [!INCLUDE[d365fin](includes/d365fin_md.md)] utilise cette période pour déterminer les périodes à fermer en fin d'exercice.
+3. Activez la case à cocher **Nouvel exercice financier** pour indiquer qu'il s'agit de la première période de l'exercice. [!INCLUDE[prod_short](includes/prod_short.md)] utilise cette période pour déterminer les périodes à fermer en fin d'exercice.
 4. Répétez les étapes 2 et 3 pour chaque période restante.  
 
 ## <a name="closing-a-fiscal-year"></a>Fermeture d'un exercice financier
@@ -58,7 +57,7 @@ Fermer l'exercice financier est l'une des tâches pour fermer les livres. Une fo
 > [!NOTE]  
 > Vous devez toujours avoir au moins un exercice financier ouvert. Lorsque vous fermez un exercice, assurez-vous qu'un exercice a été créé. De plus, sachez que lorsque vous fermez un exercice, vous ne pouvez pas modifier la date début de l'exercice suivant.
 
-1. Sélectionnez l'icône ![Page ou rapport pour la recherche](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche"), entrez **Périodes comptables**, puis sélectionnez le lien associé.  
+1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Périodes comptables**, puis sélectionnez le lien associé.  
 2. Choisissez l'action **Clôturer exercice**.  
 
 ## <a name="posting-entries-to-a-closed-fiscal-year"></a>Report d'écritures dans un exercice financier fermé
@@ -70,3 +69,6 @@ Même si un exercice financier est fermé, vous pouvez toujours y reporter des �
 [Fermeture des registres](year-close-books.md)  
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
 [Procédure d'utilisation des tableaux d'analyse](bi-how-work-account-schedule.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

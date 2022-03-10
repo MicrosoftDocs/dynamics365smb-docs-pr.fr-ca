@@ -1,29 +1,28 @@
 ---
 title: Créer des nouvelles écritures valeur pour des articles de l'inventaire Microsoft Docs
-description: Décrit comment réévaluer ou amortir les entrées valeur d'un ou de plusieurs articles dans l'inventaire en reportant leur valeur actuelle calculée.
-services: project-madeira
+description: Décrit comment réévaluer ou amortir les entrées valeur d’un ou de plusieurs articles dans l'inventaire en reportant leur valeur calculée actuelle.
 documentationcenter: ''
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: costing, inventory cost, value entries
-ms.date: 10/01/2020
+ms.search.forms: 5803,
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 2bcd09876f18bb948e060b06199d3d36facaa83f
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: 4abfe521684fd6e0e4d8d519248919b0628dc1fb
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4750065"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8135942"
 ---
 # <a name="revalue-inventory"></a>Réévaluer l'inventaire
 Pour réévaluer ou amortir un article ou une écriture article spécifique, vous devez utiliser le journal réévaluation.
 
 ## <a name="to-revalue-inventory"></a>Pour réévaluer l'inventaire
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journal réévaluation**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal réévaluation**, puis choisissez le lien associé.
 2. Choisissez l'action **Calculer valeur stock**.
 3. Sur la page **Calculer valeur inventaire**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Cliquez sur le bouton **OK**.
@@ -40,3 +39,6 @@ Les nouvelles écritures valeur sont alors créées pour refléter les apprécia
 [Vente](sales-manage-sales.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

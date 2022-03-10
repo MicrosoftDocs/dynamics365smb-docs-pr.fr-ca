@@ -1,24 +1,24 @@
 ---
-title: Détails de conception - Coût moyen | Microsoft Docs
+title: Détails de conception – Coût moyen
 description: Le coût moyen d'un article est calculé avec une moyenne pondérée périodique, selon la période coût moyen qui est paramétrée dans Business Central.
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2019
-ms.author: sgroespe
-ms.openlocfilehash: 8a94244a33ce76584ba506081c9ab6702e48c750
-ms.sourcegitcommit: 60b87e5eb32bb408dd65b9855c29159b1dfbfca8
+ms.search.form: 8645
+ms.date: 06/08/2021
+ms.author: edupont
+ms.openlocfilehash: 591788bdf425dc198a173fbefef702c7b707b4e7
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "1246465"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8146732"
 ---
 # <a name="design-details-average-cost"></a>Détails de conception : coût moyen
-Le coût moyen d'un article est calculé avec une moyenne pondérée périodique, selon la période coût moyen qui est paramétrée dans [!INCLUDE[d365fin](includes/d365fin_md.md)].  
+Le coût moyen d'un article est calculé avec une moyenne pondérée périodique, selon la période coût moyen qui est paramétrée dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
  La date d'évaluation est définie automatiquement.  
 
@@ -28,7 +28,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 |Champ|Description|  
 |---------------------------------|---------------------------------------|  
 |**Période de coût moyen**|Spécifie à quel moment le coût moyen est calculé. Les options possibles sont les suivantes :<br /><br /> -   **Jour**<br />-   **Semaine**<br />-   **Mois**<br />-   **Période comptable**<br /><br /> Le coût moyen calculé pour cette période est affecté à toutes les diminutions d'inventaire reportées au cours de la période coût moyen.|  
-|**Type calcul coût moyen**|Indique le mode de calcul du coût moyen. Les options possibles sont les suivantes :<br /><br /> -   **Article**<br />-   **Article, variante et magasin**<br />     Avec cette option, le coût moyen est calculé pour chaque article, pour chaque emplacement et pour chaque variante de l'article. Cela signifie que le coût moyen de cet article dépend du lieu de stockage et de la variante de l'article que vous avez sélectionnés (par exemple, la couleur).|  
+|**Type calcul coût moyen**|Indique le mode de calcul du coût moyen. Les options possibles sont les suivantes :<br /><br /> -   **Article**<br />-   **Article, variante et magasin**<br /> Avec cette option, le coût moyen est calculé pour chaque article, pour chaque emplacement et pour chaque variante de l'article. Cela signifie que le coût moyen de cet article dépend du lieu de stockage et de la variante de l'article que vous avez sélectionnés (par exemple, la couleur).|  
 
 > [!NOTE]  
 >  Vous pouvez uniquement utiliser une période de coût moyen et un type de calcul de coût moyen dans une année fiscale.  
@@ -55,37 +55,37 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 
  Le tableau suivant montre les écritures article pour un exemple d'article de coût moyen, ARTICLE1, avant que le traitement en lot **Ajuster coûts - Écr. article** ne soit exécuté.  
 
-|**Date de report**|**Type d'écriture gr. livre art.**|**Quantité**|**Coût indiqué (réel)**|**N° séquence**|  
-|---------------------------------------|---------------------------------------------------|------------------------------------|----------------------------------------------------|------------------------------------|  
-|01/01/20|Achat|1|20.00|1|  
-|01/01/20|Achat|1|40.00|2|  
-|01/01/20|Vente|-1|-20,00|3|  
-|01/02/20|Vente|-1|-40,00|4|  
-|02/02/20|Achat|1|100.00|5|  
-|03/02/20|Vente|-1|-100,00|6|  
+| **Date de report** | **Type d'écriture gr. livre art.** | **Quantité** | **Coût indiqué (réel)** | **N° séquence** |
+|--|--|--|--|--|
+| 01/01/20 | Achat | 1 | 20.00 | 1 |
+| 01/01/20 | Achat | 1 | 40.00 | 2 |
+| 01/01/20 | Vente | -1 | -20,00 | 3 |
+| 01/02/20 | Vente | -1 | -40,00 | 4 |
+| 02/02/20 | Achat | 1 | 100.00 | 5 |
+| 03/02/20 | Vente | -1 | -100,00 | 6 |
 
 > [!NOTE]  
 >  Comme l'ajustement des coûts ne s'est pas encore produit, les valeurs du champ **Coût indiqué (réel)** des diminutions d'inventaire correspondent aux augmentations d'inventaire auxquelles elles sont affectées.  
 
  Le tableau suivant montre les écritures de la table **Point d'entrée ajustement coût moyen** qui s'appliquent aux écritures valeur résultant des écritures comptables article dans la table précédente.  
 
-|**N° article**|**Code variante**|**Code d'emplacement**|**Date évaluation**|**Coût ajusté**|  
-|-------------------------------------|-----------------------------------------|------------------------------------------|-------------------------------------------|---------------------------------------------|  
-|ARTICLE1||BLEU|01/01/20|Non|  
-|ARTICLE1||BLEU|01/02/20|Non|  
-|ARTICLE1||BLEU|02/02/20|Non|  
-|ARTICLE1||BLEU|03/02/20|Non|  
+| **N° article** | **Code variante** | **Code d'emplacement** | **Date évaluation** | **Coût ajusté** |
+|--|--|--|--|--|
+| ARTICLE1 |  | BLEU | 01/01/20 | Non |
+| ARTICLE1 |  | BLEU | 01/02/20 | Non |
+| ARTICLE1 |  | BLEU | 02/02/20 | Non |
+| ARTICLE1 |  | BLEU | 03/02/20 | Non |
 
  Le tableau suivant montre les mêmes écritures article une fois le traitement en lot **Ajuster coûts - Écr. article** exécuté. Le coût moyen par jour est calculé et affecté aux diminutions d'inventaire.  
 
-|**Date de report**|**Type d'écriture gr. livre art.**|**Quantité**|**Coût indiqué (réel)**|**N° séquence**|  
-|---------------------------------------|---------------------------------------------------|------------------------------------|----------------------------------------------------|------------------------------------|  
-|01/01/20|Achat|1|20.00|1|  
-|01/01/20|Achat|1|40.00|2|  
-|01/01/20|Vente|-1|-30,00|3|  
-|01/02/20|Vente|-1|-30,00|4|  
-|02/02/20|Achat|1|100.00|5|  
-|03/02/20|Vente|-1|-100,00|6|  
+| **Date de report** | **Type d'écriture gr. livre art.** | **Quantité** | **Coût indiqué (réel)** | **N° séquence** |
+|--|--|--|--|--|--|
+| 01/01/20 | Achat | 1 | 20.00 | 1 |
+| 01/01/20 | Achat | 1 | 40.00 | 2 |
+| 01/01/20 | Vente | -1 | -30,00 | 3 |
+| 01/02/20 | Vente | -1 | -30,00 | 4 |
+| 02/02/20 | Achat | 1 | 100.00 | 5 |
+| 03/02/20 | Vente | -1 | -100,00 | 6 |
 
 ### <a name="example-average-cost-period--month"></a>Exemple : période coût moyen = mois  
  L'exemple suivant montre l'effet du calcul du coût moyen basé sur une période coût moyen d'un mois. Le champ **Type calcul coût moyen** de la page **Configuration inventaire** est défini sur **Article**.  
@@ -94,24 +94,24 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 
  Le tableau suivant montre les écritures article pour un exemple d'article de coût moyen, ARTICLE1, avant que le traitement en lot **Ajuster coûts - Écr. article** ne soit exécuté.  
 
-|**Date de report**|**Type d'écriture gr. livre art.**|**Quantité**|**Coût indiqué (réel)**|**N° séquence**|  
-|---------------------------------------|---------------------------------------------------|------------------------------------|----------------------------------------------------|------------------------------------|  
-|01/01/20|Achat|1|20.00|1|  
-|01/01/20|Achat|1|40.00|2|  
-|01/01/20|Vente|-1|-20,00|3|  
-|01/02/20|Vente|-1|-40,00|4|  
-|02/02/20|Achat|1|100.00|5|  
-|03/02/20|Vente|-1|-100,00|6|  
+| **Date de report** | **Type d'écriture gr. livre art.** | **Quantité** | **Coût indiqué (réel)** | **N° séquence** |
+|--|--|--|--|--|
+| 01/01/20 | Achat | 1 | 20.00 | 1 |
+| 01/01/20 | Achat | 1 | 40.00 | 2 |
+| 01/01/20 | Vente | -1 | -20,00 | 3 |
+| 01/02/20 | Vente | -1 | -40,00 | 4 |
+| 02/02/20 | Achat | 1 | 100.00 | 5 |
+| 03/02/20 | Vente | -1 | -100,00 | 6 |
 
 > [!NOTE]  
 >  Comme l'ajustement des coûts ne s'est pas encore produit, les valeurs du champ **Coût indiqué (réel)** des diminutions d'inventaire correspondent aux augmentations d'inventaire auxquelles elles sont affectées.  
 
  Le tableau suivant montre les écritures de la table **Point d'entrée ajustement coût moyen** qui s'appliquent aux écritures valeur résultant des écritures comptables article dans la table précédente.  
 
-|**N° article**|**Code variante**|**Code d'emplacement**|**Date évaluation**|**Coût ajusté**|  
-|-------------------------------------|-----------------------------------------|------------------------------------------|-------------------------------------------|---------------------------------------------|  
-|ARTICLE1||BLEU|31/01/20|Non|  
-|ARTICLE1||BLEU|28/02/20|Non|  
+| **N° article** | **Code variante** | **Code d'emplacement** | **Date évaluation** | **Coût ajusté** |
+|--|--|--|--|--|
+| ARTICLE1 |  | BLEU | 31/01/20 | Non |
+| ARTICLE1 |  | BLEU | 28/02/20 | Non |
 
 > [!NOTE]  
 >  La date d'évaluation est définie au dernier jour de la période de coût moyen, qui est dans ce cas le dernier jour du mois.  
@@ -211,4 +211,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
  [Détails de conception : lettrage article](design-details-item-application.md)  
  [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
- [Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+ [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

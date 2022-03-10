@@ -1,21 +1,20 @@
 ---
-title: Configuration et utilisation d'un flux d'approbation achat | Microsoft Docs
-description: Vous pouvez automatiser le processus d'approbation d'enregistrements nouveaux ou modifiés, par exemple de documents, de lignes journal et de fiches client, en créant des flux de travail avec des étapes pour les approbations en question. Avant de créer des flux d'approbation, vous devez configurer un approbateur et un approbateur remplaçant pour chaque utilisateur approbation. Vous pouvez également définir les montants maximaux que les approbateurs sont qualifiés à approuver pour les enregistrements de vente et d’achat. Les demandes d'approbation et autres notifications peuvent être envoyées par courriel ou note interne. Pour chaque configuration d'utilisateur d'approbation, vous pouvez également définir à quel moment ils reçoivent les notifications.
+title: Configuration et utilisation d’un flux d’approbation achat
+description: Cette procédure pas à pas vous présente l’ensemble des phases impliquées dans la configuration et l’utilisation d’un flux de travail d’approbation d’achat dans Business Central.
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/15/2020
+ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: aad06d141b8c4a07782a27187f7fa5f580ebe28e
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: 1d3e30185d4e5486c6e56941d08cc1586b2c554f
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4760002"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8138190"
 ---
 # <a name="walkthrough-setting-up-and-using-a-purchase-approval-workflow"></a>Procédure pas à pas : Configuration et utilisation d'un flux d'approbation achat
 
@@ -30,11 +29,11 @@ Vous pouvez automatiser le processus d'approbation d'enregistrements nouveaux ou
 
 Cette procédure pas à pas présente les tâches suivantes :  
 
-- Configuration des utilisateurs approbation.  
-- Configuration des notification pour les utilisateurs approbation.  
-- Modification et activation d'un flux d'approbation.  
-- Demande d'approbation d'un bon de commande (Alicia).  
-- Réception d'une notification, puis acceptation de la demande (Sean).  
+- Configuration des utilisateurs approbation  
+- Configuration des notification pour les utilisateurs approbation  
+- Modification et activation d’un flux d’approbation  
+- Demande d’approbation d’un bon de commande (Alicia)  
+- Réception d’une notification, puis acceptation de la demande (Sean)  
 
 ## <a name="story"></a>Scénario
 
@@ -52,7 +51,7 @@ Une fois connecté comme vous-même, définissez Alicia en tant qu'utilisateur d
 
 #### <a name="to-set-up-yourself-and-alicia-as-approval-users"></a>Pour configurer votre propre profil et celui d'Alicia en tant qu'utilisateurs approbation
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration utilisateur approbation**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration utilisateur approbation**, puis choisissez le lien associé.  
 2. Sur la page **Configuration d'utilisateur d'approbation**, sélectionnez l'action **Nouveau**.  
 
     > [!NOTE]  
@@ -86,9 +85,9 @@ Créez le flux d’approbation de bon de commande en copiant les étapes du mod�
 
 ### <a name="to-create-and-enable-a-purchase-order-approval-workflow"></a>Pour créer et activer un flux de travail d'approbation des bons de commande
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction de recherche](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Flux de travail**, puis sélectionnez le lien associé.  
-2. Sur la page **Flux de travail**, choisissez l'action **Créer flux de travail à partir du modèle**.  
-3. Sur la page **Modèles de flux de travail**, sélectionnez le modèle de flux de travail nommé **Flux de travail approbation bon de commande**, puis choisissez le bouton **OK**.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Flux de travail**, puis choisissez le lien associé.  
+2. Sur la page **Flux de travail**, sélectionnez **Actions**, puis sélectionnez **Nouveau**, puis choisissez l’action **Créer flux de travail à partir du modèle**.  
+3. Sur la page **Modèles de flux de travail**, sélectionnez le modèle de flux de travail nommé **Flux de travail approbation bon de commande**.  
 
     La page **Flux de travail** s'ouvre pour un nouveau flux de travail contenant toutes les informations du modèle sélectionné. La valeur du champ **Code** est étendue avec *-01* pour indiquer que ce premier flux de travail est créé à partir du modèle **Flux de travail approbation bon de commande**.  
 4. Dans l'en-tête de la page **Flux de travail**, activez la case à cocher **Activé**.  
@@ -100,9 +99,9 @@ Utilisez le nouveau Flux de travail approbation bon de commande en vous connecta
 ### <a name="to-request-approval-of-a-purchase-order-as-alicia"></a>Pour demander l'approbation d'un bon de commande en tant qu'Alicia
 
 1. Connectez-vous en tant qu'Alicia.
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Bons de commande**, puis sélectionnez le lien associé.  
-3. Sélectionnez la ligne du bon de commande ouvert 106001, puis choisissez l'action **Modifier**.  
-4. Sur la page **Bon de commande**, choisissez l'action **Envoyer demande d'approbation**.  
+2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de commande**, puis choisissez le lien associé.  
+3. Sélectionnez la ligne pour ouvrir le bon de commande 106001.  
+4. Sur la page **Bon de commande**, choisissez **Actions**, puis **Demander l’approbation**, puis choisissez l’action **Envoyer demande d’approbation**.  
 
 Notez que la valeur du champ **État** est passée à **Approbation en attente**.  
 
@@ -130,3 +129,6 @@ Si un scénario d’entreprise requiert un événement ou une réponse de workfl
 [Utilisation des flux d'approbation](across-how-use-approval-workflows.md)  
 [Flux de travail](across-workflow.md)  
 [Utilisation de Business Central dans un flux automatisé](across-how-use-financials-data-source-flow.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,23 +1,20 @@
 ---
-title: Statistiques service | Microsoft Docs
-description: Obtenez un aperçu rapide du contenu des documents service comme les commandes, devis, factures ou notes de crédit, ainsi que les détails des lignes service spécifiques et les articles de service.
-services: project-madeira
-documentationcenter: ''
+title: Statistiques service
+description: Obtenez un aperçu rapide du contenu et des statistiques des documents service comme les commandes, devis, factures ou notes de crédit, ainsi les lignes service spécifiques et les articles de service.
 author: bholtorf
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2019
+ms.date: 06/23/2021
 ms.author: bholtorf
-ms.openlocfilehash: 9016412d32176a99ca84831566d7bbb628ec88a8
-ms.sourcegitcommit: 319023e53627dbe8e68643908aacc6fd594a4957
+ms.openlocfilehash: 2d6d9cfd03971a7adec509babff9ad8cd90af4cb
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553852"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8142942"
 ---
 # <a name="viewing-service-statistics"></a>Affichage des statistiques service
 Vous pouvez utiliser des statistiques pour analyser les documents service et évaluer la bonne gestion de vos processus de service. Vous pouvez analyser les contrats de service, articles, devis, commandes, factures et notes de crédit en choisissant l'action **Statistiques**. Pour les articles et contrats de service, vous pouvez également utiliser les champs **Trendscape article de service** ou **Trendscape contrat** pour afficher un résumé des écritures service pour un article de service spécifique.   
@@ -86,7 +83,7 @@ Une écriture gain/perte contrat est générée lorsqu'un devis contrat est conv
 |**Gain/Perte contrat (motifs)**|Pour visualiser les écritures gain/perte contrat par code motif.|  
 |**Gain/Perte contrat ctre gest.**|Pour visualiser les écritures gain/perte contrat par centre de gestion.|  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez le nom de la page à afficher, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez le nom de la page à afficher, puis choisissez le lien associé.  
 2. Renseignez les filtres à appliquer. Par exemple, sur la page **Gain/perte contrat (motifs)**, choisissez une valeur pour **Filtre code motif**.  
 3. Choisissez l'action **Afficher matrice**.
 
@@ -114,3 +111,6 @@ La page **Statistiques note de crédit service** permet d'obtenir un aperçu sta
 [Créer commande service](service-how-to-create-service-orders.md)   
 [Créer des articles de service](service-how-to-create-service-items.md)   
 [Services de planification](service-plan-service.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

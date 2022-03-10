@@ -1,21 +1,20 @@
 ---
-title: Détails de conception - ligne de report dans le journal général | Microsoft Docs
+title: Détails de conception - Ligne report de journal général
 description: Cette rubrique fournit une analyse des concepts et principes qui sont utilisés pour reconcevoir la fonction de ligne de report au journal général dans Business Central.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: design, general journal, posting, codeunit 12
-ms.date: 06/08/2021
+ms.date: 06/14/2021
 ms.author: edupont
-ms.openlocfilehash: 8492c83437be4cd850bafdaaa5dc70d00a075674
-ms.sourcegitcommit: 0953171d39e1232a7c126142d68cac858234a20e
+ms.openlocfilehash: e4eaf147fd18ee3f215aa670fe75458603ca16dc
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6215238"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8143619"
 ---
 # <a name="design-details-general-journal-post-line"></a>Détails de conception : Ligne report de journal général
 

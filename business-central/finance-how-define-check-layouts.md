@@ -2,27 +2,29 @@
 title: Spécifier la mise en page d’un chèque
 description: Vous pouvez concevoir et imprimer vos chèques dans différents formats pour respecter des normes définies par vos autorités locales.
 author: edupont04
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: print check, customize
+ms.search.form: 374, 404
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 6d083e3eea85fde087a431d21bb9eae8bb4b8c5e
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: 7be12b5fe3c6bac93a6ea51454a193ba76320a8e
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6444647"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8149059"
 ---
 # <a name="select-a-check-layout"></a>Sélectionner une mise en page de chèque
+
 Vous pouvez concevoir vos chèques de sorte à respecter les normes fixées par les autorités locales. Vous pouvez imprimer des images de chèques en anglais, en français ou en espagnol.
 
 Les chèques sont conçus pour être imprimés aux formats d'image de chèques américains et canadiens, soit au format chèque-talon-chèque, soit au format talon-talon-chèque.
 
 ## <a name="to-select-a-check-layout"></a>Pour sélectionner une mise en page de chèque
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Sélection des rapports - Compte bancaire**, puis sélectionnez le lien associé.
 2. Sur la page **Sélection du rapport - compte bancaire**, dans le champ **Utilisation**, sélectionnez **Chèque**.
 3. Sélectionnez l'un des codes rapport suivants.
@@ -39,6 +41,7 @@ Une fois que vous avez défini les mises en page de chèques, vous pouvez imprim
 Pour modifier l'une de ces mises en page de chèque par défaut, utilisez l'intégration Word ou RDLC. Pour plus d'informations, voir [Créer et modifier des présentations de rapport personnalisées](ui-how-create-custom-report-layout.md).
 
 ## <a name="using-micr-and-security-fonts"></a>Utilisation des polices de sécurité et MICR
+
 La version en ligne de [!INCLUDE[prod_short](includes/prod_short.md)] contient des polices préinstallées sur les serveurs qui peuvent être utilisées lors de la définition des mises en page de chèque. Ci-après, découvrez les polices disponibles et des liens vers des informations détaillées fournies par les fournisseurs tiers de polices.
 
 > [!Important]
@@ -50,33 +53,38 @@ Dans la mise à jour 15.3 et les versions ultérieures, les polices MICR sont i
 > Pour des raisons de sécurité et juridiques, vous ne pouvez pas télécharger de polices personnalisées sur l'environnement [!INCLUDE[prod_short](includes/prod_short.md)].
 
 ### <a name="micr-e-13b-specifications"></a>Spécifications MICR E-13B
+
 Voici un résumé des spécifications des polices MICR E-13B qui peuvent se révéler utiles lors du calibrage des polices sur les mises en page de chèque avec des imprimantes MICR spécifiques.
 
 ![Spécifications MICR E-13B.](media/font_MICR_E-13B_Specifications.png "Spécifications MICR E-13B")
 
 ### <a name="delimiter-characters"></a>Caractères séparateurs
+
 ![Caractères séparateurs.](media/font-micr-letters.png "Caractères séparateurs")
 
 La spécification complète des polices MICR E-13B est disponible dans la documentation du fournisseur ici : (https://www.idautomation.com/micr-fonts/e13b/).
 
 ### <a name="micr-cmc-7-specifications"></a>Spécifications MICR CMC-7
+
 Les polices CMC-7 suivantes sont disponibles dans [!INCLUDE[prod_short](includes/prod_short.md)] en ligne :
 
 - IDAutomationCMC7
 - IDAutomationCMC7n10
 - IDAutomationCMC7n25
--   IDAutomationCMC7n40
+- IDAutomationCMC7n40
 
 Voici un résumé des spécifications des polices MICR CMC-7 qui peuvent se révéler utiles lors du calibrage des polices sur les mises en page de chèque avec des imprimantes MICR spécifiques.
 
 ![Spécifications MICR CMC-7.](media/font_MICR_CMC-7_Specifications.png "Spécifications MICR CMC-7")
 
 ### <a name="delimiter-characters"></a>Caractères séparateurs
+
 ![Caractères séparateurs pour CMC-7.](media/font-cmc7-letters.png "Caractères séparateurs pour CMC-7")
 
 La spécification complète des polices MICR CMC-7 est disponible dans la documentation du fournisseur ici : (http://www.idautomation.com/micr-fonts/cmc7/).
 
 ### <a name="secure-font-specifications"></a>Spécifications des polices sécurisées
+
 Voici un résumé des spécifications des polices de sécurité des chèques qui peuvent se révéler utiles lors du calibrage des polices sur les mises en page de chèque avec des imprimantes MICR spécifiques.
 
 ![Spécifications des polices de sécurité des chèques.](media/font_check-security-font_Specifications.png "Spécifications des polices de sécurité des chèques")
@@ -86,6 +94,7 @@ La spécification complète des polices de sécurité des chèques est disponibl
 Les polices à d'autres fins sont également disponibles dans [!INCLUDE[prod_short](includes/prod_short.md)]. Pour plus d'informations, voir [Polices disponibles](ui-fonts.md)
 
 ## <a name="see-also"></a>Voir aussi
+
 [Créer et modifier des présentations de rapport personnalisées](ui-how-create-custom-report-layout.md)  
 [Polices de Business Central](ui-fonts.md)  
 [Gestion des comptes fournisseur](payables-manage-payables.md)  

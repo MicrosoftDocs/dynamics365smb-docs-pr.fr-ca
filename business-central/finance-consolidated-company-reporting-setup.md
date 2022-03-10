@@ -2,20 +2,20 @@
 title: Configurer la consolidation de la compagnie
 description: Découvrez comment vous pouvez configurer la manière dont les données de différentes compagnies dans Business Central sont transmises à une compagnie de consolidation.
 author: bholtorf
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: consolidation, subsidiaries, consolidate
-ms.date: 10/01/2020
+ms.search.form: 1826, 1827
+ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: d733b8000d5ea476d32a96bcccdceebc32e0f43c
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: 2f28ea1822677e1690f5cf3b5fb68afca221b9f8
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4750990"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8149085"
 ---
 # <a name="set-up-company-consolidation"></a>Configurer la consolidation de la compagnie
 
@@ -30,6 +30,7 @@ En fonction de la complexité de vos entreprises, il existe deux façons de conf
 
 ## <a name="simple-consolidation-setup"></a>Configuration d’une consolidation simple
 
+[!INCLUDE [2021_releasewave1](includes/2021_releasewave1.md)]
 Si votre consolidation est simple, car vous détenez en totalité les unités fonctionnelles à consolider, le guide de configuration assistée **Consolidation de la compagnie** vous aide à effectuer les étapes suivantes :
 
 * Choisissez si vous souhaitez créer une compagnie consolidée, ou consolider les données dans une compagnie que vous avez déjà créée pour la consolidation. La compagnie ne doit pas contenir de transactions.
@@ -73,7 +74,7 @@ La liste suivante illustre les principaux aspects de la compagnie consolidée.
 [!INCLUDE[prod_short](includes/prod_short.md)] vous permet de créer une liste d'unités fonctionnelles à consolider, de vérifier les données comptables avant leur consolidation, d’importer des fichiers et de générer des rapports de consolidation.  
 
 1. Connectez-vous à la compagnie consolidée.
-2. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
+2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Unités fonctionnelles**, puis choisissez le lien associé.  
 3. Sélectionnez **Nouveau**, puis renseignez les champs requis. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
     > [!IMPORTANT]
@@ -88,7 +89,7 @@ Le plan comptable d’une compagnie qui sera consolidée doit spécifier des com
 
 Si le plan comptable de l'unité fonctionnelle diffère de celui de la compagnie consolidée, vous devez préparer les comptes GL pour la consolidation. Vous pouvez spécifier les comptes sur lesquels reporter les débits et crédits et la méthode à utiliser pour convertir des devises dans la compagnie consolidée. Par exemple, cela est utile si vous exécutez souvent le rapport.
 
-1. Dans [!INCLUDE [prod_short](includes/prod_short.md)] de chaque unité fonctionnelle, choisissez l’icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Plan comptable**, puis sélectionnez le lien associé.  
+1. Dans chaque unité fonctionnelle [!INCLUDE [prod_short](includes/prod_short.md)], sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.  
 2. Ouvrez la fiche du compte, puis renseignez les champs du raccourci **Consolidation**. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]
 
 ### <a name="specify-exchange-rates-for-consolidations"></a><a name="exchrates"></a>Indiquer des taux de change pour les consolidations
@@ -108,7 +109,7 @@ Le tableau suivant décrit les méthodes de conversion de taux de change que vou
 
 Pour spécifier des taux de change pour les unités fonctionnelles, procédez comme suit :
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Unités fonctionnelles**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Unités fonctionnelles**, puis choisissez le lien associé.  
 2. Sur la page **Liste des unités fonctionnelles**, choisissez l'unité fonctionnelle, puis choisissez l'action **Taux moyen (manuel)**.  
 3. Sur la page **Modifier taux de change**, la valeur du champ **Montant taux de change lié** est copiée à partir de la table **Taux de change devise**, mais vous pouvez la modifier. Fermez la page.  
 4. Choisissez l'action **Taux de fermeture**.  
@@ -138,3 +139,6 @@ Si vous détenez une compagnie en partie, vous pouvez ajouter un pourcentage de 
 [Gestion des transactions intersociétés](intercompany-manage.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Exportation de vos données métier vers Excel](about-export-data.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

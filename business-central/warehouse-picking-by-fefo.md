@@ -2,20 +2,19 @@
 title: Comment activer le prélèvement par FEFO | Microsoft Docs
 description: First-Expired-First-Out (FEFO) est une méthode de tri qui garantit que les articles les plus anciens, ceux qui ont les dates d'expiration les plus anciennes, sont prélevés en premier.
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 1c7896988545d6f1b8269ead90dff7350bc6f320
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: 1855391f5bf2c0807ac4ffcd8d42e0ea8122fd87
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4755847"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8141867"
 ---
 # <a name="enable-picking-items-by-fefo"></a>Activer le prélèvement d'articles par FEFO
 First-Expired-First-Out (FEFO) est une méthode de tri qui garantit que les articles les plus anciens, ceux qui ont les dates d'expiration les plus anciennes, sont prélevés en premier.  
@@ -25,22 +24,20 @@ First-Expired-First-Out (FEFO) est une méthode de tri qui garantit que les arti
 -   L'article doit avoir un numéro de série/lot.  
 -   Dans la configuration du code de traçabilité article de l'article, le champ **Traçabilité d'entrepôt par numéro de série** ou le champ **Traçabilité d'entrepôt par numéro de lot** doit être sélectionné.  
 -   L'article doit être reporté dans l'inventaire avec une date d'expiration.  
--   Dans la fiche magasin, la case à cocher **Prélèvement requis** doit être activée.  
--   Dans la fiche magasin, la case à cocher **Prélèvement selon FEFO** doit être activée.  
--   Dans la fiche magasin, le champ **Emplacement obligatoire** doit être sélectionné.  
+-   Dans l'emplacement, les boutons de basculement **Prélèvement requis**, **Prélèvement par FEFO**, et **Zone obligatoire** doivent être activés.  
 
  Lorsque tous les critères sont réunis, les articles aux numéros de série/lot à prélever sont triés par ancienneté de prélèvements et mouvements, sauf pour les articles qui utilisent la traçabilité par numéro de série ou de lot.  
 
 > [!NOTE]  
-> Si certains articles avec numéros de série/lot utilisent une traçabilité spécifique, ceux-ci sont respectés en premier et, en dessous, les numéros de série/lot non spécifiques restants sont listés selon FEFO.
+> Si certains articles avec numéros de série ou lot utilisent une traçabilité spécifique, ceux-ci sont respectés en premier et, en dessous, les numéros de série/lot non spécifiques restants sont listés selon FEFO.
 <br /><br />
-Si deux articles avec des numéros de série ou de lot ont la même date de péremption, l'application sélectionne celui avec le plus petit numéro de lot ou de série.
+Si deux articles avec des numéros de série ou de lot ont la même date d'expiration, l’application sélectionne celui avec le plus petit numéro de lot ou de série.
 <br /><br />
-Lors du prélèvement des articles avec numéro de série/de lot dans les emplacements configurés pour un prélèvement et un rangement suggérés, seules les quantités des zones de type *Prélèvement* sont prélevées selon FEFO.  
+Lors du prélèvement d'articles avec numéro de série/de lot dans les emplacements configurés pour un prélèvement et un rangement suggérés, seules les quantités des zones de type *Prélèvement* sont prélevées selon FEFO.  
 <br /><br />
-Pour activer des mouvements selon FEFO, sur la page **Mouvement d'inventaire** ou la page **Feuille mouvement**, vous devez laisser le champ **Depuis zone** vide.  
+Pour activer des mouvements selon FEFO, laissez le champ **Depuis zone** vide sur la page **Mouvement d'inventaire** ou les pages **Feuille mouvement**.  
 <br /><br />
-Si le champ **Validation de péremption stricte** est sélectionné, seuls les articles non expirés sont inclus dans le prélèvement. Cela s'applique même si vous n'utilisez pas de prélèvement selon FEFO.
+Si le champ **Report expiration strict** est sélectionné sur la **Fiche Code traçabilité**, seuls les articles non expirés seront inclus dans le prélèvement et les lignes seront triées selon le principe FEFO.
 
 ## <a name="see-also"></a>Voir aussi  
 [Prélèvement des articles](warehouse-pick-items.md)   
@@ -49,3 +46,6 @@ Si le champ **Validation de péremption stricte** est sélectionné, seuls les a
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Stock](inventory-manage-inventory.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,22 +1,20 @@
 ---
-title: Gérer les absences des employés | Microsoft Docs
-description: Décrit comment enregistrer les absences des salariés et analyser les statistiques d'indisponibilité.
-services: project-madeira
-documentationcenter: ''
+title: Gérer les absences des employés
+description: Décrit comment enregistrer les absences des employés et analyser les statistiques d’absence à l’aide des pages Enregistrement des absences et Absences des employés.
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2019
-ms.author: SorenGP
-ms.openlocfilehash: e1f2c795ef3669770b9e00f30b8919570bd1b6a8
-ms.sourcegitcommit: 02e704bc3e01d62072144919774f1244c42827e4
+ms.search.form: 5212, 5211, 5200
+ms.date: 06/16/2021
+ms.author: edupont
+ms.openlocfilehash: 77ae09aebd78c870cc92d01700fc9a9188f340ee
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2301526"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8146446"
 ---
 # <a name="manage-employee-absence"></a>Gérer les absences des employés
 Pour gérer l'absence d'un employé, vous devez l'enregistrer sur la page **Saisie des absences**. Elle peut alors être affichée de différentes façons à des fins d'analyse ou de génération de rapport.
@@ -71,5 +69,8 @@ Vous pouvez enregistrer les absences des employés quotidiennement ou à un autr
 ## <a name="see-also"></a>Voir aussi
 [Gérer les ressources humaines](hr-manage-human-resources.md)  
 [Finance](finance.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Modifier les fonctionnalités affichées](ui-experiences.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

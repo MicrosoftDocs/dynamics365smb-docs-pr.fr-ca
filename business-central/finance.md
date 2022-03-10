@@ -1,26 +1,25 @@
 ---
-title: Gestion financière| Microsoft Docs
-description: En savoir plus sur les tâches pour paramétrer les finances de votre société afin de les adapter à votre comptabilité ou vos audits.
-services: project-madeira
-documentationcenter: ''
+title: Gestion financière (contient une vidéo)
+description: Découvrez comment Business Central répond à vos besoins en matière de gestion financière, de comptabilité, d’audit ou de tenue des registres.
 author: edupont04
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
-ms.date: 04/01/2020
+ms.search.form: 1151, 1166, 9027, 9004
+ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: 60b62845a359cec21b52f42c6692edc417a65123
-ms.sourcegitcommit: 4545bb597dd9dc4c563b30af762977ee1d815497
+ms.openlocfilehash: 44c7475921c679cc03ee25e8c05ffa78d04592f3
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410757"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8135968"
 ---
-# <a name="finance"></a>Finance
-[!INCLUDE[d365fin](includes/d365fin_md.md)] comprend une configuration standard de la plupart des processus financiers, mais vous pouvez modifier la configuration pour l'adapter à votre activité. Pour plus d'informations, reportez-vous à [Configuration de Finance](finance-setup-finance.md).
+# <a name="financial-management"></a>Gestion financière
+
+[!INCLUDE[prod_short](includes/prod_short.md)] comprend une configuration standard de la plupart des processus financiers, mais vous pouvez modifier la configuration pour l'adapter à votre activité. Pour plus d'informations, reportez-vous à [Configuration de Finance](finance-setup-finance.md).
 
 La configuration par défaut inclut un plan comptable et des groupes report standard qui permettent d'accroître l'efficacité du processus d'affectation des comptes report dans le grand livre par défaut aux clients, fournisseurs et articles.  
 
@@ -45,25 +44,35 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Affectez les surcoûts, tels que le fret et la manutention que vous encourez lors de la transaction, jusqu'aux articles impliqués afin que les coûts soient répercutées dans l'évaluation de l'inventaire. |[Utiliser Frais annexes pour comptabiliser les coûts commerciaux supplémentaires](payables-how-assign-item-charges.md) |
 |Reporter les dépenses personnelles des employés pour leurs activités professionnelles et remboursez les employés en effectuant le paiement sur leur compte bancaire.|[Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md)|
 | Identifiez les revenus et les dépenses dans des périodes autres que celles du report des transactions. |[Échelonner les recettes et les dépenses](finance-how-defer-revenue-expenses.md)|
-| Découvrez les options disponibles pour automatiser l'envoi de factures d'abonnement à vos clients et enregistrer des revenus récurrents. |[Revenus récurrents (abonnement)](finance-recurring-invoicing.md)|
+| Découvrez les options disponibles pour automatiser l'envoi de factures d'abonnement à vos clients et enregistrer des revenus récurrents. |[Utiliser des revenus récurrents](finance-recurring-invoicing.md)|
 |En savoir plus sur l'utilisation de devises supplémentaires et mettre à jour les taux de change devise automatiquement. |[Mettre à jour des taux de change devise](finance-how-update-currencies.md)|
 | Importez des transactions de paie de votre fournisseur de paie dans le grand livre. |[Importer les transactions de paie](finance-how-import-payroll-transactions.md)|
 |Utiliser des fonctions pour calculer la taxe sur la valeur ajoutée (TVA) sur les transactions de vente et d'achat afin de pouvoir déclarer les montants aux autorités fiscales.|[Utiliser la TVA sur les ventes et les achats](finance-work-with-vat.md)|
 |Préparer un rapport qui répertorie la TVA des ventes, et envoyer le rapport à l'administration fiscale de l'UE. | [Déclarer la TVA aux autorités fiscales](finance-how-report-vat.md)|
 |Convertir manuellement les contrats de service pour modifier leur taux de TVA.|[Convertir les contrats de service incluant des montants TVA](service-how-to-convert-service-contracts.md)|
 | Contrôlez le flux de trésorerie entrant et sortant de votre entreprise. |[Analyse des trésoreries dans votre compagnie](finance-analyze-cash-flow.md) |
-|Procédure de suivi et de bout en bout sur l'utilisation des tableaux d'analyse pour effectuer des prévisions de la trésorerie.|[Procédure pas-à-pas : Créer des prévisions de la trésorerie à l'aide de tableaux d'analyse](walkthrough-making-cash-flow-forecasts-by-using-account-schedules.md)|
+|Procédure de suivi et de bout en bout sur l’utilisation des tableaux d’analyse pour effectuer des prévisions de la trésorerie.|[Procédure pas-à-pas : Créer des prévisions de la trésorerie à l'aide de tableaux d'analyse](walkthrough-making-cash-flow-forecasts-by-using-account-schedules.md)|
 | Utiliser des états financiers et des aperçus dans Excel. |[Analyse des états financiers dans Excel](finance-analyze-excel.md) |
-|Apprendre à utiliser le tableau de bord Comptable, à inviter un comptable externe et à utiliser Accountant Hub pour gérer les comptes de plusieurs clients.|[Expériences de comptables dans Business Central](finance-accounting.md)|  
+|Apprendre à utiliser le tableau de bord Comptable, à inviter un comptable externe et à utiliser le Hub Entreprise pour gérer les comptes de plusieurs clients.|[Expériences de comptables dans Business Central](finance-accounting.md)|  
+
+## <a name="take-a-video-tour"></a>Faire une visite vidéo
+
+La vidéo suivante présente certaines des fonctionnalités clés de la gestion des finances. <br><br>  
+
+> [!Video https://www.microsoft.com/videoplayer/embed/RE4Fss4?rel=0]
 
 ## <a name="see-also"></a>Voir aussi
+
 [Configuration de Finance](finance-setup-finance.md)  
-[Ventes](sales-manage-sales.md)  
-[Achats](purchasing-manage-purchasing.md)  
-[Fermeture des périodes fiscales](year-close-years-periods.md)  
-[Gestion des projets](projects-manage-projects.md)    
+[Vente](sales-manage-sales.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)  
+[Clôture des périodes fiscales](year-close-years-periods.md)  
+[Gestion des projets](projects-manage-projects.md)  
 [Importation des données à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  
 [Utilisation de journaux généraux](ui-work-general-journals.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
-## [!INCLUDE[d365fin](includes/free_trial_md.md)]  
+## [!INCLUDE[prod_short](includes/free_trial_md.md)]  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

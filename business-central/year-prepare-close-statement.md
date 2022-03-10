@@ -2,20 +2,19 @@
 title: Aperçu des rapports permettant de préparer les états de fermeture | Microsoft Docs
 description: Fournit un aperçu des rapports que vous pouvez utiliser pour rassembler des informations pour préparer les états de fermeture de votre compagnie à la fin de l'exercice financier.
 author: jswymer
-ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: year closing, close accounting period, close fiscal year, aging, creditor payments, vendor payments, assets, liabilities, equity, analysis, reporting, financial report, business intelligence, BI, Power Bi, KPI
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: f58ee0ab43e8d43ae2d08e67cec52a9dd63ac202
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.openlocfilehash: e9eb5243541cdd365aa6a92b1278f38da531ed54
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5776651"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8141831"
 ---
 # <a name="preparing-closing-statements"></a>Préparation des relevés de fermeture
 Il existe plusieurs rapports standard que vous pouvez utiliser pour rassembler les informations dont vous avez besoin pour préparer les relevés de fermeture de votre compagnie.
@@ -32,7 +31,7 @@ Le tableau suivant décrit un certain nombre d'états qui peuvent être utiles d
 | Imprimez un tableau d'analyse pour analyser les chiffres des comptes du grand livre ou comparer les écritures GL réelles et les écritures budget du grand livre. |**Tableau d'analyse** |
 | Vérifier que les écritures client et fournisseur sont équilibrées avec les écritures correspondantes du grand livre. |**Rappr. cptes clients et fourn.** |
 
-Pour visualiser un rapport, choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez le nom qui s'affiche dans la table, puis sélectionnez le lien associé.
+Pour voir un rapport, sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez le nom tel qu’il apparaît dans le tableau, puis choisissez le lien associé.
 
 ## <a name="see-also"></a>Voir aussi
 [Clôture des exercices et des périodes](year-close-years-periods.md)  

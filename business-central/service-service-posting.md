@@ -1,21 +1,20 @@
 ---
-title: Report de service | Microsoft Docs
-description: La fonctionnalité de report de service vous permet de traiter vos documents efficacement et de maintenir une stratégie de service client fructueuse. Vous pouvez créer et mettre à jour des documents reportés, et créer des écritures dans le module Service et dans d'autres modules pour garantir une mise à jour correcte.
+title: Report de service
+description: La fonctionnalité de report de service vous permet de traiter vos documents efficacement et de maintenir une stratégie de service client fructueuse.
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: a0d0e5f18acf9830fe77a87f9e1c8982da47c257
-ms.sourcegitcommit: ddbb5cede750df1baba4b3eab8fbed6744b5b9d6
+ms.openlocfilehash: 54d1a7aec0edcedbdb69ab1c60c6d1515c9a22c7
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3913131"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8143020"
 ---
 # <a name="service-posting"></a>Report de service
 La fonctionnalité de report de service vous permet de traiter vos documents efficacement et de maintenir une stratégie de service client fructueuse. Vous pouvez créer et mettre à jour des documents reportés, et créer des écritures dans le module Service et dans d'autres modules pour garantir une mise à jour correcte.  
@@ -26,7 +25,7 @@ La fonctionnalité de report de service vous permet de traiter vos documents eff
 >  Dans un emplacement qui n'est pas configuré pour exiger une gestion d'entrepôt, vous effectuez des actions de report directement sur la page **Lignes service**. Dans les emplacements qui impliquent une gestion d'entrepôt, les tâches de report décrites, à l'exception des tâches Livrer et Consommer, sont effectuées indirectement au moyen de différentes fonctions de livraison de l'entrepôt, selon la configuration. Pour plus d'informations, voir [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).  
 
 ## <a name="ship"></a>Livrer  
-La fonction Livraison vous permet d'enregistrer les articles et le temps appropriés entrés dans les lignes d'une commande service après que vous ayez exécuté le service. Une expédition enregistrée est crée et des mises à jour interviennent dans le module Stock, ainsi que d'autres modules dans [!INCLUDE[d365fin](includes/d365fin_md.md)] afin d'indiquer que les articles ont été prélevés sur le stock et envoyés au client. Plus particulièrement, les écritures du grand livre d'articles, du livre garantie, les écritures valeur et les écritures service sont générées.  
+La fonction Livraison vous permet d'enregistrer les articles et le temps appropriés entrés dans les lignes d'une commande service après que vous ayez exécuté le service. Une expédition enregistrée est crée et des mises à jour interviennent dans le module Stock, ainsi que d'autres modules dans [!INCLUDE[prod_short](includes/prod_short.md)] afin d'indiquer que les articles ont été prélevés sur le stock et envoyés au client. Plus particulièrement, les écritures du grand livre d'articles, du livre garantie, les écritures valeur et les écritures service sont générées.  
 
 Si l'emplacement est configuré pour exiger la gestion d'entrepôt, la livraison et le déplacement d'articles de ligne service s'exécutent de la même manière que pour d'autres documents source. La seule différence est que les articles de la ligne service peuvent être consommés en externe ou en interne, ce qui nécessite deux fonctions de libération différentes.
 
@@ -49,7 +48,7 @@ Lorsque vous reportez une facture service, une livraison service ou une note de 
 
 La procédure suivante utilise un exemple de facture service reportée ; cette même procédure est applicable aux livraisons de service et aux notes de crédit reportées.  
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Facture service reportée**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Facture de service reportées**, puis sélectionnez le lien associé.  
 2. Ouvrez la facture service reportée que vous souhaitez afficher.  
 3. Pour obtenir un aperçu de la facture reportée, choisissez l'action **Statistiques**.  
 
@@ -58,3 +57,6 @@ La procédure suivante utilise un exemple de facture service reportée ; cette 
 ## <a name="see-also"></a>Voir aussi  
 [Reporter des commandes de service](service-how-to-post-service-orders.md)   
 [Créer commande service](service-how-to-create-service-orders.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

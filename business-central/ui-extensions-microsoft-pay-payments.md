@@ -1,29 +1,28 @@
 ---
-title: Microsoft Pay Standard | Microsoft Docs
-description: Fournit des informations sur l'extension Microsoft Pay
+title: Microsoft Pay Standard
+description: L'extension Microsoft Pay ajoute un lien Microsoft Pay à vos documents de vente afin que les clients peuvent facilement effectuer des paiements à l'aide de Microsoft Pay.
 services: project-madeira
 documentationcenter: ''
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 82e5cc8ba4b9335b8282857b564f9dcb3050fca0
-ms.sourcegitcommit: a80afd4e5075018716efad76d82a54e158f1392d
+ms.openlocfilehash: d5668db9d0a7fa9b461a19949643ca7a2cc01a31
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "3784796"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8132534"
 ---
 # <a name="the-microsoft-pay-extension"></a>Extension Microsoft Pay
 
 > [!IMPORTANT]
-> À compter du 8 février 2020, les changements dans le service Microsoft Pay affecteront l'extension Microsoft Pay dans Microsoft [!INCLUDE[d365fin](includes/d365fin_long_md.md)]. En raison des changements, après le 8 février, les liens de paiement **Payer maintenant** que l'extension Microsoft Pay génère pour les factures dans [!INCLUDE[d365fin](includes/d365fin_md.md)] n'ouvriront pas Microsoft Pay. Les clients qui utilisent l'extension doivent modifier la configuration de leurs services de paiement pour qu'ils démarrent plutôt avec l'extension PayPal.<br /></br>
+> À compter du 8 février 2020, les changements dans le service Microsoft Pay affecteront l'extension Microsoft Pay dans Microsoft [!INCLUDE[prod_short](includes/prod_long.md)]. En raison des changements, après le 8 février, les liens de paiement **Payer maintenant** que l'extension Microsoft Pay génère pour les factures dans [!INCLUDE[prod_short](includes/prod_short.md)] n'ouvriront pas Microsoft Pay. Les clients qui utilisent l'extension doivent modifier la configuration de leurs services de paiement pour qu'ils démarrent plutôt avec l'extension PayPal.<br /></br>
 >
-> À partir du 8 janvier, nous afficherons une notification dans [!INCLUDE[d365fin](includes/d365fin_md.md)]. La notification contiendra un lien vers les paramètres que vous devez modifier et vers un complément d'informations. Après le 8 février, l'extension Microsoft Pay ne sera plus disponible dans [!INCLUDE[d365fin](includes/d365fin_md.md)].<br /></br>
+> À partir du 8 janvier, nous afficherons une notification dans [!INCLUDE[prod_short](includes/prod_short.md)]. La notification contiendra un lien vers les paramètres que vous devez modifier et vers un complément d'informations. Après le 8 février, l'extension Microsoft Pay ne sera plus disponible dans [!INCLUDE[prod_short](includes/prod_short.md)].<br /></br>
 >
 > Les modifications affectent les versions suivantes de Business Central :
 > - Microsoft Dynamics 365 Business Central, octobre 2018
@@ -42,9 +41,12 @@ L'extension Microsoft Pay offre les avantages suivants :
 - Le lien Microsoft Pay peut être incorporé automatiquement ou par l'utilisateur sur chaque document facture.
 - Comme cette fonctionnalité est conçus comme une extension, elle vous donne le contrôle complet et vous permet de l'activer quand et si vos processus d'entreprise le nécessitent.
 
-L'activation des extensions de service de paiement est gratuite dans [!INCLUDE[d365fin](includes/d365fin_md.md)], toutefois, vous devez contacter le service de paiement pour obtenir un compte. Pour plus d'informations, voir [Activer les paiements client via les services de paiement](sales-how-enable-payment-service-extensions.md).
+L'activation des extensions de service de paiement est gratuite dans [!INCLUDE[prod_short](includes/prod_short.md)], toutefois, vous devez contacter le service de paiement pour obtenir un compte. Pour plus d'informations, voir [Activer les paiements client via les services de paiement](sales-how-enable-payment-service-extensions.md).
 
 ## <a name="see-also"></a>Voir aussi
-[Personnalisation de [!INCLUDE[d365fin](includes/d365fin_md.md)] à l'aide des extensions](ui-extensions.md)  
+[Personnalisation de [!INCLUDE[prod_short](includes/prod_short.md)] à l'aide des extensions](ui-extensions.md)  
 [Définition des ventes](sales-setup-sales.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

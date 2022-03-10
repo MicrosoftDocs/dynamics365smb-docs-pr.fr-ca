@@ -1,21 +1,20 @@
 ---
-title: Comment planifier des rangements dans la feuille | Microsoft Docs
-description: Lorsque l'emplacement nécessite un traitement à la fois de rangement et de réception et que vous souhaitez planifier des instructions de rangement pour plusieurs réceptions, vous pouvez utiliser la feuille rangement (dans ce cas, les employés n'ont pas à suivre les instructions créées par l'application pour différentes réceptions reportées).
+title: Comment planifier des rangements dans la feuille
+description: Configurez votre entrepôt de sorte que les lignes de réception soient disponibles dans la feuille de calcul de rangement lorsque vous souhaitez planifier les instructions de rangement pour les réceptions.
 author: SorenGP
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2020
+ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 1cf1a782a0c36e3f87935c8b2b965deb4ad04e9a
-ms.sourcegitcommit: ff2b55b7e790447e0c1fcd5c2ec7f7610338ebaa
+ms.openlocfilehash: b7bd6481c6347cfb9c8d02ba58f38101802a6caa
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5383666"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8131129"
 ---
 # <a name="plan-put-aways-in-worksheets"></a>Planifier des rangements dans la feuille
 Lorsque l'emplacement nécessite un traitement à la fois de rangement et de réception et que vous souhaitez planifier des instructions de rangement pour plusieurs réceptions, vous pouvez utiliser la feuille rangement (dans ce cas, les employés n'ont pas à suivre les instructions créées par l'application pour différentes réceptions reportées).  
@@ -31,7 +30,7 @@ Si vous ne sélectionnez pas ce champ, l'application crée automatiquement des i
 > 2.  Poursuivez l'opération dans tous les rangements concernés jusqu'à ce que vous ayez supprimé les lignes que vous souhaitez utiliser dans la feuille. Sélectionnez maintenant **Rangement** et continuez la planification.  
 
 ## <a name="to-plan-instructions-in-the-put-away-worksheet"></a>Pour planifier des instructions dans la feuille rangement  
-1.  Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille rangement**, puis choisissez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille rangement**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Extraire documents entrepôt**. La page **Sélection rangement** s'ouvre.  
 
     Vous pouvez visualiser toutes les réceptions reportées et tous les rangements internes enregistrés qui ont été envoyés vers la fonction rangement, y compris ceux pour lesquels des instructions rangement ont déjà été créées. Les documents dont les lignes rangement ont été entièrement rangées et enregistrées n'apparaissent pas dans cette liste.  

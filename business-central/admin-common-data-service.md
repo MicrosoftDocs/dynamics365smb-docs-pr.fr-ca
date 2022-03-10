@@ -1,22 +1,21 @@
 ---
 title: Utilisation de Microsoft Dataverse
-description: Introduction à Microsoft Dataverse et ses composantes.
+description: Introduction à l’intégration et à l’utilisation de Microsoft Dataverse et ses composantes pour se connecter à d’autres applications Dynamics 365.
 author: bholtorf
 ms.author: bholtorf
 ms.custom: na
 ms.reviewer: na
-ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 04/01/2021
-ms.openlocfilehash: 8ddf4413b6ecb35bcca9873ef4bb99db75642563
-ms.sourcegitcommit: 766e2840fd16efb901d211d7fa64d96766ac99d9
+ms.date: 06/14/2021
+ms.openlocfilehash: 95b1146f2f664ad73966162e24c3e0ad0c34e310
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5773139"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8141447"
 ---
 # <a name="integrating-with-microsoft-dataverse"></a>Intégration à Microsoft Dataverse
-[!INCLUDE[prod_short](includes/cc_data_platform_banner.md)]
+
 
 Les applications métier utilisent souvent des données provenant de plusieurs sources. [!INCLUDE[prod_short](includes/cds_long_md.md)] combine les données en un seul ensemble de logique qui facilite la connexion d'autres applications Dynamics 365 telles que [!INCLUDE[crm_md](includes/crm_md.md)] ou votre propre application créée sur [!INCLUDE[prod_short](includes/cds_long_md.md)] à [!INCLUDE[prod_short_md](includes/prod_short.md)]. Pour en savoir plus sur [!INCLUDE[prod_short](includes/cds_long_md.md)], consultez [Qu’est-ce que Dataverse ?](/powerapps/maker/common-data-service/data-platform-intro)
 

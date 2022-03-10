@@ -2,20 +2,19 @@
 title: Préparation aux activités commerciales
 description: Décrit les guides de configuration assistée, les vidéos, les rubriques d'aide, et les pages à utiliser pour vous préparer à faire des affaires dans Business Central.
 author: edupont04
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: SMTP, mail, Microsoft 365, setup, wizard, experience
-ms.date: 04/01/2021
+ms.date: 09/29/2021
 ms.author: edupont
-ms.openlocfilehash: 6bac247787efde5e23a7460b696c241e93f5de89
-ms.sourcegitcommit: a7cb0be8eae6ece95f5259d7de7a48b385c9cfeb
+ms.openlocfilehash: b75381cd5153294ec65878c3e6726b9a3e4821de
+ms.sourcegitcommit: cdb57f14960f58b1d36a1b373fbf35dfed5fad9e
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6444830"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "8335042"
 ---
 # <a name="getting-ready-for-doing-business"></a>Préparation aux activités commerciales
 
@@ -32,7 +31,7 @@ Vous pouvez également retrouver la liste des guides de configuration assistée 
 
 ## <a name="get-started"></a>Démarrer
 
-À partir de la 1re vague de lancement 2021, lorsque vous vous connectez pour la première fois ou que vous lancez une nouvelle entreprise, la liste de vérification **Démarrer** vous guide à travers les étapes pour vous préparer à vous lancer. Les étapes varient en fonction de votre pays et des fonctionnalités spécifiques au secteur que vous avez ajoutées à votre [!INCLUDE [prod_short](includes/prod_short.md)].  
+Lorsque vous vous connectez pour la première fois ou que vous lancez une nouvelle compagnie, la liste de vérification **Démarrer** vous guide à travers les étapes pour vous préparer à vous lancer. Les étapes varient en fonction de votre pays et des fonctionnalités spécifiques au secteur que vous avez ajoutées à votre [!INCLUDE [prod_short](includes/prod_short.md)]. À partir de la deuxième vague de lancement 2021, lorsque vous vous connectez pour la première fois à la compagnie de démonstration CRONUS, votre page d’accueil est optimisée pour vos premières expériences. Si vous préférez voir plus de liens vers plus de pages, passez simplement au rôle de Gestionnaire d’activité. Pour plus d'informations, voir [Modifier les paramètres de base](ui-change-basic-settings.md).  
 
 Une fois que vous avez effectué la migration des données telles que les fournisseurs, les clients et les articles de votre système financier existant, vous êtes prêt à commencer. Mais en fonction de vos besoins, demandez-vous si les autres guides de configuration assistée peuvent vous aider.
 
@@ -43,7 +42,7 @@ Si une zone n’est pas couverte par une configuration assistée, choisissez ![l
 >
 > La première fois que vous vous connectez, vous utilisez l'expérience **Essential**. Pour plus d'informations, voir [Modifier les fonctionnalités affichées](ui-experiences.md).
 
-Lorsque vous avez exécuté un guide de configuration assistée, il est marqué comme **Terminé**. <!--VERIFY-->  
+Lorsque vous avez exécuté un guide de configuration assistée, il est marqué comme **Terminé**.  
 
 ## <a name="teaching-tips-and-tours"></a>Conseils pédagogiques et visites
 
@@ -70,9 +69,9 @@ Sous **Paramètres de la société** vous pouvez afficher et modifier les inform
 
 ## <a name="adding-users-and-permissions"></a>Ajouter des utilisateurs et des autorisations
 
-Si vous souhaitez ajouter des utilisateurs, vous pouvez le faire à partir du centre d'administration Microsoft 365. Pour plus d’informations, voir [Créer des utilisateurs conformément aux licences](ui-how-users-permissions.md).
+Si vous souhaitez ajouter des utilisateurs, vous pouvez le faire à partir du centre d’administration Microsoft 365. Pour plus d’informations, voir [Créer des utilisateurs conformément aux licences](ui-how-users-permissions.md).
 
-Une fois les utilisateurs créés dans Microsoft 365, ils peuvent être importés dans la page **Utilisateurs** à l'aide de l'action **Obtenir des mises à jour à partir d'Office 365**. Vous pouvez ensuite affecter des autorisations aux utilisateurs et les organiser en groupes d'utilisateurs. Pour en savoir plus, voir [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md).  
+Une fois les utilisateurs créés dans Microsoft 365, ils peuvent être importés dans la page **Utilisateurs** à l’aide de l’action **Obtenir des mises à jour à partir d’Office 365**. Vous pouvez ensuite affecter des autorisations aux utilisateurs et les organiser en groupes d'utilisateurs. Pour en savoir plus, voir [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md).  
 
 ## <a name="product-help"></a>Aide relative aux produits
 
@@ -80,15 +79,21 @@ Une fois les utilisateurs créés dans Microsoft 365, ils peuvent être importé
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-En fonction de la migration de vos données, vous pouvez maintenant passer à la création de documents vente ou achat. Utilisez la section **Actions** de votre page d'accueil pour créer rapidement un devis, une facture vente, un document de vente, une facture achat, ou un enregistrement de paiement.
+En fonction de la migration de vos données, vous pouvez maintenant passer à la création de documents vente ou achat. Utilisez la section **Actions** de votre page d'accueil pour créer rapidement un devis, une facture vente, un document de vente, une facture achat, ou un enregistrement de paiement. Consultez les articles de [démarrage rapide](quick-start-business-central.md) pour vous aider à faire vos premiers pas.  
 
 ## <a name="see-also"></a>Voir aussi
 
+[Démarrage rapide de Business Central](quick-start-business-central.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Modifier les paramètres de base](ui-change-basic-settings.md)  
+[Accessibilité et raccourcis clavier](ui-accessibility.md)  
+[Versions d'évaluation et abonnements](across-preview.md)  
+[Fonctionnalités d'entreprise](across-business-functionality.md)  
 [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md)  
-Versions d'évaluation et abonnements [[!INCLUDE[prod_long](includes/prod_long.md)]](across-preview.md)  
+[Rechercher dans le volet d’aide](product-help-and-support.md#search-in-the-help-pane)  
 [Ressources pour l'aide et l'assistance technique](product-help-and-support.md)  
 [Site Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)  
+[Migrer des données](/dynamics365/business-central/dev-itpro/administration/migrate-data)  
 
 ## [!INCLUDE[prod_short](includes/free_trial_md.md)]  
 

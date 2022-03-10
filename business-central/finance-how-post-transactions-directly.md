@@ -1,21 +1,21 @@
 ---
-title: Enregistrer les frais ou les revenus directement dans le grand livre| Microsoft Docs
-description: Pour les activités économiques qui ne sont pas représentés par un document, comme de plus petits frais ou encaissements, vous pouvez créer les transactions associées en reportant des lignes de journal sur la page Journal général.
+title: Enregistrer les frais ou des revenus directement dans le grand livre
+description: Pour les activités économiques qui ne sont pas représentées par un document, vous pouvez créer les transactions associées en reportant des lignes de journal sur la page Journal général.
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: direct posting, general ledger
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: f0c1efcee7db0239efa739dd0ea8d8ce45e2dbd7
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.search.form: 39, 251
+ms.date: 06/16/2021
+ms.author: edupont
+ms.openlocfilehash: 26fb9695778d3a8a63c740a6e4303bfd001ab707
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3183966"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8132950"
 ---
 # <a name="post-transactions-directly-to-the-general-ledger"></a>Reporter les transactions directement dans le grand livre
 
@@ -29,7 +29,7 @@ Contrairement aux écritures qui sont reportées avec des documents qui nécessi
 
 ## <a name="to-post-a-transaction-directly-to-a-general-ledger-account"></a>Pour reporter une transaction directement dans le compte GL
 
-1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Journaux généraux**, puis sélectionnez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux généraux**, puis choisissez le lien associé.
 2. Ouvrez le lot journal général approprié. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 3. Sur une nouvelle ligne journal, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]    
 
@@ -47,4 +47,7 @@ Contrairement aux écritures qui sont reportées avec des documents qui nécessi
 [Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md)  
 [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)  
 [Finance](finance.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

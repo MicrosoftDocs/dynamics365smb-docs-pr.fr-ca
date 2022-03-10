@@ -1,30 +1,29 @@
 ---
 title: Détails de conception - Évaluation de l'inventaire | Microsoft Docs
-description: Évaluation de l'inventaire XE L'évaluation de l'inventaire est la détermination du coût qui est affecté à un article de l'inventaire, comme exprimé par l'équation suivante.
+description: L’évaluation de l'inventaire est la détermination du coût d’un article d'inventaire.
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 04/01/2020
-ms.author: sgroespe
-ms.openlocfilehash: 674350643495df02548c91700350b6ad27b39cb6
-ms.sourcegitcommit: 88e4b30eaf6fa32af0c1452ce2f85ff1111c75e2
+ms.date: 06/08/2021
+ms.author: edupont
+ms.openlocfilehash: a4877cf45e4cbf035e2914b72e10f4d7a4102e59
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3185190"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8145872"
 ---
 # <a name="design-details-inventory-valuation"></a>Détails de conception : évaluation de l'inventaire
-Évaluation de l'inventaire XE L'évaluation de l'inventaire est la détermination du coût qui est affecté à un article de l'inventaire, comme exprimé par l'équation suivante.  
+L’évaluation de l'inventaire est la détermination du coût qui est affecté à un article d'inventaire, comme exprimé par l’équation suivante.  
 
 Fin inventaire = Début inventaire + achats nets – coût des biens vendus  
 
-Le calcul de l'évaluation de l'inventaire utilise le champ **Coût indiqué (réel)** des écritures valeur pour l'article. Les écritures sont classées en fonction du type d'écriture XE « Type d'écriture » correspondant aux composantes de coût, au coût direct, au coût indirect, à l'écart, à la réévaluation et à l'arrondissement de coût. Pour plus d'informations, voir [Détails de conception : composants des coûts](design-details-cost-components.md).  
+Le calcul de l'évaluation de l'inventaire utilise le champ **Coût indiqué (réel)** des écritures valeur pour l'article. Les écritures sont classées en fonction du type d’écriture correspondant aux composantes de coût, au coût direct, au coût indirect, à l’écart, à la réévaluation et à l’arrondissement de coût. Pour plus d'informations, voir [Détails de conception : composants des coûts](design-details-cost-components.md).  
 
-Les entrées sont affectées les unes en fonction des autres, soit par l'affectation fixe XE « Affectation ; fixe », soit en fonction du principe général du flux de coûts défini par la méthode d'évaluation du coût XE « Méthode ; Évaluation coût » XE « Méthode évaluation coût ». Une écriture de diminution d'inventaire peut être affectée à plusieurs écritures d'augmentation avec des dates de report différentes et éventuellement différents coûts d'acquisition XE « Coût acquisition ». Pour plus d'informations, voir [Détails de conception : traçabilité](design-details-item-application.md). Par conséquent, le calcul de la valeur de l'inventaire XE « Valeur inventaire » d'une date donnée est basé sur l'ajout des écritures valeur positives et négatives.  
+Les écritures sont affectées les unes en fonction des autres, soit par une affectation fixe, soit en fonction du principe général coût-flux défini par le mode d’évaluation du coût. Une écriture de diminution d'inventaire peut être affectée avec plusieurs écritures d'augmentation avec des dates de report différentes et éventuellement différents coûts d’acquisition. Pour plus d'informations, voir [Détails de conception : traçabilité](design-details-item-application.md). Par conséquent, le calcul de la valeur d'inventaire d’une date donnée est basée sur l’ajout des écritures valeur positives et négatives.  
 
 ## <a name="inventory-valuation-report"></a>Rapport Évaluation de l'inventaire  
 Pour calculer la valeur du stock dans le rapport **Évaluation du stock**, le rapport commence par calculer la valeur de stock de l'article à une date de début donnée. Il ajoute ensuite la valeur des augmentations d'inventaire et soustrait la valeur des diminutions d'inventaire jusqu'à une date fin donnée. Le résultat final est la valeur inventaire à la date fin. Le rapport calcule ces valeurs en additionnant les valeurs dans le champ **Coût indiqué (réel)** dans les écritures valeur, à l'aide des dates de report en tant que filtres.  
@@ -58,4 +57,7 @@ L'objectif de l'évaluation de l'inventaire TEC est de déterminer la valeur des
 [Détails de conception : report de bon de production](design-details-production-order-posting.md)
 [Gestion des coûts de l'inventaire](finance-manage-inventory-costs.md)  
 [Finance](finance.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

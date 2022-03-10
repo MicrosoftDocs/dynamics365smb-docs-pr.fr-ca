@@ -1,21 +1,20 @@
 ---
-title: 'Détails de conception : report de coûts prévus | Microsoft Docs'
+title: Détails de conception - report du coût prévu
 description: Les coûts prévus représentent l'estimation, par exemple, du coût d'un article acheté que vous enregistrez avant la réception de la facture de cet article.
 author: SorenGP
-ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 10/01/2020
+ms.date: 07/20/2021
 ms.author: edupont
-ms.openlocfilehash: 22e01f8b22c7f222674ff43090a27f5466dd8387
-ms.sourcegitcommit: 2e7307fbe1eb3b34d0ad9356226a19409054a402
+ms.openlocfilehash: edf08dfd87596da0a2c052651e323963ff13ce6a
+ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4751640"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8128899"
 ---
 # <a name="design-details-expected-cost-posting"></a>Détails de conception : report du coût prévu
 Les coûts prévus représentent l'estimation, par exemple, du coût d'un article acheté que vous enregistrez avant la réception de la facture de cet article.  
@@ -29,10 +28,22 @@ Les coûts prévus représentent l'estimation, par exemple, du coût d'un articl
 
  Pour prendre en charge le travail de rapprochement et de traçabilité, l'écriture valeur facturée montre que le coût indiqué prévu a été reporté pour équilibrer les comptes provisoires.  
 
-## <a name="example"></a>Exemple :  
- L'exemple suivant indique le coût prévu si les cases à cocher **Report coûts automatique** et **Report coût prévu au GL** sont sélectionnées sur la page **Configuration inventaire**.  
+## <a name="prerequisites-for-posting-expected-costs"></a>Conditions préalables au report des coûts prévus
 
- Vous reportez un bon de commande comme reçu. Le coût prévu est 95,00 $.  
+Pour rendre possible le report des coûts prévus, vous devez procéder comme suit :
+1. Dans la page **Configuration inventaire**, cochez la case **Report coûts automatique** et la case **Report coût prévu au GL**.
+2. Configurez les comptes provisoires à utiliser pendant le processus de report des coûts prévus.  
+
+  Dans la page **Configuration report inventaire**, vérifiez les champs **Compte inventaire** et **Compte inventaire (attente)** pour le **Code d’emplacement et Code groupe de report inventaire** de l’article que vous allez acheter. Pour en savoir plus sur ces comptes, voir [Détails de conception - Comptes du grand livre](design-details-accounts-in-the-general-ledger.md).
+3. Dans la page **Configuration report**, vérifiez le champ **Compte ajust. inventaire (attente)** pour le **Groupe de report de marché** et le **Groupe de report de produit** que vous utiliserez.
+4. Lorsque vous créez un bon de commande, la valeur par défaut est que le champ **N° facture fournisseur** est requis. Vous devez le désactiver dans la page **Configuration achats**, en désélectionnant le champ **N° doc. ext. obligatoire**.
+
+## <a name="example"></a>Exemple :  
+
+> [!NOTE]  
+> Les numéros de compte utilisés dans cet exemple servent uniquement de référence et seront différents dans votre système. Configurez-les comme indiqué dans les conditions préalables ci-dessus.
+
+Vous reportez un bon de commande comme reçu. Le coût prévu est 95,00 $.  
 
  **Écritures de valeur**  
 
@@ -73,7 +84,7 @@ Les coûts prévus représentent l'estimation, par exemple, du coût d'un articl
 
  **Écritures journal général**  
 
-|Date de report|Compte général|N° compte (démonstration Fr-FR)|Montant|N° séquence |  
+|Date de report|Compte du grand livre|N° de compte (uniquement des exemples !)|Montant|N° séquence |  
 |------------------|------------------|---------------------------------|------------|---------------|  
 |15/01/20|Compte ajustement inventaire (provisoire)|5530|95.00|4|  
 |15/01/20|Compte inventaire (attente)|2131|-95,00|3|  
@@ -89,3 +100,6 @@ Les coûts prévus représentent l'estimation, par exemple, du coût d'un articl
  [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
  [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
