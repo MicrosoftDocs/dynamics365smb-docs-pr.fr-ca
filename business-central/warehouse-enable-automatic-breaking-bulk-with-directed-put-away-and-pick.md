@@ -7,14 +7,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
+ms.search.form: 5703, 7352
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 82b0625cf36b0c304a28c1196aa76289d5711c15
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: f16fb21773a519edc77fca615d679e106b397af8
+ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8144473"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8382777"
 ---
 # <a name="enable-automatic-breaking-bulk-with-directed-put-away-and-pick"></a>Activer la rupture de charge automatique avec prélèvement et rangement dirigé
 Pour les emplacements qui utilisent un prélèvement et un rangement suggérés, [!INCLUDE[prod_short](includes/prod_short.md)] peut procéder, dans de nombreux cas, à un déconditionnement automatique (division d'une unité de mesure plus grande en unités de mesure plus petites) lorsqu'il crée des instructions entrepôt répondant aux exigences de documents sources, de bons de production ou de prélèvements et de rangements internes. Parfois, le déconditionnement peut également nécessiter le regroupement de petites unités de mesure afin de répondre à des demandes sortantes en divisant l'unité de mesure la plus grande du document origine ou du bon de production en unités de mesure plus petites disponibles dans l'entrepôt.   
@@ -46,9 +47,9 @@ Vous pouvez afficher les résultats de la conversion entre deux unités de mesur
 ## <a name="see-also"></a>Voir aussi  
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  
 [Stock](inventory-manage-inventory.md)  
-[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
-[Gestion d'assemblage](assembly-assemble-items.md)    
-[Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
+[Configuration de Warehouse Management](warehouse-setup-warehouse.md) 
+[Gestion d’assemblage](assembly-assemble-items.md)
+[Détails de conception : Warehouse Management](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 

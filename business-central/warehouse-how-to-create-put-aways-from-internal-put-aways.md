@@ -7,14 +7,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
+ms.search.form: 7354, 7356, 7357, 7358, 7359, 7361
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 609564faa1e0d5b1e7c364360315ca71b9ba3d06
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 9e0eae31f29e726c15add24ef9d4b48b81b3d299
+ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8140095"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8383653"
 ---
 # <a name="pick-and-put-away-without-a-source-document"></a>Prélever et ranger sans document origine
 Une fois les articles rangés et avant qu'ils ne soient prélevés pour répondre aux besoins d'un bon de production ou d'une livraison, ils sont stockés dans l'entrepôt comme faisant partie de l'inventaire disponible.  
@@ -53,8 +54,8 @@ Les **rangements internes** vous permettent d'effectuer des rangements sans avoi
 ## <a name="see-also"></a>Voir aussi  
 [Gestion d’entrepôt](warehouse-manage-warehouse.md)  
 [Inventaire](inventory-manage-inventory.md)  
-[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
-[Gestion d'assemblage](assembly-assemble-items.md)    
+[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
+[Gestion d'assemblage](assembly-assemble-items.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Comment affecter des zones par défaut à des articles
+title: Affecter des zones par défaut à des articles
 description: Si vous utilisez des zones dans un emplacement, l'affectation de zones par défaut à vos articles peut simplifier considérablement leur processus de livraison, de réception et de déplacement.
 author: SorenGP
 ms.topic: conceptual
@@ -7,14 +7,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
+ms.search.form: 7371, 7374, 7379
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: e4f3d103c5bfdcedfef6fa3571f4ca56aa2ccb9a
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 6802009029d8eea434e7c5096f4efb591ee4993b
+ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8134675"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8382751"
 ---
 # <a name="assign-default-bins-to-items"></a>Affecter des zones par défaut à des articles
 Si vous utilisez des zones dans un emplacement, l'affectation de zones par défaut à vos articles peut simplifier considérablement leur processus de livraison, de réception et de déplacement. Lorsqu'une zone par défaut est affectée à un article, cette zone est suggérée chaque fois que vous lancez une transaction pour cet article. Les zones par défaut sont définies sur la page **Contenu de la zone**.  
@@ -28,7 +29,7 @@ Si vous utilisez des zones dans un emplacement, l'affectation de zones par défa
 >  Lorsqu'un article est rangé, si une zone par défaut ne lui est pas affectée, la zone dans laquelle l'article est rangé est affectée par défaut.  
 
 ## <a name="to-change-the-default-bin-for-an-item"></a>Pour modifier la zone par défaut pour un article  
-Vous pouvez être amené à modifier l'affectation de la zone par défaut pour un article ou à affecter une zone par défaut à un nouvel article.    
+Vous pouvez être amené à modifier l'affectation de la zone par défaut pour un article ou à affecter une zone par défaut à un nouvel article.
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Contenus de la zone**, puis sélectionnez le lien associé.  
 2.  Dans le champ **Filtre magasin**, sélectionnez le code emplacement approprié.  
 3.  Recherchez l'écriture indiquant le contenu de la zone par défaut pour cet article et désactivez la case à cocher **Zone par déf.**.  
@@ -40,9 +41,9 @@ Vous pouvez être amené à modifier l'affectation de la zone par défaut pour u
 ## <a name="see-also"></a>Voir aussi  
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  
 [Stock](inventory-manage-inventory.md)  
-[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
-[Gestion d'assemblage](assembly-assemble-items.md)    
-[Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
+[Configuration de Warehouse Management](warehouse-setup-warehouse.md) 
+[Gestion d’assemblage](assembly-assemble-items.md)
+[Détails de conception : Warehouse Management](design-details-warehouse-management.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 

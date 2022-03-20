@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Vente d’articles à assembler pour commande'
+title: Vente d'articles à assembler pour commande
 description: Si l'article est configuré pour un assemblage pour commande, l'article ne devrait pas être en inventaire, il doit être assemblé spécifiquement pour un document de vente.
 author: SorenGP
 ms.topic: conceptual
@@ -7,14 +7,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: kit, kitting, substitute items
+ms.search.form: 900, 901, 902, 903, 904, 907, 910, 916, 920, 921, 922, 923, 940, 941, 942, 930, 931, 932, 914, 915, 905
 ms.date: 07/29/2021
 ms.author: edupont
-ms.openlocfilehash: e32af0659ec78ae178dd0b49b18582beb66ba100
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: ab94626b300a1f022b95770fe8e83fd8d80c9885
+ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8146914"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8381522"
 ---
 # <a name="sell-items-assembled-to-order"></a>Vente d'articles à assembler pour commande
 Si le champ **Politique d'assemblage** de la fiche article d'un élément d'assemblage est **Assembler pour commande**, l'article n'est pas supposé être en inventaire et doit être assemblé spécifiquement dans un document de vente. Lorsque vous entrez l'article dans une ligne document de vente, un ordre d'assemblage est automatiquement créé et lié au document de vente.  

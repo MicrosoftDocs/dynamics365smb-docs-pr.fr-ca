@@ -1,14 +1,14 @@
 ---
 author: edupont04
 ms.topic: include
-ms.date: 04/01/2021
+ms.date: 03/01/2022
 ms.author: edupont
-ms.openlocfilehash: 0bfe45574f3f209ac5ee310546cd2ef0998ab417
-ms.sourcegitcommit: cdb57f14960f58b1d36a1b373fbf35dfed5fad9e
+ms.openlocfilehash: 5a3e15669bfc590d663b7774fba84017ae842521
+ms.sourcegitcommit: 865b390b5571b08084bde93b539ec9898e201933
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8334549"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8372062"
 ---
 Le tableau suivant décrit certains des principaux rapports dans les rapports de production.
 
@@ -22,6 +22,7 @@ Le tableau suivant décrit certains des principaux rapports dans les rapports de
 | [Liste de comparaison des nomenclatures article](https://businesscentral.dynamics.com?report=99000758)|Ce rapport vous donne la possibilité de comparer des produits finis similaires concernant les coûts. Vous verrez une liste de toutes les composantes et leurs coûts, ainsi que les quantités nécessaires. La date de calcul est normalement fixée à la date de travail. |99000758|
 | [Statistiques de bon de production](https://businesscentral.dynamics.com?report=99000791)|Spécifie les différents coûts qui se sont cumulés pour le bon de production sélectionné.<br>Le contenu du rapport est presque identique à la page **Statistiques de bons de production**.<br>Pour les bons de production utilisant la méthode de fabrication *Fabrication à la commande*, la fenêtre n’affiche que le coût matière et capacité des articles au niveau de nomenclature le plus élevé.|99000791|
 | [Liste tâches capacité](https://businesscentral.dynamics.com?report=99000780)|Affiche les bons de production en attente de traitement dans les ateliers ou les unités de production. Les documents imprimés indiquent la capacité de l'atelier ou de l'unité de production). Le rapport comprend les données telles que l’heure début et fin, la date de chaque bon de production et la quantité d’entrée.|99000780|
-| [Chargement atelier](https://businesscentral.dynamics.com?report=99000783)|Les deux rapports affichent la liste du chargement d’un atelier ou d’une unité de production. Le chargement d’un atelier/d'une unité de production représente la somme du nombre d’heures nécessaires pour exécuter toutes les commandes réelles et planifiées dans un atelier, sur une période précise.|99000783|
-| [Chargement unité de production](https://businesscentral.dynamics.com?report=99000784)|Les deux rapports affichent la liste du chargement d’un atelier ou d’une unité de production. Le chargement d’un atelier/d'une unité de production représente la somme du nombre d’heures nécessaires pour exécuter toutes les commandes réelles et planifiées dans un atelier, sur une période précise.|99000784|
+| [Chargement atelier](https://businesscentral.dynamics.com?report=99000783)|Affiche une liste de la charge d'un atelier. La charge d'un atelier représente la somme du nombre d'heures nécessaires pour exécuter toutes les commandes réelles et planifiées dans un atelier, pendant une période spécifiée.|99000783|
+| [Chargement unité de production](https://businesscentral.dynamics.com?report=99000784)|Affiche la liste de la charge d'une unité de production. La charge d'une unité de production représente la somme du nombre d'heures nécessaires pour exécuter toutes les commandes réelles et planifiées dans un atelier pendant une période spécifiée.|99000784|
 | [Liste des articles manquants bon de production](https://businesscentral.dynamics.com?report=99000788)|Ce rapport peut être utilisé pour voir toutes les composantes qui ne sont pas disponibles en raison d’un stock manquant. Ainsi, cet aperçu peut être utilisé pour voir si le calendrier d’un bon de production planifié ou libéré et si le temps planifié peuvent être respectés.|99000788|
+|[Bon de production : calcul](https://businesscentral.dynamics.com?report=99000767)|Fournit une liste des bons de production et de leurs coûts. Il indique les coûts opératoires prévus, les coûts composantes prévus et les coûts totaux.|99000767|

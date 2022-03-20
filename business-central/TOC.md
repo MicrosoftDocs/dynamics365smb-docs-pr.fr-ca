@@ -88,14 +88,16 @@
 ##### [Détails de conception : Structure du moteur de validation](design-details-posting-engine-structure.md)  
 
 ## Évaluations
+### [S’inscrire à un essai gratuit de Dynamics 365 Business Central](trial-signup.md)
+### [FAQ sur l’essai de Dynamics 365 Business Central](trial-faq.md)
 ### [Versions d'évaluation et abonnements](across-preview.md)
-### [Préparation aux activités commerciales](ui-get-ready-business.md)
+### [Se préparer aux activités commerciales](ui-get-ready-business.md)
 ### [Dépannage de l'inscription en self-service](ui-troubleshoot-self-signup.md)
 ### [Extension de votre version d'évaluation](admin-extend-trial.md)
 ### [Annuler un abonnement ou supprimer Business Central](admin-cancel.md)
 ## Achats
-### [Mise en route avec un abonnement](across-preview.md#getting-started-with-a-subscription)
-### [Préparation aux activités commerciales](ui-get-ready-business.md)
+### [Mise en route d’un abonnement](across-preview.md#get-started-with-a-subscription)
+### [Se préparer aux activités commerciales](ui-get-ready-business.md)
 
 ## Démarrages rapides
 ### [Démarrage rapide de Business Central](quick-start-business-central.md)
@@ -557,7 +559,7 @@
 #### [Supprimer et affecter à nouveau des écritures article](finance-how-to-remove-and-reapply-item-entries.md)
 #### [Fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal article](finance-how-to-close-open-item-ledger-entries-resulting-from-fixed-application-in-the-item-journal.md)
 #### Génération de rapports sur les coûts et rapprochement avec le grand livre
-##### [Créer des rapports sur les coûts](finance-report-costs-and-reconcile-with-the-general-ledger.md)
+##### [Créer des rapports sur les coûts](/dynamics365/business-central/finance-how-to-post-inventory-costs-to-the-general-ledger)
 ##### [Rapprocher les coûts de l'inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md)
 ##### [Surveiller la progression et les performances](projects-how-monitor-progress-performance.md)
 #### [Ajuster et rapprocher le coût de l’inventaire avec le grand livre avec la file d’attente des travaux](finance-adjust-reconcile-inventory-cost-job-queue.md)

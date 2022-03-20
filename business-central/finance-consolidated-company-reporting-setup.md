@@ -1,7 +1,7 @@
 ---
 title: Configurer la consolidation de la compagnie
 description: Découvrez comment vous pouvez configurer la manière dont les données de différentes compagnies dans Business Central sont transmises à une compagnie de consolidation.
-author: bholtorf
+author: brentholtorf
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,12 +10,12 @@ ms.search.keywords: consolidation, subsidiaries, consolidate
 ms.search.form: 1826, 1827
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 2f28ea1822677e1690f5cf3b5fb68afca221b9f8
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 7135eb7b7b9ccb845bac1fe3ec5503201dc7b035
+ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8149085"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8383225"
 ---
 # <a name="set-up-company-consolidation"></a>Configurer la consolidation de la compagnie
 

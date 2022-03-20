@@ -1,7 +1,7 @@
 ---
 title: Envoyer les déclarations de TVA aux autorités fiscales
 description: Apprendre à préparer les rapports qui répertorient la TVA des ventes au cours d'une période, ou à partir des ventes et achats, et envoyer le rapport à l'administration fiscale.
-author: bholtorf
+author: brentholtorf
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -10,21 +10,25 @@ ms.search.keywords: VAT, tax, report, EC sales list, statement
 ms.search.form: 321, 322, 323, 474, 475, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 9401
 ms.date: 01/31/2022
 ms.author: bholtorf
-ms.openlocfilehash: 11d9b165c598cbb17f870044763e8b0bdca1723b
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: b927faed205e64088ce399a9a973d7fcea0d1eda
+ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8141188"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8383815"
 ---
 # <a name="report-vat-to-tax-authorities"></a>Déclarer la TVA aux autorités fiscales
 
-Cette rubrique décrit les rapports dans [!INCLUDE[prod_short](includes/prod_short.md)] que vous pouvez utiliser pour envoyer des informations sur les montants de la taxe sur la valeur ajoutée (TVA) relatifs aux ventes et achats à l'administration fiscale de votre région. 
+Cette rubrique décrit les rapports dans [!INCLUDE[prod_short](includes/prod_short.md)] que vous pouvez utiliser pour envoyer des informations sur les montants de la taxe sur la valeur ajoutée (TVA) relatifs aux ventes et achats à l'administration fiscale de votre région. Selon le pays, les rapports peuvent inclure des informations spécifiques ou vous devrez parfois soumettre des rapports supplémentaires. Vérifiez les articles pour votre pays dans la section [Fonctionnalité locale](about-localization.md).  
 
-Vous pouvez utiliser les rapports suivants :
+Vous pouvez utiliser les rapports intégrés suivants :
 
-* La déclaration de liste des ventes de l'Union européenne (EU) **Liste des ventes UE** répertorie les montants de la taxe sur la valeur ajoutée (TVA) que vous avez collectés pour les ventes aux clients enregistrés dans les pays de l'Union européenne (UE).  
-* Le rapport **Retour TVA** inclut la TVA pour les ventes et les achats aux clients et auprès des fournisseurs dans tous les pays utilisant la TVA.  
+* Le rapport **Liste des ventes UE**  
+
+    Le rapport Liste des ventes de l’Union européenne (UE) répertorie les montants de la taxe sur la valeur ajoutée (TVA) que vous avez collectés pour les ventes aux clients enregistrés dans les pays de l’Union européenne (UE).  
+* Le rapport **Retour TVA**  
+
+    Le rapport Retour TVA inclut la TVA pour les ventes et les achats aux clients et auprès des fournisseurs dans tous les pays utilisant la TVA.  
 
 Dans les deux cas, la TVA est calculée sur la base de la configuration du report TVA et des groupes de report TVA que vous avez définis.
 
@@ -33,7 +37,7 @@ Si vous souhaitez afficher un historique complet des écritures TVA, chaque repo
 > [!NOTE]
 > Chaque environnement [!INCLUDE[prod_short](includes/prod_short.md)] est destiné à gérer les rapports réglementaires dans un seul pays. Par exemple, la version néerlandaise de [!INCLUDE[prod_short](includes/prod_short.md)] gère la déclaration de TVA aux Pays-Bas mais pas dans d'autres pays. De même, la version américaine de [!INCLUDE[prod_short](includes/prod_short.md)] gère la déclaration 1099 aux États-Unis et ne prend pas en charge la déclaration de TVA dans d'autres pays, sauf si elle est apportée par une extension fournie par notre écosystème partenaire ou une modification de code spécifique au client.
 
-## <a name="about-the-ec-sales-list-report"></a>À propos du rapport Liste des ventes UE
+## <a name="about-the-ec-sales-list-report"></a><a name="ecsaleslist"></a>À propos du rapport Liste des ventes UE
 
 Dans l’Union européenne (UE) et au Royaume-Uni, toutes les compagnies qui vendent des biens et des services aux clients enregistrés à la TVA, y compris les clients dans d’autres pays de l’Union européenne (UE), doivent envoyer une version électronique du rapport Liste des ventes de la Communauté européenne (CE) à leurs administrations douanières et fiscales. Le rapport **Liste des ventes UE** ne fonctionne que pour les pays de l’UE.
 
@@ -47,7 +51,11 @@ Les biens et des services *B2B* indiquent si vous avez vendu un bien ou un servi
 
 Une fois que l'administration fiscale aura examiné votre rapport, elle devra envoyer un courriel au contact de votre compagnie. Dans [!INCLUDE[prod_short](includes/prod_short.md)], le contact est spécifié sur la page **Informations société**. Avant de soumettre le rapport, assurez-vous qu'un contact a été sélectionné.  
 
-## <a name="about-the-vat-return-report"></a>À propos du rapport Retour TVA
+### <a name="submit-an-ec-sales-list-report"></a>Soumettre un rapport Liste des ventes UE
+
+[!INCLUDE [finance-ecsaleslist](includes/finance-ecsaleslist.md)]
+
+## <a name="about-the-vat-return-report"></a><a name="vatreturn"></a>À propos du rapport Retour TVA
 
 Utilisez ce rapport pour envoyer les documents relatifs à la TVA sur les ventes et les achats, tels que les commandes d'achat et de vente, les factures et les notes de crédit. Les informations de ce rapport ont le même format que dans la déclaration de l'administration fiscale et douanière.  
 

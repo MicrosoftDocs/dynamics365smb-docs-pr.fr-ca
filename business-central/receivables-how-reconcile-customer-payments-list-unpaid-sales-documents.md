@@ -1,5 +1,5 @@
 ---
-title: Affecter des paiements à des documents vente échus | Microsoft Docs
+title: Affecter des paiements à des documents vente échus
 description: Vous affectez les montants payés par les clients aux documents vente associés et reportez le paiement pour mettre à jour les écritures client, grand livre et banque.
 author: SorenGP
 ms.topic: conceptual
@@ -7,14 +7,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: payment process, cash receipts, customer payment
+ms.search.form: 1290, 1294, 1287
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: dab5042a6a72426453f92c67e2763d370ce8dff1
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: d611a245797fd20382f79deb35d8d598a8fe3565
+ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8139505"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8382961"
 ---
 # <a name="reconcile-customer-payments-from-a-list-of-unpaid-sales-documents"></a>Rapprocher les paiements client à partir de la liste des documents vente échus
 Lorsque vos clients ont effectué des paiements sur votre compte bancaire électronique, vous devez affecter chaque montant payé au document vente associé, puis reporter le paiement pour mettre à jour les écritures client, grand livre et banque. Selon les besoins de votre entreprise, vous pouvez être payé et enregistrer ce paiement de diverses manières : manuellement, automatiquement, et via des services de paiement.  

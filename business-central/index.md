@@ -8,16 +8,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/29/2021
 ms.author: edupont
-ms.openlocfilehash: 95f54be520c439984343fbe9413570dc18097db9
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 398f9a221dbdbdf2889d847b2d26db7faec23ff0
+ms.sourcegitcommit: 6d48c1f601ed22b6b0358311baf63c073ab75e64
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8138502"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367212"
 ---
 # <a name="welcome-to-prod_long"></a>Bienvenue dans [!INCLUDE[prod_long](includes/prod_long.md)] !
 
 [!INCLUDE[prod_short](includes/prod_short.md)] est une solution de gestion d'entreprise pour les PME qui automatise et simplifie les processus entreprise et vous aide à gérer votre entreprise. Hautement adaptable et riche en fonctionnalités, [!INCLUDE[prod_short](includes/prod_short.md)] permet aux compagnies de gérer leurs activités, y compris la finance, la fabrication, la livraison, la gestion de projets, les services, etc. Les compagnies peuvent facilement ajouter des fonctionnalités adaptées à la région de l'activité et personnalisées pour une prise en charge des secteurs même très spécialisés.  
+
+[Découvrez comment obtenir un essai gratuit ici](trial-signup.md).  
 
 Si vous avez déjà [!INCLUDE[prod_short](includes/prod_short.md)], connectez-vous à [https://businesscentral.dynamics.com](https://businesscentral.dynamics.com). Autrement, [obtenez la vue d’ensemble](https://dynamics.microsoft.com/business-central/overview/), [faites la visite guidée](https://dynamics.microsoft.com/en-us/guidedtour/dynamics/business-central/1/1), puis [démarrez une évaluation gratuite](https://go.microsoft.com/fwlink/?linkid=847861). Consultez les [articles de démarrage rapide](quick-start-business-central.md) pour vous familiariser avec [!INCLUDE [prod_short](includes/prod_short.md)]. Pour plus d’informations sur l'intégration dans [!INCLUDE[prod_short](includes/prod_short.md)], voir [Préparation aux activités commerciales](ui-get-ready-business.md).  
 
