@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: local
 ms.date: 10/12/2021
 ms.author: edupont
-ms.openlocfilehash: 20c3f34a11f6386c8921b9cc680af8c3875638ac
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: cb7d24d4a59c617dd35d2fe26d4ac133be0d7589
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8149299"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8511884"
 ---
 # <a name="reporting-sales-tax-in-canada"></a>Déclaration de la taxe de vente au Canada
 
@@ -37,7 +37,7 @@ La page **Détails fiscaux** affiche différentes combinaisons de juridictions d
 [Configuration de Finance](../../finance-setup-finance.md)  
 [Taxe sur les ventes et taxe sur les biens et les services au Canada](sales-tax-goods-services.md)  
 [Configurer la taxe de vente - Regarder une vidéo](https://www.youtube.com/watch?v=qMs4BoSytN8&index=13&list=PLcakwueIHoT8K1m148oMqo7amR2a7Bz-8)  
-[Utilisation de [!INCLUDE[prod_short](../../includes/prod_short.md)]](../../ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](../../includes/prod_short.md)]](../../ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

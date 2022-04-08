@@ -3,22 +3,26 @@ author: edupont04
 ms.topic: include
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 75205f4c9fd94cd499b1f1c017a8bfc396465ae7
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 6db94363d0633ec815a09190269610dbc50cbdcd
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8146017"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8511878"
 ---
-Vous pouvez créer des dépôts pour tenir à jour un enregistrement de transaction contenant des renseignements pouvant être appliqués aux notes de crédit et factures en attente.  
+> [!NOTE]
+> De nouvelles capacités de création de dépôts bancaires sont disponibles dans la 1re vague de lancement de Business Central 2022 pour de nombreuses versions nationales. Si vous utilisiez Business Central aux États-Unis, au Canada ou au Mexique avant cette version, vous utilisez peut-être les fonctionnalités antérieures. Vous pouvez continuer, mais les nouvelles capacités remplaceront les anciennes dans une prochaine version. Pour commencer à utiliser les nouvelles fonctionnalités immédiatement, votre administrateur peut se rendre sur la page **Gestion des fonctionnalités** et activer **Mise à jour des fonctionnalités : Rapprochement bancaire et dépôts standardisés**. Pour plus d'informations, voir [Créer des dépôts bancaires](../../../bank-create-bank-deposits.md).
 
-La page **Dépôt** spécifie des informations sur les dépôts bancaires. Ces informations incluent le numéro de compte bancaire, le montant de dépôt total, les lignes dépôt, la date de report, la date de document, le code de département, le code de devise et les notes de dépôt. Vous pouvez utiliser cette page pour créer des dépôts, reporter des dépôts, imprimer des dépôts, afficher des commentaires sur les dépôts ou consulter un rapport qui indique le montant du dépôt à rapprocher.
+
+Vous pouvez créer des dépôts bancaires pour tenir à jour un enregistrement de transaction contenant des renseignements pouvant être affectés aux notes de crédit et factures en attente.  
+
+La page **Dépôts** spécifie les renseignements de dépôt bancaire comme le numéro de compte bancaire, le montant de dépôt total, les lignes dépôt, la date de report, la date de document, le code de département, le code de devise et les notes de dépôt bancaire. Vous pouvez utiliser cette page pour créer des dépôts bancaires, reporter des dépôts, imprimer des dépôts, afficher des commentaires sur les dépôts ou consulter un rapport qui indique le montant du dépôt à rapprocher.
 
 Le rapport **Dépôt** affiche les dépôts clients et fournisseurs avec le montant du dépôt initial, le montant du dépôt qui reste ouvert et le montant affecté. Le rapport indique également le montant total des dépôts reportés à rapprocher.
 
-Les lignes dépôt contiennent des informations sur les différents éléments faisant l'objet de dépôts, tels que les chèques des clients. Ces informations comprennent la date et le numéro du document, le type et le numéro du compte et le montant. Le total des montants sur les lignes doit s'additionner pour correspondre au montant total du dépôt inscrit dans l'en-tête du dépôt.
+Les lignes dépôt bancaire contiennent des renseignements sur les différents éléments faisant l'objet de dépôts, tels que les chèques des clients. Ces informations comprennent la date et le numéro du document, le type et le numéro du compte et le montant. Le total des montants sur les lignes doit s'additionner pour correspondre au montant total du dépôt.
 
-Après avoir renseigné les informations de dépôt et les lignes dépôt associées, vous devez les reporter afin de mettre à jour le grand livre bancaire, le grand livre général, le grand livre client et tout autre grand livre pertinent. Les dépôts reportés sont stockés pour référence ultérieure et peuvent être consultés sur la page **Dépôts reportés**.
+Après avoir renseigné les renseignements de dépôt et les lignes, vous devez les reporter afin de mettre à jour les grands livres correspondants, comme le grand livre bancaire, le grand livre général ou le grand livre client. Les dépôts reportés sont stockés pour référence ultérieure et peuvent être consultés sur la page **Dépôts reportés**.
 
 ## <a name="to-create-a-deposit"></a>Pour créer un dépôt  
 1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Dépôts**, puis sélectionnez le lien associé.  
@@ -44,10 +48,13 @@ Après avoir renseigné les informations de dépôt et les lignes dépôt associ
     |**N° du document**|Numéro de document de l'écriture ligne journal.|  
     |**Montant crédit**|Montant total du crédit sur la ligne journal.|  
 
-5.  Éventuellement, choisissez l'action **Dimensions**, puis ajoutez les dimensions correspondantes sur la page **Écritures de l'ensemble de dimensions**.  
+5. Éventuellement, choisissez l'action **Dimensions**, puis ajoutez les dimensions sur la page **Écritures de l'ensemble de dimensions**.  
 6. Sélectionnez l'action **Reporter**.  
 
+    > [!TIP]
+    > Pour reporter un dépôt bancaire en tant qu’écriture compte bancaire unique avec la somme totale des montants dans les lignes dépôts bancaires, activez l'option **Reporter en tant que montant forfaitaire** sur le dépôt bancaire. Pour reporter en tant que montants forfaitaires pour de nouveaux dépôts bancaires par défaut, sur la page **Configuration ventes & à recevoir**, activez l'option **Reporter dépôts bancaires en tant que montant forfaitaire**.
+
     > [!NOTE]  
-    >  Vous pouvez reporter un dépôt uniquement si le montant affiché dans le champ **Lignes de dépôt total** est égal au montant figurant dans le champ **Montant total de dépôt**.  
+    > Vous pouvez reporter un dépôt uniquement si les montants affichés dans les champs **Lignes de dépôt total** et **Montant total de dépôt** sont égaux.  
 
 Ensuite, vous pouvez utiliser les rapports **Test des dépôts** et **Dépôt** pour rapprocher vos dépôts reportés avec vos notes de crédit et factures en attente.  

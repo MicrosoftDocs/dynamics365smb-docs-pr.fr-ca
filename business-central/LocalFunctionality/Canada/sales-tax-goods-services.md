@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: sales tax, local
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 4f4e756d856edc6c980f5d88cdd8a470388c4b97
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: e9dda605d89857f22d097363a3653dd0e4118597
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8144193"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8517679"
 ---
 # <a name="reporting-goodsservices-tax-and-harmonized-sales-tax-in-canada"></a>Déclaration de la taxe sur les biens/services et de la taxe de vente harmonisée au Canada
 
@@ -30,8 +30,8 @@ Les informations sur les taxes dans les documents achat permettent de générer 
 [Finance](../../finance.md)  
 [Configuration de Finance](../../finance-setup-finance.md)  
 [Déclaration de la taxe de vente au Canada](ca-sales-tax.md)  
-[Configurer des méthodes de calcul et de report de la taxe sur la valeur ajoutée](../../finance-setup-vat.md)  
-[Utilisation de [!INCLUDE[prod_short](../../includes/prod_short.md)]](../../ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](../../includes/prod_short.md)]](../../ui-work-product.md)
+[Configurer des méthodes de calcul et de report pour la taxe sur la valeur ajoutée](../../finance-setup-vat.md)  
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
