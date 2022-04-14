@@ -10,12 +10,12 @@ ms.search.keywords: warehouse, distribution center
 ms.search.forms: 5703, 15
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 0a2d5234a78daf6243591cc478ab7b19957a196a
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 9de6580971f25d092de474c0720b86fab420bbf8
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8130358"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8515521"
 ---
 # <a name="set-up-locations"></a>Configurer des emplacements
 
@@ -75,6 +75,9 @@ Si vous souhaitez structurer vos zones en zones, vous pouvez le faire dans la pa
 
 Toutefois, vous pouvez choisir de configurer une seule zone et d’organiser votre entrepôt uniquement en fonction des zones. Pour plus d'informations, voir [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).  
 
+## <a name="default-dimensions-for-locations"></a>Dimensions par défaut pour les emplacements
+Pour définir les dimensions par défaut pour un emplacement, allez sur la page **Fiche emplacement** et choisissez **Emplacement**, puis **Dimensions**. Les dimensions par défaut de l'emplacement sont copiés dans les journaux et les documents lorsque vous spécifiez l'emplacement sur une ligne, mais vous pouvez supprimer ou modifier la dimension sur la ligne si nécessaire. Vous pouvez exiger que les personnes spécifient des dimensions pour des emplacements spécifiques avant de pouvoir reporter une écriture. Vous pouvez également inclure des valeurs de dimension d'emplacement dans **Priorités de dimensions par défaut** et **Combinaisons de dimensions** pour les combinaisons de règles de priorité et de dimension.
+
 ## <a name="see-also"></a>Voir aussi
 
 [Gestion du stock](inventory-manage-inventory.md)  
@@ -82,7 +85,7 @@ Toutefois, vous pouvez choisir de configurer une seule zone et d’organiser vot
 [Créer zones](warehouse-how-to-create-individual-bins.md)  
 [Configurer des types de zone](warehouse-how-to-set-up-bin-types.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Modifier les fonctionnalités affichées](ui-experiences.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)
 

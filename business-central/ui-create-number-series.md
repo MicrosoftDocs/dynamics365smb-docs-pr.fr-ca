@@ -8,21 +8,22 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: numbers, numbering
 ms.search.form: 456, 457, 458, 459, 460, 461, 21, 22, 26, 27, 31
-ms.date: 04/01/2021
+ms.date: 03/24/2022
 ms.author: edupont
-ms.openlocfilehash: e95b60af569511a8a95154a53f80bcc235f883f5
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: ad82c9aa86210c5f89e24fcced0af70751788ef8
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8140485"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8510612"
 ---
 # <a name="create-number-series"></a>Créer des séries de numéros
 
 Pour chaque compagnie que vous configurez, vous devez affecter des codes d'identification uniques aux éléments tels que les comptes du grand livre, les comptes client et fournisseur, les factures et d'autres documents. La numérotation est importante, pas uniquement pour l'identification. Un système de numérotation bien conçu facilite également la gestion et l'analyse de la compagnie et permet de réduire les erreurs de saisie des données.
 
 > [!Important]
-> Par défaut, les écarts dans les séries de numéros ne sont pas autorisés car l'historique exact des transactions financières doit être disponible pour audit, conformément à la loi, et doit donc suivre une séquence ininterrompue sans numéros supprimés.<br /><br />
+> Par défaut, les écarts dans les séries de numéros ne sont pas autorisés car l'historique exact des transactions financières doit être disponible pour audit, conformément à la loi, et doit donc suivre une séquence ininterrompue sans numéros supprimés.
+> 
 > Si vous souhaitez autoriser des écarts dans certaines séries de numéros, commencez par consulter l'auditeur ou le responsable de la comptabilité pour vous assurer de respecter les exigences légales en vigueur dans votre pays/région. Pour plus d’informations, voir la section [Écarts dans les séries de numéros](#gaps-in-number-series).
 
 > [!NOTE]  
@@ -41,11 +42,14 @@ Si vous voulez utiliser plusieurs codes série de numéros pour un type de donn�
 Tous les enregistrements que vous créez dans [!INCLUDE[prod_short](includes/prod_short.md)] ne sont pas des transactions financières qui doivent utiliser une numérotation séquentielle. Les fiches client, les devis, et les activités d'entrepôt sont des exemples d'enregistrements auxquels un numéro d'une série de numéros est attribué, mais qui ne sont pas soumis à l'audit financier et/ou peuvent être supprimés. Pour ces séries de numéros, vous pouvez cocher la case **Autoriser les écarts dans les numéros** sur la page **Lignes série de n°**. Ce paramètre peut être également modifié après la création de la série de numéros. Pour plus d’informations, voir [Pour créer des séries de numéros](ui-create-number-series.md#to-create-a-new-number-series).
 
 ## <a name="behavior-of-the-no-field-on-documents-and-cards"></a>Comportement du champ N° sur des documents et des fiches
-Sur les documents de vente, d'achat et de transfert ainsi que sur toutes les fiches, le champ **N°** peut être renseigné automatiquement depuis une série de numéros ou manuellement et peut être configuré pour être invisible.
+
+Sur les documents de vente, d'achat et de transfert ainsi que sur toutes les fiches, le champ **N°** peut être renseigné automatiquement depuis une série de numéros prédéfinie ou vous pouvez l’ajouter manuellement. Cependant, dans certaines circonstances, le champ **N°** est invisible pour vous empêcher de le modifier.  
 
 Le champ **N°** peut être renseigné de trois manières :
 
-1. S'il existe une seule série de numéros pour le type de document ou de fiche pour laquelle la case **N° par défaut** est cochée et la case **N° manuels** n'est pas cochée, alors le champ est renseigné automatiquement avec le numéro suivant de la série, et le champ **N°** n'est pas visible.
+1. S'il n'existe qu'une seule série de numéros pour le type de document ou de fiche, et que le champ **N° par défaut** est sélectionné, et que le champ **N° manuels** n’est pas sélectionné pour cette série de numéros, alors le champ est renseigné automatiquement avec le numéro suivant dans la série de numéros. Le champ **N°** ne sera pas visible sur la fiche ou le document.  
+
+    Même si vous définissez des modèles avec différentes séries de numéros pour les clients, si la série de numéros définie sur la page **Configuration ventes** est configurée de cette manière, le champ **N°** sera invisible sur la fiche client, quel que soit le modèle que vous utilisez. Il en va de même pour les autres types de fiches et de documents.  
 
     > [!NOTE]  
     > Si la série de numéros ne fonctionne pas, par exemple parce qu'elle manque de numéros, le champ **N°** est visible et vous pouvez saisir manuellement un numéro ou résoudre les problèmes sur la page **Souches de n°**.
@@ -71,7 +75,7 @@ Lorsque vous ouvrez un nouveau document ou une nouvelle fiche pour lequel il exi
 > [!TIP]
 > Pour permettre aux utilisateurs de spécifier manuellement des numéros lorsqu’ils enregistrent un nouveau client ou fournisseur, par exemple, choisissez le champ **Numéros manuels** sur la série de numéros proprement dite. Pour interdire le numéro manuel, effacez le champ.
 
-Vous pouvez attribuer des séries de numéros aux modèles que vous configurez pour les différents types de clients et de fournisseurs que vos commerciaux et acheteurs ajoutent le plus souvent à votre fichier [!INCLUDE [prod_short](includes/prod_short.md)]. Dans ce cas, configurez la série de numéros appropriée, liez-la via des relations, puis ajoutez la première série de numéros dans la relation appropriée à la page de configuration appropriée.  
+Vous pouvez attribuer des séries de numéros aux modèles que vous configurez pour les différents types de clients et de fournisseurs que vos commerciaux et acheteurs ajoutent le plus souvent à votre fichier [!INCLUDE [prod_short](includes/prod_short.md)]. Dans ce cas, configurez la série de numéros appropriée, liez-la via des relations, puis ajoutez la première série de numéros dans la relation appropriée à la page de configuration appropriée. Ensuite, lorsqu’un utilisateur crée un client, il choisit le modèle approprié et le nouveau client reçoit un numéro attribué à partir de la série de numéros définie pour ce modèle.  
 
 ## <a name="to-create-relationships-between-number-series"></a>Pour créer des liens entre des séries de numéros
 
@@ -100,7 +104,7 @@ Le numéro sélectionné est désormais utilisé pour renseigner le champ **N°*
 
 ## <a name="see-also"></a>Voir aussi
 [Configuration de [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

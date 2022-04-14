@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 7351
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 06b9b770a94a12a5e6f473259c943a52de713e19
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: 02a96b48049207d2272c62b008148c000cf676e0
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384056"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8520588"
 ---
 # <a name="move-items-in-advanced-warehouse-configurations"></a>Déplacer des articles dans les configurations de stockage avancées
 Dans des configurations d'entrepôt avancées, c'est-à-dire des emplacements avec prélèvement et rangement suggérés, des mouvements entrepôt entre zones sont exécutés par un cadre qui prépare des mouvements entrepôt dans la feuille mouvement, puis crée les mouvements entrepôt que les employés d'entrepôt doivent exécuter.  
@@ -52,7 +52,7 @@ Si, en cas d'utilisation d'un prélèvement et d'un rangement suggérés dans l'
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -10,12 +10,12 @@ ms.search.keywords: analysis, reporting, financial report, business intelligence
 ms.search.form: 9901, 9018, 9020, 9022, 9027
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 3161c51160790b2fcc4e702866025e501167b644
-ms.sourcegitcommit: cdb57f14960f58b1d36a1b373fbf35dfed5fad9e
+ms.openlocfilehash: 912309636020923e522ea3060abf814c179dcbb1
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8335614"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8521394"
 ---
 # <a name="exporting-your-business-data-to-excel"></a>Exportation de vos données métier vers Excel
 Si vous souhaitez travailler avec vos données à partir de [!INCLUDE[prod_short](includes/prod_short.md)] dans Excel, vous pouvez ouvrir toutes les listes et les utiliser dans Excel. De même, si vous souhaitez annuler votre abonnement à [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez exporter vos données vers Excel afin de pouvoir les transférer par la suite.
@@ -81,7 +81,7 @@ Pour plus d'informations, voir [Pour afficher ou modifier les autorisations d'un
 [Analyse des états financiers dans Microsoft Excel](finance-analyze-excel.md)  
 [Finance](finance.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

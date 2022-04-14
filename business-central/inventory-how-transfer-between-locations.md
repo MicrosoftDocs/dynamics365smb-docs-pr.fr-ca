@@ -10,12 +10,12 @@ ms.search.keywords: move, warehouse
 ms.search.forms: 5746, 5745, 5759, 5753, 5743, 5758, 5752, 5744, 5749, 5740, 5741, 5742, 5757, 5748, 5747, 9285, 5756, 5755
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: b51bd44099c85ae16498e2f40abc86db7134cb1b
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 347550073fc4efad89c41f180c3a48747b91d7a7
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8148508"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8511633"
 ---
 # <a name="transfer-inventory-between-locations"></a>Transfert d'inventaire entre des emplacements
 Vous pouvez transférer des articles en inventaire entre des emplacements en créant des ordres de transfert. Vous pouvez également utiliser le journal reclassement article.
@@ -58,12 +58,12 @@ Pour transférer des articles, des acheminements transfert et des emplacements d
     > [!NOTE]  
     >   Pour transférer les articles qui n'ont aucun code magasin, laissez le champ **Code magasin** vide.
 4. Dans le champ **Nouveau Code magasin**, indiquez le magasin vers lequel vous souhaitez transférer les articles.
-5. Sélectionnez l'action **Valider**.
+5. Sélectionnez l'action **Reporter**.
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion du stock](inventory-manage-inventory.md)  
 [Configurer des emplacements](inventory-how-setup-locations.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Modifier les fonctionnalités affichées](ui-experiences.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)
 

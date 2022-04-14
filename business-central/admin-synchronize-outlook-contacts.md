@@ -10,12 +10,12 @@ ms.search.keywords: contacts, Microsoft 365
 ms.search.form: 6700, 5320, 5300, 5301, 5302, 5303, 5304, 5305, 5306, 5307, 5308, 5309, 5310, 5311
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 12ce99a79f465543ecc314b5042e70b6802f86ec
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 6c4ed5dfa89fdafe6e685d6566a57cb604adacdb
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8142429"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8513132"
 ---
 # <a name="synchronize-contacts-in-business-central-with-contacts-in-microsoft-outlook"></a>Synchroniser les contacts de Business Central avec les contacts de Microsoft Outlook
 
@@ -54,7 +54,7 @@ Dans Outlook, les contacts de [!INCLUDE[prod_short](includes/prod_short.md)] son
 [Finance](finance.md)  
 [Vente](sales-manage-sales.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation des contacts (personnes) dans Outlook sur le Web](https://support.office.com/article/Using-contacts-People-in-Outlook-on-the-web-1e3438c7-26b2-420c-87de-3cea9d31b5cb?appver=OWB150)  
+[Utiliser des contacts (personnes) dans Outlook sur le Web](https://support.office.com/article/Using-contacts-People-in-Outlook-on-the-web-1e3438c7-26b2-420c-87de-3cea9d31b5cb?appver=OWB150)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

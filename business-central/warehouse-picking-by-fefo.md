@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 1855391f5bf2c0807ac4ffcd8d42e0ea8122fd87
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: b4018d5ad18317cf5b62a99346c360d744b26939
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8141867"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8520032"
 ---
 # <a name="enable-picking-items-by-fefo"></a>Activer le prélèvement d'articles par FEFO
 First-Expired-First-Out (FEFO) est une méthode de tri qui garantit que les articles les plus anciens, ceux qui ont les dates d'expiration les plus anciennes, sont prélevés en premier.  
@@ -44,8 +44,8 @@ Si le champ **Report expiration strict** est sélectionné sur la **Fiche Code t
 [Prélever des articles pour une livraison entrepôt](warehouse-how-to-pick-items-for-warehouse-shipment.md)   
 [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md)   
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Stock](inventory-manage-inventory.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Inventaire](inventory-manage-inventory.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

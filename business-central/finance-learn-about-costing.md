@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 8961e3a29664932d67c8670e1b2d42ecbee228c0
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 521cf2700c16bab71d13ea1282fbf4b09164b004
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8145019"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8513975"
 ---
 # <a name="about-inventory-costing"></a>À propos de l'évaluation des coûts de stock
 La gestion des coûts d'inventaire fait référence à l'enregistrement et au report des coûts d'exploitation de l'entreprise. Inclut le report des coûts de fabrication et des coûts inventaire qui constituent la valeur des articles.  
@@ -35,11 +35,11 @@ La gestion des coûts d'inventaire fait référence à l'enregistrement et au re
 |Comprendre la manière dont la valeur de l'inventaire est reflétée dans le grand livre.|[Rapprocher les coûts de l'inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md)|  
 |Apprendre la manière dont les frais annexes, tels que les frais de transport ou d'assurance, peuvent affecter des composantes supplémentaires au coût unitaire d'un article.|[Utiliser Frais annexes pour comptabiliser les coûts commerciaux supplémentaires](payables-how-assign-item-charges.md)|  
 |Obtenir des informations sur la manière dont les périodes d'inventaire permettent à une compagnie de contrôler la valeur de l'inventaire dans le temps en définissant des périodes plus courtes qui peuvent être fermées au report lorsque la fin de l'exercice financier approche.|[Utiliser les périodes d'inventaire](finance-how-to-work-with-inventory-periods.md)|  
-|Comprendre tous les mécanismes du moteur d'évaluation, notamment ce qui se produit lorsque vous reportez des transactions d'assemblage et de production.|[Détails de conception : stock évaluation stock](design-details-inventory-costing.md)|  
+|Comprendre tous les mécanismes du moteur d'évaluation, notamment ce qui se produit lorsque vous reportez des transactions d'assemblage et de production.|[Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)|  
 
 ## <a name="see-also"></a>Voir aussi
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)    
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

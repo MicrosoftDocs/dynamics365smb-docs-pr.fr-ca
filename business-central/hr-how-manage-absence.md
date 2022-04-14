@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 5200, 5201, 5204, 5206, 5208, 5209, 5211, 5212
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: eeb886becb78fdccd4a075db88fc393c30adb221
-ms.sourcegitcommit: 6d48c1f601ed22b6b0358311baf63c073ab75e64
+ms.openlocfilehash: deb54eae1b6b6494043ae1ed0d3fc5cbdf2bab22
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8366272"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8516249"
 ---
 # <a name="manage-employee-absence"></a>Gérer les absences des employés
 Pour gérer l'absence d'un employé, vous devez l'enregistrer sur la page **Saisie des absences**. Elle peut alors être affichée de différentes façons à des fins d'analyse ou de génération de rapport.
@@ -69,7 +69,7 @@ Vous pouvez enregistrer les absences des employés quotidiennement ou à un autr
 ## <a name="see-also"></a>Voir aussi
 [Gérer les ressources humaines](hr-manage-human-resources.md)  
 [Finance](finance.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Modifier les fonctionnalités affichées](ui-experiences.md)
 
 

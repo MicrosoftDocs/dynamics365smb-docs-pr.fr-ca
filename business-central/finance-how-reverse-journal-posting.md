@@ -10,12 +10,12 @@ ms.search.keywords: reimbursement
 ms.search.form: 20, 25, 29, 38, 202, 5912,
 ms.date: 07/22/2021
 ms.author: edupont
-ms.openlocfilehash: 2a9689db234280c2bcca5e32ade2a82488c15de5
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 8757ba52142990449d5d60273a73bdc146ffb240
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8147736"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8517508"
 ---
 # <a name="reverse-journal-postings-and-undo-receiptsshipments"></a>Inverser des reports journal et annuler des réceptions/livraisons
 
@@ -82,9 +82,9 @@ La procédure d'annulation d'une livraison retour reportée d'articles ou de res
 
 [Annuler le report d'assemblage](assembly-how-to-undo-assembly-posting.md)  
 [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)  
-[Utilisation de journaux généraux](ui-work-general-journals.md)  
+[Utiliser des journaux généraux](ui-work-general-journals.md)  
 [Finance](finance.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

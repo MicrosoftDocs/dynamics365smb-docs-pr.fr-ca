@@ -10,12 +10,12 @@ ms.search.keywords: ''
 ms.search.form: 7315, 7351
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 8954eaacd2a78d8c1ef0c8a65f63c571e045d950
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: 7495ddfae4a6a59caba08c0d40d97f5b9c5f0c85
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8381020"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8518663"
 ---
 # <a name="calculate-bin-replenishment"></a>Calculer le réapprovisionnement de la zone
 Lorsque l'emplacement est configuré pour utiliser le prélèvement et le rangement suggérés, les priorités du modèle de rangement de l'emplacement sont prises en compte lors du rangement des réceptions. Les priorités incluent les quantités minimale et maximale du contenu de la zone qui ont été définies pour une zone particulière, ainsi que les classements de zone. Par conséquent, si des articles arrivent régulièrement, les zones prélèvement les plus utilisées sont remplies dès qu'elles sont vides.  
@@ -52,7 +52,7 @@ Lorsque vous calculez un nouvel approvisionnement zone, les propositions supprim
 [Configuration de Warehouse Management](warehouse-setup-warehouse.md) 
 [Gestion d’assemblage](assembly-assemble-items.md)
 [Détails de conception : Warehouse Management](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -10,12 +10,12 @@ ms.search.keywords: repair, service
 ms.search.form: 5600, 5642
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: e55b85397ca50995870ab86ed40421bbb0b4cb6d
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 05a9348d08a3255b3e2b438a540fc7a84de26b0d
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8147866"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8518191"
 ---
 # <a name="set-up-fixed-asset-maintenance"></a>Configurer l'entretien d'une immobilisation
 Pour gérer l'entretien des immobilisations, vous devez configurer tout d'abord certaines informations générales d'entretien, un compte de report pour les coûts d'entretien et les codes d'entretien pour les types de travaux, tels que le service de routine ou la réparation.
@@ -47,7 +47,7 @@ Pour reporter les coûts d'entretien, vous devez tout d'abord saisir un numéro 
 [Immobilisations](fa-manage.md)  
 [Finance](finance.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 5df764b1ca184d1f70dd67c08abf0505833dc2aa
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: d0e7db8e4aeade9865114769c659075971dd3c8d
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8139141"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8518637"
 ---
 # <a name="pick-for-production-or-assembly-in-advanced-warehouse-configurations"></a>Prélever pour la fabrication ou l'assemblage dans les configurations de stockage avancées.
 Dans les configurations d'entrepôt avancées, dans lesquelles l'emplacement est configuré pour utiliser le prélèvement ainsi que la livraison, vous pouvez prélever des composantes pour les activités de production et d'assemblage à l'aide de la page **Prélèvement entrepôt**.  
@@ -59,7 +59,7 @@ Ce graphique indique comment le champ **Code de zone** sur les lignes composante
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

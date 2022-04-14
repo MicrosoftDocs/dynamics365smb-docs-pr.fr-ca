@@ -10,15 +10,15 @@ ms.search.keywords: bi, power BI, analysis, KPI
 ms.search.form: 545, 555, 556, 557, 558, 9372, 9370, 9371
 ms.date: 06/14/2021
 ms.author: edupont
-ms.openlocfilehash: 799d4adbfb0cf67513b0d65c735c377a8d58d914
-ms.sourcegitcommit: 6d48c1f601ed22b6b0358311baf63c073ab75e64
+ms.openlocfilehash: 5578a67baf1f6036c1a9f8804a9618f446e34006
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8366611"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8512460"
 ---
 #  <a name="analyze-data-by-dimensions"></a>Analyse des données par axe analytique
-En analyse financière, une dimension correspond à des données que vous pouvez ajouter à une écriture comme une sorte de marqueur. Ces données permettent de regrouper des écritures dotées de caractéristiques similaires, telles que les clients, les régions, les produits et les représentants, et de récupérer facilement ces groupes à des fins d'analyse. Les axes peuvent être utilisés sur des écritures de feuilles, de documents et de budgets. Le terme dimension décrit la manière dont l'analyse est effectuée. Une analyse à deux axes, par exemple, est une analyse des ventes par zone. Cependant, si vous utilisez plus de deux dimensions lors de la création d'une écriture, vous pouvez mener une analyse plus complexe, telle que des ventes par promotion de vente, par groupe client et par zone. Pour plus d'informations, reportez-vous à [Utilisation des axes](finance-dimensions.md).
+En analyse financière, une dimension correspond à des données que vous pouvez ajouter à une écriture comme une sorte de marqueur. Ces données permettent de regrouper des écritures dotées de caractéristiques similaires, telles que les clients, les régions, les produits et les représentants, et de récupérer facilement ces groupes à des fins d'analyse. Les axes peuvent être utilisés sur des écritures de feuilles, de documents et de budgets. Le terme dimension décrit la manière dont l'analyse est effectuée. Une analyse à deux axes, par exemple, est une analyse des ventes par zone. Cependant, si vous utilisez plus de deux dimensions lors de la création d'une écriture, vous pouvez mener une analyse plus complexe, telle que des ventes par promotion de vente, par groupe client et par zone. Pour plus d’informations, voir [Utiliser des dimensions](finance-dimensions.md).
 
 L'analyse de données par dimensions vous permet d'obtenir un meilleur aperçu de votre utilisation commerciale, ce qui vous permet d'évaluer les informations, telles que l'évaluation du bon fonctionnement de votre compagnie, les domaines dans lesquels elle prospère ou non, et ceux nécessitant l'affectation de ressources.
 
@@ -82,8 +82,8 @@ La procédure suivante permet de mettre à jour une vue d'analyse à partir de l
 [Finance](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 [Le grand livre et le plan comptable](finance-general-ledger.md)  
-[Utilisation des dimensions](finance-dimensions.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser des dimensions](finance-dimensions.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

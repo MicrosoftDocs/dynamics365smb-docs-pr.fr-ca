@@ -10,12 +10,12 @@ ms.reviewer: edupont
 ms.search.form: 461
 ms.date: 09/23/2021
 ms.author: andreipa
-ms.openlocfilehash: 40642b524e44234cda8ef0bd468ff8eb47decb69
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 4dda49e125445ab754ce63dc6b2fc530ca59fcc4
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8142273"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8516988"
 ---
 # <a name="schedule-jobs-for-adjusting-and-reconciling-inventory-cost-with-the-general-ledger"></a>Programmer des tâches pour ajuster et rapprocher le coût de l'inventaire avec le grand livre
 
@@ -60,4 +60,4 @@ Pour programmer une tâche de rapprochement de l’inventaire avec le grand livr
 [Rapprocher les coûts de l'inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md)  
 [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md)  
 [Recherche de pages et d'informations avec Tell Me](ui-search.md)  
-[Utilisation de [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

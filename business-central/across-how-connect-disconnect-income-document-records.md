@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: electronic document, e-invoice, incoming document, OCR, ecommerce, document exchange, import invoice
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 609a57cd1d87a8a3518d6eaf7bc3fe8fc142953a
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 5bad6c920cc285dd7fb405b8075263229df778d1
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8134366"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8519928"
 ---
 # <a name="create-incoming-document-records-directly-from-documents-and-entries"></a>Créer des enregistrements document entrant directement à partir de documents et d'écritures
 Vous pouvez enregistrer des documents commerciaux externes dans [!INCLUDE[prod_short](includes/prod_short.md)] en liant des fichiers document aux enregistrements document entrant associées. Si le document, une facture achat par exemple, n'était pas dès le départ un enregistrement document entrant, vous pouvez toujours créer et le lier à un enregistrement document entrant ultérieurement. Vous pouvez également joindre des fichiers document entrant à des documents achat et vente reportés et à des écritures fournisseur, client et GL à l'aide du récapitulatif **Fichiers document entrant** dans, par exemple, les pages **Factures achat reportées** et **Écritures fournisseur**.
@@ -49,7 +49,7 @@ La connexion au document reporté est supprimée. Vous pouvez maintenant connect
 [Traiter les documents entrants](across-process-income-documents.md)  
 [Documents entrants](across-income-documents.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

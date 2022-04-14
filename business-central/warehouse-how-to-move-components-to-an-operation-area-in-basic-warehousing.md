@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 7351, 7382, 9330
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 2a9f24087303cd4570adad5124c996e84204dc97
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: da2f937c50e5634a5f4e3abe6d1eae9064916f52
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8382269"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8513273"
 ---
 # <a name="move-components-to-an-operation-area-in-basic-warehouse-configurations"></a>Déplacer les composantes vers une zone opérations dans les configurations de stockage de base
 Si des opérations de traitement d'articles se produisent dans votre entrepôt, vous pouvez être amené à déplacer des articles entre différents zones internes pour satisfaire aux documents origine internes, tels que la production, l'assemblage ou les commandes service dans l'emplacement.  
@@ -75,7 +75,7 @@ Cette procédure explique comment créer un mouvement d'inventaire à partir de 
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

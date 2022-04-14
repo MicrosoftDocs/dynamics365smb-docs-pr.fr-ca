@@ -9,14 +9,14 @@ ms.workload: na
 ms.search.keywords: SMTP, mail, Microsoft 365
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 79a02ba516c1359863ac552e66fce03287519a65
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 7ac4d66671d7eeb78c5fead20e7a43844c5d03c0
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8144086"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8517067"
 ---
-# <a name="using-business-central-without-outlook"></a>Utilisation de Business Central sans Outlook
+# <a name="use-business-central-without-outlook"></a>Utiliser Business Central sans Outlook
 [!INCLUDE[prod_short](includes/prod_short.md)] bénéficie d’une intégration complète à Microsoft 365 et vous pouvez utiliser [!INCLUDE[prod_short](includes/prod_short.md)] comme boîte de réception professionnelle dans Outlook. Si vous n'avez pas Outlook, vous pouvez utiliser [!INCLUDE[prod_short](includes/prod_short.md)] dans le navigateur ou sur votre périphérique mobile.  
 
 ## <a name="sending-email"></a>Envoi de courriels
@@ -25,7 +25,7 @@ Vous pouvez envoyer des documents tels que des factures en tant que courriels à
 
 ## <a name="see-also"></a>Voir aussi
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
-[Utilisation de Business Central en tant que boîte de réception professionnelle dans Outlook](admin-outlook.md)  
+[Utiliser Business Central en tant que boîte de réception professionnelle dans Outlook](admin-outlook.md)  
 [Obtention de Business Central sur mon périphérique mobile](install-mobile-app.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)
 

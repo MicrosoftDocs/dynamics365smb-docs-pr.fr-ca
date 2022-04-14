@@ -10,12 +10,12 @@ ms.search.keywords: accounting, auditing, bookkeeping
 ms.search.form: 1151, 1166, 9027, 9004
 ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: 44c7475921c679cc03ee25e8c05ffa78d04592f3
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 3ef243581ddd0df9b546e3f2a40b2f1d666f73dc
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8135968"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8515651"
 ---
 # <a name="financial-management"></a>Gestion financière
 
@@ -36,7 +36,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Gérer les coûts ajustés et de fabrication, générer des rapports sur les coûts et rapprocher les coûts avec le grand livre.|[Gestion des coûts ajustés](finance-manage-inventory-costs.md)|
 | Comprendre le grand livre et le plan comptable. |[Familiarisation avec le grand livre et les COA](finance-general-ledger.md) |
 |Combiner des écritures du grand livre de plusieurs compagnies dans une compagnie consolidée virtuelle pour l'analyse financière.|[Consolidation des données financières de plusieurs compagnies](finance-consolidated-company-reporting.md)|
-| Ajouter des dimensions pour un veille économique enrichie. |[Utilisation des dimensions](finance-dimensions.md) |
+| Ajouter des dimensions pour un veille économique enrichie. |[Utiliser des dimensions](finance-dimensions.md) |
 | Créez des budgets GL pour prévoir différentes activités financières et affecter des dimensions à des fins de veille économique. |[Créer des budgets GL](finance-how-create-budgets.md) |
 |Enregistrez les revenus ou les frais directement dans le grand livre sans reporter les documents commerciaux appropriés.|[Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)|
 |Reporter les écritures de contrepassation pour annuler les reports de valeur dans le journal général ou les reports de quantité sur des documents achat et vente. |[Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)|
@@ -69,8 +69,8 @@ La vidéo suivante présente certaines des fonctionnalités clés de la gestion 
 [Clôture des périodes fiscales](year-close-years-periods.md)  
 [Gestion des projets](projects-manage-projects.md)  
 [Importation des données à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  
-[Utilisation de journaux généraux](ui-work-general-journals.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser des journaux généraux](ui-work-general-journals.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 ## [!INCLUDE[prod_short](includes/free_trial_md.md)]  
 

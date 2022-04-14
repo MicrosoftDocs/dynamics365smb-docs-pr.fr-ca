@@ -1,5 +1,5 @@
 ---
-title: Procédure de création d'une compagnie | Microsoft Docs
+title: Créer une compagnie avec des packages de configuration
 description: Utilisez les tables et les pages RapidStart Services pour créer une compagnie pour laquelle vous souhaitez effectuer une implémentation client.
 author: SorenGP
 ms.topic: conceptual
@@ -9,37 +9,43 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/14/2021
 ms.author: edupont
-ms.openlocfilehash: 0031a05821346aa061334e0f9ced1079fef2978b
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 2d75c136fdd0dcf2891468d722008ab0bf183cbb
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8130781"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8512422"
 ---
-# <a name="create-a-new-company"></a>Créer une compagnie
+# <a name="create-a-new-company-based-on-configuration-packages"></a>Créer une compagnie basée sur des packages de configuration
+
 Pour utiliser RapidStart Services pour [!INCLUDE[prod_short](includes/prod_short.md)], vous devez d'abord créer une compagnie pour laquelle vous souhaitez effectuer une implémentation client. Lorsque vous créez une société, les tables et les pages standard de [!INCLUDE[prod_short](includes/prod_short.md)] sont créées, mais elles ne contiennent pas de données.
 
 Vous pouvez également appliquer des données de configuration spécifiques à votre compagnie après l’avoir initialisée. Les informations sont fournies dans un package de configuration, un fichier .rapidstart, qui fournit le contenu sous un format compressé.  
 
 Des exemples de packages de configuration, qui comprennent des fichiers spécifiques à un pays/une région, sont inclus avec la compagnie de démonstration CRONUS. Suivez la procédure suivante pour utiliser l'exemple de package de configuration avec une nouvelle compagnie.  
 
-## <a name="to-use-the-sample-basicconfig-configuration-package"></a>Pour utiliser l'exemple de package de configuration BASICCONFIG  
-1. Ouvrez la compagnie CRONUS International Ltd. Pour plus d'informations, voir [Modifier les paramètres de base](ui-change-basic-settings.md).
+## <a name="to-use-the-sample-configuration-packages"></a>Pour utiliser l’exemple de packages de configuration
+
+1. Ouvrez la compagnie de démonstration CRONUS. Pour plus d'informations, voir [Modifier les paramètres de base](ui-change-basic-settings.md).  
 2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Packages de configuration**, puis sélectionnez le lien associé.  
-3. Sélectionnez le package BASICCONFIG dans la liste, puis sélectionnez l'action **Exporter package**.  
+3. Sélectionnez le package approprié dans la liste, puis sélectionnez l’action **Exporter package**.  
 
-Suivez la procédure suivante pour créer une compagnie, puis utilisez le package BASICCONFIG dans le cadre du processus.  
+Suivez la procédure suivante pour créer une compagnie, puis utilisez le package de configuration dans le cadre du processus.  
 
-## <a name="to-create-a-new-company"></a>Création d'une nouvelle compagnie  
+## <a name="to-create-a-new-company"></a>Création d'une nouvelle compagnie
+
 1. Créer une nouvelle compagnie. Pour plus d'informations, voir [Création de compagnies dans [!INCLUDE[prod_short](includes/prod_short.md)]](about-new-company.md).
-2. Dans le tableau de bord Responsable de l'implémentation de RapidStart Services, vous pouvez maintenant importer le package de configuration que vous avez exporté de la compagnie CRONUS International Ltd.
+2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Packages de configuration**, puis sélectionnez le lien associé.  
+3. Choisissez l’action **Importer package**, puis spécifiez le fichier .rapidstart à importer.  
 
 Une fois que vous avez créé une compagnie, certaines tables se renseignent automatiquement, même si aucun modèle de compagnie n'est appliqué. Par exemple, vous pouvez consulter les codes standard pour les transactions par lots et le report sur la page **Code origine**. Si vous disposez d'une version locale de [!INCLUDE[prod_short](includes/prod_short.md)], consultez cette table en tenant compte d'éventuels problèmes de langue locale.
 
 ## <a name="about-data-tables"></a>À propos des tables de données
+
 [!INCLUDE[prod_short](includes/prod_short.md)], les tables de données existent en deux types de base : Principale et Configuration. Lorsque vous paramétrez une configuration de compagnie, vous pouvez utiliser ces types afin de cibler votre stratégie de configuration.  
 
-### <a name="master-data-tables"></a>Tables de données principales  
+### <a name="master-data-tables"></a>Tables de données principales
+
 Le tableau suivant répertorie certaines tables de données principales. Lorsque vous lancez une nouvelle compagnie, ces tables sont vides.  
 
 |N° table|Nom de table|  
@@ -50,7 +56,8 @@ Le tableau suivant répertorie certaines tables de données principales. Lorsque
 |27|Article|  
 |5050|Contact|  
 
-### <a name="setup-data-tables"></a>Tables de données de configuration  
+### <a name="setup-data-tables"></a>Tables de données de configuration
+
 Le tableau suivant répertorie certaines tables de données de configuration à partir desquelles vous capturez les informations de configuration dans le questionnaire de configuration. Ces tables contiennent des informations de base lors de la création de la compagnie.  
 
 |Numéro table|Nom de table|  
@@ -69,9 +76,8 @@ Outre des tables de données de configuration, [!INCLUDE[prod_short](includes/pr
 |6|Groupes prix client|  
 |5700|Unité de stock|
 
-  
+## <a name="see-also"></a>Voir aussi
 
-## <a name="see-also"></a>Voir aussi  
 [Appliquer des configurations à de nouvelles compagnies](admin-apply-configuration-to-new-companies.md)  
 [Configuration d'une compagnie avec RapidStart Services](admin-set-up-a-company-with-rapidstart.md)  
 [Administration](admin-setup-and-administration.md)

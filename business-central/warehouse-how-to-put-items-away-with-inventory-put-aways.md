@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 02d3f8dca5381ecebac7cb2d980841a2e5897846
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 190a3925cfc692331e21e3cd2a2b41c68cc02d6f
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8138164"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8511425"
 ---
 # <a name="put-items-away-with-inventory-put-aways"></a>Ranger des articles avec le rangement stock
 Lorsque votre emplacement est configuré pour exiger un traitement des rangements, mais pas un traitement des réceptions, vous utilisez le document **Rangement inventaire** pour enregistrer et reporter les informations de rangement et de réception pour vos documents sources. Le document source entrant peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un ordre d'assemblage/un bon de production dont la production est prête à être rangée.  
@@ -76,7 +76,7 @@ Le processus de report reporte la réception, ou la production pour les bons de 
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

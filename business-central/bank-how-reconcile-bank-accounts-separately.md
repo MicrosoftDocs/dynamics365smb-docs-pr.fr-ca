@@ -7,15 +7,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: bank account balance, bank statement
-ms.search.form: 379, 388, 389, 1290, 10124
+ms.search.form: 379, 388, 389, 1290, 1692, 10124
 ms.date: 06/14/2021
 ms.author: bholtorf
-ms.openlocfilehash: 1ebc2680aea583410a0f1bab8f4ff1d35989eb36
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: e74df84ac5119e87aecd6a15e270dfd50fb1b117
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8381098"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8514501"
 ---
 # <a name="reconcile-bank-accounts"></a>Rapprochement des comptes bancaires
 
@@ -124,7 +124,7 @@ Les relevés bancaires comportent parfois des montants correspondant à la factu
 2. Sur la page **Tr. rapp. cpte banq.-jrnl gén.**, indiquez le journal général à utiliser, puis cliquez sur le bouton **OK**.
 
     La page **Journal général** s'ouvre. Elle contient de nouvelles lignes journal pour toutes les lignes de relevé bancaire dont les écritures sont manquantes.
-3. Renseignez la ligne journal avec les informations appropriées, comme le compte de contrepartie. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).  
+3. Renseignez la ligne journal avec les informations appropriées, comme le compte de contrepartie. Pour plus d'informations, reportez-vous à [Utilisation des feuilles comptabilité](ui-work-general-journals.md).  
 4. Pour examiner le résultat du report avant de reporter, choisissez l'action **Rapport de test**. L'état **Relevé de compte bancaire** s'ouvre et affiche les mêmes champs que dans l'en-tête de la page **Rapprochement compte bancaire**.
 5. Sélectionnez l'action **Reporter**.
 
@@ -174,7 +174,7 @@ Si le prochain rapprochement bancaire que vous effectuez concerne le mois d’ao
 [Lettrage automatique des paiements et rapprochement des comptes bancaires](receivables-apply-payments-auto-reconcile-bank-accounts.md)  
 [Paramétrage des opérations bancaires](bank-setup-banking.md)  
 [Configurer des règles pour l'affectation automatique des paiements](receivables-how-set-up-payment-application-rules.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -8,14 +8,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: IC, group, consolidation, affiliate, subsidiary
 ms.search.form: 600, 610
-ms.date: 06/16/2021
+ms.date: 03/09/2022
 ms.author: edupont
-ms.openlocfilehash: a258ea2039c69449d4743b62943395abb7c1d430
-ms.sourcegitcommit: 6d48c1f601ed22b6b0358311baf63c073ab75e64
+ms.openlocfilehash: 0d0b4404df9f322c9d642fb06c08e912c24f9fd3
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367186"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8519736"
 ---
 # <a name="work-with-intercompany-documents-and-journals"></a>Utiliser les documents et les journaux intersociétés
 Les documents ou journaux intercompagnies permettent de reporter les transactions effectuées avec vos partenaires intercompagnies. Lorsque vous reportez un document ou une ligne journal intercompagnie dans votre compagnie, le programme crée le document ou la ligne journal correspondante dans votre boîte d'envoi intercompagnie : vous pouvez le transmettre au partenaire concerné. Celui-ci peut ensuite reporter la transaction correspondante dans sa compagnie sans avoir à entrer à nouveau les données.
@@ -39,10 +39,11 @@ La procédure suivante explique comment renseigner et envoyer un document de ven
 > Si vous effectuez l'étape 4, le document de vente est déplacé vers votre boîte d'envoi intercompagnies, d'où vous pouvez l'envoyer ultérieurement. Pour plus d'informations, voir [Gérer la boîte de réception et la boîte d'envoi intersociétés](intercompany-how-manage-intercompany-inbox.md).
 
 ## <a name="to-fill-in-and-post-an-intercompany-journal"></a>Pour renseigner et reporter un journal intercompagnie
-Lorsque vous reportez une ligne journal général intercompagnie dans votre compagnie, le programme crée une ligne journal correspondante dans votre boîte d'envoi intercompagnie : vous pouvez la transmettre au partenaire concerné. Celui-ci peut ensuite reporter la transaction correspondante dans sa compagnie sans avoir à entrer à nouveau les données.
+
+Lorsque vous reportez une ligne journal général intercompagnie dans votre compagnie, le programme crée une ligne journal correspondante dans votre boîte d'envoi intercompagnie : vous pouvez la transmettre au partenaire concerné. Avec la 1re vague de lancement 2022, vous pouvez également configurer la compagnie afin que soient créées automatiquement les transactions intercompagnies reçues des partenaires intercompagnies, reportées via le journal général intercompagnie. Celui-ci peut ensuite reporter la transaction correspondante dans sa compagnie sans avoir à entrer à nouveau les données.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux généraux intercompagnies**, puis sélectionnez le lien associé.  
-2. Ouvrez le lot journal approprié. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
+2. Ouvrez le lot journal approprié. Pour plus d'informations, reportez-vous à [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 3. Renseignez les champs selon vos besoins.
 4. Dans le champ **N° compte G/L du partenaire IC**, saisissez le numéro du compte du grand livre intercompagnie sur lequel le montant sera reporté dans la compagnie de votre partenaire.
 
@@ -53,11 +54,12 @@ Lorsque vous reportez une ligne journal général intercompagnie dans votre comp
 Les écritures associées sont reportées dans votre compagnie et un journal avec les écritures correspondantes est créé dans votre boîte d'envoi intercompagnie ; vous pouvez l'envoyer à votre partenaire. Pour plus d'informations, voir [Gérer la boîte de réception et la boîte d'envoi intersociétés](intercompany-how-manage-intercompany-inbox.md).
 
 ## <a name="see-also"></a>Voir aussi
+
 [Gestion des transactions intersociétés](intercompany-manage.md)  
 [Finance](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
-[Utilisation de journaux généraux](ui-work-general-journals.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser des journaux généraux](ui-work-general-journals.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

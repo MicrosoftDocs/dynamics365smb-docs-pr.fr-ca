@@ -10,12 +10,12 @@ ms.search.keywords: item reference, cross reference, inventory
 ms.search.forms: 5737, 5735, 5736
 ms.date: 10/27/2021
 ms.author: edupont
-ms.openlocfilehash: 8d85acefe89d22f7ab6c86aca3af91a6f8a4d67c
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: d99b304cec6fd9d834cc16a080040a721beede17
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384108"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8514475"
 ---
 # <a name="use-item-references"></a>Utiliser références article
 
@@ -60,7 +60,7 @@ Le champ **Description** de la ligne est remplacé par la description d’articl
 
 [Enregistrer de nouveaux articles](inventory-how-register-new-items.md)  
 [Inventaire](inventory-manage-inventory.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

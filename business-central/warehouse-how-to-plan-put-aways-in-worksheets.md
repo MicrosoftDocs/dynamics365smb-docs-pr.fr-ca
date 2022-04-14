@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: b7bd6481c6347cfb9c8d02ba58f38101802a6caa
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 109ebfef1650c365cb383aac56cf51ab9ee8231b
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8131129"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8518557"
 ---
 # <a name="plan-put-aways-in-worksheets"></a>Planifier des rangements dans la feuille
 Lorsque l'emplacement nécessite un traitement à la fois de rangement et de réception et que vous souhaitez planifier des instructions de rangement pour plusieurs réceptions, vous pouvez utiliser la feuille rangement (dans ce cas, les employés n'ont pas à suivre les instructions créées par l'application pour différentes réceptions reportées).  
@@ -67,7 +67,7 @@ Si vous ne sélectionnez pas ce champ, l'application crée automatiquement des i
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

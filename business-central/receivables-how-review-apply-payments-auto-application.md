@@ -10,12 +10,12 @@ ms.search.keywords: payment process, reconcile payment, expenses, cash receipts
 ms.search.form: 1290, 1294, 1287
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 9a4a25de9d1aab74c0c721fbdbda6704a2ae8666
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: f1d14532095fd2d34f1dbdf57a3916dbd1c561a3
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8383067"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8513715"
 ---
 # <a name="review-and-apply-payments-manually-after-automatic-application"></a>Réviser et affecter les paiements manuellement après un affectation automatique
 Pour chaque ligne journal représentant un paiement sur la page **Journal rapprochement paiement**, vous pouvez ouvrir la page **Affectation paiement** pour afficher toutes les écritures ouvertes candidates au paiement et les informations détaillées pour chaque écriture sur la correspondance des données sur laquelle une affectation de paiement est basée. Ici, vous pouvez affecter les paiements manuellement ou affecter à nouveau les paiements qui ont été automatiquement affectés à une écriture incorrecte. Pour plus d'informations sur l'affectation automatique, voir [Rapprocher les paiements à l'aide de l'affectation automatique](receivables-how-reconcile-payments-auto-application.md).
@@ -52,7 +52,7 @@ La page **Affectation paiement** se ferme puis, dans la fenêtre **Journal rappr
 ## <a name="see-also"></a>Voir aussi
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Vente](sales-manage-sales.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

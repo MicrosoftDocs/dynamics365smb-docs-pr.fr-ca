@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: eb6b766ffb4974943c37f0b3e1499a59695f349c
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: be9ddda098391cad347948993c2038de7efc8fc9
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8140251"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8521452"
 ---
 # <a name="walkthrough-making-cash-flow-forecasts-by-using-account-schedules"></a>Procédure pas-à-pas : Créer des prévisions de trésorerie à l'aide de les tableaux d'analyse
 
@@ -145,8 +145,8 @@ Ken est désormais prêt à affecter la présentation de colonne au nom de table
 ## <a name="see-also"></a>Voir aussi
 
 [Utilisation des tableaux d'analyse](bi-how-work-account-schedule.md)  
-[Analyse de la trésorerie dans votre compagnie](finance-analyze-cash-flow.md)  
+[Analyse de la trésorerie dans votre société](finance-analyze-cash-flow.md)  
 [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

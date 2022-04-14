@@ -1,5 +1,5 @@
 ---
-title: Utilisation des rapports, des traitements en lot et des objets XMLport
+title: Exécuter et imprimer des rapports
 description: En savoir plus sur l'intégration d'un rapport dans une file d'attente des travaux et la programmation de son traitement à une date et une heure spécifiques.
 author: jswymer
 ms.topic: conceptual
@@ -8,16 +8,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: task, process, report, print, schedule, save, Excel, PDF, Word, dataset
 ms.search.form: 9020, 9022, 9026, 9027, 9030, 9000, 9004, 9005, 9018, 9006, 9007, 9010, 9016, 9017
-ms.date: 02/09/2022
+ms.date: 03/24/2022
 ms.author: jswymer
-ms.openlocfilehash: 9a5866db05b4ef78e751996f59ea56d9f4b75d27
-ms.sourcegitcommit: 75a388b1d8917e2bbd49398ef76cf86cf37e6767
+ms.openlocfilehash: fade19b2ecb4d2c17b5d5775074f2f715496a908
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8322965"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8512690"
 ---
-# <a name="working-with-reports-batch-jobs-and-xmlports"></a>Utilisation des rapports, des traitements en lot et des objets XMLport
+# <a name="run-and-print-reports"></a>Exécuter et imprimer des rapports
 
 Un rapport rassemble des informations en fonction d’un ensemble spécifié de critères. Il organise et présente les informations dans un format facile à lire que vous pouvez imprimer ou enregistrer sous forme de fichier. Il existe de nombreux rapports accessibles dans l'ensemble de l'application. Les rapports fournissent généralement des informations relatives au contexte de la page où vous vous trouvez. Par exemple, la page **Client** comprend des rapports pour les 10 principaux clients et les statistiques de vente, et plus encore.
 
@@ -26,7 +26,7 @@ Les traitements en lot et les ports XML sont plus ou moins identiques aux rappor
 > [!NOTE]
 > Cette rubrique fait référence surtout aux « rapports », mais des informations similaires s'appliquent aux traitements en lot et aux objets XMLport.
 
-## <a name="getting-started"></a>Mise en route
+## <a name="get-started"></a>Démarrer
 
 Vous pouvez trouver les rapports sous l’onglet **Rapports** sur les pages sélectionnées ou utiliser la recherche ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") pour rechercher des rapports par nom.
 
@@ -43,7 +43,7 @@ Le champ **Utiliser les valeurs par défaut de** fournit un moyen rapide et fiab
 >[!NOTE]
 > Les paramètres prédéfinis sont généralement configurés et gérés par un administrateur. Pour en savoir plus, voir [Gérer les paramètres enregistrés pour les rapports et les traitements en lot](reports-saving-reusing-settings.md).
 
-## <a name="specifying-the-data-to-include-in-reports"></a>Définition des données à inclure dans les rapports
+## <a name="specifying-the-data-to-include-in-a-report"></a>Définition des données à inclure dans un rapport
 
 Utilisez les champs sous **Options** et **Filtres** pour modifier ou limiter les informations que vous souhaitez dans le rapport. Vous devez définir des filtres dans un rapport de la même manière que vous le faites sur des listes. Pour plus d'informations, reportez-vous à la rubrique [Filtrage](ui-enter-criteria-filters.md#filtering).
 
@@ -54,7 +54,7 @@ Utilisez les champs sous **Options** et **Filtres** pour modifier ou limiter les
 >
 > **Exemple** : Lorsque vous utilisez le traitement en lot **Créer rappels**, un filtre pour le champ **Écritures client** de **Niveau dernier rappel émis** sera ignoré, car les filtres sont fixes pour ce traitement en lot.
 
-## <a name="previewing-a-report"></a>Affichage de l'aperçu d'un rapport
+## <a name="previewing-a-report"></a>Affichage de l’aperçu d’un rapport
 
 L’aperçu d’un rapport vous permet de voir à quoi il ressemblera avant de l’imprimer. L’aperçu n’est pas basé sur l’imprimante sélectionnée dans le champ **Imprimante** sur la page de demande. Il est contrôlé par le navigateur. Après l’aperçu, vous pouvez revenir à la page de la demande et apporter des modifications aux options et aux filtres si nécessaire.
 
@@ -63,7 +63,7 @@ Pour afficher l’aperçu d’un rapport, choisissez le bouton **Aperçu** ou **
 > [!NOTE]
 > Si vous utilisez la vague de lancement 1 de 2020 de Business Central ou antérieure, il n’y a qu’un bouton **Aperçu** qui ferme la page de demande lors de l’aperçu, comme décrit pour **Aperçu et fermer**.
 
-### <a name="working-with-the-preview"></a>Utilisation de l’aperçu
+### <a name="work-with-the-preview"></a>Utiliser l’Aperçu
 
 Dans l’Aperçu, utilisez la barre de menus dans l’aperçu du rapport pour :
 
@@ -82,11 +82,13 @@ Dans l’Aperçu, utilisez la barre de menus dans l’aperçu du rapport pour :
 
 ## <a name="saving-a-report-to-a-file"></a>Enregistrement d’un rapport dans un fichier
 
-Vous pouvez enregistrer un rapport dans un document PDF, un document Microsoft Word ou une feuille de calcul Microsoft Excel en sélectionnant le bouton **Envoyer à**, puis en effectuant votre sélection.
+Vous pouvez enregistrer un rapport dans un document PDF, un document Microsoft Word, une feuille de calcul Microsoft Excel ou un document XML en cliquant sur le bouton **Envoyer à**, puis en effectuant votre sélection.
 
-### <a name="about-sending-to-excel"></a>À propos de l’envoi vers Excel
-
-Vous pouvez travailler avec les données [!INCLUDE [prod_short](includes/prod_short.md)] dans Excel pour une analyse plus approfondie. Pour plus d’informations, consultez [Analyse des données de rapport avec Excel](report-analyze-excel.md).  
+> [!TIP]
+> Les options **Document Microsoft Excel (données uniquement)** et **Document XML** concernent principalement le niveau avancé. Vous utiliserez généralement ces options pour effectuer une analyse détaillée des données. Pour plus d’informations, voir [Analyse des données de rapport avec Excel et XML](report-analyze-excel.md).
+>
+> Vous pouvez également utiliser l’option **Document Microsoft Excel (données uniquement)** pour créer de présentations Excel pour un rapport donné. Pour plus d’informations, voir [Utiliser des présentations Excel](ui-excel-report-layouts.md).  
+  
 <!--
 ### About sending to Word
 
@@ -97,17 +99,19 @@ Use the **Microsoft Word Document** option to generate a report as a Word docume
 
 -->
 
-## <a name="scheduling-a-report-to-run"></a><a name="ScheduleReport"></a> Programmation d'un rapport à exécuter
+## <a name="scheduling-a-report-to-run-later"></a><a name="ScheduleReport"></a> Planification d’un rapport pour une exécution ultérieure
 
 Vous pouvez programmer ou traiter en lot un rapport à exécuter à une date et une heure spécifiques. Les rapports ou les traitements en lot programmés sont entrés dans la file d'attente des travaux et traités au moment programmé, comme les autres projets. Vous devez choisir l'option **Programmé** après avoir cliqué sur le bouton **Envoyer à**, puis vous devez entrer des informations telles que l’imprimante, l’heure et la date. Le rapport est alors ajouté à la file d'attente des travaux et sera exécuté au moment spécifié. Lorsque le rapport a été traité, l'article est supprimé de la file d'attente projets. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).  
 
-Lorsque vous programmez l'exécution d'un rapport, vous pouvez spécifier qu'il doit s'exécuter tous les jeudis en définissant le champ **Formule de la date de la prochaine exécution** sur *D4*, par exemple. Pour plus d'informations, voir [Utilisation de formules date](ui-enter-date-ranges.md#using-date-formulas).  
+Lorsque vous programmez l'exécution d'un rapport, vous pouvez spécifier qu'il doit s'exécuter tous les jeudis en définissant le champ **Formule de la date de la prochaine exécution** sur *D4*, par exemple. Pour plus d’informations, voir [Utiliser des formules date](ui-enter-date-ranges.md#use-date-formulas).  
 
 Vous pouvez choisir de sauvegarder le rapport dans un fichier, par exemple, Excel, Word ou PDF, de l’imprimer ou uniquement de générer le rapport. Si vous choisissez d'enregistrer le rapport dans un fichier, le rapport traité est envoyé à la zone **Boîte de réception rapport** sur votre tableau de bord, où vous pouvez l'afficher.  
 
-## <a name="printing-a-report"></a><a name="PrintReport"></a>Impression d'un rapport
+## <a name="printing-a-report"></a><a name="PrintReport"></a>Impression d’un rapport
 
 Pour imprimer un rapport, cliquez sur le bouton **Imprimer** sur la page de demande de rapport ou dans la barre de menu de la page **Aperçu**.
+
+Lorsqu’un rapport utilise une présentation Excel, les champs **Imprimante**, le bouton **Imprimer** ou le bouton **Aperçu** ne sont pas affichés. Au lieu de cela, il y a un bouton **Télécharger**. Pour imprimer, sélectionnez **Télécharger**, puis ouvrez le fichier téléchargé dans Excel et imprimez à partir de là.
 
 ### <a name="printer"></a><a name="Printer"></a>Imprimante
 
@@ -125,9 +129,9 @@ Spécifiquement pour la version thaïlandaise de [!INCLUDE[prod_short](includes/
 
 Sinon, vous pouvez demander à votre administrateur de créer une présentation rapport Word pour vos rapports les plus utilisés. Pour plus d'informations, voir [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md).  
 
-## <a name="changing-report-layouts"></a>Modification des présentations de rapport
+## <a name="switching-the-report-layout"></a>Modifier la présentation du rapport
 
-Une présentation de rapport contrôle les éléments affichés sur un rapport, leur agencement et leur mise en forme. Si vous souhaitez changer de présentation, voir [Modifier la présentation actuelle du rapport](ui-how-change-layout-currently-used-report.md). Ou, si vous souhaitez personnaliser votre propre présentation de rapport, voir [Créer et modifier une présentation de rapport personnalisée](ui-how-create-custom-report-layout.md).
+Une présentation de rapport contrôle les éléments affichés sur un rapport, leur agencement et leur mise en forme. Pour changer de présentation, voir [Définir la présentation utilisée par un rapport](ui-set-report-layout.md). Ou, si vous voulez personnaliser votre propre présentation de rapport, voir [Bien démarrer avec la création de présentations](ui-get-started-layouts.md).
 
 ## <a name="advanced-options"></a>Options avancées
 
@@ -145,9 +149,9 @@ Les champs sous **Avancé** définissent des limites sur le rapport généré po
 ## <a name="see-also"></a>Voir aussi
 
 [Paramétrage imprimantes](ui-specify-printer-selection-reports.md)  
-[Utilisation de dates civiles et les heures](ui-enter-date-ranges.md)  
+[Utiliser les dates civiles et les heures](ui-enter-date-ranges.md)  
 [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

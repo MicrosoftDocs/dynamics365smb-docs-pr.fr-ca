@@ -10,12 +10,12 @@ ms.search.keywords: payment application, payment processing, match payments
 ms.search.form: 62, 233, 522, 623
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: a3ec4f46425a344276792f44fde29e23f695384f
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 001d747391998df212bacf9dbde23ebbe240bc2b
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8145638"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8521946"
 ---
 # <a name="reconcile-vendor-payments-with-the-payment-journal-or-from-vendor-ledger-entries"></a>Rapprocher des paiements fournisseur avec le journal paiement ou à partir des écritures fournisseur
 Lorsque vous envoyez un règlement à un fournisseur ou recevez un remboursement de sa part, vous devez décider si vous souhaitez affecter le paiement ou le rembourser à une ou plusieurs écritures ouvertes. Vous pouvez indiquer le montant exact que vous souhaitez affecter à la réception paiement ou au remboursement, puis n'affecter que partiellement les écritures fournisseur. Vous devez affecter toutes les écritures fournisseur pour obtenir des rapports et statistiques fournisseur corrects des relevés de compte et des frais financiers.
@@ -120,7 +120,7 @@ Lorsque vous annulez une affectation erronée, des écritures de correction (éc
 ## <a name="see-also"></a>Voir aussi
 [Fournisseurs](payables-manage-payables.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

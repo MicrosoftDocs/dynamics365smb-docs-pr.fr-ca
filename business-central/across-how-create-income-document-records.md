@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: electronic document, e-invoice, incoming document, OCR, ecommerce, document exchange, import invoice
 ms.date: 06/11/2021
 ms.author: edupont
-ms.openlocfilehash: cb7a16155c8055b9c4937843568f4e147cefc61b
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 4244801207874f1629d59d4b3a66de98fb9d2bed
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8147304"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8522416"
 ---
 # <a name="create-incoming-document-records"></a>Créer des enregistrements document entrant
 Sur la page **Documents entrants**, vous pouvez utiliser différentes fonctions pour examiner les reçus de dépenses, gérer les tâches ROC et convertir les fichiers document entrants, manuellement ou automatiquement, en documents ou lignes journal appropriés. Les fichiers externes peuvent être joints à n'importe quelle étape du processus, notamment en ce qui concerne les documents reportés et les écritures fournisseur, client et grand livre résultantes.
@@ -68,7 +68,7 @@ Si vous approuvez l'enregistrement document entrant, la case à cocher **Lancé*
 [Traiter les documents entrants](across-process-income-documents.md)  
 [Documents entrants](across-income-documents.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Utilisation de Business Central avec Outlook | Microsoft Docs
+title: Utilisation de Business Central avec Outlook
 description: Ce service bénéficie d’une intégration complète à Microsoft 365, ce qui vous permet de gérer tous vos interactions et messages d’affaires avec les clients et les fournisseurs directement dans Outlook.
 author: jswymer
 ms.topic: conceptual
@@ -7,16 +7,16 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: SMTP, mail, Microsoft 365
-ms.date: 08/13/2021
+ms.date: 03/21/2022
 ms.author: jswymer
-ms.openlocfilehash: c281ce94e518f8ef099bb3e48177b90732a65c45
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 264dec3372ed33588d0f7f77a3e3b4d4d6795e42
+ms.sourcegitcommit: d6af3155bb818430f22d5caca78df322a8d9b178
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8145142"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "8528540"
 ---
-# <a name="using-business-central-as-your-business-inbox-in-outlook"></a>Utilisation de Business Central en tant que boîte de réception professionnelle dans Outlook
+# <a name="use-business-central-as-your-business-inbox-in-outlook"></a>Utiliser Business Central en tant que boîte de réception professionnelle dans Outlook
 
 [!INCLUDE[prod_short](includes/prod_short.md)] offre un complément qui vous aide à gérer les interactions commerciales avec vos clients et fournisseurs, directement dans Microsoft Outlook. Avec le complément [!INCLUDE[prod_short](includes/prod_short.md)] pour Outlook, vous pouvez afficher des informations financières associées à des clients et des fournisseurs, ainsi que créer et envoyer des documents financiers, comme des devis et des factures.
 
@@ -49,11 +49,11 @@ La première fois que vous utiliserez le complément, dans le volet de compléme
 > [!TIP]
 > Si vous utilisez le nouvel Outlook sur le Web, vous pouvez épingler **[!INCLUDE[prod_short](includes/prod_short.md)]** de sorte qu’il soit toujours immédiatement visible au lieu d’avoir à accéder au bouton Autres actions; cela facilite la visualisation des informations sur les contacts pendant que vous naviguez entre différents courriels.
 
-Pour plus d'informations, voir [Utilisation des compléments dans Outlook sur le Web](https://support.office.com/article/using-add-ins-in-outlook-on-the-web-8f2ce816-5df4-44a5-958c-f7f9d6dabdce?ns=OLWAO365B&version=16).  
+Pour plus d’informations, voir [Utiliser des compléments dans Outlook sur le Web](https://support.office.com/article/using-add-ins-in-outlook-on-the-web-8f2ce816-5df4-44a5-958c-f7f9d6dabdce?ns=OLWAO365B&version=16).  
 
 ## <a name="work-with-contacts-and-documents-using-the-contact-insights-add-in"></a>Utilisation de contacts et de documents à l’aide du complément Contact Insights
 
-Imaginons que vous receviez un courriel d'un client souhaitant obtenir un devis pour certains articles. Directement dans Outlook, vous pouvez ouvrir le complément [!INCLUDE[prod_short](includes/prod_short.md)], qui identifie l'expéditeur comme un client, et ouvre la fiche client de cette compagnie. À partir de ce tableau de bord, vous pouvez afficher des informations générales relatives au client, ainsi que rechercher davantage de détails dans des documents spécifiques. Vous pouvez également effectuer des recherches approfondies dans l'historique des ventes du client. S'il s'agit d'un nouveau contact, vous pouvez le créer en tant que tel dans [!INCLUDE[prod_short](includes/prod_short.md)] sans quitter Outlook.  
+Imaginons que vous receviez un courriel d'un client souhaitant obtenir un devis pour certains articles. Directement dans Outlook, vous pouvez ouvrir le complément [!INCLUDE[prod_short](includes/prod_short.md)], qui identifie l’expéditeur comme un client, et ouvre la fiche client de cette compagnie. À partir de ce tableau de bord, vous pouvez afficher des informations générales relatives au client et rechercher davantage de détails dans des documents spécifiques. Vous pouvez également effectuer des recherches approfondies dans l'historique des ventes du client. S'il s'agit d'un nouveau contact, vous pouvez le créer en tant que tel dans [!INCLUDE[prod_short](includes/prod_short.md)] sans quitter Outlook.  
 
 Dans le complément, vous pouvez créer un devis et l'envoyer à ce client sans quitter Outlook. Toutes les informations dont vous avez besoin pour envoyer le devis sont disponibles dans votre boîte de réception professionnelle dans Outlook. Une fois les données saisies, vous pouvez reporter le devis et l’envoyer par courriel. [!INCLUDE[prod_short](includes/prod_short.md)] génère un fichier .PDF avec le devis et le joint au message électronique que vous rédigez dans le complément.  
 
@@ -80,13 +80,13 @@ La barre d’action en haut du volet de compléments [!INCLUDE[prod_short](inclu
 
 Par exemple, vous pouvez ouvrir les coordonnées complètes telles que vous les verriez dans [!INCLUDE[prod_short](includes/prod_short.md)]. Si vous travaillez avec plusieurs compagnies [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez facilement basculer d’une compagnie à l’autre.
 
-### <a name="track-incoming-documents"></a>Suivi des documents entrants 
+### <a name="track-incoming-documents"></a>Suivi des documents entrants
 
 Peut-être que vous utilisez la liste **Documents entrants** dans [!INCLUDE[prod_short](includes/prod_short.md)] pour suivre les documents à traiter que les fournisseurs vous envoient, tels qu’une facture d’achat à payer. Si vous le faites, vous pouvez facilement créer des enregistrements de documents entrants à partir du complément Outlook et inclure les pièces jointes des courriels.
 
-1. Lorsque vous recevez un courriel d’un fournisseur avec une pièce jointe, sélectionnez ![l’icône du complément Business Central dans Outlook.](media/outlook-business-central-icon.png) **[!INCLUDE[prod_short](includes/prod_short.md)]**  > **Contact Insights**. 
+1. Lorsque vous recevez un courriel d’un fournisseur avec une pièce jointe, sélectionnez ![l’icône du complément Business Central dans Outlook.](media/outlook-business-central-icon.png) **[!INCLUDE[prod_short](includes/prod_short.md)]**  > **Contact Insights**.  
 
-2. Dans la barre d’action du complément, choisissez **Afficher d’autres actions**, puis sélectionnez **Envoyer dans les documents entrants…**. 
+2. Dans la barre d’action du complément, choisissez **Afficher d’autres actions**, puis sélectionnez **Envoyer dans les documents entrants…**    
 
 ### <a name="create-and-send-new-document-to-a-contact"></a>Créer et envoyer un nouveau document à un contact
 
@@ -94,11 +94,39 @@ Peut-être que vous utilisez la liste **Documents entrants** dans [!INCLUDE[prod
 2. Modifiez le document dans le volet de complément **[!INCLUDE[prod_short](includes/prod_short.md)]**.
 3. Lorsque le document est prêt à être envoyé au contact, dans la barre d’action, choisissez **Afficher d’autres actions**, puis sélectionnez l’action **Envoyer par courriel**.
 
+### <a name="attach-files-to-records"></a>Joindre des fichiers aux enregistrements
+
+Votre boîte de réception sert souvent de source de fichiers entrants qui lancent ou débloquent des workflows. Les fichiers peuvent inclure des éléments tels que des paiements de facture en PDF, des photos de marchandises ou des exigences dans un document Word. Lorsque vous travaillez dans Outlook avec des enregistrements Business Central tels que des fournisseurs, des clients, des factures d’achat ou des documents de vente, vous pouvez joindre ces fichiers aux enregistrements.
+
+Il existe plusieurs façons de joindre des fichiers. Une façon consiste à télécharger des fichiers depuis votre appareil. L’autre méthode consiste à télécharger des fichiers joints à un courriel. Par exemple, supposons que vous receviez un courriel contenant des fichiers d’un contact. Le complément affichera automatiquement l’enregistrement de contact qui correspond à l’expéditeur du courriel. À partir de là, vous pouvez accéder à un document pour le contact, comme le dernier document de vente. Une fois que vous avez identifié la commande à laquelle le courriel se rapporte, vous devez télécharger rapidement les fichiers du courriel vers cette commande.
+
+![Cette vidéo montre comment ajouter des pièces jointes d’un courriel à des enregistrements dans Business Central.](media/outlook-attach-files.png)
+
+Après avoir joint un fichier, vos collègues peuvent instantanément télécharger et afficher le fichier à partir du récapitulatif **Pièces jointes** dans n’importe lequel de leurs clients Business Central. Ou, ils peuvent ouvrir le fichier dans OneDrive pour partager et collaborer avec leur département.
+
+#### <a name="how-to-attach-a-file"></a>Comment joindre un fichier
+
+1. Ouvrez le courriel, choisissez l’![Icône du complément Business Central dans Outlook.](media/outlook-business-central-icon.png) **[!INCLUDE[prod_short](includes/prod_short.md)]**  > **Contact Insights**.
+2. Dans la barre d’action du complément, choisissez **Afficher d’autres actions** > **Pièces jointes**.
+
+    La page **Documents joints** s’ouvre pour répertorier tous les documents déjà joints à l’enregistrement.
+3. Choisissez **Fichiers joints...**, puis choisissez l’une des options suivantes :
+
+   - Choisissez **Joindre à partir du courriel** pour télécharger tous les fichiers ou une sélection de fichiers joints au courriel.
+   - Choisissez **Télécharger à partir du fichier** pour télécharger un ou plusieurs fichiers depuis votre appareil.
+
+> [!NOTE]
+> Vous ne pouvez pas joindre de fichiers à tous les enregistrements. Cette fonction est disponible pour les enregistrements qui utilisent le récapitulatif **Pièces jointes**, tel qu’un fournisseur, un client, une facture d’achat ou un document de vente.
+
 ## <a name="view-a-document-from-an-email-using-the-document-view-add-in"></a>Afficher un document à partir d’un courriel à l’aide du complément Affichage de document
 
 Qu’il s’agisse d’un courriel que vous avez envoyé ou reçu, vous pouvez afficher n’importe quel document [!INCLUDE[prod_short](includes/prod_short.md)], tel qu’un devis, directement dans Outlook. À partir de là, vous pouvez apporter des modifications et accéder aux informations associées&mdash;tout comme vous le feriez à l’intérieur de [!INCLUDE[prod_short](includes/prod_short.md)].
 
-Si vous utilisez l’application Outlook, sélectionnez simplement le **Lien vers le document** en haut du courriel. Pour Outlook sur le Web, recherchez le lien de référence du document dans le courriel. Le texte du lien de référence inclura le numéro du document, qui est basé sur la série de numéros utilisée dans [!INCLUDE[prod_short](includes/prod_short.md)]. Par exemple, le lien vers un devis serait quelque chose comme **Devis S-QUO1000**.
+Si vous utilisez l’application Outlook, sélectionnez simplement le **Lien vers le document** en haut du courriel. Pour Outlook sur le Web, recherchez le lien de référence du document dans le courriel. Le texte du lien de référence inclura le numéro du document, qui est basé sur la série de numéros utilisée dans [!INCLUDE[prod_short](includes/prod_short.md)]. Par exemple, le lien vers un devis serait quelque chose comme **Devis S-QUO1000**.  
+
+> [!TIP]
+> À partir de la 1re vague de lancement 2022, les documents s’ouvrent dans une nouvelle fenêtre de navigateur avec toutes les fonctionnalités que vous connaissez de [!INCLUDE [prod_short](includes/prod_short.md)]. Vous pouvez naviguer d’un document à une liste et inversement, ouvrir des listes dans Excel, envoyer des documents à imprimer et exécuter ou prévisualiser des rapports associés. Vous disposez également de tous les raccourcis clavier familiers lorsque vous ouvrez des documents à partir d’Outlook.  
+
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/alternative-interfaces-dynamics-365-business-central/index)
 
@@ -107,11 +135,11 @@ Si vous utilisez l’application Outlook, sélectionnez simplement le **Lien ver
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
 [Obtention de Business Central sur mon périphérique mobile](install-mobile-app.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
-[Finances](finance.md)  
-[Ventes](sales-manage-sales.md)  
-[Achats](purchasing-manage-purchasing.md)  
+[Finance](finance.md)  
+[Vente](sales-manage-sales.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)  
 [Configuration minimale requise pour Outlook](product-requirements.md#outlook)  
-[Utilisation des compléments dans Outlook sur le Web](https://support.office.com/article/Using-Add-ins-in-Outlook-on-the-web-8f2ce816-5df4-44a5-958c-f7f9d6dabdce?appver=OWB150)  
+[Utiliser des compléments dans Outlook sur le Web](https://support.office.com/article/Using-Add-ins-in-Outlook-on-the-web-8f2ce816-5df4-44a5-958c-f7f9d6dabdce?appver=OWB150)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

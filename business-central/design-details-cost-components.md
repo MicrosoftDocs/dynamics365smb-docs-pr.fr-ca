@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/08/2021
 ms.author: edupont
-ms.openlocfilehash: ef7f0d170c76dc79627123ce76e036729b4d0bd0
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: fa49d48d4af1efe40cda6579ff15f703ef5ad426
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8143670"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523085"
 ---
 # <a name="design-details-cost-components"></a>Détails de conception : composants des coûts
 Les composantes de coût sont différents types de coûts qui constituent la valeur d'une augmentation ou diminution d'inventaire.  
@@ -43,7 +43,7 @@ Les composantes de coût sont différents types de coûts qui constituent la val
  [Détails de conception : stock évaluation stock](design-details-inventory-costing.md)   
  [Détails de conception : Ecart](design-details-variance.md) [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
- [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+ [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

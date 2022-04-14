@@ -10,12 +10,12 @@ ms.search.keywords: adjustment, status, negative, positive, increase, decrease, 
 ms.search.forms: 5895, 6561, 6562, 6563, 6564, 6565, 6566, 5892, 5891, 5879, 5880, 5893, 5897, 5882, 5881, 5899, 5875, 5878, 5877, 5876, 5896, 6567, 6568, 6569, 6570, 6571, 6572, 5883, 5886, 884, 5898, 5885, 5890, 5888, 5889, 5887, 5894, 6774, 6775, 6776, 6780, 6781, 6782, 6783
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: af091b33126d4098980c19329d7160ef1789c1b9
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 600ddd9d927712b4b27f9b4c12e233379808ebe4
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8131597"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8522102"
 ---
 # <a name="count-and-adjust-inventory-using-documents"></a>Faire l’inventaire et l'ajuster à l’aide de documents
 
@@ -237,7 +237,7 @@ Vous pouvez spécifier les rapports à imprimer à différentes phases en choisi
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)    
 [Vente](sales-manage-sales.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

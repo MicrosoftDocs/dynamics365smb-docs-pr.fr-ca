@@ -10,15 +10,14 @@ ms.search.keywords: analysis, history, track, business intelligence
 ms.search.form: 408, 479, 480, 481, 484, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 548, 560, 562, 564, 567, 568, 577, 578, 580, 699, 1343, 2580, 2581, 2582, 2583, 2584, 2585, 2586, 2587, 2588, 2590, 2591, 2592, 2593, 9083, 9233, 9251, 9252, 9253
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 494a79283ba7917666e708d9b07acf9523ef15b8
-ms.sourcegitcommit: 6d48c1f601ed22b6b0358311baf63c073ab75e64
+ms.openlocfilehash: e5579df4d63a4f800118ca320d60a984f203022b
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8366742"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8517586"
 ---
-# <a name="working-with-dimensions"></a>Utilisation des axes analytiques
-
+# <a name="work-with-dimensions"></a>Utiliser des dimensions
 Les dimensions sont des valeurs qui permettent de catégoriser les écritures afin de pouvoir les suivre et les analyser sur les documents, tels que les documents de vente. Les dimensions peuvent, par exemple, indiquer de quel projet ou département provient une écriture.  
 
 Par exemple, au lieu de configurer des comptes GL distincts pour chaque service et projet, vous pouvez utiliser les dimensions comme base d’analyse et éviter d’avoir à créer un plan comptable compliqué. Pour plus d'informations, reportez-vous à [Veille économique](bi.md).
@@ -202,8 +201,7 @@ La page **Dimensions par défaut - Multiples** contient les champs suivants :
 |**Code section**|Affiche une valeur de dimension ou le terme (Conflit). Si le champ indique une valeur de dimension, tous les comptes sélectionnés ont la même valeur de dimension par défaut pour une dimension donnée. Si le champ indique le terme (Conflit), les comptes sélectionnés n'ont pas tous la même valeur de dimension par défaut pour une dimension donnée. Si vous cliquez sur le champ, vous pouvez visualiser la liste de toutes les valeurs de dimension disponibles pour une dimension. Si vous sélectionnez une valeur de dimension, la valeur de dimension sélectionnée est définie comme valeur de dimension par défaut pour tous les comptes sélectionnés.|
 |**Contrôle validation**|Affiche une règle de report valeur ou le terme (Conflit). Si le champ indique une règle de report valeur, tous les comptes sélectionnés ont la même règle de report valeur pour une valeur de dimension donnée. Si le champ indique le terme (Conflit), les comptes sélectionnés n'ont pas tous la même règle de report valeur pour une valeur de dimension donnée. Si vous cliquez sur le champ Report valeur, vous pouvez visualiser la liste des règles de report valeur. Si vous sélectionnez une règle de report valeur, elle s'applique à tous les comptes sélectionnés.|
 
-## <a name="using-dimensions"></a>Utilisation des dimensions
-
+## <a name="use-dimensions"></a>Utiliser des dimensions
 Dans un document tel qu'un document de vente, vous pouvez ajouter des informations de dimension pour une seule ligne document et pour le document lui-même. Par exemple, sur la page **Document de vente**, vous pouvez saisir des valeurs de dimension pour les deux premiers raccourcis dimensions directement sur les lignes vente individuelles et ajouter des informations de dimension complémentaires si vous cliquez sur le bouton **Dimensions**.  
 
 Si vous travaillez plutôt sur un journal, vous pouvez également ajouter à une écriture des informations de dimension de la même manière, si vous avez configuré des raccourcis de dimension en tant que champs directement dans les lignes journal.  
@@ -231,7 +229,7 @@ Dans une page écriture, vous pouvez voir si des dimensions principales sont ass
 [Veille économique](bi.md)  
 [Finance](finance.md)  
 [Analyse des données par dimensions](bi-how-analyze-data-dimension.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

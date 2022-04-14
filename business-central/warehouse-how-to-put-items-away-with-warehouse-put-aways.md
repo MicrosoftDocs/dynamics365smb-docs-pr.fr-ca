@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: bf748b94ec2a53eb92464a94c1172dd6971c8389
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 7cdd6e49f4d7cb4d63f70312a89266d020025b4f
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8134572"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8518531"
 ---
 # <a name="put-items-away-with-warehouse-put-aways"></a>Ranger des articles avec le rangement entrepôt
 Lorsque votre emplacement est configuré pour exiger un traitement des rangements entrepôt et un traitement des réceptions entrepôt, vous pouvez utiliser la fonction documents rangement entrepôt pour contrôler le rangement des articles.  
@@ -77,7 +77,7 @@ Le classement de zone est pris en compte lorsque plusieurs zones correspondent a
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,113 +1,35 @@
 ---
 title: Mettre à jour les taux de change (contient une vidéo)
-description: Suivez des montants dans différentes devises à l’aide de codes devise, et laissez Business Central ajuster les taux de devise étrangère des écritures reportées avec un service externe.
-author: SorenGP
+description: Si vous suivez des montants dans différentes devises, vous pouvez laisser Business Central ajuster les taux de devise étrangère des écritures reportées avec un service externe.
+author: edupont04
 ms.topic: conceptual
 ms.search.keywords: multiple currencies, adjust exchange rates, FX rates
 ms.search.form: 5, 118
-ms.date: 02/17/2022
+ms.date: 03/15/2022
 ms.author: edupont
-ms.openlocfilehash: 04f96b269b842045c1a804f976ffddfd5348befc
-ms.sourcegitcommit: 75a388b1d8917e2bbd49398ef76cf86cf37e6767
+ms.openlocfilehash: 45926cc094234a6b75f3e8a1ca997fc89506ef28
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323276"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523485"
 ---
 # <a name="update-currency-exchange-rates"></a>Mettre à jour des taux de change devise
 
-Étant donné que les compagnies opèrent dans un nombre croissant de pays/régions, il devient essentiel qu’elles puissent échanger et générer des informations financières dans plusieurs devises. La devise locale ($) est définie dans la page **Configuration grand livre**, comme décrit dans l’article [ Configuration de Finance](finance-setup-finance.md). Une fois la devise locale ($) définie, elle sera représentée en tant que devise vide. Ainsi, lorsque le champ **Devise** est vide, cela signifie que la devise est $.  
-
-Ensuite, vous devez configurer des codes devise pour chaque devise que vous utilisez si vous achetez ou vendez dans des devises autres que votre devise locale ($). Des comptes bancaires peuvent également être créés à l’aide de devises. Il est possible d’enregistrer des transactions GL dans différentes devises, cependant, la transaction GL sera toujours reportée dans la devise locale ($).
-
-> [!Important]
-> Ne créez pas le code devise locale à la fois dans la page **Configuration grand livre** et dans la page **Devises**. Cela créera une confusion entre la devise vide et le code $ dans le tableau des devises, et il se pourrait que des comptes bancaires, des clients ou des fournisseurs soient créés accidentellement, certains avec la devise vide et d’autres avec le code $.
-
-Votre grand livre est configuré pour utiliser votre devise locale ($), mais vous pouvez le configurer pour utiliser une autre devise avec un taux de change des devises. Si vous désignez une deuxième devise comme « devise de report additionnelle », [!INCLUDE[prod_short](includes/prod_short.md)] enregistre automatiquement les montants en $ et dans cette devise de report additionnelle pour chaque écriture, ainsi que pour d'autres écritures, telles que les écritures TVA. Pour plus d'informations, voir [Configurer une devise de report additionnelle](finance-how-setup-additional-currencies.md). La devise de report additionnelle est le plus souvent utilisée pour faciliter les rapports financiers pour les propriétaires qui résident dans des pays/régions utilisant des devises différentes de la devise locale ($).  
-
-> [!IMPORTANT]
-> Si vous souhaitez utiliser une devise de report additionnelle pour le rapport financier, assurez-vous de bien comprendre les limites. Pour plus d'informations, voir [Configurer une devise de report additionnelle](finance-how-setup-additional-currencies.md).
-
-> [!NOTE]  
-> Lorsque vous effectuez un report dans le grand livre à l’aide d’un code devise, par exemple pour reporter une dépense dans un journal général à l’aide d’un code devise, la transaction est convertie en $ à l’aide du taux de change de la devise à la date de report. L’écriture GL ne contiendra pas d’informations sur la devise utilisée, uniquement sa valeur en $. Si vous voulez garder une trace de la devise d’origine, comme pour une facture, vous devez utiliser les documents de vente et d’achat ainsi que les comptes bancaires qui stockent les informations de code de devise pour les écritures.
+Vous pouvez définir différentes devises dans [!INCLUDE [prod_short](includes/prod_short.md)], par exemple si vous achetez ou vendez dans des devises autres que votre devise locale. Ensuite, pour vous aider à suivre l’évolution des taux de change, vous pouvez gérer les devises manuellement ou configurer un service de taux de change.
 
 ## <a name="currencies"></a>Devises
 
-> [!NOTE]  
+> [!TIP]  
 > Dans [!INCLUDE[prod_short](includes/prod_short.md)], si vous recherchez des informations en temps réel sur les taux de devise étrangère (FX) ou les taux historiques, vous les trouverez sous la désignation de devise. En plus de cet article, consultez aussi [Configurer une devise de report additionnelle supplémentaire](finance-how-setup-additional-currencies.md).
 
-Vous spécifiez les codes devise dans **Devises**, y compris les informations supplémentaires et les paramètres nécessaires pour chaque code devise.
+[!INCLUDE [finance-currencies-def](includes/finance-currencies-def.md)]
 
-> [!TIP]
-> Créez les devises avec le code ISO international pour simplifier l’utilisation de la devise à l’avenir.
-
-|Champ|Description|  
-|---------------------------------|---------------------------------------|  
-|**Code**|Identificateur de la devise.|
-|**Description**|Description libre de la devise.|
-|**Code ISO**|Code international à trois lettres pour la devise défini dans la norme ISO 4217.|
-|**Code numérique ISO**|Référence numérique internationale pour la devise définie dans la norme ISO 4217.|
-|**Date du taux de change**|La dernière date de taux de change effectif.|
-|**Devise U.M.E.**|Indique si la devise est une devise de l’U.M.E. (Union économique et monétaire), telle que EUR.|
-|**Cpte gains constatés report**|Compte sur lequel le gain réel sera reporté lorsque vous recevrez des paiements pour des créances ou enregistrerez le taux de change réel sur les paiements de dépenses. Pour consulter un exemple de transaction en devise comptable, voir l’exemple sous ce tableau. |
-|**Cpte pertes constatées report**|Compte sur lequel la perte réelle sera reportée lorsque vous recevrez des paiements pour des créances ou enregistrerez le taux de change réel sur les paiements de dépenses. Pour consulter un exemple de transaction en devise comptable, voir l’exemple sous ce tableau. |
-|**Compte gains non réalisés**|Compte sur lequel le gain théorique sera reporté lorsque vous effectuerez un ajustement de devise.|
-|**Compte pertes non réalisées**|Compte sur lequel la perte théorique sera reportée lorsque vous effectuerez un ajustement de devise.|
-|**Précision arrondissement montant**|Certaines devises ont d’autres formats pour les montants facture que ceux définis dans la page **Configuration grand livre**. Si vous modifiez la précision d'arrondissement su montant pour une devise, tous les montants facture dans cette devise seront arrondis avec la précision mise à jour.|
-|**Nombre décimales montant**|Certaines devises ont d’autres formats pour les montants facture que ceux définis dans la page **Configuration grand livre**. Si vous modifiez le nombre décimales montant pour une devise, tous les montants facture dans la devise seront arrondis avec les décimales mises à jour.|
-|**Type arrondissement facture**|Spécifie la méthode à utiliser si les montants doivent être arrondis. Les options sont **Au plus près**, **Vers le haut** et **Vers le bas**.|
-|**Précision arrondissement montant unitaire**|Certaines devises ont d’autres formats pour les montants unitaires que ceux définis dans la page **Configuration grand livre**. Si vous modifiez la précision d'arrondissement du montant unitaire pour une devise, tous les montants unitaires dans la devise seront arrondis avec la précision mise à jour.|
-|**Nombre décimales montant unitaire**|Certaines devises ont d’autres formats pour les montants unitaires que ceux définis dans la page **Configuration grand livre**. Si vous modifiez le nombre décimales montant unitaire pour une devise, tous les montants unitaires dans la devise seront arrondis avec les décimales mises à jour.|
-|**Précision arrondissement affectation**|Spécifie la taille de l'intervalle autorisé comme différence d'arrondissement lorsque vous affectez des écritures entre elles dans différentes devises.|
-|**Compte débit arrondissement conversion $**|Spécifie les informations de conversion qui doivent également contenir un compte débit si vous souhaitez insérer des lignes correction pour les différences d’arrondissement dans les journaux généraux en utilisant l’action **Insérer lignes arr. conv. $**.|
-|**Compte crédit arrondissement conversion $**|Spécifie les informations de conversion qui doivent également contenir un compte crédit si vous souhaitez insérer des lignes correction pour les différences d’arrondissement dans les journaux généraux en utilisant l’action **Insérer lignes arr. conv. $**.|
-|**Date dern. ajust. automatique**|Date du dernier ajustement de devise.|
-|**Date dern. modification**|Date de la modification dans la configuration de la devise.|
-|**% tolérance de règlement**|% de tolérance de règlement maximum défini pour cette devise. Pour plus d’informations, consultez [Tolérance de règlement et tolérance d’escompte de paiement](finance-payment-tolerance-and-payment-discount-tolerance.md). |
-|**Montant tolérance de règlement max.**|Montant de tolérance de règlement maximum défini pour cette devise. Pour plus d’informations, consultez [Tolérance de règlement et tolérance d’escompte de paiement](finance-payment-tolerance-and-payment-discount-tolerance.md). |
-|**Facteur devise**|Spécifie la relation entre la devise et la devise locale à l’aide du taux de change réel.|
-|**Cpte GL gains réalisés**|Indique le compte du grand livre utilisé pour reporter les gains sur taux de change pour les ajustements de devise entre la devise locale ($) et la devise de report additionnelle. Les gains sur taux de change sont calculés lorsque le traitement en lot Ajuster taux de change est exécuté pour ajuster les comptes GL. Par défaut, ce champ peut ne pas être visible. Il peut être récupéré en personnalisant la page.|
-|**Compte GL pertes réalisées**|Indique le compte du grand livre utilisé pour reporter les pertes sur taux de change pour les ajustements de devise entre la devise locale ($) et la devise de report additionnelle. Les gains sur taux de change sont calculés lorsque le traitement en lot Ajuster taux de change est exécuté pour ajuster les comptes GL. Par défaut, ce champ peut ne pas être visible. Il peut être récupéré en personnalisant la page.|
-|**Compte gains résiduels DR**|Indique le compte du grand livre utilisé pour reporter les montants des gains résiduels (différences d’arrondissement) lorsqu’une devise de report additionnelle est utilisée dans le module de grand livre. Par défaut, ce champ peut ne pas être visible. Il peut être récupéré en personnalisant la page.|
-|**Compte pertes résiduelles DR**|Indique le compte du grand livre utilisé pour reporter les montants des pertes résiduelles (différences d’arrondissement) lorsqu’une devise de report additionnelle est utilisée dans le module de grand livre. Par défaut, ce champ peut ne pas être visible. Il peut être récupéré en personnalisant la page.|
-|**Différence TVA max. autorisée**|Montant maximum autorisé pour les différences de TVA dans cette devise. Pour plus d’informations, consutez [Correction manuelle des montants de TVA dans des documents achat et vente](finance-work-with-vat.md#correcting-vat-amounts-manually-in-sales-and-purchase-documents). Par défaut, ce champ peut ne pas être visible. Il peut être récupéré en personnalisant la page.|
-|**Type arrondissement TVA**|Spécifie la méthode d’arrondissement pour corriger manuellement les montants TVA dans les documents vente et achat. Par défaut, ce champ peut ne pas être visible. Il peut être récupéré en personnalisant la page.|
+Vous spécifiez les codes devise dans la liste **Devises**, y compris les informations supplémentaires et les paramètres nécessaires pour chaque code devise. Pour plus d’informations, voir [Devises](finance-set-up-currencies.md#curr)
 
 ### <a name="example-of-a-receivable-currency-transaction"></a>Exemple de transaction en devise comptabilité
 
-Lorsque vous recevez une facture d’une compagnie dans une devise étrangère, il est assez facile de calculer la valeur en devise locale ($) de la facture en fonction du taux de change du jour. Cependant, la facture est souvent accompagnée de modalités de paiement afin que vous puissiez reporter le paiement à une date ultérieure, ce qui implique un taux de change potentiellement différent. Ce problème, combiné au fait que les taux de change bancaires diffèrent toujours des taux de change officiels, rend impossible l’anticipation du montant exact en devise locale ($) requis pour couvrir la facture. Si la date d’échéance de la facture s’étend au mois suivant, vous devrez peut-être également réévaluer le montant en devise locale ($) à la fin du mois. L’ajustement de la devise est nécessaire, car la nouvelle valeur $ requise pour couvrir le montant de la facture peut être différente et la dette de la compagnie envers le fournisseur a potentiellement changé. Le nouveau montant $ peut être supérieur ou inférieur au montant précédent et représentera donc un gain ou une perte. Cependant, comme la facture n’a pas encore été payée, le gain ou la perte est considéré comme *non réalisé*. Ultérieurement, la facture est réglée et la banque est revenue au taux de change réel pour le paiement. Ce n’est que maintenant que le gain ou la perte *réalisé(e)* est calculé(e). Ce gain ou cette perte non réalisé(e) est ensuite inversé(e) et le gain ou la perte réalisé(e) est reporté(e) à sa place.
-
-Dans l’exemple suivant, une facture est reçue le 1er janvier avec le montant en devise 1 000. À ce moment là, le taux de change est 1,123.
-
-|Date|Action|Montant devise|Taux document|Montant en $ sur le document|Taux ajustement|Montant gains non réalisés|Taux règlement|Montant pertes constatées report|  
-|-----|----------|------------|-----------|---------|-----------|-------------|---------|---------|
-|1/1|**Facture**|1000|1,123|1123|||||
-|1/31|**Ajustement**|1000||1125|1,125|2|||
-|2/15|**Ajustement Contrepassation sur paiement**|1000||||-2|||
-|2/15|**Règlement**|1000||1120|||1,120|-3|
-
-À la fin du mois, un ajustement de devise est effectué lorsque le taux de change d’ajustement a été fixé à 1,125, ce qui déclenche un gain non réalisé de 2.
-
-Au moment du paiement, le taux de change réel enregistré sur la transaction bancaire indique un taux de change de 1,120.
-
-Ici, il y a une transaction non réalisée. Elle sera donc inversée avec le paiement.
-
-Enfin, le paiement est enregistré et la perte réelle est reportée sur le compte des pertes réalisées.
-
-## <a name="available-currency-functions"></a>Fonctions de devise disponibles
-
-Le tableau suivant décrit les actions clés sur la page **Devises**. Certaines des actions sont expliquées dans les sections suivantes.  
-
-|Menu|Action|Description|
-|-------------|--------------|------------------------------|
-|**Traitement**|**Proposer des comptes**|Utilisez des comptes des autres devises. Les comptes les plus fréquemment utilisés seront insérés.|
-||Modifier la tolérance de règlement|Modifiez la tolérance de règlement maximum, le pourcentage de tolérance de règlement ou les deux, et filtrez par devise. Pour plus d’informations, consultez [Tolérance de règlement et tolérance d’escompte de paiement](finance-payment-tolerance-and-payment-discount-tolerance.md).|
-||**Taux change**|Affichez les taux de change mis à jour pour les devises que vous utilisez.|
-||**Ajuster taux de change**|Ajuster les écritures GL, client, fournisseur et compte bancaire pour obtenir un solde mis à jour si le taux de change a évolué depuis le report des écritures.|
-||**Registre d’ajust. taux de change**|Affichez les résultats de l’exécution du traitement en lot **Ajuster taux de change**. Une ligne est créée pour chaque devise et pour chaque combinaison de devise et de groupe de report comprise dans l’ajustement.|
-|**Service de taux de change**|**Services de taux de change**|Affichez ou modifiez la configuration des services qui sont paramétrés pour extraire les taux de change de devise mis à jour lorsque vous sélectionnez l’action **Mettre à jour les taux de change**.|
-||**Mettre à jour les taux de change**|Obtenez les récents taux de change des devises auprès d’un fournisseur de services.|
-|**Rapports**|**Solde devise étrangère**|Affichez les soldes de tous les clients et fournisseurs en devise étrangère et en devise locale ($). Le rapport affiche deux soldes en $. L’un correspond au solde en devise étrangère converti en $ en utilisant le taux de change en vigueur au moment de la transaction. L’autre correspond au solde en devise étrangère converti en $ en utilisant le taux de change à la date de travail.|
+[!INCLUDE [finance-currencies-example](includes/finance-currencies-example.md)]
 
 ## <a name="exchange-rates"></a>Taux de change
 
@@ -203,9 +125,12 @@ La valeur dans le champ **Taux de change** de la page **Devises** est mise à jo
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/use-multiple-currencies-dynamics-365-business-central/)
 
 ## <a name="see-also"></a>Voir aussi
+
+[Devises dans Business Central](finance-currencies.md)  
+[Configurer des devises](finance-set-up-currencies.md)  
 [Configurer une devise de report additionnelle](finance-how-setup-additional-currencies.md)  
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

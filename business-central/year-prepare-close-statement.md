@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: year closing, close accounting period, close fiscal year, aging, creditor payments, vendor payments, assets, liabilities, equity, analysis, reporting, financial report, business intelligence, BI, Power Bi, KPI
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: e9eb5243541cdd365aa6a92b1278f38da531ed54
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: d10ae12501feba348794c3deaa3ca66e221553b9
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8141831"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8521426"
 ---
 # <a name="preparing-closing-statements"></a>Préparation des relevés de fermeture
 Il existe plusieurs rapports standard que vous pouvez utiliser pour rassembler les informations dont vous avez besoin pour préparer les relevés de fermeture de votre compagnie.
@@ -35,7 +35,7 @@ Pour voir un rapport, sélectionnez l’icône ![Ampoule qui ouvre la fonction T
 
 ## <a name="see-also"></a>Voir aussi
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Veille économique](bi.md)
 
 

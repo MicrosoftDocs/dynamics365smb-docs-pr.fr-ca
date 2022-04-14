@@ -10,12 +10,12 @@ ms.search.keywords: ''
 ms.search.form: 7371, 7374, 7379
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 6802009029d8eea434e7c5096f4efb591ee4993b
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: ac50c7cf8aaf68ab0846a79788bb13e63a3c8b50
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8382751"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8513377"
 ---
 # <a name="assign-default-bins-to-items"></a>Affecter des zones par défaut à des articles
 Si vous utilisez des zones dans un emplacement, l'affectation de zones par défaut à vos articles peut simplifier considérablement leur processus de livraison, de réception et de déplacement. Lorsqu'une zone par défaut est affectée à un article, cette zone est suggérée chaque fois que vous lancez une transaction pour cet article. Les zones par défaut sont définies sur la page **Contenu de la zone**.  
@@ -44,7 +44,7 @@ Vous pouvez être amené à modifier l'affectation de la zone par défaut pour u
 [Configuration de Warehouse Management](warehouse-setup-warehouse.md) 
 [Gestion d’assemblage](assembly-assemble-items.md)
 [Détails de conception : Warehouse Management](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

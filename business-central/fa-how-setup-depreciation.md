@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.search.keywords: write down
 ms.date: 06/28/2021
 ms.author: edupont
-ms.openlocfilehash: 228ca9aa8b1f476e5063bd0f8d6728f18cfafaf3
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: e70b14b5344acd9b59034b5847455417b8225182
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8136280"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8518217"
 ---
 # <a name="set-up-fixed-asset-depreciation"></a>Configurer un amortissement immobilisation
 
@@ -97,7 +97,7 @@ Si vous activez ce champ, le traitement en lot Calculer amortissement utilise l�
 [Immobilisations](fa-manage.md)  
 [Finance](finance.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

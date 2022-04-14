@@ -1,17 +1,17 @@
 ---
 title: Créer des nomenclatures de production
 description: Découvrez comment créer une nomenclature de production, de nouvelles versions d’une nomenclature de production et utiliser la formule de calcul de quantité.
-author: SorenGP
+author: bholtorf
 ms.topic: conceptual
 ms.search.form: 9287, 99000786, 99000787, 99000788, 99000789, 99000795, 99000797, 99000800, 99000809, 99000811, 99000812, 99000818
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: ff4e2068d8ba588b6d92839538df6bfd2ecade24
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 07563e285e6806a1a2010446d4da65fd52c9ed16
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8130267"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8516910"
 ---
 # <a name="create-production-boms"></a>Créer des nomenclatures de production
 
@@ -85,6 +85,10 @@ La relation entre chacun des composants est définie par la formule de calcul. V
 - **Longueur x Largeur** - Quantité = Quantité par * Longueur x Largeur  
 - **Longueur x Largeur x Profondeur** - Quantité = Quantité par x Longueur x Largeur x Profondeur  
 - **Poids** - Quantité = Quantité par x Poids  
+- **Quantité fixe** - Quantité = Quantité par
+
+> [!NOTE]
+> La formule de calcul **Quantité fixe** permet de s’assurer que la consommation d’une composante reste la même, quelles que soient les quantités de rebuts ou de sorties. Pour les composantes de bon de production, lorsque le champ **Formule de calcul** est défini sur **Quantité fixe**, la valeur du champ **Quantité prévue** est toujours égale à celle du champ **Quantité par**. Le pourcentage de rebut défini sur la même ligne est ignoré. La quantité fixée est respectée par le rapport **Disponibilité par nomenclature**. Le rapport affichera l’article comme goulot d’étranglement si la quantité disponible est inférieure à la quantité dans le champ **Quantité par parent**. Les champs **Capable de fabriquer le parent** et **Capable de fabriquer le meilleur article** sont toujours vides, quelle que soit la quantité disponible. La quantité fixe est également incluse dans les calculs des coûts standard. La taille du lot de l’article produit a un impact sur le coût alloué à un article.
 
 ### <a name="example"></a>Exemple :
 
@@ -98,7 +102,7 @@ Une nomenclature de production répertorie 70 feuilles de métal dotées des dim
 [Planification](production-planning.md)   
 [Inventaire](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

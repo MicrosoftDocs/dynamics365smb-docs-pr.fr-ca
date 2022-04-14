@@ -8,12 +8,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: cb917d1d54d66e02315e82ef6596a8fef65fb077
-ms.sourcegitcommit: 6d48c1f601ed22b6b0358311baf63c073ab75e64
+ms.openlocfilehash: 9cc04e74a680edae64db5edbe13cc9185af043e9
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8366209"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8521478"
 ---
 # <a name="troubleshooting-self-service-sign-up"></a>Dépannage de l'inscription en self-service
 L'inscription à [!INCLUDE[prod_short](includes/prod_short.md)] est simple et peut être effectuée très rapidement. Vous pouvez créer un compte gratuit même si vous représentez une société existante. Cet article aborde les problèmes que vous pouvez rencontrer lors de l'inscription.
@@ -46,7 +46,7 @@ Pour obtenir une vue d'ensemble des marchés actuellement pris en charge pour Dy
 [S’inscrire à un essai gratuit de Dynamics 365 Business Central](trial-signup.md)  
 [FAQ sur l’essai de Dynamics 365 Business Central](trial-faq.md)  
 [Bienvenue dans [!INCLUDE[prod_short](includes/prod_long.md)]](index.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Fonctionnalités locales](about-localization.md)  
 [Disponibilité par pays/région et traductions prises en charge](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations?toc=/dynamics365/business-central/toc.json)  
 [Disponibilité internationale de Microsoft Dynamics 365](/dynamics365/get-started/availability)  

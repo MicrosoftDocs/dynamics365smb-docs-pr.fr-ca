@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 5830, 9101, 99000822, 99000855
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 27dce308070eb72ae7699bae084b6bedb0324ba7
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 377f0af230bd1a1d77bcbc303a9b5cdefcb42ca6
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8146378"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8517879"
 ---
 # <a name="track-relations-between-demand-and-supply"></a>Suivre les relations entre l'offre et la demande
 
@@ -61,7 +61,7 @@ la page inclut les écritures représentant une quantité excédentaire non cha�
 [Détails de conception : réservation, chaînage et message d'action](design-details-reservation-order-tracking-and-action-messaging.md)  
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
 [Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

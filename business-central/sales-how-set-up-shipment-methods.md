@@ -10,12 +10,12 @@ ms.search.keywords: incoterms
 ms.search.form: 11, 130
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 7f83c8e3e001fe1b92e975d165d40a353ece032a
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 4f55e4ac7aaad445a2db606fcbc46856f4800f18
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8134935"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8517775"
 ---
 # <a name="set-up-shipment-methods"></a>Configurer les méthodes de livraison
 
@@ -41,7 +41,7 @@ Vous définissez la description et le code de chaque méthode de livraison sur l
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Incoterms sur iccwbo.org](https://iccwbo.org/resources-for-business/incoterms-rules)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

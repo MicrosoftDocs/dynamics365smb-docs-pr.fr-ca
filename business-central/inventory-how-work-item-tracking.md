@@ -10,12 +10,12 @@ ms.search.keywords: ''
 ms.search.forms: 6503, 6515, 6513, 6512, 6502, 6506, 6501, 6510, 6507, 6500, 6505, 6508, 9126, 6526, 6516, 6511, 6504, 6509, 163, 6550,
 ms.date: 08/31/2021
 ms.author: edupont
-ms.openlocfilehash: 644b21b887d622c4ece3b3354de227cb4a1d89c5
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 883a2d75b2d12f87a49eb84a6b545da30310274c
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8141005"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8518009"
 ---
 # <a name="track-items-with-serial-lot-and-package-numbers"></a>Effectuer le suivi des articles avec les numéros lot, de série et paquet
 
@@ -234,6 +234,6 @@ Le reclassement de la traçabilité pour un article consiste à remplacer un num
 [Détails de conception : traçabilité](design-details-item-tracking.md)  
 [Détails de conception : traçabilité et réservations](design-details-item-tracking-and-reservations.md)  
 [Réserver des articles](inventory-how-to-reserve-items.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

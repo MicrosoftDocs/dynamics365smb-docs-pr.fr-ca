@@ -11,12 +11,12 @@ ms.search.keywords: stock
 ms.search.form: 908, 909, 925, 926, 504, 501, 500, 499, 99000896, 342, 515, 5417, 5415, 5871, 5530, 492, 157, 5540, 5416, 5414, 1872, 1873, 99000902, 353, 491, 9231, 5390
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 7884eaa5e929eed27607fe77b3bea31fe6a12dc8
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: d87f18b6af045e371cefe88ed35f62bc028fab2f
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8130524"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8514995"
 ---
 # <a name="view-the-availability-of-items"></a>Voir la disponibilité des articles
 Dans le contexte d'une tâche professionnelle, vous pouvez obtenir des informations avancées sur la disponibilité et l'emplacement d'un article, par exemple en discutant avec un client à propos d'une date de livraison.
@@ -125,9 +125,9 @@ Si un ou plusieurs composantes d'assemblage ne sont pas disponibles, cela est al
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Utiliser les nomenclatures](inventory-how-work-BOMs.md)    
 [Configurer des emplacements](inventory-how-setup-locations.md)  
-[Transfert d'inventaire entre des emplacements](inventory-how-transfer-between-locations.md)  
+[Transfert de l'inventaire entre des emplacements](inventory-how-transfer-between-locations.md)  
 [Vendre des produits](sales-how-sell-products.md)      
-[Utilisation de Business Central](ui-work-product.md)  
+[Utiliser Business Central](ui-work-product.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)
 
 

@@ -10,12 +10,12 @@ ms.search.keywords: dimension, correction, correct, business intelligence
 ms.search.form: 116, 540, 2588
 ms.date: 09/27/2021
 ms.author: bholtorf
-ms.openlocfilehash: 1a5647045e3b7aff1b709096b8b856485ce762e9
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: 497daecd0834b2651e52131df809d12d45b18d48
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8381733"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8519131"
 ---
 # <a name="troubleshooting-and-correcting-dimensions"></a>Dépannage et correction des dimensions
 
@@ -103,7 +103,7 @@ Si l'action Annuler n'est pas disponible, par exemple parce que vous avez effect
 
 Soyez prudent lorsque vous corrigez de grands ensembles d'entrées, par exemple, des ensembles comprenant plus de 10 000 entrées. Si vous le pouvez, nous vous recommandons d'utiliser les filtres pour exécuter les corrections sur des jeux de données plus petits. Il est également judicieux d'exécuter des corrections en dehors des heures normales de bureau. 
 
-### <a name="using-analysis-views-with-dimension-corrections"></a>Utilisation des vues d'analyse avec des corrections de dimensions
+### <a name="use-analysis-views-with-dimension-corrections"></a>Utiliser des vues d’analyse avec des corrections de dimensions
 
 Si **Mise à jour lors du report** est activé pour une vue d'analyse, [!INCLUDE[prod_short](includes/prod_short.md)] peut afficher la vue lorsque les documents et les journaux sont reportés. Vous pouvez également mettre à jour les vues avec ce paramètre activé avec les résultats des corrections de dimensions. Pour ce faire, activez le bouton de basculement **Mettre à jour les vues d'analyse**. La mise à jour des vues d'analyse peut avoir un impact sur les performances, en particulier pour les grands jeux de données, c'est pourquoi nous vous recommandons de mettre à jour les vues d'analyse uniquement pour les petits jeux de données.  
 
@@ -118,11 +118,11 @@ Si une correction ne se termine pas, un avertissement s'affiche sur la carte de 
 > [!NOTE]
 > La réinitialisation d'une correction incomplète n'affectera pas les mises à jour des vues d'analyse, car celles-ci se produisent à la fin du processus de correction.
 
-### <a name="using-cost-accounting-with-corrected-gl-entries"></a>Utilisation de la comptabilité analytique avec les écritures GL corrigées
+### <a name="use-cost-accounting-with-corrected-gl-entries"></a>Utiliser la comptabilité analytique avec les écritures GL corrigées
 
 Une fois les dimensions corrigées, vos données pour la comptabilité analytique seront désynchronisées. La comptabilité analytique utilise des dimensions pour agréger les montants des centres de coûts et des objets de coûts, et pour exécuter les affectations de coûts. La modification des dimensions des écritures GL signifiera probablement que vous réexécuterez vos modèles de comptabilité analytique. Que vous deviez simplement supprimer quelques registres de coûts et réexécuter les affectations, ou tout supprimer et réexécuter tous vos modèles, dépend des données qui ont été mises à jour et de la configuration de vos fonctionnalités de comptabilité analytique. Vous devez manuellement identifier où les corrections de dimensions auront un impact sur la comptabilité analytique et où des mises à jour sont nécessaires. [!INCLUDE[prod_short](includes/prod_short.md)] ne propose pas actuellement de moyen automatisé de le faire.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Utilisation des Dimensions](finance-dimensions.md)
+[Utiliser des Dimensions](finance-dimensions.md)
 [Analyser les données par dimension](bi-how-analyze-data-dimension.md)  

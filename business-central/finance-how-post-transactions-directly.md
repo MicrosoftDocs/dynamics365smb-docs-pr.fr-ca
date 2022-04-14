@@ -10,12 +10,12 @@ ms.search.keywords: direct posting, general ledger
 ms.search.form: 39, 251
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 26fb9695778d3a8a63c740a6e4303bfd001ab707
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: cf61b53db298f4c133a3e733e4bb95d3506af05a
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8132950"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8517534"
 ---
 # <a name="post-transactions-directly-to-the-general-ledger"></a>Reporter les transactions directement dans le grand livre
 
@@ -23,14 +23,14 @@ Les journaux généraux vous permettent de reporter des transactions financière
 
 Une utilisation classique du journal général est de reporter les dépenses des employés avec leurs fonds propres au cours des activités professionnelles, pour un remboursement ultérieur. Pour plus d'informations, voir [Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md).
 
-Les journaux généraux reportent les transactions financières directement sur les comptes du grand livre et d'autres comptes tels que les comptes bancaires, clients, fournisseurs et employés. Le report avec un journal général crée toujours des écritures dans les comptes du grand livre. C'est le cas même lorsque, par exemple, vous reportez une ligne journal sur un compte client, parce qu'une écriture est reportée dans un compte client du grand livre via un groupe de report. Vous pouvez personnaliser votre version d'un journal général en configurant un lot ou un modèle journal. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
+Les journaux généraux reportent les transactions financières directement sur les comptes du grand livre et d'autres comptes tels que les comptes bancaires, clients, fournisseurs et employés. Le report avec un journal général crée toujours des écritures dans les comptes du grand livre. C'est le cas même lorsque, par exemple, vous reportez une ligne journal sur un compte client, parce qu'une écriture est reportée dans un compte client du grand livre via un groupe de report. Vous pouvez personnaliser votre version d'un journal général en configurant un lot ou un modèle journal. Pour plus d'informations, reportez-vous à [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 
 Contrairement aux écritures qui sont reportées avec des documents qui nécessitent un processus de note de crédit, vous pouvez correctement inverser les écritures reportées avec le journal général. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md).
 
 ## <a name="to-post-a-transaction-directly-to-a-general-ledger-account"></a>Pour reporter une transaction directement dans le compte GL
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux généraux**, puis choisissez le lien associé.
-2. Ouvrez le lot journal général approprié. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
+2. Ouvrez le lot journal général approprié. Pour plus d'informations, reportez-vous à [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 3. Sur une nouvelle ligne journal, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]    
 
     > [!NOTE]
@@ -43,11 +43,11 @@ Contrairement aux écritures qui sont reportées avec des documents qui nécessi
 
 ## <a name="see-also"></a>Voir aussi
 
-[Utilisation de journaux généraux](ui-work-general-journals.md)  
+[Utiliser des journaux généraux](ui-work-general-journals.md)  
 [Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md)  
 [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)  
 [Finance](finance.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

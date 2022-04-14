@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour les présentations de rapport personnalisées
 description: Découvrez comment mettre à jour une présentation de rapport personnalisée utilisée sur un rapport lorsque des modifications de conception sont apportées à l’ensemble de données du rapport, par exemple.
-author: SorenGP
+author: jswymer
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -9,14 +9,16 @@ ms.workload: na
 ms.search.form: 9652, 9650
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: d04b6b37573c81c3eef43fd2077b42bd7f5e1884
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 76e4b2351e3df740871b5f79e6086c1a70079023
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8144629"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8517222"
 ---
-# <a name="update-custom-report-layouts"></a>Mettre à jour les présentations de rapport personnalisées
+# <a name="legacy-update-custom-report-layouts"></a>(Hérité) Mettre à jour les présentations de rapport personnalisées
+
+[!INCLUDE[legacy-custom-layouts](includes/legacy-custom-layouts.md)]
 
 À l'occasion, vous pouvez être amené à mettre à jour une présentation de rapport personnalisée qui est utilisée dans un rapport. Cela est nécessaire si une modification de conception a été apportée à l'ensemble de données de rapport, par exemple, si un champ utilisé dans la présentation a été supprimé de l'ensemble de données de rapport. Si une présentation de rapport requiert une mise à jour, vous obtiendrez un message d'erreur lorsque vous tentez de visualiser, d'imprimer ou d'enregistrer le rapport.  
 
@@ -28,9 +30,9 @@ Certaines modifications de l'ensemble de données de rapport peuvent être autom
 
 ## <a name="to-update-one-or-more-custom-report-layouts"></a>Pour mettre à jour une ou plusieurs présentations de rapport personnalisées  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Présentations de rapport**, puis choisissez le lien associé.  
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Sélection présentation rapport**, puis sélectionnez le lien associé.  
 
-2.  Sur la page **Présentations rapport**, si vous souhaitez mettre à jour un rapport spécifique, sélectionnez la présentation dans la liste, puis choisissez l'action **Mettre à jour présentation**. Ou, si vous souhaitez mettre à jour toutes les présentations de rapport personnalisées pour la compagnie, choisissez l'action **Mettre à jour toutes les présentations**.  
+2.  Sur la page **Sélection présentation rapport**, si vous souhaitez mettre à jour un rapport spécifique, sélectionnez la présentation dans la liste, puis choisissez l’action **Mettre à jour présentation**. Ou, si vous souhaitez mettre à jour toutes les présentations de rapport personnalisées pour la compagnie, choisissez l'action **Mettre à jour toutes les présentations**.  
 
 Si aucune erreur ne se produit, la mise à jour est appliquée aux présentations de rapport. Si des erreurs se produisent, un message contenant les erreurs s'affiche. Vous devez ensuite modifier manuellement la présentation de rapport personnalisée pour corriger l'erreur. Pour plus d'informations, consultez [Résolution des erreurs](ui-update-report-layouts.md#FixErrors).  
 
@@ -66,7 +68,7 @@ Une fois que vous avez modifié la présentation, essayez de mettre de nouveau �
 
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des présentations de rapport](ui-manage-report-layouts.md)  
- [Utilisation des rapports, des traitements en lot et des objets XMLport](ui-work-report.md)  
+ [Utiliser des rapports, des traitements en lot et des XMLports](ui-work-report.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

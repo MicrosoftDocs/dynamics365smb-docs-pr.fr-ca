@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 7367
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: f45908cf5a1d4352039cf83ab1db2719caca8a53
-ms.sourcegitcommit: cdb57f14960f58b1d36a1b373fbf35dfed5fad9e
+ms.openlocfilehash: 8fb409e9ca0a8540fa2ea997faae790f78086d6e
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8334600"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8520058"
 ---
 # <a name="set-up-bin-types"></a>Configurer des types de zone
 Vous pouvez diriger la circulation des articles vers les emplacements que vous avez définis pour des activités entrepôt particulières. Vous attribuez à chaque zone ses activités de flux de base, et définissez de cette façon la manière dont une zone est utilisée, en lui affectant un type.  
@@ -48,7 +48,7 @@ Les types de zones que vous pouvez créer sont répertoriés ci-après.
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

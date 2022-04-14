@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: customized report, document layout, logo, personalize
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 4b417c689c02a0252e3967379e33a88386ad694f
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: cbd0fbea2e1567875dd7bda556271f693234a502
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8147476"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8510749"
 ---
 # <a name="define-document-layouts-for-customers-and-vendors"></a>Définir des présentations de document pour les clients et les fournisseurs
 Lorsque des présentations de rapport personnalisées sont définies, vous pouvez les sélectionner à partir des fiches client et fournisseur pour spécifier les présentations qui sont utilisées pour différents types de documents que vous créez pour le client ou le fournisseur en question. La valeur du champ **Utilisation** définit le processus pour lequel la présentation de document sera utilisée, par exemple **Rappel**, **Livraison** et **Confirmation**.
@@ -59,8 +59,8 @@ L'adresse de courriel du contact est maintenant insérée sur la ligne de prése
 [Importer et exporter une présentation de rapport ou de document personnalisée](ui-how-import-and-export-report-layout.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Gestion des présentations de rapport](ui-manage-report-layouts.md)  
-[Utilisation des rapports, des traitements en lot et des objets XMLport](ui-work-report.md)  
-[Utilisation des rapports, des traitements en lot et des objets XMLport](ui-work-report.md)  
+[Utiliser des rapports, des traitements en lot et des XMLports](ui-work-report.md)  
+[Utiliser des rapports, des traitements en lot et des XMLports](ui-work-report.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,22 +1,24 @@
 ---
-title: 'Procédure : gérer la configuration de la compagnie dans une feuille'
-description: La feuille configuration est l’emplacement principal dans lequel vous pouvez planifier, suivre et effectuer votre travail de configuration de la compagnie.
+title: Gérer la configuration de la compagnie dans une feuille
+description: Si vous utilisez RapidStart Services, la feuille configuration est l’emplacement principal dans lequel vous pouvez planifier, suivre et effectuer votre travail de configuration de la compagnie.
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
+ms.search.form: 8632
 ms.date: 06/14/2021
 ms.author: edupont
-ms.openlocfilehash: 23a999ab500512a4aaed2aaab7e205629b5954b7
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: c678d48b202043110627a2c8b29ae12be045d38d
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8141369"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8514210"
 ---
-# <a name="manage-company-configuration-in-a-worksheet"></a>Gérer la configuration de la compagnie dans une feuille
+# <a name="manage-company-configuration-in-a-worksheet-with-rapidstart-services"></a>Gérer la configuration de la compagnie dans une feuille avec RapidStart Services
+
 La feuille configuration est l’emplacement principal dans lequel vous pouvez planifier, suivre et effectuer votre travail de configuration. Vous pouvez créer une feuille pour chaque compagnie avec laquelle vous travaillez ou créer une feuille configuration standard qui peut être utilisée pour configurer plusieurs compagnies identiques.  
 
 La première étape de la préparation d’un package de configuration est de sélectionner une compagnie que vous avez déjà configurée et modifiée pour l’adapter à la plupart des besoins de votre solution. Cette compagnie sert de base à votre travail de configuration pour les nouvelles compagnies. Dans la feuille, vous indiquez les tables que vous souhaitez que votre configuration contrôle et traite. Étant donné que la plupart des tables de [!INCLUDE[prod_short](includes/prod_short.md)] ont des relations et des dépendances avec d’autres tables, vous devez également inclure ces tables liées en cas de besoin. Ensemble, ces tables serviront ensuite de structure à partir de laquelle vous établirez une nouvelle compagnie. La procédure suivante vous permet de créer un colis, puis de déployer votre configuration.  
@@ -25,8 +27,9 @@ Pour vous aider à suivre et à consulter votre travail, utilisez le récapitula
 
 Les procédures suivantes expliquent comment ajouter et personnaliser les informations de table pour votre configuration.  
 
-## <a name="to-open-the-configuration-worksheet"></a>Pour ouvrir la feuille configuration  
-1.  Dans [!INCLUDE[prod_short](includes/prod_short.md)], ouvrez la compagnie qui sert de base pour la configuration, puis ouvrez son tableau de bord Responsable de l'implémentation de RapidStart Services.  
+## <a name="to-open-the-configuration-worksheet"></a>Pour ouvrir la feuille configuration
+
+1.  Dans [!INCLUDE[prod_short](includes/prod_short.md)], ouvrez la compagnie qui sert de base pour la configuration.  
 2.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille de calcul de configuration**, puis sélectionnez le lien associé.  
 
 ## <a name="to-add-a-table-to-the-worksheet"></a>Pour ajouter une table à la feuille  
@@ -40,9 +43,9 @@ Les procédures suivantes expliquent comment ajouter et personnaliser les inform
     > [!NOTE]  
     > Des tables connexes ne sont pas ajoutées à l'aide de l'action **Extraire les tables liées** si l'une des conditions suivantes est vraie :
     > - La relation est conditionnelle.  
-    > Exemple : si vous obtenez des tables liées pour la table **Client**, la table **Emplacement** n'est pas ajoutée, car elle est uniquement liée conditionnellement à la table **Client**, à savoir si le champ **Code d'emplacement** dans la table **Client** est renseigné.  
+    >     Exemple : si vous obtenez des tables liées pour la table **Client**, la table **Emplacement** n'est pas ajoutée, car elle est uniquement liée conditionnellement à la table **Client**, à savoir si le champ **Code d'emplacement** dans la table **Client** est renseigné.  
     > - La table liée est filtrée.  
-    > Exemple : un champ dans la table liée a une clause WHERE. La raison pour cela est que les informations des relations associées sont stockées dans la table système **Champ**, qui n'est pas totalement accessible à l'application.  
+    >     Exemple : un champ dans la table liée a une clause WHERE. La raison pour cela est que les informations des relations associées sont stockées dans la table système **Champ**, qui n'est pas totalement accessible à l'application.  
     > Vous devez ajouter de tels types de tableaux manuellement en suivant l'étape 4 dans cette procédure.  
 
 8.  Pour modifier la liste des tables résultantes, sélectionnez une table que vous souhaitez supprimer, puis sélectionnez l'action **Supprimer**.  

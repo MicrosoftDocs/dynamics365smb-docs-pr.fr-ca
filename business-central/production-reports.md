@@ -4,14 +4,15 @@ description: Découvrez les rapports et analyses de production disponibles dans 
 author: AndreiPanko
 ms.topic: conceptual
 ms.search.keywords: reporting
+ms.search.form: Report_5871, Report_5872, Report_99000753, Report_99000756, Report_99000757, Report_99000758, Report_99000791, Report_99000780, Report_99000783, Report_99000784, Report_99000788, Report_99000767
 ms.date: 06/01/2021
 ms.author: andreipa
-ms.openlocfilehash: e371e8956ec07a8e17caed046b96b036e640b707
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 9163330c1150a4af17954d5788f24cf004dca6dd
+ms.sourcegitcommit: 670d589c6870a01e0655c2da800560ed69d18db2
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8146342"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455586"
 ---
 # <a name="production-reports-and-analytics-in-business-central"></a>Rapports et analyses de production dans Business Central
 

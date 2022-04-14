@@ -11,12 +11,12 @@ ms.workload: na
 ms.search.keywords: incoming document
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: a4abd45046beb70376490dbd4209f33debf6b573
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: a9118614872559a9b2c321e7869f1b013266d92b
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8382069"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8522154"
 ---
 # <a name="allocate-costs-to-intercompany-partners"></a>Allouer les coûts aux partenaires intercompagnie
 Lorsque vous utilisez des écritures intercompagnie pour transférer des documents entre compagnies partenaires, les paramètres liés à la TVA (principalement le groupe de report marché TVA) affectés aux comptes client ou fournisseur (associés au partenaire intercompagnie) contrôlent si et comment la TVA est calculée et enregistrée. Vous pouvez également effectuer des répartitions de coûts directement à partir d’un bon de commande vers des compagnies partenaires. Par exemple, si vous enregistrez une facture achat d’un fournisseur externe et si vous souhaitez répartir tout ou partie des coûts à un ou plusieurs partenaires intercompagnie.
@@ -90,7 +90,7 @@ Lorsque vous utilisez un document pour répartir les coûts entre les partenaire
 [Gestion des transactions intersociétés](intercompany-manage.md)  
 [Finance](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
-[Utilisation de journaux généraux](ui-work-general-journals.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser des journaux généraux](ui-work-general-journals.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

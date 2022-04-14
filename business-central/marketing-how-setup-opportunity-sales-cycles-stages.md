@@ -10,12 +10,12 @@ ms.search.keywords: relationship, prospect
 ms.search.forms: 5122, 5121, 5120, 5175, 5119
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: 5eb180d1190e56dc7a43354b5aef2637500a38be
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: bc42d30cfbfd664ec3d60576f21f4e7cbf3967e8
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8148444"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8522938"
 ---
 # <a name="set-up-opportunity-sales-cycles-and-cycle-stages"></a>Configurer des cycles de vente opportunité et des phases de cycle
 Avant de pouvoir utiliser les opportunités de vente, vous devez configurer les cycles de vente et les étapes correspondantes. Un cycle de vente est composé d'une série d'étapes allant du contact initial à la fermeture d'une vente. Chaque phase peut avoir certaines exigences à respecter, par exemple pour un devis, avant qu'une opportunité puisse accéder à la phase suivante. Vous pouvez également spécifier si une phase peut être ignorée. Vous pouvez configurer autant de cycles de vente et de phases que nécessaire.
@@ -65,7 +65,7 @@ Lorsque vous avez créé une tâche, vous pouvez l'affecter à une opportunité 
 ## <a name="see-also"></a>Voir aussi
 [Traitement des opportunités de vente](marketing-processing-sales-opportunities.md)  
 [Vente](sales-manage-sales.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

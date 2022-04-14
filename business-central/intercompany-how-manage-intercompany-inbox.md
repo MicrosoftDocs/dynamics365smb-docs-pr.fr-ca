@@ -8,17 +8,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: incoming document
 ms.search.form: 600, 605, 618, 650, 651, 648, 649, 617, 614, 642, 643, 640, 641, 613, 616, 646, 647, 644, 645, 615, 619, 612, 638, 639, 636, 637, 611
-ms.date: 04/01/2021
+ms.date: 03/09/2022
 ms.author: edupont
-ms.openlocfilehash: d0f52d1debe40eb57ac0deb914d0e6bc32f0a5a1
-ms.sourcegitcommit: 6d48c1f601ed22b6b0358311baf63c073ab75e64
+ms.openlocfilehash: 868f07b2b56ccaefb4c56e26be72c27b941d950c
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8366385"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8522128"
 ---
 # <a name="manage-the-intercompany-inbox-and-outbox"></a>Gérer la boîte de réception et la boîte d'envoi intersociétés
 Toutes les transactions intersociétés que vous recevez par voie électronique de vos partenaires intersociétés sont stockées dans la boîte de réception Intersociétés.  
+
+Cependant, selon la configuration intercompagnie de votre compagnie, certaines transactions sont automatiquement répliquées vers les partenaires intercompagnies concernés. À partir de la 1re vague de lancement 2022, vous pouvez configurer la compagnie afin que soient créées automatiquement les transactions intercompagnies reçues des partenaires intercompagnies, reportées via le journal général intercompagnie. Pour plus d’informations, voir [Pour renseigner et reporter un journal intercompagnie](intercompany-how-work-documents-journals.md#to-fill-in-and-post-an-intercompany-journal).  
 
 ## <a name="organizing-the-inbox"></a>Organisation de la boîte de réception  
  Les champs de filtre, situés en haut de la page de la boîte de réception, permettent de déterminer les transactions qui apparaissent sur la page. Par exemple, si vous souhaitez uniquement consulter les transactions créées par un partenaire précis, vous pouvez définir les filtres **Source de la transaction** et **Code Partenaire Intercompagnie**.  
@@ -51,14 +53,16 @@ Vous pouvez utiliser le champ **Afficher la source de la transaction** pour filt
  > Si les partenaires intercompagnies sont exprimés dans la même base de données, les transactions sont transférées sans recourir à un fichier ou un courriel. Voir le champ **Type transfert** sur la page **Partenaire intercompagnie**. <br /><br />
 Dans ce cas, vous pouvez configurer le système pour qu'il ignore la boîte de réception et la boîte d'envoi en sélectionnant la case à cocher **Auto. Accepter les transactions** sur la page **Partenaire intercompagnie** et la case à cocher **Auto. Envoyer des transactions** sur la page **Configuration intercompagnie** respectivement. Les transactions intersociétés entrantes ne peuvent être acceptées automatiquement que si le planificateur de tâches est activé. Pour plus d’informations, reportez-vous à la rubrique [Configuration de Business Central Server - Paramètres du planificateur de tâches](/dynamics365/business-central/dev-itpro/administration/configure-server-instance#Task).
 
-## <a name="to-import-intercompany-transactions-from-a-file"></a>Pour importer des transactions intersociétés à partir d'un fichier  
+## <a name="to-import-intercompany-transactions-from-a-file"></a>Pour importer des transactions intersociétés à partir d'un fichier
+
+[!INCLUDE [onprem_only_md](includes/onprem_only_md.md)]
+
 Si l'un de vos partenaires intercompagnies ne figure pas dans la même base de données que votre compagnie, vous pouvez recevoir de lui des transactions intercompagnies dans un fichier .xml. Vous devez ensuite importer ces transactions dans votre boîte de réception.  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Informations sur la compagnie**, puis choisissez le lien associé.
-2. Enregistrez le fichier à l'emplacement spécifié dans le champ **Détails boîte réception intercompagnie** de la page **Informations compagnie**.  
-3. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Transactions boîte de réception Intersociétés**, puis sélectionnez le lien associé.
-4. Sur la page **Transactions boîte de réception Intersociétés**, choisissez l'action **Importer le fichier de transaction**.  
-5. sur la page qui apparaît, sélectionnez le fichier .xml qui contient les transactions, puis cliquez sur le bouton **Ouvrir**.  
+1. Enregistrez le fichier à l’emplacement spécifié dans le champ **Détails boîte de réception intersociétés** lorsque vous configurez l’intersociété.  
+2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Transactions boîte de réception Intersociétés**, puis sélectionnez le lien associé.
+3. Sur la page **Transactions boîte de réception Intersociétés**, choisissez l'action **Importer le fichier de transaction**.  
+4. sur la page qui apparaît, sélectionnez le fichier .xml qui contient les transactions, puis cliquez sur le bouton **Ouvrir**.  
 
 Les transactions sont importées dans la boîte de réception. Vous pouvez alors les traiter.
 
@@ -101,8 +105,8 @@ La procédure suivante décrit comment recréer des transactions de boîte de r�
 [Gestion des transactions intersociétés](intercompany-manage.md)  
 [Finance](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
-[Utilisation de journaux généraux](ui-work-general-journals.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser des journaux généraux](ui-work-general-journals.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

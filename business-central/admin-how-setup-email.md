@@ -10,17 +10,17 @@ ms.search.keywords: SMTP, email, Office 365, connector
 ms.search.form: 1805, 9813, 9814, 1262, 1263
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 0c1dc36384541742e36cc0a74dc00fdecaf18b37
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: ed1fb96cd3fb5a966df7f48f0918ac1514312c49
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8382029"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8515833"
 ---
 # <a name="set-up-email"></a>Configurer la messagerie
-Les utilisateurs au sein des entreprises envoient des informations et des documents, tels que des documents de vente, des bons de commande et des factures, par courriel, au quotidien. Les administrateurs peuvent faciliter cette tâche en connectant un ou plusieurs comptes de messagerie à [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez donc envoyer des documents sans avoir à ouvrir une application de messagerie. Vous pouvez composer chaque message individuellement avec des outils de mise en forme de base, tels que des polices, des styles, des couleurs, etc., et ajouter des pièces jointes pouvant atteindre 100 Mo. Les administrateurs peuvent également configurer des présentations de rapports qui incluent uniquement les informations clés des documents. Pour plus d'informations, voir [Envoyer des documents par courriel](ui-how-send-documents-email.md).
+Les utilisateurs au sein des entreprises envoient des informations et des documents, tels que des documents de vente, des bons de commande et des factures, par courriel, au quotidien. Les administrateurs peuvent se connecter à un ou plusieurs comptes de messagerie à [!INCLUDE[prod_short](includes/prod_short.md)]. Vous pouvez donc envoyer des documents sans avoir à ouvrir une application de messagerie. Vous pouvez composer chaque message individuellement avec des outils de mise en forme de base, tels que des polices, des styles, des couleurs, etc. Vous pouvez également ajouter des pièces jointes pouvant atteindre 100 Mo. De plus, les administrateurs peuvent configurer des présentations de rapports qui incluent uniquement les informations clés des documents. Pour plus d'informations, voir [Envoyer des documents par courriel](ui-how-send-documents-email.md).
 
-Les capacités de messagerie dans [!INCLUDE[prod_short](includes/prod_short.md)] sont pour les messages sortants uniquement. Vous ne pouvez pas recevoir de réponses, c’est-à-dire qu’il n’y a pas de page de boîte de réception dans [!INCLUDE[prod_short](includes/prod_short.md)].
+Les capacités de messagerie dans [!INCLUDE[prod_short](includes/prod_short.md)] sont pour les messages sortants uniquement. Vous ne pouvez pas recevoir de réponses. Cela signifie qu’il n’y a pas de page de boîte de réception dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
 > [!NOTE]
 > Vous pouvez utiliser les capacités de messagerie de [!INCLUDE[prod_short](includes/prod_short.md)] en ligne uniquement avec Exchange Online. Nous ne prenons pas en charge les scénarios hybrides, tels que la connexion de [!INCLUDE[prod_short](includes/prod_short.md)] en ligne vers une version locale d’Exchange.
@@ -31,7 +31,7 @@ Les capacités de messagerie dans [!INCLUDE[prod_short](includes/prod_short.md)]
 Pour configurer la messagerie, vous devez disposer de l’ensemble d’autorisations **CONFIGURATION MESSAGERIE**. Pour en savoir plus, voir [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md). 
 
 ## <a name="adding-email-accounts"></a>Ajouter des comptes de messagerie
-Vous ajoutez des comptes de messagerie via des extensions qui permettent aux comptes de différents fournisseurs de se connecter à [!INCLUDE[prod_short](includes/prod_short.md)]. Les extensions standard vous permettent d’utiliser des comptes de Microsoft Exchange Online, mais d’autres extensions peuvent être disponibles pour vous permettre de connecter des comptes d’autres fournisseurs, tels que Gmail.
+Vous ajoutez des comptes de messagerie via des extensions qui permettent aux comptes de différents fournisseurs de se connecter à [!INCLUDE[prod_short](includes/prod_short.md)]. Les extensions standard vous permettent d’utiliser les comptes de Microsoft Exchange Online. Cependant, d’autres extensions vous permettant de connecter des comptes d’autres fournisseurs, tels que Gmail, peuvent être disponibles.
 
 Après avoir ajouté un compte de messagerie, vous pouvez spécifier des scénarios professionnels prédéfinis dans lesquels utiliser le compte pour envoyer des courriels. Par exemple, vous pouvez spécifier que tous les utilisateurs envoient des documents de vente à partir d’un compte et achètent des documents à partir d’un autre. Pour plus d’informations, consultez [Attribuer des scénarios de messagerie aux comptes de messagerie](admin-how-setup-email.md#assign-email-scenarios-to-email-accounts).
 
@@ -39,19 +39,19 @@ Le tableau suivant décrit les extensions de messagerie disponibles par défaut.
 
 |Extension  |Description  |Exemples de scénario où utiliser  |
 |---------|---------|---------|
-|**Microsoft 365**|Tout le monde envoie des courriels à partir d’une boîte aux lettres partagée dans Exchange Online.|Lorsque tous les messages proviennent du même service, par exemple, votre organisation commerciale envoie des messages à partir d’un compte sales@cronus.com. Cela nécessite que vous configuriez une boîte aux lettres partagée dans le centre d’administration Microsoft 365. Pour plus d’informations, consulter [Boîtes aux lettres partagées](/Exchange/collaboration/shared-mailboxes/shared-mailboxes).|
-|**Utilisateur actuel**|Tout le monde envoie un courriel à partir du compte de connexion habituel à [!INCLUDE[prod_short](includes/prod_short.md)].|Autorisez les communications à partir de comptes individuels.|
+|**Connecteur Microsoft 365**|Tout le monde envoie des courriels à partir d’une boîte aux lettres partagée dans Exchange Online.|Lorsque tous les messages proviennent du même service, par exemple, votre organisation commerciale envoie des messages à partir d’un compte sales@cronus.com. Cette option nécessite que vous configuriez une boîte aux lettres partagée dans le centre d’administration Microsoft 365. Pour plus d’informations, consulter [Boîtes aux lettres partagées](/Exchange/collaboration/shared-mailboxes/shared-mailboxes).|
+|**Connecteur utilisateur actuel**|Tout le monde envoie un courriel à partir du compte de connexion habituel à [!INCLUDE[prod_short](includes/prod_short.md)].|Autorisez les communications à partir de comptes individuels.|
 |**Autre (SMTP)**|Utilisez le protocole SMTP pour envoyer des courriels.|Autorisez les communications via votre serveur de messagerie SMTP. |
 
 > [!NOTE]
-> Les extensions **Microsoft 365** et **Utilisateur actuel** utilisent les comptes que vous configurez pour les utilisateurs dans le centre d’administration Microsoft 365 pour votre abonnement Microsoft 365. Pour envoyer des courriels à l’aide des extensions, les utilisateurs doivent disposer d’une licence valide pour Exchange Online. 
+> Les extensions **Connecteur Microsoft 365** et **Connecteur utilisateur actuel** utilisent les comptes que vous configurez pour les utilisateurs dans le centre d’administration Microsoft 365 pour votre abonnement Microsoft 365. Pour envoyer des courriels à l’aide des extensions, les utilisateurs doivent disposer d’une licence valide pour Exchange Online. De plus, ces extensions nécessitent que le paramètre **Autoriser les demandes HttpClient** soit activé. Pour vérifier s’il est activé pour ces extensions, rendez-vous sur la page **Gestion des extensions**, choisissez l’extension, puis choisissez l’option **Configurer**.
 >
-> De plus, les utilisateurs externes, tels que les administrateurs délégués et les comptables externes, ne peuvent pas utiliser ces extensions pour envoyer des courriels à partir de [!INCLUDE[prod_short](includes/prod_short.md)].
+> Les utilisateurs externes, tels que les administrateurs délégués et les comptables externes, ne peuvent pas utiliser ces extensions pour envoyer des courriels à partir de [!INCLUDE[prod_short](includes/prod_short.md)].
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4JsUk]
 
 ## <a name="legacy-smtp-settings-and-the-email---smtp-connector-extension"></a>Paramètres SMTP hérités et l’extension courriel - Connecteur SMTP
-Si vous utilisez déjà [!INCLUDE[prod_short](includes/prod_short.md)] et si vous avez configuré la messagerie via la configuration SMTP héritée, vous pouvez continuer à utiliser votre configuration en parallèle avec l’extension Courriel - Connecteur SMTP. Lorsque nous mettons à jour votre [!INCLUDE[prod_short](includes/prod_short.md)] vers la prochaine version, nous copions vos anciens paramètres SMTP dans l’extension Courriel - Connecteur SMTP. Lorsque vous êtes prêt, votre administrateur peut activer les fonctionnalités de messagerie améliorées et vous commencerez à utiliser l’extension Email - Connecteur SMTP. Pour plus d’informations, voir [À propos de la gestion des fonctionnalités](/dynamics365/business-central/dev-itpro/administration/feature-management#about-feature-management). Cependant, il n’y a pas de synchronisation entre l’extension du connecteur SMTP et les paramètres hérités. Si vous modifiez les paramètres SMTP dans l’extension, vous devez effectuer les mêmes modifications dans la configuration SMTP héritée, ou vice versa.
+Si vous utilisez la configuration SMTP héritée dans [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez continuer à le faire en parallèle avec l’extension Courriel - Connecteur SMTP. Lorsque nous mettrons à jour votre [!INCLUDE[prod_short](includes/prod_short.md)] vers la prochaine version, nous copierons vos anciens paramètres SMTP dans l’extension Email - Connecteur SMTP. Lorsque vous êtes prêt, votre administrateur peut activer les fonctionnalités de messagerie améliorées et vous commencerez à utiliser l’extension Courriel - Connecteur SMTP. Pour plus d’informations, voir [À propos de la gestion des fonctionnalités](/dynamics365/business-central/dev-itpro/administration/feature-management#about-feature-management). Cependant, il n’y a pas de synchronisation entre l’extension du connecteur SMTP et les paramètres hérités. Si vous modifiez les paramètres SMTP dans l’extension, vous devez effectuer les mêmes modifications dans la configuration SMTP héritée, ou vice versa.
 
 > [!NOTE]
 > Si vous avez des personnalisations qui reposent sur la configuration de messagerie SMTP héritée, il est possible que quelque chose se passe mal avec vos personnalisations si vous commencez à utiliser des extensions de messagerie. Nous vous recommandons de configurer et de tester les extensions avant d’activer le commutateur de fonctionnalité pour des fonctionnalités de messagerie améliorées.
@@ -75,7 +75,7 @@ Le guide de configuration assistée **Configurer la messagerie** peut vous aider
 
 is this still true?-->
 ## <a name="assign-email-scenarios-to-email-accounts"></a>Affecter des scénarios de messagerie aux comptes de messagerie
-Les scénarios de messagerie sont des processus qui impliquent l’envoi d’un document, tel qu’un document de vente ou un bon de commande, ou une notification, telle qu’une invitation à un comptable externe. Vous pouvez utiliser des comptes de messagerie spécifiques pour des scénarios spécifiques. Par exemple, vous pouvez spécifier que tous les utilisateurs envoient toujours les documents de vente à partir d’un compte, les documents d’achat d’un autre et les documents d’entrepôt ou de production à partir d’un troisième compte. Vous pouvez attribuer, réattribuer et supprimer des scénarios quand vous le souhaitez, mais vous ne pouvez affecter un scénario qu’à un seul compte de messagerie à la fois. Le compte de messagerie par défaut sera utilisé pour tous les scénarios qui ne sont pas attribués à un compte.
+Les scénarios de messagerie sont des processus qui impliquent l’envoi d’un document. Par exemple, un document de vente, un bon de commande ou une notification, telle qu’une invitation à un comptable externe. Vous pouvez utiliser des comptes de messagerie spécifiques pour des scénarios spécifiques. Par exemple, vous pouvez spécifier que tous les utilisateurs envoient toujours les documents de vente à partir d’un compte, les documents d’achat d’un autre et les documents d’entrepôt ou de production à partir d’un troisième compte. Vous pouvez attribuer, réattribuer et supprimer des scénarios quand vous le souhaitez, mais vous ne pouvez affecter un scénario qu’à un seul compte de messagerie à la fois. Le compte de messagerie par défaut sera utilisé pour tous les scénarios qui ne sont pas attribués à un compte.
  
 <!--
 ## To set up email
@@ -90,6 +90,19 @@ Les scénarios de messagerie sont des processus qui impliquent l’envoi d’un 
 
 -->
 
+## <a name="set-up-view-policies"></a>Configurer les stratégies d’affichage
+Vous pouvez contrôler les courriels qu’un utilisateur peut voir dans les pages Boîte d’envoi de courriels et Courriels envoyés.
+
+Dans **Stratégies affichage courriel utilisateur**, choisissez un utilisateur, puis choisissez l’une des options suivantes dans le champ **Stratégie d’affichage des courriels** :
+
+* **Afficher mes courriels personnalisés** – L’utilisateur ne peut afficher que ses propres courriels.
+* **Afficher tous les courriels** – L’utilisateur peut afficher tous les courriels, y compris ceux envoyés par d’autres utilisateurs.
+* **Afficher si accès à tous les enregistrements associés** – Stratégie d’affichage par défaut. L’utilisateur peut afficher les courriels envoyés par d’autres utilisateurs s’il a accès à l’enregistrement envoyé et à tous ceux qui y sont liés. Par exemple, l’utilisateur A a envoyé une facture vente reportée à un client. L’utilisateur B peut voir le courriel s’il a accès à la fois à la facture et au client.
+* **Afficher si accès à tous les enregistrements associés** – L’utilisateur peut afficher les courriels envoyés par d’autres personnes s’il a accès à au moins un enregistrement lié à l’enregistrement envoyé. Par exemple, l’utilisateur A a envoyé une facture vente reportée à un client. L’utilisateur B peut voir le courriel s’il a accès à la facture ou au client.
+
+> [!NOTE]
+>  Si vous laissez le champ **Code utilisateur** vide, puis choisissez l’action Stratégie d’affichage des courriels, la stratégie que vous définissez s’applique à tous les utilisateurs.
+
 ## <a name="set-up-reusable-email-texts-and-layouts-for-sales-and-purchase-documents"></a>Configurer des textes et des présentations de courriel réutilisables pour les documents vente et achat
 Vous pouvez utiliser des rapports pour inclure des informations clés provenant de documents de vente et d’achat dans des textes pour courriels. Cette procédure décrit comment configurer le rapport **Vente - Facture** pour les factures vente reportées, mais le processus est similaire pour les autres rapports.
 
@@ -99,14 +112,14 @@ Vous pouvez utiliser des rapports pour inclure des informations clés provenant 
 4. Cochez la case **Utiliser pour le corps du message e-mail**.
 5. Choisissez le champ **Description de la disposition du corps du courriel** et sélectionnez une présentation dans la liste.
 
-    Les présentations de rapport définissent à la fois le style et le contenu du texte du courriel, y compris du texte comme une salutation ou des instructions qui précèdent les informations du document. Si votre organisation a plusieurs dispositions, vous pouvez visualiser toutes les présentations de rapport disponibles si vous choisissez **Sélectionner dans la liste complète**.
+    Les dispositions de rapport définissent le style et le contenu du texte du courriel. Cela inclut des textes tels qu’un message d’accueil ou des instructions qui précèdent les informations du document. Si votre organisation a plusieurs dispositions, vous pouvez choisir **Sélectionner dans la liste complète** pour accéder à toutes les dispositions de rapport disponibles.
 6. Pour afficher ou modifier la disposition sur laquelle le texte du courriel est basé, sélectionnez la disposition sur la page **Dispositions rapport personnalisées**, puis cliquez sur **Mettre à jour la disposition**.
-7. Si vous souhaitez proposer à vos clients de payer les ventes par voie électronique, vous pouvez configurer le service de paiement associé, comme Paypal par exemple, puis insérer également les informations et le lien Paypal dans le texte du courriel. Pour plus d'informations, voir [Activer les paiements client via Paypal](sales-how-enable-payment-service-extensions.md).
+7. Si vous souhaitez permettre aux clients d’utiliser un service de paiement, tel que PayPal, vous devez configurer le service. Ensuite, les informations et le lien PayPal sont insérés dans le texte du courriel. Pour plus d'informations, voir [Activer les paiements client via Paypal](sales-how-enable-payment-service-extensions.md).
 8. Cliquez sur le bouton **OK**.
 
 Désormais, lorsque vous sélectionnez, par exemple, l'action **Envoyer** sur la page **Facture vente reportée**, le corps du message comporte les informations de document du rapport 1306 précédé d'un texte standard auquel sont appliqués des attributs de style en fonction de la présentation de rapport que vous avez sélectionnée à l'étape 5.
 
-## <a name="using-a-substitute-sender-address-on-outbound-email-messages"></a>Utilisation d'une adresse d'expéditeur de remplacement pour les courriels sortants
+## <a name="use-a-substitute-sender-address-on-outbound-email-messages"></a>Utiliser une adresse d’expéditeur de remplacement pour les courriels sortants
 Si vous utilisez les paramètres SMTP hérités, vous pouvez utiliser les fonctionnalités **Envoyer en tant que** ou **Envoyer de la part de** sur Microsoft Exchange pour modifier l’adresse de l’expéditeur dans les messages sortants. [!INCLUDE[prod_short](includes/prod_short.md)] utilisera le compte SMTP pour s’authentifier auprès de Exchange, mais remplacera l’adresse de l’expéditeur par celle que vous spécifiez ou la modifiera avec "pour le compte de ».
 
 Voici des exemples d’utilisation des fonctionnalités Envoyer en tant que et Envoyer de la part de dans [!INCLUDE[prod_short](includes/prod_short.md)] :
@@ -136,14 +149,14 @@ Voici des exemples d’utilisation des fonctionnalités Envoyer en tant que et E
 > [!INCLUDE[prod_short](includes/prod_short.md)] déterminera quelle adresse afficher dans l'ordre suivant : <br><br> 1. L'adresse spécifiée dans le champ **Courriel** sur la page **Configuration utilisateur approbation** pour les messages dans un flux de travail. <br> 2. L'adresse spécifiée dans le champ **Envoyer en tant que** sur la page **Configuration courriel SMTP**. <br> 3. L'adresse spécifiée dans le champ **Code utilisateur** sur la page **Configuration courriel SMTP**.
 
 ## <a name="set-up-document-sending-profiles"></a>Configurer des profils d'envoi de documents
-Vous pouvez configurer une méthode préférée d’envoi de documents de vente pour chacun de vos clients afin de ne pas avoir à sélectionner une option d’envoi, comme l’envoi du document par courriel ou sous forme de document électronique, chaque fois que vous envoyez un document. Pour plus d'informations, reportez vous à [Configurer des profils d'envoi de documents](sales-how-setup-document-send-profiles.md).
+Vous pouvez gagner du temps en configurant une méthode préférée d’envoi des documents de vente pour chacun de vos clients. Dans ce cas, vous n’aurez pas à sélectionner une option d’envoi, par exemple si vous souhaitez envoyer le document par courriel ou sous forme de document électronique, chaque fois que vous envoyez un document. Pour plus d'informations, reportez vous à [Configurer des profils d'envoi de documents](sales-how-setup-document-send-profiles.md).
 
-## <a name="set-up-public-folders-and-rules-for-email-logging-in-exchange-online"></a>Configurer les dossiers publics et les règles de connexion à la messagerie dans Exchange Online
+## <a name="optional-set-up-email-logging-in-exchange-online"></a>Facultatif : Configurer la connexion à la messagerie dans Exchange Online
 Tirez le meilleur parti des communications entre les représentants et vos clients existants ou potentiels en suivant les échanges de courriels, puis en les transformant en opportunités exploitables. Pour plus d'informations, voir [Suivre les échanges de courriels entre les représentants et les contacts](marketing-set-up-email-logging.md).  
-
+<!--
 [!INCLUDE[admin-setup-email-public-folder](includes/admin-setup-email-public-folder.md)]
 
-Ensuite, vous connectez [!INCLUDE[prod_short](includes/prod_short.md)] à Exchange Online. Pour plus d'informations, voir [Suivre les échanges de courriels entre les représentants et les contacts](marketing-set-up-email-logging.md).  
+Next, you connect [!INCLUDE[prod_short](includes/prod_short.md)] with Exchange Online. For more information, see [Track Email Message Exchanges Between Salespeople and Contacts](marketing-set-up-email-logging.md).  -->
 
 ## <a name="setting-up-email-for-business-central-on-premises"></a>Configuration de la messagerie sur site pour Business Central 
 [!INCLUDE[prod_short](includes/prod_short.md)] sur site peut s’intégrer à des services basés sur Microsoft Azure. Par exemple, vous pouvez utiliser Cortana Intelligence pour des prévisions de la trésorerie plus intelligentes, Power BI pour visualiser votre activité, et Exchange Online pour envoyer un courriel. L’intégration avec ces services est basée sur l’enregistrement d’une application dans Azure Active Directory. L’enregistrement de l’application fournit des services d’authentification et d’autorisation pour les communications. Pour utiliser les fonctionnalités de messagerie dans [!INCLUDE[prod_short](includes/prod_short.md)] sur site, vous devez inscrire [!INCLUDE[prod_short](includes/prod_short.md)] en tant qu’application dans le portail Azure, puis connectez [!INCLUDE[prod_short](includes/prod_short.md)] à l’enregistrement de l’application. Les sections suivantes décrivent comment.
@@ -216,11 +229,11 @@ Après avoir enregistré votre application dans le portail Azure, dans [!INCLUDE
 ## <a name="see-also"></a>Voir aussi
 
 [Boîtes aux lettres partagées dans Exchange Online](/exchange/collaboration-exo/shared-mailboxes)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Configuration de [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Personnalisation de [!INCLUDE[prod_short](includes/prod_short.md)] à l'aide des extensions](ui-extensions.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)] en tant que boîte de réception professionnelle dans Outlook](admin-outlook.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)] en tant que boîte de réception professionnelle dans Outlook](admin-outlook.md)  
 [Obtenir [!INCLUDE[prod_short](includes/prod_short.md)] sur mon appareil mobile](install-mobile-app.md)
 [Obtenir [!INCLUDE[prod_short](includes/prod_short.md)] sur mon appareil mobile](install-mobile-app.md)
 [Analyse de la télémétrie des courriels (contenu d'administration)](/dynamics365/business-central/dev-itpro/administration/telemetry-email-trace)  

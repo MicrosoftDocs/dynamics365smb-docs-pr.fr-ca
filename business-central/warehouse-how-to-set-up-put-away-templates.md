@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 7312, 7313, 7314, 7321, 7322, 7323, 7329
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 0498ac73900c151bab10ad10ac7bbf85ebdd8526
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 3c663da3b9f16860dd3e490d01c8f3f78928e9e8
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8129484"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8519450"
 ---
 # <a name="set-up-put-away-templates"></a>Configurer des modèles rangement
 
@@ -44,7 +44,7 @@ Vous pouvez créer plusieurs modèles rangement et les appliquer comme vous le s
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

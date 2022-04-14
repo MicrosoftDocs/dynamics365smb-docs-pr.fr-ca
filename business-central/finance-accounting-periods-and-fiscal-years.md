@@ -9,14 +9,14 @@ ms.workload: na
 ms.search.form: 100
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: d1a7121f74cf58289e0bf4ce6a80080c071f64fe
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: 44c9cdadc47a40f8915f3134018c062d90fe06c5
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8383489"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8511685"
 ---
-# <a name="working-with-accounting-periods-and-fiscal-years"></a>Utilisation des périodes comptables et exercices financiers
+# <a name="work-with-accounting-periods-and-fiscal-years"></a>Utiliser des périodes comptables et des exercices financiers
 
 Les périodes comptables, également appelées périodes de report, sont des périodes pour lesquelles une compagnie ou une organisation présente ses performances financières, par exemple, en générant son état des résultats ou son bilan. Généralement, les périodes comptables sont liées à l'exercice financier de la compagnie, qui peut contenir plusieurs périodes comptables, telles que des mois ou des trimestres.
 

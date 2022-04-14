@@ -10,12 +10,12 @@ ms.search.keywords: electronic document, Intrastat, trade, EU, European Union
 ms.search.form: 308, 309, 310, 311, 325, 326, 327, 328, 405, 406, 8451, 12202, 31077
 ms.date: 01/28/2022
 ms.author: bholtorf
-ms.openlocfilehash: bcf0e27710c66e71dd95710790af2c2ffd4ab5e0
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: 2530b6a5d562cfd22abd8ae097408388034a5711
+ms.sourcegitcommit: 4a57fb5b88b9ebbb61fdd1b25e1fd4ba0013c8e5
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8381470"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8485013"
 ---
 # <a name="set-up-and-report-intrastat"></a>Configurer et enregistrer un rapport Intrastat
 
@@ -27,7 +27,7 @@ Avant d'utiliser le journal intrastat pour enregistrer des informations Intrasta
 * **Configuration Intrastat** : la page Configuration Intrastat permet d'activer la déclaration Intrastat et de définir des valeurs par défaut. Vous pouvez spécifier si vous devez enregistrer la déclaration Intrastat à partir des livraisons (envois), des réceptions (arrivées) ou des deux, selon les seuils définis par vos réglementations locales. Vous pouvez également définir des types de transaction par défaut pour les documents classiques et de retour, utilisés pour la nature des rapports de transaction.
 * **Modèles de journal Intrastat** : Vous devez configurer les lots et les modèles de journal Intrastat que vous utiliserez. Comme la déclaration Intrastat doit être soumise mensuellement, vous devez créer 12 lots journal Intrastat basés sur le même modèle.  
 * **Codes marchandise** : les autorités douanières et fiscales ont établi des codes numériques pour classer les articles et les services. Vous spécifiez ces codes sur les articles.
-* **Codes nature de transaction** : les pays et les régions ont différents codes pour les types de transactions Intrastat, comme l'achat et la vente ordinaires, l'échange de marchandises retournées et l'échange de marchandises non retournées. Configurez tous les codes qui s'appliquent à votre pays/région. Utilisez ces codes dans les documents achat et vente, et lorsque vous traitez des retours. 
+* **Codes nature de transaction** : les pays et les régions ont différents codes pour les types de transactions Intrastat, comme l'achat et la vente ordinaires, l'échange de marchandises retournées et l'échange de marchandises non retournées. Configurez tous les codes qui s'appliquent à votre pays/région. Utilisez ces codes sur le raccourci **Commerce étranger** pour les documents achat et vente, et lorsque vous traitez des retours. 
 
     > [!NOTE]
     > À partir de janvier 2022, Intrastat exige un code de nature de transaction différent pour les envois aux particuliers ou aux entreprises non assujetties à la TVA et aux entreprises assujetties à la TVA. Pour se conformer à cette exigence, nous vous recommandons de revoir et/ou d’ajouter de nouveaux codes de nature de transaction dans la page **Types de transactions** selon les exigences de votre pays. Vous devriez également revoir et mettre à jour le champ **Type de partenaire** sur *Personne* pour les clients particuliers ou entreprises non assujetties à la TVA dans la page **Client**. Si vous n’êtes pas sûr du type de partenaire ou de transaction correct à utiliser, nous vous recommandons de demander à un expert dans votre pays ou votre région. 

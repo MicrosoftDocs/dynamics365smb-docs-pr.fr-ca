@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/08/2021
 ms.author: edupont
-ms.openlocfilehash: edff39ccb01cc7da7e8a0387a4737088b0be231d
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: f2265c8b447fa20d177b89cabf773a04aad31926
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8138658"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8513080"
 ---
 # <a name="design-details-inventory-posting"></a>Détails de conception : report inventaire
 
@@ -133,7 +133,7 @@ Pour plus d'informations, voir [Détails de conception : modes évaluation stoc
  [Détails de conception : comptes de la comptabilité](design-details-accounts-in-the-general-ledger.md)  
  [Détails de conception : Composantes des coûts](design-details-cost-components.md) [Gestion des coûts inventaire](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
- [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+ [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

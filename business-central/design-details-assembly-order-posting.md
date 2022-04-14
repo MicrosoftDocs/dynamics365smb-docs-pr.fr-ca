@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: 2ec7e242bd174f3a825a29923b33642d035ec4ca
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 33d8c3a36340c997a12f879f8770e17045a88aa2
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8132123"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8521056"
 ---
 # <a name="design-details-assembly-order-posting"></a>Détails de conception : report d'un ordre d'assemblage
 Le report d'ordre d'assemblage est basé sur les mêmes principes que le report des activités similaires des documents de vente et de la consommation de production/production. Cependant, les principes sont combinés du fait que les ordres d'assemblage ont leur propre interface utilisateur de report, comme celle des documents de vente, alors que le report des écritures réel se produit en arrière-plan en tant que report direct d'article et de journal ressource, comme pour la consommation de production, la production et la capacité.  
@@ -114,7 +114,7 @@ Le report de lignes document de vente dont une partie est une quantité en inven
  [Détails de conception : modes évaluation stock](design-details-costing-methods.md)  
  [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  
- [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+ [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

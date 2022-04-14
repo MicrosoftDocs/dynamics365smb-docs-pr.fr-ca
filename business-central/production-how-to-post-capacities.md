@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 5832, 99000802, 99000820
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: 5a5b44609551b7ead773e82b996e1e610f0fe65d
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 2897ed44eb9df8e0bc8f6a4f6a83a9e18175ecc7
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8137559"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8516754"
 ---
 # <a name="post-capacities"></a>Reporter des capacités
 Le journal capacité vous permet de reporter les capacités consommées qui ne sont pas affectées au bon de production. Par exemple, les travaux d'entretien doivent être affectés à une capacité, mais non à un bon de production.  
@@ -40,7 +40,7 @@ La page **Écritures capacité** affiche les écritures reportées relatives à 
 [Planification](production-planning.md)      
 [Inventaire](inventory-manage-inventory.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

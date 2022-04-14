@@ -5,14 +5,14 @@ author: edupont04
 ms.topic: conceptual
 ms.search.keywords: setup, reporting
 ms.search.form: 306, 307, 347, 385, 524, 865, 5932, 7401, 7355, 99000917
-ms.date: 04/01/2021
+ms.date: 03/11/2022
 ms.author: edupont
-ms.openlocfilehash: 16ad3480c10da544c7fdd3a6a299dc6d86cfce46
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 35cd5f86eeee3eecd24f63d37f8d43191dbd9be8
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8134066"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8512474"
 ---
 # <a name="report-selection-in-business-central"></a>Sélection des rapports dans Business Central
 
@@ -43,6 +43,7 @@ La version par défaut de [!INCLUDE [prod_short](includes/prod_short.md)] compre
 * **Sélection des rapports - Entrepôt**  
 * **Sélection des rapports - Compte bancaire**  
 * **Sélection des rapports - Rappel/Frais financiers**  
+* **Sélection des rapports - Projet**  
 
 ## <a name="example-report-selection-for-sales-documents"></a>Exemple : Sélection des rapports pour les documents de vente
 
@@ -68,6 +69,15 @@ Par exemple, dans les pages **Sélection des rapports - Ventes** et **Sélecti
 [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md)  
 [Définir des présentations de document pour les clients et les fournisseurs](ui-define-customer-vendor-document-layouts.md)  
 [Paramétrage imprimantes](ui-specify-printer-selection-reports.md)  
-
+[Rapports et analyses financiers dans Business Central](finance-reports.md)  
+[Rapports et analyses de comptabilité client dans Business Central](receivables-reports.md) 
+[Rapports et analyses de comptabilité fournisseur dans Business Central](payables-reports.md)  
+[Rapports et analyses d’immobilisation dans Business Central](fa-reports.md)  
+[Rapports et analyses de projet dans Business Central](project-reports.md)  
+[Rapports et analyses de vente dans Business Central](sales-reports.md)  
+[Rapports et analyses d'achat dans Business Central](purchase-reports.md)  
+[Rapports et analyses d'inventaire et d’entrepôt dans Business Central](inventory-WMS-reports.md)  
+[Rapports et analyses d’assemblage dans Business Central](assembly-reports.md)  
+[Rapports et analyses de production dans Business Central](production-reports.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

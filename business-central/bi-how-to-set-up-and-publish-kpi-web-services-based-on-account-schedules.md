@@ -10,12 +10,12 @@ ms.search.keywords: ''
 ms.search.form: 103, 104, 197, 196, 195, 198, 490, 764, 765, 766
 ms.date: 06/15/2021
 ms.author: bholtorf
-ms.openlocfilehash: b02b8fe9aeee685f65cf82ad66c9492d241c6711
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: d8d3e9b37abe5e8d24e1d01eacfdff96df94da45
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8381308"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8514105"
 ---
 # <a name="set-up-and-publish-kpi-web-services-based-on-account-schedules"></a>Configuration et publication des services Web KPI sur la base de tableaux d'analyse
 La page **Tableau d'analyse - Configuration du service web KPI** vous permet de configurer la manière dont les informations KPI du tableau d'analyse sont affichées et sur quels tableaux d'analyse spécifiques baser les KPI. Lorsque vous sélectionnez le bouton **Publier le service web**, les informations KPI du tableau d'analyse spécifié sont ajoutées à la liste des services web publiés sur la page **Services web**.  
@@ -57,7 +57,7 @@ La page **Tableau d'analyse - Configuration du service web KPI** vous permet de 
 [Finance](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 [Le grand livre et le plan comptable](finance-general-ledger.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

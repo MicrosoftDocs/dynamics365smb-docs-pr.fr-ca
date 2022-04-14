@@ -10,12 +10,12 @@ ms.search.keywords: kit, kitting
 ms.search.form: 900, 901, 902, 903, 904, 907, 910, 916, 920, 921, 922, 923, 940, 941, 942, 930, 931, 932, 914, 915, 905
 ms.date: 06/14/2021
 ms.author: edupont
-ms.openlocfilehash: acf9afd490158ccca25e2fd13ecb30bb07c64bfe
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: f25dab624644b028cffce5e21080910fc87dfaf9
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384082"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8514527"
 ---
 # <a name="selling-inventory-items-in-assemble-to-order-flows"></a>Vendre des éléments d’inventaire dans des flux à assembler pour commande
 Si le champ **Politique d'assemblage** de la fiche article d'un élément d'assemblage indique **Assembler pour commande**, le processus par défaut de document de vente considère que l'article n'est pas en inventaire et doit être assemblé pour ce document de vente spécifique. Par conséquent, un ordre d'assemblage lié est automatiquement créé lorsque vous ajoutez l'article à une ligne document de vente. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md). Toutefois, si une partie de la quantité sur commande vente est déjà disponible en stock, alors vous pouvez diminuer la quantité d'ordre d'assemblage en changeant le champ **Quantité à assembler pour commande** de la ligne commande vente.  
@@ -54,7 +54,7 @@ Dans cette procédure, vous remplacez les quantités à assembler pour commande 
 [Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

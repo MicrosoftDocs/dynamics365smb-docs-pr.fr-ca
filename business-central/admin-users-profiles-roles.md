@@ -7,12 +7,12 @@ ms.search.keywords: profiles, users
 ms.search.form: 9171
 ms.date: 06/14/2021
 ms.author: edupont
-ms.openlocfilehash: fa9bd31f0f9ff1705f9caa7f21d9f376febdb712
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: b17a4f5a375e4fa1ad067d2679b37bb3d0f5da95
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8133132"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8514157"
 ---
 # <a name="manage-user-profiles"></a>Gérer les profils d’utilisateur
 
@@ -85,7 +85,7 @@ Lorsqu'un profil est créé, vous pouvez sélectionner différentes cases à coc
     - **Afficher dans l'explorateur de rôles** pour spécifier si les actions sur les fonctionnalités métier incluses dans le profil sont affichées dans la vue étendue de l'explorateur de rôles, une vue d'ensemble des fonctionnalités. Pour plus d'informations, voir [Recherche de pages avec l'explorateur de rôles ](ui-role-explorer.md).
 
 ## <a name="to-export-profiles"></a>Pour exporter des profils
-Vous pouvez exporter des profils depuis [!INCLUDE[prod_short](includes/prod_short.md)], par exemple pour les réutiliser dans un autre abonné. Les profils sont exportés dans un fichier zip contenant les fichiers .al pouvant être réutilisés pour développer des extensions. Pour plus d'informations, voir [Utilisation du client pour créer des profils et des personnalisations de page](/dynamics365/business-central/dev-itpro/developer/devenv-design-profiles-using-client).
+Vous pouvez exporter des profils depuis [!INCLUDE[prod_short](includes/prod_short.md)], par exemple pour les réutiliser dans un autre abonné. Les profils sont exportés dans un fichier zip contenant les fichiers .al pouvant être réutilisés pour développer des extensions. Pour plus d’informations, voir [Utiliser le client pour créer des profils et des personnalisations de page](/dynamics365/business-central/dev-itpro/developer/devenv-design-profiles-using-client).
 
 * Sur la page **Profils (rôles)**, choisissez l'action **Exporter des profils**.
 

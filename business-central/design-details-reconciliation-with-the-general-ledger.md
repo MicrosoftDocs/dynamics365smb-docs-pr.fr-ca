@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: design, reconciliation, general ledger, inventory
 ms.date: 06/08/2021
 ms.author: edupont
-ms.openlocfilehash: f3781169dcf91eacaa8c0988a49d908f7f947f02
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 4e76e76fe97f3d4ca5dbe17c5d699cb64bbe5833
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8145846"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8513028"
 ---
 # <a name="design-details-reconciliation-with-the-general-ledger"></a>Détails de conception : rapprochement de GL
 Lorsque vous reportez des mouvements d'inventaire, tels que des livraisons vente, des productions ou des ajustements négatifs, les modifications de quantité et de valeur effectuées dans l'inventaire sont enregistrées respectivement dans les écritures du grand livre article et les écritures valeur. L'étape suivante de ce processus consiste à reporter les valeurs de l'inventaire dans les comptes inventaire du grand livre.  
@@ -122,7 +122,7 @@ Pour plus d'informations sur les relations entre les types de compte et les diff
 [Détails de conception : ajustement des coûts](design-details-cost-adjustment.md)
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Finance](finance.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

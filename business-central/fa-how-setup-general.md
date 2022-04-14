@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 5623, 5615, 5661, 5662, 5627, 5616, 5620, 5629, 5633, 5609, 5631, 5630, 5617, 5612, 5613, 5608, 5609, 5635, 9277
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 6dbf3cbffebaf6c9ce06151a941d6517c6203863
-ms.sourcegitcommit: 6d48c1f601ed22b6b0358311baf63c073ab75e64
+ms.openlocfilehash: 9532dad89e3d88acf60e5c56af6c75ff9fc24fd1
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8366467"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523511"
 ---
 # <a name="set-up-general-fixed-assets-information"></a>Configurer des informations générales pour les immobilisations
 Avant de pouvoir gérer les immobilisations, vous devez configurer les comptes du grand livre par défaut, les clés d'affectation, les modèles journal et les lots pour le report et le reclassement des immobilisations. Vous pouvez classer les immobilisations par catégorie, telles que Corporelles et Incorporelles.
@@ -49,7 +49,7 @@ Les clés d'affectation s'appliquent à des classes d'immobilisations et non à 
 4. Répétez les phases 2 et 3 pour chacun des types de report pour lesquels vous souhaitez définir des clés d'affectation.
 
 ## <a name="to-set-up-fixed-asset-journal-templates"></a>Pour configurer les modèles journal immobilisation
-Un modèle est une présentation de journal prédéfinie. Le modèle affiche des informations sur les codes suivi, les rapports et les séries de numéros. Pour plus d'informations, voir [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
+Un modèle est une présentation de journal prédéfinie. Le modèle affiche des informations sur les codes suivi, les rapports et les séries de numéros. Pour plus d'informations, reportez-vous à [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 
 [!INCLUDE[prod_short](includes/prod_short.md)] crée automatiquement un modèle journal immobilisation la première fois que vous ouvrez la page **Journal immobilisation**. Vous pouvez cependant configurer d'autres modèles journal.  
 
@@ -122,7 +122,7 @@ Si les immobilisations ne sont pas intégrées au grand livre, ignorez les étap
 [Immobilisations](fa-manage.md)  
 [Finance](finance.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

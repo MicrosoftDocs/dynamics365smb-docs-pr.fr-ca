@@ -10,12 +10,12 @@ ms.search.keywords: procurement, supply, vendor order
 ms.search.form: 460, 9307
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 2cdf62f5b484e7c361bdf0e6819490c07540a0f5
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: 4a8d4e2568c64e09f1b71c247c6701e67bf9a824
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8380968"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8513819"
 ---
 # <a name="purchasing"></a>Procédure d'achat
 Vous créez une facture achat ou un bon de commande pour enregistrer le coût d'achats et suivre les créances. Si vous devez contrôler un inventaire, les factures achat sont également utilisées pour mettre à jour les niveaux d'inventaire de manière dynamique afin que vous puissiez réduire vos coûts d'inventaire et fournir un meilleur service au client. Le prix d'achat, notamment les frais de service, et les valeurs d'inventaire qui résultent du report des factures achat contribuent aux chiffres du profit et à d'autres KPI financiers sur votre Tableau de bord.
@@ -26,7 +26,7 @@ Les factures achat peuvent être créées automatiquement en utilisant le servic
 
 Les produits peuvent être des articles en inventaire et des services. Pour plus d'informations, voir [Enregistrer de nouveaux articles](inventory-how-register-new-items.md).
 
-Pour tous les processus d'achat, vous pouvez incorporer un flux de travail d'approbation, par exemple, pour exiger que les achats en grande quantité soient approuvés par le responsable de la comptabilité. Pour plus d'informations, reportez-vous à [Procédure : utilisation des flux d'approbation](across-how-use-approval-workflows.md).
+Pour tous les processus d'achat, vous pouvez incorporer un flux de travail d'approbation, par exemple, pour exiger que les achats en grande quantité soient approuvés par le responsable de la comptabilité. Pour plus d'informations, reportez-vous à [Utilisation des flux d'approbation](across-how-use-approval-workflows.md).
 
 Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.
 
@@ -55,7 +55,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 [Enregistrer de nouveaux fournisseurs](purchasing-how-register-new-vendors.md)  
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
 [Gestion des projets](projects-manage-projects.md)    
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)
 
 ## [!INCLUDE[prod_short](includes/free_trial_md.md)]  

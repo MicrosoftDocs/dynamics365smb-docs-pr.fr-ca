@@ -10,12 +10,12 @@ ms.search.keywords: transportation, added cost, landed cost
 ms.search.form: 5709, 5800, 5805, 5814
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: 6cfebffb12eb2cd7ffa84e12a07c01968c429069
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: cd8485bf4d679e740f60c8cc38e5912953b5b0bb
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8145612"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8522834"
 ---
 # <a name="use-item-charges-to-account-for-additional-trade-costs"></a>Utiliser Frais annexes pour comptabiliser les coûts commerciaux supplémentaires
 Pour une évaluation correcte, vos articles de l'inventaire doivent comptabiliser tous les coûts ajoutés, tels que le fret, la manutention, les assurances et le transport, que vous encourez lorsque vous achetez ou vendez des articles. Pour les achats, le coût en magasin d'un article acheté est constitué du prix d'achat au fournisseur et de tous les frais annexes directs pouvant être affectés à chacune des réceptions ou expéditions retour. Pour les ventes, il peut s'avérer aussi fondamental pour votre compagnie de connaître le coût de livraison des articles vendus que le coût en magasin des articles achetés.
@@ -83,7 +83,7 @@ Les frais annexes de la facture achat distincte sont maintenant affectés à l'a
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
 [Enregistrer des achats](purchasing-how-record-purchases.md)  
 [Facturer des ventes](sales-how-invoice-sales.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

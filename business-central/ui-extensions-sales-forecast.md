@@ -9,12 +9,12 @@ ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize, budget
 ms.date: 12/20/2021
 ms.author: edupont
-ms.openlocfilehash: 4341abd51fa87e36394109dd71452b38df5062e1
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 6ee943f918ce1c4932a60daa60e45339ef1c368d
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8140381"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8515287"
 ---
 # <a name="the-sales-and-inventory-forecast-extension"></a>Extension Prévision des ventes et de l'inventaire
 La gestion de l'inventaire est un compromis entre le service client et la gestion de vos coûts. D'une part, un inventaire faible exige un capital de travail inférieur, mais d'autre part, les ruptures d'inventaire mènent potentiellement à des ventes non concrétisées. L'extension Prévision des ventes et de l'inventaire prévoit les ventes potentielles à l'aide des données historiques et donne une présentation claire des ruptures d'inventaire prévues. Selon la prévision, l'extension aide à créer des demandes de réapprovisionnement auprès de vos fournisseurs et vous fait gagner du temps.  
@@ -25,7 +25,7 @@ Dans [!INCLUDE[prod_short](includes/prod_short.md)], connexion à [Azure AI](htt
 > [!TIP]  
 >   Tenez compte de la durée des périodes utilisée par le service lors de ses calculs. Plus vous fournissez de données, plus les prévisions seront précises. En outre, soyez prudent en ce qui concerne les grands écarts entre les périodes. Cela aura également un impact sur les prévisions. Si Azure AI ne trouve pas suffisamment de données ou si les données varient considérablement, le service ne fera pas de prévisions.
 
-## <a name="using-the-forecasts"></a>À l'aide des prévisions
+## <a name="use-the-forecasts"></a>Utiliser les prévisions
 Cette extension utilise Azure AI pour prévoir les ventes futures en fonction de votre historique des ventes pour vous aider à éviter les ruptures d'inventaire. Par exemple, lorsque vous choisissez un article sur la page **Articles**, le graphique du volet **Prévision des articles** affiche les ventes estimées de cet article dans la période à venir. Ainsi vous pouvez voir si vous risquez d'être bientôt en rupture de stock pour l'article.  
 
 Vous pouvez également utiliser l'extension pour suggérer quand réapprovisionner l'inventaire. Par exemple, si vous créez une bon de commande pour Fabrikam, car vous souhaitez acheter sa nouvelle chaise de bureau, l'extension Prévisions de l'inventaire et ventes prévues vous suggèrera également de réapprovisionner la chaise dactylo LONDON que vous achetez généralement auprès de ce fournisseur. En effet, les prévisions de l'extension indiquent que vous allez arriver en rupture de stocks concernant la chaise dactylo LONDON dans les deux prochaines semaines. Aussi, nous vous recommandons de commander davantage de chaises dès à présent.  
@@ -45,7 +45,7 @@ Pour établir des prévisions sur les ventes futures, le service web nécessite 
 
 Avant d'utiliser le service web, [!INCLUDE[prod_short](includes/prod_short.md)] comprime les transactions par **N° article** et **Date de report** sur la base de la valeur dans le champ **Type de période** sur la page **Configuration des prévisions de l'inventaire et des ventes prévues**.
 
-## <a name="create-and-use-your-own-predictive-web-service-for-sales-and-inventory-forecasts"></a><a name="AnchorText"> </a>Créer et utiliser votre propre service web prévisionnel pour les prévisions de l'inventaire et les ventes prévues
+## <a name="create-and-use-your-own-predictive-web-service-for-sales-and-inventory-forecasts"></a><a name="AnchorText"></a>Créer et utiliser votre propre service web prévisionnel pour les prévisions de l'inventaire et les ventes prévues
 Vous pouvez aussi utiliser votre propre service Web prévisionnel basé sur un modèle public intitulé **Modèle de prévision pour Microsoft Business Central**. Ce modèle prévisionnel est disponible en ligne dans la galerie Azure AI. Pour utiliser le modèle, procédez comme suit :  
 
 1. Ouvrez un navigateur et accédez à la [Galerie Azure AI](https://go.microsoft.com/fwlink/?linkid=828352).  

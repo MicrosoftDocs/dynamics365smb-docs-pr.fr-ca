@@ -10,12 +10,12 @@ ms.search.keywords: personnel, people, employee, staff, HR
 ms.search.form: 5200, 5201, 5204, 5206, 5208, 5209, 5211, 5221, 5228
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: b76ce1b15dde904ad3257b6f849e3629f293206c
-ms.sourcegitcommit: 865b390b5571b08084bde93b539ec9898e201933
+ms.openlocfilehash: fbf1647b23733beffc005b617beff185b183a6fe
+ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8372080"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8519105"
 ---
 # <a name="register-employees"></a>Enregistrer des employés
 
@@ -67,7 +67,7 @@ Vous pouvez utiliser des adresses de livraison secondaires pour conserver un his
 
 [Enregistrer et rembourser les frais des employés](finance-how-record-reimburse-employee-expenses.md)  
 [Finance](finance.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Modifier les fonctionnalités affichées](ui-experiences.md)
 
 
