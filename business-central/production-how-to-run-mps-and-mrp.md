@@ -1,6 +1,6 @@
 ---
 title: Exécuter une planification complète et un calcul PDP ou MRP
-description: Le système de planification peut calculer le calendrier de planification principal (MPS, Master Planning Schedule) ou la planification des besoins matière (MRP, Material Requirements Planning) à la demande, ou les deux simultanément.
+description: Le système de planification peut calculer le calendrier de production principal (MPS, Master Production Schedule) ou la planification des besoins matière (MRP, Material Requirements Planning) à la demande, ou les deux simultanément.
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
@@ -9,16 +9,16 @@ ms.workload: na
 ms.search.form: 99000852, 99000860
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: b8a9f648030e0a307ccd1a086c681ba8492cf357
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 35263f54400865c88694a483bda195957a8f8db4
+ms.sourcegitcommit: 55f42d2407e109b4924218cb22129467b53deb08
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8516676"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "8557259"
 ---
 # <a name="run-full-planning-mps-or-mrp"></a>Exécuter une planification complète et un calcul PDP ou MRP
 
-Les termes « exécution de la feuille planification » ou « exécution d'un calcul MRP » font référence au calcul du calendrier de production principal et aux réquisitions de matériel sur la base de la demande réelle et prévue. Le système de planification peut calculer le calendrier de planification principal (MPS, Master Planning Schedule) ou la planification des besoins matière (MRP, Material Requirements Planning) à la demande, ou calculer les deux simultanément.  
+Les termes « exécution de la feuille planification » ou « exécution d'un calcul MRP » font référence au calcul du calendrier de production principal et aux réquisitions de matériel sur la base de la demande réelle et prévue. Le système de planification peut calculer le calendrier de production principal (MPS, Master Production Schedule) ou la planification des besoins matière (MRP, Material Requirements Planning) à la demande, ou calculer les deux simultanément.  
 
 -   Le calcul PDP est le calcul du calendrier de production principal basé sur la demande réelle et la prévision de la demande. Le calcul PDP est utilisé pour les articles finis disposant de prévisions ou d'une ligne document de vente. Ces articles sont appelés « articles PDP » et identifiés de façon dynamique au début du calcul.  
 -   Le calcul MRP est le calcul des besoins matière basé sur la demande réelle de composantes et la prévision de la demande au niveau des composantes. Le calcul MRP n'est effectué que pour les articles qui ne sont pas des articles PDP. Le but du calcul MRP est de générer des plans formels en phases, par article, afin de fournir le bon article, au bon moment, au bon emplacement, et dans la bonne quantité.  

@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 99000754, 99000755, 99000756, 99000758, 99000760, 99000761, 99000762
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 52f84c4c4b30aa09094806e238fe4f72232f5e62
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 639a0a8cc8c7c3efa9e7331a1db45dc031f4515b
+ms.sourcegitcommit: 55f42d2407e109b4924218cb22129467b53deb08
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8517905"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "8557233"
 ---
 # <a name="set-up-work-centers-and-machine-centers"></a>Configurer des ateliers et des unités de production
 
@@ -39,18 +39,19 @@ La procédure suivante décrit essentiellement comment configurer un atelier. La
 2. Sélectionnez l'action **Nouveau**.  
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 4. Dans le champ **Groupe ateliers**, sélectionnez le regroupement de ressources de niveau supérieur sous lequel l'atelier est organisé, le cas échéant. Choisissez l'action **Nouveau** dans la liste déroulante.  
-5. Sélectionnez le champ **Bloqué** pour empêcher le centre de charge d'être utilisé pour quelque traitement que ce soit. Cela signifie que la sortie ne peut pas être reportée pour un article produit dans l'atelier. Pour plus d'informations, voir [Reporter la production](production-how-to-post-output-quantity.md).
-6. Dans le champ **Coût unitaire direct**, entrez le coût de production d'une unité de mesure dans le centre de charge, sans intégrer les autres éléments de coût. Ce coût est souvent appelé *frais de main-d'œuvre directs*.  
-7. Dans le champ **% coût indirect**, entrez les coûts opératoires généraux de l'utilisation du centre de charge sous la forme d'un pourcentage du coût unitaire direct. Ce pourcentage est ajouté au coût direct lors du calcul du coût unitaire.  
-8. Dans le champ **Frais généraux**, entrez tous les coûts non opératoires, comme les frais d'entretien, de l'atelier sous la forme d'un montant absolu.  
+5. Dans le champ **Autre atelier**, sélectionnez l'atelier à utiliser si cet atelier n'est pas disponible ou si la demande dépasse sa capacité. L’autre atelier est à titre informatif uniquement et n'est pas automatiquement inclus dans les processus de planification.
+6. Sélectionnez le champ **Bloqué** pour empêcher le centre de charge d'être utilisé pour quelque traitement que ce soit. Cela signifie que la sortie ne peut pas être reportée pour un article produit dans l'atelier. Pour plus d'informations, voir [Reporter la production](production-how-to-post-output-quantity.md).
+7. Dans le champ **Coût unitaire direct**, entrez le coût de production d'une unité de mesure dans le centre de charge, sans intégrer les autres éléments de coût. Ce coût est souvent appelé *frais de main-d'œuvre directs*.  
+8. Dans le champ **% coût indirect**, entrez les coûts opératoires généraux de l'utilisation du centre de charge sous la forme d'un pourcentage du coût unitaire direct. Ce pourcentage est ajouté au coût direct lors du calcul du coût unitaire.  
+9. Dans le champ **Frais généraux**, entrez tous les coûts non opératoires, comme les frais d'entretien, de l'atelier sous la forme d'un montant absolu.  
 
     Le champ **Coût unitaire** affiche le résultat du calcul du coût unitaire de production d'une unité de mesure dans l'atelier. Tous les éléments de coût sont pris en compte comme suit :  
 
     Coût unitaire = Coût unitaire direct + (Coût unitaire direct x % coût indirect) + Frais généraux.  
 
-9. Dans le champ **Unité de coût**, indiquez si le calcul ci-dessus doit être basé sur le délai passé : **Heure** ou sur le nombre d'unités produites : **Unités**.  
-10. Sélectionnez le champ **Coût unitaire spécifique** pour définir le coût unitaire de l'atelier sur la ligne itinéraire dans laquelle il est utilisé. Ceci peut s'avérer utile pour les opérations dont les coûts capacité diffèrent radicalement de ceux normalement traités dans l'atelier.  
-11. Dans le champ **Méthode consommation**, indiquez si la validation de production du centre de charge doit être calculée et validée manuellement ou automatiquement, de l'une des manières suivantes.
+10. Dans le champ **Unité de coût**, indiquez si le calcul ci-dessus doit être basé sur le délai passé : **Heure** ou sur le nombre d'unités produites : **Unités**.  
+11. Sélectionnez le champ **Coût unitaire spécifique** pour définir le coût unitaire de l'atelier sur la ligne itinéraire dans laquelle il est utilisé. Ceci peut s'avérer utile pour les opérations dont les coûts capacité diffèrent radicalement de ceux normalement traités dans l'atelier.  
+12. Dans le champ **Méthode consommation**, indiquez si la validation de production du centre de charge doit être calculée et validée manuellement ou automatiquement, de l'une des manières suivantes.
 
     |Option|Description|
     |------|-----------|
@@ -61,17 +62,17 @@ La procédure suivante décrit essentiellement comment configurer un atelier. La
     > [!NOTE]
     > Si nécessaire, vous pouvez modifier la méthode de consommation sélectionnée ici pour des opérations précises en modifiant le paramétrage des lignes itinéraire
 
-12. Dans le champ **Code unité de mesure**, entrez l'unité de temps utilisée pour le calcul de coût et la planification de capacité de l'atelier.
+13. Dans le champ **Code unité de mesure**, entrez l'unité de temps utilisée pour le calcul de coût et la planification de capacité de l'atelier.
     Pour contrôler en permanence la consommation, vous devez d'abord définir une méthode de mesure. Les unités que vous saisissez sont des unités de base. Par exemple, la durée de traitement est mesurée en heures et en minutes.
 
     > [!NOTE]  
     > Si vous choisissez d'utiliser Jours, n'oubliez pas qu'1 jour = 24 heures et non 8 (heures de travail).
 
-13. Dans le champ **Capacité**, indiquez si le centre de charge a plusieurs postes ou personnes travaillant simultanément. Si votre installation de [!INCLUDE[prod_short](includes/prod_short.md)] n'inclut pas la fonctionnalité Unité de production, la valeur de ce champ doit être **1**.  
-14. Dans le champ **Rendement**, entrez le pourcentage de la production standard prévue qui est réalisé par le centre de charge. Si vous entrez **100**, cela signifie que la production réelle du centre de charge est identique à la production standard.  
-15. Cochez la case **Calendrier consolidé** si vous utilisez également des unités de production. Ainsi, les écritures calendrier sont générées à partir des calendriers d'unité de production.  
-16. Dans le champ **Code calendrier usine**, sélectionnez un calendrier usine. Pour plus d'informations, voir [Créer des calendriers usine](production-how-to-create-work-center-calendars.md).  
-17. Dans le champ **File d'attente**, spécifiez le délai fixe qui doit s'écouler avant que le travail attribué ne commence dans le centre de charge. 
+14. Dans le champ **Capacité**, indiquez si le centre de charge a plusieurs postes ou personnes travaillant simultanément. Si votre installation de [!INCLUDE[prod_short](includes/prod_short.md)] n'inclut pas la fonctionnalité Unité de production, la valeur de ce champ doit être **1**.  
+15. Dans le champ **Rendement**, entrez le pourcentage de la production standard prévue qui est réalisé par le centre de charge. Si vous entrez **100**, cela signifie que la production réelle du centre de charge est identique à la production standard.  
+16. Cochez la case **Calendrier consolidé** si vous utilisez également des unités de production. Ainsi, les écritures calendrier sont générées à partir des calendriers d'unité de production.  
+17. Dans le champ **Code calendrier usine**, sélectionnez un calendrier usine. Pour plus d'informations, voir [Créer des calendriers usine](production-how-to-create-work-center-calendars.md).  
+18. Dans le champ **File d'attente**, spécifiez le délai fixe qui doit s'écouler avant que le travail attribué ne commence dans le centre de charge. 
 
 > [!NOTE]
 > Utilisez les file d'attentes pour fournir un tampon entre le moment où une composante arrive sur une unité de production ou un atelier et le moment où l’opération démarre réellement. Par exemple, une pièce est livrée à une unité de production à 10h00, mais il faut une heure pour la monter sur la machine, de sorte que l’opération ne démarre pas avant 11h00. Pour tenir compte de cette heure, la durée file d’attente serait d’une heure. La valeur du champ **Durée file d'attente** sur une fiche unité de production ou atelier plus la somme des valeurs des champs **Temps de préparation**, **Temps d'exécution**, **Temps d’attente** et **Temps de transfert** sur la ligne itinéraire article se combinent pour donner le délai de fabrication de l’article. Cela permet de fournir des temps de production globaux précis.  

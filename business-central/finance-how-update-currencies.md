@@ -7,12 +7,12 @@ ms.search.keywords: multiple currencies, adjust exchange rates, FX rates
 ms.search.form: 5, 118
 ms.date: 03/15/2022
 ms.author: edupont
-ms.openlocfilehash: 45926cc094234a6b75f3e8a1ca997fc89506ef28
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 54aed7a30225d074ab6651df63771924c7c1cd97
+ms.sourcegitcommit: 55f42d2407e109b4924218cb22129467b53deb08
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8523485"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "8557363"
 ---
 # <a name="update-currency-exchange-rates"></a>Mettre à jour des taux de change devise
 
@@ -68,6 +68,12 @@ Le traitement en lot **Ajuster taux de change** permet d’ajuster manuellement 
 
 > [!TIP]
 > Vous pouvez utiliser un service pour mettre à jour automatiquement les taux de change dans le système. Pour plus d'informations, reportez vous à [Configurer un service de taux de change des devises](finance-how-update-currencies.md#to-set-up-a-currency-exchange-rate-service). Cependant, cela n’ajuste pas les taux de change sur les transactions déjà reportées. Pour mettre à jour les taux de change sur les écritures reportées, utilisez le traitement en lot **Ajuster les taux de change**.
+
+Vous pouvez consulter un aperçu de l’effet d’un ajustement sur le report avant de reporter réellement en choisissant **Aperçu** sur la page **Ajuster les taux de change**. De plus, vous pouvez sélectionner si le report dans le grand livre sera détaillé (par écriture) ou résumé (par devise) en sélectionnant **Résumer les écritures**. Vous pouvez également spécifier comment traiter les dimensions des reports de pertes et profits non réalisés en choisissant l’une des options suivantes dans le champ **Transférer les valeurs de dimension** :  
+
+- **Écriture origine** : Les valeurs de dimension des écritures GL pour les pertes et profits non réalisés seront transférées à partir de l’écriture ajustée.
+- **Par compte du grand livre** : Les écritures GL pour les pertes et profits non réalisés auront des valeurs de dimension transférées à partir de l’écriture source des paramètres des dimensions du compte du grand livre de pertes et profits non réalisés.
+- **Pas de transfert** : Les écritures GL pour les pertes et profits non réalisés n’auront pas de valeurs de dimension.
 
 ### <a name="effect-on-customers-and-vendors"></a>Effet sur les clients et fournisseurs
 
