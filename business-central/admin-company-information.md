@@ -3,15 +3,15 @@ title: Présentation des informations sur la compagnie
 description: La page Informations compagnie spécifie les informations de base d’une entité commerciale, telles que le nom, les adresses et les informations d’expédition.
 author: edupont04
 ms.topic: conceptual
-ms.search.form: 1,
-ms.date: 03/14/2022
+ms.search.form: 1
+ms.date: 04/20/2022
 ms.author: edupont
-ms.openlocfilehash: d9f8c6e831cae4efd53df435ffda0c6a96b0bc49
-ms.sourcegitcommit: 3ca91139035b34cfe0b0303e4caff7c6d02d0d14
+ms.openlocfilehash: 1adf94a191b2e0514f7a7435ac1807ca19498b14
+ms.sourcegitcommit: cfe4e924af2c89c09250270245e7a1eef1184bfc
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "8417830"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8626249"
 ---
 # <a name="company-information-overview"></a>Présentation des informations sur la compagnie
 
@@ -21,14 +21,24 @@ Si l'entrepôt inventaire de la compagnie est situé à une adresse différente 
 
 Pour chaque compagnie que vous configurez, vous devez renseigner la page **Informations compagnie**, ainsi que la page **Configuration du grand livre**. Vous devez également configurer chaque zone dans [!INCLUDE [prod_short](includes/prod_short.md)], comme la page **Configuration ventes**, pour chaque compagnie. Pour plus d’informations, voir [Aperçu des tâches permettant de paramétrer [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md).  
 
-En fonction de votre pays, la page **Informations compagnie** contient différents champs et raccourcis. Le tableau suivant décrit les raccourcis les plus couramment utilisés.
+En fonction de votre pays, la page **Informations compagnie** contient différents champs et raccourcis. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)] Le tableau suivant décrit les raccourcis les plus couramment utilisés.
 
 [!INCLUDE [admin-company-info-fasttabs](includes/admin-company-info-fasttabs.md)]
 
 Une fois que vous avez terminé de remplir les informations, vous pouvez fermer la page.  
+
+## <a name="work-with-multiple-companies"></a>Travailler avec plusieurs compagnies
+
+Si votre [!INCLUDE [prod_short](includes/prod_short.md)] inclut plusieurs compagnies, vos utilisateurs souhaiteront peut-être utiliser les *badges compagnie* pour savoir avec quelle compagnie ils travaillent actuellement. Pour plus d’informations, consultez [Afficher un badge compagnie pour un accès rapide aux informations de la compagnie](ui-change-basic-settings.md#badge).  
+
+## <a name="experience"></a>Expérience
+
+L’expérience utilisateur par défaut dans une version d’évaluation de [!INCLUDE [prod_short](includes/prod_short.md)] ne révèle pas toutes les fonctionnalités. Vous pouvez passer à l’expérience complète dans la page **Informations compagnie**. Pour plus d'informations, voir [Modifier les fonctionnalités affichées](ui-experiences.md).  
 
 ## <a name="see-also"></a>Voir aussi
 
 [Aperçu des tâches permettant de paramétrer [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md)  
 [Démarrage rapide de Informations compagnie](quick-start-company-information.md)  
 [Configurer les informations sur la compagnie en Italie](LocalFunctionality/Italy/how-to-set-up-company-information.md)  
+[Modifier les paramètres de base](ui-change-basic-settings.md)  
+[Modifier les fonctionnalités affichées](ui-experiences.md)  

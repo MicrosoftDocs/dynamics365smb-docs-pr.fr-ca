@@ -10,12 +10,12 @@ ms.search.keywords: project management, consumption
 ms.search.form: 89, 92, 201, 1007, 1014
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: b5030646d04e31983025e054992fa0fb71cf5b4e
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 04ef2fdd1020444711257230688fea927332ed83
+ms.sourcegitcommit: cfe4e924af2c89c09250270245e7a1eef1184bfc
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8513871"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8626275"
 ---
 # <a name="record-consumption-or-usage-for-jobs"></a>Enregistrer la consommation ou l′utilisation pour les projets
 
@@ -69,6 +69,23 @@ Cela vous permet de suivre vos estimations initiales, de les comparer aux résul
 4. Mettez à jour le journal avec toutes les modifications qui peuvent être nécessaires.  
 5. Sélectionnez l'action **Valider**.
 
+## <a name="create-inventory-and-warehouse-pick-documents-for-a-job"></a>Créer des documents prélèvement entrepôt et inventaire pour un projet
+
+Pour créer des documents de prélèvement entrepôt et inventaire pour les projets, votre administrateur doit activer **Mise à jour des fonctionnalités : activer prélèvement inventaire et entrepôt à partir des projets** sur la page **Gestion des fonctionnalités**.
+
+La fonctionnalité ajoute les actions **Créer un prélèvement inventaire** et **Créer un prélèvement entrepôt** à la **Fiche projet**. Pour créer ou enregistrer un document de prélèvement, utilisez les actions **Rangement/Lignes prélèvement/Lignes Mouvements** ou **Lignes prélèvement enregistrées**. Pour plus d’informations sur les prélèvements, consultez [Prélever des articles](warehouse-pick-items.md)
+
+Vous pouvez utiliser les actions dans les conditions suivantes :
+* L'**état** du projet est **Ouvert**.
+* Le **Type de ligne** de la ligne planification projet est **Budget** ou **Budget et Facturable**.
+* Le **Type** de la ligne planification projet est **Article**.
+* **Prélèvement requis** est activé pour l'emplacement associé.
+* **Prélèv. et rangement dirigés** est désactivé.
+
+> [!NOTE] 
+> Bien que le paramètre s’appelle **Prélèvement requis**, vous pouvez toujours reporter la consommation directement à partir de la ligne du journal des tâches pour l’emplacement. Si votre emplacement est configuré pour exiger un traitement des prélèvements mais pas des livraisons, utilisez la page **Prélèvement inventaire** pour organiser et imprimer les informations de prélèvement. Vous utilisez également la page pour saisir et reporter le résultat du prélèvement, qui à son tour affiche la consommation des articles. 
+> 
+> Lorsque votre emplacement est configuré pour appeler un traitement de prélèvement et de livraison, ce qui implique que vous avez activé les champs **Prélèvement requis** et **Livraison requise** sur la page **Fiche emplacement**, utilisez le document **Prélèvement entrepôt** pour gérer le prélèvement. Les prélèvements entrepôt sont similaires aux prélèvements inventaire. La différence est qu'au lieu d'afficher les informations de prélèvement, vous enregistrez le prélèvement. Ce processus d’enregistrement ne reporte pas la consommation, il rend simplement les articles disponibles pour le report. En tant que responsable d’entrepôt, vous pouvez utiliser une feuille de calcul pour organiser les informations de prélèvement avant de créer les instructions de prélèvement d’entrepôt individuelles
 
 
 ## <a name="to-review-planning-lines-for-a-job-ledger-entry"></a>Pour consulter les lignes planification pour une écriture projet

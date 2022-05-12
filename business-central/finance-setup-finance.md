@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: accounting, auditing, bookkeeping
 ms.date: 01/21/2022
 ms.author: edupont
-ms.openlocfilehash: f0112cfb60321a44d833ad6a51db209a71494bf1
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 6026f9ea7a0adeb66f6c543365cf7caeb91a7628
+ms.sourcegitcommit: f9143302b8271f5924a027cacdf29dc37c95f4c6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8513949"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8654952"
 ---
 # <a name="setting-up-finance"></a>Configuration de Finance
 Avant de commencer à gérer votre activité, vous devez spécifier des règles et des valeurs par défaut concernant le mode de gestion souhaité des processus financiers de cette compagnie. Pour commencer, vous devez configurer l'élément essentiel des enregistrements comptables de la compagnie, à savoir le plan comptable. Configurez ensuite des groupes de report afin d'accroître l'efficacité du processus d'affectation des comptes de report de grand livre par défaut aux clients, fournisseurs et articles.

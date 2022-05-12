@@ -7,19 +7,21 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: decimal separator, data entry, focus
-ms.search.form: 9020, 9022, 9026, 9027, 9030, 9000, 9004, 9005, 9018, 9006, 9007, 9010, 9016, 9017
+ms.search.form: 9020, 9022, 9026, 9027, 9030, 9000, 9009, 9004, 9005, 9024, 9006, 9007, 9010, 9016, 9017
 ms.date: 03/23/2022
 ms.author: jswymer
-ms.openlocfilehash: 8212dd5d85ee826bb0147a0d09d623c3af14071b
-ms.sourcegitcommit: d6af3155bb818430f22d5caca78df322a8d9b178
+ms.openlocfilehash: fffc72eaa44207779a751c3d85381f830f651eb3
+ms.sourcegitcommit: f9143302b8271f5924a027cacdf29dc37c95f4c6
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "8528558"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8655030"
 ---
 # <a name="entering-data"></a>Saisie de données
 
 Plusieurs fonctions générales vous permettent de saisir vos données de manière plus facile, rapide et précise. Les principes de base et les fonctionnalités avancées de saisie de données sont décrites dans cet article.  
+
+[!INCLUDE [about-ui-learn](includes/about-ui-learn.md)]
 
 Les exemples contenus dans cet article utilisent les données de démonstration.
 
