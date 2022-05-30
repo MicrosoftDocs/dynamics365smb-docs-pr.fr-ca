@@ -8,14 +8,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: VAT, posting, tax, value-added tax
 ms.search.form: 10, 1877, 470, 471, 472
-ms.date: 03/04/2022
+ms.date: 04/12/2022
 ms.author: bholtorf
-ms.openlocfilehash: 285f0f224853837e2aac6553c34d366afb09f08a
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 98a190594dbd2b37f949bdc51e7f810dd739b769
+ms.sourcegitcommit: 4853614c85beb347091c5c4c1ea8d974dec887fc
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8519235"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740321"
 ---
 # <a name="set-up-calculations-and-posting-methods-for-value-added-tax"></a>Configurer des méthodes de calcul et de report de la taxe sur la valeur ajoutée
 
@@ -83,7 +83,7 @@ Pour configurer un groupe de report marché TVA, procédez comme suit :
 
 Paramétrez les groupes comptabilisation marché TVA par défaut en les liant à des groupes comptabilisation marché. [!INCLUDE[prod_short](includes/prod_short.md)] affecte automatiquement le groupe comptabilisation marché TVA lorsque vous affectez le groupe comptabilisation marché à un client, un fournisseur ou un compte général.
 
-## <a name="set-up-vat-product-posting-groups"></a>Configurer des groupes de report produit TVA
+## <a name="set-up-vat-product-posting-groups"></a>Configurer des groupes comptabilisation produit TVA
 
 Les groupes de report produit TVA représentent les articles et les ressources que vous achetez ou vendez et déterminent la manière de calculer et de reporter la TVA en fonction du type d'article ou de ressource acheté ou vendu.  
 Il est recommandé d'utiliser des codes faciles à retenir et qui décrivent le taux, par exemple **SANS TVA** ou **Zéro**, **TVA10** ou **Réduite** pour 10 % de TVA, et **TVA25** ou **Standard** pour 25 %.
@@ -93,7 +93,7 @@ Pour configurer un groupe de report marché TVA, procédez comme suit :
 1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 4.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Groupes de report produit TVA**, puis choisissez le lien associé.  
 2. Renseignez les champs selon vos besoins.
 
-## <a name="combine-vat-posting-groups-in-vat-posting-setups"></a>Regrouper des groupes de report TVA dans les configurations report TVA
+## <a name="combine-vat-posting-groups-in-vat-posting-setups"></a>Regrouper des groupes de report TVA dans les configurations report de taxe
 
 [!INCLUDE[prod_short](includes/prod_short.md)] calcule les montants de TVA sur les ventes et les achats en fonction des paramètres comptabilisation TVA, qui sont des combinaisons de groupes comptabilisation marché et produit TVA. Pour chaque combinaison, vous pouvez spécifier le pourcentage de TVA, le mode calcul TVA et les comptes du grand livre pour le report de la TVA pour les achats, les ventes, ainsi que les frais renversés. Vous pouvez également spécifier si la TVA doit être recalculée lorsqu'un escompte de paiement est affecté ou reçu.  
 
@@ -104,7 +104,7 @@ Pour regrouper des configurations report TVA, procédez comme suit :
 1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 5.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration report TVA**, puis choisissez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]
 
-## <a name="assign-vat-posting-groups-by-default-to-multiple-entities"></a>Affecter des groupes de report TVA par défaut à plusieurs entités
+## <a name="assign-vat-posting-groups-by-default-to-multiple-entities"></a>Affecter des groupes comptabilisation TVA par défaut à plusieurs entités
 
 Si vous souhaitez appliquer les mêmes groupes comptabilisation TVA à plusieurs entités, vous pouvez configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour le faire par défaut. Plusieurs méthodes sont disponibles :
 
@@ -218,13 +218,22 @@ Vous devez configurer des informations sur la façon dont les autorités fiscale
 
 ## <a name="see-also"></a>Voir aussi
 
-[Paramétrage des modèles de déclaration de TVA et des noms de relevé fiscal](finance-how-setup-vat-statement.md)  
-[Configuration de la TVA sur encaissement](finance-setup-unrealized-vat.md)  
+[Configurer des modèles de relevé fiscal et des noms de relevé fiscal](finance-how-setup-vat-statement.md)  
+[Configurer la TVA non réalisée](finance-setup-unrealized-vat.md)  
 [Déclarer la TVA à une autorité fiscale](finance-how-report-vat.md)  
 [Utiliser la TVA sur les ventes et les achats](finance-work-with-vat.md)  
 [Utiliser l’outil de modification du taux de TVA](finance-how-use-vat-rate-change-tool.md)  
 [Vérifier les numéros d'identification intracommunautaire](finance-how-validate-vat-registration-number.md)  
 [Fonctionnalités locales dans Business Central](about-localization.md)  
+[Déclaration de TVA dans la version allemande](LocalFunctionality/Germany/vat-reporting.md)  
+[TVA belge](LocalFunctionality/Belgium/belgian-vat.md)  
+[TVA, Italie](LocalFunctionality/Italy/italian-vat.md)  
+[Paramétrer les déclarations TVA et ICP électroniques dans la version néerlandaise](LocalFunctionality/Netherlands/how-to-set-up-electronic-vat-and-icp-declarations.md)  
+[Rapports de TVA dans la version espagnole](LocalFunctionality/Spain/vat-reports.md)  
+[Configurer le report de la taxe sur les biens et services dans la version australienne](LocalFunctionality/Australia/how-to-set-up-goods-and-service-tax-posting.md)  
+[TVA dans la version tchèque](LocalFunctionality/Czech/finance-vat.md)  
+[Déclaration de TVA dans la version norvégienne](LocalFunctionality/Norway/norwegian-vat-reporting.md)  
+[Déclaration de la taxe sur les biens/services et de la taxe de vente harmonisée au Canada](LocalFunctionality/Canada/sales-tax-goods-services.md)  
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/process-vat-dynamics-365-business-central/)
 

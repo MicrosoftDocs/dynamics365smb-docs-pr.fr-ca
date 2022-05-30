@@ -10,12 +10,12 @@ ms.search.keywords: electronic document, Intrastat, trade, EU, European Union
 ms.search.form: 308, 309, 310, 311, 325, 326, 327, 328, 405, 406, 8451, 12202, 31077
 ms.date: 01/28/2022
 ms.author: bholtorf
-ms.openlocfilehash: 2530b6a5d562cfd22abd8ae097408388034a5711
-ms.sourcegitcommit: 4a57fb5b88b9ebbb61fdd1b25e1fd4ba0013c8e5
+ms.openlocfilehash: d5b1358166f8d26a62da79059a73948bcd7b9784
+ms.sourcegitcommit: 4853614c85beb347091c5c4c1ea8d974dec887fc
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8485013"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740347"
 ---
 # <a name="set-up-and-report-intrastat"></a>Configurer et enregistrer un rapport Intrastat
 
@@ -125,7 +125,7 @@ Le traitement en lot récupère toutes les écritures article de la période sta
 6. Publiez les modifications que vous avez apportées dans Excel dans [!INCLUDE[prod_short](includes/prod_short.md)]
 
 > [!Note]
-> Dans les versions de [!INCLUDE[prod_short](includes/prod_short.md)] qui ne prennent pas en charge [**Modifier dans Excel**](across-work-with-excel.md#edit-in-excel) pour les journaux, vous pouvez [créer des packages de configuration](admin-how-to-prepare-a-configuration-package.md#to-create-a-configuration-package) pour exporter et importer des lignes de journal Intrastat vers Excel. 
+> Dans les versions de [!INCLUDE[prod_short](includes/prod_short.md)] qui ne prennent pas en charge [**Modifier dans Excel**](across-work-with-excel.md#edit-in-excel) pour les journaux, vous pouvez créer des packages de configuration pour exporter et importer des lignes journal Intrastat vers Excel. Pour plus d’informations, voir [Migrer des données locales vers Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-data) dans le contenu d’administration.
 
 ### <a name="report-intrastat-on-a-form-or-a-file"></a>Rapport Intrastat sur un formulaire ou un fichier
 
@@ -167,6 +167,7 @@ Ajoutez tous les codes que vous utilisez dans la page **Nomenclatures produit**.
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/process-intrastat-dynamics-365-business-central/index)
 
 ## <a name="see-also"></a>Voir aussi
+
 [Gestion financière](finance.md)
 
 

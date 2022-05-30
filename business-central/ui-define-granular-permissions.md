@@ -1,42 +1,46 @@
 ---
 title: Définir des autorisations granulaires
-description: Cette rubrique décrit comment définir des autorisations granulaires en donnant à certains utilisateurs l’accès aux objets et en leur attribuant des ensembles d’autorisations.
+description: Cet article décrit comment définir des autorisations granulaires et affecter à chaque utilisateur les ensembles d’autorisations dont il a besoin pour effectuer son travail.
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: access, right, security
-ms.search.form: 1, 119, 8930, 9807, 9808, 9830, 9831
-ms.date: 03/24/2022
+ms.search.form: 1, 119, 8930, 9800, 9807, 9808, 9830, 9831
+ms.date: 05/09/2022
 ms.author: edupont
-ms.openlocfilehash: ca0373fc55fb14d43dae9ce5bc51c0063c88a2af
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 26dbf7e47c0159429aebd34e9167d9c3e7490ec6
+ms.sourcegitcommit: 2fa712d0aabe4287ebd4454c28d142d6baf045a0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8522522"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "8729852"
 ---
 # <a name="assign-permissions-to-users-and-groups"></a>Attribuer des autorisations aux utilisateurs et aux groupes
 
-Les administrateurs utilisent le système de sécurité [!INCLUDE[prod_short](includes/prod_short.md)] pour contrôler les objets auxquels un utilisateur peut accéder dans chaque base de données ou environnement, en combinaison avec les licences attribuées. Vous pouvez spécifier pour chaque utilisateur s'il peut lire, modifier ou entrer des données dans les objets de base de données sélectionnés. Pour des informations détaillées, voir [Sécurité des données](/dynamics365/business-central/dev-itpro/security/data-security?tabs=object-level) dans le contenu pour développeurs et administrateurs pour [!INCLUDE[prod_short](includes/prod_short.md)].
+Le système de sécurité [!INCLUDE[prod_short](includes/prod_short.md)] contrôle les objets auxquels un utilisateur peut accéder dans chaque base de données ou environnement, en combinaison avec la licence de l’utilisateur attribuée. Vous pouvez spécifier pour chaque utilisateur s’il peut lire, modifier ou saisir des données dans les objets de base de données sélectionnés. Pour des informations détaillées, voir [Sécurité des données](/dynamics365/business-central/dev-itpro/security/data-security?tabs=object-level) dans le contenu pour développeurs et administrateurs pour [!INCLUDE[prod_short](includes/prod_short.md)].
 
-Avant d’attribuer des autorisations à des utilisateurs et à des groupes d’utilisateurs, vous devez définir ceux qui peuvent se connecter en créant des utilisateurs en fonction de la licence définie dans le Centre d’administration Microsoft 365. Pour plus d’informations, voir [Créer des utilisateurs conformément aux licences](ui-how-users-permissions.md).
+Avant d’attribuer des autorisations à des utilisateurs et à des groupes d’utilisateurs, vous devez définir ceux qui peuvent se connecter en créant des utilisateurs en fonction de leur licence. Pour plus d’informations, voir [Créer des utilisateurs conformément aux licences](ui-how-users-permissions.md).
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], il existe deux niveaux d'autorisations pour les objets de base de données :
 
 - les autorisations globales en fonction de la licence, également appelées « droit » ;
 
   Les licences incluent des ensembles d’autorisations par défaut. À partir de la 1re vague de lancement 2022, les administrateurs peuvent personnaliser ces autorisations par défaut pour les types de licence concernés. Pour plus d’informations, voir [Configurer les autorisations en fonction des licences](ui-how-users-permissions.md#licensespermissions).  
+
 - Les autorisations plus détaillées qui sont attribuées à partir de [!INCLUDE[prod_short](includes/prod_short.md)].
 
   Cet article décrit comment vous pouvez définir, utiliser et appliquer des autorisations dans [!INCLUDE [prod_short](includes/prod_short.md)] pour changer la configuration par défaut.  
+
+[!INCLUDE [admin-gdap-users](includes/admin-gdap-users.md)]  
+Pour plus d’informations, voir [Accès administrateur délégué à Business Central Online](/dynamics365/business-central/dev-itpro/administration/delegated-admin).  
 
 [!INCLUDE [prod_short](includes/prod_short.md)] en ligne inclut des groupes d’utilisateurs par défaut qui sont attribués automatiquement aux utilisateurs en fonction de leur licence. Vous pouvez modifier la configuration par défaut en modifiant ou en ajoutant des groupes d’utilisateurs, des ensembles d’autorisations et des autorisations. Le tableau suivant décrit les principaux scénarios de modification des autorisations par défaut.  
 
 |Pour  |Voir  |
 |---------|---------|
-|Pour faciliter la gestion des autorisations pour plusieurs utilisateurs, vous pouvez les organiser en groupes d'utilisateurs et ainsi affecter ou modifier un ensemble d'autorisations pour plusieurs utilisateurs en une seule action.| [Pour gérer les autorisations via des groupes d’utilisateurs](#to-manage-permissions-through-user-groups) |
+|Pour faciliter la gestion des autorisations pour plusieurs utilisateurs, vous pouvez les organiser en groupes d’utilisateurs, puis affecter ou modifier un ensemble d’autorisations pour plusieurs utilisateurs en une seule action.| [Pour gérer les autorisations via des groupes d’utilisateurs](#to-manage-permissions-through-user-groups) |
 |Pour gérer des ensembles d’autorisations pour des utilisateurs spécifiques | [Pour affecter des ensembles d’autorisations à des utilisateurs](#to-assign-permission-sets-to-users) |
 |Pour savoir comment définir un ensemble d’autorisations|[Pour créer ou modifier un ensemble d’autorisations](#to-create-or-modify-a-permission-set)|
 |Pour gérer des autorisations spécifiques|[Pour créer ou modifier des autorisations manuellement](#to-create-or-modify-permissions-manually)|
@@ -54,7 +58,7 @@ Les groupes d’utilisateurs vous aident à gérer les ensembles d’autorisatio
 
 Commencez par créer un groupe d'utilisateurs. Ensuite, vous affectez des ensembles d'autorisations au groupe afin de définir l'objet auquel les utilisateurs du groupe peuvent accéder. Lorsque vous ajoutez un utilisateur au groupe, les ensembles d'autorisations définis pour le groupe s'appliquent à l'utilisateur.
 
-Les ensembles d'autorisations attribués à un utilisateur via un groupe d'utilisateurs restent synchronisés afin qu'une modification des autorisations du groupe d'utilisateurs soit automatiquement propagée à l'utilisateur. Si vous supprimez un utilisateur d'un groupe d'utilisateurs, les autorisations concernées sont automatiquement révoquées.
+Les ensembles d’autorisations attribués à un utilisateur via un groupe d’utilisateurs restent synchronisés. Une modification des autorisations du groupe d’utilisateurs est automatiquement propagée aux utilisateurs. Si vous supprimez un utilisateur d'un groupe d'utilisateurs, les autorisations concernées sont automatiquement révoquées.
 
 ### <a name="to-add-users-to-a-user-group"></a>Pour ajouter des utilisateurs à un groupe d’utilisateurs
 
@@ -94,16 +98,16 @@ La procédure suivante explique comment affecter des ensembles d'autorisations �
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.
 2. Sur la page **Utilisateurs**, sélectionnez l'utilisateur approprié, puis cliquez sur l'action **Ensemble d'autorisations par groupe d'utilisateurs**.
-3. Sur la page **Ensemble d'autorisations par groupe d'utilisateurs**, activez la case à cocher **[nom groupe d'utilisateurs]** sur une ligne pour l'ensemble d'autorisations approprié pour affecter l'ensemble au groupe d'utilisateurs.
+3. Dans la page **Ensemble d’autorisations par groupe d’utilisateurs**, sélectionnez le champ **[nom du groupe d’utilisateurs]** sur une ligne pour l’ensemble d’autorisations approprié pour affecter l’ensemble au groupe d’utilisateurs.
 4. Activez la case à cocher **Tous les groupes d'utilisateurs** pour affecter l'ensemble d'autorisations à tous les groupes d'utilisateurs.
 
 Vous pouvez aussi affecter des ensembles d’autorisations directement à un utilisateur.
 
 ## <a name="to-assign-permission-sets-to-users"></a>Pour affecter des ensembles d'autorisations à des utilisateurs
 
-Un ensemble d'autorisations est une collection d'autorisations pour des objets de base de données spécifiques. Tous les utilisateurs doivent être affectés à une ou plusieurs séries d’autorisations avant de pouvoir accéder à [!INCLUDE[prod_short](includes/prod_short.md)]. 
+Un ensemble d'autorisations est une collection d'autorisations pour des objets de base de données spécifiques. Tous les utilisateurs doivent être affectés à une ou plusieurs séries d’autorisations avant de pouvoir accéder à [!INCLUDE[prod_short](includes/prod_short.md)].  
 
-Une solution [!INCLUDE[prod_short](includes/prod_short.md)] contient souvent plusieurs ensembles d'autorisations prédéfinis qui sont ajoutés par Microsoft ou par votre fournisseur de solutions. Vous pouvez également ajouter de nouveaux ensembles d'autorisations personnalisés pour répondre aux besoins de votre organisation. Pour plus d’informations, voir la section [Pour créer ou modifier des ensembles d’autorisations](#to-create-or-modify-a-permission-set).
+Une solution [!INCLUDE[prod_short](includes/prod_short.md)] contient des ensembles d’autorisations prédéfinis qui sont ajoutés par Microsoft ou par votre fournisseur de solutions. Vous pouvez également ajouter de nouveaux ensembles d'autorisations personnalisés pour répondre aux besoins de votre organisation. Pour plus d’informations, voir la section [Pour créer ou modifier des ensembles d’autorisations](#to-create-or-modify-a-permission-set).
 
 > [!NOTE]
 > Si vous ne souhaitez pas limiter l'accès d'un utilisateur plus que ce qui est déjà défini par la licence, vous pouvez attribuer à l'utilisateur un ensemble d'autorisations spéciales appelé SUPER. Cet ensemble d'autorisations garantit que l'utilisateur peut accéder à tous les objets spécifiés dans la licence.
@@ -159,7 +163,7 @@ Tous les ensembles d’autorisations qui sont affectés à l’utilisateur sont 
 
 ### <a name="security-filters-limit-a-users-access-to-specific-records-in-a-table"></a>Filtres de sécurité : pour limiter l’accès d’un utilisateur à des enregistrements spécifiques dans une table
 
-Pour la sécurité au niveau des enregistrements dans [!INCLUDE[prod_short](includes/prod_short.md)], vous utilisez des filtres de sécurité pour limiter l'accès d'un l'utilisateur aux données dans une table. Vous créez des filtres de sécurité sur les données de la table. Un filtre de sécurité décrit un ensemble d'enregistrements dans une table auxquels un utilisateur a l'autorisation d'accéder. Vous pouvez indiquer, par exemple, qu'un utilisateur peut uniquement lire les enregistrements qui contiennent des informations relatives à un client particulier. Cela signifie que l'utilisateur ne peut pas accéder aux enregistrements qui contiennent des informations sur d'autres clients. Pour plus d’informations, voir [Utilisation des filtres de sécurité](/dynamics365/business-central/dev-itpro/security/security-filters) dans le contenu d’administration.
+Pour la sécurité au niveau des enregistrements dans [!INCLUDE[prod_short](includes/prod_short.md)], vous utilisez des filtres de sécurité pour limiter l'accès d'un l'utilisateur aux données dans une table. Vous créez des filtres de sécurité sur les données de la table. Un filtre de sécurité décrit un ensemble d'enregistrements dans une table auxquels un utilisateur a l'autorisation d'accéder. Vous pouvez indiquer, par exemple, qu'un utilisateur peut uniquement lire les enregistrements qui contiennent des informations relatives à un client particulier. Ainsi, l’utilisateur ne peut pas accéder aux enregistrements qui contiennent des informations sur d’autres clients. Pour plus d’informations, voir [Utilisation des filtres de sécurité](/dynamics365/business-central/dev-itpro/security/security-filters) dans le contenu d’administration.
 
 
 ## <a name="to-create-or-modify-a-permission-set"></a>Pour créer ou modifier un ensemble d'autorisations
@@ -186,34 +190,37 @@ Vous pouvez également utiliser une fonction de copie pour déplacer rapidement 
 
 1. Sur la page **Ensembles d'autorisations**, sélectionnez la ligne d'un ensemble d'autorisations à copier, puis sélectionnez l'action **Copier ensemble d'autorisations**.
 2. Sur la page **Copier ensemble d'autorisations**, spécifiez le nom du nouvel ensemble d'autorisations, puis cliquez sur le bouton **OK**.
-3. Activez la case à cocher **Notification en cas de modifications de l'ensemble d’autorisations** si vous souhaitez conserver un lien entre les ensembles d'autorisations originaux et copiés. Le lien est ensuite utilisé pour vous informer si le nom ou le contenu de l'ensemble d'autorisations original change dans une version future vers laquelle la solution est mise à niveau ultérieurement.
+3. Activez la case à cocher **Notification en cas de modifications de l'ensemble d’autorisations** si vous souhaitez conserver un lien entre les ensembles d'autorisations originaux et copiés. De cette façon, vous êtes averti si le nom ou le contenu de l’ensemble d’autorisations d’origine change dans une version ultérieure.
 
-Le nouvel ensemble d'autorisations, contenant toutes les autorisations de l'ensemble d'autorisations copié, est ajouté en tant que nouvelle ligne sur la page **Ensembles d'autorisations**. Vous pouvez maintenant modifier les autorisations dans le nouvel ensemble d'autorisations. Notez que les lignes sont triées alphabétiquement dans chaque type.
+Le nouvel ensemble d'autorisations, contenant toutes les autorisations de l'ensemble d'autorisations copié, est ajouté en tant que nouvelle ligne sur la page **Ensembles d'autorisations**. Vous pouvez maintenant modifier les autorisations dans le nouvel ensemble d'autorisations. 
+
+> [!TIP]
+> Les lignes sont triées alphabétiquement dans chaque type.
 
 ### <a name="to-export-and-import-a-permission-set"></a>Pour exporter et importer un ensemble d'autorisations
 
-Pour configurer rapidement des autorisations, vous pouvez importer des ensembles d'autorisations que vous avez exportés d'un autre locataire [!INCLUDE[prod_short](includes/prod_short.md)].
+Pour configurer rapidement des autorisations, vous pouvez importer les ensembles d’autorisations que vous avez exportés à partir d’un autre abonné [!INCLUDE[prod_short](includes/prod_short.md)].
 
-Dans les environnements multi-locataires, un ensemble d'autorisations sera importé dans un locataire spécifique, c'est-à-dire que la portée de l'importation est "Locataire".
+Dans les environnements à plusieurs abonnés, un ensemble d’autorisations est importé dans un abonné spécifique. Autrement dit, la portée de l’importation est *Abonné*.
 
 1. Dans le locataire 1, sur la page **Ensembles d'autorisations**, sélectionnez la ligne ou les lignes des ensembles d'autorisations à exporter, puis choisissez l'action **Exporter des ensembles d'autorisations**.
 
-    Un fichier xml est créé dans le dossier de téléchargement de votre machine. Par défaut, il est nommé "Export Permission Sets.xml"
+    Un fichier XML est créé dans le dossier de téléchargement de votre machine. Par défaut, son nom est *Exporter ensembles autorisations.xml*.
 
 2. Dans le locataire 2, dans la page **Ensembles d'autorisations**, sélectionnez l'action **Importer des ensembles d'autorisations**.
-3. Dans la page de la boîte de dialogue **Importer des ensembles d'autorisations**, envisagez de fusionner les ensembles d'autorisations existants avec de nouveaux ensembles d'autorisations dans le fichier xml.
+3. Dans la boîte de dialogue **Importer des ensembles d’autorisations**, pensez à fusionner les ensembles d’autorisations existants avec les nouveaux ensembles d’autorisations dans le fichier XML.
 
-    Si vous sélectionnez **Mettre à jour les autorisations existantes**, les ensembles d'autorisations existants portant le même nom que ceux qui existent dans le fichier xml seront fusionnés avec les ensembles d'autorisations importés.
+    Si vous cochez la case **Mettre à jour les autorisations existantes**, les ensembles d’autorisations existants qui ont le même nom dans le fichier XML sont fusionnés avec les ensembles d’autorisations importés.
 
-    Si vous ne cochez pas la case **Mettre à jour les autorisations existantes**, les ensembles d'autorisations portant le même nom que ceux qui existent dans le fichier xml seront ignorés lors de l'importation. Dans ce cas, vous serez informé des ensembles d'autorisations qui sont ignorés.
+    Si vous ne cochez pas la case **Mettre à jour les autorisations existantes**, les ensembles d’autorisations qui ont le même nom dans le fichier XML sont ignorés lors de l’importation. Dans ce cas, vous êtes informé que des ensembles d’autorisations sont ignorés.
 
-4. Dans la boîte de dialogue **Importer**, recherchez et sélectionnez le fichier xml à importer, puis choisissez l'action **Ouvrir**.
+4. Dans la boîte de dialogue **Importer**, recherchez et sélectionnez le fichier XML à importer, puis choisissez l’action **Ouvrir**.
 
 Les ensembles d'autorisations sont importés.
 
 ## <a name="to-create-or-modify-permissions-manually"></a>Pour créer ou modifier des autorisations manuellement
 
-Cette procédure explique comment ajouter ou modifier des autorisations manuellement. Vous pouvez aussi avoir des autorisations générées automatiquement suite à vos actions dans l'interface utilisateur. Pour plus d'informations, voir [Pour créer ou modifier des autorisations en enregistrant vos actions](ui-define-granular-permissions.md#to-create-or-modify-permissions-by-recording-your-actions).
+Cette procédure explique comment ajouter ou modifier des autorisations manuellement. Vous pouvez également avoir des autorisations générées automatiquement à partir de vos actions dans l’interface utilisateur. Pour plus d'informations, voir [Pour créer ou modifier des autorisations en enregistrant vos actions](ui-define-granular-permissions.md#to-create-or-modify-permissions-by-recording-your-actions).
 
 > [!NOTE]
 > Lorsque vous modifiez une autorisation et ainsi l'ensemble d'autorisations associé, les modifications s'appliquent également à d'autres utilisateurs auxquels l'ensemble d'autorisations est affecté.
@@ -227,7 +234,7 @@ Dans chacun des cinq champs de types d'accès, **Lecture**, **Insertion**, **Mod
 |------|-----------|-------|
 |**Oui**|L'utilisateur peut exécuter l'action sur l'objet en question.|Le plus élevé|
 |**Indirect**|L'utilisateur peut exécuter l'action sur l'objet en question mais uniquement via un autre objet associé auquel l'utilisateur a un accès total. Pour plus d'informations sur les autorisations indirectes, voir [Propriété Autorisations](/dynamics365/business-central/dev-itpro/developer/properties/devenv-permissions-property) dans l'aide pour les développeurs et IT-Pro|Deuxièmement plus élevé|
-|**Vide**|L'utilisateur ne peut pas exécuter l'action sur l'objet en question.|Le moins élevé|
+|**Vide**|L’utilisateur ne peut pas exécuter l’action sur l’objet en question.|Le moins élevé|
 
 > [!IMPORTANT]
 > Soyez prudent lorsque vous attribuez **Insérer l’autorisation** ou **Modifier l’autorisation** dans la table **9001 Membre du groupe d’utilisateurs** ou **9003 Ensemble d’autorisations de groupe d’utilisateurs**. Tous les utilisateurs affectés à l’ensemble d’autorisations pourraient potentiellement s’attribuer eux-mêmes à d’autres groupes d’utilisateurs, qui à leur tour, pourraient leur donner involontairement des autorisations.
@@ -235,9 +242,9 @@ Dans chacun des cinq champs de types d'accès, **Lecture**, **Insertion**, **Mod
 ### <a name="example---indirect-permission"></a>Exemple- Autorisation indirecte
 
 L'autorisation indirecte vous permet d'utiliser un objet uniquement au travers d'un autre objet.
-Par exemple, un utilisateur peut être autorisé à exécuter le codeunit 80 Ventes-Valider. Le codeunit Ventes-Valider effectue de nombreuses tâches, parmi lesquelles modifier la table 37 (Ligne vente). Lorsque l'utilisateur valide un document vente, le codeunit Ventes-Valider, [!INCLUDE[prod_short](includes/prod_short.md)] vérifie si l'utilisateur est autorisé à modifier la table Ligne vente. S'il n'est pas autorisé à le faire, le codeunit ne peut pas effectuer ses tâches et l'utilisateur reçoit un message d'erreur. S'il est autorisé à le faire, le codeunit s'exécute.
+Par exemple, un utilisateur peut être autorisé à exécuter le codeunit 80 Ventes-Valider. Le codeunit Ventes-Valider effectue de nombreuses tâches, parmi lesquelles modifier la table 37 (Ligne vente). Lorsque l'utilisateur valide un document vente, le codeunit Ventes-Valider, [!INCLUDE[prod_short](includes/prod_short.md)] vérifie si l'utilisateur est autorisé à modifier la table Ligne vente. S’il n’est pas autorisé, le codeunit ne peut pas effectuer ses tâches et l’utilisateur reçoit un message d’erreur. S'il est autorisé à le faire, le codeunit s'exécute.
 
-L'utilisateur n'a toutefois pas besoin d'avoir entièrement accès à la table Ligne vente pour exécuter le codeunit. Si une autorisation indirecte a été accordée à l'utilisateur pour la table Ligne vente, alors le codeunit Ventes-Valider s'exécute. Lorsqu'une autorisation indirecte est accordée à un utilisateur, celui-ci peut uniquement modifier la table Ligne vente en exécutant le codeunit Ventes-Valider ou un autre objet autorisé à modifier la table Ligne vente. L'utilisateur peut uniquement modifier la table Ligne vente lorsqu'il procède à partir des modules pris en charge. L'utilisateur ne peut pas exécuter cette fonctionnalité par inadvertance ou par malveillance en suivant d'autres méthodes.
+L’utilisateur n’a toutefois pas besoin d’avoir un accès total au tableau Ligne vente pour exécuter le codeunit. Si une autorisation indirecte a été accordée à l'utilisateur pour la table Ligne vente, alors le codeunit Ventes-Valider s'exécute. Lorsqu'une autorisation indirecte est accordée à un utilisateur, celui-ci peut uniquement modifier la table Ligne vente en exécutant le codeunit Ventes-Valider ou un autre objet autorisé à modifier la table Ligne vente. L'utilisateur peut uniquement modifier la table Ligne vente lorsqu'il procède à partir des modules pris en charge. L’utilisateur ne peut pas exécuter cette fonctionnalité par inadvertance ou par malveillance en suivant d’autres méthodes.
 
 ## <a name="to-create-or-modify-permissions-by-recording-your-actions"></a>Pour créer ou modifier des autorisations en enregistrant vos actions
 
@@ -249,7 +256,7 @@ L'utilisateur n'a toutefois pas besoin d'avoir entièrement accès à la table L
 4. Sélectionnez l'option **Autorisations**.
 5. Sur la page **Autorisations**, choisissez l'action **Enregistrer autorisations**, puis sélectionnez l'action **Démarrer**.
 
-    Cette opération démarre processus d'enregistrement qui capture toutes vos actions dans l'interface utilisateur.
+    Un processus d’enregistrement démarre et capture toutes vos actions dans l’interface utilisateur.
 6. Accédez aux différentes pages et activités dans [!INCLUDE[prod_short](includes/prod_short.md)] auxquelles vous voulez que les utilisateurs avec cet ensemble d'autorisations puissent accéder. Vous devez exécuter les tâches pour lesquelles vous souhaitez enregistrer des autorisations.
 7. Lorsque vous souhaitez terminer l'enregistrement, revenez sur la page **Autorisations** et choisissez l'option **Arrêter**.
 8. Cliquez sur le bouton **Oui** pour ajouter les autorisations enregistrées au nouvel ensemble d'autorisations.
@@ -261,19 +268,23 @@ L'utilisateur n'a toutefois pas besoin d'avoir entièrement accès à la table L
 
 ## <a name="to-set-up-user-time-constraints"></a>Pour configurer des contraintes de temps utilisateur
 
-Les administrateurs peuvent définir les périodes de temps pendant lesquelles les utilisateurs spécifiés peuvent reporter, et spécifier également si le système enregistre la durée pendant laquelle les utilisateurs spécifiés ont ouvert une session. Les administrateurs peuvent également affecter des centres de gestion à des utilisateurs. Pour plus d'informations, voir [Utiliser les centres de gestion](inventory-responsibility-centers.md).
+Les administrateurs peuvent définir des périodes pendant lesquelles certains utilisateurs peuvent reporter. Les administrateurs peuvent également spécifier si le système enregistre la durée de connexion des utilisateurs. De même, les administrateurs peuvent affecter des centres de gestion aux utilisateurs. Pour plus d'informations, voir [Utiliser les centres de gestion](inventory-responsibility-centers.md).
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration utilisateur**, puis choisissez le lien associé.
 2. Sur la page **Configuration des utilisateurs**, qui s'ouvre, sélectionnez l'action **Nouveau**.
 3. Dans le champ **ID utilisateur**, entrez l'ID d'un utilisateur, ou cliquez sur le champ pour visualiser tous les utilisateurs Windows actuels dans le système.
 4. Renseignez les champs selon vos besoins.
 
-## <a name="viewing-permission-changes-telemetry"></a>Affichage de la télémétrie des modifications d’autorisation 
+## <a name="viewing-permission-changes-telemetry"></a>Affichage de la télémétrie des modifications d’autorisation
 
-Vous pouvez configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour envoyer les modifications apportées à l’autorisation à une ressource Application Insights dans Microsoft Azure. Ensuite, à l’aide d’Azure Monitor, vous créez des rapports et configurez des alertes sur les données collectées. Pour plus d’informations, voir les articles suivants dans l’aide [!INCLUDE[prod_short](includes/prod_short.md)] dédiée aux développeurs et professionnels de l’informatique.
+Vous pouvez configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour envoyer les modifications apportées à l’autorisation à une ressource Application Insights dans Microsoft Azure. Ensuite, à l’aide d’Azure Monitor, vous créez des rapports et configurez des alertes sur les données collectées. Pour plus d’informations, voir les articles suivants dans l’aide pour les développeurs et les administrateurs [!INCLUDE[prod_short](includes/prod_short.md)] :
 
 - [Surveillance et analyse de la télémétrie - Activation d’Application Insights](/dynamics365/business-central/dev-itpro/administration/telemetry-overview#enable)
 - [Analyse de la télémétrie de surveillance des champs](/dynamics365/business-central/dev-itpro/administration/telemetry-permission-changes-trace)
+
+## <a name="delegated-admin-users"></a>Utilisateurs administrateurs délégués
+
+[!INCLUDE [admin-gdap-users](includes/admin-gdap-users.md)]
 
 ## <a name="see-also"></a>Voir aussi
 

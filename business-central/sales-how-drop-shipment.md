@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: direct shipment
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 0ca22eaadb8ba4054ce22782881b487cab6bd5c4
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: bc6530a17e98d36a3f26e68e6231306aebfdda1d
+ms.sourcegitcommit: 2fa712d0aabe4287ebd4454c28d142d6baf045a0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8521790"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "8729785"
 ---
 # <a name="make-drop-shipments"></a>Effectuer des livraisons directes
 
@@ -30,29 +30,36 @@ Lorsqu'un document de vente est marqué pour livraison directe, et lorsque vous 
 Pour préparer une livraison directe, vous créez un document de vente pour un article et indiquer sur la ligne vente que la vente exige la livraison directe.
 
 1. Créez un document de vente pour un article. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
-2. Sur la ligne commande vente pour l'article envoyé, cochez la case **Livraison directe**. Utilisez la fonction **Choisir les colonnes** si le champ n'est pas visible. Pour plus d'informations, voir [Personnaliser votre espace de travail](ui-personalization-user.md).
+2. Sur la ligne commande vente pour l'article envoyé, cochez la case **Livraison directe**. 
+
+> [!TIP]
+> Par défaut, la case à cocher Livraison directe n’est pas disponible sur les lignes. Si ce n’est pas le cas, vous pouvez l’ajouter en personnalisant la section de page qui contient les lignes. Pour plus d'informations, voir [Personnaliser votre espace de travail](ui-personalization-user.md).
 
 ## <a name="to-create-the-purchase-order-for-drop-shipment"></a>Pour créer le bon de commande pour livraison directe
 
 Pour préparer une livraison directe, vous indiquez sur le bon de commande qu'elle doit être livrée à votre client, et non à vous-même.
 
-1. Créez un bon de commande. Ne remplissez pas les champs sur les lignes. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
+1. Créez un bon de commande. Ne remplissez aucun champ sur les lignes. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 2. Dans le champ **Destinataire**, sélectionnez **Adresse client**.
-3. Dans le champ **Client**, sélectionnez le client auquel vous souhaitez vendre l'article en question.
-4. Choisissez l'action **Livraisons directes**, puis choisissez l'option **Extraire document de vente**.
+3. Dans le champ **Client**, sélectionnez le client auquel vous vendez l’article.
+4. Choisissez l'action **Livraisons directes**, puis choisissez l'option **Extraire commande vente**.
 5. Sur la page **Liste des ventes**, sélectionnez le document de vente que vous avez préparé dans [Créer un document de vente pour livraison directe](#to-create-a-sales-order-for-drop-shipment).
 6. Choisissez le bouton **OK**.
 
 Les informations de ligne du document de vente sont insérées sur la/les ligne(s) bon de commande.
 
-Vous pouvez maintenant informer le fournisseur quant à la livraison des articles à votre client, par exemple en envoyant le bon de commande au format PDF. Si votre fournisseur vous communique un numéro de suivi ou des informations similaires, vous pouvez choisir d’enregistrer ces informations dans une ligne bon de commande de type *Commentaire*.  
+Vous pouvez maintenant demander à votre fournisseur de livrer les articles directement au client. Par exemple, vous pouvez lui envoyer la commande par courriel. 
+
+Si votre fournisseur vous communique un numéro de suivi ou des informations similaires, vous pouvez ajouter ces informations dans une ligne bon de commande de type *Commentaire*.  
 
 ## <a name="to-create-multiple-purchase-orders-for-drop-shipments"></a>Pour créer plusieurs bons de commande pour des livraisons directes
 
-Vous pouvez également utiliser la feuille de réquisition pour créer le bon de commande du fournisseur. L'avantage d'utiliser la feuille de réquisition est qu'elle permet de créer des bons de commande pour toutes les livraisons directes en attente, il n'est donc pas nécessaire de créer chacun d'eux individuellement.
+Vous pouvez également utiliser la feuille de réquisition pour créer le bon de commande du fournisseur. 
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Demandes achat**, puis sélectionnez le lien associé.
-2. Choisissez l'action **Livraisons directes**, puis choisissez l'option **Extraire document de vente**.
+L’avantage d’utiliser la feuille de réquisition est qu’elle peut créer des bons de commande pour toutes les livraisons directes en attente. Cela signifie que vous n’avez pas à créer chacune individuellement.
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Feuilles de réquisition**, puis choisissez le lien associé.
+2. Choisissez l'action **Livraisons directes**, puis choisissez l'option **Extraire commande vente**.
 3. Choisissez le bouton **OK**.
 4. Passez en revue les lignes bon de commande et, dans le champ **N° fournisseur**, sélectionnez le fournisseur qui fournit les marchandises requises. 
 5. Choisissez l’action **Traiter messages d’action** pour convertir les lignes révisées en bon de commande.

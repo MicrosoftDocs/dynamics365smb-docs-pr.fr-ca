@@ -10,12 +10,12 @@ ms.workload: na
 ms.search.keywords: special price, alternate price, pricing
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 67536b129986343d67c2bc52cc3db8450e177d67
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 5ff042e1dec609b568c36967f56a8cd3673b9558
+ms.sourcegitcommit: 2fa712d0aabe4287ebd4454c28d142d6baf045a0
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8520163"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "8729863"
 ---
 # <a name="record-special-sales-prices-and-discounts"></a>Enregistrer les prix de vente spéciaux et les escomptes
 > [!NOTE]
@@ -95,7 +95,14 @@ Lorsque vous activez la mise à jour de la fonctionnalité **Nouvelle expérienc
 > [!NOTE]
 > Si les prix sont définis uniquement sur les fiches d’articles ou de ressources, les tarifs par défaut ne seront pas renseignés avec ces prix au moment de la mise à jour des données de fonctionnalité. Cependant, vous pouvez ouvrir l’une des listes de prix par défaut ou la page Feuille de calcul des prix et utiliser l’action **Suggérer des lignes** pour ajouter les prix fixés sur les fiches article ou ressource. 
 
-* Pour utiliser les tarifs vente, désactivez-le. Les prix existants seront convertis en une nouvelle liste de prix pour chaque combinaison de client, groupe de clients ou promotion, ainsi que les dates de début et de fin, et les devises. Si vous disposez de plusieurs combinaisons, vous aurez plusieurs listes de prix.
+* Pour utiliser les tarifs vente, désactivez-le. Les prix existants sont convertis en une nouvelle liste de prix pour chacun combinaison des éléments suivants : 
+
+* Client
+* Groupe de clients ou promotion
+* Dates de début et de fin
+* Devises 
+
+Si vous disposez de plusieurs combinaisons, vous aurez plusieurs listes de prix.
 
 Si vous avez déjà activé la nouvelle expérience de tarification, vous pouvez créer manuellement des tarifs par défaut ou spécifier une liste de prix existante par défaut. Pour définir une liste de prix existante par défaut, activez le bouton de basculement **Autoriser la mise à jour des valeurs par défaut** sur la liste de prix. Ensuite, sur les pages **Configuration ventes**, **Configuration achats** ou **Configuration projets**, définissez les tarifs comme valeurs par défaut.
 
@@ -129,13 +136,14 @@ Pour copier des prix de vente, comme les prix appliqués à un client et qui doi
    > Ce traitement en lot crée uniquement des propositions ; il n'effectue pas les modifications proposées. Si les propositions vous conviennent et que vous souhaitez les appliquer, c'est-à-dire les insérer sur la page **Prix vente**, choisissez l'action **Implémenter des modifications de prix**, sur la page **Feuille prix vente**.
 
 #### <a name="new-experience"></a>[Nouvelle expérience](#tab/new-experience/)  
+Vous pouvez spécifier si la nouvelle liste de prix utilise les paramètres de l’en-tête de la liste que vous copiez ou les paramètres de la nouvelle liste vers laquelle vous copiez. Pour utiliser les paramètres de la liste de prix dans laquelle vous copiez les prix, activez **Utiliser les valeurs par défaut de la cible**.
 
 1. Choisissez l’icône ![ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Listes prix vente**, puis choisissez le lien associé. 
 2. Choisissez la liste de prix à copier, puis choisissez **Copier les lignes**.
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
    > [!NOTE]
-   > Vous ne pouvez pas avoir deux lignes ayant les mêmes paramètres mais des prix différents. Si cela se produit, un message s’affiche lorsque vous activez une liste de prix. Vous pouvez choisir le prix à utiliser en ouvrant la liste et en supprimant le prix incorrect.  
+   > Vous ne pouvez pas avoir deux articles qui ont les mêmes paramètres mais des prix différents. Si cela se produit, un message s’affiche lorsque vous activez la liste de prix. Vous pouvez choisir le prix à utiliser en ouvrant la liste et en supprimant le prix incorrect.  
   
 ---
 
@@ -146,8 +154,8 @@ Ces étapes diffèrent selon que votre administrateur a activé ou non la foncti
 
 Pour mettre à jour en bloc des prix article, tels que l’augmentation de tous les prix article par un certain pourcentage, vous pouvez renseigner la page Feuille prix vente à l’aide des traitements en lot suivants :
 
-* **Suggérer prix vente** suggère des modifications en appliquant un facteur d’ajustement aux prix de vente existants ou en copiant les ententes de prix de vente existantes vers d’autres clients, groupes de prix client ou promotions de vente.
-* **Suggérez prix article** suggère des modifications en appliquant un facteur d’ajustement aux prix unitaires existants sur les fiches article, ou en suggérant des prix pour de nouvelles combinaisons de devises, d’unités de mesure, etc. Les prix unitaires des articles ne sont pas modifiés par ce traitement en lot.  
+* **Suggérer prix vente** suggère des modifications de deux manières. Soit en appliquant un facteur d’ajustement aux prix de vente existants, soit en copiant les ententes de prix de vente existantes vers d’autres clients, groupes prix client ou promotions de vente.
+* **Suggérez prix article** suggère des modifications de deux manières. Soit en appliquant un facteur d’ajustement aux prix unitaires existants sur les fiches article, soit en suggérant des prix pour les nouvelles combinaisons de devise, unités de mesure, etc. Les prix unitaires des articles ne sont pas modifiés par ce traitement en lot.  
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Feuille prix vente**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Suggérer prix article**    
@@ -163,14 +171,14 @@ Pour mettre à jour en bloc des prix article, tels que l’augmentation de tous 
 Pour mettre à jour les prix de plusieurs articles, vous devez créer une nouvelle liste de prix, puis copier les lignes d’une liste de prix existante. Lorsque vous copiez les lignes, vous pouvez utiliser des filtres pour spécifier les éléments à copier, et vous pouvez spécifier un nombre entier ou décimal dans le champ **Facteur appliqué** pour augmenter ou diminuer les prix. L’état de la liste de prix doit être **Brouillon**. Si nécessaire, vous pouvez alors désactiver l’ancienne liste de prix.
 
 > [!NOTE]
-> Vous ne pouvez pas avoir deux lignes ayant les mêmes paramètres mais des prix différents. Si cela se produit, un message s’affiche lorsque vous activez une liste de prix. Vous pouvez choisir le prix à utiliser en ouvrant la liste et en supprimant le prix incorrect.  
+> Vous ne pouvez pas avoir deux lignes qui ont les mêmes paramètres mais des prix différents. Si cela se produit, un message s’affiche lorsque vous activez une liste de prix. Vous pouvez choisir le prix à utiliser en ouvrant la liste et en supprimant le prix incorrect.  
 
 ---
 
 ## <a name="best-price-calculation"></a>Calcul du meilleur prix
-Après avoir enregistré les prix spéciaux et les escomptes ligne pour les ventes et les achats, [!INCLUDE[d365fin](includes/d365fin_md.md)] veille à ce que vos profits soient toujours optimaux. Il calcule le meilleur prix sur les documents de vente et d’achat et sur les lignes de journal des travaux et des articles.
+Après avoir enregistré des prix spéciaux et des escomptes ligne pour les ventes et les achats, [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule le meilleur prix sur les documents vente et achat, et sur les lignes journal article et projet.
 
-Le meilleur prix est le prix le plus bas autorisé associé à l'escompte ligne le plus élevé autorisé à une date donnée. [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule les meilleurs prix lorsqu’il insère le prix unitaire et le pourcentage d'escompte de ligne pour des articles dans les nouvelles lignes document et journal.
+Le meilleur prix est le prix le plus bas avec l'escompte de ligne le plus élevé autorisé à une date donnée. [!INCLUDE[d365fin](includes/d365fin_md.md)] calcule les meilleurs prix lorsqu’il ajoute les prix unitaires et les pourcentages d'escompte de ligne sur les lignes document et journal.
 
 > [!NOTE]  
 > Voici une description du calcul du meilleur prix pour la vente. Le calcul est le même pour les achats.
@@ -199,7 +207,7 @@ Pour pouvoir utiliser les escomptes facture avec les ventes, vous devez spécifi
 
 Sur la page **Configuration ventes**, activez le bouton de basculement **Calculer escompte facture** pour que les escomptes facture soient calculés automatiquement.  
 
-Pour chaque client, vous pouvez spécifier si vous aller offrir des escomptes facture si les critères sont remplis pour une facture. Par exemple, si le montant de la facture est suffisamment important. Les escomptes facture peuvent être définis en devise locales pour les clients nationaux ou en devise étrangère pour les clients étrangers.  
+Vous pouvez spécifier si vous proposerez des escomptes facture dès lors qu’une facture remplit certains critères pour chaque client. Par exemple, si le montant de la facture est suffisamment important. Les escomptes facture peuvent être définis en devise locales pour les clients nationaux ou en devise étrangère pour les clients étrangers.  
 
 Vous pouvez associer les pourcentages d'escompte à des montants de facture spécifiques sur la page **Escomptes facture client** pour chaque client. Vous pouvez entrer le nombre de pourcentages de votre choix. Chaque client peut avoir sa propre page, ou vous pouvez lier plusieurs clients à la même page.  
 
@@ -224,7 +232,7 @@ Ces étapes diffèrent selon que votre administrateur a activé ou non la foncti
 3. Renseignez les champs de la ligne selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)] Renseignez une ligne pour chaque combinaison qui accorde une remise ligne vente au client.
 
 > [!Note]
-> Lorsque vous ouvrez les pages **Prix de vente** et **Escomptes de ligne de vente** à partir d’un client spécifique, les champs **Filtre type vente** et **Filtre code vente** sont définis pour le client et ne peuvent pas être modifiés ou supprimés.
+> Lorsque vous ouvrez les pages **Prix de vente** et **Escomptes ligne vente** à partir d’un client spécifique, les champs **Filtre type vente** et **Filtre code vente** sont définis pour le client et ne peuvent pas être modifiés ou supprimés.
 >
 > Pour configurer des prix ou des escomptes ligne pour tous les clients, un groupe de prix client ou une promotion, vous devez ouvrir les pages à partir d’une fiche article. Sinon, pour les prix de vente, utilisez la page **Feuille prix vente**. Pour plus d'informations, voir [Mettre à jour en bloc des prix d'articles](sales-how-record-sales-price-discount-payment-agreements.md#to-bulk-update-item-prices).  
 
