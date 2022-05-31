@@ -948,66 +948,66 @@
 ##### [Recherche du moteur de taxe](LocalFunctionality/India/TaxEngine-004-Lookup.md)
 ##### [Considération sur la conception du moteur de taxe](LocalFunctionality/India/TaxEngine-006-Design-Consideration.md)
 ##### [Script du moteur de taxe](LocalFunctionality/India/TaxEngine-005-Script-Activities.md)
-#### GST
-##### [Vue d’ensemble de la GST](LocalFunctionality/India/GST-001-Basic-Setup.md)
-##### GST sur les achats
+#### TPS
+##### [Vue d’ensemble de la TPS](LocalFunctionality/India/GST-001-Basic-Setup.md)
+##### TPS sur les achats
 ###### [Achat auprès d’un fournisseur composite](LocalFunctionality/India/GST-Purchase-from-Composite-Vendor.md)
 ###### [Achats auprès d’un fournisseur enregistré](LocalFunctionality/India/GST-Purchase-from-Registered-Vendor.md)
 ###### [Achat auprès d’un fournisseur non enregistré (frais inversés)](LocalFunctionality/India/GST-Purchase-from-Unregistered-Vendor-RCM.md)
 ###### [Achat auprès d’un fournisseur SEZ](LocalFunctionality/India/GST-Purchase-from-SEZ-Vendor.md)
 ###### [Achat auprès d’un fournisseur étranger](LocalFunctionality/India/GST-Purchase-from-Foreign-Vendor.md)
 ###### [Achat auprès d’un fournisseur avec un lieu d’approvisionnement à l’étranger](LocalFunctionality/India/GST-Service-Purchase-for-Overseas-Place-of-supply-Registered-Vendor.md)
-###### [GST et TDS sur les transactions d’achat](LocalFunctionality/India/GST-TDS-and-GST-on-Purchase.md)
-##### GST sur les retours achat
+###### [TPS et TDS sur les transactions d’achat](LocalFunctionality/India/GST-TDS-and-GST-on-Purchase.md)
+##### TPS sur les retours achat
 ###### [Retours achat auprès d’un fournisseur composite](LocalFunctionality/India/GST-Purchase-Return-to-Composite-Vendor.md)
 ###### [Retours achat auprès d’un fournisseur enregistré](LocalFunctionality/India/GST-Purchase-Return-to-Registered-Vendor.md)
 ###### [Retour achat auprès d’un fournisseur non enregistré (frais inversés)](LocalFunctionality/India/GST-Purchase-Return-to-Unregistered-Vendor-RCM.md) 
 ###### [Retours achat auprès d’un fournisseur étranger](LocalFunctionality/India/GST-Purchase-Return-to-Foreign-Vendor.md)
 ###### [Retours achat auprès d’un fournisseur avec un lieu d’approvisionnement à l’étranger](LocalFunctionality/India/GST-Return-of-Service-for-Overseas-Place-of-supply-Registered-Vendor.md)
-##### GST sur les journaux/paiements/affectations
-###### [GST sur les journaux](LocalFunctionality/India/GST-GST-Calculation-on-Journals-where-Services-paid-directly-through-CashBank.md)
-###### [GST sur l’acompte au fournisseur](LocalFunctionality/India/GST-GST-on-Advance-Payment-made-to-Vendor.md)
-###### [Affectation de la GST sur le paiement et la facture](LocalFunctionality/India/GST-Advance-Normal-Payment-and-Purchase-Invoice-Goods-Application.md)
-###### [GST sur le reçu d’acompte du client](LocalFunctionality/India/GST-GST-on-Advance-Payment-received-from-Customer.md)
-###### [Affectation de la GST sur le reçu et la facture](LocalFunctionality/India/GST-GST-on-Advance-Receipt-Application-to-Sales-Invoice.md)
-###### [GST et TCS sur l’acompte client](LocalFunctionality/India/GST-TCS-on-Advance-Receipt-Application-to-Sales-Invoice.md)
-###### [GST et TDS sur l’acompte fournisseur](LocalFunctionality/India/GST-TDS-on-Advance-Payment-Application-to-Purchase-Invoice.md)
-##### GSTTPS sur les ventes
+##### TPS sur les journaux/paiements/affectations
+###### [TPS sur les journaux](LocalFunctionality/India/GST-GST-Calculation-on-Journals-where-Services-paid-directly-through-CashBank.md)
+###### [TPS sur l’acompte au fournisseur](LocalFunctionality/India/GST-GST-on-Advance-Payment-made-to-Vendor.md)
+###### [Affectation de la TPS sur le paiement et la facture](LocalFunctionality/India/GST-Advance-Normal-Payment-and-Purchase-Invoice-Goods-Application.md)
+###### [TPS sur le reçu d’acompte du client](LocalFunctionality/India/GST-GST-on-Advance-Payment-received-from-Customer.md)
+###### [Affectation de la TPS sur le reçu et la facture](LocalFunctionality/India/GST-GST-on-Advance-Receipt-Application-to-Sales-Invoice.md)
+###### [TPS et TCS sur l’acompte client](LocalFunctionality/India/GST-TCS-on-Advance-Receipt-Application-to-Sales-Invoice.md)
+###### [TPS et TDS sur l’acompte fournisseur](LocalFunctionality/India/GST-TDS-on-Advance-Payment-Application-to-Purchase-Invoice.md)
+##### TPS les ventes
 ###### [Ventes exonérées](LocalFunctionality/India/GST-Exempted-Sales.md)
 ###### [Vente à un client enregistré et non enregistré](LocalFunctionality/India/GST-Sale-to-Registered-Unregistered-Customer.md)
 ###### [Vente à un client étranger](LocalFunctionality/India/GST-Sale-to-Foreign-Customer-Service.md)
 ###### [Vente à un client enregistré avec un point de vente à l’étranger](LocalFunctionality/India/GST-Sale-to-Registered-Customer-Overseas-POS.md)
-###### [GST et TCS sur les transactions de vente](LocalFunctionality/India/GST-TCS-and-GST-on-Sales-Transaction.md)
-###### [GST sur le recouvrement de flux au Kerala](LocalFunctionality/India/GST-and-Kerala-Flood-Cess-on-Sales.md)
-##### GST sur les retours vente
+###### [TPS et TCS sur les transactions de vente](LocalFunctionality/India/GST-TCS-and-GST-on-Sales-Transaction.md)
+###### [TPS sur le recouvrement de flux au Kerala](LocalFunctionality/India/GST-and-Kerala-Flood-Cess-on-Sales.md)
+##### TPS sur les retours vente
 ###### [Retour vente d’un client enregistré et non enregistré](LocalFunctionality/India/GST-Sale-Return-to-Registered-Unregistered-Customer.md)
 ###### [Retour vente d’un client enregistré avec un point de vente à l’étranger](LocalFunctionality/India/GST-Sales-Return-to-Registered-Customer-Overseas-POS.md)
-##### GST sur les virements
-###### [GST sur les transferts d’actions](LocalFunctionality/India/GST-Stock-Transfer.md)
-###### [GST sur les transferts de service](LocalFunctionality/India/GST-Service-Transfer.md)
-##### GST sur les frais bancaires
-###### [Vue d’ensemble de la GST sur les frais bancaires](LocalFunctionality/India/GST-Bank-Charges-Overview.md)
-###### [GST sur les transactions de frais bancaires](LocalFunctionality/India/GST-Bank-Charges-Transaction.md)
-##### GST sur TDS/TCS
-###### [Vue d’ensemble de la GST TDS TCS](LocalFunctionality/India/GST-TDS-TCS-Overview.md)
-###### [GST TCS sur les paiements](LocalFunctionality/India/GST-TCS-on-Payment.md)
-###### [GST TDS TCS sur les reçus](LocalFunctionality/India/GST-TDS-TCS-on-Receipt.md)
-##### Activités d’ajustements/périodiques de la GST
-###### [Ajustement du crédit et de la responsabilité pour la GST](LocalFunctionality/India/GST-GST-Credit-and-Liability-Adjustment-for-Reverse-Charge-Service-Invoice.md)
-###### [Rapprochement de la GST](LocalFunctionality/India/GST-Reconciliation.md)
-###### [Facture E-Way GST](LocalFunctionality/India/GST-E-Way-Bill.md)
-###### [Ajustement du crédit d’écriture de la GST](LocalFunctionality/India/GST-Input-Tax-Credit-Adjustment.md)
-###### [Déclaration de GST](LocalFunctionality/India/GST-Settelement.md)
-###### [Facture électronique pour la GST](LocalFunctionality/India/GST-E-Invoice.md)
-##### GST sur le recouvrement
-###### [Configuration de la GST sur le recouvrement de base](LocalFunctionality/India/GST-Cess-Basic-Setup.md)
-###### [Calcul de la GST sur le recouvrement](LocalFunctionality/India/GST-Cess-Calculations.md)
-##### GST sur la Gestion des services
-###### [GST sur la Gestion des services](LocalFunctionality/India/GST-Service-Management.md)
-##### Écriture de la GST sur la Distribution du service
-###### [Vue d'ensemble de l'écriture de la GST sur la Distribution du service](LocalFunctionality/India/GST-Input-Service-Distribution-Overview.md)
-###### [Processus d'écriture de la GST sur la Distribution du service](LocalFunctionality/India/GST-Input-Service-Distribution-Process.md)
-###### [Transaction de l'écriture de la GST sur la Distribution du service](LocalFunctionality/India/GST-Input-Service-Distribution-Transaction.md)
+##### TPS sur les virements
+###### [TPS sur les transferts d’actions](LocalFunctionality/India/GST-Stock-Transfer.md)
+###### [TPS sur les transferts de service](LocalFunctionality/India/GST-Service-Transfer.md)
+##### TPS sur les frais bancaires
+###### [Vue d’ensemble de la TPS sur les frais bancaires](LocalFunctionality/India/GST-Bank-Charges-Overview.md)
+###### [TPS sur les transactions de frais bancaires](LocalFunctionality/India/GST-Bank-Charges-Transaction.md)
+##### TPS sur TDS/TCS
+###### [Vue d’ensemble de la TPS TDS TCS](LocalFunctionality/India/GST-TDS-TCS-Overview.md)
+###### [TPS TCS sur les paiements](LocalFunctionality/India/GST-TCS-on-Payment.md)
+###### [TPS TDS TCS sur les reçus](LocalFunctionality/India/GST-TDS-TCS-on-Receipt.md)
+##### Activités d’ajustements/périodiques de la TPS
+###### [Ajustement du crédit et de la responsabilité pour la TPS](LocalFunctionality/India/GST-GST-Credit-and-Liability-Adjustment-for-Reverse-Charge-Service-Invoice.md)
+###### [Rapprochement de la TPS](LocalFunctionality/India/GST-Reconciliation.md)
+###### [Facture E-Way TPS](LocalFunctionality/India/GST-E-Way-Bill.md)
+###### [Ajustement du crédit d’écriture de la TPS](LocalFunctionality/India/GST-Input-Tax-Credit-Adjustment.md)
+###### [Déclaration de TPS](LocalFunctionality/India/GST-Settelement.md)
+###### [Facture électronique pour la TPS](LocalFunctionality/India/GST-E-Invoice.md)
+##### TPS sur le recouvrement
+###### [Configuration de la TPS sur le recouvrement de base](LocalFunctionality/India/GST-Cess-Basic-Setup.md)
+###### [Calcul de la TPS sur le recouvrement](LocalFunctionality/India/GST-Cess-Calculations.md)
+##### TPS sur la Gestion des services
+###### [TPS sur la Gestion des services](LocalFunctionality/India/GST-Service-Management.md)
+##### Écriture de la TPS sur la Distribution du service
+###### [Vue d'ensemble de l'écriture de la TPS sur la Distribution du service](LocalFunctionality/India/GST-Input-Service-Distribution-Overview.md)
+###### [Processus d'écriture de la TPS sur la Distribution du service](LocalFunctionality/India/GST-Input-Service-Distribution-Process.md)
+###### [Transaction de l'écriture de la TPS sur la Distribution du service](LocalFunctionality/India/GST-Input-Service-Distribution-Transaction.md)
 #### TDS
 ##### [Vue d’ensemble de la TDS](LocalFunctionality/India/TDS-Overview.md)
 ##### [TDS sur les transactions](LocalFunctionality/India/TDS-Transactions.md)
@@ -1042,7 +1042,7 @@
 #### Sous-traitance
 ##### [Aperçu de la sous-traitance](LocalFunctionality/India/Subcontracting-001-Basic-Setup.md)
 ##### [Transactions de sous-traitance](LocalFunctionality/India/Subcontracting-Transactions.md)
-##### [Créer une responsabilité en matière de GST](LocalFunctionality/India/Subcontracting-Create-GST-Liability.md)
+##### [Créer une responsabilité en matière de TPS](LocalFunctionality/India/Subcontracting-Create-GST-Liability.md)
 ##### [Rapport de sous-traitance](LocalFunctionality/India/Subcontracting-Reports.md)
 #### [Chèque périmé](LocalFunctionality/India/Stale-Check.md)
 
