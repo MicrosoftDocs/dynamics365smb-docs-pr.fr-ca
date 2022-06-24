@@ -10,16 +10,19 @@ ms.search.keywords: customized report, document layout, logo, personalize
 ms.search.form: 9650, 9652
 ms.date: 03/23/2022
 ms.author: jswymer
-ms.openlocfilehash: 95d8aaf6749a2f02b1f586a2f235d3a5eaa7c21f
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 9dafc8e193ccf3c47947be6508a0917a45393c91
+ms.sourcegitcommit: 7b6d70798b4da283d1d3e38a05151df2209c2b72
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8525318"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "8950049"
 ---
 # <a name="get-started-creating-report-layouts"></a>Bien démarrer avec la création de présentations de rapport
 
 Business Central est fourni avec de nombreuses présentations intégrées que vous pouvez utiliser dans vos rapports. Il est possible que d’autres présentations aient été ajoutées avec d’autres extensions. Mais il est également possible de créer vos propres rapports à partir de zéro ou à partir d’une présentation existante.
+
+> [!IMPORTANT]
+> Vous pouvez également utiliser des présentations de rapport pour ajouter du contenu aux courriels. Par exemple, les présentations de rapport peuvent vous faire gagner du temps et contribuer à assurer la cohérence, car elles réutilisent le même contenu lorsque vous communiquez avec vos clients. Pour utiliser des présentations de rapport personnalisées avec le courrier électronique, le type de fichier de la présentation doit être Word. Vous ne pouvez pas utiliser le type de fichier RDLC. Pour plus d’informations, voir [Configurer des textes et des présentations de courriel réutilisables](admin-how-setup-email.md#set-up-reusable-email-texts-and-layouts). 
 
 ## <a name="overview"></a>Aperçu
 

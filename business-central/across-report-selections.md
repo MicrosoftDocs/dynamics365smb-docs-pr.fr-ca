@@ -7,27 +7,27 @@ ms.search.keywords: setup, reporting
 ms.search.form: 306, 307, 347, 385, 524, 865, 5932, 7401, 7355, 99000917
 ms.date: 03/11/2022
 ms.author: edupont
-ms.openlocfilehash: 35cd5f86eeee3eecd24f63d37f8d43191dbd9be8
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 9106b1ac3f6b179e26c8dfb01212b88e92b694fe
+ms.sourcegitcommit: 7b6d70798b4da283d1d3e38a05151df2209c2b72
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8512474"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "8950209"
 ---
 # <a name="report-selection-in-business-central"></a>Sélection des rapports dans Business Central
 
-Vous pouvez configurer les rapports par défaut qui seront utilisés pour imprimer les divers documents vente et achat : commandes, devis, factures et notes de crédit. Par exemple, si vous avez une présentation spécifique pour les factures vente, vous pouvez spécifier ce rapport sur la page **Sélection des rapports - Vente** afin qu’elle soit utilisée pour envoyer ou imprimer les factures vente.  
+Vous pouvez configurer des rapports par défaut à utiliser pour imprimer des documents de vente et d’achat, tels que des commandes, des devis et des factures. Par exemple, si vous avez une présentation spécifique pour les factures vente, vous pouvez spécifier ce rapport sur la page **Sélection des rapports - Vente** afin qu’elle soit utilisée pour envoyer ou imprimer les factures vente.  
 
-Les pages **Sélection des rapports** spécifient quel rapport sera imprimé dans différentes situations. [!INCLUDE [prod_short](includes/prod_short.md)] inclut les configurations par défaut, mais vous pouvez modifier ces valeurs par défaut. Vous pouvez également ajouter des rapports aux pages **Sélection des rapports** si vous souhaitez imprimer plus d’un rapport par type de document, par exemple.  
+Les pages **Sélection des rapports** spécifient quel rapport sera imprimé dans différentes situations. [!INCLUDE [prod_short](includes/prod_short.md)] fournit des configurations par défaut, mais vous pouvez les modifier si nécessaire. Vous pouvez également ajouter des rapports aux pages **Sélection des rapports** si vous souhaitez imprimer plus d’un rapport par type de document, par exemple.  
 
 ## <a name="available-report-selections"></a>Sélection des rapports disponible
 
-[!INCLUDE [prod_short](includes/prod_short.md)] comprend différentes pages **Sélection des rapports** pour différents domaines. Les tableaux suivants décrivent où vous pouvez trouver des informations sur les différentes pages.  
+[!INCLUDE [prod_short](includes/prod_short.md)] comprend différentes pages **Sélection des rapports** pour différents domaines. Le tableau suivant décrit où vous pouvez trouver des informations sur les différentes pages.  
 
 |Zone ou tâche  |En savoir plus|
 |--------------|----------|
 |Exemple de fonctionnement de la sélection des rapports (Sales)|[Sélection des rapports pour les documents de vente](#example-report-selection-for-sales-documents)|
-|Présentation par défaut des courriels avec des documents vente et achat  |[Configurer des textes et des présentations de courriel réutilisables pour les documents vente et achat](admin-how-setup-email.md#set-up-reusable-email-texts-and-layouts-for-sales-and-purchase-documents) |
+|Présentation par défaut des courriels avec des documents vente et achat  |[Configurer des textes et des présentations de courriel réutilisables pour des documents vente et achat](admin-how-setup-email.md#set-up-reusable-email-texts-and-layouts) |
 |Définir les mises en page de chèques     |[Sélectionner une mise en page de chèque](finance-how-define-check-layouts.md) |
 |Définir des rapports pour la déclaration de TVA (Allemagne)|[Configurer les rapports pour la TVA et Intrastat](LocalFunctionality/Germany/how-to-set-up-reports-for-vat-and-intrastat.md) |
 
@@ -51,19 +51,19 @@ La page **Sélection des rapports - Ventes** définit les rapports par défaut
 
 [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]
 
-Certains types de documents peuvent être envoyés sous forme de pièces jointes à un courriel, et d’autres non. Chaque page **Sélection des rapports** affiche des champs supplémentaires si le type de courriel de support est prêt à l’emploi.  
+Certains types de document peuvent être envoyés sous forme de pièces jointes à un courriel, et d’autres non. Si un type de document peut être envoyé par courriel, la page **Sélection des rapports** contiendra des champs supplémentaires.  
 
 Par exemple, dans les pages **Sélection des rapports - Ventes** et **Sélection des rapports -Achat**, les champs suivants vous aident à configurer l’envoi de courriels :
 
-|Nom du champ |Description  |
+|Nom du champ |Désignation  |
 |-----------|-------------|
-|**Utiliser pour le corps du courriel**| Spécifie que les informations résumées, telles que le numéro de facture, la date d'échéance et le lien de service de paiement, vont être insérées dans le corps du courriel que vous envoyez.        |
-|**Utiliser comme pièce jointe à un courriel**| Spécifie que le document associé sera joint au courriel.|
-|**Description de la présentation du corps du courriel**|Spécifie la présentation du corps du courriel utilisée, généralement une présentation de rapport personnalisée. |
+|**Utiliser pour le corps du courriel**| Insérez des informations résumées, telles que le numéro de facture, la date d’échéance et le lien de service de paiement, dans un courriel.        |
+|**Utiliser comme pièce jointe à un courriel**| Joignez le document correspondant au courriel.|
+|**Description de la présentation du corps du courriel**|Spécifiez la présentation à utiliser pour le corps du courriel. En règle générale, la présentation est une présentation de rapport personnalisée. |
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi .
 
-[Configurer des textes et des présentations de courriel réutilisables pour les documents vente et achat](admin-how-setup-email.md#set-up-reusable-email-texts-and-layouts-for-sales-and-purchase-documents)  
+[Configurer des textes et des présentations de courriel réutilisables](admin-how-setup-email.md#set-up-reusable-email-texts-and-layouts)  
 [Sélectionner une mise en page de chèque](finance-how-define-check-layouts.md)  
 [Configurer les déclarations de TVA et Intrastat (Allemagne)](LocalFunctionality/Germany/how-to-set-up-reports-for-vat-and-intrastat.md)  
 [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md)  

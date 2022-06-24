@@ -10,12 +10,12 @@ ms.search.keywords: company, setup wizard
 ms.search.form: 1803, 9020, 9022, 9026, 9027, 9030, 9000, 9009, 9004, 9005, 9024, 9006, 9007, 9010, 9016, 9017
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 40acd79a66452b99d3b6990f05ccfa5e5d3d326e
-ms.sourcegitcommit: f9143302b8271f5924a027cacdf29dc37c95f4c6
+ms.openlocfilehash: 843de26d836e8cf16f1f4f79d4ec697c481eebc0
+ms.sourcegitcommit: 0bb9473a2563211bc0c02ebfd837bba1b2e9ad3f
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8654978"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "8805240"
 ---
 # <a name="create-new-companies-in-prod_short"></a>Créer des compagnies dans [!INCLUDE[prod_short](includes/prod_short.md)]
 
@@ -32,11 +32,11 @@ Si vous décidez d'ajouter une compagnie à votre [!INCLUDE[prod_short](includes
 L’assistant de configuration propose deux modèles et une option vierge :
 
 - **Évaluation - Exemples de données**  
-    Cela crée une compagnie qui est similaire à la compagnie de démonstration avec des exemples de données et des données de configuration. Ce type de compagnie est à votre disposition sans passer par [une période d’essai de 30 jours](across-preview.md#add-your-own-data-to-an-empty-trial-company), contrairement aux autres types.  
+    Cela crée une compagnie qui est similaire à la compagnie de démonstration avec des exemples de données et des données de configuration. Ce type de compagnie est à votre disposition sans passer à une période d’essai de 30 jours, ce qui est le cas des autres types.  
 - **Production - Données de configuration uniquement**  
-    Cela crée une compagnie qui est similaire à **Ma compagnie** avec des données de configuration, mais sans exemples de données. Vous pourrez utiliser cette compagnie pendant une [période d’évaluation de 30 jours](across-preview.md#add-your-own-data-to-an-empty-trial-company).  
+    Cela crée une compagnie qui est similaire à **Ma compagnie** avec des données de configuration, mais sans exemples de données. Vous pourrez utiliser cette compagnie pendant une période d’évaluation de 30 jours.  
 - **Créer nouveau - Aucune donnée**  
-    Cela crée une compagnie vide sans données de configuration. Vous pourrez utiliser cette compagnie pendant une [période d’évaluation de 30 jours](across-preview.md#add-your-own-data-to-an-empty-trial-company).  
+    Cela crée une compagnie vide sans données de configuration. Vous pourrez utiliser cette compagnie pendant une période d’évaluation de 30 jours.  
 
 Si vous souhaitez démarrer facilement avec une nouvelle compagnie, sélectionnez **Production - Données de configuration uniquement**, puis importez vos propres données métier, telles que les clients, les articles et les fournisseurs. Choisissez le modèle **Nouveau** si vous souhaitez tout redéfinir à zéro. Dans ce cas, vous pouvez utiliser le guide de configuration assistée **Configuration de la compagnie** qui vous aidera à commencer par des données de configuration essentielles.  
 
@@ -44,6 +44,8 @@ Si vous souhaitez démarrer facilement avec une nouvelle compagnie, sélectionne
 > Lorsque vous créez une compagnie, cela prend quelques minutes avant de pouvoir y accéder dans [!INCLUDE[prod_short](includes/prod_short.md)]. L'état de configuration sur la page **Compagnies** s'affiche lorsque la nouvelle compagnie est prête pour vous. Ensuite, vous pouvez basculer vers la nouvelle compagnie en utilisant **Mes paramètres**.  
 
 Au cours de votre période d’évaluation de 30 jours, vous pouvez créer autant de compagnies que vous voulez, mais elles ne seront disponibles que durant cette période d’évaluation. Pour plus d'informations, contactez votre partenaire [!INCLUDE[prod_short](includes/prod_short.md)]. Voir aussi l’article [FAQ sur la version d’essai Dynamics 365 Business Central](trial-faq.md).  
+
+Votre administrateur peut en savoir plus sur les essais et les abonnements [ici](/dynamics365/business-central/dev-itpro/administration/trials-subscriptions).  
 
 ## <a name="copy-a-company"></a>Copier une compagnie
 
@@ -84,7 +86,6 @@ L’application Contoso Coffee fournit des données de démonstration pour vous 
 [Importation des données métier à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  
 [Modifier les paramètres de base](ui-change-basic-settings.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
-[Versions d'évaluation et abonnements](across-preview.md)  
 [Comprendre l’infrastructure de Business Central Online (en anglais uniquement)](/dynamics365/business-central/dev-itpro/administration/tenant-environment-topology)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

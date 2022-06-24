@@ -98,16 +98,16 @@
 ##### [Détails de conception : Structure de l'interface de report](design-details-posting-interface-structure.md)  
 ##### [Détails de conception : Structure du moteur de validation](design-details-posting-engine-structure.md)  
 
-## Évaluations
+## Réessayez
 ### [S’inscrire à un essai gratuit de Dynamics 365 Business Central](trial-signup.md)
 ### [FAQ sur l’essai de Dynamics 365 Business Central](trial-faq.md)
-### [Versions d'évaluation et abonnements](across-preview.md)
+### [Essais et abonnements (en anglais uniquement)](/dynamics365/business-central/dev-itpro/administration/trials-subscriptions?toc=/dynamics365/business-central/toc.json)
 ### [Se préparer aux activités commerciales](ui-get-ready-business.md)
 ### [Dépanner l’inscription en self-service](ui-troubleshoot-self-signup.md)
 ### [Étendre votre version d’évaluation](admin-extend-trial.md)
 ### [Annuler un abonnement ou supprimer Business Central](admin-cancel.md)
 ## Achats
-### [Mise en route d’un abonnement](across-preview.md#get-started-with-a-subscription)
+### [Mise en route d’un abonnement](trial-signup.md#get-started-with-a-subscription)
 ### [Se préparer aux activités commerciales](ui-get-ready-business.md)
 
 ## Démarrages rapides
@@ -358,7 +358,8 @@
 #### [À propos de l'évaluation des coûts de l'inventaire](finance-learn-about-costing.md)
 #### [Utiliser Frais annexes pour comptabiliser les coûts commerciaux supplémentaires](payables-how-assign-item-charges.md)
 #### [À propos du calcul des coûts standard](finance-about-calculating-standard-cost.md)
-#### [Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)
+#### [À propos du calcul du coût unitaire](finance-about-calculating-unit-cost.md)
+#### [Détails de conception : stock évaluation stock](design-details-inventory-costing.md)
 #### [Utiliser les périodes d'inventaire](finance-how-to-work-with-inventory-periods.md)
 #### [Configuration de l’évaluation et du coût de l’inventaire](finance-set-up-inventory-valuation-and-costing.md)
 #### [Réévaluer l'inventaire](inventory-how-revalue-inventory.md)
@@ -1424,6 +1425,7 @@
 ##### [Taxe de vente américaine](LocalFunctionality/UnitedStates/us-sales-tax.md)
 ##### [Déclaration de la taxe de vente aux États-Unis](LocalFunctionality/UnitedStates/us-sales-tax.md)  
 ##### [Rapports de transactions assujetties à la taxe 1099 aux États-Unis](LocalFunctionality/UnitedStates/tax-1099.md)  
+##### [Configurer et utiliser le formulaire IRS 1099](LocalFunctionality/UnitedStates/set-up-use-irs1099-form.md)
 ##### [Configurer la taxe de service et la taxe d'achat](LocalFunctionality/UnitedStates/how-to-set-up-use-tax-and-purchase-tax.md)  
 ##### [Configurer les escomptes de paiement de vente et la taxe de vente non réalisée](LocalFunctionality/UnitedStates/how-to-set-up-unrealized-sales-tax-and-sales-payment-discounts.md)  
 #### Banque et paiements
@@ -1474,6 +1476,7 @@
 #### [Activer les paiements client via les services de paiement](sales-how-enable-payment-service-extensions.md)
 #### [Enregistrer les prix de vente spéciaux et les escomptes](sales-how-record-sales-price-discount-payment-agreements.md)
 #### [Configurer des groupes tarifs client](sales-how-to-set-up-customer-price-groups.md)
+#### [Configurer des groupes escomptes client](sales-how-to-set-up-customer-discount-groups.md)
 #### [Configurer des représentants](sales-how-setup-salespeople.md)
 #### [Configurer des profils d'envoi de documents](sales-how-setup-document-send-profiles.md)
 #### [Envoyer des documents par courriel](ui-how-send-documents-email.md)
@@ -1811,12 +1814,12 @@
 #### [Migration des données QuickBooks Online](ui-extensions-quickbooks-online-data-migration.md)
 #### [Extension Importer le fichier de paie de Quickbooks](ui-extensions-quickbooks-payroll.md)
 #### [Prévision de l'inventaire et des ventes](ui-extensions-sales-forecast.md)
-#### [Gestion des groupes TVA](ui-extensions-vat-group.md)
 #### [WorldPay Payments Standard](ui-extensions-worldpay-payments-standard.md)
 #### [DK - Migration de données C5](ui-extensions-c5-data-migration.md)
 #### [DK - Paiements et rapprochements](ui-extensions-payments-reconciliation-formats-dk.md)
 #### [DK - Formats de fichier fiscal](ui-extensions-tax-file-formats-dk.md)
 #### [RU - Extension GetAddress.io UK Postcodes](LocalFunctionality/UnitedKingdom/ui-extensions-getaddressio.md)
+#### [Royaume-Uni – Gestion des groupes TVA](ui-extensions-vat-group.md)
 #### [US/CA/UK/AU/NZ/ZA - Envoi d'un avis de versement](ui-extensions-send-remittance-advice.md)
 #### [Extensions Business Central par d'autres fournisseurs](ui-extensions-other.md)
 ## Intégration à Dynamics 365 Sales

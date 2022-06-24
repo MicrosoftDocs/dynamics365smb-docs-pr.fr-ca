@@ -7,12 +7,12 @@ ms.search.keyword: prepayment
 ms.search.form: 314, 459, 460, 664
 ms.date: 10/27/2021
 ms.author: edupont
-ms.openlocfilehash: c2bfe2f10440921c95a7d20f3c601389030813e1
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: a1b771425c2a70f62dcfebeb4619c0f2f5445de3
+ms.sourcegitcommit: 93f30ce3349233cbcd03f300e74b654b49fa5518
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8516223"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8799622"
 ---
 # <a name="set-up-prepayments"></a>Configuration des acomptes
 
@@ -92,6 +92,19 @@ Une commande peut présenter un pourcentage de paiement anticipé dans l'en-têt
 4. le pourcentage de paiement anticipé figurant dans l'en-tête vente ou achat.  
 
 Autrement dit, le pourcentage de paiement anticipé figurant dans la fiche client ne s'applique que si aucun pourcentage de paiement anticipé n'est configuré pour l'article. Toutefois, si vous modifiez le contenu du champ **% acompte** dans l'en\-tête vente ou achat après avoir créé les lignes, le pourcentage d'acompte figurant dans toutes les lignes est mis à jour. Cela facilite la création d'une commande avec un pourcentage de paiement anticipé fixe, quel que soit le pourcentage configuré pour les articles.
+
+## <a name="to-automatically-release-sales-orders-when-prepayments-are-applied"></a>Pour libérer automatiquement les documents de vente lorsque des paiements anticipés sont appliqués
+
+Vous pouvez gagner du temps en configurant une écriture file d’attente des travaux qui libérera automatiquement les documents de vente nécessitant un paiement anticipé une fois les paiements appliqués. L’automatisation du processus vous évite l’étape de validation du document de vente.
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.
+2. Dans le champ **Fréquence de mise à jour automatique du paiement anticipé**, spécifiez la fréquence d’exécution de l’écriture file d’attente des travaux.
+
+> [!TIP]
+> Pendant que vous y êtes, envisagez d’ajouter une protection contre l’expédition ou la facturation de documents de vente comportant des montants de paiement anticipé impayés. Si vous cochez l’option **Vérifier paiement anticipé lors du report**, [!INCLUDE[prod_short](includes/prod_short.md)] empêchera de reporter des commandes comportant des montants de paiement anticipé impayés.
+
+3. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures file d’attente des travaux**, puis sélectionnez le lien associé.
+4. Configurez l’écriture file d’attente des travaux **Mise à jour Paiement anticipé en attente Ventes**, par exemple, en utilisant les paramètres du raccourci **Récurrence** pour programmer sa fréquence d'exécution. Pour plus d’informations, voir [Utiliser des files d’attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
 ## <a name="see-also"></a>Voir aussi  
 
