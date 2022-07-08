@@ -9,12 +9,12 @@ ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 9cfdcf37464a032b6d999d525e67eecadb961ca4
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: ba87c96e23a3905e555a3c5fbf361758f2f76664
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8129952"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9075717"
 ---
 # <a name="business-central-extensions-by-other-providers"></a>Extensions Business Central par d'autres fournisseurs
 
@@ -22,7 +22,9 @@ Dans [AppSource.microsoft.com](https://appsource.microsoft.com/), vous pouvez ob
 
 La liste des extensions par d'autres compagnies évolue chaque mois. Tenez-vous informé sur la page [AppSource.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2081646) et obtenez des applications pour vous aider à faire votre travail dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/customize-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Personnalisation de [!INCLUDE[prod_short](includes/prod_short.md)] à l'aide des extensions](ui-extensions.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  

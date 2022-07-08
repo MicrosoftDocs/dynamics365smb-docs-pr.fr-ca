@@ -10,14 +10,15 @@ ms.search.keywords: ''
 ms.search.forms: 6520,
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 991df58fde5f525772d5b9eeadbf802429965575
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: dcc7b1586f50d3d9436d237592279007f38c05fa
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8517430"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9077251"
 ---
 # <a name="trace-item-tracked-items"></a>Tracer des articles - Articles suivis
+
 Vous pouvez voir où un article suivi a été utilisé, y compris le mode et le moment de réception ou de production, de transfert, de vente, de consommation ou de retour. Vous pouvez également rechercher toutes les instances d'informations d'un numéro de série ou de lot particulier dans la base de données. Vous procédez à l’aide des fonctionnalités Traçabilité et [Rechercher des écritures](ui-find-entries.md).  
 
 Ces fonctions sont particulièrement utiles pour le contrôle qualité, lorsque vous devez déterminer quels clients ont reçu des produits correspondant à un numéro de lot particulier ou le lot dont provenait une composante défectueuse.  
@@ -64,9 +65,11 @@ Ces fonctions sont particulièrement utiles pour le contrôle qualité, lorsque 
 3. Dans les champs **N° de série** et **N° lot**, entrez les numéros traçabilité que vous voulez suivre.  
 4. Sélectionnez l'action **Rechercher** pour rechercher toutes les instances du numéro de série ou de lot dans la base de données.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/prepare-item-tracking/)
 
-[Inventaire](inventory-manage-inventory.md)  
+## <a name="see-also"></a>Voir aussi .
+
+[Stock](inventory-manage-inventory.md)  
 [Utiliser les numéros lot, de série et paquet](inventory-how-work-item-tracking.md)  
 [Détails de conception : traçabilité](design-details-item-tracking.md)  
 [Détails de conception : traçabilité et réservations](design-details-item-tracking-and-reservations.md)  

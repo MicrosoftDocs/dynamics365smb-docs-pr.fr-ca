@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.search.keywords: write down
 ms.date: 06/28/2021
 ms.author: edupont
-ms.openlocfilehash: e70b14b5344acd9b59034b5847455417b8225182
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 887a8f94db8f289769c2fba7a1938d7b7960e400
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8518217"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9079204"
 ---
 # <a name="set-up-fixed-asset-depreciation"></a>Configurer un amortissement immobilisation
 
@@ -40,6 +40,7 @@ Dans un registre amortissement immobilisation, vous spécifiez comment les immob
 Par exemple, si vous disposez d’une immobilisation dont le registre amortissement ne spécifie pas d’arrondissement, mais que les configurations grand livre de votre compagnie nécessitent un arrondissement, alors, lorsque vous cédez l’immobilisation, vous verrez un message d’erreur indiquant qu’un montant doit être arrondi sur une écriture.  
 
 ## <a name="to-assign-a-depreciation-book-to-a-fixed-asset"></a>Pour attribuer un registre amortissement à une immobilisation
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Immobilisations**, puis choisissez le lien associé.
 2. Sélectionnez l'immobilisation pour laquelle vous souhaitez configurer un registre amortissement immobilisation.
 3. Sur le raccourci **Loi d'amortissement**, renseignez les champs, le cas échéant.
@@ -53,6 +54,7 @@ Par exemple, si vous disposez d’une immobilisation dont le registre amortissem
     > Lorsque vous utilisez la méthode d’amortissement définie par l’utilisateur, vous devez affecter le registre amortissement d’une manière différente. Pour plus d’informations, consultez [Configurer la méthode d’amortissement définie par l’utilisateur](fa-how-setup-user-defined-depreciation-method.md).
 
 ## <a name="to-assign-a-depreciation-book-to-multiple-fixed-assets-with-a-batch-job"></a>Pour attribuer un registre amortissement à plusieurs immobilisations avec un traitement en lot
+
 Si vous voulez associer une loi d'amortissement à plusieurs immobilisations, vous pouvez utiliser le traitement par lots **Créer plans amortissement** pour créer des lois d'amortissement d'immobilisation.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Immobilisations**, puis choisissez le lien associé.
@@ -66,6 +68,7 @@ Si vous voulez associer une loi d'amortissement à plusieurs immobilisations, vo
 7. Cliquez sur le bouton **OK**.
 
 ## <a name="to-set-up-depreciation-posting-types"></a>Pour configurer les types de report amortissement
+
 Pour chaque loi d'amortissement, vous devez définir la manière dont vous souhaitez que [!INCLUDE[prod_short](includes/prod_short.md)] gère les différents types de validation. Par exemple, vous devez indiquer s'il s'agit d'un débit ou d'un crédit et si le type de report doit être inclus dans la base d'amortissement.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Registres amortissement**, puis choisissez le lien associé.  
@@ -78,6 +81,7 @@ Pour chaque loi d'amortissement, vous devez définir la manière dont vous souha
 Il est recommandé de ne pas modifier la configuration des registres amortissement pour lesquels des écritures ont déjà été reportées. Les modifications apportées n'ont pas d'incidence sur les écritures déjà reportées, ce qui rendrait les statistiques des registres amortissement inexactes.
 
 ## <a name="to-set-up-default-templates-and-batches-for-fixed-asset-depreciation"></a>Pour configurer les modèles par défaut et les lots pour l'amortissement immobilisation
+
 Pour chaque registre amortissement, vous définissez une configuration par défaut de modèles et de lots. Vous devez utiliser ces valeurs par défaut pour dupliquer les lignes d'une feuille vers une autre, créer des lignes feuille à l'aide du traitement par lots **Calculer amortissement** ou **Actualiser immobilisations**, dupliquer des coûts d'acquisition dans la feuille assurance.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Registres amortissement**, puis choisissez le lien associé.  
@@ -91,8 +95,10 @@ Lorsque le traitement en lot Calculer amortissement calcule les amortissements, 
 
 Si vous activez ce champ, le traitement en lot Calculer amortissement utilise l’année civile de 365 jours, où chaque mois est calculé avec le même nombre de jours que le calendrier. La seule exception est le mois de février des années bissextiles, que le traitement en lot traitera comme ayant 28 jours et non 29. Pour cette raison, toutes les années, également les années bissextiles, sont considérées comme ayant 365 jours.
 
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/configure-depreciation-books/)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi .
+
 [Paramétrage d'immobilisations](fa-setup.md)  
 [Immobilisations](fa-manage.md)  
 [Finance](finance.md)  

@@ -7,12 +7,12 @@ ms.workload: na
 ms.search.keywords: reject, delegate, request
 ms.date: 09/28/2021
 ms.author: edupont
-ms.openlocfilehash: b97b4fb9c09c646a69c78747079e7fde3fdae7dc
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 46c81fa887af70e7a2f516df38ec003392b1dabd
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8517664"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9079360"
 ---
 # <a name="use-approval-workflows"></a>Utilisation des flux d'approbation
 
@@ -83,10 +83,12 @@ La fonction **Envoyer des notifications d'approbations échues** passe en revue 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Demandes approbations échues**, puis sélectionnez le lien associé.
 2. Sur la page **Demandes approbations échues**, sélectionnez l'action **Envoyer les notifications d'approbation échues**.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/use-approval-workflows/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Configurer des utilisateurs d'approbation](across-how-to-set-up-approval-users.md)  
-[Vente](sales-manage-sales.md)  
+[Ventes](sales-manage-sales.md)  
 [Documents entrants](across-income-documents.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

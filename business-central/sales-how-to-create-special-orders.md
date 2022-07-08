@@ -9,21 +9,23 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: d263be575b6f4102c25ff1b7fe2aa288058cbd22
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 3f9cb0690bf21c3b4571ff65486038499af010e9
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8518923"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078554"
 ---
 # <a name="create-special-orders"></a>Créer des commandes spéciales
+
 Vous pouvez créer une commande spéciale pour un article de catalogue spécifique à livrer à un client particulier. Le fournisseur livre l'article à votre entrepôt et vous pouvez ensuite le livrer à votre client seul ou avec d'autres articles issus d'autres commandes.  
 
 Dans le cadre d'une commande spéciale, le bon de commande et le document de vente sont liés pour s'assurer que l'article de catalogue spécifique est prélevé et livré au client.  
 
 Pour pouvoir utiliser cette fonction, vous devez d'abord configurer les fiches client, fournisseur, et article nécessaires à la commande.  
 
-## <a name="to-create-a-special-order"></a>Pour créer une commande spéciale  
+## <a name="to-create-a-special-order"></a>Pour créer une commande spéciale
+
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Document de vente**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**. Créez et renseignez un document de vente pour l'article. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
 3.  Sous le raccourci **Lignes**, renseignez la ligne vente. Dans le champ **Procédure achat**, sélectionnez une procédure achat dont le champ **Commande spéciale** est sélectionné.
@@ -42,7 +44,10 @@ Un bon de commande créé comme commande spécial pour un document de vente est 
 > [!NOTE]  
 >  Vous ne pouvez pas utiliser la fonctionnalité de commande spéciale si l'élément est déjà réservé. Par conséquent, pour les articles qui sont vendus en commandes spéciales, assurez\-vous que le champ **Réserver** sur la fiche article n'est pas défini sur **Toujours**.  
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/create-sales-documents-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
+
 [Utiliser des articles de catalogue](inventory-how-work-nonstock-items.md)  
 [Ventes](sales-manage-sales.md)  
 [Effectuer des livraisons directes](sales-how-drop-shipment.md)   

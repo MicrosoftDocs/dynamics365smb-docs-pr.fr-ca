@@ -10,12 +10,12 @@ ms.search.keywords: trade, partial deliveries, customer sales order
 ms.search.form: 42, 48, 9305
 ms.date: 01/19/2022
 ms.author: edupont
-ms.openlocfilehash: 52060d74d7ef855a89dd3cffabd4ada435d6b117
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 102fa04db203d8b1fe05d63629fbe24f49193112
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8523277"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9077850"
 ---
 # <a name="sell-products-with-a-customer-sales-order"></a>Vente de produits avec un document de vente client  
 
@@ -94,12 +94,14 @@ Les écritures article et client associées sont à présent créées dans votre
 
 [!INCLUDE [ext-doc-no-sales](includes/ext-doc-no-sales.md)]
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/create-sales-documents-dynamics-365-business-central/)
 
-[Vente](sales-manage-sales.md)  
+## <a name="see-also"></a>Voir aussi .
+
+[Ventes](sales-manage-sales.md)  
 [Définition des ventes](sales-setup-sales.md)  
 [Imprimer la liste des prélèvements](sales-how-print-picking-list.md)  
-[Inventaire](inventory-manage-inventory.md)  
+[Stock](inventory-manage-inventory.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

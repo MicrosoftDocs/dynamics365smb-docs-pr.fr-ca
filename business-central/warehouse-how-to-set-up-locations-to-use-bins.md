@@ -9,14 +9,15 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: e2fe316c9f310abe3eb3bc031146445a8ffa7cef
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 88fa36a84b88ccb44df3c1412ac217461febc883
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8512032"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078282"
 ---
 # <a name="set-up-locations-to-use-bins"></a>Configurer des emplacements de sorte qu'ils utilisent des zones
+
 Les emplacements représentent la structure d'entrepôt de base et sont utilisés pour faire des propositions relatives à l'emplacement des articles. Lorsque vous avez créé vos zones, vous pouvez définir précisément le contenu que vous souhaitez placer dans chacune d'entre elles, ou la zone peut être utilisée en tant que zone dynamique sans contenu spécifié.  
 
 Pour utiliser la fonctionnalité liée au magasin, vous devez d'abord l'activer dans la fiche **magasin**. Ensuite, vous définissez la circulation des articles dans l'emplacement en spécifiant les codes de zones dans les champs de configuration qui représentent les différents flux.  
@@ -24,7 +25,8 @@ Pour utiliser la fonctionnalité liée au magasin, vous devez d'abord l'activer 
 > [!NOTE]  
 >  Avant de pouvoir spécifier les codes de zones sur la fiche emplacement, il convient de les créer. Pour plus d'informations, voir [Créer zones](warehouse-how-to-create-individual-bins.md).  
 
-## <a name="to-set-up-a-location-to-use-bins"></a>Pour configurer un emplacement de sorte qu'il utilise des zones  
+## <a name="to-set-up-a-location-to-use-bins"></a>Pour configurer un emplacement de sorte qu'il utilise des zones
+
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
 2.  Sélectionnez l'emplacement dans lequel vous souhaitez utiliser des zones.  
 3.  Choisissez l'action **Modifier**.  
@@ -38,13 +40,17 @@ Pour utiliser la fonctionnalité liée au magasin, vous devez d'abord l'activer 
 11. Sur les champs **Entrepôt**, renseignez les champs **Délai désenlogement**, **Délai enlogement** et **Code calendrier principal**. Pour plus d'informations, voir [Configurer des calendriers principaux](across-how-to-assign-base-calendars.md).
 
 ## <a name="filling-the-consumption-bin"></a>Renseignement de la zone consommation
+
 Ce graphique indique comment le champ **Code de zone** sur les lignes composante bon de production est renseigné en fonction de la configuration de votre emplacement.
 
 ![Organigramme Flux de zone.](media/binflow.png "BinFlow")  
 
-## <a name="see-also"></a>Voir aussi
-[Gestion d’entrepôt](warehouse-manage-warehouse.md)  
-[Inventaire](inventory-manage-inventory.md)  
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/configure-bins-location/)
+
+## <a name="see-also"></a>Voir aussi .
+
+[Gestion d'entrepôt](warehouse-manage-warehouse.md)  
+[Stock](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  

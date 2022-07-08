@@ -6,12 +6,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.author: edupont
 ms.date: 02/23/2022
-ms.openlocfilehash: 368ed714fb7b8367ff1876cb5be83e422860b684
-ms.sourcegitcommit: 0bb9473a2563211bc0c02ebfd837bba1b2e9ad3f
+ms.openlocfilehash: 995d7277d67b3db4360210e80b417b8a62d6b1a8
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "8805162"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9077095"
 ---
 # <a name="dynamics-365-business-central-trial-faq"></a>FAQ sur l'essai de Dynamics 365 Business Central
 
@@ -49,9 +49,14 @@ Passez à l'essai de 30 jours, puis ajoutez vos propres données. Pour plus d'i
 
 Vous ne pouvez pas. Si vous supprimez accidentellement des exemples de données, demandez à votre administrateur de créer un nouvel environnement sandbox. Pour plus d’informations, voir [Environnements de production et sandbox](/dynamics365/business-central/dev-itpro/administration/environment-types) dans le contenu pour administrateurs (en anglais uniquement).  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/trial-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [S’inscrire à un essai gratuit de Dynamics 365 Business Central](trial-signup.md)  
 [Foire aux questions sur l’utilisation de Business Central](across-faq.yml)  
 [Dépannage de l'inscription en self-service](ui-troubleshoot-self-signup.md)  
 [Versions d’évaluation et abonnements [!INCLUDE[prod_long](includes/prod_long.md)]](/dynamics365/business-central/dev-itpro/administration/trials-subscriptions)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

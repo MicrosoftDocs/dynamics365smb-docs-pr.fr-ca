@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 7328, 7348
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 7c04e2e81876628a8b6fe9534bb7ecdbb960bcc8
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: f0018b5ad58644783b24d2c3b3fd82ae83d132fb
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8511327"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9075171"
 ---
 # <a name="set-up-warehouse-employees"></a>Configurer des employés d'entrepôt
 
@@ -29,13 +29,15 @@ Chaque utilisateur exerçant des activités entrepôt doit être configuré en t
 5. Activez la case à cocher **Par défaut** pour définir le magasin comme seul emplacement pour les activités entrepôt de l'employé.  
 6. Répétez ces étapes pour affecter d'autres employés à des emplacements ou affecter d'autres emplacements à des employés d'entrepôt existants.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/get-started-warehouse-management/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  
 [Stock](inventory-manage-inventory.md)  
-[Configuration de Warehouse Management](warehouse-setup-warehouse.md) 
-[Gestion d’assemblage](assembly-assemble-items.md)
-[Détails de conception : Warehouse Management](design-details-warehouse-management.md)  
+[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
+[Gestion d'assemblage](assembly-assemble-items.md)  
+[Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 

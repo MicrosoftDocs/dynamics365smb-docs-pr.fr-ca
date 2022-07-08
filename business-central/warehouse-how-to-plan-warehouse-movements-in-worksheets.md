@@ -9,17 +9,19 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 6a57165a63139f0c8bf590b811160a45e26152ce
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 4454fd40daffbaa5d551635c406f10c70009d3bf
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8522442"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9076081"
 ---
 # <a name="plan-warehouse-movements-in-worksheets"></a>Planifier des mouvements entrepôt dans la feuille
+
 Planifiez les mouvements de la feuille à l'aide de la fonction de réapprovisionnement de zone ou en planifiant manuellement les lignes à créer en tant qu'instructions de mouvement.  
 
-## <a name="to-calculate-a-replenishment-movement"></a>Pour calculer des mouvements de réapprovisionnement  
+## <a name="to-calculate-a-replenishment-movement"></a>Pour calculer des mouvements de réapprovisionnement
+
 Au fur et à mesure que l'entrepôt livre des articles aux clients, les zones les mieux classées contiennent de moins en moins d'articles. Pour remplir ces zones prélèvement avec des articles issus d'autres zones, exécutez la fonction **Calculer réappro. zone** sur la page **Feuille mouvements**.
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille mouvement**, puis choisissez le lien associé.  
@@ -40,7 +42,8 @@ Au fur et à mesure que l'entrepôt livre des articles aux clients, les zones le
 3.  Vérifiez ces lignes et modifiez-les si nécessaire, ou supprimez-en certaines si le temps imparti est insuffisant pour les exécuter toutes.  
 4.  Choisissez l'action **Créer mouvement** pour créer une instruction entrepôt s'adressant aux employés d'entrepôt.  
 
-## <a name="to-move-the-entire-contents-of-one-or-more-bins-by-using-the-get-bin-content-function"></a>Pour déplacer l'intégralité du contenu d'une ou de plusieurs zones à l'aide de la fonction Extraire contenu de la zone  
+## <a name="to-move-the-entire-contents-of-one-or-more-bins-by-using-the-get-bin-content-function"></a>Pour déplacer l'intégralité du contenu d'une ou de plusieurs zones à l'aide de la fonction Extraire contenu de la zone
+
 Vous pouvez également utiliser la feuille mouvement pour planifier d'autres mouvements d'inventaire dans l'entrepôt. Par exemple, lorsque vous souhaitez placer des articles dans une zone pour contrôler la qualité, utilisez la feuille mouvement pour planifier cette tâche et créez un mouvement pour élaborer des instructions destinées à un employé.  
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille mouvement**, puis choisissez le lien associé.  
@@ -64,7 +67,10 @@ Vous pouvez également utiliser la feuille mouvement pour planifier d'autres mou
 6.  Supprimez les lignes incomplètes que vous avez utilisées à des fins d'information.  
 7.  Lorsque les lignes de la feuille mouvement correspondent précisément au mouvement devant être effectué par le magasinier, choisissez l'action **Créer mouvement** pour créer les instructions à l'attention de cet employé.  
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/move-items/)
+
+## <a name="see-also"></a>Voir aussi .
+
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  
 [Stock](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     

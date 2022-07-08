@@ -10,14 +10,15 @@ ms.search.keywords: project invoice
 ms.search.form: 1002, 1007,
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: 792b5a3640693b7d1be76b319dfc4e713085106f
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 06be08bce312cfcdd0bc6eef0e50890244734dba
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8516624"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9074650"
 ---
 # <a name="invoice-jobs"></a>Facturation des projets
+
 Au cours du projet, les coûts provenant de l'utilisation de ressources, de matières, et d'achats associés au projet peuvent s'accumuler. Au fur et à mesure de la progression du projet, ces transactions sont reportées dans le journal projet. Il est important que tous les coûts soient enregistrés dans le journal projet avant de facturer le client.
 
 > [!NOTE]
@@ -31,6 +32,7 @@ Vous pouvez facturer l'ensemble du projet à partir de la page **Lignes tâche p
 Vous pouvez également facturer une compagnie qui n’est pas le client final. Parfois, la partie à laquelle un projet est destiné est différente de celle qui paie la facture. Sur la page **Projets**, vous pouvez spécifier le client qui bénéficiera du projet dans les champs **Débiteur** et la partie à facturer dans les champs **Facturation**. 
 
 ## <a name="to-create-multiple-job-sales-invoices"></a>Pour créer plusieurs factures vente projet
+
 Vous pouvez créer une facture pour un projet ou pour une ou plusieurs tâches projet pour un client lorsque le travail à facturer est terminé ou lorsque la date de facturation dépendante d'une prévision de facture est atteinte.
 
 La procédure suivante explique comment utiliser un traitement en lot pour facturer plusieurs projets.  
@@ -46,6 +48,7 @@ Vous pouvez examiner et reporter les factures créées dans la fenêtre **Factur
 > Sinon, facturez un client en sélectionnant le projet, puis en choisissant l'action **Créer une facture vente projet**. 
 
 ## <a name="to-create-and-post-job-sales-invoice-from-job-planning-lines"></a>Pour créer et reporter une facture vente projet à partir de lignes planification projet
+
 Vous pouvez créer une facture à partir des lignes planification projet et indiquer à ce moment-là la quantité de l'article, la ressource ou le compte du grand livre sur lequel vous souhaitez facturer.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Projets**, puis choisissez le lien associé.
@@ -63,12 +66,14 @@ Vous pouvez créer une facture à partir des lignes planification projet et indi
 > [!NOTE]  
 >   La procédure ci-dessus permet également de créer, de consulter, puis de reporter une note de crédit vente associée à un projet.
 
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/post-job-usage-sales/)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi .
+
 [Gestion des projets](projects-manage-projects.md)  
 [Finance](finance.md)  
-[Procédure d'achat](purchasing-manage-purchasing.md)         
-[Vente](sales-manage-sales.md)      
+[Procédure d'achat](purchasing-manage-purchasing.md)  
+[Ventes](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 

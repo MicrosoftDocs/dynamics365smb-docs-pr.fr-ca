@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 8f938adf6a7629c4f9aedde32c4f8f10cb6f20e6
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 0594134585fe85540c7ed87e1588fd218b7a561a
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8513403"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9074468"
 ---
 # <a name="walkthrough-picking-and-shipping-in-basic-warehouse-configurations"></a>Procédure pas à pas : Prélèvement et expédition dans les configurations de stockage de base
 
@@ -67,6 +67,7 @@ Ellen, la gestionnaire d’entrepôt de CRONUS, configure l’entrepôt SUD pour
 [!INCLUDE[set_up_location.md](includes/set_up_location.md)]
 
 ### <a name="setting-up-the-bin-codes"></a>Configuration des codes de zone
+
 Une fois que vous avez configuré l'emplacement, vous devez ajouter deux zones.
 
 #### <a name="to-setup-the-bin-codes"></a>Pour configurer les codes de zone
@@ -143,7 +144,9 @@ Sur la page **Prélèvement inventaire**, vous pouvez gérer toutes les activit�
 
     Les 30 lampes Amsterdam sont à présent enregistrées comme prélevées depuis les zones S-01-0001 et S-01-0002, et une écriture article négative est créée pour refléter la livraison vente reportée.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/pick-ship-items-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Prélever des articles avec les prélèvements inventaire](warehouse-how-to-pick-items-with-inventory-picks.md)  
 [Prélever des articles pour une livraison entrepôt](warehouse-how-to-pick-items-for-warehouse-shipment.md)  

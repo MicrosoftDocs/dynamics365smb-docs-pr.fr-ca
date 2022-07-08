@@ -10,12 +10,12 @@ ms.search.keywords: warehouse, distribution center
 ms.search.forms: 5703, 15
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 9de6580971f25d092de474c0720b86fab420bbf8
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 870effafbd38cdee0733097fa6fb0c0340fa77b8
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8515521"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9077277"
 ---
 # <a name="set-up-locations"></a>Configurer des emplacements
 
@@ -27,6 +27,7 @@ Vous pouvez ensuite créer des lignes document pour un emplacement spécifique, 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE4aQvq?rel=0]
 
 ## <a name="location-cards"></a>Fiches emplacement
+
 Vous spécifiez des informations sur un emplacement, par exemple un entrepôt ou un centre de distribution sur la page **Fiche emplacement**. Affectez un nom et un code représentatifs à chaque emplacement. Il vous suffit ensuite de saisir le code d'emplacement dans d’autres parties du programme lorsque vous souhaitez enregistrer les transactions d’un emplacement en particulier.  
 
 Vous pouvez entrer des informations sur les zones et les règles entrepôt pour chaque emplacement. En fonction des règles entrepôt sélectionnées, vous pouvez utiliser les options du raccourci **Zones** pour définir les zones utilisées par défaut lorsque vous effectuez des transactions. Si vous utilisez les prélèvement et rangement suggérés, vous pouvez utiliser la plupart des options du raccourci **Politiques de zones** pour définir la façon dont vous souhaitez utiliser les différentes fonctions d’entrepôt avancées.  
@@ -76,9 +77,12 @@ Si vous souhaitez structurer vos zones en zones, vous pouvez le faire dans la pa
 Toutefois, vous pouvez choisir de configurer une seule zone et d’organiser votre entrepôt uniquement en fonction des zones. Pour plus d'informations, voir [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).  
 
 ## <a name="default-dimensions-for-locations"></a>Dimensions par défaut pour les emplacements
+
 Pour définir les dimensions par défaut pour un emplacement, allez sur la page **Fiche emplacement** et choisissez **Emplacement**, puis **Dimensions**. Les dimensions par défaut de l'emplacement sont copiés dans les journaux et les documents lorsque vous spécifiez l'emplacement sur une ligne, mais vous pouvez supprimer ou modifier la dimension sur la ligne si nécessaire. Vous pouvez exiger que les personnes spécifient des dimensions pour des emplacements spécifiques avant de pouvoir reporter une écriture. Vous pouvez également inclure des valeurs de dimension d'emplacement dans **Priorités de dimensions par défaut** et **Combinaisons de dimensions** pour les combinaisons de règles de priorité et de dimension.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/trade-set-up-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Gestion du stock](inventory-manage-inventory.md)  
 [Transfert de l'inventaire entre des emplacements](inventory-how-transfer-between-locations.md)  

@@ -10,20 +10,22 @@ ms.search.keywords: price, pricing, discount, discounting, rebate, sale, purchas
 ms.search.form: 459, 460, 7001, 7011, 7015, 7016, 7017, 7018
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: c4ea2854ccc287b95c42bf942389d4dbfb2fd2e3
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 5f0a26e9a6784f1d0ae2b7c8881667a51560cbf6
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8523615"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9077694"
 ---
 # <a name="set-up-prices-and-discounts"></a>Configurer les prix et les escomptes
+
 > [!NOTE]
 > Dans la deuxième vague de lancement de 2020, nous avons libéré des processus rationalisés pour la configuration et la gestion des prix et des escomptes. Si vous êtes un nouveau client utilisant cette version, vous utilisez la nouvelle expérience. Si vous êtes un client existant, l’utilisation ou non de la nouvelle expérience dépend du fait que votre administrateur a activé ou non la fonctionnalité **Nouvelle tarification des ventes** sur la page **Gestion des fonctionnalités**. Pour plus d’informations, consultez [Activer les fonctionnalités à venir à l’avance](/dynamics365/business-central/dev-itpro/administration/feature-management).
 
 Les stratégies de prix et d’escompte pour l’achat et la vente d’articles et de services sont des outils fondamentaux pour les entreprises prospères. Une fois que vous avez configuré les articles et services que votre compagnie achète et vend, vous pouvez définir ce que vous payez ou facturez pour eux, et ces montants seront automatiquement ajoutés aux documents vente et achat. 
 
 ## <a name="setting-up-prices-and-discounts"></a>Configuration des prix et des escomptes
+
 Avant de créer des listes de prix, vous devez définir vos stratégies de tarification et d’escompte sur les pages **Configuration ventes** et **Configuration achats**.
 
 Vous ne pouvez pas configurer les deux types d’escomptes suivants :
@@ -39,6 +41,7 @@ Dans la mesure où les prix de vente et les escomptes de ligne de vente sont bas
 > Si un article ne doit jamais être vendu avec un escompte, laissez les champs d’escompte de la page article vides, et n’incluez pas l’article dans une quelconque configuration d’escompte ligne.
 
 ## <a name="about-price-lists"></a>À propos des listes de prix
+
 Les listes de prix sont flexibles et vous permettent de spécifier le partenaire commercial ou l’activité auquel elles s’appliquent. Par exemple, vous pouvez configurer une liste de prix qui s’applique à tous les fournisseurs et clients, ou proposer des escomptes ou des prix spéciaux pour chaque partenaire commercial, peut-être en fonction d’une quantité minimale sur les documents d’achat ou de vente, ou d’une certaine combinaison client, article, quantité minimale, unité de mesure ou périodes de temps. Les prix et escomptes que vous définissez sont automatiquement affectés aux documents d’achat et de vente. 
 
 ## <a name="set-up-prices"></a>Configurer les prix
@@ -52,6 +55,7 @@ Ces étapes diffèrent selon que votre administrateur a activé ou non la foncti
 3. Renseignez les champs de la ligne selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)] Renseignez une ligne pour chaque combinaison qui accorde un prix de vente spécial au client.
 
 #### <a name="new-experience"></a>[Nouvelle expérience](#tab/new-experience)  
+
 Vous pouvez ajouter des articles et des services manuellement pour chaque ligne, ou vous pouvez utiliser l’action **Proposer lignes** pour créer de nouveaux prix pour les articles sélectionnés, les groupes escomptes article, les ressources et d’autres types de produits. Si vous choisissez **Proposer lignes**, sur la page **Lignes de prix - Créer un nouveau** vous pouvez utiliser des filtres pour sélectionner les articles ou les services à inclure dans la liste de prix. Vous pouvez également indiquer s’il faut prendre en compte une quantité minimale lors du calcul des prix, le facteur d’ajustement à appliquer pour les nouvelles lignes de liste de prix et la méthode d’arrondissement à appliquer aux prix. 
 
 Par défaut, l’état des nouvelles listes de prix est **Brouillon**. Lorsque vous êtes prêt à commencer à utiliser la liste, vous pouvez remplacer l’état par **Actif**.
@@ -71,6 +75,7 @@ Pour consulter les listes de prix et les prix qui s’appliquent à des clients 
 ---
 
 ## <a name="to-set-up-a-sales-line-discount-for-a-customer"></a>Pour définir un escompte de ligne vente pour un client
+
 Ces étapes diffèrent selon que votre administrateur a activé ou non la fonctionnalité **Nouvelle tarification des ventes**. 
 
 #### <a name="current-experience"></a>[Expérience actuelle](#tab/current-experience/)  
@@ -100,6 +105,7 @@ Ces étapes diffèrent selon que votre administrateur a activé ou non la foncti
 ---
 
 ## <a name="work-with-invoice-discounts-and-service-charges"></a>Utiliser des escomptes facture et des frais forfaitaires
+
 Lorsque vous utilisez des escomptes de facture, la valeur du montant de la facture détermine celle de l'escompte accordé. Dans la page **Escomptes facture**, vous pouvez également ajouter des frais forfaitaires aux factures supérieures à un montant donné.  <!--The Invoice Discounts page is hard to find.-->
 
 Pour pouvoir utiliser les escomptes facture avec les ventes, vous devez saisir certaines informations dans l'application. Vous devez décider quels clients bénéficieront de ce type d’escompte et les pourcentages escompte que vous utiliserez.  
@@ -116,6 +122,7 @@ En plus du pourcentage d'escompte (ou à sa place), vous pouvez lier un montant 
 > Avant de commencer à saisir ces informations, il est judicieux de préparer au préalable votre structure d’escompte, de sorte qu’il soit plus facile de voir quels clients associer à la même page d’escompte facture. Pour plus d'informations sur les escomptes sur les ventes, voir [Configurer des escomptes pour vos clients](/learn/modules/customer-discounts-dynamics-365-business-central/index) sur Microsoft Learn.  
 
 ### <a name="to-set-up-an-invoice-discount-for-a-customer"></a>Pour configurer un escompte facture pour un client
+
 Après avoir décidé des clients pouvant faire l’objet d’escomptes facture, entrez le code escompte facture dans les fiches client et configurez les conditions de chaque code.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.
@@ -136,6 +143,7 @@ Configurez de nouvelles conditions d'escompte facture pour les ventes.
 L'escompte facture est désormais configuré et affecté au client concerné. Lorsque vous sélectionnez le code client dans le champ **Code remise facture** dans d'autres fiches client, la même remise facture est affecté à ces clients.
 
 ## <a name="to-copy-sales-prices"></a>Pour copier des prix de vente
+
 Ces étapes diffèrent selon que votre administrateur a activé ou non la fonctionnalité **Nouvelle tarification des ventes**. 
 
 #### <a name="current-experience"></a>[Expérience actuelle](#tab/current-experience/)  
@@ -166,6 +174,7 @@ L’état de la liste de prix doit être **Brouillon**.
 ---
 
 ## <a name="to-bulk-update-item-prices"></a>Pour mettre à jour en bloc des prix d'articles
+
 Ces étapes diffèrent selon que votre administrateur a activé ou non la fonctionnalité **Nouvelle tarification des ventes**. 
 
 #### <a name="current-experience"></a>[Expérience actuelle](#tab/current-experience/)
@@ -193,9 +202,16 @@ Pour mettre à jour les prix de plusieurs articles, vous devez créer une nouvel
 ---
 
 ## <a name="calculating-the-best-price"></a>Calcul du meilleur prix
+
 Lorsque vous avez enregistré des prix spéciaux et des escomptes ligne pour les ventes et les achats, [!INCLUDE[d365fin](includes/d365fin_md.md)] s’assure que votre profit pour l’article est toujours optimal en calculant automatiquement le meilleur prix dans les documents achat et vente, sur le projet et les lignes journal article. Pour plus d'informations, voir [Calcul du meilleur prix](sales-how-record-sales-price-discount-payment-agreements.md#best-price-calculation).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/customer-discounts-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
+
 [Définition des ventes](sales-setup-sales.md)  
-[Vente](sales-manage-sales.md)  
-[Utiliser [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)
+[Ventes](sales-manage-sales.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

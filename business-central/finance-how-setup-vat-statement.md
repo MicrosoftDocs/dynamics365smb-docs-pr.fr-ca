@@ -10,12 +10,12 @@ ms.search.keywords: VAT, posting, tax, value-added tax
 ms.search.form: 317, 318, 320, 474
 ms.date: 06/16/2021
 ms.author: bholtorf
-ms.openlocfilehash: 356eb4fd32eff269b166767ae3b6cb3df6b67f1b
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: bda2bc95c78f5cc2119a6725b7dd57491938d67b
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8383707"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9075535"
 ---
 # <a name="set-up-vat-statement-templates-and-vat-statement-names"></a>Configurer des modèles de relevé fiscal et des noms de relevé fiscal
 
@@ -45,10 +45,12 @@ Après avoir défini un relevé fiscal, vous pouvez en afficher un aperçu pour 
 4. Sur les lignes où le champ **Type** indique la valeur **TVA**, vous pouvez afficher la liste des écritures TVA en choisissant le montant figurant dans le champ **Montant colonne**.
 5. Vous pouvez utiliser la personnalisation pour afficher plus de champs dans les lignes. Par exemple, le montant de base non réalisé et le montant de TVA non réalisé, si vous utilisez la TVA non réalisée.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/process-vat-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Configuration de la TVA](finance-setup-vat.md)  
-[Configuration de la TVA non réalisée](finance-setup-unrealized-vat.md)      
+[Configuration de la TVA sur encaissement](finance-setup-unrealized-vat.md)  
 [Déclarer la TVA à une autorité fiscale](finance-how-report-vat.md)  
 [Utiliser la TVA sur les ventes et les achats](finance-work-with-vat.md)  
 [Fonctionnalités locales dans Business Central](about-localization.md)

@@ -9,12 +9,12 @@ ms.workload: na
 ms. search.keywords: app, add-in, manifest, customize, import, implement
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 5c910aa7ab769af315c34db27c065fb8b496c878
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 0b608fb83b643e548b5400c6339ce35e09e5617f
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8136753"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078528"
 ---
 # <a name="the-quickbooks-data-migration-extension"></a>Extension QuickBooks Data Migration
 
@@ -65,7 +65,9 @@ Il existe quelques éléments en particulier que vous devez effectuer : si les 
 Si vous utilisez la taxe sur la valeur ajoutée (TVA), vous devez ajouter un groupe de report marché et un groupe de report produit à la configuration du report de manière à pouvoir reporter les montants TVA.
 Vérifiez les soldes de début des comptes du grand livre. QuickBooks ne stocke pas le solde actuel de tous les comptes, vous pouvez être amené à corriger les soldes d'ouverture.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/migrate-data-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Importation des données métier à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  
 [Personnalisation de [!INCLUDE[prod_short](includes/prod_short.md)] à l'aide des extensions ](ui-extensions.md)  

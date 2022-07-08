@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 7368, 7369, 7370, 7371, 7372, 7373
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 4e41f61156dbc7248cc9cb1a99ca2b5c790ee036
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 8b64a0314f4880ed9bc5a6c10a37c8747e4aa561
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8518611"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9077772"
 ---
 # <a name="create-bins"></a>Créer zones
 
@@ -76,12 +76,14 @@ Pour travailler avec la page **Feuille création zone**, vous devez être config
 
 Répétez l'opération pour un autre ensemble d'emplacements jusqu'à ce que vous ayez créé tous les emplacements de votre entrepôt.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/create-new-bins/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  
 [Stock](inventory-manage-inventory.md)  
-[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
-[Gestion d'assemblage](assembly-assemble-items.md)    
+[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
+[Gestion d'assemblage](assembly-assemble-items.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

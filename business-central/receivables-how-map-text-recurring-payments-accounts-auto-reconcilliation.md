@@ -10,14 +10,15 @@ ms.search.keywords: account linking, direct payment posting, automatic payment p
 ms.search.form: 1290, 1294, 1287
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 69ec5c81ff1c93fd4ab91540f3ad3e420171c6c9
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 021837a5ec2be9fb5b2234fcc85103b8ad3746f8
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8514839"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078580"
 ---
 # <a name="map-text-on-recurring-payments-to-accounts-for-automatic-reconciliation"></a>Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique
+
 Sur la page **Correspondance texte et compte** à laquelle vous accédez à partir de la page **Journal rapprochement paiement**, vous pouvez configurer des mappages entre le texte des paiements et des comptes de débit, de crédit et de contrepartie spécifiques afin que ces paiements soient reportés dans les comptes spécifiés lorsque vous reportez le journal rapprochement de paiement.
 
 Une fonctionnalité similaire existe pour rapprocher les montants excédentaires sur les lignes journal rapprochement paiement de façon ponctuelle. Pour plus d'informations, voir [Rapprocher les paiements qui ne peuvent pas être affectés automatiquement](receivables-how-reconcile-payments-cannot-apply-auto.md).
@@ -30,6 +31,7 @@ Les paiements reportés basés sur le mappage de texte à compte ne sont pas aff
 Sur une ligne journal rapprochement paiement dont le paiement a été défini sur report en fonction du mappage de texte à compte, le champ **Fiabilité correspondance** contient la valeur **Élevé – Mappage de texte à compte**, et les champs **Type compte** et **N° compte** contiennent les comptes mappés.
 
 ## <a name="to-map-text-on-recurring-payments-to-accounts-for-automatic-reconciliation"></a>Pour associer le texte sur les paiements récurrents aux comptes pour un rapprochement automatique
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux rapprochement bancaire**, puis sélectionnez le lien associé.
 2. Ouvrez un journal rapprochement paiement. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
 3. Sélectionnez l'action **Mapper le texte avec le compte**. La page **Correspondance texte et compte** s'affiche.
@@ -54,12 +56,14 @@ Pour toujours reporter les dépenses liées aux frais d’une banque spécifique
 
 | Correspondance texte | N° cpte débit | N° cpte crédit | Type origine solde | N° origine solde |
 | --- | --- | --- | --- | --- |
-| MyBank |VIDE |60400|Compte du grand livre |VIDE |
+| MyBank |VIDE |60400|Compte général |VIDE |
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/use-journals-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Gestion des comptes client](receivables-manage-receivables.md)  
-[Vente](sales-manage-sales.md)  
+[Ventes](sales-manage-sales.md)  
 [Configurer le service Envestnet Yodlee Bank Feeds](bank-how-setup-bank-statement-service.md)  
 [Personnalisation de [!INCLUDE[prod_short](includes/prod_short.md)] à l'aide des extensions](ui-extensions.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

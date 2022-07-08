@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: undo, credit memo, return
 ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: 59fd78c106f6a5b7d44aa3b2c84232c6441d0d31
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 00be9cdf2e76df93f144662e70bb8558e9b12a2e
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8517274"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9076939"
 ---
 # <a name="correct-or-cancel-unpaid-sales-invoices"></a>Corriger ou annuler des factures vente impayées
 
@@ -67,9 +67,11 @@ Si l'annulation est liée à un report de facture partiel, la ligne de document 
     Une note de crédit vente est automatiquement créée et reportée pour annuler la facture vente reportée initiale.
 5. Sélectionnez l'action **Afficher un avoir correctif** pour afficher l'avoir vente validé qui annule la facture vente validée initiale.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/ship-invoice-items-dynamics-365-business-central/)
 
-[Vente](sales-manage-sales.md)  
+## <a name="see-also"></a>Voir aussi .
+
+[Ventes](sales-manage-sales.md)  
 [Définition des ventes](sales-setup-sales.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

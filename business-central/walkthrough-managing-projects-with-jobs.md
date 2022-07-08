@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: a4be92935903c1572e43af0f035e101fe0567772
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 6f46b07a33e49830944b1bdea9b13f241a7b2332
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8513429"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9076757"
 ---
 # <a name="walkthrough-managing-projects-with-jobs"></a>Procédure pas à pas : gestion des projets
 
@@ -24,54 +24,63 @@ Cette procédure pas-à-pas présente les fonctionnalités de gestion de projets
 
  Cette procédure pas à pas couvre la configuration d'un nouveau projet, en plus de tâches plus communes telles que la gestion des prix fixes, les paiements en plusieurs versements, le report de factures à partir de projets et la copie de projets.  
 
-## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas  
+## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas
+
  Cette procédure pas à pas présente les tâches suivantes :  
 
-### <a name="setting-up-a-job"></a>Configuration d'un projet  
+### <a name="setting-up-a-job"></a>Configuration d'un projet
+
  Avec la structure de budget paramétrée pour les projets, la création d'un projet est très simple. Cette procédure pas-à-pas couvre les procédures suivantes :  
 
 - Configuration de lignes tâche projet et de lignes planification.  
 - Création de prix spécifiques à un projet pour des articles, des ressources et des comptes du grand livre.  
 - la facturation à partir d'un projet.  
 
-### <a name="handling-fixed-prices"></a>Gestion de prix fixes  
+### <a name="handling-fixed-prices"></a>Gestion de prix fixes
+
  Dans les projets, vous pouvez gérer des prix fixes, ainsi que les prix de biens ou de services convenus à l'avance avec les clients. Pour cette procédure pas-à-pas, vous pouvez procéder comme suit :  
 
 - Découvrir comment les valeurs contrat et facture sont déterminées.  
 - Autoriser le travail supplémentaire qui n'a pas été facturé dans le calendrier.  
 
-### <a name="copying-a-job"></a>Copie d'un projet  
+### <a name="copying-a-job"></a>Copie d'un projet
+
  Cette partie de la procédure se concentre sur la manière de copier tout ou partie d'un projet afin de réduire la saisie manuelle de données et ainsi améliorer la précision. Elle inclut les points suivants :  
 
 - la copie d'une partie d'un projet dans un nouveau projet ;  
 - la copie de prix spécifiques à un projet.  
 - Copie de lignes planification.  
 
-### <a name="making-payment-by-installment"></a>Paiement en plusieurs versements  
+### <a name="making-payment-by-installment"></a>Paiement en plusieurs versements
+
  Lorsqu'un projet important et onéreux dure longtemps, le client conclut souvent une entente avec la compagnie pour payer en plusieurs versements. Ce scénario montre comment configurer un paiement en plusieurs versements et couvre les points suivants :  
 
 - Création d'un paiement en plusieurs versements pour un projet.  
 - la facturation de paiements à des clients ;  
 - Comptabilité à utiliser dans un projet configuré en vue d'un paiement en plusieurs versements.  
 
-## <a name="roles"></a>Rôles  
+## <a name="roles"></a>Rôles
+
  Cette procédure pas à pas inclut les tâches correspondant aux rôles suivants :  
 
 - Chef de projet  
 - Membre de l'équipe de projet  
 
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Conditions préalables
+
  Avant d'exécuter cette procédure pas à pas, veuillez suivre les instructions ci-dessous :  
 
 - Installez la base de données de démonstration CRONUS.
 - Créez des exemples de données en respectant les étapes décrites dans la section suivante.  
 
-## <a name="story"></a>Scénario  
+## <a name="story"></a>Scénario
+
 Cette procédure pas à pas se concentre sur la société CRONUS, une entreprise de conception et de conseil, qui conçoit et équipe de nouvelles infrastructures (telles que des salles de conférence et des bureaux) avec du mobilier, des accessoires et des unités de stockage. La plus grande partie de son travail est orientée vers des projets. Prakash est chef de projet chez CRONUS. Il utilise les projets pour avoir un aperçu de chaque projet en cours entrepris par CRONUS, ainsi que les projets terminés. C'est généralement lui qui conduit les négociations avec les clients et entre les principaux éléments du projet (lignes tâche et planning, ainsi que les prix) dans [!INCLUDE[prod_short](includes/prod_short.md)]. Il trouve que la création, la gestion et la consultation des informations sont simples. Prakash aime également la manière dont [!INCLUDE[prod_short](includes/prod_short.md)] permet de copier des projets et d'effectuer un paiement en plusieurs versements.
 
  Tricia, membre de l'équipe de projet qui rend compte à Prakash, est responsable de la surveillance quotidienne du projet. Elle entre dans le système son propre travail, ainsi que celui accompli par les techniciens sur chaque tâche. Elle enregistre les articles qu'ils ont utilisés et les coûts exposés.  
 
-## <a name="preparing-sample-data"></a>Préparation d'exemples de données  
+## <a name="preparing-sample-data"></a>Préparation d'exemples de données
+
  Pour préparer cette procédure pas à pas, vous devez ajouter Tricia comme nouvelle ressource.  
 
 ### <a name="to-prepare-the-sample-data"></a>Pour préparer les exemples de données  
@@ -109,7 +118,8 @@ Dans la procédure suivante, vous créez un lot journal projet pour Tricia pour 
 
 4.  Cliquez sur le bouton **OK** pour enregistrer les modifications.
 
-## <a name="setting-up-a-job"></a>Configuration d'un projet  
+## <a name="setting-up-a-job"></a>Configuration d'un projet
+
  Dans ce cas, CRONUS a décroché un contrat avec un client, Progressive Home Furnishings, pour la conception d'une salle de conférence/repas. Le client est basé aux États-Unis et le projet nécessitera l'utilisation d'un logiciel spécial. Le chef de projet conclut une entente avec le client et crée un projet en relation avec cette entente.  
 
 ### <a name="to-set-up-a-job"></a>Pour configurer un projet  
@@ -202,7 +212,8 @@ Dans la procédure suivante, vous créez un lot journal projet pour Tricia pour 
 
 4. Fermez la page. Les totaux sont mis à jour sur la page **Lignes tâche projet**.  
 
-## <a name="calculating-remaining-usage"></a>Calcul de l'utilisation restante  
+## <a name="calculating-remaining-usage"></a>Calcul de l'utilisation restante
+
  Tricia, qui fait partie de l'équipe du projet, travaille depuis quelque temps sur le projet et souhaite enregistrer les heures et l'utilisation qu'elle y a consacrées. Elle n'a pas consacré plus de temps que ce qui avait été convenu à l'avance avec le client. Elle utilise le traitement par lots **Calc. activité restante** pour calculer l'activité restante pour le projet dans une feuille projet. Pour chaque tâche, le traitement en lot calcule la différence entre l'utilisation programmée des articles, des ressources et des dépenses générales et l'utilisation réelle reportée dans les écritures de grand livre projet. L'utilisation restante est ensuite affichée dans le journal projet à partir duquel elle peut la reporter.  
 
 ### <a name="to-calculate-remaining-usage"></a>Pour calculer l'utilisation restante  
@@ -219,7 +230,8 @@ Dans la procédure suivante, vous créez un lot journal projet pour Tricia pour 
 
 Les lignes sont à présent reportées.  
 
-## <a name="creating-and-posting-a-job-sales-invoice"></a>Création et report d'une facture vente projet  
+## <a name="creating-and-posting-a-job-sales-invoice"></a>Création et report d'une facture vente projet
+
  Ensuite, Tricia peut créer une facture pour l'ensemble du projet ou une partie du projet. Elle peut également joindre la facture à une autre destinée au même client pour le même projet. Dans ce cas, elle facture l'ensemble du projet, car celui-ci est à présent terminé.  
 
 ### <a name="to-create-a-job-sales-invoice"></a>Pour créer une facture vente projet  
@@ -252,7 +264,8 @@ Les lignes sont à présent reportées.
 2.  Sélectionnez l'action **Statistiques**. Vous pouvez consulter des informations détaillées sur les prix, les coûts et les profits d'un projet dans la devise locale et dans une devise étrangère.  
 3.  Cliquez sur le bouton **Fermer** pour fermer la page **Statistiques projet**.  
 
-## <a name="handling-fixed-prices"></a>Gestion de prix fixes  
+## <a name="handling-fixed-prices"></a>Gestion de prix fixes
+
  L'installation de salles de conférence a été confiée à CRONUS. En tant que chef de projet, Prakash souhaite disposer d'une bonne vue d'ensemble des tâches liées au projet ainsi que des coûts budgétisés et exposés associés à chacune d'elle. Il souhaite, en outre, connaître le prix total convenu pour le projet et les montants déjà facturés à ce stade. Il a conclu une entente avec le client concernant le prix fixe du projet.  
 
 ### <a name="to-manage-fixed-pricing-in-jobs"></a>Pour gérer un prix fixe dans des projets  
@@ -443,15 +456,18 @@ Les procédures suivantes expliquent comment créer un projet, définir un prix 
 2.  Sur la page **Créer facture vente**, indiquez la date du jour comme date de report, spécifiez **Par tâche**, puis cliquez sur le bouton **OK** pour créer une facture avec les informations par défaut. Cliquez sur le bouton **OK** pour fermez la page de confirmation.  
 3.  Choisissez l'action **Facture vente/note de crédit**. Sur la facture vente, vous pouvez voir que seul l'acompte est inclus dans la facture. Vous pouvez à présent envoyer cette dernière au client comme convenu.  
 
-## <a name="next-steps"></a>Étapes suivantes  
+## <a name="next-steps"></a>Étapes suivantes
+
  Cette procédure pas à pas vous a présenté l'utilisation de base des projets dans [!INCLUDE[prod_short](includes/prod_short.md)]. Vous avez appris à créer un projet, à copier un projet et à gérer les paiements. Vous avez également vu comment assurer le suivi des heures et créer des factures.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/create-jobs/)
 
- [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)   
- [Configuration de la gestion de projet](projects-setup-projects.md)   
- [Utiliser des ressources](projects-how-use-resources.md)   
- [Surveillance de la progression et des performances](projects-how-monitor-progress-performance.md)   
+## <a name="see-also"></a>Voir aussi .
+
+ [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)  
+ [Configuration de la gestion de projet](projects-setup-projects.md)  
+ [Utiliser des ressources](projects-how-use-resources.md)  
+ [Surveillance de la progression et des performances](projects-how-monitor-progress-performance.md)  
  [Facturation des projets](projects-how-invoice-jobs.md)  
  [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

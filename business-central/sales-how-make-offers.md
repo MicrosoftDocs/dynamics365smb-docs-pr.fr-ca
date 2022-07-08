@@ -10,12 +10,12 @@ ms.search.keywords: rfq
 ms.search.form: 41, 9300
 ms.date: 07/12/2021
 ms.author: edupont
-ms.openlocfilehash: 0264e689947745122d3de8879dc7e050aef3103f
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 7c3540b7ccc54cb4aed342e0963dd66a3a7adb88
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8521738"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9076419"
 ---
 # <a name="make-sales-quotes"></a>Créer des devis
 
@@ -98,9 +98,11 @@ La conversion supprime le devis de la base de données. Une facture vente ou un 
 
 [!INCLUDE [ext-doc-no-sales](includes/ext-doc-no-sales.md)]
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/create-sales-documents-dynamics-365-business-central/)
 
-[Vente](sales-manage-sales.md)  
+## <a name="see-also"></a>Voir aussi .
+
+[Ventes](sales-manage-sales.md)  
 [Définition des ventes](sales-setup-sales.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Archiver des documents](across-how-to-archive-documents.md)  

@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 1102, 1105, 1106, 1107, 1109, 1114
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 11d979329860d72476a6c2ae2ad6fcf57bd2485e
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 78dd79ab8a0f2b966b60dd9d75e95a521b83f4a2
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8149137"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9075561"
 ---
 # <a name="defining-and-allocating-costs"></a>Définition et répartition des coûts
 
@@ -47,7 +47,7 @@ Chaque affectation comporte une source et au moins une cible. La source d'affect
 5. Entrez un type de coût pour définir les types de coût à affecter dans le champ **Plage type de coûts**. Si tous les coûts pour un type donné sont affectés, aucune plage n'est définie.  
 6. Entrez un centre de coûts avec des coûts à affecter dans le champ **Code centre de coûts**.  
 7. Entrez un coût associé avec des coûts à affecter dans le champ **Code coûts associés**. Ce champ reste vide la plupart du temps car les coûts associés sont rarement affectés à d'autres coûts associés.  
-8. Entrez un type de coût dans le champ **Type de crédit\/coût**. Les coûts affectés sont crédités dans le type de coût d’origine. Le report des crédits est reporté sur le type de coût spécifié ici.  
+8. Entrez un type de coût dans le champ **Type de crédit\\\/coût**. Les coûts affectés sont crédités dans le type de coût d’origine. Le report des crédits est reporté sur le type de coût spécifié ici.  
 9. Sur le raccourci **Lignes**, définissez les cibles d’affectation. Sur la première ligne, entrez un type de coût dans le champ **Type coût cible**. Il définit le type de coût à partir duquel l'affectation est débitée.  
 10. Sur la première ligne, saisissez la première cible d'affectation dans le champ **Centre de coûts cible** ou **Objet de coûts cible**. Ces deux champs définissent le centre de coûts ou l'objet de coûts à partir desquels l'affectation est débitée. Vous pouvez renseigner uniquement l'un de ces champs, mais pas les deux.  
 11. Répétez les mêmes étapes sur la deuxième ligne pour configurer les cibles d'affectation supplémentaires.  
@@ -93,7 +93,7 @@ Cette rubrique décrit comment définir trois nouveaux objet de coûts pour la c
 4. Dans le champ **Niveau**, saisissez **1**.  
 5. Dans les champs **Valide à partir de** et **Valide jusque**, entrez les dates appropriées.  
 6. Dans le champ **Code centre de coûts**, entrez **PROD**.  
-7. Dans le champ **Type de crédit\/coût**, entrez le type de coût **9903**.  
+7. Dans le champ **Type de crédit\\\/coût**, entrez le type de coût **9903**.  
 
 ### <a name="to-define-the-allocation-target-cost-objects-on-the-lines-fasttab"></a>Pour définir les coûts associés de la cible d'affectation sur le raccourci Lignes  
 
@@ -131,7 +131,7 @@ Cette rubrique explique comment définir les affectations à l'aide du mode d'af
 4. Dans le champ **Niveau**, saisissez **1**.  
 5. Dans les champs **Valide à partir de** et **Valide jusque**, entrez les dates appropriées.  
 6. Dans le champ **Code centre de coûts**, entrez **VENTES**.  
-7. Dans le champ **Type de crédit\/coût**, entrez le type de coût **9903**.  
+7. Dans le champ **Type de crédit\\\/coût**, entrez le type de coût **9903**.  
 8. Dans le champ **Type coût cible**, entrez le type de coût **9903**.  
 9. Dans le champ **Objet de coûts cible**, sélectionnez **Nouveau** pour créer un nouvel objet de coût ÉQUIPEMENT IT et renseigner les champs, le cas échéant. Sélectionnez **ÉQUIPEMENT IT**. Laissez le champ **Centre de coûts cible** vide.  
 10. Dans le champ **Type cible affectation**, sélectionnez **Tous les coûts** pour définir le mode d'affectation de tous les coûts cumulés.  
@@ -143,12 +143,14 @@ Cette rubrique explique comment définir les affectations à l'aide du mode d'af
 > [!IMPORTANT]  
 > [!INCLUDE[prod_short](includes/prod_short.md)] utilise les chiffres de ventes des exercices précédents pour calculer une part de 1596,50 DS avec 100 % alloués pour les packages ÉQUIPEMENT IT. Cela signifie que tous les articles vendus au cours de l'exercice précédent seront affectés à l'ÉQUIPEMENT IT des objets de coûts.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/allocate-costs-dynamics-365-business-central/)
 
- [Paramétrage du contrôle de gestion](finance-set-up-cost-accounting.md)   
- [Transfert et report des écritures de coûts](finance-transfer-and-post-cost-entries.md)   
- [Comptabilité pour les coûts](finance-manage-cost-accounting.md)   
- [Terminologie en comptabilité analytique](finance-terminology-in-cost-accounting.md)   
+## <a name="see-also"></a>Voir aussi .
+
+ [Paramétrage du contrôle de gestion](finance-set-up-cost-accounting.md)  
+ [Transfert et report des écritures de coûts](finance-transfer-and-post-cost-entries.md)  
+ [Comptabilité pour les coûts](finance-manage-cost-accounting.md)  
+ [Terminologie en comptabilité analytique](finance-terminology-in-cost-accounting.md)  
  [À propos de la comptabilité analytique](finance-about-cost-accounting.md)
 
 

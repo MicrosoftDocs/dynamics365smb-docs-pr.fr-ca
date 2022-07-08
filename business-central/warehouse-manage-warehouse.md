@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 5774, 5776, 5777, 5785, 5793, 5797, 7318, 7364, 7401, 8909, 9000, 9008, 9009, 9050, 9053, 9056
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: d8cc547aa5187c270228a1e2dcd562eeb7f1cbb3
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 95e0655f863ea5559cad92f7bc0d89fc47a1b1c4
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8511980"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9074338"
 ---
 # <a name="warehouse-management"></a>Gestion d'entrepôt
 
@@ -39,12 +39,14 @@ Les tâches de comptabilisation, d'ajustement et de reclassement d'articles lié
 |Prélever des articles à livrer, transférer ou consommer en assemblage ou production, en fonction du processus d'entrepôt configuré.|[Prélèvement des articles](warehouse-pick-items.md)|
 |Enregistrez la livraison d'articles à partir d'emplacements entrepôts, soit avec un document de vente uniquement, dans les configurations d'emplacement simples, soit avec une livraison entrepôt, en cas de processus d'entrepôt partiellement ou entièrement automatisés dans l'emplacement.|[Livrer des articles](warehouse-how-ship-items.md)|  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/get-started-warehouse-management/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Stock](inventory-manage-inventory.md)  
-[Configuration de Warehouse Management](warehouse-setup-warehouse.md) 
-[Gestion d’assemblage](assembly-assemble-items.md)
-[Détails de conception : Warehouse Management](design-details-warehouse-management.md)  
+[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
+[Gestion d'assemblage](assembly-assemble-items.md)  
+[Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 ## [!INCLUDE[prod_short](includes/free_trial_md.md)]  

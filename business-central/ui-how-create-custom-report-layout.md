@@ -10,12 +10,12 @@ ms.search.keywords: customized report, document layout, logo, personalize
 ms.search.form: 9650, 9652
 ms.date: 03/06/2022
 ms.author: edupont
-ms.openlocfilehash: 5e25685241e85a1a90ac23c7eb47f9808f3239b9
-ms.sourcegitcommit: 7b6d70798b4da283d1d3e38a05151df2209c2b72
+ms.openlocfilehash: 81073838cc6bfd1858a3b3d18cd554b62080704a
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "8950392"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9075353"
 ---
 # <a name="legacy-create-and-modify-custom-report-layouts"></a>(Hérité) Créer et modifier des présentations de rapport personnalisées
 
@@ -126,7 +126,7 @@ Adding data fields from a report dataset is a more advanced and requires some kn
 [Modifier la présentation actuelle du rapport](ui-how-change-layout-currently-used-report.md)  
 [Importer et exporter une présentation de rapport ou de document personnalisée](ui-how-import-and-export-report-layout.md)  
 [Utiliser des rapports, des traitements en lot et des XMLports](ui-work-report.md)  
-[Préparer la génération de rapports financiers avec des tableaux d'analyse et des catégories de compte](bi-how-work-account-schedule.md) 
+[Préparer la génération de rapports financiers avec des tableaux d'analyse et des catégories de compte](bi-how-work-account-schedule.md)  
 [Veille économique](bi.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 

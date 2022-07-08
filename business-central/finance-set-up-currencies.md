@@ -7,12 +7,12 @@ ms.search.keywords: multiple currencies
 ms.search.form: 5, 118
 ms.date: 03/15/2022
 ms.author: edupont
-ms.openlocfilehash: f36d255c555c9ac83205a675bc7647cb02e0b3c2
-ms.sourcegitcommit: 521735f8e27d8bff2d2dfbe94d240c09dcdaec29
+ms.openlocfilehash: e501f61f61aec9d9ffc4acd9607ee6b9cf22e74f
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8419695"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9074910"
 ---
 # <a name="set-up-currencies"></a>Configurer des devises
 
@@ -117,7 +117,12 @@ Vous pouvez entrer un code devise sur une ligne journal général et reporter ce
 
 [!INCLUDE [finance-currencies-example](includes/finance-currencies-example.md)]
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/currencies-exchange-rates-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Mettre à jour des taux de change devise](finance-how-update-currencies.md)  
 [Configurer une devise de report additionnelle](finance-how-setup-additional-currencies.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 08/31/2021
 ms.author: edupont
-ms.openlocfilehash: f4fedcf64f560cef7e4b2f96d5baf884161fd75e
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: be30d89ca6ad6c80b27b0cc8f5e619b6ad5c7782
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8511568"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078032"
 ---
 # <a name="set-up-item-tracking-with-serial-lot-and-package-numbers"></a>Configuration du suivi des articles avec les numéros lot, de série et paquet
 
@@ -85,10 +85,12 @@ Pour activer la traçabilité, vous devez d’abord attribuer les codes traçabi
 3. Sur le raccourci **Traçabilité**, attribuez les codes traçabilité appropriés et choisissez les **Code traçabilité**, **N° de série** et **N° lot**.
     1. Vous pouvez également créer un code traçabilité en sélectionnant l’action **Nouveau**.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/prepare-item-tracking/)
 
-[Utiliser des numéros de série et lot](inventory-how-work-item-tracking.md)
-[Suivi d’articles – traçabilité](inventory-how-to-trace-item-tracked-items.md)  
+## <a name="see-also"></a>Voir aussi .
+
+[Utiliser les numéros de lot et de série](inventory-how-work-item-tracking.md)  
+[Tracer des articles - Articles suivis](inventory-how-to-trace-item-tracked-items.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Détails de conception : traçabilité](design-details-item-tracking.md)  
 [Détails de conception : traçabilité et réservations](design-details-item-tracking-and-reservations.md)  

@@ -10,12 +10,12 @@ ms.search.keywords: dates, reporting, filter, calendar, shorthand, range
 ms.search.form: 9020, 9022, 9026, 9027, 9030, 9000, 9009, 9004, 9005, 9024, 9006, 9007, 9010, 9016, 9017
 ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: b3e68fcd3eb33ee0885ae3ae5b0bee46017ed409
-ms.sourcegitcommit: f9143302b8271f5924a027cacdf29dc37c95f4c6
+ms.openlocfilehash: ba8dc155f3f25aa69907a729b1e235606a5268f9
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8655108"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9076809"
 ---
 # <a name="work-with-calendar-dates-and-times"></a>Utiliser les dates civiles et les heures
 
@@ -330,6 +330,7 @@ Le mot pour « time » (heure) dans la langue utilisée par [!INCLUDE[prod_sho
 [!INCLUDE [datetimes](includes/datetimes.md)]
 
 ## <a name="entering-duration"></a>Saisie des durées
+
 Certains champs de l'application représentent une durée, ou la quantité de temps écoulé, au lieu d'une date ou d'une heure spécifique. Vous entrez une durée sous la forme d'un nombre suivi d'une unité de mesure.
 
 Voilà quelques exemples.
@@ -349,7 +350,9 @@ Pour voir quelle unité de mesure est utilisée dans un champ de durée, saisiss
 
 Par exemple, si l'unité de mesure est « heures », le chiffre 5 est converti en 5 h.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/explore-modify-info-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Utiliser [!INCLUDE[prod_short](includes/prod_long.md)]](ui-work-product.md)  
 [Calcul de la date des achats](purchasing-date-calculation-for-purchases.md)  

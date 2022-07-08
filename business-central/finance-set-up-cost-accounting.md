@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 1100, 1112, 1113, 1122
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 9cfb46221098869f41b67c5365f14265b34017c0
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: ceba015b16e990bc71e0217ed2f8ee85ca6ae1ec
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8520344"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9074884"
 ---
 # <a name="setting-up-cost-accounting"></a>Paramétrage du contrôle de gestion
 
@@ -127,7 +127,7 @@ Vous pouvez configurer et gérer les centres de coût, soit sur la page **Fiche 
 
     - Pour les centres de coûts de type **Total**, vous devez renseigner le champ **Totalisation**. Utilisez l'opérateur **or**, qui est une ligne verticale (**&#124;**) pour définir les plages des centres de coûts.  
     - Pour les centres de coûts de type de ligne **Fin total**, ce champ est renseigné automatiquement lorsque vous utilisez la fonction de décalage.  
-5. Renseignez les champs **Ordre de tri** et **Sous-type coût**.  
+5. Renseignez les champs **Ordre de tri** et **Sous\-type coût**.  
 6. Choisissez la ligne vide suivante pour créer un centre de coûts, puis répétez les étapes 2 à 5.  
 7. Après avoir défini tous les centres de coûts, choisissez l'action **Décaler les centres de coûts**. Cliquez sur le bouton **Oui**.  
 
@@ -141,7 +141,8 @@ Les objets de coûts sont les projets, les biens ou les services d'une compagnie
 * Transférez des valeurs de dimension du grand livre vers le plan des objets de coûts. Vous pouvez effectuer tous les ajustements nécessaires après le transfert.  
 * Créez un nouveau plan des objets de coûts, qui est indépendant du grand livre ou ajoutez un nouvel objet de coûts à un plan des objets de coûts existant. Vous devez créer chaque objet de coût individuellement.  
 
-### <a name="to-transfer-dimension-values-from-the-general-ledger-to-the-chart-of-cost-objects"></a>Pour transférer des valeurs de dimension du grand livre vers le plan des objets de coûts  
+### <a name="to-transfer-dimension-values-from-the-general-ledger-to-the-chart-of-cost-objects"></a>Pour transférer des valeurs de dimension du grand livre vers le plan des objets de coûts
+
 1.  Définissez une dimension comme dimension d'objet de coûts sur la page **Actualiser dimensions CA**. Seules les valeurs de cette dimension sont transférées.  
 2.  Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 3.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable des objets de coûts**, puis choisissez le lien associé.  
 3.  Choisissez l'action **Extraire les objets de coûts de la dimension** pour transférer des valeurs de dimension vers le plan comptable des objets de coûts. La fonction transfère les axes analytiques que vous avez définis dans l'étape 1.  
@@ -151,7 +152,8 @@ Les objets de coûts sont les projets, les biens ou les services d'une compagnie
 
 Le plan des objets de coûts comprend désormais toutes les valeurs de dimension spécifiées provenant du grand livre. Il inclut les titres et les sous-totaux.  
 
-### <a name="to-create-new-cost-objects-in-the-chart-of-cost-objects-page"></a>Pour créer de nouveaux objets de coûts sur la page Plan comptable des objets de coûts  
+### <a name="to-create-new-cost-objects-in-the-chart-of-cost-objects-page"></a>Pour créer de nouveaux objets de coûts sur la page Plan comptable des objets de coûts
+
 Vous pouvez configurer et gérer les objets de coûts, soit sur la page **Fiche objet de coûts**, soit sur la page **Plan comptable des objets de coûts**. Dans cette procédure, vous configurez de nouveaux objets de coûts sur la page **Plan comptable des objets de coûts**.  
 
 1.  Ouvrez la page **Plan comptable des objets de coûts** en mode édition.  
@@ -169,9 +171,11 @@ Vous pouvez configurer et gérer les objets de coûts, soit sur la page **Fiche 
 >  Si vous avez saisi des définitions dans les champs **Total De/À** pour les objets de coûts **Fin total** avant d'exécuter la fonction de décalage, vous devez les saisir à nouveau. La fonction remplace les valeurs dans tous les champs **Fin total**.
 
 ## <a name="defining-cost-centers-and-cost-objects-for-chart-of-accounts"></a>Définition des centres de coûts et des coûts associés pour le plan comptable
+
 Vous pouvez transférer automatiquement les écritures de dépenses et de revenus à partir de la comptabilité générale vers la comptabilité analytique, que ce soit pour le report grand livre ou avec un traitement en lot. Lors du transfert, [!INCLUDE[prod_short](includes/prod_short.md)] transfère uniquement les écritures déjà liées à un centre de coûts ou aux coûts associés. Pour préparer un transfert pertinent, assurez-vous que les centres de coûts et les coûts associés sont définis correctement.  
 
-### <a name="defining-default-dimension-values-for-general-ledger-accounts"></a>Définition des sections analytiques par défaut pour des comptes généraux  
+### <a name="defining-default-dimension-values-for-general-ledger-accounts"></a>Définition des sections analytiques par défaut pour des comptes généraux
+
 Pour chaque compte général, vous pouvez définir des sections analytiques par défaut dans la table **Affectation analytique**. L'exemple suivant décrit la configuration requise pour avoir un centre de coût DÉPARTEMENT sans jamais avoir d'objet de coûts PROJET lors du report d'un compte du grand livre.  
 
 |**Code axe analytique**|**Contrôle validation**|  
@@ -179,7 +183,8 @@ Pour chaque compte général, vous pouvez définir des sections analytiques par 
 |Département|Code obligatoire|  
 |Dossier|Pas de code|  
 
-### <a name="defining-dimension-values-for-overhead-costs-and-direct-costs"></a>Définition des sections analytiques pour les frais généraux et les coûts directs  
+### <a name="defining-dimension-values-for-overhead-costs-and-direct-costs"></a>Définition des sections analytiques pour les frais généraux et les coûts directs
+
  Vous pouvez transférer des frais généraux à un centre de coûts, et des coûts directs aux objet de coûts. Le tableau suivant décrit comment optimiser la combinaison des valeurs de configuration des dimensions.  
 
 |Transférer vers|Report du centre de coûts|Report des objets de coûts|  
@@ -190,9 +195,12 @@ Pour chaque compte général, vous pouvez définir des sections analytiques par 
 > [!NOTE]  
 >  Pour vous assurer que le centre de coûts et l'objet de coûts prédéfinis que vous avez configurés dans le grand livre sont reportés automatiquement dans la comptabilité analytique, cochez la case **Vérifier reports GL** sur la page Configuration comptabilité analytique.
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/cost-accounting-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
+
 [Comptabilité pour les coûts](finance-manage-cost-accounting.md)  
-[Transfert et report des écritures de coûts](finance-transfer-and-post-cost-entries.md)   
+[Transfert et report des écritures de coûts](finance-transfer-and-post-cost-entries.md)  
 [Définition et répartition des coûts](finance-define-and-allocate-costs.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

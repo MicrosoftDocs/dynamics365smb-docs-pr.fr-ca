@@ -10,14 +10,15 @@ ms.search.keywords: project management, KPI, work in process, work in progress
 ms.search.form: 89, 92, 1010
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: f53a98d0574bfd324249b85b0b75de5f5e4997e9
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: ee69503fa830d21ed433e88c3d8f55a42a4ec1bb
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8514943"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9074676"
 ---
 # <a name="monitor-job-progress-and-performance"></a>Surveiller la progression et les performances
+
 Au fur et à mesure de la progression du projet, les matières, ressources et autres frais sont consommés et doivent être reportés dans le projet. La fonctionnalité Travaux en cours (TEC) permet d'estimer la valeur financière des projets dans le grand livre au cours des projets. Dans de nombreux cas, vous pouvez reporter les frais pour un projet avant de le facturer. Lorsque seuls les frais sont reportés, l'état financier est incorrect. Pour en savoir plus, reportez-vous à [Comprendre les méthodes TEC](projects-understanding-wip.md).
 
 Pour effectuer le suivi de la valeur dans le grand livre, vous pouvez calculer les TEC et reporter la valeur dans le grand livre.
@@ -33,6 +34,7 @@ Vous pouvez calculer les TEC sur la base des éléments suivants :
 Pour afficher le résultat avec une autre méthode, vous pouvez modifier la méthode et calculer les TEC de nouveau. Le calcul des TEC peut être exécuté un nombre illimité de fois. Le TEC est uniquement calculé, il n'est pas reporté dans le grand livre. Une fois les TEC calculés, vous pouvez effectuer un report dans le grand livre.
 
 ## <a name="to-create-a-job-wip-method"></a>Pour créer une méthode TEC projet
+
 Vous pouvez créer une méthode TEC projet qui reflète les besoins de votre organisation. Après l'avoir créée, vous pouvez la configurer comme méthode par défaut de calcul TEC projet qui sera utilisée dans votre organisation.  
 
 > [!NOTE]
@@ -45,6 +47,7 @@ Vous pouvez créer une méthode TEC projet qui reflète les besoins de votre org
 5. Dans le champ **Méthode TEC par défaut**, choisissez la méthode de la liste.
 
 ## <a name="to-define-a-wip-method-for-a-job"></a>Pour définir une méthode TEC pour un projet
+
 Lorsque vous créez un projet, vous devez spécifier la méthode TEC projet qui s'applique. Dans certains cas, quelle méthode TEC projet utilisable a été paramétrée pour vous par défaut.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Projets**, puis choisissez le lien associé.
@@ -52,6 +55,7 @@ Lorsque vous créez un projet, vous devez spécifier la méthode TEC projet qui 
 3. Sur la page **Fiche projet**, dans le champ **Méthode TEC**, sélectionnez une méthode TEC dans la liste. Si une méthode par défaut a été définie, vous pouvez sélectionner une autre option si nécessaire.  
 
 ## <a name="to-calculate-wip"></a>Pour calculer les TEC :
+
 Vous pouvez déterminer le montant TEC devant être reporté dans les comptes de bilan pour la génération de rapports de fin d'exercice. Pour ce faire, utilisez le traitement par lots **Projet Calculer TEC**.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Projet calculer TEC**, puis choisissez le lien associé.  
@@ -63,6 +67,7 @@ Vous pouvez déterminer le montant TEC devant être reporté dans les comptes de
 >   Le traitement en lot calcule uniquement les TEC. Il n'est pas reporté dans le grand livre. Pour ce faire, exécutez le traitement par lots **Valider TEC en compta.** à l'issue du calcul. Pour plus d'informations, voir la procédure suivante.
 
 ## <a name="to-post-wip"></a>Pour reporter les TEC
+
 Quand vous avez calculé les TEC, vous pouvez les reporter pour équilibrer les comptes bilan pour le rapport de fin de période. Pour ce faire, utilisez le traitement par lots **Projet Valider TEC en comptabilité**.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Projet - Reporter TEC au GL**, puis choisissez le lien associé.  
@@ -70,6 +75,7 @@ Quand vous avez calculé les TEC, vous pouvez les reporter pour équilibrer les 
 3. Choisissez le bouton **OK**.
 
 ## <a name="to-calculate-and-post-job-completion-entries"></a>Pour calculer et reporter les écritures d'achèvement du projet
+
 À la fin des activités d'un projet (validation et facturation comprises), vous devez le mettre à jour pour définir le **Statut** du projet sur **Terminé**. Ensuite, vous devez inverser tous les TEC reportés antérieurement dans le grand livre.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Projets**, puis choisissez le lien associé.  
@@ -86,6 +92,7 @@ Quand vous avez calculé les TEC, vous pouvez les reporter pour équilibrer les 
      Les écritures comptabilité TEC projet créées par le traitement par lots verront la case **Projet terminé** cochée pour indiquer qu'il s'agit d'écritures d’achèvement.
 
 ## <a name="to-view-job-ledger-entries"></a>Pour visualiser des écritures projet
+
 Toutes les écritures liées à des projets sont enregistrées dans des historiques des transactions projet et sont numérotées de manière séquentielle à partir de 1. Le registre de projet permet d'obtenir un aperçu de toutes les écritures projet.    
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Registres de projet**, puis choisissez le lien associé.
@@ -93,12 +100,15 @@ Toutes les écritures liées à des projets sont enregistrées dans des historiq
 
 Sur la page **Écritures projet**, vous pouvez passer en revue les écritures associées à un projet.  
 
-## <a name="see-also"></a>Voir aussi
-[Gestion des projets](projects-manage-projects.md)
-[Gestion de l'évaluation stock](finance-manage-inventory-costs.md)   
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/calculate-post-job-wip/)
+
+## <a name="see-also"></a>Voir aussi .
+
+[Gestion des projets](projects-manage-projects.md)  
+[Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Finance](finance.md)  
-[Procédure d'achat](purchasing-manage-purchasing.md)         
-[Vente](sales-manage-sales.md)      
+[Procédure d'achat](purchasing-manage-purchasing.md)  
+[Ventes](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 

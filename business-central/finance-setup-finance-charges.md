@@ -10,12 +10,12 @@ ms.search.keywords: payment due, debt, overdue, fee, charge
 ms.search.form: 6, 494
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: de00eb7e96e2903872a3ef312d096bd91d97577d
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: 565654d8f7a4dd38aceccbcc39e722bad89bf67e
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8142065"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9077616"
 ---
 # <a name="set-up-finance-charge-terms"></a>Configurer les modalités de frais financiers
 
@@ -66,9 +66,11 @@ En outre, chaque modalité de la table Modalités de frais financiers est lié �
 |%6|Contenu du champ **Frais supplémentaires** de l'en-tête de note de frais financiers|  
 |%7|Montant total du rappel|  
 |%8|Contenu du champ **Code devise** de l'en-tête de note de frais financiers|  
-|%9|Contenu du champ **Date de report** de l'en-tête de note de frais financiers|  
+|%9|Contenu du champ **Date comptabilisation** de l'en-tête de facture d'intérêts|  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/send-memos-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
 [Configurer les niveaux et modalités de rappel](finance-setup-reminders.md)  

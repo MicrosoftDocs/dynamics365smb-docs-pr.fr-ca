@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: 33d8c3a36340c997a12f879f8770e17045a88aa2
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 01c8b40b5217faccabc93e931472ad3aad64b7a1
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8521056"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9075613"
 ---
 # <a name="design-details-assembly-order-posting"></a>Détails de conception : report d'un ordre d'assemblage
 Le report d'ordre d'assemblage est basé sur les mêmes principes que le report des activités similaires des documents de vente et de la consommation de production/production. Cependant, les principes sont combinés du fait que les ordres d'assemblage ont leur propre interface utilisateur de report, comme celle des documents de vente, alors que le report des écritures réel se produit en arrière-plan en tant que report direct d'article et de journal ressource, comme pour la consommation de production, la production et la capacité.  
@@ -107,6 +107,13 @@ L'écriture article qui résulte du report d'une vente assembler pour commande e
 Les écritures article de type Vente qui résultent du report des quantités à assembler pour commande sont identifiées par **Oui** dans le champ **Assembler pour commande**.  
 
 Le report de lignes document de vente dont une partie est une quantité en inventaire et une autre partie est une quantité à assembler pour commande entraîne la création d'écritures article distinctes, une pour la quantité en inventaire et une pour la quantité à assembler pour commande.  
+
+### <a name="posting-dates"></a>Dates de report
+
+En général, les dates report sont copiées d’un document de vente vers l’ordre d’assemblage lié. La date de report dans l’ordre d’assemblage est automatiquement mise à jour lorsque vous modifiez la date de report dans le document de vente directement ou indirectement, par exemple si vous modifiez la date de report dans la livraison entrepôt, le prélèvement inventaire ou dans le cadre d’un report groupé.
+
+Vous pouvez modifier manuellement la date de report dans l’ordre d’assemblage. Cependant, elle ne peut pas être postérieure à la date de report dans le document de vente lié. Le système conservera cette date, à moins que vous ne mettiez à jour la date de report dans le document de vente.
+
 
 ## <a name="see-also"></a>Voir aussi  
  [Détails de conception : stock évaluation stock](design-details-inventory-costing.md)   

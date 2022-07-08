@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 507, 509, 6620, 6622, 6623, 9303, 9310
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: d421392a4428bc227cdbf6c5532d87e7360fe189
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 7bc0d1455960b1550c6a8d9fc54c20112b3e9f63
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8519001"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9074569"
 ---
 # <a name="work-with-blanket-sales-orders-or-blanket-purchase-orders"></a>Utiliser des commandes permanentes ventes ou des commandes permanentes achats
 
@@ -56,7 +56,8 @@ Ce qui suit affecte les documents de vente après leur création à partir de do
 - La commande ouverte vente facturée reste dans le système jusqu'à ce qu'elle soit supprimée, soit en supprimant les commandes ouvertes individuelles, soit en exécutant le traitement par lots **Suppr. cdes vente ouv. fact.**.  
 - Si un client est également enregistré comme contact dans le module Marketing et si vous avez spécifié un code modèle interaction pour les commandes permanentes ventes sur la page **Configuration Marketing**, lorsque vous sélectionnez **Imprimer** pour imprimer la commande permanente ventes, une interaction est enregistrée automatiquement dans la table Écriture journal interaction.
 
-## <a name="to-view-the-status-of-a-blanket-sales-order"></a>Pour visualiser l'état d'une commande permanente ventes  
+## <a name="to-view-the-status-of-a-blanket-sales-order"></a>Pour visualiser l'état d'une commande permanente ventes
+
 Vous pouvez afficher l'état d'une commande permanente vente sur la page **Statistiques Commande permanente ventes**. Ceci peut s'avérer utile lorsque vous commencez à facturer la commande créée à partir de la commande permanente ventes.  
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente permanents**, puis sélectionnez le lien associé.  
@@ -68,7 +69,8 @@ Vous pouvez afficher l'état d'une commande permanente vente sur la page **Stati
 - Sur le raccourci **Paiement anticipé**, vous pouvez visualiser des informations récapitulatives concernant les éventuels montants déjà payés.  
 - Sur le raccourci **Fournisseur**, vous pouvez visualiser certaines informations de base concernant le fournisseur.
 
-## <a name="to-view-unposted-and-posted-blanket-sales-order-lines"></a>Pour afficher des lignes commande permanente ventes reportées et non reportées   
+## <a name="to-view-unposted-and-posted-blanket-sales-order-lines"></a>Pour afficher des lignes commande permanente ventes reportées et non reportées
+
 Le lien entre la commande permanente ventes et le document de vente d'origine, et n'importe quel autre document vente, est conservé après report en tant que liste des lignes facture reportées et non reportées de document de vente.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente permanents**, puis sélectionnez le lien associé.
@@ -93,9 +95,11 @@ Le lien entre la commande permanente ventes et le document de vente d'origine, e
 
 5. Sur la page **Lignes vente**, sélectionnez l'action **Afficher document** pour afficher l'écriture.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/create-sales-documents-dynamics-365-business-central/)
 
-[Vente](sales-manage-sales.md)  
+## <a name="see-also"></a>Voir aussi .
+
+[Ventes](sales-manage-sales.md)  
 [Création d'ordres d'assemblage permanents](assembly-how-to-create-blanket-assembly-orders.md)  
 [Définition des ventes](sales-setup-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

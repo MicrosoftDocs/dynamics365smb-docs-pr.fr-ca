@@ -10,12 +10,12 @@ ms.search.keywords: Yodlee, feed, stream
 ms.search.form: 370, 371, 372, 373, 375, 423, 424, 425, 426, 1240, 1280
 ms.date: 01/24/2022
 ms.author: edupont
-ms.openlocfilehash: fc0c01281b4a4fb1bccee4196917b4357413e4cf
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: af48197d84407fc16e103991852f98fa0338bf9e
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8514131"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078788"
 ---
 # <a name="set-up-bank-accounts"></a>Configuration des comptes bancaires
 
@@ -157,6 +157,7 @@ The following table explains key fields.
 -->
 
 ## <a name="entering-an-opening-balance"></a>Saisie un solde d’ouverture
+
 Pour renseigner le champ **Solde** avec un solde ouvert, vous devez reporter une écriture de compte bancaire avec le montant en question. Vous pouvez effectuer cette opération en effectuant un rapprochement bancaire. Pour plus d'informations, voir [Rapprocher des comptes bancaires](bank-how-reconcile-bank-accounts-separately.md).  
 >
 > Sinon, vous pouvez appliquer le solde ouvert dans le cadre de la création des données générales de nouvelles compagnies à l'aide du guide de configuration assistée **Effectuer migration données métier**. Pour plus d'informations, voir [Préparation aux activités commerciales](ui-get-ready-business.md).  
@@ -165,6 +166,7 @@ Pour renseigner le champ **Solde** avec un solde ouvert, vous devez reporter une
 > Il est important que vous ne reportiez pas le solde d’ouverture directement dans le grand livre. Le fait d’avoir des écritures dans le compte du grand livre qui sont reportées directement sur le compte du grand livre vous empêchera généralement de rapprocher le compte bancaire ou, pour les comptes bancaires en devise étrangère, entraînera l’accumulation de différences au fur et à mesure que vous reportez plus de rapprochements bancaires. Souvent, vous reportez le solde bancaire d’ouverture directement sur le compte bancaire, et le montant se retrouve ensuite dans le compte du grand livre. Sinon, inversez-le plus tard sur un compte du grand livre que vous utilisez pour équilibrer le solde d’ouverture du grand livre. Dans les deux cas, vous devez équilibrer toute écriture directe sur le compte du grand livre avant de commencer votre premier rapprochement bancaire, et surtout si le compte bancaire est en devise étrangère.
 
 ## <a name="to-set-up-your-bank-account-for-import-or-export-of-bank-files"></a>Pour configurer votre compte bancaire pour importer ou exporter des fichiers bancaires
+
 Les champs associés à l’importation et à l’exportation des flux et des fichiers bancaires se trouvent sur le raccourci **Transfert** de la page **Fiche compte bancaire**. Pour plus d’informations, voir [Utilisation de l’extension AMC Banking 365 Fundamentals](ui-extensions-amc-banking.md) et [Configurer le service Envestnet Yodlee Bank Feeds](bank-how-setup-bank-statement-service.md).
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Comptes bancaires**, puis sélectionnez le lien associé.
@@ -240,10 +242,12 @@ Après avoir créé le compte bancaire, vous devez également créer un groupe d
 
 Pour obtenir une vue plus condensée de vos comptes caisse dans Financial Reporting, utilisez les comptes **Début total** et **Total final** dans votre chartes de comptes, les lignes **Totalisation** dans les tableaux d’analyse ou les catégories de comptes du grand livre. Pour plus d’informations, consultez la section [Vue d’ensemble de Business Intelligence et Financial Reporting](bi.md).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/cash-management-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Paramétrage des opérations bancaires](bank-setup-banking.md)  
-[Configuration de groupes de report](finance-posting-groups.md)  
+[Configuration de groupes comptabilisation](finance-posting-groups.md)  
 [Rapprochement de comptes bancaires](bank-manage-bank-accounts.md)  
 [Configurer le service Envestnet Yodlee Bank Feeds](bank-how-setup-bank-statement-service.md)  
 [Prélèvement SEPA dans Business Central](finance-collect-payments-with-sepa-direct-debit.md)  

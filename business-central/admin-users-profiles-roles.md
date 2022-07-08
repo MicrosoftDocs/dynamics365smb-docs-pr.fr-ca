@@ -7,12 +7,12 @@ ms.search.keywords: profiles, users
 ms.search.form: 9171
 ms.date: 06/14/2021
 ms.author: edupont
-ms.openlocfilehash: b17a4f5a375e4fa1ad067d2679b37bb3d0f5da95
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: a44338ca10dee37bba6d78ec1c73cb7b156bd2b3
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8514157"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9079282"
 ---
 # <a name="manage-user-profiles"></a>Gérer les profils d’utilisateur
 
@@ -145,7 +145,10 @@ En tant qu'administrateur de [!INCLUDE[prod_short](includes/prod_short.md)] en l
 
 Pour [!INCLUDE[prod_short](includes/prod_short.md)] sur site, vous pouvez gérer des sessions à l'aide de SQL Server Management Studio, par exemple. Pour plus d’informations, voir [Documentation technique SQL Server](/sql/sql-server).  
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/users-security-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
+
 [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md)  
 [Personnaliser les pages pour les profils](ui-personalization-manage.md)  
 [Personnaliser votre espace de travail](ui-personalization-user.md)  

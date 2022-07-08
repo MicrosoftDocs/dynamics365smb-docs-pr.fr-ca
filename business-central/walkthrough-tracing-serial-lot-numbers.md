@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/24/2021
 ms.author: bholtorf
-ms.openlocfilehash: 611a182a7f2b2202dd03e709da22183f762fe351
-ms.sourcegitcommit: 5a02f8527faecdffcc54f9c5c70cefe8c4b3b3f4
+ms.openlocfilehash: b7e2ae55e231cdadf02a0a8e91f6d3ad066a0cb5
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8382829"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9075234"
 ---
 # <a name="walkthrough-tracing-seriallot-numbers"></a>Procédure pas à pas : suivi des numéros de série et des numéros de lot
 
@@ -189,7 +189,8 @@ Ensuite, vous devez créer plusieurs transactions d'achat, de production et de v
 
     Ensuite, vendez les vélos de course. Vendez d'abord le vélo de course portant le SN1 à Selangorian Ltd.  
 
-### <a name="to-sell-the-end-items"></a>Pour vendre des articles finis  
+### <a name="to-sell-the-end-items"></a>Pour vendre des articles finis
+
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Choisissez l'action **Nouveau**, puis créez un document de vente en renseignant les champs suivants.  
 
@@ -228,10 +229,12 @@ Ensuite, vous devez créer plusieurs transactions d'achat, de production et de v
 
     Vous avez terminé de préparer les données de démonstration des fonctions Traçabilité et Rechercher des écritures.  
 
-## <a name="tracing-from-usage-to-origin"></a>Traçabilité de l'utilisation à l'origine  
+## <a name="tracing-from-usage-to-origin"></a>Traçabilité de l'utilisation à l'origine
+
  Dans le département des ventes, le contrôleur qualité sait que le vélo de course renvoyé, l'article 1002, porte le numéro de série SN1. En utilisant cette information de base, il peut déterminer l'endroit où le vélo de course a été utilisé en dernier, dans ce cas, sur la livraison vente de Selangorian Ltd. Il doit ensuite remonter jusqu'à l'origine pour connaître le numéro de lot duquel le composant défectueux provient.  
 
-### <a name="to-determine-which-lot-included-the-faulty-frame-and-who-supplied-it"></a>Pour déterminer de quel lot le cadre défectueux provient et qui la fournit  
+### <a name="to-determine-which-lot-included-the-faulty-frame-and-who-supplied-it"></a>Pour déterminer de quel lot le cadre défectueux provient et qui la fournit
+
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Traçabilité**, puis choisissez le lien associé.  
 2.  Sur la page **Traçabilité**, entrez **SN1** dans le champ **Filtre n° de série**, puis entrez **1002** dans le champ **Filtre article**.  
 3.  Conservez les paramètres par défaut de **Article suivi uniquement** dans le champ **Afficher composantes** et conservez la méthode de suivi par défaut **Utilisation - Origine** dans **Méthode de suivi**.  
@@ -257,7 +260,8 @@ Ensuite, vous devez créer plusieurs transactions d'achat, de production et de v
 
      La première tâche de gestion des défauts à l'aide de la page **Traçabilité** est à présent terminée. Le contrôleur qualité doit maintenant déterminer si d'autres documents reportés ont traité des cadres de course du LOT1.  
 
-## <a name="tracing-from-origin-to-usage"></a>Traçabilité de l'origine à l'utilisation  
+## <a name="tracing-from-origin-to-usage"></a>Traçabilité de l'origine à l'utilisation
+
  Le contrôleur qualité a déterminé que les cadres de course défectueux provenaient du LOT1. Il doit maintenant retrouver les autres vélos de course équipés d'un cadre provenant du lot défectueux afin de pouvoir stopper ou rappeler ces vélos.  
 
  Une manière de préparer cette tâche de suivi sur la page **Traçabilité** est d'entrer manuellement LOT1 dans le champ **Filtre n° lot** et 2000 dans le champ **Filtre article**. Toutefois, cette procédure pas-à-pas utilisera la fonction **Opposé suivi - Ligne d'origine** .  
@@ -280,7 +284,8 @@ Ensuite, vous devez créer plusieurs transactions d'achat, de production et de v
 
     Ainsi se termine la deuxième tâche de gestion des défauts à l'aide de la page **Traçabilité**. Étant donné que la page **Traçabilité** est basée uniquement sur des écritures reportées, le contrôleur qualité doit poursuivre jusqu’à la page **Rechercher des écritures** pour vérifier que le LOT1 n’est pas utilisé dans des documents qui ne sont pas reportés.  
 
-## <a name="finding-all-records-of-a-seriallot-number"></a>Rechercher tous les enregistrements d'un numéro de série/lot  
+## <a name="finding-all-records-of-a-seriallot-number"></a>Rechercher tous les enregistrements d'un numéro de série/lot
+
  La page **Traçabilité** a permis au contrôleur qualité de constater que le LOT1 contenait les cadres de course défectueux, d'en découvrir le fournisseur ainsi que la transaction reportée dans laquelle ils avaient été utilisés. Il doit maintenant déterminer si le LOT1 apparaît dans des documents ouverts en intégrant les résultats du suivi dans la page **Rechercher des écritures** dans laquelle il peut faire une recherche sur l’ensemble des enregistrements de base de données.  
 
 ### <a name="to-find-all-occurrences-of-lot1-in-non-posted-records-such-as-open-orders"></a>Pour rechercher toutes les occurrences du LOT1 dans les enregistrements non reportés, comme les commandes ouvertes  
@@ -298,12 +303,14 @@ Ensuite, vous devez créer plusieurs transactions d'achat, de production et de v
 
  Ainsi se termine la procédure pas à pas sur l’utilisation de la page **Rechercher des écritures** pour la gestion des défauts en association avec la page **Traçabilité**.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/use-serial-lot-numbers/)
+
+## <a name="see-also"></a>Voir aussi .
+
 [Utiliser les numéros de lot et de série](inventory-how-work-item-tracking.md)  
 [Tracer des articles - Articles suivis](inventory-how-to-trace-item-tracked-items.md)  
 [Rechercher des écritures](ui-find-entries.md)  
 [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)  
-
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

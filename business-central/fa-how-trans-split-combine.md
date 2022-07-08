@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 5638, 5636, 5640, 5637
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 48f2735c39c3630611abcb785efc67cfd9473671
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 2a6841bf7ad0adb7f63f1bdfc7cde97023e69bc5
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8511139"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078188"
 ---
 # <a name="transfer-split-or-combine-fixed-assets"></a>Transférer, fractionner ou regrouper les immobilisations
 
@@ -72,7 +72,9 @@ Vous pouvez regrouper plusieurs immobilisations en une, par exemple lorsque vous
 2. Renseignez les champs selon vos besoins.
 3. Cliquez sur le bouton **Imprimer** ou **Aperçu**.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/reclassify-fixed-assets/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  

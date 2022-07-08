@@ -9,14 +9,15 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: 190a3925cfc692331e21e3cd2a2b41c68cc02d6f
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 4d90980030453dd2b152d2b85901a9db12cadf2f
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8511425"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078320"
 ---
 # <a name="put-items-away-with-inventory-put-aways"></a>Ranger des articles avec le rangement stock
+
 Lorsque votre emplacement est configuré pour exiger un traitement des rangements, mais pas un traitement des réceptions, vous utilisez le document **Rangement inventaire** pour enregistrer et reporter les informations de rangement et de réception pour vos documents sources. Le document source entrant peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un ordre d'assemblage/un bon de production dont la production est prête à être rangée.  
 
 Vous pouvez créer un rangement inventaire de trois manières :  
@@ -26,6 +27,7 @@ Vous pouvez créer un rangement inventaire de trois manières :
 - Créez des rangements inventaire pour plusieurs documents sources simultanément en utilisant un traitement en lot.  
 
 ## <a name="to-request-an-inventory-put-away-by-releasing-the-source-document"></a>Pour demander un rangement inventaire en libérant le document d'source
+
 Pour les bons de commande, les retours vente, les ordres de transfert entrants et les ordres d'assemblage, vous créez la demande entrepôt en libérant l'ordre. La section suivante décrit comment procéder à partir d'un bon de commande.  
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de commande**, puis choisissez le lien associé.
@@ -41,7 +43,9 @@ Pour les bons de commande, les retours vente, les ordres de transfert entrants e
 Lorsque la demande entrepôt est créée, un employé d'entrepôt affecté aux rangements des articles peut voir que le document source est prêt et peut créer un document rangement inventaire.  
 
 ## <a name="to-create-an-inventory-put-away-based-on-the-source-document"></a>Pour créer un rangement inventaire sur la base du document source
-Maintenant que la demande est créée, l'employé d'entrepôt peut créer un nouveau rangement inventaire sur la base du document source libéré.   
+
+Maintenant que la demande est créée, l'employé d'entrepôt peut créer un nouveau rangement inventaire sur la base du document source libéré.
+
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rangement inventaire**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
 3. Dans le champ **Document origine**, sélectionnez le type de document origine que vous rangez.  
@@ -49,18 +53,21 @@ Maintenant que la demande est créée, l'employé d'entrepôt peut créer un nou
 5. Sinon, choisissez l'action **Extraire document source** pour sélectionner le document à partir de la liste des documents sources entrants prêts pour le rangement dans l'emplacement.  
 6. Choisissez le bouton **OK** pour renseigner les lignes rangement en fonction du document origine sélectionné.  
 
-## <a name="to-create-an-inventory-put-away-from-the-source-document"></a>Pour créer un rangement inventaire à partir du document source  
+## <a name="to-create-an-inventory-put-away-from-the-source-document"></a>Pour créer un rangement inventaire à partir du document source
+
 1.  Dans le document source, qui peut être un bon de commande, un retour vente, un ordre de transfert entrant ou un bon de production, choisissez l'action **Créer prélèvement/rangement inventaire**.  
 2. Cochez la case **Créer rangement inventaire**.
 3. Cliquez sur le bouton **OK**. Un nouveau rangement inventaire est créé.
 
-## <a name="to-create-multiple-inventory-put-aways-with-a-batch-job"></a>Pour créer plusieurs rangements inventaire avec un traitement en lot  
+## <a name="to-create-multiple-inventory-put-aways-with-a-batch-job"></a>Pour créer plusieurs rangements inventaire avec un traitement en lot
+
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Créer prélèv./rangement inventaire**, puis choisissez le lien associé.  
 2.  Sur le raccourci **Demande entrepôt** de la page demande, utilisez les champs **Document origine** et **N° origine** pour opérer un filtrage sur certains types de documents ou des plages de numéros de document.  
 3.  Sur le raccourci **Options**, cochez la case **Créer rangement inventaire**.
 4.  Cliquez sur le bouton **OK**. Les rangements stock spécifiés sont créés.
 
-## <a name="to-record-the-inventory-put-away"></a>Pour enregistrer les rangements inventaire  
+## <a name="to-record-the-inventory-put-away"></a>Pour enregistrer les rangements inventaire
+
 1. Ouvrez un document rangement déjà créé en en sélectionnant un sur la page **Rangements stock**.  
 2. Dans le champ **Code de zone** sur les lignes rangement, la zone où les articles doivent être rangés est proposée sur la base d'une zone par défaut de l'article. Vous pouvez modifier la zone sur cette page, si nécessaire.  
 3. Exécutez le rangement et saisissez les informations pour la quantité effectivement rangée dans le champ **Quantité à traiter**.
@@ -70,11 +77,14 @@ Maintenant que la demande est créée, l'employé d'entrepôt peut créer un nou
 
 Le processus de report reporte la réception, ou la production pour les bons de production, des lignes document origine qui ont été rangées et, si l'emplacement utilise des zones, le report crée également des écritures entrepôt pour reporter les modifications apportées aux quantités zone.
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/receive-put-away-items/)
+
+## <a name="see-also"></a>Voir aussi .
+
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  
 [Stock](inventory-manage-inventory.md)  
-[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
-[Gestion d'assemblage](assembly-assemble-items.md)    
+[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
+[Gestion d'assemblage](assembly-assemble-items.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 

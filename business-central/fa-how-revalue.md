@@ -9,14 +9,15 @@ ms.workload: na
 ms.search.form: 5628, 5629, 5633
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 7934e272652f175360d58ea3643fa28c5551c082
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 0b9598c8249e209583ffff73868013ad7e26f1b3
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8512312"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078166"
 ---
 # <a name="revalue-fixed-assets"></a>Réévaluer les immobilisations
+
 La réévaluation des immobilisations peut consister en réévaluations, dépréciations ou corrections de valeurs générales.
 
 Lorsque la valeur d'une immobilisation a augmenté, vous reportez une ligne journal avec un montant supérieur, une appréciation, dans le registre amortissement. Le nouveau montant est enregistré comme une appréciation selon la configuration du report immobilisation.
@@ -26,6 +27,7 @@ Lorsque la valeur d'une immobilisation a diminué, vous reportez une ligne journ
 L'actualisation permet d'ajuster plusieurs valeurs immobilisation, par exemple, en fonction de modifications générales de niveau de prix. Le traitement par lots **Réévaluer immobilisations** permet de modifier divers montants, tels que les montants de dépréciation et de réévaluation.
 
 ## <a name="to-post-an-appreciation-from-the-fixed-asset-gl-journal"></a>Pour reporter une appréciation à partir du journal GL immobilisation
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux GL immobilisation**, puis choisissez le lien associé.  
 2. Créez une ligne journal initiale et complétez les champs, le cas échéant.
 3. Dans le champ **Type compta. immo**, sélectionnez **Réévaluation**.
@@ -36,6 +38,7 @@ L'actualisation permet d'ajuster plusieurs valeurs immobilisation, par exemple, 
 5. Sélectionnez l'action **Reporter**.
 
 ## <a name="to-post-a-write-down-from-the-fixed-asset-gl-journal"></a>Pour reporter une dépréciation à partir du journal GL immobilisation
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux GL immobilisation**, puis choisissez le lien associé.  
 2. Créez une ligne journal initiale et complétez les champs, le cas échéant.
 3. Dans le champ **Type compta. immo**, sélectionnez **Dépréciation**.
@@ -46,6 +49,7 @@ L'actualisation permet d'ajuster plusieurs valeurs immobilisation, par exemple, 
 5. Sélectionnez l'action **Reporter**.
 
 ## <a name="to-perform-general-revaluation-of-fixed-assets"></a>Pour exécuter une réévaluation générale des immobilisations
+
 L'actualisation permet d'ajuster plusieurs valeurs immobilisation, par exemple, en fonction de modifications générales de niveau de prix. Le traitement par lots **Réévaluer immobilisations** permet de modifier divers montants, tels que les montants de dépréciation et de réévaluation. La case **Autoriser actualisation** sur la page **Loi d'amortissement** doit être cochée.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Actualiser immobilisations**, puis choisissez le lien associé.  
@@ -61,6 +65,7 @@ L'actualisation permet d'ajuster plusieurs valeurs immobilisation, par exemple, 
     >   Si les taux de réévaluation sont définis uniquement pour une simulation, vous pouvez créer un registre amortissement spécifique pour les stocker. Ainsi, ces écritures n'affectent aucune autre loi d'amortissement.
 
 ## <a name="to-post-additional-acquisition-costs"></a>Pour reporter les coûts d'acquisition supplémentaires
+
 Vous pouvez reporter le coût d'acquisition supplémentaire d'une immobilisation de la même manière que son coût d'acquisition d'origine : à partir d'une facture achat ou d'un journal immobilisation. Pour en savoir plus, voir [Acquérir des immobilisations](fa-how-acquire.md).  
 
 Si l'amortissement de l'immobilisation a été calculé, cochez la case **Amortir coût acquisition** pour que le résultat du coût d'acquisition supplémentaire moins la valeur résiduelle soit amorti proportionnellement au montant de l'amortissement de l'immobilisation précédemment acquise. Cette option garantit l'invariabilité de la période d'amortissement.  
@@ -74,6 +79,7 @@ Le pourcentage d'amortissement est calculé comme suit :
 Pensez à cocher la case **Amort. jusqu'à date compta.** sur les lignes de la facture, de la feuille comptabilisation immobilisation ou de la feuille immobilisation pour que le programme calcule l'amortissement à partir de la date validation de l'immobilisation jusqu'à la date validation du coût d'acquisition supplémentaire.
 
 ### <a name="example---posting-additional-acquisition-costs"></a>Exemple - Reporter des coûts d'acquisition supplémentaires
+
 Vous achetez une machine le 1er août 2000. Son coût d'acquisition est de 4 800. La méthode d'amortissement est linéaire sur quatre années.
 
 Le 31 août 2000, le traitement par lots **Calculer amortissement** est exécuté. L'amortissement est calculé comme suit :
@@ -114,7 +120,10 @@ Si vous n'avez pas coché la case **Amort. jusqu'à date compta.**, l'actif perd
 
 *Amortissement total = 100 + 15 + 55,54 = 170,54*
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/manage-advanced-fixed-assets-transactions/)
+
+## <a name="see-also"></a>Voir aussi .
+
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  
 [Finance](finance.md)  

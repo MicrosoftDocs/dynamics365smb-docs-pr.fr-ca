@@ -6,12 +6,12 @@ ms.topic: article
 ms.service: dynamics365-business-central
 author: edupont04
 ms.author: andreipa
-ms.openlocfilehash: 6b128f79cb8e629147bdd5ae77f2545ad0f7025c
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: c5552d81dc612070b5dd5512222806527e18ce7e
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8525335"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078762"
 ---
 # <a name="walkthrough-combine-automatic-and-manual-flushing"></a>Procédure pas à pas : Combiner la consommation automatique et la consommation manuelle
 
@@ -23,7 +23,9 @@ Vous êtes planificateur de production chez Contoso Coffee. Vous devez créer un
 
 ## <a name="steps"></a>Étapes
 
-1. Créer un bon de production planifié ferme pour 5 unités de l’article **SP-SCM1004, AutoDrip**. Pour obtenir des conseils, voir [Procédure pas à pas : Créer un bon de production planifié ferme et le modifier](create-firm-planned-production-order-change.md).  
+> [Remarque !] N’oubliez pas d’ajuster l'inventaire en reportant le journal article avec les soldes d’ouverture.
+
+1. Créez un bon de production planifié ferme pour 5 unités de l’article **SP-SCM1004, AutoDrip** à l’emplacement *NORD*. Pour obtenir des conseils, voir [Procédure pas à pas : Créer un bon de production planifié ferme et le modifier](create-firm-planned-production-order-change.md).  
 
 2. Libérez le bon de production.
 

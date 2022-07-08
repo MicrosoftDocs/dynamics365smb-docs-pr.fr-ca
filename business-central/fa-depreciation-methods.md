@@ -10,12 +10,12 @@ ms.search.keywords: write down
 ms.search.form: 5629, 5633
 ms.date: 07/05/2021
 ms.author: edupont
-ms.openlocfilehash: 337900111388e086e27a2d388843d4e1ab052eb6
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: ec81b14510d89729f7c51f95a3907db38e3876ea
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8518243"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9075951"
 ---
 # <a name="depreciation-methods-for-fixed-assets"></a>Méthodes amortissement pour les immobilisations
 
@@ -300,7 +300,9 @@ Lorsque vous saisissez une écriture pour B1 dans le journal GL immobilisation e
 > [!NOTE]  
 > Vous ne pouvez pas utiliser la même série de numéros dans le journal GL immobilisation et le journal immobilisation. Lorsque vous reportez des écritures dans le journal GL immobilisations, vous devez laisser le champ **N° document** vide. Si vous saisissez un numéro dans le champ, il est copié dans le journal immobilisation. Vous devez modifier manuellement le numéro de document avant de pouvoir reporter le journal.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/configure-depreciation-books/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  

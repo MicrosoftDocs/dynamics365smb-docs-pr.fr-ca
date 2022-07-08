@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 10/13/2021
 ms.author: edupont
-ms.openlocfilehash: 09b9f0d4d707da3872ae4b085f1405a99f69a9bc
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 24e19eb56bf28b7871ec18f254dc5dbbaa0b290a
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8515209"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078346"
 ---
 # <a name="plan-picks-in-worksheets"></a>Planifier des prélèvements dans la feuille
 
@@ -33,6 +33,7 @@ Sur la page **Feuilles de travail de prélèvement**, vous pouvez configurer des
 > Pour plus d'informations sur le prélèvement de composantes pour les ordres d'assemblage en général, notamment les situations où l'élément d'assemblage n'est pas dû dans une livraison vente, voir [Prélever pour l'assemblage ou la production dans les configurations de stockage avancées.](warehouse-how-to-pick-for-internal-operations-in-advanced-warehousing.md).  
 
 ## <a name="sorting-lines-on-a-pick-worksheet"></a>Tri des lignes sur une feuille de travail de prélèvement
+
 Vous pouvez trier les lignes par article, numéro de tablette, document source, date d’échéance ou destination. Voici quelques exemples de tri :
 
 * Si vous triez par date d’échéance, vous pouvez choisir d’effacer toutes les lignes à l’exception de celles nécessitant un traitement immédiat. Les lignes moins urgentes ne sont pas effacées mais renvoyées à la feuille **sélection prélèvement**. Lorsque vous créez le prélèvement, les lignes sont déjà triées par date d’échéance et vous pouvez choisir d’affecter le prélèvement à un employé.
@@ -52,10 +53,12 @@ Vous pouvez trier les lignes par article, numéro de tablette, document source, 
 8. Choisissez l'action **Imprimer** pour imprimer les instructions relatives au prélèvement.  
 9. Une fois le prélèvement terminé, choisissez l’action **Enregistrer**.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/pick-ship-items-warehouse/)
 
-[Gestion d’entrepôt](warehouse-manage-warehouse.md)  
-[Inventaire](inventory-manage-inventory.md)  
+## <a name="see-also"></a>Voir aussi .
+
+[Gestion d'entrepôt](warehouse-manage-warehouse.md)  
+[Stock](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  

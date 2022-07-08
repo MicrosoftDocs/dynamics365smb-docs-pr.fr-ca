@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: UOM
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 6457750589393b2f8cc9d76e732ab0c3e6064a9d
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 8b03ca934a87573feded023311f01349066f886c
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8518035"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9074858"
 ---
 # <a name="set-up-units-of-measure"></a>Configuration d'unités de mesure
 
@@ -80,7 +80,9 @@ Si vous utilisez habituellement d'autres unités de mesure que l'unité de mesur
 4. Pour les achats, sur le raccourci **Réapprovisionnement**, dans le champ **Unité de mesure achat**, ouvrez la page **Unités de mesure article**.
 5. Sélectionnez le code que vous souhaitez configurer comme unité de mesure par défaut pour les ventes ou les achats respectivement, puis cliquez sur le bouton **OK**.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/trade-master-data-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Utiliser les unités de mesure de lot de fabrication](production-how-to-use-the-manufacturing-batch-unit-of-measure.md)  
 [Enregistrer de nouveaux articles](inventory-how-register-new-items.md)  

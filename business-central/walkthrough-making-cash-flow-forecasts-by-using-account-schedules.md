@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: be9ddda098391cad347948993c2038de7efc8fc9
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 242c3e65401f188068c6e1fbea20212d4a3a7653
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8521452"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9076159"
 ---
 # <a name="walkthrough-making-cash-flow-forecasts-by-using-account-schedules"></a>Procédure pas-à-pas : Créer des prévisions de trésorerie à l'aide de les tableaux d'analyse
 
@@ -71,7 +71,7 @@ Après la configuration d'un nom de tableau d'analyse, Ken définit chaque ligne
     > [!TIP]  
     >  À l’aide de la fonction **Insérer des comptes CF**,vous pouvez sélectionner rapidement les comptes de trésorerie à partir du plan comptable de trésorerie et les copier vers les lignes du tableau d’analyse.  
 
-    | N° ligne totalisation | Description              | Type totalisation            | Totalisation | Type ligne   | Type montant | Afficher |
+    | N° ligne totalis. | Description              | Type totalisation            | Totalisation | Type ligne   | Type montant | Afficher |
     |---------|--------------------------|--------------------------|----------|------------|-------------|------|
     | R10     | Documents de vente en cours        | Comptes d’écritures de trésorerie | 20       |Solde période | Montant net  | Oui  |
     | R10     | Location                  | Comptes d’écritures de trésorerie | 30       |Solde période | Montant net  | Oui  |
@@ -142,7 +142,9 @@ Ken est désormais prêt à affecter la présentation de colonne au nom de table
 2. Sur la page **Aperçu tableau d'analyse**, vous pouvez sélectionner un montant, puis afficher les écritures de prévisions de la trésorerie qui constituent ce montant. En outre, vous pouvez afficher la formule qui est utilisée pour calculer le montant. Vous pouvez également filtrer les montants par date et par dimension.  
 3. Choisissez l'action **Imprimer** pour imprimer les prévisions de la trésorerie.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/forecast-cash-flow-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Utilisation des tableaux d'analyse](bi-how-work-account-schedule.md)  
 [Analyse de la trésorerie dans votre société](finance-analyze-cash-flow.md)  

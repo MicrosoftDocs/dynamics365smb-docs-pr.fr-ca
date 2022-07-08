@@ -10,12 +10,12 @@ ms.search.keywords: ''
 ms.search.forms: 5714, 5715
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: e551b7810bba9e75320ca11a2126b15f3b91d812
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 2c5b4f6835618e57212ac7b3b4a9ecf1c672052f
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8521998"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9077980"
 ---
 # <a name="work-with-responsibility-centers"></a>Utiliser les centres de gestion
 
@@ -55,11 +55,13 @@ Pour configurer cela, vous devez affecter des centres de gestion à des utilisat
 > [!NOTE]  
 > Les utilisateurs peuvent afficher uniquement les documents reportés liés à leur propre centre de responsabilité. Cependant, ils peuvent afficher toutes les écritures et accéder à d’autres documents reportés à partir des écritures.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/set-up-responsibility-centers/)
 
-[Configuration de l'inventaire](inventory-setup-inventory.md)  
+## <a name="see-also"></a>Voir aussi .
+
+[Configuration de stock](inventory-setup-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
-[Inventaire](inventory-manage-inventory.md)  
+[Stock](inventory-manage-inventory.md)  
 [Gestion d’entrepôt](warehouse-manage-warehouse.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

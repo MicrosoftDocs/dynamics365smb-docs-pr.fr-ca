@@ -10,14 +10,15 @@ ms.search.keywords: project budget, forecast
 ms.search.form: 1002, 1007
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: c34a4dd34ab34c7d1a5b02686618ab5f95957cbd
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: bc3d630e232e560987daefaabbe7ea8b5ddc681c
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8513897"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9075379"
 ---
 # <a name="manage-job-budgets"></a>Gérer les budgets de projets
+
 Vous pouvez configurer un budget pour chaque projet. Le budget permet de planifier les ressources que vous affectez à un projet. Il peut s'agir d'un budget général avec peu d'écritures ou plus détaillé avec des écritures réparties par niveau d'activité. Vous pouvez alors comparer les montants budgétés avec l'utilisation réelle telle qu'elle a été enregistrée dans le journal projet. En surveillant les différences entre l'utilisation réelle et celle budgétée, vous pouvez contrôler un projet en cours et améliorer la qualité des projets futurs en réduisant le risque de sous-estimation des coûts.
 
 La procédure suivante décrit comment estimer les coûts budgétés lors de la planification. Pour plus d'informations sur l'enregistrement budgété par rapport aux prix et aux coûts réels du projet, voir [Enregistrer l'utilisation pour les projets](projects-how-record-job-usage.md).  
@@ -48,11 +49,14 @@ Sur la page **Fiche projet**, vous pouvez désormais voir un résumé des coûts
 
 Pour plus d'informations sur l'enregistrement budgété par rapport aux prix et aux coûts réels du projet, voir [Enregistrer l'utilisation pour les projets](projects-how-record-job-usage.md).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/set-up-job-planning-lines/)
+
+## <a name="see-also"></a>Voir aussi .
+
 [Gestion de projets](projects-manage-projects.md)  
 [Finance](finance.md)  
-[Procédure d'achat](purchasing-manage-purchasing.md)         
-[Vente](sales-manage-sales.md)      
+[Procédure d'achat](purchasing-manage-purchasing.md)  
+[Ventes](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 

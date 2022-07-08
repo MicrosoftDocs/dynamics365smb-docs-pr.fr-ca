@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 7374
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: ef6b031cfb87c74a62da85d0c7073a91e5e176e9
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 9135514b6f788aab99b3433a04ad28ec36064e30
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8520535"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9074364"
 ---
 # <a name="create-bin-contents"></a>Créer le contenus de la zone
 
@@ -55,7 +55,9 @@ Lorsque vous avez créé vos zones, vous pouvez créer le contenu de chaque zone
 
 Dans cette feuille, vous pouvez utiliser des lignes contenu de la zone pour plusieurs zones, afin d'obtenir un aperçu convenable des articles que vous placez dans différents zones d'une zone, d'une allée, ou d'un casier donné.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/set-up-zones-bins/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Calculer le réapprovisionnement de la zone](warehouse-how-to-calculate-bin-replenishment.md)  
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  

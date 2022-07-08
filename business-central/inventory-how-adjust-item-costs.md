@@ -1,8 +1,6 @@
 ---
 title: Ajuster les coûts article manuellement
 description: Vous pouvez ajuster manuellement l’évaluation de l’inventaire d’un article à l’aide des méthodes FIFO ou d’évaluation inventaire moyen, lorsque les coûts de produits changent.
-services: project-madeira
-documentationcenter: ''
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
@@ -11,12 +9,12 @@ ms.workload: na
 ms.search.keywords: cost adjustment, cost forwarding, costing method, inventory valuation, costing
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 8b547aadab56af50aab5442b2634d4bcd1efe4cc
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: d688838b832655a4e36abecf1162fe4e79aba7d8
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8515021"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078658"
 ---
 # <a name="adjust-item-costs"></a>Ajuster coûts et prix article
 Le coût d'un article (valeur inventaire) que vous achetez et vendez ultérieurement peut changer au cours de sa durée de vie, par exemple parce que des frais de transport sont ajoutés à son coût d'achat après que vous avez vendu l'article. L'ajustement des coûts est particulièrement utile dans les situations où vous vendez des biens avant de facturer leur achat. Pour toujours connaître la valeur correcte de l'inventaire, les coûts article doivent donc être ajustés régulièrement. Cela garantit que les statistiques vente et profit sont à jour et que les indicateurs clés financiers sont corrects. Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-cost-adjustment.md).

@@ -10,12 +10,12 @@ ms.search.keywords: payment due, debt, overdue, fee, charge, reminder
 ms.search.form: 431, 432, 436, 478
 ms.date: 02/09/2022
 ms.author: edupont
-ms.openlocfilehash: 9456123c29b26c964acf974163ca31daa1e1b7c1
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 09e6bf269e8561dab5d205bc61d81ac40787200c
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8523381"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9075483"
 ---
 # <a name="set-up-reminder-terms-and-levels"></a>Configurer les niveaux et modalités de rappel
 
@@ -96,9 +96,11 @@ Si vous créez plus de relances qu'il n'y a de niveaux relance, les conditions u
     > [!NOTE]
     > La date d'échéance est calculée selon la formule de date que vous saisissez. Pour plus d’informations, voir [Utiliser des formules date](ui-enter-date-ranges.md#use-date-formulas).
 
-Si vous avez configuré les modalités de rappel (avec des niveaux et du texte supplémentaires), saisissez l'un des codes sur chaque fiche client. Pour plus d'informations, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).  
+Si vous avez configuré les modalités de rappel (avec des niveaux et du texte supplémentaires), entrez l'un des codes sur chaque fiche client. Pour plus d'informations, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/send-reminders-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
 [Envoyer des rappels de soldes impayés](receivables-send-reminders.md)  

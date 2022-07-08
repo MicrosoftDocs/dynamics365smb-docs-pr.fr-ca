@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 7335, 7337, 7339, 7340, 7341, 7362, 9008
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 5af803495f90590e288ad3d4e919995bb60e06b2
-ms.sourcegitcommit: cfe4e924af2c89c09250270245e7a1eef1184bfc
+ms.openlocfilehash: 7ad15181a1dc25f8b3ee923a62f5b4c553f965b2
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8626613"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078918"
 ---
 # <a name="ship-items"></a>Livrer des articles
 
@@ -106,7 +106,9 @@ Vous pouvez également utiliser la feuille prélèvement pour regrouper plusieur
 > [!NOTE]
 > Lorsque vous attendez l'arrivée d'articles spécifiques dans l'entrepôt et que vous utilisez la fonctionnalité de transbordement, [!INCLUDE[prod_short](includes/prod_short.md)] calcule, pour chaque ligne journal prélèvement ou livraison, la quantité article figurant dans la zone de transbordement. Il met à jour ce champ chaque fois que vous fermez ou ouvrez la feuille ou le document de livraison. Pour plus d'informations, voir [Transborder des articles](warehouse-how-to-cross-dock-items.md).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/ship-invoice-items-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Gestion d'entrepôt](warehouse-manage-warehouse.md)  
 [Stock](inventory-manage-inventory.md)  

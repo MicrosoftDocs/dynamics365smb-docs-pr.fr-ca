@@ -10,12 +10,12 @@ ms.search.keywords: posting setup, initialize
 ms.search.form: 312, 313
 ms.date: 03/24/2022
 ms.author: bholtorf
-ms.openlocfilehash: 4391b73a6e7f26262349abaeff751dd8f0f6c4e1
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: a3ce9d938994f6300e0a1f2c26511b3c0702c124
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8515677"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9076575"
 ---
 # <a name="set-up-posting-groups"></a>Configuration des groupes de report
 
@@ -58,6 +58,7 @@ Le tableau suivant décrit les groupes de report spécifiques aux types de donn�
 | Groupes comptabilisation immobilisations |Définissez des comptes pour les différents types de dépenses et frais, tels que les coûts d'acquisition, les montants d'amortissement cumulés, les coûts d'acquisition sur cession, l'amortissement cumulé sur cession, les gains sur cession, les pertes sur cession, les frais d'entretien et les frais d'amortissement. Définissez ces groupes de report sur la page **Groupes de report immo.**. |
 
 ### <a name="allowing-substitute-customer-or-vendor-posting-groups-on-documents"></a>Autorisation de groupes de report client ou fournisseur de remplacement sur les documents
+
 Vous pouvez permettre aux utilisateurs de choisir des groupes de report client et fournisseur différents de ceux par défaut lorsqu’ils utilisent des documents et des journaux vente ou achat.
 
 Pour autoriser les modifications des groupes de report client, choisissez **Autoriser la modification du groupe de report** sur les pages **Configuration ventes** et **Configuration Gestion des services**, et sur la page **Configuration achats** pour les modifications des groupes de report fournisseur.
@@ -129,10 +130,13 @@ Quand quelque chose ne va pas, [!INCLUDE[prod_short](includes/prod_short.md)] af
 > [!NOTE]
 > La gestion des erreurs décrite ci-dessus n’est pas disponible sur les journaux article, ressource, employé et immobilisation, ni pour les comptes du grand livre ajoutés dans des versions locales des groupes de report.
 
-## <a name="see-also"></a>Voir aussi
-[Le grand livre et le plan comptable](finance-general-ledger.md)  
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/posting-groups-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
+
+[Les écritures comptables et le plan comptable](finance-general-ledger.md)  
 [Configuration de Finance](finance-setup-finance.md)  
-[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

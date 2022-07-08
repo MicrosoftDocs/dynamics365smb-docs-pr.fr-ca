@@ -9,18 +9,19 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: b7be198a27a5c0a95aacb9c6eca988681d097316
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 80a34d18c94038ded7bcf405cabd1c67ddf82539
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8515235"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078424"
 ---
 # <a name="pick-for-production-or-assembly-in-basic-warehouse-configurations"></a>Prélever pour la fabrication ou l'assemblage dans les configurations de stockage de base.
+
 Le mode de rangement de vos composantes de prélèvement pour les bons de production ou les ordres d'assemblage dépend de la configuration de l'entrepôt en tant qu'emplacement. Pour plus d'informations, voir [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).
 
-
 ## <a name="pick-for-production-in-basic-warehouse-configurations"></a>Prélever pour la fabrication dans les configurations de stockage de base
+
 La méthode de consommation affecte également le flux des composantes en production. Pour plus d’informations, voir [Consommer en aval des composantes en fonction de la production réalisée](production-how-to-flush-components-according-to-operation-output.md).
 
 Dans les configurations d'entrepôt avancées où les emplacements nécessitent à la fois des prélèvements et des livraisons, vous devez utiliser la page **Prélèvement en entrepôt** pour amener les composantes avec la méthode de consommation définie sur *Manuel*, *Prélever + Aval*, *Prélever + Amont* aux bons de production. Pour plus d'informations, consultez [Prélever pour la fabrication ou l'assemblage dans les configurations de stockage avancées](warehouse-how-to-pick-for-internal-operations-in-advanced-warehousing.md).
@@ -40,6 +41,7 @@ Lorsque des opérations de fabrication sont intégrées dans les processus entre
 Si une condition préalable du système pour le prélèvement ou le déplacement de composantes pour les documents d'origine est qu'une demande sortante d'entrepôt existe pour informer la zone d'entrepôt du besoin de composante. La demande désenlogement est créée lorsque l'état du bon de production devient Libéré ou lorsqu'un bon de production libéré est créé.  
 
 ## <a name="to-pick-production-components-in-basic-warehouse-configurations-using-inventory-pick"></a>Pour prélever des composantes de production dans des configurations d'entrepôt de base à l'aide du prélèvement inventaire
+
 Dans les configurations d'entrepôt de base où l'emplacement est configuré pour utiliser uniquement le prélèvement, vous pouvez prélever des composantes pour les activités de production à l'aide de la page **Prélèvement inventaire**. Pour plus d'informations, voir [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md).
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvements inventaire**, puis choisissez le lien associé.  
@@ -52,6 +54,7 @@ Vous pouvez également créer un **Prélèvement de stock** directement à parti
 Vous pouvez également utiliser le **Mouvement d'inventaire** avec la référence au document source pour déplacer des articles entre les zones. Vous devrez enregistrer la consommation séparément. Pour plus d'informations, voir [Reporter en lot la consommation de la production](production-how-to-post-consumption.md)
 
 ## <a name="pick-for-assembly-in-basic-warehouse-configurations"></a>Prélever pour l'Assemblage dans les configurations de stockage de base
+
 Dans les configurations d’entrepôt avancées où les emplacements requièrent des prélèvements et des livraisons, vous devez utiliser la page **Prélèvement entrepôt** pour ajouter des composantes aux ordres d'assemblage. Pour plus d'informations, consultez [Prélever pour la fabrication ou l'assemblage dans les configurations de stockage avancées](warehouse-how-to-pick-for-internal-operations-in-advanced-warehousing.md).
 
 Dans les configurations d'entrepôt de base, vous pouvez également prélever les ordres d’assemblage à l’aide de la page **Mouvement d'inventaire**. 
@@ -59,6 +62,7 @@ Dans les configurations d'entrepôt de base, vous pouvez également prélever le
 Dans les configurations d'entrepôt de base où l'emplacement nécessite le traitement des prélèvements mais pas le traitement des livraisons, la page **Prélèvement inventaire** est également utilisée pour sélectionner, assembler et livrer pour un document de vente où les articles doivent être assemblés avant de pouvoir être livrés. Pour plus d’informations, voir [Traitement des articles assembler pour commande dans les prélèvements inventaire](warehouse-how-to-pick-for-production.md#handling-assemble-to-order-items-with-inventory-picks).  
 
 ## <a name="handling-assemble-to-order-items-with-inventory-picks"></a>Traitement des articles à assembler pour commande dans les prélèvements stock
+
 La page **Prélèvement inventaire** est également utilisée pour prélever et livrer les ventes lorsque les articles doivent être assemblés avant de pouvoir être livrés. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).
 
 Les articles à livrer ne sont pas physiquement présents dans une zone tant qu'ils ne sont pas assemblés et reportés comme production dans une zone de la zone d'assemblage. Cela signifie que le prélèvement des articles à assembler pour commande en vue d'une livraison est effectué suivant un flux spécial. Depuis une zone, les employés d'entrepôt déposent des éléments d'assemblage sur le quai de livraison, puis reportent le prélèvement inventaire. Le prélèvement inventaire reporté reporte ensuite les résultats d'assemblage, la consommation de composantes et la livraison vente.
@@ -78,15 +82,19 @@ Si aucun code de zone n'est spécifié sur la ligne document de vente et qu'aucu
 Dans les scénarios de combinaison, où une partie de la quantité doit d'abord être assemblée et l'autre doit être prélevée à partir de l'inventaire, un minimum de deux lignes prélèvement inventaire sont créées. Une ligne prélèvement est calculée pour la quantité à assembler pour commande. L'autre ligne prélèvement dépend de quelles zones peuvent satisfaire à la quantité restante en inventaire. Les codes de zone sur les deux lignes sont renseignés de différentes manières comme indiqué pour les deux types de vente différents respectivement. Pour plus d'informations, voir la section « Scénarios de combinaison » dans [Description des processus Assembler pour commande et Assembler pour inventaire](assembly-assemble-to-order-or-assemble-to-stock.md).
 
 ## <a name="filling-the-consumption-bin"></a>Renseigner la zone consommation
+
 Ce graphique indique comment le champ **Code de zone** sur les lignes composante bon de production est renseigné en fonction de la configuration de votre emplacement.
 
 ![Organigramme Flux de zone.](media/binflow.png "BinFlow")
 
-## <a name="see-also"></a>Voir aussi
-[Gestion d’entrepôt](warehouse-manage-warehouse.md)  
-[Inventaire](inventory-manage-inventory.md)  
-[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
-[Gestion d'assemblage](assembly-assemble-items.md)    
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/pick-ship-items-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
+
+[Gestion d'entrepôt](warehouse-manage-warehouse.md)  
+[Stock](inventory-manage-inventory.md)  
+[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
+[Gestion d'assemblage](assembly-assemble-items.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

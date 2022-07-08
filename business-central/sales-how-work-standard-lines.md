@@ -9,14 +9,15 @@ ms.workload: na
 ms.search.keywords: trade, sell, replenishment
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: 3fe6f144b8513f651293f56e10ecf3020c1d0760
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 91a7b43265dbf4027c88f6fac7b79d4340f22ce1
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8517749"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9078502"
 ---
 # <a name="create-recurring-sales-and-purchase-lines"></a>Créer des lignes ventes et achat récurrentes
+
 Si vous devez souvent créer des lignes ventes et des lignes achat comportant des informations similaires, vous pouvez configurer des lignes standard que vous pouvez ensuite insérer dans les documents vente et achat, par exemple, pour les commandes de réapprovisionnement récurrentes.  
 
 Les procédures suivantes indiquent comment utiliser des lignes ventes standard sur les factures vente. Cela fonctionne de manière similaire pour tous les documents vente et pour tous les documents achat.  
@@ -66,6 +67,7 @@ Si des lignes vente récurrentes existent pour le client, vous pouvez les insér
 5. Cliquez sur le bouton **OK** pour insérer les lignes vente standard dans la facture, que vous pouvez réutiliser comme tels ou modifier les informations.
 
 ## <a name="to-create-multiple-sales-invoices-based-on-recurring-sales-lines"></a>Pour créer plusieurs factures vente à partir de lignes vente récurrentes
+
 Vous pouvez utiliser le traitement en lot **Créer des factures vente récurrentes** pour créer des factures vente en fonction des lignes vente standard qui sont affectées aux clients et avec des dates de report comprises entre les dates de début et de fin de validité que vous spécifiez dans les lignes vente standard.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Créer des factures vente récurrentes**, puis sélectionnez le lien associé.
@@ -75,9 +77,11 @@ Vous pouvez utiliser le traitement en lot **Créer des factures vente récurrent
 
 Les factures vente sont créées pour les clients ayant le code vente client standard spécifié, et toute information de prélèvement automatique spécifiée, pour le report à la date spécifiée.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/create-sales-documents-dynamics-365-business-central/)
 
-[Vente](sales-manage-sales.md)  
+## <a name="see-also"></a>Voir aussi .
+
+[Ventes](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 

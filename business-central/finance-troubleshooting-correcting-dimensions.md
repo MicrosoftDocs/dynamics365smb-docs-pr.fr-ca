@@ -10,12 +10,12 @@ ms.search.keywords: dimension, correction, correct, business intelligence
 ms.search.form: 116, 540, 2588
 ms.date: 09/27/2021
 ms.author: bholtorf
-ms.openlocfilehash: 497daecd0834b2651e52131df809d12d45b18d48
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 82f71f3fafb0b977dde28033443f4585aeaced52
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8519131"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9075431"
 ---
 # <a name="troubleshooting-and-correcting-dimensions"></a>Dépannage et correction des dimensions
 
@@ -122,7 +122,12 @@ Si une correction ne se termine pas, un avertissement s'affiche sur la carte de 
 
 Une fois les dimensions corrigées, vos données pour la comptabilité analytique seront désynchronisées. La comptabilité analytique utilise des dimensions pour agréger les montants des centres de coûts et des objets de coûts, et pour exécuter les affectations de coûts. La modification des dimensions des écritures GL signifiera probablement que vous réexécuterez vos modèles de comptabilité analytique. Que vous deviez simplement supprimer quelques registres de coûts et réexécuter les affectations, ou tout supprimer et réexécuter tous vos modèles, dépend des données qui ont été mises à jour et de la configuration de vos fonctionnalités de comptabilité analytique. Vous devez manuellement identifier où les corrections de dimensions auront un impact sur la comptabilité analytique et où des mises à jour sont nécessaires. [!INCLUDE[prod_short](includes/prod_short.md)] ne propose pas actuellement de moyen automatisé de le faire.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/dimensions-dynamics-365-business-central/)
 
-[Utiliser des Dimensions](finance-dimensions.md)
-[Analyser les données par dimension](bi-how-analyze-data-dimension.md)  
+## <a name="see-also"></a>Voir aussi .
+
+[Utiliser des dimensions](finance-dimensions.md)  
+[Analyse des données par dimensions](bi-how-analyze-data-dimension.md)  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

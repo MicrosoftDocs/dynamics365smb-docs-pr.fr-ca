@@ -10,12 +10,12 @@ ms.search.keywords: scrap
 ms.search.form: 5628, 5610, 5611, 5629, 5633
 ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: 210cfc51b9a9ffc68166636a2ff2d0e33edcbb62
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: dd8e374a0f7124084d789858767d08c4935d1631
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8523589"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9077329"
 ---
 # <a name="dispose-of-or-retire-fixed-assets"></a>Céder ou annuler des immobilisations
 
@@ -40,6 +40,7 @@ Les étapes suivantes supposent que vous avez déjà configuré les groupes de r
 Si vous vendez une immobilisation ou en cédez une partie, vous devez d'abord diviser l'immobilisation avant de pouvoir enregistrer la transaction cession. Pour en savoir plus, voir [Transférer, fractionner ou regrouper les immobilisations](fa-how-trans-split-combine.md).  
 
 ## <a name="to-view-disposal-ledger-entries"></a>Pour visualiser des écritures cession
+
 Lorsque vous vendez ou cédez une immobilisation, la valeur de cession est reportée dans le grand livre où vous pouvez afficher le résultat.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Immobilisations**, puis choisissez le lien associé.  
@@ -50,7 +51,9 @@ Lorsque vous vendez ou cédez une immobilisation, la valeur de cession est repor
 
 La page **Écritures** s'ouvre. Vous pouvez y voir les écritures résultant du report de la cession.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/dispose-fixed-assets/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  

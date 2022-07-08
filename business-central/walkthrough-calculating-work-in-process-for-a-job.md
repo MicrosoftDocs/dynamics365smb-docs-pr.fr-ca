@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: c3e8fea25e921288db80b993ff2911dc7b473fb1
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 16adda82dbc45bcff61934d57de7a4e46f8477cf
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8523303"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9075301"
 ---
 # <a name="walkthrough-calculating-work-in-process-for-a-job"></a>Procédure pas à pas : calcul des travaux en cours pour un projet
 
@@ -22,7 +22,8 @@ ms.locfileid: "8523303"
 
 Avec les projets, vous pouvez programmer l'utilisation des ressources de votre compagnie et suivre les différents coûts pour un projet spécifique. Les projets impliquent la consommation d'heures employé, d'heures machines, d'articles en inventaire et d'autres types d'utilisation devant être suivis au fur et à mesure de l'avancée du projet. Si celui-ci couvre une longue période, il se peut que vous souhaitiez transférer les coûts correspondants vers un compte Travaux en cours (TEC) dans le bilan au cours de projet. Vous pouvez ensuite reconnaître les coûts et ventes dans vos comptes état des résultats, le cas échéant.  
 
-## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas  
+## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas
+
  Cette procédure pas à pas présente les tâches suivantes :  
 
 -   calcul des TEC ;  
@@ -33,16 +34,20 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 
  Chaque étape du processus calcule la valeur et déplace les transactions du projet dans le grand livre. Les phases de calcul et de report sont distinctes, ce qui vous permet de consulter vos données et d'y apporter des modifications avant de les reporter dans le grand livre. Vous devez donc vous assurer que toutes les informations sont correctes après avoir exécuté les traitements en lot de calcul et avant de lancer les traitements en lot de report.  
 
-## <a name="roles"></a>Rôles  
+## <a name="roles"></a>Rôles
+
  Cette procédure pas à pas décrit les activités de Tricia, membre de l'équipe Projet.  
 
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Conditions préalables
+
  Avant de pouvoir exécuter les tâches de cette procédure pas à pas, [!INCLUDE[prod_short](includes/prod_short.md)] doit être installé sur votre ordinateur.  
 
-## <a name="story"></a>Scénario  
+## <a name="story"></a>Scénario
+
  Ce procédure pas à pas se concentre sur la société CRONUS International Ltd., entreprise de conception et de conseil, qui conçoit et équipe de nouvelles infrastructures (telles que des salles de conférence et des bureaux) avec du mobilier, des accessoires et des unités de stockage. La majeure partie du travail à CRONUS est orientée projets et Tricia, membre de l'équipe Projet, utilise les projets pour obtenir un aperçu des projets en cours acceptés par CRONUS, ainsi que des projets terminés. Certains des projets peuvent être très longs et durer plusieurs mois. Tricia peut utiliser un compte TEC pour enregistrer les travaux en cours et suivre les coûts tout au long du projet.  
 
-## <a name="calculating-wip"></a>Calcul TEC  
+## <a name="calculating-wip"></a>Calcul TEC
+
  CRONUS a accepté un projet à long terme qui s'est étendu sur plusieurs périodes de reporting. Tricia, membre de l'équipe projet, calcule les travaux en cours (TEC) pour vérifier que l'état financier de la compagnie sera exact.  
 
  Au cours de cette procédure, Tricia sélectionne un groupe de tâches spécifique qui sera inclus dans le calcul TEC. Sur la page **Lignes tâche projet**, elle peut spécifier ces lignes dans la colonne **Total TEC**.  
@@ -109,7 +114,8 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 > [!NOTE]  
 >  Seuls les travaux en cours et les réceptions sont calculés. Il n'est pas reporté dans le grand livre. Pour ce faire, exécutez le traitement en lot **Reporter TEC au GL** à l'issue du calcul.
 
-## <a name="posting-wip-to-general-ledger"></a>Report des TEC dans le grand livre  
+## <a name="posting-wip-to-general-ledger"></a>Report des TEC dans le grand livre
+
  Après avoir calculé les TEC pour ce projet, Tricia peut les reporter dans le grand livre.  
 
 ### <a name="to-post-wip-to-general-ledger"></a>Pour reporter les TEC dans le grand livre  
@@ -132,7 +138,8 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 10. Sur le raccourci **TEC et Réception**, vous remarquez que dans la colonne **Reporté**, le champ **Montant GL coûts récep.** est à présent rempli, ce qui indique que les TEC ont bien été reportés dans le grand livre.  
 11. Cliquez sur le bouton **OK** pour fermer la fiche.  
 
-## <a name="reversing-a-wip-posting"></a>Inversion d'un report TEC  
+## <a name="reversing-a-wip-posting"></a>Inversion d'un report TEC
+
  Tricia conclut que les tâches projet qui ont été exclues du calcul des TEC auraient dues être incluses dans ce calcul. Elle peut inverser les reports incorrects sans devoir reporter de nouveaux reports TEC.  
 
 ### <a name="to-reverse-a-wip-posting"></a>Pour inverser un report TEC  
@@ -154,13 +161,17 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
     > [!NOTE]  
     >  Supposons que Tricia a calculé et reporté les TEC d'un projet avec des dates incorrectes. En suivant la méthode vue précédemment, elle peut inverser les reports incorrects, corriger les dates et reporter à nouveau les TEC dans le grand livre.  
 
-## <a name="next-steps"></a>Étapes suivantes  
+## <a name="next-steps"></a>Étapes suivantes
+
  Cette procédure pas-à-pas vous a montré comment calculer les TEC dans [!INCLUDE[prod_short](includes/prod_short.md)]. Avec des projets plus vastes, il peut être utile de transférer les coûts vers un compte TEC de manière périodique tandis que le projet est en cours d’achèvement. Cette procédure pas-à-pas vous a montré comment exclure des lignes tâche d'un calcul. Elle vous montre également à quel moment vous devriez avoir à recalculer. Enfin, cette procédure pas-à-pas montre comment reporter les TEC dans le grand livre. Un exemple de la manière d'inverser un report des TEC dans le grand livre est également inclus.  
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/calculate-post-job-wip/)
+
+## <a name="see-also"></a>Voir aussi
+
  [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)  
- [Procédure pas à pas : gestion des projets](walkthrough-managing-projects-with-jobs.md)   
- [Comprendre les méthodes TEC](projects-understanding-wip.md)   
+ [Procédure pas à pas : gestion des projets](walkthrough-managing-projects-with-jobs.md)  
+ [Comprendre les méthodes TEC](projects-understanding-wip.md)  
  [Surveillance de la progression et des performances](projects-how-monitor-progress-performance.md)  
  [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

@@ -10,14 +10,15 @@ ms.search.keywords: kit, kitting, substitute items
 ms.search.form: 900, 901, 902, 903, 904, 907, 910, 916, 920, 921, 922, 923, 940, 941, 942, 930, 931, 932, 914, 915, 905
 ms.date: 07/29/2021
 ms.author: edupont
-ms.openlocfilehash: 9860ebc2ce7260f450dbda928ee6339c0560e0a7
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: b66efde55918886132def51ad898fa9e89054c02
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8521134"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9077355"
 ---
 # <a name="sell-items-assembled-to-order"></a>Vente d'articles à assembler pour commande
+
 Si le champ **Politique d'assemblage** de la fiche article d'un élément d'assemblage est **Assembler pour commande**, l'article n'est pas supposé être en inventaire et doit être assemblé spécifiquement dans un document de vente. Lorsque vous entrez l'article dans une ligne document de vente, un ordre d'assemblage est automatiquement créé et lié au document de vente.  
 
 > [!NOTE]  
@@ -28,7 +29,8 @@ Dans cette procédure, vous effectuez la vente d'un article que vous assemblez s
 > [!NOTE]  
 >  La procédure suivante n'inclut pas les phases standard de document de vente avant l'étape où vous entrez l'article à assembler pour commande dans une ligne document de vente.  
 
-## <a name="to-sell-an-item-that-is-assembled-to-order"></a>Vendre un article qui est assemblé pour commande  
+## <a name="to-sell-an-item-that-is-assembled-to-order"></a>Vendre un article qui est assemblé pour commande
+
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2.  Créez un document de vente. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).  
 3.  Dans le champ **N°**, , entrez un article qui est configuré pour l'assemblage pour commande.  
@@ -52,7 +54,7 @@ Dans cette procédure, vous effectuez la vente d'un article que vous assemblez s
     >   
     >  Sur l'en-tête des ordres d'assemblage associé, seul le champ **Date début** peut être modifié pour permettre aux employés d'assemblage de spécifier une date antérieure à la date d'échéance lorsqu'ils commencent le processus. Tous les champs des lignes de l'ordre d'assemblage associé peuvent être modifiés afin que les magasiniers puissent entrer les chiffres de consommation pendant le processus.  
 
-8.  Examinez les problèmes de disponibilité des composantes ou réagissez face à eux. Par exemple, sélectionnez un article de substitution disponible ou définissez une date d'échéance ultérieure.  
+8.  Examinez les problèmes de disponibilité des composantes ou réagissez face à eux. Par exemple, sélectionnez un article de substitution disponible.  
 9. Fermez la page **Lignes d'assemblage pour commande**. L'ordre d'assemblage lié est maintenant prêt à commencer à assembler les articles personnalisés au plus tard à la date d'échéance.  
 10. Sur le document de vente, choisissez l'action **Libérer** pour informer le département d’assemblage que le processus d’assemblage peut démarrer.  
 11. Dans le département d'assemblage, suivez la procédure d'assemblage des articles qui sont vendus au cours de cette procédure. Pour plus d'informations, voir [Assembler des articles](assembly-how-to-assemble-items.md).  
@@ -60,10 +62,13 @@ Dans cette procédure, vous effectuez la vente d'un article que vous assemblez s
 > [!NOTE]  
 > Sachez que les substitutions d'articles n’entraîneront pas automatiquement le remplacement d’un article par un autre, par exemple lors de la création d’un document de vente ou dans une nomenclature. Au lieu de cela, vous serez alerté du fait qu’un substitut est disponible pour vous.
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/assemble-to-order-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
+
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
-[Inventaire](inventory-manage-inventory.md)  
+[Stock](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Enregistrer de nouveaux articles](inventory-how-register-new-items.md)

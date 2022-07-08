@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: f921a6da2bb963d7cb53f062f32db7af6169020c
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: d4d2134945f0beb15853bc9cca227cde74285c9d
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8520084"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9074522"
 ---
 # <a name="walkthrough-setting-up-and-using-a-purchase-approval-workflow"></a>Procédure pas à pas : Configuration et utilisation d'un flux d'approbation achat
 
@@ -121,7 +121,9 @@ Définissez les variations des flux de travail en renseignant les champs sur les
 
 Si un scénario d’entreprise requiert un événement ou une réponse de workflow qui n’est pas pris en charge, un partenaire Microsoft doit l’implémenter via le code, ou vous pouvez configurer un workflow avec Power Automate. Pour en savoir plus, voir [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)] dans un workflow automatique](across-how-use-financials-data-source-flow.md) ou [Événements dans AL](/dynamics365/business-central/dev-itpro/developer/devenv-events-in-al) dans l’aide du développeur, respectivement.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/use-approval-workflows/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Configurer des utilisateurs d'approbation](across-how-to-set-up-approval-users.md)  
 [Configuration de notifications de workflow](across-setting-up-workflow-notifications.md)  

@@ -10,12 +10,12 @@ ms.search.keywords: online printing, email printing, cloud printing, Universal P
 ms.search.form: 8900
 ms.date: 06/24/2021
 ms.author: jswymer
-ms.openlocfilehash: e9c7cc2166581c318ff8febcf112765b4f78923c
-ms.sourcegitcommit: f9143302b8271f5924a027cacdf29dc37c95f4c6
+ms.openlocfilehash: 86f808aca7223115a3124d24dfc517ed6f96ae33
+ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8655301"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9075665"
 ---
 # <a name="set-up-printers"></a>Paramétrage imprimantes
 
@@ -269,13 +269,16 @@ Vous ou l'administrateur pouvez également utiliser la page **Sélections d'impr
 > Des sélections d'imprimantes plus spécifiques prévalent sur des sélections d'imprimantes plus générales. Par exemple, une sélection d'imprimante ayant des valeurs dans les champs **Code utilisateur**, **Code rapport** et **Nom de l'imprimante** prévaut sur une sélection d’imprimante ayant des entrées vides dans le champ **Code utilisateur** ou **Code rapport**.
 
 ### <a name="choosing-the-printer-when-running-a-report"></a>Choix de l’imprimante pendant l’exécution d’un rapport
+
 Au lieu d’utiliser l’imprimante par défaut lors de l’exécution d’un rapport, vous pouvez remplacer ce paramètre à partir de la page de demande. Choisissez simplement l’imprimante que vous souhaitez utiliser pour cette invocation du rapport dans le menu déroulant **Imprimante**.
 
 ### <a name="sizing-print-jobs"></a>Dimensionnement des travaux d'impression
 
 L'impression dans le nuage est conçue pour des documents de taille raisonnable. La plupart des services en nuage, y compris PrintNode et HP ePrint, ont une limite de 10 Mo par tâche. Si vous devez imprimer des rapports plus volumineux, vous devrez peut-être les diviser en plusieurs impressions.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/change-documents-dynamics-365-business-central/)
+
+## <a name="see-also"></a>Voir aussi .
 
 [Impression d'un rapport](ui-work-report.md#PrintReport)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
