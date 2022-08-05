@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: reject, delegate, request
 ms.date: 06/11/2021
 ms.author: edupont
-ms.openlocfilehash: 57d106918230007484f37979b416d44277c86035
-ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
+ms.openlocfilehash: 187ff9bad2fb8bf320872759115e98b326b689c8
+ms.sourcegitcommit: f1e272485a0e675d337a694aba3e35a5daf43920
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9075144"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9130210"
 ---
 # <a name="set-up-workflow-users"></a>Configurer des utilisateurs de flux de travail
 
@@ -40,7 +40,7 @@ Les utilisateurs de flux de travail dont la fonction est utilisateurs approbatio
     |Champ|Description|  
     |---------------------------------|---------------------------------------|  
     |**Nom d'utilisateur**|Spécifiez l'utilisateur qui participera aux workflows.<br /><br /> L'utilisateur doit exister sur la page **Configuration des utilisateurs**. Pour en savoir plus, voir [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md).|  
-    |**N° séquence**|Spécifiez l'ordre dans lequel l'utilisateur du flux de travail s'engage dans un flux par rapport à d'autres utilisateurs. Ce champ peut être utilisé, par exemple, pour indiquer à quel moment l'utilisateur approuve, par rapport à d'autres approbateurs, lorsque vous utilisez l'option **Groupe d'utilisateurs de flux de travail** dans le champ **Type approbateur** de la réponse de flux de travail lié. **CONSEIL :**  pour indiquer qu'une demande d'approbation n'est pas approuvée tant que plusieurs approbateurs de même niveau ne l'ont pas approuvée, quelle que soit la hiérarchie, configurez un groupe d'utilisateurs horizontal en affectant le même numéro de séquence aux approbateurs appropriés.|  
+    |**N° séquence**|Spécifiez l'ordre dans lequel l'utilisateur du flux de travail s'engage dans un flux par rapport à d'autres utilisateurs. Ce champ peut être utilisé, par exemple, pour indiquer à quel moment l'utilisateur approuve, par rapport à d'autres approbateurs, lorsque vous utilisez l'option **Groupe d'utilisateurs de flux de travail** dans le champ **Type approbateur** de la réponse de flux de travail lié.<br /><br /> **CONSEIL :** pour indiquer qu’une demande d’approbation nécessite l'approbation de plusieurs utilisateurs de même niveau, quelle que soit la hiérarchie, configurez un groupe d’utilisateurs horizontal en affectant le même numéro de séquence aux approbateurs appropriés.|  
 6. Répétez l'étape 5 pour ajouter des utilisateurs de workflow dans le groupe d'utilisateurs.  
 7. Répétez l'étape 2 à 6 pour ajouter des groupes d'utilisateurs de workflow.  
 

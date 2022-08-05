@@ -8,14 +8,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: VAT, posting, tax, value-added tax
 ms.search.form: 10, 1877, 470, 471, 472
-ms.date: 04/12/2022
+ms.date: 07/08/2022
 ms.author: bholtorf
-ms.openlocfilehash: 98a190594dbd2b37f949bdc51e7f810dd739b769
-ms.sourcegitcommit: 4853614c85beb347091c5c4c1ea8d974dec887fc
+ms.openlocfilehash: 60943e508e382bbbaa46d92a102a96ad70fed432
+ms.sourcegitcommit: f1e272485a0e675d337a694aba3e35a5daf43920
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740321"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9130129"
 ---
 # <a name="set-up-calculations-and-posting-methods-for-value-added-tax"></a>Configurer des méthodes de calcul et de report de la taxe sur la valeur ajoutée
 
@@ -172,15 +172,30 @@ Vous pouvez modifier ou supprimer une clause TVA, et les modifications que vous 
 3. Dans le champ **Code langue**, sélectionnez la langue de traduction.  
 4. Dans les champs **Description** et **Description 2**, saisissez les traductions des descriptions. Ce texte s'affiche dans les documents rapport de TVA traduits.  
 
+### <a name="to-specify-extended-text-for-vat-clauses"></a>Pour spécifier le texte étendu pour les clauses TVA
+
+> [!NOTE]  
+> Si votre pays ou votre région requiert un texte plus long pour les clauses de TVA que celui pris en charge par la version par défaut, vous pouvez spécifier le texte plus long pour les clauses de TVA comme suit *texte étendu* afin qu'il s'imprime sur les rapports de ventes et d'achats.  
+
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 11.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clauses TVA**, puis choisissez le lien associé.  
+2. Choisissez l'action **Textes étendus**.  
+3. Renseignez les champs **Code** et **Désignation**.  
+3. Sélectionnez l'action **Nouveau**.  
+4. Vous pouvez, si vous le souhaitez, cliquer sur le champ **Commun toutes langues** ou spécifier la langue appropriée dans le champ **Code langue** si vous utilisez des codes langue.  
+5. Renseignez les champs **Date début** et **Date fin** si vous souhaitez limiter les dates d'utilisation du texte étendu.  
+6. Dans les lignes **Texte**, écrivez le texte étendu pour vos clauses de TVA.  
+7. Cochez les champs appropriés pour les types de documents où vous souhaitez imprimer le texte étendu.  
+8. Fermez la page.  
+
 ## <a name="create-a-vat-posting-setup-to-handle-import-vat"></a>Créer une configuration report TVA pour traiter la TVA à l'importation
 
 Utilisez la fonction *TVA à l’importation* pour reporter un document dont le montant entier est TVA. Elle est utile lorsque vous recevez une facture des autorités fiscales pour la TVA sur les biens importés.  
 
 Pour configurer des codes pour la TVA à l'importation, procédez comme suit :  
 
-1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 12.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Groupes de report produit TVA**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 12.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Groupes de report produit TVA**, puis choisissez le lien associé.  
 2. Sur la page Groupes de report produit TVA, configurez un groupe de report produit TVA pour la TVA à l'importation.  
-3. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 13.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration report TVA**, puis choisissez le lien associé.  
+3. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 13.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration report TVA**, puis choisissez le lien associé.  
 4. Sur la page Configuration report de taxe, créez une ligne ou utilisez un groupe report marché TVA existant en combinaison avec le nouveau groupe report produit TVA créé pour la TVA à l'importation.  
 5. Dans le champ **Mode calcul TVA**, sélectionnez **Exclusivement TVA**.  
 6. Dans le champ **Compte TVA achat**, indiquez le compte général à utiliser pour valider la TVA à l'importation. Tous les autres comptes sont facultatifs.  

@@ -1,6 +1,6 @@
 ---
 title: Configurer des utilisateurs d'approbation
-description: Avant de pouvoir créer des workflows qui impliquent des étapes d’approbation, vous devez configurer les utilisateurs du workflow qui sont impliqués dans les processus d’approbation avec les configurations utilisateur d’approbation.
+description: Avant de pouvoir créer des flux de travail qui impliquent des étapes d’approbation, vous devez configurer les utilisateurs du flux de travail qui sont impliqués dans les processus d’approbation sur la page Configuration utilisateur approbation.
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 663
 ms.date: 06/11/2021
 ms.author: edupont
-ms.openlocfilehash: 7602481a357a9b9e362a7b6fc0d605de04f44537
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: e4bb6345a55eedabdf433dbb84a7bf0c7f64d215
+ms.sourcegitcommit: f1e272485a0e675d337a694aba3e35a5daf43920
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8129217"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9129805"
 ---
 # <a name="set-up-approval-users"></a>Configurer des utilisateurs d'approbation
 
@@ -39,14 +39,14 @@ Avant de pouvoir créer des workflows qui impliquent des étapes d'approbation, 
     |**Code vendeur/acheteur**|Spécifiez le code représentant ou acheteur qui s'applique à l'utilisateur dans le champ **Code représentant/acheteur**.<br /><br /> En général, vous remplissez le champ **Code représentant/acheteur** si le représentant ou l'acheteur responsable pour le client ou le fournisseur, est aussi la personne qui doit approuver la demande vente ou achat en question.|  
     |**ID approbateur**|Sélectionnez le code d'utilisateur qui doit approuver des demandes effectuées par l'utilisateur dans le champ **ID utilisateur**.|  
     |**Montant maximal vente autorisé**|Spécifiez le montant de vente maximal en DS qui peut être approuvé par l'utilisateur dans le champ **ID utilisateur**.|  
-    |**Montant illimité de vente autorisé**|Spécifiez que l'utilisateur dans le champ **ID utilisateur** peut approuver toutes les demandes vente quel que soit leur montant.<br /><br /> Si vous cochez cette case, vous ne pouvez pas renseigner le champ **Montant maximal vente autorisé**.|  
+    |**Montant illimité de vente autorisé**|Spécifiez que l'utilisateur dans le champ **ID utilisateur** peut approuver toutes les demandes vente quel que soit leur montant.<br /><br /> Si vous cochez cette case, vous ne pouvez pas renseigner le champ **Limite d’approbation de montant de vente**.|  
     |**Montant maximal achat autorisé**|Spécifiez le montant d'achat maximal en DS qui peut être approuvé par l'utilisateur dans le champ **ID utilisateur**.|  
-    |**Montant illimité d'achat autorisé**|Spécifiez que l'utilisateur dans le champ **ID utilisateur** peut approuver toutes les demandes achat quel que soit leur montant.<br /><br /> Si vous cochez cette case, vous ne pouvez pas renseigner le champ **Montant maximal vente autorisé**.|  
+    |**Montant illimité d'achat autorisé**|Spécifiez que l'utilisateur dans le champ **ID utilisateur** peut approuver toutes les demandes achat quel que soit leur montant.<br /><br /> Si vous cochez cette case, vous ne pouvez pas renseigner le champ **Limite d’approbation de montant de vente**.|  
     |**Montant maximal demande achat autorisé**|Spécifiez le montant maximal en DS qui peut être approuvé par l'utilisateur pour les devis d'achat dans le champ **ID utilisateur**.<br /><br /> Pour utiliser ce champ, vous devez sélectionner l'option **Chaîne d'approbateurs** dans le champ **Type limite approbateur** sur la page **Réponse de flux de travail**.|  
-    |**Montant illimité de demande d'achat autorisé**|Spécifiez que l'utilisateur dans le champ **ID utilisateur** peut approuver tous les devis d'achat quel que soit leur montant.<br /><br /> Si vous cochez cette case, vous ne pouvez pas renseigner le champ **Montant maximal demande achat autorisé**.|  
-    |**Remplaçant**|Sélectionnez le code d'utilisateur qui doit approuver des demandes effectuées par l'utilisateur dans le champ **ID utilisateur** si l'utilisateur dans le champ **ID approbateur** n'est pas disponible. <br /><br />**Note :** le remplaçant peut être soit l'utilisateur dans le champ **Remplaçant**, l'approbateur direct, soit l'administrateur d'approbation, dans cet ordre de priorité. Pour plus d'informations, reportez-vous à [Utilisation des flux d'approbation](across-how-use-approval-workflows.md).|  
+    |**Montant illimité de demande d'achat autorisé**|Spécifiez que l'utilisateur dans le champ **ID utilisateur** peut approuver tous les devis d'achat quel que soit leur montant.<br /><br /> Si vous cochez cette case, vous ne pouvez pas renseigner le champ **Limite d’approbation de demande d’achat**.|  
+    |**Remplaçant**|Sélectionnez le code d’utilisateur qui doit approuver des demandes effectuées par l’utilisateur dans le champ **Code utilisateur** si l’utilisateur dans le champ **Code approbateur** n’est pas disponible. <br /><br />**Note :** le remplaçant peut être soit l'utilisateur dans le champ **Remplaçant**, l'approbateur direct, soit l'administrateur d'approbation, dans cet ordre de priorité. Pour plus d'informations, reportez-vous à [Utilisation des flux d'approbation](across-how-use-approval-workflows.md).|  
     |**Adresse de messagerie**|Spécifiez l'adresse de messagerie de l'utilisateur dans le champ **ID utilisateur**.|  
-    |**Administrateur approbation**|Spécifiez l'utilisateur qui a des autorisations de débloquer des workflows d'approbation, par exemple, en déléguant les demandes d'approbation à de nouveaux approbateurs remplaçants et en supprimant des demandes d'approbation échues.|
+    |**Administrateur approbation**|Spécifiez l'utilisateur qui a le droit de débloquer le flux de travail approbation. Par exemple, en déléguant les demandes d’approbation à de nouveaux approbateurs remplaçants et en supprimant des demandes d’approbation échues.|
 
     > [!Note]
     > Une seule personne peut être l’administrateur d’approbation.
@@ -54,14 +54,16 @@ Avant de pouvoir créer des workflows qui impliquent des étapes d'approbation, 
 3. Pour tester la configuration utilisateur d'approbation, choisissez l'action **Test config. utilis. d'approbation**.  
 4. Répétez les étapes 2 et 3 pour chaque utilisateur que vous souhaitez configurer en tant qu'utilisateur approbation.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/create-workflows/)
 
-[Configurer des utilisateurs de flux de travail](across-how-to-set-up-workflow-users.md)   
-[Configuration de notifications de workflow](across-setting-up-workflow-notifications.md)   
-[Créer des workflows](across-how-to-create-workflows.md)   
-[Paramétrage des workflows](across-set-up-workflows.md)   
-[Procédure pas à pas : Configuration et utilisation d'un flux d'approbation achat](walkthrough-setting-up-and-using-a-purchase-approval-workflow.md)   
-[Flux de travail](across-workflow.md)   
+## <a name="see-also"></a>Voir aussi .
+
+[Configurer des utilisateurs de flux de travail](across-how-to-set-up-workflow-users.md)  
+[Configuration de notifications de workflow](across-setting-up-workflow-notifications.md)  
+[Créer des workflows](across-how-to-create-workflows.md)  
+[Paramétrage des flux de travail](across-set-up-workflows.md)  
+[Procédure pas à pas : configuration et utilisation d'un flux d'approbation achat](walkthrough-setting-up-and-using-a-purchase-approval-workflow.md)  
+[Flux de travail](across-workflow.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

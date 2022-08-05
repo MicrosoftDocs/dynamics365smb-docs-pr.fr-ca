@@ -7,12 +7,12 @@ ms.service: dynamics365-business-central
 author: edupont04
 ms.author: andreipa
 ms.reviewer: solsen
-ms.openlocfilehash: 83678c6c81b29a524405699425be877459b6568d
-ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
+ms.openlocfilehash: bebdf73fd1b01a3c750a3d91496a8f5bb87f8db4
+ms.sourcegitcommit: f1e272485a0e675d337a694aba3e35a5daf43920
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9075327"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9129651"
 ---
 # <a name="troubleshooting-the-shopify-and-business-central-synchronization"></a>Dépannage de la synchronisation entre Shopify et Business Central
 
