@@ -9,16 +9,16 @@ ms.workload: na
 ms.search.form: 672, 673, 674, 671
 ms.date: 10/01/2021
 ms.author: edupont
-ms.openlocfilehash: 9ed56b0724b19d971b8dc98ea79807423403fd83
-ms.sourcegitcommit: f1e272485a0e675d337a694aba3e35a5daf43920
+ms.openlocfilehash: 081f900836f97d6630608aade4251272ee1a1ff1
+ms.sourcegitcommit: b353f06e0c91aa6e725d59600f90329774847ece
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "9129776"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "9317445"
 ---
 # <a name="use-job-queues-to-schedule-tasks"></a>Utiliser des files d'attente des travaux pour programmer des tâches
 
-Les files d’attente des travaux permettent aux utilisateurs de programmer et d’exécuter des rapports et codeunits spécifiques. Vous pouvez définir des projets à exécuter une fois, ou sur une base récurrente. Par exemple, vous souhaiterez peut-être exécuter le rapport **Statistiques vente * représentant** sur une base hebdomadaire, pour suivre les ventes par représentant chaque semaine, ou exécuter le codeunit **Déléguer les demandes d’approbation** quotidiennement, pour empêcher les documents de s’empiler ou de bloquer le flux de travail.
+Les files d’attente des travaux permettent aux utilisateurs de programmer et d’exécuter des rapports et codeunits spécifiques. Vous pouvez définir des projets à exécuter une fois, ou sur une base récurrente. Par exemple, vous souhaiterez peut-être exécuter le rapport **Représentant –– Statistiques vente** sur une base hebdomadaire, pour suivre les ventes par représentant chaque semaine, ou exécuter le codeunit **Déléguer les demandes d’approbation** quotidiennement, pour empêcher les documents de s’empiler ou de bloquer le flux de travail.
 
 La page **Écritures file d'attente des travaux** répertorie tous les projets existants. Si vous ajoutez une nouvelle écriture de file d’attente de travaux que vous souhaitez programmer, vous devez fournir certaines informations. Par exemple :
 * Le type d'objet que vous souhaitez exécuter, tel qu'un rapport ou une codeunit. Vous devez être autorisé à exécuter le rapport ou la codeunit en question.
