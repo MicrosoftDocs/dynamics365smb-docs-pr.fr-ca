@@ -9,20 +9,20 @@ ms.workload: na
 ms.search.form: 42, 50, 9305, 9307
 ms.date: 12/02/2021
 ms.author: edupont
-ms.openlocfilehash: 97e2e4e63d1a0d694cf881ed1fff8523d50fbb46
-ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
+ms.openlocfilehash: 620a1af0deff6f9615b38706dd3f53f3db285008
+ms.sourcegitcommit: 38b1272947f64a473de910fe81ad97db5213e6c3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9077642"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9362104"
 ---
 # <a name="create-prepayment-invoices"></a>Créer des factures de paiement anticipé
 
-Si vous demandez à vos clients de soumettre le paiement avant de leur livrer une commande, vous pouvez utiliser la fonctionnalité de paiement anticipé. Il en va de même si votre fournisseur vous demande de soumettre un paiement avant de vous livrer une commande.  
+Si vous demandez aux clients de payer avant de livrer leur commande, vous pouvez utiliser les fonctionnalités de paiement anticipé. Il en va de même si votre fournisseur vous demande de payer avant de vous livrer une commande.  
 
 Vous pouvez lancer le traitement du paiement anticipé lorsque vous créez un document vente ou un bon de commande. Si vous avez un pourcentage paiement anticipé par défaut pour un article donné sur la commande ou pour le client ou fournisseur, celui-ci sera automatiquement inclus dans la facture paiement anticipé résultante. Vous pouvez également spécifier un pourcentage paiement anticipé pour l'ensemble du document.
 
-Après avoir créé un document de vente ou un bon de commande, vous pouvez créer une facture paiement anticipé. Vous pouvez utiliser les pourcentages par défaut pour chaque ligne vente ou achat, ou ajuster le montant en fonction si nécessaire. Par exemple, vous pouvez spécifier un montant total pour la commande entière.  
+Après avoir créé un document de vente ou un bon de commande, vous pouvez créer une facture paiement anticipé à lui associer. Utilisez les pourcentages par défaut pour chaque ligne vente ou achat, ou ajustez le montant en fonction si nécessaire. Par exemple, vous pouvez spécifier un montant total pour la commande entière.  
 
 La procédure suivante décrit comment facturer un paiement anticipé pour un document de vente. La procédure est identique pour les bons de commande.  
 
@@ -38,7 +38,7 @@ La procédure suivante décrit comment facturer un paiement anticipé pour un do
     - Elles ont le même compte du grand livre pour les paiements anticipés,comme déterminé par la configuration de report générale.  
     - Elles sont les mêmes dimensions.  
 
-    Si vous souhaitez spécifier une facture paiement anticipé avec une ligne pour chaque ligne document de vente à laquelle un pourcentage de paiement anticipé est associé, alors ne choisissez pas le champ **Compresser paiement anticipé**.  
+    Si vous souhaitez spécifier une facture paiement anticipé avec une ligne pour chaque ligne document de vente à laquelle un pourcentage de paiement anticipé est associé, ne choisissez pas le champ **Compresser paiement anticipé**.  
 
     La date d'échéance du paiement anticipé est calculée automatiquement en fonction de la valeur du **Code modalités de paiement anticipé**.
 
@@ -55,19 +55,23 @@ La procédure suivante décrit comment facturer un paiement anticipé pour un do
 
     Si le champ **Prix TVA comprise** est sélectionné, le champ **Montant acompte TTC** est modifiable.  
 
-    Si vous modifiez la valeur du champ **Montant acompte**, le montant est réparti de façon proportionnelle entre toutes les lignes, à l'exception de celles qui contiennent la valeur **0** dans le champ **% acompte**.  
+    Si vous modifiez la valeur du champ **Montant paiement anticipé**, le montant est réparti de façon proportionnelle entre toutes les lignes, à l’exception de celles qui contiennent la valeur **0** dans le champ **% paiement anticipé**.  
 
 5. Pour effectuer un rapport de test avant de reporter la facture de paiement anticipé, sélectionnez l'action **Paiement anticipé**, puis choisissez **Rapport de test de paiement anticipé**.  
 6. Pour reporter la facture de paiement anticipé, sélectionnez l'action **Paiement anticipé**, puis l'action **Reporter facture paiement anticipé**.  
 
     Pour reporter et imprimer la facture paiement anticipé, choisissez l'action **Reporter et imprimer facture paiement anticipé**.  
 
-Vous pouvez émettre des factures paiement anticipé supplémentaires pour la commande. Pour ce faire, augmentez le montant du paiement anticipé sur une ou plusieurs lignes, ajustez la date document si nécessaire, puis reportez la facture paiement anticipé. Une nouvelle facture est créée pour la différence entre les montants de paiement anticipé facturés jusqu'ici et le nouveau montant de paiement anticipé.  
+Vous pouvez émettre des factures paiement anticipé supplémentaires pour la commande. Pour émettre une autre facture, augmentez le montant du paiement anticipé sur une ou plusieurs lignes, ajustez la date document si nécessaire, puis reportez la facture paiement anticipé. Une nouvelle facture est créée pour la différence entre les montants de paiement anticipé facturés jusqu'ici et le nouveau montant de paiement anticipé.  
 
 > [!NOTE]  
 > Si vous êtes situé en Amérique du Nord, vous ne pouvez pas modifier le pourcentage de paiement anticipé après la facture paiement anticipé reportée. Cela est empêché dans la version nord\-américaine de [!INCLUDE[prod_short](includes/prod_short.md)], car le calcul de la taxe sur les ventes est sinon incorrect.  
 
  Lorsque vous êtes prêt à reporter le reste de la facture, reportez-le comme n'importe quelle facture. Le montant du paiement anticipé est automatiquement déduit du montant dû.  
+
+## <a name="update-the-status-of-prepaid-orders-and-invoices-automatically"></a>Mettre à jour automatiquement l'état des commandes prépayées et des factures
+
+Vous pouvez accélérer le traitement des commandes et des factures en configurant des entrées de file d’attente des travaux qui mettent automatiquement à jour l'état de ces documents. Lorsqu’une facture de paiement anticipé est payée, les entrées de la file d’attente des travaux peuvent changer automatiquement l'état du document de **Paiement anticipé en attente** sur **Validé**. Lorsque vous configurez les entrées de la file d’attente des travaux, les codeunits que vous devrez utiliser sont **383 Mise à jour En attente Paiement anticipé Ventes** et **383 Mise à jour En attente Paiement anticipé Achats**. Nous vous recommandons de programmer les entrées pour qu’elles s’exécutent fréquemment, par exemple, toutes les minutes. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/prepayment-invoices-dynamics-365-business-central/)
 

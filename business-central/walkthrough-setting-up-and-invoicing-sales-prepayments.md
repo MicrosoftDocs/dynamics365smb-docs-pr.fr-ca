@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 12/03/2021
 ms.author: edupont
-ms.openlocfilehash: 0aa467b636be3be75c38c87b2592a69b70440c11
-ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
+ms.openlocfilehash: 1c26882670321a3a2957302413f6f7ebd11a1f6d
+ms.sourcegitcommit: 38b1272947f64a473de910fe81ad97db5213e6c3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9075241"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9362317"
 ---
 # <a name="walkthrough-setting-up-and-invoicing-sales-prepayments"></a>Procédure pas à pas : configuration et facturation de paiements anticipés vente
 
@@ -22,7 +22,7 @@ Cette procédure pas à pas vous guide tout au long du processus de configuratio
 
 [!INCLUDE [prepayment_req](includes/prepayment_req.md)]
 
-Par exemple, vous pouvez également envoyer des factures paiement anticipé supplémentaires si des articles supplémentaires sont ajoutés à la commande.  
+Par exemple, vous pouvez également envoyer plus de factures paiement anticipé si davantage d’articles supplémentaires sont ajoutés à la commande.  
 
 ## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas  
 
@@ -47,7 +47,7 @@ Cette procédure pas à pas inclut les tâches correspondant aux rôles suivants
 
  Phyllis est responsable de la comptabilité. Elle décide des clients qui doivent payer un acompte avant que les articles soient produits ou livrés. Phyllis configure [!INCLUDE[prod_short](includes/prod_short.md)] de façon à calculer automatiquement les acomptes.  
 
- Susan est préparatrice de documents de vente. Lorsque le client appelle pour passer une commande, elle entre la commande dans le système pendant que le client est au téléphone. Elle peut ainsi vérifier immédiatement les prix et les modalités de paiement avec le client et ajuster la commande pendant qu'elle négocie avec le client.  
+ Susan est préparatrice de documents de vente. Lorsque le client appelle pour passer une commande, elle entre la commande dans le système pendant que le client est au téléphone. Elle peut ainsi vérifier immédiatement les prix et les modalités de paiement avec le client et ajuster la commande pendant qu’elle négocie avec le client.  
 
  Arnie travaille dans le département Comptabilité client où sa fonction consiste à reporter les factures et les paiements.  
 
@@ -59,7 +59,7 @@ Cette procédure pas à pas inclut les tâches correspondant aux rôles suivants
 
  Arnie enregistre le paiement du client et l'affecte à la facture, puis envoie la facture finale.  
 
-## <a name="setting-up-prepayments"></a>Configuration d'acomptes
+## <a name="set-up-prepayments"></a>Configuration des acomptes
 
 Phyllis configure le système afin qu'il gère les acomptes des clients.  
 
@@ -79,11 +79,11 @@ Les procédures suivantes décrivent le mode d'exécution des tâches de Phyllis
 
 1. Sur la page **Configuration ventes & à recevoir**, sur le raccourci **Général**, cochez la case **Vérifier les acomptes lors du report**.
 
-Vous ne pouvez pas livrer ou facturer une commande dont le montant de paiement anticipé n'a pas été réglé.  
+Vous ne pouvez pas livrer ou facturer une commande dont le montant de paiement anticipé n’est pas réglé.  
 
 Par défaut, Phyllis requiert que le client 20000 soit facturé avec un acompte de 30 % sur toutes les commandes. Pour cela, elle entre un pourcentage de paiement anticipé par défaut dans la fiche client.  
 
-Phyllis requiert que tous les clients soient facturés avec un acompte de 20 % pour l’article 1896-S. Le client 20000 a un mauvais historique de paiements. Par conséquent, elle demande un paiement anticipé de 40 % au client 20000 pour l’article 1896-S. La procédure suivante présente le mode de configuration des pourcentages de paiement anticipé par défaut.  
+Phyllis requiert que tous les clients soient facturés avec un acompte de 20 % pour l’article 1896-S. Le client 20000 a un mauvais historique des paiements, c’est pourquoi elle requiert un paiement anticipé de 40 % pour ce client pour l’article 1896-S. La procédure suivante présente le mode de configuration des pourcentages de paiement anticipé par défaut.  
 
 ### <a name="to-assign-default-prepayment-percentages-to-customers-and-items"></a>Pour affecter des pourcentages de paiement anticipé par défaut aux clients et aux articles
 
@@ -112,11 +112,11 @@ Phyllis requiert que tous les clients soient facturés avec un acompte de 20 % 
 > [!TIP]
 > Si vous ne pouvez pas voir le champ de la page **Configuration du report général**, utilisez la barre de défilement horizontale au bas de la page pour faire défiler l’affichage vers la droite.  
 
-## <a name="creating-an-order-that-requires-a-prepayment"></a>Création d'une commande nécessitant un paiement anticipé
+## <a name="create-an-order-that-requires-a-prepayment"></a>Création d’une commande nécessitant un paiement anticipé
 
- Dans le scénario suivant, Susan, la préparatrice des commandes, crée une commande en discutant avec le client. Les articles que le client commande nécessitent un paiement anticipé et le client a connu des retards de paiement par le passé. Susan a donc reçu l’ordre de demander un montant fixe de **800** comme paiement anticipé sur la commande.  
+ Dans le scénario suivant, Susan, la préparatrice des commandes, crée une commande en discutant avec le client. Les articles commandés par le client nécessitent un paiement anticipé. De plus, le client a effectué des paiements en retard dans le passé. Susan a reçu l’ordre de demander un montant fixe de **800** comme paiement anticipé sur la commande.  
 
-Le client demande à pouvoir payer 35 %, ce que Susan peut accepter. Elle modifie donc la commande.  
+Le client demande à payer 35 %. Susan accepte et modifie la commande en conséquence.  
 
 Susan crée la facture paiement anticipé et l'envoie au client.  
 
@@ -133,15 +133,15 @@ Susan crée la facture paiement anticipé et l'envoie au client.
     |**Article**|**1896-S**|**1**|  
     |**Article**|**1900-S**|**1**|
 
-    Par défaut, les champs du paiement anticipé étant masqués, vous devez les afficher. Pour cela, vous devez personnaliser la page. Pour plus d’informations, consultez [Commencer à personnaliser une page au moyen de la bannière Personnalisation](ui-personalization-user.md#to-start-personalizing-a-page-through-the-personalizing-banner).
+    Par défaut, les champs du paiement anticipé sont masqués. Pour afficher les champs vous devez personnaliser la page. Pour plus d’informations, consultez [Commencer à personnaliser une page au moyen de la bannière Personnalisation](ui-personalization-user.md#to-start-personalizing-a-page-through-the-personalizing-banner).
 
 6. Vérifiez que le champ **% paiement anticipé** de la ligne correspondant à l’article **1900-S** a pour valeur **30**. La valeur par défaut a été prise dans l'en-tête vente, qui a été renseigné à partir de la fiche client.  
 
-    Le champ **% paiement anticipé** de la ligne correspondant à l’article **1896-S** a pour valeur **40**. Il s’agit du pourcentage que vous avez entré sur la page **Pourcentages paiement anticipé vente** pour l’article **1896-S** et le client **20000**.  
+    Le champ **% paiement anticipé** de la ligne correspondant à l’article **1896-S** a pour valeur **40**. 40 désigne le pourcentage que vous avez entré sur la page **Pourcentages paiement anticipé vente** pour l’article **1896-S** et le client **20000**.  
 
     Pour plus d'informations, reportez\-vous à [Configuration des acomptes](finance-set-up-prepayments.md).  
 7. Dans l’action **Ordre**, choisissez **Statistiques**.  
-8. Sur le raccourci **Paiement anticipé**, le champ **Montant paiement anticipé HT** indique **458,16**. Si vous créez une facture paiement anticipé pour la commande dès maintenant, c'est le montant qui s'affiche sur la facture.  
+8. Sur le raccourci **Paiement anticipé**, le champ **Montant paiement anticipé HT** indique **458,16**. Si vous créez une facture paiement anticipé pour la commande dès maintenant, 458,16 est le montant qui s’affiche sur la facture.  
 
     Dans ce scénario, Susan a reçu des instructions lui demandant de proposer un paiement anticipé total de **800** pour la commande.  
 
@@ -157,7 +157,7 @@ Susan crée la facture paiement anticipé et l'envoie au client.
 12. Dans l'avertissement qui s'affiche, cliquez sur le bouton **Oui** . Un taux de 35 % sera affecté comme pourcentage du paiement de l'ensemble de la commande.  
 13. Vérifiez que les lignes ont été mises à jour en conséquence.  
 
-## <a name="creating-a-prepayment-invoice"></a>Création d'une facture paiement anticipé
+## <a name="create-a-prepayment-invoice"></a>Créer une facture paiement anticipé
 
 Après avoir entré la valeur de paiement anticipé correcte sur la commande, Susan crée la facture paiement anticipé et l'envoie au client.  
 
@@ -169,22 +169,22 @@ Après avoir entré la valeur de paiement anticipé correcte sur la commande, Su
 > [!NOTE]  
 > Susan doit maintenant envoyer la facture au client.  
 
-## <a name="creating-an-additional-prepayment-invoice"></a>Création d'une facture paiement anticipé supplémentaire
+## <a name="create-an-additional-prepayment-invoice"></a>Créer une facture paiement anticipé supplémentaire
 
-Le jour suivant, le client appelle Susan et modifie sa commande. Il souhaite deux exemplaires de l’article 1896-S. Susan rouvre et met à jour la commande, puis crée une seconde facture paiement anticipé sur la commande et l'envoie au client.  
+Le jour suivant, le client appelle Susan et modifie sa commande. Il souhaite deux exemplaires de l’article 1896-S. Susan rouvre la commande et la met à jour. Susan crée ensuite une seconde facture paiement anticipé pour la commande et l’envoie au client.  
 
 ### <a name="to-create-an-additional-prepayment-invoice"></a>Pour créer une facture paiement anticipé supplémentaire
 
 1. Sur la page **Document de vente**, choisissez l’action **Libérer**, puis **Rouvrir**  
 2. Sur la ligne de l’article **1896-S**, dans le champ **Quantité**, entrez **2**.  
 
-    Dans l’action **Ordre**, choisissez **Statistiques**. Le champ **Montant paiement anticipé HT** indique à présent **768,04** et le champ **Montant fact. paiement anticipé HT** indique **417,76**. Ceci indique qu'il existe un montant de paiement anticipé supplémentaire qui n'a pas encore été facturé.  
-3. Pour reporter une facture pour le montant de paiement anticipé supplémentaire, choisissez **Actions**, puis **Report**, puis **Paiement anticipé**, puis **Reporter et imprimer facture paiement anticipé**.
+    Dans l’action **Ordre**, choisissez **Statistiques**. Le champ **Montant paiement anticipé HT** indique à présent **768,04** et le champ **Montant fact. paiement anticipé HT** indique **417,76**. Ces valeurs indiquent qu’il existe un montant de paiement anticipé supplémentaire qui n’a pas encore été facturé.  
+3. Pour reporter une facture pour le montant de paiement anticipé supplémentaire, choisissez **Actions**, puis **Report**, puis **Paiement anticipé**, puis **Reporter et imprimer facture paiement anticipé**
 4. Choisissez le bouton **Oui** pour reporter la facture.  
 
-## <a name="applying-the-prepayments"></a>Affectation des paiements anticipés
+## <a name="apply-the-prepayments"></a>Affecter les paiements anticipés
 
-Le client paie le montant des paiements anticipés. Arnie, qui travaille au département Comptabilité, enregistre le paiement et l'affecte aux factures paiement anticipé.  
+Le client paie le montant du paiement anticipé. Arnie, du service comptabilité, enregistre le paiement et l'affecte aux factures de paiement anticipé.  
 
 ### <a name="to-apply-a-payment-to-the-prepayment-invoices"></a>Pour affecter un paiement aux factures paiement anticipé
 
@@ -206,7 +206,7 @@ Le client paie le montant des paiements anticipés. Arnie, qui travaille au dép
 7. Pour reporter le journal, choisissez l’action **Reporter/Imprimer**, puis sélectionnez **Reporter**.
 8. Cliquez sur le bouton **Oui**.
 
-## <a name="invoicing-the-remaining-amount"></a>Facturation du montant ouvert
+## <a name="invoice-the-remaining-amount"></a>Facturer le montant ouvert
 
 Arnie a été informé que les articles de la commande ont été livrés et que la commande est prête pour facturation. Il crée donc la facture correspondante.  
 
@@ -224,13 +224,22 @@ Arnie a été informé que les articles de la commande ont été livrés et que 
 
 5. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures vente reportées**, puis sélectionnez le lien associé.  
 
+## <a name="update-the-status-of-prepaid-orders-and-invoices-automatically"></a>Mettre à jour automatiquement l'état des commandes prépayées et des factures
+
+Vous pouvez accélérer le traitement des commandes et des factures en configurant des entrées de file d’attente des travaux qui mettent automatiquement à jour l'état de ces documents. Lorsqu’une facture de paiement anticipé est payée, les entrées de la file d’attente des travaux peuvent changer automatiquement l'état du document de **Paiement anticipé en attente** sur **Validé**. Lorsque vous configurez les entrées de la file d’attente des travaux, les codeunits que vous devrez utiliser sont **383 Mise à jour En attente Paiement anticipé Ventes** et **383 Mise à jour En attente Paiement anticipé Achats**. Nous vous recommandons de programmer les entrées pour qu’elles s’exécutent fréquemment, par exemple, toutes les minutes. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
+
 ## <a name="next-steps"></a>Étapes suivantes
 
-Cette procédure pas-à-pas vous a présenté les étapes de configuration de [!INCLUDE[prod_short](includes/prod_short.md)] pour la gestion des acomptes. Vous avez configuré des pourcentages de paiement anticipé par défaut pour des clients et des articles et vous avez également utilisé différentes méthodes pour calculer les paiements anticipés d'une commande. Vous avez essayé d'affecter un montant de paiement anticipé total à la commande et vous avez enregistré le montant paiement anticipé calculé en tant que pourcentage de l'ensemble de la commande.  
+Cette procédure pas-à-pas vous a présenté les étapes de configuration de [!INCLUDE[prod_short](includes/prod_short.md)] pour la gestion des paiements anticipés. 
+
+- Configurez les pourcentages de paiement anticipé par défaut sur les clients et les articles.
+- Utilisez différentes méthodes pour calculer les paiements anticipés sur une commande.  
+- Calculez le montant du paiement anticipé en pourcentage du total de la commande.
+- Attribuez un montant total de paiement anticipé à la commande.  
 
 Vous avez également reporté une facture paiement anticipé, créé une deuxième lorsque la commande est modifiée, et reporté la facture finale pour le montant ouvert.  
 
-La fonctionnalité d'acompte de [!INCLUDE[prod_short](includes/prod_short.md)] facilite la configuration et la mise en place de règles d'acompte pour les clients et les articles. Elle vous permet également de valider tous les paiements d'une facture.  
+Les fonctionnalités de paiement anticipé facilitent la configuration et l’application des règles de paiement anticipé pour les clients et les articles. Ils vous permettent également de reporter chaque paiement sur une facture.  
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/prepayment-invoices-dynamics-365-business-central/)
 

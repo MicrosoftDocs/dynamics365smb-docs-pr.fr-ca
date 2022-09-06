@@ -296,6 +296,7 @@
 #### [Bloquer des clients](receivables-how-block-customers.md)
 #### [Utilisation des tolérances de règlement et des tolérances d'escompte de paiement](finance-payment-tolerance-and-payment-discount-tolerance.md)
 #### [Extension Prévisions de retard de paiement](ui-extensions-late-payment-prediction.md)
+#### [Taxe de vente dans la version par défaut de Business Central](sales-tax-concept.md)
 
 ### Gérer des comptes fournisseur
 #### [Vue d’ensemble de la comptabilité fournisseur](payables-manage-payables.md)

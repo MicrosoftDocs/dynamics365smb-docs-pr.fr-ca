@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 118, 314, 395
 ms.date: 10/29/2021
 ms.author: edupont
-ms.openlocfilehash: 6619789b38cc8dc33e7985f35d77075df4914ad2
-ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
+ms.openlocfilehash: 3d7162b3035188539fba92a677659dd7803c340f
+ms.sourcegitcommit: 38b1272947f64a473de910fe81ad97db5213e6c3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9074936"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9362032"
 ---
 # <a name="work-with-payment-tolerances-and-payment-discount-tolerances"></a>Utilisation des tolérances de règlement et des tolérances d'escompte de paiement
 
@@ -30,7 +30,7 @@ Un document unique comporte la même tolérance de règlement, qu'il soit affect
 
 *date d'escompte < date de règlement dans l'écriture sélectionnée <= date d'écart de règlement*  
 
-Cette règle détermine également la nécessité d'afficher des alertes lorsque vous affectez la tolérance de règlement à plusieurs documents. L'avertissement lié à la tolérance d'escompte de paiement s'affiche pour chaque écriture répondant aux critères de date. Pour plus d'informations, voir [Exemple 2 - Calculs de la tolérance pour plusieurs documents](finance-payment-tolerance-and-payment-discount-tolerance.md#example-2---tolerance-calculations-for-multiple-documents).
+Cette règle détermine également la nécessité d’afficher des alertes lorsque vous appliquez la tolérance de règlement à plusieurs documents. L’alerte liée à la tolérance d’escompte de paiement s’affiche pour chaque écriture répondant aux critères de date. Pour plus d'informations, voir [Exemple 2 - Calculs de la tolérance pour plusieurs documents](finance-payment-tolerance-and-payment-discount-tolerance.md#example-2---tolerance-calculations-for-multiple-documents).
 
 Vous pouvez afficher une alerte en fonction des situations relatives à la tolérance.  
 
@@ -44,7 +44,7 @@ Pour plus d'informations, voir [Pour activer ou désactiver l'avertissement de t
 
 ## <a name="to-set-up-tolerances"></a>Pour configurer les tolérances
 
-Le fait de configurer des tolérances pour la date ou le montant permet de fermer une facture alors que le règlement ne couvre pas le montant indiqué sur la facture, que ce soit parce que la date d'échéance de l'escompte de paiement est dépassée ou que des marchandises ont été déduites, ou suite à une erreur anodine. Ceci est également vrai pour les remboursements et les notes de crédit.  
+La tolérance au niveau des jours et des montants vous permet de fermer une facture même si le paiement ne couvre pas entièrement le montant de la facture. Par exemple, parce que la date d’échéance de l’escompte de paiement a été dépassée, des marchandises ont été déduites ou à cause d’une erreur mineure. Ceci est également vrai pour les remboursements et les notes de crédit.  
 
 Pour configurer l'écart, vous devez configurer plusieurs comptes écart, spécifier des méthodes de comptabilisation d'écart escompte et d'écart règlement, puis exécuter le traitement par lots **Modifier écart de règlement**.  
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du report général**, puis choisissez le lien associé.  
@@ -57,17 +57,21 @@ Pour configurer l'écart, vous devez configurer plusieurs comptes écart, spéci
 8. Ouvrez la page **Configuration du grand livre**.  
 9. Sur le raccourci **Affectation**, renseignez les champs **Report tolérance d’escompte de paiement**, **Période carence escompte de paiement** et **Report tolérance de règlement**.   
 10. Choisissez l'action **Modifier la tolérance de règlement**.
+
+    > [!NOTE]
+    > Lorsque vous sélectionnez **Au plus ancien** dans le champ **Mode d'affectation** sur une page **Fiche client**, [!INCLUDE[prod_short](includes/prod_short.md)] n’affichera pas automatiquement les tolérances de règlement, même lorsqu’elles sont dans les seuils définis sur la page **Configuration du grand livre**. [!INCLUDE[prod_short](includes/prod_short.md)] suppose que le paramètre Au plus ancien indique que le client (ou vous en tant que client de votre fournisseur) a un compte chez vous où il paie régulièrement le solde. Par conséquent, les montants restants ne doivent pas être supprimés en reportant une écriture tolérance de règlement.
+
 11. Sur la page **Modifier tolérance de règlement**, renseignez les champs **% tolérance de règlement** et **Montant tolérance de règlement max.**, puis cliquez sur le bouton **OK**.
 
 > [!IMPORTANT]  
->  Vous n'avez configuré la tolérance que pour la devise locale. Si vous souhaitez que [!INCLUDE[prod_short](includes/prod_short.md)] gère la tolérance pour les paiements, les notes de crédit et les remboursements en devise étrangère, vous devez exécuter le traitement en lot **Modifier la tolérance de paiement** avec une valeur dans le champ **Code devise**.  
+> Vous n'avez configuré la tolérance que pour la devise locale. Si vous souhaitez que [!INCLUDE[prod_short](includes/prod_short.md)] gère la tolérance pour les paiements, les notes de crédit et les remboursements en devise étrangère, vous devez exécuter le traitement en lot **Modifier la tolérance de paiement** avec une valeur dans le champ **Code devise**.  
 
 > [!NOTE]  
->  Si vous souhaitez recevoir une alerte tolérance de règlement chaque fois que vous reportez une affectation dans la tolérance, vous devez activer l'avertissement tolérance de règlement. Pour plus d'informations, voir [Pour activer ou désactiver l'avertissement de tolérance de règlement](finance-payment-tolerance-and-payment-discount-tolerance.md#to-enable-or-disable-payment-tolerance-warnings).  
+> Pour recevoir une alerte tolérance de règlement chaque fois que vous reportez une affectation dans la tolérance, vous devez activer l’alerte tolérance de règlement. Pour plus d'informations, voir [Pour activer ou désactiver l'avertissement de tolérance de règlement](finance-payment-tolerance-and-payment-discount-tolerance.md#to-enable-or-disable-payment-tolerance-warnings).  
 >   
->  Pour désactiver la tolérance pour un client ou un fournisseur, vous devez bloquer les tolérances sur la fiche client ou fournisseur correspondante. Pour plus d'informations, voir [Pour bloquer la tolérance de règlement pour des clients](finance-payment-tolerance-and-payment-discount-tolerance.md#to-block-payment-tolerance-for-customers).  
+> Pour désactiver la tolérance pour un client ou un fournisseur, bloquez les tolérances sur la fiche client ou fournisseur correspondante. Pour plus d'informations, voir [Pour bloquer la tolérance de règlement pour des clients](finance-payment-tolerance-and-payment-discount-tolerance.md#to-block-payment-tolerance-for-customers).  
 >   
->  Lorsque vous configurez une tolérance, [!INCLUDE[prod_short](includes/prod_short.md)] vérifie s'il existe des écritures ouvertes et calcule la tolérance pour ces écritures.
+> Lorsque vous configurez une tolérance, [!INCLUDE[prod_short](includes/prod_short.md)] vérifie s'il existe des écritures ouvertes et calcule la tolérance pour ces écritures.
 
 ## <a name="to-enable-or-disable-payment-tolerance-warnings"></a>Pour activer ou désactiver les alertes de tolérance de règlement
 
@@ -76,7 +80,7 @@ L'avertissement de tolérance de règlement apparaît lorsque vous reportez une 
 2. Sur la page **Configuration du grand livre**, sur le raccourci **Application**, activez le bouton bascule **Alerte tolérance de règlement** pour activer l'alerte. Pour désactiver l'avertissement, désactivez le bouton bascule.  
 
 > [!NOTE]  
->  L'option par défaut de la page **Alerte tolérance de règlement** est **Laisser le solde ouvert**. L’option par défaut de la page **Alerte tolérance d’escompte de paiement** est **Ne pas accepter d’escompte de paiement en retard**.
+> L'option par défaut de la page **Alerte tolérance de règlement** est **Laisser le solde ouvert**. L’option par défaut de la page **Alerte tolérance d’escompte de paiement** est **Ne pas accepter d’escompte de paiement en retard**.
 
 ## <a name="to-block-payment-tolerance-for-customers"></a>Pour bloquer la tolérance de règlement pour des clients
 
@@ -86,7 +90,7 @@ Par défaut, une tolérance de règlement est accordée. Pour ne pas accorder un
 2. Sur le raccourci **Paiements**, cochez la case **Bloquer écart de règlement**.  
 
 > [!NOTE]  
->  Si le client ou le fournisseur possède des écritures ouvertes, vous devez d'abord supprimer la tolérance de règlement des écritures actuellement ouvertes.
+> Si le client ou le fournisseur possède des écritures ouvertes, vous devez d'abord supprimer la tolérance de règlement des écritures actuellement ouvertes.
 
 ## <a name="example-1---tolerance-calculations-for-a-single-document"></a>Exemple 1 - Calculs de la tolérance pour un seul document
 
@@ -136,7 +140,7 @@ Règles d'affectation normales
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
-(2) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.  
+(2) Si le paiement intervient dans l’une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.  
 
 #### <a name="2-payment-date-is-between-011603-and-012003-scenarios-4-9"></a>(2) La date de règlement est comprise entre le 16/01/03 et le 20/01/03 (scénarios 4-9).
 
@@ -148,7 +152,7 @@ Règles d'affectation normales
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
-(2) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.  
+(2) Si le paiement intervient dans l’une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.  
 
 #### <a name="3-payment-date-is-after-012003-scenarios-10-15"></a>(3) La date de règlement est située après le 20/01/03 (scénarios 10-15).
 
@@ -164,7 +168,7 @@ Règles d'affectation normales
 
 ## <a name="example-2---tolerance-calculations-for-multiple-documents"></a>Exemple 2 - Calculs de la tolérance pour plusieurs documents
 
-Voici quelques exemples de scénarios illustrant les calculs et reports de tolérance qui sont effectués dans différentes situations. Ces exemples sont simplement des scénarios qui entraînent la fermeture de toutes les écritures dans l'application.  
+Voici quelques exemples de scénarios illustrant les calculs et reports de tolérance qui sont effectués dans différentes situations. Ces exemples se limitent aux scénarios qui entraînent la fermeture de toutes les écritures dans l'application.  
 
 La page **Configuration du grand livre** contient la configuration suivante :
 - Délai de grâce escompte de paiement 5D  
@@ -224,7 +228,7 @@ Règles d'affectation normales
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
-(2) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.  
+(2) Si le paiement intervient dans l’une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.  
 
 #### <a name="2-payment-date-is-between-011603-and-011703-scenarios-4-9"></a>(2) La date de règlement est comprise entre le 16/01/03 et le 17/01/03 (scénarios 4-9).
 
@@ -236,7 +240,7 @@ Règles d'affectation normales
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
-(2) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.  
+(2) Si le paiement intervient dans l’une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.  
 
 #### <a name="3-payment-date-is-between-011803-and-012003-scenarios-10-21"></a>(3) La date de règlement est comprise entre le 18/01/03 et le 20/01/03 (scénarios 10-21).
 
@@ -248,7 +252,7 @@ Règles d'affectation normales
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
-(2) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.  
+(2) Si le paiement intervient dans l’une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.  
 
 #### <a name="4-payment-date-is-between-012103-and-012203-scenarios-22-27"></a>(4) La date de règlement est comprise entre le 21/01/03 et le 22/01/03 (scénarios 22-27).
 
@@ -260,7 +264,7 @@ Règles d'affectation normales
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
-(2) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.  
+(2) Si le paiement intervient dans l’une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.  
 
 #### <a name="5-payment-date-is-after-012203-scenarios-28-30"></a>(5) La date de règlement est située après le 22/01/03 (scénarios 28-30).
 
@@ -272,7 +276,7 @@ Règles d'affectation normales
 
 (1) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation peuvent être fermées avec ou sans tolérance.  
 
-(2) Si le paiement intervient dans l'une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.
+(2) Si le paiement intervient dans l’une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/enter-payments-dynamics-365-business-central/)
 

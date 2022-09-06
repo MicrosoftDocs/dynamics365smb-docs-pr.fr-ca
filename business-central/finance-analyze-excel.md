@@ -5,33 +5,42 @@ author: edupont04
 ms.topic: overview
 ms.search.keywords: accountant, accounting, financial report
 ms.search.form: 9027
-ms.date: 04/01/2021
+ms.date: 08/23/2022
 ms.author: edupont
-ms.openlocfilehash: db9701317d43464378ccf557dd6a77c41a681bd8
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 43b5a4181b50da65f25be3f3fc73a0e01fd885af
+ms.sourcegitcommit: 38b1272947f64a473de910fe81ad97db5213e6c3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8516962"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9361772"
 ---
 # <a name="analyzing-financial-statements-in-microsoft-excel"></a>Analyse des états financiers dans Microsoft Excel
 
-Dans [!INCLUDE [prod_short](includes/prod_short.md)], vous pouvez visualiser les KPI et obtenir des aperçus de l'état financier de la compagnie. Vous pouvez également ouvrir des listes dans Excel et analyser les données afférentes. De plus, vous pouvez exporter des relevés financiers volumineux, tels que le bilan ou l'état des résultats vers Excel, analyser les données et imprimer les rapports.  
+[!INCLUDE [prod_short](includes/prod_short.md)] fournit des KPI et obtient des aperçus des finances de votre compagnie. Voici des exemples de façons d’analyser les KPI et les aperçus dans Excel :
 
-Dans les tableaux de bord Gestionnaire d'utilisation et Comptable, vous pouvez choisir les états financiers à afficher dans Excel à partir d'un menu déroulant dans la section Rapports pour personnaliser le ruban. Lorsque vous sélectionnez un état, il est ouvert dans Excel ou Excel Online. Un complément connecte les données à [!INCLUDE [prod_short](includes/prod_short.md)]. Cependant, vous devez vous connecter avec le même compte que celui utilisé avec [!INCLUDE [prod_short](includes/prod_short.md)].  
+* Ouvrez des listes dans Excel et analysez les données. 
+* Exportez des états financiers volumineux, tels que votre bilan ou votre état des résultats, dans Excel, analysez les données et imprimez les rapports.  
+
+> [!TIP]
+> Par défaut, les rapports que vous pouvez visualiser dans Excel sont conçus pour vous aider à analyser l’année en cours. Le rapport État des résultats fait toutefois exception. Ce rapport vous permet de filtrer les données pour inclure les années précédentes dans vos analyses.
 
 ## <a name="getting-the-overview-and-the-details-in-excel"></a>Affichage de l'aperçu et des détails dans Excel
 
-Dans le ruban, sélectionnez le rapport Excel approprié, et laissez-le ouvert afin d'accéder à l'aperçu que vous recherchiez. Dans cette version de [!INCLUDE [prod_short](includes/prod_short.md)], nous proposons les rapports Excel suivants :
+Dans les tableaux de bord Gestionnaire d’activité et Comptable, l’action **Rapports** vous permet de choisir les états financiers à afficher dans Excel. Lorsque vous sélectionnez un état, il est ouvert dans Excel ou Excel Online. Un complément connecte les données à [!INCLUDE [prod_short](includes/prod_short.md)]. Cependant, vous devez vous connecter avec le même compte que celui utilisé avec [!INCLUDE [prod_short](includes/prod_short.md)]. Le tableau suivant répertorie les rapports et indique où ils sont disponibles.  
 
-- Bilan  
-- État des résultats  
-- Déclaration de trésorerie  
-- Déclaration de réserves  
-- Comptes fournisseurs classés chronologiquement  
-- Comptabilité client classée chronologiquement  
 
-Supposons que vous souhaitiez analyser en profondeur votre trésorerie. Depuis les tableaux de bord Gestionnaire d’activité et Comptable, vous pouvez ouvrir le rapport **Déclaration de trésorerie** dans Excel, mais en réalité, nous exportons les données appropriées pour vous et créons un classeur Excel sur la base d’un modèle prédéfini. Selon votre navigateur, vous pouvez être invité à ouvrir ou enregistrer le classeur.  
+|Déclarer  |Tableau de bord  |
+|---------|---------|
+|Bilan                 | Gestionnaire d’activité, Comptable |
+|Compte de résultat              | Gestionnaire d’activité, Comptable |
+|Déclaration des trésoreries       | Gestionnaire d’activité, Comptable |
+|Déclaration des réserves| Gestionnaire d’activité, Comptable |
+|Sales Taxes collectées         | Gestionnaire d’activité, Comptable |
+|Relevés client           | Gestionnaire d’activité, Comptable |
+|Comptabilité fournisseur chronologique         | Comptable |
+|Comptabilité client âgée      | Comptable |
+
+Supposons que vous souhaitiez analyser en profondeur votre trésorerie. Depuis les tableaux de bord Gestionnaire d’activité et Comptable, vous pouvez ouvrir le rapport **Déclaration de trésoreries** dans Excel, mais en réalité, nous exportons les données appropriées pour vous et créons un classeur Excel sur la base d’un modèle prédéfini. Selon votre navigateur, vous pouvez être invité à ouvrir ou enregistrer le classeur.  
 
 Dans Excel, vous pouvez voir un onglet où les données sont présentées sur la première feuille. Toutes les données qui ont été exportées sont également présentes dans d'autres feuilles en cas de besoin. Vous pouvez imprimer le rapport tel qu'il est, ou vous pouvez le modifier jusqu'à ce que vous ayez l'aperçu et les détails que vous souhaitez. Utilisez le complément [!INCLUDE [prod_short](includes/prod_short.md)] pour Excel afin de mieux filtrer et analyser les données.  
 
@@ -39,13 +48,13 @@ Dans Excel, vous pouvez voir un onglet où les données sont présentées sur la
 
 Les rapports Excel prédéfinis sont basés sur les données de la compagnie actuelle. Par exemple, la compagnie de démonstration a mis en place le plan comptable pour répertorier trois comptes règlement sous *Actifs actuels* : 10100 **Compte chèque**, 10200 **Compte épargne** et 10300 **Fonds de caisse**. Les comptes ont le champ **Sous-catégorie de compte** défini sur *Espèces*, et c’est leur montant combiné qui apparaît comme *Espèces* dans le rapport Excel **Bilan**.  
 
-Des feuilles supplémentaires dans le classeur Excel affichent les données derrière le rapport. Mais pour savoir ce qui se cache derrière les regroupements dans les rapports Excel, vous devrez peut-être revenir à [!INCLUDE [prod_short](includes/prod_short.md)] et appliquer des filtres aux listes, par exemple.  
+D’autres feuilles dans le classeur Excel affichent les données de référence du rapport. Pour savoir ce qui se cache derrière les regroupements dans les rapports Excel, vous devrez peut-être filtrer les listes dans [!INCLUDE [prod_short](includes/prod_short.md)].  
 
 ## <a name="the-prod_short-excel-add-in"></a>Module complémentaire [!INCLUDE [prod_short](includes/prod_short.md)] pour Excel
 
-Votre expérience [!INCLUDE [prod_short](includes/prod_short.md)] inclut un complément pour Excel. Selon votre abonnement, vous êtes connecté automatiquement, ou vous devez spécifier les mêmes détails d'ouverture de session utilisés pour [!INCLUDE [prod_short](includes/prod_short.md)]. Pour plus d’informations, voir [Affichage et édition dans Excel depuis Business Central](across-work-with-excel.md).  
+Votre expérience [!INCLUDE [prod_short](includes/prod_short.md)] inclut un complément pour Excel. Selon votre abonnement, vous êtes connecté automatiquement, ou vous devez spécifier les mêmes informations de connexion utilisées pour [!INCLUDE [prod_short](includes/prod_short.md)]. Pour plus d’informations, voir [Affichage et édition dans Excel depuis Business Central](across-work-with-excel.md).  
 
-Le complément vous permet d'obtenir des données actualisées à partir de [!INCLUDE [prod_short](includes/prod_short.md)] et d'appliquer les modifications à [!INCLUDE [prod_short](includes/prod_short.md)]. Toutefois, la possibilité de transférer les données vers la base de données est désactivée pour les rapports financiers Excel dans la liste ci-dessus.  
+Le module complémentaire vous permet d’obtenir des données actualisées à partir de [!INCLUDE [prod_short](includes/prod_short.md)] et d’appliquer les modifications à [!INCLUDE [prod_short](includes/prod_short.md)]. Toutefois, la possibilité de transférer les données vers la base de données n'est pas disponible pour les rapports financiers que vous affichez dans Excel.  
 
 ## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/configure-powerbi-excel-dynamics-365-business-central/index)
 

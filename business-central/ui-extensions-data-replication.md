@@ -6,16 +6,17 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms. search.keywords: app, add-in, manifest, customize, import, implement
+ms.search.keywords: app, add-in, manifest, customize, import, implement
+ms.search.form: 4021, 4026, 4031, 4090, 4091, 4092, 4093, 4094, 4095, 4096, 4097, 40027,
 ms.reviewer: edupont
 ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: 5c18605da5ba115f39d46c317eaf51278c8948cf
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: e04a5ba015914a39c87a9966c317a7b5f1e3d55a
+ms.sourcegitcommit: 38b1272947f64a473de910fe81ad97db5213e6c3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8129979"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9361976"
 ---
 # <a name="cloud-migration-extensions-for-migrating-to-business-central-online"></a>Extensions de migration vers le nuage pour la migration vers Business Central Online
 
@@ -40,7 +41,7 @@ Si vous utilisez Dynamics GP, obtenez les extensions **Base du nuage intelligen
 
 Si vous utilisez Dynamics SL, obtenez l'extension **Base du nuage intelligent**, l'extension **Nuage intelligent Microsoft Dynamics SL** et l'extension **SmartLists historiques Microsoft Dynamics SL**, puis exécutez le guide de configuration assistée **Configuration de la migration nuage**.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi .
 
 [Extension Base de migration vers le nuage](ui-extensions-intelligent-cloud.md)  
 [Migration des données locales vers Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-data)  
