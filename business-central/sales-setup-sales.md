@@ -10,12 +10,12 @@ ms.search.keywords: trade, sell, configure
 ms.search.form: 170, 172, 300, 301, 428, 456, 459, 1401
 ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: 0155698120705f637714242500aa77a5a20a80bf
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 4e34a21fc06c8c880e124db4040c088e4d235ffb
+ms.sourcegitcommit: 8b95e1700a9d1e5be16cbfe94fdf7b660f1cd5d7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8510723"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460816"
 ---
 # <a name="setting-up-sales"></a>Définition des ventes.
 Avant de pouvoir gérer les processus vente, vous devez configurer les règles et valeurs qui définissent les stratégies de vente de la compagnie.
@@ -33,7 +33,7 @@ La configuration des ventes en relation avec les finances, comme les modes de r�
 | Entrer les différentes remises et prix spéciaux accordés aux clients en fonction de l'article, des quantités et/ou de la date. |[Enregistrement des prix de vente, des remises et des accords sur les paiements](sales-how-record-sales-price-discount-payment-agreements.md) |
 | Configurer les représentants de sorte à pouvoir les affecter aux contacts client ou à évaluer les performances des représentants et vous en servir comme base pour calculer la commission et les bonus. |[Configurer des représentants](sales-how-setup-salespeople.md) |
 | Spécifier pour différents clients ou pour tous les clients le moyen par lequel les documents vente sont envoyés par défaut lorsque vous sélectionnez l'action **Valider et envoyer**. |[Configurer des profils d'envoi de documents](sales-how-setup-document-send-profiles.md) |
-| Configurez votre messagerie de sorte qu'elle contienne un résumé des informations du document de vente qui est envoyé. |[Envoyer des documents par courriel](ui-how-send-documents-email.md). |
+| Configurez votre messagerie de sorte qu'elle contienne un résumé des informations du document de vente qui est envoyé. |[Envoyer des documents par courriel](ui-how-send-documents-email.md) |
 |Utilisez un service Web UE pour vérifier le numéro d'immatriculation de TVA d'un client.|[Vérifier les numéros d'identification TVA](finance-setup-vat.md)|
 |Définissez les différents incoterms que vous proposez aux clients ou que vos fournisseurs vous proposent.|[Configurer des méthodes de livraison](sales-how-set-up-shipment-methods.md)|
 |Entrer des informations sur les différents transporteurs utilisés, notamment un lien vers les prestations de traçabilité des colis.|[Configurer des agents de livraison](sales-how-to-set-up-shipping-agents.md)|

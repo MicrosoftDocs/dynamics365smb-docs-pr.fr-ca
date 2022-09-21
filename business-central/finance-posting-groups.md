@@ -8,14 +8,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: posting setup, initialize
 ms.search.form: 312, 313
-ms.date: 03/24/2022
+ms.date: 08/26/2022
 ms.author: bholtorf
-ms.openlocfilehash: a3ce9d938994f6300e0a1f2c26511b3c0702c124
-ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
+ms.openlocfilehash: e3cb6fd841dc4d6e0f9b00d2966ca00bab577b15
+ms.sourcegitcommit: 8b95e1700a9d1e5be16cbfe94fdf7b660f1cd5d7
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9076575"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460789"
 ---
 # <a name="set-up-posting-groups"></a>Configuration des groupes de report
 
@@ -59,9 +59,11 @@ Le tableau suivant décrit les groupes de report spécifiques aux types de donn�
 
 ### <a name="allowing-substitute-customer-or-vendor-posting-groups-on-documents"></a>Autorisation de groupes de report client ou fournisseur de remplacement sur les documents
 
+[!INCLUDE [preview](includes/preview.md)]
+
 Vous pouvez permettre aux utilisateurs de choisir des groupes de report client et fournisseur différents de ceux par défaut lorsqu’ils utilisent des documents et des journaux vente ou achat.
 
-Pour autoriser les modifications des groupes de report client, choisissez **Autoriser la modification du groupe de report** sur les pages **Configuration ventes** et **Configuration Gestion des services**, et sur la page **Configuration achats** pour les modifications des groupes de report fournisseur.
+Pour autoriser les modifications des groupes de report client, choisissez **Autoriser plusieurs groupes de report** sur les pages **Configuration ventes & à recevoir** et **Configuration Gestion des services**, et sur la page **Configuration achats && à payer** pour les modifications des groupes de report fournisseur.
 
 Sur les pages **Groupes de report client** ou **Groupes de report fournisseur**, vous pouvez spécifier les groupes de report à autoriser comme substituts en choisissant **Substitutions**. Les groupes de report de substitution peuvent remplacer les groupes de report client ou fournisseur par défaut spécifié pour un client ou un fournisseur.
 
