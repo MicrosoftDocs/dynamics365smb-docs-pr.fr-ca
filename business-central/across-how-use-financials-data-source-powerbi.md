@@ -7,14 +7,14 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: business intelligence, KPI, Odata, Power App, SOAP, analysis
-ms.date: 04/01/2021
+ms.date: 09/07/2022
 ms.author: jswymer
-ms.openlocfilehash: 926c614dcb28c7bde4ee8c0a611ac45aa7145fb8
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 72df794aa170736507c959ea0e75e4bb52b234d7
+ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8523225"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9534383"
 ---
 # <a name="building-power-bi-reports-to-display-prod_long-data"></a>Création de rapports Power BI pour afficher des données [!INCLUDE [prod_long](includes/prod_long.md)]
 
@@ -48,6 +48,8 @@ Cet article aborde la prise en main de Power BI Desktop pour créer des rapports
 - Téléchargez le thème du rapport [!INCLUDE [prod_short](includes/prod_short.md)] (facultatif).
 
   Pour plus d’informations, consultez [Utiliser le thème du rapport [!INCLUDE [prod_short](includes/prod_short.md)]](#theme) dans cet article.
+
+[!INCLUDE[note-multicompany-reports](includes/note-multicompany-reports.md)]
 
 ## <a name="add-prod_short-as-a-data-source-in-power-bi-desktop"></a><a name="getdata"></a>Ajouter [!INCLUDE[prod_short](includes/prod_short.md)] comme source de données dans Power BI Desktop
 
@@ -183,7 +185,7 @@ Il existe plusieurs façons de transmettre des rapports à vos collègues et à 
 9. Cliquez sur **Terminé**.
 10. Sélectionnez **Fermer et appliquer** à partir du ruban pour enregistrer les modifications et fermer l’éditeur Power Query.
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/configure-powerbi-excel-dynamics-365-business-central/index)
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/configure-powerbi-excel-dynamics-365-business-central/index) associée
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/11/2021
 ms.author: edupont
-ms.openlocfilehash: 4f66b334df678ff27e094858dd0cec44c1bb8e75
-ms.sourcegitcommit: f1e272485a0e675d337a694aba3e35a5daf43920
+ms.openlocfilehash: 767b2873e0c7307a9642aa3b38d049b4869f7a1b
+ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "9130237"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9531199"
 ---
 # <a name="use-workflows"></a>Utiliser des workflows
 
@@ -69,7 +69,7 @@ Avant de pouvoir commencer à utiliser des workflows, vous devez configurer des 
 |Affichez les instances d’étape du workflow dont l’état est **Terminé**.|[Afficher des instances d'étape de workflow archivées](across-how-to-view-archived-workflow-step-instances.md)|  
 |Supprimez un workflow que vous êtes sûr de ne plus utiliser.|[Supprimer des workflows](across-how-to-delete-workflows.md)|  
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/create-workflows/)
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/create-workflows/) associée
 
 ## <a name="see-also"></a>Voir aussi .
 

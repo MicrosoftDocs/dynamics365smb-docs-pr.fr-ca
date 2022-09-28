@@ -10,12 +10,12 @@ ms.search.keywords: work in process, work in progress, calculate project WIP
 ms.search.form: 1010
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 2ab39e3cf0e533a39c76bbdb9b673d55ff84d78d
-ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
+ms.openlocfilehash: f04d66359274aece8780173cd2806382e3bb3892
+ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9075821"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9529876"
 ---
 # <a name="understanding-wip-methods-in-project-management"></a>Comprendre les méthodes TEC dans la gestion de projet
 
@@ -33,7 +33,7 @@ Pour effectuer le suivi de la valeur dans le grand livre, vous pouvez calculer l
 | Pourcentage d'achèvement |Coûts réceptionnés = Utilisation (coûts indiqués)<br /><br /> Revenus réceptionnés = Facturable (prix total) x Pourcentage avancement<br /><br /> Pourcentage avancement = Utilisation (coûts indiqués) / Budget (coûts indiqués)<br /> (Capturé dans le champ **% achèvement coût** sur les lignes tâche)<br /><br /> Vente TEC = Ventes réceptionnées - Facturable (prix facturé) |Le calcul Pourcentage avancement réceptionne les revenus proportionnellement sur la base du pourcentage d'achèvement, soit l'utilisation (coûts indiqués) par rapport aux coûts budgétés.<br /><br /> Ce calcule nécessite que le prix total facturable et les coûts budgétaires totaux soient correctement renseignés pour l'ensemble du projet. |
 | Contrat complété |Montant TEC = Coût indiqué TEC = Utilisation (coût total)<br /><br /> Montant vente TEC = Facturable (Prix facturé) |La méthode Fin de contrat ne réceptionne pas les revenus et les coûts avant la fin du projet. Cela peut être utile lorsque l'estimation des coûts et des revenus du projet est excessivement difficile.<br /><br /> L'ensemble de l'utilisation est reporté dans le compte Coûts TEC (actif) et toutes les ventes facturées sont reportées dans le compte Ventes facturées TEC (passif) jusqu'à la fin du projet. |
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/calculate-post-job-wip/)
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/paths/calculate-post-job-wip/) associée
 
 ## <a name="see-also"></a>Voir aussi .
 

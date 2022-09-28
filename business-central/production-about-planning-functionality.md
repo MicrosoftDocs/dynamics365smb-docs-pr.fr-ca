@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 5430
 ms.date: 07/16/2021
 ms.author: edupont
-ms.openlocfilehash: 51f1e2ff31e819c8aa571335b25dc51ec61d6d30
-ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
+ms.openlocfilehash: 029666cdfd0ad75d62eb21f6e719295c67d88ed1
+ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9077218"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9535434"
 ---
 # <a name="about-planning-functionality"></a>À propos de la fonctionnalité Planification
 
@@ -162,7 +162,7 @@ Les lignes feuille de réquisition contiennent des informations détaillées sur
 
 Pour plus d'informations sur la planification à l'aide d'emplacements et de transferts, voir [Planification avec/sans emplacements](production-planning-with-without-locations.md).
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/plan-items-dynamics-365-business-central/)
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/plan-items-dynamics-365-business-central/) associée
 
 ## <a name="see-also"></a>Voir aussi .
 

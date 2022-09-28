@@ -10,12 +10,12 @@ ms.search.keywords: accounting, auditing, bookkeeping
 ms.search.form: 257, 259, 279
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 08545d1bb23b8a70d10c6114f4840ce186aa94cc
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: ab140d214c25735bf8158a2255f8f35ba246442c
+ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8515573"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9535166"
 ---
 # <a name="setting-up-source-codes-and-reason-codes-for-audit-trails"></a>Configuration des codes source et des codes de motif pour les pistes d'audit
 
@@ -85,7 +85,7 @@ Le code motif sélectionné est copié dans les nouveaux lots journal créées s
 
 Lors du report de la facture, le code motif est copié sur chaque écriture du grand livre, client et fournisseur. Vous ne pouvez pas affecter différents codes motif aux lignes achat et vente individuelles, car toutes les lignes sont reportées sous la forme d'une écriture unique.
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/set-up-financial-management-dynamics-365-business-central/)
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/paths/set-up-financial-management-dynamics-365-business-central/) associée
 
 ## <a name="see-also"></a>Voir aussi
 

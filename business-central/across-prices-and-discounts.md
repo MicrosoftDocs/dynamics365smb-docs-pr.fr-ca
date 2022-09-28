@@ -10,12 +10,12 @@ ms.search.keywords: price, pricing, discount, discounting, rebate, sale, purchas
 ms.search.form: 459, 460, 7001, 7011, 7015, 7016, 7017, 7018
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 5f0a26e9a6784f1d0ae2b7c8881667a51560cbf6
-ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
+ms.openlocfilehash: 5afe559e9f3e741db5c75b5cf3026caf50a1ce97
+ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9077694"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9530713"
 ---
 # <a name="set-up-prices-and-discounts"></a>Configurer les prix et les escomptes
 
@@ -119,7 +119,7 @@ Vous pouvez associer les pourcentages escompte à des montants de facture spéci
 En plus du pourcentage d'escompte (ou à sa place), vous pouvez lier un montant de frais forfaitaires au montant d'une facture.  
 
 > [!TIP]  
-> Avant de commencer à saisir ces informations, il est judicieux de préparer au préalable votre structure d’escompte, de sorte qu’il soit plus facile de voir quels clients associer à la même page d’escompte facture. Pour plus d'informations sur les escomptes sur les ventes, voir [Configurer des escomptes pour vos clients](/learn/modules/customer-discounts-dynamics-365-business-central/index) sur Microsoft Learn.  
+> Avant de commencer à saisir ces informations, il est judicieux de préparer au préalable votre structure d’escompte, de sorte qu’il soit plus facile de voir quels clients associer à la même page d’escompte facture. Pour plus d’informations sur les escomptes sur les ventes, voir [Configurer des escomptes pour vos clients](/training/modules/customer-discounts-dynamics-365-business-central/index).
 
 ### <a name="to-set-up-an-invoice-discount-for-a-customer"></a>Pour configurer un escompte facture pour un client
 
@@ -205,7 +205,7 @@ Pour mettre à jour les prix de plusieurs articles, vous devez créer une nouvel
 
 Lorsque vous avez enregistré des prix spéciaux et des escomptes ligne pour les ventes et les achats, [!INCLUDE[d365fin](includes/d365fin_md.md)] s’assure que votre profit pour l’article est toujours optimal en calculant automatiquement le meilleur prix dans les documents achat et vente, sur le projet et les lignes journal article. Pour plus d'informations, voir [Calcul du meilleur prix](sales-how-record-sales-price-discount-payment-agreements.md#best-price-calculation).
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/customer-discounts-dynamics-365-business-central/)
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/customer-discounts-dynamics-365-business-central/) associée
 
 ## <a name="see-also"></a>Voir aussi .
 

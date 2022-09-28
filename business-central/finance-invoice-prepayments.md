@@ -9,12 +9,12 @@ ms.workload: na
 ms.search.form: 42, 42, 48, 50, 52, 9305, 9307
 ms.date: 12/03/2021
 ms.author: edupont
-ms.openlocfilehash: e1bc919488a1932338b71938cc4c6e2928cfc177
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: c39d5e0462c9fb4563e9f481256c916f0b9c397e
+ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8514027"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9535220"
 ---
 # <a name="invoicing-prepayments"></a>Facturation de paiements anticipés
 
@@ -35,11 +35,11 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Créer une commande, ajuster des montants paiement anticipé et émettre une facture pour les montants paiement anticipé.|[Créer des factures de paiement anticipé](finance-how-to-create-prepayment-invoices.md)|  
 |Émettre une facture paiement anticipé supplémentaire, pour des articles supplémentaires ou pour un paiement anticipé supplémentaire dans la commande originale, ou émettre une note de crédit paiement anticipé.|[Corriger des paiements anticipés](finance-how-to-correct-prepayments.md)|  
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/prepayment-invoices-dynamics-365-business-central/index)
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/prepayment-invoices-dynamics-365-business-central/index) associée
 
 ## <a name="see-also"></a>Voir aussi
 
-[Procédure pas à pas : Configuration et facturation de paiements anticipés](walkthrough-setting-up-and-invoicing-sales-prepayments.md)  
+[Procédure pas à pas : configuration et facturation d'acomptes](walkthrough-setting-up-and-invoicing-sales-prepayments.md)  
 [Finance](finance.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 

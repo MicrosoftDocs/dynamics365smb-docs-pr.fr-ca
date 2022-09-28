@@ -7,12 +7,12 @@ ms.search.keyword: prepayment
 ms.search.form: 314, 459, 460, 664
 ms.date: 10/27/2021
 ms.author: edupont
-ms.openlocfilehash: cf7f84b8ba0c7622f08856b677e3559cc669e7ed
-ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
+ms.openlocfilehash: 72e5be73b78e702bfa006a79b6c3a46c8b11ed96
+ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9078684"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9531172"
 ---
 # <a name="set-up-prepayments"></a>Configuration des acomptes
 
@@ -106,7 +106,7 @@ Vous pouvez gagner du temps en configurant une écriture file d’attente des tr
 3. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures file d’attente des travaux**, puis sélectionnez le lien associé.
 4. Configurez l’écriture file d’attente des travaux **Mise à jour Paiement anticipé en attente Ventes**, par exemple, en utilisant les paramètres du raccourci **Récurrence** pour programmer sa fréquence d'exécution. Pour plus d’informations, voir [Utiliser des files d’attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/prepayment-invoices-dynamics-365-business-central/)
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/prepayment-invoices-dynamics-365-business-central/) associée
 
 ## <a name="see-also"></a>Voir aussi .  
 

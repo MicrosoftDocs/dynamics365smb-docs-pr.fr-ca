@@ -10,12 +10,12 @@ ms.search.keywords: adjustment, negative, positive, increase, decrease
 ms.search.forms: 1327, 393, 392, 390, 7381, 7380, 7319, 7324, 7326, 7365
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 4267e7de6f34c3aa419d3d3fc78739c372b48a64
-ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
+ms.openlocfilehash: 40e11554ab073c62b33b0623fc2bbd5a8038f686
+ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9078058"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9533305"
 ---
 # <a name="count-adjust-and-reclassify-inventory-using-journals"></a>Comptabiliser, ajuster et reclasser l'inventaire avec les journaux
 
@@ -233,7 +233,7 @@ L'exemple suivant est basé sur un code d'emplacement. Les étapes sont similair
 
 Pour plus d'informations sur le transfert des articles avec un contrôle complet des quantités livrées et reçues, voir [Transfert d'inventaire entre des emplacements](inventory-how-transfer-between-locations.md).
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/adjust-inventory/)
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/adjust-inventory/) associée
 
 ## <a name="see-also"></a>Voir aussi .
 

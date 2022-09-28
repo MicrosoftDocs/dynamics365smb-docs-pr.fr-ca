@@ -3,12 +3,12 @@
 # Démarrer
 ## [Aperçu de la fonctionnalité d'affaires](across-business-functionality.md)
 <!--### [Get Ready for Doing Business](ui-get-ready-business.md)-->
-## Apprentissage
+## En savoir plus
 ### [Catalogue d'apprentissage Business Central](readiness/readiness-learning-catalog.md)
-### [Business Central sur Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
+### [Formation Business Central](/training/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### Procédures pas à pas liées au processus entreprise
 #### [Procédures pas à pas disponibles](walkthrough-business-process-walkthroughs.md)
-#### [Procédure pas à pas : Mise en place d'une promotion de vente](walkthrough-conducting-a-sales-campaign.md)
+#### [Procédure pas à pas : mise en place d'une promotion de vente](walkthrough-conducting-a-sales-campaign.md)
 #### [Procédure pas à pas : Configurer et facturer des paiements anticipés vente](walkthrough-setting-up-and-invoicing-sales-prepayments.md)
 #### [Procédure pas à pas : Configurer et utiliser un flux d’approbation achat](walkthrough-setting-up-and-using-a-purchase-approval-workflow.md)
 <!-- #### [Walkthrough: Receiving and Putting Away in Basic Warehouse Configurations](walkthrough-receiving-and-putting-away-in-basic-warehousing.md) -->

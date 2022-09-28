@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.search.keywords: write down
 ms.date: 06/28/2021
 ms.author: edupont
-ms.openlocfilehash: 887a8f94db8f289769c2fba7a1938d7b7960e400
-ms.sourcegitcommit: 00a8acc82cdc90e0d0db9d1a4f98a908944fd50a
+ms.openlocfilehash: c1912cf6c6e755949e8aa32b749145efc8b70783
+ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9079204"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9534680"
 ---
 # <a name="set-up-fixed-asset-depreciation"></a>Configurer un amortissement immobilisation
 
@@ -95,7 +95,7 @@ Lorsque le traitement en lot Calculer amortissement calcule les amortissements, 
 
 Si vous activez ce champ, le traitement en lot Calculer amortissement utilise l’année civile de 365 jours, où chaque mois est calculé avec le même nombre de jours que le calendrier. La seule exception est le mois de février des années bissextiles, que le traitement en lot traitera comme ayant 28 jours et non 29. Pour cette raison, toutes les années, également les années bissextiles, sont considérées comme ayant 365 jours.
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/configure-depreciation-books/)
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/configure-depreciation-books/) associée
 
 ## <a name="see-also"></a>Voir aussi .
 

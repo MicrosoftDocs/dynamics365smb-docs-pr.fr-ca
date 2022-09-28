@@ -10,12 +10,12 @@ ms.reviewer: edupont
 ms.search.form: ''
 ms.date: 08/08/2022
 ms.author: edupont
-ms.openlocfilehash: 2f306fee236fda2bae4863e0e793239c2168f125
-ms.sourcegitcommit: 8b95e1700a9d1e5be16cbfe94fdf7b660f1cd5d7
+ms.openlocfilehash: 1bae22c83f1e7138fbfe16bb39aea3ad9d65d788
+ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9461113"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9531010"
 ---
 # <a name="posting-purchases"></a>Report des achats
 
@@ -58,7 +58,7 @@ Dans la plupart des cas, vous pouvez ouvrir des écritures à partir de la fiche
 
 Vous pouvez modifier certains champs sur les documents achat reportés, tels que le champ **Référence de paiement**. Pour plus d'informations, voir [Modifier les documents reportés](across-edit-posted-document.md). Pour les champs plus critiques qui concernent la piste d'audit, vous devez inverser ou annuler le report. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md).
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/receive-invoice-dynamics-d365-business-central/index).
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/receive-invoice-dynamics-d365-business-central/index) associée.
 
 ## <a name="see-also"></a>Voir aussi .
 
