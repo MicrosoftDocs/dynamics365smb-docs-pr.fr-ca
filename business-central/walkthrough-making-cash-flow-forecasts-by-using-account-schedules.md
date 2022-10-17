@@ -1,33 +1,33 @@
 ---
-title: Prévisions de la trésorerie à l’aide de calendriers comptables
-description: Cette procédure pas-à-pas décrit le mode d’utilisation des tableaux d’analyse pour élaborer des prévisions de la trésorerie dans Business Central.
+title: Créer des prévisions de la trésorerie à l’aide de rapports financiers
+description: Cette procédure pas-à-pas décrit comment utiliser des rapports financiers pour élaborer des prévisions de la trésorerie dans Business Central.
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: ''
-ms.date: 06/24/2021
+ms.date: 08/18/2022
 ms.author: edupont
-ms.openlocfilehash: 7238b4de3b4a48c61560bc9a96a6923afe82eb93
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
+ms.openlocfilehash: 4f3b406435b52d632d20553181aa5f106dc6a387
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9533492"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9606867"
 ---
-# <a name="walkthrough-making-cash-flow-forecasts-by-using-account-schedules"></a>Procédure pas-à-pas : Créer des prévisions de trésorerie à l'aide de les tableaux d'analyse
+# <a name="walkthrough-making-cash-flow-forecasts-using-financial-reports"></a>Procédure pas-à-pas : créer des prévisions de la trésorerie à l’aide de rapports financiers
 
-Cette procédure pas-à-pas décrit le mode d'utilisation des tableaux d'analyse pour élaborer des prévisions de trésorerie. Les tableaux d'analyse procèdent aux calculs qui ne peuvent pas être effectués directement dans le plan comptable de trésorerie. Dans les tableaux d'analyse, vous pouvez configurer des sous-totaux pour les réceptions et les décaissements de trésorerie. Ces sous-totaux peuvent être inclus dans les nouveaux totaux pour élaborer des prévisions de trésorerie.  
+Cette procédure pas-à-pas décrit comment utiliser la fonctionnalité des rapports financiers pour élaborer des prévisions de la trésorerie. Les rapports financiers procèdent aux calculs qui ne peuvent pas être effectués directement dans le plan comptable de trésorerie. Dans les rapports financiers, vous pouvez configurer des sous-totaux pour les réceptions et les décaissements de trésorerie. Ces sous-totaux peuvent être inclus dans les nouveaux totaux qui peuvent être utilisés pour élaborer des prévisions de la trésorerie.  
 
 ## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas
 
 Cette procédure pas à pas décrit les tâches suivantes :  
 
-- Configuration d'un nouveau nom du tableau d'analyse de trésorerie.  
-- Configuration de lignes du tableau d'analyse  
-- Configuration d'une nouvelle présentation de colonne  
-- Affectation d'une présentation de colonne à un tableau d'analyse.  
+- Configuration d’un nouveau nom de rapport financier de trésorerie.  
+- Configuration des lignes de rapport financier.  
+- Configuration d’une nouvelle définition de colonne.  
+- Affectation d’une définition de colonne à un rapport financier.  
 - Affichage et impression des prévisions de la trésorerie.  
 
 ### <a name="prerequisites"></a>Conditions préalables
@@ -35,7 +35,7 @@ Cette procédure pas à pas décrit les tâches suivantes :
 Pour exécuter ce processus pas à pas, vous devez :  
 
 - [!INCLUDE[prod_short](includes/prod_short.md)]  
-- Les lignes de la feuille d’activité de trésorerie sont enregistrées  
+- Une feuille d’activité de trésorerie avec lignes enregistrées  
 
 ## <a name="roles"></a>Rôles
 
@@ -47,42 +47,42 @@ Cette procédure pas à pas présente les tâches effectuées par le rôle utili
 
 Ken est un contrôleur chez CRONUS, chargé d'élaborer des prévisions mensuelles de trésorerie. Il inclut les finances, les ventes, les achats et les immobilisations dans les prévisions, puis les présente à CFO Sara dans un souci de visibilité commerciale.  
 
-## <a name="setting-up-a-new-account-schedule-name"></a>Configuration d'un nouveau nom du tableau d'analyse
+## <a name="setting-up-a-new-financial-report-name"></a>Configuration d’un nouveau nom de rapport financier
 
-Un tableau d'analyse est composé d'un nom de tableau d'analyse de trésorerie avec une série de lignes et une présentation de colonne.  
+Le nom du rapport financier est le nom que vous donnez à la prévision de la trésorerie qui comprend une série de lignes définies et une définition de colonne.  
 
-### <a name="to-set-up-a-new-account-schedule-name"></a>Pour configurer un nouveau nom de tableau d'analyse  
+### <a name="set-up-a-new-financial-report-name"></a>Configurer un nouveau nom de rapport financier  
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Tableaux d’analyse**, puis sélectionnez le lien associé.  
-2. Sur la page **Noms tableaux d'analyse**, choisissez **Nouveau** pour créer un nom pour le tableau d'analyse de trésorerie.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rapports financiers**, puis choisissez le lien associé.  
+2. Sur la page **Rapports financiers**, choisissez **Nouveau** pour créer un nom de rapport financier de trésorerie.  
 3. Dans le champ **Nom**, entrez **Prévision**.  
 4. Dans le champ **Description**, entrez **Prévision de trésorerie**.  
-5. Laissez vierges les champs **Présentation colonne par déf.** et **Nom vue d'analyse** .  
+5. Laissez les champs **Définition de ligne** et **Définition de colonne** vides.
 
-## <a name="setting-up-account-schedule-lines"></a>Configuration de lignes du tableau d'analyse
+## <a name="setting-up-row-definition-lines"></a>Configuration des lignes de définition de ligne
 
-Après la configuration d'un nom de tableau d'analyse, Ken définit chaque ligne qui s'y affiche. Ken définit les lignes qui peuvent être affichées dans les états en plus des lignes destinées uniquement au calcul.  
+Une fois le nom du rapport financier configuré, Ken définit chaque ligne du rapport financier de trésorerie. Ken définit les lignes à afficher dans les rapports en plus de celles destinées uniquement au calcul.  
 
-### <a name="to-set-up-account-schedule-lines"></a>Pour configurer les lignes du tableau d'analyse  
+### <a name="set-up-row-definition-lines"></a>Configuration des lignes de définition de ligne  
 
-1. Sur la page **Noms tableaux d'analyse**, sélectionnez le nouveau nom de tableau d'analyse **Prévision** que vous avez créé, puis choisissez l'action **Modifier tableau d'analyse**.  
-2. Sur la page **Tableau d’analyse**, entrez chaque ligne comme indiqué dans le tableau suivant.  
+1. Sur la page **Rapports financiers**, sélectionnez le nouvel rapport financier **Prévision** que vous avez créé, puis choisissez l’action **Modifier la définition de ligne**.  
+2. Sur la page **Définition de ligne**, entrez chaque ligne comme indiqué dans le tableau suivant.  
 
     > [!TIP]  
-    >  À l’aide de la fonction **Insérer des comptes CF**,vous pouvez sélectionner rapidement les comptes de trésorerie à partir du plan comptable de trésorerie et les copier vers les lignes du tableau d’analyse.  
+    > Utilisez la fonction **Insérer des comptes CF**,vous pouvez sélectionner rapidement les comptes de trésorerie à partir du plan comptable de trésorerie et les copier vers les lignes de définition de ligne.  
 
-    | N° ligne totalis. | Description              | Type totalisation            | Totalisation | Type ligne   | Type montant | Afficher |
+    | N° ligne totalis. | Désignation              | Type totalisation            | Totalisation | Type de rangée   | Type montant | Afficher |
     |---------|--------------------------|--------------------------|----------|------------|-------------|------|
-    | R10     | Documents de vente en cours        | Comptes d’écritures de trésorerie | 20       |Solde période | Montant net  | Oui  |
+    | R10     | Clients              | Comptes d'écritures de trésorerie | 10       |Solde période | Montant net  | Oui  |
+    | R10     | Documents de vente en cours        | Comptes d'écritures de trésorerie | 2.0       |Solde période | Montant net  | Oui  |
     | R10     | Location                  | Comptes d’écritures de trésorerie | 30       |Solde période | Montant net  | Oui  |
     | R10     | Actifs financiers         | Comptes d’écritures de trésorerie | 40       |Solde période | Montant net  | Oui  |
     | R10     | Cession d’immobilisations    | Comptes d’écritures de trésorerie | 50       |Solde période | Montant net  | Oui  |
     | R10     | Investissements privés      | Comptes d’écritures de trésorerie | 60       |Solde période | Montant net  | Oui  |
     | R10     | Réceptions diverses   | Comptes d’écritures de trésorerie | 70       |Solde période | Montant net  | Oui  |
-    | R10     | Commandes service en cours      | Comptes d’écritures de trésorerie | 80       |Solde période | Montant net  | Oui  |
+    | R10     | Commandes service en cours      | Comptes d'écritures de trésorerie | 80       |Solde période | Montant net  | Oui  |
     | R20     | Total règlements      | Formule                  | R10      |Solde période | Montant net  | Oui  |
-    | R20     | Total règlements      | Formule                  | R10      |Solde période | Montant net  | Oui  |
-    | R30     | Fournisseurs                 | Comptes d’écritures de trésorerie | 1010     |Solde période | Montant net  | Oui  |
+    | R30     | Fournisseurs                 | Comptes d'écritures de trésorerie | 1010     |Solde période | Montant net  | Oui  |
     | R30     | Bons de commande en cours     | Comptes d’écritures de trésorerie | 1020     |Solde période | Montant net  | Oui  |
     | R30     | Charges de personnel          | Comptes d’écritures de trésorerie | 1030     |Solde période | Montant net  | Oui  |
     | R30     | Charges d’exploitation            | Comptes d’écritures de trésorerie | 1040     |Solde période | Montant net  | Oui  |
@@ -92,32 +92,29 @@ Après la configuration d'un nom de tableau d'analyse, Ken définit chaque ligne
     | R30     | TVA due                  | Comptes d’écritures de trésorerie | 1100     |Solde période | Montant net  | Oui  |
     | R30     | Autres dépenses           | Comptes d’écritures de trésorerie | 1110     |Solde période | Montant net  | Oui  |
     | R40     | Total décaissements | Formule                  | R30      |Solde période | Montant net  | Oui  |
-    | R50     | Surplus                  | Formule                  | R20+R40  |Solde période | Montant net  | Oui  |
-    | R60     | Fonds de trésorerie          | Comptes d’écritures de trésorerie | 2100     |Solde période | Montant net  | Oui  |
+    | R50     | Excédent                  | Formule                  | R20+R40  |Solde période | Montant net  | Oui  |
+    | R60     | Fonds de trésorerie          | Comptes d'écritures de trésorerie | 2100     |Solde période | Montant net  | Oui  |
     | R70     | Total trésorerie          | Formule                  | R50+R60  |Solde période | Montant net  | Oui  |
 
     > [!NOTE]
     > Le numéro de ligne R10 est utilisé pour capturer les totaux du compte client. Le numéro de ligne R20 est utilisé pour calculer la somme de tous les règlements. Le numéro de ligne R30 est utilisé pour capturer les totaux du compte fournisseur. Le numéro de ligne R40 est utilisé pour calculer la somme de tous les décaissements. Le numéro de ligne R50 est utilisé pour calculer la somme des excédents. Le numéro de ligne R60 est utilisé pour capturer les fonds liquides. Le numéro de ligne R70 est utilisé pour calculer la trésorerie prévue.
 
-## <a name="setting-up-a-new-column-layout"></a>Configuration d’une nouvelle présentation de colonne
+## <a name="setting-up-a-new-column-definition"></a>Configuration d’une nouvelle définition de colonne
 
-Avant de pouvoir imprimer les prévisions de la trésorerie, Ken doit créer la présentation de colonne pour les informations numériques. Dans les colonnes, il définit les informations qu’il souhaite utiliser dans les lignes.
+Avant de pouvoir imprimer la prévision de la trésorerie, Ken doit créer la définition de colonne pour les informations numériques. Dans les colonnes, il définit les informations qu’il souhaite utiliser dans les lignes.
 
 - La première colonne porte le numéro *C10* avec l’intitulé **Montant** et indique le solde de la période.  
 - La deuxième colonne porte le numéro *C20* avec l’intitulé **Solde au** et indique les transactions de la période.  
 - La troisième colonne porte le numéro *C30* avec l’intitulé **Exercice complet** et indique le solde de la période dans les soldes pour l’exercice financier complet.  
-- Pour finir, il définit la présentation de colonne par défaut pour le tableau d’analyse **Prévision**.  
+- Pour finir, il assigne la définition de colonne comme option par défaut pour le rapport financier **Prévision**.  
 
-## <a name="to-set-up-a-new-column-layout"></a>Pour configurer une nouvelle présentation de colonne
+### <a name="set-up-a-new-column-definition"></a>Configurer une nouvelle définition de colonne
 
-1. Dans la fenêtre **Noms tableaux d’analyse**, sélectionnez le nouveau nom du tableau d’analyse **Prévision** que vous venez de créer. Sous l’onglet **Accueil**, dans le groupe **Processus**, choisissez **Modifier configuration présentation colonne**.
+1. Sur la page **Rapports financiers**, sélectionnez le nom du nouveau rapport financier **Prévision** que vous venez de créer. Sous l’onglet **Accueil**, dans le groupe **Processus**, choisissez **Modifier la définition de colonne**.
 
-    > [!TIP]
-    > Vous pouvez trouver la même action sur la page **Tableau d’analyse** si vous êtes toujours en train de modifier le tableau d’analyse **Prévision**.
+2. Créez une définition de colonne que vous nommez **Trésorerie**.
 
-2. Créez une présentation de colonne que vous nommez **Trésorerie**.
-
-3. Choisissez le bouton OK.
+3. Cliquez sur le bouton **OK**.
 
 4. Saisissez chaque ligne comme indiqué dans le tableau suivant.
 
@@ -127,26 +124,26 @@ Avant de pouvoir imprimer les prévisions de la trésorerie, Ken doit créer la 
     |C20|Montant jusque date|Solde au|Écritures|Montant net|Toujours|  
     |C30|Exercice financier complet|Exercice financier complet|Écritures|Montant net|Toujours|
 
-## <a name="assigning-the-column-layout-to-the-account-schedule-name"></a>Affectation de la présentation de colonne au nom de tableau d'analyse
+## <a name="assigning-the-column-definition-to-the-financial-report-name"></a>Affectation d’une définition de colonne au nom de rapport financier
 
-Ken est désormais prêt à affecter la présentation de colonne au nom de tableau d'analyse.  
+Ken est désormais prêt à affecter la définition de colonne au nom de rapport financier.  
 
-### <a name="to-assign-the-column-layout-to-the-account-schedule-name"></a>Pour affecter la présentation de colonne au nom de tableau d'analyse  
+### <a name="assign-the-column-definition-to-the-financial-report-name"></a>Affecter la définition de colonne au nom de rapport financier
 
-1. Sur la page **Tableau d’analyse** dans laquelle vous utilisez le tableau d’analyse **Prévision**, choisissez l’action **Modifier configuration présentation colonne**.  
-2. Dans le champ **Nom présentation colonne**, sélectionnez la présentation de colonne **Trésorerie** pour la définir par défaut.  
+1. Sur la page **Rapports financiers**, sélectionnez le rapport financier **Prévision**, puis choisissez l’action **Modifier la définition de colonne**.  
+2. Dans le champ **Nom présentation colonne**, sélectionnez la définition de colonne **Trésorerie** pour la définir par défaut.  
 
-### <a name="to-view-and-print-the-cash-flow-forecast"></a>Pour afficher et imprimer les prévisions de la trésorerie
+## <a name="view-and-print-the-cash-flow-forecast"></a>Afficher et imprimer la prévision de la trésorerie
 
-1. Sur la page **Noms tableaux d'analyse**, choisissez l'action **Aperçu** pour afficher les prévisions de la trésorerie.  
-2. Sur la page **Aperçu tableau d'analyse**, vous pouvez sélectionner un montant, puis afficher les écritures de prévisions de la trésorerie qui constituent ce montant. En outre, vous pouvez afficher la formule qui est utilisée pour calculer le montant. Vous pouvez également filtrer les montants par date et par dimension.  
+1. Sur la page **Rapports financiers**, choisissez le rapport financier **Prévision** pour visualiser la prévision de la trésorerie.  
+2. Sur la page **Rapport financier**, vous pouvez sélectionner un montant, puis afficher les écritures de prévisions de la trésorerie qui constituent ce montant. En outre, vous pouvez afficher la formule qui est utilisée pour calculer le montant. Vous pouvez également filtrer les montants par date et par dimension.  
 3. Choisissez l'action **Imprimer** pour imprimer les prévisions de la trésorerie.  
 
 ## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/forecast-cash-flow-dynamics-365-business-central/) associée
 
 ## <a name="see-also"></a>Voir aussi .
 
-[Utilisation des tableaux d'analyse](bi-how-work-account-schedule.md)  
+[Utiliser les rapports financiers](bi-how-work-account-schedule.md)  
 [Analyse de la trésorerie dans votre société](finance-analyze-cash-flow.md)  
 [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

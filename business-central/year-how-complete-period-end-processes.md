@@ -7,35 +7,35 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: year closing, close accounting period, close fiscal year, aging, creditor payments, vendor payments
-ms.date: 04/01/2021
+ms.date: 08/29/2022
 ms.author: jswymer
-ms.openlocfilehash: bb39763e80acc25604f3a1528f5c6db286a5c1dc
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
+ms.openlocfilehash: ace24899aa3c872cd5ac0609dfc3ecbf63608330
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9535500"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9607672"
 ---
 # <a name="overview-of-tasks-to-close-accounting-periods"></a>Aperçu des tâches de fermeture des périodes comptables
 
 [!INCLUDE[prod_short](includes/prod_short.md)] ne vous oblige pas à clôturer les périodes. Toutefois, il existe de nombreuses activités de clôture de période (fin de mois) que vous pouvez effectuer. Cette rubrique présente un aperçu des activités et processus facultatifs pour la fermeture de périodes.  
 
-## <a name="general-ledger"></a>Écritures comptables
+## <a name="general-ledger"></a>Grand livre
 
 * Spécifiez des périodes de report à l'échelle du système et spécifiques à l'utilisateur.  
 
-    Cela spécifie les dates entre lesquelles les reports sont autorisés. En fonction des besoins de votre activité, vous pouvez autoriser le report au début de la période ou vers la fin. Pour plus d'informations, reportez vous à [Spécifier des périodes de report](finance-how-specify-posting-periods.md).  
-* Effectuez tous les ajustements nécessaires dans le GL.  
+    Cela spécifie les dates entre lesquelles les reports sont autorisés. En fonction des besoins de votre activité, vous pouvez autoriser le report au début de la période ou vers la fin. Pour en savoir plus, voir [Spécifier les périodes comptables](finance-how-specify-posting-periods.md).  
+* Effectuez tous les ajustements du grand livre (GL) nécessaires.  
 * Mettez à jour et reportez les journaux récurrents.  
   <!--* Process Consolidations-->
-* Exécutez les tableaux d'analyse comme suit :  
-  * Ouvrez la page **Tableau d'analyse**, puis sélectionnez l'action **Imprimer**.  
+* Exécutez les rapports financiers comme suit :  
+  * Ouvrez la page **Rapports financiers**, puis sélectionnez l’action **Imprimer**.  
 
 ## <a name="sales-and-receivables"></a>Ventes
 
 * Reportez l'ensemble des documents de vente, factures, notes de crédit et retours vente.  
 * Reportez l'ensemble des journaux des encaissements.  
-* Mettez à jour et reportez les journaux récurrents associés aux ventes.  
+* Mettez à jour et reportez les journaux récurrents relatifs aux ventes.  
 * Rapprocher les comptes clients avec le grand livre.  
 * Exécutez le traitement par lots **Supprimer cdes vente facturées**.  
 
@@ -43,23 +43,23 @@ ms.locfileid: "9535500"
 
 * Reportez l'ensemble des bons de commande, factures, notes de crédit et retours achat.  
 * Reportez l'ensemble des journaux paiement.  
-* Mettez à jour et validez les feuilles abonnement associées aux achats.  
+* Mettez à jour et reportez les journaux récurrents relatifs aux achats.  
 * Générez l'état **Comptabilité fournisseur âgée** et rapprochez la comptabilité fournisseur de la comptabilité.  
 * Exécutez le traitement par lots **Supprimer cdes achat facturées**.  
 
 ## <a name="fixed-assets"></a>Immobilisations
 
-* Vérifiez que tous les frais d'entretien ont été reportés via les journaux immobilisation ou les factures.
+* Reportez tous les coûts d'entretien qui ont été reportés via les journaux immobilisation ou les factures.
 * Reportez les ajustements.
 * Reportez l'appréciation.
 * Reportez l'amortissement.
 * Mettez à jour et reportez le journal immobilisations récurrentes.
 
-## <a name="intercompany"></a>Intersociétés
+## <a name="intercompany"></a>Intercompanie
 
-* Traitement des transactions intersociétés
+* Traitez les transactions intersociétés.
 
-## <a name="calculate-and-process-sales-tax"></a>Calculez et traitez la taxe de vente.
+## <a name="calculate-and-process-sales-tax"></a>Calculer et traiter la taxe de vente
 
 * Renseignez les déclarations de TVA.  
 
@@ -70,6 +70,5 @@ ms.locfileid: "9535500"
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
 [Clôture plans](year-close-books.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

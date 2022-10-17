@@ -4,22 +4,22 @@ description: La page Informations compagnie spécifie les informations de base d
 author: edupont04
 ms.topic: conceptual
 ms.search.form: 1
-ms.date: 04/20/2022
+ms.date: 08/31/2022
 ms.author: edupont
-ms.openlocfilehash: 791d2b5c91014b2b9ce836854285ea8f0f32df37
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
+ms.openlocfilehash: 158a3717de6c3f205a66258fed47d68318592b67
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9533951"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9607402"
 ---
 # <a name="company-information-overview"></a>Présentation des informations sur la compagnie
 
-[!INCLUDE[prod_short](includes/prod_short.md)] organise les entités commerciales en *compagnies*. Pour chaque compagnie, vous devez remplir certains des détails de base et des informations pertinentes sur la page **Informations compagnie**. Les informations de la fenêtre [**Informations compagnie**](https://businesscentral.dynamics.com/?page=1) sont utilisées dans des documents, tels que les en-têtes facture. Vous pouvez paramétrer plusieurs compagnies, par exemple une compagnie mère et une filiale.  
+[!INCLUDE[prod_short](includes/prod_short.md)] organise les entités commerciales en *compagnies*. Pour chaque compagnie, vous devez remplir certains des détails de base et des informations pertinentes sur la page **Informations compagnie**. Les informations de la page [**Informations compagnie**](https://businesscentral.dynamics.com/?page=1) sont utilisées dans des documents, tels que les en-têtes facture. Vous pouvez paramétrer plusieurs compagnies, par exemple une compagnie mère et une filiale.  
 
-Si l'entrepôt inventaire de la compagnie est situé à une adresse différente du siège social, vous pouvez renseigner les divers champs destinataire et le champ **Code emplacement** du raccourci **Livraison**. Ces informations sont alors imprimées sur les bons de commande, afin que les livraisons soient effectuées à la bonne adresse.  
+Si les entrepôts de la compagnie sont situés à une adresse différente du siège social, vous pouvez renseigner les divers champs destinataire et le champ **Code emplacement** du raccourci **Expédition**. Les informations de ces champs sont alors imprimées sur les bons de commande, afin que les livraisons soient effectuées à la bonne adresse.  
 
-Pour chaque compagnie que vous configurez, vous devez renseigner la page **Informations compagnie**, ainsi que la page **Configuration du grand livre**. Vous devez également configurer chaque zone dans [!INCLUDE [prod_short](includes/prod_short.md)], comme la page **Configuration ventes**, pour chaque compagnie. Pour plus d’informations, voir [Aperçu des tâches permettant de paramétrer [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md).  
+Pour chaque compagnie que vous configurez, vous devez renseigner la page **Informations compagnie**, ainsi que la page **Configuration du grand livre**. Vous devez également configurer chaque zone dans [!INCLUDE [prod_short](includes/prod_short.md)], comme la page **Configuration ventes**, pour chaque compagnie. Pour plus d’informations, consultez [Aperçu des tâches permettant de paramétrer [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md).  
 
 En fonction de votre pays, la page **Informations compagnie** contient différents champs et raccourcis. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)] Le tableau suivant décrit les raccourcis les plus couramment utilisés.
 
@@ -27,13 +27,37 @@ En fonction de votre pays, la page **Informations compagnie** contient différen
 
 Une fois que vous avez terminé de remplir les informations, vous pouvez fermer la page.  
 
-## <a name="work-with-multiple-companies"></a>Travailler avec plusieurs compagnies
+## <a name="working-with-multiple-companies"></a>Travailler avec plusieurs compagnies
 
-Si votre [!INCLUDE [prod_short](includes/prod_short.md)] inclut plusieurs compagnies, vos utilisateurs souhaiteront peut-être utiliser les *badges compagnie* pour savoir avec quelle compagnie ils travaillent actuellement. Pour plus d’informations, consultez [Afficher un badge compagnie pour un accès rapide aux informations de la compagnie](ui-change-basic-settings.md#badge).  
+Si votre [!INCLUDE [prod_short](includes/prod_short.md)] inclut plusieurs compagnies, vos utilisateurs souhaiteront peut-être utiliser des *badges de compagnie* pour identifier rapidement et suivre avec quelle compagnie ils travaillent actuellement. Pour en savoir plus, voir [Afficher un badge de compagnie](#badge).
+
+Il existe quelques fonctionnalités que vous pouvez utiliser pour changer de compagnie, comme le sélecteur de compagnie (Ctrl+O). Pour en savoir plus, voir [Passer à une autre compagnie ou un autre environnement](ui-organization-switch.md).
+
+## <a name="display-a-company-badge"></a><a name="badge"></a>Afficher un badge de compagnie
+
+Lorsqu’il y a plusieurs compagnies ou environnements, vous verrez le sélecteur de compagnie sur le côté supérieur droit de la barre d’application, près de l’icône de recherche dans la barre d’application. Par défaut, le sélecteur de compagnie utilise une icône de compagnie standard, comme le ![Lanceur Icône de la compagnie.](media/ui-experience/company-icon.png "Affiche l’icône de changement de compagnie utilisée lorsqu’il n’y a qu’un seul environnement") et ![company-icon-mult-env](media/ui-experience/company-icon-multi-env.png "Affiche l’icône de changement de compagnie utilisée lorsqu’il y a plusieurs environnements").
+
+:::image type="content" source="media/ui-experience/company-switch-2.png" alt-text="Affiche l’icône de changement de compagnie dans l’en-tête du client Business Central.":::  
+
+En utilisant la page **Informations sur la compagnie**, vous pouvez remplacer l’icône standard de la compagnie par un badge personnalisé pour chaque compagnie si le badge de compagnie permet aux utilisateurs d’identifier plus facilement la compagnie dans laquelle ils travaillent.
+
+1. Sur le raccourci **Badge compagnie**, renseignez les champs, le cas échéant. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+2. Cela fait, actualisez le navigateur (appuyez sur Ctrl+F5) pour mettre à jour le badge dans le client.  
+
+> [!NOTE]
+> Le sélecteur de compagnie a été introduit dans la 2e vague de lancement 2022, version 21. Dans les versions antérieures, le badge de compagnie n’était pas utilisé pour changer de compagnie. Il s’affiche dans le coin supérieur droit de la plupart des pages, même lorsqu’il n’y a qu’une seule compagnie. Le sélectionner affichera le nom complet de la compagnie et le nom de l’environnement.
+
+## <a name="change-company-display-name"></a>Modifier le nom d’affichage de la compagnie
+
+Le nom de la compagnie est toujours affiché dans le coin supérieur gauche et fonctionne comme une action que vous pouvez choisir pour revenir dans le Tableau de bord. Vous pouvez changer ce nom sur la page **Informations compagnie**.
+
+1. Choisissez l’icône ![Pignon pour ouvrir le menu Paramètres.](media/ui-experience/settings_icon_small.png) puis choisissez l’action **Informations sur la compagnie**.
+2. Dans le champ **Nom**, saisissez le nom de la nouvelle compagnie.
+3. Quittez la page. Le système redémarre et affiche la nouvelle compagnie dans le coin supérieur gauche.
 
 ## <a name="experience"></a>Expérience
 
-L’expérience utilisateur par défaut dans une version d’évaluation de [!INCLUDE [prod_short](includes/prod_short.md)] ne révèle pas toutes les fonctionnalités. Vous pouvez passer à l’expérience complète dans la page **Informations compagnie**. Pour plus d'informations, voir [Modifier les fonctionnalités affichées](ui-experiences.md).  
+L’expérience utilisateur par défaut dans une version d’évaluation de [!INCLUDE [prod_short](includes/prod_short.md)] ne révèle pas toutes les fonctionnalités. Vous pouvez passer à l’expérience complète sur la page **Informations compagnie**. Pour plus d'informations, voir [Modifier les fonctionnalités affichées](ui-experiences.md).  
 
 ## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/create-new-companies-dynamics-365-business-central/) associée
 
@@ -44,6 +68,6 @@ L’expérience utilisateur par défaut dans une version d’évaluation de [!IN
 [Configurer les informations sur la compagnie en Italie](LocalFunctionality/Italy/how-to-set-up-company-information.md)  
 [Modifier les paramètres de base](ui-change-basic-settings.md)  
 [Modifier les fonctionnalités affichées](ui-experiences.md)  
-
+[Création de compagnies](about-new-company.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

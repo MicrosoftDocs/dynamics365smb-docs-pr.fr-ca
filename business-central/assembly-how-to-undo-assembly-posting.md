@@ -10,14 +10,15 @@ ms.search.keywords: kit, kitting
 ms.search.form: 900, 901, 902, 903, 904, 907, 910, 916, 920, 921, 922, 923, 940, 941, 942, 930, 931, 932, 914, 915, 905
 ms.date: 06/14/2021
 ms.author: edupont
-ms.openlocfilehash: a485162cb194f7f16ff7c33c3e4a095865d35daf
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 8a3588e83ad0a75c4ac9167329659b25ed52320e
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8520474"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9606343"
 ---
 # <a name="undo-assembly-posting"></a>Annuler le report d'assemblage
+
 Vous pouvez parfois être amené à annuler un ordre d'assemblage reporté, par exemple, si la commande a été reportée avec des erreurs qui doivent être corrigées, ou parce qu'il n'aurait pas dû être reporté en premier et doit être annulé.
 
 Lorsque vous annulez un ordre d'assemblage reporté, un ensemble d'écritures du grand livre d'articles de correction est créé pour inverser les écritures d'origine. Chaque écriture production positive pour l'élément d'assemblage est inversée par une écriture production négative. Chaque écriture production négative pour une composante d'assemblage est inversée par une écriture production positive. L'affectation des coûts fixes est créée automatiquement entre les écritures de correction et les écritures d'origine afin de garantir l'exactitude de l'inversion de coût.  
@@ -39,7 +40,8 @@ De plus, les ordres d'assemblage existants ne peuvent être restaurés que si le
 
 La procédure suivante décrit comment annuler les ordres d'assemblage reportés dans lesquels les articles ont été assemblés pour stock. Si vous souhaitez annuler les ordres d'assemblage validés pour lesquels les articles ont été assemblés pour une commande vente, vous devez exécuter la fonction **Annuler expédition** sur l'expédition validée qui se rapporte à l'ordre d'assemblage validé. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md). L'annulation de l'ordre d'assemblage reporté se produit alors automatiquement de la même manière que décrit dans cette rubrique.  
 
-## <a name="to-undo-posting-of-an-assembly-order"></a>Pour annuler le report d'un ordre d'assemblage  
+## <a name="to-undo-posting-of-an-assembly-order"></a>Pour annuler le report d'un ordre d'assemblage
+
 1.  Pour annuler un ordre d’assemblage entièrement ou partiellement reporté, choisissez l’![ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Ordres d’assemblage reportés**, puis sélectionnez le lien associé.  
 
     La page **Ordres d'assemblage reportés** s'ouvre avec un ou plusieurs ordres d'assemblage qui ont été reportés à partir de l'ordre d'assemblage en question. Chaque report partiel crée un ordre d'assemblage reporté distinct.  
@@ -53,12 +55,13 @@ Le champ **Contrepassé** de l'en\-tête d'ordre d'assemblage prend la valeur **
 > [!NOTE]  
 >  Pour restaurer les quantités de plusieurs reports partiels dans un ordre d'assemblage, vous devez annuler tous les ordres d'assemblage reportés concernés en suivant les étapes 1 à 3 ci-dessus pour chaque ordre d'assemblage reporté.  
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi .
+
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)  
-[Traiter les retours ou annulations de ventes](sales-how-process-sales-returns-cancellations.md)    
-[Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
-[Inventaire](inventory-manage-inventory.md)  
+[Traiter les retours ou annulations de ventes](sales-how-process-sales-returns-cancellations.md)  
+[Utilisation des nomenclatures d’assemblage](assembly-how-work-assembly-boms.md)  
+[Stock](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

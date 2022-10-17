@@ -9,25 +9,26 @@ ms.workload: na
 ms.search.form: 672, 673, 674, 671
 ms.date: 10/01/2021
 ms.author: edupont
-ms.openlocfilehash: 081f900836f97d6630608aade4251272ee1a1ff1
-ms.sourcegitcommit: b353f06e0c91aa6e725d59600f90329774847ece
+ms.openlocfilehash: cfbfffdf52e072133451e968e872c7f66a733069
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "9317445"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9607110"
 ---
 # <a name="use-job-queues-to-schedule-tasks"></a>Utiliser des files d'attente des travaux pour programmer des tâches
 
-Les files d’attente des travaux permettent aux utilisateurs de programmer et d’exécuter des rapports et codeunits spécifiques. Vous pouvez définir des projets à exécuter une fois, ou sur une base récurrente. Par exemple, vous souhaiterez peut-être exécuter le rapport **Représentant –– Statistiques vente** sur une base hebdomadaire, pour suivre les ventes par représentant chaque semaine, ou exécuter le codeunit **Déléguer les demandes d’approbation** quotidiennement, pour empêcher les documents de s’empiler ou de bloquer le flux de travail.
+La page Écritures file d’attente des travaux permet aux utilisateurs de programmer et d’exécuter des rapports et codeunits spécifiques. Vous pouvez définir des projets à exécuter une fois, ou sur une base récurrente. Par exemple, vous souhaiterez peut-être exécuter le rapport **Statistiques vente * représentant** sur une base hebdomadaire, pour suivre les ventes par représentant chaque semaine, ou exécuter le codeunit **Déléguer les demandes d’approbation** quotidiennement, pour empêcher les documents de s’empiler ou de bloquer le flux de travail.
 
 La page **Écritures file d'attente des travaux** répertorie tous les projets existants. Si vous ajoutez une nouvelle écriture de file d’attente de travaux que vous souhaitez programmer, vous devez fournir certaines informations. Par exemple :
+
 * Le type d'objet que vous souhaitez exécuter, tel qu'un rapport ou une codeunit. Vous devez être autorisé à exécuter le rapport ou la codeunit en question.
 * Le nom et le code objet de l’objet. 
 * Les paramètres pour spécifier le comportement de la file d’attente des travaux. Par exemple, vous pouvez ajouter un paramètre pour envoyer uniquement des documents de vente reportés. 
 * Quand et à quelle fréquence l’écriture de la file d’attente des travaux sera exécutée.
 
 > [!IMPORTANT]  
-> Si vous utilisez l’ensemble d’autorisations SUPER qui est fourni avec [!INCLUDE[prod_short](includes/prod_short.md)], les utilisateurs et vous-même disposez des autorisations pour exécuter tous les objets dans la licence. Cela n’est toujours pas suffisant pour les administrateurs délégués ou les utilisateurs disposant d’une licence de périphérique, qui ne peuvent pas créer des entrées de file d'attente des travaux.
+> Si vous bénéficiez de l’ensemble d’autorisations SUPER qui est fourni avec [!INCLUDE[prod_short](includes/prod_short.md)], vous disposez des autorisations pour exécuter tous les objets inclus dans votre licence. Si vous disposez du rôle Administrateur délégué, vous pouvez créer et programmer des écritures de file d’attente de travaux, mais seuls les administrateurs et les utilisateurs sous licence peuvent les exécuter. Les utilisateurs disposant de la licence Appareil ne peuvent pas créer ni exécuter d’écritures file d’attente des travaux.
 
 Une fois les files d'attente des travaux configurées et en cours d'exécution, l'état peut être modifié comme suit au cours de chaque période récurrente :
 
@@ -73,7 +74,7 @@ La page **Tâches programmées** dans [!INCLUDE [prod_short](includes/prod_short
 Par exemple, toutes les tâches programmées s’arrêtent si la compagnie se trouve dans un environnement qui est une copie d’un autre environnement. Utilisez la page **Tâches programmées** pour définir les tâches comme prêtes à être exécutées dans la file d'attente des travaux.  
 
 > [!NOTE]
-> Les administrateurs internes et les utilisateurs peuvent programmer l’exécution des tâches. Les administrateurs délégués ne le peuvent pas.
+> Les administrateurs internes et les utilisateurs sous licence peuvent programmer l’exécution des tâches. Les administrateurs délégués peuvent configurer et programmer des tâches à exécuter, mais seuls les utilisateurs sous licence peuvent les exécuter.
 
 ## <a name="the-my-job-queue-part"></a>Composant Ma file d'attente des travaux
 

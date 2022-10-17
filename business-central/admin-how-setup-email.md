@@ -8,14 +8,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: SMTP, email, Office 365, connector
 ms.search.form: 1805, 9813, 9814, 1262, 1263
-ms.date: 02/06/2022
+ms.date: 08/16/2022
 ms.author: bholtorf
-ms.openlocfilehash: 22bd7fcf0eff9b3f7c41975a32127d9d482c42cc
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
+ms.openlocfilehash: 44a590997d7c0ddaa342861068b818bf905f9c5b
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9534302"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9606397"
 ---
 # <a name="set-up-email"></a>Configurer la messagerie
 Les utilisateurs au sein des entreprises envoient des informations et des documents, tels que des documents de vente, des bons de commande et des factures, par courriel, au quotidien. Les administrateurs peuvent connecter un ou plusieurs comptes de messagerie à [!INCLUDE[prod_short](includes/prod_short.md)]. Vous pouvez donc envoyer des documents sans avoir à ouvrir une application de messagerie. Vous pouvez composer chaque message individuellement avec des outils de mise en forme de base, tels que des polices, des styles, des couleurs, etc., et ajouter des pièces jointes pouvant atteindre 100 Mo. De plus, les présentations de rapports permettent aux administrateurs d’inclure uniquement les informations clés des documents. Pour plus d'informations, voir [Envoyer des documents par courriel](ui-how-send-documents-email.md).
@@ -73,7 +73,9 @@ Le guide de configuration assistée **Configurer la messagerie** peut vous aider
 is this still true?-->
 ## <a name="assign-email-scenarios-to-email-accounts"></a>Affecter des scénarios de messagerie aux comptes de messagerie
 Les scénarios de messagerie sont des processus qui impliquent l’envoi d’un document. Par exemple, un document de vente, un bon de commande ou une notification, telle qu’une invitation à un comptable externe. Des comptes de messagerie spécifiques peuvent être utilisés pour des scénarios spécifiques. Par exemple, vous pouvez spécifier que tous les utilisateurs envoient toujours les documents de vente à partir d’un compte, les documents d’achat d’un autre et les documents d’entrepôt ou de production à partir d’un troisième compte. Vous pouvez attribuer, réattribuer et supprimer des scénarios quand vous le souhaitez. Un scénario ne peut être attribué qu’à un seul compte de messagerie à la fois. Le compte de messagerie par défaut sera utilisé pour tous les scénarios qui ne sont pas attribués à un compte.
- 
+
+Sur la page **Affectation des scénarios par courriel**, vous pouvez choisir l’action **Définir les pièces jointes par défaut** pour ajouter des pièces jointes aux scénarios de courriel. Les pièces jointes seront toujours disponibles lorsque vous composerez un courriel pour un document lié au scénario. Chaque scénario de courriel peut avoir une ou plusieurs pièces jointes par défaut. Les pièces jointes par défaut sont automatiquement ajoutées aux courriels pour le scénario de courriel. Par exemple, lorsque vous envoyez une commande client par courriel, la pièce jointe par défaut spécifiée pour le scénario document de vente sera ajoutée. Les pièces jointes par défaut s’affichent dans la section **Pièces jointes** au bas de la page **Composer un courriel**. Vous pouvez ajouter manuellement des pièces jointes autres que celles par défaut au courriel.
+
 <!--
 ## To set up email
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **SMTP Email Setup**, and then choose the related link.
@@ -101,7 +103,7 @@ Dans **Stratégies affichage courriel utilisateur**, choisissez un utilisateur, 
 >  Si vous laissez le champ **Code utilisateur** vide, puis choisissez l’action Stratégie d’affichage des courriels, la stratégie que vous définissez s’applique à tous les utilisateurs.
 
 ## <a name="set-up-reusable-email-texts-and-layouts"></a>Configurer des textes et des présentations de courriel réutilisables
-Vous pouvez utiliser des rapports pour inclure des informations clés provenant de documents de vente et d’achat dans des textes pour courriels. Cette procédure décrit comment configurer le rapport **Vente - Facture** pour les factures vente reportées, mais le processus est similaire pour les autres rapports.
+Vous pouvez utiliser des rapports pour inclure des informations clés provenant de documents de vente, d’achat et de service dans des textes pour courriels. Cette procédure décrit comment configurer le rapport **Vente - Facture** pour les factures vente reportées, mais le processus est similaire pour les autres rapports.
 
 > [!NOTE]
 > Pour utiliser la présentation afin de créer du contenu pour les courriels, vous devez utiliser le type de fichier Word pour votre présentation.
@@ -128,7 +130,7 @@ Vous pouvez également choisir **Utilisateur actuel** pour permettre aux utilisa
 
 Voici des exemples d’utilisation des fonctionnalités Envoyer en tant que et Envoyer de la part de dans [!INCLUDE[prod_short](includes/prod_short.md)] :
 
- * Vous souhaiterez peut-être que les bons de commande ou les documents de vente que vous envoyez à des fournisseurs et à des clients apparaissent comme provenant d’une adresse _noreply@yourcompanyname.com_.
+ * Vous pouvez souhaiter que les bons de commande ou les documents de vente que vous envoyez à des fournisseurs et à des clients apparaissent comme provenant d’une adresse _noreply@yourcompanyname.com_.
  * Lorsque votre flux de travail envoie une demande d'approbation par courriel à l'aide de l'adresse de courriel du demandeur.
 
 > [!Note]

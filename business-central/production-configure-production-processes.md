@@ -9,24 +9,22 @@ ms.workload: na
 ms.search.form: 99000768, 99000779, 99000780, 99000866
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 45fec99ad6082f8d0bb7258415477df833712b41
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 0ae567c2ac44c1b8b272b7a7f2ed1e9ba4826b60
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8523329"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9605776"
 ---
 # <a name="setting-up-manufacturing"></a>Paramétrage de la production
 
 Pour convertir des matières en articles finis produits, vous devez configurer des ressources de production, telles que les nomenclatures, les itinéraires, les opérateurs machines et les machines, dans le système.
 
-Les opérateurs et les machines sont représentés dans le système comme des unités de production pouvant être organisées en ateliers et en groupes d'ateliers. Lorsque ces ressources sont établies, elles peuvent être chargées avec des opérations en fonction des nomenclatures matières et de la structure (itinéraire) opératoire définies pour l'article, et en fonction de la capacité de l'unité de production ou de l'atelier. Vous pouvez également configurer la capacité de production de chaque ressource. La capacité est définie par le temps de travail disponible dans les postes et centres de charge, et est gérée par des calendriers pour chaque niveau. Un calendrier d'atelier spécifie les jours ouvrés et les heures de travail, les équipes, les jours fériés et les absences déterminant la capacité disponible brute de l'atelier (généralement mesurée en minutes). Tout cela est déterminé par les valeurs d'efficacité et de capacité définies.  
+Les opérateurs et les machines sont représentés dans le système comme des unités de production pouvant être organisées en ateliers et en groupes d'ateliers. Lorsque ces ressources sont établies, elles peuvent être chargées avec des opérations en fonction des nomenclatures matières et de la structure (itinéraire) opératoire définies pour l'article, et en fonction de la capacité de l'unité de production ou de l'atelier. Vous pouvez également configurer la capacité de production de chaque ressource. La capacité est définie par le temps de travail disponible dans les postes et centres de charge, et est gérée par des calendriers pour chaque niveau. Un calendrier atelier spécifie les jours ouvrés et les heures de travail, les équipes, les jours fériés et les absences déterminant la capacité disponible brute de l’atelier (généralement mesurée en minutes). Tout cela est déterminé par les valeurs d'efficacité et de capacité définies.  
 
 Une fois que vous avez paramétré la production, vous pouvez planifier et exécuter des ordres de fabrication. Pour plus d'informations, voir [Planification](production-planning.md) et [Production](production-manage-manufacturing.md).  
 
-
-
- Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.   
+Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.
 
 |**Pour**|**Voir**|  
 |------------|-------------|  
@@ -41,12 +39,12 @@ Une fois que vous avez paramétré la production, vous pouvez planifier et exéc
 |Utilisez des tâches standard pour simplifier la création d'itinéraires en associant rapidement des informations supplémentaires aux opérations récurrentes.|[Configurer des lignes itinéraire standard](production-how-set-up-standard-routing-lines.md)|  
 |Préparez les centres de charge et les gammes à représenter les opérations de production sous-traitées.|[Sous-traiter la production](production-how-to-subcontract-manufacturing.md)|  
 
-## <a name="see-also"></a>Voir aussi
-[Production](production-manage-manufacturing.md)
-[Planification](production-planning.md)   
-[Inventaire](inventory-manage-inventory.md)  
-[Procédure d'achat](purchasing-manage-purchasing.md)  
-[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+## <a name="see-also"></a>Voir aussi .
 
+[Production](production-manage-manufacturing.md)  
+[Planification](production-planning.md)  
+[Stock](inventory-manage-inventory.md)  
+[Procédure d'achat](purchasing-manage-purchasing.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

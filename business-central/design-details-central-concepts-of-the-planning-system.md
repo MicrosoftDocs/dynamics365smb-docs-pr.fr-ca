@@ -9,16 +9,16 @@ ms.workload: na
 ms.search.keywords: ''
 ms.date: 06/24/2021
 ms.author: edupont
-ms.openlocfilehash: bce2c42900b67c24801098d2bacae3a0f0aee14a
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.openlocfilehash: a9218bf8d8fa2c7f84b08380742df17bd7be7afe
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8148678"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9605175"
 ---
 # <a name="design-details-central-concepts-of-the-planning-system"></a>Détails de conception : concepts centraux du système de planification
 
-Les fonctions de planification se trouvent dans un traitement en lot qui sélectionne d'abord les articles appropriés et la période à planifier. Puis, en fonction du code de bas niveau de chaque article (ligne nomenclature), le traitement en lot appelle un codeunit qui calcule un programme d'approvisionnement en équilibrant les séries offre-demande et en suggérant des actions possibles que l'utilisateur doit prendre. Les actions suggérées apparaissent sous forme de lignes dans la feuille planification ou la feuille de réquisition.  
+Les fonctions de planification se trouvent dans un traitement en lot qui sélectionne d'abord les articles appropriés et la période à planifier. Puis, en fonction du code de bas niveau de chaque article (position nomenclature), le traitement en lot appelle un codeunit, qui calcule un programme d’approvisionnement en équilibrant les séries offre-demande et en suggérant des actions possibles que l'utlisateur doit prendre. Les actions suggérées apparaissent sous forme de lignes dans la feuille planification ou la feuille de réquisition.  
 
 ![Contenu de la page Feuilles planification.](media/design_details_central_concepts_of_the_planning_system_planning_worksheets.png "Contenu de la page Feuilles planification")  
 
@@ -88,7 +88,7 @@ Lors de l'établissement d'un plan, la séquence des calculs est importante que 
 
 Le système de planification dans [!INCLUDE[prod_short](includes/prod_short.md)] est axé sur les demandes. Les articles de niveau supérieur doivent être planifiés avant les articles de bas niveau, car la planification des articles de niveau supérieur peut générer une demande supplémentaire d'articles de niveau inférieur. Ceci signifie, par exemple, que les emplacements de détail doivent être planifiés avant que les centres de distribution ne soient planifiés, car le programme pour un emplacement de détail peut inclure une demande supplémentaire du centre de distribution. Sur un niveau d’équilibre détaillé, cela signifie également qu’un document de vente ne doit pas déclencher une nouvelle commande d’approvisionnement si une commande d’approvisionnement déjà libérée peut couvrir le document de vente. De même, un approvisionnement portant un numéro de lot spécifique ne doit pas être affecté pour couvrir une demande générique si une autre demande requiert ce lot spécifique.  
 
-### <a name="item-priority--low-level-code"></a>Priorité d'article / Code plus bas niveau
+### <a name="item-priority--low-level-code"></a>Priorité d’article / Code plus bas niveau
 
 Dans un environnement de fabrication, la demande d'un article fini et pouvant être vendu a pour résultat une demande dérivée pour les composantes qui constituent l'article fini. La structure de nomenclature contrôle la structure des composantes et peut couvrir plusieurs niveaux d'articles semi-finis. La planification d'un article à un niveau va créer une demande dérivée pour des composantes au niveau suivant, etc. Cela peut entraîner une demande dérivée pour les articles achetés. Par conséquent, le système de planification planifie les articles par ordre de leur classement dans la hiérarchie de nomenclature totale, en commençant par les articles terminés vendables au niveau supérieur et en continuant dans la structure produit jusqu'aux articles du plus bas niveau (en fonction du code plus bas niveau.)  
 
@@ -98,7 +98,7 @@ Les chiffres indiquent dans quelle séquence le système fait des propositions p
 
 Pour plus d'informations sur la fabrication, voir [Chargement des profils d'inventaire](design-details-balancing-demand-and-supply.md#loading-the-inventory-profiles).  
 
-#### <a name="optimizing-performance-for-low-level-calculations"></a>Optimisation des performances pour les calculs plus bas niveau
+#### <a name="optimizing-performance-for-low-level-calculations"></a>Optimisation des performances pour les calculs de plus bas niveau
 
 Les calculs de code plus bas niveau peuvent avoir un impact sur les performances du système. Pour atténuer l’impact, vous pouvez désactiver **Calcul de code plus bas niveau dynamique** sur la page **Configuration de la fabrication**. Quand vous le faites, [!INCLUDE[prod_short](includes/prod_short.md)] vous suggère de créer une écriture file d'attente des travaux récurrente qui met à jour quotidiennement les codes de bas niveau. Vous pouvez vous assurer que la tâche s’exécutera en dehors des heures de travail en spécifiant une heure de début dans le champ **Date/heure de début au plus tôt**.
 
@@ -109,11 +109,11 @@ Vous pouvez également activer la logique qui accélère les calculs de code plu
 
 ### <a name="locations--transfer-level-priority"></a>Emplacements/priorité de niveau transfert
 
-Les compagnies actives dans plusieurs emplacements peuvent être amenées à planifier chaque emplacement individuellement. Par exemple, le niveau d'inventaire de sécurité d'un article et sa méthode de réapprovisionnement peuvent différer d'un emplacement à un autre. Dans ce cas, les paramètres de planification doivent être spécifiés par article et également par emplacement.  
+Les compagnies actives dans plusieurs emplacements peuvent être amenées à planifier chaque emplacement individuellement. Par exemple, le niveau de stock de sécurité d’un article et sa méthode de réapprovisionnement peuvent différer d’un emplacement à un autre. Dans ce cas, les paramètres de planification doivent être spécifiés par article et également par emplacement.  
 
 Ceci est pris en charge avec l'utilisation des unités de stock, où des paramètres de planification individuels peuvent être spécifiés au niveau des unités de stock. Une unité de stock peut être considérée comme un article dans un emplacement spécifique. Si l'utilisateur n'a pas défini une unité de stock pour cet emplacement, l'application utilisera par défaut les paramètres définis sur la fiche article. L'application calcule un plan pour les emplacements actifs uniquement, c'est-à-dire les emplacements où il existe une offre et une demande pour l'article donné.  
 
-En principe, tout article peut être traité dans n'importe quel emplacement, mais l'approche de l'application vis-à-vis du concept d'emplacement est assez stricte. Par exemple, un document de vente dans un emplacement ne peut pas être satisfait par une certaine quantité en inventaire dans un autre emplacement. La quantité en inventaire doit d'abord être transférée à l'emplacement spécifié sur le document de vente.  
+En principe, tout article peut être traité dans n’importe quel emplacement, mais l’application du programme du concept d’emplacement est assez stricte. Par exemple, un document de vente dans un emplacement ne peut pas être satisfait par une certaine quantité en inventaire dans un autre emplacement. La quantité en inventaire doit d'abord être transférée à l'emplacement spécifié sur le document de vente.  
 
 ![Planification pour unités de stock.](media/NAV_APP_supply_planning_1_SKU_planning.png "Planification d'unités de stock")  
 
@@ -127,13 +127,13 @@ Pour en savoir plus, voir [Affecter une priorité aux commandes](design-details-
 
 ## <a name="demand-forecasts-and-blanket-orders"></a>Prévisions de demande et commandes permanentes
 
-Les prévisions et les commandes permanentes représentent la demande anticipée. La commande permanente, qui regroupe les achats prévus d'un client sur une certaine période, contribue à réduire l'incertitude de la prévision globale. La commande permanente est une prévision spécifique au client qui s'ajoute à la prévision non spécifiée comme illustré ci-dessous.  
+Les prévisions et les commandes permanentes représentent la demande anticipée. La commande permanente, qui regroupe les achats prévus d’un client sur une certaine période, se charge d’amortir l’incertitude de la prévision globale. La commande permanente est une prévision spécifique au client qui s'ajoute à la prévision non spécifiée comme illustré ci-dessous.  
 
 ![Planification avec prévisions.](media/NAV_APP_supply_planning_1_forecast_and_blanket.png "Planification avec prévisions")  
 
 Pour plus d’informations, reportez-vous à la section [La demande de prévision est réduite par les documents de vente](design-details-balancing-demand-and-supply.md#forecast-demand-is-reduced-by-sales-orders).  
 
-## <a name="planning-assignment"></a>Planification des activités
+## <a name="planning-assignment"></a>Affectation de planification
 
 Tous les articles doivent être planifiés. Cependant, il n'existe aucune raison de calculer une planification pour un article à moins qu'il n'y ait eu une modification de la configuration de l'offre ou de la demande depuis la dernière fois qu'un plan a été calculé.  
 
@@ -143,7 +143,7 @@ Le système de planification contrôle ces événements et affecte les articles 
 
 Pour plusieurs emplacements, l'affectation se fait au niveau de l'article par combinaison d'emplacements. Si, par exemple, un document de vente a été créé à un seul emplacement, l'application affecte l'article à cet emplacement spécifique pour la planification.  
 
-La raison de la sélection d'articles pour la planification est une question de performances système. Si aucune modification du motif demande-approvisionnement d'un article n'a été apportée, le système de planification ne propose aucune action à effectuer. Sans l'affectation de planification, le système devrait effectuer les calculs pour tous les articles afin de déterminer quoi planifier, et cela purgerait des ressources du système.  
+La raison de la sélection d'articles pour la planification est une question de performances système. Si aucune modification du motif demande-approvisionnement d’un article n’a été apportée, le système de planification ne propose aucune action à effectuer. Sans l'affectation de planification, le système devrait effectuer les calculs pour tous les articles afin de déterminer quoi planifier, et cela purgerait des ressources du système.  
 
 La liste complète des motifs pour affecter un article à la planification est disponible dans [Détails de conception : tableau d'affectation de planification](design-details-planning-assignment-table.md).  
 
@@ -158,7 +158,7 @@ En plus de ces considérations, le système de planification planifie uniquement
 
 Pour plus d'informations sur les procédures de planification automatiques, voir [Détails de conception : équilibrage de la demande et de l'approvisionnement](design-details-balancing-demand-and-supply.md).  
 
-## <a name="item-dimensions"></a>Dimensions d'article
+## <a name="item-dimensions"></a>Dimensions d’article
 
 L'offre et la demande peuvent contenir des codes variante et des codes d'emplacement qui doivent être respectés lorsque le système de planification équilibre l'offre et la demande.  
 
@@ -250,7 +250,7 @@ L'avertissement Urgence est affiché dans deux situations :
 -   Lorsque l'inventaire est négatif à la date début de la planification.  
 -   Lorsqu'il existe des événements d'offre ou de demande rétroactifs.  
 
-Si l'inventaire d'un article est négatif à la date début de la planification, le système de planification suggère un approvisionnement d'urgence afin que la quantité négative arrive à la date début de la planification. Le texte d'avertissement indique la date début et la quantité de la commande d'urgence. Pour plus d'informations, voir [Traitement de l'inventaire négatif prévisionnel](design-details-handling-reordering-policies.md#handling-projected-negative-inventory).  
+Si l’inventaire d’un article est négatif à la date début de la planification, le système de planification suggère un approvisionnement d’urgence afin que la quantité négative arrive à la date début de la planification. Le texte d'avertissement indique la date début et la quantité de la commande d'urgence. Pour plus d'informations, voir [Traitement de l'inventaire négatif prévisionnel](design-details-handling-reordering-policies.md#handling-projected-negative-inventory).  
 
 Les lignes document avec une date d'échéance antérieure à la date début de la planification sont consolidées dans une commande d'approvisionnement d'urgence pour que l'article arrive à la date début de la planification.  
 
@@ -284,7 +284,7 @@ Si le champ n'est pas activé, le traitement en lot Calculer planification se po
 
 ![Messages d’erreur dans la feuille planification.](media/NAV_APP_supply_planning_1_error_log.png "Messages d'erreur dans la feuille planification")  
 
-## <a name="planning-flexibility"></a>Flexibilité de planification
+## <a name="planning-flexibility"></a>Flexibilité planification
 
 Il n'est pas toujours pratique de planifier une commande d'approvisionnement existante, par exemple si la fabrication a commencé ou si du personnel supplémentaire est engagé un jour spécifique pour faire le travail. Pour indiquer si une commande existante peut être modifiée par le système de planification, toutes les lignes de commande d'approvisionnement ont un champ Flexibilité de planification avec deux options : Illimité ou Aucun. Si le champ est défini sur Aucune, le système de planification ne tente pas de modifier la ligne commande d'approvisionnement.  
 
@@ -292,14 +292,14 @@ Le champ peut être manuellement défini par l'utilisateur, cependant, dans cert
 
 Pour plus d'informations sur l'utilisation de ce champ, voir [Détails de conception : transferts de planification](design-details-transfers-in-planning.md).  
 
-## <a name="order-planning"></a>Planification de commande
+## <a name="order-planning"></a>Planification commande
 
 L'outil de base de planification de l'approvisionnement représenté par la page **Planification commande** est conçu pour la prise de décision manuelle. Il ne tient compte d'aucun paramètre de planification et n'est donc pas traité ultérieurement dans ce document. Pour plus d’informations, consultez [Planifier de nouvelles demandes commande par commande](production-how-to-plan-for-new-demand.md).  
 
 > [!NOTE]  
 >  Il n'est pas recommandé d'utiliser la Planification commande si la compagnie utilise déjà les feuilles de réquisition ou de planification. Les commandes d'approvisionnement créées via la page **Planification commande** peuvent être modifiées ou supprimées pendant les planifications automatisées. En effet, la planification automatisée utilise les paramètres de planification qui n'ont peut-être pas été pris en compte par l'utilisateur ayant créé la planification manuelle sur la page Planification de commande.  
 
-##  <a name="finite-loading"></a>Chargement limité
+## <a name="finite-loading"></a>Chargement limité
 
 [!INCLUDE[prod_short](includes/prod_short.md)] est un système ERP standard, et non un système d'affectation ou de gestion d'atelier. Il prévoit une utilisation faisable des ressources via un calendrier approximatif, mais il ne crée pas et ne met pas à jour automatiquement des calendriers détaillés sur la base de priorités ou de règles d'optimisation.  
 
@@ -308,19 +308,18 @@ L'utilisation prévue de la fonction Capacité critique est 1) : pour éviter l
 Lors de la planification avec des ressources avec contraintes de capacité, le système veille à ce qu'aucune ressource ne soit chargée au-dessus de sa capacité définie (charge critique). Ceci est effectué en affectant chaque opération à l'emplacement du temps disponible le plus proche. Si le créneau n'est pas assez long pour effectuer toute l'opération, l'opération est répartie en au moins deux parties placées dans les créneaux disponibles les plus proches.  
 
 > [!NOTE]  
->  En cas de répartition des opérations, le temps de préparation n'est affecté qu'une fois car on suppose qu'un certain ajustement manuel est effectué pour optimiser le calendrier.  
+> En cas de répartition des opérations, le temps de préparation n'est affecté qu'une fois car on suppose qu'un certain ajustement manuel est effectué pour optimiser le calendrier.  
 
 Le seuil peut être ajouté aux ressources pour réduire la répartition des opérations. Cela permet au système de programmer une charge sur le dernier jour possible en dépassant légèrement le pourcentage de charge critique si ceci peut réduire le nombre d'opérations qui sont divisées.  
 
 Cela complète la planification des concepts centraux en relation avec la planification des approvisionnements dans [!INCLUDE[prod_short](includes/prod_short.md)]. Les sections suivantes examinent les concepts plus profonds et les placent dans le cadre des procédures de planification de base, de l'équilibrage de l'approvisionnement et de la demande, ainsi que de l'utilisation des méthodes de réapprovisionnement.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi .
 
-[Détails de conception : transferts de planification](design-details-transfers-in-planning.md)   
-[Détails de conception : paramètres de planification](design-details-planning-parameters.md)   
-[Détails de conception : tableau d'affectation de planification](design-details-planning-assignment-table.md)   
-[Détails de conception : gestion des méthodes de réapprovisionnement](design-details-handling-reordering-policies.md)   
-[Détails de conception : équilibrage de la demande et de l'approvisionnement](design-details-balancing-demand-and-supply.md)
-
+[Détails de conception : transferts de planification](design-details-transfers-in-planning.md)  
+[Détails de conception : paramètres de planification](design-details-planning-parameters.md)  
+[Détails de conception : tableau d'affectation de planification](design-details-planning-assignment-table.md)  
+[Détails de conception : gestion des méthodes de réapprovisionnement](design-details-handling-reordering-policies.md)  
+[Détails de conception : équilibrage de la demande et de l'approvisionnement](design-details-balancing-demand-and-supply.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

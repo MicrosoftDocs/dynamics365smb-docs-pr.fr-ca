@@ -10,15 +10,16 @@ ms.search.keywords: kit, kitting
 ms.search.form: 900, 901, 902, 903, 904, 907, 910, 916, 920, 921, 922, 923, 940, 941, 942, 930, 931, 932, 914, 915, 905
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: c388cdb7780e8af5a3da1c35bd31f9263df879d3
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.openlocfilehash: 41e682a54861857ce0ee36bbbf34924c5795b11b
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8520500"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9605472"
 ---
 # <a name="create-blanket-assembly-orders"></a>Création d'ordres d'assemblage permanents
-Vous pouvez utiliser la gestion d'assemblage pour personnaliser un élément d'assemblage sur la demande d'un client au cours du processus de vente. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).  
+
+Vous pouvez utiliser la gestion d’assemblage pour personnaliser un élément d’assemblage sur la demande d’un client au cours du processus de vente. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).  
 
  Comme pour tout autre type d'article, vous pouvez également créer des commandes permanentes ventes pour les éléments d'assemblage personnalisés avant de créer périodiquement les documents de vente réels en fonction de l'entente commande permanente. Ce processus implique plusieurs étapes supplémentaires lorsque vous le comparez à la création d'une commande permanente ventes classique, et il utilise une variante d'un ordre d'assemblage associé, qui est un ordre d'assemblage permanent.
 
@@ -26,6 +27,7 @@ Vous pouvez utiliser la gestion d'assemblage pour personnaliser un élément d'a
 >  Comme toutes les commandes permanentes, les quantités des commandes permanentes d'assemblage ne sont que des prévisions et ne sont pas opérationnelles avant d'être converties en ordres d'assemblage réels. Par conséquent, la fonctionnalité commande, comme le calcul de disponibilité, la réservation et la traçabilité des articles, n'est pas active sur les ordres d'assemblage permanents.  
 
 ## <a name="to-create-a-blanket-assembly-order-for-an-assemble-to-order-item"></a>Pour créer un ordre d'assemblage permanent pour un article à assembler pour commande  
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente permanents**, puis sélectionnez le lien associé.  
 2. Créez une commande permanente ventes avec une ligne pour un élément d'assemblage. Pour plus de détails, reportez-vous à la rubrique [Créer des commandes permanentes ventes](sales-how-to-create-blanket-sales-orders.md).  
 3. Dans le champ **Quantité à assembler pour commande** de la ligne d'ordre d'assemblage permanent, saisissez la quantité entière.
@@ -40,11 +42,12 @@ Vous pouvez utiliser la gestion d'assemblage pour personnaliser un élément d'a
 
 L'ordre d'assemblage permanent associé et toutes les personnalisations sont liées à ce nouveau document de vente pour préparer l'assemblage de l'article ou des articles à vendre.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi .
+
 [Créer des commandes permanentes ventes](sales-how-to-create-blanket-sales-orders.md)  
 [Gestion d'assemblage](assembly-assemble-items.md)  
-[Utiliser les nomenclatures](inventory-how-work-BOMs.md)  
-[Inventaire](inventory-manage-inventory.md)  
+[Utilisation des nomenclatures d’assemblage](assembly-how-work-assembly-boms.md)  
+[Stock](inventory-manage-inventory.md)  
 [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

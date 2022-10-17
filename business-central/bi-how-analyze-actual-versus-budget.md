@@ -1,6 +1,6 @@
 ---
 title: Analyser les montants réalisés et les montants budgétés
-description: Cette rubrique explique comment analyser les montants réels par rapport aux montants budgétés afin de collecter, d’analyser et de partager les données de votre compagnie.
+description: Cet article explique comment analyser les montants réels par rapport aux montants budgétés afin de collecter, d’analyser et de partager les données de votre compagnie.
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
@@ -8,21 +8,23 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: bi, power BI, analysis, KPI
 ms.search.form: 120, 121, 422
-ms.date: 06/15/2021
+ms.date: 09/14/2022
 ms.author: edupont
-ms.openlocfilehash: 8be263821e288d314f0c5b91415ca204e767a98e
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
+ms.openlocfilehash: 927622bf51f4474d995cd2e35f72ec3111844886
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9535112"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9605283"
 ---
 # <a name="analyze-actual-amounts-versus-budgeted-amounts"></a>Analyser les montants réalisés et les montants budgétés
+
 Dans le cadre de la collecte, de l'analyse et du partage des données de votre compagnie, vous voyez les montants réels comparés aux montants budgétés de tous les comptes et pour plusieurs périodes.
 
-Pour analyser les montants budgétés, vous devez d’abord créer des budgets grand livre. Pour plus d'informations, voir [Créer des budgets GL](finance-how-create-budgets.md).
+Pour analyser les montants budgétés, vous devez d’abord créer des budgets du grand livre (GL). Pour en savoir plus, voir [Créer des budgets GL](finance-how-create-budgets.md).
 
-## <a name="to-view-a-gl-budget"></a>Pour visualiser un budget GL
+## <a name="view-a-gl-budget"></a>Afficher un budget GL
+
 Dans un budget doté d'axes, vous pouvez filtrer les écritures et visualiser des budgets spécifiques.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Budgets GL**, puis choisissez le lien associé.
@@ -30,47 +32,49 @@ Dans un budget doté d'axes, vous pouvez filtrer les écritures et visualiser de
 3. En haut de la page, renseignez les champs nécessaires pour définir ce qui est affiché. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 > [!NOTE]  
->   Si vous avez sélectionné **Période** dans le champ **Afficher lignes** ou **Afficher colonnes**, puis vous devez renseigner le champ **Afficher par**. Si vous n'avez pas sélectionné **Période** dans le champ **Afficher lignes** ou **Afficher colonnes**, entrez la période appropriée dans le champ **Filtre date**.  
+> Si vous avez sélectionné **Période** dans le champ **Afficher lignes** ou **Afficher colonnes**, alors vous devez renseigner le champ **Afficher par**. Si vous n’avez pas sélectionné **Période** dans l’un de ces champs, entrez la période appropriée dans le champ **Filtre date**.  
 
 > [!NOTE]  
->   Seules les écritures budget en comptabilité contenant les codes filtre entrés sur le raccourci **Filtres** sont incluses dans le calcul. Les écritures budget contenant d'autres codes filtre ou ne contenant aucun code filtre sont exclues. Tant que le filtre est présent sur la page, le budget n'affiche que les écritures budget contenant ces codes filtre.  
+> Seules les écritures issues du budget du grand livre contenant les codes filtre entrés sur le raccourci **Filtres** sont incluses dans le calcul. Les écritures budget contenant d’autres codes filtre ou ne contenant aucun code filtre sont exclues. Tant que le filtre est présent sur la page, le budget n’affiche que les écritures budget contenant ces codes filtre.  
 
 > [!TIP]  
->   Si vous souhaitez modifier le budget, vous pouvez modifier les écritures budget. Choisissez un montant pour afficher les écritures budget sous-jacentes.
+> Utilisez l’action **Modifier le budget** pour modifier le budget. Sur la page des budgets, choisissez un montant pour afficher les écritures budget sous-jacentes.
 
-## <a name="to-view-actual-and-budgeted-amounts-for-all-accounts"></a>Pour afficher les montants budgétés et réalisés de tous les comptes  
+## <a name="view-actual-and-budgeted-amounts-for-all-accounts"></a>Afficher les montants budgétés et réalisés de tous les comptes
+
 Vous pouvez afficher des budgets et les comparer aux chiffres réels dans différents modules de [!INCLUDE[prod_short](includes/prod_short.md)].
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.  
 2. Sur la page **Plan comptable**, choisissez l'action **Solde/budget du grand livre**.
-3. En haut de la page, renseignez les champs nécessaires pour définir ce qui est affiché.  
-4. Pour voir le détail d'un montant affiché, sélectionnez ce champ.  
+3. Dans le raccourci **Options**, renseignez les champs nécessaires pour définir ce qui est affiché dans la table.  
+4. Survolez un champ de la table pour lire une brève description du montant affiché.
 
 > [!NOTE]  
->   Les filtres que vous définissez dans l'en-tête de la page sont appliqués aux écritures et aux écritures budget.
+> Les filtres que vous définissez dans l’en-tête de la page sont appliqués à la fois aux écritures et aux écritures budget.
 
 Les colonnes les plus à gauche contiennent le plan comptable. Sur les cinq colonnes les plus à droite, les quatre premières affichent les montants crédit et débit budgétés, et réalisés pour chaque compte. La cinquième colonne indique la relation proportionnelle entre les montants budgétés et réalisés sur le compte du grand livre.  
 
 > [!TIP]  
->   Le champ **Afficher par** de la page **Solde/budget du grand livre** permet de sélectionner la longueur de la période. Le champ **Afficher en tant que** permet de sélectionner le mode de calcul des montants, à savoir **Solde période** ou **Solde au**. Choisissez **Période précédente** ou **Période suivante** pour changer de période.  
+> Le champ **Afficher par** de la page **Solde/budget du grand livre** permet de sélectionner la longueur de la période. Le champ **Afficher en tant que** permet de sélectionner le mode de calcul des montants, à savoir **Solde période** ou **Solde au**. Choisissez **Période précédente** ou **Période suivante** pour changer de période.  
 
 ## <a name="to-view-actual-and-budgeted-amounts-for-several-periods"></a>Pour afficher les montants budgétés et réalisés de plusieurs périodes  
+
 Au lieu de visualiser les montants budgétés et réalisés de tous les comptes au sein d'une seule période, vous pouvez afficher un certain nombre de périodes pour un seul compte.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.  
-2. Sur la page **Plan comptable**, sélectionnez le compte GL approprié, puis choisissez l'action **Solde/budget de compte du grand livre**.  
-3. En haut de la page, renseignez les champs nécessaires pour définir ce qui est affiché.   
-4. Pour voir le détail d'un montant affiché, sélectionnez ce champ.  
+2. Sur la page **Plan comptable**, sélectionnez le compte du grand livre approprié, puis choisissez l’action **Solde/Budget compte GL**.  
+3. Dans le raccourci **Options**, renseignez les champs nécessaires pour définir ce qui est affiché dans la table.  
+4. Dans le raccourci **Lignes**, survolez un champ de la table pour lire une brève description du montant affiché.  
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/budgets-exchange-rates-dynamics-365-business-central/index) associée
+## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/budgets-exchange-rates-dynamics-365-business-central/index).
 
-## <a name="see-also"></a>Voir aussi
-[Veille économique](bi.md)  
-[Utilisation des tableaux d'analyse](bi-how-work-account-schedule.md)  
+## <a name="see-also"></a>Voir aussi .
+
+[Décisionnel pour le secteur de la finance](bi.md)  
+[Utiliser les rapports financiers](bi-how-work-account-schedule.md)  
 [Finance](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
-[Le grand livre et le plan comptable](finance-general-ledger.md)  
+[Les écritures comptables et le plan comptable](finance-general-ledger.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

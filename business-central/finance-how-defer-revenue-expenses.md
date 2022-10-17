@@ -10,12 +10,12 @@ ms.search.keywords: postpone
 ms.search.form: 1700, 1701, 1702, 1703, 1704, 1705, 1706, 1707
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: d7eac169dc75f81f1d696a4a1e7344b5235a83a3
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
+ms.openlocfilehash: 9d6acc41574870d691a14913ed0222df36dbeb74
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9529104"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9605526"
 ---
 # <a name="defer-revenues-and-expenses"></a>Echelonner les recettes et les dépenses
 
@@ -95,6 +95,18 @@ Les écritures à reporter vers le compte d'échelonnement spécifié, par exemp
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Résumé échelonnement vente**, puis sélectionnez le lien associé.
 2. Sur la page **Résumé échelonnement ventes**, dans le champ **Balance au**, saisissez la date à laquelle vous souhaitez voir les recettes échelonnées.
 3. Cliquez sur le bouton **Aperçu**.
+
+## <a name="to-specify-a-period-in-which-to-allow-deferral-posting"></a>Pour spécifier une période au cours de laquelle autoriser le report de l’échelonnement
+
+Vous pouvez spécifier une période au cours de laquelle les personnes peuvent enregistrer des transactions en saisissant des dates dans les champs **Début période report** et **Fin période report**, comme suit :
+
+* Pour tous les utilisateurs, sur la page **Configuration du grand livre** :
+* Pour des utilisateurs spécifiques, sur la page **Configuration utilisateur**
+
+Si vous l’avez fait, vous devez faire une exception pour les échelonnements afin de leur permettre d’être reportés en dehors de la période. Pour définir la période, procédez comme suit :
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du grand livre** ou **Configuration de l'utilisateur**, puis choisissez le lien associé.
+2. Dans les champs **Autoriser le report de l'échelonnement à partir de** et **Autoriser le report de l'échelonnement jusqu’à**, entrez une date de début et de fin pour la période.
 
 ## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/processing-invoices-dynamics-365-business-central/) associée
 

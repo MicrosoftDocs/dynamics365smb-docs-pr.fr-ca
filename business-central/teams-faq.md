@@ -7,34 +7,34 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: Teams, MS Teams, Microsoft Teams, Skype, Link, Microsoft 365, collaborate, collaboration, teamwork, faq, errors
-ms.date: 10/01/2021
+ms.date: 09/28/2022
 ms.author: jswymer
-ms.openlocfilehash: addfaaf3e5991e5e0bce4d7e39c47f645cd6a2de
-ms.sourcegitcommit: d6af3155bb818430f22d5caca78df322a8d9b178
+ms.openlocfilehash: d9dfc380b1b8a76fc06363740b256f28b162a85a
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "8528589"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9606127"
 ---
 # <a name="teams-faq"></a>FAQ Teams
 
 [!INCLUDE [online_only](includes/online_only.md)]
 
-Cet article répond à certaines des questions que vous pourriez vous poser sur l’utilisation de Teams et [!INCLUDE [prod_short](includes/prod_short.md)].
+Cet article répond à certaines des questions que vous pourriez vous poser sur l’utilisation de Microsoft Teams et [!INCLUDE [prod_short](includes/prod_short.md)].
 
 ## <a name="general"></a>[Général](#tab/general)
 
 ### <a name="how-do-i-sign-in-to-the-prod_shortmd-app-in-teams"></a>Comment puis-je me connecter à l’application [!INCLUDE [prod_short.md](includes/prod_short.md)] dans Teams ?
 
-Après avoir installé l’application, vous serez invité à vous connecter la première fois pour utiliser l'application, lorsque vous collez un lien [!INCLUDE [prod_short.md](includes/prod_short.md)] vers le chat Teams ou lorsque vous choisissez l’action **Détails** sur une fiche dans Teams. En fonction de votre client Teams, vous devrez peut-être entrer vos informations d’identification que vous utilisez pour accéder à [!INCLUDE [prod_short.md](includes/prod_short.md)].
+Après avoir installé l’application, vous serez invité à vous connecter la première fois pour utiliser l′application, lorsque vous collez un lien [!INCLUDE [prod_short.md](includes/prod_short.md)] vers le chat Teams ou lorsque vous choisissez l’action **Détails** sur une fiche dans Teams. En fonction de votre client Teams, vous devrez peut-être entrer vos informations d’identification que vous utilisez pour accéder à [!INCLUDE [prod_short.md](includes/prod_short.md)].
 
 ### <a name="how-do-i-sign-out-of-the-prod_shortmd-app-in-teams"></a>Comment puis-je me déconnecter de l’application [!INCLUDE [prod_short.md](includes/prod_short.md)] dans Teams ?
 
-Pour vous déconnecter de votre identité d’utilisateur actuelle dans Teams utilisé pour vous connecter à [!INCLUDE [prod_short.md](includes/prod_short.md)], accédez à n’importe quelle boîte de composition de discussion instantanée, cliquez avec le bouton droite sur l'icône [!INCLUDE [prod_short.md](includes/prod_short.md)] située en dessous et choisissez **Paramètres**. Lorsque la fenêtre apparaît, vérifiez votre identité actuellement connectée, puis choisissez **Déconnexion**.
+Pour vous déconnecter de votre identité d’utilisateur actuelle dans Teams utilisé pour vous connecter à [!INCLUDE [prod_short.md](includes/prod_short.md)], accédez à n’importe quelle boîte de composition de discussion instantanée, cliquez avec le bouton droite sur l′icône [!INCLUDE [prod_short.md](includes/prod_short.md)] située en dessous et choisissez **Paramètres**. Lorsque la fenêtre apparaît, vérifiez votre identité actuellement connectée, puis choisissez **Déconnexion**.
 
 ### <a name="does-the-app-for-teams-connect-to-prod_shortmd-on-premises"></a>L’application pour Teams se connecte-t-elle à [!INCLUDE [prod_short.md](includes/prod_short.md)] en local ? 
 
-Non. L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams ne fonctionne qu’avec [!INCLUDE [prod_short.md](includes/prod_short.md)] en ligne. Il n’y a pas de plans pour soutenir les [!INCLUDE [prod_short.md](includes/prod_short.md)] types de déploiement&mdash;tels que local, nuage hybride ou nuage privé&mdash;que Microsoft n’héberge pas ou ne gère pas directement.
+N° L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams ne fonctionne qu’avec [!INCLUDE [prod_short.md](includes/prod_short.md)] en ligne. Il n’y a pas de plan pour soutenir les types de déploiement [!INCLUDE [prod_short.md](includes/prod_short.md)]&mdash; comme en local, en nuage hybride ou en nuage privé&mdash; que Microsoft n’héberge pas ou ne gère pas directement.
 
 ### <a name="does-the-app-work-with-multiple-companies-and-environments"></a>L’application fonctionne-t-elle avec plusieurs compagnies et environnements? 
 
@@ -46,7 +46,7 @@ L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams n�
 
 ### <a name="does-the-prod_shortmd-app-work-with-any-localization-of-prod_shortmd"></a>Est-ce que l’application [!INCLUDE [prod_short.md](includes/prod_short.md)] fonctionne avec n’importe quelle localisation de [!INCLUDE [prod_short.md](includes/prod_short.md)] ? 
 
-Oui. L’application est conçue pour fonctionner avec toute localisation de [!INCLUDE [prod_short.md](includes/prod_short.md)], que cette localisation soit proposée directement par Microsoft ou via un partenaire. Pour plus d'informations, voir [Disponibilité par pays/région et langues prises en charge](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations?toc=/dynamics365/business-central/toc.json).
+Oui. L’application est conçue pour fonctionner avec toute localisation de [!INCLUDE [prod_short.md](includes/prod_short.md)], que cette localisation soit proposée directement par Microsoft ou via un partenaire. En savoir plus sur [Disponibilité par pays/région et langues prises en charge](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations?toc=/dynamics365/business-central/toc.json).
 
 ### <a name="which-languages-does-the-prod_shortmd-app-support"></a><a name="language"></a>Avec quelles langues l’application [!INCLUDE [prod_short.md](includes/prod_short.md)] est-elle compatible ?
 
@@ -59,7 +59,7 @@ Le tableau suivant explique en quoi l’expérience diffère pour les auteurs et
 
 |Qui|Fiche|Détails de la fiche |
 |-|----|--------------| 
-|Auteur du message |S’affiche dans la langue spécifiée pour vous dans Teams. Si [!INCLUDE [prod_short.md](includes/prod_short.md)] n’est pas compatible avec la même langue, la fiche est affichée en anglais. |S’affiche dans la langue spécifiée pour vous dans [!INCLUDE [prod_short.md](includes/prod_short.md)].  laquelle peut inclure des langues issues d’applications linguistiques fournies par des partenaires. |
+|Auteur du message |S’affiche dans la langue spécifiée pour vous dans Teams. Si [!INCLUDE [prod_short.md](includes/prod_short.md)] n’est pas compatible avec la même langue, la fiche est affichée en anglais. |S’affiche dans la langue spécifiée pour vous dans [!INCLUDE [prod_short.md](includes/prod_short.md)], ce qui peut inclure des langues provenant d’applications linguistiques fournies par des partenaires. |
 |Destinataire du message |S’affiche dans la langue de l’auteur du message. |S’affiche dans la langue spécifiée pour vous dans [!INCLUDE [prod_short.md](includes/prod_short.md)]. |
 
 Pour la liste des langues prises en charge pour [!INCLUDE [prod_short.md](includes/prod_short.md)], voir [Langues prises en charge](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations?toc=/dynamics365/business-central/toc.json#supported-languages).
@@ -73,20 +73,20 @@ Oui. Mais seules certaines fonctionnalités de l'application fonctionnent avec [
 
 ### <a name="does-prod_shortmd-work-with-the-teams-mobile-app"></a>[!INCLUDE [prod_short.md](includes/prod_short.md)] est-il compatible avec l’application mobile Teams ?
 
-Oui. L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] peut être installée à partir de l’application de bureau ou du navigateur Teams, ou par un administrateur pour tous les utilisateurs. Une fois installé, l’application [!INCLUDE [prod_short.md](includes/prod_short.md)] est automatiquement disponible dans Teams pour iOS et Android. Sur les appareils mobiles, vous ne pouvez afficher que les fiches envoyées par d’autres personnes, accéder aux détails ou afficher la fiche pour profiter pleinement de l’expérience de l’application mobile [!INCLUDE [prod_short.md](includes/prod_short.md)]. Vous ne pouvez pas coller des liens qui se développent dans des fiches lors de la rédaction de messages ou la recherche de contacts. Pour connaître la configuration minimale requise pour le mobile, consultez [Configuration minimale requise pour l’utilisation de Business Central](product-requirements.md).
+Oui. L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] peut être installée à partir de l’application de bureau ou du navigateur Teams, ou par un administrateur pour tous les utilisateurs. Une fois installé, l’application [!INCLUDE [prod_short.md](includes/prod_short.md)] est automatiquement disponible dans Teams pour iOS et Android. Sur les appareils mobiles, vous ne pouvez afficher que les fiches envoyées par d’autres personnes, accéder aux détails ou afficher la fiche pour profiter pleinement de l’expérience de l’application mobile [!INCLUDE [prod_short.md](includes/prod_short.md)]. Vous ne pouvez pas coller des liens qui se développent dans des fiches lors de la rédaction de messages ou la recherche de contacts. Pour en savoir plus sur la configuration minimale requise pour le mobile, voir [Configuration minimale requise pour l’utilisation de Business Central](product-requirements.md).
 
 ### <a name="is-the-prod_shortmd-app-for-teams-the-same-as-the-prod_shortmd-app-for-ios-and-android"></a>L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams est-elle identique à l’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour iOS et Android ?
 
-Non. L’application pour Teams est un complément pour Microsoft Teams et exclusivement conçue pour des expériences collaboratives qui s’illuminent dans Teams. D’autre part, l’application mobile [!INCLUDE [prod_short.md](includes/prod_short.md)] offre une expérience riche avec laquelle vous pouvez utiliser les données [!INCLUDE [prod_short.md](includes/prod_short.md)] sur vos appareils mobiles.
+Non. L’application pour Teams est un complément pour Microsoft Teams et exclusivement conçue pour la collaboration dans Teams. Sinon, l’application mobile [!INCLUDE [prod_short.md](includes/prod_short.md)] offre une expérience riche avec laquelle vous pouvez utiliser les données [!INCLUDE [prod_short.md](includes/prod_short.md)] sur vos appareils mobiles.
 
-Les utilisateurs mobiles sont encouragés à installer à la fois l’application mobile et l’application pour que Teams tire le meilleur parti de [!INCLUDE [prod_short.md](includes/prod_short.md)]. Avec les deux installés, vous pouvez choisir l’action **Ouvrir dans une nouvelle fenêtre** sur une fiche dans Teams pour ouvrir les détails de la fiche dans l’application mobile [!INCLUDE [prod_short.md](includes/prod_short.md)]. Pour plus d’informations sur l’installation de [!INCLUDE [prod_short.md](includes/prod_short.md)] et les applications mobiles Teams, voir :
+Les utilisateurs mobiles sont encouragés à installer à la fois l’application mobile et l’application pour que Teams tire le meilleur parti de [!INCLUDE [prod_short.md](includes/prod_short.md)]. Avec les deux installés, vous pouvez choisir l’action **Ouvrir dans une nouvelle fenêtre** sur une fiche dans Teams pour ouvrir les détails de la fiche dans l’application mobile [!INCLUDE [prod_short.md](includes/prod_short.md)]. Pour en savoir plus sur l’installation de [!INCLUDE [prod_short.md](includes/prod_short.md)] et les applications mobiles Teams, voir :
 
 - [Obtenir Business Central sur votre périphérique mobile](install-mobile-app.md)
 - [Télécharger l’application mobile Teams](https://support.microsoft.com/office/download-the-mobile-app-for-teams-5940ebdc-0082-4fb1-83c4-751edc23dcb5) sur le support Microsoft
 
 ### <a name="does-the-prod_shortmd-app-work-in-all-teams-clients"></a>L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] est-elle compatible avec tous les clients Teams ?
 
-Non. L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams n’est pas prise en charge lorsqu’elle est installée en tant que package pour macOS ou Linux. Sur ces plates-formes, vous pouvez accéder à Teams à la place à l’aide d’un navigateur pris en charge.
+N° L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams n’est pas prise en charge lorsqu’elle est installée en tant que package pour macOS ou Linux. Sur ces plates-formes, vous pouvez accéder à Teams à la place à l’aide d’un navigateur pris en charge.
 
 Pour connaître la configuration minimale requise dans [!INCLUDE [prod_short.md](includes/prod_short.md)], voir [Configuration minimale requise pour l’utilisation de Business Central](product-requirements.md#teams).
 
@@ -104,7 +104,7 @@ Il n’y a que des différences et limitations mineures entre les clients Teams 
 
 Si vous êtes un partenaire revendeur, vous souhaiterez peut-être disposer d’un environnement dans lequel vous pourrez montrer aux prospects dans le cadre de démonstrations avant-vente. Pour éviter d’affecter Microsoft Teams dans votre organisation, vous pouvez obtenir un compte de démonstration Microsoft 365 sur [https://aka.ms/CDX](https://aka.ms/CDX). Ce compte vous donne le contrôle total d’une organisation Azure indépendante qui comprend Microsoft Teams et [!INCLUDE [prod_short.md](includes/prod_short.md)]. Pour plus d’informations, voir [Préparer les environnements de démonstration de Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/administration/demo-environment).
 
-### <a name="does-the-prod_shortmd-app-for-teams-cater-for-my-customization-and-personalization"></a>L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams prend-elle en charge ma personnalisation et la personnalisation ?
+### <a name="does-the-prod_shortmd-app-for-teams-cater-to-my-customization-and-personalization"></a>L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams prend-elle en charge ma personnalisation et la personnalisation ?
 
 L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams peut afficher des fiches pour des liens vers des pages client et des tables dans [!INCLUDE [prod_short.md](includes/prod_short.md)], comme les pages et les tables provenant de vos propres extensions personnalisées ou depuis AppSource.
 
@@ -116,14 +116,14 @@ Lorsque vous recherchez des contacts, les champs qui correspondent dans la table
 
 Avant d’installer l’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams, vous pouvez consulter les autorisations minimales requises pour que l’application fonctionne. En installant l’application, vous acceptez que l’application soit autorisée à recevoir les messages et les données que vous lui fournissez, et Teams est autorisé à stocker et à traiter ces messages.
 
-Aussi certaines fonctionnalités [!INCLUDE [prod_short.md](includes/prod_short.md)] nécessitent l’ouverture de liens externes ou l’accès à votre caméra ou à votre emplacement géographique. Par exemple, supposons que vous vouliez capturer une photo d’une facture d’achat pour la traiter. L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] n’utilise pas ces fonctions sans votre consentement et elles ne sont utilisées que par des fonctionnalités spécifiques de la fenêtre **Détails**. Lorsque vous utilisez l’une de ces fonctionnalités pour la première fois, Teams affiche une boîte de dialogue vous demandant d’accorder l’accès aux fonctionnalités requises de l’appareil.
+Aussi certaines fonctionnalités [!INCLUDE [prod_short.md](includes/prod_short.md)] nécessitent l’ouverture de liens externes ou l’accès à votre caméra ou à votre emplacement géographique. Supposons que vous vouliez capturer une photo d’une facture d’achat pour la traiter. L’application [!INCLUDE [prod_short.md](includes/prod_short.md)] n’utilise pas ces fonctions sans votre consentement et elles ne sont utilisées que par des fonctionnalités spécifiques de la fenêtre **Détails**. Lorsque vous utilisez l’une de ces fonctionnalités pour la première fois, Teams affiche une boîte de dialogue vous demandant d’accorder l’accès aux fonctionnalités requises de l’appareil.
 
 - Dans le bureau Teams, vous examinez et ajustez les autorisations des applications à partir de la fenêtre **Paramètres**. Sélectionnez votre photo de profil en haut de l’application, sélectionnez **Paramètres** > **Autorisations**, puis sélectionnez l’application [!INCLUDE [prod_short.md](includes/prod_short.md)].
 
 - Pour Teams dans le navigateur et Teams pour iOS ou Android, vous pouvez consulter ou ajuster les autorisations à partir des paramètres de votre navigateur ou de votre appareil.
 
 > [!NOTE]
-> Les fonctionnalités [!INCLUDE [prod_short.md](includes/prod_short.md)] qui vous demandent des autorisations dépendent des applications complémentaires et des personnalisations affectées à l’environnement [!INCLUDE [prod_short.md](includes/prod_short.md)] auquel vous vous connectez.
+> Les fonctionnalités [!INCLUDE [prod_short.md](includes/prod_short.md)] qui vous demandent des autorisations dépendent des applications complémentaires et des personnalisations appliquées à l’environnement [!INCLUDE [prod_short.md](includes/prod_short.md)] auquel vous vous connectez.
 
 ### <a name="where-can-i-learn-about-my-privacy"></a>Où puis-je en savoir plus sur ma confidentialité ? 
 
@@ -137,13 +137,13 @@ Pour supprimer l’application que vous avez installée pour vous-même, accéde
 
 ### <a name="will-microsoft-continue-to-improve-the-prod_shortmd-app-for-teams"></a>Microsoft continuera-t-il à améliorer l’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams ?
 
-Chez Microsoft, nous écoutons constamment les commentaires de notre communauté diverse d’utilisateurs et prenons les mesures nécessaires pour agir sur les principales propositions de la communauté. Pour en savoir plus sur la prochaine étape pour l’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams, consultez le [Plan de versions de Dynamics 365](/dynamics365-release-plan/2021wave1/).
+Chez Microsoft, nous écoutons constamment les commentaires de notre communauté diverse d’utilisateurs et prenons les mesures nécessaires pour agir sur les principales propositions de la communauté. Pour en savoir plus sur la prochaine étape pour l’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams, consultez le [Plan de versions de Dynamics 365](/dynamics365-release-plan/2021wave1/).
 
 Si vous souhaitez participer à l’amélioration de l’application pour Teams, ou si vous avez une idée qui vous aiderait à simplifier votre travail ou vos expériences collaboratives dans Teams, ajoutez une idée ou votez pour des idées existantes sur [https://aka.ms/BusinessCentralIdeas](https://aka.ms/BusinessCentralIdeas).
 
 ### <a name="where-can-i-find-teams-integration-inside-the-business-central-web-client"></a>Où puis-je trouver l’intégration Teams dans le client web Business Central ? 
 
-Pour les fonctionnalités du client web lié à Teams, consultez la section [Partager des enregistrements et des liens de page dans Microsoft Teams](across-working-with-teams.md#share-link).
+Pour en savoir plus sur les fonctionnalités du client web lié à Teams, consultez la section [Partager des enregistrements et des liens de page dans Microsoft Teams](across-working-with-teams.md#share-link).
 
 ## <a name="search-for-contacts"></a>[Recherche de contacts](#tab/contacts)
 
@@ -153,10 +153,9 @@ Lors de la recherche de contacts à partir de l'application [!INCLUDE [prod_shor
 
 ### <a name="which-fields-in-the-contacts-table-can-i-search"></a>Dans quels champs de la table des contacts, puis-je effectuer une recherche ?
 
-Lorsque vous tapez vos termes de recherche dans le champ de recherche, les termes sont mis en correspondance avec la plupart des champs de la table **Contacts**. Les champs incluent, par exemple, les champ **Numéro**, **Nom**, **Adresse**, **Pas de numéro de téléphone** ou **Numéro de téléphone portable** et **Courriel**. 
+Lorsque vous tapez vos termes de recherche dans le champ de recherche, les termes sont mis en correspondance avec la plupart des champs de la table **Contacts**. Les champs incluent, par exemple, les champs **Numéro**, **Nom**, **Adresse**, **N° de téléphone** ou les champs **N° de téléphone portable** et **Courriel**. 
 
 Les termes de recherche ne correspondent à aucun champ personnalisé ajouté à la table **Contacts** par les applications et les extensions.
-
 ### <a name="do-search-results-include-companies-and-persons"></a>Les résultats de recherche incluent-ils des compagnies et des personnes?
 
 Oui. Dans [!INCLUDE [prod_short.md](includes/prod_short.md)], les contacts peuvent être de type **Compagnie** ou saisissez **Personne**, où une ou plusieurs personnes peuvent être associées à une compagnie. Dans les résultats de recherche, les compagnies et les personnes ont des icônes différentes.
@@ -233,7 +232,7 @@ Après vous être connecté à l'application [!INCLUDE [prod_short.md](includes/
 
 L′application peut également vous demander de visiter les **Paramètres** si vous n′avez pas d′abonnement [!INCLUDE [prod_short.md](includes/prod_short.md)], si aucun environnement [!INCLUDE [prod_short.md](includes/prod_short.md)] n′apparaît ou votre compte n′a pas de licence [!INCLUDE [prod_short.md](includes/prod_short.md)].
 
-### <a name="id-like-to-search-for-items-or-records-from-other-tables-can-i-do-this-from-teams"></a>Je voudrais rechercher des éléments ou des enregistrements d'autres tables. Puis-je faire cela depuis Teams ?
+### <a name="id-like-to-search-for-items-or-records-from-other-tables-can-i-do-this-from-teams"></a>Je voudrais rechercher des éléments ou des enregistrements d′autres tables. Puis-je faire cela depuis Teams ?
 
 La recherche dans d'autres tables n'est pas possible pour le moment. L'application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams recherche uniquement dans la liste de contacts [!INCLUDE [prod_short.md](includes/prod_short.md)], qui peut inclure des fournisseurs, des clients et d'autres contacts.
 
@@ -270,7 +269,7 @@ Lorsque vous rédigez et envoyez un message à la discussion instantanée qui in
 
 ### <a name="how-do-i-find-out-which-company-a-card-in-teams-belongs-to"></a>Comment savoir à quelle compagnie appartient une carte dans Teams?
 
-Si vous travaillez avec des compagnies [!INCLUDE [prod_short.md](includes/prod_short.md)], demandez à votre administrateur d’activer un badge compagnie pour chaque compagnie. Lorsqu’il est activé, cet indice voyant apparaît dans n’importe quelle fenêtre de détails dans Teams et affiche la compagnie et l’environnement auxquels appartient l’enregistrement. Pour savoir comment configurer le badge compagnie, voir [Pour afficher un badge compagnie pour un accès rapide aux informations de la compagnie](ui-change-basic-settings.md#badge).
+Si vous travaillez avec des compagnies [!INCLUDE [prod_short.md](includes/prod_short.md)], demandez à votre administrateur d’activer un badge compagnie pour chaque compagnie. Lorsqu’il est activé, cet indice voyant apparaît dans n’importe quelle fenêtre de détails dans Teams et affiche la compagnie et l’environnement auxquels appartient l’enregistrement. Pour savoir comment configurer un badge de compagnie, voir [Afficher un badge de compagnie](admin-company-information.md#badge).
 
 ## <a name="work-with-card-details"></a>[Utiliser les détails de fiche](#tab/carddetails)
 
@@ -300,7 +299,7 @@ Oui. Toutes les fonctionnalités [!INCLUDE [prod_short.md](includes/prod_short.m
 
 ### <a name="can-i-access-my-location-from-the-details-window-in-teams"></a><a name="location"></a>Puis-je accéder à mon emplacement depuis la fenêtre de détails dans Teams ?
 
-Si vous utilisez une fonctionnalité dans [!INCLUDE [prod_short.md](includes/prod_short.md)] qui accède à vos coordonnées de localisation actuelles, comme avec des cartes, vous devez utiliser Teams dans le navigateur ou l’application mobile Teams. La localisation n’est pas disponible lors de l’utilisation de l’application de bureau Teams.
+Si vous utilisez des fonctionnalités dans [!INCLUDE [prod_short.md](includes/prod_short.md)] qui accèdent à vos coordonnées de localisation actuelles, comme avec des cartes, vous devez utiliser Teams dans le navigateur ou l’application mobile Teams. La localisation n’est pas disponible lors de l’utilisation de l’application de bureau Teams.
 
 ### <a name="how-do-i-open-the-details-in-a-new-window"></a>Comment ouvrir les détails dans une nouvelle fenêtre ?
 
@@ -326,7 +325,7 @@ Les invités n’ont pas accès au marché des applications pour installer eux-m
 
 ### <a name="does-share-to-teams-send-a-compact-card"></a>Est-ce que Partager avec Teams envoie une fiche compacte? 
 
-Pour le moment, seul un lien profond vers la page est partagé. Les destinataires verront un lien hypertexte dans votre message ; ils pourront le sélectionner pour les diriger vers [!INCLUDE [prod_short.md](includes/prod_short.md)] dans une fenêtre de navigateur distincte. 
+Oui. Le lien se développera automatiquement dans une carte si vous avez installé l’application Business Central pour Teams. 
 
 ### <a name="will-recipients-receive-the-message-from-me-or-from-a-business-central-service-account"></a>Les destinataires recevront-ils le message de ma part ou de celle d’un compte de service Business Central ? 
 
@@ -334,7 +333,7 @@ Lorsque vous utilisez Partager avec Teams, le message est envoyé à une personn
 
 ### <a name="is-share-to-teams-available-in-business-central-on-premises"></a>Est-ce que Partager avec Teams est disponible dans Business Central sur site? 
 
-Non. De même manière que l’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams, cette fonctionnalité est uniquement disponible pour le client web dans [!INCLUDE [prod_short.md](includes/prod_short.md)] en ligne. Il n’y a pas de plan pour soutenir les types de déploiement [!INCLUDE [prod_short.md](includes/prod_short.md)]&mdash; comme en local, en nuage hybride ou en nuage privé&mdash; que Microsoft n’héberge pas ou ne gère pas directement.
+Non. De même manière que l’application [!INCLUDE [prod_short.md](includes/prod_short.md)] pour Teams, cette fonctionnalité est uniquement disponible pour le client web dans [!INCLUDE [prod_short.md](includes/prod_short.md)] en ligne. Il n’y a pas de plans pour soutenir les [!INCLUDE [prod_short.md](includes/prod_short.md)] types de déploiement&mdash;tels que local, nuage hybride ou nuage privé&mdash;que Microsoft n’héberge pas ou ne gère pas directement.
 
 ### <a name="does-share-to-teams-grant-permissions-to-recipients"></a>Est-ce que Partager avec teams accorde des autorisations aux destinataires? 
 

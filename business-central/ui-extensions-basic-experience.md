@@ -10,12 +10,12 @@ ms.search.keywords: C5, financials, extension
 ms.search.form: 20600,
 ms.date: 04/01/2021
 ms.author: bholtorf
-ms.openlocfilehash: 4304a42f865086de3337deb3a49b1f1512e0e201
-ms.sourcegitcommit: 38b1272947f64a473de910fe81ad97db5213e6c3
+ms.openlocfilehash: b0443ef53a564e103810543225cc0c4a0c6bced7
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 08/29/2022
-ms.locfileid: "9362232"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9606046"
 ---
 # <a name="the-basic-experience-extension"></a>Extension d’expérience de base
 
@@ -24,16 +24,16 @@ Si vous utilisez Microsoft Dynamics C5, les partenaires Microsoft peuvent vous a
 Cette extension est destinée aux petites entreprises et peut prendre en charge jusqu’à trois utilisateurs. Si vous avez besoin de plus d’utilisateurs, vous devez passer à une licence [!INCLUDE[prod_short](includes/prod_short.md)] et désinstallez cette extension.
 
 > [!NOTE]
-> À partir de maintenant, cette extension n’est disponible que pour les clients au Danemark et en Islande. 
+> À partir de maintenant, cette extension n’est disponible que pour les clients au Danemark et en Islande.
 
 ## <a name="whats-available"></a>Ce qui est disponible
 
 Le tableau suivant décrit les fonctionnalités disponibles si vous installez l’extension d’expérience de base.
 
-|Région  |Fonctionnalité  |
+|Aire  |Fonctionnalité  |
 |---------|---------|
-|**Grand livre** |Finance de base, Calendriers de comptes, Immobilisations, Gestion bancaire, Rapprochement bancaire, Paiements, Prélèvement, Dimensions, Devises multiples, Budgets, Workflow, Gestion de documents/OCR, Consolidation, Compagnies illimitées|
-|**Comptabilité client/Ventes** |Comptabilité client de base, Facturation des ventes, Escomptes sur les ventes, Tarification, Taxe de vente, Gestion des contacts |
+|**Grand livre** |Finance de base, rapports financiers, immobilisations, gestion bancaire, rapprochement bancaire, paiements, prélèvement, dimensions, devises multiples, budgets, flux de travail, gestion de documents/OCR, consolidation, compagnies illimitées|
+|**Comptabilités client/Ventes** |Comptabilité client de base, facturation des ventes, escomptes sur les ventes, tarification, taxe de vente, gestion des contacts |
 |**Comptabilité fournisseur/Achats** |Comptabilité fournisseur de base, Facturation des achats |
 |**Gestion de projets** |Projets, Tarification de projet, Feuilles de temps, Affectation, Tâches, Ressources |
 |**Inventaire** |Inventaire de base, Substitutions d’articles, Références croisées d’articles |
@@ -46,7 +46,7 @@ Cette extension est un peu différente de la plupart des autres, et vous aurez b
 2. Ajoutez au moins un utilisateur affecté à une licence d’expérience de base dans votre compte Azure Active Directory.
 3. Supprimez toutes les compagnies, y compris l’exemple de compagnie Cronus.
 4. Créez une compagnie qui ne contient aucun exemple de données ou de configuration.
-5. Ajoutez le package **Démo RapidStart**. <!--what does the pockage contain?-->
+5. Ajoutez le package **Démo RapidStart**. <!--what does the package contain?-->
 6. Téléchargez et installez l’extension d’expérience de base à partir de AppSource.
 
 ## <a name="migrating-data"></a>Migration des données

@@ -10,12 +10,12 @@ ms.search.keywords: VAT, sales, purchases
 ms.search.form: 7, 118, 130, 142, 459, 460, 525
 ms.date: 06/16/2021
 ms.author: bholtorf
-ms.openlocfilehash: b8c09f49b741f7979f79f5e3305ef11258ffaaea
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
+ms.openlocfilehash: 0a8d8f32613af2c0aab6905f62682e3c93307993
+ms.sourcegitcommit: b4da421c19c3aa3031b0344ec2829d2038be6642
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9530929"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "9617831"
 ---
 # <a name="work-with-vat-on-sales-and-purchases"></a>Utiliser la TVA sur les ventes et les achats
 Si votre pays ou votre région vous oblige à calculer et déclarer la taxe sur la valeur ajoutée (TVA) sur les transactions vente et achat, vous pouvez configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour calculer la TVA. Pour plus d'informations, voir [Configuration des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md).
@@ -61,6 +61,18 @@ En fonction de ce que vous souhaitez faire, vous pouvez affecter un groupe de re
 
 #### <a name="examples"></a>Exemples
 Des facteurs tels que le pays ou la région dans lesquels vous vendez, ou le type de secteurs auxquels vous vendez, peuvent avoir un impact sur le montant de la TVA que vous devez comptabiliser. Par exemple, un restaurant peut facturer 6 % de TVA pour les repas consommés sur place et 17 % pour les plats à emporter. Pour ce faire, vous créez un groupe de report marché TVA (prix) pour la restauration sur place et un autre pour les plats à emporter.
+
+## <a name="working-with-vat-date"></a>Utilisation de la date de TVA
+### <a name="vat-date-in-documents"></a>Date de TVA dans les documents
+Lorsque vous créez des documents de vente ou d’achat, la **Date de TVA** est basée sur le paramètre du champ **Date de TVA par défaut** sur la page **Configuration du grand livre**. Cette valeur par défaut peut être la même que **Date de report** ou **Date du document**. Si vous avez besoin d’une autre date de TVA, vous pouvez modifier manuellement la valeur dans le champ **Date de TVA**. Lorsque vous reportez le document, la **Date de TVA** apparaît sur le document de report et sur les écritures TVA et GL.
+
+### <a name="correcting-vat-date-in-posted-entries"></a>Correction de la date de TVA dans les écritures reportées
+Dans certaines situations, il est nécessaire de modifier la date de TVA même si le document a été reporté et cela peut être fait dans [!INCLUDE[prod_short](includes/prod_short.md)]. Pour changer la **Date de TVA** pour les documents reportés, vous devez suivre ces étapes :
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures TVA**, puis choisissez le lien associé.
+2. Trouvez l’entrée avec une date de TVA incorrecte.
+3. Cliquez sur **Modifier la liste** et entrez la date correcte dans le champ **Date de TVA**.
+4. Fermez la page.
+5. La nouvelle date de TVA est modifiée dans le champ **Écritures GL** associé et dans le document reporté s’il existe.
 
 ## <a name="correcting-vat-amounts-manually-in-sales-and-purchase-documents"></a>Correction manuelle des montants de TVA dans des documents achat et vente  
 Vous pouvez apporter des corrections à des écritures TVA reportées afin de pouvoir modifier les montants TVA totaux vente ou achat sans changer la base TVA. Par exemple, si vous recevez une facture d’un fournisseur avec un montant TVA incorrect.  

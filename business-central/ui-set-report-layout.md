@@ -8,14 +8,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: customized report, document layout, logo, personalize
 ms.search.form: 9652, 9650
-ms.date: 03/07/2022
+ms.date: 08/12/2022
 ms.author: jswymer
-ms.openlocfilehash: e59a57e6cac21f4909088defc42da795e5550562
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
+ms.openlocfilehash: d63bfb699932261e0e9b74ef3aebcbd52bc53604
+ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9535864"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9606894"
 ---
 # <a name="setting-the-layout-used-by-a-report"></a>Définition de la présentation utilisée par un rapport
 
@@ -25,17 +25,19 @@ La présentation d’un rapport détermine l’apparence de ce dernier. Elle dé
 
 Lorsqu’il y a plusieurs compagnies dans l’application, les présentations sont définies pour chaque compagnie. Ainsi, le même rapport dans une compagnie peut avoir une présentation différente dans une autre compagnie.
 
-## <a name="get-started"></a>Démarrer
+## <a name="get-started"></a>Mise en route
 
-Il existe deux manières de définir la présentation utilisée par un rapport. Une façon consiste à aller sur la page **Sélection présentation rapport**. L’autre façon consiste à aller sur la page **Présentations de rapport**. Chaque page a des avantages, par exemple : 
+Il existe quelques manières de définir la présentation utilisée par un rapport. Chaque méthode présente des avantages, selon ce que vous cherchez à faire : 
 
-- La page **Sélection de présentation de rapport** affiche la liste de tous les rapports.
+- Depuis la page de demande du rapport
 
-  Cette page indique la présentation actuelle d’un rapport. De plus, vous pouvez définir des présentations dans différentes compagnies, sans avoir à changer celle avec laquelle vous travaillez.
+  Lors de la configuration d’un rapport à exécuter, la page de demande du rapport inclut le champ **Présentation des rapports** qui affiche la présentation par défaut actuelle utilisée par le rapport. Vous pouvez utiliser ce champ pour passer temporairement à une autre présentation disponible pour le rapport que vous exécutez. Après avoir exécuté le rapport, la présentation revient à la présentation par défaut. Pour en savoir plus, consultez [Exécuter et imprimer des rapports](ui-work-report.md#switching-the-report-layout).
 
-- La page **Présentations de rapport** affiche toutes les présentations disponibles pour chaque rapport dans la compagnie actuelle.
+- Depuis la page **Sélection présentation rapport**
 
-  Il est facile de trouver une présentation spécifique en triant ou en filtrant la liste. Une fois que vous avez trouvé la présentation, vous pouvez la définir pour un rapport avec une seule sélection.
+  La page **Sélection de présentation de rapport** affiche la liste de tous les rapports. Cette page indique la présentation par défaut actuelle d’un rapport. Vous pouvez définir des présentations dans différentes compagnies, sans avoir à changer celle avec laquelle vous travaillez.
+
+- Depuis la page **Présentations de rapport** La page **Présentations de rapport** affiche toutes les présentations disponibles pour chaque rapport dans la compagnie actuelle. Elle est également utilisée pour spécifier la présentation par défaut des rapports. Il est facile de trouver une présentation spécifique en triant ou en filtrant la liste. Une fois que vous avez trouvé la présentation, vous pouvez la définir pour un rapport avec une seule sélection.
 
   > [!NOTE]
   > Vous ne pouvez pas utiliser la page **Présentations de rapport** pour les présentations Word et RDLC qui ont été créées à l’aide de la fonctionnalité **Présentations personnalisées** héritée. En fait, vous ne verrez même pas ces présentations personnalisées répertoriées sur la page **Présentations de rapport**. Vous ne pouvez définir ces présentations qu’en utilisant la page **Sélection présentation rapport**.
