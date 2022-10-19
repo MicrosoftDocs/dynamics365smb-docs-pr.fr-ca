@@ -1,27 +1,32 @@
 ---
-author: edupont04
+author: brentholtorf
 ms.topic: include
-ms.date: 04/01/2021
-ms.author: edupont
-ms.openlocfilehash: ed62e60d3b5b1af2158d8adc6c411884ea4c12aa
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
+ms.date: 10/05/2022
+ms.author: bholtorf
+ms.openlocfilehash: 8849f1c5d33cd1f826e7f53be317cb01e513fcd1
+ms.sourcegitcommit: a9c778b65925435a4099fad45b3611f310e0b203
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8133586"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9652148"
 ---
-Lorsque tous les articles ont été entrés en tant que lignes, vous pouvez calculer l'escompte facture pour l’ensemble du document vente en choisissant l’action **Calculer escompte facture**.
+Après avoir ajouté tous les articles sur les lignes, vous pouvez calculer l'escompte facture pour l’ensemble du document vente en choisissant l’action **Calculer escompte facture**.
 
-L’escompte est calculé en fonction de toutes les lignes du document vente pour les articles et les ressources pour lesquels le champ **Escompte facture autorisée** de la ligne document de vente indique **Oui**. C’est la configuration par défaut pour les articles. Les lignes avec des frais annexes, par exemple, ne sont pas incluses dans le calcul de l’escompte facture. Si vous souhaitez affecter un escompte à ces lignes, vous devez définir le champ **% escompte ligne** sur les lignes appropriées.  
+L'escompte est calculé sur la base de toutes les lignes du document vente où la case **Autoriser escompte facture** est cochée. Par défaut, les escomptes facture sont autorisés. Toutefois, les lignes avec des frais annexes, par exemple, ne sont pas incluses dans le calcul de l'escompte facture. Pour affecter un escompte à ces lignes, entrez une valeur dans le champ **Montant escompte ligne** sur les lignes.  
+
+> [!NOTE]
+> Par défaut, les champs **Autoriser escompte facture** et **Montant escompte ligne** sont cachés sur les lignes. Si les champs ne sont pas disponibles, vous pouvez les ajouter en personnalisant la page. Pour plus d'informations, voir [Personnaliser votre espace de travail](../ui-personalization-user.md#to-start-personalizing-a-page-through-the-personalizing-banner).
 
 > [!TIP]
-> Si le champ **Calculer escompte facture** est sélectionné dans la page **Configuration ventes**, l’escompte facture est calculé automatiquement lorsque vous effectuez l’une des actions suivantes sur un document vente :
+> Si le champ **Calculer escompte facture** est sélectionné sur la page **Configuration ventes**, l'escompte facture est calculé automatiquement. Le moment du calcul diffère selon le type de document vente que vous utilisez.
+>
+> Si vous utilisez un document de vente, l'escompte est calculé quand vous ajoutez une ligne. Pour tous les autres documents vente, tels que les factures vente, l'escompte est calculé quand vous effectuez l’une des actions suivantes :
 >
 > * Afficher les statistiques
 > * Afficher un rapport de test
 > * Imprimer
-> * Report
+> * Envois postaux
 
-Les conditions d’escompte facture pour un client sont définies sur la page **Escompte facture client** pour le client. Le code devise du document vente est utilisé pour trouver les conditions escompte facture dans la devise correspondante.
+Vous définissez les conditions d'escompte facture pour un client sur la page **Escomptes facture client**. Le code devise du document vente est utilisé pour trouver les conditions escompte facture dans la devise correspondante.
 
-Si vous n’avez pas défini d'escompte facture pour les devises, les conditions d'escompte facture définies sur la page **Escomptes facture client** avec des montants dans votre devise locale et le taux de change à la date de report du document vente sont utilisés pour calculer l'escompte facture en devise étrangère.
+Si vous n’avez pas défini d'escomptes facture pour les devises étrangères, les conditions d'escompte sur la page **Escomptes facture client** sont utilisés pour calculer l'escompte. Le calcul utilise votre devise locale et le taux de change en vigueur à la date de report du document.
