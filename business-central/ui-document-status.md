@@ -1,19 +1,19 @@
 ---
 title: Champ État sur les documents
 description: Pour en savoir plus sur l'état « En cours » et « Libéré » figurant sur les documents de devis, de commande ou de note de crédit.
-author: rubenseishima
+author: brentholtorf
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.search.keywords: document, status, quote, order, credit memo, released, open, pending approval, pending prepayment,
 ms.search.form: ''
 ms.date: 09/19/2022
-ms.author: a-reishima
-ms.openlocfilehash: c96909b4ee37673ee7b0c752224478a144ad853e
-ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
+ms.author: bholtorf
+ms.openlocfilehash: f48f499277155aaf60ae0992199d7895225f1ef5
+ms.sourcegitcommit: 5bb13966e9ba8d7a3c2f00dd32f167acccf90b82
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "9608263"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728637"
 ---
 # <a name="status-field-on-documents"></a>Champ État sur les documents
 
@@ -28,34 +28,34 @@ Après avoir renseigné le document, vous pouvez le libérer et [!INCLUDE[prod_s
 | Approbation en attente   | Le document est en attente d'approbation. |
 | Paiement anticipé en attente | Une facture paiement anticipé a été reportée pour ce document. |
 
-## <a name="releasing"></a>Lancement
+## <a name="release-process"></a>Traitement des versions
 
 Vous pouvez utiliser le processus de libération de différentes manières afin de faciliter le flux de travail normal, et de suivre, par exemple, les procédures de la compagnie concernant les approbations ou démarrer les activités entrepôt.
 
 ### <a name="approval-procedures"></a>Procédures d’approbation
 
-Votre compagnie peut utiliser la procédure de libération pour indiquer qu’un autre utilisateur a approuvé le document, ou qu’un contact externe peut répondre aux spécifications du document, comme l’indiquent les exemples suivants :
+Votre compagnie peut utiliser la procédure de lancement pour indiquer qu’un autre utilisateur a approuvé le document, ou qu’un contact externe peut répondre aux spécifications du document, comme l’indiquent les exemples suivants :
 
-* Vous pouvez uniquement libérer un bon de commande lorsque le fournisseur vous a indiqué qu'il est en mesure d'y répondre.
-* Vous créez une commande et un deuxième utilisateur doit l'approuver (par exemple, pour des raisons de sécurité) avant que vous soyez autorisé à la libérer.
-* La note de crédit que vous avez créée doit être libérée par le responsable chargé d'approuver tous les remboursements.
+* Vous pouvez uniquement libérer un bon de commande lorsque le fournisseur a indiqué qu’il est en mesure d’y répondre.
+* Vous créez un ordre et un deuxième utilisateur doit l’approuver (par exemple, pour des raisons de sécurité) avant que vous soyez autorisé à le libérer.
+* Le responsable chargé d’approuver tous les remboursements doit émettre une note de crédit que vous avez créée.
 
 En savoir plus sur les flux de travail approbation sur [Utiliser les flux de travail](across-use-workflows.md).
 
 ### <a name="warehouse-activities"></a>Activités entrepôt
 
-Si l'état de l’ordre est **Ouvert**, l’entrepôt ne commence pas à préparer la livraison et ne prévoit pas de recevoir les articles d’un bon de commande. Lorsque vous libérez la commande, vous indiquez qu'elle est terminée et que l'entrepôt peut l'inclure dans ses activités.
+Si l'état de l’ordre est **En cours**, l’entrepôt ne commence pas à préparer la livraison et ne prévoit pas de recevoir les articles d’un bon de commande. Lorsque vous libérez l’ordre, vous indiquez qu’il est terminé et que l’entrepôt peut l’inclure dans ses activités.
 
-## <a name="reopening-a-released-order"></a>Réouverture d'un ordre libéré
+## <a name="reopen-a-released-order"></a>Réouverture d’un ordre libéré
 
 Vous pouvez modifier un ordre libéré en le rouvrant. Cependant, vous pouvez uniquement augmenter la quantité de lignes déjà traitées par l'entrepôt.
 
-Lorsque vous avez modifié l’ordre et que vous le libérez à nouveau, le programme recalcule la TVA et l'escompte facture.
+Lorsque vous apportez les modifications et que vous relibérez l'ordre, [!INCLUDE [prod_short](includes/prod_short.md)] calcule à nouveau la TVA et l'escompte facture.
 
 Si vous apportez des modifications à un ordre libéré, vous devez les notifier à l'entrepôt.
 
 > [!NOTE]
-> Si vous souhaitez reporter un seul ordre ouvert ou une note de crédit sans le/la libérer au préalable, le programme lance automatiquement le document lorsque vous le reportez. Si vous reportez des ordres ou des notes de crédit à l’aide de la fonction **Reporter par lot**, vous pouvez uniquement reporter ceux que vous avez libérés.
+> Si vous souhaitez reporter un seul ordre ouvert ou une note de crédit sans le/la libérer au préalable, [!INCLUDE [prod_short](includes/prod_short.md)] libère automatiquement le document lorsque vous le reportez. Si vous reportez des ordres ou des notes de crédit à l’aide de la fonction **Reporter par lot**, vous pouvez uniquement reporter ceux que vous avez libérés.
 
 ## <a name="see-also"></a>Voir aussi .
 

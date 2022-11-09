@@ -1,7 +1,7 @@
 ---
 title: Annuler un report en reportant une écriture de contrepassation
 description: Si vous avez effectué une erreur de report dans le journal général, vous pouvez utiliser la fonction Inverser la transaction pour annuler le report avec une piste d'audit correcte.
-author: SorenGP
+author: brentholtorf
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -9,74 +9,88 @@ ms.workload: na
 ms.search.keywords: reimbursement
 ms.search.form: 20, 25, 29, 38, 202, 5912,
 ms.date: 07/22/2021
-ms.author: edupont
-ms.openlocfilehash: 8757ba52142990449d5d60273a73bdc146ffb240
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
+ms.author: bholtorf
+ms.openlocfilehash: d00f8b355e25e15a6aa610dd3392bfc63b7bfad3
+ms.sourcegitcommit: 5bb13966e9ba8d7a3c2f00dd32f167acccf90b82
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8517508"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728691"
 ---
 # <a name="reverse-journal-postings-and-undo-receiptsshipments"></a>Inverser des reports journal et annuler des réceptions/livraisons
 
-L’inversion des reports journal n’est pas seulement utilisée pour corriger les erreurs, mais elle peut également être utilisée pour effacer une ancienne écriture de régularisation avant d’en saisir une nouvelle, par exemple. Vous sélectionnez l’écriture et créez une écriture de contrepassation (écritures identiques aux écritures originales mais avec le signe opposé dans le champ du montant) portant le même numéro de document et la même date de report que l’écriture d’origine. Une fois l'écriture inversée, créez l'écriture correcte.
+L'inversion des reports journal est utile, par exemple, pour corriger les erreurs et pour effacer une ancienne écriture de régularisation avant d’en saisir une nouvelle. Une écriture inversée est identique à l’écriture d’origine, mais a un signe opposé dans le champ **Montant**. L’écriture inversée doit avoir le même numéro de document et la même date de report que l’écriture d’origine. Une fois l’écriture inversée, créez l’écriture correcte.
 
-Vous pouvez uniquement inverser les écritures reportées à partir d'une ligne journal général. Une écriture ne peut être inversée qu'une seule fois.
+Vous pouvez uniquement inverser les écritures reportées à partir d'une ligne journal général. Une écriture ne peut être inversée qu’une fois.
 
 Pour annuler une réception ou un report de livraison, avant qu'ils soient reportés comme facturés, vous pouvez utiliser la fonction **Annuler** sur le document reporté. Vous pouvez annuler des quantités de type **Article** et **Ressource**.
 
-Si vous avez effectué un report de quantité négative incorrect, comme un bon de commande avec, par exemple, un nombre d'articles incorrect et que vous l'avez reporté comme étant reçu (mais non facturé), vous pouvez annuler ce report.
+Si vous avez reporté une quantité négative incorrecte, comme un bon de commande avec un nombre d’articles incorrect, comme reçue mais non facturée, vous pouvez annuler ce report.
 
-Si vous avez effectué un report de quantité positive incorrect, comme une livraison vente ou une livraison retour achat avec un nombre d'articles incorrect et que vous l'avez reportée comme étant livrée (mais non facturée), vous pouvez annuler ce report.   
+Si vous avez reporté une quantité positive incorrecte, comme une livraison vente ou une livraison retour achat avec un nombre d’articles incorrect, comme livrée mais pas facturée, vous pouvez annuler ce report.
 
 ## <a name="to-reverse-the-journal-posting-of-a-general-ledger-entry"></a>Pour inverser le report journal d'une écriture grand livre
+
 Vous pouvez inverser des écritures sur toutes les pages **Écritures**. La procédure suivante se base sur la page **Écritures**.
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures**, puis sélectionnez le lien associé.
-2. Sélectionnez l'écriture à contrepasser, puis cliquez sur l'action **Contrepasser la transaction**. Notez qu'elle doit provenir d'un report journal.
-3. Sur la page **Inverser les écritures de transaction**, choisissez l'action **Inverser**.
-4. Choisissez le bouton **Oui** dans le message de confirmation.
 
 > [!NOTE]
-> Vous ne pouvez pas inverser des écritures qui ont été reportées avec des informations provenant d'un travail ou qui présentent des gains et pertes réalisés au sein de la même transaction.
+> L’écriture doit être émise depuis un report journal.
+>
+> En outre, vous ne pouvez pas inverser des écritures qui ont été reportées avec des informations provenant d’un travail ou qui présentent des gains et pertes réalisés au sein de la même transaction.
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures**, puis sélectionnez le lien associé.
+2. Sélectionnez l'écriture à contrepasser, puis cliquez sur l'action **Contrepasser la transaction**.
+3. Sur la page **Inverser les écritures de transaction**, choisissez l'action **Inverser**.
+4. Cliquez sur **Oui** pour confirmer la contrepassation.
 
 ## <a name="to-post-a-negative-entry"></a>Pour reporter une écriture négative  
-Vous pouvez utiliser le champ **Correction** pour reporter un débit négatif au lieu d'un crédit, ou pour reporter un crédit négatif au lieu d'un débit sur un compte. Pour répondre aux exigences légales, ce champ est visible par défaut sur tous les journaux. Les champs **Montant débit** et **Montant crédit** comprennent l'écriture initiale et l'écriture corrigée. Ces champs n'ont aucune incidence sur le solde du compte.  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux généraux**, puis choisissez le lien associé.  
-2.  Dans le champ **Nom de la feuille**, sélectionnez le nom de feuille requis.  
-3.  Entrez les informations dans les champs pertinents.  
-4.  Dans la ligne journal que vous souhaitez activer pour les écritures négatives, sélectionnez la case à cocher **Correction**.  
-5.  Pour reporter le journal, sélectionnez l'action **Reporter**, puis le bouton **Oui**.
+Utilisez le champ **Correction** pour reporter un débit négatif au lieu d’un crédit, ou pour reporter un crédit négatif au lieu d’un débit sur un compte. Par défaut, le champ est disponible dans tous les journaux. Les champs **Montant débit** et **Montant crédit** comprennent l'écriture initiale et l'écriture corrigée. Ces champs n'ont aucune incidence sur le solde du compte.  
 
-## <a name="to-undo-a-quantity-posting-on-a-posted-purchase-receipt"></a>Pour annuler un report de quantité sur une réception d'achat reportée  
-La procédure d'annulation d'une réception reportée d'articles ou de ressources est décrite ci-après. La procédure est identique pour des livraisons reportées.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux généraux**, puis choisissez le lien associé.  
+2. Dans le champ **Nom de la feuille**, sélectionnez le nom de feuille requis.  
+3. Entrez les informations dans les champs pertinents.  
+4. Dans la ligne journal que vous souhaitez activer pour les écritures négatives, sélectionnez la case à cocher **Correction**.  
+5. Pour reporter le journal, sélectionnez l'action **Reporter**, puis le bouton **Oui**.
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Réceptions achat reportées**, puis sélectionnez le lien associé.  
-2.  Ouvrez la réception reportée à annuler.  
-3.  Sélectionnez la ligne ou les lignes à annuler.  
-4.  Choisissez l'action **Annuler réception**.
+## <a name="to-undo-a-quantity-on-a-posted-purchase-receipt"></a>Pour annuler une quantité sur une réception d’achat reportée  
 
-Une ligne de correction est insérée sous la ligne de la réception sélectionnée. Si la quantité a été reçue dans une réception entrepôt, une ligne de correction est insérée sur la réception entrepôt reportée.  
+Les étapes suivantes décrivent comment annuler une réception reportée d’articles ou de ressources. La procédure est identique pour des livraisons reportées.
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Réceptions achat reportées**, puis sélectionnez le lien associé.  
+2. Ouvrez la réception reportée à annuler.  
+3. Sélectionnez la ligne ou les lignes à annuler.  
+4. Choisissez l'action **Annuler réception**.
+
+Une ligne de correction est ajoutée sous la ligne de la réception sélectionnée. Si la quantité a été reçue dans une réception entrepôt, une ligne de correction est ajoutée sur la réception entrepôt reportée.  
 
 Les champs **Quantité reçue** et **Qté reçue non facturée** de la commande achat associée sont remis à zéro.
 
 ## <a name="to-undo-and-then-redo-a-quantity-posting-on-a-posted-return-shipment"></a>Pour annuler, puis effectuer à nouveau le report de quantité sur une livraison retour reportée
-La procédure d'annulation d'une livraison retour reportée d'articles ou de ressources et de nouveau report du retour achat avec une nouvelle quantité est décrite ci-après. La procédure est identique pour les réceptions retour reportées.
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Livraisons retour reportées**, puis sélectionnez le lien associé.  
-2.  Ouvrez la livraison de retour reportée à annuler.
+Les étapes suivantes décrivent comment :
+
+* Annuler une livraison de retour d’articles ou de ressources reportée.
+* Reportez à nouveau le retour achat avec une nouvelle quantité.
+
+La procédure est identique pour les réceptions retour reportées.
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Livraisons retour reportées**, puis sélectionnez le lien associé.  
+2. Ouvrez la livraison de retour reportée à annuler.
 3. Sélectionnez la ligne ou les lignes à annuler.  
 
-4.  Choisissez l'action **Annuler livraison retour**.  
+4. Choisissez l'action **Annuler livraison retour**.  
 
     Une ligne de correction est insérée dans le document reporté et les champs **Qté retour livrée** et **Livraison retour non facturée** du retour sont remis à zéro.  
 
     Retournez à présent au retour achat pour un nouveau report.  
 
-5.  Sur la page **Livraison retour reportée**, notez le numéro situé dans le champ **N° retour** .  
-6.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Retours achat**, puis sélectionnez le lien associé.  
-7.  Ouvrez la commande retour concernée, puis sélectionnez l'action **Rouvrir**.  
-8.  Corrigez l'écriture dans le champ **Quantité** et reportez à nouveau le retour achat.  
+5. Sur la page **Livraison retour reportée**, notez le numéro situé dans le champ **N° retour** .  
+6. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Retours achat**, puis sélectionnez le lien associé.  
+7. Ouvrez la commande retour concernée, puis sélectionnez l'action **Rouvrir**.  
+8. Corrigez l'écriture dans le champ **Quantité** et reportez à nouveau le retour achat.  
+
+[!INCLUDE [rev-general-journal](includes/rev-general-journal.md)]
 
 ## <a name="see-also"></a>Voir aussi
 

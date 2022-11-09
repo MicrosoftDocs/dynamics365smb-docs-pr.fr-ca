@@ -8,12 +8,12 @@ ms.search.form: 30116, 30117, 30126, 30127,
 author: AndreiPanko
 ms.author: andreipa
 ms.reviewer: solsen
-ms.openlocfilehash: 2c54b24a38be055fb8f6e641761130e6eab8b829
-ms.sourcegitcommit: 38b1272947f64a473de910fe81ad97db5213e6c3
+ms.openlocfilehash: 90144dfb2f84853f43ae85bf5a162f46cdb65286
+ms.sourcegitcommit: 5bb13966e9ba8d7a3c2f00dd32f167acccf90b82
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 08/29/2022
-ms.locfileid: "9361620"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728394"
 ---
 # <a name="synchronize-items-and-inventory"></a>Synchroniser les articles et l'inventaire
 
@@ -29,7 +29,9 @@ Un troisième scénario consiste à gérer les données dans Shopify, mais à im
 ## <a name="define-item-synchronizations"></a>Définir les synchronisations des articles
 
 1. Sélectionnez l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") et saisissez **Magasin Shopify**. Ouvrez la boutique pour laquelle vous souhaitez configurer la synchronisation des articles.
-2. Dans le champ **Synchroniser l’article**, sélectionnez l’option requise.<br>Le tableau suivant décrit les options.
+2. Dans le champ **Synchroniser l’article**, sélectionnez l’option requise.
+
+   Le tableau suivant décrit les options.
 
 |Option|Désignation|
 |------|-----------|
@@ -46,7 +48,7 @@ Tout d’abord, importiez les articles de Shopify en bloc ou en même temps que 
 |**Créer automatiquement des articles inconnus**|Lorsque les produits et variantes Shopify sont importés dans [!INCLUDE[prod_short](../includes/prod_short.md)], la fonction [!INCLUDE[prod_short](../includes/prod_short.md)] tente toujours de trouver d’abord l’enregistrement correspondant dans la liste d’articles. L’option **Mappage unité de stock** a un impact sur la correspondance et crée un article et/ou une variante article. Activez cette option pour créer un article ou lorsqu’un enregistrement correspondant n’existe pas. Le nouvel article est créé en utilisant les données importées et le **Code modèle article**. Si cette option n’est pas activée, vous devez créer un élément manuellement et utiliser l’action **Mapper le produit** dans la page **Produits Shopify**.|
 |**Code modèle article**|Utilisez cette option avec le bouton à bascule **Créer automatiquement des articles inconnus**.<br>Choisissez le modèle à utiliser pour les articles créés automatiquement.|
 |**Mappage unité de stock**|Choisissez comment vous voulez utiliser la valeur **Unité de stock** importée de Shopify lors du mappage et de la création de l’article/de la variante. En savoir plus dans la section [Effet des points de stock et codes barres de produit Shopify sur le mappage et la création d’articles et de variants dans Business Central](synchronize-items.md#effect-of-shopify-product-skus-and-barcodes-on-mapping-and-creating-items-and-variants-in-business-central).|
-|**Séparateur de champ d'unité de stock**|Utilisez cette option avec **Mappage unité de stock** défini sur **N° article + Code variante (synchronize-items.md#effect-of- shopify-product-skus-and-barcodes-on-mapping-and-creating-items-and-variants-in-business-central)**.<br> Définissez un séparateur qui doit servir à diviser l'unité de stock.<br>Par exemple, si, dans Shopify, vous créez la variante avec l'unité de stock 1000/001, tapez « / » dans le champ **Séparateur de champ d'unité de stock** pour obtenir le numéro d’article dans [!INCLUDE[prod_short](../includes/prod_short.md)] comme 1000 et le code variante article comme 001.|
+|**Séparateur de champ d'unité de stock**|Utilisez-le avec **Mappage unité de stock** défini sur **[N° article + Code variante](synchronize-items.md#effect-of-shopify-product-skus-and-barcodes-on-mapping-and-creating-items-and-variants-in-business-central)**.<br>Définissez un séparateur qui doit servir à diviser l'unité de stock.<br>Par exemple, si, dans Shopify, vous créez la variante avec l'unité de stock 1000/001, tapez « / » dans le champ **Séparateur de champ d'unité de stock** pour obtenir le numéro d’article dans [!INCLUDE[prod_short](../includes/prod_short.md)] comme 1000 et le code variante article comme 001.|
 |**Préfixe variante**|Utilisez avec le paramètre **Mappage unité de stock** défini sur **Code variante** ou **N° article + Code variante** comme stratégie de secours lorsque l'unité de stock provenant de Shopify est vide.<br>Pour créer la variante article dans [!INCLUDE[prod_short](../includes/prod_short.md)] automatiquement, saisissez une valeur dans **Code**. Par défaut, la valeur définie dans le champ Unité de stock importé de Shopify est utilisée. Cependant, si l'unité de stock est vide, elle génère un code commençant par le préfixe de la variante défini et 001.|
 |**Shopify peut mettre à jour l’article**|Choisissez cette option pour mettre à jour les articles et/ou les variantes automatiquement.|
 
@@ -138,11 +140,11 @@ Les articles résultants sont automatiquement créés dans Shopify avec les prix
 
 ### <a name="sync-products-from-shopify-to-business-central"></a>Synchroniser les produits de Shopify vers Business Central
 
-1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Magasin Shopify** et choisissez le lien associé.
+1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Magasin Shopify**, puis choisissez le lien associé.
 2. Sélectionnez le magasin pour lequel vous voulez synchroniser les articles pour ouvrir la page **Fiche magasin Shopify**.
 3. Sélectionnez l’action **Synchroniser les produits**.
 
-Sinon, utilisez l’action **Synchroniser les produits** dans la page **Produits Shopify** ou recherchez le traitement en lot **Synchroniser les produits**.
+Sinon, utilisez l’action **Synchroniser les produits** sur la page **Produits Shopify** ou recherchez le traitement en lot **Synchroniser les produits**.
 
 Vous pouvez programmer la tâche pour qu’elle soit exécutée de manière automatisée. En savoir plus dans la section [Programmer des tâches récurrentes](background.md#to-schedule-recurring-tasks).
 
@@ -168,7 +170,7 @@ En fonction de la valeur indiquée dans **Action pour produits supprimés** dans
 
 La synchronisation des images peut être configurée pour les articles synchronisés. Choisissez parmi les options suivantes :
 
-* **Vide** : la synchronisation des images est désactivée.
+* **Désactivé** : la synchronisation des images est désactivée.
 * **À Shopify** : les images des articles sont exportées dans Shopify.
 * **De Shopify** : les images de Shopify sont importés dans [!INCLUDE[prod_short](../includes/prod_short.md)].
 
@@ -188,7 +190,7 @@ La synchronisation des images peut être initialisée de deux manières décrite
 ### <a name="image-synchronization-remarks"></a>Remarques sur la synchronisation des images
 
 * Lors de l’exportation des images de [!INCLUDE[prod_short](../includes/prod_short.md)] dans Shopify, les nouvelles images sont ajoutées à Shopify, les anciennes images sont conservées. Si une image est mise à jour dans [!INCLUDE[prod_short](../includes/prod_short.md)], vous devez supprimer les anciennes images dans l’**administration Shopify**.
-* Les images exportées dans Shopify et ne respectant pas les exigences définies par Shopify ne sont pas importées. Pour plus d’informations, voir [Types de support des produits sur help.shopify.com](https://help.shopify.com/en/manual/products/product-media/product-media-types#images)
+* Les images exportées dans Shopify et ne respectant pas les exigences définies par Shopify ne sont pas importées. Pour plus d’informations, voir [Types de support des produits sur help.shopify.com](https://help.shopify.com/en/manual/products/product-media/product-media-types#images).
 
 ## <a name="sync-prices-with-shopify"></a>Synchroniser les prix avec Shopify
 
@@ -202,7 +204,7 @@ Les prix peuvent être exportés pour les articles synchronisés de la manière 
 ### <a name="price-calculation-remarks"></a>Remarques sur le calcul des prix
 
 * Pour le calcul des prix, il est important que le champ **Modèle client par défaut** contienne une valeur. En savoir plus sur [Configurer les taxes](setup-taxes.md).
-* Saisissez un **Code devise** si la boutique en ligne utilise une devise différente de celle locale ($). La devise spécifiée doit avoir des taux de change configurés. Si votre boutique en ligne utilise la même devise que [!INCLUDE[prod_short](../includes/prod_short.md)], laissez le champ vide.
+* Saisissez un **code devise** uniquement si la boutique en ligne utilise une devise différente de $. La devise spécifiée doit avoir des taux de change configurés. Si votre boutique en ligne utilise la même devise que [!INCLUDE[prod_short](../includes/prod_short.md)], laissez le champ vide.
 * Lors de la détermination d’un prix, [!INCLUDE[prod_short](../includes/prod_short.md)] utilise le prix le plus bas. Autrement dit, si le prix unitaire défini dans la fiche article est inférieur à celui défini dans le groupe prix, le prix unitaire de la fiche article est utilisé.
 
 ## <a name="sync-inventory-to-shopify"></a>Synchroniser l'inventaire sur Shopify
@@ -214,7 +216,7 @@ La synchronisation de l'inventaire peut être configurée pour les articles déj
 
 ### <a name="to-enable-inventory-sync"></a>Pour activer la synchronisation de l'inventaire
 
-1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Magasin Shopify** et choisissez le lien associé.
+1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Magasin Shopify**, puis choisissez le lien associé.
 2. Sélectionnez le magasin pour lequel vous voulez synchroniser l'inventaire pour ouvrir la page **Fiche magasin Shopify**.
 3. Sélectionnez l’action **Emplacements** pour ouvrir **Emplacements des magasins Shopify**.
 4. Sélectionnez l’action **Obtenir les emplacements Shopify** pour importer tous les emplacements définis dans Shopify. Ils se trouvent dans les paramètres [**Emplacements**](https://www.shopify.com/admin/settings/locations) sous **Administration Shopify**.
