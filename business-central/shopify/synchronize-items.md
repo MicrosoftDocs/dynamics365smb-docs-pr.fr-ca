@@ -8,12 +8,12 @@ ms.search.form: 30116, 30117, 30126, 30127,
 author: AndreiPanko
 ms.author: andreipa
 ms.reviewer: solsen
-ms.openlocfilehash: 90144dfb2f84853f43ae85bf5a162f46cdb65286
-ms.sourcegitcommit: 5bb13966e9ba8d7a3c2f00dd32f167acccf90b82
+ms.openlocfilehash: a14e81932ab2cc02c691d6dfe8a9a1c4fe326410
+ms.sourcegitcommit: bb6ecb20cbd82fdb5235e3cb426fc73c29c0a7ae
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "9728394"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802967"
 ---
 # <a name="synchronize-items-and-inventory"></a>Synchroniser les articles et l'inventaire
 
@@ -64,8 +64,8 @@ Le tableau suivant présente les différentes options du champ **Mappage unité 
 |**N° article**|Choisissez si le champ Unité de stock contient le numéro d’article|Aucun effet sur la création de l’article sans les variantes. Pour un article avec des variantes, chaque variante est créée comme un article séparé.<br>Par exemple, si Shopify a un produit avec deux variantes et que leurs points de stock sont 1000 et 2000, le système [!INCLUDE[prod_short](../includes/prod_short.md)] crée deux articles avec les numéros 1000 et 2000.|
 |**Code variante**|Le champ Unité de stock n’est pas utilisé dans la routine de mappage des articles.|Aucun effet sur la création de l’article. Si une variante article est créée, la valeur du champ Unité de stock est utilisée comme code. Si l'unité de stock est vide, un code est généré en utilisant le champ **Préfixe variante**.|
 |**N° article + Code variante**|Sélectionnez si le champ Unité de stock contient un numéro d’article et le code variante article séparés par la valeur définie dans le champ **Séparateur de champ d'unité de stock**.|Lorsqu’un article est créé, la première partie de la valeur du champ Unité de stock est utilisée comme **N°**. Si le champ Unité de stock est vide, un numéro d’article est généré en utilisant la série de numéros définie dans le champ **Code modèle article** ou **N° article** de la page **Configuration de l'inventaire**.<br>Lorsqu’un article est créé, la fonction variante utilise la seconde partie de la valeur du champ Unité de stock comme **Code**. Si le champ Unité de stock est vide, un code est généré en utilisant le champ **Préfixe variante**.|
-|**Référence fournisseur**|Choisissez si le champ Unité de stock contient le numéro d’article du fournisseur. Dans ce cas, le **Numéro du fournisseur de l’article** n’est pas utilisé sur la page **Fiche article** ; le **Numéro d’article du fournisseur** du **Catalogue des fournisseurs d’articles** est plutôt utilisé. Si l’enregistrement *Catalogue fournisseur articles* trouvé contient un code variante, ce dernier est utilisé pour mapper la variante Shopify.|Si un fournisseur correspondant existe dans [!INCLUDE[prod_short](../includes/prod_short.md)], la valeur d'unité de stock sert de **Référence fournisseur** sur la page **Fiche Article** et comme **Référence article** de type Fournisseur. <br>Empêche la création de variantes. Utile pour utiliser l’article principal uniquement dans le document de vente. Vous pouvez toujours mapper une variante manuellement à partir de la page **Produit Shopify**.|
-|**Code à barres**|Choisissez si le champ Unité de stock contient un code à barres. Une recherche est effectuée sur les **Références articles** de type Fournisseur. Si l’enregistrement Référence article trouvé contient un code variante, ce dernier est utilisé pour mapper la variante Shopify.|Aucun effet sur la création de l’article. <br>Empêche la création de variantes. Utile pour utiliser l’article principal uniquement dans le document de vente. Vous pouvez toujours mapper une variante manuellement à partir de la page **Produit Shopify**.|
+|**Référence fournisseur**|Choisissez si le champ Unité de stock contient le numéro d’article du fournisseur. Dans ce cas, le **Numéro du fournisseur de l’article** n’est pas utilisé sur la page **Fiche article** ; le **Numéro d’article du fournisseur** du **Catalogue des fournisseurs d’articles** est plutôt utilisé. Si l’enregistrement *Catalogue fournisseur articles* trouvé contient un code variante, ce dernier est utilisé pour mapper la variante Shopify.|Si un fournisseur correspondant existe dans [!INCLUDE[prod_short](../includes/prod_short.md)], la valeur d'unité de stock sert de **Référence fournisseur** sur la page **Fiche Article** et comme **Référence article** de type *Fournisseur*. <br>Empêche la création de variantes. Utile pour utiliser l’article principal uniquement dans le document de vente. Vous pouvez toujours mapper une variante manuellement à partir de la page **Produit Shopify**.|
+|**Code à barres**|Choisissez si le champ Unité de stock contient un code à barres. Une recherche est effectuée sur les **Références articles** de type *code-barres*. Si l’enregistrement Référence article trouvé contient un code variante, ce dernier est utilisé pour mapper la variante Shopify.|Aucun effet sur la création de l’article. <br>Empêche la création de variantes. Utile pour utiliser l’article principal uniquement dans le document de vente. Vous pouvez toujours mapper une variante manuellement à partir de la page **Produit Shopify**.|
 
 Le tableau suivant donne les effets du champ **Code à barres**.
 
@@ -238,9 +238,18 @@ La synchronisation de l'inventaire peut être initialisée des deux manières d�
 
 ### <a name="inventory-remarks"></a>Remarques sur l'inventaire
 
-* Le connecteur calcule l’élément **Stock prévisionnel** et l’exporte dans Shopify.
+* Le connecteur calcule l’élément **Stock prévisionnel** à la date du jour et l’exporte dans Shopify.
 * Vous pouvez consulter les informations d'inventaire en provenance de Shopify sur la page **Récapitulatif de l'inventaire Shopify**. Dans ce récapitulatif, un aperçu de l'inventaire Shopify et du dernier inventaire calculé s’affiche dans [!INCLUDE[prod_short](../includes/prod_short.md)]. Il existe un enregistrement par emplacement.
 * Si les informations de stock dans Shopify sont différentes de l’élément **Stock prévisionnel** dans [!INCLUDE[prod_short](../includes/prod_short.md)], le stock est mis à jour dans Shopify.
+
+#### <a name="example-of-calculation-of-projected-available-balance"></a>Exemple de calcul du solde disponible prévisionnel
+
+Il y a 10 pièces de l’article A disponibles en stock et deux documents de vente en attente. Une pour lundi avec la quantité de *Un* et une pour jeudi avec une quantité de *Deux*. Selon le moment où vous synchronisez l'inventaire, le système mettra à jour le niveau d'inventaire dans Shopify avec différentes quantités :
+
+|Quand la synchronisation de l'inventaire est exécutée|Valeur utilisée pour mettre à jour le niveau de stock|Commentaire|
+|------|-----------------|-----------------|
+|Mardi|9|Inventaire 10 moins document de vente défini sur une livraison lundi|
+|Vendredi|7|Inventaire 10 moins les deux documents de vente|
 
 ## <a name="see-also"></a>Voir aussi .
 

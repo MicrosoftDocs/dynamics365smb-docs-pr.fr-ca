@@ -8,14 +8,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: access, right, security
 ms.search.form: 1, 119, 8930, 9800, 9807, 9808, 9830, 9831, 9802, 9855, 9862
-ms.date: 09/19/2022
+ms.date: 11/29/2022
 ms.author: bholtorf
-ms.openlocfilehash: d265566e21388978f9ee7cba9372d3d337cbf97e
-ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
+ms.openlocfilehash: 058019ec9ce336b701c66c0de277ad57e73344da
+ms.sourcegitcommit: bcd3e5dcbb3d839f38f2321b7ef35d4a2ce492c1
 ms.translationtype: HT
 ms.contentlocale: fr-CA
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "9604898"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806010"
 ---
 # <a name="assign-permissions-to-users-and-groups"></a>Attribuer des autorisations aux utilisateurs et aux groupes
 
@@ -140,9 +140,9 @@ Créez un nouvel ensemble d’autorisations en en copiant un autre. Le nouvel en
 2. Sur la page **Ensembles d'autorisations**, cliquez sur l'option **Nouveau**.
 3. Sur une nouvelle ligne, renseignez les champs selon vos besoins.
 4. Sélectionnez l'option **Autorisations**.
-5. Sur la page **Autorisations**, choisissez l'action **Enregistrer autorisations**, puis sélectionnez l'action **Démarrer**.
-
-    Un processus d’enregistrement démarre et capture toutes vos actions dans l’interface utilisateur.
+1. Sur la page **Autorisations**, choisissez l'action **Enregistrer autorisations**, puis sélectionnez l'action **Démarrer**.  
+    L’enregistrement doit être effectué soit en utilisant la fonction **Ouvrir cette page dans une nouvelle fenêtre** (contextuelle) pour avoir la fenêtre d’enregistrement **Autorisations** côte à côte, ou en travaillant dans le même onglet.  
+    Un processus d’enregistrement démarre et capture désormais toutes vos actions dans l’interface utilisateur.
 6. Accédez aux différentes pages et activités dans [!INCLUDE[prod_short](includes/prod_short.md)] auxquelles vous voulez que les utilisateurs avec cet ensemble d'autorisations puissent accéder. Vous devez exécuter les tâches pour lesquelles vous souhaitez enregistrer des autorisations.
 7. Lorsque vous souhaitez terminer l'enregistrement, revenez sur la page **Autorisations** et choisissez l'option **Arrêter**.
 8. Cliquez sur le bouton **Oui** pour ajouter les autorisations enregistrées au nouvel ensemble d'autorisations.
