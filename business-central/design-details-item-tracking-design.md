@@ -6,17 +6,11 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: design, item, tracking, tracing
+ms.search.keywords: 'design, item, tracking, tracing'
 ms.date: 06/08/2021
 ms.author: edupont
-ms.openlocfilehash: 626d22b4a45035698862c727547b332c898508af
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8141343"
 ---
-# <a name="design-details-item-tracking-design"></a>Détails de conception : création de traçabilité
+# Détails de conception : création de traçabilité
 
 Traçabilité dans [!INCLUDE[prod_short](includes/prod_short.md)] commencé avec [!INCLUDE [navnow_md](includes/navnow_md.md)]. La fonctionnalité de traçabilité se trouve dans une structure d'objet distincte avec des liens complexes vers les documents reportés et les écritures article, et elle est intégrée au système de réservation, qui gère la réservation, le suivi des commandes et la messagerie d'action. Pour plus d’informations, voir [Détails de conception : réservations, suivi de commande et messages d’action](design-details-reservation-order-tracking-and-action-messaging.md) dans les détails de conception de la planification des approvisionnements.  
 
@@ -39,7 +33,7 @@ Codeunit 22, **Journal article – Ligne report**, fractionne alors le report en
 
 Pour plus d'informations, reportez-vous à [Détails de conception : structure de report de traçabilité](design-details-item-tracking-posting-structure.md).  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Détails de conception : traçabilité](design-details-item-tracking.md)
 

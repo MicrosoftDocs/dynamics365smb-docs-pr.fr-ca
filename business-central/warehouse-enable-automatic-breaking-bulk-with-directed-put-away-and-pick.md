@@ -1,37 +1,31 @@
 ---
 title: Rupture de charge avec prélèvement et rangement dirigé
-description: Découvrez comment activer la rupture de charge automatique avec prélèvement et rangement dirigé, ainsi que le déconditionnement pour prélèvement, rangement, mouvement, etc.
+description: 'Découvrez comment activer la rupture de charge automatique avec prélèvement et rangement dirigé, ainsi que le déconditionnement pour prélèvement, rangement, mouvement, etc.'
 author: brentholtorf
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
-ms.search.form: 5703, 7352
+ms.search.keywords: null
+ms.search.form: '5703, 7352'
 ms.date: 11/04/2022
 ms.author: bholtorf
-ms.openlocfilehash: d5e8ab6f0e60ab8874669c7e5127411acc58957b
-ms.sourcegitcommit: 61fdaded30310ba8bdf95f99e76335372f583642
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 11/04/2022
-ms.locfileid: "9744688"
 ---
-# <a name="enable-automatic-breaking-bulk-with-directed-put-away-and-pick"></a>Activer la rupture de charge automatique avec prélèvement et rangement dirigé
+# Activer la rupture de charge automatique avec prélèvement et rangement dirigé
 
 Pour les emplacements qui utilisent un prélèvement et un rangement suggérés, [!INCLUDE[prod_short](includes/prod_short.md)] peut diviser des unités de mesure plus grandes en unités de mesure plus petites pendant la création des instructions entrepôt pour des documents sources, des bons de production ou des prélèvements et rangements internes. Le déconditionnement peut également signifier rassembler des articles dans des unités de mesure plus petites pour égaler la quantité d’une unité de mesure plus grande sur un document source ou un bon de production.
 
-## <a name="breakbulk-in-picks"></a>Déconditionnement pour prélèvements  
+## Déconditionnement pour prélèvements  
 
 Pour stocker des articles dans plusieurs unités de mesure différentes à un emplacement et permettre de les combiner automatiquement au cours du prélèvement, activez le bouton bascule **Autoriser déconditionnement** de la fiche Carte de l'emplacement. Ensuite, pour répondre à une tâche, [!INCLUDE [prod_short](includes/prod_short.md)] recherchera automatiquement un article de la même unité de mesure. S’il n’en trouve pas, [!INCLUDE [prod_short](includes/prod_short.md)] suggérera que vous divisiez une plus grande unité de mesure dans l’unité de mesure qui est nécessaire.  
 
 Si seules des unités de mesure plus petites sont disponibles, [!INCLUDE [prod_short](includes/prod_short.md)] vous suggère de rassembler des articles afin de répondre à la quantité de la livraison ou du bon de production. En fait, il divise la plus grande unité de mesure du document origine en unités de mesure de prélèvement plus petites.  
 
-## <a name="breakbulk-in-put-aways"></a>Déconditionnement pour rangement  
+## Déconditionnement pour rangement  
 
 Dans les rangements des entrepôts, [!INCLUDE [prod_short](includes/prod_short.md)] suggère Placer les lignes d’action dans l’unité de mesure de rangement. Par exemple, il peut suggérer des pièces même si les articles arrivent dans une unité de mesure différente.  
 
-## <a name="breakbulk-in-movements"></a>Déconditionnement pour mouvement  
+## Déconditionnement pour mouvement  
 
 [!INCLUDE [prod_short](includes/prod_short.md)] peut également se déconditionner dans les mouvements de réapprovisionnement si le bouton bascule **Autoriser le déconditionnement** sur la page **Calculer le réapprovisionnement de la zone** est activé.  
 
@@ -46,14 +40,13 @@ Vous pouvez afficher les résultats de la conversion entre deux unités de mesur
 > - Configurez l'unité de mesure de base d'un article en tant que plus petite unité de mesure à gérer dans les processus concernant l'entrepôt.  
 > - Configurez les autres unités de mesure de l'article en tant que multiples de l'unité de mesure de base.  
 
-## <a name="see-also"></a>Voir aussi  
+## Voir aussi  
 
-[Gestion d'entrepôt](warehouse-manage-warehouse.md)  
-[Stock](inventory-manage-inventory.md)  
+[Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
+[Inventaire](inventory-manage-inventory.md)  
 [Configuration de Warehouse Management](warehouse-setup-warehouse.md) 
-[Gestion d’assemblage](assembly-assemble-items.md)
-[Détails de conception : Warehouse Management](design-details-warehouse-management.md)  
-[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Gestion des assemblages](assembly-assemble-items.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

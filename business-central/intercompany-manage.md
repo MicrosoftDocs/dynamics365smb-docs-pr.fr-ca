@@ -1,23 +1,17 @@
 ---
 title: Gestion des transactions intersociétés
-description: Avec la fonctionnalité Intercompagnie, vous pouvez simplifier les transactions et processus commerciaux entre les compagnies de la même organisation.
+description: 'Avec la fonctionnalité Intercompagnie, vous pouvez simplifier les transactions et processus commerciaux entre les compagnies de la même organisation.'
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: IC, group, consolidation, affiliate, subsidiary
+ms.search.keywords: 'IC, group, consolidation, affiliate, subsidiary'
 ms.search.form: 605
 ms.date: 08/11/2021
 ms.author: edupont
-ms.openlocfilehash: 356a484df2445dac39c02b9341cb9a0660a07467
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8511659"
 ---
-# <a name="managing-intercompany-transactions"></a>Gestion des transactions intersociétés
+# Gestion des transactions intersociétés
 
 Les fonctionnalités de transactions intercompagnies sont conçues pour les utilisateurs qui contrôlent plusieurs entités juridiques et ont mis en place plusieurs compagnies afin de séparer les fonctions comptables de chacune d’elles. Cette description large s’applique à de nombreux utilisateurs, en particulier ceux qui opèrent sur des marchés internationaux ou dans des zones incluant des cultures commerciales et des environnements environnementaux très disparates.
 
@@ -32,7 +26,7 @@ La fonctionnalité Intersociétés offre quatre grands avantages :
 - Piste d'audit et visibilité complètes des activités commerciales et des historiques de transactions  
 - Transactions efficaces, rentables avec des filiales et des succursales  
 
-## <a name="streamlining-the-flow-of-business-activities"></a>Rationalisation du flux des activités commerciales  
+## Rationalisation du flux des activités commerciales  
 
 Les transactions intercompagnies vous permettent de distribuer des documents vente et achat, ainsi que des écritures journal général à l’ensemble de vos bureaux satellites, représentations commerciales ou succursales depuis le programme. Cela vous permet de bénéficier d’un gain de temps et d’une efficacité accrue dans l’ensemble de votre organisation, dans la mesure où vous éliminez les activités redondantes liées à la saisie de données, ainsi qu’à l’envoi, la réception, l’impression et l’archivage des documents vente et achat sur papier.  
 
@@ -71,7 +65,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ar
 |Organisez et traitez les transactions entrantes et sortantes que vous échangez avec vos partenaires intersociétés.|[Gérer la boîte de réception et la boîte d'envoi intersociétés](intercompany-how-manage-intercompany-inbox.md)|
 |Utilisez les transactions intercompagnies pour répartir les coûts entre les compagnies partenaires.|[Allouer les coûts aux partenaires intercompagnie](intercompany-allocate-costs.md)|
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Finance](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  

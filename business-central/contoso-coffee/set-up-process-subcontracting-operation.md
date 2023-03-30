@@ -6,24 +6,19 @@ ms.topic: article
 ms.service: dynamics365-business-central
 author: edupont04
 ms.author: andreipa
-ms.openlocfilehash: 9227abbfe25ca5a1b3c6775865712f22b31f721b
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8525372"
 ---
-# <a name="set-up-and-process-a-subcontracting-operation"></a>Configurer et traiter une opération de sous-traitance
+
+# Configurer et traiter une opération de sous-traitance
 
 Dans cet article, nous vous expliquons comment utiliser les données de démonstration de Contoso Coffee dans la sous-traitance.
 
-## <a name="scenario"></a>Scénario
+## Scénario
 
 Vous êtes planificateur de production chez Contoso Coffee. En raison de contraintes de capacité, vous envisagez de faire appel à un sous-traitant pour produire l’article **SP-SCM1009, Airpot**.
 
 Vous allez donc créer un bon de production libéré pour 12 unités de l’article SP-SCM1009, Airpot, à l’aide de l'itinéraire SP-SCM1009-SUB-2. Utilisez la proposition de sous-traitance pour générer un bon de commande pour la fabrication, puis terminez l’opération par la réception et la facturation du bon de commande.
 
-## <a name="steps"></a>Étapes
+## Étapes
 
 1. Créez un nouveau bon de production pour 12 unités de l’article SP-SCM1009, Airpot.
 
@@ -42,7 +37,7 @@ Vous allez donc créer un bon de production libéré pour 12 unités de l’art
 
     1. Ajoutez le champ N° itinéraire de fabrication aux lignes dans le bon de production libéré.<!--in code, this is marked as visible=false-->
 
-    2. Remplacez le champ **N° itinéraire** *SP-SCM1009-SERIAL* par *SP-SCM1009-SUB-2*.  
+    2. Remplacez le champ **N° itinéraire***SP-SCM1009-SERIAL* par *SP-SCM1009-SUB-2*.  
 
     3. Choisissez l’action **Actualiser Bon de production**.  
 
@@ -78,6 +73,6 @@ Vous allez donc créer un bon de production libéré pour 12 unités de l’art
 
 La sortie de l’article SP-SCM1009 Airpot est maintenant enregistrée.
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Introduction aux données de démonstration Contoso Coffee](contoso-coffee-intro.md)  

@@ -1,27 +1,21 @@
 ---
 title: Configurer et utiliser l’extension de déclaration de service
-description: Apprendre à configurer et utiliser les fonctionnalités de Déclaration de service (Intrastat pour les services), et enregistrer les transactions de service avec des compagnies dans d’autres pays/régions.
+description: 'Apprendre à configurer et utiliser les fonctionnalités de Déclaration de service (Intrastat pour les services), et enregistrer les transactions de service avec des compagnies dans d’autres pays/régions.'
 author: altotovi
-ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.keywords: electronic document, Intrastat, trade, EU, service, declaration,
-ms.search.form: 30, 76, 5010, 5022, 5023, 5024, 5800
-ms.date: 11/23/2022
 ms.author: altotovi
-ms.openlocfilehash: 0d5e541e1092b4fa655ab12d5c6d2fa48ff07f9d
-ms.sourcegitcommit: bcd3e5dcbb3d839f38f2321b7ef35d4a2ce492c1
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 11/29/2022
-ms.locfileid: "9806334"
+ms.reviewer: bholtorf
+ms.service: dynamics365-business-central
+ms.topic: how-to
+ms.date: 12/21/2022
+ms.custom: bap-template
+ms.search.keywords: 'electronic document, Intrastat, trade, EU, service, declaration,'
+ms.search.form: '30, 76, 5010, 5022, 5023, 5024, 5800'
 ---
-# <a name="the-service-declaration-extension"></a>Extension de déclaration de service
+# Extension de déclaration de service
 
 Dans certains pays de l’UE, les autorités exigent que les entreprises déclarent l’exportation de services vers d’autres pays de l’UE. L’extension **Déclaration de service** vous permet de collecter des informations sur le commerce des services dans l’UE et de les signaler aux autorités. Bien qu’elle s’appelle **Déclaration de service**, vous pouvez également l’utiliser comme **Intrastat pour les services**. Cette extension est disponible pour tous les pays de l’UE en version W1 et peut être utilisée telle quelle en Belgique. Pour les autres pays, une extension basée sur le pays sera requise. Si un pays n’a besoin que d’un format différent, vous pouvez utiliser la configuration du rapport dans l’**Infrastructure d’échange de données** pour modifier le format.
 
-## <a name="enable-the-service-declaration-extension"></a>Activer l’extension de déclaration de service
+## Activer l’extension de déclaration de service
 
 Après avoir installé l’extension dans votre environnement, vous devez l’activer.
 
@@ -32,11 +26,11 @@ Après avoir installé l’extension dans votre environnement, vous devez l’ac
 5. Avant de commencer, vérifiez le **Nombre total de codes** pour comprendre combien de types de transactions de services ont déjà été spécifiés.
 6. Choisissez **Terminer** à la dernière étape pour terminer la configuration.
 
-## <a name="set-up-the-service-declaration-extension"></a>Configurer l’extension de déclaration de service
+## Configurer l’extension de déclaration de service
 
 Vous pouvez configurer l’extension manuellement ou en utilisant un fichier de rapport dans les définitions d’échange de données.
 
-### <a name="to-set-up-service-declaration-manually"></a>Pour configurer de la déclaration de service manuellement
+### Pour configurer de la déclaration de service manuellement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration Déclaration de service**, puis choisissez le lien associé.
 2. Dans le raccourci **Général**, configurez les champs comme indiqué dans le tableau ci-dessous :
@@ -53,14 +47,14 @@ Vous pouvez configurer l’extension manuellement ou en utilisant un fichier de 
 3. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Types de transactions de services**, puis sélectionnez le lien associé.
 4. Sur les lignes, spécifiez **Codes** et **Descriptions** pour les types de transactions de service que vous utiliserez.
 
-### <a name="set-up-a-reporting-file"></a>Configurer un fichier de déclaration
+### Configurer un fichier de déclaration
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Définitions d’échange de données** et sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
 3. Sur le raccourci **Général**, décrivez la définition d’échange de données en spécifiant le type de fichier de données, le séparateur de colonnes, le codeunit associé, XMLport et en remplissant les autres champs.
 4. Sur le raccourci **Définitions de ligne**, décrivez le formatage des lignes du fichier de données en remplissant les champs en fonction du champ **Type de ligne**, et où vous devez définir le nombre de colonnes pour cette ligne.
 5. Sur le raccourci **Définitions de colonne**, remplissez la ligne pour chaque colonne planifiée.
-6. Sélectionnez l’action **Mappage des champs** dans le raccourci **Définitions de ligne** pour ouvrir la page **Mappage des champs**.
+6. Sélectionnez l’action **Mappage des champs**dans le raccourci **Définitions de ligne** pour ouvrir la page **Mappage des champs**.
 7. Créez une entrée, et sur le raccourci **Général**, sélectionnez le **Code de table** approprié (pour **Ligne de déclaration de service**, choisissez **5024**), puis remplissez les champs comme suit :
    1. Dans le champ **Index clé**, spécifiez l’index de clé pour trier les enregistrements source avant l’exportation.
    2. Sélectionnez le **Codeunit de mappage**.
@@ -72,11 +66,11 @@ Vous pouvez configurer l’extension manuellement ou en utilisant un fichier de 
 > [!NOTE]
 > [!INCLUDE[prod_long](includes/prod_long.md)] est livré avec une définition d’échange de données pré-configurée pour la **Déclaration de service** pour tous les pays pour lesquels la traduction a été faite. Découvrez plus d’informations sur la création d’une définition d’échange de données dans [Configurer les définitions d’échange de données](across-how-to-set-up-data-exchange-definitions.md).
 
-## <a name="other-related-configurations"></a>Autres configurations associées
+## Autres configurations associées
 
 Avant d’utiliser l’extension de déclaration de service, configurez certains champs pour les articles, les ressources et les frais annexes.
 
-### <a name="items"></a>Articles
+### Articles
 
 Configurez les informations relatives à la déclaration de service sur les pages Fiche article :
 
@@ -87,7 +81,7 @@ Configurez les informations relatives à la déclaration de service sur les page
    2. Dans le champ **Code type de transaction de service**, spécifiez le code pour un **Type de transaction de service**.
    3. Si vous ne souhaitez pas inclure cet élément de service dans les déclarations de service, choisissez le champ **Exclure de la déclaration de service**.
 
-### <a name="resources"></a>Ressources
+### Ressources
 
 Configurez les informations relatives à la déclaration de service sur les pages Fiche ressource :
 
@@ -97,7 +91,7 @@ Configurez les informations relatives à la déclaration de service sur les page
    1. Dans le champ **Code type de transaction de service**, spécifiez le code pour un **Type de transaction de service**.
    2. Si vous ne souhaitez pas inclure cette ressource de service dans les déclarations de service, choisissez le champ **Exclure de la déclaration de service**.
 
-### <a name="item-charges"></a>Frais annexes
+### Frais annexes
 
 Configurez les informations relatives à la déclaration de service pour les frais annexes :
 
@@ -106,7 +100,7 @@ Configurez les informations relatives à la déclaration de service pour les fra
 3. Dans le champ **Code type de transaction de service**, spécifiez le code pour un **Type de transaction de service**.
 4. Si vous ne souhaitez pas inclure ces frais annexes dans les déclarations de service, choisissez le champ **Exclure de la déclaration de service**.
 
-## <a name="create-new-service-declaration"></a>Créer une déclaration de service
+## Créer une déclaration de service
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Déclarations de services**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
@@ -117,7 +111,7 @@ Configurez les informations relatives à la déclaration de service pour les fra
 
 Le traitement en lot récupère toutes les écritures des documents achat et vente applicables dans la période requise et les ajoute sur les lignes déclaration de service. Positionnez le curseur sur les champs dans les lignes pour lire une brève description.
 
-## <a name="modify-a-service-declaration"></a>Modifier une déclaration de service
+## Modifier une déclaration de service
 
 Si nécessaire, vous pouvez modifier les lignes ou en ajouter de nouvelles.
 
@@ -126,11 +120,11 @@ Si nécessaire, vous pouvez modifier les lignes ou en ajouter de nouvelles.
 3. Selon le **Type de document**, remplissez le champ **N° document**.
 4. Renseignez les champs restants.
 
-## <a name="overview-the-service-declaration-lines"></a>Présentation des lignes de déclaration de service
+## Présentation des lignes de déclaration de service
 
 Après avoir créé une déclaration de service, utilisez l’action **Aperçu** pour obtenir un aperçu des lignes de déclaration de service. Vous pouvez regrouper et résumer les lignes de la même manière que le fichier exporté. Vous pouvez également ouvrir les lignes dans Excel.
 
-## <a name="report-service-declaration-in-a-file"></a>Faire figurer la déclaration de service dans un fichier
+## Faire figurer la déclaration de service dans un fichier
 
 Vous pouvez soumettre la déclaration de service sous forme de fichier en fonction des exigences des différentes autorités locales. Pour créer un fichier :
 
@@ -140,30 +134,30 @@ Vous pouvez soumettre la déclaration de service sous forme de fichier en foncti
 4. Choisissez l'action **Créer fichier**.
 5. Le fichier de déclaration de service sera enregistré au format souhaité.
 
-## <a name="other-considerations"></a>Autres considérations
+## Autres considérations
 
 Quand vous utilisez l’extension **Déclaration de service**, vous devez prendre en compte quelques éléments supplémentaires. Par exemple, il est important que vos groupes correspondent aux exigences des autorités. Il est également important que les services soient correctement inclus dans les documents vente et achat.
 
-### <a name="grouping-lines"></a>Regrouper des lignes
+### Regrouper des lignes
 
 Sur les lignes de déclaration de service, il n’y a pas de regroupement par champ. Toutes les écritures sont copiées à partir du document d’origine en tant que source.
 
 Le regroupement requis par les autorités sera fourni dans le fichier exporté. Vous devez configurer les groupes dans la **Définition d’échange de données**, qui est entièrement configurable. Pour plus d’informations, consultez [Configurer les définitions d’échange de données](across-how-to-set-up-data-exchange-definitions.md).
 
-### <a name="using-services-in-document-lines"></a>Utilisation des services dans les lignes de document
+### Utilisation des services dans les lignes de document
 
-Quand vous créez une facture achat ou vente, vous trouverez deux champs liés aux déclarations de service sur leurs lignes. Les deux champs sont renseignés avec les valeurs par défaut de vos configurations d’article, de ressource ou de frais annexes.
+Quand vous créez une facture achat, vente ou service, vous trouverez deux champs liés aux déclarations de service sur leurs lignes. Les deux champs sont renseignés avec les valeurs par défaut de vos configurations d’article, de ressource ou de frais annexes.
 
 - **Code type de transaction de service** – spécifiez le code pour un Type de transaction de service.
 - **S’applique à la déclaration de service** – Indique si un article ou une ressource est applicable à une déclaration de service.
 
 Vous pouvez modifier les valeurs dans ces champs, mais si vous sélectionnez le champ **S’applique à la déclaration de service**, vous devez spécifier une valeur dans le champ **Code du type de transaction de service**. Si vous ne le faites pas, vous ne pouvez pas reporter le document.
 
-Si vous sélectionnez une valeur dans le champ **Code de type de transaction de service** mais que vous ne sélectionnez pas le champ **S’applique à la déclaration de service**, vous pouvez reporter le document mais la ligne ne sera pas calculée.
+Si vous sélectionnez une valeur dans le champ **Code de type de transaction de service**, mais que vous ne sélectionnez pas le champ **S’applique à la déclaration de service**, vous pouvez reporter le document, mais la ligne ne sera pas calculée.
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/process-intrastat-dynamics-365-business-central/index).
+## Voir la formation associée sur [Microsoft Learn](/learn/modules/process-intrastat-dynamics-365-business-central/index).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Paramétrer des rapports Intrastat](finance-how-setup-report-intrastat.md)
 [Rapports Intrastat dans Business Central](finance-how-report-intrastat.md)  

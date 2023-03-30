@@ -1,19 +1,13 @@
 ---
 title: Configuration de l’évaluation et du coût de l’inventaire
-description: Pour vous assurer que les coûts ajustés sont enregistrés correctement, vous devez configurer plusieurs champs et pages avant de commencer à effectuer des transactions article.
+description: 'Pour vous assurer que les coûts ajustés sont enregistrés correctement, vous devez configurer plusieurs champs et pages avant de commencer à effectuer des transactions article.'
 author: SorenGP
 ms.topic: conceptual
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 6b7289aff7d111804806bb1afbdfb822c9922492
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8520318"
 ---
-# <a name="setting-up-inventory-valuation-and-costing"></a>Configuration de l'évaluation de l'inventaire et des coûts
+# Configuration de l'évaluation de l'inventaire et des coûts
 
 Pour vous assurer que les coûts ajustés sont enregistrés correctement, vous devez configurer plusieurs champs et pages avant de commencer à effectuer des transactions article. En règle générale, les entreprises choisissent une méthode d'évaluation des coûts spécifique et l’appliquent aux articles en inventaire, par exemple, pour les aider à suivre la valeur des articles en stock.  
 
@@ -32,11 +26,11 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Définir si le coût moyen doit être calculé uniquement par article ou par article pour chaque unité de stock et pour chaque variante de l’article.|Champ **Type calcul coût moyen** sur la page **Configuration de l'inventaire**|  
 |Sélectionnez la période que l'application doit utiliser pour calculer le coût moyen pondéré des articles qui utilisent la méthode évaluation coût moyen.|Champ **Période coût moyen** sur la page **Configuration de l'inventaire**|  
 |Définir des périodes d'inventaire pour contrôler la valeur de l'inventaire dans le temps en refusant d'accorder le report de transactions lorsque les périodes d'inventaire sont fermées.|[Utiliser les périodes d'inventaire](finance-how-to-work-with-inventory-periods.md)|  
-|Assurez-vous que les retours vente sont affectés à la transaction sortante initiale afin de préserver la valeur d'inventaire.|Champ **Coût d'inversion exact obligatoire** sur la page **Configuration ventes et à recevoir**|  
+|Assurez-vous que les retours vente sont affectés à la transaction sortante initiale afin de préserver la valeur d'inventaire.|Champ**Coût d'inversion exact obligatoire** sur la page **Configuration ventes et à recevoir**|  
 |Assurez-vous que les retours achat sont affectés à la transaction entrante initiale afin de préserver la valeur d'inventaire.|Champ **Inversion coût exact obligatoire** sur la page **Achats**|
 |Configurer les règles d'arrondissement à appliquer lors de l'ajustement ou de la proposition des prix article et lors de l'ajustement ou de la proposition des coûts standard.|Page **Méthode d'arrondissement**|  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Configurer des informations générales relatives à l'inventaire](inventory-how-setup-general.md)  

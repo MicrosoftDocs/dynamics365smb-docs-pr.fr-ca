@@ -1,22 +1,16 @@
 ---
-title: Reporter en lot la sortie de production et les temps d'exécution
+title: Reporter en lot la sortie de production et les temps d’exécution
 description: La quantité de sortie représente l'avancement du travail sous la forme de la quantité finie et de la capacité utilisée de l'atelier ou de l'unité de production.
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: 99000773, 99000778, 99000823, 99000827
+ms.search.form: '99000773, 99000778, 99000823, 99000827'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 7a1c30340efabed66e4ce359fc7680945e0db1de
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8522756"
 ---
-# <a name="batch-post-output-and-run-times"></a>Reporter en lot la production et les temps d'exécution
+# Reporter en lot la production et les temps d’exécution
 La quantité de sortie représente l'avancement du travail sous la forme de la quantité finie et de la capacité utilisée de l'atelier ou de l'unité de production.
 
 Vous pouvez utiliser le journal de sortie pour :
@@ -30,7 +24,7 @@ Vous pouvez utiliser le journal de sortie pour :
 
 La fenêtre **Journal production** vous permet d’exécuter les mêmes tâches que celles de la fenêtre **Journal de sortie** et d'exécuter en même temps les tâches connexes de report de la consommation. Pour plus d'informations, voir [Enregistrer la consommation et la production pour une ligne bon de production libéré](production-how-to-register-consumption-and-output.md).
 
-## <a name="to-post-output-quantities-andor-register-run-times-for-one-or-more-production-order-lines"></a>Pour reporter les quantités produites et/ou enregistrer le temps d’exécution pour une ou plusieurs lignes bon de production
+## Pour reporter les quantités produites et/ou enregistrer le temps d’exécution pour une ou plusieurs lignes bon de production
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal de sortie**, puis choisissez le lien associé.  
 2. Renseignez les champs en indiquant les données relatives au bon de production et/ou le temps d’exécution. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -44,7 +38,7 @@ Les écritures capacité sont mises à jour pour les unités de production ou le
 
 Si vous avez reporté la dernière opération, l'article sera ajouté à l'inventaire.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Reporter la mise au rebut manuellement](production-how-to-post-scrap.md)
 [Inverser le report de production](production-how-to-reverse-output-posting.md)

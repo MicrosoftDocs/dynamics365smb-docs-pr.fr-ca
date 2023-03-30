@@ -9,14 +9,8 @@ ms.workload: na
 ms.search.form: 5841
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 4bada4ee28df77cc9700d5957ef8fb8b1a64535b
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8517456"
 ---
-# <a name="update-standard-costs"></a>Mise à jour des coûts standard
+# Mise à jour des coûts standard
 Vous devez régulièrement mettre à jour les coûts standard des composants et remonter les nouveaux coûts dans l'article parent. Le processus comprend généralement les quatre étapes suivantes :  
 
 1.  Mettre à jour les coûts aux niveaux des composantes et de la capacité. Pour plus d'informations, voir le traitement en lot **Suggérer un coût standard d'article**.  
@@ -26,7 +20,7 @@ Vous devez régulièrement mettre à jour les coûts standard des composants et 
 
 Pour plus d'informations, voir [À propos du calcul des coûts standard](finance-about-calculating-standard-cost.md) .
   
-## <a name="to-update-standard-costs"></a>Pour mettre à jour des coûts standard
+## Pour mettre à jour des coûts standard
 
 1.  Exécutez le traitement en lot **Ajuster coûts - Écr. article**.  
 2.  Exécutez le traitement en lot **Reporter le coût de l'inventaire au grand livre**.  
@@ -41,7 +35,7 @@ Pour plus d'informations, voir [À propos du calcul des coûts standard](finance
     7.  Exécutez le traitement en lot **Appliquer les modifications de coût standard**.  
 4.  Vérifiez et reportez la page **Journal réévaluation** renseignée avec les entrées des étapes précédentes de ce processus.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
  [À propos du calcul des coûts standard](finance-about-calculating-standard-cost.md)   
  [Gestion des coûts inventaire](finance-manage-inventory-costs.md)   

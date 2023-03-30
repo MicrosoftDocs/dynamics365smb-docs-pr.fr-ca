@@ -6,44 +6,56 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
-ms.search.form: 15, 5703, 7302, 7332, 5768
+ms.search.keywords: null
+ms.search.form: '15, 5703, 7302, 7332, 5768'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: a9621393c09de1a4d6cf21789fa1141763d94efe
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8513325"
 ---
-# <a name="cross-dock-items"></a>Transborder des articles
-La fonctionnalité de transbordement est disponible si l'emplacement est configuré pour appeler un traitement des réceptions et des rangements entrepôt.  
+# Transborder des articles
 
-Lorsque vous transbordez des articles, vous les manipulez en effectuant des réceptions et des expéditions, sans jamais les ranger. Vous évitez ainsi les processus de rangement et de prélèvement, et limitez la manipulation physique des articles. Vous pouvez transborder des articles tant pour des livraisons que pour des bons de production. Lorsque vous préparez une livraison ou prélevez des articles pour la production, et que vous utilisez des zones, le programme tente d'abord automatiquement de prélever l'article dans une zone de transbordement avant d'envisager toute autre zone. Vous devez vérifier si les articles dont vous avez besoin sont disponibles dans la zone de transbordement avant de pouvoir accéder à ces articles dans leur zone de stockage habituel.  
+Les articles de transbordement sont les articles que vous recevez et livrez sans les ranger. Les processus de rangement et de prélèvement nécessitent une manipulation limitée des articles. Vous pouvez transborder des articles pour des livraisons comme pour des bons de production.
+
+## Zones et zones de transbordement
+
+Si vous utilisez des zones, configurez au moins une zone de transbordement, puis spécifiez la zone dans le champ **Code de zone transbord.** sur vos emplacements. Si vous utilisez le prélèvement et le rangement dirigés, configurez une zone de transbordement.
+
+Lorsque vous préparez une livraison ou prélevez des articles pour la production, et que vous utilisez des zones, le programme tente d’abord automatiquement de prélever l’article dans une zone de transbordement avant d’envisager d’autres zones. Vous devez vérifier si les articles dont vous avez besoin sont disponibles dans la zone de transbordement avant de pouvoir accéder à ces articles dans leur zone de stockage habituel.  
 
 Lorsque vous avez calculé les quantités à transborder, des lignes rangement désignant la zone de transbordement sont créées pour effectuer les calculs de transbordement lors du report de la réception. Les autres lignes rangement sont créées normalement.  
 
-Pour reporter immédiatement les articles à transborder afin qu'ils soient disponibles pour le prélèvement, vous devez aussi enregistrer un rangement pour les autres articles issus de la ligne réception, c'est-à-dire les articles à ranger. Si une partie seulement des articles d'une ligne réception doit être transbordée, efforcezvous de ranger le reste des articles le plus vite possible. Sinon, vous pouvez aussi instaurer dans votre entrepôt une politique encourageant les employés à effectuer le transbordement de lignes réception entières chaque fois que cela est possible.  
+## Sélectionner des lignes transbordement pour une réception
 
-Dans l'instruction de rangement, vous avez tout intérêt à effacer les lignes d'instructions, les lignes prélèvement et placement de chaque ligne réception, concernant des réceptions qui doivent être entièrement rangées. Ces lignes pourront être créées ultérieurement en tant que lignes rangement à partir de la feuille rangement ou de la réception reportée. Une fois ces lignes effacées, vous pouvez ranger les articles à transborder et enregistrer les lignes concernant ces articles.  
+<!--If a receipt contains items that you want to store, that is, items that you are not cross-docking, you must register a put-away for those items.-->
 
-Si vous avez sélectionné le champ **Utiliser feuille rangement** de la fiche emplacement et reporté votre réception en calculant les transbordements, toutes les lignes réception deviennent disponibles dans la feuille. Les informations de transbordement sont perdues et ne peuvent plus être créées. Par conséquent, pour utiliser la fonctionnalité de transbordement, il vaut mieux que vous transfériez les lignes vers la feuille rangement en effaçant les instructions de rangement plutôt que d'utiliser la fonction de transfert automatique prévue dans le champ **Utiliser feuille rangement**.  
+Pour reporter immédiatement les articles à transborder afin qu'ils soient disponibles pour le prélèvement, vous devez aussi enregistrer un rangement pour les autres articles issus de la ligne réception, c'est-à-dire les articles à ranger. Si une partie seulement des articles d'une ligne réception doit être transbordée, efforcezvous de ranger le reste des articles le plus vite possible. Sinon, vous pouvez aussi instaurer dans votre entrepôt une politique encourageant les employés à effectuer le transbordement de lignes réception entières chaque fois que cela est possible.
 
-Lorsque vous reportez la réception entrepôt, et que le champ **Utiliser feuille rangement** n'est pas coché, les articles à transborder figurent dans des lignes distinctes dans l'instruction de rangement. Le champ **Informations transbordement** de chaque ligne rangement indique si la ligne contient des articles à transborder, des articles provenant d'une même réception et devant tous être rangés ou des articles à ranger provenant d'une ligne réception dans laquelle certains des articles sont à transborder. Grâce à ce champ, les employés peuvent voir aisément pourquoi toute la quantité réceptionnée n'est pas rangée.  
+Dans l’instruction de rangement, supprimez les lignes d’instruction Prendre et Placer pour chaque ligne de réception des articles à ranger. Vous pouvez recréer les lignes d’instructions ultérieurement en tant que lignes rangement à partir de la feuille rangement ou de la réception reportée. Après avoir supprimé les lignes d’instruction, vous pouvez ranger et enregistrer les lignes pour les articles transbordés.  
 
-L'application ne crée pas d'enregistrement distinct concernant les articles transbordés, mais les enregistre plutôt en tant qu'instructions de rangement ordinaires.  
+## À propos de la feuille Rangement
 
-## <a name="to-set-up-the-warehouse-for-cross-docking"></a>Pour configurer l'entrepôt en vue du transbordement  
-1.  En cas d'utilisation de zones, configurez au moins une zone de transbordement. En cas d'utilisation d'un prélèvement et d'un rangement suggérés, configurez une zone de transbordement.  
+Si vous avez activé le bouton à bascule **Utiliser feuille rangement** sur la page Fiche emplacement, et avez reporté votre réception en calculant les transbordements, toutes les lignes réception sont disponibles dans la feuille. Les informations de transbordement sont perdues et ne peuvent plus être créées. Par conséquent, pour utiliser la fonctionnalité de transbordement, il vaut mieux que vous transfériez les lignes vers la feuille rangement en effaçant les instructions de rangement plutôt que d’utiliser la fonction de transfert automatique prévue dans le champ **Utiliser feuille rangement**.  
+
+Lorsque vous reportez la réception entrepôt, et que le bouton à bascule **Utiliser feuille rangement** est désactivé, les articles à transborder figurent dans des lignes distinctes dans l’instruction de rangement. Le champ **Informations transbord.** sur chaque ligne de rangement indique si la ligne contient les éléments suivants :
+
+* Articles à transborder.
+* Tous les articles d’une réception doivent être stockés.
+* Certains articles d’une réception doivent être stockés et d’autres doivent faire l’objet d’un transbordement.
+
+Les employés peuvent facilement comprendre pourquoi la quantité totale n’est pas stockée.  
+
+[!INCLUDE [prod_short](includes/prod_short.md)] ne conserve pas d’enregistrements séparés pour les articles transbordés, mais les enregistre comme des instructions de rangement ordinaires.  
+
+## Pour configurer l'entrepôt en vue du transbordement  
+
+1. Si vous utilisez des zones, configurez au moins une zone de transbordement. Si vous utilisez le prélèvement et le rangement dirigés, configurez une zone de transbordement.  
 
     Le champ **Zone transbordement** d'une zone de transbordement est activé. Ses types de zone devant être sélectionnés sont **Réception** et **Prélèvement**. Pour plus d'informations, voir [Créer des zones](warehouse-how-to-create-individual-bins.md) et [Configurer des types de zone](warehouse-how-to-set-up-bin-types.md).  
 
     Si vous utilisez des zones, créez une zone pour vos zones de transbordement, puis sélectionnez le champ **Zone transbordement**. Pour plus d'informations, voir [Configurer des emplacements de sorte qu'ils utilisent des zones](warehouse-how-to-set-up-locations-to-use-bins.md).  
 
-2.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacement**, puis choisissez le lien associé.  
-3.  Sur la page **Emplacement**, sélectionnez l'emplacement que vous souhaitez configurer pour le transbordement, puis choisissez l'action **Modifier**.  
-4.  Sur le raccourci **Entrepôt**, cochez la case **Utiliser transbordement**, puis renseignez le champ **Calc. date d'échéance transbordement** en y indiquant la période pendant laquelle le programme doit rechercher des opportunités de transbordement.
+2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacement**, puis choisissez le lien associé.  
+3. Sur la page **Emplacement**, sélectionnez l'emplacement que vous souhaitez configurer pour le transbordement, puis choisissez l'action **Modifier**.  
+4. Sur le raccourci **Entrepôt**, activez le bouton à bascule **Utiliser transbordement**, puis renseignez le champ **Date d’échéance transbordement** en y indiquant la période pendant laquelle le programme doit rechercher des opportunités de transbordement.
 
     L'option **Utiliser transbordement** n'est disponible que si vous avez coché les champs **Réception requise**, **Livraison requise**, **Prélèvement requis** et **Rangement requis**.  
 
@@ -55,7 +67,7 @@ L'application ne crée pas d'enregistrement distinct concernant les articles tra
 > [!NOTE]  
 >  Le transbordement n'est possible que si votre emplacement est configuré pour exiger un traitement des réceptions et des rangements entrepôt.  
 
-## <a name="to-cross-dock-items-without-viewing-the-opportunities"></a>Pour transborder des articles sans afficher les opportunités  
+## Pour transborder des articles sans afficher les opportunités  
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Réceptions entrepôt**, puis choisissez le lien associé.  
 2.  Créer des réceptions entrepôt pour un article qui est arrivé et qui pourrait nécessiter un transbordement. Pour plus d'informations, voir [Réceptionner des articles](warehouse-how-receive-items.md).  
 3.  Renseignez le champ **Qté à recevoir**, puis choisissez l'action **Calculer transbordement**.  
@@ -72,7 +84,7 @@ L'application ne crée pas d'enregistrement distinct concernant les articles tra
 6.  Imprimez l'instruction de rangement pour les lignes restantes, puis placez les quantités de la réception à ranger dans les zones appropriées ou dans la zone appropriée de l'entrepôt. Placez les articles à transborder dans la zone qui leur est attribuée par la politique de l'entrepôt. Parfois, la politique de l'entrepôt peut nécessiter simplement de les laisser dans la zone de réception.  
 7.  Pour enregistrer les articles transbordés comme étant rangés et disponibles pour le prélèvement, choisissez l'action **Enregistrer**.  
 
-## <a name="to-cross-dock-items-after-viewing-the-opportunities"></a>Pour transborder des articles après avoir affiché les opportunités  
+## Pour transborder des articles après avoir affiché les opportunités  
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Réceptions entrepôt**, puis choisissez le lien associé.  
 2.  Créer des réceptions entrepôt pour un article qui est arrivé et qui pourrait nécessiter un transbordement. Pour plus d'informations, voir [Réceptionner des articles](warehouse-how-receive-items.md).  
 
@@ -89,7 +101,7 @@ L'application ne crée pas d'enregistrement distinct concernant les articles tra
 > [!NOTE]  
 >  Dans le rangement entrepôt, vous pouvez continuer de modifier les quantités en cours de transbordement ou de rangement dans le stock, selon vos besoins. Par exemple, vous pouvez décider de transborder une quantité supplémentaire afin d'expédier l'enregistrement du transbordement.  
 
-## <a name="to-view-cross-docked-items-in-a-shipment-or-pick-worksheet"></a>Pour afficher des articles transbordés dans une feuille prélèvement ou livraison  
+## Pour afficher des articles transbordés dans une feuille prélèvement ou livraison  
 Si vous utilisez des zones, chaque fois que vous ouvrez une livraison ou la feuille prélèvement, vous pouvez voir le calcul mis à jour de la quantité de chaque article dans les zones de transbordement. Cette information est précieuse si vous attendez l'arrivée d'un article. Dès que vous voyez qu'un article est disponible dans la zone de transbordement, vous pouvez rapidement créer un prélèvement pour tous les articles de la livraison. Dans la feuille prélèvement, vous pouvez modifier les lignes, puis créer un prélèvement.  
 
 Lorsque vous prélevez des articles à livrer, vous devez commencer par rechercher les articles concernés dans la zone de transbordement. Si, au cours du processus de réception, vous avez noté les documents origine à la base du transbordement, vous saurez plus précisément si l'article que vous recherchez se trouve ou non dans la zone de transbordement.  
@@ -98,12 +110,11 @@ Après la libération d'un bon de production, les lignes sont disponibles dans l
 
 Si vous n'utilisez pas de zones, n'oubliez pas de vérifier, de temps en temps, la zone de transbordement ou consultez les notifications de réception pour connaître l'arrivée des articles destinés à la production.  
 
-## <a name="see-also"></a>Voir aussi  
-[Gestion d'entrepôt](warehouse-manage-warehouse.md)  
-[Stock](inventory-manage-inventory.md)  
+## Voir aussi  
+[Inventaire](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
-[Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
+[Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 

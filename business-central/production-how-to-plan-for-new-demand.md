@@ -1,29 +1,23 @@
 ---
 title: Planifier de nouvelles demandes commande par commande
-description: Cette tâche de planification peut être effectuée sur la page Planification commande, qui affiche toute nouvelle demande ainsi que les informations de disponibilité et les suggestions d’approvisionnement, notamment la substitution d’article.
+description: 'Cette tâche de planification peut être effectuée sur la page Planification commande, qui affiche toute nouvelle demande ainsi que les informations de disponibilité et les suggestions d’approvisionnement, notamment la substitution d’article.'
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: 5522, 5524, 5526
+ms.search.form: '5522, 5524, 5526'
 ms.date: 07/29/2021
 ms.author: edupont
-ms.openlocfilehash: e95bc34c56364ebb12c63c250339f1de868b8a32
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8516780"
 ---
-# <a name="plan-for-new-demand-order-by-order"></a>Planifier de nouvelles demandes commande par commande
+# Planifier de nouvelles demandes commande par commande
 
 Cette tâche de planification peut être effectuée sur la page **Planification commande**, affichant toute nouvelle demande ainsi que les informations de disponibilité et les suggestions d'approvisionnement. Elle fournit la visibilité et les outils nécessaires à la planification efficace des demandes des lignes vente et des lignes composante, puis à la création directe de différents types de commandes approvisionnement.  
 
 Vous pouvez accéder à la page **Planification commande** de deux manières différentes, en fonction de votre objectif : à partir d'une commande que vous souhaitez planifier spécifiquement ou par lots, car vous souhaitez planifier toutes les nouvelles demandes.  
 
 
-## <a name="to-plan-for-new-production-order-demand"></a>Pour planifier une nouvelle demande de bon de production
+## Pour planifier une nouvelle demande de bon de production
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de production planifiés**, puis sélectionnez le lien associé. (Vous pouvez exécuter cette procédure pour des bons de production planifiés, planifiés fermes ou libérés).
 2. Ouvrez le bon de production pour lequel vous souhaitez effectuer une planification, puis choisissez l'action **Planification**.  
@@ -31,7 +25,7 @@ Vous pouvez accéder à la page **Planification commande** de deux manières dif
 
 La page affiche les lignes planification filtrées par la vue de filtre **Demande de production**, c'est-à-dire toutes les lignes composante insatisfaites de tous les bons de production existants. La demande du bon de production n'est pas affichée car il est nécessaire d'effectuer la planification d'un bon de production avec un aperçu de la demande des éventuelles lignes composante précédentes. Les lignes planification du bon de production du contexte sont développées.  
 
-## <a name="to-plan-for-any-new-demand"></a>Pour planifier toute nouvelle demande
+## Pour planifier toute nouvelle demande
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Planification commande**, puis choisissez le lien associé.  
 2. Sur la page **Planification commande**, choisissez l'action **Calculer planification**.
@@ -87,7 +81,7 @@ La page affiche les lignes planification filtrées par la vue de filtre **Demand
 > [!NOTE]  
 >  Si vous entrez une date ultérieure à la date demande, un message vous l'indique.  
 
-## <a name="to-make-supply-orders"></a>Pour créer des commandes approvisionnement
+## Pour créer des commandes approvisionnement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de production planifiés**, puis sélectionnez le lien associé. Vous pouvez exécuter cette procédure pour un bon de production planifié, planifié ferme ou libéré.  
 2. Ouvrez le bon de production pour lequel vous souhaitez effectuer une planification, puis choisissez l'action **Planification**.  
@@ -114,7 +108,7 @@ Une fois que la planification est terminée sur la page **Planification commande
 > [!NOTE]  
 > Les commandes approvisionnement que vous créez peuvent introduire une demande dépendante, par exemple, pour les ordres de fabrication sous-jacents ; vous devez donc choisir à nouveau **Calculer planning** pour rechercher et résoudre ceci avant de poursuivre la liste.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 <!-- [Walkthrough: Planning Supplies Manually](walkthrough-planning-supplies-manually.md)   -->
 [Planification](production-planning.md)  

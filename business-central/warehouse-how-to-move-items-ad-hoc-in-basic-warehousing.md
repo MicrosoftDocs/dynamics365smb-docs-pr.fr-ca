@@ -1,87 +1,100 @@
 ---
-title: Déplacer des articles ad hoc dans les configurations de stockage de base
-description: Cette rubrique explique les mouvements ad hoc effectués lorsque vous devez déplacer des articles entre des zones internes sans une demande spécifique d’un document source.
-author: SorenGP
-ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.keywords: ''
-ms.search.form: 393, 7382
-ms.date: 06/25/2021
-ms.author: edupont
-ms.openlocfilehash: 46b6cbd88cf23974e5fd11453c328c1669c8e19c
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9534437"
+title: Déplacer des articles non planifiés dans les configurations de stockage de base
+description: Cet article explique les mouvements internes non planifiés entre zones sans demande d’un document source.
+author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
+ms.service: dynamics365-business-central
+ms.topic: how-to
+ms.date: 12/16/2022
+ms.custom: bap-template
+ms.search.form: '393, 7382'
 ---
-# <a name="move-items-ad-hoc-in-basic-warehouse-configurations"></a>Déplacer des articles ad hoc dans les configurations de stockage de base
+# Déplacer des articles en interne dans les configurations de stockage de base
 
-Vous pouvez être amené à déplacer des articles d'une zone interne vers une autre (et non vers des zones de réception ou de livraison) sans demande spécifique issue d'un document source. Vous pouvez exécuter ces mouvements ad hoc, par exemple, pour réorganiser l'entrepôt, pour acheminer des articles vers une zone d'inspection, ou pour déplacer des articles supplémentaires vers et depuis une zone de production sans qu'il existe une relation système avec le document origine du bon de production.  
+Vous souhaiterez peut-être déplacer des articles entre zones sans demande d’un document source. Par exemple, dans le cadre des activités suivantes :
 
-Dans les configurations d'entrepôt de base, où les emplacements utilisent le champ de configuration **Zone obligatoire** et éventuellement les champs **Prélèvement requis** et **Rangement requis**, vous pouvez enregistrer des mouvements ad hoc sans les documents sources en procédant comme suit :  
+* Réorganiser votre entrepôt.
+* Apporter des articles à une zone d’inspection.
+* Déplacer des articles supplémentaires vers et depuis une zone de production. 
 
-- À l'aide de la page **Mouvement interne**.  
-- Avec la page **Journal reclassement article**.  
+Le mode de prélèvement des articles dépend de la configuration de l’entrepôt en tant qu’emplacement. Learn more at [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).
+
+Dans les configurations d’entrepôt où le bouton à bascule de configuration **Zone obligatoire** est activé, mais pas **Prélèvement et rangement dirigés**, vous pouvez enregistrer des mouvements non planifiés sur les pages suivantes :  
+
+* Sur la page **Mouvement interne**.
+* Sur la page **Journal reclassement article**.  
+
+## Mouvements internes
+
+La page **Mouvements internes** vous permet de spécifier des lignes Prendre et Placer lorsqu’il n’y a pas de demande d’un document origine. La page Mouvement interne est comme une feuille de travail pour organiser les choses. Vous ne pouvez pas traiter le mouvement réel directement à partir de celle-ci. Lorsqu’une ligne est remplie, utilisez l’action **Créer un mouvement d’inventaire** pour envoyer la ligne à la page **Mouvement d’inventaire**, où vous traitez et enregistrez le mouvement.
+
+### Pour déplacer des articles en tant que mouvement interne
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Mouvements internes**, puis sélectionnez le lien associé.  
+2. Sélectionnez l'action **Nouveau**. Assurez-vous que le champ **N°** du raccourci **Général** est rempli.
+3. Dans le champ **Code magasin**, entrez le magasin où le mouvement a lieu.  
+
+    Si l’emplacement est votre emplacement par défaut en tant qu'employé d'entrepôt, le code emplacement est inséré automatiquement.  
+4. Dans le champ **Code de zone de destination**, entrez le code de la zone vers laquelle vous souhaitez déplacer les articles.
+
+    Par exemple, en production, la zone peut être la zone d'atelier ouvert définie sur la fiche emplacement ou dans l’atelier.  
+5. Dans le champ **Date d’échéance**, entrez la date à laquelle terminer le mouvement.  
+6. Sur chaque ligne, renseignez les champs selon vos besoins. Les documents de mouvement interne comportent une ligne par mouvement. La ligne contient à la fois les actions prendre et placer.
+7. Choisissez le champ **N° article** pour ouvrir la page **Liste des contenus zone**. Sélectionnez l’article à déplacer en fonction de sa disponibilité dans les zones. Vous pouvez également choisir l’action **Extraire contenu zone** pour remplir les lignes de mouvements internes en fonction de vos filtres.  
+
+    Après avoir sélectionné l’article, le champ **Code de zone de provenance** est automatiquement renseigné en fonction du contenu de la zone sélectionné. Vous pouvez choisir n’importe quelle zone où l’article est disponible. Les champs **N° article** et **Code de zone de provenance** sont liés. La modification de la valeur d’un champ peut modifier la valeur de l’autre.  
+
+    Le champ **Code de zone de destination** est rempli avec la valeur que vous avez saisie dans l’en-tête. Vous pouvez la changer sur la ligne pour toute autre code de zone qui n’est pas bloqué ou dédié à des fins particulières. Learn more at [Le champ Réservé](warehouse-how-to-create-individual-bins.md#the-dedicated-field).  
+
+8. Après avoir défini les zones depuis ou vers lesquelles que vous souhaitez déplacer les articles, entrez la quantité à déplacer dans le champ **Quantité**.  
+
+    > [!NOTE]  
+    > La quantité doit être disponible dans la zone spécifiée dans le champ **Code de zone de provenance**.  
+
+9. Lorsque vous êtes prêt à traiter le mouvement, choisissez l’action **Créer mouvement d’inventaire**.  
+
+    > [!NOTE]  
+    >  Après avoir créé le mouvement, les lignes de mouvement internes sont supprimées.  
+
+Exécutez le reste du mouvement non planifié sur la page **Mouvement d’inventaire** de la même manière que pour un mouvement basé sur des documents source.
+
+### Pour enregistrer le mouvement d’inventaire
+
+1. Sur la page **Mouvement d’inventaire**, ouvrez le document pour lequel enregistrer le mouvement.  
+2. Dans le champ **Code de zone** sur les lignes mouvement, la zone à partir de laquelle les articles doivent être prélevés est celui où les articles sont disponibles. Si nécessaire, vous pouvez modifier la zone.
+3. Exécutez le mouvement et saisissez les informations pour la quantité déplacée dans le champ **Quantité à traiter**. La valeur sur les lignes prélèvement et emplacement doit être la même. Sinon, vous ne pouvez pas enregistrer le mouvement.
+
+    Si vous devez prélever les articles d’une ligne à partir de plusieurs zones, par exemple parce que la quantité totale n’est pas dans la zone, utilisez l’action **Fractionner la ligne** sur le raccourci **Lignes**. L’action crée une ligne pour la quantité restante à gérer.  
+4. Sélectionnez l’action **Enregistrer mouvement d’inventaire**.  
+
+Voici ce qui se passe pendant le processus de report :
+
+* Les écritures emplacement indiquent que la quantité est transférée des zones « prendre » vers les zones « placer ».
+
+## Pour déplacer des articles à l'aide du journal reclassement article
+
+Au lieu d’utiliser des documents de mouvement, vous pouvez enregistrer des mouvements en reclassant les codes de zone sur les articles. Pour en savoir plus, voir [Comptabiliser, ajuster et reclasser l’inventaire avec les journaux](inventory-how-count-adjust-reclassify.md).
 
 > [!NOTE]  
->  Dans les configurations d'entrepôt avancées, où les emplacements utilisent le champ de configuration **Prélèv. et rangement suggérés**, vous utilisez la page **Feuille mouvement** ou les pages **Prélèvement interne entrepôt** ou **Rangement interne entrepôt** pour déplacer des articles ad hoc entre différentes zones.  
+> Les mouvements reportés avec des journaux de reclassement ne rendent pas les documents de mouvement prêts pour le déplacement.  
 
-## <a name="to-move-items-as-an-internal-movement"></a>Pour déplacer des articles en tant que mouvement interne
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal reclassement article**, puis choisissez le lien associé.  
+2. Sur chaque ligne journal, définissez les zones depuis et vers lesquelles déplacer les articles en renseignant les champs **Code de zone** et **Nouveau code de zone**.  
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Mouvement interne**, puis sélectionnez le lien associé.  
-2.  Sur le raccourci **Général**, renseignez le champ **N°**. en le laissant tel quel ou en cliquant sur le bouton **AssistEdit** pour effectuer une sélection parmi la souche de numéros.  
-3.  Dans le champ **Code magasin**, entrez le magasin où le mouvement a lieu.  
+    1. Pour déplacer tout le contenu d'une zone vers une autre, choisissez l'action **Extraire contenu de la zone**.  
+    2. Utilisez les filtres pour trouver la zone qui contient les éléments que vous souhaitez déplacer, puis choisissez **OK**. Les lignes journal sont renseignées avec le contenu de la zone.  
+3. Renseignez les champs restants de chaque ligne journal.
+4. Reportez le journal reclassement.  
 
-    Si l'emplacement est configuré comme votre emplacement par défaut en tant que magasinier, le code d'emplacement est inséré automatiquement.  
-4.  Dans le champ **Vers code emplacement**, entrez le code de l'emplacement vers lequel vous souhaitez déplacer l'article. Pour la production, il peut s’agir du code de zone d'atelier ouvert, par exemple, tel qu’il est défini sur la fiche emplacement ou dans l'atelier.  
-5.  Dans le champ **Date d'échéance**, entrez la date à laquelle le mouvement doit être terminé.  
-6.  Sur le raccourci **Lignes**, cliquez sur le champ **N° article** pour ouvrir la page **Liste contenus de la zone**, puis sélectionnez l’article à déplacer sur la base de sa disponibilité dans les zones. Vous pouvez également choisir l'action **Extraire contenu de la zone** pour renseigner les lignes mouvement internes sur la base des filtres. Pour plus d'informations, voir l'info-bulles pour l'action **Extraire contenu de la zone**.  
+## Voir la [formation Microsoft](/training/modules/manage-internal-warehouse-processes/) associée
 
-    Lorsque vous avez sélectionné l'article, le champ **Du code emplacement** est renseigné automatiquement en fonction du contenu d'emplacement sélectionné, mais vous pouvez le remplacer par un autre emplacement dans lequel l'article est disponible.  
+## Voir aussi
 
-    > [!NOTE]  
-    >  Étant donné que le champ **N° article** et le champ **Du code de zone** sont liés, leur valeur peut changer de manière interdépendante lorsque vous modifiez l'un ou l'autre de ces champs.  
-
-    Le champ **Vers code emplacement** est renseigné avec la valeur que vous avez entrée dans l'en-tête, mais vous pouvez la remplacer sur la ligne par n'importe quel autre code emplacement qui n'est pas bloqué ou dédié à des cas particuliers. Pour plus d'informations sur la création d'emplacements dédiés, reportez\-vous à Dédié.  
-7.  Lorsque vous avez défini les emplacements depuis/vers lesquels que vous souhaitez déplacer l'article, entrez la quantité à déplacer dans le champ **Quantité**.  
-
-    > [!NOTE]  
-    >  La quantité doit être disponible dans le champ Du code de zone.  
-
-8.  Lorsque vous êtes prêt à traiter le mouvement interne, choisissez l'action **Créer mouvement d'inventaire**.  
-
-    > [!NOTE]  
-    >  Lorsque vous avez créé le mouvement d'inventaire, les lignes mouvement interne sont supprimées.  
-
-    Vous effectuez le reste du mouvement ad hoc sur la page **Mouvement d'inventaire** de la même manière que pour un mouvement basé sur des documents origine. Pour plus d'informations, voir par exemple [Déplacer les composantes vers une zone opérations dans les configurations de stockage de base](warehouse-how-to-move-components-to-an-operation-area-in-basic-warehousing.md)  
-
-## <a name="to-move-items-with-the-item-reclassification-journal"></a>Pour déplacer des articles à l'aide du journal reclassement article
-
-Au lieu d'utiliser des documents mouvement entrepôt, vous pouvez enregistrer le déplacement d'articles en reclassant leurs codes de zone. Pour plus d'informations, voir [Inventaire, ajustement et reclassement de l'inventaire avec les journaux](inventory-how-count-adjust-reclassify.md).
-
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal reclassement article**, puis choisissez le lien associé.  
-2.  Sur chaque ligne feuille, définissez les emplacements depuis et vers lesquels vous souhaitez déplacer des articles en renseignant les champs **Code emplacement** et **Nouveau code emplacement**.  
-
-    1.  Pour déplacer tout le contenu d'une zone vers une autre, choisissez l'action **Extraire contenu de la zone**.  
-    2.  Renseignez les filtres pour rechercher l'emplacement dont vous souhaitez déplacer le contenu, puis sélectionnez le bouton **OK**. Les lignes journal sont renseignées avec le contenu de la zone.  
-3.  Renseignez les champs restants de chaque ligne journal.   
-4.  Reportez le journal reclassement.  
-
-    > [!NOTE]  
-    >  Contrairement aux documents mouvement, un mouvement reporté avec le journal reclassement ne crée pas de demande entrepôt pour effectuer la tâche physique.  
-
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/manage-internal-warehouse-processes/) associée
-
-## <a name="see-also"></a>Voir aussi .
-
-[Gestion d'entrepôt](warehouse-manage-warehouse.md)  
-[Stock](inventory-manage-inventory.md)  
+[Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
+[Inventaire](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
 [Gestion d'assemblage](assembly-assemble-items.md)  
-[Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 

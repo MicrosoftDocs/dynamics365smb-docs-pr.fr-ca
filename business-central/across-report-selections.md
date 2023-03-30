@@ -1,24 +1,18 @@
 ---
-title: Sélection des rapports dans Business Central
-description: Découvrez comment configurer les rapports que vous utilisez pour imprimer différents types de documents dans Business Central.
+title: "Sélection des rapports dans Business\_Central"
+description: "Découvrez comment configurer les rapports que vous utilisez pour imprimer différents types de documents dans Business\_Central."
 author: brentholtorf
 ms.topic: conceptual
-ms.search.keywords: setup, reporting
-ms.search.form: 306, 307, 347, 385, 524, 865, 5932, 7401, 7355, 99000917
+ms.search.keywords: 'setup, reporting'
+ms.search.form: '306, 307, 347, 385, 524, 865, 5932, 7401, 7355, 99000917'
 ms.date: 06/09/2022
 ms.author: bholtorf
-ms.openlocfilehash: fc5bfe8b22d06455379dabd20723fb0ccfe4032b
-ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "9607510"
 ---
-# <a name="report-selection-for-documents-in-business-central"></a>Sélection de rapport pour les documents dans Business Central
+# Sélection de rapport pour les documents dans Business Central
 
 Vous pouvez configurer des rapports par défaut à utiliser pour imprimer des documents de vente, d’achat et de services, tels que des commandes, des devis et des factures. Par exemple, si vous avez une présentation spécifique pour les factures vente, vous pouvez spécifier ce rapport sur la page **Sélection des rapports - Vente** afin qu’elle soit utilisée pour envoyer ou imprimer les factures vente.  
 
-## <a name="available-report-selections"></a>Sélection des rapports disponible
+## Sélection des rapports disponible
 
 Les pages **Sélection des rapports** spécifient quel rapport sera imprimé dans différentes situations. [!INCLUDE [prod_short](includes/prod_short.md)] fournit des configurations par défaut, mais vous pouvez les modifier si nécessaire. Vous pouvez également ajouter des rapports aux pages **Sélection des rapports** si vous souhaitez imprimer plus d’un rapport par type de document, par exemple. 
 
@@ -45,7 +39,7 @@ La version par défaut de [!INCLUDE [prod_short](includes/prod_short.md)] compre
 * **Sélection des rapports - Projet**  
 * **Sélection des rapports : Services**
 
-## <a name="example-report-selection-for-sales-documents"></a>Exemple : Sélection des rapports pour les documents de vente
+## Exemple : Sélection des rapports pour les documents de vente
 
 La page **Sélection des rapports - Ventes** présente les rapports par défaut à utiliser dans différents scénarios pour chaque type de document associé. Choisissez un type de document dans le champ **Usage**, puis ajoutez ou examinez la sélection des rapports. Vous pouvez configurer plusieurs rapports et spécifier l’ordre de séquence dans lequel les rapports doivent être envoyés ou imprimés.  
 
@@ -61,7 +55,7 @@ Par exemple, dans les pages **Sélection des rapports - Ventes** et **Sélecti
 |**Utiliser comme pièce jointe à un courriel**| Joignez le document correspondant au courriel.|
 |**Description de la présentation du corps du courriel**|Spécifiez la présentation à utiliser pour le corps du courriel. En règle générale, la présentation du rapport est personnalisée. |
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configurer des textes et des présentations de courriel réutilisables](admin-how-setup-email.md#set-up-reusable-email-texts-and-layouts)  
 [Sélectionner une mise en page de chèque](finance-how-define-check-layouts.md)  

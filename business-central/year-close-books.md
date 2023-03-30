@@ -1,28 +1,22 @@
 ---
 title: Aperçu des tâches pour fermer les registres
-description: En savoir plus sur le processus de fermeture des registres d'un exercice financier ou d'une période fiscale, et ce qui a lieu après la fermeture, à la fin d'un exercice.
+description: 'En savoir plus sur le processus de fermeture des registres d''un exercice financier ou d''une période fiscale, et ce qui a lieu après la fermeture, à la fin d''un exercice.'
 author: jswymer
 ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: year closing, close accounting period, close fiscal year, bank account detailed trial balance
+ms.search.keywords: 'year closing, close accounting period, close fiscal year, bank account detailed trial balance'
 m.search.form: 100
 ms.date: 04/01/2021
 ms.author: jswymer
-ms.openlocfilehash: 2c959f3c3c0aad3a44ea2ebfa60aed395720f562
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8511902"
 ---
-# <a name="closing-the-books"></a>Fermeture des registres
+# Fermeture des registres
 Après vous être assuré que tous vos comptes sont à jour et avoir affecté les coûts et les bénéfices, vous pouvez fermer la comptabilité d'un exercice financier ou d'une période comptable.
 
 Vous n'êtes pas obligé de fermer un exercice, mais cela vous aidera à travailler plus facilement dans le système parce que vous serez en mesure de bénéficier des options de filtrage pratiques mises à votre disposition. Vous ne devez pas non plus vous préoccuper de la perte de détails de transactions lors de la fermeture parce que tous les détails sont conservés, même après la fermeture de l'exercice.
 
-## <a name="closing-book-process"></a>Processus de fermeture des registres
+## Processus de fermeture des registres
 Le processus de fermeture d'un registre inclut les tâches principales suivantes :
 
 1. Fermeture de la période comptable.
@@ -44,14 +38,14 @@ Le processus de fermeture d'un registre inclut les tâches principales suivantes
 
     Pour plus d'informations, voir [Reporter une écriture de fermeture d'exercice](year-how-post-year-end-close-entry.md).
 
-## <a name="what-happens-when-you-close"></a>Ce qui se produit lorsque vous fermez
+## Ce qui se produit lorsque vous fermez
 Lors de la fermeture en fin d'exercice, le système déplace vos bénéfices des bénéfices calculés vers le compte Bénéfices non répartis. Le système marque également l'exercice financier comme « fermé » et toutes les écritures suivantes pour l'exercice fermé comme « écritures de l'exercice précédent ».
 
 Le système génère ensuite une écriture de fermeture mais ne la reporte pas automatiquement. Vous avez la possibilité de créer une ou plusieurs écritures de compte de fonds d'équité de compensation qui vous permettent de choisir la manière dont vous voulez affecter votre écriture de fermeture. Par exemple, si votre compagnie comprend plusieurs départements, vous pouvez laisser le système générer une écriture de fermeture unique pour tous les départements et créer une écriture de compensation pour le compte de fonds propres de chaque département.
 
 Vous pouvez effectuer le report dans un exercice financier précédent, même après la fermeture des comptes d'état des résultats, si vous réexécutez le traitement en lot Fermer l'état des résultats par la suite.
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Utiliser des périodes et exercices financiers comptables](finance-accounting-periods-and-fiscal-years.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

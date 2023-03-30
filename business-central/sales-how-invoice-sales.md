@@ -1,23 +1,17 @@
 ---
 title: Facturer des ventes
-description: Décrit comment créer une facture vente, un document de vente ou, enregistrer votre entente avec un client pour vendre des produits à des conditions spécifiques.
+description: 'Décrit comment créer une facture vente, un document de vente ou, enregistrer votre entente avec un client pour vendre des produits à des conditions spécifiques.'
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: bill, sale, invoice, order
-ms.search.form: 43, 48, 9301
+ms.search.keywords: 'bill, sale, invoice, order'
+ms.search.form: '43, 48, 9301'
 ms.date: 09/01/2022
 ms.author: edupont
-ms.openlocfilehash: 1a59356653c01ab9c1493bba0e6be80367f21217
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9529660"
 ---
-# <a name="invoice-sales"></a>Facturer des ventes
+# Facturer des ventes
 
 Vous pouvez généralement créer un document de vente ou une facture vente pour enregistrer votre entente avec un client pour vendre certains produits selon certaines modalités de paiement et de livraison.  
 
@@ -31,7 +25,7 @@ Pour toutes les autres situations, les documents de vente et les factures vente 
 
 Vous pouvez négocier avec le client en créant d’abord un devis, que vous pouvez convertir en facture vente ou en commande vente lorsque vous êtes d’accord sur la vente. En savoir plus, [Créer des devis](sales-how-make-offers.md).
 
-## <a name="create-sales-invoices"></a>Créer des factures vente
+## Créer des factures vente
 
 Si le client décide d'acheter, vous reportez la facture vente pour créer les écritures quantité et valeur associées. Lorsque vous reportez la facture vente, vous pouvez également envoyer par courriel le document en pièce jointe au format PDF. Vous pouvez faire en sorte que le corps du message soit prérempli avec un résumé des informations de facturation et de paiement, par exemple un lien vers Paypal. Pour plus d'informations, voir [Envoyer des documents par courriel](ui-how-send-documents-email.md). Lorsque le client paie la facture, vous pouvez enregistrer ce paiement de différentes manières, selon la taille et les flux de travail favoris de votre organisation. En savoir plus sur la section [Enregistrement des paiements](#registering-payments).  
 
@@ -39,7 +33,7 @@ Les fiches article peuvent être de type **Inventaire**, **Service** et **Hors i
 
 Vous pouvez remplir les champs relatifs au client sur la facture vente de deux façons selon que le client est déjà enregistré ou non. Reportez-vous à l’étape 2 de la procédure ci-dessous.
 
-### <a name="to-create-a-sales-invoice"></a>Pour créer une facture vente :
+### Pour créer une facture vente :
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures vente**, puis sélectionnez le lien associé.  
 2. Dans le champ **Client**, entrez le nom d'un client existant. Si, toutefois, le client est nouveau et n’est donc pas enregistré, suivez ces étapes pour remplir les informations client standard sur la page **Facture vente** :
@@ -94,11 +88,11 @@ La boîte de dialogue **Valider et envoyer la confirmation** s'ouvre et indique 
 
 Les écritures article et client associées sont à présent créées dans votre système, et la facture vente est sortie en tant que document au format PDF. La facture vente est supprimée de la liste des factures vente et remplacée par un nouveau document dans la liste des factures vente reportées.  
 
-### <a name="calculating-invoice-discounts-on-sales"></a>Calcul d’escomptes facture pour des ventes
+### Calcul d’escomptes facture pour des ventes
 
 [!INCLUDE [sales-invoice-discounts](includes/sales-invoice-discounts.md)]
 
-## <a name="posted-invoices"></a>Factures reportées
+## Factures reportées
 
 [!INCLUDE [posted-invoices](includes/posted-invoices.md)]
 
@@ -106,7 +100,7 @@ Vous pouvez facilement corriger ou annuler une facture vente reportée avant qu'
 
 [Ouvrir la liste des **factures vente reportées**](https://businesscentral.dynamics.com/?page=143) dans [!INCLUDE [prod_short](includes/prod_short.md)].
 
-## <a name="registering-payments"></a>Enregistrement des paiements
+## Enregistrement des paiements
 
 Selon les besoins de votre entreprise, vous pouvez être payé et enregistrer ce paiement de diverses manières : manuellement, automatiquement, et via des services de paiement.  
 
@@ -121,13 +115,13 @@ Vous pouvez même créer des factures à paiement direct pour les clients non en
 > [!TIP]
 > Si vous souhaitez envoyer à vos clients des rappels de paiements en retard, vous devez configurer des niveaux et des conditions de rappel. Pour plus d’informations, voir [Configurer les conditions et niveaux de rappel](finance-setup-reminders.md).  
 
-## <a name="external-document-numbers"></a>Numéros de document externe
+## Numéros de document externe
 
 [!INCLUDE [ext-doc-no-sales](includes/ext-doc-no-sales.md)]
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/invoicing-customers-dynamics-365-business-central/index) associée.
+## Voir la [formation Microsoft](/training/modules/invoicing-customers-dynamics-365-business-central/index) associée.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Ventes](sales-manage-sales.md)  
 [Définition des ventes](sales-setup-sales.md)  

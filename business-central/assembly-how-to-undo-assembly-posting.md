@@ -1,68 +1,63 @@
 ---
 title: Annuler le report d'assemblage
-description: Parfois vous avez besoin d’annuler un ordre d’assemblage reporté, par exemple parce que la facture a été reportée avec des erreurs qui doivent être corrigées.
-author: SorenGP
-ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.keywords: kit, kitting
-ms.search.form: 900, 901, 902, 903, 904, 907, 910, 916, 920, 921, 922, 923, 940, 941, 942, 930, 931, 932, 914, 915, 905
-ms.date: 06/14/2021
-ms.author: edupont
-ms.openlocfilehash: 8a3588e83ad0a75c4ac9167329659b25ed52320e
-ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "9606343"
+description: Découvrez comment corriger les erreurs dans un ordre d’assemblage reporté.
+author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: andreipa
+ms.topic: how-to
+ms.date: 02/21/2023
+ms.custom: bap-template
+ms.search.keywords: 'kit, kitting'
+ms.search.form: '900, 901, 902, 903, 904, 907, 910, 916, 920, 921, 922, 923, 940, 941, 942, 930, 931, 932, 914, 915, 905'
 ---
-# <a name="undo-assembly-posting"></a>Annuler le report d'assemblage
+# Annuler le report d'assemblage
 
-Vous pouvez parfois être amené à annuler un ordre d'assemblage reporté, par exemple, si la commande a été reportée avec des erreurs qui doivent être corrigées, ou parce qu'il n'aurait pas dû être reporté en premier et doit être annulé.
+Annulez le report d’un ordre d’assemblage pour corriger une erreur ou supprimer un report indésirable.
 
-Lorsque vous annulez un ordre d'assemblage reporté, un ensemble d'écritures du grand livre d'articles de correction est créé pour inverser les écritures d'origine. Chaque écriture production positive pour l'élément d'assemblage est inversée par une écriture production négative. Chaque écriture production négative pour une composante d'assemblage est inversée par une écriture production positive. L'affectation des coûts fixes est créée automatiquement entre les écritures de correction et les écritures d'origine afin de garantir l'exactitude de l'inversion de coût.  
+Lorsque vous annulez un ordre d’assemblage reporté, des écritures article de correction sont créées pour inverser les écritures d’origine. Chaque écriture production positive pour l'élément d'assemblage est inversée par une écriture production négative. Chaque écriture production négative pour une composante d'assemblage est inversée par une écriture production positive. L'affectation des coûts fixes est créée automatiquement entre les écritures de correction et les écritures d'origine afin de garantir l'exactitude de l'inversion de coût.  
 
-Lorsque vous annulez un ordre d'assemblage entièrement reporté, vous pouvez choisir de recréer l'ordre d'assemblage à son état d'origine, par exemple, pour apporter des corrections avant un nouveau report. Sinon, vous pouvez choisir de ne pas recréer l'ordre d'assemblage.  
+Lorsque vous annulez un ordre d’assemblage entièrement reporté, vous pouvez recréer l’ordre d’origine. Par exemple, pour apporter des corrections avant de le reporter à nouveau.  
 
-Lorsque vous annulez un ordre d'assemblage partiellement validé, tous les champs de quantité concernés, notamment les champs **Quantité assemblée**, **Quantité consommée** et **Quantité restante**, sont restaurés avec leur valeur précédant la validation en question.  
+Lorsque vous annulez un ordre d’assemblage partiellement reporté, tous les champs de quantité concernés, notamment les champs **Quantité assemblée**, **Quantité consommée** et **Quantité restante** sont restaurés avec leur valeur précédant le report.  
 
-Pour recréer ou restaurer des ordres d'assemblage, il faut que l'élément d'assemblage qui résultait du report initial respecte les conditions suivantes :  
+Pour recréer ou restaurer des ordres d’assemblage, l’article du report d’origine doit respecter les conditions suivantes :  
 
--   L'article doit toujours être en inventaire. En d'autres termes, il ne doit pas avoir été vendu ou consommé dans le cadre de transactions sortantes.  
--   Il ne doit pas être réservé.  
--   Il doit exister dans la zone dans laquelle il a été produit.  
+* Il est toujours dans l’inventaire. Autrement dit, il n’a pas été vendu ni autrement consommé par des transactions sortantes.  
+* Il n’est pas réservé.  
+* Il doit exister dans la zone dans laquelle il a été produit.  
 
-De plus, les ordres d'assemblage existants ne peuvent être restaurés que si le nombre de lignes et la séquence de lignes de l'ordre de assemblage initial ne sont pas modifiés.  
+Les ordres d’assemblage ne peuvent être restaurés que si le numéro et la séquence des lignes de l’ordre d’assemblage n’ont pas été modifiés.  
 
 > [!TIP]  
->  Pour résoudre les conflits dus à des modifications de ligne, vous pouvez rétablir manuellement les modifications sur les lignes en question avant d'annuler l'ordre d'assemblage reporté associé. Sinon, vous pouvez reporter l'ordre d'assemblage entièrement et choisir de le recréer lorsque vous annulez le report.  
+> Pour résoudre les conflits dus à des modifications des lignes, vous pouvez rétablir manuellement les modifications sur les lignes en question avant d’annuler l’ordre d’assemblage reporté. Vous pouvez reporter l’ordre d’assemblage, puis le recréer lorsque vous annulez le report.  
 
-La procédure suivante décrit comment annuler les ordres d'assemblage reportés dans lesquels les articles ont été assemblés pour stock. Si vous souhaitez annuler les ordres d'assemblage validés pour lesquels les articles ont été assemblés pour une commande vente, vous devez exécuter la fonction **Annuler expédition** sur l'expédition validée qui se rapporte à l'ordre d'assemblage validé. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md). L'annulation de l'ordre d'assemblage reporté se produit alors automatiquement de la même manière que décrit dans cette rubrique.  
+La procédure suivante décrit comment annuler les ordres d’assemblage reportés qui contiennent des articles assemblés pour stock. Pour annuler des ordres d’assemblage reportés avec des articles qui ont été assemblés pour commande, utilisez l’action **Annuler la livraison** sur la livraison reportée associée. Pour en savoir plus sur l’annulation de livraisons, consultez [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md). L’annulation de l’ordre d’assemblage reporté se déroule de la même manière que celle décrite dans cet article.  
 
-## <a name="to-undo-posting-of-an-assembly-order"></a>Pour annuler le report d'un ordre d'assemblage
+## Pour annuler le report d'un ordre d'assemblage
 
-1.  Pour annuler un ordre d’assemblage entièrement ou partiellement reporté, choisissez l’![ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Ordres d’assemblage reportés**, puis sélectionnez le lien associé.  
+Vous pouvez annuler des ordres d’assemblage entièrement ou partiellement reportés.
 
-    La page **Ordres d'assemblage reportés** s'ouvre avec un ou plusieurs ordres d'assemblage qui ont été reportés à partir de l'ordre d'assemblage en question. Chaque report partiel crée un ordre d'assemblage reporté distinct.  
-2.  Ouvrez l'ordre d'assemblage reporté que vous souhaitez annuler, puis choisissez **Annuler l'assemblage**.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Ordres d’assemblage reportés**, puis sélectionnez le lien associé.  
 
-    Si l'ordre d'assemblage reporté que vous souhaitez annuler est lié à un ordre d'assemblage entièrement reporté qui est maintenant supprimé, vous avez la possibilité de le recréer, généralement parce que vous voulez le retraiter.  
-3.  Si vous souhaitez recréer l'ordre d'assemblage, cliquez sur le bouton **oui**. Pour annuler la validation sans recréer l'ordre d'assemblage associée, cliquez sur le bouton **Non**.  
+   Chaque report partiel crée un ordre d'assemblage reporté distinct.  
+2. Ouvrez l'ordre d'assemblage reporté que vous souhaitez annuler, puis choisissez **Annuler l'assemblage**.  
 
-Le champ **Contrepassé** de l'en\-tête d'ordre d'assemblage prend la valeur **Oui**. Le report de l'ordre d'assemblage est désormais inversé. Vous pouvez traiter l'ordre d'assemblage dans son intégralité si vous avez choisi de le recréer, ou l'ordre d'assemblage ouvert que vous avez restauré à son état d'origine.  
+    Si l’ordre d’assemblage reporté est lié à un ordre d’assemblage entièrement reporté qui a été supprimé, vous pouvez recréer l’ordre supprimé. Par exemple, vous pouvez recréer l’ordre parce que vous souhaitez le retraiter.  
+3. Pour recréer l’ordre d’assemblage, choisissez **Oui**. Pour annuler le report sans recréer l’ordre d’assemblage associé, choisissez **Non**.  
+
+Le champ **Inversé** de l’ordre d’assemblage prend la valeur **Oui**. Le report de l’ordre d’assemblage est maintenant inversé. Vous pouvez traiter l’intégralité de l’ordre d’assemblage si vous avez choisi de le recréer, ou l’ordre d’assemblage ouvert que vous avez restauré à son état d’origine.  
 
 > [!NOTE]  
->  Pour restaurer les quantités de plusieurs reports partiels dans un ordre d'assemblage, vous devez annuler tous les ordres d'assemblage reportés concernés en suivant les étapes 1 à 3 ci-dessus pour chaque ordre d'assemblage reporté.  
+> Pour restaurer les quantités de plusieurs reports partiels dans un ordre d’assemblage, vous devez annuler tous les ordres d’assemblage reportés en suivant les étapes 1 à 3.  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi
 
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)  
 [Traiter les retours ou annulations de ventes](sales-how-process-sales-returns-cancellations.md)  
 [Utilisation des nomenclatures d’assemblage](assembly-how-work-assembly-boms.md)  
-[Stock](inventory-manage-inventory.md)  
-[Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
+[Inventaire](inventory-manage-inventory.md)  
+[Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 

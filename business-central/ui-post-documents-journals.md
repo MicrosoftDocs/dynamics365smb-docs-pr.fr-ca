@@ -7,16 +7,10 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/24/2021
-ms.search.form: ''
+ms.search.form: null
 ms.author: edupont
-ms.openlocfilehash: e306cc27753e86e8e1a0a315406643bcf6f44d8a
-ms.sourcegitcommit: 12ff9dcbefb47f2280479cceb656ea7e6ac2cfa1
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 12/02/2022
-ms.locfileid: "9822529"
 ---
-# <a name="posting-documents-and-journals"></a>Report des documents et des journaux
+# Report des documents et des journaux
 
 Le report est une tâche de comptabilité qui consiste à enregistrer des transactions commerciales dans les divers livres de la compagnie.
 
@@ -33,7 +27,7 @@ Le tableau suivant décrit les tâches associées, et inclut des liens vers les 
 | Obtenir un aperçu, sur la page, des écritures qui seront créées lors du report. |[Aperçu des résultats du report](ui-how-preview-post-results.md) |
 | Obtenir un aperçu, dans un rapport, des écritures qui seront créées lors du report. |[Afficher des rapports de test avant le report](ui-how-view-test-reports-posting.md) |
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Modifier les documents reportés](across-edit-posted-document.md)  
 [Rechercher les écritures associées aux documents](ui-find-entries.md)  

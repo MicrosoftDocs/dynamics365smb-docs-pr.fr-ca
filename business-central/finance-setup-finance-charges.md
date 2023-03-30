@@ -1,27 +1,21 @@
 ---
 title: Configurer les modalités de frais financiers
-description: Découvrez comment configurer Business Central afin de pouvoir informer les clients des frais supplémentaires en envoyant des notes de frais financiers.
+description: "Découvrez comment configurer Business\_Central afin de pouvoir informer les clients des frais supplémentaires en envoyant des notes de frais financiers."
 author: edupont04
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: payment due, debt, overdue, fee, charge
-ms.search.form: 6, 494
+ms.search.keywords: 'payment due, debt, overdue, fee, charge'
+ms.search.form: '6, 494'
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 27378e1c2c12077bdb04aa9f1e2b93f27fe048dc
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9528287"
 ---
-# <a name="set-up-finance-charge-terms"></a>Configurer les modalités de frais financiers
+# Configurer les modalités de frais financiers
 
 Lorsqu'un client n'effectue pas son paiement à la date d'échéance, des frais financiers peuvent être calculés automatiquement et ajoutés aux montants échus sur le compte du client. Vous pouvez informer le client des frais ajoutés en lui envoyant une facture d'intérêts. Mais tout d’abord, vous devez configurer un code qui représente chaque calcul de frais financiers. Vous pouvez ensuite entrer ce code dans le champ Code condition intérêts des fiches client.  
 
-## <a name="finance-charge-terms"></a>Modalités de frais financiers
+## Modalités de frais financiers
 
 Vous devez configurer des modalités de frais financiers pour chaque calcul de frais financiers, puis affecter les modalités au client dans le champ **Code modalités de frais financiers** sur la page **Client**.
 
@@ -39,7 +33,7 @@ Les intérêts de retard peuvent être calculés en utilisant les méthodes du s
 
 En outre, chaque modalité de la table Modalités de frais financiers est lié à une autre sous-table, la table Texte frais financiers. Pour chaque ensemble de modalités de frais financiers vous pouvez définir un texte début et/ou un texte fin à inclure dans la note de frais financiers.
 
-### <a name="to-set-up-finance-charge-terms"></a>Pour configurer des modalités de frais financiers
+### Pour configurer des modalités de frais financiers
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modalités de frais financiers**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins.
@@ -68,9 +62,9 @@ En outre, chaque modalité de la table Modalités de frais financiers est lié �
 |%8|Contenu du champ **Code devise** de l'en-tête de note de frais financiers|  
 |%9|Contenu du champ **Date comptabilisation** de l'en-tête de facture d'intérêts|  
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/send-memos-dynamics-365-business-central/) associée
+## Voir la [formation Microsoft](/training/modules/send-memos-dynamics-365-business-central/) associée
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
 [Configurer les niveaux et modalités de rappel](finance-setup-reminders.md)  

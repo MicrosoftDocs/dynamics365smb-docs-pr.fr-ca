@@ -1,22 +1,16 @@
 ---
 title: Gestion des coûts de l'inventaire
-description: La gestion des coûts consiste à enregistrer et à déclarer les coûts d’exploitation de l’entreprise, y compris la déclaration des coûts de fabrication et des coûts de l’inventaire.
+description: 'La gestion des coûts consiste à enregistrer et à déclarer les coûts d’exploitation de l’entreprise, y compris la déclaration des coûts de fabrication et des coûts de l’inventaire.'
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 49cc2e9c461974dcdb6fa0612aa9abc11629bd9b
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8523433"
 ---
-# <a name="managing-inventory-costs"></a>Gestion des coûts de l'inventaire
+# Gestion des coûts de l'inventaire
 La gestion des coûts, aussi appelée « évaluation des coûts », se charge de l'enregistrement et du report des coûts d'exploitation de la compagnie. Inclut le report des coûts de fabrication et des coûts inventaire qui constituent la valeur des articles.   
 
 Il est essentiel de comprendre les principes suivants : les méthodes d'évaluation du coût définissent le mode d'évaluation des articles lors de leur sortie de l'inventaire, l'ajustement des coûts met à jour le coût des marchandises vendues avec les coûts d'achat associés reportés après la vente, les valeurs en inventaire doivent être reportées sur les comptes du grand livre appropriés à intervalles réguliers.
@@ -39,7 +33,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Effectuer un contrôle de clôture d’exercice et des tâches de création de rapports, tels que le calcul de la valeur de l’inventaire et le report des coûts dans le grand livre.|[Génération de rapports sur les coûts et rapprochement avec le grand livre](/dynamics365/business-central/finance-how-to-post-inventory-costs-to-the-general-ledger)|
 |Découvrez comment vous pouvez utiliser la file d’attente des travaux pour déplacer les tâches d’ajustement du coût de l’inventaire ou de rapprochement avec le grand livre en arrière-plan.|[Ajuster et rapprocher le coût de l’inventaire avec le grand livre avec la file d’attente des travaux](finance-manage-inventory-costs.md)|
 
-## <a name="see-also"></a>Voir aussi  
+## Voir aussi  
  [Finance](finance.md)  
  [Stocks](inventory-manage-inventory.md)   
  [Vente](sales-manage-sales.md)   

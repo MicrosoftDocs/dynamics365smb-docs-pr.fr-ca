@@ -1,22 +1,16 @@
 ---
-title: 'Pratiques de configuration recommandées : méthodes de réapprovisionnement | Microsoft Docs'
-description: Sur les fiches article, le champ Méthode réapprovisionnement propose quatre méthodes de planification différentes qui déterminent le mode d'interaction de chacun des paramètres de planification.
+title: "Pratiques de configuration recommandées\_: méthodes de réapprovisionnement | Microsoft Docs"
+description: 'Sur les fiches article, le champ Méthode réapprovisionnement propose quatre méthodes de planification différentes qui déterminent le mode d''interaction de chacun des paramètres de planification.'
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: f12a5156cbad785ccede27bbe176b7e3ccd74d9c
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9531064"
 ---
-# <a name="setup-best-practices-reordering-policies"></a>Pratiques de configuration recommandées : méthodes de réapprovisionnement
+# Pratiques de configuration recommandées : méthodes de réapprovisionnement
 
 Sur les fiches article, le champ **Méthode réapprovisionnement** propose quatre méthodes de planification différentes qui déterminent le mode d'interaction de chacun des paramètres de planification.  
 
@@ -41,9 +35,9 @@ Le tableau suivant propose des recommandations pour effectuer son choix parmi ce
 |**Qté fixe de commande**|À utiliser avec des articles C.<br /><br /> À associer à des paramètres de point de commande.<br /><br /> Au stade fabrication, à utiliser avec des composantes de niveau inférieur.<br /><br /> Ne pas utiliser si l'article est souvent réservé.|Les articles C (tasses à thé, par exemple) sont des articles présentant peu de valeur dont les commandes sont nombreuses et régulières. La meilleure méthode de réapprovisionnement pour les articles C doit par conséquent garantir une disponibilité constante en restant toujours au-dessus du point de commande.<br /><br /> Si l'utilisateur réserve une quantité en prévision d'une demande quelque peu lointaine, la planification s'en trouvera perturbée. Même si le niveau d'inventaire prévisionnel est acceptable par rapport au point de réapprovisionnement, les quantités peuvent ne pas être disponibles en raison de la réservation.|  
 |**Qté maximum**|À utiliser avec des articles C dont les frais de transport sont élevés et les capacités de stockage limitées.<br /><br /> À associer à un ou plusieurs modificateurs d'ordre (Qté minimum commande, Qté maximum commande ou Commandé par).|Les articles C (tasses à thé, par exemple) sont des articles présentant peu de valeur dont les commandes sont nombreuses et régulières. La meilleure méthode de réapprovisionnement pour les articles C doit par conséquent garantir une disponibilité constante en restant toujours au-dessus du point de réapprovisionnement, mais en dessous de la quantité en inventaire maximale.<br /><br /> Pour modifier la commande suggérée, vous pouvez réduire la quantité commande jusqu'à une quantité commande maximum spécifiée, l'augmenter jusqu'à une quantité commande minimum spécifiée ou l'arrondir pour qu'elle corresponde à un nombre de commandes spécifié. **Note :** en cas d'utilisation avec un point de commande, le stock doit rester entre le point de commande et la quantité maximum.|  
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/paths/replenish-items-dynamics-365-business-central/) associée
+## Voir la [formation Microsoft](/training/paths/replenish-items-dynamics-365-business-central/) associée
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
  [Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
  [Détails de conception : gestion des méthodes de réapprovisionnement](design-details-handling-reordering-policies.md)  

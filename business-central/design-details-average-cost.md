@@ -1,28 +1,22 @@
 ---
 title: Détails de conception – Coût moyen
-description: Le coût moyen d'un article est calculé avec une moyenne pondérée périodique, selon la période coût moyen qui est paramétrée dans Business Central.
+description: 'Le coût moyen d''un article est calculé avec une moyenne pondérée périodique, selon la période coût moyen qui est paramétrée dans Business Central.'
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.search.form: 8645
 ms.date: 06/08/2021
 ms.author: edupont
-ms.openlocfilehash: cdba126a3cdd6116f0067cac08bccadbdfc5a982
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8519850"
 ---
-# <a name="design-details-average-cost"></a>Détails de conception : coût moyen
+# Détails de conception : coût moyen
 Le coût moyen d'un article est calculé avec une moyenne pondérée périodique, selon la période coût moyen qui est paramétrée dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
  La date d'évaluation est définie automatiquement.  
 
-## <a name="setting-up-average-cost-calculation"></a>Configuration du calcul du coût moyen  
+## Configuration du calcul du coût moyen  
  Le tableau suivant décrit les deux champs de la page **Configuration inventaire** qui doivent être renseignés pour activer le calcul du coût moyen.  
 
 |Champ|Description|  
@@ -35,7 +29,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 >   
 >  La page **Périodes comptables** affiche la période coût moyen et le type de calcul du coût moyen qui est en vigueur au cours de la période, pour chaque période comptable.  
 
-## <a name="calculating-average-cost"></a>Calcul du coût moyen  
+## Calcul du coût moyen  
  Lorsque vous validez une transaction pour un article qui utilise la méthode évaluation stock coût moyen, une écriture est créée dans la table **Point d'entrée ajustement coût moyen**. Cette écriture contient le numéro d'article, le code variante et le code d'emplacement de la transaction. L'écriture contient également le champ **Date évaluation**, qui spécifie la dernière date de la période coût moyen dans laquelle la transaction a été validée.  
 
 > [!NOTE]  
@@ -50,7 +44,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 
  Le coût moyen calculé est ensuite appliqué aux diminutions d'inventaire pour l'article (ou article, emplacement et variante) avec des dates de report qui surviennent au cours de la période coût moyen. S'il y a des augmentations d'inventaire affectées de façon fixe à des diminutions d'inventaire au cours de la période coût moyen, le calcul du coût moyen est transmis de l'augmentation à la diminution.  
 
-### <a name="example-average-cost-period--day"></a>Exemple : période coût moyen = jour  
+### Exemple : période coût moyen = jour  
  L'exemple suivant montre l'effet du calcul du coût moyen basé sur une période coût moyen d'un jour. Le champ **Type calcul coût moyen** de la page **Configuration inventaire** est défini sur **Article**.  
 
  Le tableau suivant montre les écritures article pour un exemple d'article de coût moyen, ARTICLE1, avant que le traitement en lot **Ajuster coûts - Écr. article** ne soit exécuté.  
@@ -87,7 +81,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 | 02/02/20 | Achat | 1 | 100.00 | 5 |
 | 03/02/20 | Vente | -1 | -100,00 | 6 |
 
-### <a name="example-average-cost-period--month"></a>Exemple : période coût moyen = mois  
+### Exemple : période coût moyen = mois  
  L'exemple suivant montre l'effet du calcul du coût moyen basé sur une période coût moyen d'un mois. Le champ **Type calcul coût moyen** de la page **Configuration inventaire** est défini sur **Article**.  
 
  Si la période coût moyen est d'un mois, une seule écriture est créée pour chaque combinaison du numéro article, code variante, code d'emplacement et date évaluation.  
@@ -131,7 +125,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 
  Pour obtenir le coût moyen pour février, le coût moyen de la pièce reçue dans l'inventaire (100,00) est ajouté au coût moyen au début de la période (30,00). La somme des deux (130,00) est ensuite divisée par la quantité totale en inventaire (2) ce qui permet d'obtenir le coût moyen de l'article dans la période de février (65,00). Le coût moyen est affecté aux diminutions d'inventaire dans la période (écritures 4 et 6).  
 
-## <a name="setting-the-valuation-date"></a>Définition de la date d'évaluation  
+## Définition de la date d'évaluation  
  Le champ **Date évaluation** de la table **Ecritures valeur** permet de déterminer à quelle période coût moyen appartient une écriture de sortie de stock. Ceci s'applique à l'inventaire travail en cours (TEC).  
 
  Le tableau suivant montre les critères utilisés pour définir la date évaluation.  
@@ -143,7 +137,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 |3|Antérieur à la dernière date évaluation des écritures valeur affectées|Positif|Non|Dernière date évaluation des écritures valeur affectées|  
 |4||Négatif|Oui|Date de report de l'écriture valeur de réévaluation.|  
 
-### <a name="example"></a>Exemple :  
+### Exemple :  
  Le tableau suivant d'écritures valeur illustre les différents scénarios.  
 
 |Scénario|Date de report|Type d'écriture gr. livre art.|Date évaluation|Quantité valorisée|Coût indiqué (réel)|N° écriture article gr. livre|N° séquence |  
@@ -164,7 +158,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 
  Si la quantité en inventaire est inférieure à zéro après avoir reporté la diminution d'inventaire, la date évaluation est d'abord définie sur la date de report de la diminution d'inventaire. Cette date peut être modifiée plus tard, en fonction des règles décrites dans la remarque précédente dans cette section, lorsque l'augmentation d'inventaire est appliquée.  
 
-## <a name="recalculating-average-cost"></a>Recalcul du coût moyen  
+## Recalcul du coût moyen  
  L'évaluation des diminutions d'inventaire en tant que moyenne pondérée serait directe si les achats étaient toujours facturés avant la facturation des ventes, que les reports n'étaient jamais antidatés, et que vous ne commettiez jamais d'erreurs. Toutefois, la réalité est un peu différente de cet idéal.  
 
  Comme cela est illustré dans les exemples de cette rubrique, la date d'évaluation est définie comme la date à partir de laquelle l'écriture valeur est incluse dans le calcul du coût moyen. Cela vous offre la flexibilité d'effectuer les opérations suivantes pour les articles utilisant la méthode évaluation coût Moyen :  
@@ -180,7 +174,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 
  Vous pouvez modifier la base d'évaluation du stock au cours d'une période comptable en modifiant le champ **Période coût moyen** et le champ **Type calcul coût moyen**. Cependant, cette action doit être menée avec soin et en accord avec un auditeur.  
 
-### <a name="example"></a>Exemple :  
+### Exemple :  
  L'exemple suivant illustre la manière dont le coût moyen est recalculé lorsqu'un report en retard est introduit à une date qui se trouve avant une ou plusieurs diminutions d'inventaire. L'exemple est basé sur une période coût moyen **Jour**.  
 
  Le tableau suivant montre les écritures valeur qui existent pour l'article avant le report.  
@@ -204,7 +198,7 @@ Le coût moyen d'un article est calculé avec une moyenne pondérée périodique
 |15/02/20|-1|-17,00|3|  
 |16/02/20|-1|-17,00|4|  
 
-## <a name="see-also"></a>Voir aussi  
+## Voir aussi  
  [Détails de conception : stock évaluation stock](design-details-inventory-costing.md)   
  [Détails de conception : modes évaluation stock](design-details-costing-methods.md)   
  [Détails de conception : ajustement des coûts](design-details-cost-adjustment.md)   

@@ -1,122 +1,130 @@
 ---
-title: 'Détails de conception : flux d’entrepôt internes'
-description: Le flux entre les zones se concentre sur le prélèvement des composantes et le stockage des produits finis pour les ordres d’assemblage ou les bons de production et les mouvements ad hoc, sans documents source.
-author: SorenGP
+title: 'Détails de conception - Flux pour la production, l’assemblage et les tâches'
+description: 'Découvrez le flux entre les zones d’entrepôt pour le prélèvement des composantes et le rangement des articles finis pour l’assemblage, la production ou les ordres de travail.'
+author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
+ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.keywords: ''
-ms.date: 06/15/2021
-ms.author: edupont
-ms.openlocfilehash: b8e38dcf94c4303cdd69f5417a152484f5100e09
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8136384"
+ms.date: 12/16/2022
+ms.custom: bap-template
 ---
-# <a name="design-details-internal-warehouse-flows"></a>Détails de conception : flux d'entrepôt internes
-Circulation des articles entre les zones dans les centres d'une compagnie lors du prélèvement des composantes, du rangement des articles finis pour les ordres d'assemblage ou les bons de production et les mouvements ad-hoc, tels que les réapprovisionnements de zone, sans relation avec les documents sources. La portée et la nature des activités impliquées varient entre l'entreposage de base et l'entreposage avancé.  
+# Flux pour la production, l’assemblage et les tâches
 
- Certains flux internes chevauchent des flux entrants ou sortants. Une partie de cette superposition est illustrée aux étapes 4 et 5 dans les schémas graphiques des flux enlogement et désenlogement avancés respectivement. Pour plus d'informations, reportez\-vous à [Détails de conception : flux d'enlogement](design-details-outbound-warehouse-flow.md).  
+Les flux internes, tels que le prélèvement de composantes et le rangement des articles finis pour l’assemblage, les tâches et les bons de production, sont similaires aux flux entrants ou sortants. Ainsi, de nombreux processus peuvent sembler familiers. Cet article fournit des informations sur l’utilisation des flux d’entrepôt internes avec différents niveaux de complexité.
 
-## <a name="internal-flows-in-basic-warehousing"></a>Flux internes dans l'entreposage de base  
- Dans une configuration entrepôt de base, la circulation des articles entre les zones dans les centres de la compagnie lors du prélèvement des composantes, du rangement des articles finis pour les bons de production ou les ordres d'assemblage et les mouvements ad-hoc, tels que les réapprovisionnements de zone, sans relation avec les documents sources.  
+## Aperçu des différentes options de configuration
 
-### <a name="flows-to-and-from-production"></a>Flux entrants et sortants de la production  
- La principale intégration entre les bons de production et les activités d'entrepôt de base est représentée par la capacité de prélever des composantes de production à l'aide de la page **Prélèvement inventaire** ou **Mouvement d'inventaire**.  
+Vous pouvez configurer les fonctionnalités d’entrepôt de différentes manières. Il est important que les options que vous choisissez améliorent vos processus sans entraîner de surcharge. Les tableaux suivants décrivent les configurations typiques de traitement des biens physiques pour la production, les tâches et les ordres d’assemblage.
 
-> [!NOTE]  
->  Sur la page **Prélèvement inventaire**, la consommation de composantes est reportée lors du report du prélèvement. À l'aide de la page **Mouvement d'inventaire**, seuls les ajustements de zone sont enregistrés, aucun report dans le grand livre article n'a lieu.  
+### Flux entrant (rangement)
 
- En plus de la gestion de composantes, l'intégration est représentée par la capacité de ranger les articles fabriqués à l'aide de la page **Rangement inventaire**.  
+|Niveau de complexité|Désignation|Paramètres|Code de zone|Flux entrant du bon de production|Flux entrant de l’ordre d’assemblage|Flux entrant de tâches|  
+|---|----------------|----------|---------|------------------|------------------|------------------|
+|Aucune activité entrepôt dédiée.|Report à partir de commandes et de journaux.||Facultatif. Contrôlé par le bouton à bascule **Code de zone obligatoire**.|Journal de production -> Journal de sortie</br><br/> **REMARQUE** : Vous pouvez reporter la sortie à l’aide du **Journal production**.|Ordre d’assemblage|Le rangement ne s’applique pas aux tâches|  
+|Basique|Commande par commande.|Rangement requis. </br><br/> **REMARQUE** : bien que le paramètre soit appelé **Rangement requis**, vous pouvez toujours publier la sortie des documents source aux emplacements où vous cochez cette case. |Facultatif. Contrôlé par le bouton à bascule **Code de zone obligatoire**.|Bon de production -> Rangement inventaire|Ordre d’assemblage|Le rangement ne s’applique pas aux tâches|
+|Avancé|Activités de rangement regroupées pour plusieurs documents origines.|Réception requise + Rangement requis|Facultatif. Contrôlé par le bouton à bascule **Code de zone obligatoire**.|Bon(s) de production -> Journal de sortie|Ordre(s) d’assemblage -> mouvements internes | Le rangement ne s’applique pas aux tâches|
+|Avancé|Comme ci-dessus + activités de prélèvement/rangement dirigées|Prélèvement et rangement dirigés (les boutons à bascule dépendants seront activés automatiquement)|Obligatoire|Comme ci-dessus.|Comme ci-dessus.| Le rangement ne s’applique pas aux tâches|
 
- Les champs **Code de zone avant production**, **Code de zone post-production**, et **Code de zone d'atelier ouvert** de la fiche emplacement ou des fiches unité de production/atelier définissent les flux par défaut depuis ou vers les zones de production.  
+Certaines configurations ne vous permettent pas d’utiliser des documents d’entrepôt dédiés pour enregistrer les rangements. Toutefois, si votre emplacement utilise des zones, vous pouvez utiliser des documents de mouvement génériques pour déplacer les articles produits ou assemblés vers l’entrepôt. Learn more at [Déplacement des articles en interne dans les configurations entrepôt de base](warehouse-how-to-move-items-ad-hoc-in-basic-warehousing.md).
 
- Pour plus d’informations sur la manière dont la consommation de composantes est vidée des zones d'atelier ouvert ou avant production, reportez-vous à la section « Purge des composantes de production dans l’entrepôt » de cette rubrique.  
+### Flux sortant (prélèvement)
 
-### <a name="flows-to-and-from-assembly"></a>Flux entrants et sortants de l'assemblage  
- La principale intégration entre les ordres d'assemblage et les activités d'entrepôt de base est représentée par la capacité à déplacer les composantes d'assemblage vers la zone d'assemblage.  
+|Niveau de complexité|Désignation|Paramètres|Code de zone|Flux sortant du bon de production|Flux sortant de l’ordre d’assemblage|Flux sortant de tâches|  
+|---|----------------|----------|---------|------------------|------------------|------------------|
+|Aucune activité entrepôt dédiée.|Report à partir de commandes et de journaux.||Facultatif. Contrôlé par le bouton à bascule **Code de zone obligatoire**.|Journal production -> Journal consommation </br><br/> **REMARQUE** : Vous pouvez reporter la consommation à l’aide du **Journal production**.|Ordre d’assemblage|Tâche -> Journal projet|  
+|Basique|Commande par commande.|Prélèvement requis. </br><br/> **REMARQUE** : bien que le paramètre soit appelé **Prélèvement requis**, vous pouvez toujours publier la sortie des documents source aux emplacements où vous cochez cette case. <!-- ToDo Test prod output-->|Facultatif. Contrôlé par le bouton à bascule **Code de zone obligatoire**.|Bon de production -> Prélèvement inventaire|Ordre de fabrication -> Mouvement d’inventaire</br><br/>Le **mouvement d’inventaire** ne peut être utilisé qu’avec des zones.|Tâche -> Prélèvement inventaire|
+|Avancé|Activités de prélèvement regroupées pour plusieurs documents origines.|Livraison requise + Prélèvement requis|Facultatif. Contrôlé par le bouton à bascule Code de zone obligatoire|Bon(s) de production ->Prélèvement entrepôt -> Journal consommation |Ordre(s) d’assemblage -> Prélèvement entrepôt| Tâche(s) -> Prélèvement entrepôt -> Journal projet |
+|Avancé|Comme ci-dessus + activités de prélèvement/rangement dirigées|Prélèvement et rangement dirigés (les boutons à bascule dépendants seront activés automatiquement)|Obligatoire|Comme ci-dessus.|Comme ci-dessus.| Le prélèvement et le rangement dirigés ne sont pas pris en charge pour les tâches|
 
- Lorsqu'aucune fonctionnalité entrepôt spécifique n'existe pour le rangement des éléments d'assemblage, le code de zone sur l'ordre d'assemblage peut être défini sur une zone de rangement par défaut. Le report de l'ordre d'assemblage fonctionne alors comme le report d'un rangement. L'activité entrepôt pour déplacer des éléments d'assemblage dans l'entrepôt peut être gérée sur la page **Mouvement interne**, sans rapport avec l'ordre d'assemblage.  
+Comme pour le flux entrant, certaines configurations ne vous permettent pas d’utiliser des documents d’entrepôt dédiés pour enregistrer les rangements. Si votre emplacement utilise des zones, vous pouvez utiliser des documents de mouvement génériques pour déplacer les articles produits ou assemblés. Learn more at [Déplacement d’articles](warehouse-move-items.md).
 
- Les flux d'assemblage suivants existent.  
+## Entrepôts sans activité d’entrepôt dédiée
 
-|Flux de travail|Description|  
-|----------|---------------------------------------|  
-|Assembler pour stock|Les composantes sont nécessaires sur un ordre d'assemblage dans lequel la production est stockée dans l'entrepôt.<br /><br /> Ce flux d'entrepôt est géré sur la page **Mouvement d'inventaire**. Une ligne prélèvement spécifie où prélever les composantes. Une ligne emplacement spécifie où placer les composantes.|  
-|Assembler pour commande|Les composantes sont nécessaires sur un ordre d'assemblage qui est lié à un document de vente livré lors de l'assemblage de l'article vendu.|  
+Même si vous n’avez pas d’activités d’entrepôt dédiées, vous souhaiterez probablement toujours suivre des éléments tels que la consommation et la production. Les articles suivants fournissent des informations sur le traitement des réceptions pour les documents origine.
 
-> [!NOTE]  
->  Si les articles sont assemblés pour commande, le prélèvement inventaire du document de vente lié déclenche un mouvement d'inventaire pour toutes les composantes d'assemblage impliquées, et pas uniquement pour l'article vendu, comme lors de la livraison d'articles de l'inventaire.  
+* [Enregistrer la consommation et la production pour une ligne bon de production libéré](production-how-to-register-consumption-and-output.md)
+* [Assembler des articles](assembly-how-to-assemble-items.md)
+* [Enregistrer la consommation ou l′utilisation pour les projets](projects-how-record-job-usage.md)
 
- Les champs **Code de zone vers assemblage**, **Code de zone depuis assemblage** et **Code de zone livr. ass. pr comm.** de la fiche emplacement définissent les flux par défaut depuis et vers les champs d'assemblage.  
+## Configuration d’entrepôt de base
 
-> [!NOTE]  
->  Le champ **Code de zone livr. ass. pr comm.** fonctionne comme une zone après assemblage dans les scénarios assembler pour commande.  
+Les flux entrants et sortants dans une configuration d’entrepôt de base impliquent les paramètres suivants sur la page **Fiche emplacement** pour l’emplacement :
 
-### <a name="ad-hoc-movements"></a>Mouvements ad hoc  
- Dans l'entreposage de base, le mouvement d'articles d'une zone à l'autre sans relation avec les documents origine est effectué sur la page **Mouvement interne** qui fonctionne conjointement avec la page **Mouvement d'inventaire**.  
+* Pour le flux entrant (rangement), activez le bouton à bascule **Rangement requis** , mais désactivez le bouton à bascule **Réception requise**.
+* Pour le flux sortant (prélèvement), activez le bouton à bascule **Prélèvement requis**, mais désactivez le bouton à bascule **Livraison requise**.
 
- Il existe un autre moyen de déplacer des articles ad hoc entre les zones : il suffit de reporter les écritures positives dans le champ **Nouveau code de zone** de la page **Journal reclassement article**.  
+### Flux vers et depuis la production dans une configuration d’entrepôt de base  
 
-## <a name="internal-flows-in-advanced-warehousing"></a>Flux internes dans l'entreposage avancé  
- Dans les configurations d'entrepôt avancées, la circulation des articles entre les zones dans les centres de la compagnie lors du prélèvement des composantes, du rangement des articles finis pour les bons de production et du prélèvement des composantes pour les ordres d'assemblage. En outre, les flux internes se produisent en tant que mouvements ad-hoc, tels que les réapprovisionnements de zone, sans relation avec les documents sources.  
+Utilisez les documents **Prélèvement inventaire** pour prélever des composantes de production dans le flux vers la production. Pour ranger les produits que vous fabriquez, utilisez les documents **Rangement inventaire**.
 
-### <a name="flows-to-and-from-production"></a>Flux entrants et sortants de la production  
- La principale intégration entre les bons de production et les activités d'entrepôt avancées est représentée par la capacité de prélever des composantes de production, sur la page **Prélèvement entrepôt** et sur la page **Feuille prélèvement**, et par la capacité de ranger des articles produits à l'aide de la page **Rangement interne entrepôt**.  
+Pour les emplacements qui utilisent des zones, les documents de mouvement d’inventaire sont particulièrement utiles pour la consommation des composantes. Pour en savoir plus sur la façon dont la consommation de composantes passe des zones avant production aux zones d'atelier ouvert, voir [Consommation des composantes de production dans l’entrepôt](warehouse-how-to-pick-for-production.md#flushing-production-components-in-a-basic-warehouse-configuration).
 
- Un autre point d'intégration dans la production est fourni via la page **Mouvement entrepôt**, ainsi que la page Feuille mouvement, ce qui vous permet de placer des composantes et de prendre des articles produits pour des bons de production libérés.  
+   > [!NOTE]
+   > Les mouvements d’inventaire sont des documents importants si vous utilisez les méthodes de consommation **Prélèvement + Aval** ou **Prélèvement + Amont**. Learn more at [Méthodes de consommation](production-how-to-flush-components-according-to-operation-output.md#flushing-methods).
 
- Les champs **Code de zone avant production**, **Code de zone post-production**, et **Code de zone d'atelier ouvert** de la fiche emplacement ou des fiches unité de production/atelier définissent les flux par défaut depuis ou vers les zones de production.  
+* Les champs **Code de zone avant production**, **Code de zone post-production** et **Code de zone d'atelier ouvert** de l'emplacement ou de l'unité de production/atelier définissent les flux par défaut à destination et en provenance des zones de production.
+* Gérez le mouvement des articles produits sur la page **Mouvement interne** sans rapport avec un bon de production.
 
- Pour plus d’informations sur la manière dont la consommation de composantes est vidée des zones d'atelier ouvert ou avant production, reportez-vous à la section « Purge des composantes de production dans l’entrepôt » de cette rubrique.  
+### Flux vers et depuis l’assemblage dans une configuration d’entrepôt de base  
 
-### <a name="flows-to-and-from-assembly"></a>Flux entrants et sortants de l'assemblage  
- La principale intégration entre les ordres d'assemblage et les activités d'entrepôt avancées est représentée par la capacité de prélever des composantes d'assemblage, aussi bien à l'aide de la page **Prélèvement entrepôt** que de la page **Feuille prélèvement**. Cette fonctionnalité est identique au prélèvement des composantes pour les bons de production.  
+Reportez le résultat d’assemblage et la consommation directement à partir d’un ordre d’assemblage.
 
- Lorsqu'aucune fonctionnalité entrepôt spécifique n'existe pour le rangement des éléments d'assemblage, le code de zone sur l'ordre d'assemblage peut être défini sur une zone de rangement par défaut. Le report de l'ordre d'assemblage fonctionne alors comme le report d'un rangement. L'activité entrepôt pour déplacer des éléments d'assemblage dans l'entrepôt peut être gérée sur la page **Feuille mouvement** ou la page **Rangement interne entrepôt**, sans rapport avec l'ordre d'assemblage.  
+> [!NOTE]
+> Les documents **Prélèvement inventaire** et **Rangement inventaire** ne sont pas pris en charge pour les ordres d’assemblage.
 
-> [!NOTE]  
->  Si les articles sont assemblés pour commande, la livraison entrepôt du document de vente lié déclenche un prélèvement entrepôt de toutes les composantes d'assemblage impliquées, et non uniquement pour l'article vendu, comme lors de la livraison d'articles en inventaire.  
+Pour les emplacements qui utilisent des zones :
 
- Les champs **Code de zone vers assemblage** et **Code de zone depuis assemblage** de la fiche emplacement définissent les flux par défaut depuis et vers les zones d'assemblage.  
+* Utilisez les documents **Mouvement d’inventaire** pour déplacer les composantes d’assemblage vers la zone d’assemblage.
+* Les champs **Code de zone avant assemblage**, **Code de zone post-assemblage** de la fiche emplacement définissent les flux par défaut depuis et vers les zones d’assemblage.
+* Gérez le mouvement des articles assemblés sur la page **Mouvement interne**, sans rapport avec un ordre d’assemblage.
 
-### <a name="ad-hoc-movements"></a>Mouvements ad hoc  
- Dans l'entreposage avancé, le mouvement d'articles d'une zone à l'autre sans relation avec les documents origine est géré sur la page **Feuille mouvement** et enregistré sur la page Mouvement entrepôt.  
+[!INCLUDE [prod_short](includes/prod_short.md)] prend en charge les flux d’assemblage Assembler pour stock et Assembler pour commande. Pour en savoir plus, voir [Description des processus Assembler pour commande et Assembler pour inventaire](assembly-assemble-to-order-or-assemble-to-stock.md#understanding-assemble-to-order-and-assemble-to-stock). En ce qui concerne la gestion des entrepôts, l’assemblage pour stock fait partie du flux interne de l’entrepôt et l’assemblage pour commande se trouve dans le flux sortant de l’entrepôt. Pour en savoir plus, voir [Traitement des articles à assembler pour commande dans les prélèvements inventaire](warehouse-how-to-pick-items-with-inventory-picks.md#handling-assemble-to-order-items-with-inventory-picks).
 
-## <a name="flushing-production-components-in-the-warehouse"></a>Purge des composantes de production dans l'entrepôt  
- Si cela est configuré dans la fiche article, les composantes prélevées avec des prélèvements entrepôt sont reportées comme étant consommées par le bon de production lorsque le prélèvement entrepôt est enregistré. En utilisant la méthode **Prélèvement + Aval** et la méthode de consommation **Prélèvement + Amont**, l'enregistrement de prélèvement déclenche le report des consommations associées lorsque la première opération commence ou lorsque la dernière opération finit, respectivement.  
+### Flux pour la gestion de projet dans une configuration d’entrepôt de base
 
- Considérez le scénario suivant basé sur la base de données de démonstration [!INCLUDE[prod_short](includes/prod_short.md)].  
+Utilisez les documents **Prélèvement inventaire** pour sélectionner les composantes de la tâche dans le flux vers la gestion de projet.
 
- Il existe un ordre de fabrication pour 15 pièces de l'article LS-100. Certains articles sur la liste des composantes doivent être purgés manuellement dans un journal consommation et d'autres articles de la liste peuvent être prélevés et purgés automatiquement à l'aide de la méthode consommation **Prélèvement + Amont**.  
+Pour un emplacement qui utilise des zones, le champ **Code de zone avant projet** dans l'emplacement définit les flux par défaut vers la gestion de projet.
 
-> [!NOTE]  
->  **Prélèvement + Aval** ne fonctionne que si la deuxième opération ligne itinéraire de production utilise le code lien itinéraire. Le lancement d'un bon de production planifié entame la purge en aval des composantes définies sur **Prélèvement + Aval**. Toutefois, la purge ne peut pas avoir lieu tant que le prélèvement des composantes n'est pas enregistré, ce qui à nouveau ne peut avoir lieu que lorsque la commande est libérée.  
+## Configurations d'entrepôt avancées  
 
- Les étapes suivantes décrivent les actions impliquées par divers utilisateurs et la réponse associée :  
+Les flux entrants et sortants dans une configuration d’entrepôt avancée impliquent les paramètres suivants sur la page **Fiche emplacement** pour l’emplacement :
 
-1.  Le chef atelier lance l'ordre de fabrication. Les articles utilisant la méthode consommation **Aval** et aucun code lien itinéraire sont déduits de la zone d'atelier ouvert.  
-2.  Le chef atelier choisit le bouton **Créer prélèvement entrepôt** sur l'ordre de fabrication. Un document prélèvement entrepôt est créé pour les articles avec les méthodes de consommation **Manuelle**, **Prélèvement + Amont** et **Prélèvement + Aval**. Ces articles sont placés dans la zone avant production.  
-3.  Le gestionnaire d'entrepôt affecte les prélèvements à un magasinier.  
-4.  L'employé d'entrepôt prélève les articles dans les zones appropriées et les place dans la zone avant production ou dans la zone spécifiée sur le prélèvement entrepôt, qui peut être une zone d'atelier ou d'unité de production.  
-5.  L'employé d'entrepôt enregistre le prélèvement. La quantité est soustraite des zones prélèvement et ajoutée à la zone consommation. Le champ **Qté prélevée** sur la liste des composantes de tous les articles prélevés est mis à jour.  
+* Pour le flux entrant (rangement), activez les boutons à bascule **Réception requise** et **Rangement requis**.
+* Pour le flux sortant (prélèvement), activez les boutons à bascule **Livraison requise** et **Réception requise**.
 
-    > [!NOTE]  
-    >  Seule la quantité qui est prélevée peut être consommée.  
+### Flux vers et depuis la production dans une configuration d’entrepôt avancée
 
-6.  L'opérateur indique au gestionnaire de production que les articles finis sont terminés.  
-7.  Le responsable d'atelier utilise le journal consommation ou le journal production pour reporter la consommation de composantes qui utilisent la méthode consommation **Manuel** ou les méthodes consommation **Aval** ou **Prélèvement + Aval** avec des codes lien itinéraire.  
-8.  Le gestionnaire de production reporte la production du bon de production et modifie l'état en **Terminé**. La quantité de composantes qui utilisent la méthode consommation **Amont** est déduite de la zone d'atelier ouvert, et la quantité d'articles composantes qui utilisent la méthode de consommation **Prélèvement + Amont** est déduite de la zone avant production.  
+Utilisez les documents **Prélèvement entrepôt** et la page **Feuille prélèvement** pour prélever des composantes pour la production.
 
- La figure ci-après indique la date à laquelle le champ **Code de zone** de la liste des composantes est renseigné en fonction de la configuration de votre emplacement ou unité de production/atelier.  
+Pour les emplacements qui utilisent des zones :
 
- ![Aperçu de quand/comment le champ Code de zone est renseigné.](media/binflow.png "Aperçu du moment/de la manière de renseigner le champ Code de zone")  
+* Les documents **Mouvement entrepôt** et la page **Feuille mouvement** sont particulièrement utiles pour la consommation des composantes. Pour en savoir plus, voir [Consommation des composantes de production dans l’entrepôt](warehouse-how-to-pick-for-internal-operations-in-advanced-warehousing.md#flushing-production-components-in-a-advanced-warehouse-configuration).
+* Les champs **Code de zone avant production**, **Code de zone post-production** et **Code de zone d'atelier ouvert** de l'emplacement ou de l'unité de production/atelier définissent les flux par défaut à destination et en provenance des zones de production. 
+* Gérez le mouvement des articles produits sur les pages **Feuille mouvement** ou **Rangement interne entrepôt** sans rapport avec un bon de production.
 
-## <a name="see-also"></a>Voir aussi  
- [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)
+### Flux vers et depuis l’assemblage dans une configuration d’entrepôt avancée
 
+Utilisez les documents **Prélèvement entrepôt** et la page **Feuille prélèvement** pour prélever des composantes pour l’assemblage.
+
+Pour les emplacements qui utilisent des zones :
+
+* Les champs **Code de zone avant assemblage** et **Code de zone post-assemblage** de l’emplacement définissent le flux par défaut depuis et vers les champs d’assemblage.
+* Gérez le mouvement des éléments d’assemblage sur les pages **Feuille mouvement** ou **Rangement interne entrepôt** sans rapport avec un ordre d’assemblage.
+
+[!INCLUDE [prod_short](includes/prod_short.md)] prend en charge les flux d’assemblage Assembler pour stock et Assembler pour commande. Pour en savoir plus, voir [Description des processus Assembler pour commande et Assembler pour inventaire](assembly-assemble-to-order-or-assemble-to-stock.md#understanding-assemble-to-order-and-assemble-to-stock). 
+
+L’assemblage pour stock fait partie du flux interne de l’entrepôt et l’assemblage pour commande se trouve dans le flux sortant de l’entrepôt. Pour en savoir plus, voir [Traitement des articles à assembler pour commande dans les livraisons entrepôt](warehouse-how-ship-items.md#handling-assemble-to-order-items-in-warehouse-shipments).
+
+### Flux pour la gestion de projet dans une configuration d’entrepôt avancée
+
+Utilisez les documents **Prélèvement entrepôt** et la page **Feuille prélèvement** pour prélever des composantes dans le flux pour la gestion de projet.
+
+Pour les emplacements qui utilisent des zones, le champ **Code de zone avant projet** dans l'emplacement définit les flux par défaut vers la zone du projet.
+
+## Voir aussi  
+
+[Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

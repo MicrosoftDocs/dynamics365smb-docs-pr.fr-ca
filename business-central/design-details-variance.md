@@ -1,22 +1,16 @@
 ---
 title: Détails de conception - Ecart | Microsoft Docs
-description: L'écart est défini comme la différence entre le coût réel et le coût standard, telle que décrite dans la formule suivante.
+description: 'L''écart est défini comme la différence entre le coût réel et le coût standard, telle que décrite dans la formule suivante.'
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.date: 06/08/2021
 ms.author: edupont
-ms.openlocfilehash: db015f330a89a164b7636b4f44a265f528e9cc3f
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8513054"
 ---
-# <a name="design-details-variance"></a>Détails de conception : écart
+# Détails de conception : écart
 L'écart est défini comme la différence entre le coût réel et le coût standard, telle que décrite dans la formule suivante.  
 
  coût réel – coût standard = variance  
@@ -26,7 +20,7 @@ L'écart est défini comme la différence entre le coût réel et le coût stand
 > [!NOTE]  
 >  La réévaluation n'affecte pas le calcul de l'écart, puisqu'elle modifie uniquement la valeur de l'inventaire.  
 
-## <a name="example"></a>Exemple :  
+## Exemple :  
  L'exemple suivant présente la manière de calculer l'écart pour les articles achetés. Il est basé sur le scénario suivant :  
 
 1.  L'utilisateur achète un article à 90,00 $, mais le coût standard est de 100,00 $. Par conséquent, la tolérance achat nette est de -10 $.  
@@ -39,7 +33,7 @@ L'écart est défini comme la différence entre le coût réel et le coût stand
 
  ![Calcul variance achat.](media/design_details_inventory_costing_11_purchase_variance.png "Calcul variance achat")  
 
-## <a name="determining-the-standard-cost"></a>Déterminer le coût standard  
+## Déterminer le coût standard  
  Le coût standard est utilisé pour calculer l'écart et le montant à capitaliser. Dans la mesure où le coût standard peut être modifié dans le temps en raison du calcul de mise à jour manuel, vous avez besoin d'un certain point dans le temps où le coût standard est fixe pour le calcul de l'écart. Ce point correspond au moment de la facturation de l'augmentation d'inventaire. Pour les articles fabriqués ou assemblés, le point auquel le coût standard est déterminé est lorsque le coût est ajusté.  
 
  Le tableau suivant montre la manière dont les différentes parts de coût sont calculées pour les articles produits et assemblés lorsque vous utilisez la fonction Calculer coût standard.  
@@ -58,7 +52,7 @@ L'écart est défini comme la différence entre le coût réel et le coût stand
 |**Frais généraux opératoires multi-niveaux**|Non applicable|![Équation 8.](media/design_details_inventory_costing_11_equation_8.png "Équation 8")|  
 |**Frais gén. matière multi-niv.**|Non applicable|![Équation 9.](media/design_details_inventory_costing_11_equation_9.png "Équation 9")|  
 
-## <a name="see-also"></a>Voir aussi  
+## Voir aussi  
  [Détails de conception : stock évaluation stock](design-details-inventory-costing.md)   
  [Détails de conception : Modes évaluation stock](design-details-costing-methods.md) [Gestion des composants des coûts](finance-manage-inventory-costs.md)  
  [Finance](finance.md)  

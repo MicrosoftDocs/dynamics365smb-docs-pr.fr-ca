@@ -1,22 +1,16 @@
 ---
-title: 'Procédure : exporter et importer des flux de travail approbation'
-description: Pour transférer des workflows vers d'autres bases de données Business Central, par exemple pour gagner du temps lors de la création de workflows, vous pouvez exporter et importer des workflows.
+title: "Procédure\_: exporter et importer des flux de travail approbation"
+description: 'Pour transférer des workflows vers d''autres bases de données Business Central, par exemple pour gagner du temps lors de la création de workflows, vous pouvez exporter et importer des workflows.'
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.date: 09/08/2022
 ms.author: edupont
-ms.openlocfilehash: 873f168bf8a707519af9a6429658e8383ab1f41e
-ms.sourcegitcommit: 9049f75c86dea374e5bfe297304caa32f579f6e4
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "9585452"
 ---
-# <a name="export-and-import-approval-workflows"></a>Exporter et importer des flux de travail approbation
+# Exporter et importer des flux de travail approbation
 
 Pour transférer des workflows vers d'autres bases de données [!INCLUDE[prod_short](includes/prod_short.md)], par exemple pour gagner du temps lors de la création de workflows, vous pouvez exporter et importer des workflows.  
 
@@ -24,12 +18,12 @@ Un autre moyen rapide de créer des flux de travail consiste à les utiliser à 
 
 Sur la page **Workflow**, créez un workflow en répertoriant les étapes concernées sur les lignes. Chaque étape comprend un événement de workflow modéré par des conditions d'événement, et une réponse de workflow modérée par des options de réponse. Définissez les étapes de flux de travail en renseignez les champs des lignes de flux de travail à l'aide de listes fixes de valeurs d’événement et de réponse qui représentent les scénarios pris en charge par le code de l’application. En savoir plus sur [Créer des flux de projet](across-how-to-create-workflows.md).  
 
-## <a name="export-a-workflow"></a>Exporter un flux de travail
+## Exporter un flux de travail
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Flux de travail**, puis choisissez le lien associé.  
 2. Sélectionnez un flux de travail, puis sélectionnez l’action **Exporter vers un fichier**.  
 
-## <a name="import-a-workflow"></a>Importer un flux de travail
+## Importer un flux de travail
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Flux de travail**, puis choisissez le lien associé.  
 2. Choisissez l'action **Importer à partir d'un fichier**.  
@@ -38,7 +32,7 @@ Sur la page **Workflow**, créez un workflow en répertoriant les étapes concer
 > [!CAUTION]  
 > Si le code du workflow existe déjà dans la base de données, les étapes du workflow sont remplacées avec celles du workflow importé.  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Créer des flux de travail approbation](across-how-to-create-workflows.md)  
 [Créer des flux de travail à partir de modèles de flux de travail](across-how-to-create-workflows-from-workflow-templates.md)  

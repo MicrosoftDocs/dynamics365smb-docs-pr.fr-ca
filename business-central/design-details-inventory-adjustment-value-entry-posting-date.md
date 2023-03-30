@@ -6,21 +6,15 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.date: 09/17/2021
 ms.author: edupont
-ms.openlocfilehash: d48c27f06463f37ad5ca657bada33a4d165799ea
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8133924"
 ---
-# <a name="design-details-posting-date-on-adjustment-value-entry"></a>Détails de conception : date de report de l'écriture valeur d'ajustement
+# Détails de conception : date de report de l'écriture valeur d'ajustement
 
 Cet article fournit des conseils aux utilisateurs de la fonctionnalité Évaluation du coût de l'inventaire dans [!INCLUDE[prod_short](includes/prod_short.md)], et en particulier pour la façon dont le traitement en lot **Ajuster coûts : Écr. article** identifie et affecte une date de report aux écritures valeur que le traitement en lot est sur le point de créer.
 
-## <a name="how-posting-dates-are-assigned"></a>Modalités d’attribution des dates de report
+## Modalités d’attribution des dates de report
 
 Le traitement en lot **Ajuster coûts - Écr. article** affecte une date de report à l’écriture valeur qu’il est sur le point de créer dans les étapes suivantes :  
 
@@ -32,7 +26,7 @@ Le traitement en lot **Ajuster coûts - Écr. article** affecte une date de repo
 
 Examinons ce processus plus en détail. Supposons que nous avons une écriture article de type Vente. L’article a été livré le 5 septembre 2020 et il a été facturé le jour suivant.  
 
-#### <a name="item-ledger-entry"></a>Écriture article
+#### Écriture article
 
 |N° séquence   |N° article  |Date de report  |Type écriture  | N° du document |Code d'emplacement  |Quantité  |Coût indiqué (réel)  |Quantité facturée  |Quantité restante  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
@@ -58,7 +52,7 @@ Pour affecter la date de report pour **Écriture n°391**, les étapes suivantes
 
 Examinons la vente mentionnée ci-dessus en ajoutant la configuration des plages de dates de report autorisées.  
   
-#### <a name="inventory-periods"></a>Périodes d'inventaire
+#### Périodes d'inventaire
 
 |Date de fin  |Nom  |Fermé  |
 |---------|---------|---------|
@@ -77,7 +71,7 @@ Examinons la vente mentionnée ci-dessus en ajoutant la configuration des plages
 
 La première date de report autorisée est le premier jour de la première période ouverte, qui est le 1er septembre 2020.  
 
-#### <a name="general-ledger-setup"></a>Configuration du grand livre
+#### Configuration du grand livre
 
 |Champ|Valeur  |
 |---------|---------|
@@ -99,19 +93,19 @@ La date de report initiale était le 6 septembre, comme illustré à l’étape�
 |381     |  A       |    2020/09/06     |    Vente     | Coût direct   | 103022        |319     | Bleu        |  0       |-1        |-10       |    10     | Non  |0      |       Ventes   |
 |391     |  A       |    **2020-09-10**     |    Vente     | Coût direct   | 103022        |319     | Bleu        |  0       |0         |-1        |    0     |Oui   |    181   | AJSTK   |
 
-## <a name="common-problems-with-the-adjust-cost---item-entries-batch-job"></a>Problèmes courants avec le traitement en lot « Ajuster coûts - Écr. article »
+## Problèmes courants avec le traitement en lot « Ajuster coûts - Écr. article »
 
 Il existe deux scénarios que l’équipe d’assistance rencontre suffisamment fréquemment pour justifier la rédaction d’articles de résolution de problèmes dédiés.
 
-### <a name="error-message-posting-date-is-not-within-your-range-of-allowed-posting-dates"></a>Message d’erreur : « La date de report n’est pas incluse dans la plage de dates de report autorisées... »
+### Message d’erreur : « La date de report n’est pas incluse dans la plage de dates de report autorisées... »
 
 Si vous rencontrez cette erreur, vous devez ajuster les dates pour lesquelles l’utilisateur est autorisé à reporter des écritures. Pour en savoir plus, voir [Message d’erreur : « La date de report n’est pas incluse dans la plage de dates de report autorisées »](design-details-inventory-adjustment-value-entry-allowed-posting-dates.md).
 
-### <a name="posting-date-on-adjustment-value-entry-versus-posting-date-on-entry-causing-the-adjustment-such-as-revaluation-or-item-charge"></a>Comparaison entre la date de report de l’écriture valeur d’ajustement et la date de report de l’écriture à l’origine de l’ajustement, comme une réévaluation ou des frais annexes
+### Comparaison entre la date de report de l’écriture valeur d’ajustement et la date de report de l’écriture à l’origine de l’ajustement, comme une réévaluation ou des frais annexes
 
 Pour en savoir plus, voir [Date de report sur l’écriture valeur d’ajustement par rapport à l’écriture source](design-details-inventory-adjustment-value-entry-source-entry.md).
 
-## <a name="see-also"></a>Voir aussi  
+## Voir aussi  
 
 [Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)  
 [Détails de conception : Affectation article](design-details-item-application.md)  

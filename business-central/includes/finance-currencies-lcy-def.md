@@ -3,12 +3,6 @@ author: edupont04
 ms.topic: include
 ms.date: 03/15/2022
 ms.author: edupont
-ms.openlocfilehash: c391e7d6492a722de10801212ccd04a532f8a971
-ms.sourcegitcommit: 521735f8e27d8bff2d2dfbe94d240c09dcdaec29
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8419658"
 ---
 Étant donné que les compagnies opèrent dans un nombre croissant de pays/régions, il devient essentiel qu’elles puissent échanger et générer des informations financières dans plusieurs devises. La devise locale ($) est définie sur la page **Configuration grand livre** comme décrit dans l’article [Comprendre le grand livre et le plan comptable](../finance-general-ledger.md). Une fois la devise locale ($) définie, elle sera représentée en tant que devise vide. Ainsi, lorsque le champ **Devise** est vide, cela signifie que la devise est $.  
 

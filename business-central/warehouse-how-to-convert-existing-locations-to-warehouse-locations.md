@@ -6,18 +6,12 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.search.form: 15
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 56a9cc0181b73c5490c6cbc499071e1bfbb63da2
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8512612"
 ---
-# <a name="convert-existing-locations-to-warehouse-locations"></a>Convertir des emplacements existants en entrepôts
+# Convertir des emplacements existants en entrepôts
 Vous pouvez permettre à un emplacement d'inventaire d'utiliser les zones et de devenir l'entrepôt.  
 
 Le traitement en lot qui active un emplacement pour une opération d'entrepôt crée des écritures d'entrepôt initiales pour la zone d'ajustement de l'entrepôt pour tous les articles stockés à cet emplacement. Ces écritures sont équilibrées lorsque les écritures d'inventaire physique entrepôt sont saisies après chaque traitement en lot.  
@@ -27,7 +21,7 @@ Vous pouvez créer des zones et des emplacements avant ou après la conversion. 
 > [!IMPORTANT]  
 >  Pour supprimer toutes les quantités négatives et les éventuels documents entrepôt ouverts avant de convertir l'emplacement à des fins de gestion d'entrepôt, exécutez un rapport pour identifier les articles dont la quantité est négative et les documents entrepôt ouverts pour l'emplacement. Pour plus d'informations, reportez\-vous à la rubrique Vérifiez l'inventaire négatif.  
 
-## <a name="to-enable-an-existing-location-to-operate-as-a-warehouse-location"></a>Activation d'un emplacement existant en tant qu'entrepôt  
+## Activation d'un emplacement existant en tant qu'entrepôt  
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Créer un emplacement d’entrepôt**, puis cliquez sur le lien associé.  
 2.  Dans le champ **Code magasin**, indiquez le magasin que vous souhaitez activer pour un traitement d'entrepôt.  
 3.  Dans le champ **Code de zone d'ajustement**, spécifiez dans quelle zone de l'emplacement les écritures entrepôt non synchronisées sont enregistrées. Pour plus d'informations, voir [Pour synchroniser les écritures entrepôt ajustées avec les écritures article associées](inventory-how-count-adjust-reclassify.md#to-synchronize-the-adjusted-warehouse-entries-with-the-related-item-ledger-entries).  
@@ -42,12 +36,11 @@ Vous pouvez créer des zones et des emplacements avant ou après la conversion. 
 
  Dans le cas d'emplacements n'ayant pas utilisé de documents de gestion d'entrepôt avant la conversion, vous devez rouvrir et libérer les documents sources dont la réception ou la livraison n'était que partielle avant la conversion.  
 
-## <a name="see-also"></a>Voir aussi  
-[Gestion d'entrepôt](warehouse-manage-warehouse.md)  
-[Stock](inventory-manage-inventory.md)  
+## Voir aussi  
+[Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
+[Inventaire](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
 [Gestion d'assemblage](assembly-assemble-items.md)    
-[Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 

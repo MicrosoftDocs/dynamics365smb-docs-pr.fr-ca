@@ -3,12 +3,6 @@ author: edupont04
 ms.topic: include
 ms.date: 02/09/2022
 ms.author: edupont
-ms.openlocfilehash: fc1788acfb1b11a90327ac72ce83d7fa4981e602
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8143358"
 ---
 Vous pouvez utiliser des relances pour rappeler aux clients les soldes échus. Vous pouvez également utiliser les rappels pour calculer les frais financiers tels que les intérêts ou les frais et les inclure dans le rappel.
 
@@ -22,7 +16,7 @@ Une écriture comptable client pour laquelle le champ **En attente** est renseig
 
 Après avoir créé les rappels et effectué toutes les modifications souhaitées, vous pouvez imprimer les rapports de test ou émettre les rappels, en général par courriel.
 
-### <a name="to-create-a-reminder-automatically"></a>Pour créer automatiquement un rappel
+### Pour créer automatiquement un rappel
 
 Un rappel est identique à une facture. Lorsque vous créez un rappel, un en-tête rappel, ainsi qu'une ou plusieurs lignes rappel, doivent être renseignés. Vous pouvez utiliser une fonction pour créer des relances pour tous les clients automatiquement.
 
@@ -31,7 +25,7 @@ Un rappel est identique à une facture. Lorsque vous créez un rappel, un en-tê
 3. Sur la page **Créer rappels**, renseignez les champs pour définir comment et pour qui les rappels sont créées.
 4. Cliquez sur le bouton **OK**.
 
-### <a name="to-create-a-reminder-manually"></a>Pour créer un rappel manuellement
+### Pour créer un rappel manuellement
 
 Sur la page **Rappel**, vous pouvez renseigner le raccourci **Général** manuellement et ensuite renseigner les lignes automatiquement.
 
@@ -48,7 +42,7 @@ Sur la page **Rappel**, vous pouvez renseigner le raccourci **Général** manuel
 
 8. Cliquez sur le bouton **OK**.
 
-### <a name="to-replace-reminder-texts"></a>Pour remplacer les textes rappel
+### Pour remplacer les textes rappel
 
 Vous pouvez déterminer de plusieurs manières le texte devant figurer sur le rappel imprimé. Dans certains cas, vous pouvez remplacer les textes début et fin définis pour le niveau actuel par ceux d'un autre niveau.
 
@@ -57,7 +51,7 @@ Vous pouvez déterminer de plusieurs manières le texte devant figurer sur le ra
 3. Sur la page **Mettre à jour texte rappel**, entrez le niveau requis dans le champ **Niveau rappel**.
 4. Cliquez sur le bouton **OK** pour que le programme mette à jour les textes début et fin.
 
-### <a name="to-issue-a-reminder"></a>Pour émettre un rappel
+### Pour émettre un rappel
 
 Après avoir créé les relances et effectué toutes les modifications souhaitées, vous pouvez lancer les impressions test ou émettre les relances.
 
@@ -82,7 +76,7 @@ De plus, émettre un rappel peut créer des écritures de TVA.
 
 Le rappel est imprimé pour être envoyé à une adresse de courriel spécifiée en tant que pièce jointe PDF.
 
-### <a name="to-cancel-an-issued-reminder"></a>Pour annuler un rappel émis
+### Pour annuler un rappel émis
 
 Si des rappels ont été émis par erreur, vous pouvez les annuler avant leur envoi. Vous pouvez les annuler un par un ou en lot.
 

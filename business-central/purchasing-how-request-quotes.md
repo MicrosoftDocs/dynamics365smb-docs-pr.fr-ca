@@ -7,26 +7,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: rfq
-ms.search.form: 49, 97, 9306, 9346
+ms.search.form: '49, 97, 9306, 9346'
 ms.date: 08/08/2022
 ms.author: edupont
-ms.openlocfilehash: 870fa31361770f5bd773f22ff24a54d65a4b80a3
-ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "9607591"
 ---
-# <a name="request-quotes"></a>Demander des devis
+# Demander des devis
 
 Vous pouvez utiliser un devis en tant que phase préliminaire d’un bon de commande, et le convertir ensuite en facture achat.
 
-## <a name="create-a-purchase-quote"></a>Créer un devis
+## Créer un devis
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Devis**, puis sélectionnez le lien associé.
 2. Créez un document, de la même manière que vous créez un bon de commande. En savoir plus sur [Enregistrer les achats](purchasing-how-record-purchases.md).
 
-## <a name="convert-a-purchase-quote-to-a-purchase-order"></a>Convertir un devis en bon de commande
+## Convertir un devis en bon de commande
 
 Lorsque vous avez accepté le devis du fournisseur, vous pouvez le convertir en bon de commande pour procéder à l’achat.
 
@@ -37,9 +31,9 @@ Le devis d'achat est supprimé de la base de données. Un bon de commande est cr
 > [!NOTE]
 > Il n’est pas possible de convertir directement un devis d’achat en facture d’achat, comme c’est le cas avec les devis de vente. Pour plus de détails sur la création d’une facture d’achat, consultez [Enregistrer les achats avec les factures d’achat](purchasing-how-record-purchases.md).
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/create-purchase-documents-dynamics-365-business-central/) associée.
+## Voir la [formation Microsoft](/training/modules/create-purchase-documents-dynamics-365-business-central/) associée.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Définition des achats](purchasing-setup-purchasing.md)  

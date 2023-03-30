@@ -3,14 +3,9 @@ author: brentholtorf
 ms.topic: include
 ms.date: 10/27/2022
 ms.author: bholtorf
-ms.openlocfilehash: a686428deb5dae023c80a3c668605c98772db021
-ms.sourcegitcommit: 5bb13966e9ba8d7a3c2f00dd32f167acccf90b82
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "9728745"
 ---
-### <a name="reversing-journals-to-correct-mistakes"></a>Journaux d'inversion pour corriger les erreurs
+
+### Journaux d'inversion pour corriger les erreurs
 
 Lorsque vous travaillez avec des journaux qui comportent de nombreuses lignes et que quelque chose ne va pas, il est important de disposer d’un moyen simple de corriger les erreurs. La page **Journal général reporté** propose quelques actions qui peuvent vous aider.
 

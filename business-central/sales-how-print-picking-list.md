@@ -1,28 +1,22 @@
 ---
 title: Imprimer la liste des prélèvements inventaire à partir d’un document de vente
-description: Vous pouvez imprimer une liste des prélèvements inventaire directement à partir d'un document de vente, des ventes, de la facture et d'autres documents vente sortants.
+description: 'Vous pouvez imprimer une liste des prélèvements inventaire directement à partir d''un document de vente, des ventes, de la facture et d''autres documents vente sortants.'
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: c4b9dbda118c3de9e414e013f40b69b900480177
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8510593"
 ---
-# <a name="print-the-picking-list"></a>Imprimer la liste des prélèvements
+# Imprimer la liste des prélèvements
 
 Vous pouvez imprimer une liste des prélèvements inventaire directement à partir d’un document de vente ou d’autres documents qui déclenchent la livraison des articles.
 
-Ce rapport est généralement utilisé dans les compagnies sans fonctionnalité dédiée à la gestion des entrepôts, de sorte qu'un préposé à l'inventaire peut simplement afficher ou imprimer la liste des prélèvements à partir du document vente associé. Dans les compagnies avec un volume plus élevé ou des processus plus complexes, le prélèvement est planifié et effectué dans des documents entrepôt dédiés. Pour plus d'informations, voir [Prélèvement d'articles](warehouse-pick-items.md).
+Cet rapport est généralement utilisé dans les compagnies sans fonctionnalité dédiée à la gestion des entrepôts, de sorte qu’un employé d'entrepôt peut afficher ou imprimer la liste des prélèvements à partir du document de vente associé. Dans les compagnies avec un volume plus élevé ou des processus plus complexes, la livraison et le prélèvement sont planifiés et effectués dans des documents d’entrepôt dédiés. Learn more at [Flux de désenlogement](design-details-outbound-warehouse-flow.md).
 
-## <a name="to-print-a-picking-list-from-a-sales-order"></a>Pour imprimer une liste des prélèvements à partir d'un document de vente
+## Pour imprimer une liste des prélèvements à partir d'un document de vente
 
 La procédure suivante se base sur un document de vente. Les étapes sont similaires pour tous les autres documents pouvant être utilisés pour lancer la livraison d’articles, par exemple un ordre transfert.
 
@@ -31,15 +25,15 @@ La procédure suivante se base sur un document de vente. Les étapes sont simila
 3. Choisir l'action **Rapport**, puis choisissez l'action **Liste de prélèvement par ordre**.  
 4. Sélectionnez le bouton **Imprimer** pour imprimer la liste de prélèvements, ou le bouton **Aperçu** pour l'afficher à l'écran.
 
-Vous pouvez également enregistrer la liste des prélèvements en tant que document, par exemple, pour l'envoyer à quelqu'un ou pour l'ajouter en tant que pièce jointe au document de vente. Pour plus d'informations, voir [Gérer les pièces jointes, les liens et les notes sur les fiches et les documents](ui-how-add-link-to-record.md).
+Vous pouvez également enregistrer la liste des prélèvements en tant que document, par exemple, pour l'envoyer à quelqu'un ou pour l'ajouter en tant que pièce jointe au document de vente. Learn more at [Gérer les pièces jointes, les liens et les notes sur les fiches et les documents](ui-how-add-link-to-record.md).
 
 > [!NOTE]
-> Si vous avez utilisé la fonction **Éclater nomenclature** sur le document de vente, seuls les composantes de l'élément d'assemblage associé sont affichées dans le rapport. Pour plus d'informations, reportez-vous à [Utiliser les nomenclatures](inventory-how-work-BOMs.md).
+> Si vous avez utilisé la fonction **Éclater nomenclature** sur le document de vente, seuls les composantes de l'élément d'assemblage associé sont affichées dans le rapport. Learn more at [Utiliser les nomenclatures](inventory-how-work-BOMs.md).
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Inventaire](inventory-manage-inventory.md)  
-[Prélèvement d'articles](warehouse-pick-items.md)  
-[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Flux de désenlogement](design-details-outbound-warehouse-flow.md)
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

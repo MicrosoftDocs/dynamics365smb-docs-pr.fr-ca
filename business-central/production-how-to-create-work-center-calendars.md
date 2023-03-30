@@ -1,22 +1,16 @@
 ---
 title: Paramétrer des calendriers usine
-description: La création et l’activation d’un calendrier d’atelier impliquent plusieurs tâches, notamment la configuration des calendriers d’atelier et la création de quarts de travail.
+description: 'La création et l’activation d’un calendrier d’atelier impliquent plusieurs tâches, notamment la configuration des calendriers d’atelier et la création de quarts de travail.'
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: 9291, 9293, 9295, 99000750, 99000751, 99000752, 99000753, 99000759, 99000769, 99000770, 99000771, 99000772, 99000920
+ms.search.form: '9291, 9293, 9295, 99000750, 99000751, 99000752, 99000753, 99000759, 99000769, 99000770, 99000771, 99000772, 99000920'
 ms.date: 06/22/2021
 ms.author: edupont
-ms.openlocfilehash: 4e8c950a402c8bbf650deec10eb7be2679c5eeab
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8516806"
 ---
-# <a name="set-up-shop-calendars"></a>Paramétrer des calendriers usine
+# Paramétrer des calendriers usine
 
 Les calendriers d'atelier ou de poste de charge spécifient les jours ouvrés et les heures de travail, les équipes, les jours fériés et les absences déterminant la capacité disponible brute de l'atelier, mesurée en unités de temps, en fonction des valeurs d'efficacité et de capacité définies.
 
@@ -24,7 +18,7 @@ Avant de calculer un calendrier d'unité de production ou d'atelier spécifique,
 
 La procédure suivante décrit comment configurer des calendriers d'atelier. Les étapes sont similaires lorsque vous configurez des calendriers d'unité de production.  
 
-## <a name="to-create-work-shifts"></a>Pour créer des équipes  
+## Pour créer des équipes  
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Équipes**, puis choisissez le lien associé.  
 2.  Sur une ligne blanche, entrez le numéro d'identification de l'équipe, par exemple, **1**, dans le champ **Code**.  
 3.  Dans le champ **Désignation**, entrez la désignation de l'équipe, par exemple, **1ère équipe**.  
@@ -32,7 +26,7 @@ La procédure suivante décrit comment configurer des calendriers d'atelier. Les
 
 Même si vos centres de charge n'ont pas recours à diverses équipes, entrez au moins un code équipe.  
 
-## <a name="to-set-up-a-shop-calendar"></a>Pour configurer un calendrier usine  
+## Pour configurer un calendrier usine  
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Calendriers usine**, puis choisissez le lien associé.  
 2.  Sur une ligne blanche, entrez le numéro d'identification du calendrier usine dans le champ **Code**.  
 3.  Dans le champ **Désignation**, entrez la désignation du calendrier usine.  
@@ -66,7 +60,7 @@ Une capacité disponible nulle est attribuée aux jours fériés définis dans l
 
 Le calendrier usine peut ensuite être attribué à un atelier pour calculer le calendrier usine qui régira la programmation de toutes les opérations dans le temps à l'atelier.  
 
-## <a name="to-calculate-a-work-center-calendar"></a>Pour calculer un calendrier d'atelier  
+## Pour calculer un calendrier d'atelier  
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Ateliers**, puis choisissez le lien associé.
 2. Ouvrez l'atelier que vous voulez mettre à jour.  
@@ -94,7 +88,7 @@ Vous venez de créer ou de mettre à jour les écritures calendrier. Elles indiq
 
 Le calendrier d'atelier calculé définit ensuite la période de disponibilité et la quantité de la capacité de l'atelier. Il contrôle la programmation détaillée des opérations effectuées dans l'atelier.  
 
-## <a name="to-record-work-center-absence"></a>Pour enregistrer les absences de l'atelier  
+## Pour enregistrer les absences de l'atelier  
 1.  Sur la page **Calendrier atelier**, choisissez l'action **Afficher matrice**.
 2. Sur la page **Matrice Calendrier atelier**, sélectionnez l'atelier et le jour de calendrier correspondant au moment où l'absence doit être enregistrée, puis choisissez l'action **Indisponibilité**.  
 3.  Sur la page **Indisponibilité**, définissez les heures de début et de fin, et la description de l'absence du jour. Par exemple :  
@@ -105,7 +99,7 @@ Le calendrier d'atelier calculé définit ensuite la période de disponibilité 
 
 La capacité du jour sélectionné est réduite conformément aux heures d'absence enregistrées.  
 
-## <a name="see-also"></a>Voir aussi  
+## Voir aussi  
 [Configurer des calendriers principaux](across-how-to-assign-base-calendars.md)  
 [Configurer les ateliers et les unités de production](production-how-to-set-up-work-and-machine-centers.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  

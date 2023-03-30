@@ -1,21 +1,15 @@
 ---
 title: Champ État sur les documents
-description: Pour en savoir plus sur l'état « En cours » et « Libéré » figurant sur les documents de devis, de commande ou de note de crédit.
+description: "Pour en savoir plus sur l'état «\_En cours\_» et «\_Libéré\_» figurant sur les documents de devis, de commande ou de note de crédit."
 author: brentholtorf
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.search.keywords: document, status, quote, order, credit memo, released, open, pending approval, pending prepayment,
-ms.search.form: ''
+ms.search.keywords: 'document, status, quote, order, credit memo, released, open, pending approval, pending prepayment,'
+ms.search.form: null
 ms.date: 09/19/2022
 ms.author: bholtorf
-ms.openlocfilehash: f48f499277155aaf60ae0992199d7895225f1ef5
-ms.sourcegitcommit: 5bb13966e9ba8d7a3c2f00dd32f167acccf90b82
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "9728637"
 ---
-# <a name="status-field-on-documents"></a>Champ État sur les documents
+# Champ État sur les documents
 
 Lorsque vous créez un devis, un ordre ou une note de crédit, le champ **État** sur l’en-tête du document indique par défaut l'état **En cours**.
 
@@ -28,11 +22,11 @@ Après avoir renseigné le document, vous pouvez le libérer et [!INCLUDE[prod_s
 | Approbation en attente   | Le document est en attente d'approbation. |
 | Paiement anticipé en attente | Une facture paiement anticipé a été reportée pour ce document. |
 
-## <a name="release-process"></a>Traitement des versions
+## Traitement des versions
 
 Vous pouvez utiliser le processus de libération de différentes manières afin de faciliter le flux de travail normal, et de suivre, par exemple, les procédures de la compagnie concernant les approbations ou démarrer les activités entrepôt.
 
-### <a name="approval-procedures"></a>Procédures d’approbation
+### Procédures d’approbation
 
 Votre compagnie peut utiliser la procédure de lancement pour indiquer qu’un autre utilisateur a approuvé le document, ou qu’un contact externe peut répondre aux spécifications du document, comme l’indiquent les exemples suivants :
 
@@ -42,11 +36,11 @@ Votre compagnie peut utiliser la procédure de lancement pour indiquer qu’un a
 
 En savoir plus sur les flux de travail approbation sur [Utiliser les flux de travail](across-use-workflows.md).
 
-### <a name="warehouse-activities"></a>Activités entrepôt
+### Activités entrepôt
 
 Si l'état de l’ordre est **En cours**, l’entrepôt ne commence pas à préparer la livraison et ne prévoit pas de recevoir les articles d’un bon de commande. Lorsque vous libérez l’ordre, vous indiquez qu’il est terminé et que l’entrepôt peut l’inclure dans ses activités.
 
-## <a name="reopen-a-released-order"></a>Réouverture d’un ordre libéré
+## Réouverture d’un ordre libéré
 
 Vous pouvez modifier un ordre libéré en le rouvrant. Cependant, vous pouvez uniquement augmenter la quantité de lignes déjà traitées par l'entrepôt.
 
@@ -57,7 +51,7 @@ Si vous apportez des modifications à un ordre libéré, vous devez les notifier
 > [!NOTE]
 > Si vous souhaitez reporter un seul ordre ouvert ou une note de crédit sans le/la libérer au préalable, [!INCLUDE [prod_short](includes/prod_short.md)] libère automatiquement le document lorsque vous le reportez. Si vous reportez des ordres ou des notes de crédit à l’aide de la fonction **Reporter par lot**, vous pouvez uniquement reporter ceux que vous avez libérés.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Vente de produits avec un document de vente client](sales-how-sell-products.md)  
 [Enregistrer les achats avec les factures achat](purchasing-how-record-purchases.md)  

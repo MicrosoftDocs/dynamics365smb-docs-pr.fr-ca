@@ -11,18 +11,12 @@ ms.search.keywords: user setup
 ms.search.form: 118
 ms.date: 06/16/2021
 ms.author: edupont
-ms.openlocfilehash: 558dcdf68f8ecc6a7c8def0b6a61a33d78f8f68b
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8516327"
 ---
-# <a name="specify-posting-periods"></a>Spécifier des périodes de report
+# Spécifier des périodes de report
 
 Utilisez des périodes de report pour spécifier quand les utilisateurs peuvent reporter dans le grand livre.  
 
-## <a name="to-specify-posting-periods"></a>Pour définir des périodes de report
+## Pour définir des périodes de report
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du grand livre**, puis choisissez le lien associé.  
 2. Sur la page **Configuration du grand livre**, définissez la période en entrant des dates dans les champs **Début période report** et **Fin période report**.  
@@ -30,7 +24,7 @@ Utilisez des périodes de report pour spécifier quand les utilisateurs peuvent 
 > [!NOTE]  
 > Ces périodes de report s'appliquent à la compagnie et à tous les utilisateurs. Pour autoriser des exceptions, vous pouvez définir différentes périodes de report pour des utilisateurs spécifiques sur la page **Configuration des utilisateurs**. Ces périodes de report sont prioritaires sur celles spécifiées sur la page **Configuration du grand livre**. Pour plus d'informations, reportez-vous à [Pour configurer des contraintes de temps utilisateur](ui-define-granular-permissions.md#to-set-up-user-time-constraints).
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Finance](finance.md)  
 [Exécution des processus de clôture d'exercice](year-how-complete-period-end-processes.md)  

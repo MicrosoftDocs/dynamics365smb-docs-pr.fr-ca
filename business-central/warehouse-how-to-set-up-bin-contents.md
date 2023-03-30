@@ -1,6 +1,6 @@
 ---
 title: Créer le contenus de la zone
-description: Une fois que vous avez configuré vos zones, vous pouvez spécifier les articles à y stocker et configurer des règles qui contrôlent la fréquence de remplissage des zones.
+description: 'Une fois que vous avez configuré vos zones, vous pouvez spécifier les articles à y stocker et configurer des règles qui contrôlent la fréquence de remplissage des zones.'
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
@@ -9,18 +9,12 @@ ms.workload: na
 ms.search.form: 7374
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 86d5d8410a884fa2a8357490c92658582fc9b9f5
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9530443"
 ---
-# <a name="create-bin-contents"></a>Créer le contenus de la zone
+# Créer le contenus de la zone
 
 Une fois la configuration des emplacements terminée, vous pouvez configurer leur contenu. En d'autres termes, vous pouvez configurer les articles à stocker dans une zone donnée et définir les règles qui régissent le remplissage de la zone avec un article spécifique. Vous pouvez effectuer cette opération manuellement sur la page **Contenu de la zone** ou automatiquement sur la page **Créer feuille contenu de la zone**.
 
-## <a name="to-create-bin-content-manually"></a>Pour créer le contenu de la zone manuellement
+## Pour créer le contenu de la zone manuellement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
 2. Sélectionnez l'emplacement à partir duquel vous souhaitez créer des contenus de la zone, puis choisissez l'action **Zones**.  
@@ -37,7 +31,7 @@ Si vous sélectionnez le champ **Fixe**, vous associez l'article à l'emplacemen
 > [!NOTE]  
 > Vous pouvez configurer simultanément plusieurs contenus de la zone sur la page **Feuille création contenu de la zone**.  
 
-## <a name="to-create-bin-content-with-a-worksheet"></a>Pour créer le contenu de la zone avec une feuille
+## Pour créer le contenu de la zone avec une feuille
 
 Lorsque vous avez créé vos zones, vous pouvez créer le contenu de chaque zone dans la feuille de création de contenu de la zone.
 
@@ -55,17 +49,14 @@ Lorsque vous avez créé vos zones, vous pouvez créer le contenu de chaque zone
 
 Dans cette feuille, vous pouvez utiliser des lignes contenu de la zone pour plusieurs zones, afin d'obtenir un aperçu convenable des articles que vous placez dans différents zones d'une zone, d'une allée, ou d'un casier donné.  
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/set-up-zones-bins/) associée
+## Voir la [formation Microsoft](/training/modules/set-up-zones-bins/) associée
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi
 
-[Calculer le réapprovisionnement de la zone](warehouse-how-to-calculate-bin-replenishment.md)  
-[Gestion d'entrepôt](warehouse-manage-warehouse.md)  
-[Stock](inventory-manage-inventory.md)  
+[Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
+[Inventaire](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
 [Gestion d'assemblage](assembly-assemble-items.md)  
-[Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
-[Détails de conception : Configuration de l'entrepôt](design-details-warehouse-setup.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 

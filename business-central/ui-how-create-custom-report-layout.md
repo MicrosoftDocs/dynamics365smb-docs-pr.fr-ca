@@ -1,23 +1,17 @@
 ---
 title: Créer et modifier des présentations personnalisées pour les rapports et les documents
-description: Découvrez comment créer des présentations personnalisées qui vous permettent de personnaliser l’apparence d’un rapport lorsqu’il est consulté, imprimé ou enregistré.
+description: 'Découvrez comment créer des présentations personnalisées qui vous permettent de personnaliser l’apparence d’un rapport lorsqu’il est consulté, imprimé ou enregistré.'
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: customized report, document layout, logo, personalize
-ms.search.form: 9650, 9652
+ms.search.keywords: 'customized report, document layout, logo, personalize'
+ms.search.form: '9650, 9652'
 ms.date: 03/06/2022
 ms.author: edupont
-ms.openlocfilehash: 465954e6549ee7ffd0822438a0ad004686d5b424
-ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "9604788"
 ---
-# <a name="legacy-create-and-modify-custom-report-layouts"></a>(Hérité) Créer et modifier des présentations de rapport personnalisées
+# (Hérité) Créer et modifier des présentations de rapport personnalisées
 
 [!INCLUDE[legacy-custom-layouts](includes/legacy-custom-layouts.md)]
 
@@ -35,7 +29,7 @@ Après avoir défini vos présentations de rapport personnalisées, vous pouvez 
 
 Vous pouvez également utiliser des présentations de rapport personnalisées pour ajouter du contenu aux courriels. Les présentations de rapport peuvent vous faire gagner du temps et contribuer à assurer la cohérence, car elles réutilisent le même contenu lorsque vous communiquez avec vos clients. Pour utiliser des présentations de rapport personnalisées avec le courriel, le type de fichier de la présentation doit être Word, et non RDLC. Pour en savoir plus, voir [Configurer des textes et des présentations de courriel réutilisables](admin-how-setup-email.md#set-up-reusable-email-texts-and-layouts).
 
-## <a name="create-a-custom-layout"></a>Créer une présentation personnalisée
+## Créer une présentation personnalisée
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Sélection présentation rapport**, puis sélectionnez le lien associé.
 
@@ -60,11 +54,11 @@ La mise en page personnalisée a été créée et vous pouvez la modifier à vot
 > [!TIP]
 > Vous pouvez exporter les résultats de rapport dans un fichier Microsoft Excel pour afficher l’ensemble de données complet, y compris toutes les colonnes, mais sans la présentation. Le fichier Excel peut vous aider à confirmer que le rapport renvoie les données attendues ou diagnostique des problèmes. Pour en savoir plus, voir [Analyse des données de rapport avec Excel](report-analyze-excel.md).
 
-## <a name="modifying-a-custom-layout"></a><a name="ModifyCustomLayout"></a>Modification d'une présentation personnalisée
+## <a name="ModifyCustomLayout"></a>Modification d'une présentation personnalisée
 
 Pour modifier une présentation de rapport personnalisée, vous devez d’abord exporter la présentation de rapport sous forme de fichier vers un emplacement sur votre ordinateur ou réseau. Ensuite, ouvrez le document exporté et apportez les modifications. Lorsque vous avez terminé d’apporter les modifications, vous importez la présentation de rapport.
 
-### <a name="modify-a-custom-layout"></a>Modifier une présentation personnalisée
+### Modifier une présentation personnalisée
 
 1. Exportez une présentation personnalisée à partir de la page **Présentations rapport personnalisées**. Si cette page n’est pas déjà ouverte, recherchez et ouvrez la page **Sélection présentation rapport**, sélectionnez le rapport dont vous souhaitez modifier la présentation, puis choisissez l’action **Présentations personnalisées**.  
 2. Sur la page **Présentations rapport personnalisées**, sélectionnez la présentation à modifier, choisissez l’action **Exporter présentation**, puis choisissez **Enregistrer** ou **Enregistrer sous** pour enregistrer le document de présentation de rapport dans un emplacement sur votre ordinateur ou réseau.  
@@ -117,9 +111,9 @@ To ensure that reports always display and print with the intended fonts, whereve
 
 Adding data fields from a report dataset is more advanced and requires some knowledge of the report dataset. Learn more about adding fields for data, labels, and images at [Add Fields to a Word Report Layout](ui-how-add-fields-word-report-layout.md).  -->
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/change-documents-dynamics-365-business-central/index) associée
+## Voir la [formation Microsoft](/training/modules/change-documents-dynamics-365-business-central/index) associée
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion des présentations de rapport](ui-manage-report-layouts.md)  
 [Modifier la présentation actuelle du rapport](ui-how-change-layout-currently-used-report.md)  

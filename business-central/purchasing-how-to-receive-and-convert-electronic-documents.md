@@ -6,18 +6,12 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
-ms.search.form: 189, 190, 191
+ms.search.keywords: null
+ms.search.form: '189, 190, 191'
 ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: ff1b79447091df53f45eff49779e1c73b2fe0fd5
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9534194"
 ---
-# <a name="receive-and-convert-electronic-documents"></a>Recevoir et convertir des documents électroniques
+# Recevoir et convertir des documents électroniques
 
 La version générique de [!INCLUDE[prod_short](includes/prod_short.md)] prend en charge la réception de factures et d'avoirs électroniques au format PEPPOL, qui est pris en charge par les principaux fournisseurs de services d'échange de documents. Pour recevoir une facture d'un fournisseur en tant que document électronique PEPPOL, traitez le document sur la page Documents entrants pour le convertir en facture achat ou en ligne journal général dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
@@ -40,7 +34,7 @@ Vous pouvez démarrer la conversion des documents électroniques manuellement, c
 
 La procédure suivante décrit comment recevoir une facture fournisseur et la convertir en une facture achat dans [!INCLUDE[prod_short](includes/prod_short.md)]. La procédure est la même lorsque vous convertissez une facture fournisseur en une ligne journal général.  
 
-### <a name="to-receive-and-convert-an-electronic-invoice-to-a-purchase-invoice"></a>Pour recevoir une facture électronique et la convertir en une facture achat
+### Pour recevoir une facture électronique et la convertir en une facture achat
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents entrants**, puis choisissez le lien associé.  
 
@@ -58,9 +52,9 @@ La procédure suivante décrit comment recevoir une facture fournisseur et la co
 
     Les erreurs de validation, généralement associées à des données de base erronées ou manquantes dans [!INCLUDE[prod_short](includes/prod_short.md)], seront affichées dans le raccourci **Messages d'erreur**.  
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/electronic-documents-dynamics-365-business-central/index) associée
+## Voir la [formation Microsoft](/training/modules/electronic-documents-dynamics-365-business-central/index) associée
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
 [Documents entrants](across-income-documents.md)  

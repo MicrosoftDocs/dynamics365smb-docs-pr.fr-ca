@@ -6,17 +6,12 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.date: 06/23/2021
 ms.author: edupont
-ms.openlocfilehash: d8be2d8c3b9602c1a3e78f6cc4ba495af93730d3
-ms.sourcegitcommit: 7b6d70798b4da283d1d3e38a05151df2209c2b72
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "8950183"
 ---
-# <a name="setup-best-practices-planning-parameters"></a>Pratiques de configuration recommandées : paramètres de planification
+# Pratiques de configuration recommandées : paramètres de planification
+
 Le raccourci **Planning** de la fiche article est le cœur de la chaîne d'approvisionnement de la société. Définir les paramètres de planification corrects est très important pour une gestion rentable des inventaires et un service client de haute qualité.  
 
  Le tableau suivant fournit les meilleures pratiques sur la procédure de configuration de champs paramètres sélectionnés de planification. Pour plus d'informations sur un champ donné, sélectionnez le lien correspondant dans la colonne **Configuration d'un champ**.  
@@ -35,16 +30,16 @@ Le raccourci **Planning** de la fiche article est le cœur de la chaîne d'appro
 |Précision arrondi|En cas de fabrication coûteuse, définissez-le sur 0,00001.|De grandes quantités arrondies de rebut ou de consommation matière risquent de faire grimper les coûts inventaire. Il peut donc s'avérer utile de définir la plus petite précision d'arrondissement pour réduire autant que possible ce coût éventuel.|  
 
 > [!NOTE]  
->  Les recommandations sur les paramètres de planification sur les fiches articles s'appliquent également aux mêmes champs sur les fiches unités de stock.  
->   
->  Si des sociétés planifient une demande dans différents magasins, il est alors vivement recommandé de définir des points de stock pour chaque magasin et de créer la demande totale à l'aide d'une valeur dans le champ **Code magasin**. Pour plus d'informations, voir [Détails de conception : demande à un magasin vide.](design-details-demand-at-blank-location.md).  
+> Les recommandations sur les paramètres de planification sur les fiches articles s'appliquent également aux mêmes champs sur les fiches unités de stock.  
+>
+> Si des sociétés planifient une demande dans différents magasins, il est alors vivement recommandé de définir des points de stock pour chaque magasin et de créer la demande totale à l'aide d'une valeur dans le champ **Code magasin**. Pour en savoir plus, voir [Détails de conception : Planification avec/sans emplacement](production-planning-with-without-locations.md).  
 
-## <a name="see-also"></a>Voir aussi  
- [Pratiques de configuration recommandées : planification de l'approvisionnement](setup-best-practices-supply-planning.md)   
- [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)   
- [Configurez les modules complexes à l'aide des meilleures pratiques](set-up-complex-application-areas-using-best-practices.md)  
- [Détails de conception : demande à un magasin vide.](design-details-demand-at-blank-location.md)  
- [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+## Voir aussi  
+[Configurer des recommandations : planification de l'approvisionnement](setup-best-practices-supply-planning.md)  
+[Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)  
+[Configurez les modules complexes à l'aide des meilleures pratiques](set-up-complex-application-areas-using-best-practices.md)  
+[Détails de conception : Planification avec/sans emplacement](production-planning-with-without-locations.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -6,17 +6,11 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.date: 11/11/2022
 ms.author: bholtorf
-ms.openlocfilehash: 0d84da534c754ba7b0f6d1de97b61634ff743ddc
-ms.sourcegitcommit: 9bba11d474e21711cc8e2afefee8efb473170707
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9763278"
 ---
-# <a name="create-workflows-to-connect-tasks-in-business-processes"></a>Créer des flux de travail pour connecter des tâches aux processus entreprise
+# Créer des flux de travail pour connecter des tâches aux processus entreprise
 
 Vous pouvez créer des flux de travail qui connectent des tâches aux processus entreprise exécutées par différents utilisateurs. Les tâches système, telles que le report automatique, peuvent être incluses comme étapes du flux de travail, précédées ou suivies des tâches de l'utilisateur. Demander et accorder une approbation pour créer des enregistrements sont des étapes classiques du workflow.  
 
@@ -47,7 +41,7 @@ Le flux de travail est divisé en trois sections :
 
 Pour les deux types d’événements et de réponses, les options sont définies par le système. De nouveaux événements doivent être ajoutés via le développement d’une extension.
 
-## <a name="to-create-a-workflow"></a>Pour créer un workflow
+## Pour créer un workflow
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Flux de travail**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Nouveau**. La page **Flux de travail** s'ouvre.  
@@ -117,7 +111,7 @@ Pour les deux types d’événements et de réponses, les options sont définies
 > [!TIP]  
 > Pour voir les relations entre les tables utilisées dans les flux de travail, sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") puis entrez **Flux de travail - Relations de table**.  
 
-## <a name="example-of-creating-a-new-workflow-using-existing-events"></a>Exemple de création d’un nouveau flux de travail à l’aide d’événements existants
+## Exemple de création d’un nouveau flux de travail à l’aide d’événements existants
 
 Dans l’exemple suivant, un nouveau flux de travail est créé pour approuver les modifications apportées au nom d’un fournisseur existant :
 
@@ -176,9 +170,9 @@ L'illustration suivante donne un aperçu du résultat de cette procédure.
 
 Ensuite, testez le flux de travail en ouvrant une fiche fournisseur existante et en changeant son nom. Vérifiez qu’une demande d’approbation est envoyée après la modification du nom du fournisseur.
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/create-workflows/) associée
+## Voir la [formation Microsoft](/training/modules/create-workflows/) associée
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Créer des flux de travail à partir de modèles de flux de travail](across-how-to-create-workflows-from-workflow-templates.md)  
 [Configurer des utilisateurs d'approbation](across-how-to-set-up-approval-users.md)  
