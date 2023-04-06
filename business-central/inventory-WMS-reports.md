@@ -4,25 +4,19 @@ description: Découvrez les rapports et analyses d'inventaire et d’entrepôt d
 author: AndreiPanko
 ms.topic: conceptual
 ms.search.keywords: reporting
-ms.search.form: Report_707, Report_716, Report_813, Report_1001, Report_5807, Report_5808, Report_5809, Report_7313, Report_7319, Report_7320
+ms.search.form: 'Report_707, Report_716, Report_813, Report_1001, Report_5807, Report_5808, Report_5809, Report_7313, Report_7319, Report_7320'
 ms.date: 06/01/2021
 ms.author: andreipa
-ms.openlocfilehash: e12bace02d46429b6899395b3e792ac498374d6d
-ms.sourcegitcommit: 670d589c6870a01e0655c2da800560ed69d18db2
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "8455571"
 ---
-# <a name="inventory-and-warehouse-reports-and-analytics-in-business-central"></a>Rapports et analyses d'inventaire et d’entrepôt dans Business Central
+# Rapports et analyses d'inventaire et d’entrepôt dans Business Central
 
 Les rapports d'inventaire et d’entrepôt dans [!INCLUDE [prod_short](includes/prod_short.md)] permettent aux professionnels de l'inventaire et des affaires d’obtenir des informations et des statistiques sur les activités d'inventaire et d’entrepôt actuelles et passées.  
 
-## <a name="reports"></a>Rapports
+## Rapports
 [!INCLUDE [inventory_WMS_reports](includes/inventory-WMS-reports-include.md)]
 
 
-## <a name="tasks"></a>Tâches
+## Tâches
 
 Les articles suivants décrivent certaines des tâches clés pour analyser l’état de votre entreprise :
 
@@ -30,11 +24,11 @@ Les articles suivants décrivent certaines des tâches clés pour analyser l’�
 * [Voir la disponibilité des articles](inventory-how-availability-overview.md)
 
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Configuration de l'inventaire](inventory-setup-inventory.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
-[Gestion d’entrepôt](warehouse-manage-warehouse.md)  
+[Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

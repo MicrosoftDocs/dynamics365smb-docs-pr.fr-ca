@@ -12,6 +12,8 @@ ms.search.form: 9171
 ---
 # Gérer les profils d’utilisateur
 
+[!INCLUDE [2023rw1-sec-group-short](includes/2023rw1-sec-group-short.md)]
+
 Attribuez tous les utilisateurs à des profils qui reflètent :
 
 * Leur rôle commercial

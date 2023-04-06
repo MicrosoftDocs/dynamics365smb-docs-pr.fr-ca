@@ -127,6 +127,8 @@ Voici ce qui se passe pendant le processus de report :
 * Report de la consommation des lignes du document source qui ont été prélevées.
 * Si l’emplacement utilise des zones, le report crée également des écritures entrepôt pour reporter les modifications de la quantité zone.
 
+[!INCLUDE [preview-posting-warehouse](includes/preview-posting-warehouse.md)]
+
 ## Pour enregistrer le mouvement d’inventaire
 
 1. Sur la page **Mouvement d’inventaire**, ouvrez le document pour lequel enregistrer le mouvement.  
@@ -148,7 +150,7 @@ Voici ce qui se passe pendant le processus de report :
 Les modes de consommation affectent le flux des composantes en production. Pour en savoir plus, voir [Consommer des composantes en fonction de la production réalisée](production-how-to-flush-components-according-to-operation-output.md). En fonction de la méthode de consommation sélectionnée, vous pouvez prélever des composantes pour la production des manières suivantes :
 
 * Utilisez un document **Prélèvement inventaire** pour enregistrer le prélèvement des articles qui utilisent la méthode de consommation **manuelle**. Lorsque vous enregistrez un prélèvement inventaire, la consommation des composantes prélevées est reportée. 
-* Utilisez un document **Mouvement d’inventaire** avec une référence à un document source pour enregistrer les prélèvements pour les composantes qui utilisent la méthode de consommation **Manuelle**. Vous devrez enregistrer la consommation séparément. Pour en savoir plus, voir [Reporter par lots la consommation de la production](production-how-to-post-consumption.md). 
+* Utilisez un document **Mouvement d’inventaire** avec une référence à un document source pour enregistrer les prélèvements pour les composantes qui utilisent la méthode de consommation **Manuelle**. Vous devrez enregistrer la consommation séparément. Pour en savoir plus, voir [Reporter en lot la consommation de la production](production-how-to-post-consumption.md). 
 * Utilisez un document **Mouvement d’inventaire** avec une référence à un document source pour enregistrer les prélèvements pour les composantes qui utilisent la méthode de consommation **Prélèvement + Aval**, **Prélèvement + Amont**. La consommation des composantes se produira automatiquement, soit lorsque vous modifiez l’état du bon de production, soit en démarrant ou en terminant une opération. Toutes les composantes requises doivent être disponibles. Autrement, le report de la consommation de la composante est arrêté.
 * Utilisez un document **Mouvement d’inventaire** sans référence à un document source ou d’autres moyens d’enregistrer le mouvement des composantes qui utilisent la méthode de consommation **Aval** ou **Amont**. La consommation des composantes se produira automatiquement, soit lorsque vous modifiez l’état du bon de production, soit lorsque vous démarrez ou terminez une opération. Toutes les composantes requises doivent être disponibles. Autrement, le report de la consommation s’arrête pour cette composante. Learn more at [Déplacement des articles en interne dans les configurations entrepôt de base](warehouse-how-to-move-items-ad-hoc-in-basic-warehousing.md).
 

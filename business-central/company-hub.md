@@ -68,6 +68,8 @@ Pour plus d’informations sur les compagnies et les environnements, voir [Liens
 
 ## Accéder au Hub Entreprise
 
+[!INCLUDE [2023rw1-sec-group-short](includes/2023rw1-sec-group-short.md)]
+
 Pour accéder au Hub Entreprise, vous devez avoir accès via le groupe d’utilisateurs *HUB ENTREPRISE D365* ou via l’ensemble d’autorisations *HUB ENTREPRISE D365*. Vous devez également avoir accès aux compagnies répertoriées dans votre Hub Entreprise, ce qui signifie que vous devez être un utilisateur de ces compagnies. Pour plus d’informations, voir [Créer des utilisateurs conformément aux licences](ui-how-users-permissions.md).  
 
 > [!IMPORTANT]

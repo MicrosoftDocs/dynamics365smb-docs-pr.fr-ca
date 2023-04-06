@@ -6,18 +6,12 @@ ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: procurement, supply, vendor order
-ms.search.form: 175, 176, 177, 178, 456, 460, 5727, 5729
+ms.search.keywords: 'procurement, supply, vendor order'
+ms.search.form: '175, 176, 177, 178, 456, 460, 5727, 5729'
 ms.date: 08/30/2022
 ms.author: edupont
-ms.openlocfilehash: 82083beeb1779455fbd4b8a6083663b5559129eb
-ms.sourcegitcommit: 8ad79e0ec6e625796af298f756a142624f514cf3
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "9606624"
 ---
-# <a name="setting-up-purchasing"></a>Définition des achats
+# Définition des achats
 
 Avant de pouvoir gérer les processus achat, vous devez configurer les règles et valeurs qui définissent les stratégies d'achat de la compagnie.
 
@@ -27,11 +21,11 @@ Une série de tâches distincte en relation avec l’enregistrement de nouveaux 
 
 Les configurations relatives à la finance, telles que les modes de règlement et les devises, sont traitées dans la section Configuration financière. En savoir plus sur [Configurer Finance](finance-setup-finance.md). De même, la configuration des achats liés à l’inventaire, comme les unités de mesure et les codes de suivi des articles, peut être trouvée dans la section [Configuration inventaire](inventory-setup-inventory.md).
 
-## <a name="purchases-and-payables-setup"></a>Configuration achats
+## Configuration achats
 
 Avant d’utiliser les achats, précisez sur la page **Configuration achats** comment les valeurs d’achat sont reportées et les séries de numéros utilisées pour les fournisseurs et les documents achat.
 
-### <a name="general-settings"></a>Paramètres généraux
+### Paramètres généraux
 
 Sur le raccourci **Général**, vous pouvez spécifier des options comme le mode de calcul et de report des escomptes et l’activation de la fonction d’arrondi sur les factures. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)].
 
@@ -43,15 +37,15 @@ En outre, certains champs modifient leur comportement ou dépendent de la façon
 
 Consultez les détails sur les champs [**N° doc. ext. obligatoire**](#external-document-number) et [**Inversion coût exacte obligatoire**](#exact-cost-reversing) ci-dessous.
 
-### <a name="number-series-settings"></a>Paramètres de séries de numéros
+### Paramètres de séries de numéros
 
 Sur le raccourci **Séries de numéros**, vous devez spécifier les codes d’identification uniques qui seront utilisés pour les fournisseurs, les factures et autres documents achat. La numérotation est importante non seulement pour les processus internes, mais peut également nécessiter le respect des réglementations locales. Il peut donc être utile d’envisager de configurer toutes les séries sur la page **N° de série** au préalable au lieu d’en créer de nouvelles à partir de **Configuration achats**. Pour en savoir plus, voir [Créer des séries de numéros](ui-create-number-series.md).
 
-## <a name="external-document-number"></a>Numéro de document externe
+## Numéro de document externe
 
 [!INCLUDE [ext-doc-no-purch](includes/ext-doc-no-purch.md)]
 
-## <a name="exact-cost-reversing"></a>Inversion de même coût
+## Inversion de même coût
 
 La fonction **Coût retour identique obligatoire** aide à garantir que les marchandises retournées sont évaluées au même coût que lorsqu’elles ont été extraites de l’inventaire, à l’aide d’une application fixe plutôt que de suivre une méthode d’évaluation des coûts de type moyenne ou premier entré-premier sorti (FIFO). Pour en savoir plus, voir la section [Détails de conception : Affectation fixe](design-details-item-application.md#fixed-application). Si un coût supplémentaire est ensuite ajouté à l’achat d’origine, le programme met à jour la valeur du retour achat en conséquence.
 
@@ -59,7 +53,7 @@ Avec la fonctionnalité activée, une transaction de retour peut être reportée
 
 [!INCLUDE[local-functionality](includes/local-functionality.md)]
 
-## <a name="more-purchasing-setups"></a>Plus de configurations d’achat
+## Plus de configurations d’achat
 
 | À | Voir |
 | --- | --- |
@@ -75,9 +69,9 @@ Avec la fonctionnalité activée, une transaction de retour peut être reportée
 | Examinez les reçus de dépenses, convertissez les documents papier et électroniques en lignes de journal et numérisez les factures papier des fournisseurs. | [Configurer des documents entrants](across-how-setup-income-documents.md) |
 | Spécifiez les rapports par défaut à utiliser pour différents types de documents. |[Sélection des rapports dans Business Central](across-report-selections.md)|
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/paths/trade-get-started-dynamics-365-business-central/).
+## Voir la formation associée sur [Microsoft Learn](/learn/paths/trade-get-started-dynamics-365-business-central/).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Présentation de la configuration](setup.md)  

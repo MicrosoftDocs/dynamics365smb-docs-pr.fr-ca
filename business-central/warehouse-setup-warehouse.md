@@ -1,22 +1,16 @@
 ---
 title: Configuration des processus entrepôt
-description: La stratégie de distribution d’une compagnie se reflète dans la configuration de ses processus entrepôt, par exemple les emplacements d’entrepôt.
+description: 'La stratégie de distribution d’une compagnie se reflète dans la configuration de ses processus entrepôt, par exemple les emplacements d’entrepôt.'
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.form: 5775, 7300, 7301, 7302, 7303, 7304, 7305, 7306, 7307, 7308, 7325, 7344, 7346, 7347, 7353, 7366
+ms.search.form: '5775, 7300, 7301, 7302, 7303, 7304, 7305, 7306, 7307, 7308, 7325, 7344, 7346, 7347, 7353, 7366'
 ms.date: 06/25/2021
 ms.author: edupont
-ms.openlocfilehash: d2d7e2f3f71cd0791df27eb378bfa4bf66338afa
-ms.sourcegitcommit: 3acadf94fa34ca57fc137cb2296e644fbabc1a60
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9532333"
 ---
-# <a name="setting-up-warehouse-management"></a>Configuration de la gestion des entrepôts
+# Configuration de la gestion des entrepôts
 
 La stratégie de distribution d'une compagnie se reflète dans la configuration de ses processus entrepôt : Cela inclut la définition de la manière dont différents articles sont traités dans différents entrepôts (par exemple, degré de contrôle des zones et étendue du flux de travail requis entre les activités entrepôt).  
 
@@ -24,7 +18,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 
 |**Pour**|**Voir**|  
 |------------|-------------|  
-|Obtenir un aperçu des capacités de base par rapport à la fonctionnalité de stockage avancée.|[Détails de conception : vue d'ensemble d'entrepôt](design-details-warehouse-overview.md)|  
+|Obtenir un aperçu des capacités de base par rapport à la fonctionnalité de stockage avancée.|[Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)|  
 |Configurer huit types de zones (zone prélèvement, par exemple) pour définir les activités de flux associées à chaque type de zone.|[Configurer des types de zone](warehouse-how-to-set-up-bin-types.md)|  
 |Créez des zones manuellement ou automatiquement avec des informations (nom, séries de numéros et catégorie) sur la base d'un modèle de zone.|[Créer zones](warehouse-how-to-create-individual-bins.md)|  
 |Définir quels articles vous souhaitez stocker dans une zone donnée et définir les règles devant être suivies lors du remplissage de la zone avec un article spécifique.|[Créer les contenus de la zone](warehouse-how-to-set-up-bin-contents.md)|  
@@ -39,17 +33,14 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Permettez aux employés d'entrepôt de diviser une unité de mesure plus grande en unités de mesure plus petites afin de répondre aux besoins des documents sources.|[Activer la rupture de charge automatique avec prélèvement et rangement dirigé](warehouse-enable-automatic-breaking-bulk-with-directed-put-away-and-pick.md)|  
 |Configurer l'entrepôt de manière à ce qu'il suggère automatiquement les articles à prélever qui expirent en premier.|[Activer le prélèvement par FEFO](warehouse-picking-by-fefo.md)|
 |Obtenir des conseils relatifs à la réorganisation des magasins, emplacements ou zones pour générer des activités entrepôt plus efficaces.|[Restructurer les entrepôts](warehouse-how-to-restructure-warehouses.md)|
-|Intégrez les lecteurs de code barres à votre solution de gestion d'entrepôt. Uniquement pour le déploiement sur site.|[Utilisation des systèmes de saisie automatisée (ADCS)](warehouse-use-automated-data-capture-systems-adcs.md)|
 |Spécifiez les rapports par défaut à utiliser pour différents types de documents.|[Sélection des rapports dans Business Central](across-report-selections.md)|
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/paths/set-up-warehouse-management/) associée
+## Voir la [formation Microsoft](/training/paths/set-up-warehouse-management/) associée
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi
 
-[Gestion d'entrepôt](warehouse-manage-warehouse.md)  
-[Stock](inventory-manage-inventory.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Gestion d'assemblage](assembly-assemble-items.md)  
-[Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 

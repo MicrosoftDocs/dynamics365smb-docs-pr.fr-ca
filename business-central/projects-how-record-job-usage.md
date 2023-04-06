@@ -6,16 +6,12 @@ ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: how-to
-ms.date: 12/20/2022
+ms.date: 03/08/2023
 ms.custom: bap-template
 ---
 # Enregistrer la consommation ou l′utilisation pour les projets
 
 À partir de la page **Fiche projet**, vous pouvez ouvrir la page **Lignes planification projet** pour examiner et enregistrer l’utilisation sur diverses composantes de votre projet. Ces informations sont automatiquement mises à jour lorsque vous modifiez et transférez des informations entre projets et entre journaux projet et factures projet. Cela nécessite que vous activiez le bouton à bascule **Appliquer le lien d’utilisation par défaut** sur la page **Configuration projet**. Learn more at [Configuration de projets](projects-how-setup-jobs.md).  
-
-<!-- Not really sure what this paragraph is saying, or why we start with it. Why do you transfer information between jobs and job journals or job invoices? I get the use of resources and items, but what about G/L account and Text?
-
-On the Jobs Setup page there's an Apply Usage Link by Default toggle. Guessing that's what we're referring to -->
 
 Par exemple, pour les lignes planification de type **Budget**, vous pouvez saisir la quantité d’une ressource, puis indiquer la quantité à transférer vers le journal projet. Si le type de la ligne planification est **Facturable**, vous pouvez saisir la quantité de la ressource, puis indiquer la quantité à transférer vers une facture. Pour en savoir plus sur la facturation du client, consultez [Facturation des projets](projects-how-invoice-jobs.md). En comparant la quantité d′origine, la quantité restante ou la quantité reportée, vous pouvez rapidement examiner les informations d′utilisation. Pour en savoir plus sur l’estimation des valeurs budgétées lors de la planification, consultez [Gérer les budgets de projets](projects-how-manage-budgets.md).  
 
@@ -28,11 +24,11 @@ Les procédures suivantes décrivent comment enregistrer les quantités (budgét
 3. Sélectionnez une ligne planning projet de type **Budget** ou **Budget et Facturable** pour laquelle vous voulez enregistrer une activité.   
 
     > [!NOTE]
-    > Vous pouvez également enregistrer l’utilisation d′une ligne planification projet de type **Facturable**. En général, vous utilisez ces lignes pour créer des factures, mais vous pouvez également transférer les informations vers un journal. Learn more at [Facturation des projets](projects-how-invoice-jobs.md) <!--However, when you do that, a job planning line of type **Budget** is created to match the billable line. For more information, see [Manage Job Budgets](projects-how-manage-budgets.md).-->
+    > Vous pouvez également enregistrer l’utilisation d′une ligne planification projet de type **Facturable**. En général, vous utilisez ces lignes pour créer des factures, mais vous pouvez également transférer les informations vers un journal. Learn more at [Facturation des projets](projects-how-invoice-jobs.md) 
 
 4. Dans le champ **Qté à transférer sur le journal**, entrez la quantité à transférer. La quantité par défaut est la même valeur que celle du champ **Quantité**.
 
-    Le champ **Quantité restante** indique la quantité qui reste pour terminer le projet et à transférer au journal. <!--Should we mention that this field is not shown by default, and that if they want to use it they must add it?--> 
+    Le champ **Quantité restante** indique la quantité qui reste pour terminer le projet et à transférer au journal.
 5. Choisissez l'action **Créer des lignes feuille projet**.
 
     > [!TIP]
@@ -40,6 +36,9 @@ Les procédures suivantes décrivent comment enregistrer les quantités (budgét
 6. Sur la page **Projet Transférer la ligne planification projet**, renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 7. Cliquez sur **Ouvrir la feuille projet**.  
 8. Sur la page **Journal projet**, sélectionnez la ligne appropriée, puis cliquez sur **Reporter**.
+
+    [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
+
 9. Sur la page **Lignes planification projet**, examinez l'utilisation enregistrée en observant les champs **Quantité**, **Quantité restante** et **Qté à transférer sur le journal**.  
 10. Répétez les phases 3 à 8 pour enregistrer l'utilisation supplémentaire.  
 
@@ -49,6 +48,8 @@ Les procédures suivantes décrivent comment enregistrer les quantités (budgét
 2. Dans le champ **Nom de la feuille**, choisissez un nom de feuille projet approprié.  
 3. Dans une nouvelle ligne, entrez le numéro de document, le numéro de projet, le numéro tâche projet, le type et la quantité du type consommé.  
 4. Lorsque les lignes feuilles projets sont renseignées, cliquez sur **Valider**.  
+
+    [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
 
 ## Pour visualiser les estimations projet et reporter les mises à jour
 

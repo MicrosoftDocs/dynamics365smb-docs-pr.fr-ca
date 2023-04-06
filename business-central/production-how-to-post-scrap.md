@@ -7,7 +7,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.form: 99000823
-ms.date: 04/01/2021
+ms.date: 03/08/2023
 ms.author: edupont
 ---
 # Reporter le rebut manuellement
@@ -24,6 +24,8 @@ Si le traitement produit un rebut, vous pouvez entrer ce rebut dans le journal d
 3. Dans le champ **Quantité rebutée**, saisissez la quantité perte.  
 4. Dans le champ **Code rebut**, saisissez le code rebut.  
 5. Choisissez l'action **Reporter** pour reporter le rebut spécifié par opération.  
+
+    [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]    
 
 ## Voir aussi
 

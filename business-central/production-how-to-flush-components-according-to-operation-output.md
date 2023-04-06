@@ -98,7 +98,7 @@ Par exemple, si un bon de production de 800 mètres nécessite pour son exécut
 6.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Nomenclature de production**, puis choisissez le lien associé.  
 7.  Associe aux codes lien itinéraire de chaque instance de la composante l'opération dans laquelle elle est consommée.
 
-La consommation sera reportée automatiquement lorsque vous enregistrez la sortie. Pour en savoir plus, voir [Reporter en lot la production et les temps d’exécution](production-how-to-post-output-quantity.md)
+La consommation sera reportée automatiquement lorsque vous enregistrez la sortie. Pour plus d’informations, voir [Reporter en lot la production et les temps d’exécution](production-how-to-post-output-quantity.md)
 
 ## Méthodes consommation
 

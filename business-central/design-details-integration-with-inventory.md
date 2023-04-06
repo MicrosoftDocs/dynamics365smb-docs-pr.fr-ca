@@ -6,20 +6,14 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.date: 06/15/2021
 ms.author: edupont
-ms.openlocfilehash: 58cb2222f2533e2ba952727243a5fdb830b34e75
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8145898"
 ---
-# <a name="design-details-integration-with-inventory"></a>Détails de conception : intégration avec l'inventaire
+# Détails de conception : intégration avec l'inventaire
 Les modules Warehouse Management et Inventaire interagissent dans l'inventaire physique et dans l'ajustement de l'inventaire ou de l'entrepôt.  
   
-## <a name="physical-inventory"></a>Inventaire physique  
+## Inventaire physique  
  La page **Journal inventaire physique entrepôt** est utilisée avec la page **Journal inventaire physique** pour tous les emplacements entrepôts avancés. L'inventaire au niveau de la zone est calculé, et une liste imprimée est donnée au magasinier. La liste indique les articles dans lesquels les emplacements doivent être comptabilisés.  
   
  L'employé d'entrepôt entre la quantité comptée sur la page **Journal inventaire physique entrepôt** puis reporte le journal.  
@@ -32,7 +26,7 @@ Les modules Warehouse Management et Inventaire interagissent dans l'inventaire p
   
  Lorsque vous reportez le journal inventaire physique, l'inventaire et la zone d'ajustement par défaut sont mis à jour.  
   
-### <a name="warehouse-adjustments-to-the-item-ledger"></a>Ajustements entrepôt dans le grand livre article  
+## Ajustements entrepôt dans le grand livre article  
  Vous utilisez la page **Journal article** et la fonction **Calculer ajustement entrepôt** pour ajuster l'inventaire dans le grand livre article conformément à un ajustement qui a été apporté sur la quantité d'un article dans une zone de stockage. Pour créer un lien entre l'inventaire et l'entrepôt, vous devez définir une zone d'ajustement par défaut par emplacement.  
   
  La zone d'ajustement par défaut enregistre les articles dans l'entrepôt lorsque vous reportez une augmentation dans l'inventaire. Toutefois, si vous reportez une diminution, la quantité sur la zone par défaut est également diminuée. Dans les deux cas, des écritures du grand livre d'articles et des écritures entrepôt sont créées.  
@@ -44,8 +38,8 @@ Les modules Warehouse Management et Inventaire interagissent dans l'inventaire p
   
  Si vous saisissez une quantité positive et reportez la ligne, l'inventaire enregistré dans la zone augmente, et la quantité de la zone d'ajustement par défaut diminue en conséquence.  
   
-## <a name="see-also"></a>Voir aussi  
- [Détails de conception : gestion d'entrepôt](design-details-warehouse-management.md)   
- [Détails de conception : disponibilité dans l'entrepôt](design-details-availability-in-the-warehouse.md)
+## Voir aussi  
+[Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)
+[Détails de conception : disponibilité dans l’entrepôt](design-details-availability-in-the-warehouse.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -41,6 +41,8 @@ La première étape du rangement de la production consiste à créer la demande 
 4. Renseignez les lignes rangement en fonction des besoins.
 5. Lorsque les lignes sont prêtes à être reportées, choisissez l'action **Reporter**. Les écritures entrepôt nécessaires sont alors créées et la production des articles est validée.  
 
+    [!INCLUDE [preview-posting-warehouse](includes/preview-posting-warehouse.md)]
+
 Vous pouvez également créer un **rangement inventaire** directement à partir du bon de production libéré. Pour en savoir plus, voir [Ranger des articles avec le rangement inventaire](warehouse-how-to-put-items-away-with-inventory-put-aways.md).  
 
 Lorsque vous reportez un rangement inventaire, il est supposé que toutes les opérations sont reportées selon l’itinéraire standard. C’est-à-dire que la quantité produite est reportée conformément à la dernière opération. Vous pouvez utiliser le journal production pour reporter les écarts de quantité produite et les temps d’exécution et de préparation. Si vous devez effectuer un report partiel après la création d’un rangement inventaire, vous pouvez le faire au niveau des temps de préparation et des quantités pour toutes les opérations, à l’exception de la dernière. La dernière opération est contrôlée par le rangement inventaire.  

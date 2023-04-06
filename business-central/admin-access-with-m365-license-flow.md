@@ -12,6 +12,8 @@ ms.search.keywords: 'License, access, Microsoft 365, collaborate, collaboration,
 ---
 # Flux d’accès utilisateur pour les licences Microsoft 365
 
+[!INCLUDE [2023rw1-sec-group-short](includes/2023rw1-sec-group-short.md)]
+
 Cet article décrit de ce qui se passe quand un utilisateur accède pour la première fois aux données de Business Central à l’aide de sa licence Microsoft 365. La compréhension de ce flux permet aux administrateurs de planifier leur approche et de configurer Business Central en fonction de leurs besoins métier.
 
 1. Tout d’abord, l’identité de l’utilisateur est authentifiée 

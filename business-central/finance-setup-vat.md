@@ -1,23 +1,18 @@
 ---
 title: Configuration de la TVA
-description: Assurez-vous de calculer, de reporter et de déclarer correctement la TVA pour les ventes et les achats. Il est recommandé d'utiliser le guide de configuration assistée pour configurer la TVA.
+description: 'Assurez-vous de calculer, de reporter et de déclarer correctement la TVA pour les ventes et les achats. Il est recommandé d''utiliser le guide de configuration assistée pour configurer la TVA.'
 author: brentholtorf
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: VAT, posting, tax, value-added tax
-ms.search.form: 10, 118, 391, 470, 471, 472, 575, 734, 747, 748, 1877,
-ms.date: 12/01/2022
+ms.search.keywords: 'VAT, posting, tax, value-added tax'
+ms.search.form: '10, 118, 391, 470, 471, 472, 575, 734, 747, 748, 1877,'
+ms.date: 01/31/2023
 ms.author: bholtorf
-ms.openlocfilehash: d401e6d9a0b8fb4f05bcc379322b2f81bfc03c57
-ms.sourcegitcommit: 12ff9dcbefb47f2280479cceb656ea7e6ac2cfa1
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 12/02/2022
-ms.locfileid: "9822425"
 ---
-# <a name="set-up-calculations-and-posting-methods-for-value-added-tax"></a>Configurer des méthodes de calcul et de report de la taxe sur la valeur ajoutée
+
+# Configurer des méthodes de calcul et de report de la taxe sur la valeur ajoutée
 
 Les clients et les entreprises payent la TVA lorsqu'ils achètent des biens ou des services. Le montant de la TVA à payer peut varier en fonction de plusieurs facteurs. Dans [!INCLUDE[prod_short](includes/prod_short.md)], vous configurez la TVA pour spécifier les taux à utiliser pour calculer les montants de taxe sur la base des paramètres suivants :
 
@@ -32,7 +27,7 @@ Cependant, si vous souhaitez configurer vous-même les calculs de TVA, ou en sav
 
 [!INCLUDE [finance-vat](includes/finance-vat.md)]
 
-## <a name="set-up-vat-using-the-assisted-setup-guide-recommended"></a>Utiliser le guide Configuration de la TVA pour paramétrer la TVA (recommandé)
+## Utiliser le guide Configuration de la TVA pour paramétrer la TVA (recommandé)
 
 > [!NOTE]
 > Vous pouvez utiliser le guide **Configuration de la TVA** uniquement si vous avez créé un profil *Ma compagnie*, et si vous n’avez pas encore reporté de transactions incluant la TVA.
@@ -43,7 +38,7 @@ Pour démarrer le guide de configuration assistée, procédez comme suit :
 2. Choisissez **Configurer la taxe sur la valeur ajoutée (TVA)** et finalisez la procédure.
 3. Une fois la configuration assistée terminée, visitez la page **Configuration report TVA** et vérifiez si vous devez renseigner d’autres champs en fonction des exigences locales de votre version de [!INCLUDE [prod_short](includes/prod_short.md)]. En savoir plus sur [Fonctionnalités locales dans Business Central](about-localization.md).  
 
-### <a name="check-the-vat-posting-setup"></a>Vérifier la configuration du report TVA
+### Vérifier la configuration du report TVA
 
 Pour vous aider à démarrer rapidement, [!INCLUDE [prod_short](includes/prod_short.md)] affiche des notifications s’il vous manque des comptes du grand livre (GL) dans les groupes de report ou les configurations de report, par exemple la page **Configuration report TVA**. Vous pouvez activer ou désactiver ce type de notification à l’aide de la notification *Compte GL manquant dans le groupe de report ou la configuration* de la page **Mes notifications**. Il vous suffit d’accéder à la page **Mes paramètres**, puis de choisir *Modifier lorsque je reçois des notifications*. .  
 
@@ -51,7 +46,8 @@ Si vous choisissez une telle notification, [!INCLUDE [prod_short](includes/prod_
 
 À ce stade, vous pouvez simplement remplir les comptes GL manquants. Mais, plus tard, lorsque vous affinez davantage la configuration, il est possible que vous réalisiez que cette configuration initiale n’est pas correcte. Et [!INCLUDE [prod_short](includes/prod_short.md)] n’autorise pas la suppression de la configuration du report TVA et de la configuration report général lorsqu’il existe des écritures créées à partir de telles configurations. À partir de la 1re vague de lancement 2022, vous pouvez utiliser le champ **Bloqué** sur la page **Configuration report TVA** pour empêcher les utilisateurs d’utiliser par erreur une configuration qui n’est plus pertinente pour les nouveaux reports.
 
-## <a name="set-up-a-default-vat-date-for-documents-and-journals"></a>Configurer une date de TVA par défaut pour les documents et les journaux
+## Configurer une date de TVA par défaut pour les documents et les journaux
+
 La déclaration de TVA dans [!INCLUDE [prod_short](includes/prod_short.md)] est basée sur la **Date de TVA** pour inclure les écritures de TVA sur les déclarations de TVA dans une période de TVA. La date de TVA peut être modifiée sur tous les documents et journaux, mais vous devez spécifier une valeur par défaut pour la date de TVA.
 
 > [!NOTE]
@@ -66,13 +62,69 @@ Pour configurer une valeur par défaut pour une date de TVA, procédez comme sui
 > [!NOTE]
 > Par défaut, la **Date de TVA par défaut** est la **Date de report**.
 
-## <a name="set-up-vat-registration-numbers-for-your-country-or-region"></a>Configurer les numéros d’identification intracommunautaire pour votre pays ou région
+### Activation ou désactivation de la fonctionnalité Date de TVA
+
+Certains pays exigent que les entreprises utilisent une date de TVA spécifique, mais d’autres pays ne le font pas. Certains pays exigent également que les entreprises modifient la date de TVA dans des situations spécifiques après avoir reporté des documents, mais d’autres pays n’autorisent pas les modifications des dates de TVA. Pour tenir compte de différents contextes, vous pouvez choisir si vous souhaitez utiliser cette fonctionnalité et, si oui, dans quelle mesure.
+
+Pour configurer le niveau d’utilisation de la date de TVA, procédez comme suit :
+
+1. Sélectionnez l’icône en forme ![d’Ampoule qui ouvre la fenêtre de recherche 1.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") et entrez **Configuration du grand livre**, puis choisissez le lien associé.  
+2. Dans le raccourci **Général**, dans le champ **Utilisation de la date de TVA**, spécifiez le degré auquel vous souhaitez utiliser le Fonction de date de TVA. Choisissez l’une des options suivantes :
+
+| Type | Désignation |
+|--------------------|-----------------------------------------|
+| **Utilisez la fonctionnalité complète de date TVA** | Tout ce qui concerne la **date de TVA** fonctionne par défaut, vous offrant la fonctionnalité maximale de **date de TVA**. Vous pouvez configurer la date, la modifier dans les documents, créer un rapport en fonction de celle-ci et modifier la date après la publication tant que la période n’est pas fermée ou protégée par des dates autorisées pour le report. |
+| **Utilisation sans autorisation des modifications** | Tout ce qui concerne la **date de TVA** fonctionne par défaut à une exception près. Vous ne pouvez pas modifier la **date de TVA** dans **les entrées de TVA**. |
+| **N’utilisant pas la fonctionnalité de date TVA** | [!INCLUDE [prod_short](includes/prod_short.md)] masquera et rendra les champs **Date de TVA** indisponibles sur les documents, les journaux et les écritures. La **date de TVA par défaut** sera configurée comme la **date de report**. |
+
+3. Fermez la page.
+
+> [!IMPORTANT]
+> Même si vous choisissez l’option **N’utilisant pas la fonctionnalité de date de TVA**, [!INCLUDE [prod_short](includes/prod_short.md)] utilisera la **date de TVA** en arrière-plan. Parce que la **date de TVA par défaut** est configurée comme la **date de report**, et vous ne pouvez pas la modifier dans ce cas, vous bénéficierez de la même expérience que sans cette fonctionnalité. **Les champs Date de TVA** seront supprimés de toutes les pages, mais ce champ existera toujours dans les tableaux et les rapports fonctionneront en fonction de celui-ci.
+
+### Limitation des délais de report et de modification de la date de TVA
+
+Vous pouvez empêcher les personnes de reporter ou de modifier des entrées de TVA dans des plages de dates spécifiques. Vous définissez la restriction à l’aide de deux paramètres :
+
+* Basé sur une **Période de déclaration de TVA fermée**
+* Basé sur les champs **Début période report** et **Fin période report**.
+
+#### Pour limiter le report en fonction de la période de déclaration de TVA
+
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 1.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Paramètres comptables généraux**, puis sélectionnez le lien associé.  
+2. Dans le raccourci **Général**, dans le champ **Contrôler période TVA**, spécifiez le degré de contrôle de la période de déclaration de TVA. Le tableau suivant décrit les options.
+
+| Type | Désignation |
+|--------------------|-----------------------------------------|
+| **Bloquer le report dans une période fermée et avertir pour la période libérée** | Empêchez les personnes de reporter un document ou un journal, ou de modifier des écritures de TVA, dont la date de TVA se situe dans une **Période de retour TVA** fermée. [!INCLUDE [prod_short](includes/prod_short.md)] affichera également un avertissement si votre **Période de déclaration de TVA** est ouverte, mais l’état de **déclaration de TVA** est **Libéré** ou **Soumis**. |
+| **Bloquer le report dans une période fermée** | Empêchez les personnes de reporter un document ou un journal, ou de modifier des écritures de TVA, dont la date de TVA se situe dans la **Période de retour TVA** fermée. |
+| **Avertir en cas de report dans une période fermée** | Affichez un avertissement, mais ne bloquez pas le report si vous souhaitez reporter un document ou un journal dont la date de TVA est comprise dans une **Période de retour TVA** fermée. |
+| **Désactivé** | N’entreprenez aucune action basée sur une **Période de retour TVA** fermée. |
+
+#### Pour limiter le report en fonction de la période Autoriser de/à
+
+Vous pouvez définir une limitation au niveau de la compagnie ou des niveaux d’utilisateurs spécifiques.
+
+Pour limiter tous les reports pour l’ensemble de l’entreprise :
+
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 1.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Paramètres comptables généraux**, puis sélectionnez le lien associé.  
+2. Sur le raccourci **Général**, dans le champ **Début période report**, spécifiez la date de la TVA à partir de laquelle vous effectuez le report. Le report d’un document ou d’un journal avec une date de TVA antérieure à cette date n’est pas autorisé.  
+3. Sur le raccourci **Général**, dans le champ **Fin période report**, spécifiez la date de la TVA jusqu’à laquelle vous effectuez le report. Le report d’un document ou d’un journal avec une date de TVA ultérieure à cette date n’est pas autorisé.
+
+Pour limiter les reports d’un utilisateur spécifique :
+
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 1.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration utilisateur**, puis choisissez le lien associé.  
+2. Dans le champ **Code utilisateur**, spécifiez l’utilisateur que vous souhaitez autoriser à reporter au cours d’une période spécifique.  
+3. Dans le champ **Début période report**, spécifiez la date de la TVA à partir de laquelle vous effectuez le report. Le report d’un document ou d’un journal avec une date de TVA antérieure à cette date n’est pas autorisé.
+4. Dans le champ **Fin période report**, spécifiez la date de la TVA jusqu’à laquelle vous effectuez le report. Le report d’un document ou d’un journal avec une date de TVA ultérieure à cette date n’est pas autorisé.
+
+## Configurer les numéros d’identification intracommunautaire pour votre pays ou région
 
 Pour garantir que les personnes entrent des numéros d’identification intracommunautaire valides, vous pouvez définir des formats pour les numéros d’identification intracommunautaire utilisés dans des pays ou des régions dans lesquels vous travaillez. [!INCLUDE[prod_short](includes/prod_short.md)] affichera un message d’erreur lorsqu’un employé fait une erreur ou utilise un format incorrect pour le pays ou la région.
 
 Pour configurer des numéros d'identification intracommunautaire, procédez comme suit :
 
-1. Sélectionnez l’icône en forme ![d’Ampoule qui ouvre la fenêtre de recherche 2.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Pays/Régions**.
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 2.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Pays/Régions**.
 2. Choisissez le pays ou la région, puis sélectionnez l'action **Formats N° d'inscription TPS/TVH**.
 3. Dans le champ **Formats**, définissez le format en saisissant un ou plusieurs des caractères suivants :  
 
@@ -81,9 +133,9 @@ Pour configurer des numéros d'identification intracommunautaire, procédez comm
 * **?** Tout caractère est autorisé.  
 
     > [!TIP]
-    > Vous pouvez utiliser d'autres caractères tant qu'ils sont présents dans le format du pays ou de la région. Par exemple, si vous souhaitez inclure un point ou un trait d’union entre des séries de chiffres, vous pouvez définir le format sous la forme ##.####.### ou @@-###-###.  
+    > Vous pouvez utiliser d'autres caractères tant qu'ils sont présents dans le format du pays ou de la région. Par exemple, si vous souhaitez inclure un point ou un trait d’union entre des séries de chiffres, vous pouvez définir le format sous la forme ##.####.### or @@-###-###.  
 
-## <a name="set-up-vat-business-posting-groups"></a>Configurer des groupes de report marché TVA
+## Configurer des groupes de report marché TVA
 
 Les groupes de report marché TVA doivent représenter les marchés dans lesquels vous faites des affaires avec les clients et fournisseurs, et définissent comment calculer et reporter la TVA dans chaque marché. Des exemples de groupes comptabilisation marché TVA sont **France** et **Union Européenne (UE)**.  
 
@@ -96,7 +148,7 @@ Pour configurer un groupe de report marché TVA, procédez comme suit :
 
 Vous pouvez paramétrer des groupes de report marché TVA par défaut en les liant à des groupes de report marché généraux. [!INCLUDE[prod_short](includes/prod_short.md)] affecte automatiquement le groupe comptabilisation marché TVA lorsque vous affectez le groupe comptabilisation marché à un client, un fournisseur ou un compte général.
 
-## <a name="set-up-vat-product-posting-groups"></a>Configurer des groupes comptabilisation produit TVA
+## Configurer des groupes comptabilisation produit TVA
 
 Les groupes de report produit TVA représentent les articles et les ressources que vous achetez ou vendez et déterminent la manière de calculer et de reporter la TVA en fonction du type d’article ou de ressource.
 
@@ -104,10 +156,10 @@ Il est recommandé d’utiliser des codes faciles à retenir et qui décrivent l
 
 Pour configurer un groupe de report marché TVA, procédez comme suit :
 
-1. Sélectionnez l’![icône en forme d’ampoule qui ouvre la fonction Tell Me 4.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Groupes de report produit TVA**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 4.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Groupes de report produit TVA**, puis choisissez le lien associé.  
 2. Renseignez les champs selon vos besoins.
 
-## <a name="combine-vat-posting-groups-in-vat-posting-setups"></a>Regrouper des groupes de report TVA dans les configurations report de taxe
+## Regrouper des groupes de report TVA dans les configurations report de taxe
 
 [!INCLUDE[prod_short](includes/prod_short.md)] calcule les montants de TVA sur les ventes et les achats en fonction des paramètres comptabilisation TVA, qui sont des combinaisons de groupes comptabilisation marché et produit TVA. Pour chaque combinaison, vous pouvez spécifier le pourcentage de TVA, le mode calcul TVA et les comptes du grand livre pour le report de la TVA pour les achats, les ventes, ainsi que les frais renversés. Vous pouvez également spécifier si la TVA doit être recalculée lorsqu'un escompte de paiement est affecté ou reçu.  
 
@@ -115,10 +167,10 @@ Définissez autant de combinaisons que nécessaire. Si vous voulez regrouper des
 
 Pour regrouper des configurations report TVA, procédez comme suit :
 
-1. Sélectionnez l’![icône en forme d’ampoule qui ouvre la fonction Tell Me 5.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration report TVA**, puis choisissez le lien associé.
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 5.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration report TVA**, puis choisissez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]
 
-## <a name="assign-vat-posting-groups-by-default-to-multiple-entities"></a>Affecter des groupes comptabilisation TVA par défaut à plusieurs entités
+## Affecter des groupes comptabilisation TVA par défaut à plusieurs entités
 
 Si vous souhaitez appliquer les mêmes groupes comptabilisation TVA à plusieurs entités, vous pouvez configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour le faire par défaut. Plusieurs méthodes sont disponibles :
 
@@ -127,33 +179,33 @@ Si vous souhaitez appliquer les mêmes groupes comptabilisation TVA à plusieurs
 
 Le groupe de report marché ou produit TVA est affecté lorsque vous choisissez un groupe de report marché ou produit pour un client, un fournisseur, un article ou une ressource.
 
-## <a name="assign-vat-posting-groups-to-accounts-customers-vendors-items-and-resources"></a>Affecter des groupes de report TVA à des comptes, clients, fournisseurs, articles et ressources
+## Affecter des groupes de report TVA à des comptes, clients, fournisseurs, articles et ressources
 
 Les sections suivantes décrivent comment affecter des groupes comptabilisation TVA à des entités individuelles.
 
-### <a name="to-assign-vat-posting-groups-to-individual-general-ledger-accounts"></a>Pour affecter des groupes comptabilisation TVA à des comptes généraux individuels
+### Pour affecter des groupes comptabilisation TVA à des comptes généraux individuels
 
-1. Sélectionnez l’![icône en forme d’ampoule qui ouvre la fonction Tell Me 6.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Plan comptable**, puis sélectionnez le lien associé.  
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 6.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Plan comptable**, puis sélectionnez le lien associé.  
 2. Ouvrez la fiche **Compte général** pour le compte.  
 3. Sous le raccourci **Comptabilisation**, dans le champ **Type compta. TVA**, choisissez **Vente** ou **Achat**.  
 4. Choisissez les groupes comptabilisation TVA à utiliser pour le compte vente ou achat.  
 
-### <a name="to-assign-vat-business-posting-groups-to-customers-and-vendors"></a>Pour affecter des groupes comptabilisation marché TVA à des clients et des fournisseurs
+### Pour affecter des groupes comptabilisation marché TVA à des clients et des fournisseurs
 
-1. Sélectionnez l’![icône en forme d’ampoule qui ouvre la fonction Tell Me 7.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Client** ou **Fournisseur**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 7.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Client** ou **Fournisseur**, puis choisissez le lien associé.  
 2. Sur la fiche **Client** ou **Fournisseur**, développez le raccourci **Facturation**.  
 3. Choisissez le groupe de report marché TVA.  
 
-### <a name="to-assign-vat-product-posting-groups-to-individual-items-and-resources"></a>Pour affecter des groupes comptabilisation produit TVA à des articles et des ressources individuels
+### Pour affecter des groupes comptabilisation produit TVA à des articles et des ressources individuels
 
-1. Sélectionnez l’![icône en forme d’ampoule qui ouvre la fonction Tell Me 8.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Article** ou **Ressource**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 8.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Article** ou **Ressource**, puis choisissez le lien associé.  
 2. Exécutez l'une des opérations suivantes :  
 
     * Sur la fiche **Article**, développez le raccourci **Prix et validation**, puis sélectionnez **Afficher plus** pour afficher le champ **Groupe compta. produit TVA**.  
     * Sur la fiche **Ressource**, développez le raccourci **Facturation**.  
 3. Choisissez le groupe de report produit TVA.  
 
-## <a name="set-up-clauses-to-explain-vat-exemption-or-non-standard-vat-rates"></a>Configurer des clauses pour expliquer l’exonération de TVA ou les taux de TVA non standard
+## Configurer des clauses pour expliquer l’exonération de TVA ou les taux de TVA non standard
 
 Vous configurez une clause TVA afin de décrire le type utilisation de TVA qui est appliquée. Les informations peuvent être requises par des réglementations gouvernementales. Après avoir configuré une clause TVA et l'avoir associée à une configuration report TVA, la clause TVA est affichée sur les documents vente imprimés qui utilisent le groupe de configuration report TVA.
 
@@ -163,9 +215,9 @@ Lorsque des taux de TVA non standard sont utilisés dans différents types de do
 
 Vous pouvez modifier ou supprimer une clause TVA, et les modifications que vous apportez seront visibles dans un rapport généré. Toutefois, [!INCLUDE[prod_short](includes/prod_short.md)] ne crée pas d'historique des modifications. Sur le rapport, les descriptions des clauses TVA sont imprimées et affichées pour toutes les lignes du rapport à côté du montant de la TVA et du montant de base de la TVA. Si aucune clause TVA n'a été définie pour les lignes du document vente, la totalité de la section est omise lors de l'impression du rapport.
 
-### <a name="to-set-up-vat-clauses"></a>Pour configurer des clauses TVA
+### Pour configurer des clauses TVA
 
-1. Sélectionnez l’![icône en forme d’ampoule qui ouvre la fonction Tell Me 9.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clauses TVA**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 9.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clauses TVA**, puis choisissez le lien associé.  
 2. Sur la page **Clauses TVA**, créez une ligne.  
 3. Dans le champ **Code**, entrez un identificateur pour la clause. Vous utilisez ce code pour affecter la clause à des groupes comptabilisation TVA.  
 4. Dans le champ **Description**, saisissez le texte d'exonération de TVA que vous souhaitez afficher sur les documents pouvant inclure la TVA. Dans le champ **Description 2**, entrez du texte supplémentaire, si nécessaire. Le texte sera affiché sur de nouvelles lignes.
@@ -174,24 +226,24 @@ Vous pouvez modifier ou supprimer une clause TVA, et les modifications que vous 
 7. Facultatif : pour affecter immédiatement la clause TVA à une configuration report TVA, sélectionnez **Configuration**, puis choisissez la clause. Si vous souhaitez attendre, vous pouvez affecter la clause ultérieurement sur la page **Configuration report TVA**.  
 8. Facultatif : pour spécifier comment traduire la clause TVA, sélectionnez l'action **Traductions**.
 
-### <a name="to-assign-a-vat-clause-to-a-vat-posting-setup"></a>Pour affecter une clause TVA à une configuration report TVA
+### Pour affecter une clause TVA à une configuration report TVA
 
-1. Sélectionnez l’![icône en forme d’ampoule qui ouvre la fonction Tell Me 10.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration report TVA**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 10.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration report TVA**, puis choisissez le lien associé.  
 2. Dans la colonne **Clause TVA**, choisissez la clause à utiliser pour chaque paramètre comptabilisation TVA auquel elle s'applique.  
 
-### <a name="to-specify-translations-for-vat-clauses"></a>Pour spécifier des traductions pour les clauses TVA
+### Pour spécifier des traductions pour les clauses TVA
 
 1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 11.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clauses TVA**, puis choisissez le lien associé.  
 2. Sélectionnez l'option **Traductions**.  
 3. Dans le champ **Code langue**, sélectionnez la langue de traduction.  
 4. Dans les champs **Description** et **Description 2**, saisissez les traductions des descriptions. Ce texte s'affiche dans les documents rapport de TVA traduits.  
 
-### <a name="to-specify-extended-text-for-vat-clauses"></a>Pour spécifier le texte étendu pour les clauses TVA
+### Pour spécifier le texte étendu pour les clauses TVA
 
 > [!NOTE]  
 > Si votre pays ou votre région requiert un texte plus long pour les clauses de TVA que celui pris en charge par la version par défaut, vous pouvez spécifier le texte plus long pour les clauses de TVA comme suit *texte étendu* afin qu'il s'imprime sur les rapports de ventes et d'achats.  
 
-1. Sélectionnez l’![icône en forme d’ampoule qui ouvre la fonction Tell Me 11.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clauses TVA**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 11.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clauses TVA**, puis choisissez le lien associé.  
 2. Choisissez l’action **Textes étendus**.  
 3. Sélectionnez l'action **Nouveau**.  
 4. Renseignez les champs **Code langue** et **Description**.  
@@ -201,20 +253,20 @@ Vous pouvez modifier ou supprimer une clause TVA, et les modifications que vous 
 8. Cochez les champs appropriés pour les types de documents où vous souhaitez imprimer le texte étendu.  
 9. Fermez la page.  
 
-## <a name="create-a-vat-posting-setup-to-handle-import-vat"></a>Créer une configuration report TVA pour traiter la TVA à l'importation
+## Créer une configuration report TVA pour traiter la TVA à l'importation
 
 Utilisez la fonction *TVA à l’importation* pour reporter un document dont le montant entier est TVA. Elle est utile lorsque vous recevez une facture des autorités fiscales pour la TVA sur les biens importés.  
 
 Pour configurer des codes pour la TVA à l'importation, procédez comme suit :  
 
-1. Sélectionnez l’![icône en forme d’ampoule qui ouvre la fonction Tell Me 12.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Groupes de report produit TVA**, puis choisissez le lien associé.  
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 12.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Groupes de report produit TVA**, puis choisissez le lien associé.  
 2. Sur la page Groupes de report produit TVA, configurez un groupe de report produit TVA pour la TVA à l'importation.  
-3. Sélectionnez l’![icône en forme d’ampoule qui ouvre la fonction Tell Me 13.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration report TVA**, puis choisissez le lien associé.  
+3. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 13.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration report TVA**, puis choisissez le lien associé.  
 4. Sur la page Configuration report de taxe, créez une ligne ou utilisez un groupe report marché TVA existant en combinaison avec le nouveau groupe report produit TVA créé pour la TVA à l'importation.  
 5. Dans le champ **Mode calcul TVA**, sélectionnez **Exclusivement TVA**.  
 6. Dans le champ **Compte TVA achat**, indiquez le compte général à utiliser pour valider la TVA à l'importation. Tous les autres comptes sont facultatifs.  
 
-## <a name="use-reverse-charge-vat-for-trade-between-eu-countries-or-regions"></a>Utiliser des frais inversés TVA pour les échanges entre pays/régions de l’UE
+## Utiliser des frais inversés TVA pour les échanges entre pays/régions de l’UE
 
 Certaines compagnies doivent utiliser des frais renversés TVA dans leurs échanges avec d'autres compagnies. Par exemple, cette règle s’applique aux achats effectués dans des pays/régions de l’Union européenne et les ventes aux pays/régions de l’Union européenne.  
 
@@ -224,7 +276,7 @@ Certaines compagnies doivent utiliser des frais renversés TVA dans leurs échan
 > [!TIP]  
 > Vous pouvez vérifier qu'une compagnie est enregistrée comme assujettie à la TVA dans un autre pays de l'UE en utilisant le service de validation des numéros d'inscription de TVA de l'UE. Le service est disponible gratuitement dans [!INCLUDE[prod_short](includes/prod_short.md)]. Pour plus d’informations, consultez [Vérifier les numéros d’identification intracommunautaire](finance-how-validate-vat-registration-number.md).
 
-### <a name="sales-to-eu-countries-or-regions"></a>Ventes dans des pays/régions de l'UE
+### Ventes dans des pays/régions de l'UE
 
 La TVA n'est pas calculée sur les ventes à des compagnies assujetties à la TVA situées dans d'autres pays/régions de l'UE. Vous devez déclarer la valeur de ces ventes aux pays/régions de l'UE séparément sur votre relevé fiscal.  
 
@@ -240,19 +292,19 @@ Si vous souhaitez utiliser la combinaison du groupe de report marché TVA et du 
 > [!NOTE]  
 > Le champ **Service UE** s’applique uniquement aux rapports de TVA. Ce champ n’est pas associé aux fonctionnalités **Déclaration de service** ni **Intrastat pour les services**.
 
-## <a name="vat-rounding-for-documents"></a>Arrondissement TVA pour les documents
+## Arrondissement TVA pour les documents
 
 Les montants figurant dans les documents qui n'ont pas encore été reportés sont arrondis et affichés de façon à correspondre à l'arrondissement final des montants réellement reportés. La TVA est calculée pour un document terminé, ce qui signifie que la TVA calculée est basée sur la somme de toutes les lignes ayant le même identificateur TVA dans le document.  
 
-## <a name="set-up-vat-reporting"></a>Configurer la déclaration TVA
+## Configurer la déclaration TVA
 
 Vous devez configurer des informations sur la façon dont les autorités fiscales de votre pays/région exigent que vous soumettiez des déclarations de TVA. Les étapes suivantes illustrent les informations les plus couramment utilisées. Cependant, votre pays/région peut nécessiter des autres étapes. Pour plus d’informations, consultez l’article correspondant dans la section *Fonctionnalité locale* du volet de gauche.
 
 [!INCLUDE [vat-report-setup](includes/vat-report-setup.md)]
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/paths/process-vat-dynamics-365-business-central/) associée
+## Voir la [formation Microsoft](/training/paths/process-vat-dynamics-365-business-central/) associée
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configurer des modèles de relevé fiscal et des noms de relevé fiscal](finance-how-setup-vat-statement.md)  
 [Configurer la TVA non réalisée](finance-setup-unrealized-vat.md)  

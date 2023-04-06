@@ -17,7 +17,7 @@ Il arrive qu'un report de production doive être inversé. C'est le cas, par exe
 ## Pour inverser un report de production
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal de sortie**, puis choisissez le lien associé. Sélectionnez votre lot.  
-2. Renseignez les champs selon vos besoins. Pour en savoir plus, voir [Reporter en lot la production et les temps d’exécution](production-how-to-post-output-quantity.md).
+2. Renseignez les champs selon vos besoins. Pour plus d’informations, voir [Reporter en lot la production et les temps d’exécution](production-how-to-post-output-quantity.md).
 3. Dans le champ **Écriture de référence**, sélectionnez l'écriture article associée. Cette opération inverse les écritures capacité et du grand livre d'articles.  
 4. Reportez la contrepassation en reportant le journal.  
 

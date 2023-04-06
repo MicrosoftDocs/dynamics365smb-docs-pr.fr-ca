@@ -1,22 +1,17 @@
 ---
-title: 'Message d’erreur : « La date de report n’est pas incluse dans la plage de dates de report autorisées »'
-description: 'Résolvez l’erreur sous-jacente au message « La date de report n’est pas incluse dans la plage de dates de report autorisées » lorsque vous exécutez le traitement en lot Ajuster coûts : Écr. article.'
+title: "Message d’erreur\_: «\_La date de report n’est pas incluse dans la plage de dates de report autorisées\_»"
+description: "Résolvez l’erreur sous-jacente au message «\_La date de report n’est pas incluse dans la plage de dates de report autorisées\_» lorsque vous exécutez le traitement en lot Ajuster coûts\_: Écr. article."
 author: edupont04
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: ''
+ms.search.keywords: null
 ms.date: 09/17/2021
 ms.author: edupont
-ms.openlocfilehash: 1694bc0267e32d2af4af1202b2dfd1ad4b46ba55
-ms.sourcegitcommit: ef80c461713fff1a75998766e7a4ed3a7c6121d0
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "8139765"
 ---
-# <a name="error-message-posting-date-is-not-within-your-range-of-allowed-posting-dates"></a>Message d’erreur : « La date de report n’est pas incluse dans la plage de dates de report autorisées... »
+
+# Message d’erreur : « La date de report n’est pas incluse dans la plage de dates de report autorisées... »
 
 Lors de l’utilisation du traitement en lot **Ajuster coûts : Écr. article**, vous pouvez rencontrer le message d’erreur suivant :
 
@@ -24,7 +19,7 @@ Lors de l’utilisation du traitement en lot **Ajuster coûts : Écr. article**
 
 Ce message d’erreur indique que l’utilisateur n’est pas autorisé à reporter des écritures pour la date en question, et cela peut être résolu en modifiant la configuration utilisateur.
 
-## <a name="change-the-user-setup"></a>Modifier la configuration utilisateur  
+## Modifier la configuration utilisateur  
 
 |Code utilisateur  |Début période report  | Fin période report  |
 |---------|---------|--------|
@@ -32,9 +27,9 @@ Ce message d’erreur indique que l’utilisateur n’est pas autorisé à repor
 
 L’utilisateur dans ce cas a une plage de dates de report autorisées allant du 11 au 30 septembre et n’est donc pas autorisé à reporter l’écriture valeur d’ajustement avec la date de report du 10 septembre.  
 
-### <a name="overview-of-involved-posting-date-setup"></a>Aperçu de la configuration de la date de report impliquée
+### Aperçu de la configuration de la date de report impliquée
 
-#### <a name="inventory-periods"></a>Périodes d'inventaire
+#### Périodes d'inventaire
 
 |Date de fin  |Nom  |Fermé  |
 |---------|---------|---------|
@@ -51,7 +46,7 @@ L’utilisateur dans ce cas a une plage de dates de report autorisées allant du
 |2020/11/30     |Novembre 2020   |         |
 |2020/12/31     |Décembre 2020   |         |  
 
-#### <a name="general-ledger-setup"></a>Configuration du grand livre
+#### Configuration du grand livre
 
 |Champ|Valeur|
 |---------|---------|
@@ -60,7 +55,7 @@ L’utilisateur dans ce cas a une plage de dates de report autorisées allant du
 |Registre temps :       |         |
 |Format adresse local :|   Code postal      |  
 
-#### <a name="user-setup"></a>Configuration utilisateur
+#### Configuration utilisateur
 
 |Code utilisateur  |Début période report  | Fin période report  |
 |---------|---------|--------|
@@ -68,7 +63,7 @@ L’utilisateur dans ce cas a une plage de dates de report autorisées allant du
 
 En attribuant une plage de dates de report autorisée plus large que dans la période d'inventaire ou la configuration du grand livre, il devient possible d’éviter le conflit à l’origine du message d’erreur. L’écriture valeur d’ajustement avec la date de report du 10 septembre sera reportée avec succès avec cette configuration.
   
-## <a name="see-also"></a>Voir aussi  
+## Voir aussi  
 
 [Détails de conception : date de report de l'écriture valeur d'ajustement](design-details-inventory-adjustment-value-entry-posting-date.md)  
 [Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)  
