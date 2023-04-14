@@ -1,20 +1,20 @@
 ---
 title: Tolérance de règlement et tolérance d’escompte de paiement
-description: Vous pouvez configurer la tolérance de règlement de manière à fermer une facture lorsque le paiement ne couvre pas entièrement le montant de la facture.
+description: Cet article explique comment configurer la tolérance de règlement de manière à fermer une facture lorsque le paiement ne couvre pas entièrement le montant de la facture.
 author: SorenGP
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.form: '118, 314, 395'
-ms.date: 10/29/2021
+ms.date: 04/03/2023
 ms.author: edupont
 ---
 # Utilisation des tolérances de règlement et des tolérances d'escompte de paiement
 
-Vous pouvez configurer une tolérance de règlement de manière à fermer une facture lorsque le paiement ne couvre pas entièrement le montant de la facture. Par exemple, les tolérances de règlement concernent généralement de petits montants qui coûteraient plus cher à corriger qu'à simplement accepter. Vous pouvez configurer une tolérance d'escompte de paiement pour accorder un escompte de paiement après expiration de la date d'escompte de paiement.  
+Vous pouvez configurer la tolérance de règlement de manière à fermer une facture lorsque le paiement ne couvre pas entièrement le montant de la facture. Par exemple, les tolérances de règlement concernent généralement de petits montants qui coûteraient plus cher à corriger qu'à simplement accepter. Vous pouvez configurer une tolérance d'escompte de paiement pour accorder un escompte de paiement après expiration de la date d'escompte de paiement.  
 
-Vous pouvez utiliser les tolérances de règlement pour qu'une tolérance de règlement maximum autorisée soit définie pour chaque montant restant dû. Si la tolérance de règlement est respectée, le montant règlement est analysé. Si le montant règlement est un moins-perçu, alors le montant en commande est totalement fermé par le moins-perçu. Une écriture détaillée est reportée dans l'écriture règlement de sorte qu'il ne subsiste aucun montant ouvert dans l'écriture facture affectée. Si le montant règlement est un trop-perçu, alors une nouvelle écriture détaillée est reportée dans l'écriture règlement de sorte qu'il ne subsiste aucun montant ouvert dans l'écriture règlement.
+Vous pouvez utiliser les tolérances de règlement pour qu’une tolérance de règlement maximum autorisée soit définie pour chaque montant en commande. Si la tolérance de règlement est remplie, le montant règlement est analysé. Si le montant règlement est un moins-perçu, alors le montant en commande est totalement fermé par le moins-perçu. Une écriture détaillée est reportée dans l'écriture règlement de sorte qu'il ne subsiste aucun montant ouvert dans l'écriture facture affectée. Si le montant règlement est un trop-perçu, alors une nouvelle écriture détaillée est reportée dans l'écriture règlement de sorte qu'il ne subsiste aucun montant ouvert dans l'écriture règlement.
 
 Vous pouvez utiliser des tolérances d'escompte de paiement au cas où vous accepteriez un escompte de paiement après la date d'escompte de paiement. Il sera alors toujours reporté dans le compte escompte de paiement ou dans un compte tolérance de règlement.
 
@@ -66,6 +66,9 @@ Pour configurer l'écart, vous devez configurer plusieurs comptes écart, spéci
 > Pour désactiver la tolérance pour un client ou un fournisseur, bloquez les tolérances sur la fiche client ou fournisseur correspondante. Pour plus d'informations, voir [Pour bloquer la tolérance de règlement pour des clients](finance-payment-tolerance-and-payment-discount-tolerance.md#to-block-payment-tolerance-for-customers).  
 >   
 > Lorsque vous configurez une tolérance, [!INCLUDE[prod_short](includes/prod_short.md)] vérifie s'il existe des écritures ouvertes et calcule la tolérance pour ces écritures.
+
+> [!IMPORTANT]  
+> Lorsque vous activez le champ **Ajuster pour escompte de paiement** sur la page **Configuration report TVA**, le montant de la TVA est pris en compte puisqu’il est associé aux montants **Tolérances de paiement** et **Escompte de paiement**, et la TVA sera déduite pour les deux montants de transaction, s’ils existent. Le système ne peut pas être configuré pour utiliser la réduction de TVA uniquement pour un type de transaction.  
 
 ## Pour activer ou désactiver les alertes de tolérance de règlement
 

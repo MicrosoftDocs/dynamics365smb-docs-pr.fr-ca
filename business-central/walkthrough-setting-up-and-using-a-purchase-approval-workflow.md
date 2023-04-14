@@ -33,9 +33,9 @@ Cette procédure est un scénario illustrant les tâches suivantes :
 
 ## Scénario
 
-Sean est un superutilisateur dans CRONUS. Il crée deux utilisateurs d’approbation. Le premier est Alicia, qui représente un agent d'achats. L’autre, c’est lui-même, soit l’approbateur d’Alicia. Ensuite, Sean s’octroie des droits d’approbation pour un montant d’achat illimité et spécifie qu’il recevra les notifications par note interne dès qu’un événement approprié se produira. Enfin, Sean crée le flux d’approbation requis en tant que copie du modèle *Flux de travail approbation bon de commande* existant, laisse toutes les conditions d’événement et options de réponse existantes inchangées, puis active le workflow.  
+Sean est un super utilisateur de CRONUS  et crée deux utilisateurs d’approbation. Le premier est Alicia, qui représente un agent d'achats. L’autre, c’est Sean lui-même, soit l’approbateur d’Alicia. Ensuite, Sean s’octroie des droits d’approbation pour un montant d’achat illimité et spécifie qu’ils recevront les notifications par note interne dès qu’un événement approprié se produira. Enfin, Sean crée le flux d’approbation requis en tant que copie du modèle *Flux de travail approbation bon de commande* existant, laisse toutes les conditions d’événement et options de réponse existantes inchangées, puis active le workflow.  
 
-Pour tester le flux de travail approbation, Sean se connecte d’abord à [!INCLUDE[prod_short](includes/prod_short.md)] sous l’identité d’Alicia, puis demande l’approbation d’un bon de commande. Ensuite, Sean se connecte avec ses propres identifiants, voit la note dans son Tableau de bord, suit le lien vers la demande d’approbation du bon de commande, et approuve la demande.  
+Pour tester le flux de travail approbation, Sean se connecte d’abord à [!INCLUDE[prod_short](includes/prod_short.md)] sous l’identité d’Alicia, puis demande l’approbation d’un bon de commande. Ensuite, Sean se connecte en tant que lui-même, voit la note dans son Tableau de bord, suit le lien vers la demande d’approbation du bon de commande, et approuve la demande.  
 
 ## Utilisateurs
 

@@ -96,7 +96,7 @@ Une nomenclature de production répertorie 70 feuilles de métal dotées des di
 
 [Créer des itinéraires](production-how-to-create-routings.md)  
 [Gérer les variantes de produits](inventory-item-variants.md)  
-[Procédure pas à pas : variantes](contoso-coffee/variants.md)  
+[Procédure pas à pas : variantes](contoso-coffee/manufacturing/variants.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Production](production-manage-manufacturing.md)  
 [Planification](production-planning.md)  

@@ -83,10 +83,10 @@ Lorsque les employés ont comptabilisé les quantités d'inventaire, vous devez 
 4. Sélectionnez la case à cocher **Enregistrée** sur chaque ligne.
 5. Une fois que vous avez saisi toutes les données pour un enregistrement d'inventaire physique, sélectionnez l'action **Terminer**. Vous observerez que toutes les lignes doivent avoir la case **Enregistrée** sélectionnée.
 
-> [!NOTE]
-> Lorsque vous avez terminé un enregistrement d'inventaire physique, chaque ligne est transférée vers la ligne sur la commande d'inventaire physique associée qui correspond exactement. Pour correspondre, les valeurs des champs **N° article**, **Code variante**, **Code d'emplacement** et **Code de zone** doivent être identiques sur l'enregistrement et les lignes de commande.<br /><br />
-> Si aucune ligne de commande d'inventaire physique correspondante n'existe, et si la case **Autoriser l'enregistrement sans commande** est cochée, une nouvelle ligne est insérée automatiquement et la case **Enregistré sans commande** sur la ligne de commande d'inventaire physique concernée est sélectionnée. Sinon, un message d'erreur s'affiche et le processus est annulé.<br /><br />
-> Si plusieurs lignes d'enregistrement d'inventaire physique correspondent à une ligne de commande d'inventaire physique, un message s'affiche et le processus est annulé. Si, pour une raison ou une autre, deux lignes d'inventaire physique identiques se retrouvent sur la commande d'inventaire physique, vous pouvez utiliser une fonction pour résoudre le problème. Pour plus d’informations, reportez-vous à la rubrique [Rechercher des lignes de commande d'inventaire physique](#to-find-duplicate-physical-inventory-order-lines).
+    > [!NOTE]
+    > Lorsque vous avez terminé un enregistrement d'inventaire physique, chaque ligne est transférée vers la ligne sur la commande d'inventaire physique associée qui correspond exactement. Pour correspondre, les valeurs des champs **N° article**, **Code variante**, **Code d'emplacement** et **Code de zone** doivent être identiques sur l'enregistrement et les lignes de commande.<br /><br />
+    > Si aucune ligne de commande d'inventaire physique correspondante n'existe, et si la case **Autoriser l'enregistrement sans commande** est cochée, une nouvelle ligne est insérée automatiquement et la case **Enregistré sans commande** sur la ligne de commande d'inventaire physique concernée est sélectionnée. Sinon, un message d'erreur s'affiche et le processus est annulé.<br /><br />
+    > Si plusieurs lignes d'enregistrement d'inventaire physique correspondent à une ligne de commande d'inventaire physique, un message s'affiche et le processus est annulé. Si, pour une raison ou une autre, deux lignes d'inventaire physique identiques se retrouvent sur la commande d'inventaire physique, vous pouvez utiliser une fonction pour résoudre le problème. Pour plus d’informations, reportez-vous à la rubrique [Rechercher des lignes de commande d'inventaire physique](#to-find-duplicate-physical-inventory-order-lines).
 
 ## Pour finaliser une commande d'inventaire physique
 
@@ -102,7 +102,7 @@ Vous pouvez aussi choisir l'action **Diff. commande inventaire physique** pour v
 2. Ouvrez la commande d'inventaire physique pour laquelle vous souhaitez afficher les doublons de lignes.
 3. Choisissez l'action **Afficher les doublons de lignes**.
 
-Tout doublon de ligne commande inventaire physique est affiché de telle sorte que vous puissiez le supprimer et ne conserver qu'une ligne avec un ensemble de valeurs unique dans les champs **N° article**, **Code variante**, **Code d'emplacement** et **Code de zone**.
+Tout doublon de ligne de commande d’inventaire physique s’affiche de telle sorte que vous puissiez les supprimer et ne conserver qu’une ligne avec un ensemble de valeurs unique dans les champs **N° article**, **Code variante**, **Code d’emplacement** et **Code de zone**.
 
 ### Pour reporter une commande d'inventaire physique
 
@@ -118,10 +118,12 @@ Après avoir effectué une commande d'inventaire physique et modifié son état 
     Sur la page **Commande d'inventaire physique**, vous visualisez la quantité enregistrée dans le champ **Qté enregistrée (de base)**.
 3. Sélectionnez l'action **Terminer**.
 
-    La valeur dans le champ **État** est passée sur **Terminé**, et la commande peut être modifiée maintenant uniquement en sélectionnant tout d'abord l'action **Rouvrir**.
+    La valeur dans le champ **État** est passée sur **Terminé**, et la commande peut être modifiée maintenant uniquement en sélectionnant tout d’abord l’action **Rouvrir**.
 4. Pour reporter la commande, sélectionnez l'action **Reporter**, puis le bouton **OK**.
 
-Les écritures article concernées sont mises à jour ainsi que les écritures de suivi des articles concernées.
+    Les écritures des articles sont mises à jour ainsi que les écritures de suivi des articles concernées.
+
+    [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
 
 ### Pour afficher les commandes d'inventaire physique reportées
 
@@ -141,9 +143,9 @@ La case à cocher **Utiliser le suivi des articles** sur les lignes de commande 
 
 Imaginons un inventaire physique pour l'article A, enregistré dans l'inventaire sous la forme de dix numéros de série différents.
 1. Sur la ligne d'enregistrement pour l'article, sélectionnez la case **Utiliser le suivi des articles**.
-2.  Sélectionnez le champ **Numéro de série**, sélectionnez le premier numéro de série existant dans l'inventaire pour l'article, puis cliquez sur le bouton **OK**.
+2. Sélectionnez le champ **Numéro de série**, sélectionnez le premier numéro de série existant dans l'inventaire pour l'article, puis cliquez sur le bouton **OK**.
 
-    Commencez par copier la ligne pour le premier article suivi pour insérer des lignes supplémentaires correspondant au nombre de numéros de série enregistrés dans l'inventaire.
+    Copiez la ligne pour le premier article suivi pour insérer des lignes supplémentaires correspondant au nombre de numéros de série enregistrés dans l’inventaire.
 
 3. Choisissez l'action **Fonctions**, puis l'action **Copier ligne**.
 4. Sur la page **Copier la ligne enregistrement d'inventaire physique**, saisissez 9 dans le champ **Nombre de copies**, puis sélectionnez le bouton **OK**.
@@ -192,8 +194,8 @@ Sur la page **Commande d'inventaire physique**, le champ **Qté négative (de ba
 
 Les types de documents suivants sont utiles pour gérer votre entrepôt :
 
-- Utilisez **Réception d'inventaire** pour enregistrer les ajustements positifs des articles en fonction de la qualité, de la quantité et du coût.
-- Utilisez **Livraisons d'inventaire** pour radier les marchandises manquantes ou endommagées.
+* Utilisez **Réception d'inventaire** pour enregistrer les ajustements positifs des articles en fonction de la qualité, de la quantité et du coût.
+* Utilisez **Livraisons d'inventaire** pour radier les marchandises manquantes ou endommagées.
 
 Vous pouvez imprimer ces documents à tout moment, les libérer et les rouvrir, et attribuer des valeurs communes, y compris des dimensions, dans l'en-tête. Si vous souhaitez réimprimer les documents après leur publication, vous pouvez le faire sur les pages **Réception inventaire reportée** et **Livraison inventaire reportée**.
 
@@ -206,10 +208,11 @@ La procédure suivante indique comment définir la numérotation des documents i
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration de l’inventaire**, puis choisissez le lien associé.
 2. Sur le Raccourci **Numérotation**, spécifiez dans les champs suivants la série de numéros pour les documents :
-   - **N° réception inventaire**  
-   - **N° réceptions inventaire reportées**  
-   - **N° livraison inventaire**  
-   - **N° livraison inventaire reportée**  
+
+   * **N° réception inventaire**  
+   * **N° réceptions inventaire reportées**  
+   * **N° livraison inventaire**  
+   * **N° livraison inventaire reportée**  
 
 ### Pour créer et reporter un document d'inventaire
 
@@ -222,17 +225,19 @@ La procédure suivante montre comment créer, imprimer et reporter un reçu d'in
 
 Les fonctions suivantes sont disponibles sur la page **Réception inventaire** :
 
-- Choisissez les actions **Libérer** ou **Rouvrir** pour définir l'état de la prochaine phase de traitement  
-- Choisissez l'action **Reporter** pour reporter la réception inventaire, ou choisissez **Publier et imprimer** pour reporter la réception et imprimer le rapport de test  
+* Choisissez les actions **Libérer** ou **Rouvrir** pour définir l'état de la prochaine phase de traitement  
+* Choisissez l'action **Reporter** pour reporter la réception inventaire, ou choisissez **Publier et imprimer** pour reporter la réception et imprimer le rapport de test  
+
+    [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
 
 ## Impression des documents inventaire
 
 Vous pouvez spécifier les rapports à imprimer à différentes phases en choisissant l'une des options suivantes dans le champ **Utilisation** de la page **Sélection de rapports – inventaire** :
 
-- Réception inventaire
-- Livraison inventaire
-- Réception inventaire reportée
-- Livraison inventaire reportée
+* Réception inventaire
+* Livraison inventaire
+* Réception inventaire reportée
+* Livraison inventaire reportée
 
 > [!NOTE]
 > Les rapports disponibles peuvent varier en fonction de la localisation de votre pays. L'application de base n'inclut aucune disposition.

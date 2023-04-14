@@ -44,7 +44,7 @@ Une promotion désigne tout type d'utilisation impliquant plusieurs contacts. La
 
 ## Scénario
 
- Le directeur marketing du département Ventes de CRONUS est responsable de la planification et de l'exécution des campagnes. Il prend les décisions relatives à la participation ou non de la compagnie à des salons commerciaux et évalue l'évolution des promotions.  
+ Le directeur marketing du département Ventes de CRONUS est responsable de la planification et de l'exécution des campagnes. Le responsable marketing prend les décisions relatives à la participation ou non de la société à des salons commerciaux et évalue l’évolution des promotions.  
 
  Les membres de l'équipe marketing du département Marketing gèrent la production, la distribution, et le placement des supports marketing.  
 
@@ -96,7 +96,7 @@ La page **Segment** inclut désormais une liste de contacts basée sur le filtre
 
 ## Exploration de données
 
- Le directeur marketing observe attentivement la liste segmentée des contacts et réalise que la liste est bien trop longue. Il décide de la réduire en se basant sur de véritables prospects afin d'être certain de se concentrer sur le bon groupe cible. Ce processus de réduction et de redéfinition des données porte également le nom d'exploration de données.  
+ Le directeur marketing observe attentivement la liste segmentée des contacts et réalise que la liste est bien trop longue. Il décide de la réduire en se basant sur de véritables prospects afin d’être certain de se concentrer sur le bon groupe cible. Ce processus de réduction et de redéfinition des données porte également le nom d'exploration de données.  
 
 ### Pour supprimer des contacts du segment  
 

@@ -45,12 +45,7 @@ Dans les méthodes A, B et C, les actions de réception et de rangement sont co
 
 > [!NOTE]
 > Bien que les rangements entrepôt et les rangements inventaire semblent similaires, ce sont des documents différents et ils sont utilisés dans des processus différents.
-> * Le rangement inventaire utilisé dans la méthode B, ainsi que l’enregistrement des informations de rangement, reporte également la réception du document source.
-> * Le rangement entrepôt utilisé dans la méthode D ne peut pas être reporté et enregistre uniquement le rangement. L’enregistrement rend les articles disponibles pour un traitement ultérieur mais ne reporte pas la réception. Dans le flux entrant, le rangement entrepôt nécessite une réception entrepôt.
-
-> [!NOTE]
-> Bien que les rangements entrepôt et les rangements inventaire semblent similaires, ce sont des documents différents et ils sont utilisés dans des processus différents.
-> * Le rangement inventaire utilisé dans la méthode B, ainsi que l’enregistrement des informations de rangement, reporte également la réception du document source.
+> * Le rangement inventaire utilisé dans la méthode B, ainsi que l’enregistrement des informations de rangement, valide également la réception du document source.
 > * Le rangement entrepôt utilisé dans la méthode D ne peut pas être reporté et enregistre uniquement le rangement. L’enregistrement rend les articles disponibles pour un traitement ultérieur mais ne reporte pas la réception. Dans le flux entrant, le rangement entrepôt nécessite une réception entrepôt.
 
 ## Aucune activité entrepôt dédiée

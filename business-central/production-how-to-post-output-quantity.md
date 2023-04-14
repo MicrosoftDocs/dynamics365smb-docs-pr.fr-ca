@@ -7,10 +7,11 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.form: '99000773, 99000778, 99000823, 99000827'
-ms.date: 04/01/2021
+ms.date: 03/08/2023
 ms.author: edupont
 ---
 # Reporter en lot la production et les temps d’exécution
+
 La quantité de sortie représente l'avancement du travail sous la forme de la quantité finie et de la capacité utilisée de l'atelier ou de l'unité de production.
 
 Vous pouvez utiliser le journal de sortie pour :
@@ -22,7 +23,7 @@ Vous pouvez utiliser le journal de sortie pour :
 > [!NOTE]
 > Si l'itinéraire de production est utilisé, l'inventaire est mis à jour uniquement lorsque vous reportez la quantité produite durant la dernière opération.
 
-La fenêtre **Journal production** vous permet d’exécuter les mêmes tâches que celles de la fenêtre **Journal de sortie** et d'exécuter en même temps les tâches connexes de report de la consommation. Pour plus d'informations, voir [Enregistrer la consommation et la production pour une ligne bon de production libéré](production-how-to-register-consumption-and-output.md).
+La page **Journal production** vous permet d’effectuer les mêmes tâches que sur la page **Journal production**, et exécuter en même temps les tâches connexes de report de la consommation. Pour plus d'informations, voir [Enregistrer la consommation et la production pour une ligne bon de production libéré](production-how-to-register-consumption-and-output.md).
 
 ## Pour reporter les quantités produites et/ou enregistrer le temps d’exécution pour une ou plusieurs lignes bon de production
 
@@ -32,11 +33,11 @@ La fenêtre **Journal production** vous permet d’exécuter les mêmes tâches 
     Vous pouvez utiliser la fonction **Éclater itinéraire** pour générer des lignes journal à partir des bons de production.
   
 3. Si l'opération est achevée, sélectionnez le champ **Terminé**.  
-4. Choisissez l’action **Reporter** pour reporter les opérations. 
+4. Choisissez l’action **Reporter** pour reporter les opérations.
 
-Les écritures capacité sont mises à jour pour les unités de production ou les ateliers utilisés avec des informations sur le temps et la quantité de production et de rebut.  
+    Les écritures capacité sont mises à jour pour les unités de production ou les ateliers utilisés avec des informations sur le temps et la quantité de production et de rebut. Si vous avez reporté la dernière opération, l'article sera ajouté à l'inventaire.
 
-Si vous avez reporté la dernière opération, l'article sera ajouté à l'inventaire.  
+    [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
 
 ## Voir aussi
 

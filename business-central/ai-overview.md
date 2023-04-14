@@ -48,18 +48,18 @@ Cette section explique les limites actuelles de la fonctionnalité de texte gén
 
 - Les suggestions de texte générées par l’IA sont uniquement en anglais.
 - De mauvaises suggestions peuvent se produire quand des noms de produits vagues ou génériques sont utilisés et que des détails sur un article manquent, comme des attributs clés ou une catégorie.
-- Copilot est uniquement pris en charge sur les environnements Business Central Online d’essai et de bac à sable; pas sur les environnements de production, les environnements de nuage privé ou les environnements Business Central Online.
+- Copilot est uniquement pris en charge sur Business Central Online; pas les environnements de nuage privé ou les environnements Business Central sur site.
 - Copilot n’est pas pris en charge via les connexions à votre propre ressource de service Azure OpenAI dans votre abonnement Azure.
 - L’extensibilité partenaire de la fonctionnalité IA à l’aide du code AL n’est pas prise en charge.
 
 ## Étapes suivantes
 
-Pour commencer, vous aurez besoin d’une version en version préliminaire de Business Central dédiée qui est activée avec Copilot.
+Pour commencer, vous aurez besoin d’un environnement en version 22 de Business Central dédiée qui est activée avec Copilot.
 
-- Si vous êtes déjà client de Business Central, votre administrateur Business Central devra configurer pour vous la version préliminaire dans un environnement sandbox.
+- Si vous êtes déjà client de Business Central, votre administrateur Business Central devra configurer pour vous un environnement de version 22 pour vous.
 - Si vous n’êtes pas client de Business Central mais que vous souhaitez l’essayer, inscrivez-vous pour un essai gratuit.
 
-Pour plus d’informations, rendez-vous sur [Obtenir la version préliminaire de Business Central – édition Copilot](ai-preview-getstarted.md).  
+Pour plus d’informations, rendez-vous sur [Obtenir la version préliminaire de Business Central](ai-preview-getstarted.md).  
 
 ## Voir aussi
 

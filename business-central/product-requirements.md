@@ -2,13 +2,13 @@
 title: "Configuration minimale requise pour l’utilisation de Business\_Central"
 description: "Découvrez la configuration système et la version minimale nécessaires à l’utilisation de Business\_Central\_Online mentionnées ci-dessous."
 author: jswymer
-ms.topic: get-started-article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: overview
+ms.custom: bap-template
 ms.search.keywords: version
-ms.date: 08/23/2022
+ms.date: 02/28/2023
+ms.review: jswymer
 ms.author: jswymer
+ms.service: dynamics365-business-central
 ---
 # Configuration minimale requise pour l'utilisation de Business Central
 
@@ -64,7 +64,7 @@ Le centre d'administration est conçu pour fonctionner avec la version actuelle 
 
 ## Utiliser Business Central sur site
 
-Si vous souhaitez déployer Business Central sur site, vous devez vérifier la configuration système requise. Pour plus d’informations, voir [Configuration requise pour Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/deployment/system-requirements-business-central-v20) et [Vue d’ensemble du déploiement](/dynamics365/business-central/dev-itpro/deployment/deployment).  
+Si vous souhaitez déployer Business Central sur site, vous devez vérifier la configuration système requise. Pour plus d’informations, voir [Configuration requise pour Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/deployment/system-requirements-business-central-v22) et [Vue d’ensemble du déploiement](/dynamics365/business-central/dev-itpro/deployment/deployment).  
 
 ## Voir aussi
 

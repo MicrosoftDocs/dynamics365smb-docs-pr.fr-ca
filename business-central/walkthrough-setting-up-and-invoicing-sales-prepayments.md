@@ -39,15 +39,15 @@ Cette procédure pas à pas inclut les tâches correspondant aux rôles suivants
 
 ## Scénario
 
- Phyllis est responsable de la comptabilité. Elle décide des clients qui doivent payer un acompte avant que les articles soient produits ou livrés. Phyllis configure [!INCLUDE[prod_short](includes/prod_short.md)] de façon à calculer automatiquement les acomptes.  
+ Phyllis est un comptable qui décide des clients qui doivent payer un acompte avant que les articles soient fabriqués ou livrés. Phyllis configure [!INCLUDE[prod_short](includes/prod_short.md)] de façon à calculer automatiquement les acomptes.  
 
- Susan est préparatrice de documents de vente. Lorsque le client appelle pour passer une commande, elle entre la commande dans le système pendant que le client est au téléphone. Elle peut ainsi vérifier immédiatement les prix et les modalités de paiement avec le client et ajuster la commande pendant qu’elle négocie avec le client.  
+ Susan est préparatrice de documents de vente. Lorsque le client appelle pour passer une commande, Susan entre la commande dans le système pendant que le client est au téléphone. Susan peut ainsi vérifier immédiatement les prix et les modalités de paiement avec le client et ajuster la commande pendant qu’elle négocie avec le client.  
 
- Arnie travaille dans le département Comptabilité client où sa fonction consiste à reporter les factures et les paiements.  
+ Arnie travaille dans le département Comptabilité client où sa fonction consiste à valider les factures et les paiements.  
 
  Dans ce scénario, Phyllis configure les conditions de paiement anticipé pour le client Selangorian, en se basant sur leurs antécédents en matière de crédit. Elle donne à Susan des instructions sur le traitement de leurs commandes.  
 
- Lorsque le client appelle, Susan négocie avec lui jusqu'à parvenir à une entente. Elle peut alors choisir de calculer le paiement anticipé de différentes manières.  
+ Lorsque le client appelle, Susan négocie jusqu’à ce qu’ils arrivent à un entente : le système lui permet de calculer les paiements anticipés de différentes manières.  
 
  Après que Susan a envoyé la facture paiement anticipé, le client commande un article supplémentaire. Susan met à jour la commande et crée une seconde facture paiement anticipé.  
 
@@ -75,9 +75,9 @@ Les procédures suivantes décrivent le mode d'exécution des tâches de Phyllis
 
 Vous ne pouvez pas livrer ou facturer une commande dont le montant de paiement anticipé n’est pas réglé.  
 
-Par défaut, Phyllis requiert que le client 20000 soit facturé avec un acompte de 30 % sur toutes les commandes. Pour cela, elle entre un pourcentage de paiement anticipé par défaut dans la fiche client.  
+Par défaut, Phyllis requiert que le client 20000 soit facturé avec un acompte de 30 % sur toutes les commandes. Pour cela, Phyllis entre un pourcentage de paiement anticipé par défaut dans la fiche client.  
 
-Phyllis requiert que tous les clients soient facturés avec un acompte de 20 % pour l’article 1896-S. Le client 20000 a un mauvais historique des paiements, c’est pourquoi elle requiert un paiement anticipé de 40 % pour ce client pour l’article 1896-S. La procédure suivante présente le mode de configuration des pourcentages de paiement anticipé par défaut.  
+Phyllis requiert que tous les clients soient facturés avec un acompte de 20 % pour l’article 1896-S. Le client 20000 a un mauvais historique des paiements, c’est pourquoi Phyllis requiert un paiement anticipé de 40 % pour ce client pour l’article 1896-S. La procédure suivante présente le mode de configuration des pourcentages de paiement anticipé par défaut.  
 
 ### Pour affecter des pourcentages de paiement anticipé par défaut aux clients et aux articles
 
@@ -165,7 +165,7 @@ Après avoir entré la valeur de paiement anticipé correcte sur la commande, Su
 
 ## Créer une facture paiement anticipé supplémentaire
 
-Le jour suivant, le client appelle Susan et modifie sa commande. Il souhaite deux exemplaires de l’article 1896-S. Susan rouvre la commande et la met à jour. Susan crée ensuite une seconde facture paiement anticipé pour la commande et l’envoie au client.  
+Le jour suivant, le client appelle Susan et modifie sa commande. Il souhaite deux exemplaires de l’article 1896-S. Susan rouvre et met à jour la commande, puis crée une seconde facture paiement anticipé sur la commande et l’envoie au client.  
 
 ### Pour créer une facture paiement anticipé supplémentaire
 

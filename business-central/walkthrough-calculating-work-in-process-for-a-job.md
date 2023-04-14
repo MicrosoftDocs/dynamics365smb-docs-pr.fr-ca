@@ -44,7 +44,7 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 
  CRONUS a accepté un projet à long terme qui s'est étendu sur plusieurs périodes de reporting. Tricia, membre de l'équipe projet, calcule les travaux en cours (TEC) pour vérifier que l'état financier de la compagnie sera exact.  
 
- Au cours de cette procédure, Tricia sélectionne un groupe de tâches spécifique qui sera inclus dans le calcul TEC. Sur la page **Lignes tâche projet**, elle peut spécifier ces lignes dans la colonne **Total TEC**.  
+ Au cours de cette procédure, Tricia sélectionne un groupe de tâches spécifique qui sera inclus dans le calcul TEC. Sur la page **Lignes tâche projet**, Tricia peut spécifier ces lignes dans la colonne **Total TEC**.  
 
  Le tableau suivant décrit trois options.  
 
@@ -54,7 +54,7 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 |**Total**|Définit la plage ou le groupe de tâches incluses dans le calcul des TEC et de la réception. Au sein du groupe, n'importe quelle tâche projet dont le **Type tâche projet** est défini sur **Report** est incluse dans le total TEC, à moins que le champ **TEC-Total** soit paramétré sur **Exclu**.|  
 |**Exclu**|S'applique uniquement à une tâche dont le **Type tâche projet** est défini sur **Validation**. La tâche n'est pas incluse lors du calcul des TEC et de la réception.|  
 
- Dans la procédure pas-à-pas suivante, Tricia applique la méthode Valeur de coût, la norme de sa compagnie, pour calculer les TEC. Elle indique la partie du projet qui est incluse dans le calcul des TEC en affectant des valeurs Total TEC à différentes lignes tâche projet.  
+ Dans la procédure pas-à-pas suivante, Tricia applique la méthode Valeur de coût, la norme de leur compagnie, pour calculer les TEC. Tricia indique la partie du projet qui est incluse dans le calcul des TEC en affectant des valeurs Total TEC à différentes lignes tâche projet.  
 
 ### Pour calculer les TEC :  
 
@@ -110,7 +110,7 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 
 ## Report des TEC dans le grand livre
 
- Après avoir calculé les TEC pour ce projet, Tricia peut les reporter dans le grand livre.  
+ Après avoir calculé les TEC pour ce projet, ils peuvent les reporter dans le grand livre.  
 
 ### Pour reporter les TEC dans le grand livre  
 
@@ -134,7 +134,7 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 
 ## Inversion d'un report TEC
 
- Tricia conclut que les tâches projet qui ont été exclues du calcul des TEC auraient dues être incluses dans ce calcul. Elle peut inverser les reports incorrects sans devoir reporter de nouveaux reports TEC.  
+ Tricia conclut que les tâches projet qui ont été exclues du calcul des TEC auraient dues être incluses dans ce calcul. Tricia peut inverser les reports incorrects sans devoir rereporter les TEC.  
 
 ### Pour inverser un report TEC  
 
@@ -153,7 +153,7 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 13. Ouvrez les **Lignes tâche projet** pour le projet, incluez les sections du projet qui auraient dû faire partie du calcul des TEC, puis recalculez et validez le nouveau résultat en comptabilité.  
 
     > [!NOTE]  
-    >  Supposons que Tricia a calculé et reporté les TEC d'un projet avec des dates incorrectes. En suivant la méthode vue précédemment, elle peut inverser les reports incorrects, corriger les dates et reporter à nouveau les TEC dans le grand livre.  
+    >  Supposons que Tricia a calculé et reporté les TEC d'un projet avec des dates incorrectes. En suivant la méthode vue précédemment, Tricia peut inverser les reports incorrects, corriger les dates et revalider les TEC dans le grand livre.  
 
 ## Étapes suivantes
 

@@ -68,10 +68,11 @@ Avec la fonctionnalité activée, une transaction de retour peut être reportée
 | Gérez les interactions commerciales avec vos fournisseurs, importez les documents de facturation reçus et enregistrez de nouveaux fournisseurs à l’aide du client de courriel Outlook. | [Configurer le complément Business Central pour Outlook](admin-outlook.md) |
 | Examinez les reçus de dépenses, convertissez les documents papier et électroniques en lignes de journal et numérisez les factures papier des fournisseurs. | [Configurer des documents entrants](across-how-setup-income-documents.md) |
 | Spécifiez les rapports par défaut à utiliser pour différents types de documents. |[Sélection des rapports dans Business Central](across-report-selections.md)|
+|Spécifiez si les utilisateurs sont autorisés à reporter des factures achat et s’ils doivent les reporter avec une livraison. |[Définir une stratégie de report des factures pour les utilisateurs](admin-setup-invoice-posting-policy.md)|
 
 ## Voir la formation associée sur [Microsoft Learn](/learn/paths/trade-get-started-dynamics-365-business-central/).
 
-## Voir aussi .
+## Voir aussi
 
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Présentation de la configuration](setup.md)  

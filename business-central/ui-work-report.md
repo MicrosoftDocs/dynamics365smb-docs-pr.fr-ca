@@ -3,9 +3,6 @@ title: Exécuter et imprimer des rapports
 description: En savoir plus sur l'intégration d'un rapport dans une file d'attente des travaux et la programmation de son traitement à une date et une heure spécifiques.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: 'task, process, report, print, schedule, save, Excel, PDF, Word, dataset'
 ms.search.form: null
 ms.date: 09/09/2022
@@ -102,7 +99,7 @@ Depuis la page **Écritures file d’attente des travaux**, vous pouvez égaleme
 3. Choisissez l’action **Définir en attente**.
 4. Ouvrez et modifiez le rapport programmé en sélectionnant son état (*En attente*).
 
-Après avoir modifié les options du rapport, répétez les deux premières étapes, puis sélectionnez l’action **Définir l'état sur Prêt** pour reprendre la génération du rapport.
+Après avoir modifié les options du rapport, répétez les deux premières étapes, puis sélectionnez l’action **Définir l’état sur Prêt** pour reprendre la génération du rapport.
 
 Pour en savoir plus sur la gestion des files d’attente des travaux, voir [Utiliser les files d’attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).  
 
@@ -136,6 +133,12 @@ Une présentation de rapport contrôle les éléments affichés sur un rapport, 
 - Pour modifier la présentation par défaut utilisée par un rapport, accédez aux pages **Présentations du rapport** ou **Sélection de la présentation du rapport**.
 
 Pour en savoir plus, voir [Définir la présentation utilisée par un rapport](ui-set-report-layout.md). Ou, si vous voulez personnaliser votre propre présentation de rapport, voir [Bien démarrer avec la création de présentations](ui-get-started-layouts.md).
+
+## Modifier la langue et le format des nombres, des dates et des heures
+
+Par défaut, la langue du texte et le format des nombres, des dates et des heures dans un rapport sont basés sur vos paramètres de langue de travail et de région, qui sont définis sur la page **Mes paramètres**. Vous pouvez toutefois modifier la langue et la région de format au cas par cas lorsque vous prévisualisez, imprimez ou envoyez un rapport. Sur la page de demande, sélectionnez **Avancé**, puis définissez les options **Langue** et **Région de format** comme vous le souhaitez.
+
+Pour plus d’informations sur la page **Mes paramètres**, accédez à [Modifier les paramètres de base](ui-change-basic-settings.md#region).
 
 ## Options avancées
 
