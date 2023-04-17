@@ -3,28 +3,22 @@ author: edupont04
 ms.topic: include
 ms.date: 04/01/2021
 ms.author: edupont
-ms.openlocfilehash: 6db94363d0633ec815a09190269610dbc50cbdcd
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8511878"
 ---
 > [!NOTE]
-> De nouvelles capacités de création de dépôts bancaires sont disponibles dans la 1re vague de lancement de Business Central 2022 pour de nombreuses versions nationales. Si vous utilisiez Business Central aux États-Unis, au Canada ou au Mexique avant cette version, vous utilisez peut-être les fonctionnalités antérieures. Vous pouvez continuer, mais les nouvelles capacités remplaceront les anciennes dans une prochaine version. Pour commencer à utiliser les nouvelles fonctionnalités immédiatement, votre administrateur peut se rendre sur la page **Gestion des fonctionnalités** et activer **Mise à jour des fonctionnalités : Rapprochement bancaire et dépôts standardisés**. Pour plus d'informations, voir [Créer des dépôts bancaires](../../../bank-create-bank-deposits.md).
+> De nouvelles capacités de création de dépôts bancaires sont disponibles dans la 1re vague de lancement de Business Central 2022 pour de nombreuses versions nationales. Si vous utilisiez Business Central aux États-Unis, au Canada ou au Mexique avant cette version, vous utilisiez peut-être les fonctionnalités antérieures. Vous pouvez continuer, mais les nouvelles capacités remplaceront les anciennes dans une prochaine version. Pour commencer à utiliser les nouvelles fonctionnalités immédiatement, votre administrateur peut se rendre sur la page **Gestion des fonctionnalités** et activer **Mise à jour des fonctionnalités : Rapprochement bancaire et dépôts standardisés**. Pour plus d'informations, voir [Créer des dépôts bancaires](../../../bank-create-bank-deposits.md).
 
 
 Vous pouvez créer des dépôts bancaires pour tenir à jour un enregistrement de transaction contenant des renseignements pouvant être affectés aux notes de crédit et factures en attente.  
 
 La page **Dépôts** spécifie les renseignements de dépôt bancaire comme le numéro de compte bancaire, le montant de dépôt total, les lignes dépôt, la date de report, la date de document, le code de département, le code de devise et les notes de dépôt bancaire. Vous pouvez utiliser cette page pour créer des dépôts bancaires, reporter des dépôts, imprimer des dépôts, afficher des commentaires sur les dépôts ou consulter un rapport qui indique le montant du dépôt à rapprocher.
 
-Le rapport **Dépôt** affiche les dépôts clients et fournisseurs avec le montant du dépôt initial, le montant du dépôt qui reste ouvert et le montant affecté. Le rapport indique également le montant total des dépôts reportés à rapprocher.
+Le rapport **Dépôt**affiche les dépôts clients et fournisseurs avec le montant du dépôt initial, le montant du dépôt qui reste ouvert et le montant affecté. Le rapport indique également le montant total des dépôts reportés à rapprocher.
 
 Les lignes dépôt bancaire contiennent des renseignements sur les différents éléments faisant l'objet de dépôts, tels que les chèques des clients. Ces informations comprennent la date et le numéro du document, le type et le numéro du compte et le montant. Le total des montants sur les lignes doit s'additionner pour correspondre au montant total du dépôt.
 
 Après avoir renseigné les renseignements de dépôt et les lignes, vous devez les reporter afin de mettre à jour les grands livres correspondants, comme le grand livre bancaire, le grand livre général ou le grand livre client. Les dépôts reportés sont stockés pour référence ultérieure et peuvent être consultés sur la page **Dépôts reportés**.
 
-## <a name="to-create-a-deposit"></a>Pour créer un dépôt  
+## Pour créer un dépôt  
 1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Dépôts**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Sous le raccourci **Général**, renseignez les champs requis comme indiqué dans le tableau ci-dessous.  

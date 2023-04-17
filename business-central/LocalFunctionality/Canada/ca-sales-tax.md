@@ -1,6 +1,6 @@
 ---
-title: Déclaration de la taxe de vente au Canada [CA]
-description: En savoir plus sur la manière dont la taxe de vente est configurée, et sur le fonctionnement des groupes fiscaux, des régions fiscales (états, comtés, villes et localités), des juridictions de taxe et des spécifications de taxe au Canada.
+title: 'Déclaration de la taxe de vente au Canada [CA]'
+description: 'En savoir plus sur la manière dont la taxe de vente est configurée, et sur le fonctionnement des groupes fiscaux, des régions fiscales (états, comtés, villes et localités), des juridictions de taxe et des spécifications de taxe au Canada.'
 author: edupont04
 ms.topic: conceptual
 ms.devlang: na
@@ -9,14 +9,8 @@ ms.workload: na
 ms.search.keywords: local
 ms.date: 10/12/2021
 ms.author: edupont
-ms.openlocfilehash: cb7d24d4a59c617dd35d2fe26d4ac133be0d7589
-ms.sourcegitcommit: 8a12074b170a14d98ab7ffdad77d66aed64e5783
-ms.translationtype: HT
-ms.contentlocale: fr-CA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8511884"
 ---
-# <a name="reporting-sales-tax-in-canada"></a>Déclaration de la taxe de vente au Canada
+# Déclaration de la taxe de vente au Canada
 
 [!INCLUDE [sales-tax](../includes/CAMXUS/sales-tax-setup.md)]
 
@@ -24,13 +18,13 @@ Si vous configurez de nouvelles zones et juridictions de recouvrement, vous deve
 
 Au Canada, les montants de taxe doivent être détaillés dans les documents concernant chaque juridiction fiscale. Jusqu'à quatre autorités de recouvrement peuvent apparaître dans un document, et les autorités dotées du même ordre d'impression sont regroupées lors de l'impression.  
 
-## <a name="tax-details"></a>Détails fiscaux
+## Détails fiscaux
 
 La page **Détails fiscaux** affiche différentes combinaisons de juridictions de taxe de vente et de groupes de taxe de vente afin d'établir des taux de taxe de vente. Pour chaque juridiction fiscale, nous vous recommandons de configurer un groupe fiscal pour la taxe de vente normale, un autre groupe fiscal pour les articles ou les services qui ne sont pas soumis à la taxe et un groupe fiscal supplémentaire pour chaque type d'article ou de service traité avec un taux de taxe de vente différent dans cette juridiction fiscale. [!INCLUDE [tooltip-inline-tip_md](../../includes/tooltip-inline-tip_md.md)]  
 
 <!--COMMENTING OUT DUE TO ISSUE #535: In Canada, when you sell to a customer at a location where you do not have a *situs*—or a legal location in that state—you do not collect sales tax. For locations in which you do not have a situs, ensure that both the **Tax Below Minimum** and **Tax Above Maximum** fields are 0.00.  -->
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Fonctionnalités locales Canada](canada-local-functionality.md)  
 [Finance](../../finance.md)  
