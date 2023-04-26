@@ -428,6 +428,7 @@
 ### [Créer des budgets GL](finance-how-create-budgets.md)
 ### [Reporter directement des transactions dans le grand livre](finance-how-post-transactions-directly.md)
 ### [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)
+### [Exportation de fichier d’audit](finance-how-to-export-audit-files.md)
 ### [Ventilation des coûts et des bénéfices](year-allocate-costs-income.md)
 ### [Enregistrement et remboursement des frais des employés](finance-how-record-reimburse-employee-expenses.md)
 ### [Échelonnement des recettes et des dépenses](finance-how-defer-revenue-expenses.md)
@@ -807,13 +808,14 @@
 #### Général
 ##### [Numéros d’entreprise et numéros d’établissement](LocalFunctionality/Belgium/enterprise-numbers-and-branch-numbers.md)
 ##### [Limiter la période de report](LocalFunctionality/Belgium/how-to-limit-the-posting-period.md)
-##### [Définir la date de travail comme date de report](LocalFunctionality/Belgium/how-to-set-the-work-date-as-the-posting-date.md)
-##### [Rendre les modèles journal obligatoires](LocalFunctionality/Belgium/specify-journal-template-mandatory.md)
+##### [Définition de la date de travail comme date de report](LocalFunctionality/Belgium/how-to-set-the-work-date-as-the-posting-date.md)
+##### [Désignation des modèles journal obligatoires](LocalFunctionality/Belgium/specify-journal-template-mandatory.md)
+##### [Échelonnements dans les rapports Journal des ventes et Journal des achats](LocalFunctionality/Belgium/how-to-use-deferrals.md}
 
 ### Canada
 #### [Fonctionnalité locale dans la version canadienne](LocalFunctionality/Canada/canada-local-functionality.md)
 #### Taxe
-##### [Déclarer la taxe de vente et la taxe sur les biens/services au Canada](LocalFunctionality/Canada/sales-tax-goods-services.md)
+##### [Déclaration des taxes de vente et des taxes sur les biens/services au Canada](LocalFunctionality/Canada/sales-tax-goods-services.md)
 ##### [Déclarer la taxe de vente au Canada](LocalFunctionality/Canada/ca-sales-tax.md)
 ##### [Configurer des taxes de vente non réalisées et des escomptes de paiement de vente](LocalFunctionality/Canada/how-to-set-up-unrealized-sales-tax-and-sales-payment-discounts.md)
 ##### [Configurer la taxe de service et la taxe d’achat](LocalFunctionality/Canada/how-to-set-up-use-tax-and-purchase-tax.md)

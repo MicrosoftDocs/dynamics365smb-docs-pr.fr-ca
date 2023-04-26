@@ -1,15 +1,14 @@
 ---
 title: Créer des compagnies en utilisant le guide de configuration assistée
-description: 'Il est facile de créer une nouvelle compagnie vide dans Business Central. Un guide de configuration assistée vous aide à l''aide de procédures, et vous pouvez importer les données métier existantes.'
-author: edupont04
+description: 'Il est facile de créer une nouvelle compagnie vide dans Business Central. Un guide de configuration assistée vous aide à l’aide de procédures, et vous pouvez importer vos données métier.'
+author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.date: 04/14/2023
+ms.custom: bap-template
 ms.search.keywords: 'company, setup wizard'
 ms.search.form: '1803, 9020, 9022, 9026, 9027, 9030, 9000, 9009, 9004, 9005, 9024, 9006, 9007, 9010, 9016, 9017'
-ms.date: 04/01/2021
-ms.author: edupont
 ---
 # Créer des compagnies dans [!INCLUDE[prod_short](includes/prod_short.md)]
 
@@ -46,7 +45,9 @@ Votre administrateur peut en savoir plus sur les essais et les abonnements [ici]
 Sur la page **Compagnies**, vous pouvez utiliser l'action **Copier** pour créer une deuxième compagnie sur la base du contenu d’une compagnie existante. Ceci est utile, par exemple, lorsque vous souhaitez tester une compagnie sans perturber les données de production.
 
 > [!Important]
-> Cette fonction ne peut pas être utilisée pour sauvegarder une compagnie. La sauvegarde d'une compagnie commence par l'exportation de la base de données sous la forme d'un fichier .bacpac. Pour plus d'informations, voir [Exportation de bases de données](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-database-export) dans Aide dédiée au développement et à l'administration.
+> N’utilisez pas l’action Copier pour effectuer une sauvegarde d’une compagnie. Pour effectuer une sauvegarde, commencez par exporter la base de données sous forme de fichier .bacpac. Pour plus d'informations, voir [Exportation de bases de données](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-database-export) dans Aide dédiée au développement et à l'administration.
+
+[!INCLUDE [email-copy-company](includes/email-copy-company.md)]
 
 ## Configurer la compagnie
 

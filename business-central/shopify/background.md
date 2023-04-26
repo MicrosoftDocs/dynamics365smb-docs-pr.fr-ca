@@ -44,8 +44,8 @@ Vous pouvez programmer les activités récurrentes suivantes pour qu’elles soi
 
 Autres tâches pouvant être utiles pour automatiser le traitement ultérieur des documents de vente :
 
-- rapport 497 Exécuter en lot report factures achat
-- rapport 496 Exécuter en lot bons de commande
+- rapport 297 Reporter en lot des factures vente
+- rapport 296 Reporter en lot des documents de vente
 
 Vous pouvez utiliser le champ **N° de commande Shopify** pour identifier les documents commerciaux importés depuis Shopify.
 

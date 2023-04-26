@@ -28,7 +28,7 @@ Implémentez ces fonctionnalités dans différentes combinaisons pour adapter vo
 
 ## Aperçu des différentes options de configuration
 
-Vous pouvez configurer les fonctionnalités d’entrepôt de différentes manières. Il est important que les options que vous choisissez améliorent vos processus sans entraîner de surcharge. Le tableau suivant donne un aperçu des configurations typiques qui sont utilisées lorsqu’il s’agit de biens physiques.
+Vous pouvez configurer les fonctionnalités d’entrepôt de différentes manières. Il est important de choisir les options qui améliorent vos processus sans entraîner de surcharge. Le tableau suivant donne un aperçu des configurations typiques lorsqu’il s’agit de biens physiques.
 
 |Niveau de complexité|Désignation|Paramètres|Code de zone|Exemple de flux entrant|Exemple de flux sortant|Exemple de flux interne|  
 |---|----------------|----------|---------|------------------|------------------|------------------|
@@ -61,7 +61,7 @@ Pour manipuler des biens physiques, vous devez avoir au moins un emplacement. Vo
 En règle générale, les emplacements sont le moyen privilégié pour organiser des opérations réparties sur plusieurs zones géographiques. Dans certains cas, cependant, vous souhaiterez peut-être créer plusieurs emplacements situés au même endroit. L’utilisation des emplacements présente les avantages suivants :
 
 * Accordez l’accès en utilisant les pages **Employé d'entrepôt** et **Centres de gestion**.
-* Définissez les calendriers, les itinéraires et les heures de traitement entrant et sortant pour le calcul et la planification des dates. [À propos de la fonctionnalité Planification](production-about-planning-functionality.md).
+* Définissez les calendriers, les itinéraires et les heures de traitement entrant et sortant pour le calcul et la planification des dates. Pour plus d’informations, voir [À propos de la fonctionnalité Planification](production-about-planning-functionality.md).
 * Spécifiez les dimensions par défaut et utilisez différentes configurations de report d'inventaire.
 * Configurez les paramètres de planification. Learn more at [Paramètres de planification](production-about-planning-functionality.md#planning-parameters).  
 * Utilisez différentes fonctionnalités d’entrepôt pour chaque emplacement.
