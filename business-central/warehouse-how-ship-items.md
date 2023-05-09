@@ -59,8 +59,8 @@ Vous pouvez créer une livraison entrepôt de deux manières :
     * En mode « push », où vous utilisez l’action **Créer prélèvement**. Sélectionnez les lignes à prélever et spécifiez les informations sur les prélèvements. Par exemple, dans quelles zones prendre et placer, et combien d’unités manipuler. Les zones peuvent être prédéfinies pour l’emplacement d’entrepôt ou la ressource.
     * En mode « pull », où vous utilisez l’action **Libérer**. Sur la page **Feuille prélèvement**, utilisez l’action **Extraire documents entrepôt** pour récupérer les prélèvements qui vous ont été attribués. Lorsque les prélèvements entrepôt sont entièrement enregistrés, les lignes dans la **Feuille prélèvement** sont supprimées. Pour en savoir plus, voir [Prélever des articles pour la livraison entrepôt](warehouse-how-to-pick-items-for-warehouse-shipment.md).
 
-> [!TIP]
-> Pour un emplacement qui ne nécessite pas de prélèvement, vous pouvez imprimer la livraison entrepôt et l’utiliser comme liste de prélèvement.
+    > [!TIP]
+    > Pour un emplacement qui ne nécessite pas de prélèvement, vous pouvez imprimer la livraison entrepôt et l’utiliser comme liste de prélèvement.
 
 8. Spécifiez la quantité à livrer.  
 
@@ -71,6 +71,8 @@ Vous pouvez créer une livraison entrepôt de deux manières :
     Pour définir la valeur dans le champ **Qté à livrer** sur toutes les lignes à zéro, choisissez l’action **Supprimer qté à livrer**. Par exemple, définir les quantités sur zéro est utile si vous utilisez un lecteur de code-barres pour mettre à jour les quantités d’expédition. Pour ajouter la quantité disponible pour la livraison, choisissez l’action **Remplir qté à livrer**.
 
 9. Reportez la livraison.
+
+    [!INCLUDE [preview-posting-shipment](includes/preview-posting-shipment.md)]
 
 ## Procédure : utiliser des filtres afin d’obtenir des documents origine
 

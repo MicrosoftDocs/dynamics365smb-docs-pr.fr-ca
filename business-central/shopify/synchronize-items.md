@@ -82,17 +82,15 @@ Les paramètres suivants permettent de gérer l’exportation des articles :
 
 |Champ|Désignation|
 |------|-----------|
-|**Groupe prix client**|Indique le prix d’un article dans Shopify. Le prix de vente de ce groupe prix client est pris en compte. Si aucun groupe n’est saisi, le prix de la fiche Article est utilisé.|
-|**Groupe escomptes client**|Indique l'escompte à utiliser pour calculer le prix d’un article dans Shopify. Les prix remisés sont stockés dans le champ **Prix** et le prix total est stocké dans le champ **Comparer au prix**.|
 |**Synchroniser texte étendu article**|Sélectionnez ce champ pour synchroniser le texte étendu de l’article. Comme il sera ajouté au champ *Description*, il peut contenir du code HTML. |
 |**Synchroniser les attributs d’articles**|Sélectionnez ce champ pour synchroniser les attributs d’articles. Les attributs sont présentés sous forme de tableau et inclus dans le champ *Description* dans Shopify.|
+|**Synchroniser texte marketing article**|Sélectionnez ce champ pour synchroniser le texte marketing de l’article. Bien que le texte marketing soit une sorte de description, il est différent du champ **Description** de l’article. Le champ **Description** est généralement utilisé comme nom d’affichage concis pour identifier rapidement le produit. Le texte marketing, quant à lui, est un texte plus riche et descriptif. Son objectif est d’ajouter du contenu marketing et promotionnel. Ce texte peut ensuite être publié avec l’article dans Shopify. Il existe deux manières de créer du texte marketing. Utilisez Copilot, qui suggère le texte généré par l’IA pour vous, ou commencez à partir de zéro.|
 |**Code langue**|Sélectionnez ce champ si vous souhaitez que les versions traduites soient utilisées pour le titre, les attributs et le texte étendu.|
 |**Mappage unité de stock**|Choisissez comment vous voulez remplir le champ Unité de stock dans Shopify. Les options possibles sont les suivantes :<br> - **N° article** pour utiliser le numéro d’article pour les produits et les variantes.<br> - **N° article + Code variante** pour créer une unité de stock en concaténant les valeurs de deux champs. Pour les articles sans variantes, seul le numéro d’article est utilisé.<br>- **Référence fournisseur** pour utiliser la référence fournisseur définie dans *Fiche Article* pour les produits et les variantes.<br> - **Code à barres** pour utiliser le type de code à barres de **Référence article**. Cette option respecte les variantes.|
 |**Séparateur de champ d'unité de stock**|Définissez un séparateur pour l’option **N° article + Code variante**.|
 |**Suivi inventaire**| Choisissez comment le système renseigne le champ **Suivi inventaire** pour les produits exportés dans Shopify. Vous pouvez mettre à jour les informations de disponibilité à partir de [!INCLUDE[prod_short](../includes/prod_short.md)] pour les produits dans Shopify pour lesquels le suivi inventaire est activé. Consultez la section [Inventaire](synchronize-items.md#sync-inventory-to-shopify).|
 |**Stratégie d'inventaire par défaut**|Choisissez *Refuser* pour éviter tout stock négatif du côté de Shopify.|
 |**Possibilité de mettre à jour les produits Shopify**|Définissez ce champ si [!INCLUDE[prod_short](../includes/prod_short.md)] peut uniquement créer des articles ou peut également les mettre à jour. Sélectionnez cette option si, après la synchronisation initiale déclenchée par l’action **Ajouter un article**, vous prévoyez de mettre à jour les produits manuellement en utilisant l’action **Synchroniser le produit** ou via la file d’attente des travaux pour les mises à jour récurrentes. N’oubliez pas de sélectionner **À Shopify** dans le champ **Synchronisation article**.|
-|**Code modèle client**|Choisissez le modèle par défaut à utiliser lors du calcul du prix. En savoir plus sur [Configurer les taxes](setup-taxes.md).|
 
 ### Aperçu du mappage des champs
 
@@ -104,8 +102,8 @@ Les paramètres suivants permettent de gérer l’exportation des articles :
 |Titre de la page du SEO|Valeur fixe : vide. Pour plus d’informations, voir [Mises à jour ponctuelles des produits Shopify](synchronize-items.md#ad-hoc-updates-of-shopify-products).|Aucun affichage.|
 |Description méta du SEO|Valeur fixe : vide. Pour plus d’informations, voir [Mises à jour ponctuelles des produits Shopify](synchronize-items.md#ad-hoc-updates-of-shopify-products).|Aucun affichage.|
 |Support|**Image**. En savoir plus dans la section [Synchroniser les images des articles](synchronize-items.md#sync-item-images)|**Image**|
-|Prix|Le calcul du prix du client final comprend le groupe prix article, le groupe escomptes article, le code devise et le code modèle client.|**Prix unitaire**|
-|Comparer au prix|Le calcul du prix sans escompte comprend le groupe prix article, le groupe escomptes article, le code devise et le code modèle client.|Aucun affichage.|
+|Prix|Le calcul du prix du client final comprend le prix unitaire de l’article, le groupe de prix client, le groupe d’escomptes client et le code devise. En savoir plus dans la section [Synchroniser les prix](synchronize-items.md#sync-prices-with-shopify)|**Prix unitaire**|
+|Comparer au prix|Le calcul du prix sans escompte.|Aucun affichage.|
 |Coût par article|**Coût unitaire**|**Coût unitaire**|
 |Unité de stock|Pour plus de renseignements, consultez **Mappage unité de stock** dans la section [Exporter des articles vers Shopify](synchronize-items.md#export-items-to-shopify).|En savoir plus dans la section [Effet des points de stock et codes barres de produit Shopify sur le mappage et la création d’articles et de variants dans Business Central](synchronize-items.md#effect-of-shopify-product-skus-and-barcodes-on-mapping-and-creating-items-and-variants-in-business-central).|
 |Code-barres|**Références articles** de type Code à barres.|**Références articles** de type Code à barres.|
@@ -193,7 +191,18 @@ La synchronisation des images peut être initialisée de deux manières décrite
 
 ## Synchroniser les prix avec Shopify
 
-Les prix peuvent être exportés pour les articles synchronisés de la manière décrite ci-dessous.
+Les paramètres suivants permettent d’exporter les prix avec ces paramètres :
+
+|Champ|Désignation|
+|------|-----------|
+|**Groupe prix client**|Indique le prix d’un article dans Shopify. Le prix de vente de ce groupe prix client est pris en compte. Si aucun groupe n’est spécifié, le prix de la fiche Article est utilisé.|
+|**Groupe escomptes client**|Indique l’escompte à utiliser pour calculer le prix d’un article dans Shopify. Les prix remisés sont stockés dans le champ **Prix** et le prix total est stocké dans le champ **Comparer au prix**.|
+|**Autoriser remise ligne**|Indique si l’escompte par ligne est autorisé lors du calcul des prix pour Shopify. Ce paramètre s’applique uniquement aux prix de l’article. Les prix pour le groupe de prix client ont leur propre bouton à bascule sur les lignes.|
+|**Prix TTC**|Indique si les calculs de prix pour Shopify comprennent la TVA. En savoir plus sur [Configurer les taxes](setup-taxes.md).|
+|**Groupe de report marché TVA**|Indique le groupe de report marché TVA utilisé pour calculer les prix dans Shopify. Cela devrait être le groupe que vous utilisez pour les clients nationaux. En savoir plus sur [Configurer les taxes](setup-taxes.md).|
+|**Code devise**|Saisissez un code devise uniquement si la boutique en ligne utilise une devise différente de $. La devise spécifiée doit avoir des taux de change configurés. Si votre boutique en ligne utilise la même devise que [!INCLUDEprod_short], laissez le champ vide.|
+
+Vous pouvez exporter les prix pour les articles synchronisés de la manière décrite ci-dessous.
 
 ### Synchroniser les prix à partir de la page des produits Shopify
 
@@ -202,9 +211,8 @@ Les prix peuvent être exportés pour les articles synchronisés de la manière 
 
 ### Remarques sur le calcul des prix
 
-* Pour le calcul des prix, il est important que le champ **Modèle client par défaut** contienne une valeur. En savoir plus sur [Configurer les taxes](setup-taxes.md).
-* Saisissez un **code devise** uniquement si la boutique en ligne utilise une devise différente de $. La devise spécifiée doit avoir des taux de change configurés. Si votre boutique en ligne utilise la même devise que [!INCLUDE[prod_short](../includes/prod_short.md)], laissez le champ vide.
-* Lors de la détermination d’un prix, [!INCLUDE[prod_short](../includes/prod_short.md)] utilise le prix le plus bas. La logique de prix la plus basse signifie que si le prix unitaire défini dans la fiche article est inférieur à celui défini dans le groupe prix, le prix unitaire de la fiche article est utilisé.
+* Lors de la détermination d’un prix, [!INCLUDE[prod_short](../includes/prod_short.md)] utilise le prix le plus bas. Cependant, la logique du prix le plus bas ignore le prix unitaire défini sur la fiche article si un prix est défini dans le groupe de prix. Cela est vrai même si le prix unitaire du prix de la fiche article est inférieur.
+* Pour calculer les prix, le connecteur crée un devis temporaire pour l’article avec une quantité de 1 et utilise une logique de calcul de prix standard. Seuls les prix et escomptes applicables pour la quantité 1 sont utilisés. Vous ne pouvez pas exporter différents prix ou escomptes en fonction de la quantité.
 
 ## Synchroniser l'inventaire sur Shopify
 
@@ -220,7 +228,7 @@ La synchronisation de l'inventaire peut être configurée pour les articles déj
 3. Sélectionnez l’action **Emplacements** pour ouvrir **Emplacements des magasins Shopify**.
 4. Sélectionnez l’action **Obtenir les emplacements Shopify** pour importer tous les emplacements définis dans Shopify. Ils se trouvent dans les paramètres [**Emplacements**](https://www.shopify.com/admin/settings/locations) sous **Administration Shopify**.
 5. Dans le champ **Filtre emplacement**, ajoutez des emplacements si vous voulez inclure l'inventaire en provenance de certains emplacements uniquement. Par exemple, saisissez *EST|OUEST* pour que seul l'inventaire de ces deux emplacements soit disponible à la vente sur la boutique en ligne.
-6. Décochez **Désactivé** pour activer la synchronisation de l'inventaire pour les emplacements Shopify sélectionnés.
+6. Sélectionnez la méthode de calcul des stocks à utiliser pour les emplacements Shopify sélectionnés.
 
 La synchronisation de l'inventaire peut être initialisée des deux manières décrites ci-dessous.
 
@@ -237,9 +245,10 @@ La synchronisation de l'inventaire peut être initialisée des deux manières d�
 
 ### Remarques sur l'inventaire
 
-* Le connecteur calcule l’élément **Stock prévisionnel** à la date du jour et l’exporte dans Shopify.
+* La méthode standard de calcul des stocks est **Solde disponible projeté à la date**. Avec l’extensibilité, vous pouvez ajouter plus d’options. Pour en savoir plus sur l’extensibilité, rendez-vous sur [ exemples](https://github.com/microsoft/ALAppExtensions/blob/main/Apps/W1/Shopify/extensibility_examples.md). 
 * Vous pouvez consulter les informations d'inventaire en provenance de Shopify sur la page **Récapitulatif de l'inventaire Shopify**. Dans ce récapitulatif, un aperçu de l'inventaire Shopify et du dernier inventaire calculé s’affiche dans [!INCLUDE[prod_short](../includes/prod_short.md)]. Il existe un enregistrement par emplacement.
 * Si les informations de stock dans Shopify sont différentes de l’élément **Stock prévisionnel** dans [!INCLUDE[prod_short](../includes/prod_short.md)], le stock est mis à jour dans Shopify.
+* Lorsque vous ajoutez un nouvel emplacement dans Shopify, vous devez également ajouter des enregistrements d’inventaire pour celui-ci. Shopify ne le fait pas automatiquement pour les produits et variantes existants et le connecteur ne synchronisera pas les niveaux d’inventaire pour ces articles dans le nouvel emplacement. Pour en savoir plus, voir [Affecter un inventaire à des emplacements](https://help.shopify.com/manual/locations/assigning-inventory-to-locations).
 
 #### Exemple de calcul du solde disponible prévisionnel
 
