@@ -40,7 +40,7 @@ Les codes traçabilité reflètent les différents positionnements d'une compagn
 Comme ce champ de configuration couvre toutes les transactions réalisables avec cet article, les différents champs Enlogement/Désenlogement sont également sélectionnés. Ces champs n'ont toutefois aucun rapport avec une quelconque application dans l'inventaire ; ils définissent simplement le flux de travail de votre compagnie en ce qui concerne le moment de l'affectation des numéros traçabilité.  
 
 > [!NOTE]  
->  Pour affecter des numéros traçabilité dans les activités entrepôt, les champs **NS – Traçabilité entrepôt** et **N° lot – Traçabilité entrepôt** doivent être sélectionnés sur la fiche code de la traçabilité de l’article.  
+> Pour affecter des numéros traçabilité dans les activités entrepôt, les champs **NS – Traçabilité entrepôt** et **N° lot – Traçabilité entrepôt** doivent être sélectionnés sur la fiche code de la traçabilité de l’article.  
 
 ## Pour configurer des règles d'expiration pour les numéros de série ou de lot
 
@@ -78,6 +78,36 @@ Pour activer la traçabilité, vous devez d’abord attribuer les codes traçabi
 2. Sélectionnez un élément existant dans la liste et ouvrez la page **Fiche article**.  
 3. Sur le raccourci **Traçabilité**, attribuez les codes traçabilité appropriés et choisissez les **Code traçabilité**, **N° de série** et **N° lot**.
     1. Vous pouvez également créer un code traçabilité en sélectionnant l’action **Nouveau**.
+
+## Pour spécifier les soldes d’ouverture des articles que vous suivez
+
+Vous pouvez créer des soldes d’ouverture pour les articles que vous suivez. Étant donné que vous pouvez choisir différentes configurations d’entrepôt, deux options sont disponibles :
+
+* Activez des lots spécifiques sur la page **Journal article** pour permettre aux utilisateurs de saisir les données de série, de lot et de package directement sur les lignes journal.
+* Pour les emplacements où le bouton bascule **Prélèv. et rangement dirigés** est activé, utilisez la page **Journal inventaire entrepôt** pour rendre tous les champs de traçabilité disponibles. Les champs disponibles comprennent les champs **Date garantie** et **Date expiration**.
+
+### Journaux article 
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux article**, puis choisissez le lien associé.
+2. Choisissez le champ **Nom** pour ouvrir une liste de lots journal article.
+3. Choisissez **Nouveau** pour créer un nouveau lot, puis activez le bouton bascule **Traçabilité sur les lignes**.
+4. Choisissez **OK** pour sélectionner le lot que vous avez créé.
+5. Renseignez les champs sur la ligne journal article selon vos besoins. Notez que les champs **N° lot**, **N° série**, **Date expiration**, **Date garantie** et **N° paquet** sont disponibles (si la fonctionnalité est activée).
+6. Choisissez l’action **Reporter** pour ajuster l’inventaire.
+
+> [!NOTE] 
+> [!INCLUDE [prod_short](includes/prod_short.md)] effectue quelques validations mineures lorsque vous saisissez ou importez des données. Une vérification plus complète se produit lorsque vous reportez ou transférez des données des lignes journal vers la **Fenêtre de traçabilité**. Cette dernière se produit automatiquement lorsque vous ouvrez la page **Fenêtre de traçabilité** à partir de la ligne journal article ou si vous choisissez l’option **Mettre à jour les lignes traçabilité**.
+
+### Journal inventaire entrepôt pour les emplacements où le prélèvement et le rangement dirigés sont activés  
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journal inventaire entrepôt**, puis choisissez le lien associé.
+2. Renseignez les champs sur la ligne journal article selon vos besoins. Notez que les champs **N° lot**, **N° série**, **Date expiration**, **Date garantie** et **N° paquet** sont disponibles (si la fonctionnalité est activée).
+3. Choisissez l’action **Enregistrer** pour créer des ajustements d’inventaire. N’oubliez pas que vous devez synchroniser les écritures entrepôt ajustées avec les écritures article associées. Pour en savoir plus, consultez [Synchroniser les écritures entrepôt ajustées](/dynamics365/business-central/inventory-how-count-adjust-reclassify#to-synchronize-the-adjusted-warehouse-entries-with-the-related-item-ledger-entries).
+
+Pour les importations en bloc, utilisez des packages de configuration pour importer des données dans les journaux.
+
+> [!NOTE]
+> Vous ne pouvez pas utiliser **Modifier dans Excel** pour créer des lignes journal avec des informations de suivi.
 
 ## Voir la [formation Microsoft](/training/modules/prepare-item-tracking/) associée
 
