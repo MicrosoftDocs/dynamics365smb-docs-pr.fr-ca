@@ -1,4 +1,5 @@
-# [Bienvenue dans Business Central](index.md)  
+
+# [Bienvenue dans Business Central](index.md)
 # [Fonctionnalités nouvelles et prévues](product-news.md)
 # Mise en route
 ## [Présentation des fonctionnalités d’entreprise](across-business-functionality.md)
@@ -350,10 +351,12 @@
 #### Configuration de la TVA
 ##### [Configuration de la TVA (taxe sur la valeur ajoutée)](finance-setup-vat.md)
 ##### [Configuration du groupe de report](finance-posting-groups.md#tax-posting-groups)
-##### [Configurer la TVA non réalisée](finance-setup-unrealized-vat.md)
-##### [Configurer un relevé fiscal](finance-how-setup-vat-statement.md)
+##### [Configuration de la TVA non déductible](finance-setup-nondeductible-vat.md)
+##### [Configuration de la TVA sur non réalisé](finance-setup-unrealized-vat.md)
+##### [Configuration d’un relevé fiscal](finance-how-setup-vat-statement.md)
 #### [Utilisation de la TVA sur les ventes et les achats](finance-work-with-vat.md)
-#### [Envoyer les rapports TVA aux autorités fiscales](finance-how-report-vat.md)
+#### [Utilisation de la TVA non déductible](finance-how-use-non-deductible-vat.md)
+#### [Envoi des relevés fiscaux aux autorités fiscales](finance-how-report-vat.md)
 #### [Gestion des changements de taux de TVA](finance-how-use-vat-rate-change-tool.md)
 #### [Validation des n° identif. intracomm.](finance-how-validate-vat-registration-number.md)
 
