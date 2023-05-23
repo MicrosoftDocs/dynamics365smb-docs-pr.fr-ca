@@ -232,13 +232,13 @@ Si vous ne parvenez pas à utiliser le protocole SMTP pour envoyer un courriel a
 
 ### Connecter [!INCLUDE[prod_short](includes/prod_short.md)] à votre inscription d’application
 
-Après avoir enregistré votre application dans le portail Azure, dans [!INCLUDE[prod_short](includes/prod_short.md)], utilisez le guide de configuration assistée **Enregistrement AAD de l’application de messagerie** pour y connecter [!INCLUDE[prod_short](includes/prod_short.md)].
+Après avoir enregistré votre application dans le portail Azure, dans [!INCLUDE[prod_short](includes/prod_short.md)], utilisez la page **Enregistrement AAD de l’application de courriel** pour y connecter [!INCLUDE[prod_short](includes/prod_short.md)].
 
 1. Dans [!INCLUDE[prod_short](includes/prod_short.md)], choisissez l’icône ![Ampoule qui ouvre la fenêtre de recherche.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Enregistrement AAD de l’application de messagerie**, puis sélectionnez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 > [!TIP]
-> Sinon, si vous vous connectez pour la première fois, vous pouvez exécuter le guide de configuration assistée **Configurer la messagerie**. Le guide aura besoin des informations pour vous connecter à l’enregistrement de votre application. <!--Need to verify this too. Ask John to clear the aad settings, delete the email accounts, and then run the guide.-->
+> Sinon, si vous vous connectez pour la première fois, vous pouvez exécuter le guide de configuration assistée **Configurer la messagerie**. Dans ce cas, le guide inclura également la page Enregistrement AAD de l’application de courriel pour ajouter les informations de connexion à l’enregistrement de votre application. <!--Need to verify this too. Ask John to clear the aad settings, delete the email accounts, and then run the guide.-->
 
 <!--
 

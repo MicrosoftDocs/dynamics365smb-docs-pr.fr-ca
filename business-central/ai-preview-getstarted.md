@@ -106,7 +106,7 @@ Il existe deux façons de consentir en tant qu’administrateur :
 
 - Le plus simple est d’utiliser Copilot. La première fois que vous utilisez Copilot en tant qu’administrateur, vous êtes invité à consulter les conditions générales, puis à accepter ou non. Pour apprendre à utiliser Copilot, rendez-vous sur [Ajouter du texte marketing aux articles](item-marketing-text.md).  
 
-- L’autre façon est d’utiliser la page **État des avis de confidentialité** dans Business Central et d’accepter l’intégration **Azure OpenAI** pour tous les utilisateurs. Pour en savoir plus, rendez-vous sur [Consentement aux termes et conditions](enable-ai.md#consent-to-or-reject-the-preview-and-privacy-terms-and-conditions-for-all-users).
+- L’autre façon est d’utiliser la page **État des avis de confidentialité** dans Business Central et d’accepter l’intégration **Azure OpenAI** pour tous les utilisateurs. Pour en savoir plus, rendez-vous sur [Consentement aux termes et conditions](enable-ai.md#consent-to-or-reject-preview-and-privacy-terms-and-conditions-for-all-users).
 
 ## Voir aussi
 
