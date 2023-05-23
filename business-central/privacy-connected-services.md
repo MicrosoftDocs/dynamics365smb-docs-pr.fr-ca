@@ -13,7 +13,7 @@ ms.reviewer: jswymer
 
 [!INCLUDE[prod_long](includes/prod_long.md)] est une solution complète de gestion d’entreprise profondément intégrée aux applications de productivité Microsoft 365 et à Power Platform. Votre version d’évaluation gratuite de Business Central peut se connecter à de nombreux services Microsoft différents que vous devez d’abord configurer et activer. Pour tirer le meilleur parti de votre évaluation gratuite, certaines de ces fonctionnalités ont été automatiquement activées pour vous. Même si la connexion de [!INCLUDE[prod_short](includes/prod_short.md)] est activée, ces services ne sont pas inclus dans votre évaluation et doivent être achetés séparément, sauf si vous les avez déjà.
 
-Le tableau ci-dessous indique les connexions aux services Microsoft qui sont automatiquement activées pour les évaluations [!INCLUDE[prod_short](includes/prod_short.md)] :
+Le tableau suivant indique les connexions aux services Microsoft qui sont automatiquement activées pour les évaluations [!INCLUDE[prod_short](includes/prod_short.md)] :
 
 |Nom du service|La connexion est activée automatiquement |Le service est contacté lors de la connexion à Business Central |Exemple de fonctionnalité qui utilise ce service | Apprenez à gérer la connexion et les fonctionnalités qui l’utilisent|  
 |------------|-------------|--------|------------|-------------|
