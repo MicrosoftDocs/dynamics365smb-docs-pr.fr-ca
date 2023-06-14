@@ -14,17 +14,20 @@ ms.search.form: '1803, 9020, 9022, 9026, 9027, 9030, 9000, 9009, 9004, 9005, 902
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], le conteneur pour les données métier appartenant à une unité fonctionnelle ou une entité juridique sont désignés en tant que *compagnie*. Lorsque vous vous connectez à [!INCLUDE[prod_short](includes/prod_short.md)], une compagnie de démonstration et une compagnie vide, *Ma compagnie*, vous sont attribuées. Le basculement entre compagnies est facile : accédez simplement à **Mes paramètres** et passez à l'autre compagnie. Vous pouvez également créer de nouvelles compagnies dans [!INCLUDE[prod_short](includes/prod_short.md)], selon les besoins de votre activité.  
 
+> [!NOTE]
+> Pour créer une compagnie, vous devez être affecté à l’ensemble d’autorisations **Super**.
+
 Lorsque vous créez une compagnie, un guide de configuration assistée vous permet de mettre en place les fondements. Ensuite, vous pouvez importer des données appropriées à partir de votre système hérité ou d'une autre compagnie dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 [!INCLUDE [about-ui-learn](includes/about-ui-learn.md)]
 
 ## Choisir le bon modèle
 
-Si vous décidez d'ajouter une compagnie à votre [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez utiliser le guide de configuration assistée **Créer une nouvelle compagnie** pour démarrer. L'assistant de configuration est disponible à partir de la page **Compagnies** et depuis la zone de recherche dans le champ **Compagnie** sur la page **Mes paramètres**.  
+Si vous décidez d’ajouter une compagnie à votre [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez utiliser le guide de configuration assistée **Créer une nouvelle compagnie** pour démarrer. Le guide de configuration est disponible à partir de la page **Compagnies** et depuis la zone de recherche dans le champ **Compagnie** de la page **Mes configurations**.  
 
-L’assistant de configuration propose deux modèles et une option vierge :
+Le guide de configuration propose deux modèles et une option vierge :
 
-- **Évaluation - Exemples de données**  
+- **Évaluation — Exemples de données**  
     Cela crée une compagnie qui est similaire à la compagnie de démonstration avec des exemples de données et des données de configuration. Ce type de compagnie est à votre disposition sans passer à une période d’essai de 30 jours, ce qui est le cas des autres types.  
 - **Production - Données de configuration uniquement**  
     Cela crée une compagnie qui est similaire à **Ma compagnie** avec des données de configuration, mais sans exemples de données. Vous pourrez utiliser cette compagnie pendant une période d’évaluation de 30 jours.  
