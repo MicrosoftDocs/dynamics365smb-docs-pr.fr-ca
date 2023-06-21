@@ -11,12 +11,12 @@ ms.search.keywords: 'audit, export, SIE, SAF-T, FAC, GDPdU, file export'
 ms.search.form: '5260, 5261, 5264, 5266, 5267, 5270'
 ms.date: 04/04/2023
 ms.author: altotovi
-ms.reviewer: null
+ms.reviewer: kfend
 ---
 
 # Exportation de fichier d’audit
 
-L’exportation d’informations comptables à partir du système représente une demande courante de certaines autorités ou de certains auditeurs au niveau local. Les formats d’exportation et les informations requises peuvent différer. Les écritures pour l’exportation sont généralement des écritures GL ou des écritures de taxe sur la valeur ajoutée (TVA). Cependant, d’autres informations sont parfois requises.
+L’exportation d’informations comptables à partir du système représente une demande courante de certaines autorités ou de certains auditeurs au niveau local. Les formats d’exportation et les informations requises peuvent différer. Les écritures pour l’exportation sont généralement des écritures de grand livre ou des écritures de taxe sur la valeur ajoutée (TVA). Cependant, d’autres informations sont parfois requises.
 
 **Exportation de fichiers d’audit** est une extension préinstallée qui vous permet d’exporter différentes écritures, en fonction des besoins de l’auditeur ou de l’autorité. Quel que soit le type de format ou les écritures, vous pouvez utiliser la fonctionnalité de l’extension pour contrôler le processus d’exportation des données. La fonctionnalité n’a pas de format de fichier préinstallé pour l’exportation. Par conséquent, vous devez soit installer une application qui a un format spécifique (par exemple, SIE, SAF-T ou FAC) ou développer la vôtre.
 
@@ -53,7 +53,7 @@ Procédez comme suit pour fournir le mappage du compte du grand livre pour l’e
 1. Sélectionnez le bouton de recherche ![Bouton de la loupe qui ouvre la fonction Fenêtre de recherche.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), saisissez **Mappage de compte du grand livre**, et sélectionnez le lien correspondant.
 2. Sur la page **Correspondance grand livre**, sélectionnez **Nouveau** pour créer un mappage.
 3. Dans le champ **Code**, spécifiez le code de mappage qui représente la période de déclaration.
-4. Dans le champ **Type de compte standard**, sélectionnez le type de comptes du grand livre standard.
+4. Dans le champ **Type de compte standard**, sélectionnez le type de compte du grand livre standard.
 5. Dans le champ **Format d’exportation du fichier d’audit**, spécifiez le format d’exportation du fichier d’audit auquel les comptes du grand livre standard sont liés.
 6. Dans le champ **Type de période**, le système spécifie une période comptable ou un type de période personnalisé qui a une date et une heure de début flexibles, en fonction de votre sélection. Si vous sélectionnez une période comptable spécifique, le champ sera défini sur **Période comptable**. Sinon, il sera défini sur **Plage de données**.
 7. Dans le champ **Période comptable**, spécifiez la date de début de la période comptable qui sera utilisée comme période de rapport, si vous voulez qu’elles soient identiques.
@@ -63,11 +63,11 @@ Procédez comme suit pour fournir le mappage du compte du grand livre pour l’e
     1. Dans le champ **N° catégorie compte standard** indiquez la catégorie du compte standard ou du code de regroupement utilisé pour le mappage.
     2. Dans le champ **N° de compte standard**, indiquez le code du compte standard ou du code de regroupement utilisé pour le mappage.
 
-10. Cochez la case **Inclure le solde entrant** pour tenir compte du solde entrant du compte du grand livre de type **Compte de bilan** à prendre en compte pour le mappage et non le solde période de la période de déclaration.
+10. Cochez la case **Inclure le solde entrant** pour tenir compte du solde entrant du compte du grand livre de type **Compte de solde** à prendre en compte pour le mappage et non le solde période de la période de déclaration.
 11. Pour lancer le mappage, procédez comme suit :
 
     1. Pour générer des lignes sur la page de **Mappage de compte du grand livre** sur la base d’un plan comptable existant, sélectionnez **Initialiser la source du mappage**. Pour copier le mappage du compte du grand livre à partir d’un autre code de mappage, sélectionnez **Copier depuis un autre mappage**. Lorsque vous avez terminé de créer des lignes, tous les comptes du grand livre qui ont reporté des écritures seront marqués en vert.
-    2. Pour marquer uniquement les comptes du grand livre qui ont des écritures, sélectionnez **Mettre à jour la disponibilité de l’écriture GL**. Si l’option **Inclure le solde entrant** est activée, toutes les écritures GL reportées sont prises en compte pour le calcul. Sinon, seules les écritures GL de la période de déclaration sont prises en compte.
+    2. Pour marquer uniquement les comptes du grand livre qui ont des écritures, sélectionnez **Mettre à jour la disponibilité de l’écriture GL**. Si l’option **Inclure le solde entrant** est activée, toutes les écritures reportées sont prises en compte pour le calcul. Sinon, seules les écritures de la période de déclaration sont prises en compte.
 
 ## Exporter le fichier d’audit
 
@@ -98,10 +98,9 @@ Procédez comme suit pour fournir le mappage du compte du grand livre pour l’e
 > Si vous avez plusieurs entrées à exporter, nous vous déconseillons de les exporter dans la session en cours, en raison d’éventuels problèmes de performances. Au lieu de cela, nous vous recommandons d’utiliser le traitement parallèle pendant les jours ou les heures non ouvrables.
 
 ## Voir aussi .
-
 [Gestion financière](finance.md)  
 [Comprendre le grand livre et le plan comptable](finance-general-ledger.md)  
 [Utilisation des dimensions](finance-dimensions.md)  
-[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+[Utiliser Business Central](ui-work-product.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

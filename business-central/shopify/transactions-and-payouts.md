@@ -1,13 +1,13 @@
 ---
 title: Synchroniser les transactions et les règlements
 description: Configurer et exécuter l’importation des transactions et des paiements à partir de Shopify.
-ms.date: 05/27/2022
+ms.date: 06/06/2023
 ms.topic: article
 ms.service: dynamics365-business-central
 ms.search.form: '30124, 30125, 30130, 30131, 30132, 30133, 30134,'
-author: edupont04
+author: andreipa
 ms.author: andreipa
-ms.reviewer: solsen
+ms.reviewer: bholtorf
 ---
 
 # Transactions et règlements
@@ -21,6 +21,8 @@ Si vous utilisez le paiement Shopify comme fournisseur de paiement, en plus des 
 Les transactions réalisées sur Shopify sont synchronisées avec les commandes et s’affichent dans la page **Commandes Shopify**.
 
 Pour examiner toutes les transactions, sélectionnez l’icône en forme ![d’Ampoule qui ouvre la fenêtre de recherche 1.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Transactions**, puis choisissez le lien associé.
+
+Le champ **N° de facture reportée** peut être utile dans le processus de rapprochement.
 
 Si vous avez configuré le mappage des modes de règlement, un code de mode de règlement est attribué au document de vente créé. En savoir plus dans la section [Mappage du mode de paiement](#payment-method-mapping).
 
@@ -56,7 +58,7 @@ Parties :
 
 * Acheteur : personne qui achète des biens dans une boutique en ligne Shopify.
 * Commerçant : votre compagnie.
-* Fournisseur de service de paiement : entreprise qui facilite le traitement des paiements pour vous. Peut être Shopify Payments ou un tiers.
+* Fournisseur de service de paiement : compagnie qui facilite le traitement des paiements pour vous. Peut être Shopify Payments ou un tiers.
 
 ### Comment l’argent circule
 
@@ -111,11 +113,11 @@ Le commerçant importe un relevé bancaire via le journal rapprochement paiement
 * comme un virement d’une autre banque. Si le transfert prend quelques jours ou implique un échange de devises, vous pouvez utiliser un compte du grand livre provisoire.
 * comme différence sur le compte du grand livre qui représente votre compte chez le fournisseur de service de paiement.
   
-Le solde restant sur le compte général ou bancaire qui représente votre compte chez le fournisseur de service de paiement peut être annulé en tant que « Frais/Commissions »
+Le solde restant sur le compte du grand livre ou bancaire qui représente votre compte chez le fournisseur de service de paiement peut être annulé en tant que « Frais/Commissions »
 
 Problèmes :
 
-1. Vous pouvez créer plusieurs comptes généraux ou bancaires si vous traitez avec plusieurs fournisseurs de service de paiement. Cependant, les commandes clients dans [!INCLUDE[prod_short](../includes/prod_short.md)] ne prennent en charge qu’un seul code de mode de paiement, ce qui complique la gestion des cas où un acheteur utilise plusieurs modes de paiement pour une commande.
+1. Vous pouvez créer plusieurs comptes du grand livre ou bancaires si vous traitez avec plusieurs fournisseurs de service de paiement. Cependant, les commandes clients dans [!INCLUDE[prod_short](../includes/prod_short.md)] ne prennent en charge qu’un seul code de mode de paiement, ce qui complique la gestion des cas où un acheteur utilise plusieurs modes de paiement pour une commande.
 
 ## Voir aussi .
 

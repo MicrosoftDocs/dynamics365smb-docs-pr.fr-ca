@@ -33,11 +33,11 @@ En regard des graphiques KPI, vous obtenez des informations sur des domaines de 
 > [!div class="mx-imgBorder"]
 > ![Informations sur le nuage intelligent.](media/across-intelligent-cloud/intelligentcloudApril19.png "Affiche la page Informations sur le nuage intelligent dans Business Central Online")
 
-La page se connecte également à Power BI pour encore plus d'informations. En option, connectez-vous à Azure AI pour des informations encore plus intelligentes. Pour plus d'informations, voir [Extension Prévision de l'inventaire et des ventes](ui-extensions-sales-forecast.md).  
+La page se connecte également à Power BI pour encore plus d'informations. En option, connectez-vous à Azure AI pour des informations encore plus intelligentes. Pour plus d’informations, voir [Extension Prévision de l’inventaire et des ventes](ui-extensions-sales-forecast.md).  
 
 ## Voir aussi
 
-[Bienvenue dans Business Central](index.md)  
+[Bienvenue dans Business Central](welcome.md)  
 [Extensions de migration vers le nuage](ui-extensions-data-replication.md)  
 [Migration des données locales vers Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-data)  
 

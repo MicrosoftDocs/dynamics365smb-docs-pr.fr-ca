@@ -1,13 +1,13 @@
 ---
 title: Synchroniser les articles et l'inventaire
 description: Configurer et exécuter des synchronisations d’articles entre Shopify et Business Central
-ms.date: 05/27/2022
+ms.date: 06/06/2023
 ms.topic: article
 ms.service: dynamics365-business-central
 ms.search.form: '30116, 30117, 30126, 30127,'
 author: AndreiPanko
 ms.author: andreipa
-ms.reviewer: solsen
+ms.reviewer: bholtorf
 ---
 
 # Synchroniser les articles et l'inventaire
@@ -58,7 +58,7 @@ Le tableau suivant présente les différentes options du champ **Mappage unité 
 |**Vide**|Le champ Unité de stock n’est pas utilisé dans la routine de mappage des articles.|Aucun effet sur la création de l’article.<br>Cette option empêche la création de variantes. Lorsque, dans le document de vente, seul l’article principal est utilisé. Une variante peut toujours être mappée manuellement à partir de la page **Produit Shopify**.|
 |**N° article**|Choisissez si le champ Unité de stock contient le numéro d’article|Aucun effet sur la création de l’article sans les variantes. Pour un article avec des variantes, chaque variante est créée comme un article séparé.<br>Si Shopify a un produit avec deux variantes et que leurs points de stock sont 1000 et 2000, le système [!INCLUDE[prod_short](../includes/prod_short.md)] crée deux articles avec les numéros 1000 et 2000.|
 |**Code de variante**|Le champ Unité de stock n’est pas utilisé dans la routine de mappage des articles.|Aucun effet sur la création de l’article. Si une variante article est créée, la valeur du champ Unité de stock est utilisée comme code. Si l'unité de stock est vide, un code est généré en utilisant le champ **Préfixe variante**.|
-|**N° article + Code variante**|Sélectionnez cette option si le champ Unité de stock contient un numéro d’article et le code variante article séparés par la valeur définie dans le champ **Séparateur de champ d'unité de stock**.|Lorsqu’un article est créé, la première partie de la valeur du champ Unité de stock est utilisée comme **N°**. Si le champ Unité de stock est vide, un numéro d’article est généré en utilisant la série de numéros définie dans le champ **Code modèle article** ou **N° article** de la page **Configuration de l'inventaire**.<br>Lorsqu’un article est créé, la fonction variante utilise la seconde partie de la valeur du champ Unité de stock comme **Code**. Si le champ Unité de stock est vide, un code est généré en utilisant le champ **Préfixe variante**.|
+|**N° article + Code variante**|Sélectionnez cette option si le champ Unité de stock contient un numéro d’article et le code variante article séparés par la valeur définie dans le champ **Séparateur de champ d'unité de stock**.|Lorsqu’un article est créé, la première partie de la valeur du champ Unité de stock est utilisée comme **N°**. Si le champ Unité de stock est vide, un numéro d’article est généré en utilisant la série de numéros définie dans le champ **Code modèle article** ou **N° article** de la page **Configuration de l’inventaire**.<br>Lorsqu’un article est créé, la fonction variante utilise la seconde partie de la valeur du champ Unité de stock comme **Code**. Si le champ Unité de stock est vide, un code est généré en utilisant le champ **Préfixe variante**.|
 |**Référence fournisseur**|Choisissez si le champ Unité de stock contient le numéro d’article du fournisseur. Dans ce cas, le **Numéro du fournisseur de l’article** n’est pas utilisé sur la page **Fiche article** ; le **Numéro d’article du fournisseur** du **Catalogue des fournisseurs d’articles** est plutôt utilisé. Si l’enregistrement *Catalogue fournisseur articles* trouvé contient un code variante, ce dernier est utilisé pour mapper la variante Shopify.|Si un fournisseur correspondant existe dans [!INCLUDE[prod_short](../includes/prod_short.md)], la valeur d'unité de stock sert de **Référence fournisseur** sur la page **Fiche Article** et comme **Référence article** de type *Fournisseur*. <br>Empêche la création de variantes. Utile pour utiliser l’article principal uniquement dans le document de vente. Vous pouvez toujours mapper une variante manuellement à partir de la page **Produit Shopify**.|
 |**Code à barres**|Choisissez si le champ Unité de stock contient un code à barres. Une recherche est effectuée sur les **Références articles** de type *code-barres*. Si l’enregistrement Référence article trouvé contient un code variante, ce dernier est utilisé pour mapper la variante Shopify.|Aucun effet sur la création de l’article. <br>Empêche la création de variantes. Utile pour utiliser l’article principal uniquement dans le document de vente. Vous pouvez toujours mapper une variante manuellement à partir de la page **Produit Shopify**.|
 
@@ -98,17 +98,17 @@ Les paramètres suivants permettent de gérer l’exportation des articles :
 |------|-----------------|-----------------|
 |état|En fonction du champ **État des produits créés** dans la page **Fiche magasin Shopify**. Pour plus d’informations, voir [Mises à jour ponctuelles des produits Shopify](synchronize-items.md#ad-hoc-updates-of-shopify-products).|Aucun affichage.|
 |Titre | **Description**. Si le code langue est défini et qu’il existe une traduction article correspondante, cette dernière remplace la description.|**Description**|
-|Désignation|Combine les textes étendus et les attributs si les bascules correspondantes dans la fiche magasin Shopify sont activées. Respecte le code langue.|Aucun affichage.|
+|Désignation|Combine les textes étendus, le texte marketing et les attributs si vous activez les bascules correspondantes dans la fiche magasin Shopify. Respecte le code langue.|Aucun affichage.|
 |Titre de la page du SEO|Valeur fixe : vide. Pour plus d’informations, voir [Mises à jour ponctuelles des produits Shopify](synchronize-items.md#ad-hoc-updates-of-shopify-products).|Aucun affichage.|
 |Description méta du SEO|Valeur fixe : vide. Pour plus d’informations, voir [Mises à jour ponctuelles des produits Shopify](synchronize-items.md#ad-hoc-updates-of-shopify-products).|Aucun affichage.|
 |Support|**Image**. En savoir plus dans la section [Synchroniser les images des articles](synchronize-items.md#sync-item-images)|**Image**|
-|Prix|Le calcul du prix du client final comprend le prix unitaire de l’article, le groupe de prix client, le groupe d’escomptes client et le code devise. En savoir plus dans la section [Synchroniser les prix](synchronize-items.md#sync-prices-with-shopify)|**Prix unitaire**|
+|Prix|Le calcul du prix du client final comprend le prix unitaire de l’article, le groupe de prix client, le groupe d’escomptes client et le code devise. En savoir plus dans la section [Synchroniser les prix](synchronize-items.md#sync-prices-with-shopify)|**Prix unitaire**. Le prix est uniquement importé dans les articles récemment créés, mais il ne sera pas mis à jour lors des synchronisations ultérieures.|
 |Comparer au prix|Le calcul du prix sans escompte.|Aucun affichage.|
-|Coût par article|**Coût unitaire**|**Coût unitaire**|
+|Coût par article|**Coût unitaire**|**Coût unitaire**. Le coût unitaire est uniquement importé dans les articles récemment créés et il ne sera pas mis à jour lors des synchronisations ultérieures.|
 |Unité de stock|Pour plus de renseignements, consultez **Mappage unité de stock** dans la section [Exporter des articles vers Shopify](synchronize-items.md#export-items-to-shopify).|En savoir plus dans la section [Effet des points de stock et codes barres de produit Shopify sur le mappage et la création d’articles et de variants dans Business Central](synchronize-items.md#effect-of-shopify-product-skus-and-barcodes-on-mapping-and-creating-items-and-variants-in-business-central).|
 |Code-barres|**Références articles** de type Code à barres.|**Références articles** de type Code à barres.|
-|Suivi quantité|En fonction du champ **Suivi inventaire** sur la page **Fiche magasin Shopify**. Consultez la section [Inventaire](synchronize-items.md#sync-inventory-to-shopify).|Aucun affichage.|
-|Poursuivre la vente même en cas de rupture de stock|En fonction de la **Stratégie d'inventaire par défaut** dans la **Fiche magasin Shopify**. Non importé.|Aucun affichage.|
+|Suivi quantité|En fonction du champ **Suivi inventaire** sur la page **Fiche magasin Shopify**. Consultez la section [Inventaire](synchronize-items.md#sync-inventory-to-shopify). Utilisé uniquement lorsque vous exportez un produit pour la première fois.|Aucun affichage.|
+|Poursuivre la vente même en cas de rupture de stock|En fonction de la **Stratégie d'inventaire par défaut** dans la **Fiche magasin Shopify**. Utilisé uniquement lorsque vous exportez un produit pour la première fois.|Aucun affichage.|
 |Type|**Description** de **Code catégorie article**. Si le type n’est pas spécifié dans Shopify, il est ajouté en tant que type personnalisé.|**Code catégorie article**. Mappage par description.|
 |Fournisseur|**Nom** du fournisseur provenant de **N° fournisseur**|Mappage par nom de **N° fournisseur**.|
 |Poids|**Poids brut**.|Aucun affichage.|
@@ -133,7 +133,7 @@ La synchronisation complète ou partielle des articles peut être effectuée de 
 5. Définissez des filtres sur les articles selon vos besoins. Par exemple, vous pouvez filtrer par numéro d’article ou code catégorie article.
 6. Cliquez sur **OK**.
 
-Les articles résultants sont automatiquement créés dans Shopify avec les prix. Selon les choix que vous avez faits, des images et des niveaux d'inventaire peuvent être inclus. L’opération peut prendre un certain temps si un grand nombre d’articles est ajouté.
+Les articles résultants sont automatiquement créés dans Shopify avec les prix. Selon les choix que vous avez faits, des images et des niveaux d’inventaire peuvent être inclus. L’opération peut prendre un certain temps si un grand nombre d’articles est ajouté.
 
 ### Synchroniser les produits de Shopify vers Business Central
 
@@ -197,10 +197,10 @@ Les paramètres suivants permettent d’exporter les prix avec ces paramètres 
 |------|-----------|
 |**Groupe prix client**|Indique le prix d’un article dans Shopify. Le prix de vente de ce groupe prix client est pris en compte. Si aucun groupe n’est spécifié, le prix de la fiche Article est utilisé.|
 |**Groupe escomptes client**|Indique l’escompte à utiliser pour calculer le prix d’un article dans Shopify. Les prix remisés sont stockés dans le champ **Prix** et le prix total est stocké dans le champ **Comparer au prix**.|
-|**Autoriser remise ligne**|Indique si l’escompte par ligne est autorisé lors du calcul des prix pour Shopify. Ce paramètre s’applique uniquement aux prix de l’article. Les prix pour le groupe de prix client ont leur propre bouton à bascule sur les lignes.|
+|**Autoriser escompte ligne**|Indique si l’escompte par ligne est autorisé lors du calcul des prix pour Shopify. Ce paramètre s’applique uniquement aux prix de l’article. Les prix pour le groupe de prix client ont leur propre bouton à bascule sur les lignes.|
 |**Prix TTC**|Indique si les calculs de prix pour Shopify comprennent la TVA. En savoir plus sur [Configurer les taxes](setup-taxes.md).|
 |**Groupe de report marché TVA**|Indique le groupe de report marché TVA utilisé pour calculer les prix dans Shopify. Cela devrait être le groupe que vous utilisez pour les clients nationaux. En savoir plus sur [Configurer les taxes](setup-taxes.md).|
-|**Code devise**|Saisissez un code devise uniquement si la boutique en ligne utilise une devise différente de $. La devise spécifiée doit avoir des taux de change configurés. Si votre boutique en ligne utilise la même devise que [!INCLUDEprod_short], laissez le champ vide.|
+|**Code devise**|Saisissez un code devise uniquement si la boutique en ligne utilise une devise différente de la devise locale ($). La devise spécifiée doit avoir des taux de change configurés. Si votre boutique en ligne utilise la même devise que [!INCLUDEprod_short], laissez le champ vide.|
 
 Vous pouvez exporter les prix pour les articles synchronisés de la manière décrite ci-dessous.
 

@@ -17,7 +17,7 @@ Une gestion efficace des créances est importante pour la santé financière gé
 
 ## Mise en route
 
-Lorsque vous ouvrez un document vente reporté, une notification s'affiche en haut de la page. Pour utiliser l'extension Prévision de retard de paiement vous pouvez choisir de sélectionner **Activer** dans la notification. Sinon, vous pouvez configurer l'extension manuellement. Par exemple, si vous regrettez d'ignorer la notification.  
+Lorsque vous ouvrez un document vente reporté, une notification s’affiche en haut de la page. Pour utiliser l'extension Prévision de retard de paiement vous pouvez choisir de sélectionner **Activer** dans la notification. Sinon, vous pouvez configurer l'extension manuellement. Par exemple, si vous regrettez d'ignorer la notification.  
 
 Pour activer manuellement l'extension, procédez comme suit :
 
@@ -29,7 +29,7 @@ Pour activer manuellement l'extension, procédez comme suit :
 
 ## Affichage de toutes les prévisions de paiement
 
-Si vous activez l'extension, une vignette **Retards de paiements prévus** est disponible dans le tableau de bord **Gestionnaire d'activité**. La vignette affiche le nombre de retards de paiements prévus, et vous permet d'ouvrir la page **Écritures client** où vous pouvez examiner plus en détail les factures reportées. Il existe trois colonnes à examiner attentivement :  
+Si vous activez l'extension, une vignette **Retards de paiements prévus** est disponible dans le tableau de bord **Gestionnaire d'activité**. La vignette affiche le nombre de retards de paiements prévus, et vous permet d’ouvrir la page **Écritures client** où vous pouvez examiner plus en détail les factures reportées. Il existe trois colonnes à examiner attentivement :  
 
 * **Retard de paiement** - Indique si le paiement de la facture sera en retard.
 * **Niveau de fiabilité de la prévision** - Indique la fiabilité de la prévision. **Elevée** signifie que la prévision est fiable à au moins 90 %, **Moyenne** est compris entre 80 et 90 %, et **Faible** est inférieur à 80 %.
@@ -65,8 +65,8 @@ Ces services web sont sans état. Autrement dit, ils utilisent des données uniq
 Pour chaque **Écriture client** ayant une **Facture vente reportée** associée :
 
 * Montant ($) avec TVA
-* Les modalités de paiement en jours sont calculées comme suit : **Date d'échéance** moins **Date de report**.
-* S'il existe une note de crédit affectée. 
+* Les modalités de paiement en jours sont calculées comme suit : **Date d’échéance** moins **Date de report**.
+* S’il existe une note de crédit affectée. 
 
 En outre, l'enregistrement est enrichi de données agrégées provenant d'autres factures associées au même client. Notamment :
 
@@ -118,7 +118,7 @@ Vous pouvez également utiliser votre propre service web prévisionnel basé sur
 
 [Documentation Azure Machine Learning Studio](/azure/machine-learning/classic/)  
 [Personnalisation de Business Central à l'aide d'extensions](ui-extensions.md)  
-[Bienvenue dans [!INCLUDE[prod_long](includes/prod_long.md)]](index.md)  
+[Bienvenue dans [!INCLUDE[prod_long](includes/prod_long.md)]](welcome.md)  
 [Utiliser l’intelligence artificielle dans Microsoft Dynamics 365 Business Central](/training/paths/use-artificial-intelligence/)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
