@@ -16,7 +16,7 @@ Une écriture comptable client pour laquelle le champ **En attente** est renseig
 
 Après avoir créé les rappels et effectué toutes les modifications souhaitées, vous pouvez imprimer les rapports de test ou émettre les rappels, en général par courriel.
 
-### Pour créer automatiquement un rappel
+### <a name="to-create-a-reminder-automatically" />Pour créer automatiquement un rappel
 
 Un rappel est identique à une facture. Lorsque vous créez un rappel, un en-tête rappel, ainsi qu'une ou plusieurs lignes rappel, doivent être renseignés. Vous pouvez utiliser une fonction pour créer des relances pour tous les clients automatiquement.
 
@@ -25,7 +25,7 @@ Un rappel est identique à une facture. Lorsque vous créez un rappel, un en-tê
 3. Sur la page **Créer rappels**, renseignez les champs pour définir comment et pour qui les rappels sont créées.
 4. Cliquez sur le bouton **OK**.
 
-### Pour créer un rappel manuellement
+### <a name="to-create-a-reminder-manually" />Pour créer un rappel manuellement
 
 Sur la page **Rappel**, vous pouvez renseigner le raccourci **Général** manuellement et ensuite renseigner les lignes automatiquement.
 
@@ -42,7 +42,7 @@ Sur la page **Rappel**, vous pouvez renseigner le raccourci **Général** manuel
 
 8. Cliquez sur le bouton **OK**.
 
-### Pour remplacer les textes rappel
+### <a name="to-replace-reminder-texts" />Pour remplacer les textes rappel
 
 Vous pouvez déterminer de plusieurs manières le texte devant figurer sur le rappel imprimé. Dans certains cas, vous pouvez remplacer les textes début et fin définis pour le niveau actuel par ceux d'un autre niveau.
 
@@ -51,7 +51,7 @@ Vous pouvez déterminer de plusieurs manières le texte devant figurer sur le ra
 3. Sur la page **Mettre à jour texte rappel**, entrez le niveau requis dans le champ **Niveau rappel**.
 4. Cliquez sur le bouton **OK** pour que le programme mette à jour les textes début et fin.
 
-### Pour émettre un rappel
+### <a name="to-issue-a-reminder" />Pour émettre un rappel
 
 Après avoir créé les relances et effectué toutes les modifications souhaitées, vous pouvez lancer les impressions test ou émettre les relances.
 
@@ -76,7 +76,7 @@ De plus, émettre un rappel peut créer des écritures de TVA.
 
 Le rappel est imprimé pour être envoyé à une adresse de courriel spécifiée en tant que pièce jointe PDF.
 
-### Pour annuler un rappel émis
+### <a name="to-cancel-an-issued-reminder" />Pour annuler un rappel émis
 
 Si des rappels ont été émis par erreur, vous pouvez les annuler avant leur envoi. Vous pouvez les annuler un par un ou en lot.
 

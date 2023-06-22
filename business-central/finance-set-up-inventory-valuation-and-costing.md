@@ -7,7 +7,7 @@ ms.search.keywords: null
 ms.date: 06/16/2021
 ms.author: edupont
 ---
-# Configuration de l'évaluation de l'inventaire et des coûts
+# <a name="setting-up-inventory-valuation-and-costing" />Configuration de l'évaluation de l'inventaire et des coûts
 
 Pour vous assurer que les coûts ajustés sont enregistrés correctement, vous devez configurer plusieurs champs et pages avant de commencer à effectuer des transactions article. En règle générale, les entreprises choisissent une méthode d'évaluation des coûts spécifique et l’appliquent aux articles en inventaire, par exemple, pour les aider à suivre la valeur des articles en stock.  
 
@@ -30,7 +30,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Assurez-vous que les retours achat sont affectés à la transaction entrante initiale afin de préserver la valeur d'inventaire.|Champ **Inversion coût exact obligatoire** sur la page **Achats**|
 |Configurer les règles d'arrondissement à appliquer lors de l'ajustement ou de la proposition des prix article et lors de l'ajustement ou de la proposition des coûts standard.|Page **Méthode d'arrondissement**|  
 
-## Voir aussi
+## <a name="see-also" />Voir aussi
 
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Configurer des informations générales relatives à l'inventaire](inventory-how-setup-general.md)  

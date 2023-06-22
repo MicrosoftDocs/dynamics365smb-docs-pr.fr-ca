@@ -11,7 +11,7 @@ ms.custom: bap-template
 ms.search.keywords: 'journals, recurring, accrual, renumber, bulk-post'
 ms.search.form: '39, 101, 102, 182, 184, 185, 201, 207, 250, 251, 253, 255, 256, 261, 262, 283, 519, 750, 751, 752, 753, 754, 755, 12409, 12410, 12411, 1290, 10101, 11400, 11402, 11403, 11405, 11300, 2000000, 2000001, 2000003, 2000020, 2000021, 2000022'
 ---
-# Utiliser des journaux généraux
+# <a name="work-with-general-journals" />Utiliser des journaux généraux
 
 La plupart des transactions financières sont reportées dans le grand livre via les documents, tels que des factures achat et des documents de vente. Cependant, vous pouvez également traiter des activités commerciales telles que :
 
@@ -33,7 +33,7 @@ Les informations que vous saisissez dans un journal sont temporaires et peuvent 
 > [!NOTE]
 > [!INCLUDE[journal-showhide-columns-inline-tip](includes/journal-showhide-columns-inline-tip.md)]  
 
-## Utiliser des lots et des modèles journal
+## <a name="use-journal-templates-and-batches" />Utiliser des lots et des modèles journal
 
 Il existe plusieurs modèles journal général. Chaque modèle journal est représenté par une page dédiée avec des fonctions particulières et les champs nécessaires pour la prise en charge de ces fonctions, notamment la page **Journal rapprochement paiement** qui permet de traiter les paiements bancaires et la page **Journal paiement** qui permet de payer vos fournisseurs ou de rembourser vos employés. Pour en savoir plus, voir [Exécuter des paiements](payables-make-payments.md) et [Rapprocher des paiements clients avec le journal règlement ou les écritures client](receivables-how-apply-sales-transactions-manually.md).
 
@@ -45,7 +45,7 @@ Pour chaque modèle journal, vous pouvez configurer votre propre journal personn
 > [!TIP]
 > Vous pouvez ajouter ou supprimer des champs dans les journaux en personnalisant ceux-ci. Pour plus d’informations, consultez [Personnaliser votre espace de travail](ui-personalization-user.md).
 
-### Validation des lots journal général
+### <a name="validating-general-journal-batches" />Validation des lots journal général
 
 Vous pouvez activer une vérification des antécédents qui aidera à éviter les retards lors du report. Le contrôle vous informe lorsqu’une erreur dans le journal financier sur lequel vous travaillez vous empêche de reporter le journal. Sur la page **Lot journal général**, vous pouvez choisir **Vérification des erreurs d’arrière-plan** pour que [!INCLUDE[prod_short](includes/prod_short.md)] valide les journaux financiers, tels que les journaux généraux ou paiement, pendant que vous les utilisez.
 
@@ -55,20 +55,20 @@ Vous pouvez utiliser les actions **Afficher les lignes avec des problèmes** et 
 
 [!INCLUDE [background_doc_journal_check](includes/background_doc_journal_check.md)]  
 
-## Compte principaux et comptes de contrepartie
+## <a name="understanding-main-accounts-and-balancing-accounts" />Compte principaux et comptes de contrepartie
 
 Si vous avez configuré des comptes de contrepartie par défaut pour les lots journal sur la page **Journaux généraux**, le compte de contrepartie sera renseigné automatiquement lorsque vous renseignez le champ **Numéro du compte**. Sinon, renseignez manuellement les champs **Numéro du compte** et **N° compte contrepartie**. Un montant positif dans le champ **Montant** est débité du compte principal et crédité dans le compte contrepartie. Un montant négatif est crédité sur le compte principal et débité du compte contrepartie.
 
 > [!NOTE]  
 > La TVA est calculée séparément pour le compte principal et le compte de contrepartie, afin qu'ils puissent utiliser des taux de pourcentage de TVA différents.
 
-## Utiliser des journaux récurrents
+## <a name="work-with-recurring-journals" />Utiliser des journaux récurrents
 
 Un journal récurrent est un journal général contenant des champs spécifiques pour la gestion des transactions que vous reportez fréquemment avec peu ou pas de modifications. Par exemple, les transactions pour les dépenses telles que le loyer, les abonnements, l’électricité et le chauffage. L’utilisation de journaux récurrents vous permet de reporter des montants fixes et variables et de spécifier des écritures d’inversion automatiques pour le jour suivant la date de report. Les clés d'affectation vous permettent de répartir les écritures récurrentes entre plusieurs comptes. Pour en savoir plus, voir [Ventilation des montants journal récurrent sur plusieurs comptes](#allocating-recurring-journal-amounts-to-several-accounts).
 
 Avec un journal récurrent, vous ne créez les écritures qui sont régulièrement reportées qu’une fois. Par exemple, les comptes, dimensions, valeurs de dimension, etc. restent dans le journal après report. Si des modifications sont nécessaires, vous pouvez les apporter à chaque report.
 
-### Champ Mode récurrent
+### <a name="recurring-method-field" />Champ Mode récurrent
 
 Le champ **Mode récurrent** est important. Il détermine la manière dont le montant de la ligne journal est traité après report. Par exemple, si vous utilisez le même montant chaque fois que vous reportez la ligne, vous pouvez conserver ce montant. Si vous utilisez les mêmes comptes et le même texte pour la ligne, mais que le montant varie chaque fois que vous reportez, vous pouvez choisir de supprimer le montant après report.
 
@@ -86,11 +86,11 @@ Le champ **Mode récurrent** est important. Il détermine la manière dont le mo
 > [!NOTE]  
 > Les champs TVA peuvent être renseignés sur la ligne journal récurrent ou sur la ligne journal affectation, mais pas sur les deux. Ils peuvent être renseignés sur la page **Affectations** uniquement si les lignes correspondantes du journal récurrent ne sont pas renseignées.
 
-### Champ Périodicité récurrente
+### <a name="recurring-frequency-field" />Champ Périodicité récurrente
 
 Ce champ de formule de date détermine la fréquence de report de l’écriture sur la ligne journal et doit être renseigné. En savoir plus sur [Utiliser des formules de date](ui-enter-date-ranges.md#use-date-formulas).
 
-#### Exemples
+#### <a name="examples" />Exemples
 
 Si la ligne journal doit être reportée tous les mois, saisissez « 1M ». Après chaque report, la date du champ **Date de report** est mise à jour, elle est remplacée par la même date du mois suivant.
 
@@ -100,7 +100,7 @@ Si vous souhaitez reporter une écriture le dernier jour de chaque mois, vous po
 
 * Reportez la première écriture n’importe quel jour du mois en saisissant la formule : 1M+CM. Avec cette formule, la date de report sera située après un mois entier + le nombre de jours restants du mois en cours.
 
-### Champ Date expiration
+### <a name="expiration-date-field" />Champ Date expiration
 
 Ce champ détermine la date à laquelle la ligne est reportée pour la dernière fois. La ligne n’est plus reportée après cette date.
 
@@ -108,7 +108,7 @@ L’avantage d’utiliser le champ Date d’expiration est que la ligne n’est 
 
 Si le champ est vide, la ligne est reportée à chaque fois, jusqu’à ce qu’elle soit supprimée du journal.
 
-### Ventilation des montants journal récurrent sur plusieurs comptes
+### <a name="allocating-recurring-journal-amounts-to-several-accounts" />Ventilation des montants journal récurrent sur plusieurs comptes
 
 Sur la page **Journal récurrent**, vous pouvez choisir l’action **Affectations** pour spécifier la manière dont les montants de la ligne journal récurrent sont affectés à plusieurs comptes et dimensions. Une affectation fonctionne comme une ligne compte de contrepartie pour la ligne journal récurrent.
 
@@ -126,7 +126,7 @@ Par exemple, votre compagnie a quelques unités fonctionnelles et une poignée d
 > [!NOTE]
 > Les dimensions que vous définissez sur les lignes affectation ne sont pas calculées automatiquement et vous devez spécifier les valeurs de dimension à définir sur les comptes d’affectation. Si vous souhaitez conserver le lien entre la dimension du compte source et la dimension du compte d’affectation, nous vous recommandons d’utiliser la fonctionnalité [Comptabilité analytique](finance-about-cost-accounting.md) à la place.
 
-#### Exemple : Ventilation des paiements du loyer entre plusieurs départements
+#### <a name="example-allocating-rent-payments-to-different-departments" />Exemple : Ventilation des paiements du loyer entre plusieurs départements
 
 Vous payez un loyer tous les mois, vous avez donc saisi le montant du loyer sur le compte règlement d’une ligne journal récurrent. Sur la page **Affectations**, vous pouvez utiliser la dimension Département pour répartir les dépenses entre plusieurs départements. Par exemple, selon le nombre de pieds carrés qu’occupe chaque département. Le calcul est basé sur le pourcentage d'affectation de chaque ligne. Vous pouvez ventiler de diverses manières :
 
@@ -135,11 +135,11 @@ Vous payez un loyer tous les mois, vous avez donc saisi le montant du loyer sur 
 
 [!INCLUDE [rev-general-journal](includes/rev-general-journal.md)]
 
-### Calcul de date de contrepassation
+### <a name="calculate-the-reversal-date" />Calcul de date de contrepassation
 
 Lorsque vous utilisez des journaux généraux récurrents pour reporter les régularisations à la fin d’une période, il est important d’avoir un contrôle total sur les écritures de contrepassation. Sur la page **Journaux généraux récurrents**, le champ **Calcul de date de contrepassation** vous permet de contrôler la date à laquelle les écritures de contrepassation seront reportées lorsque les méthodes de contrepassation récurrentes seront utilisées.
 
-#### Exemple :
+#### <a name="example" />Exemple :
 
 Les régularisations sont généralement reportées avec des méthodes récurrentes **Fixe**, **Variable** ou **Solde** sur la ligne journal. La date de report du montant reporté sur le compte sur la ligne journal est calculée en utilisant la fréquence récurrente. La date de report de l’écriture contrepartie est calculée à l’aide du champ **Calcul de la date de contrepassation**, comme suit :
 
@@ -149,7 +149,7 @@ Les régularisations sont généralement reportées avec des méthodes récurren
 > [!NOTE]
 > Par défaut, le champ **Calcul de la date de contrepassation** n’est pas disponible sur la page **Journaux généraux récurrents**. Pour utiliser le champ, vous devez l’ajouter en personnalisant la page. Pour plus d'informations, voir [Personnaliser votre espace de travail](ui-personalization-user.md).
 
-## Utiliser des journaux standard
+## <a name="work-with-standard-journals" />Utiliser des journaux standard
 
 Lorsque vous créez des lignes journal dont vous savez que vous risquez de les recréer ultérieurement, vous pouvez les enregistrer en tant que journal standard avant de reporter le journal. La même chose s’applique aux journaux article et aux journaux généraux.
 
@@ -159,7 +159,7 @@ Lorsque vous créez des lignes journal dont vous savez que vous risquez de les r
 > [!NOTE]  
 > Les procédures suivantes traitent du journal article, mais concernent également le journal général.
 
-### Pour enregistrer un journal standard
+### <a name="to-save-a-standard-journal" />Pour enregistrer un journal standard
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux article**, puis choisissez le lien associé.
 2. Entrez une ou plusieurs lignes journal.
@@ -175,7 +175,7 @@ Lorsque vous créez des lignes journal dont vous savez que vous risquez de les r
 
 Lorsque vous enregistrez le journal article standard, la page journal article s’affiche afin que vous puissiez la reporter.
 
-### Pour réutiliser un journal standard
+### <a name="to-reuse-a-standard-journal" />Pour réutiliser un journal standard
 
 > [!NOTE]
 > Les journaux standard n’ont pas toujours les mêmes champs que les journaux généraux. Lorsque vous utilisez l’action Extraire journaux standard pour copier les champs dans le journal général, le journal général peut contenir moins d’informations que si vous l’aviez créé manuellement. 
@@ -199,7 +199,7 @@ Lorsque vous enregistrez le journal article standard, la page journal article s�
 5. Sélectionnez les feuilles articles standard que vous souhaitez ajuster, puis sélectionnez l'action **Recalculer le montant unitaire**. Cette action met à jour avec le champ Montant unitaire avec le coût unitaire actuel de l’article.
 6. Sélectionnez l'action **Valider**.
 
-## Pour renuméroter des numéros de document dans les feuilles
+## <a name="to-renumber-document-numbers-in-journals" />Pour renuméroter des numéros de document dans les feuilles
 
 Pour éviter les erreurs de report causées par le numéro de document, vous pouvez utiliser l’action **Renuméroter les numéros de document** avant de reporter un journal.
 
@@ -211,7 +211,7 @@ Cette fonction fonctionne également sur les vues filtrées.
 
 Toute renumérotation des numéros de document respectera les affectations associées, par exemple une affectation de paiement qui a été effectuée à partir du document de la ligne journal pour un compte fournisseur. Par conséquent, les champs **Code référence** et **N° doc. référence** seront mis à jour sur les écritures.
 
-### Pour renuméroter des documents dans les journaux
+### <a name="to-renumber-documents-in-journals" />Pour renuméroter des documents dans les journaux
 
 La procédure suivante est basée sur la page **Journal général**, mais s'applique à tous les autres journaux qui sont basés sur le journal général, comme la page **Journal des paiements**.
 
@@ -220,9 +220,9 @@ La procédure suivante est basée sur la page **Journal général**, mais s'appl
 
 Les valeurs dans le champ **N° document** sont modifiées, le cas échéant, pour que le numéro de document sur les lignes journal individuelles ou groupées soit dans un ordre séquentiel. Une fois que les documents sont renumérotés, vous pouvez procéder au report du journal.
 
-## Voir la [formation Microsoft](/training/paths/use-journals-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-trainingtrainingpathsuse-journals-dynamics--business-central" />Voir la [formation Microsoft](/training/paths/use-journals-dynamics-365-business-central/) associée
 
-## Voir aussi
+## <a name="see-also" />Voir aussi
 
 [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)  
 [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)  

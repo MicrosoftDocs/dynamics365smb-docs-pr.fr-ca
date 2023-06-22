@@ -10,7 +10,7 @@ ms.search.keywords: null
 ms.date: 06/08/2021
 ms.author: edupont
 ---
-# Détails de conception : évaluation de l'inventaire
+# <a name="design-details-inventory-valuation" />Détails de conception : évaluation de l'inventaire
 L’évaluation de l'inventaire est la détermination du coût qui est affecté à un article d'inventaire, comme exprimé par l’équation suivante.  
 
 Fin inventaire = Début inventaire + achats nets – coût des biens vendus  
@@ -19,7 +19,7 @@ Le calcul de l'évaluation de l'inventaire utilise le champ **Coût indiqué (r�
 
 Les écritures sont affectées les unes en fonction des autres, soit par une affectation fixe, soit en fonction du principe général coût-flux défini par le mode d’évaluation du coût. Une écriture de diminution d'inventaire peut être affectée avec plusieurs écritures d'augmentation avec des dates de report différentes et éventuellement différents coûts d’acquisition. Pour plus d'informations, voir [Détails de conception : traçabilité](design-details-item-application.md). Par conséquent, le calcul de la valeur d'inventaire d’une date donnée est basée sur l’ajout des écritures valeur positives et négatives.  
 
-## Rapport Évaluation de l'inventaire  
+## <a name="inventory-valuation-report" />Rapport Évaluation de l'inventaire
 Pour calculer la valeur du stock dans le rapport **Évaluation du stock**, le rapport commence par calculer la valeur de stock de l'article à une date de début donnée. Il ajoute ensuite la valeur des augmentations d'inventaire et soustrait la valeur des diminutions d'inventaire jusqu'à une date fin donnée. Le résultat final est la valeur inventaire à la date fin. Le rapport calcule ces valeurs en additionnant les valeurs dans le champ **Coût indiqué (réel)** dans les écritures valeur, à l'aide des dates de report en tant que filtres.  
 
 Le rapport imprimé affiche toujours les montants réels, c'est-à-dire le coût des écritures qui ont été reportées comme étant facturées. Le rapport imprime également le coût prévu des écritures reportées comme étant réceptionnées ou livrées, si vous sélectionnez le champ Inclure coûts prévus sur le raccourci Options.  
@@ -30,7 +30,7 @@ Le rapport imprimé affiche toujours les montants réels, c'est-à-dire le coût
 > [!IMPORTANT]  
 >  Les montants des colonnes **Valeur** de l'état sont basés sur la date de comptabilisation des transactions d'un article.  
 
-## Rapport Évaluation de l'inventaire - TEC  
+## <a name="inventory-valuation---wip-report" />Rapport Évaluation de l'inventaire - TEC
 Une compagnie manufacturière doit déterminer la valeur de trois types d'inventaire :  
 
 * Inventaire de matières premières  
@@ -45,7 +45,7 @@ La valeur de l'inventaire TEC est déterminée par l'équation suivante :
 
 L'objectif de l'évaluation de l'inventaire TEC est de déterminer la valeur des articles dont la fabrication n'est pas encore terminée à une date donnée. Par conséquent, la valeur inventaire TEC est basée sur les écritures valeur associées à la consommation et aux écritures du grand livre de capacité. Les écritures de consommation doivent être entièrement facturées à la date de l'évaluation. Par conséquent, l'état **Inventory Valuation – WIP** indique les coûts représentant la valeur stock TEC pour deux catégories : consommation et capacité.  
 
-## Voir aussi  
+## <a name="see-also" />Voir aussi
 [Détails de conception : rapprochement de comptabilité](design-details-reconciliation-with-the-general-ledger.md)   
 [Détails de conception : réévaluation](design-details-revaluation.md)   
 [Détails de conception : report de bon de production](design-details-production-order-posting.md)

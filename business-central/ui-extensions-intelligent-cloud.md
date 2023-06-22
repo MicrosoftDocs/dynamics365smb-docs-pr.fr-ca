@@ -11,15 +11,15 @@ ms.date: 04/01/2021
 ms.author: edupont
 ---
 
-# Extension Base de migration vers le nuage
+# <a name="cloud-migration-base-extension" />Extension Base de migration vers le nuage
 
 Cette extension vous guidera tout au long du processus de configuration d'une connexion entre votre solution sur site et votre environnement [!INCLUDE [prod_short](includes/prod_short.md)] Online lorsque vous démarrez la migration vers le nuage.  
 
 Une fois la connexion configurée, vous pouvez migrer les données de votre solution sur site vers [!INCLUDE[prod_short](includes/prod_short.md)] Online. Cette extension doit s'exécuter en combinaison avec une extension de réplication de données disponible pour votre solution sur site spécifique. Pour en savoir plus, voir [Exécuter l’outil de migration vers le nuage](/dynamics365/business-central/dev-itpro/administration/migration-tool).  
 
-## Voir la [formation Microsoft](/training/modules/connect-intelligent-cloud-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-trainingtrainingmodulesconnect-intelligent-cloud-dynamics--business-central" />Voir la [formation Microsoft](/training/modules/connect-intelligent-cloud-dynamics-365-business-central/) associée
 
-## Voir aussi .
+## <a name="see-also" />Voir aussi .
 
 [Exécution de l’outil de migration vers le nuage](/dynamics365/business-central/dev-itpro/administration/migration-tool)  
 [Extensions Nuage intelligent pour la migration vers le nuage](ui-extensions-data-replication.md)  

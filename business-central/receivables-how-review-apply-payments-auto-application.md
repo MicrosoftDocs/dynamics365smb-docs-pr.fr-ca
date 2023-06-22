@@ -11,7 +11,7 @@ ms.search.form: '1290, 1294, 1287'
 ms.date: 04/01/2021
 ms.author: edupont
 ---
-# Réviser et affecter les paiements manuellement après un affectation automatique
+# <a name="review-and-apply-payments-manually-after-automatic-application" />Réviser et affecter les paiements manuellement après un affectation automatique
 Pour chaque ligne journal représentant un paiement sur la page **Journal rapprochement paiement**, vous pouvez ouvrir la page **Affectation paiement** pour afficher toutes les écritures ouvertes candidates au paiement et les informations détaillées pour chaque écriture sur la correspondance des données sur laquelle une affectation de paiement est basée. Ici, vous pouvez affecter les paiements manuellement ou affecter à nouveau les paiements qui ont été automatiquement affectés à une écriture incorrecte. Pour plus d'informations sur l'affectation automatique, voir [Rapprocher les paiements à l'aide de l'affectation automatique](receivables-how-reconcile-payments-auto-application.md).
 
 > [!IMPORTANT]  
@@ -30,7 +30,7 @@ Aucun ajustement profits et pertes requis en raison de conversions de devise n'e
 > [!NOTE]  
 >   Vous ne pouvez affecter un paiement qu'à un seul compte. Si vous souhaitez diviser l'affectation sur plusieurs écritures ouvertes, par exemple pour affecter le paiement d'une somme forfaitaire, les écritures ouvertes doivent être pour le même compte. Pour plus d'informations, reportez-vous aux étapes 7 et 8 de la procédure de cette rubrique.
 
-## Pour réviser ou affecter les paiements après une affectation automatique
+## <a name="to-review-or-apply-payments-after-automatic-application" />Pour réviser ou affecter les paiements après une affectation automatique
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux rapprochement bancaire**, puis sélectionnez le lien associé.
 2. Ouvrez le journal de rapprochement de paiement pour un compte bancaire pour lequel vous souhaitez rapprocher les paiements. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
 3. Sur la page **Journal rapprochement paiement**, sélectionnez un paiement que vous souhaitez réviser ou affecter manuellement à une ou plusieurs écritures ouvertes, puis sélectionnez l'action **Affecter manuellement**.
@@ -43,7 +43,7 @@ Aucun ajustement profits et pertes requis en raison de conversions de devise n'e
 
 La page **Affectation paiement** se ferme puis, dans la fenêtre **Journal rapprochement paiement**, la valeur du champ **Fiabilité correspondance** est modifiée et définie sur **Accepté** pour vous indiquer que vous avez révisé ou affecté manuellement le paiement.
 
-## Voir aussi
+## <a name="see-also" />Voir aussi
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Vente](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

@@ -11,7 +11,7 @@ ms.search.form: '42, 48, 9305'
 ms.date: 09/02/2022
 ms.author: edupont
 ---
-# Vente de produits avec un document de vente client
+# <a name="sell-products-with-a-customer-sales-order" />Vente de produits avec un document de vente client
 
 Cet article fournit des conseils aux utilisateurs sur le moment d’utiliser un document de vente plutôt qu’une simple facture. Si votre processus de vente exige que vous ne livriez que partiellement une commande, par exemple si la quantité totale n’est pas disponible d’un coup, vous devez traiter cette vente en créer un document de vente.
 
@@ -23,7 +23,7 @@ Dans les environnements d'entreprise où le client paie immédiatement, par exem
 
 Vous pouvez même créer des commandes à paiement direct pour les clients non enregistrés en configurant une fiche « client en espèces », vers laquelle vous pointez sur le document de vente. En savoir plus sur [Configurer les clients effectuant un achat au comptoir](finance-how-to-set-up-cash-customers.md).
 
-## Créer un document de vente
+## <a name="create-a-sales-order" />Créer un document de vente
 
 > [!NOTE]  
 > La procédure suivante suppose que le client est déjà configuré. Pour obtenir des instructions sur la façon de procéder, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).
@@ -87,13 +87,13 @@ La boîte de dialogue **Valider et envoyer la confirmation** s'ouvre et indique 
 
 Les écritures article et client associées sont à présent créées dans votre système, et le document de vente est sorti en tant que document au format PDF. Lorsque le document de vente est entièrement reporté, il est supprimé de la liste des documents de vente et remplacé par de nouveaux documents dans la liste des factures vente reportées et la liste des livraisons vente reportées.  
 
-## Numéro de document externe
+## <a name="external-document-number" />Numéro de document externe
 
 [!INCLUDE [ext-doc-no-sales](includes/ext-doc-no-sales.md)]
 
-## Voir la [formation Microsoft](/training/modules/create-sales-documents-dynamics-365-business-central/) associée.
+## <a name="see-related-microsoft-trainingtrainingmodulescreate-sales-documents-dynamics--business-central" />Voir la [formation Microsoft](/training/modules/create-sales-documents-dynamics-365-business-central/) associée.
 
-## Voir aussi .
+## <a name="see-also" />Voir aussi .
 
 [Facturer des ventes](sales-how-invoice-sales.md)  
 [Validation des ventes](ui-post-sales.md)  

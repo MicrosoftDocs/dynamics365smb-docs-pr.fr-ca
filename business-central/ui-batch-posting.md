@@ -11,11 +11,11 @@ ms.reviewer: edupont
 ms.date: 06/25/2021
 ms.author: edupont
 ---
-# Reporter plusieurs documents en même temps
+# <a name="post-multiple-documents-at-the-same-time" />Reporter plusieurs documents en même temps
 
 Au lieu de reporter des documents individuels un par un, vous pouvez sélectionner plusieurs documents non reportés dans une liste pour un report immédiat ou un report en lot, conformément à une programmation, à la fin de la journée, par exemple. Cela peut être utile si seul un superviseur peut reporter des documents créés par d'autres utilisateurs ou pour éviter des problèmes de performance du système liés au report pendant les heures de travail.
 
-## Pour reporter plusieurs bons de commande immédiatement
+## <a name="to-post-multiple-purchase-orders-immediately" />Pour reporter plusieurs bons de commande immédiatement
 
 La procédure suivante explique comment reporter immédiatement plusieurs bons de commande. Les étapes sont similaires pour tous les documents achat et vente.
 
@@ -26,7 +26,7 @@ La procédure suivante explique comment reporter immédiatement plusieurs bons d
 5. Choisissez l'action **Report**, puis sélectionnez l'action **Reporter**.
 6. Choisissez le bouton **Oui** dans le message de confirmation.
 
-## Pour reporter en lot plusieurs bons de commande
+## <a name="to-batch-post-multiple-purchase-orders" />Pour reporter en lot plusieurs bons de commande
 
 La procédure suivante explique comment reporter en lot des bons de commande. Les étapes sont similaires pour tous les documents achat et vente où l’action **Reporter en lot** est disponible.
 
@@ -42,7 +42,7 @@ La procédure suivante explique comment reporter en lot des bons de commande. Le
 > [!NOTE]
 > Le report de plusieurs documents peut prendre un certain temps et bloquer d’autres utilisateurs. Envisagez d’activer le report en arrière-plan. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
-## Pour configurer le report en arrière-plan avec les files d'attente des travaux
+## <a name="to-set-up-background-posting-with-job-queues" />Pour configurer le report en arrière-plan avec les files d'attente des travaux
 Les files d'attente des travaux sont un outil efficace pour programmer l'exécution des processus d'entreprises en arrière-plan, par exemple lorsque plusieurs utilisateurs essaient de reporter des documents de vente, mais uniquement une commande à la fois.  
 
 La procédure suivante explique comment configurer le report en arrière-plan des documents de vente. La procédure est identique pour les achats.  
@@ -67,14 +67,14 @@ La procédure suivante explique comment configurer le report en arrière-plan de
 4. Pour vérifier que la file d'attente des travaux fonctionne comme prévu, reportez un document de vente. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
     Les documents de vente seront désormais ajoutés à une entrée file d'attente des travaux dédiée, qui définit le moment où les documents sont reportés. 
 
-### Pour afficher l'état à partir d'un document vente ou achat
+### <a name="to-view-status-from-a-sales-or-purchase-document" />Pour afficher l'état à partir d'un document vente ou achat
 Si la file d'attente des travaux ne peut pas reporter le document de vente, l'état passe à **Erreur**, et le document de vente est ajouté à la liste des documents de vente que l'utilisateur doit traiter.
 1. Dans le document que vous avez essayé de reporter avec le report en arrière-plan, choisissez le champ **État de la file d'attente des travaux**, qui contient **Erreur**.
 2. Examinez le message d’erreur et résolvez le problème.
 
 Sinon, vous pouvez vérifier sur la page **Écritures journal file d’attente des travaux** si le document de vente a été reporté avec succès. Pour plus d’informations, consultez la section [Surveiller la file d’attente des travaux](#monitor-the-job-queue).
 
-## Pour créer une écriture file d'attente des travaux pour le report en lot des documents de vente
+## <a name="to-create-a-job-queue-entry-for-batch-posting-of-sales-orders" />Pour créer une écriture file d'attente des travaux pour le report en lot des documents de vente
 
 Sinon, vous pouvez reporter les reports à des heures pratiques pour votre organisation. Par exemple, il peut sembler raisonnable dans votre activité d’exécuter certaines routines lorsque la plupart de la saisie de données de la journée est achevée. Vous pouvez effectuer cette opération en configurant la file d'attente des travaux pour exécuter différents rapports de report en lot, par exemple, **Reporter en lot documents de vente**, **Reporter en lot factures vente** et des rapports similaires. [!INCLUDE[prod_short](includes/prod_short.md)] prend en charge le report en arrière-plan de tous les documents de types ventes, achats et service.
 
@@ -111,13 +111,13 @@ La procédure suivante décrit comment définir le rapport **Reporter en lot des
 
 Les documents de vente dans les filtres définis sont à présent reportés chaque jour de la semaine à 16 h 00.
 
-## Surveiller la file d’attente des travaux
+## <a name="monitor-the-job-queue" />Surveiller la file d’attente des travaux
 
 Si vous configurez le report en arrière-plan avec les files d’attente des travaux, convertissez-le en une tâche périodique pour surveiller la file d’attente des travaux et détecter les éventuels problèmes. Vous pouvez suivre l’état dans la page **Écritures file d’attente des travaux**. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).  
 
 En tant qu’administrateur, vous pouvez utiliser [Application Insights](/azure/azure-monitor/app/app-insights-overview) pour recueillir et analyser la télémétrie que vous pouvez utiliser pour identifier les problèmes. Pour plus d’informations, consultez [Surveillance et analyse de la télémétrie](/dynamics365/business-central/dev-itpro/administration/telemetry-overview) dans le contenu pour développeurs et administrateurs.  
 
-## Voir aussi
+## <a name="see-also" />Voir aussi
 
 [Validation des documents et des feuilles](ui-post-documents-journals.md)  
 [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md)  

@@ -9,7 +9,7 @@ ms.date: 06/02/2023
 ms.custom: bap-template
 ms.search.form: '42, 49, 50, 459, 460, 5159, 5162, 5164, 5167, 6627, 6630, 6644, 9305, 9306, 9346, 9347, 9348, 9349'
 ---
-# Archiver des documents
+# <a name="archive-documents" />Archiver des documents
 
 Vous pouvez archiver des bons de commande et des documents de vente, des devis, des retours et des commandes permanentes. L’archivage des documents vous permet de restaurer les documents originaux, si nécessaire. Vous pouvez archiver des documents vente ou achat plusieurs fois, en enregistrant une version archivée différente chaque fois.
 
@@ -17,7 +17,7 @@ Pour les documents de vente archivés où l’original existe toujours et n’es
 
 Pour les documents archivés où l’original est désactivé, vous pouvez réutiliser le contenu uniquement en copiant les données, par exemple en utilisant l’action **Copier à partir du document**.  
 
-## Pour configurer l'archivage automatique des documents
+## <a name="to-set-up-automatic-document-archiving" />Pour configurer l'archivage automatique des documents
 
 Vous pouvez configurer l’archivage automatique des bons de commande et des documents de vente, des devis, des commandes permanentes et des retours. Lorsque l’archivage automatique est activé, une nouvelle version du document archivé est créée lorsque quelqu’un effectue les actions suivantes :
 
@@ -39,7 +39,7 @@ Le tableau suivant décrit les options disponibles pour le champ **Archiver devi
 |**Question**|Invitez l’utilisateur à archiver ou non les devis lorsqu’ils sont supprimés.|
 |**Toujours**|Archivez automatiquement les devis lorsqu’ils sont supprimés.|
 
-## Pour archiver manuellement un document de vente
+## <a name="to-manually-archive-a-sales-order" />Pour archiver manuellement un document de vente
 
 La procédure suivante décrit comment archiver manuellement un document de vente. La procédure est identique pour l'ensemble des commandes, commandes permanentes, retours et devis.
 
@@ -49,7 +49,7 @@ La procédure suivante décrit comment archiver manuellement un document de vent
 
 Le document de vente est archivé. Vous pouvez l'afficher sur la page **Documents de vente archivés**.
 
-## Pour restaurer une document de vente non reporté depuis les archives
+## <a name="to-restore-a-non-posted-sales-order-from-the-archive" />Pour restaurer une document de vente non reporté depuis les archives
 
 La procédure suivante décrit comment restaurer un document de vente archivé dans le document de vente d’origine. Il n'est possible de restaurer un document que si le document d’origine n’a pas été reporté. La procédure est identique pour l'ensemble des commandes, commandes permanentes, retours et devis.
 
@@ -58,7 +58,7 @@ La procédure suivante décrit comment restaurer un document de vente archivé d
 
 Le contenu du document de vente d’origine est remplacé par celui de la version archivée.
 
-## Pour supprimer des documents de vente archivés
+## <a name="to-delete-archived-sales-orders" />Pour supprimer des documents de vente archivés
 
 Utilisez une stratégie de rétention pour nettoyer les documents archivés dont vous n’avez plus besoin. Les stratégies de rétention permettent aux administrateurs de définir la durée de stockage des données. Par exemple, ils peuvent configurer une stratégie qui supprime les données après une date d’expiration. Pour plus d’informations, voir [Définir les stratégies de rétention](admin-data-retention-policies.md).
 
@@ -68,7 +68,7 @@ Il y a quelques points à noter concernant la création de stratégies de réten
 * Lorsque vous configurez la stratégie de rétention, vous pouvez spécifier que vous souhaitez que la stratégie supprime toutes les versions archivées d’un document, à l’exception de la plus récente. Par exemple, vous pouvez avoir 10 versions d’un document et vouloir conserver une copie de la dernière. 
 * Business Central calcule la date d’expiration des documents en fonction de la date de la version archivée la plus récente.
 
-## Voir aussi
+## <a name="see-also" />Voir aussi
 
 [Suivi des lignes document](across-how-to-track-document-lines.md)  
 [Ventes](sales-manage-sales.md)  

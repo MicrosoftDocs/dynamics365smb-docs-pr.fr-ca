@@ -10,7 +10,7 @@ ms.search.form: '99000846, 99000850'
 ms.date: 03/08/2023
 ms.author: edupont
 ---
-# Reporter en lot la consommation de la production
+# <a name="batch-post-production-consumption" />Reporter en lot la consommation de la production
 
 Si le champ Méthode consommation indique **Manuelle**, utilisez un journal consommation pour reporter les composantes manuellement.  
 
@@ -19,7 +19,7 @@ Si le champ Méthode consommation indique **Manuelle**, utilisez un journal cons
 
 Vous pouvez également configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour reporter automatiquement (*consommer*) les composantes lorsque vous lancez ou terminez des bons de production. Pour plus d'informations, voir [Activer la consommation des composantes en fonction de la sortie réalisée](production-how-to-flush-components-according-to-operation-output.md).
 
-## Pour reporter la consommation pour une ou plusieurs lignes bon de production
+## <a name="to-post-consumption-for-one-or-more-production-order-lines" />Pour reporter la consommation pour une ou plusieurs lignes bon de production
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal consommation**, puis choisissez le lien associé.  
 2. Renseignez les champs en indiquant les données relatives au bon de production et à la consommation. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
@@ -33,7 +33,7 @@ Vous pouvez également configurer [!INCLUDE[prod_short](includes/prod_short.md)]
 
     [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
 
-## Voir aussi
+## <a name="see-also" />Voir aussi
 
 [Production](production-manage-manufacturing.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  

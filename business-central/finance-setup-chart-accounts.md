@@ -11,14 +11,14 @@ ms.search.form: '16, 17, 18, 118, 386, 391'
 ms.date: 01/21/2022
 ms.author: edupont
 ---
-# Configurer ou modifier le plan comptable
+# <a name="set-up-or-change-the-chart-of-accounts" />Configurer ou modifier le plan comptable
 
 Le plan comptable affiche les comptes généraux qui stockent vos données financières. [!INCLUDE[prod_short](includes/prod_short.md)] inclut un plan comptable standard prêt à prendre en charge votre société. Vous pouvez, cependant, modifier les comptes par défaut, et vous pouvez ajouter de nouveaux comptes.
 <br><br>  
 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE43KO9?rel=0]
 
-## Ajouter ou modifier les comptes
+## <a name="add-or-change-accounts" />Ajouter ou modifier les comptes
 
 À partir du plan comptable, vous pouvez ouvrir chaque compte GL et ajouter ou modifier des paramètres. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)] 
 
@@ -29,7 +29,7 @@ Pour les comptes de type **Total**, vous devez renseigner le champ **Totalisatio
 > [!IMPORTANT]
 > Si vous avez entré des définitions dans les champs **Totalisation** pour les comptes de type **Fin total** avant d’exécuter la fonction de décalage, vous devez les entrer à nouveau car cette fonction remplace les valeurs de tous les champs **Fin total**.
 
-## Supprimer les comptes
+## <a name="delete-accounts" />Supprimer les comptes
 
 Vous pouvez supprimer un compte GL. Toutefois, avant que de le supprimer, les conditions suivantes doivent être réunies :  
 
@@ -39,7 +39,7 @@ Vous pouvez supprimer un compte GL. Toutefois, avant que de le supprimer, les co
 
 [!INCLUDE[prod_short](includes/prod_short.md)] vous empêche de supprimer un compte GL qui stocke les données nécessaires au plan comptable.  
 
-## Bloquer la suppression des comptes du grand livre
+## <a name="block-deletion-of-gl-accounts" />Bloquer la suppression des comptes du grand livre
 
 [!INCLUDE [2022_releasewave1](includes/2022_releasewave1.md)]
 
@@ -49,9 +49,9 @@ Un nouveau champ, **Bloquer la suppression des comptes GL**, est ajouté à la p
 
 Le fait de régler le champ **Bloquer la suppression des comptes GL** sur *Oui* peut être considéré comme une pratique exemplaire, tout comme définir la date dans le champ **Vérifier suppr. cpte GL après**, par exemple à la date à laquelle vous devez stocker vos données financières.  
 
-## Voir la [formation Microsoft](/training/modules/chart-accounts-dynamics-365-business-central/index) associée
+## <a name="see-related-microsoft-trainingtrainingmoduleschart-accounts-dynamics--business-centralindex" />Voir la [formation Microsoft](/training/modules/chart-accounts-dynamics-365-business-central/index) associée
 
-## Voir aussi
+## <a name="see-also" />Voir aussi
 
 [Les écritures comptables et le plan comptable](finance-general-ledger.md)  
 [Rapprochement de comptes bancaires](bank-manage-bank-accounts.md)  
@@ -65,6 +65,6 @@ Le fait de régler le champ **Bloquer la suppression des comptes GL** sur *Oui* 
 [Configurer et fermer les soldes d’état des résultats dans la version espagnole](LocalFunctionality/Spain/how-to-set-up-and-close-income-statement-balances.md)  
 [Décaler et valider la chartes de comptes dans la version espagnole](LocalFunctionality/Spain/how-to-indent-and-validate-chart-of-accounts.md)  
 
-## [!INCLUDE[prod_short](includes/free_trial_md.md)]
+## <a name="includeprodshortincludesfreetrialmdmd" />[!INCLUDE[prod_short](includes/free_trial_md.md)]
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

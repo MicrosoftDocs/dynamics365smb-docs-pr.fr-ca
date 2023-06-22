@@ -11,13 +11,13 @@ ms.search.forms: '5704, 5700, 5702, 5701'
 ms.date: 04/01/2021
 ms.author: edupont
 ---
-# Configurer des unités de stock
+# <a name="set-up-stockkeeping-units" />Configurer des unités de stock
 
 Vous pouvez utiliser des unités de stock pour enregistrer des informations relatives aux articles pour un code emplacement ou variante.  
 
 Les points de stock représentent un supplément des fiches article. Ils ne les remplacent pas, bien qu'ils soient liés à ces documents. Les unités de stock vous permettent de différencier des informations relatives à un article pour un emplacement donné, comme un entrepôt ou un centre de distribution, ou une variante donnée, comme plusieurs numéros de tablette et plusieurs informations de réapprovisionnement, pour un même article.  
 
-## Pour configurer une unité de stock  
+## <a name="to-set-up-a-stockkeeping-unit" />Pour configurer une unité de stock
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Unités de stock**, puis choisissez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
@@ -34,9 +34,9 @@ Pour créer plusieurs points de stock pour un article, utilisez le traitement pa
 > Si l'unité de stock est expédiée à la fabrication, le champ **Coût standard** n'est pas utilisé lors de la facturation et de l'ajustement du coût réel de l'article fabriqué. Celui utilisé est plutôt le champ **Coût standard** de la fiche article sous-jacente. En outre, tous les écarts sont calculés par rapport aux coûts totaux de l'article.<br /><br />
 > Étant donné qu'il n'est pas possible d'affecter les nomenclatures de production et l'itinéraire aux unités de stock, le calcul du coût unitaire et le calcul lié des coûts totaux ne sont également pas disponibles sur les unités de stock. Pour plus d'informations, voir [À propos du calcul des coûts standard](finance-about-calculating-standard-cost.md)
 
-## Voir la [formation Microsoft](/training/modules/control-inventory-multiple-locations/) associée
+## <a name="see-related-microsoft-trainingtrainingmodulescontrol-inventory-multiple-locations" />Voir la [formation Microsoft](/training/modules/control-inventory-multiple-locations/) associée
 
-## Voir aussi .
+## <a name="see-also" />Voir aussi .
 
 [Enregistrer de nouveaux articles](inventory-how-register-new-items.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  

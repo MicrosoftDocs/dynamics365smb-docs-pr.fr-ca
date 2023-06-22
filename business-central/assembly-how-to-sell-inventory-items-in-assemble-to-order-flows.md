@@ -10,7 +10,7 @@ ms.custom: bap-template
 ms.search.keywords: 'kit, kitting'
 ms.search.form: '900, 901, 902, 903, 904, 907, 910, 916, 920, 921, 922, 923, 940, 941, 942, 930, 931, 932, 914, 915, 905'
 ---
-# Vendre des éléments d’inventaire dans des flux à assembler pour commande
+# <a name="selling-inventory-items-in-assemble-to-order-flows" />Vendre des éléments d’inventaire dans des flux à assembler pour commande
 
 Si le champ **Politique d’assemblage** de la fiche article d’un élément d’assemblage indique **Assembler pour commande**, le processus par défaut de document de vente considère que l’article n’est pas en inventaire et doit être assemblé pour les documents de vente. Quand vous ajoutez l’article à une ligne d’un document de vente, [!INCLUDE [prod_short](includes/prod_short.md)] crée un ordre d’assemblage lié au document de vente. Pour en savoir plus sur la vente d’articles à assembler pour commande, consultez [Vente d’articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md). Toutefois, si une partie de la quantité sur document de vente est déjà disponible dans l’inventaire, vous pouvez diminuer la quantité d’ordre d’assemblage en changeant le champ **Quantité à assembler pour commande** de la ligne document de vente.  
 
@@ -30,7 +30,7 @@ Dans cette procédure, vous remplacez les quantités à assembler pour commande 
 2. Réduire cette quantité à partir de l’ordre d’assemblage lié.
 3. Réserver la quantité en inventaire pour vous assurer qu’elle est prélevée et livrée pour la commande.  
 
-## Vendre des articles en inventaire dans des flux assembler pour commande
+## <a name="to-sell-inventory-items-in-assemble-to-order-flows" />Vendre des articles en inventaire dans des flux assembler pour commande
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2. Créez un document de vente. Pour plus d’informations sur la création de documents de vente, voir [Vendre des produits](sales-how-sell-products.md).  
@@ -47,9 +47,9 @@ Dans cette procédure, vous remplacez les quantités à assembler pour commande 
 > [!CAUTION]  
 > Le champ **Code de zone** du document de vente peut contenir la valeur provenant des champs **Code de zone livr. ass. pr comm.** ou **Code de zone post-assemblage** de la fiche emplacement. Si c’est le cas, le champ **Code de zone** de la ligne document de vente peut être incorrect pour cette combinaison de quantités assembler pour commande et assembler pour stock. Il est bon de revérifier que la zone dans le champ **Code de zone** fonctionne pour toutes les quantités. Sinon, entrez les deux quantités différentes sur des lignes document de vente distinctes.  
 
-## Voir la [formation Microsoft](/training/modules/assemble-to-order-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-trainingtrainingmodulesassemble-to-order-dynamics--business-central" />Voir la [formation Microsoft](/training/modules/assemble-to-order-dynamics-365-business-central/) associée
 
-## Voir aussi .
+## <a name="see-also" />Voir aussi .
 
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Réserver des articles](inventory-how-to-reserve-items.md)  

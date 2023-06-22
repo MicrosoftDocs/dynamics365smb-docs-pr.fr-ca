@@ -10,10 +10,10 @@ ms.search.keywords: 'relationship, prospect'
 ms.date: 06/22/2021
 ms.author: jswymer
 ---
-# Traiter des opportunités de vente
+# <a name="process-sales-opportunities" />Traiter des opportunités de vente
 Une fois que vous avez créé une opportunité, il existe plusieurs fonctionnalités permettant de gérer l'opportunité et de la faire avancer jusqu'à l'achèvement.
 
-## Pour afficher les opportunités
+## <a name="to-view-opportunities" />Pour afficher les opportunités
 Les opportunités de vente existantes sont disponibles sur la page **Liste des opportunités**. Il existe différentes manières d'accéder à cette page pour le traitement des opportunités de vente :
 
 | Pour afficher les opportunités pour | Alors |
@@ -24,7 +24,7 @@ Les opportunités de vente existantes sont disponibles sur la page **Liste des o
 
 Chacune de ces tâches ouvre la page **Liste des opportunités**.
 
-## Pour fermer des opportunités
+## <a name="to-close-opportunities" />Pour fermer des opportunités
 Vous pouvez fermer des opportunités lorsque les négociations sont terminées. Lorsque vous fermez une opportunité, vous pouvez spécifier si elle a réussi ou échoué, et préciser les motifs de la fermeture. Pour spécifier un motif, vous devez configurer des codes opportunité fermée.
 
 1. Sur la page **Liste des opportunités**, sélectionnez l'opportunité, puis sélectionner l'action **Fermer**. La page **Fermer opportunité** s'affiche.
@@ -34,14 +34,14 @@ Vous pouvez fermer des opportunités lorsque les négociations sont terminées. 
 
    Dans le champ **Code fin opportunité**, vous pouvez choisir l'un des codes fin opportunité existants ou en ajouter un nouveau. Pour ajouter un nouveau code, dans la liste déroulante, sélectionnez **Sélectionner dans la liste complète**, puis sélectionnez **Nouveau**. Dans la nouvelle ligne vierge, renseignez les champs **Code**, **Type** et **Description**, puis cliquez le bouton **OK**.
 
-## Pour créer des devis pour des opportunités
+## <a name="to-create-quotes-for-opportunities" />Pour créer des devis pour des opportunités
 > [!NOTE]
 > Vous ne pouvez créer des devis de vente qu′à partir d′opportunités dont le type de contact est Compagnie.
 
 1. Sur la page **Liste des opportunités**, sélectionnez l'opportunité, puis sélectionner l'action **Créer devis**. La page **Devis** s'affiche.
 2. Renseignez les champs de votre choix.
 
-## Pour créer des commandes vente pour les opportunités
+## <a name="to-create-sales-orders-for-opportunities" />Pour créer des commandes vente pour les opportunités
 Vous pouvez effectuer des commandes vente à partir des devis que vous avez créés pour vos opportunités. Pour pouvoir créer des commandes vente pour vos contacts, vous devez créer le contact en tant que client. Pour plus d'informations, reportez-vous à [Créer des contacts](marketing-create-contact-companies.md).
 
 1. Sur la page **Liste des opportunités**, recherchez l'opportunité pour laquelle vous avez créée un devis vente.
@@ -50,7 +50,7 @@ Vous pouvez effectuer des commandes vente à partir des devis que vous avez cré
 
 Lorsque vous traitez des opportunités de vente, vous pouvez être amené à créer un devis pour le contact auquel est liée l'opportunité.
 
-## Pour supprimer des opportunités
+## <a name="to-delete-opportunities" />Pour supprimer des opportunités
 Vous pouvez supprimer des opportunités, par exemple après avoir conclu un marché. Toutefois, vous pouvez uniquement supprimer des opportunités fermées. Il existe deux méthodes permettant de supprimer des opportunités fermées. Vous pouvez supprimer des opportunités fermées une par une à partir de la page **Liste des opportunités**, ou vous pouvez exécuter le traitement en lot **Supprimer les opportunités fermées** afin de supprimer plusieurs opportunités sur la base de critères spécifiés.
 
 Pour supprimer des opportunités fermées à partir de la page **Liste des opportunités**, sélectionnez l'opportunité, puis sélectionnez l'action **Supprimer**.
@@ -63,7 +63,7 @@ Pour supprimer des opportunités clôturées à l'aide du traitement par lots **
 
 Une fois que vous avez supprimé une opportunité, elle ne s'affiche plus sur la page **Liste des opportunités**.
 
-## Pour faire avancer une opportunité au fil des étapes du cycle de vente
+## <a name="to-move-an-opportunity-through-sales-cycle-stages" />Pour faire avancer une opportunité au fil des étapes du cycle de vente
 Si une opportunité suit un cycle de vente, vous pouvez la faire avancer ou reculer au fil des différentes phases, par exemple la faire passer à la phase suivante ou précédente, et même ignorer une phase.
 
 1. Sur la page **Liste des opportunités**, sélectionnez l'action **Mettre à jour**. La fenêtre **Mise à jour opportunité** s'affiche.
@@ -75,7 +75,7 @@ Si une opportunité suit un cycle de vente, vous pouvez la faire avancer ou recu
    * **Mettre à jour** vous permet de modifier les informations (par exemple pour modifier votre évaluation de leurs chances de succès et valeurs estimées) sans passer à une autre étape.
 3. Renseignez autres champs selon vos besoins, puis cliquez sur le bouton **OK**.
 
-## Voir aussi
+## <a name="see-also" />Voir aussi
 [Vente](sales-manage-sales.md)  
 [Création et gestion des contacts](marketing-contacts.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

@@ -11,7 +11,7 @@ ms.search.form: '950, 951, 973'
 ms.date: 03/01/2022
 ms.author: edupont
 ---
-# Utiliser des feuilles de temps
+# <a name="use-time-sheets" />Utiliser des feuilles de temps
 
 Vous pouvez utiliser des feuilles de temps dans [!INCLUDE [prod_short](includes/prod_short.md)] pour suivre les indisponibilités et pour suivre le temps et les ressources consacrés à un projet. Grâce à la gestion du temps, vous pouvez anticiper les problèmes et éviter les retards ou les surcoûts. Grâce aux feuilles de temps, une ressource peut facilement enregistrer le temps d’utilisation d’une personne ou d’une machine, tandis qu’un administrateur peut facilement consulter l’utilisation d’une ressource et son affectation. Cet article décrit comment créer une feuille de temps, définir les types de travaux, renseigner la feuille de temps et la soumettre pour approbation.  
 
@@ -24,7 +24,7 @@ Avant de pouvoir utiliser des feuilles de temps, vous devez définir des informa
 > [!TIP]
 > À partir de la deuxième vague de lancement 2021, vous pouvez gérer les feuilles de temps attribuées sur un appareil mobile. Toutefois, il est possible que votre administrateur doive activer la fonctionnalité **Mise à jour des fonctionnalités : nouvelle expérience de feuille de temps** dans la page [Gestion des fonctionnalités](https://businesscentral.dynamics.com/?page=2610) pour utiliser cette fonctionnalité. Pour plus d'informations, voir [Paramétrer des feuilles de temps](projects-how-setup-time-sheets.md).
 
-## Pour créer des feuilles de temps
+## <a name="to-create-time-sheets" />Pour créer des feuilles de temps
 
 Vous pouvez utiliser le traitement par lots **Créer des feuilles de temps** pour configurer des feuilles de temps pour un nombre donné de périodes ou de semaines. Une fois qu'une feuille de temps est créée, son propriétaire peut l'ouvrir et y enregistrer le temps consacré à une tâche. Vous pouvez également [programmer le traitement en lot pour une exécution automatique](ui-work-report.md#ScheduleReport).  
 
@@ -67,7 +67,7 @@ Dans cet exemple, vous devriez ensuite enregistrer les heures appropriées pour 
 >
 > Choisissez le type de travail en choisissant le bouton :::image type="icon" source="media/assist-edit-icon.png" border="false"::: dans le champ **Description**, en choisissant l’action **Détails de l’activité**, puis en la spécifiant dans la page qui s’ouvre, ou en la choisissant dans le champ **Code type travail** ou dans le champ **Code type indisponibilité**, respectivement. Dans ce cas, vous pouvez ignorer la section [Pour définir les types de travaux et en ajouter un à une feuille de temps](#to-define-work-types-and-add-one-to-a-time-sheet).  
 
-## Pour réutiliser des lignes feuille de temps dans d'autres feuilles de temps par la suite
+## <a name="to-reuse-time-sheet-lines-in-other-time-sheets" />Pour réutiliser des lignes feuille de temps dans d'autres feuilles de temps par la suite
 
 Si les informations de votre feuille de temps ne changent pas d'une période à une autre, vous pouvez gagner du temps en copiant les lignes de la période précédente. Il vous suffit ensuite d'entrer votre temps d'utilisation pour la nouvelle période.
 
@@ -77,14 +77,14 @@ Si les informations de votre feuille de temps ne changent pas d'une période à 
 
 Les lignes sont copiées, y compris les détails comme le type et la description. Par exemple, si la ligne est associée à un projet, le **N° projet** est copié. Toutes les lignes copiées ont le statut **En cours**. Vous pouvez à présent modifier les lignes selon vos besoins.
 
-## Pour copier des lignes planification projet dans une feuille de temps
+## <a name="to-copy-job-planning-lines-to-a-time-sheet" />Pour copier des lignes planification projet dans une feuille de temps
 La procédure suivante indique comment ajouter rapidement des lignes planification projet à une feuille de temps.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuilles de temps**, puis choisissez le lien associé.  
 2. Sur la page **Feuilles de temps**, sélectionnez une feuille de temps pour la période de référence.  
 3. Cliquez sur **Créer des lignes à partir du planning projet**. Toutes les lignes planification projet de la période de feuille de temps sont copiées dans la feuille de temps de la personne ou du poste du champ **N° ressource** sur la feuille de temps.
 
-## Pour définir les types de travaux et en ajouter un à une feuille de temps
+## <a name="to-define-work-types-and-add-one-to-a-time-sheet" />Pour définir les types de travaux et en ajouter un à une feuille de temps
 
 Vous pouvez définir le type de travail de toutes les lignes feuille de temps pour les commandes service, les ordres de travail et les ressources. Vous pouvez ainsi ajouter les informations dont vous avez besoin pour facturer le client en fonction des différents types de travaux.  
 
@@ -98,7 +98,7 @@ Vous pouvez définir le type de travail de toutes les lignes feuille de temps po
 > [!TIP]
 > Des étapes similaires s’appliquent à la définition des codes d’indisponibilité.
 
-## Pour renseigner des lignes d’une feuille de temps et les envoyer pour approbation
+## <a name="to-fill-in-time-sheet-lines-and-submit-for-approval" />Pour renseigner des lignes d’une feuille de temps et les envoyer pour approbation
 
 L'enregistrement des feuilles de temps est assuré en heures, qui est l'unité de mesure de base standard pour les ressources. Par défaut, une feuille de temps indique les jours de travail ouvrés du lundi au vendredi.  
 
@@ -129,7 +129,7 @@ L'enregistrement des feuilles de temps est assuré en heures, qui est l'unité d
     >   Un administrateur peut rejeter une ligne feuille de temps qui est envoyée pour approbation. Si une ligne a l'état **Rejeté**, vous pouvez la modifier et choisir de nouveau **Envoyer**.  
 6. Cliquez sur le bouton **OK**.
 
-## Pour approuver ou rejeter une feuille de temps
+## <a name="to-approve-or-reject-a-time-sheet" />Pour approuver ou rejeter une feuille de temps
 Une feuille de temps doit être soumise pour approbation avant de pouvoir être utilisée. Vous pouvez approuver et rejeter chacune des lignes d'une feuille de temps ou les renvoyer à la personne à l'origine de leur soumission pour qu'elle effectue d'autres actions. Une feuille de temps peut être approuvée de deux manières :
 
 * Un administrateur de feuille de temps peut approuver n'importe quelle feuille de temps.
@@ -148,7 +148,7 @@ Une feuille de temps doit être soumise pour approbation avant de pouvoir être 
 
 Une fois qu'une feuille de temps est approuvée ou rejetée, elle ne peut plus être modifiée à moins d'être rouverte au préalable. La procédure suivante explique comment rouvrir une feuille de temps approuvée ou rejetée.
 
-## Pour rouvrir une feuille de temps
+## <a name="to-reopen-a-time-sheet" />Pour rouvrir une feuille de temps
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuilles de temps administrateur** ou **Feuilles de temps**, puis choisissez le lien associé.
 2. Ouvrez une feuille de temps à partir de la liste.  
 
@@ -157,14 +157,14 @@ Une fois qu'une feuille de temps est approuvée ou rejetée, elle ne peut plus �
 3. Sur la page **Feuille de temps**, cliquez sur **Rouvrir**, puis sur **Toutes les lignes soumises** pour rouvrir toutes les lignes ou sur **Ligne(s) sélectionnée(s) uniquement** pour rouvrir uniquement les lignes sélectionnées sur la page **Feuille de temps**.
 4. Cliquez sur le bouton **OK**. Le statut de la ou des lignes des feuilles de temps devient **Soumis**.  
 
-## Pour afficher et approuver des feuilles de temps par tâche
+## <a name="to-view-and-approve-time-sheets-by-job" />Pour afficher et approuver des feuilles de temps par tâche
 
 Dans le cadre d’une tâche, vous pouvez indiquer une personne qui soit chargée de celle-ci. Ces informations sont liées aux lignes feuille de temps et elles peuvent être utilisés pour dresser la liste des feuilles de temps qu’un chef de projet doit consulter et approuver. Par exemple, le chef de projet équipe peut être chargé de certaines tâches dans votre compagnie. Dans ce cas, le responsable doit figurer en tant que **Responsable** sur la fiche projet. Dans cette vue des informations des feuilles de temps, vous pouvez afficher les tâches projet associées à un projet, ainsi que le nombre d’heures utilisées.
 
 > [!NOTE]
 > Pour pouvoir approuver des feuilles de temps dans la fenêtre **Feuille de temps administrateur par projet**, vous devez d’abord sélectionner une option **Feuille de temps par approbation de projet** dans la fenêtre **Configuration ressources**. Pour plus d'informations, reportez-vous à [Configuration de ressources](projects-how-setup-resources.md).
 
-### Pour approuver ou rejeter une feuille de temps par projet
+### <a name="to-approve-or-reject-a-time-sheet-by-job" />Pour approuver ou rejeter une feuille de temps par projet
 
 1. Dans la zone **Rechercher**, entrez **Feuille de temps administrateur par projet**, puis sélectionnez le lien associé. [!INCLUDE[prod_short](includes/prod_short.md)] affiche une liste des lignes feuille de temps associées aux projets dont vous êtes responsable.
 2. Cliquez sur **Approuver**, puis sur **Toutes les lignes envoyées** pour approuver toutes les lignes ou sur **Ligne(s) sélectionnée(s) uniquement** pour approuver uniquement les lignes qui sont sélectionnées sur la page **Feuille de temps**.
@@ -178,7 +178,7 @@ Dans le cadre d’une tâche, vous pouvez indiquer une personne qui soit chargé
 > [!NOTE]
 > Une fois une ligne feuille de temps par projet approuvée ou rejetée, elle ne peut plus être modifiée ni rouverte dans la fenêtre **Feuille de temps**.
 
-## Pour reporter des lignes feuille de temps dans un journal ressource
+## <a name="to-post-time-sheet-lines-in-a-resource-journal" />Pour reporter des lignes feuille de temps dans un journal ressource
 Une fois que vous avez approuvé les écritures feuille de temps d'une ressource, vous pouvez les reporter dans le journal ressource correspondant.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journaux ressource**, puis choisissez le lien associé.  
@@ -188,7 +188,7 @@ Une fois que vous avez approuvé les écritures feuille de temps d'une ressource
 5. Sélectionnez l'action **Valider**.  
 6. Pour vérifier la validation, cliquez sur **Écritures comptables**. La page **Écritures ressource** s'ouvre et affiche le résultat du report du journal ressource.
 
-## Pour reporter des lignes feuille de temps dans un journal projet
+## <a name="to-post-time-sheet-lines-in-a-job-journal" />Pour reporter des lignes feuille de temps dans un journal projet
 Une fois que vous avez approuvé les écritures feuille de temps d'un projet, vous pouvez les reporter dans le journal projet correspondant.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux projet**, puis choisissez le lien associé.  
@@ -201,7 +201,7 @@ Une fois que vous avez approuvé les écritures feuille de temps d'un projet, vo
 5. Sélectionnez l'action **Valider**.  
 6. Pour vérifier la validation, cliquez sur **Écritures comptables**. La page **Écritures projet** s'ouvre et affiche le résultat du report du journal ressource.
 
-## Pour archiver des feuilles de temps
+## <a name="to-archive-time-sheets" />Pour archiver des feuilles de temps
 Une fois les feuilles de temps reportées, vous pouvez les archiver pour vous y référer par la suite. Toutes les lignes des feuilles de temps doivent être reportées avant qu'une feuille de temps puisse être archivée.
 
 > [!NOTE]  
@@ -212,7 +212,7 @@ Une fois les feuilles de temps reportées, vous pouvez les archiver pour vous y 
 3. Sur la page **Déplacer les feuilles de temps vers l’archive**, renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**.  
 4. Pour examiner les feuilles de temps archivées, sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Archives des feuilles de temps** ou **Archives des feuilles de temps administrateur**, puis choisissez le lien associé.
 
-## Voir aussi
+## <a name="see-also" />Voir aussi
 [Gestion de projets](projects-manage-projects.md)  
 [Configuration de la gestion de projet](projects-setup-projects.md)  
 [Finance](finance.md)  

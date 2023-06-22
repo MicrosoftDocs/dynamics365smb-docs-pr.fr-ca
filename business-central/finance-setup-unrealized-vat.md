@@ -12,11 +12,11 @@ ms.date: 04/01/2021
 ms.author: bholtorf
 ---
 
-# Configurer la TVA non réalisée pour la comptabilité basée sur la trésorerie
+# <a name="set-up-unrealized-vat-for-cash-based-accounting" />Configurer la TVA non réalisée pour la comptabilité basée sur la trésorerie
 
 Si vous utilisez des méthodes comptables basées sur la trésorerie, vous pouvez configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour gérer la TVA non réalisée.
 
-## Pour utiliser les comptes GL pour la TVA non réalisée
+## <a name="to-use-general-ledger-accounts-for-unrealized-vat" />Pour utiliser les comptes GL pour la TVA non réalisée
 
 Vous pouvez choisir de calculer et de reporter les montants de TVA sur un compte du grand livre temporaire lorsqu'une facture est reportée, puis de les reporter sur le compte du grand livre correct et de les inclure dans les relevés fiscaux lorsque le paiement réel de la facture est reporté. Pour cela, vous devez définir la [configuration report TVA](finance-setup-vat.md).
 
@@ -46,7 +46,7 @@ Pour utiliser les comptes pour la TVA non réalisée, procédez comme suit :
 > [!NOTE]  
 > Le montant de la TVA est reporté sur ce compte jusqu'à ce que le paiement de la facture soit reporté. Le montant est alors transféré sur le compte pour la TVA achat.
 
-## Voir aussi
+## <a name="see-also" />Voir aussi
 [Configurer des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

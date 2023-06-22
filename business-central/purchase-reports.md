@@ -8,21 +8,21 @@ ms.search.form: 'Report_311, Report_312, Report_313, Report_320, Report_709, Rep
 ms.date: 06/01/2021
 ms.author: andreipa
 ---
-# Rapports et analyses d'achat dans Business Central
+# <a name="purchase-reports-and-analytics-in-business-central" />Rapports et analyses d'achat dans Business Central
 
 Les rapports d'achat dans [!INCLUDE [prod_short](includes/prod_short.md)] permettent aux professionnels de l’approvisionnement et des affaires d’obtenir des informations et des statistiques sur les activités d’achat actuelles et passées.  
 
-## Rapports
+## <a name="reports" />Rapports
 [!INCLUDE [purchase_reports](includes/purchase-reports-include.md)]
 
-## Tâches
+## <a name="tasks" />Tâches
 Les articles suivants décrivent certaines des tâches clés pour analyser l’état de votre entreprise :
 
 * [Créer des rapports d'analyse](bi-how-create-analysis-views-reports.md)  
 * [Voir la disponibilité des articles](inventory-how-availability-overview.md)  
 
 
-## Voir aussi
+## <a name="see-also" />Voir aussi
 [Définition des achats](purchasing-setup-purchasing.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 
