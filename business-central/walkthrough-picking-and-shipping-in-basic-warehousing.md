@@ -77,7 +77,7 @@ Pour utiliser cette fonctionnalité, vous devez vous ajouter à l'emplacement en
   3. Dans le champ **Code d'emplacement**, choisissez SUD.  
   4. Sélectionnez le champ **Par défaut**, puis cliquez sur le bouton **Oui**.  
 
-### <a name="making-item--s-available" />Rendre l’article 1928-S disponible
+### <a name="making-item-1928-s-available" />Rendre l’article 1928-S disponible
 
 Pour rendre l’article 1928-S disponible dans l'emplacement SUD, suivez cette procédure :  
 

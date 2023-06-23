@@ -25,7 +25,7 @@ Une fois que vous avez configuré un représentant sur la page **Représentants*
 
 Vous pouvez utiliser les représentants dans la gestion des relations et les divers travaux de marketing. Par exemple, vous pouvez affecter des tâches aux représentants, afin que les tâches soient incorporées dans les opportunités de vente affectées au représentant. Pour plus d'informations, voir [Configurer des cycles de vente opportunité et des phases de cycle](marketing-how-setup-opportunity-sales-cycles-stages.md).
 
-## <a name="see-related-microsoft-trainingtrainingmodulestrade-master-data-dynamics--business-central" />Voir la [formation Microsoft](/training/modules/trade-master-data-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-trainingtrainingmodulestrade-master-data-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/trade-master-data-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

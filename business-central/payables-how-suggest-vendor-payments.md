@@ -47,7 +47,7 @@ Vous pouvez aussi créer manuellement des lignes de paiement à l'aide de la dat
 > [!NOTE]  
 >   Si la facture achat est en retard, la date de report est définie sur la date de travail et la police de la ligne devient rouge.  
 
-## <a name="see-related-microsoft-trainingtrainingmodulessuggest-vendor-payments-dynamics--business-central" />Voir la [formation Microsoft](/training/modules/suggest-vendor-payments-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-trainingtrainingmodulessuggest-vendor-payments-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/suggest-vendor-payments-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

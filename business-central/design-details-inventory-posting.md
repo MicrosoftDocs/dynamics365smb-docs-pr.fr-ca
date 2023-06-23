@@ -33,20 +33,20 @@ L'exemple suivant indique comment les écritures article, les écritures valeur 
 
  Vous reportez un bon de commande comme reçu et facturé pour 10 articles avec un coût unitaire direct de 7 $ et des frais généraux d'1 $. La date de report est le 01/01/20. Les écritures suivantes sont créées.  
 
-### <a name="item-ledger-entries-" />Écritures article (1)
+### <a name="item-ledger-entries-1" />Écritures article (1)
 
 |Date de report|Type écriture|Coût indiqué (réel)|Quantité|N° séquence |  
 |------------|----------|--------------------|--------|---------|  
 |01/01/20|Achat|80.00|10|1|  
 
-### <a name="value-entries-" />Écritures valeur (1)
+### <a name="value-entries-1" />Écritures valeur (1)
 
 |Date de report|Type écriture|Coût indiqué (réel)|N° écriture article gr. livre|N° séquence |  
 |------------|----------|--------------------|---------------------|---------|  
 |01/01/20|Coût direct|70.00|1|1|  
 |01/01/20|Coût indirect|10.00|1|2|  
 
-### <a name="item-application-entries-" />Écritures affectation article (1)
+### <a name="item-application-entries-1" />Écritures affectation article (1)
 
 |N° séquence |N° écriture article gr. livre|N° écriture article entrant|N° écriture article sortant|Quantité|  
 |---------|---------------------|----------------------|-----------------------|--------|  
@@ -54,19 +54,19 @@ L'exemple suivant indique comment les écritures article, les écritures valeur 
 
  Ensuite, vous reportez une vente de 10 unités de l'article avec une date de report de 15/01/20.  
 
-### <a name="item-ledger-entries-" />Écritures article (2)
+### <a name="item-ledger-entries-2" />Écritures article (2)
 
 |Date de report|Type écriture|Coût indiqué (réel)|Quantité|N° séquence |  
 |------------|----------|--------------------|--------|---------|  
 |15/01/20|Vente|-80,00|-10|2|  
 
-### <a name="value-entries-" />Écritures valeur (2)
+### <a name="value-entries-2" />Écritures valeur (2)
 
 |Date de report|Type écriture|Coût indiqué (réel)|N° écriture article gr. livre|N° séquence |  
 |------------|----------|--------------------|---------------------|---------|  
 |15/01/20|Coût direct|-80,00|2|3|  
 
-### <a name="item-application-entries-" />Écritures affectation article (2)
+### <a name="item-application-entries-2" />Écritures affectation article (2)
 
 |N° séquence |N° écriture article gr. livre|N° écriture article entrant|N° écriture article sortant|Quantité|  
 |---------|---------------------|----------------------|-----------------------|--------|  
@@ -78,7 +78,7 @@ L'exemple suivant indique comment les écritures article, les écritures valeur 
 
  Les tables suivantes indiquent le résultat du rapprochement des mouvements d'inventaire de cet exemple avec le grand livre.  
 
-### <a name="value-entries-" />Écritures valeur (3)
+### <a name="value-entries-3" />Écritures valeur (3)
 
 |Date de report|Type écriture|Coût indiqué (réel)|Coût reporté dans grand livre|N° écriture article gr. livre|N° séquence |  
 |------------|----------|--------------------|------------------|---------------------|---------|  
@@ -86,7 +86,7 @@ L'exemple suivant indique comment les écritures article, les écritures valeur 
 |01/01/20|Coût indirect|10.00|10.00|1|2|  
 |15/01/20|Coût direct|-80,00|-80,00|2|3|  
 
-### <a name="general-ledger-entries-" />Écritures de grand livre (3)
+### <a name="general-ledger-entries-3" />Écritures de grand livre (3)
 
 |Date de report|Compte du grand livre|N° compte (démonstration Fr-FR)|Montant|N° séquence |  
 |------------|-----------|------------------------|------|---------|  
@@ -104,7 +104,7 @@ L'exemple suivant indique comment les écritures article, les écritures valeur 
 
  La relation entre les écritures valeur et les écritures est stockée dans la table **Relation GL - Grand livre article**.  
 
-### <a name="relation-entries-in-the-gl--item-ledger-relation-table-" />Liens écritures dans le grand livre – Table liens grand livre article (3)
+### <a name="relation-entries-in-the-gl--item-ledger-relation-table-3" />Liens écritures dans le grand livre – Table liens grand livre article (3)
 
 |N° écriture comptable|N° écriture valeur|N° registre GL|  
 |-------------|---------------|----------------|  

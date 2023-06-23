@@ -117,7 +117,7 @@ Si une correction ne se termine pas, un avertissement s'affiche sur la carte de 
 
 Une fois les dimensions corrigées, vos données pour la comptabilité analytique seront désynchronisées. La comptabilité analytique utilise des dimensions pour agréger les montants des centres de coûts et des objets de coûts, et pour exécuter les affectations de coûts. La modification des dimensions des écritures GL signifiera probablement que vous réexécuterez vos modèles de comptabilité analytique. Que vous deviez simplement supprimer quelques registres de coûts et réexécuter les affectations, ou tout supprimer et réexécuter tous vos modèles, dépend des données qui ont été mises à jour et de la configuration de vos fonctionnalités de comptabilité analytique. Vous devez manuellement identifier où les corrections de dimensions auront un impact sur la comptabilité analytique et où des mises à jour sont nécessaires. [!INCLUDE[prod_short](includes/prod_short.md)] ne propose pas actuellement de moyen automatisé de le faire.
 
-## <a name="see-related-microsoft-trainingtrainingmodulesdimensions-dynamics--business-central" />Voir la [formation Microsoft](/training/modules/dimensions-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-trainingtrainingmodulesdimensions-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/dimensions-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

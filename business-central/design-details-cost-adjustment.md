@@ -90,14 +90,14 @@ Lorsque vous exécutez le traitement en lot **Ajuster coûts - Écr. article**, 
 
 L'exemple suivant montre le cas où vous reportez un article acheté comme étant reçu et facturé le 01/01/20. Vous reportez ultérieurement l'article vendu comme étant livré et facturé le 01-15-20. Ensuite, vous exécutez les traitements en lot **Ajuster &amp;coûts - Écr. article** et **Reporter le coût de l'inventaire au grand livre**. Les écritures suivantes sont créées.  
 
-#### <a name="value-entries-" />Écritures valeur (1)
+#### <a name="value-entries-1" />Écritures valeur (1)
 
 |Date de report|Type d'écriture gr. livre art.|Coût indiqué (réel)|Coût reporté dans grand livre|Quantité facturée|N° séquence |  
 |------------|----------------------|--------------------|------------------|-----------------|---------|  
 |01/01/20|Achat|10.00|10.00|1|1|  
 |15/01/20|Vente|-10,00|-10,00|-1|2|  
 
-#### <a name="relation-entries-in-the-gl--item-ledger-relation-table-" />Liens écritures dans le grand livre – Table liens grand livre article (1)
+#### <a name="relation-entries-in-the-gl--item-ledger-relation-table-1" />Liens écritures dans le grand livre – Table liens grand livre article (1)
 
 |N° écriture comptable|N° écriture valeur|N° registre GL|  
 |-------------|---------------|----------------|  
@@ -106,7 +106,7 @@ L'exemple suivant montre le cas où vous reportez un article acheté comme étan
 |3|2|1|  
 |4|2|1|  
 
-#### <a name="general-ledger-entries-" />Écritures de grand livre (1)
+#### <a name="general-ledger-entries-1" />Écritures de grand livre (1)
 
 |Date de report|Compte du grand livre|N° compte (démonstration Fr-FR)|Montant|N° séquence |  
 |------------------|------------------|---------------------------------|------------|---------------|  
@@ -117,14 +117,14 @@ L'exemple suivant montre le cas où vous reportez un article acheté comme étan
 
 Ultérieurement, vous reportez des frais annexes achat associés de 2,00 $ facturés le 10/02/20. Vous exécutez le traitement en lot **Ajuster &amp;coûts - Écr. article**, puis le traitement en lot **Reporter le coût de l'inventaire au grand livre**. Le traitement en lot d'ajustement des coûts ajuste le coût de la vente de 2,00 $ en conséquence, et le traitement en lot **Reporter le coût de l'inventaire au grand livre** reporte les nouvelles écritures valeur dans le grand livre. Le résultat est le suivant.  
 
-#### <a name="value-entries-" />Écritures valeur (2)
+#### <a name="value-entries-2" />Écritures valeur (2)
 
 |Date de report|Type d'écriture gr. livre art.|Coût indiqué (réel)|Coût reporté dans grand livre|Quantité facturée|Ajustement|N° séquence |  
 |------------|----------------------|--------------------|------------------|-----------------|----------|---------|  
 |10/02/20|Achat|2.00|2.00|0|Non|3|  
 |15/01/20|Vente|-2,00|-2,00|0|Oui|4|  
 
-#### <a name="relation-entries-in-the-gl--item-ledger-relation-table-" />Liens écritures dans le grand livre – Table liens grand livre article (2)
+#### <a name="relation-entries-in-the-gl--item-ledger-relation-table-2" />Liens écritures dans le grand livre – Table liens grand livre article (2)
 
 |N° écriture comptable|N° écriture valeur|N° registre GL|  
 |-------------|---------------|----------------|  
@@ -133,7 +133,7 @@ Ultérieurement, vous reportez des frais annexes achat associés de 2,00 $ fact
 |7|4|2|  
 |8|4|2|  
 
-#### <a name="general-ledger-entries-" />Écritures de grand livre (2)
+#### <a name="general-ledger-entries-2" />Écritures de grand livre (2)
 
 |Date de report|Compte du grand livre|N° compte (démonstration Fr-FR)|Montant|N° séquence |  
 |------------|-----------|------------------------|------|---------|  

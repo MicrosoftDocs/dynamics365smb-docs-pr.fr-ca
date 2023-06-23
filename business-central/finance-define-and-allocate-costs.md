@@ -70,7 +70,7 @@ Le tableau suivant affiche les filtres applicables aux diverses bases de ventila
 |Articles vendus (montant)|N° d'article|Oui|Oui|Oui|Groupe de report inventaire|  
 |Articles achetés (montant)|Nombre d'articles|Oui|Oui|Oui|Groupe de report inventaire|
 
-## <a name="scenario--defining-static-allocations-based-on-allocation-ratio" />Scénario 1 : Définition des affectations statiques en fonction du ratio d'affectation
+## <a name="scenario-1-defining-static-allocations-based-on-allocation-ratio" />Scénario 1 : Définition des affectations statiques en fonction du ratio d'affectation
 
 Le mode d'affectation statique dépend d'une valeur définie, par exemple, les mètres carrés utilisés ou un ratio d'affectation prédéfini, comme 5:2:4.  
 
@@ -110,7 +110,7 @@ Cette rubrique décrit comment définir trois nouveaux objet de coûts pour la c
 > [!IMPORTANT]  
 > [!INCLUDE[prod_short](includes/prod_short.md)] calcule automatiquement le champ **Pour cent** à l'aide d'un pourcentage qui dépend de ces trois ratios d'affectation saisis dans le champ **Part** pour chacune des trois lignes.
 
-## <a name="scenario--defining-dynamic-allocations-based-on-items-sold" />Scénario 2 : Définition des affectations dynamique sur la base des articles vendus
+## <a name="scenario-2-defining-dynamic-allocations-based-on-items-sold" />Scénario 2 : Définition des affectations dynamique sur la base des articles vendus
 
 Cette rubrique explique comment définir les affectations à l'aide du mode d'affectation dynamique. Dans l'exemple, vous modifiez l'affectation dynamique des coûts pour que le centre de coûts VENTES prenne en charge le nouveau ÉQUIPEMENT IT de l'objet de coûts. Les packages ÉQUIPEMENT IT ont des numéros d'articles dont la plage s'échelonne entre 8904-W et 8924-W. Vous pouvez utiliser les chiffres de ventes de l'exercice précédent pour en calculer le partage. L'affectation est reportée en fonction du type de coût d'aide 9903.  
 
@@ -137,7 +137,7 @@ Cette rubrique explique comment définir les affectations à l'aide du mode d'af
 > [!IMPORTANT]  
 > [!INCLUDE[prod_short](includes/prod_short.md)] utilise les chiffres de ventes des exercices précédents pour calculer une part de 1596,50 DS avec 100 % alloués pour les packages ÉQUIPEMENT IT. Cela signifie que tous les articles vendus au cours de l'exercice précédent seront affectés à l'ÉQUIPEMENT IT des objets de coûts.
 
-## <a name="see-related-microsoft-trainingtrainingmodulesallocate-costs-dynamics--business-central" />Voir la [formation Microsoft](/training/modules/allocate-costs-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-trainingtrainingmodulesallocate-costs-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/allocate-costs-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

@@ -133,7 +133,7 @@ Ken est désormais prêt à affecter la définition de colonne au nom de rapport
 2. Sur la page **Rapport financier**, vous pouvez sélectionner un montant, puis afficher les écritures de prévisions de la trésorerie qui constituent ce montant. En outre, vous pouvez afficher la formule qui est utilisée pour calculer le montant. Vous pouvez également filtrer les montants par date et par dimension.  
 3. Choisissez l'action **Imprimer** pour imprimer les prévisions de la trésorerie.  
 
-## <a name="see-related-microsoft-trainingtrainingmodulesforecast-cash-flow-dynamics--business-central" />Voir la [formation Microsoft](/training/modules/forecast-cash-flow-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-trainingtrainingmodulesforecast-cash-flow-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/forecast-cash-flow-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

@@ -41,7 +41,7 @@ Vous pouvez supprimer des fichiers joints de documents non reportés à tout mom
 
 La connexion au document reporté est supprimée. Vous pouvez maintenant connecter un autre enregistrement document entrant au document reporté, comme décrit dans cet article.
 
-## <a name="see-related-microsoft-trainingtrainingmodulesincoming-documents-dynamics--business-central" />Voir la [formation Microsoft](/training/modules/incoming-documents-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-trainingtrainingmodulesincoming-documents-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/incoming-documents-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

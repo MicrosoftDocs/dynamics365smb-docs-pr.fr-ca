@@ -138,7 +138,7 @@ Les expressions comme « exécution de la planification » et « exécution M
 
  La ligne planification de l'article 1300, ensemble chaîne, indique dix pièces. Ceci diffère des cinq pièces que nous estimons nécessaires pour répondre au document de vente. Visualisez les écritures chaînage.  
 
-### <a name="to-view-order-tracking-entries-for-item-" />Pour afficher les écritures chaînage de l'article 1300
+### <a name="to-view-order-tracking-entries-for-item-1300" />Pour afficher les écritures chaînage de l'article 1300
 
 1.  Sélectionnez la ligne planification correspondant à l'article 1300, puis choisissez l'action **Suivi de commande**.  
 
@@ -234,7 +234,7 @@ Les expressions comme « exécution de la planification » et « exécution M
 
  Plusieurs lignes planification sont simplement multipliées par trois pour fournir 15 vélos au lieu de 5, et les dates d'échéance sont remontées dans le temps pour fournir les quantités augmentées au plus tard à la date de livraison du document de vente à Cannon Group. Pour ces lignes planification, toutes les quantités peuvent être suivies. Les autres lignes planification sont augmentées de dix pièces, et leurs dates d'échéance sont déplacées. Pour ces lignes planification, une partie des quantités ne fait l'objet d'aucun suivi en raison de différents paramètres de planification. Visualisez certaines de ces écritures chaînage.  
 
-### <a name="to-view-order-tracking-entries-for-item-" />Pour afficher les écritures chaînage de l'article 1250
+### <a name="to-view-order-tracking-entries-for-item-1250" />Pour afficher les écritures chaînage de l'article 1250
 
 1.  Sélectionnez la ligne planification correspondant à l'article 1250, puis choisissez l'action **Suivi de commande**.  
 

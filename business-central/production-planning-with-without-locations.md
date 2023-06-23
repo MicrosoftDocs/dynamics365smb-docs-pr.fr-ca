@@ -67,71 +67,71 @@ Le champ **Emplacements obligatoires** de la page **Configuration inventaire**, 
 
 Consultez les variantes des scénarios de configuration ci-dessous.
 
-### <a name="setup-" />Configuration 1
+### <a name="setup-1" />Configuration 1
 
 * Emplacement obligatoire = *Oui*  
 * L'unité de stock a pour valeur *OUEST*  
 * Composante à l'emplacement = *EST*  
 
-#### <a name="case--demand-is-at-west-location" />Situation 1.1 : la demande concerne un emplacement *OUEST*
+#### <a name="case-11-demand-is-at-west-location" />Situation 1.1 : la demande concerne un emplacement *OUEST*
 
 L'article est planifié en fonction des paramètres de planification de la fiche unité de stock (y compris, un éventuel transfert).
 
-#### <a name="case--demand-is-at-east-location" />Situation 1.2 : la demande concerne un emplacement *EST*
+#### <a name="case-12-demand-is-at-east-location" />Situation 1.2 : la demande concerne un emplacement *EST*
 
 L'article est planifié en fonction des paramètres de planification de la fiche article.
 
-#### <a name="case--demand-is-at-north-location" />Situation 1.3 : la demande concerne un emplacement *NORD*
+#### <a name="case-13-demand-is-at-north-location" />Situation 1.3 : la demande concerne un emplacement *NORD*
 
 L’article est planifié comme suit : Stratégie réapprovisionnement = *Lot pour Lot* (l’*ordre* conserve la valeur *Ordre*), Inclure inventaire = *Oui*. Tous les autres paramètres de planification ont la valeur Vide.
 
-#### <a name="case--demand-is-at-blank-location" />Situation 1.4 : la demande concerne un emplacement *VIDE*
+#### <a name="case-14-demand-is-at-blank-location" />Situation 1.4 : la demande concerne un emplacement *VIDE*
 
 L’article est planifié comme suit : Stratégie réapprovisionnement = *Lot pour Lot* (l’*ordre* conserve la valeur *Ordre*), Inclure inventaire = *Oui*. Tous les autres paramètres de planification ont la valeur Vide.
 
-### <a name="setup-" />Configuration 2
+### <a name="setup-2" />Configuration 2
 
 * Emplacement obligatoire = *Oui*  
 * Il n'existe pas d'unité de stock  
 * Composante à l'emplacement = *EST*  
 
-#### <a name="case--demand-is-at-west-location" />Situation 2.1 : la demande concerne un emplacement *OUEST*
+#### <a name="case-21-demand-is-at-west-location" />Situation 2.1 : la demande concerne un emplacement *OUEST*
 
 L’article est planifié comme suit : Stratégie réapprovisionnement = *Lot pour Lot* (l’*ordre* conserve la valeur *Ordre*), Inclure inventaire = *Oui*. Tous les autres paramètres de planification ont la valeur Vide.
 
-#### <a name="case--demand-is-at-east-location" />Situation 2.2 : la demande concerne un emplacement *EST*
+#### <a name="case-22-demand-is-at-east-location" />Situation 2.2 : la demande concerne un emplacement *EST*
 
 L'article est planifié en fonction des paramètres de planification de la fiche article.  
 
-### <a name="setup-" />Configuration 3
+### <a name="setup-3" />Configuration 3
 
 * Emplacement obligatoire = *Non*  
 * Il n'existe pas d'unité de stock  
 * Composante à l'emplacement = *EST*  
 
-#### <a name="case--demand-is-at-west-location" />Situation 3.1 : la demande concerne un emplacement *OUEST*
+#### <a name="case-31-demand-is-at-west-location" />Situation 3.1 : la demande concerne un emplacement *OUEST*
 
 L’article est planifié comme suit : Stratégie réapprovisionnement = *Lot pour Lot* (l’*ordre* conserve la valeur *Ordre*), Inclure inventaire = *Oui*. Tous les autres paramètres de planification ont la valeur Vide.
 
-#### <a name="case--demand-is-at-east-location" />Situation 3.2 : la demande concerne un emplacement *EST*
+#### <a name="case-32-demand-is-at-east-location" />Situation 3.2 : la demande concerne un emplacement *EST*
 
 L'article est planifié en fonction des paramètres de planification de la fiche article.  
 
-#### <a name="case--demand-is-at-blank-location" />Situation 3.3 : la demande concerne un emplacement *VIDE*
+#### <a name="case-33-demand-is-at-blank-location" />Situation 3.3 : la demande concerne un emplacement *VIDE*
 
 L’article est planifié comme suit : Stratégie réapprovisionnement = *Lot pour Lot* (l’*ordre* conserve la valeur *Ordre*), Inclure inventaire = *Oui*. Tous les autres paramètres de planification ont la valeur Vide.
 
-### <a name="setup-" />Configuration 4
+### <a name="setup-4" />Configuration 4
 
 * Emplacement obligatoire = *Non*  
 * Il n'existe pas d'unité de stock  
 * Composante à l'emplacement = *VIDE*  
 
-#### <a name="case--demand-is-at-east-location" />Situation 4.1 : la demande concerne un emplacement *EST*
+#### <a name="case-41-demand-is-at-east-location" />Situation 4.1 : la demande concerne un emplacement *EST*
 
 L’article est planifié comme suit : Stratégie réapprovisionnement = *Lot pour Lot* (l’*ordre* conserve la valeur *Ordre*), Inclure inventaire = *Oui*. Tous les autres paramètres de planification ont la valeur Vide.
 
-#### <a name="case--demand-is-at-blank-location" />Situation 4.2 : la demande concerne un emplacement *VIDE*
+#### <a name="case-42-demand-is-at-blank-location" />Situation 4.2 : la demande concerne un emplacement *VIDE*
 
 L'article est planifié en fonction des paramètres de planification de la fiche article.
 
@@ -139,7 +139,7 @@ Comme vous pouvez le voir au dernier cas de figure, le seul moyen d'obtenir des 
 
 Par conséquent, si vous planifiez souvent des demandes dans des emplacements, nous vous recommandons d’utiliser la fonction unités de stock.
 
-## <a name="see-related-training-at-microsoft-learntrainingpathstrade-get-started-dynamics--business-central" />Voir la formation associée sur [Microsoft Learn](/training/paths/trade-get-started-dynamics-365-business-central/).
+## <a name="see-related-training-at-microsoft-learntrainingpathstrade-get-started-dynamics-365-business-central" />Voir la formation associée sur [Microsoft Learn](/training/paths/trade-get-started-dynamics-365-business-central/).
 
 ## <a name="see-also" />Voir aussi .
 

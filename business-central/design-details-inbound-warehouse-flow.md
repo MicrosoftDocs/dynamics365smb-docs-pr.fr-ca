@@ -64,15 +64,15 @@ Le schéma suivant présente les flux d'enlogement par type de document dans les
 
 :::image type="content" source="media/design_details_warehouse_management_inbound_basic_flow.png" alt-text="Le flux entrant de base dans un entrepôt.":::
 
-### <a name="-release-a-source-document-to-create-a-request-for-an-inventory-put-away" />1 : Libérer un document source pour créer une demande de rangement inventaire
+### <a name="1-release-a-source-document-to-create-a-request-for-an-inventory-put-away" />1 : Libérer un document source pour créer une demande de rangement inventaire
 
 Lorsque vous recevez des articles, émettez le document source, tel qu’un bon de commande ou un ordre de transfert entrant. L’émission du document rend les articles disponibles pour être rangés. Vous pouvez également créer des documents de rangement inventaire pour des lignes commande individuelles, de manière « push », selon les zones spécifiées et les quantités à traiter.  
 
-### <a name="-create-an-inventory-put-away" />2 : Créer un rangement inventaire
+### <a name="2-create-an-inventory-put-away" />2 : Créer un rangement inventaire
 
 Sur la page **Rangement inventaire**, en mode « pull », vous pouvez extraire les lignes document source en attente en fonction des requêtes d’entrepôt entrantes. En mode « push », vous pouvez également créer des lignes rangement inventaire lorsque vous créez le document source.  
 
-### <a name="-post-an-inventory-put-away" />3 : reporter un rangement inventaire
+### <a name="3-post-an-inventory-put-away" />3 : reporter un rangement inventaire
 
 Sur chaque ligne pour les articles qui ont été rangés, entièrement ou partiellement, renseignez le champ **Quantité**, puis reportez le rangement inventaire. Les documents source associés au rangement inventaire sont reportés comme étant reçus.  
 
@@ -89,21 +89,21 @@ Le schéma suivant présente le flux d’enlogement par type de document. Les nu
 
 :::image type="content" source="media/design_details_warehouse_management_inbound_advanced_flow.png" alt-text="Le flux entrant avancé dans un entrepôt.":::
 
-### <a name="-release-the-source-document" />1 : Émettre le document source
+### <a name="1-release-the-source-document" />1 : Émettre le document source
 
 Lorsque vous recevez des articles, émettez le document source, tel que le bon de commande ou un ordre de transfert entrant. L’émission du document rend les articles disponibles pour être rangés. Le rangement contiendra des références au type et au numéro du document origine.
 
-### <a name="-create-a-warehouse-receipt" />2 : Créer une réception entrepôt
+### <a name="2-create-a-warehouse-receipt" />2 : Créer une réception entrepôt
 
 Sur la page **Réception entrepôt**, récupérez les lignes du document origine entrant. Vous pouvez combiner plusieurs lignes document origine dans un document réception entrepôt. Renseignez le champ **Qté à traiter** et sélectionnez la zone et la zone de réception, si nécessaire.  
 
-### <a name="-post-the-warehouse-receipt" />3 : reporter la réception entrepôt
+### <a name="3-post-the-warehouse-receipt" />3 : reporter la réception entrepôt
 
 Reportez la réception entrepôt pour créer des écritures article positives. Le champ **Quantité reçue** sur la ligne document origine entrant est mis à jour.  
 
 Si le bouton à bascule **Rangement requis** n’est pas activé sur la fiche emplacement, c’est là que le processus s’arrête. Sinon, le report du document source entrant rend les articles disponibles pour être rangés. Le rangement contient des références au type et au numéro du document origine.  
 
-### <a name="-optional-generate-put-away-worksheet-lines" />4 : (Facultatif) Générer des lignes feuille rangement
+### <a name="4-optional-generate-put-away-worksheet-lines" />4 : (Facultatif) Générer des lignes feuille rangement
 
 Récupérez les lignes de rangement entrepôt dans la **Feuille rangement** en fonction des réceptions entrepôt reportées ou des opérations qui produisent une sortie. Choisissez les lignes à ranger et spécifiez les informations suivantes :
 
@@ -118,11 +118,11 @@ Lorsque tous les rangements sont planifiés et affectés aux magasiniers, géné
 > [!NOTE]  
 > Si le bouton à bascule **Utiliser feuille rangement** n’est pas activé sur la fiche emplacement, les documents rangement entrepôt sont créés directement sur la base des réceptions entrepôt reportées. Dans ce cas, cette étape n’est pas nécessaire.  
 
-### <a name="-create-a-warehouse-put-away-document" />5 : créer un document rangement entrepôt
+### <a name="5-create-a-warehouse-put-away-document" />5 : créer un document rangement entrepôt
 
 Créez un document de rangement entrepôt en mode « pull », en fonction de la réception entrepôt reportée. Sinon, créez le document rangement entrepôt et affectez-le à un magasinier en mode « push ».  
 
-### <a name="-register-a-warehouse-put-away" />6 : Enregistrer rangement entrepôt
+### <a name="6-register-a-warehouse-put-away" />6 : Enregistrer rangement entrepôt
 
 Sur chaque ligne pour les articles qui ont été rangés, entièrement ou partiellement, renseignez le champ **Quantité** sur la page **Rangement entrepôt**, puis enregistrez le rangement entrepôt.  
 

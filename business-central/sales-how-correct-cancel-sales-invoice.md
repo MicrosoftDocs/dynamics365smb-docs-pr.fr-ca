@@ -61,7 +61,7 @@ Si l'annulation est liée à un report de facture partiel, la ligne de document 
     Une note de crédit vente est automatiquement créée et reportée pour annuler la facture vente reportée initiale.
 5. Sélectionnez l'action **Afficher un avoir correctif** pour afficher l'avoir vente validé qui annule la facture vente validée initiale.
 
-## <a name="see-related-microsoft-trainingtrainingmodulesship-invoice-items-dynamics--business-central" />Voir la [formation Microsoft](/training/modules/ship-invoice-items-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-trainingtrainingmodulesship-invoice-items-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/ship-invoice-items-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

@@ -42,7 +42,7 @@ Si vous affectez des écritures dans différentes devises, vous devez configurer
 3. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Groupes de report fournisseur**, puis choisissez le lien associé.  
 4. Dans les champs **Cpte arr. affect. dev. débit** et **Cpte arr. affect. dev. crédit**, saisissez les comptes du grand livre correspondants pour reporter les différences d'arrondissement.  
 
-## <a name="see-related-microsoft-trainingtrainingmodulesprocess-foreign-currency-payments-dynamics--business-central" />Voir la [formation Microsoft](/training/modules/process-foreign-currency-payments-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-trainingtrainingmodulesprocess-foreign-currency-payments-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/process-foreign-currency-payments-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

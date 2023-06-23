@@ -36,7 +36,7 @@ Si vous ne spécifiez aucune date de livraison demandée sur la ligne document d
 - *date de livraison + délai désenlogement = date de livraison planifiée*
 - *date de livraison planifiée + délai de livraison = date de livraison planifiée*
 
-## <a name="see-related-microsoft-trainingtrainingmodulespromising-sales-order-delivery-dynamics--business-central" />Voir la [formation Microsoft](/training/modules/promising-sales-order-delivery-dynamics-365-business-central/) associée.
+## <a name="see-related-microsoft-trainingtrainingmodulespromising-sales-order-delivery-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/promising-sales-order-delivery-dynamics-365-business-central/) associée.
 
 ## <a name="see-also" />Voir aussi .
 

@@ -230,7 +230,7 @@ Après avoir créé le compte bancaire, vous devez également créer un groupe d
 
 Pour obtenir une vue plus condensée de vos comptes de trésorerie dans les rapports financiers, utilisez les comptes **Début total** et **Fin total** dans votre plan comptable, les lignes **Totalisation** dans les rapports financiers ou les catégories de comptes GL. Pour en savoir plus, voir la section [Business Intelligence et génération de rapports financiers](bi.md).
 
-## <a name="see-related-microsoft-trainingtrainingmodulescash-management-dynamics--business-central" />Voir la [formation Microsoft](/training/modules/cash-management-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-trainingtrainingmodulescash-management-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/cash-management-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

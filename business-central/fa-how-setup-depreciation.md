@@ -84,7 +84,7 @@ Pour chaque registre amortissement, vous définissez une configuration par défa
 3. Pour avoir une configuration par défaut pour chaque utilisateur, choisissez le champ **Code utilisateur** à sélectionner à partir de la page **Utilisateurs**.  
 4. Dans les autres champs, sélectionnez le modèle journal ou le lot journal qui doit être utilisé par défaut.  
 
-## <a name="fiscal-year--days-field-depreciation" />Amortissement via le champ Exercice financier 365 jours
+## <a name="fiscal-year-365-days-field-depreciation" />Amortissement via le champ Exercice financier 365 jours
 
 Lorsque le traitement en lot Calculer amortissement calcule les amortissements, il utilise normalement une année normalisée de 360 jours, dans laquelle chacun des 12 mois compte 30 jours.
 

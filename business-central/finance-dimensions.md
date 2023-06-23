@@ -238,7 +238,7 @@ Dans une page écriture, vous pouvez voir si des dimensions principales sont ass
 > [!NOTE]  
 > La page **Dimensions - Écritures** affiche les dimensions d’une écriture à la fois. Lorsque vous faites défiler les écritures, le contenu de la page **Dimensions - Écritures** est modifié en conséquence.
 
-## <a name="see-related-microsoft-trainingtrainingmodulesdimensions-dynamics--business-centralindex" />Voir la [formation Microsoft](/training/modules/dimensions-dynamics-365-business-central/index) associée
+## <a name="see-related-microsoft-trainingtrainingmodulesdimensions-dynamics-365-business-centralindex" />Voir la [formation Microsoft](/training/modules/dimensions-dynamics-365-business-central/index) associée
 
 ## <a name="see-also" />Voir aussi .
 

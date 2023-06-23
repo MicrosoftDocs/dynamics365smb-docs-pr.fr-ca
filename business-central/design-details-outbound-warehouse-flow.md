@@ -63,15 +63,15 @@ Le schéma suivant présente les processus d’entrepôt sortants pour différen
 
 :::image type="content" source="media/design-details-warehouse-management-outbound-basic-flow.png" alt-text="Affiche les étapes d’un flux sortant de base dans un entrepôt.":::
 
-### <a name="-release-a-source-document" />1 : Libérer un document source
+### <a name="1-release-a-source-document" />1 : Libérer un document source
 
 Lorsque vous utilisez l’action **Libérer** sur un document source, tel qu’un document de vente ou un ordre de transfert, les articles du document sont prêts à être traités dans l’entrepôt. Par exemple, prélevés et placés dans la zone spécifiée sur le document. Sinon, vous pouvez créer des documents prélèvement inventaire pour des lignes commande individuelles, en mode « push », selon les zones spécifiées et les quantités à traiter.  
 
-### <a name="-create-an-inventory-pick" />2 : Créer un prélèvement inventaire
+### <a name="2-create-an-inventory-pick" />2 : Créer un prélèvement inventaire
 
 Sur la page **Prélèvement inventaire**, l'employé d'entrepôt récupère, en mode « pull », les lignes du document source. Sinon, les lignes prélèvement inventaire sont déjà créées, par déplacement, par l'utilisateur responsable du document origine.  
 
-### <a name="-post-an-inventory-pick" />3 : reporter un prélèvement inventaire
+### <a name="3-post-an-inventory-pick" />3 : reporter un prélèvement inventaire
 
 Sur chaque ligne pour les articles qui ont été prélevés ou déplacés, entièrement ou partiellement, renseignez le champ **Quantité**, puis reportez le prélèvement inventaire. Les documents origine associés au prélèvement inventaire sont reportés comme étant livrés ou consommés.  
 
@@ -83,28 +83,28 @@ Le schéma suivant présente les processus d’entrepôt sortants pour différen
 
 :::image type="content" source="media/design_details_warehouse_management_outbound_advanced_flow.png" alt-text="Affiche les étapes d’un flux sortant avancé dans un entrepôt.":::
 
-### <a name="-release-a-source-document" />1 : Libérer un document source
+### <a name="1-release-a-source-document" />1 : Libérer un document source
 
 Le lancement d’un document origine dans les configurations avancées a le même effet que pour les configurations de base. Les articles deviennent disponibles pour être manipulés dans l’entrepôt. Par exemple, ils peuvent être inclus dans une livraison.  
 
-### <a name="-create-a-warehouse-shipment" />2 : Créer une livraison entrepôt
+### <a name="2-create-a-warehouse-shipment" />2 : Créer une livraison entrepôt
 
 Sur la page **Livraison entrepôt**, récupérez les lignes du document source libéré. Vous pouvez combiner des lignes de plusieurs documents dans une livraison entrepôt.  
 
-### <a name="-create-a-warehouse-pick" />3 : Créer un prélèvement entrepôt
+### <a name="3-create-a-warehouse-pick" />3 : Créer un prélèvement entrepôt
 
 Sur la page **Livraison entrepôt**, créez des activités de prélèvement entrepôt pour les livraisons entrepôt de l’une des deux manières suivantes :
 
 - En mode « push », où vous utilisez l’action **Créer prélèvement**. Sélectionnez les lignes à prélever et préparez les prélèvements en spécifiant, par exemple, à partir de quelles zones les prendre, à quelles zones les placer, et le nombre d’unités à traiter. Les zones peuvent être prédéfinies pour l’emplacement d’entrepôt ou la ressource.
 - En mode « pull », où vous utilisez l’action **Libérer**. Sur la page **Feuille prélèvement**, les magasiniers peuvent utiliser l’action **Extraire documents entrepôt** pour récupérer les prélèvements qui leur sont assignés. Lorsque les prélèvements entrepôt sont entièrement enregistrés, les lignes dans la **Feuille prélèvement** sont supprimées.
 
-### <a name="-register-a-warehouse-pick" />4 : Enregistrer un prélèvement entrepôt
+### <a name="4-register-a-warehouse-pick" />4 : Enregistrer un prélèvement entrepôt
 
 Sur la page **Prélèvement entrepôt**, un employé d'entrepôt renseigne le champ **Quantité** pour chaque ligne qu’il a prélevée entièrement ou partiellement, puis enregistre le prélèvement.
 
 Les écritures d’entrepôt sont créées, et les lignes prélèvement entrepôt sont supprimées si la quantité entière a été prélevée. Le document de prélèvement entrepôt reste ouvert jusqu’à ce que la quantité totale de la livraison entrepôt soit enregistrée. Le champ **Qté prélevée** sur les lignes expédition entrepôt est mis à jour en conséquence.  
 
-### <a name="-post-the-warehouse-shipment" />5 : reporter la livraison entrepôt
+### <a name="5-post-the-warehouse-shipment" />5 : reporter la livraison entrepôt
 
 Lorsque tous les articles du document de livraison entrepôt sont enregistrés comme prélevés, l'employé d'entrepôt reporte la livraison. Le report met à jour les écritures article pour refléter la réduction de l'inventaire. Par exemple, le champ **Qté expédiée** sur la ligne document origine sortant est mis à jour.  
 
