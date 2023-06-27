@@ -118,7 +118,7 @@ Dans les scénarios où une partie de la quantité est assemblée et l’autre d
 > [!NOTE]  
 > Si les articles sont assemblés pour commande, le prélèvement inventaire pour le document de vente lié crée un mouvement d’inventaire pour toutes les composantes d’assemblage.  
 
-## <a name="see-related-microsoft-trainingtrainingpathspick-ship-items-business-central" />Voir la [formation Microsoft](/training/paths/pick-ship-items-business-central/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/paths/pick-ship-items-business-central/) associée
 
 ## <a name="see-also" />Voir aussi
 

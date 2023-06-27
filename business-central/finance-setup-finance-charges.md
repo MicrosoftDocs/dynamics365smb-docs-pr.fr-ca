@@ -62,7 +62,7 @@ En outre, chaque modalité de la table Modalités de frais financiers est lié �
 |%8|Contenu du champ **Code devise** de l'en-tête de note de frais financiers|  
 |%9|Contenu du champ **Date comptabilisation** de l'en-tête de facture d'intérêts|  
 
-## <a name="see-related-microsoft-trainingtrainingmodulessend-memos-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/send-memos-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/send-memos-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

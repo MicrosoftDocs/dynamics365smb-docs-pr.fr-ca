@@ -33,7 +33,7 @@ La création d'une définition d'échange de données implique deux tâches :
 1. Sur la page **Définition d'échange de données**, décrivez la mise en forme des lignes et des colonnes du fichier. Pour plus d’informations, consultez la section [Décrire le formatage de lignes et de colonnes dans un fichier](#formatlinescolumns).  
 2. Sur la page **Correspondance échange de données**, associez les colonnes du fichier de données avec les champs de [!INCLUDE[prod_short](includes/prod_short.md)]. Pour plus d’informations, consultez la section [Mapper les colonnes du fichier de données sur les champs de [!INCLUDE[prod_short](includes/prod_short.md)]](#mapfields).  
 
-### <a name="a-nameformatlinescolumnsato-describe-the-formatting-of-lines-and-columns-in-the-file" /><a name=formatlinescolumns></a>Pour décrire le formatage des lignes et des colonnes dans le fichier
+### <a name="to-describe-the-formatting-of-lines-and-columns-in-the-file" /><a name=formatlinescolumns></a>Pour décrire le formatage des lignes et des colonnes dans le fichier
 
 1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 1.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Définitions d’échange de données**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -108,7 +108,7 @@ L'étape suivante de la création de la définition d'échange de données consi
 > [!NOTE]  
 > La correspondance spécifique dépend de l'objectif commercial du fichier de données à échanger et des variations locales. Même le standard bancaire SEPA a des variations locales. [!INCLUDE[prod_short](includes/prod_short.md)] prend en charge en natif l’importation de fichiers de relevé bancaire SEPA CAMT. Ceci est représenté par le code d'enregistrement de définition d'échange de données **SEPA CAMT** sur la page **Définitions d'échange de données**. Pour plus d'informations sur le mappage de champs spécifique de cette prise en charge de SEPA CAMT, voir [Mappage de champs lors de l'importation de fichiers SEPA CAMT](across-field-mapping-when-importing-sepa-camt-files.md).  
 
-### <a name="a-namemapfieldsato-map-columns-in-the-data-file-to-fields-in-includeprodshortincludesprodshortmd" /><a name=mapfields></a>Pour mapper les colonnes du fichier de données aux champs de [!INCLUDE[prod_short](includes/prod_short.md)]
+### <a name="to-map-columns-in-the-data-file-to-fields-in-" /><a name=mapfields></a>Pour mapper les colonnes du fichier de données aux champs de [!INCLUDE[prod_short](includes/prod_short.md)]
 
 > [!TIP]
 > Parfois, les valeurs des champs que vous souhaitez associer sont différentes. Par exemple, le code langue pour les États-Unis est « U.S. » dans une application métier et « US » dans une autre. Cela signifie que vous devez transformer la valeur lorsque vous échangez des données. Cela se fait via les règles de transformation que vous définissez pour les champs. Pour plus d’informations, consultez [Règles de transformation](across-how-to-set-up-data-exchange-definitions.md#transformation-rules).

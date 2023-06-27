@@ -193,9 +193,9 @@ Dans la plupart des cas, vous pouvez ouvrir des écritures à partir de la fiche
 
 Vous pouvez modifier certains champs sur les documents achat reportés, tels que le champ **Référence de paiement**. Pour plus d'informations, voir [Modifier les documents reportés](across-edit-posted-document.md). Pour les champs plus critiques qui concernent la piste d'audit, vous devez inverser ou annuler le report. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md).
 
-## <a name="see-related-microsoft-trainingtrainingmodulesreceive-invoice-dynamics-d365-business-centralindex" />Voir la [formation Microsoft](/training/modules/receive-invoice-dynamics-d365-business-central/index) associée.
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/receive-invoice-dynamics-d365-business-central/index) associée.
 
-## <a name="see-related-microsoft-trainingtrainingmodulesprocessing-invoices-dynamics-365-business-centralindex" />Voir la [formation Microsoft](/training/modules/processing-invoices-dynamics-365-business-central/index) associée
+## <a name="see-related-microsoft-training-1" />Voir la [formation Microsoft](/training/modules/processing-invoices-dynamics-365-business-central/index) associée
 
 ## <a name="see-also" />Voir aussi
 

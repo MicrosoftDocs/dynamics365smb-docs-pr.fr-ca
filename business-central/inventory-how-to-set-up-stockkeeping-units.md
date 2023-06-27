@@ -34,7 +34,7 @@ Pour créer plusieurs points de stock pour un article, utilisez le traitement pa
 > Si l'unité de stock est expédiée à la fabrication, le champ **Coût standard** n'est pas utilisé lors de la facturation et de l'ajustement du coût réel de l'article fabriqué. Celui utilisé est plutôt le champ **Coût standard** de la fiche article sous-jacente. En outre, tous les écarts sont calculés par rapport aux coûts totaux de l'article.<br /><br />
 > Étant donné qu'il n'est pas possible d'affecter les nomenclatures de production et l'itinéraire aux unités de stock, le calcul du coût unitaire et le calcul lié des coûts totaux ne sont également pas disponibles sur les unités de stock. Pour plus d'informations, voir [À propos du calcul des coûts standard](finance-about-calculating-standard-cost.md)
 
-## <a name="see-related-microsoft-trainingtrainingmodulescontrol-inventory-multiple-locations" />Voir la [formation Microsoft](/training/modules/control-inventory-multiple-locations/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/control-inventory-multiple-locations/) associée
 
 ## <a name="see-also" />Voir aussi .
 

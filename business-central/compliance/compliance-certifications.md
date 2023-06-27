@@ -37,7 +37,7 @@ Business Central en tant que service en nuage a également obtenu des certificat
 [Conformité des applications](compliance-application-compliance.md)  
 [Conformité des services](compliance-service-compliance.md)  
 
-## <a name="includeprodshortincludesfreetrialmdmd" />[!INCLUDE[prod_short](../includes/free_trial_md.md)]
+## [!INCLUDE[prod_short](../includes/free_trial_md.md)]
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

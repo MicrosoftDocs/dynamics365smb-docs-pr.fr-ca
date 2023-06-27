@@ -99,7 +99,7 @@ Vous pouvez reporter la valeur résiduelle avec le coût d'acquisition à partir
 > [!NOTE]
 > S'il existe une valeur résiduelle pour une immobilisation, celle-ci est utilisée dans le report de l'amortissement au lieu de la valeur dans le champ **Valeur comptable finale** de la page **Registres amortissement immo**. Pour plus d'informations, voir [Pour gérer la valeur comptable finale](fa-how-depreciate-amortize.md#to-manage-the-ending-book-value).
 
-## <a name="see-related-microsoft-trainingtrainingmodulespurchase-fixed-assets" />Voir la [formation Microsoft](/training/modules/purchase-fixed-assets/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/purchase-fixed-assets/) associée
 
 ## <a name="see-also" />Voir aussi .
 

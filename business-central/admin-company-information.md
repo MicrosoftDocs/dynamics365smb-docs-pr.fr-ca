@@ -28,7 +28,7 @@ Si votre [!INCLUDE [prod_short](includes/prod_short.md)] inclut plusieurs compag
 
 Il existe quelques fonctionnalités que vous pouvez utiliser pour changer de compagnie, comme le sélecteur de compagnie (<kbd>Ctrl</kbd>+<kbd>O</kbd>). Pour en savoir plus, voir [Passer à une autre compagnie ou un autre environnement](ui-organization-switch.md).
 
-## <a name="a-namebadgeadisplay-a-company-badge" /><a name="badge"></a>Afficher un badge de compagnie
+## <a name="display-a-company-badge" /><a name="badge"></a>Afficher un badge de compagnie
 
 Lorsqu’il y a plusieurs compagnies ou environnements, vous verrez le sélecteur de compagnie sur le côté supérieur droit de la barre d’application, près de l’icône de recherche dans la barre d’application. Par défaut, le sélecteur de compagnie utilise une icône de compagnie standard, comme le ![Lanceur Icône de la compagnie.](media/ui-experience/company-icon.png "Affiche l’icône de changement de compagnie utilisée lorsqu’il n’y a qu’un seul environnement") et ![company-icon-mult-env](media/ui-experience/company-icon-multi-env.png "Affiche l’icône de changement de compagnie utilisée lorsqu’il y a plusieurs environnements").
 
@@ -54,7 +54,7 @@ Le nom de la compagnie est toujours affiché dans le coin supérieur gauche et f
 
 L’expérience utilisateur par défaut dans une version d’évaluation de [!INCLUDE [prod_short](includes/prod_short.md)] ne révèle pas toutes les fonctionnalités. Vous pouvez passer à l’expérience complète sur la page **Informations compagnie**. Pour plus d'informations, voir [Modifier les fonctionnalités affichées](ui-experiences.md).  
 
-## <a name="see-related-microsoft-trainingtrainingmodulescreate-new-companies-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/create-new-companies-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/create-new-companies-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

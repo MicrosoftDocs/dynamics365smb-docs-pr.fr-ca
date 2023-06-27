@@ -51,7 +51,7 @@ Ce graphique indique comment le champ **Code de zone** sur les lignes composante
 
 :::image type="content" source="media/binflow.png" alt-text="Champ de code de zone sur les lignes de composante de bon de production.":::
 
-## <a name="see-related-microsoft-trainingtrainingmodulesconfigure-bins-location" />Voir la [formation Microsoft](/training/modules/configure-bins-location/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/configure-bins-location/) associée
 
 ## <a name="see-also" />Voir aussi
 

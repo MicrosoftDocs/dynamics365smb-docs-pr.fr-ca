@@ -159,7 +159,7 @@ Avec les projets, vous pouvez programmer l'utilisation des ressources de votre c
 
  Cette procédure pas-à-pas vous a montré comment calculer les TEC dans [!INCLUDE[prod_short](includes/prod_short.md)]. Avec des projets plus vastes, il peut être utile de transférer les coûts vers un compte TEC de manière périodique tandis que le projet est en cours d’achèvement. Cette procédure pas-à-pas vous a montré comment exclure des lignes tâche d'un calcul. Elle vous montre également à quel moment vous devriez avoir à recalculer. Enfin, cette procédure pas-à-pas montre comment reporter les TEC dans le grand livre. Un exemple de la manière d'inverser un report des TEC dans le grand livre est également inclus.  
 
-## <a name="see-related-microsoft-trainingtrainingpathscalculate-post-job-wip" />Voir la [formation Microsoft](/training/paths/calculate-post-job-wip/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/paths/calculate-post-job-wip/) associée
 
 ## <a name="see-also" />Voir aussi
 

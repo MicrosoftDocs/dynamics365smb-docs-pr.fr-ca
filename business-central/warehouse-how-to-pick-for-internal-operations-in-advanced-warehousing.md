@@ -167,7 +167,7 @@ La figure ci-après indique la date à laquelle le champ **Code de zone** de la 
 
 :::image type="content" source="media/binflow.png" alt-text="Aperçu de quand et comment le champ Code de zone est renseigné.":::
 
-## <a name="see-related-microsoft-trainingtrainingpathspick-ship-items-business-central" />Voir la [formation Microsoft](/training/paths/pick-ship-items-business-central/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/paths/pick-ship-items-business-central/) associée
 
 ## <a name="see-also" />Voir aussi
 

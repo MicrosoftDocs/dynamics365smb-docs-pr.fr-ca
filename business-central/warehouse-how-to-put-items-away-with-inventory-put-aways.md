@@ -81,7 +81,7 @@ Un employé d'entrepôt peut créer un nouveau rangement inventaire basé sur le
     * Reporter la réception des lignes du document source qui ont été rangées
     * Si l’emplacement utilise des zones, le report crée également des écritures entrepôt pour reporter les modifications apportées aux quantités zone.
 
-## <a name="see-related-microsoft-trainingtrainingmodulesreceive-put-away-items" />Voir la [formation Microsoft](/training/modules/receive-put-away-items/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/receive-put-away-items/) associée
 
 ## <a name="see-also" />Voir aussi
 

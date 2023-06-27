@@ -115,7 +115,7 @@ Lorsque votre compagnie utilise les processus de planification des approvisionne
 
 Pour des exemples d’utilisation des champs du raccourci **Planification**, voir [Configurer des recommandations : configuration de planification](setup-best-practices-planning-parameters.md).  
 
-## <a name="see-related-microsoft-trainingtrainingmodulescreate-items" />Voir la [formation Microsoft](/training/modules/create-items/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/create-items/) associée
 
 ## <a name="see-also" />Voir aussi .
 

@@ -22,7 +22,7 @@ Chaque utilisateur qui exécute des activités entrepôt doit être configuré e
 5. Activez le bouton à bascule **Par défaut** pour définir l’emplacement comme seul emplacement pour les activités entrepôt de l’employé.  
 6. Répétez ces étapes pour affecter d’autres employés à des emplacements ou affecter d’autres emplacements à des employés d’entrepôt existants.  
 
-## <a name="see-related-microsoft-trainingtrainingmodulesget-started-warehouse-management" />Voir la [formation Microsoft](/training/modules/get-started-warehouse-management/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/get-started-warehouse-management/) associée
 
 ## <a name="see-also" />Voir aussi
 

@@ -115,7 +115,7 @@ Vous pouvez copier des écritures d'une loi d'amortissement vers une autre à l'
 
 Les lignes copiées sont créées dans le journal GL immobilisation ou le journal immobilisation, selon que le registre amortissement que vous copiez a été intégrée dans le grand livre ou non.  
 
-## <a name="see-related-microsoft-trainingtrainingmodulescalculate-post-depreciations" />Voir la [formation Microsoft](/training/modules/calculate-post-depreciations/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/calculate-post-depreciations/) associée
 
 ## <a name="see-also" />Voir aussi .
 

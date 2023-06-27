@@ -135,7 +135,7 @@ Sur la page **Prélèvement inventaire**, vous pouvez gérer toutes les activit�
 
     Les 30 lampes Amsterdam sont à présent enregistrées comme prélevées depuis les zones S-01-0001 et S-01-0002, et une écriture article négative est créée pour refléter la livraison vente reportée.  
 
-## <a name="see-related-microsoft-trainingtrainingpathspick-ship-items-business-central" />Voir la [formation Microsoft](/training/paths/pick-ship-items-business-central/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/paths/pick-ship-items-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

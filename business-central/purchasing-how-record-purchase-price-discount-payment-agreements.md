@@ -145,7 +145,7 @@ Le meilleur prix est le prix le plus bas autorisé associé à l'escompte ligne 
 
 Si aucun prix spécial ne peut être calculé pour l'article de la ligne, alors soit le coût unitaire direct, soit le prix unitaire à partir de la fiche article est inséré.
 
-## <a name="see-related-microsoft-trainingtrainingmodulesset-up-prices-discounts-dynamics-365-business-centralindex" /><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/set-up-prices-discounts-dynamics-365-business-central/index) associée
+## <a name="see-related-microsoft-training" /><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/set-up-prices-discounts-dynamics-365-business-central/index) associée
 
 ## <a name="see-also" /><a name="see-also"></a>Voir aussi .
 

@@ -70,7 +70,7 @@ Avec la fonctionnalité activée, une transaction de retour peut être reportée
 | Spécifiez les rapports par défaut à utiliser pour différents types de documents. |[Sélection des rapports dans Business Central](across-report-selections.md)|
 |Spécifiez si les utilisateurs sont autorisés à reporter des factures achat et s’ils doivent les reporter avec une livraison. |[Définir une stratégie de report des factures pour les utilisateurs](admin-setup-invoice-posting-policy.md)|
 
-## <a name="see-related-training-at-microsoft-learnlearnpathstrade-get-started-dynamics-365-business-central" />Voir la formation associée sur [Microsoft Learn](/learn/paths/trade-get-started-dynamics-365-business-central/).
+## <a name="see-related-training-at-microsoft-learn" />Voir la formation associée sur [Microsoft Learn](/learn/paths/trade-get-started-dynamics-365-business-central/).
 
 ## <a name="see-also" />Voir aussi
 

@@ -49,7 +49,7 @@ Un nouveau champ, **Bloquer la suppression des comptes GL**, est ajouté à la p
 
 Le fait de régler le champ **Bloquer la suppression des comptes GL** sur *Oui* peut être considéré comme une pratique exemplaire, tout comme définir la date dans le champ **Vérifier suppr. cpte GL après**, par exemple à la date à laquelle vous devez stocker vos données financières.  
 
-## <a name="see-related-microsoft-trainingtrainingmoduleschart-accounts-dynamics-365-business-centralindex" />Voir la [formation Microsoft](/training/modules/chart-accounts-dynamics-365-business-central/index) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/chart-accounts-dynamics-365-business-central/index) associée
 
 ## <a name="see-also" />Voir aussi
 
@@ -65,6 +65,6 @@ Le fait de régler le champ **Bloquer la suppression des comptes GL** sur *Oui* 
 [Configurer et fermer les soldes d’état des résultats dans la version espagnole](LocalFunctionality/Spain/how-to-set-up-and-close-income-statement-balances.md)  
 [Décaler et valider la chartes de comptes dans la version espagnole](LocalFunctionality/Spain/how-to-indent-and-validate-chart-of-accounts.md)  
 
-## <a name="includeprodshortincludesfreetrialmdmd" />[!INCLUDE[prod_short](includes/free_trial_md.md)]
+## [!INCLUDE[prod_short](includes/free_trial_md.md)]
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -69,7 +69,7 @@ Lorsque vous reportez une diminution d'inventaire, une écriture d'affectation a
 
 Dans la table **Ecriture article**, le champ **Quantité restante** présente la quantité qui n'a pas encore été lettrée. Si la quantité restante est supérieure à 0, la case à cocher **Ouvrir** est activée.  
 
-### <a name="example" />Exemple :
+### <a name="example-1" />Exemple :
 L'exemple suivant montre l'écriture d'affectation article créée lors du report d'une livraison vente de 5 unités des articles réceptionnés dans l'exemple précédent. La première écriture d'affectation article est la réception achat. La deuxième écriture d'affectation est la livraison vente.  
 
 Le tableau suivant montre les deux écritures d'affectation article qui résultent respectivement de l'augmentation de la diminution d'inventaire.  

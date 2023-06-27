@@ -47,7 +47,7 @@ Le partage de rapports avec des collaborateurs est également possible sur la pa
 >
 > Utiliser l’action **Partager** rend le fichier de rapport généré accessible aux autres utilisateurs uniquement sur OneDrive for Business et ne répertorie pas le rapport programmé sur leur **Boîte de réception Rapport**.
 
-## <a name="see-related-training-at-microsoft-learnlearnpathsbuild-reports" />Voir la formation associée sur [Microsoft Learn](/learn/paths/build-reports/).
+## <a name="see-related-training-at-microsoft-learn" />Voir la formation associée sur [Microsoft Learn](/learn/paths/build-reports/).
 
 ## <a name="see-also" />Voir aussi .
 

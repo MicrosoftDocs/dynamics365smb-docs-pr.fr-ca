@@ -61,7 +61,7 @@ Suivez les étapes de cette procédure pour assembler un article à stocker. Pou
 
 Une fois le report réussi, l'élément d'assemblage est reporté comme production dans le code d'emplacement et le code de zone potentiel qui sont définis sur l'ordre d'assemblage. Pour les ordres d'assemblage créés manuellement, le magasin peut être copié à partir du champ de configuration **Emplacement par défaut pour les commandes**. Pour les flux assembler pour commande, le code d'emplacement peut être copié à partir de la ligne document de vente.  
 
-## <a name="see-related-microsoft-trainingtrainingpathsassemble-items-dynamics-365-business-central" />Voir la [formation Microsoft](/training/paths/assemble-items-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/paths/assemble-items-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi
 

@@ -11,7 +11,7 @@ ms.custom: bap-template
 ms.service: dynamics365-business-central
 ---
 
-# <a name="managing-microsoft-teams-integration-with-include-prodshortincludesprodshortmd" />Gestion de l’intégration de Microsoft Teams à [!INCLUDE [prod_short](includes/prod_short.md)]
+# <a name="managing-microsoft-teams-integration-with-" />Gestion de l’intégration de Microsoft Teams à [!INCLUDE [prod_short](includes/prod_short.md)]
 
 [!INCLUDE [online_only](includes/online_only.md)]
 
@@ -42,7 +42,7 @@ Cette section décrit la configuration minimale requise pour les fonctionnalité
 
     Le paramètre de stratégie **Autoriser les aperçus d’URL** doit être activé. Sinon, une fiche ne peut pas être générée pour les liens [!INCLUDE [prod_short](includes/prod_short.md)] collés dans une conversation Teams. Pour plus d’informations sur ce paramètre, consultez [Gérer les stratégies de messagerie dans Teams](/microsoftteams/messaging-policies-in-teams).
 
-### <a name="managing-the-include-prodshortincludesprodshortmd-app-optional" />Gestion de l’application [!INCLUDE [prod_short](includes/prod_short.md)] (facultatif)
+### <a name="managing-the--app-optional" />Gestion de l’application [!INCLUDE [prod_short](includes/prod_short.md)] (facultatif)
 
 En tant qu’administrateur Teams, vous pouvez gérer toutes les applications de votre organisation, y compris l’application [!INCLUDE [prod_short](includes/prod_short.md)]. Vous pouvez approuver ou installer l’application [!INCLUDE [prod_short](includes/prod_short.md)] pour votre organisation, empêcher l’utilisateur d’installer l’application, etc.
 
@@ -51,9 +51,9 @@ Pour plus d’informations, consultez les articles suivants dans la documentatio
 - [Gérer vos applications dans le centre d’administration Microsoft Teams](/MicrosoftTeams/manage-apps)
 - [Gérer les stratégie de configuration des applications dans Microsoft Teams](/microsoftteams/teams-app-setup-policies)
 
-## <a name="in-include-prodshortincludesprodshortmd" />Dans [!INCLUDE [prod_short](includes/prod_short.md)]
+## <a name="in-" />Dans [!INCLUDE [prod_short](includes/prod_short.md)]
 
-### <a name="minimum-requirements" />Configuration minimale requise
+### <a name="minimum-requirements-1" />Configuration minimale requise
 
 - Version de [!INCLUDE [prod_short](includes/prod_short.md)] :
 
@@ -103,7 +103,7 @@ Le centre d’administration Microsoft Teams est l’endroit où vous configurez
 
 Microsoft Teams fournit des contrôles étendus pour la conformité et la gestion des données sensibles ou personnellement identifiables&mdash; y compris les données ajoutées aux chats et aux canaux par l’application [!INCLUDE [prod_short](includes/prod_short.md)].
 
-### <a name="understanding-where-include-prodshortincludesprodshortmd-cards-are-stored" />Comprendre où les fiches [!INCLUDE [prod_short](includes/prod_short.md)] sont stockées
+### <a name="understanding-where--cards-are-stored" />Comprendre où les fiches [!INCLUDE [prod_short](includes/prod_short.md)] sont stockées
 
 Une fois qu’une fiche est envoyée à une discussion instantanée, la fiche et les champs affichés sur la fiche sont copiés dans Teams. Ces informations sont soumises aux stratégies Teams de votre organisation, telles que les stratégies de conservation des données. Lors de l’affichage des détails de la fiche, aucune des données de la fenêtre de détails n’est stockée dans Teams. Les données restent stockées dans [!INCLUDE [prod_short](includes/prod_short.md)] et ne seront récupérées par Teams que lorsque l’utilisateur choisit d’afficher les détails. 
 
@@ -153,7 +153,7 @@ Vous configurez le paramètre par environnement. Ainsi, lorsque vous activez ou 
 [Dépannage dans Teams](admin-teams-troubleshooting.md)  
 [Développement pour l’intégration de Teams](/dynamics365/business-central/dev-itpro/developer/devenv-develop-for-teams)  
 
-## <a name="includeprodshortincludesfreetrialmdmd" />[!INCLUDE[prod_short](includes/free_trial_md.md)]
+## [!INCLUDE[prod_short](includes/free_trial_md.md)]
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

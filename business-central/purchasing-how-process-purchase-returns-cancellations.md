@@ -181,7 +181,7 @@ Lorsque des livraisons retour sont regroupées sur une note de crédit et report
 2. Renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**.  
 3. Vous pouvez également supprimer chacun des retours achat manuellement.
 
-## <a name="see-related-microsoft-trainingtrainingpathsreturn-items-dynamics-365-business-central" />Voir la [formation Microsoft](/training/paths/return-items-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/paths/return-items-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi
 [Procédure d'achat](purchasing-manage-purchasing.md)  

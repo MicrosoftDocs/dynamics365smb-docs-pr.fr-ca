@@ -220,7 +220,7 @@ La procédure suivante est basée sur la page **Journal général**, mais s'appl
 
 Les valeurs dans le champ **N° document** sont modifiées, le cas échéant, pour que le numéro de document sur les lignes journal individuelles ou groupées soit dans un ordre séquentiel. Une fois que les documents sont renumérotés, vous pouvez procéder au report du journal.
 
-## <a name="see-related-microsoft-trainingtrainingpathsuse-journals-dynamics-365-business-central" />Voir la [formation Microsoft](/training/paths/use-journals-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/paths/use-journals-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi
 

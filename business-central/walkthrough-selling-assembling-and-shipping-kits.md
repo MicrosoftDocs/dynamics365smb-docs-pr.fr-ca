@@ -436,7 +436,7 @@ Lorsque le document de vente est reporté ultérieurement comme étant entièrem
 
     Lorsque The Device Shop paie pour la réception des 18 ordinateurs de CRONUS, le document de vente et ses ordres d’assemblage liés sont supprimés.  
 
-## <a name="see-related-microsoft-trainingtrainingpathsassemble-items-dynamics-365-business-central" />Voir la [formation Microsoft](/training/paths/assemble-items-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/paths/assemble-items-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

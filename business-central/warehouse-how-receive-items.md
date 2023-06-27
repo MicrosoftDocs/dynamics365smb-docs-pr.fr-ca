@@ -92,7 +92,7 @@ Si des zones sont obligatoires pour un emplacement, les codes de zone et zone so
 * Pour les configurations avancées qui utilisent le rangement et le prélèvement dirigés, [!INCLUDE [prod_short](includes/prod_short.md)] utilise le code de zone réception de la page **Fiche emplacement** de l’emplacement. Si aucun code de zone réception n’est spécifié, aucune zone n’est spécifiée. Si l’article et les zones de réception ne correspondent pas, le code de zone réception est vide.
 * Dans d’autres configurations, si aucun code de zone réception n’est spécifié, [!INCLUDE [prod_short](includes/prod_short.md)] utilise le code de zone du document source.
 
-## <a name="see-related-microsoft-trainingtrainingmodulesreceive-invoice-dynamics-d365-business-centralindex" />Voir la [formation Microsoft](/training/modules/receive-invoice-dynamics-d365-business-central/index) associée.
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/receive-invoice-dynamics-d365-business-central/index) associée.
 
 ## <a name="see-also" />Voir aussi
 

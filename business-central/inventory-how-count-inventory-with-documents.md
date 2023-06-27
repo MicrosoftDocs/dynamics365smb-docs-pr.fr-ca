@@ -242,7 +242,7 @@ Vous pouvez spécifier les rapports à imprimer à différentes phases en choisi
 > [!NOTE]
 > Les rapports disponibles peuvent varier en fonction de la localisation de votre pays. L'application de base n'inclut aucune disposition.
 
-## <a name="see-related-microsoft-trainingtrainingmodulesadjust-inventory" />Voir la [formation Microsoft](/training/modules/adjust-inventory/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/adjust-inventory/) associée
 
 ## <a name="see-also" />Voir aussi .
 

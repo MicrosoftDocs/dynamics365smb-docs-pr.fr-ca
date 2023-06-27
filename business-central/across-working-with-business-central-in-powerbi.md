@@ -10,7 +10,7 @@ ms.search.keywords: 'account schedule, analysis, reporting, financial report, bu
 ms.date: 09/07/2022
 ms.author: jswymer
 ---
-# <a name="work-with-include-prodshortincludesprodshortmd-data-in-power-bi" />Utiliser des données [!INCLUDE [prod_short](includes/prod_short.md)] dans Power BI
+# <a name="work-with--data-in-power-bi" />Utiliser des données [!INCLUDE [prod_short](includes/prod_short.md)] dans Power BI
 
 Dans cet article, vous découvrirez quelques notions de base sur l’utilisation des rapports et des tableaux de bord dans Power BI qui utilisent [!INCLUDE [prod_short](includes/prod_short.md)] comme source de données. L’article traite de certains aspects qui vous aideront à démarrer en tant qu’utilisateur [!INCLUDE[prod_short](includes/prod_short.md)]. Pour obtenir des instructions générales et des instructions sur l’utilisation Power BI, voir [Documentation Power BI pour les consommateurs](/power-bi/consumer).
 
@@ -44,7 +44,7 @@ Dans le volet de navigation, sous Ensembles de données, sélectionnez Plus d’
 
 Pour plus d’informations, voir [Configurer une actualisation programmée](/power-bi/connect-data/refresh-scheduled-refresh).
 
-## <a name="a-nameuploadaupload-reports-from-files" /><a name="upload"></a>Télécharger des rapports à partir de fichiers
+## <a name="upload-reports-from-files" /><a name="upload"></a>Télécharger des rapports à partir de fichiers
 
 Les rapports Power BI peuvent être distribués entre les utilisateurs sous forme de fichiers .pbix. Si vous disposez d’un fichier .pbix, vous pouvez télécharger le fichier dans un espace de travail. Pour télécharger un rapport, procédez comme suit :
 
@@ -62,7 +62,7 @@ Pour plus d’informations, consultez [Télécharger le rapport vers le service]
 > [!TIP]
 > Si vous utilisez [!INCLUDE[prod_short](includes/prod_short.md)] en ligne, vous pouvez également télécharger un rapport depuis [!INCLUDE[prod_short](includes/prod_short.md)]. Pour plus d’informations, consultez [Utiliser les rapports Power BI dans [!INCLUDE [prod_short](includes/prod_short.md)] - Télécharger des rapports](across-working-with-powerbi.md#upload).
 
-## <a name="a-nameshareashare-reports-with-others" /><a name="share"></a>Partager des rapports avec d’autres
+## <a name="share-reports-with-others" /><a name="share"></a>Partager des rapports avec d’autres
 
 Une fois qu’un rapport est dans votre espace de travail, vous pouvez le partager avec d’autres personnes de votre organisation.
 
@@ -71,7 +71,7 @@ Pour partager un rapport, dans une liste de rapports ou dans un rapport ouvert, 
 > [!NOTE]
 > Vous devez disposer d'une [Licence Power BI Pro](/power-bi/service-features-license-type), tout comme les personnes avec qui vous effectuez le partage. Le contenu doit se trouver dans un espace de travail dans une [Capacité Premium](/power-bi/service-premium-what-is). Pour en savoir plus, consultez [Moyens de partager votre travail dans Power BI](/power-bi/service-how-to-collaborate-distribute-dashboards-reports).
 
-## <a name="see-related-microsoft-trainingtrainingmodulesconfigure-powerbi-excel-dynamics-365-business-centralindex" />Voir la [formation Microsoft](/training/modules/configure-powerbi-excel-dynamics-365-business-central/index) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/configure-powerbi-excel-dynamics-365-business-central/index) associée
 
 ## <a name="see-also" />Voir aussi
 

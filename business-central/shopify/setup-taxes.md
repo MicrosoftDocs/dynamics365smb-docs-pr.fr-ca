@@ -69,7 +69,7 @@ Sélectionner **Inclure ou exclure les taxes en fonction du pays de votre client
 > [!NOTE]
 > Ce paramètre n’affecte pas la représentation des prix sur les marchés nationaux, qui est contrôlée par le bouton bascule **Tous les prix sont taxes comprises**.
 
-### <a name="all-prices-include-tax-is-selected" />*Tous les prix sont taxes comprises* est sélectionné
+### <a name="all-prices-include-tax-is-selected-1" />*Tous les prix sont taxes comprises* est sélectionné
 
 |-|Ventes nationales|Pays étranger où la taxe est incluse dans le prix|Pays étranger où la taxe n'est pas incluse|
 |------------------------|--------|--------|--------|
@@ -79,7 +79,7 @@ Sélectionner **Inclure ou exclure les taxes en fonction du pays de votre client
 
 Le prix pour chaque client varie en fonction de la localisation du client.
 
-### <a name="all-prices-include-tax-is-not-selected" />*Tous les prix sont taxes comprises* n'est pas sélectionné
+### <a name="all-prices-include-tax-is-not-selected-1" />*Tous les prix sont taxes comprises* n'est pas sélectionné
 
 |-|Ventes nationales|Pays étranger où la taxe est incluse dans le prix|Pays étranger, où la taxe n'est pas incluse|
 |------------------------|--------|--------|--------|

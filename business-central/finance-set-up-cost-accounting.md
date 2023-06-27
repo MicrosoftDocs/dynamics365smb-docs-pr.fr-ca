@@ -189,7 +189,7 @@ Pour chaque compte général, vous pouvez définir des sections analytiques par 
 > [!NOTE]  
 >  Pour vous assurer que le centre de coûts et l'objet de coûts prédéfinis que vous avez configurés dans le grand livre sont reportés automatiquement dans la comptabilité analytique, cochez la case **Vérifier reports GL** sur la page Configuration comptabilité analytique.
 
-## <a name="see-related-microsoft-trainingtrainingmodulescost-accounting-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/cost-accounting-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/cost-accounting-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

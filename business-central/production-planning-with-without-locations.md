@@ -139,7 +139,7 @@ Comme vous pouvez le voir au dernier cas de figure, le seul moyen d'obtenir des 
 
 Par conséquent, si vous planifiez souvent des demandes dans des emplacements, nous vous recommandons d’utiliser la fonction unités de stock.
 
-## <a name="see-related-training-at-microsoft-learntrainingpathstrade-get-started-dynamics-365-business-central" />Voir la formation associée sur [Microsoft Learn](/training/paths/trade-get-started-dynamics-365-business-central/).
+## <a name="see-related-training-at-microsoft-learn" />Voir la formation associée sur [Microsoft Learn](/training/paths/trade-get-started-dynamics-365-business-central/).
 
 ## <a name="see-also" />Voir aussi .
 

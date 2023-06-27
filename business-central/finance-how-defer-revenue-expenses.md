@@ -102,7 +102,7 @@ Si vous l’avez fait, vous devez faire une exception pour les échelonnements a
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du grand livre** ou **Configuration de l'utilisateur**, puis choisissez le lien associé.
 2. Dans les champs **Autoriser le report de l'échelonnement à partir de** et **Autoriser le report de l'échelonnement jusqu’à**, entrez une date de début et de fin pour la période.
 
-## <a name="see-related-microsoft-trainingtrainingmodulesprocessing-invoices-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/processing-invoices-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/processing-invoices-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

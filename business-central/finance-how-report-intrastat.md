@@ -116,7 +116,7 @@ Lorsque vous travaillez avec le **Rapport Intrastat**, vous voyez un champ **Ét
 * *Publié* : [!INCLUDE[prod_short](includes/prod_short.md)] change automatiquement l’état en *Publié* lorsque vous créez un fichier. À partir de ce moment, vous ne pouvez plus modifier votre **rapport Intrastat**. Si vous devez modifier quelque chose et soumettre un nouveau rapport, vous pouvez utiliser l’action **Rouvrir** pour rouvrir le rapport Intrastat. Une fois le document rouvert, vous pouvez utiliser l’action **Libérer** pour libérer à nouveau le document.
 * **Déclaré** : spécifie si l’écriture a déjà été déclarée aux administrations fiscales. Ce n’est pas un état normal mais un champ indépendant, et même si vous rouvriez le rapport Intrastat, cela montrerait toujours que le fichier est déjà créé pour ce rapport.
 
-## <a name="see-related-training-at-microsoft-learnlearnmodulesprocess-intrastat-dynamics-365-business-centralindex" />Voir la formation associée sur [Microsoft Learn](/learn/modules/process-intrastat-dynamics-365-business-central/index).
+## <a name="see-related-training-at-microsoft-learn" />Voir la formation associée sur [Microsoft Learn](/learn/modules/process-intrastat-dynamics-365-business-central/index).
 
 ## <a name="see-also" />Voir aussi .
 

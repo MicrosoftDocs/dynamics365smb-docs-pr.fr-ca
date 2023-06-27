@@ -11,7 +11,7 @@ ms.date: 09/07/2022
 ms.author: jswymer
 ---
 
-# <a name="building-power-bi-reports-to-display-include-prodlongincludesprodlongmd-data" />Création de rapports Power BI pour afficher des données [!INCLUDE [prod_long](includes/prod_long.md)]
+# <a name="building-power-bi-reports-to-display--data" />Création de rapports Power BI pour afficher des données [!INCLUDE [prod_long](includes/prod_long.md)]
 
 Vous pouvez rendre vos données [!INCLUDE[prod_long](includes/prod_long.md)] disponibles sous forme de source de données dans Power BI Desktop et créer des rapports puissants sur l'état de votre activité.
 
@@ -46,7 +46,7 @@ Cet article aborde la prise en main de Power BI Desktop pour créer des rapports
 
 [!INCLUDE[note-multicompany-reports](includes/note-multicompany-reports.md)]
 
-## <a name="a-namegetdataaadd-includeprodshortincludesprodshortmd-as-a-data-source-in-power-bi-desktop" /><a name="getdata"></a>Ajouter [!INCLUDE[prod_short](includes/prod_short.md)] comme source de données dans Power BI Desktop
+## <a name="add--as-a-data-source-in-power-bi-desktop" /><a name="getdata"></a>Ajouter [!INCLUDE[prod_short](includes/prod_short.md)] comme source de données dans Power BI Desktop
 
 La première tâche dans le cadre de la création de rapports consiste à ajouter [!INCLUDE[prod_short](includes/prod_short.md)] comme source de données dans Power BI Desktop. Une fois connecté, vous pouvez commencer à créer le rapport.
 
@@ -108,7 +108,7 @@ Il est important de rendre vos rapports utilisables par autant de personnes que 
 
 Vous pouvez créer des rapports qui s’affichent dans un Récapitulatif d’une page de liste [!INCLUDE [prod_short](includes/prod_short.md)]. Les rapports peuvent contenir des données sur l’enregistrement sélectionné dans la liste. La création de ces rapports est similaire à celle d’autres rapports, à la différence près que vous devez effectuer quelques actions pour vous assurer que les rapports s’affichent comme prévu. Pour plus d’informations, consultez [Création de rapports Power BI pour afficher les données de la liste dans [!INCLUDE[prod_short](includes/prod_short.md)]](across-how-use-powerbi-reports-factbox.md).
 
-## <a name="a-namethemeausing-the-include-prodshortincludesprodshortmd-report-theme-optional" /><a name="theme"></a>Utilisation du thème du rapport [!INCLUDE [prod_short](includes/prod_short.md)] (facultatif)
+## <a name="using-the--report-theme-optional" /><a name="theme"></a>Utilisation du thème du rapport [!INCLUDE [prod_short](includes/prod_short.md)] (facultatif)
 
 Avant de générer votre rapport, il est préférable de télécharger et d’importer le fichier de thème [!INCLUDE [prod_short](includes/prod_short.md)]. Le fichier de thème crée une palette de couleurs afin de pouvoir établir des rapports avec le même style de couleur que les applications [!INCLUDE [prod_short](includes/prod_short.md)] sans avoir à définir des couleurs personnalisées pour chaque visuel.
 
@@ -180,7 +180,7 @@ Il existe plusieurs façons de transmettre des rapports à vos collègues et à 
 9. Cliquez sur **Terminé**.
 10. Sélectionnez **Fermer et appliquer** à partir du ruban pour enregistrer les modifications et fermer l’éditeur Power Query.
 
-## <a name="see-related-microsoft-trainingtrainingmodulesconfigure-powerbi-excel-dynamics-365-business-centralindex" />Voir la [formation Microsoft](/training/modules/configure-powerbi-excel-dynamics-365-business-central/index) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/configure-powerbi-excel-dynamics-365-business-central/index) associée
 
 ## <a name="see-also" />Voir aussi
 

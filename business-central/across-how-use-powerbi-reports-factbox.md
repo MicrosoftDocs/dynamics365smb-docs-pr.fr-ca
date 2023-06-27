@@ -10,7 +10,7 @@ ms.search.keywords: 'business intelligence, KPI, Odata, Power App, SOAP, analysi
 ms.date: 06/11/2021
 ms.author: jswymer
 ---
-# <a name="creating-power-bi-reports-for-displaying-list-data-in-includeprodshortincludesprodshortmd" />Création de rapports Power BI pour afficher les données de liste dans [!INCLUDE[prod_short](includes/prod_short.md)]
+# <a name="creating-power-bi-reports-for-displaying-list-data-in-" />Création de rapports Power BI pour afficher les données de liste dans [!INCLUDE[prod_short](includes/prod_short.md)]
 
 [!INCLUDE[prod_long](includes/prod_long.md)] comprend un élément de contrôle Récapitulatif Power BI sur plusieurs pages de liste clé. Le but de ce Récapitulatif est d'afficher des rapports Power BI liés aux enregistrements dans les listes, fournissant des informations supplémentaires sur les données. L′idée est que lorsque vous vous déplacez entre les lignes de la liste, le rapport se met à jour pour l’écriture sélectionnée.
 
@@ -116,7 +116,7 @@ Vérifiez que la page que vous souhaitez afficher est la première page de votre
 
 Vérifiez que la taille du rapport est configurée sur 325 pixels x 310 pixels. Enregistrez le rapport, puis actualisez la page de liste.  
 
-## <a name="see-related-microsoft-trainingtrainingmodulesconfigure-powerbi-excel-dynamics-365-business-centralindex" />Voir la [formation Microsoft](/training/modules/configure-powerbi-excel-dynamics-365-business-central/index) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/configure-powerbi-excel-dynamics-365-business-central/index) associée
 
 ## <a name="see-also" />Voir aussi
 

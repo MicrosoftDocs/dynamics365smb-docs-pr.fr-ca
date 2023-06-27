@@ -202,7 +202,7 @@ Reportez les enregistrements de zone d’ajustement dans le grand livre article 
 5. Cliquez sur **OK**. Les ajustements positifs et négatifs sont totalisés pour chaque article et des lignes sont créées dans le journal article.  
 6. Reportez les lignes journal pour entrer les différences de quantité dans le grand livre article. Les inventaires dans les zones et le grand livre article correspondent maintenant.  
 
-## <a name="see-related-microsoft-trainingtrainingmodulesadjust-inventory" />Voir la [formation Microsoft](/training/modules/adjust-inventory/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/adjust-inventory/) associée
 
 ## <a name="see-also" />Voir aussi
 

@@ -95,7 +95,7 @@ Vous pouvez reporter ce prix augmenté en tant que frais annexes dans une note d
 
 Lorsque vous reportez la commande retour vente, les frais de restockage sont ajoutés au montant de l'écriture vente appropriée. De cette manière, vous pouvez maintenir la précision de l'évaluation de l'inventaire.  
 
-## <a name="see-related-microsoft-trainingtrainingpathsreturn-items-dynamics-365-business-central" />Voir la [formation Microsoft](/training/paths/return-items-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/paths/return-items-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi
 

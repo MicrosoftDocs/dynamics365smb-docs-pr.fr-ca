@@ -112,7 +112,7 @@ Si un emplacement utilise à la fois le traitement du rangement et de la récept
 
 5. Après avoir placé tous les articles dans des zones selon les instructions, choisissez l'action **Enregistrer rangement**.  
 
-## <a name="see-related-microsoft-trainingtrainingmodulesreceive-put-away-items" />Voir la [formation Microsoft](/training/modules/receive-put-away-items/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/receive-put-away-items/) associée
 
 ## <a name="see-also" />Voir aussi
 

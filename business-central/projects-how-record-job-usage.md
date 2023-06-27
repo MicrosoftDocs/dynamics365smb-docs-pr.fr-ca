@@ -96,7 +96,7 @@ Après avoir reporté les lignes journal projet, vous pouvez voir les lignes pla
 2. Sélectionnez une feuille projet appropriée, puis cliquez sur **Écritures comptables**.  
 3. Sur la page **Écritures projet**, cliquez sur **Afficher les lignes planification projet liées**.
 
-## <a name="see-related-microsoft-trainingtrainingpathspost-job-usage-sales" />Voir la [formation Microsoft](/training/paths/post-job-usage-sales/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/paths/post-job-usage-sales/) associée
 
 ## <a name="see-also" />Voir aussi .
 

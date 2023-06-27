@@ -111,7 +111,7 @@ Vous ne pouvez pas créer un document de prélèvement en entrepôt à partir de
 
 Vous pouvez alors apporter les articles au quai de chargement et reporter la livraison, dont le document source lié, sur la page **Livraison entrepôt**. Pour en savoir plus, voir [Livrer des articles](warehouse-how-ship-items.md).
 
-## <a name="see-related-microsoft-trainingtrainingmodulespick-ship-items-warehouse" />Voir la [formation Microsoft](/training/modules/pick-ship-items-warehouse/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/pick-ship-items-warehouse/) associée
 
 ## <a name="see-also" />Voir aussi
 

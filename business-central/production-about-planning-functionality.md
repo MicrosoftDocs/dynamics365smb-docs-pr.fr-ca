@@ -159,7 +159,7 @@ Pour plus d'informations sur la planification à l'aide d'emplacements et de tra
 > [!TIP]
 > Lorsque vous travaillez sur les pages **Feuille de réquisition** ou **Feuille planification**, vous pouvez organiser les lignes en triant sur un nom de colonne. Ceci est particulièrement utile sur la page Feuille planification, car ils peuvent être utilisés pour les bons de production à plusieurs niveaux. Par défaut, les lignes sont triées par le champ **Numéro d’article**. Pour regrouper les lignes d’une commande à plusieurs niveaux, triez par **N° ordre de référence** . En outre, les champs **Ordre PDP** et **Niveau de planification** peuvent aider à montrer la hiérarchie des lignes.
 
-## <a name="see-related-microsoft-trainingtrainingmodulesplan-items-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/plan-items-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/plan-items-dynamics-365-business-central/) associée
 
 ## <a name="see-also" />Voir aussi .
 

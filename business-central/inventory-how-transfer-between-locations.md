@@ -125,7 +125,7 @@ Si la quantité a été livrée dans une livraison entrepôt, une ligne de corre
 
 Pour terminer la correction, rouvrez l’ordre transfert, entrez la quantité correcte, puis reportez l’ordre. Si la commande doit être expédiée à l’aide d’une livraison entrepôt, créez et reportez une livraison entrepôt.
 
-## <a name="see-related-microsoft-trainingtrainingmodulestransfer-items" />Voir la [formation Microsoft](/training/modules/transfer-items/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/transfer-items/) associée
 
 ## <a name="see-also" />Voir aussi
 

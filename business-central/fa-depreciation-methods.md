@@ -294,7 +294,7 @@ Lorsque vous saisissez une écriture pour B1 dans le journal GL immobilisation e
 > [!NOTE]  
 > Vous ne pouvez pas utiliser la même série de numéros dans le journal GL immobilisation et le journal immobilisation. Lorsque vous reportez des écritures dans le journal GL immobilisations, vous devez laisser le champ **N° document** vide. Si vous saisissez un numéro dans le champ, il est copié dans le journal immobilisation. Vous devez modifier manuellement le numéro de document avant de pouvoir reporter le journal.  
 
-## <a name="see-related-microsoft-trainingtrainingmodulesconfigure-depreciation-books" />Voir la [formation Microsoft](/training/modules/configure-depreciation-books/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/configure-depreciation-books/) associée
 
 ## <a name="see-also" />Voir aussi .
 

@@ -115,7 +115,7 @@ Une fois la livraison entrepôt validée, divers champs de la ligne document de 
 >
 > La quantité assemblée pour commande est gérée comme décrit dans cet article. La quantité provenant de l’inventaire est traitée comme une ligne de livraison entrepôt standard. Pour plus d’informations sur les scénarios de combinaison, consultez [Description des processus Assembler pour commande et Assembler pour inventaire](assembly-assemble-to-order-or-assemble-to-stock.md).
 
-## <a name="see-related-microsoft-trainingtrainingmodulesship-invoice-items-dynamics-365-business-central" />Voir la [formation Microsoft](/training/modules/ship-invoice-items-dynamics-365-business-central/) associée.
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/ship-invoice-items-dynamics-365-business-central/) associée.
 
 ## <a name="see-also" />Voir aussi
 

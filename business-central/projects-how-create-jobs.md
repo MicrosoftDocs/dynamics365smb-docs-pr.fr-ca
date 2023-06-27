@@ -79,7 +79,7 @@ Une ligne planification projet peut avoir l'un des types suivants :
 4. Sur la page **Lignes planification projet**, renseignez les champs, le cas échéant sur une nouvelle ligne.
 5. Répétez les phases 3 et 4 pour toutes les lignes planification dont vous avez besoin pour la tâche projet.
 
-## <a name="see-related-microsoft-trainingtrainingmodulescreate-new-job" />Voir la [formation Microsoft](/training/modules/create-new-job/) associée
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/create-new-job/) associée
 
 ## <a name="see-also" />Voir aussi .
 

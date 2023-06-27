@@ -21,7 +21,7 @@ Vous pouvez trouver les rapports sous l’onglet **Rapports** sur les pages, lis
 
 Lorsque vous choisissez un rapport, une page de demande s’affiche généralement&mdash;avec un titre selon le nom du rapport&mdash;pour vous permettre de définir plusieurs options et filtres qui déterminent les éléments à inclure dans le rapport. Les sections suivantes expliquent comment utiliser la page de demande pour créer, afficher un aperçu et imprimer un rapport.
 
-## <a name="a-namesavedsettingsausing-default-valuesmdashpredefined-settings" /><a name="SavedSettings"></a>Utilisation des valeurs par défaut – paramètres prédéfinis
+## <a name="using-default-valuesmdashpredefined-settings" /><a name="SavedSettings"></a>Utilisation des valeurs par défaut – paramètres prédéfinis
 
 La plupart des pages de demande de rapport incluent le champ **Utiliser les valeurs par défaut de**. Avec ce champ, vous pouvez sélectionner des paramètres prédéfinis pour le rapport, qui définissent automatiquement les options et les filtres. Sélectionnez une entrée dans la liste déroulante, et vous verrez les options et les filtres sur la page de demande de rapport se modifier en conséquence.
 
@@ -80,7 +80,7 @@ Si votre organisation a configuré OneDrive pour les fonctionnalités système, 
 >
 > Vous pouvez également utiliser l’option **Document Microsoft Excel (données uniquement)** pour créer des présentations Excel pour un rapport donné. En savoir plus sur [Utiliser les présentations Excel](ui-excel-report-layouts.md).  
 
-## <a name="a-nameschedulereporta-scheduling-a-report-to-run-later-or-periodically" /><a name="ScheduleReport"></a> Planification d’un rapport pour une exécution ultérieure ou périodique
+## <a name="scheduling-a-report-to-run-later-or-periodically" /><a name="ScheduleReport"></a> Planification d’un rapport pour une exécution ultérieure ou périodique
 
 Vous pouvez programmer un rapport unique ou récurrent à exécuter à une date et une heure spécifiques. Les rapports prévus sont entrés dans la file d'attente projets et traités au moment prévu, comme les autres projets. Choisissez l’option **Programmer** après avoir sélectionné **Envoyer à**, puis entrez des informations telles que l’imprimante, l’heure et la date. Le rapport est alors ajouté à la file d’attente des projets et sera exécuté au moment spécifié. Lorsque le rapport a été traité, l’article est supprimé de la file d’attente des travaux. Pour plus d’informations, voir [Utiliser des files d’attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).  
 
@@ -103,13 +103,13 @@ Après avoir modifié les options du rapport, répétez les deux premières éta
 
 Pour en savoir plus sur la gestion des files d’attente des travaux, voir [Utiliser les files d’attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).  
 
-## <a name="a-nameprintreportaprinting-a-report" /><a name="PrintReport"></a>Impression d’un rapport
+## <a name="printing-a-report" /><a name="PrintReport"></a>Impression d’un rapport
 
 Pour imprimer un rapport, sélectionnez **Imprimer** sur la page de demande de rapport ou dans la barre de menu de la page **Aperçu**.
 
 Lorsqu’un rapport utilise une présentation Excel, le champ **Imprimante** et les boutons **Imprimer** ou **Aperçu** ne sont pas affichés. Au lieu de cela, il y a une option **Télécharger**. Pour imprimer, sélectionnez **Télécharger**, puis ouvrez le fichier téléchargé dans Excel et imprimez à partir de là.
 
-### <a name="a-nameprinteraprinter" /><a name="Printer"></a>Imprimante
+### <a name="printer" /><a name="Printer"></a>Imprimante
 
 Le champ **Imprimante** sur la page de demande affiche le nom de l’imprimante à laquelle le rapport est transmis. Pour changer d'imprimante, sélectionnez simplement l'imprimante dans la liste.
 
@@ -153,7 +153,7 @@ Les champs sous le raccourci **Avancé** définissent des limites sur le rapport
 > [!NOTE]
 > Les valeurs maximales peuvent être différentes pour [!INCLUDE[prod_short](includes/prod_short.md)] sur site et un administrateur peut les modifier. Pour plus d’informations, reportez-vous à la rubrique [Configuration de Business Central Server – Rapports](/dynamics365/business-central/dev-itpro/administration/configure-server-instance#Reports). Pour un aperçu des limites des rapports dans [!INCLUDE[prod_short](includes/prod_short.md)] en ligne, voir [Limites opérationnelles](/dynamics365/business-central/dev-itpro/administration/operational-limits-online).
 
-## <a name="see-related-microsoft-trainingtrainingpathssetup-reporting-dynamics-365-business-central" />Voir la [formation Microsoft](/training/paths/setup-reporting-dynamics-365-business-central/) associée.
+## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/paths/setup-reporting-dynamics-365-business-central/) associée.
 
 ## <a name="see-also" />Voir aussi .
 

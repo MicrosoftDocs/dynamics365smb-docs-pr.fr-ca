@@ -64,7 +64,7 @@ r Le fichier de rapport généré est automatiquement enregistré dans le dossie
 
 Pour en savoir plus sur la personnalisation des rapports et des documents en fonction des besoins de votre entreprise, voir [Présentations des rapports et des documents](ui-manage-report-layouts.md).
 
-## <a name="see-related-training-at-microsoft-learnlearnmoduleswork-with-reports" />Voir la formation associée sur [Microsoft Learn](/learn/modules/work-with-reports/).
+## <a name="see-related-training-at-microsoft-learn" />Voir la formation associée sur [Microsoft Learn](/learn/modules/work-with-reports/).
 
 ## <a name="see-also" />Voir aussi .
 

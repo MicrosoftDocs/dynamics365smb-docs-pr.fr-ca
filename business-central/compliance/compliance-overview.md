@@ -27,7 +27,7 @@ Dans cette section, vous trouverez plus d'informations sur notre approche de la 
 |Consultez les informations sur les différentes certifications liées à Business Central. Vous y trouverez des informations sur les certifications générales et les certifications spécifiques au pays.|[Certifications](compliance-certifications.md)|  
 |En savoir plus sur les conditions de l'entente de niveau de service et les autres conditions d'utilisation|[Conditions d'utilisation](compliance-service-compliance.md#service-terms)|  
 
-## <a name="includeprodshortincludesfreetrialmdmd" />[!INCLUDE[prod_short](../includes/free_trial_md.md)]
+## [!INCLUDE[prod_short](../includes/free_trial_md.md)]
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
