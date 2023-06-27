@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.form: '5768, 7330, 7332, 7333, 7342, 7363, 8510, 9008'
 ---
-# <a name="receive-items-with-warehouse-receipts" />Réceptionner des articles avec une réception entrepôt
+# <a name="receive-items-with-warehouse-receipts"></a>Réceptionner des articles avec une réception entrepôt
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], vous recevez des articles et les rangez en utilisant l’une des quatre méthodes décrites dans le tableau suivant.
 
@@ -25,7 +25,7 @@ Pour en savoir plus sur la gestion des articles entrants, consultez [Flux d’en
 
 L’article suivant fait référence aux méthodes C et D dans le tableau précédent.
 
-## <a name="receive-items-with-a-warehouse-receipt" />Réceptionner des articles avec une réception entrepôt
+## <a name="receive-items-with-a-warehouse-receipt"></a>Réceptionner des articles avec une réception entrepôt
 
 Lorsque les articles arrivent dans un entrepôt configuré pour traiter les réceptions entrepôt, vous devez extraire les lignes du document source libéré ayant déclenché la réception. Si vous utilisez des zones, vous pouvez soit accepter la zone par défaut, soit spécifier la zone dans lequel placer les articles. Ce dernier peut être nécessaire lorsque vous recevez un article pour la première fois. Alors, renseignez les quantités d’articles reçus et reportez la réception.  
 
@@ -66,7 +66,7 @@ Vous pouvez créer une réception entrepôt de deux manières :
     > [!NOTE]  
     > Si votre entrepôt utilise le transbordement, vous pouvez vérifier si vous pouvez transborder des articles sans les ranger. Pour en savoir plus sur le transbordement, consultez [Transborder des articles](warehouse-how-to-cross-dock-items.md).
 
-## <a name="how-to-use-filters-to-get-source-documents" />Procédure : utiliser des filtres afin d’obtenir des documents origine
+## <a name="how-to-use-filters-to-get-source-documents"></a>Procédure : utiliser des filtres afin d’obtenir des documents origine
 
 À partir d’une réception entrepôt, vous pouvez utiliser la page **Filtres pour extr. doc. orig.** afin d’extraire les lignes du document source libéré qui indiquent les articles à recevoir.
 
@@ -82,7 +82,7 @@ Toutes les lignes du document source libéré qui répondent aux critères de fi
 
 Le nombre de combinaisons de filtres est illimité. Les filtres sont enregistrés sur la page **Filtres pour extr. doc. orig.** et seront disponibles la prochaine fois que vous en aurez besoin. Vous pouvez modifier les critères à tout moment en choisissant l'action **Modifier**.
 
-## <a name="zone-and-bin-codes" />Zone et codes de zone
+## <a name="zone-and-bin-codes"></a>Zone et codes de zone
 
 Pour réceptionner des articles portant des codes classe entrepôt différents du code classe de la zone indiquée dans le champ **Code de zone** de l’en-tête du document, effacez la valeur du champ **Code de zone** de l’en-tête avant d’extraire les lignes des documents source des articles.  
 <!-- TBD, table with comparison of various options-->
@@ -92,9 +92,9 @@ Si des zones sont obligatoires pour un emplacement, les codes de zone et zone so
 * Pour les configurations avancées qui utilisent le rangement et le prélèvement dirigés, [!INCLUDE [prod_short](includes/prod_short.md)] utilise le code de zone réception de la page **Fiche emplacement** de l’emplacement. Si aucun code de zone réception n’est spécifié, aucune zone n’est spécifiée. Si l’article et les zones de réception ne correspondent pas, le code de zone réception est vide.
 * Dans d’autres configurations, si aucun code de zone réception n’est spécifié, [!INCLUDE [prod_short](includes/prod_short.md)] utilise le code de zone du document source.
 
-## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/receive-invoice-dynamics-d365-business-central/index) associée.
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/receive-invoice-dynamics-d365-business-central/index) associée.
 
-## <a name="see-also" />Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

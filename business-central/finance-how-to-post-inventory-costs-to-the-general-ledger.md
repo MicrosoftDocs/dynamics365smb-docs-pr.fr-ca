@@ -11,7 +11,7 @@ ms.search.form: 9297
 ms.date: 06/16/2021
 ms.author: edupont
 ---
-# <a name="reconcile-inventory-costs-with-the-general-ledger" />Rapprocher les coûts de l'inventaire avec le grand livre
+# <a name="reconcile-inventory-costs-with-the-general-ledger"></a>Rapprocher les coûts de l'inventaire avec le grand livre
 
 Lorsque vous reportez des transactions inventaire, tels que des livraisons vente, des factures achat ou des ajustements inventaire, les coûts article modifiés sont enregistrés dans les écritures valeur article. Pour refléter ces modifications de la valeur inventaire dans vos livres financiers, les coûts inventaire sont automatiquement reportés dans les comptes inventaire associés dans le grand livre. Pour chaque transaction inventaire que vous reportez, les valeurs appropriées sont reportées dans le compte inventaire, le compte ajustement et le compte variation inventaire dans le grand livre.
 
@@ -19,7 +19,7 @@ Le report automatique des coûts est défini par le champ **Report coûts automa
 
 Bien que les coûts inventaire soient automatiquement reportés dans le grand livre, il est malgré tout nécessaire de vous assurer que les coûts des biens sont transmis à la transaction de vente sortante associée, notamment dans les situations où vous vendez des biens avant de facturer l'achat. Il s'agit d'un ajustement des coûts. Le coût des articles est ajusté automatiquement lorsque vous reportez des transactions article, mais vous pouvez également les ajuster manuellement. Pour en savoir plus, voir [Ajuster coûts article](inventory-how-adjust-item-costs.md).
 
-## <a name="to-post-inventory-costs-manually" />Pour reporter des coûts de l'inventaire manuellement
+## <a name="to-post-inventory-costs-manually"></a>Pour reporter des coûts de l'inventaire manuellement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Reporter coût de l’inventaire au GL**, puis choisissez le lien associé.
 2. Reportez les coûts inventaire dans le grand livre manuellement en exécutant le traitement en lot. Lorsque vous exécutez ce traitement en lot, des écritures sont créées, basées sur des écritures valeur. Vous pouvez reporter les écritures de façon à ce qu'elles soient récapitulées par groupe de report.
@@ -31,7 +31,7 @@ Pour afficher la liste des erreurs avant d'exécuter le traitement par lot de va
 
 Si vous voulez simplement afficher un aperçu des valeurs qui pourraient être reportées dans le grand livre sans réellement effectuer le report, vous pouvez exécuter le traitement en lot **Reporter le coût de l'inventaire au grand livre** sans réellement reporter les valeurs dans le grand livre. Pour ce faire, désactivez le champ **Reporter** sur la page de demande. De cette manière, lorsque vous exécutez le traitement en lot, le rapport est produit, indiquant les valeurs prêtes pour report dans le grand livre, mais elles ne sont pas reportées.
 
-## <a name="to-audit-the-reconciliation-between-the-inventory-ledger-and-the-general-ledger" />Pour vérifier le rapprochement entre le livre inventaire et le grand livre
+## <a name="to-audit-the-reconciliation-between-the-inventory-ledger-and-the-general-ledger"></a>Pour vérifier le rapprochement entre le livre inventaire et le grand livre
 La page **Rapprochement inventaire avec GL** fournit ce qui suit :
 
 - présente les différences de rapprochement en comparant ce qui est enregistré dans le grand livre et dans le livre inventaire (écritures valeur) ;
@@ -64,7 +64,7 @@ Les colonnes suivantes affichent les totaux pour les mêmes types de compte, cal
 
 Choisissez le montant dans l'un des champs de Total pour afficher les écritures rapport inventaire utilisées pour calculer les totaux. Pour les totaux en inventaire, les écritures rapport inventaire sont les sommes des écritures valeur pour les articles. Pour les totaux GL, les écritures rapport inventaire sont les sommes des écritures.
 
-## <a name="reporting-costs-and-reconciling-with-the-general-ledger" />Génération de rapports sur les coûts et rapprochement avec le grand livre
+## <a name="reporting-costs-and-reconciling-with-the-general-ledger"></a>Génération de rapports sur les coûts et rapprochement avec le grand livre
 D’autres rapports, des fonctions de traçage et un outil de rapprochement spécial sont à la disposition de l’auditeur ou du contrôleur chargé de rendre compte d’une valeur d’inventaire correcte et équilibrée au service financier.
 
 Le tableau suivant décrit les valeurs.    
@@ -76,7 +76,7 @@ Le tableau suivant décrit les valeurs.
 |Afficher la valeur d'inventaire des articles sélectionnés, y compris leur coût réel et prévu à la date spécifiée.|Rapport **Évaluation de l'inventaire - Spécification coût**|  
 |Utiliser un rapport pour analyser les raisons des évolutions de coûts ou pour obtenir un aperçu du coût des marchandises vendues (CMV).|Rapport **Analyse du partage des coûts**|  
 
-## <a name="see-also" />Voir aussi
+## <a name="see-also"></a>Voir aussi
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Ventes](sales-manage-sales.md)    

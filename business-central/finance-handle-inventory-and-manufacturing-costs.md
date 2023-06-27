@@ -10,7 +10,7 @@ ms.search.keywords: null
 ms.date: 06/16/2021
 ms.author: edupont
 ---
-# <a name="handling-inventory-and-manufacturing-costs" />Gestion des coûts inventaire et des coûts de fabrication
+# <a name="handling-inventory-and-manufacturing-costs"></a>Gestion des coûts inventaire et des coûts de fabrication
 
 Bien que la comptabilité analytique soit constituée de processus ne nécessitant pas d'interaction utilisateur, telle que l'affectation d'écritures et l'ajustement automatique des coûts, un certain nombre de champs, pages et rapports sont destinés aux utilisateurs qui gèrent directement ou indirectement le coût des articles ou opérations.  
 
@@ -29,7 +29,7 @@ Bien que la comptabilité analytique soit constituée de processus ne nécessita
 |Annuler manuellement l'affectation d'un article ou affecter à nouveau des écritures article créées par l'application.|[Supprimer et affecter à nouveau des écritures article](finance-how-to-remove-and-reapply-item-entries.md)|  
 |Utilisez le champ **Écriture affectée de** dans le journal article pour créer manuellement une affectation fixe entre une transaction entrante et la transaction sortante initiale.|[Fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal article](finance-how-to-close-open-item-ledger-entries-resulting-from-fixed-application-in-the-item-journal.md)|  
 
-## <a name="see-also" />Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)
 [Détails de conception : Évaluation stock](design-details-inventory-costing.md)

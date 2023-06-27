@@ -11,18 +11,18 @@ ms.search.form: '50 ,51, 53, 56, 146, 147, 9307, 9309, 9306, 9308, 9310'
 ms.date: 09/01/2022
 ms.author: edupont
 ---
-# <a name="record-purchases-with-purchase-invoices-and-orders" />Enregistrer les achats avec les factures achat et les commandes
+# <a name="record-purchases-with-purchase-invoices-and-orders"></a>Enregistrer les achats avec les factures achat et les commandes
 
 Vous créez une facture achat ou un bon de commande pour enregistrer le coût d'achats et suivre les créances. Les factures achat et les bons de commande sont également utilisés pour mettre à jour de manière dynamique les niveaux d'inventaire afin que vous puissiez réduire vos coûts d'inventaire et fournir un meilleur service au client. Le prix d’achat, notamment les frais de service, et les valeurs d’inventaire qui résultent du report des factures achat ou des commandes contribuent aux chiffres du profit et à d’autres KPI financiers sur votre Tableau de bord.
 
-## <a name="record-purchases-with-purchase-invoices" />Enregistrer les achats avec les factures achat
+## <a name="record-purchases-with-purchase-invoices"></a>Enregistrer les achats avec les factures achat
 
 Lorsque vous réceptionnez des articles de l’inventaire ou lorsque le service acheté est terminé, vous reportez la facture achat pour mettre à jour l’inventaire et les enregistrements financiers, et activer le paiement au fournisseur selon les modalités de paiement. [Effectuer des paiements](payables-make-payments.md).
 
 > [!CAUTION]  
 > Ne reportez pas une facture achat pour des articles physiques tant que vous n’avez pas reçu les articles et que vous ne connaissez pas le coût total de l’achat, frais supplémentaires compris. Sinon, la valeur de l'inventaire et les chiffres de profit peuvent être biaisés.
 
-### <a name="create-a-and-post-purchase-invoice" />Créer et reporter une facture achat
+### <a name="create-a-and-post-purchase-invoice"></a>Créer et reporter une facture achat
 
 Ce qui suit décrit comment créer une facture achat. La procédure est identique pour un bon de commande. La principale différence est que les bons de commande ont des champs et des actions supplémentaires pour la manutention des articles.
 
@@ -64,7 +64,7 @@ L'achat est désormais visible dans l'inventaire, les livres ressource et les en
 >
 > Pour vérifier les montants qui seront réellement reportés, utilisez la page **Statistiques**, qui tient compte des calculs d’arrondissement. Aussi, si vous choisissez l'action **Libérer**, les champs de totaux seront mis à jour pour inclure les calculs d’arrondissement.
 
-## <a name="posted-invoices" />Factures reportées
+## <a name="posted-invoices"></a>Factures reportées
 
 [!INCLUDE [posted-invoices](includes/posted-invoices.md)]
 
@@ -73,7 +73,7 @@ Vous pouvez facilement corriger ou annuler une facture achat reportée avant de 
 [Ouvrir la liste des **factures achat reportées**](https://businesscentral.dynamics.com/?page=146) dans [!INCLUDE [prod_short](includes/prod_short.md)].
 
 
-## <a name="purchasing-non-inventory-items" />Achat d'articles hors inventaire
+## <a name="purchasing-non-inventory-items"></a>Achat d'articles hors inventaire
 
 Les lignes d’une facture d’achat peuvent être de type **Ressource** ou **Article**. Les fiches article peuvent être classées comme étant de type **Inventaire**, **Service** ou **Hors inventaire** pour spécifier si l’article est une unité d'inventaire physique, une unité de temps de travail (applicable pour les ressources) ou une unité physique qui n’est pas conservée dans l'inventaire. En savoir plus sur [Enregistrer de nouveaux articles](inventory-how-register-new-items.md). Le processus de facture achat est identique pour tous les types mentionnés.
 
@@ -82,7 +82,7 @@ Les lignes d’une facture d’achat peuvent être de type **Ressource** ou **Ar
 >
 > Pour utiliser une ressource achetée, vous devrez peut-être définir la capacité de la ressource et l'affecter manuellement à un projet. L’achat d’une ressource crée une écriture ressource. Cependant, les écritures ressource ne sont pas suivies pour la quantité et la valeur comme le sont les articles, par exemple. Si le suivi de la quantité et de la valeur est requis, envisagez d'utiliser d'autres types d'élément de ligne.
 
-## <a name="when-to-use-purchase-orders" />Quand utiliser les bons de commande
+## <a name="when-to-use-purchase-orders"></a>Quand utiliser les bons de commande
 
 Vous devez utiliser les bons de commande si votre processus d'achat exige que vous enregistriez des réceptions partielles d’une quantité de commande, par exemple, si la quantité totale n’était pas disponible auprès du fournisseur. Si vous livrez des articles vendus directement de votre fournisseur à votre client en tant que livraison directe , vous devez également utiliser les bons de commande. En savoir plus sur [Créer des livraisons directes](sales-how-drop-shipment.md).
 
@@ -92,7 +92,7 @@ Pour tous les autres aspects, les bons de commande fonctionnent de la même mani
 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE4b3tt?rel=0]
 
-## <a name="receive-items-with-a-purchase-order" />Pour réceptionner des articles avec un bon de commande
+## <a name="receive-items-with-a-purchase-order"></a>Pour réceptionner des articles avec un bon de commande
 
 La section suivante décrit comment recevoir des articles avec un bon de commande. 
 
@@ -109,19 +109,19 @@ La section suivante décrit comment recevoir des articles avec un bon de command
 > [!NOTE]
 > Si vous utilisez un traitement entrepôt, vous ne pouvez pas utiliser l’action **Reporter** sur le bon de commande pour enregistrer la réception. La raison est qu’un employé d'entrepôt a déjà reporté la quantité du bon de commande telle que reçue. Learn more at [Détails de conception : flux d’enlogement](design-details-inbound-warehouse-flow.md).
 
-## <a name="receive-more-items-than-ordered" />Réceptionner plus d’articles que commandés
+## <a name="receive-more-items-than-ordered"></a>Réceptionner plus d’articles que commandés
 
 Lorsque vous recevez plus de produits que commandés, vous pouvez les réceptionner au lieu d’annuler la réception. Par exemple, il peut être moins coûteux de conserver des articles dans l’inventaire que de les retourner, ou votre fournisseur peut vous proposer un rabais pour les conserver.
 
 <!--move the over-receipt setup info to an article about purchasing. Keep the concept info here and link to the steps-->
-### <a name="set-up-over-receipts" />Configurer des sur-réceptions
+### <a name="set-up-over-receipts"></a>Configurer des sur-réceptions
 
 Créez des codes de sur-réception pour définir un pourcentage par lequel une quantité reçue peut dépasser la quantité commandée. Spécifiez le pourcentage dans le champ **% de tolérance de sur-réception**. Vous affectez ensuite le code sur les pages Fiche article ou Fiche fournisseur pour les articles et les fournisseurs.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Codes sur-réception.**, puis choisissez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]
 
-### <a name="assign-the-over-receipt-code-to-an-item" />Attribuer le code de sur-réception à un article
+### <a name="assign-the-over-receipt-code-to-an-item"></a>Attribuer le code de sur-réception à un article
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
 2. Ouvrez la page **Fiche article** pour l’article.
@@ -132,7 +132,7 @@ Le code de sur-réception est affecté à l'article. Les bons de commande ou les
 > [!NOTE]
 > Vous pouvez configurer un flux de travail approbation pour exiger l’approbation des sur-réceptions avant leur traitement. Cochez la case **Approbation requise** sur la page **Codes de sur-réception**. En savoir plus sur [Créer des flux de projet](across-how-to-create-workflows.md).
 
-### <a name="over-receive-an-order" />Sur-réception d’une commande
+### <a name="over-receive-an-order"></a>Sur-réception d’une commande
 
 Sur les lignes achat et les lignes réception entrepôt, le champ **Quantité de sur-réception** permet d’enregistrer les quantités excédentaires reçues, c’est-à-dire les quantités dépassant la valeur dans le champ **Quantité**, la quantité commandée.
 
@@ -149,11 +149,11 @@ Lorsque vous traitez une sur-réception, vous pouvez augmenter la valeur dans le
 > [!NOTE]
 > [!INCLUDE[prod_short](includes/prod_short.md)] ne gère pas automatiquement les aspects financiers des sur-réceptions. Vous devez gérer cela manuellement en accord avec le fournisseur, qui peut par exemple vous envoyer une facture nouvelle ou mise à jour.
 
-## <a name="external-document-number" />Numéro de document externe
+## <a name="external-document-number"></a>Numéro de document externe
 
 [!INCLUDE [ext-doc-no-purch](includes/ext-doc-no-purch.md)]
 
-## <a name="posting-purchases" />Report des achats
+## <a name="posting-purchases"></a>Report des achats
 
 Sur un document achat, vous pouvez faire votre choix parmi les actions de report suivantes :
 
@@ -183,21 +183,21 @@ Vous pouvez toujours consulter les différentes écritures qui seront créées �
 
 Vous pouvez soit reporter, soit reporter et imprimer. Si vous choisissez de reporter et d’imprimer, un rapport est imprimé lorsque la commande est reportée. Vous pouvez aussi choisir l’action **Reporter par lot**, qui vous permet de reporter plusieurs commandes en même temps. Pour plus d'informations, voir [Reporter plusieurs documents en même temps](ui-batch-posting.md).
 
-## <a name="viewing-ledger-entries" />Affichage des écritures
+## <a name="viewing-ledger-entries"></a>Affichage des écritures
 
 Lorsque le report est terminé, les lignes achat reportées sont supprimées de la commande. Un message vous indique lorsque le report est terminé. Vous pouvez ensuite afficher les écritures reportées dans les diverses pages qui contiennent les écritures reportées, comme les pages **Écritures fournisseur**, **Écritures**, **Écritures article**, **Écritures ressource**, **Réceptions achat** et **Factures achat reportées**.
 
 Dans la plupart des cas, vous pouvez ouvrir des écritures à partir de la fiche ou du document concerné. Par exemple, sur la page **Fiche fournisseur**, sélectionnez l'action **Écritures**.
 
-## <a name="editing-ledger-entries" />Modification des écritures
+## <a name="editing-ledger-entries"></a>Modification des écritures
 
 Vous pouvez modifier certains champs sur les documents achat reportés, tels que le champ **Référence de paiement**. Pour plus d'informations, voir [Modifier les documents reportés](across-edit-posted-document.md). Pour les champs plus critiques qui concernent la piste d'audit, vous devez inverser ou annuler le report. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md).
 
-## <a name="see-related-microsoft-training" />Voir la [formation Microsoft](/training/modules/receive-invoice-dynamics-d365-business-central/index) associée.
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/receive-invoice-dynamics-d365-business-central/index) associée.
 
-## <a name="see-related-microsoft-training-1" />Voir la [formation Microsoft](/training/modules/processing-invoices-dynamics-365-business-central/index) associée
+## <a name="see-related-microsoft-training-1"></a>Voir la [formation Microsoft](/training/modules/processing-invoices-dynamics-365-business-central/index) associée
 
-## <a name="see-also" />Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Demander des devis](purchasing-how-request-quotes.md)  
 [Acheter des articles pour une vente](purchasing-how-purchase-products-sale.md)  

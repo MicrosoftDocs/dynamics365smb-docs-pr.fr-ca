@@ -10,7 +10,7 @@ ms.search.form: '99000764, 99000765, 99000766, 99000767, 99000794, 99000796, 990
 ms.date: 06/22/2021
 ms.author: edupont
 ---
-# <a name="create-routings" />Créer des itinéraires
+# <a name="create-routings"></a>Créer des itinéraires
 
 Les compagnies manufacturières utilisent des itinéraires pour visualiser et gérer le processus de fabrication.
 
@@ -23,7 +23,7 @@ Pour pouvoir configurer un itinéraire, les éléments suivants doivent être en
 - Des fiches article sont créées pour les articles parents qui participent à la production. Pour plus d'informations, voir [Enregistrer de nouveaux articles](inventory-how-register-new-items.md).
 - Les ressources de production sont configurées. Pour plus d'informations, voir [Configurer des ateliers et des unités de production](production-how-to-set-up-work-and-machine-centers.md).
 
-## <a name="to-create-a-routing" />Pour créer un itinéraire
+## <a name="to-create-a-routing"></a>Pour créer un itinéraire
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Itinéraires**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -51,7 +51,7 @@ Pour pouvoir configurer un itinéraire, les éléments suivants doivent être en
 > [!NOTE]  
 > N'oubliez pas également de recalculer le coût standard de l'article de la fiche **Article** : choisissez l'action **Production**, sélectionnez l'action **Calculer coût standard**, puis sélectionnez l'action **Tous niveaux**.  
 
-## <a name="to-create-routing-links" />Pour créer des liens itinéraire
+## <a name="to-create-routing-links"></a>Pour créer des liens itinéraire
 
 Vous pouvez créer des liens itinéraire pour lier des composantes à des opérations spécifiques afin de conserver leur relation, même si la nomenclature de production ou l'itinéraire sont modifiés. Cela simplifie également la consommation juste-à-temps des composantes, à savoir lorsque l'opération liée commence, et non quand le bon de production complet est libéré. Pour plus d'informations, voir [Consommer en aval des composantes en fonction de la production réalisée](production-how-to-flush-components-according-to-operation-output.md).  
 
@@ -85,7 +85,7 @@ Les composantes et opérations liées apparaissent dans une structure opératoir
 
 Les composantes sélectionnées seront liées aux opérations sélectionnées lorsque vous créerez ou actualiserez un bon de production à l'aide de la nomenclature de production et de l'itinéraire concernés. Ceci est visible sur la page **Composantes bon de production** sous le bon de production. Ici, vous pouvez également ajouter ou supprimer à tout moment les codes lien itinéraire définis.
 
-## <a name="to-assign-personnel-tools-and-quality-measures-to-routing-operations" />Pour affecter des qualifications, des outils et des contrôles qualité à des opérations itinéraire
+## <a name="to-assign-personnel-tools-and-quality-measures-to-routing-operations"></a>Pour affecter des qualifications, des outils et des contrôles qualité à des opérations itinéraire
 
 Si vous avez besoin de personnes ayant des qualifications, un savoir-faire particulier, ou bénéficiant d'une autorisation spéciale pour une opération, vous pouvez affecter ces personnes à l'opération. En outre, vous pouvez affecter des outils et des exigences de qualité à l'opération. Cette procédure décrit l'affectation de qualifications. Les étapes sont similaires pour d'autres types d'informations sur l'opération.
 
@@ -95,7 +95,7 @@ Si vous avez besoin de personnes ayant des qualifications, un savoir-faire parti
 4. Renseignez les champs de la page **Itinéraires personnels**.  
 5. Cliquez sur le bouton **OK** pour quitter la page. Les valeurs saisies sont copiées et affectées à l'opération.  
 
-## <a name="to-create-a-new-versions-of-a-routing" />Pour créer une nouvelle version d'un itinéraire
+## <a name="to-create-a-new-versions-of-a-routing"></a>Pour créer une nouvelle version d'un itinéraire
 
 Le principe de la version permet de gérer différentes versions d'un itinéraire. La structure d'une version d'itinéraire correspond à la structure de l'itinéraire composée d'un en-tête et de lignes version d'itinéraire. La différence de base est définie par la date début.  
 
@@ -114,7 +114,7 @@ Le principe de la version permet de gérer différentes versions d'un itinérair
 
 La validité de la version est définie par le champ **Date début**.  
 
-## <a name="see-also" />Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Créer des nomenclatures de production](production-how-to-create-production-boms.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  

@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.date: 03/28/2023
 ms.custom: bap-template
 ---
-# <a name="reverse-journal-postings-and-undo-receiptsshipments" />Inverser des reports journal et annuler des réceptions/livraisons
+# <a name="reverse-journal-postings-and-undo-receiptsshipments"></a>Inverser des reports journal et annuler des réceptions/livraisons
 
 L'inversion des reports journal est utile, par exemple, pour corriger les erreurs et pour effacer une ancienne écriture de régularisation avant d’en saisir une nouvelle. Une écriture inversée est identique à l’écriture d’origine, mais a un signe opposé dans le champ **Montant**. L’écriture inversée doit avoir le même numéro de document et la même date de report que l’écriture d’origine. Une fois l’écriture inversée, créez l’écriture correcte.
 
@@ -20,7 +20,7 @@ Si vous avez reporté une quantité négative incorrecte, comme un bon de comman
 
 Si vous avez reporté une quantité positive incorrecte, comme une livraison vente ou une livraison retour achat avec un nombre d’articles incorrect, comme livrée mais pas facturée, vous pouvez annuler ce report.
 
-## <a name="to-reverse-the-journal-posting-of-a-general-ledger-entry" />Pour inverser le report journal d'une écriture grand livre
+## <a name="to-reverse-the-journal-posting-of-a-general-ledger-entry"></a>Pour inverser le report journal d'une écriture grand livre
 
 Vous pouvez inverser des écritures sur toutes les pages **Écritures**. La procédure suivante se base sur la page **Écritures**.
 
@@ -34,7 +34,7 @@ Vous pouvez inverser des écritures sur toutes les pages **Écritures**. La proc
 3. Sur la page **Inverser les écritures de transaction**, choisissez l'action **Inverser**.
 4. Cliquez sur **Oui** pour confirmer la contrepassation.
 
-## <a name="to-post-a-negative-entry" />Pour reporter une écriture négative
+## <a name="to-post-a-negative-entry"></a>Pour reporter une écriture négative
 
 Utilisez le champ **Correction** pour reporter un débit négatif au lieu d’un crédit, ou pour reporter un crédit négatif au lieu d’un débit sur un compte. Par défaut, le champ est disponible dans tous les journaux. Les champs **Montant débit** et **Montant crédit** comprennent l'écriture initiale et l'écriture corrigée. Ces champs n'ont aucune incidence sur le solde du compte.  
 
@@ -44,7 +44,7 @@ Utilisez le champ **Correction** pour reporter un débit négatif au lieu d’un
 4. Dans la ligne journal que vous souhaitez activer pour les écritures négatives, sélectionnez la case à cocher **Correction**.  
 5. Pour reporter le journal, sélectionnez l'action **Reporter**, puis le bouton **Oui**.
 
-## <a name="to-undo-a-quantity-on-a-posted-purchase-receipt" />Pour annuler une quantité sur une réception d’achat reportée
+## <a name="to-undo-a-quantity-on-a-posted-purchase-receipt"></a>Pour annuler une quantité sur une réception d’achat reportée
 
 Les étapes suivantes décrivent comment annuler une réception reportée d’articles ou de ressources. La procédure est identique pour des livraisons reportées.
 
@@ -57,7 +57,7 @@ Une ligne de correction est ajoutée sous la ligne de la réception sélectionn�
 
 Les champs **Quantité reçue** et **Qté reçue non facturée** de la commande achat associée sont remis à zéro.
 
-## <a name="to-undo-and-then-redo-a-quantity-posting-on-a-posted-return-shipment" />Pour annuler, puis effectuer à nouveau le report de quantité sur une livraison retour reportée
+## <a name="to-undo-and-then-redo-a-quantity-posting-on-a-posted-return-shipment"></a>Pour annuler, puis effectuer à nouveau le report de quantité sur une livraison retour reportée
 
 Les étapes suivantes décrivent comment :
 
@@ -83,7 +83,7 @@ La procédure est identique pour les réceptions retour reportées.
 
 [!INCLUDE [rev-general-journal](includes/rev-general-journal.md)]
 
-## <a name="see-also" />Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Annuler le report d'assemblage](assembly-how-to-undo-assembly-posting.md)  
 [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)  
