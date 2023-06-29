@@ -10,7 +10,7 @@ ms.date: 01/24/2023
 ms.custom: bap-template
 ms.search.forms: '7352, 7333'
 ---
-# <a name="put-items-away-with-warehouse-put-aways"></a>Ranger des articles avec le rangement entrepôt
+# <a name="put-items-away-with-warehouse-put-aways"></a><a name="put-items-away-with-warehouse-put-aways"></a>Ranger des articles avec le rangement entrepôt
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], vous recevez des articles et les rangez en utilisant l’une des quatre méthodes décrites dans le tableau suivant.
 
@@ -31,7 +31,7 @@ En fonction de la valeur du champ **Utiliser feuille rangement** de la **Fiche e
 
 Outre les méthodes standard pour créer les rangements entrepôt qui sont décrits dans cet article, vous pouvez créer des rangements à partir de la réception entrepôt reportée associée. Cela est utile si vous avez supprimé des lignes rangement ou si vous décidez de ne pas utiliser la feuille rangement, car vous pouvez créer ou recréer des instructions de rangement à partir des lignes réception reportées.
 
-## <a name="zone-and-bin-codes"></a>Zone et codes de zone
+## <a name="zone-and-bin-codes"></a><a name="zone-and-bin-codes"></a>Zone et codes de zone
 
 Dans les emplacements configurés pour utiliser le rangement et le prélèvement dirigés, les paramètres suivants sont requis pour déterminer le meilleur endroit pour ranger les articles :  
 
@@ -41,7 +41,7 @@ Dans les emplacements configurés pour utiliser le rangement et le prélèvement
 
 La priorité zone est prise en compte lorsque plusieurs zones correspondent aux critères du modèle rangement. Si les critères du modèle de rangement et le classement de zone coïncident pour plusieurs zones, la zone dont le numéro est le plus élevé est alors sélectionnée.
 
-## <a name="to-create-put-away-documents-in-bulk-with-the-put-away-worksheet"></a>Pour créer des documents rangement en bloc avec la feuille rangement
+## <a name="to-create-put-away-documents-in-bulk-with-the-put-away-worksheet"></a><a name="to-create-put-away-documents-in-bulk-with-the-put-away-worksheet"></a>Pour créer des documents rangement en bloc avec la feuille rangement
 
 Vous pouvez créer des documents rangement pour plusieurs réceptions en même temps sur la page **Feuille rangement**.  
 
@@ -75,7 +75,7 @@ Vous pouvez créer des documents rangement pour plusieurs réceptions en même t
 
 8. Sélectionnez **OK** pour créer le rangement.  
 
-## <a name="to-create-a-put-away-from-a-posted-receipt"></a>Pour créer un rangement à partir d'une réception reportée
+## <a name="to-create-a-put-away-from-a-posted-receipt"></a><a name="to-create-a-put-away-from-a-posted-receipt"></a>Pour créer un rangement à partir d'une réception reportée
 
 Si un emplacement utilise à la fois le traitement du rangement et de la réception et que vous avez supprimé des lignes rangement, ou si vous utilisez le prélèvement et le rangement dirigés et avez décidé de ne pas utiliser la feuille rangement, vous pouvez créer ou recréer des instructions de rangement pour les lignes réception reportées.
 
@@ -88,7 +88,7 @@ Si un emplacement utilise à la fois le traitement du rangement et de la récept
 4. Si la réception est partiellement rangée ou n'est pas rangée du tout, choisissez l'action **Créer rangement**.  
 5. Renseignez les champs selon vos besoins, puis sélectionnez **OK**.  
 
-## <a name="to-put-items-away"></a>Pour ranger les articles
+## <a name="to-put-items-away"></a><a name="to-put-items-away"></a>Pour ranger les articles
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rangements entrepôt**, puis sélectionnez le lien associé.
 
@@ -112,9 +112,9 @@ Si un emplacement utilise à la fois le traitement du rangement et de la récept
 
 5. Après avoir placé tous les articles dans des zones selon les instructions, choisissez l'action **Enregistrer rangement**.  
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/receive-put-away-items/) associée
+## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/receive-put-away-items/) associée
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a><a name="see-also"></a>Voir aussi
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

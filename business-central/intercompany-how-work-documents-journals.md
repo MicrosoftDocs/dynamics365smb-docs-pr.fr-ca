@@ -11,14 +11,14 @@ ms.search.form: '600, 610'
 ms.date: 03/09/2022
 ms.author: edupont
 ---
-# <a name="work-with-intercompany-documents-and-journals"></a>Utiliser les documents et les journaux intersociétés
+# <a name="work-with-intercompany-documents-and-journals"></a><a name="work-with-intercompany-documents-and-journals"></a>Utiliser les documents et les journaux intersociétés
 Les documents ou journaux intercompagnies permettent de reporter les transactions effectuées avec vos partenaires intercompagnies. Lorsque vous reportez un document ou une ligne journal intercompagnie dans votre compagnie, le programme crée le document ou la ligne journal correspondante dans votre boîte d'envoi intercompagnie : vous pouvez le transmettre au partenaire concerné. Celui-ci peut ensuite reporter la transaction correspondante dans sa compagnie sans avoir à entrer à nouveau les données.
 
 Pour les documents achat et vente, le code partenaire intercompagnie du client ou du fournisseur concerné garantit que toutes les commandes et factures générées en relation avec les transactions avec ces compagnies produisent des documents correspondants dans la compagnie partenaire. Il en résulte un équilibrage correct des comptes.
 
 Dans le cas des lignes journal général intercompagnies, vous ne devez pas spécifier les comptes pour un ensemble de livres particulier, mais simplement fournir l'identification de la compagnie concernée. Les lignes journal général intercompagnie correspondantes sont alors créées dans la compagnie partenaire, ce qui entraîne l'équilibrage des livres des deux compagnies impliquées dans une transaction.
 
-## <a name="fill-in-and-send-an-intercompany-sales-order"></a>Pour renseigner et envoyer un document de vente intercompagnie
+## <a name="fill-in-and-send-an-intercompany-sales-order"></a><a name="fill-in-and-send-an-intercompany-sales-order"></a>Pour renseigner et envoyer un document de vente intercompagnie
 Vous pouvez envoyer les documents de vente et les bons de commande, ainsi que les retours avant qu'ils soient reportés. En revanche, l'envoi des factures et notes de crédit est impossible tant qu'elles ne sont pas reportées.
 
 La procédure suivante explique comment renseigner et envoyer un document de vente intercompagnie. La même procédure s'applique aux bons de commande intercompagnie et aux retours, ainsi qu'aux factures et notes de crédit intercompagnie reportés.  
@@ -32,7 +32,7 @@ La procédure suivante explique comment renseigner et envoyer un document de ven
 > [!NOTE]
 > Si vous effectuez l'étape 4, le document de vente est déplacé vers votre boîte d'envoi intercompagnies, d'où vous pouvez l'envoyer ultérieurement. Pour plus d'informations, voir [Gérer la boîte de réception et la boîte d'envoi intersociétés](intercompany-how-manage-intercompany-inbox.md).
 
-## <a name="fill-in-and-post-an-intercompany-journal"></a>Pour renseigner et reporter un journal intercompagnie
+## <a name="fill-in-and-post-an-intercompany-journal"></a><a name="fill-in-and-post-an-intercompany-journal"></a>Pour renseigner et reporter un journal intercompagnie
 
 Lorsque vous reportez une ligne journal général intercompagnie dans votre compagnie, le programme crée une ligne journal correspondante dans votre boîte d'envoi intercompagnie : vous pouvez la transmettre au partenaire concerné. Avec la 1re vague de lancement 2022, vous pouvez également configurer la compagnie afin que soient créées automatiquement les transactions intercompagnies reçues des partenaires intercompagnies, reportées via le journal général intercompagnie. Celui-ci peut ensuite reporter la transaction correspondante dans sa compagnie sans avoir à entrer à nouveau les données.
 
@@ -47,7 +47,7 @@ Lorsque vous reportez une ligne journal général intercompagnie dans votre comp
 
 Les écritures associées sont reportées dans votre compagnie et un journal avec les écritures correspondantes est créé dans votre boîte d'envoi intercompagnie ; vous pouvez l'envoyer à votre partenaire. Pour plus d'informations, voir [Gérer la boîte de réception et la boîte d'envoi intersociétés](intercompany-how-manage-intercompany-inbox.md).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a><a name="see-also"></a>Voir aussi
 
 [Gestion des transactions intersociétés](intercompany-manage.md)  
 [Finance](finance.md)  

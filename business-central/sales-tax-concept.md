@@ -12,7 +12,7 @@ ms.date: 07/21/2022
 ms.author: altotovi
 ---
 
-# <a name="sales-tax-in-the-default-version-of-business-central"></a>Taxe de vente dans la version par défaut de Business Central
+# <a name="sales-tax-in-the-default-version-of-business-central"></a><a name="sales-tax-in-the-default-version-of-business-central"></a>Taxe de vente dans la version par défaut de Business Central
 
 Une **taxe de vente** est une taxe qui s’applique à l’achat de biens et services pour les consommateurs et à la vente de biens et services pour les entreprises. Idéalement, la taxe de vente devrait s’appliquer à tous les stades de consommation finale avec quelques exemptions. Les exonérations dans les consommations finales dépendent des autorités locales mais, de manière générale, les transactions entre entreprises devraient être exemptées de la taxe de vente.  
 
@@ -23,7 +23,7 @@ En général, les taxes de vente s'appliquent à la vente au détail de biens et
 > [!IMPORTANT]
 > Bien que la taxe de vente soit disponible dans la version par défaut, Microsoft prend en charge l’utilisation de la taxe de vente aux États-Unis et au Canada uniquement.
 
-## <a name="see-also"></a>Voir aussi .
+## <a name="see-also"></a><a name="see-also"></a>Voir aussi .
 
 [Déclarer la taxe de vente aux États-Unis](localfunctionality/UnitedStates/us-sales-tax.md)  
 [Déclarer la taxe de vente au Canada](localfunctionality/canada/ca-sales-tax.md)  

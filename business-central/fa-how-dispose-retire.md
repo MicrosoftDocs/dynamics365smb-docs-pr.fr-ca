@@ -11,7 +11,7 @@ ms.search.form: '5628, 5610, 5611, 5629, 5633'
 ms.date: 06/15/2021
 ms.author: edupont
 ---
-# <a name="dispose-of-or-retire-fixed-assets"></a>Céder ou annuler des immobilisations
+# <a name="dispose-of-or-retire-fixed-assets"></a><a name="dispose-of-or-retire-fixed-assets"></a>Céder ou annuler des immobilisations
 
 Lorsque vous commercialisez ou cédez une immobilisation, la valeur de cession doit être reportée pour calculer et enregistrer le gain ou la perte. Une écriture cession doit être la dernière écriture reportée pour une immobilisation. Pour les immobilisations partiellement cédées, vous pouvez reporter plusieurs écritures cession. Le total de tous les montants de cession reportés doit être un montant crédit.  
 
@@ -20,7 +20,7 @@ Lorsque vous commercialisez ou cédez une immobilisation, la valeur de cession d
 
 Les étapes suivantes supposent que vous avez déjà configuré les groupes de report appropriés dans la page **Groupes de report immo**. Pour plus d'informations, voir [Pour configurer des groupes de report immobilisation](fa-how-setup-general.md#to-set-up-fixed-asset-posting-groups).  
 
-## <a name="to-post-a-disposal-from-the-fixed-asset-gl-journal"></a>Pour reporter une cession à partir du journal GL immobilisation
+## <a name="to-post-a-disposal-from-the-fixed-asset-gl-journal"></a><a name="to-post-a-disposal-from-the-fixed-asset-gl-journal"></a>Pour reporter une cession à partir du journal GL immobilisation
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journaux GL immobilisation**, puis choisissez le lien associé.  
 2. Créez une ligne journal initiale et complétez les champs, le cas échéant. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
@@ -33,7 +33,7 @@ Les étapes suivantes supposent que vous avez déjà configuré les groupes de r
 
 Si vous vendez une immobilisation ou en cédez une partie, vous devez d'abord diviser l'immobilisation avant de pouvoir enregistrer la transaction cession. Pour en savoir plus, voir [Transférer, fractionner ou regrouper les immobilisations](fa-how-trans-split-combine.md).  
 
-## <a name="to-view-disposal-ledger-entries"></a>Pour visualiser des écritures cession
+## <a name="to-view-disposal-ledger-entries"></a><a name="to-view-disposal-ledger-entries"></a>Pour visualiser des écritures cession
 
 Lorsque vous vendez ou cédez une immobilisation, la valeur de cession est reportée dans le grand livre où vous pouvez afficher le résultat.  
 
@@ -45,9 +45,9 @@ Lorsque vous vendez ou cédez une immobilisation, la valeur de cession est repor
 
 La page **Écritures** s'ouvre. Vous pouvez y voir les écritures résultant du report de la cession.  
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/dispose-fixed-assets/) associée
+## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/dispose-fixed-assets/) associée
 
-## <a name="see-also"></a>Voir aussi .
+## <a name="see-also"></a><a name="see-also"></a>Voir aussi .
 
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  

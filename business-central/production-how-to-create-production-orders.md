@@ -10,7 +10,7 @@ ms.search.form: '9325, 99000815, 99000829, 9900083'
 ms.date: 04/01/2021
 ms.author: edupont
 ---
-# <a name="create-production-order-headers"></a>Créer des en-têtes O.F.
+# <a name="create-production-order-headers"></a><a name="create-production-order-headers"></a>Créer des en-têtes O.F.
 
 Vous pouvez créer manuellement un bon de production. Pour cela, la première étape est de créer un en-tête bon de production
 
@@ -18,7 +18,7 @@ Les ordres de fabrication sont généralement créés automatiquement par une fo
 
 La procédure suivante se base sur un bon de production planifié ferme. Vous pouvez aussi créer des bons de production dotés d'un autre état.  
 
-## <a name="to-create-a-production-order-header"></a>Pour créer un en-tête bon de production
+## <a name="to-create-a-production-order-header"></a><a name="to-create-a-production-order-header"></a>Pour créer un en-tête bon de production
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de production planifiés fermes**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -31,7 +31,7 @@ La procédure suivante se base sur un bon de production planifié ferme. Vous po
 
 Lorsque les exigences de production évoluent, comme les composantes ou les opérations, vous pouvez replanifier rapidement le bon de production. Pour plus d'informations, voir [Replanifier ou actualiser directement des ordres de fabrication](production-how-to-replan-refresh-production-orders.md).  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a><a name="see-also"></a>Voir aussi
 
 [Production](production-manage-manufacturing.md)
 [Paramétrage de la production](production-configure-production-processes.md)  

@@ -10,7 +10,7 @@ ms.search.keywords: 'undo, credit memo, return'
 ms.date: 06/23/2021
 ms.author: edupont
 ---
-# <a name="correct-or-cancel-unpaid-sales-invoices"></a>Corriger ou annuler des factures vente impayées
+# <a name="correct-or-cancel-unpaid-sales-invoices"></a><a name="correct-or-cancel-unpaid-sales-invoices"></a>Corriger ou annuler des factures vente impayées
 
 Vous pouvez corriger ou annuler une facture vente reportée impayée, à condition qu’elle n’ait pas été entièrement livrée. Cela est utile si vous faites une erreur ou si le client demande une modification avant l’exécution de la livraison. Dans tous les autres scénarios, nous vous recommandons de créer directement une note de crédit vente de correction. Pour plus d’informations, consultez [Créer une note de crédit vente à partir d’une facture vente reportée](sales-how-process-sales-returns-cancellations.md#to-create-a-sales-credit-memo-from-a-posted-sales-invoice).  
 
@@ -29,7 +29,7 @@ Lorsque vous corrigez ou annulez une facture vente reportée, la note de crédit
 > [!TIP]
 > Si vous avez reporté une facture de paiement anticipé pour une facture vente que vous corrigez ou annulez ensuite, vous devez également corriger ou annuler le paiement anticipé. Pour plus d'informations, voir [Corriger des paiements anticipés](finance-how-to-correct-prepayments.md).
 
-## <a name="to-cancel-a-posted-sales-invoice"></a>Pour annuler une facture vente reportée
+## <a name="to-cancel-a-posted-sales-invoice"></a><a name="to-cancel-a-posted-sales-invoice"></a>Pour annuler une facture vente reportée
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures vente reportées**, puis sélectionnez le lien associé.  
 2. Sélectionnez la facture vente reportée à annuler.
@@ -41,11 +41,11 @@ Lorsque vous corrigez ou annulez une facture vente reportée, la note de crédit
     Une note de crédit vente est automatiquement créée et reportée pour annuler la facture vente reportée initiale. La valeur du champ **Annulé** de la facture vente validée initiale devient **Oui**.
 4. Sélectionnez l'action **Afficher un avoir correctif** pour afficher l'avoir vente validé qui annule la facture vente validée initiale.
 
-### <a name="partial-invoice-posting-also-supported"></a>Report partiel de facture également pris en charge
+### <a name="partial-invoice-posting-also-supported"></a><a name="partial-invoice-posting-also-supported"></a>Report partiel de facture également pris en charge
 
 Si l'annulation est liée à un report de facture partiel, la ligne de document de vente d'origine est mise à jour pour refléter la quantité facturée annulée. Les champs **Qté à facturer** et **Qté facturée** de la ligne de document de vente associée sont réinitialisés et affichent les valeurs avant le report partiel.
 
-## <a name="to-correct-a-posted-sales-invoice"></a>Pour corriger une facture vente reportée
+## <a name="to-correct-a-posted-sales-invoice"></a><a name="to-correct-a-posted-sales-invoice"></a>Pour corriger une facture vente reportée
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures vente reportées**, puis sélectionnez le lien associé.  
 2. Sélectionnez la facture vente reportée à corriger.
@@ -61,9 +61,9 @@ Si l'annulation est liée à un report de facture partiel, la ligne de document 
     Une note de crédit vente est automatiquement créée et reportée pour annuler la facture vente reportée initiale.
 5. Sélectionnez l'action **Afficher un avoir correctif** pour afficher l'avoir vente validé qui annule la facture vente validée initiale.
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/ship-invoice-items-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/ship-invoice-items-dynamics-365-business-central/) associée
 
-## <a name="see-also"></a>Voir aussi .
+## <a name="see-also"></a><a name="see-also"></a>Voir aussi .
 
 [Ventes](sales-manage-sales.md)  
 [Définition des ventes](sales-setup-sales.md)  

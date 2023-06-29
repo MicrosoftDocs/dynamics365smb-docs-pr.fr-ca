@@ -4,11 +4,11 @@ ms.topic: include
 ms.date: 05/27/2021
 ms.author: edupont
 ---
-## <a name="setting-up-the-location"></a>Configuration de l'emplacement
+## <a name="setting-up-the-location"></a><a name="setting-up-the-location"></a>Configuration de l'emplacement
 
 La configuration de la page **Fiche emplacement** définit les flux d’entrepôt de la compagnie. Utilisez la fiche Emplacements pour configurer un emplacement avec le nom de code *SUD*.
 
-### <a name="to-set-up-the-location-south"></a>Pour configurer l'emplacement SUD
+### <a name="to-set-up-the-location-south"></a><a name="to-set-up-the-location-south"></a>Pour configurer l'emplacement SUD
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
 2. Créer une fiche emplacement nommée *SUD*.  

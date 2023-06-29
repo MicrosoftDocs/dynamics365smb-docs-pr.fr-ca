@@ -12,7 +12,7 @@ ms.search.form: '130, 138, 142, 146, 6660, 6662, 6650, 6652'
 ms.date: 06/10/2021
 ms.author: edupont
 ---
-# <a name="edit-posted-documents"></a>Modifier les documents reportés
+# <a name="edit-posted-documents"></a><a name="edit-posted-documents"></a>Modifier les documents reportés
 
 Parfois, vous devez mettre à jour un document reporté, car les informations pertinentes pour le document ont été modifiées. Sur un document vente reporté, il peut s'agir du numéro de suivi du colis du de l'agent de livraison, par exemple. Sur un document achat reporté, il peut s'agir d'un texte de référence de paiement.
 
@@ -32,7 +32,7 @@ Les documents supplémentaires suivants peuvent être modifiés dans les pays ou
 - RU : note de crédit vente reportée
 - IT : livraison de transfert reportée, livraison de service reportée
 
-## <a name="to-edit-a-posted-sales-shipment"></a>Pour modifier une livraison vente reportée
+## <a name="to-edit-a-posted-sales-shipment"></a><a name="to-edit-a-posted-sales-shipment"></a>Pour modifier une livraison vente reportée
 
 Voici comment modifier une livraison vente reportée. Les étapes sont similaires pour les autres documents pris en charge.
 
@@ -43,7 +43,7 @@ Voici comment modifier une livraison vente reportée. Les étapes sont similaire
 
 La livraison vente reportée est mise à jour.
 
-## <a name="see-also"></a>Voir aussi .
+## <a name="see-also"></a><a name="see-also"></a>Voir aussi .
 
 [Validation des documents et des feuilles](ui-post-documents-journals.md)  
 [Rechercher les écritures associées aux documents](ui-find-entries.md)  

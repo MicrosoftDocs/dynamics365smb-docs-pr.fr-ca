@@ -10,7 +10,7 @@ ms.search.keywords: null
 ms.date: 12/03/2021
 ms.author: edupont
 ---
-# <a name="walkthrough-setting-up-and-invoicing-sales-prepayments"></a>Procédure pas à pas : configuration et facturation de paiements anticipés vente
+# <a name="walkthrough-setting-up-and-invoicing-sales-prepayments"></a><a name="walkthrough-setting-up-and-invoicing-sales-prepayments"></a>Procédure pas à pas : configuration et facturation de paiements anticipés vente
 
 Cette procédure pas à pas vous guide tout au long du processus de configuration et d’utilisation des paiements anticipés dans [!INCLUDE [prod_short](includes/prod_short.md)]. [!INCLUDE [prepayment_def](includes/prepayment_def.md)]
 
@@ -18,7 +18,7 @@ Cette procédure pas à pas vous guide tout au long du processus de configuratio
 
 Par exemple, vous pouvez également envoyer plus de factures paiement anticipé si davantage d’articles supplémentaires sont ajoutés à la commande.  
 
-## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas
+## <a name="about-this-walkthrough"></a><a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas
 
 Cette procédure pas à pas présente les scénarios suivants :  
 
@@ -29,7 +29,7 @@ Cette procédure pas à pas présente les scénarios suivants :
 - Affectation de paiements anticipés à une commande  
 - Facturation du montant final sur une commande faisant l'objet d'un paiement anticipé.  
 
-### <a name="roles"></a>Rôles
+### <a name="roles"></a><a name="roles"></a>Rôles
 
 Cette procédure pas à pas inclut les tâches correspondant aux rôles suivants :  
 
@@ -37,7 +37,7 @@ Cette procédure pas à pas inclut les tâches correspondant aux rôles suivants
 - préparatrice de commandes (Susan) ;  
 - administrateur Ventes (Arnie).  
 
-## <a name="story"></a>Scénario
+## <a name="story"></a><a name="story"></a>Scénario
 
  Phyllis est un comptable qui décide des clients qui doivent payer un acompte avant que les articles soient fabriqués ou livrés. Phyllis configure [!INCLUDE[prod_short](includes/prod_short.md)] de façon à calculer automatiquement les acomptes.  
 
@@ -53,7 +53,7 @@ Cette procédure pas à pas inclut les tâches correspondant aux rôles suivants
 
  Arnie enregistre le paiement du client et l'affecte à la facture, puis envoie la facture finale.  
 
-## <a name="set-up-prepayments"></a>Configuration des acomptes
+## <a name="set-up-prepayments"></a><a name="set-up-prepayments"></a>Configuration des acomptes
 
 Phyllis configure le système afin qu'il gère les acomptes des clients.  
 
@@ -63,13 +63,13 @@ Phyllis configure le système afin qu'il gère les acomptes des clients.
 
 Les procédures suivantes décrivent le mode d'exécution des tâches de Phyllis :  
 
-### <a name="to-set-up-number-series-for-prepayments"></a>Pour configurer des séries de numéros pour les paiements anticipés
+### <a name="to-set-up-number-series-for-prepayments"></a><a name="to-set-up-number-series-for-prepayments"></a>Pour configurer des séries de numéros pour les paiements anticipés
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration ventes & à recevoir**, puis choisissez le lien associé.  
 2. Sur la page **Configuration ventes & à recevoir**, affichez le raccourci **Série de numéros**.  
 3. Vérifiez que la série de numéros des factures paiement anticipé reportées dans le champ **N° factures pour paiement anticipé reporté** est identique à celle des factures vente reportées (**N° facture reportée**) et que la série de numéros des notes de crédit pour paiement anticipé reporté (**N° notes de crédit pour paiement anticipé reporté**) est identique à celle des notes de crédit reportées (**N° note de crédit reportée**).  
 
-### <a name="to-block-shipments-for-unpaid-prepayment"></a>Pour bloquer les livraisons pour un paiement anticipé impayé
+### <a name="to-block-shipments-for-unpaid-prepayment"></a><a name="to-block-shipments-for-unpaid-prepayment"></a>Pour bloquer les livraisons pour un paiement anticipé impayé
 
 1. Sur la page **Configuration ventes & à recevoir**, sur le raccourci **Général**, cochez la case **Vérifier les acomptes lors du report**.
 
@@ -79,7 +79,7 @@ Par défaut, Phyllis requiert que le client 20000 soit facturé avec un acompte 
 
 Phyllis requiert que tous les clients soient facturés avec un acompte de 20 % pour l’article 1896-S. Le client 20000 a un mauvais historique des paiements, c’est pourquoi Phyllis requiert un paiement anticipé de 40 % pour ce client pour l’article 1896-S. La procédure suivante présente le mode de configuration des pourcentages de paiement anticipé par défaut.  
 
-### <a name="to-assign-default-prepayment-percentages-to-customers-and-items"></a>Pour affecter des pourcentages de paiement anticipé par défaut aux clients et aux articles
+### <a name="to-assign-default-prepayment-percentages-to-customers-and-items"></a><a name="to-assign-default-prepayment-percentages-to-customers-and-items"></a>Pour affecter des pourcentages de paiement anticipé par défaut aux clients et aux articles
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.  
 2. Ouvrez la fiche pour le client 20000 (Trey Research).
@@ -97,7 +97,7 @@ Phyllis requiert que tous les clients soient facturés avec un acompte de 20 % 
 
 6. Fermez toutes les pages.  
 
-### <a name="to-specify-an-account-for-sales-prepayments-in-general-posting-setup"></a>Pour spécifier un compte pour les paiements anticipés vente dans la configuration de report générale
+### <a name="to-specify-an-account-for-sales-prepayments-in-general-posting-setup"></a><a name="to-specify-an-account-for-sales-prepayments-in-general-posting-setup"></a>Pour spécifier un compte pour les paiements anticipés vente dans la configuration de report générale
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du report général**, puis choisissez le lien associé.  
 2. Sélectionnez la ligne où le champ **Groupe de report de marché** est défini sur **NATIONAL**, et où le champ **Groupe de report de produit** est défini sur **DÉTAIL**.  
@@ -106,7 +106,7 @@ Phyllis requiert que tous les clients soient facturés avec un acompte de 20 % 
 > [!TIP]
 > Si vous ne pouvez pas voir le champ de la page **Configuration du report général**, utilisez la barre de défilement horizontale au bas de la page pour faire défiler l’affichage vers la droite.  
 
-## <a name="create-an-order-that-requires-a-prepayment"></a>Création d’une commande nécessitant un paiement anticipé
+## <a name="create-an-order-that-requires-a-prepayment"></a><a name="create-an-order-that-requires-a-prepayment"></a>Création d’une commande nécessitant un paiement anticipé
 
  Dans le scénario suivant, Susan, la préparatrice des commandes, crée une commande en discutant avec le client. Les articles commandés par le client nécessitent un paiement anticipé. De plus, le client a effectué des paiements en retard dans le passé. Susan a reçu l’ordre de demander un montant fixe de **800** comme paiement anticipé sur la commande.  
 
@@ -114,7 +114,7 @@ Le client demande à payer 35 %. Susan accepte et modifie la commande en consé
 
 Susan crée la facture paiement anticipé et l'envoie au client.  
 
-### <a name="to-create-a-sales-order-with-a-prepayment"></a>Pour créer un document de vente avec paiement anticipé
+### <a name="to-create-a-sales-order-with-a-prepayment"></a><a name="to-create-a-sales-order-with-a-prepayment"></a>Pour créer un document de vente avec paiement anticipé
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -151,11 +151,11 @@ Susan crée la facture paiement anticipé et l'envoie au client.
 12. Dans l'avertissement qui s'affiche, cliquez sur le bouton **Oui** . Un taux de 35 % sera affecté comme pourcentage du paiement de l'ensemble de la commande.  
 13. Vérifiez que les lignes ont été mises à jour en conséquence.  
 
-## <a name="create-a-prepayment-invoice"></a>Créer une facture paiement anticipé
+## <a name="create-a-prepayment-invoice"></a><a name="create-a-prepayment-invoice"></a>Créer une facture paiement anticipé
 
 Après avoir entré la valeur de paiement anticipé correcte sur la commande, Susan crée la facture paiement anticipé et l'envoie au client.  
 
-### <a name="to-create-a-prepayment-invoice"></a>Pour créer une facture paiement anticipé
+### <a name="to-create-a-prepayment-invoice"></a><a name="to-create-a-prepayment-invoice"></a>Pour créer une facture paiement anticipé
 
 1. Sur la page **Document de vente**, choisissez **Actions**, puis **Report**, puis **Paiement anticipé**, et sélectionnez ensuite **Reporter et imprimer facture paiement anticipé**.
 2. Choisissez le bouton **Oui** pour reporter la facture.  
@@ -163,11 +163,11 @@ Après avoir entré la valeur de paiement anticipé correcte sur la commande, Su
 > [!NOTE]  
 > Susan doit maintenant envoyer la facture au client.  
 
-## <a name="create-an-additional-prepayment-invoice"></a>Créer une facture paiement anticipé supplémentaire
+## <a name="create-an-additional-prepayment-invoice"></a><a name="create-an-additional-prepayment-invoice"></a>Créer une facture paiement anticipé supplémentaire
 
 Le jour suivant, le client appelle Susan et modifie sa commande. Il souhaite deux exemplaires de l’article 1896-S. Susan rouvre et met à jour la commande, puis crée une seconde facture paiement anticipé sur la commande et l’envoie au client.  
 
-### <a name="to-create-an-additional-prepayment-invoice"></a>Pour créer une facture paiement anticipé supplémentaire
+### <a name="to-create-an-additional-prepayment-invoice"></a><a name="to-create-an-additional-prepayment-invoice"></a>Pour créer une facture paiement anticipé supplémentaire
 
 1. Sur la page **Document de vente**, choisissez l’action **Libérer**, puis **Rouvrir**  
 2. Sur la ligne de l’article **1896-S**, dans le champ **Quantité**, entrez **2**.  
@@ -176,11 +176,11 @@ Le jour suivant, le client appelle Susan et modifie sa commande. Il souhaite deu
 3. Pour reporter une facture pour le montant de paiement anticipé supplémentaire, choisissez **Actions**, puis **Report**, puis **Paiement anticipé**, puis **Reporter et imprimer facture paiement anticipé**
 4. Choisissez le bouton **Oui** pour reporter la facture.  
 
-## <a name="apply-the-prepayments"></a>Affecter les paiements anticipés
+## <a name="apply-the-prepayments"></a><a name="apply-the-prepayments"></a>Affecter les paiements anticipés
 
 Le client paie le montant du paiement anticipé. Arnie, du service comptabilité, enregistre le paiement et l'affecte aux factures de paiement anticipé.  
 
-### <a name="to-apply-a-payment-to-the-prepayment-invoices"></a>Pour affecter un paiement aux factures paiement anticipé
+### <a name="to-apply-a-payment-to-the-prepayment-invoices"></a><a name="to-apply-a-payment-to-the-prepayment-invoices"></a>Pour affecter un paiement aux factures paiement anticipé
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux des encaissements**, puis choisissez le lien associé.  
 2. Renseignez une ligne journal avec les informations suivantes.  
@@ -200,11 +200,11 @@ Le client paie le montant du paiement anticipé. Arnie, du service comptabilité
 7. Pour reporter le journal, choisissez l’action **Reporter/Imprimer**, puis sélectionnez **Reporter**.
 8. Cliquez sur le bouton **Oui**.
 
-## <a name="invoice-the-remaining-amount"></a>Facturer le montant ouvert
+## <a name="invoice-the-remaining-amount"></a><a name="invoice-the-remaining-amount"></a>Facturer le montant ouvert
 
 Arnie a été informé que les articles de la commande ont été livrés et que la commande est prête pour facturation. Il crée donc la facture correspondante.  
 
-### <a name="to-invoice-the-remaining-amount"></a>Pour facturer le montant ouvert
+### <a name="to-invoice-the-remaining-amount"></a><a name="to-invoice-the-remaining-amount"></a>Pour facturer le montant ouvert
 
 1. Ouvrez le document de vente.
 2. Choisissez l’action **Report**, puis **Reporter**.
@@ -218,11 +218,11 @@ Arnie a été informé que les articles de la commande ont été livrés et que 
 
 5. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures vente reportées**, puis sélectionnez le lien associé.  
 
-## <a name="update-the-status-of-prepaid-orders-and-invoices-automatically"></a>Mettre à jour automatiquement l'état des commandes prépayées et des factures
+## <a name="update-the-status-of-prepaid-orders-and-invoices-automatically"></a><a name="update-the-status-of-prepaid-orders-and-invoices-automatically"></a>Mettre à jour automatiquement l'état des commandes prépayées et des factures
 
 Vous pouvez accélérer le traitement des commandes et des factures en configurant des entrées de file d’attente des travaux qui mettent automatiquement à jour l'état de ces documents. Lorsqu’une facture de paiement anticipé est payée, les entrées de la file d’attente des travaux peuvent changer automatiquement l'état du document de **Paiement anticipé en attente** sur **Validé**. Lorsque vous configurez les entrées de la file d’attente des travaux, les codeunits que vous devrez utiliser sont **383 Mise à jour En attente Paiement anticipé Ventes** et **383 Mise à jour En attente Paiement anticipé Achats**. Nous vous recommandons de programmer les entrées pour qu’elles s’exécutent fréquemment, par exemple, toutes les minutes. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a><a name="next-steps"></a>Étapes suivantes
 
 Cette procédure pas-à-pas vous a présenté les étapes de configuration de [!INCLUDE[prod_short](includes/prod_short.md)] pour la gestion des paiements anticipés. 
 
@@ -235,9 +235,9 @@ Vous avez également reporté une facture paiement anticipé, créé une deuxiè
 
 Les fonctionnalités de paiement anticipé facilitent la configuration et l’application des règles de paiement anticipé pour les clients et les articles. Ils vous permettent également de reporter chaque paiement sur une facture.  
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/prepayment-invoices-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/prepayment-invoices-dynamics-365-business-central/) associée
 
-## <a name="see-also"></a>Voir aussi .
+## <a name="see-also"></a><a name="see-also"></a>Voir aussi .
 
 [Facturation de paiements anticipés](finance-invoice-prepayments.md)  
 [Finance](finance.md)  

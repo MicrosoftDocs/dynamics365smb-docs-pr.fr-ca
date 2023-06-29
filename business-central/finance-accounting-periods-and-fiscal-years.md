@@ -10,7 +10,7 @@ ms.search.form: 100
 ms.date: 08/25/2022
 ms.author: bholtorf
 ---
-# <a name="work-with-accounting-periods-and-fiscal-years"></a>Utiliser des périodes comptables et des exercices financiers
+# <a name="work-with-accounting-periods-and-fiscal-years"></a><a name="work-with-accounting-periods-and-fiscal-years"></a>Utiliser des périodes comptables et des exercices financiers
 
 Les périodes comptables, également appelées périodes de report, sont des périodes pour lesquelles une compagnie ou une organisation présente ses performances financières, en générant par exemple un état de ses résultats ou son bilan. Généralement, les périodes comptables sont liées à l'exercice financier de la compagnie, qui peut contenir plusieurs périodes comptables, telles que des mois ou des trimestres.
 
@@ -20,11 +20,11 @@ Pour de nombreuses compagnies, l’exercice financier ne correspond pas à l’a
 
 Vous pouvez utiliser des périodes comptables dans la génération de rapports, par exemple lorsque vous consultez les écritures reportées sur la page **Solde/budget** où l’intervalle de génération de rapports est spécifié. L’une des options consiste à spécifier la déclaration par période comptable. Vous pouvez également créer un rapport financier qui compare les résultats de différentes périodes comptables.
 
-## <a name="creating-a-new-fiscal-year"></a>Création d'un exercice financier
+## <a name="creating-a-new-fiscal-year"></a><a name="creating-a-new-fiscal-year"></a>Création d'un exercice financier
 
 Vous pouvez créer des périodes comptables en bloc, à l’aide du traitement en lot **Créer exercice financier**, ou manuellement.
 
-### <a name="how-to-create-accounting-periods-in-bulk"></a>Comment créer des périodes comptables en bloc
+### <a name="how-to-create-accounting-periods-in-bulk"></a><a name="how-to-create-accounting-periods-in-bulk"></a>Comment créer des périodes comptables en bloc
 
 Utilisez le traitement en lot **Créer exercice financier** pour diviser un exercice financier en périodes de même durée.  
 
@@ -35,7 +35,7 @@ Utilisez le traitement en lot **Créer exercice financier** pour diviser un exer
 5. Dans le champ **Base période**, entrez une durée pour chaque période. Les identificateurs de durée sont 1M pour un mois, 1T pour un trimestre, et 1Y pour une année.  
 6. Cliquez sur **OK**.  
 
-### <a name="how-to-create-accounting-periods-manually"></a>Comment créer des périodes comptables manuellement
+### <a name="how-to-create-accounting-periods-manually"></a><a name="how-to-create-accounting-periods-manually"></a>Comment créer des périodes comptables manuellement
 
 Si les périodes comptables de l’exercice financier ont différentes durées, comme le calendrier 4-4-5 utilisé dans la vente au détail, vous pouvez les configurer manuellement.  
   
@@ -44,7 +44,7 @@ Si les périodes comptables de l’exercice financier ont différentes durées, 
 3. Activez la case à cocher **Nouvel exercice financier** pour indiquer qu'il s'agit de la première période de l'exercice. [!INCLUDE[prod_short](includes/prod_short.md)] utilise cette période pour déterminer les périodes à fermer en fin d'exercice.
 4. Répétez les étapes 2 et 3 pour chaque période restante.  
 
-## <a name="closing-a-fiscal-year"></a>Fermeture d’un exercice financier
+## <a name="closing-a-fiscal-year"></a><a name="closing-a-fiscal-year"></a>Fermeture d’un exercice financier
 
 Fermer l'exercice financier est l'une des tâches pour fermer les livres. Une fois l'exercice financier fermé, les cases **Fermé** et **Verrouillage date** sont activées pour toutes les périodes de l'exercice. Vous ne pouvez pas rouvrir un exercice ou désactiver les cases.
 
@@ -54,11 +54,11 @@ Fermer l'exercice financier est l'une des tâches pour fermer les livres. Une fo
 1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Périodes comptables**, puis sélectionnez le lien associé.  
 2. Choisissez l'action **Clôturer exercice**.  
 
-## <a name="posting-entries-to-a-closed-fiscal-year"></a>Report d’écritures dans un exercice financier fermé
+## <a name="posting-entries-to-a-closed-fiscal-year"></a><a name="posting-entries-to-a-closed-fiscal-year"></a>Report d’écritures dans un exercice financier fermé
 
 Même si un exercice financier est fermé, vous pouvez toujours y reporter des écritures. Dans ce cas, les écritures sont marquées comme reportées dans un exercice financier fermé et la case à cocher **Écr. exercice précédent** est activée. Par défaut, la case à cocher n'est pas affichée sur la page, mais vous pouvez l'ajouter. Les étapes suivantes consistent à fermer les états des résultats traités et à transférer les résultats de l'année sur un compte de bilan. Répétez ces étapes chaque fois que vous reportez des écritures dans un exercice financier fermé.
 
-## <a name="see-also"></a>Voir aussi .
+## <a name="see-also"></a><a name="see-also"></a>Voir aussi .
 
 [Fermeture des registres](year-close-books.md)  
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
