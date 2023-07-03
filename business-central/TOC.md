@@ -993,11 +993,12 @@
 ##### [Besoin de facturation électronique : émission de facture à copie unique](LocalFunctionality/Iceland/electronic-invoicing-requirement-issuing-single-copy-invoice.md)
 #### Général  
 ##### [Mappage des numéros de l’IRS avec le plan comptable](LocalFunctionality/Iceland/how-to-map-irs-numbers-to-chart-of-accounts.md)  
-##### [Suppression de factures et notes de crédit reportées](LocalFunctionality/Iceland/deleting-posted-invoices-and-credit-memos.md)  
+##### [Suppression de factures reportées et de notes de crédit reportées](LocalFunctionality/Iceland/deleting-posted-invoices-and-credit-memos.md)  
 
 ### Inde
 #### [Vue d’ensemble](LocalFunctionality/India/india-local-functionality.md)
-#### [Configurer des séries de numéros de report](LocalFunctionality/India/posting-no-series-setup.md)
+#### [Définition du report des séries de numéros](LocalFunctionality/India/posting-no-series-setup.md)
+#### [Piste d’audit et journaux d’édition pour les logiciels de comptabilité en Inde](LocalFunctionality/India/india-audit-trail-edit-logs-accounting-software.md)
 #### Moteur de taxe
 ##### [Vue d’ensemble](LocalFunctionality/India/TaxEngine-001-Overview.md)  
 ##### [Configuration d’importation et d’exportation du moteur de taxe](LocalFunctionality/India/TaxEngine-002-Import-Export-Configuration.md)
