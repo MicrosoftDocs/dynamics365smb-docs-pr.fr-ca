@@ -10,7 +10,7 @@ ms.search.keywords: null
 ms.date: 06/23/2021
 ms.author: edupont
 ---
-# <a name="set-up-shipping-agents"></a><a name="set-up-shipping-agents"></a>Configurer des agents de livraison
+# <a name="set-up-shipping-agents"></a><a name="set-up-shipping-agents"></a><a name="set-up-shipping-agents"></a>Configurer des agents de livraison
 Vous pouvez définir un code pour chacun de vos transporteurs et saisir les informations qui les concernent.  
 
 Si vous saisissez une adresse Internet pour l'agent de livraison, et que l'agent de livraison fournit des prestations de traçabilité des colis sur Internet, vous pouvez utiliser la fonction de suivi de colis automatique. Pour plus d'informations, voir [Suivre des colis](sales-how-track-packages.md).
@@ -20,7 +20,7 @@ Pour chaque agent de livraison, vous pouvez configurer un nombre illimité de se
 
 Lorsque vous avez affecté une service agent de livraison à une ligne document de vente, le délai de livraison du service est inclus dans le calcul de la promesse de livraison, pour cette ligne. Pour plus d'informations, voir [Calculer des dates promesse livraison](sales-how-to-calculate-order-promising-dates.md).
 
-## <a name="to-set-up-a-shipping-agent"></a><a name="to-set-up-a-shipping-agent"></a>Pour configurer un agent de livraison
+## <a name="to-set-up-a-shipping-agent"></a><a name="to-set-up-a-shipping-agent"></a><a name="to-set-up-a-shipping-agent"></a>Pour configurer un agent de livraison
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Agents de livraison**, puis sélectionnez le lien associé.  
 2.  Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)].  
 3.  Sélectionnez l'action **Services agent de livraison**.
@@ -29,7 +29,7 @@ Lorsque vous avez affecté une service agent de livraison à une ligne document 
 > [!NOTE]  
 >  Si vous supprimez l'agent de livraison de la ligne commande, le code prestation agent de livraison est également supprimé. La valeur des champs basée en partie sur la prestation agent de livraison est ensuite recalculée.  
 
-## <a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
 [Configurer des méthodes de livraison](sales-how-set-up-shipment-methods.md)  
 [Suivre des colis](sales-how-track-packages.md)    
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)

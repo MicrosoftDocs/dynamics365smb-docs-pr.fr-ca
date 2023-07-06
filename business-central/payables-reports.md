@@ -8,15 +8,15 @@ ms.search.form: '347, Report_301, Report_304, Report_305, Report_312, Report_317
 ms.date: 07/13/2021
 ms.author: edupont
 ---
-# <a name="accounts-payable-reports-and-analytics-in-business-central"></a><a name="accounts-payable-reports-and-analytics-in-business-central"></a>Rapports comptabilité fournisseur et analyses d’immobilisation dans Business Central
+# <a name="accounts-payable-reports-and-analytics-in-business-central"></a><a name="accounts-payable-reports-and-analytics-in-business-central"></a><a name="accounts-payable-reports-and-analytics-in-business-central"></a>Rapports comptabilité fournisseur et analyses d’immobilisation dans Business Central
 
 Pour vous aider à gérer votre comptabilité fournisseur dans [!INCLUDE [prod_short](includes/prod_short.md)], des rapports et des analyses standard sont intégrés. Ils vont au-delà des contraintes des rapports traditionnels pour vous aider à concevoir efficacement divers types de rapports.  
 
-## <a name="reports"></a><a name="reports"></a>Rapports
+## <a name="reports"></a><a name="reports"></a><a name="reports"></a>Rapports
 [!INCLUDE [payables_reports](includes/payables-reports-include.md)]
 
 
-## <a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
 
 [Analyse des états financiers dans Microsoft Excel](finance-analyze-excel.md)  
 [Utiliser des dimensions](finance-dimensions.md)  

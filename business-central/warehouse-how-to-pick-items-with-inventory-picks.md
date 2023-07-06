@@ -10,7 +10,7 @@ ms.date: 01/25/2023
 ms.custom: bap-template
 ms.search.forms: '931, 7377'
 ---
-# <a name="pick-items-with-inventory-picks"></a><a name="pick-items-with-inventory-picks"></a>Prélever des articles avec les prélèvements stock
+# <a name="pick-items-with-inventory-picks"></a><a name="pick-items-with-inventory-picks"></a><a name="pick-items-with-inventory-picks"></a>Prélever des articles avec les prélèvements stock
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], vous prélevez et livrez des articles en utilisant l’une des quatre méthodes décrites dans le tableau suivant.
 
@@ -42,29 +42,29 @@ Vous pouvez créer un prélèvement inventaire de trois manières :
 
 Le prélèvement inventaire peut ensuite être créé à partir de la page **Prélèvement inventaire** sur la base du document source.  
 
-## <a name="to-create-an-inventory-pick-from-the-source-document"></a><a name="to-create-an-inventory-pick-from-the-source-document"></a>Pour créer un prélèvement inventaire à partir du document source
+## <a name="to-create-an-inventory-pick-from-the-source-document"></a><a name="to-create-an-inventory-pick-from-the-source-document"></a><a name="to-create-an-inventory-pick-from-the-source-document"></a>Pour créer un prélèvement inventaire à partir du document source
 
 1. Dans le document source, qui peut être un document de vente, un retour achat ou un transfert sortant, choisissez l’action **Créer prélèv./rangement inventaire**.
 2. Activez la case à cocher **Créer prélèvement inventaire**.  
 3. Cliquez sur le bouton **OK**. Un nouveau prélèvement inventaire sera créé.
 
-## <a name="to-create-multiple-inventory-picks-with-a-batch-job"></a><a name="to-create-multiple-inventory-picks-with-a-batch-job"></a>Pour créer plusieurs prélèvements inventaire avec un traitement en lot
+## <a name="to-create-multiple-inventory-picks-with-a-batch-job"></a><a name="to-create-multiple-inventory-picks-with-a-batch-job"></a><a name="to-create-multiple-inventory-picks-with-a-batch-job"></a>Pour créer plusieurs prélèvements inventaire avec un traitement en lot
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Créer rangement/prélèvement/mouvement d’inventaire**, puis choisissez le lien associé.  
 2. Sur le raccourci **Demande entrepôt**, utilisez les champs **Document origine** et **N° origine** pour opérer un filtrage sur certains types de documents ou des plages de numéros de document. Par exemple, vous pouvez créer des prélèvements uniquement pour des documents de vente.  
 3. Dans le raccourci **Options**, cochez la case **Créer prélèvement inventaire**.
 4. Choisissez le bouton **OK**.
 
-## <a name="to-create-the-pick-in-two-steps"></a><a name="to-create-the-pick-in-two-steps"></a>Pour créer le prélèvement en deux étapes
+## <a name="to-create-the-pick-in-two-steps"></a><a name="to-create-the-pick-in-two-steps"></a><a name="to-create-the-pick-in-two-steps"></a>Pour créer le prélèvement en deux étapes
 
-### <a name="to-request-an-inventory-pick-by-releasing-the-source-document"></a><a name="to-request-an-inventory-pick-by-releasing-the-source-document"></a>Pour demander un prélèvement inventaire en libérant le document source
+### <a name="to-request-an-inventory-pick-by-releasing-the-source-document"></a><a name="to-request-an-inventory-pick-by-releasing-the-source-document"></a><a name="to-request-an-inventory-pick-by-releasing-the-source-document"></a>Pour demander un prélèvement inventaire en libérant le document source
 
 Pour les documents de vente, les retours achat et les ordres de transfert sortants, vous créez la demande entrepôt en libérant l'ordre. Le lancement de la commande rend les articles disponibles pour le prélèvement.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Sélectionnez le document de vente que vous voulez libérer, puis sélectionnez l'action **Libérer**.
 
-### <a name="to-create-an-inventory-pick-based-on-the-source-document"></a><a name="to-create-an-inventory-pick-based-on-the-source-document"></a>Pour créer un prélèvement inventaire en fonction du document source
+### <a name="to-create-an-inventory-pick-based-on-the-source-document"></a><a name="to-create-an-inventory-pick-based-on-the-source-document"></a><a name="to-create-an-inventory-pick-based-on-the-source-document"></a>Pour créer un prélèvement inventaire en fonction du document source
 
 Après avoir lancé une commande, l'employé d'entrepôt peut créer un prélèvement inventaire.
 
@@ -75,7 +75,7 @@ Après avoir lancé une commande, l'employé d'entrepôt peut créer un prélèv
 5. Sinon, choisissez l’action **Extraire document source** pour créer une liste de tous les documents source sortants prêts pour le prélèvement dans l’emplacement.  
 6. Sélectionnez le bouton **OK** pour renseigner les lignes prélèvement en fonction des documents origine sélectionnés.  
 
-## <a name="to-record-inventory-picks"></a><a name="to-record-inventory-picks"></a>Pour enregistrer les prélèvements inventaire
+## <a name="to-record-inventory-picks"></a><a name="to-record-inventory-picks"></a><a name="to-record-inventory-picks"></a>Pour enregistrer les prélèvements inventaire
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvement inventaire**, puis choisissez le lien associé.  
 2. Dans le champ **Code de zone** sur les lignes prélèvement, la zone à partir de laquelle les articles doivent être prélevés est proposée sur la base d'une zone par défaut de l'article. Vous pouvez modifier la zone sur cette page, si nécessaire.  
@@ -88,7 +88,7 @@ Après avoir lancé une commande, l'employé d'entrepôt peut créer un prélèv
     * Reportez la livraison des lignes du document source qui ont été prélevées.
     * Si l’emplacement utilise des zones, le report crée également des écritures entrepôt pour reporter les modifications apportées aux quantités zone.  
 
-## <a name="handling-assemble-to-order-items-with-inventory-picks"></a><a name="handling-assemble-to-order-items-with-inventory-picks"></a>Traitement des articles à assembler pour commande dans les prélèvements inventaire
+## <a name="handling-assemble-to-order-items-with-inventory-picks"></a><a name="handling-assemble-to-order-items-with-inventory-picks"></a><a name="handling-assemble-to-order-items-with-inventory-picks"></a>Traitement des articles à assembler pour commande dans les prélèvements inventaire
 
 Vous pouvez également utiliser la page **Prélèvement inventaire** pour prélever et livrer les ventes lorsque les articles doivent être assemblés avant de pouvoir être livrés. Learn more at [Vente d’articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).
 
@@ -118,9 +118,9 @@ Dans les scénarios où une partie de la quantité est assemblée et l’autre d
 > [!NOTE]  
 > Si les articles sont assemblés pour commande, le prélèvement inventaire pour le document de vente lié crée un mouvement d’inventaire pour toutes les composantes d’assemblage.  
 
-## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/paths/pick-ship-items-business-central/) associée
+## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/paths/pick-ship-items-business-central/) associée
 
-## <a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

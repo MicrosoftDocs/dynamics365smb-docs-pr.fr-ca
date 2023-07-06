@@ -11,7 +11,7 @@ ms.search.form: '9652, 9650'
 ms.date: 08/12/2022
 ms.author: jswymer
 ---
-# <a name="setting-the-layout-used-by-a-report"></a><a name="setting-the-layout-used-by-a-report"></a>Définition de la présentation utilisée par un rapport
+# <a name="setting-the-layout-used-by-a-report"></a><a name="setting-the-layout-used-by-a-report"></a><a name="setting-the-layout-used-by-a-report"></a>Définition de la présentation utilisée par un rapport
 
 > **S'APPLIQUE À :** Business Central Online, Business Central sur site version 2022, vague de lancement 1 et ultérieures. Pour les versions antérieures, allez [ici](ui-how-change-layout-currently-used-report.md).
 
@@ -19,7 +19,7 @@ La présentation d’un rapport détermine l’apparence de ce dernier. Elle dé
 
 Lorsqu’il y a plusieurs compagnies dans l’application, les présentations sont définies pour chaque compagnie. Ainsi, le même rapport dans une compagnie peut avoir une présentation différente dans une autre compagnie.
 
-## <a name="get-started"></a><a name="get-started"></a>Mise en route
+## <a name="get-started"></a><a name="get-started"></a><a name="get-started"></a>Mise en route
 
 Il existe quelques manières de définir la présentation utilisée par un rapport. Chaque méthode présente des avantages, selon ce que vous cherchez à faire : 
 
@@ -36,12 +36,12 @@ Il existe quelques manières de définir la présentation utilisée par un rappo
   > [!NOTE]
   > Vous ne pouvez pas utiliser la page **Présentations de rapport** pour les présentations Word et RDLC qui ont été créées à l’aide de la fonctionnalité **Présentations personnalisées** héritée. En fait, vous ne verrez même pas ces présentations personnalisées répertoriées sur la page **Présentations de rapport**. Vous ne pouvez définir ces présentations qu’en utilisant la page **Sélection présentation rapport**.
 
-## <a name="set-the-layout-from-the-report-layouts-page"></a><a name="set-the-layout-from-the-report-layouts-page"></a>Définir la présentation à partir de la page Présentations de rapport
+## <a name="set-the-layout-from-the-report-layouts-page"></a><a name="set-the-layout-from-the-report-layouts-page"></a><a name="set-the-layout-from-the-report-layouts-page"></a>Définir la présentation à partir de la page Présentations de rapport
 
 [!INCLUDE[open-report-layouts-page](includes/open-report-layouts-page.md)]
 2. Recherchez la présentation dans la liste, sélectionnez-la, puis sélectionnez l’action **Définir par défaut** en haut de la page.
 
-## <a name="set-the-layout-from-report-layout-selection-page"></a><a name="set-the-layout-from-report-layout-selection-page"></a>Définir la présentation à partir de la page Sélection présentation rapport
+## <a name="set-the-layout-from-report-layout-selection-page"></a><a name="set-the-layout-from-report-layout-selection-page"></a><a name="set-the-layout-from-report-layout-selection-page"></a>Définir la présentation à partir de la page Sélection présentation rapport
 
 1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 1.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Sélection présentation rapport**, puis sélectionnez le lien associé.
   
@@ -54,13 +54,13 @@ Il existe quelques manières de définir la présentation utilisée par un rappo
 
 4. Dans la page **Présentations de rapport**, sélectionnez une présentation, puis cliquez sur **OK**.
 
-## <a name="revert-to-the-original-default-layout"></a><a name="revert-to-the-original-default-layout"></a>Revenir à la présentation par défaut d’origine
+## <a name="revert-to-the-original-default-layout"></a><a name="revert-to-the-original-default-layout"></a><a name="revert-to-the-original-default-layout"></a>Revenir à la présentation par défaut d’origine
 
 Les rapports sont conçus pour utiliser une présentation par défaut. Vous pouvez revenir à la présentation par défaut d’origine à partir de la page **Sélection présentation rapport**. Sélectionnez simplement le rapport, puis sélectionnez l’action **Restaurer la sélection par défaut** en haut de la page.
 
-## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/change-documents-dynamics-365-business-central/index) associée
+## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/change-documents-dynamics-365-business-central/index) associée
 
-## <a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
 
 [Gestion des présentations de rapport](ui-manage-report-layouts.md)  
 [Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

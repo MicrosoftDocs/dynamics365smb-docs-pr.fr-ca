@@ -10,7 +10,7 @@ ms.search.keywords: 'electronic document, e-invoice, incoming document, OCR, eco
 ms.date: 06/14/2022
 ms.author: edupont
 ---
-# <a name="create-incoming-document-records"></a><a name="create-incoming-document-records"></a>Créer des enregistrements document entrant
+# <a name="create-incoming-document-records"></a><a name="create-incoming-document-records"></a><a name="create-incoming-document-records"></a>Créer des enregistrements document entrant
 
 Sur la page **Documents entrants**, vous pouvez utiliser différentes fonctions pour examiner les reçus de dépenses, gérer les tâches ROC et convertir les fichiers document entrants, manuellement ou automatiquement, en documents ou lignes journal appropriés. Les fichiers externes peuvent être joints à n'importe quelle étape du processus, notamment en ce qui concerne les documents reportés et les écritures fournisseur, client et grand livre résultantes.
 
@@ -18,7 +18,7 @@ Pour enregistrer un document externe dans [!INCLUDE[prod_short](includes/prod_sh
 
 Avant d’utiliser la fonctionnalité **Documents entrants**, vous devez exécuter la configuration requise. Pour plus d'informations, voir [Configurer des documents entrants](across-how-setup-income-documents.md).
 
-## <a name="approve-or-reject-an-incoming-document"></a><a name="approve-or-reject-an-incoming-document"></a>Approbation ou rejet d'un document entrant
+## <a name="approve-or-reject-an-incoming-document"></a><a name="approve-or-reject-an-incoming-document"></a><a name="approve-or-reject-an-incoming-document"></a>Approbation ou rejet d'un document entrant
 
 Si vous avez mis en place la fonction **Documents entrants** pour exiger une approbation pour créer des documents, les utilisateurs disposant des droits appropriés doivent approuver les enregistrements avant qu’ils ne soient traités. Pour plus d’informations, voir [Configurez des approbateurs des enregistrements de documents entrants](across-how-setup-income-documents.md#to-set-up-approvers-of-incoming-document-records).
 
@@ -27,7 +27,7 @@ Si vous avez mis en place la fonction **Documents entrants** pour exiger une app
 
 Si vous approuvez l'enregistrement document entrant, la case à cocher **Lancé** de la ligne document entrant est activée. L'utilisateur chargé de créer, par exemple, des factures achat peut continuer à traiter l'enregistrement.
 
-## <a name="create-an-incoming-document-record-by-taking-a-photo"></a><a name="create-an-incoming-document-record-by-taking-a-photo"></a>Pour créer un enregistrement de document entrant en prenant une photo
+## <a name="create-an-incoming-document-record-by-taking-a-photo"></a><a name="create-an-incoming-document-record-by-taking-a-photo"></a><a name="create-an-incoming-document-record-by-taking-a-photo"></a>Pour créer un enregistrement de document entrant en prenant une photo
 
 > [!NOTE]  
 > La procédure suivante s’applique uniquement aux clients disposant de tablettes et de téléphones équipés de [!INCLUDE[prod_short](includes/prod_short.md)].
@@ -39,7 +39,7 @@ Si vous approuvez l'enregistrement document entrant, la case à cocher **Lancé*
 
     Un enregistrement de document entrant est créé, avec l’image jointe.
 
-## <a name="attach-an-image-to-an-incoming-document-record-by-taking-a-photo"></a><a name="attach-an-image-to-an-incoming-document-record-by-taking-a-photo"></a>Pour joindre une image à un enregistrement de document entrant en prenant une photo
+## <a name="attach-an-image-to-an-incoming-document-record-by-taking-a-photo"></a><a name="attach-an-image-to-an-incoming-document-record-by-taking-a-photo"></a><a name="attach-an-image-to-an-incoming-document-record-by-taking-a-photo"></a>Pour joindre une image à un enregistrement de document entrant en prenant une photo
 
 > [!NOTE]  
 > La procédure suivante s’applique uniquement aux clients disposant de tablettes et de téléphones équipés de [!INCLUDE[prod_short](includes/prod_short.md)].
@@ -51,7 +51,7 @@ Si vous approuvez l'enregistrement document entrant, la case à cocher **Lancé*
 
     L'image est jointe à l'enregistrement de document entrant.
 
-## <a name="create-an-incoming-document-record-manually"></a><a name="create-an-incoming-document-record-manually"></a>Pour créer un enregistrement document entrant manuellement
+## <a name="create-an-incoming-document-record-manually"></a><a name="create-an-incoming-document-record-manually"></a><a name="create-an-incoming-document-record-manually"></a>Pour créer un enregistrement document entrant manuellement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents entrants**, puis choisissez le lien associé.
 2. Sélectionnez l’action **Nouveau**, puis l’action **Créer à partir d’un fichier**.  
@@ -61,9 +61,9 @@ Si vous approuvez l'enregistrement document entrant, la case à cocher **Lancé*
 6. Sur la page **Insérer un fichier**, sélectionnez le fichier qui représente le document entrant concerné, puis choisissez le bouton **Ouvrir**.
 7. Sur la page **Document entrant**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
-## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/incoming-documents-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/incoming-documents-dynamics-365-business-central/) associée
 
-## <a name="see-also"></a><a name="see-also"></a>Voir aussi .
+## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi .
 
 [Utiliser un service OCR pour convertir des fichiers PDF et image en documents électroniques](across-how-use-ocr-pdf-images-files.md)
 [Créer des enregistrements document entrant directement à partir de documents et d’écritures](across-how-connect-disconnect-income-document-records.md)

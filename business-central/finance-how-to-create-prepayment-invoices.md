@@ -9,7 +9,7 @@ ms.date: 02/02/2023
 ms.custom: bap-template
 ms.search.form: '42, 50, 9305, 9307'
 ---
-# <a name="create-prepayment-invoices"></a><a name="create-prepayment-invoices"></a>Créer des factures de paiement anticipé
+# <a name="create-prepayment-invoices"></a><a name="create-prepayment-invoices"></a><a name="create-prepayment-invoices"></a>Créer des factures de paiement anticipé
 
 Si vous demandez aux clients de payer avant de livrer leur commande, vous pouvez utiliser les fonctionnalités de paiement anticipé. Il en va de même si votre fournisseur vous demande de payer avant de vous livrer une commande.  
 
@@ -19,7 +19,7 @@ Après avoir créé un document de vente ou un bon de commande, vous pouvez cré
 
 La procédure suivante décrit comment facturer un paiement anticipé pour un document de vente. La procédure est identique pour les bons de commande.  
 
-## <a name="to-create-a-prepayment-invoice"></a><a name="to-create-a-prepayment-invoice"></a>Pour créer une facture paiement anticipé
+## <a name="to-create-a-prepayment-invoice"></a><a name="to-create-a-prepayment-invoice"></a><a name="to-create-a-prepayment-invoice"></a>Pour créer une facture paiement anticipé
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2. Créez un document de vente pour le client approprié. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).  
@@ -70,13 +70,13 @@ Vous pouvez émettre des factures paiement anticipé supplémentaires pour la co
 
  Lorsque vous êtes prêt à reporter le reste de la facture, reportez-le comme n'importe quelle facture. Le montant du paiement anticipé est automatiquement déduit du montant dû.  
 
-## <a name="update-the-status-of-prepaid-orders-and-invoices-automatically"></a><a name="update-the-status-of-prepaid-orders-and-invoices-automatically"></a>Mettre à jour automatiquement l'état des commandes prépayées et des factures
+## <a name="update-the-status-of-prepaid-orders-and-invoices-automatically"></a><a name="update-the-status-of-prepaid-orders-and-invoices-automatically"></a><a name="update-the-status-of-prepaid-orders-and-invoices-automatically"></a>Mettre à jour automatiquement l'état des commandes prépayées et des factures
 
 Vous pouvez accélérer le traitement des commandes et des factures en configurant des entrées de file d’attente des travaux qui mettent automatiquement à jour l'état de ces documents. Lorsqu’une facture de paiement anticipé est payée, les entrées de la file d’attente des travaux peuvent changer automatiquement l'état du document de **Paiement anticipé en attente** sur **Validé**. Lorsque vous configurez les entrées de la file d’attente des travaux, les codeunits que vous devrez utiliser sont **383 Mise à jour En attente Paiement anticipé Ventes** et **383 Mise à jour En attente Paiement anticipé Achats**. Nous vous recommandons de programmer les entrées pour qu’elles s’exécutent fréquemment, par exemple, toutes les minutes. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
-## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/prepayment-invoices-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/prepayment-invoices-dynamics-365-business-central/) associée
 
-## <a name="see-also"></a><a name="see-also"></a>Voir aussi .
+## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi .
 
 [Facturation de paiements anticipés](finance-invoice-prepayments.md)  
 [Procédure pas à pas : configuration et facturation d'acomptes](walkthrough-setting-up-and-invoicing-sales-prepayments.md)  

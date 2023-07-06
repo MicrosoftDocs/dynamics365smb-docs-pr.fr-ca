@@ -10,7 +10,7 @@ ms.search.form: '507, 509, 6620, 6622, 6623, 9303, 9310'
 ms.date: 04/01/2021
 ms.author: edupont
 ---
-# <a name="work-with-blanket-sales-orders-or-blanket-purchase-orders"></a><a name="work-with-blanket-sales-orders-or-blanket-purchase-orders"></a>Utiliser des commandes permanentes ventes ou des commandes permanentes achats
+# <a name="work-with-blanket-sales-orders-or-blanket-purchase-orders"></a><a name="work-with-blanket-sales-orders-or-blanket-purchase-orders"></a><a name="work-with-blanket-sales-orders-or-blanket-purchase-orders"></a>Utiliser des commandes permanentes ventes ou des commandes permanentes achats
 
 Une commande permanente ventes représente le cadre d'une entente à long terme entre votre client et vous. De même, vous utilisez des commandes permanentes achat pour gérer les ententes à long terme entre vous et votre fournisseur.
 
@@ -23,7 +23,7 @@ Vous pouvez utiliser une commande permanente ventes, par exemple, lorsqu'un clie
 > [!NOTE]
 > Les commandes permanentes achats fonctionnent de la même manière que les commandes permanentes ventes. Cette documentation ne concerne que les commandes permanentes ventes.
 
-## <a name="to-create-a-blanket-sales-order"></a><a name="to-create-a-blanket-sales-order"></a>Pour créer une commande permanente ventes
+## <a name="to-create-a-blanket-sales-order"></a><a name="to-create-a-blanket-sales-order"></a><a name="to-create-a-blanket-sales-order"></a>Pour créer une commande permanente ventes
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente permanents**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -31,7 +31,7 @@ Vous pouvez utiliser une commande permanente ventes, par exemple, lorsqu'un clie
 4. Laissez vide le champ **Date commande**. Lors de la création de documents de vente séparés depuis la commande permanente, la date commande du document de vente est définie comme étant égale à la date du jour.
 5. Dans le raccourci **Lignes**, créez des lignes distinctes pour chaque expédition. Par exemple, si le client souhaite 1 000 unités réparties de façon uniforme sur quatre semaines, entrez quatre lignes distinctes de 250 unités chacune.  
 
-## <a name="to-create-a-sales-order-from-a-blanket-sales-order"></a><a name="to-create-a-sales-order-from-a-blanket-sales-order"></a>Pour créer un document de vente à partir d'une commande permanente ventes
+## <a name="to-create-a-sales-order-from-a-blanket-sales-order"></a><a name="to-create-a-sales-order-from-a-blanket-sales-order"></a><a name="to-create-a-sales-order-from-a-blanket-sales-order"></a>Pour créer un document de vente à partir d'une commande permanente ventes
 
 1. Pour créer une commande pour l'une des lignes de la commande permanente ventes, effacez la quantité du champ **Qté à livrer** de toutes les lignes que vous ne voulez pas livrer pour le moment.  
 2. Lorsque vous êtes prêt à créer les commandes, sélectionnez **Créer commande**, puis **Oui**. Un message s'affiche, vous informant que la commande ouverte a été associée à un numéro de commande. Remarquez que la commande ouverte n'a pas été supprimée.  
@@ -50,7 +50,7 @@ Ce qui suit affecte les documents de vente après leur création à partir de do
 - La commande ouverte vente facturée reste dans le système jusqu'à ce qu'elle soit supprimée, soit en supprimant les commandes ouvertes individuelles, soit en exécutant le traitement par lots **Suppr. cdes vente ouv. fact.**.  
 - Si un client est également enregistré comme contact dans le module Marketing et si vous avez spécifié un code modèle interaction pour les commandes permanentes ventes sur la page **Configuration Marketing**, lorsque vous sélectionnez **Imprimer** pour imprimer la commande permanente ventes, une interaction est enregistrée automatiquement dans la table Écriture journal interaction.
 
-## <a name="to-view-the-status-of-a-blanket-sales-order"></a><a name="to-view-the-status-of-a-blanket-sales-order"></a>Pour visualiser l'état d'une commande permanente ventes
+## <a name="to-view-the-status-of-a-blanket-sales-order"></a><a name="to-view-the-status-of-a-blanket-sales-order"></a><a name="to-view-the-status-of-a-blanket-sales-order"></a>Pour visualiser l'état d'une commande permanente ventes
 
 Vous pouvez afficher l'état d'une commande permanente vente sur la page **Statistiques Commande permanente ventes**. Ceci peut s'avérer utile lorsque vous commencez à facturer la commande créée à partir de la commande permanente ventes.  
 
@@ -63,7 +63,7 @@ Vous pouvez afficher l'état d'une commande permanente vente sur la page **Stati
 - Sur le raccourci **Paiement anticipé**, vous pouvez visualiser des informations récapitulatives concernant les éventuels montants déjà payés.  
 - Sur le raccourci **Fournisseur**, vous pouvez visualiser certaines informations de base concernant le fournisseur.
 
-## <a name="to-view-unposted-and-posted-blanket-sales-order-lines"></a><a name="to-view-unposted-and-posted-blanket-sales-order-lines"></a>Pour afficher des lignes commande permanente ventes reportées et non reportées
+## <a name="to-view-unposted-and-posted-blanket-sales-order-lines"></a><a name="to-view-unposted-and-posted-blanket-sales-order-lines"></a><a name="to-view-unposted-and-posted-blanket-sales-order-lines"></a>Pour afficher des lignes commande permanente ventes reportées et non reportées
 
 Le lien entre la commande permanente ventes et le document de vente d'origine, et n'importe quel autre document vente, est conservé après report en tant que liste des lignes facture reportées et non reportées de document de vente.  
 
@@ -89,9 +89,9 @@ Le lien entre la commande permanente ventes et le document de vente d'origine, e
 
 5. Sur la page **Lignes vente**, sélectionnez l'action **Afficher document** pour afficher l'écriture.
 
-## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/create-sales-documents-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/create-sales-documents-dynamics-365-business-central/) associée
 
-## <a name="see-also"></a><a name="see-also"></a>Voir aussi .
+## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi .
 
 [Ventes](sales-manage-sales.md)  
 [Création d'ordres d'assemblage permanents](assembly-how-to-create-blanket-assembly-orders.md)  

@@ -10,7 +10,7 @@ ms.search.keywords: null
 ms.date: 06/08/2021
 ms.author: edupont
 ---
-# <a name="design-details-production-order-posting"></a><a name="design-details-production-order-posting"></a>Détails de conception : validation d'ordre de fabrication
+# <a name="design-details-production-order-posting"></a><a name="design-details-production-order-posting"></a><a name="design-details-production-order-posting"></a>Détails de conception : validation d'ordre de fabrication
 Comme pour le report d'ordre d'assemblage, les composantes consommées et le temps du poste utilisé sont convertis et sortis en tant qu'article produit lorsque le bon de production est terminé. Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-assembly-order-posting.md). Toutefois, le flux des coûts des ordres d'assemblage est moins complexe, notamment parce que le report du coût d'assemblage ne se produit qu'une fois et ne génère donc pas d'inventaire travaux en cours.
 
 
@@ -46,7 +46,7 @@ Les valeurs des augmentations et des diminutions sont enregistrées dans les dif
 
 Bien que les valeurs des transactions qui sont liées aux marchandises achetées soient reportées uniquement en tant qu'écritures article comportant des écritures valeur associées, les transactions liées aux articles produits sont reportées en tant qu'écritures capacité comportant des écritures valeur associées, en plus des écritures article.  
 
-## <a name="posting-structure"></a><a name="posting-structure"></a>Structure de report
+## <a name="posting-structure"></a><a name="posting-structure"></a><a name="posting-structure"></a>Structure de report
 Le report des bons de production sur l'inventaire TEC implique la production, la consommation et la capacité.  
 
 Le schéma suivant montre les routines de report impliquées dans le codeunit 22.  
@@ -69,12 +69,12 @@ Une écriture valeur qui décrit la valeur de l'inventaire TEC peut être associ
 
 Pour plus d'informations sur la manière dont les coûts de fabrication et d'assemblage sont reportés dans le grand livre, reportez-vous à [Détails de conception : report inventaire](design-details-inventory-posting.md).  
 
-## <a name="capacity-posting"></a><a name="capacity-posting"></a>Report de capacité
+## <a name="capacity-posting"></a><a name="capacity-posting"></a><a name="capacity-posting"></a>Report de capacité
 Le report de la production à partir de la dernière ligne itinéraire bon de production a pour résultat la création d'une écriture capacité pour le produit fini, en plus de son augmentation d'inventaire.  
 
  L'écriture capacité est un enregistrement du temps passé à fabriquer l'article. L'écriture valeur liée décrit l'augmentation de la valeur inventaire TEC, qui est la valeur du coût de conversion. Pour plus d'informations, voir « À partir du grand livre de capacité » dans [Détails de conception : Comptes du grand livre](design-details-accounts-in-the-general-ledger.md).  
 
-## <a name="production-order-costing"></a><a name="production-order-costing"></a>Évaluation des coûts de l'ordre de fabrication
+## <a name="production-order-costing"></a><a name="production-order-costing"></a><a name="production-order-costing"></a>Évaluation des coûts de l'ordre de fabrication
  Pour contrôler l'inventaire et les coûts de production, une compagnie manufacturière doit mesurer le coût des bons de production, car le coût standard prédéterminé de chaque article produit est capitalisé dans le bilan. Pour plus d'informations sur la raison pour laquelle les articles produits utilisent le mode évaluation stock Standard, reportez-vous à [Détails de conception : modes évaluation stock](design-details-costing-methods.md).  
 
 > [!NOTE]  
@@ -98,7 +98,7 @@ Dans des environnements de coût standard, l'évaluation du stock d'un ordre de 
     >  Cela diffère du report d'ordre d'assemblage, qui reporte toujours les coûts réels. Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-assembly-order-posting.md).  
 2.  Lorsque le bon de production est défini sur **Terminé**, la commande est facturée en exécutant le traitement en lot **Ajuster coûts - Écr. article**. Par conséquent, le coût total de la commande est calculé en fonction du coût standard des matières et de la capacité consommées. Les écarts entre les coûts standard calculés et les coûts de production réels sont calculés et reportés.  
 
-## <a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
  [Détails de conception : stock évaluation stock](design-details-inventory-costing.md)   
  [Détails de conception : Report d'ordre d'assemblage](design-details-assembly-order-posting.md)  
  [Gestion des coûts ajustés](finance-manage-inventory-costs.md) [Finance](finance.md)  

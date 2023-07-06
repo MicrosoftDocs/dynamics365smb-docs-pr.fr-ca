@@ -10,7 +10,7 @@ ms.search.keywords: 'electronic document, e-invoice, incoming document, OCR, eco
 ms.date: 06/14/2022
 ms.author: edupont
 ---
-# <a name="create-incoming-document-records-directly-from-documents-and-entries"></a><a name="create-incoming-document-records-directly-from-documents-and-entries"></a>Créer des enregistrements document entrant directement à partir de documents et d'écritures
+# <a name="create-incoming-document-records-directly-from-documents-and-entries"></a><a name="create-incoming-document-records-directly-from-documents-and-entries"></a><a name="create-incoming-document-records-directly-from-documents-and-entries"></a>Créer des enregistrements document entrant directement à partir de documents et d'écritures
 
 Vous pouvez enregistrer des documents commerciaux externes dans [!INCLUDE[prod_short](includes/prod_short.md)] en liant des fichiers document aux enregistrements document entrant associées. Si le document, une facture achat par exemple, n’était pas dès le départ un enregistrement document entrant, vous pouvez toujours créer et le lier à un enregistrement document entrant ultérieurement. Vous pouvez également joindre des fichiers document entrant à des documents achat et vente reportés et à des écritures fournisseur, client et GL à l'aide du récapitulatif **Fichiers document entrant** dans, par exemple, les pages **Factures achat reportées** et **Écritures fournisseur**.
 
@@ -18,21 +18,21 @@ Depuis les pages **Plan comptable** et **Écritures**, vous pouvez utiliser la f
 
 Les procédures suivantes indiquent comment joindre un fichier à une écriture fournisseur ou à une facture achat existante qui n’a pas été créée à partir d’un enregistrement document entrant. La même tâche permet de joindre un fichier à des documents achat ou vente reportés.
 
-## <a name="create-and-connect-an-incoming-document-record-from-a-purchase-invoice"></a><a name="create-and-connect-an-incoming-document-record-from-a-purchase-invoice"></a>Créer et lier un enregistrement document entrant à partir d'une facture achat
+## <a name="create-and-connect-an-incoming-document-record-from-a-purchase-invoice"></a><a name="create-and-connect-an-incoming-document-record-from-a-purchase-invoice"></a><a name="create-and-connect-an-incoming-document-record-from-a-purchase-invoice"></a>Créer et lier un enregistrement document entrant à partir d'une facture achat
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures achat**, puis sélectionnez le lien associé.
 2. Sélectionnez la ligne de la facture achat à laquelle vous souhaitez joindre un fichier, puis sélectionnez l'action **Créer un document entrant à partir d'un fichier**.
 3. Vous pouvez également sélectionner la ligne de la facture achat à laquelle vous souhaitez joindre un fichier, puis sélectionner l'action **Joindre fichier**.
 4. Sur la page **Insérer un fichier**, sélectionnez le fichier qui représente le document entrant concerné, puis choisissez le bouton **Ouvrir**.
 
-## <a name="create-and-connect-an-incoming-document-record-from-a-vendor-ledger-entry"></a><a name="create-and-connect-an-incoming-document-record-from-a-vendor-ledger-entry"></a>Créer et lier un enregistrement document entrant à partir d'une écriture fournisseur
+## <a name="create-and-connect-an-incoming-document-record-from-a-vendor-ledger-entry"></a><a name="create-and-connect-an-incoming-document-record-from-a-vendor-ledger-entry"></a><a name="create-and-connect-an-incoming-document-record-from-a-vendor-ledger-entry"></a>Créer et lier un enregistrement document entrant à partir d'une écriture fournisseur
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures fournisseur**, puis sélectionnez le lien associé.
 2. Sélectionnez une ligne d'une écriture comptable fournisseur à laquelle vous souhaitez joindre un fichier, puis sélectionnez l'action **Créer un document entrant à partir d'un fichier**.
 3. Vous pouvez également sélectionner une ligne d'une une écriture comptable fournisseur à laquelle vous souhaitez joindre un fichier, puis sélectionner l'action **Joindre fichier**.
 4. Sur la page **Insérer un fichier**, sélectionnez le fichier qui représente le document entrant concerné, puis choisissez le bouton **Ouvrir**.
 
-## <a name="remove-a-connection-from-an-incoming-document-record-to-a-posted-document"></a><a name="remove-a-connection-from-an-incoming-document-record-to-a-posted-document"></a>Pour supprimer la connexion d'un enregistrement document entrant à un document reporté
+## <a name="remove-a-connection-from-an-incoming-document-record-to-a-posted-document"></a><a name="remove-a-connection-from-an-incoming-document-record-to-a-posted-document"></a><a name="remove-a-connection-from-an-incoming-document-record-to-a-posted-document"></a>Pour supprimer la connexion d'un enregistrement document entrant à un document reporté
 
 Vous pouvez supprimer des fichiers joints de documents non reportés à tout moment en supprimant l'enregistrement document entrant associé. Si le document est reporté, vous devez d'abord supprimer la connexion de l'enregistrement document entrant.
 
@@ -41,9 +41,9 @@ Vous pouvez supprimer des fichiers joints de documents non reportés à tout mom
 
 La connexion au document reporté est supprimée. Vous pouvez maintenant connecter un autre enregistrement document entrant au document reporté, comme décrit dans cet article.
 
-## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/incoming-documents-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/incoming-documents-dynamics-365-business-central/) associée
 
-## <a name="see-also"></a><a name="see-also"></a>Voir aussi .
+## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi .
 
 [Créer des enregistrements document entrant](across-how-create-income-document-records.md)
 [Utiliser un service OCR pour convertir des fichiers PDF et image en documents électroniques](across-how-use-ocr-pdf-images-files.md)
