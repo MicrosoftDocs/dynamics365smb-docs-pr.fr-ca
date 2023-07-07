@@ -8,7 +8,7 @@ ms.date: 08/31/2022
 ms.author: edupont
 ---
 
-# <a name="company-information-overview"></a><a name="company-information-overview"></a><a name="company-information-overview"></a>Présentation des informations sur la compagnie
+# <a name="company-information-overview"></a>Présentation des informations sur la compagnie
 
 [!INCLUDE[prod_short](includes/prod_short.md)] organise les entités commerciales en *compagnies*. Pour chaque compagnie, vous devez remplir certains des détails de base et des informations pertinentes sur la page **Informations compagnie**. Les informations de la page [**Informations compagnie**](https://businesscentral.dynamics.com/?page=1) sont utilisées dans des documents, tels que les en-têtes facture. Vous pouvez paramétrer plusieurs compagnies, par exemple une compagnie mère et une filiale.  
 
@@ -22,13 +22,13 @@ En fonction de votre pays, la page **Informations compagnie** contient différen
 
 Une fois que vous avez terminé de remplir les informations, vous pouvez fermer la page.  
 
-## <a name="working-with-multiple-companies"></a><a name="working-with-multiple-companies"></a><a name="working-with-multiple-companies"></a>Travailler avec plusieurs compagnies
+## <a name="working-with-multiple-companies"></a>Travailler avec plusieurs compagnies
 
 Si votre [!INCLUDE [prod_short](includes/prod_short.md)] inclut plusieurs compagnies, vos utilisateurs souhaiteront peut-être utiliser des *badges de compagnie* pour identifier rapidement et suivre avec quelle compagnie ils travaillent actuellement. Pour en savoir plus, voir [Afficher un badge de compagnie](#badge).
 
 Il existe quelques fonctionnalités que vous pouvez utiliser pour changer de compagnie, comme le sélecteur de compagnie (<kbd>Ctrl</kbd>+<kbd>O</kbd>). Pour en savoir plus, voir [Passer à une autre compagnie ou un autre environnement](ui-organization-switch.md).
 
-## <a name="display-a-company-badge"></a><a name="display-a-company-badge"></a><a name="display-a-company-badge"></a><a name="badge"></a>Afficher un badge de compagnie
+## <a name="display-a-company-badge"></a><a name="badge"></a>Afficher un badge de compagnie
 
 Lorsqu’il y a plusieurs compagnies ou environnements, vous verrez le sélecteur de compagnie sur le côté supérieur droit de la barre d’application, près de l’icône de recherche dans la barre d’application. Par défaut, le sélecteur de compagnie utilise une icône de compagnie standard, comme le ![Lanceur Icône de la compagnie.](media/ui-experience/company-icon.png "Affiche l’icône de changement de compagnie utilisée lorsqu’il n’y a qu’un seul environnement") et ![company-icon-mult-env](media/ui-experience/company-icon-multi-env.png "Affiche l’icône de changement de compagnie utilisée lorsqu’il y a plusieurs environnements").
 
@@ -42,7 +42,7 @@ En utilisant la page **Informations sur la compagnie**, vous pouvez remplacer l�
 > [!NOTE]
 > Le sélecteur de compagnie a été introduit dans la 2e vague de lancement 2022, version 21. Dans les versions antérieures, le badge de compagnie n’était pas utilisé pour changer de compagnie. Il s’affiche dans le coin supérieur droit de la plupart des pages, même lorsqu’il n’y a qu’une seule compagnie. Le sélectionner affichera le nom complet de la compagnie et le nom de l’environnement.
 
-## <a name="change-company-display-name"></a><a name="change-company-display-name"></a><a name="change-company-display-name"></a>Modifier le nom d’affichage de la compagnie
+## <a name="change-company-display-name"></a>Modifier le nom d’affichage de la compagnie
 
 Le nom de la compagnie est toujours affiché dans le coin supérieur gauche et fonctionne comme une action que vous pouvez choisir pour revenir dans le Tableau de bord. Vous pouvez changer ce nom sur la page **Informations compagnie**.
 
@@ -50,13 +50,13 @@ Le nom de la compagnie est toujours affiché dans le coin supérieur gauche et f
 2. Dans le champ **Nom**, saisissez le nom de la nouvelle compagnie.
 3. Quittez la page. Le système redémarre et affiche la nouvelle compagnie dans le coin supérieur gauche.
 
-## <a name="experience"></a><a name="experience"></a><a name="experience"></a>Expérience
+## <a name="experience"></a>Expérience
 
 L’expérience utilisateur par défaut dans une version d’évaluation de [!INCLUDE [prod_short](includes/prod_short.md)] ne révèle pas toutes les fonctionnalités. Vous pouvez passer à l’expérience complète sur la page **Informations compagnie**. Pour plus d'informations, voir [Modifier les fonctionnalités affichées](ui-experiences.md).  
 
-## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/create-new-companies-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/create-new-companies-dynamics-365-business-central/) associée
 
-## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Aperçu des tâches permettant de paramétrer [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md)  
 [Démarrage rapide de Informations compagnie](quick-start-company-information.md)  

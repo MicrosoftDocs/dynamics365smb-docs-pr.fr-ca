@@ -10,11 +10,11 @@ ms.search.form: 7374
 ms.date: 04/01/2021
 ms.author: edupont
 ---
-# <a name="create-bin-contents"></a><a name="create-bin-contents"></a><a name="create-bin-contents"></a>Créer le contenus de la zone
+# <a name="create-bin-contents"></a>Créer le contenus de la zone
 
 Une fois la configuration des emplacements terminée, vous pouvez configurer leur contenu. En d'autres termes, vous pouvez configurer les articles à stocker dans une zone donnée et définir les règles qui régissent le remplissage de la zone avec un article spécifique. Vous pouvez effectuer cette opération manuellement sur la page **Contenu de la zone** ou automatiquement sur la page **Créer feuille contenu de la zone**.
 
-## <a name="to-create-bin-content-manually"></a><a name="to-create-bin-content-manually"></a><a name="to-create-bin-content-manually"></a>Pour créer le contenu de la zone manuellement
+## <a name="to-create-bin-content-manually"></a>Pour créer le contenu de la zone manuellement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
 2. Sélectionnez l'emplacement à partir duquel vous souhaitez créer des contenus de la zone, puis choisissez l'action **Zones**.  
@@ -31,7 +31,7 @@ Si vous sélectionnez le champ **Fixe**, vous associez l'article à l'emplacemen
 > [!NOTE]  
 > Vous pouvez configurer simultanément plusieurs contenus de la zone sur la page **Feuille création contenu de la zone**.  
 
-## <a name="to-create-bin-content-with-a-worksheet"></a><a name="to-create-bin-content-with-a-worksheet"></a><a name="to-create-bin-content-with-a-worksheet"></a>Pour créer le contenu de la zone avec une feuille
+## <a name="to-create-bin-content-with-a-worksheet"></a>Pour créer le contenu de la zone avec une feuille
 
 Lorsque vous avez créé vos zones, vous pouvez créer le contenu de chaque zone dans la feuille de création de contenu de la zone.
 
@@ -49,9 +49,9 @@ Lorsque vous avez créé vos zones, vous pouvez créer le contenu de chaque zone
 
 Dans cette feuille, vous pouvez utiliser des lignes contenu de la zone pour plusieurs zones, afin d'obtenir un aperçu convenable des articles que vous placez dans différents zones d'une zone, d'une allée, ou d'un casier donné.  
 
-## <a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a><a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/set-up-zones-bins/) associée
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/set-up-zones-bins/) associée
 
-## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

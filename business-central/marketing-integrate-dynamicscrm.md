@@ -12,7 +12,7 @@ ms.search.forms: '9980, 5341, 5349, 5330, 1817, 5342, 5337, 5336, 5331, 5343, 53
 ms.date: 09/16/2022
 ms.author: bholtorf
 ---
-# <a name="use-dynamics-365-sales-from-business-central"></a><a name="use-dynamics-365-sales-from-business-central"></a><a name="use-dynamics-365-sales-from-business-central"></a>Utiliser Dynamics 365 Sales depuis Business Central
+# <a name="use-dynamics-365-sales-from-business-central"></a>Utiliser Dynamics 365 Sales depuis Business Central
 Si vous utilisez Dynamics 365 Sales for Customer Engagement, bénéficiez de l'intégration parfaite dans le processus allant du prospect à l'encaissement à l'aide de [!INCLUDE[prod_short](includes/prod_short.md)] pour les activités principales, telles que le traitement des commandes, la gestion de l'inventaire et de vos finances.
 
 Avant de pouvoir utiliser les fonctionnalités d’intégration, votre administrateur système doit configurer la connexion et définir les utilisateurs de [!INCLUDE[crm_md](includes/crm_md.md)]. Pour plus d'informations, reportez-vous à la rubrique [Intégration à Dynamics 365 Sales](admin-prepare-dynamics-365-for-sales-for-integration.md).
@@ -29,7 +29,7 @@ Inversement, les préparateurs de commandes dans [!INCLUDE[prod_short](includes/
 > [!IMPORTANT]  
 > [!INCLUDE[prod_short](includes/prod_short.md)] s'intègre uniquement à [!INCLUDE[crm_md](includes/crm_md.md)]. Les autres applications Dynamics 365 qui modifient le flux de travail ou le modèle de données standard dans [!INCLUDE[crm_md](includes/crm_md.md)], par exemple Project Service Automation, peuvent désactiver l'intégration entre [!INCLUDE[prod_short](includes/prod_short.md)] et [!INCLUDE[crm_md](includes/crm_md.md)].
 
-## <a name="coupling-records"></a><a name="coupling-records"></a><a name="coupling-records"></a>Enregistrements couplage
+## <a name="coupling-records"></a>Enregistrements couplage
 Le guide de configuration assistée vous permet de choisir les données à synchroniser. Ultérieurement, vous pouvez également configurer la synchronisation pour les enregistrements spécifiques. C'est ce qu'on appelle le *couplage*. Par exemple, vous pouvez coupler un compte spécifique dans [!INCLUDE[crm_md](includes/crm_md.md)] avec un client spécifique dans [!INCLUDE[prod_short](includes/prod_short.md)]. Cette rubrique décrit ce qu'il convient de prendre en compte lorsque vous couplez des enregistrements.
 
 Par exemple, si vous souhaitez afficher les comptes [!INCLUDE[crm_md](includes/crm_md.md)] en tant que clients dans [!INCLUDE[prod_short](includes/prod_short.md)], vous devez coupler les deux types d'enregistrements. Pour ce faire, sur la page de la liste **Clients** dans [!INCLUDE[prod_short](includes/prod_short.md)], utilisez l'action **Configurer le couplage**. Puis vous devez spécifier quels clients [!INCLUDE[prod_short](includes/prod_short.md)] correspondent à quels comptes dans [!INCLUDE[crm_md](includes/crm_md.md)].
@@ -51,14 +51,14 @@ Dans certains cas, vous devez coupler certains ensembles de données avant d'aut
 
 Dans [!INCLUDE[crm_md](includes/crm_md.md)], les documents de vente dépendent d'informations comme les clients, les unités de mesure, les devis, les groupes tarifs client, les articles et/ou les ressources. Pour assurer une intégration avec les documents de vente, vous devez coupler des clients, des unités de mesure, des devises, des groupes tarifs client, des articles et/ou des ressources.
 
-## <a name="fully-synchronizing-records"></a><a name="fully-synchronizing-records"></a><a name="fully-synchronizing-records"></a>Synchronisation complète des enregistrements
+## <a name="fully-synchronizing-records"></a>Synchronisation complète des enregistrements
 À la fin du guide de configuration assistée, vous pouvez sélectionner l'action **Exécuter une synchronisation complète** pour démarrer la synchronisation de tous les enregistrements [!INCLUDE[prod_short](includes/prod_short.md)] avec tous les enregistrements associés dans [!INCLUDE[crm_md](includes/crm_md.md)]. Sur la page **Révision synchronisation complète Dynamics 365 Sales**, sélectionnez l'action **Démarrer**. La synchronisation complète peut prendre un certain temps, mais vous pouvez continuer à travailler dans [!INCLUDE[prod_short](includes/prod_short.md)] pendant son exécution en arrière-plan.
 
 Pour vérifier la progression de divers projets dans le cadre d'une synchronisation complète, sur la page **Révision synchronisation complète Dynamics 365 Sales**, choisissez un enregistrement pour afficher les détails. Pour mettre à jour l'état pendant la synchronisation, actualisez la page.
 
 Sur la page **Configuration de la connexion Microsoft Dynamics 365**, vous pouvez obtenir des détails sur la synchronisation complète à tout moment. À partir de cette page, vous pouvez aussi ouvrir la page **Correspondances table intégration** pour afficher les détails des tables dans [!INCLUDE[prod_short](includes/prod_short.md)] et dans Sales à synchroniser.
 
-## <a name="handling-sales-order-data"></a><a name="handling-sales-order-data"></a><a name="handling-sales-order-data"></a>Gestion des données de documents de vente
+## <a name="handling-sales-order-data"></a>Gestion des données de documents de vente
 Les documents de vente que les utilisateurs envoient dans [!INCLUDE[crm_md](includes/crm_md.md)] seront transférés automatiquement vers [!INCLUDE[prod_short](includes/prod_short.md)] si vous sélectionnez la case à cocher **Créer automatiquement des documents de vente** sur la page **Configuration de la connexion à Microsoft Dynamics 365**.
 Sinon, vous pouvez convertir manuellement les documents de vente envoyés depuis [!INCLUDE[crm_md](includes/crm_md.md)] à l'aide de l'action **Créer dans [!INCLUDE[prod_short](includes/prod_short.md)]** disponible sur la page **Documents de vente - Dynamics 365 for Sales**.
 Pour ces documents de vente, le champ **Nom** de la commande d'origine est transféré et associé au champ **Numéro de document externe** du document de vente dans [!INCLUDE[prod_short](includes/prod_short.md)].
@@ -77,7 +77,7 @@ Les mises à jour vers les champs d’en-tête document de vente, tels que Date 
 
 > [!VIDEO https://go.microsoft.com/fwlink/?linkid=2098170]
 
-## <a name="handling-sales-quotes-data"></a><a name="handling-sales-quotes-data"></a><a name="handling-sales-quotes-data"></a>Gestion des données de devis
+## <a name="handling-sales-quotes-data"></a>Gestion des données de devis
 Les devis vente activés dans [!INCLUDE[crm_md](includes/crm_md.md)] seront transférés vers [!INCLUDE[prod_short](includes/prod_short.md)] si vous sélectionnez la case à cocher **Traiter automatiquement les devis** sur la page **Configuration de la connexion Microsoft Dynamics 365**.
 Sinon, vous pouvez convertir manuellement les devis envoyés depuis [!INCLUDE[crm_md](includes/crm_md.md)] à l'aide de l'action **Traiter dans [!INCLUDE[prod_short](includes/prod_short.md)]** disponible sur la page **Devis - Dynamics 365 Sales**.
 Pour ces devis, le champ **Nom** du devis d'origine est transféré et associé au champ **Numéro de document externe** du document de vente dans [!INCLUDE[prod_short](includes/prod_short.md)]. En outre, le champ **Applicable jusqu'à** du devis est transféré et mappé vers le champ **Devis valide jusqu'à** du devis dans [!INCLUDE[prod_short](includes/prod_short.md)].  
@@ -86,12 +86,12 @@ Les devis subissent de nombreuses révisions avant d'être finalisés. Le traite
 
 Quand vous choisissez **Traitement** dans [!INCLUDE[prod_short](includes/prod_short.md)] pour un devis dans un état **Conclu**, un document de vente est créé dans [!INCLUDE[prod_short](includes/prod_short.md)] uniquement si un document de vente correspondant est soumis dans [!INCLUDE[crm_md](includes/crm_md.md)]. Sinon, le devis n’est publié que dans [!INCLUDE[prod_short](includes/prod_short.md)]. Si un document de vente correspondant est envoyé dans [!INCLUDE[crm_md](includes/crm_md.md)] plus tard, et qu’un document de vente en est créé, le **N° devis** est mis à jour sur le document de vente et le devis est archivé.
 
-## <a name="handling-posted-sales-invoices-customer-payments-and-statistics"></a><a name="handling-posted-sales-invoices-customer-payments-and-statistics"></a><a name="handling-posted-sales-invoices-customer-payments-and-statistics"></a>Gestion des factures vente reportées, des paiements client et des statistiques
+## <a name="handling-posted-sales-invoices-customer-payments-and-statistics"></a>Gestion des factures vente reportées, des paiements client et des statistiques
 Après l'exécution d'un document de vente, les factures associées seront créées. Lorsque vous facturez un document de vente, vous pouvez transférer la facture vente reportée dans [!INCLUDE[crm_md](includes/crm_md.md)] si vous cochez la case **Créer une facture dans [!INCLUDE[crm_md](includes/crm_md.md)]** sur la page **Facture vente reportée**. Les factures reportées sont transférées dans [!INCLUDE[crm_md](includes/crm_md.md)] avec l'état **Facturé**.
 
 Une fois que le paiement client est reçu pour la facture vente dans [!INCLUDE[prod_short](includes/prod_short.md)], l'état de la facture vente sera modifié en **Payé** avec la **raison de l'état** définie sur **Partielle** si elle est partiellement payée, ou **Totale** si elle est totalement payée, lorsque vous exécutez **Mettre à jour les statistiques compte** sur la page du client dans [!INCLUDE[prod_short](includes/prod_short.md)]. La fonction **Mettre à jour les statistiques compte** actualisera également des valeurs telles que le **solde** et les **ventes totales** dans le **récapitulatif Statistiques compte [!INCLUDE[prod_short](includes/prod_short.md)]** dans [!INCLUDE[crm_md](includes/crm_md.md)]. Sinon, les projets programmés (statistiques client et POSTEDSALESINV-INV) peuvent exécuter automatiquement ces deux processus en arrière-plan. 
 
-## <a name="handling-sales-prices"></a><a name="handling-sales-prices"></a><a name="handling-sales-prices"></a>Gestion des prix de vente
+## <a name="handling-sales-prices"></a>Gestion des prix de vente
 > [!NOTE]
 > Dans la deuxième vague de lancement de 2020, nous avons libéré des processus rationalisés pour la configuration et la gestion des prix et des escomptes. Si vous êtes un nouveau client utilisant cette version, vous utilisez la nouvelle expérience. Si vous êtes un client existant, l’utilisation ou non de la nouvelle expérience dépend du fait que votre administrateur a activé ou non la fonctionnalité **Nouvelle tarification des ventes** dans **Gestion des fonctionnalités**. Pour plus d’informations, consultez [Activer les fonctionnalités à venir à l’avance](/dynamics365/business-central/dev-itpro/administration/feature-management).
 
@@ -130,7 +130,7 @@ Pour synchroniser les listes de prix, sur la page **Liste prix vente**, choisiss
 ---
 
 
-## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
 [Intégration à Dynamics 365 Sales](admin-prepare-dynamics-365-for-sales-for-integration.md)  
 [Gestion des relations](marketing-relationship-management.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

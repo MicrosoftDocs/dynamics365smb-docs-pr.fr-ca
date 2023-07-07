@@ -8,13 +8,13 @@ author: AndreiPanko
 ms.author: andreipa
 ---
 
-# <a name="set-up-taxes-for-the-shopify-connection"></a><a name="set-up-taxes-for-the-shopify-connection"></a><a name="set-up-taxes-for-the-shopify-connection"></a>Configurer les taxes pour la connexion Shopify
+# <a name="set-up-taxes-for-the-shopify-connection"></a>Configurer les taxes pour la connexion Shopify
 
 Dans cet article, nous allons étudier de quelle manière divers paramètres de Shopify ont un impact sur les taxes et les prix en magasin qui sont affichés au client. Nous verrons également comment configurer [!INCLUDE[prod_short](../includes/prod_short.md)] pour prendre en charge les paramètres dans Shopify. Cet article n’est pas conçu comme un guide complet sur les taxes. Pour en savoir plus, contactez votre administration fiscale locale ou un expert en fiscalité.  
 
 L’article suppose que vous êtes assujettis à des taxes lorsque vous vendez des biens au niveau local ou international.
 
-## <a name="if-you-sell-domestically"></a><a name="if-you-sell-domestically"></a><a name="if-you-sell-domestically"></a>Si vous vendez sur le marché intérieur
+## <a name="if-you-sell-domestically"></a>Si vous vendez sur le marché intérieur
 
 Une fois que vous avez configuré votre Shopify pour recouvrer les taxes dans votre pays ou région, vous pouvez décider de la manière dont vous souhaitez afficher les prix en magasin.
 Vous contrôlez cela en activant ou en désactivant le bouton bascule **Tous les prix sont taxes comprises** dans les paramètres [**Taxes et droits de douanes**](https://www.shopify.com/admin/settings/taxes) de votre administrateur **Shopify**.
@@ -34,13 +34,13 @@ Définissez maintenant les prix article dans le champ **Fiche article** ou dans 
 > [!NOTE]
 > Si vous avez configuré le connecteur Shopify pour créer automatiquement des clients, vous aurez peut-être besoin de plus de champs dans votre modèle, par exemple **Groupe de report client**. Si vous utilisez le client par défaut pour les commandes importées, assurez-vous les mêmes champs sont renseignés pour le client. Vous devez encore renseigner le champ **Code modèle client** comme indiqué ci-dessus, car le champ **Prix TTC**/**Prix TTC** dans le document vente créé ne dépend pas du client, mais du **Modèle client** de la page Fiche magasin Shopify ou du modèle client par pays.
 
-## <a name="if-you-sell-internationally"></a><a name="if-you-sell-internationally"></a><a name="if-you-sell-internationally"></a>Si vous vendez à l'international
+## <a name="if-you-sell-internationally"></a>Si vous vendez à l'international
 
 Dans cette section, nous allons explorer les paramètres des scénarios dans lesquels vous devez recouvrer des taxes lors de la vente dans un autre pays, par exemple d’autres pays de l’UE.
 
 Actuellement, l’extension **connecteur Shopify** prend en charge l’exportation d’un seul prix. Shopify applique automatiquement les taxes locales, les devises et les arrondissements. Le bouton bascule **Tous les prix sont taxes comprises** entraîne les actions décrites dans les sous-sections suivantes.
 
-### <a name="all-prices-include-tax-is-selected"></a><a name="all-prices-include-tax-is-selected"></a><a name="all-prices-include-tax-is-selected"></a>*Tous les prix sont taxes comprises* est sélectionné
+### <a name="all-prices-include-tax-is-selected"></a>*Tous les prix sont taxes comprises* est sélectionné
 
 |-|Ventes nationales|Pays étranger où vous recouvrez des taxes|Pays étranger où vous ne recouvrez pas de taxes|
 |------------------------|--------|--------|--------|
@@ -50,7 +50,7 @@ Actuellement, l’extension **connecteur Shopify** prend en charge l’exportati
 
 Le prix pour le client reste inchangé, quel que soit sa localisation, mais cela affecte votre marge, car les taux de taxe sont différents selon les pays.
 
-### <a name="all-prices-include-tax-is-not-selected"></a><a name="all-prices-include-tax-is-not-selected"></a><a name="all-prices-include-tax-is-not-selected"></a>*Tous les prix sont taxes comprises* n'est pas sélectionné
+### <a name="all-prices-include-tax-is-not-selected"></a>*Tous les prix sont taxes comprises* n'est pas sélectionné
 
 |-|Ventes nationales|Pays étranger où vous recouvrez des taxes|Pays étranger où vous ne recouvrez pas de taxes|
 |------------------------|--------|--------|--------|
@@ -60,7 +60,7 @@ Le prix pour le client reste inchangé, quel que soit sa localisation, mais cela
 
 Shopify ajoute les taxes locales en plus du prix défini sur la fiche produit en fonction de l’endroit où les marchandises sont livrées.
 
-## <a name="dynamic-tax-inclusive-pricing"></a><a name="dynamic-tax-inclusive-pricing"></a><a name="dynamic-tax-inclusive-pricing"></a>Tarification TTC dynamique
+## <a name="dynamic-tax-inclusive-pricing"></a>Tarification TTC dynamique
 
 Étant donné que différents pays ont des exigences différentes, selon que vous incluez ou non la taxe dans le prix affiché, vous pouvez activer [Tarification TTC dynamique](https://help.shopify.com/en/manual/markets/pricing/dynamic-tax-inclusive-pricing) dans Shopify. La fonction d’inclusion de la taxe est ainsi automatisée.
 
@@ -69,7 +69,7 @@ Sélectionner **Inclure ou exclure les taxes en fonction du pays de votre client
 > [!NOTE]
 > Ce paramètre n’affecte pas la représentation des prix sur les marchés nationaux, qui est contrôlée par le bouton bascule **Tous les prix sont taxes comprises**.
 
-### <a name="all-prices-include-tax-is-selected-1"></a><a name="all-prices-include-tax-is-selected-1"></a><a name="all-prices-include-tax-is-selected-1"></a>*Tous les prix sont taxes comprises* est sélectionné
+### <a name="all-prices-include-tax-is-selected-1"></a>*Tous les prix sont taxes comprises* est sélectionné
 
 |-|Ventes nationales|Pays étranger où la taxe est incluse dans le prix|Pays étranger où la taxe n'est pas incluse|
 |------------------------|--------|--------|--------|
@@ -79,7 +79,7 @@ Sélectionner **Inclure ou exclure les taxes en fonction du pays de votre client
 
 Le prix pour chaque client varie en fonction de la localisation du client.
 
-### <a name="all-prices-include-tax-is-not-selected-1"></a><a name="all-prices-include-tax-is-not-selected-1"></a><a name="all-prices-include-tax-is-not-selected-1"></a>*Tous les prix sont taxes comprises* n'est pas sélectionné
+### <a name="all-prices-include-tax-is-not-selected-1"></a>*Tous les prix sont taxes comprises* n'est pas sélectionné
 
 |-|Ventes nationales|Pays étranger où la taxe est incluse dans le prix|Pays étranger, où la taxe n'est pas incluse|
 |------------------------|--------|--------|--------|
@@ -90,7 +90,7 @@ Le prix pour chaque client varie en fonction de la localisation du client.
 > [!NOTE]
 > Le bouton bascule **Tous les prix sont taxes comprises** ne modifie pas la façon dont les prix sont affichés pour les clients internationaux.
 
-## <a name="if-you-sell-to-eu-customers"></a><a name="if-you-sell-to-eu-customers"></a><a name="if-you-sell-to-eu-customers"></a>Si vous vendez à des clients de l’UE
+## <a name="if-you-sell-to-eu-customers"></a>Si vous vendez à des clients de l’UE
 
 Différents pays de l’UE ont des taux de taxes locales différents. Toutefois, si vous êtes situé dans l’UE et que vous vendez dans d’autres pays de l’UE, vous pouvez, dans certains cas, utiliser votre taux de taxe local.  
 
@@ -102,7 +102,7 @@ Cochez la case **Recouvrer la TVA** dans la section **Union européenne** des pa
 |Guichet unique ou identification spécifique au pays|Utiliser le taux de TVA du pays de votre client|
 
 
-### <a name="collect-vat-set-to-one-stop-shop-registration"></a><a name="collect-vat-set-to-one-stop-shop-registration"></a><a name="collect-vat-set-to-one-stop-shop-registration"></a>Recouvrer la TVA définie sur l'identification à guichet unique
+### <a name="collect-vat-set-to-one-stop-shop-registration"></a>Recouvrer la TVA définie sur l'identification à guichet unique
 
 Dans l’exemple suivant, le bouton bascule **Tous les prix sont taxes comprises** est activé. Le prix sur la fiche produit est fixé à *1 200*.
         
@@ -112,7 +112,7 @@ Dans l’exemple suivant, le bouton bascule **Tous les prix sont taxes comprises
 |Pourcentage de taux de taxe|2.0|25|
 |Prix à la caisse|1200|1250|       
         
-### <a name="collect-vat-set-to-micro-business-exemption"></a><a name="collect-vat-set-to-micro-business-exemption"></a><a name="collect-vat-set-to-micro-business-exemption"></a>Recouvrer la TVA fixée définie sur l’exonération des micro-entreprises
+### <a name="collect-vat-set-to-micro-business-exemption"></a>Recouvrer la TVA fixée définie sur l’exonération des micro-entreprises
 
 Dans l’exemple suivant, le bouton bascule **Tous les prix sont taxes comprises** est activé. Le prix sur la fiche produit est fixé à *1 200*.
         
@@ -124,7 +124,7 @@ Dans l’exemple suivant, le bouton bascule **Tous les prix sont taxes comprises
     
 Shopify ignore le taux de taxe dans le pays étranger lors du calcul des prix finaux et utilise le taux de taxe national.
 
-## <a name="importing-shopify-orders-sold-to-international-customers"></a><a name="importing-shopify-orders-sold-to-international-customers"></a><a name="importing-shopify-orders-sold-to-international-customers"></a>Importation des commandes Shopify vendues à des clients internationaux
+## <a name="importing-shopify-orders-sold-to-international-customers"></a>Importation des commandes Shopify vendues à des clients internationaux
 
 Si vous recouvrez des taxes dans plusieurs pays, vous devrez probablement définir un paramètre spécifique au pays dans [!INCLUDE[prod_short](../includes/prod_short.md)]. Cela est nécessaire car lorsqu’un document de vente est créé dans [!INCLUDE[prod_short](../includes/prod_short.md)], le système calcule les taxes au lieu de réutiliser celles importées de Shopify.
 
@@ -141,7 +141,7 @@ Les paramètres spécifiques au pays/région sont choisis dans la fenêtre **Mod
 [!Note]
 > Le paramètre du champ **Prix TTC** provient du modèle, pas du client spécifique. C’est pourquoi il est important que le modèle client soit défini.
 
-## <a name="other-tax-remarks"></a><a name="other-tax-remarks"></a><a name="other-tax-remarks"></a>Autres remarques sur les taxes
+## <a name="other-tax-remarks"></a>Autres remarques sur les taxes
 
 Même si la commande Shopify importée contient des informations sur les taxes, les taxes sont recalculées lorsque vous créez le document vente. Ce nouveau calcul indique qu'il est important que les paramètres TVA/Taxe soient corrects dans [!INCLUDE[prod_short](../includes/prod_short.md)].
 
@@ -149,6 +149,6 @@ Même si la commande Shopify importée contient des informations sur les taxes, 
 
 - Taux de taxe dépendant de l’adresse. Utilisez le champ **Priorité région fiscale** avec le tableau **Modèles client** pour remplacer la logique standard qui renseigne le **Code région fiscale** dans le document vente. Le champ **Priorité région fiscale** spécifie la priorité qui indique à la fonction où prendre des informations sur le pays ou la région, et sur l’état ou la province. L’enregistrement correspondant dans les modèles client Shopify est ensuite identifié, et les champs **Code région fiscale**, **Imposable** et **Groupe de report marché TVA** sont utilisés lors de la création d’un document vente.  
 
-## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Mise en route du connecteur pour Shopify](get-started.md)  

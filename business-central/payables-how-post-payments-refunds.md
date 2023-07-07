@@ -11,7 +11,7 @@ ms.search.form: '256, 233, 624, 1228'
 ms.date: 07/09/2021
 ms.author: edupont
 ---
-# <a name="record-payments-and-refunds-in-the-payment-journal"></a><a name="record-payments-and-refunds-in-the-payment-journal"></a><a name="record-payments-and-refunds-in-the-payment-journal"></a>Enregistrer les paiements et remboursements dans le journal paiement
+# <a name="record-payments-and-refunds-in-the-payment-journal"></a>Enregistrer les paiements et remboursements dans le journal paiement
 
 Sur la page **Journal paiement**, vous enregistrez les paiements effectués aux fournisseurs et les remboursements effectués aux clients. Lorsque vous reportez une ligne journal des paiements, le montant payé est enregistré sur le compte bancaire système spécifié. Vous devez ensuite effectuer des actions pour procéder au transfert d'argent réel à partir du compte bancaire associé.  
 
@@ -29,7 +29,7 @@ Le journal paiement est un journal général qui est optimisé pour effectuer de
 
     Outre l'enregistrement du paiement, vous pouvez également utiliser la page **Journal paiement** pour générer le paiement à des fins de traitement par votre banque. Pour plus d'informations, voir [Effectuer des paiements par chèque](payables-how-work-checks.md) et [Effectuer des paiements électroniques](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md#exporting-payments-to-a-bank-file).  
 
-## <a name="to-make-payments-in-the-payment-journal"></a><a name="to-make-payments-in-the-payment-journal"></a><a name="to-make-payments-in-the-payment-journal"></a>Pour effectuer des paiements dans le journal paiement
+## <a name="to-make-payments-in-the-payment-journal"></a>Pour effectuer des paiements dans le journal paiement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux paiement**, puis choisissez le lien associé.
 2. Ouvrez le lot journal dédié aux paiements.
@@ -43,7 +43,7 @@ Le journal paiement est un journal général qui est optimisé pour effectuer de
 6. Lorsque toutes les lignes journal des paiements sont renseignées, cliquez sur **Reporter**.
 
 
-## <a name="to-issue-a-refund-check"></a><a name="to-issue-a-refund-check"></a><a name="to-issue-a-refund-check"></a>Pour émettre un chèque de remboursement
+## <a name="to-issue-a-refund-check"></a>Pour émettre un chèque de remboursement
 
 1. Choisissez l'icône ![Ampoule qui ouvre la fonction Tell Me](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Journaux paiement**, puis sélectionnez le lien associé.
 2. Dans le champ **Type document**, sélectionnez **Remboursement**.  
@@ -57,7 +57,7 @@ Le journal paiement est un journal général qui est optimisé pour effectuer de
 10. Lorsque toutes les lignes du journal des paiements sont remplies, choisissez l’action **Reporter/Imprimer**, puis choisissez l’action **Reporter et imprimer** et sélectionnez **Oui**.  
   
 
-## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
 [Effectuer des paiements par chèque](payables-how-work-checks.md)  
 [Effectuer des paiements électroniques](finance-make-payments-with-bank-data-conversion-service-or-sepa-credit-transfer.md#exporting-payments-to-a-bank-file)  
 [Gestion des comptes fournisseur](payables-manage-payables.md)  

@@ -10,7 +10,7 @@ ms.search.keywords: 'customization, personalization'
 ms.date: 12/21/2021
 ms.author: edupont
 ---
-# <a name="manage-saved-settings-for-reports-and-batch-jobs"></a><a name="manage-saved-settings-for-reports-and-batch-jobs"></a><a name="manage-saved-settings-for-reports-and-batch-jobs"></a>Gérer les paramètres enregistrés pour les rapports et les traitements en lot
+# <a name="manage-saved-settings-for-reports-and-batch-jobs"></a>Gérer les paramètres enregistrés pour les rapports et les traitements en lot
 
 Lors de l'exécution d'un rapport, les utilisateurs voient généralement une page qui leur permet de sélectionner des options et de définir des filtres pour modifier les données incluses dans le rapport généré. Cette page est appelée la *page de demande*. Un rapport peut inclure un ou plusieurs *paramètres enregistrés* que les utilisateurs peuvent appliquer au rapport à partir de la page de demande. Les *Paramètres enregistrés* sont essentiellement des options et des filtres prédéfinis. Le fait d'utiliser les paramètres enregistrés est une façon rapide et fiable de générer de façon cohérente des états qui contiennent les données adéquates. Pour plus d’informations, voir [Utiliser les paramètres enregistrés](ui-work-report.md#SavedSettings).
 
@@ -19,7 +19,7 @@ Lors de l'exécution d'un rapport, les utilisateurs voient généralement une pa
 
 Si vous avez les bonnes autorisations, vous pouvez visualiser, créer et modifier les paramètres enregistrés pour tous les rapports pour tous les utilisateurs d'une compagnie. Vous pouvez attribuer les paramètres enregistrés d'un rapport à des utilisateurs en particulier ou à tous les utilisateurs de la compagnie.
 
-## <a name="manage-saved-settings"></a><a name="manage-saved-settings"></a><a name="manage-saved-settings"></a>Gérer les paramètres enregistrés
+## <a name="manage-saved-settings"></a>Gérer les paramètres enregistrés
 
 Vous devez gérer les paramètres enregistrés à partir de la page **Paramètres des rapports**. Deux méthodes sont disponibles pour ouvrir cette page :
 
@@ -35,7 +35,7 @@ La page **Paramètres du rapport** affiche toutes les entrées de paramètres en
 >
 > Cependant, dans certains cas, les paramètres ne peuvent pas être partagés et l’administrateur ne peut pas non plus les modifier. La plupart des traitements en lot ne prennent pas en charge les paramètres partagés.  
 
-## <a name="create-or-modify-saved-settings-for-all-users"></a><a name="create-or-modify-saved-settings-for-all-users"></a><a name="create-or-modify-saved-settings-for-all-users"></a>Créer ou modifier les paramètres enregistrés pour tous les utilisateurs
+## <a name="create-or-modify-saved-settings-for-all-users"></a>Créer ou modifier les paramètres enregistrés pour tous les utilisateurs
 
 Dans la page **Paramètres du rapport**, vous pouvez :
 
@@ -49,7 +49,7 @@ Dans la page **Paramètres du rapport**, vous pouvez :
 > [!NOTE]
 > La possibilité d’enregistrer les paramètres n’est disponible que pour les rapports où la [propriété SaveValues](/dynamics365/business-central/dev-itpro/developer/properties/devenv-savevalues-property) de la page de demande du rapport est définie sur **Oui**. La propriété **SaveValues** est définie par le développeur.  
 
-## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Utiliser des rapports, des traitements en lot et des XMLports](ui-work-report.md)  
 

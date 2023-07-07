@@ -12,7 +12,7 @@ ms.search.form: '10140, 10141, 10143, 10144, 10146, 10147, 10148, 36646'
 ms.date: 04/01/2021
 ms.author: bholtorf
 ---
-# <a name="create-bank-deposits"></a><a name="create-bank-deposits"></a><a name="create-bank-deposits"></a>Créer des dépôts bancaires
+# <a name="create-bank-deposits"></a>Créer des dépôts bancaires
 > [!NOTE]
 > La possibilité de créer des dépôts bancaires est nouvelle dans la 1re vague de lancement 2022 de Business Central pour de nombreuses versions nationales. Si vous utilisiez Business Central aux États-Unis, au Canada ou au Mexique avant cette version, vous utilisiez peut-être les fonctionnalités antérieures. Vous pouvez continuer, mais les nouvelles fonctionnalités remplaceront les anciennes dans une prochaine version. Pour commencer à utiliser les nouvelles fonctionnalités décrites dans cet article, votre administrateur peut accéder à la page **Gestion des fonctionnalités** et activer **Mise à jour des fonctionnalités : rapprochements et dépôts bancaires standardisés**.  
 
@@ -30,28 +30,28 @@ Après avoir rempli les informations et les lignes relatives au dépôt, vous de
 
 Le rapport **Dépôt bancaire** affiche les dépôts des clients et des fournisseurs avec le montant du dépôt initial, le montant du dépôt qui reste ouvert et le montant affecté. Le rapport indique également le montant total du dépôt reporté à rapprocher.
 
-## <a name="before-you-start"></a><a name="before-you-start"></a><a name="before-you-start"></a>Avant de commencer
+## <a name="before-you-start"></a>Avant de commencer
 Avant de pouvoir utiliser les dépôts bancaires, plusieurs éléments doivent être définis. Vous devez disposer d’une série de numéros et d’un modèle de journal général. Vous devez également spécifier si vous souhaitez reporter les montants des dépôts bancaires sous forme de somme forfaitaire. C’est-à-dire comme un total de tous les montants sur les lignes de dépôt. Sinon, chaque ligne est reportée comme une écriture individuelle. Le report d’un dépôt sous la forme d’une seule écriture bancaire peut faciliter le rapprochement bancaire.
 
-### <a name="number-series-and-lump-sum-deposits"></a><a name="number-series-and-lump-sum-deposits"></a><a name="number-series-and-lump-sum-deposits"></a>séries de numéros et dépôts forfaitaires
+### <a name="number-series-and-lump-sum-deposits"></a>séries de numéros et dépôts forfaitaires
 Vous devez configurer une série de numéros pour les dépôts bancaires, puis spécifier la série de numéros dans le champ **Numéros de dépôt bancaire** sur la page **Configuration ventes**. Pour plus d’informations, voir [Créer des séries de numéros](ui-create-number-series.md). 
 
 Sur la page **Configuration ventes** également, si vous souhaitez reporter des dépôts sous forme de montants forfaitaires plutôt que sous forme de lignes individuelles, activez le bouton bascule **Reporter les montants des dépôts bancaires sous forme de somme forfaitaire**. Le report d’un dépôt sous forme de somme forfaitaire, qui crée une écriture bancaire pour le montant total du dépôt, peut faciliter le rapprochement bancaire.
 
-### <a name="general-journal-templates-for-bank-deposits"></a><a name="general-journal-templates-for-bank-deposits"></a><a name="general-journal-templates-for-bank-deposits"></a>Modèles journal général pour les dépôts bancaires
+### <a name="general-journal-templates-for-bank-deposits"></a>Modèles journal général pour les dépôts bancaires
 Vous devez également créer un modèle journal général pour les dépôts. Vous utilisez les journaux généraux pour reporter des écritures dans les comptes banque, client, fournisseur, immobilisation et grand livre. Les modèles journal conçoivent le journal général en fonction de l’objectif de votre travail. Autrement dit, les champs du modèle de journal sont exactement ceux dont vous avez besoin. 
 
 Les dépôts seront des encaissements. Vous pouvez donc réutiliser votre série de numéros pour les journaux règlement. Sinon, si vous devez faire la distinction entre les écritures journal des dépôts bancaires et des encaissements, utilisez une série de numéros différente.
 
 Vous devrez également créer un traitement en lot pour le modèle. Pour créer un traitement en lot, sur la page **Modèles journal général**, choisissez l’action **Lots**. Pour plus d’informations, voir [Utilisation de modèles et de lots journal](ui-work-general-journals.md#use-journal-templates-and-batches).
 
-## <a name="dimensions-on-bank-deposit-lines"></a><a name="dimensions-on-bank-deposit-lines"></a><a name="dimensions-on-bank-deposit-lines"></a>Dimensions sur les lignes de dépôt bancaire
+## <a name="dimensions-on-bank-deposit-lines"></a>Dimensions sur les lignes de dépôt bancaire
 Les lignes du dépôt bancaire utiliseront automatiquement les dimensions par défaut que vous avez spécifiées dans les champs **Code emplacement immo** et **Code groupe clients**. Lorsque vous choisissez **Client** ou **Fournisseur** dans le champ **Type de compte**, les dimensions spécifiées pour le client ou le fournisseur remplaceront les valeurs par défaut. Au besoin, vous pouvez modifier les dimensions sur les lignes.
 
 > [!TIP]
 > Les dimensions sur les lignes sont définies en fonction des priorités de dimension par défaut. Les dimensions ligne sont prioritaires par rapport aux dimensions en-tête. Pour éviter les conflits, vous pouvez créer des règles qui déterminent quand utiliser une dimension en fonction de la source. Si vous souhaitez modifier la priorité des dimensions, vous pouvez modifier leur classement dans l’onglet **Priorités de dimensions par défaut**. Pour plus d’informations, voir [Pour configurer des priorités de dimensions par défaut](finance-dimensions.md#to-set-up-default-dimension-priorities).
 
-## <a name="create-a-bank-deposit"></a><a name="create-a-bank-deposit"></a><a name="create-a-bank-deposit"></a>Créer un dépôt bancaire
+## <a name="create-a-bank-deposit"></a>Créer un dépôt bancaire
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Dépôts bancaires**, puis sélectionnez le lien associé.
 2. Choisissez **Nouveau** pour ouvrir la page **Dépôt bancaire**. 
 3. Choisissez le modèle journal général que vous avez créé pour les dépôts bancaires.  
@@ -91,18 +91,18 @@ Les lignes du dépôt bancaire utiliseront automatiquement les dimensions par d�
     > [!TIP]
     > Avant de reporter le dépôt, vous pouvez utiliser l’action **Rapport de test** pour vérifier vos données. Le rapport indiquera s’il existe des problèmes, tels que des données manquantes, qui empêcheront le report.  
 
-## <a name="finding-posted-bank-deposits"></a><a name="finding-posted-bank-deposits"></a><a name="finding-posted-bank-deposits"></a>Recherche de dépôts bancaires reportés
+## <a name="finding-posted-bank-deposits"></a>Recherche de dépôts bancaires reportés
 La page **Dépôts bancaires reportés** répertorie les dépôts antérieurs de votre compagnie. Dans la liste, vous pouvez vérifier les commentaires et les dimensions qui ont été spécifiés pour les dépôts. Vous pouvez ouvrir le dépôt bancaire pour afficher plus de détails, et à partir de là, vous pouvez approfondir vos recherches. Par exemple, vous pouvez choisir l’action Rechercher des écritures pour afficher les écritures bancaires reportées. À partir de l’écriture banque, vous pouvez trouver l’écriture reportée correspondante dans le grand livre.
 
 Si vous voulez consulter toutes les écritures du grand livre pour les lignes de dépôt reportées, accédez à la page **Registre GL** et utilisez l’action **Grand livre**. Vous y trouverez toutes les écritures, y compris les écritures pour les clients et les fournisseurs.
 
-## <a name="reversing-a-posted-bank-deposit"></a><a name="reversing-a-posted-bank-deposit"></a><a name="reversing-a-posted-bank-deposit"></a>Inversion d’un dépôt bancaire reporté
+## <a name="reversing-a-posted-bank-deposit"></a>Inversion d’un dépôt bancaire reporté
 Pour annuler un dépôt reporté, accédez à la page **Registres GL**, identifiez l’historique du dépôt, puis choisissez l’action **Inverser le registre**.
 
 > [!NOTE]
 > Vous pouvez uniquement inverser un registre contenant un seul type d’écriture. Autrement dit, le registre ne doit contenir que des écritures client ou des écritures fournisseur, mais ne peut pas contenir les deux. Si un historique contient les deux, vous devez inverser manuellement le dépôt.      
 
-## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
 [Finance](finance.md)  
 [Configuration de Finance](finance.md)  
 

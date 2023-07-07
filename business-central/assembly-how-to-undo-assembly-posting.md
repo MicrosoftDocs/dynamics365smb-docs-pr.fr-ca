@@ -10,7 +10,7 @@ ms.custom: bap-template
 ms.search.keywords: 'kit, kitting'
 ms.search.form: '900, 901, 902, 903, 904, 907, 910, 916, 920, 921, 922, 923, 940, 941, 942, 930, 931, 932, 914, 915, 905'
 ---
-# <a name="undo-assembly-posting"></a><a name="undo-assembly-posting"></a><a name="undo-assembly-posting"></a>Annuler le report d'assemblage
+# <a name="undo-assembly-posting"></a>Annuler le report d'assemblage
 
 Annulez le report d’un ordre d’assemblage pour corriger une erreur ou supprimer un report indésirable.
 
@@ -33,7 +33,7 @@ Les ordres d’assemblage ne peuvent être restaurés que si le numéro et la s�
 
 La procédure suivante décrit comment annuler les ordres d’assemblage reportés qui contiennent des articles assemblés pour stock. Pour annuler des ordres d’assemblage reportés avec des articles qui ont été assemblés pour commande, utilisez l’action **Annuler la livraison** sur la livraison reportée associée. Pour en savoir plus sur l’annulation de livraisons, consultez [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md). L’annulation de l’ordre d’assemblage reporté se déroule de la même manière que celle décrite dans cet article.  
 
-## <a name="to-undo-posting-of-an-assembly-order"></a><a name="to-undo-posting-of-an-assembly-order"></a><a name="to-undo-posting-of-an-assembly-order"></a>Pour annuler le report d'un ordre d'assemblage
+## <a name="to-undo-posting-of-an-assembly-order"></a>Pour annuler le report d'un ordre d'assemblage
 
 Vous pouvez annuler des ordres d’assemblage entièrement ou partiellement reportés.
 
@@ -50,7 +50,7 @@ Le champ **Inversé** de l’ordre d’assemblage prend la valeur **Oui**. Le re
 > [!NOTE]  
 > Pour restaurer les quantités de plusieurs reports partiels dans un ordre d’assemblage, vous devez annuler tous les ordres d’assemblage reportés en suivant les étapes 1 à 3.  
 
-## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)  

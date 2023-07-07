@@ -10,7 +10,7 @@ ms.search.keywords: null
 ms.date: 06/15/2021
 ms.author: edupont
 ---
-# <a name="design-details-posting-engine-structure"></a><a name="design-details-posting-engine-structure"></a><a name="design-details-posting-engine-structure"></a>Détails de conception : Structure du moteur de report
+# <a name="design-details-posting-engine-structure"></a>Détails de conception : Structure du moteur de report
 L'interface de report et certaines autres fonctions dans le codeunit 12 utilisent des fonctions de moteur de report pour préparer et insérer l'écriture et les enregistrements d'écriture TVA. Le moteur de report est également chargé de la création du registre du grand livre.  
   
  Les fonctions de la table suivante fournissent un cadre standard pour créer les procédures de report (par exemple le code, CustPostApplyCustledgEntry, VendPostApplyVendLedgEntry, UnapplyCustLedgEntry, et UnapplyVendLedgEntry et Reverse) et un accès exclusif à la table 17, Écriture du grand livre.  
@@ -30,7 +30,7 @@ L'interface de report et certaines autres fonctions dans le codeunit 12 utilise
 |CreateGLEntryVATCollectAdj|Semblable à CreateGLEntry, mais avec la collection supplémentaire des ajustements et l'enregistrement sur un tampon TVA temporaire :<br /><br /> `CollectAdjustment(AdjAmount,GLEntry.Amount,GLEntry."Additional-Currency Amount",OriginalDateSet);`<br /><br /> `InsertVATEntriesFromTemp(DtldCVLedgEntryBuf,GLEntry);`|  
 |CreateGLEntryFromVATEntry|Semblable à CreateGLEntry, mais copie également les groupes de validation à partir de l'écriture TVA.|  
   
-## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
  [Détails de conception : Structure de l'interface de validation](design-details-posting-interface-structure.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

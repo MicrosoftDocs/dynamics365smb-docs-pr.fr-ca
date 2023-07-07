@@ -10,12 +10,12 @@ ms.search.keywords: null
 ms.date: 06/15/2021
 ms.author: edupont
 ---
-# <a name="design-details-known-item-application-issue"></a><a name="design-details-known-item-application-issue"></a><a name="design-details-known-item-application-issue"></a>Détails de conception : problème connu lié à l'affectation d'articles
+# <a name="design-details-known-item-application-issue"></a>Détails de conception : problème connu lié à l'affectation d'articles
 Cet article traite du problème de niveau d'inventaire nul alors qu'il existe des écritures article ouvertes dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 L'article commence par répertorier les symptômes courants du problème, puis décrit les notions de base de l'affectation d'articles pour justifier les raisons décrites pour ce problème. À la fin de l'article, une solution de contournement est proposée pour résoudre ce problème.  
 
-## <a name="symptoms-of-the-issue"></a><a name="symptoms-of-the-issue"></a><a name="symptoms-of-the-issue"></a>Symptômes du problème
+## <a name="symptoms-of-the-issue"></a>Symptômes du problème
  Voici les symptômes courants du problème d'inventaire nul alors qu'il existe des écritures article ouvertes :  
 
 -   Le message suivant s'affiche lorsque vous tentez de fermer une période d'inventaire : « L'inventaire ne peut pas être fermé en raison d'un inventaire négatif pour un ou plusieurs articles ».  
@@ -29,7 +29,7 @@ L'article commence par répertorier les symptômes courants du problème, puis d
      |333|01/28/2018|Vente|Livraison de vente|102043|TEST|BLEU|-1|-10|-1|-1|Oui|  
      |334|01/28/2018|Vente|Livraison de vente|102043|TEST|BLEU|1|10|1|1|Oui|  
 
-## <a name="basics-of-item-application"></a><a name="basics-of-item-application"></a><a name="basics-of-item-application"></a>Notions de base de l'affectation d'articles
+## <a name="basics-of-item-application"></a>Notions de base de l'affectation d'articles
  Une écriture d'affectation article est créée pour chaque transaction inventaire afin de lier le destinataire de coût à sa source de coût afin que le coût puisse être transféré en fonction du mode d'évaluation coût. Pour plus d'informations, voir [Détails de conception : traçabilité](design-details-item-application.md).  
 
 -   Pour une écriture article entrante, l'écriture d'affectation article est créée lorsque l'écriture article est créée.  
@@ -42,7 +42,7 @@ L'article commence par répertorier les symptômes courants du problème, puis d
 
 -   Coût appliqué  
 
-### <a name="quantity-application"></a><a name="quantity-application"></a><a name="quantity-application"></a>Affectation de quantité
+### <a name="quantity-application"></a>Affectation de quantité
  Les affectations de quantité sont effectuées pour toutes les transactions d'inventaire et sont créées automatiquement, ou manuellement dans des processus spécifiques. Lorsqu'elles sont effectuées manuellement, les affectations de quantité sont appelées affectations fixes.  
 
  Le schéma suivant montre la façon dont les affectations de quantité sont effectuées.  
@@ -54,7 +54,7 @@ L'article commence par répertorier les symptômes courants du problème, puis d
 > [!NOTE]  
 >  Si l'écriture article sortante est évaluée par coût moyen, l'écriture article entrante affectée n'est pas l'unique source de coût. Elle joue simplement un rôle dans le calcul du coût moyen de la période.  
 
-### <a name="cost-application"></a><a name="cost-application"></a><a name="cost-application"></a>Coût appliqué
+### <a name="cost-application"></a>Coût appliqué
 Les affectations de coût sont uniquement créées pour les transactions entrantes lorsque le champ **Écriture article à affecter** est renseigné pour réaliser une affectation fixe. Cela se produit généralement dans le cadre d'une note de crédit vente ou d'un scénario d'annulation de livraison. L'affectation de coût garantit que l'article retourne dans l'inventaire avec le même coût que lorsqu'il a été livré.  
 
 Le schéma suivant montre la façon dont les affectations de coût sont effectuées.  
@@ -66,7 +66,7 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 
  En outre, notez que l'écriture article entrante 3 (Retour vente) est un destinataire de coût pour l'écriture article sortante d'origine 2 (Vente).  
 
-## <a name="illustration-of-a-basic-cost-flow"></a><a name="illustration-of-a-basic-cost-flow"></a><a name="illustration-of-a-basic-cost-flow"></a>Illustration d'un flux de coûts de base
+## <a name="illustration-of-a-basic-cost-flow"></a>Illustration d'un flux de coûts de base
  Imaginez un flux de coûts complet où un article est reçu, livré et facturé, retourné avec une inversion du coût exacte et relivré.  
 
  Le schéma suivant illustre le flux de coûts.  
@@ -75,7 +75,7 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 
  En outre, notez que le coût est transféré vers l'écriture article 2 (Vente), puis vers l'écriture article 3 (Retour vente) et enfin vers l'écriture article 4 (Vente 2).  
 
-## <a name="reasons-for-the-issue"></a><a name="reasons-for-the-issue"></a><a name="reasons-for-the-issue"></a>Raisons du problème
+## <a name="reasons-for-the-issue"></a>Raisons du problème
  Les scénarios suivants peuvent être à l'origine d'un problème d'inventaire nul alors qu'il existe des écritures article ouvertes :  
 
 -   Scénario 1 : une livraison et une facture sont reportées bien que l'article ne soit pas disponible. Le report est ensuite soumis à une inversion des coûts exacte avec une note de crédit vente.  
@@ -90,7 +90,7 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 
  L'écriture article 2 (Retour vente) ne peut pas être un destinataire de coût de l'écriture article d'origine et en même temps un fournisseur d'articles et leur source de coûts. Par conséquent, l'écriture article d'origine 1 (Vente 1) reste ouverte jusqu'à ce qu'une source valide s'affiche.  
 
-## <a name="identifying-the-issue"></a><a name="identifying-the-issue"></a><a name="identifying-the-issue"></a>Identification du problème
+## <a name="identifying-the-issue"></a>Identification du problème
  Pour déterminer si les écritures article ouvertes sont créées, procédez comme suit pour le scénario respectif :  
 
  Pour le scénario 1, identifiez le problème comme suit :  
@@ -130,7 +130,7 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 
  En outre, notez que le coût de l'écriture article entrante 334 est affecté à l'écriture article sortante 333.  
 
-## <a name="workaround-for-the-issue"></a><a name="workaround-for-the-issue"></a><a name="workaround-for-the-issue"></a>Solution de contournement du problème
+## <a name="workaround-for-the-issue"></a>Solution de contournement du problème
  Sur la page **Journal article**, reportez les lignes suivantes pour l'article concerné :  
 
 -   Un ajustement positif pour fermer l'écriture article sortante ouverte.  
@@ -141,7 +141,7 @@ Le schéma suivant montre la façon dont les affectations de coût sont effectu�
 
  Par conséquent, l'inventaire devient nul et toutes les écritures article sont fermées.  
 
-## <a name="see-also"></a><a name="see-also"></a><a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
 [Détails de conception : affectation article](design-details-item-application.md)   
 [Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)  
 
