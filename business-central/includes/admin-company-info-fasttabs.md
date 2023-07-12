@@ -10,4 +10,4 @@ ms.author: edupont
 |**Communication**|Saisissez les coordonnées de base de la compagnie, telles que le numéro de téléphone et l’adresse de courriel.|  
 |**Paiements**| Remplissez les informations bancaires pertinentes pour vous assurer que vos clients seront en mesure de vous payer.|  
 |**Expédition**|Remplissez les informations de livraison pertinentes afin que vous puissiez envoyer et recevoir des marchandises.|  
-|**Taxes**|Selon le pays dans lequel votre entreprise est enregistrée, un raccourci Taxes peut s’afficher. S’il est disponible, renseignez les champs.|  
+|**Taxe**|Selon le pays/la région dans lequel/laquelle votre entreprise est enregistrée, un raccourci Taxes peut s’afficher. S’il est disponible, renseignez les champs.|  

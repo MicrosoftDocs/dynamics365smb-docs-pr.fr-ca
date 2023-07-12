@@ -10,19 +10,19 @@ ms.search.keywords: 'app, add-in, manifest, customize, stream, remittance, advic
 ms.date: 07/06/2021
 ms.author: edupont
 ---
-# <a name="send-remittance-advice"></a>Envoyer un avis de remise
+# Envoyer un avis de remise
 
 Lorsqu'un avis de remise est utilisé pour informer les fournisseurs des paiements effectués, vous pouvez désormais envoyer par courriel un avis de remise en bloc à partir du journal paiement et le renvoyer une fois les paiements effectués à partir des écritures fournisseur à l'aide de profils d'envoi de documents.
 
 > [!NOTE]
-> Cette fonctionnalité est uniquement prise en charge dans Business Central en ligne et local dans les pays suivants : Royaume-Uni, États-Unis, Canada, Australie, Nouvelle Zélande et Afrique du Sud.  
+> Cette fonctionnalité est uniquement prise en charge dans Business Central Online et en local dans les pays/régions suivants : Royaume-Uni, États-Unis, Canada, Australie, Nouvelle Zélande et Afrique du Sud.  
 
 Vous pouvez envoyer des avis de remise de deux manières différentes :
 
 * Dans la page **Journal paiement**, choisissez **Association**, **Paiements**, **Envoyer un avis de remise** pour envoyer un avis de remise pour une ou plusieurs lignes journal paiement
 * Dans la page **Écritures fournisseur**, sélectionnez **Actions**, **Fonctions**, **Envoyer un avis de remise** pour envoyer par courriel un avis de remise après report des paiements fournisseur, pour une ou plusieurs écritures fournisseur
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Proposer paiements fournisseur](payables-how-suggest-vendor-payments.md)  
 [Personnalisation de [!INCLUDE[prod_short](includes/prod_short.md)] à l'aide des extensions ](ui-extensions.md)  

@@ -9,7 +9,7 @@ author: edupont04
 ms.author: andreipa
 ---
 
-# <a name="introduction-to-contoso-coffee-manufacturing"></a>Introduction à la fabrication Contoso Coffee
+# Introduction à la fabrication Contoso Coffee
 
 Contoso Coffee est une compagnie fictive qui produit des cafetières grand public et commerciales. Les applications **Contoso Coffee** pour Business Central ajoutent des données de démonstration que vous pouvez utiliser pour apprendre à utiliser les capacités de fabrication dans Business Central.  
 
@@ -36,7 +36,7 @@ Les activités de fabrication pour tous les scénarios utilisent l’emplacement
 > [!IMPORTANT]
 > Avant d’exécuter l’un des scénarios pour Contoso Coffee, reportez toutes les lignes journal article avec soldes d’ouverture. Pour connaître plus d’exigences, voir la section [Configurer les données de Contoso Coffee](#set-up-contoso-coffee-manufacturing-data).
 
-## <a name="set-up-contoso-coffee-manufacturing-data"></a>Configurer les données de fabrication Contoso Coffee
+## Configurer les données de fabrication Contoso Coffee
 
 Pour utiliser les données de démonstration de fabrication Contoso Coffee, vous devez installer deux applications dans la compagnie concernée dans [!INCLUDE [prod_short](../../includes/prod_short.md)] :  
 
@@ -45,7 +45,7 @@ Pour utiliser les données de démonstration de fabrication Contoso Coffee, vous
     Cette application fournit des données de démonstration pour l’application de base.  
 - **Jeu de données de démonstration Contoso Coffee (Code pays)**  
 
-    Cette application ajoute du contenu spécifique au pays en plus de l’application de base.
+    Cette application ajoute du contenu spécifique au pays ou à la région en plus de l’application de base.
 
 Ajoutez les applications à une compagnie vide dans un abonnement payant ou dans le cadre d’un essai. Par exemple, créez une compagnie sans exemples de données à partir du guide de configuration assistée **Créer une nouvelle compagnie** que vous pouvez ouvrir dans la liste **Compagnies**. Ajoutez ensuite les applications depuis le [marché](../../ui-extensions-install-uninstall.md#install) si elles ne sont pas déjà répertoriées sur la page **Gestion des extensions**.  
 
@@ -67,7 +67,7 @@ Une fois que les applications appropriées sont installées, accédez à la page
 
 Une fois que vous êtes prêt, choisissez l’action **Créer des données de démonstration**. L’ajout des données à la base de données sous-jacente prend quelques minutes, mais vous êtes ensuite prêt à exécuter les différents scénarios.  
 
-## <a name="scenarios"></a>Cas de figure
+## Cas de figure
 
 Les données de démonstration de facturation Contoso Coffee prennent actuellement en charge les scénarios suivants pour les tests et la formation :
 
@@ -85,7 +85,7 @@ Lisez les étapes de chaque scénario dans l’article correspondant.
 > [!IMPORTANT]
 > Ces procédures pas à pas nécessitent que l’expérience utilisateur soit définie sur *Premium* dans la page **Informations compagnie**.
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Production](../../production-manage-manufacturing.md)  
 [Rapports de production et analyses dans Business Central](../../production-reports.md)  
