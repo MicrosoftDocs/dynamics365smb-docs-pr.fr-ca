@@ -106,7 +106,7 @@
 ##### [Vue d’ensemble de la ligne report de journal général](design-details-general-journal-post-line-overview.md)  
 ##### [Détails de conception : structure de l’interface de report](design-details-posting-interface-structure.md)  
 ##### [Détails de conception : structure du moteur de report](design-details-posting-engine-structure.md)  
-
+#### [Détails de conception : TVA non déductible](design-details-nondeductible-vat.md)
 ## Essai
 ### [Inscrivez-vous pour un essai gratuit de Dynamics 365 Business Central](trial-signup.md)
 ### [FAQ sur la version d’essai de Dynamics 365 Business Central](trial-faq.md)
