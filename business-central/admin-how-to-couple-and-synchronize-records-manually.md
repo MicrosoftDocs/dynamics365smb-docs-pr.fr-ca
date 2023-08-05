@@ -2,21 +2,20 @@
 title: Couplage et synchronisation (contient une vidéo)
 description: Synchroniser un mappage de table d’intégration permet la synchronisation des données dans tous les enregistrements dans une table de Business Central ainsi que de la table Dynamics 365 Sales qui sont couplées.
 author: brentholtorf
-ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.keywords: 'crm, sales, couple, decouple, synchronize'
-ms.search.form: 6250
-ms.date: 10/01/2021
 ms.author: bholtorf
+ms.reviewer: ivkoleti
+ms.topic: conceptual
+ms.date: 03/31/2023
+ms.custom: bap-template
+ms.search.keywords: 'crm, sales, couple, decouple, synchronize'
+ms.search.form: '6250,'
 ---
 
-# Couplage et synchronisation des enregistrements entre Dataverse et Business Central
+# Coupler et synchroniser les enregistrements entre Dataverse et Business Central
 
 Cette rubrique décrit comment coupler un ou plusieurs enregistrements dans [!INCLUDE[prod_short](includes/prod_short.md)] avec des enregistrements dans Dataverse ou [!INCLUDE[crm_md](includes/crm_md.md)]. Le couplage d'enregistrements permet d'afficher les informations Dataverse depuis [!INCLUDE[prod_short](includes/prod_short.md)], et vice-versa. Le couplage vous permet également de synchroniser les données entre les enregistrements. Vous pouvez coupler des enregistrements existants, ou créer et coupler de nouveaux enregistrements.
 
-> [!Note]
+> [!NOTE]
 > Le couplage et la synchronisation des données sont disponibles seulement si votre administrateur système a créé une connexion entre [!INCLUDE[prod_short](includes/prod_short.md)] et Dataverse ou [!INCLUDE[crm_md](includes/crm_md.md)]. Une façon de vérifier consiste à ouvrir la fiche **Client** et à rechercher l'action **Configurer le couplage**. Si l'action est disponible, les applications sont connectées.
 
 ## Exemple vidéo
@@ -46,11 +45,11 @@ Cette vidéo montre le couplage et la synchronisation de données dans le cadre 
 2. Choisissez l'action **[!INCLUDE[prod_short](includes/prod_short.md)]** dans le ruban pour ouvrir et coupler l'enregistrement automatiquement.
 
     > [!Note]
-    > Vous pouvez synchroniser automatiquement un enregistrement unique depuis [!INCLUDE[crm_md](includes/crm_md.md)] seulement si l'option **Synch. uniquement les enregistrements couplés** est désactivée et si la direction de synchronisation est définie sur Bidirectionnelle ou À partir de la table d'intégration sur la page **Mappage de table d'intégration** pour l'enregistrement. Pour en savoir plus, consultez [Mappage des tables et des champs à synchroniser](admin-how-to-modify-table-mappings-for-synchronization.md#creating-new-records).     
+    > Vous pouvez synchroniser automatiquement un enregistrement unique depuis [!INCLUDE[crm_md](includes/crm_md.md)] seulement si l’option **Synch. uniquement les enregistrements couplés** est désactivée et si la direction de synchronisation est définie sur **Bidirectionnelle** ou **À partir de la table d’intégration** sur la page **Mappage de table d’intégration** pour l’enregistrement. Pour en savoir plus, consultez [Mappage des tables et des champs à synchroniser](admin-how-to-modify-table-mappings-for-synchronization.md#create-new-records).
 
 ## Pour coupler plusieurs enregistrements à l’aide du couplage par correspondance
 
-Vous pouvez spécifier les données à synchroniser pour une entité, telle qu’un client ou un contact, en couplant des enregistrements par correspondance. Vous pouvez affiner les correspondances en rendant la recherche sensible à la casse et en attribuant une priorité à chaque correspondance. Si aucune correspondance n’est trouvée, vous pouvez également spécifier que vous souhaitez créer l’entité dans Dataverse. Pour plus d’informations, consultez [Personnaliser le couplage par correspondance](admin-how-to-set-up-a-dynamics-crm-connection.md#customize-the-match-based-coupling).  
+Spécifiez les données à synchroniser pour une entité, telle qu’un client ou un contact, en couplant des enregistrements par correspondance. Affinez les correspondances en rendant la recherche sensible à la casse et en attribuant une priorité à chaque correspondance. Si aucune correspondance n’est trouvée, vous pouvez également spécifier que vous souhaitez créer l’entité dans Dataverse. Pour plus d’informations, accédez à [Personnaliser le couplage par correspondance](admin-how-to-set-up-a-dynamics-crm-connection.md#customize-the-match-based-coupling).  
 
 > [!NOTE]
 > Le processus de couplage basé sur les correspondances ignore les enregistrements qui sont déjà mis en correspondance. Pour inclure ces enregistrements lorsque vous exécutez le couplage basé sur les correspondances, découplez les enregistrements, puis réessayez. Pour en savoir plus sur le découplage des enregistrements, accédez à [Découpler des enregistrements](#uncoupling-records).
@@ -64,6 +63,36 @@ Vous pouvez spécifier les données à synchroniser pour une entité, telle qu�
 1. Dans [!INCLUDE[prod_short](includes/prod_short.md)], ouvrez la page de liste pour l’enregistrement, telle que les pages Clients ou Contacts.  
 2. Sélectionnez l'enregistrement à synchroniser, puis l'action **Synchroniser maintenant**.  
 3. Si des enregistrements peuvent être synchronisés dans une direction, sélectionnez l'option qui affiche la direction, puis cliquez sur **OK**.  
+
+## Insertion en bloc et couplage d’enregistrements
+
+Si vous avez un grand nombre d’entités Dataverse qui correspondent à des enregistrements dans [!INCLUDE [prod_short](includes/prod_short.md)], vous pouvez les insérer et les coupler en bloc. Par exemple, vous souhaiterez peut-être insérer et coupler des enregistrements en bloc lorsque vous configurez la synchronisation pour la première fois.
+
+Vous utiliserez l’**assistant d’importation de données** dans le **centre d’administration Microsoft Power Platform**.
+
+L’exemple suivant décrit comment insérer en masse et coupler des clients avec des comptes dans Dataverse. Suivez le même processus pour les autres types d’entités, telles que les fournisseurs, les articles et les ressources.
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.
+2. Sélectionnez l’action **Ouvrir dans Excel** pour ouvrir les données client dans Excel. <!--Don't they need to choose the customers that they want to import to Dataverse?-->
+3. Pour mapper et importer des données vers l’entité **Compte** dans Dataverse, suivez les étapes décrites dans [Importer des données (tous les types d’enregistrement ) à partir de plusieurs sources](/power-platform/admin/import-data-all-record-types).  
+
+    Si l’entité Compte a une colonne **bcbi_companyid**, lorsque vous mappez les colonnes de données, assurez-vous que l’importation attribue le code de compagnie approprié dans la colonne pour chaque enregistrement importé. Pour trouver le code de compagnie dans [!INCLUDE [prod_short](includes/prod_short.md)], procédez comme suit :
+
+    1. Ouvrez la page **Mappages de table d’intégration**.
+    2. Sélectionez le mappage **CLIENT**, puis **Modifier la liste**.
+    3. Faites défiler vers la droite et sélectionnez le bouton de modification assistée :::image type="icon" source="media/assist-edit-icon.png" border="false"::: dans le champ **Filtre de table d’intégration**. Cela montre le filtre par défaut pour le mappage client, et il contient le code de la compagnie. Le code de la compagnie est la première partie de la valeur. Ne copiez que cette partie et ignorez les 0. L’exemple suivant met en évidence la partie à copier.
+
+    :::image type="content" source="media/dataverse-company-id-guid.png" alt-text="Affiche la partie du code de compagnie à copier.":::
+
+    > [!NOTE]
+    > Tous les noms des entités Dataverse et des enregistrements Business Central ne correspondent pas. En fonction de ce que vous importez, vérifiez que les colonnes suivantes contiennent les valeurs suivantes après l’importation :
+    >
+    >* Pour les clients, la colonne **CustomerTypeCode** doit contenir **Client**.
+    >* Pour les fournisseurs, la colonne **CustomerTypeCode** doit contenir **Fournisseurs**. 
+    >* Pour les articles, la colonne **ProductTypeCode** doit contenir **Inventaire de vente**.
+    >* Pour les ressources, la colonne **ProductTypeCode** doit contenir **Service**.
+ 
+4. Après avoir importé des données dans l’environnement Dataverse, dans [!INCLUDE [prod_short](includes/prod_short.md)], suivez les étapes [Pour coupler plusieurs enregistrements à l’aide du couplage par correspondance](#to-couple-multiple-records-using-match-based-coupling) pour coupler les entités Dataverse avec les enregistrements [!INCLUDE [prod_short](includes/prod_short.md)]. 
 
 ## Découplage des enregistrements
 

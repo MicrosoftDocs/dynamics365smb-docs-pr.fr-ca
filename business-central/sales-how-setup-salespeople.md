@@ -10,7 +10,7 @@ ms.search.keywords: sales rep
 ms.date: 04/01/2021
 ms.author: edupont
 ---
-# <a name="set-up-salespeople"></a>Configurer des représentants
+# Configurer des représentants
 
 Beaucoup de compagnies souhaitent suivre les performances individuelles d'un collaborateur afin d'avoir une base de calcul pour les commissions et les bonus. Reportez-vous, par exemple, au rapport **Commissions représentant**. Une compagnie peut également souhaiter affecter un représentant à chacun de ses contacts.
 
@@ -18,16 +18,16 @@ Une fois que vous avez configuré un représentant sur la page **Représentants*
 <br><br>  
 > [!Video https://www.microsoft.com/videoplayer/embed/RE43Vhm?rel=0]
 
-## <a name="to-set-up-a-salesperson-code"></a>Pour configurer un code représentant
+## Pour configurer un code représentant
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Représentants**, puis sélectionnez le lien associé.
 2. Sur la page **Représentants**, sélectionnez l'action **Nouveau**.
 
 Vous pouvez utiliser les représentants dans la gestion des relations et les divers travaux de marketing. Par exemple, vous pouvez affecter des tâches aux représentants, afin que les tâches soient incorporées dans les opportunités de vente affectées au représentant. Pour plus d'informations, voir [Configurer des cycles de vente opportunité et des phases de cycle](marketing-how-setup-opportunity-sales-cycles-stages.md).
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/trade-master-data-dynamics-365-business-central/) associée
+## Voir la [formation Microsoft](/training/modules/trade-master-data-dynamics-365-business-central/) associée
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Définition des ventes](sales-setup-sales.md)  
 [Ventes](sales-manage-sales.md)  

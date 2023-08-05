@@ -9,11 +9,11 @@ ms.date: 02/27/2023
 ms.custom: bap-template
 ms.search.form: '99000883, 99000884,'
 ---
-# <a name="create-production-orders-from-sales-orders"></a>Créer des bons de production à partir de documents de vente
+# Créer des bons de production à partir de documents de vente
 
 Vous pouvez créer des bons de production pour les articles produits directement à partir des documents de vente.  
 
-## <a name="to-create-a-production-order-from-a-sales-order"></a>Pour créer un bon de production à partir d'un document de vente
+## Pour créer un bon de production à partir d'un document de vente  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2. Sélectionnez le document de vente pour lequel vous voulez créer un bon de production.  
@@ -27,7 +27,7 @@ Vous pouvez créer des bons de production pour les articles produits directement
     >
     > Lorsque vous créez des bons de production pour des commandes client avec la page Planification document de vente, des liens ordre pour ordre sont appliqués entre la demande et l’approvisionnement. Lorsque les liens ordre pour ordre existent, le système de planification n’inclut pas d’approvisionnement ou d’inventaire lié dans la procédure d’équilibrage. Pour en savoir plus sur l’équilibrage, consultez [Liens ordre pour ordre](design-details-central-concepts-of-the-planning-system.md#order-to-order-links).
 
-## <a name="order-type"></a>Type de commande
+## Type de commande  
 
 Le tableau suivant décrit deux manières de créer des bons de production.
 
@@ -36,7 +36,7 @@ Le tableau suivant décrit deux manières de créer des bons de production.
 |O.F. article|Un bon de production est créé pour chaque article représenté par une ligne sur la page **Planification document de vente**.|
 |O.F. projet|Un bon de production multiligne est créé pour tous les articles représentés par des lignes sur la page **Planification document de vente**. Lorsque vous utilisez des commandes projet, le champ **Type de source** du bon de production contient **En-tête vente**. L’ordre comporte une ligne pour chaque article de ligne de vente qui doit être produit.|
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi  
 
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Production](production-manage-manufacturing.md)  
