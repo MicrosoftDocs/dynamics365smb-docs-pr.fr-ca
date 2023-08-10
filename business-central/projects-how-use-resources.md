@@ -11,7 +11,7 @@ ms.search.form: '201,206, 207, 271, 493'
 ms.date: 03/08/2023
 ms.author: edupont
 ---
-# Utiliser des ressources pour des projets
+# <a name="use-resources-for-jobs"></a>Utiliser des ressources pour des projets
 
 Vous devez enregistrer l'utilisation des ressources dans le journal projet pour suivre les coûts et les prix, ainsi que les types de travaux associés aux projets. Pour plus d'informations, voir [Enregistrer l'utilisation pour les projets](projects-how-record-job-usage.md).
 
@@ -20,11 +20,11 @@ Vous devez enregistrer l'utilisation des ressources dans le journal projet pour 
 
 Vous pouvez aussi reporter l'utilisation d'une ressource dans un journal ressource. Les écritures reportées dans un journal ressource n'ont aucune incidence sur le grand livre.
 
-## Pour affecter des ressources aux projets
+## <a name="to-assign-resources-to-jobs"></a>Pour affecter des ressources aux projets
 
 Vous pouvez affecter des ressources aux projets en créant des lignes planification projet pour le projet. Pour plus d'informations, voir [Créer des projets](projects-how-create-jobs.md).
 
-## Pour enregistrer l'utilisation des ressources pour un projet
+## <a name="to-record-resource-usage-for-a-job"></a>Pour enregistrer l'utilisation des ressources pour un projet
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux projet**, puis choisissez le lien associé.
 2. Ouvrez le lot journal projet approprié, puis complétez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -32,7 +32,7 @@ Vous pouvez affecter des ressources aux projets en créant des lignes planificat
 
     [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
 
-## Pour ajuster le prix des ressources
+## <a name="to-adjust-resource-prices"></a>Pour ajuster le prix des ressources
 
 Si vous souhaitez modifier le coût ou le prix d'un grand nombre de ressources, vous pouvez utiliser un traitement en lot.  
 
@@ -42,7 +42,7 @@ Si vous souhaitez modifier le coût ou le prix d'un grand nombre de ressources, 
 > [!NOTE]  
 > Ce traitement en lot ne crée pas et n'ajuste pas les nouveaux coûts ou prix des ressources. Il modifie uniquement le contenu du champ de la fiche ressource correspondant au champ **Champ à modifier** que vous avez sélectionné dans le traitement par lots. L'ajustement s'appliquant immédiatement aux ressources, vérifiez les facteurs d'ajustement avant de lancer le traitement en lot.
 
-## Pour obtenir des propositions de modification des prix ressource basées sur les prix secondaires existants
+## <a name="to-get-resource-price-change-suggestions-based-on-existing-alternate-prices"></a>Pour obtenir des propositions de modification des prix ressource basées sur les prix secondaires existants
 
 Si vous avez déjà configuré d'autres prix pour un certain nombre de ressources, vous pouvez utiliser un traitement en lot pour configurer d'autres prix ressource.
 
@@ -51,7 +51,7 @@ Si vous avez déjà configuré d'autres prix pour un certain nombre de ressource
 3. Cliquez sur le bouton **OK**.  
 4. Lorsque le traitement en lot est terminé, la page **Nouv. prix ressource proposés** affiche les résultats du traitement en lot.
 
-## Pour obtenir des propositions de modification des prix ressource basées sur les prix standard :
+## <a name="to-get-resource-price-change-suggestions-based-on-standard-prices"></a>Pour obtenir des propositions de modification des prix ressource basées sur les prix standard :
 
 Si vous souhaitez configurer plusieurs autres prix ressource sur la base des prix standard des fiches ressource, vous pouvez utiliser un traitement en lot.  
 
@@ -60,7 +60,7 @@ Si vous souhaitez configurer plusieurs autres prix ressource sur la base des pri
 3. Cliquez sur le bouton **OK**.  
 4. Lorsque le traitement en lot est terminé, ouvrez la page **Nouv. prix ressource proposés** pour visualiser les résultats du traitement en lot.
 
-## Pour obtenir des propositions de modification des prix ressource basées sur les prix standard
+## <a name="to-get-resource-price-change-suggestions-based-on-alternate-prices"></a>Pour obtenir des propositions de modification des prix ressource basées sur les prix standard
 
 Si vous avez déjà configuré d'autres prix pour un certain nombre de ressources, vous pouvez utiliser un traitement en lot pour configurer d'autres prix ressource.
 
@@ -69,7 +69,7 @@ Si vous avez déjà configuré d'autres prix pour un certain nombre de ressource
 3. Cliquez sur le bouton **OK**.  
 4. Lorsque le traitement en lot est terminé, ouvrez la page **Nouv. prix ressource proposés** pour visualiser les résultats du traitement en lot.
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Gestion de projets](projects-manage-projects.md)  
 [Finance](finance.md)  

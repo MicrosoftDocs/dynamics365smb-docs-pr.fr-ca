@@ -11,7 +11,7 @@ ms.search.form: '130, 142, 1350'
 ms.date: 04/01/2021
 ms.author: edupont
 ---
-# Report des ventes
+# <a name="posting-sales"></a>Report des ventes
 
 Sous le menu **Report** dans un document vente, vous pouvez choisir parmi les fonctions de report suivantes :
 
@@ -37,19 +37,19 @@ Pour chaque ligne commande vente, une écriture comptable article est créée da
 
 Vous pouvez reporter, ou reporter et envoyer. Si vous choisissez de reporter et d'envoyer, un fichier PDF est généré, lequel peut être envoyé par la suite. Vous pouvez aussi choisir la fonction **Valider par lot**, qui vous permet de valider plusieurs commandes en même temps. Pour plus d'informations, voir [Reporter plusieurs documents en même temps](ui-batch-posting.md).
 
-## Affichage des écritures
+## <a name="viewing-ledger-entries"></a>Affichage des écritures
 
 Lorsque le report est terminé, les lignes vente reportées sont supprimées de la commande. Un message vous indique lorsque le report est terminé. Vous pouvez ensuite afficher les écritures reportées dans les diverses pages qui contiennent des écritures reportées, telles que **Écritures client**, **Écritures**, **Écritures article**, **Livraisons vente reportées** et **Factures vente reportées**.  
 
 Dans la plupart des cas, vous pouvez ouvrir des écritures à partir de la fiche ou du document concerné. Par exemple, sur la page **Fiche client**, sélectionnez l'action **Écritures**.
 
-## Modification des écritures
+## <a name="editing-ledger-entries"></a>Modification des écritures
 
 Vous pouvez modifier certains champs dans les documents d'achat reportés, tels que le champ **N° de suivi du colis**. . Pour plus d'informations, voir [Modifier les documents reportés](across-edit-posted-document.md). Pour les champs plus critiques qui concernent la piste d'audit, vous devez inverser ou annuler le report. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md).
 
-## Voir la [formation Microsoft](/training/modules/ship-invoice-items-dynamics-365-business-central/index) associée
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/ship-invoice-items-dynamics-365-business-central/index) associée
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Ventes](sales-manage-sales.md)  
 [Reporter plusieurs documents en même temps](ui-batch-posting.md)  

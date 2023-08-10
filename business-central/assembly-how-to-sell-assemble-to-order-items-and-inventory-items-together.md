@@ -10,7 +10,7 @@ ms.custom: bap-template
 ms.search.keywords: 'kit, kitting'
 ms.search.form: '900, 901, 902, 903, 904, 907, 910, 916, 920, 921, 922, 923, 940, 941, 942, 930, 931, 932, 914, 915, 905'
 ---
-# Vente simultanée d'articles à assembler pour commande et d'articles d'inventaire
+# <a name="sell-assemble-to-order-items-and-inventory-items-together"></a>Vente simultanée d'articles à assembler pour commande et d'articles d'inventaire
 
 Si le champ **Politique d’assemblage** de la fiche article d’un élément d’assemblage indique **Assembler pour stock**, le processus de document de vente se base sur l’hypothèse que l’article est déjà assemblé et peut être prélevé de l'inventaire, s’il est disponible. Par conséquent, aucun ordre d’assemblage n’est automatiquement créé ni lié à la ligne document de vente. Toutefois, si une partie ou la totalité de la quantité n’est pas disponible, vous pouvez créer un ordre d’assemblage pour la quantité restante. Pour ce faire, remplissez le champ **Qté. à assembler pour commande** sur la ligne document de vente. Ce paramètre vous permet d’assembler l’article pour commande même s’il est configuré pour être assemblé pour stock.  
 
@@ -22,7 +22,7 @@ Vous disposez d’une flexibilité similaire lorsque vous vendez des articles à
 > [!NOTE]  
 > La procédure suivante n’inclut pas les étapes de document de vente que vous devez suivre avant de créer un ordre d’assemblage pour les quantités indisponibles.
 
-## Pour vendre des articles à assembler pour commande et des articles d'inventaire ensemble
+## <a name="to-sell-assemble-to-order-items-and-inventory-items-together"></a>Pour vendre des articles à assembler pour commande et des articles d'inventaire ensemble
 
 1. Sur une ligne document de vente pour un article à assembler pour inventaire, entrez une quantité dans le champ **Quantité** qui est supérieure à l’inventaire. La page **Vérifier disponibilité** s'affiche. Pour en savoir plus sur la disponibilité des articles, consultez [Afficher la disponibilité des articles](inventory-how-availability-overview.md).
 2. Dans le champ **Quantité à assembler pour commande**, entrez la valeur du champ **Quantité totale**.  
@@ -32,7 +32,7 @@ Vous disposez d’une flexibilité similaire lorsque vous vendez des articles à
 > [!CAUTION]  
 > Le champ **Code de zone** du document de vente peut contenir la valeur provenant des champs **Code de zone livr. ass. pr comm.** ou **Code de zone post-assemblage** de la fiche emplacement. Si c’est le cas, le champ **Code de zone** de la ligne document de vente peut être incorrect pour cette combinaison de quantités assembler pour commande et assembler pour stock. Il est bon de revérifier que la zone dans le champ **Code de zone** fonctionne pour toutes les quantités. Sinon, entrez les deux quantités différentes sur des lignes document de vente distinctes.  
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Gestion d'assemblage](assembly-assemble-items.md)  
 [Utilisation des nomenclatures d’assemblage](assembly-how-work-assembly-boms.md)  

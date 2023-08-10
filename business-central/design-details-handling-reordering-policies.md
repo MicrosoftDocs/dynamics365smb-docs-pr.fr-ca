@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 02/24/2023
 ms.custom: bap-template
 ---
-# Détails de conception : gestion des méthodes de réapprovisionnement
+# <a name="design-details-handling-reordering-policies"></a>Détails de conception : gestion des méthodes de réapprovisionnement
 
 Pour inclure un article dans la planification de l’approvisionnement, vous devez spécifier une politique de réapprovisionnement pour celui-ci sur la page **Fiche article**. Les méthodes de réapprovisionnement suivantes sont disponibles :  
 
@@ -19,36 +19,36 @@ Pour inclure un article dans la planification de l’approvisionnement, vous dev
 
 Les méthodes **Qté fixe de commande** et **Qté maximum** sont liées à la planification de l’inventaire. Ces méthodes coexistent avec l’équilibrage pas à pas de l’approvisionnement et le chaînage dynamique.  
 
-## Le rôle du point de commande
+## <a name="the-role-of-the-reorder-point"></a>Le rôle du point de commande
 
 Un point de commande représente la demande lors d'un délai. Lorsque l’inventaire prévu passe en dessous du niveau d’inventaire défini par le point de réapprovisionnement, il est temps de commander. L’inventaire diminuera progressivement jusqu’à ce que le réapprovisionnement arrive. Il peut atteindre zéro ou le niveau du stock de sécurité. Le système de planification suggère une commande d’approvisionnement programmée en aval au moment où l'inventaire passe sous le point de réapprovisionnement.  
 
 Les niveaux d'inventaire peuvent varier considérablement au cours de la plage de temps. Par conséquent, le système de planification surveille en permanence l’inventaire disponible.
 
-## Surveillance du niveau d'inventaire prévu et du point de réapprovisionnement
+## <a name="monitoring-the-projected-inventory-level-and-the-reorder-point"></a>Surveillance du niveau d'inventaire prévu et du point de réapprovisionnement
 
 L'inventaire est un type d'approvisionnement, mais pour la planification de l'inventaire, le système de planification différencie deux niveaux d'inventaire :  
 
 * Inventaire prévisionnel  
 * Inventaire disponible prévu  
 
-### Inventaire prévisionnel  
+### <a name="projected-inventory"></a>Inventaire prévisionnel
 
 Au début du processus de planification, l’inventaire prévu est la quantité brute dans l’inventaire. La quantité brute comprend l’offre et la demande reportées et non reportées dans le passé. Cette quantité devient un niveau d'inventaire prévu, maintenu par les quantités brutes de l’offre et de la demande futures. L’offre et la demande futures sont introduites dans la chronologie, qu’elles soient réservées ou allouées d’une autre manière.  
 
 Le système de planification utilise l’inventaire prévu pour surveiller le point de réapprovisionnement et pour déterminer la quantité de réapprovisionnement lorsque la méthode de réapprovisionnement **Qté maximum** est utilisée.  
 
-### Inventaire disponible prévu  
+### <a name="projected-available-inventory"></a>Inventaire disponible prévu
 
 L'inventaire disponible prévu est l'inventaire qui est disponible à un moment donné pour répondre à la demande. Le système de planification utilise l'inventaire disponible prévu lors du contrôle du niveau de stock de sécurité. Le stock de sécurité doit toujours être disponible pour une demande inattendue.  
 
-### Plages de temps  
+### <a name="time-buckets"></a>Plages de temps
 
 L’inventaire prévu est crucial pour détecter le moment où le point de réapprovisionnement est atteint et pour calculer la quantité de commande correcte en utilisant la méthode de réapprovisionnement **Qté maximum**.  
 
 Le niveau d'inventaire prévu est calculé au début de la période de planification. Il s’agit d’un niveau brut qui ne tient pas compte des réservations et des autres allocations. Pour contrôler ce niveau d'inventaire durant la séquence de planification, le système de planification gère les changements cumulés sur une période de temps. Cette période est appelée une *plage de temps*. Pour en savoir plus sur les plages de temps, consultez [Plages de temps](#time-buckets). Le système de planification garantit que la plage de temps est d’au moins un jour. Un jour est l’unité de temps minimale pour les événements d’offre ou de demande.  
 
-### Déterminer le niveau d'inventaire prévu  
+### <a name="determining-the-projected-inventory-level"></a>Déterminer le niveau d'inventaire prévu
 
 La prochaine séquence décrit la manière dont le système de planification détermine le niveau d'inventaire prévu :  
 
@@ -77,7 +77,7 @@ L’image suivante illustre ce principe.
 8. Le système de planification ajoute le rappel de diminution -3 au niveau d'inventaire prévu, soit A : +4 -3 = 1 ou B : +6 -3 = +3.  
 9. Pour A, le système de planification crée une commande programmée en aval qui commence à la date **Da**. Pour B, le point de commande est atteint et aucune commande n’est créée.
 
-## Le rôle de la plage de temps
+## <a name="the-role-of-the-time-bucket"></a>Le rôle de la plage de temps
 
 L'objectif de la plage de temps est de collecter les événements de demande sur la page de temps de manière à effectuer une commande d'approvisionnement commune.  
 
@@ -91,7 +91,7 @@ Le concept de plage de temps reflète le processus manuel consistant à vérifie
 
 Les plages de temps sont souvent utilisées pour éviter un effet de cascade. Par exemple, une ligne équilibrée de demande et d'approvisionnement dans laquelle une demande antérieure est annulée ou une nouvelle demande est créée. Le résultat est que chaque commande d'approvisionnement est reprogrammée (excepté la dernière).
 
-## Rester sous le niveau de dépassement de capacité
+## <a name="stay-below-the-overflow-level"></a>Rester sous le niveau de dépassement de capacité
 
 Lors de l’utilisation des méthodes **Qté maximum** et **Qté fixe de commande**, le système de planification se concentre sur l’inventaire prévu dans l’intervalle de planification donné uniquement. Il peut suggérer un approvisionnement supplémentaire lorsque des modifications de demande négative ou d’offre positive se produisent en dehors de la plage de temps. Pour un approvisionnement supplémentaire, le système de planification calcule la quantité de laquelle vous devez diminuer l’approvisionnement. Cette quantité est appelée « niveau de dépassement de capacité ». Le dépassement de capacité est disponible sous la forme d’une ligne planification avec une action **Changer qté (diminuer)** ou **Annuler** et le message d’avertissement suivant :  
 
@@ -99,11 +99,11 @@ Lors de l’utilisation des méthodes **Qté maximum** et **Qté fixe de command
 
 ![Niveau de dépassement de la capacité d’inventaire.](media/supplyplanning_2_overflow1_new.png "Niveau de dépassement de la capacité d'inventaire")  
 
-### Calcul du niveau de dépassement de capacité  
+### <a name="calculating-the-overflow-level"></a>Calcul du niveau de dépassement de capacité
 
 Le niveau de dépassement de capacité est calculé de différentes manières en fonction de la méthode de réapprovisionnement.  
 
-#### Qté maximum
+#### <a name="maximum-qty"></a>Qté maximum
 
 Niveau de dépassement de capacité = inventaire maximum  
 
@@ -112,7 +112,7 @@ Niveau de dépassement de capacité = inventaire maximum
 >
 > Niveau de dépassement de capacité = inventaire maximum + quantité minimum de commande.  
 
-#### Qté fixe de commande.  
+#### <a name="fixed-reorder-qty"></a>Qté fixe de commande.
 
 Niveau de dépassement de capacité = Quantité de réappro. + Point de commande  
 
@@ -121,15 +121,15 @@ Niveau de dépassement de capacité = Quantité de réappro. + Point de commande
 >
 > Niveau de dépassement de capacité = quantité de réapprovisionnement + quantité minimale de commande  
 
-#### Commandé par ;  
+#### <a name="order-multiple"></a>Commandé par ;
 
 Si un multiple de commande existe, il ajuste le niveau de dépassement de capacité pour les deux méthodes de réapprovisionnement Qté maximum et Qté fixe de commande.  
 
-### Création de la ligne planification avec un avertissement de dépassement capacité  
+### <a name="creating-the-planning-line-with-an-overflow-warning"></a>Création de la ligne planification avec un avertissement de dépassement capacité
 
 Une ligne planification est calculée lorsqu’un approvisionnement rend l'inventaire prévu supérieur au niveau de dépassement de capacité à la fin d’une plage de temps. Pour avertir sur l’approvisionnement supplémentaire, la ligne planification a un message d’avertissement, le champ **Accepter message d’action** n’est pas sélectionné et le message d’action est **Annuler** ou **Changer qté**  
 
-#### Calcul de la quantité pour la ligne planification  
+#### <a name="calculating-the-planning-line-quantity"></a>Calcul de la quantité pour la ligne planification
 
 La quantité sur une ligne planification est calculée comme suit :
 
@@ -138,12 +138,12 @@ quantité pour la ligne planification = quantité d’approvisionnement actuelle
 > [!NOTE]  
 > Pour toutes les lignes d’avertissement, les quantités maximales et minimales de commande et les multiples de commande sont ignorés.  
 
-#### Définir le type de message d’action  
+#### <a name="defining-the-action-message-type"></a>Définir le type de message d’action
 
 * Si la quantité de la ligne planification est supérieure à 0, le message d’action est **Changer qté**  
 * Si la quantité de la ligne planification est égale ou inférieure à 0, le message d’action est **Annuler**  
 
-#### Composition du message d’avertissement  
+#### <a name="composing-the-warning-message"></a>Composition du message d’avertissement
 
 Dans le cas d’un dépassement de capacité, la page **Éléments planification non chaînés** affiche un message d’avertissement avec les informations suivantes :  
 
@@ -153,11 +153,11 @@ Dans le cas d’un dépassement de capacité, la page **Éléments planification
 
 Exemple : « L'inventaire prévisionnel 120 est supérieur au niveau de dépassement de capacité 60 au 01/28/23 »  
 
-### Exemple de scénario  
+### <a name="example-scenario"></a>Exemple de scénario
 
 Dans ce scénario, un client modifie une document de vente de 70 à 40 pièces entre deux exécutions de planification. La fonction de dépassement de capacité réduit l’achat qui a été proposé pour la quantité de ventes initiale.  
 
-#### Configuration d'article  
+#### <a name="item-setup"></a>Configuration d'article
 
 |Politique réapprovisionnement|Qté maximum|  
 |-----------------------|------------------|  
@@ -165,7 +165,7 @@ Dans ce scénario, un client modifie une document de vente de 70 à 40 pièces
 |Point de réapprovisionnement|50|  
 |Stocks|80|  
 
-#### Situation avant la sortie de vente  
+#### <a name="situation-before-sales-decrease"></a>Situation avant la sortie de vente
 
 |Evénement|Changer qté|Inventaire projeté|  
 |-----------|-----------------|-------------------------|  
@@ -174,7 +174,7 @@ Dans ce scénario, un client modifie une document de vente de 70 à 40 pièces
 |Fin de la plage de temps|Aucun|10|  
 |Suggérer un nouveau bon de commande|+90|100|  
 
-#### Situation après la sortie de vente  
+#### <a name="situation-after-sales-decrease"></a>Situation après la sortie de vente
 
 |Activer|Changer qté|Inventaire projeté|  
 |------------|-----------------|-------------------------|  
@@ -184,7 +184,7 @@ Dans ce scénario, un client modifie une document de vente de 70 à 40 pièces
 |Fin de la plage de temps|Aucun|130|  
 |Proposer de réduire l'achat<br><br> achat de 90 à 60|-30|100|  
 
-#### Lignes planification résultantes  
+#### <a name="resulting-planning-lines"></a>Lignes planification résultantes
 
 Le système crée une ligne planification d’avertissement pour réduire l’achat de 30, passant de 90 à 60, pour conserver l'inventaire prévu à 100 conformément au niveau de dépassement de capacité.  
 
@@ -193,7 +193,7 @@ Le système crée une ligne planification d’avertissement pour réduire l’ac
 > [!NOTE]  
 > Sans la fonction de dépassement de capacité, aucun avertissement n’est créé si le niveau d'inventaire prévu est supérieur au maximum, ce qui pourrait entraîner un approvisionnement supplémentaire de 30.
 
-## Traitement de l'inventaire négatif prévu
+## <a name="handling-projected-negative-inventory"></a>Traitement de l'inventaire négatif prévu
 
 Le point de commande exprime la demande anticipée lors du délai de l'article. L’inventaire prévu doit être suffisamment élevé pour couvrir la demande jusqu’à ce que la nouvelle commande soit reçue. Par ailleurs, le stock de sécurité doit se charger des fluctuations de la demande jusqu'à un niveau de service ciblé.  
 
@@ -227,11 +227,11 @@ Dans l’illustration suivante, l’approvisionnement D représente une commande
 
 La section suivante décrit les caractéristiques des quatre méthodes de réapprovisionnement prises en charge.
 
-## Méthodes de réapprovisionnement
+## <a name="reordering-policies"></a>Méthodes de réapprovisionnement
 
 Les méthodes de réapprovisionnement définissent la quantité à commander lorsque l'article doit être réapprovisionné. Quatre différentes méthodes de réapprovisionnement existent.  
 
-### Qté fixe de commande
+### <a name="fixed-reorder-quantity"></a>Qté fixe de commande
 
 La méthode Qté de réapprovisionnement fixe est généralement utilisée pour la planification de l'inventaire pour les articles présentant les caractéristiques suivantes :
 
@@ -241,7 +241,7 @@ La méthode Qté de réapprovisionnement fixe est généralement utilisée pour 
 
 En règle générale, utilisez cette méthode avec un point de commande qui reflète la demande anticipée pendant le délai de livraison de l’article.  
 
-#### Calculé par plage de temps  
+#### <a name="calculated-per-time-bucket"></a>Calculé par plage de temps
 
 Si vous atteignez ou franchissez le point de réapprovisionnement dans une plage de temps (cycle de réapprovisionnement), le système suggère deux actions :
 
@@ -250,7 +250,7 @@ Si vous atteignez ou franchissez le point de réapprovisionnement dans une plage
 
 Le point de commande délimité par un intervalle de planification réduit le nombre de suggestions d’approvisionnement. Il reflète un processus de vérification manuelle du contenu réel des zones dans votre entrepôt.  
 
-#### Crée uniquement l’approvisionnement nécessaire  
+#### <a name="creates-only-necessary-supply"></a>Crée uniquement l’approvisionnement nécessaire
 
 Avant de suggérer une nouvelle commande d’approvisionnement en réponse à un point de réapprovisionnement, le système de planification vérifie l’approvisionnement suivant :
 
@@ -261,7 +261,7 @@ Le système ne proposera pas de nouvelle commande d’approvisionnement si un ap
 
 Les commandes d’approvisionnement qui sont créées spécifiquement pour répondre à un point de réapprovisionnement sont exclues de l’équilibrage de l’approvisionnement et ne seront pas modifiées. Si vous souhaitez supprimer progressivement un article qui a un point de réapprovisionnement, vérifiez manuellement vos commandes d’approvisionnement en attente ou modifiez la méthode de réapprovisionnement en **Lot pour lot**. Le système réduira ou annulera l’approvisionnement supplémentaire.  
 
-#### Associe avec les modificateurs de commande  
+#### <a name="combines-with-order-modifiers"></a>Associe avec les modificateurs de commande
 
 Les modificateurs de commande, Qté minimum commande, Qté maximum commande et Multiple de commande, ne doivent pas jouer de rôle significatif lorsque vous utilisez la méthode Quantité fixe de commande. Cependant, le système de planification les prend en compte :
 
@@ -269,27 +269,27 @@ Les modificateurs de commande, Qté minimum commande, Qté maximum commande et M
 * Augmentez la commande jusqu’à la quantité minimale de commande spécifiée
 * Arrondissez la quantité de commande pour atteindre un multiple de commande spécifié  
 
-#### Associe avec des calendriers  
+#### <a name="combines-with-calendars"></a>Associe avec des calendriers
 
 Avant de suggérer une nouvelle commande d’approvisionnement pour répondre à un point de réapprovisionnement, le système de planification vérifie si la commande est programmée pour un jour chômé. Il utilise les calendriers que vous spécifiez dans le champ **Code calendrier principal** sur les pages **Informations compagnie** et **Fiche emplacement**.  
 
 Si la date prévue est un jour chômé, le système de planification déplace la commande en aval au jour ouvré le plus proche. Le déplacement de la date peut entraîner une commande qui satisfait un point de commande mais ne pas satisfait une demande spécifique. Pour une telle demande non soldée, le système de planification crée un approvisionnement supplémentaire.  
 
-#### Ne doit pas être utilisé avec les prévisions  
+#### <a name="shouldnt-be-used-with-forecasts"></a>Ne doit pas être utilisé avec les prévisions
 
 Étant donné que la demande prévue est déjà exprimée au niveau du point de commande, il n’est pas nécessaire d’inclure une prévision dans la planification. S’il est important de baser le programme sur une prévision, utilisez la méthode **Lot pour lot**.  
 
-#### Ne doit pas être utilisé avec les réservations  
+#### <a name="must-not-be-used-with-reservations"></a>Ne doit pas être utilisé avec les réservations
 
 Si vous avez réservé une quantité, par exemple une quantité dans l’inventaire, pour une demande éloignée, vous pouvez perturber la base de la planification. Même si le niveau d'inventaire projeté est acceptable par rapport au point de réapprovisionnement, les quantités peuvent ne pas être disponibles. Le système peut essayer de compenser en créant des commandes exceptionnelles. Cependant, nous vous recommandons de définir le champ **Réserver** sur **Jamais** sur les articles planifiés à l’aide d’un point de commande.
 
-### Quantité maximale
+### <a name="maximum-quantity"></a>Quantité maximale
 
 La stratégie de la quantité maximum permet de conserver l'inventaire à l'aide d'un point de réapprovisionnement.  
 
 Tout ce qui concerne la stratégie Qté fixe de commande s'applique également à cette méthode. La seule différence est la quantité de l'approvisionnement proposé. Lorsque vous utilisez la méthode de quantité maximale, la quantité de réapprovisionnement sera définie dynamiquement en fonction du niveau d'inventaire prévu. Par conséquent, cela diffère généralement de la méthode Ordre pour ordre.  
 
-#### Calculer par plage de temps
+#### <a name="calculate-per-time-bucket"></a>Calculer par plage de temps
 
 Lorsque vous atteignez ou franchissez le point de réapprovisionnement, le système détermine la quantité de réapprovisionnement à la fin d’une plage de temps. Il mesure l’écart entre le niveau d'inventaire prévu actuel et l'inventaire maximum spécifié pour déterminer la quantité à commander. Le système vérifie alors :
 
@@ -300,7 +300,7 @@ Si tel est le cas, le système réduit la quantité de la nouvelle commande d’
 
 Si vous ne spécifiez pas de quantité d’inventaire maximale, le système de planification garantit que l’inventaire prévu atteint la quantité de réapprovisionnement.
 
-#### Associe avec les modificateurs de commande
+#### <a name="combine-with-order-modifiers"></a>Associe avec les modificateurs de commande
 
 En fonction de votre configuration, il peut être préférable de combiner la méthode Quantité maximale avec des modificateurs de commande : 
 
@@ -308,13 +308,13 @@ En fonction de votre configuration, il peut être préférable de combiner la m�
 * Arrondissez la quantité à un nombre entier d’unités de mesure d’achat
 * Fractionnez la quantité en lots, définis par la quantité maximale de commande  
 
-### Combinaison avec des calendriers
+### <a name="combine-with-calendars"></a>Combinaison avec des calendriers
 
 Avant de suggérer une nouvelle commande d’approvisionnement pour répondre à un point de réapprovisionnement, le système de planification vérifie si la commande est programmée pour un jour chômé. Il utilise les calendriers que vous spécifiez dans le champ **Code calendrier principal** sur les pages **Informations compagnie** et **Fiche emplacement**.  
 
 Si la date prévue est un jour chômé, le système de planification déplace la commande en aval au jour ouvré le plus proche. Le déplacement de la date peut entraîner une commande qui satisfait un point de commande mais ne pas satisfait une demande spécifique. Pour une telle demande non soldée, le système de planification crée un approvisionnement supplémentaire.
 
-### Ordre
+### <a name="order"></a>Ordre
 
 Dans un environnement de fabrication à la commande, un article est acheté ou produit pour couvrir une demande spécifique. En règle générale, la méthode de réapprovisionnement de commande est utilisée pour les articles présentant les caractéristiques suivantes :
 
@@ -330,11 +330,11 @@ Dans un environnement de fabrication à la commande, un article est acheté ou p
 > [!TIP]
 > Si les attributs des articles ne varient pas, il peut être préférable d’utiliser une méthode de réapprovisionnement Lot pour Lot. Par conséquent, le système utilise l'inventaire non planifié et additionne uniquement les documents de vente ayant la même date de livraison ou faisant partie d’une plage de temps définie.  
 
-#### Liens commande à commande et dates d'échéance passées
+#### <a name="order-to-order-links-and-past-due-dates"></a>Liens commande à commande et dates d'échéance passées
 
 Contrairement à la plupart des ensembles approvisionnement-demande, les commandes liées avec des dates d'échéance antérieures à la date début de la planification sont entièrement planifiées par le système. La raison de cette exception est que les ensembles spécifiques offre-demande doivent être synchronisés. Pour plus d’informations sur la zone gelée qui s’applique à la plupart des types d’offre-demande, consultez [Traiter les commandes avant la date début de la planification](design-details-balancing-demand-and-supply.md#process-orders-before-the-planning-start-date).
 
-### Lot pour lot
+### <a name="lot-for-lot"></a>Lot pour lot
 
 La méthode Lot pour Lot est la plus flexible car le système ne réagit qu’à la demande réelle. Il agit sur la demande anticipée à partir des prévisions et des commandes permanentes, puis règle la quantité de la commande en fonction de la demande. La méthode cible les articles pour lesquels l’inventaire peut être accepté, mais il convient de l’éviter.  
 
@@ -354,7 +354,7 @@ Le champ **Période de replanification** contribue à la définition du cycle de
 * Augmentez la commande jusqu’à la quantité minimale de commande spécifiée
 * Diminuez la quantité jusqu’à la quantité de commande maximale spécifiée (et créez deux nouveaux approvisionnements ou plus afin d’atteindre la quantité totale nécessaire)
 
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi
 
 [Détails de conception : paramètres de planification](design-details-planning-parameters.md)  
 [Détails de conception : tableau d'affectation de planification](design-details-planning-assignment-table.md)  

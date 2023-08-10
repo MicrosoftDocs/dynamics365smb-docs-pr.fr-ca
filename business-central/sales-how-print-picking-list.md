@@ -10,13 +10,13 @@ ms.search.keywords: null
 ms.date: 06/25/2021
 ms.author: edupont
 ---
-# Imprimer la liste des prélèvements
+# <a name="print-the-picking-list"></a>Imprimer la liste des prélèvements
 
 Vous pouvez imprimer une liste des prélèvements inventaire directement à partir d’un document de vente ou d’autres documents qui déclenchent la livraison des articles.
 
 Cet rapport est généralement utilisé dans les compagnies sans fonctionnalité dédiée à la gestion des entrepôts, de sorte qu’un employé d'entrepôt peut afficher ou imprimer la liste des prélèvements à partir du document de vente associé. Dans les compagnies avec un volume plus élevé ou des processus plus complexes, la livraison et le prélèvement sont planifiés et effectués dans des documents d’entrepôt dédiés. Learn more at [Flux de désenlogement](design-details-outbound-warehouse-flow.md).
 
-## Pour imprimer une liste des prélèvements à partir d'un document de vente
+## <a name="to-print-a-picking-list-from-a-sales-order"></a>Pour imprimer une liste des prélèvements à partir d'un document de vente
 
 La procédure suivante se base sur un document de vente. Les étapes sont similaires pour tous les autres documents pouvant être utilisés pour lancer la livraison d’articles, par exemple un ordre transfert.
 
@@ -30,7 +30,7 @@ Vous pouvez également enregistrer la liste des prélèvements en tant que docum
 > [!NOTE]
 > Si vous avez utilisé la fonction **Éclater nomenclature** sur le document de vente, seuls les composantes de l'élément d'assemblage associé sont affichées dans le rapport. Learn more at [Utiliser les nomenclatures](inventory-how-work-BOMs.md).
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Inventaire](inventory-manage-inventory.md)  
 [Flux de désenlogement](design-details-outbound-warehouse-flow.md)

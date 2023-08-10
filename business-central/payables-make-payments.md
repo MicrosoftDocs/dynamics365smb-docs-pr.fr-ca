@@ -11,7 +11,7 @@ ms.search.form: '254, 256, 1190, 1191, 1227, 1228, 1229'
 ms.date: 04/01/2021
 ms.author: edupont
 ---
-# Effectuer des paiements
+# <a name="making-payments"></a>Effectuer des paiements
 
 Lorsque vous effectuez des paiements aux fournisseurs ou aux clients, ou des remboursements aux employés, vous reportez les lignes paiement associées sur la page **Journal paiement**. Le journal paiement est un journal général qui est optimisé pour effectuer des paiements et inclut un certain nombre de fonctionnalités puissantes telles que la fonction **Proposer paiements fournisseur** qui rassemble les paiements fournisseur échus, et le rapport **Fournisseur - chronologie sommaire** qui affiche un aperçu des paiements fournisseur échus.  
 
@@ -35,9 +35,9 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Payez un fournisseur en liquide ou par chèque et reportez le paiement lorsque vous reportez la facture. |[Établir rapidement des factures achat](finance-how-to-settle-purchase-invoices-promptly.md) |
 | Assurez-vous que la banque efface uniquement les chèques et les montants validés en envoyant un fichier contenant des informations de paiement, du chèque et du fournisseur. |[Exporter un fichier Positive Pay](finance-how-positive-pay.md) |
 
-## Voir la [formation Microsoft](/training/paths/process-customer-vendor-payments-dynamics-365-business-central/) associée
+## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/paths/process-customer-vendor-payments-dynamics-365-business-central/) associée
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  

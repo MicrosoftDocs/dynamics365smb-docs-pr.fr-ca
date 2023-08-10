@@ -10,7 +10,7 @@ ms.search.form: '506, 521, 9125'
 ms.date: 04/01/2021
 ms.author: edupont
 ---
-# Supprimer et affecter à nouveau des écritures article
+# <a name="remove-and-reapply-item-ledger-entries"></a>Supprimer et affecter à nouveau des écritures article
 Sur la page **Feuille affectation**, vous pouvez visualiser et modifier manuellement certaines écritures affectation article qui sont créées automatiquement lors des transactions d'inventaire.  
 
 Lorsque vous reportez une transaction dans laquelle des articles entrent ou sortent de l'inventaire, une affectation article est créée entre chaque augmentation et diminution d'inventaire. Ces affectations déterminent le flux des coûts des marchandises entrant dans l'inventaire vers les coûts des marchandises sortant de l'inventaire. En raison du mode de calcul du coût unitaire, une affectation article incorrecte peut engendrer une erreur au niveau du coût moyen ou du coût unitaire. Pour plus d'informations, voir Détails de conception : traçabilité.
@@ -33,7 +33,7 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
     - Vous pouvez supprimer des affectations à partir de plusieurs écritures en même temps dans la feuille de travail affectation. Toutefois, comme l'affectation d'écritures affecte l'ensemble des écritures qui sont disponibles pour l'affectation, vous ne pouvez pas créer une affectation pour plusieurs écritures à la fois.
     - La feuille de travail affectation ne peut pas effectuer une affectation dans le cas suivant : si la quantité en stock est insuffisante pour l'affectation, la feuille de travail affectation ne peut pas effectuer une affectation lorsque vous tentez d'affecter une écriture diminution d'inventaire sans informations de traçabilité sur une écriture augmentation d'inventaire avec informations de traçabilité.
 
-## Pour supprimer une affectation article en utilisant le journal affectation
+## <a name="to-remove-an-item-application-by-using-the-application-worksheet"></a>Pour supprimer une affectation article en utilisant le journal affectation
 
 1.  Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 1.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille affectation**, puis sélectionnez le lien associé.  
 2.  La page **Feuille affectation** s'ouvre en affichant les écritures article existantes de tous les articles.  
@@ -50,7 +50,7 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
 >   
 >  **Il est impossible d'effectuer cette action car l'affectation des écritures pour l'article \<item\> est annulée dans la feuille de travail affectation par l'utilisateur \<user\>.**  
 
-## Pour affecter à nouveau une affectation article en utilisant le journal affectation
+## <a name="to-reapply-an-item-application-by-using-the-application-worksheet"></a>Pour affecter à nouveau une affectation article en utilisant le journal affectation
 
 1.  Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 2.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille affectation**, puis sélectionnez le lien associé.  
 2.  La page **Feuille affectation** s'ouvre en affichant les écritures article existantes de tous les articles.  
@@ -67,7 +67,7 @@ Si vous ne pouvez pas utiliser un document pour une nouvelle affectation, par ex
     >  Si vous avez choisi d'effectuer une affectation qui créerait une boucle infinie dans le processus d'ajustement des coûts, l'affectation que vous avez proposée n'est pas appliquée. Cela peut se produire lorsque les écritures originales ont créé un stock négatif. L'affectation n'est pas effectuée. Par conséquent, vous devez sélectionner une autre écriture pour l'affectation.  
 6.  Si, dans les **Paramètres stock**, le champ **Ajustement automatique des coûts** est défini sur **Toujours**, le traitement par lots d'ajustement des coûts est exécuté automatiquement après que vous avez effectué un relettrage. Sinon, exécutez le traitement en lot **Ajuster coûts - Écr. article** pour être sûr que tous les coûts sont actualisés.  
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal article](finance-how-to-close-open-item-ledger-entries-resulting-from-fixed-application-in-the-item-journal.md)  
  [Traiter les retours ou annulations d'achats](purchasing-how-process-purchase-returns-cancellations.md)  

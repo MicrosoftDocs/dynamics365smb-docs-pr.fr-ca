@@ -11,11 +11,11 @@ ms.search.form: '10140, 10141, 10143,10144,10146,10147,10148,36646'
 ms.date: 06/17/2021
 ms.author: edupont
 ---
-# Créer des dépôts dans la version canadienne
+# <a name="create-deposits-in-the-canadian-version"></a>Créer des dépôts dans la version canadienne
 
 [!INCLUDE [create-deposits](../includes/CAMXUS/create-deposits.md)]
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Fonctionnalités locales Canada](canada-local-functionality.md)  
 [Finance](../../finance.md)  
