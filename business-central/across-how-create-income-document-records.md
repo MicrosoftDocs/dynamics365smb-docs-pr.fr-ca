@@ -1,16 +1,16 @@
 ---
 title: Créer des enregistrements document entrant
 description: 'Utilisez différentes fonctions sur la page Documents entrants pour consulter les reçus de dépenses, gérer les tâches d’OCR, convertir les fichiers de documents entrants et joindre des fichiers externes.'
-author: SorenGP
-ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+author: jswymer
+ms.topic: how-to
+ms-service: dynamics365-business-central
 ms.search.keywords: 'electronic document, e-invoice, incoming document, OCR, ecommerce, document exchange, import invoice'
-ms.date: 06/14/2022
-ms.author: edupont
+ms.date: 03/2/2023
+ms.author: jswymer
+ms.custom: bap-template
+ms.reviewer: jswymer
 ---
-# <a name="create-incoming-document-records"></a>Créer des enregistrements document entrant
+# Créer des enregistrements document entrant
 
 Sur la page **Documents entrants**, vous pouvez utiliser différentes fonctions pour examiner les reçus de dépenses, gérer les tâches ROC et convertir les fichiers document entrants, manuellement ou automatiquement, en documents ou lignes journal appropriés. Les fichiers externes peuvent être joints à n'importe quelle étape du processus, notamment en ce qui concerne les documents reportés et les écritures fournisseur, client et grand livre résultantes.
 
@@ -18,7 +18,7 @@ Pour enregistrer un document externe dans [!INCLUDE[prod_short](includes/prod_sh
 
 Avant d’utiliser la fonctionnalité **Documents entrants**, vous devez exécuter la configuration requise. Pour plus d'informations, voir [Configurer des documents entrants](across-how-setup-income-documents.md).
 
-## <a name="approve-or-reject-an-incoming-document"></a>Approbation ou rejet d'un document entrant
+## Approuver ou rejeter un document entrant
 
 Si vous avez mis en place la fonction **Documents entrants** pour exiger une approbation pour créer des documents, les utilisateurs disposant des droits appropriés doivent approuver les enregistrements avant qu’ils ne soient traités. Pour plus d’informations, voir [Configurez des approbateurs des enregistrements de documents entrants](across-how-setup-income-documents.md#to-set-up-approvers-of-incoming-document-records).
 
@@ -27,7 +27,7 @@ Si vous avez mis en place la fonction **Documents entrants** pour exiger une app
 
 Si vous approuvez l'enregistrement document entrant, la case à cocher **Lancé** de la ligne document entrant est activée. L'utilisateur chargé de créer, par exemple, des factures achat peut continuer à traiter l'enregistrement.
 
-## <a name="create-an-incoming-document-record-by-taking-a-photo"></a>Pour créer un enregistrement de document entrant en prenant une photo
+## Créer un enregistrement de document entrant en prenant une photo
 
 > [!NOTE]  
 > La procédure suivante s’applique uniquement aux clients disposant de tablettes et de téléphones équipés de [!INCLUDE[prod_short](includes/prod_short.md)].
@@ -39,7 +39,7 @@ Si vous approuvez l'enregistrement document entrant, la case à cocher **Lancé*
 
     Un enregistrement de document entrant est créé, avec l’image jointe.
 
-## <a name="attach-an-image-to-an-incoming-document-record-by-taking-a-photo"></a>Pour joindre une image à un enregistrement de document entrant en prenant une photo
+## Joindre une image à un enregistrement de document entrant en prenant une photo
 
 > [!NOTE]  
 > La procédure suivante s’applique uniquement aux clients disposant de tablettes et de téléphones équipés de [!INCLUDE[prod_short](includes/prod_short.md)].
@@ -51,19 +51,23 @@ Si vous approuvez l'enregistrement document entrant, la case à cocher **Lancé*
 
     L'image est jointe à l'enregistrement de document entrant.
 
-## <a name="create-an-incoming-document-record-manually"></a>Pour créer un enregistrement document entrant manuellement
+## Créer un enregistrement document entrant manuellement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents entrants**, puis choisissez le lien associé.
 2. Sélectionnez l’action **Nouveau**, puis l’action **Créer à partir d’un fichier**.  
-3. Sur la page **Insérer un fichier**, sélectionnez un fichier, puis choisissez **Ouvrir**. Le fichier est automatiquement joint.
-4. Sinon, choisissez l'action **Nouveau**.
-5. Pour joindre un fichier, choisissez l’action **Traiter**, puis **Joindre un fichier**.
-6. Sur la page **Insérer un fichier**, sélectionnez le fichier qui représente le document entrant concerné, puis choisissez le bouton **Ouvrir**.
-7. Sur la page **Document entrant**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+3. Sur la page **Insérer un fichier**, effectuez l’une des étapes suivantes pour joindre un fichier qui représente le document entrant :
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/incoming-documents-dynamics-365-business-central/) associée
+   [!INCLUDE[file-upload](includes/file-upload.md)]
 
-## <a name="see-also"></a>Voir aussi .
+4. Vous pouvez également choisir l’action **Nouveau** , puis suivre les étapes suivantes :
+
+    1. Pour joindre un fichier, choisissez **Processus** > **Joindre un fichier**.
+    2. Sur la page **Insérer un fichier**, faites glisser le fichier sélectionné qui représente le document entrant concerné ou sélectionnez **cliquez ici pour parcourir** pour trouver et ouvrir le fichier.
+    3. Sur la page **Document entrant**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
+
+## Voir la [formation Microsoft](/training/modules/incoming-documents-dynamics-365-business-central/) associée
+
+## Voir aussi .
 
 [Utiliser un service OCR pour convertir des fichiers PDF et image en documents électroniques](across-how-use-ocr-pdf-images-files.md)
 [Créer des enregistrements document entrant directement à partir de documents et d’écritures](across-how-connect-disconnect-income-document-records.md)

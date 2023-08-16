@@ -34,11 +34,6 @@ La case **Lettré** est cochée sur les lignes pour lesquelles les écritures co
 
 Lorsque la valeur du champ **Solde total** du volet **Lignes relevé bancaire** est égale à la valeur totale du champ **Solde à simuler** ainsi que le champ **Solde dernier relevé** du volet **Écritures de compte bancaire**, vous pouvez sélectionner l’action **Reporter**. Toutes les écritures de compte bancaire sans correspondance resteront sur la page, indiquant les différences que vous devez résoudre pour rapprocher le compte bancaire.
 
-Pour revérifier le rapprochement de votre compte bancaire avant de le reporter, utilisez l’action **Rapport de test** pour préparer un aperçu du rapprochement. Le rapport est disponible dans les contextes suivants :
-
-* Lorsque vous préparez un rapprochement bancaire sur la page **Rapprochement bancaire**.
-* Lorsque vous rapprochez des paiements sur la page **Journaux rapprochement des paiements**.
-
 Toutes les lignes qui ne peuvent pas être mises en correspondance, indiquées par une valeur dans le champ **Différence**, resteront sur la page **Rapprochement bancaire** après report. Elles représentent une certaine forme de différence que vous devez résoudre avant de pouvoir effectuer le rapprochement des comptes bancaires. Le tableau suivant décrit quelques situations commerciales typiques qui peuvent entraîner des différences.
 
 | Distinction | Motif | Résolution |
@@ -97,7 +92,7 @@ Vous pouvez rechercher la base des correspondances en utilisant l’action **Dé
     Si vous saisissez 0 ou laissez le champ vide, l’action **Faire correspondre automatiquement** recherchera uniquement les dates de transaction correspondantes sur la date de report de l’écriture compte bancaire.
 3. Choisissez le bouton **OK**.
 
-    Les lignes sont codées par couleur pour faciliter la compréhension de ce qu’il faut en faire. Toutes les lignes de relevé bancaire et les écritures de compte bancaire qui peuvent être rapprochées deviennent vertes, et la case **Affecté** est cochée. Les écritures compte bancaire qui sont déjà appariées sur d’autres rapprochements bancaires sont affichées en bleu.
+    Les lignes sont codées par couleur pour faciliter la compréhension de ce qu’il faut en faire. Les lignes de relevé bancaire et les écritures du compte bancaire qui correspondent au rapprochement bancaire actuel sont affichées en vert gras. Les écritures de compte bancaire qui sont appariées sur d’autres rapprochements bancaires sont affichées en bleu italique.
 4. Pour supprimer une correspondance, sélectionnez la ligne de relevé bancaire, et sélectionnez l'action **Supprimer correspondance**.
 
 > [!TIP]
@@ -107,6 +102,13 @@ Vous pouvez rechercher la base des correspondances en utilisant l’action **Dé
 
 > [!TIP]
 > Lors de la mise en correspondance manuelle des lignes et des écritures, les actions **Afficher tout**, **Afficher les écritures inversées**, **Masquer les écritures inversées** et **Afficher non-correspondances** peuvent faciliter l’obtention d’une vue d’ensemble. Par défaut, les écritures du compte bancaire n’incluent pas les écritures inversées sans correspondance. Pour inclure ces écritures dans la liste et les faire correspondre manuellement, sélectionnez l’action **Afficher les écritures inversées**. Si vous choisissez de masquer les écritures inversées après avoir effectué une ou plusieurs correspondances, les écritures correspondantes sont toujours affichées.
+
+> [!NOTE]
+> Vous ne pouvez pas publier de rapprochement bancaire si vous effectuez une correspondance plusieurs à un et que les montants combinés contiennent des différences. Cela est vrai même si les différences combinées s’équilibrent à zéro.
+>
+> Voici un exemple de correspondance plusieurs-à-un qui présente des différences. La valeur de 200 pour l’écriture de relevé bancaire 1 est mise en correspondance avec deux écritures bancaires qui ont une valeur totale de 180. La différence est de 20. La valeur de 350 pour l’écriture de relevé bancaire 2 est mise en correspondance avec deux autres écritures bancaires qui ont une valeur totale de 370. La différence est de -20, ce qui équilibre la valeur de 20 pour le relevé bancaire 1.  
+>
+> Pour reporter un rapprochement bancaire avec des différences sur les lignes, reportez les différences, puis rapprochez-les des écritures reportées.
 
 1. Sur la page **Rapprochement comptes bancaires**, sélectionnez une ligne non affectée dans le volet **Lignes relevé bancaire**.
 2. Dans le volet **Écritures comptables compte bancaire**, sélectionnez une ou plusieurs écritures comptables compte bancaire qui peuvent être mise en correspondance avec la ligne de relevé bancaire sélectionnée. Pour choisir plusieurs lignes, sélectionnez et maintenez la touche <kbd>CTRL</kbd> enfoncée, puis sélectionnez les lignes.
@@ -121,6 +123,49 @@ Vous pouvez rechercher la base des correspondances en utilisant l’action **Dé
 > [!TIP]
 > Pour supprimer une correspondance, sélectionnez la ligne de relevé bancaire, et sélectionnez l'action **Supprimer correspondance**. Si vous avez rapproché plusieurs lignes de relevé bancaire avec une écriture et que vous devez supprimer une ou plusieurs des lignes correspondantes, toutes les correspondances manuelles sont supprimées pour l’écriture lorsque vous choisissez **Supprimer la correspondance**.
 
+## Pour valider votre rapprochement bancaire
+
+Pour revérifier le rapprochement de votre compte bancaire avant de le reporter, utilisez l’action **Rapport de test** pour afficher un aperçu du rapprochement. Le rapport est disponible dans les contextes suivants :
+
+* Lorsque vous préparez un rapprochement bancaire sur la page **Rapprochement bancaire**.
+* Lorsque vous rapprochez des paiements sur la page **Journaux rapprochement des paiements**.
+
+Les lignes qui ne peuvent pas être appariées restent sur la page **Rapprochement bancaire** après le report. Ces lignes contiennent une valeur dans le champ **Différence**. La différence représente un écart que vous devez résoudre avant de pouvoir effectuer le rapprochement des comptes bancaires. Le tableau suivant décrit quelques situations commerciales typiques qui peuvent entraîner des différences.
+
+| Distinction | Motif | Résolution |
+|------------|--------|------------|
+| Une transaction dans votre compte bancaire dans [!INCLUDE[prod_short](includes/prod_short.md)] ne figure pas sur le relevé bancaire. | La transaction bancaire n’a pas été créée alors qu’un report a été effectué dans [!INCLUDE[prod_short](includes/prod_short.md)]. | Créez la transaction manquante (ou demandez à un débiteur de la faire). Réimportez ensuite le fichier de relevé de compte ou saisissez la transaction manuellement. |
+| Une transaction sur le relevé bancaire n’existe pas en tant que ligne journal ou document dans [!INCLUDE[prod_short](includes/prod_short.md)]. | Une transaction bancaire a été effectuée sans report correspondant dans [!INCLUDE[prod_short](includes/prod_short.md)], par exemple le report d'une ligne journal pour une dépense. | Créez et reportez l'écriture manquante. Pour apprendre un moyen rapide de lancer cette opération, consultez [Pour créer des écritures manquantes avec lesquelles faire correspondre des transactions bancaires](bank-how-reconcile-bank-accounts-separately.md#to-create-missing-ledger-entries-to-match-bank-statement-lines). |
+| Une transaction dans le compte bancaire interne correspond à une transaction bancaire, mais certaines informations sont trop différentes pour établir une correspondance. | Des informations, telles que le montant ou le nom du client, ont été saisies différemment dans la transaction bancaire et le report interne. | Vérifiez les informations, puis faites les correspondre manuellement. Corrigez éventuellement la non-concordance des informations. |
+
+Vous devez corriger les différences, par exemple en créant des écritures manquantes et en corrigeant les informations qui ne correspondent pas, ou en effectuant les transactions d’argent qui n’ont pas eu lieu, jusqu’à ce que le rapprochement du compte bancaire soit terminé et reporté.
+
+> [!NOTE]
+> La page Rapprochement bancaire et le rapport de test supposent que vous n’effectuez le rapprochement que dans la période jusqu’à la date de fin du relevé. Si vous associez une ligne de relevé bancaire à une écriture bancaire avant de saisir une date de fin de relevé, puis que vous saisissez une date de fin de relevé postérieure à la date de fin de l’écriture bancaire, les données du rapport de test sont incorrectes.
+
+Le tableau suivant décrit les champs du rapport de test qui peuvent vous aider à effectuer le rapprochement bancaire.
+
+|Champ  |Désignation  |
+|---------|---------|
+|Date relevé| La date spécifiée dans le champ **Date du relevé** sur la page **Rapprochement bancaire**.|
+|Solde dernier relevé|Le solde spécifié dans le champ **Solde dernier relevé** sur la page **Rapprochement bancaire**. Celui-ci est renseigné automatiquement à partir du rapprochement le plus récent pour le même compte bancaire. La valeur est zéro s’il s’agit de votre premier rapprochement de compte bancaire.|
+|Solde final du relevé|Le solde spécifié dans le champ **Solde final du relevé** sur la page **Rapprochement bancaire**. |
+|N° de compte du grand livre <*numéro*> Solde au <*date*> | Le solde du compte du grand livre à la date de fin du relevé. Il s’agit du solde non filtré à cette date. Si votre banque utilise votre devise locale, ce solde doit être le même que le solde de votre compte bancaire (affiché sur le côté droit de l’en-tête du rapport) lorsque vous avez rapproché toutes les lignes du relevé. Un **()** vide dans le nom de ce champ signifie que votre banque utilise la devise locale.<br><br>Une différence entre ce champ et les champs précédents pourrait indiquer que vous avez reporté directement sur le compte du grand livre ou que vous utilisez le même compte du grand livre pour plusieurs banques, ce qui n’est pas recommandé. Les banques sont liées au grand livre via le groupe de report du compte bancaire spécifié pour le compte.<br><br>Le rapport de test affiche un avertissement si vous avez des écritures directes, même si le solde de l’écriture est nul. Les écritures directes non soldées entraînent souvent des écarts cumulés pour les futurs rapprochements bancaires. Vous devez vérifier le solde du grand livre et les écritures avant de reporter le rapprochement bancaire. Pour en savoir plus sur le report direct, consultez [Éviter le report direct](#avoid-direct-posting).|
+|N° de compte du grand livre <*numéro*> Solde (<*$*>) au <*date*>| Le solde du compte du grand livre à la date de fin du relevé en devise locale. Le solde est converti dans la devise du compte bancaire en utilisant le taux de change en vigueur à la date de fin du relevé. Il s’agit du solde non filtré à cette date. Vous comparez cela au champ **N° de compte G/L <* numéro *> solde au <* date*>* si votre banque utilise une devise étrangère. La valeur dans le champ du numéro de compte du grand livre <* numéro *> Solde au <* date*> pour la devise locale pourrait différer légèrement, car la conversion de devise peut entraîner de petites différences. Le solde de votre banque doit être très proche de ce solde.  |
+|Solde compte bancaire au <*date*>| Le solde du compte bancaire à la date de fin du relevé.|
+|Somme des différences    | La somme des différences pour les lignes de relevé. Pour accéder aux détails, activez le bouton **Imprimer les transactions restantes** lorsque vous saisissez des critères pour le rapport. Une différence est une ligne de relevé bancaire qui ne correspond pas complètement à une ou plusieurs écritures bancaires. Vous ne pouvez pas reporter un rapprochement de compte bancaire qui présente des différences. Vous pouvez reporter un rapprochement bancaire contenant des écritures bancaires qui ne correspondent pas aux lignes de relevé. Cette valeur est indiquée dans le champ **Transactions bancaires restantes** et dans une section distincte si vous activez le bouton à bascule Imprimer les transactions restantes.      |
+|Solde relevé     | La valeur spécifiée dans le champ **Solde final du relevé** sur la page **Rapprochement bancaire**.  |
+|Transactions bancaires restantes     | La somme des écritures bancaires non appariées et autres que des chèques dont la date de report est égale ou antérieure à la date de fin du relevé. Cela se produit lorsque vous enregistrez des transactions avant qu’elles ne soient enregistrées dans votre banque. Par exemple, à la fin d’une période. Lorsque vous créez le prochain rapprochement bancaire, vous pouvez rapprocher ces écritures.        |
+|Chèques restants     | La somme des écritures bancaires non appariées et autres que des chèques dont la date de report est égale ou antérieure à la date de fin du relevé. Cela se produit lorsque vous enregistrez des transactions avant qu’elles ne soient enregistrées dans votre banque. Par exemple, cela peut se produire pour les chèques si un fournisseur n’encaisse pas un chèque au cours de la même période que vous l’avez enregistré. Lorsque vous créez le prochain rapprochement bancaire, vous pouvez rapprocher ces écritures.        |
+|Solde compte bancaire     | Somme des valeurs du solde final du relevé bancaire, des transactions bancaires en cours et des chèques restants. Une fois que vous avez traité toutes les différences sur les entrées correspondantes, ce solde correspond à votre solde bancaire. Par exemple, vous avez comptabilisé toutes les écritures correspondantes ainsi que les écritures que vous n’avez pas pu faire correspondre pour ce relevé bancaire. Vous pouvez reporter le rapprochement.        |
+
+> [!TIP]
+> Si vous lancez le **rapport de test** depuis la page **Journal rapprochement bancaire**, [!INCLUDE [prod_short](includes/prod_short.md)] calcule la valeur dans le **Solde final du relevé** comme suit :
+>
+> * solde dernier relevé + somme de toutes les lignes du journal de rapprochement bancaire
+>
+> Vous pouvez utiliser la valeur pour comparaison avec votre relevé bancaire.
+
 ## Pour créer des écritures manquantes avec lesquelles faire correspondre des lignes relevé bancaire
 
 Les relevés bancaires comportent parfois des montants correspondant à la facturation d’intérêts ou de frais. Ces lignes relevé bancaire ne peuvent pas être mises en correspondance, car il n’existe aucune écriture associée dans [!INCLUDE[prod_short](includes/prod_short.md)]. Vous devez ensuite reporter une ligne journal pour chaque transaction afin de créer une écriture associée avec laquelle elle peut être mise en correspondance.
@@ -128,9 +173,9 @@ Les relevés bancaires comportent parfois des montants correspondant à la factu
 1. Sur la page **Rapprochement compte bancaire**, sélectionnez l'action **Transférer vers journal général**.  
 2. Sur la page **Tr. rapp. cpte banq.-jrnl gén.**, indiquez le journal général à utiliser, puis cliquez sur le bouton **OK**.
 
-    La page **Journal général** s'ouvre. Elle contient de nouvelles lignes journal pour toutes les lignes de relevé bancaire dont les écritures sont manquantes.
-3. Renseignez la ligne journal avec les informations appropriées, comme le compte de contrepartie. Pour plus d'informations, reportez-vous à [Utilisation des feuilles comptabilité](ui-work-general-journals.md).  
-4. Pour examiner le résultat du report avant de reporter, choisissez l'action **Rapport de test**. L'état **Relevé de compte bancaire** s'ouvre et affiche les mêmes champs que dans l'en-tête de la page **Rapprochement compte bancaire**.
+    La page **Journal général** s’ouvre. Elle contient de nouvelles lignes journal pour toutes les lignes de relevé bancaire dont les écritures sont manquantes.
+3. Renseignez la ligne journal avec les informations, comme le compte de contrepartie. Pour plus d'informations, reportez-vous à [Utilisation des feuilles comptabilité](ui-work-general-journals.md).  
+4. Pour examiner le résultat du report avant de reporter, choisissez l’option **Rapport de test**, puis choisissez une option pour accéder au rapport. Le rapport **Relevé de compte bancaire** affiche les mêmes champs que dans l’en-tête de la page **Rapprochement bancaire**.
 5. Sélectionnez l'action **Valider**.
 
     Une fois l’écriture reportée, faites-lui correspondre la ligne de relevé bancaire.
@@ -197,11 +242,11 @@ Cette erreur se produit souvent lors de la saisie d’un solde d’ouverture pou
 ## Voir la [formation Microsoft](/training/modules/bank-reconciliation-dynamics-365-business-central/index) associée
 
 ## Voir aussi
+
 [Rapprochement de comptes bancaires](bank-manage-bank-accounts.md)  
 [Lettrage automatique des paiements et rapprochement des comptes bancaires](receivables-apply-payments-auto-reconcile-bank-accounts.md)  
 [Paramétrage des opérations bancaires](bank-setup-banking.md)  
 [Configurer des règles pour l'affectation automatique des paiements](receivables-how-set-up-payment-application-rules.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

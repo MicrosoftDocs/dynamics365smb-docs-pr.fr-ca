@@ -11,7 +11,7 @@ ms.search.form: '36, 5870, 5872, 5874'
 ms.date: 09/26/2022
 ms.author: edupont
 ---
-# <a name="work-with-assembly-boms"></a>Utilisation des nomenclatures d’assemblage
+# Utilisation des nomenclatures d’assemblage
 
 Les nomenclatures d’assemblage permettent de structurer les articles parents qui doivent être assemblés à partir de composantes, avec peu ou pas de ressources utilisées. Une nomenclature d’assemblage peut être utilisée, par exemple, pour vendre un article parent sous la forme d’un kit constitué de composantes.
 
@@ -21,7 +21,7 @@ Une nomenclature d'assemblage contient les données de base qui définissent les
 
 [!INCLUDE[prod_short](includes/prod_short.md)] prend également en charge les nomenclatures de production. Les nomenclatures de production diffèrent des nomenclatures d’assemblage en impliquant des procédures plus complexes, notamment l’utilisation des ressources, les itinéraires de production et les centres ou unités de production. Découvrez les différences dans les sections [Utiliser les nomenclatures](inventory-how-work-BOMs.md) et [Créer des nomenclatures de production](production-how-to-create-production-boms.md).
 
-## <a name="to-create-an-assembly-bom"></a>Pour créer une nomenclature d'assemblage
+## Pour créer une nomenclature d'assemblage
 
 Pour définir un article parent constitué d'autres articles, et potentiellement des ressources nécessaires pour regrouper les articles parents, vous devez créer une nomenclature d'assemblage.  
 
@@ -45,7 +45,7 @@ Il y a deux parties pour créer une nomenclature d'assemblage :
 > [!TIP]
 > Les éléments d’assemblage peuvent avoir différentes variantes définies dans [!INCLUDE[prod_short](includes/prod_short.md)], comme tout autre article, ce qui vous aide à réduire la liste des produits disponibles. Découvrez plus d’informations sur la fonctionnalité dans la section [Gérer les variantes de produits](inventory-item-variants.md).
 
-## <a name="to-edit-assembly-boms"></a>Pour modifier les nomenclatures d'assemblage
+## Pour modifier les nomenclatures d'assemblage
 
 Vous pouvez modifier les lignes d'une nomenclature d'assemblage à tout moment. Mais sachez que la nomenclature peut être utilisée sur les ventes en cours ou les assemblages du parent, qui peuvent être affectés par le changement. Sélectionnez l'action **Cas d'emploi** pour voir dans quels articles elle est utilisée et si les ordres d'assemblage ou de vente peuvent être affectés.
 
@@ -53,7 +53,7 @@ Vous pouvez modifier les lignes d'une nomenclature d'assemblage à tout moment. 
 2. Sélectionnez **Oui** dans la colonne **Nomenclature d'assemblage**.
 3. Sur la page **Nomenclature d’assemblage**, sélectionnez l’action **Modifier la liste**, puis modifiez n’importe quel champ selon vos besoins.
 
-## <a name="to-view-components-and-resources-indented-according-to-the-bom-structure"></a>Pour afficher les composantes et les ressources décalés selon la structure de la nomenclature
+## Pour afficher les composantes et les ressources décalés selon la structure de la nomenclature
 
 Sur la page **Nomenclature d'assemblage**, vous pouvez ouvrir une page distincte qui affiche les composantes et les ressources décalées selon la position de leur nomenclature sous l'article d'assemblage.
 
@@ -62,7 +62,7 @@ Sur la page **Nomenclature d'assemblage**, vous pouvez ouvrir une page distincte
 3. Sur la page **Fiche article**, sélectionnez l’action **Assemblage**, puis l’action **Nomenclature d’assemblage**.
 4. Sur la page **Nomenclature d'assemblage**, sélectionnez l'action **Afficher nomenclature**.
 
-## <a name="to-replace-the-assembly-item-with-its-components-on-document-lines"></a>Pour remplacer l'article d'assemblage par ses composantes dans les lignes document
+## Pour remplacer l'article d'assemblage par ses composantes dans les lignes document
 
 Dans n'importe quel document vente et achat qui contient un élément d'assemblage, vous pouvez utiliser une fonction spéciale pour remplacer la ligne de l'élément d'assemblage par de nouvelles lignes pour ses composantes. Cette option est utile, par exemple, si vous souhaitez vendre des composantes sous forme de kit représentant l'élément d'assemblage.
 
@@ -82,7 +82,7 @@ Tous les champs de la ligne facture vente pour l'élément d'assemblage sont dé
 > [!NOTE]
 > Le rapport **Liste de prélèvement par ordre** est également modifié pour afficher uniquement les composantes. Cela signifie qu'un magasinier qui choisit l'article parent, l'élément d'assemblage, ne le verra pas dans la liste de prélèvement. Pour plus d’informations, consultez [Imprimer la liste des prélèvements](sales-how-print-picking-list.md).
 
-## <a name="to-calculate-the-standard-cost-of-an-assembly-item"></a>Pour calculer le coût standard d'un élément d'assemblage
+## Pour calculer le coût standard d'un élément d'assemblage
 
 Vous calculez le coût unitaire d’un élément d’assemblage en regroupant le coût unitaire de chaque composante et ressource dans la nomenclature d’assemblage de l’article.
 
@@ -106,9 +106,9 @@ Le coût unitaire d'une nomenclature d'assemblage équivaut toujours au total de
 
 Les coûts des articles constituant la nomenclature d'assemblage sont copiés à partir des fiches article de la composante. Le coût de chaque article est multiplié par sa quantité, et le coût total est affiché dans le champ **Coût unitaire** sur la fiche article.
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/set-up-assembly-items-dynamics-365-business-central/) associée.
+## Voir la [formation Microsoft](/training/modules/set-up-assembly-items-dynamics-365-business-central/) associée.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Enregistrer de nouveaux articles](inventory-how-register-new-items.md)  
 [Gérer les variantes de produits](inventory-item-variants.md)  

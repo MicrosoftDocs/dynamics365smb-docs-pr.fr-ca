@@ -11,7 +11,7 @@ ms.search.form: 100
 ms.date: 08/18/2022
 ms.author: jswymer
 ---
-# <a name="closing-years-and-periods"></a>Fermeture des exercices et des périodes
+# Fermeture des exercices et des périodes
 
 À la fin d’un exercice financier, vous devez exécuter un certain nombre de tâches administratives, par exemple vous assurer que tous les documents et les journaux sont reportés en veillant à ce que les données de devise soient à jour, à ce que la comptabilité soit fermée, etc. Les tâches réelles dépendent de votre compagnie.
 
@@ -29,9 +29,9 @@ Le tableau suivant fournit un aperçu des tâches que vous devez généralement 
 | Fermez les périodes comptables et l'exercice financier, transférez des soldes d'état des résultats sur des comptes de bilan et reportez l'écriture de fermeture de fin d'exercice. |[Clôture plans](year-close-books.md) |
 | Imprimer des états qui peuvent vous aider à créer des états financiers. |[Préparation des états de clôture](year-prepare-close-statement.md) |
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/close-fiscal-year-dynamics-365-business-central/index) associée
+## Voir la [formation Microsoft](/training/modules/close-fiscal-year-dynamics-365-business-central/index) associée
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Utiliser des périodes et exercices financiers comptables](finance-accounting-periods-and-fiscal-years.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
