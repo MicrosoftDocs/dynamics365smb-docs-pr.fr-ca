@@ -10,7 +10,7 @@ ms.search.form: '99000842, 99000843, 99000861, 99000862, 99000863'
 ms.date: 06/25/2021
 ms.author: edupont
 ---
-# Replanifier ou actualiser directement des ordres de fabrication
+# <a name="replan-or-refresh-production-orders-directly"></a>Replanifier ou actualiser directement des ordres de fabrication
 
 La fonction **Replanifier** des bons de production est généralement utilisée après avoir ajouté ou modifié des composantes constituant des bons de production sous-jacents. La fonction calcule les modifications apportées aux composantes et aux lignes itinéraires. Elle inclut les articles situés à des niveaux de nomenclatures de production inférieurs, pour lesquels elle peut générer de nouveaux bons de production.  
 
@@ -28,7 +28,7 @@ Vous pouvez soit insérer les lignes bon de production manuellement, soit utilis
 > [!NOTE]
 > Si vous utilisez la fonction Actualiser pour recalculer des lignes O.F., les anciennes lignes O.F. sont supprimées et de nouvelles lignes sont calculées.  
 
-## Pour replanifier un bon de production
+## <a name="to-replan-a-production-order"></a>Pour replanifier un bon de production
 
 1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 1.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de production planifiés fermes**, puis sélectionnez le lien associé.  
 2. Ouvrez l'ordre de fabrication à replanifier.  
@@ -57,7 +57,7 @@ Vous pouvez soit insérer les lignes bon de production manuellement, soit utilis
 > [!NOTE]  
 > Les modifications mises en œuvre via la fonction **Replanifier** risquent fortement de modifier la capacité nécessaire de l'ordre de fabrication et de vous obliger à effectuer par la suite une replanification des opérations.  
 
-## Pour actualiser un bon de production
+## <a name="to-refresh-a-production-order"></a>Pour actualiser un bon de production
 
 Si vous avez modifié des lignes bon de production, des composantes ou des lignes itinéraire, vous devez aussi actualiser les informations du bon de production. Dans la procédure qui suit, les composantes d'un bon de production planifié ferme sont calculées. La procédure est identique pour les lignes itinéraire.
 
@@ -80,7 +80,7 @@ Si vous avez modifié des lignes bon de production, des composantes ou des ligne
 > [!NOTE]  
 > Le calcul des composantes bon de production supprime les modifications précédentes des composantes.
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Planification](production-planning.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  

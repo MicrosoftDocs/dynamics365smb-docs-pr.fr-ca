@@ -10,7 +10,7 @@ ms.search.keywords: null
 ms.date: 11/26/2021
 ms.author: edupont
 ---
-# Détails de conception de l’application
+# <a name="application-design-details"></a>Détails de conception de l’application
 
 Les articles de cette section contiennent des informations techniques détaillées sur les fonctionnalités d’application complexes de [!INCLUDE[prod_short](includes/prod_short.md)].  
 
@@ -26,7 +26,7 @@ Le contenu des détails de conception est destiné aux implémenteurs, développ
 |En savoir plus sur l'historique et la conception actuelle de la fonctionnalité de traçabilité et la manière dont elle s'intègre avec le système de réservation pour inclure les numéros de série/lot dans les calculs de disponibilité.|[Détails de conception : traçabilité](design-details-item-tracking.md)|  
 |En savoir plus sur la fonction de ligne report de journal général.|[Détails de conception : Ligne report de journal général](design-details-general-journal-post-line.md)|
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Planification](production-planning.md)  
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
