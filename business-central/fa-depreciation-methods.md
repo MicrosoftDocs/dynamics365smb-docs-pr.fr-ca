@@ -1,37 +1,36 @@
 ---
 title: Méthodes amortissement pour les immobilisations
-description: "Découvrez les différentes méthodes intégrées pour amortir ou déprécier les immobilisations dans la version par défaut de Business\_Central qui comprend huit\_méthodes."
-author: edupont04
+description: En savoir plus sur les différentes méthodes intégrées pour amortir ou déprécier des immobilisations.
+author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bnielse
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.keywords: write down
+ms.search.keywords: 'write down, depreciate, depreciation'
 ms.search.form: '5629, 5633'
-ms.date: 07/05/2021
-ms.author: edupont
+ms.date: 08/08/2023
+ms.custom: bap-template
 ---
 # Méthodes amortissement pour les immobilisations
 
-Il existe huit méthodes d’amortissement disponibles dans la version par défaut de [!INCLUDE [prod_short](includes/prod_short.md)] :  
+Huit méthodes d’amortissement sont disponibles dans [!INCLUDE [prod_short](includes/prod_short.md)]:  
 
 * Linéaire  
-* Dégressif1  
-* Dégressif2  
+* Dégressif 1  
+* Dégressif 2  
 * Dégr1/Lin  
 * Dégr2/Lin  
 * Paramétrable  
 
   > [!NOTE]  
-  > Spécifiez votre propre méthode d’amortissement en définissant des tables d’amortissement. Pour plus d’informations sur l’application d’une méthode d’amortissement définie par l’utilisateur, voir [Configurer la méthode d’amortissement définie par l’utilisateur](fa-how-setup-user-defined-depreciation-method.md).
-* Manuel  
+  > Spécifiez votre propre méthode d’amortissement en définissant des tables d’amortissement. Pour en savoir plus sur l’application d’une méthode d’amortissement définie par l’utilisateur, voir [Configurer la méthode d’amortissement définie par l’utilisateur](fa-how-setup-user-defined-depreciation-method.md).
+* Manuelle  
 
   > [!NOTE]  
-  > Utilisez cette méthode pour les immobilisations qui ne font pas l'objet d'un amortissement, par exemple les terrains. Vous devez saisir l'amortissement dans le journal GL immobilisation. Le traitement par lots **Calculer amortissement** ignore les immobilisations qui utilisent cette méthode d'amortissement.  
+  > Utilisez cette méthode manuelle pour les immobilisations qui ne font pas l’objet d’un amortissement, par exemple les terrains. Vous devez saisir l'amortissement dans le journal GL immobilisation. Le traitement en lot **Calculer amortissement** ignore les immobilisations qui utilisent la méthode d'amortissement manuelle.  
 * Règle de la demi-année  
 
   > [!NOTE]  
-  > Lorsque vous utilisez cette méthode, le montant de l'amortissement d'une immobilisation ne varie pas d'une année à l'autre.  
+  > Cette méthode permet d’amortir une immobilisation du même montant chaque année.  
 
 ## Amortissement linéaire
 
@@ -54,15 +53,15 @@ La valeur comptable peut être diminuée d'un montant d'appréciation, de dépr�
 
 ### Pourcentage annuel fixe
 
-Si vous saisissez un pourcentage annuel fixe, l'application utilise la formule suivante pour calculer le montant de l'amortissement :  
+Si vous saisissez un pourcentage annuel fixe, [!INCLUDE [prod_short](includes/prod_short.md)] utilise la formule suivante pour calculer le montant de l’amortissement :  
 
 *Montant de l'amortissement = (% linéaire x base amortissement x nombre de jours d'amortissement)/(100 x 360)*  
 
 ### Montant annuel fixe
 
-Si vous saisissez un montant annuel fixe, l'application utilise la formule suivante pour calculer le montant de l'amortissement :  
+Si vous saisissez un montant annuel fixe, [!INCLUDE [prod_short](includes/prod_short.md)] utilise la formule suivante pour calculer le montant de l’amortissement :  
 
-*Montant de l'amortissement = (montant d'amortissement fixe x nombre de jours d'amortissement)/360*  
+* *Montant de l'amortissement = (montant d'amortissement fixe x nombre de jours d'amortissement)/360*  
 
 ### Exemple - Amortissement linéaire
 
@@ -78,21 +77,21 @@ Pour cet exemple, l'écriture immobilisation se présente comme suit :
 | 30/06/21 |Amortissement |180 |-6 250,00 |81,250.00 |
 | 31/12/21 |Amortissement |180 |-6 250,00 |75,000.00 |
 | 30/06/27 |Amortissement |180 |-6 250,00 |6,250.00 |
-| 31/12/27 |Amortissement |180 |-6 250,00 |0 |
+| 12/31/27 |Amortissements |180 |-6 250,00 |0 |
 
 ## Amortissement dégressif 1
 
-Il s'agit d'une méthode d'amortissement accélérée qui ventile la plus grande portion du coût d'une immobilisation sur les premières années de sa durée de vie. Si vous utilisez cette méthode, vous devez saisir un pourcentage annuel fixe.  
+Il s’agit d’une méthode d’amortissement qui ventile la plus grande portion du coût d’une immobilisation sur les premières années de sa durée de vie. Si vous utilisez cette méthode, vous devez saisir un pourcentage annuel fixe.  
 
 La formule suivante calcule les montants d'amortissement :  
 
-*Montant de l'amortissement = (% dégressif x nombre de jours d'amortissement x base amortissement)/(100 x 360)*  
+* *Montant de l'amortissement = (% dégressif x nombre de jours d'amortissement x base amortissement)/(100 x 360)*  
 
-La base d'amortissement correspond à la valeur comptable moins l'amortissement reporté depuis la date de début de l'exercice financier en cours.  
+La base amortissable est calculée comme la valeur comptable au début de l’année. Le nombre de jours d’amortissement correspond au nombre de jours entre la date de report et la dernière date d’amortissement. [!INCLUDE [prod_short](includes/prod_short.md)] calcule l’amortissement en supposant que tout amortissement effectué au cours de l’exercice financier est effectué avec cette formule.  
 
 Le montant de l'amortissement reporté peut contenir des écritures avec divers types de report (dépréciation, paramétrable 1 et paramétrable 2) reportés depuis la date de début de l'exercice financier en cours. Ces types de report sont inclus dans le montant d'amortissement reporté si vous avez coché les champs **Type amortissement** et **Élément valeur comptable** sur la page **Config. type report immo**.  
 
-### Exemple - Amortissement dégressif 1
+### Exemple 1 - Amortissement dégressif 1
 
 Une immobilisation a un coût d'acquisition de 100 000 $. Le champ **% dégressif** indique la valeur 25. Le traitement par lots **Calculer amortissement** est exécuté tous les semestres.  
 
@@ -110,7 +109,7 @@ Le tableau suivant montre à quoi ressemblent les écritures immobilisations.
 | 30/06/23 |Amortissement |180 |-5 273,44 |36,914.06 |
 | 31/12/23 |Amortissement |180 |-5 273,44 |31,640.62 |
 | 30/06/24 |Amortissement |180 |-3 955,08 |27,685.54 |
-| 31/12/24 |Amortissement |180 |-3 955,08 |23,730.46 |
+| 12/31/24 |Amortissements |180 |-3 955,08 |23,730.46 |
 
 Méthode de calcul :  
 
@@ -121,6 +120,28 @@ Méthode de calcul :
 * Année 3 : *25 % de 56 250 = 14 062,50 = 7 031,25 + 7 031,25*
 
 Le calcul continue jusqu'à ce que la valeur comptable soit égale à la valeur résiduelle ou au montant final arrondissement que vous avez saisi.  
+
+### Exemple 2 - Amortissement dégressif 1
+
+La valeur comptable d’un actif est de 100 000 au 31/12/2022. Vous reportez un amortissement de 1 778 le 02/02/2023, ce qui correspond au montant (proportionnel) prévu de l’amortissement de l’année à 32 jours. Si vous exécutez l’amortissement le 30/06/2023, [!INCLUDE [prod_short](includes/prod_short.md)] suggérera 8 222, car il y a 148 jours entre le 02/02/2023 et le 30/06/2023. L’amortissement restant prévu pour le 30/06/2023 est calculé à l’aide de la formule suivante :
+
+* *148/360 x 0,20 x 100 000 = 8 222*
+
+### Exemple 3 - Amortissement dégressif 1
+
+Si vous reportez un montant qui ne correspond pas à la méthode d’amortissement dégressif 1, par exemple, 5 000, [!INCLUDE [prod_short](includes/prod_short.md)] suggérera le reste du montant attendu.
+
+La valeur comptable d’un actif est de 100 000 au 31/12/2022. Vous reportez un amortissement de 5 000 le 02/02/2023, ce qui est supérieur au montant (proportionnel) prévu le 02/02/2023 à 32 jours. Si vous exécutez l’amortissement le 30/06/2023, [!INCLUDE [prod_short](includes/prod_short.md)] suggérera 8 222, car il y a 148 jours entre le 02/02/2023 et le 30/06/2023. L’amortissement restant prévu pour le 30/06/2023 est calculé à l’aide de la formule suivante :
+
+* *148/360 x 0,20 x 100 000 = 8 222*
+
+### Exemple 4 - Amortissement dégressif 1
+
+La valeur comptable d’un actif est de 100 000 au 31/12/2023. Vous reportez un amortissement de 95 000 le 02/02/2023, qui dépasse le montant d’amortissement autorisé pour l’année. Si vous exécutez l’amortissement le 30/06/2023, [!INCLUDE [prod_short](includes/prod_short.md)] suggérera 5 000, car il y a 148 jours entre le 02/02/2023 et le 30/06/2023. L’amortissement restant prévu pour le 30/06/2023 est calculé à l’aide de la formule suivante : 
+
+* *148/360 x 0,20 x 100 000 = 8 222*
+
+Cependant, la valeur comptable restante n’est que de 5 000, donc [!INCLUDE [prod_short](includes/prod_short.md)] suggérera 5 000 car une valeur comptable ne peut pas être négative.
 
 ## Amortissement dégressif 2
 
@@ -157,13 +178,13 @@ Les valeurs d'amortissement sont les suivantes :
 | 30/06/20 |MA = 100 000,00 (1 - (1 - 0,25)<sup>0,5</sup>) = 13 397,46 |
 | 31/12/20 |MA = 86 602,54 x (1 - (1 - 0,25)<sup>0,5</sup>) = 11 602,54 |
 | 30/06/21 |MA = 75 000,00 x (1 - (1 - 0,25)<sup>0,5</sup>) = 10 048,09 |
-| 31/12/21 |MA = 64 951.91 x (1 - (1 - 0,25)<sup>0,5</sup>) = 8 701,91 |
+| 12/31/21 |MA = 64 951,91 x (1 - (1 - 0,25)<sup> 0,5</sup>) = 8 701,91 |
 
 ## Amortissement Dégr1/Lin
 
 Dégr1/Lin est l'abréviation combinée de Dégressif 1 et de Linéaire. Le calcul continue jusqu'à ce que la valeur comptable soit égale à la valeur résiduelle ou au montant final arrondissement que vous avez saisi.  
 
-Le traitement par lots **Calculer amortissement** calcule un montant linéaire et un montant dégressif, mais seul le montant le plus élevé des deux est transmis à la feuille.  
+Le traitement en lot **Calculer amortissement** calcule un montant linéaire et un montant dégressif, mais seul le montant le plus élevé des deux est transmis au journal.  
 
 Vous pouvez utiliser divers pourcentages pour calculer le montant dégressif.  
 
@@ -219,11 +240,11 @@ Méthode de calcul :
 
 La règle de la demi-année n'est appliquée que si vous avez coché le champ **Utiliser règle demi-année** sur la page **Plan amortissement**.  
 
-Cette méthode d'amortissement peut être utilisée en combinaison avec les méthodes d'amortissement suivantes dans l'application :  
+Cette méthode d’amortissement peut être utilisée avec les méthodes d’amortissement suivantes :  
 
 * Linéaire  
-* Dégressif1  
-* Dégr1/Lin  
+* Dégressif 1  
+* Dég.1/Lin.  
 
 Lorsque vous appliquez la règle de la demi-année, une immobilisation a un amortissement de six mois lors du premier exercice comptable, quelle que soit la valeur du champ **Date début amortissement**.  
 
@@ -244,7 +265,7 @@ Les écritures immobilisations se présentent comme suit :
 | 31/12/22 |Amortissement |360 |-20 000,00 |50,000.00 |
 | 31/12/23 |Amortissement |360 |-20 000,00 |30,000.00 |
 | 31/12/24 |Amortissement |360 |-20 000,00 |10,000.00 |
-| 31/12/25 |Amortissement |180 |-10 000,00 |0.00 |
+| 12/31/25 |Amortissements |180 |-10 000,00 |0.00 |
 
 ## Exemple - Amortissement dégressif 1/linéaire selon la règle de la demi-année
 
@@ -282,11 +303,14 @@ Méthode de calcul :
 
     Le montant linéaire est utilisé car il s'agit de la valeur la plus élevée.  
 
-## Duplication des écritures dans davantage de lois d'amortissement
+## Duplication des écritures dans davantage de registres amortissement
 
-Si vous disposez de trois lois d'amortissement, A1, A2 et A3, et que vous souhaitiez dupliquer des écritures de A1 vers A2 et A3, vous pouvez activer le champ **Inclure dans liste duplication** sur les fiches loi d'amortissement de A2 et de A3. Cela peut être utile si le registre amortissement A1 est intégré dans le grand livre et utilise le journal GL immobilisation, et si les registres amortissement A2 et A3 ne sont pas intégrées dans le grand livre et utilisent le journal immobilisation.  
+Si vous disposez de trois registres amortissement, B1, B2 et B3, et que vous souhaitiez dupliquer des écritures de B1 vers B2 et B3, vous pouvez cocher la case **Inclure dans liste duplication** sur les fiches registre amortissement de B2 et de B3. Par exemple, ce paramètre peut êtree utile dans les situations suivantes :
 
-Lorsque vous saisissez une écriture pour B1 dans le journal GL immobilisation et cochez le champ **Utiliser liste duplication**, l'application duplique l'écriture dans les registres B2 et B3 dans le journal immobilisation lors du report de l'écriture.  
+* Le registre amortissement B1 s’intègre au grand livre et utilise le journal GL immobilisation.
+* Les registres amortissement B2 et B3 ne s’intègrent pas au grand livre et utilisent le journal immobilisation.  
+
+Lorsque vous saisissez une écriture pour B1 dans le journal GL immobilisation et cochez la case **Utiliser liste duplication** , [!INCLUDE [prod_short](includes/prod_short.md)] duplique l’écriture des registres B2 et B3 dans le journal immobilisation lors du report de l’écriture.  
 
 > [!NOTE]  
 > Vous ne pouvez pas effectuer la duplication dans le même journal et lot journal que celui à partir duquel vous dupliquez. Si vous reportez des écritures dans le journal GL immobilisation, vous pouvez les dupliquer dans le journal immobilisation ou dans le journal GL immobilisation en utilisant un autre lot.  
@@ -303,6 +327,5 @@ Lorsque vous saisissez une écriture pour B1 dans le journal GL immobilisation e
 [Finance](finance.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
