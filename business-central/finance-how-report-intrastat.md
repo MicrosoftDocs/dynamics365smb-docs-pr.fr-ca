@@ -116,12 +116,31 @@ Lorsque vous travaillez avec le **Rapport Intrastat**, vous voyez un champ **Ét
 * *Publié* : [!INCLUDE[prod_short](includes/prod_short.md)] change automatiquement l’état en *Publié* lorsque vous créez un fichier. À partir de ce moment, vous ne pouvez plus modifier votre **rapport Intrastat**. Si vous devez modifier quelque chose et soumettre un nouveau rapport, vous pouvez utiliser l’action **Rouvrir** pour rouvrir le rapport Intrastat. Une fois le document rouvert, vous pouvez utiliser l’action **Libérer** pour libérer à nouveau le document.
 * **Déclaré** : spécifie si l’écriture a déjà été déclarée aux administrations fiscales. Ce n’est pas un état normal mais un champ indépendant, et même si vous rouvriez le rapport Intrastat, cela montrerait toujours que le fichier est déjà créé pour ce rapport.
 
+### Commerce triangulaire dans Intrastat
+
+Le commerce triangulaire implique des échanges entre trois pays ou régions où les marchandises contournent le pays de la compagnie déclarante. Dans Business Central, cela peut être facilité grâce à la fonctionnalité [Livraison directe](sales-how-drop-shipment.md) . Pour activer cette option, activez le champ **Inclure la livraison directe** dans **Configuration des rapports Intrastat**.  
+
+Lorsque vous activez cette option, le système utilise les règles suivantes, mais uniquement si la **Livraison directe** est marquée dans le **Document de vente** : 
+
+| Expéditeur | Livrer à | Résultat Intrastat attendu |
+|----------|------------|----------------------|
+| Pays comme dans les **Informations compagnie** | Pays comme dans les **Informations compagnie** | Aucune ligne Intrastat |  
+| Pays comme dans les **Informations compagnie** | Pays de l’UE différent du pays indiqué dans les **Informations compagnie** | Ligne de livraison Intrastat | 
+| Pays comme dans les **Informations compagnie** | Pays hors UE | Aucune ligne Intrastat |   
+| Pays de l’UE différent du pays indiqué dans les **Informations compagnie** | Pays comme dans les **Informations compagnie** | Ligne de réception Intrastat | 
+| Pays de l’UE différent du pays indiqué dans les **Informations compagnie** | Pays de l’UE différent du pays indiqué dans les **Informations compagnie** | Aucune ligne Intrastat |
+| Pays de l’UE différent du pays indiqué dans les **Informations compagnie** | Pays hors UE | Aucune ligne Intrastat | 
+| Pays hors UE | Pays comme dans les **Informations compagnie** | Aucune ligne Intrastat |  
+| Pays hors UE | Pays de l’UE différent du pays indiqué dans les **Informations compagnie** | Aucune ligne Intrastat |
+| Pays hors UE | Pays hors UE | Aucune ligne Intrastat |   
+
 ## Voir la formation associée sur [Microsoft Learn](/learn/modules/process-intrastat-dynamics-365-business-central/index).
 
 ## Voir aussi .
 
-[Paramétrer les rapports Intrastat](finance-how-setup-report-intrastat.md)  
+[Configurer des rapports Intrastat](finance-how-setup-report-intrastat.md)  
 [Gestion financière](finance.md)  
+[Livraison directe ](sales-how-drop-shipment.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
