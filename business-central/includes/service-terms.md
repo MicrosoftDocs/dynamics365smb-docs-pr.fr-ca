@@ -1,8 +1,8 @@
 ---
-author: edupont04
+author: brentholtorf
 ms.topic: include
 ms.date: 04/01/2021
-ms.author: edupont
+ms.author: bholtorf
 ---
 [!INCLUDE[prod_short](prod_short.md)] en ligne est régi par la [Politique de cycle de vie moderne](https://support.microsoft.com/help/30881/modern-lifecycle-policy). Les conditions de l'entente de niveau de service sont décrites dans le document que vous pouvez télécharger à partir de la section **Ententes de niveau de service pour Microsoft Online Services** sur la page [Termes du contrat de licence](https://www.microsoft.com/licensing/product-licensing/products).  
 

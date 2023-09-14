@@ -1,16 +1,16 @@
 ---
 title: Report des documents et des journaux
 description: Cette rubrique décrit les actions de report et les manières dont vous pouvez reporter des documents et des journaux dans les différents livres comptables de la compagnie.
-author: SorenGP
+author: brentholtorf
 ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/24/2021
 ms.search.form: null
-ms.author: edupont
+ms.author: bholtorf
 ---
-# <a name="posting-documents-and-journals"></a>Report des documents et des journaux
+# Report des documents et des journaux
 
 Le report est une tâche de comptabilité qui consiste à enregistrer des transactions commerciales dans les divers livres de la compagnie.
 
@@ -27,7 +27,7 @@ Le tableau suivant décrit les tâches associées, et inclut des liens vers les 
 | Obtenir un aperçu, sur la page, des écritures qui seront créées lors du report. |[Aperçu des résultats du report](ui-how-preview-post-results.md) |
 | Obtenir un aperçu, dans un rapport, des écritures qui seront créées lors du report. |[Afficher des rapports de test avant le report](ui-how-view-test-reports-posting.md) |
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Modifier les documents reportés](across-edit-posted-document.md)  
 [Rechercher les écritures associées aux documents](ui-find-entries.md)  

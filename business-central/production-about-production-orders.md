@@ -1,16 +1,16 @@
 ---
 title: À propos des ordres de fabrication
 description: Découvrez les bons de production et la manière dont ils sont utilisés pour gérer la conversion de matières achetées en articles fabriqués.
-author: SorenGP
+author: brentholtorf
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.form: '99000813, 99000814, 99000815, 99000816, 99000829, 99000830, 99000831, 99000832, 99000833, 99000838, 99000839, 99000867, 99000868, 99000882, 99000897, 99000898, 99000900, 99000912, 99000913, 99000914, 99000917'
 ms.date: 06/22/2021
-ms.author: edupont
+ms.author: bholtorf
 ---
-# <a name="about-production-orders"></a>À propos des ordres de fabrication
+# À propos des ordres de fabrication
 
 Les ordres de fabrication permettent de gérer la conversion de matières achetées en articles fabriqués. La gamme de bons de production utilise divers ateliers ou unités de production dans l'atelier.  
 
@@ -31,7 +31,7 @@ Les ordres de fabrication sont les points de départ pour :
 - le contrôle de la fabrication en cours ;  
 - la traçabilité de la fabrication terminée.  
 
-## <a name="production-order-creation"></a>Création des bons de production
+## Création des bons de production  
 Il est possible de créer des bons de production un par un manuellement sur la page **Bon de production** ou de les générer sur les pages **Planification document de vente** et/ou **Planification commande**. La page **Feuille planification** permet de générer plusieurs ordres.  
 
 Les ordres de fabrication sont créés à l'aide d'informations provenant des éléments suivants :  
@@ -42,7 +42,7 @@ Les ordres de fabrication sont créés à l'aide d'informations provenant des é
 - postes de charge ;  
 - centres de charge ;  
 
-## <a name="limitations-on-production-order-creation"></a>Limitations de la création de bons de production
+## Limitations de la création de bons de production  
 Les ordres de fabrication sont automatiquement réservés et tracés sur leur source quand ils sont :  
 
 - créés dans la **[Feuille planification](production-how-to-run-mps-and-mrp.md)**  
@@ -54,16 +54,16 @@ Pour plus d'informations, voir [Suivre les relations entre l'offre et la demande
 
 Les ordres de fabrication créés par d'autres moyens ne sont pas automatiquement réservés et tracés.   
 
-## <a name="production-order-status"></a>État du bon de production
+## État du bon de production  
 L'état du bon de production contrôle la manière dont le bon de production se comporte dans l'application. La forme et le contenu de la production sont dictés par l'état de la commande. Les bons de production sont affichés sur différentes pages en fonction de leur état. Vous ne pouvez pas modifier l'état d’un bon de production manuellement ; vous devez utiliser la fonction **Modifier état** dans le bon de production individuel ou dans la fenêtre **Changer état Bon de production**.  
 
-### <a name="simulated-production-order"></a>Bon de production simulé
+### Bon de production simulé  
 Le bon de production simulé est unique en raison des caractéristiques suivantes :  
 
 - Comme son nom l'indique, il s'agit d'une simulation destinée principalement à l'établissement de devis et d'évaluations, par exemple si le département de recherche et développement souhaite obtenir une estimation de coût d'un article proposé. Un bon de production simulé fait office d'exemple d'un bon de production.  
 - Il n'influence pas la planification des commandes. La planification (MPS et MRP) ne prend jamais en considération et n'est jamais affectée par les bons de production simulés. De même, un bon de production simulé ne peut pas être utilisé comme modèle parce qu'il disparaît lorsque vous modifiez son état.  
 
-### <a name="planned-production-order"></a>Ordre de production planifié
+### Ordre de production planifié  
 Le bon de production planifié est unique en raison des caractéristiques suivantes :  
 
 - Vous pouvez créer automatiquement un bon de production planifié à partir d'un document de vente.  
@@ -72,7 +72,7 @@ Le bon de production planifié est unique en raison des caractéristiques suivan
 - Sa génération dans la planification produit une « libération prévue » suggérée qui inclut une quantité, une date de libération et une date d'échéance. La logique du système de planification est basée sur le système de réapprovisionnement, les méthodes de réapprovisionnement et les modificateurs d'ordre qu'il rencontre dans le processus de planification des besoins nets.  
 - Pour afficher leur impact, examinez la charge de chaque atelier ou unité de production sur l'itinéraire du bon de production planifié.  
 
-### <a name="firm-planned-production-order"></a>Bon de production planifié ferme
+### Bon de production planifié ferme  
 Le bon de production planifié ferme est unique en raison des caractéristiques suivantes :  
 
 - Vous pouvez créer automatiquement un bon de production planifié ferme à partir d'un document de vente.  
@@ -81,7 +81,7 @@ Le bon de production planifié ferme est unique en raison des caractéristiques 
 - Sa génération dans la planification produit une « libération prévue » suggérée qui inclut une quantité, une date de libération et une date d'échéance. La logique du système de planification est basée sur le système de réapprovisionnement, les méthodes de réapprovisionnement et les modificateurs d'ordre qu'il rencontre dans le processus de planification des besoins nets.  
 - Pour afficher leur impact, examinez la charge de chaque atelier ou unité de production sur l'itinéraire du bon de production planifié ferme.  
 
-### <a name="released-production-order"></a>Ordre de production envoyé
+### Ordre de production envoyé  
 Le bon de production libéré est unique en raison des caractéristiques suivantes :  
 
 - Vous pouvez créer automatiquement un bon de production libéré à partir d'un document de vente.  
@@ -89,7 +89,7 @@ Le bon de production libéré est unique en raison des caractéristiques suivant
 - Dans un environnement MTO (Prod. pour commande), il n'est pas rare de créer un bon de production libéré immédiatement après l'entrée du document de vente.  
 - Vous pouvez enregistrer la consommation de matières et la production réelles manuellement avec un bon de production libéré. En outre, la consommation automatique de matières et de production n'intervient que pour les bons de production libérés.  
 
-### <a name="finished-production-order"></a>Bon de production achevé
+### Bon de production achevé  
 Le bon de production terminé est unique en raison des caractéristiques suivantes :  
 
 - Un bon de production terminé est généralement un ordre qui a été fabriqué.  
@@ -97,7 +97,7 @@ Le bon de production terminé est unique en raison des caractéristiques suivant
 - Les bons de production terminés sont utilisés pour générer des rapports statistiques et prendre en charge la possibilité de remonter à d'autres ordres (ventes, production et achat, par exemple). La possibilité de remonter à un bon de production terminé permet d'examiner l'historique détaillé.  
 - Il n'est jamais possible de modifier des ordres de fabrication terminés.  
 
-## <a name="production-order-execution"></a>Exécution d'un bon de production
+## Exécution d'un bon de production  
 Après qu'un bon de production a été créé et programmé, il doit être libéré à l'atelier pour exécution. Durant l'exécution de l'ordre, vous enregistrez les éléments suivants :  
 
 - matières prélevées et consommées ;  
@@ -106,7 +106,7 @@ Après qu'un bon de production a été créé et programmé, il doit être libé
 
 Ces informations peuvent être enregistrées manuellement ou via une génération de rapport automatique, en fonction des articles définis dans le champ Méthode consommation de l’article et de l'atelier.  
 
-### <a name="material-consumption"></a>Consommation matière
+### Consommation matière  
 L'application offre une série d'options concernant la manière dont une compagnie manufacturière peut enregistrer une consommation matière. Par exemple, une consommation matière peut être enregistrée manuellement, ce qui peut être souhaitable en cas de remplacements fréquents de composantes ou de rebuts plus importants que prévu.  
 
 La consommation de matières peut être traitée via le [journal consommation](production-how-to-post-consumption.md), mais peut également être enregistrée automatiquement par l’application à l’aide du processus de génération de rapport automatique (consommation). Les méthodes de génération de rapport sont les suivantes :  
@@ -128,7 +128,7 @@ Lors de l'actualisation du bon de production, la méthode consommation est copi�
 
 Pour plus d’informations, voir [Consommer en aval des composantes en fonction de la production réalisée](production-how-to-flush-components-according-to-operation-output.md).
 
-### <a name="production-output"></a>Production
+### Production  
 L'application offre la possibilité de suivre le temps consacré à un bon de production, en plus de l'enregistrement de la quantité produite. Ces informations permettent de déterminer plus précisément les coûts de production. De même, les fabricants utilisant un système d'évaluation standard peuvent souhaiter enregistrer des informations réelles afin de pouvoir développer de meilleures normes.  
 
 La production peut être traitée via le [journal de sortie](production-how-to-post-output-quantity.md), mais aussi enregistrée automatiquement par l’application. L'application copie la méthode de consommation de la fiche unité de production ou atelier vers l'itinéraire du bon de production lors de l'actualisation. Comme pour la consommation matière, trois méthodes de génération de rapport s'appliquent à la production :  
@@ -143,12 +143,12 @@ En aval, cette méthode enregistre la sortie prévue (et le temps), qui est auto
 
 En amont, cette méthode enregistre la production prévue (et le temps), qui est automatiquement enregistrée à la fin d'un ordre de fabrication. Les codes lien itinéraire n'interviennent pas comme facteurs dans la consommation en amont de la production.  
 
-### <a name="posting-consumption-and-output"></a>Report de la consommation et de la production
+### Report de la consommation et de la production  
 Vous pouvez utiliser toute combinaison d'informations de consommation automatique et enregistrées manuellement tant pour la consommation que pour la production. Par exemple, vous pouvez consommer automatiquement en aval des composantes, tout en utilisant le journal consommation pour enregistrer les rebuts. De même, vous pouvez enregistrer automatiquement la production tout en utilisant le journal de sortie pour enregistrer les rebuts de l'article parent ou le temps supplémentaire consacré au traitement de l'ordre.  
 
 Enfin, si vous entrez une consommation et une production manuellement, vous devez déterminer l'ordre dans lequel vous allez enregistrer ces informations. Vous pouvez commencer par enregistrer une consommation, puis utiliser une méthode de raccourci pour entrer les informations, basée sur une quantité de production prévue. Vous pouvez également commencer par entrer une production en utilisant la fonction **Éclater gamme**. Vous enregistrez ensuite une consommation sur la base de la quantité de production réelle.  
 
-### <a name="production-journal"></a>Journal de production
+### Journal de production  
 Le [journal production](production-how-to-register-consumption-and-output.md) combine les fonctions du journal consommation et des journaux de sortie dans un seul journal, directement accessible depuis le bon de production libéré.  
 
 Le journal production a pour fonction de fournir une interface unique pour l'enregistrement de la consommation et de la production à partir d'un bon de production.  
@@ -174,7 +174,7 @@ Toutefois, le journal production diffère des journaux production et consommatio
 
 Dans le journal production, les quantités consommées sont reportées comme écritures article négatives, les quantités sorties sont reportées comme écritures positives et les heures passées sont reportées comme écritures du grand livre de capacité.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 [Production](production-manage-manufacturing.md)
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Planification](production-planning.md)  

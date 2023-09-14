@@ -1,7 +1,7 @@
 ---
 title: Restructurer les entrepôts
 description: Découvrez comment restructurer votre entrepôt avec de nouveaux codes de zone et de nouvelles caractéristiques de zone pour atteindre ou maintenir une opération plus efficace.
-author: SorenGP
+author: brentholtorf
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -9,9 +9,9 @@ ms.workload: na
 ms.search.keywords: null
 ms.search.form: '9813, 9814'
 ms.date: 06/25/2021
-ms.author: edupont
+ms.author: bholtorf
 ---
-# <a name="restructure-warehouses"></a>Restructurer les entrepôts
+# Restructurer les entrepôts
 Vous pouvez souhaiter restructurer votre entrepôt avec de nouveaux codes et caractéristiques zone. Ce type d'activité n'intervient que très rarement, mais un reclassement peut s'avérer nécessaire pour mettre à jour une opération ou la rendre plus efficace. Par exemple :  
 
 - Vous pouvez souhaitez passer à des codes de zone prenant en charge l'utilisation de la saisie automatisée avec des appareils portables.  
@@ -20,7 +20,7 @@ Vous pouvez souhaiter restructurer votre entrepôt avec de nouveaux codes et car
 
 Si votre entrepôt est configuré pour utiliser des zones, mais sans prélèvement ni rangement suggérés, restructurez-le en créant les nouvelles zones à utiliser à l'avenir.  
 
-## <a name="to-restructure-a-basic-warehouse-that-uses-bins-only"></a>Pour restructurer un entrepôt de base qui utilise uniquement des emplacements
+## Pour restructurer un entrepôt de base qui utilise uniquement des emplacements  
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
 2.  Dans le raccourci **Entrepôt**, paramétrez le champ **Sélection zone par déf.** sur **Dernière zone utilisée**.  
 3.  Déplacez le contenu des emplacements actuels vers les emplacements que vous venez de créer.  
@@ -35,7 +35,7 @@ Si votre entrepôt est configuré pour utiliser des zones, mais sans prélèveme
 
 Vous avez à présent vidé les emplacements où les articles se trouvaient auparavant. Les emplacements par défaut des articles sont alors remplacés par les nouveaux emplacements.  
 
-## <a name="to-restructure-an-advanced-warehouse-that-uses-directed-put-away-and-pick"></a>Pour restructurer un entrepôt avancé qui utilise le prélèvement et le rangement suggérés
+## Pour restructurer un entrepôt avancé qui utilise le prélèvement et le rangement suggérés  
 
 1.  Créez les emplacements à utiliser ultérieurement. Pour plus d'informations, voir [Créer zones](warehouse-how-to-create-individual-bins.md).  
 2.  Déplacez le contenu des emplacements actuels vers les emplacements que vous venez de créer.  
@@ -52,7 +52,7 @@ Vous avez à présent vidé les emplacements où les articles se trouvaient aupa
 
 Vous avez à présent supprimé les zones du flux entrepôt et les avez reclassées en tant que zones de type CQ. Pour les zones de ce type, aucun des champs d'activité de la page **Types de zone** n'est sélectionné, par conséquent ils ne sont pas pris en compte par le flux d'articles. Pour plus d'informations, voir [Configurer des types de zone](warehouse-how-to-set-up-bin-types.md).  
 
-## <a name="to-delete-a-bin"></a>Pour supprimer une zone
+## Pour supprimer une zone  
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
 2.  Sélectionnez l'emplacement à partir duquel vous souhaitez supprimer des zones. Choisissez l'action **Zones**.  
@@ -63,7 +63,7 @@ Si vous sélectionnez le bouton **Oui**, l'emplacement est supprimé pour ne plu
 
 Pour renommer une zone de façon à ce que tous les enregistrements associés à cette zone soient également renommés, y compris les enregistrements comprennent le contenu des zones, les lignes activité entrepôt, les lignes activité entrepôt enregistrées, les lignes feuille entrepôt, les lignes réception entrepôt, les lignes réception entrepôt reportées, les lignes livraison entrepôt, les lignes livraison entrepôt reportées et les écritures entrepôt, vous pouvez utiliser la page **Zones**.  
 
-## <a name="to-rename-a-bin-and-change-the-bin-code-in-all-records"></a>Pour renommer une zone et modifier le code de zone de tous les enregistrements
+## Pour renommer une zone et modifier le code de zone de tous les enregistrements  
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
 2.  Sélectionnez l'emplacement dans lequel vous souhaitez renommer une zone ou modifier le code de zone, puis choisissez l'action **Zones**.  
@@ -75,7 +75,7 @@ Pour renommer une zone de façon à ce que tous les enregistrements associés à
 >   
 >  Si vous renommez une zone réception ou une zone livraison, toutes les réceptions ou livraisons reportées se rapportant à la zone concernée sont renommées.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi  
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     

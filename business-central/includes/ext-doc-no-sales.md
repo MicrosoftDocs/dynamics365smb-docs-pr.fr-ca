@@ -1,8 +1,8 @@
 ---
-author: edupont04
+author: brentholtorf
 ms.topic: include
 ms.date: 05/27/2021
-ms.author: edupont
+ms.author: bholtorf
 ---
 
 Sur les documents et les journaux vente, vous pouvez spécifier un numéro de document faisant référence au système de numérotation du client. <!--You can enter a maximum of ten characters, both numbers and letters.--> Utilisez ce champ pour enregistrer le numéro que le client a attribué à la commande, à la facture ou à la note de crédit. Vous pouvez utiliser ce numéro ultérieurement, si vous avez besoin de retrouver l’écriture reportée à l’aide de ce numéro.  

@@ -11,7 +11,7 @@ ms.search.forms: '5703, 15'
 ms.date: 03/25/2023
 ms.author: bholtorf
 ---
-# <a name="set-up-locations"></a>Configurer des emplacements
+# Configurer des emplacements
 
 Les emplacements sont des endroits tels que des entrepôts où vous achetez, stockez ou vendez des articles. [!INCLUDE [prod_short](includes/prod_short.md)] utilise des emplacements pour aider à suivre l'inventaire dans les processus d’entrepôt à la fois simples et complexes.
 
@@ -20,7 +20,7 @@ Vous pouvez ensuite créer des lignes document pour un emplacement spécifique, 
   
 > [!Video https://www.microsoft.com/videoplayer/embed/RE4aQvq?rel=0]
 
-## <a name="location-cards"></a>Fiches emplacement
+## Fiches emplacement
 
 Vous spécifiez des informations sur un emplacement, par exemple un entrepôt ou un centre de distribution sur la page **Fiche emplacement**. Affectez un nom et un code représentatifs à chaque emplacement. Il vous suffit ensuite de saisir le code d'emplacement dans d’autres parties du programme lorsque vous souhaitez enregistrer les transactions d’un emplacement en particulier.  
 
@@ -30,7 +30,7 @@ Certains champs d’option dépendent des paramètres dans la page **Fiche empla
 
 Choisissez les actions **Zone** ou **Zones** pour visualiser des informations sur les zones qui sont définies pour l'emplacement.
 
-### <a name="to-set-up-a-location"></a>Pour configurer un emplacement
+### Pour configurer un emplacement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Emplacements**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
@@ -44,7 +44,7 @@ Vous pouvez modifier la configuration d’un emplacement tant qu’il n’a pas 
 
 Si vous avez plusieurs emplacements, vous pouvez définir des acheminements transfert entre les emplacements. Pour en savoir plus sur les itinéraires de transfert, accédez à [Pour créer un itinéraire de transfert](inventory-how-setup-locations.md#to-create-a-transfer-route).
 
-### <a name="to-create-a-transfer-route"></a>Pour créer un acheminement transfert
+### Pour créer un acheminement transfert
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Acheminements de transfert**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.
@@ -52,7 +52,7 @@ Si vous avez plusieurs emplacements, vous pouvez définir des acheminements tran
 
 Vous pouvez à présent transférer des articles en inventaire entre deux emplacements. Pour en savoir plus sur les transferts, accédez à [Transférer l’inventaire entre les emplacements](inventory-how-transfer-between-locations.md).
 
-## <a name="bins"></a>Zones
+## Zones
 
 Les zones représentent la structure de base de l’entrepôt et peuvent suggérer où placer les articles. Vos zones peuvent avoir du contenu ou être flottantes sans contenu spécifique.
 
@@ -61,11 +61,11 @@ Pour utiliser la fonctionnalité de zone liée à l’emplacement, vous devez d�
 > [!NOTE]
 > Avant de pouvoir spécifier les codes zone sur un emplacement, vous devez les créer. Pour en savoir plus sur les zones, accédez à [Créer des zones](warehouse-how-to-create-individual-bins.md) et [Configurer les types de zones](warehouse-how-to-set-up-bin-types.md).  
 
-## <a name="zones"></a>Zones
+## Zones
 
 Si vous souhaitez structurer vos zones en zones, vous pouvez le faire dans la page **Zones**. Lorsque vous affectez une zone à des zones, [!INCLUDE [prod_short](includes/prod_short.md)] copie les informations de la zone vers les zones. Vous pouvez également choisir de configurer une zone et d’utiliser des zones seules pour organiser votre entrepôt. Pour en savoir plus sur les zones, accédez à [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).  
 
-## <a name="default-dimensions-for-locations"></a>Dimensions par défaut pour les emplacements
+## Dimensions par défaut pour les emplacements
 
 Les dimensions sont des valeurs qui permettent de catégoriser les écritures afin de pouvoir les suivre et les analyser avec différents outils de création de rapports. Par exemple, les dimensions peuvent indiquer le service ou le projet dont est issue une écriture. Le fait d’avoir des dimensions par défaut aide les gens à éviter de faire des erreurs et d’avoir à saisir manuellement les dimensions au niveau de la transaction si toutes les marchandises proviennent d’un seul emplacement et d’un même service.
 
@@ -81,7 +81,7 @@ Au besoin, vous pouvez supprimer ou modifier les dimensions sur les lignes. Dans
 
 Puisque les documents d’ordre transfert et les journaux de reclassement traitent de plusieurs emplacements, l’ordre dans lequel vous saisissez les données est important. Les dimensions par défaut sont copiées à partir du dernier champ d’emplacement (l’emplacement en transit est ignoré).
 
-### <a name="example-of-default-dimensions-on-locations"></a>Exemple des dimensions par défaut sur les emplacements
+### Exemple des dimensions par défaut sur les emplacements
 
 Les exemples suivants illustrent comment la dimension par défaut est utilisée.
 
@@ -104,9 +104,9 @@ Vous remplissez les champs dans l’ordre inverse, comme suit :
 
 La dimension ADM est copiée à partir de l’emplacement EST.
 
-## <a name="see-related-training-at-microsoft-learn"></a>Voir la formation associée sur [Microsoft Learn](/learn/modules/trade-set-up-dynamics-365-business-central/)
+## Voir la formation associée sur [Microsoft Learn](/learn/modules/trade-set-up-dynamics-365-business-central/)
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Gestion du stock](inventory-manage-inventory.md)  
 [Transfert de l'inventaire entre des emplacements](inventory-how-transfer-between-locations.md)  

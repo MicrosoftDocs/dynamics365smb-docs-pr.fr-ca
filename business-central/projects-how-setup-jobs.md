@@ -10,7 +10,7 @@ ms.custom: bap-template
 ms.search.keywords: project management
 ms.search.form: '211, 463, 1012'
 ---
-# <a name="set-up-jobs-prices-and-job-posting-groups"></a>Configurer des projets, des prix et des groupes de report projet
+# Configurer des projets, des prix et des groupes de report projet
 
 En tant que chef de projet, vous pouvez définir des projets qui définissent chacun des projets que vous gérez dans [!INCLUDE[prod_short](includes/prod_short.md)]. Utilisez la page **Configuration projets** pour définir la façon dont vous utilisez les fonctions du projet.
 
@@ -21,7 +21,7 @@ Pour chaque projet, précisez diverses informations :
 * Comptes du grand livre du projet
 * Groupes de report du projet (requis)
 
-## <a name="to-set-general-information-for-jobs"></a>Pour configurer des informations générales pour les projets
+## Pour configurer des informations générales pour les projets
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration projets**, puis choisissez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -29,7 +29,7 @@ Pour chaque projet, précisez diverses informations :
 > [!NOTE]
 > Le bouton bascule **Appliquer le lien d′utilisation par défaut** sur la page **Configuration projets** indique si les écritures de grand livre projet sont liées aux lignes planification projet par défaut. Activez le bouton bascule pour appliquer ce paramètre à tous les nouveaux projets. Vous pouvez activer ou désactiver le suivi de l′utilisation des projets pour un projet donné en activant ou désactivant le bouton bascule **Appliquer le lien d′utilisation** sur la page **Fiche projet**.
 
-### <a name="to-set-up-job-usage-tracking"></a>Pour configurer un suivi d'utilisation de projet
+### Pour configurer un suivi d'utilisation de projet
 
 Lors de l’utilisation d’un projet, vous avez peut-être besoin de savoir si votre utilisation est conforme au plan. Pour explorer l’utilisation, vous pouvez créer un lien entre vos lignes planification projet et l’utilisation réelle. Le lien vous permet de suivre vos coûts et de comprendre la quantité de travail restante. Par défaut, le type de ligne planning projet est **Budget**, mais l'utilisation du type de ligne **Budget et Facturable** a des effets similaires.
 
@@ -43,7 +43,7 @@ Après avoir configuré le suivi de l′utilisation en activant le bouton bascul
 > [!IMPORTANT]
 > Si vous ne spécifiez pas de valeur dans le champ **Type ligne** de la ligne journal projet ou la ligne achat, les lignes planification projet ne sont pas créées lorsque vous reportez le journal projet ou le document achat.
 
-## <a name="to-set-up-prices-for-resources-items-and-general-ledger-accounts-for-jobs"></a>Pour paramétrer les prix pour des ressources, des articles et des comptes GL pour des projets
+## Pour paramétrer les prix pour des ressources, des articles et des comptes GL pour des projets
 
 > [!NOTE]
 > Dans la deuxième vague de lancement de 2020, nous avons libéré de nouveaux processus pour la configuration et la gestion des prix et des escomptes. Si vous êtes un nouveau client, vous utilisez la nouvelle expérience. Si vous êtes un client existant, l’utilisation ou non de la nouvelle expérience dépend du fait que votre administrateur a activé ou non la fonctionnalité **Nouvelle tarification des ventes** dans **Gestion des fonctionnalités**. Pour plus d’informations, consultez [Activer les fonctionnalités à venir à l’avance](/dynamics365/business-central/dev-itpro/administration/feature-management).
@@ -71,7 +71,7 @@ Lorsque vous choisissez une ressource, un article ou un compte GL pour un projet
 
 ---
 
-## <a name="to-set-up-job-posting-groups"></a>Pour configurer les groupes compta. projet
+## Pour configurer les groupes compta. projet
 
 L'un des aspects des projets de planification est de décider quels comptes de report utiliser pour l'évaluation de l'inventaire projet. Pour reporter des projets, vous configurez des comptes afin de reporter chaque groupe de report projet. Un groupe report représente un lien entre le projet et la manière dont il doit être traité dans le grand livre. Lorsque vous créez un projet, vous pouvez spécifier un groupe de report et, par défaut, chaque tâche que vous créez pour le projet est associée avec ce groupe de report. Toutefois, lorsque vous créez des tâches, vous pouvez remplacer la valeur par défaut et sélectionner un groupe de report plus approprié.  
 
@@ -81,27 +81,27 @@ L'un des aspects des projets de planification est de décider quels comptes de r
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Groupes de report projet**, puis choisissez le lien associé.  
 2. Cliquez sur l’action **Nouveau**, puis renseignez les champs comme indiqué dans le tableau suivant.  
 
-| Champ de compte | Désignation |
-| --- | --- |
-| **Code** |Identificateur pour le groupe de report. Vous pouvez entrer un maximum de 10 caractères, espaces compris. |
-| **Compte dépenses TEC** |Compte TEC pour les dépenses calculées des TEC du projet, qui est un compte d'actif capital de bilan. |
-| **Compte coûts à payer TEC** |Compte pour la méthode Valeur coût ou Coût des ventes du calcul TEC. Ce compte concerne le passif bilan de charge accumulé sur votre bilan. Lorsqu’un ajustement TEC vous oblige à augmenter les coûts utilisation que vous reportez dans votre compte de gestion, vous les reportez dans ce compte. |
-| **Compte coûts lettrés projet** |Un compte de contrepartie du Compte dépenses TEC, qui est un compte de contrepartie de frais négatif. |
-| **Compte coûts lettrés article** |Un compte de contrepartie du Compte dépenses TEC, qui est un compte de contrepartie de frais négatif. |
-| **Compte coûts lettrés ressource** |Un compte de contrepartie du Compte dépenses TEC, qui est un compte de contrepartie de frais négatif. |
-| **Compte coûts lettrés** |Un compte de contrepartie du Compte dépenses TEC, qui est un compte de contrepartie de frais négatif. |
-| **Compte ajustement coûts projet** |Compte de contrepartie du compte coûts accumulés TEC, qui est un compte de frais. |
-| **Compte frais Général (budget)** |Le compte ventes qui sera utilisé pour les dépenses GL dans les tâches projet avec ce groupe de report. S'il n'est pas renseigné, le compte du grand livre entré sur la ligne planification projet est utilisé. |
-| **Compte ventes à payer TEC** |Compte TEC pour la valeur des ventes calculée des TEC, qui est un compte Produit accumulé pour votre bilan. Lorsqu’un ajustement TEC vous oblige à augmenter le revenu réceptionné, vous le reportez dans ce compte. |
-| **Compte ventes facturées TEC** |Compte pour la valeur des ventes facturées des TEC qui ne peuvent pas être réceptionnés. Il s'agit d'un compte bilan produit comptabilisé d'avance. |
-| **Compte ventes lettrées projet** |Compte de contrepartie du Compte ventes facturées TEC, qui est un compte de contrepartie de revenu. |
-| **Compte ajustement vente projet** |Compte de contrepartie du Compte ventes projet TEC, qui est un compte de revenu. |
-| **Compte coûts récep.** |Compte frais contenant les coûts réceptionnés du projet. Il s'agit ordinairement d'un compte frais pour débit. |
-| **Compte ventes récep.** |Compte de revenu contenant les revenus réceptionnés du projet. Il s'agit ordinairement d'un compte de revenu pour crédit. |
+| Champ de compte | Désignation | Utilisé dans le type TEC |
+| --- | --- |  --- |
+| **Code** |Identificateur pour le groupe de report. Vous pouvez entrer un maximum de 10 caractères, espaces compris. | |
+| **Compte dépenses TEC** |Compte TEC pour les dépenses calculées des TEC du projet, qui est un compte d'actif capital de bilan. | Coût affecté, Coûts reconnus|
+| **Compte coûts à payer TEC** |Compte pour la méthode Valeur coût ou Coût des ventes du calcul TEC. Ce compte concerne le passif bilan de charge accumulé sur votre bilan. Lorsqu’un ajustement TEC vous oblige à augmenter les coûts utilisation que vous reportez dans votre compte de gestion, vous les reportez dans ce compte. | Coûts accumulés|
+| **Compte coûts lettrés projet** |Un compte de contrepartie du Compte dépenses TEC, qui est un compte de contrepartie de frais négatif. Utilisé lorsque **Méthode de report TEC utilisée** est définie sur *Projet*. | Coûts affectés, Coûts reconnus|
+| **Compte coûts lettrés article** |Identique au **Compte coûts affectés projet**, mais utilisé lorsque **Méthode de report TEC utilisée** est définie sur *Écriture projet*.| |
+| **Compte coûts lettrés ressource** |Identique au **Compte coûts affectés projet**, mais utilisé lorsque **Méthode de report TEC utilisée** est définie sur *Écriture projet*.| |
+| **Compte coûts affectés général** |Identique au **Compte coûts affectés projet**, mais utilisé lorsque **Méthode de report TEC utilisée** est définie sur *Écriture projet*.| |
+| **Compte ajustement coûts projet** |Compte de contrepartie du compte coûts accumulés TEC, qui est un compte de frais. | Coûts accumulés|
+| **Compte frais Général (budget)** |Le compte ventes qui sera utilisé pour les dépenses GL dans les tâches projet avec ce groupe de report. S'il n'est pas renseigné, le compte du grand livre entré sur la ligne planification projet est utilisé. | |
+| **Compte ventes à payer TEC** |Compte TEC pour la valeur des ventes calculée des TEC, qui est un compte Produit accumulé pour votre bilan. Lorsqu’un ajustement TEC vous oblige à augmenter le revenu réceptionné, vous le reportez dans ce compte. | Ventes accumulées, ventes reconnues|
+| **Compte ventes facturées TEC** |Compte pour la valeur des ventes facturées des TEC qui ne peuvent pas être réceptionnés. Il s'agit d'un compte bilan produit comptabilisé d'avance. | Ventes reconnues, Ventes affectées|
+| **Compte ventes lettrées projet** |Compte de contrepartie du Compte ventes facturées TEC, qui est un compte de contrepartie de revenu. | Ventes affectées, Ventes reconnues|
+| **Compte ajustement vente projet** |Compte de contrepartie du Compte ventes projet TEC, qui est un compte de revenu. | Ventes accumulées|
+| **Compte coûts récep.** |Compte frais contenant les coûts réceptionnés du projet. Il s'agit ordinairement d'un compte frais pour débit. | Coûts réceptionnés|
+| **Compte ventes récep.** |Compte de revenu contenant les revenus réceptionnés du projet. Il s'agit ordinairement d'un compte de revenu pour crédit. | Ventes réceptionnées|
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/paths/set-up-jobs-resources/) associée
+## Voir la [formation Microsoft](/training/paths/set-up-jobs-resources/) associée
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configurer la gestion de projet](projects-setup-projects.md)  
 [Vidéo : Créer un projet dans Dynamics 365 Business Central](https://www.youtube.com/watch?v=VqaPWr7BWmw)  

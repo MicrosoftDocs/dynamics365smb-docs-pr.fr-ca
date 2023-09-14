@@ -1,30 +1,30 @@
 ---
 title: "Procédure\_: activer des flux d’approbation"
 description: 'Lorsque vous avez créé un flux de travail et que vous êtes sûr qu’il est prêt à démarrer, vous devez l’activer.'
-author: SorenGP
+author: brentholtorf
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: null
 ms.date: 09/08/2022
-ms.author: edupont
+ms.author: bholtorf
 ---
-# <a name="enable-approval-workflows"></a>Activation des flux d’approbation
+# Activation des flux d’approbation
 
 Lorsque vous avez créé un flux de travail approbation et que vous êtes sûr qu’il est prêt à démarrer, vous devez l’activer.  
 
 Sur la page **Flux de travail**, créez un flux de travail en répertoriant les étapes concernées sur les lignes. Chaque étape comprend un événement de workflow modéré par des conditions d'événement, et une réponse de workflow modérée par des options de réponse. Définissez les étapes de flux de travail en renseignez les champs des lignes de flux de travail à l'aide de listes fixes de valeurs d’événement et de réponse qui représentent les scénarios pris en charge par le code de l’application. En savoir plus sur [Créer des flux de projet](across-how-to-create-workflows.md).  
 
-## <a name="enable-a-workflow"></a>Activer un flux de travail
+## Activer un flux de travail
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Flux de travail**, puis choisissez le lien associé.  
 2. Ouvrez le workflow que vous souhaitez activer.  
 3. Sur la page **Flux de travail**, activez le bouton à bascule **Activé**.  
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/modules/create-workflows/) associée
+## Voir la [formation Microsoft](/training/modules/create-workflows/) associée
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Créer des flux de travail approbation](across-how-to-create-workflows.md)  
 [Utilisation des flux d’approbation](across-use-workflows.md)  

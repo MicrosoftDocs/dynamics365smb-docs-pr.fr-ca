@@ -1,16 +1,16 @@
 ---
 title: Aperçu des tâches de ventilation des coûts et des revenus
 description: Décrit les tâches pour affecter une écriture dans un journal général dans différents comptes lorsque vous reportez le journal.
-author: SorenGP
+author: brentholtorf
 ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.form: '283, 5629'
 ms.date: 04/01/2021
-ms.author: edupont
+ms.author: bholtorf
 ---
-# <a name="allocate-costs-and-income"></a>Répartition des coûts et du revenu
+# Répartition des coûts et du revenu
 
 Vous pouvez ventiler une écriture dans un journal général dans différents comptes lorsque vous reportez le journal. L'affectation peut être effectuée de trois manières différentes :
 
@@ -23,7 +23,7 @@ Les fonctions d'affectation peuvent être utilisées avec les journaux générau
 
 Les procédures suivantes décrivent comment se préparer à affecter des coûts dans un journal général récurrent en définissant des clés d'affectation. Lorsque des clés d'affectation sont définies, vous renseignez et reportez le journal comme tout autre journal général récurrent. Pour plus d'informations, reportez-vous à [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 
-## <a name="to-set-up-allocation-keys"></a>Pour définir des clés de ventilation
+## Pour définir des clés de ventilation
 
 Vous pouvez affecter une écriture dans un journal général récurrent dans différents comptes lorsque vous reportez le journal. L'affectation peut être effectuée par quantité, pourcentage ou montant.  
 
@@ -41,13 +41,13 @@ Vous pouvez affecter une écriture dans un journal général récurrent dans dif
 10. Après avoir saisi les lignes d'affectations, cliquez sur **OK** pour revenir à la page **Journal général récurrent**. Le champ **Montant imputé DS** est renseigné et correspond au champ **Montant**.
 11. Reportez le journal.
 
-## <a name="to-change-an-allocation-key-that-has-already-been-set-up"></a>Pour modifier une clé d'affectation déjà configurée
+## Pour modifier une clé d'affectation déjà configurée
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal général récurrent**, puis sélectionnez le lien associé.
 2. Sur la page **Journal général récurrent**, sélectionnez le journal contenant l'affectation.
 3. Sélectionnez la ligne de la ventilation, puis sélectionnez l'action **Ventilations**.
 4. Modifiez les champs appropriés, puis cliquez sur le bouton **OK**.
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
 [Utiliser des journaux généraux](ui-work-general-journals.md)    
 [Validation des documents et des feuilles](ui-post-documents-journals.md)    

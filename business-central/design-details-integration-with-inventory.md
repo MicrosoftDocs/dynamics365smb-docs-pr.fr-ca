@@ -1,20 +1,20 @@
 ---
 title: Détails de conception - Intégration avec l’inventaire
 description: Les zones d’affectation Warehouse Management et Inventory interagissent dans l’inventaire physique et dans l’ajustement d’inventaire ou entrepôt.
-author: SorenGP
+author: brentholtorf
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: null
 ms.date: 06/15/2021
-ms.author: edupont
+ms.author: bholtorf
 ---
-# <a name="design-details-integration-with-inventory"></a>Détails de conception : intégration avec l'inventaire
+# Détails de conception : intégration avec l'inventaire
 
 Les fonctionnalités Warehouse Management et Inventory interagissent dans l’inventaire physique et dans l’ajustement d’inventaire ou entrepôt.  
 
-## <a name="physical-inventory"></a>Inventaire
+## Inventaire  
 
 La page **Journal inventaire physique entrepôt** est utilisée avec la page **Journal inventaire physique** pour tous les emplacements entrepôts avancés. L'inventaire au niveau de la zone est calculé, et une liste imprimée est donnée au magasinier. La liste indique les articles dans lesquels les emplacements doivent être comptabilisés.  
   
@@ -30,7 +30,7 @@ Lorsque vous reportez le journal inventaire physique, l'inventaire et la zone d'
 
 [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
   
-## <a name="warehouse-adjustments-to-the-item-ledger"></a>Ajustements d’entrepôt dans le grand livre article
+## Ajustements d’entrepôt dans le grand livre article  
 
 Vous utilisez la page **Journal article** et la fonction **Calculer ajustement entrepôt** pour ajuster l'inventaire dans le grand livre article conformément à un ajustement qui a été apporté sur la quantité d'un article dans une zone de stockage. Pour créer un lien entre l'inventaire et l'entrepôt, vous devez définir une zone d'ajustement par défaut par emplacement.  
   
@@ -43,7 +43,7 @@ Pour ajuster le contenu de la zone, utilisez un journal article entrepôt, à pa
   
 Si vous saisissez une quantité positive et reportez la ligne, l'inventaire enregistré dans la zone augmente, et la quantité de la zone d'ajustement par défaut diminue en conséquence.  
   
-## <a name="see-also"></a>Voir aussi
+## Voir aussi  
 
 [Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)  
 [Détails de conception : disponibilité dans l'entrepôt](design-details-availability-in-the-warehouse.md)  

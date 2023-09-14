@@ -1,8 +1,8 @@
 ---
-author: edupont04
+author: brentholtorf
 ms.topic: include
 ms.date: 04/27/2021
-ms.author: edupont
+ms.author: bholtorf
 ---
 Lorsque vous commencez à utiliser [!INCLUDE[prod_short](../../../includes/prod_short.md)], vous pouvez exécuter un guide de configuration assistée afin de rapidement et facilement configurer les informations relatives à la taxe de vente pour votre compagnie, vos clients et vos fournisseurs. En quelques minutes, vous êtes prêt à créer des documents vente et des documents achat pour lesquels la taxe de vente est calculée correctement. Il suffit de rechercher le guide de configuration assistée **Configuration de la taxe de vente**, puis d'effectuer la procédure du guide. I s'agit de spécifier les comptes à utiliser pour la taxe de vente pour les ventes et les achats.  
 
@@ -12,7 +12,7 @@ Les personnes auxquelles vous attribuez les codes de région fiscale déterminen
 
 Si vous passez à la section *Ma compagnie* vierge, nous vous recommandons de commencer par utiliser chacun des guides de configuration assistée, y compris celui qui concerne la taxe de vente. Si vous préférez configurer la taxe de vente par vous-même, cet article explique ce que vous devez prendre en compte. Mais nous vous recommandons de collaborer étroitement avec votre conseiller fiscal.  
 
-## <a name="tax-groups-tax-areas-and-tax-jurisdictions"></a>Groupes taxes, zones de recouvrement et autorités de recouvrement
+## Groupes taxes, zones de recouvrement et autorités de recouvrement
 
 Dans [!INCLUDE[prod_short](../../../includes/prod_short.md)], un groupe fiscal représente un groupe d'articles en inventaire ou de ressources soumis au même conditions pour ce qui est des taxes. Par exemple, vous pouvez configurer un groupe fiscal pour les articles soumis à la taxe et un autre pour les articles non soumis à la taxe. Vous devez affecter des codes groupe fiscal aux articles en inventaire et aux comptes du grand livre. De même, vous devez affecter des codes de région fiscale aux clients, aux emplacements et aux paramètres de votre compagnie. Le guide de configuration assistée vous aide à effectuer ces opérations.  
 

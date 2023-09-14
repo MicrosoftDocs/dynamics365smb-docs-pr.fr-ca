@@ -1,8 +1,8 @@
 ---
-author: edupont04
+author: brentholtorf
 ms.topic: include
 ms.date: 04/01/2021
-ms.author: edupont
+ms.author: bholtorf
 ---
 
 La taxe de vente inclut les taxes payées par les compagnies pour utiliser des articles :  
@@ -10,7 +10,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
 - Taxe de service (États-Unis) – La taxe de service est une taxe de vente payée aux États-Unis sur les articles qu'une compagnie achète pour son propre usage plutôt que pour la vente à un client. La compagnie doit payer une taxe de vente pour ces articles au gouvernement, sous la forme d'une taxe de service.  
 - Taxe achat (Canada) – La taxe d'achat est une taxe de vente canadienne payée par une compagnie sur les articles achetés à un fournisseur. Lorsqu'une compagnie achète des articles pour son propre usage, le fournisseur facture la taxe de vente appropriée pour les articles.  
 
-## <a name="to-set-up-use-tax-for-a-purchase-order"></a>Pour configurer la taxe de service pour un bon de commande
+## Pour configurer la taxe de service pour un bon de commande  
 1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Bons de commande**, puis sélectionnez le lien associé.  
 2.  Sur la page **Bons de commande**, sélectionnez l'action **Nouveau**.  
 3.  Sur le raccourci **Lignes**, complétez les champs, comme nécessaire. [!INCLUDE[tooltip-inline-tip](../../../includes/tooltip-inline-tip_md.md)]  
@@ -24,7 +24,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
     |**Code provincial de région fiscale**|Le code fiscal de la province. **Important :**  Ce champ est disponible sur la page **En-tête achat**, mais il n'est pas affiché par défaut. Pour sélectionner le champ, vous devez d'abord ajouter la colonne qui affiche ce champ. [!INCLUDE[bp_customize](../../../includes/bp_customize_md.md)]|  
 5.  Choisissez le bouton **OK**.  
 
-## <a name="to-set-up-use-tax-details"></a>Pour configurer les détails de la taxe de service
+## Pour configurer les détails de la taxe de service  
 1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Détails fiscaux**, puis sélectionnez le lien associé.  
 2.  Sur la page **Détails fiscaux**, sélectionnez l'action **Nouveau**.  
 3.  Sur la page **Nouveau - Détails fiscaux**, renseignez les champs comme décrit dans le tableau suivant.  
@@ -36,7 +36,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
     |**Type taxe**|**Taxe de vente et de service** – Pour appliquer la taxe de vente et de service à l'écriture spécification de taxe.<br /><br /> –ou–<br /><br /> **Taxe d'accise** – Pour appliquer la taxe d'accise à l'écriture spécification de taxe.<br /><br /> –ou–<br /><br /> **Taxe de vente uniquement** – Pour appliquer la taxe de vente uniquement à l'écriture spécification de taxe.<br /><br /> –ou–<br /><br /> **Taxe de service uniquement** – Pour appliquer la taxe de service uniquement à l'écriture spécification de taxe.|  
 4.  Choisissez le bouton **OK**.  
 
-## <a name="to-set-up-purchase-tax-for-a-company"></a>Pour configurer la taxe d'achat pour une compagnie
+## Pour configurer la taxe d'achat pour une compagnie  
 1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Informations sur la compagnie**, puis sélectionnez le lien associé.  
 2.  Sur la page **Informations sur la compagnie**, dans le raccourci **Taxe**, renseignez les champs comme décrit dans le tableau ci-dessous.  
 
@@ -47,7 +47,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
     |**Code provincial de région fiscale**|Le code fiscal de la province.|  
 3.  Choisissez le bouton **OK**.  
 
-## <a name="to-set-up-purchase-tax-for-a-location"></a>Pour configurer la taxe d'achat pour un emplacement
+## Pour configurer la taxe d'achat pour un emplacement  
 1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Emplacements**, puis sélectionnez le lien associé.  
 2.  Sur la page **Emplacements**, sélectionnez l'emplacement requis, puis cliquez sur l'action **Modifier**.  
 3.  Sous le raccourci **Général**, renseignez les champs comme indiqué dans le tableau ci-dessous.  
@@ -60,7 +60,7 @@ La taxe de vente inclut les taxes payées par les compagnies pour utiliser des a
     |**Code provincial de région fiscale**|Le code fiscal de la province.|  
 4.  Choisissez le bouton **OK**.  
 
-## <a name="to-set-up-purchase-tax-for-non-recoverable-tax"></a>Pour configurer la taxe d'achat pour une taxe non recouvrable
+## Pour configurer la taxe d'achat pour une taxe non recouvrable  
 1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Détails fiscaux**, puis sélectionnez le lien associé.  
 2.  Sur la page **Détails fiscaux**, sélectionnez l'action **Nouveau**.  
 3.  Cochez la case **Dépense/Capitaliser**.  

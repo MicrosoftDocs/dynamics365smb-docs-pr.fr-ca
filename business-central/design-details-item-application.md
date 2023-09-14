@@ -1,16 +1,16 @@
 ---
 title: Détails de conception - Affectation article | Microsoft Docs
 description: Cette rubrique décrit où la quantité et la valeur d'inventaire sont enregistrées lorsque vous reportez une transaction inventaire.
-author: SorenGP
+author: brentholtorf
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 'design, items, ledger entries, posting, inventory'
 ms.date: 06/08/2021
-ms.author: edupont
+ms.author: bholtorf
 ---
-# <a name="design-details-item-application"></a>Détails de conception : affectation article
+# Détails de conception : affectation article
 
 Lorsque vous reportez une transaction d'inventaire, le report de quantité est enregistré dans les écritures article, le report de valeur dans les écritures valeur. Pour plus d'informations, voir [Détails de conception : comptabilisation stock](design-details-inventory-posting.md).  
 
@@ -54,22 +54,22 @@ Une écriture d'affectation article enregistre les informations suivantes.
 |**Quantité**|Quantité affectée.|  
 |**Date de validation**|Date de report de la transaction.|  
 
-## <a name="inventory-increase"></a>Augmentation d'inventaire
+## Augmentation d'inventaire  
 Lorsque vous reportez une augmentation d'inventaire, une simple écriture d'affectation article est enregistrée sans affectation à une écriture sortante.  
 
-### <a name="example"></a>Exemple :
+### Exemple :  
 Le tableau suivant montre l'écriture d'affectation article qui est créée lorsque vous reportez une réception achat de 10 unités.  
 
 |Date de report|N° écriture article entrant|N° écriture article sortant|Quantité|N° écriture article gr. livre|  
 |------------------|----------------------------------------------|-----------------------------------------------|--------------|---------------------------------------------|  
 |01/01/20|1|0|10|1|  
 
-## <a name="inventory-decrease"></a>Diminution d'inventaire
+## Diminution d'inventaire  
 Lorsque vous reportez une diminution d'inventaire, une écriture d'affectation article qui lie la diminution d'inventaire à une augmentation d'inventaire est créée. Ce lien est créé en utilisant le mode évaluation stock de l'article comme base d'instructions. Pour les articles utilisant les modes évaluation du stock FIFO, standard, et moyen, le lien est basé sur le principe du premier entré, premier sorti. La diminution d'inventaire est affectée avec l'augmentation d'inventaire ayant la date de report future la plus proche. Pour les articles utilisant le mode évaluation stock LIFO, le lien est basé sur le principe du dernier entré, premier sorti. La diminution d'inventaire est affectée à l'augmentation d'inventaire ayant la date de report passée la plus récente.  
 
 Dans la table **Ecriture article**, le champ **Quantité restante** présente la quantité qui n'a pas encore été lettrée. Si la quantité restante est supérieure à 0, la case à cocher **Ouvrir** est activée.  
 
-### <a name="example-1"></a>Exemple :
+### Exemple :  
 L'exemple suivant montre l'écriture d'affectation article créée lors du report d'une livraison vente de 5 unités des articles réceptionnés dans l'exemple précédent. La première écriture d'affectation article est la réception achat. La deuxième écriture d'affectation est la livraison vente.  
 
 Le tableau suivant montre les deux écritures d'affectation article qui résultent respectivement de l'augmentation de la diminution d'inventaire.  
@@ -79,12 +79,12 @@ Le tableau suivant montre les deux écritures d'affectation article qui résulte
 |01/01/20|1|0|10|1|  
 |03/01/20|1|2|-5|2|  
 
-## <a name="fixed-application"></a>Affectation fixe
+## Affectation fixe  
 Vous effectuez une affectation fixe lorsque vous spécifiez que le coût d'une augmentation d'inventaire doit être affecté à une diminution d'inventaire spécifique ou inversement. Cette affectation fixe influence les quantités restantes des écritures, mais l'affectation fixe inverse également le coût exact de l'écriture d'origine sur laquelle vous affectez (ou à partir de laquelle vous affectez).  
 
 Pour créer une affectation fixe, vous utilisez les champs **Écr. article à affecter** ou **Écriture article à affecter** des lignes document pour spécifier l'écriture article vers laquelle (ou à partir de laquelle) vous souhaitez affecter la ligne transaction. Par exemple, vous pouvez effectuer une affectation fixe lorsque vous voulez créer un coût affecté qui spécifie qu'un retour vente doit être affecté à une livraison vente spécifique afin d'inverser le coût de la livraison vente. Dans ce cas, [!INCLUDE[prod_short](includes/prod_short.md)] ignore le mode d'évaluation du stock et lettre la sortie de stock (ou l'entrée de stock en cas de retour vente) sur l'écriture comptable article que vous spécifiez. L'avantage d'effectuer une affectation fixe est que le coût de la transaction initiale est transmis à la nouvelle transaction.  
 
-### <a name="example--fixed-application-in-purchase-return"></a>Exemple – affectation fixe dans le retour achat
+### Exemple – affectation fixe dans le retour achat  
 L'exemple suivant, qui illustre l'effet de l'affectation fixe d'un retour achat d'un article utilisant le mode d'évaluation coût FIFO, est basé sur le scénario suivant :  
 
 1. Dans la séquence 1, l'utilisateur reporte un achat à un coût de 10,00 $.  
@@ -109,7 +109,7 @@ Le tableau suivant montre l'écriture d'affectation article générée par l'aff
 
 Le coût du second achat, 20,00 $, est ensuite transmis correctement au retour achat.  
 
-### <a name="example--fixed-application-with-average-cost"></a>Exemple – affectation fixe avec le coût moyen
+### Exemple – affectation fixe avec le coût moyen  
 L'exemple suivant, qui indique l'effet de l'affectation fixe, est basé sur le scénario suivant pour un article qui utilise le mode évaluation coût moyen :  
 
 1. Dans les numéros de séquence 1 et 2, l'utilisateur reporte deux factures achat. La seconde facture a un coût unitaire direct incorrect de 1000,00 $.  
@@ -149,7 +149,7 @@ Dans le numéro d'écriture 5, la valeur du champ **Coût indiqué (réel)** de 
 > [!NOTE]  
 >  Si vous effectuez une affectation fixe pour une diminution d'inventaire d'un article qui utilise le mode évaluation coût moyen, la diminution d'inventaire ne reçoit pas le coût moyen pour l'article comme d'habitude, mais reçoit le coût de l'augmentation d'inventaire que vous avez spécifiée. Cette diminution d'inventaire ne fait alors plus partie du calcul du coût moyen.  
 
-### <a name="example--fixed-application-in-sales-return"></a>Exemple – affectation fixe dans le retour vente
+### Exemple – affectation fixe dans le retour vente  
 Les affectations fixes sont également un excellent moyen d'inverser un coût exactement, par exemple avec des retours vente.  
 
 L'exemple suivant, qui indique la manière dont une affectation fixe garantit l'inversion du coût exact, est basé sur le scénario suivant :  
@@ -190,10 +190,10 @@ Lorsque vous exécutez le traitement en lot **Ajuster coûts - Écr. article**, 
 > [!NOTE]  
 >  Si vous reportez une transaction avec une affectation fixe et si l'écriture article que vous affectez doit être fermée, ce qui signifie que la quantité restante est égale à zéro, l'ancienne affectation est automatiquement annulée et l'écriture article est réaffectée à l'aide de l'affectation fixe que vous avez spécifiée.  
 
-## <a name="transfer-application"></a>Application de transfert
+## Application de transfert  
 Lorsqu'un article est transféré d'un emplacement à un autre, dans l'inventaire de la compagnie, alors une affectation est créée entre les deux écritures de transfert. L'évaluation d'une écriture de transfert dépend du mode d'évaluation. Pour les articles utilisant le mode évaluation stock moyen, l'évaluation est créée à l'aide du coût moyen dans la période coût moyen où se trouve la date évaluation du transfert. Pour les articles utilisant d'autres modes évaluation coût, l'évaluation est effectuée en remontant jusqu'au coût de l'augmentation d'inventaire d'origine.  
 
-### <a name="example--average-costing-method"></a>Exemple – mode évaluation stock moyen
+### Exemple – mode évaluation stock moyen  
 L'exemple suivant, qui indique comment les écritures de transfert sont affectées, est basé sur le scénario suivant pour un article utilisant le mode évaluation stock moyen et une période coût moyen Jour.  
 
 1. L'utilisateur achète l'article à un montant de 10,00 $.  
@@ -209,7 +209,7 @@ Le tableau suivant montre l'effet du transfert sur les écritures valeur de l'ar
 |01/02/20|Virement|EAST|-1|15.00|3|  
 |01/02/20|Virement|WEST|1|15.00|4|  
 
-### <a name="example--standard-costing-method"></a>Exemple – Mode d'évaluation du stock Standard
+### Exemple – Mode d'évaluation du stock Standard  
 L'exemple suivant, qui indique comment les écritures de transfert sont affectées, est basé sur le scénario suivant pour un article utilisant le mode évaluation stock Standard et une période coût moyen Jour.  
 
 1. L'utilisateur achète l'article à un montant standard de 10,00 $.  
@@ -225,7 +225,7 @@ Le tableau suivant montre l'effet du transfert sur les écritures valeur de l'ar
 
 Étant donné que la valeur de l'augmentation d'inventaire d'origine est de 10,00 $, le transfert est évalué à ce coût, et non à 12,00 $.  
 
-## <a name="reapplication"></a>Nouvelle affectation
+## Nouvelle affectation  
 En raison du mode de calcul du coût unitaire d'un article, une affectation article incorrecte peut produire un coût moyen ou un coût unitaire erroné. Les scénarios suivants peuvent générer des affectations article incorrectes, qui nécessitent d'annuler des affectations article et d'affecter à nouveau des écritures article :  
 
 * Vous avez oublié d'effectuer une affectation fixe.  
@@ -235,7 +235,7 @@ En raison du mode de calcul du coût unitaire d'un article, une affectation arti
 
 [!INCLUDE[prod_short](includes/prod_short.md)] propose une fonction pour analyser et corriger des lettrages article. Cela s'effectue sur la page **Feuille affectation**.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi  
 [Détails de conception : problème connu lié à l'affectation d'articles](design-details-inventory-zero-level-open-item-ledger-entries.md)  
 [Détails de conception : stock évaluation stock](design-details-inventory-costing.md)  
 [Détails de conception : modes évaluation stock](design-details-costing-methods.md)  

@@ -1,18 +1,18 @@
 ---
 title: Modifier les documents vente et achat reportés
 description: Cette rubrique explique comment mettre à jour les informations sur un document reporté comme une livraison de vente ou une facture d’achat lorsque des informations pertinentes ont changé.
-author: SorenGP
+author: brentholtorf
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.reviewer: edupont
+ms.reviewer: bholtorf
 ms.search.keywords: 'Posted document, editable, posted sales shipment, posted purchase invoice, posted return shipment, posted return receipt, Business Central, business document'
 ms.search.form: '130, 138, 142, 146, 6660, 6662, 6650, 6652'
 ms.date: 06/10/2021
-ms.author: edupont
+ms.author: bholtorf
 ---
-# <a name="edit-posted-documents"></a>Modifier les documents reportés
+# Modifier les documents reportés
 
 Parfois, vous devez mettre à jour un document reporté, car les informations pertinentes pour le document ont été modifiées. Sur un document vente reporté, il peut s'agir du numéro de suivi du colis du de l'agent de livraison, par exemple. Sur un document achat reporté, il peut s'agir d'un texte de référence de paiement.
 
@@ -32,7 +32,7 @@ Les documents supplémentaires suivants peuvent être modifiés dans les pays ou
 - RU : note de crédit vente reportée
 - IT : livraison de transfert reportée, livraison de service reportée
 
-## <a name="to-edit-a-posted-sales-shipment"></a>Pour modifier une livraison vente reportée
+## Pour modifier une livraison vente reportée
 
 Voici comment modifier une livraison vente reportée. Les étapes sont similaires pour les autres documents pris en charge.
 
@@ -43,7 +43,7 @@ Voici comment modifier une livraison vente reportée. Les étapes sont similaire
 
 La livraison vente reportée est mise à jour.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Validation des documents et des feuilles](ui-post-documents-journals.md)  
 [Rechercher les écritures associées aux documents](ui-find-entries.md)  
