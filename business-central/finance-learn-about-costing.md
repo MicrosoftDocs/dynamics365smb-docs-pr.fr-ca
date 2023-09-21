@@ -10,7 +10,7 @@ ms.search.keywords: null
 ms.date: 06/16/2021
 ms.author: bholtorf
 ---
-# À propos de l'évaluation des coûts de stock
+# <a name="about-inventory-costing"></a>À propos de l'évaluation des coûts de stock
 La gestion des coûts d'inventaire fait référence à l'enregistrement et au report des coûts d'exploitation de l'entreprise. Inclut le report des coûts de fabrication et des coûts inventaire qui constituent la valeur des articles.  
 
  Il est essentiel de comprendre les principes suivants : les méthodes d'évaluation du coût définissent le mode d'évaluation des articles lors de leur sortie de l'inventaire, l'ajustement des coûts met à jour le coût des marchandises vendues avec les coûts d'achat associés reportés après la vente, les valeurs en inventaire doivent être reportées sur les comptes du grand livre appropriés à intervalles réguliers.  
@@ -31,7 +31,7 @@ La gestion des coûts d'inventaire fait référence à l'enregistrement et au re
 |Obtenir des informations sur la manière dont les périodes d'inventaire permettent à une compagnie de contrôler la valeur de l'inventaire dans le temps en définissant des périodes plus courtes qui peuvent être fermées au report lorsque la fin de l'exercice financier approche.|[Utiliser les périodes d'inventaire](finance-how-to-work-with-inventory-periods.md)|  
 |Comprendre tous les mécanismes du moteur d'évaluation, notamment ce qui se produit lorsque vous reportez des transactions d'assemblage et de production.|[Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)|  
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 [Gestion des coûts ajustés](finance-manage-inventory-costs.md)    
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

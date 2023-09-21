@@ -9,11 +9,11 @@ ms.date: 08/16/2022
 ms.author: bholtorf
 ---
 
-# Passer à une autre compagnie ou un autre environnement
+# <a name="switching-to-another-company-or-environment"></a>Passer à une autre compagnie ou un autre environnement
 
 [!INCLUDE [prod_short](includes/prod_short.md)] est disponible dans de nombreux pays/régions différents et prend en charge de nombreux types d’organisations. Votre organisation peut choisir d’organiser le travail dans [!INCLUDE [prod_short](includes/prod_short.md)] en plusieurs *compagnies* et *environnements*. Cet article vous aide à comprendre les principales différences et à les surmonter.
 
-## À propos des compagnies et environnements
+## <a name="about-companies-and-environments"></a>À propos des compagnies et environnements
 
 [!INCLUDE [company_environment](includes/company_environment.md)]
 
@@ -25,7 +25,7 @@ ms.author: bholtorf
 <!--
 [!INCLUDE [about-ui-learn](includes/about-ui-learn.md)]-->
 
-## Fonctionnalités pour basculer d’une compagnie à une autre ou d’un environnement à un autre
+## <a name="features-for-switching-company-or-environment"></a>Fonctionnalités pour basculer d’une compagnie à une autre ou d’un environnement à un autre
 
 Il existe quelques fonctionnalités que vous pouvez utiliser pour changer de compagnie ou d’environnement pendant que vous travaillez. Le tableau suivant compare les capacités de la fonctionnalité, qui sont expliquées plus en détail dans les sections qui suivent.
 
@@ -36,7 +36,7 @@ Il existe quelques fonctionnalités que vous pouvez utiliser pour changer de com
 |[Mes paramètres](#use-my-settings)|![coche](media/check.png "coche")|||![coche](media/check.png "coche")|
 |[Hub Entreprise](#use-company-hub)|![coche](media/check.png "coche")|![coche](media/check.png "coche")|![coche](media/check.png "coche")||
 
-## Utiliser le sélecteur de compagnie
+## <a name="use-the-company-switcher"></a>Utiliser le sélecteur de compagnie
 
 L’utilisation du sélecteur de compagnie est probablement le moyen le plus rapide et le plus polyvalent de changer de compagnie. Le sélecteur de compagnie est un volet facilement accessible depuis n’importe quelle page. Le volet donne un aperçu de toutes les compagnies dans tous les environnements auxquels vous avez accès et vous permet de passer directement à l’une d’entre elles&mdash; soit dans le même onglet du navigateur, soit dans un nouveau. C’est particulièrement utile lorsque vous travaillez dans de nombreuses compagnies dans différents environnements.
 
@@ -57,7 +57,7 @@ L’utilisation du sélecteur de compagnie est probablement le moyen le plus rap
 > [!TIP]
 > Appuyez sur <kbd>F5</kbd> pour actualiser la liste des environnements et des compagnies.
 
-## Utiliser le lanceur d’application
+## <a name="use-the-app-launcher"></a>Utiliser le lanceur d’application
 
 Lorsque vous êtes connecté à [!INCLUDE[prod_short](includes/prod_short.md)], les environnements auxquels vous pouvez accéder sont disponibles sur le site Office.com.  
 
@@ -73,7 +73,7 @@ The following image shows tiles for accessing production and sandbox environment
 
 :::image type="content" source="media/app-picker-environments.png" alt-text="The Dynamics 365 Home page showing production and sandbox environments.":::
 -->
-## Utiliser Mes paramètres
+## <a name="use-my-settings"></a>Utiliser Mes paramètres
 
 Lorsque vous êtes connecté à [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez rapidement passer à une autre compagnie dans le même environnement. Après avoir effectué le changement, la compagnie que vous choisissez devient votre compagnie par défaut et s’ouvrira la prochaine fois que vous vous connecterez.
 
@@ -88,13 +88,13 @@ Lorsque vous êtes connecté à [!INCLUDE[prod_short](includes/prod_short.md)], 
 > [!TIP]
 > Une bonne façon d'aller directement à votre compagnie par défaut lorsque vous vous connectez et d'éviter d'avoir à spécifier un environnement consiste à ajouter l'URL à votre liste de favoris après vous être connecté.
 
-## Utiliser le Hub Entreprise
+## <a name="use-company-hub"></a>Utiliser le Hub Entreprise
 
 *Hub Entreprise* est un tableau de bord hautement spécialisé qui donne un aperçu financier de toutes les compagnies et de tous les environnements. Disponible en tant qu’[extension](ui-extensions-company-hub.md), le hub Entreprise fournit un tableau de bord avec des données récapitulatives pour chaque compagnie à laquelle vous avez accès. La page d’accueil affiche les KPI financiers ainsi qu’un lien direct vers les différents environnements et compagnies. Pour plus d’informations, voir [Gérer le travail entre plusieurs compagnies dans le Hub Entreprise](company-hub.md).
 
 [![Affiche la page Hub Entreprise qui répertorie toutes les compagnies.](media/company-hub.png)](media/company-hub.png#lightbox)  
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Création de compagnies dans [!INCLUDE[prod_short](includes/prod_short.md)]](about-new-company.md)  
 [Modifier les paramètres de base](ui-change-basic-settings.md)  
