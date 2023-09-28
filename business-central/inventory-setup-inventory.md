@@ -32,11 +32,9 @@ Lorsque vous avez configuré votre inventaire, vous pouvez gérer différents pr
 |Importez plusieurs images d'article en une seule fois depuis un fichier zip où les fichiers sont nommés selon les numéros d'article.|[Importer plusieurs images d'article](inventory-how-import-item-pictures.md)|
 |Spécifiez les rapports par défaut à utiliser pour différents types de documents.|[Sélection des rapports dans Business Central](across-report-selections.md)|
 
-## Voir la [formation Microsoft](/training/paths/trade-get-started-dynamics-365-business-central/) associée
-
 ## Voir aussi
 
-[Gestion de l'inventaire](inventory-manage-inventory.md)  
+[Gestion du stock](inventory-manage-inventory.md)  
 [Gestion des achats](purchasing-manage-purchasing.md)  
 [Gestion des ventes](sales-manage-sales.md)    
 [Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)

@@ -43,8 +43,6 @@ Cette rubrique définit les conditions principales qui sont utilisés en comptab
 |Coût variable|Les coûts variables sont des frais qui varient proportionnellement à l'activité d'une société. Les coûts variables représentent la somme de coûts marginaux dans toutes les unités produites. Les coûts fixes et les coûts variables constituent les deux composants des coûts totaux.|  
 |Variante|Une variante est utilisée comme un libellé facultatif et défini par l'utilisateur pour les affectations. Son objectif consiste à filtrer les groupes d'affectation.|  
 
-## Voir la [formation Microsoft](/training/paths/use-cost-accounting-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
  [À propos de la comptabilité analytique](finance-about-cost-accounting.md)  

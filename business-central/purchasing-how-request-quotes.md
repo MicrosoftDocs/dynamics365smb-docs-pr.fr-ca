@@ -31,13 +31,11 @@ Le devis d'achat est supprimé de la base de données. Un bon de commande est cr
 > [!NOTE]
 > Il n’est pas possible de convertir directement un devis d’achat en facture d’achat, comme c’est le cas avec les devis de vente. Pour plus de détails sur la création d’une facture d’achat, consultez [Enregistrer les achats avec les factures d’achat](purchasing-how-record-purchases.md).
 
-## Voir la [formation Microsoft](/training/modules/create-purchase-documents-dynamics-365-business-central/) associée.
-
 ## Voir aussi .
 
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Définition des achats](purchasing-setup-purchasing.md)  
-[Envoyer des documents par courriel](ui-how-send-documents-email.md)  
+[Envoi de documents par courriel](ui-how-send-documents-email.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

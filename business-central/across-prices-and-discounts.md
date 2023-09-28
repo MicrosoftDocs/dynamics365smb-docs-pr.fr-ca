@@ -76,7 +76,7 @@ Ces étapes diffèrent selon que votre administrateur a activé ou non la foncti
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.
 2. Ouvrez la fiche client appropriée, puis sélectionnez l'action **Remises ligne**.
-3. Renseignez les champs de la ligne selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)] Renseignez une ligne pour chaque combinaison qui accorde une remise ligne vente au client.
+3. Renseignez les champs de la ligne selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)] Renseignez une ligne pour chaque combinaison qui accorde un escompte ligne vente au client.
 
 > [!Note]
 > Lorsque vous ouvrez les pages **Prix de vente** et **Escomptes de ligne de vente** à partir d’un client spécifique, les champs **Filtre type vente** et **Filtre code vente** sont définis pour le client et ne peuvent pas être modifiés ou supprimés.
@@ -177,7 +177,7 @@ Si vous souhaitez mettre à jour en bloc des prix article, tels que l'augmentati
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille de calcul de prix de vente**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Suggérer prix article**    
-3. Sur le raccourci **Article**, renseignez le champ **N°**, ou **Groupe de report inventaire** ou d'autres champs avec les prix article d'origine à mettre à jour.  
+3. Sur le raccourci **Article**, renseignez le champ **N°**, ou **Groupe de report inventaire** ou d’autres champs avec les prix article d’origine à mettre à jour.  
 4. Dans la partie supérieure de la page de demande, indiquez dans les champs **Type vente** et **Code vente** le type et le nom sous lesquels vous souhaitez copier les prix de vente.
 5. Si vous souhaitez que le traitement en lot ajuste automatiquement les prix article proposés, saisissez l'ajustement dans le champ **Facteur ajustement**. Par exemple, vous devez entrer 1,15 dans **Facteur appliqué** pour une augmentation de 15 % des prix unitaires.  
 6. Pour que le traitement par lots crée des prix, sélectionnez le champ **Créer nouveaux prix**.  
@@ -198,8 +198,6 @@ Pour mettre à jour les prix de plusieurs articles, vous devez créer une nouvel
 ## Calcul du meilleur prix
 
 Lorsque vous avez enregistré des prix spéciaux et des escomptes ligne pour les ventes et les achats, [!INCLUDE[d365fin](includes/d365fin_md.md)] s’assure que votre profit pour l’article est toujours optimal en calculant automatiquement le meilleur prix dans les documents achat et vente, sur le projet et les lignes journal article. Pour plus d'informations, voir [Calcul du meilleur prix](sales-how-record-sales-price-discount-payment-agreements.md#best-price-calculation).
-
-## Voir la [formation Microsoft](/training/modules/customer-discounts-dynamics-365-business-central/) associée
 
 ## Voir aussi .
 

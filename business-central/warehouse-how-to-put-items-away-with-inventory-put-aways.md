@@ -83,9 +83,7 @@ Un employé d'entrepôt peut créer un nouveau rangement inventaire basé sur le
 
     [!INCLUDE [preview-posting-warehouse](includes/preview-posting-warehouse.md)]
 
-## Voir la [formation Microsoft](/training/modules/receive-put-away-items/) associée
-
-## Voir aussi
+## Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

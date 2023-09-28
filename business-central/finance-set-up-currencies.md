@@ -111,9 +111,7 @@ Vous pouvez entrer un code devise sur une ligne journal général et reporter ce
 
 [!INCLUDE [finance-currencies-example](includes/finance-currencies-example.md)]
 
-## Voir la [formation Microsoft](/training/modules/currencies-exchange-rates-dynamics-365-business-central/) associée
-
-## Voir aussi .
+## Voir aussi
 
 [Mettre à jour des taux de change devise](finance-how-update-currencies.md)  
 [Configurer une devise de report additionnelle](finance-how-setup-additional-currencies.md)  

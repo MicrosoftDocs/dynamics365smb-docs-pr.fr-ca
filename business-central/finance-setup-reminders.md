@@ -90,11 +90,9 @@ Si vous créez plus de relances qu'il n'y a de niveaux relance, les conditions u
     > [!NOTE]
     > La date d'échéance est calculée selon la formule de date que vous saisissez. Pour plus d’informations, voir [Utiliser des formules date](ui-enter-date-ranges.md#use-date-formulas).
 
-Si vous avez configuré les modalités de rappel (avec des niveaux et du texte supplémentaires), entrez l'un des codes sur chaque fiche client. Pour plus d'informations, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).  
+Si vous avez configuré les modalités de rappel (avec des niveaux et du texte supplémentaires), saisissez l'un des codes sur chaque fiche client. Pour plus d'informations, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).  
 
-## Voir la [formation Microsoft](/training/modules/send-reminders-dynamics-365-business-central/) associée
-
-## Voir aussi .
+## Voir aussi
 
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
 [Envoyer des rappels de soldes impayés](receivables-send-reminders.md)  

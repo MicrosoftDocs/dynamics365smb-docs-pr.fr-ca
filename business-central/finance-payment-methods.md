@@ -37,13 +37,11 @@ Vous pouvez éventuellement ajouter des modalités de paiement à votre mode de 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Client** ou **Fournisseur**, puis choisissez le lien associé.
 2. Dans le champ **Code mode de règlement**, choisissez le mode à utiliser par défaut pour le client ou le fournisseur.
 
-## Voir la [formation Microsoft](/training/modules/cash-management-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
-[Enregistrer de nouveaux clients](sales-how-register-new-customers.md)  
+[Enregistrement de nouveaux clients](sales-how-register-new-customers.md)  
 [Configurer des modalités de paiement](finance-payment-terms.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 

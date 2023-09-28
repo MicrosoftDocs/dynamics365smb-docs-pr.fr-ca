@@ -53,12 +53,10 @@ Vous saisissez 1 200 000 sur la ligne d’en-tête, exportez le budget vers Ex
 
 Le département Paies distribue le montant des trois comptes de report. Lorsque vous réimportez le budget GL, les trois comptes sont renseignés avec les nouvelles données Excel, pour une somme de 1 200 000 $, et la ligne d'en-tête est vide.
 
-## Voir la [formation Microsoft](/training/modules/budgets-exchange-rates-dynamics-365-business-central/index) associée
-
 ## Voir aussi .
 
 [Exportation de vos données métier vers Excel](about-export-data.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Veille économique](bi.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 [Le grand livre et le plan comptable](finance-general-ledger.md)  

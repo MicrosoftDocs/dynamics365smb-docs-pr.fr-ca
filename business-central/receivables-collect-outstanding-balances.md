@@ -107,12 +107,10 @@ Lorsque vous émettez un rappel, une écriture rappel est créée sur la page **
 
 [!INCLUDE [multiple-interest-rates-def](includes/multiple-interest-rates-def.md)] Pour plus d’informations, reportez vous à [Paramétrer plusieurs taux d’intérêt](finance-how-to-set-up-multiple-interest-rates.md).  
 
-## Voir la [formation Microsoft](/training/paths/process-financial-periodic-activities-dynamics-365-business-central/) associée
-
 ## Voir aussi
 
-[Configurer les niveaux et modalités de rappel](finance-setup-reminders.md)  
-[Configurer les modalités de frais financiers](finance-setup-finance-charges.md)  
+[Configurer des niveaux et modalités de rappel](finance-setup-reminders.md)  
+[Configurer des modalités de frais financiers](finance-setup-finance-charges.md)  
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Vente](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

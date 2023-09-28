@@ -76,13 +76,11 @@ Certains documents dans [!INCLUDE[prod_short](includes/prod_short.md)] comporten
 
 La **Boîte d’envoi de courriels** est l’endroit où vous trouverez les courriels que vous avez enregistrés en tant que brouillons et les courriels qui n’ont pas pu être envoyés, par exemple, si l’adresse de courriel n’était pas valide. Pour les messages dont l’envoi a échoué, vous pouvez choisir **Afficher erreur** ou **Enquêter sur une erreur** pour résoudre le problème.  
 
-## Voir la [formation Microsoft](/training/modules/set-up-email/) associée
-
 ## Voir aussi
 
 [Gestion des présentations de rapport et de document](ui-manage-report-layouts.md)  
 [Configurer la messagerie](admin-how-setup-email.md)  
-[Facturer des ventes](sales-how-invoice-sales.md)  
+[Facturation des ventes](sales-how-invoice-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 

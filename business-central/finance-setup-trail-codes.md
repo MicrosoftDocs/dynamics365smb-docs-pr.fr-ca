@@ -79,13 +79,11 @@ Le code motif sélectionné est copié dans les nouveaux lots journal créées s
 
 Lors du report de la facture, le code motif est copié sur chaque écriture du grand livre, client et fournisseur. Vous ne pouvez pas affecter différents codes motif aux lignes achat et vente individuelles, car toutes les lignes sont reportées sous la forme d'une écriture unique.
 
-## Voir la [formation Microsoft](/training/paths/set-up-financial-management-dynamics-365-business-central/) associée
-
 ## Voir aussi
 
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Rapprochement de comptes bancaires](bank-manage-bank-accounts.md)  
-[Utiliser des dimensions](finance-dimensions.md)  
+[Utilisation des dimensions](finance-dimensions.md)  
 [Importation des données métier à partir d'autres systèmes financiers](across-import-data-configuration-packages.md)  
 [Analyse de la trésorerie dans votre société](finance-analyze-cash-flow.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

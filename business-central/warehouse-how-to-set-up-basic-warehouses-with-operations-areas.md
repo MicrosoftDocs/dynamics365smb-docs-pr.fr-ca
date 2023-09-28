@@ -136,9 +136,7 @@ La réservation d'une zone fournit une fonctionnalité similaire à l'utilisatio
 > [!NOTE]  
 >  L'emplacement doit être vide avant que vous puissiez sélectionner ou désactiver le champ **Dédié**.
 
-## Voir la [formation Microsoft](/training/modules/get-started-warehouse-management/) associée
-
-## Voir aussi
+## Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

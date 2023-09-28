@@ -47,13 +47,11 @@ Le partage de rapports avec des collaborateurs est également possible sur la pa
 >
 > Utiliser l’action **Partager** rend le fichier de rapport généré accessible aux autres utilisateurs uniquement sur OneDrive for Business et ne répertorie pas le rapport programmé sur leur **Boîte de réception Rapport**.
 
-## Voir la formation associée sur [Microsoft Learn](/learn/paths/build-reports/).
-
 ## Voir aussi .
 
 [Exécuter et imprimer des rapports](ui-work-report.md)  
 [Rapports disponibles dans [!INCLUDE[prod_short](includes/prod_short.md)]](reports-available-reports.md)  
-[Utiliser les rapports dans le travail quotidien](reports-use-reports.md)  
+[Utilisation des rapports dans le travail quotidien](reports-use-reports.md)  
 [Vue d’ensemble de Business Intelligence et de la génération de rapports](reports-bi-reporting.md)  
 [Paramétrage imprimantes](ui-specify-printer-selection-reports.md)  
 [Utiliser les dates civiles et les heures](ui-enter-date-ranges.md)  

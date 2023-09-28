@@ -54,13 +54,11 @@ Vous pouvez utiliser l'état **Immo. - Valeur projetée** pour calculer l'amorti
 4. Ne renseignez pas le raccourci **Immobilisation** pour inclure toutes les immobilisations. Dans le champ **Immo. budgétée**, vous pouvez saisir **Non** afin d'exclure les immobilisations budgétées ou sur **Oui** pour les visualiser.
 5. Cliquez sur le bouton **Imprimer** ou **Aperçu**.
 
-## Voir la [formation Microsoft](/training/modules/budget-fixed-assets/) associée
-
 ## Voir aussi .
 
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

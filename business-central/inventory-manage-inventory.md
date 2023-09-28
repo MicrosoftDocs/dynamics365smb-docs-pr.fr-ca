@@ -53,15 +53,13 @@ Le tableau suivant présente les tâches associées.
 |Configurez la description d’un article propre à un fournisseur ou à un client sur votre fiche article, afin de pouvoir insérer rapidement leur description de l’article dans les documents commerciaux.|[Utiliser références article](inventory-how-use-item-cross-refs.md)|
 |Bloquez des articles pour empêcher leur saisie dans des lignes vente ou achat, ou leur report dans n'importe quelle transaction.|[Bloquer les articles](inventory-how-block-items.md)|
 |Gérez les opérations commerciales dans les bureaux de vente, les départements d'achat ou les bureaux de planification d'usine pour plusieurs emplacements.|[Utiliser les centres de gestion](inventory-responsibility-centers.md)|
-|Utilisez des ressources avec des fonctions spécifiques pour divers services et éléments de service.|[Configurer l'affectation des ressources](service-how-setup-resource-allocation.md)|
+|Utilisez des ressources avec des fonctions spécifiques pour divers services et éléments de service.|[Configuration de l’affectation des ressources](service-how-setup-resource-allocation.md)|
 
-## Voir la [formation Microsoft](/training/paths/get-started-inventory-management/) associée
-
-## Voir aussi
+## Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Achat](purchasing-manage-purchasing.md)  
-[Vente](sales-manage-sales.md)  
+[Ventes](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)  
 

@@ -242,8 +242,6 @@ Vous pouvez spécifier les rapports à imprimer à différentes phases en choisi
 > [!NOTE]
 > Les rapports disponibles peuvent varier en fonction de la localisation de votre pays/région. L'application de base n'inclut aucune disposition.
 
-## Voir la [formation Microsoft](/training/modules/adjust-inventory/) associée
-
 ## Voir aussi .
 
 [Comptabiliser, ajuster et reclasser l'inventaire avec les journaux](inventory-how-count-adjust-reclassify.md)  

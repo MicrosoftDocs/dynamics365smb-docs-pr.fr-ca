@@ -45,8 +45,6 @@ Lorsque vous vendez ou cédez une immobilisation, la valeur de cession est repor
 
 La page **Écritures** s'ouvre. Vous pouvez y voir les écritures résultant du report de la cession.  
 
-## Voir la [formation Microsoft](/training/modules/dispose-fixed-assets/) associée
-
 ## Voir aussi .
 
 [Immobilisations](fa-manage.md)  

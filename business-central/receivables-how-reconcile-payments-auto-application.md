@@ -38,7 +38,7 @@ Sur les lignes journal dans lesquelles un paiement a été affecté automatiquem
 
 Certaines affectations de paiement nécessitent que vous les examiniez tel que défini par la règle de correspondance utilisée, comme les lignes avec une fiabilité de correspondance **Faible**. Les autres lignes nécessitent que vous les examiniez ainsi qu’une modification manuelle, car il y a une valeur dans le champ **Différence**. Pour examiner une ou plusieurs affectations de paiement, choisissez le champ **Lignes à vérifier** ou **Lignes avec différence** en bas. La page **Révision affectation paiement** s’ouvre et affiche toutes les informations pertinentes sur le client ou le fournisseur auquel le paiement est affecté, les détails de la correspondance et les actions pour traiter la ligne, telles que l’action **Accepter l’affectation**. (Voir les étapes 7 et 8)
 
-Pour chaque ligne journal de la page **Journal rapprochement paiement**, vous pouvez ouvrir la page **Affectation paiement** pour visualiser toutes les écritures ouvertes candidates au paiement et pour afficher les informations détaillées pour chaque écriture sur la correspondance des données sur laquelle une affectation de paiement est basée. Ici, vous pouvez affecter les paiements manuellement ou réaffecter les paiements qui ont été automatiquement affectés à une écriture incorrecte. (Voir l’étape 10) Pour plus d’informations, voir [Réviser ou affecter les paiements après affectation automatique](receivables-how-review-apply-payments-auto-application.md).
+Pour chaque ligne journal de la page **Journal rapprochement paiement**, vous pouvez ouvrir la page **Affectation paiement** pour visualiser toutes les écritures ouvertes candidates au paiement et pour afficher les informations détaillées pour chaque écriture sur la correspondance des données sur laquelle une affectation de paiement est basée. Ici, vous pouvez affecter les paiements manuellement ou affecter à nouveau les paiements qui ont été automatiquement affectés à une écriture incorrecte. (Voir l’étape 10) Pour plus d’informations, voir [Réviser ou affecter les paiements après affectation automatique](receivables-how-review-apply-payments-auto-application.md).
 
 > [!NOTE]  
 > Vous pouvez lancer l’importation des transactions bancaires en même temps que vous ouvrez la page **Journal rapprochement bancaire** pour un journal existant. La procédure suivante décrit comment importer des transactions bancaires sur la page **Journal rapprochement paiement** après avoir créé un journal.
@@ -87,8 +87,6 @@ Vous pouvez comparer la valeur du champ **Solde sur compte bancaire après valid
 
 > [!NOTE]  
 >   Si vous ne souhaitez pas rapprocher le compte bancaire à partir de la page **Journal rapprochement paiement**, vous devez utiliser la page **Rapprochement compte bancaire**. Pour plus d'informations, voir [Rapprocher des comptes bancaires](bank-how-reconcile-bank-accounts-separately.md).
-
-## Voir la [formation Microsoft](/training/modules/use-journals-dynamics-365-business-central/) associée
 
 ## Voir aussi .
 

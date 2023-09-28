@@ -167,9 +167,7 @@ La figure ci-après indique la date à laquelle le champ **Code de zone** de la 
 
 :::image type="content" source="media/binflow.png" alt-text="Aperçu de quand et comment le champ Code de zone est renseigné.":::
 
-## Voir la [formation Microsoft](/training/paths/pick-ship-items-business-central/) associée
-
-## Voir aussi
+## Voir aussi .
 
 [Inventaire](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  

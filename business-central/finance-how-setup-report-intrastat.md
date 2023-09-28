@@ -338,9 +338,7 @@ Le processus de travail avec les rapports Intrastat est le même que dans la fon
 
 <!-- ### United Kingdom-->
 
-## Voir la formation associée sur [Microsoft Learn](/learn/modules/process-intrastat-dynamics-365-business-central/index).
-
-## Voir aussi
+## Voir aussi .
 
 [Génération de rapports Intrastat dans Business Central](finance-how-report-intrastat.md)  
 [Gestion financière](finance.md)  

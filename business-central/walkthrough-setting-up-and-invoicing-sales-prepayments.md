@@ -235,12 +235,10 @@ Vous avez également reporté une facture paiement anticipé, créé une deuxiè
 
 Les fonctionnalités de paiement anticipé facilitent la configuration et l’application des règles de paiement anticipé pour les clients et les articles. Ils vous permettent également de reporter chaque paiement sur une facture.  
 
-## Voir la [formation Microsoft](/training/modules/prepayment-invoices-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
 [Facturation de paiements anticipés](finance-invoice-prepayments.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Procédures pas à pas liées au processus entreprise](walkthrough-business-process-walkthroughs.md)
 

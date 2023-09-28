@@ -139,14 +139,12 @@ Comme vous pouvez le voir au dernier cas de figure, le seul moyen d'obtenir des 
 
 Par conséquent, si vous planifiez souvent des demandes dans des emplacements, nous vous recommandons d’utiliser la fonction unités de stock.
 
-## Voir la formation associée sur [Microsoft Learn](/training/paths/trade-get-started-dynamics-365-business-central/).
-
 ## Voir aussi .
 
 [Planification](production-planning.md)  
-[Configurer la production](production-configure-production-processes.md)  
-[Production](production-manage-manufacturing.md)  
-[Stock](inventory-manage-inventory.md)  
+[Configuration de la fabrication](production-configure-production-processes.md)  
+[Fabrication](production-manage-manufacturing.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Configurer des unités de stock](inventory-how-to-set-up-stockkeeping-units.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)  

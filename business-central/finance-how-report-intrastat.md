@@ -134,8 +134,6 @@ Lorsque vous activez cette option, le système utilise les règles suivantes, ma
 | Pays hors UE | Pays de l’UE différent du pays indiqué dans les **Informations compagnie** | Aucune ligne Intrastat |
 | Pays hors UE | Pays hors UE | Aucune ligne Intrastat |   
 
-## Voir la formation associée sur [Microsoft Learn](/learn/modules/process-intrastat-dynamics-365-business-central/index).
-
 ## Voir aussi .
 
 [Configurer des rapports Intrastat](finance-how-setup-report-intrastat.md)  

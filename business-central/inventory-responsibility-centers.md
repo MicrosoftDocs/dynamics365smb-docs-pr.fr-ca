@@ -49,8 +49,6 @@ Pour configurer cela, vous devez affecter des centres de gestion à des utilisat
 > [!NOTE]  
 > Les utilisateurs peuvent afficher uniquement les documents reportés liés à leur propre centre de responsabilité. Cependant, ils peuvent afficher toutes les écritures et accéder à d’autres documents reportés à partir des écritures.
 
-## Voir la [formation Microsoft](/training/modules/set-up-responsibility-centers/) associée
-
 ## Voir aussi .
 
 [Configuration de stock](inventory-setup-inventory.md)  

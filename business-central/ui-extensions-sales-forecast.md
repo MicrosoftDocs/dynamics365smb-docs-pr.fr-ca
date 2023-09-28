@@ -59,12 +59,10 @@ Vous pouvez aussi utiliser votre propre service Web prévisionnel basé sur un m
 6. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration de la prévision des ventes et de l’inventaire**, puis sélectionnez le lien associé.  
 7. Développez le raccourci **Général**, puis renseignez les champs URL d'API et Clé d'API.  
 
-## Voir la [formation Microsoft](/training/modules/use-sales-inventory-forecast-extension/) associée
-
 ## Voir aussi .
 
 [Ventes](sales-manage-sales.md)  
-[Stock](inventory-manage-inventory.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Personnalisation de [!INCLUDE[prod_short](includes/prod_short.md)] à l'aide des extensions](ui-extensions.md)  
 [Utiliser l’intelligence artificielle dans Microsoft Dynamics 365 Business Central](/training/paths/use-artificial-intelligence/)  
 

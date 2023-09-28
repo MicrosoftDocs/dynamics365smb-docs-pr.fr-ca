@@ -3,7 +3,7 @@ title: Assembler des articles
 description: Découvrez les processus d’assemblage pour commande et d’assemblage pour stock dans Business Central.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: andreipa
+ms.reviewer: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: how-to
 ms.date: 11/23/2022
@@ -11,7 +11,7 @@ ms.search.keywords: 'kit, kitting'
 ms.search.form: '900, 901, 902, 903, 904, 907, 910, 916, 920, 921, 922, 923, 940, 941, 942, 930, 931, 932, 914, 915, 905'
 ms.custom: bap-template
 ---
-# <a name="assemble-items"></a>Assembler des articles
+# Assembler des articles
 
 Si le champ **Système réappro.** de la fiche client contient **Assemblage**, la méthode par défaut d’approvisionnement de l’article consiste à l’assembler conformément à une nomenclature d’assemblage et potentiellement par une ressource spécifique. Pour en savoir plus, voir [Utilisation des nomenclatures d’assemblage](assembly-how-work-assembly-boms.md). Pour en savoir plus sur le paramétrage d’un élément d’assemblage, voir [Description des processus Assembler pour commande et assembler pour stock](assembly-assemble-to-order-or-assemble-to-stock.md).
 
@@ -27,7 +27,7 @@ Cet article décrit les paramètres standard pour l’assemblage pour stock. Cep
 > [!NOTE]  
 > Les composantes d'assemblage sont gérées d'une manière spéciale dans les configurations entrepôt de base. Pour en savoir plus, voir [Traitement des articles à assembler pour commande dans les prélèvements inventaire](warehouse-how-to-pick-items-with-inventory-picks.md#handling-assemble-to-order-items-with-inventory-picks).
 
-## <a name="to-assemble-an-item-to-stock"></a>Pour assembler un article dans le stock
+## Pour assembler un article dans le stock
 
 Suivez les étapes de cette procédure pour assembler un article à stocker. Pour en savoir plus sur l’assemblage sur commande, accédez à [Vendre des articles assemblés sur commande](assembly-how-to-sell-items-assembled-to-order.md).
 
@@ -61,12 +61,10 @@ Suivez les étapes de cette procédure pour assembler un article à stocker. Pou
 
 Une fois le report réussi, l'élément d'assemblage est reporté comme production dans le code d'emplacement et le code de zone potentiel qui sont définis sur l'ordre d'assemblage. Pour les ordres d'assemblage créés manuellement, le magasin peut être copié à partir du champ de configuration **Emplacement par défaut pour les commandes**. Pour les flux assembler pour commande, le code d'emplacement peut être copié à partir de la ligne document de vente.  
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/paths/assemble-items-dynamics-365-business-central/) associée
-
-## <a name="see-also"></a>Voir aussi
+## Voir aussi .
 
 [Gestion d'assemblage](assembly-assemble-items.md)  
-[Utilisation des nomenclatures d’assemblage](assembly-how-work-assembly-boms.md)  
+[Utiliser des nomenclatures d’assemblage](assembly-how-work-assembly-boms.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

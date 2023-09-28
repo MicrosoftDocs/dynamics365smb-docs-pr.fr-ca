@@ -239,8 +239,6 @@ N’utilisez pas de compte GL qui permet le report direct dans votre groupe de r
 
 Cette erreur se produit souvent lors de la saisie d’un solde d’ouverture pour un compte bancaire. Il est important que vous ne comptabilisiez pas le solde d’ouverture directement dans le grand livre. Les écritures dans le compte GL qui sont reportées directement dans le compte GL causeront des problèmes. Par exemple, ces écritures peuvent vous empêcher de rapprocher votre compte bancaire. Pour les comptes bancaires en devise étrangère, les écritures peuvent entraîner l’accumulation de différences après le report d’autres rapprochements bancaires, en raison des ajustements du taux de change. Souvent, vous reportez le solde bancaire d’ouverture directement sur le compte bancaire, et le montant se retrouve ensuite dans le compte du grand livre. Sinon, inversez-le plus tard sur un compte du grand livre que vous utilisez pour équilibrer le solde d’ouverture du grand livre. Dans les deux cas, vous devez équilibrer toute écriture directe sur le compte du grand livre avant de commencer votre premier rapprochement bancaire, et surtout si le compte bancaire est en devise étrangère.
 
-## Voir la [formation Microsoft](/training/modules/bank-reconciliation-dynamics-365-business-central/index) associée
-
 ## Voir aussi
 
 [Rapprochement de comptes bancaires](bank-manage-bank-accounts.md)  

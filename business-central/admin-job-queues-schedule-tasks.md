@@ -37,6 +37,14 @@ Une fois les files d'attente des travaux configurées et en cours d'exécution, 
 
 Une fois qu’un travail s’est terminé correctement, il est supprimé de la liste d’écritures file d’attente des travaux, sauf en cas de projet récurrent. Pour les travaux récurrents, le champ **Heure de début (au plus tôt)** est ajusté pour afficher la prochaine heure d’exécution du projet.  
 
+## Date début au plus tôt
+
+La valeur du champ **Date/heure de début au plus tôt** sur la page **Fiche écriture file d’attente des projets** indique la prochaine fois que le projet sera exécuté. Plusieurs facteurs peuvent affecter l’exécution réelle d’une écriture file d’attente des projets à ce moment-là.
+
+Les facteurs les plus courants sont le nombre d’écritures file d’attente des projets dans un environnement et le nombre total de tâches programmées. Pour protéger les niveaux de performances, il existe des limites opérationnelles. Si vous avez beaucoup d’écritures dans la file d’attente et, par exemple, que l’une d’entre elles échoue ou que les écritures prennent simplement plus de temps que prévu, le projet suivant risque de ne pas démarrer à l’heure prévue. Si vous disposez de codeunits qui génèrent 100 000 tâches programmées ou plus, vous devez déterminer si vous avez réellement besoin de toutes ces tâches. Vous pouvez accéder à la liste de toutes les tâches programmées sur la page **Tâches programmées**.
+
+Pour en savoir plus sur la surveillance de l’état des écritures file d’attente des projets, reportez-vous à [Pour afficher l’état d’un projet](#to-view-status-for-any-job). Pour en savoir plus sur les limites opérationnelles, accédez à [Limites des tâches asynchrones](/dynamics365/business-central/dev-itpro/administration/operational-limits-online#Task).
+
 ## Surveiller l’état ou les erreurs dans la file d’attente des travaux
 
 Les données générées par la file d’attente des travaux sont stockées, de sorte que vous pouvez résoudre les erreurs.  

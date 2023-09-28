@@ -84,13 +84,11 @@ Dans l'état **Maintenance - Détails**, vous pouvez afficher ou imprimer les é
 2. Renseignez les champs selon vos besoins.
 3. Cliquez sur le bouton **Imprimer** ou **Aperçu**.
 
-## Voir la [formation Microsoft](/training/paths/manage-fixed-assets-maintenance-insurances/) associée
-
 ## Voir aussi .
 
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

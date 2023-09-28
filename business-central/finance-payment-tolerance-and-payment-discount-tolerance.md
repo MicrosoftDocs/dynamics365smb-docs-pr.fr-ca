@@ -275,11 +275,9 @@ Règles d'affectation normales
 
 (2) Si le paiement intervient dans l’une de ces plages, toutes les écritures affectation ne peuvent pas être fermées, même avec tolérance.
 
-## Voir la [formation Microsoft](/training/modules/enter-payments-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

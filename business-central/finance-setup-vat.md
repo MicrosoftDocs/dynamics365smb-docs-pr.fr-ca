@@ -302,8 +302,6 @@ Vous devez configurer des informations sur la façon dont les autorités fiscale
 
 [!INCLUDE [vat-report-setup](includes/vat-report-setup.md)]
 
-## Voir la [formation Microsoft](/training/paths/process-vat-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
 [Configurer des modèles de relevé fiscal et des noms de relevé fiscal](finance-how-setup-vat-statement.md)  

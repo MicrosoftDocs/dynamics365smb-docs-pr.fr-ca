@@ -32,8 +32,6 @@ La procédure suivante explique comment émettre une note de crédit paiement an
 5. Pour créer une facture paiement anticipé pour les nouvelles lignes dans la note de crédit vente, sélectionnez l'action **Paiement anticipé**, puis l'action **Reporter facture paiement anticipé** ou **Reporter et imprimer facture paiement anticipé**.  
 6. Pour émettre une autre facture paiement anticipé, augmentez le montant de paiement anticipé sur une ou plusieurs lignes, puis reportez la facture paiement anticipé. Une nouvelle facture est créée pour la différence entre les montants de paiement anticipé facturés et les nouveaux montants de paiement anticipé.  
 
-## Voir la [formation Microsoft](/training/modules/prepayment-invoices-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
 [Facturation de paiements anticipés](finance-invoice-prepayments.md)  

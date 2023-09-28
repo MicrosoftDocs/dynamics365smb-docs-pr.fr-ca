@@ -181,12 +181,10 @@ Lorsque des livraisons retour sont regroupées sur une note de crédit et report
 2. Renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**.  
 3. Vous pouvez également supprimer chacun des retours achat manuellement.
 
-## Voir la [formation Microsoft](/training/paths/return-items-dynamics-365-business-central/) associée
-
 ## Voir aussi
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Enregistrer des achats](purchasing-how-record-purchases.md)  
-[Corriger ou annuler des factures achat impayées](purchasing-how-correct-cancel-unpaid-purchase-invoices.md)  
+[Enregistrement des achats](purchasing-how-record-purchases.md)  
+[Correction ou annulation des factures achat impayées](purchasing-how-correct-cancel-unpaid-purchase-invoices.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Traiter les retours ou annulations de ventes](sales-how-process-sales-returns-cancellations.md)  
 

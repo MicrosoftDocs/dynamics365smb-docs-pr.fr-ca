@@ -73,12 +73,10 @@ Suivez la procédure suivante pour mettre à jour une vue d’analyse à partir 
 > [!NOTE]  
 > Pour mettre à jour tout ou partie des vues d'analyse en même temps, vous devez utiliser le traitement par lots **Mise à jour vues d'analyse**.  
 
-## Voir la formation associée sur [Microsoft Learn](/learn/modules/dimensions-financial-reports-dynamics-365-business-central/index).
-
 ## Voir aussi .
 
-[Décisionnel pour le secteur de la finance](bi.md)  
-[Finance](finance.md)  
+[Business Intelligence financière](bi.md)  
+[Finances](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 [Les écritures comptables et le plan comptable](finance-general-ledger.md)  
 [Utiliser des dimensions](finance-dimensions.md)  

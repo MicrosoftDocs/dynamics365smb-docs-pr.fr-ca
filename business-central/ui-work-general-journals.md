@@ -224,11 +224,9 @@ La procédure suivante est basée sur la page **Journal général**, mais s'appl
 
 Les valeurs dans le champ **N° document** sont modifiées, le cas échéant, pour que le numéro de document sur les lignes journal individuelles ou groupées soit dans un ordre séquentiel. Une fois que les documents sont renumérotés, vous pouvez procéder au report du journal.
 
-## Voir la [formation Microsoft](/training/paths/use-journals-dynamics-365-business-central/) associée
-
 ## Voir aussi
 
-[Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)  
+[Reporter directement des transactions dans le grand livre](finance-how-post-transactions-directly.md)  
 [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)  
 [Répartition des coûts et du revenu](year-allocate-costs-income.md)  
 [Finance](finance.md)  

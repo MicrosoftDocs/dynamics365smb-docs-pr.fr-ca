@@ -126,11 +126,9 @@ Quand quelque chose ne va pas, [!INCLUDE[prod_short](includes/prod_short.md)] af
 > [!NOTE]
 > La gestion des erreurs décrite ci-dessus n’est pas disponible sur les journaux article, ressource, employé et immobilisation, ni pour les comptes du grand livre ajoutés dans des versions locales des groupes de report.
 
-## Voir la [formation Microsoft](/training/modules/posting-groups-dynamics-365-business-central/) associée
+## Voir aussi
 
-## Voir aussi .
-
-[Les écritures comptables et le plan comptable](finance-general-ledger.md)  
+[Le grand livre et le plan comptable](finance-general-ledger.md)  
 [Configuration de Finance](finance-setup-finance.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 

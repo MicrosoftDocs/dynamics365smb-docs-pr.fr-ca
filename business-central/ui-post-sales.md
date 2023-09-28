@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.reviewer: edupont
+ms.reviewer: bholtorf
 ms.search.form: '130, 142, 1350'
 ms.date: 04/01/2021
 ms.author: bholtorf
@@ -46,8 +46,6 @@ Dans la plupart des cas, vous pouvez ouvrir des écritures à partir de la fiche
 ## Modification des écritures
 
 Vous pouvez modifier certains champs dans les documents d'achat reportés, tels que le champ **N° de suivi du colis**. . Pour plus d'informations, voir [Modifier les documents reportés](across-edit-posted-document.md). Pour les champs plus critiques qui concernent la piste d'audit, vous devez inverser ou annuler le report. Pour plus d'informations, voir [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md).
-
-## Voir la [formation Microsoft](/training/modules/ship-invoice-items-dynamics-365-business-central/index) associée
 
 ## Voir aussi
 

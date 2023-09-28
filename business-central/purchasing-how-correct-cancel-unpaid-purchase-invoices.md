@@ -51,12 +51,10 @@ Sur la page **Facture achat reportée**, vous pouvez cliquer sur le bouton **Cor
 
 Si l'annulation est liée à un report de facture partiel, la ligne de bon de commande d'origine est mise à jour pour refléter la quantité facturée annulée. Les champs **Qté à facturer** et **Qté facturée** de la ligne de bon de commande associée sont réinitialisés et affichent les valeurs avant le report partiel.
 
-## Voir la [formation Microsoft](/training/modules/receive-invoice-dynamics-d365-business-central/) associée
-
 ## Voir aussi .
 
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Enregistrer des achats](purchasing-how-record-purchases.md)  
+[Enregistrement des achats](purchasing-how-record-purchases.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 

@@ -3,7 +3,7 @@ title: Comment ranger des articles avec le rangement entrepôt
 description: Découvrez les différentes manières d’utiliser les rangements entrepôt pour ranger les articles reçus.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: andreipa
+ms.reviewer: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: how-to
 ms.date: 01/24/2023
@@ -112,9 +112,7 @@ Si un emplacement utilise à la fois le traitement du rangement et de la récept
 
 5. Après avoir placé tous les articles dans des zones selon les instructions, choisissez l'action **Enregistrer rangement**.  
 
-## Voir la [formation Microsoft](/training/modules/receive-put-away-items/) associée
-
-## Voir aussi
+## Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

@@ -79,13 +79,11 @@ Une ligne planification projet peut avoir l'un des types suivants :
 4. Sur la page **Lignes planification projet**, renseignez les champs, le cas échéant sur une nouvelle ligne.
 5. Répétez les phases 3 et 4 pour toutes les lignes planification dont vous avez besoin pour la tâche projet.
 
-## Voir la [formation Microsoft](/training/modules/create-new-job/) associée
-
 ## Voir aussi .
 
 [Gestion de projets](projects-manage-projects.md)  
 [Vidéo : Créer un projet dans Dynamics 365 Business Central](https://www.youtube.com/watch?v=VqaPWr7BWmw)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Vente](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

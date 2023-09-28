@@ -238,13 +238,11 @@ Dans une page écriture, vous pouvez voir si des dimensions principales sont ass
 > [!NOTE]  
 > La page **Dimensions - Écritures** affiche les dimensions d’une écriture à la fois. Lorsque vous faites défiler les écritures, le contenu de la page **Dimensions - Écritures** est modifié en conséquence.
 
-## Voir la [formation Microsoft](/training/modules/dimensions-dynamics-365-business-central/index) associée
-
 ## Voir aussi .
 
 [Veille économique](bi.md)  
-[Finance](finance.md)  
-[Analyse des données par dimensions](bi-how-analyze-data-dimension.md)  
+[Finances](finance.md)  
+[Analyser des données par dimensions](bi-how-analyze-data-dimension.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

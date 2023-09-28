@@ -47,12 +47,10 @@ La vidéo suivante couvre les notions de base des immobilisations.
 
 > [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE4AegS?rel=0]
 
-## Voir la [formation Microsoft](/training/paths/manage-fixed-assets-transactions/) associée
-
 ## Voir aussi .
 
 [Paramétrage d'immobilisations](fa-setup.md)  
-[Modifier les fonctionnalités affichées](ui-experiences.md)  
+[Modification des fonctionnalités affichées](ui-experiences.md)  
 [Finance](finance.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

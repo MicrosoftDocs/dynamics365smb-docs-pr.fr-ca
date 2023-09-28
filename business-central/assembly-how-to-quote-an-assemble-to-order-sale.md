@@ -34,12 +34,10 @@ Lorsque vous vendez tout autre type d'article, vous pouvez également créer un 
 6.  Lorsque vous avez ajusté les lignes d'ordre d'assemblage en fonction du devis, fermez la page **Lignes d'assemblage pour commande** pour revenir à la page **Devis**.  
 7.  Si le client accepte le devis, créez un document de vente pour l'élément d'assemblage qui a fait l'objet du devis. Pour plus d'informations, voir [Créer des devis](sales-how-make-offers.md). Le devis d'assemblage associé et toutes les personnalisations sont liées à ce nouveau document de vente à préparer pour l'assemblage de l'article ou des articles à vendre.  
 
-## Voir la [formation Microsoft](/training/modules/assemble-to-order-dynamics-365-business-central/) associée
-
-## Voir aussi
+## Voir aussi .
 
 [Gestion d'assemblage](assembly-assemble-items.md)  
-[Utilisation des nomenclatures d’assemblage](assembly-how-work-assembly-boms.md)  
+[Utiliser des nomenclatures d’assemblage](assembly-how-work-assembly-boms.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

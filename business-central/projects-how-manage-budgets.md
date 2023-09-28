@@ -43,12 +43,10 @@ Sur la page **Fiche projet**, vous pouvez désormais voir un résumé des coûts
 
 Pour plus d'informations sur l'enregistrement budgété par rapport aux prix et aux coûts réels du projet, voir [Enregistrer l'utilisation pour les projets](projects-how-record-job-usage.md).
 
-## Voir la [formation Microsoft](/training/modules/set-up-job-planning-lines/) associée
-
 ## Voir aussi .
 
 [Gestion de projets](projects-manage-projects.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Ventes](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

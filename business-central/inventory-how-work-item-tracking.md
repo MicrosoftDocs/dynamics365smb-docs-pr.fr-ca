@@ -220,11 +220,9 @@ Le reclassement de la traçabilité pour un article consiste à remplacer un num
 8. Si vous voulez modifier les informations existantes du numéro de lot ou de série, vous pouvez enregistrer des informations de lot ou de série.  
 9. Reportez le journal pour lier les nouveaux numéros traçabilité ou dates d'expiration à l'écriture article qui leur est associée.
 
-## Voir la [formation Microsoft](/training/modules/prepare-item-tracking/) associée
-
 ## Voir aussi .
 
-[Configuration du suivi des articles avec les numéros lot, de série et paquet](inventory-how-setup-item-tracking.md)  
+[Configuration du suivi des articles avec les numéros lot, de série et de paquet](inventory-how-setup-item-tracking.md)  
 [Tracer des articles - Articles suivis](inventory-how-to-trace-item-tracked-items.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Détails de conception : traçabilité](design-details-item-tracking.md)  

@@ -148,8 +148,6 @@ Le tableau suivant décrit les codeunits que vous devez créer pour votre rappor
 > [!Note]
 > Lorsque vous créez des codeunits pour l'état, faites attention à la valeur du champ **Version de la déclaration TVA**. Ce champ doit refléter la version du rapport qui est ou a été requis par l'administration fiscale. Par exemple, vous pouvez saisir **2021** dans le champ pour indiquer que l'état remplit les conditions qui étaient en place cette année. Pour trouver la version en cours, contactez votre administration fiscale.  
 
-## Voir la [formation Microsoft](/training/paths/process-vat-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
 [Configurer des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md)  

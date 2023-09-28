@@ -74,8 +74,6 @@ Le tableau suivant décrit les règles d’affectation de paiement standard dans
 | Mauvaises              | 4        | N°                    | N°                             | Une correspondance                      |
 | Mauvaises              | 5        | N°                    | N°                             | Correspondances multiples               |
 
-## Voir la [formation Microsoft](/training/modules/reconciliation-journals-dynamics-365-business-central/index) associée
-
 ## Voir aussi
 [Rapprocher les paiements à l'aide de l'application automatique](receivables-how-reconcile-payments-auto-application.md)  
 [Gestion des comptes client](receivables-manage-receivables.md)  

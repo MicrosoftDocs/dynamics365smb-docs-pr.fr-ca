@@ -104,12 +104,10 @@ Vous remplissez les champs dans l’ordre inverse, comme suit :
 
 La dimension ADM est copiée à partir de l’emplacement EST.
 
-## Voir la formation associée sur [Microsoft Learn](/learn/modules/trade-set-up-dynamics-365-business-central/)
-
-## Voir aussi
+## Voir aussi .
 
 [Gestion du stock](inventory-manage-inventory.md)  
-[Transfert de l'inventaire entre des emplacements](inventory-how-transfer-between-locations.md)  
+[Transférer l’inventaire entre des emplacements](inventory-how-transfer-between-locations.md)  
 [Créer zones](warehouse-how-to-create-individual-bins.md)  
 [Configurer des types de zone](warehouse-how-to-set-up-bin-types.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  

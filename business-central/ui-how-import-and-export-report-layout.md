@@ -45,8 +45,6 @@ Vous pouvez importer et exporter une présentation de rapport personnalisée exi
 
  La présentation de rapport personnalisé d'origine est remplacée par la présentation de rapport importée.  
 
-## Voir la [formation Microsoft](/training/modules/change-documents-dynamics-365-business-central/index) associée
-
 ## Voir aussi
 
 [Créer et modifier une présentation de rapport personnalisée](ui-how-create-custom-report-layout.md)   

@@ -56,11 +56,9 @@ La procédure suivante explique comment créer des articles de service lorsque v
 
     Une ligne service de type **Coût** est insérée avec les frais forfaitaires. Les frais forfaitaires affectent l'article de service sélectionné.
 
-## Voir la [formation Microsoft](/training/modules/create-items/) associée
-
 ## Voir aussi .
 
-[Configurer les articles de service et les composantes article de service](service-how-setup-service-items.md)  
+[Configurer des articles de service et des composantes article de service](service-how-setup-service-items.md)  
 [Paramétrage de la gestion des services](service-setup-service.md)  
 [Gestion des services](service-service.md)  
 

@@ -60,11 +60,9 @@ En outre, chaque modalité de la table Modalités de frais financiers est lié �
 |%6|Contenu du champ **Frais supplémentaires** de l'en-tête de note de frais financiers|  
 |%7|Montant total du rappel|  
 |%8|Contenu du champ **Code devise** de l'en-tête de note de frais financiers|  
-|%9|Contenu du champ **Date comptabilisation** de l'en-tête de facture d'intérêts|  
+|%9|Contenu du champ **Date de report** de l'en-tête de note de frais financiers|  
 
-## Voir la [formation Microsoft](/training/modules/send-memos-dynamics-365-business-central/) associée
-
-## Voir aussi .
+## Voir aussi
 
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
 [Configurer les niveaux et modalités de rappel](finance-setup-reminders.md)  

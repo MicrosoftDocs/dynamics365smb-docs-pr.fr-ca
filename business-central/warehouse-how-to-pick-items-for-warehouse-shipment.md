@@ -3,7 +3,7 @@ title: Prélever des articles pour une livraison entrepôt
 description: Découvrez comment utiliser les documents de prélèvement entrepôt pour créer et traiter les informations de prélèvement avant de reporter une livraison entrepôt.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: andreipa
+ms.reviewer: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: how-to
 ms.date: 01/25/2023
@@ -111,9 +111,7 @@ Vous ne pouvez pas créer un document de prélèvement en entrepôt à partir de
 
 Vous pouvez alors apporter les articles au quai de chargement et reporter la livraison, dont le document source lié, sur la page **Livraison entrepôt**. Pour en savoir plus, voir [Livrer des articles](warehouse-how-ship-items.md).
 
-## Voir la [formation Microsoft](/training/modules/pick-ship-items-warehouse/) associée
-
-## Voir aussi
+## Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

@@ -1,7 +1,7 @@
 ---
 title: Regroupement de bons de réception sur une seule facture
 description: 'Si vous voulez facturer plusieurs réceptions achat en une fois, vous pouvez utiliser la fonction Regroupement des réceptions.'
-author: SorenGP
+author: brentholtorf
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -9,7 +9,7 @@ ms.workload: na
 ms.search.keywords: null
 ms.search.form: '136, 145, 146, 9308'
 ms.date: 08/03/2022
-ms.author: edupont
+ms.author: bholtorf
 ---
 # Regroupement de bons de réception sur une seule facture
 
@@ -42,12 +42,10 @@ Vous pouvez également supprimer chacune des commandes manuellement.
 
 Répétez les étapes 1 à 3 pour tous les autres documents affectés, comme des commandes permanentes achats.
 
-## Voir la [formation Microsoft](/training/modules/processing-invoices-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
 [Procédure d'achat](purchasing-manage-purchasing.md)  
-[Corriger ou annuler des factures achat impayées](purchasing-how-correct-cancel-unpaid-purchase-invoices.md)  
+[Correction ou annulation des factures achat impayées](purchasing-how-correct-cancel-unpaid-purchase-invoices.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 

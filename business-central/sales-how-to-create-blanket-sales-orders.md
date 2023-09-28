@@ -89,12 +89,10 @@ Le lien entre la commande permanente ventes et le document de vente d'origine, e
 
 5. Sur la page **Lignes vente**, sélectionnez l'action **Afficher document** pour afficher l'écriture.
 
-## Voir la [formation Microsoft](/training/modules/create-sales-documents-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
 [Ventes](sales-manage-sales.md)  
-[Création d'ordres d'assemblage permanents](assembly-how-to-create-blanket-assembly-orders.md)  
+[Créer des ordres d’assemblage permanents](assembly-how-to-create-blanket-assembly-orders.md)  
 [Définition des ventes](sales-setup-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

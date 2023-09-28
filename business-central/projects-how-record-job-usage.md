@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.date: 03/08/2023
 ms.custom: bap-template
 ---
-# <a name="record-consumption-or-usage-for-jobs"></a>Enregistrer la consommation ou l′utilisation pour les projets
+# Enregistrer la consommation ou l′utilisation pour les projets
 
 À partir de la page **Fiche projet**, vous pouvez ouvrir la page **Lignes planification projet** pour examiner et enregistrer l’utilisation sur diverses composantes de votre projet. Ces informations sont automatiquement mises à jour lorsque vous modifiez et transférez des informations entre projets et entre journaux projet et factures projet. Cela nécessite que vous activiez le bouton à bascule **Appliquer le lien d’utilisation par défaut** sur la page **Configuration projet**. Learn more at [Configuration de projets](projects-how-setup-jobs.md).  
 
@@ -17,7 +17,7 @@ Par exemple, pour les lignes planification de type **Budget**, vous pouvez saisi
 
 Les procédures suivantes décrivent comment enregistrer les quantités (budgétées) et les coûts réels avec un journal projet. Sinon, vous pouvez utiliser les documents achat pour enregistrer les achats pour un projet. Learn more at [Gérer les fournitures pour un projet](projects-how-manage-project-supplies.md).
 
-## <a name="to-record-usage-for-a-job-planning-line-of-type-budget"></a>Pour enregistrer l'utilisation d'une ligne planification projet de type Budget
+## Pour enregistrer l'utilisation d'une ligne planification projet de type Budget
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Projets**, puis choisissez le lien associé.  
 2. Sélectionnez le projet, puis sélectionnez l’action **Lignes planification projet**. 
@@ -42,7 +42,7 @@ Les procédures suivantes décrivent comment enregistrer les quantités (budgét
 9. Sur la page **Lignes planification projet**, examinez l'utilisation enregistrée en observant les champs **Quantité**, **Quantité restante** et **Qté à transférer sur le journal**.  
 10. Répétez les phases 3 à 8 pour enregistrer l'utilisation supplémentaire.  
 
-## <a name="to-create-job-journal-lines-manually"></a>Pour créer des lignes journal projet manuellement
+## Pour créer des lignes journal projet manuellement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux projet**, puis choisissez le lien associé.  
 2. Dans le champ **Nom de la feuille**, choisissez un nom de feuille projet approprié.  
@@ -51,7 +51,7 @@ Les procédures suivantes décrivent comment enregistrer les quantités (budgét
 
     [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
 
-## <a name="to-view-job-usage-estimates-and-post-updates"></a>Pour visualiser les estimations projet et reporter les mises à jour
+## Pour visualiser les estimations projet et reporter les mises à jour
 
 Vous pouvez visualiser les utilisations projet jusqu'à leur achèvement en une étape. Pour ce faire, utilisez le traitement par lots **Projet Calc. activité restante** pour toutes les tâches jusqu'à la fin du projet.  
 
@@ -66,7 +66,7 @@ Cela vous permet de suivre vos estimations initiales, de les comparer aux résul
 4. Mettez à jour le journal avec toutes les modifications qui peuvent être nécessaires.  
 5. Sélectionnez l'action **Valider**.
 
-## <a name="create-inventory-and-warehouse-pick-documents-for-a-job"></a>Créer des documents prélèvement entrepôt et inventaire pour un projet
+## Créer des documents prélèvement entrepôt et inventaire pour un projet
 
 Pour créer des documents de prélèvement entrepôt et inventaire pour les projets, votre administrateur doit activer **Mise à jour des fonctionnalités : activer prélèvement inventaire et entrepôt à partir des projets** sur la page **Gestion des fonctionnalités**.
 
@@ -85,7 +85,7 @@ Vous pouvez utiliser les actions dans les conditions suivantes :
 > 
 > Lorsque votre emplacement est configuré pour appeler un traitement de prélèvement et de livraison, ce qui implique que vous avez activé les champs **Prélèvement requis** et **Livraison requise** sur la page **Fiche emplacement**, utilisez le document **Prélèvement entrepôt** pour gérer le prélèvement. Les prélèvements entrepôt sont similaires aux prélèvements inventaire. La différence est qu'au lieu d'afficher les informations de prélèvement, vous enregistrez le prélèvement. Ce processus d’enregistrement ne reporte pas la consommation, il rend simplement les articles disponibles pour le report. En tant que responsable d’entrepôt, vous pouvez utiliser une feuille de calcul pour organiser les informations de prélèvement avant de créer les instructions de prélèvement d’entrepôt individuelles
 
-## <a name="to-review-planning-lines-for-a-job-ledger-entry"></a>Pour consulter les lignes planification pour une écriture projet
+## Pour consulter les lignes planification pour une écriture projet
 
 Après avoir reporté les lignes journal projet, vous pouvez voir les lignes planification associées aux écritures journal projet qui ont été reportées.
 
@@ -96,12 +96,10 @@ Après avoir reporté les lignes journal projet, vous pouvez voir les lignes pla
 2. Sélectionnez une feuille projet appropriée, puis cliquez sur **Écritures comptables**.  
 3. Sur la page **Écritures projet**, cliquez sur **Afficher les lignes planification projet liées**.
 
-## <a name="see-related-microsoft-training"></a>Voir la [formation Microsoft](/training/paths/post-job-usage-sales/) associée
-
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion de projets](projects-manage-projects.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Ventes](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

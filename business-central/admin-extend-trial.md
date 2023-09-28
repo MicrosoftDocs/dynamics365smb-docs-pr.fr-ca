@@ -45,8 +45,6 @@ Lorsque votre période d'essai prolongé a expiré, vous pouvez vous [abonner](h
 
 [!INCLUDE [admin-viral-trial-expiry](includes/admin-viral-trial-expiry.md)]
 
-## Voir la [formation Microsoft](/training/modules/trial-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
 [Essais et abonnements (en anglais uniquement)](/dynamics365/business-central/dev-itpro/administration/trials-subscriptions?toc=/dynamics365/business-central/toc.json)  

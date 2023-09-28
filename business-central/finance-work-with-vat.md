@@ -234,8 +234,6 @@ Pour afficher un groupe de certificats, vous commencez à partir de la page **Ce
 > * Pour créer manuellement un certificat d'approvisionnement.  
 > * Pour imprimer un certificat d'approvisionnement.
 
-## Voir la [formation Microsoft](/training/paths/process-vat-dynamics-365-business-central/) associée
-
 ## Voir aussi
 
 [Configuration des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md)  

@@ -49,8 +49,6 @@ Un nouveau champ, **Bloquer la suppression des comptes GL**, est ajouté à la p
 
 Le fait de régler le champ **Bloquer la suppression des comptes GL** sur *Oui* peut être considéré comme une pratique exemplaire, tout comme définir la date dans le champ **Vérifier suppr. cpte GL après**, par exemple à la date à laquelle vous devez stocker vos données financières.  
 
-## Voir la [formation Microsoft](/training/modules/chart-accounts-dynamics-365-business-central/index) associée
-
 ## Voir aussi
 
 [Les écritures comptables et le plan comptable](finance-general-ledger.md)  

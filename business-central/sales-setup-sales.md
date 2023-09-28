@@ -33,9 +33,7 @@ La configuration des ventes en relation avec les finances, comme les modes de r�
 |Définissez les différents incoterms que vous proposez aux clients ou que vos fournisseurs vous proposent.|[Configurer des méthodes de livraison](sales-how-set-up-shipment-methods.md)|
 |Entrer des informations sur les différents transporteurs utilisés, notamment un lien vers les prestations de traçabilité des colis.|[Configurer des agents de livraison](sales-how-to-set-up-shipping-agents.md)|
 |Spécifiez les rapports par défaut à utiliser pour différents types de documents.|[Sélection des rapports dans Business Central](across-report-selections.md)|
-|Spécifiez si les utilisateurs sont autorisés à reporter des factures vente et s’ils doivent les reporter avec une livraison. |[Définition d’une stratégie de report des factures pour les utilisateurs](admin-setup-invoice-posting-policy.md)|
-
-## Voir la [formation Microsoft](/training/paths/trade-get-started-dynamics-365-business-central/) associée
+|Spécifiez si les utilisateurs sont autorisés à reporter des factures vente et s’ils doivent les reporter avec une livraison. |[Définir une stratégie de report des factures pour les utilisateurs](admin-setup-invoice-posting-policy.md)|
 
 ## Voir aussi
 [Ventes](sales-manage-sales.md)  

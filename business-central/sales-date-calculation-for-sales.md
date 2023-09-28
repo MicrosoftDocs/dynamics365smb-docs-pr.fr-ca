@@ -34,14 +34,12 @@ Si les articles peuvent être prélevés à la date de livraison, alors le proce
 Si vous ne spécifiez aucune date de livraison demandée sur la ligne document de vente ou si la date de livraison demandée ne peut pas être respectée, la première date à laquelle les articles sont disponibles est calculée. Cette date est ensuite renseignée dans le champ **Date de livraison** sur la ligne, et la date à laquelle vous prévoyez de livrer les articles, ainsi que la date à laquelle ces derniers seront livrés au client sont calculées via les formules suivantes.
 
 - *date de livraison + délai désenlogement = date de livraison planifiée*
-- *date de livraison planifiée + délai de livraison = date de livraison planifiée*
-
-## Voir la [formation Microsoft](/training/modules/promising-sales-order-delivery-dynamics-365-business-central/) associée.
+- *date de livraison planifiée + délai de livraison = date de livraison planifiée*
 
 ## Voir aussi .
 
 [Calcul de la date des achats](purchasing-date-calculation-for-purchases.md)  
-[Calculer des dates promesse livraison](sales-how-to-calculate-order-promising-dates.md)  
+[Calcul des dates promesse livraison](sales-how-to-calculate-order-promising-dates.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

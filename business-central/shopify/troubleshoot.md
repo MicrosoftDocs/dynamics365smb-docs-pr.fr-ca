@@ -3,7 +3,7 @@ title: Dépannage de la synchronisation entre Shopify et Business Central
 description: Découvrez ce qu’il faut faire si une erreur se produit lors de la synchronisation des données entre Shopify et Business Central.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: andreipa
+ms.reviewer: bholtorf
 ms.topic: how-to
 ms.date: 04/24/2023
 ms.custom: bap-template
@@ -143,6 +143,10 @@ Selon toute vraisemblance, vous utilisez l’[application intégrée](/dynamics3
 ### Erreur : erreur interne. Il semble qu’un problème se soit produit de votre côté. Code de la demande : XXXXXXXX-XXXX-XXXX-XXXX-XXXX
 
 Contactez le support Shopify dans les 7 jours suivant l’apparition de cette erreur, et fournissez le code de la demande. Pour en savoir plus, rendez-vous sur [Options de support pour Shopify](shopify-faq.md#shopify).
+
+### Erreur : Oauth erreur invalid_request : votre compte n’est pas autorisé à accorder l’accès demandé pour cette application. 
+
+Il semble que l’utilisateur qui demande l’accès n’ait pas le droit de gérer les applications (possibilité de gérer et d’installer des applications et des canaux, ainsi que potentiellement d’approuver les frais des applications). Vous pourrez peut-être résoudre ce problème en installant l’application en tant que propriétaire du compte. Vous pouvez également vérifier les **Autorisations d’application** pour l’utilisateur dans les [**Paramètres Utilisateur et autorisations**](https://www.shopify.com/admin/settings/account) de votre **Shopify administrateur**.  
 
 ## Voir aussi .
 

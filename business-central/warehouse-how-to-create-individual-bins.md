@@ -70,9 +70,7 @@ Pour travailler avec la page **Feuille création zone**, vous devez être config
 
 Répétez l'opération pour un autre ensemble d'emplacements jusqu'à ce que vous ayez créé tous les emplacements de votre entrepôt.  
 
-## Voir la [formation Microsoft](/training/modules/create-new-bins/) associée
-
-## Voir aussi
+## Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

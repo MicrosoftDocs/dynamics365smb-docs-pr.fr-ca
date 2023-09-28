@@ -55,13 +55,11 @@ Vous pouvez configurer des lots dans un modèle journal assurance. Les valeurs d
 > [!NOTE]  
 >   Les numéros remplissent une fonction spéciale dans les noms de journal. Si un nom de journal ou de modèle journal indique un numéro, ce numéro est incrémenté automatiquement de 1 chaque fois que le journal est reporté. Par exemple, si vous saisissez HH1 dans le champ **Nom**, la feuille prend le nom HH2 après validation de la feuille HH1.
 
-## Voir la [formation Microsoft](/training/paths/set-up-fixed-assets-management/) associée
-
 ## Voir aussi .
 
 [Paramétrage d'immobilisations](fa-setup.md)  
 [Immobilisations](fa-manage.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
