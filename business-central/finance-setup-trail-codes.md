@@ -11,13 +11,13 @@ ms.search.form: '257, 259, 279'
 ms.date: 04/01/2021
 ms.author: bholtorf
 ---
-# Configuration des codes source et des codes de motif pour les pistes d'audit
+# <a name="setting-up-source-codes-and-reason-codes-for-audit-trails"></a>Configuration des codes source et des codes de motif pour les pistes d'audit
 
 Un code source est affecté automatiquement à toutes les écritures reportées, de sorte que les transactions puissent être suivies jusqu'à leur origine. Pour attribuer un autre code journal aux écritures, vous pouvez utiliser les codes motif. Ces derniers permettent d'indiquer le motif de création d'une écriture. Lorsque vous configurez des codes motif, vous pouvez les affecter à des lots journal et des modèles journal entiers, ainsi qu'à des lignes journal et des documents spécifiques.  
 
 Pour les codes source et les codes motif, utilisez des codes faciles à mémoriser et descriptifs. Le code doit être unique et vous pouvez configurer autant de codes que vous le souhaitez.
 
-## Définir des codes journaux
+## <a name="define-source-codes"></a>Définir des codes journaux
 
 Parfois, vous souhaitez savoir comment une écriture particulière a été créée, par exemple si elle vient du report d'un journal général ou d'une facture achat. Un code journal indique l'emplacement de création d'une écriture. Les écritures sont créées lors du report des journaux et des factures et lors de l'exécution de certains traitements en lot. Chaque type de report a un code source spécifique qui est affecté lors de la création d'écritures individuelles.  
 
@@ -25,7 +25,7 @@ Le report de journaux, de commandes, de factures ou de notes de crédit, et l'ex
 
 Lorsque vous reportez ou exécutez un traitement en lot, le code source correct est relié automatiquement à l'écriture. Par exemple, lorsque vous reportez à partir du journal général, l'écriture est codée comme *JNLGÉN*. Vous pouvez ensuite filtrer la page **Écritures journal général** pour afficher les écritures qui ont été reportées à partir du journal général ou des documents vente, par exemple
 
-### Pour définir des codes journaux
+### <a name="to-define-source-codes"></a>Pour définir des codes journaux
 
 1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") saisissez **Configuration du code source**, puis choisissez le lien associé.  
 
@@ -33,11 +33,11 @@ Lorsque vous reportez ou exécutez un traitement en lot, le code source correct 
 
 Vous pouvez modifier le contenu d'un champ ultérieurement, et cette modification aura alors un impact sur les reports futurs.
 
-## Modifier les codes journaux
+## <a name="change-source-codes"></a>Modifier les codes journaux
 
 Vous pouvez modifier un code journal. Par exemple, vous pouvez remplacer le code journal *GENJNL* par *GNJ*.
 
-### Pour modifier des codes journaux
+### <a name="to-change-source-codes"></a>Pour modifier des codes journaux
 
 1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Codes journal.**, puis choisissez le lien associé.
 
@@ -47,11 +47,11 @@ Vous pouvez modifier un code journal. Par exemple, vous pouvez remplacer le code
 
 Toutes les nouvelles écritures qui sont reportées à partir du journal général, se verront attribuer un nouveau code source.
 
-## Définir des codes motif
+## <a name="define-reason-codes"></a>Définir des codes motif
 
 Les codes de motif complètent les codes source et sont utilisés pour indiquer la raison pour laquelle une écriture a été créée. Vous pouvez affecter des codes motif à des écritures individuelles, et affecter des codes permanents à des modèles journal et des lots journal spécifiques. Lorsqu'un code motif est lié à une ligne journal ou à un en-tête vente ou achat, toutes les écritures sont marquées avec le code motif lorsqu'elles sont reportées.  
 
-### Pour configurer des codes motif
+### <a name="to-set-up-reason-codes"></a>Pour configurer des codes motif
 
 1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche")  entrez **Codes de motif**, puis choisissez le lien associé.
 
@@ -61,7 +61,7 @@ Répétez cette procédure pour chaque code à utiliser. Vous pouvez configurer 
 
 La procédure suivante décrit comment ajouter un code motif à un modèle journal, mais des procédures similaires s'appliquent à l'ajout d'un code motif à une ligne journal ou à un lot journal.  
 
-### Pour affecter des codes motif à des modèles journal
+### <a name="to-assign-reason-codes-to-journal-templates"></a>Pour affecter des codes motif à des modèles journal
 
 1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche")  entrez **Modèles journal général**, puis sélectionnez le lien associé.
 
@@ -71,7 +71,7 @@ La procédure suivante décrit comment ajouter un code motif à un modèle journ
 
 Le code motif sélectionné est copié dans les nouveaux lots journal créées sous ce modèle journal. Pour affecter des codes motif à des modèles journal dans les autres modules, procédez de la même manière.
 
-### Pour utiliser des codes motif dans les documents achat et vente
+### <a name="to-use-reason-codes-on-sales-and-purchase-documents"></a>Pour utiliser des codes motif dans les documents achat et vente
 
 1. Ouvrez le document achat ou vente approprié.
 
@@ -79,7 +79,7 @@ Le code motif sélectionné est copié dans les nouveaux lots journal créées s
 
 Lors du report de la facture, le code motif est copié sur chaque écriture du grand livre, client et fournisseur. Vous ne pouvez pas affecter différents codes motif aux lignes achat et vente individuelles, car toutes les lignes sont reportées sous la forme d'une écriture unique.
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Finances](finance.md)  
 [Rapprochement de comptes bancaires](bank-manage-bank-accounts.md)  
