@@ -8,14 +8,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: bholtorf
 ms.search.form: 461
-ms.date: 09/23/2021
+ms.date: 09/19/2023
 ms.author: bholtorf
 ---
-# <a name="schedule-jobs-for-adjusting-and-reconciling-inventory-cost-with-the-general-ledger"></a>Programmer des tâches pour ajuster et rapprocher le coût de l'inventaire avec le grand livre
+# Programmer des projets pour ajuster et rapprocher le coût de l'inventaire
 
-Pour optimiser l’expérience, l’ajustement automatique des coûts et le report dans le grand livre sont activés par défaut. Cependant, à mesure que les données s’accumulent au fil du temps, cela peut affecter les performances. Pour réduire la charge de l’application, il est souvent utile d’utiliser les écritures file d’attente des travaux pour déplacer les tâches à exécuter en arrière-plan.
+La programmation de projets pour l’ajustement automatique des coûts avec le grand livre et le report dans le grand livre est activée par défaut.
+Cependant, à mesure que les données s’accumulent au fil du temps, cela peut affecter les performances. Pour réduire la charge de l’application, il est souvent utile d’utiliser les écritures file d’attente des travaux pour déplacer les tâches à exécuter en arrière-plan.
 
-## <a name="move-the-task-of-adjusting-item-costs-to-the-background-with-the-help-of-assisted-setup"></a>Déplacez la tâche d’ajustement des coûts article en arrière-plan à l’aide de la configuration assistée
+## Déplacez la tâche d’ajustement des coûts article en arrière-plan à l’aide de la configuration assistée
 
 La création des écritures file d’attente des travaux peut être compliquée, même pour un consultant expérimenté; par conséquent, nous avons un guide de configuration assistée pour faciliter le processus d’ajustement des coûts article.  
 
@@ -29,7 +30,7 @@ La création des écritures file d’attente des travaux peut être compliquée,
 
 5. Sélectionnez le champ **Afficher les écritures file d’attente des travaux quand vous avez terminé** pour réviser et ajuster les paramètres. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).  
 
-## <a name="to-create-a-job-queue-entry-for-adjusting-and-reconciling-inventory-cost-manually"></a>Pour créer une écriture file d’attente des travaux pour ajuster et rapprocher manuellement le coût de l’inventaire
+## Pour créer une écriture file d’attente des travaux pour ajuster et rapprocher manuellement le coût de l’inventaire
 
 Vous pouvez également créer des écritures file d’attente des travaux manuellement. La procédure suivante montre comment définir le traitement en lot **Ajuster coût écritures article** pour s’exécuter automatiquement chaque jour, mais les mêmes étapes s’appliquent au traitement en lot **Reporter le coût de l’inventaire au grand livre**.  
 
@@ -48,10 +49,10 @@ Pour programmer une tâche de rapprochement de l’inventaire avec le grand livr
 > [!TIP]
 > Pour éviter le verrouillage, ne programmez pas de tâches pour le traitement en lot **Ajuster coûts : Écr. article**, le codeunit **Reporter le coût de l'inventaire au grand livre** et les tâches de report des transactions de vente ou d’achat en même temps. Assurez-vous également qu’ils utilisent la même catégorie de file d'attente des travaux.
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi .
 
-[Ajuster coûts et prix article](inventory-how-adjust-item-costs.md)  
-[Rapprocher les coûts de l'inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md)  
+[Ajustement coûts article](inventory-how-adjust-item-costs.md)  
+[Rapprocher des coûts inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md)  
 [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md)  
 [Recherche de pages et d'informations avec Tell Me](ui-search.md)  
 [Utiliser [!INCLUDE[d365fin](includes/d365fin_md.md)]](ui-work-product.md)  

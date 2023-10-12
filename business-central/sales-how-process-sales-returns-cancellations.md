@@ -140,14 +140,12 @@ Pour réaliser manuellement l'inversion exacte, sélectionnez **Écriture articl
 
 Pour plus d'informations, voir [Détails de conception : Évaluation stock](design-details-inventory-costing.md).
 
-## Voir la [formation Microsoft](/training/paths/return-items-dynamics-365-business-central/) associée
-
 ## Voir aussi
 
 [Ventes](sales-manage-sales.md)  
 [Définition des ventes](sales-setup-sales.md)  
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
-[Envoyer des documents par courriel](ui-how-send-documents-email.md)  
+[Envoi de documents par courriel](ui-how-send-documents-email.md)  
 [Traiter les retours ou annulations d'achats](purchasing-how-process-purchase-returns-cancellations.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

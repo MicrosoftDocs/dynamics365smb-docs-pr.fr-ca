@@ -3,7 +3,7 @@ title: Dé&placer des articles dans des entrepôts qui utilisent le prélèvemen
 description: Cet article explique comment déplacer des articles dans des emplacements qui utilisent le rangement et le prélèvement dirigés.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: andreipa
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.date: 02/22/2023
 ms.custom: bap-template
@@ -137,8 +137,6 @@ Si vous devez enregistrer le fait que des articles ont déjà été déplacés v
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal reclassement entrepôt**, puis sélectionnez le lien associé.  
 2. Renseignez les champs **N° article**, **Du code zone**, **Du code emplacement**, **Vers code zone** et **Du code emplacement**.  
 3. Sélectionnez l'action **Enregistrer**.  
-
-## Voir la [formation Microsoft](/training/modules/manage-internal-warehouse-processes/) associée
 
 ## Voir aussi
 

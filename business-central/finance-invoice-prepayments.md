@@ -29,8 +29,6 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Créer une commande, ajuster des montants paiement anticipé et émettre une facture pour les montants paiement anticipé.|[Créer des factures de paiement anticipé](finance-how-to-create-prepayment-invoices.md)|  
 |Émettre une facture paiement anticipé supplémentaire, pour des articles supplémentaires ou pour un paiement anticipé supplémentaire dans la commande originale, ou émettre une note de crédit paiement anticipé.|[Corriger des paiements anticipés](finance-how-to-correct-prepayments.md)|  
 
-## Voir la [formation Microsoft](/training/modules/prepayment-invoices-dynamics-365-business-central/index) associée
-
 ## Voir aussi
 
 [Procédure pas à pas : configuration et facturation d'acomptes](walkthrough-setting-up-and-invoicing-sales-prepayments.md)  

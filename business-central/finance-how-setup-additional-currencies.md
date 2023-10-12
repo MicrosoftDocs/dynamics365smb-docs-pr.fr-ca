@@ -124,11 +124,9 @@ En outre, toutes les écritures futures du même type ont des montants enregistr
 > [!NOTE]  
 > Le champ **Devise report** n'est activé qu'après que vous avez cliqué sur le bouton **OK** dans le traitement par lots **Ajuster devise report**.  
 
-## Voir la [formation Microsoft](/training/paths/use-multiple-currencies-dynamics-365-business-central/) associée
-
 ## Voir aussi
 
-[Mettre à jour des taux de change devise](finance-how-update-currencies.md)  
+[Mise à jour des taux de change devise](finance-how-update-currencies.md)  
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

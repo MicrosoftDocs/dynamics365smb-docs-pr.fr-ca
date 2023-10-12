@@ -1,14 +1,13 @@
 ---
 title: À propos de la fonctionnalité Planification
-description: 'La planification prend en compte toutes les données d’offre et de demande, ajuste les résultats et génère des suggestions pour l’équilibrage de l’offre en fonction de la demande.'
+description: Découvrez comment la planification utilise les données de l’offre et de la demande pour suggérer comment équilibrer l’offre pour répondre à la demande.
 author: brentholtorf
-ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.form: 5430
-ms.date: 08/30/2022
 ms.author: bholtorf
+ms.reviewer: andreipa
+ms.topic: conceptual
+ms.search.form: '5430,'
+ms.date: 09/19/2023
+ms.custom: bap-template
 ---
 # À propos de la fonctionnalité Planification
 
@@ -21,9 +20,9 @@ Pour plus d'informations, voir [Détails de conception : planification de l'app
 
 ## Offre et demande
 
-La planification comporte deux volets : l'offre et la demande. Ces derniers doivent être équilibrés pour garantir que la demande soit satisfaite rapidement et efficacement.  
+La planification comporte deux volets : l'offre et la demande. Ceux-ci doivent s’équilibrer pour garantir que la demande est satisfaite.  
 
-- Le mot demande désigne tout sorte de besoin brut, tel qu'un document de vente, une commande service, un besoin composante d'un ordre d'assemblage ou de fabrication, un transfert sortant, une commande permanente ou une prévision. En outre, l'application autorise d'autres types techniques de demande - tels qu'un bon de production ou un bon de commande négatif, un inventaire négatif et un retour achat.  
+- La demande désigne toute sorte de besoin brut, tel qu’un document de vente, une commande service ou un besoin composante pour des ordres d’assemblage ou de fabrication, un transfert sortant, une commande ouverte ou une prévision. En outre, il existe d’autres types techniques de demande, tels qu’un ordre de fabrication ou un bon de commande négatif, un inventaire négatif et un retour achat.  
 - Le réapprovisionnement fait référence à toute sorte de réapprovisionnement telle qu’un inventaire, un bon de commande, un ordre d’assemblage, un bon de production ou un transfert entrant. Par conséquent, il peut y avoir un document de vente ou une commande service négative, un besoin de composante ou un retour vente négatif qui représentent également l’offre.  
 
 Un autre objectif du système de planification est de garantir que l'inventaire n'augmente pas inutilement. En cas de baisse de la demande, le système de planification suggère de reporter, de réduire ou d'annuler des ordres de réapprovisionnement existants.  
@@ -37,9 +36,9 @@ La base de la routine de planification réside dans le calcul gros/net. Les beso
 > [!TIP]
 > Le système de planification dépend de la façon dont votre organisation utilise les emplacements. Pour plus d’informations, consultez [Planification avec ou sans emplacements](production-planning-with-without-locations.md).
 
-## Planification à l'aide d'ordres de transfert manuels
+## Planification à l’aide d’ordres de transfert manuels
 
-Comme l'indique le champ **Système réappro** d'une fiche point de stock, le système de planification peut être configuré pour créer des ordres de transfert destinés à équilibrer l'offre et la demande dans tous les magasins.  
+Dans le champ **Système réappro** d’une fiche unité de stock, vous pouvez configurer le système de planification pour créer des ordres de transfert destinés à équilibrer l’offre et la demande dans tous les emplacements.  
 
 Outre ce type d'ordre de transfert automatique, vous devrez parfois effectuer un déplacement général des quantités en inventaire vers un autre emplacement, quelle que soit la demande existante. Vous créez pour cela un ordre de transfert manuel correspondant à la quantité à déplacer. Pour être sûr que le système de planification ne tente pas de manipuler cet ordre de transfert manuel, vous devez paramétrer le champ **Flexibilité planification** des lignes transfert sur Aucune.  
 
@@ -80,11 +79,11 @@ Les champs de configuration de planification globale figurant sur la page **Conf
 - Délai de sécurité par défaut  
 - Niveau de dépassement de capacité vide  
 - Calcul PDP/PBM combinés
-- Mag. composant par déf.  
+- Composantes aux localisations  
 - Période tampon par défaut  
 - Quantité tampon par défaut  
 
-Pour plus d'informations, voir [Détails de conception : paramètres de planification](design-details-planning-parameters.md)  
+Pour en savoir plus, consultez [Détails de conception : paramètres de planification](design-details-planning-parameters.md)  
 
 ## Autres champs de planification importants
 
@@ -104,7 +103,7 @@ Le champ d'informations **Avertissement** sur la page **Feuille planification** 
 - Attention
 - Urgence
 
-L'avertissement Urgence est affiché dans deux situations :
+L’avertissement Urgence est affiché dans deux situations :
 
 - L'inventaire est négatif à la date début de la planification.
 - Des événements d'offre ou de demande rétroactifs existent.
@@ -115,7 +114,7 @@ Les lignes document avec une date d'échéance antérieure à la date début de 
 
 ### Exception
 
-L'avertissement Exception s'affiche si le stock disponible prévu descend en dessous du stock de sécurité.
+L’avertissement Exception s’affiche si l'inventaire disponible prévu descend en dessous de la quantité de stock de sécurité.
 
 Le système de planification suggère une commande d'approvisionnement pour répondre aux besoins à la date d'échéance. Le texte d'avertissement indique la quantité du stock de sécurité et la date à laquelle elle est entamée.
 
@@ -126,7 +125,7 @@ Entamer le stock de sécurité est considéré comme une exception car cela ne d
 
 ### Attention
 
-L'avertissement Attention est affiché dans deux situations :
+L’avertissement Attention s’affiche dans deux situations :
 
 - La date début de la planification est antérieure à la date de travail.
 - La ligne planification suggère de changer un bon de commande ou de production libéré.
@@ -137,6 +136,8 @@ L'avertissement Attention est affiché dans deux situations :
 ## Feuilles planification et feuilles de réquisition
 
 Comme décrit dans [Planification](production-planning.md), vous pouvez choisir entre deux feuilles pour la plupart des activités de planification : la feuille planification et la feuille de réquisition. La plupart des processus sont décrits en fonction de la feuille planification, mais il existe quelques scénarios où la feuille de réquisition est recommandée.
+
+[!INCLUDE [edit-in-excel](includes/edit-in-excel.md)]
 
 ### Feuille de réquisition
 
@@ -159,11 +160,9 @@ Pour plus d'informations sur la planification à l'aide d'emplacements et de tra
 > [!TIP]
 > Lorsque vous travaillez sur les pages **Feuille de réquisition** ou **Feuille planification**, vous pouvez organiser les lignes en triant sur un nom de colonne. Ceci est particulièrement utile sur la page Feuille planification, car ils peuvent être utilisés pour les bons de production à plusieurs niveaux. Par défaut, les lignes sont triées par le champ **Numéro d’article**. Pour regrouper les lignes d’une commande à plusieurs niveaux, triez par **N° ordre de référence** . En outre, les champs **Ordre PDP** et **Niveau de planification** peuvent aider à montrer la hiérarchie des lignes.
 
-## Voir la [formation Microsoft](/training/modules/plan-items-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
-[Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)  
+[Détails de conception : planification de l’approvisionnement](design-details-supply-planning.md)  
 [Planification](production-planning.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Production](production-manage-manufacturing.md)  

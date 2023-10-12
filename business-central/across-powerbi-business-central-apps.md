@@ -2,12 +2,12 @@
 title: "Utiliser des applications Business\_Central dans Power BI"
 description: 'Il est facile d''obtenir des informations exploitables, de la veille économique et des KPI de vos applications Business Central pour Power BI.'
 author: jswymer
-ms.topic: get-started-article
+ms.topic: get-started
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 'account schedule, analysis, reporting, financial report, business intelligence, KPI'
-ms.date: 04/01/2021
+ms.date: 09/07/2023
 ms.author: jswymer
 ---
 # Utiliser les applications [!INCLUDE [prod_short](includes/prod_short.md)] dans Power BI
@@ -36,15 +36,15 @@ Les applications sont conçues pour fonctionner avec les données de toute compa
 
 ## Conditions préalables
 
-Les applications Power BI nécessitent des autorisations sur les tables à partir desquelles les données sont extraites et les services Web utilisés pour récupérer les données. La table suivante répertorie les services Web requis pour chaque application Power BI :
+Les applications Power BI nécessitent des autorisations pour les tables où les données sont récupérées et les services Web utilisés pour récupérer les données. La table suivante répertorie les services Web requis pour chaque application Power BI :
     
-|Application | Services Web|
-|----|-------------|
+|Application|Services Web |
+|--|-------------|
 |[!INCLUDE[prod_short](includes/prod_short.md)] - CRM| <ul><li>Opportunités ventes</li><li>Informations sur le modèle Excel Afficher Compagnie</li><li>Étiquettes de rapport Power BI</li></ul>|
 |[!INCLUDE[prod_short](includes/prod_short.md)] - Finance| <ul><li>PowerBIFinance</li><li>Informations sur le modèle Excel Afficher Compagnie</li><li>Étiquettes de rapport Power BI</li></ul>|
 |[!INCLUDE[prod_short](includes/prod_short.md)] - Sales| <ul><li>Ventes d'articles par client</li><li>Tableau de bord ventes</li><li>Informations sur le modèle Excel Afficher Compagnie</li><li>Étiquettes de rapport Power BI</li></ul>|
 
-> [!TIP]
+> [!TIP] 
 > Pour trouver facilement les services Web, il suffit de rechercher *services web* dans [!INCLUDE[prod_short](includes/prod_short.md)]. Sur la page **Services Web**, assurez-vous que le champ **Publier** est sélectionné pour les services Web répertoriés ci-dessus. Pour plus d’informations, voir [Publication d’un service Web](across-how-publish-web-service.md).
 
 ## Mise en route
@@ -54,18 +54,21 @@ Inscrivez-vous au service Power BI. Si vous ne vous êtes pas encore inscrit, ac
 ## Installer une application [!INCLUDE[prod_short](includes/prod_short.md)] dans Power BI
 
 1. Ouvrez votre navigateur, accédez à [https://powerbi.microsoft.com](https://powerbi.microsoft.com) et connectez-vous à votre compte.
-2. Sélectionnez **Extraire les données** en bas du volet de navigation gauche.  
+2. Sélectionnez **Applications** dans le volet de navigation.
+    
+    La page **Applications** s’affiche.
 
-    ![Naviguez pour obtenir des données.](./media/across-how-to-connect-powerbi-d365-content-packs/powerbi-get-data.png)
+3. Sur la page **Applications**, sélectionnez **Obtenir des applications** dans le coin supérieur droit de la page.
+    
+    La page **Applications Power BI** s’ouvre, où vous pouvez rechercher les applications disponibles pour [!INCLUDE[prod_short](includes/prod_short.md)].
 
-    Vous pouvez également démarrer depuis [!INCLUDE [prod_short](includes/prod_short.md)]. Depuis votre page d'accueil, accédez à **Sélection de rapport** dans la section Power BI. Sélectionnez **Service** ou **Mon organisation** dans le ruban. Soit la galerie Organisation dans Power BI, soit Microsoft AppSource s’ouvre, filtré pour n’afficher que les applications liées à [!INCLUDE[prod_short](includes/prod_short.md)].
+    ![Accès à Obtenir des applications.](./media/across-how-to-connect-powerbi-d365-content-packs/powerbi-get-data.png)
 
-3. Dans la zone **Services**, sélectionnez **Extraire**.
+> [!TIP] 
+> Vous pouvez également accéder au **Rapport Power BI** à partir de [!INCLUDE [prod_short](includes/prod_short.md)]. Accédez à la section Rapports Power BI et **Sélectionner des rapports** sur votre page d’accueil. Choisissez **Services** ou **Mon organisation** dans **Obtenir des rapports**. La galerie Organisation dans Power BI ou Microsoft AppSource s’ouvre, en n’affichant que les applications liées à [!INCLUDE[prod_short](includes/prod_short.md)].
 
-    Cette étape ouvre la page **Applications Power BI**, qui vous permet de rechercher l’application Power BI disponible dans **AppSource**.  
-
-4. Dans la boîte de dialogue **Rechercher**, entrez **Dynamics 365 Business Central**.
-5. Sélectionnez l’application que vous souhaitez utiliser, sélectionnez **Obtenir maintenant**, puis **Installer**.  
+5. Dans la boîte de dialogue **Rechercher**, entrez **Dynamics 365 Business Central**.
+6. Sélectionnez l’application que vous souhaitez utiliser, sélectionnez **Obtenir maintenant**, puis **Installer**.  
 
     Ensuite l’application sera disponible à partir d’**Applications** dans le menu de navigation dans Power BI.
 
@@ -92,7 +95,7 @@ Le tableau de bord Power BI repose sur les services Web publiés répertoriés c
 
 Aucun compte Power BI n’a été créé. Vous devez avoir une licence pour obtenir un compte Power BI valide. De plus, vous devez vous être déjà connecté à Power BI pour créer votre espace de travail Power BI.  
 
-### Message : Aucun rapport n'est activé. Choisissez Sélectionner un rapport pour afficher la liste des rapports disponibles.
+### Message : Aucun rapport n'est activé. Sélectionnez un rapport pour voir une liste des rapports que vous pouvez afficher.
 
 Ce message apparaît si le rapport par défaut n’a pas pu être déployé sur votre espace de travail Power BI. Ou le rapport a été déployé, mais n’a pas été actualisé avec succès. Si ce problème se produit, accédez au rapport dans votre espace de travail Power BI, sélectionnez **Ensemble de données**, **Paramètres**, puis mettez à jour les informations d’identification manuellement. Une fois le jeu de données actualisé, revenez dans [!INCLUDE[prod_short](includes/prod_short.md)] et sélectionnez manuellement le rapport dans la page **Sélectionner des rapports**.
 
@@ -144,9 +147,7 @@ L'application Power BI affichera uniquement les données de la compagnie [!INCLU
 - [Sélectionnez une mosaïque](/power-bi/service-dashboard-tiles) pour ouvrir le rapport sous-jacent.  
 - Par défaut, votre ensemble de données n’est pas programmé pour être actualisé. Vous pouvez modifier le calendrier d’actualisation ou essayer de l’actualiser à la demande à l’aide de **Actualiser maintenant**. Pour plus d'informations, voir [Configuration d'une actualisation programmée](/power-bi/refresh-scheduled-refresh).
 
-## Voir la [formation Microsoft](/training/modules/configure-powerbi-excel-dynamics-365-business-central/index) associée
-
-## Voir aussi
+## Voir aussi .
 
 [Business Central et Power BI](admin-powerbi.md)  
 [Vue d’ensemble Architecture et composante d’intégration Power BI pour [!INCLUDE[prod_short](includes/prod_short.md)]](admin-powerbi-overview.md)  

@@ -60,12 +60,10 @@ Vous pouvez créer une facture à partir des lignes planification projet et indi
 > [!NOTE]  
 >   La procédure ci-dessus permet également de créer, de consulter, puis de reporter une note de crédit vente associée à un projet.
 
-## Voir la [formation Microsoft](/training/paths/post-job-usage-sales/) associée
-
 ## Voir aussi .
 
 [Gestion des projets](projects-manage-projects.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Ventes](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

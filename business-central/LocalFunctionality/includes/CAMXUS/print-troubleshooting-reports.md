@@ -1,8 +1,8 @@
 ---
-author: edupont04
+author: brentholtorf
 ms.topic: include
 ms.date: 04/01/2021
-ms.author: edupont
+ms.author: bholtorf
 ---
 
 Les rapports de dépannage suivants sont disponibles pour aider les partenaires certifiés Microsoft à résoudre les problèmes :  
@@ -14,11 +14,11 @@ Vous devez avoir accès au Générateur d'objets [!INCLUDE[prod_short](../../../
 
 Vous pouvez imprimer ces rapports et les envoyer à votre partenaire certifié Microsoft pour l'aider à résoudre les problèmes liés à votre implémentation de [!INCLUDE[prod_short](../../../includes/prod_short.md)].  
 
-## <a name="to-print-the-license-information-report"></a>Pour imprimer le rapport Information sur la licence
+## Pour imprimer le rapport Information sur la licence  
 1.  Dans le Générateur d'objets [!INCLUDE[prod_short](../../../includes/prod_short.md)], dans le menu **Outils**, choisissez **Information sur la licence**.  
 2.  Sur la page **Information sur la licence**, vous pouvez afficher un aperçu des informations de licence ou sélectionner le bouton **Exporter** pour imprimer le rapport **Information sur la licence**.  
 
-## <a name="to-print-the-data-dictionary-report"></a>Pour imprimer le rapport Dictionnaire de données.
+## Pour imprimer le rapport Dictionnaire de données.  
 1.  Dans le Générateur d'objets [!INCLUDE[prod_short](../../../includes/prod_short.md)], dans le menu **Outils**, choisissez **Générateur d'objets**.  
 2.  Cliquez sur le bouton **Rapport**.  
 3.  Dans la colonne **Type**, recherchez **Code** 10315, qui correspond au rapport **Dictionnaire de données**.  

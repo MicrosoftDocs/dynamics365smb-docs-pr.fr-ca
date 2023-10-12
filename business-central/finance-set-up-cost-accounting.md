@@ -121,7 +121,7 @@ Vous pouvez configurer et gérer les centres de coût, soit sur la page **Fiche 
 
     - Pour les centres de coûts de type **Total**, vous devez renseigner le champ **Totalisation**. Utilisez l'opérateur **or**, qui est une ligne verticale (**&#124;**) pour définir les plages des centres de coûts.  
     - Pour les centres de coûts de type de ligne **Fin total**, ce champ est renseigné automatiquement lorsque vous utilisez la fonction de décalage.  
-5. Renseignez les champs **Ordre de tri** et **Soustype coût**.  
+5. Renseignez les champs **Ordre de tri** et **Sous\-type coût**.  
 6. Choisissez la ligne vide suivante pour créer un centre de coûts, puis répétez les étapes 2 à 5.  
 7. Après avoir défini tous les centres de coûts, choisissez l'action **Décaler les centres de coûts**. Cliquez sur le bouton **Oui**.  
 
@@ -188,8 +188,6 @@ Pour chaque compte général, vous pouvez définir des sections analytiques par 
 
 > [!NOTE]  
 >  Pour vous assurer que le centre de coûts et l'objet de coûts prédéfinis que vous avez configurés dans le grand livre sont reportés automatiquement dans la comptabilité analytique, cochez la case **Vérifier reports GL** sur la page Configuration comptabilité analytique.
-
-## Voir la [formation Microsoft](/training/modules/cost-accounting-dynamics-365-business-central/) associée
 
 ## Voir aussi .
 

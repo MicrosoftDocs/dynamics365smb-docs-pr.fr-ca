@@ -35,9 +35,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Appliquer manuellement les paiements en affichant des informations détaillées sur les données de correspondance et des suggestions d'écritures ouvertes candidates auxquelles affecter des paiements. |[Réviser ou affecter les paiements après une affectation automatique](receivables-how-review-apply-payments-auto-application.md) |
 | Résoudre les paiements qui ne peuvent pas être affectés automatiquement à leurs écritures ouvertes associées. Par exemple, si les montants sont différents ou si une écriture associée n'existe pas. |[Rapprocher les paiements qui ne peuvent pas être affectés automatiquement](receivables-how-reconcile-payments-cannot-apply-auto.md) |
 | Lier le texte des paiements à des comptes client, fournisseur ou grand livre spécifiques, pour toujours reporter les dépenses ou réceptions récurrentes en liquide sur ces comptes quand elles ne peuvent être affectées à aucun document. |[Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique](receivables-how-map-text-recurring-payments-accounts-auto-reconcilliation.md) |
-|Configurez les règles pour définir comment les paiements/transactions bancaires doivent être automatiquement affectés à leurs écritures ouvertes associées lorsque vous utilisez la fonction **Affecter automatiquement** sur la page **Journal rapprochement bancaire**.|[Configurer des règles pour l'affectation automatique des paiements](receivables-how-set-up-payment-application-rules.md)|
-
-## Voir la [formation Microsoft](/training/modules/use-journals-dynamics-365-business-central/index) associée
+|Configurez les règles pour définir comment les paiements/transactions bancaires doivent être automatiquement affectés à leurs écritures ouvertes associées lorsque vous utilisez la fonction **Affecter automatiquement** sur la page **Journal rapprochement bancaire**.|[Définir des règles pour l’affectation automatique des paiements](receivables-how-set-up-payment-application-rules.md)|
 
 ## Voir aussi
 [Rapprochement des comptes bancaires](bank-how-reconcile-bank-accounts-separately.md)  

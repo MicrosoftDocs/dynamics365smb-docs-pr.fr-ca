@@ -9,7 +9,7 @@ Après avoir ajouté tous les articles sur les lignes, vous pouvez calculer l'es
 L'escompte est calculé sur la base de toutes les lignes du document vente où la case **Autoriser escompte facture** est cochée. Par défaut, les escomptes facture sont autorisés. Toutefois, les lignes avec des frais annexes, par exemple, ne sont pas incluses dans le calcul de l'escompte facture. Pour affecter un escompte à ces lignes, entrez une valeur dans le champ **Montant escompte ligne** sur les lignes.  
 
 > [!NOTE]
-> Par défaut, les champs **Autoriser escompte facture** et **Montant escompte ligne** sont cachés sur les lignes. Si les champs ne sont pas disponibles, vous pouvez les ajouter en personnalisant la page. Pour plus d'informations, voir [Personnaliser votre espace de travail](../ui-personalization-user.md#to-start-personalizing-a-page-through-the-personalizing-banner).
+> Par défaut, les champs **Autoriser escompte facture** et **Montant escompte ligne** sont cachés sur les lignes. Si les champs ne sont pas disponibles, vous pouvez les ajouter en personnalisant la page. Pour plus d'informations, voir [Personnaliser votre espace de travail](../ui-personalization-user.md#start-personalizing-by-using-the-personalization-mode).
 
 > [!TIP]
 > Si le champ **Calculer escompte facture** est sélectionné sur la page **Configuration ventes**, l'escompte facture est calculé automatiquement. Le moment du calcul diffère selon le type de document vente que vous utilisez.

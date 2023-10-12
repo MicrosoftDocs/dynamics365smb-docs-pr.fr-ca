@@ -52,8 +52,6 @@ La procédure suivante décrit comment recevoir une facture fournisseur et la co
 
     Les erreurs de validation, généralement associées à des données de base erronées ou manquantes dans [!INCLUDE[prod_short](includes/prod_short.md)], seront affichées dans le raccourci **Messages d'erreur**.  
 
-## Voir la [formation Microsoft](/training/modules/electronic-documents-dynamics-365-business-central/index) associée
-
 ## Voir aussi
 
 [Gestion des comptes fournisseur](payables-manage-payables.md)  

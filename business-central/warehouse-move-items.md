@@ -3,7 +3,7 @@ title: Déplacement d’articles
 description: Plus d’informations sur le déplacement d’articles entre les zones de votre entrepôt.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: andreipa
+ms.reviewer: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: Conceptual
 ms.date: 01/25/2023
@@ -34,13 +34,11 @@ Les tâches de comptage, d’ajustement et de reclassement des articles peuvent 
 |Déplacer des articles entre emplacements|[Transfert de l'inventaire entre des emplacements](inventory-how-transfer-between-locations.md)|
 |Déplacer des articles d'un emplacement à l'autre dans des configurations entrepôt de base à tout moment et sans documents origine.|[Déplacer des articles dans les configurations de stockage de base](warehouse-how-to-move-items-ad-hoc-in-basic-warehousing.md)|
 |Utilisez la feuille mouvement entrepôt, le prélèvement et le rangement internes pour déplacer des articles dans des configurations d’entrepôt avancées avec un prélèvement et un rangement dirigés.|[Déplacer des articles dans les configurations de stockage avancées](warehouse-how-to-move-items-in-advanced-warehousing.md)|  
-|Restructurez votre entrepôt avec de nouveaux codes et caractéristiques de zone et déplacez-les le cas échéant.|[Restructurer les entrepôts](warehouse-how-to-restructure-warehouses.md)|  
+|Restructurez votre entrepôt avec de nouveaux codes et caractéristiques de zone et déplacez-les le cas échéant.|[Restructuration des entrepôts](warehouse-how-to-restructure-warehouses.md)|  
 
-## Voir la [formation Microsoft](/training/modules/manage-internal-warehouse-processes/) associée
+## Voir aussi .
 
-## Voir aussi
-
-[Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)  
+[Vue d’ensemble de la gestion d’entrepôt](design-details-warehouse-management.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

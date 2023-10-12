@@ -77,8 +77,6 @@ Allez à la page **Services Web** et assurez-vous que les objets suivants sont p
 
 Pour plus d’informations sur la publication des services Web, voir [Publier un service Web](across-how-publish-web-service.md).
 
-## Voir la formation associée sur [Microsoft Learn](/learn/modules/use-power-automate/).
-
 ## Voir aussi .
 
 [Utiliser les flux Power Automate dans [!INCLUDE[prod_short](includes/prod_short.md)]](across-how-use-financials-data-source-flow.md)  

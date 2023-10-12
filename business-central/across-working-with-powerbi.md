@@ -2,7 +2,7 @@
 title: "Utilisation des rapports Power BI dans Business\_Central| Microsoft Docs"
 description: "Obtenir des informations, des informations décisionnelles et des indicateurs de performance clés à partir de vos données Business\_Central avec Power BI."
 author: jswymer
-ms.topic: get-started-article
+ms.topic: get-started
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -12,9 +12,9 @@ ms.author: jswymer
 ---
 # Utiliser les rapports Power BI dans [!INCLUDE [prod_short](includes/prod_short.md)]
 
-Dans cet article, vous découvrirez quelques notions de base sur l’affichage des rapports Power BI dans [!INCLUDE [prod_short](includes/prod_short.md)].
+Dans cet article, vous découvrirez quelques notions de base sur l’affichage des rapports Power BI, y compris les tableaux de bord, dans [!INCLUDE [prod_short](includes/prod_short.md)].
 
-## Aperçu
+## Vue d’ensemble
 
 Les rapports Power BI vous donnent un aperçu de votre [!INCLUDE[prod_short](includes/prod_short.md)]. Diverses pages dans [!INCLUDE [prod_short](includes/prod_short.md)] incluent une partie rapports Power BI qui peut afficher des rapports Power BI. Le tableau de bord est une page type où vous verrez une partie de rapports Power BI. Certaines pages de liste, comme **Articles**, comprennent également une partie Power BI.
 
@@ -55,7 +55,7 @@ Le processus de connexion démarre. Pendant le processus, [!INCLUDE [prod_short]
 
 #### Depuis [!INCLUDE [prod_short](includes/prod_short.md)] sur site
 
-Se connecter à Power BI depuis [!INCLUDE [prod_short](includes/prod_short.md)] est identique à la version en ligne. Cependant, vous pouvez être invité sur la page **AUTORISATIONS DE SERVICE AZURE ACTIVE DIRECTORY** pour accorder l’accès aux services Power BI. Pour accorder l’accès, sélectionnez **Autoriser les services Azure**, puis **Accepter**.
+Se connecter à Power BI depuis [!INCLUDE [prod_short](includes/prod_short.md)] est identique à la version en ligne. Cependant, vous pouvez être invité sur la page **AUTORISATIONS DE SERVICE MICROSOFT ENTRA** pour accorder l’accès aux services Power BI. Pour accorder l’accès, sélectionnez **Autoriser les services Azure**, puis **Accepter**.
 
 Une fois connecté, vous pouvez sélectionner un rapport dans la partie Power BI sur les pages.
 
@@ -125,8 +125,6 @@ Ce message apparaît si le rapport par défaut n’a pas pu être déployé sur 
 #### Vous ne pouvez pas voir un rapport sur la page Sélectionner un rapport sur une page de liste
 
 C’est probablement parce que le nom du rapport ne contient pas le nom de la page de liste. Effacez le filtre pour obtenir la liste complète des rapports disponibles dans Power BI.
-
-## Voir la [formation Microsoft](/training/modules/configure-powerbi-excel-dynamics-365-business-central/index) associée
 
 ## Voir aussi
 

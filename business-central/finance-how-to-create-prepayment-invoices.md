@@ -74,8 +74,6 @@ Vous pouvez émettre des factures paiement anticipé supplémentaires pour la co
 
 Vous pouvez accélérer le traitement des commandes et des factures en configurant des entrées de file d’attente des travaux qui mettent automatiquement à jour l'état de ces documents. Lorsqu’une facture de paiement anticipé est payée, les entrées de la file d’attente des travaux peuvent changer automatiquement l'état du document de **Paiement anticipé en attente** sur **Validé**. Lorsque vous configurez les entrées de la file d’attente des travaux, les codeunits que vous devrez utiliser sont **383 Mise à jour En attente Paiement anticipé Ventes** et **383 Mise à jour En attente Paiement anticipé Achats**. Nous vous recommandons de programmer les entrées pour qu’elles s’exécutent fréquemment, par exemple, toutes les minutes. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
-## Voir la [formation Microsoft](/training/modules/prepayment-invoices-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
 [Facturation de paiements anticipés](finance-invoice-prepayments.md)  

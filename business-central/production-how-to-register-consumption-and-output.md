@@ -1,16 +1,16 @@
 ---
 title: Enregistrer la sortie de consommation pour l’ordre de fabrication
 description: Cette rubrique explique comment enregistrer la consommation et la sortie pour une ligne du bon de production libéré qui apparaît sur la page Journal production.
-author: SorenGP
+author: brentholtorf
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.form: 5510
 ms.date: 03/08/2023
-ms.author: edupont
+ms.author: bholtorf
 ---
-# <a name="register-consumption-and-output-for-one-released-production-order-line"></a>Enregistrer la consommation et la production pour une ligne bon de production libéré
+# Enregistrer la consommation et la production pour une ligne bon de production libéré
 
 Cette tâche est réalisée sur la page **Journal production**. Le journal combine les fonctions des journaux de sortie et de consommation distincts en un seul journal. Vous accédez directement au journal combiné depuis un bon de production libéré. Son objectif principal est de reporter manuellement la consommation de composantes, la quantité d'articles finis produits et le temps passé dans les opérations. Les valeurs sont reportées dans le grand livre sous le bon de production libéré. Les quantités consommées sont reportées comme écritures article négatives, les quantités sorties sont reportées comme écritures positives et les heures passées sont reportées comme écritures du grand livre de capacité. Ces valeurs reportées peuvent également être visualisées au bas du journal sous forme de quantités réelles.  
 
@@ -20,7 +20,7 @@ Cette tâche est réalisée sur la page **Journal production**. Le journal combi
 > [!NOTE]  
 > Les composantes ne comportant pas de code lien itinéraire apparaissent en haut du journal.  
 
-## <a name="to-register-consumption-and-output"></a>Pour enregistrer la consommation et la sortie
+## Pour enregistrer la consommation et la sortie  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de production libérés**, puis sélectionnez le lien associé.  
 2. Ouvrez une ligne de bon de production libéré qui est prête à être enregistrée, puis, sur le raccourci **Lignes**, choisissez l'action **Ligne**, puis l'action **Journal production**.  
@@ -61,7 +61,7 @@ Cette tâche est réalisée sur la page **Journal production**. Le journal combi
 > [!WARNING]  
 > La page **Journal production** ne peut pas être utilisée par deux utilisateurs simultanément. Cela signifie que si l'utilisateur 2 ouvre la page et entre des données alors que l'utilisateur 1 travaille déjà sur la page, l'utilisateur 2 peut perdre des données lorsque l'utilisateur 1 ferme la page.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi  
 
 [Production](production-manage-manufacturing.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  

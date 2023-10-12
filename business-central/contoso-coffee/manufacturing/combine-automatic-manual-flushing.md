@@ -8,19 +8,19 @@ author: brentholtorf
 ms.author: bholtorf
 ---
 
-# <a name="walkthrough-combine-automatic-and-manual-flushing"></a>Procédure pas à pas : Combiner la consommation automatique et la consommation manuelle
+# Procédure pas à pas : Combiner la consommation automatique et la consommation manuelle
 
 Dans cet article, nous vous expliquons comment utiliser les données de démonstration Contoso Coffee dans la consommation.  
 
-## <a name="scenario"></a>Scénario
+## Scénario
 
 Vous êtes planificateur de production chez Contoso Coffee. Vous devez créer un nouveau bon de production pour 10 unités de l’article SP-SCM1004, AutoDrip. Certaines composantes et opérations seront consommées en aval et d’autres en amont en fonction de différentes conditions.
 
-## <a name="steps"></a>Étapes
+## Étapes
 
 > [Remarque !] N’oubliez pas d’ajuster l'inventaire en reportant le journal article avec les soldes d’ouverture.
 
-1. Créez un bon de production planifié ferme pour 5 unités de l’article **SP-SCM1004, AutoDrip** à l’emplacement *NORD*. Pour obtenir des conseils, voir [Procédure pas à pas : Créer un bon de production planifié ferme et le modifier](create-firm-planned-production-order-change.md).  
+1. Créez un bon de production planifié ferme pour cinq unités de l’article **SP-SCM1004, AutoDrip** à l’emplacement *PRINCIPAL*. Pour obtenir des conseils, voir [Procédure pas à pas : Créer un bon de production planifié ferme et le modifier](create-firm-planned-production-order-change.md).  
 
 2. Libérez le bon de production.
 
@@ -103,7 +103,7 @@ Vous êtes planificateur de production chez Contoso Coffee. Vous devez créer un
 
 C’est tout pour la consommation manuelle et automatique des composantes.
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Consommer des composantes en fonction de la production réalisée](../../production-how-to-flush-components-according-to-operation-output.md)  
 [Introduction aux données de démonstration Contoso Coffee](contoso-coffee-manufacturing-intro.md)  

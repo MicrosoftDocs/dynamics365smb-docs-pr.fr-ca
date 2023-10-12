@@ -2,11 +2,13 @@
 title: Exécuter et imprimer des rapports
 description: En savoir plus sur l'intégration d'un rapport dans une file d'attente des travaux et la programmation de son traitement à une date et une heure spécifiques.
 author: jswymer
+ms.author: jswymer
+ms.reviewer: altotovi
 ms.topic: conceptual
 ms.search.keywords: 'task, process, report, print, schedule, save, Excel, PDF, Word, dataset'
 ms.search.form: null
-ms.date: 09/09/2022
-ms.author: jswymer
+ms.date: 09/04/2023
+ms.custom: bap-template
 ---
 # Exécuter et imprimer des rapports
 
@@ -136,7 +138,14 @@ Pour en savoir plus, voir [Définir la présentation utilisée par un rapport](u
 
 ## Modifier la langue et le format des nombres, des dates et des heures
 
-Par défaut, la langue du texte et le format des nombres, des dates et des heures dans un rapport sont basés sur vos paramètres de langue de travail et de région, qui sont définis sur la page **Mes paramètres**. Vous pouvez toutefois modifier la langue et la région de format au cas par cas lorsque vous prévisualisez, imprimez ou envoyez un rapport. Sur la page de demande, sélectionnez **Avancé**, puis définissez les options **Langue** et **Région de format** comme vous le souhaitez.
+Par défaut, la langue du texte et le format des nombres, des dates et des heures dans un rapport sont basés sur vos paramètres de langue de travail et de région, qui sont définis sur la page **Mes paramètres**. Vous pouvez toutefois modifier la langue et la région de format au cas par cas lorsque vous prévisualisez, imprimez ou envoyez un rapport. Sur la page de demande, définissez les options **Langue** et **Région de format** selon vos préférences. Vous pouvez également spécifier le format de langue et de région à utiliser par défaut pour les clients et les fournisseurs sur les pages de leurs fiches.
+
+Selon l’emplacement où vous avez spécifié les paramètres de langue et de format, [!INCLUDE [prod_short](includes/prod_short.md)] détermine les paramètres à utiliser dans l’ordre suivant :
+
+1. Les paramètres que vous spécifiez lorsque vous générez un rapport.
+2. Les paramètres spécifiés dans le document, qui proviennent des paramètres du client ou du fournisseur.
+3. Les paramètres spécifiés dans l’objet Rapport AL.
+4. Les paramètres définis dans Mes paramètres.
 
 Pour plus d’informations sur la page **Mes paramètres**, accédez à [Modifier les paramètres de base](ui-change-basic-settings.md#region).
 
@@ -153,12 +162,10 @@ Les champs sous le raccourci **Avancé** définissent des limites sur le rapport
 > [!NOTE]
 > Les valeurs maximales peuvent être différentes pour [!INCLUDE[prod_short](includes/prod_short.md)] sur site et un administrateur peut les modifier. Pour plus d’informations, reportez-vous à la rubrique [Configuration de Business Central Server – Rapports](/dynamics365/business-central/dev-itpro/administration/configure-server-instance#Reports). Pour un aperçu des limites des rapports dans [!INCLUDE[prod_short](includes/prod_short.md)] en ligne, voir [Limites opérationnelles](/dynamics365/business-central/dev-itpro/administration/operational-limits-online).
 
-## Voir la [formation Microsoft](/training/paths/setup-reporting-dynamics-365-business-central/) associée.
-
 ## Voir aussi .
 
 [Rapports disponibles dans [!INCLUDE[prod_short](includes/prod_short.md)]](reports-available-reports.md)  
-[Utiliser les rapports dans le travail quotidien](reports-use-reports.md)  
+[Utilisation des rapports dans le travail quotidien](reports-use-reports.md)  
 [Vue d’ensemble de Business Intelligence et de la génération de rapports](reports-bi-reporting.md)  
 [Paramétrage imprimantes](ui-specify-printer-selection-reports.md)  
 [Exécuter des traitements en lot et des objets XMLport](ui-how-run-batch-jobs.md)  

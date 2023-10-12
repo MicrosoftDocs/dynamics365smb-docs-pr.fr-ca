@@ -49,9 +49,7 @@ Lorsque vous avez créé vos zones, vous pouvez créer le contenu de chaque zone
 
 Dans cette feuille, vous pouvez utiliser des lignes contenu de la zone pour plusieurs zones, afin d'obtenir un aperçu convenable des articles que vous placez dans différents zones d'une zone, d'une allée, ou d'un casier donné.  
 
-## Voir la [formation Microsoft](/training/modules/set-up-zones-bins/) associée
-
-## Voir aussi
+## Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

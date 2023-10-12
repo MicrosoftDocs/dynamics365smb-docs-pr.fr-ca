@@ -112,8 +112,6 @@ Vous pouvez également utiliser votre propre service web prévisionnel basé sur
 7. Activez la case à cocher **Utiliser mon abonnement Azure**.
 8. Sur l'organisateur **Mes informations d'identification du modèle**, saisissez l'URL d'API et la clé API de votre modèle.  .  
 
-## Voir la [formation Microsoft](/training/modules/predict-late-payments-sales-documents/) associée
-
 ## Voir aussi .
 
 [Documentation Azure Machine Learning Studio](/azure/machine-learning/classic/)  

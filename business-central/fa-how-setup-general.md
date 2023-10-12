@@ -123,13 +123,11 @@ Si vous utilisez les immobilisations dans [!INCLUDE[prod_short](includes/prod_sh
 
 Si les immobilisations ne sont pas intégrées au grand livre, ignorez les étapes 6 et 8.
 
-## Voir la [formation Microsoft](/training/paths/set-up-fixed-assets-management/) associée
-
 ## Voir aussi .
 
 [Paramétrage d'immobilisations](fa-setup.md)  
 [Immobilisations](fa-manage.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

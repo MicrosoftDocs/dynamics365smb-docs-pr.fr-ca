@@ -447,9 +447,10 @@
 ### [Reporter directement des transactions dans le grand livre](finance-how-post-transactions-directly.md)
 ### [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)
 ### [Exportation de fichier d’audit](finance-how-to-export-audit-files.md)
-### [Ventilation des coûts et des bénéfices](year-allocate-costs-income.md)
 ### [Enregistrement et remboursement des frais des employés](finance-how-record-reimburse-employee-expenses.md)
 ### [Échelonnement des recettes et des dépenses](finance-how-defer-revenue-expenses.md)
+### [Ventilation des coûts et des bénéfices récurrents](year-allocate-costs-income.md)
+### [Affecter des revenus et des coûts à plusieurs comptes du grand livre](finance-allocate-revenue-costs.md)
 ### [Mise à jour des taux de change devise](finance-how-update-currencies.md)
 ### [Importation des transactions de paie](finance-how-import-payroll-transactions.md)
 ### [Utilisation de la TVA sur les ventes et les achats](finance-work-with-vat.md)
@@ -585,6 +586,7 @@
 #### [Gestion des interactions pour les segments](marketing-interaction-segments.md)
 ### Gestion des interactions
 #### [Interactions](marketing-interactions-overview.md)
+#### [Pièces jointes pour les interactions](marketing-interaction-attachments.md)
 #### [Enregistrement des interactions avec les contacts](marketing-interactions.md)
 #### [Création des interactions sur les contacts et les segments](marketing-how-create-interactions.md)
 #### [Enregistrement automatique des interactions avec les contacts](marketing-auto-record-interactions.md)
@@ -1545,6 +1547,7 @@
 #### [Configurer des méthodes de livraison](sales-how-set-up-shipment-methods.md)
 #### [Configurer des agents de livraison](sales-how-to-set-up-shipping-agents.md)
 #### [Définir une stratégie de report des factures pour les utilisateurs](admin-setup-invoice-posting-policy.md)
+#### [Mettre à jour des dates de document avec les dates de report](across-link-doc-dates-to-posting-dates.md)
 ### Configuration des achats
 #### [Configuration des achats](purchasing-setup-purchasing.md)
 #### [Enregistrement des nouveaux fournisseurs](purchasing-how-register-new-vendors.md)
@@ -1554,9 +1557,10 @@
 #### [Configurer des prix et des escomptes](across-prices-and-discounts.md)
 #### [Enregistrer des prix d’achat spéciaux et des escomptes](purchasing-how-record-purchase-price-discount-payment-agreements.md)
 #### [Définir une stratégie de report des factures pour les utilisateurs](admin-setup-invoice-posting-policy.md)
-### Configurer l’inventaire
-#### [Configurer l’inventaire](inventory-setup-inventory.md)
-#### [Configurer les informations générales relatives à l’inventaire](inventory-how-setup-general.md)
+#### [Mettre à jour des dates de document avec les dates de report](across-link-doc-dates-to-posting-dates.md)
+### Configurer l'inventaire
+#### [Configurer l'inventaire](inventory-setup-inventory.md)
+#### [Configurer des informations générales relatives à l'inventaire](inventory-how-setup-general.md)
 #### [Utilisation des centres de gestion](inventory-responsibility-centers.md)
 #### [Configurer les emplacements](inventory-how-setup-locations.md)
 #### [Enregistrement des nouveaux articles](inventory-how-register-new-items.md)
@@ -1791,7 +1795,7 @@
 ### [FAQ sur la recherche et le filtrage](ui-search-filter-faq.yml)
 ### [Analyse des données de page dans Excel](across-work-with-excel.md)
 ### [Analyser des données de rapport avec Excel](report-analyze-excel.md)
-### [Analyse des données de liste avec le mode d’analyse](analysis-mode.md)
+### [Analyse des données de liste et de requête avec le mode d’analyse](analysis-mode.md)
 ### [BI financière](bi.md)
 
 ## Analyses intégrées 

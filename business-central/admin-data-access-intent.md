@@ -43,10 +43,8 @@ En termes de base de données, cette fonction est communément appelée *échell
     > [!NOTE]
     > Si un objet modifiable, comme la fiche client, est défini sur **Lecture seule**, la base de données principale est toujours utilisée, quelle que soit l'accès intentionnel, permettant aux utilisateurs d'apporter des modifications comme d'habitude.
 
-## Voir la [formation Microsoft](/training/paths/deploy-configure-dynamics-365-business-central/) associée
-
 ## Voir aussi
-[Fonctionnalités d'entreprise](across-business-functionality.md)  
+[Fonctionnalités d’entreprise](across-business-functionality.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)    

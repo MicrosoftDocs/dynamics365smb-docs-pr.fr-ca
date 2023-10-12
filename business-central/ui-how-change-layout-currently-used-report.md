@@ -56,8 +56,6 @@ Le nom de la présentation personnalisée sélectionnée s'affiche maintenant da
 
 Vous pouvez maintenant accéder à vos fiches client et fournisseur pour spécifier les présentations à utiliser pour différents documents que vous créez pour le client ou le fournisseur en question, comme les confirmations de commande ou les rappels de paiement. Pour plus d'informations, voir [Définir des présentations de document pour les clients et les fournisseurs](ui-define-customer-vendor-document-layouts.md).
 
-## Voir la [formation Microsoft](/training/modules/change-documents-dynamics-365-business-central/index) associée
-
 ## Voir aussi
 [Gestion des présentations de rapport](ui-manage-report-layouts.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

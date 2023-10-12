@@ -8,10 +8,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 'bill, sale, invoice, order'
 ms.search.form: '43, 48, 9301'
-ms.date: 09/01/2022
+ms.date: 09/11/2023
 ms.author: bholtorf
 ---
-# Facturer des ventes
+# Facturation des ventes
 
 Vous pouvez généralement créer un document de vente ou une facture vente pour enregistrer votre entente avec un client pour vendre certains produits selon certaines modalités de paiement et de livraison.  
 
@@ -23,11 +23,11 @@ Cependant, vous devez utiliser un document de vente au lieu d’une facture vent
 
 Pour toutes les autres situations, les documents de vente et les factures vente fonctionnent de la même manière. Pour plus d’informations sur l’utilisation des documents de vente, voir [Vendre des produits](sales-how-sell-products.md).
 
-Vous pouvez négocier avec le client en créant d’abord un devis, que vous pouvez convertir en facture vente ou en commande vente lorsque vous êtes d’accord sur la vente. En savoir plus, [Créer des devis](sales-how-make-offers.md).
+Vous pouvez négocier avec le client en créant d'abord un devis, que vous pouvez convertir en facture vente lorsque vous êtes d'accord sur la vente. Pour en savoir plus, consultez [Créer des devis](sales-how-make-offers.md).
 
 ## Créer des factures vente
 
-Si le client décide d'acheter, vous reportez la facture vente pour créer les écritures quantité et valeur associées. Lorsque vous reportez la facture vente, vous pouvez également envoyer par courriel le document en pièce jointe au format PDF. Vous pouvez faire en sorte que le corps du message soit prérempli avec un résumé des informations de facturation et de paiement, par exemple un lien vers Paypal. Pour plus d'informations, voir [Envoyer des documents par courriel](ui-how-send-documents-email.md). Lorsque le client paie la facture, vous pouvez enregistrer ce paiement de différentes manières, selon la taille et les flux de travail favoris de votre organisation. En savoir plus sur la section [Enregistrement des paiements](#registering-payments).  
+Si le client décide d'acheter, vous reportez la facture vente pour créer les écritures quantité et valeur associées. Lorsque vous reportez la facture vente, vous pouvez également envoyer par courriel le document en pièce jointe au format PDF. Vous pouvez faire en sorte que le corps du message soit prérempli avec un résumé des informations de facturation et de paiement, par exemple un lien vers Paypal. Pour plus d'informations, voir [Envoyer des documents par courriel](ui-how-send-documents-email.md). Lorsque le client paie la facture, vous pouvez enregistrer ce paiement de différentes manières, selon la taille et les flux de travail favoris de votre organisation. En savoir plus sur la section [Enregistrement des paiements](#register-payments).  
 
 Les fiches article peuvent être de type **Inventaire**, **Service** et **Hors inventaire** pour spécifier si l’article est une unité d'inventaire physique, une unité de temps de travail ou une unité physique qui n’est pas conservée dans l'inventaire. En savoir plus sur [Enregistrer de nouveaux articles](inventory-how-register-new-items.md). Le processus de facture vente est identique pour les trois types d'article.
 
@@ -36,10 +36,10 @@ Vous pouvez remplir les champs relatifs au client sur la facture vente de deux f
 ### Pour créer une facture vente :
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures vente**, puis sélectionnez le lien associé.  
-2. Dans le champ **Client**, entrez le nom d'un client existant. Si, toutefois, le client est nouveau et n’est donc pas enregistré, suivez ces étapes pour remplir les informations client standard sur la page **Facture vente** :
+2. Dans le champ **Nom client**, entrez le nom d’un client existant. Si, toutefois, le client est nouveau et n’est donc pas enregistré, suivez ces étapes pour remplir les informations client standard sur la page **Facture vente** :
 
     1. Dans le champ **Nom du client**, entrez le nom du nouveau client.
-    2. Dans la boîte de dialogue d’enregistrement du nouveau client, cliquez sur le bouton **Oui**.
+    2. Dans la boîte de dialogue d’enregistrement du nouveau client, cliquez sur **OK**.
     3. Sur la page **Sélectionnez un modèle pour un nouveau client**, sélectionnez un modèle sur lequel baser la nouvelle fiche client, puis cliquez sur **OK**.
     4. Une nouvelle fiche client affiche des informations sur le modèle client sélectionné. Renseignez les champs restants. En savoir plus sur [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).  
     5. Lorsque vous avez terminé la fiche client, choisissez **Fermer** pour revenir à la page **Facture vente**.
@@ -53,7 +53,8 @@ Vous pouvez remplir les champs relatifs au client sur la facture vente de deux f
     Vous êtes maintenant prêt à renseigner le raccourci **Lignes** pour les produits que vous vendez au client ou pour toute transaction avec le client que vous souhaitez enregistrer dans un compte du grand livre.
 
 4. Sous le raccourci **Lignes**, dans le champ **Type**, sélectionnez le type de produit, de frais ou de transaction à reporter pour le client sur la ligne vente.
-   * Si vous avez défini des lignes vente récurrentes pour le client, tel qu’un ordre de réapprovisionnement mensuel, vous pouvez insérer ces lignes sur la commande par l’intermédiaire de l’action **Extraire les lignes vente récurrentes**.
+   > [!TIP]
+   > Si vous avez défini des lignes vente récurrentes pour le client, tel qu’un ordre de réapprovisionnement mensuel, vous pouvez insérer ces lignes sur la commande par l’intermédiaire de l’action **Extraire les lignes vente récurrentes**.
 5. Dans le champ **N°**, sélectionnez un enregistrement à valider en fonction de la valeur du champ **Type**.
 
     Laissez le champ **N°** vide dans les cas suivants :
@@ -77,7 +78,8 @@ Vous pouvez remplir les champs relatifs au client sur la facture vente de deux f
     Les champs totaux sous les lignes sont automatiquement mis à jour lorsque vous créez ou modifiez des lignes pour afficher les montants qui seront reportés dans les livres.
 
     > [!NOTE]
-    > Dans de très rares cas, les montants reportés peuvent différer de ce qui est affiché dans les champs des totaux. Cela est généralement dû aux calculs d'arrondissement par rapport à la TVA ou à la taxe de vente.<br /><br />Pour vérifier les montants qui seront réellement reportés, vous pouvez utiliser la page **Statistiques**, qui tient compte des calculs d’arrondissement. Aussi, si vous choisissez l'action **Libérer**, les champs de totaux seront mis à jour pour inclure les calculs d’arrondissement.
+    > Dans de très rares cas, les montants reportés peuvent différer de ce qui est affiché dans les champs des totaux. Cela est généralement dû aux calculs d'arrondissement par rapport à la TVA ou à la taxe de vente.<br /><br />Pour vérifier les montants que vous reportez, utilisez le récapitulatif **Statistiques client**. Aussi, lorsque vous choisissez l’action **Libérer**, les valeurs des champs de totaux sont mises à jour pour inclure les calculs d’arrondissement.
+
 9. Dans le champ **Montant escompte facture sans TVA**, entrez un montant qui doit être déduit de la valeur indiquée dans le champ **Total TTC**.
 
     Si vous avez défini des escomptes facture pour le client, le pourcentage spécifié est automatiquement inséré dans le champ **% escompte facture** si les critères d'escompte sont réunis, et le montant associé est inséré dans le champ **Montant escompte facture sans TVA**. Pour plus d'informations, voir [Enregistrement des prix de vente, des escomptes et des ententes sur les paiements](sales-how-record-sales-price-discount-payment-agreements.md).
@@ -88,7 +90,7 @@ La boîte de dialogue **Valider et envoyer la confirmation** s'ouvre et indique 
 
 Les écritures article et client associées sont à présent créées dans votre système, et la facture vente est sortie en tant que document au format PDF. La facture vente est supprimée de la liste des factures vente et remplacée par un nouveau document dans la liste des factures vente reportées.  
 
-### Calcul d’escomptes facture pour des ventes
+### Calculer les escomptes facture sur les ventes
 
 [!INCLUDE [sales-invoice-discounts](includes/sales-invoice-discounts.md)]
 
@@ -100,7 +102,7 @@ Vous pouvez facilement corriger ou annuler une facture vente reportée avant qu'
 
 [Ouvrir la liste des **factures vente reportées**](https://businesscentral.dynamics.com/?page=143) dans [!INCLUDE [prod_short](includes/prod_short.md)].
 
-## Enregistrement des paiements
+## Enregistrer des paiements
 
 Selon les besoins de votre entreprise, vous pouvez être payé et enregistrer ce paiement de diverses manières : manuellement, automatiquement, et via des services de paiement.  
 
@@ -113,20 +115,18 @@ Dans les environnements d'entreprise où le client paie immédiatement, par exem
 Vous pouvez même créer des factures à paiement direct pour les clients non enregistrés en configurant une fiche « client en espèces », vers laquelle vous pointez sur la facture vente. En savoir plus sur [Configurer les clients effectuant un achat au comptoir](finance-how-to-set-up-cash-customers.md).  
 
 > [!TIP]
-> Si vous souhaitez envoyer à vos clients des rappels de paiements en retard, vous devez configurer des niveaux et des conditions de rappel. Pour plus d’informations, voir [Configurer les conditions et niveaux de rappel](finance-setup-reminders.md).  
+> Si vous souhaitez envoyer à vos clients des rappels de paiements en retard, vous devez d’abord configurer des niveaux et des conditions de rappel. Pour plus d’informations, voir [Configurer les conditions et niveaux de rappel](finance-setup-reminders.md).  
 
 ## Numéros de document externe
 
 [!INCLUDE [ext-doc-no-sales](includes/ext-doc-no-sales.md)]
 
-## Voir la [formation Microsoft](/training/modules/invoicing-customers-dynamics-365-business-central/index) associée.
-
 ## Voir aussi .
 
 [Ventes](sales-manage-sales.md)  
 [Définition des ventes](sales-setup-sales.md)  
-[Imprimer la liste des prélèvements](sales-how-print-picking-list.md)  
-[Stock](inventory-manage-inventory.md)  
+[Impression de la liste des prélèvements](sales-how-print-picking-list.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Envoyer des documents par courriel](ui-how-send-documents-email.md)  
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
 [Facturation en vrac à partir de Microsoft Bookings dans Business Central](finance-bookings.md)  

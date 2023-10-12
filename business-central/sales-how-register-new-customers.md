@@ -31,7 +31,7 @@ Si vous créez :
 Après avoir créé un modèle, vous pouvez utiliser l’action **Appliquer le modèle** pour l’appliquer à un ou plusieurs client sélectionnés. Pour créer un modèle, vous remplissez les informations que vous souhaitez réutiliser sur la page **Fiche client**, puis l’enregistrez en tant que modèle. Pour plus d’informations, consultez [Pour enregistrer la fiche client en tant que modèle](sales-how-register-new-customers.md#to-save-the-customer-card-as-a-template).
 
 > [!TIP]
-> Il peut être utile de personnaliser la page **Modèle de client** lorsque vous créez un modèle. Par exemple, vous pouvez ajouter le champ **Limite de crédit** à un modèle. Pour plus d’informations, voir la section [Personnaliser votre espace de travail](/dynamics365/business-central/ui-personalization-user#to-start-personalizing-a-page-through-the-personalizing-banner).
+> Il peut être utile de personnaliser la page **Modèle de client** lorsque vous créez un modèle. Par exemple, vous pouvez ajouter le champ **Limite de crédit** à un modèle. Pour plus d’informations, voir la section [Personnaliser votre espace de travail](/dynamics365/business-central/ui-personalization-user#start-personalizing-by-using-the-personalization-mode).
 
 Vous pouvez également créer un client à partir d'un contact. Pour plus d’informations, reportez-vous à la section [Pour créer un contact comme client, fournisseur, employé ou compte bancaire à partir d’un contact](marketing-create-contact-companies.md#to-create-a-customer-vendor-employee-or-bank-account-from-a-contact).  
 
@@ -82,12 +82,10 @@ Vous pouvez choisir de ne pas afficher les alertes vous indiquant que la limite 
     |**Solde échu**|Le champ **Solde dû** de la fiche client est contrôlé et une alerte s’affiche si le client a un solde échu.|
     |**Aucune alerte**|Aucune alerte de crédit n’est affichée sur l'état du client.|
 
-## Voir la [formation Microsoft](/training/modules/trade-master-data-dynamics-365-business-central/) associée.
-
 ## Voir aussi .
 
 [Définition des modes de règlement](finance-payment-methods.md)  
-[Fusionner l'enregistrement des doublons](sales-how-merge-duplicate-records.md)  
+[Fusion des enregistrements en double](sales-how-merge-duplicate-records.md)  
 [Création des séries de numéros](ui-create-number-series.md)  
 [Activer les livraisons partielles avec avis d’expédition](sales-how-send-partial-shipments.md)  
 [Ventes](sales-manage-sales.md)  
