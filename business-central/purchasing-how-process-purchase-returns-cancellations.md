@@ -11,7 +11,7 @@ ms.search.form: '6640, 6643, 9307, 9309, 9308, 6652, 145, 147'
 ms.date: 04/01/2021
 ms.author: bholtorf
 ---
-# Traiter les retours ou annulations d'achats
+# <a name="process-purchase-returns-or-cancellations"></a>Traiter les retours ou annulations d'achats
 
 Si vous souhaitez retourner des articles à votre fournisseur ou annuler des services que vous avez achetés, vous pouvez créer et reporter une note de crédit achat qui indique la modification demandée par rapport à la facture achat d'origine. Pour inclure les informations de facture achat correctes, vous pouvez créer la note de crédit achat à partir de la facture achat reportée ou vous pouvez créer une note de crédit achat avec les informations copiées de la facture.
 
@@ -28,7 +28,7 @@ Outre la facture achat reportée d'origine, vous pouvez affecter la note de cré
 
 La report de la note de crédit rétablira également tous les frais annexes affectés au document reporté, afin que les écritures valeur de l'article soient identiques à celles précédant l'affectation des frais annexes.
 
-## Évaluation stock
+## <a name="inventory-costing"></a>Évaluation stock
 Pour préserver l'évaluation correcte de l'inventaire, vous voudrez généralement prélever les articles retournés dans l'inventaire au coût unitaire auquel ils ont été achetés, et non à leur coût unitaire actuel. On appelle cela une inversion de même coût.
 
 Vous pouvez affecter l'inversion de même coût automatiquement de deux façons.  
@@ -42,7 +42,7 @@ Pour réaliser manuellement l'inversion exacte, sélectionnez **Écriture articl
 
 Pour plus d'informations, voir [Détails de conception : Évaluation stock](design-details-inventory-costing.md).
 
-## Pour créer une note de crédit achat à partir d'une facture achat reportée
+## <a name="to-create-a-purchase-credit-memo-from-a-posted-purchase-invoice"></a>Pour créer une note de crédit achat à partir d'une facture achat reportée
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures achat reportées**, puis sélectionnez le lien associé.  
 2. Sur la page **Factures achat reportées**, sélectionnez la facture achat reportée que vous souhaitez inverser, puis sélectionnez l'action **Créer une note de crédit de correction**.
@@ -63,7 +63,7 @@ Les factures achat reportées auxquelles vous affectez la note de crédit sont �
 
 La note de crédit achat est supprimée et remplacée par un nouveau document dans la liste des notes de crédit achat reportées.
 
-## Pour créer une note de crédit achat en copiant une facture achat reportée
+## <a name="to-create-a-purchase-credit-memo-by-copying-a-posted-purchase-invoice"></a>Pour créer une note de crédit achat en copiant une facture achat reportée
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de crédit achat**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau** pour ouvrir un nouvel avoir achat vierge.
@@ -75,7 +75,7 @@ La note de crédit achat est supprimée et remplacée par un nouveau document da
 8. Cliquez sur le bouton **OK**. Les lignes facture copiées sont insérées dans la note de crédit achat.
 9. Remplissez la note de crédit achat en vous reportant à la procédure [Pour créer une note de crédit achat à partir d'une facture achat reportée](purchasing-how-process-purchase-returns-cancellations.md#to-create-a-purchase-credit-memo-from-a-posted-purchase-invoice).
 
-## Pour créer un retour achat à partir d'un ou de plusieurs documents achat reportés
+## <a name="to-create-a-purchase-return-order-based-on-one-or-more-posted-purchase-documents"></a>Pour créer un retour achat à partir d'un ou de plusieurs documents achat reportés
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Retours achat**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -125,7 +125,7 @@ La note de crédit achat est supprimée et remplacée par un nouveau document da
 10. Sur la page **Retour achat**, dans le champ **Code motif retour** de chaque ligne, sélectionnez le motif de ce retour.
 11. Sélectionnez l'action **Valider**.
 
-## Pour créer une bon de commande de remplacement à partir d'un retour commande achat
+## <a name="to-create-a-replacement-purchase-order-from-a-purchase-return-order"></a>Pour créer une bon de commande de remplacement à partir d'un retour commande achat
 
 Vous pouvez vous accorder avec le fournisseur pour qu'il compense l'achat d'un article en remplaçant cet article. L'article de remplacement peut être identique à l'article d'origine ou il peut être différent. Le fournisseur peut vous avoir livré par erreur le mauvais article.  
 
@@ -134,7 +134,7 @@ Vous pouvez vous accorder avec le fournisseur pour qu'il compense l'achat d'un a
 3. Sur la page **Déplacer lignes achat nég.**, renseignez les champs selon vos besoins.
 4. Cliquez sur le bouton **OK**. La ligne négative est effacée du retour achat et un nouveau bon de commande est créé. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).  
 
-## Pour créer un rabais
+## <a name="to-create-a-purchase-allowance"></a>Pour créer un rabais
 
 Si vous recevez de votre fournisseur des articles que vous ne souhaitez pas, par exemple s'ils sont légèrement endommagés, ou s'ils ne sont pas de la bonne couleur ou de la bonne taille, le fournisseur peut vous proposer un rabais.  
 
@@ -153,7 +153,7 @@ Vous pouvez reporter ce coût d'achat réduit en tant que frais annexes sur une 
 
 Lorsque vous reportez le retour achat, le rabais sur l'achat est ajouté au montant de l'écriture achat appropriée. De cette manière, vous pouvez maintenir la précision de l'évaluation de l'inventaire.  
 
-## Pour regrouper les expéditions retour
+## <a name="to-combine-return-shipments"></a>Pour regrouper les expéditions retour
 
 Pour retourner des articles couverts par différents retours achat au même fournisseur, vous pouvez utiliser la fonction **Regrouper les expéditions retour**.  
 
@@ -175,13 +175,13 @@ Lorsque des livraisons retour sont regroupées sur une note de crédit et report
     Si une ligne expédition retour incorrecte a été sélectionnée ou que vous souhaitez recommencer, il vous suffit de supprimer les lignes de l'avoir achat et de réutiliser la fonction **Extraire lignes expédition retour**.  
 6. Sélectionnez l'action **Valider**.  
 
-### Pour supprimer des retours achat ouverts après le report de livraisons retour groupées  
+### <a name="to-remove-open-purchase-return-orders-after-combined-return-shipment-posting"></a>Pour supprimer des retours achat ouverts après le report de livraisons retour groupées
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Supprimer retours achat facturé**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**.  
 3. Vous pouvez également supprimer chacun des retours achat manuellement.
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Enregistrement des achats](purchasing-how-record-purchases.md)  
 [Correction ou annulation des factures achat impayées](purchasing-how-correct-cancel-unpaid-purchase-invoices.md)  
