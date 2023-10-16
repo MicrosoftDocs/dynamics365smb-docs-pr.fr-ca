@@ -77,8 +77,6 @@ Une fois qu’une compagnie a été créée, vous ne pouvez pas changer son nom.
 
 L’application Contoso Coffee fournit des données de démonstration pour vous aider à explorer les fonctionnalités avancées de [!INCLUDE [prod_short](includes/prod_short.md)]. Trouvez l’application dans AppSource et installez-la dans une compagnie vide, par exemple une compagnie dans un environnement sandbox. Pour plus d’informations, voir [Présentation des données de démonstration Contoso Coffee](contoso-coffee/contoso-coffee-intro.md).  
 
-## Voir la [formation Microsoft](/training/modules/create-new-companies-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
 [Personnalisation de Business Central](ui-customizing-overview.md)  

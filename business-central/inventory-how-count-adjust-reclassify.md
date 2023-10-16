@@ -22,6 +22,8 @@ Pour modifier les attributs des écritures article, vous pouvez utiliser un jour
 > [!NOTE]
 > Dans les processus à plusieurs étapes, les articles sont enregistrés dans des zones en tant qu’écritures entrepôt, pas en tant qu’écritures article. Par conséquent, vous effectuez l’inventaire, l’ajustement et le reclassement dans des journaux entrepôt qui prennent en charge les zones. Ensuite, vous synchronisez les écritures entrepôt nouvelles ou modifiées avec leurs écritures article correspondantes pour refléter les modifications des quantités et valeurs en inventaire.
 
+[!INCLUDE [edit-in-excel](includes/edit-in-excel.md)]
+
 ## Pour effectuer un inventaire
 
 Faites l’inventaire physique, c’est-à-dire comptez les articles réellement disponibles, pour vérifier si la quantité enregistrée est la même que la quantité physique en stock. En règle générale, ces comptages ont lieu à la fin d’un exercice financier, mais parfois, ils sont effectués plus souvent. S’il y a des écarts, reportez les quantités réelles dans les comptes d’articles <!--accounts, or ledger?--> avant de procéder à l’évaluation de l'inventaire.
@@ -202,13 +204,11 @@ Reportez les enregistrements de zone d’ajustement dans le grand livre article 
 5. Cliquez sur **OK**. Les ajustements positifs et négatifs sont totalisés pour chaque article et des lignes sont créées dans le journal article.  
 6. Reportez les lignes journal pour entrer les différences de quantité dans le grand livre article. Les inventaires dans les zones et le grand livre article correspondent maintenant.  
 
-## Voir la [formation Microsoft](/training/modules/adjust-inventory/) associée
-
-## Voir aussi
+## Voir aussi .
 
 [Faire l'inventaire à l'aide de documents](inventory-how-count-inventory-with-documents.md)  
 [Inventaire](inventory-manage-inventory.md)  
-[Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)  
+[Vue d’ensemble de la gestion d’entrepôt](design-details-warehouse-management.md)  
 [Vente](sales-manage-sales.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

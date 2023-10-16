@@ -31,9 +31,7 @@ Vous pouvez configurer un certain nombre de modèles rangement et en sélectionn
 
 Vous pouvez créer plusieurs modèles rangement et les appliquer comme vous le souhaitez. On se réfère d'abord au modèle rangement sélectionné éventuel pour l'article ou l'unité de stock. Si ces champs ne sont pas renseignés, alors le modèle rangement sélectionné pour l'entrepôt sur le raccourci **Politiques de zones** de la fiche emplacement sera utilisé.  
 
-## Voir la [formation Microsoft](/training/modules/put-away-templates/) associée
-
-## Voir aussi
+## Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

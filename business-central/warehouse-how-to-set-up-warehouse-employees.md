@@ -5,15 +5,15 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.topic: how-to
-ms.date: 03/09/2023
+ms.date: 09/25/2023
 ms.custom: bap-template
 ms.search.form: '7328, 7348'
 ---
-# <a name="set-up-warehouse-employees"></a>Configurer des employés d'entrepôt
+# Configurer des employés d’entrepôt
 
-Chaque utilisateur qui exécute des activités entrepôt doit être configuré en tant qu’employé d’entrepôt et attribué à un emplacement par défaut. [!INCLUDE [prod_short](includes/prod_short.md)] filtre les activités de l’entrepôt à l’emplacement par défaut de l’employé. Ils ne peuvent effectuer les activités d’entrepôt qu’à l’emplacement. Vous pouvez aussi affecter un utilisateur à d’autres emplacements. Ils peuvent accéder, mais pas effectuer des activités à ces emplacements.
+Vous devez configurer chaque utilisateur qui exécute des activités dans un entrepôt en tant qu’employé de l’entrepôt et les affecter à un emplacement par défaut. [!INCLUDE [prod_short](includes/prod_short.md)] filtre les activités de l’entrepôt à l’emplacement par défaut de l’employé. Ils ne peuvent effectuer les activités d’entrepôt qu’à l’emplacement. Vous pouvez aussi affecter un utilisateur à d’autres emplacements. Ils peuvent accéder, mais pas effectuer des activités à ces emplacements.
 
-## <a name="to-set-up-warehouse-employees"></a>Pour configurer des employés d'entrepôt
+## Pour configurer des employés d'entrepôt  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Employés entrepôt**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -22,7 +22,12 @@ Chaque utilisateur qui exécute des activités entrepôt doit être configuré e
 5. Activez le bouton à bascule **Par défaut** pour définir l’emplacement comme seul emplacement pour les activités entrepôt de l’employé.  
 6. Répétez ces étapes pour affecter d’autres employés à des emplacements ou affecter d’autres emplacements à des employés d’entrepôt existants.  
 
-## <a name="see-also"></a>Voir aussi .
+> [!TIP]
+> Vous pouvez également utiliser l’action **M’ajouter en tant qu’employé de l’entrepôt** pour vous ajouter rapidement à la liste des employés de l’entrepôt. Par exemple, cela est utile lorsque vous testez les fonctionnalités.
+
+## Voir la [formation Microsoft](/training/modules/get-started-warehouse-management/) associée
+
+## Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

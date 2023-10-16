@@ -11,7 +11,7 @@ ms.search.form: '50, 51, 56, 9308'
 ms.date: 04/01/2021
 ms.author: bholtorf
 ---
-# <a name="purchase-items-for-a-sale-by-creating-purchase-invoices"></a>Acheter des articles pour une vente en créant des factures achat
+# Acheter des articles pour une vente en créant des factures achat
 
 Avec les commandes vente et les factures vente, vous pouvez utiliser des fonctions vous permettant de créer rapidement des documents achat pour des quantités d'articles manquantes requises par la vente. Vous pouvez utiliser deux fonctions distinctes selon le type document.
 
@@ -23,7 +23,7 @@ Avec les commandes vente et les factures vente, vous pouvez utiliser des fonctio
 |**Créer des commandes achat**|Depuis un document de vente, cette fonction crée un bon de commande pour chaque fournisseur des articles du document de vente. Vous pouvez modifier la quantité d'achat avant de créer les commandes achat. Seules les quantités de vente indisponibles sont proposées.
 |**Créer une facture achat**|Depuis un document de vente et une facture vente, cette fonction crée une facture achat pour un fournisseur sélectionné pour toutes les lignes ou toutes les lignes sélectionnées sur le document vente. La quantité vendue totale est suggérée.|
 
-## <a name="to-create-one-or-more-purchase-orders-from-a-sales-order"></a>Pour créer un ou plusieurs bons de commande à partir d'un document de vente
+## Pour créer un ou plusieurs bons de commande à partir d'un document de vente
 Pour créer une commande achat pour chaque quantité d'article indisponible de la commande vente, vous utilisez la fonction **Créer des commandes achat**.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.
@@ -43,7 +43,7 @@ Pour créer une commande achat pour chaque quantité d'article indisponible de l
 7. Traitez maintenant la ou les bons de commande, par exemple, en modifiant ou en ajoutant des lignes bon de commande. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 
 
-## <a name="to-create-a-purchase-invoice-from-a-sales-order-or-sales-invoice"></a>Pour créer une facture achat à partir d'un document de vente ou d'une facture vente
+## Pour créer une facture achat à partir d'un document de vente ou d'une facture vente
 Pour créer une facture achat unique pour une ou plusieurs lignes d'un document vente en sélectionnant d'abord le fournisseur auquel acheter, vous utilisez la fonction **Créer une facture achat**.
 
 > [!NOTE]  
@@ -59,7 +59,7 @@ Pour créer une facture achat unique pour une ou plusieurs lignes d'un document 
     Une facture achat ayant une seule, plusieurs ou toutes les lignes de la facture vente, est créée.
 7. Traitez maintenant la facture achat, par exemple, en modifiant ou en ajoutant des lignes facture achat. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Enregistrer des achats](purchasing-how-record-purchases.md)  
 [Facturer des ventes](sales-how-invoice-sales.md)  
