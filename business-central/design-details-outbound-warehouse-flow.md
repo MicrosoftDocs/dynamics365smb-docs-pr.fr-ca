@@ -11,7 +11,9 @@ ms.custom: bap-template
 ---
 # Processus sortants de l’entrepôt
 
-Les processus sortants de l’entrepôt démarrent lorsque vous libérez un document source pour sortir des articles d’un emplacement d’entrepôt. Par exemple, soit pour livrer les articles quelque part, soit pour les déplacer vers un autre emplacement de l’entreprise. En principe, le processus d’expédition des commandes sortantes se compose de deux activités :
+Les processus sortants de l’entrepôt démarrent lorsque vous libérez un document source pour sortir des articles d’un emplacement d’entrepôt. Par exemple, soit pour livrer les articles quelque part, soit pour les déplacer vers un autre emplacement de l’entreprise. Vous pouvez livrer des articles physiques et hors inventaire. Pour en savoir plus sur la réception d’articles hors inventaire, consultez [Reporter des articles hors inventaire](#post-non-inventory-items). 
+
+En principe, le processus d’expédition des commandes sortantes se compose de deux activités :
 
 * Prélèvement des articles sur les tablettes.
 * Expédier les articles hors de l’entrepôt.
@@ -108,8 +110,12 @@ Les écritures d’entrepôt sont créées, et les lignes prélèvement entrepô
 
 Lorsque tous les articles du document de livraison entrepôt sont enregistrés comme prélevés, l'employé d'entrepôt reporte la livraison. Le report met à jour les écritures article pour refléter la réduction de l'inventaire. Par exemple, le champ **Qté expédiée** sur la ligne document origine sortant est mis à jour.  
 
+## Reporter des articles hors inventaire
+
+[!INCLUDE [post-non-inventory-items](includes/post-non-inventory-items.md)]
+
 ## Voir aussi
 
-[Gestion d’entrepôt](design-details-warehouse-management.md)  
+[Gestion d'entrepôt](design-details-warehouse-management.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
