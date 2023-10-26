@@ -116,6 +116,13 @@ Lorsque vous travaillez avec le **Rapport Intrastat**, vous voyez un champ **Ét
 * *Publié* : [!INCLUDE[prod_short](includes/prod_short.md)] change automatiquement l’état en *Publié* lorsque vous créez un fichier. À partir de ce moment, vous ne pouvez plus modifier votre **rapport Intrastat**. Si vous devez modifier quelque chose et soumettre un nouveau rapport, vous pouvez utiliser l’action **Rouvrir** pour rouvrir le rapport Intrastat. Une fois le document rouvert, vous pouvez utiliser l’action **Libérer** pour libérer à nouveau le document.
 * **Déclaré** : spécifie si l’écriture a déjà été déclarée aux administrations fiscales. Ce n’est pas un état normal mais un champ indépendant, et même si vous rouvriez le rapport Intrastat, cela montrerait toujours que le fichier est déjà créé pour ce rapport.
 
+### Emplacements dans la déclaration Intrastat 
+
+[!INCLUDE[prod_short](includes/prod_short.md)] utilise toujours les informations du champ **Code pays/région** sur la page **Carte de localisation** comme pays pour **envoyer** ou **recevoir** des marchandises. Lorsque ces informations n’existent pas ou que l’emplacement n’a pas été utilisé, le système utilise les informations de la page **Informations compagnie**.   
+
+> [!NOTE]
+> Si la compagnie exerce ses activités dans plusieurs pays, les rapports Intrastat ne fonctionnent pas pour tous les pays dans lesquels les sites sont configurés. Les rapports sont basés uniquement sur le pays principal, car il n’est actuellement pas possible d’utiliser des rapports multi-pays.  
+
 ### Commerce triangulaire dans Intrastat
 
 Le commerce triangulaire implique des échanges entre trois pays ou régions où les marchandises contournent le pays de la compagnie déclarante. Dans Business Central, cela peut être facilité grâce à la fonctionnalité [Livraison directe](sales-how-drop-shipment.md) . Pour activer cette option, activez le champ **Inclure la livraison directe** dans **Configuration des rapports Intrastat**.  
