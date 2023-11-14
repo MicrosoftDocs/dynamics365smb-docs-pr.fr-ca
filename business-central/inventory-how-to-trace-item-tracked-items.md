@@ -59,11 +59,9 @@ Ces fonctions sont particulièrement utiles pour le contrôle qualité, lorsque 
 3. Dans les champs **N° de série** et **N° lot**, entrez les numéros traçabilité que vous voulez suivre.  
 4. Sélectionnez l'action **Rechercher** pour rechercher toutes les instances du numéro de série ou de lot dans la base de données.  
 
-## Voir la [formation Microsoft](/training/modules/prepare-item-tracking/) associée
-
 ## Voir aussi .
 
-[Stock](inventory-manage-inventory.md)  
+[Inventaire](inventory-manage-inventory.md)  
 [Utiliser les numéros lot, de série et paquet](inventory-how-work-item-tracking.md)  
 [Détails de conception : traçabilité](design-details-item-tracking.md)  
 [Détails de conception : traçabilité et réservations](design-details-item-tracking-and-reservations.md)  

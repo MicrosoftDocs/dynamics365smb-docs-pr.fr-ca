@@ -74,12 +74,10 @@ Si vous utilisez habituellement d'autres unités de mesure que l'unité de mesur
 4. Pour les achats, sur le raccourci **Réapprovisionnement**, dans le champ **Unité de mesure achat**, ouvrez la page **Unités de mesure article**.
 5. Sélectionnez le code que vous souhaitez configurer comme unité de mesure par défaut pour les ventes ou les achats respectivement, puis cliquez sur le bouton **OK**.
 
-## Voir la [formation Microsoft](/training/modules/trade-master-data-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
 [Utiliser les unités de mesure de lot de fabrication](production-how-to-use-the-manufacturing-batch-unit-of-measure.md)  
-[Enregistrer de nouveaux articles](inventory-how-register-new-items.md)  
+[Enregistrement des nouveaux articles](inventory-how-register-new-items.md)  
 [Gestion de l'inventaire](inventory-manage-inventory.md)  
 [Gestion des achats](purchasing-manage-purchasing.md)  
 [Gestion des ventes](sales-manage-sales.md)  

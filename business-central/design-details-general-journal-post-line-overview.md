@@ -10,13 +10,13 @@ ms.search.keywords: 'design, general ledger, post'
 ms.date: 06/15/2021
 ms.author: bholtorf
 ---
-# <a name="general-journal-post-line-overview"></a>Aperçu de la ligne report de journal général
+# Aperçu de la ligne report de journal général
 
 Le Codeunit 12, **Journal général-Ligne report**, est l'objet d'application majeur pour le report dans le grand livre et est le seul emplacement pour insérer des écritures GL, TVA, et client et fournisseur. Ce codeunit est également utilisé pour toutes les opérations Affecter, Annuler l'affectation et Inverser.  
   
 Dans Microsoft Dynamics NAV 2013 R2, le codeunit a été repensé, car il était devenu très grand, avec environ 7 600 lignes de code. L’architecture a été modifiée et le codeunit a été rendu plus simple et plus facile à modifier. Cette documentation décrit les modifications et fournit les informations dont vous aurez besoin pour la mise à niveau.  
   
-## <a name="old-architecture"></a>Ancienne architecture
+## Ancienne architecture  
 L'ancienne architecture avait les fonctions suivantes :  
   
 * Il y a eu une utilisation extensive des variables globales, qui ont augmenté la possibilité d'erreurs masquées dues à l'utilisation de variables avec une portée incorrecte.  
@@ -27,7 +27,7 @@ L'ancienne architecture avait les fonctions suivantes :
 * Une grande partie du code dans le codeunit 12, approximativement 30 %, est lié aux calculs d'escompte de paiement et de tolérance, même si ces fonctions ne sont pas nécessaires dans de nombreux pays ou régions.  
 * Report, Affecter, Annuler l'affectation, Inverser, Escompte de paiement et tolérance, ainsi qu'Ajustement du taux de change ont été associés dans le codeunit 12 à l'aide d'une longue liste de variables globales.  
   
-### <a name="new-architecture"></a>Nouvelle architecture
+### Nouvelle architecture  
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], le codeunit 12 présente les améliorations suivantes :  
   
 * Le Codeunit 12 a été remanié en procédures plus petites (toutes inférieures à 100 lignes de code).  
@@ -37,7 +37,7 @@ Dans [!INCLUDE[prod_short](includes/prod_short.md)], le codeunit 12 présente le
 * De nombreuses fonctions de participation ont été transférées vers les tables d'écritures client et fournisseur correspondantes.  
 * L'utilisation des variables globales a été réduite, de façon à ce que chaque procédure utilise des paramètres et contienne sa propre logique d'affectation.  
   
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Détails de conception : Structure de l'interface de report](design-details-posting-interface-structure.md)  
 [Détails de conception : Structure du moteur de validation](design-details-posting-engine-structure.md)  

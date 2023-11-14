@@ -10,7 +10,7 @@ ms.search.form: '9291, 9293, 9295, 99000750, 99000751, 99000752, 99000753, 99000
 ms.date: 06/22/2021
 ms.author: bholtorf
 ---
-# <a name="set-up-shop-calendars"></a>Paramétrer des calendriers usine
+# Paramétrer des calendriers usine
 
 Les calendriers d'atelier ou de poste de charge spécifient les jours ouvrés et les heures de travail, les équipes, les jours fériés et les absences déterminant la capacité disponible brute de l'atelier, mesurée en unités de temps, en fonction des valeurs d'efficacité et de capacité définies.
 
@@ -18,7 +18,7 @@ Avant de calculer un calendrier d'unité de production ou d'atelier spécifique,
 
 La procédure suivante décrit comment configurer des calendriers d'atelier. Les étapes sont similaires lorsque vous configurez des calendriers d'unité de production.  
 
-## <a name="to-create-work-shifts"></a>Pour créer des équipes
+## Pour créer des équipes  
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Équipes**, puis choisissez le lien associé.  
 2.  Sur une ligne blanche, entrez le numéro d'identification de l'équipe, par exemple, **1**, dans le champ **Code**.  
 3.  Dans le champ **Désignation**, entrez la désignation de l'équipe, par exemple, **1ère équipe**.  
@@ -26,7 +26,7 @@ La procédure suivante décrit comment configurer des calendriers d'atelier. Les
 
 Même si vos centres de charge n'ont pas recours à diverses équipes, entrez au moins un code équipe.  
 
-## <a name="to-set-up-a-shop-calendar"></a>Pour configurer un calendrier usine
+## Pour configurer un calendrier usine  
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Calendriers usine**, puis choisissez le lien associé.  
 2.  Sur une ligne blanche, entrez le numéro d'identification du calendrier usine dans le champ **Code**.  
 3.  Dans le champ **Désignation**, entrez la désignation du calendrier usine.  
@@ -60,7 +60,7 @@ Une capacité disponible nulle est attribuée aux jours fériés définis dans l
 
 Le calendrier usine peut ensuite être attribué à un atelier pour calculer le calendrier usine qui régira la programmation de toutes les opérations dans le temps à l'atelier.  
 
-## <a name="to-calculate-a-work-center-calendar"></a>Pour calculer un calendrier d'atelier
+## Pour calculer un calendrier d'atelier  
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Ateliers**, puis choisissez le lien associé.
 2. Ouvrez l'atelier que vous voulez mettre à jour.  
@@ -88,7 +88,7 @@ Vous venez de créer ou de mettre à jour les écritures calendrier. Elles indiq
 
 Le calendrier d'atelier calculé définit ensuite la période de disponibilité et la quantité de la capacité de l'atelier. Il contrôle la programmation détaillée des opérations effectuées dans l'atelier.  
 
-## <a name="to-record-work-center-absence"></a>Pour enregistrer les absences de l'atelier
+## Pour enregistrer les absences de l'atelier  
 1.  Sur la page **Calendrier atelier**, choisissez l'action **Afficher matrice**.
 2. Sur la page **Matrice Calendrier atelier**, sélectionnez l'atelier et le jour de calendrier correspondant au moment où l'absence doit être enregistrée, puis choisissez l'action **Indisponibilité**.  
 3.  Sur la page **Indisponibilité**, définissez les heures de début et de fin, et la description de l'absence du jour. Par exemple :  
@@ -99,7 +99,7 @@ Le calendrier d'atelier calculé définit ensuite la période de disponibilité 
 
 La capacité du jour sélectionné est réduite conformément aux heures d'absence enregistrées.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi  
 [Configurer des calendriers principaux](across-how-to-assign-base-calendars.md)  
 [Configurer les ateliers et les unités de production](production-how-to-set-up-work-and-machine-centers.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  

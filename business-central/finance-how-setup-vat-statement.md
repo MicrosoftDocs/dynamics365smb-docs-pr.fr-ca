@@ -11,11 +11,11 @@ ms.search.form: '317, 318, 320, 474'
 ms.date: 06/16/2021
 ms.author: bholtorf
 ---
-# <a name="set-up-vat-statement-templates-and-vat-statement-names"></a>Configurer des modèles de relevé fiscal et des noms de relevé fiscal
+# Configurer des modèles de relevé fiscal et des noms de relevé fiscal
 
 Les autorités fiscales peuvent modifier et modifient leurs exigences de report de la TVA. Les modèles de relevé fiscal et les noms de relevé fiscal peuvent vous aider à vous préparer aux changements à venir et à vous conformer en douceur aux nouvelles exigences. Vous pouvez utiliser des modèles de relevé fiscal pour configurer différents rapports lorsque vous choisissez d'imprimer le relevé. Chaque modèle de relevé fiscal peut avoir plusieurs noms de relevé fiscal qui, à leur tour, définissent les calculs, et vous pouvez créer un nouveau nom de relevé fiscal lorsque les exigences changent. Par exemple, un nom peut calculer la TVA pour cette année en fonction des exigences actuelles, et un autre modèle peut calculer la TVA en fonction des exigences de l'année suivante. Les noms permettent également de conserver un historique des formats de relevé fiscal, par exemple pour vous permettre de déterminer comment la TVA a été calculée dans les années précédentes.
 
-## <a name="to-define-a-vat-statement"></a>Pour définir un relevé fiscal
+## Pour définir un relevé fiscal
 
 Les relevés fiscaux vous permettent de calculer le montant du relevé fiscal pour une période donnée, par exemple, un trimestre.
 
@@ -27,7 +27,7 @@ Les relevés fiscaux vous permettent de calculer le montant du relevé fiscal po
 > Vous pouvez filtrer les informations de la déclaration, selon votre sélection dans le champ **Type**. L'option **Totalisation comptes** est utile lorsque vous souhaitez calculer la TVA à partir d'un compte spécifique.
 L'option **Total écriture TVA** permet d'obtenir la TVA pour les comptes affectés aux sélections dans les champs **Type de report général**, **Groupe de report de marché TVA** et/ou **Groupe de report produit TVA**. L'option **Total de lignes** permet de saisir une valeur ou des critères de filtre rapide dans le champ **Total de lignes**. Pour plus d'informations, voir [Recherche, filtrage et tri des données](ui-enter-criteria-filters.md). L'option **Description** est souvent utilisée pour ajouter une note à la déclaration. Par exemple, vous pouvez l'utiliser comme en-tête si vous avez utilisé Total de lignes.
 
-## <a name="to-preview-the-vat-statement"></a>Afficher le relevé fiscal
+## Afficher le relevé fiscal
 
 Après avoir défini un relevé fiscal, vous pouvez en afficher un aperçu pour vérifier qu'il répond à vos besoins.
 > [!Tip]
@@ -39,7 +39,7 @@ Après avoir défini un relevé fiscal, vous pouvez en afficher un aperçu pour 
 4. Sur les lignes où le champ **Type** indique la valeur **TVA**, vous pouvez afficher la liste des écritures TVA en choisissant le montant figurant dans le champ **Montant colonne**.
 5. Vous pouvez utiliser la personnalisation pour afficher plus de champs dans les lignes. Par exemple, le montant de base non réalisé et le montant de TVA non réalisé, si vous utilisez la TVA non réalisée.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configuration de la TVA (taxe sur la valeur ajoutée)](finance-setup-vat.md)  
 [Configuration de la TVA sur encaissement](finance-setup-unrealized-vat.md)  

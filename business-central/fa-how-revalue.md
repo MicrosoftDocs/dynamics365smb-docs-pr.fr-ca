@@ -114,13 +114,11 @@ Si vous n'avez pas coché la case **Amort. jusqu'à date compta.**, l'actif perd
 
 *Amortissement total = 100 + 15 + 55,54 = 170,54*
 
-## Voir la [formation Microsoft](/training/paths/manage-advanced-fixed-assets-transactions/) associée
-
 ## Voir aussi .
 
 [Immobilisations](fa-manage.md)  
 [Paramétrage d'immobilisations](fa-setup.md)  
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

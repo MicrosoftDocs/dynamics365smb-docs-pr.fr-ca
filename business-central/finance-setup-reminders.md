@@ -11,30 +11,30 @@ ms.search.form: '431, 432, 436, 478'
 ms.date: 02/09/2022
 ms.author: bholtorf
 ---
-# <a name="set-up-reminder-terms-and-levels"></a>Configurer les niveaux et modalités de rappel
+# Configurer les niveaux et modalités de rappel
 
 Vous pouvez utiliser des relances pour rappeler aux clients les soldes échus. [!INCLUDE [reminder-terms](includes/reminder-terms.md)]
 
-## <a name="reminder-terms"></a>Modalités de rappel
+## Modalités de rappel
 
 Si des clients ont des impayés, vous devez décider quand et comment leur envoyer un rappel. En outre, vous pouvez être amené à débiter leurs comptes d'intérêts ou de frais. Vous pouvez configurer autant de modalités de rappel que vous le souhaitez.  
 
 > [!NOTE]
 > Si vous souhaitez calculer les intérêts sur les paiements échus, vous pouvez le faire lorsque vous créez des rappels. Cependant, si vous souhaitez calculer les intérêts et en informer vos clients sans envoyer de rappels, utilisez les [notes de frais financiers](finance-setup-finance-charges.md). Pour plus d’informations, consultez [Rappels](receivables-collect-outstanding-balances.md#reminders) ou [Frais financiers](receivables-collect-outstanding-balances.md#finance-charges), respectivement.
 
-### <a name="to-set-up-reminder-terms"></a>Pour configurer des modalités de rappel
+### Pour configurer des modalités de rappel
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modalités de rappel**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]  
 3. Pour utiliser plusieurs combinaisons de modalités de rappel, créez un code pour chacun d'eux.
 
-## <a name="reminder-levels"></a>Niveaux rappel
+## Niveaux rappel
 
 Vous pouvez définir un nombre illimité de niveaux rappel pour chaque code modalités de rappel. La première fois qu'un rappel est créé pour un client, la configuration utilisée est celle du niveau 1. Lorsque le rappel est émis, le numéro du niveau est enregistré dans les écritures rappel qui sont créées et associées à l'écriture client spécifique. S'il est nécessaire de rappeler le client, toutes les écritures rappel associées aux écritures client ouvertes sont vérifiées afin de localiser le numéro de niveau le plus élevé. Les conditions du niveau suivant seront alors utilisées pour le nouveau rappel.
 
 Si vous créez plus de relances qu'il n'y a de niveaux relance, les conditions utilisées seront celles du niveau le plus élevé. Vous pouvez utiliser autant de relances que le champ **Nombre max. de relances** des conditions relance le permet.
 
-### <a name="to-set-up-reminder-levels"></a>Pour configurer des niveaux rappel
+### Pour configurer des niveaux rappel
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modalités de rappel**, puis sélectionnez le lien associé.  
 2. Sur la page **Modalités de rappel**, cliquez sur la ligne comportant les conditions pour lesquelles configurer des niveaux, puis cliquez sur l'action **Niveaux**.  
@@ -92,7 +92,7 @@ Si vous créez plus de relances qu'il n'y a de niveaux relance, les conditions u
 
 Si vous avez configuré les modalités de rappel (avec des niveaux et du texte supplémentaires), saisissez l'un des codes sur chaque fiche client. Pour plus d'informations, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
 [Envoyer des rappels de soldes impayés](receivables-send-reminders.md)  

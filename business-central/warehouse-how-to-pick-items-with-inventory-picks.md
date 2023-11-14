@@ -3,7 +3,7 @@ title: Comment prélever des articles avec les prélèvements inventaire
 description: Découvrez comment utiliser les prélèvements inventaire pour enregistrer et reporter les informations de prélèvement et d’expédition pour les documents source.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: andreipa
+ms.reviewer: bholtorf
 ms.service: dynamics365-business-central
 ms.topic: how-to
 ms.date: 01/25/2023
@@ -120,9 +120,7 @@ Dans les scénarios où une partie de la quantité est assemblée et l’autre d
 > [!NOTE]  
 > Si les articles sont assemblés pour commande, le prélèvement inventaire pour le document de vente lié crée un mouvement d’inventaire pour toutes les composantes d’assemblage.  
 
-## Voir la [formation Microsoft](/training/paths/pick-ship-items-business-central/) associée
-
-## Voir aussi
+## Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

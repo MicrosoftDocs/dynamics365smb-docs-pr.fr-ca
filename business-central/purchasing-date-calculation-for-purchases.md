@@ -58,12 +58,10 @@ Vous pouvez spécifier manuellement la formule de date sur les lignes. Sinon, [!
 3. Fiche d'unité de stock
 4. Fiche fournisseur
 
-## Voir la [formation Microsoft](/training/modules/estimate-receipt-dates-dynamics-365-business-central/) associée
-
 ## Voir aussi .
 
 [Calcul de la date des ventes](sales-date-calculation-for-sales.md)  
-[Calculer des dates promesse livraison](sales-how-to-calculate-order-promising-dates.md)  
+[Calcul des dates promesse livraison](sales-how-to-calculate-order-promising-dates.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
