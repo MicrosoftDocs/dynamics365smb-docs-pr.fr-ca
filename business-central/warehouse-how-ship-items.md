@@ -10,7 +10,7 @@ ms.custom: bap-template
 ms.search.form: '7335, 7337, 7339, 7340, 7341, 7362, 9008'
 ---
 
-# Livrer des articles avec une livraison entrepôt
+# <a name="ship-items-with-a-warehouse-shipment"></a>Livrer des articles avec une livraison entrepôt
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], vous prélevez et livrez des articles en utilisant l’une des quatre méthodes décrites dans le tableau suivant.
 
@@ -37,7 +37,7 @@ Vous pouvez créer une livraison entrepôt de deux manières :
 * En mode « push », lorsque le travail est effectué commande par commande. Choisissez l’action **Créer livraison entrepôt** dans le document source pour créer une livraison entrepôt pour le document.
 * En mode « pull », où vous utilisez l’action **Libérer** dans le document source pour le libérer dans l’entrepôt. Un employé d'entrepôt crée une **Livraison entrepôt** pour un ou plusieurs documents source libérés. La procédure suivante décrit comment créer une livraison entrepôt en mode « pull ».
 
-## Pour livrer des articles avec un document de livraison entrepôt
+## <a name="to-ship-items-using-a-warehouse-shipment-document"></a>Pour livrer des articles avec un document de livraison entrepôt
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Livraisons entrepôt**, puis sélectionnez le lien associé.  
 2. Choisissez **Nouveau**.  
@@ -74,7 +74,7 @@ Vous pouvez créer une livraison entrepôt de deux manières :
 
     [!INCLUDE [preview-posting-shipment](includes/preview-posting-shipment.md)]
 
-## Procédure : utiliser des filtres afin d’obtenir des documents origine
+## <a name="how-to-use-filters-to-get-source-documents"></a>Procédure : utiliser des filtres afin d’obtenir des documents origine
 
 À partir d’une livraison entrepôt, vous pouvez utiliser la page **Filtres pour extr. doc. orig.** afin d’extraire les lignes du document source libéré qui définissent les articles à recevoir ou à livrer.
 
@@ -90,14 +90,14 @@ Toutes les lignes du document source libéré qui répondent aux critères de fi
 
 Le nombre de combinaisons de filtres est illimité. Les filtres sont enregistrés sur la page **Filtres pour extr. doc. orig.** et seront disponibles la prochaine fois que vous en aurez besoin. Vous pouvez modifier les critères à tout moment en choisissant l'action **Modifier**.
 
-## Zone et codes de zone
+## <a name="zone-and-bin-codes"></a>Zone et codes de zone
 
 Si les zones sont obligatoires dans l’emplacement, [!INCLUDE [prod_short](includes/prod_short.md)] suggère une zone et un code de zone sur le document de livraison entrepôt.
 
 * Pour les configurations avancées dans lesquelles un emplacement utilise le rangement et le prélèvement dirigés, [!INCLUDE [prod_short](includes/prod_short.md)] utilise la zone spécifiée dans le champ **Code de zone livraison** sur la **Fiche emplacement**. Si aucun **Code de zone livraison** n’est spécifié, le champ est vide. Si l’article et la zone de livraison ne correspondent pas, [!INCLUDE [prod_short](includes/prod_short.md)] laisse la zone de livraison vide.
 * Dans les autres cas, [!INCLUDE [prod_short](includes/prod_short.md)] utilise toujours en premier la zone spécifiée dans le champ **Code de zone livraison** sur la **Fiche emplacement**. Si aucun code de zone de livraison n’est spécifié, [!INCLUDE [prod_short](includes/prod_short.md)] utilise le code de zone du document source.
 
-## Traitement des articles à assembler pour commande dans les livraisons entrepôt
+## <a name="handling-assemble-to-order-items-in-warehouse-shipments"></a>Traitement des articles à assembler pour commande dans les livraisons entrepôt
 
 Dans des scénarios d’assemblage pour commande, utilisez le champ **Qté à livrer** sur les lignes livraison entrepôt pour enregistrer le nombre d’unités assemblées. La quantité est reportée comme résultat d’assemblage lorsque vous reportez la livraison entrepôt. Pour d’autres lignes livraison entrepôt, la valeur du champ **Qté à livrer** est zéro.
 
@@ -115,7 +115,7 @@ Une fois la livraison entrepôt validée, divers champs de la ligne document de 
 >
 > La quantité assemblée pour commande est gérée comme décrit dans cet article. La quantité provenant de l’inventaire est traitée comme une ligne de livraison entrepôt standard. Pour plus d’informations sur les scénarios de combinaison, consultez [Description des processus Assembler pour commande et Assembler pour inventaire](assembly-assemble-to-order-or-assemble-to-stock.md).
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Inventaire](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  

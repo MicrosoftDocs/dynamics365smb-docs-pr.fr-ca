@@ -8,11 +8,11 @@ ms.search.form: '1992, 1993, 1994, 1995, 1990, 1997, 1801'
 ms.date: 04/01/2021
 ms.author: bholtorf
 ---
-# Utilisateurs intégrés avec des listes de vérification
+# <a name="onboard-users-with-checklists"></a>Utilisateurs intégrés avec des listes de vérification
 
 La première fois qu'un utilisateur se connecte à une nouvelle compagnie [!INCLUDE [prod_short](includes/prod_short.md)], il peut voir une bannière qui l'encourage à lancer la liste de vérification **Démarrer** pour l'aider à mettre en place des informations clés et à se préparer pour les affaires. En tant qu'administrateur ou partenaire revendeur, vous pouvez personnaliser les listes de vérification prédéfinies et configurer vos propres étapes.
 
-## Pour ajouter un article à la liste de vérification
+## <a name="to-add-an-item-to-the-checklist"></a>Pour ajouter un article à la liste de vérification
 
 1. Connectez-vous à [!INCLUDE[prod_short](includes/prod_short.md)] sur [https://businesscentral.dynamics.com/](https://businesscentral.dynamics.com/).
 
@@ -25,7 +25,7 @@ La première fois qu'un utilisateur se connecte à une nouvelle compagnie [!INCL
     > [!TIP]
     > Si l'étape concerne un guide de configuration, le champ **Tâche** spécifie le guide de configuration. Si l'étape consiste à en apprendre davantage, le champ **Tâche** spécifie le lien vers l'article ou le module d'apprentissage en ligne.
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
 [Administration](admin-setup-and-administration.md)  

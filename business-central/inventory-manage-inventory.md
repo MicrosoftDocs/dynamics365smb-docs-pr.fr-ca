@@ -12,7 +12,7 @@ ms.date: 06/16/2021
 ms.author: bholtorf
 ---
 
-# Gestion de l'inventaire
+# <a name="manage-inventory"></a>Gestion de l'inventaire
 
 Pour chaque produit physique que vous commercialisez, vous devez créer une fiche article de type **Inventaire**. Les articles que vous proposez aux clients, mais que vous n’avez pas en inventaire, peuvent être enregistrés comme articles de catalogue. Vous pouvez ensuite les convertir en articles d'inventaire, le cas échéant. Vous pouvez augmenter ou diminuer la quantité d’un article en inventaire en effectuant un report direct sur les écritures article, par exemple, après un comptage physique ou si vous n’enregistrez pas les achats.
 
@@ -25,13 +25,13 @@ Pour améliorer votre aperçu d’articles et pour vous aider à les trouver, vo
 
 La planification d’articles pour répondre à la demande est couverte dans le cadre de la fonctionnalité de planification de l’offre. En savoir plus sur [Planification](production-planning.md).  
 
-## Rapprochement inventaire
+## <a name="inventory-reconciliation"></a>Rapprochement inventaire
 
 Lorsque vous reportez des transactions inventaire, tels que des livraisons vente, des factures achat ou des ajustements inventaire, les coûts article modifiés sont enregistrés dans les écritures valeur article. Pour refléter ces modifications de la valeur inventaire dans vos livres financiers, les coûts inventaire sont automatiquement reportés dans les comptes inventaire associés dans le grand livre. Pour chaque transaction inventaire que vous reportez, les valeurs appropriées sont reportées dans le compte inventaire, le compte ajustement et le compte COGS dans le grand livre. En savoir plus sur [Rapprocher les coûts de l'inventaire avec le grand livre](finance-how-to-post-inventory-costs-to-the-general-ledger.md).
 
 Bien que les coûts inventaire soient automatiquement reportés dans le grand livre, il est malgré tout nécessaire de vous assurer que les coûts des biens sont transmis à la transaction de vente sortante associée, notamment dans les situations où vous vendez des biens avant de facturer l'achat. Il s'agit d'un ajustement des coûts. Le coût des articles est ajusté automatiquement lorsque vous reportez des transactions article, mais vous pouvez également les ajuster manuellement. En savoir plus sur [Ajuster les coûts des articles](inventory-how-adjust-item-costs.md).  
 
-## Tâches connexes
+## <a name="related-tasks"></a>Tâches connexes
 
 Le tableau suivant présente les tâches associées.
 
@@ -55,7 +55,7 @@ Le tableau suivant présente les tâches associées.
 |Gérez les opérations commerciales dans les bureaux de vente, les départements d'achat ou les bureaux de planification d'usine pour plusieurs emplacements.|[Utiliser les centres de gestion](inventory-responsibility-centers.md)|
 |Utilisez des ressources avec des fonctions spécifiques pour divers services et éléments de service.|[Configuration de l’affectation des ressources](service-how-setup-resource-allocation.md)|
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Achat](purchasing-manage-purchasing.md)  
