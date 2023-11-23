@@ -10,7 +10,7 @@ ms.custom: bap-template
 ms.search.form: 7775
 ---
 
-# Configurer les capacités Copilot et IA 
+# <a name="configure-copilot-and-ai-capabilities"></a>Configurer les capacités Copilot et IA
 
 <!--[!INCLUDE[ai-preview](includes/ai-preview.md)]-->
 
@@ -34,12 +34,12 @@ Cet article explique comment contrôler l’accès des utilisateurs à Copilot a
 
 Si l’une de ces conditions n’est pas remplie, la fonctionnalité ne peut pas être utilisée.
 
-## Conditions préalables
+## <a name="prerequisites"></a>Conditions préalables
 
 - Vous utilisez Business Central Online, version 23.1 ou ultérieure. <!--[preview version](ai-preview-getstarted.md) of Business Central that's enabled for Copilot.-->
 - Vous disposez des autorisations d’administrateur ou de super autorisations dans Business Central.  <!--For more information, go to [Configure AI-powered item marketing text with Copilot](enable-ai.md).-->
 
-## Consentement à la version préliminaire et aux conditions de confidentialité
+## <a name="allow-data-movement-across-geographies"></a>Consentement à la version préliminaire et aux conditions de confidentialité
 
 Consentement aux termes et conditions de la [version préliminaire](https://dynamics.microsoft.com/legaldocs/supp-dynamics365-preview/) et de la [Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839) au nom de l’organisation. Contrairement aux avis de confidentialité pour d’autres fonctionnalités et services, seuls les administrateurs peuvent consentir à l’utilisation d’Azure OpenAI, ce qu’ils font au nom de l’organisation. Les utilisateurs ne peuvent pas décider eux-mêmes.   
 
@@ -47,7 +47,7 @@ Consentement aux termes et conditions de la [version préliminaire](https://dyna
 2. Dans la colonne **Nom de l’intégration**, sélectionnez **Azure OpenAI**, puis lisez les termes et conditions qui vous êtes présentés.
 3. Dans la ligne **Azure OpenAI**, cochez la case **Accepter pour tout le monde** pour consentir ou la case **Pas d’accord pour tout le monde** pour rejeter.
 
-## Activer la fonctionnalité dans la gestion des fonctionnalités
+## <a name="activate-features"></a>Activer la fonctionnalité dans la gestion des fonctionnalités
 
 **Gestion des fonctionnalités** permet d’activer ou de désactiver les fonctionnalités en avant-première, telles que le rapprochement bancaire, ainsi que certaines fonctionnalités généralement disponibles, telles que les suggestions marketing d’articles. [En savoir plus sur la gestion des fonctionnalités](/dynamics365/business-central/dev-itpro/administration/feature-management).
 
@@ -59,7 +59,7 @@ Consentement aux termes et conditions de la [version préliminaire](https://dyna
 
    Pour plus d’informations sur la gestion des fonctionnalités en général, accédez à [Gestion des fonctionnalités](/dynamics365/business-central/dev-itpro/administration/feature-management).
 
-## Autoriser le déplacement des données entre les zones géographiques
+## <a name="enable-feature-in-feature-management"></a>Autoriser le déplacement des données entre les zones géographiques
 
 Cette tâche s’applique uniquement si le commutateur **Autoriser le mouvement des données** s’affiche en haut de l’écran **Fonctionnalités de Copilot et de l’IA**. Le commutateur **Autoriser le déplacement des données** indique que l’emplacement de votre environnement Business Central&mdash;c’est-à-dire la région où les données sont traitées et stockées&mdash;n’est pas la même que la région d’Azure OpenAI Service utilisée par Copilot. Si vous souhaitez activer Copilot, vous devez autoriser le déplacement des données entre les régions. Pour en savoir plus sur le déplacement des données, consultez [Déplacement des données Copilot entre régions](ai-copilot-data-movement.md). 
 
@@ -92,7 +92,7 @@ Copilot and other AI capabilities use Azure OpenAI Service.  and are provided by
 Meanwhile, customers with environments outside the United States can use Copilot AI features by opting in to share relevant data with the Azure OpenAI Service in United States or Switzerland.
 
 The information in the following table outlines the Azure OpenAI service that's used by the Copilot services based on the geography of their Dynamics 365 environment when they opt-in to share data.-->
-## Activer les fonctionnalités
+## <a name="granting-user-access"></a>Activer les fonctionnalités
 
 Via la page **Fonctionnalités de Copilot et de l’IA**, vous pouvez activer ou désactiver des fonctionnalités individuelles pour tous les utilisateurs.
 
@@ -106,14 +106,14 @@ Via la page **Fonctionnalités de Copilot et de l’IA**, vous pouvez activer ou
    - Pour désactiver une fonctionnalité, sélectionnez-la, puis sélectionnez **Désactiver** dans le ruban. 
 
 
-## Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 
 Après avoir activé et accepté les fonctionnalités, vous êtes prêt à les essayer. Accédez à :
 
 - [Ajouter du texte marketing aux articles](item-marketing-text.md) 
 - [Rapprocher à l’aide de l’assistant de rapprochement de compte bancaire](bank-reconciliation-with-copilot.md) 
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Vue d’ensemble des suggestions de texte marketing](ai-overview.md)   
 [FAQ sur les suggestions de texte marketing pour les articles](faqs-marketing-text.md)  
