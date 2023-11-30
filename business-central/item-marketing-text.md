@@ -132,6 +132,7 @@ Vous pouvez effectuer quelques étapes pour améliorer les suggestions de texte 
 ## Voir aussi .
 
 [Vue d’ensemble des suggestions de texte marketing](ai-overview.md)  
-[FAQ sur les suggestions de texte marketing pour les articles](faqs-marketing-text.md)  
-[Configurer les capacités Copilot et IA](enable-ai.md)  
+[Résoudre les problèmes des fonctionnalités de Copilot et d’IA](ai-copilot-troubleshooting.md)  
+[FAQ pour les suggestions de texte marketing](faqs-marketing-text.md)  
+[Configuration des fonctionnalités de Copilot et d’IA](enable-ai.md)  
 [Enregistrement des nouveaux articles](inventory-how-register-new-items.md)  
