@@ -22,7 +22,7 @@ Lorsque vous réceptionnez des articles de l’inventaire ou lorsque le service 
 > [!CAUTION]  
 > Ne reportez pas une facture achat pour des articles physiques tant que vous n’avez pas reçu les articles et que vous ne connaissez pas le coût total de l’achat, frais supplémentaires compris. Sinon, la valeur de l'inventaire et les chiffres de profit peuvent être biaisés.
 
-### <a name="create-a-and-post-purchase-invoice"></a>Créer et reporter une facture achat
+### <a name="create-and-post-a-purchase-invoice"></a>Créer et reporter une facture achat
 
 Ce qui suit décrit comment créer une facture achat. La procédure est identique pour un bon de commande. La principale différence est que les bons de commande ont des champs et des actions supplémentaires pour la manutention des articles.
 

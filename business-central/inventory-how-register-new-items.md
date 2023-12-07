@@ -99,7 +99,7 @@ Lorsque la quantité demandée dépasse la quantité disponible en inventaire, u
 
 En savoir plus sur les variantes dans la section [Gérer les variantes de produits](inventory-item-variants.md).  
 
-## <a name="deleting-item-cards"></a>Suppression de fiches article
+## <a name="delete-item-cards"></a>Suppression de fiches article
 
 Si vous avez reporté une transaction pour un article, vous ne pouvez pas supprimer la carte, car les écritures peuvent être nécessaires pour l’évaluation de l’inventaire ou l’audit. Pour supprimer des fiches article avec des écritures, contactez le partenaire Microsoft pour le faire par code.  
 
