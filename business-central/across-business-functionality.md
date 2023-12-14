@@ -8,16 +8,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: feature overview
 ms.search.form: '9020, 9022, 9026, 9027, 9030, 9000, 9009, 9004, 9005, 9024, 9006, 9007, 9010, 9016, 9017'
-ms.date: 09/13/2022
+ms.date: 11/01/2023
 ms.author: bholtorf
 ---
-# <a name="business-functionality"></a>Fonctionnalités d'entreprise
+# Fonctionnalités d'entreprise
 
-[!INCLUDE[prod_short](includes/prod_short.md)] fournit des fonctionnalités pour les processus d'entreprise communs dans les PME, surtout au sein de compagnies de vente en gros et de services professionnels. Toutefois, des processus plus complexes, comme l'assemblage, la fabrication, la maintenance et la gestion d'entrepôt suggérée sont également pris en charge. [Découvrez comment obtenir un essai gratuit ici](trial-signup.md).  
+[!INCLUDE[prod_short](includes/prod_short.md)] fournit des fonctionnalités pour les processus d'entreprise communs dans les PME, surtout au sein de compagnies de vente en gros et de services professionnels. Toutefois, des processus plus complexes, comme l'assemblage, la fabrication, la maintenance et la gestion d'entrepôt suggérée sont également pris en charge. Découvrez comment obtenir un essai gratuit [ici](trial-signup.md).  
 
 [!INCLUDE [about-ui-learn](includes/about-ui-learn.md)]
 
-[!INCLUDE[prod_short](includes/prod_short.md)] comprend des configurations standard pour la plupart des processus entreprise, mais vous pouvez modifier la configuration pour l’adapter aux besoins de votre activité. À partir de votre tableau de bord, vous pouvez accéder aux guides de configuration assistée qui vous permettent de configurer certains scénarios et d'ajouter des fonctionnalités à [!INCLUDE[prod_short](includes/prod_short.md)]. Plusieurs modules de fonctionnalités d'entreprise doivent être créés manuellement. Les articles [Démarrage rapide de Business Central](quick-start-business-central.md) peuvent vous aider à vous familiariser avec [!INCLUDE [prod_short](includes/prod_short.md)]. Pour plus d’informations, consultez [Configuration de [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md).
+[!INCLUDE[prod_short](includes/prod_short.md)] comprend des configurations standard pour la plupart des processus entreprise, mais vous pouvez modifier la configuration pour l’adapter aux besoins de votre activité. À partir de votre tableau de bord, vous pouvez accéder aux guides de configuration assistée qui vous permettent de configurer certains scénarios et d'ajouter des fonctionnalités à [!INCLUDE[prod_short](includes/prod_short.md)]. Plusieurs modules de fonctionnalités d'entreprise doivent être créés manuellement. Les articles [Démarrage rapide de Business Central](quick-start-business-central.md) peuvent vous aider à vous familiariser par rapport [!INCLUDE [prod_short](includes/prod_short.md)]. Pour plus d’informations, consultez [Configuration de [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md).
 
 | À | Voir |
 | --- | --- |
@@ -36,10 +36,10 @@ ms.author: bholtorf
 |Assurer un flux efficace des marchandises reçues et livrées.|[Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)|
 |Programmez des appels de service, configurez des commandes service et assurez le suivi des pièces et fournitures de réparation.|[Gestion des services](service-service.md)|
 |Configurez et utilisez des flux de travail qui relient des tâches exécutées par différents utilisateurs ou par le système, telles que le report automatique. Demander et accorder une approbation pour créer ou reporter des documents sont des phases classiques du flux de travail.|[Flux de travail](across-workflow.md)|
-|Activez des utilisateurs pour l'échange de données avec des sources externes lors de tâches quotidiennes, telles que les envoyer/recevoir des documents électroniques, importer/exporter des fichiers bancaires, et mettre à jour des taux de change des devises.|[Échanger des données par voir électronique](across-data-exchange.md)|
+|Activez des utilisateurs pour l’échange de données avec des sources externes lors de tâches quotidiennes, telles que les envoyer/recevoir des documents électroniques, importer/exporter des fichiers bancaires, et mettre à jour des taux de change des devises.|[Échanger des données par voir électronique](across-data-exchange.md)|
 |Enregistrez des documents externes dans [!INCLUDE[prod_short](includes/prod_short.md)], ainsi que leurs pièces jointes, puis créez manuellement des documents connexes ou convertissez automatiquement les fichiers en documents électroniques.|[Documents entrants](across-income-documents.md)|
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Administration](admin-setup-and-administration.md)    
 [Explorer les fonctionnalités de Dynamics 365 Business Central](https://dynamics.microsoft.com/business-central/capabilities/)  

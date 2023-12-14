@@ -8,10 +8,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 'client, customer, credit'
 ms.search.form: '7, 21, 22, 33, 42, 43, 367, 368, 369, 461, 512, 785, 1330, 1380, 1381, 1382, 1627, 2107, 7177, 9080, 9081, 9084, 9301, 9305'
-ms.date: 09/01/2022
+ms.date: 11/01/2023
 ms.author: bholtorf
 ---
-# <a name="register-new-customers"></a>Enregistrer de nouveaux clients
+# Enregistrement de nouveaux clients
 
 Les clients sont l’origine de vos revenus. Chaque client auquel vous vendez un élément doit être enregistré en tant que fiche client. Les fiches client contiennent les informations nécessaires à la vente de biens au client. Pour plus d’informations, voir [Facturer des ventes](sales-how-invoice-sales.md) et [Enregistrer de nouveaux articles](inventory-how-register-new-items.md).  
 
@@ -20,7 +20,7 @@ Avant de pouvoir enregistrer de nouveaux clients, vous devez configurer divers c
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3PZsM]
 
-## <a name="add-new-customers"></a>Ajout de nouveaux clients
+## Ajouter des nouveaux clients
 
 Vous pouvez ajouter de nouveaux clients manuellement, en remplissant les champs sur la page **Fiche client**, ou vous pouvez utiliser des modèles contenant des informations prédéfinies. Par exemple, vous pouvez créer un modèle pour différents types de profils de client. L’utilisation de modèles permet de gagner du temps lors de l’ajout de nouveaux clients et permet de garantir que les informations sont correctes à chaque fois. 
 
@@ -35,15 +35,15 @@ Après avoir créé un modèle, vous pouvez utiliser l’action **Appliquer le m
 
 Vous pouvez également créer un client à partir d'un contact. Pour plus d’informations, reportez-vous à la section [Pour créer un contact comme client, fournisseur, employé ou compte bancaire à partir d’un contact](marketing-create-contact-companies.md#to-create-a-customer-vendor-employee-or-bank-account-from-a-contact).  
 
-### <a name="to-create-a-new-customer-card"></a>Pour créer une fiche client
+### Pour créer une fiche client
 
 [!INCLUDE[create_new_customer](includes/create_new_customer.md)]
 
-L'action **Prix et escomptes** fournit des options pour gérer des prix spéciaux ou des escomptes pour le client lorsqu’une commande répond à certains critères. Exemples de critères : moment où ils achètent un certain article, commandent une quantité minimale ou achètent avant une date, par exemple à la fin d’une promotion. Pour plus d'informations, voir [Enregistrement des prix de vente, des escomptes et des ententes sur les paiements](sales-how-record-sales-price-discount-payment-agreements.md).
+L'action **Prix et escomptes** fournit des options pour gérer des prix spéciaux ou des escomptes pour le client lorsqu’une commande répond à certains critères. L'achat d'un certain article, la commande d'une quantité minimale ou l'achat avant une date, comme la fin d’une promotion, parmisont des exemples de ces critères. Pour plus d'informations, voir [Enregistrement des prix de vente, des escomptes et des ententes sur les paiements](sales-how-record-sales-price-discount-payment-agreements.md).
 
 Le client est désormais enregistré, et la fiche client est prête à être utilisée sur les documents vente.  
 
-### <a name="to-save-the-customer-card-as-a-template"></a>Pour enregistrer la fiche client en tant que modèle
+### Pour enregistrer la fiche client en tant que modèle
 
 Si vous souhaitez utiliser cette fiche client comme modèle lorsque vous créez de nouvelles fiches client, enregistrez-la comme modèle.
 
@@ -51,25 +51,25 @@ Si vous souhaitez utiliser cette fiche client comme modèle lorsque vous créez 
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 3. Pour réutiliser les axes analytiques dans les modèles, sélectionnez l'action **Axes analytiques**. La page **Modèles dimension** s’ouvre et affiche tous les codes dimension qui sont définis pour le client.
 4. Modifiez ou entrez les codes dimension s’appliquant aux nouvelles fiches client créées à l’aide du modèle.  
-5. Lorsque vous avez terminé le nouveau modèle client, cliquez sur le bouton **OK**.
+5. Lorsque vous terminez le nouveau modèle client, cliquez sur le bouton **OK**.
 
 Le modèle client est ajouté à la liste des modèles client. Vous pouvez ainsi l’utiliser pour créer des fiches client.
 
-## <a name="delete-customer-cards"></a>Suppression de fiches client
+## Supprimer de fiches client
 
-Si vous avez reporté une transaction pour un client, vous ne pouvez pas supprimer la fiche client, car les écritures peuvent être nécessaires pour l’audit. Pour supprimer des fiches client avec des écritures, contactez votre partenaire Microsoft pour le faire via le code.  
+Si vous reportez une transaction pour un client, vous ne pouvez pas supprimer la fiche client car les écritures peuvent être nécessaires pour l’audit. Pour supprimer des fiches client avec des écritures, contactez votre partenaire Microsoft pour le faire via le code.  
 
-## <a name="manage-credit-limits"></a>Gestion des limites de crédit
+## Gérer des limites de crédit
 
 Les limites de crédit, les soldes échus et les modalités de paiement permettent à [!INCLUDE [prod_short](includes/prod_short.md)] d’émettre une alerte limite de crédit ou solde échu lorsque vous entrez un document de vente. De plus, les éléments conditions de rappel et conditions frais financiers vous permettent de facturer des intérêts et des frais supplémentaires.  
 
-Le champ **Limite de crédit** sur une fiche client spécifie le montant maximal de dépassement du solde de paiement que vous autorisez au client avant que des alertes ne soient émises. Ensuite, lorsque vous saisissez des informations dans des journaux, des devis, des commandes et des factures, [!INCLUDE [prod_short](includes/prod_short.md)] teste l’en-tête vente et les lignes vente individuelles pour voir si la limite de crédit a été dépassée.
+Le champ **Limite de crédit** sur une fiche client spécifie le montant maximal de dépassement du solde de paiement que vous autorisez au client avant que des alertes ne soient émises. Quand vous saisissez des informations dans des journaux, des devis, des commandes et des factures, [!INCLUDE [prod_short](includes/prod_short.md)] teste l’en-tête vente et les lignes vente individuelles pour déterminer si la limite de crédit est dépassée.
 
-Vous pouvez reporter même si la limite de crédit a été dépassée. Si vous laissez le champ blanc, il n’y a pas de limite de crédit pour ce client.  
+Vous pouvez effectuer un report même si la limite de crédit est dépassée. Un champ vide signifie qu’il n’y a pas de limite de crédit pour ce client.  
 
-Vous pouvez choisir de ne pas afficher les alertes vous indiquant que la limite de crédit du client a été dépassée et vous pouvez spécifier les types d’avertissement que vous souhaitez voir.
+Vous pouvez choisir de ne pas recevoir les avertissements quand la limite de crédit du client est dépassée et vous pouvez spécifier les types d’avertissement que vous souhaitez voir.
 
-### <a name="to-specify-credit-limit-warnings"></a>Pour spécifier les alertes limite de crédit
+### Pour spécifier les alertes limite de crédit
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.
 
@@ -82,7 +82,7 @@ Vous pouvez choisir de ne pas afficher les alertes vous indiquant que la limite 
     |**Solde échu**|Le champ **Solde dû** de la fiche client est contrôlé et une alerte s’affiche si le client a un solde échu.|
     |**Aucune alerte**|Aucune alerte de crédit n’est affichée sur l'état du client.|
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Définition des modes de règlement](finance-payment-methods.md)  
 [Fusion des enregistrements en double](sales-how-merge-duplicate-records.md)  

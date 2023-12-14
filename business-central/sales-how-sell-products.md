@@ -8,10 +8,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: 'trade, partial deliveries, customer sales order, shipping advice, partial shipments,'
 ms.search.form: '42, 48, 9305'
-ms.date: 09/02/2022
+ms.date: 11/03/2023
 ms.author: bholtorf
 ---
-# <a name="sell-products-with-a-customer-sales-order"></a>Vente de produits avec un document de vente client
+# Vendre des produits avec un document de vente client
 
 Cet article fournit des conseils aux utilisateurs sur le moment d’utiliser un document de vente plutôt qu’une simple facture. Si votre processus de vente exige que vous ne livriez que partiellement une commande, par exemple si la quantité totale n’est pas disponible d’un coup, vous devez traiter cette vente en créer un document de vente.
 
@@ -19,11 +19,11 @@ Vous devez également utiliser les documents de vente si vous commercialisez des
 
 Lorsque vous livrez les produits, entièrement ou partiellement, vous reportez le document de vente comme étant livré ou livré et facturé pour créer les écritures article et client associées dans votre système. Lorsque vous reportez le document de vente, vous pouvez également envoyer par courriel le document en pièce jointe au format PDF. Vous pouvez faire en sorte que le corps du message soit prérempli avec un résumé des informations de commande et de paiement, par exemple un lien vers Paypal. Pour plus d’informations, voir [Livrer des articles](warehouse-how-ship-items.md) et [Envoyer des documents par courriel](ui-how-send-documents-email.md).
 
-Dans les environnements d'entreprise où le client paie immédiatement, par exemple par PayPal ou en espèces, le paiement est enregistré immédiatement lorsque vous reportez le document de vente comme facturé, c'est-à-dire la facture vente reportée est fermée comme entièrement affectée. Vous sélectionnez la méthode appropriée dans le champ **Code mode de paiement** du document de vente. Reportez-vous à l'étape 5 ci-dessous. Pour les paiements électroniques, tels que PayPal, vous devez également renseigner le champ **Service de paiement**. En savoir plus, [Activer les paiements client via les services de paiement](sales-how-enable-payment-service-extensions.md).
+Dans les environnements d’entreprise où le client paie immédiatement, comme par PayPal ou en espèces, le paiement est enregistré immédiatement lorsque vous reportez la facture vente, ce qui signifie que la facture vente reportée est fermée comme entièrement affectée. Vous sélectionnez la méthode appropriée dans le champ **Code mode de paiement** du document de vente. Reportez-vous à l'étape 5 ci-dessous. Pour les paiements électroniques, tels que PayPal, vous devez également renseigner le champ **Service de paiement**. En savoir plus, [Activer les paiements client via les services de paiement](sales-how-enable-payment-service-extensions.md).
 
 Vous pouvez même créer des commandes à paiement direct pour les clients non enregistrés en configurant une fiche « client en espèces », vers laquelle vous pointez sur le document de vente. En savoir plus sur [Configurer les clients effectuant un achat au comptoir](finance-how-to-set-up-cash-customers.md).
 
-## <a name="create-a-sales-order"></a>Créer un document de vente
+## Créer un document de vente
 
 > [!NOTE]  
 > La procédure suivante suppose que le client est déjà configuré. Pour obtenir des instructions sur la façon de procéder, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).
@@ -42,7 +42,7 @@ Vous pouvez même créer des commandes à paiement direct pour les clients non e
     Vous êtes maintenant prêt à renseigner les lignes document de vente avec les articles en inventaire ou les services que vous voulez que le client achète.
 
     Si vous avez défini des lignes vente récurrentes pour le client, tel qu’un ordre de réapprovisionnement mensuel, vous pouvez insérer ces lignes sur la commande par l’intermédiaire de l’action **Extraire les lignes vente récurrentes**.
-5. Sous le raccourci **Lignes**, dans le champ **Type**, sélectionnez le type de produit, de frais ou de transaction à reporter pour le client sur la ligne vente.
+5. Sous le raccourci **Lignes**, dans le champ **Type**, sélectionnez le type de produit, de frais ou de transaction que vous reportez pour le client sur la ligne vente.
 
 6. Dans le champ **N°**, saisissez le numéro d’un article inventaire ou d’un service.
 
@@ -60,7 +60,7 @@ Vous pouvez même créer des commandes à paiement direct pour les clients non e
     Le prix et les montants ligne sont affichés avec ou sans la Sales Tax en fonction de la valeur que vous avez sélectionné dans le champ **Prix incluant les taxes** de la fiche client.
 8. Dans le champ **% remise ligne**, saisissez un pourcentage si vous souhaitez accorder au client une remise sur le produit. La valeur du champ **Montant ligne** est mise à jour en conséquence.
 
-    Si vous avez défini des prix article spéciaux sur le raccourci **Prix vente et escomptes ligne vente** dans la fiche client ou article, le prix et le montant de la ligne devis sont automatiquement mis à jour si les critères de prix convenus sont réunis. Pour plus d'informations, voir [Enregistrement des prix de vente, des escomptes et des ententes sur les paiements](sales-how-record-sales-price-discount-payment-agreements.md).
+    Si vous définissez des prix article spéciaux sur le raccourci **Prix vente et escomptes ligne vente** dans la fiche client ou article, et après avoir satisfait aux critères de prix, le prix et le montant de la ligne vente sont automatiquement mis à jour. Pour plus d'informations, voir [Enregistrement des prix de vente, des escomptes et des ententes sur les paiements](sales-how-record-sales-price-discount-payment-agreements.md).
 9. Pour ajouter un commentaire sur la ligne commande que le client peut afficher dans le document de vente imprimé, saisissez un commentaire sur une ligne vierge, dans le champ **Description**.  
 10. Répétez les étapes 5 à 9 pour chaque article que vous souhaitez vendre au client.
 
@@ -73,7 +73,7 @@ Vous pouvez même créer des commandes à paiement direct pour les clients non e
 
 11. Dans le champ **Montant d’escompte de la facture**, vous pouvez entrer un montant qui doit être déduit de la valeur indiquée dans le champ **Total TTC**.
 
-    Si vous avez défini des escomptes facture pour le client, le pourcentage spécifié est automatiquement inséré dans le champ **% escompte facture** si les critères sont réunis, et le montant associé est inséré dans le champ **Montant escompte facture sans TVA**. Pour plus d'informations, voir [Enregistrement des prix de vente, des escomptes et des ententes sur les paiements](sales-how-record-sales-price-discount-payment-agreements.md).
+    Si vous définissez des escomptes facture pour le client et en respectant les critères, le pourcentage spécifié est automatiquement inséré dans le champ **% escompte facture**. Et le montant correspondant est inséré dans le champ **Montant escompte facture sans TVA**. Pour plus d'informations, voir [Enregistrement des prix de vente, des escomptes et des ententes sur les paiements](sales-how-record-sales-price-discount-payment-agreements.md).
 12. Pour livrer seulement une partie de la quantité commandée, entrez la quantité dans le champ **Qté à livrer**. La valeur est copiée automatiquement dans le champ **Qté à facturer**.
 
     > [!NOTE]
@@ -85,13 +85,13 @@ Vous pouvez même créer des commandes à paiement direct pour les clients non e
 
 La boîte de dialogue **Valider et envoyer la confirmation** s'ouvre et indique le mode de réception de documents par défaut du client. Vous pouvez modifier le mode d'envoi en cliquant sur le bouton de recherche pour le champ **Envoyer le document à**. En savoir plus, [Configurer des profils d’envoi de documents](sales-how-setup-document-send-profiles.md).
 
-Les écritures article et client associées sont à présent créées dans votre système, et le document de vente est sorti en tant que document au format PDF. Lorsque le document de vente est entièrement reporté, il est supprimé de la liste des documents de vente et remplacé par de nouveaux documents dans la liste des factures vente reportées et la liste des livraisons vente reportées.  
+Les écritures article et client associées sont à présent créées dans votre système, et le document de vente est sorti en tant que document au format PDF. Une fois le document de vente entièrement reporté, il est supprimé de la liste des documents vente et remplacé par de nouveaux documents dans la liste des factures vente et des livraisons vente.  
 
-## <a name="external-document-number"></a>Numéro de document externe
+## Numéro de document externe
 
 [!INCLUDE [ext-doc-no-sales](includes/ext-doc-no-sales.md)]
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Facturation des ventes](sales-how-invoice-sales.md)  
 [Validation des ventes](ui-post-sales.md)  

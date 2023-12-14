@@ -10,14 +10,14 @@ ms.custom: bap-template
 ms.search.keywords: 'move, warehouse'
 ms.search.forms: '5746, 5745, 5759, 5753, 5743, 5758, 5752, 5744, 5749, 5740, 5741, 5742, 5757, 5748, 5747, 9285, 5756, 5755'
 ---
-# <a name="transfer-inventory-between-locations"></a>Transfert d'inventaire entre des emplacements
+# Transfert d'inventaire entre des emplacements
 
 Vous pouvez transférer des articles en inventaire entre des emplacements en créant des ordres de transfert. Vous pouvez également utiliser le journal reclassement article.
 
 > [!NOTE]
 > Pour transférer des articles, vous devez configurer des emplacements et des acheminements transfert. Pour en savoir plus sur la configuration des emplacements, voir [Configurer des emplacements](inventory-how-setup-locations.md). Vous ne pouvez pas utiliser d’ordres de transfert pour des emplacements *vides*.
 
-## <a name="transfer-orders"></a>Ordres de transfert
+## Ordres de transfert
 
 Vous pouvez livrer un transfert sortant à partir d’un emplacement et recevoir un transfert entrant à destination. Vous pouvez :
 
@@ -26,7 +26,7 @@ Vous pouvez livrer un transfert sortant à partir d’un emplacement et recevoir
 * Utilisez différentes fonctionnalités d’entrepôt pour les emplacements entrants et sortants.
 * Avec certaines limitations, vous pouvez utiliser des ordres de transfert pour les transferts directs.
 
-## <a name="item-reclassification-journals"></a>Journaux reclassement article
+## Journaux reclassement article
 
 * Transfert simple et direct d’articles entre emplacements.
 * Déplacez les articles entre zones. Pour en savoir plus sur le transfert d’articles entre zones, consultez [Déplacer des articles non planifiés dans les configurations de stockage de base](warehouse-how-to-move-items-ad-hoc-in-basic-warehousing.md)
@@ -35,7 +35,7 @@ Vous pouvez livrer un transfert sortant à partir d’un emplacement et recevoir
 * Reclasser les articles d’un emplacement *vide* vers un emplacement réel.
 * Les activités d’entrepôt ne sont pas gérées. Des écritures entrepôt seront créées.
 
-## <a name="to-transfer-items-with-a-transfer-order"></a>Pour transférer des articles avec un ordre de transfert
+## Pour transférer des articles avec un ordre de transfert
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Ordres de transfert**, puis sélectionnez le lien associé.
 2. Sur la page **Ordre de transfer**, renseignez les champs comme nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -60,7 +60,7 @@ Vous pouvez livrer un transfert sortant à partir d’un emplacement et recevoir
     En tant que magasinier dans l'emplacement provenance transfert, continuez à recevoir les articles. Les lignes Ordre transfert sont les mêmes que lors de la livraison et ne peuvent pas être modifiées.
 5. Cliquez sur **Valider**, choisissez l'option **Réception**, puis cliquez sur le bouton **OK**.
 
-### <a name="post-multiple-transfer-orders-in-a-batch"></a>Reporter plusieurs ordres transfert dans un lot
+### Reporter plusieurs ordres transfert dans un lot
 
 La procédure suivante explique comment reporter plusieurs ordres transfert dans un lot.
 
@@ -80,7 +80,7 @@ La procédure suivante explique comment reporter plusieurs ordres transfert dans
     > [!NOTE]
     > Le report de plusieurs documents peut prendre un certain temps et bloquer d’autres utilisateurs. Envisagez d’activer le report en arrière-plan. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](/dynamics365/business-central/admin-job-queues-schedule-tasks).
 
-### <a name="schedule-a-job-queue-entry-to-post-multiple-documents-in-a-batch"></a>Programmer une entrée dans la file d’attente des travaux pour reporter plusieurs documents dans un lot
+### Programmer une entrée dans la file d’attente des travaux pour reporter plusieurs documents dans un lot
 
 Vous pouvez également utiliser la file d’attente des travaux pour programmer le report à un moment qui convient à votre organisation. Par exemple, il peut sembler raisonnable dans votre activité d’exécuter certaines routines lorsque la plupart de la saisie de données de la journée est achevée.
 
@@ -100,7 +100,7 @@ La procédure suivante décrit comment configurer le rapport **TPL ordres de tra
 8. Dans le champ **Heure début**, entrez **16 h 00**.
 9. Choisissez l'action **Attribuer l'état Prêt**.
 
-## <a name="to-transfer-items-with-the-item-reclassification-journal"></a>Pour transférer des articles avec le journal reclassement article
+## Pour transférer des articles avec le journal reclassement article
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux reclassement article**, puis choisissez le lien associé.
 2. Sur la page **Journal reclassement article**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -113,7 +113,7 @@ La procédure suivante décrit comment configurer le rapport **TPL ordres de tra
 
     [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
 
-## <a name="undo-a-transfer-shipment"></a>Annuler une livraison transfert
+## Annuler une livraison transfert
 
 Si vous trouvez une erreur dans une quantité sur un ordre transfert reporté, tant que la livraison n’est pas reçue, vous pouvez facilement corriger la quantité. Sur la page **Livraison de transfert validée**, l’action **Annuler la livraison** crée des lignes correctives, comme suit :
 
@@ -125,7 +125,7 @@ Si la quantité a été livrée dans une livraison entrepôt, une ligne de corre
 
 Pour terminer la correction, rouvrez l’ordre transfert, entrez la quantité correcte, puis reportez l’ordre. Si la commande doit être expédiée à l’aide d’une livraison entrepôt, créez et reportez une livraison entrepôt.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion du stock](inventory-manage-inventory.md)  
 [Configurer des emplacements](inventory-how-setup-locations.md)  
