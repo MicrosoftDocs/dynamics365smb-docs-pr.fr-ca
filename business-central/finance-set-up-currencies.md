@@ -8,7 +8,7 @@ ms.search.form: '5, 118'
 ms.date: 03/15/2022
 ms.author: bholtorf
 ---
-# Configurer des devises
+# <a name="set-up-currencies"></a>Configurer des devises
 
 [!INCLUDE [finance-currencies-def](includes/finance-currencies-def.md)]
 
@@ -16,7 +16,7 @@ Utilisez un service externe pour obtenir les derniers taux de change des devises
 
 [!INCLUDE [finance-currencies-lcy](includes/finance-currencies-lcy-note.md)]
 
-## <a name="curr"></a>Devises
+## <a name="currencies"></a><a name="curr"></a>Devises
 
 Le tableau suivant décrit les champs de la liste **Devises**.
 
@@ -52,7 +52,7 @@ Le tableau suivant décrit les champs de la liste **Devises**.
 |**Différence TVA max. autorisée**|Montant maximum autorisé pour les différences de TVA dans cette devise. Pour plus d’informations, consultez [Correction manuelle des montants de TVA dans des documents achat et vente](finance-work-with-vat.md#correcting-vat-amounts-manually-on-sales-and-purchase-documents). Par défaut, ce champ peut ne pas être visible. Il peut être récupéré en personnalisant la page.|
 |**Type arrondissement TVA**|Spécifie la méthode d’arrondissement pour corriger manuellement les montants TVA dans les documents vente et achat. Par défaut, ce champ peut ne pas être visible. Il peut être récupéré en personnalisant la page.|
 
-### Fonctions de devise disponibles
+### <a name="available-currency-functions"></a>Fonctions de devise disponibles
 
 Le tableau suivant décrit les actions clés sur la page **Devises**.  
 
@@ -67,11 +67,11 @@ Le tableau suivant décrit les actions clés sur la page **Devises**.
 ||**Mettre à jour les taux de change**|Obtenez les récents taux de change des devises auprès d’un fournisseur de services.|
 |**Rapports**|**Solde devise étrangère**|Affichez les soldes de tous les clients et fournisseurs en devise étrangère et en devise locale ($). Le rapport affiche deux soldes en $. L’un correspond au solde en devise étrangère converti en $ en utilisant le taux de change en vigueur au moment de la transaction. L’autre correspond au solde en devise étrangère converti en $ en utilisant le taux de change à la date de travail.|
 
-## $ et autres devises
+## <a name="lcy-and-other-currencies"></a>$ et autres devises
 
 [!INCLUDE [finance-currencies-lcy-def](includes/finance-currencies-lcy-def.md)]
 
-## Arrondissement des devises
+## <a name="rounding-currencies"></a>Arrondissement des devises
 
 Pour gérer les devises qui n’utilisent pas de décimales et pour éviter l’emploi de décimales inutiles dans les devises étrangères, vous pouvez utiliser deux fonctions d’arrondissement différentes :
 
@@ -83,35 +83,35 @@ Ces fonctions peuvent fonctionner indépendamment ou conjointement. En outre, le
 
 Contrairement aux fonctions arrondissement facture, les fonctions arrondissement montant et arrondissement montant unité affectent uniquement les comptes en devise étrangère et non les montants correspondants en $. Ces deux fonctions n’entraînent pas de report dans les comptes GL. C’est pourquoi aucun compte GL ne doit être spécifié dans les groupes de report ou dans d’autres emplacements.
 
-### Arrondissement montant unité
+### <a name="unit-amount-rounding"></a>Arrondissement montant unité
 
 La fonction arrondissement montant unité contrôle la manière dont les prix de vente des articles et ressources en devises étrangères sont arrondis sur les lignes vente et achat. Vous devez spécifier les règles de chaque devise séparément dans le champ **Précis. arrondissement montant unité** de la liste **Devises**.
 
 La fonction arrondissement du montant unité est utilisée automatiquement chaque fois que vous saisissez un article ou un numéro de ressource sur une ligne vente. Si la facture est pour un client avec un code devise, le prix des articles et des ressources est converti dans la devise du client. Le prix est arrondi en fonction de la précision d’arrondissement du montant unité de la devise.
 
-### Arrondissement montant
+### <a name="amount-rounding"></a>Arrondissement montant
 
 La fonction arrondissement montant contrôle la manière dont les montants en devises étrangères sont arrondis sur les lignes journal général, vente et achat. Vous devez spécifier les règles de chaque devise séparément dans le champ **Précis. arrondissement montant** de la liste **Devises**.
 
 Les montants en devises étrangères sont arrondis lorsque vous renseignez et reportez les lignes journal général, vente et achat.
 
-## Taux de change
+## <a name="exchange-rates"></a>Taux de change
 
 Vous pouvez enregistrer les taux de change de chaque devise étrangère et spécifier les dates à partir desquelles ces taux sont valables. Par exemple, vous pouvez saisir le taux de change pour chaque devise tous les jours, tous les mois ou tous les trimestres.
 
 Vous pouvez conserver les taux de change historiques sur la page **Taux de change devise** à titre de référence. Lorsque vous avez besoin de mettre à jour les taux de change, vous pouvez utiliser le bouton **Mettre à jour les taux de change** pour obtenir les derniers taux de change de la part d’un fournisseur de service externe.
 
-## Comptes GL
+## <a name="general-ledger-accounts"></a>Comptes GL
 
 Vous ne pouvez pas associer de codes devise aux comptes GL car les montants de ces derniers sont en $. Si vous disposez d’un prêt bancaire en USD et placez des acomptes dans un compte bancaire en SEK, vous pouvez suivre ces comptes en configurant les comptes bancaires en USD et SEK. Avec les groupes de report, vous pouvez associer les comptes aux comptes GL appropriés. Dans le grand livre, la valeur des montants est indiquée en $.
 
 Vous pouvez entrer un code devise sur une ligne journal général et reporter celle-ci dans un compte GL. Le taux de change adéquat permet de convertir le montant en $ avant son report dans le compte GL.  
 
-## Exemple de transaction en devise comptabilité
+## <a name="example-of-a-receivable-currency-transaction"></a>Exemple de transaction en devise comptabilité
 
 [!INCLUDE [finance-currencies-example](includes/finance-currencies-example.md)]
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Mettre à jour des taux de change devise](finance-how-update-currencies.md)  
 [Configurer une devise de report additionnelle](finance-how-setup-additional-currencies.md)  

@@ -11,7 +11,7 @@ ms.search.form: '42, 48, 9305'
 ms.date: 11/03/2023
 ms.author: bholtorf
 ---
-# Vendre des produits avec un document de vente client
+# <a name="sell-products-with-a-customer-sales-order"></a>Vendre des produits avec un document de vente client
 
 Cet article fournit des conseils aux utilisateurs sur le moment d’utiliser un document de vente plutôt qu’une simple facture. Si votre processus de vente exige que vous ne livriez que partiellement une commande, par exemple si la quantité totale n’est pas disponible d’un coup, vous devez traiter cette vente en créer un document de vente.
 
@@ -23,7 +23,7 @@ Dans les environnements d’entreprise où le client paie immédiatement, comme 
 
 Vous pouvez même créer des commandes à paiement direct pour les clients non enregistrés en configurant une fiche « client en espèces », vers laquelle vous pointez sur le document de vente. En savoir plus sur [Configurer les clients effectuant un achat au comptoir](finance-how-to-set-up-cash-customers.md).
 
-## Créer un document de vente
+## <a name="create-a-sales-order"></a>Créer un document de vente
 
 > [!NOTE]  
 > La procédure suivante suppose que le client est déjà configuré. Pour obtenir des instructions sur la façon de procéder, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).
@@ -87,11 +87,11 @@ La boîte de dialogue **Valider et envoyer la confirmation** s'ouvre et indique 
 
 Les écritures article et client associées sont à présent créées dans votre système, et le document de vente est sorti en tant que document au format PDF. Une fois le document de vente entièrement reporté, il est supprimé de la liste des documents vente et remplacé par de nouveaux documents dans la liste des factures vente et des livraisons vente.  
 
-## Numéro de document externe
+## <a name="external-document-number"></a>Numéro de document externe
 
 [!INCLUDE [ext-doc-no-sales](includes/ext-doc-no-sales.md)]
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Facturation des ventes](sales-how-invoice-sales.md)  
 [Validation des ventes](ui-post-sales.md)  

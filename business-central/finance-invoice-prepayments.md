@@ -10,7 +10,7 @@ ms.search.form: '42, 42, 48, 50, 52, 9305, 9307'
 ms.date: 12/03/2021
 ms.author: bholtorf
 ---
-# Facturation de paiements anticipés
+# <a name="invoicing-prepayments"></a>Facturation de paiements anticipés
 
 [!INCLUDE [prepayment_def](includes/prepayment_def.md)]
 
@@ -29,7 +29,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Créer une commande, ajuster des montants paiement anticipé et émettre une facture pour les montants paiement anticipé.|[Créer des factures de paiement anticipé](finance-how-to-create-prepayment-invoices.md)|  
 |Émettre une facture paiement anticipé supplémentaire, pour des articles supplémentaires ou pour un paiement anticipé supplémentaire dans la commande originale, ou émettre une note de crédit paiement anticipé.|[Corriger des paiements anticipés](finance-how-to-correct-prepayments.md)|  
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Procédure pas à pas : configuration et facturation d'acomptes](walkthrough-setting-up-and-invoicing-sales-prepayments.md)  
 [Finance](finance.md)  
