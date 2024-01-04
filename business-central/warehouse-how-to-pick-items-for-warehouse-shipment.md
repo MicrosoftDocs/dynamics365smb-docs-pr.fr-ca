@@ -10,7 +10,7 @@ ms.date: 09/11/2023
 ms.custom: bap-template
 ms.search.forms: '7335, 7339, 7345,'
 ---
-# <a name="pick-items-for-warehouse-shipment"></a>Prélever des articles pour une livraison entrepôt
+# Prélever des articles pour une livraison entrepôt
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], vous prélevez et livrez des articles en utilisant l’une des quatre méthodes décrites dans le tableau suivant.
 
@@ -39,11 +39,11 @@ Vous ne pouvez pas créer un document de prélèvement en entrepôt à partir de
 >  
 > Pour en savoir plus sur le prélèvement de composantes pour les ordres d’assemblage, notamment les situations où les éléments d’assemblage ne sont pas associés à une livraison vente, voir [Prélever pour la fabrication, l’assemblage ou les tâches dans les configurations de stockage avancées](warehouse-how-to-pick-for-internal-operations-in-advanced-warehousing.md).  
 
-## <a name="check-whether-items-are-available-for-picking"></a>Vérifier si les articles sont disponibles pour le prélèvement
+## Vérifier si les articles sont disponibles pour le prélèvement
 
 [!INCLUDE [inventory-availability-overview](includes/inventory-availability-overview.md)]
 
-## <a name="to-create-pick-documents-in-bulk-with-the-pick-worksheet"></a>Pour créer des documents de prélèvement en bloc avec la feuille prélèvement
+## Pour créer des documents de prélèvement en bloc avec la feuille prélèvement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille prélèvement**, puis choisissez le lien associé.  
 
@@ -66,7 +66,7 @@ Vous ne pouvez pas créer un document de prélèvement en entrepôt à partir de
 6. Si nécessaire, modifiez les lignes. Vous pouvez aussi supprimer des lignes pour rendre le prélèvement plus efficace. Par exemple, si plusieurs lignes comportent des articles situés dans des zones de transbordement, vous pouvez créer un prélèvement pour toutes les lignes. Les articles transbordés seront livrés avec les autres articles de la livraison, et les zones de transbordement pourront à nouveau recevoir d’autres articles entrants.  
 
     > [!NOTE]  
-    >  Si vous supprimez des lignes, elles sont uniquement supprimées de la feuille. Elles ne sont pas supprimées de la liste de sélection de prélèvement.  
+    >  Si vous supprimez des lignes, elles sont supprimées de la feuille. Elles ne sont pas supprimées de la liste de sélection de prélèvement.  
 
 7. Choisissez l'action **Créer prélèvement**. La page **Créer prélèvement** s’ouvre, où vous pouvez ajouter plus d’informations au prélèvement que vous créez. Spécifiez la façon de combiner les lignes prélèvement dans les documents prélèvement en sélectionnant l’une des options suivantes.  
 
@@ -93,7 +93,7 @@ Vous ne pouvez pas créer un document de prélèvement en entrepôt à partir de
 
 8. Cliquez sur **OK**. [!INCLUDE [prod_short](includes/prod_short.md)] créera le prélèvement en fonction de vos sélections.  
 
-## <a name="to-pick-items-for-a-warehouse-shipment"></a>Pour prélever des articles pour une livraison entrepôt
+## Pour prélever des articles pour une livraison entrepôt
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvements entrepôt**, puis choisissez le lien associé.  
 
@@ -115,13 +115,13 @@ Vous ne pouvez pas créer un document de prélèvement en entrepôt à partir de
 
 Vous pouvez alors apporter les articles au quai de chargement et reporter la livraison, dont le document source lié, sur la page **Livraison entrepôt**. Pour en savoir plus, voir [Livrer des articles](warehouse-how-ship-items.md).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
-[Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
-[Inventaire](inventory-manage-inventory.md)  
-[Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
-[Gestion d'assemblage](assembly-assemble-items.md)    
-[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+- [Vue d’ensemble de la gestion d’entrepôt](design-details-warehouse-management.md)
+- [Gestion du stock](inventory-manage-inventory.md)  
+- [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)     
+- [Gestion d'assemblage](assembly-assemble-items.md)    
+- [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

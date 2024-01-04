@@ -11,7 +11,7 @@ ms.search.form: '7, 21, 22, 33, 42, 43, 367, 368, 369, 461, 512, 785, 1330, 1380
 ms.date: 11/01/2023
 ms.author: bholtorf
 ---
-# <a name="register-new-customers"></a>Enregistrement de nouveaux clients
+# Enregistrement de nouveaux clients
 
 Les clients sont l’origine de vos revenus. Chaque client auquel vous vendez un élément doit être enregistré en tant que fiche client. Les fiches client contiennent les informations nécessaires à la vente de biens au client. Pour plus d’informations, voir [Facturer des ventes](sales-how-invoice-sales.md) et [Enregistrer de nouveaux articles](inventory-how-register-new-items.md).  
 
@@ -20,7 +20,7 @@ Avant de pouvoir enregistrer de nouveaux clients, vous devez configurer divers c
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3PZsM]
 
-## <a name="add-new-customers"></a>Ajouter des nouveaux clients
+## Ajouter des nouveaux clients
 
 Vous pouvez ajouter de nouveaux clients manuellement, en remplissant les champs sur la page **Fiche client**, ou vous pouvez utiliser des modèles contenant des informations prédéfinies. Par exemple, vous pouvez créer un modèle pour différents types de profils de client. L’utilisation de modèles permet de gagner du temps lors de l’ajout de nouveaux clients et permet de garantir que les informations sont correctes à chaque fois. 
 
@@ -35,7 +35,7 @@ Après avoir créé un modèle, vous pouvez utiliser l’action **Appliquer le m
 
 Vous pouvez également créer un client à partir d'un contact. Pour plus d’informations, reportez-vous à la section [Pour créer un contact comme client, fournisseur, employé ou compte bancaire à partir d’un contact](marketing-create-contact-companies.md#to-create-a-customer-vendor-employee-or-bank-account-from-a-contact).  
 
-### <a name="to-create-a-new-customer-card"></a>Pour créer une fiche client
+### Pour créer une fiche client
 
 [!INCLUDE[create_new_customer](includes/create_new_customer.md)]
 
@@ -43,7 +43,7 @@ L'action **Prix et escomptes** fournit des options pour gérer des prix spéciau
 
 Le client est désormais enregistré, et la fiche client est prête à être utilisée sur les documents vente.  
 
-### <a name="to-save-the-customer-card-as-a-template"></a>Pour enregistrer la fiche client en tant que modèle
+### Pour enregistrer la fiche client en tant que modèle
 
 Si vous souhaitez utiliser cette fiche client comme modèle lorsque vous créez de nouvelles fiches client, enregistrez-la comme modèle.
 
@@ -55,11 +55,11 @@ Si vous souhaitez utiliser cette fiche client comme modèle lorsque vous créez 
 
 Le modèle client est ajouté à la liste des modèles client. Vous pouvez ainsi l’utiliser pour créer des fiches client.
 
-## <a name="delete-customer-cards"></a>Supprimer de fiches client
+## Supprimer de fiches client
 
 Si vous reportez une transaction pour un client, vous ne pouvez pas supprimer la fiche client car les écritures peuvent être nécessaires pour l’audit. Pour supprimer des fiches client avec des écritures, contactez votre partenaire Microsoft pour le faire via le code.  
 
-## <a name="manage-credit-limits"></a>Gérer des limites de crédit
+## Gérer des limites de crédit
 
 Les limites de crédit, les soldes échus et les modalités de paiement permettent à [!INCLUDE [prod_short](includes/prod_short.md)] d’émettre une alerte limite de crédit ou solde échu lorsque vous entrez un document de vente. De plus, les éléments conditions de rappel et conditions frais financiers vous permettent de facturer des intérêts et des frais supplémentaires.  
 
@@ -69,7 +69,7 @@ Vous pouvez effectuer un report même si la limite de crédit est dépassée. Un
 
 Vous pouvez choisir de ne pas recevoir les avertissements quand la limite de crédit du client est dépassée et vous pouvez spécifier les types d’avertissement que vous souhaitez voir.
 
-### <a name="to-specify-credit-limit-warnings"></a>Pour spécifier les alertes limite de crédit
+### Pour spécifier les alertes limite de crédit
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.
 
@@ -82,7 +82,7 @@ Vous pouvez choisir de ne pas recevoir les avertissements quand la limite de cr�
     |**Solde échu**|Le champ **Solde dû** de la fiche client est contrôlé et une alerte s’affiche si le client a un solde échu.|
     |**Aucune alerte**|Aucune alerte de crédit n’est affichée sur l'état du client.|
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Définition des modes de règlement](finance-payment-methods.md)  
 [Fusion des enregistrements en double](sales-how-merge-duplicate-records.md)  

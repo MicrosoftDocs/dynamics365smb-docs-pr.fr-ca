@@ -1,7 +1,7 @@
 
 # [Documentation de Business Central](index.yml)
 # [Bienvenue dans Business Central](welcome.md)
-# [Fonctionnalités nouvelles et prévues](/dynamics365/business-central/dev-itpro/whatsnew/overview)
+# [Fonctionnalités nouvelles et prévues](/dynamics365/business-central/dev-itpro/whatsnew/overview?toc=/dynamics365/business-central/toc.json)
 # Démarrer
 ## [Vue d’ensemble des fonctionnalités d’entreprise](across-business-functionality.md)
 <!--### [Get Ready for Doing Business](ui-get-ready-business.md)  -->
@@ -162,7 +162,7 @@
 ### Exécuter et imprimer des rapports
 #### [Exécuter et imprimer des rapports](ui-work-report.md)
 #### [Spécification d’une imprimante par défaut](ui-specify-printer-selection-reports.md)
-#### [Planifier un rapport à exécuter](ui-work-report.md#ScheduleReport)
+#### [Programmer un rapport à exécuter](ui-work-report.md#ScheduleReport)
 #### [Gestion des paramètres enregistrés](reports-saving-reusing-settings.md)
 #### [Afficher des rapports de test avant report](ui-how-view-test-reports-posting.md)
 #### [Exécuter en lot des travaux et des ports XML](ui-how-run-batch-jobs.md)
@@ -180,7 +180,7 @@
 ##### [Importer et exporter des dispositions de rapport personnalisées](ui-how-import-and-export-report-layout.md)
 ##### [Mettre à jour des dispositions de rapport personnalisées](ui-update-report-layouts.md)
 ##### [Définir la disposition utilisée par un rapport](ui-how-change-layout-currently-used-report.md)
-### Partager de données métier
+### Partager des données métier
 #### [Vue d’ensemble](across-share-data-features.md)
 #### [Partager des enregistrements et des liens de page dans Teams](across-working-with-teams.md)
 #### [Partager des fichiers dans OneDrive](across-share-onedrive.md)
@@ -331,8 +331,9 @@
 
 ### Gérer les documents électroniques
 #### [Vue d’ensemble des documents électroniques](finance-edocuments-overview.md)
-#### [Paramétrer les documents électroniques](finance-how-setup-edocuments.md)
-#### [Utiliser des documents électroniques dans les ventes et les achats](finance-how-use-edocuments.md)
+#### [Configuration des documents électroniques](finance-how-setup-edocuments.md)
+#### [Utilisation des documents électroniques dans les ventes et les achats](finance-how-use-edocuments.md)
+#### [Configuration du connecteur de documents électroniques avec des points de terminaison externes](finance-how-setup-edocuments-external.md)
 #### [Extension de la fonctionnalité des documents électroniques](/dynamics365/business-central/dev-itpro/developer/devenv-extend-edocuments)
 
 ### Gestion de la TVA
@@ -483,7 +484,7 @@
 ### [Traitement des ordres de retour vente](sales-how-process-sales-returns-orders.md)
 ### [Correction ou annulation des factures vente impayées](sales-how-correct-cancel-sales-invoice.md)
 ### [Utiliser des commandes permanentes ventes](sales-how-to-create-blanket-sales-orders.md)
-### [Regrouper de bons de livraison sur une seule facture](sales-how-to-combine-shipments-on-a-single-invoice.md)
+### [Regrouper des bons de livraison sur une seule facture](sales-how-to-combine-shipments-on-a-single-invoice.md)
 ### [Calcul des dates promesse commande](sales-how-to-calculate-order-promising-dates.md)
 ### [Suivi des paquets](sales-how-track-packages.md)
 ### [Calcul de la date de livraison des ventes](sales-date-calculation-for-sales.md)
@@ -580,7 +581,7 @@
 #### [Enregistrement automatique des interactions avec les contacts](marketing-auto-record-interactions.md)
 ### Gestion des opportunités de vente
 #### [Opportunités](marketing-manage-sales-opportunities.md)
-#### [Configurer des cycles de vente opportunité et des étapes de cycle](marketing-how-setup-opportunity-sales-cycles-stages.md)
+#### [Configurer des cycles de vente opportunité et des phases de cycle](marketing-how-setup-opportunity-sales-cycles-stages.md)
 #### [Création d’opportunités](marketing-how-create-opportunities.md)
 #### [Suivre les échanges de messages par courriel](marketing-set-up-email-logging.md)
 #### [Traitement des opportunités de vente](marketing-processing-sales-opportunities.md)
@@ -597,7 +598,7 @@
 ## Planification
 ### [Planification de la production](production-planning.md)
 ### [À propos de la fonctionnalité de planification](production-about-planning-functionality.md)
-### [Planifier avec/sans emplacement](production-planning-with-without-locations.md)
+### [Planifier avec ou sans emplacement](production-planning-with-without-locations.md)
 ### [Création d’une prévision](production-how-to-create-a-forecast.md)
 ### [Créer des bons de production à partir de documents de vente](production-how-to-create-production-orders-from-sales-orders.md)
 ### [Planification des nouvelles demandes commandes par commande](production-how-to-plan-for-new-demand.md)
@@ -823,7 +824,7 @@
 ### Canada
 #### [Fonctionnalité locale dans la version canadienne](LocalFunctionality/Canada/canada-local-functionality.md)
 #### Taxe
-##### [Déclarer la taxe sur les biens/services et la taxe de vente harmonisée au Canada](LocalFunctionality/Canada/sales-tax-goods-services.md)
+##### [Déclarer la taxe sur les biens et services et la taxe de vente harmonisée au Canada](LocalFunctionality/Canada/sales-tax-goods-services.md)
 ##### [Déclarer la taxe de vente au Canada](LocalFunctionality/Canada/ca-sales-tax.md)
 ##### [Configurer des taxes de vente non réalisées et des escomptes de paiement de vente](LocalFunctionality/Canada/how-to-set-up-unrealized-sales-tax-and-sales-payment-discounts.md)
 ##### [Configurer la taxe de service et la taxe d’achat](LocalFunctionality/Canada/how-to-set-up-use-tax-and-purchase-tax.md)
@@ -870,9 +871,11 @@
 ### Danemark
 #### [Fonctionnalité locale dans la version danoise](LocalFunctionality/Denmark/denmark-local-functionality.md)
 #### [Notification et inscription au NemHandelsregisteret au Danemark](localfunctionality/denmark/how-to-nemhandel-register.md)
+#### [Configuration de la facturation électronique avec NemHandel](localfunctionality/denmark/how-to-edocuments-nemhadel.md)
+#### [Conserver les données transactionnelles pendant cinq ans au Danemark](localfunctionality/denmark/how-to-keep-data-5years.md)
 #### TVA
 ##### [Imprimer des rapports sur le rapprochement TVA](LocalFunctionality/Denmark/how-to-print-vat-reconciliation-reports.md)
-##### [Rapports VAT-VIES](LocalFunctionality/Denmark/vat-vies-reporting.md)
+##### [Rapports TVA-VIES](LocalFunctionality/Denmark/vat-vies-reporting.md)
 ##### [Configuration du numéro d’immatriculation à la TVA pour Intrastat](LocalFunctionality/Denmark/vat-registration-no-intrastat.md)
 ##### [Envoi des retours TVA par voie électronique](localfunctionality/denmark/how-to-evat-statement-dk.md)
 #### Banque et paiements
@@ -883,7 +886,7 @@
 ##### [Configuration des clients pour OIOUBL](LocalFunctionality/Denmark/how-to-set-up-customers-for-oioubl.md)
 ##### [Configuration de la facturation électronique OIOUBL](LocalFunctionality/Denmark/how-to-set-up-oioubl.md)
 ##### [Extension OIOUBL pour la facturation électronique](LocalFunctionality/Denmark/ui-extensions-oioubl.md)
-##### [Création des documents électroniques dans un format OIOUBL](LocalFunctionality/Denmark/how-to-create-electronic-documents-by-using-oioubl.md)
+##### [Créer des documents électroniques au format OIOUBL](LocalFunctionality/Denmark/how-to-create-electronic-documents-by-using-oioubl.md
 #### Paie
 ##### [Définitions de données de paie (Danemark)](LocalFunctionality/Denmark/ui-extensions-payroll-data-definitions-dk.md)
 #### Pièces justificatives numériques
@@ -992,7 +995,7 @@
 
 ### Inde
 #### [Vue d’ensemble](LocalFunctionality/India/india-local-functionality.md)
-#### [Définir le report des séries de numéros](LocalFunctionality/India/posting-no-series-setup.md)
+#### [Configurer le report des séries de numéros](LocalFunctionality/India/posting-no-series-setup.md)
 #### [Piste d’audit et journaux d’édition pour les logiciels de comptabilité en Inde](LocalFunctionality/India/india-audit-trail-edit-logs-accounting-software.md)
 #### Moteur de taxe
 ##### [Vue d’ensemble](LocalFunctionality/India/TaxEngine-001-Overview.md)  
@@ -1580,12 +1583,12 @@
 #### [Vue d’ensemble de la gestion d’entrepôt](design-details-warehouse-management.md)
 #### [Configurer des types de zone](warehouse-how-to-set-up-bin-types.md)
 #### [Créer des zones](warehouse-how-to-create-individual-bins.md)
-#### [Créer des contenus de zone](warehouse-how-to-set-up-bin-contents.md)
+#### [Créer des contenus de la zone](warehouse-how-to-set-up-bin-contents.md)
 #### [Affecter des zones par défaut à des articles](warehouse-how-to-assign-default-bins-to-items.md)
 #### [Configuration des modèles rangement](warehouse-how-to-set-up-put-away-templates.md)
 #### [Configurer des employés d’entrepôt](warehouse-how-to-set-up-warehouse-employees.md)
 #### [Configurer des emplacements pour utiliser des zones](warehouse-how-to-set-up-locations-to-use-bins.md)
-#### [Convertir des emplacements existants en magasins entrepôts](warehouse-how-to-convert-existing-locations-to-warehouse-locations.md)
+#### [Convertir des emplacements existants en emplacements entrepôt](warehouse-how-to-convert-existing-locations-to-warehouse-locations.md)
 #### [Configuration des entrepôts de base avec les zones d’opérations](warehouse-how-to-set-up-basic-warehouses-with-operations-areas.md)
 #### [Configurer des articles et des emplacements pour prélèvement et rangement suggérés](warehouse-how-to-set-up-items-for-directed-put-away-and-pick.md)
 #### [Activation de la rupture de charge automatique avec prélèvement et rangement dirigés](warehouse-enable-automatic-breaking-bulk-with-directed-put-away-and-pick.md)
@@ -1623,7 +1626,7 @@
 #### [Configuration des meilleures pratiques](set-up-complex-application-areas-using-best-practices.md)
 #### Configuration des meilleures pratiques : planification des approvisionnements
 ##### [Configuration de la planification des approvisionnements](setup-best-practices-supply-planning.md)
-##### [Pratiques de configuration recommandées : Paramètres de planification](setup-best-practices-planning-parameters.md)
+##### [Pratiques de configuration recommandées : paramètres de planification](setup-best-practices-planning-parameters.md)
 ##### [Configuration des meilleures pratiques : configuration de la planification générale](setup-best-practices-global-planning-setup.md)
 ##### [Configuration des meilleures pratiques : méthodes de réapprovisionnement](setup-best-practices-reordering-policies.md)
 #### [Configuration des meilleures pratiques : méthodes d’évaluation des coûts](setup-best-practices-costing-method.md)
