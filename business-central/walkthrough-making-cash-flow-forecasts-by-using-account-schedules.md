@@ -10,11 +10,11 @@ ms.search.keywords: null
 ms.date: 08/18/2022
 ms.author: bholtorf
 ---
-# Procédure pas-à-pas : créer des prévisions de la trésorerie à l’aide de rapports financiers
+# <a name="walkthrough-making-cash-flow-forecasts-using-financial-reports"></a>Procédure pas-à-pas : créer des prévisions de la trésorerie à l’aide de rapports financiers
 
 Cette procédure pas-à-pas décrit comment utiliser la fonctionnalité des rapports financiers pour élaborer des prévisions de la trésorerie. Les rapports financiers procèdent aux calculs qui ne peuvent pas être effectués directement dans le plan comptable de trésorerie. Dans les rapports financiers, vous pouvez configurer des sous-totaux pour les réceptions et les décaissements de trésorerie. Ces sous-totaux peuvent être inclus dans les nouveaux totaux qui peuvent être utilisés pour élaborer des prévisions de la trésorerie.  
 
-## À propos de cette procédure pas à pas
+## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas
 
 Cette procédure pas à pas décrit les tâches suivantes :  
 
@@ -24,28 +24,28 @@ Cette procédure pas à pas décrit les tâches suivantes :
 - Affectation d’une définition de colonne à un rapport financier.  
 - Affichage et impression des prévisions de la trésorerie.  
 
-### Conditions préalables
+### <a name="prerequisites"></a>Conditions préalables
 
 Pour exécuter ce processus pas à pas, vous devez :  
 
 - [!INCLUDE[prod_short](includes/prod_short.md)]  
 - Une feuille d’activité de trésorerie avec lignes enregistrées  
 
-## Rôles
+## <a name="roles"></a>Rôles
 
 Cette procédure pas à pas présente les tâches effectuées par le rôle utilisateur suivant :  
 
 - Contrôleur  
 
-## Scénario
+## <a name="story"></a>Scénario
 
 Ken est un contrôleur chez CRONUS, chargé d'élaborer des prévisions mensuelles de trésorerie. Ken inclut les finances, les ventes, les achats et les immobilisations dans les prévisions, et les présente à CFO Sara dans un souci de visibilité commerciale.  
 
-## Configuration d’un nouveau nom de rapport financier
+## <a name="setting-up-a-new-financial-report-name"></a>Configuration d’un nouveau nom de rapport financier
 
 Le nom du rapport financier est le nom que vous donnez à la prévision de la trésorerie qui comprend une série de lignes définies et une définition de colonne.  
 
-### Configurer un nouveau nom de rapport financier  
+### <a name="set-up-a-new-financial-report-name"></a>Configurer un nouveau nom de rapport financier
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rapports financiers**, puis choisissez le lien associé.  
 2. Sur la page **Rapports financiers**, choisissez **Nouveau** pour créer un nom de rapport financier de trésorerie.  
@@ -53,11 +53,11 @@ Le nom du rapport financier est le nom que vous donnez à la prévision de la tr
 4. Dans le champ **Description**, entrez **Prévision de trésorerie**.  
 5. Laissez les champs **Définition de ligne** et **Définition de colonne** vides.
 
-## Configuration des lignes de définition de ligne
+## <a name="setting-up-row-definition-lines"></a>Configuration des lignes de définition de ligne
 
 Une fois le nom du rapport financier configuré, Ken définit chaque ligne du rapport financier de trésorerie. Ken définit les lignes à afficher dans les rapports en plus de celles destinées uniquement au calcul.  
 
-### Configuration des lignes de définition de ligne  
+### <a name="set-up-row-definition-lines"></a>Configuration des lignes de définition de ligne
 
 1. Sur la page **Rapports financiers**, sélectionnez le nouvel rapport financier **Prévision** que vous avez créé, puis choisissez l’action **Modifier la définition de ligne**.  
 2. Sur la page **Définition de ligne**, entrez chaque ligne comme indiqué dans le tableau suivant.  
@@ -93,7 +93,7 @@ Une fois le nom du rapport financier configuré, Ken définit chaque ligne du ra
     > [!NOTE]
     > Le numéro de ligne R10 est utilisé pour capturer les totaux du compte client. Le numéro de ligne R20 est utilisé pour calculer la somme de tous les règlements. Le numéro de ligne R30 est utilisé pour capturer les totaux du compte fournisseur. Le numéro de ligne R40 est utilisé pour calculer la somme de tous les décaissements. Le numéro de ligne R50 est utilisé pour calculer la somme des excédents. Le numéro de ligne R60 est utilisé pour capturer les fonds liquides. Le numéro de ligne R70 est utilisé pour calculer la trésorerie prévue.
 
-## Configuration d’une nouvelle définition de colonne
+## <a name="setting-up-a-new-column-definition"></a>Configuration d’une nouvelle définition de colonne
 
 Avant de pouvoir imprimer les prévisions de la trésorerie, Ken doit créer la définition de colonne pour les informations numériques. Dans les colonnes, Ken définit les informations qu’il souhaite utiliser dans les lignes.
 
@@ -102,7 +102,7 @@ Avant de pouvoir imprimer les prévisions de la trésorerie, Ken doit créer la 
 - La troisième colonne porte le numéro *C30* avec l’intitulé **Exercice complet** et indique le solde de la période dans les soldes pour l’exercice financier complet.  
 - Pour finir, Ken définit la définition de colonne par défaut pour le rapport financier **Prévision**.  
 
-### Configurer une nouvelle définition de colonne
+### <a name="set-up-a-new-column-definition"></a>Configurer une nouvelle définition de colonne
 
 1. Sur la page **Rapports financiers**, sélectionnez le nom du nouveau rapport financier **Prévision** que vous venez de créer. Sous l’onglet **Accueil**, dans le groupe **Processus**, choisissez **Modifier la définition de colonne**.
 
@@ -118,22 +118,22 @@ Avant de pouvoir imprimer les prévisions de la trésorerie, Ken doit créer la 
     |C20|Montant jusque date|Solde au|Écritures|Montant net|Toujours|  
     |C30|Exercice financier complet|Exercice financier complet|Écritures|Montant net|Toujours|
 
-## Affectation d’une définition de colonne au nom de rapport financier
+## <a name="assigning-the-column-definition-to-the-financial-report-name"></a>Affectation d’une définition de colonne au nom de rapport financier
 
 Ken est désormais prêt à affecter la définition de colonne au nom de rapport financier.  
 
-### Affecter la définition de colonne au nom de rapport financier
+### <a name="assign-the-column-definition-to-the-financial-report-name"></a>Affecter la définition de colonne au nom de rapport financier
 
 1. Sur la page **Rapports financiers**, sélectionnez le rapport financier **Prévision**, puis choisissez l’action **Modifier la définition de colonne**.  
 2. Dans le champ **Nom présentation colonne**, sélectionnez la définition de colonne **Trésorerie** pour la définir par défaut.  
 
-## Afficher et imprimer la prévision de la trésorerie
+## <a name="view-and-print-the-cash-flow-forecast"></a>Afficher et imprimer la prévision de la trésorerie
 
 1. Sur la page **Rapports financiers**, choisissez le rapport financier **Prévision** pour visualiser la prévision de la trésorerie.  
 2. Sur la page **Rapport financier**, vous pouvez sélectionner un montant, puis afficher les écritures de prévisions de la trésorerie qui constituent ce montant. En outre, vous pouvez afficher la formule qui est utilisée pour calculer le montant. Vous pouvez également filtrer les montants par date et par dimension.  
 3. Choisissez l'action **Imprimer** pour imprimer les prévisions de la trésorerie.  
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Utiliser des rapports financiers](bi-how-work-account-schedule.md)  
 [Analyse de la trésorerie dans votre société](finance-analyze-cash-flow.md)  
