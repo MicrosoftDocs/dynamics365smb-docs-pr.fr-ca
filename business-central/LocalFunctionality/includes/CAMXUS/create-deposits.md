@@ -1,7 +1,7 @@
 ---
 author: brentholtorf
 ms.topic: include
-ms.date: 04/01/2021
+ms.date: 11/29/2023
 ms.author: bholtorf
 ---
 > [!NOTE]
@@ -14,11 +14,11 @@ La page **Dépôts** spécifie les renseignements de dépôt bancaire comme le n
 
 Le rapport **Dépôt**affiche les dépôts clients et fournisseurs avec le montant du dépôt initial, le montant du dépôt qui reste ouvert et le montant affecté. Le rapport indique également le montant total des dépôts reportés à rapprocher.
 
-Les lignes dépôt bancaire contiennent des renseignements sur les différents éléments faisant l'objet de dépôts, tels que les chèques des clients. Ces informations comprennent la date et le numéro du document, le type et le numéro du compte et le montant. Le total des montants sur les lignes doit s'additionner pour correspondre au montant total du dépôt.
+Les lignes dépôt bancaire contiennent des renseignements sur les différents éléments faisant l'objet de dépôts, tels que les chèques des clients. Ces informations comprennent la date et le numéro du document, le type et le numéro du compte et le montant. Le total des montants inscrits sur les lignes doit correspondre au montant total du dépôt.
 
 Après avoir renseigné les renseignements de dépôt et les lignes, vous devez les reporter afin de mettre à jour les grands livres correspondants, comme le grand livre bancaire, le grand livre général ou le grand livre client. Les dépôts reportés sont stockés pour référence ultérieure et peuvent être consultés sur la page **Dépôts reportés**.
 
-## <a name="to-create-a-deposit"></a>Pour créer un dépôt
+## Pour créer un dépôt  
 1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Dépôts**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Sous le raccourci **Général**, renseignez les champs requis comme indiqué dans le tableau ci-dessous.  
@@ -35,9 +35,9 @@ Après avoir renseigné les renseignements de dépôt et les lignes, vous devez 
     |Champ|Description|  
     |---------------------------------|---------------------------------------|  
     |**Type compte**|Type de compte.|  
-    |**N° compte**|Numéro de compte d'identification unique associé au type de compte sélectionné, sur lequel l'écriture sera reportée.|  
+    |**N° compte**|Numéro de compte d'identification unique associé au type de compte sélectionné, sur lequel l'écriture est reportée.|  
     |**Description**|Description de l'écriture ligne journal.|  
-    |**Date du document**|Date de document de l'écriture ligne journal.|  
+    |**Date de document**|Date de document de l'écriture ligne journal.|  
     |**Type document**|Type de document de l'écriture ligne journal.|  
     |**N° du document**|Numéro de document de l'écriture ligne journal.|  
     |**Montant crédit**|Montant total du crédit sur la ligne journal.|  

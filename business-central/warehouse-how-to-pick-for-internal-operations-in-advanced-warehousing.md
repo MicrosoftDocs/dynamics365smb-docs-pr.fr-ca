@@ -6,10 +6,11 @@ ms.author: bholtorf
 ms.reviewer: andreipa
 ms.topic: conceptual
 ms.search.keywords: null
-ms.date: 09/12/2023
+ms.date: 12/13/2023
 ms.custom: bap-template
 ---
-# <a name="pick-for-production-assembly-or-jobs-in-advanced-warehouse-configurations"></a>Prélever pour la fabrication, l’assemblage ou les tâches dans les configurations de stockage avancées
+
+# Prélèvement pour la production, l’assemblage ou les projets dans les configurations entrepôt avancées
 
 Le mode de prélèvement de vos composantes pour les ordres de fabrication, d’assemblage ou les tâches dépend de la configuration de l’entrepôt en tant qu’emplacement. Learn more at [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).
 
@@ -30,7 +31,7 @@ Pour prélever ou déplacer des composantes pour des documents source en mode «
 |Ordre d’assemblage|Remplacez l'état actuel par l'état Libéré.|
 |Projets | Changez l’état en Ouvert ou créez une tâche avec l’état Ouvert immédiatement.|  
 
-## <a name="production"></a>Fabrication
+## Fabrication
 
 Utilisez les documents **Prélèvement entrepôt** pour prélever des composantes de production dans le flux vers la production.
 
@@ -39,13 +40,13 @@ Pour un emplacement qui utilise des zones pour déplacer des articles vers des z
 * Pour un emplacement qui utilise le rangement et le prélèvement dirigés, suivez les étapes de l’article [Déplacer des articles dans les configurations de stockage avancée](warehouse-how-to-move-items-in-advanced-warehousing.md).
 * Pour les autres emplacements, suivez les étapes de l’article [Déplacer des articles en interne dans les configurations de stockage de base](warehouse-how-to-move-items-ad-hoc-in-basic-warehousing.md).
 
-## <a name="assembly"></a>Assembly
+## Assembly  
 
 Utilisez les documents **Prélèvement entrepôt** pour déplacer les composantes d’assemblage vers la zone d’assemblage.
 
 [!INCLUDE [prod_short](includes/prod_short.md)] prend en charge les types de flux d’assemblage Assembler pour stock et Assembler pour commande. Pour en savoir plus sur l’assemblage pour commande dans le flux d’entrepôt sortant, accédez à [Traitement des articles à assembler pour commande dans les livraisons entrepôt](warehouse-how-ship-items.md#handling-assemble-to-order-items-in-warehouse-shipments).
 
-## <a name="project-management"></a>Gestion de projets
+## Gestion de projets  
 
 Utilisez les documents **Prélèvement entrepôt** pour sélectionner les composantes de la tâche dans le flux vers la gestion de projet.
 
@@ -54,17 +55,17 @@ Utilisez les documents **Prélèvement entrepôt** pour sélectionner les compos
 >
 > Les tâches ne prennent pas en charge les configurations avancées dans lesquelles le bouton à bascule **Prélèvement et rangement dirigés** est activé.
 
-## <a name="check-whether-items-are-available-for-picking"></a>Vérifier si les articles sont disponibles pour le prélèvement
+## Vérifier si les articles sont disponibles pour le prélèvement
 
 [!INCLUDE [inventory-availability-overview](includes/inventory-availability-overview.md)]
 
-## <a name="to-create-pick-documents-in-bulk-with-the-pick-worksheet"></a>Pour créer des documents de prélèvement en bloc avec la feuille prélèvement
+## Pour créer des documents de prélèvement en bloc avec la feuille prélèvement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille prélèvement**, puis choisissez le lien associé.  
 
 2. Choisissez l'action **Extraire documents entrepôt**.  
 
-    La liste affiche la production libérée, les tâches, les ordres d’assemblage qui ont été transmis à la fonction de prélèvement. Les commandes incluent celles pour lesquelles des instructions de prélèvement ont déjà été créées. Les documents dont les lignes prélèvement ont été entièrement prélevées et enregistrées n’apparaissent pas dans cette liste.  
+    La liste affiche la production libérée, les tâches, les ordres d’assemblage qui ont été transmis à la fonction de prélèvement. Les commandes incluent celles pour lesquelles des instructions de prélèvement ont déjà été créées. Les documents dont les lignes prélèvement ont été prélevées et enregistrées n’apparaissent pas dans cette liste.  
 3. Sélectionnez les commandes pour lesquelles vous souhaitez préparer un prélèvement.
 
     > [!NOTE]  
@@ -79,7 +80,7 @@ Utilisez les documents **Prélèvement entrepôt** pour sélectionner les compos
 
     La page affiche les quantités disponibles dans les zones de transbordement, ce qui est utile pour planifier les affectations de travail dans les situations de transbordement. [!INCLUDE[prod_short](includes/prod_short.md)] proposera toujours en premier un prélèvement dans une zone de transbordement.
 
-6. Si nécessaire, vous pouvez modifier les lignes manuellement. Vous pouvez aussi supprimer certaines lignes pour rendre le prélèvement plus efficace. Par exemple, si plusieurs lignes comportent des articles situés dans des zones de transbordement, vous pouvez créer un prélèvement pour toutes les lignes. Les articles transbordés seront prélevés avec les autres articles du document source, et les zones de transbordement pourront à nouveau recevoir d’autres articles entrants.
+6. Si nécessaire, vous pouvez modifier les lignes manuellement. Vous pouvez aussi supprimer certaines lignes pour rendre le prélèvement plus efficace. Par exemple, si plusieurs lignes comportent des articles situés dans des zones de transbordement, vous pouvez créer un prélèvement pour toutes les lignes. Les articles transbordés sont prélevés avec les autres articles du document source, et les zones de transbordement peuvent à nouveau recevoir d’autres articles entrants.
 
     > [!NOTE]  
     >  Les lignes ne sont supprimées de cette feuille, et non de la liste de sélection des prélèvements.  
@@ -94,7 +95,7 @@ Utilisez les documents **Prélèvement entrepôt** pour sélectionner les compos
     |Par client/fourn./mag.|Crée des documents de prélèvement séparés pour chaque client (tâches)|
     |Par article|Crée des documents prélèvement distincts pour chaque article dans la feuille prélèvement.|
     |Par zone origine|Crée des documents prélèvement distincts pour chaque zone où vous prendrez les articles.|
-    |Par zone|Crée des documents prélèvement distincts pour chaque zone où vous prendrez les articles.|
+    |Par zone|Crée des documents prélèvement distincts pour chaque zone où vous prenez les articles.|
     |Par date d'échéance|Crée des documents prélèvement distincts pour les documents source qui ont la même date d’échéance.|
 
     Spécifiez la façon de créer les documents prélèvement en sélectionnant l’une des options suivantes.  
@@ -105,13 +106,13 @@ Utilisez les documents **Prélèvement entrepôt** pour sélectionner les compos
     |Montant Non. de docs origine prélèvement|Crée des documents prélèvement qui couvrent pas plus que le nombre spécifié de documents d’origine.|
     |Code utilisateur affecté|Crée des documents prélèvement uniquement pour les lignes qui sont affectées à l'employé d'entrepôt sélectionné.|
     |Méthode de tri|Choisissez parmi les options disponibles pour trier les lignes du document prélèvement créé.|
-    |Régler le filtre de rupture de charge|Masque les lignes prélèvement déconditionnement intermédiaires lorsqu’une plus grande unité de mesure est convertie en une unité de mesure inférieure et est prélevée dans son intégralité.|
+    |Régler le filtre de rupture de charge|Masque les lignes prélèvement déconditionnement intermédiaires lorsqu’une plus grande unité de mesure est convertie en une unité de mesure inférieure et prélevée.|
     |Ne pas remplir qté à traiter|Laisse le champ **Qté. à gérer** vide sur les lignes prélèvement créées.|
     |Imprimer prélèvement|Imprime les documents prélèvement lors de leur création. Vous pouvez également imprimer à partir des documents prélèvement créés.|
 
 8. Choisissez le bouton **OK**.  
 
-## <a name="to-pick-items-for-a-productions-order-assembly-order-job"></a>Pour prélever des articles pour un ordre de fabrication, un ordre d’assemblage, une tâche
+## Pour prélever des articles pour un ordre de fabrication, un ordre d’assemblage, une tâche
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvements**, puis choisissez le lien associé.  
 
@@ -139,15 +140,15 @@ Utilisez les documents **Prélèvement entrepôt** pour sélectionner les compos
     * [Assembler des articles](assembly-how-to-assemble-items.md)
     * [Enregistrer la consommation ou l′utilisation pour les projets](projects-how-record-job-usage.md)
 
-## <a name="flushing-production-components-in-an-advanced-warehouse-configuration"></a>Consommer les composantes pour la fabrication dans une configuration entrepôt avancée
+## Consommer les composantes pour la fabrication dans une configuration entrepôt avancée
 
 Les modes de consommation affectent le flux des composantes en production. Pour en savoir plus, voir [Consommer des composantes en fonction de la production réalisée](production-how-to-flush-components-according-to-operation-output.md). En fonction de la méthode de consommation sélectionnée, vous pouvez prélever des composantes pour la production des manières suivantes :
 
-* Utilisez un document **Prélèvement entrepôt** pour enregistrer le prélèvement des articles qui utilisent la méthode de consommation **manuelle**. Vous devrez enregistrer la consommation séparément. Pour en savoir plus, voir [Reporter en lot la consommation de la production](production-how-to-post-consumption.md).
-* Utilisez un document **Prélèvement entrepôt** pour enregistrer le prélèvement des articles qui utilisent la méthode de consommation **Prélèvement + Aval**, **Prélèvement + Amont**. La consommation des composantes se produira automatiquement, soit lorsque vous modifiez l’état du bon de production, soit en démarrant ou en terminant une opération. Toutes les composantes requises doivent être disponibles. Autrement, le report de la consommation de la composante est arrêté.
+* Utilisez un document **Prélèvement entrepôt** pour enregistrer le prélèvement des articles qui utilisent la méthode de consommation **manuelle**. Vous devez enregistrer la consommation séparément. Pour en savoir plus, voir [Reporter en lot la consommation de la production](production-how-to-post-consumption.md).
+* Utilisez un document **Prélèvement entrepôt** pour enregistrer le prélèvement des articles qui utilisent la méthode de consommation **Prélèvement + Aval**, **Prélèvement + Amont**. La consommation des composantes se produit automatiquement, soit lorsque vous modifiez l'état du bon de production, soit en démarrant ou en terminant une opération. Toutes les composantes requises doivent être disponibles. Autrement, le report de la consommation de la composante est arrêté.
 * Utilisez un document **Mouvement entrepôt** sans référence à un document source ou d’autres moyens d’enregistrer le mouvement des composantes qui utilisent la méthode de consommation **Aval** ou **Amont**. Les composantes sont automatiquement consommées, soit lorsque vous changez l’état du bon de production, soit lorsque vous démarrez ou terminez une opération. Toutes les composantes requises doivent être disponibles. Autrement, le report de la consommation s’arrête pour cette composante. Learn more at [Déplacement d’articles](warehouse-move-items.md).
 
-### <a name="example"></a>Exemple :
+### Exemple :
 
 Vous avez un bon de production pour 15 pièces de l’article SP-SCM1004. Certains des articles de la liste des composantes doivent être consommés manuellement dans un journal consommation. D’autres articles peuvent être prélevés et consommés automatiquement à l’aide de la méthode de consommation **Prélèvement + Amont**.  
 
@@ -156,7 +157,7 @@ Les étapes suivantes décrivent les actions prises par divers utilisateurs et l
 1. Le chef atelier lance l'ordre de fabrication. Les articles utilisant la méthode de consommation **Aval** et aucun lien itinéraire n’est déduit de la zone d'atelier ouvert.  
 2. Le chef atelier choisit l’action **Créer prélèvement entrepôt** sur le bon de production. Un document prélèvement entrepôt est créé pour les articles avec les méthodes de consommation **Manuelle**, **Prélèvement + Amont** et **Prélèvement + Aval**. Ces articles sont placés dans la zone avant production.  
 3. Le gestionnaire d’entrepôt affecte les prélèvements à un employé d'entrepôt.  
-4. L'employé d'entrepôt prélève les articles dans les zones appropriées et les place dans la zone avant production ou dans la zone spécifiée sur le prélèvement entrepôt. La zone peut être une zone de poste de travail ou d’unité de production.
+4. L'employé d'entrepôt prélève les articles dans les zones appropriées et les place dans la zone avant production ou dans la zone spécifiée sur le prélèvement entrepôt. La zone peut être une zone de poste de travail ou d'unité de production.
 5. L'employé d'entrepôt enregistre le prélèvement. La quantité est transférée entre la zone de prélèvement et la zone de consommation. Le champ **Qté prélevée** sur la liste des composantes de tous les articles prélevés est mis à jour.
 
     > [!NOTE]  
@@ -170,7 +171,7 @@ La figure ci-après indique la date à laquelle le champ **Code de zone** de la 
 
 :::image type="content" source="media/binflow.png" alt-text="Aperçu de quand et comment le champ Code de zone est renseigné.":::
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 - [Gestion du stock](inventory-manage-inventory.md)  
 - [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  
