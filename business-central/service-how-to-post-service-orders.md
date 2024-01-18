@@ -10,7 +10,7 @@ ms.search.keywords: null
 ms.date: 12/13/2023
 ms.author: bholtorf
 ---
-# Reporter des commandes et des notes de crédit service
+# <a name="post-service-orders-and-credit-memos"></a>Reporter des commandes et des notes de crédit service
 Après avoir créé une commande service, fourni toutes les informations et apporté les éventuelles modifications, vous pouvez reporter cette commande. Pour que vous puissiez reporter une commande, celle-ci doit contenir au moins une ligne article de service et une ligne service. Si la commande contient plusieurs lignes service, toutes les lignes sont reportées en même temps.  
 
 Si vous avez un grand nombre de commandes service, vous pouvez gagner du temps en utilisant un traitement en lot pour les reporter simultanément. Vous pouvez exécuter le traitement en lot à partir d'une commande service quelconque.
@@ -18,7 +18,7 @@ Si vous avez un grand nombre de commandes service, vous pouvez gagner du temps e
 > [!Tip]
 > Avant de reporter un document service, il est recommandé d'utiliser l'action **Rapport de test** pour vérifier toutes les erreurs ou informations manquantes. S'il existe des erreurs, vous devez corriger le problème. Vous pouvez imprimer un nouveau rapport de test pour vérifier le correctif, puis reporter le document.
 
-## Pour reporter une commande service    
+## <a name="to-post-a-service-order"></a>Pour reporter une commande service
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Commandes service**, puis choisissez le lien associé.  
 2. Ouvrez la commande service.  
 3. Sur la page **Commande service**, choisissez l'une des actions suivantes.  
@@ -43,13 +43,13 @@ Vous ne pouvez reporter la consommation que si la ligne contient une quantité q
 
 Lors du report de la commande, les écritures et les documents reportés correspondants sont créés. Les champs appropriés dans le document commande service sont mis à jour.  
 
-## Pour reporter en lot des commandes service
+## <a name="to-batch-post-service-orders"></a>Pour reporter en lot des commandes service
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Commandes service**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Reporter par lot**.  
 3.  Vous pouvez positionner un filtre pour sélectionner des numéros commande service ou un intervalle de numéros commande pour le traitement en lot à effectuer.  
 4.  Cliquez sur **OK** pour démarrer le traitement en lot.  
 
-## Pour reporter une note de crédit service  
+## <a name="to-post-a-service-credit-memo"></a>Pour reporter une note de crédit service
 Une fois la note de crédit service créée et renseignée, vous pouvez reporter la note de crédit. S'il y a des erreurs ou s'il manque certaines informations sur la note de crédit lors du report, le processus est interrompu par un message d'erreur.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de crédit service**, puis sélectionnez le lien associé.  
@@ -62,7 +62,7 @@ Une fois la note de crédit service créée et renseignée, vous pouvez reporter
 > [!NOTE]  
 >  Il est important d'entrer toutes les informations nécessaires sur les notes de crédit avant de les exécuter en lot. Sinon, elles risquent de ne pas être reportées. Lorsque le traitement en lot a terminé le report, un message indique le nombre des notes de crédit service reportés.  
 
-## Pour reporter une consommation à partir d'une commande service  
+## <a name="to-post-consumption-from-a-service-order"></a>Pour reporter une consommation à partir d'une commande service
 La procédure suivante décrit comment reporter les articles, les heures et/ou coûts ressource utilisés pour une opération de service spécifique que vous n’allez pas facturer au client. Vous ne pouvez reporter des articles, des heures et/ou des coûts consommés que pour une livraison reportée pour laquelle il n’y a pas de facture ni de consommation reportée.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Commandes service**, puis choisissez le lien associé.  
@@ -77,7 +77,7 @@ La procédure suivante décrit comment reporter les articles, les heures et/ou c
 
 Le service est validé comme étant consommé, entièrement ou partiellement, en fonction de la valeur renseignée dans le champ **Qté à consommer** et les écritures comptables correspondantes sont créées. En outre, les documents livraison service précédemment reportés sont mis à jour, de façon chronologique, avec les quantités consommées. Les quantités appropriées sont mises à jour dans les lignes service de la commande.  
 
-## Pour reporter des livraisons à partir de commandes service  
+## <a name="to-post-shipments-from-service-orders"></a>Pour reporter des livraisons à partir de commandes service
 Après avoir spécifié les détails d'un service, vous pouvez ajuster et reporter les quantités d'articles utilisées, le temps passé et les coûts exposés. Par conséquent, [!INCLUDE[prod_short](includes/prod_short.md)] apporte les modifications nécessaires afin de refléter le nouvel état du stock et le statut actuel du traitement de commande spécifique.  
 
 La procédure suivante explique comment reporter la livraison des articles ligne service dans les emplacements qui ne sont pas configurés pour appeler une gestion d'entrepôt.  
@@ -96,7 +96,7 @@ Si l'emplacement est configuré pour exiger la gestion d'entrepôt, la livraison
 
 Pour plus d’informations sur la livraison des articles ligne service dans les configurations d’entrepôt avancées, accédez à Prélèvement d'articles pour une livraison entrepôt](warehouse-how-to-pick-items-for-warehouse-shipment.md).  
 
-## Pour annuler une consommation reportée  
+## <a name="to-undo-posted-consumption"></a>Pour annuler une consommation reportée
 Vous pouvez annuler la consommation sur les commandes service. Par exemple, parce qu'elle a été reportée par erreur.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Livraisons service reportées**, puis sélectionnez le lien associé.  
@@ -112,7 +112,7 @@ Vous pouvez annuler la consommation sur les commandes service. Par exemple, parc
 >    * La commande service a été fermée.  
 >    * Elle a été reportée dans la zone Projets, ce qui signifie que des écritures projet sont liées à cette consommation.  
 
-## Pour reporter des lignes service  
+## <a name="to-post-service-lines"></a>Pour reporter des lignes service
 Si vous devez travailler sur une commande service pendant longtemps sans la reporter, vous pouvez reporter certaines lignes service qui y sont liées afin, par exemple, de tenir votre inventaire à jour. Vous pouvez reporter en spécifiant les quantités appropriées dans les lignes à reporter. Vous pouvez décider de reporter les lignes une à une en sélectionnant plusieurs lignes à la fois.  
 
 La procédure suivante décrit le report de la livraison directement à partir d'une commande service dans des emplacements sans configuration de la gestion d'entrepôt. Si l'emplacement est configuré pour appeler une gestion d'entrepôt, le report de livraison a lieu dans un autre document entrepôt, en fonction de la configuration de l'emplacement.
@@ -122,7 +122,7 @@ La procédure suivante décrit le report de la livraison directement à partir d
 4. Dans les lignes que vous allez reporter, renseignez les champs **Qté à livrer**, **Qté à facturer** et **Qté à consommer**, en fonction de la manière dont vous allez reporter les lignes.  
 5. Sélectionnez l'action **Valider**.
 
-## Voir aussi .  
+## <a name="see-also"></a>Voir aussi .
 [Report dans la Gestion des services](service-service-posting.md)  
 [Créer une commande service](service-how-to-create-service-orders.md)  
 

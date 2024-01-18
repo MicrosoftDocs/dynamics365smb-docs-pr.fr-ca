@@ -10,7 +10,7 @@ ms.search.form: 40
 ms.date: 12/12/2023
 ms.author: bholtorf
 ---
-# Fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal article
+# <a name="close-open-item-ledger-entries-resulting-from-fixed-application-in-the-item-journal"></a>Fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal article
 
 Vous pouvez utiliser le champ **Écriture affectée de** dans la fenêtre **Journal article** pour créer une affectation fixe entre une transaction entrante et la transaction sortante initiale. Par exemple, pour corriger la transaction sortante ou pour traiter un retour.  
 
@@ -23,7 +23,7 @@ Vous pouvez modifier et affecter à nouveau des écritures d'affectation dans ce
 
 La procédure suivante explique comment fermer des écritures de ce genre au cours de deux reports de correction dans le journal article.  
 
-## Pour fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal d'articles  
+## <a name="to-close-open-item-ledger-entries-that-result-from-a-fixed-application-in-the-item-journal"></a>Pour fermer les écritures article ouvertes qui résultent d'une affectation fixe dans le journal d'articles
 
 1. Utilisez le champ **Écriture affectée de** pour reporter un ajustement positif avec la quantité correspondante. Cela permet de fermer l'écriture négative initiale par une affectation fixe.  
 
@@ -32,7 +32,7 @@ La procédure suivante explique comment fermer des écritures de ce genre au cou
 
     Le champ **Écriture référence** spécifie si la quantité dans la ligne journal article doit être affectée à un document déjà reporté. Si c’est le cas, entrez le numéro de l’écriture article à laquelle la ligne journal article doit être affectée.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Supprimer et affecter à nouveau des écritures article](finance-how-to-remove-and-reapply-item-entries.md)  
 [Traiter les retours et annulations de ventes](sales-how-process-sales-returns-cancellations.md)  

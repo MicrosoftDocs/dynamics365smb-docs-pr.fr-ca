@@ -10,7 +10,7 @@ ms.search.form: '312, 313'
 ms.date: 12/21/2023
 ms.custom: bap-template
 ---
-# Configurer des groupes de report
+# <a name="set-up-posting-groups"></a>Configurer des groupes de report
 
 Les groupes de report mappent des entités à des comptes GL. Les clients, les fournisseurs, les articles, les ressources et les documents vente et achat sont des exemples d’entités. Les groupes de report vous font gagner du temps et permettent d’éviter des erreurs lorsque vous reportez des transactions. Les valeurs de transaction vont dans les comptes spécifiés dans le groupe de report pour cette entité particulière. Il vous suffit seulement d'avoir un plan comptable. Pour plus d'informations, reportez-vous à [Configuration du plan comptable](finance-setup-chart-accounts.md).  
 
@@ -28,7 +28,7 @@ Les groupes comptabilisation sont traités dans trois catégories :
 
 Les sections suivantes décrivent les groupes de report dans chaque catégorie.  
 
-## Groupes de report généraux
+## <a name="general-posting-groups"></a>Groupes de report généraux
 
 Le tableau suivant décrit les groupes de report généraux.
 
@@ -38,7 +38,7 @@ Le tableau suivant décrit les groupes de report généraux.
 | Groupes comptabilisation produit |Affectez ce groupe à des articles et des ressources pour spécifier les éléments que vous vendez, et que vous achetez. Définissez ces groupes de report sur la page **Groupes de report produit**. Lorsque vous effectuez cette opération, vous devez considérer le nombre de groupes nécessaires pour répartir les ventes par article et ressource, et pour répartir les achats par article. Par exemple, divisez ces groupes par Matières premières, Vte détail, Ressources, Capacités, etc. |
 | Config. paramètres report |Combinez les groupes de report marché et produit, puis choisissez les comptes à reporter. Pour chaque combinaison de groupes comptabilisation marché et produit, vous pouvez affecter un ensemble de comptes généraux. Par exemple, vous pouvez reporter la vente d’un même article dans différents comptes GL car les clients sont affectés à différents groupes de report marché. Définissez ces configurations sur la page **Configuration du report général**. |
 
-## Groupes de report spécifiques
+## <a name="specific-posting-groups"></a>Groupes de report spécifiques
 
 Le tableau suivant décrit les groupes de report spécifiques aux types de données.
 
@@ -50,7 +50,7 @@ Le tableau suivant décrit les groupes de report spécifiques aux types de donn�
 | Groupes de report compte bancaire |Définissez les compte GL dans lesquels les écritures compte bancaire sont reportées. Par exemple, cela peut simplifier les processus de traçabilité des transactions et des rapprochements bancaires. Définissez ces groupes de report sur la page **Groupes de report compte bancaire**. Nous recommandons que le champ **Report direct** de ces comptes du grand livre soient définis sur *Non*. |
 | Groupes comptabilisation immobilisations |Définissez des comptes pour les différents types de dépenses et frais, tels que les coûts d'acquisition, les montants d'amortissement cumulés, les coûts d'acquisition sur cession, l'amortissement cumulé sur cession, les gains sur cession, les pertes sur cession, les frais d'entretien et les frais d'amortissement. Définissez ces groupes de report sur la page **Groupes de report immo.**. |
 
-### Autoriser des groupes de report client ou fournisseur de remplacement sur les documents
+### <a name="allow-substitute-customer-or-vendor-posting-groups-on-documents"></a>Autoriser des groupes de report client ou fournisseur de remplacement sur les documents
 
 Vous pouvez permettre aux utilisateurs de choisir des groupes de report client et fournisseur différents des groupes par défaut lorsqu’ils utilisent des documents et des journaux vente ou achat.
 
@@ -62,7 +62,7 @@ Après avoir configuré cela, vous pouvez choisir parmi les groupes de report de
 
 Lors de l’affectation, par exemple, d’une facture et d’un paiement qui sont reportés avec différents groupes de report client ou fournisseur (différents comptes du grand livre), [!INCLUDE[prod_short](includes/prod_short.md)] transfère les montants entre les comptes du grand livre pour les équilibrer.
 
-## Groupes de report TVA
+## <a name="tax-posting-groups"></a>Groupes de report TVA
 
 Le tableau suivant décrit les groupes de report associés aux taxes.
 
@@ -74,7 +74,7 @@ Le tableau suivant décrit les groupes de report associés aux taxes.
 
 Si votre pays/région utilise la taxe sur la valeur ajoutée (TVA), voir [Configurer des méthodes de calcul et de report de la taxe sur la valeur ajoutée](finance-setup-vat.md).  
 
-## Exemple de liaison de groupes comptabilisation
+## <a name="example-of-linking-posting-groups"></a>Exemple de liaison de groupes comptabilisation
 
 Voici un scénario.  
 
@@ -97,11 +97,11 @@ Lors de la création d'un document vente, l'en-tête vente utilise les informati
 
 Votre configuration détermine quand le report a lieu. Par exemple, la synchronisation est affectée au moment où vous exécutez des activités périodiques, par exemple : reporter des coûts inventaire ou ajuster des écritures coût article.
 
-## Copier des lignes configuration report
+## <a name="copy-posting-setup-lines"></a>Copier des lignes configuration report
 
 Plus il y a de groupes de report produit et marché, plus la page **Configuration du report général** contient de lignes. S’il peut y avoir un grand nombre de combinaisons différentes de groupes de report marché et produit, différentes combinaisons peuvent encore reporter dans les mêmes comptes du grand livre. Pour limiter le nombre de saisies manuelles, copiez les comptes GL à partir d'une ligne existante sur la page **Configuration report général**.
 
-## Configurer des groupes de report en déplacement
+## <a name="set-up-posting-groups-on-the-go"></a>Configurer des groupes de report en déplacement
 
 Pour que les utilisateurs démarrent plus rapidement, [!INCLUDE[prod_short](includes/prod_short.md)] peut afficher des notifications de comptes du grand livre manquants dans diverses configurations de groupe de report. Pour recevoir ces notifications, assurez-vous que la notification **Compte du grand livre manquant dans le groupe de report ou la configuration** est sélectionnée dans la page **Mes notifications**, à laquelle vous pouvez accéder à partir du champ **Modifier lorsque je reçois des notifications** dans la page **Mes paramètres**.  
 
@@ -114,7 +114,7 @@ De cette façon, lorsque vous travaillez sur un document qui utilise un groupe d
 
 À partir de la 1re vague de lancement 2022, vous pouvez utiliser le champ **Bloqué** sur la page **Configuration du report général** pour empêcher les utilisateurs d’utiliser par erreur une configuration qui n’est plus pertinente pour les nouveaux reports.  
 
-## Résolution des erreurs de groupe de report
+## <a name="troubleshooting-posting-group-errors"></a>Résolution des erreurs de groupe de report
 
 Les groupes de report sont l’un des concepts les plus avancés à configurer dans [!INCLUDE[prod_short](includes/prod_short.md)]. S’ils ne sont pas configurés correctement, des erreurs peuvent se produire lors du report de documents ou de lignes journal. Par exemple, ces erreurs sont généralement causées par une erreur d’affectation des comptes du grand livre ou de combinaison des groupes de report.
 
@@ -123,7 +123,7 @@ Quand quelque chose ne va pas, [!INCLUDE[prod_short](includes/prod_short.md)] af
 > [!NOTE]
 > La gestion des erreurs décrite ci-dessus n’est pas disponible sur les journaux article, ressource, employé et immobilisation, ni pour les comptes du grand livre ajoutés dans des versions locales des groupes de report.
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Le grand livre et le plan comptable](finance-general-ledger.md)  
 [Configuration de Finance](finance-setup-finance.md)  
