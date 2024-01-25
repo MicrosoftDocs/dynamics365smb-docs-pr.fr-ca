@@ -4,13 +4,13 @@ description: Apprenez à utiliser votre système de saisie automatique des donn�
 author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: conceptual
 ms.date: 01/25/2023
 ms.custom: bap-template
 ms.search.form: '7700, 7703, 7704, 7706, 7707, 7710, 9813, 9814'
 ---
-# <a name="use-automated-data-capture-systems-adcs-foundation"></a>Utilisation de la base des systèmes de saisie automatisée (ADCS)
+# Utilisation de la base des systèmes de saisie automatisée (ADCS)
 
 > [!Important]
 > La solution ADCS offre un moyen pour [!INCLUDE[prod_short](includes/prod_short.md)] de communiquer avec des appareils portables via des services Web. Vous devez travailler avec un partenaire Microsoft qui peut fournir le lien entre le service Web et l'appareil portable spécifique. 
@@ -25,11 +25,11 @@ En fonction des besoins de votre entrepôt, définissez la quantité d'informati
 - Trier les informations.  
 - Messages affichant les confirmations ou erreurs sur les activités effectuées et enregistrées par l'utilisateur de périphérique mobile.
 
-## <a name="to-enable-web-services-for-adcs"></a>Pour activer les services Web pour ADCS
+## Pour activer les services Web pour ADCS
 
 Pour utiliser Automated Data Capture System, vous devez activer le service Web ADCS. Vous devez travailler avec un partenaire Microsoft qui peut implémenter un service Web pour ocnnecter ADCS et un appareil portable spécifique. Vous pouvez en savoir plus sur le service web pour ADCS en examinant les codeunit 7714 suivants : 
  
-## <a name="to-set-up-a-warehouse-to-use-adcs"></a>Pour configurer le module Gestion d'entrepôt
+## Pour configurer le module Gestion d'entrepôt  
 
 Pour utiliser le système de saisie automatisée, vous devez indiquer quels entrepôts utilisent cette technologie.  
 
@@ -40,7 +40,7 @@ Pour utiliser le système de saisie automatisée, vous devez indiquer quels entr
 2. Sélectionnez l’entrepôt pour lequel vous souhaitez activer la saisie automatisée, puis sélectionnez l’action **Modifier**.
 3. Sur la page **Fiche emplacement**, activez le bouton à bascule **Utiliser ADCS**.  
 
-## <a name="to-specify-an-item-to-use-adcs"></a>Pour spécifier un article pour utiliser votre système de saisie automatisée
+## Pour spécifier un article pour utiliser votre système de saisie automatisée  
 
 À chaque article entrepôt que vous souhaitez utiliser avec le système de saisie automatisée doit être affecté un code d'identification pour le lier à son numéro. Par exemple, vous pouvez utiliser le code barre de l'article comme code d'identification. Un article peut également avoir plusieurs codes d'identification. Cela peut s'avérer utile dans le cas où un article est disponible dans plusieurs unités de mesure (par exemple, des pièces et des palettes). Dans ce cas, il convient d'affecter un code à chaque identificateur.
 
@@ -56,7 +56,7 @@ Pour utiliser le système de saisie automatisée, vous devez indiquer quels entr
 7. Cliquez sur le bouton **OK**.  
 8. Pour consulter les informations, choisissez le champ **Code identificateur** pour ouvrir la page **Identificateurs article**.
 
-## <a name="to-add-an-adcs-user"></a>Pour ajouter un utilisateur ADCS
+## Pour ajouter un utilisateur ADCS  
 
 Vous pouvez ajouter n’importe quel utilisateur à un système de saisie automatique. Dans ce cas, l’utilisateur doit fournir un mot de passe. Éventuellement, vous pouvez également indiquer une connexion qui identifie l'utilisateur ADCS en tant que magasinier. Le mot de passe de l’utilisateur du système ADCS peut être différent de son mot de passe de connexion. En savoir plus sur [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md).
 
@@ -65,7 +65,7 @@ Vous pouvez ajouter n’importe quel utilisateur à un système de saisie automa
 3. Dans le champ **Nom**, entrez un nom pour l'utilisateur. Le nom ne peut pas contenir plus de 20 caractères, espaces compris.  
 4. Entrez un mot de passe dans le champ **Mot de passe**.  
 
-### <a name="to-specify-that-a-warehouse-employee-is-an-adcs-user"></a>Pour spécifier qu'un employé d'entrepôt est un utilisateur ADCS
+### Pour spécifier qu'un employé d'entrepôt est un utilisateur ADCS  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Employés entrepôt**, puis sélectionnez le lien associé.  
 2. Si nécessaire, ajoutez un nouveau magasinier. Learn more at [Configurer des employés d’entrepôt](warehouse-how-to-set-up-warehouse-employees.md).  
@@ -75,7 +75,7 @@ Vous pouvez ajouter n’importe quel utilisateur à un système de saisie automa
 > [!NOTE]  
 > L'entrepôt par défaut de l'employé doit utiliser la saisie automatisée.
 
-## <a name="to-create-and-customize-miniforms"></a>Pour créer et personnaliser des mini-formulaires
+## Pour créer et personnaliser des mini-formulaires
 
 Vous utilisez des écrans pour décrire les informations que vous souhaitez présenter sur un terminal de saisie portable. Par exemple, vous pouvez créer des écrans pour prendre en charge l'activité entrepôt de prélèvement des articles. Après avoir créé un mini-formulaire, vous pouvez lui ajouter des fonctions pour les tâches qu'un utilisateur effectue couramment avec des terminaux de saisie portables, par exemple, déplacer une ligne vers le haut ou vers le bas.  
 
@@ -87,7 +87,7 @@ Vous utilisez des écrans pour décrire les informations que vous souhaitez pré
 > * 7712
 > * 7713  
 
-### <a name="to-create-a-miniform-for-adcs"></a>Pour créer un mini-formulaire de saisie automatisée
+### Pour créer un mini-formulaire de saisie automatisée  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Mini-formulaires**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -99,14 +99,14 @@ Vous utilisez des écrans pour décrire les informations que vous souhaitez pré
 
 Après avoir créé un mini-formulaire, vous devez créer des fonctions et associer une fonctionnalité aux différentes entrées de clavier.  
 
-### <a name="to-customize-miniform-functions"></a>Pour personnaliser les fonctions de mini-formulaire
+### Pour personnaliser les fonctions de mini-formulaire
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Mini-formulaires**, puis choisissez le lien associé.  
 2. Sélectionnez un mini-formulaire dans la liste, puis sélectionnez l'action **Modifier**.  
 3. Choisissez l'action **Fonctions**.  
 4. Dans la liste déroulante **Code fonction**, sélectionnez un code pour représenter la fonction que vous souhaitez associer au mini-formulaire. Par exemple, vous pouvez sélectionner **Échap** pour associer une fonctionnalité à la touche **Échap**.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi  
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

@@ -4,14 +4,14 @@ description: 'Utilisez les dimensions pour classer des écritures par catégorie
 author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: how-to
 ms.date: 01/27/2023
 ms.custom: bap-template
 ms.search.keywords: 'analysis, history, track, business intelligence'
 ms.search.form: '408, 479, 480, 481, 484, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 548, 560, 562, 564, 567, 568, 577, 578, 580, 699, 1343, 2580, 2581, 2582, 2583, 2584, 2585, 2586, 2587, 2588, 2590, 2591, 2592, 2593, 9083, 9233, 9251, 9252, 9253'
 ---
-# <a name="work-with-dimensions"></a>Utiliser des dimensions
+# Utiliser des dimensions
 
 Les dimensions sont des valeurs qui permettent de catégoriser les écritures afin de pouvoir les suivre et les analyser sur les documents, tels que les documents de vente. Les dimensions peuvent, par exemple, indiquer de quel projet ou département provient une écriture.  
 
@@ -24,7 +24,7 @@ Un autre exemple consiste à configurer une dimension appelée *Département* et
 * Le nom du vendeur.
 * Le nom du client qui l’a acheté.
 
-## <a name="analyzing-by-dimensions"></a>Analyse par dimensions
+## Analyse par dimensions
 
 La fonctionnalité Dimensions joue un rôle important dans la veille économique, par exemple en définissant des vues d’analyse. Pour en savoir plus, voir [Analyse des données par dimensions](bi-how-analyze-data-dimension.md).
 
@@ -34,13 +34,13 @@ La fonctionnalité Dimensions joue un rôle important dans la veille économique
 > [!NOTE]
 > Les vues d′analyse utilisent souvent les données des dimensions. Si vous découvrez qu’une dimension incorrecte a été utilisée sur les écritures GL reportées, vous pouvez corriger les valeurs de dimension et mettre à jour vos vues d’analyse. Cela vous aide à garder vos rapports et analyses financiers exacts. Pour en savoir plus, voir [Dépannage et correction des dimensions](finance-troubleshooting-correcting-dimensions.md#changing-dimension-assignments-after-posting).
 
-## <a name="dimension-sets"></a>Ensembles de dimensions
+## Ensembles de dimensions
 
 Un ensemble de dimensions est une combinaison unique de sections analytiques. Elles sont stockées comme des écritures de l’ensemble de dimensions dans la base de données. Chaque écriture de l'ensemble de dimensions représente une valeur de dimension unique. De plus, chaque ensemble de dimensions et l’écriture ensemble de dimensions qu’il contient sont identifiés par un code d’ensemble de dimensions commun.  
 
 Lorsque vous créez une ligne de journal, un en-tête de document ou une ligne de document, vous pouvez spécifier une combinaison de valeurs de dimension. Au lieu d'enregistrer explicitement chaque valeur de dimension dans la base de données, un code d'ensemble de dimensions est affecté à la ligne de journal, à l'en-tête du document ou à la ligne du document pour spécifier l'ensemble de dimensions.  
 
-## <a name="setting-up-dimensions"></a>Configuration de dimensions
+## Configuration de dimensions
 
 Vous pouvez définir les dimensions et les valeurs de dimension pour classer des journaux et des documents par catégorie, comme des documents de vente et des bons de commande. La page **Dimensions** permet de créer une ligne pour chaque dimension, par exemple *Projet*, *Département*, *Zone* et *Représentant*.
 
@@ -54,7 +54,7 @@ Une fois les dimensions et les valeurs configurées, vous pouvez définir des di
 > [!NOTE]
 > Après avoir utilisé une nouvelle dimension dans une écriture, telle qu’une ligne ou un nouvel enregistrement, vous ne pouvez pas supprimer la dimension, même si vous ne reportez pas l’écriture. Ceci est dû au fait que [!INCLUDE[prod_short](includes/prod_short.md)] crée immédiatement un ensemble de dimensions pour la ligne ou l’enregistrement. Pour plus d’informations, consultez la section [Ensembles de dimensions](finance-dimensions.md#dimension-sets).
 
-### <a name="to-set-up-default-dimensions-for-customers-vendors-and-other-accounts"></a>Pour configurer des dimensions par défaut pour les clients, les fournisseurs et d'autres comptes
+### Pour configurer des dimensions par défaut pour les clients, les fournisseurs et d'autres comptes
 
 Vous pouvez attribuer une dimension par défaut pour un compte spécifique. La dimension est copiée sur le journal ou le document lorsque vous saisissez le numéro de compte dans une ligne, mais vous pouvez supprimer ou modifier le code sur la ligne si nécessaire. Vous pouvez également rendre une dimension obligatoire pour valider une écriture avec un type de compte spécifique. > 
 
@@ -91,7 +91,7 @@ Vous pouvez attribuer une dimension par défaut pour un compte spécifique. La d
 > [!NOTE]  
 > Si un compte doit avoir une dimension différente de la dimension par défaut affectée à ce type de compte, vous devez configurer une nouvelle dimension pour ce compte. La dimension par défaut de ce compte remplace alors celle du type de compte.  
 
-### <a name="to-set-up-default-dimension-priorities"></a>Pour configurer des priorités de dimensions par défaut
+### Pour configurer des priorités de dimensions par défaut
 
 Des types de compte différents, tels qu’un compte client et un compte article, peuvent avoir des dimensions différentes. Par conséquent, une écriture peut avoir plusieurs dimensions proposées par défaut. Pour éviter de tels conflits, vous pouvez appliquer des règles de priorité aux différentes sources.
 
@@ -103,7 +103,7 @@ Des types de compte différents, tels qu’un compte client et un compte article
 > [!IMPORTANT]  
 > Si vous configurez deux tables avec la même priorité pour le même code source, [!INCLUDE[prod_short](includes/prod_short.md)] sélectionne toujours la table ayant le plus petit code.  
 
-### <a name="to-set-up-dimension-combinations"></a>Pour configurer des combinaisons de dimensions
+### Pour configurer des combinaisons de dimensions
 
 Pour éviter de reporter des écritures avec des dimensions contradictoires ou inappropriées, vous pouvez bloquer ou limiter des combinaisons spécifiques de deux dimensions. Lorsqu’un croisement de dimension est bloqué, vous ne pouvez pas reporter les deux dimensions sur la même écriture, quelles que soient les valeurs de dimension. A contrario, lorsqu’un croisement de dimension est limité, vous pouvez reporter les deux dimensions sur la même écriture, mais uniquement pour certains croisements de valeurs de dimension.
 
@@ -126,7 +126,7 @@ Pour éviter de reporter des écritures avec des dimensions contradictoires ou i
 >
 > Pour afficher le nom des dimensions à la place du code, sélectionnez le champ **Afficher nom colonne**.
 
-### <a name="to-set-up-global-and-shortcut-dimensions"></a>Pour configurer des dimensions principales et des raccourcis de dimension
+### Pour configurer des dimensions principales et des raccourcis de dimension
 
 Les dimensions principales et les raccourcis de dimension peuvent être utilisés comme filtres dans [!INCLUDE[prod_short](includes/prod_short.md)], y compris sur les rapports, les traitements en lot, les pages d’écritures et les vues d’analyse. Les dimensions principales et les raccourcis peuvent toujours être insérés directement sans ouvrir tout d’abord la page **Dimensions**. Sur les lignes journal et document, vous pouvez sélectionner les dimensions principales et les raccourcis de dimension dans un champ sur la ligne. Vous pouvez définir deux dimensions principales et huit raccourcis de dimension. Sélectionnez les dimensions que vous utilisez le plus souvent.
 
@@ -141,7 +141,7 @@ Les dimensions principales et les raccourcis de dimension peuvent être utilisé
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du grand livre**, puis choisissez le lien associé.
 2. Sur le raccourci **Dimensions**, renseignez les champs. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
-#### <a name="to-change-global-dimensions"></a>Pour modifier les dimensions principales
+#### Pour modifier les dimensions principales
 
 Lorsque vous modifiez une dimension principale ou un raccourci, toutes les écritures saisies avec cette dimension sont mises à jour. Étant donné que ce processus peut prendre du temps et affecter les performances, deux modes différents sont fournis pour adapter le processus à la taille de la base de données.  
 
@@ -163,7 +163,7 @@ Lorsque vous modifiez une dimension principale ou un raccourci, toutes les écri
 6. Déconnectez-vous de [!INCLUDE[prod_short](includes/prod_short.md)], puis reconnectez-vous.
 7. Choisissez l’action **Démarrer** pour commencer le traitement parallèle des changements de dimension.
 
-### <a name="example-of-dimension-setup"></a>Exemple de configuration de dimension
+### Exemple de configuration de dimension
 
 Imaginons que votre compagnie souhaite suivre les transactions selon la structure organisationnelle et les situations géographiques. Pour ce faire, vous pouvez configurer deux dimensions sur la page **Dimensions** :
 
@@ -204,7 +204,7 @@ Pour **DÉPARTEMENT**, vous pouvez ajouter les valeurs de dimension suivantes :
 
 Avec cette configuration, vous pouvez ensuite ajouter les deux dimensions en tant que dimensions principales sur la page **Configuration du grand livre**. Cela signifie que vous pouvez utiliser ZONE et DÉPARTEMENT comme filtres pour les écritures du grand livre, ainsi que dans tous les rapports. Les deux axes principaux sont mis à disposition automatiquement pour être utilisés dans les lignes écriture et les en-têtes document comme raccourcis axe.
 
-## <a name="getting-an-overview-of-dimensions-used-multiple-times"></a>Affichage d’un aperçu des dimensions utilisées plusieurs fois
+## Affichage d’un aperçu des dimensions utilisées plusieurs fois
 
 La page **Dimensions par défaut - Multiples** spécifie la manière dont un groupe de comptes utilise les dimensions et valeurs de dimension. Vous pouvez configurer cela en mettant en surbrillance plusieurs comptes, puis en spécifiant les dimensions et les valeurs de dimension par défaut pour eux. Après cela, l’application suggère ces dimensions et valeurs de dimension chaque fois que l’un de ces comptes est utilisé, par exemple dans une ligne journal. Le report des écritures est ainsi facilité, car les champs de dimension sont renseignés automatiquement. Notez toutefois que les valeurs de dimension proposées peuvent être modifiées, par exemple sur une ligne journal.
 
@@ -216,7 +216,7 @@ La page **Dimensions par défaut - Multiples** contient les champs suivants :
 |**Code section**|Affiche une valeur de dimension ou le terme (Conflit). Si le champ indique une valeur de dimension, tous les comptes sélectionnés ont la même valeur de dimension par défaut pour une dimension donnée. Si le champ indique le terme (Conflit), les comptes sélectionnés n’ont pas tous la même valeur de dimension par défaut pour une dimension donnée. Lorsque vous sélectionnez le champ **Code dimension**, vous voyez une liste de toutes les valeurs de dimension disponibles pour une dimension donnée. Si vous sélectionnez une valeur de dimension, elle est définie comme valeur de dimension par défaut pour tous les comptes sélectionnés.|
 |**Contrôle validation**|Affiche une règle de report valeur ou le terme (Conflit). Si le champ indique une règle de report valeur, tous les comptes sélectionnés ont la même règle de report valeur pour une valeur de dimension donnée. Si le champ indique le terme (Conflit), les comptes sélectionnés n’ont pas tous la même règle de contrôle report pour une valeur de dimension donnée. Lorsque vous sélectionnez le champ **Report valeur**, vous voyez la liste des règles de contrôle report pour une dimension. Si vous sélectionnez une règle de contrôle report, elle s’applique à tous les comptes sélectionnés.|
 
-## <a name="use-dimensions"></a>Utiliser des dimensions
+## Utiliser des dimensions
 
 Dans un document tel qu'un document de vente, vous pouvez ajouter des informations de dimension pour une seule ligne document et pour le document lui-même. Sur la page **Document de vente**, vous pouvez saisir des valeurs de dimension pour les deux premiers raccourcis dimension directement sur les lignes vente individuelles et ajouter des informations de dimension complémentaires si vous cliquez sur le bouton **Dimensions**.  
 
@@ -224,7 +224,7 @@ Si vous travaillez plutôt sur un journal, vous pouvez également ajouter à une
 
 Vous pouvez également configurer des dimensions par défaut pour des comptes ou des types de compte, de sorte que les dimensions et les valeurs de dimension soient renseignées automatiquement.
 
-### <a name="to-view-global-dimensions-in-ledger-entry-pages"></a>Pour afficher les dimensions principales dans les pages écriture
+### Pour afficher les dimensions principales dans les pages écriture
 
 Les dimensions principales sont toujours définies et nommées par la compagnie. Pour visualiser les dimensions globales de votre compagnie, ouvrez la page **Configuration du grand livre**.
 
@@ -238,7 +238,7 @@ Dans une page écriture, vous pouvez voir si des dimensions principales sont ass
 > [!NOTE]  
 > La page **Dimensions - Écritures** affiche les dimensions d’une écriture à la fois. Lorsque vous faites défiler les écritures, le contenu de la page **Dimensions - Écritures** est modifié en conséquence.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Veille économique](bi.md)  
 [Finances](finance.md)  
