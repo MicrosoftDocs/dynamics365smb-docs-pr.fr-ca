@@ -3,15 +3,14 @@ title: Contenu en cours de mise à jour
 description: 'Parfois, nous apportons une modification à une fonctionnalité qui rend une vidéo trompeuse, nous supprimons donc la vidéo pendant que nous mettons à jour le contenu.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'video, library, how to'
 ms.date: 06/11/2021
 ms.author: bholtorf
+ms.service: dynamics-365-business-central
 ---
 
-# <a name="sorry-this-content-is-under-construction"></a>Désolé, ce contenu est en cours de révision
+# Désolé, ce contenu est en cours de révision
 
 :::image type="content" source="media/helene/empty illustration_BCdocs.png" alt-text="Il n’y a rien ici en ce moment." border="false":::
 
@@ -21,7 +20,7 @@ Nous ajoutons et améliorons constamment [!INCLUDE[prod_short](includes/prod_sho
 
 Revenez bientôt cependant, et en attendant vous pouvez explorer d’autres sujets sur le [Canal Dynamics 365 activé YouTube](https://www.youtube.com/playlist?list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4).
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 [Visitez notre vidéothèque](across-videos.md)
 
  

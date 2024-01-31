@@ -3,26 +3,25 @@ title: 'Réception, rangement, prélèvement et expédition dans une configurati
 description: "Dans Business\_Central, les processus entrants et sortants peuvent être effectués de quatre manières, à l’aide de différentes fonctionnalités en fonction du niveau de complexité de l’entrepôt."
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: null
 ms.search.form: null
 ms.date: 04/01/2021
 ms.author: bholtorf
+ms.service: dynamics-365-business-central
 ---
 
-# <a name="walkthrough-of-inbound-and-outbound-flow-in-basic-warehouse-configurations"></a>Procédure pas à pas sur les flux entrants ou sortants dans les configurations entrepôt de base
+# Procédure pas à pas sur les flux entrants ou sortants dans les configurations entrepôt de base
 
 Cette procédure pas à pas montre comment effectuer des flux entrants et sortants dans la configuration de base : commande par commande. Pour plus d’informations, voir [Présentation des différentes options de configuration](../../design-details-warehouse-management.md#overview-of-different-configuration-options).
 
-## <a name="prerequisites"></a>Conditions préalables
+## Conditions préalables  
 Pour exécuter cette procédure, vous devez faire de vous un employé d’entrepôt sur le site *ARGENT* en procédant comme suit :  
 1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 1.](../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Employés entrepôt**, puis sélectionnez le lien associé.  
 2. Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs**.  
 3. Dans le champ **Code d’emplacement**, entrez *ARGENT*.  
 
-## <a name="inbound-flow-receiving-and-putting-away-in-basic-warehouse-configurations"></a>Flux entrant : Réception et rangement dans les configurations de stockage de base
+## Flux entrant : Réception et rangement dans les configurations de stockage de base
 
 Dans [!INCLUDE[prod_short](../../includes/prod_short.md)], les processus entrants de réception et de rangement peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.  
 
@@ -37,10 +36,10 @@ Pour plus d'informations, reportez\-vous à [Détails de conception : flux d'en
 
 La procédure pas à pas suivante illustre la méthode B dans la table précédente.  
 
-### <a name="scenario"></a>Scénario
+### Scénario  
 Alicia, l’agent achat, crée un bon de commande pour divers grains torréfiés. Lorsque la livraison arrive à l’entrepôt, John, l’employé de l’entrepôt, range les articles dans des zones adaptées. Lorsque Jean valide le rangement, les articles sont reportés comme reçus dans l’inventaire et disponibles à la vente ou à une autre demande.  
 
-### <a name="steps"></a>Étapes
+### Étapes
 1. Configurez la page **Fiche emplacement** pour définir les flux d’entrepôt entrants de la compagnie.  
 
     1.  Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 2.](../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Emplacements**, puis sélectionnez le lien associé.  
@@ -96,7 +95,7 @@ Alicia, l’agent achat, crée un bon de commande pour divers grains torréfiés
 
     5.  Choisissez l'action **Reporter**, sélectionnez l'action **Réceptionner**, puis choisissez le bouton **OK**.  
 
-### <a name="results"></a>Résultats
+### Résultats 
  - les grains torréfiés sont maintenant enregistrés comme rangés dans les zones spécifiées
  - le **Rangement inventaire reporté** est créé
  - la **Réception achat reportée** est créée
@@ -104,7 +103,7 @@ Alicia, l’agent achat, crée un bon de commande pour divers grains torréfiés
  - l’**inventaire** d’articles est augmenté de la quantité choisie
     
 
-## <a name="outbound-flow-picking-and-shipping-in-basic-warehouse-configurations"></a>Flux sortant : Prélèvement et expédition dans les configurations de stockage de base
+## Flux sortant : Prélèvement et expédition dans les configurations de stockage de base
 
 Dans [!INCLUDE[prod_short](../../includes/prod_short.md)], les processus sortants de prélèvement et d'expédition peuvent être effectués de quatre manières, à l'aide de différentes fonctionnalités en fonction du niveau de complexité de l'entrepôt.  
 
@@ -119,10 +118,10 @@ Pour plus d'informations, reportez\-vous à [Détails de conception : flux de d
 
 La procédure pas à pas suivante illustre la méthode B dans la table précédente.
 
-### <a name="scenario-1"></a>Scénario
+### Scénario  
 Susan, préparatrice de commandes, crée un document de vente pour divers grains torréfiés et le transmet à l’entrepôt. Jean, le magasinier, doit s'assurer que la livraison est préparée et livrée au client. Jean gère toutes les tâches impliquées sur la page **Prélèvement inventaire**, qui indique automatiquement les endroits où les grains torréfiés sont stockés.
 
-### <a name="steps-1"></a>Étapes
+### Étapes
 C’est une suite de [Flux entrant : Réception et rangement dans les configurations de stockage de base](#inbound-flow-receiving-and-putting-away-in-basic-warehouse-configurations).
 
 1. Configurez la page **Fiche emplacement** pour définir les flux d’entrepôt entrants de la compagnie.  
@@ -159,7 +158,7 @@ C’est une suite de [Flux entrant : Réception et rangement dans les configura
 
 5. Choisissez l'action **Reporter**, sélectionnez **Livrer**, puis cliquez sur le bouton **OK**.  
 
-### <a name="results-1"></a>Résultats
+### Résultats
  - les grains torréfiés sont maintenant enregistrés comme prélevés depuis des zones spécifiées
  - le **Prélèvement inventaire reporté** est créé
  - la **Livraison vente reportée** est créée
@@ -167,7 +166,7 @@ C’est une suite de [Flux entrant : Réception et rangement dans les configura
  - l’**inventaire** d’articles est réduit de la quantité choisie
 
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 [Articles rangés avec rangements inventaire](../../warehouse-how-to-put-items-away-with-inventory-put-aways.md) 
 [Configurer des entrepôts de base avec les zones d’opérations](../../warehouse-how-to-set-up-basic-warehouses-with-operations-areas.md) 
 [Détails de conception : flux d’entrepôt entrant](../../design-details-inbound-warehouse-flow.md) 

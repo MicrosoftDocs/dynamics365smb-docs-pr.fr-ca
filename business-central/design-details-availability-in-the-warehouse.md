@@ -7,8 +7,9 @@ ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.date: 02/22/2023
 ms.custom: bap-template
+ms.service: dynamics-365-business-central
 ---
-# <a name="design-details-availability-in-the-warehouse"></a>Détails de conception : disponibilité dans l'entrepôt
+# Détails de conception : disponibilité dans l'entrepôt
 
 Restez au courant de la disponibilité des articles pour vous assurer que les commandes sortantes s’écoulent efficacement et que les délais de livraison sont optimaux.  
 
@@ -21,13 +22,13 @@ Avant d’affecter des quantités aux prélèvements pour les flux sortants, [!I
 
 Lorsque les conditions ne sont pas remplies, des messages d’erreur s’affichent. Un message typique est le message générique « Il n’y a rien à traiter ». . Le message peut s’afficher pour plusieurs raisons différentes, à la fois dans des flux entrants et sortants, où une ligne document contient le champ **Qté à traiter**.
 
-## <a name="bin-content-and-reservations"></a>Contenu et réservations de zone
+## Contenu et réservations de zone  
 
 Les quantités d’articles existent à la fois en tant qu’écritures entrepôt et en tant qu’écritures du grand livre d’articles dans l’inventaire. Ces deux types d’écritures contiennent différentes informations à propos de l’endroit où se trouvent les articles et s’ils sont disponibles. Les écritures d'entrepôt définissent la disponibilité d'un article par zone et type de zone, qui est appelée contenu de la zone. Les écritures du grand livre d’articles définissent la disponibilité d’un article par sa réservation par rapport aux documents sortants.  
 
 [!INCLUDE [prod_short](includes/prod_short.md)] calcule la quantité disponible pour le prélèvement lorsque le contenu de la zone est associé à des réservations.  
 
-## <a name="quantity-available-to-pick"></a>Quantité disponible pour prélèvement
+## Quantité disponible pour prélèvement  
 
 [!INCLUDE [prod_short](includes/prod_short.md)] réserve les articles pour les livraisons de documents de vente en attente afin qu’ils ne soient pas prélevés pour d’autres documents de vente livrés plus tôt. [!INCLUDE [prod_short](includes/prod_short.md)] soustrait les quantités des articles qui sont déjà en cours de traitement, comme suit :
 
@@ -46,7 +47,7 @@ Le résultat est disponible dans ces documents dans les champs de quantité, tel
 > [!NOTE]  
 > En ce qui concerne la priorité des réservations, la quantité à réserver est soustraite de la quantité disponible à prélever. Par exemple, si la quantité disponible dans les zones prélèvement est 5 unités, mais que 100 unités sont dans les zones de rangement, lorsque vous réservez plus de 5 unités pour une autre commande, un message d’erreur s’affiche, car la quantité supplémentaire doit être disponible dans les zones prélèvement.  
 
-### <a name="calculating-the-quantity-available-to-pick"></a>Calcul de la quantité disponible à prélever
+### Calcul de la quantité disponible à prélever  
 
 [!INCLUDE [prod_short](includes/prod_short.md)] calcule la quantité disponible à prélever de la façon suivante :  
 
@@ -56,7 +57,7 @@ Le schéma suivant montre les différents éléments du calcul.
 
 ![Disponible pour prélever avec chevauchement de réservation.](media/design_details_warehouse_management_availability_2.png "Disponible pour prélever avec chevauchement de réservation")  
 
-## <a name="quantity-available-to-reserve"></a>Quantité disponible à réserver
+## Quantité disponible à réserver
 
 Dans la mesure où les concepts de la valeur et de la réservation de zone coexistent, le nombre d’articles disponibles pour réserver doit s’aligner sur les affectations aux documents d'entrepôt sortants.  
 
@@ -73,11 +74,11 @@ Le résultat est affiché dans le champ **Quantité totale disponible** de la pa
 
 Sur une ligne réservation, la quantité qui ne peut pas être réservée, parce qu’elle est affectée dans l’entrepôt, est affichée dans le champ **Qté affectée à l’entrepôt** de la page **Réservation**.  
 
-## <a name="check-whether-items-are-available-for-picking"></a>Vérifier si les articles sont disponibles pour le prélèvement
+## Vérifier si les articles sont disponibles pour le prélèvement
 
 [!INCLUDE [inventory-availability-overview](includes/inventory-availability-overview.md)]
 
-### <a name="calculating-the-quantity-available-to-reserve"></a>Calcul de la quantité disponible à réserver
+### Calcul de la quantité disponible à réserver
 
 [!INCLUDE [prod_short](includes/prod_short.md)] calcule la quantité disponible à réserver de la façon suivante :  
 
@@ -87,7 +88,7 @@ Le schéma suivant montre les différents éléments du calcul.
 
 ![Disponible pour réserver par affectation entrepôt.](media/design_details_warehouse_management_availability_3.png "Disponible pour réserver par affectation entrepôt")  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi  
 
 [Vue d’ensemble de la gestion d’entrepôt](design-details-warehouse-management.md)
 [Afficher la disponibilité des articles](inventory-how-availability-overview.md)

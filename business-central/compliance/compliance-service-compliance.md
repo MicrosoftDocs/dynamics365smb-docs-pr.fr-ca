@@ -3,15 +3,14 @@ title: Conformité des services et contrat de niveau de service
 description: "Du point de vue des services, Business\_Central est à la hauteur des exigences strictes et de la conformité SLA dans plusieurs certifications ISO et spécifiques à l’industrie."
 author: sorenfriisalexandersen
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: null
 ms.reviewer: bholtorf
 ms.date: 06/14/2021
 ms.author: soalex
+ms.service: dynamics-365-business-central
 ---
-# <a name="service-compliance"></a>Conformité des services
+# Conformité des services
 
 Ce contenu comprend des informations sur la conformité des services concernant [!INCLUDE[prod_short](../includes/prod_short.md)] en ligne.  
 
@@ -21,11 +20,11 @@ Veuillez trouver la liste détaillée des [Offres de conformité au nuage de Bus
 
 Si vous êtes intéressé par la liste complète des offres de conformité de Microsoft, consultez [Microsoft Trust Center](https://www.microsoft.com/trustcenter/compliance/complianceofferings)
 
-## <a name="service-terms"></a>Conditions d'utilisation
+## Conditions d'utilisation
 
 [!INCLUDE [service-terms](../includes/service-terms.md)]
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Conformité](compliance-overview.md)  
 [Conformité des applications](compliance-application-compliance.md)  

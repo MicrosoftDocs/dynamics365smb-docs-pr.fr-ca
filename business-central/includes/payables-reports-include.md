@@ -3,6 +3,7 @@ author: brentholtorf
 ms.topic: include
 ms.date: 09/21/2023
 ms.author: bholtorf
+ms.service: dynamics-365-business-central
 ---
 
 Le tableau suivant décrit certains des principaux rapports dans les rapports de comptabilité fournisseur.

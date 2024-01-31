@@ -3,20 +3,19 @@ title: "Procédure\_: regrouper des livraisons sur une seule facture | Microsoft
 description: 'Si vous souhaitez facturer plusieurs bons de livraison à la fois, vous pouvez utiliser la fonction de regroupement des bons de livraison.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: null
 ms.date: 12/16/2021
 ms.author: bholtorf
+ms.service: dynamics-365-business-central
 ---
-# <a name="combine-shipments-on-a-single-invoice"></a>Regroupement de livraisons sur une seule facture
+# Regroupement de livraisons sur une seule facture
 
 Si vous souhaitez facturer plusieurs bons de livraison à la fois, vous pouvez utiliser la fonction de regroupement des bons de livraison.  
 
 Avant de pouvoir regrouper des livraisons, plusieurs livraisons vente pour le même client doivent être reportées dans la même devise. Autrement dit, vous devez avoir créé au moins deux documents de vente et les avoir reportés comme étant livrés, mais pas facturés. 
 
-## <a name="to-manually-combine-shipments-on-a-single-invoice"></a>Regrouper manuellement les expéditions sur une seule facture
+## Regrouper manuellement les expéditions sur une seule facture
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures vente**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**. Pour plus d'informations, reportez-vous à [Facturer des ventes](sales-how-invoice-sales.md).
@@ -33,7 +32,7 @@ Avant de pouvoir regrouper des livraisons, plusieurs livraisons vente pour le m�
 > [!TIP]  
 > Si vous avez livré des commandes pour lesquelles le **N° débiteur** est différent du **N° client facturé**. Ces lignes ne sont pas affichées dans le rapport **Extraire lignes livraison**. Utilisez la personnalisation pour ajouter le champ **N° débiteur** à la page et supprimez le filtre. Vous pouvez désormais ajouter des lignes livraison à la facture quelle que soit la valeur du champ **N° débiteur** tant que le champ **N° client facturé** sur les lignes livraison correspond à la valeur sur la facture vente.  
 
-## <a name="to-automatically-combine-shipments-on-a-single-invoice"></a>Regrouper automatiquement les expéditions sur une seule facture
+## Regrouper automatiquement les expéditions sur une seule facture
 
 [!INCLUDE[prod_short](includes/prod_short.md)] ne sélectionne que les documents de vente où **Regrouper les B.L.** est coché. 
 
@@ -45,7 +44,7 @@ Avant de pouvoir regrouper des livraisons, plusieurs livraisons vente pour le m�
 > [!NOTE]  
 >  Vous devez valider manuellement les avoirs si la case à cocher **Valider avoirs** n'a pas été activée pour le traitement par lots.  
 
-## <a name="to-remove-open-sales-orders-after-combined-shipment-posting"></a>Pour supprimer des documents de vente ouverts après le report des livraisons regroupées
+## Pour supprimer des documents de vente ouverts après le report des livraisons regroupées
 
 Lorsque des livraisons sont regroupées sur une facture et reportées, une facture vente reportées est créée pour les lignes facturées. Le champ **Quantité facturée** de la commande ouverte vente ou de la commande vente d'origine est mis à jour sur la base de la quantité facturée.  
 
@@ -59,7 +58,7 @@ Il est également possible de supprimer chacune des commandes vente manuellement
 
 Répétez les étapes 1 à 3 pour tous les autres documents affectés, comme des commandes permanentes ventes.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Ventes](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

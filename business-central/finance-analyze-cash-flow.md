@@ -3,15 +3,14 @@ title: Analyse des trésoreries
 description: 'Décrit comment utiliser les graphiques Cycle trésorerie, Revenus et dépenses, Trésorerie et Prévision de trésorerie pour analyser les flux de trésorerie passés et futurs, entrants et sortants de votre société.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'money flow, expense and income, liquidity, cash receipts minus cash payments, Cartera'
 ms.search.form: '762, 840, 841, 847, 848, 849, 850, 851, 857, 858, 859, 860, 862, 863, 865, 866, 867, 868, 869, 1818'
 ms.date: 12/20/2021
 ms.author: bholtorf
+ms.service: dynamics-365-business-central
 ---
-# <a name="analyzing-cash-flow-in-your-company"></a>Analyse de la trésorerie dans votre compagnie
+# Analyse de la trésorerie dans votre compagnie
 Les graphiques du tableau de bord Comptable offrent des analyses qui peuvent vous aider à prendre des décisions judicieuses sur les opérations à effectuer avec votre trésorerie.  
 
 | Pour répondre à des questions comme celles-ci | Utiliser ce graphique |
@@ -36,13 +35,13 @@ Si vous souhaitez vérifier la prévision, outre les écritures de prévision, v
 * Retire les dépenses et ajoute les recettes.  
 * Ignore les commandes ventes et les commandes achats en double.  
 
-## <a name="to-view-a-cash-flow-worksheet"></a>Pour afficher une feuille d'activité de trésorerie
+## Pour afficher une feuille d'activité de trésorerie
 
 1. Recherchez **Prévisions de trésorerie**, puis sélectionnez le lien associé.  
 2. Choisissez une prévision de trésorerie, puis sélectionnez l'option **Feuille trésorerie**.  
 3. Sur la page **Feuille trésorerie**, sélectionnez l'action **Proposer lignes feuille activité**.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Configuration de Finance](finance-setup-finance.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

@@ -10,12 +10,13 @@ ms.search.keywords: 'account schedule, analysis, reporting, financial report, bu
 ms.reviewer: bholtorf
 ms.date: 04/01/2021
 ms.author: jswymer
+ms.service: dynamics-365-business-central
 ---
-# <a name="power-bi-integration-component-and-architecture-overview-for-"></a>Vue d’ensemble Architecture et composante d’intégration Power BI pour [!INCLUDE[prod_short](includes/prod_short.md)]
+# Vue d’ensemble Architecture et composante d’intégration Power BI pour [!INCLUDE[prod_short](includes/prod_short.md)]
 
 Dans cet article, vous découvrirez les différents aspects de l’intégration de Power BI à [!INCLUDE[prod_short](includes/prod_short.md)] pour vous aider à comprendre sa mise en œuvre et son utilisation.
 
-## <a name="components"></a>Composantes
+## Composantes
 
 Le tableau suivant décrit les principales composantes impliquées dans l’intégration Power BI.
 
@@ -25,7 +26,7 @@ Le tableau suivant décrit les principales composantes impliquées dans l’int�
 |Power BI Desktop|Outil de création permettant de créer des rapports et des tableaux de bord, et vous permettant d’exécuter des rapports. Il est disponible en téléchargement gratuit sur Microsoft Store et est installé localement.|
 |[!INCLUDE[prod_short](includes/prod_short.md)]|Solution en ligne ou sur site avec des connecteurs exposés à Power BI et possibilité d’intégrer une partie de Power BI.|
 
-## <a name="whats-available-from-the-start"></a>Ce qui est disponible dès le départ
+## Ce qui est disponible dès le départ
 
 Le tableau suivant décrit les fonctionnalités disponibles.
 
@@ -37,7 +38,7 @@ Le tableau suivant décrit les fonctionnalités disponibles.
 |Rapports Power BI par défaut sur les tableaux de bord déployés vers Power BI|En ligne|
 |Applications Power BI sur Microsoft AppSource|En ligne|
 
-## <a name="architecture"></a>Architecture
+## Architecture
 
 [!INCLUDE[prod_short](includes/prod_short.md)] s’intègre à Power BI via un connecteur utilisant OData. La source de données pour les rapports Power BI est exposée comme les pages API et les services Web OData.
 
@@ -45,7 +46,7 @@ Le tableau suivant décrit les fonctionnalités disponibles.
 
 À partir de février 2022, les rapports Power BI pour [!INCLUDE[prod_short](includes/prod_short.md)] Online proviennent d’une réplique de base de données secondaire en lecture seule. La réplique de la base de données fait partie de la capacité [échelle horizontale en lecture](/dynamics365/business-central/dev-itpro/administration/database-read-scale-out-overview) dans [!INCLUDE[prod_short](includes/prod_short.md)] Online. Cette configuration libère la base de données principale pour les transactions, ce qui améliore les performances du système. La connexion à la réplique de la base de données en lecture seule fait partie intégrante du connecteur Business Central Online et ne nécessite aucune configuration supplémentaire de votre part. Tous les nouveaux rapports se connecteront par défaut au réplica de base de données en lecture seule. Les anciens rapports utiliseront toujours la base de données principale. Pour plus d’informations, voir [Plan de la 2e vague de lancement 2021 pour Business Central](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/use-secondary-read-only-database-power-bi-reporting).
 
-## <a name="general-flow"></a>Flux général
+## Flux général
 
 Le diagramme suivant illustre le flux de travail de base pour les utilisateurs lors de la connexion de [!INCLUDE[prod_short](includes/prod_short.md)] à Power BI.
 
@@ -59,7 +60,7 @@ Le diagramme suivant illustre le flux de travail de base pour les utilisateurs l
 6. L’utilisateur crée un rapport dans Power BI Desktop.
 7. L’utilisateur publie le rapport vers le service Power BI. Les rapports sont ensuite disponibles pour la sélection dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Business Central et Power BI](admin-powerbi.md)  
 [Power BI pour les consommateurs](/power-bi/consumer/end-user-consumer)  

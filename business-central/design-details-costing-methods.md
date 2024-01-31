@@ -9,8 +9,9 @@ ms.workload: na
 ms.search.keywords: null
 ms.date: 05/12/2023
 ms.author: bholtorf
+ms.service: dynamics-365-business-central
 ---
-# <a name="design-details-costing-methods"></a>Détails de conception : modes évaluation stock
+# Détails de conception : modes évaluation stock
 
 Le mode évaluation stock détermine si une valeur réelle ou budgétée est capitalisée et prise en compte dans le calcul des coûts. Au même titre que la date de report et la séquence, le mode d’évaluation coût a aussi une incidence sur l’enregistrement du flux des coûts.
 
@@ -49,7 +50,7 @@ Les méthodes d'évaluation de l'inventaire diffèrent dans la façon d'évaluer
 |**Standard**     |Facile à utiliser, mais requiert un entretien qualifié.|Le lettrage effectue le suivi de la **quantité restante**.<br /><br /> L'affectation est basée sur la méthode FIFO.|Réévalue les quantités facturées et non facturées.<br /><br /> Peut être effectué par article ou par écriture du grand livre d’articles.<br /><br /> Peut être fait à une date antérieure.|Utilisez la page **Standard Worksheet** pour régulièrement mettre à jour et rouler les coûts standard.<br /><br /> N'est PAS pris en charge par unité de stock.<br /><br /> Aucun enregistrement historique n'existe pour les coûts standard.|
 |**Spécifique**     |Requiert une traçabilité à la fois sur les transactions entrante et sortante.<br /><br /> Généralement utilisé pour les articles fabriqués de série.|Tous les lettrages sont fixes.|Réévalue uniquement la quantité facturée.<br /><br /> Peut être effectué par article ou par écriture du grand livre d’articles.<br /><br /> Peut être fait à une date antérieure.|Vous pouvez utiliser le suivi d'article spécifique sans utiliser le mode d'évaluation spécifique. Alors le coût ne suit PAS le numéro de lot, mais l'acceptation du coût du mode d'évaluation sélectionné.|
 
-## <a name="example"></a>Exemple :
+## Exemple :
 
 Cette section donne des exemples de la manière dont les divers modes d'évaluation coût affectent la valeur inventaire.  
 
@@ -67,7 +68,7 @@ Le tableau suivant montre les augmentations et diminutions d'inventaire sur lesq
 > [!NOTE]  
 > La quantité qui en résulte dans l'inventaire est égale à zéro. Par conséquent, la valeur de l'inventaire doit également être zéro, quel que soit le mode évaluation coût.  
 
-### <a name="effect-of-costing-methods-on-valuing-inventory-increases"></a>Effet des modes évaluation coût sur l'évaluation des augmentations d'inventaire
+### Effet des modes évaluation coût sur l'évaluation des augmentations d'inventaire  
 
 Pour les articles utilisant les modes évaluation coût qui utilisent le coût réel comme base d'évaluation (**FIFO**, **LIFO**, **Moyenne** ou **Spécifique**), les augmentations d'inventaire sont évaluées au coût d'acquisition de l'article.  
 
@@ -75,11 +76,11 @@ Pour les articles utilisant les modes évaluation coût qui utilisent le coût r
 
     Pour les articles qui utilisent le mode d'évaluation du coût **Standard**, les entrées d'inventaire sont évaluées au coût standard actuel de l'article.  
 
-#### <a name="standard"></a>Standard
+#### Standard  
 
 Pour les articles qui utilisent le mode d'évaluation du coût **Standard**, les entrées d'inventaire sont évaluées au coût standard actuel de l'article.  
 
-### <a name="effect-of-costing-methods-on-valuing-inventory-decreases"></a>Effet des modes évaluation coût sur l'évaluation des diminutions d'inventaire
+### Effet des modes évaluation coût sur l'évaluation des diminutions d'inventaire
 
 - **FIFO**  
 
@@ -147,7 +148,7 @@ Pour les articles qui utilisent le mode d'évaluation du coût **Standard**, les
     |01/03/20|-1|-10,00|**1**|5|  
     |01/04/20|-1|-30,00|**3**|6|  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Détails de conception : évaluation du coût de l’inventaire](design-details-inventory-costing.md)  
 [Détails de conception : écart](design-details-variance.md)  

@@ -3,14 +3,13 @@ title: Création des budgets des coûts
 description: Cette rubrique décrit l'emplacement où créer et analyser les budgets des coûts. La budgétisation en comptabilité analytique ressemble à la budgétisation dans le grand livre.
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.form: '1115, 1116, 1117, 1118, 1119, 1120, 1121, 1131, 1132, 1133'
 ms.date: 06/16/2021
 ms.author: bholtorf
+ms.service: dynamics-365-business-central
 ---
-# <a name="creating-cost-budgets"></a>Création des budgets des coûts
+# Création des budgets des coûts
 
 La budgétisation en comptabilité analytique ressemble à la budgétisation dans le grand livre. Un budget de coûts est créé en fonction des types de coûts, tel qu'un budget est créé pour les écritures en fonction des comptes du grand livre.  
 
@@ -26,7 +25,7 @@ Vous utilisez les pages suivantes pour créer et analyser les budgets de coûts.
 |Consultez les registres du budget des coûts et les écritures correspondantes.|Page **Registres du budget des coûts**|  
 |Imprimez les comparaisons budgétaires de coûts à l'aide de divers états.|Rapport **Budget/Solde comptabilité analytique**<br /><br /> Rapport **Budget/Relevé comptabilité analytique**<br /><br /> Rapport **Budget des coûts par centre de coûts**<br /><br /> Rapport **Budget des coûts par objet de coûts**|  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Comptabilité pour les coûts](finance-manage-cost-accounting.md)  
 [Créer des budgets GL](finance-how-create-budgets.md)  

@@ -3,21 +3,20 @@ title: Reporter le rebut manuellement
 description: 'Si le traitement produit un rebut, vous pouvez entrer ce rebut dans le journal de sortie. Remarquez que la quantité perte n''augmente pas la quantité produite.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.form: 99000823
 ms.date: 03/08/2023
 ms.author: bholtorf
+ms.service: dynamics-365-business-central
 ---
-# <a name="post-scrap-manually"></a>Reporter le rebut manuellement
+# Reporter le rebut manuellement
 
 Si le traitement produit un rebut, vous pouvez entrer ce rebut dans le journal de sortie.  
 
 > [!NOTE]
 > La quantité mise au rebut n'augmente pas la quantité produite.  
 
-## <a name="to-post-scrap-manually"></a>Pour reporter le rebut manuellement
+## Pour reporter le rebut manuellement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal de sortie**, puis choisissez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
@@ -27,7 +26,7 @@ Si le traitement produit un rebut, vous pouvez entrer ce rebut dans le journal d
 
     [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]    
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Production](production-manage-manufacturing.md)
 [Paramétrage de la production](production-configure-production-processes.md)  
