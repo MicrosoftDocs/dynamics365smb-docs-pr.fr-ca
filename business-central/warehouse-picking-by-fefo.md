@@ -9,7 +9,7 @@ ms.date: 04/01/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# Activer le prélèvement d'articles par FEFO
+# <a name="enable-picking-items-by-fefo"></a>Activer le prélèvement d'articles par FEFO
 First-Expired-First-Out (FEFO) est une méthode de tri qui garantit que les articles les plus anciens, ceux qui ont les dates d'expiration les plus anciennes, sont prélevés en premier.  
 
  Cette fonctionnalité ne fonctionne que lorsque les critères suivants sont réunis :  
@@ -32,7 +32,7 @@ Pour activer des mouvements selon FEFO, laissez le champ **Depuis zone** vide su
 <br /><br />
 Si le champ **Report expiration strict** est sélectionné sur la **Fiche Code traçabilité**, seuls les articles non expirés seront inclus dans le prélèvement et les lignes seront triées selon le principe FEFO.
 
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi
 [Prélever des articles pour une livraison entrepôt](warehouse-how-to-pick-items-for-warehouse-shipment.md)   
 [Prélever des articles avec les prélèvements stock](warehouse-how-to-pick-items-with-inventory-picks.md)   
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
