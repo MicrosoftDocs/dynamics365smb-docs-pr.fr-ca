@@ -3,9 +3,7 @@ title: Transfert et report des écritures de coûts
 description: 'Avant de définir des affectations de coûts, vous devez comprendre les différentes sources d’où proviennent les écritures de coûts.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.form: '1100, 1103, 1104, 1108, 1113, 1135'
 ms.date: 06/16/2021
 ms.author: bholtorf

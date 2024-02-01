@@ -3,9 +3,7 @@ title: Gestion de l’intégration de OneDrive avec Business Central
 description: Découvrez ce que vous pouvez faire pour gérer une intégration entre Business Central et OneDrive Entreprise.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'OneDrive, share, browser'
 ms.date: 02/28/2022
 ms.author: jswymer

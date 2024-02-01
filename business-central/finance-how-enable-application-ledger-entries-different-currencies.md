@@ -3,9 +3,7 @@ title: Affecter des écritures dans des devises différentes
 description: 'Vous pouvez affecter des écritures du grand livre dans différentes devises, par exemple si vous vendez à un client dans une devise et recevez le paiement dans une autre devise.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'multiple currencies, payment, reconcile'
 ms.search.form: '148, 460, 25'
 ms.date: 04/01/2021

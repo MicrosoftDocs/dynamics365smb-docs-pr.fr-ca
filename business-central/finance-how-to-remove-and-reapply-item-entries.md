@@ -3,9 +3,7 @@ title: Supprimer et affecter à nouveau des écritures article
 description: Vous pouvez visualiser et modifier manuellement certaines écritures d'affectation article qui sont créées automatiquement lors des transactions d'inventaire.
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.form: '506, 521, 9125'
 ms.date: 04/01/2021
 ms.author: bholtorf

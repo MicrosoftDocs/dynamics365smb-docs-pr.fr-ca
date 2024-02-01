@@ -3,6 +3,7 @@ author: brentholtorf
 ms.topic: include
 ms.date: 03/01/2022
 ms.author: bholtorf
+ms.service: dynamics-365-business-central
 ---
 
 Le tableau suivant décrit certains des principaux rapports dans les rapports de production.

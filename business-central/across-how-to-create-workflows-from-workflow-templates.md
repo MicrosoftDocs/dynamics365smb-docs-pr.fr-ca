@@ -3,9 +3,7 @@ title: "Procédure\_: créer des flux de travail à partir de modèles de flux d
 description: "Pour gagner du temps lors de la création de nouveaux flux de travail approbation, vous pouvez créer des flux de travail non modifiables à partir de modèles de flux de travail avec pour préfixe «\_MS-\_»."
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: null
 ms.date: 09/08/2022
 ms.author: bholtorf

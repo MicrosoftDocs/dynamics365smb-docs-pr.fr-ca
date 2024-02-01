@@ -3,9 +3,7 @@ title: Dépannage de l’intégration de Microsoft Teams
 description: Découvrez ce que vous pouvez faire en tant qu’administrateur pour contrôler l’intégration Microsoft Teams.
 author: jswymer
 ms.topic: get-started
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'Teams, MS Teams, Microsoft Teams, Skype, Link, Microsoft 365, collaborate, collaboration, teamwork, troubleshooting, errors'
 ms.date: 09/19/2023
 ms.author: jswymer

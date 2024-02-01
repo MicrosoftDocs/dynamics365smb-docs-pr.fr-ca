@@ -3,9 +3,7 @@ title: "Détails de conception\_: structure du moteur de report"
 description: L’interface de report utilise des fonctions de moteur de report pour préparer et insérer l’écriture et les enregistrements d’écriture TVA.
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: null
 ms.date: 06/15/2021
 ms.author: bholtorf

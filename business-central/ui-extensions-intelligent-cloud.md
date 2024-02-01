@@ -3,9 +3,7 @@ title: Extension de base de la migration vers le nuage
 description: Utilisez l'extension Base de migration vers le nuage pour connecter votre solution sur site à Business Central Online.
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms. search.keywords: 'app, add-in, manifest, customize, import, implement'
 ms.date: 12/11/2023
 ms.author: bholtorf

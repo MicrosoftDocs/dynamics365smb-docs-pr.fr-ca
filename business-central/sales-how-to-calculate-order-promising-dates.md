@@ -1,16 +1,15 @@
 ---
-title: Calculer des dates promesse livraison
+title: Calcul des dates promesse commande
 description: La fonction de configuration des promesses livraison est un outil permettant de calculer la date la plus proche à laquelle un article est disponible pour la livraison.
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: null
-ms.date: 06/29/2021
+ms.date: 12/13/2023
 ms.author: bholtorf
+ms.service: dynamics-365-business-central
 ---
-# Calculer des dates promesse livraison
+# Calcul des dates promesse commande
 
 Une compagnie doit pouvoir informer ses clients des dates de livraison de commande. La page **Lignes promesse de livraison** vous permet d’effectuer cette opération à partir d’un document de vente.  
 
@@ -43,17 +42,17 @@ La fonction Disponible à la vente (ATP) calcule les dates sur la base du systè
 
 ### Simulation de délai
 
-La fonction Simulation de délai (CTP) considère un scénario basé sur l'hypothèse, qui s'applique uniquement aux quantités d'articles qui ne figurent pas dans l'inventaire ou des commandes programmées. En fonction de ce scénario, [!INCLUDE[prod_short](includes/prod_short.md)] calcule la date la plus proche à laquelle cet article sera disponible s'il doit être produit, acheté ou transféré.
+La fonction Simulation de délai (CTP) considère un scénario basé sur l'hypothèse, qui s'applique uniquement aux quantités d'articles qui ne figurent pas dans l'inventaire ou des commandes programmées. En fonction de ce scénario, [!INCLUDE[prod_short](includes/prod_short.md)] calcule la date la plus proche à laquelle cet article sera disponible s’il doit être produit, acheté ou transféré.
 
 #### Exemple :
 
-Dans le cas d’une commande de 10 pièces, lorsque 6 pièces sont disponibles en inventaire ou dans des commandes programmées, alors le calcul de simulation de délai est basé sur 4 pièces.
+Dans le cas d’une commande de 10 pièces, lorsque 6 pièces sont disponibles en inventaire ou dans des commandes programmées, alors le calcul de simulation de délai est basé sur 4 pièces.
 
 ### Calculs
 
 Lorsque [!INCLUDE[prod_short](includes/prod_short.md)] calcule la date de livraison du client, il effectue deux tâches :  
 
-- Calcule la première date de livraison possible lorsque le client n'a pas demandé une date de livraison spécifique.  
+- Calcule la première date de livraison possible lorsque le client n’a pas demandé une date de livraison spécifique.  
 - Vérifie si la date de livraison demandée par le client ou confirmée au client est réaliste.  
 
 Si le client ne demande pas de date de livraison spécifique, la date de livraison est configurée comme la date de travail, et la disponibilité est ensuite basée sur cette date. Si l'article est en inventaire, [!INCLUDE[prod_short](includes/prod_short.md)] calcule à l'avance pour déterminer quand la commande peut être livrée. Ceci est accompli par les formules suivantes :  

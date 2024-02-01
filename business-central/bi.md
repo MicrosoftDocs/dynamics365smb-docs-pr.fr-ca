@@ -3,9 +3,7 @@ title: Décisionnel pour le secteur de la finance
 description: "Business\_Central contient de nombreuses fonctionnalités pour vous aider à collecter, analyser et partager des données de compagnie précieuses pour la veille économique et la prise de décision."
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'bi, power BI, analysis, KPI'
 ms.search.form: '103, 108, 198, 490'
 ms.date: 09/22/2022

@@ -3,9 +3,7 @@ title: Configurer les informations pour les contacts| Microsoft Docs
 description: 'Décrit les tâches pour spécifier les informations et les codes, par exemple, sur les secteurs d''activité et les relations d''affaires, avant de paramétrer des contacts.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'relationship, prospect'
 ms.date: 04/01/2021
 ms.author: bholtorf

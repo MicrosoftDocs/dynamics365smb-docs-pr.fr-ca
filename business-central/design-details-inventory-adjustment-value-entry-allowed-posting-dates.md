@@ -3,9 +3,7 @@ title: "Message d’erreur\_: «\_La date de report n’est pas incluse dans la 
 description: "Résolvez l’erreur sous-jacente au message «\_La date de report n’est pas incluse dans la plage de dates de report autorisées\_» lorsque vous exécutez le traitement en lot Ajuster coûts\_: Écr. article."
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: null
 ms.date: 09/17/2021
 ms.author: bholtorf

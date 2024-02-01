@@ -3,9 +3,7 @@ title: "Mise à niveau d'une intégration à Dynamics\_365 Sales"
 description: "Cette rubrique vous décrit la procédure de mise à niveau de votre intégration Dynamics 365 Business Central vers la dernière version de Dynamics\_365\_Sales."
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'sales, crm, integration, integrating'
 ms.date: 06/14/2021
 ms.author: bholtorf

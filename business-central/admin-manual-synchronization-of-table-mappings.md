@@ -3,12 +3,11 @@ title: Synchronisation manuelle des mappages de table | Microsoft Docs
 description: La synchronisation copie les données entre les tables Microsoft Dataverse et Business Central pour conserver les deux systèmes à jour.
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'sales, crm, integration, sync, synchronize'
 ms.date: 04/01/2021
 ms.author: bholtorf
+ms.service: dynamics-365-business-central
 ---
 
 # Synchroniser manuellement les mappages de table

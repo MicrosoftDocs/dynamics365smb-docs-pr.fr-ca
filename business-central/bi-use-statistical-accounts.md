@@ -9,8 +9,9 @@ ms.date: 03/07/2023
 ms.custom: bap-template
 ms.search.keywords: 'bi, power BI, analysis, KPI, financial report'
 ms.search.form: '2632, 2631, 2633, 2623, 2634'
+ms.service: dynamics-365-business-central
 ---
-# <a name="analyze-data-with-statistical-accounts"></a>Analyse des données avec les comptes statistiques
+# Analyse des données avec les comptes statistiques
 
 Utilisez des comptes statistiques pour compléter les informations dans les rapports financiers. Les comptes statistiques vous permettent d’ajouter des mesures basées sur des données non transactionnelles. Vous ajoutez les données non transactionnelles en tant qu’unités numériques, telles que :
 
@@ -26,12 +27,12 @@ En termes de fonctionnement, les comptes statistiques sont similaires aux compte
 
 Il existe quelques différences essentielles entre les comptes statistiques et les comptes de report. Les comptes statistiques sont des entités distinctes et ne sont pas inclus dans les rapports de balance de vérification générale. En outre, vous n’avez pas besoin d’équilibrer les montants débiteurs et créditeurs lorsque vous utilisez des journaux de comptes statistiques pour reporter des écritures sur un compte statistique. Vous venez de reporter le montant.
 
-## <a name="set-up-a-statistical-account"></a>Configurer un compte statistique
+## Configurer un compte statistique
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Comptes statistiques**, puis sélectionnez le lien associé.
 1. Renseignez les champs du raccourci **Général**. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
-## <a name="post-amounts-to-a-statistical-account"></a>Reporter des montants sur un compte statistique
+## Reporter des montants sur un compte statistique
 
 1. Pour reporter les montants que vous souhaitez suivre, sur la page **Comptes statistiques**, choisissez l’action **Journal comptes statistiques**.
 1. Dans le champ **Date de report**, entrez la dernière date de la période de report pour laquelle vous souhaitez reporter les montants.
@@ -41,11 +42,11 @@ Il existe quelques différences essentielles entre les comptes statistiques et l
 1. Dans le champ **Montant**, entrez le total à reporter. 
 1. Facultatif : Si vous souhaitez inclure le compte statistique dans des analyses plus avancées, spécifiez les dimensions dans les champs **Code emplacement immo** et **Code groupe clients**. Pour en savoir plus sur les dimensions, accédez à [Analyser les données par dimensions](bi-how-analyze-data-dimension.md).
 
-## <a name="verify-statistical-account-amounts"></a>Vérifier les montants sur un compte statistique
+## Vérifier les montants sur un compte statistique
 
 Sur la page **Comptes statistiques** , utilisez l’action **Solde des comptes statistiques** pour vérifier que les montants enregistrés sont corrects pour chaque période.  
 
-## <a name="include-the-statistical-account-in-a-financial-report"></a>Inclure le compte statistique dans un rapport financier
+## Inclure le compte statistique dans un rapport financier
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rapports financiers**, puis choisissez le lien associé.
 1. Créez un rapport financier de l’une des manières suivantes :
@@ -61,7 +62,7 @@ Sur la page **Comptes statistiques** , utilisez l’action **Solde des comptes s
 1. Dans le champ **Type de ligne**, choisissez d’afficher le solde à la date de report ou au début de la période de report, ou d’afficher la modification du montant au cours de la période.
 1. Renseignez les champs restants. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Décisionnel pour le secteur de la finance](bi.md)  
 [Rapports et analyses financiers dans Business Central](finance-reports.md)

@@ -3,12 +3,11 @@ title: "Procédure\_: configurer des heures de travail et des heures de service"
 description: Découvrez comment configurer les heures ouvrées et de service pour calculer la date et le délai de réponse pour les commandes service et les devis.
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: null
 ms.date: 06/23/2021
 ms.author: bholtorf
+ms.service: dynamics-365-business-central
 ---
 # Configurer des heures de travail et des heures de service
 Généralement, un système de gestion de services suit les heures ressource et les états commande service afin de prévoir les besoins en charges de travail et en service. [!INCLUDE[prod_short](includes/prod_short.md)] intègre des outils que vous pouvez personnaliser afin d'enregistrer ce type d'informations.  

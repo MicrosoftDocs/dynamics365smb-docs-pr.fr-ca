@@ -3,9 +3,7 @@ title: Configurer les méthodes de livraison
 description: Vous pouvez définir un code pour chacune de vos méthodes de livraison offertes et saisir les informations qui les concernent.
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: incoterms
 ms.search.form: '11, 130'
 ms.date: 04/01/2021

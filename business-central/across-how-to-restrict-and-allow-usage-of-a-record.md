@@ -3,9 +3,7 @@ title: Comment restreindre et autoriser l’utilisation d’un enregistrement
 description: 'Si vous souhaitez restreindre l’utilisation d’un enregistrement, vous pouvez incorporer deux réponses de workflow dans un workflow qui contrôle l’utilisation de l’enregistrement.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: null
 ms.date: 09/08/2022
 ms.author: bholtorf

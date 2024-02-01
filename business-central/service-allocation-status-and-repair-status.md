@@ -3,9 +3,7 @@ title: État affectation et état réparation | Microsoft Docs
 description: Découvrez la relation entre l'état réparation des articles de service et l'état affectation des écritures d'affectation associées.
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'resources, allocation, status, repairs'
 ms.date: 04/01/2021
 ms.author: bholtorf

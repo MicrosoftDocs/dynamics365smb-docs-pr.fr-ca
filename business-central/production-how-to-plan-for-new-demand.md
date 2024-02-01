@@ -3,9 +3,7 @@ title: Planifier de nouvelles demandes commande par commande
 description: 'Cette tâche de planification peut être effectuée sur la page Planification commande, qui affiche toute nouvelle demande ainsi que les informations de disponibilité et les suggestions d’approvisionnement, notamment la substitution d’article.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.form: '5522, 5524, 5526'
 ms.date: 07/29/2021
 ms.author: bholtorf

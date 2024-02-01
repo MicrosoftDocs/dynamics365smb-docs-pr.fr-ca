@@ -3,9 +3,7 @@ title: Créer une facture vente projet pour facturer un projet
 description: Décrit comment facturer des clients pour les coûts au fur et à mesure de l’avancée du projet et des coûts accumulés.
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: project invoice
 ms.search.form: '1002, 1007,'
 ms.date: 06/22/2021

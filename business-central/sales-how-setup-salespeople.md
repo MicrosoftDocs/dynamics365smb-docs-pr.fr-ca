@@ -3,9 +3,7 @@ title: Configurer un représentant (contient une vidéo) | Microsoft Docs’
 description: 'Vous pouvez configurer un identificateur pour chacun de vos représentants, afin de pouvoir suivre les performances de la personne ou affecter un représentant à un contact.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: sales rep
 ms.date: 04/01/2021
 ms.author: bholtorf

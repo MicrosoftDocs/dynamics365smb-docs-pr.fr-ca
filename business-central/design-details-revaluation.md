@@ -7,9 +7,10 @@ ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.date: 07/07/2023
 ms.custom: bap-template
+ms.service: dynamics-365-business-central
 ---
 
-# <a name="design-details-revaluation"></a>Détails de conception : réévaluation
+# Détails de conception : réévaluation
 
 Vous pouvez réévaluer l'inventaire en fonction de la base d'évaluation reflétant le plus précisément la valeur d'inventaire. Vous pouvez également antidater une réévaluation, afin de mettre à jour correctement le coût des biens vendus (COGS) pour les articles qui ont déjà été vendus. Les articles utilisant le mode évaluation stock standard et qui n’ont pas été entièrement facturés peuvent également être réévalués.  
 
@@ -19,7 +20,7 @@ Dans [!INCLUDE[prod_short](includes/prod_short.md)], la flexibilité suivante es
 - Pour les articles utilisant le mode évaluation stock standard, les écritures coût prévu sont incluses dans la réévaluation.  
 - Des diminutions d'inventaire affectées par la réévaluation sont détectées.  
 
-## <a name="calculate-the-revaluable-quantity"></a>Calculer la quantité réévaluable
+## Calculer la quantité réévaluable
 
 La quantité réévaluable est la quantité restante en inventaire qui est disponible à une date donnée. La quantité correspond au total des écritures article entièrement facturées que vous reportez à la date de réévaluation ou avant.  
 
@@ -30,7 +31,7 @@ Une fois qu'une réévaluation a été reportée, vous pouvez reporter une dimin
 
 Étant donné que vous pouvez effectuer la réévaluation à n’importe quelle date, vous devez avoir des conventions pour le moment où un article est considéré comme faisant partie de l'inventaire. Par exemple, lorsque l'article figure dans l'inventaire et lorsque l'article est un travail en cours (TEC).  
 
-### <a name="example"></a>Exemple :
+### Exemple :  
 
 L'exemple suivant montre à quel moment un article TEC se transforme pour devenir une partie de l'inventaire. L'exemple est basé sur la production d'une chaîne de 150 liens.  
 
@@ -79,7 +80,7 @@ La date d'évaluation est définie sur la date du report de la consommation (02-
 |01/02/20|Coût direct|01/02/20|-150,00|2|2|  
 |15/02/20|Coût direct|15/02/20|150.00|3|3|  
 
-## <a name="expected-cost-in-revaluation"></a>Coût prévu de la réévaluation
+## Coût prévu de la réévaluation
 
 La quantité réévaluable est la somme de la quantité des écritures article entièrement facturées avec une date de report égale ou antérieure à la date de réévaluation. Lorsque certains articles sont reçus ou livrés, mais pas facturés, vous ne pouvez pas calculer leur valeur d'inventaire. Les articles utilisant le mode évaluation stock standard ne sont pas limités à cet égard.  
 
@@ -92,7 +93,7 @@ Lors du calcul de la quantité réévaluable pour les articles utilisant le mode
 - Une écriture valeur avec le type d'écriture **Écart**. Cette écriture enregistre la différence entre le coût facturé et le coût standard réévalué.  
 - Une écriture valeur avec le type d'écriture **Réévaluation**. Cette écriture enregistre l'inversion de la réévaluation du coût prévu.
 
-### <a name="example-1"></a>Exemple :
+### Exemple :  
 
 L’exemple suivant est basé sur la production de la chaîne dans l’exemple précédent. Cet exemple illustre comment les trois types d’entrées sont créés, sur la base du scénario suivant :  
 
@@ -114,7 +115,7 @@ Le tableau suivant affiche les résultats.
 |3.b.|15/01/20|Réévaluation|20/01/20|-150,00|0.00|1|4|  
 |3.c.|15/01/20|Ecart|15/01/20|0.00|450.00|1|5|  
 
-## <a name="determine-whether-revaluation-affects-an-inventory-decrease"></a>Déterminer si une réévaluation affecte une diminution d'inventaire
+## Déterminer si une réévaluation affecte une diminution d'inventaire  
 
 Utilisez la date du report ou de la réévaluation pour déterminer si une diminution d'inventaire est affectée par une réévaluation.  
 
@@ -129,7 +130,7 @@ Le tableau suivant montre les critères utilisés pour un article qui n’utilis
 |E|Ultérieur au n° d'écriture réévaluation.|Égal à la date de report de réévaluation|Oui|  
 |F|Ultérieur au n° d'écriture réévaluation.|Postérieur à la date de report de réévaluation|Oui|  
 
-### <a name="example-2"></a>Exemple :
+### Exemple :  
 
 L’exemple suivant, qui illustre la réévaluation d’un article qui utilise le mode d’évaluation du stock FIFO. L’exemple est basé sur le scénario suivant :  
 
@@ -160,7 +161,7 @@ Le tableau suivant montre les écritures valeur résultantes.
 |F|01/04/20|Vente|01/04/20|-1|-10,00|7|8|  
 ||01/04/20|Vente|01/04/20|-1|2.00|7|12|  
 
-## <a name="wip-inventory-revaluation"></a>Réévaluation de l'inventaire TEC
+## Réévaluation de l'inventaire TEC  
 
 La réévaluation de l'inventaire TEC implique que vous réévaluiez les composantes enregistrées en tant qu'inventaire TEC.  
 
@@ -180,7 +181,7 @@ Vous pouvez réévaluer l'inventaire TEC dans les conditions suivantes :
 > [!CAUTION]  
 > Le rapport **Évaluation de l'inventaire - TEC** affiche la valeur des écritures bon de production reportées et peut donc créer un peu de confusion pour les articles TEC réévalués.  
 
-## <a name="revaluate-items-with-the-average-costing-method"></a>Réévaluer les articles avec la méthode du coût moyen
+## Réévaluer les articles avec la méthode du coût moyen
 
 Vous ne pouvez réévaluer les articles qui utilisent la méthode de coût moyen que si **Calculer par** est défini sur *Article*.
 
@@ -188,7 +189,7 @@ Vous ne pouvez effectuer la réévaluation qu’à la fin de la période sélect
 
 La réévaluation n’affectera pas les transactions négatives du mois en cours, c’est pourquoi les écritures entrantes entièrement affectées ne sont pas non plus incluses.
 
-### <a name="example-3"></a>Exemple :
+### Exemple :
 
 Cet exemple montre ce qui se passe lorsque vous calculez la valeur d'inventaire sur la page **Journal réévaluation article**. Sur la page **Configuration inventaire**, **Article** est choisi dans le champ **Type calcul coût moyen** et **Mois** est choisi dans le champ **Période coût moyen**.
 
@@ -218,7 +219,7 @@ Le résultat des écritures suivantes sera 0, quelle que soit la date de report
 13/05/23|Achats|5|5.00|1
 26/04/23|Vente|-5|5.00|2
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi  
 
 [Détails de conception : mode d’évaluation de l’inventaire](design-details-inventory-costing.md)   
 [Détails de conception : modes évaluation stock](design-details-costing-methods.md)   

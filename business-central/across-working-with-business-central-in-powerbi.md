@@ -3,12 +3,11 @@ title: "Utiliser les données Business\_Central dans Power BI| Microsoft Docs"
 description: "Obtenir des informations, des informations décisionnelles et des indicateurs de performance clés à partir de vos données Business\_Central à l’aide de Power BI."
 author: jswymer
 ms.topic: get-started
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'account schedule, analysis, reporting, financial report, business intelligence, KPI'
 ms.date: 09/07/2022
 ms.author: jswymer
+ms.service: dynamics-365-business-central
 ---
 # Utiliser des données [!INCLUDE [prod_short](includes/prod_short.md)] dans Power BI
 

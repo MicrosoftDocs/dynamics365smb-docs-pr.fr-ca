@@ -3,9 +3,7 @@ title: Configuration des flux de travail approbation (contient une vidéo)
 description: 'Configurez des flux de travail, des utilisateurs de flux de travail et des utilisateurs d’approbation pour connecter les tâches du système de processus métier effectuées par ces différents utilisateurs.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: null
 ms.date: 09/13/2022
 ms.author: bholtorf

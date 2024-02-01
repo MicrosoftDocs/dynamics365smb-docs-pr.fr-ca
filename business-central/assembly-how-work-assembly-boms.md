@@ -3,9 +3,7 @@ title: Utilisation des nomenclatures d’assemblage
 description: Vous créez une nomenclature d’assemblage pour spécifier les composantes nécessaires pour assembler l’article que la nomenclature représente.
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'assembly bom, bills of material,'
 ms.search.form: '36, 5870, 5872, 5874'
 ms.date: 09/26/2022

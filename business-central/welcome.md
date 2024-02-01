@@ -3,9 +3,7 @@ title: Bienvenue dans Microsoft Dynamics 365 Business Central
 description: "Découvrez les fonctionnalités et les scénarios de travail de Business\_Central qui aident les compagnies à gérer leurs activités, y compris les finances, la fabrication, les ventes, la livraison, la gestion de projet, les services, etc."
 author: jswymer
 ms.topic: landing-page
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 05/22/2023
 ms.author: jswymer
 ms.service: dynamics-365-business-central

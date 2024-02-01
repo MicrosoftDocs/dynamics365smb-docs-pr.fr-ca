@@ -3,9 +3,7 @@ title: Paramétrer les méthodes préférées d’envoi des documents vente (con
 description: 'Décrit comment configurer la méthode préférée de chaque client pour l''envoi de documents vente, par exemple par courriel, au format PDF, sous forme de document électronique, etc.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'email, PDF, electronic document'
 ms.date: 04/01/2021
 ms.author: bholtorf

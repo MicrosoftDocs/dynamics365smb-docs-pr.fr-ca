@@ -3,9 +3,7 @@ title: Gérer les fournitures pour un projet
 description: Décrit les différentes façons de gérer l’approvisionnement et l’achat de matériel et de services pour les projets.
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'project management, material, purchase'
 ms.search.form: '98, 1020'
 ms.date: 06/22/2021

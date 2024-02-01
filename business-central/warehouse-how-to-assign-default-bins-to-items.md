@@ -3,9 +3,7 @@ title: Affecter des zones par défaut à des articles
 description: 'Si vous utilisez des zones dans un emplacement, l''affectation de zones par défaut à vos articles peut simplifier considérablement leur processus de livraison, de réception et de déplacement.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: null
 ms.search.form: '7371, 7374, 7379'
 ms.date: 06/25/2021

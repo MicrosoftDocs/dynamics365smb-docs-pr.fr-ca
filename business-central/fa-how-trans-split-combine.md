@@ -3,9 +3,7 @@ title: Reclassification d’immobilisations
 description: 'Vous reclassez une immobilisation pour la transférer vers un autre service, la fractionner, ou la combiner avec d''autres immobilisations.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.form: '5638, 5636, 5640, 5637'
 ms.date: 04/01/2021
 ms.author: bholtorf

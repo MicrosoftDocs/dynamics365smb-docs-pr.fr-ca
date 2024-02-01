@@ -3,9 +3,7 @@ title: Extensions de migration vers le nuage
 description: "Utilisez les extensions de migration nuage pour migrer vos données locales vers Business\_Central\_Online. Ces extensions déplacent vos données sur site vers le nuage."
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'app, add-in, manifest, customize, import, implement'
 ms.search.form: '4021, 4026, 4031, 4090, 4091, 4092, 4093, 4094, 4095, 4096, 4097, 40027,'
 ms.reviewer: bholtorf

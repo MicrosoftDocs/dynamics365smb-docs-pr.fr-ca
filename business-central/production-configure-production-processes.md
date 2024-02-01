@@ -3,9 +3,7 @@ title: Configuration des processus de production
 description: 'Pour convertir des matières en articles finis produits, vous devez configurer des ressources de production, telles que les nomenclatures, les itinéraires, les opérateurs machines et les machines, dans le système.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.form: '99000768, 99000779, 99000780, 99000866'
 ms.date: 04/01/2021
 ms.author: bholtorf

@@ -3,9 +3,7 @@ title: Utilisation de Business Central sans Outlook
 description: 'Si vous n’avez pas Outlook, vous ne pouvez pas utiliser Business Central comme boîte de réception professionnelle dans Outlook, mais vous pouvez utiliser un navigateur ou votre périphérique mobile.'
 author: brentholtorf
 ms.topic: get-started
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'SMTP, mail, Microsoft 365'
 ms.date: 12/11/2023
 ms.author: bholtorf

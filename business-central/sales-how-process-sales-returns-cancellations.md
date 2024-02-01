@@ -3,9 +3,7 @@ title: Traiter les retours ou annulations de ventes
 description: 'Décrit comment créer une note de crédit vente pour traiter un retour, une annulation ou un remboursement pour les articles ou les services qui vous ont déjà été payés.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'undo, credit memo, return'
 ms.search.form: '44, 134, 143, 6629, 6630, 6633, 6662, 9302, 9304, Report_6646'
 ms.date: 09/27/2021

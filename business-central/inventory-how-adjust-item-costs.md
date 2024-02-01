@@ -3,9 +3,7 @@ title: Ajuster les coûts article manuellement
 description: 'Vous pouvez ajuster manuellement l’évaluation de l’inventaire d’un article à l’aide des méthodes FIFO ou d’évaluation inventaire moyen, lorsque les coûts de produits changent.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'cost adjustment, cost forwarding, costing method, inventory valuation, costing'
 ms.date: 06/16/2021
 ms.author: bholtorf

@@ -3,9 +3,7 @@ title: Configurer des promotions marketing dans Business Central | Microsoft Doc
 description: Décrit la manière dont vous pouvez configurer et mener des promotions marketing dans Business Central afin de vous aider à identifier et attirer des prospects et à fidéliser les clients.
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'marketing, campaign, promo, prospect'
 ms.date: 04/01/2021
 ms.author: bholtorf

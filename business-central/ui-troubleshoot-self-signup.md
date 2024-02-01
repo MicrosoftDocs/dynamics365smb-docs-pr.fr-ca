@@ -3,9 +3,7 @@ title: Résoudre les problèmes liés à l'inscription en self-service | Microso
 description: 'En savoir plus sur les motifs classiques pour lesquels vous ne pouvez pas terminer l''inscription à Business Central, et des manières de les résoudre.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central

@@ -3,9 +3,7 @@ title: Modèles de propriété des données pour la synchronisation
 description: 'Les compagnies sont des entités à la fois juridiques et commerciales, qui permettent de sécuriser et visualiser les données métier.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: 'CDS, Dataverse, integration, sync'
 ms.date: 04/01/2021
 ms.author: bholtorf

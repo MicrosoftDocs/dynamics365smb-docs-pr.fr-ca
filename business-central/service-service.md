@@ -3,9 +3,7 @@ title: Gestion des services
 description: "Découvrez comment utiliser les fonctionnalités de Business\_Central conçues pour gérer et suivre les services pour prendre en charge les opérations d’atelier de réparation et de service sur le terrain."
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: null
 ms.date: 06/23/2021
 ms.author: bholtorf

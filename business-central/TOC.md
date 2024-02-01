@@ -1,3 +1,6 @@
+---
+ms.service: dynamics-365-business-central
+---
 
 # [Documentation de Business Central](index.yml)
 # [Bienvenue dans Business Central](welcome.md)
@@ -286,6 +289,7 @@
 ## Finances
 ### [Vue d’ensemble de Finances](finance.md)
 ### [Rapports financiers](finance-reports.md)
+
 ### Gestion des clients
 #### [Vue d’ensemble des clients](receivables-manage-receivables.md)
 #### [Rapports Comptabilité client et analyse](receivables-reports.md)
@@ -298,6 +302,7 @@
 ##### [Définir des règles pour l’affectation automatique des paiements](receivables-how-set-up-payment-application-rules.md)
 #### [Rapprochement des paiements client à partir de la liste des documents vente échus](receivables-how-reconcile-customer-payments-list-unpaid-sales-documents.md)
 #### [Rapprocher des paiements clients avec le journal des encaissements ou à partir d’écritures client](receivables-how-apply-sales-transactions-manually.md)
+#### [Consolider les soldes d’une compagnie à la fois cliente et fournisseur](finance-consolidate-customer-vendor-balances.md)
 #### [Collecte des soldes restants](receivables-collect-outstanding-balances.md)
 #### [Recouvrement de paiements par prélèvement automatique SEPA](finance-collect-payments-with-sepa-direct-debit.md)
 #### [Envoyer des rappels de soldes impayés](receivables-send-reminders.md)
@@ -326,34 +331,13 @@
 ##### [Rapprocher les paiements qui ne peuvent pas être affectés automatiquement](receivables-how-reconcile-payments-cannot-apply-auto.md)
 ##### [Mappage du texte sur les paiements récurrents aux comptes pour un rapprochement automatique](receivables-how-map-text-recurring-payments-accounts-auto-reconcilliation.md)
 #### [Rapprocher des paiements fournisseur avec le journal paiement ou à partir des écritures fournisseur](payables-how-apply-purchase-transactions-manually.md)
+#### [Consolider les soldes d’une compagnie à la fois cliente et fournisseur](finance-consolidate-customer-vendor-balances.md)
 #### [Collecte des soldes restants](receivables-collect-outstanding-balances.md)
 #### [Recouvrement de paiements par prélèvement automatique SEPA](finance-collect-payments-with-sepa-direct-debit.md)
 #### [Blocage des fournisseurs](payables-how-block-vendors.md)
 #### [Utilisation des frais annexes pour comptabiliser les coûts commerciaux supplémentaires](payables-how-assign-item-charges.md)
 #### [Utiliser des tolérances de règlement et des tolérances d’escompte de paiement](finance-payment-tolerance-and-payment-discount-tolerance.md)
 #### [Extension Prédictions de retard de paiement](ui-extensions-late-payment-prediction.md)
-
-### Gérer les documents électroniques
-#### [Vue d’ensemble des documents électroniques](finance-edocuments-overview.md)
-#### [Configuration des documents électroniques](finance-how-setup-edocuments.md)
-#### [Utilisation des documents électroniques dans les ventes et les achats](finance-how-use-edocuments.md)
-#### [Configuration du connecteur de documents électroniques avec des points de terminaison externes](finance-how-setup-edocuments-external.md)
-#### [Extension de la fonctionnalité des documents électroniques](/dynamics365/business-central/dev-itpro/developer/devenv-extend-edocuments)
-
-### Gestion de la TVA
-#### [Vue d’ensemble de la gestion de la TVA](finance-manage-vat.md)
-#### [Transactions d’achat de tiers dans l’UE](finance-how-to-eu3party-trade-purchase.md)
-#### Configuration de la TVA
-##### [Configuration de la taxe sur la valeur ajoutée](finance-setup-vat.md)
-##### [Configuration de groupe de report](finance-posting-groups.md#tax-posting-groups)
-##### [Configuration de la TVA non déductible](finance-setup-nondeductible-vat.md)
-##### [Configuration de la TVA non réalisée](finance-setup-unrealized-vat.md)
-##### [Configurer un relevé fiscal](finance-how-setup-vat-statement.md)
-#### [Utilisation de la TVA sur les ventes et les achats](finance-work-with-vat.md)
-#### [Utilisation de la TVA non déductible](finance-how-use-non-deductible-vat.md)
-#### [Envoyer des rapports TVA aux autorités fiscales](finance-how-report-vat.md)
-#### [Gestion des changements de taux de TVA](finance-how-use-vat-rate-change-tool.md)
-#### [Validation des n° identif. intracomm.](finance-how-validate-vat-registration-number.md)
 
 ### Facturation de paiements anticipés
 #### [Vue d’ensemble des paiements anticipés](finance-invoice-prepayments.md)
@@ -366,13 +350,8 @@
 #### [Rapprochement des comptes bancaires](bank-how-reconcile-bank-accounts-separately.md)
 #### [Rapprochement des comptes bancaires avec Copilot (version préliminaire)](bank-reconciliation-with-copilot.md)
 #### [Lettrage automatique des paiements et rapprochement des comptes bancaires](receivables-apply-payments-auto-reconcile-bank-accounts.md)
-
-### Gestion des transactions intersociétés
-#### [Vue d’ensemble intersociétés](intercompany-manage.md)
-#### [Configuration intersociété](intercompany-how-setup.md)
-#### [Utiliser des documents et journaux intercompagnies](intercompany-how-work-documents-journals.md)
-#### [Gestion de la boîte de réception et la boîte d’envoi intersociétés](intercompany-how-manage-intercompany-inbox.md)
-#### [Allouer des coûts à des partenaires intercompagnies](intercompany-allocate-costs.md)
+#### [Transfert de fonds à la banque](bank-how-transfer-bank-funds.md)
+#### [Création de dépôts bancaires](bank-create-bank-deposits.md)
 
 ### Comptabilité pour les coûts
 #### [Vue d’ensemble de la comptabilité analytique](finance-manage-cost-accounting.md)
@@ -408,6 +387,8 @@
 ### Gestion de la trésorerie
 #### [Vue d’ensemble de la trésorerie](finance-cash-flow-overview.md)
 #### [Analyser les trésoreries dans votre compagnie](finance-analyze-cash-flow.md)
+#### [Procédure pas-à-pas : utiliser des rapports financiers pour créer des prévisions de la trésorerie](walkthrough-making-cash-flow-forecasts-by-using-account-schedules.md)
+
 
 ### Fermeture des exercices et des périodes
 #### [Vue d’ensemble de la fermeture d’exercice](year-close-years-periods.md)
@@ -424,38 +405,63 @@
 #### [Fermer des comptes d’état des résultats](year-close-income-statement.md)
 #### [Reporter l’écriture de fermeture de fin d’exercice](year-how-post-year-end-close-entry.md)
 
-### Consolider les données financières de plusieurs compagnies
-#### [Consolidation de la compagnie](finance-consolidated-company-reporting.md)
-#### [Configurer la consolidation de la compagnie](finance-consolidated-company-reporting-setup.md)
-
-### Utilisation du plan comptable et du grand livre
-#### [Familiarisation avec le grand livre et le plan comptable](finance-general-ledger.md)
+### Utiliser le plan comptable et le grand livre (GL)
+#### [Comprendre le grand livre et le plan comptable](finance-general-ledger.md)
 #### [Vérification des comptes](finance-review-accounts.md)
+#### [Reporter directement des transactions dans le grand livre](finance-how-post-transactions-directly.md)
+#### [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)
+#### [Enregistrement et remboursement des frais des employés](finance-how-record-reimburse-employee-expenses.md)
+#### [Créer des budgets GL](finance-how-create-budgets.md)
+#### [Exportation de fichier d’audit](finance-how-to-export-audit-files.md)
+#### [Échelonnement des recettes et des dépenses](finance-how-defer-revenue-expenses.md)
+#### [Ventilation des coûts et des bénéfices récurrents](year-allocate-costs-income.md)
+#### [Affecter des revenus et des coûts à plusieurs comptes du grand livre](finance-allocate-revenue-costs.md)
 
-### [Consolider les soldes d’une compagnie à la fois cliente et fournisseur](finance-consolidate-customer-vendor-balances.md)
-### [Utiliser des dimensions](finance-dimensions.md)
-### [Dépanner et corriger des dimensions](finance-troubleshooting-correcting-dimensions.md)
-### [Devises dans Business Central](finance-currencies.md)
-### [Créer des budgets GL](finance-how-create-budgets.md)
-### [Reporter directement des transactions dans le grand livre](finance-how-post-transactions-directly.md)
-### [Inverser des reports journal et annuler des réceptions/livraisons](finance-how-reverse-journal-posting.md)
-### [Exportation de fichier d’audit](finance-how-to-export-audit-files.md)
-### [Enregistrement et remboursement des frais des employés](finance-how-record-reimburse-employee-expenses.md)
-### [Échelonnement des recettes et des dépenses](finance-how-defer-revenue-expenses.md)
-### [Ventilation des coûts et des bénéfices récurrents](year-allocate-costs-income.md)
-### [Affecter des revenus et des coûts à plusieurs comptes du grand livre](finance-allocate-revenue-costs.md)
-### [Mise à jour des taux de change devise](finance-how-update-currencies.md)
-### [Importation des transactions de paie](finance-how-import-payroll-transactions.md)
-### [Utilisation de la TVA sur les ventes et les achats](finance-work-with-vat.md)
-### [Déclarer la TVA aux autorités fiscales](finance-how-report-vat.md)
-### [Conversion des contrats de service, y compris des montants TVA](service-how-to-convert-service-contracts.md)
-### [Gestion des changements de taux TVA](finance-how-use-vat-rate-change-tool.md)
-### [Procédure pas-à-pas : utiliser des rapports financiers pour créer des prévisions de la trésorerie](walkthrough-making-cash-flow-forecasts-by-using-account-schedules.md)
-### [Analyse des états financiers dans Excel](finance-analyze-excel.md)
-### [Transfert de fonds à la banque](bank-how-transfer-bank-funds.md)
-### [Création de dépôts bancaires](bank-create-bank-deposits.md)
-### [Expériences des comptables dans Business Central](finance-accounting.md)
+### Utilisation des dimensions
+#### [Vue d’ensemble des dimensions](finance-dimensions.md)
+#### [Dépanner et corriger des dimensions](finance-troubleshooting-correcting-dimensions.md)
+#### [Importation des transactions de paie](finance-how-import-payroll-transactions.md)
+
+### Utilisation des devises
+#### [Devises dans Business Central](finance-currencies.md)
+#### [Mise à jour des taux de change devise](finance-how-update-currencies.md)
+
+### Utilisation de la TVA
+#### [Vue d’ensemble de la gestion de la TVA](finance-manage-vat.md)
+#### [Transactions d’achat de tiers dans l’UE](finance-how-to-eu3party-trade-purchase.md)
+#### Configuration de la TVA
+##### [Configuration de la taxe sur la valeur ajoutée](finance-setup-vat.md)
+##### [Configuration de groupe de report](finance-posting-groups.md#tax-posting-groups)
+##### [Configuration de la TVA non déductible](finance-setup-nondeductible-vat.md)
+##### [Configuration de la TVA non réalisée](finance-setup-unrealized-vat.md)
+##### [Configurer un relevé fiscal](finance-how-setup-vat-statement.md)
+#### [Utilisation de la TVA sur les ventes et les achats](finance-work-with-vat.md)
+#### [Utilisation de la TVA non déductible](finance-how-use-non-deductible-vat.md)
+#### [Envoyer des rapports TVA aux autorités fiscales](finance-how-report-vat.md)
+#### [Gestion des changements de taux de TVA](finance-how-use-vat-rate-change-tool.md)
+#### [Validation des n° identif. intracomm.](finance-how-validate-vat-registration-number.md)
+#### [Conversion des contrats de service, y compris des montants TVA](service-how-to-convert-service-contracts.md)
+
+### Configuration et utilisation des documents électroniques
+#### [Vue d’ensemble des documents électroniques](finance-edocuments-overview.md)
+#### [Configuration des documents électroniques](finance-how-setup-edocuments.md)
+#### [Utilisation des documents électroniques dans les ventes et les achats](finance-how-use-edocuments.md)
+#### [Configuration du connecteur de documents électroniques avec des points de terminaison externes](finance-how-setup-edocuments-external.md)
+#### [Extension de la fonctionnalité des documents électroniques](/dynamics365/business-central/dev-itpro/developer/devenv-extend-edocuments)
+
 ### [Organisations multisites et internationales](finance-multi-site-organizations.md)
+#### Consolider les données financières de plusieurs compagnies
+##### [Consolidation de la compagnie](finance-consolidated-company-reporting.md)
+##### [Configurer la consolidation de la compagnie](finance-consolidated-company-reporting-setup.md)
+#### Gestion des transactions intersociétés
+##### [Vue d’ensemble intersociétés](intercompany-manage.md)
+##### [Configuration intersociété](intercompany-how-setup.md)
+##### [Utiliser des documents et journaux intercompagnies](intercompany-how-work-documents-journals.md)
+##### [Gestion de la boîte de réception et la boîte d’envoi intersociétés](intercompany-how-manage-intercompany-inbox.md)
+##### [Allouer des coûts à des partenaires intercompagnies](intercompany-allocate-costs.md)
+
+### [Expériences des comptables dans Business Central](finance-accounting.md)
+
 
 ## Business Intelligence et génération de rapports financiers
 ### [Vue d’ensemble de Business Intelligence et de la génération de rapports financiers](bi.md)
@@ -466,10 +472,13 @@
 ### [Configurer et publier des services web d’indicateurs de performances clés sur la base de rapports financiers](bi-how-to-set-up-and-publish-kpi-web-services-based-on-account-schedules.md)
 ### [Analyser des données par dimensions](bi-how-analyze-data-dimension.md)
 ### [Créer des rapports d’analyse](bi-how-create-analysis-views-reports.md)
+### [Analyse des états financiers dans Excel](finance-analyze-excel.md)
 ### [Créer des rapports avec XBRL](bi-create-reports-with-xbrl.md)
 ### [Gestion de l’intention d’accès à la base de données](admin-data-access-intent.md)
+### [Procédure pas-à-pas : utiliser des rapports financiers pour créer des prévisions de la trésorerie](walkthrough-making-cash-flow-forecasts-by-using-account-schedules.md)
 
-## Vente
+
+## Ventes
 ### [Vue d’ensemble des ventes](sales-manage-sales.md)
 ### [Rapports des ventes](sales-reports.md)
 ### [Procédure pas à pas : mettre en place une promotion de vente](walkthrough-conducting-a-sales-campaign.md)
@@ -874,9 +883,13 @@
 
 ### Danemark
 #### [Fonctionnalité locale dans la version danoise](LocalFunctionality/Denmark/denmark-local-functionality.md)
-#### [Notification et inscription au NemHandelsregisteret au Danemark](localfunctionality/denmark/how-to-nemhandel-register.md)
-#### [Configuration de la facturation électronique avec NemHandel](localfunctionality/denmark/how-to-edocuments-nemhadel.md)
+#### Conformité
 #### [Conserver les données transactionnelles pendant cinq ans au Danemark](localfunctionality/denmark/how-to-keep-data-5years.md)
+##### [Configuration des pièces justificatives numériques au Danemark](localfunctionality/denmark/how-to-digital-vouchers-dk.md)
+#### Audit
+##### [Exporter le format de fichier d’audit SAF-T au Danemark](LocalFunctionality/Denmark/how-to-use-saft-audit-files-export.md)
+##### [Plan comptable standard public au Danemark](LocalFunctionality/Denmark/how-to-set-up-standard-coa.md)
+##### [Exporter les données comptables vers la base Regnskab au Danemark](LocalFunctionality/Denmark/how-to-use-regnskabbasis-export.md)
 #### TVA
 ##### [Imprimer des rapports sur le rapprochement TVA](LocalFunctionality/Denmark/how-to-print-vat-reconciliation-reports.md)
 ##### [Rapports TVA-VIES](LocalFunctionality/Denmark/vat-vies-reporting.md)
@@ -890,11 +903,11 @@
 ##### [Configuration des clients pour OIOUBL](LocalFunctionality/Denmark/how-to-set-up-customers-for-oioubl.md)
 ##### [Configuration de la facturation électronique OIOUBL](LocalFunctionality/Denmark/how-to-set-up-oioubl.md)
 ##### [Extension OIOUBL pour la facturation électronique](LocalFunctionality/Denmark/ui-extensions-oioubl.md)
-##### [Créer des documents électroniques au format OIOUBL](LocalFunctionality/Denmark/how-to-create-electronic-documents-by-using-oioubl.md
+##### [Création des documents électroniques dans un format OIOUBL](LocalFunctionality/Denmark/how-to-create-electronic-documents-by-using-oioubl.md)
+#### [Notification et inscription au NemHandelsregisteret au Danemark](localfunctionality/denmark/how-to-nemhandel-register.md)
+#### [Configuration de la facturation électronique avec NemHandel](localfunctionality/denmark/how-to-edocuments-nemhadel.md)
 #### Paie
 ##### [Définitions de données de paie (Danemark)](LocalFunctionality/Denmark/ui-extensions-payroll-data-definitions-dk.md)
-#### Pièces justificatives numériques
-##### [Configuration des pièces justificatives numériques au Danemark](localfunctionality/denmark/how-to-digital-vouchers-dk.md)
 
 ### Finlande
 #### [Fonctionnalité locale dans la version finnoise](LocalFunctionality/Finland/finland-local-functionality.md)
@@ -1832,19 +1845,6 @@
 #### [Guide de développement de rapports](/dynamics365/business-central/dev-itpro/developer/devenv-reports)
 #### [Guide de réglage des performances des rapports](/dynamics365/business-central/dev-itpro/performance/performance-developer#writing-efficient-reports)
 
-# Fonctionnalités de Copilot et d’IA
-## Gestion des fonctionnalités de Copilot et d’IA
-### [Configuration des fonctionnalités de Copilot et d’IA](enable-ai.md)
-### [Déplacement des données Copilot entre des zones géographiques](ai-copilot-data-movement.md)
-### [Résoudre les problèmes des fonctionnalités de Copilot et d’IA](ai-copilot-troubleshooting.md)
-## Aide pour le rapprochement de compte bancaire (version préliminaire)
-### [Rapprochement de compte bancaire avec Copilot](bank-reconciliation-with-copilot.md)
-### [FAQ pour l’aide au rapprochement bancaire](faqs-bank-reconciliation.md)
-## Suggestions de texte marketing
-### [Vue d’ensemble des suggestions de texte marketing](ai-overview.md)
-### [Création de texte marketing avec Copilot](item-marketing-text.md)
-### [FAQ pour les suggestions de texte marketing](faqs-marketing-text.md)
-
 # Sécurité, confidentialité et conformité
 ## Sécurité et protection
 ### [Vue d’ensemble de la sécurité et de la protection (en anglais uniquement)](/dynamics365/business-central/dev-itpro/security/security-and-protection?toc=/dynamics365/business-central/toc.json)
@@ -2023,6 +2023,18 @@
 ## [Sécurité et protection](/dynamics365/business-central/dev-itpro/security/security-and-protection?toc=/dynamics365/business-central/toc.json)
 ## [Performances](/dynamics365/business-central/dev-itpro/performance/performance-overview?toc=/dynamics365/business-central/toc.json)
 ## [Fonctionnalités supprimées ou déconseillées](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1?toc=/dynamics365/business-central/toc.json)
+# Fonctionnalités de Copilot et d’IA
+## Gestion des fonctionnalités de Copilot et d’IA
+### [Configuration des fonctionnalités de Copilot et d’IA](enable-ai.md)
+### [Déplacement des données Copilot entre des zones géographiques](ai-copilot-data-movement.md)
+### [Résoudre les problèmes des fonctionnalités de Copilot et d’IA](ai-copilot-troubleshooting.md)
+## Aide pour le rapprochement de compte bancaire (version préliminaire)
+### [Rapprochement de compte bancaire avec Copilot](bank-reconciliation-with-copilot.md)
+### [FAQ pour l’aide au rapprochement bancaire](faqs-bank-reconciliation.md)
+## Suggestions de texte marketing
+### [Vue d’ensemble des suggestions de texte marketing](ai-overview.md)
+### [Création de texte marketing avec Copilot](item-marketing-text.md)
+### [FAQ pour les suggestions de texte marketing](faqs-marketing-text.md)
 # IA responsable
 ## [Vue d’ensemble](responsible-ai-overview.md)
 ## [FAQ pour l’aide au rapprochement bancaire (version préliminaire)](faqs-bank-reconciliation.md)
