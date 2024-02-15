@@ -13,7 +13,7 @@ Les personnes auxquelles vous attribuez les codes de région fiscale déterminen
 
 Si vous passez à la section *Ma compagnie* vierge, nous vous recommandons de commencer par utiliser chacun des guides de configuration assistée, y compris celui qui concerne la taxe de vente. Si vous préférez configurer la taxe de vente par vous-même, cet article explique ce que vous devez prendre en compte. Mais nous vous recommandons de collaborer étroitement avec votre conseiller fiscal.  
 
-## Groupes taxes, zones de recouvrement et autorités de recouvrement
+## <a name="tax-groups-tax-areas-and-tax-jurisdictions"></a>Groupes taxes, zones de recouvrement et autorités de recouvrement
 
 Dans [!INCLUDE[prod_short](../../../includes/prod_short.md)], un groupe fiscal représente un groupe d'articles en inventaire ou de ressources soumis au même conditions pour ce qui est des taxes. Par exemple, vous pouvez configurer un groupe fiscal pour les articles soumis à la taxe et un autre pour les articles non soumis à la taxe. Vous devez affecter des codes groupe fiscal aux articles en inventaire et aux comptes du grand livre. De même, vous devez affecter des codes de région fiscale aux clients, aux emplacements et aux paramètres de votre compagnie. Le guide de configuration assistée vous aide à effectuer ces opérations.  
 
