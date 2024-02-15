@@ -3,17 +3,16 @@ title: Détails de conception- Structure de la table | Microsoft Docs
 description: 'Pour comprendre comment le stockage et le report d''écriture de dimension sont conçus, il est important de comprendre la structure de tableau.'
 author: brentholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: null
 ms.date: 06/08/2021
 ms.author: bholtorf
+ms.service: dynamics-365-business-central
 ---
-# <a name="design-details-table-structure"></a>Détails de conception : structure de la table
+# Détails de conception : structure de la table
 Pour comprendre comment les écritures dimension sont enregistrées et reportées, il est important de comprendre la structure de la table.  
 
-## <a name="table-480-dimension-set-entry"></a>Table 480, Écriture ensemble de dimensions
+## Table 480, Écriture ensemble de dimensions  
 Vous ne pouvez pas modifier cette table. Une fois les données écrites dans la table, vous ne pouvez plus les supprimer ou les modifier.
 
 |N° champ|Nom de champ|Type de données|Commentaire|  
@@ -25,7 +24,7 @@ Vous ne pouvez pas modifier cette table. Une fois les données écrites dans la 
 |5|**Nom axe analytique**|Texte 30|CalcField. Rechercher dans la table 348.|  
 |6|**Nom de la valeur de dimension**|Texte 30|CalcField. Rechercher dans la table 349.|  
 
-## <a name="table-481-dimension-set-tree-node"></a>Table 481, Nœud d'arbre ensemble de dimensions
+## Table 481, Nœud d'arbre ensemble de dimensions  
 Vous ne pouvez pas modifier cette table. Elle est utilisée pour trouver un ensemble de dimensions. Si l'ensemble de dimensions est introuvable, un nouvel ensemble est créé.  
 
 |N° champ|Nom du champ|Type de données|Commentaire|  
@@ -35,7 +34,7 @@ Vous ne pouvez pas modifier cette table. Elle est utilisée pour trouver un ense
 |3|**ID ensemble de dimensions**|Entier|Incrémentez automatiquement. Utilisé dans le champ 1 du tableau 480.|  
 |4|**Utilisé**|Booléen|Faux si non utilisé.|  
 
-## <a name="table-482-reclas-dimension-set-buffer"></a>Table 482, Tampon ensemble de dimensions reclass.
+## Table 482, Tampon ensemble de dimensions reclass.  
 Cette table est utilisée lorsque vous modifiez un code valeur de dimension, par exemple, pour une écriture article en utilisant la page **Journal reclassement article**.  
 
 |N° champ|Nom de champ|Type de données|Commentaire|  
@@ -49,14 +48,14 @@ Cette table est utilisée lorsque vous modifiez un code valeur de dimension, par
 |7|**Nom de la section analytique**|Texte 30|CalcField. Rechercher dans la table 349.|  
 |8|**Nom nouvelle valeur de dimension**|Texte 30|CalcField. Rechercher dans la table 349.|  
 
-## <a name="transaction-and-budget-tables"></a>Transaction et tableaux de budget
+## Transaction et tableaux de budget  
 En plus des autres champs de dimension dans la table, ce champ est important :  
 
 |N° champ|Nom de champ|Type de données|Commentaire|  
 |---------------|----------------|---------------|-------------|  
 |480|**Code ensemble de dimensions**|Entier|Champ de références 1 dans la table 480.|  
 
-### <a name="table-83-item-journal-line"></a>Table 83, Ligne journal article
+### Table 83, Ligne journal article  
 En plus des autres champs de dimension dans la table, les champs suivants sont importants.  
 
 |N° champ|Nom de champ|Type de données|Commentaire|  
@@ -64,14 +63,14 @@ En plus des autres champs de dimension dans la table, les champs suivants sont i
 |480|**Code ensemble de dimensions**|Entier|Champ de références 1 dans la table 480.|  
 |481|**Code du nouvel ensemble de dimensions**|Entier|Champ de références 1 dans la table 480.|  
 
-### <a name="table-349-dimension-value"></a>Table 349, Valeur de dimension
+### Table 349, Valeur de dimension  
 En plus des autres champs de dimension dans la table, les champs suivants sont importants.  
 
 |N° champ|Nom de champ|Type de données|Commentaire|  
 |---------------|----------------|---------------|-------------|  
 |12|**Code valeur de dimension**|Entier|Incrémentez automatiquement. Utilisé pour références dans le tableau 480 et le tableau 481.|  
 
-### <a name="tables-that-contain-the-dimension-set-id-field"></a>Tables qui contiennent le champ Code ensemble de dimensions
+### Tables qui contiennent le champ Code ensemble de dimensions
  Le champ **Code ensemble de dimensions** (480) existe dans les tables suivantes. Pour les tables qui stockent des données reportées, le champ fournit seulement un affichage non modifiable des dimensions, marqué comme vue détaillée. Pour les tables qui stockent des documents de travail, le champ peut être modifié. Les tables tampon qui sont utilisées en interne n'ont pas besoin de fonctionnalités modifiables ou non modifiables.  
 
  Le champ 480 ne peut pas être modifié dans les tables suivantes.  
@@ -174,7 +173,7 @@ Le champ 480 existe dans les tables suivantes.
 |5637|**GL tampon report immo.**|  
 |7136|**Tampon de budget d'article**|  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Aperçu des écritures d'ensemble de dimensions](design-details-dimension-set-entries-overview.md)  
 [Détails de conception : Recherche des combinaisons de dimensions](design-details-searching-for-dimension-combinations.md)   

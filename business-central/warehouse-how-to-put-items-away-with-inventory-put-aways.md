@@ -4,13 +4,13 @@ description: Découvrez comment utiliser les documents de rangement inventaire p
 author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: andreipa
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-business-central
 ms.topic: how-to
 ms.date: 09/19/2023
 ms.custom: bap-template
 ms.search.forms: '7375,'
 ---
-# <a name="put-items-away-with-inventory-put-aways"></a>Ranger des articles avec le rangement stock
+# Ranger des articles avec le rangement stock
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], vous recevez des articles et les rangez en utilisant l’une des quatre méthodes décrites dans le tableau suivant.
 
@@ -36,29 +36,29 @@ Vous pouvez créer un rangement inventaire de trois manières :
 * Créez des rangements inventaire pour plusieurs documents source simultanément en utilisant un traitement en lot.  
 * Créez le rangement en deux étapes en publiant d’abord le document origine pour rendre les articles disponibles pour le rangement. Vous pouvez créer le rangement inventaire sur la base du document source en utilisant la page **Rangement inventaire**.  
 
-## <a name="to-create-an-inventory-put-away-from-the-source-document"></a>Pour créer un rangement inventaire à partir du document source
+## Pour créer un rangement inventaire à partir du document source
 
 1. Dans le document source, qui peut être un bon de commande, un retour vente ou un ordre de transfert entrant, choisissez l’action **Créer prélèv./rangement inventaire**.  
 2. Activez la case à cocher **Créer prélèv./rangement inventaire**.
 3. Cliquez sur le bouton **OK**. Un nouveau rangement inventaire est créé.
 
-## <a name="to-create-multiple-inventory-put-aways-with-a-batch-job"></a>Pour créer plusieurs rangements inventaire avec un traitement en lot
+## Pour créer plusieurs rangements inventaire avec un traitement en lot
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Créer rangement/prélèvement/mouvement d’inventaire**, puis choisissez le lien associé. 
 2. Sur le raccourci **Demande entrepôt**, utilisez les champs **Document origine** et **N° origine** pour opérer un filtrage sur certains types de documents ou des plages de numéros de document. Par exemple, vous pouvez créer des rangements uniquement pour les bons de commande.
 3. Sur le raccourci **Options**, cochez la case **Créer rangement inventaire**.
 4. Choisissez le bouton **OK**. Les rangements stock spécifiés sont créés.
 
-## <a name="to-create-the-put-away-in-two-steps"></a>Pour créer le rangement en deux étapes
+## Pour créer le rangement en deux étapes
 
-### <a name="to-request-an-inventory-put-away-by-releasing-the-source-document"></a>Pour demander un rangement inventaire en libérant le document d'source
+### Pour demander un rangement inventaire en libérant le document d'source
 
 Lorsque vous libérez des bons de commande, des retours vente et des ordres de transfert entrants, les articles des commandes deviennent disponibles pour être rangés. Les étapes suivantes décrivent comment rendre les articles d’un bon de commande prêts à être rangés.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Bons de commande**, puis sélectionnez le lien associé.
 2. Sélectionnez le bon de commande que vous voulez libérer, puis sélectionnez l'action **Libérer**.  
 
-### <a name="to-create-an-inventory-put-away-based-on-the-source-document"></a>Pour créer un rangement inventaire sur la base du document source
+### Pour créer un rangement inventaire sur la base du document source
 
 Un employé d'entrepôt peut créer un nouveau rangement inventaire basé sur le document source émis.
 
@@ -69,7 +69,7 @@ Un employé d'entrepôt peut créer un nouveau rangement inventaire basé sur le
 5. Sinon, choisissez l'action **Extraire document source** pour sélectionner le document à partir de la liste des documents sources entrants prêts pour le rangement dans l'emplacement.  
 6. Choisissez le bouton **OK** pour renseigner les lignes rangement en fonction du document origine sélectionné.  
 
-## <a name="to-record-the-inventory-put-away"></a>Pour enregistrer les rangements inventaire
+## Pour enregistrer les rangements inventaire
 
 1. Sur la page **Rangements inventaire**, ouvrez un document de rangement créé au préalable.  
 2. Dans le champ **Code de zone** sur les lignes rangement, les zones où les articles doivent être rangés sont proposées sur la base de la zone par défaut de l’article. Si nécessaire, vous pouvez modifier la zone.  
@@ -83,7 +83,7 @@ Un employé d'entrepôt peut créer un nouveau rangement inventaire basé sur le
 
     [!INCLUDE [preview-posting-warehouse](includes/preview-posting-warehouse.md)]
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  
