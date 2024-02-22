@@ -1560,6 +1560,7 @@ ms.service: dynamics-365-business-central
 #### [Configurer des agents de livraison](sales-how-to-set-up-shipping-agents.md)
 #### [Définir une stratégie de report des factures pour les utilisateurs](admin-setup-invoice-posting-policy.md)
 #### [Mettre à jour des dates de document avec les dates de report](across-link-doc-dates-to-posting-dates.md)
+#### [Affichage d’un avertissement de rupture de stock](sales-setup-show-stockout-warning.md)
 ### Configuration des achats
 #### [Configuration des achats](purchasing-setup-purchasing.md)
 #### [Enregistrement des nouveaux fournisseurs](purchasing-how-register-new-vendors.md)
