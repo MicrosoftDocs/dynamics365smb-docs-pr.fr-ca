@@ -2,15 +2,16 @@
 title: Utilisation des flux de travail approbation
 description: Vous pouvez configurer et utiliser des flux de travail pour relier les tâches de processus métier telles que le report automatique ou la demande et l’octroi de l'approbation de nouveaux enregistrements.
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: ivkoleti
 ms.topic: conceptual
-ms.devlang: al
 ms.search.keywords: null
 ms.search.form: '1500, 1501, 1503, 1504, 1505'
-ms.date: 09/13/2022
-ms.author: bholtorf
+ms.date: 02/20/2024
 ms.service: dynamics-365-business-central
+ms.custom: bap-template
 ---
-# <a name="use-approval-workflows"></a>Utilisation des flux d'approbation
+# Utilisation des flux d'approbation
 
 Un flux de travail est une séquence de tâches déclenchées par une action, une condition ou une règle. Les flux de travail sont généralement mis en œuvre pour intégrer la logique métier à une organisation, telle que la séparation des tâches, l’unification des processus ou pour appliquer les bonnes pratiques.
 
@@ -19,7 +20,7 @@ Les flux de travail sont conçus pour créer des demandes pour approbation d’u
 La logique métier pourrait être l’approbation de :
 
 - Nouvelles données de base telles que les comptes du grand livre (GL), les clients, les fournisseurs ou les articles.
-- Modifications apportées aux champs dans les enregistrements existants contenant des informations sensibles, telles que **N° compte bancaire fournisseur** ou **Limite de crédit du client**
+- Modifications apportées aux champs dans les enregistrements existants contenant des informations sensibles, telles que **N° compte bancaire fournisseur** ou **Limite de crédit du client**.
 - Modifications apportées aux champs des enregistrements existants contenant des informations critiques pour l’entreprise, telles que **Prix de vente des articles**.
 - Nouveaux utilisateurs ou modifications des autorisations des utilisateurs.
 - Documents achat.
@@ -63,7 +64,7 @@ Avant de pouvoir commencer à utiliser des flux de travail, vous devez configure
 | Affichez les instances d’étape de flux de travail dont l'état est **Terminé**. | [Afficher des instances d'étape de workflow archivées](across-how-to-view-archived-workflow-step-instances.md) |
 | Supprimez un flux de travail approbation que vous êtes sûr de ne plus utiliser. | [Suppression des flux de travail approbation](across-how-to-delete-workflows.md) |
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configurer les flux de travail approbation](across-set-up-workflows.md)  
 [Flux de travail](across-workflow.md)  
