@@ -7,7 +7,7 @@ ms.reviewer: ivkoleti
 ms.topic: conceptual
 ms.search.keywords: 'posting setup, initialize'
 ms.search.form: '312, 313'
-ms.date: 12/21/2023
+ms.date: 02/23/2024
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
@@ -111,9 +111,21 @@ De cette façon, lorsque vous travaillez sur un document qui utilise un groupe d
 > [!NOTE]
 > Afin de vous diriger directement vers la configuration ou le groupe de report auquel il manque un compte GL, [!INCLUDE[prod_short](includes/prod_short.md)] crée un espace réservé pour une configuration ou un groupe de report. Les configurations et les groupes de report constituent, pour le comptable, un moyen de contrôler la manière dont les écritures sont reportées dans le grand livre. Ainsi, la création juste à temps de configurations et de groupes de report peut ne pas être autorisée dans votre organisation.  
 >
-> Dans ce cas, désactivez la notification *Compte du grand livre manquant dans le groupe de report ou la configuration*, puis collaborez avec votre comptable pour apporter les modifications appropriées au groupe de report, à la configuration ou à votre document. Il s’agit d’une étape importante, car une fois les documents reportés, les paramètres ou les groupes de report utilisés de manière incorrecte ne peuvent pas être supprimés car des écritures sont créées pour eux.
+> Dans ce cas, désactivez la notification *Compte du grand livre manquant dans le groupe de report ou la configuration*, puis collaborez avec votre comptable pour apporter les modifications appropriées au groupe de report, à la configuration ou à votre document. Il s’agit d’une étape importante, car une fois les documents reportés, impossible de supprimer les paramètres ou les groupes de report utilisés de manière incorrecte car les écritures sont créées pour eux.
 
-À partir de la 1re vague de lancement 2022, vous pouvez utiliser le champ **Bloqué** sur la page **Configuration du report général** pour empêcher les utilisateurs d’utiliser par erreur une configuration qui n’est plus pertinente pour les nouveaux reports.  
+Utiliser le champ **Bloqué** sur la page **Configuration report** pour empêcher les utilisateurs d’utiliser par erreur une configuration qui n’est plus pertinente pour les nouveaux reports. 
+
+## Accédez à tous les champs et comptes lorsque vous configurez un groupe de report  
+
+Les groupes de report peuvent être complexes à mettre en place. Étant donné que certains types de comptes ne sont pas fréquemment utilisés, [!INCLUDE [prod_short](includes/prod_short.md)] ne les affiche pas sous forme de colonnes sur les lignes. De plus, pour faciliter le choix des bons comptes, [!INCLUDE [prod_short](includes/prod_short.md)] filtre les comptes que vous pouvez choisir dans les recherches par champ. 
+
+Si vous souhaitez accéder à tous les comptes sur les lignes et dans les recherches sur le terrain, quelques paramètres peuvent vous aider :
+
+* Pour afficher tous les comptes sous forme de colonnes sur les lignes, activez le bouton **Afficher tous les comptes**.
+* Sur des lignes individuelles, pour accéder à tous les comptes dans les recherches de champ, cochez la case **Afficher tous les comptes lors de la recherche**.
+
+> [!NOTE]
+> Le bouton **Afficher tous les comptes** peut ne pas sembler fonctionner sur la page **Configuration du report général**. En effet, [!INCLUDE [prod_short](includes/prod_short.md)] affiche toujours tous les comptes sous forme de colonnes sur les lignes de cette page.
 
 ## Résolution des erreurs de groupe de report
 

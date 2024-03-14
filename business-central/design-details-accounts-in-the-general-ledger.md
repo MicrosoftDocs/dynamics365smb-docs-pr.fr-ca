@@ -2,17 +2,20 @@
 title: "Détails de conception\_: comptes du grand livre | Microsoft Docs"
 description: 'Pour rapprocher l''inventaire et les écritures du grand livre de capacité dans le grand livre, les écritures valeur associées sont reportées dans différents comptes dans le grand livre.'
 author: brentholtorf
-ms.topic: conceptual
-ms.devlang: al
-ms.search.keywords: null
-ms.date: 06/08/2021
 ms.author: bholtorf
+ms.reviewer: bnielse
+ms.topic: conceptual
+ms.search.keywords: null
+ms.date: 02/20/2024
 ms.service: dynamics-365-business-central
+ms.custom: bap-template
 ---
-# <a name="design-details-accounts-in-the-general-ledger"></a>Détails de conception : comptes du grand livre
+# Détails de conception : comptes du grand livre
+
 Pour rapprocher l'inventaire et les écritures du grand livre de capacité dans le grand livre, les écritures valeur associées sont reportées dans différents comptes dans le grand livre. Pour plus d'informations, voir [Détails de conception : rapprochement de comptabilité](design-details-reconciliation-with-the-general-ledger.md).  
 
-## <a name="from-the-inventory-ledger"></a>À partir de la comptabilité inventaire
+## À partir de la comptabilité inventaire  
+
 Le tableau suivant montre les relations entre différents types d'écritures de valeur de l'inventaire et les comptes et les comptes de solde dans le grand livre.  
 
 |**Type d'écriture gr. livre art.**|**Type écriture valeur**|**Type écart**|**Coût prévu**|**Compte**|**Compte de contrepartie**|  
@@ -55,7 +58,8 @@ Le tableau suivant montre les relations entre différents types d'écritures de 
 |Résultat d'assemblage|Écart|Frais généraux matière|Non|Stocks|Fabric. Écart frais généraux|  
 |Résultat d'assemblage|Arrondissement||Non|Stocks|Ajustement des stocks|  
 
-## <a name="from-the-capacity-ledger"></a>À partir du grand livre de capacité
+## À partir du grand livre de capacité  
+
  Le tableau suivant montre les relations entre les différents types d'écritures de valeur de capacité et les comptes et les comptes de solde dans le grand livre. Les écritures du grand livre de capacité représentent le temps de travail consommé dans l'assemblage ou la charge de production.  
 
 |**Type travail**|**Type écriture capacité**|**Type écriture valeur**|**Compte**|**Compte de contrepartie**|  
@@ -63,20 +67,22 @@ Le tableau suivant montre les relations entre différents types d'écritures de 
 |Assemblage|Ressource|Coût direct|Coûts directs affectés|Ajustement des stocks|  
 |Assemblage|Ressource|Coût indirect|Coûts indirects affectés|Ajustement des stocks|  
 |Fabrication|Unité de production/Atelier|Coût direct|Compte TEC|Coûts directs affectés|  
-|Fabrication|Unité de production/Atelier|Coût indirect|Compte TEC|Coûts indirects affectés|  
+|Fabrication|Unité de production/Atelier|Coût indirect|Compte TEC|Frais généraux affectés|  
 
-## <a name="assembly-costs-are-always-actual"></a>Les coûts d'assemblage sont toujours réels
+## Les coûts d’assemblage sont toujours réels  
+
  Comme indiqué dans le tableau ci-dessus, les validations d'assemblage ne sont pas représentées dans les comptes d'attente. Ceci s'explique par le fait que le concept de travail en cours (TEC) ne s'applique pas au report des résultats d'assemblage, contrairement au report des résultats de production. Les coûts d'assemblage sont uniquement reportés en tant que coûts réels, jamais en tant que coûts prévus.  
 
  Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-assembly-order-posting.md).  
 
-## <a name="calculating-the-amount-to-post-to-the-general-ledger"></a>Calcul du montant à reporter dans le grand livre
+## Calcul du montant à reporter dans le grand livre  
+
  Les champs suivants de la table **Ecritures valeur** permettent de calculer le coût total prévu qui est validé dans les écritures comptables :  
 
--   Coût indiqué (réel)  
--   Coût reporté dans grand livre  
--   Coût indiqué (prévu)  
--   Coût prévu reporté GL  
+- Coût indiqué (réel)  
+- Coût reporté dans grand livre  
+- Coût indiqué (prévu)  
+- Coût prévu reporté GL  
 
 Le tableau suivant montre la manière dont les montants à reporter dans le grand livre sont calculés pour les deux types de coût différents.  
 
@@ -85,13 +91,13 @@ Le tableau suivant montre la manière dont les montants à reporter dans le gran
 |Coût réel|Coût indiqué (réel) - Coût reporté au GL.|  
 |Coût prévu|Coût indiqué (prévu) - Coût prévu reporté au GL|  
 
-## <a name="see-also"></a>Voir aussi
- [Détails de conception : stock évaluation stock](design-details-inventory-costing.md)   
- [Détails de conception : comptabilisation stock](design-details-inventory-posting.md)   
- [Détails de conception : validation du coût prévu](design-details-expected-cost-posting.md)  
- [Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
- [Finance](finance.md)  
- [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+## Voir aussi .  
 
+[Détails de conception : évaluation du coût de l’inventaire](design-details-inventory-costing.md)  
+[Détails de conception : report de l’inventaire](design-details-inventory-posting.md)  
+[Détails de conception : validation du coût prévu](design-details-expected-cost-posting.md)  
+[Gestion des coûts ajustés](finance-manage-inventory-costs.md)  
+[Finance](finance.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
