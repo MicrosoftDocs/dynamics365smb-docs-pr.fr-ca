@@ -9,7 +9,7 @@ ms.date: 09/28/2023
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="setting-up-warehouse-management"></a>Configuration de la gestion des entrepôts
+# Configuration de la gestion des entrepôts
 
 La stratégie de distribution d'une compagnie se reflète dans la configuration de ses processus entrepôt : Cela inclut la définition de la manière dont différents articles sont traités dans différents entrepôts (par exemple, degré de contrôle des zones et étendue du flux de travail requis entre les activités entrepôt).  
 
@@ -34,7 +34,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Obtenir des conseils relatifs à la réorganisation des magasins, emplacements ou zones pour générer des activités entrepôt plus efficaces.|[Restructurer les entrepôts](warehouse-how-to-restructure-warehouses.md)|
 |Spécifiez les rapports par défaut à utiliser pour différents types de documents.|[Sélection des rapports dans Business Central](across-report-selections.md)|
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Inventaire](inventory-manage-inventory.md)  
 [Gestion d'assemblage](assembly-assemble-items.md)  

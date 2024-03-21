@@ -9,7 +9,7 @@ ms.date: 06/16/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="managing-inventory-costs"></a>Gestion des coûts de l'inventaire
+# Gestion des coûts de l'inventaire
 La gestion des coûts, aussi appelée « évaluation des coûts », se charge de l'enregistrement et du report des coûts d'exploitation de la compagnie. Inclut le report des coûts de fabrication et des coûts inventaire qui constituent la valeur des articles.   
 
 Il est essentiel de comprendre les principes suivants : les méthodes d'évaluation du coût définissent le mode d'évaluation des articles lors de leur sortie de l'inventaire, l'ajustement des coûts met à jour le coût des marchandises vendues avec les coûts d'achat associés reportés après la vente, les valeurs en inventaire doivent être reportées sur les comptes du grand livre appropriés à intervalles réguliers.
@@ -32,7 +32,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Effectuer un contrôle de clôture d’exercice et des tâches de création de rapports, tels que le calcul de la valeur de l’inventaire et le report des coûts dans le grand livre.|[Génération de rapports sur les coûts et rapprochement avec le grand livre](/dynamics365/business-central/finance-how-to-post-inventory-costs-to-the-general-ledger)|
 |Découvrez comment vous pouvez utiliser la file d’attente des travaux pour déplacer les tâches d’ajustement du coût de l’inventaire ou de rapprochement avec le grand livre en arrière-plan.|[Ajuster et rapprocher le coût de l’inventaire avec le grand livre avec la file d’attente des travaux](finance-manage-inventory-costs.md)|
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi  
  [Finance](finance.md)  
  [Stocks](inventory-manage-inventory.md)   
  [Vente](sales-manage-sales.md)   

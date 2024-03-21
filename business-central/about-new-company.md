@@ -11,7 +11,7 @@ ms.search.keywords: 'company, setup wizard'
 ms.search.form: '1803, 9020, 9022, 9026, 9027, 9030, 9000, 9009, 9004, 9005, 9024, 9006, 9007, 9010, 9016, 9017'
 ms.service: dynamics-365-business-central
 ---
-# <a name="create-new-companies-in-"></a>Créer des compagnies dans [!INCLUDE[prod_short](includes/prod_short.md)]
+# Créer des compagnies dans [!INCLUDE[prod_short](includes/prod_short.md)]
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], le conteneur pour les données métier appartenant à une unité fonctionnelle ou une entité juridique sont désignés en tant que *compagnie*. Lorsque vous vous connectez à [!INCLUDE[prod_short](includes/prod_short.md)], une compagnie de démonstration et une compagnie vide, *Ma compagnie*, vous sont attribuées. Le basculement entre compagnies est facile : accédez simplement à **Mes paramètres** et passez à l'autre compagnie. Vous pouvez également créer de nouvelles compagnies dans [!INCLUDE[prod_short](includes/prod_short.md)], selon les besoins de votre activité.  
 
@@ -22,7 +22,7 @@ Lorsque vous créez une compagnie, un guide de configuration assistée vous perm
 
 [!INCLUDE [about-ui-learn](includes/about-ui-learn.md)]
 
-## <a name="choose-the-right-template"></a>Choisir le bon modèle
+## Choisir le bon modèle
 
 Si vous décidez d’ajouter une compagnie à votre [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez utiliser le guide de configuration assistée **Créer une nouvelle compagnie** pour démarrer. Le guide de configuration est disponible à partir de la page **Compagnies** et depuis la zone de recherche dans le champ **Compagnie** de la page **Mes configurations**.  
 
@@ -44,7 +44,7 @@ Au cours de votre période d’évaluation de 30 jours, vous pouvez créer auta
 
 Votre administrateur peut en savoir plus sur les essais et les abonnements [ici](/dynamics365/business-central/dev-itpro/administration/trials-subscriptions).  
 
-## <a name="copy-a-company"></a>Copier une compagnie
+## Copier une compagnie
 
 Sur la page **Compagnies**, vous pouvez utiliser l'action **Copier** pour créer une deuxième compagnie sur la base du contenu d’une compagnie existante. Ceci est utile, par exemple, lorsque vous souhaitez tester une compagnie sans perturber les données de production.
 
@@ -53,7 +53,7 @@ Sur la page **Compagnies**, vous pouvez utiliser l'action **Copier** pour créer
 
 [!INCLUDE [email-copy-company](includes/email-copy-company.md)]
 
-## <a name="set-up-the-company"></a>Configurer la compagnie
+## Configurer la compagnie
 
 Lorsque vous vous connectez à une nouvelle compagnie, l'Assistant **Configuration de la compagnie** s'exécute automatiquement et vous permet de démarrer. Il vous sera demandé des informations sur votre activité, telles que l’adresse, les coordonnées bancaires et le mode d’évaluation du coût de l'inventaire. Ces informations sont nécessaires parce qu’elles servent de base dans plusieurs zones de [!INCLUDE[prod_short](includes/prod_short.md)], ce qui vous évitera de les configurer manuellement plus tard.  
 
@@ -61,24 +61,24 @@ Par exemple, [!INCLUDE [prod_short](includes/prod_short.md)] inclut l’adresse 
 
 Une fois les bases en place, vous pouvez configurer les zones de base restantes. Maintenant, vous êtes prêt à ajouter des données métier, telles que les clients et les fournisseurs. Pour plus d’informations, consultez [Configurer [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md).  
 
-## <a name="companies-and-environments"></a>Compagnies et environnements
+## Compagnies et environnements
 
 [!INCLUDE [company_environment](includes/company_environment.md)]
 
 Pour plus d'informations, voir [Passer à une autre compagnie ou un autre environnement](ui-organization-switch.md). Pour plus d’informations sur les environnements, voir [Comprendre l’infrastructure de Business Central Online](/dynamics365/business-central/dev-itpro/administration/tenant-environment-topology) (en anglais uniquement).  
 
-## <a name="changing-a-companys-name"></a>Changer le nom d’une compagnie
+## Changer le nom d’une compagnie
 
 Une fois qu’une compagnie a été créée, vous ne pouvez pas changer son nom. Mais vous pouvez changer son **Nom complet**, qui est le texte qui sera affiché pour la compagnie dans toute l’application.  
 
 > [!TIP]
 > Vous pouvez renommer une compagnie si vous utilisez [!INCLUDE[prod_short](includes/prod_short.md)] sur site.
 
-## <a name="add-contoso-coffee"></a>Ajouter Contoso Coffee
+## Ajouter Contoso Coffee
 
 L’application Contoso Coffee fournit des données de démonstration pour vous aider à explorer les fonctionnalités avancées de [!INCLUDE [prod_short](includes/prod_short.md)]. Trouvez l’application dans AppSource et installez-la dans une compagnie vide, par exemple une compagnie dans un environnement sandbox. Pour plus d’informations, voir [Présentation des données de démonstration Contoso Coffee](contoso-coffee/contoso-coffee-intro.md).  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Personnalisation de Business Central](ui-customizing-overview.md)  
 [Configuration de [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md)  
