@@ -10,13 +10,13 @@ ms.author: jswymer
 ms.service: dynamics-365-business-central
 ---
 
-# Création de rapports Power BI pour afficher des données [!INCLUDE [prod_long](includes/prod_long.md)]
+# <a name="building-power-bi-reports-to-display--data"></a>Création de rapports Power BI pour afficher des données [!INCLUDE [prod_long](includes/prod_long.md)]
 
 Vous pouvez rendre vos données [!INCLUDE[prod_long](includes/prod_long.md)] disponibles sous forme de source de données dans Power BI Desktop et créer des rapports puissants sur l'état de votre activité.
 
 Cet article aborde la prise en main de Power BI Desktop pour créer des rapports qui affichent des données [!INCLUDE[prod_long](includes/prod_long.md)].  Après avoir créé des rapports, vous pouvez les publier dans votre service Power BI ou les partager avec tous les utilisateurs de votre organisation. Une fois que ces rapports figurent dans le service Power BI, les utilisateurs configurés pour ce dernier peuvent alors afficher les rapports dans [!INCLUDE[prod_long](includes/prod_long.md)].
 
-## Mise en route
+## <a name="get-ready"></a>Mise en route
 
 - Inscrivez-vous au service Power BI.
 
@@ -45,7 +45,7 @@ Cet article aborde la prise en main de Power BI Desktop pour créer des rapports
 
 [!INCLUDE[note-multicompany-reports](includes/note-multicompany-reports.md)]
 
-## <a name="getdata"></a>Ajouter [!INCLUDE[prod_short](includes/prod_short.md)] comme source de données dans Power BI Desktop
+## <a name="add--as-a-data-source-in-power-bi-desktop"></a><a name="getdata"></a>Ajouter [!INCLUDE[prod_short](includes/prod_short.md)] comme source de données dans Power BI Desktop
 
 La première tâche dans le cadre de la création de rapports consiste à ajouter [!INCLUDE[prod_short](includes/prod_short.md)] comme source de données dans Power BI Desktop. Une fois connecté, vous pouvez commencer à créer le rapport.
 
@@ -99,39 +99,39 @@ Une fois les données chargées, elles s'affichent dans le volet de navigation �
 > [!TIP]
 > Pour plus d’informations sur l’utilisation de Power BI Desktop, reportez-vous à [Mise en route avec Power BI Desktop](/power-bi/fundamentals/desktop-getting-started).
 
-## Créer des rapports accessibles
+## <a name="creating-accessible-reports"></a>Créer des rapports accessibles
 
 Il est important de rendre vos rapports utilisables par autant de personnes que possible. Essayez de concevoir des rapports qui ne nécessitent aucune adaptation particulière pour répondre aux besoins spécifiques des différents utilisateurs. Assurez-vous que la conception permet aux utilisateurs de tirer parti des technologies d′assistance standard, comme les lecteurs d′écran. Power BI comprend diverses fonctionnalités d′accessibilité, des outils et des consignes pour vous aider à atteindre cet objectif. Pour plus d′informations, [Conception de rapports Power BI pour l′accessibilité](/power-bi/create-reports/desktop-accessibility-creating-reports) dans la documentation Power BI.
 
-## Création de rapports pour afficher des données associées à une liste
+## <a name="creating-reports-to-display-data-associated-with-a-list"></a>Création de rapports pour afficher des données associées à une liste
 
 Vous pouvez créer des rapports qui s’affichent dans un Récapitulatif d’une page de liste [!INCLUDE [prod_short](includes/prod_short.md)]. Les rapports peuvent contenir des données sur l’enregistrement sélectionné dans la liste. La création de ces rapports est similaire à celle d’autres rapports, à la différence près que vous devez effectuer quelques actions pour vous assurer que les rapports s’affichent comme prévu. Pour plus d’informations, consultez [Création de rapports Power BI pour afficher les données de la liste dans [!INCLUDE[prod_short](includes/prod_short.md)]](across-how-use-powerbi-reports-factbox.md).
 
-## <a name="theme"></a>Utilisation du thème du rapport [!INCLUDE [prod_short](includes/prod_short.md)] (facultatif)
+## <a name="using-the--report-theme-optional"></a><a name="theme"></a>Utilisation du thème du rapport [!INCLUDE [prod_short](includes/prod_short.md)] (facultatif)
 
 Avant de générer votre rapport, il est préférable de télécharger et d’importer le fichier de thème [!INCLUDE [prod_short](includes/prod_short.md)]. Le fichier de thème crée une palette de couleurs afin de pouvoir établir des rapports avec le même style de couleur que les applications [!INCLUDE [prod_short](includes/prod_short.md)] sans avoir à définir des couleurs personnalisées pour chaque visuel.
 
 > [!NOTE]
 > Cette tâche est facultative. Vous pouvez toujours créer vos rapports, puis télécharger et appliquer le modèle de style ultérieurement.
 
-### Télécharger le thème
+### <a name="download-the-theme"></a>Télécharger le thème
 
 Le fichier de thème est disponible sous forme de fichier json sur la galerie de thèmes de la communauté Microsoft Power BI. Pour télécharger le fichier de thème, procédez comme suit :
 
 1. Accédez à la [galerie de thèmes de la communauté Microsoft Microsoft Power BI pour Microsoft Dynamics 365 Business Central](https://community.powerbi.com/t5/Themes-Gallery/Microsoft-Dynamics-365-Business-Central/m-p/385875).
 2. Sélectionnez la pièce jointe de téléchargement **Microsoft Dynamics Business Central.json**.
 
-### Importer le thème dans un rapport
+### <a name="import-the-theme-on-a-report"></a>Importer le thème dans un rapport
 
 Après avoir téléchargé le thème du rapport [!INCLUDE [prod_short](includes/prod_short.md)], vous pouvez l’importer dans vos rapports. Pour importer le thème, sélectionnez **Afficher** > **Thèmes** > **Parcourir les thèmes**. Pour plus d’informations, consultez [Power BI Desktop - Importer des thèmes de rapport personnalisés](/power-bi/create-reports/desktop-report-themes#import-custom-report-theme-files).
 
-## Publier des rapports
+## <a name="publish-reports"></a>Publier des rapports
 
 Après avoir créé ou modifié un rapport, vous pouvez le publier dans votre service Power BI et le partager avec d’autres membres de votre organisation. Une fois publié, le rapport apparaît dans Power BI. Le rapport est également disponible pour sélection dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
 Pour publier un rapport, sélectionnez **Publier** sur l’onglet **Accueil** du ruban ou du menu **Fichier**. Si vous êtes connecté au service Power BI, le rapport est publié sur ce service. Sinon, vous êtes invité à vous connecter. 
 
-## Distribuer ou partager un rapport
+## <a name="distribute-or-share-a-report"></a>Distribuer ou partager un rapport
 
 Il existe plusieurs façons de transmettre des rapports à vos collègues et à d’autres personnes :
 
@@ -146,9 +146,9 @@ Il existe plusieurs façons de transmettre des rapports à vos collègues et à 
 
     Si vous avez une licence Power BI Pro, vous pouvez partager le rapport avec d’autres, directement depuis votre service Power BI. Pour plus d’informations, consultez [Power BI - Partager un tableau de bord ou un rapport](/power-bi/collaborate-share/service-share-dashboards#share-a-dashboard-or-report).
 
-## Résolution des problèmes
+## <a name="fixing-problems"></a>Résolution des problèmes
 
-### « Impossible d’insérer un enregistrement. L’intention de connexion actuelle est en lecture seule. » erreur de connexion à la page API personnalisée
+### <a name="cannot-insert-a-record-current-connection-intent-is-read-only-error-connecting-to-custom-api-page"></a>« Impossible d’insérer un enregistrement. L’intention de connexion actuelle est en lecture seule. » erreur de connexion à la page API personnalisée
 
 > **S’APPLIQUE À :** Business Central Online
 
@@ -179,7 +179,7 @@ Il existe plusieurs façons de transmettre des rapports à vos collègues et à 
 9. Cliquez sur **Terminé**.
 10. Sélectionnez **Fermer et appliquer** à partir du ruban pour enregistrer les modifications et fermer l’éditeur Power Query.
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Activation de vos données commerciales pour Power BI](admin-powerbi.md)  
 [Veille économique](bi.md)  

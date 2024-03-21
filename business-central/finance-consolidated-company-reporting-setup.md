@@ -12,7 +12,7 @@ ms.search.form: '1826, 1827'
 ms.service: dynamics-365-business-central
 ---
 
-# Configurer la consolidation de la compagnie
+# <a name="set-up-company-consolidation"></a>Configurer la consolidation de la compagnie
 
 Avant de pouvoir consolider les écritures de deux ou plusieurs compagnies (filiales) dans une compagnie consolidée, vous devez préparer les plans comptables et la compagnie de consolidation.  
 
@@ -23,7 +23,7 @@ En fonction de la complexité de vos entreprises, il existe deux façons de conf
   * Dans chaque unité fonctionnelle, spécifiez les comptes du grand livre à inclure dans la consolidation et la méthode de conversion pour chaque compte.
   * Dans la compagnie consolidée, configurez une fiche unité fonctionnelle pour chaque compagnie à inclure dans la consolidation. La fiche unité fonctionnelle contient des informations, telles que les dates de l’exercice financier de l'unité fonctionnelle et le pourcentage de chaque compte à inclure dans la consolidation.
 
-## Configuration d’une consolidation simple
+## <a name="simple-consolidation-setup"></a>Configuration d’une consolidation simple
 
 Si votre consolidation est simple, car vous détenez en totalité les unités fonctionnelles à consolider, le guide de configuration **Consolidation de la compagnie** vous aide à effectuer les étapes suivantes :
 
@@ -35,11 +35,11 @@ Pour utiliser le guide de configuration assistée, procédez comme suit :
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration assistée**, puis choisissez le lien associé.
 2. Choisissez **Traiter les consolidations**, puis effectuez chaque étape du guide de configuration assistée Consolidation de la compagnie.
 
-## Configuration d’une consolidation avancée
+## <a name="advanced-consolidation-setup"></a>Configuration d’une consolidation avancée
 
 Si des paramètres plus avancés sont nécessaires pour votre consolidation, vous pouvez configurer manuellement la consolidation. Par exemple, si vous détenez partiellement des compagnies ou si vous ne souhaitez pas inclure des compagnies.  
 
-### Configurer la compagnie consolidée
+### <a name="set-up-the-consolidated-company"></a>Configurer la compagnie consolidée
 
 D’abord, vous devez définir la compagnie consolidée. Vous configurez la compagnie consolidée de la même manière que vous configurez d'autres compagnies. Pour en savoir plus sur la configuration d’une compagnie, consultez [Se préparer à faire des affaires](ui-get-ready-business.md).  
 
@@ -63,7 +63,7 @@ La liste suivante illustre les principaux aspects de la compagnie consolidée.
 
     Pour en savoir plus, consultez la section [Inclure ou exclure des dimensions](#dim).
 
-### <a name="busunit"></a>Ajouter des unités fonctionnelles
+### <a name="add-business-units"></a><a name="busunit"></a>Ajouter des unités fonctionnelles
 
 Dans la compagnie consolidée, configurez chaque compagnie dont vous souhaitez consolider les données en tant qu'unité fonctionnelle. Avant d’exécuter une consolidation et de générer votre rapport de consolidation, il est recommandé de vérifier les données financières dans chaque unité fonctionnelle.
 
@@ -89,7 +89,7 @@ Une grande partie de la configuration de l'unité fonctionnelle consiste à spé
         Pour obtenir l’URL du point de terminaison, dans le [!INCLUDE [prod_short](includes/prod_short.md)] de la compagnie de l'unité fonctionnelle, ouvrez la page **Fiche unité fonctionnelle** et choisissez l’action **Configurer**. 
    * Pour exporter un fichier .xml et le partager manuellement, choisissez **Format de fichier**.
 
-### <a name="glacc"></a>Préparer les comptes GL pour la consolidation
+### <a name="prepare-general-ledger-accounts-for-consolidation"></a><a name="glacc"></a>Préparer les comptes GL pour la consolidation
 
 Le plan comptable d’une compagnie qui sera consolidée doit spécifier des comptes pour consolidation. Pour chaque compte GL de report dans chaque compagnie, vous devez spécifier le compte GL dans la compagnie consolidée vers lequel transférer le solde. Ce mappage vous permet de consolider des compagnies avec des plans comptables différents.
 
@@ -98,7 +98,7 @@ Si le plan comptable de l'unité fonctionnelle diffère de celui de la compagnie
 1. Dans chaque unité fonctionnelle [!INCLUDE [prod_short](includes/prod_short.md)], sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.  
 2. Ouvrez la fiche du compte, puis renseignez les champs du raccourci **Consolidation**. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]
 
-### <a name="exchrates"></a>Indiquer des taux de change pour les consolidations
+### <a name="specify-exchange-rates-for-consolidations"></a><a name="exchrates"></a>Indiquer des taux de change pour les consolidations
 
 Si une unité fonctionnelle utilise une devise différente de celle de la compagnie consolidée, vous devez spécifier des méthodes de conversion de taux de change pour chaque compte avant la consolidation. Pour chaque compte, la valeur du champ **Consolider la méthode de traduction** détermine le taux de change. Dans la compagnie consolidée, sur chaque fiche unité fonctionnelle, dans le champ **Table Taux de change devise**, vous spécifiez si la consolidation utilise les taux de change de l'unité fonctionnelle ou de la compagnie consolidée. Si vous utilisez les taux de change de la compagnie consolidée, vous pouvez les modifier pour une unité fonctionnelle. Pour les unités fonctionnelles, si le champ **Table Taux de change devise** de la fiche unité fonctionnelle contient la valeur **Local**, vous pouvez modifier le taux de change à partir de la fiche unité fonctionnelle. Les taux de change sont copiés à partir de la table **Taux de change devise**, mais vous pouvez les modifier avant la consolidation.
 
@@ -121,7 +121,7 @@ Pour spécifier des taux de change pour les unités fonctionnelles, procédez co
 4. Choisissez l'action **Taux de fermeture**.  
 5. Dans le champ **Montant taux de change lié**, saisissez le taux de change.
 
-### <a name="dim"></a>Inclure ou exclure des dimensions
+### <a name="include-or-exclude-dimensions"></a><a name="dim"></a>Inclure ou exclure des dimensions
 
 Vous pouvez consolider des informations de dimension et des comptes GL.
 
@@ -131,15 +131,15 @@ Vous pouvez consolider des informations de dimension et des comptes GL.
   * Pour consolider le code valeur de dimension dans l'unité fonctionnelle avec un autre code valeur de dimension dans la compagnie consolidée, renseignez le champ **Code de consolidation** dans les dimensions.  
 * Ajoutez les dimensions aux comptes GL.
 
-### <a name="exclude"></a>Exclure une compagnie de la consolidation
+### <a name="exclude-a-company-from-consolidation"></a><a name="exclude"></a>Exclure une compagnie de la consolidation
 
 Si vous ne souhaitez pas inclure une unité fonctionnelle dans la consolidation, vous pouvez l’exclure. Pour ce faire, accédez à la fiche unité fonctionnelle et désactivez la case à cocher **Consolider**.
 
-### <a name="include"></a>Inclure une compagnie partiellement détenue dans la consolidation
+### <a name="include-a-partially-owned-company-in-consolidation"></a><a name="include"></a>Inclure une compagnie partiellement détenue dans la consolidation
 
 Si vous détenez une compagnie en partie, vous pouvez ajouter un pourcentage de chaque transaction qui reflète le pourcentage que vous détenez. Par exemple, si vous possédez 70 % de la compagnie, la consolidation inclut 70 USD d’une facture de 100 USD. Pour spécifier le pourcentage de la compagnie que vous détenez, accédez à la fiche unité fonctionnelle et saisissez le pourcentage dans le champ **% consolidation**.  
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Consolidation des données financières de plusieurs compagnies](finance-consolidated-company-reporting.md)  
 [Gestion des transactions intersociétés](intercompany-manage.md)  
