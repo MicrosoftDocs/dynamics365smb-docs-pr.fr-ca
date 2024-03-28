@@ -9,17 +9,17 @@ ms.date: 12/19/2023
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="financial-reports-and-analytics-in-business-central"></a>Rapports financiers et analyses dans Business Central
+# Rapports financiers et analyses dans Business Central
 
 La génération de rapports financiers dans [!INCLUDE [prod_short](includes/prod_short.md)] permet aux professionnels de la finance et des affaires de créer, maintenir, déployer et consulter des états financiers. Cela va au-delà des contraintes des rapports traditionnels pour vous aider à concevoir efficacement divers types de rapports. [!INCLUDE [prod_short](includes/prod_short.md)] comprend plusieurs rapports, fonctions de traçage et outils qui aident les auditeurs ou contrôleurs chargés de rendre compte au service financier. La génération de rapports financiers inclut la prise en charge des dimensions, de sorte que les segments de compte ou les dimensions sont immédiatement disponibles ; aucun autre outil ou aucune autre étape de configuration n’est requis(e).  
 
 [!INCLUDE [tip_open_report_from_docs](includes/tip-open-report-from-docs.md)]
 
-## <a name="reports"></a>Rapports
+## Rapports
 
 [!INCLUDE [finance_reports](includes/finance-reports-include.md)]
 
-## <a name="tasks"></a>Tâches
+## Tâches
 
 Les articles suivants décrivent certaines des tâches clés pour analyser l’état de votre entreprise :
 
@@ -31,7 +31,7 @@ Les articles suivants décrivent certaines des tâches clés pour analyser l’�
 * [Créer des rapports avec XBRL](bi-create-reports-with-xbrl.md)  
 * [Gérer l'accès intentionnel à la base de données](admin-data-access-intent.md)  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Création des budgets des coûts](finance-create-cost-budgets.md)  
 [Déclarer la TVA aux autorités fiscales](finance-how-report-vat.md)  
