@@ -10,7 +10,7 @@ ms.date: 09/19/2023
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
-# À propos de la fonctionnalité Planification
+# <a name="about-planning-functionality"></a>À propos de la fonctionnalité Planification
 
 Le système de planification prend en compte toutes les données d'offre et de demande, ajuste les résultats et génère des suggestions pour l'équilibrage de l'offre en fonction de la demande.  
 
@@ -19,7 +19,7 @@ Pour plus d'informations, voir [Détails de conception : planification de l'app
 > [!NOTE]  
 > Pour tous les champs mentionnés dans cette rubrique, lisez l'info-bulles pour comprendre leur fonction. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
-## Offre et demande
+## <a name="supply-and-demand"></a>Offre et demande
 
 La planification comporte deux volets : l'offre et la demande. Ceux-ci doivent s’équilibrer pour garantir que la demande est satisfaite.  
 
@@ -28,7 +28,7 @@ La planification comporte deux volets : l'offre et la demande. Ceux-ci doivent 
 
 Un autre objectif du système de planification est de garantir que l'inventaire n'augmente pas inutilement. En cas de baisse de la demande, le système de planification suggère de reporter, de réduire ou d'annuler des ordres de réapprovisionnement existants.  
 
-## Calcul de planification
+## <a name="planning-calculation"></a>Calcul de planification
 
 Le système de planification est guidé par la demande prévue et réelle des clients, ainsi que par les paramètres de réapprovisionnement d'inventaire. L’exécution du calcul de planification a pour effet que l’application suggère des mesures spécifiques ([messages d’action](production-how-to-run-mps-and-mrp.md#action-messages)) à prendre concernant le réapprovisionnement possible auprès de fournisseurs, les transferts entre entrepôts ou la production. S'il y a déjà des ordres de réapprovisionnement, les mesures suggérées peuvent être d'augmenter ou d'accélérer les commandes pour répondre à l'évolution de la demande.  
 
@@ -37,7 +37,7 @@ La base de la routine de planification réside dans le calcul gros/net. Les beso
 > [!TIP]
 > Le système de planification dépend de la façon dont votre organisation utilise les emplacements. Pour plus d’informations, consultez [Planification avec ou sans emplacements](production-planning-with-without-locations.md).
 
-## Planification à l’aide d’ordres de transfert manuels
+## <a name="planning-with-manual-transfer-orders"></a>Planification à l’aide d’ordres de transfert manuels
 
 Dans le champ **Système réappro** d’une fiche unité de stock, vous pouvez configurer le système de planification pour créer des ordres de transfert destinés à équilibrer l’offre et la demande dans tous les emplacements.  
 
@@ -45,7 +45,7 @@ Outre ce type d'ordre de transfert automatique, vous devrez parfois effectuer un
 
 À l'inverse, si vous souhaitez que le système de planification ajuste les quantités de l'ordre de transfert et les dates en fonction de la demande existante, vous devez paramétrer le champ **Flexibilité planification** sur la valeur Illimitée.
 
-## Paramètres de planification
+## <a name="planning-parameters"></a>Paramètres de planification
 
 Les paramètres de planification déterminent le moment, la quantité et la méthode de réapprovisionnement en fonction des divers paramètres de la fiche article (ou unité de stock) et de la configuration de la fabrication.  
 
@@ -86,16 +86,16 @@ Les champs de configuration de planification globale figurant sur la page **Conf
 
 Pour en savoir plus, consultez [Détails de conception : paramètres de planification](design-details-planning-parameters.md)  
 
-## Autres champs de planification importants
+## <a name="other-important-planning-fields"></a>Autres champs de planification importants
 
-### Flexibilité de planification
+### <a name="planning-flexibility"></a>Flexibilité de planification
 
 Dans la plupart des commandes d'approvisionnement, comme les bons de production, vous pouvez sélectionner **Illimité** ou **Aucun** dans le champ **Flexibilité planification** des lignes.
 
 Cela spécifie si l'approvisionnement représenté par la ligne O.F. est pris en compte par le système de planification lors du calcul des messages d'action.
 Si le champ affiche l'option **Illimitée**, le système de planification inclut la ligne lors du calcul des messages d'action. S'il est paramétré sur **Aucune**, la ligne est ferme et définitive, et le système de planification n'inclut pas la ligne dans le calcul des messages d'action.
 
-### Alerte
+### <a name="warning"></a>Alerte
 
 Le champ d'informations **Avertissement** sur la page **Feuille planification** vous informe lorsqu'une ligne planification est créée pour une situation inhabituelle avec un texte. L'utilisateur peut cliquer sur ce texte pour lire des informations supplémentaires. Les types d'alerte suivants existent :
 
@@ -103,7 +103,7 @@ Le champ d'informations **Avertissement** sur la page **Feuille planification** 
 - Exception
 - Attention
 
-### Urgence
+### <a name="emergency"></a>Urgence
 
 L’avertissement Urgence est affiché dans deux situations :
 
@@ -114,7 +114,7 @@ Si l'inventaire d'un article est négatif à la date début de la planification,
 
 Les lignes document avec une date d'échéance antérieure à la date début de la planification sont consolidées dans une commande d'approvisionnement d'urgence pour que l'article arrive à la date début de la planification.
 
-### Exception
+### <a name="exception"></a>Exception
 
 L’avertissement Exception s’affiche si l'inventaire disponible prévu descend en dessous de la quantité de stock de sécurité.
 
@@ -125,7 +125,7 @@ Entamer le stock de sécurité est considéré comme une exception car cela ne d
 > [!NOTE]
 > L'approvisionnement pour les lignes planification avec les alertes Exception n'est normalement pas modifié en fonction des paramètres de planification. Au lieu de cela, le système de planification propose uniquement un approvisionnement pour couvrir la quantité de demande exacte. Cependant, vous pouvez définir l'exécution de la planification de manière à respecter certains paramètres de planification pour les lignes planification avec certaines alertes. Pour plus d'informations, consultez la description du champ **Respecter les paramètres de planification pour les avertissements d'exception** de l'article [Exécuter une planification complète et un calcul PDP ou MRP](production-how-to-run-mps-and-mrp.md).
 
-### Attention
+### <a name="attention"></a>Attention
 
 L’avertissement Attention s’affiche dans deux situations :
 
@@ -135,13 +135,13 @@ L’avertissement Attention s’affiche dans deux situations :
 > [!NOTE]
 > Dans les lignes planification comportant des avertissements, le champ **Accepter message d'action** n'est pas sélectionné, car le gestionnaire doit poursuivre l'étude de ces lignes avant de mettre en application ce plan.
 
-## Feuilles planification et feuilles de réquisition
+## <a name="planning-worksheets-and-requisition-worksheets"></a>Feuilles planification et feuilles de réquisition
 
 Comme décrit dans [Planification](production-planning.md), vous pouvez choisir entre deux feuilles pour la plupart des activités de planification : la feuille planification et la feuille de réquisition. La plupart des processus sont décrits en fonction de la feuille planification, mais il existe quelques scénarios où la feuille de réquisition est recommandée.
 
 [!INCLUDE [edit-in-excel](includes/edit-in-excel.md)]
 
-### Feuille de réquisition
+### <a name="requisition-worksheet"></a>Feuille de réquisition
 
 La page **Feuille de réquisition** répertorie les articles que vous souhaitez commander. Il existe plusieurs méthodes pour saisir des articles dans la feuille :
 
@@ -162,7 +162,7 @@ Pour plus d'informations sur la planification à l'aide d'emplacements et de tra
 > [!TIP]
 > Lorsque vous travaillez sur les pages **Feuille de réquisition** ou **Feuille planification**, vous pouvez organiser les lignes en triant sur un nom de colonne. Ceci est particulièrement utile sur la page Feuille planification, car ils peuvent être utilisés pour les bons de production à plusieurs niveaux. Par défaut, les lignes sont triées par le champ **Numéro d’article**. Pour regrouper les lignes d’une commande à plusieurs niveaux, triez par **N° ordre de référence** . En outre, les champs **Ordre PDP** et **Niveau de planification** peuvent aider à montrer la hiérarchie des lignes.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Détails de conception : planification de l’approvisionnement](design-details-supply-planning.md)  
 [Planification](production-planning.md)  
