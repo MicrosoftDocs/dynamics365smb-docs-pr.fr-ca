@@ -9,7 +9,7 @@ ms.date: 04/01/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="make-drop-shipments"></a>Effectuer des livraisons directes
+# Effectuer des livraisons directes
 
 Lors d'une livraison directe, un ou plusieurs articles de l'un de vos fournisseurs sont livrés directement chez l'un de vos clients.
 
@@ -18,7 +18,7 @@ Lorsqu'un document de vente est marqué pour livraison directe, et lorsque vous 
   
 > [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE4mOyM?rel=0]
 
-## <a name="to-create-a-sales-order-for-drop-shipment"></a>Pour créer un document de vente pour des livraisons directes
+## Pour créer un document de vente pour des livraisons directes
 
 Pour préparer une livraison directe, vous créez un document de vente pour un article et indiquer sur la ligne vente que la vente exige la livraison directe.
 
@@ -28,7 +28,7 @@ Pour préparer une livraison directe, vous créez un document de vente pour un a
 > [!TIP]
 > Par défaut, la case à cocher Livraison directe et le champ Code achat n’est pas disponible sur les lignes. Si ce n’est pas le cas, vous pouvez les ajouter en personnalisant la section de page qui contient les lignes. Pour plus d'informations, voir [Personnaliser votre espace de travail](ui-personalization-user.md).
 
-## <a name="to-create-the-purchase-order-for-drop-shipment"></a>Pour créer le bon de commande pour livraison directe
+## Pour créer le bon de commande pour livraison directe
 
 Pour préparer une livraison directe, vous indiquez sur le bon de commande qu'elle doit être livrée à votre client, et non à vous-même.
 
@@ -45,7 +45,7 @@ Vous pouvez maintenant demander à votre fournisseur de livrer les articles dire
 
 Si votre fournisseur vous communique un numéro de suivi ou des informations similaires, vous pouvez ajouter ces informations dans une ligne bon de commande de type *Commentaire*.  
 
-## <a name="to-create-multiple-purchase-orders-for-drop-shipments"></a>Pour créer plusieurs bons de commande pour des livraisons directes
+## Pour créer plusieurs bons de commande pour des livraisons directes
 
 Vous pouvez également utiliser la feuille de réquisition pour créer le bon de commande du fournisseur. 
 
@@ -57,11 +57,11 @@ L’avantage d’utiliser la feuille de réquisition est qu’elle peut créer d
 4. Passez en revue les lignes bon de commande et, dans le champ **N° fournisseur**, sélectionnez le fournisseur qui fournit les marchandises requises. 
 5. Choisissez l’action **Traiter messages d’action** pour convertir les lignes révisées en bon de commande.
 
-## <a name="to-view-the-linked-purchase-order-from-the-sales-order"></a>Pour afficher le bon de commande associé à partir du document de vente
+## Pour afficher le bon de commande associé à partir du document de vente
 
 * Sélectionnez la ligne commande vente livraison directe, choisissez l'action **Commande**, puis l'action **Livraison directe** et enfin l'action **Commande achat**.
 
-## <a name="to-post-a-drop-shipment"></a>Pour reporter une livraison directe
+## Pour reporter une livraison directe
 
 Lorsque le fournisseur a livré les articles, vous pouvez reporter le document de vente comme envoyé. Vous pouvez également valider la commande achat, mais uniquement avec l'option **Réceptionner** jusqu'à ce que la commande vente ait été facturée.
 
@@ -71,7 +71,7 @@ Lorsque le fournisseur a livré les articles, vous pouvez reporter le document d
 4. Sélectionnez l'action **Valider** ou **Valider et envoyer**.
 5. Sélectionnez l'option **Livrer** pour facturer ultérieurement ou l'option **Livrer et facturer** pour facturer immédiatement.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Création des commandes spéciales](sales-how-to-create-special-orders.md)  
 [Achat des articles pour une vente](purchasing-how-purchase-products-sale.md)  
