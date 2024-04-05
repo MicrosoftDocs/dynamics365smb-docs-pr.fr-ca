@@ -10,13 +10,13 @@ ms.date: 09/08/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="process-sales-return-orders"></a>Traitement des retours vente
+# Traitement des retours vente  
 
 Si vous souhaitez davantage de contrôle sur le processus de retour vente, par exemple les documents entrepôt pour la manutention des articles, ou une meilleure vue d’ensemble lors de la réception d’articles à partir de plusieurs documents vente avec un retour vente, vous pouvez créer des retours vente. Un retour vente émet automatiquement la note de crédit vente associée et les autres documents relatifs au retour, comme un document de vente de remplacement, le cas échéant.
 
 Outre la facture vente reportée d'origine, vous pouvez affecter la note de crédit vente ou le retour vente à d'autres documents vente, par exemple une autre facture vente reportée, parce que le client renvoie également des articles livrés avec cette facture.
 
-## <a name="create-a-sales-return-order-based-on-one-or-more-posted-sales-documents"></a>Créer un retour vente à partir d’un ou de plusieurs documents vente reportés
+## Créer un retour vente à partir d’un ou de plusieurs documents vente reportés  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Retours vente**, puis sélectionnez le lien associé.
 2. Sélectionnez l'action **Nouveau**.  
@@ -66,7 +66,7 @@ Outre la facture vente reportée d'origine, vous pouvez affecter la note de cré
 10. Sur la page **Retour vente**, dans le champ **Code motif retour** de chaque ligne, sélectionnez le motif de ce retour.
 11. Sélectionnez l'action **valider**.
 
-## <a name="to-create-a-replacement-sales-order-from-a-sales-return-order"></a>Pour créer un document de vente de remplacement à partir d'un retour vente
+## Pour créer un document de vente de remplacement à partir d'un retour vente
 Vous pouvez décider de compenser la vente d'un article au client en remplaçant cet article. Vous pouvez le remplacer par le même article ou par un autre. Cette situation survient, par exemple, si vous avez par erreur livré un mauvais article au client.  
 
 1. Sur la page **Retour vente** pour un processus de retour actif, sur une ligne vide, entrez une écriture négative pour l'article de remplacement en insérant un montant négatif dans le champ **Quantité**.  
@@ -74,7 +74,7 @@ Vous pouvez décider de compenser la vente d'un article au client en remplaçant
 3. Sur la page **Déplacer lignes vente nég.**, renseignez les champs selon vos besoins.
 4. Cliquez sur le bouton **OK**. La ligne négative pour l'article de remplacement est supprimée de la commande retour vente et insérée sur une nouvelle page **Document de vente**. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
 
-## <a name="to-create-return-related-documents-from-a-sales-return-order"></a>Pour créer des documents associés au retour depuis un retour vente
+## Pour créer des documents associés au retour depuis un retour vente
 Vous pouvez faire en sorte de créer automatiquement tous les documents de vente, retours achat et bons de commande de remplacement au cours du processus de retour vente. Cela est utile, par exemple, dans les situations où vous voulez gérer des articles bénéficiant des garanties fournies par les fournisseurs.
 
 1. Sur la page **Retour vente** pour un processus de retour actif, choisissez l'action **Créer documents associés retour**.
@@ -83,7 +83,7 @@ Vous pouvez faire en sorte de créer automatiquement tous les documents de vente
 4. Si vous devez commander un article retourné au fournisseur, activez la case à cocher **Créer bon de commande**.
 5. Si vous devez créer un document de vente de remplacement, activez la case à cocher **Créer un document de vente**.
 
-## <a name="to-create-a-restock-charge"></a>Pour créer des frais de déstockage
+## Pour créer des frais de déstockage
 Vous pouvez facturer à votre client les frais de restockage pour couvrir les coûts de manutention physique occasionnés par le retour d'un article. Cela peut arriver si, par exemple, le client commande par erreur le mauvais article ou change d'avis après réception de l'article.
 
 Vous pouvez reporter ce prix augmenté en tant que frais annexes dans une note de crédit ou un retour et l'affecter à la livraison reportée. Les sections suivantes décrivent cette procédure pour un retour vente, mais la même procédure s’applique à une note de crédit vente.
@@ -94,7 +94,7 @@ Vous pouvez reporter ce prix augmenté en tant que frais annexes dans une note d
 
 Lorsque vous reportez la commande retour vente, les frais de restockage sont ajoutés au montant de l'écriture vente appropriée. De cette manière, vous pouvez maintenir la précision de l'évaluation de l'inventaire.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Ventes](sales-manage-sales.md)  
 [Définition des ventes](sales-setup-sales.md)  
