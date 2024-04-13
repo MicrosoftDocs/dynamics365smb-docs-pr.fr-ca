@@ -11,7 +11,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Synchroniser les articles et l'inventaire
+# <a name="synchronize-items-and-inventory"></a>Synchroniser les articles et l'inventaire
 
 Les **Articles** dans [!INCLUDE[prod_short](../includes/prod_short.md)] correspondent aux *produits* dans Shopify, ce qui comprend les marchandises physiques, les téléchargements numériques, les services et les cartes cadeaux que vous vendez. Il existe deux raisons principales pour synchroniser les articles :
 
@@ -22,7 +22,7 @@ Les deux scénarios précédents sont toujours activés.
 
 Un troisième scénario consiste à gérer les données dans Shopify, mais à importer ces articles en vrac dans [!INCLUDE[prod_short](../includes/prod_short.md)]. Ce scénario peut être utile pour les événements de migration de données, si vous souhaitez connecter une boutique en ligne existante à un nouvel environnement [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-## Définir les synchronisations des articles
+## <a name="define-item-synchronizations"></a>Définir les synchronisations des articles
 
 1. Sélectionnez l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") et saisissez **Magasin Shopify**. Ouvrez la boutique pour laquelle vous souhaitez configurer la synchronisation des articles.
 2. Dans le champ **Synchroniser l’article**, sélectionnez l’option requise.
@@ -38,7 +38,7 @@ Un troisième scénario consiste à gérer les données dans Shopify, mais à im
 > [!NOTE]
 > Changer **Synchroniser l’élément** de **Depuis Shopify** vers **À Shopify** n’aura d’effet que si vous activez **Peut mettre à jour les produits Shopify**. 
 
-## Importer des articles de Shopify
+## <a name="import-items-from-shopify"></a>Importer des articles de Shopify
 
 Tout d’abord, importiez les articles de Shopify en bloc ou en même temps que l’importation des commandes, ces articles sont d’abord ajoutés aux tableaux **Produit Shopify** et **Variante Shopify**. Mappez ensuite les produits et variantes importés aux articles et variantes dans [!INCLUDE[prod_short](../includes/prod_short.md)]. Gérez le processus avec les paramètres suivants :
 
@@ -53,7 +53,7 @@ Tout d’abord, importiez les articles de Shopify en bloc ou en même temps que 
 |**Unité en tant que variante**| Choisissez cette option si vous souhaitez que toutes les unités de mesure des articles soient exportées sous forme de variantes distinctes. Ajoutez le champ via la personnalisation. Pour en savoir plus, consultez la section [Unité de mesure en tant que variante](synchronize-items.md#unit-of-measure-as-variant) .|
 |**Nom d’option de variante pour l’unité**| Utilisez ce champ avec **UdM comme variante** pour spécifier sous quelle option ajouter des variantes qui représentent des unités de mesure. La valeur par défaut est *Unité de mesure*. Ajoutez le champ via la personnalisation.|
 
-## Exporter les articles dans Shopify
+## <a name="export-items-to-shopify"></a>Exporter les articles dans Shopify
 
 Il existe plusieurs façons d’exporter des éléments vers Shopify : 
 
@@ -85,9 +85,9 @@ Les paramètres suivants permettent de gérer l’exportation des articles :
 > [!NOTE]
 > Lorsque vous souhaitez exporter de nombreux éléments et variantes, certains peuvent être bloqués. Vous ne pouvez pas inclure les articles et variantes bloqués dans les calculs de prix. Ils ne sont donc pas exportés. Le connecteur ignore ces éléments et variantes, vous n’avez donc pas besoin de les filtrer sur la page **Ajouter un élément à Shopify** de la demande.
 
-## Détails avancés
+## <a name="advanced-details"></a>Détails avancés
 
-### Effet des points de stock et codes à barres dans le produit Shopify sur le mappage et la création d’articles et de variantes dans Business Central
+### <a name="effect-of-shopify-product-skus-and-barcodes-on-mapping-and-creating-items-and-variants-in-business-central"></a>Effet des points de stock et codes à barres dans le produit Shopify sur le mappage et la création d’articles et de variantes dans Business Central
 
 Lorsque les produits sont importés de Shopify vers les tableaux **Produits Shopify** et **Variantes Shopify**, [!INCLUDE[prod_short](../includes/prod_short.md)] tente de trouver les enregistrements existants.
 
@@ -111,7 +111,7 @@ Le tableau suivant donne les effets du champ **Code à barres**.
 > [!NOTE]  
 > Vous pouvez déclencher le mappage pour le produit/les variantes sélectionnés ou tous les produits non mappés importés en choisissant **Essayer de rechercher le mappage du produit** (pour le produit/les variantes sélectionnés) ou **Essayer de rechercher des mappages**.
 
-### Aperçu du mappage des champs
+### <a name="fields-mapping-overview"></a>Aperçu du mappage des champs
 
 |Shopify|Source lors de l’exportation à partir de [!INCLUDE[prod_short](../includes/prod_short.md)]|Cible lors de l’importation dans [!INCLUDE[prod_short](../includes/prod_short.md)]|
 |------|-----------------|-----------------|
@@ -137,12 +137,12 @@ Le tableau suivant donne les effets du champ **Code à barres**.
 |Codes taxe|**Code groupe fiscal**. Uniquement pertinent pour les taxes de vente. En savoir plus sur [Configurer les taxes](setup-taxes.md).|Aucun affichage.|
 
 
-### Balises
+### <a name="tags"></a>Balises
 
 Examinez les balises importées dans le récapitulatif **Balises** de la page **Produit Shopify**. Sur la même page, pour modifier les balises, choisissez l’action **Balises**.
 Si l’option **À Shopify** est sélectionnée dans le champ **Synchroniser l’article**, les balises attribuées sont exportées vers Shopify à la prochaine synchronisation.
 
-### Unité de mesure comme variante
+### <a name="unit-of-measure-as-variant"></a>Unité de mesure comme variante
 
 Shopify ne prend pas en charge plusieurs unités de mesure. Si vous souhaitez vendre le même produit, par exemple à la pièce et à l’ensemble, et utiliser des prix ou des escomptes différents, vous devez créer une unité de mesure en tant que variante de produit.
 Le connecteur Shopify peut être configuré pour exporter des unités de mesure en tant que variantes ou importer des variantes en tant qu’unité de mesure.
@@ -155,15 +155,15 @@ Pour activer cette fonctionnalité, utilisez les champs **UoM comme variante** e
 * Lorsque vous traitez une matrice de variantes, par exemple Couleur et UdM et que vous souhaitez importer des produits, vous devez définir le *Numéro d’article + Code de variante* dans le champ **Mappage SKU** et assurez-vous que le champ **SKU** dans Shopify a la même valeur pour toutes les unités de mesure et inclut le numéro d’article et le code de variante.
 * Dans [!INCLUDE[prod_short](../includes/prod_short.md)] la disponibilité est calculée par article/variante d’article et non par unité de mesure. Cela signifie que la même disponibilité sera attribuée à chaque variante représentant l’unité de mesure (par rapport à **Qté par unité de mesure**), ce qui peut conduire à des cas où la quantité disponible dans Shopify n’est pas exacte. Exemple : article vendu en PCS et en boîte de 6. L’inventaire dans [!INCLUDE[prod_short](../includes/prod_short.md)] est de 6 PCS. Article exporté vers Shopify en tant que produit avec deux variantes. Une fois la synchronisation des inventaires exécutée, le niveau d’inventaire dans Shopify sera de 6 pour la variante PCS et de 1 pour la variante BOX. L’acheteur peut explorer uniquement le magasin et voir que le produit est disponible dans les deux options et passer une commande pour 1 BOÎTE. Le prochain acheteur verra que BOX n’est pas disponible, mais il reste encore 6 PCS. Ce problème sera corrigé lors de la prochaine synchronisation de l’inventaire.
 
-### URL et URL d’aperçu
+### <a name="url-and-preview-url"></a>URL et URL d’aperçu
 
 Un article ajouté à Shopify ou importé de Shopify peut avoir **URL** ou **URL d’aperçu** remplis. Le champ **URL** sera vide si le produit n’est pas publié sur la boutique en ligne, par exemple, parce que son état est brouillon. L’**URL** sera vide si le magasin est protégé par mot de passe, par exemple, parce qu’il s’agit d’un magasin de développement. Dans la plupart des cas, vous pouvez utiliser l’**URL d’aperçu** pour vérifier à quoi ressemblera le produit une fois publié.
 
-## Exécuter la synchronisation des articles
+## <a name="run-item-synchronization"></a>Exécuter la synchronisation des articles
 
 La synchronisation complète ou partielle des articles peut être effectuée de différentes manières.
 
-### Synchronisation initiale des articles de Business Central vers Shopify
+### <a name="initial-sync-of-items-from-business-central-to-shopify"></a>Synchronisation initiale des articles de Business Central vers Shopify
 
 1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Produits Shopify** et choisissez le lien associé.
 2. Choisissez l’action **Ajouter des articles**.
@@ -179,7 +179,7 @@ Alternativement, vous pouvez synchroniser un élément en choisissant l’option
 > [!NOTE]  
 > Synchronisation initiale des éléments de [!INCLUDE[prod_short](../includes/prod_short.md)] à Shopify ne considère pas **Élément de synchronisation** et **Peut mettre à jour Shopify Des produits** paramètres. 
 
-### Synchroniser les produits de Shopify vers Business Central
+### <a name="sync-products-from-shopify-to-business-central"></a>Synchroniser les produits de Shopify vers Business Central
 
 1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Magasin Shopify**, puis choisissez le lien associé.
 2. Sélectionnez le magasin pour lequel vous voulez synchroniser les articles pour ouvrir la page **Fiche magasin Shopify**.
@@ -189,7 +189,7 @@ Sinon, utilisez l’action **Synchroniser les produits** sur la page **Produits 
 
 Vous pouvez programmer la tâche pour qu’elle soit exécutée de manière automatisée. En savoir plus dans la section [Programmer des tâches récurrentes](background.md#to-schedule-recurring-tasks).
 
-### Mises à jour ponctuelles des produits Shopify
+### <a name="ad-hoc-updates-of-shopify-products"></a>Mises à jour ponctuelles des produits Shopify
 
 Si les enregistrements sont mis à jour dans le tableau **Produit Shopify**, les modifications suivantes sont synchronisées avec Shopify.
 
@@ -207,7 +207,7 @@ En fonction de la valeur indiquée dans **Action pour produits supprimés** dans
 * **État sur Brouillon** : l'état du produit dans Shopify est défini sur *Brouillon*.
 * **État sur Archivé** : le produit est archivé dans Shopify.
 
-## Synchroniser les images d’articles
+## <a name="sync-item-images"></a>Synchroniser les images d’articles
 
 La synchronisation des images peut être configurée pour les articles synchronisés. Choisissez parmi les options suivantes :
 
@@ -217,24 +217,24 @@ La synchronisation des images peut être configurée pour les articles synchroni
 
 La synchronisation des images peut être initialisée de deux manières décrites ci-dessous.
 
-### Synchroniser les images des produits à partir de la page du magasin Shopify
+### <a name="sync-product-images-from-the-shopify-shop-page"></a>Synchroniser les images des produits à partir de la page du magasin Shopify
 
 1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Magasins Shopify** et choisissez le lien associé.
 2. Sélectionnez le magasin pour lequel vous voulez synchroniser les images pour ouvrir la page **Fiche magasin Shopify**.
 3. Sélectionnez l’action **Synchroniser les images des produits**.
 
-### Synchroniser les images des produits à partir de la page des produits Shopify
+### <a name="sync-product-images-from-the-shopify-products-page"></a>Synchroniser les images des produits à partir de la page des produits Shopify
 
 1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Produits Shopify** et choisissez le lien associé.
 2. Sélectionnez l’action **Synchroniser les images des produits**.
 
-### Remarques sur la synchronisation des images
+### <a name="image-synchronization-remarks"></a>Remarques sur la synchronisation des images
 
 * Lorsque vous exportez des images de [!INCLUDE[prod_short](../includes/prod_short.md)] vers Shopify, les images remplacent celles que vous avez exportées précédemment. Les images précédentes ne sont plus disponibles.
 * Si vous supprimez une image dans [!INCLUDE[prod_short](../includes/prod_short.md)], l’image dans Shopify n’est pas supprimée. Vous devrez supprimer manuellement les anciennes images dans **Administrateur Shopify**.
 * Les images que vous exportez dans Shopify doivent être conformes aux exigences de Shopify. Sinon, vous ne pouvez pas les importer. Pour en savoir plus sur les exigences multimédias, accédez à [Types de support du produit sur help.shopify.com](https://help.shopify.com/en/manual/products/product-media/product-media-types#images).
 
-## Synchroniser les prix avec Shopify
+## <a name="sync-prices-with-shopify"></a>Synchroniser les prix avec Shopify
 
 Les paramètres suivants permettent d’exporter les prix avec ces paramètres :
 
@@ -249,25 +249,25 @@ Les paramètres suivants permettent d’exporter les prix avec ces paramètres 
 
 Vous pouvez exporter les prix pour les articles synchronisés de la manière décrite ci-dessous.
 
-### Synchroniser les prix à partir de la page des produits Shopify
+### <a name="sync-prices-from-the-shopify-products-page"></a>Synchroniser les prix à partir de la page des produits Shopify
 
 1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Produits Shopify** et choisissez le lien associé.
 2. Sélectionnez l’action **Synchroniser les prix avec Shopify**.
 
-### Remarques sur le calcul des prix
+### <a name="price-calculation-remarks"></a>Remarques sur le calcul des prix
 
 * Lors de la détermination d’un prix, [!INCLUDE[prod_short](../includes/prod_short.md)] utilise le prix le plus bas. Cependant, la logique du prix le plus bas ignore le prix unitaire défini sur la fiche article si un prix est défini dans le groupe de prix. Cela est vrai même si le prix unitaire du prix de la fiche article est inférieur.
 * Pour calculer les prix, le connecteur crée un devis temporaire pour l’article avec une quantité de 1 et utilise une logique de calcul de prix standard. Seuls les prix et escomptes applicables pour la quantité 1 sont utilisés. Vous ne pouvez pas exporter différents prix ou escomptes en fonction de la quantité.
 * Le connecteur envoie une demande de mise à jour des prix dans Shopify si le prix est en [!INCLUDE[prod_short](../includes/prod_short.md)] a changé. Par exemple, si vous avez synchronisé des produits et des prix, puis modifié le prix dans Shopify, en choisissant le **Synchroniser les prix avec Shopify** l’action n’aura aucun impact sur le prix dans le Shopify car le nouveau prix calculé par le connecteur est le même que le prix stocké dans le Shopify Variante de la synchronisation précédente. Le **Comparer au prix** mis à jour uniquement si le prix principal a changé. 
 
-## Synchroniser l'inventaire sur Shopify
+## <a name="sync-inventory-to-shopify"></a>Synchroniser l'inventaire sur Shopify
 
 La synchronisation de l'inventaire peut être configurée pour les articles déjà synchronisés. Deux conditions doivent être remplies :
 
 1. Le suivi de l'inventaire doit être activé pour un produit dans Shopify. Si les articles sont exportés dans Shopify, pensez à activer **Suivi inventaire** sur la page **Magasin Shopify**. Pour plus d’informations, voir la section [Exporter les articles dans Shopify](synchronize-items.md#export-items-to-shopify)
 2. La synchronisation de l'inventaire doit être activée pour **Emplacements Shopify**.
 
-### Pour activer la synchronisation de l'inventaire
+### <a name="to-enable-inventory-sync"></a>Pour activer la synchronisation de l'inventaire
 
 1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Magasin Shopify**, puis choisissez le lien associé.
 2. Sélectionnez le magasin pour lequel vous voulez synchroniser l'inventaire pour ouvrir la page **Fiche magasin Shopify**.
@@ -279,18 +279,18 @@ La synchronisation de l'inventaire peut être configurée pour les articles déj
 
 La synchronisation de l'inventaire peut être initialisée des deux manières décrites ci-dessous.
 
-### Synchroniser l'inventaire à partir de la page du magasin Shopify
+### <a name="sync-inventory-from-the-shopify-shop-page"></a>Synchroniser l'inventaire à partir de la page du magasin Shopify
 
 1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Magasins Shopify** et choisissez le lien associé.
 2. Sélectionnez le magasin pour lequel vous voulez synchroniser l'inventaire pour ouvrir la page **Fiche magasin Shopify**.
 3. Sélectionnez l’action **Synchroniser l'inventaire**.
 
-### Synchroniser l'inventaire à partir de la page des produits Shopify
+### <a name="sync-inventory-from-the-shopify-products-page"></a>Synchroniser l'inventaire à partir de la page des produits Shopify
 
 1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Produits Shopify** et choisissez le lien associé.
 2. Sélectionnez l’action **Synchroniser l'inventaire**.
 
-### Remarques sur l'inventaire
+### <a name="inventory-remarks"></a>Remarques sur l'inventaire
 
 * Il existe deux méthodes standard de calcul des inventaires : **Solde disponible projeté à la date** et **Inventaire libre (non réservé)**. Avec l’extensibilité, vous pouvez ajouter plus d’options. Pour en savoir plus sur l’extensibilité, rendez-vous sur [ exemples](/dynamics365/business-central/dev-itpro/developer/devenv-extending-shopify#stock-calculation). 
 * Vous pouvez consulter les informations d'inventaire en provenance de Shopify sur la page **Récapitulatif de l'inventaire Shopify**. Dans ce récapitulatif, un aperçu de l'inventaire Shopify et du dernier inventaire calculé s’affiche dans [!INCLUDE[prod_short](../includes/prod_short.md)]. Il existe un enregistrement par emplacement.
@@ -298,7 +298,7 @@ La synchronisation de l'inventaire peut être initialisée des deux manières d�
 * Lorsque vous ajoutez un nouvel emplacement dans Shopify, vous devez également ajouter des enregistrements d’inventaire pour celui-ci. Shopify ne le fait pas automatiquement pour les produits et variantes existants et le connecteur ne synchronisera pas les niveaux d’inventaire pour ces articles dans le nouvel emplacement. Pour en savoir plus, voir [Affecter un inventaire à des emplacements](https://help.shopify.com/manual/locations/assigning-inventory-to-locations).
 * À la fois les **Services d’exécution Business Central** et les emplacements normaux sont pris en charge et peuvent être utilisés pour l’expédition et l’inventaire.
 
-#### Exemple de calcul du solde disponible prévisionnel
+#### <a name="example-of-calculation-of-projected-available-balance"></a>Exemple de calcul du solde disponible prévisionnel
 
 Il y a 10 pièces de l’article A disponibles en stock et deux documents de vente en attente. Une pour lundi avec la quantité de *Un* et une pour jeudi avec une quantité de *Deux*. Selon le moment où vous synchronisez l'inventaire, le système mettra à jour le niveau d'inventaire dans Shopify avec différentes quantités :
 
@@ -307,7 +307,7 @@ Il y a 10 pièces de l’article A disponibles en stock et deux documents de ve
 |Mardi|9|Inventaire 10 moins document de vente défini sur une livraison lundi|
 |Vendredi|7|Inventaire 10 moins les deux documents de vente|
 
-### Deux approches pour gérer les exécutions
+### <a name="two-approaches-to-manage-fulfillments"></a>Deux approches pour gérer les exécutions
 
 Il existe deux manières de gérer l’exécution dans Shopify :
 * Traitement des commandes et suivi des inventaires Shopify « intégrés »
@@ -327,13 +327,13 @@ Du point de vue [!INCLUDE[prod_short](../includes/prod_short.md)] lorsque vous c
 * Utilisez le bouton **Emplacement du produit par défaut** pour spécifier si cet article sera traité par Shopify exécution ou par 3PL. Il existe toujours un **service de traitement des commandes Business Central**, mais il peut y avoir davantage de services de traitement des commandes si davantage d’applications sont installées. Vous pouvez activer l’ **emplacement par défaut du produit** uniquement dans un seul enregistrement si vous souhaitez utiliser le service de traitement des commandes. 
 * Utilisez le bouton **Emplacement du produit par défaut** pour spécifier les emplacements que vous souhaitez utiliser pour suivre l’inventaire. Vous pouvez activer l’ **emplacement par défaut du produit** pour plusieurs emplacements où **le service de traitement des commandes** est désactivé. Notez que l’inventaire sera toujours suivi pour l’emplacement principal. 
  
-#### Quelle est la différence ?
+#### <a name="what-is-the-difference"></a>Quelle est la différence ?
 
 Shopify l’accomplissement est utile lors de l’utilisation Shopify PDV et il existe plusieurs magasins physiques. Vous voulez que les employés du magasin physique connaissent leur inventaire actuel. Dans ce cas, vous créez plusieurs emplacements dans Shopify, plusieurs emplacements dans [!INCLUDE[prod_short](../includes/prod_short.md)], Activer **Emplacement du produit par défaut** pour tous ces endroits.  
 
 Si la logistique est gérée dans [!INCLUDE[prod_short](../includes/prod_short.md)], où il peut y avoir autant d’emplacements que nécessaire représentant les centres de distribution, vous ne créez pas d’emplacements dans Shopify. Le connecteur Shopify crée automatiquement des services de traitement des commandes Business Central et vous pouvez lier l’inventaire via des filtres d’emplacement de plusieurs emplacements à un enregistrement de services de traitement des commandes. Comme résultat en Shopify il n’y a aucune information sur l’endroit d’où les marchandises sont envoyées, il n’y a que des informations sur le suivi. Tandis que dans [!INCLUDE[prod_short](../includes/prod_short.md)] vous pouvez sélectionner en fonction de la disponibilité et de la proximité de la destination. 
 
-#### Exemple d’utilisation de la bascule Emplacement du produit par défaut
+#### <a name="example-of-using-default-product-location-toggle"></a>Exemple d’utilisation de la bascule Emplacement du produit par défaut
 
 Après avoir choisi le **Obtenir Shopify Emplacements** action dans le **Shopify Emplacements** sur la page, vous voyez les emplacements suivants :
 
@@ -352,6 +352,6 @@ Examinons l’impact de l’activation de la bascule Emplacement du produit par 
 |Service exécution Business Central|L’inventaire sera stocké à : Business Central Fulfillment Service ; emplacements sélectionnés : (Application) Business Central Fulfillment Service|
 |Service exécution Business Central et principal| Erreur : Vous ne pouvez pas utiliser des emplacements Shopify standard avec des emplacements de service d’exécution|
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Mise en route du connecteur pour Shopify](get-started.md)  

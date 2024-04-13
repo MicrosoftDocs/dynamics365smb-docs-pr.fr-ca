@@ -11,7 +11,7 @@ ms.date: 02/22/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# À propos des bons de production
+# <a name="about-production-orders"></a>À propos des bons de production
 
 Les ordres de fabrication permettent de gérer la conversion de matières achetées en articles fabriqués. La gamme de bons de production utilise divers ateliers ou unités de production dans l'atelier.  
 
@@ -32,7 +32,7 @@ Les ordres de fabrication sont les points de départ pour :
 - le contrôle de la fabrication en cours ;  
 - la traçabilité de la fabrication terminée.  
 
-## Création des bons de production  
+## <a name="production-order-creation"></a>Création des bons de production
 
 Vous pouvez créer des bons de production un par un manuellement sur la page **Bon de production** ou les générer sur les pages **Planification document de vente** ou **Planification commande**. Vous pouvez aussi créer plusieurs ordres à partir de la page **Feuille planification**.  
 
@@ -44,7 +44,7 @@ Les bons de production sont créés à l’aide d’informations provenant des �
 - postes de charge ;  
 - centres de charge ;  
 
-## Limitations de la création de bons de production  
+## <a name="limitations-on-creating-production-orders"></a>Limitations de la création de bons de production
 
 Les ordres de fabrication sont automatiquement réservés et tracés sur leur source quand ils sont :  
 
@@ -57,18 +57,18 @@ Pour plus d'informations, voir [Suivre les relations entre l'offre et la demande
 
 Les bons de production créés par d’autres moyens ne sont pas automatiquement réservés et tracés.
 
-## État du bon de production  
+## <a name="production-order-status"></a>État du bon de production
 
 L'état du bon de production contrôle la manière dont le bon de production se comporte dans l'application. L’état de l’ordre dicte la forme et le contenu de la production. Les bons de production sont affichés sur différentes pages en fonction de leur état. Vous ne pouvez pas modifier l’état d’un bon de production manuellement. Vous devez utiliser la fonction **Modifier état** dans le bon de production individuel ou dans la page **Changer état Bon de production**.  
 
-### Bon de production simulé  
+### <a name="simulated-production-order"></a>Bon de production simulé
 
 Un bon de production simulé est unique en raison des caractéristiques suivantes :  
 
 - Comme son nom l’indique, il s’agit d’une simulation que vous pouvez utiliser pour les devis et les coûts. Par exemple, lorsque le service Recherche et Développement souhaite obtenir une estimation du coût d’un article proposé. Un bon de production simulé fait office d'exemple d'un bon de production.  
 - Ils n’influencent par la planification des commandes. La planification (MPS et MRP) ne prend pas en considération et n’est pas affectée par les bons de production simulés. De même, un bon de production simulé ne peut pas être utilisé comme modèle parce qu’il disparaît lorsque vous modifiez son état.  
 
-### Bon de production planifié  
+### <a name="planned-production-order"></a>Bon de production planifié
 
 Un bon de production planifié est unique en raison des caractéristiques suivantes :  
 
@@ -78,7 +78,7 @@ Un bon de production planifié est unique en raison des caractéristiques suivan
 - Sa génération dans la planification produit une « libération prévue » suggérée qui inclut une quantité, une date de libération et une date d'échéance. La logique du système de planification est basée sur le système de réapprovisionnement, les méthodes de réapprovisionnement et les modificateurs d'ordre qu'il rencontre dans le processus de planification des besoins nets.  
 - Pour afficher leur effet, examinez la charge de chaque atelier ou unité de production sur l’itinéraire du bon de production planifié.  
 
-### Bon de production planifié ferme  
+### <a name="firm-planned-production-order"></a>Bon de production planifié ferme
 
 Un bon de production planifié ferme est unique en raison des caractéristiques suivantes :  
 
@@ -88,7 +88,7 @@ Un bon de production planifié ferme est unique en raison des caractéristiques 
 - Sa génération dans la planification produit une « libération prévue » suggérée qui inclut une quantité, une date de libération et une date d'échéance. La logique du système de planification est basée sur le système de réapprovisionnement, les méthodes de réapprovisionnement et les modificateurs d'ordre qu'il rencontre dans le processus de planification des besoins nets.  
 - Pour afficher leur effet, examinez la charge de chaque atelier ou unité de production sur l’itinéraire du bon de production planifié ferme.  
 
-### Bon de production libéré  
+### <a name="released-production-order"></a>Bon de production libéré
 
 Le bon de production libéré est unique en raison des caractéristiques suivantes :  
 
@@ -97,7 +97,7 @@ Le bon de production libéré est unique en raison des caractéristiques suivant
 - Dans un environnement MTO (fabrication à la commande), il n’est pas rare de créer un bon de production libéré immédiatement après l’entrée du document de vente.  
 - Vous pouvez enregistrer la consommation de matières et la production réelles manuellement avec un bon de production libéré. En outre, la consommation automatique de matières et de production n'intervient que pour les bons de production libérés.  
 
-### Bon de production terminé  
+### <a name="finished-production-order"></a>Bon de production terminé
 
 Un bon de production terminé est unique en raison des caractéristiques suivantes :  
 
@@ -106,7 +106,7 @@ Un bon de production terminé est unique en raison des caractéristiques suivant
 - Les bons de production terminés sont utilisés pour générer des rapports statistiques et prendre en charge la possibilité de remonter à d'autres ordres (ventes, production et achat, par exemple). La possibilité de remonter à un bon de production terminé permet d'examiner l'historique détaillé.  
 - Il n'est jamais possible de modifier des ordres de fabrication terminés.  
 
-## Exécution d’un bon de production  
+## <a name="production-order-execution"></a>Exécution d’un bon de production
 
 Après qu’un bon de production a été créé et programmé, il doit être libéré à l’atelier pour exécution. Durant l'exécution de l'ordre, vous enregistrez les éléments suivants :  
 
@@ -116,7 +116,7 @@ Après qu’un bon de production a été créé et programmé, il doit être lib
 
 Vous pouvez enregistrer ces informations manuellement ou via une génération de rapport automatique. La méthode dépend de la configuration du champ Méthode consommation sur l’article et l’atelier.  
 
-### Consommation matière  
+### <a name="material-consumption"></a>Consommation matière
 
 [!INCLUDE [prod_short](includes/prod_short.md)] propose diverses options pour enregistrer la consommation de matériaux. Par exemple, une consommation matière peut être enregistrée manuellement, ce qui peut être souhaitable en cas de remplacements fréquents de composantes ou de rebuts plus importants que prévu.  
 
@@ -133,7 +133,7 @@ En amont, la génération d'états de consommation enregistre la quantité réel
 
 Lors de l'actualisation du bon de production, la méthode consommation est copiée à partir de la fiche article. Comme la méthode consommation de chaque bon de production contrôle le mode et le moment d’enregistrement de la consommation, il est important de noter que vous pouvez modifier la méthode de consommation d’articles spécifiques directement dans le bon de production. Pour plus d’informations, voir [Consommer en aval des composantes en fonction de la production réalisée](production-how-to-flush-components-according-to-operation-output.md).
 
-### Production  
+### <a name="production-output"></a>Production
 
 [!INCLUDE [prod_short](includes/prod_short.md)] offre la possibilité de suivre le temps consacré à un bon de production, en plus de l’enregistrement de la quantité produite. Ces informations permettent de déterminer plus précisément les coûts de production. De même, les fabricants utilisant un système d’évaluation standard peuvent souhaiter enregistrer des informations réelles afin de pouvoir développer de meilleures normes.  
 
@@ -145,13 +145,13 @@ En aval, cette méthode enregistre la production prévue (et le temps), qui est 
 
 En amont, cette méthode enregistre la production prévue (et le temps), qui est automatiquement enregistrée à la fin d’un bon de production. Les codes lien itinéraire n’interviennent pas comme facteurs dans la consommation en amont de la production.  
 
-### Report de la consommation et de la production  
+### <a name="posting-consumption-and-output"></a>Report de la consommation et de la production
 
 Vous pouvez utiliser toute combinaison d'informations de consommation automatique et enregistrées manuellement tant pour la consommation que pour la production. Par exemple, vous pouvez consommer automatiquement en aval des composantes, tout en utilisant le journal consommation pour enregistrer les rebuts. De même, vous pouvez enregistrer automatiquement la production tout en utilisant un journal de sortie pour enregistrer les rebuts de l’article parent ou le temps supplémentaire consacré au traitement de la commande.  
 
 Enfin, si vous entrez une consommation et une production manuellement, vous devez déterminer l’ordre dans lequel vous allez enregistrer ces informations. Vous pouvez commencer par enregistrer une consommation, puis utiliser une méthode de raccourci pour entrer les informations, basée sur une quantité de production prévue. Vous pouvez également commencer par entrer une production en utilisant la fonction **Éclater gamme**. Vous enregistrez ensuite une consommation sur la base de la quantité de production réelle.  
 
-### Journal production  
+### <a name="production-journal"></a>Journal production
 
 Le [journal production](production-how-to-register-consumption-and-output.md) combine les fonctions d’un journal consommation et de journaux de sortie dans un seul journal, directement accessible depuis le bon de production libéré.  
 
@@ -178,7 +178,7 @@ Toutefois, les journaux production diffèrent des journaux de sortie et consomma
 
 Dans le journal production, les quantités consommées sont reportées comme écritures article négatives, les quantités sorties sont reportées comme écritures positives et les heures passées sont reportées comme écritures du grand livre de capacité.  
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Production](production-manage-manufacturing.md)
 [Paramétrage de la production](production-configure-production-processes.md)  

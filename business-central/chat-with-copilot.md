@@ -12,7 +12,7 @@ ms.collection:
   - get-started
 ---
 
-# Conversation instantanée avec Copilot (version préliminaire)
+# <a name="chat-with-copilot-preview"></a>Conversation instantanée avec Copilot (version préliminaire)
 
 [!INCLUDE[preview-banner](includes/preview-banner.md)]
 
@@ -20,7 +20,7 @@ Cet article explique comment discuter avec Copilot pour obtenir des réponses su
 
 [!INCLUDE[production-ready-preview-dynamics365](includes/production-ready-preview-dynamics365.md)]
 
-## A propos de la conversation instantanée avec Copilot
+## <a name="about-chat-with-copilot"></a>A propos de la conversation instantanée avec Copilot
 
 Microsoft Copilot est l’assistant alimenté par l’IA qui aide à stimuler la créativité, à augmenter la productivité et à éliminer les tâches fastidieuses. Vous pouvez discuter avec Copilot dans Business Central pour répondre aux questions et trouver des données métier en exprimant ce que vous recherchez en langage naturel. Vous pouvez utiliser le chat pour :
 
@@ -34,13 +34,13 @@ Conversation instantanée avec Copilot évite de devoir naviguer dans l’interf
   
 > [Regarder la vidéo](https://go.microsoft.com/fwlink/?linkid=2250609)
 
-## Conditions préalables
+## <a name="prerequisites"></a>Conditions préalables
 
 - Fonctionnalité Conversation instantanée avec Copilot activée. Cette tâche est effectuée par un administrateur. [En savoir plus sur la configuration des fonctionnalités Copilot et IA](enable-ai.md).
 - La langue d'affichage dans Business Central est définie sur l'une des versions locales de l’anglais : en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-PH, en-SG, en-US, en-ZA. . [En savoir plus sur la modification de la langue](ui-change-basic-settings.md#language).
 - Votre environnement Business Central se trouve dans n’importe quel pays/région à l’exception du Canada (cette fonctionnalité n’est pas encore disponible au Canada).
 
-## Commencez à utiliser Conversation instantanée avec Copilot
+## <a name="get-started-using-chat-with-copilot"></a>Commencez à utiliser Conversation instantanée avec Copilot
 
 1. Dans le coin supérieur droit de l’écran, sélectionnez le ![Affiche l’icône Conversation instantanée avec Copilot](media/chat-copilot-icon.png) **Copilote** icône ![Affiche la couleur numéro 1](media/callout-number-1.svg).
 
@@ -65,13 +65,13 @@ Conversation instantanée avec Copilot évite de devoir naviguer dans l’interf
 
    Chat mémorise le contexte, ce qui signifie que vous n’avez pas besoin de répéter les points clés de la question d’origine.
 
-## Effacer le chat pour recommencer
+## <a name="clear-chat-to-start-over"></a>Effacer le chat pour recommencer
 
 Si vous souhaitez passer à un autre sujet de conversation avec Copilot, sélectionnez le ![Affiche l’icône de discussion claire](media/clear-chat-icon.png) **Démarrer une nouvelle session de discussion Copilot** icône en bas du volet Copilot au-dessus de la boîte de questions. Cette action efface la mémoire de Copilot de vos derniers messages. Recommencer est souvent utile après une longue conversation avec de nombreux messages, et cela peut aider Copilot à fournir des réponses plus précises.
 
 Le chat est également effacé si vous fermez ou vous déconnectez de Business Central.
 
-## <a name="tips"></a>Tirer le meilleur parti de vos questions
+## <a name="get-the-most-out-of-your-questions"></a><a name="tips"></a>Tirer le meilleur parti de vos questions
 
 Cette section fournit des moyens vous permettant d’améliorer les réponses que vous obtenez de Copilot.
 
@@ -83,7 +83,7 @@ Cette section fournit des moyens vous permettant d’améliorer les réponses qu
 - Si la réponse initiale ne répond pas entièrement à vos questions, posez des questions complémentaires ou reformulez la dernière question.
 - Si vous posez une question sur un sujet différent de la question précédente, effacez la session de discussion en cours pour recommencer.
 
-## Exemples d’invites
+## <a name="example-prompts"></a>Exemples d’invites
 
 Vos questions à Copilot varient naturellement en fonction de votre rôle, de votre tâche actuelle, des processus suivis par votre organisation et de la façon dont vous vous exprimez avec des mots. Les exemples suivants présentent différentes façons de poser des questions dans le volet de discussion et peuvent vous inciter à rédiger vos propres questions en fonction de votre propre situation.
 
@@ -111,7 +111,7 @@ Vous pouvez évaluer les réponses que vous obtenez de Copilot en utilisant le b
 1. If you want help getting you're question started, select the prompts either from the **Find**, **Explain**, or **Guide** buttons at the top of the Coplit pane or use the **View Prompts** menu above **Ask a question** box at the bottom.
 
    Prompts are predefined short phrases that start a question. Apart from saving you time, they're designed to target responses to specific categories. They also help you undestand how you can phrase questions to get the responses.-->
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Résoudre les problèmes des fonctionnalités de Copilot et d’IA](ai-copilot-troubleshooting.md)  
 [Configuration des fonctionnalités de Copilot et d’IA](enable-ai.md)  

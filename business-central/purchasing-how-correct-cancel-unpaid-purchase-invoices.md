@@ -10,7 +10,7 @@ ms.date: 03/14/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# Correction ou annulation des factures achat impayées
+# <a name="correct-or-cancel-unpaid-purchase-invoices"></a>Correction ou annulation des factures achat impayées
 
 Vous pouvez corriger ou annuler une facture achat reportée. Cela est utile si vous souhaitez corriger une erreur de saisie, ou si vous souhaitez modifier l'achat assez tôt dans le processus de commande.
 
@@ -20,7 +20,7 @@ Sur la page **Facture achat reportée**, vous pouvez cliquer sur le bouton **Cor
 <br><br>
 > [!Video https://www.microsoft.com/videoplayer/embed/RE4dhoc?rel=0]
 
-## Pour corriger une facture achat reportée
+## <a name="to-correct-a-posted-purchase-invoice"></a>Pour corriger une facture achat reportée
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures achat reportées**, puis sélectionnez le lien associé.  
 2. Sélectionnez la facture achat reportée à corriger.  
@@ -34,7 +34,7 @@ Sur la page **Facture achat reportée**, vous pouvez cliquer sur le bouton **Cor
     Une note de crédit achat est automatiquement créée et reportée pour annuler la facture achat reportée initiale.
 4. Sélectionnez **Afficher un avoir correctif** pour afficher l'avoir achat validé qui annule la facture achat validée initiale.
 
-## Pour annuler une facture achat reportée
+## <a name="to-cancel-a-posted-purchase-invoice"></a>Pour annuler une facture achat reportée
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures achat reportées**, puis sélectionnez le lien associé.  
 2. Sélectionnez la facture achat reportée à annuler.
@@ -46,11 +46,11 @@ Sur la page **Facture achat reportée**, vous pouvez cliquer sur le bouton **Cor
     Une note de crédit achat est automatiquement créée et reportée pour annuler la facture achat reportée initiale. La valeur du champ **Annulé** de la facture achat validée initiale devient **Oui**.
 4. Sélectionnez **Afficher un avoir correctif** pour afficher l'avoir achat validé qui annule la facture achat validée initiale.
 
-### Report partiel de facture également pris en charge
+### <a name="partial-invoice-posting-also-supported"></a>Report partiel de facture également pris en charge
 
 Si l'annulation est liée à un report de facture partiel, la ligne de bon de commande d'origine est mise à jour pour refléter la quantité facturée annulée. Les champs **Qté à facturer** et **Quantité facturée** de la ligne de commande d’achat associée sont réinitialisés et affichent les valeurs avant le report partiel.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Enregistrement des achats](purchasing-how-record-purchases.md)  
