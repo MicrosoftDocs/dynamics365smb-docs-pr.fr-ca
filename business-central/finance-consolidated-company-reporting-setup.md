@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bnielse
 ms.topic: conceptual
-ms.date: 09/25/2023
+ms.date: 03/14/2024
 ms.custom: bap-template
 ms.search.keywords: 'consolidation, subsidiaries, consolidate'
 ms.search.form: '1826, 1827'
@@ -75,6 +75,19 @@ Une grande partie de la configuration de l'unité fonctionnelle consiste à spé
 > [!NOTE]
 > L’option API vous permet également de partager les écritures d’autres environnements [!INCLUDE [prod_short](includes/prod_short.md)]. Pour utiliser l’option API, l’utilisateur qui configure la consolidation doit avoir l’autorisation d’accéder aux écritures GL. Par exemple, les ensembles d’autorisations D365 Basic et D365 Read fournissent l’accès.
 
+#### Configurer les devises des unités fonctionnelles
+
+Lorsque vous exécutez une consolidation pour des unités fonctionnelles qui utilisent une devise étrangère, vous devez accorder une attention particulière aux taux de change utilisés par différentes parties du processus, d’autant plus si vous réexécutez la consolidation. Pour ce faire, utilisez la page **Configurer les devises des unités fonctionnelles** pour suivre facilement les taux.
+
+La page **Configurer les devises des unités fonctionnelles** vous donne les dernières valeurs pour le taux moyen, le taux de fermeture et le dernier taux de fermeture. Vous pouvez rechercher les taux de change dans le tableau des taux de change, ce qui facilite la validation des taux. Vous pouvez modifier les taux pour l’exécution en cours en saisissant les valeurs ou en les copiant des exécutions précédentes. Pour copier les taux, choisissez **Sélectionner à partir d’une consolidation précédente**. Cette page est particulièrement utile lorsque vous souhaitez réexécuter une consolidation précédente, où vous devez utiliser un taux de fermeture précédent. Ceci est nécessaire pour réévaluer correctement vos postes de bilan. La page **Sélectionner à partir de la consolidation précédente** est également utile si vous souhaitez simplement afficher les taux qui ont été utilisés, par exemple, lors d’un dépannage. La page est filtrée sur les exécutions incluant l’unité fonctionnelle sélectionnée.
+
+Vous démarrez le traitement en lot **Exécuter la consolidation** à partir de la page de liste **Unités fonctionnelles** . Vous pouvez également accéder à la page **Configurer les devises des unités fonctionnelles** en choisissant l’action **Taux de change** .
+
+> [!NOTE]
+> Les pages de configuration du taux de change pour le taux moyen, le taux de fermeture et le dernier taux de fermeture actuellement disponibles sur la fiche **Unité fonctionnelle** seront obsolètes dans une version ultérieure. Toutefois, vous pouvez toujours conserver ces taux si vous disposez d’unités fonctionnelles que vous importez via des fichiers.
+
+#### Créer une unité fonctionnelle
+
 1. Connectez-vous à la compagnie consolidée.
 2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Unités fonctionnelles**, puis choisissez le lien associé.  
 3. Choisissez **Nouveau**, puis remplissez les champs obligatoires dans les raccourcis **Général** et **Comptes du grand livre**. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -100,7 +113,7 @@ Si le plan comptable de l'unité fonctionnelle diffère de celui de la compagnie
 
 ### <a name="exchrates"></a>Indiquer des taux de change pour les consolidations
 
-Si une unité fonctionnelle utilise une devise différente de celle de la compagnie consolidée, vous devez spécifier des méthodes de conversion de taux de change pour chaque compte avant la consolidation. Pour chaque compte, la valeur du champ **Consolider la méthode de traduction** détermine le taux de change. Dans la compagnie consolidée, sur chaque fiche unité fonctionnelle, dans le champ **Table Taux de change devise**, vous spécifiez si la consolidation utilise les taux de change de l'unité fonctionnelle ou de la compagnie consolidée. Si vous utilisez les taux de change de la compagnie consolidée, vous pouvez les modifier pour une unité fonctionnelle. Pour les unités fonctionnelles, si le champ **Table Taux de change devise** de la fiche unité fonctionnelle contient la valeur **Local**, vous pouvez modifier le taux de change à partir de la fiche unité fonctionnelle. Les taux de change sont copiés à partir de la table **Taux de change devise**, mais vous pouvez les modifier avant la consolidation.
+Si une unité fonctionnelle utilise une devise différente de celle de la compagnie consolidée, vous devez spécifier des méthodes de conversion de taux de change pour chaque compte avant la consolidation. Pour chaque compte, la valeur du champ **Consolider la méthode de traduction** détermine le taux de change. Dans la compagnie consolidée, sur chaque fiche unité fonctionnelle, dans le champ **Table Taux de change devise**, vous spécifiez si la consolidation utilise les taux de change de l’unité fonctionnelle ou de la compagnie consolidée. Si vous utilisez les taux de change de la compagnie consolidée, vous pouvez les modifier pour une unité fonctionnelle. Pour les unités fonctionnelles, si le champ **Table Taux de change devise** de la fiche unité fonctionnelle contient la valeur **Local**, vous pouvez modifier le taux de change à partir de la fiche unité fonctionnelle. Les taux de change sont copiés à partir de la table **Taux de change devise**, mais vous pouvez les modifier avant la consolidation.
 
 Le tableau suivant décrit les méthodes de conversion de taux de change que vous pouvez utiliser pour les comptes.
 
@@ -113,13 +126,11 @@ Le tableau suivant décrit les méthodes de conversion de taux de change que vou
 |Taux composite | Les montants de la période en cours sont convertis au taux moyen et ajoutés au solde précédemment enregistré dans la compagnie consolidée. Vous utilisez généralement cette méthode pour les comptes de bénéfices non répartis. Ces comptes incluent des montants de différentes périodes, ils contiennent donc des montants convertis avec différents taux de change.|
 |Taux des fonds propres | Cette option est similaire au **Taux composite**. Les différences sont reportées sur des comptes GL distincts.|
 
-Pour spécifier des taux de change pour les unités fonctionnelles, procédez comme suit :
+Pour spécifier des taux de change pour une unité fonctionnelle, procédez comme suit :
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Unités fonctionnelles**, puis choisissez le lien associé.  
-2. Sur la page **Liste des unités fonctionnelles**, choisissez l'unité fonctionnelle, puis choisissez l'action **Taux moyen (manuel)**.  
-3. Sur la page **Modifier taux de change**, la valeur du champ **Montant taux de change lié** est copiée à partir de la table **Taux de change devise**, mais vous pouvez la modifier. Fermez la page.  
-4. Choisissez l'action **Taux de fermeture**.  
-5. Dans le champ **Montant taux de change lié**, saisissez le taux de change.
+2. Sur la page **Liste des unités fonctionnelles**, choisissez l’unité fonctionnelle, puis l’action **Taux de change**.  
+3. Sur la page **Configurer les devises des unités fonctionnelles**, renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]
 
 ### <a name="dim"></a>Inclure ou exclure des dimensions
 

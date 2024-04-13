@@ -5,14 +5,14 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 10/29/2023
+ms.date: 02/27/2024
 ms.custom: bap-template
 ms.search.form: 7775
 ms.collection:
   - bap-ai-copilot
 ---
 
-# <a name="configure-copilot-and-ai-capabilities"></a>Configuration des fonctionnalités de Copilot et d’IA
+# Configuration des fonctionnalités de Copilot et d’IA 
 
 <!--[!INCLUDE[ai-preview](includes/ai-preview.md)]-->
 
@@ -20,24 +20,29 @@ ms.collection:
 
 Cet article explique comment contrôler Copilot et d’autres fonctionnalités de l’IA dans Business Central. Cette tâche est effectuée par un administrateur. Copilot est une fonctionnalité système et fait partie intégrante de Business Central. Comme pour la plupart des fonctionnalités du système, vous n’accordez pas l’accès à des utilisateurs individuels et vous ne pouvez pas non plus activer ou désactiver Copilot. Cependant, Copilot offre des contrôles de gouvernance des données et la possibilité de désactiver les capacités individuelles de Copilot et d’IA pour chaque environnement. Il existe différents niveaux de contrôle d’accès aux fonctionnalités d’IA, en fonction de la fonctionnalité :
 
-- Autoriser le mouvement des données entre les régions géographiques
+- Autoriser le mouvement des données entre les régions géographiques.
 
   Cette tâche n’est requise que si votre environnement Business Central se trouve dans une zone géographique autre que celle qu’Azure OpenAI Service utilise. [en savoir plus](#allow-data-movement-across-geographies)
 
 - Activez la fonctionnalité sur la page **Fonctionnalités de Copilot et de l’IA**. [en savoir plus](#activate-features)
 
-- Activez la fonctionnalité spécifique, si elle est toujours régie par la **Gestion des fonctionnalités**.
+<!-- For 2024 there are no AI features governed by **Feature Management**, so this section is not shown
+- Enable the specific feature if it's governed by **Feature Management**.
 
-  Dans la 2e vague de lancement 2023, les suggestions de textes marketing et les fonctionnalités d’aide au rapprochement des comptes bancaires sont incluses dans la **Gestion des fonctionnalités**. [en savoir plus](#enable-feature-in-feature-management)
+  Check whether  of 2024 release wave 1, chat with Copilot, marketing text suggestions, and bank account reconciliation assist features are included under **Feature Management**. [Learn more](#enable-feature-in-feature-management)
+<!-- 
+- Enable the specific feature, if it's still governed by **Feature Management**.
 
-Si l’une de ces conditions n’est pas remplie, la fonctionnalité ne peut pas être utilisée.
+  In 2023 release wave 2, both the marketing text suggestions and bank account reconciliation assist features are included under **Feature Management**. [Learn more](#enable-feature-in-feature-management)-->
 
-## <a name="prerequisites"></a>Conditions préalables
+Si l’une de ces conditions n’est pas remplie, la fonctionnalité ne peut pas être utilisée.-->
 
-- Vous utilisez Business Central Online, version 23.1 ou ultérieure. <!--[preview version](ai-preview-getstarted.md) of Business Central that's enabled for Copilot.-->
+## Conditions préalables
+
+- Vous utilisez Business Central Online <!--[preview version](ai-preview-getstarted.md) of Business Central that's enabled for Copilot.-->
 - Vous disposez des autorisations d’administrateur ou de super autorisations dans Business Central.  <!--For more information, go to [Configure AI-powered item marketing text with Copilot](enable-ai.md).-->
 
-## <a name="allow-data-movement-across-geographies"></a>Autoriser le déplacement des données entre les zones géographiques
+## Autoriser le déplacement des données entre les zones géographiques
 
 Cette tâche s’applique uniquement si le commutateur **Autoriser le mouvement des données** s’affiche en haut de l’écran **Fonctionnalités de Copilot et de l’IA**. Si le lien **Comment gérer les données de mon copilote ?** s’affiche à la place du bouton **Autoriser le déplacement des données**, ignorez cette étape.
 
@@ -53,7 +58,8 @@ Pour autoriser le déplacement des données en dehors de votre région géograph
    Le commutateur **Autoriser le déplacement des données** est activé par défaut pour les environnements dans les régions Azure d’Europe de l’Ouest et d’Europe du Nord.
 
 Vous pouvez désactiver le déplacement des données en désactivant le commutateur **Autoriser le déplacement des données**. Une fois qu’un Azure OpenAI Service est disponible dans la région de votre environnement Business Central, votre environnement y est automatiquement connecté et le commutateur n’est plus disponible.
-<!--
+
+<!-- Don't review
 | Australia, United Kingdom, United States | Within the respective geographical region |
 | Europe, France, Germany, Norway, Switzerland  | Sweden or Switzerland |
 | Asia Pacific, Brazil, Canada, India, Japan, Singapore, South Africa, South Korea, United Arab Emirates  | United States |-->
@@ -72,7 +78,8 @@ Copilot and other AI capabilities use Azure OpenAI Service.  and are provided by
 Meanwhile, customers with environments outside the United States can use Copilot AI features by opting in to share relevant data with the Azure OpenAI Service in United States or Switzerland.
 
 The information in the following table outlines the Azure OpenAI service that's used by the Copilot services based on the geography of their Dynamics 365 environment when they opt-in to share data.-->
-## <a name="activate-features"></a>Activer les fonctionnalités
+
+## Activer les fonctionnalités
 
 Toutes les fonctionnalités de Copilot et d’IA sont actives par défaut lorsqu’elles sont mises à disposition en avant-première ou lorsqu’elles deviennent généralement disponibles. Via la page **Fonctionnalités de Copilot et de l’IA**, vous pouvez désactiver ou réactiver des fonctionnalités individuelles pour tous les utilisateurs.
 
@@ -85,34 +92,51 @@ Toutes les fonctionnalités de Copilot et d’IA sont actives par défaut lorsqu
    - Pour activer une fonctionnalité, sélectionnez-la dans la liste, puis sélectionnez l’action **Activer**.
    - Pour désactiver une fonctionnalité, sélectionnez-la, puis sélectionnez l’action **Désactiver**. 
 
+<!-- don't review 
 
-## <a name="enable-feature-in-feature-management"></a>Activer la fonctionnalité dans la gestion des fonctionnalités
+<!-- For 2024 there are no AI features governed by **Feature Management**, so this section is not shown
+## Enable feature in Feature Management
 
-Lorsque des fonctionnalités Copilot individuelles sont publiées dans les mises à jour mineures de Business Central, ces fonctionnalités sont facultatives jusqu’à la prochaine mise à jour majeure. **Gestion des fonctionnalités** permet d’activer ou de désactiver les fonctionnalités en avant-première, telles que le rapprochement bancaire, ainsi que certaines fonctionnalités généralement disponibles, telles que les suggestions de texte marketing. [En savoir plus sur la gestion des fonctionnalités](/dynamics365/business-central/dev-itpro/administration/feature-management).
+When individual Copilot capabilities are released in Business Central minor updates, these capabilities are optional until the next major update. **Feature Management** is used to turn on or off features that are in preview, like bank reconciliation, and some features that are generally available, like marketing text suggestions. [Learn more about feature management](/dynamics365/business-central/dev-itpro/administration/feature-management).
 
-1. Dans Business Central, recherchez et ouvrez la page **Gestion des fonctionnalités**.
-2. Pour activer une fonctionnalité, définissez la colonne **Activé pour** sur **Tous les utilisateurs**. Pour désactiver une fonctionnalité, définissez la colonne **Activé pour** sur **Aucun**. Utilisez le tableau suivant pour vous aider à déterminer le commutateur qui s’applique à la fonctionnalité Copilot et IA que vous souhaitez activer :
+1. In Business Central, search for and open the **Feature Management** page.
+2. To enable a feature, set the **Enabled for** column to **All users**. To disable a feature, set the **Enabled for** column to **None**. Use the following table to help you determine the switch that applies to the Copilot and AI capability you want to enable:
 
-   - **Fonctionnalité en version préliminaire : rapprochement de compte bancaire avec Copilot** active la fonctionnalité d’aide au rapprochement des comptes bancaires.
-   - **Version préliminaire de la fonctionnalité : Créer des descriptions de produits basées sur l’IA avec Copilot** active la fonctionnalité de suggestions de textes marketing.
+   - **Feature Preview: Bank account reconciliation with Copilot** enables the bank account reconciliation assist feature.
+   - **Feature Preview: Chat with Copilot** enables the chat with Copilot feature.
+   - **Feature preview: Create AI-powered product descriptions with Copilot** enables the marketing text suggestions feature.
 
-   Pour plus d’informations sur la gestion des fonctionnalités en général, accédez à [Gestion des fonctionnalités](/dynamics365/business-central/dev-itpro/administration/feature-management).
+   For more information about feature management in general, go to [Feature Management](/dynamics365/business-central/dev-itpro/administration/feature-management).-->
 
-## <a name="granting-user-access"></a>Accorder l’accès utilisateur
+## Accorder l’accès utilisateur
 
 Les capacités Copilot et IA peuvent offrir des fonctionnalités destinées à tous les utilisateurs de votre organisation ou à des rôles d’utilisateur spécifiques. La plupart des fonctionnalités de Copilot et d’IA offrent un contrôle d’accès à l’aide d’autorisations et d’ensembles d’autorisations dans le système de gestion des autorisations de Business Central. [En savoir plus sur les autorisations et les ensembles d’autorisations](ui-define-granular-permissions.md).
 
-Pour accorder ou refuser l’accès à des fonctionnalités Copilot et IA spécifiques, consultez la documentation ou l’éditeur de cette fonctionnalité pour identifier les autorisations requises. 
+Le tableau suivant répertorie les autorisations requises pour utiliser les fonctionnalités Copilot fournies par Business Central.
 
-## <a name="next-steps"></a>Étapes suivantes
+|Fonctionnalités Copilot|Autorisations requises|
+|-|-|
+|Assistance pour les analyses|**ANALYSE DES DONNÉES – EXEC** ensemble d'autorisations définir ou exécuter l’autorisation sur l’objet système 9640 **Autoriser le mode d’analyse des données**. Ce sont les mêmes autorisations nécessaires pour accéder au mode analyse.|
+|Aide au rapprochement bancaire|Autorisation à la page 7250 **Compte bancaire. Rec. Proposition AI** et page 7252 **Trans. Vers GL Acc. Proposition d’IA**.|
+|Discuter |Il n’existe aucune autorisation ou ensemble d’autorisations qui contrôlent l’accès au chat par utilisateur. Si le chat est activé, il est disponible pour tous les utilisateurs.|
+|Suggestions de texte marketing |Autorisation à la page 5836 **Texte marketing Copilot**|
+
+Pour accorder ou refuser l’accès à des fonctionnalités non Microsoft Copilot et IA spécifiques, consultez la documentation ou l’éditeur de cette fonctionnalité pour identifier les autorisations requises.
+
+## Étapes suivantes
 
 Après avoir activé et accepté les fonctionnalités, vous êtes prêt à les essayer. Accédez à :
 
-- [Ajouter du texte marketing aux articles](item-marketing-text.md) 
-- [Rapprocher à l’aide de l’assistant de rapprochement de compte bancaire](bank-reconciliation-with-copilot.md) 
+- [Ajouter du texte marketing aux articles](item-marketing-text.md)
+- [Analyse des données dans le mode d'analyse avec Copilot](analysis-assist.md)  
+- [Conversation instantanée avec Copilot](chat-with-copilot.md)
+- [Rapprocher à l’aide de l’assistant de rapprochement de compte bancaire](bank-reconciliation-with-copilot.md)
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Résoudre les problèmes des fonctionnalités de Copilot et d’IA](ai-copilot-troubleshooting.md)  
-[Vue d’ensemble des suggestions de texte marketing](ai-overview.md)   
+[FAQ sur l’assistance pour les analyses](faqs-analysis-assist.md)  
+[FAQ pour l’aide au rapprochement bancaire](faqs-bank-reconciliation.md)  
+[FAQ sur la conversation instantanée avec Copilot](faqs-chat-with-copilot.md)  
 [FAQ pour les suggestions de texte marketing](faqs-marketing-text.md)  
+[Vue d’ensemble des suggestions de texte marketing](ai-overview.md)  

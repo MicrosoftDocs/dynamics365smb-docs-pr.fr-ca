@@ -5,11 +5,11 @@ author: brentholtorf
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: null
-ms.date: 06/23/2021
+ms.date: 02/20/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="create-special-orders"></a>Créer des commandes spéciales
+# Création des commandes spéciales
 
 Vous pouvez créer une commande spéciale pour un article de catalogue spécifique à livrer à un client particulier. Le fournisseur livre l'article à votre entrepôt et vous pouvez ensuite le livrer à votre client seul ou avec d'autres articles issus d'autres commandes.  
 
@@ -17,18 +17,18 @@ Dans le cadre d'une commande spéciale, le bon de commande et le document de ven
 
 Pour pouvoir utiliser cette fonction, vous devez d'abord configurer les fiches client, fournisseur, et article nécessaires à la commande.  
 
-## <a name="to-create-a-special-order"></a>Pour créer une commande spéciale
+## Pour créer une commande spéciale
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Document de vente**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**. Créez et renseignez un document de vente pour l'article. Pour en savoir plus, voir [Vendre des produits](sales-how-sell-products.md).
 3.  Sous le raccourci **Lignes**, renseignez la ligne vente. Dans le champ **Procédure achat**, sélectionnez une procédure achat dont le champ **Commande spéciale** est sélectionné.
 
     Vous devez maintenant créer un bon de commande à partir d'une feuille de réquisition.  
-4. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille de réquisition**, puis sélectionnez le lien associé.  
+4. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Feuilles de réquisition**, puis choisissez le lien associé.  
 5. Choisissez l'action **Commande spéciale**, puis choisissez l'action **Extraire documents de vente**.  
 6.  Sur la page **Extraire documents de vente**, affichez les résultats dans lesquels le **N° document** correspond au numéro de document de vente. Cliquez sur le bouton **OK**. Une ligne de feuille de réquisition est créée pour l'article.  
 7.  Dans la ligne demande achat, sélectionnez **Nouveau** dans le champ **Message d'action**.  
-8.  Sur la page **Demande achat**, sélectionnez l'action **Traiter messages d'action**. La page **Traiter messages d'action - Demande** s'affiche. Cliquez sur le bouton **OK**.  
+8.  Sur la page **Feuilles de réquisition**, sélectionnez l’action **Traiter message d’action**. La page **Traiter messages d'action - Demande** s'affiche. Cliquez sur le bouton **OK**.  
 
     Le message qui s'affiche indique que les commandes achat ont été créées. Cliquez sur le bouton **OK**.  
 
@@ -37,7 +37,7 @@ Un bon de commande créé comme commande spécial pour un document de vente est 
 > [!NOTE]  
 >  Vous ne pouvez pas utiliser la fonctionnalité de commande spéciale si l'élément est déjà réservé. Par conséquent, pour les articles qui sont vendus en commandes spéciales, assurez\-vous que le champ **Réserver** sur la fiche article n'est pas défini sur **Toujours**.  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Utilisation des articles de catalogue](inventory-how-work-nonstock-items.md)  
 [Ventes](sales-manage-sales.md)  

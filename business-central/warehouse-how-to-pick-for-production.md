@@ -10,7 +10,7 @@ ms.date: 12/16/2022
 ms.custom: bap-template
 ms.search.forms: '9330, 931, 990008, 89, 900, 902'
 ---
-# <a name="pick-for-production-assembly-or-jobs-in-basic-warehouse-configurations"></a>Prélever pour la fabrication, l’assemblage ou les tâches dans les configurations de stockage de base
+# Prélever pour la fabrication, l’assemblage ou les tâches dans les configurations de stockage de base
 
 Le mode de prélèvement de vos composantes pour les ordres de fabrication, d’assemblage ou les tâches dépend de la configuration de l’entrepôt en tant qu’emplacement. Learn more at [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).
 
@@ -21,13 +21,13 @@ Utilisez les documents suivants pour les opérations internes :
 * Article en inventaire à prélever
 * Mouvement d'inventaire
 
-## <a name="inventory-picks"></a>Prélèvements inventaire
+## Prélèvements inventaire
 
 * Lorsque vous enregistrez un prélèvement inventaire pour une opération interne, telle que la production ou une tâche, la consommation des composantes sélectionnées est reportée en même temps.
 * Le bouton à bascule **Zone obligatoire** sur la page **Fiche emplacement** est facultatif.
-* Lorsque vous utilisez les prélèvements inventaire, le champ **Code de zone** sur une ligne de composante de bon de production ou les lignes planification d’une tâche définit la zone *prendre*. Les composantes sont diminuées dans le bac « prendre » lorsque vous reportez la consommation.
+* Lorsque vous utilisez les prélèvements inventaire, le champ **Code de zone** sur une ligne de composante de bon de production ou les lignes planification d’un projet définit la zone *prendre*. Les composantes sont diminuées dans le bac « prendre » lorsque vous reportez la consommation.
 
-## <a name="inventory-movements"></a>Mouvements d’inventaire
+## Mouvements d’inventaire
 
 * Les mouvements d’inventaire nécessitent que vous activiez le bouton à bascule **Zone obligatoire** sur la page **Fiche emplacement** pour l’emplacement.
 * Les mouvements d’inventaire ne fonctionnent qu’avec les lignes de composantes de bon de production et les lignes d’ordre d’assemblage.
@@ -38,13 +38,13 @@ Utilisez les documents suivants pour les opérations internes :
 >[!NOTE]
 > Même si le bouton à bascule **Prélèvement requis** est désactivé, vous pouvez utiliser un document **Prélèvement entrepôt**. Les documents de prélèvement entrepôt sont similaires aux documents **Prélèvement inventaire**. Ceci est utile si vous souhaitez utiliser les prélèvements dans les opérations et livrer dans les flux sortants de l’entrepôt.
 
-### <a name="production"></a>Fabrication
+### Fabrication
 
 Utilisez les documents **Prélèvement inventaire** pour prélever des composantes de production dans le flux vers la production.
 
 Pour un emplacement qui utilise des zones, vous pouvez étendre le flux jusqu’à la production en utilisant les documents **Mouvement d’inventaire**. Les mouvements d’inventaire sont particulièrement utiles pour la consommation des composantes. Pour en savoir plus sur la façon dont la consommation de composantes passe des zones avant production aux zones d'atelier ouvert, voir [Consommer les composantes pour la production dans une configuration d’entrepôt de base](#flushing-production-components-in-a-basic-warehouse-configuration).
 
-### <a name="assembly"></a>Assemblage
+### Assemblage  
 
 Utilisez les documents **Mouvement d’inventaire** pour déplacer les composantes d’assemblage vers la zone d’assemblage.
 
@@ -53,18 +53,18 @@ Utilisez les documents **Mouvement d’inventaire** pour déplacer les composant
 
 [!INCLUDE [prod_short](includes/prod_short.md)] prend en charge les types de flux d’assemblage Assembler pour stock et Assembler pour commande. Pour en savoir plus sur l’assemblage pour commande dans le flux d’entrepôt sortant, accédez à [Traitement des articles à assembler pour commande dans des prélèvements inventaire](warehouse-how-to-pick-items-with-inventory-picks.md#handling-assemble-to-order-items-with-inventory-picks).
 
-### <a name="project-management"></a>Gestion de projets
+### Gestion de projets  
 
 Utilisez les documents **Prélèvement inventaire** pour sélectionner les composantes de la tâche dans le flux vers la gestion de projet.
 
 Pour les emplacements qui utilisent des zones, vous pouvez étendre le flux jusqu’aux projets en utilisant les documents **Mouvement d’inventaire**.
 
 > [!NOTE]
-> La possibilité de prélever des composantes pour les lignes planification projet a été ajoutée à [!INCLUDE[d365fin](includes/d365fin_md.md)] dans la 2e vague de lancement 2022. Pour commencer à utiliser la fonctionnalité, un administrateur doit activer **Mise à jour des fonctionnalités : activer prélèvement inventaire et entrepôt à partir des projets** sur la page **Gestion des fonctionnalités**.
+> La possibilité de sélectionner des composantes pour les lignes de planification projet a été ajoutée à [!INCLUDE[d365fin](includes/d365fin_md.md)] dans la 2e vague de lancement 2022. Pour commencer à utiliser la fonctionnalité, un administrateur doit activer **Mise à jour des fonctionnalités : activer prélèvement inventaire et entrepôt à partir des projets** sur la page **Gestion des fonctionnalités**.
 >
-> [!INCLUDE[prod_short](includes/prod_short.md)] utilise la valeur dans le champ **Quantité restante** sur la ligne planification projet lorsqu’il crée des prélèvements inventaire. Pour utiliser les prélèvements d’inventaire pour les projets, vous devez activer le bouton à bascule **Appliquer le lien d’utilisation** sur la page **Fiche projet** pour le projet. Cela vous permet de suivre l’utilisation par rapport à votre forfait. Si vous n’activez pas le bouton à bascule, la quantité restante restera à **0** et le prélèvement de l'inventaire ne sera pas créé. Learn more at [Pour configurer un suivi d’utilisation de projet](projects-how-setup-jobs.md?tabs=current-experience#to-set-up-job-usage-tracking).
+> [!INCLUDE[prod_short](includes/prod_short.md)] utilise la valeur dans le champ **Quantité restante** sur la ligne de planification projet lorsqu’il crée des prélèvements inventaire. Pour utiliser les prélèvements d’inventaire pour les tâches, vous devez activer le bouton à bascule **Appliquer le lien d’utilisation** sur la page **Fiche projet** pour les tâches. Cela vous permet de suivre l’utilisation par rapport à votre forfait. Si vous n’activez pas le bouton à bascule, la quantité restante restera à **0** et le prélèvement de l'inventaire ne sera pas créé. Learn more at [Pour configurer un suivi d’utilisation de projet](projects-how-setup-jobs.md?tabs=current-experience#to-set-up-project-usage-tracking).
 
-## <a name="pick-or-move-for-production-assembly-and-projects-in-a-basic-warehouse-configuration"></a>Prélever ou déplacer pour la production, l’assemblage ou les projets dans les configurations de stockage de base
+## Prélever ou déplacer pour la production, l’assemblage ou les projets dans les configurations de stockage de base
 
 Vous pouvez créer un prélèvement inventaire ou un mouvement d’inventaire de trois manières :  
 
@@ -72,26 +72,26 @@ Vous pouvez créer un prélèvement inventaire ou un mouvement d’inventaire de
 * Pour plusieurs documents source en même temps en utilisant un traitement en lot.  
 * En deux étapes. Libérez le document source pour qu’il soit prêt pour le prélèvement. Créez le prélèvement ou le mouvement d’inventaire à partir des documents **Prélèvement inventaire** ou **Mouvement d’inventaire**. Le prélèvement ou le mouvement d’inventaire est basé sur le document source.  
 
-### <a name="to-create-an-inventory-pick-from-the-source-document"></a>Pour créer un prélèvement inventaire à partir du document source
+### Pour créer un prélèvement inventaire à partir du document source
 
 1. Sur le document source, qui peut être un bon de production ou un projet, choisissez l’action **Créer prélèv./rangement inventaire**.  
 2. Activez la case à cocher **Créer prélèvement inventaire**.
 3. Choisissez le bouton **OK**.
 
-### <a name="to-create-an-inventory-movement-from-the-source-document"></a>Pour créer un mouvement d’inventaire à partir du document source
+### Pour créer un mouvement d’inventaire à partir du document source
 
 1. Sur le document source, qui peut être un bon de production, un ordre d’assemblage ou un projet, choisissez l’action **Créer prélèv./rangement inventaire**.  
 2. Activez la case à cocher **Créer mouvement d’inventaire**.
 3. Choisissez le bouton **OK**.
 
-### <a name="to-create-multiple-inventory-picks-or-movements-with-a-batch-job"></a>Pour créer plusieurs prélèvements ou mouvements d’inventaire avec un traitement en lot
+### Pour créer plusieurs prélèvements ou mouvements d’inventaire avec un traitement en lot
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Créer rangement/prélèvement/mouvement d’inventaire**, puis choisissez le lien associé.  
 2. Sur le raccourci **Demande entrepôt**, utilisez les champs **Document origine** et **N° origine** pour opérer un filtrage sur les types de documents ou des plages de numéros de document. Par exemple, vous pouvez créer des prélèvements uniquement pour des ordres de fabrication.
 3. Dans le raccourci **Options**, activez les boutons à bascule **Créer prélèvement inventaire** ou **Créer mouvement d’inventaire**.
 4. Choisissez le bouton **OK**.
 
-### <a name="to-create-inventory-picks-or-movements-in-two-steps"></a>Pour créer des prélèvements ou des mouvements d’inventaire en deux étapes
+### Pour créer des prélèvements ou des mouvements d’inventaire en deux étapes
 
 Pour prélever ou déplacer des composantes pour des documents source en deux étapes, vous devez libérer le document source pour qu’il soit prêt pour le prélèvement. Libérez les documents origine des opérations internes en procédant comme suit.  
 
@@ -113,7 +113,7 @@ Un employé d'entrepôt affecté au prélèvement d’articles peut créer un do
 5. Sinon, choisissez l’action **Extraire document source** pour sélectionner le document à partir de la liste des documents source entrants prêts pour le prélèvement dans l’emplacement.  
 6. Cliquez sur le bouton **OK** pour renseigner les lignes prélèvement ou mouvement en fonction du document origine sélectionné.  
 
-## <a name="to-record-the-inventory-pick"></a>Pour enregistrer le prélèvement inventaire
+## Pour enregistrer le prélèvement inventaire
 
 1. Sur la page **Prélèvement inventaire**, ouvrez le document pour lequel enregistrer un prélèvement.  
 2. Dans le champ **Code de zone** sur les lignes prélèvement, la zone à partir de laquelle les articles doivent être prélevés à partir de la zone où l’article est disponible. Si nécessaire, vous pouvez modifier la zone.
@@ -129,7 +129,7 @@ Voici ce qui se passe pendant le processus de report :
 
 [!INCLUDE [preview-posting-warehouse](includes/preview-posting-warehouse.md)]
 
-## <a name="to-record-the-inventory-movement"></a>Pour enregistrer le mouvement d’inventaire
+## Pour enregistrer le mouvement d’inventaire
 
 1. Sur la page **Mouvement d’inventaire**, ouvrez le document pour lequel enregistrer le mouvement.  
 2. Dans le champ **Code de zone** sur les lignes de mouvement, la zone à prélever est suggérée en fonction de la zone par défaut et de la disponibilité de l’article. Si nécessaire, vous pouvez modifier la zone.  
@@ -145,7 +145,7 @@ Voici ce qui se passe pendant le processus de report :
 >[!NOTE]
 > Contrairement au déplacement de composantes à l’aide de prélèvements inventaire, la consommation n’est pas reportée lorsque vous enregistrez un mouvement d’inventaire. Vous enregistrez la consommation dans une étape distincte en reportant le document source.
 
-## <a name="flushing-production-components-in-a-basic-warehouse-configuration"></a>Consommer les composantes pour la production dans une configuration d’entrepôt de base
+## Consommer les composantes pour la production dans une configuration d’entrepôt de base
 
 Les modes de consommation affectent le flux des composantes en production. Pour en savoir plus, voir [Consommer des composantes en fonction de la production réalisée](production-how-to-flush-components-according-to-operation-output.md). En fonction de la méthode de consommation sélectionnée, vous pouvez prélever des composantes pour la production des manières suivantes :
 
@@ -154,7 +154,7 @@ Les modes de consommation affectent le flux des composantes en production. Pour 
 * Utilisez un document **Mouvement d’inventaire** avec une référence à un document source pour enregistrer les prélèvements pour les composantes qui utilisent la méthode de consommation **Prélèvement + Aval**, **Prélèvement + Amont**. La consommation des composantes se produira automatiquement, soit lorsque vous modifiez l’état du bon de production, soit en démarrant ou en terminant une opération. Toutes les composantes requises doivent être disponibles. Autrement, le report de la consommation de la composante est arrêté.
 * Utilisez un document **Mouvement d’inventaire** sans référence à un document source ou d’autres moyens d’enregistrer le mouvement des composantes qui utilisent la méthode de consommation **Aval** ou **Amont**. La consommation des composantes se produira automatiquement, soit lorsque vous modifiez l’état du bon de production, soit lorsque vous démarrez ou terminez une opération. Toutes les composantes requises doivent être disponibles. Autrement, le report de la consommation s’arrête pour cette composante. Learn more at [Déplacement des articles en interne dans les configurations entrepôt de base](warehouse-how-to-move-items-ad-hoc-in-basic-warehousing.md).
 
-### <a name="example"></a>Exemple :
+### Exemple :
 
 Vous avez un bon de production pour 15 pièces de l’article SP-SCM1004. Certains articles sur la liste des composantes doivent être consommés manuellement dans un journal consommation et d’autres articles peuvent être prélevés et consommés automatiquement à l’aide de la méthode de consommation **Prélèvement + Amont**.  
 
@@ -174,7 +174,7 @@ Les étapes suivantes illustrent les actions prises par divers utilisateurs et l
 
 :::image type="content" source="media/binflow.png" alt-text="Aperçu de quand et comment le champ Code de zone est renseigné.":::
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Inventaire](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  

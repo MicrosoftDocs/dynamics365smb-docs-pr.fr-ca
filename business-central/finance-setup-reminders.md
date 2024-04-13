@@ -6,22 +6,36 @@ ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'payment due, debt, overdue, fee, charge, reminder'
 ms.search.form: '431, 432, 436, 478'
-ms.date: 02/09/2022
+ms.date: 03/12/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
 # Configurer les niveaux et modalités de rappel
 
-Vous pouvez utiliser des relances pour rappeler aux clients les soldes échus. [!INCLUDE [reminder-terms](includes/reminder-terms.md)]
+Vous pouvez utiliser des rappels pour rappeler aux clients des montants échus et leur réclamer le paiement. [!INCLUDE [reminder-terms](includes/reminder-terms.md)]
+
+> [!TIP]
+> Après avoir configuré les modalités et les niveaux de rappel, vous pouvez les inclure dans les processus automatisés de création, d’émission et d’envoi de rappels. Pour en savoir plus sur le processus automatisé, accédez à [Automatiser les rappels dans les collections](finance-automate-reminders.md).
 
 ## Modalités de rappel
 
 Si des clients ont des impayés, vous devez décider quand et comment leur envoyer un rappel. En outre, vous pouvez être amené à débiter leurs comptes d'intérêts ou de frais. Vous pouvez configurer autant de modalités de rappel que vous le souhaitez.  
 
 > [!NOTE]
-> Si vous souhaitez calculer les intérêts sur les paiements échus, vous pouvez le faire lorsque vous créez des rappels. Cependant, si vous souhaitez calculer les intérêts et en informer vos clients sans envoyer de rappels, utilisez les [notes de frais financiers](finance-setup-finance-charges.md). Pour plus d’informations, consultez [Rappels](receivables-collect-outstanding-balances.md#reminders) ou [Frais financiers](receivables-collect-outstanding-balances.md#finance-charges), respectivement.
+> Si vous souhaitez calculer les intérêts sur les paiements échus, vous pouvez le faire lorsque vous créez des rappels. Cependant, si vous souhaitez calculer les intérêts et en informer vos clients sans envoyer de rappel, utilisez une [note de frais financiers](finance-setup-finance-charges.md). Pour plus d’informations, consultez [Rappels](receivables-collect-outstanding-balances.md#reminders) ou [Frais financiers](receivables-collect-outstanding-balances.md#finance-charges).
 
-### Pour configurer des modalités de rappel
+### Configurer les textes des pièces jointes et du corps des courriels pour les communications
+
+Sur la page **Configuration des modalités de rappel**, vous pouvez configurer les textes des pièces jointes et les courriels standard soit à utiliser pour tous les niveaux de rappel, soit créer des messages spécifiques pour chaque niveau. Par exemple, le message que vous envoyez pour le premier niveau de rappel peut avoir un ton ou un contenu différent de celui du deuxième ou du troisième. Pour créer des textes de pièces jointes et de courriels pour tous les niveaux, choisissez **Communication client** en haut de la page. Pour créer des messages pour des lignes spécifiques, sur l’onglet rapide **Niveau de rappel** , choisissez une ligne, puis choisissez la **Communication client** action sur le raccourci.
+
+Par défaut, les textes des pièces jointes et des courriels utilisent votre paramètre de langue. Toutefois, si vous envoyez des rappels à des clients dans d’autres pays, vous souhaiterez peut-être communiquer dans différentes langues. Vous pouvez créer des textes pour chaque langue [!INCLUDE [prod_short](includes/prod_short.md)] prise en charge en utilisant l’action **Ajouter du texte pour la langue** . Si vous le faites, assurez-vous que les langues sont les mêmes pour les textes des pièces jointes et les textes des courriels. S’ils ne correspondent pas et que le terme de rappel comporte plusieurs niveaux, l’automatisation risque de ne pas être en mesure de personnaliser le message pour un ou plusieurs niveaux. Pour vérifier que les langues correspondent, utilisez l’action **Aperçu des communications** et comparez les communications pour les textes.
+
+Lorsque vous envoyez un courriel, le rappel est un rapport que vous joignez au courriel. Vous définissez le rapport qui génère le rappel sur la page **Rappel de sélection de rapport/frais financiers**, où vous sélectionnez également le rapport contenant le texte du corps du courriel dans le champ **Nom de la présentation du corps du courriel**. Lorsque vous envoyez des courriels à vos clients, les textes du raccourci **Texte du courriel** sont insérés dans le rapport sélectionné dans le champ **Nom de la disposition du corps du courriel**. Le rapport standard comporte un champ de texte pour ce texte. Si vous le souhaitez, vous pouvez modifier ce rapport, par exemple pour ajouter ou supprimer du contenu. Modifiez la mise en page de ces rapports sur la page **Mise en page des rapports** . Pour en savoir plus sur les présentations de rapport, accédez à [Commencez à créer des présentations de rapport](ui-get-started-layouts.md).
+
+> [!NOTE]
+> Pour communiquer par courriel directement depuis [!INCLUDE [prod_short](includes/prod_short.md)] , vous devez être configuré pour le faire. Pour en savoir plus sur la connexion des comptes de courriel avec [!INCLUDE [prod_short](includes/prod_short.md)], consultez [Configurer courriel](admin-how-setup-email.md).
+
+### Configurer des modalités de rappel
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modalités de rappel**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]  
@@ -29,7 +43,7 @@ Si des clients ont des impayés, vous devez décider quand et comment leur envoy
 
 ## Niveaux rappel
 
-Vous pouvez définir un nombre illimité de niveaux rappel pour chaque code modalités de rappel. La première fois qu'un rappel est créé pour un client, la configuration utilisée est celle du niveau 1. Lorsque le rappel est émis, le numéro du niveau est enregistré dans les écritures rappel qui sont créées et associées à l'écriture client spécifique. S'il est nécessaire de rappeler le client, toutes les écritures rappel associées aux écritures client ouvertes sont vérifiées afin de localiser le numéro de niveau le plus élevé. Les conditions du niveau suivant seront alors utilisées pour le nouveau rappel.
+Pour chaque terme de rappel, vous pouvez définir un nombre illimité de niveaux de rappel, même si la plupart des compagnies n’utilisent que deux ou trois niveaux. La première fois qu'un rappel est créé pour un client, la configuration utilisée est celle du niveau 1. Lorsque le rappel est émis, le numéro du niveau est enregistré dans les écritures rappel qui sont créées et associées à l'écriture client spécifique. S'il est nécessaire de rappeler le client, toutes les écritures rappel associées aux écritures client ouvertes sont vérifiées afin de localiser le numéro de niveau le plus élevé. Les conditions du niveau suivant seront alors utilisées pour le nouveau rappel.
 
 Si vous créez plus de relances qu'il n'y a de niveaux relance, les conditions utilisées seront celles du niveau le plus élevé. Vous pouvez utiliser autant de relances que le champ **Nombre max. de relances** des conditions relance le permet.
 
@@ -67,7 +81,7 @@ Si vous créez plus de relances qu'il n'y a de niveaux relance, les conditions u
     Pour chaque niveau relance, vous pouvez indiquer le texte à imprimer avant (**Texte début**) ou après (**Texte fin**) les écritures de la relance.
 
 6. Choisissez les actions **Texte de début** ou **Texte de fin** respectivement, puis renseignez la page **Texte rappel**.
-7. Pour insérer automatiquement des valeurs correspondantes dans le texte de rappel résultant, entrez les espaces réservés suivants dans le champ **Texte**.  
+7. Pour insérer automatiquement des valeurs correspondantes dans le texte de rappel, vous pouvez entrer les espaces réservés suivants dans le champ **Texte**.  
 
     |Paramètre substituable|Valeur|  
     |-----------------|-----------|  
@@ -82,16 +96,18 @@ Si vous créez plus de relances qu'il n'y a de niveaux relance, les conditions u
     |%9|Contenu du champ **Code devise** de l'en-tête de rappel|  
     |%10|Contenu du champ **Date de report** de l'en-tête de rappel|  
     |%11|Nom de la compagnie|  
-    |%12|Contenu du champ **Frais supplémentaires par ligne** de l'en-tête de rappel|  
+    |%12|Contenu du champ **Frais supplémentaires par ligne** de l'en\-tête de relance|  
 
-    Par exemple, si vous saisissez **Vous devez %9 %7 dus au %2.**, le rappel résultant contiendra le texte suivant : Vous devez **1 200,50 USD dus au 02/02/2014.**.
+    Par exemple, si vous saisissez **Vous devez %9%7 dus le %2.**, le rappel contient le texte suivant : **Vous devez 1 200,50 USD dus le 02/02/2024.**.
 
     > [!NOTE]
-    > La date d'échéance est calculée selon la formule de date que vous saisissez. Pour plus d’informations, voir [Utiliser des formules date](ui-enter-date-ranges.md#use-date-formulas).
+    > [!INCLUDE [prod_short](includes/prod_short.md)] calcule la date d’échéance selon la formule de date que vous saisissez. Pour plus d’informations, voir [Utiliser des formules date](ui-enter-date-ranges.md#use-date-formulas).
 
-Si vous avez configuré les modalités de rappel (avec des niveaux et du texte supplémentaires), saisissez l'un des codes sur chaque fiche client. Pour plus d'informations, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).  
+8. Pour spécifier la langue d’un courriel, choisissez l’action **Ajouter du texte pour la langue**. Le champ **Code de langue** est mis à jour pour afficher votre sélection. Sur le raccourci **Texte du courriel** , saisissez le contenu du message dans la langue sélectionnée.
 
-## Voir aussi
+Après avoir configuré les modalités de rappel, vous pouvez les attribuer aux clients sur les pages Fiche client. Pour plus d'informations, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).  
+
+## Voir aussi .
 
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
 [Envoyer des rappels de soldes impayés](receivables-send-reminders.md)  

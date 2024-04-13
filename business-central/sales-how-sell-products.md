@@ -7,11 +7,11 @@ ms.reviewer: soalex
 ms.topic: conceptual
 ms.search.keywords: 'trade, partial deliveries, customer sales order, shipping advice, partial shipments,'
 ms.search.form: '42, 48, 9305'
-ms.date: 02/01/2024
+ms.date: 02/06/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# <a name="sell-products-with-a-customer-sales-order"></a>Vendre des produits avec un document de vente client
+# Vendre des produits avec un document de vente client
 
 Cet article fournit des conseils aux utilisateurs sur le moment d’utiliser un document de vente plutôt qu’une simple facture. Si votre processus de vente exige que vous ne livriez que partiellement une commande, par exemple si la quantité totale n’est pas disponible d’un coup, vous devez traiter cette vente en créer un document de vente.
 
@@ -23,14 +23,14 @@ Dans les environnements d’entreprise où le client paie immédiatement, comme 
 
 Vous pouvez même créer des commandes à paiement direct pour les clients non enregistrés en configurant une fiche « client en espèces », vers laquelle vous pointez sur le document de vente. En savoir plus sur [Configurer les clients effectuant un achat au comptoir](finance-how-to-set-up-cash-customers.md).
 
-## <a name="create-a-sales-order"></a>Créer un document de vente
+## Créer un document de vente
 
 > [!NOTE]  
 > La procédure suivante suppose que le client est déjà configuré. Pour obtenir des instructions sur la façon de procéder, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.
 2. Sélectionnez **Nouveau** pour créer une écriture.
-3. Dans le champ **Client**, entrez le nom d'un client existant.
+3. Dans le champ **Nom client**, entrez le nom d’un client existant.
 
     D’autres champs de la page **Document de vente** sont désormais renseignés avec les informations standard sur le client sélectionné.  
 
@@ -71,7 +71,7 @@ Vous pouvez même créer des commandes à paiement direct pour les clients non e
     >
     > Pour vérifier les montants qui seront réellement reportés, utilisez la page **Statistiques**, qui tient compte des calculs d’arrondissement. Aussi, si vous choisissez l'action **Libérer**, les champs de totaux seront mis à jour pour inclure les calculs d’arrondissement.  
 
-11. Dans le champ **Montant d’escompte de la facture**, vous pouvez entrer un montant qui doit être déduit de la valeur indiquée dans le champ **Total TTC**.
+11. Dans le champ **Montant escompte facture**, vous pouvez éventuellement entrer le montant qui doit être déduit de la valeur indiquée dans le champ **Total TTC**.
 
     Si vous définissez des escomptes facture pour le client et en respectant les critères, le pourcentage spécifié est automatiquement inséré dans le champ **% escompte facture**. Et le montant correspondant est inséré dans le champ **Montant escompte facture sans TVA**. Pour plus d'informations, voir [Enregistrement des prix de vente, des escomptes et des ententes sur les paiements](sales-how-record-sales-price-discount-payment-agreements.md).
 12. Pour livrer seulement une partie de la quantité commandée, entrez la quantité dans le champ **Qté à livrer**. La valeur est copiée automatiquement dans le champ **Qté à facturer**.
@@ -87,17 +87,17 @@ La boîte de dialogue **Valider et envoyer la confirmation** s'ouvre et indique 
 
 Les écritures article et client associées sont à présent créées dans votre système, et le document de vente est sorti en tant que document au format PDF. Une fois le document de vente entièrement reporté, il est supprimé de la liste des documents vente et remplacé par de nouveaux documents dans la liste des factures vente et des livraisons vente.  
 
-## <a name="external-document-number"></a>Numéro de document externe
+## Numéro de document externe
 
 [!INCLUDE [ext-doc-no-sales](includes/ext-doc-no-sales.md)]
 
-## <a name="working-with-amount-fields"></a>Utilisation des champs de montant
+## Utilisation des champs de montant
 
 Les valeurs des champs qui affichent des montants peuvent être positives ou négatives, selon que la valeur représente un crédit ou un débit. Cette vidéo montre comment utiliser les champs qui affichent des montants.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1h96P]
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Facturation des ventes](sales-how-invoice-sales.md)  
 [Validation des ventes](ui-post-sales.md)  

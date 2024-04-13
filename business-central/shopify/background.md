@@ -1,7 +1,7 @@
 ---
 title: Exécuter des tâches en arrière-plan et de manière récurrente
 description: Configurer la synchronisation des données entre Business Central et Shopify en arrière-plan.
-ms.date: 05/11/2022
+ms.date: 03/26/2024
 ms.topic: article
 ms.service: dynamics-365-business-central
 ms.reviewer: solsen
@@ -9,7 +9,7 @@ author: brentholtorf
 ms.author: bholtorf
 ---
 
-# Exécuter des tâches en arrière-plan
+# Exécution des tâches en arrière-plan
 
 Il est efficace d’exécuter certaines tâches simultanément et de manière automatisée. Vous pouvez effectuer ces tâches en arrière-plan et également définir un calendrier pour les exécuter automatiquement. Pour exécuter des tâches en arrière-plan, deux modes sont pris en charge :
 
@@ -22,7 +22,7 @@ Il est efficace d’exécuter certaines tâches simultanément et de manière au
 2. Sélectionnez le magasin pour lequel vous voulez exécuter la synchronisation à l’arrière-plan pour ouvrir la page **Fiche magasin Shopify**.
 3. Activez **Autoriser les synchronisations en arrière-plan**.
 
-Désormais, lorsque l’action de synchronisation est déclenchée, au lieu d’exécuter une tâche au premier plan, vous serez invité à attendre. Une fois la synchronisation terminée, vous pouvez passer à l’action suivante. La tâche est créée comme **Écriture file d’attente des travaux** et démarre immédiatement.
+Désormais, lorsque l’action de synchronisation démarre, au lieu d’exécuter une tâche au premier plan, vous serez invité à attendre. Une fois la synchronisation terminée, vous pouvez passer à l’action suivante. La tâche est créée comme **Écriture file d’attente des travaux** et démarre immédiatement.
 
 ## Pour programmer des tâches récurrentes
 
@@ -37,7 +37,10 @@ Vous pouvez programmer les activités récurrentes suivantes pour qu’elles soi
 |**Synchroniser l'inventaire**|Rapport 30102 Synchroniser le stock avec Shopify|
 |**Synchroniser les images**|Rapport 30107 Synchroniser les images Shopify|
 |**Synchroniser les clients**|Rapport 30100 Synchroniser les clients Shopify|
+|**Compagnies sync.**|Rapport 30114 Synchroniser les compagnies (B2B) Shopify|
 |**Synchroniser les paiements**|Rapport 30105 Synchroniser les paiements Shopify|
+|**Sync. catalogues**|Rapport 30115 Shopify - Sync. catalogues (B2B)|
+|**Sync. prix catalogue**|Rapport 30116 Shopify - Sync. prix catalogue (B2B)|
 
 > [!NOTE]
 > Certains éléments peuvent être mis à jour par plusieurs tâches, par exemple lorsque vous importez des commandes, selon le paramétrage dans la **fiche magasin Shopify**, le système peut également importer et mettre à jour des données client et/ou produit. N’oubliez pas d’utiliser la même catégorie de file d’attente des travaux pour éviter les conflits.
@@ -51,6 +54,17 @@ Vous pouvez utiliser le champ **N° de commande Shopify** pour identifier les do
 
 Pour en savoir plus sur le report de commandes client par lot, accédez à [Pour créer une entrée de file d’attente de tâches pour le report par lot de documents de vente](../ui-batch-posting.md#to-create-a-job-queue-entry-for-batch-posting-of-sales-orders).
 
-## Voir aussi
+## Pour examiner l’état de la synchronisation
+
+Sur le **Chef d’entreprise** Centre de rôle, le **Shopify Activités** La pièce propose plusieurs indices qui peuvent vous aider à identifier rapidement s’il y a des problèmes avec Shopify Connecteur.
+
+- **Clients non mappés** – Shopify le client est importé, mais n’est pas lié à une entrée client correspondante dans [!INCLUDE [prod_short](../includes/prod_short.md)].
+- **Produits non mappés** – Shopify le produit est importé, mais n’est pas lié à une entrée article correspondante dans [!INCLUDE [prod_short](../includes/prod_short.md)].
+- **Commandes non traitées** – Shopify les commandes sont importées, mais les documents de vente [!INCLUDE [prod_short](../includes/prod_short.md)] n’ont pas été créés, souvent à cause de produits ou de clients non cartographiés.
+- **Expéditions non traitées** - Les expéditions de vente reportées provenant des commandes Shopify ne sont pas synchronisées avec Shopify.
+- **Erreurs d’expédition** - Shopify Le connecteur n’a pas pu synchroniser les expéditions de ventes publiées avec Shopify.
+- **Erreurs de synchronisation** - des écritures file d’attente des projets ayant échoué sont liées à la synchronisation avec Shopify.
+
+## Voir aussi .
 
 [Mise en route du connecteur pour Shopify](get-started.md)  

@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: conceptual
 ms.search.form: HelpAndSupport
 ms.author: bholtorf
-ms.date: 09/28/2023
+ms.date: 02/27/2024
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
@@ -17,9 +17,20 @@ ms.service: dynamics-365-business-central
 
 Les organisations qui utilisent [!INCLUDE[prod_long](includes/prod_long.md)] peuvent obtenir une assistance technique pour tout problème qu’elles pourraient rencontrer. Dans cet article, nous vous montrons les informations suivantes et de nombreux autres conseils d’utilisation de [!INCLUDE[prod_short](includes/prod_short.md)] :
 
+- Découvrez comment votre assistant basé sur l’IA [peut guider et expliquer](#chat-with-copilot)
 - Découvrez comment [vous débloquer](#in-product-tips)  
-- Découvrez où [en savoir plus](#help-pane)    
-- Découvrez comment trouver [les informations techniques](#help--support-page) dont vous avez besoin pour soumettre une demande d’assistance    
+- Découvrez où [en savoir plus](#help-pane)
+- Découvrez comment trouver [les informations techniques](#help--support-page) dont vous avez besoin pour soumettre une demande d’assistance
+
+## Conversation instantanée avec Copilot
+
+[!INCLUDE [online_only](includes/online_only.md)]
+
+Conversation instantanée avec Copilot est un outil basé sur l’IA qui répond aux questions et recherche des données commerciales liées à Business Central. Il est disponible à partir de n’importe quelle page en sélectionnant l’icône ![Affiche l’icône pour discuter avec Copilot](media/chat-copilot-icon.png) **Copilot** dans le coin supérieur droit. [En savoir plus sur la discussion instantanée avec Copilot](chat-with-copilot.md).
+
+### Aide avec les champs
+
+Copilot vous aide à comprendre le but et l’utilisation typique des champs individuels. Lorsque vous choisissez **Demander à Copilot** dans une info-bulle pour un champ, le chat s’ouvre avec une invite d’explication pour le nom du champ et Copilot fournit des informations à ce sujet. Copilot renvoie aux articles référencés, il est donc facile de vérifier la description.
 
 ## Conseils sur les produits
 
@@ -35,14 +46,9 @@ Dans [!INCLUDE [prod_short](includes/prod_short.md)], l’élément du menu Aide
 
 La liste suivante décrit comment vous pouvez accéder au volet Aide et si des fiches y sont ajoutées :
 
-- Cliquez sur le lien *En savoir plus* sur une info-bulle pour un champ
-
-  La fiche suivante est ajoutée au volet Aide :
-
-  - Info-bulle du champ
-- Cliquez sur le lien *En savoir plus* sur une info-bulle pour une action
 - Choisissez l’élément de menu Aide (le point d’interrogation dans le coin supérieur droit)
 - Utilisez le raccourci clavier <kbd>Ctrl</kbd>+<kbd>F1</kbd> où que vous soyez
+- Cliquez sur le lien *En savoir plus* sur une info-bulle pour un champ, le cas échéant Le lien *En savoir plus* est uniquement disponible dans l’application mobile ou sur les champs personnalisés (c’est-à-dire les champs des extensions non Mocrosoft) dans le client Web.
 
 > [!TIP]
 > Lorsque vous choisissez un lien, l’article cible s’ouvre dans un nouvel onglet de navigateur. Vous pouvez ensuite choisir de désancrer l’onglet du navigateur afin de pouvoir afficher les informations pertinentes côte à côte avec [!INCLUDE [prod_short](includes/prod_short.md)]. Le volet reste ouvert pendant que vous naviguez dans [!INCLUDE [prod_short](includes/prod_short.md)], de sorte que le contenu que vous avez recherché reste visible.  

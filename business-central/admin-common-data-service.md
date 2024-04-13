@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: ivkoleti
 ms.topic: conceptual
-ms.date: 06/28/2023
+ms.date: 03/08/2024
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
@@ -70,6 +70,12 @@ La synchronisation des devises est unidirectionnelle, de [!INCLUDE [prod_short](
 
 * Les montants dans la devise de base [!INCLUDE[prod_short](includes/cds_long_md.md)] sont convertis dans la devise locale [!INCLUDE [prod_short](includes/prod_short.md)] en fonction du dernier taux de change synchronisé depuis [!INCLUDE [prod_short](includes/prod_short.md)].
 * Les montants dans la devise locale [!INCLUDE [prod_short](includes/prod_short.md)] se synchronisent avec la devise locale [!INCLUDE [prod_short](includes/prod_short.md)] dans l’une des autres devises (non de base) dans [!INCLUDE[prod_short](includes/cds_long_md.md)].
+
+## Que se passe-t-il lorsque vous copiez une compagnie
+
+Vous pouvez copier en toute sécurité les compagnies qui s’intègrent à [!INCLUDE[prod_short](includes/cds_long_md.md)] ou [!INCLUDE[crm_md](includes/crm_md.md)]. La copie de compagnies contribue à réduire le risque d’incohérences des données et peut vous faire gagner un temps précieux. Pour en savoir plus sur la copie de compagnies, consultez [Copier une compagnie](about-new-company.md#copy-a-company).
+
+[!INCLUDE [dataverse-copy-company](includes/dataverse-copy-company.md)]
 
 ## Voir aussi .
 

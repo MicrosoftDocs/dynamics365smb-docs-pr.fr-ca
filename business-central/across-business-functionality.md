@@ -10,7 +10,7 @@ ms.date: 11/01/2023
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="business-functionality"></a>Fonctionnalités d'entreprise
+# Fonctionnalités d'entreprise
 
 [!INCLUDE[prod_short](includes/prod_short.md)] fournit des fonctionnalités pour les processus d'entreprise communs dans les PME, surtout au sein de compagnies de vente en gros et de services professionnels. Toutefois, des processus plus complexes, comme l'assemblage, la fabrication, la maintenance et la gestion d'entrepôt suggérée sont également pris en charge. Découvrez comment obtenir un essai gratuit [ici](trial-signup.md).  
 
@@ -24,8 +24,8 @@ ms.service: dynamics-365-business-central
 |Obtenir l'analyse des performances de vos activités commerciales par les budgets, des tableaux d'analyse, et des vues d'analyse.|[Décisionnel pour le secteur de la finance](bi.md)|
 |Gérer les processus de vente et les informations, par exemple des devis, des commandes, des retours et les comptes client, puis effectuer des livraisons directes.|[Ventes](sales-manage-sales.md)|
 |Gérer les procédures d'acquisition et des informations, par exemple, des factures, des commandes, des retours et des comptes fournisseurs, et des articles achat des documents vente. |[Achats](purchasing-manage-purchasing.md)|
-|Enregistrer de nouveaux articles de type inventaire ou service, catégoriser les articles pour faciliter la recherche, ajuster les niveaux d'inventaire et effectuer les tâches courantes d'évaluation de l'inventaire.|[Stock](inventory-manage-inventory.md)|
-|Créer des projets, programmer des ressources pour des projets, gérer des budgets, surveiller la progression, suivre les heures des employés et des postes avec des feuilles de temps.|[Gestion de projets](projects-manage-projects.md)|
+|Enregistrer de nouveaux articles de type inventaire ou service, catégoriser les articles pour faciliter la recherche, ajuster les niveaux d'inventaire et effectuer les tâches courantes d'évaluation de l'inventaire.|[Inventaire](inventory-manage-inventory.md)|
+|Créez des projets, programmez des ressources pour des projets, gérez des budgets projet, surveillez la progression et suivez les heures des employés et des machines.|[Gestion de projets](projects-manage-projects.md)|
 |Organiser vos immobilisations, garantir un amortissement périodique correct, et assurer le suivi des coûts d'entretien.|[Immobilisations](fa-manage.md)|
 |Gérer et prendre en charge vos efforts de vente et focaliser vos interactions sur les segments client/contact favoris.|[Gestion des relations](marketing-relationship-management.md)|
 |Conserver des enregistrements détaillés de vos employés et enregistrer les absences à des fins d’analyse. |[Ressources humaines](hr-manage-human-resources.md)|
@@ -38,7 +38,7 @@ ms.service: dynamics-365-business-central
 |Activez des utilisateurs pour l’échange de données avec des sources externes lors de tâches quotidiennes, telles que les envoyer/recevoir des documents électroniques, importer/exporter des fichiers bancaires, et mettre à jour des taux de change des devises.|[Échanger des données par voir électronique](across-data-exchange.md)|
 |Enregistrez des documents externes dans [!INCLUDE[prod_short](includes/prod_short.md)], ainsi que leurs pièces jointes, puis créez manuellement des documents connexes ou convertissez automatiquement les fichiers en documents électroniques.|[Documents entrants](across-income-documents.md)|
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Administration](admin-setup-and-administration.md)    
 [Explorer les fonctionnalités de Dynamics 365 Business Central](https://dynamics.microsoft.com/business-central/capabilities/)  

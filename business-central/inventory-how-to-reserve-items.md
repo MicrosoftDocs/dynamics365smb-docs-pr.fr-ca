@@ -7,22 +7,22 @@ ms.reviewer: andreipa
 ms.topic: conceptual
 ms.search.keywords: null
 ms.search.forms: '498, 497'
-ms.date: 09/19/2023
+ms.date: 02/22/2024
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
-# <a name="reserve-items"></a>Réservation des articles
+# Réservation des articles
 
 Vous pouvez réserver des articles pour les documents de vente, les bons de commande, les commandes service, les ordres d'assemblage, les ordres de transfert et les bons de production. Vous pouvez également réserver des articles en inventaire ou entrants sur les lignes document ou journal ouvertes. Vous faites cela sur la page **Réservation**.
 
 Chaque ligne que vous ouvrez pour réserver des articles sur la page **Réservation** donne des informations sur un type de ligne (vente, achat ou journal) ou d’écriture d'inventaire. Les lignes décrivent le nombre d'articles disponibles pour réservation à partir de chaque type de ligne ou d'écriture.
 
 > [!TIP]
-> En fonction des quantités que vous avez réservées dans l’inventaire, [!INCLUDE [prod_short](includes/prod_short.md)] affiche un état sur les documents afin que vous soyez rapidement informé de l’étape suivante. Par exemple, pour indiquer que vous pouvez livrer un document de vente ou commencer à travailler sur un ordre de travail ou d’assemblage ou un bon de production. Cet état aide également à réduire le risque de livraisons partielles accidentelles ou de retards dus à un stock manquant pour les bons de production et les ordres d’assemblage.
+> En fonction des quantités que vous avez réservées dans l’inventaire, [!INCLUDE [prod_short](includes/prod_short.md)] affiche un état sur les documents afin que vous soyez rapidement informé de l’étape suivante. Par exemple, pour indiquer que vous pouvez expédier un document de vente ou commencer à travailler sur un ordre de projet ou d’assemblage ou un bon de production. Cet état aide également à réduire le risque de livraisons partielles accidentelles ou de retards dus à un stock manquant pour les bons de production et les ordres d’assemblage.
 >
 > Le champ **Réservé à partir du stock** peut vous aider à comprendre si vous pouvez livrer ou prélever une commande ou une ligne de commande spécifique. Pour les lignes, le champ Réservé à partir du stock est disponible dans les récapitulatifs. Pour accéder aux informations de toute la commande, le champ se trouve sur la page **Statistiques**.
 
-## <a name="reserve-items-for-sales"></a>Réserver des articles pour des ventes
+## Réserver des articles pour des ventes
 
 La procédure suivante décrit comment réserver des articles pour un document de vente. Les étapes sont similaires à celles des commandes achat, service, ordre de transfert et ordre d’assemblage.
   
@@ -41,7 +41,7 @@ La procédure suivante décrit comment réserver des articles pour un document d
 > [!NOTE]  
 > Si des lignes traçabilité article existent pour le document de vente, le système de réservation vous fera suivre une procédure spéciale : Pour plus d’informations, voir la section [Pour réserver un numéro de série ou de lot particulier](inventory-how-to-reserve-items.md#reserve-a-specific-serial-or-lot-number).  
 
-## <a name="reserve-an-item-for-a-production-order-line"></a>Réserver un article pour une ligne bon de production
+## Réserver un article pour une ligne bon de production
 
 Vous pouvez réserver des articles pour des ordres de fabrication. Vous devez distinguer les lignes bon de production, correspondant à l'article parent, et les composantes bon de production.
 
@@ -55,7 +55,7 @@ La procédure suivante se base sur un bon de production planifié ferme.
 
 La quantité entrée dans la ligne bon de production planifié ferme est désormais réservée.
 
-## <a name="reserve-items-for-production-order-components"></a>Réserver des articles pour des composantes bon de production
+## Réserver des articles pour des composantes bon de production
 
 Vous pouvez réserver des articles pour des ordres de fabrication. Vous devez distinguer les lignes bon de production, correspondant à l'article parent, et les composantes bon de production.
 
@@ -71,7 +71,7 @@ La procédure suivante se base sur un bon de production planifié ferme.
 
 La quantité entrée dans la ligne composante production planifié ferme est désormais réservée.
 
-## <a name="reserve-items-in-bulk"></a>Réserver des articles en bloc
+## Réserver des articles en bloc
 
 Utilisez la page **Feuille réservation** pour réserver et affecter des marchandises entrantes en bloc. Par exemple, les réservations en bloc peuvent aider à garantir que les quantités sont disponibles pour vos documents de vente et vos bons de production. Vous pouvez avoir plusieurs traitements par lots pour différents objectifs. Par exemple, vous pouvez affecter des bons de production chaque semaine mais les réserver chaque jour pour la vente.
 
@@ -79,17 +79,17 @@ Utilisez la page **Feuille réservation** pour réserver et affecter des marchan
 2. Choisissez l’action **Obtenir la demande**, puis spécifiez le type de demande que vous souhaitez réserver à partir de l’inventaire disponible.
 3. Renseignez les filtres selon vos besoins. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]
 4. Facultatif : pour affecter les articles immédiatement, choisissez l’action **Affecter**.
-5. Sur la page **Stratégie d’affectation**, choisissez une stratégie pour chaque étape
+5. Sur la page **Stratégie d’affectation**, choisissez une stratégie pour chaque étape.
 
    |Stratégie d’affectation  |Désignation  |
    |---------|---------|
    |Basique     | Affecte un stock à une demande s’il n’y a pas de conflits et que la demande peut être entièrement couverte. Par exemple, vous avez un document de vente A avec une quantité de 10 et un projet avec une quantité de 7. Si vous en avez 20 en stock, les deux demandes reçoivent la quantité complète. Si votre stock est de 12, aucun stock n’est affecté. Vous devez affecter manuellement la quantité.        |
    |Répartir    | Distribue le stock disponible à la demande de manière équitable. Par exemple, vous avez un document de vente avec une quantité de 10 et un projet avec une quantité de 7. Si votre niveau de stock est de 20, alors les deux demandes reçoivent la quantité complète. Si votre stock est de 12, alors les deux demandes obtiennent 6.        |
-   |Par priorité client|Répartition basée sur le champ Priorité de la fiche client. En cas de quantités insuffisantes, le système donnera la priorité à l’approvisionnement des clients avec la priorité la plus élevée.|
+   |Par priorité client|Répartition basée sur le champ **Priorité** de la page **fiche client**. En cas de faibles quantités dans l’inventaire, Business Central approvisionne en premier les clients prioritaires.|
 
 6. Pour réserver toutes les lignes où **Accepter** est activé, choisissez l’action **Créer une réservation**.
     
-## <a name="change-a-reservation"></a>Modifier une réservation
+## Modifier une réservation
 
 Vous pouvez modifier une réservation d’article.
 
@@ -98,7 +98,7 @@ Vous pouvez modifier une réservation d’article.
 3. Sur la page **Écritures réservation**, mettez à jour le champ **Quantité** de la ligne à modifier.
 4. Confirmez le message qui suit en cliquant sur le bouton **OK**.
 
-## <a name="cancel-a-reservation"></a>Annuler des réservations
+## Annuler des réservations
 
 Vous pouvez annuler une réservation d’article.
 
@@ -107,7 +107,7 @@ Vous pouvez annuler une réservation d’article.
 3. Sur la page **Écritures réservation**, choisissez l'action **Annuler la réservation**.  
 4. Confirmez le message qui suit en cliquant sur le bouton **Oui**.  
 
-## <a name="reserve-a-specific-serial-or-lot-number"></a>Réserver un numéro de série ou de lot particulier
+## Réserver un numéro de série ou de lot particulier
 
 À partir des documents sortants pour les articles suivis, comme des documents de vente ou des listes de composantes de production, vous pouvez réserver des numéros de série ou de lot spécifiques. Par exemple, réserver des numéros de série ou de lot spécifiques peut être utile dans les situations suivantes :
 
@@ -129,7 +129,7 @@ La procédure suivante se base sur un document de vente.
 7. Cliquez sur le bouton **OK** pour ouvrir une page **Réservation** affichant uniquement l'approvisionnement portant le numéro de traçabilité spécifié. S’il y a des réservations non spécifiques sur l’un des numéros traçabilité que vous avez spécifiés pour cette ligne, vous êtes informé que la quantité a déjà été réservée.  
 8. Sélectionnez l’action **Réservation automatique** ou **Réserver à partir de la ligne courante** pour créer la réservation sur les numéros traçabilité spécifiques.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Inventaire](inventory-manage-inventory.md)  
 [Détails de conception : réservation, chaînage et message d’action](design-details-reservation-order-tracking-and-action-messaging.md)  

@@ -5,11 +5,11 @@ author: brentholtorf
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: client
-ms.date: 04/01/2021
+ms.date: 03/20/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="merge-duplicate-records"></a>Fusionner les doublons d'enregistrements
+# Fusion des enregistrements en double
 
 Puisque différents utilisateurs créent de nouvelles fiches contact, fournisseur ou client au fil du temps, ou puisque de nouveaux enregistrements sont créés automatiquement pendant la migration, un client, fournisseur ou contact peut être représenté dans le système avec plusieurs enregistrements. Dans ce cas, vous pouvez utiliser la page **Fusionner le doublon** depuis la fiche de l'enregistrement que vous souhaitez conserver. La page vous donne un aperçu des valeurs de champ dupliquées et vous fournit des fonctions pour sélectionner quelles valeurs conserver ou ignorer lors de la fusion des deux enregistrements en un seul.
 
@@ -26,7 +26,7 @@ La procédure suivante se base sur une fiche article. La procédure est identiqu
 3. Sur la page **Fiche client**, sélectionnez l'action **Fusionner avec**.
 4. Sur la page **Fusionner le doublon**, dans le champ **Fusionner avec**, sélectionnez le client pour lequel vous soupçonnez qu'il existe un doublon de celui que vous avez ouvert, indiqué dans le champ **Actuel**.
 
-    Le raccourci **Champs** répertorie les champs où les valeurs sont différentes pour les deux clients. Cela signifie que si le client sélectionné est vraiment un doublon, alors très peu de champs seulement doivent être répertoriés, comme les erreurs de saisie et autres erreurs de saisie des données.
+    Le raccourci **Champs** répertorie les champs où les valeurs sont différentes pour les deux clients. Cela signifie que si le client sélectionné est vraiment un doublon, alors peu de champs seulement doivent être répertoriés, comme les erreurs de saisie et autres erreurs de saisie des données.
 
     Le raccourci **Tables associées** répertorie les tables où les champs ont une relation avec les deux clients. Les champs **Nombre actuel** et **Nombre en double** présentent le nombre de champs dans les tables associées où la valeur **N°** du client actuel et du doublon de client est utilisée. Sur la page **Fusionner le doublon**, cette section est ici uniquement à titre informatif. Cependant, si des conflits de fusion existent, vous les résoudrez sur la page **Fusionner les conflits de doublon**. Voir les étapes 8 à 12.   
 
@@ -42,7 +42,7 @@ La procédure suivante se base sur une fiche article. La procédure est identiqu
 9. Sur la page **Fusionner les conflits de doublon**, sélectionnez la ligne pour une table concernée par un conflit, puis choisissez l'action **Afficher les détails**.
 
     La page **Fusionner le doublon** affiche maintenant les champs de la table sélectionnée qui entraînent un conflit de fusion entre les deux enregistrements client. Vous observerez dans les deux valeurs récapitulées dans les champs **Actuel** et **Conflits avec** et sur les lignes sur lesquelles au moins un champ de clé principale est identique pour les deux clients et la valeur du champ **N°** est différent pour les deux clients.   
-10. Si vous ne souhaitez pas conserver le doublon d'enregistrement client, choisissez l'action **Supprimer le doublon**, puis choisissez le bouton **Fermer**.
+10. Si vous ne souhaitez pas conserver le doublon d’enregistrement client, choisissez l’action **Supprimer le doublon**, puis choisissez le bouton **Fermer**.
 
     Les valeurs de champ identiques, autres que la valeur du champ **N°**, sont supprimées depuis le doublon d'enregistrement et inséré sur l'enregistrement actuel.
 11. Si vous souhaitez conserver le doublon d'enregistrement client après la fusion, sélectionnez l'option **Renommer le doublon**.
@@ -55,7 +55,7 @@ La procédure suivante se base sur une fiche article. La procédure est identiqu
 > [!NOTE]
 > Pour les contacts, vous pouvez utiliser la fonctionnalité pour trouver des doublons de contact avant d'utiliser la page **Fusionner le doublon**. Pour plus d'informations, reportez-vous à la rubrique [Recherche de doublons de contact](marketing-setup-contacts.md#searching-for-duplicate-contacts).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Ventes](sales-manage-sales.md)  
 [Configuration des contacts](marketing-setup-contacts.md)  

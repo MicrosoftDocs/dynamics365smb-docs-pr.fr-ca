@@ -13,7 +13,7 @@ L'escompte est calculé sur la base de toutes les lignes du document vente où l
 > Par défaut, les champs **Autoriser escompte facture** et **Montant escompte ligne** sont cachés sur les lignes. Si les champs ne sont pas disponibles, vous pouvez les ajouter en personnalisant la page. Pour plus d'informations, voir [Personnaliser votre espace de travail](../ui-personalization-user.md#start-personalizing-by-using-the-personalization-mode).
 
 > [!TIP]
-> Si le champ **Calculer escompte facture** est sélectionné sur la page **Configuration ventes**, l'escompte facture est calculé automatiquement. Le moment du calcul diffère selon le type de document vente que vous utilisez.
+> Si le champ **Calculer escompte facture** est sélectionné sur la page **Configuration ventes**, l’escompte facture est calculé automatiquement. Le moment du calcul diffère selon le type de document vente que vous utilisez.
 >
 > Si vous utilisez un document de vente, l'escompte est calculé quand vous ajoutez une ligne. Pour tous les autres documents vente, tels que les factures vente, l'escompte est calculé quand vous effectuez l’une des actions suivantes :
 >
