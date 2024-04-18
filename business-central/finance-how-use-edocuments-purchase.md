@@ -11,7 +11,7 @@ ms.author: altotovi
 ms.service: dynamics-365-business-central
 ---
 
-# Utilisation des documents électroniques dans le processus achats
+# <a name="use-e-documents-in-the-purchases-process"></a>Utilisation des documents électroniques dans le processus achats
 
 Vous pouvez utiliser des documents électroniques configurés (documents électroniques) avec les documents achat.
 
@@ -25,11 +25,11 @@ Vous pouvez utiliser les document achat suivants avec la fonctionnalité des doc
 > [!NOTE]
 > À partir de la version 24.0 de [!INCLUDE[prod_short](includes/prod_short.md)], il est possible de connecter des **Bons de commande** avec les **Documents électroniques** reçus.  
 
-## Documents électroniques achat
+## <a name="e-documents-in-purchases"></a>Documents électroniques achat
 
 La réception de documents électroniques achat dans Dynamics 365 Business Central peut être effectuée en tant que traitement en lot ou manuellement.  
 
-### Comment configurer les fournisseurs pour qu’ils travaillent avec différents documents achat  
+### <a name="how-to-set-up-vendors-to-work-with-different-purchase-documents"></a>Comment configurer les fournisseurs pour qu’ils travaillent avec différents documents achat
 
 Suivez les étapes pour configurer les fournisseurs afin qu’ils fonctionnent correctement avec les factures électroniques entrantes : 
 
@@ -46,9 +46,9 @@ Suivez les étapes pour configurer les fournisseurs afin qu’ils fonctionnent c
 4. Choisissez l’une des options que vous souhaitez utiliser pour le fournisseur sélectionné. 
 5. Fermez la page.   
 
-### Pour utiliser des factures achat  
+### <a name="to-work-with-purchase-invoices"></a>Pour utiliser des factures achat
 
-#### Exécuter le traitement en lot  
+#### <a name="run-the-batch-job"></a>Exécuter le traitement en lot
 
 > [!NOTE]
 > Ce traitement en lot est destiné à la collecte automatisée de vos factures entrantes. Cela ne peut fonctionner que dans un pays/région où la fonctionnalité existe.  
@@ -76,7 +76,7 @@ Il existe deux erreurs courantes :
 
 Après avoir corrigé les erreurs et les avertissements, vous pouvez spécifier manuellement quand le système doit créer une facture achat en fonction de votre configuration en sélectionnant **Créer un document**.   
 
-#### Importer manuellement les factures  
+#### <a name="manually-import-invoices"></a>Importer manuellement les factures
 
 Pour importer manuellement des documents électroniques externes, procédez comme suit :
 
@@ -87,9 +87,9 @@ Pour importer manuellement des documents électroniques externes, procédez comm
 5. Lorsque vous avez fini de résoudre les problèmes, dans le groupe **Importer manuellement**, sélectionnez **Créer un document**.  
 6. Une fois le document créé dans [!INCLUDE[prod_short](includes/prod_short.md)], l’utilisation d’un traitement en lot ne modifie pas la façon dont vous l’affichez. 
 
-### Documents électroniques avec bons de commande  
+### <a name="e-documents-with-purchase-orders"></a>Documents électroniques avec bons de commande
 
-#### Pour lier les bons de commande aux documents électroniques reçus
+#### <a name="to-link-purchase-orders-with-the-received-e-documents"></a>Pour lier les bons de commande aux documents électroniques reçus
 
 Si votre **fournisseur** a configuré le champ **Recevoir le document électronique à** pour qu’il fonctionne avec les **Bons de commande**, une fois le document électronique créé dans [!INCLUDE[prod_short](includes/prod_short.md)] (manuellement ou à partir d’un point de terminaison externe), [!INCLUDE[prod_short](includes/prod_short.md)] effectuera les opérations suivantes :  
 
@@ -97,7 +97,7 @@ Si votre **fournisseur** a configuré le champ **Recevoir le document électroni
 2. Si le **Bon de commande** pour ce fournisseur particulier existe, mais qu’il n’existe pas de numéro de bon de commande dans le fichier **Document électronique** reçu, [!INCLUDE[prod_short](includes/prod_short.md)] offrira la possibilité de choisir l’un des bons de commande existants, lorsque et si vous avez téléchargé ce document manuellement, en ouvrant la liste des **Bons de commande** avec des commandes uniquement pour le fournisseur dont vous avez reçu un **Document électronique**, dans laquelle vous devez sélectionner le **bon de commande** que vous souhaitez puis choisir **OK**. Si vous n’avez pas sélectionné le **Bon de commande** approprié ou si vous avez reçu le **Document électronique** automatiquement d’un point de terminaison externe en utilisant la **File d’attente des projets**, le nouveau **Document électronique** ne sera lié à aucun document achat et l’**État du document** sera **Erreur** et l’**État du document électronique** dans la sous-page **État du service** sera **Erreur de traitement du document importé**. Pour terminer l’association avec le **bon de commande**, sélectionnez l’action **Mettre à jour le lien du bon de commande** et choisissez l’un des bons de commande existants pour ce fournisseur. 
 3. Si le **Bon de commande** pour ce fournisseur particulier n’existe pas au moment de la création du nouveau **Document électronique**, [!INCLUDE[prod_short](includes/prod_short.md)] créera un nouveau **Bon de commande**, en utilisant le même modèle de création que celui qui existe déjà pour les nouvelles **Factures achat**. L’**état du document** de ce **Document électronique** sera **Traité**, et l’**état du document électronique** dans la sous-page **État du service** sera **Document importé créé**. Ce lien sera visible dans le champ **Document** de ce **document électronique** spécifique.   
 
-#### Correspondance des lignes d’un document électronique reçu avec un bon de commande  
+#### <a name="matching-lines-from-received-e-document-with-purchase-order"></a>Correspondance des lignes d’un document électronique reçu avec un bon de commande
 
 Vous pouvez faire correspondre vos documents électroniques reçus avec les lignes de bon de commande provenant de deux endroits différents, à partir de la page **Document électronique** ou de la page **Bon de commande**. Le moyen le plus simple de localiser les **Bons de commande** déjà liés est d’utiliser la vignette **Bons de commande liés** faisant partie des **Activités liées aux documents électroniques**. Tous les documents non liés peuvent être trouvés à l’aide de la vignette **En attente des factures électroniques d’achat** où vous avez une liste de **Documents électroniques** que vous devez revoir.  
 
@@ -107,7 +107,7 @@ Vous pouvez faire correspondre vos documents électroniques reçus avec les lign
 > [!NOTE]
 > Si le pourcentage de TVA diffère entre le document entrant et le pourcentage de TVA de la compagnie, les documents correspondants ne peuvent pas être utilisés dans un environnement multi-pays.  
 
-##### Correspondance des lignes de bon de commande  
+##### <a name="matching-lines-from-purchase-order"></a>Correspondance des lignes de bon de commande
 
 Vous pouvez faire correspondre les lignes de la liste **Bons de commande** ou à partir de l’un des **Bons de commande** ouverts. Pour commencer, procédez comme suit :  
 
@@ -157,7 +157,7 @@ Si vous souhaitez ajouter une certaine tolérance et autoriser la différence en
 3. Cette configuration s’appliquera à toutes les lignes correspondantes, mais encore une fois en tenant compte de la tolérance sur le montant total, comme pour le **Coût unitaire direct** avec le **% escompte ligne**.  
 4. Fermez la page.   
 
-##### Pour faire correspondre les lignes d’un document électronique  
+##### <a name="to-match-lines-from-e-document"></a>Pour faire correspondre les lignes d’un document électronique
 
 Vous pouvez faire correspondre les lignes sur la page **E-Document** . Pour commencer, procédez comme suit :  
 
@@ -166,7 +166,7 @@ Vous pouvez faire correspondre les lignes sur la page **E-Document** . Pour comm
 3. Choisissez l’action **Faire correspondre bon de commande** pour ouvrir la page **Correspondance des bons de commande**.  
 4. Répétez les mêmes étapes que celles utilisées lorsque vous avez commencé la correspondance à partir des bons de commande.
 
-### Copilote aide à la mise en correspondance de documents électroniques  
+### <a name="e-document-matching-assistance-copilot"></a>Copilote aide à la mise en correspondance de documents électroniques
 
 > [!NOTE]
 > Actuellement, le copilote **Assistance de mise en correspondance de documents électroniques** est en version préliminaire prête pour la production et est disponible dans le monde entier, sauf au Canada. Mais cela ne fonctionne qu’en anglais. 
@@ -174,7 +174,7 @@ Vous pouvez faire correspondre les lignes sur la page **E-Document** . Pour comm
 > [!NOTE]
 > Copilot est l’Assistant optimisé par l’IA qui aide les gens de votre organisation à libérer leur créativité et à automatiser les tâches fastidieuses. Le copilote **Assistance de rapprochement de documents électroniques** aide les utilisateurs à faire facilement correspondre les factures électroniques reçues avec les lignes de bon de commande existantes, en utilisant le modèle LLM pour faire correspondre les lignes entre deux documents différents. 
 
-#### Pour activer le copilote  
+#### <a name="to-activate-the-copilot"></a>Pour activer le copilote
 
 Si vous n’avez pas activé le copilote **Assistance de correspondance de documents électroniques**, vous devez le faire manuellement. Pour activer le copilote **Assistance de correspondance de documents électroniques**, suivez les étapes : 
 
@@ -183,7 +183,7 @@ Si vous n’avez pas activé le copilote **Assistance de correspondance de docum
 
 Une fois le copilote activé, vous pouvez commencer à l’utiliser.
 
-#### Utiliser le copilote aide à la mise en correspondance de documents électroniques 
+#### <a name="use-the-e-document-matching-assistance-copilot"></a>Utiliser le copilote aide à la mise en correspondance de documents électroniques
 
 Si Copilot est activé, les actions existantes **Mapper lignes documents électroniques** sur les commandes achetées et **Faire correspondre bon de commande** sur la page **Document électronique** présenteront des icônes différentes, symbolisant la fonctionnalité IA. Vous pouvez exécuter ces actions (absolument les mêmes que dans les exemples précédents dans la liste des bons de commande), à partir de l’un des **Bons de commande** ou du **Document électronique**. Toutes les étapes d’exécution sont les mêmes, mais lorsque vous exécutez cette action, le résultat sera différent et vous devez suivre les étapes :  
 
@@ -228,7 +228,7 @@ Si Copilot est activé, les actions existantes **Mapper lignes documents électr
 > [!NOTE]
 > L’analyse prix/coût et le contrôle de la quantité disponible font partie de l’activité de prétraitement.   
 
-## Vue d’ensemble des états des documents électroniques
+## <a name="overview-of-e-document-statuses"></a>Vue d’ensemble des états des documents électroniques
 
 Pour obtenir un meilleur aperçu de tous les documents électroniques de la compagnie, vous pouvez sélectionner le centre de rôles **Comptable** où existent les états des documents électroniques. Vous y trouverez des activités de documents électroniques qui ont les états suivants :
 
@@ -239,7 +239,7 @@ Pour obtenir un meilleur aperçu de tous les documents électroniques de la comp
     - Erreur
 
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Procédure : configurer les documents électroniques dans [!INCLUDE[prod_short](includes/prod_short.md)]](finance-how-setup-edocuments.md)    
 [Comment utiliser le document électronique dans le processus de vente](finance-how-use-edocuments.md)   
