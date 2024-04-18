@@ -2,23 +2,24 @@
 title: "Procédure\_: configurer des utilisateurs de flux de travail"
 description: 'Avant de pouvoir créer des flux de travail, vous devez configurer des utilisateurs qui y participent sur la page configuration utilisateur des approbations.'
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: ivkoleti
 ms.topic: how-to
-ms.devlang: al
 ms.search.keywords: 'reject, delegate, request'
 ms.search.form: '1533,'
-ms.date: 05/31/2023
-ms.author: bholtorf
+ms.date: 04/04/2024
 ms.service: dynamics-365-business-central
+ms.custom: bap-template
 ---
-# <a name="set-up-a-sequence-of-workflow-users"></a>Configurer une séquence d’utilisateurs de flux de travail
+# Configurer une séquence d’utilisateurs de flux de travail
 
-Avant de pouvoir créer des flux de travail approbation, vous devez configurer des utilisateurs qui enverront des requêtes et leurs approbateurs. Par exemple, vous pouvez spécifier qui doit recevoir une notification pour agir sur une étape du flux de travail. Vous configurez les participants du flux de travail approbation sur la page **Configuration utilisateur des approbations**. En savoir plus sur [Configurer des utilisateurs d’approbation](across-how-to-set-up-approval-users.md).
+Avant de pouvoir créer des flux de travail approbation, vous devez configurer des utilisateurs qui envoient des requêtes et leurs approbateurs. Par exemple, vous pouvez spécifier qui reçoit une notification pour agir sur une étape du flux de travail. Vous configurez les participants du flux de travail approbation sur la page **Configuration utilisateur des approbations**. En savoir plus sur [Configurer des utilisateurs d’approbation](across-how-to-set-up-approval-users.md).
 
 Sur la page  **Groupes d’utilisateurs du flux de travail**, vous pouvez spécifier où un participant s’engage dans un flux de travail approbation en saisissant un numéro dans le champ **N° de séquence** . Par exemple, vous pouvez spécifier que les utilisateurs s’engagent dans un ordre séquentiel, comme une chaîne d’approbateurs. Vous pouvez également spécifier une liste plate d’approbateurs en saisissant le même numéro. Dans ce dernier cas, un seul des approbateurs doit approuver une demande.
 
 [!INCLUDE [workflow-requestor-approver](includes/workflow-requestor-approver.md)]
 
-## <a name="to-set-up-a-workflow-user-group"></a>Configurer un groupe d’utilisateurs de flux de travail
+## Configurer un groupe d’utilisateurs de flux de travail
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Groupes utilisateur flux de travail**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Nouveau**. La page **Groupe d'utilisateurs du flux de travail** s'ouvre.  
@@ -28,12 +29,14 @@ Sur la page  **Groupes d’utilisateurs du flux de travail**, vous pouvez spéci
 
    |Champ|Désignation|
    |-----|-----------|
-   |**Nom d'utilisateur**|Spécifiez l’utilisateur qui participera à un flux de travail.<br /><br /> L'utilisateur doit exister sur la page **Configuration des utilisateurs**. En savoir plus sur [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md).|
-   |**N° séquence**|Spécifiez l'ordre dans lequel l'utilisateur du flux de travail s'engage dans un flux par rapport à d'autres utilisateurs. Ce champ peut être utilisé, par exemple, pour indiquer à quel moment l’utilisateur approuve, par rapport à d’autres approbateurs, lorsque vous utilisez l’option **Groupe d’utilisateurs de flux de travail** dans le champ **Type approbateur** de la réponse de flux de travail lié.| 
+   |**Nom d'utilisateur**|Spécifiez l’utilisateur qui participe à un flux de travail.<br /><br /> L'utilisateur doit exister sur la page **Configuration des utilisateurs**. En savoir plus sur [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md).|
+   |**N° séquence**|Spécifiez l'ordre dans lequel l'utilisateur du flux de travail s'engage dans un flux par rapport à d'autres utilisateurs. Ce champ peut être utilisé, par exemple, pour indiquer à quel moment l’utilisateur approuve, par rapport à d’autres approbateurs, lorsque vous utilisez l’option **Groupe d’utilisateurs de flux de travail** dans le champ **Type approbateur** de la réponse de flux de travail lié.|
 
+   > [!NOTE]
+   > En règle générale, les numéros de séquence sont séquentiels pour les utilisateurs d’un groupe d’utilisateurs de flux de travail. Toutefois, plusieurs utilisateurs peuvent avoir le même numéro de séquence. Lorsque tel est le cas, un seul des utilisateurs doit approuver une demande avant que le flux de travail passe à l’étape suivante. Par exemple, si l’utilisateur A et l’utilisateur B sont tous deux numéro deux dans la séquence, le flux de travail passe à l’étape trois lorsque l’utilisateur A ou l’utilisateur B approuve la demande.
 6. Répétez l’étape 5 pour ajouter des utilisateurs de flux de travail dans le groupe d’utilisateurs de flux de travail.  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configuration des utilisateurs des approbations](across-how-to-set-up-approval-users.md)  
 [Configurer les flux de travail approbation](across-set-up-workflows.md)  

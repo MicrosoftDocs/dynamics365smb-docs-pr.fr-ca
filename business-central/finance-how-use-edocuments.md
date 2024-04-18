@@ -1,46 +1,37 @@
 ---
-title: Utiliser des documents électroniques dans les ventes et achats
-description: Découvrez comment utiliser la fonctionnalité de documents électroniques liée aux factures de vente et d’achat.
+title: Utiliser des documents électroniques vente
+description: Découvrez comment utiliser la fonctionnalité de documents électroniques liée aux factures de vente.
 author: altotovi
 ms.topic: conceptual
 ms.devlang: al
-ms.search.keywords: 'electronic document, electronic invoice, e-document, e-invoice, sales, purchase'
-ms.search.form: '42, 43, 51, 6103, 6133, 6121, 9301, 9305, 9308'
-ms.date: 10/03/2023
+ms.search.keywords: 'electronic document, electronic invoice, e-document, e-invoice, sales, deliver'
+ms.search.form: '42, 43, 132, 6103, 6133, 6121, 9301, 9305'
+ms.date: 03/29/2024
 ms.author: altotovi
 ms.service: dynamics-365-business-central
 ---
 
-# Utiliser des documents électroniques dans les ventes et achats
+# Utilisation des documents électroniques dans le processus vente
 
-Vous pouvez utiliser des documents électroniques configurés (documents électroniques) avec les documents de vente et d’achat.
+Vous pouvez utiliser des documents électroniques configurés (documents électroniques) avec les documents de vente.
 
-Vous pouvez utiliser les documents suivants avec la fonctionnalité des documents électroniques :  
+Vous pouvez utiliser les documents vente suivants avec la fonctionnalité des documents électroniques :  
 
-- Ventes : 
-    - Factures vente
-    - Documents de vente
-    - Notes de crédit vente
-    - Factures service
-    - Notes de crédit service
-    - Notes de frais financiers
-    - Relances
-- Achats : 
-    - Factures achat
-    - Bons de commande (créer uniquement un document)
-    - Notes de crédit achat
-    - Feuilles comptabilité
+- Factures vente
+- Documents de vente
+- Notes de crédit vente
+- Factures service
+- Notes de crédit service
+- Notes de frais financiers
+- Relances
 
-> [!NOTE]
-> Actuellement, un bon de commande ne peut être utilisé que lorsque vous créez le document à partir du document électronique de votre fournisseur. Cependant, vous ne pouvez pas mettre à jour le document existant avec les lignes que vous avez obtenues de votre fournisseur.  
-
-## Documents électroniques vente
+## Documents électroniques vente  
 
 Pour créer et envoyer une facture électronique à un client, vous devez créer et reporter la facture vente. Pour en savoir plus sur le processus standard, voir [Facture des ventes](sales-how-invoice-sales.md).
 
 Après avoir reporté le document vente, ouvrez la page **Facture vente reportée** pour accéder à la page **Document électronique** associée.
 
-### Afficher les documents électroniques
+### Afficher les documents électroniques   
 
 Pour afficher les documents électroniques existants, procédez comme suit.
 
@@ -49,7 +40,7 @@ Pour afficher les documents électroniques existants, procédez comme suit.
 3. Le champ **Enregistrement** affiche le numéro de document de la facture vente reportée. Sélectionnez le lien pour ouvrir le document.
 4. Dans le champ **État du document électronique**, vous pouvez afficher l'état en temps réel du document et son emplacement dans le pipeline de processus. Si le document est reporté, l'état est **Traité**.
 
-### Journaux et états des documents électroniques
+### Journaux et états des documents électroniques 
 
 Pour plus de détails sur le niveau d’état de service de votre document électronique, consultez le récapitulatif **État du service du document électronique**. Sur les lignes, le système affiche un ou plusieurs services utilisés par le document. Dans le scénario le plus courant, chaque document utilise un seul service. Cependant, un document peut utiliser plusieurs services.
 
@@ -73,45 +64,6 @@ S’il y a un problème avec le fournisseur de services et que le document ne pe
 
 Une fois le problème résolu, exécutez manuellement les actions **Envoyer le document**. Si vous avez besoin de différentes actions, telles que **Document recréé**, **Annuler le document**, ou **Obtenir l’approbation**, vous pouvez les exécuter.
 
-## Documents électroniques achat
-
-La réception des factures électroniques achat dans Dynamics 365 Business Central peut être effectuée via un traitement en lot ou manuellement.
-
-### Exécuter le traitement en lot
-
-> [!NOTE]
-> Ce traitement en lot est destiné à la collecte automatisée de vos factures entrantes. Cela ne peut fonctionner que dans un pays ou une région où la fonctionnalité existe.
-
-Chaque fois qu’une file d’attente des projets est exécutée, si le service externe reçoit des factures envoyées par votre fournisseur, le système collecte et importe ces factures. Pour terminer le processus, procédez comme suit.
-
-1. Une fois le traitement en lot terminé, les factures récemment importées sont répertoriées sur la page **Documents électroniques**, ainsi que leurs informations détaillées de base.
-2. Pour afficher plus de détails, ouvrez un document électronique spécifique.
-3. S’il n’y a eu aucune erreur ou problème dans le document électronique et dans son mappage, le champ **Enregistrement** affiche le numéro de document de la facture achat créée automatiquement par le système. Sélectionnez le lien pour ouvrir le document. Ce document créé par le système n’est pas le document reporté.
-4. Pour accéder directement au document achat, sélectionnez le champ **Enregistrement**. Après avoir ouvert la page **Facture achat**, vérifiez le document. Ensuite, si tout est correct, reportez le document.
-5. Lorsque vous reportez le document achat, le champ **Enregistrement** du **document électronique** est mis à jour de **Facture** à **Facture achat** et le numéro du document achat reporté est disponible. Vous pouvez sélectionner le numéro pour ouvrir la facture achat reportée.
-
-Les détails des journaux sont les mêmes que ceux du processus de vente des documents électroniques.
-
-Étant donné que les erreurs dans le processus de vente sont principalement liées à la disponibilité du service, le document entrant peut contenir plusieurs raisons. La raison la plus courante d’une erreur est que le système ne peut pas reconnaître les lignes du document électronique que vous avez reçu de votre fournisseur. Il ne peut donc pas saisir de lignes dans votre facture achat.
-
-Il existe deux erreurs courantes :
-
-- Si vous souhaitez utiliser cette ligne spécifique de votre facture fournisseur qui a été directement reportée dans le compte du grand livre (G/L), vous devez avoir correctement configuré la valeur **Texte de mappage**. Pour contourner cette erreur si vous souhaitez utiliser des comptes du grand livre, sélectionnez **Mapper le texte au compte** pour créer un mappage spécifique de la valeur **Texte de mappage** avec la valeur **N° cpte débit** que vous souhaitez utiliser.
-- Si vous souhaitez suivre l’inventaire et utiliser les lignes de votre facture fournisseur pour renseigner les articles sur vos lignes de document, vous devez avoir correctement configuré le **N° référence article** . Pour contourner cette erreur, mappez l’élément externe avec vos numéros d’article à l’aide de la liste de référence d’article. Pour plus d’informations, voir [Utiliser les références article](inventory-how-use-item-cross-refs.md).
-
-Après avoir corrigé les erreurs et les avertissements, vous pouvez spécifier manuellement quand le système doit créer une facture achat en fonction de votre configuration en sélectionnant **Créer un document**.
-
-### Importer manuellement les factures
-
-Pour importer manuellement des documents électroniques externes, procédez comme suit.
-
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Service de document électronique**, puis sélectionnez le lien associé.
-2. Sur la page **Service de document électronique** , sélectionnez le service actif. 
-3. Sélectionnez **Recevoir** et téléchargez le fichier de document électronique que vous avez reçu du fournisseur.
-4. Si un message d’erreur apparaît, ouvrez le document électronique pour résoudre les problèmes.
-5. Lorsque vous avez fini de résoudre les problèmes, dans le groupe **Importer manuellement**, sélectionnez **Créer un document**.
-6. Une fois le document créé dans Business Central, vous pouvez l’afficher comme si vous utilisiez un traitement en lot.
-
 ## Vue d’ensemble des états des documents électroniques
 
 Pour obtenir un meilleur aperçu de tous les documents électroniques de la compagnie, vous pouvez sélectionner le centre de rôles **Comptable** où existent les états des documents électroniques. Vous y trouverez des activités de documents électroniques qui ont les états suivants :
@@ -122,11 +74,6 @@ Pour obtenir un meilleur aperçu de tous les documents électroniques de la comp
     - En cours
     - Erreur
 
-- **Documents électroniques entrants :**
-
-    - Traité
-    - En cours
-    - Erreur
 
 ## Voir aussi .
 

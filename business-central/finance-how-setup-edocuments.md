@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'electronic document, electronic invoice, e-document, e-invoice'
 ms.search.form: '359, 360, 6103, 6133'
-ms.date: 10/05/2023
+ms.date: 03/29/2023
 ms.author: altotovi
 ms.service: dynamics-365-business-central
 ---
@@ -73,13 +73,13 @@ Si vous n’utilisez pas le format **Définition d’échange de données**, vou
 
 ### Types de document pris en charge 
 
-Les types de documents pris en charge sont basés sur le **format de document choisi**. Pour vérifier quels types de documents sont pris en charge, sur la page **Service de documents électroniques** , exécutez l’action **Types de documents pris en charge** . Les **Types de documents sources pris en charge par le service de documents électroniques** s’ouvrent et dans la colonne **Type de document source** , vous pouvez trouver tous les types de documents pris en charge.  
+Les types de documents pris en charge sont basés sur le **format de document choisi**. Pour vérifier quels types de documents sont pris en charge, sur la page **Service de document électronique**, choisissez l’action **Types de documents pris en charge** . Les **Types de documents sources pris en charge par le service de document électronique** s’ouvrent et, dans la colonne **Type de document source**, vous pouvez choisir différents types de documents pour les rendre compatibles avec le format que vous prévoyez d’utiliser. Assurez-vous de ne pas utiliser le type de document si ce document n’est pas sélectionné dans cette page.   
 
 ## Configurer un profil d’envoi de documents
 
-Vous pouvez configurer une méthode préférée d’envoi des documents de vente pour chacun de vos clients. De cette façon, vous n’avez pas besoin de sélectionner une option d’envoi à chaque fois que vous sélectionnez l’action **Reporter et envoyer**. Sur la page **Profils d’envoi de documents**, configurez différents profils d’envoi que vous pouvez sélectionner dans le champ **Profil d’envoi de documents** d’une fiche client. Vous pouvez cocher la case **Par défaut** pour spécifier que le profil d’envoi du document est le profil par défaut pour tous les clients, sauf pour les clients dont le champ **Profil d’envoi de documents** est renseigné avec un autre profil d’envoi.
+Vous pouvez configurer une méthode préférée d’envoi des documents de vente pour chacun de vos clients. De cette façon, vous n’avez pas besoin de choisir une option d’envoi chaque fois que vous choisissez l’action **Reporter et envoyer**. Sur la page **Profils d’envoi de documents**, configurez différents profils d’envoi que vous pouvez sélectionner dans le champ **Profil d’envoi de documents** d’une fiche client. Vous pouvez cocher la case **Par défaut** pour spécifier que le profil d’envoi du document est le profil par défaut pour tous les clients, sauf pour les clients dont le champ **Profil d’envoi de documents** est renseigné avec un autre profil d’envoi.
 
-Cette fonctionnalité permet de mettre en place l’automatisation de la facturation électronique. Lorsque vous sélectionnez l’action **Reporter et envoyer** dans un document vente, la boîte de dialogue **Reporter et envoyer la confirmation** affiche le profil d’envoi utilisé, soit celui configuré pour le client, soit le profil par défaut pour tous les clients.
+Cette fonctionnalité permet de mettre en place l’automatisation de la facturation électronique. Lorsque vous choisissez l’action **Reporter et envoyer** sur un document vente, la boîte de dialogue **Reporter et envoyer la confirmation** affiche le profil d’envoi utilisé, soit celui configuré pour le client, soit le profil par défaut pour tous les clients.
 
 Suivez la procédure pour configurer un profil d’envoi de documents.
 
@@ -104,10 +104,10 @@ Suivez cette procédure pour configurer le flux de travail utilisé dans la fonc
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modèles de flux de travail**, puis sélectionnez le lien associé.
 2. Si vous ne trouvez pas de **Modèles de flux de travail de document électronique** sur la page **Modèles de flux de travail**, sélectionnez **Réinitialiser les modèles Microsoft**. **Modèles de flux de travail de document électronique** devrait alors s’afficher. Fermez la page.
 3. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Flux de travail**, puis choisissez le lien associé.
-4. Exécutez l’action **Créer flux de travail à partir du modèle** pour sélectionner un modèle pour le processus de documents électroniques. Les modèles disponibles sont **Envoyer à un service** et **Envoyer à plusieurs services**.
+4. Choisissez l’action **Créer flux de travail à partir du modèle** pour sélectionner un modèle pour le processus de documents électroniques. Les modèles disponibles sont **Envoyer à un service** et **Envoyer à plusieurs services**.
 5. Sélectionnez **OK** pour terminer la configuration du flux de travail.
 6. Dans le champ **Alors, réponse**, sélectionnez **Envoyer le document électronique à l’aide de la configuration** pour configurer les réponses du flux de travail.
-7. Sélectionnez le service de documents électroniques que vous avez créé en option, sélectionnez **OK**, puis activez le flux de travail.
+7. Sélectionnez le service de documents électroniques que vous avez créé en option, choisissez **OK**, puis activez le flux de travail.
 
 > [!NOTE]
 > Vous pouvez créer votre propre flux de travail pour les documents électroniques sans utiliser de modèles de flux de travail prédéfinis. Si vous disposez de plus de services, vous pouvez utiliser différents flux de travail.
@@ -122,13 +122,28 @@ Les documents électroniques peuvent faire l’objet de différentes législatio
 
 Pour configurer des stratégies de rétention liées aux documents électroniques, procédez comme suit.
 
-1. Sur la page **Services de documents électroniques** , exécutez l’action **Stratégie de rétention**.
+1. Sur la page **Services de document électronique**, choisissez l’action **Stratégie de rétention**.
 2. Une fois l’action terminée, sélectionnez l’une des stratégies de rétention suivantes à configurer :
 
     - Journal de documents électroniques
     - Journal d’intégration des documents électroniques
     - Journal du mappage de document électronique
     - Stockage des données du document électronique
+
+## Données de démonstration des documents électroniques  
+
+> [!NOTE]
+> A partir de Business Central version 24.0, il est possible de paramétrer des données de démonstration pour les E-Documents.
+
+Fournir des moyens plus simples de tester et de démontrer les capacités de **Documents électroniques**, Microsoft a créé un nouveau module de démonstration pour les documents électroniques. Pour activer ce module, suivez les étapes :  
+
+1.  Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **OUtil démo Contoso**, puis cliquez sur le lien associé.  
+2.  Avant d’activer le **Module E-Document Contoso**, en raison des dépendances, vous devez avoir activé les modules suivants : **Module commun** et **Module d’entrepôt**. 
+3.  Après avoir activé ces modules, sélectionnez le **Module Contoso E-Documents**, puis choisissez l’action **Générer** . 
+4.  Procéder comme suit.  
+5.  Fermez la page.   
+
+Une fois que vous avez activé un module, vous aurez créé de nouveaux éléments de démonstration, importé six documents électroniques (basés sur Peppol BIS 3) et déjà configuré le **service de documents électroniques** avec les éléments créés flux de travail.  
 
 ## Voir aussi .
 

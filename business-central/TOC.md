@@ -471,7 +471,9 @@ ms.service: dynamics-365-business-central
 
 ### Rapports financiers (implémentation de déclarations financières et d’indicateurs de performances clés)
 #### [Préparer des rapports financiers](bi-how-work-account-schedule.md)
-#### [Procédure pas-à-pas : utiliser des rapports financiers pour créer des prévisions de la trésorerie  ](walkthrough-making-cash-flow-forecasts-by-using-account-schedules.md)
+#### [Définitions de ligne dans les rapports financiers](bi-row-definitions.md)
+#### [Définitions de colonne dans les rapports financiers](bi-column-definitions.md)
+#### [Procédure pas-à-pas : utiliser des rapports financiers pour créer des prévisions de la trésorerie](walkthrough-making-cash-flow-forecasts-by-using-account-schedules.md)
 #### [Configurer et publier un service web d’indicateurs de performances clés sur la base de rapports financiers](bi-how-to-set-up-and-publish-kpi-web-services-based-on-account-schedules.md)
 #### [Analyse des données avec les comptes statistiques](bi-use-statistical-accounts.md)
 #### [Analyser des données par dimensions](bi-how-analyze-data-dimension.md)
@@ -1049,6 +1051,7 @@ ms.service: dynamics-365-business-central
 
 ### Islande
 #### [Fonctionnalité locale dans la version islandaise](LocalFunctionality/Iceland/iceland-local-functionality.md)
+#### [Configuration de l’application principale W1 pour l’Islande](LocalFunctionality/Iceland/iceland-global-core-app.md)
 #### TVA
 ##### [Impression des informations de synthèse sur la TVA sur les documents](LocalFunctionality/Iceland/how-to-print-vat-summary-information-on-documents.md)  
 ##### [Sortie de données spéciales et rapports pour l’administration fiscale](LocalFunctionality/Iceland/special-data-output-and-reports-for-the-tax-authority.md)
@@ -1057,6 +1060,7 @@ ms.service: dynamics-365-business-central
 #### Général  
 ##### [Mappage des numéros de l’IRS avec le plan comptable](LocalFunctionality/Iceland/how-to-map-irs-numbers-to-chart-of-accounts.md)  
 ##### [Supprimer des factures et notes de crédit reportées](LocalFunctionality/Iceland/deleting-posted-invoices-and-credit-memos.md)  
+##### [Numéro d’enregistrement dans la localisation islandaise](LocalFunctionality/Iceland/use-registration-no.md)
 
 ### Inde
 #### [Vue d’ensemble](LocalFunctionality/India/india-local-functionality.md)
