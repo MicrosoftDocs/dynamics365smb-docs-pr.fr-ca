@@ -573,6 +573,7 @@ ms.service: dynamics-365-business-central
 ### [Familiarisation avec les méthodes TEC](projects-understanding-wip.md)
 ### [Surveillance de la progression et des performances du projet](projects-how-monitor-progress-performance.md)
 ### [Facturation des projets](projects-how-invoice-jobs.md)
+### [Assemblage au projet](projects-assemble-to-project.md)
 
 ## Immobilisations
 ### [Vue d’ensemble des immobilisations](fa-manage.md)
@@ -2095,7 +2096,7 @@ ms.service: dynamics-365-business-central
 ## Conversation instantanée avec Copilot (version préliminaire)
 ### [Conversation instantanée avec Copilot](chat-with-copilot.md?toc=/dynamics365/business-central/toc.json)
 ### [FAQ sur la conversation instantanée avec Copilot](chat-with-copilot-faq.md?toc=/dynamics365/business-central/toc.json)
-### [FAQ sur l’IA responsable pour la discussion instantanée avec Copilot](faqs-chat-with-copilot.md?toc=/dynamics365/business-central/toc.json)
+### [FAQ sur l’IA responsable pour la conversation instantanée avec Copilot](faqs-chat-with-copilot.md?toc=/dynamics365/business-central/toc.json)
 ## Suggestions de texte marketing
 ### [Vue d’ensemble des suggestions de texte marketing](ai-overview.md)
 ### [Création de texte marketing avec Copilot](item-marketing-text.md)

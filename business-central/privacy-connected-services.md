@@ -5,13 +5,13 @@ author: jswymer
 ms.topic: overview
 ms.service: dynamics-365-business-central
 ms.search.keywords: 'privacy, trial, Microsoft services'
-ms.date: 12/12/2023
+ms.date: 04/14/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.collection:
   - bap-ai-copilot
 ---
-# <a name="trial-features-that-connect-to-other-microsoft-services"></a>Fonctionnalités d’évaluation qui se connectent à d’autres services Microsoft
+# Fonctionnalités d’évaluation qui se connectent à d’autres services Microsoft 
 
 [!INCLUDE[prod_long](includes/prod_long.md)] est une solution complète de gestion d’entreprise profondément intégrée aux applications de productivité Microsoft 365 et à Power Platform. Votre version d’évaluation gratuite de Business Central peut se connecter à de nombreux services Microsoft différents que vous devez d’abord configurer et activer. Pour tirer le meilleur parti de votre évaluation gratuite, certaines de ces fonctionnalités ont été automatiquement activées pour vous. Même si la connexion de [!INCLUDE[prod_short](includes/prod_short.md)] est activée, ces services ne sont pas inclus dans votre évaluation et doivent être achetés séparément, sauf si vous les avez déjà.
 
@@ -22,7 +22,7 @@ Le tableau suivant indique les connexions aux services Microsoft qui sont automa
 |Microsoft Teams|Oui|N°|Action **Partager avec Teams** sur la fiche **Article** |[Gestion de l’intégration de Teams avec Business Central](admin-teams-integration.md)|  
 |Microsoft OneDrive Entreprise|Oui|N°|**Ouvrir dans l’action OneDrive** sur les pièces jointes **Article** |[Gestion de l’intégration de OneDrive avec Business Central](admin-onedrive-integration.md#configure-onedrive-using-onedrive-setup)|  
 | Microsoft Power Automate |Oui|N°|Actions **Automatiser** sur fiche **Article** |[Configuration de l’intégration de Power Automate](/dynamics365/business-central/dev-itpro/powerplatform/power-automate-setup)|
-| Microsoft Azure OpenAI Automate |Oui |N°|**Copilote (version préliminaire)** |[Configuration du texte marketing article optimisé par l’IA avec Copilot](enable-ai.md)|
+| Microsoft Azure OpenAI Service |Oui |N°|**Copilot** |[Configuration du texte marketing article optimisé par l’IA avec Copilot](enable-ai.md)|
 
 > [!NOTE]
 > En utilisant les fonctionnalités qui se connectent à ces services : 

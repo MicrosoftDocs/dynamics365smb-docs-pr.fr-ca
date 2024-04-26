@@ -9,7 +9,7 @@ metadata:
   ms.service: dynamics-365-business-central
   author: jswymer
   ms.author: jswymer
-  ms.date: 06/16/2023
+  ms.date: 04/11/2024
   hide_bc: true
 highlightedContent:
   items:
@@ -71,6 +71,14 @@ additionalContent:
               url: /dynamics365/business-central/across-onedrive-overview
     - title: Administrer et développer
       items:
+        - title: Fonctionnalités de Copilot et d’IA
+          links:
+            - text: Configuration des fonctionnalités de Copilot et d’IA
+              url: /dynamics365/business-central/enable-ai
+            - text: Développer Copilot dans Business Central
+              url: /dynamics365/business-central/dev-itpro/developer/ai-integration-landing-page
+            - text: Fonctionnalités et FAQ sur l’IA responsable
+              url: /dynamics365/business-central/responsible-ai-overview
         - title: Gérer l’accès utilisateur
           links:
             - text: Créer des utilisateurs
@@ -133,6 +141,20 @@ additionalContent:
               url: /dynamics365/business-central/dev-itpro/api-reference/v2.0/
     - title: Soyez productif
       items:
+        - title: Copilot
+          links:
+            - text: Analyse des données de liste
+              url: /dynamics365/business-central/analysis-assist
+            - text: Conversation instantanée avec Copilot
+              url: /dynamics365/business-central/chat-with-copilot
+            - text: Suggestions de texte marketing
+              url: /dynamics365/business-central/ai-overview
+            - text: Mise en correspondance des documents électroniques
+              url: /dynamics365/business-central/map-edocuments-with-copilot
+            - text: Rapprochement des comptes bancaires
+              url: /dynamics365/business-central/bank-reconciliation-with-copilot
+            - text: Suggestions de lignes
+              url: /dynamics365/business-central/sales-suggest-sales-lines-with-copilot
         - title: Paramètres d’espace de travail
           links:
             - text: 'Langue, région, horaires de travail, fuseau horaire, etc.'
@@ -147,45 +169,45 @@ additionalContent:
           links:
             - text: Vue d’ensemble
               url: /dynamics365/business-central/across-share-data-features
-            - text: Partage des données dans les chats et les canaux Teams
+            - text: Partager des données dans les chats et les canaux Teams
               url: /dynamics365/business-central/across-teams-overview
-            - text: Partage des fichiers dans OneDrive
+            - text: Partager des fichiers dans OneDrive
               url: /dynamics365/business-central/across-share-onedrive
             - text: Collaboration dans Excel
               url: /dynamics365/business-central/across-work-with-excel
-        - title: 'Business Intelligence, rapports et analyse des données'
+        - title: 'BI, création de rapports et analyse de données'
           links:
             - text: Vue d’ensemble
               url: /dynamics365/business-central/reports-bi-reporting
-            - text: 'Exécution, planification et impression des rapports'
+            - text: 'Exécuter, planifier et imprimer des rapports'
               url: /dynamics365/business-central/ui-work-report
             - text: Utilisation des rapports Power BI dans Business Central
               url: /dynamics365/business-central/across-working-with-powerbi
             - text: Analyse des données de liste avec le mode d’analyse
               url: /dynamics365/business-central/analysis-mode
-            - text: Analyse des données du rapport avec Excel
+            - text: Analyser des données de rapport avec Excel
               url: /dynamics365/business-central/report-analyze-excel
-        - title: Fonctionnalités marché
+    - title: Faites des affaires
+      items:
+        - title: Général
           links:
-            - text: Feuilles comptabilité
+            - text: Journaux généraux
               url: /dynamics365/business-central/ui-work-general-journals
-            - text: Report des documents et des journaux
+            - text: Reporter des documents et des journaux
               url: /dynamics365/business-central/ui-post-documents-journals
-            - text: Files d’attente des travaux
+            - text: Files d’attente des projets
               url: /dynamics365/business-central/admin-job-queues-schedule-tasks
             - text: Documents entrants
               url: /dynamics365/business-central/across-income-documents
-    - title: Faites des affaires
-      items:
         - title: Finance
           links:
             - text: Vue d’ensemble
               url: /dynamics365/business-central/finance
             - text: Rapports financiers
               url: /dynamics365/business-central/finance-reports
-            - text: Gestion des créances
+            - text: Gestion des clients
               url: /dynamics365/business-central/receivables-manage-receivables
-            - text: Gestion des dettes
+            - text: Gestion des fournisseurs
               url: /dynamics365/business-central/payables-manage-payables
             - text: Rapprochement des comptes bancaires
               url: /dynamics365/business-central/bank-manage-bank-accounts

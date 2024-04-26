@@ -36,10 +36,10 @@ Pour plus d’informations, voir [Accès administrateur délégué à Business C
 
 |Pour  |Voir  |
 |---------|---------|
-|Pour faciliter la gestion des autorisations pour plusieurs utilisateurs, vous pouvez les organiser en groupes de sécurité, puis affecter ou modifier un ensemble d’autorisations pour plusieurs utilisateurs en une seule action.| [Pour gérer les autorisations via des groupes d’utilisateurs](#to-manage-permissions-through-user-groups) |
-|Pour gérer des ensembles d’autorisations pour des utilisateurs spécifiques | [Pour affecter des ensembles d’autorisations à des utilisateurs](#to-assign-permission-sets-to-users) |
-|Pour savoir comment définir un ensemble d’autorisations|[Pour créer un ensemble d’autorisations](#to-create-a-permission-set)|
-|Pour afficher ou résoudre les autorisations d’un utilisateur|[Pour afficher l’aperçu des autorisations d’un utilisateur](#to-get-an-overview-of-a-users-permissions)|
+|Pour faciliter la gestion des autorisations pour plusieurs utilisateurs, vous pouvez les organiser en groupes de sécurité, puis affecter ou modifier un ensemble d’autorisations pour plusieurs utilisateurs en une seule action.| [Gérer les autorisations via des groupes d’utilisateurs](#manage-permissions-through-user-groups) |
+|Pour gérer des ensembles d’autorisations pour des utilisateurs spécifiques | [Affecter des ensembles d’autorisations à des utilisateurs](#assign-permission-sets-to-users) |
+|Pour savoir comment définir un ensemble d’autorisations|[Créer un ensemble d’autorisations](#create-a-permission-set)|
+|Pour afficher ou résoudre les autorisations d’un utilisateur|[Obtenir l’aperçu des autorisations d’un utilisateur](#get-an-overview-of-a-users-permissions)|
 |Pour en savoir plus sur la sécurité au niveau des enregistrements|[Filtres de sécurité : pour limiter l’accès d’un utilisateur à des enregistrements spécifiques dans une table](#security-filters-limit-a-users-access-to-specific-records-in-a-table)|
 
 > [!NOTE]
@@ -47,7 +47,7 @@ Pour plus d’informations, voir [Accès administrateur délégué à Business C
 >
 > Vous pouvez également définir les fonctionnalités disponibles aux utilisateurs dans l’interface utilisateur et la manière dont ils interagissent avec elles par le biais de pages. Pour ce faire, vous devez utiliser des profils, que vous attribuez à différents types d'utilisateurs en fonction de leur poste ou service. Pour en savoir plus, reportez-vous à [Gérer les profils](admin-users-profiles-roles.md) et [Personnalisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-customizing-overview.md).
 
-## Pour créer un ensemble d’autorisations
+## Créer un ensemble d’autorisations
 
 > [!NOTE]
 > Dans la 2e vague de lancement 2022, nous avons simplifié l’ajout d’autorisations aux ensembles d’autorisations. Plutôt que d’ajouter des autorisations individuellement, vous pouvez ajouter des ensembles d’autorisations entiers. Si nécessaire, vous pouvez ensuite exclure des autorisations individuelles. Pour en savoir plus, voir [Pour ajouter d’autres ensembles d’autorisations](#to-add-other-permission-sets). Pour rendre cela possible, nous avons remplacé la page Ensemble d’autorisations par une nouvelle. Les principales différences sont les nouveaux volets **Ensembles d’autorisations** et **Résultats**, et le récapitulatif **Autorisations incluses**. Pour continuer à utiliser la page Autorisations remplacée, dans la page **Ensembles d’autorisations**, choisissez l’action **Autorisations (héritées)**.
@@ -116,7 +116,7 @@ L’exclusion d’un ensemble d’autorisations exclut toutes les autorisations 
 2. Calculer la liste complète des autorisations exclues
 3. Supprimer les autorisations exclues de la liste des autorisations incluses (la suppression d’une autorisation indirecte est identique à Réduire à indirecte)
 
-## Pour copier un ensemble d'autorisations
+## Copier un ensemble d’autorisations
 
 Créez un nouvel ensemble d’autorisations en en copiant un autre. Le nouvel ensemble comprendra toutes les autorisations et tous les ensembles d’autorisations de l’ensemble que vous avez copié. La manière dont les autorisations et les ensembles d’autorisations sont organisés dans le nouvel ensemble d’autorisations diffère selon votre choix dans le champ **Copier l’opération**. Le tableau suivant décrit les options.
 
@@ -134,7 +134,7 @@ Créez un nouvel ensemble d’autorisations en en copiant un autre. Le nouvel en
 > [!NOTE]
 > La notification exige que la notification **L’ensemble d’autorisations système d’origine a été modifié** est activée sur la page **Mes notifications**.
 
-## Pour créer ou modifier des autorisations en enregistrant vos actions
+## Créer ou modifier des autorisations en enregistrant vos actions
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Ensembles d’autorisations**, puis choisissez le lien associé.
 
@@ -171,11 +171,11 @@ Dans les environnements à plusieurs abonnés, un ensemble d’autorisations est
 
 Les ensembles d'autorisations sont importés.
 
-## Pour supprimer des autorisations obsolètes de tous les ensembles d'autorisations
+## Supprimer des autorisations obsolètes de tous les ensembles d’autorisations
 
 Dans la page **Ensemble d'autorisations**, choisissez l'option **Supprimer les autorisations obsolètes**.
 
-## Pour configurer des contraintes de temps pour les utilisateurs
+## Configurer des contraintes de temps pour les utilisateurs
 
 Les administrateurs peuvent définir des périodes pendant lesquelles certains utilisateurs peuvent reporter. Les administrateurs peuvent également spécifier si le système enregistre la durée de connexion des utilisateurs. De même, les administrateurs peuvent affecter des centres de gestion aux utilisateurs. Pour plus d'informations, voir [Utiliser les centres de gestion](inventory-responsibility-centers.md).
 
@@ -184,7 +184,15 @@ Les administrateurs peuvent définir des périodes pendant lesquelles certains u
 3. Dans le champ **ID utilisateur**, entrez l'ID d'un utilisateur, ou cliquez sur le champ pour visualiser tous les utilisateurs Windows actuels dans le système.
 4. Renseignez les champs selon vos besoins.
 
-## Pour gérer les autorisations via des groupes d'utilisateurs
+## Contrôler l’accès à des compagnies spécifiques
+
+Lorsque vous avez plusieurs compagnies dans Business Central, la gestion des autorisations entre les compagnies nécessite une attention particulière. Vous ne souhaitez peut-être pas que les utilisateurs disposent de droits d’accès identiques à toutes les compagnies. Au lieu de cela, vous devrez peut-être accorder des autorisations aux utilisateurs en fonction de leur affiliation à la compagnie. Pour prendre en charge ce scénario, lorsque vous attribuez des ensembles d’autorisations à des utilisateurs individuels ou à des groupes de sécurité, vous avez la possibilité de sélectionner une compagnie spécifique à laquelle l’ensemble d’autorisations s’applique. La compagnie n’est pas explicitement spécifiée dans l’ensemble d’autorisations, mais plutôt lorsque l’ensemble d’autorisations est attribué à l’utilisateur ou au groupe de sécurité.
+
+Si vous ne spécifiez pas la compagnie lors de l’attribution d’un ensemble d’autorisations, l’ensemble d’autorisations s’applique alors à toutes les compagnies. Si vous souhaitez qu’un ensemble d’autorisations s’applique à plusieurs compagnies, mais pas à toutes les compagnies, ajoutez l’ensemble d’autorisations spécifiquement pour chaque compagnie séparément.
+
+En savoir plus sur [Affectation des ensemble d'autorisations aux utilisateurs et aux groupes](#assign-permission-sets-to-users) ou [affectation autorisations à un groupe de sécurité](ui-security-groups.md#assign-permissions-to-a-security-group).
+
+## Gérer les autorisations via des groupes d’utilisateurs
 
 Les groupes d’utilisateurs vous aident à gérer les ensembles d’autorisations dans toute l’entreprise. [!INCLUDE [prod_short](includes/prod_short.md)] en ligne inclut des groupes d’utilisateurs par défaut qui sont attribués automatiquement aux utilisateurs en fonction de leur licence. Vous pouvez ajouter manuellement des utilisateurs à un groupe d’utilisateurs et vous pouvez créer de nouveaux groupes d’utilisateurs en tant que copies de groupes existants.  
 
@@ -227,7 +235,7 @@ Le nouveau groupe d'utilisateurs est ajouté à la page **Groupes d'utilisateurs
 3. Choisissez l'action **Ensemble d’autorisations utilisateur** pour ouvrir la page **Ensembles d’autorisations utilisateur**.
 4. Sur la page **Ensembles d'autorisations utilisateur**, renseignez les champs, le cas échéant, sur une nouvelle ligne.
 
-### Pour affecter un ensemble d'autorisations sur la page **Ensemble d'autorisations par groupe d'utilisateurs**
+### Pour affecter un ensemble d'autorisations sur la page Ensemble d'autorisations par groupe d'utilisateurs
 
 La procédure suivante explique comment affecter des ensembles d'autorisations à un groupe d'utilisateurs sur la page **Ensemble d'autorisations par groupe d'utilisateurs**.
 
@@ -238,11 +246,11 @@ La procédure suivante explique comment affecter des ensembles d'autorisations �
 
 Vous pouvez aussi affecter des ensembles d’autorisations directement à un utilisateur.
 
-## Pour affecter des ensembles d'autorisations à des utilisateurs
+## Affecter des ensembles d’autorisations à des utilisateurs
 
 Un ensemble d'autorisations est une collection d'autorisations pour des objets de base de données spécifiques. Tous les utilisateurs doivent être affectés à une ou plusieurs séries d’autorisations avant de pouvoir accéder à [!INCLUDE[prod_short](includes/prod_short.md)].  
 
-Une solution [!INCLUDE[prod_short](includes/prod_short.md)] contient des ensembles d’autorisations prédéfinis qui sont ajoutés par Microsoft ou par votre fournisseur de solutions. Vous pouvez également ajouter de nouveaux ensembles d'autorisations personnalisés pour répondre aux besoins de votre organisation. Pour plus d’informations, voir la section [Pour créer un ensemble d’autorisations](#to-create-a-permission-set).
+Une solution [!INCLUDE[prod_short](includes/prod_short.md)] contient des ensembles d’autorisations prédéfinis qui sont ajoutés par Microsoft ou par votre fournisseur de solutions. Vous pouvez également ajouter de nouveaux ensembles d'autorisations personnalisés pour répondre aux besoins de votre organisation. Pour plus d’informations, voir la section [Créer un ensemble d’autorisations](#create-a-permission-set).
 
 > [!NOTE]
 > Si vous ne souhaitez pas limiter l'accès d'un utilisateur plus que ce qui est déjà défini par la licence, vous pouvez attribuer à l'utilisateur un ensemble d'autorisations spéciales appelé SUPER. Cet ensemble d'autorisations garantit que l'utilisateur peut accéder à tous les objets spécifiés dans la licence.
@@ -257,22 +265,26 @@ Vous pouvez affecter des ensembles d'autorisations aux utilisateurs de deux mani
 ### Pour affecter un ensemble d'autorisations sur une fiche utilisateur
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.
-2. Sélectionnez l'utilisateur auquel affecter des autorisations.
-Tous les ensembles d’autorisations qui sont affectés à l’utilisateur sont affichés dans le récapitulatif **Ensemble d’autorisations utilisateur**.
-3. Sélectionnez l'option **Modifier** pour ouvrir la page **Fiche utilisateur**.
-4. Sur le raccourci **Ensembles d'autorisations utilisateur**, renseignez les champs, le cas échéant sur une nouvelle ligne. Pour plus d’informations, voir [Pour créer ou modifier des ensembles d’autorisations](ui-define-granular-permissions.md#to-create-a-permission-set).
+1. Sélectionnez l'utilisateur auquel affecter des autorisations.
 
-   Utilisez le champ **Compagnie** pour affecter l’ensemble d’autorisations définie à une compagnie spécifique. Si vous laissez le champ vide, cela s’applique à toutes les compagnies.
+   Tous les ensembles d’autorisations qui sont affectés à l’utilisateur sont affichés dans le récapitulatif **Ensemble d’autorisations utilisateur**.
+1. Sélectionnez l'option **Modifier** pour ouvrir la page **Fiche utilisateur**.
+1. Sur le raccourci **Ensembles d'autorisations utilisateur**, renseignez les champs, le cas échéant sur une nouvelle ligne. Pour plus d’informations, voir [Créer ou modifier des ensembles d’autorisations](ui-define-granular-permissions.md#create-a-permission-set).
+
+   Définissez le champ **Compagnie** pour appliquer l’ensemble d’autorisations à une compagnie spécifique. Si vous souhaitez que l’ensemble d’autorisations s’applique à toutes les compagnies, laissez le champ **Compagnie** vide. [En savoir plus](#control-access-to-specific-companies).
 
 ## Pour affecter un ensemble d'autorisations sur la page Ensemble d'autorisations par utilisateur
 
+Ce méthode facilite l'affectation des différents ensembles d'autorisations à plusieurs utilisateurs. 
+
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.
-2. Sur la page **Utilisateurs**, sélectionnez l’action **Ensemble d’autorisations par utilisateur**.
-3. Sur la page **Ensemble d’autorisations par utilisateur**, activez la case à cocher **[nom d’utilisateur]** sur une ligne pour l’ensemble d’autorisations approprié pour affecter l’ensemble à l’utilisateur.
+1. Sur la page **Utilisateurs**, sélectionnez l’action **Ensemble d’autorisations par utilisateur**.
+1. Définissez le champ **Compagnie** pour appliquer l’ensembles d’autorisations à une compagnie spécifique uniquement. Si vous souhaitez que l’ensemble d’autorisations s’applique à toutes les compagnies, laissez le champ **Nom de la compagnie** vide. [En savoir plus](#control-access-to-specific-companies).
+1. Sur la page **Ensemble d’autorisations par utilisateur**, activez la case à cocher **[nom d’utilisateur]** sur une ligne pour l’ensemble d’autorisations approprié pour affecter l’ensemble à l’utilisateur.
 
     Activez la case à cocher **Tous les utilisateurs** pour affecter l’ensemble d’autorisations à tous les utilisateurs.
 
-## Pour afficher l'aperçu des autorisations d'un utilisateur
+## Obtenir l’aperçu des autorisations d’un utilisateur
 
 Vous ne pouvez afficher les autorisations effectives des autres utilisateurs que si les autorisations SUPER ou SECURITY vous sont attribuées. 
 
@@ -293,7 +305,7 @@ La page **Autorisations effectives** offre des informations supplémentaires sur
     >
     > Les lignes du droit source proviennent de la licence d'abonnement. Les valeurs d’autorisation du droit sont prioritaires sur les valeurs des autres ensembles d’autorisations si elles ont un rang supérieur. Une valeur dans un ensemble d'autorisations de non droit qui a un rang supérieur à la valeur associée dans le droit sera entourée de parenthèses pour indiquer qu'elle n'est pas effective car elle est outrepassée par le droit.
     >
-    > Pour une explication sur le classement, voir [Pour créer un ensemble d’autorisations](ui-define-granular-permissions.md#to-create-a-permission-set).  
+    > Pour une explication sur le classement, voir [créer un ensemble d’autorisations](ui-define-granular-permissions.md#create-a-permission-set).  
 
 4. Pour modifier un ensemble d'autorisations, dans la section **Par ensemble d'autorisations**, sur la ligne d'un ensemble d'autorisations approprié de type **Défini par l'utilisateur**, choisissez l'un des cinq champs de type d'accès et sélectionnez une valeur différente.
 
@@ -306,7 +318,8 @@ La page **Autorisations effectives** offre des informations supplémentaires sur
 
 Pour la sécurité au niveau des enregistrements dans [!INCLUDE[prod_short](includes/prod_short.md)], vous utilisez des filtres de sécurité pour limiter l’accès d’un l’utilisateur aux données dans une table. Vous créez des filtres de sécurité sur les données de la table. Un filtre de sécurité décrit un ensemble d'enregistrements dans une table auxquels un utilisateur a l'autorisation d'accéder. Vous pouvez indiquer, par exemple, qu'un utilisateur peut uniquement lire les enregistrements qui contiennent des informations relatives à un client particulier. Ainsi, l’utilisateur ne peut pas accéder aux enregistrements qui contiennent des informations sur d’autres clients. Pour plus d’informations, voir [Utilisation des filtres de sécurité](/dynamics365/business-central/dev-itpro/security/security-filters) dans le contenu d’administration.
 
-## Affichage de la télémétrie des modifications d’autorisation
+
+## Afficher de la télémétrie des modifications d’autorisation
 
 Vous pouvez configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour envoyer les modifications apportées à l’autorisation à une ressource Application Insights dans Microsoft Azure. Ensuite, à l’aide d’Azure Monitor, vous créez des rapports et configurez des alertes sur les données collectées. Pour plus d’informations, voir les articles suivants dans l’aide pour les développeurs et les administrateurs [!INCLUDE[prod_short](includes/prod_short.md)] :
 

@@ -103,7 +103,7 @@ Invite : `How does I save my filterrings to do them later?`
 
 Dans cet exemple, vous demandez à Copilot des conseils sur la façon d’effectuer certaines tâches dans Business Central. Copilot peut généralement comprendre l’intention de votre question, même s’il y a quelques erreurs grammaticales, fautes d’orthographe ou abréviations.
 
-Invite : `Provide feedback on answers`
+## Fournir des commentaires sur les réponses
 
 Vous pouvez évaluer les réponses que vous obtenez de Copilot en utilisant le bouton J’aime (pouce levé) pour une bonne note ou le bouton Je n’aime pas (pouce vers le bas) pour une mauvaise note. Lorsque vous sélectionnez le bouton Je n’aime pas, vous pouvez choisir une raison, notamment inexacte, inappropriée ou autre. Ces informations peuvent nous aider à améliorer les suggestions.
 

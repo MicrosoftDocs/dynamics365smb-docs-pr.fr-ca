@@ -127,11 +127,42 @@ Vous pouvez utiliser un rapport financier pour créer un relevé comparant les c
 
 Vous pouvez maintenant copier et coller votre budget dans un classeur.  
 
+## Intégrer les rapports financiers avec Excel
+
+Vous pouvez intégrer un rapport financier avec un modèle de classeur Excel, ajuster la mise en page en fonction de vos besoins, puis mettre à jour le modèle Excel avec les données de [!INCLUDE[prod_short](includes/prod_short.md)]. Par exemple, cette intégration facilite la génération de vos états financiers mensuels et annuels dans un format qui vous convient.
+
+### Configurer l’intégration Excel pour un rapport financier (créer un modèle Excel)
+
+Pour configurer l’intégration Excel pour un rapport financier, suivez ces étapes pour créer un modèle Excel pour un rapport.
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me 4.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rapports financiers**, puis choisissez le lien associé.
+1. Sur la page **Rapports financiers**, sélectionnez le rapport financier pour activer Excel, puis sélectionnez l’action **Exporter vers Excel**.
+1. Choisissez l’action **Création document**. Cette action télécharge un modèle de classeur Excel avec une seule feuille de calcul nommée d’après le nom du rapport.
+1. Copiez la feuille de calcul et renommez-la en **Données**.
+1. Renommez la feuille de calcul du rapport à votre guise.
+1. Dans la feuille de calcul du rapport, marquez toutes les cellules qui affichent les données du rapport financier (y compris les en-têtes de colonnes et de lignes). Sur le ruban **Accueil** , recherchez le menu **Numéro** et choisissez **Général** . comme format.
+1. Choisissez la cellule la plus à gauche de la zone contenant les données du rapport financier et définissez une référence à la cellule équivalente dans la feuille de calcul Données. Faites glisser la formule vers la droite pour l’étendre à toutes les cellules de la première ligne, puis faites glisser la ligne vers le bas pour couvrir toutes les lignes du rapport financier.
+1. Masquez la feuille de calcul **Données**.
+1. Formatez la feuille de calcul du rapport en fonction de vos besoins.
+1. Enregistrez le classeur dans OneDrive ou dans un endroit similaire où le fichier est sauvegardé et versionné.
+1. Fermez le classeur.
+
+### Exécuter un rapport financier avec un modèle Excel
+
+Pour exécuter un rapport financier avec un modèle Excel, procédez comme suit :
+
+1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 4.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rapports financiers**, puis choisissez le lien associé.
+1. Sur la page **Rapports financiers**, sélectionnez le rapport financier pour activer Excel, puis sélectionnez l’action **Exporter vers Excel**.
+1. Choisissez l’action **Mettre à jour la copie du document existant**.
+1. Téléchargez votre modèle Excel (fermez le classeur Excel avant de le télécharger).
+1. Sur la page **Recherche de nom/valeur** , choisissez la feuille de calcul Données.
+1. [!INCLUDE[prod_short](includes/prod_short.md)] exécute le rapport financier et fusionne les données résultantes avec votre modèle Excel.
+
 ## Imprimer et enregistrer des rapports financiers
 
 Vous pouvez imprimer des rapports financiers à l’aide des services d’impression de votre appareil. [!INCLUDE[prod_short](includes/prod_short.md)] offre également des options pour enregistrer les rapports sous forme de classeurs Excel, de documents Word, de fichiers PDF et XML.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me 4.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rapports financiers**, puis choisissez le lien associé.
+1. Sélectionnez l’![icône en forme d’ampoule qui ouvre la fonction Tell Me 4.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rapports financiers**, puis choisissez le lien associé.
 1. Sur la page **Rapports financiers**, sélectionnez le rapport à imprimer, puis sélectionnez l’action **Imprimer**.
 1. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 1. Dans le champ **Imprimante**, sélectionnez l’appareil auquel le rapport est envoyé.
@@ -147,6 +178,7 @@ Vous pouvez enregistrer un rapport financier dans des formats de fichier tels qu
 1. Définissez le rapport en conséquence, puis choisissez l’action **Envoyer à**.
 1. Sélectionnez le format de fichier ou l’action **Programmer**, puis choisissez **OK**.
 1. Pour générer un rapport financier programmé ou récurrent, remplissez les champs. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)].<br><br>Pour les rapports financiers récurrents, définissez les champs **Date/heure de début au plus tôt** et **Date/heure d’expiration** avec la première et la dernière date, respectivement, pour générer le rapport financier. Sélectionnez également les jours où le rapport est généré en définissant le champ **Formule de la date de la prochaine exécution** en suivant le format expliqué dans la section [Utiliser des formules de date](ui-enter-date-ranges.md#use-date-formulas).
+
 
 ## Meilleures pratiques pour utiliser les définitions de rapports financiers
 
@@ -165,7 +197,7 @@ Vous pouvez importer et exporter des définition de rapport financiers comme des
 
 Pour importer ou exporter des définitions de rapports financiers, procédez comme suit :
 
-1. Sélectionnez l’![icône en forme d’ampoule qui ouvre la fonction Tell Me 4.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rapports financiers**, puis choisissez le lien associé.
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me 4.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rapports financiers**, puis choisissez le lien associé.
 1. Choisissez le rapport financier, puis sélectionnez l’action **Importer le rapport financier** ou **Exporter le rapport financier**, selon ce que vous voulez faire.
 
 Pour en savoir plus sur l’importation ou l’exportation de définitions de lignes ou de colonnes de rapports financiers, consultez les articles suivants : 
