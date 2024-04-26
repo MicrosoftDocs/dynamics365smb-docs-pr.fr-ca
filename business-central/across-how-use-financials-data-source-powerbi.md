@@ -148,7 +148,7 @@ Il existe plusieurs façons de transmettre des rapports à vos collègues et à 
 
 ## <a name="fixing-problems"></a>Résolution des problèmes
 
-### <a name="cannot-insert-a-record-current-connection-intent-is-read-only-error-connecting-to-custom-api-page"></a>« Impossible d’insérer un enregistrement. L’intention de connexion actuelle est en lecture seule. » erreur de connexion à la page API personnalisée
+### <a name="cant-insert-a-record-current-connection-intent-is-read-only-error-connecting-to-custom-api-page"></a>« Impossible d’insérer un enregistrement. L’intention de connexion actuelle est en lecture seule. » erreur de connexion à la page API personnalisée
 
 > **S’APPLIQUE À :** Business Central Online
 
