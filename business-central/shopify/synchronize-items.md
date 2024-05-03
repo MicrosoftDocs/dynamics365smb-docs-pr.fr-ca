@@ -327,7 +327,7 @@ Du point de vue [!INCLUDE[prod_short](../includes/prod_short.md)] lorsque vous c
 * Utilisez le bouton **Emplacement du produit par défaut** pour spécifier si cet article sera traité par Shopify exécution ou par 3PL. Il existe toujours un **service de traitement des commandes Business Central**, mais il peut y avoir davantage de services de traitement des commandes si davantage d’applications sont installées. Vous pouvez activer l’ **emplacement par défaut du produit** uniquement dans un seul enregistrement si vous souhaitez utiliser le service de traitement des commandes. 
 * Utilisez le bouton **Emplacement du produit par défaut** pour spécifier les emplacements que vous souhaitez utiliser pour suivre l’inventaire. Vous pouvez activer l’ **emplacement par défaut du produit** pour plusieurs emplacements où **le service de traitement des commandes** est désactivé. Notez que l’inventaire sera toujours suivi pour l’emplacement principal. 
  
-#### <a name="what-is-the-difference"></a>Quelle est la différence ?
+#### <a name="whats-the-difference"></a>Quelle est la différence ?
 
 Shopify l’accomplissement est utile lors de l’utilisation Shopify PDV et il existe plusieurs magasins physiques. Vous voulez que les employés du magasin physique connaissent leur inventaire actuel. Dans ce cas, vous créez plusieurs emplacements dans Shopify, plusieurs emplacements dans [!INCLUDE[prod_short](../includes/prod_short.md)], Activer **Emplacement du produit par défaut** pour tous ces endroits.  
 

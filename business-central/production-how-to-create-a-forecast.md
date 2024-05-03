@@ -68,7 +68,7 @@ Ensuite, vous créez un document de vente avec une quantité de 12 sur l'emplac
 > [!NOTE]  
 > Si les prévisions basées sur l'emplacement sont consultées isolément, il se peut que la prévision globale ne soit pas représentative.
 
-### <a name="do-not-use-forecast-by-locations"></a>Ne pas utiliser Prévision par emplacements
+### <a name="if-you-dont-use-forecast-by-locations"></a>Ne pas utiliser Prévision par emplacements
 
 Si vous désactivez le bouton de basculement **Prévision sur emplacement**, [!INCLUDE[prod_short](includes/prod_short.md)] ignorera les codes d'emplacement spécifiés pour chaque écriture de prévision de la demande et agrégera les prévisions en une prévision pour les emplacements vides.  
 

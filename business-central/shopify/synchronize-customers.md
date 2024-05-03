@@ -154,7 +154,7 @@ Vous pouvez exporter les clients existants dans Shopify en bloc comme compagnie.
 |**Autorisations contact par défaut**| Spécifiez les autorisations qui doivent être attribuées au contact principal. Vous pouvez choisir entre **Aucune**, **Commandes uniquement** et **Administrateur de l’emplacement**.|
 |**Créer automatiquement catalogue**| Activez cette option si vous souhaitez créer un catalogue incluant tous les produits. Un catalogue est créé pour chaque compagnie exportée.|
 
-## <a name="export-b2b-company-to-shopify"></a>Exporter compagnies B2B vers Shopify
+## <a name="export-a-b2b-company-to-shopify"></a>Exporter compagnies B2B vers Shopify
 
 ### <a name="initial-sync-of-b2b-companies-from-business-central-to-shopify"></a>Synchronisation initiale des compagnies B2B de Business Central vers Shopify
 

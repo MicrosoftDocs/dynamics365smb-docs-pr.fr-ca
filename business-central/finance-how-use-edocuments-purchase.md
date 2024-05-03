@@ -157,7 +157,7 @@ Si vous souhaitez ajouter une certaine tolérance et autoriser la différence en
 3. Cette configuration s’appliquera à toutes les lignes correspondantes, mais encore une fois en tenant compte de la tolérance sur le montant total, comme pour le **Coût unitaire direct** avec le **% escompte ligne**.  
 4. Fermez la page.   
 
-##### <a name="to-match-lines-from-e-document"></a>Pour faire correspondre les lignes d’un document électronique
+##### <a name="matching-lines-from-e-document"></a>Pour faire correspondre les lignes d’un document électronique
 
 Vous pouvez faire correspondre les lignes sur la page **E-Document** . Pour commencer, procédez comme suit :  
 

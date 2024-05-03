@@ -50,7 +50,7 @@ Grâce au connecteur Shopify, les entreprises ont la possibilité de connecter l
 
 [!INCLUDE[prod_short](../includes/prod_long.md)] fait équipe avec Shopify pour aider nos clients à créer une meilleure expérience d’achat. Shopify offre aux commerçants une solution e-commerce conviviale et [!INCLUDE[prod_short](../includes/prod_short.md)] offre une solution complète de gestion d’entreprise qui connecte les équipes de finances, de ventes, de services et d’opérations. Utiliser la connexion transparente entre les deux applications pour synchroniser les infos sur les commandes, le stock et les clients, afin que les commerçants puissent exécuter les commandes plus vite et fournissent un meilleur service à leurs clients.
 
-## <a name="which-microsoft-products-is-the-shopify-connector-available-for"></a>Quels sont les produits Microsoft pour lesquels le connecteur Shopify est disponible ?
+## <a name="which-microsoft-products-work-with-the-shopify-connector"></a>Quels sont les produits Microsoft pour lesquels le connecteur Shopify est disponible ?
 
 Cette fonction est disponible uniquement pour [!INCLUDE[prod_short](../includes/prod_short.md)] en ligne, à partir de la version 20.1. Elle n’est pas disponible pour les déploiements locaux. Le connecteur est préinstallé pour les nouveaux environnements. Les organisations disposant d’environnements existants peuvent télécharger et installer le connecteur à partir de AppSource. L’organisation doit disposer à la fois d’une licence [!INCLUDE [prod_short](../includes/prod_short.md)] et d’une licence Shopify pour utiliser le connecteur. Pour en savoir plus sur les pays/régions, les langues et les éditions de [!INCLUDE[prod_short](../includes/prod_short.md)] pris en charge, consultez [Connecteur Shopify sur AppSource](https://go.microsoft.com/fwlink/?linkid=2196238).
 
@@ -87,7 +87,7 @@ Oui, le connecteur Shopify est extensible. Consultez GitHub pour accéder à la 
 
 Oui, cette extension est ouverte à la participation de la communauté. Vous pouvez trouver le [code source](https://github.com/microsoft/ALAppExtensions/tree/main/Apps/W1/Shopify) dans le référentiel des modules complémentaires de l’application Microsoft AL.
 
-## <a name="building-your-version-of-shopify-connector"></a>Créer votre version du connecteur Shopify
+## <a name="building-your-version-of-the-shopify-connector"></a>Créer votre version du connecteur Shopify
 
 Selon Shopify, si vous souhaitez créer et publier une application de connecteur sur Shopify place de marché dont l’objectif principal est de transférer ou de partager des données marchandes avec un tiers ([!INCLUDE [prod_short](../includes/prod_short.md)]), vous devez avoir le consentement écrit de Shopify. Dans le cadre de ce processus, vous devez obtenir le consentement de Microsoft dans le "Formulaire d’accusé de réception des données du destinataire final". Nous devons vous demander de régler le problème avec Shopify, car Microsoft ne peut pas signer d’ententes avec des tiers.
 
