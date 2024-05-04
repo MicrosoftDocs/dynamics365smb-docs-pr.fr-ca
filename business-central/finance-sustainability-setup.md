@@ -11,7 +11,7 @@ ms.author: altotovi
 ms.service: dynamics-365-business-central
 ---
 
-# <a name="sustainability-setup"></a>Configuration de durabilité
+# Configuration de durabilité  
 
 Pour que le module durabilité fonctionne correctement, vous devez d’abord configurer certains contrôles et instructions de base liés à l’ensemble des fonctionnalités.  
 
@@ -49,7 +49,7 @@ Pour mettre en place un module de durabilité, suivez les étapes suivantes :
 >[!NOTE]
 > Dans la version 24.0, [!INCLUDE[prod_short](includes/prod_short.md)] ne prend pas en charge la déclaration à une autorité. Donc, le champ lié à la configuration sur le raccourci **Rapports** sera utilisé pour les futures fonctionnalités de génération de rapports, mais il pourra également être utilisé par les partenaires dans les versions localisées.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .  
 [Finances](finance.md)    
 [Graphique des comptes de durabilité et de comptabilité](finance-manage-sustainability.md)
 [Configuration du développement durable](finance-sustainability-accounts-ledger.md)

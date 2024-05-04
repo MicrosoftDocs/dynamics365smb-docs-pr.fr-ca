@@ -10,7 +10,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
 
-# <a name="built-in-finance-reports-in-business-central"></a>Rapports financiers intégrés dans Business Central
+# Rapports financiers intégrés dans Business Central
 
 [!INCLUDE [prod_short](includes/prod_short.md)] comprend plusieurs rapports, fonctions de traçage et outils incorporés qui aident les auditeurs ou contrôleurs chargés de rendre compte au service financier. 
 
@@ -19,7 +19,7 @@ ms.service: dynamics-365-business-central
 [!INCLUDE [finance_reports](includes/finance-reports-include.md)]
 
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Création des budgets des coûts](finance-create-cost-budgets.md)  
 [Déclarer la TVA aux autorités fiscales](finance-how-report-vat.md)  

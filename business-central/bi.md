@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
 
-# <a name="financial-analytics"></a>Analyses financières dans Business Central
+# Analyses financières dans Business Central
 
 Les entreprises capturent une énorme quantité de données au cours de leurs activités quotidiennes, ce qui soutient une précieuse business intelligence (BI) pour les décideurs : 
 
@@ -33,7 +33,7 @@ Chacune de ces fonctionnalités présente ses propres avantages et inconvénient
 
 Cet article vous présente la possibilité d’utiliser ces fonctionnalités analytiques pour fournir des informations financières.
 
-## <a name="analytics-needs-in-finance"></a>Besoins analytiques en finance
+## Besoins analytiques en finance
 
 Lorsque l’on réfléchit aux besoins d’analyse en finance, il peut être utile d’utiliser un modèle mental basé sur des personnalités décrites à un niveau élevé et leurs différents besoins en matière d’analyse.
 
@@ -49,7 +49,7 @@ Les personnes occupant différents rôles ont des besoins différents en matièr
 |Gestion des finances | Tendances, résumés | Rapports managériaux prédéfinis <br> Analyse ad hoc      | 
 |Aide-comptable         | Informations détaillées     | Rapports exploitation prédéfinis <br> Données de tâche à l’écran |
 
-## <a name="finance-kpis"></a>Indicateurs de performance clés financiers
+## Indicateurs de performance clés financiers
 
 Un indicateur de performance clé (KPI) est une valeur mesurable qui montre l’efficacité avec laquelle vous atteignez vos objectifs. En finance, les gens utilisent souvent les KPI suivants pour surveiller la santé financière de leur organisation :
 
@@ -67,7 +67,7 @@ Un indicateur de performance clé (KPI) est une valeur mesurable qui montre l’
 For more information, see [Financial KPIs in Business Central](bi-finance-kpis.md) 
 -->
 
-## <a name="using-financial-reporting-to-produce-financial-statements-and-kpis"></a>Utilisation de Financial Reporting pour produire des états financiers et des indicateurs de performance clés
+## Utilisation de Financial Reporting pour produire des états financiers et des indicateurs de performance clés
 
 La fonctionnalité **Rapports financiers** vous donne un aperçu des données financières enregistrées dans votre plan comptable (COA). Vous pouvez configurer les rapports financiers pour analyser les chiffres dans les comptes du grand livre (GL) et comparer les écritures GL et les écritures budget. Les résultats s’affichent dans les graphiques et les rapports de votre page d’accueil, comme le graphique Trésorerie et les rapports État des résultats et Bilan.
 
@@ -87,13 +87,13 @@ Le tableau suivant décrit une série de tâches dans Financial Reporting et inc
 | Configurer des vues pour analyser des données à l’aide de dimensions.|[Analyse des données par dimensions](bi-how-analyze-data-dimension.md)|
 | Créer de nouveaux rapports d'analyse pour les ventes, les achats et l'inventaire, et configurer des modèles d'analyse. |[Créer des rapports d’analyse](bi-how-create-analysis-views-reports.md)|
 
-## <a name="finance-reporting-across-business-units-or-legal-entities"></a>Rapports financiers entre les unités fonctionnelles ou les entités juridiques
+## Rapports financiers entre les unités fonctionnelles ou les entités juridiques
 
 Certaines organisations utilisent [!INCLUDE [prod_short](includes/prod_short.md)] dans plusieurs unités fonctionnelles ou entités juridiques. D’autres utilisent [!INCLUDE [prod_short](includes/prod_short.md)] dans les filiales qui doivent rendre compte aux organisations mères. [!INCLUDE [prod_short](includes/prod_short.md)] fournit aux comptables des outils qui les aident à transférer les écritures de deux ou plusieurs compagnies (filiales) dans une compagnie consolidée.  
 
 Pour en savoir plus, reportez-vous à [Consolidation de la compagnie](finance-consolidated-company-reporting.md).
 
-## <a name="ad-hoc-analysis-of-finance-data"></a>Analyse ad hoc des données financières
+## Analyse ad hoc des données financières
 
 Parfois, il suffit de vérifier si les chiffres s’additionnent correctement ou de confirmer rapidement un chiffre. Les fonctionnalités suivantes sont idéales pour les analyses ad hoc :
 
@@ -114,7 +114,7 @@ De la même manière, vous pouvez utiliser l’action **Ouvrir dans Excel** pour
 <!-- Not ready yet
 For more information on how to do ad-hoc analysis on ledgers, see [Ad-hoc analysis on finance data](ad-hoc-analysis-finance.md). 
 -->
-## <a name="built-in-reports-for-finance"></a>Rapports intégrés pour la finance
+## Rapports intégrés pour la finance
 
 [!INCLUDE [prod_short](includes/prod_short.md)] comprend plusieurs rapports, fonctions de traçage et outils incorporés qui aident les auditeurs ou contrôleurs chargés de rendre compte au service financier.
 
@@ -141,11 +141,11 @@ Pour plus d’informations, consultez ces aperçus pour les rapports pertinents 
 * [Built-in Tax and VAT reports](tax-and-vat-reports.md) 
 -->
 
-## <a name="on-screen-finance-task-pages"></a>Pages de tâches financières à l’écran
+## Pages de tâches financières à l’écran
 
 [!INCLUDE [prod_short](includes/prod_short.md)] comporte un certain nombre de pages qui vous donnent des aperçus financiers et des tâches à accomplir.
 
-### <a name="show-general-ledger-entries-and-balances-from-the-chart-of-accounts-page"></a>Afficher les écritures et les soldes du grand livre à partir de la page Plan comptable
+### Afficher les écritures et les soldes du grand livre à partir de la page Plan comptable
 
 La page Plan comptable affiche tous les comptes du grand livre avec des chiffres agrégés sur ce qui est reporté dans le grand livre. À partir de cette page, vous pouvez faire des choses comme :  
 
@@ -157,13 +157,13 @@ La page Plan comptable affiche tous les comptes du grand livre avec des chiffres
 
 Pour en savoir plus, allez à [Familiarisation avec le plan comptable](finance-general-ledger.md#the-chart-of-accounts).
 
-### <a name="view-actual-amounts-compared-to-budgeted-amounts-for-all-accounts-and-for-several-periods"></a>Afficher les montants réels comparés aux montants budgétés pour tous les comptes et pour plusieurs périodes
+### Afficher les montants réels comparés aux montants budgétés pour tous les comptes et pour plusieurs périodes
 
 Lors de la collecte, l’analyse, et le partage des données de votre compagnie, vous pouvez voir les montants réels comparés aux montants budgétés de tous les comptes et pour plusieurs périodes. Sur la page **Plan comptable**, choisissez l’action **Solde/budget du grand livre**.
 
 Pour en savoir plus, voir [Analyser les montants réalisés et les montants budgétés](bi-how-analyze-actual-versus-budget.md).
 
-### <a name="analyze-data-by-dimensions"></a>Analyser des données par dimensions
+### Analyser des données par dimensions
 
 Les dimensions sont des valeurs qui permettent de catégoriser les écritures afin de pouvoir les suivre et les analyser sur les documents, tels que les documents de vente. Les dimensions peuvent, par exemple, indiquer de quel projet ou département provient une écriture.  
 
@@ -171,7 +171,7 @@ Au lieu de configurer des comptes GL distincts pour chaque service et projet, vo
 
 En analyse financière, une dimension correspond à des données que vous ajoutez à une écriture GL comme une sorte de marqueur. Ces données permettent de regrouper des écritures GL dotées de caractéristiques similaires, telles que les clients, les régions, les produits et les représentants, et de récupérer facilement ces groupes à des fins d’analyse. Vous pouvez utiliser les dimensions sur des écritures de journaux, de documents et de budgets. Pour plus d’informations, voir [Analyser des données par dimensions](bi-how-analyze-data-dimension.md)
 
-### <a name="analyzing-cash-flow"></a>Analyse de trésorerie
+### Analyse de trésorerie
 
 Dans page d’accueil Comptable, sous **Performances financières**, Cycle trésorerie, Trésorerie et Revenus et dépenses, les graphiques offrent des méthodes pour analyser la trésorerie :
 
@@ -189,7 +189,7 @@ Pour vérifier la prévision, outre les écritures de prévision, vous pouvez é
 
 Pour en savoir plus, accédez à [Analyse de la trésorerie dans votre compagnie](finance-analyze-cash-flow.md).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion des rapports financiers entre les unités fonctionnelles ou les entités juridiques](finance-consolidated-company-reporting.md)  
 <!-- [Financial KPIs in Business Central](bi-finance-kpis.md)    -->
