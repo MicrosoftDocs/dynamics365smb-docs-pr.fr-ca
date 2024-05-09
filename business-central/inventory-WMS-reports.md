@@ -11,22 +11,22 @@ ms.date: 03/21/2024
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
-# <a name="inventory-and-warehouse-reports-and-analytics"></a>Rapports et analyses d’inventaire et d’entrepôt
+# Rapports et analyses d’inventaire et d’entrepôt
 
 Les rapports d'inventaire et d’entrepôt dans [!INCLUDE [prod_short](includes/prod_short.md)] permettent aux professionnels de l'inventaire et des affaires d’obtenir des informations et des statistiques sur les activités d'inventaire et d’entrepôt actuelles et passées.  
 
-## <a name="reports"></a>Rapports
+## Rapports
 
 [!INCLUDE [inventory_WMS_reports](includes/inventory-WMS-reports-include.md)]
 
-## <a name="tasks"></a>Tâches
+## Tâches
 
 Les articles suivants décrivent certaines des tâches clés pour analyser l’état de votre entreprise :
 
 * [Créer des rapports d’analyse](bi-how-create-analysis-views-reports.md)  
 * [Afficher la disponibilité des articles](inventory-how-availability-overview.md)
 
-## <a name="print-and-scan-barcodes"></a>Imprimer et scanner des codes-barres
+## Imprimer et scanner des codes-barres
 
 L’utilisation de codes-barres peut vous aider à simplifier vos processus d’entrepôt entrants, sortants et internes. 
 
@@ -44,7 +44,7 @@ Après avoir installé l’application, vous pouvez utiliser l’action **Imprim
 > [!NOTE]
 > Certaines imprimantes et formats de codes-barres/QR nécessitent une implémentation spécifique. Vous devrez peut-être télécharger un autre modèle Word ou cloner le rapport pour créer votre propre version personnalisée.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configuration de stock](inventory-setup-inventory.md)  
 [Inventaire](inventory-manage-inventory.md)  

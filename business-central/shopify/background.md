@@ -9,14 +9,14 @@ author: brentholtorf
 ms.author: bholtorf
 ---
 
-# <a name="run-tasks-in-the-background"></a>Exécution des tâches en arrière-plan
+# Exécution des tâches en arrière-plan
 
 Il est efficace d’exécuter certaines tâches simultanément et de manière automatisée. Vous pouvez effectuer ces tâches en arrière-plan et également définir un calendrier pour les exécuter automatiquement. Pour exécuter des tâches en arrière-plan, deux modes sont pris en charge :
 
 - Les tâches déclenchées manuellement sont programmées immédiatement via **Écritures file d’attente des travaux**.
 - Les tâches récurrentes sont programmées dans **Écritures file d’attente des travaux**.
 
-## <a name="run-tasks-in-the-background-for-a-specific-shop"></a>Exécuter des tâches en arrière-plan pour un magasin spécifique
+## Exécuter des tâches en arrière-plan pour un magasin spécifique
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Magasin Shopify**, puis choisissez le lien associé.
 2. Sélectionnez le magasin pour lequel vous voulez exécuter la synchronisation à l’arrière-plan pour ouvrir la page **Fiche magasin Shopify**.
@@ -24,7 +24,7 @@ Il est efficace d’exécuter certaines tâches simultanément et de manière au
 
 Désormais, lorsque l’action de synchronisation démarre, au lieu d’exécuter une tâche au premier plan, vous serez invité à attendre. Une fois la synchronisation terminée, vous pouvez passer à l’action suivante. La tâche est créée comme **Écriture file d’attente des travaux** et démarre immédiatement.
 
-## <a name="to-schedule-recurring-tasks"></a>Pour programmer des tâches récurrentes
+## Pour programmer des tâches récurrentes
 
 Vous pouvez programmer les activités récurrentes suivantes pour qu’elles soient exécutées de manière automatisée. Pour plus d’informations sur la planification des tâches, voir [File d’attente des travaux](../admin-job-queues-schedule-tasks.md).
 
@@ -54,7 +54,7 @@ Vous pouvez utiliser le champ **N° de commande Shopify** pour identifier les do
 
 Pour en savoir plus sur le report de commandes client par lot, accédez à [Pour créer une entrée de file d’attente de tâches pour le report par lot de documents de vente](../ui-batch-posting.md#to-create-a-job-queue-entry-for-batch-posting-of-sales-orders).
 
-## <a name="to-check-the-status-of-synchronization"></a>Pour examiner l’état de la synchronisation
+## Pour examiner l’état de la synchronisation
 
 Sur le **Chef d’entreprise** Centre de rôle, le **Shopify Activités** La pièce propose plusieurs indices qui peuvent vous aider à identifier rapidement s’il y a des problèmes avec Shopify Connecteur.
 
@@ -65,6 +65,6 @@ Sur le **Chef d’entreprise** Centre de rôle, le **Shopify Activités** La pi�
 - **Erreurs d’expédition** - Shopify Le connecteur n’a pas pu synchroniser les expéditions de ventes publiées avec Shopify.
 - **Erreurs de synchronisation** - des écritures file d’attente des projets ayant échoué sont liées à la synchronisation avec Shopify.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Mise en route du connecteur pour Shopify](get-started.md)  
