@@ -53,20 +53,22 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ar
 | À  | Voir |
 | --- | --- |
 | Paramétrez les conditions préalables de la fonctionnalité des immobilisations (en définissant les valeurs par défaut, la comptabilité des immobilisations, les groupes de report, les clés d’affectation, les journaux et les types de report). | [Paramétrage d'immobilisations](fa-setup.md)|
-| Créer des immobilisations, affecter des méthodes d'amortissement, reporter des acquisitions et des valeurs résiduelles et imprimer les listes d'immobilisations. |[Acquérir des immobilisations](fa-how-acquire.md) |
+| Gérer les budgets d'immobilisations, budgéter les coûts d'acquisition, les cessions d'immobilisations et l'amortissement. |[Gestion des budgets pour les immobilisations](fa-how-manage-budgets.md) |
+| Créer des immobilisations, affecter des méthodes d'amortissement, reporter des acquisitions et des valeurs résiduelles et imprimer les listes d'immobilisations. |[Acquisition des immobilisations](fa-how-acquire.md) |
+| En savoir plus sur les différentes méthodes d'amortissement des immobilisations. |[Méthodes d'amortissement](fa-depreciation-methods.md) |
+| Calculer l'amortissement, reporter l'amortissement et analyser l'amortissement dans les rapports sur les immobilisations. |[Amortissement des immobilisations](fa-how-depreciate-amortize.md) |
+| Apprenez-en davantage sur les fonctionnalités intégrées de rapport et d’analyse pour les immobilisations. | [Vue d’ensemble de l’analyse des immobilisations](fa-analytics-overview.md) |
 | Enregistrer les visites de service, reporter les coûts d'entretien et surveiller les coûts d'entretien. |[Mettre à jour des immobilisations](fa-how-maintain.md) |
 | Mettre à jour les informations d'assurance, reporter les coûts d'acquisition vers les polices d'assurance, modifier la couverture assurance, visualiser les statistiques assurance et répertorier les polices d'assurance. |[Assurer les immobilisations](fa-how-insure.md) |
 | Reclasser les immobilisations, les transférer vers d'autres emplacements, les diviser ou les combiner. |[Transférer, fractionner ou regrouper les immobilisations](fa-how-trans-split-combine.md) |
-| Ajustez les valeurs des immobilisations, reportez les appréciations et les transactions de dépréciation. |[Réévaluer les immobilisations](fa-how-revalue.md) |
-| Calculer l'amortissement, reporter l'amortissement et analyser l'amortissement dans les rapports sur les immobilisations. |[Amortissement des immobilisations](fa-how-depreciate-amortize.md) |
-| En savoir plus sur les différentes méthodes d'amortissement des immobilisations. |[Méthodes d'amortissement](fa-depreciation-methods.md) |
-| Reporter les transactions de cession, visualiser les écritures cession et reporter les cessions partielles. |[Céder ou annuler des immobilisations](fa-how-dispose-retire.md) |
-| Gérer les budgets d'immobilisations, budgéter les coûts d'acquisition, les cessions d'immobilisations et l'amortissement. |[Gestion des budgets pour les immobilisations](fa-how-manage-budgets.md) |
-| Apprenez-en davantage sur les fonctionnalités intégrées de rapport et d’analyse pour les immobilisations. | [Rapports et analyses des immobilisations](fa-reports.md) |
+| Ajustez les valeurs des immobilisations, reportez les appréciations et les transactions de dépréciation. |[Réévaluation des immobilisations](fa-how-revalue.md) |
+| Reporter les transactions de cession, visualiser les écritures cession et reporter les cessions partielles. |[Cession ou annulation des immobilisations](fa-how-dispose-retire.md) |
+
 
 ## Voir aussi .
 
 [Paramétrage d'immobilisations](fa-setup.md)  
+[Vue d’ensemble de l’analyse des immobilisations](fa-analytics-overview.md)   
 [Vue d’ensemble de Finances](finance.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

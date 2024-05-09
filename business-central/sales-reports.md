@@ -20,14 +20,16 @@ Les rapports de vente dans [!INCLUDE [prod_short](includes/prod_short.md)] perme
 
 Les articles suivants décrivent certaines des tâches clés pour analyser l’état de votre entreprise :
 
-* [Créer des rapports d'analyse](bi-how-create-analysis-views-reports.md)  
-* [Voir la disponibilité des articles](inventory-how-availability-overview.md)
+* [Créer des rapports d’analyse](bi-how-create-analysis-views-reports.md)  
+* [Afficher la disponibilité des articles](inventory-how-availability-overview.md)
 
 
-## Voir aussi
+## Voir aussi .
 
+[Vue d’ensemble de l’analyse vente](sales-analytics-overview.md)   
+[Analyse ad hoc des données de ventes](ad-hoc-analysis-sales.md)    
 [Définition des ventes](sales-setup-sales.md)  
-[Vente](sales-manage-sales.md)  
-[Réserver des articles](inventory-how-to-reserve-items.md)
+[Ventes](sales-manage-sales.md)  
+[Réservation des articles](inventory-how-to-reserve-items.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

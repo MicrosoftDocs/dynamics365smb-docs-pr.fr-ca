@@ -6,7 +6,7 @@ ms.author: bholtorf
 ms.reviewer: andreipa
 ms.topic: conceptual
 ms.search.keywords: null
-ms.date: 12/13/2023
+ms.date: 04/23/2024
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
@@ -133,6 +133,14 @@ Utilisez les documents **Prélèvement entrepôt** pour sélectionner les compos
     > [!NOTE]
     > Si vous devez prélever ou placer les articles d’une ligne dans plusieurs zones, notamment parce que la zone indiquée est pleine, utilisez l’action **Éclater ligne** sur le raccourci **Lignes**. L’action crée une ligne pour la quantité restante à gérer.
 
+      Vous pouvez trier les lignes prélèvement en fonction de critères divers, tels que l’article, le numéro de tablette ou la date d’échéance. Le tri peut aider à optimiser le processus de rangement, par exemple :
+
+    * Si les lignes Prendre et Placer de chaque ligne livraison ne se suivent pas directement et que vous souhaitez qu’elles se suivent, triez-les en sélectionnant **Article** dans le champ **Méthode de tri**.  
+    * Si les classements des zones reflètent la disposition physique de l’entrepôt, utilisez la méthode de tri **Priorité zone** pour organiser le travail par emplacements de zone.
+
+  > [!NOTE]  
+  > Les lignes sont triées par ordre croissant, en fonction des critères sélectionnés. Si vous triez par document, le tri est effectué d’abord par type de document en fonction du champ **Document source d’activité d’entrepôt** . Si vous triez par livraison, le tri est effectué d’abord par type de destination en fonction du champ **Type de destination entrepôt**.
+
 4. Après avoir prélevé et placé les articles dans la zone de production, d’assemblage ou de travail, choisissez l’action **Enregistrer le prélèvement**.  
 
     Vous pouvez maintenant amener les articles dans la zone respective et publier l’utilisation ou la consommation des composantes prélevées en reportant le journal consommation, l’ordre d’assemblage ou le journal projet. Pour en savoir plus, consultez les articles suivants :
@@ -171,6 +179,14 @@ Les étapes suivantes décrivent les actions prises par divers utilisateurs et l
 La figure ci-après indique la date à laquelle le champ **Code de zone** de la liste des composantes est renseigné en fonction de la configuration de votre emplacement ou unité de production/atelier.  
 
 :::image type="content" source="media/binflow.png" alt-text="Aperçu de quand et comment le champ Code de zone est renseigné.":::
+
+## Composantes de production Fabrication à la commande dans une configuration entrepôt avancée
+
+Dans les scénarios où un article produit est constitué de matières premières et d’articles semi-finis avec la politique de fabrication définie sur **Fabrication à la commande**, le prélèvement entrepôt pour ces composantes semi-finies est ajouté au même bon de production avec le champ **Code niveau planification** renseigné. Il est prévu que les articles semi-finis soient disponibles immédiatement pour la consommation et ne nécessitent pas de prélèvement, ils ne sont donc pas inclus dans le document de prélèvement en entrepôt. Les prélèvements entrepôt créés incluent uniquement les matières premières pour l’article produit et pour les articles semi-finis.
+
+Cependant, si des articles semi-finis sont disponibles en stock, le système de planification vous suggère de les consommer au lieu de produire la totalité de la quantité. Par exemple, un article produit nécessite cinq composantes semi-finies, mais trois sont déjà en stock. Dans ce cas, cinq articles semi-finis sont répertoriés dans les composantes bon de production, mais seulement deux sont produits dans le même bon de production en tant que ligne bon de production distincte.
+Une telle configuration n’est pas compatible avec les prélèvements entrepôt et, en fonction de la fréquence, vous devez soit modifier la politique de fabrication de ces articles semi-finis en **Fabrication sur stock**, soit fractionner manuellement la ligne composante bon de production lorsque vous devez prélever les articles semi-finis produits précédemment.
+
 
 ## Voir aussi .
 

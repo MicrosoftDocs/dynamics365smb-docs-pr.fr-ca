@@ -1,18 +1,18 @@
 ---
-title: Analyse des données par axe analytique
+title: Analyser des données par dimensions
 description: Cet article décrit comment analyser les données d’entreprise par dimensions pour mieux comprendre votre activité.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: kepontop
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.search.keywords: 'bi, power BI, analysis, KPI'
 ms.search.form: '545, 555, 556, 557, 558, 9372, 9370, 9371'
-ms.date: 03/27/2024
+ms.date: 04/19/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
 
-# <a name="analyze-data-by-dimensions"></a>Analyser des données par dimensions
+# Analyser des données par dimensions
 
 En analyse financière, une dimension correspond à des données que vous ajoutez à une écriture comme une sorte de marqueur pour grouper les écritures similaires. Par exemple, les dimensions regroupent souvent les entrées pour les clients, les régions, les produits et les représentants. Les groupes vous permettent de récupérer facilement des données les concernant pour les analyser. Vous pouvez utiliser les dimensions sur des écritures de journaux, de documents et de budgets.
 
@@ -24,7 +24,7 @@ Chaque dimension décrit l’objet de l’analyse. Une analyse à deux axes, par
 > [!NOTE]
 > Si vous découvrez qu’une valeur de dimension incorrecte a été utilisée sur les écritures du grand livre reportées, vous pouvez la corriger et mettre à jour vos vues d’analyse. Pour en savoir plus, consultez [Dépannage et correction des dimensions](finance-troubleshooting-correcting-dimensions.md#changing-dimension-assignments-after-posting).
 
-## <a name="set-up-an-analysis-view"></a>Configurer une vue d’analyse
+## Configurer une vue d’analyse
 
 Les analyses par dimensions utilisent une combinaison sélectionnée de dimensions. Vous stockez, récupérez et mettez à jour cet ensemble de dimensions en créant une fiche **Vue d’analyse**.
 
@@ -34,7 +34,7 @@ Les analyses par dimensions utilisent une combinaison sélectionnée de dimensio
 4. Pour ajouter des codes dimension aux quatre codes du raccourci **Dimensions**, cliquez sur l’action **Filtre**, renseignez les champs, puis cliquez sur **OK**.  
 5. Pour mettre à jour la vue, choisissez l'action **Mettre à jour**.
 
-## <a name="analyze-by-dimensions"></a>Analyse par dimensions
+## Analyse par dimensions
 
 Utilisez les vues d’analyse que vous avez déjà configurées avec la matrice **Analyse par dimensions** pour afficher les montants de votre grand livre.
 
@@ -56,7 +56,7 @@ Utilisez les vues d’analyse que vous avez déjà configurées avec la matrice 
 > [!TIP]  
 > Vous pouvez également modifier la vue en changeant la valeur des champs **Afficher lignes** et **Afficher colonnes**. Pour contrepasser un paramètre de vue, choisissez l'action **Inverser lignes et colonnes**.
 
-## <a name="update-an-analysis-view"></a>Mettre à jour une vue d’analyse
+## Mettre à jour une vue d’analyse
 
 Les montants sur la page **Analyse par dimensions** offrent une image de l’état de la compagnie au moment de la dernière mise à jour. Pour obtenir l’état actuel, exécutez l’action de mise à jour pour mettre à jour la vue d’analyse.
 
@@ -74,7 +74,7 @@ Suivez la procédure suivante pour mettre à jour une vue d’analyse à partir 
 > [!NOTE]  
 > Pour mettre à jour tout ou partie des vues d’analyse en même temps, utilisez le traitement en lot **Mise à jour vues d’analyse**.  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Business Intelligence financière](bi.md)  
 [Finances](finance.md)  

@@ -11,7 +11,7 @@ ms.date: 03/25/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# <a name="setting-up-fixed-assets"></a>Paramétrage d’immobilisations
+# Paramétrage d’immobilisations
 
 Avant de pouvoir utiliser les immobilisations, vous devez définir les éléments suivants :  
 
@@ -26,7 +26,7 @@ Les sections de cet article renvoient à des informations supplémentaires sur l
 
 Lorsque vous activez une activité immobilisation dans la section **Intégration GL** sur la page **Fiche registre amortissement**, la page **Journal GL immo.** sera utilisée pour reporter les transactions pour l’activité.
 
-## <a name="required-setup-tasks"></a>Tâches de configuration obligatoire
+## Tâches de configuration obligatoire
 
 Le tableau suivant contient une séquence de tâches pour configurer les immobilisations et des liens vers des articles connexes.
 
@@ -35,7 +35,7 @@ Le tableau suivant contient une séquence de tâches pour configurer les immobil
 | Configurez les comptes du grand livre par défaut, les clés d’affectation, les modèles journal et les lots pour le report des immobilisations et configurez les catégories et sous-catégories d’immobilisation, telles que Corporelles et Incorporelles. |[Configurer des informations générales pour les immobilisations](fa-how-setup-general.md) |
 | Créer des registres amortissement, définir différentes méthodes d'amortissement, procéder à l'intégration dans le grand livre et activer la duplication d'écritures dans plusieurs registres amortissement. |[Configuration des amortissements](fa-how-setup-depreciation.md) |
 
-## <a name="optional-setup-tasks-insurance-maintenance-and-user-defined-depreciation-methods"></a>Tâches de configuration facultatives (assurance, entretien et méthodes d’amortissement définies par l’utilisateur)
+## Tâches de configuration facultatives (assurance, entretien et méthodes d’amortissement définies par l’utilisateur)
 
 Le tableau suivant contient une séquence de tâches facultatives pour configurer les immobilisations, notamment les assurances, l’entretien et les méthodes amortissement, ainsi que des liens vers des articles connexes. 
 
@@ -45,9 +45,10 @@ Le tableau suivant contient une séquence de tâches facultatives pour configure
 | Activer l'entretien des immobilisations, configurer les informations générales propres à l'entretien, configurer les comptes de report de l'entretien et définir les types de travaux d'entretien. |[Configurer l’entretien des immobilisations](fa-how-setup-maintenance.md) |
 | Découvrez comment appliquer des méthodes d’amortissement. |[Configuration des méthodes d’amortissement définies par l’utilisateur](fa-how-setup-user-defined-depreciation-method.md) |
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Vue d’ensemble des immobilisations](fa-manage.md)  
+[Vue d’ensemble de l’analyse des immobilisations](fa-analytics-overview.md)   
 [Finances](finance.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

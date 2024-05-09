@@ -6,11 +6,11 @@ ms.author: bholtorf
 ms.reviewer: andreipa
 ms.service: dynamics-365-business-central
 ms.topic: how-to
-ms.date: 09/11/2023
+ms.date: 04/23/2024
 ms.custom: bap-template
 ms.search.forms: '7335, 7339, 7345,'
 ---
-# <a name="pick-items-for-warehouse-shipment"></a>Prélever des articles pour une livraison entrepôt
+# Prélever des articles pour une livraison entrepôt
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], vous prélevez et livrez des articles en utilisant l’une des quatre méthodes décrites dans le tableau suivant.
 
@@ -39,11 +39,11 @@ Vous ne pouvez pas créer un document de prélèvement en entrepôt à partir de
 >  
 > Pour en savoir plus sur le prélèvement de composantes pour les ordres d’assemblage, notamment les situations où les éléments d’assemblage ne sont pas associés à une livraison vente, voir [Prélever pour la fabrication, l’assemblage ou les tâches dans les configurations de stockage avancées](warehouse-how-to-pick-for-internal-operations-in-advanced-warehousing.md).  
 
-## <a name="check-whether-items-are-available-for-picking"></a>Vérifier si les articles sont disponibles pour le prélèvement
+## Vérifier si les articles sont disponibles pour le prélèvement
 
 [!INCLUDE [inventory-availability-overview](includes/inventory-availability-overview.md)]
 
-## <a name="to-create-pick-documents-in-bulk-with-the-pick-worksheet"></a>Pour créer des documents de prélèvement en bloc avec la feuille prélèvement
+## Pour créer des documents de prélèvement en bloc avec la feuille prélèvement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Feuille prélèvement**, puis choisissez le lien associé.  
 
@@ -93,7 +93,7 @@ Vous ne pouvez pas créer un document de prélèvement en entrepôt à partir de
 
 8. Cliquez sur **OK**. [!INCLUDE [prod_short](includes/prod_short.md)] créera le prélèvement en fonction de vos sélections.  
 
-## <a name="to-pick-items-for-a-warehouse-shipment"></a>Pour prélever des articles pour une livraison entrepôt
+## Pour prélever des articles pour une livraison entrepôt
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvements entrepôt**, puis choisissez le lien associé.  
 
@@ -110,12 +110,20 @@ Vous ne pouvez pas créer un document de prélèvement en entrepôt à partir de
 
     > [!NOTE]
     > Si vous devez prélever ou placer les articles d’une ligne dans plusieurs zones, notamment parce que la zone indiquée est pleine, utilisez l’action **Éclater ligne** sur le raccourci **Lignes**. L’action crée une ligne pour la quantité restante à gérer.
+        
+    Vous pouvez trier les lignes prélèvement en fonction de critères divers, tels que l’article, le numéro de tablette ou la date d’échéance. Le tri peut aider à optimiser le processus de rangement, par exemple :
+
+    * Si les lignes Prendre et Placer de chaque ligne livraison ne se suivent pas directement et que vous souhaitez qu’elles se suivent, triez-les en sélectionnant **Article** dans le champ **Méthode de tri**.  
+    * Si les classements des zones reflètent la disposition physique de l’entrepôt, utilisez la méthode de tri **Priorité zone** pour organiser le travail par emplacements de zone.
+
+  > [!NOTE]  
+  > Les lignes sont triées par ordre croissant, en fonction des critères sélectionnés. Si vous triez par document, le tri est effectué d’abord par type de document en fonction du champ **Document source d’activité d’entrepôt** . Si vous triez par livraison, le tri est effectué d’abord par type de destination en fonction du champ **Type de destination entrepôt**.
 
 4. Après avoir prélevé et placé les articles dans la zone ou la zone d’expédition, choisissez l’action **Enregistrer prélèvement**.  
 
 Vous pouvez alors apporter les articles au quai de chargement et reporter la livraison, dont le document source lié, sur la page **Livraison entrepôt**. Pour en savoir plus, voir [Livrer des articles](warehouse-how-ship-items.md).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 - [Vue d’ensemble de la gestion d’entrepôt](design-details-warehouse-management.md)
 - [Gestion du stock](inventory-manage-inventory.md)  

@@ -7,7 +7,7 @@ metadata:
   ms.reviewer: bholtorf
   ms.search.keywords: 'keyboarding, productivity, how do i, filter pane'
   ms.search.form: TellMe
-  ms.date: 04/01/2021
+  ms.date: 04/19/2024
   ms.author: bholtorf
   ms.service: dynamics-365-business-central
 title: FAQ sur la recherche et le filtrage
@@ -48,7 +48,7 @@ sections:
           En tant qu'administrateur local, vous développez le délai des recherches en modifiant le paramètre **Expiration de la recherche** du serveur [!INCLUDE[prod_short](includes/prod_short.md)]. Pour plus d'informations, voir [Configuration de Business Central Server](/dynamics365/business-central/dev-itpro/administration/configure-server-instance?#Database) dans l'Aide destinée aux développeurs et aux professionnels de l'informatique Business Central.
       - question: "Microsoft étendra-il l'expérience du volet Filtre\_?\n"
         answer: |
-          Chez Microsoft, nous écoutons constamment les commentaires de notre communauté diverse d'utilisateurs et prenons les mesures nécessaires pour agir sur les principales propositions de la communauté. Si vous souhaitez étendre le volet Filtre à plus de facteurs d'écrans et plus de types de listes et d'états, ou que vous avez une excellente idée pour l'améliorer, ajoutez une idée ou votez pour les idées existantes à l'adresse [aka.ms/BusinessCentralIdeas](https://aka.ms/businesscentralideas).
+          Chez Microsoft, nous écoutons constamment les commentaires de notre communauté diverse d'utilisateurs et prenons les mesures nécessaires pour agir sur les principales propositions de la communauté. Si vous souhaitez étendre le volet Filtre à plus de facteurs d’écrans et plus de types de listes et d’états, ou que vous avez une excellente idée pour l’améliorer, ajoutez une idée ou votez pour les idées existantes à l’adresse [aka.ms/BusinessCentralIdeas](https://aka.ms/businesscentralideas).
       - question: "Comment modifier la sortie de la touche de séparateur décimal sur mon pavé numérique\_?\n"
         answer: |
           Par défaut, le caractère de sortie du séparateur décimal est déterminé par le paramètre de région de Business Central, défini sur la page **Mes paramètres**. Vous pouvez temporairement le remplacer par un point (.) en appuyant sur les touches <kbd>Alt</kbd>+<kbd>Séparateur décimal</kbd> du clavier. Appuyez à nouveau sur <kbd>Alt</kbd>+<kbd>Séparateur décimal</kbd> pour revenir en arrière. Pour plus d’informations, voir [Définition du séparateur décimal utilisé par les claviers numériques](ui-enter-data.md#decimal).

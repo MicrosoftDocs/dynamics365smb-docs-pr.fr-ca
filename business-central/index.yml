@@ -147,13 +147,13 @@ additionalContent:
               url: /dynamics365/business-central/analysis-assist
             - text: Conversation instantanée avec Copilot
               url: /dynamics365/business-central/chat-with-copilot
-            - text: Suggestions de texte marketing
+            - text: Obtenir des suggestions de texte marketing
               url: /dynamics365/business-central/ai-overview
             - text: Mise en correspondance des documents électroniques
               url: /dynamics365/business-central/map-edocuments-with-copilot
             - text: Rapprochement des comptes bancaires
               url: /dynamics365/business-central/bank-reconciliation-with-copilot
-            - text: Suggestions de lignes
+            - text: Suggérer des lignes vente
               url: /dynamics365/business-central/sales-suggest-sales-lines-with-copilot
         - title: Paramètres d’espace de travail
           links:

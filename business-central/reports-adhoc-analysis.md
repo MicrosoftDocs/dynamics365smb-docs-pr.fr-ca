@@ -1,26 +1,27 @@
 ---
 title: Analyse de données ad hoc
-description: Fournit une vue d’ensemble de toutes les fonctionnalités qui prennent en charge les tâches d’analyse de données ad hoc dans le produit Business Central.
+description: Fournit une vue d’ensemble de fonctionnalités qui prennent en charge les analyse de données ad hoc dans Business Central.
 author: jswymer
+ms.author: jswymer
+ms.reviewer: bholtorf
 ms.topic: get-started
 ms.search.keywords: feature overview
-ms.date: 03/31/2023
-ms.author: jswymer
+ms.date: 04/30/2024
 ms.service: dynamics-365-business-central
+ms.custom: bap-template
 ---
-# <a name="ad-hoc-data-analysis"></a>Analyse de données ad hoc
+# Analyse de données ad hoc
 
-Parfois, vous devez analyser des données dans [!INCLUDE[prod_short](includes/prod_short.md)] d’une manière qui n’est pas disponible dans un rapport standard. Cette tâche est parfois appelée « analyse ad hoc ». Vous trouverez ci-dessous des liens pour vous aider à apprendre comment l’exécuter.
+Parfois, vous devez analyser des données dans [!INCLUDE[prod_short](includes/prod_short.md)] d’une manière qui n’est pas disponible dans un rapports standard. Ces analyses est parfois appelée « ad hoc ». Le tableau suivant fournit des liens vers des articles qui peuvent vous aider à apprendre à utiliser les analyses ad hoc.
 
 | À | Voir |
 | --- | --- |
-| Apprenez à analyser des données simplement en utilisant les opérations de tri, de recherche et de filtrage. | [Tri, recherche et filtrage](ui-enter-criteria-filters.md) et [FAQ sur la recherche et le filtrage](ui-search-filter-faq.yml) |
+| Apprenez à analyser des données en tri, recherche et filtrage. | [Tri, recherche et filtrage](ui-enter-criteria-filters.md) et [FAQ sur la recherche et le filtrage](ui-search-filter-faq.yml) |
 | Afficher et analyser les données d’une page dans Microsoft Excel | [Affichage et modification dans Excel](across-work-with-excel.md) |
 | Afficher et analyser les données d’un jeu de données de rapport dans Excel | [Analyse des données de rapport avec Excel et XML](report-analyze-excel.md) |
-| Afficher et analyser les données financières à l’aide des rapports financiers | [Analyses financières](bi.md) |
 | Analyser les données de la liste directement depuis une page |[Analyser les données dans la liste à l’aide du mode d’analyse des données](analysis-mode.md)|
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Vue d’ensemble de Business Intelligence et de la génération de rapports](ui-work-report.md)
 

@@ -12,4 +12,4 @@ Pour utiliser les données de démonstration Contoso Coffee, vous devez installe
 - **Jeu de données de démonstration Contoso Coffee (Code pays)**  
     Cette application ajoute du contenu spécifique au pays en plus de l’application de base.
 <br><br>
-Ajoutez les applications à une compagnie vide dans un abonnement payant ou dans le cadre d’un essai. Par exemple, créez une compagnie sans exemples de données à partir du guide de configuration assistée **Créer une nouvelle compagnie** que vous pouvez ouvrir dans la liste **Compagnies**. Ajoutez ensuite les applications depuis le [marché](../ui-extensions-install-uninstall.md#install) si elles ne sont pas déjà répertoriées sur la page **Gestion des extensions**.  
+Ajoutez les applications à une compagnie dans un abonnement payant ou dans le cadre d’un essai. Ajoutez les applications depuis le [marché](../ui-extensions-install-uninstall.md#install) si elles ne sont pas déjà répertoriées sur la page **Gestion des extensions**.

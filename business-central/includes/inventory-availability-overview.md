@@ -1,7 +1,7 @@
 ---
 author: brentholtorf
 ms.topic: include
-ms.date: 09/11/2023
+ms.date: 04/23/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
@@ -26,11 +26,11 @@ Les informations respectent également d’autres facteurs qui affectent la disp
 > [!NOTE]
 > Cette fonctionnalité nécessite que vous activiez le bouton bascule **Prélèvement et rangement suggérés** pour les emplacements que vous utilisez dans votre processus de prélèvement.
 
-### <a name="set-up-previews"></a>Configurer les versions préliminaires
+### Configurer les versions préliminaires
 
 Pour obtenir des détails sur ce qui est en cours de prélèvement et ce qui ne l’est pas, activez le bouton à bascule **Afficher le résumé (prélèvement et rangement suggérés)** sur les pages de demande **Entrepôt - Source - Créer document** ou **Entrepôt - Livraison - Créer prélèvement**.
 
-### <a name="determine-the-quantity-you-can-pick"></a>Déterminer la quantité que vous pouvez prélever
+### Déterminer la quantité que vous pouvez prélever
 
 Sur les lignes de la page **Créer résumé prélèvements entrepôt**, le champ **Qté à traiter (base)** indique quels et combien d’articles [!INCLUDE [prod_short](prod_short.md)] a essayé de prélever. Le récapitulatif **Résumé** fournit plus de détails.
 
@@ -57,7 +57,7 @@ L’image suivante illustre la quantité maximale prise en compte pour le prél�
 |B     |zones avec du contenu de type Prélèvement avec mouvement sortant bloqué         |
 |O     |Autres zones         |
 
-### <a name="reservations"></a>Réservations
+### Réservations
 
 S’il existe des réservations pour l’article en cours de prélèvement, le calcul continue. L’idée est que la demande réservée a une priorité plus élevée que la demande non réservée, ce qui signifie que le prélèvement pour la demande non réservée ne devrait pas empêcher le prélèvement ultérieure pour la demande réservée.
 
@@ -70,12 +70,29 @@ Le champ **Qté dispo. à l’exclusion de la zone de livraison** affiche la qua
 * Elles sont déjà prélevées pour les livraisons.
 * Elles se trouvent dans des numéros de lot ou de série d’articles bloqués.
 * Elles se trouvent dans des zones bloquées.
+* Elles se trouvent dans des zones réservées.
 
 Ces quantités peuvent être disponibles, mais vous ne pourrez peut-être pas encore les prélever. Elles peuvent encore se trouver dans les zones de réception, de stockage ou d’assurance qualité. Vous pouvez les déplacer vers la zone de prélèvement en traitant une feuille de calcul rangement ou mouvement.
 
 La différence entre la **Qté dispo. à l’exclusion de la zone de livraison** et la quantité réservée dans l’entrepôt est la quantité disponible pour prélèvement sans impacter le stock réservé.
 
-### <a name="other-details"></a>Autres détails
+L’image suivante illustre l’affectation de la quantité disponible pour la quantité réservée.
+
+:::image type="content" source="../media/Warehouse_Reservation_Pick.png" alt-text="Quantité maximale prise en compte pour le prélèvement lors de la réservation.":::
+
+**Légende**
+
+|Lettre  |Désignation  |
+|---------|---------|
+|P     |Quantité à prélever         |
+|TR    |Qté totale réservée en entrepôt.         |
+|RS    |Les quantités réservées qui sont déjà prélevées et prêtes pour la livraison, l’utilisation ou la consommation       |
+|A     |Qté dispo. à l’exclusion de la zone de livraison         |
+|B     |Quantité dans des zones dédiées ou bloquées, des lots d’articles bloqués ou des numéros de série         |
+
+Bien qu’il y ait suffisamment de quantité disponible dans l’entrepôt pour satisfaire complètement le prélèvement, la quantité totale réservée sera allouée aux quantités dans les zones dédiées ou bloquées, ce qui empêchera le prélèvement pour cette demande. Parce que la demande réservée a une priorité plus élevée, [!INCLUDE [prod_short](prod_short.md)] réduit la quantité à prélever pour éviter tout impact négatif, tel que l’impossibilité de prélever, sur la demande réservée.
+
+### Autres détails
 
 Si les articles nécessitent une traçabilité, vous pouvez également trouver la quantité dans des numéros de lot ou de série bloqués, ce qui entraîne les réductions suivantes :
 

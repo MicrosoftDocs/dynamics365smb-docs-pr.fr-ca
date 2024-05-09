@@ -25,5 +25,8 @@ sections:
         answer: |
           Oui. En tant qu’administrateur, développeur ou partenaire, vous pouvez modifier et créer vos propres manifestes de complément. Une façon consiste à télécharger le manifeste Contact Insights à partir de chaque environnement auquel les utilisateurs souhaitent se connecter. Modifiez ensuite les balises `<Id>` et `<DisplayName>` pour autoriser l’installation de plusieurs versions du complément. Ces modifications permettront à l’utilisateur d’installer plusieurs compléments Business Central, chacun pointant vers son propre environnement.
 
-          ![Plusieurs compléments Business Central pour Outlook.](media/outlook-multiple-addins.png) 
-additionalContent: "\n## Voir aussi\n\n[Obtenir le complément Business Central pour Outlook](admin-outlook.md)  \n[Utiliser Business\_Central en tant que boîte de réception professionnelle dans Outlook](work-outlook-addin.md)  \n\n[!INCLUDE[footer-include](includes/footer-banner.md)]\n"
+          ![Plusieurs compléments Business Central pour Outlook.](media/outlook-multiple-addins.png)
+      - question: "Le complément Outlook m’indique que la page n’est pas prise en charge. Pourquoi\_?\n"
+        answer: |
+          Certaines fonctionnalités de Business Central nécessitent un espace de travail important pour offrir une expérience exceptionnelle et ne sont pas disponibles lors de l’utilisation du volet de complément Outlook. Par exemple, aucune page de l’assistant étape par étape n’est disponible dans le volet. Pour résoudre ce problème, vous pouvez faire apparaître la page dans le complément à l’aide de l’action "Contextuel". La fenêtre contextuelle peut être étirée à n’importe quelle taille, y compris pour remplir votre écran.
+additionalContent: "\n## Voir aussi .\n\n[Obtention du complément Business Central pour Outlook](admin-outlook.md)  \n[Utiliser Business\_Central en tant que boîte de réception professionnelle dans Outlook](work-outlook-addin.md)  \n\n[!INCLUDE[footer-include](includes/footer-banner.md)]\n"

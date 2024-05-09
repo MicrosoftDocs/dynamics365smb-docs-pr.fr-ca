@@ -1,48 +1,51 @@
 ---
-title: Familiarisation avec le Grand livre et les COA
+title: Comprendre le grand livre et le plan comptable
 description: 'Décrit le grand livre, le plan comptable et les catégories de compte. Utilisez la page Configuration du grand livre pour préciser la gestion des problèmes comptables dans votre compagnie.'
 author: brentholtorf
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'analysis, history, track'
 ms.search.form: '18, 20, 37, 65, 99, 312, 314, 313, 395, 552, 569, 570, 634, 790, 791, 1158'
-ms.date: 12/19/2023
+ms.date: 04/19/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
 # Comprendre le grand livre et le plan comptable
 
-Le grand livre (GL) stocke vos données financières, et le plan comptable (COA) affiche les comptes sur lesquels toutes les écritures sont reportées. [!INCLUDE[prod_short](includes/prod_short.md)] inclut un plan comptable standard prêt à prendre en charge votre société.
+Le grand livre (GL) stocke vos données financières, et le plan comptable (COA) affiche les comptes sur lesquels vous reportez les écritures GL. [!INCLUDE[prod_short](includes/prod_short.md)] inclut un plan comptable standard prêt à prendre en charge votre société.
 
 ## Configuration du grand livre et configuration du report général
 
 La configuration du grand livre est la composante principale des processus financiers car elle définit comment vous reportez les données. Deux pages jouent un rôle particulièrement important dans la configuration de vos processus financiers :  
 
-* La page **Configuration du grand livre**
+* **Configuration du grand livre**
+* **Configuration report général**
 
-  Sur la page **Configuration du grand livre**, vous spécifiez comment gérer certains problèmes comptables dans votre compagnie, par exemple :  
+### La page **Configuration du grand livre**
 
-  * Les détails arrondissement facture  
-  * Les formats d'adresse  
-  * Rapports financiers
+Utilisez la page **Configuration du grand livre** pour spécifier comment gérer certains problèmes comptables dans votre compagnie, par exemple :  
 
-  > [!TIP]
-  > La page **Configuration du grand livre** comprend des champs génériques et des champs spécifiques à votre pays ou région. Si vous n’êtes pas sûr de la signification d’un champ, nous vous suggérons de travailler avec votre comptable pour déterminer s’il est pertinent pour votre organisation. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]  
+* Les détails arrondissement facture  
+* Les formats d'adresse  
+* Rapports financiers
 
-  Ouvrez la page [ici](https://businesscentral.dynamics.com/?page=118).
-  
-* La page **Configuration du report général**
+> [!TIP]
+> La page **Configuration du grand livre** comprend des champs génériques et des champs spécifiques à votre pays ou région. Si vous n’êtes pas sûr de la signification d’un champ, nous vous suggérons de travailler avec votre comptable pour déterminer s’il est pertinent pour votre organisation. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]  
 
-  De même, sur la page **Configuration du report général**, vous spécifiez comment vous souhaitez configurer les combinaisons de groupes de report général marché et de report général produit. Les groupes de report mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes GL. Saisissez une ligne pour chaque combinaison de groupes de report marché et de groupes de report produit. Mais vous pouvez également ouvrir chaque ligne dans sa propre fiche configuration report. Pour en savoir plus, voir [Configurations des groupes de report](finance-posting-groups.md).  
+Pour ouvrir la page maintenant, utilisez le lien suivant [Configuration du grand livre](https://businesscentral.dynamics.com/?page=118).
 
-  > [!TIP]
-  > Si vous ne pouvez pas voir les champs que vous recherchez sur la page **Configuration du report général**, utilisez la barre de défilement horizontale au bas de la page pour faire défiler l’affichage vers la droite.  
+### La page **Configuration du report général**
 
-  Ouvrez la page [ici](https://businesscentral.dynamics.com/?page=314).
+Utilisez la page **Configuration du report général** pour configurer des combinaisons de groupes de report marché et de groupes de report produits généraux. Les groupes de report mappent des entités telles que les clients, les fournisseurs, les éléments, les ressources et les documents vente et achat dans des comptes GL. Saisissez une ligne pour chaque combinaison de groupes de report marché et de groupes de report produit. Mais vous pouvez également ouvrir chaque ligne dans sa propre fiche configuration report. Pour en savoir plus, voir [Configurations des groupes de report](finance-posting-groups.md).  
+
+> [!TIP]
+> Si vous ne pouvez pas voir les champs que vous recherchez sur la page **Configuration du report général**, utilisez la barre de défilement horizontale au bas de la page pour faire défiler l’affichage vers la droite.  
+
+Pour ouvrir la page maintenant, utilisez le lien suivant [Configuration du report général](https://businesscentral.dynamics.com/?page=314).
 
 ## Le plan comptable
 
-Le plan comptable affiche tous les comptes généraux. Vous pouvez effectuer les opérations suivantes à partir du plan comptable :  
+La page **Plan comptable** affiche tous les comptes GL. Vous pouvez effectuer les opérations suivantes à partir du plan comptable :  
 
 * Afficher les rapports qui affichent les écritures et les soldes.  
 * Fermez votre état des résultats.  
@@ -50,7 +53,7 @@ Le plan comptable affiche tous les comptes généraux. Vous pouvez effectuer les
 * Consulter la liste des groupes de report pour ce compte.
 * Afficher les soldes débit et crédit d’un seul compte.
 
-Vous pouvez ajouter, modifier ou supprimer des comptes généraux. Toutefois, pour éviter les différences, vous ne pouvez pas supprimer un compte GL si ses données sont utilisées dans le plan comptable. De plus, à partir de la 2e vague de lancement 2022, vous pouvez également bloquer la suppression accidentelle de comptes pendant les périodes sensibles. Pour plus d’informations, consultez la section [Supprimer des comptes](finance-setup-chart-accounts.md#delete-accounts).  
+Pour en savoir plus, allez à [Familiarisation avec le plan comptable](finance-chart-of-accounts.md).
 
 ## Catégories de compte
 
@@ -64,7 +67,7 @@ Vous pouvez définir si des types de rapports spécifiques doivent inclure les c
 
 ### Exemple :
 
-Par exemple, le solde relevé par défaut solde est doté d’une sous-catégorie pour la *trésorerie* dans *Actifs à court terme*. Si vous souhaitez que le solde relevé tienne compte du fonds de caisse et du compte chèque, vous devez procéder comme suit :
+Par exemple, le solde relevé par défaut solde est doté d’une sous-catégorie pour la *trésorerie* dans *Actifs à court terme*. Si vous souhaitez que le solde relevé tienne compte du fonds de caisse et du compte chèque, vous pouvez donc procéder comme suit :
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Catégories de compte GL**, puis choisissez le lien associé.
    1. Sinon, ouvrez la page [ici](https://businesscentral.dynamics.com/?page=790).
@@ -81,7 +84,7 @@ Par exemple, le solde relevé par défaut solde est doté d’une sous-catégori
    3. Choisissez l’action **Déplacer vers le bas**.
    4. Sélectionnez l’action **Décaler** pour définir une indentation sous la sous-catégorie **Trésorerie**.
 
-Lorsque vous sélectionnez l’action **Générer des rapports financiers** (ou la prochaine fois que le rapport sera généré), votre relevé de solde affichera les lignes suivantes :
+Lorsque vous sélectionnez l’action **Générer des rapports financiers**, ou la prochaine fois que le rapport sera généré, votre relevé de solde affichera les lignes suivantes :
 
 * Solde total en espèces.
 * Lignes avec soldes pour le fonds de caisse et le compte courant.  
@@ -89,17 +92,20 @@ Lorsque vous sélectionnez l’action **Générer des rapports financiers** (ou 
 > [!NOTE]
 > Si vous créez un compte GL sans affecter de catégorie de compte, lorsque vous affectez le compte à un groupe de report, [!INCLUDE[prod_short](includes/prod_short.md)] attribue automatiquement la catégorie de compte du compte GL immédiatement au-dessus du compte dans votre plan comptable. Cependant, pour inclure le nouveau compte dans vos rapports financiers, vous devez choisir l’action **Générer des rapports financiers** sur la page **Catégories de compte GL**. Vous pouvez également ouvrir la page Fiche de compte GL, spécifier la catégorie de compte, puis régénérer votre rapport financier.
 
-## Obtenir un aperçu rapide
+## Accès pour créer et modifier des comptes GL et des catégories de comptes
 
-La page **Plan comptable** affiche les comptes dans une liste hiérarchique qui offre un accès rapide aux informations clés pour chaque compte. Cependant, la liste est statique et si vous avez un grand nombre de comptes, vous devrez peut-être défiler pour afficher les différents comptes. Si vous souhaitez simplement un aperçu rapide des éléments de base, tels que les variations nettes et les soldes, la page **Vue d’ensemble du plan comptable** est une alternative utile. La disposition des colonnes sur la page est maintenant la même que celle que vous trouverez sur la page **Plan comptable** (mais avec moins de colonnes), vous n’aurez donc pas à vous réorienter. Vous pouvez développer ou réduire les niveaux hiérarchiques pour condenser la vue. Pour faciliter le passage d’une page à l’autre, la page **Vue d’ensemble du plan comptable** est disponible à partir de la page **Plan comptable**.
+Dans une petite organisation, comme la compagnie de démonstration CRONUS, la plupart des utilisateurs peuvent modifier des entités financières comme les comptes GL, les catégories de compte et le plan comptable, à l’exception des utilisateurs disposant d’une licence MEMBRE D’ÉQUIPE. Cependant, les grandes organisations utilisent généralement des rôles et des autorisations d’utilisation pour limiter l’accès pour modifier les entités. Si vous êtes administrateur ou si vous avez le rôle de *Gestionnaire d’activité* ou de *Comptable*, vous pouvez contrôler les autorisations utilisateur pour vous assurer que les bonnes personnes ont accès aux tables pertinentes. Pour plus d’informations, consultez [Pour afficher ou modifier les autorisations d’un utilisateur](ui-define-granular-permissions.md#get-an-overview-of-a-users-permissions).  
 
-## Accès pour créer et modifier des comptes et des catégories de comptes
+## Utilisez des dimensions pour simplifier votre plan comptable
 
-Dans une petite organisation, comme la compagnie de démonstration CRONUS, la plupart des utilisateurs peuvent modifier le plan comptable, à l’exception des utilisateurs disposant d’une licence MEMBRE D’ÉQUIPE. Cependant, les grandes organisations utilisent généralement des rôles et des autorisations d’utilisation pour limiter l’accès pour modifier le plan comptable. Si vous êtes administrateur ou si vous avez le rôle de *Gestionnaire d’activité* ou de *Comptable*, vous pouvez contrôler les autorisations utilisateur pour vous assurer que les bonnes personnes ont accès aux tables pertinentes. Pour plus d’informations, consultez la section [Afficher ou modifier les autorisations d’un utilisateur](ui-define-granular-permissions.md#get-an-overview-of-a-users-permissions).  
+Les dimensions sont des valeurs qui permettent de catégoriser les écritures afin de pouvoir les suivre et les analyser sur les documents, tels que les documents de vente. Les dimensions peuvent, par exemple, indiquer de quel projet ou département provient une écriture. Ainsi, au lieu de configurer des comptes GL pour chaque service et projet, vous pouvez utiliser les dimensions comme base d’analyse et éviter d’avoir à créer un plan comptable compliqué.
+
+Pour en savoir plus sur les dimensions, voir [Configurer des dimensions par défaut pour les clients, les fournisseurs et d’autres comptes](finance-dimensions.md#to-set-up-default-dimensions-for-customers-vendors-and-other-accounts).
 
 ## Voir aussi .
 
-[Configurer ou modifier le plan comptable](finance-setup-chart-accounts.md)  
+[Comprendre du plan comptable](finance-chart-of-accounts.md)  
+[Utilisation des dimensions](finance-dimensions.md)  
 [Affectation des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md)  
 [Veille économique](bi.md)  
 [Finance](finance.md)  
