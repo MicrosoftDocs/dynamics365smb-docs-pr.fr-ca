@@ -10,7 +10,7 @@ ms.date: 04/23/2024
 ms.author: altotovi
 --- 
 
-# Rapport sur les pratiques de paiement  
+# <a name="payment-practices-report"></a>Rapport sur les pratiques de paiement
 
 Certains pays/régions exigent que les compagnies déclarent les délais de paiement de leurs fournisseurs tels que définis par les autorités locales. Ces rapports peuvent être basés sur différentes sources et peuvent trier les fournisseurs en fonction de leur taille ou de leurs modalités de paiement définies, fournissant ainsi des rapports aux fournisseurs sur les éléments suivants, comme l’exigent les autorités locales :  
 
@@ -23,7 +23,7 @@ Les utilisateurs peuvent sélectionner la période pour laquelle ils souhaitent 
 > [!NOTE]
 > Cette déclaration est jusqu’à présent requise dans certains pays, mais il s’agit d’une fonctionnalité mondiale qui peut être utilisée partout. Actuellement, chaque année, les compagnies suédoises de 250 employés et plus doivent déclarer au Bureau suédois d’enregistrement des compagnies les délais de paiement dont elles disposent pour les achats auprès de compagnies plus petites qu’elles. Des lois similaires existent au Royaume-Uni, en Australie et en Nouvelle-Zélande.  
 
-## Générer le rapport 
+## <a name="generate-the-report"></a>Générer le rapport
 
 Pour exécuter le rapport **Pratiques de paiement** , procédez comme suit :
 
@@ -47,7 +47,7 @@ Pour exécuter le rapport **Pratiques de paiement** , procédez comme suit :
 6. À partir de tous les champs calculés, vous pouvez approfondir la façon dont ce résultat a été calculé en ouvrant la page **Liste des données sur les pratiques de paiement** .
 7. Si vous souhaitez imprimer le document, vous pouvez le faire en exécutant l’action **Imprimer** .
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Rapports financiers](finance-reports.md)  
 [Analyse des états financiers dans Microsoft Excel](finance-analyze-excel.md)  
