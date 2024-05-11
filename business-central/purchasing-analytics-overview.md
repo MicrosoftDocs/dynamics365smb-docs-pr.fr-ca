@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
 
-# <a name="analytics-in-purchasing"></a>Analyses dans achats
+# Analyses dans achats
 
 Les entreprises capturent des lots de données au cours de leurs activités quotidiennes, ce qui soutient une précieuse BI pour les gestionnaires d'achats :
 
@@ -30,7 +30,7 @@ Chacune de ces fonctionnalités présente ses avantages et inconvénients, selon
 
 Cet article vous présente comment d’utiliser ces fonctionnalités analytiques pour obtenir des informations achats.
 
-## <a name="analytics-needs-in-purchasing"></a>Besoins analytiques en achats
+## Besoins analytiques en achats
 
 Lorsque l’on réfléchit aux besoins d’analyse en achats, il peut être utile d’utiliser un modèle basé sur une personne décrites à un niveau élevé des différents besoins en matière d’analyse.
 
@@ -47,14 +47,14 @@ Les personnes occupant différents rôles ont des besoins différents en matièr
 |Chargé d’achat / Agent d’achat | Informations détaillées     | Rapports exploitation prédéfinis <br> Données de tâche à l’écran |
 
 <!-- 
-## <a name="purchasing-kpis"></a>Purchasing KPIs
+## Purchasing KPIs
 
 A key performance indicator (KPI) is a measurable value that shows how effectively you’re meeting your goals. In purchasing management, people often use the following KPIs to monitor their organization's purchasing performance:
 
 - TODO  
 -->
 
-## <a name="use-financial-reporting-to-produce-financial-statements-and-kpis-related-to-purchasing"></a>Utiliser les rapports financiers pour produire des états financiers et des indicateurs de performance clés (associés aux achats)
+## Utiliser les rapports financiers pour produire des états financiers et des indicateurs de performance clés (associés aux achats)
 
 La fonctionnalité **Financial Reporting** vous donne un aperçu des données financières affichées dans votre plan comptable (COA). Vous pouvez configurer les rapports financiers pour analyser les chiffres dans les comptes du grand livre (GL) et comparer les écritures GL et les écritures budget. Spécifiquement pour les achats, vous pouvez configurer des rapports financiers sur les comptes du grand livre (GL) que vous utilisez pour suivre les reports d’achat.
 
@@ -62,13 +62,13 @@ Les dimensions jouent un rôle important dans la veille économique. Une dimensi
 
 Pour en savoir plus sur les rapports financiers, voir [Préparer des rapports financiers avec des données financières et des catégories de compte](bi-how-work-account-schedule.md).
 
-## <a name="finance-reporting-across-business-units-or-legal-entities-related-to-purchasing"></a>Rapports financiers entre les unités fonctionnelles ou les entités juridiques (associés aux achats)
+## Rapports financiers entre les unités fonctionnelles ou les entités juridiques (associés aux achats)
 
 Certaines organisations utilisent [!INCLUDE [prod_short](includes/prod_short.md)] dans plusieurs unités fonctionnelles ou entités juridiques. D’autres utilisent [!INCLUDE [prod_short](includes/prod_short.md)] dans les filiales qui rendent compte aux organisations mères. [!INCLUDE [prod_short](includes/prod_short.md)] fournit aux comptables des outils qui les aident à transférer les écritures de deux ou plusieurs compagnies (filiales) dans une compagnie consolidée. Spécifiquement pour la gestion des achats, vous souhaiterez peut-être consolider les écritures GL pour vos comptes achats pour suivre les indicateurs de performances clés de vente dans les unités fonctionnelles ou les entités juridiques.
 
 Pour en savoir plus, reportez-vous à [Consolidation de la compagnie](finance-consolidated-company-reporting.md).
 
-## <a name="ad-hoc-analysis-of-purchasing-data"></a>Analyse ad hoc des données achats
+## Analyse ad hoc des données achats
 
 Parfois, il suffit de vérifier si les chiffres s’additionnent correctement ou de confirmer rapidement un chiffre. Les fonctionnalités suivantes sont idéales pour les analyses ad hoc :
 
@@ -88,7 +88,7 @@ De la même manière, vous pouvez utiliser le **Ouvrir dans Excel** action pour 
 
 Pour en savoir plus sur la manière d’effectuer une analyse ad hoc des données d’achat, accédez à [Analyse ad hoc des données d’achat](ad-hoc-analysis-purchasing.md).
 
-## <a name="built-in-reports-for-purchasing"></a>Rapports intégrés pour l'achat
+## Rapports intégrés pour l'achat
 
 [!INCLUDE [prod_short](includes/prod_short.md)] comprend plusieurs rapports intégrés, fonctions de traçage et outils pour aider les organisations d’achat à créer des rapports sur leurs données.
 
@@ -103,13 +103,13 @@ Pour obtenir un aperçu des rapports disponibles, choisir sur **Tous les rapport
 
 Pour en savoir plus sur les rapports pertinents pour les achats, accédez aux [Rapports d’achat intégrés](purchase-reports.md).
 
-## <a name="on-screen-purchasing-analytics"></a>Analyse des achats à l’écran
+## Analyse des achats à l’écran
 
 [!INCLUDE [prod_short](includes/prod_short.md)] comporte plusieurs pages qui vous donnent des aperçus des achats et des tâches à accomplir. Voici un exemple pour commencer :
 
 - [Calculer les dates des achats](purchasing-date-calculation-for-purchases.md)
 
-### <a name="show-purchasing-related-general-ledger-entries-and-balances-from-the-chart-of-accounts-page"></a>Afficher les écritures et les soldes du grand livre liés aux achats à partir de la page Plan comptable
+### Afficher les écritures et les soldes du grand livre liés aux achats à partir de la page Plan comptable
 
 La page Plan comptable affiche tous les comptes du grand livre avec des chiffres agrégés reportés dans le grand livre. À partir de cette page, vous pouvez faire des choses comme :  
 
@@ -123,7 +123,7 @@ Spécifiquement pour les achats, vous pouvez créer une vue sur la page Plan com
 
 Pour en savoir plus, allez à [Familiarisation avec le plan comptable](finance-general-ledger.md#the-chart-of-accounts).
 
-### <a name="analyze-data-by-dimensions-related-to-purchasing"></a>Analyser des données par dimensions (associées aux achats)
+### Analyser des données par dimensions (associées aux achats)
 
 Les dimensions sont des valeurs qui permettent de catégoriser les écritures afin de pouvoir les suivre et les analyser sur des documents, tels que des bons de commande. Les dimensions peuvent, par exemple, indiquer de quel projet ou département provient une écriture.  
 
@@ -131,7 +131,7 @@ Au lieu de configurer des comptes GL distincts pour chaque service ou site, vous
 
 Pour plus d’informations, voir [Analyser des données par dimensions](bi-how-analyze-data-dimension.md).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Consolidation de la compagnie](finance-consolidated-company-reporting.md)  
 [Préparer des rapports financiers avec des données financières et des catégories de compte](bi-how-work-account-schedule.md)  
