@@ -21,6 +21,13 @@ Parfois, vous devez analyser des données dans [!INCLUDE[prod_short](includes/pr
 | Afficher et analyser les données d’un jeu de données de rapport dans Excel | [Analyse des données de rapport avec Excel et XML](report-analyze-excel.md) |
 | Analyser les données de la liste directement depuis une page |[Analyser les données dans la liste à l’aide du mode d’analyse des données](analysis-mode.md)|
 
+## Analyse de données ad hoc par domaine fonctionnel
+
+Le contenu général sur les analyses de données ad hoc est également disponible dans des versions spéciales pour de nombreux domaines fonctionnels [!INCLUDE[prod_short](includes/prod_short.md)]. 
+
+[!INCLUDE[ad-hoc-analysis-scenarios-table](includes/ad-hoc-analysis-scenarios-table.md)]
+
+
 ## Voir aussi .
 
 [Vue d’ensemble de Business Intelligence et de la génération de rapports](ui-work-report.md)

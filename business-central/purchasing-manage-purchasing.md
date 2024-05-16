@@ -22,21 +22,66 @@ Les produits peuvent être des articles en inventaire et des services. Pour plus
 
 Pour tous les processus d'achat, vous pouvez incorporer un flux de travail d'approbation, par exemple, pour exiger que les achats en grande quantité soient approuvés par le responsable de la comptabilité. Pour plus d'informations, reportez-vous à [Utilisation des flux d'approbation](across-how-use-approval-workflows.md).
 
-Le tableau suivant décrit une série de tâches et inclut des liens vers les articles qui les décrivent.
+Le section suivant décrit une série de tâches et inclut des liens vers les articles qui les décrivent.
+
+## Démarrer avec les capacités achat
+
+Avant d’acheter des marchandises, précisez comment vous souhaitez gérer les processus d’achat de votre compagnie.
+
+|Pour...| Voir |
+|---|---|
+| Configurez les règles et les valeurs qui définissent les stratégies d’achat de votre compagnie. | [Configuration des achats](purchasing-setup-purchasing.md) |
+| Enregistrez chaque fournisseur à qui vous achetez des biens en tant que fiche fournisseur. | [Enregistrement des nouveaux fournisseurs](purchasing-how-register-new-vendors.md) |
+
+## Analyse des achats
+
+Cette section décrit les outils analytiques que vous pouvez utiliser pour obtenir des informations sur vos processus achats.
+
+| Pour... | Voir |
+| --- | --- |
+| Découvrez les fonctionnalités d’analyse des données de achats. | [Vue d’ensemble de l’analyse achats](purchasing-analytics-overview.md) |
+| Effectuez une analyse ad hoc des données de achats directement sur les pages de liste et les requêtes. | [Analyse ad hoc des données achats](ad-hoc-analysis-purchasing.md) |
+| Explorez des rapports d’achat intégrés. | [Rapports achat intégrés](purchase-reports.md) |
+
+## Devis de commande à facture de achat
+
+Le tableau suivant décrit comment utiliser des processus de achat simples.
 
 | À | Voir |
 | --- | --- |
-| Créer une facture achat pour enregistrer votre entente avec un fournisseur pour acheter des biens selon certaines méthodes de livraison et de paiement. |[Enregistrer des achats](purchasing-how-record-purchases.md) |
 |Créez une devis pour refléter une demande de devis auprès de votre fournisseur, que vous pourrez ensuite convertir en bon de commande.|[Demander des devis](purchasing-how-request-quotes.md)|
-| Créer une facture achat pour toutes les lignes ou pour les lignes sélectionnées sur une facture vente. |[Acheter des articles pour une vente](purchasing-how-purchase-products-sale.md) |
-|Comprendre ce qui se passe lorsque vous reportez des documents achat.|[Report des achats](ui-post-purchases.md)|
+| Créer une facture achat pour toutes les lignes ou pour les lignes sélectionnées sur une facture vente. |[Achat des articles pour une vente](purchasing-how-purchase-products-sale.md) |
+| Créer une facture achat pour enregistrer votre entente avec un fournisseur pour acheter des biens selon certaines méthodes de livraison et de paiement. |[Enregistrement des achats](purchasing-how-record-purchases.md) |
+| Découvrez comment [!INCLUDE[prod_short](includes/prod_short.md)] calcule le moment où vous devez commander un article pour le recevoir à une certaine date.|[Calcul de la date des achats](purchasing-date-calculation-for-purchases.md)|
+|Comprendre ce qui se passe lorsque vous reportez des documents achat.|[Validation des achats](ui-post-purchases.md)|
+
+Si vous avez besoin de processus de achat plus complexes, le tableau suivant répertorie les articles qui expliquent ce que vous pouvez faire avec [!INCLUDE[prod_short](includes/prod_short.md)].
+
+| À | Voir |
+| --- | --- |
 | Effectuez une action sur une facture achat reportée impayée pour créer automatiquement une note de crédit et annulez la facture achat ou recréez-la pour que vous puissiez y apporter des corrections. |[Corriger ou annuler des factures vente impayées](purchasing-how-correct-cancel-unpaid-purchase-invoices.md) |
 | Créez une note de crédit achat pour rétablir une facture achat reportée spécifique pour indiquer quels produits vous retournez au fournisseur et quel montant règlement vous récupérez. |[Traitement des retours ou annulations d’achats](purchasing-how-process-purchase-returns-cancellations.md) |
-|Préparez la facturation de plusieurs réceptions provenant du même fournisseur en une seule fois en regroupant les réceptions sur une facture.|[Regroupement de bons de réception sur une seule facture](purchasing-how-to-combine-receipts.md)|
-|Conversion, par exemple, de factures électroniques de vos fournisseurs en factures achat dans Business Central.|[Recevoir et convertir des documents électroniques](purchasing-how-to-receive-and-convert-electronic-documents.md)|
-| Découvrez comment [!INCLUDE[prod_short](includes/prod_short.md)] calcule le moment où vous devez commander un article pour le recevoir à une certaine date.|[Calcul de la date des achats](purchasing-date-calculation-for-purchases.md)|
-|Résolvez la confusion lorsque deux enregistrements ou plus existent pour le même fournisseur.|[Fusionner l'enregistrement des doublons](sales-how-merge-duplicate-records.md)|
 |Gérez votre engagement envers un fournisseur à acheter de grandes quantités livrées en plusieurs livraisons sur une certaine période.|[Utiliser des bons de commande permanents](sales-how-to-create-blanket-sales-orders.md)|
+
+
+## Commandes annulées, remboursements et retours
+
+Le tableau suivant décrit comment gérer les commandes annulées, les remboursements et les retours de marchandises achetés.
+
+| À | Voir |
+| --- | --- |
+|Préparez la facturation de plusieurs réceptions provenant du même fournisseur en une seule fois en regroupant les réceptions sur une facture.|[Regroupement de bons de réception sur une seule facture](purchasing-how-to-combine-receipts.md)|
+|Conversion, par exemple, de factures électroniques de vos fournisseurs en factures achat dans Business Central.|[Réception et conversion des documents électroniques](purchasing-how-to-receive-and-convert-electronic-documents.md)|
+
+
+## Autres processus de vente
+
+Le tableau suivant décrit comment traiter autres des processus de achat.
+
+| À | Voir |
+| --- | --- |
+|Résolvez la confusion lorsque deux enregistrements ou plus existent pour le même fournisseur.|[Fusion des enregistrements en double](sales-how-merge-duplicate-records.md)|
+
 
 ## Numéros de document externe
 
@@ -46,8 +91,8 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ar
 
 [Définition des achats](purchasing-setup-purchasing.md)  
 [Enregistrement des nouveaux fournisseurs](purchasing-how-register-new-vendors.md)  
+[Vue d’ensemble de l’analyse achats](purchasing-analytics-overview.md)   
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
-[Gestion des projets](projects-manage-projects.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Fonctionnalités marché](ui-across-business-areas.md)
 

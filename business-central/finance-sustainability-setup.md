@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'Sustainability, ESG, emission, GHG, CSRD'
 ms.search.form: null
-ms.date: 04/02/2024
+ms.date: 04/24/2024
 ms.author: altotovi
 ms.service: dynamics-365-business-central
 ---
 
-# <a name="sustainability-setup"></a>Configuration de durabilité
+# Configuration de durabilité  
 
 Pour que le module durabilité fonctionne correctement, vous devez d’abord configurer certains contrôles et instructions de base liés à l’ensemble des fonctionnalités.  
 
@@ -28,6 +28,10 @@ Pour mettre en place un module de durabilité, suivez les étapes suivantes :
 | **Centre de gestion obligatoire** | Spécifie si le Centre de gestion est obligatoire, car le Centre de gestion peut être utilisé comme installation pour mesurer les émissions des installations. Vous pouvez utiliser ce champ dans les journaux sans le configurer, mais vous pouvez le sélectionner si vous souhaitez obliger les utilisateurs à remplir le champ avant d’effectuer le report. |
 | **Bloquer la modification de base de calcul s’il existe des écritures** | Précise si le changement de base de calcul au niveau de la catégorie de compte est bloqué au moment de la saisie de la durabilité, ce qui signifie que cette formule a déjà été appliquée. |
 | **Activer la vérification des erreurs en arrière-plan** | Spécifie si la vérification des erreurs en arrière-plan des lignes journal durabilité est activée. |
+
+> [!NOTE]
+> Après avoir activé ou désactivé la **Vérification des erreurs en arrière-plan** dans les journaux, vous devrez vous reconnecter avant de démarrer la nouvelle configuration.
+ 
 
 3.  Sur le **Calculs** Raccourci, configurez les champs obligatoires liés aux formules utilisées pour calculer les émissions :  
 
@@ -49,12 +53,12 @@ Pour mettre en place un module de durabilité, suivez les étapes suivantes :
 >[!NOTE]
 > Dans la version 24.0, [!INCLUDE[prod_short](includes/prod_short.md)] ne prend pas en charge la déclaration à une autorité. Donc, le champ lié à la configuration sur le raccourci **Rapports** sera utilisé pour les futures fonctionnalités de génération de rapports, mais il pourra également être utilisé par les partenaires dans les versions localisées.
 
-## <a name="see-also"></a>Voir aussi .
-[Finances](finance.md)    
-[Graphique des comptes de durabilité et de comptabilité](finance-manage-sustainability.md)
-[Configuration du développement durable](finance-sustainability-accounts-ledger.md)
-[Comment enregistrer les émissions](finance-sustainability-journal.md)
-[Travailler avec [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+## Voir aussi .  
+[Finances](finance.md)  
+[Vue d’ensemble de la gestion de la durabilité](finance-manage-sustainability.md)    
+[Graphique des comptes de durabilité et de comptabilité](finance-sustainability-accounts-ledger.md)    
+[Procédure pour enregistrer des émissions](finance-sustainability-journal.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

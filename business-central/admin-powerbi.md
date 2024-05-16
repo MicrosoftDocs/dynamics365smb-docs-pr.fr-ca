@@ -1,6 +1,6 @@
 ---
 title: "Introduction à Business\_Central et Power BI"
-description: "Obtenez une vue d’ensemble de l’utilisation de Power BI pour obtenir des informations, des informations décisionnelles et des indicateurs de performance clés à partir de vos données Business\_Central."
+description: "Obtenez une vue d’ensemble de l’utilisation de Power BI pour obtenir des informations et des indicateurs de performance clés à partir de vos données Business\_Central."
 author: jswymer
 ms.topic: overview
 ms.search.keywords: 'account schedule, analysis, reporting, financial report, business intelligence, KPI'
@@ -25,7 +25,7 @@ Il existe différentes fonctionnalités pour utiliser [!INCLUDE[prod_short](incl
 
 |Fonctionnalité|Désignation|En ligne|On-premises|En savoir plus|
 |-------|-----------|--------------|-----------|----------------|
-|Afficher les données [!INCLUDE[prod_short](includes/prod_short.md)] dans Power BI|Vous pouvez consulter vos données depuis [!INCLUDE[prod_short](includes/prod_short.md)] dans les rapports dans Power BI. [!INCLUDE[prod_short](includes/prod_short.md)] en ligne comprend des rapports Power BI prédéfinis. Ou votre organisation a peut-être mis à votre disposition certains rapports personnalisés.|![Fonctionne en ligne.](media/check.png)|![Fonctionne en local](media/check.png)|[Ici...](across-working-with-powerbi.md)|
+|Afficher les données [!INCLUDE[prod_short](includes/prod_short.md)] dans Power BI|Vous pouvez consulter vos données depuis [!INCLUDE[prod_short](includes/prod_short.md)] dans les rapports dans Power BI. [!INCLUDE[prod_short](includes/prod_short.md)] en ligne comprend des rapports Power BI prédéfinis. Ou votre organisation peut disposer de certains rapports personnalisés.|![Fonctionne en ligne.](media/check.png)|![Fonctionne en local](media/check.png)|[Ici...](across-working-with-powerbi.md)|
 |Afficher les rapports Power BI dans le client [!INCLUDE[prod_short](includes/prod_short.md)].| Les rapports Power BI qui affichent les données [!INCLUDE[prod_short](includes/prod_short.md)] peuvent être intégrés directement dans les pages [!INCLUDE[prod_short](includes/prod_short.md)] des composants. Vous pouvez changer de partie pour afficher tout rapport mis à votre disposition. |![fonctionne en ligne.](media/check.png)|![Fonctionne en local](media/check.png)<sup>[*](#onprem)</sup>|[Ici...](across-working-with-powerbi.md).|
 |Créez des rapports et des tableaux de bord dans Power BI qui affichent les données [!INCLUDE[prod_short](includes/prod_short.md)].|Utilisez Power BI Desktop pour créer vos propres rapports et tableaux de bord. Vous pouvez publier les rapports vers votre propre service Power BI ou les partager avec tous les utilisateurs de votre organisation.|![Fonctionne en ligne.](media/check.png)|![fonctionne en local](media/check.png)|[Ici...](across-how-use-financials-data-source-powerbi.md)|
 |Applications [!INCLUDE[prod_short](includes/prod_short.md)] dans Power BI| [!INCLUDE[prod_short](includes/prod_short.md)] publie trois applications pour Power BI sur Microsoft AppSource. Ces applications créent des rapports et des tableaux de bord détaillés dans votre service Power BI pour visualiser les données [!INCLUDE[prod_short](includes/prod_short.md)]. Les applications disponibles incluent : <ul><li>[!INCLUDE [prod_long](includes/prod_long.md)] - CRM </li><li>[!INCLUDE [prod_long](includes/prod_long.md)] - Finance </li><li>[!INCLUDE [prod_long](includes/prod_long.md)] - Sales </li></ul>  |![Fonctionne en ligne.](media/check.png)||[Ici...](across-powerbi-business-central-apps.md)|
@@ -35,7 +35,7 @@ Il existe différentes fonctionnalités pour utiliser [!INCLUDE[prod_short](incl
 
 ## Prise en main de Power BI
 
-Il y a quelques tâches à effectuer avant de pouvoir commencer à utiliser Power BI avec [!INCLUDE[prod_short](includes/prod_short.md)]. <!-- Some of the tasks are typically only done by administrators or super users.--> Les tâches dépendront de votre rôle dans votre organisation et de ce que vous voulez faire avec Power BI :
+Il y a quelques tâches à effectuer avant de pouvoir commencer à utiliser Power BI avec [!INCLUDE[prod_short](includes/prod_short.md)].<!-- Some of the tasks are typically only done by administrators or super users.--> Les tâches dépendent de votre rôle dans votre organisation et de ce que vous voulez faire avec Power BI :
 
 - En tant qu’*utilisateur professionnel*, vous voulez voir les rapports Power BI dans Power BI Service ou dans Business Central.
 - En tant qu’*administrateur*, vous êtes responsable de la gestion des paramètres à l’échelle de l’organisation qui contrôlent la façon dont Business Central et Power BI fonctionnent.
@@ -48,25 +48,6 @@ Il y a quelques tâches à effectuer avant de pouvoir commencer à utiliser Powe
 |Exposer les données Business Central à Power BI||![c’est une coche.](media/check.png)|![encore une coche](media/check.png)|[Exposer des données via des pages API ou des services Web OData](admin-powerbi-setup.md#exposedata)
 |Activer l’intégration de Power BI<br />(en local uniquement)||![c’est une coche.](media/check.png)||[Configurer Business Central en local pour l’intégration Power BI](across-working-with-business-central-in-powerbi.md#setup)|
 
-## Suivre vos KPI métier avec les mesures Power BI
-
-Si vous utilisez Power BI sur les données [!INCLUDE[prod_short](includes/prod_short.md)], il est facile de suivre les KPI ou les mesures qui sont importants pour vous. 
-
-Avec les mesures dans Power BI, vous pouvez organiser vos propres mesures et les suivre par rapport à des objectifs métier clés, dans un seul volet. Cette fonctionnalité améliore la culture des données en favorisant la responsabilité, l’alignement et la visibilité pour les équipes et les initiatives au sein des organisations. 
-
-Suivez ce processus en quatre étapes pour configurer les mesures Power BI :
-
-1. Créez un tableau de bord dans le service Power BI. En savoir plus sur [Créer des tableaux de bord dans Power BI](/power-bi/create-reports/service-goals-create).  
-2. Ajoutez les _mesures_ que vous souhaitez suivre en vous connectant à votre rapport Power BI sur la télémétrie. En savoir plus sur [Créer des mesures connectées](/power-bi/create-reports/service-goals-create-connected).  
-3. Pour ajouter des alertes, définissez des règles d’état pour vos mesures. Pour en savoir plus, voir [Créer des règles d'état automatisées pour les mesures](/power-bi/create-reports/service-metrics-status-rules).  
-
-    Cette étape automatise les mises à jour d’état en fonction des règles qui régissent cette mesure. Les règles déclenchent des modifications en fonction de la valeur, du pourcentage de l’objectif atteint, des conditions de date ou d’une combinaison des trois, ce qui rend les règles aussi versatiles que possible. Pour les mesures connectées, ces règles d’état sont actualisées à chaque actualisation des données de votre tableau de bord.
-4. Enfin, suivez les mesures pour recevoir des alertes dans Teams ou par courriel. Pour en savoir plus, rendez-vous sur [Suivre vos mesures](/power-bi/create-reports/service-metrics-follow).  
-
-Pour plus d’informations sur les mesures Power BI, voir [Bien démarrer avec les mesures dans Power BI](/power-bi/create-reports/service-goals-introduction).
-
-> [!NOTE]
-> À partir de la 2e vague de lancement 2023 de Business Central, il est possible d’intégrer des tableaux de bord à partir de mesures Power BI dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
 ## Étapes suivantes
 
@@ -75,8 +56,8 @@ Pour plus d’informations sur les mesures Power BI, voir [Bien démarrer avec l
 
 ## Voir aussi .
 
-[Veille économique](bi.md)  
-[Configurer [!INCLUDE[prod_short](includes/prod_short.md)]](setup.md)  
+[Présentation des analyses](reports-bi-reporting.md)   
+[Suivre vos KPI Power BI avec les mesures](track-kpis-with-power-bi-metrics.md)   
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)] comme source de données Power BI](across-how-use-financials-data-source-powerbi.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)] comme source de données Power Apps](across-how-use-financials-data-source-powerapps.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)] dans Power Automate](across-how-use-financials-data-source-flow.md)  

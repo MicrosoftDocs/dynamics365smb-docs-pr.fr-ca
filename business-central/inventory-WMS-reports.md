@@ -44,8 +44,20 @@ Après avoir installé l’application, vous pouvez utiliser l’action **Imprim
 > [!NOTE]
 > Certaines imprimantes et formats de codes-barres/QR nécessitent une implémentation spécifique. Vous devrez peut-être télécharger un autre modèle Word ou cloner le rapport pour créer votre propre version personnalisée.
 
+
+## Explorer les rapports d’inventaire avec l’Explorateur de rapports
+
+Pour obtenir un aperçu des rapports disponibles pour inventaire, choisissez **Tous les rapports** sur votre page d’accueil. Cette Action ouvre l’explorateur de rôles, qui est filtré selon les fonctionnalités du **Rapport et analyse** option. Sous l’en-tête **Ventes et marketing** , choisissez **Explorer**.
+
+:::image type="content" source="media/report-explorer-sales.png" alt-text="Exemple de rapports sur le centre de rôle finance." lightbox="media/report-explorer-sales.png":::
+
+Pour en savoir plus, voir [Recherche de rapports avec l’explorateur de rôles](ui-role-explorer.md).
+
+
 ## Voir aussi .
 
+[Analyse ad hoc des données d’inventaire](ad-hoc-analysis-inventory.md)  
+[Vue d’ensemble de l’analyse de l’inventaire](inventory-analytics-overview.md)   
 [Configuration de stock](inventory-setup-inventory.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  

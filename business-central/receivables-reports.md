@@ -14,16 +14,23 @@ ms.service: dynamics-365-business-central
 
 Pour vous aider à gérer votre comptabilité client dans [!INCLUDE [prod_short](includes/prod_short.md)], des rapports et des analyses standard sont intégrés. Ils vont au-delà des contraintes des rapports traditionnels pour vous aider à concevoir efficacement divers types de rapports.  
 
+
 ## Rapports
+
 [!INCLUDE [receivable_reports](includes/receivable-reports-include.md)]
 
-## Voir aussi
 
-[Analyse des états financiers dans Microsoft Excel](finance-analyze-excel.md)  
-[Utiliser des dimensions](finance-dimensions.md)  
-[Gestion des immobilisations](fa-manage.md)  
-[Vue d’ensemble des fonctionnalités locales](about-localization.md)  
+## Explorez les rapports finances avec l’Explorateur de rapports
+
+[!INCLUDE [finance_reports_report_explorer](includes/finance-reports-report-explorer-include.md)]
+
+
+## Voir aussi .
+
+[Rapports financiers clés](finance-reports.md)  
+[Analyse ad hoc sur données financières](ad-hoc-analysis-finance.md)   
+[Analyses financières](bi.md)   
+[Analyse vente](sales-analytics-overview.md)  
 [Expériences de comptable dans [!INCLUDE[prod_long](includes/prod_long.md)]](finance-accounting.md)  
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

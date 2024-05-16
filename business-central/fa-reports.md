@@ -17,9 +17,15 @@ Pour vous aider à gérer vos immobilisations dans [!INCLUDE [prod_short](includ
 [!INCLUDE [fa_reports](includes/fa-reports-include.md)]
 
 
+## Explorez les rapports finances avec l’Explorateur de rapports
+[!INCLUDE [finance_reports_report_explorer](includes/finance-reports-report-explorer-include.md)]
+
+
 ## Voir aussi .
 
+[Analyse ad hoc des données Immobilisations](ad-hoc-analysis-fa.md)     
 [Vue d’ensemble de l’analyse des immobilisations](fa-analytics-overview.md)   
+[Présentation des analyses financières](bi.md)   
 [Gestion des immobilisations](fa-manage.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

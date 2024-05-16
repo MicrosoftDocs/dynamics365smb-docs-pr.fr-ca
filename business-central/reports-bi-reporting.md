@@ -40,7 +40,7 @@ La fonctionnalité Rapports financiers vous donne un aperçu des données financ
 
 :::image type="content" source="media/acc_schedule_13_columns.jpg" alt-text="Capture d’écran d’un rapport financiers." lightbox="media/acc_schedule_13_columns.jpg":::
 
-Les dimensions jouent un rôle important dans la veille économique. Une dimension correspond à des données que vous pouvez ajouter à une écriture en tant que paramètre. Les dimensions vous permettent de regrouper des écritures dotées de caractéristiques similaires, telles que les clients, les régions, les produits et les représentants, et de récupérer facilement ces groupes à des fins d’analyse. Entre autres objectifs, vous utilisez des dimensions lors de la définition de vues d’analyse et de la création de rapports financiers. Pour plus d’informations, consultez [Utiliser les dimensions](finance-dimensions.md).
+Les dimensions jouent un rôle important dans la veille économique. Une dimension correspond à des données que vous pouvez ajouter à une écriture en tant que paramètre. Les dimensions vous permettent de regrouper les entrées présentant des caractéristiques similaires. Par exemple, des groupes de clients, des régions, des produits et un représentant. Les groupes facilitent la récupération des données à des fins d’analyse. Entre autres objectifs, vous utilisez des dimensions lors de la définition de vues d’analyse et de la création de rapports financiers. Pour plus d’informations, consultez [Utiliser les dimensions](finance-dimensions.md).
 
 Pour en savoir plus sur les états financiers et les KPI, consultez [Utiliser de Financial Reporting pour produire des états financiers et des KPI](bi.md).
 
@@ -61,7 +61,7 @@ Pour en savoir plus sur les KIP, alle zà [Utilisation d’indicateurs de perfor
 
 ## Analyse de données ad hoc
 
-Parfois, vous souhaiterez peut-être simplement vérifier si les chiffres s’additionnent correctement, confirmer ou infirmer rapidement une hypothèse sur l’entreprise, ou peut-être rechercher des anomalies dans vos données financières. Pour les analyses ad hoc, il se peut que vous ne disposiez pas d’un rapport intégré permettant de répondre à vos questions. Pour les analyses ad hoc, utilisez ces deux fonctionnalités :
+Vous souhaiterez peut-être simplement vérifier si les chiffres s’additionnent correctement, confirmer ou infirmer rapidement une hypothèse sur l’entreprise, ou peut-être rechercher des anomalies dans vos données financières. Pour les analyses ad hoc, il se peut que vous ne disposiez pas d’un rapport intégré permettant de répondre à vos questions. Pour les analyses ad hoc, utilisez ces deux fonctionnalités :
 
 - Analyses des données sur les pages de listes comptables
 - Ouvrir dans Excel
@@ -77,7 +77,7 @@ De la même manière, vous pouvez utiliser le **Ouvrir dans Excel** action pour 
 > [!TIP]
 > Si vous configuré OneDrive pour les fonctionnalités système, le classeur Excel s’ouvre dans votre navigateur à l’aide d’Excel pour le Web.
 
-Pour en savoir plus sur les analyses ad-hoc, accédez à [Analyse de données ad hoc](reports-adhoc-analysis.md).
+Pour en savoir plus sur les analyses ad hoc, accédez à [Analyse de données ad hoc](reports-adhoc-analysis.md).
 
 ## Rapports
 
@@ -107,7 +107,7 @@ Le tableau suivant répertorie les articles sur l’utilisation des rapports int
 
 ## Business Intelligence externe et outils de rapport
 
-Si vous préférez utiliser des outils de Business Intelligence qui ne sont pas intégrés dans [!INCLUDE[prod_short](includes/prod_short.md)], le tableau suivant fournit des liens vers des conseils sur les outils et les manières d’utiliser les outils externes.
+Si vous préférez, vous pouvez utiliser des outils de BI qui ne sont pas intégrés [!INCLUDE[prod_short](includes/prod_short.md)]. Le tableau suivant fournit des liens vers des conseils et des façons d’utiliser des outils externes.
 
 | À  | Voir |
 | --- | --- |
@@ -116,6 +116,18 @@ Si vous préférez utiliser des outils de Business Intelligence qui ne sont pas 
 | Extraction de données vers des entrepôts de données ou des lacs de données| [Comment extraction de données vers des entrepôts de données ou des lacs de données](/dynamics365/business-central/dev-itpro/performance/performance-developer#efficient-extracts-to-data-lakes-or-data-warehouses) |
 | Analyser les données Business Central dans Microsoft Fabric| [Introduction à Microsoft Fabric et Business Central](admin-fabric.md) |
 | Lire les données métier à partir de Business Central avec API | [Business Central API v2.0](/dynamics365/business-central/dev-itpro/api-reference/v2.0/) |
+
+## Analyses par domaine fonctionnel
+
+Le contenu de cet article général est également disponible dans des versions spéciales pour de nombreux domaines fonctionnels [!INCLUDE[prod_short](includes/prod_short.md)].
+
+| Utilisation de... | Voir |
+| --- | --- |
+| Finances | [Analyses financières](bi.md) |
+| Ventes | [Analyse vente](sales-analytics-overview.md) |
+| Procédure achat | [Analyse des achats](purchasing-analytics-overview.md) |
+| Gestion des immobilisations | [Analyse des immobilisations](fa-analytics-overview.md) |
+
 
 ## Voir aussi .
 

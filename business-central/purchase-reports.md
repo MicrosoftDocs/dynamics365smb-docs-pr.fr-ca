@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ---
 # Rapports et analyses des achats
 
-Les rapports d'achat dans [!INCLUDE [prod_short](includes/prod_short.md)] permettent aux professionnels de l’approvisionnement et des affaires d’obtenir des informations et des statistiques sur les activités d’achat actuelles et passées.  
+Les rapports d’achat permettent aux professionnels de l’approvisionnement et des affaires d’obtenir des informations et des statistiques sur les activités d’achat actuelles et passées.  
 
 ## Rapports
 
@@ -20,13 +20,25 @@ Les rapports d'achat dans [!INCLUDE [prod_short](includes/prod_short.md)] permet
 
 ## Tâches
 
-Les articles suivants décrivent certaines des tâches clés pour analyser l’état de votre entreprise :
+Les articles suivants décrivent certaines des tâches clés pour analyser l’état de vos achats :
 
-* [Créer des rapports d'analyse](bi-how-create-analysis-views-reports.md)  
-* [Voir la disponibilité des articles](inventory-how-availability-overview.md)  
+- [Afficher la disponibilité des articles](inventory-how-availability-overview.md)  
+- [Calculer les dates des achats](purchasing-date-calculation-for-purchases.md)
+- [Afficher des écritures achat](purchasing-how-record-purchases.md#viewing-ledger-entries)
 
-## Voir aussi
+## Explorez les rapports d’achat avec l’Explorateur de rapports
+
+Pour obtenir un aperçu des rapports disponibles pour achats, choisir sur volet **Tous les rapports** votre page d’accueil. Cette Action ouvre l’explorateur de rôles, qui est filtré selon les fonctionnalités du **Rapport et analyse** option. Sous l’en-tête **Achats** , choisissez **Explorer**.
+
+:::image type="content" source="media/report-explorer-purchasing.png" alt-text="Exemple de rapports sur le centre de rôle XXX." lightbox="media/report-explorer-purchasing.png":::
+
+Pour en savoir plus, voir [Recherche de rapports avec l’explorateur de rôles](ui-role-explorer.md). 
+
+## Voir aussi .
+
+[Analyse ad hoc des données achats](ad-hoc-analysis-purchasing.md)  
+[Vue d’ensemble de l’analyse achats](purchasing-analytics-overview.md)   
 [Définition des achats](purchasing-setup-purchasing.md)  
-[Procédure d'achat](purchasing-manage-purchasing.md)  
+[Vue d’ensemble des achats](purchasing-manage-purchasing.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

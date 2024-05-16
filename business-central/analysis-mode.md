@@ -14,22 +14,22 @@ ms.search.form: '456, 457, 458, 459, 460, 461, 16, 22, 25, 26, 27, 31, 143, 144,
 
 > **S’APPLIQUE À :** version préliminaire publique dans la 1re vague de lancement 2023 de Business Central ou ultérieure pour l’analyse des pages de liste ; généralement disponible dans la 2e vague de lancement 2023 de Business Central pour l’analyse des données des pages de liste et des requêtes.
 
-Dans cet article, vous apprenez à analyser les données des pages de liste et des requêtes à l’aide du fonctionnalité *analyse des données*. Avec la fonctionnalité d’analyse des données, vous pouvez analyser les données directement à partir de la page, sans avoir à exécuter un rapport ou à changer d’application comme Excel. Il fournit un moyen interactif et polyvalent de calculer, résumer et examiner les données. Plutôt que d’exécuter des rapports à l’aide d’options et de filtres différents, vous pouvez ajouter plusieurs onglets qui représentent différentes tâches ou vues sur les données. Parmi des exemples figurent « Mes clients », « Éléments de suivi », « Fournisseurs récemment ajoutés », « Statistiques des ventes » ou toute autre vue que vous pouvez imaginer.
+Cet article explique à utiliser la fonction analyse les données des pages de liste et des requêtes. L’analyse des données vous permet d’analyser les données directement à partir de la page, sans avoir à exécuter un rapport ou à ouvrir une autre application comme Excel. La fonction fournit un moyen interactif et polyvalent de calculer, résumer et examiner les données. Plutôt que d’exécuter des rapports à l’aide d’options et de filtres différents, vous pouvez ajouter plusieurs onglets qui représentent différentes tâches ou vues sur les données. Parmi des exemples figurent « Mes clients », « Éléments de suivi », « Fournisseurs récemment ajoutés », « Statistiques des ventes » ou toute autre vue que vous pouvez imaginer.
 
 > [!TIP]
-> Une bonne chose à propos du fonctionnalité d’analyse des données est qu’il ne modifie pas les données sous-jacentes de la page de liste ou de la requête, ni la mise en page de la page ou de la requête lorsqu’elle n’est pas en mode d’analyse. Ainsi la meilleure façon d’apprendre ce que vous pouvez faire en mode d’analyse est d’essayer des choses.
+> L’avantage de la fonctionnalité d’analyse des données est qu’elle ne modifie pas les données sous-jacentes d’une page de liste ou d’une requête. Cela ne modifie pas non plus la mise en page de la page ou de la requête lorsqu’elle n’est pas en mode analyse. Ainsi la meilleure façon d’apprendre ce que vous pouvez faire en mode d’analyse est d’essayer des choses.
 
-## Conditions préalables 
+## Conditions préalables
 
-- Si vous utilisez Business Central version 22, le fonctionnalité d’analyse des données est en version préliminaire. Un administrateur doit donc l’activer avant que vous puissiez l’utiliser. Pour l’activer, accédez à la page **Gestion des fonctionnalités** et activez **Mise à jour des fonctionnalités : mode Analyse, analysez rapidement les données directement dans Business Central**. [En savoir plus sur la gestion des fonctionnalités](/dynamics365/business-central/dev-itpro/administration/feature-management).
+- Si vous utilisez [!INCLUDE [prod_short](includes/prod_short.md)] version 22, le fonctionnalité d’analyse des données est en version préliminaire. Un administrateur doit donc l’activer avant que vous puissiez l’utiliser. Pour l’activer, accédez à la page **Gestion des fonctionnalités** et activez **Mise à jour des fonctionnalités : mode Analyse, analysez rapidement les données directement dans Business Central**. [En savoir plus sur la gestion des fonctionnalités](/dynamics365/business-central/dev-itpro/administration/feature-management).
 - Dans la version 23 et les versions ultérieures, votre compte doit disposer de l’ensemble d’autorisations **ANALYSE DES DONNÉES - EXEC** ou inclure l’autorisation d’exécution sur l’objet système **9640 Autoriser le mode d’analyse des données**. En tant qu’administrateur, vous pouvez exclure ces autorisations pour les utilisateurs qui ne doivent pas avoir accès au mode d’analyse.
 
 > [!NOTE]
-> Vous remarquerez peut-être que certaines pages de liste n’incluent pas le bouton bascule **Entrer mode analyser** pour passer en mode d’analyse. La raison en est que les développeurs peuvent désactiver le mode d’analyse sur des pages spécifiques en utilisant la [propriété AnalysisModeEnabled](/dynamics365/business-central/dev-itpro/developer/properties/devenv-analysismodeenabled-property) dans AL.
+> Certaines pages de liste ne proposent pas la bascule **Entrer en mode analyse** pour activer le mode analyse. La raison en est que les développeurs peuvent désactiver le mode d’analyse sur des pages spécifiques en utilisant la [propriété AnalysisModeEnabled](/dynamics365/business-central/dev-itpro/developer/properties/devenv-analysismodeenabled-property) dans AL.
 
 ## Mise en route
 
-Effectuez ces étapes pour commencer à analyser les données à l’aide du mode d’analyse.
+Pour utiliser le mode analyse, procédez comme suit.
 
 >[!TIP]
 > Le mode Analyse comprend également une fonctionnalité Copilot appelée *aide à l’analyse* cela peut vous aider à démarrer. [En savoir plus sur l’assistance à l’analyse avec Copilot](analysis-assist.md).
@@ -64,15 +64,15 @@ Dans le mode d’analyse, la page est divisée en deux zones :
 
 ### Zone de données (1)
 
-La zone de données est l’endroit où les lignes et les colonnes de la page de liste ou de la requête sont affichées et où les données sont résumées. La zone de données offre un moyen polyvalent de contrôler la disposition des colonnes et un moyen rapide d’obtenir un résumé des données. Pour les colonnes contenant des valeurs numériques, la somme de toutes les valeurs de la colonne s’affiche dans une dernière ligne, sauf si vous avez défini des groupes de lignes. Dans ce cas, les sommes s’affichent comme un sous-total pour les groupes.  
+La zone de données est l’endroit où les lignes et les colonnes de la page de liste ou de la requête sont affichées et où les données sont résumées. La zone de données offre un moyen polyvalent de contrôler la disposition des colonnes et un moyen rapide d’obtenir un résumé des données. Pour les colonnes contenant des valeurs numériques, la somme de toutes les valeurs de la colonne s’affiche dans une dernière ligne, sauf si vous défini des groupes de lignes. Dans ce cas, les sommes s’affichent comme un sous-total pour les groupes.  
 
 ![Affiche une vue d’ensemble de la zone de données sur une page dans le mode d’analyse](media/analysis-mode-data-area.png)
 
 - Pour déplacer une colonne, sélectionnez-la et faites-la glisser là où elle a le plus de sens dans votre analyse.
 - Pour trier sur une colonne, sélectionnez l’en-tête de la colonne. Pour trier sur plusieurs colonnes, maintenez la touche <kbd>Maj</kbd> enfoncée tout en sélectionnant les en-têtes de colonnes sur lesquels vous souhaitez effectuer le tri.
-- Cliquez avec le bouton droit sur la colonne ou survolez-la et sélectionnez l’icône de menu ![Affiche l’icône sur une colonne en mode analyse qui ouvre un menu d’actions](media/analysis-mode-column-menu-icon.png) pour accéder à plusieurs actions que vous pouvez effectuer sur les colonnes. Par exemple :
+- Pour accéder à plusieurs actions que vous pouvez effectuer sur les colonnes, cliquez avec le bouton droit sur la colonne ou survolez-la et sélectionnez l’icône de menu ![Affiche l’icône sur une colonne en mode analyse qui ouvre un menu d’actions](media/analysis-mode-column-menu-icon.png). Par exemple :
 
-  - Pour épingler une colonne à gauche ou à droite de la zone de données afin qu’elle ne sorte pas de l’écran lorsque vous faites défiler, sélectionnez ![Affiche l’icône sur une colonne en mode analyse qui ouvre un menu d‘actions](media/analysis-mode-column-menu-icon.png) > **Épingler la colonne** > **Épingler à gauche** la partie colonne.
+  - Pour épingler une colonne de la zone de données afin qu’elle ne sorte pas de l’écran lorsque vous faites défiler, sélectionnez ![Affiche l’icône sur une colonne en mode analyse qui ouvre un menu d‘actions](media/analysis-mode-column-menu-icon.png) > **Épingler la colonne** > **Épingler à gauche** la partie colonne.
   - Définissez des filtres de données directement sur la définition de colonne au lieu d’aller dans les volets **Filtres d’analyse**. Vous pouvez toujours consulter les détails des données associées et pour chaque ligne, et ouvrir la fiche pour en savoir plus sur une entité donnée.
 - Utilisez la zone de données pour interagir avec les données. Pour les colonnes qui contiennent des valeurs numériques sommables, vous pouvez obtenir des statistiques descriptives sur un ensemble de champs en les marquant. Les statistiques apparaissent dans la barre d’état (2) en bas de la page.
 - Exportez les données au format Excel ou csv. Faites un clic droit sur la zone de données ou sur une sélection de cellules à exporter.
@@ -104,7 +104,7 @@ Les **Colonnes** est l’un des deux volets qui fonctionnent ensemble pour défi
 
 |Dépts destination/provenance|Désignation|
 |-|-|
-|Rechercher/cocher ou effacer toutes les cases|Recherchez des colonnes. Activez cette case à cocher pour sélectionner/effacer toutes les colonnes.|
+|Rechercher/cocher ou effacer toutes les cases|Recherchez des colonnes. Cochez la case pour sélectionner/effacer toutes les colonnes.|
 |Cases à cocher|Cette zone comprend une case à cocher pour chaque champ de la table source de la liste ou de la requête. Utilisez cette zone pour modifier les colonnes affichées. Cochez une case pour afficher la colonne du champ sur la page ; décochez la case pour masquer la colonne. |
 |Groupes de lignes|Utilisez cette zone pour regrouper et additionner les données par un ou plusieurs champs. Vous ne pouvez inclure que des champs non numériques, tels que des champs de texte, de date et d’heure. Les groupes de lignes sont souvent utilisés en mode pivot.|
 |Valeurs|Utilisez cette zone pour spécifier les champs pour lesquels vous souhaitez un total. Vous ne pouvez inclure que des champs contenant des nombres pouvant être additionnés ; par exemple, pas les champs de texte, de date ou d’heure.|
@@ -129,14 +129,14 @@ Voici quelques conseils sur l’utilisation de plusieurs onglets d’analyse :
 - Pour ajouter un nouvel onglet, sélectionnez le grand signe **+** en regard du dernier onglet d’analyse.
 - Sélectionnez la flèche vers le bas sur un onglet pour accéder à une liste d’actions que vous pouvez effectuer sur un onglet, comme renommer, dupliquer, supprimer et déplacer.
 
-   - **Supprimer** supprime l’onglet actuellement ouvert. **Supprimer tout** supprime tous les onglets que vous avez ajoutés, à l’exception de l’onglet **Analyse 1** par défaut.
-- Vous ne pouvez pas supprimer complètement l’**Analyse 1**, mais vous pouvez la renommer en utilisant l’action **Renommer** et effacer les modifications que vous avez apportées en utilisant **Supprimer** ou **Supprimer tout**.  
+   - **Supprimer** supprime l’onglet actuellement ouvert. **Supprimer tout** supprime tous les onglets ajoutés, à l’exception de l’onglet **Analyse 1** par défaut.
+- Vous ne pouvez pas supprimer complètement l’**Analyse 1**, mais vous pouvez la renommer en utilisant l’action **Renommer** et effacer les modifications apportées en utilisant **Supprimer** ou **Supprimer tout**.  
 
-- Les onglets d’analyse que vous avez ajoutés et restent configurés jusqu’à ce que vous les supprimiez. Ainsi, si vous revenez au mode d’analyse, vous les voyez exactement telles que vous les avez laissées.
+- Les onglets d’analyse que vous ajoutés et restent configurés jusqu’à ce que vous les supprimiez. Si vous revenez au mode d’analyse, vous voyez exactement telles que vous les avez laissées.
 
    > [!TIP]
    > Les onglets que vous configurez ne sont visibles que par vous. Les autres utilisateurs ne verront que les onglets qu’ils ont configurés.
-- Vous pouvez copier les onglets d’analyse. La copie peut être utile si vous souhaitez expérimenter la modification d’un onglet sans modifier l’original, ou si vous souhaitez créer différentes variantes de la même analyse.
+- Vous pouvez copier les onglets d’analyse. La copie peut être utile, par exemple, pour expérimenter la modification d’un onglet sans modifier l’original. La copie est également utile si vous souhaitez créer différentes variantes de la même analyse.
 
 ## Hiérarchies de dates
 
@@ -179,7 +179,7 @@ Si l’ensemble de données que vous souhaitez analyser dépasse 100 000 ligne
    - fuseaux horaires
 - Les champs utilisés en mode dynamique et ajoutés aux étiquettes de colonnes doivent avoir un faible nombre de valeurs distinctes.
 
-   Si vous activez le mode dynamique et faites glisser un champ dans la zone **Étiquettes de colonne**, où les données sous-jacentes de ce champ comportent trop de valeurs distinctes, l’onglet du navigateur peut ne plus répondre et finir par se fermer, vous obligeant à recommencer dans une nouvelle session. Dans ce cas, n’activez pas le mode dynamique sur ce champ ou définissez un filtre sur le champ avant de l’ajouter à la zone **Étiquettes de colonne**.
+   Si vous activez le mode dynamique et faites glisser un champ dans la zone **Étiquettes de colonne**, où les données sous-jacentes de ce champ comportent trop de valeurs distinctes, l’onglet du navigateur peut ne plus répondre. Le navigateur finit par se fermer, vous obligeant à recommencer dans une nouvelle session. Dans ce cas, n’activez pas le mode dynamique sur ce champ ou définissez un filtre sur le champ avant de l’ajouter à la zone **Étiquettes de colonne**.
 
 ## Partager l’analyse des données
 
@@ -191,61 +191,41 @@ Après avoir préparé une analyse dans un onglet, vous pouvez la partager sous 
 
    La boîte de dialogue **Lien vers \<tab name\>** s’ouvre.
 
-1. Par défaut, l’analyse que vous partagez est liée à la page ou à la requête dans la compagnie dans laquelle vous travaillez actuellement, ce qui est indiqué par `company=<company_name>` dans le champ URL en regard du bouton **Copier**. Si vous souhaitez envoyer un lien vers une analyse qui n’est pas associée à une compagnie spécifique, définissez le champ **Compagnie** sur **Ne pas lier à une compagnie spécifique**.
+1. Par défaut, l’analyse que vous partagez est liée à la page ou à la requête dans la compagnie dans laquelle vous travaillez actuellement, ce qui est indiqué par `company=<company_name>` dans le champ URL en regard du bouton **Copier**. Si vous souhaitez envoyer un lien vers une analyse qui n’est pas associée à une compagnie spécifique, définissez le champ **Compagnie :** sur **Ne pas lier à une compagnie spécifique**.
 
    ![Affiche la boîte de dialogue Copier le lien pour un onglet d’analyse](media/analysis-link-copied.svg)
 
 1. Sélectionnez **Copier**.
-1. Collez le lien dans le média de communication de votre choix, par exemple Word, Outlook, Teams, OneNote, etc. 
-1. Une fois reçus, les destinataires peuvent ensuite sélectionner le lien et ouvrir l’analyse pour la page ou la requête dans Business Central. Ils sont invités à spécifier un nom pour le nouvel onglet d’analyse créé.  
+1. Collez le lien dans le média de communication de votre choix, par exemple Word, Outlook, Teams, OneNote, etc.
+1. Une fois reçus, les destinataires peuvent ensuite sélectionner le lien et ouvrir l’analyse pour la page ou la requête dans [!INCLUDE [prod_short](includes/prod_short.md)]. Ils sont invités à spécifier un nom pour le nouvel onglet d’analyse qu'ils ont créé.  
 
 ## Exemples de d'analyse des données
 
-Le *Analyser les données* fonctionnalité est destinée à une vérification rapide des faits et à une analyse ad hoc lorsque vous ne souhaitez pas générer de rapport, s’il existe un rapport répondant à vos besoins spécifiques ou si vous souhaitez effectuer une itération rapide pour obtenir une bonne vue d’ensemble d’une partie de votre entreprise.
+Utilisez la fonctionnalité **Analyse des données** pour une vérification rapide des faits et une analyse ad hoc :
 
-Dans les sections suivantes, vous trouverez des exemples de scénarios d’utilisation pour de nombreux domaines fonctionnels de l’application Business Central.
+- Si vous ne souhaitez pas générer de rapport.
+- S’il n’existe pas de rapport correspondant à votre besoin spécifique.
+- Si vous souhaitez effectuer une itération rapide pour avoir une bonne vue d’ensemble sur une partie de votre entreprise.
 
-| Aire | Pour... | Ouvrir cette page en mode analyse | Utiliser ces champs |
-| ---- | ----- | ------------------------------- |------------------- |
-| [Finance (Comptabilités client)](#example-finance-accounts-receivables) | Voyez par exemple ce que vos clients vous doivent, décomposé en intervalles de temps pendant lesquels les montants sont dus. | [Écritures comptables client](https://businesscentral.dynamics.com/?page=25) | **Nom du client**, **Date d’échéance** et **Montant restant** |
-| [Finance (état des résultats)](#example-finance-income-statement) | Consultez vos revenus sur les comptes de revenus à partir du plan comptable, par exemple, décomposés en intervalles de temps pour le moment du report des montants. | [Écritures journal général](https://businesscentral.dynamics.com/?page=20) | **N° compte GL**, **Date de report** et **Montant**. |
-| [Finance (Actifs total)](#example-finance-total-assets) | Consultez vos actifs sur les comptes d'actifs à partir du plan comptable, par exemple, décomposés en intervalles de temps pour le moment du report des montants. | [Écritures journal général](https://businesscentral.dynamics.com/?page=20) | **N° compte GL**, **Date de report** et **Montant**. |
+Les sections suivantes fournissent des exemples de scénarios pour de nombreux domaines fonctionnels de [!INCLUDE [prod_short](includes/prod_short.md)].
 
 ### Exemple : Finance (Comptabilités client)
 
-Pour voir ce que vos clients vous doivent, décomposé en intervalles de temps pendant lesquels les montants sont dus comme suit :
+Pour voir ce que vos clients vous doivent, décomposé en intervalles de temps pendant lesquels les montants sont dus, comme suit :
 
-1. Ouvrez la liste [Écritures client](https://businesscentral.dynamics.com/?page=25) et activez le mode d’analyse.
-1. Allez au **Colonnes** menu et supprimez toutes les colonnes (cochez la case à côté du *Recherche* champ).
-1. Allumer **Pivot* mode** (situé directement au-dessus du **Recherche** champ).
-1. Maintenant, faites glisser le *Nom du client* champ vers le **Groupes de lignes** zone et faites glisser **Montant restant** au **Valeurs** zone. 
-1. Enfin, trouvez le champ **Mois de la date d’échéance** et faites-le glisser vers la zone **Étiquettes de colonnes**. 
-1. Si vous souhaitez restreindre l’analyse à une année/un trimestre donné, appliquez un filtre dans le menu **Filtres supplémentaires** (à droite, juste en dessous du menu **Colonnes**.) 
-1. Renommez votre onglet d’analyse en "Comptes classés chronologiquement par mois" ou quelque chose qui décrit cette analyse pour vous. 
+1. Ouvrez la liste [Écritures client](https://businesscentral.dynamics.com/?page=25) et choisissez :::image type="content" source="media/analysis-mode-icon.png" alt-text="Entrer en mode d’analyse":::. pour activer le mode d’analyse.
+1. Allez au **Colonnes** menu et supprimez toutes les colonnes (cochez la case à côté du *Recherche* champ à droite).
+1. Allumer **Pivot* mode** (situé directement au-dessus du **Recherche** champ droite).
+1. Faites glisser le **Nom du client** champ vers le **Groupes de lignes** zone et faites glisser **Montant restant** au **Valeurs** zone.
+1. Faites glisser le champ **Mois de la date d’échéance** vers la zone **Étiquettes de colonnes**.
+1. Pour effectuer l’analyse pour une année ou un trimestre donné, appliquez un filtre dans le menu **Filtres d’analyse** (situé en dessous du menu **Colonnes** à droite).
+1. Renommez votre onglet d’analyse en **Comptes classés chronologiquement par mois** ou quelque chose qui décrit cette analyse.
 
-### Exemple : Finance (état des résultats)
+### Exemples d’analyse de données ad hoc par domaine fonctionnel
 
-Pour consulter vos revenus sur les comptes de revenus à partir du plan comptable décomposés en intervalles de temps pour le moment du report des montants, procédez comme suit :
+De nombreux domaines fonctionnels dans [!INCLUDE[prod_short](includes/prod_short.md)]  avoir des articles avec des exemples d’analyse de données ad hoc.
 
-1. Ouvrez la liste [Écritures GL](https://businesscentral.dynamics.com/?page=20) et activez le mode d’analyse.
-1. Allez au **Colonnes** menu et supprimez toutes les colonnes (cochez la case à côté du **Recherche** champ).
-1. Allumer **Pivot** mode (situé directement au-dessus du **Recherche** champ).
-1. Maintenant, faites glisser le champ **N° compte GL** vers la zone **Groupes de lignes** et faites glisser **Montant** vers la zone **Valeurs**.
-1. Enfin, trouvez le champ **Mois de la date de report** et faites-le glisser vers la zone **Étiquettes de colonnes**.
-1. Pour l'état des résultats, vous devez appliquer un filtre sur les comptes que vous utilisez pour ce faire, dans les données de démonstration de Business Central. Ce sont les comptes commençant par « 4 », mais la configuration de votre plan comptable peut être différente (si vous exécutez le rapport [Balance de vérification par période](https://businesscentral.dynamics.com/?report=38), vous pouvez facilement voir quels comptes sont utilisés dans votre configuration). Définissez un filtre sur les comptes appropriés dans le menu **Filtres supplémentaires** (à droite, juste en dessous du menu **Colonnes**.)
-1. Renommez votre onglet d’analyse en "Revenus par mois" ou quelque chose qui décrit cette analyse pour vous.
-
-### Exemple : Finance (Actifs total)
-
-Pour consulter vos actifs sur les comptes d'actifs à partir du plan comptable décomposés en intervalles de temps pour le moment du report des montants, procédez comme suit :
-
-1. Ouvrez la liste [Écritures GL](https://businesscentral.dynamics.com/?page=20) et activez le mode d’analyse.
-1. Allez au **Colonnes** menu et supprimez toutes les colonnes (cochez la case à côté du **Recherche** champ).
-1. Allumer **Pivot** mode (situé directement au-dessus du **Recherche** champ).
-1. Maintenant, faites glisser le champ **N° compte GL** vers la zone **Groupes de lignes** et faites glisser **Montant** vers la zone **Valeurs**.
-1. Enfin, trouvez le champ **Mois de la date de report** et faites-le glisser vers la zone **Étiquettes de colonnes**.
-1. Pour le relevé du total des actifs, vous devez filtrer sur les comptes que vous utilisez pour cela, dans les données de démonstration de Business Central, ce sont des comptes commençant par "10", la configuration de votre plan comptable peut être différente. Si vous exécutez le rapport [Balance de vérification par période](https://businesscentral.dynamics.com/?report=38), vous pouvez facilement voir quels comptes sont utilisés dans votre configuration. Définissez un filtre sur les comptes appropriés dans le menu **Filtres supplémentaires** (à droite, juste en dessous du menu **Colonnes**.)
-1. Renommez votre onglet d’analyse en "Revenus par mois" ou quelque chose qui décrit cette analyse pour vous.
+[!INCLUDE[ad-hoc-analysis-scenarios-table](includes/ad-hoc-analysis-scenarios-table.md)]
 
 ## Limitations de la 1re vague de lancement 2023 (version préliminaire)
 
@@ -257,5 +237,6 @@ La version préliminaire publique de cette fonctionnalité présente les limitat
 
 ## Voir aussi .
 
+[Analyse de données ad hoc par domaine fonctionnel](ad-hoc-data-analysis-by-functional-area.md)   
 [Analyse de données ad hoc](reports-adhoc-analysis.md)  
 [Affichage et modification dans Excel](across-work-with-excel.md)  
