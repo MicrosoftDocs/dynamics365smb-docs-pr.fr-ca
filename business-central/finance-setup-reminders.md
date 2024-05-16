@@ -10,21 +10,21 @@ ms.date: 03/12/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# Configurer des niveaux et modalités de rappel
+# <a name="set-up-reminder-terms-and-levels"></a>Configurer des niveaux et modalités de rappel
 
 Vous pouvez utiliser des rappels pour informer les clients des montants échus et leur réclamer le paiement. [!INCLUDE [reminder-terms](includes/reminder-terms.md)]
 
 > [!TIP]
 > Après avoir configuré les modalités et les niveaux de rappel, vous pouvez les inclure dans les processus automatisés de création, d’émission et d’envoi de rappels. Pour en savoir plus sur le processus automatisé, accédez à [Automatiser les rappels dans les collections](finance-automate-reminders.md).
 
-## Modalités de rappel
+## <a name="reminder-terms"></a>Modalités de rappel
 
 Si des clients ont des impayés, vous devez décider quand et comment leur envoyer un rappel. En outre, vous pouvez être amené à débiter leurs comptes d’intérêts ou de frais. Vous pouvez configurer autant de modalités de rappel que vous le souhaitez.  
 
 > [!NOTE]
 > Si vous souhaitez calculer les intérêts sur les paiements échus, vous pouvez le faire lorsque vous créez des rappels. Cependant, si vous souhaitez calculer les intérêts et en informer vos clients sans envoyer de rappel, utilisez une [note de frais financiers](finance-setup-finance-charges.md). Pour plus d’informations, consultez [Rappels](receivables-collect-outstanding-balances.md#reminders) ou [Frais financiers](receivables-collect-outstanding-balances.md#finance-charges).
 
-### Configurer les textes des pièces jointes et du corps des courriels pour les communications
+### <a name="set-up-attachment-and-email-body-texts-for-communications"></a>Configurer les textes des pièces jointes et du corps des courriels pour les communications
 
 Sur la page **Configuration des modalités de rappel**, vous pouvez configurer les textes des pièces jointes et les courriels standard soit à utiliser pour tous les niveaux de rappel, soit créer des messages spécifiques pour chaque niveau. Par exemple, le message que vous envoyez pour le premier niveau de rappel peut avoir un ton ou un contenu différent de celui du deuxième ou du troisième. Pour créer des textes de pièces jointes et de courriels pour tous les niveaux, choisissez **Communication client** en haut de la page. Pour créer des messages pour des lignes spécifiques, sur l’onglet rapide **Niveau de rappel** , choisissez une ligne, puis choisissez la **Communication client** action sur le raccourci.
 
@@ -35,19 +35,19 @@ Lorsque vous envoyez un courriel, le rappel est un rapport que vous joignez au c
 > [!NOTE]
 > Pour communiquer par courriel directement depuis [!INCLUDE [prod_short](includes/prod_short.md)] , vous devez être configuré pour le faire. Pour en savoir plus sur la connexion des comptes de courriel avec [!INCLUDE [prod_short](includes/prod_short.md)], consultez [Configurer courriel](admin-how-setup-email.md).
 
-### Configurer des modalités de rappel
+### <a name="set-up-reminder-terms"></a>Configurer des modalités de rappel
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modalités de rappel**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]  
 3. Pour utiliser plusieurs combinaisons de modalités de rappel, créez un code pour chacun d'eux.
 
-## Niveaux rappel
+## <a name="reminder-levels"></a>Niveaux rappel
 
 Pour chaque terme de rappel, vous pouvez définir un nombre illimité de niveaux de rappel, même si la plupart des compagnies n’utilisent que deux ou trois niveaux. La première fois qu'un rappel est créé pour un client, la configuration utilisée est celle du niveau 1. Lorsque le rappel est émis, le numéro du niveau est enregistré dans les écritures rappel qui sont créées et associées à l'écriture client spécifique. S'il est nécessaire d'envoyer un nouveau rappel au client, toutes les écritures rappel associées aux écritures client ouvertes sont vérifiées afin de localiser le numéro du niveau le plus élevé. Les conditions du niveau suivant seront alors utilisées pour le nouveau rappel.
 
 Si vous créez plus de rappels qu'il n'y a de niveaux définis pour ceux-ci, les conditions utilisées sont celles du niveau le plus élevé. Vous pouvez utiliser autant de relances que le champ **Nombre max. de relances** des conditions relance le permet.
 
-### Pour configurer des niveaux rappel
+### <a name="to-set-up-reminder-levels"></a>Pour configurer des niveaux rappel
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modalités de rappel**, puis sélectionnez le lien associé.  
 2. Sur la page **Modalités de rappel**, sélectionnez la ligne comportant les modalités pour lesquelles configurer des niveaux, puis choisissez l’action **Niveaux**.  
@@ -107,7 +107,7 @@ Si vous créez plus de rappels qu'il n'y a de niveaux définis pour ceux-ci, les
 
 Après avoir configuré les modalités de rappel, vous pouvez les affecter aux clients sur les pages Fiche client. Pour plus d'informations, voir [Enregistrer de nouveaux clients](sales-how-register-new-customers.md).  
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
 [Envoyer des rappels de soldes impayés](receivables-send-reminders.md)  
