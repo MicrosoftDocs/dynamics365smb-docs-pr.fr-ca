@@ -36,7 +36,7 @@ Cette procédure pas-à-pas présente les fonctionnalités de gestion de projets
 - Découvrir comment les valeurs contrat et facture sont déterminées.  
 - Autoriser le travail supplémentaire qui n'a pas été facturé dans le calendrier.  
 
-### <a name="copying-a-job"></a>Copie d'un projet
+### <a name="copying-a-project"></a>Copie d'un projet
 
  Cette partie de la procédure se concentre sur la manière de copier tout ou partie d’un projet afin de réduire la saisie manuelle de données et ainsi améliorer la précision. Elle inclut les points suivants :  
 
@@ -223,11 +223,11 @@ Dans la procédure suivante, vous créez un journal projet nominatif pour Tricia
 
 Les lignes sont à présent reportées.  
 
-## <a name="creating-and-posting-a-job-sales-invoice"></a>Création et report d'une facture vente projet
+## <a name="creating-and-posting-a-project-sales-invoice"></a>Création et report d'une facture vente projet
 
  Ensuite, Tricia peut créer une facture pour l'ensemble du projet ou une partie du projet. Tricia peut également joindre la facture à une autre destinée au même client pour le même projet. Dans ce cas, Tricia facture l’ensemble du projet, car celui-ci est à présent terminé.  
 
-### <a name="to-create-a-job-sales-invoice"></a>Pour créer une facture vente projet
+### <a name="to-create-a-project-sales-invoice"></a>Pour créer une facture vente projet
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Projets**, puis choisissez le lien associé.  
 2.  Sélectionnez le projet que vous avez créé précédemment, puis choisissez l'action **Créer une facture vente projet**.  
@@ -261,7 +261,7 @@ Les lignes sont à présent reportées.
 
  L'installation de salles de conférence a été confiée à CRONUS. En tant que chef de projet, Prakash souhaite disposer d'une bonne vue d'ensemble des tâches liées au projet ainsi que des coûts budgétisés et exposés associés à chacune d'elle. Prakash souhaite, en outre, connaître le prix total convenu pour le projet et les montants déjà facturés à ce stade. Ils ont conclu une entente avec le client concernant le prix fixe du projet.  
 
-### <a name="to-manage-fixed-pricing-in-jobs"></a>Pour gérer un prix fixe dans des projets
+### <a name="to-manage-fixed-pricing-in-projects"></a>Pour gérer un prix fixe dans des projets
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Projets**, puis choisissez le lien associé.  
 2. Sélectionnez le numéro de projet **Guildford**, puis choisissez l'action **Lignes tâche projet**.  

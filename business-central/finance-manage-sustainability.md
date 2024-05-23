@@ -11,7 +11,7 @@ ms.author: altotovi
 ms.service: dynamics-365-business-central
 ---
 
-# Vue d’ensemble de la gestion de la durabilité
+# <a name="sustainability-management-overview"></a>Vue d’ensemble de la gestion de la durabilité
 
 >[!IMPORTANT]
 >Cette fonctionnalité sera disponible dans Business Central à partir de la **1re vague de lancement 2024**, et tous les liens de référence seront activés dès qu’ils seront disponibles.
@@ -43,7 +43,7 @@ Pour vous familiariser avec Sustainability Manager, reportez-vous aux articles s
 |[Comment enregistrer les émissions de GES (gaz à effet de serre)](finance-sustainability-journal.md) | Utilisez cet article pour apprendre à travailler avec tous les types de journaux de développement durable. |
 
 
-## Voir aussi .  
+## <a name="see-also"></a>Voir aussi .
 [Configuration de durabilité](finance-sustainability-setup.md)   
 [Graphique des comptes de durabilité et de comptabilité](finance-sustainability-accounts-ledger.md)   
 [Procédure pour enregistrer des émissions de GES](finance-sustainability-journal.md)  

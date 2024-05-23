@@ -10,7 +10,7 @@ ms.date: 04/01/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="reconcile-customer-payments-with-the-cash-receipt-journal-or-from-customer-ledger-entries"></a>Rapprocher des paiements clients avec le journal des encaissements ou à partir des écritures client
+# <a name="reconcile-customer-payments-with-a-cash-receipt-journal-or-from-customer-ledger-entries"></a>Rapprocher des paiements clients avec le journal des encaissements ou à partir des écritures client
 
 Lorsque vous recevez un règlement en espèces d’un client ou que vous effectuez un remboursement, vous pouvez affecter le paiement ou le remboursement pour fermer une ou plusieurs écritures débit ou crédit. Vous pouvez indiquer le montant à affecter. Par exemple, vous pouvez affecter des paiements partiels à des écritures client. La fermeture des écritures client garantit que les statistiques clients, les relevés bancaires et les frais financiers, etc. sont à jour.
 
