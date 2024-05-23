@@ -2,14 +2,16 @@
 title: Gestion de projets
 description: 'Cette rubrique décrit comment utiliser les ressources, les feuilles de temps et les projets pour la gestion des budgets.'
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.search.keywords: projects
 ms.search.form: '89, 200, 289, 290, 376, 462, 463, 1029, 1615, 8904, 9014, 9015'
-ms.date: 06/22/2021
-ms.author: bholtorf
+ms.date: 04/26/2024
 ms.service: dynamics-365-business-central
+ms.custom: bap-template
 ---
-# <a name="project-management"></a>Gestion de projets
+# Gestion de projets
 
 Le module [!INCLUDE[prod_short](includes/prod_short.md)] prend en charge les tâches de gestion courantes : configuration d’un projet, planification d’une ressource, spécification des informations nécessaires à la gestion des budgets et à la surveillance de la progression, etc. Vous pouvez suivre les heures machines et employés sur le projet à l'aide de feuilles de temps. Il offre aux chefs de projet un aperçu pertinent des projets individuels, des affectations des employés, des machines et des autres ressources en cours d’utilisation dans le cadre des projets.
 
@@ -29,11 +31,11 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Reportez la consommation de matières, de ressources, et d’autres frais liés aux travaux en cours (TEC) du projet pour contrôler sa valeur financière et maintenir des états financiers corrects bien que vous ayez reporté des frais de projet avant de facturer le projet. |[Surveillance de la progression et des performances du projet](projects-how-monitor-progress-performance.md) |
 | Enregistrez les coûts du projet pour l’utilisation de ressources, les matières et les achats associés au projet sur une base continue et facturez le client, soit une fois le projet terminé soit en fonction d’un calendrier de facturation. |[Facturation des projets](projects-how-invoice-jobs.md) |
 
-## <a name="get-started-with-projects"></a>Mise en route des projets
+## Mise en route des projets
 
 La gestion des projets est suffisamment compliquée en soi et découvrir comment créer des projets et gérer le travail en cours dans un nouvel outil peut se révéler tout aussi complexe. Pour vous aider à mettre en route la gestion de projet dans [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez voir [une vidéo sur la création des projets](https://www.youtube.com/watch?v=VqaPWr7BWmw) sur le canal [!INCLUDE[prod_short](includes/prod_short.md)] YouTube.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Configuration de la gestion de projet](projects-setup-projects.md)  
 [Vidéo : Créer un projet dans Dynamics 365 Business Central](https://www.youtube.com/watch?v=VqaPWr7BWmw)  

@@ -3,7 +3,7 @@ title: Paramétrer et gérer un budget pour un projet
 description: Décrit comment planifier des ressources et prévoir et contrôler les coûts d’un projet en définissant un budget pour chaque projet.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: andreipa
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.search.keywords: 'project budget, forecast'
 ms.search.form: '1002, 1007'
@@ -11,13 +11,13 @@ ms.date: 02/22/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# <a name="manage-project-budgets"></a>Gestion des budgets des projets
+# Gestion des budgets des projets
 
 Vous pouvez configurer un budget pour chaque projet. Le budget permet de planifier les ressources que vous affectez à un projet. Il peut s'agir d'un budget général avec peu d'écritures ou plus détaillé avec des écritures réparties par niveau d'activité. Vous pouvez alors comparer les montants budgétés avec l’utilisation réelle telle qu’elle a été enregistrée dans le journal projet. En surveillant les différences entre l’utilisation réelle et celle budgétée, vous pouvez contrôler un projet en cours et améliorer la qualité des projets futurs en réduisant le risque de sous-estimation des coûts.
 
 La procédure suivante décrit comment estimer les coûts budgétés lors de la planification. Pour plus d’informations sur l’enregistrement budgété par rapport aux prix et aux coûts réels du projet, voir [Enregistrer l’utilisation pour les projets](projects-how-record-job-usage.md).  
 
-## <a name="to-estimate-the-budgeted-costs-for-a-project"></a><a name="JobBudgetCosts"></a>Pour estimer les coûts budgétés d’un projet
+## <a name="JobBudgetCosts"></a> Pour estimer les coûts budgétés d’un projet
 
 Lorsqu’un client souhaite connaître le prix d’un projet qui sera facturé en fonction de l’utilisation, vous devez déterminer les coûts budgétés du projet. Utilisez cette opération sur la page **Lignes tâche projet**.
 
@@ -44,7 +44,7 @@ Sur la page **Fiche projet**, vous pouvez désormais voir un résumé des coûts
 
 Pour plus d’informations sur l’enregistrement budgété par rapport aux prix et aux coûts réels du projet, voir [Enregistrer l’utilisation pour les projets](projects-how-record-job-usage.md).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion de projets](projects-manage-projects.md)  
 [Finances](finance.md)  

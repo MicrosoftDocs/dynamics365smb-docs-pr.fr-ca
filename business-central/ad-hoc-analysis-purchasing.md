@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
 
-# <a name="ad-hoc-analyses-in-purchasing"></a>Analyses ponctuelles en achats
+# Analyses ponctuelles en achats
 
 Cet article explique à analyser les données d'achat des pages de liste et des requêtes à l’aide de fonctionnalité **Analyse des données**. La fonctionnalité vous permet d'analyser les données directement à partir de la page, sans avoir à exécuter un rapport ou à ouvrir une autre application comme Excel. L'analyse de données fournit un moyen interactif et polyvalent de calculer, résumer et examiner les données. Plutôt que d’exécuter des rapports à l’aide d’options et de filtres, vous pouvez ajouter plusieurs onglets qui représentent différentes tâches ou vues sur les données. Quelques exemples sont "Mes fournisseurs" ou "Statistiques achat", ou toute autre vue que vous pouvez imaginer. Pour en savoir plus sur l’utilisation de la fonctionnalité **Analyse des données** , accédez à [Analyser la liste et interroger les données avec le mode d’analyse](analysis-mode.md).
 
@@ -24,7 +24,7 @@ Utilisez les pages de liste suivantes pour une analyse ad hoc des processus d'ac
 - [Écritures comptables fournisseur](https://businesscentral.dynamics.com/?page=29)
 - [Écritures journal général](https://businesscentral.dynamics.com/?page=20)
 
-## <a name="ad-hoc-analysis-scenarios-for-purchasing"></a>Scénarios d’analyse ad hoc pour les achats
+## Scénarios d’analyse ad hoc pour les achats
 
 Utilisez la fonctionnalité **Analyse des données** pour une vérification rapide des faits et une analyse ad hoc :
 
@@ -39,7 +39,7 @@ Les sections suivantes fournissent des exemples de scénarios d'achat dans [!INC
 | [Vue d’ensemble de GRNI](#example-goods-received-not-invoiced-grni-overview) | Obtenez un aperçu des marchandises reçues, non facturées (GRNI) pour tous les fournisseurs. | [Lignes achat](https://businesscentral.dynamics.com/?page=518) | **Tapez**, **Montant reçu non fact. $** (filtrer sur ces champs), **N° du fournisseur**, **N° du document**, **N°** et **Montant reçu non fact. $** <br><br> **REMARQUE :** Pour ajouter les champs vous devez personnaliser la page. Pour plus d’informations, consultez [Personnalisez votre espace de travail](ui-personalization-user.md). | 
 | [Finances (comptabilité fournisseur)](#example-finance-accounts-payable) | Voyez ce que vous devez à vos fournisseurs décomposé en intervalles de temps pendant lesquels les montants sont dus. | [Écritures comptables fournisseur](https://businesscentral.dynamics.com/?page=29) | **Nom du fournisseur**, **Type de document**, **N° du document**, **Année de la date d’échéance**, **Mois de la date d’échéance** et **Montant restant**. |
 
-## <a name="example-goods-received-not-invoiced-grni-overview"></a>Exemple : aperçu des marchandises reçues, non facturées (GRNI)
+## Exemple : aperçu des marchandises reçues, non facturées (GRNI)
 
 Pour créer un aperçu des marchandises reçues, non facturées (GRNI) pour tous les fournisseurs, procédez comme suit :
 
@@ -55,7 +55,7 @@ Pour créer un aperçu des marchandises reçues, non facturées (GRNI) pour tous
 1. Pour effectuer l’analyse pour une année ou un trimestre donné, appliquez un filtre dans le menu **Filtres d’analyse**. Le menu se trouve à droite de la page, juste en dessous du **Colonnes** menu.
 1. Renommez votre onglet d’analyse en **marchandises ont été réceptionnées mais non encore facturées (GRNI)** ou quelque chose qui décrit cette analyse.
 
-## <a name="example-finance-accounts-payable"></a>Exemple : Finance (Comptabilités fournisseur)
+## Exemple : Finance (Comptabilités fournisseur)
 
 Pour voir ce que vous devez fournisseur, décomposé en intervalles de temps pendant lesquels les montants sont dus, comme suit :
 
@@ -71,7 +71,7 @@ L’image suivante montre le résultat de ces étapes.
 
 :::image type="content" source="media/data-analysis-vendor-ledger-entries.png" alt-text="Exemple de procédure pour effectuer une analyse des données Écritures client" lightbox="media/data-analysis-vendor-ledger-entries.png":::
 
-## <a name="data-foundation-for-ad-hoc-analysis-on-purchasing"></a>Base de données pour une analyse ad hoc des achats
+## Base de données pour une analyse ad hoc des achats
 
 Lorsque vous reportez un document achat, [!INCLUDE [prod_short](includes/prod_short.md)] met à jour le compte du fournisseur, le grand livre (GL), les écritures article et les écritures ressource :
 
@@ -85,7 +85,7 @@ Lorsque vous reportez un document achat, [!INCLUDE [prod_short](includes/prod_sh
 
 Pour en savoir plus, voir [Report des achats](purchasing-how-record-purchases.md#posting-purchases).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Report des achats](purchasing-how-record-purchases.md#posting-purchases)  
 [Analyse des données de liste et de requête avec le mode d’analyse](analysis-mode.md)  

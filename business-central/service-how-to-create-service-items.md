@@ -3,25 +3,25 @@ title: "Procédure\_: créer des articles de service"
 description: "Découvrez les différentes manières de créer des articles de service dans Business\_Central, par exemple dans une commande de service ou lors de l’expédition d’articles."
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: andreipa
+ms.reviewer: bholtorf
 ms.topic: how-to
 ms.search.keywords: null
 ms.date: 03/22/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# <a name="create-service-items"></a>Créer articles service
+# Créer articles service
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], le terme « article de service » fait référence à un équipement ou un article nécessitant une maintenance. Lorsque vous créez une commande service, vous spécifiez les articles nécessitant une maintenance. Dans la commande, vous pouvez lier un article de service à un article dans l'inventaire ou à un groupe articles de service.
 
 Lorsque vous recevez un article nécessitant une maintenance, vous pouvez l'enregistrer en tant qu'article de service. Plusieurs méthodes sont possibles. Par exemple, vous pouvez créer un article de service sur la page **Articles de service**, ou dans le cadre d'un autre traitement, par exemple en utilisant une commande service.
 
-## <a name="to-create-a-service-item"></a>Pour créer un article de service
+## Pour créer un article de service
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles de service**, puis choisissez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
-## <a name="to-create-service-items-within-a-service-order"></a>Pour créer des articles de service dans des commandes service
+## Pour créer des articles de service dans des commandes service
 
 Lorsque vous recevez des articles que vous souhaitez enregistrer comme articles de service, vous pouvez les créer en tant que tels sur la page **Commande service** ou **Devis service**.  
 
@@ -31,7 +31,7 @@ Lorsque vous recevez des articles que vous souhaitez enregistrer comme articles 
 
     Un numéro est affecté à l'article de service et une fiche article de service est créée. Le champ **N° article de service** est rempli par le numéro du nouvel article de service.
 
-## <a name="to-create-a-service-item-when-shipping-items"></a>Pour créer un article de service lors de la livraison d'articles
+## Pour créer un article de service lors de la livraison d'articles
 
 Si vous livrez des articles en reportant les documents de vente ou les factures vente, ces articles sont enregistrés automatiquement en tant qu'articles de service si la condition suivante est remplie. Les articles doivent appartenir à un groupe articles de service et la case à cocher **Créer article de service** doit être activée. Si ces articles portent des numéros de série enregistrés sur la page Lignes traçabilité, cette information est copiée automatiquement dans le champ **Numéro de série** de la fiche article de service, lorsque les articles de service sont créés.  
 
@@ -48,7 +48,7 @@ La procédure suivante explique comment créer des articles de service lorsque v
 >
 > Si un article est une nomenclature que vous n'avez pas éclatée, un article de service est créé à partir des mêmes conditions (groupe articles de service et numéro de série).  
 
-## <a name="to-insert-a-starting-fee-for-a-service-item"></a>Pour insérer des frais forfaitaires pour un article service
+## Pour insérer des frais forfaitaires pour un article service
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Tâches service**, puis choisissez le lien associé.
 2. Sélectionnez l'action **Feuille activité article**.
@@ -56,7 +56,7 @@ La procédure suivante explique comment créer des articles de service lorsque v
 
     Une ligne service de type **Coût** est insérée avec les frais forfaitaires. Les frais forfaitaires affectent l'article de service sélectionné.
 
-## <a name="block-items-item-variants-or-specific-service-items"></a>Bloquer des articles, des variantes d’articles ou des articles de service spécifiques
+## Bloquer des articles, des variantes d’articles ou des articles de service spécifiques
 
 Vous pouvez empêcher l’utilisation d’articles, de variantes d’article ou d’articles de service dans les transactions de gestion de services, telles que les contrats de service, les ordres de service et les factures de service. Cela peut être utile si vous souhaitez restreindre la disponibilité de certains articles ou articles de service à des fins de service, par exemple en raison d’une interruption du support, d’un stock limité ou d’ententes contractuelles.
 
@@ -79,7 +79,7 @@ De plus, si vous avez des contrats de service, des devis de contrat de service o
 - **Libération pour expédition** ou **Publier** sur la page **Commande de service** .
 - **Reporter** dans page la **Facture service**.
 
-### <a name="block-a-service-item"></a>Bloquer d’un article de service
+### Bloquer d’un article de service
 
 Pour empêcher l’utilisation d’un article de service dans les transactions de gestion de services, sur la page **Carte d’article de service** , dans la section **Bloquée** champ, choisissez l’une des options suivantes :
 
@@ -107,14 +107,14 @@ Vous pouvez également afficher les éléments de service bloqués en appliquant
 - Articles de service hors garantie (rapport 5937)
 - Profit sur serv. (art. service) (rapport 5938)
 
-### <a name="data-upgrade"></a>Mise à niveau des données
+### Mise à niveau des données
 
 Cette fonctionnalité ne nécessite aucune configuration supplémentaire. Cependant, si vous mettez à niveau votre [!INCLUDE [prod_short](includes/prod_short.md)], soyez conscient des points suivants :
 
 - Si vous disposez d’articles, de variantes d’articles ou de modèles d’articles dont le **Ventes bloquées** la bascule est activée, le **service bloqué** Le champ est également activé pour ces enregistrements lors de la mise à niveau. Cela garantit que la logique de blocage des ventes existante s’applique également aux transactions de gestion des services.
 - Mises à niveau des données uniquement si vous disposez d’au moins un élément de service dans votre compagnie, ce qui signifie que vous utilisez la fonctionnalité de gestion des services et que vous avez besoin de la mise à niveau des données. Si vous ne disposez pas d’éléments de service, la mise à niveau des données est ignorée et le **Service bloqué** La bascule est désactivée par défaut pour tous les éléments, variantes d’élément et modèles d’élément.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configurer des articles de service et des composantes article de service](service-how-setup-service-items.md)  
 [Paramétrage de la gestion des services](service-setup-service.md)  

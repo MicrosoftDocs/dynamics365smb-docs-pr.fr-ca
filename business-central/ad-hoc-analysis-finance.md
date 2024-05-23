@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
 
-# <a name="ad-hoc-analysis-of-finance-data"></a>Analyse ad hoc des données financières
+# Analyse ad hoc des données financières
 
 Cet article vous apprenez à utiliser fonction **analyse les données** pour analyser des pages de finance directement de liste de pages et requêtes. Vous n’avez pas besoin d’exécuter un rapport ou de changer d'application, comme Excel. La fonction fournit un moyen interactif et polyvalent de calculer, résumer et examiner les données. Plutôt que d’exécuter des rapports à l’aide d’options et de filtres, vous pouvez ajouter plusieurs onglets qui représentent différentes tâches ou vues sur les données. Quelques exemples sont "Actifs totaux au fil du temps", "Comptes clients", "Comptes fournisseurs" ou toute autre vue que vous pouvez imaginer. Pour en savoir plus sur l’utilisation de la fonctionnalité **Analyse des données** , accédez à [Analyser la liste et interroger les données avec le mode d’analyse](analysis-mode.md).
 
@@ -22,7 +22,7 @@ Utilisez les pages de liste suivantes pour commencer une analyse ad hoc des proc
 - [Écritures comptables client](https://businesscentral.dynamics.com/?page=25)
 - [Écritures comptables fournisseur](https://businesscentral.dynamics.com/?page=29)
 
-## <a name="finance-ad-hoc-analysis-scenarios"></a>Scénarios d’analyse ad hoc finance
+## Scénarios d’analyse ad hoc finance
 
 Utilisez la fonctionnalité **Analyse des données** pour une vérification rapide des faits et une analyse ad hoc :
 
@@ -39,7 +39,7 @@ Les sections suivantes fournissent des exemples de scénarios de finance dans [!
 | [Finance (état des résultats)](#example-finance-income-statement) | Consultez vos revenus sur les comptes de revenus à partir du plan comptable, par exemple, décomposés en intervalles de temps pour le moment du report des montants. | [Écritures journal général](https://businesscentral.dynamics.com/?page=20) | **N° compte GL**, **Date de report** et **Montant**. |
 | [Finance (Actifs total)](#example-finance-total-assets) | Consultez vos actifs sur les comptes d'actifs à partir du plan comptable, par exemple, décomposés en intervalles de temps pour le moment du report des montants. | [Écritures journal général](https://businesscentral.dynamics.com/?page=20) | **N° compte GL**, **Date de report** et **Montant**. |
 
-### <a name="example-finance-accounts-receivables"></a>Exemple : Finance (Comptabilités client)
+### Exemple : Finance (Comptabilités client)
 
 Pour voir ce que vos clients vous doivent, décomposé en intervalles de temps pendant lesquels les montants sont dus, comme suit :
 
@@ -51,7 +51,7 @@ Pour voir ce que vos clients vous doivent, décomposé en intervalles de temps p
 1. Pour effectuer l’analyse pour une année ou un trimestre donné, appliquez un filtre dans le menu **Filtres d’analyse** (situé en dessous du menu **Colonnes** à droite).
 1. Renommez votre onglet d’analyse en **Comptes classés chronologiquement par mois** ou quelque chose qui décrit cette analyse.
 
-### <a name="example-finance-accounts-payable"></a>Exemple : Finance (Comptabilités fournisseur)
+### Exemple : Finance (Comptabilités fournisseur)
 
 Pour voir ce que vous devez fournisseur, décomposé en intervalles de temps pendant lesquels les montants sont dus, comme suit :
 
@@ -67,7 +67,7 @@ L’image suivante montre le résultat de ces étapes.
 
 :::image type="content" source="media/data-analysis-vendor-ledger-entries.png" alt-text="Exemple de procédure pour effectuer une analyse des données Écritures client" lightbox="media/data-analysis-vendor-ledger-entries.png":::
 
-### <a name="example-finance-income-statement"></a>Exemple : Finance (état des résultats)
+### Exemple : Finance (état des résultats)
 
 Pour consulter vos revenus sur les comptes de revenus à partir du plan comptable, décomposés en intervalles de temps pour le moment du report des montants, procédez comme suit :
 
@@ -83,7 +83,7 @@ Pour consulter vos revenus sur les comptes de revenus à partir du plan comptabl
 
 1. Renommez votre onglet d’analyse en **Revenus par mois** ou quelque chose qui décrit cette analyse.
 
-### <a name="example-finance-total-assets"></a>Exemple : Finance (Actifs total)
+### Exemple : Finance (Actifs total)
 
 Pour consulter vos actifs sur les comptes d'actifs à partir du plan comptable décomposés en intervalles de temps pour le moment du report des montants, procédez comme suit :
 
@@ -99,7 +99,7 @@ Pour consulter vos actifs sur les comptes d'actifs à partir du plan comptable d
 
 1. Renommez votre onglet d’analyse en **Revenus par mois** ou quelque chose qui décrit cette analyse.
 
-## <a name="data-foundation-for-ad-hoc-analysis-on-finance"></a>Base de données pour une analyse ad hoc finance
+## Base de données pour une analyse ad hoc finance
 
 Lorsque vous reportez des journaux, [!INCLUDE [prod_short](includes/prod_short.md)] crée des écritures dans la table **Écriture GL**. Par conséquent, une analyse ad hoc des finances générales est généralement effectuée sur la page [Écritures GL](https://businesscentral.dynamics.com/?page=20) . Pour les comptes clients et fournisseurs, vous pouvez analyser les [Écritures client](https://businesscentral.dynamics.com/?page=25) et les [Écritures fournisseur](https://businesscentral.dynamics.com/?page=29), respectivement.
 
@@ -108,7 +108,7 @@ Pour en savoir plus, consultez les articles suivants :
 - [Base de données pour une analyse ad hoc des ventes](ad-hoc-analysis-sales.md#data-foundation-for-ad-hoc-analysis-on-sales)
 - [Base de données pour une analyse ad hoc des achats](ad-hoc-analysis-purchasing.md#data-foundation-for-ad-hoc-analysis-on-purchasing)
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Analyse des données de liste et de requête avec le mode d’analyse](analysis-mode.md)  
 [Présentation des analyses financières](bi.md)  

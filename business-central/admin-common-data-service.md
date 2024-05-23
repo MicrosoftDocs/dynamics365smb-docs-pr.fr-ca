@@ -3,14 +3,14 @@ title: Intégrer à Microsoft Dataverse via la synchronisation des données
 description: "Introduction à l’intégration et à l’utilisation de Microsoft Dataverse et ses composantes pour se connecter à d’autres applications Dynamics\_365."
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: ivkoleti
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.date: 03/08/2024
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
 
-# <a name="integrate-with-microsoft-dataverse-via-data-sync"></a>Intégrer à Microsoft Dataverse via la synchronisation des données
+# Intégrer à Microsoft Dataverse via la synchronisation des données
 
 Les applications métier utilisent souvent des données provenant de plusieurs sources. [!INCLUDE[prod_short](includes/cds_long_md.md)] combine les données dans un seul ensemble de logique qui facilite la connexion de [!INCLUDE[prod_short](includes/prod_short.md)] à d’autres applications Dynamics 365. Par exemple, [!INCLUDE[crm_md](includes/crm_md.md)] ou votre propre application basée sur [!INCLUDE[prod_short](includes/cds_long_md.md)]. Pour en savoir plus sur [!INCLUDE[prod_short](includes/cds_long_md.md)], accédez à [Qu’est-ce que Dataverse ?](/powerapps/maker/common-data-service/data-platform-intro).
 
@@ -25,19 +25,19 @@ Les étapes suivantes offrent un aperçu des étapes pour intégrer [!INCLUDE[pr
 
 3. Synchronisez les données entre les applications. Pour plus d'informations, voir la rubrique [Synchronisation de Business Central et de Dataverse](admin-synchronizing-business-central-and-sales.md). 
 
-## <a name="get-started-with-"></a>Mise en route avec [!INCLUDE[prod_short](includes/cds_long_md.md)]
+## Mise en route avec [!INCLUDE[prod_short](includes/cds_long_md.md)]
 
 Pour prendre en main [!INCLUDE[prod_short](includes/cds_long_md.md)], vous avez besoin d’un compte Microsoft Power Apps. Si vous ne disposez pas encore d’un compte Power Apps, vous pouvez en obtenir un gratuitement en visitant [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) et en cliquant sur le lien **Démarrer gratuitement**. Pour en savoir plus sur la prise en main de [!INCLUDE[prod_short](includes/cds_long_md.md)], consultez le module [Mise en route avec le module Dataverse](/training/modules/get-started-with-powerapps-common-data-service/) de la formation Microsoft.
 
-## <a name="bi-directional-or-uni-directional-data-synchronization"></a>Synchronisation des données bidirectionnelle ou unidirectionnelle
+## Synchronisation des données bidirectionnelle ou unidirectionnelle
 
 Vous pouvez synchroniser les données vers ou depuis une application métier Dynamics 365 vers une autre, ou dans les deux directions en quasi temps réel au moyen de [!INCLUDE[prod_short](includes/cds_long_md.md)]. Par exemple, si vous intégrez [!INCLUDE[prod_short](includes/prod_short.md)] à [!INCLUDE[crm_md](includes/crm_md.md)], un représentant peut créer un document de vente dans [!INCLUDE[crm_md](includes/crm_md.md)] et la commande est synchronisée avec [!INCLUDE[prod_short](includes/prod_short.md)]. Inversement, à partir de [!INCLUDE[crm_md](includes/crm_md.md)], le représentant peut consulter la disponibilité de l’article sur la commande dans [!INCLUDE[prod_short](includes/prod_short.md)]. 
 
-## <a name="standard-and-custom-entities"></a>Entités standard et personnalisées
+## Entités standard et personnalisées
 
 [!INCLUDE[prod_short](includes/cds_long_md.md)] stocke en toute sécurité les données dans un ensemble de tables, qui sont des ensembles d’enregistrements similaires à la façon dont une table stocke des données dans une base de données. [!INCLUDE[prod_short](includes/cds_long_md.md)] comprend un ensemble de base de tables standard qui couvrent des scénarios typiques, mais vous pouvez également créer des tables personnalisées dédiées à votre organisation. Dans [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez afficher les tables standard et personnalisées en cours de synchronisation sur la page Mappages de table d’intégration.
 
-## <a name="about-the-business-central-base-integration-solution"></a>À propos de la solution d’intégration de base Business Central
+## À propos de la solution d’intégration de base Business Central
 
 La solution d’intégration de base est une composante clé de l’intégration. La solution ajoute les rôles et niveaux d’accès requis aux comptes d’utilisateur pour l’intégration et crée les tables nécessaires au mappage de la compagnie [!INCLUDE[prod_short](includes/prod_short.md)] avec l'unité fonctionnelle dans [!INCLUDE[prod_short](includes/cds_long_md.md)]. 
 
@@ -56,7 +56,7 @@ Outre la personnalisation de [!INCLUDE [cds_long_md](includes/cds_long_md.md)], 
 
 Lors de la configuration de la connexion, vous créez mappages de table d’intégration nécessaires à la synchronisation des données. Les entités dans [!INCLUDE[prod_short](includes/cds_long_md.md)] sont mappées à des tables et des champs de table dans [!INCLUDE [prod_short](includes/prod_short.md)] au moyen de tables d’intégration. Pour en savoir plus sur les mappages, accédez à [Mappage d’entité standard pour la synchronisation](admin-synchronizing-business-central-and-sales.md#standard-table-mapping-for-synchronization).
 
-## <a name="handle-differences-in-local-and-base-transaction-currencies"></a>Gérer les différences entre les devises locales et de base des transactions
+## Gérer les différences entre les devises locales et de base des transactions
 
 Vous pouvez vous connecter à un environnement [!INCLUDE[prod_short](includes/cds_long_md.md)] dont la devise de base est différente de la devise locale dans [!INCLUDE[prod_short](includes/prod_short.md)]. Vous établissez la connexion dans [!INCLUDE[prod_short](includes/prod_short.md)] sur la page **Configuration de la connexion Dataverse** ou en utilisant le guide de configuration assistée **Configurer la connexion à Dataverse**.
 
@@ -71,13 +71,13 @@ La synchronisation des devises est unidirectionnelle, de [!INCLUDE [prod_short](
 * Les montants dans la devise de base [!INCLUDE[prod_short](includes/cds_long_md.md)] sont convertis dans la devise locale [!INCLUDE [prod_short](includes/prod_short.md)] en fonction du dernier taux de change synchronisé depuis [!INCLUDE [prod_short](includes/prod_short.md)].
 * Les montants dans la devise locale [!INCLUDE [prod_short](includes/prod_short.md)] se synchronisent avec la devise locale [!INCLUDE [prod_short](includes/prod_short.md)] dans l’une des autres devises (non de base) dans [!INCLUDE[prod_short](includes/cds_long_md.md)].
 
-## <a name="what-happens-when-you-copy-a-company"></a>Que se passe-t-il lorsque vous copiez une compagnie
+## Que se passe-t-il lorsque vous copiez une compagnie
 
 Vous pouvez copier en toute sécurité les compagnies qui s’intègrent à [!INCLUDE[prod_short](includes/cds_long_md.md)] ou [!INCLUDE[crm_md](includes/crm_md.md)]. La copie de compagnies contribue à réduire le risque d’incohérences des données et peut vous faire gagner un temps précieux. Pour en savoir plus sur la copie de compagnies, consultez [Copier une compagnie](about-new-company.md#copy-a-company).
 
 [!INCLUDE [dataverse-copy-company](includes/dataverse-copy-company.md)]
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Modèles de propriété de données](admin-cds-company-concept.md)  
 <!--needs to be removed as this is moved to dev-itpro docs[Walkthrough: Customizing an Integration with Dataverse](\dynamics365\business-central\dev-itpro\administration\administration-custom-cds-integration) -->
