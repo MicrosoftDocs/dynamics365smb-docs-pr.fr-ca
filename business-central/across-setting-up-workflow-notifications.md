@@ -2,13 +2,15 @@
 title: Configuration de notifications de flux de travail d’approbation
 description: "Cet article vous explique comment configurer des notifications de flux de travail pour alerter un utilisateur qu’un événement s’est produit auquel il doit réagir\_; une réponse de flux de travail est requise."
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.search.keywords: null
-ms.date: 09/13/2022
-ms.author: bholtorf
+ms.date: 05/03/2024
 ms.service: dynamics-365-business-central
+ms.custom: bap-template
 ---
-# <a name="approval-workflow-notifications"></a>Notifications flux de travail approbation
+# Notifications des flux de travail d’approbation
 
 Configurez vos flux de travail pour avertir automatiquement les utilisateurs lorsque leur attention est requise pour une étape de ce flux de travail. Pour un grand nombre de réponses du flux de travail, il s’agit de notifier un utilisateur qu’un événement s’est produit et qu’il doit agir dessus.
 
@@ -20,7 +22,7 @@ Par exemple, vous pouvez définir que l’utilisateur 2, l’approbateur, reçoi
 > [!IMPORTANT]  
 > Toutes les notifications du flux de travail sont envoyées à l'aide d'une file d'attente des travaux. Assurez-vous que la file d’attente des travaux dans votre installation est configurée pour traiter les notifications du flux de travail, et que vous avez coché la case **Démarrer automatiquement à partir du serveur**. Pour plus d’informations, voir [Utiliser des files d’attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
-## <a name="set-up-notifications"></a>Configurer les notifications
+## Configurer les notifications
 
 Vous pouvez configurer différents aspects des notifications du workflow dans les emplacements suivants :  
 
@@ -49,7 +51,7 @@ Vous pouvez configurer différents aspects des notifications du workflow dans le
 
   Pour les flux de travail d’approbation, ajoutez une étape de réponse de flux de travail pour informer l’expéditeur lorsque la demande a été approuvée ou rejetée. En savoir plus à partir de l’étape 9 de la section [Créer des flux de travail](across-how-to-create-workflows.md#to-create-a-workflow).   
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configuration des utilisateurs des approbations](across-how-to-set-up-approval-users.md)  
 [Configuration des utilisateurs des flux de travail](across-how-to-set-up-workflow-users.md)  

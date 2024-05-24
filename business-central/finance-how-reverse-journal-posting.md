@@ -1,11 +1,11 @@
 ---
-title: Annuler un report en reportant une écriture de contrepassation
+title: Annuler un report en reportant une écriture inversée
 description: 'Si vous trouvez une erreur dans un journal général reporté, vous pouvez utiliser l’action de contrepassation de transaction pour annuler le report avec une piste d’audit correcte.'
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: bnielse
+ms.reviewer: bholtorf
 ms.topic: how-to
-ms.date: 03/28/2023
+ms.date: 05/07/2024
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
@@ -27,8 +27,6 @@ Vous pouvez inverser des écritures sur toutes les pages **Écritures**. La proc
 
 > [!NOTE]
 > L’écriture doit être émise depuis un report journal.
->
-> En outre, vous ne pouvez pas inverser des écritures qui ont été reportées avec des informations provenant d’un projet ou qui présentent des gains et pertes réalisés au sein de la même transaction.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures**, puis sélectionnez le lien associé.
 2. Sélectionnez l'écriture à contrepasser, puis cliquez sur l'action **Contrepasser la transaction**.
@@ -84,10 +82,21 @@ La procédure est identique pour les réceptions retour reportées.
 
 [!INCLUDE [rev-general-journal](includes/rev-general-journal.md)]
 
-## Voir aussi
+## Inverser une écriture client et fournisseur avec une écriture gain ou perte réalisé(e)
 
-[Annuler le report d'assemblage](assembly-how-to-undo-assembly-posting.md)  
-[Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)  
+Vous pouvez utiliser l’action **Inverser la transaction** pour annuler les paiements qui ont été affectés à des écritures provenant de devises étrangères et qui ont été ajustés à l’aide du traitement en lot Ajustement du taux de change. La fonctionnalité est compatible à la fois avec les achats et les ventes.
+
+Voici un scénario simple qui illustre son fonctionnement :
+
+1. Reportez une facture vente pour un client en utilisant une devise étrangère.
+2. Ajustez le taux de change pour cette devise.
+3. Reportez un paiement affecté à la facture.
+4. Annulez l'affectation et inversez la transaction de paiement, par exemple, à partir de la page **Écritures client**.
+
+## Voir aussi .
+
+[Annuler le report d’assemblage](assembly-how-to-undo-assembly-posting.md)  
+[Reporter directement des transactions dans le grand livre](finance-how-post-transactions-directly.md)  
 [Utiliser des journaux généraux](ui-work-general-journals.md)  
 [Finance](finance.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

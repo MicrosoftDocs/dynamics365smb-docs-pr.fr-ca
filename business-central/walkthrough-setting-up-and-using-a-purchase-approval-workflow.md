@@ -2,25 +2,26 @@
 title: Configurer et utiliser un flux d’approbation achat
 description: "Cette procédure pas à pas vous présente l’ensemble des phases impliquées dans la configuration et l’utilisation d’un flux de travail d’approbation d’achat dans Business\_Central."
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
 ms.topic: conceptual
-ms.devlang: al
 ms.search.keywords: null
 ms.date: 03/11/2024
-ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.custom: bap-template
 ---
-# <a name="walkthrough-set-up-and-use-a-purchase-approval-workflow"></a>Procédure pas à pas : configuration et utilisation d’un flux de travail approbation achat
+# Procédure pas à pas : configuration et utilisation d’un flux de travail approbation achat
 
 Vous pouvez automatiser le processus d'approbation d'enregistrements nouveaux ou modifiés, par exemple de documents, de lignes journal et de fiches client, en créant des flux de travail avec des étapes pour les approbations en question.
 
-Avant de créer des flux d'approbation, vous devez configurer un approbateur et un approbateur remplaçant pour chaque utilisateur approbation. Vous pouvez également définir les montants maximaux que les approbateurs sont qualifiés à approuver pour les enregistrements de vente et d’achat. Les demandes d’approbation et autres notifications peuvent être envoyées par courriel ou note interne. Pour chaque configuration d'utilisateur d'approbation, vous pouvez également définir à quel moment ils reçoivent les notifications.
+Avant de créer des flux d'approbation, vous devez configurer un approbateur et un approbateur remplaçant pour chaque utilisateur approbation. Pour définir les enregistrements de vente et d’achat que les approbateurs sont qualifiés à approuver, vous pouvez également définir des montants maximaux. Les demandes d'approbation et autres notifications peuvent être envoyées par courriel ou note interne. Pour chaque configuration d'utilisateur d'approbation, vous pouvez également définir à quel moment ils reçoivent les notifications.
 
 > [!NOTE]
 > Outre la fonctionnalité de flux de travail dans [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez utiliser Power Automate pour définir des flux de travail des événements dans [!INCLUDE[prod_short](includes/prod_short.md)]. Remarquez que bien qu’ils soient deux systèmes de flux de travail distincts, tous les modèles Flow que vous créez dans Power Automate est ajouté à la liste des modèles de flux de travail dans [!INCLUDE[prod_short](includes/prod_short.md)]. Pour plus d’informations, voir [Utiliser Business Central dans un flux automatisé](across-how-use-financials-data-source-flow.md).  
 
 Vous pouvez configurer et utiliser des workflows qui connectent des tâches de processus entreprise exécutées par différents utilisateurs. Les tâches système, telles que le report automatique, peuvent être incluses comme étapes du flux de travail, précédées ou suivies des tâches de l'utilisateur. Demander et accorder une approbation pour créer des enregistrements sont des étapes classiques du workflow. En savoir plus sur [Flux de travail](across-workflow.md).  
 
-## <a name="about-this-walkthrough"></a>À propos de cette procédure pas à pas
+## À propos de cette procédure pas à pas
 
 Cette procédure est un scénario illustrant les tâches suivantes :  
 
@@ -30,21 +31,21 @@ Cette procédure est un scénario illustrant les tâches suivantes :
 - Demande d’approbation d’un bon de commande (Alicia)  
 - Réception d’une notification, puis acceptation de la demande (Sean)  
 
-## <a name="story"></a>Scénario
+## Scénario
 
 Sean est un super utilisateur de CRONUS  et crée deux utilisateurs d’approbation. Le premier est Alicia, qui représente un agent d'achats. L’autre, c’est Sean lui-même, soit l’approbateur d’Alicia. Ensuite, Sean s’octroie des droits d’approbation pour un montant d’achat illimité et spécifie qu’ils recevront les notifications par note interne dès qu’un événement approprié se produira. Enfin, Sean crée le flux d’approbation requis en tant que copie du modèle *Flux de travail approbation bon de commande* existant, laisse toutes les conditions d’événement et options de réponse existantes inchangées, puis active le workflow.  
 
 Pour tester le flux de travail approbation, Sean se connecte d’abord à [!INCLUDE[prod_short](includes/prod_short.md)] sous l’identité d’Alicia, puis demande l’approbation d’un bon de commande. Ensuite, Sean se connecte en tant que lui-même, voit la note dans son Tableau de bord, suit le lien vers la demande d’approbation du bon de commande, et approuve la demande.  
 
-## <a name="users"></a>Utilisateurs
+## Utilisateurs
 
 Pour pouvoir configurer des utilisateurs d’approbation et leur méthode de notification, vous devez vous assurer que deux utilisateurs existent dans [!INCLUDE[prod_short](includes/prod_short.md)] : Un utilisateur représente Alicia. L'autre utilisateur, vous-même, représente Sean. En savoir plus sur [Créer des utilisateurs en fonction des licences](ui-how-users-permissions.md).
 
-### <a name="set-up-approval-users"></a>Configuration des utilisateurs des approbations
+### Configuration des utilisateurs des approbations
 
 Une fois connecté comme vous-même, définissez Alicia en tant qu’utilisateur d’approbation dont l’approbateur est vous-même. Configurez vos droits d’approbation et spécifiez comment et quand être averti des demandes d’approbation.  
 
-#### <a name="to-set-up-yourself-and-alicia-as-approval-users"></a>Pour configurer votre propre profil et celui d'Alicia en tant qu'utilisateurs approbation
+#### Pour configurer votre propre profil et celui d'Alicia en tant qu'utilisateurs approbation
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration utilisateur approbation**, puis choisissez le lien associé.  
 2. Sur la page **Configuration d'utilisateur d'approbation**, sélectionnez l'action **Nouveau**.  
@@ -59,11 +60,11 @@ Une fois connecté comme vous-même, définissez Alicia en tant qu’utilisateur
     |VOUS||Sélection|
     |ALICIA|VOUS||
 
-### <a name="set-up-notifications"></a>Configurer les notifications
+### Configurer les notifications
 
 Dans cette procédure, l’utilisateur est averti par une note interne concernant les demandes d’approbation. Les notifications d’approbation peuvent également être envoyées par courriel et vous pouvez ajouter une étape de réponse de flux de travail qui avertit l’expéditeur lorsqu’une demande est approuvée ou rejetée. En savoir plus sur [Spécifier quand et comment recevoir les notifications de flux de travail](across-how-to-specify-when-and-how-to-receive-notifications.md).
 
-#### <a name="to-set-up-how-and-when-youre-notified"></a>Pour spécifier comment et quand recevoir les notifications
+#### Pour spécifier comment et quand recevoir les notifications
 
 1. Sur la page **Configuration d'utilisateur d'approbation**, sélectionnez la ligne pour vous-même, puis sélectionnez l'action **Configuration de notification**.  
 2. Sur la page **Configuration de la notification**, dans le champ **Type de notification**, entrez **Approbation**.  
@@ -71,14 +72,14 @@ Dans cette procédure, l’utilisateur est averti par une note interne concernan
 4. Sur la page **Configuration de la notification**, cliquez sur l'action **Calendrier de notification**.  
 5. Sur la page **Calendrier de notification**, dans le champ **Répétition**, sélectionnez **Immédiatement**.  
 
-## <a name="create-the-approval-workflow"></a>Créer un flux de travail approbation
+## Créer un flux de travail approbation
 
 Créez le flux de travail approbation bon de commande en copiant les étapes du modèle de **Flux de travail approbation bon de commande**. Laissez les étapes existantes du flux inchangées, puis activez le flux.  
 
 > [!TIP]
 > Éventuellement, ajoutez une étape de réponse de flux de travail pour informer l’expéditeur lorsque la demande a été approuvée ou rejetée. En savoir plus sur [Spécifier quand et comment recevoir les notifications de flux de travail](across-how-to-specify-when-and-how-to-receive-notifications.md).
 
-### <a name="to-create-and-enable-a-purchase-order-approval-workflow"></a>Pour créer et activer un flux de travail d'approbation des bons de commande
+### Pour créer et activer un flux de travail d'approbation des bons de commande
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Flux de travail**, puis choisissez le lien associé.  
 2. Sur la page **Flux de travail**, sélectionnez **Actions**, puis sélectionnez **Nouveau**, puis choisissez l’action **Créer flux de travail à partir du modèle**.  
@@ -87,11 +88,11 @@ Créez le flux de travail approbation bon de commande en copiant les étapes du 
    La page **Flux de travail** s'ouvre pour un nouveau flux de travail contenant toutes les informations du modèle sélectionné. La valeur du champ **Code** est étendue avec *-01* pour indiquer que ce premier flux de travail est créé à partir du modèle **Flux de travail approbation bon de commande**.  
 4. Dans l’en-tête de la page **Flux de travail**, activez le bouton bascule **Activé**.  
 
-## <a name="use-the-approval-workflow"></a>Utiliser le flux de travail approbation
+## Utiliser le flux de travail approbation
 
 Utilisez le nouveau Flux de travail approbation bon de commande en vous connectant à [!INCLUDE[prod_short](includes/prod_short.md)] en tant qu’Alicia pour demander l’approbation d’un bon de commande. Ensuite, connectez-vous en tant que vous-même, affichez la note dans le Tableau de bord, suivez le lien vers la demande d’approbation, puis approuvez la demande.  
 
-### <a name="to-request-approval-of-a-purchase-order-as-alicia"></a>Pour demander l'approbation d'un bon de commande en tant qu'Alicia
+### Pour demander l'approbation d'un bon de commande en tant qu'Alicia
 
 1. Connectez-vous en tant qu'Alicia.
 2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Bons de commande**, puis choisissez le lien associé.  
@@ -100,7 +101,7 @@ Utilisez le nouveau Flux de travail approbation bon de commande en vous connecta
 
 Notez que la valeur du champ **État** est passée à **Approbation en attente**.  
 
-### <a name="to-approve-the-purchase-order-as-sean"></a>Pour approuver le bon de commande en tant que Sean
+### Pour approuver le bon de commande en tant que Sean
 
 1. Connectez-vous en tant que Sean.
 2. Dans le Tableau de bord, dans la zone **Libre-service**, choisissez **Demandes à approuver**.
@@ -116,7 +117,7 @@ Définissez les variations des flux de travail en renseignant les champs des lig
 
 [!INCLUDE[workflow](includes/workflow.md)]
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configuration des utilisateurs des approbations](across-how-to-set-up-approval-users.md)  
 [Configuration de notifications de workflow](across-setting-up-workflow-notifications.md)  

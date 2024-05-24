@@ -1,129 +1,133 @@
 ---
-title: Graphique des comptes de durabilité et de comptabilité
+title: Plan comptable et comptabilité de durabilité
 description: 'Découvrez comment gérer le tableau des comptes, catégories et sous-catégories de développement durable ainsi que les détails sur les écritures du grand livre de développement durable.'
 author: altotovi
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'Sustainability, ESG, emission, GHG, CSRD, CoA, Chart, Account, Ledger'
 ms.search.form: '6210, 6213, 6214, 6220'
-ms.date: 04/02/2024
+ms.date: 05/07/2024
 ms.author: altotovi
 ms.service: dynamics-365-business-central
 ---
 
-# <a name="chart-of-sustainability-accounts-and-ledger"></a>Graphique des comptes de durabilité et de comptabilité
+# Plan comptable et comptabilité de durabilité
 
-## <a name="chart-of-sustainability-accounts"></a>Graphique des comptes de durabilité
+## Graphique des comptes de durabilité
 
-Le **Graphique des comptes de durabilité** (CoSA) constitue la liste structurée fondamentale utilisée pour enregistrer toutes les données sur les émissions. Il fonctionne comme un cadre qui catégorise et organise les comptes de durabilité en fonction de leurs attributs, tels que la portée ou d’autres regroupements. Chaque compte se voit généralement attribuer un code ou un numéro unique pour faciliter la référence et le suivi, suivant la même structure qu’un **plan comptable traditionnel** mais personnalisé spécifiquement pour le suivi des données et des données liées au développement durable. indicateurs au sein d’une organisation. 
- 
-Les utilisateurs peuvent ajouter des **catégories de compte** et **sous-catégories** pour définir le comportement du système, en sélectionnant les émissions dédiées au suivi et les facteurs d’émission, formules et configurations similaires.  
+Le Graphique des comptes de durabilité (CoSA) constitue la liste structurée fondamentale utilisée pour enregistrer toutes les données sur les émissions. Il fonctionne comme un cadre qui catégorise et organise les comptes de durabilité en fonction de leurs attributs, tels que la portée ou d’autres regroupements. Chaque compte se voit généralement attribuer un code ou un numéro unique pour faciliter la référence et le suivi. Il a la même structure qu’un plan comptable traditionnel, mais est personnalisé spécifiquement pour surveiller les données et les mesures liées au développement durable dans une organisation.
 
->[!NOTE]
->Pour se familiariser avec les scopes, basés sur les normes GES (Gaz à Effet de Serre), il existe trois scopes d’émissions :  
->- **Émissions de portée 1** : incluent les émissions émises par la combustion de produits fixes et mobiles, ainsi que par les émissions fugitives accidentelles. 
->- **Les émissions de scope 2** : incluent les émissions indirectes provenant de la production d’énergie achetée auprès de fournisseurs d’électricité. 
->- **Émissions de portée 3** : incluent un large spectre d’émissions, provenant des biens et services achetés et des biens d’équipement, des activités liées aux carburants et à l’énergie, aux transports en amont et en aval, aux déchets générés, aux voyages d’affaires et aux déplacements domicile-travail des employés, etc. 
+Les utilisateurs peuvent ajouter des catégories de comptes de développement durable et des sous-catégories de comptes de développement durable pour définir le comportement du système. De cette manière, ils peuvent sélectionner des émissions dédiées à suivre, des facteurs d’émission, des formules et des configurations similaires.
 
-Vous pouvez effectuer les opérations suivantes à partir du **Graphique des comptes de durabilité** (CoSA) :  
+> [!NOTE]
+> Selon les normes GES (Gaz à Effet de Serre), il existe trois champs d’émissions :
+>
+> - **Émissions de champ 1** incluent les émissions émises par la combustion de produits stationnaires et mobiles, ainsi que par les émissions fugitives accidentelles.
+> - **Les émissions de champ 2** incluent les émissions indirectes provenant de la production d’énergie achetée auprès de fournisseurs d’électricité.
+> - **Émissions de champ 3** incluent un large spectre d’émissions, provenant des biens et services achetés et des biens d’équipement, des activités liées aux carburants et à l’énergie, aux transports en amont et en aval, aux déchets générés, aux voyages d’affaires et aux déplacements domicile-travail des employés, etc.
 
--   Affichez les rapports qui affichent les écritures durabilité et les soldes. 
--   Ouvrir **Fiche de compte de durabilité** pour ajouter ou modifier des paramètres.  
--   Consultez la catégorie et la sous-catégorie de ce compte.   
--   Consultez les soldes distincts pour chacune des émissions d’un seul compte. 
--   Ajoutez une ou plusieurs **dimensions** à chacun des comptes et définissez un filtre de dimension. 
-    
-Vous pouvez ajouter, modifier ou supprimer **Fiche de compte de durabilité**. Toutefois, pour éviter les écarts, vous ne pouvez pas supprimer un **Compte durabilité** s’il existe une ou plusieurs écritures associées à ce compte.  
+À partir du Graphique des comptes de durabilité (CoSA), vous pouvez faire les choses suivantes :
 
-### <a name="add-or-change-accounts"></a>Ajouter ou modifier les comptes
+- Affichez les rapports qui affichent les écritures durabilité et les soldes.
+- Ouvrir Fiche de compte de durabilité pour ajouter ou modifier des paramètres.
+- Afficher la catégorie et la sous-catégorie du compte. 
+- Consulter les soldes distincts pour chacune des émissions d’un seul compte.
+- Ajouter une ou plusieurs dimensions à chacun des comptes et définir des filtres de dimension.
 
-1. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche 3.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Graphique des comptes de durabilité**, puis choisissez le lien associé. 
-2. Sur **Graphique des comptes de durabilité** (CoSA), vous pouvez ouvrir chaque **comptes de durabilité** et ajouter ou modifier des paramètres. Positionnez le curseur sur un champ pour lire une brève description. 
+Vous pouvez ajouter, modifier ou supprimer des comptes de durabilité. Toutefois, pour éviter les écarts, vous ne pouvez pas supprimer un compte de durabilité si une ou plusieurs écritures lui sont associées.
 
-Pour les comptes de type **Total**, vous devez renseigner le champ **Totalisation**. Pour les comptes de type **Fin total**, ce champ est renseigné automatiquement par la fonction Décaler. Après avoir configuré tous les comptes, choisissez l’action **Décaler graphique des comptes de durabilité** pour ce faire.  
+### Ajouter ou modifier les comptes
 
->[!IMPORTANT]
->Si vous avez entré des définitions dans les champs **Totalisation** pour les comptes de type **Fin total** avant d’exécuter la fonction de décalage, vous devez les entrer à nouveau car cette fonction remplace les valeurs de tous les champs **Fin total**.  
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche 3.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Graphique des comptes de durabilité**, puis choisissez le lien associé.
+2. Sur **Graphique des comptes de durabilité**, vous pouvez ouvrir chaque compte de durabilité et ajouter ou modifier des paramètres. Positionnez le curseur sur un champ pour lire une brève description.
 
-### <a name="delete-accounts"></a>Supprimer les comptes
+Pour les comptes de type **Total**, vous devez définir le champ **Totalisation**.
 
-Vous pouvez supprimer un **comptes de durabilité**. Toutefois, avant de le supprimer, vous devez vous assurer qu’il existe une ou plusieurs écritures associées à ce compte, car Business Central vous empêchera de supprimer un **compte durabilité** dans ce cas.  
+Pour les comptes de type **Fin total**, la fonction Décaler définit automatiquement le champ **Totalisation**. Après avoir configuré tous les comptes, sélectionnez l’action **Décaler plan comptable de durabilité** pour exécuter la fonction Décaler et définissez le champ **Totalisation**.
 
-## <a name="account-categories"></a>Catégories de compte
+> [!IMPORTANT]
+> La fonction Décaler écrase la valeur de tous les champs des comptes **Fin total**. Ainsi, si vous avez saisi des définitions dans le champ **Totalisation** pour les comptes **Fin total** avant d’exécuter la fonction Décaler, vous devez les saisir à nouveau après l'exécution.
 
-Les utilisateurs doivent ajouter la **Catégorie de compte de durabilité** à chacun des **Comptes de durabilité** pour définir le comportement du système, en sélectionnant périmètres d’émission, émissions dédiées pour le suivi, formules et configurations similaires.  
+### Supprimer les comptes
 
-Pour examiner les **catégories de comptes de durabilité**, procédez comme suit : 
+Vous pouvez supprimer un comptes de durabilité. Cependant, vous devez d’abord vous assurer qu’aucune écriture n’y est associée. Business Central vous évite de supprimer un compte de durabilité si une ou plusieurs écritures y sont associées.
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche 3.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Catégories des comptes de durabilité**, puis choisissez le lien associé. 
-2.  Sur la page **Catégories de comptes de durabilité**, vous pouvez modifier la liste existante ou créer une nouvelle catégorie. Pour créer une nouvelle catégorie, sélectionnez l’action **Nouveau** .  
-3.  Renseignez les champs **Code** et **Désignation**.   
-4.  Configurez le champ **Portée des émissions** en choisissant l’une des options de portée.  
-5.  Sélectionnez les émissions de gaz que vous souhaitez suivre. Actuellement, vous pouvez utiliser l’une des options : **CO2**, **CH4** ou **N2O**. Vous pouvez choisir n’importe quelle combinaison que vous souhaitez suivre, mais vous devez avoir au moins une émission pour le suivi.  
-6.  Dans le champ **Fondation de calcul** , vous pouvez choisir l’une des formules que vous souhaitez utiliser, au cas où vous ne connaissez pas la quantité exacte d’émission. Ici, vous pouvez spécifier la base du calcul (formule) des émissions. Vous pouvez choisir l’une des options suivantes : **Carburant/Électricité**, **Distance**, **Installation** ou **Personnalisée**. 
-7.  Si vous choisissez la formule **Personnalisée** , vous pouvez configurer une description personnalisée dans le champ **Valeur personnalisée** .  
+## Catégories de compte
 
->[!NOTE]
->Si cet ensemble de formules proposées dans le champ **Fondation de calcul** n’est pas suffisant, vous pouvez étendre ce champ et ajouter d’autres calculs au système à utiliser dans le **Journaux de durabilité**.  
+Les utilisateurs doivent ajouter une catégorie de compte de durabilité à chaque compte de durabilité pour définir le comportement du système. Ils peuvent sélectionner des champs d’émissions, des émissions dédiées à suivre, des formules et des configurations similaires.
 
-Si vous utilisez le **Fondation de calcul** (formules), il y a une explication sur la façon dont le système calculera en fonction de l’option que vous avez choisie (**EF** est le **Facteur d’émission** que vous pouvez configurer dans le **Sous-catégorie de compte de durabilité** page) : 
+Pour examiner les catégories de compte de durabilité, procédez comme suit :
 
-|  Type d'émissions  |  Base de calcul  |  Formule         | Commentaires      |
-|------------|--------------|------------------------------|---------------------------------|
-| **Étendue 1**  |
-| Combustion stationnaire | Carburant/électricité | Émissions = Carburant * EF | _c’est-à-dire, Carburant = Quantité de carburant dépensée pour les chaudières, les appareils de chauffage, les oxydants thermiques..._ |
-| Combustion mobile | Carburant/électricité | Émissions = Carburant * EF | _c’est-à-dire Carburant = Quantité de carburant dépensée pour les véhicules routiers ou non routiers, ferroviaires..._ |
-|  |  |  Émissions = Distance * EF | _c’est-à-dire Distance = kilométrage des véhicules routiers ou non routiers, ferroviaires..._ |
-| Émissions fugitives | Installation | Émission = Multiplicateur d’installation * Montant personnalisé / 100 * Facteur temps | _c’est-à-dire, montant personnalisé = pertes d’assemblage, taux de fuite annuel..._ |
-| **Étendue 2**  |
-| Fournisseurs de services publics | Carburant/électricité | Émissions = Électricité * FE | _c’est-à-dire, Combustible/Électricité = quantité d’électricité, quantité de vapeur, unité de chauffage..._ |
-|  | Personnalisé | Émission = Montant personnalisé * EF | _c’est-à-dire, montant personnalisé = unité thermique, tonne-heure..._ |
-| **Étendue 3**  |
-| Biens et services achetés et biens d’équipement | Personnalisé | Émission = Montant personnalisé * EF | _c’est-à-dire, Montant personnalisé = Coût (GL)..._ |
-| Transport et distribution en amont | Distance | Émissions = Distance * EF |  |
-|  | Distance | Émissions = Distance * Multiplicateur * EF | _Multiplicateur = Tonnes de fret_ |
-| Transport et distribution en aval | Distance | Émissions = Distance * EF |  |
-|  | Distance | Émissions = Distance * Multiplicateur * EF | _Multiplicateur = Tonnes de fret_ |
-| Déchets générés lors des opérations et traitement de fin de vie des produits vendus | Personnalisé | Émission = Montant personnalisé * EF | _c’est-à-dire, Montant personnalisé = Déchets..._ |
-| Voyages d’affaires et déplacements domicile-travail des employés | Distance | Émissions = Distance * EF | _c’est-à-dire Distance = Kilométrage de la voiture de fonction utilisée, de la voiture de location, du train, de l’avion..._ |
-|  | Personnalisé | Émission = Montant personnalisé * EF | _c’est-à-dire, Montant personnalisé = Séjours à l’hôtel..._ |
-|  | Carburant/électricité | Émissions = Carburant * EF | _c’est-à-dire Carburant = Quantité de carburant dépensée dans la voiture de fonction, la voiture de location..._ |
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche 3.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Catégories des comptes de durabilité**, puis choisissez le lien associé.
+2. Sur la page **Catégories de comptes de durabilité**, vous pouvez modifier la liste existante ou créer une nouvelle catégorie. Pour créer une nouvelle catégorie, sélectionnez l’action **Nouveau**.
+3. Définissez les champs **Code** et **Description**.
+4. Dans le champ **Champ de l’émission**, sélectionnant une des options de champ.
+5. Sélectionnez les émissions de gaz que vous souhaitez suivre. Actuellement, les options suivantes sont disponibles : **CO2**, **CH4** et **N2O**. Vous pouvez sélectionner n’importe quelle combinaison que vous souhaitez suivre, mais vous devez sélectionner au moins une émission.
+6. Dans le champ **Base de calcul**, vous pouvez sélectionner la base de calcul (formule) à utiliser pour les calculs d’émissions si vous ne connaissez pas la quantité précise d’émission. Vous pouvez sélectionner l’une des options suivantes : **Carburant/Électricité**, **Distance**, **Installation** ou **Personnalisée**.
 
-## <a name="account-subcategories"></a>Sous-catégories du compte
+    > [!NOTE]
+    > Si l’ensemble de formules disponibles dans le champ **Fondation de calcul** n’est pas suffisant, vous pouvez étendre le champ et ajouter d’autres calculs au système à utiliser dans le journaux de durabilité.
 
-Les utilisateurs doivent ajouter le **Sous-catégorie de compte de durabilité** à chacun de **Comptes de durabilité** pour définir les facteurs d’émission qui seront utilisés dans les formules, mais cela repose sur le choix de suivi des émissions dans le **Catégorie de compte de durabilité**.  
+7. Si vous avez sélectionné **Personnalisé** dans le champ **Fondation de calcul**, vous pouvez configurer une description personnalisée dans le champ **Valeur personnalisée**.
 
-Pour examiner les **sous-catégories de comptes de durabilité**, procédez comme suit :  
+Si vous définissez le champ **Fondation de calcul**, le tableau suivant explique comment le système calcule les émissions en fonction de l’option que vous avez sélectionnée. (Dans cette table, *FE* représente la valeur **Facteur d’émission** que vous pouvez configurer sur la page **Sous-catégorie de compte de durabilité**.)
 
-1.  Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche 3.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Sous-catégories des comptes de durabilité**, puis choisissez le lien associé. 
-2.  Sur la page **Sous-catégories de comptes de durabilité**, vous pouvez modifier la liste existante ou créer une nouvelle catégorie. Pour créer une nouvelle catégorie, sélectionnez l’action **Nouveau** .  
-3.  Renseignez les champs **Code** et **Désignation**.   
-4.  En fonction des émissions de gaz que vous souhaitez suivre dans le **Catégorie de compte de durabilité**, et connectez cette sous-catégorie avec, vous pouvez également renseigner un ou plusieurs facteurs d’émission : 
+| Type d'émissions | Base de calcul | Formule | Commentaires |
+|---------------|------------------------|---------|---------|
+| **Étendue 1** | | | |
+| Combustion stationnaire | Carburant/électricité | *Émissions* = *Carburant* &times; *EF* | *Carburant* = Quantité de carburant dépensée pour les chaudières, les appareils de chauffage, les oxydants thermiques, etc. |
+| Combustion mobile | Carburant/électricité | *Émissions* = *Carburant* &times; *EF* | *Carburant* = Quantité de carburant dépensée pour les véhicules routiers ou non routiers, ferroviaires, etc. |
+| | | *Émissions* = *Distance* &times; *EF* | *Distance* = Kilométrage des véhicules routiers ou non routiers, ferroviaires, etc. |
+| Émissions fugitives | Installation | *Émissions* = *Multiplicateur d’installation* &times; *Montant personnalisé* &divide; 100 &times; *Facteur temps* | *Montant personnalisé* = pertes d’assemblage, taux de fuite annuel, etc. |
+| **Étendue 2** | | | |
+| Fournisseurs de services publics | Carburant/électricité | *Émissions* = *Électricité* &times; *FE* | *Carburant/Électricité* = quantité d’électricité, quantité de vapeur, unité de chauffage, etc. |
+| | Personnalisé | *Émissions* = *Montant personnalisé* &times; *EF* | *Montant personnalisé* = Unité thermique, tonne-heure, etc. |
+| **Étendue 3** | | | |
+| Biens et services achetés et biens d’équipement | Personnalisé | *Émissions* = *Montant personnalisé* &times; *EF* | *Montant personnalisé* = Coût (GL), etc. |
+| Transport et distribution en amont | Distance | *Émissions* = *Distance* &times; *EF* | |
+| | Distance | *Émissions* = *Distance* &times; *Multiplicateur* &times; *EF* | *Multiplicateur* = Tonnes de fret |
+| Transport et distribution en aval | Distance | *Émissions* = *Distance* &times; *EF* | |
+| | Distance | *Émissions* = *Distance* &times; *Multiplicateur* &times; *EF* | *Multiplicateur* = Tonnes de fret |
+| Déchets générés lors des opérations et traitement de fin de vie des produits vendus | Personnalisé | *Émissions* = *Montant personnalisé* &times; *EF* | *Montant personnalisé* = Déchets |
+| Voyages d’affaires et déplacements domicile-travail des employés | Distance | *Émissions* = *Distance* &times; *EF* | *Distance* = Kilométrage de la voiture de fonction utilisée, de la voiture de location, du train, de l’avion, etc. |
+| | Personnalisé | *Émissions* = *Montant personnalisé* &times; *EF* | *Montant personnalisé* = Séjours à l’hôtel |
+| | Carburant/électricité | *Émissions* = *Carburant* &times; *EF* | *Carburant* = Quantité de carburant dépensée dans la voiture de fonction, la voiture de location, etc. |
 
-   - **facteur d'émission CO2** : Spécifie le facteur d’émission pour les émissions de CO2.  
-   - **facteur d'émission CH4** : Spécifie le facteur d’émission pour les émissions de CH4. 
-   - **facteur d'émission N2O** : Spécifie le facteur d’émission pour les émissions de N2O.  
+## Sous-catégories du compte
 
-5.  Si cette sous-catégorie est liée aux énergies renouvelables, sélectionnez la **Énergie renouvelable** champ.   
+Les utilisateurs doivent ajouter une sous-catégorie de compte de durabilité à chaque compte de durabilité. Cette sous-catégorie définit les facteurs d’émission utilisés dans les formules, en fonction du choix de suivi des émissions dans la catégorie du compte de durabilité.
 
->[!NOTE]
->Les champs **Importer des données** et **Importer de** sont destinés à une intégration potentielle avec des systèmes externes utilisés pour collecter des facteurs d’émission, mais dans la **1re vague de lancement 2024**, ils ne peuvent pas être utilisés comme fonctionnalité par défaut.  
+Pour examiner les sous-catégories de comptes de durabilité, procédez comme suit :
 
-## <a name="sustainability-ledger-entries"></a>Écritures durabilité
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche 3.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Sous-catégories des comptes de durabilité**, puis choisissez le lien associé. 
+2. Sur la page **Sous-catégories de comptes de durabilité**, vous pouvez modifier la liste existante ou créer une nouvelle catégorie. Pour créer une nouvelle catégorie, sélectionnez l’action **Nouveau**.
+3. Définissez les champs **Code** et **Description**.
+4. En fonction des émissions de gaz que vous souhaitez suivre dans le Catégorie de compte de durabilité, et connectez cette sous-catégorie avec, vous pouvez également définir un ou plusieurs facteurs d’émission : 
 
-Le **Grand livre durabilité** stocke l’historique de toutes les transactions durabilité reportées, en organisant toutes les données d’émission selon le **Plan des comptes durabilité**. Lorsqu’un utilisateur publie le **Journal de durabilité**, toutes les données cruciales y seront enregistrées. Tous les rapports actifs sont générés en fonction du **Écritures comptable de durabilité**.   
+    - **Facteur d’émission CO2** : le facteur d’émission des émissions de dioxyde de carbone (CO<sub>2</sub>).
+    - **Facteur d’émission CH4** : le facteur d’émission pour les émissions de méthane (CH<sub>4</sub>).
+    - **Facteur d’émission N2O** : le facteur d’émission des émissions d’oxyde d’azote (N<sub>2</sub>O).
 
-L’utilisateur peut ouvrir ce grand livre pour un compte spécifique à l’aide de l’action **Écriture comptable** de la page **Graphique des comptes de durabilité** ou, pour ouvrir toutes les écritures du grand livre, sélectionnez l’ampoule ![qui ouvre la fonctionnalité La fenêtre de recherche 3.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures durabilité**, puis sélectionnez le lien associé. Positionnez le curseur sur un champ pour lire une brève description.  
+5. Si la sous-catégorie est liée aux énergies renouvelables, sélectionnez le champ **Énergie renouvelable**.
 
->[!IMPORTANT]
->Une fois que vous avez reporté vos données dans le Grand livre durabilité, vous ne pouvez pas les supprimer. Si vous avez commis une erreur, vous pouvez reporter la transaction inversée en utilisant les mêmes détails, mais en utilisant le signe négatif pour le montant.  
+> [!NOTE]
+> Les champs **Importer des données** et **Importer à partir de** sont prévus pour une intégration potentielle avec des systèmes externes utilisés pour recueillir les facteurs d’émission. Cependant, dans la **1re vague de lancement 2024**, ces champs ne peuvent pas être utilisés comme fonctionnalité par défaut.
 
-## <a name="see-also"></a>Voir aussi .
-[Finances](finance.md)    
-[Présentation de la gestion du développement durable](finance-manage-sustainability.md)
-[Configuration du développement durable](finance-sustainability-setup.md)
-[Comment enregistrer les émissions](finance-sustainability-journal.md)
-[Travailler avec [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+## Écritures durabilité
 
+Le grand livre durabilité stocke l’historique de toutes les transactions de durabilité reportées, et organise toutes les données d’émission selon le plan des comptes de durabilité (CoSA). Lorsqu’un utilisateur effectue un report dans le journal durabilité, toutes les données cruciales y sont enregistrées. Tous les rapports actifs sont générés en fonction des écritures comptable de durabilité.
+
+Pour ouvrir ce grand livre pour un compte spécifique, utilisez l’action **Écritures** sur la page **Graphique des comptes de durabilité**. Pour ouvrir toutes les écritures, sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me 3.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures durabilité**, puis sélectionnez le lien associé. Positionnez le curseur sur un champ pour lire une brève description.
+
+> [!IMPORTANT]
+> Une fois que vous avez reporté vos données dans le grand livre durabilité, vous ne pouvez pas les supprimer. Si vous avez commis une erreur, vous pouvez reporter une transaction inversée utilisant les mêmes détails, mais utilisant le signe négatif pour le montant.
+
+## Voir aussi .
+
+[Finances](finance.md)  
+[Vue d’ensemble de la gestion de la durabilité](finance-manage-sustainability.md)  
+[Configuration de durabilité](finance-sustainability-setup.md)  
+[Procédure pour enregistrer des émissions](finance-sustainability-journal.md)  
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
