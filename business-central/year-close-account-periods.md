@@ -10,11 +10,11 @@ ms.search.form: '100,'
 ms.date: 05/07/2024
 ms.service: dynamics-365-business-central
 ---
-# <a name="close-accounting-periods"></a>Fermer des périodes comptables
+# Fermer des périodes comptables
 
 Lorsqu'un exercice financier est terminé, vous devez fermer les périodes qui le composent.
 
-## <a name="to-close-accounting-periods"></a>Pour fermer des périodes comptables
+## Pour fermer des périodes comptables
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Périodes comptables**, puis sélectionnez le lien associé.
 2. Sur la page **Périodes comptables**, sélectionnez l'action **Fermer exercice**.
@@ -31,7 +31,7 @@ Même si un exercice financier est fermé, vous pouvez toujours y reporter des �
 
 Une fois qu'un exercice financier a été fermé, vous devez fermer les comptes d'état des résultats et transférer les résultats de l'exercice sur un compte du bilan. Vous pouvez répéter cette opération chaque fois que vous effectuez un report dans l'exercice financier fermé.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Clôture plans](year-close-books.md)  
 [Reporter l’écriture de fermeture de fin d’exercice](year-how-post-year-end-close-entry.md)  
