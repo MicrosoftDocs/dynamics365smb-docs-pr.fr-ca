@@ -142,7 +142,7 @@ Pour limiter les reports d’un utilisateur spécifique :
 3. Dans le champ **Début période report**, spécifiez la date de la TVA à partir de laquelle vous effectuez le report. Le report d’un document ou d’un journal avec une date de TVA antérieure à cette date n’est pas autorisé.
 4. Dans le champ **Fin période report**, spécifiez la date de la TVA jusqu’à laquelle vous effectuez le report. Le report d’un document ou d’un journal avec une date de TVA ultérieure à cette date n’est pas autorisé.
 
-## <a name="set-up-vat-registration-numbers-for-your-country-or-region"></a>Configurer les numéros d’identification intracommunautaire pour votre pays ou région
+## <a name="set-up-vat-registration-numbers-for-your-countryregion"></a>Configurer les numéros d’identification intracommunautaire pour votre pays ou région
 
 Pour garantir que les personnes entrent des numéros d’identification intracommunautaire valides, vous pouvez définir des formats pour les numéros d’identification intracommunautaire utilisés dans des pays ou des régions dans lesquels vous travaillez. [!INCLUDE[prod_short](includes/prod_short.md)] affiche un message d’erreur lorsqu’un employé fait une erreur ou utilise un format incorrect pour le pays ou la région.
 
@@ -232,7 +232,7 @@ Les sections suivantes décrivent comment affecter des groupes comptabilisation 
     * Sur la fiche **Ressource**, développez le raccourci **Facturation**.  
 3. Choisissez le groupe de report produit TVA.  
 
-## <a name="set-up-clauses-to-explain-vat-exemption-or-non-standard-vat-rates"></a>Configurer des clauses pour expliquer l’exonération de TVA ou les taux de TVA non standard
+## <a name="set-up-clauses-to-explain-vat-exemption-or-nonstandard-vat-rates"></a>Configurer des clauses pour expliquer l’exonération de TVA ou les taux de TVA non standard
 
 Vous configurez une clause TVA afin de décrire le type utilisation de TVA qui est appliquée. Les informations peuvent être requises par des réglementations gouvernementales. Après avoir configuré une clause TVA et l'avoir associée à une configuration report TVA, la clause TVA est affichée sur les documents vente imprimés qui utilisent le groupe de configuration report TVA.
 
@@ -293,7 +293,7 @@ Pour configurer des codes pour la TVA à l'importation, procédez comme suit :
 5. Dans le champ **Mode calcul TVA**, sélectionnez **Exclusivement TVA**.  
 6. Dans le champ **Compte TVA achat**, indiquez le compte général à utiliser pour valider la TVA à l'importation. Tous les autres comptes sont facultatifs.  
 
-## <a name="use-reverse-charge-vat-for-trade-between-eu-countries-or-regions"></a>Utiliser des frais inversés TVA pour les échanges entre pays/régions de l’UE
+## <a name="use-reverse-charge-vat-for-trade-between-eu-countriesregions"></a>Utiliser des frais inversés TVA pour les échanges entre pays/régions de l’UE
 
 Certaines compagnies doivent utiliser des frais renversés TVA dans leurs échanges avec d'autres compagnies. Par exemple, cette règle s’applique aux achats effectués dans des pays/régions de l’Union européenne et les ventes aux pays/régions de l’Union européenne.  
 
@@ -303,7 +303,7 @@ Certaines compagnies doivent utiliser des frais renversés TVA dans leurs échan
 > [!TIP]  
 > Vous pouvez vérifier qu'une compagnie est enregistrée comme assujettie à la TVA dans un autre pays/une autre région de l'UE en utilisant le service de validation des numéros d'inscription de TVA de l'UE. Le service est disponible gratuitement dans [!INCLUDE[prod_short](includes/prod_short.md)]. Pour plus d’informations, consultez [Vérifier les numéros d’identification intracommunautaire](finance-how-validate-vat-registration-number.md).
 
-### <a name="sales-to-eu-countries-or-regions"></a>Ventes dans des pays/régions de l'UE
+### <a name="sales-to-eu-countriesregions"></a>Ventes dans des pays/régions de l'UE
 
 La TVA n’est pas calculée sur les ventes à des compagnies assujetties à la TVA situées dans d’autres pays/régions de l’UE. Vous devez déclarer la valeur de ces ventes aux pays/régions de l'UE séparément sur votre relevé fiscal.  
 

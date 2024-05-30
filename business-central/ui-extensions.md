@@ -9,7 +9,7 @@ ms.date: 09/27/2022
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="customizing-business-central-online-with-apps"></a>Personnalisation de Business Central Online à l’aide d’applications
+# <a name="customizing-business-central-online-using-apps"></a>Personnalisation de Business Central Online à l’aide d’applications
 
 Vous pouvez modifier [!INCLUDE[prod_short](includes/prod_short.md)] en ligne en installant des applications qui ajoutent des fonctionnalités, modifient le comportement de l’application, ou vous permettent d’accéder à de nouveaux services en ligne, par exemple. Ces applications sont également appelées *extensions*, car elles *s’étendent*[!INCLUDE [prod_short](includes/prod_short.md)].
 

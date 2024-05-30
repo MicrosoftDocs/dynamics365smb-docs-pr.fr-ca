@@ -26,7 +26,7 @@ Ce message d’erreur indique que l’utilisateur n’est pas autorisé à repor
 
 L’utilisateur dans ce cas a une plage de dates de report autorisées allant du 11 au 30 septembre et n’est donc pas autorisé à reporter l’écriture valeur d’ajustement avec la date de report du 10 septembre.  
 
-### <a name="overview-of-involved-posting-date-setup"></a>Aperçu de la configuration de la date de report impliquée
+### <a name="overview-of-the-posting-date-setup"></a>Aperçu de la configuration de la date de report impliquée
 
 #### <a name="inventory-periods"></a>Périodes d'inventaire
 
