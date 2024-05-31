@@ -9,11 +9,11 @@ ms.date: 06/17/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# Configurer la taxe de service et la taxe d'achat dans la version canadienne
+# <a name="set-up-use-tax-and-purchase-tax-in-the-canadian-version"></a>Configurer la taxe de service et la taxe d'achat dans la version canadienne
 
 [!INCLUDE [use-tax-purchase-tax-setup](../includes/CAMXUS/use-tax-purchase-tax-setup.md)]
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Fonctionnalités locales Canada](canada-local-functionality.md)  
 [Déclaration de la taxe de vente au Canada](ca-sales-tax.md)  

@@ -10,7 +10,7 @@ ms.date: 03/13/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# Enregistrer et rembourser les frais des employés
+# <a name="record-and-reimburse-employees-expenses"></a>Enregistrer et rembourser les frais des employés
 
 [!INCLUDE[prod_short](includes/prod_short.md)] prend en charge les transactions des employés de la même manière que pour les fournisseurs. Par conséquent, les groupes de report employé existent pour s'assurer que les écritures d'un employé sont reportées dans les comptes correspondants du grand livre.
 
@@ -27,7 +27,7 @@ Vous pouvez utiliser les journaux généraux des comptes des employés pour enre
 
 Pour garantir que le taux de change des montants est à jour, vous pouvez ajuster les soldes des employés lorsque vous exécutez le traitement en lot du taux de change des devises. Si vous souhaitez utiliser la table des taux de change, mais régler les soldes des employés dans votre devise locale, vous pouvez exclure les comptes des employés lorsque vous ajustez les taux de change.
 
-## Pour enregistrer les dépenses des employés
+## <a name="to-record-an-employees-expense"></a>Pour enregistrer les dépenses des employés
 
 Reportez les frais employé sur la page **Journal général**.
 
@@ -43,7 +43,7 @@ Reportez les frais employé sur la page **Journal général**.
     > Si vous souhaitez saisir plusieurs lignes de dépenses au-dessus d'une ligne compte contrepartie du compte bancaire de l'employé, activez la case à cocher **Suggérer le montant contrepartie** de la ligne pour votre lot sur la page **Lots journal général**. Puis le champ **Montant** de la ligne compte contrepartie est automatiquement prérempli avec la valeur requise pour équilibrer les dépenses.
 5. Choisissez l'action **Reporter** pour enregistrer les frais sur le compte de l'employé.
 
-## Pour rembourser un employé
+## <a name="to-reimburse-an-employee"></a>Pour rembourser un employé
 
 Vous remboursez des employés en reportant les paiements sur leur compte bancaire sur la page **Journal paiement**.  
 
@@ -53,11 +53,11 @@ Vous remboursez des employés en reportant les paiements sur leur compte bancair
 4. Sinon, choisissez l'action **Proposer paiements aux employés** pour insérer automatiquement des lignes journal pour les remboursements employé en attente.
 5. Sélectionnez l'action **Reporter** pour enregistrer le remboursement.  
 
-## Pour rapprocher les remboursements avec les écritures de l'employé
+## <a name="to-reconcile-reimbursements-with-employee-ledger-entries"></a>Pour rapprocher les remboursements avec les écritures de l'employé
 
 Affectez les paiements des employés à leurs écritures employés ouvertes de la même façon que vous le faites pour les paiements des fournisseurs, par exemple sur la page **Journal rapprochement paiement**, en fonction des écritures de relevé bancaire connexes. Pour plus d'informations, reportez-vous à [Lettrage automatique des paiements et rapprochement des comptes bancaires](receivables-apply-payments-auto-reconcile-bank-accounts.md). Sinon, vous pouvez effectuer une affectation manuelle sur la page **Écritures employés**. Pou plus d'informations, voir [Rapprocher des paiements fournisseur avec le journal paiement ou à partir des écritures fournisseur](payables-how-apply-purchase-transactions-manually.md).  
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Reporter les transactions directement dans le grand livre](finance-how-post-transactions-directly.md)  
 [Utiliser des journaux généraux](ui-work-general-journals.md)  

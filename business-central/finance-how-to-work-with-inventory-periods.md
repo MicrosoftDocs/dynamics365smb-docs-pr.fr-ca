@@ -10,7 +10,7 @@ ms.date: 04/01/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# Utiliser les périodes d'inventaire
+# <a name="work-with-inventory-periods"></a>Utiliser les périodes d'inventaire
 
 Les périodes d'inventaire sont des périodes au cours desquelles vous pouvez reporter des modifications d'inventaire. Une période d'inventaire est définie par la date à laquelle elle se termine (date fin). Lorsque vous fermez une période d'inventaire, vous ne pouvez pas reporter de modifications d'inventaire, qu'elles soient prévues ou facturées, avant cette date fin. Vous ne pouvez pas reporter de nouvelles valeurs dans l'inventaire avant la date de fin. Si vous avez des écritures du grand livre d'articles ouvertes dans la période fermée, ce qui signifie des quantités positives qui n'ont pas encore été affectées sur des transactions sortantes, vous pouvez encore affecter des quantités sortantes sur ces écritures, même si la période est fermée.  
 
@@ -20,14 +20,14 @@ Les sections suivantes décrivent comment :
 * Fermer des périodes d'inventaire.  
 * Rouvrir des périodes inventaire.  
 
-## Pour créer une période d'inventaire
+## <a name="to-create-an-inventory-period"></a>Pour créer une période d'inventaire
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Périodes d’inventaire**, puis choisissez le lien associé.  
 2. Créez une ligne.  
 3. Dans le champ **Date fin**, entrez la dernière date que vous voulez définir pour la période inventaire. Une fois la période fermée, vous ne pouvez plus reporter de modifications d'inventaire antérieures à cette date.  
 4. Saisissez un nom descriptif dans le champ **Nom**. Cliquez sur le bouton **OK**.  
 
-## Fermeture de périodes d'inventaire
+## <a name="closing-inventory-periods"></a>Fermeture de périodes d'inventaire
 
 Le champ **Clôturé** indique si la période inventaire est clôturée ou non sur des modifications de valeur de stock. Vous ne pouvez pas modifier ce champ.  
 
@@ -38,7 +38,7 @@ Vous pouvez fermer toute période d'inventaire, pour autant que les conditions s
 
 Cela signifie que toutes les quantités de transaction sortante, telles que celles des documents de vente, transferts sortants, factures vente, retours achat ou notes de crédit achat doivent être affectées à la quantité en inventaire.  
 
-### Pour fermer une période d'inventaire  
+### <a name="to-close-an-inventory-period"></a>Pour fermer une période d'inventaire
 
 1. Avant de fermer une période d'inventaire, choisissez l'action **Ajuster coût écritures article** pour vous assurer que tous les ajustements des coûts sont reportés.
 
@@ -52,16 +52,16 @@ Cela signifie que toutes les quantités de transaction sortante, telles que cell
 6. Choisissez le bouton **Oui** pour confirmer la clôture de la période, ou choisissez **Non** pour annuler la clôture.  
 7. La période d'inventaire est fermée et un message de confirmation est affiché une fois l'opération terminée.  
 
-## Réouverture de périodes inventaire  
+## <a name="reopening-inventory-periods"></a>Réouverture de périodes inventaire
 Une fois la période d'inventaire fermée, vous ne pouvez plus la supprimer. En revanche, vous pouvez la rouvrir si vous voulez autoriser son report avant la date fin. La réouverture d'une période rouvre également toutes les périodes inventaire dont la date fin est postérieure à la fin de la période que vous rouvrez.  
 
-### Pour rouvrir une période d'inventaire  
+### <a name="to-reopen-an-inventory-period"></a>Pour rouvrir une période d'inventaire
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Périodes d’inventaire**, puis choisissez le lien associé.  
 2. Sélectionnez la période d'inventaire que vous voulez rouvrir.  
 3. Sélectionnez l'action de la période **Rouvrir période**. Confirmez que vous voulez réouvrir la période.  
 4. Toutes les périodes inventaire dont la date fin est postérieure à la fin de la période sélectionnée sont réouvertes.  
 
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi
 [Détails de conception : périodes inventaire](design-details-inventory-periods.md)  
 [Finance](finance.md)  
 [Inventaire](inventory-manage-inventory.md)  
