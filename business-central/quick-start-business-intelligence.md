@@ -1,48 +1,47 @@
 ---
-title: "Démarrage rapide de Business\_Intelligence"
+title: Démarrage rapide de la Business Intelligence
 description: Découvrez comment Business Central vous aide à transformer les données de l’entreprise en informations exploitables à l’aide de rapports et de tableaux de bord de Business Intelligence.
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
 ms.topic: conceptual
-ms.devlang: al
 ms.search.keywords: quickstart
 ms.search.form: null
-ms.date: 08/17/2022
-ms.author: bholtorf
+ms.date: 05/15/2024
 ms.service: dynamics-365-business-central
 ---
 
-# <a name="business-intelligence-quick-start"></a>Démarrage rapide de Business Intelligence
+# Démarrage rapide de la Business Intelligence
 
 Pouvoir collecter et analyser des quantités toujours croissantes de données de manière exploitable est un élément inestimable de la conduite des affaires de nos jours. [!INCLUDE[prod_short](includes/prod_short.md)] offre de nombreux outils de Business Intelligence (BI)&mdash;à la fois intégrés et annexés à d’autres services&mdash; pour aider votre entreprise dans le processus de prise de décision.
 
-## <a name="get-insights-on-your-key-points-of-interest"></a>Obtenez des informations sur vos principaux points d’intérêt
+Différents rôles au sein des organisations ont souvent des méthodes privilégiées pour consommer et analyser les données qui reflètent le niveau d’agrégation des données dont ils ont besoin.
 
-[!INCLUDE[prod_short](includes/prod_short.md)] comprend des graphiques intégrés qui peuvent être affichés dans la partie **Aperçu** sur votre page d’accueil, couvrant les rapports *Revenus et dépenses*, *Trésorerie*, *Tendances des ventes* et bien d'autres. Vous pouvez trouver des indicateurs de performance clés (KPI) supplémentaires sur la page **Informations sur le nuage intelligent**, qui affiche des informations exploitables sur les finances, l'inventaire, les ventes et les achats :
+:::image type="content" source="/dynamics365/business-central/dev-itpro/developer/media/analytics-personas-scenarios.svg" alt-text="Illustration de la manière dont différentes personnes ont des besoins analytiques différents." lightbox="/dynamics365/business-central/dev-itpro/developer/media/analytics-personas-scenarios.svg":::
 
-* Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 1.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Informations sur le nuage intelligent**, puis sélectionnez le lien associé.
+[!INCLUDE[prod_short](includes/prod_short.md)] dispose de plusieurs fonctionnalités qui vous aident à analyser les données de votre entreprise :
 
-Les cartes de données et les informations disponibles peuvent être sélectionnées pour ouvrir la page de registre associée. La page **Informations sur le nuage intelligent** utilise également une connexion aux abonnements Power BI et Azure Machine Learning existants pour afficher des tableaux de bord d’analyse et de prévision.
+- Rapports financiers
+- KPI et tableaux de bord
+- Analyse ad hoc
+- Rapports
 
-## <a name="set-up-power-bi-integration"></a>Configurer l’intégration de Power BI
+Pour en savoir plus sur l’analyse, accédez à [Présentation de l’analyse](reports-bi-reporting.md).
 
-Vous pouvez connecter [!INCLUDE[prod_short](includes/prod_short.md)] à Power BI pour créer des rapports approfondis et des tableaux de bord puissants. L’intégration Power BI offre de nombreuses options pour donner des informations basées sur les données de votre entreprise, y compris un large éventail de personnalisations visuelles, de filtrage et d’affichage.
+## Analyses par domaine fonctionnel
 
-1. Sur votre page d’accueil, choisissez le lien **Mise en route avec Power BI**.
-2. Choisissez **Suivant**.
-3. Choisissez l’action **Accédez à la page d’accueil Power BI**, connectez-vous avec votre compte Power BI, ou démarrez une évaluation en utilisant votre adresse de courriel professionnelle.
-4. De retour sur la page **Configurer des rapports Power BI**, choisissez **Suivant**.
-5. Sur l’écran suivant, choisissez **Suivant** pour télécharger un rapport de démonstration sur Power BI, puis choisissez **Terminer**.
+Le tableau suivant fournit des liens vers des articles décrivant comment utiliser l’analyse dans des domaines fonctionnels spécifiques [!INCLUDE[prod_short](includes/prod_short.md)].
 
-Le téléchargement du rapport prend quelques minutes, mais vous pouvez continuer à travailler sur [!INCLUDE[prod_short](includes/prod_short.md)] lors du transfert. Après le téléchargement, vous pouvez choisir l’action **Sélectionner des rapports** dans la partie **Rapports Power BI** sur votre page d’accueil pour afficher les tableaux de bord disponibles.
+| Utilisation de... | Voir |
+| --- | --- |
+| Finances | [Analyses financières](bi.md) |
+| Ventes | [Analyse vente](sales-analytics-overview.md) |
+| Procédure achat | [Analyse des achats](purchasing-analytics-overview.md) |
+| Gestion des immobilisations | [Analyse des immobilisations](fa-analytics-overview.md) |
 
-L’intégration de Power BI à [!INCLUDE[prod_short](includes/prod_short.md)] inclut un exemple de tableau de bord pour la compagnie de démonstration Cronus. Des tableaux de bord et des connecteurs de jeux de données plus prêts à l’emploi peuvent être facilement installés en parcourant la section **Applications** sur le site web Power BI. Vous y verrez les applications disponibles pour [!INCLUDE[prod_short](includes/prod_short.md)] qui intègrent et affichent les données des finances, des ventes et d’autres domaines. En savoir plus sur les fonctionnalités Power BI dans cet article [Business Central et Power BI](admin-powerbi.md) et découvrez comment créer vos propres tableaux de bord sur [Prise en main de la création dans le service Power BI](/power-bi/fundamentals/service-get-started).
+## Voir aussi .
 
-Vous pouvez également créer des rapports visuels basés sur [!INCLUDE[prod_short](includes/prod_short.md)] en utilisant l’option de type de fichier **Document Microsoft Excel (données uniquement)** sur les pages de demande de rapport. Pour en savoir plus, voir [Exécuter et imprimer des rapports](ui-work-report.md).
-
-## <a name="see-also"></a>Voir aussi .
-
-[Business Analysis et Financial Reporting](bi.md)  
+[Présentation des analyses](reports-bi-reporting.md)  
 [Démarrages rapides de Business Central](quick-start-business-central.md)  
-[Utiliser les rapports Power BI dans Business Central](across-working-with-powerbi.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

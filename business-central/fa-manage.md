@@ -14,7 +14,33 @@ ms.custom: bap-template
 
 # Gérer des immobilisations
 
-Le module Immobilisations dans [!INCLUDE[prod_short](includes/prod_short.md)] offre un aperçu des immobilisations et garantit un amortissement correct. Elle vous permet également de suivre les coûts d'entretien, de gérer les polices d’assurance, de reporter les transactions d’immobilisations, et de générer divers rapports et statistiques.
+Le module Immobilisations dans [!INCLUDE[prod_short](includes/prod_short.md)] offre un aperçu des immobilisations et garantit un amortissement correct. Il vous aide également à suivre les coûts de maintenance, à gérer les polices d’assurance, à publier des transactions d’immobilisations et à générer divers rapports et statistiques.
+
+## Qu’est-ce qu’une immobilisation ?
+
+Les immobilisations diffèrent des autres articles de votre entrepôt. Une immobilisation, également appelée immobilisation, est une immobilisation corporelle, une usine ou un équipement (PP&E) que vous possédez ou gérez dans l’espoir qu’elle continuera à contribuer à générer des revenus. Un actif est fixe lorsqu’il s’agit d’un article que votre entreprise ne consommera pas, ne vendra pas ou ne convertira pas en espèces au cours de l’année civile suivante. Les immobilisations sont différentes des actifs courants, qui sont en espèces ou devraient être convertis en espèces au cours des 12 prochains mois. Les immobilisations diffèrent également de votre inventaire, car celui-ci est généralement consommé en peu de temps.
+
+## Types d’immobilisations
+
+Les entreprises investissent généralement dans quelques types d’immobilisations. Certains exemples sont :
+
+- Bâtiments et installations
+- Matériel informatique et logiciels
+- Meubles et accessoires
+- Machine
+- Matériel de transport
+
+## Comprendre la comptabilité des immobilisations
+
+La comptabilité des immobilisations signifie tenir des registres financiers précis sur vos immobilisations. Ces enregistrements incluent des détails sur les cinq étapes du cycle de vie d’un actif. Après votre achat initial, le cycle de vie de chaque immobilisation comprend au moins trois des étapes suivantes :
+
+- Acquisition : Vous ajoutez une nouvelle immobilisation à vos livres.
+- Amortissement : vous enregistrez la baisse de valeur périodique d’un actif, que vous utilisez une méthode d’amortissement pour calculer. Pour en savoir plus, consultez [Calcul de l’amortissement FA](LocalFunctionality/India/FA_Depreciation.md).
+- Réévaluation : vous enregistrez une évaluation de la juste valeur marchande actuelle d’un actif. Pour en savoir plus, accédez à [Réévaluer les immobilisations](fa-how-revalue.md).
+- Dépréciation : Vous constatez une réduction de valeur due à des événements ou des circonstances.
+- Élimination : vous vendez, mettez au rebut ou utilisez d’une autre manière l’élimination d’un actif à la fin de sa durée de vie.
+
+Les audits s’inscrivent également dans les contrôles détaillés des écritures comptables de votre entreprise après la clôture des comptes de l’exercice. Qu’ils soient internes ou externes, les audits sont l’endroit où vous pourriez remarquer des incohérences ou des différences entre vos notes et l’état réel de vos actifs. Les audits favorisent la transparence de vos actifs et de votre comptabilité si vous perdez plus d’argent que prévu.
 
 ## Présentation de la vidéo
 
@@ -61,7 +87,7 @@ Pour chaque immobilisation, vous devez créer une fiche contenant des informatio
 
 Pour suivre des amortissements d’immobilisations et d’autres transactions financières pour les immobilisations, configurez un voire plusieurs registres amortissement pour chacune. Voici quelques étapes pour amortir les actifs :
 
-1. Exécutez un rapport pour calculer l'amortissement périodique.
+1. Exécutez un rapport qui calcule l’amortissement périodique.
 1. Renseignez un journal avec les écritures résultantes.
 1. Reportez le journal.
 
@@ -94,6 +120,15 @@ Vous pouvez enregistrer des coûts d'entretien et la date du prochain service po
 | Reporter les transactions de cession, visualiser les écritures cession et reporter les cessions partielles. |[Cession ou annulation des immobilisations](fa-how-dispose-retire.md) |
 | Affichez des écritures cession. | [Afficher des écritures cession](fa-how-dispose-retire.md#to-view-disposal-ledger-entries) |
 | Visualiser des valeurs de cession prévues. | [Affichage des valeurs de cession prévues](fa-how-manage-budgets.md#to-view-projected-disposal-values) |
+
+## Conseils pour améliorer votre comptabilité des immobilisations
+
+Il existe quelques éléments que vous pouvez mettre en œuvre dans votre stratégie comptable pour les immobilisations et qui peuvent vous aider à maximiser vos revenus.
+
+- Établir un seuil de capitalisation. Lorsque vous achetez un article, déterminez un montant fixe pour la capitalisation. Le montant permet de garantir la cohérence de vos livres comptables et permet à vous et à votre équipe de repérer plus facilement les erreurs comptables.
+- Réévaluer le cycle de vie des équipements. Il est important d’estimer correctement la durée pendant laquelle vous pouvez utiliser vos immobilisations aux fins prévues à l’origine. Étant donné que la comptabilité et l’amortissement reposent sur des estimations précises du cycle de vie, réévaluez-les si nécessaire, car cela peut changer au fil du temps.
+- Marquez vos actifs. Il est essentiel de suivre et d’étiqueter vos actifs tout au long de leur cycle de vie, car de nombreux facteurs peuvent affecter leur valeur. L’étiquetage permet de suivre vos objets tout au long des étapes de leur cycle de vie, de prévenir le vol, d’éliminer les erreurs de placement et de prendre en charge les statistiques financières.
+- Automatisez les informations avec un logiciel de comptabilité des immobilisations. L’automatisation des activités manuelles pour suivre vos données avec un logiciel de comptabilité des immobilisations facilite la réalisation des processus. La protection par mot de passe peut contribuer à fournir un accès uniquement aux personnes qui en ont besoin et qui sont formées à cet effet.
 
 ## Voir aussi .
 

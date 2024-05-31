@@ -9,7 +9,7 @@ ms.date: 05/12/2023
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="design-details-costing-methods"></a>Détails de conception : modes évaluation stock
+# Détails de conception : modes évaluation stock
 
 Le mode évaluation stock détermine si une valeur réelle ou budgétée est capitalisée et prise en compte dans le calcul des coûts. Au même titre que la date de report et la séquence, le mode d’évaluation coût a aussi une incidence sur l’enregistrement du flux des coûts.
 
@@ -20,9 +20,9 @@ Les méthodes suivantes sont prises en charge dans [!INCLUDE[prod_short](include
 
 | Mode évaluation du stock | Description | Quand utiliser |
 |--|--|--|
-| FIFO | Le coût unitaire d'un article est la valeur réelle de toute réception de l'article, sélectionnée par la règle FIFO.<br /><br /> Dans l’évaluation de l’inventaire, nous considérons que les premiers articles placés dans l’inventaire sont vendus en premier. | Dans des environnements commerciaux où le coût de produit est stable.<br /><br /> (Lorsque les prix augmentent, le bilan indique une valeur plus élevée. Cela signifie que les impôts à payer augmentent, mais que les cotes de crédit et la capacité à emprunter de la trésorerie s'améliorent.)<br /><br /> Pour les articles à durée de conservation limitée, car les produits les plus anciens doivent être vendus avant que leur date limite de vente ne soit dépassée. |
-| LIFO | Le coût unitaire d'un article est la valeur réelle de toute réception de l'article, sélectionnée par la règle LIFO.<br /><br /> Dans l’évaluation de l’inventaire, nous considérons que les derniers articles placés dans l’inventaire sont vendus en premier. | Interdit dans de nombreux pays/régions, car cela peut être utilisé pour réduire le profit.<br /><br /> (Lorsque les prix augmentent, la valeur de l'état des résultats diminue. Cela signifie que les impôts à payer diminuent, mais que la capacité à emprunter de la trésorerie se détériore.) |
-| Moyenne | Le coût unitaire d'un article est calculé comme le coût unitaire moyen à chaque moment après un achat.<br /><br /> Pour l’évaluation de l’inventaire, nous considérons que tous les inventaires sont vendus simultanément. | Dans des environnements commerciaux où le coût de produit est instable.<br /><br /> Lorsque les inventaires sont compilés ou mélangés ensemble et ne peuvent pas être différenciés (par exemple, des produits chimiques). |
+| FIFO | Le coût unitaire d'un article est la valeur réelle de toute réception de l'article, sélectionnée par la règle FIFO.<br /><br /> Dans l'évaluation de l'inventaire, nous considérons que les premiers articles placés dans l'inventaire sont vendus en premier. | Dans des environnements commerciaux où le coût de produit est stable.<br /><br /> (Lorsque les prix augmentent, le bilan indique une valeur plus élevée. Cela signifie que les impôts à payer augmentent, mais que les cotes de crédit et la capacité à emprunter de la trésorerie s'améliorent.)<br /><br /> Pour les articles à durée de conservation limitée, car les produits les plus anciens doivent être vendus avant que leur date limite de vente ne soit dépassée. |
+| LIFO | Le coût unitaire d'un article est la valeur réelle de toute réception de l'article, sélectionnée par la règle LIFO.<br /><br /> Dans l'évaluation de l'inventaire, nous considérons que les derniers articles placés dans l'inventaire sont vendus en premier. | Interdit dans de nombreux pays/régions, car cela peut être utilisé pour réduire le profit.<br /><br /> (Lorsque les prix augmentent, la valeur de l'état des résultats diminue. Cela signifie que les impôts à payer diminuent, mais que la capacité à emprunter de la trésorerie se détériore.) |
+| Moyenne | Le coût unitaire d'un article est calculé comme le coût unitaire moyen à chaque moment après un achat.<br /><br /> Pour l'évaluation de l'inventaire, nous considérons que tous les inventaires sont vendus simultanément. | Dans des environnements commerciaux où le coût de produit est instable.<br /><br /> Lorsque les inventaires sont compilés ou mélangés ensemble et ne peuvent pas être différenciés (par exemple, des produits chimiques). |
 | Spécifique | Le coût unitaire d'un article est le coût exact auquel l'unité particulière a été reçue. | Pour la fabrication ou la transaction d'articles facilement identifiables ayant des coûts unitaires assez élevés.<br /><br /> Pour les articles soumis à une régulation.<br /><br /> Pour les articles ayant des numéros de série. |
 | Standard | Le coût unitaire d'un article est prédéfini sur la base d'une estimation.<br /><br /> Lorsque le coût réel est réalisé plus tard, le coût standard doit être ajusté au coût réel à l'aide des valeurs d'écart. | Environnement où le contrôle des coûts est primordial.<br /><br /> Pour la fabrication répétitive, afin d'évaluer les coûts matière directs, les frais de main-d'œuvre directs, et les frais généraux matière.<br /><br /> Environnement où il existe une discipline et du personnel pour le maintien des standards. |
 
@@ -48,7 +48,7 @@ Les méthodes d'évaluation de l'inventaire diffèrent dans la façon d'évaluer
 |**Standard**     |Facile à utiliser, mais requiert un entretien qualifié.|Le lettrage effectue le suivi de la **quantité restante**.<br /><br /> L'affectation est basée sur la méthode FIFO.|Réévalue les quantités facturées et non facturées.<br /><br /> Peut être effectué par article ou par écriture du grand livre d’articles.<br /><br /> Peut être fait à une date antérieure.|Utilisez la page **Standard Worksheet** pour régulièrement mettre à jour et rouler les coûts standard.<br /><br /> N'est PAS pris en charge par unité de stock.<br /><br /> Aucun enregistrement historique n'existe pour les coûts standard.|
 |**Spécifique**     |Requiert une traçabilité à la fois sur les transactions entrante et sortante.<br /><br /> Généralement utilisé pour les articles fabriqués de série.|Tous les lettrages sont fixes.|Réévalue uniquement la quantité facturée.<br /><br /> Peut être effectué par article ou par écriture du grand livre d’articles.<br /><br /> Peut être fait à une date antérieure.|Vous pouvez utiliser le suivi d'article spécifique sans utiliser le mode d'évaluation spécifique. Alors le coût ne suit PAS le numéro de lot, mais l'acceptation du coût du mode d'évaluation sélectionné.|
 
-## <a name="example"></a>Exemple :
+## Exemple :
 
 Cette section donne des exemples de la manière dont les divers modes d'évaluation coût affectent la valeur inventaire.  
 
@@ -66,7 +66,7 @@ Le tableau suivant montre les augmentations et diminutions d'inventaire sur lesq
 > [!NOTE]  
 > La quantité qui en résulte dans l'inventaire est égale à zéro. Par conséquent, la valeur de l'inventaire doit également être zéro, quel que soit le mode évaluation coût.  
 
-### <a name="effect-of-costing-methods-on-valuing-inventory-increases"></a>Effet des modes évaluation coût sur l'évaluation des augmentations d'inventaire
+### Effet des modes évaluation coût sur l'évaluation des augmentations d'inventaire  
 
 Pour les articles utilisant les modes évaluation coût qui utilisent le coût réel comme base d'évaluation (**FIFO**, **LIFO**, **Moyenne** ou **Spécifique**), les augmentations d'inventaire sont évaluées au coût d'acquisition de l'article.  
 
@@ -74,11 +74,11 @@ Pour les articles utilisant les modes évaluation coût qui utilisent le coût r
 
     Pour les articles qui utilisent le mode d'évaluation du coût **Standard**, les entrées d'inventaire sont évaluées au coût standard actuel de l'article.  
 
-#### <a name="standard"></a>Standard
+#### Standard  
 
 Pour les articles qui utilisent le mode d'évaluation du coût **Standard**, les entrées d'inventaire sont évaluées au coût standard actuel de l'article.  
 
-### <a name="effect-of-costing-methods-on-valuing-inventory-decreases"></a>Effet des modes évaluation coût sur l'évaluation des diminutions d'inventaire
+### Effet des modes évaluation coût sur l'évaluation des diminutions d'inventaire
 
 - **FIFO**  
 
@@ -86,7 +86,7 @@ Pour les articles qui utilisent le mode d'évaluation du coût **Standard**, les
 
      La valeur COGS est calculée à l'aide de la valeur des premières acquisitions inventaire.  
 
-     Le tableau suivant montre la manière dont les sorties d’inventaire sont évaluées pour le mode d’évaluation de l’inventaire **FIFO**.  
+     Le tableau suivant montre la manière dont les sorties de stock sont évaluées pour le mode d'évaluation du stock **FIFO**.  
 
     |Date de report|Quantité|Coût indiqué (réel)|N° séquence |  
     |------------------|--------------|----------------------------|---------------|  
@@ -100,7 +100,7 @@ Pour les articles qui utilisent le mode d'évaluation du coût **Standard**, les
 
      La valeur COGS est calculée à l'aide de la valeur des acquisitions inventaire les plus récentes.  
 
-     Le tableau suivant montre la manière dont les sorties d’inventaire sont évaluées pour le mode d’évaluation de l’inventaire **LIFO**.  
+     Le tableau suivant montre la manière dont les sorties de stock sont évaluées pour le mode d'évaluation du stock **LIFO**.  
 
     |Date de report|Quantité|Coût indiqué (réel)|N° séquence |  
     |------------|--------|--------------------|---------|  
@@ -110,9 +110,9 @@ Pour les articles qui utilisent le mode d'évaluation du coût **Standard**, les
 
 - **Moyenne**  
 
-    Pour les articles qui utilisent le mode d’évaluation du stock **Moyen**, les sorties d’inventaire sont évaluées en calculant la moyenne pondérée de l’inventaire restant au dernier jour de la période coût moyen dans laquelle la sortie d’inventaire a été reportée. Pour plus d'informations, voir [Détails de conception : coût moyen](design-details-average-cost.md).  
+    Pour les articles qui utilisent le mode d'évaluation du stock **Moyen**, les sorties de stock sont évaluées en calculant la moyenne pondérée du stock restant au dernier jour de la période coût moyen dans laquelle la sortie de stock a été validée. Pour plus d'informations, voir [Détails de conception : coût moyen](design-details-average-cost.md).  
 
-     Le tableau suivant montre la manière dont les sorties d’inventaire sont évaluées pour le mode d’évaluation de l’inventaire **Moyen**.  
+     Le tableau suivant montre la manière dont les sorties de stock sont évaluées pour le mode d'évaluation du stock **Moyen**.  
 
     | Date de report | Quantité | Coût indiqué (réel) | N° séquence  |
     |--|--|--|--|
@@ -122,9 +122,9 @@ Pour les articles qui utilisent le mode d'évaluation du coût **Standard**, les
 
 - **Standard**  
 
-    Pour les articles utilisant le mode évaluation inventaire **Standard**, les sorties d’inventaire sont évaluées de manière similaire au mode évaluation inventaire **FIFO**, sauf que l’évaluation est basée sur un coût standard, pas sur le coût réel.  
+    Pour les articles utilisant le mode évaluation stock **Standard**, les sorties de stock sont évaluées de manière similaire au mode évaluation stock **FIFO**, sauf que l'évaluation est basée sur un coût standard, pas sur le coût réel.  
 
-    Le tableau suivant montre la manière dont les sorties d’inventaire sont évaluées pour le mode d’évaluation de l’inventaire **Standard**.  
+    Le tableau suivant montre la manière dont les sorties de stock sont évaluées pour le mode d'évaluation du stock **Standard**.  
 
     |Date de report|Quantité|Coût indiqué (réel)|N° séquence |  
     |------------------|--------------|----------------------------|---------------|  
@@ -136,9 +136,9 @@ Pour les articles qui utilisent le mode d'évaluation du coût **Standard**, les
 
     Les modes d'évaluation coût partent du principe que les flux de coûts vont de l'augmentation d'inventaire vers la diminution d'inventaire. Toutefois, s'il existe des informations plus précises sur le flux des coûts, vous pouvez remplacer cette supposition en créant une affectation fixe entre les écritures. Une affectation fixe crée un lien entre une diminution d'inventaire et une augmentation d'inventaire spécifique, et supervise le flux des coûts en conséquence.  
 
-    Pour les articles utilisant le mode d’évaluation stock **Spécifique**, les sorties d’inventaire sont évaluées en fonction de l’entrée d’inventaire qui est liée par le lettrage fixe.  
+    Pour les articles utilisant le mode évaluation stock **Spécifique**, les sorties de stock sont évaluées en fonction de l'entrée de stock qui est liée par le lettrage fixe.  
 
-    Le tableau suivant montre la manière dont les sorties d’inventaire sont évaluées pour le mode d’évaluation de l’inventaire **Spécifique**.  
+    Le tableau suivant montre la manière dont les sorties de stock sont évaluées pour le mode d'évaluation du stock **Spécifique**.  
 
     |Date de report|Quantité|Coût indiqué (réel)|Écriture affectée à|N° séquence |
     |------------|--------|--------------------|----------------|---------|  
@@ -146,7 +146,7 @@ Pour les articles qui utilisent le mode d'évaluation du coût **Standard**, les
     |01/03/20|-1|-10,00|**1**|5|  
     |01/04/20|-1|-30,00|**3**|6|  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Détails de conception : évaluation du coût de l’inventaire](design-details-inventory-costing.md)  
 [Détails de conception : écart](design-details-variance.md)  

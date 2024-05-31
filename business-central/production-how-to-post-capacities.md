@@ -9,11 +9,11 @@ ms.date: 03/08/2023
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="post-capacities"></a>Reporter des capacités
+# Reporter des capacités
 
 Le journal capacité vous permet de reporter les capacités consommées qui ne sont pas affectées au bon de production. Par exemple, les travaux d'entretien doivent être affectés à une capacité, mais non à un bon de production.  
 
-## <a name="to-post-capacities"></a>Pour reporter les capacités
+## Pour reporter les capacités  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journaux capacité**, puis choisissez le lien associé.  
 2. Renseignez les champs **Date de report** et **N° document**.  
@@ -24,7 +24,7 @@ Le journal capacité vous permet de reporter les capacités consommées qui ne s
 
     [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
 
-## <a name="to-view-work-center-ledger-entries"></a>Pour afficher les écritures de l'atelier
+## Pour afficher les écritures de l'atelier  
 
 Sur les pages **Fiche atelier** et **Fiche unité de production**, vous pouvez afficher les capacités reportées en tant que résultat des bons de production terminés.    
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Ateliers**, puis choisissez le lien associé.  
@@ -32,7 +32,7 @@ Sur les pages **Fiche atelier** et **Fiche unité de production**, vous pouvez a
 
     La page **Écritures capacité** affiche les écritures reportées relatives à l'atelier dans l'ordre de leur report.   
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi  
 
 [Production](production-manage-manufacturing.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  

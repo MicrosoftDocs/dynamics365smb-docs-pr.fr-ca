@@ -611,11 +611,11 @@ ms.service: dynamics-365-business-central
 ### [Méthodes amortissement](fa-depreciation-methods.md)
 ### [Gestion des budgets pour les immobilisations](fa-how-manage-budgets.md)
 ### [Acquisition des immobilisations](fa-how-acquire.md)
+### [Amortissement des immobilisations](fa-how-depreciate-amortize.md)
 ### [Mise à jour des immobilisations](fa-how-maintain.md)
 ### [Assurance des immobilisations](fa-how-insure.md)
 ### [Transfert, fractionnement ou regroupement des immobilisations](fa-how-trans-split-combine.md)
 ### [Réévaluation des immobilisations](fa-how-revalue.md)
-### [Amortissement des immobilisations](fa-how-depreciate-amortize.md)
 ### [Cession ou annulation des immobilisations](fa-how-dispose-retire.md)
 ### [Dépannage des écritures immobilisation](fa-troubleshooting-fa-ledger-entries.md)
 
