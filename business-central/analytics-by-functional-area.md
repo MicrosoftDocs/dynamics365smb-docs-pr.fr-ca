@@ -11,7 +11,7 @@ ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
 
-# <a name="analytics-by-functional-area"></a>Analyses par domaine fonctionnel
+# Analyses par domaine fonctionnel
 
 Le contenu général sur les analyses est également disponible dans des versions spéciales pour de nombreux domaines fonctionnels [!INCLUDE[prod_short](includes/prod_short.md)]. 
 
@@ -24,7 +24,7 @@ Le contenu général sur les analyses est également disponible dans des version
 | Gestion des immobilisations | [Analyse des immobilisations](fa-analytics-overview.md) |
 
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Présentation des analyses](reports-bi-reporting.md)  
 

@@ -11,17 +11,17 @@ ms.author: altotovi
 ms.service: dynamics-365-business-central
 ---
 
-# <a name="record-sustainability-entries"></a>Enregistrer les entrées de durabilité
+# Enregistrer les entrées de durabilité
 
 À l’heure actuelle, la seule façon d’enregistrer les émissions de gaz à effet de serre (GES) dans le grand livre durabilité est d’utiliser des journaux durabilité.
 
-## <a name="sustainability-journals"></a>Journaux durabilité
+## Journaux durabilité
 
 Les journaux durabilité sont conçus pour suivre et enregistrer les activités liées au développement durable en utilisant la même expérience utilisateur que les autres journaux de Business Central. Les utilisateurs disposant des informations nécessaires peuvent saisir manuellement les émissions dans un journal. Alternativement, s’ils ne disposent pas de ces informations, ils peuvent utiliser des formules intégrées pour calculer avec précision les émissions sur la base de paramètres connus spécifiques correspondant à différents types de sources et de comptes.
 
 Les informations que vous saisissez dans un journal sont temporaires et peuvent être modifiées tant qu’elles sont dans ce journal. Lorsque vous reportez le journal, les informations sont transférées vers des écritures durabilité sur des comptes durabilité individuels, où elles ne peuvent pas être modifiées. Vous pouvez toutefois reporter des écritures d'inversion ou de correction.
 
-### <a name="use-journal-templates-and-batches"></a>Utiliser des lots et des modèles journal
+### Utiliser des lots et des modèles journal
 
 Par défaut, il existe deux modèles de journal durabilité par défaut : le modèle standard et le modèle récurrent.
 
@@ -30,13 +30,13 @@ Pour chaque modèle journal, vous pouvez configurer votre propre journal personn
 > [!TIP]
 > Si vous disposez de plusieurs lignes, vous pouvez contribuer à réduire le risque d’erreurs en créant un lot journal pour chaque type d’émission. Vous pouvez également utiliser le lot commun pour tous les types d’émissions.
 
-### <a name="validate-sustainability-journals"></a>Valider les journaux durabilité
+### Valider les journaux durabilité
 
 Sur la page **Configuration durabilité**, vous pouvez activer une vérification en arrière-plan pour aider à éviter les retards de report. Si une erreur survient lorsque vous travaillez dans le journal durabilité, la validation vous informe et vous empêche de reporter le journal.
 
 Lorsque vous activez la validation, le Récapitulatif **Vérification de journal** affiche les problèmes de la ligne actuelle et du lot entier. La validation se produit lorsque vous chargez un lot journal et lorsque vous sélectionnez une autre ligne journal. La vignette **Problèmes totaux** du récapitulatif indique le nombre total de problèmes [!INCLUDE [prod_short](includes/prod_short.md)] trouvés. Vous pouvez sélectionner la vignette pour ouvrir une vue d’ensemble des problèmes.
 
-### <a name="work-with-sustainability-journals"></a>Utiliser des journaux durabilité
+### Utiliser des journaux durabilité
 
 Pour commencer à travailler avec les journaux durabilité, suivez ces étapes :
 
@@ -57,7 +57,7 @@ Pour commencer à travailler avec les journaux durabilité, suivez ces étapes 
 
 Si votre formule est basée sur l’option **Calculer à partir du grand livre** dans la catégorie de compte de durabilité, vous devez utiliser l’action **Recueillir le montant des écritures GL** avant de reporter le journal pour calculer les émissions en fonction de cette source de données. De plus, si vous avez apporté des modifications aux facteurs d’émission après avoir renseigné les lignes journal, vous devez choisir l’action **Recalculer** pour obtenir le montant approprié dans le journal.
 
-### <a name="recurring-journals"></a>Journaux récurrents
+### Journaux récurrents
 
 Un journal récurrent est un journal durabilité contenant des champs spécifiques pour la gestion des transactions que vous reportez fréquemment avec peu ou pas de modifications. Par exemple, les transactions durables telles que l’électricité, le chauffage ou d’autres transactions similaires. Vous pouvez utiliser les journaux récurrents pour reporter des montants fixes et variables.
 
@@ -69,7 +69,7 @@ Le champ **Fréquence récurrente** est également important et doit être défi
 
 Le champ **Date expiration** détermine la date à laquelle la ligne est reportée pour la dernière fois. La ligne n’est plus reportée après cette date. L’avantage d’utiliser le champ **Date d’expiration** est que la ligne n’est pas supprimée immédiatement du journal. Vous pouvez entrer une date ultérieure afin de pouvoir utiliser la ligne à l’avenir. Si le champ est blanc, la ligne est reportée à chaque fois, jusqu’à ce qu’elle soit supprimée du journal.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Finances](finance.md)  
 [Vue d’ensemble de la gestion de la durabilité](finance-manage-sustainability.md)  

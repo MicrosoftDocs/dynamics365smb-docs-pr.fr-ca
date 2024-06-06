@@ -10,7 +10,7 @@ ms.date: 04/26/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# <a name="service-management"></a>Management des services
+# Management des services
 
 > [!NOTE]
 > La fonctionnalité décrite dans ces rubrique et sous-rubriques n’est visible dans l’interface utilisateur que si vous avez l’expérience **Premium**. Pour plus d'informations, voir [Modifier les fonctionnalités affichées](ui-experiences.md).
@@ -34,7 +34,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ar
 |Créez et gérez des ententes contractuelles entre vous et vos clients.|[Exécution des contrats de service](service-fulfill-service-contracts.md)|  
 |Fournir des services aux clients et facturer les commandes service.|[Exécution du service](service-deliver-service.md)|  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .  
 
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Projets](projects-how-create-jobs.md)  

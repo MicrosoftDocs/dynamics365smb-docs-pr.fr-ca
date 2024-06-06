@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
 
-# <a name="ad-hoc-analysis-of-fixed-assets-data"></a>Analyse ad hoc des données Immobilisations
+# Analyse ad hoc des données Immobilisations
 
 Cet article vous apprenez à utiliser fonction **analyse les données** pour analyser des pages de Immobilisations directement de liste de pages et requêtes. Vous n’avez pas besoin d’exécuter un rapport ou de changer d'application, comme Excel. La fonction fournit un moyen interactif et polyvalent de calculer, résumer et examiner les données. Plutôt que d’exécuter des rapports à l’aide d’options et de filtres, vous pouvez ajouter plusieurs onglets qui représentent différentes tâches ou vues sur les données. Quelques exemples sont « Actifs totaux », « Amortissement » ou toute autre vue que vous pouvez imaginer. Pour en savoir plus sur l’utilisation de la fonctionnalité **Analyse des données** , accédez à [Analyser la liste et interroger les données avec le mode d’analyse](analysis-mode.md).
 
@@ -21,7 +21,7 @@ Utilisez les pages de liste suivantes pour commencer une analyse ad hoc des proc
 - [Écritures immobilisations](https://businesscentral.dynamics.com/?page=5604)
 - [Écritures journal général](https://businesscentral.dynamics.com/?page=20)
 
-## <a name="fixed-assets-ad-hoc-analysis-scenarios"></a>Scénarios analyse ad hoc des Immobilisations
+## Scénarios analyse ad hoc des Immobilisations
 
 Utilisez la fonctionnalité **Analyse des données** pour une vérification rapide des faits et une analyse ad hoc :
 
@@ -37,7 +37,7 @@ Les sections suivantes fournissent des exemples de scénarios de Immobilisations
 | [La valeur des actifs change au fil du temps](#example-asset-value-changes-over-time) | Suivez les modifications de valeur des actifs au fil du temps. | [Écritures immobilisations](https://businesscentral.dynamics.com/?page=5604) | **Type report immo.**, **Date de report immo.** et **Montant** |
 |[Amortissements des immobilisations au fil du temps](#example-fixed-asset-depreciations-over-time) | Suivez les Amortissement au fil du temps, à la fois sur tous les actifs et sur un seul actif. | [Écritures immobilisations](https://businesscentral.dynamics.com/?page=5604) | **Registre amortissement**, **N° immobilisation**, **Exercice report immobilisations**, **Mois de report immobilisations**, **Montant** et **Type de report immobilisations** |
 
-### <a name="example-fixed-assets-current-value"></a>Exemple: valeur actuelle Immobilisations
+### Exemple: valeur actuelle Immobilisations
 
 Pour suivre la valeur d’une ou plusieurs immobilisations, procédez comme suit :
 
@@ -52,7 +52,7 @@ L’image suivante montre le résultat de ces étapes.
 
 :::image type="content" source="media/data-analysis-fa-ledger-entries-asset-overview-current-value.png" alt-text="Exemple de procédure pour effectuer une analyse des données sur la page Écritures immobilisation pour voir la valeur d’un actif." lightbox="media/data-analysis-fa-ledger-entries-asset-overview-current-value.png":::
 
-### <a name="example-asset-value-changes-over-time"></a>Exemple : la valeur des actifs change au fil du temps
+### Exemple : la valeur des actifs change au fil du temps
 
 Pour suivre les changements de valeur des actifs au fil du temps, procédez comme suit :
 
@@ -68,7 +68,7 @@ L’image suivante montre le résultat de ces étapes.
 
 :::image type="content" source="media/data-analysis-fa-ledger-entries-asset-changes-over-time.png" alt-text="Exemple de procédure pour effectuer une analyse de données sur la page Écritures immobilisation pour voir les changements de la valeur des actifs au fil du temps." lightbox="media/data-analysis-fa-ledger-entries-asset-changes-over-time.png":::
 
-### <a name="example-fixed-asset-depreciations-over-time"></a>Exemple : amortissements des immobilisations au fil du temps
+### Exemple : amortissements des immobilisations au fil du temps
 
 Pour suivre l'Amortissement d’une ou plusieurs immobilisations, procédez comme suit :
 
@@ -85,17 +85,17 @@ L’image suivante montre le résultat de ces étapes.
 
 :::image type="content" source="media/data-analysis-fa-ledger-entries-depreciation-by-asset.png" alt-text="Exemple de procédure pour effectuer une analyse des données sur la page Écritures immobilisation pour voir l’amortissement au fil du temps." lightbox="media/data-analysis-fa-ledger-entries-depreciation-by-asset.png":::
 
-## <a name="data-foundation-for-ad-hoc-analysis-on-fixed-assets"></a>Base de données pour une analyse ad hoc des immobilisations
+## Base de données pour une analyse ad hoc des immobilisations
 
 Lorsque vous reportez des journaux immobilisations, [!INCLUDE [prod_short](includes/prod_short.md)] crée des écritures dans la table **Écriture immobilisation**. Par conséquent, une analyse ad hoc des immobilisations est généralement effectuée sur la page [Écritures immobilisation](https://businesscentral.dynamics.com/?page=5604) .
 
-## <a name="contributors"></a>Contributeurs
+## Contributeurs
 
 *Microsoft maintient cet article. Certaines parties des exemples ont été initialement écrites par le contributeur suivant.*
 
 * [Aldona Stec](https://www.linkedin.com/in/aldona-stec-25283bb1) | [!INCLUDE[prod_short](includes/prod_short.md)] Consultante
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Analyse des données de liste et de requête avec le mode d’analyse](analysis-mode.md)  
 [Vue d’ensemble de l’analyse des immobilisations](fa-analytics-overview.md)  

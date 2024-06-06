@@ -9,7 +9,7 @@ ms.date: 04/01/2021
 ms.author: jswymer
 ms.service: dynamics-365-business-central
 ---
-# <a name="preparing-closing-statements"></a>Préparation des relevés de fermeture
+# Préparation des relevés de fermeture
 Il existe plusieurs rapports standard que vous pouvez utiliser pour rassembler les informations dont vous avez besoin pour préparer les relevés de fermeture de votre compagnie.
 
 Le tableau suivant décrit un certain nombre d'états qui peuvent être utiles dans ce processus.  
@@ -26,7 +26,7 @@ Le tableau suivant décrit un certain nombre d'états qui peuvent être utiles d
 
 Pour voir un rapport, sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez le nom tel qu’il apparaît dans le tableau, puis choisissez le lien associé.
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Veille économique](bi.md)

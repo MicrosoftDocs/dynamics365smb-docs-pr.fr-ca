@@ -10,22 +10,22 @@ ms.search.form: 'Report_33, Report_101, Report_104, Report_109, Report_112, Repo
 ms.date: 04/26/2024
 ms.service: dynamics-365-business-central
 ---
-# <a name="accounts-receivable-reports-and-analytics"></a>Rapports Comptabilité client et analyse
+# Rapports Comptabilité client et analyse
 
 Pour vous aider à gérer votre comptabilité client dans [!INCLUDE [prod_short](includes/prod_short.md)], des rapports et des analyses standard sont intégrés. Ils vont au-delà des contraintes des rapports traditionnels pour vous aider à concevoir efficacement divers types de rapports.  
 
 
-## <a name="reports"></a>Rapports
+## Rapports
 
 [!INCLUDE [receivable_reports](includes/receivable-reports-include.md)]
 
 
-## <a name="explore-finance-reports-with-report-explorer"></a>Explorez les rapports finances avec l’Explorateur de rapports
+## Explorez les rapports finances avec l’Explorateur de rapports
 
 [!INCLUDE [finance_reports_report_explorer](includes/finance-reports-report-explorer-include.md)]
 
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Rapports financiers clés](finance-reports.md)  
 [Analyse ad hoc sur données financières](ad-hoc-analysis-finance.md)   
