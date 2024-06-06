@@ -11,11 +11,11 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
 
-# Procédure pas à pas sur les flux entrants ou sortants dans les configurations entrepôt avancées
+# <a name="walkthrough-of-inbound-and-outbound-flow-in-advanced-warehouse-configuration"></a>Procédure pas à pas sur les flux entrants ou sortants dans les configurations entrepôt avancées
 
 Cette procédure pas à pas montre comment effectuer des flux entrants et sortants dans la configuration avancée : Prélèvement et rangement dirigés. Pour plus d’informations, voir [Présentation des différentes options de configuration](../../design-details-warehouse-management.md#overview-of-different-configuration-options).
 
-## Conditions préalables  
+## <a name="prerequisites"></a>Conditions préalables
 Pour exécuter cette procédure, vous devez faire de vous un employé d’entrepôt sur le site *BLANC* en procédant comme suit :  
 1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 1.](../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Employés entrepôt**, puis sélectionnez le lien associé.  
 2. Choisissez le champ **Code utilisateur** et sélectionnez votre propre compte utilisateur sur la page **Utilisateurs**.  
@@ -23,10 +23,10 @@ Pour exécuter cette procédure, vous devez faire de vous un employé d’entrep
 4. Activez le bouton à bascule **Par défaut**.
 
 
-## Scénario  
+## <a name="scenario"></a>Scénario
 Ellen, la responsable de l’entrepôt, utilise la fonctionnalité de transbordement et de réapprovisionnement des zones pour accélérer les délais de réception et d’expédition.  
 
-## Étapes
+## <a name="steps"></a>Étapes
 
 1. Créez une livraison entrepôt.  
 
@@ -135,7 +135,7 @@ Ellen, la responsable de l’entrepôt, utilise la fonctionnalité de transborde
     4. Confirmez l’option **Livrer**.
 
 
-## Résultats
+## <a name="results"></a>Résultats
 - la **Réception entrepôt reportée** est créée
 - le **Rangement entrepôt enreg.** est créé    
 - la **Réception achat reportée** est créée    
@@ -149,7 +149,7 @@ Ellen, la responsable de l’entrepôt, utilise la fonctionnalité de transborde
 
 
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 [Recevoir des articles](../../warehouse-how-receive-items.md) 
 [Détails de conception : Flux d’entrepôt entrant](../../design-details-inbound-warehouse-flow.md) 
 [Livrer les articles](../../warehouse-how-ship-items.md) 

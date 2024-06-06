@@ -9,11 +9,11 @@ ms.date: 06/25/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# Configurer les escomptes de paiement de vente et la taxe de vente non réalisée dans la version canadienne
+# <a name="set-up-unrealized-sales-tax-and-sales-payment-discounts-in-the-canadian-version"></a>Configurer les escomptes de paiement de vente et la taxe de vente non réalisée dans la version canadienne
 
 [!INCLUDE [unrealized-sales-tax-sales-payment-discounts-setup](../includes/CAMXUS/unrealized-sales-tax-sales-payment-discounts-setup.md)]
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Fonctionnalités locales Canada](canada-local-functionality.md)  
 [Déclaration de la taxe de vente au Canada](ca-sales-tax.md)  

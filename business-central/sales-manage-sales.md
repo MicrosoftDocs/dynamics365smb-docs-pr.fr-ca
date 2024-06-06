@@ -12,7 +12,7 @@ ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
 
-# Vente
+# <a name="sales"></a>Vente
 
 Vous créez une facture vente ou un document de vente pour enregistrer votre entente avec un client pour vendre certains produits selon certaines méthodes de livraison et de paiement.
 
@@ -34,7 +34,7 @@ Pour tous les processus de vente, vous pouvez intégrer un flux de travail appro
 
 Le section suivant décrit une série de tâches et inclut des liens vers les articles qui les décrivent.
 
-## Démarrer avec les capacités ventes
+## <a name="get-started-with-sales-capabilities"></a>Démarrer avec les capacités ventes
 
 Avant de vendre, précisez comment vous souhaitez gérer les processus de vente de votre compagnie.
 
@@ -43,7 +43,7 @@ Avant de vendre, précisez comment vous souhaitez gérer les processus de vente 
 | Créer une fiche client pour chaque client auquel vous vendez des éléments.|[Enregistrement de nouveaux clients](sales-how-register-new-customers.md) |
 | Définissez la manière dont vous effectuez les ventes, comme les prix et les escomptes, les groupes de prix et d’escomptes clients, les représentants, les méthodes d’expédition et les agents. | [Configuration des ventes](sales-setup-sales.md) |
 
-## Analyse vente
+## <a name="sales-analytics"></a>Analyse vente
 
 Cette section décrit les outils analytiques que vous pouvez utiliser pour obtenir des informations sur vos données de vente.
 
@@ -53,7 +53,7 @@ Cette section décrit les outils analytiques que vous pouvez utiliser pour obten
 | Effectuez une analyse ad hoc des données de vente directement sur les pages de liste et les requêtes. | [Créer des rapports d’analyse vente](bi-how-create-analysis-views-reports.md) |
 | Explorez des rapports de vente intégrés. | [Rapports vente intégrés](sales-reports.md) |
 
-## Devis de commande à facture de vente
+## <a name="quote-to-order-to-sales-invoice"></a>Devis de commande à facture de vente
 
 Le tableau suivant décrit comment utiliser des processus de vente simples.
 
@@ -74,7 +74,7 @@ Si vous avez besoin de processus de vente plus complexes, le tableau suivant ré
 |Facturez un client une seule fois pour plusieurs livraisons en combinant les livraisons sur une seule facture.|[Regrouper de bons de livraison sur une seule facture](sales-how-to-combine-shipments-on-a-single-invoice.md)|
 |Vendez les éléments d’assemblage qui ne sont pas disponibles actuellement en créant un ordre d’assemblage associé. L’ordre d’assemblage peut fournir la quantité totale ou partielle figurant sur le document de vente.|[Vente d’articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md)|
 
-## Effectuer un prélèvement et une livraison
+## <a name="pick-and-ship"></a>Effectuer un prélèvement et une livraison
 
 Le tableau suivant décrit comment prélever des articles pour un document de vente et les livrer au client.
 
@@ -86,7 +86,7 @@ Le tableau suivant décrit comment prélever des articles pour un document de ve
 |Informez vos clients des dates de livraison en calculant, soit la date de simulation de délai, soit la date disponible à la vente.|[Calcul des dates promesse livraison](sales-how-to-calculate-order-promising-dates.md)|
 | Découvrez comment suivre un colis à partir d’une expédition vente reportée. | [Suivi des paquets](sales-how-track-packages.md) |
 
-## Commandes annulées, remboursements et retours
+## <a name="canceled-orders-refunds-and-returns"></a>Commandes annulées, remboursements et retours
 
 Le tableau suivant décrit comment gérer les commandes annulées, les remboursements et les retours de marchandises.
 
@@ -95,7 +95,7 @@ Le tableau suivant décrit comment gérer les commandes annulées, les rembourse
 | Effectuez une action sur une facture vente reportée impayée pour créer automatiquement une note de crédit et annulez la facture vente ou recréez-la pour que vous puissiez y apporter des corrections. |[Corriger ou annuler des factures vente impayées](sales-how-correct-cancel-sales-invoice.md) |
 | Créez une note de crédit vente pour rembourser une facture vente reportée spécifique pour refléter les produits retournés par le client et le montant de remboursement. |[Traitement des retours ou annulations de ventes](sales-how-process-sales-returns-cancellations.md) |
 
-## Autres processus de vente
+## <a name="other-processes-in-sales"></a>Autres processus de vente
 
 Le tableau suivant décrit comment traiter autres des processus de vente.
 
@@ -103,7 +103,7 @@ Le tableau suivant décrit comment traiter autres des processus de vente.
 | --- | --- |
 |Résolvez la confusion lorsque deux enregistrements ou plus existent pour le même client.|[Fusion des enregistrements en double](sales-how-merge-duplicate-records.md)|
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Définition des ventes](sales-setup-sales.md)  
 [Enregistrement de nouveaux clients](sales-how-register-new-customers.md)  

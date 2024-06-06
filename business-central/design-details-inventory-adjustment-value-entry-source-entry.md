@@ -10,15 +10,15 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
 
-# Date de report sur l’écriture valeur d’ajustement par rapport à l’écriture source
+# <a name="posting-date-on-adjustment-value-entry-compared-to-the-source-entry"></a>Date de report sur l’écriture valeur d’ajustement par rapport à l’écriture source
 
 Cet article compare la date de report de l’écriture valeur d’ajustement et la date de report de l’écriture à l’origine de l’ajustement provoquant l’exécution du traitement en lot Ajuster coûts : Écr. article, en particulier un scénario de réévaluation et un scénario de frais annexes.
 
 Le traitement en lot **Ajuster coûts : Écr. article** traitera vos données en fonction de votre scénario et de la configuration de [!INCLUDE[prod_short](includes/prod_short.md)]. Dans cette section, nous décrivons deux processus distincts et, pour chacun, nous montrons le type d’impact du traitement en lot Ajuster coûts : Écr. article sur les données.
 
-## Scénario de réévaluation
+## <a name="revaluation-scenario"></a>Scénario de réévaluation
 
-### Conditions préalables  
+### <a name="prerequisites"></a>Conditions préalables
 
 Veuillez saisir les valeurs suivantes :
 
@@ -44,7 +44,7 @@ Veuillez saisir les valeurs suivantes :
 
 - Autoriser Fin période report = Vide  
 
-### Pour tester le scénario
+### <a name="to-test-the-scenario"></a>Pour tester le scénario
 
 Testez ce scénario en effectuant les étapes suivantes.
 
@@ -149,15 +149,15 @@ L'ajustement effectué pour l'ajustement négatif à l'étape 3 fait l'objet d'
 
 Pour procéder à l’ajustement en décembre de l’ajustement négatif à l’étape 3, le champ Début période report dans la configuration du grand livre doit indiquer une date en décembre.  
 
-### Conclusion
+### <a name="conclusion"></a>Conclusion
 
 Avec l’expérience acquise dans ce scénario, lorsque vous envisagez la configuration la plus appropriée pour une plage de dates de report autorisées pour une compagnie, vous pouvez tenir compte des éléments suivants. Tant que vous autorisez le report des modifications de la valeur inventaire au cours d’une période, telle que décembre dans ce cas, la configuration que la compagnie utilise pour les plages de dates de report autorisées doit être alignée sur cette décision. Lorsque l'option Début période report dans la configuration du grand livre est définie sur le 1er décembre, la réévaluation effectuée en décembre peut être transférée vers les écritures sortantes affectées dans la même période.  
 
 Les groupes d'utilisateurs qui ne sont pas autorisés à effectuer des reports en décembre mais en janvier, ce qui était probablement censé être limité par la configuration du grand livre dans ce scénario, devront plutôt être gérés via la configuration des utilisateurs.  
 
-## Scénario de frais annexes  
+## <a name="item-charge-scenario"></a>Scénario de frais annexes
 
-### Conditions préalables  
+### <a name="prerequisites-1"></a>Conditions préalables
 
 Veuillez saisir les valeurs suivantes :
 
@@ -183,7 +183,7 @@ Veuillez saisir les valeurs suivantes :
 
 - Autoriser Fin période report = Vide  
 
-### Pour tester le scénario  
+### <a name="to-test-the-scenario-1"></a>Pour tester le scénario
 
 Testez ce scénario en effectuant les étapes suivantes :
 
@@ -349,7 +349,7 @@ Il est difficile d’obtenir un rapport Évaluation de l'inventaire indiquant Qu
 
 Dans ce scénario, une solution aurait pu être que le champ Début période report dans la Configuration du grand livre indique une date en décembre pour quelques jours de plus et que le report des premiers frais annexes soit postposé pour que tous les coûts de la période ou de l'exercice financier précédent soient reconnus pour la période à laquelle ils appartiennent. Ainsi, le traitement en lot Ajuster coûts – Écr. article serait exécuté et la date de report autorisée serait déplacée vers la nouvelle période ou le nouvel exercice financier. Les premiers frais annexes avec la date de report du 2 janvier peuvent ensuite être reportés.  
 
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi
 
 [Détails de conception : date de report de l'écriture valeur d'ajustement](design-details-inventory-adjustment-value-entry-posting-date.md)  
 [Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)  

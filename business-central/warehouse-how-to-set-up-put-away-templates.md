@@ -9,13 +9,13 @@ ms.date: 10/04/2023
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# Configurer des modèles rangement
+# <a name="set-up-put-away-templates"></a>Configurer des modèles rangement
 
 À l'aide de la fonctionnalité de prélèvement et de rangement suggérée, la zone la plus appropriée pour vos articles à un moment donné est suggérée, en fonction du modèle rangement configuré pour l'entrepôt, des classements de zone et des quantités minimale et maximale définies pour les zones fixes.  
 
 Vous pouvez configurer un certain nombre de modèles rangement et en sélectionner un pour gérer les rangements dans votre entrepôt. Vous pouvez également sélectionner un modèle rangement pour un article ou une unité de stock disposant d'exigences spéciales en matière de rangement.  
 
-## Pour configurer des modèles rangement
+## <a name="to-set-up-put-away-templates"></a>Pour configurer des modèles rangement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modèles rangement**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -30,7 +30,7 @@ Vous pouvez configurer un certain nombre de modèles rangement et en sélectionn
 
 Vous pouvez créer plusieurs modèles rangement et les appliquer comme vous le souhaitez. On se réfère d'abord au modèle rangement sélectionné éventuel pour l'article ou l'unité de stock. Si ces champs ne sont pas renseignés, alors le modèle rangement sélectionné pour l'entrepôt sur le raccourci **Politiques de zones** de la fiche emplacement sera utilisé.  
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Vue d'ensemble de la gestion d'entrepôt](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)                                

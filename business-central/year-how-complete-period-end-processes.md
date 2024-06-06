@@ -9,11 +9,11 @@ ms.date: 08/29/2022
 ms.author: jswymer
 ms.service: dynamics-365-business-central
 ---
-# Aperçu des tâches de fermeture des périodes comptables
+# <a name="overview-of-tasks-to-close-accounting-periods"></a>Aperçu des tâches de fermeture des périodes comptables
 
 [!INCLUDE[prod_short](includes/prod_short.md)] ne vous oblige pas à clôturer les périodes. Toutefois, il existe de nombreuses activités de clôture de période (fin de mois) que vous pouvez effectuer. Cette rubrique présente un aperçu des activités et processus facultatifs pour la fermeture de périodes.  
 
-## Grand livre
+## <a name="general-ledger"></a>Grand livre
 
 * Spécifiez des périodes de report à l'échelle du système et spécifiques à l'utilisateur.  
 
@@ -24,7 +24,7 @@ ms.service: dynamics-365-business-central
 * Exécutez les rapports financiers comme suit :  
   * Ouvrez la page **Rapports financiers**, puis sélectionnez l’action **Imprimer**.  
 
-## Ventes
+## <a name="sales-and-receivables"></a>Ventes
 
 * Reportez l'ensemble des documents de vente, factures, notes de crédit et retours vente.  
 * Reportez l'ensemble des journaux des encaissements.  
@@ -32,7 +32,7 @@ ms.service: dynamics-365-business-central
 * Rapprocher les comptes clients avec le grand livre.  
 * Exécutez le traitement par lots **Supprimer cdes vente facturées**.  
 
-## Achats
+## <a name="purchases-and-payables"></a>Achats
 
 * Reportez l'ensemble des bons de commande, factures, notes de crédit et retours achat.  
 * Reportez l'ensemble des journaux paiement.  
@@ -40,7 +40,7 @@ ms.service: dynamics-365-business-central
 * Générez l'état **Comptabilité fournisseur âgée** et rapprochez la comptabilité fournisseur de la comptabilité.  
 * Exécutez le traitement par lots **Supprimer cdes achat facturées**.  
 
-## Immobilisations
+## <a name="fixed-assets"></a>Immobilisations
 
 * Reportez tous les coûts d'entretien qui ont été reportés via les journaux immobilisation ou les factures.
 * Reportez les ajustements.
@@ -48,15 +48,15 @@ ms.service: dynamics-365-business-central
 * Reportez l'amortissement.
 * Mettez à jour et reportez le journal immobilisations récurrentes.
 
-## Intercompanie
+## <a name="intercompany"></a>Intercompanie
 
 * Traitez les transactions intersociétés.
 
-## Calculer et traiter la taxe de vente
+## <a name="calculate-and-process-sales-tax"></a>Calculer et traiter la taxe de vente
 
 * Renseignez les déclarations de TVA.  
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
 [Clôture plans](year-close-books.md)  
