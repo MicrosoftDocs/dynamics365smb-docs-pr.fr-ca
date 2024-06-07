@@ -11,7 +11,7 @@ ms.date: 05/07/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# <a name="how-to-use-approval-workflows"></a>Procédure d’utlisation des flux de travail approbation
+# Procédure d’utlisation des flux de travail approbation
 
 Lorsqu'un enregistrement, tel qu'un document achat ou une fiche client, doit être approuvé par un membre de votre organisation, vous envoyez une approbation demande achat dans le cadre d'un workflow. Selon la configuration du workflow, l'approbateur approprié est informé que l'enregistrement requiert son approbation.
 
@@ -21,7 +21,7 @@ Outre les flux de travail approbation décrits dans cet article, vous pouvez eff
 
 Les flux d'approbation de base pour les documents achat, les documents de vente, les journaux paiement, les fiches client et les fiches article sont prêts à être utilisés dans le cadre de guides. En savoir plus, [Préparation aux activités commerciales](ui-get-ready-business.md).
 
-## <a name="request-a-record-approval"></a>Demander une approbation d’enregistrement
+## Demander une approbation d’enregistrement
 
 La tâche suivante est effectuée par un utilisateur d'approbation.
 
@@ -32,7 +32,7 @@ Le statut de l’écriture approbation passe de **Créé** à **Ouvert**. L'éta
 
 Lorsque tous les approbateurs ont approuvé l’enregistrement, l’état passe à **Libéré**. Vous pouvez ensuite effectuer votre travail avec l’enregistrement.
 
-## <a name="cancel-approval-requests"></a>Annuler demandes d’approbation
+## Annuler demandes d’approbation
 
 La tâche suivante est effectuée par un utilisateur d'approbation doté de droits d'approbation.
 
@@ -42,7 +42,7 @@ Un client peut souhaiter modifier une commande après sa soumission pour approba
 
 Lorsque la demande d'approbation a été annulée, le statut de l'écriture de l'approbation connexe passe à **Annulé**. Le statut de l’enregistrement est mis à jour d'**Approbation en attente** à **Ouvert**. Le processus d’approbation peut alors redémarrer.
 
-## <a name="approve-or-reject-approval-requests"></a>Approuver ou rejeter les demandes d’approbation
+## Approuver ou rejeter les demandes d’approbation
 
 La tâche suivante est effectuée par un utilisateur d'approbation doté de droits d'approbation.
 
@@ -58,7 +58,7 @@ Si une hiérarchie d’approbateurs est configurée, l'état enregistrement sera
 
 Simultanément, le statut d'approbation passe de **Créé** à **Ouvert** dès qu'une demande d'approbation est créée pour l'enregistrement. Si la demande est rejetée, le statut d'approbation passe à **Rejeté**. Le statut reste sur **Ouvert** ou **Rejeté** jusqu'à ce que tous les approbateurs aient approuvé la demande.
 
-## <a name="delegate-approval-requests"></a>Déléguer demandes d’approbation
+## Déléguer demandes d’approbation
 
 La tâche suivante est effectuée par un utilisateur d'approbation doté de droits d'approbation.
 
@@ -69,7 +69,7 @@ Pour éviter que des enregistrements ne s’accumulent ou encore bloquent le flu
 
 Une notification pour approuver la demande est envoyée à l'approbateur remplaçant.
 
-## <a name="manage-overdue-approval-requests"></a>Gérer des demandes d’approbations échues
+## Gérer des demandes d’approbations échues
 
 La tâche suivante est effectuée par un utilisateur d'approbation doté de droits d'approbation.
 
@@ -80,7 +80,7 @@ La fonctionnalité **Envoyer des notifications d’approbations échues** passe 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Demandes approbations échues**, puis sélectionnez le lien associé.
 2. Sur la page **Demandes approbations échues**, sélectionnez l'action **Envoyer les notifications d'approbation échues**.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Utilisation des flux de travail approbation](across-use-workflows.md)  
 [Flux de travail](across-workflow.md)  
