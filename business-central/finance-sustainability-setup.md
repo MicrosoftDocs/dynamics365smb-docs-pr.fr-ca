@@ -11,7 +11,7 @@ ms.author: altotovi
 ms.service: dynamics-365-business-central
 ---
 
-# Configuration de durabilité
+# <a name="sustainability-setup"></a>Configuration de durabilité
 
 Avant que le module durabilité fonctionne correctement, vous devez configurer certains contrôles et instructions de base liés à l’ensemble des fonctionnalités.
 
@@ -52,7 +52,7 @@ Pour mettre en place un module de durabilité, suivez les étapes suivantes :
     | **Précision d’arrondissement des émissions** | Spécifiez la taille de l’intervalle utilisé pendant l'arrondissement des quantités d’émissions lors de la déclaration aux autorités. |
     | **Type d’arrondissement des émissions** | Précisez comment le programme arrondit les quantités d’émissions lors de la déclaration aux autorités. Les options suivantes sont disponibles : **Au plus proche**, **Vers le haut** et **Vers le bas**. |
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Finances](finance.md)  
 [Vue d’ensemble de la gestion de la durabilité](finance-manage-sustainability.md)  

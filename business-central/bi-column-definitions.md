@@ -12,11 +12,11 @@ ms.search.form: '103, 104, 108, 195, 196, 197, 198, 489, 490, 764, 765, 766'
 ms.service: dynamics-365-business-central
 ---
 
-# Définitions de colonne dans les rapports financiers
+# <a name="column-definitions-in-financial-reporting"></a>Définitions de colonne dans les rapports financiers
 
 Utilisez les définitions de colonne pour spécifier les colonnes à inclure dans un rapport. Par exemple, vous pouvez créer une disposition de rapport de manière à comparer le solde période et le solde pour une même période de l'exercice actuel et du précédent. Vous pouvez avoir jusqu’à 15 colonnes dans une définition de colonne. Par exemple, plusieurs colonnes sont utiles pour afficher les budgets sur 12 mois avec une colonne indiquant le total.
 
-## Créer ou modifier une définition de colonne
+## <a name="create-or-edit-a-column-definition"></a>Créer ou modifier une définition de colonne
 
 Pour créer ou modifier une définition de colonne, procédez comme suit.
 
@@ -28,7 +28,7 @@ Pour créer ou modifier une définition de colonne, procédez comme suit.
 1. Cliquez sur **OK**.
 1. Ouvrez la page **Rapport financier** de temps en temps pour vérifier que la nouvelle définition de colonne fonctionne comme prévu.
 
-## Définitions de colonne intégrées
+## <a name="built-in-column-definitions"></a>Définitions de colonne intégrées
 
 [!INCLUDE[prod_short](includes/prod_short.md)] fournit des exemples de définitions de colonnes qui peuvent vous aider à démarrer rapidement la configuration de rapports financiers adaptés à vos besoins.
 
@@ -41,7 +41,7 @@ Pour créer ou modifier une définition de colonne, procédez comme suit.
 | TBA 4 | TBA 4 | TBA 4 |
 -->
 
-## Exemple : Créer une définition de colonne pour calcule des pourcentages
+## <a name="example-create-a-column-definition-to-calculate-percentages"></a>Exemple : Créer une définition de colonne pour calcule des pourcentages
 
 Vous souhaiterez peut-être inclure une colonne dans un rapport financier pour calculer des pourcentages d’un total. Par exemple, si vous avez des lignes qui ventilent des ventes par dimension, vous pouvez juger utile de disposer d’une colonne indiquant le pourcentage des ventes totales que représente chaque ligne.
 
@@ -58,7 +58,7 @@ Vous souhaiterez peut-être inclure une colonne dans un rapport financier pour c
     1. Dans le champ **Formule**, saisissez une formule correspondant au montant pour lequel vous voulez calculer un pourcentage, suivie du symbole de pourcentage %. Ainsi, si le numéro de colonne N contient le solde période, saisissez **N%**.  
 1. Répétez les étapes 4 à 7 pour chaque groupe de lignes que vous voulez ventiler par pourcentage.
 
-## Comparaison de périodes comptables à l’aide de formules de période
+## <a name="comparing-accounting-periods-using-period-formulas"></a>Comparaison de périodes comptables à l’aide de formules de période
 
 Votre rapport financier peut comparer les résultats de différentes périodes comptables, par exemple le mois dernier et le même mois l’année précédente. Pour ce faire, ouvrez la page **Définition de colonne** et personnalisez-la en ajoutant le champ **Formule période comparaison** sous forme de colonne. Pour plus d’informations, consultez [Personnaliser votre espace de travail](ui-personalization-user.md). Vous pouvez ensuite définir ce champ sur une formule de période.  
 
@@ -94,7 +94,7 @@ Pour plus d’informations, consultez [Utiliser des dates civiles et des heures]
 
 [!INCLUDE [report-best-practices-column-defs](includes/report-best-practices-column-defs.md)]
 
-## Importer ou exporter des définition de colonne dans des rapports financiers
+## <a name="import-or-export-financial-report-column-definitions"></a>Importer ou exporter des définition de colonne dans des rapports financiers
 
 À partir de la 1re vague de lancement 2024 (version 24.1), vous pouvez importer et exporter des définitions de colonne de rapports financiers sous forme de packages de configuration RapidStart. Par exemple, les packages de configuration s’avèrent utiles pour le partage d’informations avec d’autres compagnies. Le package est créé dans un fichier .rapidstart, qui compresse le contenu.
 
@@ -106,7 +106,7 @@ Pour importer ou exporter des définitions de colonne de rapports financiers, pr
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me 4.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Définitions de colonne**, puis sélectionnez le lien associé.
 1. Choisissez la définition de ligne, et choisissez l’action **Importer définition de colonne** ou **Exporter définition de colonne**, selon ce que vous voulez faire.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Définitions de ligne dans les rapports financiers](bi-row-definitions.md)  
 [Préparer des rapports financiers](bi-how-work-account-schedule.md)  

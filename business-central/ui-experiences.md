@@ -11,7 +11,7 @@ ms.date: 03/11/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# Modification des fonctionnalités affichées
+# <a name="change-which-features-are-displayed"></a>Modification des fonctionnalités affichées
 
 [!INCLUDE[prod_short](includes/prod_short.md)]est conçu pour vous aider à gérer votre entreprise indépendamment de sa taille et de sa complexité. Au cœur du produit, vous trouverez des fonctionnalités essentielles, telles que la génération de rapports financiers, les ventes, les achats et la gestion de l'inventaire. À mesure que la complexité de l'entreprise augmente, vous pouvez activer des fonctionnalités pour la fabrication et la gestion des services, par exemple.
 
@@ -36,11 +36,11 @@ Avant de définir le paramètre d'expérience d'une compagnie, vous devez défin
 
 Le paramètre **Expérience** s'applique à tous les utilisateurs d'une compagnie, mais chaque utilisateur peut personnaliser davantage sa propre expérience en modifiant la mise en page et le contenu. Pour plus d'informations, voir [Personnaliser votre espace de travail](ui-personalization-user.md).
 
-## Activation des fonctionnalités Premium après mise à niveau d’un plan
+## <a name="enabling-premium-features-after-upgrading-a-plan"></a>Activation des fonctionnalités Premium après mise à niveau d’un plan
 
 Les utilisateurs sont affectés à des plans dans le centre d’administration Microsoft 365 dans le cadre de la tâche générale de création des utilisateurs Business Central. Pour plus d’informations, consultez [Ajouter des utilisateurs et attribuer des licences en simultané](/microsoft-365/admin/add-users/add-users?view=o365-worldwide&preserve-view=true).
 
-### Pour mettre à jour les modifications de plan des groupes d'utilisateurs
+### <a name="to-update-plan-changes-in-users-groups"></a>Pour mettre à jour les modifications de plan des groupes d'utilisateurs
 
 [!INCLUDE [2023rw1-sec-group-short](includes/2023rw1-sec-group-short.md)]
 
@@ -50,18 +50,18 @@ Si vous avez modifié les plans des utilisateurs dans le centre d’administrati
 2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.
 3. Sur la page **Utilisateurs**, choisissez l’action **Mettre à jour les utilisateurs depuis Microsoft 365**.
 
-### Pour sélectionner l'expérience Premium
+### <a name="to-select-the-premium-experience"></a>Pour sélectionner l'expérience Premium
 
 Vous pouvez maintenant sélectionner la nouvelle expérience.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Informations sur la compagnie**, puis choisissez le lien associé.
 2. Sur la page **Informations compagnie**, dans le raccourci **Expérience utilisateur**, sélectionnez Premium dans le champ **Expérience**.
 
-## L’aide implique l’expérience Premium
+## <a name="help-assumes-the-premium-experience"></a>L’aide implique l’expérience Premium
 
 Tous les descriptions de fonctions de la documentation utilisateur de [!INCLUDE[prod_short](includes/prod_short.md)] assument l'expérience **Premium**, ce qui signifie que les descriptions couvrent la portée complète des éléments de l'interface utilisateur.
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Personnaliser votre espace de travail](ui-personalization-user.md)  
 [Personnalisation de Business Central](ui-customizing-overview.md)  

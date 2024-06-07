@@ -11,7 +11,7 @@ ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
 
-# Configurer des processus de gestion des services
+# <a name="configure-service-management-processes"></a>Configurer des processus de gestion des services
 
 Voici quelques exemples des paramètres que vous pouvez appliquer aux processus de gestion des services :  
   
@@ -21,12 +21,12 @@ Voici quelques exemples des paramètres que vous pouvez appliquer aux processus 
 * Les paramètres pour les contrats, tels que le nombre maximum de jours que vous pouvez utiliser pour les commandes contrat de service, si vous utilisez des codes motif lorsqu’un contrat est annulé, des textes standard pour les descriptions et les valeurs contractuelles.  
 * Les souches de numéros à utiliser pour les documents et les articles relatifs au service.  
 
-## Pour saisir les paramètres généraux et obligatoires
+## <a name="to-enter-general-and-mandatory-settings"></a>Pour saisir les paramètres généraux et obligatoires
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration Gestion des services**, puis choisissez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 
-## Configurer les politiques de publication des factures de service pour les utilisateurs
+## <a name="set-up-service-invoice-posting-policies-for-users"></a>Configurer les politiques de publication des factures de service pour les utilisateurs
 
 Les compagnies ont souvent des processus uniques pour les factures et les expéditions. Par exemple, les processus peuvent varier d’une personne reportant tout sur un ordre service à plusieurs employés, chacun dans leurs propres pages.
 
@@ -55,7 +55,7 @@ Le tableau suivant décrit les différentes effets sur différents documents.
 > [!NOTE]
 > Lorsque vous reportez des factures service et des notes de crédit, vous ne disposez d’aucune option de report. Les documents présentent toujours les transactions physiques et financières ensemble. Vous ne pouvez pas reporter partiellement les factures et les notes de crédit service.
 
-## Voir aussi .  
+## <a name="see-also"></a>Voir aussi .
 
 [Configurer le signalement des défaillances](service-how-setup-fault-reporting.md)  
 [Configuration de l’affectation des ressources](service-how-setup-resource-allocation.md)  

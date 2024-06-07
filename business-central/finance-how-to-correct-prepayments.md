@@ -9,14 +9,14 @@ ms.date: 06/16/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# Corriger des paiements anticipés
+# <a name="correct-prepayments"></a>Corriger des paiements anticipés
 
 Vous pouvez apporter une correction à une commande après avoir reporté une facture paiement anticipé pour la commande. Vous pouvez ajouter de nouvelles lignes à une commande après avoir émis un paiement anticipé, puis vous pouvez reporter une autre facture paiement anticipé, mais vous ne pouvez pas supprimer une ligne d'une commande après avoir facturé un paiement anticipé pour la ligne.  
 
 > [!TIP]
 > Si vous avez reporté une facture de paiement anticipé pour une facture vente que vous corrigez ou annulez ensuite, vous devez également corriger ou annuler le paiement anticipé.
 
-## Pour corriger un paiement anticipé
+## <a name="to-correct-a-prepayment"></a>Pour corriger un paiement anticipé
 
 La procédure suivante explique comment émettre une note de crédit paiement anticipé pour annuler tous les paiements anticipés facturés pour un document de vente.  
 
@@ -31,7 +31,7 @@ La procédure suivante explique comment émettre une note de crédit paiement an
 5. Pour créer une facture paiement anticipé pour les nouvelles lignes dans la note de crédit vente, sélectionnez l'action **Paiement anticipé**, puis l'action **Reporter facture paiement anticipé** ou **Reporter et imprimer facture paiement anticipé**.  
 6. Pour émettre une autre facture paiement anticipé, augmentez le montant de paiement anticipé sur une ou plusieurs lignes, puis reportez la facture paiement anticipé. Une nouvelle facture est créée pour la différence entre les montants de paiement anticipé facturés et les nouveaux montants de paiement anticipé.  
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Facturation de paiements anticipés](finance-invoice-prepayments.md)  
 [Procédure pas à pas : configuration et facturation d'acomptes](walkthrough-setting-up-and-invoicing-sales-prepayments.md)  
