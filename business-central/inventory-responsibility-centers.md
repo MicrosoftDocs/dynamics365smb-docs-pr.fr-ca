@@ -10,7 +10,7 @@ ms.date: 03/09/2023
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# Utiliser les centres de gestion
+# <a name="work-with-responsibility-centers"></a>Utiliser les centres de gestion
 
 Les centres de gestion permettent de gérer les centres administratifs. Un centre de gestion peut être un centre de coûts, un centre de profit, un centre d'investissement ou tout autre centre administratif défini par la compagnie. Un bureau de vente, un département d'achat pour plusieurs emplacements, un bureau de planification d'usine, etc. sont des exemples de centres de gestion. Par exemple, les compagnies peuvent paramétrer des vues spécifiques à l’utilisateur des documents de vente et achat associés à un centre de gestion particulier.  
 
@@ -18,7 +18,7 @@ L’utilisation de plusieurs emplacements avec des centres de gestion permet de 
 
 Des emplacements multiples permettent aux compagnies de gérer leur inventaire dans plusieurs emplacements au moyen d'une seule base de données. Deux concepts, des magasins et des points de stock, sont les pierres angulaires du granule. Un emplacement est défini comme un lieu qui gère l'emplacement physique et la quantité des articles. Le concept est assez étendu pour inclure des magasins tels que les usines ou les unités de fabrication et les centres de distribution, les entrepôts, les magasins d'exposition et les véhicules de service. Une unité de stock est définie comme un article à un emplacement spécifique et/ou comme une variante. Grâce aux unités de stock, les compagnies utilisant plusieurs emplacements peuvent ajouter des informations de réapprovisionnement, des adresses et des informations financières de report au niveau de l’emplacement. Elles peuvent ainsi réapprovisionner les variantes du même article dans chaque emplacement et commander des articles pour chaque emplacement d’après les informations de réapprovisionnement spécifiques de l’emplacement.  
 
-## Pour configurer un centre de gestion
+## <a name="to-set-up-a-responsibility-center"></a>Pour configurer un centre de gestion
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Centres de gestion**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -33,7 +33,7 @@ Ce code est utilisé sur tous les documents achat, vente ou service si l’utili
 > [!NOTE]  
 > Lorsque vous saisissez un code centre de gestion sur un document, le programme affecte l'adresse, les axes et les prix indiqués sur le document.  
 
-## Pour affecter des centres de gestion à des utilisateurs
+## <a name="to-assign-responsibility-centers-to-users"></a>Pour affecter des centres de gestion à des utilisateurs
 
 Vous pouvez configurer des utilisateurs de sorte que [!INCLUDE [prod_short](includes/prod_short.md)] récupère uniquement les documents propres à leur activité. Les utilisateurs sont généralement associés à un centre de gestion et utilisent uniquement les documents propres à des modules spécifiques de ce centre.  
 
@@ -48,7 +48,7 @@ Pour configurer cela, vous devez affecter des centres de gestion à des utilisat
 > [!NOTE]  
 > Les utilisateurs peuvent afficher uniquement les documents reportés liés à leur propre centre de responsabilité. Cependant, ils peuvent afficher toutes les écritures et accéder à d’autres documents reportés à partir des écritures.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Configuration de stock](inventory-setup-inventory.md)  
 [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md)  

@@ -10,11 +10,11 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
 
-# Modèles de propriété des données pour la synchronisation
+# <a name="data-ownership-models-for-synchronization"></a>Modèles de propriété des données pour la synchronisation
 
 [!INCLUDE[prod_short](includes/cds_long_md.md)] nécessite que vous indiquiez un propriétaire pour les données que vous stockez. Pour en savoir plus, consultez [Types de tables](/powerapps/maker/data-platform/types-of-entities) dans la documentation Power Apps. Lorsque vous configurez l’intégration entre [!INCLUDE[prod_short](includes/cds_long_md.md)] et [!INCLUDE[prod_short](includes/prod_short.md)], vous devez choisir la propriété **Utilisateur ou équipe** pour les enregistrements synchronisés. Les actions pouvant être effectuées sur ces enregistrements peuvent être contrôlées au niveau de l'utilisateur. <!--We recommend the Team ownership model because it makes it easier to manage ownership for multiple people.NO LONGER TRUE IN DATAVERSE-->
 
-## Propriété Équipe
+## <a name="team-ownership"></a>Propriété Équipe
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], une compagnie est une table juridique et commerciale qui permet de sécuriser et visualiser les données métier. Les utilisateurs travaillent toujours dans le cadre d'une compagnie. L’élément de [!INCLUDE[prod_short](includes/cds_long_md.md)] le plus proche de ce concept est la table unité fonctionnelle, qui n’a aucune implication juridique ou commerciale.
 
 Comme les unités fonctionnelles n'ont aucune implication juridique ou commerciale, vous ne pouvez pas forcer un mappage un à un (1:1) pour synchroniser les données entre une compagnie et une unité fonctionnelle, que la synchronisation soit unidirectionnelle ou bidirectionnelle. Pour rendre la synchronisation possible, lorsque vous activez la synchronisation pour une compagnie dans [!INCLUDE[prod_short](includes/prod_short.md)], ce qui suit se produit dans [!INCLUDE[prod_short](includes/cds_long_md.md)] :
@@ -48,21 +48,21 @@ La synchronisation détermine l'équipe devant posséder les enregistrements. Ce
 > [!NOTE]
 > Les enregistrements passent en lecture seule après l'ajout et la sauvegarde d'une compagnie. Veillez donc à choisir la compagnie adéquate.
 
-## Choix d'une autre unité fonctionnelle
+## <a name="choosing-a-different-business-unit"></a>Choix d'une autre unité fonctionnelle
 Vous pouvez modifier la sélection de l'unité fonctionnelle si vous utilisez le modèle de propriété Équipes. Si vous utilisez le modèle de propriété Personne, l'unité fonctionnelle par défaut est toujours sélectionnée. 
 
 Si vous choisissez une autre unité fonctionnelle, par exemple une unité que vous avez créée précédemment dans [!INCLUDE[prod_short](includes/cds_long_md.md)], elle conserve son nom initial. Autrement dit, elle n'est pas suivi du code compagnie. Nous allons créer une équipe qui utilise la convention de nommage.
 
 Lorsque vous modifiez une unité fonctionnelle, vous ne pouvez choisir que les unités fonctionnelles situées un niveau en dessous de l'unité fonctionnelle racine.
 
-## Propriété Personne
+## <a name="person-ownership"></a>Propriété Personne
 Si vous choisissez le modèle de propriété Personne, vous devez indiquer chaque représentant qui possédera de nouveaux enregistrements. L'unité fonctionnelle et l'équipe sont créées comme décrit dans la section [Propriété Équipe](admin-cds-company-concept.md#team-ownership).
 
 L'unité fonctionnelle par défaut est utilisée lorsque le modèle de propriété Personne est choisi et que vous ne pouvez pas choisir une autre unité fonctionnelle. L’équipe associée à l'unité fonctionnelle par défaut détiendra des enregistrements pour des tables communes, telles que la table Produit, qui ne sont pas liées à des représentants spécifiques.
 
 Lorsque vous associez des représentants [!INCLUDE[prod_short](includes/prod_short.md)] aux utilisateurs de [!INCLUDE[prod_short](includes/cds_long_md.md)], [!INCLUDE[prod_short](includes/prod_short.md)] ajoute l’utilisateur à l’équipe par défaut dans [!INCLUDE[prod_short](includes/cds_long_md.md)]. Vous pouvez vérifier que les utilisateurs sont ajoutés en consultant la colonne **Membre de l’équipe par défaut** sur la page **Utilisateurs – Common Data Service**. Si l’utilisateur n’est pas ajouté, vous pouvez l’ajouter manuellement en utilisant l’action **Ajouter des utilisateurs couplés à l’équipe**. Pour plus d’informations, voir [Synchronisation des données dans Business Central avec Dataverse](admin-synchronizing-business-central-and-sales.md).
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 [À propos de [!INCLUDE[prod_short](includes/cds_long_md.md)]](admin-common-data-service.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

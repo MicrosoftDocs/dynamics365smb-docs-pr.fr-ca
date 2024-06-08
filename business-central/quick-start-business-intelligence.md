@@ -11,7 +11,7 @@ ms.date: 05/15/2024
 ms.service: dynamics-365-business-central
 ---
 
-# Démarrage rapide de la Business Intelligence
+# <a name="business-intelligence-quick-start"></a>Démarrage rapide de la Business Intelligence
 
 Pouvoir collecter et analyser des quantités toujours croissantes de données de manière exploitable est un élément inestimable de la conduite des affaires de nos jours. [!INCLUDE[prod_short](includes/prod_short.md)] offre de nombreux outils de Business Intelligence (BI)&mdash;à la fois intégrés et annexés à d’autres services&mdash; pour aider votre entreprise dans le processus de prise de décision.
 
@@ -28,7 +28,7 @@ Différents rôles au sein des organisations ont souvent des méthodes privilég
 
 Pour en savoir plus sur l’analyse, accédez à [Présentation de l’analyse](reports-bi-reporting.md).
 
-## Analyses par domaine fonctionnel
+## <a name="analytics-by-functional-area"></a>Analyses par domaine fonctionnel
 
 Le tableau suivant fournit des liens vers des articles décrivant comment utiliser l’analyse dans des domaines fonctionnels spécifiques [!INCLUDE[prod_short](includes/prod_short.md)].
 
@@ -39,7 +39,7 @@ Le tableau suivant fournit des liens vers des articles décrivant comment utilis
 | Procédure achat | [Analyse des achats](purchasing-analytics-overview.md) |
 | Gestion des immobilisations | [Analyse des immobilisations](fa-analytics-overview.md) |
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Présentation des analyses](reports-bi-reporting.md)  
 [Démarrages rapides de Business Central](quick-start-business-central.md)  

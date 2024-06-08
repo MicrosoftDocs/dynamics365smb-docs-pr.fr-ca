@@ -10,7 +10,7 @@ ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
 
-# Configurer des emplacements de sorte qu'ils utilisent des zones
+# <a name="set-up-locations-to-use-bins"></a>Configurer des emplacements de sorte qu'ils utilisent des zones
 
 Les zones représentent la structure de base de l’entrepôt et peuvent suggérer où placer les articles. Lorsque vous avez créé vos zones, vous pouvez définir leur contenu ou elles sont utilisées en tant que zones dynamiques sans contenu spécifié.
 
@@ -28,7 +28,7 @@ Ensuite, vous définissez la circulation des articles dans la zone en spécifian
 > [!NOTE]  
 > Avant de pouvoir spécifier les codes de zone sur un emplacement, vous devez les créer. Pour plus d'informations, voir [Créer zones](warehouse-how-to-create-individual-bins.md).  
 
-## Pour configurer un emplacement de sorte qu'il utilise des zones
+## <a name="to-set-up-a-location-to-use-bins"></a>Pour configurer un emplacement de sorte qu'il utilise des zones
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.  
 2. Sélectionnez l'emplacement dans lequel vous souhaitez utiliser des zones.  
@@ -46,13 +46,13 @@ Ensuite, vous définissez la circulation des articles dans la zone en spécifian
 9. En option : Sur le raccourci **Politiques de zones**, renseignez les champs. Les champs les plus importants sont les suivants : **Politique capacité zone**, **Autoriser déconditionnement** et **Code modèle rangement**.  
 10. Sur les champs **Entrepôt**, renseignez les champs **Délai désenlogement**, **Délai enlogement** et **Code calendrier principal**. Pour en savoir plus, rendez-vous sur [Configurer les calendriers de base](across-how-to-assign-base-calendars.md).
 
-## Renseigner la zone consommation
+## <a name="fill-in-the-consumption-bin"></a>Renseigner la zone consommation
 
 Ce graphique indique comment le champ **Code de zone** sur les lignes composante Bon de production est renseigné en fonction de la configuration de votre zone.
 
 :::image type="content" source="media/binflow.png" alt-text="Champ de code de zone sur les lignes de composante de bon de production.":::
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

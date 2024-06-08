@@ -11,20 +11,20 @@ ms.date: 03/13/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# Collecte des soldes restants
+# <a name="collect-outstanding-balances"></a>Collecte des soldes restants
 
 La gestion des clients comprend le contrôle du règlement des montants à temps. Si des clients ont des paiements dus, vous pouvez commencer par envoyer le rapport du **Relevé client** comme rappel. Sinon, vous pouvez émettre de relances.
 
 Utilisez des rappels pour alerter les clients de soldes échus. Vous pouvez également utiliser les rappels pour calculer les frais financiers tels que les intérêts ou les frais et les inclure dans le rappel. Utilisez les factures d'intérêts pour débiter des clients d'intérêts ou de frais sans leur rappeler les montants échus.
 
-## Relevés
+## <a name="statements"></a>Relevés
 
 À partir de la fiche client, vous pouvez créer un relevé pour les transactions de ce client avec vous. Ensuite, vous pouvez générer un fichier PDF et l’envoyer au client. Sinon, utilisez le rapport **Relevé client** pour envoyer à vos clients un aperçu de leur activité avec vous. 
 
 > [!TIP]
 > Si nécessaire, vous pouvez envoyer le relevé vers Excel pour apporter des modifications.  
 
-### Pour envoyer le rapport Relevé client
+### <a name="to-send-the-customer-statement-report"></a>Pour envoyer le rapport Relevé client
 
 1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 10.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Relevé client**, puis choisissez le lien associé.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -33,11 +33,11 @@ Utilisez des rappels pour alerter les clients de soldes échus. Vous pouvez éga
 > [!NOTE]
 > Si vous utilisez plusieurs devises, le rapport Relevé client est toujours imprimé dans la devise du client. La dernière date dans une période de déclaration est également utilisée comme date de relevé et cumul date, si le cumul est inclus.
 
-## Relances
+## <a name="reminders"></a>Relances
 
 [!INCLUDE [receivables-reminders](includes/receivables-reminders.md)]
 
-## Frais financiers
+## <a name="finance-charges"></a>Frais financiers
 
 Lorsqu'un client n'effectue pas son paiement à la date d'échéance, des frais financiers peuvent être calculés automatiquement et ajoutés aux montants échus sur le compte du client. Vous pouvez informer le client des frais ajoutés en lui envoyant une facture d'intérêts.  
 
@@ -52,7 +52,7 @@ Une fois que vous avez créé les factures d'intérêts, vous pouvez les modifie
 
 Une fois que vous avez créé des notes de frais financiers et effectué toutes les modifications requises, vous pouvez imprimer les rapports de test ou émettre des notes de frais financiers; en général par courriel.
 
-### Pour créer manuellement des notes de frais financiers
+### <a name="to-create-a-finance-charge-memo-manually"></a>Pour créer manuellement des notes de frais financiers
 
 Une note de frais financiers ressemble à une facture. Vous pouvez renseigner un en-tête manuellement et faire renseigner les lignes, ou créer des factures d'intérêts automatiquement pour tous les clients.
 
@@ -65,7 +65,7 @@ Une note de frais financiers ressemble à une facture. Vous pouvez renseigner un
     > Même s'ils sont répertoriés, la sélection des champs **Paiement** et **Note de crédit** comme filtres de **Type de document** n'a aucun effet, car la fonction **Proposer lignes note de frais financiers** ne gère que les montants positifs.
 5. Pour démarrer le traitement en lot, cliquez sur le bouton **OK**.  
 
-### Pour mettre à jour des textes de notes de frais financiers
+### <a name="to-update-finance-charge-memo-texts"></a>Pour mettre à jour des textes de notes de frais financiers
 
 Dans certains cas, vous pouvez modifier les textes début et fin définis pour les modalités de frais financiers. Si vous le faites au moment où vous avez créé, mais pas encore émis, les factures d'intérêts, vous pouvez mettre à jour ces factures avec le texte modifié.
 
@@ -74,7 +74,7 @@ Dans certains cas, vous pouvez modifier les textes début et fin définis pour l
 3. Sur la page **Mettre à jour texte frais financiers**, vous pouvez définir un filtre pour mettre à jour plusieurs notes.
 4. Cliquez sur le bouton **OK** pour que le programme mette à jour les textes début et fin.  
 
-### Pour émettre des factures d'intérêts
+### <a name="to-issue-finance-charge-memos"></a>Pour émettre des factures d'intérêts
 
 Une fois que vous créez des notes de frais financiers et apportez toutes les modifications requises, vous pouvez imprimer des rapports de test ou émettre les notes de frais financiers.
 
@@ -97,14 +97,14 @@ De plus, l’émission de la note de frais financiers peut créer des écritures
 
 La note de frais financiers est imprimée pour être envoyée à une adresse de courriel spécifiée en tant que pièce jointe PDF.
 
-### Pour annuler une note de frais financiers émise
+### <a name="to-cancel-an-issued-finance-charge-memo"></a>Pour annuler une note de frais financiers émise
 
 Si des notes de frais financiers ont été émises par erreur, vous pouvez les annuler avant leur envoi. Vous pouvez les annuler une par une ou par lots.
 
 1. Sur la page **Notes de frais financiers émises**, sélectionnez une ou plusieurs lignes pour les notes de frais financiers émises que vous souhaitez annuler, puis choisissez l'action **Annuler**.
 2. Sur la page **Annuler les notes de frais financiers émises**, renseignez les champs selon vos besoins, puis cliquez sur le bouton **OK**.
 
-### Pour afficher les écritures rappel et note de frais financiers  
+### <a name="to-view-reminder-and-finance-charge-entries"></a>Pour afficher les écritures rappel et note de frais financiers
 
 Lorsque vous émettez un rappel, une écriture rappel est créée sur la page **Écritures rappel/frais financiers** pour chaque ligne rappel contenant une écriture client. Vous pouvez ensuite obtenir un aperçu des écritures rappel créées pour un client spécifique.
 
@@ -112,11 +112,11 @@ Lorsque vous émettez un rappel, une écriture rappel est créée sur la page **
 2. Ouvrez la fiche client appropriée, puis sélectionnez l'action **Écritures comptables**.
 3. Sur la page **Écritures client**, cliquez sur la ligne de l'écriture pour laquelle vous souhaitez visualiser les écritures rappel, puis sélectionnez l'action **Écritures rappel/frais financiers**.
 
-## Taux d’intérêt multiples
+## <a name="multiple-interest-rates"></a>Taux d’intérêt multiples
 
 [!INCLUDE [multiple-interest-rates-def](includes/multiple-interest-rates-def.md)] Pour plus d’informations, reportez vous à [Paramétrer plusieurs taux d’intérêt](finance-how-to-set-up-multiple-interest-rates.md).  
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Configurer des niveaux et modalités de rappel](finance-setup-reminders.md)  
 [Configurer des modalités de frais financiers](finance-setup-finance-charges.md)  
