@@ -10,11 +10,11 @@ ms.date: 04/29/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="transfer-bank-funds"></a>Transfert de fonds à la banque
+# Transfert de fonds à la banque
 
 Il peut vous arriver de devoir transférer un montant d'un compte bancaire dans [!INCLUDE[prod_short](includes/prod_short.md)] vers un autre. Pour ce faire, vous devez reporter la transaction sur la page **Journal général**. La tâche varie selon que les comptes bancaires utilisent la même devise ou des devises différentes.
 
-## <a name="to-post-a-transfer-between-bank-accounts-with-the-same-currency-code"></a>Pour reporter un transfert entre comptes bancaires avec le même code devise
+## Pour reporter un transfert entre comptes bancaires avec le même code devise
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal général**, puis choisissez le lien associé.
 2. Dans une ligne journal, renseignez les champs **Date de report** et **N° document** .
@@ -27,7 +27,7 @@ Il peut vous arriver de devoir transférer un montant d'un compte bancaire dans 
 7. Dans le champ **N° compte contrepartie**, sélectionnez le compte bancaire à partir duquel vous souhaitez transférer les fonds.
 8. Reportez le journal.
 
-## <a name="to-post-a-transfer-between-bank-accounts-with-different-currency-codes"></a>Pour reporter des transferts entre comptes bancaires dotés de codes devise différents
+## Pour reporter des transferts entre comptes bancaires dotés de codes devise différents
 
 Pour transférer des fonds entre des comptes bancaires qui utilisent des devises différentes, vous devez reporter deux lignes journal général.
 
@@ -64,7 +64,7 @@ Pour transférer des fonds entre des comptes bancaires qui utilisent des devises
     > Un montant sans signe est un débit et un montant avec un signe moins est un crédit.
 10. Reportez le journal.
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Rapprochement de comptes bancaires](bank-manage-bank-accounts.md)  
 [Paramétrage des opérations bancaires](bank-setup-banking.md)  

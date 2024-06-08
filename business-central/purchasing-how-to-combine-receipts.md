@@ -10,7 +10,7 @@ ms.date: 03/14/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="combine-receipts-on-a-single-invoice"></a>Regroupement des réceptions sur une seule facture
+# Regroupement des réceptions sur une seule facture
 
 Si vous voulez facturer plusieurs réceptions achat en une fois, vous pouvez sélectionner plusieurs lignes réception sur la facture achat.  
 
@@ -21,7 +21,7 @@ Lorsque des réceptions achat sont regroupées sur une facture et reportées, un
 > [!NOTE]
 > La facture achat qui en résulte ne peut pas être corrigée ou annulée ultérieurement. Si vous souhaitez modifier une facture achat ainsi créée, vous devez utiliser des notes de crédit achat. Pour plus d'informations, voir [Corriger ou annuler des factures achat impayées](purchasing-how-correct-cancel-unpaid-purchase-invoices.md).
 
-## <a name="to-combine-receipts"></a>Pour regrouper des réceptions
+## Pour regrouper des réceptions
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures achat**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).  
@@ -31,7 +31,7 @@ Lorsque des réceptions achat sont regroupées sur une facture et reportées, un
     Si une ligne réception incorrecte a été sélectionnée ou que vous souhaitez recommencer, il vous suffit de supprimer les lignes de la facture achat et d'utiliser à nouveau la fonction **Extraire lignes réception**.  
 5. Pour reporter la facture, sélectionnez l'action **Reporter**.  
 
-## <a name="to-remove-open-purchase-orders-after-combined-receipt-posting"></a>Pour supprimer des commandes achat ouvertes après le report de réceptions groupées
+## Pour supprimer des commandes achat ouvertes après le report de réceptions groupées
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Supprimer les bons de commande facturés**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)].
@@ -41,7 +41,7 @@ Vous pouvez également supprimer chacune des commandes manuellement.
 
 Répétez les étapes 1 à 3 pour tous les autres documents affectés, comme des commandes permanentes achats.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Correction ou annulation des factures achat impayées](purchasing-how-correct-cancel-unpaid-purchase-invoices.md)  

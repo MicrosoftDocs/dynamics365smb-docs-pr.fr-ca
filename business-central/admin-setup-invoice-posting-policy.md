@@ -11,11 +11,11 @@ ms.search.forms: '119, 9807,'
 ms.service: dynamics-365-business-central
 ---
 
-# <a name="define-an-invoice-posting-policy-for-users"></a>Définir une politique de report des factures pour les utilisateurs
+# Définir une politique de report des factures pour les utilisateurs
 
 Les entreprises ont souvent des processus uniques pour valider les factures de vente et d’achat et les livraisons. Par exemple, les processus peuvent varier d’une personne reportant tout sur un bon de commande à plusieurs employés. Vous pouvez empêcher les utilisateurs de valider des factures ou exiger que les factures soient reportées avec les livraisons ou les réceptions.
 
-## <a name="to-specify-a-posting-policy"></a>Pour préciser une politique de report
+## Pour préciser une politique de report
 
 Sur la page **Configuration de l’utilisateur**, dans les champs **Stratégie report facture vente** et **Stratégie report facture achat**, choisissez l’une des options suivantes :
 
@@ -23,7 +23,7 @@ Sur la page **Configuration de l’utilisateur**, dans les champs **Stratégie r
 * **Interdit** : empêchez l’utilisateur de reporter des factures. Business Central affiche une boîte de dialogue de confirmation qui propose uniquement les options **Livrer** ou **Recevoir**.
 * **Obligatoire** : autorisez l’utilisateur à reporter des factures avec les reçus ou les livraisons. Business Central affiche une boîte de dialogue de confirmation qui propose uniquement les options **Livrer et envoyer** ou **Recevoir et facturer**.
 
-## <a name="effect-on-documents"></a>Effet sur les documents
+## Effet sur les documents
 
 La table suivante décrit comment les stratégies de report des factures affectent les documents.
 
@@ -47,7 +47,7 @@ La table suivante décrit comment les stratégies de report des factures affecte
    > [!Note]
    > Le paramètre n’affecte pas le report des lignes du journal général où vous pouvez sélectionner **Facture** dans le champ **Type de document**.
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Facturer des ventes](sales-how-invoice-sales.md)  
 [Enregistrer les achats avec les factures achat et les commandes](purchasing-how-record-purchases.md)  

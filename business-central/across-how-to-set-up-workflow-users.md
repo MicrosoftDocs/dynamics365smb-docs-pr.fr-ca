@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# <a name="set-up-a-sequence-of-workflow-users"></a>Configurer une séquence d’utilisateurs de flux de travail
+# Configurer une séquence d’utilisateurs de flux de travail
 
 Avant de pouvoir créer des flux de travail approbation, vous devez configurer des utilisateurs qui envoient des requêtes et leurs approbateurs. Par exemple, vous pouvez spécifier qui reçoit une notification pour agir sur une étape du flux de travail. Vous configurez les participants du flux de travail approbation sur la page **Configuration utilisateur des approbations**. En savoir plus sur [Configurer des utilisateurs d’approbation](across-how-to-set-up-approval-users.md).
 
@@ -19,7 +19,7 @@ Sur la page  **Groupes d’utilisateurs du flux de travail**, vous pouvez spéci
 
 [!INCLUDE [workflow-requestor-approver](includes/workflow-requestor-approver.md)]
 
-## <a name="to-set-up-a-workflow-user-group"></a>Configurer un groupe d’utilisateurs de flux de travail
+## Configurer un groupe d’utilisateurs de flux de travail
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Groupes utilisateur flux de travail**, puis choisissez le lien associé.  
 2. Sélectionnez l'action **Nouveau**. La page **Groupe d'utilisateurs du flux de travail** s'ouvre.  
@@ -36,7 +36,7 @@ Sur la page  **Groupes d’utilisateurs du flux de travail**, vous pouvez spéci
    > En règle générale, les numéros de séquence sont séquentiels pour les utilisateurs d’un groupe d’utilisateurs de flux de travail. Toutefois, plusieurs utilisateurs peuvent avoir le même numéro de séquence. Lorsque tel est le cas, un seul des utilisateurs doit approuver une demande avant que le flux de travail passe à l’étape suivante. Par exemple, si l’utilisateur A et l’utilisateur B sont tous deux numéro deux dans la séquence, le flux de travail passe à l’étape trois lorsque l’utilisateur A ou l’utilisateur B approuve la demande.
 6. Répétez l’étape 5 pour ajouter des utilisateurs de flux de travail dans le groupe d’utilisateurs de flux de travail.  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configuration des utilisateurs des approbations](across-how-to-set-up-approval-users.md)  
 [Configurer les flux de travail approbation](across-set-up-workflows.md)  

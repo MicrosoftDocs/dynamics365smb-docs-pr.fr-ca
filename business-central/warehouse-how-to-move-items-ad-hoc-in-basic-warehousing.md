@@ -10,7 +10,7 @@ ms.date: 12/16/2022
 ms.custom: bap-template
 ms.search.form: '393, 7382'
 ---
-# <a name="move-items-internally-in-basic-warehouse-configurations"></a>Déplacer des articles en interne dans les configurations de stockage de base
+# Déplacer des articles en interne dans les configurations de stockage de base
 
 Vous souhaiterez peut-être déplacer des articles entre zones sans demande d’un document source. Par exemple, dans le cadre des activités suivantes :
 
@@ -25,11 +25,11 @@ Dans les configurations d’entrepôt où le bouton à bascule de configuration 
 * Sur la page **Mouvement interne**.
 * Sur la page **Journal reclassement article**.  
 
-## <a name="internal-movements"></a>Mouvements internes
+## Mouvements internes
 
 La page **Mouvements internes** vous permet de spécifier des lignes Prendre et Placer lorsqu’il n’y a pas de demande d’un document origine. La page Mouvement interne est comme une feuille de travail pour organiser les choses. Vous ne pouvez pas traiter le mouvement réel directement à partir de celle-ci. Lorsqu’une ligne est remplie, utilisez l’action **Créer un mouvement d’inventaire** pour envoyer la ligne à la page **Mouvement d’inventaire**, où vous traitez et enregistrez le mouvement.
 
-### <a name="to-move-items-as-an-internal-movement"></a>Pour déplacer des articles en tant que mouvement interne
+### Pour déplacer des articles en tant que mouvement interne
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Mouvements internes**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**. Assurez-vous que le champ **N°** du raccourci **Général** est rempli.
@@ -59,7 +59,7 @@ La page **Mouvements internes** vous permet de spécifier des lignes Prendre et 
 
 Exécutez le reste du mouvement non planifié sur la page **Mouvement d’inventaire** de la même manière que pour un mouvement basé sur des documents source.
 
-### <a name="to-record-the-inventory-movement"></a>Pour enregistrer le mouvement d’inventaire
+### Pour enregistrer le mouvement d’inventaire
 
 1. Sur la page **Mouvement d’inventaire**, ouvrez le document pour lequel enregistrer le mouvement.  
 2. Dans le champ **Code de zone** sur les lignes mouvement, la zone à partir de laquelle les articles doivent être prélevés est celui où les articles sont disponibles. Si nécessaire, vous pouvez modifier la zone.
@@ -72,7 +72,7 @@ Voici ce qui se passe pendant le processus de report :
 
 * Les écritures emplacement indiquent que la quantité est transférée des zones « prendre » vers les zones « placer ».
 
-## <a name="to-move-items-with-the-item-reclassification-journal"></a>Pour déplacer des articles à l'aide du journal reclassement article
+## Pour déplacer des articles à l'aide du journal reclassement article
 
 Au lieu d’utiliser des documents de mouvement, vous pouvez enregistrer des mouvements en reclassant les codes de zone sur les articles. Pour en savoir plus, voir [Comptabiliser, ajuster et reclasser l’inventaire avec les journaux](inventory-how-count-adjust-reclassify.md).
 
@@ -89,7 +89,7 @@ Au lieu d’utiliser des documents de mouvement, vous pouvez enregistrer des mou
 
     [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  
