@@ -27,11 +27,11 @@ Les informations respectent également d’autres facteurs qui affectent la disp
 > [!NOTE]
 > Cette fonctionnalité nécessite que vous activiez le bouton bascule **Prélèvement et rangement suggérés** pour les emplacements que vous utilisez dans votre processus de prélèvement.
 
-### Configurer les versions préliminaires
+### <a name="set-up-previews"></a>Configurer les versions préliminaires
 
 Pour obtenir des détails sur ce qui est en cours de prélèvement et ce qui ne l’est pas, activez le bouton à bascule **Afficher le résumé (prélèvement et rangement suggérés)** sur les pages de demande **Entrepôt - Source - Créer document** ou **Entrepôt - Livraison - Créer prélèvement**.
 
-### Déterminer la quantité que vous pouvez prélever
+### <a name="determine-the-quantity-you-can-pick"></a>Déterminer la quantité que vous pouvez prélever
 
 Sur les lignes de la page **Créer résumé prélèvements entrepôt**, le champ **Qté à traiter (base)** indique quels et combien d’articles [!INCLUDE [prod_short](prod_short.md)] a essayé de prélever. Le récapitulatif **Résumé** fournit plus de détails.
 
@@ -58,7 +58,7 @@ L’image suivante illustre la quantité maximale prise en compte pour le prél�
 |B     |zones avec du contenu de type Prélèvement avec mouvement sortant bloqué         |
 |O     |Autres zones         |
 
-### Réservations
+### <a name="reservations"></a>Réservations
 
 S’il existe des réservations pour l’article en cours de prélèvement, le calcul continue. L’idée est que la demande réservée a une priorité plus élevée que la demande non réservée, ce qui signifie que le prélèvement pour la demande non réservée ne devrait pas empêcher le prélèvement ultérieure pour la demande réservée.
 
@@ -93,7 +93,7 @@ L’image suivante illustre l’affectation de la quantité disponible pour la q
 
 Bien qu’il y ait suffisamment de quantité disponible dans l’entrepôt pour satisfaire complètement le prélèvement, la quantité totale réservée sera allouée aux quantités dans les zones dédiées ou bloquées, ce qui empêchera le prélèvement pour cette demande. Parce que la demande réservée a une priorité plus élevée, [!INCLUDE [prod_short](prod_short.md)] réduit la quantité à prélever pour éviter tout impact négatif, tel que l’impossibilité de prélever, sur la demande réservée.
 
-### Autres détails
+### <a name="other-details"></a>Autres détails
 
 Si les articles nécessitent une traçabilité, vous pouvez également trouver la quantité dans des numéros de lot ou de série bloqués, ce qui entraîne les réductions suivantes :
 

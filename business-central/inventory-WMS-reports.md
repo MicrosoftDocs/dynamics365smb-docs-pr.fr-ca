@@ -11,22 +11,22 @@ ms.date: 03/21/2024
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
-# Rapports et analyses d’inventaire et d’entrepôt
+# <a name="inventory-and-warehouse-reports-and-analytics"></a>Rapports et analyses d’inventaire et d’entrepôt
 
 Les rapports d'inventaire et d’entrepôt dans [!INCLUDE [prod_short](includes/prod_short.md)] permettent aux professionnels de l'inventaire et des affaires d’obtenir des informations et des statistiques sur les activités d'inventaire et d’entrepôt actuelles et passées.  
 
-## Rapports
+## <a name="reports"></a>Rapports
 
 [!INCLUDE [inventory_WMS_reports](includes/inventory-WMS-reports-include.md)]
 
-## Tâches
+## <a name="tasks"></a>Tâches
 
 Les articles suivants décrivent certaines des tâches clés pour analyser l’état de votre entreprise :
 
 * [Créer des rapports d’analyse](bi-how-create-analysis-views-reports.md)  
 * [Afficher la disponibilité des articles](inventory-how-availability-overview.md)
 
-## Imprimer et scanner des codes-barres
+## <a name="print-and-scan-barcodes"></a>Imprimer et scanner des codes-barres
 
 L’utilisation de codes-barres peut vous aider à simplifier vos processus d’entrepôt entrants, sortants et internes. 
 
@@ -45,7 +45,7 @@ Après avoir installé l’application, vous pouvez utiliser l’action **Imprim
 > Certaines imprimantes et formats de codes-barres/QR nécessitent une implémentation spécifique. Vous devrez peut-être télécharger un autre modèle Word ou cloner le rapport pour créer votre propre version personnalisée.
 
 
-## Explorer les rapports d’inventaire avec l’Explorateur de rapports
+## <a name="explore-inventory-reports-with-report-explorer"></a>Explorer les rapports d’inventaire avec l’Explorateur de rapports
 
 Pour obtenir un aperçu des rapports disponibles pour inventaire, choisissez **Tous les rapports** sur votre page d’accueil. Cette Action ouvre l’explorateur de rôles, qui est filtré selon les fonctionnalités du **Rapport et analyse** option. Sous l’en-tête **Ventes et marketing** , choisissez **Explorer**.
 
@@ -54,7 +54,7 @@ Pour obtenir un aperçu des rapports disponibles pour inventaire, choisissez **T
 Pour en savoir plus, voir [Recherche de rapports avec l’explorateur de rôles](ui-role-explorer.md).
 
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Analyse ad hoc des données d’inventaire](ad-hoc-analysis-inventory.md)  
 [Vue d’ensemble de l’analyse de l’inventaire](inventory-analytics-overview.md)   

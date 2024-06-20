@@ -9,7 +9,7 @@ ms.date: 07/15/2022
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ---
-# Utilisez des cartes en ligne pour trouver des emplacements et des directions
+# <a name="use-online-maps-to-find-locations-and-directions"></a>Utilisez des cartes en ligne pour trouver des emplacements et des directions
 
 Vous pouvez obtenir une carte depuis votre service de cartes en ligne indiquant l’adresse et l’emplacement d’un client ou d’un fournisseur, ou générer des instructions d’itinéraire pour vous y rendre. La fonctionnalité **Online Map** est accessible à partir des fiches suivantes dans [!INCLUDE[prod_short](includes/prod_short.md)] :
 
@@ -26,14 +26,14 @@ Vous pouvez obtenir une carte depuis votre service de cartes en ligne indiquant 
 > [!NOTE]
 > Sans code dans le champ **code pays/région**, la carte en ligne ne sera pas en mesure de trouver l’itinéraire.
 
-## Rechercher un emplacement dans une carte en ligne
+## <a name="find-a-location-in-an-online-map"></a>Rechercher un emplacement dans une carte en ligne
 
 1. Ouvrez l’une des cartes répertoriées ci-dessus.
 2. Choisissez l’action **Online Map** ou **Afficher sur la carte**.
 3. Sélectionnez le champ **Cette adresse**, puis cliquez sur **OK**.
 4. La carte en ligne configurée s’ouvre avec l’emplacement de l’adresse défini sur la carte.
 
-## Obtenir des itinéraires à partir de votre emplacement
+## <a name="get-route-directions-from-your-location"></a>Obtenir des itinéraires à partir de votre emplacement
 
 1. Ouvrez l’une des cartes répertoriées ci-dessus.
 2. Choisissez l’action **Online Map** ou **Afficher sur la carte**.
@@ -43,7 +43,7 @@ Vous pouvez obtenir une carte depuis votre service de cartes en ligne indiquant 
 > [!NOTE]
 > La carte en ligne s’ouvre dans le navigateur ou l’application par défaut, qui peut demander l’accès aux données de localisation de l’appareil.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Configurer les cartes en ligne](across-online-maps-setup.md)  
 [Préparation aux activités commerciales](ui-get-ready-business.md)  

@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
 
-# Utilisation des documents électroniques dans le processus vente
+# <a name="use-e-documents-in-the-sales-process"></a>Utilisation des documents électroniques dans le processus vente
 
 Vous pouvez utiliser des documents électroniques configurés (documents électroniques) avec les documents de vente.
 
@@ -26,13 +26,13 @@ Vous pouvez utiliser les documents vente suivants avec la fonctionnalité des do
 - Notes de frais financiers
 - Relances
 
-## Documents électroniques vente  
+## <a name="e-documents-in-sales"></a>Documents électroniques vente
 
 Pour créer et envoyer une facture électronique à un client, vous devez créer et reporter la facture vente. Pour en savoir plus sur le processus standard, voir [Facture des ventes](sales-how-invoice-sales.md).
 
 Après avoir reporté le document vente, ouvrez la page **Factures vente reportées** pour accéder à la page **Document électronique** associée.
 
-### Afficher les documents électroniques   
+### <a name="view-e-documents"></a>Afficher les documents électroniques
 
 Pour afficher les documents électroniques existants, procédez comme suit.
 
@@ -41,7 +41,7 @@ Pour afficher les documents électroniques existants, procédez comme suit.
 3. Le champ **Enregistrement** affiche le numéro de document de la facture vente reportée. Sélectionnez le lien pour ouvrir le document.
 4. Dans le champ **État du document électronique**, vous pouvez afficher l'état en temps réel du document et son emplacement dans le pipeline de processus. Si le document est reporté, l'état est **Traité**.
 
-### Journaux et états des documents électroniques 
+### <a name="e-document-statuses-and-logs"></a>Journaux et états des documents électroniques
 
 Pour plus de détails sur le niveau d’état de service de votre document électronique, consultez le récapitulatif **État du service du document électronique**. Sur les lignes, le système affiche un ou plusieurs services utilisés par le document. Dans le scénario le plus courant, chaque document utilise un seul service. Cependant, un document peut utiliser plusieurs services.
 
@@ -65,7 +65,7 @@ S’il y a un problème avec le fournisseur de services et que le document ne pe
 
 Une fois le problème résolu, exécutez manuellement les actions **Envoyer le document**. Si vous avez besoin de différentes actions, telles que **Document recréé**, **Annuler le document**, ou **Obtenir l’approbation**, vous pouvez les exécuter.
 
-## Vue d’ensemble des états des documents électroniques
+## <a name="overview-of-e-document-statuses"></a>Vue d’ensemble des états des documents électroniques
 
 Pour obtenir un meilleur aperçu de tous les documents électroniques de la compagnie, vous pouvez sélectionner le centre de rôles **Comptable** où existent les états des documents électroniques. Vous y trouverez des activités de documents électroniques qui ont les états suivants :
 
@@ -76,7 +76,7 @@ Pour obtenir un meilleur aperçu de tous les documents électroniques de la comp
     - Erreur
 
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Procédure : configurer les documents électroniques dans [!INCLUDE[prod_short](includes/prod_short.md)]](finance-how-setup-edocuments.md)    
 [Utilisation des documents électroniques achat](finance-how-use-edocuments-purchase.md)  

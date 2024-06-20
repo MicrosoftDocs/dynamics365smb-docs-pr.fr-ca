@@ -10,7 +10,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# Configurer les états des commandes service et des réparations
+# <a name="set-up-statuses-for-service-orders-and-repairs"></a>Configurer les états des commandes service et des réparations
 
 Vous devez configurer des options d'état de réparation qui identifient la progression de la réparation et de l'entretien des articles de service dans les commandes service. Vous devez configurer au moins neuf options d'état réparation qui identifient les situations ou les actions effectuées lors de la maintenance des articles de service.  
 
@@ -20,7 +20,7 @@ Lorsque vous modifiez l'état réparation d'un article de service d'une commande
 
 Avant de pouvoir configurer un état de réparation, vous devez définir des priorités d'état de service.
 
-## Pour configurer les priorités état service
+## <a name="to-set-up-service-status-priorities"></a>Pour configurer les priorités état service
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **État commande service**, puis choisissez le lien associé.  
 2. Sélectionnez l'état commande service pour lequel vous voulez configurer une priorité.  
@@ -28,7 +28,7 @@ Avant de pouvoir configurer un état de réparation, vous devez définir des pri
 
 Répétez les étapes 2 et 3 pour configurer la priorité des quatre options état : **Suspendu**, **En cours**, **Terminé** et **En attente**.  
 
-## Pour configurer un état réparation
+## <a name="to-set-up-a-repair-status"></a>Pour configurer un état réparation
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **État réparation**, puis choisissez le lien associé.
 2. Créez un état réparation.  
@@ -41,7 +41,7 @@ Répétez les étapes 2 et 3 pour configurer la priorité des quatre options �
 
 Répétez ces étapes pour chaque option d'état réparation à créer.
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [État commande service et état réparation](service-service-order-status-and-repair-status.md)  
 [Paramétrage de la gestion des services](service-setup-service.md)  

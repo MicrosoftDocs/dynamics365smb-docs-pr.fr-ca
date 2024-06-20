@@ -11,14 +11,14 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# Partager et exporter des rapports avec la boîte de réception Rapport
+# <a name="share-and-export-reports-with-the-report-inbox"></a>Partager et exporter des rapports avec la boîte de réception Rapport
 
 La page **Boîte de réception Rapport** répertorie les rapports programmés générés par l’utilisateur dans [!INCLUDE[prod_short](includes/prod_short.md)], et peut être utilisée non seulement pour accéder aux rapports générés, mais également pour partager et ouvrir des fichiers dans OneDrive for Business.
 
 > [!TIP]
 > Les actions suivantes sont également disponibles dans la partie **Boîte de réception rapport** dans le tableau de bord. Si la pièce ne s’affiche pas dans votre interface, découvrez comment personnaliser votre tableau de bord ici : [Personnaliser votre espace de travail](ui-personalization-user.md).
 
-## Télécharger les rapports générés
+## <a name="download-generated-reports"></a>Télécharger les rapports générés
 
 Pour enregistrer les rapports précédents, ouvrez la page **Boîte de réception rapport** en suivant ces étapes :
 
@@ -30,7 +30,7 @@ Pour enregistrer les rapports précédents, ouvrez la page **Boîte de réceptio
 >
 > Les fichiers générés sont enregistrés dans le format défini lors de la programmation du rapport et peuvent être modifiés sur la page **Écritures file d’attente des travaux**, ainsi que la récurrence et d’autres paramètres. Pour savoir comment modifier le format du fichier de rapport et définir des options supplémentaires, voir [Gérer les rapports récurrents programmés](ui-work-report.md#manage-scheduled-recurring-reports).
 
-## Ouvrir les rapports générés dans OneDrive
+## <a name="open-generated-reports-in-onedrive"></a>Ouvrir les rapports générés dans OneDrive
 
 Pour exporter le fichier de rapport vers Microsoft OneDrive for Business, sélectionnez le rapport sur la page **Boîte de réception rapport** et choisissez l’action **Ouvrir dans OneDrive**. Le rapport est ensuite copié dans le dossier [!INCLUDE[prod_short](includes/prod_short.md)] dans OneDrive et ouvert dans une nouvelle fenêtre de navigateur, où vous pouvez imprimer et gérer le fichier du document.
 
@@ -38,7 +38,7 @@ Pour exporter le fichier de rapport vers Microsoft OneDrive for Business, sélec
 >
 > Les rapports devant expirer sur la page **Programmer un rapport** et copiés dans OneDrive ne sont pas automatiquement supprimés du dossier partagé.
 
-## Partager les rapports programmés
+## <a name="share-scheduled-reports"></a>Partager les rapports programmés
 
 Le partage de rapports avec des collaborateurs est également possible sur la page **Boîte de réception rapport**. Sélectionnez le rapport et choisissez l’action **Partager**. Sur la page **Envoyer un lien**, sélectionnez qui peut ouvrir le fichier, définissez les autorisations de modification, puis choisissez **Envoyer** pour envoyer un lien pour accéder au rapport enregistré.
 
@@ -47,7 +47,7 @@ Le partage de rapports avec des collaborateurs est également possible sur la pa
 >
 > Utiliser l’action **Partager** rend le fichier de rapport généré accessible aux autres utilisateurs uniquement sur OneDrive for Business et ne répertorie pas le rapport programmé sur leur **Boîte de réception Rapport**.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Exécuter et imprimer des rapports](ui-work-report.md)  
 [Rapports disponibles dans [!INCLUDE[prod_short](includes/prod_short.md)]](reports-available-reports.md)  
