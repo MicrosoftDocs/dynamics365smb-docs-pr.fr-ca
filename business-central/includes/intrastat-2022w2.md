@@ -4,6 +4,7 @@ ms.topic: include
 ms.date: 09/01/2022
 ms.author: atotovic
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
 > [!NOTE]
 > Dans la 2e vague de lancement 2022, Business Central inclut une expérience Intrastat avec des fonctionnalités étendues. Si vous êtes un nouveau client utilisant la version 21 ou plus récente, vous utilisez la nouvelle expérience. Pour les clients ayant effectué une mise à jour depuis les versions précédentes, l’utilisation de la nouvelle expérience dépend de l’activation par votre administrateur de l’option **Mise à jour des fonctionnalités : remplacer la fonctionnalité Intrastat existante par la nouvelle extension Intrastat** sur la page **Gestion des fonctionnalités**. Pour en savoir plus, voir l’article [Paramétrer les rapports Intrastat](../finance-how-setup-report-intrastat.md). Cet article décrit la fonctionnalité précédente.

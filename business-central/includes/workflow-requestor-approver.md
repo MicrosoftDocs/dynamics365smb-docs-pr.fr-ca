@@ -4,6 +4,7 @@ ms.topic: include
 ms.date: 05/30/2023
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
 
 Lorsque vous configurez des utilisateurs pour les flux de travail approbation, il est important que le même utilisateur ne soit pas à la fois un demandeur et un approbateur dans un groupe d’utilisateurs de flux de travail. Lorsqu’un utilisateur est à la fois demandeur et approbateur, les approbations fonctionnent pour lui comme suit :

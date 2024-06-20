@@ -4,6 +4,7 @@ ms.topic: include
 ms.date: 02/13/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
 > [!IMPORTANT]
 > Lorsque vous reportez un document de vente, vous créez une livraison et une facture. Ces documents peut être effectués de manière simultanée ou indépendante. Vous pouvez également créer une livraison partielle et une facture partielle en renseignant les champs **Qté à livrer** et **Qté à facturer** sur chaque ligne document de vente avant le report. Notez que vous ne pouvez pas créer de facture depuis la page **Documents de vente** pour quelque chose qui n’a pas été livré. C'est-à-dire que, avant de pouvoir facturer, vous devez avoir reporté une livraison, ou vous devez choisir de livrer et de facturer en même temps.

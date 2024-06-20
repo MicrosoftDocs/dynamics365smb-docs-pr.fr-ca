@@ -4,6 +4,7 @@ ms.topic: include
 ms.date: 04/01/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
 Une fois la facture reportée, vous pouvez la retrouver dans la liste des factures reportées. La liste **Factures vente reportées** et la liste **Factures achat reportées** affiche les factures reportées avec les numéros de facture définitifs. Dans la liste, vous pouvez rechercher chaque facture reportée et vous pouvez corriger ou annuler une facture reportée.  
 

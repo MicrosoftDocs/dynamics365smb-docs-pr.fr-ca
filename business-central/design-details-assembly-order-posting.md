@@ -8,8 +8,9 @@ ms.search.keywords: null
 ms.date: 06/15/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
-# <a name="design-details-assembly-order-posting"></a>Détails de conception : report d'un ordre d'assemblage
+# Détails de conception : report d'un ordre d'assemblage
 Le report d'ordre d'assemblage est basé sur les mêmes principes que le report des activités similaires des documents de vente et de la consommation de production/production. Cependant, les principes sont combinés du fait que les ordres d'assemblage ont leur propre interface utilisateur de report, comme celle des documents de vente, alors que le report des écritures réel se produit en arrière-plan en tant que report direct d'article et de journal ressource, comme pour la consommation de production, la production et la capacité.  
 
 Comme pour le report d'un bon de production, les composantes consommées et les ressources utilisées sont converties et sorties en tant qu'élément d'assemblage lorsque l'ordre d'assemblage est reporté. Pour plus d'informations, voir [Détails de conception : validation d'ordre de fabrication](design-details-production-order-posting.md). Toutefois, le flux des coûts des ordres d'assemblage est moins complexe, notamment parce que le report du coût d'assemblage ne se produit qu'une fois et ne génère donc pas d'inventaire travaux en cours.  
@@ -32,7 +33,7 @@ Le schéma suivant montre la manière dont les données d'assemblage circulent d
 
 ![Flux d’écritures lié à l’assemblage lors du report.](media/design_details_assembly_posting_2.png "Flux d'écritures lié à l'assemblage lors du report")  
 
-## <a name="posting-sequence"></a>Séquence de report
+## Séquence de report  
 Le report d'un ordre d'assemblage se produit dans l'ordre suivant :  
 
 1.  Les lignes ordre d'assemblage sont reportées.  
@@ -48,12 +49,12 @@ Le tableau suivant indique la séquence d'actions.
 > [!IMPORTANT]  
 >  Contrairement à la sortie de production, qui est reportée au coût prévu, le résultat d'assemblage est reporté au coût réel.  
 
-## <a name="cost-adjustment"></a>Ajustement du coût
+## Ajustement du coût  
  Une fois l'ordre d'assemblage reporté, à savoir que les composantes (matériel) et les ressources sont assemblées dans un nouvel article, il doit être possible de déterminer le coût réel de cet élément d'assemblage, et le coût inventaire réel des composantes impliquées. Ceci est obtenu en transférant les coûts des écritures reportées de la source (les composantes et ressources) vers les écritures reportées de la destination (l'élément d'assemblage). Le transfert des coûts est effectué en calculant et en générant de nouvelles écritures, appelées écritures ajustement qui sont associées aux écritures de destination.  
 
  Les coûts d'assemblage à transférer sont détectés grâce au mécanisme de détection du niveau de commande. Pour plus d'informations sur d'autres mécanismes de détection d'ajustement, reportez\-vous à [Détails de conception : ajustement des coûts](design-details-cost-adjustment.md).  
 
-### <a name="detecting-the-adjustment"></a>Détection de l'ajustement
+### Détection de l'ajustement  
 La fonction de détection du niveau de commande est utilisée pour les scénarios de conversion, de production et d'assemblage. La fonction opère comme suit :  
 
 -   L'ajustement des coûts est détecté en marquant la commande chaque fois que des matières/ressources sont reportées comme étant consommées/utilisées pour la commande.  
@@ -63,7 +64,7 @@ Le graphique suivant montre la structure d'écriture d'ajustement et comment les
 
 ![Flux d’écritures lié à l’assemblage lors de l’ajustement des coûts.](media/design_details_assembly_posting_3.png "Flux d'écritures lié à l'assemblage lors du report")  
 
-### <a name="performing-the-adjustment"></a>Procéder à l'ajustement
+### Procéder à l'ajustement  
 La répartition des ajustements détectés entre les coûts matière et ressource et les écritures de résultat d'assemblage est effectuée par le traitement par lots **Ajuster coûts : Écr. article**. Il contient la fonction Effectuer un ajustement à plusieurs niveaux, qui se compose des deux éléments suivants :  
 
 -   Effectuer un ajustement d'ordre d'assemblage : qui transmet le coût d'utilisation des matières et des ressources à l'écriture de résultat d'assemblage. Les lignes 5 et 6 dans l'algorithme ci-dessous sont responsables de cela.  
@@ -76,7 +77,7 @@ La répartition des ajustements détectés entre les coûts matière et ressourc
 
 Pour plus d'informations sur la manière dont les coûts d'assemblage ou de production sont validés dans la comptabilité, reportez\-vous à [Détails de conception : comptabilisation stock](design-details-inventory-posting.md).  
 
-## <a name="assembly-costs-are-always-actual"></a>Les coûts d'assemblage sont toujours réels
+## Les coûts d'assemblage sont toujours réels  
  Le concept de travaux en cours (TEC) ne s'applique pas au report d'un ordre d'assemblage. Les coûts d'assemblage sont uniquement reportés en tant que coûts réels, jamais en tant que coûts prévus. Pour plus d'informations, voir [Détails de conception : validation du coût prévu](design-details-expected-cost-posting.md).  
 
 Ceci est activé par la structure de données suivante.  
@@ -94,21 +95,21 @@ En outre, les champs de groupe de report dans l'en-tête d'ordre d'assemblage et
 
 Par conséquent, seuls les coûts réels sont reportés dans le grand livre, et aucun compte provisoire n'est renseigné à partir du report d'un ordre d'assemblage. Pour plus d'informations, voir [Détails de conception : comptes de la comptabilité](design-details-accounts-in-the-general-ledger.md).  
 
-## <a name="assemble-to-order"></a>Assembler pour commande
+## Assembler pour commande  
 L'écriture article qui résulte du report d'une vente assembler pour commande est affectée de façon fixe à l'écriture article associée pour le résultat d'assemblage. Par conséquent, le coût d'une vente assembler pour commande est dérivé de l'ordre d'assemblage auquel la vente a été liée.  
 
 Les écritures article de type Vente qui résultent du report des quantités à assembler pour commande sont identifiées par **Oui** dans le champ **Assembler pour commande**.  
 
 Le report de lignes document de vente dont une partie est une quantité en inventaire et une autre partie est une quantité à assembler pour commande entraîne la création d'écritures article distinctes, une pour la quantité en inventaire et une pour la quantité à assembler pour commande.  
 
-### <a name="posting-dates"></a>Dates de report
+### Dates de report
 
 En général, les dates report sont copiées d’un document de vente vers l’ordre d’assemblage lié. La date de report dans l’ordre d’assemblage est automatiquement mise à jour lorsque vous modifiez la date de report dans le document de vente directement ou indirectement, par exemple si vous modifiez la date de report dans la livraison entrepôt, le prélèvement inventaire ou dans le cadre d’un report groupé.
 
 Vous pouvez modifier manuellement la date de report dans l’ordre d’assemblage. Cependant, elle ne peut pas être postérieure à la date de report dans le document de vente lié. Le système conservera cette date, à moins que vous ne mettiez à jour la date de report dans le document de vente.
 
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi  
  [Détails de conception : stock évaluation stock](design-details-inventory-costing.md)   
  [Détails de conception : validation d'ordre de fabrication](design-details-production-order-posting.md)   
  [Détails de conception : modes évaluation stock](design-details-costing-methods.md)  

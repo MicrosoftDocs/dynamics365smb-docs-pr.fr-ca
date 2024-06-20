@@ -4,6 +4,7 @@ ms.topic: include
 ms.date: 10/05/2022
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
 Après avoir ajouté tous les articles sur les lignes, vous pouvez calculer l'escompte facture pour l’ensemble du document vente en choisissant l’action **Calculer escompte facture**.
 

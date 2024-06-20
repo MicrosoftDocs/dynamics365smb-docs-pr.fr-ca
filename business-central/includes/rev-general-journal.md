@@ -4,9 +4,10 @@ ms.topic: include
 ms.date: 10/27/2022
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
 
-### <a name="reversing-journals-to-correct-mistakes"></a>Journaux d'inversion pour corriger les erreurs
+### Journaux d'inversion pour corriger les erreurs
 
 Lorsque vous travaillez avec des journaux qui comportent de nombreuses lignes et que quelque chose ne va pas, il est important de disposer d’un moyen simple de corriger les erreurs. La page **Journal général reporté** propose quelques actions qui peuvent vous aider.
 

@@ -8,8 +8,9 @@ ms.search.form: '5406, 5407, 5728, 8903, 9011, 9012, 9013, 9041, 9044, 9047, 932
 ms.date: 04/01/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
-# <a name="manufacturing"></a>Production
+# Production
 
 > [!NOTE]
 > La fonctionnalité décrite dans ces rubrique et sous-rubriques n'est visible dans l'interface utilisateur que si vous avez l'expérience **Premium**. Pour plus d'informations, voir [Modifier les fonctionnalités affichées](ui-experiences.md).
@@ -38,7 +39,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 |Utilisez la page **Journal capacité** pour reporter les capacités consommées qui ne sont pas affectées à un bon de production, comme les travaux d'entretien.|[Reporter des capacités](production-how-to-post-capacities.md)|  
 |Calculer et ajuster le coût des articles finis et des composants consommés à des fins de rapprochement bancaire.|[À propos des coûts des bons de production achevés](finance-about-finished-production-order-costs.md)|  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Planification](production-planning.md)  

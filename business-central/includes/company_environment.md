@@ -4,6 +4,7 @@ ms.topic: include
 ms.date: 04/01/2022
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
 Les utilisateurs [!INCLUDE[prod_short](prod_short.md)] prennent parfois en charge plusieurs services ou sous-organisations au sein d’une unité fonctionnelle. Par exemple, une entreprise peut avoir des bureaux de vente dans différentes villes et plusieurs pays/régions. Elle a donc créé une unité fonctionnelle pour chaque bureau. Les bureaux situés dans le même pays/la même région sont constitués en *compagnies* distinctes dans un *environnement* partagé. D’autres bureaux sont créés en tant que compagnies dans des environnements distincts car ils sont géographiquement basés dans d’autres pays/régions.
 

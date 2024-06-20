@@ -8,19 +8,20 @@ ms.search.form: '99000887, 99000888, 99000889, 99000890, 99000891, 99000892, 990
 ms.date: 04/01/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
-# <a name="view-load-on-work-and-machine-centers"></a>Afficher la charge des ateliers et des unités de production
+# Afficher la charge des ateliers et des unités de production
 
 Sur les pages **Fiche atelier** et **Fiche unité de production**, vous pouvez afficher la charge de l'atelier en tant que résultat des bons de production planifiés et libérés.  
 
-## <a name="to-view-the-load-on-work-centers"></a>Pour afficher la charge des ateliers
+## Pour afficher la charge des ateliers
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Ateliers**, puis choisissez le lien associé.  
 2. Ouvrez la fiche **Atelier** appropriée dans la liste, puis choisissez l'action **Charge**.  
 
 Les champs **Afficher par** et **Afficher en tant que** sur le raccourci **Options** permettent de sélectionner la période demandée.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi  
 [Production](production-manage-manufacturing.md)
 [Paramétrage de la production](production-configure-production-processes.md)  
 [Planification](production-planning.md)  

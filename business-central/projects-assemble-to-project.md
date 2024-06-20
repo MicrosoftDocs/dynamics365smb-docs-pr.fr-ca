@@ -11,7 +11,7 @@ ms.date: 08/03/2022
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# <a name="assemble-to-project"></a>Assembler au projet
+# Assembler au projet
 
 Assembler selon le projet vous aide à améliorer la gestion des inventaires en assemblant sur commande uniquement lorsque cela est nécessaire.
 
@@ -19,7 +19,7 @@ Lorsque vous choisissez un article à assembler pour commande sur une ligne plan
 
 Les ordres d’assemblage sont réservés aux projets, et [!INCLUDE [prod_short](includes/prod_short.md)] synchronise le suivi des articles entre les lignes de planification du projet et l’ordre d’assemblage.
 
-## <a name="integrate-with-warehouse-management"></a>Intégrer la Warehouse Management
+## Intégrer la Warehouse Management
 
 Assembler au projet s’intègre aux fonctionnalités Warehouse Management pour faciliter l’assemblage et l’expédition. Le processus permet également de garantir que le flux depuis l’assemblage du projet jusqu’à la livraison se déroule sans problème dans les processus internes de l’entrepôt. Pour en savoir plus sur les flux d’entrepôt internes pour les projets, rendez-vous sur [Flux pour la production, l’assemblage et les projets](design-details-internal-warehouse-flows.md#flows-to-and-from-assembly-in-a-basic-warehouse-configuration).
 
@@ -31,7 +31,7 @@ Le tableau suivant décrit les configurations d’entrepôt qui s’assemblent p
 |**Prélèvement inventaire**|Utilisez un prélèvement inventaire pour reporter une utilisation totale ou partielle. La production et la consommation des composantes sont automatiquement reportées pour l’ordre d’assemblage.          |
 |**Prélèvement entrepôt**|Créez et enregistrez les prélèvements entrepôt pour les composantes, puis utilisez un journal projet pour reporter leur utilisation. [!INCLUDE [prod_short](includes/prod_short.md)] vérifie si les composantes d’assemblage consommées ont été prélevées. La production et la consommation des composantes sont automatiquement reportées pour l’ordre d’assemblage.         |
 
-## <a name="known-limitations"></a>Limitations connues
+## Limitations connues
 
 Cette section décrit les limitations connues pour l’assemblage dans le projet.
 
@@ -42,7 +42,7 @@ Cette section décrit les limitations connues pour l’assemblage dans le projet
 * Vous ne pouvez pas saisir une quantité négative dans le champ **Quantité à assembler pour commander** .
 * Vous ne pouvez pas annuler un assemblage.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion de projets](projects-manage-projects.md)  
 [Gestion d'assemblage](assembly-assemble-items.md)  

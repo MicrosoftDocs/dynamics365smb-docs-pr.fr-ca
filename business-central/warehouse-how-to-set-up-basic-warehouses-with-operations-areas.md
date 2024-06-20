@@ -9,8 +9,9 @@ ms.search.form: '6774, 6775, 6776'
 ms.date: 06/25/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
-# <a name="set-up-basic-warehouses-with-operations-areas"></a>Configurer des entrepôts de base avec les zones d'opérations
+# Configurer des entrepôts de base avec les zones d'opérations
 
 Si les zones Opérations internes telles que la production ou l'assemblage existent dans les configurations entrepôt de base dans lesquelles les emplacements utilisent le champ de configuration **Zone obligatoire** et éventuellement les champs **Prélèvement requis** et **Rangement requis**, vous pouvez utiliser les documents d'entrepôt de base suivants pour enregistrer vos activités entrepôt pour des zones Opérations internes :  
 
@@ -34,14 +35,14 @@ Les procédures suivantes sont basées sur la configuration d'activités entrep�
 > [!NOTE]  
 >  Dans la procédure suivante, le champ de configuration **Emplacement obligatoire** dans les fiches magasin est sélectionné en tant que condition préalable car il est considéré comme point de départ de tout niveau de gestion d'entrepôt.  
 
-## <a name="to-enable-inventory-documents-for-internal-operation-activities"></a>Pour activer les documents d'inventaire pour les opérations internes
+## Pour activer les documents d'inventaire pour les opérations internes
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.
 2. Ouvrez la fiche emplacement que vous voulez configurer.  
 3.  Sur le raccourci **Entrepôt**, cochez la case **Rangement requis** pour indiquer que lorsqu'un document source entrant ou interne avec un code de zone est libéré, il est possible de créer un document rangement inventaire ou mouvement d'inventaire.  
 4.  Cochez la case **Prélèvement requis** pour indiquer que lorsqu'un document source sortant ou interne avec un code de zone est créé, il est obligatoire de créer un document prélèvement inventaire ou mouvement d'inventaire.  
 
-## <a name="to-define-a-default-bin-structure-in-the-production-area"></a>Pour définir une structure de zone par défaut dans la zone de production
+## Pour définir une structure de zone par défaut dans la zone de production
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Emplacements**, puis choisissez le lien associé.
 2. Ouvrez l'emplacement que vous voulez configurer.  
@@ -59,7 +60,7 @@ Ce graphique indique comment le champ **Code emplacement** sur les lignes compos
 
 ![Organigramme Flux de zone.](media/binflow.png "BinFlow")
 
-## <a name="to-define-a-default-bin-structure-in-the-assembly-area"></a>Pour définir une structure de zone par défaut dans la zone d'assemblage
+## Pour définir une structure de zone par défaut dans la zone d'assemblage
 
 Les composantes pour les commandes d'assemblage ne peuvent pas être prélevées ni reportées avec des prélèvements inventaire. À la place, utilisez la page **Mouvement d'inventaire**. Pour plus d’informations, consultez [Prélever ou déplacer pour la fabrication, l’assemblage ou les projets dans les configurations de stockage de base](warehouse-how-to-pick-for-production.md).
 
@@ -67,12 +68,12 @@ En cas de prélèvement et de livraison de quantités de lignes vente assemblée
 
 Pour plus d'informations, voir [Gestion d'assemblage](assembly-assemble-items.md).
 
-### <a name="to-set-up-that-an-inventory-movement-is-automatically-created-when-the-inventory-pick-for-the-assembly-item-is-created"></a>Pour configurer la création automatique d'un mouvement d'inventaire lors de la création du prélèvement inventaire pour l'élément d'assemblage
+### Pour configurer la création automatique d'un mouvement d'inventaire lors de la création du prélèvement inventaire pour l'élément d'assemblage
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration d’assemblage**, puis choisissez le lien associé.
 2. Cochez la case **Créer des mouvements automatiquement**.
 
-### <a name="to-set-up-the-bin-in-the-assembly-area-where-components-are-placed-by-default-before-they-can-be-consumed-in-assembly"></a>Pour configurer la zone dans la zone d'assemblage où les composantes sont stockées par défaut avant de pouvoir être consommées dans l'assemblage
+### Pour configurer la zone dans la zone d'assemblage où les composantes sont stockées par défaut avant de pouvoir être consommées dans l'assemblage
 
 La valeur de ce champ est automatiquement insérée dans le champ **Code de zone** des lignes d'ordre d'assemblage lorsque ce emplacement est saisi dans le champ **Code d'emplacement** de la ligne d'ordre d'assemblage.
 
@@ -80,7 +81,7 @@ La valeur de ce champ est automatiquement insérée dans le champ **Code de zone
 2. Ouvrez l'emplacement que vous voulez configurer.
 3. Renseignez le champ **Code de zone vers assemblage**.
 
-### <a name="to-set-up-the-bin-in-the-assembly-area-where-finished-assembly-items-are-posted-to-when-they-are-assembled-to-stock"></a>Pour configurer la zone dans la zone d'assemblage où les éléments d'assemblage finis sont reportés lorsqu'ils sont assemblés pour stock
+### Pour configurer la zone dans la zone d'assemblage où les éléments d'assemblage finis sont reportés lorsqu'ils sont assemblés pour stock
 
 La valeur de ce champ est automatiquement insérée dans le champ **Code de zone** des en-têtes d'ordre d'assemblage lorsque ce code d'emplacement est entré dans le champ **Code d'emplacement** de l'en-tête d'ordre d'assemblage.
 
@@ -93,7 +94,7 @@ Les codes de zone qui sont configurés dans les fiches emplacement définissent 
 2. Ouvrez l'emplacement que vous voulez configurer.
 3. Renseignez le champ **Code de zone depuis assemblage**.
 
-### <a name="to-set-up-the-bin-where-finished-assembly-items-are-posted-to-when-they-are-assembled-to-a-linked-sales-order"></a>Pour configurer la zone au niveau de laquelle les éléments d'assemblage terminés sont reportés lorsqu'ils sont associés à un document de vente
+### Pour configurer la zone au niveau de laquelle les éléments d'assemblage terminés sont reportés lorsqu'ils sont associés à un document de vente
 
 À partir de cette zone, les articles d'assemblage sont livrés immédiatement via un prélèvement inventaire, afin d'honorer le document de vente.
 
@@ -115,7 +116,7 @@ Le même code de zone est également copié vers le champ **Code de zone** de la
 2. Ouvrez l'emplacement que vous voulez configurer.
 3. Renseignez le champ **Code de zone livr. ass. pr comm.**.
 
-## <a name="to-create-dedicated-component-bins"></a>Pour créer des zones composante réservées
+## Pour créer des zones composante réservées
 
 Vous pouvez spécifier que les quantités d'une zone soient protégées des prélèvements d'autres demandes que la demande de leurs objectifs actuels.
 
@@ -135,7 +136,7 @@ La réservation d'une zone fournit une fonctionnalité similaire à l'utilisatio
 > [!NOTE]  
 >  L'emplacement doit être vide avant que vous puissiez sélectionner ou désactiver le champ **Dédié**.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Vue d’ensemble de Warehouse Management](design-details-warehouse-management.md)
 [Inventaire](inventory-manage-inventory.md)  

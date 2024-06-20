@@ -9,9 +9,10 @@ ms.search.forms: '5054, 5050, 5051, 5052, 5104, 5053, 9130, 6701, 5055, 1604'
 ms.date: 12/13/2023
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
 
-# <a name="managing-contacts"></a>Gestion de contacts
+# Gestion de contacts
 
 Les employés de votre compagnie rencontrent régulièrement des prospects qui peuvent devenir des relations formelles. Tous ces contacts externes et leurs informations détaillées doivent être enregistrés dans le système, de telle sorte que la communication soit plus réussie et qu'ils se transforment facilement en relations client, fournisseur ou bancaires formelles.
 
@@ -26,7 +27,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ar
 |Configurer des questionnaires profil à utiliser au moment d'entrer des informations sur les profils de vos contacts.|[Utiliser des questionnaires profil pour classer les contacts professionnels](marketing-create-contact-profile-questionnaire.md)|
 |Résoudre la confusion lorsque deux enregistrements ou plus existent pour le même contact.|[Fusion des enregistrements en double](sales-how-merge-duplicate-records.md)|
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion des opportunités de ventes](marketing-manage-sales-opportunities.md)  
 [Tri, recherche et filtrage](ui-enter-criteria-filters.md)  

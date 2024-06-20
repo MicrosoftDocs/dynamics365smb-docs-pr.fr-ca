@@ -4,6 +4,7 @@ ms.topic: include
 ms.date: 11/29/2023
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
 > [!NOTE]
 > De nouvelles capacités de création de dépôts bancaires sont disponibles dans la 1re vague de lancement de Business Central 2022 pour de nombreuses versions nationales/régionales. Si vous utilisiez Business Central aux États-Unis, au Canada ou au Mexique avant cette version, vous utilisiez peut-être les fonctionnalités antérieures. Vous pouvez continuer, mais les nouvelles capacités remplaceront les anciennes dans une prochaine version. Pour commencer à utiliser les nouvelles fonctionnalités immédiatement, votre administrateur peut se rendre sur la page **Gestion des fonctionnalités** et activer **Mise à jour des fonctionnalités : Rapprochement bancaire et dépôts standardisés**. Pour plus d'informations, voir [Créer des dépôts bancaires](../../../bank-create-bank-deposits.md).
@@ -19,7 +20,7 @@ Les lignes dépôt bancaire contiennent des renseignements sur les différents �
 
 Après avoir renseigné les renseignements de dépôt et les lignes, vous devez les reporter afin de mettre à jour les grands livres correspondants, comme le grand livre bancaire, le grand livre général ou le grand livre client. Les dépôts reportés sont stockés pour référence ultérieure et peuvent être consultés sur la page **Dépôts reportés**.
 
-## <a name="to-create-a-deposit"></a>Pour créer un dépôt
+## Pour créer un dépôt  
 1.  Choisissez l'icône d'![ampoule qui ouvre la fonction Tell Me.](../../../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Dépôts**, puis sélectionnez le lien associé.  
 2.  Sélectionnez l'action **Nouveau**.  
 3.  Sous le raccourci **Général**, renseignez les champs requis comme indiqué dans le tableau ci-dessous.  

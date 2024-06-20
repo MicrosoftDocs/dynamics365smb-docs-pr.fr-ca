@@ -11,11 +11,11 @@ ms.date: 05/03/2024
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
-# <a name="update-currency-exchange-rates"></a>Mise à jour des taux de change devise
+# Mise à jour des taux de change devise
 
 Si vous négociez dans différentes devises, vous devez suivre les variations des taux de change. [!INCLUDE [prod_short](includes/prod_short.md)] vous aide à gérer et mettre à jour les taux de change manuellement ou automatiquement et configurer un service de taux de change de devise.
 
-## <a name="currencies"></a>Devises
+## Devises
 
 > [!TIP]  
 > Dans [!INCLUDE[prod_short](includes/prod_short.md)], vous trouverez des informations en temps réel sur les taux de devise étrangère (FX) ou les taux historiques, sous le terme Devise. Pour plus d'informations, voir [Configurer une devise de report additionnelle](finance-how-setup-additional-currencies.md).
@@ -24,11 +24,11 @@ Si vous négociez dans différentes devises, vous devez suivre les variations de
 
 Spécifiez les codes devise dans la liste **Devises**, y compris les informations supplémentaires et les paramètres nécessaires pour chaque code devise. Pour plus d’informations, voir [Devises](finance-set-up-currencies.md#curr)
 
-### <a name="example-of-a-receivable-currency-transaction"></a>Exemple de transaction en devise comptabilité
+### Exemple de transaction en devise comptabilité
 
 [!INCLUDE [finance-currencies-example](includes/finance-currencies-example.md)]
 
-## <a name="exchange-rates"></a>Taux de change
+## Taux de change
 
 Les taux de change permettent de calculer la valeur en devise locale ($) de chaque transaction en devise. La page **Taux d’échange** comprend les champs suivants :
 
@@ -57,7 +57,7 @@ Le montant du taux de change de l’ajustement ou le montant du taux de change d
 >
 > `Currency Amount = Amount / Adjustment Exch. Rate Amount * Relational Adjmt Exch. Rate Amt`
 
-## <a name="adjust-exchange-rates"></a>Ajustement des taux de change
+## Ajustement des taux de change
 
 Comme les taux de change ne cessent de fluctuer, ajustez régulièrement d’autres équivalents de devise. Si vous ne le faites pas, les montants que vous avez convertis à partir de devises étrangères (ou autres) et reportés dans le grand livre en devise locale peuvent être incorrects. De plus, vous devez mettre à jour les écritures quotidiennes reportées avant de saisir un taux de change quotidien.
 
@@ -78,36 +78,36 @@ Vous pouvez également spécifier comment l’ajustement traite les dimensions d
 > [!IMPORTANT]
 > En raison des exigences locales en Suisse, nous vous déconseillons d’activer la fonction **Mise à jour des fonctionnalités : activer l’utilisation du nouvel ajustement du taux de change extensible, y compris la révision du report** dans la version suisse (CH).
 
-## <a name="preview-the-effect-of-an-adjustment"></a>Prévisualiser l’effet d’un ajustement
+## Prévisualiser l’effet d’un ajustement
 
 Vous pouvez prévisualiser l’effet d’un ajustement du taux de change sur le report avant le report réel en choisissant l’action **Aperçu report** sur la page de demande du rapport **Ajustement des taux de change** (rapport 596). Sur la page de demande, vous pouvez spécifier ce qu’il faut inclure dans l’aperçu :
 
 * Obtenir un report détaillé dans le grand livre par écriture.
 * Obtenir un report récapitulatif par devise. Sélectionnez simplement le champ **Ajuster par écriture** dans le rapport **Ajustement des taux de change**.
 
-### <a name="effect-on-customers-and-vendors"></a>Effet sur les clients et les fournisseurs
+### Effet sur les clients et les fournisseurs
 
 Pour les comptes client et fournisseur, le traitement en lot utilise le taux de change qui était valide à la date de report spécifiée pour le traitement en lot pour ajuster la device. Le traitement en lot calcule les différences pour chaque solde en devise et reporte les montants dans le compte GL spécifié dans le champ **Compte gains non réalisés** ou **Compte pertes non réalisées** de la page **Devises**. Les écritures de contrepartie sont automatiquement reportées sur le compte client/fournisseur dans le grand livre.
 
 Ce traitement en lot traite toutes les écritures client et toutes les écritures fournisseur ouvertes. S’il y a une différence de taux de change pour une écriture, le traitement en lot crée une nouvelle écriture client ou fournisseur détaillée. La nouvelle écriture reflète le montant ajusté dans l’écriture client ou fournisseur.
 
-#### <a name="dimensions-on-customer-and-vendor-ledger-entries"></a>Dimensions des écritures client et fournisseur
+#### Dimensions des écritures client et fournisseur
 
 [!INCLUDE [prod_short](includes/prod_short.md)] attribue les dimensions des écritures client ou fournisseur aux écritures ajustement et reporte les ajustements pour chaque combinaison de valeurs de dimension.
 
-### <a name="effect-on-bank-accounts"></a>Effet sur les comptes bancaires
+### Effet sur les comptes bancaires
 
 Pour les comptes bancaires, le traitement en lot ajuste la devise en utilisant le taux de change qui est valide à la date de report spécifiée dans le traitement en lot. Le traitement en lot calcule les différences pour chaque compte bancaire possédant un code devise et reporte les montants dans le compte GL spécifié dans le champ **Compte gains réalisés** ou **Compte pertes réalisées** de la page **Devises**. Les écritures de contrepartie sont automatiquement reportées sur les comptes bancaires du grand livre spécifiés dans les groupes de report compte bancaire. Le traitement en lot calcule une écriture par devise et par groupe de report.
 
-#### <a name="dimensions-on-bank-account-entries"></a>Dimensions des écritures compte bancaire
+#### Dimensions des écritures compte bancaire
 
 Les dimensions par défaut du compte bancaire sont affectées aux écritures ajustement pour le compte GL du compte bancaire et pour le compte gain/perte.
 
-### <a name="effect-on-gl-accounts"></a>Effet sur les comptes du grand livre
+### Effet sur les comptes du grand livre
 
 Si vous reportez dans une autre devise de report, le traitement en lot peut créer de nouvelles écritures GL pour les ajustements de devise entre la devise locale et l’autre devise de report. Le traitement en lot calcule les différences pour chaque écriture GL. Il ajuste l’écriture GL en fonction de la valeur du champ **Ajustement taux de change** de chaque compte GL.
 
-#### <a name="dimensions-on-gl-account-entries"></a>Dimensions des écritures compte du grand livre
+#### Dimensions des écritures compte du grand livre
 
 Les dimensions par défaut des comptes dans lesquels elles sont reportées sont affectées aux écritures ajustement.
 
@@ -116,7 +116,7 @@ Les dimensions par défaut des comptes dans lesquels elles sont reportées sont 
 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE3Q24s?rel=0]
 
-## <a name="set-up-a-currency-exchange-rate-service"></a>Configuration d’un service de taux de change des devises
+## Configuration d’un service de taux de change des devises
 
 Vous pouvez utiliser un service externe pour tenir vos taux de change des devises à jour.
 
@@ -135,21 +135,21 @@ Vous pouvez utiliser un service externe pour tenir vos taux de change des devise
   
 > [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE4A1jy?rel=0]
 
-## <a name="update-currency-exchange-rates-through-a-service"></a>Mettre à jour les taux de change des devises à partir d’un service
+## Mettre à jour les taux de change des devises à partir d’un service
 
 Suivez les étapes indiquées pour mettre à jour les taux de change via un service :
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Devises**, puis sélectionnez le lien associé.
 2. Sélectionner l’option **Mettre à jour les taux de change**.
 
-## <a name="correct-mistakes"></a>Corriger les erreurs
+## Corriger les erreurs
 
 De temps en temps, vous devrez peut-être corriger une erreur dans une opération de paiement associée à des ajustements des gains et des pertes de change. Vous pouvez utiliser l’action **Inverser transaction** sur les **écritures bancaires**, les **écritures client** et les **écritures fournisseur** pour annuler l’affectation et inverser la transaction de paiement.
 
 > [!NOTE]
 > Lorsque vous annulez l'affectation et inversez un paiement pour une écriture à laquelle sont associés des ajustements de taux de change, l’inversion reporte les écritures d'inversion pour les ajustements. Vous devrez peut-être réexécuter l’ajustement du taux de change pour obtenir le solde actuel correct.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Devises dans Business Central](finance-currencies.md)  
 [Configurer des devises](finance-set-up-currencies.md)  

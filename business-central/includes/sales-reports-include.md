@@ -4,6 +4,7 @@ ms.topic: include
 ms.date: 01/29/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
 
 Le tableau suivant décrit certains des principaux rapports dans les rapports de vente.

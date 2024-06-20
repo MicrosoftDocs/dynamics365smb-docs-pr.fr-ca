@@ -9,8 +9,9 @@ ms.search.form: '900, 901, 902, 903, 904, 907, 910, 916, 920, 921, 922, 923, 940
 ms.date: 04/01/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
-# <a name="create-blanket-assembly-orders"></a>Création d'ordres d'assemblage permanents
+# Création d'ordres d'assemblage permanents
 
 Vous pouvez utiliser la gestion d’assemblage pour personnaliser un élément d’assemblage sur la demande d’un client au cours du processus de vente. Pour plus d'informations, reportez-vous à [Vente d'articles à assembler pour commande](assembly-how-to-sell-items-assembled-to-order.md).  
 
@@ -19,7 +20,7 @@ Vous pouvez utiliser la gestion d’assemblage pour personnaliser un élément d
 > [!NOTE]  
 >  Comme toutes les commandes permanentes, les quantités des commandes permanentes d'assemblage ne sont que des prévisions et ne sont pas opérationnelles avant d'être converties en ordres d'assemblage réels. Par conséquent, la fonctionnalité commande, comme le calcul de disponibilité, la réservation et la traçabilité des articles, n'est pas active sur les ordres d'assemblage permanents.  
 
-## <a name="to-create-a-blanket-assembly-order-for-an-assemble-to-order-item"></a>Pour créer un ordre d'assemblage permanent pour un article à assembler pour commande
+## Pour créer un ordre d'assemblage permanent pour un article à assembler pour commande  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente permanents**, puis sélectionnez le lien associé.  
 2. Créez une commande permanente ventes avec une ligne pour un élément d'assemblage. Pour plus de détails, reportez-vous à la rubrique [Créer des commandes permanentes ventes](sales-how-to-create-blanket-sales-orders.md).  
@@ -35,7 +36,7 @@ Vous pouvez utiliser la gestion d’assemblage pour personnaliser un élément d
 
 L'ordre d'assemblage permanent associé et toutes les personnalisations sont liées à ce nouveau document de vente pour préparer l'assemblage de l'article ou des articles à vendre.  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Créer des commandes permanentes ventes](sales-how-to-create-blanket-sales-orders.md)  
 [Gestion d'assemblage](assembly-assemble-items.md)  

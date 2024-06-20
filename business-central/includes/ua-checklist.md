@@ -4,5 +4,6 @@ ms.topic: include
 ms.date: 04/01/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
 La liste de vérification **Démarrer** peut vous aider à mettre en place des informations clés.  

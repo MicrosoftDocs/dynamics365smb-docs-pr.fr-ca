@@ -4,6 +4,7 @@ ms.topic: include
 ms.date: 04/11/2022
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
 1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 0.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire"), entrez **Configuration rapport TVA**, puis choisissez le lien associé.  
 2. Pour permettre aux utilisateurs de modifier et de renvoyer ce rapport, choisissez le champ **Autoriser la modification**.  

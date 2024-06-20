@@ -6,16 +6,17 @@ ms.topic: article
 ms.service: dynamics-365-business-central
 author: brentholtorf
 ms.author: bholtorf
+ms.reviewer: bholtorf
 ---
-# <a name="walkthrough-create-a-new-routing"></a>Procédure pas à pas : Créer un itinéraire
+# Procédure pas à pas : Créer un itinéraire
 
 Dans cet article, nous vous expliquons comment utiliser les données de démonstration Contoso Coffee pour configurer manuellement un nouvel itinéraire de production dans [!INCLUDE [prod_short](../../includes/prod_short.md)].  
 
-## <a name="scenario"></a>Scénario
+## Scénario
 
 Oscar, l’ingénieur de processus chez Contoso Coffee, décide de créer un itinéraire nommé *Nouveau chemin*. Étant donné que cette itinéraire ne ressemble à aucune autre chez Contoso Coffee, Oscar doit saisir manuellement toutes les informations relatives à l’itinéraire.  
 
-## <a name="steps"></a>Étapes
+## Étapes
 
 1. Créez l’en-tête de l'itinéraire.  
 
@@ -54,6 +55,6 @@ Oscar, l’ingénieur de processus chez Contoso Coffee, décide de créer un iti
 
 Le nouvel itinéraire est maintenant configuré.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Introduction aux données de démonstration Contoso Coffee](../contoso-coffee-intro.md)  

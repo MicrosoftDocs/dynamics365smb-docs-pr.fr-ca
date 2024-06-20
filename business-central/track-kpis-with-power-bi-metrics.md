@@ -3,7 +3,7 @@ title: Suivre vos KPI métier avec les mesures Power BI
 description: "Obtenez une vue d’ensemble de l’utilisation de Power BI pour obtenir BI et des indicateurs de performance clés à partir de vos données Business\_Central."
 author: kennienp
 ms.author: kepontop
-ms.reviewer: jswymer
+ms.reviewer: bholtorf
 ms.topic: overview
 ms.search.keywords: 'account schedule, analysis, reporting, financial report, business intelligence, KPI'
 ms.search.form: '6316, 6317'
@@ -12,7 +12,7 @@ ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
 
-# <a name="track-your-business-kpis-with-power-bi-metrics"></a>Suivre vos KPI métier avec les mesures Power BI
+# Suivre vos KPI métier avec les mesures Power BI
 
 Si vous utilisez Power BI sur les données [!INCLUDE[prod_short](includes/prod_short.md)], il est facile de suivre les KPI ou les mesures qui sont importants pour vous.
 
@@ -32,7 +32,7 @@ Pour plus d’informations sur les mesures Power BI, voir [Bien démarrer avec l
 > [!NOTE]
 > À partir de la 2e vague de lancement 2023 de Business Central, il est possible d’intégrer des tableaux de bord à partir de mesures Power BI dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Utilisation d’indicateurs de performance clés pour répondre aux objectifs de votre entreprise](analytics-about-kpis.md)  
 [Introduction à Business Central et Power BI](admin-powerbi.md)  

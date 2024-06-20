@@ -4,6 +4,7 @@ ms.topic: include
 ms.date: 11/14/2023
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
 
 Les champs **Date du document** et **Date de report** dans les documents vente et achat vous aident à respecter les normes comptables et à garantir des calculs financiers exacts. Les champs répondent à différents objectifs :

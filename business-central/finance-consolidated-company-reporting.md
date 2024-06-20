@@ -3,7 +3,7 @@ title: Consolider les données de plusieurs compagnies
 description: Cet article explique comment vous pouvez consolider les écritures d’au moins deux compagnies séparées (filiales) dans une compagnie consolidée.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: bnielse
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.date: 06/27/2023
 ms.custom: bap-template
@@ -12,7 +12,7 @@ ms.search.form: '1826, 1827'
 ms.service: dynamics-365-business-central
 ---
 
-# <a name="consolidating-financial-data-from-multiple-companies"></a>Consolidation des données financières de plusieurs compagnies
+# Consolidation des données financières de plusieurs compagnies
 
 Certaines organisations utilisent [!INCLUDE [prod_short](includes/prod_short.md)] dans plusieurs unités fonctionnelles ou entités juridiques. D’autres utilisent [!INCLUDE [prod_short](includes/prod_short.md)] dans les filiales qui doivent rendre compte aux organisations mères. [!INCLUDE [prod_short](includes/prod_short.md)] fournit aux comptables des outils qui les aident à transférer les écritures de deux ou plusieurs compagnies (filiales) dans une compagnie consolidée.  
 
@@ -36,11 +36,11 @@ Vous configurez la compagnie consolidée de la même manière que vous configure
 > [!TIP]
 > La consolidation des données financières peut être particulièrement appropriée pour les processus intersociétés. Pour en savoir plus sur les fonctionnalités intersociétés, consultez [Gestion des transactions intersociétés](intercompany-manage.md).
 
-## <a name="consolidate-data"></a>Consolider les données
+## Consolider les données
 
 Avant de procéder à une consolidation, il est recommandé de tester vos données avant de les transférer vers la compagnie consolidée. [!INCLUDE[prod_short](includes/prod_short.md)] recherche des différences dans les informations des unités fonctionnelles et de la compagnie consolidée. Par exemple, si les numéros de compte ou les codes axe sont différents. Corrigez les erreurs trouvées avant d’exécuter le rapport. Vous pouvez tester la base de données ou, si vous importez des données à partir d’un fichier XML, le fichier.
 
-### <a name="test-the-data-before-you-consolidate"></a>Tester les données avant la consolidation
+### Tester les données avant la consolidation
 
 1. Ouvrez la compagnie consolidée.  
 2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Unités fonctionnelles**, puis choisissez le lien associé.  
@@ -49,7 +49,7 @@ Avant de procéder à une consolidation, il est recommandé de tester vos donné
     * Pour tester un fichier, choisissez l'action **Tester fichier**, entrez le nom du fichier à tester, puis choisissez **Imprimer**.  
     * Pour tester la base de données, choisissez **Tester base de données**.  
 
-### <a name="run-the-consolidation"></a>Exécuter la consolidation
+### Exécuter la consolidation
 
 Une fois les données testées, vous pouvez les transférer vers la compagnie consolidée. Un guide de configuration assistée vous aide tout au long du processus.
 
@@ -60,7 +60,7 @@ Une fois les données testées, vous pouvez les transférer vers la compagnie co
 2. Sur la page **Unités fonctionnelles**, choisissez l’action **Consolider**.  
 3. Renseignez les champs requis.  
 
-## <a name="use-the-consolidated-trial-balance-report"></a>Utiliser le rapport Balance de vérification consolidée
+## Utiliser le rapport Balance de vérification consolidée
 
 Le rapport **Balance de vérification consolidée** peut vous donner un aperçu de leur santé financière dans leur ensemble. Le rapport regroupe les écritures de chacune de vos compagnies dans une nouvelle compagnie créée pour les données consolidées. La compagnie consolidée est un conteneur pour les données consolidées, et ne contient pas de données métier en temps réel. Les compagnies que vous incluez dans la compagnie consolidée deviennent des **Unités fonctionnelles** dans le rapport. Avec quatre unités fonctionnelles maximum, vous pouvez utiliser le rapport **Balance de vérification consolidée (4)**.  
 
@@ -71,7 +71,7 @@ Le rapport affiche une ligne pour chaque compte et suit la structure du plan com
 * Les éliminations effectuées dans la compagnie consolidée. Elles sont toujours affichées pour une période correspondant à l’exercice financier comptable de la compagnie consolidée.
 * Le total de la compagnie consolidée après les éliminations, affiché comme solde période ou solde à ce jour.
 
-## <a name="eliminate-repeated-transactions"></a>Éliminer les transactions répétées
+## Éliminer les transactions répétées
 
 Après que vous avez consolidé toutes les compagnies, vous devez rechercher toutes les transactions enregistrées dans plusieurs compagnies, puis valider les écritures d’élimination pour les supprimer. Le traitement d'éliminations de consolidation est un processus manuel.  
 
@@ -96,7 +96,7 @@ Une ligne est créée pour chaque compte s’affiche, selon la structure du plan
 * Le texte de report copié à partir du journal général.
 * Le total de la compagnie consolidée après les éliminations, si elles sont reportées.
 
-## <a name="export-and-import-consolidated-data-between-databases"></a>Exporter et importer des données consolidées entre des bases de données
+## Exporter et importer des données consolidées entre des bases de données
 
 Si les données d’une unité fonctionnelle se trouvent dans une autre base de données, vous pouvez effectuer un transfert manuel basé sur un fichier ou automatiser le processus à l’aide d’une API. Pour en savoir plus sur l’API, consultez [Utiliser notre API pour partager automatiquement des données entre les environnements](#use-our-api-to-automatically-share-data-across-environments).
 
@@ -116,11 +116,11 @@ Les écritures exportées contiennent les champs suivants : **N° compte**, **D
 3. La valeur de dimension exportée pour la saisie est celle de la compagnie consolidée configurée dans le champ **Code consolidation** pour cette valeur de dimension. Si aucune valeur de dimension de compagnie consolidée n’a été entrée dans le champ **Code consolidé** à cette fin, la valeur de dimension proprement dite est exportée vers la ligne.  
 4. Les fichiers XML contiennent également les taux de change devise correspondant à la période de consolidation. Ces taux sont inclus dans une section distincte au début du fichier.  
 
-## <a name="use-our-api-to-automatically-share-data-across-environments"></a>Utiliser notre API pour partager automatiquement des données entre les environnements
+## Utiliser notre API pour partager automatiquement des données entre les environnements
 
 [!INCLUDE [prod_short](includes/prod_short.md)] fournit une API qui vous permet d’automatiser le processus de partage des données financières entre les unités fonctionnelles et la compagnie consolidée. L’API est gratuite à utiliser et facile à configurer. Elle vous permet même de partager des données entre différents environnements [!INCLUDE [prod_short](includes/prod_short.md)]. Par exemple, vous devrez peut-être partager des données entre différents environnements lorsque les unités fonctionnelles ne se trouvent pas dans les mêmes zones géographiques Azure. Pour en savoir plus sur l’utilisation de l’API pour automatiser le processus de consolidation, consultez [Configurer la consolidation de la compagnie](finance-consolidated-company-reporting-setup.md#busunit).
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Configuration de la consolidation de la compagnie](finance-consolidated-company-reporting-setup.md)  
 [Gestion des transactions intersociétés](intercompany-manage.md)  

@@ -9,14 +9,15 @@ ms.search.form: 8645
 ms.date: 06/08/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
+ms.reviewer: bholtorf
 ---
-# <a name="design-details-inventory-costing"></a>Détails de conception : stock évaluation stock
+# Détails de conception : stock évaluation stock
 
 Cette documentation fournit une analyse technique détaillée des concepts et principes qui sont utilisés dans les fonctions Inventory Costing dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 L'évaluation des coûts d'inventaire, ou gestion des coûts, se charge de l'enregistrement et de la déclaration des coûts d'exploitation de la compagnie.  
 
-## <a name="in-this-section"></a>Dans cette section
+## Dans cette section
 
 [Détails de conception : modes évaluation stock](design-details-costing-methods.md)  
 [Détails de conception : lettrage article](design-details-item-application.md)  
