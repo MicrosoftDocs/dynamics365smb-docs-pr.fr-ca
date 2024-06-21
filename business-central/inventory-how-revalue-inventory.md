@@ -12,10 +12,10 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="revalue-inventory"></a>Réévaluer l'inventaire
+# Réévaluer l'inventaire
 Pour réévaluer ou amortir un article ou une écriture article spécifique, vous devez utiliser le journal réévaluation.
 
-## <a name="to-revalue-inventory"></a>Pour réévaluer l'inventaire
+## Pour réévaluer l'inventaire
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal réévaluation**, puis choisissez le lien associé.
 2. Choisissez l'action **Calculer valeur stock**.
 3. Sur la page **Calculer valeur inventaire**, renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -27,7 +27,7 @@ Pour réévaluer ou amortir un article ou une écriture article spécifique, vou
 
 Les nouvelles écritures valeur sont alors créées pour refléter les appréciations que vous avez reportées. Vous pouvez visualiser les nouvelles valeurs dans les fiches article concernées.
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 [Détails de conception : réévaluation](design-details-revaluation.md)  
 [Inventaire](inventory-manage-inventory.md)  
 [Vente](sales-manage-sales.md)  

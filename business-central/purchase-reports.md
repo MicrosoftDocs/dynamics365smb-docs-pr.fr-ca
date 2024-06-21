@@ -10,15 +10,15 @@ ms.search.form: 'Report_311, Report_312, Report_313, Report_320, Report_709, Rep
 ms.date: 04/26/2024
 ms.service: dynamics-365-business-central
 ---
-# <a name="purchase-reporting-and-analytics"></a>Rapports et analyses des achats
+# Rapports et analyses des achats
 
 Les rapports d’achat permettent aux professionnels de l’approvisionnement et des affaires d’obtenir des informations et des statistiques sur les activités d’achat actuelles et passées.  
 
-## <a name="reports"></a>Rapports
+## Rapports
 
 [!INCLUDE [purchase_reports](includes/purchase-reports-include.md)]
 
-## <a name="tasks"></a>Tâches
+## Tâches
 
 Les articles suivants décrivent certaines des tâches clés pour analyser l’état de vos achats :
 
@@ -26,7 +26,7 @@ Les articles suivants décrivent certaines des tâches clés pour analyser l’�
 - [Calculer les dates des achats](purchasing-date-calculation-for-purchases.md)
 - [Afficher des écritures achat](purchasing-how-record-purchases.md#viewing-ledger-entries)
 
-## <a name="explore-purchase-reports-with-report-explorer"></a>Explorez les rapports d’achat avec l’Explorateur de rapports
+## Explorez les rapports d’achat avec l’Explorateur de rapports
 
 Pour obtenir un aperçu des rapports disponibles pour achats, choisir sur volet **Tous les rapports** votre page d’accueil. Cette Action ouvre l’explorateur de rôles, qui est filtré selon les fonctionnalités du **Rapport et analyse** option. Sous l’en-tête **Achats** , choisissez **Explorer**.
 
@@ -34,7 +34,7 @@ Pour obtenir un aperçu des rapports disponibles pour achats, choisir sur volet 
 
 Pour en savoir plus, voir [Recherche de rapports avec l’explorateur de rôles](ui-role-explorer.md). 
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Analyse ad hoc des données achats](ad-hoc-analysis-purchasing.md)  
 [Vue d’ensemble de l’analyse achats](purchasing-analytics-overview.md)   

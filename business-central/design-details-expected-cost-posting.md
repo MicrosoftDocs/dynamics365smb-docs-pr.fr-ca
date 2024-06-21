@@ -10,7 +10,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="design-details-expected-cost-posting"></a>Détails de conception : report du coût prévu
+# Détails de conception : report du coût prévu
 Les coûts prévus représentent l'estimation, par exemple, du coût d'un article acheté que vous enregistrez avant la réception de la facture de cet article.  
 
  Vous pouvez reporter les coûts prévus dans l'inventaire et dans le grand livre. Lorsque vous reportez une quantité qui est uniquement reçue ou livrée mais pas facturée, une écriture valeur est créée avec le coût prévu. Ce coût prévu affecte la valeur de l'inventaire mais n'est pas reporté au compte du grand livre, sauf si vous avez configuré le programme à cette fin.  
@@ -22,7 +22,7 @@ Les coûts prévus représentent l'estimation, par exemple, du coût d'un articl
 
  Pour prendre en charge le travail de rapprochement et de traçabilité, l'écriture valeur facturée montre que le coût indiqué prévu a été reporté pour équilibrer les comptes provisoires.  
 
-## <a name="prerequisites-for-posting-expected-costs"></a>Conditions préalables au report des coûts prévus
+## Conditions préalables au report des coûts prévus
 
 Pour rendre possible le report des coûts prévus, vous devez procéder comme suit :
 1. Dans la page **Configuration inventaire**, cochez la case **Report coûts automatique** et la case **Report coût prévu au GL**.
@@ -32,7 +32,7 @@ Pour rendre possible le report des coûts prévus, vous devez procéder comme su
 3. Dans la page **Configuration report**, vérifiez le champ **Compte ajust. inventaire (attente)** pour le **Groupe de report de marché** et le **Groupe de report de produit** que vous utiliserez.
 4. Lorsque vous créez un bon de commande, la valeur par défaut est que le champ **N° facture fournisseur** est requis. Vous devez le désactiver dans la page **Configuration achats**, en désélectionnant le champ **N° doc. ext. obligatoire**.
 
-## <a name="example"></a>Exemple :
+## Exemple :  
 
 > [!NOTE]  
 > Les numéros de compte utilisés dans cet exemple servent uniquement de référence et seront différents dans votre système. Configurez-les comme indiqué dans les conditions préalables ci-dessus.
@@ -85,7 +85,7 @@ Vous reportez un bon de commande comme reçu. Le coût prévu est 95,00 $.
 |15/01/20|Compte coût direct affecté|7291|-100|6|  
 |15/01/20|Compte inventaire|2130|100|5|  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
  [Détails de conception : stock évaluation stock](design-details-inventory-costing.md)   
  [Détails de conception : ajustement des coûts](design-details-cost-adjustment.md)   
  [Détails de conception : rapprochement de comptabilité](design-details-reconciliation-with-the-general-ledger.md)   

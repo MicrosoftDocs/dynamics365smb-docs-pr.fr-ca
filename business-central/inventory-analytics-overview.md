@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
 
-# <a name="inventory-analytics"></a>Analyse de l’inventaire
+# Analyse de l’inventaire
 
 Les entreprises capturent un grand nombre de données au cours de leurs activités quotidiennes, ce qui permet aux gestionnaires d’inventaire de disposer d’informations décisionnelles (Business Intelligence) :
 
@@ -31,7 +31,7 @@ Chacune de ces fonctionnalités présente ses avantages et inconvénients, selon
 
 Cet article vous explique comment d’utiliser ces fonctionnalités analytiques pour obtenir des informations concernant votre inventaire.
 
-## <a name="analytics-needs-in-inventory"></a>Besoins d’analyse en matière d’inventaire
+## Besoins d’analyse en matière d’inventaire
 
 Lorsque l’on réfléchit aux besoins d’analyse en gestion de l’inventaire, il peut être utile d’utiliser un modèle basé sur un persona qui décrit différents besoins en matière d’analyse à un niveau élevé.
 
@@ -48,14 +48,14 @@ Les personnes occupant différents rôles ont des besoins différents en matièr
 |Magasinier   | Informations détaillées     | Rapports opérationnels intégrés, données de tâches à l’écran |
 
 <!-- 
-## <a name="inventory-kpis"></a>Inventory KPIs
+## Inventory KPIs
 
 A key performance indicator (KPI) is a measurable value that shows how effectively you’re meeting your goals. In inventory management, people often use the following KPIs to monitor their organization's sales performance:
 
 - TODO  
 -->
 
-## <a name="use-financial-reporting-to-produce-financial-statements-and-kpis-related-to-inventory"></a>Utiliser les rapports financiers pour produire des états financiers et des indicateurs de performance clés associés à l’inventaire
+## Utiliser les rapports financiers pour produire des états financiers et des indicateurs de performance clés associés à l’inventaire
 
 La fonctionnalité **Financial Reporting** vous donne un aperçu des données financières affichées dans votre plan comptable (COA). Vous pouvez configurer les rapports financiers pour analyser les chiffres dans les comptes du grand livre (GL) et comparer les écritures GL et les écritures budget. Spécifiquement pour la gestion de l’inventaire, vous pouvez configurer des rapports financiers sur les comptes du grand livre (GL) que vous utilisez pour suivre les reports d’inventaire.
 
@@ -63,13 +63,13 @@ Les dimensions jouent un rôle important dans la veille économique. Une dimensi
 
 Pour en savoir plus sur les rapports financiers, voir [Préparer des rapports financiers avec des données financières et des catégories de compte](bi-how-work-account-schedule.md).
 
-## <a name="finance-reporting-across-business-units-or-legal-entities-related-to-inventory"></a>Rapports financiers entre les unités fonctionnelles ou les entités juridiques (associés à l’inventaire)
+## Rapports financiers entre les unités fonctionnelles ou les entités juridiques (associés à l’inventaire)
 
 Certaines organisations utilisent [!INCLUDE [prod_short](includes/prod_short.md)] dans plusieurs unités fonctionnelles ou entités juridiques. D’autres utilisent [!INCLUDE [prod_short](includes/prod_short.md)] dans les filiales qui rendent compte aux organisations mères. [!INCLUDE [prod_short](includes/prod_short.md)] fournit aux comptables des outils qui les aident à transférer les écritures de deux ou plusieurs compagnies (filiales) dans une compagnie consolidée. Spécifiquement pour la gestion de l’inventaire, vous souhaiterez peut-être consolider les écritures GL pour vos comptes inventaire pour pouvoir suivre les indicateurs de performances clés de vente dans les unités fonctionnelles ou les entités juridiques.
 
 Pour en savoir plus, reportez-vous à [Consolidation de la compagnie](finance-consolidated-company-reporting.md).
 
-## <a name="ad-hoc-analysis-of-inventory-data"></a>Analyse ad hoc des données d’inventaire
+## Analyse ad hoc des données d’inventaire
 
 Parfois, il suffit de vérifier si les chiffres s’additionnent correctement ou de confirmer rapidement un chiffre. Les fonctionnalités suivantes sont idéales pour les analyses ad hoc :
 
@@ -89,7 +89,7 @@ De la même manière, vous pouvez utiliser le **Ouvrir dans Excel** action pour 
 
 Pour en savoir plus sur la manière d’effectuer une analyse ad hoc des données d’inventaire, accédez à [Analyse ad hoc des données d’inventaire](ad-hoc-analysis-inventory.md).
 
-## <a name="built-in-reports-for-inventory"></a>Rapports intégrés pour l’inventaire
+## Rapports intégrés pour l’inventaire
 
 [!INCLUDE [prod_short](includes/prod_short.md)] comprend plusieurs rapports intégrés, fonctions de traçage et outils pour aider les organisations chargées d’inventaires à déclarer leurs données.
 
@@ -104,7 +104,7 @@ Pour obtenir un aperçu des rapports disponibles, choisir sur **Tous les rapport
 
 Pour en savoir plus sur les rapports pertinents pour l’inventaire, accédez à [Rapports d’inventaire et d’entrepôt intégrés](inventory-WMS-reports.md).
 
-## <a name="on-screen-inventory-analytics"></a>Analyse de l’inventaire à l’écran
+## Analyse de l’inventaire à l’écran
 
 [!INCLUDE [prod_short](includes/prod_short.md)] comporte plusieurs pages qui vous donnent des aperçus de l’inventaire et des tâches à accomplir. Voici des exemple pour commencer :
 
@@ -120,7 +120,7 @@ Le module de vente comprend également des pages d’analyse liées à l’inven
 - [Calculer les dates de livraison des documents de vente](sales-date-calculation-for-sales.md)
 - [Suivi des paquets](sales-how-track-packages.md)
 
-### <a name="show-inventory-related-general-ledger-entries-and-balances-from-the-chart-of-accounts-page"></a>Afficher les écritures et les soldes du grand livre liés à l’inventaire à partir de la page Plan comptable
+### Afficher les écritures et les soldes du grand livre liés à l’inventaire à partir de la page Plan comptable
 
 La page **Plan comptable** affiche tous les comptes du grand livre avec des chiffres agrégés reportés dans le grand livre. À partir de cette page, vous pouvez faire des choses comme :  
 
@@ -134,7 +134,7 @@ Spécifiquement pour la gestion de l’inventaire, vous pouvez créer une vue su
 
 Pour en savoir plus, allez à [Familiarisation avec le plan comptable](finance-general-ledger.md#the-chart-of-accounts).
 
-### <a name="analyze-inventory-data-by-dimensions"></a>Analyser des données d’inventaire par dimensions
+### Analyser des données d’inventaire par dimensions
 
 Les dimensions sont des valeurs qui permettent de catégoriser les écritures afin de pouvoir les suivre et les analyser sur les documents, tels que les documents de vente. Les dimensions peuvent, par exemple, indiquer de quel projet ou département provient une écriture.  
 
@@ -142,7 +142,7 @@ Au lieu de configurer des comptes GL distincts pour chaque service ou site, vous
 
 Pour plus d’informations, voir [Analyser des données par dimensions](bi-how-analyze-data-dimension.md).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Consolidation de la compagnie](finance-consolidated-company-reporting.md)   
 [Préparer des rapports financiers avec des données financières et des catégories de compte](bi-how-work-account-schedule.md)  

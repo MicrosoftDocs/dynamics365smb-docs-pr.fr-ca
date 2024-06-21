@@ -9,19 +9,19 @@ ms.date: 07/13/2021
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
-# <a name="fixed-assets-reports-and-analytics-in-business-central"></a>Rapports et analyses d’immobilisation dans Business Central
+# Rapports et analyses d’immobilisation dans Business Central
 
 Pour vous aider à gérer vos immobilisations dans [!INCLUDE [prod_short](includes/prod_short.md)], des rapports et des analyses standard sont intégrés. Ils vont au-delà des contraintes des rapports traditionnels pour vous aider à concevoir efficacement divers types de rapports.  
 
-## <a name="reports"></a>Rapports
+## Rapports
 [!INCLUDE [fa_reports](includes/fa-reports-include.md)]
 
 
-## <a name="explore-finance-reports-with-report-explorer"></a>Explorez les rapports finances avec l’Explorateur de rapports
+## Explorez les rapports finances avec l’Explorateur de rapports
 [!INCLUDE [finance_reports_report_explorer](includes/finance-reports-report-explorer-include.md)]
 
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Analyse ad hoc des données Immobilisations](ad-hoc-analysis-fa.md)     
 [Vue d’ensemble de l’analyse des immobilisations](fa-analytics-overview.md)   

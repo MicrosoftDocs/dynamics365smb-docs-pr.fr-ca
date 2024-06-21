@@ -10,11 +10,11 @@ ms.date: 02/20/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# <a name="design-details-accounts-in-the-general-ledger"></a>Détails de conception : comptes du grand livre
+# Détails de conception : comptes du grand livre
 
 Pour rapprocher l'inventaire et les écritures du grand livre de capacité dans le grand livre, les écritures valeur associées sont reportées dans différents comptes dans le grand livre. Pour plus d'informations, voir [Détails de conception : rapprochement de comptabilité](design-details-reconciliation-with-the-general-ledger.md).  
 
-## <a name="from-the-inventory-ledger"></a>À partir de la comptabilité inventaire
+## À partir de la comptabilité inventaire  
 
 Le tableau suivant montre les relations entre différents types d'écritures de valeur de l'inventaire et les comptes et les comptes de solde dans le grand livre.  
 
@@ -58,7 +58,7 @@ Le tableau suivant montre les relations entre différents types d'écritures de 
 |Résultat d'assemblage|Écart|Frais généraux matière|Non|Stocks|Fabric. Écart frais généraux|  
 |Résultat d'assemblage|Arrondissement||Non|Stocks|Ajustement des stocks|  
 
-## <a name="from-the-capacity-ledger"></a>À partir du grand livre de capacité
+## À partir du grand livre de capacité  
 
  Le tableau suivant montre les relations entre les différents types d'écritures de valeur de capacité et les comptes et les comptes de solde dans le grand livre. Les écritures du grand livre de capacité représentent le temps de travail consommé dans l'assemblage ou la charge de production.  
 
@@ -69,13 +69,13 @@ Le tableau suivant montre les relations entre différents types d'écritures de 
 |Fabrication|Unité de production/Atelier|Coût direct|Compte TEC|Coûts directs affectés|  
 |Fabrication|Unité de production/Atelier|Coût indirect|Compte TEC|Frais généraux affectés|  
 
-## <a name="assembly-costs-are-always-actual"></a>Les coûts d’assemblage sont toujours réels
+## Les coûts d’assemblage sont toujours réels  
 
  Comme indiqué dans le tableau ci-dessus, les validations d'assemblage ne sont pas représentées dans les comptes d'attente. Ceci s'explique par le fait que le concept de travail en cours (TEC) ne s'applique pas au report des résultats d'assemblage, contrairement au report des résultats de production. Les coûts d'assemblage sont uniquement reportés en tant que coûts réels, jamais en tant que coûts prévus.  
 
  Pour plus d'informations, voir [Détails de conception : modes évaluation stock](design-details-assembly-order-posting.md).  
 
-## <a name="calculating-the-amount-to-post-to-the-general-ledger"></a>Calcul du montant à reporter dans le grand livre
+## Calcul du montant à reporter dans le grand livre  
 
  Les champs suivants de la table **Ecritures valeur** permettent de calculer le coût total prévu qui est validé dans les écritures comptables :  
 
@@ -91,7 +91,7 @@ Le tableau suivant montre la manière dont les montants à reporter dans le gran
 |Coût réel|Coût indiqué (réel) - Coût reporté au GL.|  
 |Coût prévu|Coût indiqué (prévu) - Coût prévu reporté au GL|  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .  
 
 [Détails de conception : évaluation du coût de l’inventaire](design-details-inventory-costing.md)  
 [Détails de conception : report de l’inventaire](design-details-inventory-posting.md)  

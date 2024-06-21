@@ -11,7 +11,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="business-functionality"></a>Fonctionnalités d'entreprise
+# Fonctionnalités d'entreprise
 
 [!INCLUDE[prod_short](includes/prod_short.md)] fournit des fonctionnalités pour les processus d'entreprise communs dans les PME, surtout au sein de compagnies de vente en gros et de services professionnels. Toutefois, des processus plus complexes, comme l'assemblage, la fabrication, la maintenance et la gestion d'entrepôt suggérée sont également pris en charge. Découvrez comment obtenir un essai gratuit [ici](trial-signup.md).  
 
@@ -39,7 +39,7 @@ ms.reviewer: bholtorf
 |Activez des utilisateurs pour l’échange de données avec des sources externes lors de tâches quotidiennes, telles que les envoyer/recevoir des documents électroniques, importer/exporter des fichiers bancaires, et mettre à jour des taux de change des devises.|[Échanger des données par voir électronique](across-data-exchange.md)|
 |Enregistrez des documents externes dans [!INCLUDE[prod_short](includes/prod_short.md)], ainsi que leurs pièces jointes, puis créez manuellement des documents connexes ou convertissez automatiquement les fichiers en documents électroniques.|[Documents entrants](across-income-documents.md)|
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Administration](admin-setup-and-administration.md)    
 [Explorer les fonctionnalités de Dynamics 365 Business Central](https://dynamics.microsoft.com/business-central/capabilities/)  

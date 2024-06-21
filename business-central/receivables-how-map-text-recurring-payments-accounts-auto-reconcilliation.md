@@ -11,7 +11,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="map-text-on-recurring-payments-to-accounts-for-automatic-reconciliation"></a>Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique
+# Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique
 
 Sur la page **Correspondance texte et compte** à laquelle vous accédez à partir de la page **Journal rapprochement paiement**, vous pouvez configurer des mappages entre le texte des paiements et des comptes de débit, de crédit et de contrepartie spécifiques afin que ces paiements soient reportés dans les comptes spécifiés lorsque vous reportez le journal rapprochement de paiement.
 
@@ -24,7 +24,7 @@ Les paiements reportés basés sur le mappage de texte à compte ne sont pas aff
 
 Sur une ligne journal rapprochement paiement dont le paiement a été défini sur report en fonction du mappage de texte à compte, le champ **Fiabilité correspondance** contient la valeur **Élevé – Mappage de texte à compte**, et les champs **Type compte** et **N° compte** contiennent les comptes mappés.
 
-## <a name="to-map-text-on-recurring-payments-to-accounts-for-automatic-reconciliation"></a>Pour associer le texte sur les paiements récurrents aux comptes pour un rapprochement automatique
+## Pour associer le texte sur les paiements récurrents aux comptes pour un rapprochement automatique
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux rapprochement bancaire**, puis sélectionnez le lien associé.
 2. Ouvrez un journal rapprochement paiement. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
@@ -44,7 +44,7 @@ Sur une ligne journal rapprochement paiement dont le paiement a été défini su
 
 La prochaine fois que vous importez un fichier de relevé bancaire ou sélectionnez l'action **Affecter automatiquement** sur la page **Journal rapprochement paiement**, les lignes journal pour les paiements qui contiennent le texte de mappage spécifié contiendront les comptes mappés dans les champs **Type compte** et **N° compte**. Le champ **Fiabilité correspondance** contient **Élevée - Correspondance texte et compte**. Ce, à condition que la fonction de lettrage automatique ne puisse fournir qu'une fiabilité de correspondance **Basse** ou **Moyenne**.
 
-## <a name="example-text-to-account-mapping-for-bank-fees"></a>Exemple : Mappage de texte à compte pour les frais bancaires
+## Exemple : Mappage de texte à compte pour les frais bancaires
 
 Pour toujours reporter les dépenses liées aux frais d’une banque spécifique, MyBank, sur le compte GL pour les frais et frais bancaires (compte 60400), remplissez une ligne sur la page **Mappage de texte à compte** comme suit.
 
@@ -52,7 +52,7 @@ Pour toujours reporter les dépenses liées aux frais d’une banque spécifique
 | --- | --- | --- | --- | --- |
 | MyBank |VIDE |60400|Compte général |VIDE |
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Ventes](sales-manage-sales.md)  

@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
 
-# <a name="ad-hoc-analysis-of-inventory-data"></a>Analyse ad hoc des données d’inventaire
+# Analyse ad hoc des données d’inventaire
 
 Cet article explique comment utiliser la fonction **Analyse des données** pour analyser des données d’inventaire directement à partir des pages de liste et des requêtes. Vous n’avez pas besoin d’exécuter un rapport ou de changer d'application, comme Excel. La fonction fournit un moyen interactif et polyvalent de calculer, résumer et examiner les données. Plutôt que d’exécuter des rapports à l’aide d’options et de filtres, vous pouvez ajouter plusieurs onglets qui représentent différentes tâches ou vues sur les données. Quelques exemples sont "stock expiration" ou "meilleures vente", ou toute autre vue que vous pouvez imaginer. Pour en savoir plus sur l’utilisation de la fonctionnalité **Analyse des données** , accédez à [Analyser la liste et interroger les données avec le mode d’analyse](analysis-mode.md).
 
@@ -20,7 +20,7 @@ Utilisez les pages de liste suivantes pour une analyse ad hoc des processus d’
 
 - [Écritures article](https://businesscentral.dynamics.com/?page=38)
 
-## <a name="inventory-ad-hoc-analysis-scenarios"></a>Scénarios d’analyse ad hoc de l’inventaire
+## Scénarios d’analyse ad hoc de l’inventaire
 
 Utilisez la fonctionnalité **Analyse des données** pour une vérification rapide des faits et une analyse ad hoc :
 
@@ -38,7 +38,7 @@ Les sections suivantes fournissent des exemples de scénarios d’inventaire dan
 | Débit d’inventaire | Obtenez un aperçu des achats et des ventes dans votre inventaire par mois ou trimestre. | [Écritures article](https://businesscentral.dynamics.com/?page=38) | **Année de la date de report**, **Mois de la date de report**, **N° d’article**, **Quantité**, **Montant des ventes**, **Montant du coût (réel)** et **Mois de la date de report** |
 | [Mouvements d'inventaire] | Obtenez un aperçu de la façon dont les marchandises de votre inventaire se déplacent entre les emplacements. | [Écritures article](https://businesscentral.dynamics.com/?page=38) | **Code d’emplacement**, **Quantité**, **Date de report**, **N° d’article** |
 
-## <a name="example-inventory-on-hand"></a>Exemple : inventaire disponible
+## Exemple : inventaire disponible
 
 Pour analyser des articles de votre inventaire qui sont en stock, procédez comme suit :
 
@@ -54,7 +54,7 @@ L’image suivante montre le résultat de ces étapes.
 
 :::image type="content" source="media/data-analysis-inventory-on-hand.png" alt-text="Exemple de comment effectuer une analyse des données disponibles d’inventaire." lightbox="media/data-analysis-inventory-on-hand.png":::
 
-## <a name="example-track-expiring-or-old-stock"></a>Exemple : suivre les stocks expirés ou anciens
+## Exemple : suivre les stocks expirés ou anciens
 
 Pour analyse des articles de votre inventaire qui sont en stock depuis longtemps et qui ne se vendent pas bien, procédez comme suit :
 
@@ -69,7 +69,7 @@ L’image suivante montre le résultat de ces étapes.
 
 :::image type="content" source="media/data-analysis-inventory-dead-stock.png" alt-text="Exemple de procédure pour effectuer une analyse des données de stock mort sur la page Écritures article" lightbox="media/data-analysis-inventory-dead-stock.png":::
 
-## <a name="example-returned-items-by-return-reason"></a>Exemple : articles retournés par motif de retour
+## Exemple : articles retournés par motif de retour
 
 Pour analyser les articles retournés triés par motif de retour, procédez comme suit :
 
@@ -83,7 +83,7 @@ Pour analyser les articles retournés triés par motif de retour, procédez comm
 1. Ajoutez tous les autres champs de votre choix dans l’analyse et activez-les dans la zone **Colonnes**. Par exemple, vous pouvez ajouter les champs **Date de report**, **Type de document**, **N° d’article** et **N° du document**.
 1. Renommez votre onglet d’analyse en **Articles retournés par motif de retour** ou quelque chose qui décrit cette analyse.  
 
-## <a name="example-inventory-throughput"></a>Exemple : Débit d’inventaire
+## Exemple : Débit d’inventaire
 
 1. Ouvrez la liste [Écritures article](https://businesscentral.dynamics.com/?page=38) et choisissez :::image type="content" source="media/analysis-mode-icon.png" alt-text="Entrer en mode d’analyse":::. pour activer le mode d’analyse.
 1. Allez au **Colonnes** menu et supprimez toutes les colonnes (cochez la case à côté du **Recherche** champ à droite).
@@ -93,7 +93,7 @@ Pour analyser les articles retournés triés par motif de retour, procédez comm
 1. Faites glisser le champ **Mois de la date de report** vers la zone **Groupes de colonnes**.
 1. Renommez votre onglet d’analyse en **Débit d’inventaire par mois** ou quelque chose qui décrit cette analyse.  
 
-## <a name="inventory-movements"></a>Mouvements d’inventaire
+## Mouvements d’inventaire
 
 Pour suivre les mouvements d'inventaire entre les emplacements, procédez comme suit :
 
@@ -107,7 +107,7 @@ Pour suivre les mouvements d'inventaire entre les emplacements, procédez comme 
    > [!TIP]
    > Si vous ajoutez le champ Date de report, vous pouvez également suivre les mouvements au fil du temps.
 
-## <a name="data-foundation-for-ad-hoc-analysis-on-inventory"></a>Base de données pour l’analyse ad hoc de l’inventaire
+## Base de données pour l’analyse ad hoc de l’inventaire
 
 Lorsque vous reportez un document de vente, [!INCLUDE [prod_short](includes/prod_short.md)] met à jour le compte du client, le grand livre et les écritures article.
 
@@ -117,7 +117,7 @@ Lorsque vous reportez un document achat, [!INCLUDE [prod_short](includes/prod_sh
 
 - Pour chaque ligne achat, le cas échéant, des écritures sont créées dans la table **Écriture article** (si la ligne achat est de type Article). En outre, les documents achat sont toujours enregistrés dans les tables **En-tête réception achat** et **En-tête facture achat**. Pour en savoir plus, voir [Report des achats](purchasing-how-record-purchases.md#posting-purchases).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Analyse des données de liste et de requête avec le mode d’analyse](analysis-mode.md)  
 [Vue d’ensemble de l’analyse de l’inventaire](inventory-analytics-overview.md)  

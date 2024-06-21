@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
 
-# <a name="e-documents-overview"></a>Vue d’ensemble des documents électroniques
+# Vue d’ensemble des documents électroniques
 
 Les documents électroniques (e-documents) constituent l’épine dorsale des transactions commerciales modernes. Ils englobent les documents vitaux, tels que les factures et les reçus dans les deux sens (livraison et réception). Ils ajoutent également des fonctionnalités de messagerie relative à l’état des documents entre les points d’accès.
 
@@ -35,7 +35,7 @@ La documentation explique les documents électroniques en détail. Elle montre l
 | [Échanger des données par voir électronique](across-data-exchange.md) | Découvrez la manière d’utiliser l’infrastructure d’échange de données pour gérer les échanges des données dans des documents commerciaux tels que des fichiers bancaires et des taux de change devise. | 
 | [Mappage de documents électroniques avec des lignes bon de commande avec Copilot (version préliminaire)](map-edocuments-with-copilot.md) | Apprenez à utiliser Copilot pour améliorer votre efficacité lorsque vous travaillez avec des documents électroniques. |
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion financière](finance.md)    
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

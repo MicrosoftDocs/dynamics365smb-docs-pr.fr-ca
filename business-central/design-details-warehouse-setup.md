@@ -10,7 +10,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="design-details-warehouse-setup"></a>Détails de conception : paramètres entrepôt
+# Détails de conception : paramètres entrepôt
 
 La fonctionnalité d'entrepôt dans [!INCLUDE[prod_short](includes/prod_short.md)] contient différents niveaux de complexité, tels que définis par les autorisations de licence dans les granules proposés. Le niveau de complexité dans une solution entrepôt est en grande partie défini par la configuration des zones sur les fiches emplacement, qui est lui-même contrôlé par licence afin que l'accès aux champs de configuration des zones soit défini par la licence. En outre, les objets d'application de la licence déterminent le document d'interface utilisateur à utiliser pour les activités entrepôt prises en charge.  
 <!--
@@ -44,7 +44,7 @@ Le tableau suivant indique les granules requis pour définir les différents niv
 
 Pour des exemples d'utilisation des documents de l'interface utilisateur par niveau de complexité entrepôt, voir [Détails de conception : flux d'enlogement](design-details-inbound-warehouse-flow.md).  
 
-## <a name="bin-and-bin-content"></a>Zone et contenu de la zone
+## Zone et contenu de la zone
 
 Une zone est un dispositif de stockage conçu pour contenir des éléments distincts. Il s'agit de la plus petite unité de conteneur dans [!INCLUDE[prod_short](includes/prod_short.md)]. Les quantités d'articles dans des zones sont appelées contenu de la zone. Une recherche à partir du champ **Article** ou du champ **Code de zone** dans n'importe quelle ligne de document entrepôt affiche la disponibilité calculée de l'article dans la zone.  
 
@@ -61,7 +61,7 @@ La propriété de la zone par défaut est utilisée par le système pour propose
 
 Il ne peut y avoir qu'une zone par défaut par article par emplacement.  
 
-## <a name="bin-type"></a>Type zone
+## Type zone
 
 Dans des installations WMS, vous pouvez définir les activités entrepôt qui sont autorisées pour une zone en lui affectant un type de zone. Les types de zone suivants existent :  
 
@@ -79,7 +79,7 @@ Pour tous les types de zone, à l'exception de PRÉLÈV, RANGPRÉLÈV et RANGEME
 > [!NOTE]  
 > Un mouvement ne peut être effectué que vers des zones de type RÉCEPTIONNER et CQ. De même, seuls des mouvements peuvent être effectués à partir des zones de type LIVR. et CQ.  
 
-## <a name="bin-ranking"></a>Priorité zone
+## Priorité zone
 
 Dans l'entreposage avancé, vous pouvez automatiser et optimiser la façon de collecter les articles dans des feuilles de rangement et de prélèvement en classant les zones par ordre de priorité, de sorte que le programme propose de prendre ou de placer ces articles en fonction des critères de priorité pour optimiser l'utilisation de l'espace de l'entrepôt.  
 
@@ -87,7 +87,7 @@ Les procédés de rangement sont optimisés en fonction du classement de zone en
 
 Le classement de zone ainsi que les informations relatives au contenu de la zone sont les propriétés de base permettant aux utilisateurs d'insérer des articles dans l'entrepôt.  
 
-## <a name="bin-setup"></a>Configuration zone
+## Configuration zone  
 Dans l'entreposage avancé, des zones peuvent être configurées à l'aide des valeurs de capacité, telles que la quantité, le volume total, ainsi que le poids pour contrôler quels articles sont enregistrés dans la zone et comment.  
 
 Sur chaque fiche article, vous pouvez affecter une unité de mesure pour l'article, par exemple des pièces, palettes, litres, grammes ou boîtes. Vous pouvez également avoir une base UOM pour un article et spécifier de plus grands UOM basés dessus. Par exemple, vous pouvez définir une palette égale à 16 pièces, ce qui est l'unité de base.  
@@ -99,7 +99,7 @@ Avant de paramétrer des restrictions de capacité pour le contenu de la zone da
 > [!NOTE]  
 > Il est possible d'utiliser plusieurs unités dans les installations WMS. Dans toutes les autres configurations, les contenus de la zone ne peuvent être que dans l'unité de mesure de base. Dans toutes les transactions avec une unité supérieure à l’unité de base de l’article, la quantité est transformée en unité de base.  
 
-## <a name="zone"></a>Zone
+## Zone
 
 Dans l'entreposage avancé, des zones peuvent être groupées en zones pour gérer la manière dont le flux de travail des activités entrepôt est suggéré.  
 
@@ -107,18 +107,18 @@ Une zone peut être une zone de réception ou une zone de stockage, et chaque zo
 
 La plupart des propriétés affectées à une zone sont par défaut affectées à la zone qui est créée à partir de cette zone.  
 
-## <a name="class"></a>Catégorie
+## Catégorie  
 Dans l'entreposage avancé, vous pouvez affecter des codes classe entrepôt aux articles et aux zones pour contrôler l'endroit où les différentes classes d'article sont stockées, telles que les produits gelés. Vous pouvez diviser une zone en plusieurs classes d'entrepôt. Par exemple, des articles figurant dans la zone de réception peuvent être enregistrés comme gelés, dangereux ou autre classe.  
 
 Lorsque vous travaillez sur des classes d'entrepôt et une zone de réception/livraison par défaut, vous devez renseigner manuellement les zones appropriées dans la réception entrepôt et les lignes livraison.  
 
 Dans les flux entrants, le code classe est uniquement sélectionné sur les lignes entrantes lorsque le code classe article ne correspond pas à la zone de réception par défaut. Si les zones par défaut ne sont pas correctement affectées, la quantité ne peut pas être reçue.  
 
-## <a name="location"></a>Magasin
+## Magasin
 
 Un emplacement est une structure ou un lieu physique de réception de l'inventaire, conservé et livré. Il est éventuellement organisé sous forme de zones. Un emplacement peut être un entrepôt, une voiture de service, une salle d'exposition, une usine ou une zone dans une usine.  
 
-## <a name="first-expired-first-out"></a>FEFO (First-Expired-First-Out, premier expiré, premier sorti)
+## FEFO (First-Expired-First-Out, premier expiré, premier sorti)
 
 Si vous activez la case à cocher **Prélèvement selon FEFO** sur le raccourci **Politiques de zones** de la fiche emplacement, les articles suivis sont prélevés en fonction de leur date d'expiration. Les articles dont les dates de péremption sont les plus proches sont prélevés en premier.  
 
@@ -126,11 +126,11 @@ Les activités d'entrepôt dans tous les document de prélèvement et de mouveme
 
 Lors du prélèvement selon FEFO, les articles disponibles qui expirent en premier sont rassemblés dans une liste temporaire de traçabilité en fonction de la date d'expiration. Si deux articles ont la même date d'expiration, l'article ayant le plus petit numéro de série ou de lot est prélevé en premier. Si les numéros de lot ou de série sont identiques, l'article enregistré en premier est sélectionné en premier. Les critères standard de sélection des articles dans les zones prélèvement, par exemple Classement de zone et Déconditionnement, sont affectés à cette liste de traçabilité FEFO temporaire.  
 
-## <a name="put-away-template"></a>Modèle rangement
+## Modèle rangement
 
 Le modèle rangement peut être affecté à un article et à un emplacement. Le modèle rangement spécifie un ensemble de règles classées par priorité qui doivent être respectées lors de la création de rangements. Par exemple, un modèle de rangement peut exiger que l'article soit situé dans une zone dont le contenu correspond à l'unité de mesure, et si une zone similaire comportant suffisamment de capacité est introuvable, alors l'article doit être placé dans une zone vide.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Vue d’ensemble de la gestion des entrepôts](design-details-warehouse-management.md)
 [Détails de conception : disponibilité dans l’entrepôt](design-details-availability-in-the-warehouse.md)

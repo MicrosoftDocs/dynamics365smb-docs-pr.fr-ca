@@ -11,7 +11,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="set-up-rules-for-automatic-application-of-payments"></a>Configurer des règles pour l'affectation automatique des paiements
+# Configurer des règles pour l'affectation automatique des paiements
 
 Sur la page **Règles d'affectation de paiement**, vous configurez des règles pour définir comment le texte de paiement (sur une transaction bancaire) doit être automatiquement mis en correspondance avec le texte sur les factures, notes de crédit ou autres écritures ouvertes (impayées) associées lorsque vous utilisez la fonction **Affecter automatiquement** sur la page **Journal rapprochement paiement**. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
 
@@ -29,7 +29,7 @@ Outre les critères de correspondance, les remarques suivantes s'appliquent conc
 - Pour les montants négatifs, une correspondance est d'abord établie par rapport aux écritures ouvertes représentant les factures client, et ensuite par rapport aux notes de crédit fournisseur.
 - Pour les montants positifs, une correspondance est d'abord établie par rapport aux écritures ouvertes représentant les factures fournisseur, et ensuite par rapport aux notes de crédit client.
 
-## <a name="to-set-up-a-payment-application-rule"></a>Pour configurer une règle d'affectation de paiement
+## Pour configurer une règle d'affectation de paiement
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Règles d’affectation des paiements**, puis choisissez le lien associé.
 2. Définissez une règle d'affectation de paiement, nouvelle ou modifiée, en renseignant les champs sur une ligne tel que décrit dans le tableau suivant.
 
@@ -74,7 +74,7 @@ Le tableau suivant décrit les règles d’affectation de paiement standard dans
 | Mauvaises              | 4        | N°                    | N°                             | Une correspondance                      |
 | Mauvaises              | 5        | N°                    | N°                             | Correspondances multiples               |
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 [Rapprocher les paiements à l'aide de l'application automatique](receivables-how-reconcile-payments-auto-application.md)  
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Vente](sales-manage-sales.md)  

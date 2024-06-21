@@ -7,7 +7,7 @@ ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
 
-## <a name="best-practices-for-working-with-column-definitions"></a>Meilleures pratiques pour utiliser les définitions de colonnes
+## Meilleures pratiques pour utiliser les définitions de colonnes
 
 Les définitions de colonnes ne sont pas versionnées. Lorsque vous modifiez une définition de colonnes, l’ancienne version est remplacée lorsque votre modification est enregistrée dans la base de données. La liste suivante contient quelques bonnes pratiques pour utiliser les définitions de colonnes.
 
