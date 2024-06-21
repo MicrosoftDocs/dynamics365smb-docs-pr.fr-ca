@@ -11,11 +11,11 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# Configurer les modalités de frais financiers
+# <a name="set-up-finance-charge-terms"></a>Configurer les modalités de frais financiers
 
 Lorsqu'un client n'effectue pas son paiement à la date d'échéance, des frais financiers peuvent être calculés automatiquement et ajoutés aux montants échus sur le compte du client. Vous pouvez informer le client des frais ajoutés en lui envoyant une facture d'intérêts. Mais tout d’abord, vous devez configurer un code qui représente chaque calcul de frais financiers. Vous pouvez ensuite entrer ce code dans le champ Code condition intérêts des fiches client.  
 
-## Modalités de frais financiers
+## <a name="finance-charge-terms"></a>Modalités de frais financiers
 
 Vous devez configurer des modalités de frais financiers pour chaque calcul de frais financiers, puis affecter les modalités au client dans le champ **Code modalités de frais financiers** sur la page **Client**.
 
@@ -33,7 +33,7 @@ Les intérêts de retard peuvent être calculés en utilisant les méthodes du s
 
 En outre, chaque modalité de la table Modalités de frais financiers est lié à une autre sous-table, la table Texte frais financiers. Pour chaque ensemble de modalités de frais financiers vous pouvez définir un texte début et/ou un texte fin à inclure dans la note de frais financiers.
 
-### Pour configurer des modalités de frais financiers
+### <a name="to-set-up-finance-charge-terms"></a>Pour configurer des modalités de frais financiers
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modalités de frais financiers**, puis sélectionnez le lien associé.  
 2. Renseignez les champs selon vos besoins.
@@ -62,7 +62,7 @@ En outre, chaque modalité de la table Modalités de frais financiers est lié �
 |%8|Contenu du champ **Code devise** de l'en-tête de note de frais financiers|  
 |%9|Contenu du champ **Date de report** de l'en-tête de note de frais financiers|  
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
 [Configurer les niveaux et modalités de rappel](finance-setup-reminders.md)  

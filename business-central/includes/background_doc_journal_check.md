@@ -6,7 +6,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-## Vérifier des données dans des documents et des journaux pendant votre travail
+## <a name="check-data-in-documents-and-journals-while-you-work"></a>Vérifier des données dans des documents et des journaux pendant votre travail
 
 Votre administrateur peut permettre [!INCLUDE [prod_short](prod_short.md)] de valider les données que vous saisissez dans les documents et journaux en temps réel.
 

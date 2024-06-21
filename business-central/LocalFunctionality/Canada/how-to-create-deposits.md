@@ -11,11 +11,11 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# Créer des dépôts dans la version canadienne
+# <a name="create-deposits-in-the-canadian-version"></a>Créer des dépôts dans la version canadienne
 
 [!INCLUDE [create-deposits](../includes/CAMXUS/create-deposits.md)]
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Fonctionnalités locales Canada](canada-local-functionality.md)  
 [Finances](../../finance.md)  

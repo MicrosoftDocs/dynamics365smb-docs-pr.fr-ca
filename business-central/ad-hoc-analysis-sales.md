@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
 
-# Analyse ad hoc des données de ventes
+# <a name="ad-hoc-analysis-of-sales-data"></a>Analyse ad hoc des données de ventes
 
 Cet article vous apprenez à utiliser fonction **analyse les données** pour analyser des pages de vente directement de liste de pages et requêtes. Vous n’avez pas besoin d’exécuter un rapport ou de changer d'application, comme Excel. La fonction fournit un moyen interactif et polyvalent de calculer, résumer et examiner les données. Plutôt que d’exécuter des rapports à l’aide d’options et de filtres, vous pouvez ajouter plusieurs onglets qui représentent différentes tâches ou vues sur les données. Quelques exemples sont "Mes clients" ou "Statistiques vente", ou toute autre vue que vous pouvez imaginer. Pour en savoir plus sur l’utilisation de la fonctionnalité **Analyse des données** , accédez à [Analyser la liste et interroger les données avec le mode d’analyse](analysis-mode.md).
 
@@ -25,7 +25,7 @@ Utilisez les pages de liste suivantes pour une analyse ad hoc des processus de v
 - Factures vente enregistrées
 - Retours vente
 
-## Scénarios d’analyse ad hoc des ventes
+## <a name="sales-ad-hoc-analysis-scenarios"></a>Scénarios d’analyse ad hoc des ventes
 
 Utilisez la fonctionnalité **Analyse des données** pour une vérification rapide des faits et une analyse ad hoc :
 
@@ -41,7 +41,7 @@ Les sections suivantes fournissent des exemples de scénarios de vente dans [!IN
 | [Ventes (ventes clients en volume)](#example-sales-customer-sales-by-volume) | Bref aperçu des clients qui achètent le plus et de ceux qui doivent le plus d'argent | [Écritures comptables client](https://businesscentral.dynamics.com/?page=25) | **Nom du client**, **N° de document**, **Montant**, et **Montant restant**. |
 | [Finance (Comptabilités client)](#example-finance-accounts-receivables) | Voyez par exemple ce que vos clients vous doivent, décomposé en intervalles de temps pendant lesquels les montants sont dus. | [Écritures comptables client](https://businesscentral.dynamics.com/?page=25) | **Nom du client**, **Date d’échéance** et **Montant restant**. |
 
-## Exemples : Ventes (volume de ventes prévu)
+## <a name="example-sales-expected-sales-volume"></a>Exemples : Ventes (volume de ventes prévu)
 
 Pour analyser votre volume de ventes prévu et les montants des ventes pour les commandes non expédiées pour chaque client par année ou par mois, procédez comme suit :
 
@@ -54,7 +54,7 @@ Pour analyser votre volume de ventes prévu et les montants des ventes pour les 
 1. Pour effectuer l’analyse pour une année ou un trimestre donné, appliquez un filtre dans le menu **Filtres supplémentaires**. Le menu se trouve à droite de la page, juste en dessous du **Colonnes** menu.
 1. Renommez votre onglet d’analyse en **Volume vente prévu** ou quelque chose qui décrit cette analyse pour vous.
 
-## Exemple : Ventes (ventes clients en volume)
+## <a name="example-sales-customer-sales-by-volume"></a>Exemple : Ventes (ventes clients en volume)
 
 Bref aperçu des clients qui achètent le plus et de ceux qui doivent le plus d'argent, comme suit :
 
@@ -69,7 +69,7 @@ L’image suivante montre le résultat de ces étapes.
 
 :::image type="content" source="media/data-analysis-customer-ledger-entries.png" alt-text="Exemple de procédure pour effectuer une analyse des données Écritures client" lightbox="media/data-analysis-customer-ledger-entries.png":::
 
-## Exemple : Finance (Comptabilités client)
+## <a name="example-finance-accounts-receivables"></a>Exemple : Finance (Comptabilités client)
 
 Pour voir ce que vos clients vous doivent, décomposé en intervalles de temps pendant lesquels les montants sont dus, comme suit :
 
@@ -81,7 +81,7 @@ Pour voir ce que vos clients vous doivent, décomposé en intervalles de temps p
 1. Pour effectuer l’analyse pour une année ou un trimestre donné, appliquez un filtre dans le menu **Filtres supplémentaires**. Le menu se trouve à droite de la page, juste en dessous du **Colonnes** menu.
 1. Renommez votre onglet d’analyse en **Comptes classés chronologiquement par mois** ou quelque chose qui décrit cette analyse pour vous.
 
-## Base de données pour une analyse ad hoc des ventes
+## <a name="data-foundation-for-ad-hoc-analysis-on-sales"></a>Base de données pour une analyse ad hoc des ventes
 
 Après entré les informations sur un document de vente et ajouté toutes lignes document de vente, vous pouvez reporter la commande. Le report crée une livraison et une facture. [!INCLUDE [prod_short](includes/prod_short.md)] met à jour le compte du client, le grand livrer et les écritures article :
 
@@ -90,7 +90,7 @@ Après entré les informations sur un document de vente et ajouté toutes lignes
 
 Pour en savoir plus sur le report des ventes, voir [Report des ventes](ui-post-sales.md).
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Report des ventes](ui-post-sales.md)  
 [Analyse des données de liste et de requête avec le mode d’analyse](analysis-mode.md)  

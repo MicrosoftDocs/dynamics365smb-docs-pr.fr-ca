@@ -11,13 +11,13 @@ ms.search.keywords: 'bi, power BI, analysis, KPI, account schedule, financial re
 ms.search.form: 'Report_25, 103, 104, 108, 195, 196, 197, 198, 488, 489, 490, 764, 765, 766'
 ms.service: dynamics-365-business-central
 ---
-# Préparer des rapports financiers avec des données financières et des catégories de compte
+# <a name="prepare-financial-reporting-with-financial-data-and-account-categories"></a>Préparer des rapports financiers avec des données financières et des catégories de compte
 
 La fonctionnalité **Rapports financiers** vous donne un aperçu des données financières enregistrées dans votre plan comptable (COA). Vous pouvez configurer les rapports financiers pour analyser les chiffres dans les comptes du grand livre (GL) et comparer les écritures GL et les écritures budget. Les résultats s’affichent dans les graphiques et les rapports de votre tableau de bord, comme le graphique Trésorerie et les rapports État des résultats et Bilan. Vous accédez à ces deux rapports, par exemple, avec l’action **États financiers** dans les pages d’accueil Gestionnaire d’activité et Comptable.  
 
 [!INCLUDE[prod_short](includes/prod_short.md)] fournit des exemples de rapports financiers que vous pouvez utiliser immédiatement comme modèles. Vous pouvez également configurer vos propres rapports pour spécifier les chiffres à comparer. Par exemple, vous pouvez créer des rapports financiers pour calculer les profits bénéficiaires dans des dimensions tels que les départements ou les groupes client. Le nombre de rapports financiers que vous pouvez créer est illimité et ne nécessite aucune intervention d’un développeur.  
 
-## Conditions préalables aux rapports financiers
+## <a name="prerequisites-for-financial-reporting"></a>Conditions préalables aux rapports financiers
 
 La configuration des rapports financiers exige une compréhension de la structure du plan comptable. Il y a trois concepts clés auxquels vous devrez probablement prêter attention avant de concevoir vos rapports financiers :
 
@@ -31,7 +31,7 @@ La configuration de dimensions vous permet de découper vos données financière
 
 Si vous voulez afficher les écritures du grand livre en tant que pourcentages des écritures budget, vous devez créer des budgets GL. Pour en savoir plus, voir [Créer des budgets GL](finance-how-create-budgets.md).
 
-## Rapports financiers
+## <a name="financial-reports"></a>Rapports financiers
 
 Les rapports financiers organisent les comptes à partir de votre plan comptable de manière à faciliter la présentation des données. Vous pouvez configurer différentes présentations pour définir les informations que vous souhaitez extraire du plan comptable. Les rapports financiers fournissent aussi un emplacement pour les calculs qui ne peuvent pas être effectués directement dans le plan comptable. Par exemple, vous pouvez créer des sous-totaux pour des groupes de comptes, puis inclure ce total dans d'autres totaux. Un autre exemple consiste à calculer les profits bénéficiaires dans des dimensions tels que les départements ou les groupes client. De plus, vous pouvez filtrer les écritures et les écritures budget, par exemple, par solde période ou par montant débit.
 
@@ -63,13 +63,13 @@ Vous pouvez également utiliser des formules pour comparer deux ou plusieurs rap
 - Créez autant de rapports financiers que nécessaire, en attribuant à chacun un nom unique ;
 - Configurez différentes présentations de rapports et imprimez les rapports avec les chiffre actuels.
 
-## Parcours d’apprentissage : Créer des rapports financiers dans Microsoft Dynamics 365 Business Central
+## <a name="learning-path-create-financial-reports-in-microsoft-dynamics-365-business-central"></a>Parcours d’apprentissage : Créer des rapports financiers dans Microsoft Dynamics 365 Business Central
 
 Vous souhaitez apprendre à créer des budgets, puis à utiliser des rapports financiers, des dimensions et des définitions de lignes et de colonnes pour générer les rapports financiers généralement nécessaires ?
 
 Commencez par le parcours d’apprentissage [Créer des rapports financiers dans Microsoft Dynamics 365 Business Central](/training/paths/create-financial-reports-dynamics-365-business-central) suivant.
 
-## Créer un rapport financier
+## <a name="create-a-new-financial-report"></a>Créer un rapport financier
 
 Vous utilisez les rapports financiers pour analyser les comptes du grand livre ou pour comparer les écritures GL et les écritures budget. Par exemple, vous pouvez afficher les écritures en tant que pourcentages des écritures budget.
 
@@ -91,25 +91,25 @@ Les rapports financiers dans la version standard de [!INCLUDE[prod_short](includ
 > [!NOTE]
 > Lorsque vous ouvrez un rapport financier en mode Afficher ou Modifier, le volet Filtre est disponible. N’utilisez pas le Volet Filtre pour définir des filtres pour les données de votre rapport. Ces filtres peuvent provoquer des erreurs ou ne pas réellement filtrer les données. Utilisez plutôt les champs des **Options** et **Dimensions** FastTabs pour configurer des filtres pour le rapport.
 
-### Créer ou modifier une définition de ligne
+### <a name="create-or-edit-a-row-definition"></a>Créer ou modifier une définition de ligne
 
 Les définitions de ligne dans les rapports financiers fournissent un emplacement pour les calculs qui ne peuvent pas être effectués directement dans le plan comptable. Par exemple, vous pouvez créer des sous-totaux pour des groupes de comptes, puis inclure ce total dans d'autres totaux. Vous pouvez également calculer des étapes intermédiaires qui ne sont pas affichées dans le rapport final.
 
 Pour plus d’informations, voir [Définitions de ligne dans les rapports financiers](bi-row-definitions.md).
 
-### Créer ou modifier une définition de colonne
+### <a name="create-or-edit-a-column-definition"></a>Créer ou modifier une définition de colonne
 
 Utilisez les définitions de colonne pour spécifier les colonnes à inclure dans le rapport. Par exemple, vous pouvez créer une disposition de rapport de manière à comparer le solde période et le solde pour une même période de l'exercice actuel et du précédent. Vous pouvez avoir jusqu’à 15 colonnes dans une définition de colonne. Par exemple, plusieurs colonnes sont utiles pour afficher les budgets sur 12 mois avec une colonne indiquant le total.
 
 Pour plus d’informations, voir [Définitions de colonne dans les rapports financiers](bi-column-definitions.md).
 
-## Utilisation de dimensions dans les rapports financiers
+## <a name="using-dimensions-in-financial-reports"></a>Utilisation de dimensions dans les rapports financiers
 
 En analyse financière, une dimension correspond à des données que vous ajoutez à une écriture comme une sorte de marqueur. Ces données permettent de regrouper des écritures dotées de caractéristiques similaires, telles que les clients, les régions, les produits et les représentants, et de récupérer facilement ces groupes à des fins d'analyse. Vous pouvez utiliser les dimensions sur des écritures de journaux, de documents et de budgets.
 
 Chaque dimension décrit l’objet de l’analyse. Une analyse à deux axes, par exemple, est une analyse des ventes par zone. En utilisant plus de deux dimensions lors de la création d’une entrée, vous pouvez effectuer une analyse plus complexe. Un exemple d’analyse complexe consiste à explorer les ventes par promotion de vente, par groupe de clients et par zone. Cela vous permet d’obtenir un meilleur aperçu de votre activité commerciale, comme la mesure du bon fonctionnement de votre société, les domaines dans lesquels elle prospère ou non, et ceux dans lesquels il est nécessaire d’affecter davantage de ressources. Ces informations vous aident à prendre des décisions commerciales plus éclairées. Pour en savoir plus, voir [Utiliser les dimensions](finance-dimensions.md).
 
-## Configurer des rapports financiers avec des aperçus
+## <a name="set-up-financial-reports-with-overviews"></a>Configurer des rapports financiers avec des aperçus
 
 Vous pouvez utiliser un rapport financier pour créer un relevé comparant les chiffres du grand livre avec les chiffres budgétés.
 
@@ -127,11 +127,11 @@ Vous pouvez utiliser un rapport financier pour créer un relevé comparant les c
 
 Vous pouvez maintenant copier et coller votre budget dans un classeur.  
 
-## Intégrer les rapports financiers avec Excel
+## <a name="integrate-financial-reports-with-excel"></a>Intégrer les rapports financiers avec Excel
 
 Vous pouvez intégrer un rapport financier avec un modèle de classeur Excel, ajuster la mise en page en fonction de vos besoins, puis mettre à jour le modèle Excel avec les données de [!INCLUDE[prod_short](includes/prod_short.md)]. Par exemple, cette intégration facilite la génération de vos états financiers mensuels et annuels dans un format qui vous convient.
 
-### Configurer l’intégration Excel pour un rapport financier (créer un modèle Excel)
+### <a name="set-up-excel-integration-for-a-financial-report-create-an-excel-template"></a>Configurer l’intégration Excel pour un rapport financier (créer un modèle Excel)
 
 Pour configurer l’intégration Excel pour un rapport financier, suivez ces étapes pour créer un modèle Excel pour un rapport.
 
@@ -147,7 +147,7 @@ Pour configurer l’intégration Excel pour un rapport financier, suivez ces ét
 1. Enregistrez le classeur dans OneDrive ou dans un endroit similaire où le fichier est sauvegardé et versionné.
 1. Fermez le classeur.
 
-### Exécuter un rapport financier avec un modèle Excel
+### <a name="run-a-financial-report-with-an-excel-template"></a>Exécuter un rapport financier avec un modèle Excel
 
 Pour exécuter un rapport financier avec un modèle Excel, procédez comme suit :
 
@@ -158,7 +158,7 @@ Pour exécuter un rapport financier avec un modèle Excel, procédez comme suit�
 1. Sur la page **Recherche de nom/valeur** , choisissez la feuille de calcul Données.
 1. [!INCLUDE[prod_short](includes/prod_short.md)] exécute le rapport financier et fusionne les données résultantes avec votre modèle Excel.
 
-## Imprimer et enregistrer des rapports financiers
+## <a name="print-and-save-financial-reports"></a>Imprimer et enregistrer des rapports financiers
 
 Vous pouvez imprimer des rapports financiers à l’aide des services d’impression de votre appareil. [!INCLUDE[prod_short](includes/prod_short.md)] offre également des options pour enregistrer les rapports sous forme de classeurs Excel, de documents Word, de fichiers PDF et XML.
 
@@ -169,7 +169,7 @@ Vous pouvez imprimer des rapports financiers à l’aide des services d’impres
     1. L’option **(Géré par le navigateur)** indique qu’il n’y a pas d’imprimante désignée pour le rapport. Dans ce cas, le navigateur gérera l’impression et affiche une expérience standard, où vous pourrez choisir une imprimante locale connectée à votre appareil. **(Géré par le navigateur)** n’est pas disponible dans l’application mobile [!INCLUDE[prod_short](includes/prod_short.md)] ou application pour Teams.
 1. Choisissez l’action **Imprimer**.
 
-### Programmer un rapport financier ou l’enregistrer au format PDF, Word ou Excel
+### <a name="schedule-a-financial-report-or-save-as-a-pdf-word-or-excel-document"></a>Programmer un rapport financier ou l’enregistrer au format PDF, Word ou Excel
 
 Vous pouvez enregistrer un rapport financier dans des formats de fichier tels que PDF, XML, Word ou Excel. [!INCLUDE[prod_short](includes/prod_short.md)] peut aussi générer des rapports financiers récurrents.
 
@@ -180,7 +180,7 @@ Vous pouvez enregistrer un rapport financier dans des formats de fichier tels qu
 1. Pour générer un rapport financier programmé ou récurrent, remplissez les champs. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)].<br><br>Pour les rapports financiers récurrents, définissez les champs **Date/heure de début au plus tôt** et **Date/heure d’expiration** avec la première et la dernière date, respectivement, pour générer le rapport financier. Sélectionnez également les jours où le rapport est généré en définissant le champ **Formule de la date de la prochaine exécution** en suivant le format expliqué dans la section [Utiliser des formules de date](ui-enter-date-ranges.md#use-date-formulas).
 
 
-## Meilleures pratiques pour utiliser les définitions de rapports financiers
+## <a name="best-practices-for-working-with-financial-report-definitions"></a>Meilleures pratiques pour utiliser les définitions de rapports financiers
 
 Les définitions des rapports financiers ne sont pas versionnées. Lorsque vous modifiez une définition de rapport, l’ancienne version est remplacée lorsque votre modification est enregistrée dans la base de données. La liste suivante contient quelques bonnes pratiques pour utiliser les définitions de rapports financiers :
 
@@ -188,7 +188,7 @@ Les définitions des rapports financiers ne sont pas versionnées. Lorsque vous 
 - Avant de modifier une définition de rapport, envisagez d’en faire une copie comme sauvegarde, au cas où votre modification ne fonctionnerait pas comme prévu. Vous pouvez soit simplement copier la définition (lui donner un bon nom), soit l’exporter. Pour en savoir plus, voir [importer ou exporter des définitions de rapports financiers](#import-or-export-financial-report-definitions).
 - Si vous avez besoin d’une nouvelle copie d’une définition fournie par [!INCLUDE[prod_short](includes/prod_short.md)], un moyen simple d’en obtenir une consiste à créer une nouvelle compagnie contenant uniquement des données de configuration. Ensuite, exportez la définition et importez-la dans la compagnie où la définition doit être actualisée.
 
-## Importer ou exporter des définition de rapports financiers
+## <a name="import-or-export-financial-report-definitions"></a>Importer ou exporter des définition de rapports financiers
 
 Vous pouvez importer et exporter des définition de rapport financiers comme des packages de configuration RapidStart. Par exemple, les packages de configuration s’avèrent utiles pour le partage d’informations avec d’autres compagnies. Le package est créé dans un fichier .rapidstart, qui compresse le contenu.
 
@@ -205,7 +205,7 @@ Pour en savoir plus sur l’importation ou l’exportation de définitions de li
 - [Importer ou exporter des définitions de ligne dans des rapports financiers](bi-row-definitions.md#import-or-export-financial-reporting-row-definitions), or
 - [Importer ou exporter des définition de colonne dans des rapports financiers](bi-column-definitions.md#import-or-export-financial-report-column-definitions)
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Définitions de ligne dans les rapports financiers](bi-row-definitions.md)  
 [Définitions de colonne dans les rapports financiers](bi-column-definitions.md)  

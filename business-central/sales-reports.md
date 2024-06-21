@@ -10,15 +10,15 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# Rapports et analyses de vente dans Business Central
+# <a name="sales-reports-and-analytics-in-business-central"></a>Rapports et analyses de vente dans Business Central
 
 Les rapports de vente permettent aux professionnels des ventes et des affaires d’obtenir des informations et des statistiques sur les activités de vente actuelles et passées.  
 
-## Rapports
+## <a name="reports"></a>Rapports
 
 [!INCLUDE [sales_reports](includes/sales-reports-include.md)]
 
-## Tâches
+## <a name="tasks"></a>Tâches
 
 Les articles suivants décrivent certaines des tâches clés pour analyser l’état de vos ventes :
 
@@ -28,7 +28,7 @@ Les articles suivants décrivent certaines des tâches clés pour analyser l’�
 * [Traçabilité des colis](sales-how-track-packages.md)
 * [Afficher des lignes commande permanente ventes non reportées et reportées](sales-how-to-create-blanket-sales-orders.md#to-view-unposted-and-posted-blanket-sales-order-lines)
 
-## Explorez les rapports vente avec l’Explorateur de rapports
+## <a name="explore-sales-reports-with-report-explorer"></a>Explorez les rapports vente avec l’Explorateur de rapports
 
 Pour obtenir un aperçu des rapports disponibles pour ventes, choisir sur volet **Tous les rapports** votre page d’accueil. Cette Action ouvre l’explorateur de rôles, qui est filtré selon les fonctionnalités du **Rapport et analyse** option. Sous l’en-tête **Ventes et marketing** , choisissez **Explorer**.
 
@@ -36,7 +36,7 @@ Pour obtenir un aperçu des rapports disponibles pour ventes, choisir sur volet 
 
 Pour en savoir plus, voir [Recherche de rapports avec l’explorateur de rôles](ui-role-explorer.md).
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Analyse ad hoc des données de ventes](ad-hoc-analysis-sales.md)    
 [Vue d’ensemble de l’analyse vente](sales-analytics-overview.md)   

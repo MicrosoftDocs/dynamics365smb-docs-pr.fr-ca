@@ -10,7 +10,7 @@ ms.date: 04/30/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# Analyse de données ad hoc
+# <a name="ad-hoc-data-analysis"></a>Analyse de données ad hoc
 
 Parfois, vous devez analyser des données dans [!INCLUDE[prod_short](includes/prod_short.md)] d’une manière qui n’est pas disponible dans un rapports standard. Ces analyses est parfois appelée « ad hoc ». Le tableau suivant fournit des liens vers des articles qui peuvent vous aider à apprendre à utiliser les analyses ad hoc.
 
@@ -21,14 +21,14 @@ Parfois, vous devez analyser des données dans [!INCLUDE[prod_short](includes/pr
 | Afficher et analyser les données d’un jeu de données de rapport dans Excel | [Analyse des données de rapport avec Excel et XML](report-analyze-excel.md) |
 | Analyser les données de la liste directement depuis une page |[Analyser les données dans la liste à l’aide du mode d’analyse des données](analysis-mode.md)|
 
-## Analyse de données ad hoc par domaine fonctionnel
+## <a name="ad-hoc-data-analysis-by-functional-area"></a>Analyse de données ad hoc par domaine fonctionnel
 
 Le contenu général sur les analyses de données ad hoc est également disponible dans des versions spéciales pour de nombreux domaines fonctionnels [!INCLUDE[prod_short](includes/prod_short.md)]. 
 
 [!INCLUDE[ad-hoc-analysis-scenarios-table](includes/ad-hoc-analysis-scenarios-table.md)]
 
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Vue d’ensemble de Business Intelligence et de la génération de rapports](ui-work-report.md)
 

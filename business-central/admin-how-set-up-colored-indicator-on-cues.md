@@ -10,7 +10,7 @@ ms.author: jswymer
 ms.service: dynamics-365-business-central
 ms.reviewer: jswymer
 ---
-# Configurer un indicateur coloré sur les piles pour la compagnie ou les utilisateurs individuels
+# <a name="set-up-a-colored-indicator-on-cues-for-the-company-or-individual-users"></a>Configurer un indicateur coloré sur les piles pour la compagnie ou les utilisateurs individuels
 
 En tant qu'administrateur, vous pouvez définir des piles apparaissant sur les Tableaux de bord des utilisateurs comprenant un indicateur qui modifie la couleur en fonction des valeurs de données dans les piles.  
 
@@ -20,7 +20,7 @@ Sur la page **Configuration pile**, vous configurez des indicateurs pour toutes 
 
 Pour configurer l'indicateur, vous pouvez spécifier jusqu'à deux valeurs de seuil qui définissent trois plages de valeurs de données (basse, moyenne et haute) à laquelle vous pouvez appliquer une couleur différente (ou un style différent).  
 
-### Pour paramétrer des indicateurs colorés sur des piles  
+### <a name="to-set-up-colored-indicators-on-cues"></a>Pour paramétrer des indicateurs colorés sur des piles
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Configuration pile**, puis choisissez le lien associé.  
 
      La page **Configuration pile** s'affiche. La page répertorie les indicateurs actuellement configurés sur des piles. Les indicateurs qui s'appliquent à tous les utilisateurs de la compagnie ont le champ **Nom d'utilisateur** vide. Les indicateurs s'appliquant à un utilisateur spécifique incluent le nom de l'utilisateur dans le champ **Nom d'utilisateur**.  
@@ -57,7 +57,7 @@ Pour configurer l'indicateur, vous pouvez spécifier jusqu'à deux valeurs de se
     |**Ambigu**|Jaune|  
     |**Subordonné**|Gris|  
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

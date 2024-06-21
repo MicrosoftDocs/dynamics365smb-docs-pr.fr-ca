@@ -10,7 +10,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# Saisie des numéros des documents externes
+# <a name="enter-external-document-numbers"></a>Saisie des numéros des documents externes
 
 Vous pouvez entrer des numéros de document externe pour les clients et les fournisseurs dans tous les documents de vente et bons de commande, les factures et les notes de crédit. Vous pouvez utiliser ces numéros pour rechercher ultérieurement des lignes vente et achat reportées.  
 
@@ -19,7 +19,7 @@ Vous pouvez entrer des numéros de document externe pour les clients et les four
 
 La procédure suivante explique comment spécifier un numéro de document externe sur un document de vente, mais des étapes similaires s’appliquent à d’autres documents vente et achat.
 
-## Pour entrer des numéros de document externe dans un document de vente  
+## <a name="to-enter-external-document-numbers-in-a-sales-order"></a>Pour entrer des numéros de document externe dans un document de vente
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Documents de vente**, puis sélectionnez le lien associé.  
 2. Sélectionnez le document de vente concerné, puis cliquez sur l’action **Modifier**.  
@@ -28,7 +28,7 @@ La procédure suivante explique comment spécifier un numéro de document extern
     Sur les documents achat, le champ correspondant est le champ **N° de facture fournisseur**.
 4. Renseignez les autres champs requis.  
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Numéros de documents externes sur les documents achat](purchasing-ext-doc-no.md)  
 [Numéros de document externe sur les documents vente](sales-how-invoice-sales.md#external-document-numbers)  

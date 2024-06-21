@@ -11,9 +11,9 @@ ms.author: altotovi
 ms.service: dynamics-365-business-central
 ---
 
-# Plan comptable et comptabilité de durabilité
+# <a name="chart-of-sustainability-accounts-and-ledger"></a>Plan comptable et comptabilité de durabilité
 
-## Graphique des comptes de durabilité
+## <a name="chart-of-sustainability-accounts"></a>Graphique des comptes de durabilité
 
 Le Graphique des comptes de durabilité (CoSA) constitue la liste structurée fondamentale utilisée pour enregistrer toutes les données sur les émissions. Il fonctionne comme un cadre qui catégorise et organise les comptes de durabilité en fonction de leurs attributs, tels que la portée ou d’autres regroupements. Chaque compte se voit généralement attribuer un code ou un numéro unique pour faciliter la référence et le suivi. Il a la même structure qu’un plan comptable traditionnel, mais est personnalisé spécifiquement pour surveiller les données et les mesures liées au développement durable dans une organisation.
 
@@ -36,7 +36,7 @@ Les utilisateurs peuvent ajouter des catégories de comptes de développement du
 
 Vous pouvez ajouter, modifier ou supprimer des comptes de durabilité. Toutefois, pour éviter les écarts, vous ne pouvez pas supprimer un compte de durabilité si une ou plusieurs écritures lui sont associées.
 
-### Ajouter ou modifier les comptes
+### <a name="add-or-change-accounts"></a>Ajouter ou modifier les comptes
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche 3.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Graphique des comptes de durabilité**, puis choisissez le lien associé.
 2. Sur **Graphique des comptes de durabilité**, vous pouvez ouvrir chaque compte de durabilité et ajouter ou modifier des paramètres. Positionnez le curseur sur un champ pour lire une brève description.
@@ -48,11 +48,11 @@ Pour les comptes de type **Fin total**, la fonction Décaler définit automatiqu
 > [!IMPORTANT]
 > La fonction Décaler écrase la valeur de tous les champs des comptes **Fin total**. Ainsi, si vous avez saisi des définitions dans le champ **Totalisation** pour les comptes **Fin total** avant d’exécuter la fonction Décaler, vous devez les saisir à nouveau après l'exécution.
 
-### Supprimer les comptes
+### <a name="delete-accounts"></a>Supprimer les comptes
 
 Vous pouvez supprimer un comptes de durabilité. Cependant, vous devez d’abord vous assurer qu’aucune écriture n’y est associée. Business Central vous évite de supprimer un compte de durabilité si une ou plusieurs écritures y sont associées.
 
-## Catégories de compte
+## <a name="account-categories"></a>Catégories de compte
 
 Les utilisateurs doivent ajouter une catégorie de compte de durabilité à chaque compte de durabilité pour définir le comportement du système. Ils peuvent sélectionner des champs d’émissions, des émissions dédiées à suivre, des formules et des configurations similaires.
 
@@ -93,7 +93,7 @@ Si vous définissez le champ **Fondation de calcul**, le tableau suivant expliqu
 | | Personnalisé | *Émissions* = *Montant personnalisé* &times; *EF* | *Montant personnalisé* = Séjours à l’hôtel |
 | | Carburant/électricité | *Émissions* = *Carburant* &times; *EF* | *Carburant* = Quantité de carburant dépensée dans la voiture de fonction, la voiture de location, etc. |
 
-## Sous-catégories du compte
+## <a name="account-subcategories"></a>Sous-catégories du compte
 
 Les utilisateurs doivent ajouter une sous-catégorie de compte de durabilité à chaque compte de durabilité. Cette sous-catégorie définit les facteurs d’émission utilisés dans les formules, en fonction du choix de suivi des émissions dans la catégorie du compte de durabilité.
 
@@ -113,7 +113,7 @@ Pour examiner les sous-catégories de comptes de durabilité, procédez comme su
 > [!NOTE]
 > Les champs **Importer des données** et **Importer à partir de** sont prévus pour une intégration potentielle avec des systèmes externes utilisés pour recueillir les facteurs d’émission. Cependant, dans la **1re vague de lancement 2024**, ces champs ne peuvent pas être utilisés comme fonctionnalité par défaut.
 
-## Écritures durabilité
+## <a name="sustainability-ledger-entries"></a>Écritures durabilité
 
 Le grand livre durabilité stocke l’historique de toutes les transactions de durabilité reportées, et organise toutes les données d’émission selon le plan des comptes de durabilité (CoSA). Lorsqu’un utilisateur effectue un report dans le journal durabilité, toutes les données cruciales y sont enregistrées. Tous les rapports actifs sont générés en fonction des écritures comptable de durabilité.
 
@@ -122,7 +122,7 @@ Pour ouvrir ce grand livre pour un compte spécifique, utilisez l’action **Éc
 > [!IMPORTANT]
 > Une fois que vous avez reporté vos données dans le grand livre durabilité, vous ne pouvez pas les supprimer. Si vous avez commis une erreur, vous pouvez reporter une transaction inversée utilisant les mêmes détails, mais utilisant le signe négatif pour le montant.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Finances](finance.md)  
 [Vue d’ensemble de la gestion de la durabilité](finance-manage-sustainability.md)  

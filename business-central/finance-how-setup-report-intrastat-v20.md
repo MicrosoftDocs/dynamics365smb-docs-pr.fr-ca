@@ -11,13 +11,13 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# Configurer et enregistrer un rapport Intrastat
+# <a name="set-up-and-report-intrastat"></a>Configurer et enregistrer un rapport Intrastat
 
 Toutes les compagnies de l'Union européenne doivent déclarer leurs échanges avec les autres pays/régions de l'Union européenne. Vous devez déclarer les mouvements de marchandises aux autorités statistiques de votre pays/région mensuellement et le rapport doit être remis aux autorités fiscales. Il s'agit de la déclaration Intrastat. La page **Journal Intrastat** permet de remplir des rapports Intrastat périodiques.
 
 [!INCLUDE[intrastat-2022w2](includes/intrastat-2022w2.md)]
 
-## Paramètres obligatoires et facultatifs
+## <a name="required-and-optional-setups"></a>Paramètres obligatoires et facultatifs
 
 > [!IMPORTANT]
 > Les fiches client et les fiches fournisseur incluent un champ, **Type de partenaire Intrastat**, qui a les mêmes valeurs d’option que le champ **Type de partenaire** : *"" (Vide)*, *Compagnie* et *Personne*. Le champ **Type de partenaire Intrastat** a remplacé le champ **Type de partenaire** dans les rapports Intrastat. **Type de partenaire** est utilisé dans SEPA pour définir le régime des prélèvements SEPA (Base ou B2B). **Type de partenaire Intrastat** est utilisé pour la déclaration Intrastat uniquement. De cette façon, vous pouvez spécifier des valeurs différentes pour les deux champs, si nécessaire.
@@ -47,7 +47,7 @@ Avant d'utiliser le journal Intrastat pour déclarer des informations Intrastat,
 * **Dépts destination/provenance** : Vous pouvez les utiliser pour renseigner des informations sur les pays et les régions.  
 * **Pays destination/provenance** : vous pouvez les utiliser pour spécifier les emplacements dans lesquels vous livrez ou recevez des articles vers ou à partir d’autres pays/régions. L'aéroport de Heathrow est un exemple de pays destination/provenance. Vous pouvez saisir des points d'entrée et de sortie sur les documents vente et achat sur le raccourci **Commerce étranger**. Ces informations sont également copiées à partir des écritures article lorsque vous créez le journal Intrastat.  
 
-### Pour configurer des modèles et des lots Intrastat
+### <a name="to-set-up-intrastat-templates-and-batches"></a>Pour configurer des modèles et des lots Intrastat
 
 Les traitements en lot Intrastat incluent uniquement des écritures articles et non des écritures GL. Si certaines écritures doivent être incluses dans la déclaration Intrastat, vous devez les saisir manuellement. Par exemple, si vous achetez un ordinateur dans un autre pays ou une autre région de l'UE, cet ordinateur n'est pas comptabilisé dans l'inventaire, mais reporté sur un compte du grand livre. Vous devez saisir manuellement ce type d'écriture dans le journal Intrastat.  
 
@@ -64,12 +64,12 @@ Vous pouvez exporter les écritures vers un fichier que vous pouvez envoyer à v
 > [!NOTE]
 > Dans le champ **Période statistique**, entrez la période statistique sous la forme d'un nombre à quatre chiffres, les deux premiers chiffres représentant l'année et les deux suivants, le mois. Par exemple, saisissez 1706 pour juin 2017.
 
-### Pour configurer des modes de transport
+### <a name="to-set-up-transport-methods"></a>Pour configurer des modes de transport
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Modes de transport**, puis choisissez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
-### Pour configurer les champs de la déclaration Intrastat obligatoires
+### <a name="to-set-up-which-intrastat-report-fields-are-mandatory"></a>Pour configurer les champs de la déclaration Intrastat obligatoires
 
 Dans certains pays/régions, tel(le)s que l’Espagne et le R-U, les autorités exigent que les rapports Intrastat comprennent, par exemple, la méthode de livraison des achats ou d’autres valeurs lorsque les ventes sont supérieures à un certain seuil. Sur la page **Configuration Intrastat**, vous pouvez sélectionner pour que **Configuration de la liste de vérification Intrastat** définisse les champs obligatoires sur la page **Journal Intrastat**.
 
@@ -77,11 +77,11 @@ Dans certains pays/régions, tel(le)s que l’Espagne et le R-U, les autorités 
 2. Choisissez l’action **Configuration de la liste de vérification Intrastat**.
 3. Sur la page **Configuration de la liste de vérification Intrastat**, sélectionnez dans le champ **Nom de champ** pour prélever le champ de rapport Intrastat que vous souhaitez rendre obligatoire.
 
-### Tchéquie
+### <a name="czechia"></a>Tchéquie
 
 Notamment pour les entreprises tchèques, vous devez également paramétrer des codes marchandise et des codes nature de transaction.  
 
-#### Pour configurer des codes marchandise
+#### <a name="to-set-up-commodity-codes"></a>Pour configurer des codes marchandise
 
 Tous les articles que vous achetez ou vendez doivent avoir un code marchandise.  
 
@@ -89,11 +89,11 @@ Tous les articles que vous achetez ou vendez doivent avoir un code marchandise.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
 3. Pour affecter un code marchandise à un article, accédez à la page **Fiche article**, développez le raccourci **Coûts et validation**, puis saisissez le code dans le champ **Code marchandise**.
 
-### Italie
+### <a name="italy"></a>Italie
 
 Notamment pour les entreprises italiennes, vous devez également paramétrer des codes marchandise et des codes nature de transaction.  
 
-#### Pour configurer des codes nature de transaction
+#### <a name="to-set-up-transaction-nature-codes"></a>Pour configurer des codes nature de transaction
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Codes nature de transaction.**, puis choisissez le lien associé.  
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]  
@@ -101,11 +101,11 @@ Notamment pour les entreprises italiennes, vous devez également paramétrer des
 > [!TIP]
 > Si vous utilisez souvent un code nature de transaction spécifique, vous pouvez le définir comme valeur par défaut. Pour ce faire, accédez à la page **Configuration Intrastat** et choisissez le code.
 
-## Pour soumettre un rapport Intrastat
+## <a name="to-report-intrastat"></a>Pour soumettre un rapport Intrastat
 
 Après avoir renseigné le journal Intrastat, vous pouvez exécuter l’action **Rapport : liste de vérification** pour vérifier que toutes les informations du journal sont correctes. Champs obligatoires que vous avez définis sur la page **Configuration de la liste de vérification Intrastat** qui sont des valeurs manquante, seront affichés dans le récapitulatif des erreurs et d’avertissement de la page **Journal Intrastat**. Ensuite, vous pouvez imprimer un rapport Intrastat en tant que formulaire, ou créer un fichier à envoyer à l'administration fiscale de votre pays/région.  
 
-### Pour renseigner des feuilles intracommunautaires
+### <a name="to-fill-in-intrastat-journals"></a>Pour renseigner des feuilles intracommunautaires
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journal Intrastat**, puis choisissez le lien associé.  
 2. Sur la page **Journal Intrastat**, dans le champ **Nom de lot**, sélectionnez le lot journal concerné, puis sélectionnez **OK**.  
@@ -118,7 +118,7 @@ Le traitement en lot récupère toutes les écritures article de la période sta
 > [!IMPORTANT]  
 > Le traitement en lot récupère uniquement les écritures qui contiennent un code pays/région pour lequel un code Intrastat a été entré dans la page **Pays/Régions**. Vous devez donc entrer les codes Intrastat correspondant aux codes pays/région pour lesquels vous allez lancer le traitement en lot. Le traitement en lot définit le champ **Numéro de TVA du partenaire** sur *QV999999999999* pour les particuliers ou les entreprises non assujetties à la TVA (clients avec le champ **Type de partenaire Intrastat** défini sur *Personne*), et il utilise la valeur du champ **Type de transaction** de l’écriture article reportée ou de l’écriture projet.
 
-### Pour modifier les lignes des journaux Intrastat
+### <a name="to-modify-intrastat-journals-lines"></a>Pour modifier les lignes des journaux Intrastat
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journal Intrastat**, puis choisissez le lien associé.  
 2. Sur la page **Journal Intrastat**, dans le champ **Nom de lot**, sélectionnez le lot journal concerné, puis sélectionnez **OK**.  
@@ -130,7 +130,7 @@ Le traitement en lot récupère toutes les écritures article de la période sta
 > [!NOTE]
 > Dans les versions de [!INCLUDE[prod_short](includes/prod_short.md)] qui ne prennent pas en charge [**Modifier dans Excel**](across-work-with-excel.md#edit-in-excel) pour les journaux, vous pouvez créer des packages de configuration pour exporter et importer des lignes journal Intrastat vers Excel. Pour plus d’informations, voir [Migrer des données locales vers Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-data) dans le contenu d’administration.
 
-### Rapport Intrastat sur un formulaire ou un fichier
+### <a name="report-intrastat-on-a-form-or-a-file"></a>Rapport Intrastat sur un formulaire ou un fichier
 
 Pour obtenir les informations requises sur le formulaire Intrastat à partir des autorités statistiques, vous devez imprimer le rapport **Intrastat : Formulaire**. Avant d'effectuer cette opération, vous devez préparer le journal Intrastat et le renseigner. Si vous avez à la fois des transactions d'achat et de vente, vous devez compléter un formulaire distinct pour chaque type et donc imprimer le rapport deux fois.  
 
@@ -141,7 +141,7 @@ Pour obtenir les informations requises sur le formulaire Intrastat à partir des
 5. Sur le raccourci **Ligne journal Intrastat**, ajoutez un filtre **Type**, puis spécifiez s'il s'agit d'une **Réception** ou d'une **Livraison**.  
 6. Choisissez **Envoyer à** pour imprimer le rapport.  
 
-### Rapport Intrastat dans un fichier
+### <a name="report-intrastat-in-a-file"></a>Rapport Intrastat dans un fichier
 
 Vous pouvez envoyer la déclaration Intrastat en tant que fichier. Avant de créer le fichier, vous pouvez imprimer la liste de vérification contenant les mêmes informations que le fichier.  
 
@@ -156,7 +156,7 @@ Vous pouvez envoyer la déclaration Intrastat en tant que fichier. Avant de cré
 > [!NOTE]
 > Lorsqu’une ligne du rapport Intrastat a une unité de mesure supplémentaire, le poids de l’article ne sera pas affiché, car cette valeur n’est pas requise.
 
-## Réorganiser les journaux Intrastat
+## <a name="reorganize-intrastat-journals"></a>Réorganiser les journaux Intrastat
 
 Parce que vous devez soumettre un rapport Intrastat chaque mois et créer un nouveau lot journal pour chaque rapport, il peut donc exister de nombreux lots journal. Les lignes journal ne sont pas supprimées automatiquement. Vous pouvez réorganiser régulièrement les noms du lot journal. Pour cela, il suffit de supprimer les lots journal dont vous n'avez plus besoin. Les lignes de ces journaux dans ces lots sont également supprimées.  
 
@@ -164,13 +164,13 @@ Parce que vous devez soumettre un rapport Intrastat chaque mois et créer un nou
 2. Pour afficher les options, choisissez le champ **Nom de la feuille**.  
 3. Cliquez sur les lots journal à supprimer, puis sélectionnez le bouton **Supprimer**.  
 
-## Nomenclatures produits
+## <a name="tariff-numbers"></a>Nomenclatures produits
 
 Dans de nombreux pays/régions, les autorités douanières et fiscales établissent des codes article à huit unités pour divers articles. Pour que les écritures article comportent les informations nécessaires lorsque le programme les importe vers la ligne journal Intrastat, vous devez avoir saisi les informations concernant la nomenclature produit dans la page **Nomenclatures produits**. Trouvez les codes des articles avec lesquels votre compagnie travaille et saisissez-les dans la fenêtre **Nomenclatures produits**.
 
 Ajoutez tous les codes que vous utilisez dans la page **Nomenclatures produit**. Vous devez saisir les codes sur la fiche article avant de commencer à reporter. Lorsque vous avez créé ces codes, saisissez-les dans le champ **Nomenclature produits** de la fiche article. Vous devez également renseigner le champ **Poids net** de la fiche article.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Gestion financière](finance.md)
 
