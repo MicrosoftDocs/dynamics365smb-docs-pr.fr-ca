@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
 
-# <a name="sustainability-management-overview"></a>Vue d’ensemble de la gestion de la durabilité
+# Vue d’ensemble de la gestion de la durabilité
 
 > [!IMPORTANT]
 > Cette fonctionnalité sera disponible dans Business Central à partir de la **1re vague de lancement 2024**. Tous les liens de référence seront activés une fois disponibles.
@@ -43,7 +43,7 @@ Pour vous familiariser avec Sustainability Manager, reportez-vous aux articles s
 | [Plan comptable et comptabilité de durabilité](finance-sustainability-accounts-ledger.md) | Cet article fournit des informations sur la façon de configurer correctement le plan des comptes de durabilité (CoSA), les catégories de comptes et les sous-catégories, ainsi que sur la façon d’analyser les informations dans les écritures durabilité. |
 | [Enregistrer les entrées de durabilité](finance-sustainability-journal.md) | Utilisez cet article pour apprendre à travailler avec tous les types de journaux durabilité. |
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configuration de durabilité](finance-sustainability-setup.md)  
 [Plan comptable et comptabilité de durabilité](finance-sustainability-accounts-ledger.md)  

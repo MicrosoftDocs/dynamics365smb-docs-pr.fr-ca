@@ -11,7 +11,7 @@ ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
 
-# <a name="flush-components-according-to-operation-output"></a>Consommer des composantes en fonction de la production réalisée
+# Consommer des composantes en fonction de la production réalisée
 Vous pouvez définir différentes stratégies de consommation, pour automatiser l'enregistrement de la consommation des composantes. 
 
 Cette fonctionnalité est utile pour les motifs suivants :  
@@ -30,14 +30,14 @@ Cette fonctionnalité est utile pour les motifs suivants :
 
     La possibilité de consommer automatiquement une opération permet d’automatiser tout le processus d’enregistrement de la consommation et de la production. L’inconvénient de la consommation automatique est que vous risquez de ne pas enregistrer précisément voire d’omettre les rebuts.
 
-## <a name="automatic-consumption-posting-flushing-methods"></a>Méthodes de report de la consommation automatique (consommation)
+## Méthodes de report de la consommation automatique (consommation)  
 
 - Consommation en aval de l'ordre entier  
 - Consommation en aval par opération  
 - Consommation en amont par opération  
 - Consommation en amont de l'ordre entier  
 
-### <a name="automatic-reporting---forward-flush-the-entire-order"></a>Génération de rapport automatique - Consommation en aval de l'ordre entier
+### Génération de rapport automatique - Consommation en aval de l'ordre entier  
 Si vous consommez en aval le bon de production au début du projet, le comportement de l'application est similaire à une consommation manuelle. La principale différence réside dans le fait que la consommation est effectuée automatiquement.  
 
 - Le contenu entier de la nomenclature de production est consommé et déduit de l'inventaire lors de l'actualisation du bon de production libéré.  
@@ -52,7 +52,7 @@ La consommation en aval d'une commande entière est appropriée dans des environ
 -   petit nombre d'opérations ;  
 -   Consommation importante de composantes dans les opérations précoces  
 
-### <a name="automatic-reporting---forward-flushing-by-operation"></a>Génération de rapport automatique - Consommation en aval par opération
+### Génération de rapport automatique - Consommation en aval par opération  
 La consommation par opération permet de déduire l'inventaire durant une opération spécifique dans l'itinéraire de l'article parent. Les matières sont liées à l'itinéraire à l'aide de codes lien itinéraire qui correspondent aux codes lien itinéraire affectés aux composantes dans la nomenclature de production.  
 
 La consommation a lieu au démarrage de l'opération auquel le code lien itinéraire correspond. Le démarrage intervient quand une certaine activité est enregistrée dans le journal de sortie pour cette opération. Cette activité peut être simplement l'entrée d'un délai de configuration.  
@@ -63,7 +63,7 @@ Il est recommandé d’utiliser cette technique lorsqu’il y a de nombreuses op
 
 Il est possible de consommer des matières durant les opérations à l'aide de codes lien itinéraire. Il se peut que certaines composantes ne soient pas utilisées avant les opérations d’assemblage finales, auquel cas elles ne doivent pas être soustraites du stock auparavant.  
 
-### <a name="automatic-reporting---back-flushing-by-operation"></a>Génération de rapport automatique - Consommation en amont par opération
+### Génération de rapport automatique - Consommation en amont par opération  
 La post-consommation par opération enregistre la consommation après le report de l'opération dans le journal de sortie.  
 
 L'avantage de cette méthode est que le nombre de pièces parentes finies dans l'opération est connu.  
@@ -72,7 +72,7 @@ Les matières dans la nomenclature de production sont liées aux enregistrements
 
 La quantité consommée est calculée pour la quantité par assemblage sur la nomenclature de production multipliée par le nombre d'articles parents reportés comme quantité produite pour cette opération. Cette quantité peut différer de la quantité prévue.  
 
-### <a name="automatic-reporting---back-flushing-the-entire-order"></a>Génération de rapport automatique - Consommation en amont de l'ordre entier
+### Génération de rapport automatique - Consommation en amont de l'ordre entier  
 Cette méthode de génération de rapport ne tient pas compte des codes lien itinéraire.  
 
 Aucun composant n'est prélevé tant que le statut de l'ordre de fabrication lancé n'est pas *Terminé*. La quantité consommée est calculée pour la quantité par assemblage sur la nomenclature de production multipliée par le nombre d'articles parents terminés et introduits dans l'inventaire.  
@@ -83,7 +83,7 @@ La consommation en amont du bon de production tout entier requiert la même conf
 
 Par exemple, si un bon de production de 800 mètres nécessite pour son exécution 8 kilogrammes d'une composante, lorsque vous reportez 200 mètres de production, 2 kilogrammes sont automatiquement reportés comme étant consommés. Pour y parvenir, combinez la méthode de consommation en amont et les codes lien itinéraire pour que la quantité consommée par chaque opération soit proportionnelle à la production réelle de cette opération terminée. Pour les articles créés avec la méthode de consommation en amont le comportement par défaut est de calculer et de valider la consommation de composants lorsque vous affectez à l'ordre de fabrication lancé le statut **Terminé**. Si vous définissez également les codes lien itinéraire, le calcul et le report ont lieu lorsque chaque opération est terminée et que la quantité consommée au cours de l’opération est reportée. Pour plus d'informations, voir [Créer des itinéraires](production-how-to-create-routings.md).  
 
-## <a name="to-flush-components-according-to-operation-output"></a>Pour consommer en aval des composants en fonction de la production réalisée
+## Pour consommer en aval des composants en fonction de la production réalisée
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.  
 2.  Choisissez l'action **Modifier**.  
@@ -101,7 +101,7 @@ Par exemple, si un bon de production de 800 mètres nécessite pour son exécut
 
 La consommation est reportée automatiquement lorsque vous enregistrez la sortie. Pour plus d’informations, voir [Reporter en lot la production et les temps d’exécution](production-how-to-post-output-quantity.md)
 
-## <a name="flushing-methods"></a>Méthodes consommation
+## Méthodes consommation
 
 Le tableau suivant décrit les options de méthode de consommation disponibles que vous pouvez spécifier sur les fiches **Article** et **Unité de stock**.
 
@@ -113,7 +113,7 @@ Le tableau suivant décrit les options de méthode de consommation disponibles q
 |Prélèvement + Aval|Identique à la méthode de consommation aval, sauf qu’elle ne fonctionne que pour les emplacements qui utilisent une configuration d’entrepôt avancée ou une configuration d’entrepôt de base avec des zones obligatoires.<br><br> La consommation est calculée et reportée à partir de la zone définie dans le champ **Code de zone avant production** sur l'emplacement ou l'unité de production après le prélèvement de la composante de l'entrepôt.<br><br> **Remarque** <br>Si une composante est configurée avec le prélèvement et la méthode de consommation en aval, vous ne pouvez pas avoir un code lien itinéraire pour une opération configurée avec la méthode de consommation en aval. La composante est ensuite automatiquement consommée lorsque l'opération commence, rendant impossible toute demande d'activité de prélèvement.|
 |Prélèvement + Amont|Identique à la méthode de consommation amont, sauf qu’elle ne fonctionne que pour les emplacements qui utilisent une configuration d’entrepôt avancée ou une configuration d’entrepôt de base avec des zones obligatoires.<br><br> La consommation est calculée et reportée à partir de la zone définie dans le champ **Code de zone avant production** sur l'emplacement ou l'unité de production après le prélèvement de la composante de l'entrepôt.|
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Création des nomenclatures de production](production-how-to-create-production-boms.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  

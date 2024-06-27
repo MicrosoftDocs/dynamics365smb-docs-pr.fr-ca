@@ -10,13 +10,13 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.search.keywords: 'copilot, AI, chat'
 ---
-# <a name="responsible-ai-faq-for-chat-with-copilot-preview"></a>FAQ sur l’IA responsable pour Conversation instantanée avec Copilot (version préliminaire)
+# FAQ sur l’IA responsable pour Conversation instantanée avec Copilot (version préliminaire)
 
 [!INCLUDE[production-ready-preview-dynamics365](includes/production-ready-preview-dynamics365.md)]
 
 Cette foire aux questions (FAQ) décrit l’impact de l’IA dans la conversation avec Copilot dans [!INCLUDE[prod_short](includes/prod_short.md)]. Si vous êtes intéressé par les questions générales sur l’utilisation de cette fonctionnalité, accédez à [FAQ pour Conversation instantanée avec Copilot](chat-with-copilot-faq.md).
 
-## <a name="what-is-chat-with-copilot"></a>Qu'est-ce qu'une Conversation instantanée avec Copilot ?
+## Qu'est-ce qu'une Conversation instantanée avec Copilot ?
 
 Microsoft Copilot est l’assistant alimenté par l’IA qui aide à stimuler la créativité, à augmenter la productivité et à éliminer les tâches fastidieuses. Vous pouvez discuter avec Copilot dans Business Central pour répondre aux questions et trouver des données métier en exprimant ce que vous recherchez en langage naturel.
 
@@ -24,11 +24,11 @@ Conversation instantanée avec Copilot, également appelé chat, est une fonctio
 
 Les utilisateurs posent des questions en langage naturel, telles que "Comment puis-je livrer des marchandises à mes clients directement depuis mes fournisseurs ? » Ou "Avons-nous des chaises de bureau en stock pour moins de 600 $ ?" En réponse, Copilot fournit des réponses en langage naturel. Selon les questions, les réponses peuvent inclure du texte brut, des liens vers des enregistrements ou des pages dans [!INCLUDE[prod_short](includes/prod_short.md)], et des liens vers [!INCLUDE[prod_short](includes/prod_short.md)] articles d’aide sur Microsoft Learn.
 
-## <a name="what-are-capabilities-of-chat-with-copilot"></a>Quelles sont les fonctionnalités de Conversation instantanée avec Copilot ?
+## Quelles sont les fonctionnalités de Conversation instantanée avec Copilot ?
 
 Vous pouvez discuter avec Copilot pour obtenir des réponses aux catégories de questions suivantes :
 
-### <a name="explain-and-guide"></a>Expliquer et guider
+### Expliquer et guider
 
 Les utilisateurs peuvent demander à Copilot d’expliquer un concept spécifique lié à [!INCLUDE[prod_short](includes/prod_short.md)], comme ce que sont les dimensions, ou fournir des conseils sur la façon d’accomplir une tâche, comme comment reporter un document de vente. Copilot fouille le fonctionnaire [!INCLUDE[prod_short](includes/prod_short.md)] documentation publiée par Microsoft et fournit une réponse basée sur la documentation.
 
@@ -36,7 +36,7 @@ Les utilisateurs peuvent demander à Copilot d’expliquer un concept spécifiqu
 
 - Copilot n’agit pas, ne crée pas de nouvelles données et ne modifie aucune configuration. Il résume simplement tous les paragraphes qu’il trouve sur Microsoft Learn qui correspondent à la question ou à l’invite dans le chat.
 
-### <a name="find-business-data-and-related-pages"></a>Rechercher des données d’entreprise et des pages associées
+### Rechercher des données d’entreprise et des pages associées
 
 Les utilisateurs peuvent demander à Copilot de localiser les pages par nom ou demander des enregistrements en fonction de leurs champs et contraintes. Si Copilot trouve une correspondance, il répond avec un lien vers l’enregistrement ou la page concernée, que l’utilisateur peut ensuite choisir d’ouvrir.
 
@@ -46,16 +46,16 @@ Les utilisateurs peuvent demander à Copilot de localiser les pages par nom ou d
 
 - Copilot n’agit pas, ne crée pas de nouvelles données et ne modifie aucune configuration. Il résume uniquement les dossiers reçus du [!INCLUDE[prod_short](includes/prod_short.md)] recherche de données natives. 
 
-## <a name="what-is-the-intended-use-of-chat-with-copilot"></a>Quelle est l’utilisation prévue de Conversation instantanée avec Copilot ?
+## Quelle est l’utilisation prévue de Conversation instantanée avec Copilot ?
 
 La Conversation instantanée est conçu pour une utilisation en entreprise et pour répondre aux questions relatives à [!INCLUDE[prod_short](includes/prod_short.md)] et les données métier qu’il contient. La fonctionnalité permet aux utilisateurs de résoudre des tâches courantes telles que rechercher des enregistrements ou obtenir des conseils en s’exprimant dans leurs propres mots, ce qui rend le travail plus facile et plus accessible. [!INCLUDE[prod_short](includes/prod_short.md)].
 
-## <a name="how-was-chat-with-copilot-evaluated-what-metrics-are-used-to-measure-performance"></a>Comment Conversation instantanée avec Copilot a-t-il été évalué ? Quelles mesures sont utilisées pour évaluer les performances ?
+## Comment Conversation instantanée avec Copilot a-t-il été évalué ? Quelles mesures sont utilisées pour évaluer les performances ?
 
 - La fonctionnalité a subi des tests approfondis au cours desquels de nombreux textes en anglais couvrant un large éventail de sujets et de styles d’expression d’intention ont été remis à Copilot. Les résultats ont été évalués en fonction de leur exactitude, de leur pertinence et de leur sécurité.
 - La fonctionnalité est conçue conformément à la Norme IA Responsable de Microsoft. [Découvrez-en davantage sur l’IA responsable auprès de Microsoft](https://aka.ms/RAI).
 
-## <a name="how-does-microsoft-monitor-the-quality-of-generated-content"></a>Comment Microsoft surveille-t-il la qualité du contenu généré ?
+## Comment Microsoft surveille-t-il la qualité du contenu généré ?
 
 Microsoft a mis en place divers systèmes pour garantir que le contenu généré par Copilot est de la plus haute qualité, détecter les abus et garantir la sécurité de nos clients et de leurs données.
 
@@ -66,7 +66,7 @@ Les utilisateurs ont la possibilité de fournir des commentaires sur chaque rép
 - Si vous rencontrez un contenu généré inapproprié, signalez-le à Microsoft en utilisant ce formulaire de commentaires : [Signaler un abus](https://go.microsoft.com/fwlink/?linkid=2249810).
 - Microsoft peut désactiver les fonctionnalités pilotées par Copilot pour certains clients si un abus de la fonctionnalité est détecté.
 
-## <a name="what-are-the-limitations-of-chat-with-copilot-how-can-users-minimize-the-impact-of-the-chat-with-copilot-limitations-when-using-the-system"></a>Quelle sont les limites de Conversation instantanée avec Copilot ? Comment les utilisateurs peuvent-ils minimiser l’impact des limitations Conversation instantanée avec Copilot lors de l’utilisation du système ?
+## Quelle sont les limites de Conversation instantanée avec Copilot ? Comment les utilisateurs peuvent-ils minimiser l’impact des limitations Conversation instantanée avec Copilot lors de l’utilisation du système ?
 
 - Limitations générales de l'IA
 
@@ -88,17 +88,17 @@ Les utilisateurs ont la possibilité de fournir des commentaires sur chaque rép
 
 <!--## What operational factors and settings allow for effective and responsible use of the feature?-->
 
-## <a name="what-data-does-chat-with-copilot-collect-and-how-is-it-used"></a>Quelles données Conversation instantanée avec Copilot collecte-t-il et comment sont-elles utilisées
+## Quelles données Conversation instantanée avec Copilot collecte-t-il et comment sont-elles utilisées
 
 Microsoft n’utilise pas les données de votre compagnie, y compris le texte que vous envoyez à Copilot, pour former les modèles d’IA fondamentaux au profit des autres. Les administrateurs de la compagnie ont un contrôle total pour gérer ces données qui font partie de leur abonnement Azure. Étant donné que les administrateurs ou d’autres personnes de votre compagnie peuvent avoir accès à ces données, comme déterminé par votre employeur, nous recommandons aux utilisateurs de ne pas saisir de données sensibles telles que des mots de passe ou d’autres secrets.
 
-## <a name="what-does-chat-with-copilot-offer-for-security"></a>Qu’offre Conversation instantanée avec Copilot pour la sécurité
+## Qu’offre Conversation instantanée avec Copilot pour la sécurité
 
 Conversation instantanée est conçu pour être sécurisé et s’exécute sous l’identité de l’utilisateur, héritant de toutes les autorisations de sécurité et autres restrictions et ne fonctionnant jamais en dehors de la sécurité de la plateforme [!INCLUDE[prod_short](includes/prod_short.md)]. Cela signifie que Copilot ne peut accéder qu’aux données auxquelles l’utilisateur a accès.
 
 Pour les utilisateurs disposant de l’autorisation SUPER, le chat peut localiser plus facilement les données non sécurisées qui sont généralement plus difficiles d’accès pour les autres utilisateurs. Les organisations qui n’appliquent pas le modèle de sécurité [!INCLUDE[prod_short](includes/prod_short.md)] pour restreindre les tables et les objets auxquels chaque utilisateur ou rôle d’utilisateur a accès peuvent courir un risque élevé lorsqu’elles utilisent le chat. Par conséquent, nous recommandons à votre organisation de mettre en œuvre le modèle de sécurité [!INCLUDE[prod_short](includes/prod_short.md)] ou de désactiver le chat.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Conversation instantanée avec Copilot (version préliminaire)](chat-with-copilot.md)
 

@@ -200,7 +200,7 @@ ms.service: dynamics-365-business-central
 #### [Gestes tactiles et au stylet](touch-gestures.md)
 ### [Dépannage : accéder à la caméra et à l’emplacement](ui-troubleshooting-camera-location.md)
 ### [Informations intelligentes (en ligne uniquement)](about-intelligent-cloud.md)
-## Forum aux questions
+## Dépannage et FAQ
 ### [Forum aux questions](across-faq.yml)
 ### [FAQ sur la conversation instantanée avec Copilot (version préliminaire)](chat-with-copilot-faq.md)
 ### [FAQ sur la fenêtre de recherche](ui-search-faq.md)
@@ -211,6 +211,7 @@ ms.service: dynamics-365-business-central
 ### [FAQ sur Teams](teams-faq.md)
 ### [FAQ sur les factures électroniques](faq-electronic-invoicing.yml)
 ### [Configuration minimale requise](product-requirements.md)
+### [Dépannage dans Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central)
 
 ## Aide et support
 ### [Ressources pour l’aide et le support](product-help-and-support.md)
@@ -458,7 +459,12 @@ ms.service: dynamics-365-business-central
 #### [Vue d’ensemble de la gestion de la durabilité](finance-manage-sustainability.md)
 #### [Configuration de durabilité](finance-sustainability-setup.md)
 #### [Plan comptable et comptabilité de durabilité](finance-sustainability-accounts-ledger.md)
-#### [Comment enregistrer les émissions de GES (gaz à effet de serre)](finance-sustainability-journal.md)
+#### [Comment enregistrer les émissions de gaz à effet de serre (GHG)](finance-sustainability-journal.md)
+#### Analyse de durabilité
+##### [Analyse ad hoc des données de durabilité](ad-hoc-analysis-sustainability.md)
+##### [Rapports de durabilité intégrés](sustainability-reports.md)
+#### API de durabilité
+##### [API de durabilité](/dynamics365/business-central/dev-itpro/api-sustainability/sustainability-api?toc=/dynamics365/business-central/toc.json)
 
 ### [Organisations multisites et internationales](finance-multi-site-organizations.md)
 #### Consolider les données financières de plusieurs compagnies
@@ -600,7 +606,7 @@ ms.service: dynamics-365-business-central
 #### [Vue d’ensemble de l’analyse des immobilisations](fa-analytics-overview.md)
 #### [Analyse ad hoc des données Immobilisations](ad-hoc-analysis-fa.md)
 #### Outils d’analyse des immobilisations intégrés
-##### [Surveiller les coûts d’entretien](fa-how-maintain.md#to-monitor-maintenance-costs)
+##### [Surveiller les coûts d’entretien](fa-how-maintain.md#monitor-maintenance-costs)
 ##### [Surveillance des couvertures d’assurance](fa-how-insure.md#to-monitor-insurance-coverage)
 ##### [Afficher les valeurs de registre d’amortissement modifiées](fa-how-trans-split-combine.md#to-view-changed-depreciation-book-values-due-to-fixed-asset-reclassification)
 ##### [Afficher des écritures cession](fa-how-dispose-retire.md#to-view-disposal-ledger-entries)
@@ -1857,6 +1863,7 @@ ms.service: dynamics-365-business-central
 #### [Rapports financiers clés](finance-reports.md)
 #### [Rapports Comptabilité client](receivables-reports.md)
 #### [Rapports Comptabilité fournisseur](payables-reports.md)
+#### [Rapports de durabilité](sustainability-reports.md)
 
 ### [Rapports des ventes](sales-reports.md)
 ### [Rapports des achats](purchase-reports.md)
