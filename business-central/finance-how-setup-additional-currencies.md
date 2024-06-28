@@ -11,7 +11,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="set-up-an-additional-reporting-currency"></a>Configurer une devise de report additionnelle
+# Configurer une devise de report additionnelle
 
 Les compagnies opérant dans un nombre croissant de pays/régions, il est de plus en plus important qu’elles puissent consulter et générer des rapports de données financiers dans plusieurs devises.
 
@@ -25,7 +25,7 @@ Votre grand livre est configuré pour utiliser votre devise locale ($), mais vou
 >
 > Par exemple, vous avez un grand nombre de comptes clients en livres sterling (GBP) et vous avez configuré votre devise de report additionnelle (dev. add.) en GBP. Dans ce scénario, les montants des comptes clients qui utilisent la livre sterling ne seront pas ajustés pour les gains/pertes de change dans la dev. add., mais uniquement les montants des comptes clients qui sont dans d’autres devises. Cela signifie que si vous utilisez la dev. add. pour déclarer vos rétats financiers, cela peut entraîner des soldes impayés sous-estimés ou surestimés des comptes débiteurs.
 
-## <a name="displaying-reports-and-amounts-in-acy"></a>Affichage de rapports et de montants dans la devise de report additionnelle
+## Affichage de rapports et de montants dans la devise de report additionnelle
 L'utilisation d'une devise de report additionnelle peut faciliter le processus de génération de rapports d'une compagnie dans les cas suivants :
 
 - Compagnies situées dans des pays/régions extérieur(e)s à l'UE qui effectuent un grand nombre de transactions avec des compagnies situées dans des pays/régions de l'UE. Dans ce cas, la compagnie extérieure à l’UE peut vouloir générer des rapports financiers en euros afin qu’ils soient plus lisibles pour les partenaires commerciaux de l’UE.
@@ -33,11 +33,11 @@ L'utilisation d'une devise de report additionnelle peut faciliter le processus d
 
 Plusieurs rapports financiers sont basés sur les écritures. Pour afficher les données de rapport dans la devise de report additionnelle, cochez la case **Afficher les montants dans la devise de report additionnelle** sur le raccourci **Options** pour le rapport GL approprié.
 
-## <a name="adjusting-exchange-rates"></a>Ajustement des taux de change
+## Ajustement des taux de change
 
 Comme les taux de change ne cessent de fluctuer, il convient d'ajuster périodiquement les équivalents devise supplémentaires de votre système. À défaut d’effectuer ces ajustements, les montants convertis à partir de devises étrangères (ou additionnelles) et reportés dans le grand livre en $ risquent d’être erronés. En outre, les écritures quotidiennes reportées avant la saisie d'un taux de change quotidien dans l'application doivent être mises à jour après la saisie quotidienne des informations de taux de change. Le traitement en lot **Ajuster taux de change** permet d’ajuster les taux de change des écritures client, fournisseur et compte bancaire reportées. D'autres montants en devise de report additionnelle peuvent également être mis à jour dans les écritures. Pour plus d'informations, voir [Mettre à jour les taux de change devise](finance-how-update-currencies.md).
 
-## <a name="setting-up-an-acy"></a>Configuration d'une devise de report additionnelle
+## Configuration d'une devise de report additionnelle
 
 Pour configurer une devise de report additionnelle, procédez comme suit :
 
@@ -46,7 +46,7 @@ Pour configurer une devise de report additionnelle, procédez comme suit :
 - Spécifiez la méthode d'ajustement de taux de change pour les écritures TVA.  
 - Activez la devise de report additionnelle.  
 
-### <a name="to-specify-general-ledger-accounts-for-posting-exchange-rate-adjustments"></a>Pour spécifier les comptes du grand livre pour le report des ajustements de taux de change
+### Pour spécifier les comptes du grand livre pour le report des ajustements de taux de change  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Devises**, puis choisissez le lien associé.  
 2. Sur la page **Devises**, renseignez les champs suivants pour la devise de report additionnelle.  
@@ -63,7 +63,7 @@ Pour configurer une devise de report additionnelle, procédez comme suit :
 
 Pour chaque compte GL, vous devez spécifier la manière dont les montants de grand livre du compte sont ajustés en fonction des fluctuations de taux de change entre $ et la devise de report additionnelle.  
 
-### <a name="to-specify-the-exchange-rate-adjustment-method-for-all-general-ledger-accounts"></a>Pour spécifier la méthode d'ajustement de taux de change pour tous les comptes généraux
+### Pour spécifier la méthode d'ajustement de taux de change pour tous les comptes généraux
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Plan comptable**, puis choisissez le lien associé.  
 2. Sur la page **Plan comptable**, sélectionnez le compte approprié, puis cliquez sur l'action **Modifier**.  
@@ -81,7 +81,7 @@ Pour chaque compte GL, vous devez spécifier la manière dont les montants de gr
 
 4.  Fermez la page **Fiche compte du grand livre**.  
 
-### <a name="to-specify-exchange-rate-adjustment-method-for-vat-entries"></a>Pour spécifier la méthode d'ajustement de taux de change pour toutes les écritures TVA
+### Pour spécifier la méthode d'ajustement de taux de change pour toutes les écritures TVA
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du grand livre**, puis choisissez le lien associé.  
 2. Sur la page **Configuration du grand livre**, sélectionnez la méthode adéquate dans le champ **Ajustement tx de change TVA**.  
@@ -97,7 +97,7 @@ Pour chaque compte GL, vous devez spécifier la manière dont les montants de gr
     |**Ajuster montant**|La devise locale est ajustée pour tous les gains ou toutes les pertes de change. Les gains ou pertes sur le taux de change sont reportés dans le compte du grand livre, dans le champ **Montant**, et dans les comptes que vous avez spécifiés pour les gains ou les pertes dans le champ **Cpte gains constatés GL** et **Cpte pertes constatées GL** de la page **Devises**.|  
     |**Ajuster montant devise report**|La devise de report additionnelle est ajustée pour les gains ou les pertes de change. Les gains ou pertes sur le taux de change sont reportés dans le compte du grand livre, dans le champ **Montant devise additionnelle**, et dans les comptes que vous avez spécifiés pour les gains ou les pertes dans le champ **Cpte gains constatés GL** et **Cpte pertes constatées GL** de la page **Devises**.|  
 
-### <a name="to-activate-the-acy"></a>Pour activer la devise de report additionnelle
+### Pour activer la devise de report additionnelle  
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du grand livre**, puis choisissez le lien associé.  
 2. Sur la page **Configuration du grand livre**, choisissez le champ **Devise de report additionnelle** pour sélectionner la devise additionnelle que vous souhaitez utiliser pour vos déclarations.  
 3. Lorsque vous quittez le champ, [!INCLUDE[prod_short](includes/prod_short.md)] affiche un message de confirmation décrivant les effets de l'activation de la devise report.  
@@ -123,7 +123,7 @@ En outre, toutes les écritures futures du même type ont des montants enregistr
 > [!NOTE]  
 > Le champ **Devise report** n'est activé qu'après que vous avez cliqué sur le bouton **OK** dans le traitement par lots **Ajuster devise report**.  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Mise à jour des taux de change devise](finance-how-update-currencies.md)  
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
