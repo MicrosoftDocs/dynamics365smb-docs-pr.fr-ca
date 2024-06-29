@@ -1,11 +1,12 @@
 ---
 author: jswymer
 ms.topic: include
-ms.date: 11/01/2023
+ms.date: 06/10/2024
 ms.author: jswymer
 ms.service: dynamics-365-business-central
+ms.reviewer: jswymer
 ---
-Les suggestions de texte marketing ne sont prises en charge que dans les langues et paramètres régionaux suivants :
+Cette fonctionnalité Copilot a été validée langues uniquement :
 
 |Langue|Paramètres régionaux|
 |-|-|
@@ -17,3 +18,5 @@ Les suggestions de texte marketing ne sont prises en charge que dans les langues
 |Néerlandais (Pays-Bas)|nl-NL, nl-BE|
 |Italien (Italie)|it-IT, it-CH|
 |Japonais|ja-JP|
+
+Bien qu’il puisse être utilisé dans d’autres langues, il se peut qu’il ne fonctionne pas comme prévu. La qualité de la langue peut varier en fonction de l’interaction de l’utilisateur ou des paramètres du système, ce qui peut avoir un impact sur la précision et l’expérience utilisateur.

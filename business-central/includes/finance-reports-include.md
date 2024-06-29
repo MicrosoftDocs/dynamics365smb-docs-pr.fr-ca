@@ -1,7 +1,7 @@
 ---
 author: brentholtorf
 ms.topic: include
-ms.date: 09/22/2022
+ms.date: 06/12/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
@@ -9,10 +9,10 @@ ms.reviewer: bholtorf
 
 Le tableau suivant décrit certains rapports financiers clés.
 
-| Déclarer | Désignation | Code | 
+| Déclarer | Désignation | Code |
 |--|--|--|
 | [Balance de vérification](https://businesscentral.dynamics.com?report=6) | Affiche le plan comptable avec les soldes et les soldes périodes. Vous pouvez choisir de visualiser une balance de vérification générale relative aux dimensions sélectionnées ou utiliser ce rapport lors de la clôture d’une période comptable ou d’un exercice financier. | 6 |
-| [Balance de vérification par période](https://businesscentral.dynamics.com?report=38) | Présente le solde d’ouverture par compte GL, les mouvements pour la période sélectionnée (mois, trimestre ou année) et le solde de fermeture qui en résulte. <br>Conseil : Peut être utilisé pour afficher les profits et les pertes (P&L) avec un total pour chaque mois.| 38 |
+| [Balance de vérification par période](https://businesscentral.dynamics.com?report=38) | Présente le solde d’ouverture par compte GL, les mouvements pour la période sélectionnée (mois, trimestre ou année) et le solde de fermeture qui en résulte. <br>Conseil : Le rapport peut être utilisé pour afficher les profits et les pertes (P&L) avec un total pour chaque mois.| 38 |
 | [Comparaison balance de vérification/budget](https://businesscentral.dynamics.com?report=9) | Affiche la balance de vérification comparée à un budget. Vous pouvez choisir de visualiser la balance de vérification générale relative à des dimensions sélectionnées. Utilisez ce rapport lors de la clôture d’une période comptable ou d’un exercice financier. | 9 |
 | [Balance de vérification détaillée](https://businesscentral.dynamics.com?report=4) | Affiche la balance de vérification détaillée pour les écritures sélectionnées. Vous pouvez définir les comptes qui seront inclus dans le rapport en définissant des filtres. Utilisez ce rapport lors de la clôture d’une période comptable ou d’un exercice financier. | 4 |
 | [Balance de vérification/Exercice précédent](https://businesscentral.dynamics.com?report=7) | Affiche la balance de vérification comparée aux chiffres de l’année précédente. Vous pouvez choisir de visualiser la balance de vérification générale relative à des dimensions sélectionnées. Utilisez ce rapport lors de la clôture d’une période comptable ou d’un exercice financier. *L’année précédente* signifie la même période de l’année calendaire précédente. | 7 | 

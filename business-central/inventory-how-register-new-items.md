@@ -1,60 +1,63 @@
 ---
-title: Créer des fiches article pour des biens ou des services (contient une vidéo)
+title: Créer des fiches article pour des biens ou des services
 description: Vous créez des fiches article pour les services que vous vendez en heures et pour les produits physiques. Les exemples incluent les éléments d’assemblage et les produits finis que vous vendez à partir de votre inventaire.
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
 ms.topic: conceptual
-ms.devlang: al
 ms.search.keywords: 'item, finished good, component, raw material, assembly item, item substitution'
 ms.search.form: '30, 5717, 31, 32, 346, 9091, 5718, 5716, 5720, 1384, 1383, 35, 5404, 1378, 5719'
-ms.date: 11/02/2022
-ms.author: bholtorf
+ms.date: 05/24/2024
 ms.service: dynamics-365-business-central
+ms.custom: bap-template
 ---
-# Enregistrer de nouveaux articles
+# Enregistrement des nouveaux articles
 
-Les articles, entre autres produits, sont la base de votre activité, les biens ou les services que vous commercialisez. Chaque article doit être enregistré en tant que fiche article.
+Les articles sont les biens ou services que vous achetez, stockez, vendez, livrez et dont vous prenez en compte. Utilisez le **Carte d’article** page pour enregistrer des informations sur les types d’éléments suivants :
 
-Les fiches article contiennent les informations nécessaires à l'achat, le stockage, la vente, la livraison et la comptabilisation des articles.
+* **Inventaire** spécifie que l’article est une unité physique que vous gérez et suivez dans l’inventaire.
+* **Hors inventaire** sont des unités physiques que vous ne gérez pas ou ne suivez pas dans l’inventaire.
+* **Service** les articles sont une unité de temps de travail, généralement utilisée dans la gestion des services.
 
-La fiche article peut être de type **Inventaire**, **Service** ou **Hors inventaire** pour spécifier si l’article est une unité d'inventaire physique, une unité de temps de travail ou une unité physique qui n’est pas suivie dans l'inventaire. Pour plus d'informations sur les types, voir [À propos des types d'articles](inventory-about-item-types.md).
+Pour en savoir plus sur ces types d'articles, accédez à [À propos des types d’articles](inventory-about-item-types.md).
 
-Un article peut être structuré comme article parent avec les éléments enfants sous-jacents dans une nomenclature. En savoir plus sur les nomenclatures d’assemblage et les nomenclatures de production dans la section [Utiliser les nomenclatures](inventory-how-work-BOMs.md).
+> [!TIP]
+> Il existe également des articles de catalogue, qui sont similaires aux articles hors inventaire dans la mesure où ce sont des articles que vous proposez aux clients mais que vous ne gérez pas tant que vous ne les vendez pas. Pour en savoir plus, consultez [Utiliser les articles catalogue](inventory-how-work-nonstock-items.md).  
 
-Si vous achetez le même article chez plusieurs fournisseurs, vous pouvez lier ces fournisseurs à la fiche article. La page **Catalogue fournisseur articles** affiche les fournisseurs, de sorte que vous pouvez facilement sélectionner un autre fournisseur.
+## Fournisseurs principaux et alternatifs
 
-Les *Articles de catalogue* sont des articles que vous offrez à vos clients, mais que vous ne souhaitez pas gérer dans votre système tant que vous ne les commercialisez pas. Les articles de catalogue ne sont pas des articles normaux de type **Hors inventaire**. En savoir plus sur [Utiliser des éléments de catalogue](inventory-how-work-nonstock-items.md).  
+Si vous achetez le même article chez plusieurs fournisseurs, vous pouvez lier ces fournisseurs à la article. Utilisez le **Vendeurs** action sur le **Carte d’article** page pour ouvrir le **Catalogue des fournisseurs d’articles** page. La page affiche les fournisseurs auprès desquels vous achetez l’article, afin que vous puissiez facilement créer ou sélectionner un autre fournisseur lorsque vous créez un bon de commande.
 
-> [!NOTE]  
-> Si des modèles article existent pour différents types d'articles, une page s'affiche automatiquement lorsque vous créez une nouvelle fiche article à partir de laquelle vous pouvez sélectionner un modèle article approprié. Si un seul modèle article existe, les nouvelles fiches article utiliseront toujours ce modèle.
+## Utiliser modèles article
 
-La procédure suivante explique comment créer une fiche article à partir de zéro. Vous pouvez également créer de nouvelles fiches d'objets en copiant celles existantes. Pour plus d'informations, voir [Copier des articles existants pour créer de nouveaux articles](inventory-how-copy-items.md).  
+Pour réutiliser les paramètres de différents types d’éléments lorsque vous créez de nouveaux éléments, vous pouvez enregistrer les éléments en tant que modèles d’élément. Les modèles d’articles permettent d’accélérer le processus d’ajout de nouveaux articles et d’améliorer la cohérence de vos données d’articles. Lorsque vous enregistrez un nouvel élément, une page apparaît qui vous permet de choisir un modèle. Après avoir choisi un modèle, ses paramètres sont renseignés pour vous sur l’élément que vous créez. Si vous avez un seul modèle article, les nouvelles article utiliseront toujours ce modèle. Pour savoir comment configurer un modèle d’élément, accédez à [Enregistrer une fiche article en tant que modèle d’article](#save-an-item-card-as-an-item-template).
 
-<br />
+## Inclure des éléments dans les nomenclatures
 
-> [!Video https://www.microsoft.com/videoplayer/embed/RE47eLx?rel=0]
+Vous pouvez structurer des hiérarchies comportant un article principal avec des éléments de composantes sous-jacents dans les nomenclatures d’assemblage et de production. Pour en savoir plus sur les nomenclatures, consultez [Utilisation des nomenclatures](inventory-how-work-BOMs.md).
 
 ## Pour créer une fiche article
+
+La vidéo suivant montre la manière dont un article est paramétrée sur la fiche article. Toutefois, vous pouvez également configurer de nouvelles articles en copiant celles existantes. Pour plus d’informations, aller [Copier des articles existants pour créer de nouveaux articles](inventory-how-copy-items.md).  
+
+> [!Video https://www.microsoft.com/videoplayer/embed/RE47eLx?rel=0]
 
 [!INCLUDE[create_new_item](includes/create_new_item.md)]
 
 > [!NOTE]
-> Dans le champ **Mode évaluation coût**, vous configurez la façon dont le coût unitaire de l'article est calculé en estimant le flux d'articles physiques dans votre compagnie. Il existe cinq modes évaluation stock disponibles, selon le type d'article. Pour plus d'informations, [Détails de conception : modes évaluation stock](design-details-costing-methods.md).
+> Dans le champ **Mode évaluation coût**, vous configurez la façon dont le coût unitaire de l'article est calculé en estimant le flux d'articles physiques dans votre compagnie. Il existe cinq modes évaluation stock disponibles, selon le type d'article. Pour en savoir plus sur coûts des stocks, accédez à [Détails de conception : Méthodes Évaluation des coûts](design-details-costing-methods.md).
 >
-> Si vous sélectionnez **Moyenne**, le coût unitaire de l'article est calculé comme le coût unitaire moyen à chaque moment après un achat. L'inventaire est évalué en supposant que tous les inventaires sont vendus simultanément. Avec ce paramètre, vous pouvez choisir le champ **Coût unitaire**, sur la page **Aperçu calc. coût moyen** de la fiche article pour afficher l'historique des transactions à partir duquel est calculé le coût moyen
+> Si vous sélectionnez **Moyenne**, le coût unitaire de l’article est calculé comme le coût unitaire moyen à chaque moment après un achat. L'inventaire est évalué en supposant que tous les inventaires sont vendus simultanément. Avec ce paramètre, vous pouvez choisir le champ **Coût unitaire**, sur la page **Aperçu calc. coût moyen** de la fiche article pour afficher des transactions pour calculé le coût moyen.
 
-Vous pouvez afficher ou modifier les prix ou escomptes spéciaux que vous accordez, ou que votre fournisseur vous accorde, pour l'article si certains critères sont réunis, par exemple le client, la quantité minimale de commande ou la date de fin. Pour ce faire, choisissez les actions **Définir des prix spéciaux** ou **Définir des escomptes spéciaux**. Chaque ligne de la page **Prix de vente**, par exemple, représente un prix spécial. Chaque colonne représente un critère qui doit s'appliquer pour accorder à un client le prix spécial que vous entrez dans le champ **Prix unitaire** de la page **Prix de vente**. Pour plus d'informations, voir [Enregistrement des prix de vente, des escomptes et des ententes sur les paiements](sales-how-record-sales-price-discount-payment-agreements.md) ou [Enregistrer des prix d'achat et des escomptes spéciaux](purchasing-how-record-purchase-price-discount-payment-agreements.md).
+Vous pouvez utiliser les prix ou escomptes spéciaux que vous ou votre fournisseur accordez pour l’article en fonction de certains critères. Par exemple, les critères incluent le client, la quantité minimale de commande ou la date de fin. Configurez des prix spéciaux en choisissant les actions **Définir les prix spéciaux** ou **Définir les escomptes spéciaux**. Chaque ligne de la page **Prix de vente**, par exemple, représente un prix spécial. Chaque colonne représente un critère qui doit s'appliquer pour accorder à un client le prix spécial que vous entrez dans le champ **Prix unitaire** de la page **Prix de vente**. Pour plus d’informations sur les prix, voir [Enregistrer des prix de vente, des escomptes et des ententes sur les paiements](sales-how-record-sales-price-discount-payment-agreements.md) ou [Enregistrer des prix d’achat spéciaux et des escomptes](purchasing-how-record-purchase-price-discount-payment-agreements.md).
 
-L'article est désormais enregistré, et la fiche article est prête à être utilisée sur les documents d'achat et de vente.
+### Enregistrer la fiche article en tant que modèle article
 
-Si vous souhaitez utiliser cette fiche article comme modèle lorsque vous créez de nouvelles fiches article, enregistrez-la comme modèle. Pour plus d'informations, reportez-vous à la section suivantes.  
-
-### Pour enregistrer la fiche article en tant que modèle
-
-1. Sur la page **Fiche article**, sélectionnez l'action **Sauvegarder comme modèle**. La page **Modèle article** s'ouvre et affiche la fiche article comme modèle.
+1. Sur la page **Fiche article**, sélectionnez l'action **Sauvegarder comme modèle**. La page **Modèle article** affiche la fiche article comme modèle.
 2. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
-3. Pour réutiliser les axes analytiques dans les modèles, sélectionnez l'action **Axes analytiques**. La page **Modèles dimension** s'ouvre et affiche tous les codes dimension qui sont configurés pour l'article.
-4. Modifiez ou entrez les codes dimension s’appliquant aux nouvelles fiches article créées à l’aide du modèle.
-5. Lorsque vous terminez le nouveau modèle article, cliquez sur le bouton **OK**.
+
+> [!TIP]
+> Vous pouvez également réutiliser les dimensions des éléments. Pour réutiliser les axes analytiques dans les modèles, sélectionnez l'action **Axes analytiques**. La page **Modèles dimension** affiche les dimensions qui sont définies pour l’article. Modifiez ou ajoutez des dimensions qui s’appliquent aux nouveaux éléments que vous créez à partir du modèle.
 
 Le modèle article est ajouté à la liste des modèles article. Vous pouvez ainsi l'utiliser pour créer des fiches article.
 

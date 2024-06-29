@@ -1,25 +1,26 @@
 ---
-title: Organiser les articles en catégories (contient une vidéo) | Microsoft Docs
+title: Organiser les articles en catégories
 description: 'Pour vous aider à rechercher et à trouver des articles, vous pouvez affecter des attributs d''article et organiser les articles en catégories.'
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'category, search, attribute, facet'
 ms.search.form: '5730, 5733, 5401'
-ms.date: 04/01/2021
-ms.author: bholtorf
+ms.date: 06/10/2024
 ms.service: dynamics-365-business-central
 ---
-# <a name="categorize-items"></a>Catégoriser des articles
+# Classement des articles
 
-Pour conserver un aperçu de vos articles et pour vous aider à trier et à trouver les articles, il est utile d'organiser vos articles par catégorie.
+Pour conserver un aperçu de vos articles et pour vous aider à trier et à trouver les articles, il est utile d’organiser vos articles par catégorie.
 
 Pour trouver les articles par caractéristique, vous pouvez affecter des attributs d'article aux articles et également aux catégories d'article. Pour en savoir plus, voir [Utiliser les attributs d'article](inventory-how-work-item-attributes.md).
 <br><br>  
 
 > [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE4j4mo?rel=0]
 
-## <a name="to-create-an-item-category"></a>Pour créer une catégorie d'article
+## Pour créer une catégorie d'article
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Catégories d’article**, puis choisissez le lien associé.
 2. Sur la page **Catégories d'article**, sélectionnez l'action **Nouveau**.
 3. Sur la page **Fiche catégorie d'article**, sur le raccourci **Général**, complétez les champs suivants : [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
@@ -31,19 +32,19 @@ Pour trouver les articles par caractéristique, vous pouvez affecter des attribu
 > [!NOTE]  
 > Les attributs d'article que vous assignez à une catégorie d'article seront automatiquement affectés à l'article auquel la catégorie d'article est assignée.
 
-Si vous changez d’avis sur une catégorie d’article, vous pouvez la supprimer. Cependant, si elle a déjà été affectée à un article, vous devez supprimer cette affectation avant de pouvoir supprimer la catégorie d’article.
+Si vous changez d’avis sur une catégorie d’article, vous pouvez la supprimer. Cependant, si la catégorie a été affectée à un article, vous devez supprimer cette affectation avant.
 
-## <a name="to-assign-an-item-category-to-an-item"></a>Pour assigner une catégorie d'article à un article
+## Pour assigner une catégorie d'article à un article
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
 2. Ouvrez la fiche pour l'article que vous souhaitez assigner à une catégorie d'article.
 3. Sélectionnez le bouton de recherche dans le champ **Code catégorie article** et sélectionnez une catégorie d'article existante. Sinon, sélectionnez l'action **Nouveau** pour créer tout d'abord une nouvelle catégorie d'article comme expliqué dans [Créer une catégorie d'article](inventory-how-categorize-items.md#to-create-an-item-category).
 
-## <a name="categories-attributes-and-variants"></a>Catégories, attributs et variantes
+## Catégories, attributs et variantes
 
 [!INCLUDE[inventory_variant](includes/inventory_variant.md)]
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Utilisation des attributs d’articles](inventory-how-work-item-attributes.md)  
 [Gestion des variantes de produits](inventory-item-variants.md)  

@@ -1,11 +1,11 @@
 ---
-title: "Création de rapports Power BI Desktop pour afficher des données Business\_Central | Microsoft Docs"
+title: "Création de rapports dans Power BI Desktop pour afficher des données Business\_Central"
 description: Vous pouvez rendre vos données disponibles sous forme de source de données dans Power BI et créer des rapports puissants sur l'état de votre activité.
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'business intelligence, KPI, Odata, Power App, SOAP, analysis'
-ms.date: 01/22/2024
+ms.date: 06/12/2024
 ms.author: jswymer
 ms.service: dynamics-365-business-central
 ms.reviewer: jswymer
@@ -13,23 +13,21 @@ ms.reviewer: jswymer
 
 # Création de rapports Power BI pour afficher des données [!INCLUDE [prod_long](includes/prod_long.md)]
 
-Vous pouvez rendre vos données [!INCLUDE[prod_long](includes/prod_long.md)] disponibles sous forme de source de données dans Power BI Desktop et créer des rapports puissants sur l'état de votre activité.
+Vous pouvez rendre vos données [!INCLUDE[prod_long](includes/prod_long.md)] disponibles sous forme de source de données dans Power BI Desktop et créer des rapports puissants sur l’état de votre activité.
 
-Cet article aborde la prise en main de Power BI Desktop pour créer des rapports qui affichent des données [!INCLUDE[prod_long](includes/prod_long.md)].  Après avoir créé des rapports, vous pouvez les publier dans votre service Power BI ou les partager avec tous les utilisateurs de votre organisation. Une fois que ces rapports figurent dans le service Power BI, les utilisateurs configurés pour ce dernier peuvent alors afficher les rapports dans [!INCLUDE[prod_long](includes/prod_long.md)].
+Cet article décrit la prise en main de Power BI Desktop pour créer des rapports qui affichent des données [!INCLUDE[prod_long](includes/prod_long.md)]. Après avoir créé des rapports, vous pouvez les publier dans votre service Power BI ou les partager avec tous les utilisateurs de votre organisation. Lorsque les rapports figurent dans le service Power BI, les utilisateurs configurés pour ce dernier peuvent afficher les rapports dans [!INCLUDE[prod_long](includes/prod_long.md)].
 
 ## Mise en route
 
 - Inscrivez-vous au service Power BI.
 
-  Si vous ne vous êtes pas encore inscrit, accédez à [https://powerbi.microsoft.com](https://powerbi.microsoft.com). Au moment de votre inscription, utilisez votre adresse de courriel professionnelle et votre mot de passe.
+  Si vous ne vous êtes pas inscrit, accédez à [https://powerbi.microsoft.com](https://powerbi.microsoft.com). Au moment de votre inscription, utilisez votre adresse de courriel professionnelle et votre mot de passe.
 
 - Téléchargez [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 
   Power BI Desktop est une application gratuite que vous installez sur votre ordinateur local. Pour plus d'informations, voir [Démarrage rapide : Se connecter aux données dans Power BI Desktop](/power-bi/desktop-quickstart-connect-to-data).
 
-- Veillez à ce que les données que vous souhaitez dans le rapport soit disponible en tant que page API ou publiées en tant que service Web.
-
-  Pour plus d’informations, consultez [Exposer les données via des pages API ou des services Web OData](admin-powerbi-setup.md#exposedata).
+- Veillez à ce que les données que vous souhaitez dans le rapport soit disponible en tant que page API ou publiées en tant que service Web. Pour plus d’informations, consultez [Exposer les données via des pages API ou des services Web OData](admin-powerbi-setup.md#exposedata).
 
 <!--- For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, get the following information:
 
@@ -62,24 +60,24 @@ La première tâche dans le cadre de la création de rapports consiste à ajoute
 
 5. Connectez-vous à [!INCLUDE [prod_short](includes/prod_short.md)] (une fois seulement).
 
-    Si vous ne vous êtes jamais connecté à [!INCLUDE [prod_short](includes/prod_short.md)] depuis Power BI Desktop auparavant, vous êtes invité à vous connecter.
+    Si vous ne vous êtes jamais connecté à [!INCLUDE [prod_short](includes/prod_short.md)] depuis Power BI Desktop, vous êtes invité à vous connecter.
 
     - Pour [!INCLUDE [prod_short](includes/prod_short.md)] en ligne, sélectionnez **Se connecter**, puis choisissez le compte pertinent. Utilisez le même compte que celui avec lequel vous vous êtes connecté(e) à [!INCLUDE [prod_short](includes/prod_short.md)]. Lorsque vous avez terminé, sélectionnez **Connecter**.
 
     <!--- For [!INCLUDE [prod_short](includes/prod_short.md)] on-premises, first enter the OData URL for [!INCLUDE[prod_short](includes/prod_short.md)], then select **OK**. When prompted, enter the user name and password of the account to use for connecting to [!INCLUDE[prod_short](includes/prod_short.md)]. In the **Password** box, enter the web service access key. When done, select **Connect**.-->
 
     > [!NOTE]  
-    > Une fois que vous êtes connecté(e) à [!INCLUDE[prod_short](includes/prod_short.md)], vous n’êtes plus invité(e) à vous connecter. [Comment modifier ou effacer le compte que j’utilise actuellement pour me connecter à Business Central depuis Power BI Desktop ?](/dynamics365/business-central/power-bi-faq?tabs=designer#perms)
+    > Une fois connecté(e) à [!INCLUDE[prod_short](includes/prod_short.md)], vous n’êtes plus invité(e) à vous connecter. [Comment modifier ou effacer le compte que j’utilise actuellement pour me connecter à Business Central depuis Power BI Desktop ?](/dynamics365/business-central/power-bi-faq?tabs=designer#perms)
 
-6. Une fois connecté, Power BI se met en contact avec le service Business Central. La fenêtre **Navigateur** apparaît et affiche les sources de données disponibles pour les rapports de construction. Sélectionnez un dossier pour le développer et voir les sources de données disponibles. 
+6. Une fois connecté, Power BI contacte le [!INCLUDE [prod_short](includes/prod_short.md)] service. Le **Navigateur** affiche les sources de données disponibles pour les rapports de construction. Sélectionnez un dossier pour le développer et afficher les sources de données disponibles.
 
-   Ces sources de données représentent tous les services web et les pages API que vous avez publiés à partir de [!INCLUDE [prod_short](includes/prod_short.md)]. Les sources de données sont regroupées par environnements et compagnies Business Central. Avec Business Central Online, **Navigateur** a la structure suivante :
+   Ces sources de données représentent tous les services web et les pages API qui sont publiés pour [!INCLUDE [prod_short](includes/prod_short.md)], regroupés par environnements et compagnies. Avec [!INCLUDE [prod_short](includes/prod_short.md)] Online, **Navigateur** a la structure suivante :
 
     - **Nom de l’environnement**
       - **Nom de la compagnie**
         - **API avancées**
 
-          Ce dossier répertorie les pages API avancées publiées par Microsoft, comme les [API d’automatisation de Business Central](/dynamics365/business-central/dev-itpro/administration/itpro-introduction-to-automation-apis) et [pages d’API personnalisées pour Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api). Les pages d’API personnalisées sont en outre regroupées dans des dossiers par propriétés [APIPublisher](/dynamics365/business-central/dev-itpro/developer/properties/devenv-apipublisher-property)/[APIGroup](/dynamics365/business-central/dev-itpro/developer/properties/devenv-apigroup-property) du code source de la page API.
+          Ce dossier répertorie les pages API avancées publiées par Microsoft, comme les [API d’automatisation de Business Central](/dynamics365/business-central/dev-itpro/administration/itpro-introduction-to-automation-apis) et [pages d’API personnalisées pour Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api). Les pages d’API personnalisées sont en outre regroupées dans des dossiers selon propriétés [APIPublisher](/dynamics365/business-central/dev-itpro/developer/properties/devenv-apipublisher-property)/[APIGroup](/dynamics365/business-central/dev-itpro/developer/properties/devenv-apigroup-property) du code source de la page API.
 
         - **API standards v2.0**
 
@@ -96,7 +94,7 @@ La première tâche dans le cadre de la création de rapports consiste à ajoute
 7. Sélectionnez la source ou les sources de données que vous souhaitez ajouter à votre modèle de données, puis sélectionnez le bouton **Charge**.
 8. Si vous souhaitez ajouter ultérieurement d’autres données Business Central, vous pouvez répéter les étapes précédentes.
 
-Une fois les données chargées, elles s'affichent dans le volet de navigation à droite dans la page. À ce stade, vous êtes connecté(e) à vos données [!INCLUDE[prod_short](includes/prod_short.md)] et vous êtes prêt(e) à générer votre rapport Power BI.  
+Une fois les données chargées, elles s'affichent dans le volet de navigation à droite dans la page. À ce stade, vous êtes connecté à vos données [!INCLUDE[prod_short](includes/prod_short.md)] et vous pouvez commencer à générer votre rapport Power BI.  
 
 > [!TIP]
 > Pour plus d’informations sur l’utilisation de Power BI Desktop, reportez-vous à [Mise en route avec Power BI Desktop](/power-bi/fundamentals/desktop-getting-started).
@@ -129,7 +127,7 @@ Après avoir téléchargé le thème du rapport [!INCLUDE [prod_short](includes/
 
 ## Publier des rapports
 
-Après avoir créé ou modifié un rapport, vous pouvez le publier dans votre service Power BI et le partager avec d’autres membres de votre organisation. Une fois publié, le rapport apparaît dans Power BI. Le rapport est également disponible pour sélection dans [!INCLUDE[prod_short](includes/prod_short.md)].
+Après avoir créé ou modifié un rapport, vous pouvez le publier dans votre service Power BI et le partager avec d’autres membres de votre organisation. Après avoir publié un rapport, il est disponible dans Power BI. Le rapport est également disponible pour sélection dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
 Pour publier un rapport, sélectionnez **Publier** sur l’onglet **Accueil** du ruban ou du menu **Fichier**. Si vous êtes connecté au service Power BI, le rapport est publié sur ce service. Sinon, vous êtes invité à vous connecter. 
 
@@ -148,19 +146,28 @@ Il existe plusieurs façons de transmettre des rapports à vos collègues et à 
 
     Si vous avez une licence Power BI Pro, vous pouvez partager le rapport avec d’autres, directement depuis votre service Power BI. Pour plus d’informations, consultez [Power BI - Partager un tableau de bord ou un rapport](/power-bi/collaborate-share/service-share-dashboards#share-a-dashboard-or-report).
 
+## Comment développer des rapports Power BI intercompagnies ou interenvironnements
+
+Le [!INCLUDE[prod_short](includes/prod_short.md)] points de terminaison de l’API portent tous le préfixe `https://api.businesscentral.dynamics.com/v2.0/<environment_name>/api/v2.0` suivi de `/companies({company_id})/accounts({id})` (ici nous utilisons le `accounts` API à titre d’illustration). Vous pouvez utiliser cette structure pour créer des requêtes PowerQuery qui chargent des données pour plusieurs compagnies ou plusieurs environnements si l’utilisateur qui lit les données peut y accéder.
+
+Pour configurer une requête afin de charger des données pour plusieurs compagnies, procédez comme suit :
+
+1. Prenez la requête PowerQuery qui charge les données d’une seule compagnie. Convertissez-le en fonction Power Query personnalisée qui prend le code de la compagnie (ou peut-être le nom de l’environnement) comme paramètres. Pour en savoir plus, rendez-vous sur [Utiliser la personnalisation Power Query les fonctions](/power-query/custom-function).
+1. Utilisez désormais la nouvelle fonction personnalisée dans une requête PowerQuery, où vous mappez la fonction sur une liste de compagnies, puis fusionnez les ensembles de données à l’aide de la fonction [Table.Combine](/powerquery-m/table-combine) Power Query.
+
 ## Résolution des problèmes
 
 ### « Impossible d’insérer un enregistrement. L’intention de connexion actuelle est en lecture seule. » erreur de connexion à la page API personnalisée
 
 > **S’APPLIQUE À :** Business Central Online
 
-À compter de février 2022, les nouveaux rapports qui utilisent les données Business Central se connecteront par défaut à une réplique en lecture seule de la base de données Business Central. Dans de rares cas, selon la conception de la page, vous obtenez une erreur lorsque vous essayez de vous connecter et d’obtenir des données à partir de la page.
+À compter de février 2022, les nouveaux rapports qui utilisent les données [!INCLUDE [prod_short](includes/prod_short.md)] se connecteront par défaut à une réplique en lecture seule de la base de données [!INCLUDE [prod_short](includes/prod_short.md)]. Dans de rares cas, selon la conception de la page, vous obtenez une erreur lorsque vous essayez de vous connecter et d’obtenir des données à partir de la page.
 
 1. Lancez Power BI Desktop.
 2. Sur le ruban, cliquez sur **Obtenir les données** > **Services en ligne**.
 3. Dans le volet **Services en ligne**, sélectionnez **Dynamics 365 Business Central**, puis **Connecter**.
 4. Dans la fenêtre **Navigateur**, sélectionnez le point de terminaison d’API à partir duquel vous souhaitez charger les données.
-5. Dans le volet d’aperçu sur la droite, vous verrez l’erreur suivante :
+5. Le volet d’aperçu affiche l’erreur suivante :
 
    *Dynamics365BusinessCentral : Échec de la requête : le serveur distant a renvoyé une erreur : (400) Requête incorrecte. (Impossible d’insérer un enregistrement. L’intention de connexion actuelle est en lecture seule. CorrelationId : [...]) ».*
 

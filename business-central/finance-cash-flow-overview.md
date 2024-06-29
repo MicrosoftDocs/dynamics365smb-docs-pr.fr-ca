@@ -1,25 +1,26 @@
 ---
-title: Aperçu de trésorerie
+title: Vue d’ensemble de la trésorerie
 description: Aperçu des encaissements et des décaissements pour aider à prévoir les montants à recevoir et à payer.
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
 ms.topic: overview
 ms.devlang: al
 ms.search.keywords: 'cash flow, money flow, expense and income, liquidity, cash receipts minus cash payments'
 ms.search.form: '841, 849, 1818'
-ms.date: 12/20/2021
-ms.author: bholtorf
+ms.date: 06/10/2024
 ms.service: dynamics-365-business-central
 ---
 
-# <a name="cash-flow-overview"></a>Aperçu de trésorerie
+# Vue d’ensemble de la trésorerie
 
 La compréhension des encaissements et des décaissements est essentielle pour la gestion fructueuse d’une activité. La trésorerie vous permet de créer facilement des prévisions à court terme, qui prévoient les moyens et les délais de réception et de règlement au sein de votre société. Il est important de savoir que votre société aura suffisamment de fonds pour payer ses créditeurs et ses dépenses à échéance.
 
-## <a name="definition-of-cash-flow"></a>Définition du terme Trésorerie
+## Définition de Trésorerie
 
 Le terme *Trésorerie* désigne les encaissements moins les espèces sur une période donnée. Il s’agit d’une estimation de fonds à encaisser et décaisser au sein de votre société. Tous les produits et toutes les dépenses prévus en font partie.
 
-## <a name="work-with-cash-flow"></a>Utilisation de la trésorerie
+## Utilisation de la trésorerie
 
 La figure ci-après décrit comment utiliser la trésorerie.
 
@@ -36,9 +37,9 @@ La figure ci-après décrit comment utiliser la trésorerie.
   - Immobilisations – Informations sur la cession planifiée et les achats budgétés d’immobilisations.  
   - Dépenses et revenus manuels – Gestion des dépenses et des revenus manuels, et leur intégration dans les prévisions de la trésorerie.  
 - Si vous utilisez un traitement en lot pour transférer les informations des modules Grand livre, Achats, Ventes, Service et Immobilisations vers la feuille trésorerie, vous enregistrez des lignes de feuille d’activité pour effectuer une prévision de la trésorerie.  
-- Vous utilisez plusieurs fenêtres, rapports et graphiques pour analyser et imprimer des prévisions de la trésorerie concernant des aperçus de disponibilité et de planning.  
+- Vous utilisez plusieurs pages, rapports et graphiques pour analyser et imprimer des prévisions de la trésorerie concernant des aperçus de disponibilité et de planning.  
 
-## <a name="making-a-cash-flow-forecast"></a>Réalisation d’une prévision de la trésorerie
+## Réalisation d’une prévision de la trésorerie
 
 En fonction des lignes de feuille d’activité enregistrées, vous pouvez effectuer périodiquement des prévisions de la trésorerie. La présentation suivante est fréquemment utilisée pour des prévisions de la trésorerie. La présentation est constituée de trois sections :
 
@@ -64,12 +65,12 @@ La trésorerie nette ou l’encaisse est calculée comme suit : règlements tot
 
 *trésorerie nette* = *règlements totaux* – *décaissements totaux* + *fonds liquides*
 
-La prévision peut ensuite être utilisée comme un outil interne de décision en gestion pour préparer l’avenir et prendre des décisions stratégiques importantes pour la société.
+La prévision peut être utilisée comme un outil interne de décision en gestion pour préparer l’avenir et prendre des décisions stratégiques importantes pour la société.
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi .
 
 [Configuration d'une analyse de trésorerie](finance-setup-cash-flow-analyses.md)  
-[Analyser les flux de trésorerie](finance-analyze-cash-flow.md)  
+[Analyse de la trésorerie](finance-analyze-cash-flow.md)  
 [Prévoir votre trésorerie dans Dynamics 365 Business Central](/training/modules/forecast-cash-flow-dynamics-365-business-central/index)  
 [Configurer des prévisions de la trésorerie à l’aide d’Azure AI dans Dynamics 365 Business Central](/training/modules/setup-cash-flow-forecasts/)  
 

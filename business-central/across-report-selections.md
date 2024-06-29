@@ -1,28 +1,28 @@
 ---
-title: "Sélection des rapports dans Business\_Central"
+title: Sélection de rapport dans Business Central
 description: "Découvrez comment configurer les rapports que vous utilisez pour imprimer différents types de documents dans Business\_Central."
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.search.keywords: 'setup, reporting'
 ms.search.form: '306, 307, 347, 385, 524, 865, 5932, 7401, 7355, 99000917'
-ms.date: 06/09/2022
-ms.author: bholtorf
+ms.date: 06/13/2024
 ms.service: dynamics-365-business-central
-ms.reviewer: bholtorf
 ---
-# <a name="report-selection-for-documents-in-business-central"></a>Sélection de rapport pour les documents dans Business Central
+# Sélection de rapport pour les documents dans Business Central
 
-Vous pouvez configurer des rapports par défaut à utiliser pour imprimer des documents de vente, d’achat et de services, tels que des commandes, des devis et des factures. Par exemple, si vous avez une présentation spécifique pour les factures vente, vous pouvez spécifier ce rapport sur la page **Sélection des rapports - Vente** afin qu’elle soit utilisée pour envoyer ou imprimer les factures vente.  
+Vous pouvez configurer des rapports par défaut à utiliser pour imprimer des documents de vente, d’achat et de services, tels que des commandes, des devis et des factures. Par exemple, si vous avez une présentation spécifique pour les factures vente, vous pouvez spécifier ce rapport sur la page **Sélection de rapports – Vente**. Vous pouvez ensuite utiliser le rapport lorsque vous envoyez ou imprimez des factures de vente.  
 
-## <a name="available-report-selections"></a>Sélection des rapports disponible
+## Sélection des rapports disponible
 
-Les pages **Sélection des rapports** spécifient quel rapport sera imprimé dans différentes situations. [!INCLUDE [prod_short](includes/prod_short.md)] fournit des configurations par défaut, mais vous pouvez les modifier si nécessaire. Vous pouvez également ajouter des rapports aux pages **Sélection des rapports** si vous souhaitez imprimer plus d’un rapport par type de document, par exemple. 
+Les pages **Sélections de rapports** spécifient les rapports à imprimer dans différentes situations. [!INCLUDE [prod_short](includes/prod_short.md)] fournit des configurations par défaut, mais vous pouvez les modifier si nécessaire. Vous pouvez également ajouter des rapports aux pages **Sélection des rapports** si vous souhaitez imprimer plus d’un rapport par type de document, par exemple. 
 
 Le tableau suivant décrit où vous pouvez trouver des informations sur les différentes pages.  
 
 |Zone ou tâche  |En savoir plus|
 |--------------|----------|
-|Exemple de fonctionnement de la sélection des rapports (ventes)|[Sélection des rapports pour les documents de vente](#example-report-selection-for-sales-documents) ci-dessous|
+|Exemple de fonctionnement de la sélection des rapports (ventes)|[Sélection des rapports pour les documents de vente](#example-report-selection-for-sales-documents)|
 |Présentation par défaut des courriels avec des documents vente et achat  |[Configurer des textes et des présentations de courriel réutilisables pour des documents vente et achat](admin-how-setup-email.md#set-up-reusable-email-texts-and-layouts) |
 |Définir les mises en page de chèques     |[Sélectionner une mise en page de chèque](finance-how-define-check-layouts.md) |
 |Définir des rapports pour la déclaration de taxe sur la valeur ajoutée (TVA) (Allemagne)|[Configurer les rapports pour la TVA et Intrastat](LocalFunctionality/Germany/how-to-set-up-reports-for-vat-and-intrastat.md) |
@@ -32,22 +32,24 @@ Le tableau suivant décrit où vous pouvez trouver des informations sur les diff
 
 La version par défaut de [!INCLUDE [prod_short](includes/prod_short.md)] comprend les pages **Sélection des rapports** suivantes :
 
-* **Sélection des rapports - Ventes**  
-* **Sélection des rapports - Achats**  
-* **Sélection des rapports - Inventaire**  
-* **Sélection des rapports - Trésorerie**  
-* **Sélection des rapports - Entrepôt**  
-* **Sélection des rapports - Compte bancaire**  
-* **Sélection des rapports - Projet**  
-* **Sélection des rapports : Services**
+* **Sélection de rapport  - Ventes**  
+* **Sélection de rapports - Projet**  
+* **Sélection des états : Services**
+* **Sélection du rapport : achats**  
+* **Sélection des états - Trésorerie**  
+* **Sélection des états - Entrepôt**  
+* **Sélection des rapport : Stocks**  
+* **Sélection de rapport - Compte bancaire**  
+* **Sélection des rapports – Bon de production**  
+* **Sélection des rapports – Rappel/frais financiers**  
 
-## <a name="example-report-selection-for-sales-documents"></a>Exemple : Sélection des rapports pour les documents de vente
+## Exemple : Sélection des rapports pour les documents de vente
 
 La page **Sélection des rapports - Ventes** présente les rapports par défaut à utiliser dans différents scénarios pour chaque type de document associé. Choisissez un type de document dans le champ **Usage**, puis ajoutez ou examinez la sélection des rapports. Vous pouvez configurer plusieurs rapports et spécifier l’ordre de séquence dans lequel les rapports doivent être envoyés ou imprimés.  
 
 [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)]
 
-Vous ne pouvez pas envoyer tous les types de documents sous forme de pièces jointes à des courriels. Lorsque cela est possible, la page **Sélection des rapports** contient des champs supplémentaires.  
+Vous ne pouvez pas envoyer tous les types de documents sous forme de pièces jointes à des courriels. Pour les types de document pour lesquels cela est possible, la page **Sélection des rapports** contient des champs supplémentaires.  
 
 Par exemple, dans les pages **Sélection des rapports - Ventes** et **Sélection des rapports -Achat**, les champs suivants vous aident à configurer l’envoi de courriels :
 
@@ -57,7 +59,7 @@ Par exemple, dans les pages **Sélection des rapports - Ventes** et **Sélecti
 |**Utiliser comme pièce jointe à un courriel**| Joignez le document correspondant au courriel.|
 |**Description de la présentation du corps du courriel**|Spécifiez la présentation à utiliser pour le corps du courriel. En règle générale, la présentation du rapport est personnalisée. |
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configurer des textes et des présentations de courriel réutilisables](admin-how-setup-email.md#set-up-reusable-email-texts-and-layouts)  
 [Sélectionner une mise en page de chèque](finance-how-define-check-layouts.md)  

@@ -1,15 +1,17 @@
 ---
-title: Définir le mode d’échange électronique de documents
+title: Définir le mode d’échange électronique de données
 description: 'Définissez comment Business Central échange des données avec des fichiers externes tels que des documents électroniques, des données bancaires, des catalogues d’articles, etc.'
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.search.keywords: null
 ms.search.form: '1210, 1211, 1213, 1214, 1215, 1216, 1217'
-ms.date: 11/03/2022
-ms.author: bholtorf
+ms.date: 05/29/2024
 ms.service: dynamics-365-business-central
+ms.custom: bap-template
 ---
-# <a name="set-up-data-exchange-definitions"></a>Configurer les définitions d'échange de données
+# Configuration des définitions d’échange de données
 
 Vous pouvez configurer [!INCLUDE[prod_short](includes/prod_short.md)] pour échanger des données dans des tables spécifiques avec des données de fichiers externes. Par exemple, pour envoyer et recevoir des documents électroniques, importer et exporter des données bancaires ou d’autres données, telles que les données de paie et des catalogues d’articles. Pour plus d’informations, consultez [Échanger des données par voir électronique](across-data-exchange.md).  
 
@@ -26,14 +28,14 @@ Cet article couvre les procédures suivantes :
 * Exporter une définition d’échange de données au format XML pour utilisation par d’autres.
 * Importer un fichier XML pour une définition d’échange de données existante.
 
-## <a name="create-a-data-exchange-definition"></a>Créer une définition d’échange de données
+## Créer une définition d’échange de données
 
 La création d'une définition d'échange de données implique deux tâches :  
 
 1. Sur la page **Définition d'échange de données**, décrivez la mise en forme des lignes et des colonnes du fichier. Pour plus d’informations, consultez la section [Décrire le formatage de lignes et de colonnes dans un fichier](#formatlinescolumns).  
 2. Sur la page **Correspondance échange de données**, associez les colonnes du fichier de données avec les champs de [!INCLUDE[prod_short](includes/prod_short.md)]. Pour plus d’informations, consultez la section [Mapper les colonnes du fichier de données sur les champs de [!INCLUDE[prod_short](includes/prod_short.md)]](#mapfields).  
 
-### <a name="to-describe-the-formatting-of-lines-and-columns-in-the-file"></a><a name=formatlinescolumns></a>Pour décrire le formatage des lignes et des colonnes dans le fichier
+### <a name=formatlinescolumns></a>Pour décrire le formatage des lignes et des colonnes dans le fichier
 
 1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction Tell Me 1.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Définitions d’échange de données**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -46,9 +48,9 @@ La création d'une définition d'échange de données implique deux tâches :
     |**Type de fichier**|Spécifiez le type de fichier pour lequel la définition d’échange de données est utilisée. Vous pouvez sélectionner quatre types de fichiers :<br /><br /> -   **XML** : chaînes multicouches de contenu et de balisage entourées de balises indiquant la fonction.<br />-   **Texte variable** : les enregistrements ont une longueur variable et sont séparés par un caractère, comme une virgule ou un point\-virgule, également désigné sous le nom de *fichier délimité*.<br />-   **Texte fixe** : les enregistrements sont de même longueur, utilisant les caractères du clavier et chaque enregistrement est sur une ligne distincte, également connu sous le nom de *fichier de largeur fixe*.<br />- **Json** : chaînes multicouches de contenu dans JavaScript.|  
     |**Type**|Spécifiez pour quel type d'activité la définition d'échange de données est utilisée, par exemple **Exportation de paiement**.|  
     |**Codeunit gestion données**|Spécifiez le codeunit qui transfère les données dans et hors des tables de [!INCLUDE[prod_short](includes/prod_short.md)].|  
-    |**Codeunit validation**|Spécifiez le codeunit utilisé pour valider les données par rapport aux règles d'entreprise prédéfinies.|  
-    |**Codeunit lecture/écriture**|Spécifiez le codeunit qui traite les données importées avant la mise en correspondance et les données exportées après la correspondance.|  
-    |**XMLport lecture/écriture**|Spécifiez le XMLport par lequel un fichier de données importées ou un service passe avant le mappage et par lequel des données exportées sortent lors d’une écriture dans un fichier de données ou un service après le mappage.|  
+    |**Codeunit validation**|Spécifiez le codeunit utilisé pour valider les données par rapport aux règles métier prédéfinies.|  
+    |**Codeunit lecture/écriture**|Spécifiez le codeunit qui traite les données importées avant le mappage et les données exportées ensuite.|  
+    |**XMLport lecture/écriture**|Spécifiez le XMLport par lequel un fichier de données importées ou un service passe avant le mappage et par lequel des données exportées sont écrites dans un fichier de données ou un service après.|  
     |**Codeunit gestion données ext.**|Spécifiez le codeunit qui transfère les données externes dans et hors de l'infrastructure d'échange de données.|  
     |**Codeunit retour utilisateur**|Spécifiez le codeunit qui effectue des nettoyages après un mappage, par exemple le marquage des lignes lors de leur importation et la suppression des enregistrements temporaires.|  
     |**Encodage du fichier**|Spécifier l'encodage du fichier. **Remarque** : ce champ ne s’applique qu’aux importations.|  
@@ -74,12 +76,12 @@ La création d'une définition d'échange de données implique deux tâches :
     |**Nom**|Saisissez un code décrivant la ligne dans le fichier.|  
     |**Nombre colonnes**|Indiquez le nombre de colonnes que contient la ligne du fichier de données. **Remarque** : ce champ ne s’applique qu’aux importations.|  
     |**Étiquette de ligne de données**|Indiquez la position dans le schéma XML associé de l'élément qui représente l'écriture principale du fichier de données. **Remarque** : ce champ ne s’applique qu’aux importations.|  
-    |**Espace de noms**|Spécifiez l'espace de noms qui est prévu dans le fichier, pour activer la validation de l'espace de noms. Vous pouvez laisser ce champ vide si vous ne souhaitez pas activer la validation d'espace de noms.|  
+    |**Espace de noms**|Spécifiez l’espace de noms qui est prévu dans le fichier, pour activer la validation de l’espace de noms. Vous pouvez laisser ce champ vide si vous ne souhaitez pas activer la validation d’espace de noms.|  
     |**Code parent**|Spécifiez le parent de la ligne, comme indiqué dans le champ **Code** lorsque la configuration de l’échange de données est définie pour les fichiers avec des écritures parent et enfants, comme un en-tête et des lignes de document.
 
 5. Répétez l'étape 4 pour créer une ligne pour chaque type de fichier de données que vous voulez exporter.  
 
-     Planifiez maintenant de décrire le formatage des colonnes du fichier de données en renseignant les champs du raccourci **Définitions des colonnes** comme indiqué dans le tableau suivant. Vous pouvez utiliser la structure du fichier, par exemple un fichier .xsd pour le fichier de données afin de pré remplir le raccourci avec les éléments appropriés. Pour plus d’informations, consultez [Utiliser des schémas XML pour préparer des définitions d’échange de données](across-how-to-use-xml-schemas-to-prepare-data-exchange-definitions.md).
+     Planifiez maintenant de décrire le formatage des colonnes du fichier de données en renseignant les champs du raccourci **Définitions des colonnes** comme indiqué dans le tableau suivant, étape 8. Vous pouvez utiliser une structure du fichier, par exemple un fichier .xsd pour le fichier de données afin de pré remplir le raccourci avec les éléments appropriés. Pour plus d’informations, consultez [Utiliser des schémas XML pour préparer des définitions d’échange de données](across-how-to-use-xml-schemas-to-prepare-data-exchange-definitions.md).
 
 6. Sur le raccourci **Définitions de colonnes**, sélectionnez l’action **Extraire la structure de fichiers**.  
 7. Sur la page **Extraire la structure de fichiers**, sélectionnez la structure de fichier associée, puis sélectionnez **OK**. Les lignes du raccourci **Définitions de colonnes** sont renseignées conformément à la structure du fichier de données.  
@@ -91,7 +93,7 @@ La création d'une définition d'échange de données implique deux tâches :
     |**Nom**|Spécifiez le nom de la colonne.<br /><br /> Pour les fichiers XML, spécifiez le balisage qui indique les données à échanger.|  
     |**Type de données**|Spécifiez si les données à échanger sont de type **Texte**, **Date** ou **Décimale**.|  
     |**Format données**|Spécifiez le format des données, le cas échéant. Par exemple, **MM/JJ/AAAA** si le type de données est **Date**. **Remarque :** pour l’exportation, spécifiez le format de données en fonction de [!INCLUDE[prod_short](includes/prod_short.md)]. Pour l'importation, spécifiez le format de données en fonction du .NET Framework. Pour plus d’informations, consultez [Chaînes de format de date et heure standard](/dotnet/standard/base-types/standard-date-and-time-format-strings).|  
-    |**Culture mise en forme données**|Spécifiez le format de données régional, le cas échéant. Par exemple, **en-US** si le type de données est **Décimale** pour être sûr que la virgule est utilisée comme séparateur de .000, conformément au format américain. Pour plus d’informations, consultez [Chaînes de format de date et heure standard](/dotnet/standard/base-types/standard-date-and-time-format-strings). **Remarque** : ce champ ne s’applique qu’aux importations.|  
+    |**Culture mise en forme données**|Spécifiez le format de données régional, le cas échéant. Par exemple, **en-US** si le type de données est **Décimale** pour être sûr que la virgule est utilisée comme séparateur de 0,000, conformément au format américain. Pour plus d’informations, consultez [Chaînes de format de date et heure standard](/dotnet/standard/base-types/standard-date-and-time-format-strings). **Remarque** : ce champ ne s’applique qu’aux importations.|  
     |**Longueur**|Spécifiez la longueur de la ligne de longueur fixe qui comporte la colonne si le fichier de données est de type **Texte fixe**.|  
     |**Description**|Spécifie une description de la colonne. Ce champ est purement informatif.|  
     |**Chemin**|Indiquez la position de l'élément dans le schéma XML lié.|  
@@ -108,7 +110,7 @@ L'étape suivante de la création de la définition d'échange de données consi
 > [!NOTE]  
 > La correspondance spécifique dépend de l'objectif commercial du fichier de données à échanger et des variations locales. Même le standard bancaire SEPA a des variations locales. [!INCLUDE[prod_short](includes/prod_short.md)] prend en charge en natif l’importation de fichiers de relevé bancaire SEPA CAMT. Ceci est représenté par le code d'enregistrement de définition d'échange de données **SEPA CAMT** sur la page **Définitions d'échange de données**. Pour plus d'informations sur le mappage de champs spécifique de cette prise en charge de SEPA CAMT, voir [Mappage de champs lors de l'importation de fichiers SEPA CAMT](across-field-mapping-when-importing-sepa-camt-files.md).  
 
-### <a name="to-map-columns-in-the-data-file-to-fields-in-"></a><a name=mapfields></a>Pour mapper les colonnes du fichier de données aux champs de [!INCLUDE[prod_short](includes/prod_short.md)]
+### <a name=mapfields></a>Pour mapper les colonnes du fichier de données aux champs de [!INCLUDE[prod_short](includes/prod_short.md)]
 
 > [!TIP]
 > Parfois, les valeurs des champs que vous souhaitez associer sont différentes. Par exemple, le code langue pour les États-Unis est « U.S. » dans une application métier et « US » dans une autre. Cela signifie que vous devez transformer la valeur lorsque vous échangez des données. Cela se fait via les règles de transformation que vous définissez pour les champs. Pour plus d’informations, consultez [Règles de transformation](across-how-to-set-up-data-exchange-definitions.md#transformation-rules).
@@ -121,7 +123,7 @@ Vous pouvez également opérer un regroupement par n’importe quel champ, utili
     |Champ|Description|  
     |---------------------------------|---------------------------------------|  
     |**Code de la table**|Indiquez la table qui contient les champs vers lesquels ou à partir desquels des données sont échangées en fonction de la correspondance.|  
-    |**Utiliser comme table intermédiaire**|Spécifiez si la table que vous sélectionnez dans le champ **Code table** est une table intermédiaire de stockage des données importées avant leur mappage vers la table cible.<br /><br /> Vous utilisez généralement une table intermédiaire lorsque la définition d'échange de données est utilisée pour importer et convertir des documents électroniques, tels que des factures fournisseur en factures achat dans [!INCLUDE[prod_short](includes/prod_short.md)]. Pour plus d’informations, consultez [Échanger des données par voir électronique](across-data-exchange.md).|  
+    |**Utiliser comme table intermédiaire**|Spécifiez si la table que vous sélectionnez dans le champ **Code table** est une table intermédiaire de stockage des données importées avant leur mappage vers la table cible.<br/><br/> Vous utilisez généralement une table intermédiaire lorsque la définition d’échange de données importer et convertir des documents électroniques dans [!INCLUDE[prod_short](includes/prod_short.md)]. Par exemple, des documents tels que les factures des fournisseurs dans les factures d’achat. Pour plus d’informations, consultez [Échanger des données par voir électronique](across-data-exchange.md).|  
     |**Nom**|Saisissez un nom pour la configuration de correspondance.|  
     |**Index de clé**|Spécifiez l’index de clé pour trier les enregistrements source avant l’exportation.|
     |**Codeunit pré-mappage**|Spécifiez le codeunit qui prépare la mise en correspondance entre les champs dans [!INCLUDE[prod_short](includes/prod_short.md)] et les données externes.|  
@@ -133,13 +135,13 @@ Vous pouvez également opérer un regroupement par n’importe quel champ, utili
      |Champ|Désignation|  
      |--------------------------------- |---------------------------------------|  
      |**N° de colonne**|Spécifiez la colonne dans le fichier de données pour laquelle vous souhaitez définir une fiche.<br /><br /> Vous pouvez uniquement sélectionner les colonnes qui sont représentées par des lignes sur le raccourci **Définitions colonne** de la page **Définition d'échange de données**.|
-     |**Légende de colonne**|Spécifiez la légende de la colonne du fichier externe qui est mappée au champ sélectionné dans le champ **Code table cible** lorsque vous utilisez une table intermédiaire pour l’importation des données.|
+     |**Légende de colonne**|Spécifie la légende de la colonne du fichier externe qui est mappée au champ sélectionné dans le champ **Code table cible** lorsque vous utilisez une table intermédiaire pour l’importation des données.|
      |**Code du champ**|Spécifiez à quel champ correspond la colonne dans le champ **N° colonne** .<br /><br /> Vous pouvez uniquement choisir parmi des champs existant dans la table que vous avez spécifiée dans le champ **Code table** du raccourci **Général**.|
-     |**Légende du champ**|Spécifiez la légende du champ du fichier externe qui est mappé au champ sélectionné dans le champ **Code table cible** lorsque vous utilisez une table intermédiaire pour l’importation des données.|
-     |**En option**|Spécifiez que la correspondance doit être ignorée si le champ est vide. Si vous n’activez pas cette option, une erreur d’exportation aura lieu si le champ est vide.|  
-     |**Règle de transformation**|Spécifie la règle qui transforme un texte importé en valeur prise en charge avant de pouvoir être mappé dans un champ spécifié. Lorsque vous choisissez une valeur dans ce champ, la même valeur est saisie dans le champ **Règle de transformation** dans la table **Tampon correspondance champ échge données** et inversement. Consultez la section suivante pour plus d’informations sur les règles de transformation disponibles pouvant être appliquées.|
-     |**Remplacer la valeur**|Spécifie que la valeur actuelle va être remplacée par une nouvelle valeur.|
-     |**Priorité**|Spécifie l’ordre dans lequel les mappages de champs doivent être traités. Le mappage de champ avec le numéro de priorité le plus élevé sera traité en premier.|
+     |**Légende du champ**|Spécifie la légende du champ du fichier externe qui est mappé au champ sélectionné dans le champ **Code table cible** lorsque vous utilisez une table intermédiaire pour l’importation des données.|
+     |**En option**|Spécifiez que la correspondance doit être ignorée si le champ est vide. Si vous n’activez pas cette option, une erreur d’exportation a lieu si le champ est vide.|  
+     |**Règle de transformation**|Spécifie la règle qui transforme un texte importé en valeur prise en charge avant de pouvoir être mappé dans un champ spécifié. Lorsque vous choisissez une valeur dans ce champ, la même valeur est saisie dans le champ **Règle de transformation** dans la table **Tampon correspondance champ échge données** et inversement. Pour en savoir plus sur l’application des règles de transformation, accédez aux [Règles de transformation](#transformation-rules).|
+     |**Remplacer la valeur**|Spécifie que la valeur nouvelle peut remplacée la valeur actuelle.|
+     |**Priorité**|Spécifie l’ordre dans lequel les mappages de champs doivent être traités. Le mappage de champ avec le numéro de priorité le plus élevé est traité en premier.|
      |**Multiplicateur**|Spécifie un multiplicateur à appliquer aux données numériques, y compris les valeurs négatives.|
 
    * Avec le bouton à bascule **Utiliser comme table intermédiaire** activé :
@@ -147,25 +149,25 @@ Vous pouvez également opérer un regroupement par n’importe quel champ, utili
      |Champ|Désignation|  
      |---------------------------------|---------------------------------------|  
      |**N° de colonne**|Spécifiez la colonne dans le fichier de données pour laquelle vous souhaitez définir une fiche.<br /><br /> Vous pouvez uniquement sélectionner les colonnes qui sont représentées par des lignes sur le raccourci **Définitions colonne** de la page **Définition d'échange de données**.|
-     |**Légende de colonne**|Spécifiez la légende de la colonne du fichier externe qui est mappée au champ sélectionné dans le champ **Code table cible** lorsque vous utilisez une table intermédiaire pour l’importation des données.|
-     |**Code de la table cible**|Spécifiez la table à laquelle la valeur du champ **Titre colonne** est mappée lorsque vous utilisez une table intermédiaire pour l'importation des données.|
-     |**Légende de la table**|Spécifiez le nom de la table dans le champ **Code table cible**, qui est la table à laquelle la valeur du champ **Titre colonne** est mappée, lorsque vous utilisez une table intermédiaire pour l'importation des données.|
-     |**Code du champ cible**|Spécifiez le champ dans la table cible auquel la valeur du champ **Titre colonne** est mappée lorsque vous utilisez une table intermédiaire pour l'importation des données.|
-     |**Légende du champ**|Spécifiez le nom du champ dans la table cible auquel la valeur de la colonne **Titre colonne** est mappée lorsque vous utilisez une table intermédiaire pour l'importation des données.|
+     |**Légende de colonne**|Spécifie la légende de la colonne du fichier externe qui est mappée au champ sélectionné dans le champ **Code table cible** lorsque vous utilisez une table intermédiaire pour l’importation des données.|
+     |**Code de la table cible**|Spécifiez la table à laquelle la valeur du champ **Titre colonne** est mappée lorsque vous utilisez une table intermédiaire pour l’importation des données.|
+     |**Légende de la table**|Spécifiez le nom de la table dans le champ **Code table cible**, qui est la table à laquelle la valeur du champ **Légende de colonne** est mappée, lorsque vous utilisez une table intermédiaire pour l’importation des données.|
+     |**Code du champ cible**|Spécifiez le champ dans la table cible auquel la valeur du champ **Titre colonne** est mappée lorsque vous utilisez une table intermédiaire pour l’importation des données.|
+     |**Légende du champ**|Spécifiez le nom du champ dans la table cible auquel la valeur de la colonne **Titre colonne** est mappée lorsque vous utilisez une table intermédiaire pour l’importation des données.|
      |**Valider uniquement**|Spécifie que le mappage élément-champ n’est pas utilisé pour convertir les données, mais uniquement pour valider les données.|
-     |**Règle de transformation**|Spécifie la règle qui transforme un texte importé en valeur prise en charge avant de pouvoir être mappé dans un champ spécifié. Lorsque vous choisissez une valeur dans ce champ, la même valeur est saisie dans le champ **Règle de transformation** dans la table **Tampon correspondance champ échge données** et inversement. Consultez la section suivante pour plus d’informations sur les règles de transformation disponibles pouvant être appliquées.|
-     |**Priorité**|Spécifie l’ordre dans lequel les mappages de champs doivent être traités. Le mappage de champ avec le numéro de priorité le plus élevé sera traité en premier.|
+     |**Règle de transformation**|Spécifie la règle qui transforme un texte importé en valeur prise en charge avant de pouvoir être mappé dans un champ spécifié. Lorsque vous choisissez une valeur dans ce champ, la même valeur est saisie dans le champ **Règle de transformation** dans la table **Tampon correspondance champ échge données** et inversement. Pour en savoir plus comment l’application des règles de transformation, accédez aux [Règles de transformation](#transformation-rules).|
+     |**Priorité**|Spécifie l’ordre dans lequel les mappages de champs doivent être traités. Le mappage de champ avec le numéro de priorité le plus élevé est traité en premier.|
 
 4. Sur le raccourci **Groupement de champs**, spécifiez les règles à utiliser pour regrouper vos champs quand vous créez le fichier en remplissant les champs comme décrit dans le tableau suivant.  
 
      |Champ|Désignation|  
      |--------------------------------- |---------------------------------------|  
-     |**Code du champ**|Spécifiez le numéro du champ du fichier externe utilisé pour le regroupement. Ce champ doit être défini par l’utilisateur.|
+     |**Code du champ**|Spécifiez le numéro du champ du fichier externe utilisé pour le regroupement doit être défini par l’utilisateur.|
      |**Légende du champ**|Spécifiez la légende du champ dans le fichier externe utilisé pour le regroupement.|
 
-## <a name="transformation-rules"></a>Règles de transformation
+## Règles de transformation
 
-Si les valeurs des champs que vous associez sont différentes, vous devez utiliser des règles de transformation pour les définitions d'échange de données afin de les rendre identiques. Pour définir des règles de transformation pour des définitions d'échange de données, ouvrez une définition existante ou créez-en une nouvelle, puis, sur le raccourci **Définitions de ligne**, choisissez **Gérer**, puis **Mappage de champs**. Des règles prédéfinies sont fournies, mais vous pouvez également créer les vôtres. Le tableau suivant décrit les types de transformations que vous pouvez effectuer.
+Si les valeurs des champs que vous mappez sont différentes, vous devez utiliser des règles de transformation pour les définitions d’échange de données afin de les rendre identiques. Pour définir des règles de transformation pour des définitions d'échange de données, ouvrez une définition existante ou créez-en une nouvelle, puis, sur le raccourci **Définitions de ligne**, choisissez **Gérer**, puis **Mappage de champs**. Des règles prédéfinies sont fournies, mais vous pouvez également créer les vôtres. Le tableau suivant décrit les types de transformations que vous pouvez effectuer.
 
 |Option|Description|
 |---------|---------|
@@ -180,15 +182,15 @@ Si les valeurs des champs que vous associez sont différentes, vous devez utilis
 |**Mise en forme de la date**|Spécifier comment afficher les dates. Par exemple, vous pouvez transformer JJ-MM-AAAA en AAAA-MM-JJ.|
 |**Mise en forme décimale**|Définir des règles pour la position des décimales et la précision de l'arrondissement.|
 |**Expression régulière - Correspondance**|Utiliser une expression régulière pour trouver une ou plusieurs valeurs. Cette règle est similaire aux options **Sous-chaîne** et **Expression régulière - Remplacer**.|
-|**Personnalisé**|Cette règle de transformation et une option avancée qui nécessite l’aide d’un développeur. Elle active un événement d’intégration auquel vous pouvez vous abonner si vous souhaitez utiliser votre propre code de transformation. Si vous êtes développeur et souhaitez utiliser cette option, consultez la section ci-dessous.|
-|**Mise en forme de la date et de l'heure**|Définir comment afficher la date actuelle ainsi que l’heure de la journée.|
+|**Personnalisé**|Cette règle de transformation et une option avancée qui nécessite l’aide d’un développeur. Elle active un événement d’intégration auquel vous pouvez vous abonner si vous souhaitez utiliser votre propre code de transformation. Si vous êtes un développeur et si vous souhaitez utiliser cette option, consultez [Astuce pour les développeurs : exemple d’option personnalisée](#tip-for-developers-example-of-the-custom-option).|
+|**Format de date et heure**|Définir comment afficher la date actuelle ainsi que l’heure de la journée.|
 |**Recherche de champ**|Utilisez des champs de différentes tables. Pour l’utiliser, vous devez suivre certaines règles. Premièrement, utilisez le **Code de table** pour spécifier le code de la table qui contient l’enregistrement pour la recherche de champ. Ensuite, dans le champ **Code du champ source**, spécifiez le code du champ qui contient l’enregistrement pour la recherche de champ. Finalement, dans le champ **Code du champ cible**, spécifiez le code du champ pour rechercher l’enregistrement pour la recherche de champ. En option, utilisez le champ **Règle de recherche de champ** pour spécifier le type de recherche de champ. Pour le champ **Cible**, la valeur du **Code de champ cible** est utilisée, même si elle est vide. Pour le champ **Original, si Cible est vide**, la valeur d’origine est utilisée si la cible est vide.|
 |**Arrondir**|Arrondissez la valeur de ce champ à l’aide de règles supplémentaires. D’abord, dans le champ **Précision**, spécifiez une précision d’arrondissement. Ensuite, dans le champ **Direction**, indiquez le sens de l’arrondissement.|
 
 > [!NOTE]  
 > Pour plus d’informations sur le formatage de la date et de l’heure, consultez [Chaînes de format de date et heure standard](/dotnet/standard/base-types/standard-date-and-time-format-strings).
 
-### <a name="tip-for-developers-example-of-the-custom-option"></a>Astuce pour les développeurs : exemple d’option personnalisée
+### Astuce pour les développeurs : exemple d’option personnalisée
 
 L'exemple suivant montre comment implémenter votre propre code de transformation.
 
@@ -206,25 +208,25 @@ codeunit 60100 "Hello World"
 
 Après avoir défini vos règles, vous pouvez les tester. Dans le raccourci **Test**, saisissez un exemple de valeur que vous souhaitez transformer, puis vérifiez les résultats en sélectionnant **Mettre à jour**.
 
-## <a name="export-a-data-exchange-definition-as-an-xml-file-for-use-by-others"></a>Exporter une définition d’échange de données au format XML pour utilisation par d’autres
+## Exporter une définition d’échange de données au format XML pour utilisation par d’autres
 
-Lorsque vous avez créé la définition d'échange de données pour un fichier de données spécifique, vous pouvez exporter la définition d'échange de données en tant que fichier XML que vous pouvez importer. Cette tâche est décrite dans la procédure suivante.  
+Lorsque vous avez créé la définition d’échange de données pour un fichier de données spécifique, vous pouvez exporter la définition d’échange de données en tant que fichier XML que vous pouvez importer. Cette tâche est décrite dans la procédure suivante.  
 
 1. Sélectionnez l’icône en forme ![d’ampoule qui ouvre la fonction de recherche 1.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Définitions d’échange de données**, puis sélectionnez le lien associé.  
 2. Sélectionnez la définition d'échange de données que vous voulez exporter.  
 3. Choisissez l'action **Exporter définition d'échange de données**.  
 4. Enregistrez le fichier XML qui représente la définition d'échange de données dans un emplacement approprié.  
 
-    Si une définition d'échange de données a déjà été créée, il vous suffit d'importer le fichier XML dans l'infrastructure d'échange de données. Cette tâche est décrite dans la procédure suivante.  
+    Si une définition d’échange de données a déjà été créée, il vous suffit d’importer le fichier XML dans l’infrastructure d’échange de données. Cette tâche est décrite dans la procédure suivante.  
 
-## <a name="import-an-existing-data-exchange-definition"></a>Importer une définition d’échange de données existante
+## Importer une définition d’échange de données existante
 
 1. Enregistrez le fichier XML qui représente la définition d'échange de données dans un emplacement approprié.  
 2. Sélectionnez l’icône en forme ![d’Ampoule qui ouvre la fenêtre de recherche 1.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Définitions d’échange de données**, puis sélectionnez le lien associé.  
 3. Choisissez l'action **Importer définition d'échange de données**.  
 4. Choisissez le fichier que vous avez enregistré à l'étape 1.  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Configuration d'échange de données](across-set-up-data-exchange.md)  
 [Configurer l'envoi et la réception de documents électroniques](across-how-to-set-up-electronic-document-sending-and-receiving.md)  

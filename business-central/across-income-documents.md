@@ -2,25 +2,25 @@
 title: Utiliser des documents entrants
 description: 'Vous pouvez gérer les documents commerciaux externes entrants, tels que des reçus de paiement ou des fichiers PDF, gérer des tâches OCR, et convertir des fichiers en documents électroniques et enregistrements.'
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'electronic document, e-invoice, incoming document, OCR, ecommerce, document exchange, import invoice'
-ms.date: 06/14/2022
-ms.author: bholtorf
+ms.date: 06/13/2024
 ms.service: dynamics-365-business-central
-ms.reviewer: bholtorf
 ---
-# <a name="incoming-documents"></a>Documents entrants
+# Documents entrants
 
 Les documents provenant d’entreprises externes peuvent arriver dans votre compagnie sous forme de pièce jointe à un courriel, ou de copie papier que vous pouvez scanner vers un fichier. Ce scénario est classique dans le cas des achats, lorsque ces fichiers de documents entrants sont des reçus de paiements pour des dépenses ou de petits achats.
 
 Sur la page **Documents entrants**, vous pouvez utiliser différentes fonctions pour examiner les reçus de dépenses, gérer les tâches ROC et convertir les fichiers document entrants, manuellement ou automatiquement, en documents ou lignes journal appropriés. Les fichiers externes peuvent être joints à n'importe quelle étape du processus, notamment en ce qui concerne les documents reportés et les écritures fournisseur, client et grand livre résultantes.
 
-## <a name="usage-scenario"></a>Scénario d’utilisation
+## Scénario d’utilisation
 
 Vous pouvez enregistrer les fichiers ou copies papier reçus de vos partenaires commerciaux dans [!INCLUDE[prod_short](includes/prod_short.md)] et créer un enregistrement de document. Par exemple, une facture achat ou vente, une note de crédit ou une ligne journal.
 
-Chargez les fichiers reçus (ou utilisez la caméra de l’appareil pour en prendre une photo) et créez des entrées pour représenter les documents externes. De manière facultative, à partir de fichiers PDF ou image, un service OCR externe (Reconnaissance optique de caractères) peut générer des documents électroniques qui peuvent ensuite être convertis en enregistrements au sein de [!INCLUDE[prod_short](includes/prod_short.md)].
+Chargez les fichiers reçus (ou utilisez la caméra de l’appareil pour en prendre une photo) et créez des entrées pour représenter les documents externes. De manière facultative, à partir de fichiers PDF ou image, un service Reconnaissance optique de caractères (OCR) peut générer des documents électroniques qui peuvent ensuite être convertis en enregistrements au sein de [!INCLUDE[prod_short](includes/prod_short.md)].
 
 > [!NOTE]
 > La fonction OCR est assurée par des fournisseurs externes. Choisissez un package de services adapté à votre organisation et/ou votre pays/région. Vous trouverez des services compatibles avec [!INCLUDE[prod_short](includes/prod_short.md)] et des détails sur les fonctionnalités disponibles sur [AppSource.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2081646).
@@ -30,11 +30,11 @@ Par exemple, lorsque vous recevez une facture au format PDF de votre fournisseur
 > [!TIP]
 > Créez des enregistrements de documents entrants dans [!INCLUDE[prod_short](includes/prod_short.md)] directement à partir des courriels envoyés par les fournisseurs à l’aide du complément Outlook. Pour plus d’informations, voir [Utiliser Business Central en tant que boîte de réception professionnelle dans Outlook](work-outlook-addin.md).
 
-## <a name="incoming-document-features"></a>Fonctionnalités de document entrant
+## Fonctionnalités de document entrant
 
 Le processus de document entrant est composé des activités principales suivantes :
 
-* Enregistrez les documents externes dans [!INCLUDE[prod_short](includes/prod_short.md)] en créant des lignes sur la page **Documents entrants** de l'une des manières suivantes :
+* Enregistrez les documents externes dans [!INCLUDE[prod_short](includes/prod_short.md)] en créant des lignes sur la page **Documents entrants** de l’une des manières suivantes :
   * Manuellement, à partir d’un PC ou d’un périphérique mobile, de l’une des manières suivantes :
     * Utilisez le bouton **Créer à partir d’un fichier**, chargez un fichier, puis renseignez les champs appropriés sur la page **Document entrant**.
     * Utilisez le bouton **Nouveau**, renseignez les champs appropriés sur la page **Document entrant**, puis joignez manuellement le fichier associé.
@@ -57,7 +57,7 @@ Le processus de document entrant est composé des activités principales suivant
 | Depuis les pages **Plan comptable** et **Écritures**, utilisez la fonction de recherche pour rechercher les écritures pour des documents reportés qui n’ont pas d’enregistrements document entrant, puis les lier de façon centralisée à des enregistrements existants ou en créer de nouveaux avec des fichiers joints. |[Rechercher des enregistrements reportés sans enregistrements document entrant](across-how-find-posted-documents-without-income-document-records.md) |
 | Obtenir une meilleure vue d’ensemble en définissant les enregistrements de document entrant sur *Traité* afin de les supprimer de la vue par défaut. |[Gestion de nombreux enregistrements document entrant](across-how-manage-many-income-document-records.md) |
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Modification des documents reportés](across-edit-posted-document.md)  

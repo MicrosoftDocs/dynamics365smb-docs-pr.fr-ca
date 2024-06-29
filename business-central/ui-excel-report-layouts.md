@@ -6,11 +6,12 @@ ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'customized report, document layout, logo, personalize'
 ms.search.form: '9650, 9652'
-ms.date: 11/10/2022
+ms.date: 05/30/2024
 ms.author: jswymer
 ms.service: dynamics-365-business-central
+ms.reviewer: jswymer
 ---
-# <a name="working-with-microsoft-excel-layouts"></a>Utilisation des présentations Microsoft Excel
+# Utilisation des présentations Microsoft Excel
 
 Les présentations de rapport Microsoft Excel sont basées sur les classeurs Excel (fichiers .xlsx). Elles vous permettent de créer des rapports incluant des fonctionnalités Excel familières pour résumer, analyser et présenter des données avec des outils comme des formules, des tableaux croisés dynamiques et des graphiques croisés dynamiques.
 
@@ -18,7 +19,7 @@ Les présentations de rapport Microsoft Excel sont basées sur les classeurs Exc
 
 Cet article explique certaines des choses les plus importantes que vous devez savoir pour démarrer avec les présentations Excel.
 
-## <a name="why-use-excel-layouts"></a>Pourquoi utiliser des présentations Excel ?
+## Pourquoi utiliser des présentations Excel ?
 
 Avantages de l’utilisation des mises en page Excel :
 
@@ -31,14 +32,17 @@ Avantages de l’utilisation des mises en page Excel :
   - [Faire des prévisions et des analyses](https://support.microsoft.com/office/introduction-to-what-if-analysis-22bffa5f-e891-4acc-bf7a-e4645c446fb4)
 - Vous pouvez utiliser les compléments installés et les intégrations d’applications, comme les flux Power Automate ou OneDrive.
 
-## <a name="get-started"></a>Mise en route
+> [!TIP]
+> Avec OneDrive l’intégration configurée, lorsque vous exécutez un rapport avec une mise en page Excel, le fichier de classeur Excel est copié dans OneDrive puis ouvert dans Excel en ligne. Pour plus d’informations, consultez [Enregistrer les classeurs Excel et les fichiers de rapport dans OneDrive](./across-onedrive-overview.md#save-excel-workbooks-and-report-files-in-onedrive)
+
+## Mise en route
 
 La configuration d’une présentation Excel d'un rapport implique essentiellement deux tâches :
 
 1. Créer le nouveau fichier de présentation Excel.
 2. Ajouter la nouvelle présentation au rapport.
 
-## <a name="task-1-create-the-excel-layout-file"></a>Tâche 1 : Créer le fichier de présentation Excel
+## Tâche 1 : Créer le fichier de présentation Excel
 
 Il existe trois façons de créer un fichier de présentation Excel pour un rapport, comme expliqué dans cette section.
 
@@ -57,13 +61,13 @@ Procédez comme suit pour créer une présentation Excel à partir de n’import
 
 S’il existe déjà une présentation Excel pour un rapport, vous pouvez l'utiliser comme point de départ. Il existe deux approches pour obtenir une copie de la présentation. Vous pouvez exporter la présentation existante à partir de la page **Présentations de rapport** ou télécharger la présentation à partir de la page de demande de rapport. Les deux méthodes téléchargent un fichier de présentation Excel qui inclut toutes les feuilles du fichier existant. La différence est qu’à partir de la page de demande, la présentation inclura les données réelles. (Les données ne sont pas obligatoires, mais elles aident lors de la conception de la présentation.)
 
-#### <a name="approach-1-export-the-layout-from-the-report-layouts-page"></a>Approche 1 : Exporter la présentation à partir de la page **Présentations de rapport**
+#### Approche 1 : Exporter la présentation à partir de la page **Présentations de rapport**
 
 [!INCLUDE[open-report-layouts-page](includes/open-report-layouts-page.md)]
 2. Sélectionnez la mise en page Excel dans la liste, puis choisissez l’action **Exporter présentation** en haut de la page.
 3. Ouvrez le fichier Excel, effectuez vos modifications, puis enregistrez le fichier.
 
-#### <a name="approach-2-download-the-layout-from-the-reports-request-page"></a>Approche 2 : Téléchargez la présentation à partir de la page de demande du rapport
+#### Approche 2 : Téléchargez la présentation à partir de la page de demande du rapport
 
 [!INCLUDE[open-report-layouts-page](includes/open-report-layouts-page.md)]
 2. Sur la page **Présentations de rapport**, sélectionnez une présentation pour le rapport, puis choisissez l’action **Exécuter rapport**.
@@ -76,7 +80,7 @@ Il s’agit de la méthode la plus avancée pour créer une présentation de rap
 
 ---
 
-## <a name="task-2-add-the-excel-layout-to-the-report"></a>Tâche 2: Ajouter la présentation Excel au rapport
+## Tâche 2: Ajouter la présentation Excel au rapport
 
 Une fois que vous avez le fichier de présentation Excel, la tâche suivante consiste à l’ajouter en tant que nouvelle présentation pour le rapport.
 
@@ -106,7 +110,7 @@ Une fois que vous avez le fichier de présentation Excel, la tâche suivante con
 3. Report metadata 
 -->
 
-## <a name="understanding-excel-layouts"></a>Comprendre les présentations Excel
+## Comprendre les présentations Excel
 
 Il y a quelques précautions à prendre lorsque vous commencez à créer ou à modifier des présentations Excel. Chaque présentation Excel doit inclure deux éléments : une feuille de **Données** et une table de **Données**. Ces éléments forment la base de la présentation car elles définissent les données métier de Business Central avec lesquelles vous pouvez travailler. On peut comparer la feuille de **Données** à un type de contrat entre la présentation et les données métier. Vous devez utiliser ces données comme source de calculs et de visualisations à présenter sur d’autres feuilles.
 
@@ -128,15 +132,13 @@ En résumé, voici ce que vous devriez et ne devriez pas faire sur la feuille **
 - N’ajoutez aucune colonne à moins qu’elle ne soit incluse dans l’ensemble de données du rapport.
 - Vous pouvez placer les feuilles dans n’importe quel ordre, avec la feuille **Données** en premier ou en dernier.
 
-## <a name="see-also"></a>Voir aussi .
-
+## Voir aussi .
+[Création d’un rapport de mise en page Excel (documentation développeur)](/dynamics365/business-central/dev-itpro/developer/devenv-howto-excel-report-layout?toc=/dynamics365/business-central/toc.json)  
 [Gestion des présentations de rapport](ui-manage-report-layouts.md)  
 [Modifier la présentation actuelle du rapport](ui-how-change-layout-currently-used-report.md)  
-[Importer et exporter une présentation de rapport ou de document personnalisée](ui-how-import-and-export-report-layout.md)  
-[Utilisation des rapports, des traitements en lot et des objets XMLport](ui-work-report.md)  
-[Préparer la génération de rapports financiers avec des données financières et des catégories de compte](bi-how-work-account-schedule.md)  
-[Veille économique](bi.md)  
-[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Importer et exporter une présentation de rapport ou de document personnalisée (héritée)](ui-how-import-and-export-report-layout.md)  
 [Analyse des données de rapport avec Excel](report-analyze-excel.md)  
+[Utilisation des rapports](ui-work-report.md)  
+[Utilisation de [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

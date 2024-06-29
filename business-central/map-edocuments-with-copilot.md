@@ -8,16 +8,16 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 04/10/2024
+ms.date: 06/10/2024
 ms.custom: bap-template
 ---
 
 # Mappage de documents électroniques avec des lignes bon de commande avec Copilot (version préliminaire)
 
-À mesure que les processus d’approvisionnement deviennent de plus en plus numériques, la fonctionnalité de documents électroniques de Business Central joue un rôle clé dans l’automatisation de la réception et du traitement des factures des fournisseurs. Copilot peut vous aider dans ce processus en améliorant le mappage et la mise en correspondance des factures des fournisseurs avec les bons de commande. Cela réduit les tâches fastidieuses qui comprendraient normalement des recherches approfondies et la saisie de données. L’avantage est aggravé par le fait que les factures des fournisseurs ne correspondent souvent pas exactement aux bons de commande, auquel cas Copilot est mieux placé pour identifier les bons de commande correspondants. Les capacités de rapprochement améliorées profitent particulièrement aux petites et moyennes entreprises qui ont besoin d’un suivi efficace des documents pour les lignes bon de commande. Copilot est l’assistant de travail basé sur l’IA qui stimule la créativité et améliore la productivité des utilisateurs de Business Central.
+À mesure que les processus d’approvisionnement deviennent de plus en plus numériques, la fonctionnalité de documents électroniques de Business Central joue un rôle clé dans l’automatisation de la réception et du traitement des factures des fournisseurs. Copilot peut vous aider dans ce processus en améliorant le mappage et la mise en correspondance des factures des fournisseurs avec les bons de commande. Cette assistance réduit les tâches qui comprendraient normalement des recherches approfondies et la saisie de données. Un autre avantage est lorsque les factures des fournisseurs ne correspondent pas exactement aux bons de commande. Dans ce cas, Copilot est bien placé pour identifier les bons de commande correspondants. Les capacités de rapprochement améliorées profitent particulièrement aux petites et moyennes entreprises qui ont besoin d’un suivi efficace des documents pour les lignes bon de commande. Copilot est l’assistant de travail basé sur l’IA qui stimule la créativité et améliore la productivité des utilisateurs de Business Central.
 
 > [!IMPORTANT]
-> - Il s’agit d’une fonctionnalité en version préliminaire prêt pour la production pour les environnements de production et sandbox dans n’importe quel pays, à l’exception du Canada.
+> - Il s’agit d’une fonctionnalité en version préliminaire prêt pour la production pour les environnements de production et sandbox dans n’importe quel pays<!-- with the exception of Canada -->.
 > - Les fonctionnalités en version préliminaire prêtes pour la production sont soumises à des conditions d’utilisation supplémentaires. En savoir plus : [Conditions d’utilisation supplémentaires pour la version préliminaire de Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2105274)
 > - Le contenu généré par l’IA est peut-être incorrect.
 
@@ -25,12 +25,11 @@ Dans la version initiale de l’application de **document électronique**, nous 
 
 Vous pouvez désormais mettre à jour un bon de commande existant dans Business Central avec les informations reçues dans la facture électronique.
 
-<!--
-> [!NOTE]
-> - This feature is available as a production-ready preview for production and sandbox environments in any country localization, with the exception of Canada. Production-ready previews are subject to supplemental terms of use. For more information, see [Supplemental terms of use for Dynamics 365 preview](https://go.microsoft.com/fwlink/?linkid=2105274).
-> - AI-generated content may be incorrect.-->
+## Langues disponibles
 
-## Pour activer le copilote  
+[!INCLUDE[e-docs-matching-language-support](includes/e-docs-matching-language-support.md)]
+
+## Activer Copilot  
 
 Si vous n’avez pas activé le copilote **Assistance de correspondance de documents électroniques**, vous devez le faire manuellement. Pour activer le copilote **Assistance de correspondance de documents électroniques**, suivez ces étapes : 
 
@@ -41,11 +40,11 @@ Vous pouvez commencer à utiliser Copilot dès qu’il est activé.
 
 ## Identifier des bons de commande
 
-Tout d’abord, vous pouvez identifier les bons de commande que vous pouvez automatiquement rapprocher. Si votre **fournisseur** a configuré le champ **Recevoir le document électronique à** pour qu’il fonctionne avec **Bons de commande**, une fois le document électronique créé dans [!INCLUDE[prod_short](includes/prod_short.md)] (manuellement ou à partir d’un point de terminaison externe), [!INCLUDE[prod_short](includes/prod_short.md)] effectuera les opérations suivantes :
+Tout d’abord, vous pouvez identifier les bons de commande que vous pouvez automatiquement rapprocher. Si votre **fournisseur** a configuré le champ **Recevoir le document électronique à** pour qu’il fonctionne avec les **Bons de commande**, une fois le document électronique créé dans [!INCLUDE[prod_short](includes/prod_short.md)] (manuellement ou à partir d’un point de terminaison externe), [!INCLUDE[prod_short](includes/prod_short.md)] effectuera les opérations suivantes :
 
-1. Si le **bon de commande** pour ce fournisseur particulier *existe et qu’il y a un numéro de bon de commande* dans le reçu **Fichier de document électronique** , [!INCLUDE[prod_short](includes/prod_short.md)] liera automatiquement ce **document électronique** au **spécifié**bon de commande. L’**État du document** de ce **Document électronique** sera **En cours**, et l’**État du document électronique** dans la sous-page **État du service** sera **Commande liée**.  
-Ce lien sera visible dans le champ **Document** de ce **document électronique** spécifique. Si vous devez modifier automatiquement le **Bon de commande** lié, vous pouvez le faire à l’aide de l’action **Mettre à jour le lien du bon de commande** et choisissez manuellement l’un des bons de commande existants pour ce fournisseur. Vous ne pouvez le faire qu’avant de faire correspondre les lignes entre le **Document électronique** et **Bon de commande**.  
-2. Si le **Bon de commande** pour ce fournisseur particulier *existe mais qu’il n’y a pas de numéro de bon de commande* dans **le document électronique** reçu, [!INCLUDE[prod_short](includes/prod_short.md)] offrira la possibilité de choisir l’un des bons de commande existants si vous avez téléchargé ce document manuellement, en ouvrant la liste **Bons de commande** des commandes reçues des fournisseurs contenant uniquement **Document électronique**, dans lequel vous devez sélectionner le **Bon de commande** souhaité, puis **OK**. Si vous n’avez pas sélectionné le **Bon de commande** approprié ou si vous avez obtenu le **document électronique** automatiquement d’un point de terminaison externe utilisant la **File d’attente des travaux**, le nouveau **document électronique** ne sera lié à aucun document d’achat et l’**État du document** sera **Erreur** et l’**État du document électronique** dans la sous-page **État du service** est **Erreur de traitement du document importé**. Pour terminer l’association avec le **Bon de commande**, choisissez l’action **Mettre à jour le lien du bon de commande** et choisissez l’un des bons de commande existants pour ce fournisseur.  
+1. Si le **bon de commande** pour ce fournisseur particulier *existe et qu’il y a un numéro de bon de commande* dans le reçu **Fichier de document électronique** , [!INCLUDE[prod_short](includes/prod_short.md)] lie automatiquement ce **document électronique** au **spécifié**bon de commande. L’**État du document** de ce **Document électronique** est **En cours**, et l’**État du document électronique** dans la sous-page **État du service** est **Commande liée**.  
+Ce lien est visible dans le champ **Document** de ce **document électronique** spécifique. Si vous devez modifier automatiquement le **Bon de commande** lié, vous pouvez le faire à l’aide de l’action **Mettre à jour le lien du bon de commande** et choisissez manuellement l’un des bons de commande existants pour ce fournisseur. Vous ne pouvez le faire qu’avant de faire correspondre les lignes entre le **Document électronique** et **Bon de commande**.  
+2. Si le **Bon de commande** pour ce fournisseur particulier *existe mais qu’il n’y a pas de numéro de bon de commande* dans **le document électronique** reçu, [!INCLUDE[prod_short](includes/prod_short.md)] offrira la possibilité de choisir l’un des bons de commande existants si vous avez téléchargé ce document manuellement, en ouvrant la liste **Bons de commande** des commandes reçues des fournisseurs contenant uniquement **Document électronique**, dans lequel vous devez sélectionner le **Bon de commande** souhaité, puis **OK**. Si vous n’avez pas sélectionné le **bon de commande** approprié ou si vous avez obtenu le **document électronique** automatiquement d’un point de terminaison externe utilisant la **file d’attente des projets**, le nouveau **document électronique** n'est lié à aucun document d’achat et l'**état du document** indique **Erreur** et l'**état du document électronique** dans la sous-page **État du service** est **Erreur de traitement du document importé**. Pour terminer l’association avec le **Bon de commande**, choisissez l’action **Mettre à jour le lien du bon de commande** et choisissez l’un des bons de commande existants pour ce fournisseur.  
 
 ## Mapper les lignes
 
@@ -64,11 +63,11 @@ Lorsque vous souhaitez exécuter un rapprochement à partir du bon de commande, 
 2. Vous pouvez remarquer que l’invite **Lignes de commande de correspondance de documents électroniques avec Copilot** fonctionne et vous avez la page **Rapprochement des bons de commande** en arrière-plan. Cela signifie que le même processus se produit mais avec le support automatique du **Copilote**, qui gère le processus de mise en correspondance à votre place. 
 3. Après quelques secondes, le **Lignes de commande de correspondance de documents électroniques avec copilote** suggérera des lignes à faire correspondre avec détails supplémentaires : 
 
-    1. Dans l’en-tête de l’invite, vous pouvez trouver les informations suivantes : 
+    1. Dans l’en-tête de l’invite, vous pouvez trouver les informations suivantes :   
 
     |Nom du champ |Désignation |
     |--------|-----------------|
-    |Correspondance automatique | Spécifie le nombre de correspondances proposées automatiquement. Ceci est basé sur une comparaison de chaînes et s’il y a 80 % ou plus de descriptions qui se chevauchent, le système fera automatiquement correspondre ces descriptions sans utiliser les fonctionnalités GPT. |
+    |Correspondance automatique | Spécifie le nombre de correspondances proposées automatiquement. Ce nombre est basé sur une comparaison de chaînes et s’il y a 80 % ou plus de descriptions qui se chevauchent, le système fait automatiquement correspondre ces descriptions sans utiliser les fonctionnalités Copilot. |
     |Copilot mis en correspondance | Spécifie le nombre de correspondances proposées par Copilot en utilisant à la fois une comparaison de chaînes et sémantique. |
     |N° document électronique | Spécifie le numéro du document électronique lié. |
     |Montant total de la facture, hors TVA | Spécifie le montant total de la facture, hors TVA. |
@@ -81,10 +80,10 @@ Lorsque vous souhaitez exécuter un rapprochement à partir du bon de commande, 
     |--------|-----------------|
     |N° ligne document électronique | Spécifie le numéro de ligne du document électronique (provenant du fichier de document électronique d’origine). |
     |Description de la ligne document électronique | Spécifie la description de ligne du document électronique (provenant du fichier de document électronique d’origine). |
-    |Quantité mise en correspondance | Spécifie la quantité qui sera affectée à la ligne bon de commande. |
+    |Quantité mise en correspondance | Spécifie la quantité qui est affectée à la ligne bon de commande. |
     |Proposition | Spécifie l’action proposée par l’IA, et ces actions suggérées sont liées à la mise en correspondance des lignes bon de commande. |
 
-    4. Toutes les lignes entièrement suggérées et assorties sont marquées de couleur verte. S’il y a un problème, c’est-à-dire un prix différent, mais dans la fourchette de prix autorisée, cette ligne sera marquée en jaune, et s’il y a une similitude entre les champs de description mais que la différence de prix est supérieure à celle autorisée, cette ligne sera marquée en rouge. 
+    4. Toutes les lignes entièrement suggérées et assorties sont marquées de couleur verte. S’il y a un problème, par exemple un prix différent mais dans la fourchette de prix autorisée, cette ligne est marquée d’une couleur jaune. S’il existe une similitude entre les champs de description mais que la différence de prix est supérieure à celle autorisée, cette ligne est marquée d’une couleur rouge.
     5. Si vous n’êtes pas satisfait de certaines suggestions, vous pouvez les supprimer en utilisant le **Supprimer la ligne** action.  
     6. Si vous souhaitez voir les correspondances de propositions, vous pouvez sélectionner le lien dans le **Proposition** colonne pour ouvrir la **Détails de la correspondance des documents électroniques** page. 
     7. Sur la page **Détails de la correspondance des documents électroniques**, vous pouvez comparer les détails du **Document électronique** et du **Bon de commande**, pour être sûr de la correspondance proposée avant de la confirmer. 

@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 03/06/2024
+ms.date: 06/10/2024
 ms.custom: bap-template
 ms.collection:
   - bap-ai-copilot
@@ -28,15 +28,13 @@ Avec Copilot, vous obtenez rapidement une suggestion de texte automatiquement g�
 
 Copilot est conçu pour vous faire gagner du temps et vous aider à rédiger des textes créatifs et attrayants qui reflètent votre marque et sont cohérents dans toute votre gamme de produits. Commencez par générer une suggestion, puis modifiez le texte suggéré si nécessaire.
 
+### Langues disponibles
+
+[!INCLUDE[copilot-supported-languages.md](includes/copilot-supported-languages.md)]
+
 ### Conditions préalables
 
-- La fonctionnalité de suggestions de texte marketing est activée sur votre environnement. Cette tâche est généralement effectuée par un administrateur. Pour plus d’informations, accédez à [Configurer Copilot et les capacités IA](enable-ai.md).
-- Vous utilisez l’une des langues actuellement prises en charge par les suggestions de texte marketing.
-
-  [!INCLUDE[copilot-supported-languages.md](includes/copilot-supported-languages.md)]
-
-  Pour modifier la langue, dans le coin supérieur droit, sélectionnez l’icône **Paramètres** ![Paramètres](media/ui-experience/settings_icon_small.png "Icône Paramètres du tableau de bord") > **Mes paramètres** > **Langue**. Pour plus d’informations, consultez [Modifier les paramètres de base](ui-change-basic-settings.md#language).
-- Consultez la [FAQ sur les suggestions de textes marketing](faqs-marketing-text.md) pour découvrir comment l’IA est appliquée.
+La fonctionnalité de suggestions de texte marketing est activée sur votre environnement. Cette tâche est généralement effectuée par un administrateur. Pour plus d’informations, accédez à [Configurer Copilot et les capacités IA](enable-ai.md).
 
 ### Créer un premier brouillon avec Copilot
 

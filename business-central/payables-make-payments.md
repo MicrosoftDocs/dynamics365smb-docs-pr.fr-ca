@@ -2,27 +2,28 @@
 title: Aperçu des tâches permettant de gérer les paiements aux fournisseurs
 description: 'Décrit les tâches permettant de gérer les paiements aux fournisseurs ou aux créditeurs, y compris le report de lignes paiement et l''obtention d''un aperçu du solde échu.'
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
 ms.topic: overview
-ms.devlang: al
 ms.search.keywords: 'print check, vendor payment, creditor, debt, balance due, AP'
 ms.search.form: '254, 256, 1190, 1191, 1227, 1228, 1229'
-ms.date: 04/01/2021
-ms.author: bholtorf
+ms.date: 05/24/2024
 ms.service: dynamics-365-business-central
+ms.custom: bap-template
 ---
-# <a name="making-payments"></a>Effectuer des paiements
+# Effectuer des paiements
 
-Lorsque vous effectuez des paiements aux fournisseurs ou aux clients, ou des remboursements aux employés, vous reportez les lignes paiement associées sur la page **Journal paiement**. Le journal paiement est un journal général qui est optimisé pour effectuer des paiements et inclut un certain nombre de fonctionnalités puissantes telles que la fonction **Proposer paiements fournisseur** qui rassemble les paiements fournisseur échus, et le rapport **Fournisseur - chronologie sommaire** qui affiche un aperçu des paiements fournisseur échus.  
+Vous effectuez des paiements aux fournisseurs ou aux clients, ou des remboursements aux employés, en reportant les lignes paiement sur la page **Journal paiement**. Le journal paiement est un journal général qui est optimisé pour effectuer les paiements et qui offre beaucoup d'actions puissantes. Par exemple, l'action **Suggérer des paiements fournisseur** qui recherche les paiements fournisseur qui sont dus, et le rapport **Fournisseur – Chronologie sommaire** qui montre un aperçu des paiements fournisseur dus.  
 
-Vous pouvez lancer le processus de paiement depuis des listes, des fiches et des écritures pour les fournisseurs, les clients, ainsi que les employés. Chacune de ces pages a un bouton démarrant le flux de paiement et vous permettant de renseigner le journal paiement.  
+Vous pouvez lancer le processus de paiement depuis les listes, les fiches, et les écritures pour les fournisseurs, les clients, ainsi que les employés. Chacune de ces pages a un bouton démarrant le flux de paiement et vous permettant de renseigner le journal paiement.  
 
-À partir du journal paiement, vous pouvez imprimer des chèques informatisés ou effectuer un enregistrement lorsque les chèques sont rédigés. Si vous sélectionnez **Informatique** dans le champ **Mode émission paiement**, toutes les lignes représentant des chèques doivent être imprimées avant que les lignes feuille puissent être validées.
+À partir du journal paiement, vous pouvez imprimer des chèques informatisés ou effectuer un enregistrement lorsque les chèques sont rédigés. Si vous sélectionnez **Informatique** dans le champ **Mode émission paiement**, vous devez imprimer les lignes représentant des chèques avant de reporter le journal paiement.
 
-Lorsque les paiements sont reportés, vous pouvez les exporter vers un fichier bancaire à télécharger vers votre banque pour traitement.
+Une fois que les paiements sont reportés, vous pouvez les exporter-dans un fichier bancaire que vous pouvez télécharger vers votre banque pour traitement.
 
-Une fois les paiements effectués au niveau de votre banque, vous devez les affecter à leurs écritures fournisseur ou employé ouvertes correspondantes. Vous pouvez le faire manuellement ou en important un fichier de relevé de compte bancaire et en affectant les paiements automatiquement. Pour plus d'informations, reportez-vous à [Lettrage automatique des paiements et rapprochement des comptes bancaires](receivables-apply-payments-auto-reconcile-bank-accounts.md).
+Une fois les paiements effectués au niveau de votre banque, vous devez les affecter à leurs écritures fournisseur ou employé ouvertes correspondantes. Vous pouvez les affecter manuellement ou en important un fichier de relevé bancaire et en affectant les paiements automatiquement. Pour plus d'informations, reportez-vous à [Lettrage automatique des paiements et rapprochement des comptes bancaires](receivables-apply-payments-auto-reconcile-bank-accounts.md).
 
-Le tableau suivant décrit une série de tâches et inclut des liens vers les rubriques qui les décrivent.
+Le tableau suivant décrit une série de tâches et inclut des liens vers les articles qui les décrivent.
 
 | À | Voir |
 | --- | --- |
@@ -34,7 +35,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ru
 | Payez un fournisseur en liquide ou par chèque et reportez le paiement lorsque vous reportez la facture. |[Établir rapidement des factures achat](finance-how-to-settle-purchase-invoices-promptly.md) |
 | Assurez-vous que la banque efface uniquement les chèques et les montants validés en envoyant un fichier contenant des informations de paiement, du chèque et du fournisseur. |[Exportation du fichier Positive Pay](finance-how-positive-pay.md) |
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  

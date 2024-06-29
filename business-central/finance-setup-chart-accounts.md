@@ -1,5 +1,5 @@
 ---
-title: Configurer ou modifier le plan comptable (contient une vidéo)
+title: Configurer ou modifier le plan comptable
 description: En savoir plus sur la configuration de votre plan comptable avec les comptes généraux qui stockent vos données financières.
 author: brentholtorf
 ms.author: bholtorf
@@ -11,14 +11,14 @@ ms.date: 04/23/2024
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
-# <a name="set-up-or-change-the-chart-of-accounts"></a>Configurer ou modifier le plan comptable
+# Configurer ou modifier le plan comptable
 
 Le plan comptable affiche les comptes généraux qui stockent vos données financières. [!INCLUDE[prod_short](includes/prod_short.md)] inclut un plan comptable standard prêt à prendre en charge votre société. Vous pouvez, cependant, modifier les comptes par défaut, et vous pouvez ajouter de nouveaux comptes.
 <br><br>  
 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE43KO9?rel=0]
 
-## <a name="add-or-change-accounts"></a>Ajouter ou modifier les comptes
+## Ajouter ou modifier les comptes
 
 À partir du plan comptable, vous pouvez ouvrir chaque compte GL et ajouter ou modifier des paramètres. [!INCLUDE [tooltip-inline-tip_md](includes/tooltip-inline-tip_md.md)] 
 
@@ -29,7 +29,7 @@ Pour les comptes de type **Total**, vous devez renseigner le champ **Totalisatio
 > [!IMPORTANT]
 > Si vous avez entré des définitions dans les champs **Totalisation** pour les comptes de type **Fin total** avant d’exécuter la fonction de décalage, vous devez les entrer à nouveau car cette fonction remplace les valeurs de tous les champs **Fin total**.
 
-## <a name="delete-accounts"></a>Supprimer les comptes
+## Supprimer les comptes
 
 Vous pouvez supprimer un compte GL. Toutefois, avant que de le supprimer, les conditions suivantes doivent être réunies :  
 
@@ -43,17 +43,17 @@ Vous pouvez également spécifier quand autoriser les utilisateurs à supprimer 
 
 La désactivation du champ **Bloquer la suppression des comptes GL** est une pratique exemplaire, tout comme définir la date dans le champ **Vérifier suppr. cpte du grand livre ap.**, par exemple à la date à laquelle vous devez stocker vos données financières.  
 
-### <a name="video-guidance"></a>Guidage vidéo
+### Guidage vidéo
 
 Cette vidéo montre comment spécifier si et quand les utilisateurs peuvent supprimer des comptes G/L.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1g3oY]
 
-## <a name="learning-path-set-up-the-chart-of-accounts-in-dynamics-365-business-central"></a>Parcours d’apprentissage : configurer le plan comptable dans Dynamics 365 Business Central
+## Parcours d’apprentissage : configurer le plan comptable dans Dynamics 365 Business Central
 
 Pour savoir configurer la définition du plan comptable dans [!INCLUDE [prod_short](includes/prod_short.md)] ? Commencez ensuite le parcours d’apprentissage suivant [Configurer le plan comptable dans Dynamics 365 Business Central](/training/modules/chart-accounts-dynamics-365-business-central).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Les écritures comptables et le plan comptable](finance-general-ledger.md)  
 [Rapprochement de comptes bancaires](bank-manage-bank-accounts.md)  

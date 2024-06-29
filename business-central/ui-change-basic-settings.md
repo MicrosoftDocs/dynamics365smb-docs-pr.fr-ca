@@ -2,21 +2,21 @@
 title: Modifier les paramètres de base pour l'utilisateur actuel
 description: "Découvrez comment modifier certains paramètres de base dans Business\_Central, par exemple, votre rôle et votre centre de rôles, votre compagnie, votre date de travail et vos fuseaux horaires."
 author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: bholtorf
 ms.topic: conceptual
-ms.devlang: al
 ms.search.keywords: 'change Role Center, notification, change company, change work date, decimal separator'
 ms.search.form: '9022, 9019, 9027, 9020, 9026, 9030, 9000, 9009, 9004, 9005, 9024, 9006, 9007, 9010, 9016, 9017'
-ms.date: 08/31/2022
-ms.author: bholtorf
+ms.date: 05/24/2024
 ms.service: dynamics-365-business-central
 ---
-# <a name="change-basic-settings"></a>Modifier les paramètres de base
+# Modification des paramètres de base
 
-Sur la page **Mes paramètres**, vous pouvez afficher et modifier les paramètres de base de votre [!INCLUDE[prod_short](includes/prod_short.md)]. Vos modifications affectent uniquement votre espace de travail, et non les espaces de travail des autres utilisateurs.  
+Utiliser la page **Mes paramètres** gérer les paramètres de base de [!INCLUDE[prod_short](includes/prod_short.md)]. Vos modifications affectent uniquement votre espace de travail, et non les espaces de travail des autres utilisateurs.  
 
 [!INCLUDE [about-ui-learn](includes/about-ui-learn.md)]
 
-## <a name="role"></a><a name="role-center"></a>Rôle
+## <a name="role-center"></a>Rôle
 
 Le rôle détermine la page d’accueil, un écran de démarrage conçu pour les exigences d’un rôle spécifique dans une organisation. Selon votre rôle, la page d'accueil ou le tableau de bord donne une vue d’ensemble de l’entreprise, de votre département ou de vos tâches personnelles. Il vous permet également d'accéder à vos tâches quotidiennes et de rechercher les tâches qui vous sont affectées.
 
@@ -24,7 +24,7 @@ Le rôle détermine la page d’accueil, un écran de démarrage conçu pour les
 
 * Le tableau de bord contient une zone **Activités** qui affiche les données actuelles, vous pouvez sélectionner pour afficher des informations plus détaillées. Les indicateurs de performance clés peuvent être configurés afin d'afficher un graphique sélectionné pour une représentation visuelle, par exemple, de la trésorerie ou des revenus et des dépenses. Vous pouvez également générer la liste des clients favoris sur la page d'accueil pour les comptes d'entreprise avec lesquels vous travaillez souvent ou auxquels vous devez accorder une attention particulière.
 
-### <a name="change-the-role"></a>Modifier le rôle
+### Modifier le rôle
 
 Le rôle par défaut est **Gestionnaire d'activité**, mais vous pouvez sélectionner un autre rôle pour utiliser un Tableau de bord qui correspond mieux à vos besoins.  
 
@@ -32,7 +32,7 @@ Le rôle par défaut est **Gestionnaire d'activité**, mais vous pouvez sélecti
 2. Sur la page **Mes paramètres**, dans le champ **Rôle** , sélectionnez le rôle que vous souhaitez utiliser par défaut. Par exemple, sélectionnez **Comptable**.
 3. Cliquez sur **OK**.
 
-## <a name="company"></a><a name="company"></a>Compagnie
+## <a name="company"></a>Compagnie
 
 Dans [!INCLUDE[prod_short](includes/prod_short.md)], une société fonctionne comme un conteneur de données. Il peut y avoir plusieurs compagnies dans une seule base de données, mais une seule peut être sélectionnée à la fois. La compagnie par défaut est appelée CRONUS et contient uniquement des données de démonstration.
 
@@ -44,7 +44,7 @@ Le champ **Compagnie** indique la compagnie où vous travaillez actuellement et 
 La compagnie par défaut est appelée CRONUS et contient uniquement des données de démonstration. Vous pouvez créer une nouvelle compagnie avec des données personnalisées. Pour plus d'informations, voir [Création de compagnies](about-new-company.md).
 
 <!--
-### <a name="to-change-the-company-name"></a>To change the company name
+### To change the company name
 
 The company name is always displayed at the top left corner and works as an action that you can choose to go back to the Role Center. You can change this name on the **Company Information** page.
 
@@ -52,7 +52,7 @@ The company name is always displayed at the top left corner and works as an acti
 2. In the **Name** field, enter the new company name.
 3. Leave the page. The system restarts and displays the new company in the top-left corner.
 
-### <a name="to-display-a-company-badge-for-quick-access-to-company-information"></a><a name="badge"></a>To display a company badge for quick access to company information
+### <a name="badge"></a>To display a company badge for quick access to company information
 
 You can add a customized badge in the top-right corner, which you can choose to quickly view company name and tenant information in a pop-up box. The company badge is also useful when [!INCLUDE[prod_short](includes/prod_short.md)] is embedded in another application, like Microsoft Teams or in some other web application. In these cases, because the [!INCLUDE[web_client](includes/web_client.md)] displays less surrounding contextual information, the company badge serves as the only way to determine which company or environment a record belongs to.
 
@@ -62,7 +62,7 @@ You can add a customized badge in the top-right corner, which you can choose to 
 > [!NOTE]
 > If a company badge is defined, then you cannot change the company name as described in [To change the company name](ui-change-basic-settings.md#to-change-the-company-name)-->
 
-## <a name="work-date"></a><a name="work-date"></a>Date de travail
+## <a name="work-date"></a>Date de travail
 
 La date de travail la plus couramment utilisée est la date du jour. Vous pouvez être amené à modifier temporairement la date de travail pour effectuer des tâches telles que l’exécution de transactions à une date différente de la date du jour.
 
@@ -72,41 +72,41 @@ La date de travail la plus couramment utilisée est la date du jour. Vous pouvez
 > [!IMPORTANT]  
 > Une fois la date de travail modifiée, si vous vous déconnectez ou si vous changez de compagnie, les données de travail reviennent à la date de travail par défaut. Ainsi, la prochaine fois que vous vous connecterez ou lorsque vous reviendrez à la compagnie d'origine, vous devrez peut-être redéfinir la date de travail.
 
-### <a name="work-date-indication"></a>Indication de la date de travail
+### Indication de la date de travail
 
 La date de travail est une information primordiale sur les pages qui peuvent être éditées. Chaque fois que la date de travail n’est pas définie sur la date du jour sur une page modifiable, deux types d’indicateurs apparaissent sur la page :
 
-* Un rappel apparaît en haut de la page pour vous indiquer la date de travail. Le rappel fournit un lien direct vers le paramètre de la date de travail sur la page **Mes paramètres** de sorte que vous pouvez modifier la date si vous voulez. À partir du rappel, vous pouvez également choisir de l'annuler pour le reste de votre session. À moins que vous ne remplaciez la date de travail par « aujourd'hui », le rappel apparaîtra la prochaine fois que vous vous connecterez.
+* Un rappel apparaît en haut de la page pour vous indiquer la date de travail. Le rappel fournit un lien direct vers le paramètre de la date de travail sur la page **Mes paramètres** de sorte que vous pouvez modifier la date si vous voulez. À partir du rappel, vous pouvez également choisir de l'annuler pour le reste de votre session. À moins que vous ne remplaciez la date de travail par « aujourd’hui », le rappel apparaîtra la prochaine fois que vous vous connecterez.
 
-* Si vous refusez le rappel, la date de travail apparaîtra dans le titre de la page.  
+* Si vous refusez le rappel, la date de travail apparaît dans le titre de la page.  
 
 Si la date de travail n’est pas définie sur la date actuelle (aujourd’hui), alors la date de travail actuelle s’affiche dans l’angle supérieur gauche sur toutes les pages sur lesquelles vous pouvez modifier les données.
 
-## <a name="region"></a><a name="region"></a>Région
+## <a name="region"></a> Région
 
 Le paramètre **Région** détermine la manière dont les dates, heures, nombres et devises sont affichés ou mis en forme. Il détermine également quel caractère est utilisé comme séparateur décimal lors de l’utilisation d’un clavier numérique pour saisir des données. En savoir plus sur [Saisie de données](ui-enter-data.md#decimal).
 
-## <a name="language"></a><a name="language"></a>Langue
+## <a name="language"></a> Langue
 
 Modifie la langue d'affichage. Ce champ s’affiche uniquement lorsque vous avez le choix entre plusieurs langues.
 
-La langue initiale est déterminée par l'administrateur ou par les paramètres de votre navigateur lorsque vous vous inscrivez à [!INCLUDE[prod_short](includes/prod_short.md)]. La langue définie est utilisée sur tous les appareils à partir desquels vous vous connectez, par exemple un téléphone ou une tablette.
+La langue initiale est déterminée par votre administrateur ou par les paramètres de votre navigateur lorsque vous vous inscrivez à [!INCLUDE[prod_short](includes/prod_short.md)]. La langue définie est utilisée sur tous les appareils à partir desquels vous vous connectez, par exemple un téléphone ou une tablette.
 
-Des langues supplémentaires pour [!INCLUDE[prod_short](includes/prod_short.md)] peuvent être installées à partir d'AppSource. Même si toutes les langues d’affichage prises en charge sont affichées dans la liste, l’administrateur doit installer l’application de langue appropriée sur l’abonné avant que les utilisateurs puissent passer à la nouvelle langue dans [!INCLUDE[prod_short](includes/prod_short.md)].  
+Installez des langues supplémentaires pour [!INCLUDE[prod_short](includes/prod_short.md)] à partir d’AppSource. Même si toutes les langues d’affichage prises en charge sont affichées dans la liste, l’administrateur doit installer l’application de langue appropriée sur l’abonné avant que les utilisateurs puissent passer à la nouvelle langue dans [!INCLUDE[prod_short](includes/prod_short.md)].  
 
-## <a name="time-zone"></a>Fuseau horaire
+## Fuseau horaire
 
 Définit le fuseau horaire dans lequel vous vous trouvez. Lorsque vous vous connectez pour la première fois à [!INCLUDE [prod_short](includes/prod_short.md)], le fuseau horaire est défini en fonction de l'adresse de votre compagnie. Modifiez-le s'il ne correspond pas à votre emplacement physique.  
 
-## <a name="notifications"></a>Notifications
+## Notification
 
-Sélectionnez le lien *Modifier quand je reçois une notification* pour afficher ou modifier les notifications que vous recevez au sujet de certains événements ou modifications d'état, lorsque vous êtes sur le point de facturer un client avec des écritures échues, ou lorsque l'inventaire disponible est inférieur à la quantité que vous êtes sur le point de vendre. En savoir plus sur [Gestion des notifications](ui-smart-notifications.md).
+Choisissez le lien **Modifier lorsque je reçois des notifications** pour gérer les notifications que vous recevez concernant certains événements ou changements d'état. Par exemple, lorsque vous êtes sur le point de facturer un client avec des écritures échues, ou lorsque l'inventaire disponible est inférieur à la quantité que vous êtes sur le point de vendre. En savoir plus sur [Gestion des notifications](ui-smart-notifications.md).
 
-## <a name="teaching-tips"></a>Conseils d’apprentissage
+## Conseils d’apprentissage
 
 [!INCLUDE [ua-teachingtips](includes/ua-teachingtips.md)]
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 [Modification des fonctionnalités affichées](ui-experiences.md)  

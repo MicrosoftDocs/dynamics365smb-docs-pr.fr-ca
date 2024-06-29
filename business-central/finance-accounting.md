@@ -1,41 +1,41 @@
 ---
-title: "Expériences de comptables dans Business\_Central (contient une vidéo)"
+title: Expériences de comptables dans Business Central
 description: En savoir plus sur le Tableau de bord Comptable et le Hub Entreprise qui prennent en charge les comptables internes et externes de la compagnie du client.
 author: brentholtorf
 ms.topic: conceptual
 ms.search.keywords: 'accountant, accounting, financial report'
 ms.search.form: '100, 1156, 1157, 1314, 1315, 1316, 9027'
-ms.date: 10/19/2023
+ms.date: 06/12/2024
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
-# <a name="accountant-experiences-in-"></a>Expériences de comptable dans [!INCLUDE[prod_long](includes/prod_long.md)]
+# Expériences de comptable dans [!INCLUDE[prod_long](includes/prod_long.md)]
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-Chaque entreprise doit tenir ses comptes et valider sa comptabilité. Certaines sociétés utilisent un comptable externe, et d'autres ont un comptable dans le personnel. Peu importe le type de comptable que vous êtes, vous pouvez utiliser le tableau de bord **Comptable** comme pages d'accueil de [!INCLUDE[prod_short](includes/prod_short.md)]. De là, vous pouvez accéder à toutes les pages nécessaires pour votre travail.  
+Chaque entreprise doit tenir ses comptes et valider sa comptabilité. Certaines sociétés utilisent un comptable externe, et d'autres ont un comptable dans le personnel. Peu importe quel type de comptable que vous êtes, vous pouvez utiliser le tableau de bord **Comptable** comme pages d’accueil de [!INCLUDE[prod_short](includes/prod_short.md)]. De là, vous pouvez accéder à toutes les pages nécessaires pour votre travail.  
 
-## <a name="accountant-role-center"></a>Tableau de bord Comptable
+## Tableau de bord Comptable
 
-Le tableau de bord est un tableau de bord avec des vignettes d'activité qui affichent des chiffres essentiels en temps réel et vous permettent d'accéder rapidement aux données. Dans le ruban en haut de la page, vous avez accès à plusieurs actions, par exemple ouvrir les relevés et les rapports financiers les plus couramment utilisés dans Excel. Dans la barre de navigation supérieure, vous pouvez rapidement basculer entre les listes que vous utilisez le plus fréquemment. Ici, vous pouvez visualiser d'autres éléments, tels que **Documents reportés** avec divers types de documents que la compagnie a reportés.  
+Le tableau de bord est un tableau de bord avec des vignettes d'activité qui affichent des chiffres essentiels en temps réel et vous permettent d'accéder rapidement aux données. Le ruban en haut de la page, vous avez accès à des actions supplémentaires. Par exemple, pour ouvrir des rapports et des relevés financiers dans Excel. Dans la barre de navigation supérieure, vous pouvez rapidement basculer entre les listes que vous utilisez le plus fréquemment. Ici, vous voyez d’autres modules, tels que **Documents reportés** avec les divers types de documents que la compagnie a reportés.  
 
 Si vous débutez avec [!INCLUDE[prod_short](includes/prod_short.md)], vous pouvez lancer une liste de vidéos depuis votre Tableau de bord. Vous pouvez également lancer une visite de **Mise en route** qui précise des domaines clé.  
 
-## <a name="company-hub"></a>Hub Entreprise
+## Hub Entreprise
 
-Si vous travaillez dans plusieurs compagnies [!INCLUDE [prod_short](includes/prod_short.md)], vous trouverez peut-être utile d’utiliser la page **Hub Entreprise** pour suivre votre travail.  Pour plus d’informations, voir [Gérer le travail entre plusieurs compagnies dans le Hub Entreprise](company-hub.md).  
+Si vous travaillez dans plusieurs compagnies [!INCLUDE [prod_short](includes/prod_short.md)], vous trouverez peut-être utile d’utiliser la page **Hub Entreprise** pour suivre votre travail. Pour plus d’informations, voir [Gérer le travail entre plusieurs compagnies dans le Hub Entreprise](company-hub.md).  
 
-## <a name="inviting-your-external-accountant-to-your-"></a><a name="inviteaccountant"></a>Inviter votre comptable externe dans votre [!INCLUDE[prod_short](includes/prod_short.md)]
+## <a name="inviteaccountant"></a>Inviter votre comptable externe dans votre [!INCLUDE[prod_short](includes/prod_short.md)]
 
 Si vous utilisez un comptable externe pour gérer votre comptabilité et vos rapports financiers, votre administrateur peut l'inviter à votre [!INCLUDE[prod_short](includes/prod_short.md)] afin qu'il puisse travailler avec vous sur vos données fiscales. [!INCLUDE[prod_short](includes/prod_short.md)] comprend trois licences de type Comptable externe. Pour plus d’informations sur la gestion des licences, téléchargez le [Guide des licences Microsoft Dynamics 365 Business Central](https://go.microsoft.com/fwlink/?LinkId=866544).
 
-Une fois que votre comptable a accédé à votre [!INCLUDE[prod_short](includes/prod_short.md)], il peut utiliser le tableau de bord **Comptable** qui donne un accès facilité aux pages les plus appropriées pour son travail. Ils peuvent également utiliser le Hub Entreprise de leur propre [!INCLUDE [prod_short](includes/prod_short.md)] pour gérer leur travail. Pour plus d’informations, voir [Gérer le travail entre plusieurs compagnies dans le Hub Entreprise](company-hub.md).  
+Une fois que votre comptable a accès à votre [!INCLUDE[prod_short](includes/prod_short.md)], il peut utiliser le tableau de bord **Comptable** qui donne un accès facilité aux pages pour son travail. Ils peuvent également utiliser le Hub Entreprise de leur propre [!INCLUDE [prod_short](includes/prod_short.md)] pour gérer leur travail. Pour plus d’informations, voir [Gérer le travail entre plusieurs compagnies dans le Hub Entreprise](company-hub.md).  
 
 > [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE4Fnyw?rel=0]
 
-Nous avons simplifié pour vous la façon d'inviter votre comptable externe. Ouvrez simplement la page **Utilisateurs**, puis choisissez l'action **Inviter un comptable externe** dans le ruban. Un courriel est préparé pour vous afin de vous permettre d'ajouter le courriel professionnel de votre comptable et d'envoyer l'invitation.  
+Inviter votre comptable externe. Ouvrez la page **Utilisateurs**, puis choisissez l’action **Inviter un comptable externe** dans le ruban. Un courriel est préparé pour vous afin de vous permettre d'ajouter le courriel professionnel de votre comptable et d'envoyer l'invitation.  
 
 > [!Note]  
 > Pour cela, il faudrait que vous ayez configuré la messagerie SMTP. Pour plus d'informations, voir [Configurer la messagerie](admin-how-setup-email.md).  
@@ -47,11 +47,11 @@ Nous avons simplifié pour vous la façon d'inviter votre comptable externe. Ouv
 >
 > Cette tâche nécessite un accès à la gestion des utilisateurs et des licences dans Microsoft Entra ID. L’utilisateur qui envoie cette invitation doit se voir attribuer le rôle **Administrateur général** ou **Administrateur utilisateur** dans le centre d’administration Microsoft 365. Pour plus d’informations, voir [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles) dans le centre d’administration Microsoft 365.  
 
-### <a name="add-your-accountant-to-your-microsoft-365-in-the-azure-portal"></a>Ajout de votre comptable à votre Microsoft 365 dans le Portail Azure
+### Ajouter votre comptable à votre Microsoft 365 dans le Portail Azure
 
 Si votre administrateur ou partenaire revendeur ne souhaite pas utiliser le guide **Inviter un comptable externe**, il peut ajouter un utilisateur externe dans le Portail Azure et attribuer à cet utilisateur la licence *Comptable externe*. Pour plus d'informations, voir [Démarrage rapide : Ajouter des utilisateurs invités à votre annuaire dans le portail Azure](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
 
-#### <a name="to-add-your-accountant-as-a-guest-user"></a>Pour ajouter votre comptable en tant qu'utilisateur invité
+#### Pour ajouter votre comptable en tant qu'utilisateur invité
 
 1. Ouvrez le [Portail Azure](https://portal.azure.com/).
 2. Dans le volet gauche, sélectionnez **Microsoft Entra ID**.
@@ -59,14 +59,14 @@ Si votre administrateur ou partenaire revendeur ne souhaite pas utiliser le guid
 4. Sélectionnez **Nouvel utilisateur invité**.
 5. Sur la page **Nouvel utilisateur**, sélectionnez **Inviter un utilisateur**, puis ajoutez des informations sur votre comptable externe.  
 
-   Vous pouvez éventuellement inclure un message de bienvenue personnel à l'attention du comptable pour l'informer que vous l'ajoutez à votre [!INCLUDE[prod_short](includes/prod_short.md)].
+   Vous pouvez éventuellement inclure un message de bienvenue personnel à l’attention du comptable pour l’informer que vous l’ajoutez à votre [!INCLUDE[prod_short](includes/prod_short.md)].
 
 6. Sélectionner **Inviter** pour envoyer automatiquement l'invitation. Une notification apparaît en haut à droite avec le message **Utilisateur invité avec succès**. 
 7. Après avoir envoyé l'invitation, le compte utilisateur est automatiquement ajouté au répertoire en tant qu'invité.
 
 Ensuite, vous devez attribuer au nouvel utilisateur invité une licence pour [!INCLUDE[prod_short](includes/prod_short.md)].
 
-#### <a name="to-give-your-accountant-access-to-your-"></a>Pour donner à votre comptable accès à votre [!INCLUDE[prod_short](includes/prod_short.md)]
+#### Pour donner à votre comptable accès à votre [!INCLUDE[prod_short](includes/prod_short.md)]
 
 1. Dans le Portail Azure, pour le nouvel utilisateur ajouté, choisissez **Profil**, puis **Modifier**
 2. Mettez à jour le champ **Emplacement d'utilisation** et indiquez le pays/la région concerné(e), puis choisissez **Enregistrer**.
@@ -80,25 +80,25 @@ Ensuite, vous devez attribuer au nouvel utilisateur invité une licence pour [!I
 
 En cas de réussite, la licence est attribuée à l'utilisateur invité et le compte invité est créé.
 
-### <a name="import-the-new-user-into-"></a>Importation du nouvel utilisateur dans [!INCLUDE[prod_short](includes/prod_short.md)]
+### Importer du nouvel utilisateur dans [!INCLUDE[prod_short](includes/prod_short.md)]
 
-Le comptable recevra un courriel l’informant que l’accès à votre Microsoft Entra ID lui a été fourni. Ensuite, vous devez lui donner accès à la bonne compagnie dans [!INCLUDE[prod_short](includes/prod_short.md)].
+Le comptable reçoit un courriel l’informant qu'il a accès à votre Microsoft Entra ID. Ensuite, vous devez lui donner accès à la bonne compagnie dans [!INCLUDE[prod_short](includes/prod_short.md)].
 
-#### <a name="to-add-the-accountant-to-the-right-company"></a>Pour ajouter le comptable à la bonne compagnie
+#### Pour ajouter le comptable à la bonne compagnie
 
 1. Ouvrez la compagnie [!INCLUDE[prod_short](includes/prod_short.md)] à laquelle vous souhaitez donner accès au comptable sur [https://businesscentral.dynamics.com](https://businesscentral.dynamics.com).
 2. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Utilisateurs**, puis choisissez le lien associé.  
 3. Choisissez l’action **Obtenir de nouveaux utilisateurs à partir de Microsoft 365**.
 
-Cela a pour effet d'importer dans la compagnie le compte utilisateur que vous avez créé dans le portail Azure. Pour plus d'informations, voir [Pour ajouter un utilisateur dans Business Central](ui-how-users-permissions.md#adduser).  
+Cette action a pour effet d’importer dans la compagnie le compte utilisateur que vous avez créé dans le portail Azure. Pour plus d'informations, voir [Pour ajouter un utilisateur dans Business Central](ui-how-users-permissions.md#adduser).  
 
 Si vous souhaitez donner accès à plusieurs compagnies, vous devez vous connecter à chaque compagnie et répéter ce processus. Vous pouvez également mettre à jour les groupes d'autorisations pour le profil utilisateur du comptable dans [!INCLUDE[prod_short](includes/prod_short.md)], par exemple en lui attribuant le groupe d'utilisateurs *D365 Bus Premium*. Pour en savoir plus, voir [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md).  
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi .
 
-[Finance](finance.md)  
+[Finances](finance.md)  
 [Configuration de Finance](finance-setup-finance.md)  
-[Le grand livre et le plan comptable](finance-general-ledger.md)  
+[Les écritures comptables et le plan comptable](finance-general-ledger.md)  
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
 [Utiliser des dimensions](finance-dimensions.md)  
 [Analyse des états financiers dans Excel](finance-analyze-excel.md)  
