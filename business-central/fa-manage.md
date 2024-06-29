@@ -12,15 +12,15 @@ ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
 
-# Gérer des immobilisations
+# <a name="manage-fixed-assets"></a>Gérer des immobilisations
 
 Le module Immobilisations dans [!INCLUDE[prod_short](includes/prod_short.md)] offre un aperçu des immobilisations et garantit un amortissement correct. Elle vous aide également à suivre les coûts d'entretien, à gérer les polices d’assurance, à reporter les transactions d’immobilisations, et à générer des rapports et des statistiques variés.
 
-## Qu’est-ce qu’une immobilisation ?
+## <a name="what-is-a-fixed-asset"></a>Qu’est-ce qu’une immobilisation ?
 
 Les immobilisations diffèrent des autres articles de votre entrepôt. Une immobilisation, également appelée immobilisation, est une immobilisation corporelle, une usine ou un équipement (PP&E) que vous possédez ou gérez dans l’espoir qu’elle continuera à contribuer à générer des revenus. Un actif est fixe lorsqu’il s’agit d’un article que votre entreprise ne consommera pas, ne vendra pas ou ne convertira pas en espèces au cours de l’année civile suivante. Les immobilisations sont différentes des actifs courants, qui sont en espèces ou devraient être convertis en espèces au cours des 12 prochains mois. Les immobilisations diffèrent également de votre inventaire, car celui-ci est généralement consommé en peu de temps.
 
-## Types d'immobilisations
+## <a name="types-of-fixed-assets"></a>Types d'immobilisations
 
 Les entreprises investissent généralement dans quelques types d’immobilisations. Voici quelques exemples :
 
@@ -30,7 +30,7 @@ Les entreprises investissent généralement dans quelques types d’immobilisati
 - Machine
 - Matériel de transport
 
-## Comprendre la comptabilité des immobilisations
+## <a name="understanding-fixed-asset-accounting"></a>Comprendre la comptabilité des immobilisations
 
 La comptabilité des immobilisations signifie tenir des registres financiers précis sur vos immobilisations. Ces enregistrements incluent des détails sur les cinq phases du cycle de vie d’un actif. Après votre achat initial, le cycle de vie de chaque immobilisation comprend au moins trois des phases suivantes :
 
@@ -42,13 +42,13 @@ La comptabilité des immobilisations signifie tenir des registres financiers pr�
 
 Les audits s’inscrivent également dans les contrôles détaillés des enregistrements comptables de votre compagnie après la fermeture des comptes de l’exercice financier. Qu’ils soient internes ou externes, les audits sont l’endroit où vous pourriez remarquer des incohérences ou des différences entre vos notes et l’état réel de vos actifs. Les audits favorisent la transparence de vos actifs et de votre comptabilité si vous perdez plus d’argent que prévu.
 
-## Présentation de la vidéo
+## <a name="video-overview"></a>Présentation de la vidéo
 
 La vidéo suivante couvre les notions de base des immobilisations :
 
 > [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE4AegS?rel=0]
 
-## Configuration initiale des immobilisations
+## <a name="initial-setup-of-fixed-assets"></a>Configuration initiale des immobilisations
 
 Avant de pouvoir gérer les immobilisations, vous devez effectuer les configurations suivantes :
 
@@ -60,7 +60,7 @@ Avant de pouvoir gérer les immobilisations, vous devez effectuer les configurat
 
 Pour en savoir plus, accédez à [Configuration des Immobilisations](fa-setup.md).
 
-## Analyse des immobilisations
+## <a name="fixed-assets-analytics"></a>Analyse des immobilisations
 
 Cette section décrit les outils analytiques que vous pouvez utiliser pour obtenir des informations dans vos données sur vos Immobilisations.
 
@@ -74,7 +74,7 @@ Cette section décrit les outils analytiques que vous pouvez utiliser pour obten
 | Affichez des écritures cession. | [Afficher des écritures cession](fa-how-dispose-retire.md#to-view-disposal-ledger-entries) |
 | Visualiser des valeurs de cession prévues. | [Affichage des valeurs de cession prévues](fa-how-manage-budgets.md#to-view-projected-disposal-values) |
 
-## Enregistrer Immobilisations
+## <a name="register-fixed-assets"></a>Enregistrer Immobilisations
 
 Pour chaque immobilisation, vous devez créer une fiche contenant des informations les concernant. Par exemple, vous pouvez configurer des bâtiments ou du matériel de production en tant qu'actifs principaux avec une liste de composantes. Vous pouvez regrouper les actifs de différentes manières par exemple, par classe, par département ou par emplacement. Puis, vous pouvez acquérir, maintenir et commercialiser les immobilisations. Vous pouvez également paramétrer des immobilisations budgétées. La budgétisation vous permet par exemple d’inclure dans des rapports des acquisitions et des ventes anticipées.
 
@@ -83,7 +83,7 @@ Pour chaque immobilisation, vous devez créer une fiche contenant des informatio
 | Gérer les budgets d'immobilisations, budgéter les coûts d'acquisition, les cessions d'immobilisations et l'amortissement. |[Gestion des budgets pour les immobilisations](fa-how-manage-budgets.md) |
 | Créer des immobilisations, affecter des méthodes d'amortissement, reporter des acquisitions et des valeurs résiduelles et imprimer les listes d'immobilisations. |[Acquisition des immobilisations](fa-how-acquire.md) |
 
-## Configurer les Amortissement des immobilisations
+## <a name="set-up-depreciations-for-your-fixed-assets"></a>Configurer les Amortissement des immobilisations
 
 Pour suivre des amortissements d’immobilisations et d’autres transactions financières pour les immobilisations, configurez un voire plusieurs registres amortissement pour chacune. Voici quelques étapes pour amortir les actifs :
 
@@ -100,7 +100,7 @@ Pour suivre des amortissements d’immobilisations et d’autres transactions fi
 | Affichez les valeurs de registre d’amortissement modifiées. | [Afficher les valeurs de registre d’amortissement modifiées](fa-how-trans-split-combine.md#to-view-changed-depreciation-book-values-due-to-fixed-asset-reclassification) |
 | Enregistrez les transactions immobilisation manuellement sur la page **Journal GL immobilisation** ou sur la page **Journal immobilisations**, selon que les transactions sont destinées à des rapports financiers ou à la gestion interne. | [Configuration des amortissements](fa-how-setup-depreciation.md) |
 
-## Entretien et assurance des immobilisations
+## <a name="fixed-assets-maintenance-and-insurance"></a>Entretien et assurance des immobilisations
 
 Vous pouvez enregistrer des coûts d'entretien et la date du prochain service pour chaque actif. Le suivi des frais d’entretien peut être important dans le cadre de l’élaboration du budget et de la prise de décisions concernant le remplacement éventuel d’une immobilisation. Vous pouvez rattacher chaque immobilisation à une ou plusieurs polices d’assurance et vérifier que les primes des polices correspondent à la valeur des actifs.
 
@@ -111,7 +111,7 @@ Vous pouvez enregistrer des coûts d'entretien et la date du prochain service po
 | Mettre à jour les informations d'assurance, reporter les coûts d'acquisition vers les polices d'assurance, modifier la couverture assurance, visualiser les statistiques assurance et répertorier les polices d'assurance. |[Assurance des immobilisations](fa-how-insure.md) |
 | Surveillance des couvertures d’assurance. | [Surveillance des couvertures d’assurance](fa-how-insure.md#to-monitor-insurance-coverage) |
 
-## Reclasser, transférer, diviser/regrouper, ajuster la valeur, déprécier et céder des immobilisations
+## <a name="reclassify-transfer-split-upcombine-adjust-value-write-down-and-dispose-fixed-assets"></a>Reclasser, transférer, diviser/regrouper, ajuster la valeur, déprécier et céder des immobilisations
 
 | À  | Voir |
 | --- | --- |
@@ -121,7 +121,7 @@ Vous pouvez enregistrer des coûts d'entretien et la date du prochain service po
 | Affichez des écritures cession. | [Afficher des écritures cession](fa-how-dispose-retire.md#to-view-disposal-ledger-entries) |
 | Visualiser des valeurs de cession prévues. | [Affichage des valeurs de cession prévues](fa-how-manage-budgets.md#to-view-projected-disposal-values) |
 
-## Conseils pour améliorer votre comptabilité des immobilisations
+## <a name="tips-for-improving-your-fixed-asset-accounting"></a>Conseils pour améliorer votre comptabilité des immobilisations
 
 Il existe quelques éléments que vous pouvez mettre en œuvre dans votre stratégie comptable pour les immobilisations et qui peuvent vous aider à maximiser vos revenus.
 
@@ -130,7 +130,7 @@ Il existe quelques éléments que vous pouvez mettre en œuvre dans votre strat�
 - Marquez vos actifs. Il est essentiel de suivre et d’étiqueter vos actifs tout au long de leur cycle de vie, car de nombreux facteurs peuvent affecter leur valeur. L’étiquetage permet de suivre vos articles tout au long des phases de leur cycle de vie, de prévenir le vol, d’éliminer les erreurs de placement et de prendre en charge les statistiques financières.
 - Automatisez les informations avec un logiciel de comptabilité des immobilisations. L’automatisation des activités manuelles pour suivre vos données avec un logiciel de comptabilité des immobilisations facilite la réalisation des processus. La protection par mot de passe peut contribuer à fournir un accès uniquement aux personnes qui en ont besoin et qui sont formées à cet effet.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Paramétrage d'immobilisations](fa-setup.md)  
 [Vue d’ensemble de l’analyse des immobilisations](fa-analytics-overview.md)  

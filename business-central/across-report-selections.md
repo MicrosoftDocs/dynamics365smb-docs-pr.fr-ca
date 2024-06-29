@@ -10,11 +10,11 @@ ms.search.form: '306, 307, 347, 385, 524, 865, 5932, 7401, 7355, 99000917'
 ms.date: 06/13/2024
 ms.service: dynamics-365-business-central
 ---
-# Sélection de rapport pour les documents dans Business Central
+# <a name="report-selection-for-documents-in-business-central"></a>Sélection de rapport pour les documents dans Business Central
 
 Vous pouvez configurer des rapports par défaut à utiliser pour imprimer des documents de vente, d’achat et de services, tels que des commandes, des devis et des factures. Par exemple, si vous avez une présentation spécifique pour les factures vente, vous pouvez spécifier ce rapport sur la page **Sélection de rapports – Vente**. Vous pouvez ensuite utiliser le rapport lorsque vous envoyez ou imprimez des factures de vente.  
 
-## Sélection des rapports disponible
+## <a name="available-report-selections"></a>Sélection des rapports disponible
 
 Les pages **Sélections de rapports** spécifient les rapports à imprimer dans différentes situations. [!INCLUDE [prod_short](includes/prod_short.md)] fournit des configurations par défaut, mais vous pouvez les modifier si nécessaire. Vous pouvez également ajouter des rapports aux pages **Sélection des rapports** si vous souhaitez imprimer plus d’un rapport par type de document, par exemple. 
 
@@ -43,7 +43,7 @@ La version par défaut de [!INCLUDE [prod_short](includes/prod_short.md)] compre
 * **Sélection des rapports – Bon de production**  
 * **Sélection des rapports – Rappel/frais financiers**  
 
-## Exemple : Sélection des rapports pour les documents de vente
+## <a name="example-report-selection-for-sales-documents"></a>Exemple : Sélection des rapports pour les documents de vente
 
 La page **Sélection des rapports - Ventes** présente les rapports par défaut à utiliser dans différents scénarios pour chaque type de document associé. Choisissez un type de document dans le champ **Usage**, puis ajoutez ou examinez la sélection des rapports. Vous pouvez configurer plusieurs rapports et spécifier l’ordre de séquence dans lequel les rapports doivent être envoyés ou imprimés.  
 
@@ -59,7 +59,7 @@ Par exemple, dans les pages **Sélection des rapports - Ventes** et **Sélecti
 |**Utiliser comme pièce jointe à un courriel**| Joignez le document correspondant au courriel.|
 |**Description de la présentation du corps du courriel**|Spécifiez la présentation à utiliser pour le corps du courriel. En règle générale, la présentation du rapport est personnalisée. |
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Configurer des textes et des présentations de courriel réutilisables](admin-how-setup-email.md#set-up-reusable-email-texts-and-layouts)  
 [Sélectionner une mise en page de chèque](finance-how-define-check-layouts.md)  

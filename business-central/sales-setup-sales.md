@@ -11,7 +11,7 @@ ms.search.form: '170, 172, 300, 301, 428, 456, 459, 1401'
 ms.date: 06/06/2024
 ms.service: dynamics-365-business-central
 ---
-# Définition des ventes
+# <a name="setting-up-sales"></a>Définition des ventes
 
 Avant de pouvoir gérer les processus vente, vous devez configurer les règles et valeurs qui définissent les stratégies de vente de la compagnie.
 
@@ -35,7 +35,7 @@ La configuration des ventes en relation avec les finances, comme les modes de r�
 |Spécifiez les rapports par défaut à utiliser pour différents types de documents.|[Sélection des rapports dans Business Central](across-report-selections.md)|
 |Spécifiez si les utilisateurs sont autorisés à reporter des factures vente et s’ils doivent les reporter avec une livraison. |[Définir une stratégie de report des factures pour les utilisateurs](admin-setup-invoice-posting-policy.md)|
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 [Ventes](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
 

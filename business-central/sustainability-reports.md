@@ -10,21 +10,21 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ---
 
-# Rapport de durabilité et analyses dans Business Central
+# <a name="sustainability-reports-and-analytics-in-business-central"></a>Rapport de durabilité et analyses dans Business Central
 
 Les rapport de durabilité donne aux professionnels de la finance des informations et des statistiques sur les investissements et émissions de durabilité actuelles et passées.  
 
-## Rapports
+## <a name="reports"></a>Rapports
 
 [!INCLUDE [sustainability_reports](includes/sustainability-reports-include.md)]
 
-## Tâches
+## <a name="tasks"></a>Tâches
 
 Les articles suivants décrivent certaines des tâches clés pour analyser l’état de votre efforts de durabilité :
 
 * [Calculer les émissions en fonction du grand livre](finance-sustainability-journal.md)
 
-## Explorez les rapport de durabilité avec l’Explorateur de rapports
+## <a name="explore-sustainability-reports-with-report-explorer"></a>Explorez les rapport de durabilité avec l’Explorateur de rapports
 
 Pour obtenir un aperçu des rapports disponibles pour durabilité, choisir sur volet **Tous les rapports** votre page d’accueil. Cette Action ouvre l’explorateur de rôles, qui est filtré selon les fonctionnalités du **Rapport et analyse** option. Sous l’en-tête **À FAIRE** , choisissez **Explorer**.
 
@@ -34,7 +34,7 @@ Pour obtenir un aperçu des rapports disponibles pour durabilité, choisir sur v
 
 Pour en savoir plus, voir [Recherche de rapports avec l’explorateur de rôles](ui-role-explorer.md).
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Analyse ad hoc des données de durabilité](ad-hoc-analysis-sustainability.md)   
 [Vue d’ensemble de la gestion de la durabilité](finance-manage-sustainability.md)   

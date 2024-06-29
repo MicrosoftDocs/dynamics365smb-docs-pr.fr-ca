@@ -11,7 +11,7 @@ ms.search.forms: '9076, 9026'
 ms.date: 06/06/2024
 ms.service: dynamics-365-business-central
 ---
-# Gestion des relations
+# <a name="managing-relationships"></a>Gestion des relations
 
 Les fonctionnalités de gestion des relations de [!INCLUDE[prod_short](includes/prod_short.md)] vous aident à gérer et prendre en charge vos efforts de vente. Grâce à elles, vous avez accès à des informations complètes et pertinentes qui vous permettent de focaliser vos interactions sur les segments client/contact favoris.
 

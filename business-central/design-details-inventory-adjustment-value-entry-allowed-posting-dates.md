@@ -10,7 +10,7 @@ ms.date: 05/24/2024
 ms.service: dynamics-365-business-central
 ---
 
-# Message d’erreur : « La date de report n’est pas incluse dans la plage de dates de report autorisées... »
+# <a name="error-message-posting-date-is-not-within-your-range-of-allowed-posting-dates"></a>Message d’erreur : « La date de report n’est pas incluse dans la plage de dates de report autorisées... »
 
 Lorsque vous utilisez le traitement en lot **Ajuster coûts : Écr. article**, vous pouvez rencontrer le message d’erreur suivant :
 
@@ -18,7 +18,7 @@ Lorsque vous utilisez le traitement en lot **Ajuster coûts : Écr. article**, 
 
 Ce message indique que vous n’êtes pas autorisé à reporter des écritures pour la date que vous avez saisie. Vous pouvez contourner ce problème en modifiant votre configuration utilisateur.
 
-## Modifier la configuration utilisateur  
+## <a name="change-the-user-setup"></a>Modifier la configuration utilisateur
 
 |Identifiant d’utilisateur  |Début période report  | Fin période report  |
 |---------|---------|--------|
@@ -26,9 +26,9 @@ Ce message indique que vous n’êtes pas autorisé à reporter des écritures p
 
 Dans ce cas, vous êtes autorisé à effectuer un report entre le 11 septembre et le 30 septembre. Cependant, vous n’êtes pas autorisé à reporter l’écriture valeur d’ajustement avec une date de report au 10 septembre.  
 
-### Aperçu de la configuration de la date de report
+### <a name="overview-of-the-posting-date-setup"></a>Aperçu de la configuration de la date de report
 
-#### Périodes d'inventaire
+#### <a name="inventory-periods"></a>Périodes d'inventaire
 
 |Date de fin  |Nom  |Terminé  |
 |---------|---------|---------|
@@ -45,7 +45,7 @@ Dans ce cas, vous êtes autorisé à effectuer un report entre le 11 septembre 
 |2020/11/30     |Novembre 2020   |         |
 |2020/12/31     |Décembre 2020   |         |  
 
-#### Configuration du grand livre
+#### <a name="general-ledger-setup"></a>Configuration du grand livre
 
 |Champ|Valeur|
 |---------|---------|
@@ -54,7 +54,7 @@ Dans ce cas, vous êtes autorisé à effectuer un report entre le 11 septembre 
 |Registre temps :       |         |
 |Format adresse local :|   Code postal      |  
 
-#### Configuration utilisateur
+#### <a name="user-setup"></a>Configuration utilisateur
 
 |Code utilisateur  |Début période report  | Fin période report  |
 |---------|---------|--------|
@@ -62,7 +62,7 @@ Dans ce cas, vous êtes autorisé à effectuer un report entre le 11 septembre 
 
 En attribuant une plage de dates plus large pendant laquelle vous autorisez le report sur les pages **Période d’inventaire** ou **Configuration du grand livre**, il devient possible d’éviter le conflit à l’origine du message d’erreur. Par exemple, la plage plus large vous permet de reporter l'écriture valeur d’ajustement avec une date de report au 10 septembre.
   
-## Voir aussi .  
+## <a name="see-also"></a>Voir aussi .
 
 [Détails de conception : date de report de l’écriture valeur d’ajustement](design-details-inventory-adjustment-value-entry-posting-date.md)  
 [Détails de conception : Évaluation des coûts de l'inventaire](design-details-inventory-costing.md)  

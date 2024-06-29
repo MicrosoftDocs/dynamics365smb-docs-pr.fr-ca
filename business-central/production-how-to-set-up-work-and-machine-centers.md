@@ -10,7 +10,7 @@ ms.search.form: '99000754, 99000755, 99000756, 99000758, 99000760, 99000761, 990
 ms.date: 06/13/2024
 ms.service: dynamics-365-business-central
 ---
-# Configurer des ateliers et des unités de production
+# <a name="set-up-work-centers-and-machine-centers"></a>Configurer des ateliers et des unités de production
 
 [!INCLUDE [prod_short](includes/prod_short.md)] distingue trois types de capacité. Ces capacités sont ordonnées de façon hiérarchique où chaque niveau contient les niveaux subordonnés.  
 
@@ -23,7 +23,7 @@ La capacité planifiée d’un atelier se compose de la disponibilité des unit�
 > [!IMPORTANT]
 > Avant de configurer des ateliers ou des unités de production, vous devez configurer des calendriers usine. Pour plus d'informations, voir [Créer des calendriers usine](production-how-to-create-work-center-calendars.md).
 
-## Pour configurer un atelier
+## <a name="to-set-up-a-work-center"></a>Pour configurer un atelier
 
 Les étapes suivantes décrivent comment configurer un atelier. La procédure de configuration d’un calendrier d'unité de production est similaire, sauf pour le raccourci **Configuration itinéraire**.  
 
@@ -69,7 +69,7 @@ Les étapes suivantes décrivent comment configurer un atelier. La procédure de
 > [!NOTE]
 > Utilisez les file d'attentes pour fournir un tampon entre le moment où une composante arrive sur une unité de production ou un atelier et le moment où l’opération démarre réellement. Par exemple, une pièce est livrée à une unité de production à 10h00, mais il faut une heure pour la monter sur la machine, de sorte que l’opération ne démarre pas avant 11h00. Pour tenir compte de cette heure, la durée file d’attente serait d’une heure. La valeur du champ **Durée file d'attente** sur une fiche unité de production ou atelier plus la somme des valeurs des champs **Temps de préparation**, **Temps d'exécution**, **Temps d’attente** et **Temps de transfert** sur la ligne itinéraire article se combinent pour donner le délai de fabrication de l’article. Cela permet de fournir des temps de production globaux précis.  
 
-## Considérations sur la capacité
+## <a name="considerations-about-capacity"></a>Considérations sur la capacité
 
 La capacité et l’efficacité des ateliers et des unités de production n’affectent pas seulement la capacité disponible. Les valeurs ont également un impact sur le temps de production global qui se compose du temps de préparation et du temps d’exécution, qui sont tous deux définis sur la ligne itinéraire.  
 
@@ -78,7 +78,7 @@ Lorsque vous affectez une ligne itinéraire à un atelier ou une unité de produ
 - Quelle capacité est nécessaire.
 - Combien de temps prend l’opération pour se terminer.  
 
-### Temps d’exécution
+### <a name="run-time"></a>Temps d’exécution
 
 Pour calculer le temps d’exécution, le système alloue le temps exact qui est défini dans le champ **Durée** de la ligne itinéraire. Ni l’efficacité ni la capacité n’affectent le temps alloué. Par exemple, si le temps d’exécution est défini sur 2 heures, le temps alloué est de 2 heures, quelles que soient les valeurs des champs d’efficacité et de capacité de l'atelier.  
 
@@ -94,7 +94,7 @@ La *durée* d’une opération, au contraire, considère à la fois l’efficaci
 
 La capacité fractionnaire est délicate. Nous en discuterons plus tard dans cet article. 
 
-### Temps de préparation
+### <a name="setup-time"></a>Temps de préparation
 
 La répartition du temps pour le temps de préparation dépend de la capacité et est calculée comme *Temps de préparation * Capacité*. Par exemple, si la capacité est définie sur *2*, votre temps de préparation alloué est doublé, car vous devez configurer deux machines pour l’opération.  
 
@@ -105,7 +105,7 @@ La *Durée* du temps de préparation dépend de l’efficacité et est calculée
 
 La capacité fractale n’est utilisée que dans des cas précis.
 
-### Atelier traitant plusieurs commandes simultanément
+### <a name="work-center-processing-multiple-orders-simultaneously"></a>Atelier traitant plusieurs commandes simultanément
 
 Prenons l’exemple d’une cabine de peinture au pistolet. Elle a la même configuration et les mêmes temps d’exécution pour chaque lot traité. Mais chaque lot peut contenir plusieurs commandes individuelles peintes simultanément.  
 
@@ -123,7 +123,7 @@ Le temps de préparation affecté pour chaque ordre individuel sera dans l’ord
 Dans les deux cas, le temps total affecté pour tous les ordres est de deux heures.
 
 
-### Une ressource efficace ne peut consacrer qu’une partie de sa date de travail à un travail productif
+### <a name="efficient-resource-can-dedicate-only-part-of-their-work-date-to-productive-work"></a>Une ressource efficace ne peut consacrer qu’une partie de sa date de travail à un travail productif
 
 > [!NOTE]
 > Ce scénario n’est pas recommandé. Nous vous recommandons d’utiliser plutôt l’efficacité. 
@@ -134,7 +134,7 @@ Le temps d’exécution affecté est de deux heures et la durée est de quatre h
 
 N’utilisez pas le temps de préparation pour de tels scénarios, car [!INCLUDE [prod_short](includes/prod_short.md)] n’alloue que 50 % du temps. Si le temps de préparation est défini sur *2*, le temps de préparation alloué est d’une heure et la durée est de deux heures.
 
-### Calendrier consolidé
+### <a name="consolidated-calendar"></a>Calendrier consolidé
 
 Lorsque le champ **Calendrier consolidé** est sélectionné, l'atelier n’a pas de capacité propre. Au lieu de cela, sa capacité est égale à la somme des capacités de toutes les unités de production qui sont affectées à l'atelier.  
 
@@ -150,7 +150,7 @@ Par exemple, si vous disposez de deux unités de production avec un rendement de
 > [!NOTE]
 > Utilisez le champ **Calendrier consolidé** lorsque vous structurez vos itinéraires pour programmer les opérations de production au niveau de l'unité de production, et non au niveau de l'atelier. Lorsque vous consolidez le calendrier, la page **Charge atelier** et les rapports deviennent une vue d’ensemble de la charge globale dans toutes les unités de production qui sont affectées à l'atelier.
 
-### Exemple – Différentes unités de production affectées à un atelier
+### <a name="example---different-machine-centers-assigned-to-a-work-center"></a>Exemple – Différentes unités de production affectées à un atelier
 
 Il est important de planifier quelles capacités constituent la capacité totale lorsque vous configurez des unités de production et des ateliers.
 
@@ -160,7 +160,7 @@ Toutefois, si vous combinez des unités de production identiques (tels que 210 T
 
 Si vous ne voulez pas que les capacités des ateliers contribuent à la capacité totale, spécifiez **0** dans le champ **Rendement**.
 
-## Pour configurer un atelier ou une unité de production à contrainte de capacité
+## <a name="to-set-up-a-capacity-constrained-machine-or-work-center"></a>Pour configurer un atelier ou une unité de production à contrainte de capacité
 
 Vous devez configurer les ressources de production que vous considérez comme critique et de l'accepter comme une charge limitée au lieu de la charge illimitée par défaut que d'autres ressources de production acceptent. Une ressource à contrainte de capacité peut être un atelier ou une unité de production qui est un goulot d'étranglement et pour lequel vous souhaitez établir une charge limitée.
 
@@ -179,7 +179,7 @@ Quand la planification avec des ressources avec capacité critique, [!INCLUDE [p
 
 > En cas de répartition des opérations, le temps de configuration n’est affecté qu’une fois, car on suppose qu’un certain ajustement manuel est effectué pour optimiser le calendrier.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Créer des calendriers usine](production-how-to-create-work-center-calendars.md)  
 [Paramétrage de la production](production-configure-production-processes.md)  

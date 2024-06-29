@@ -11,7 +11,7 @@ ms.search.form: '30, 461'
 ms.date: 06/13/2024
 ms.service: dynamics-365-business-central
 ---
-# Configuration de l'inventaire
+# <a name="setting-up-inventory"></a>Configuration de l'inventaire
 
 Avant de pouvoir gérer les activités entrepôt et les coûts d'inventaire, vous devez configurer les règles et les valeurs qui définissent les stratégies d'inventaire de la compagnie.
 
@@ -33,7 +33,7 @@ Après avoir configuré votre inventaire, vous pouvez gérer différents process
 |Importez plusieurs images d'article en une seule fois depuis un fichier zip où les fichiers sont nommés selon les numéros d'article.|[Importer plusieurs images d'article](inventory-how-import-item-pictures.md)|
 |Spécifiez les rapports par défaut à utiliser pour différents types de documents.|[Sélection des rapports dans Business Central](across-report-selections.md)|
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Gestion du stock](inventory-manage-inventory.md)  
 [Gestion des achats](purchasing-manage-purchasing.md)  
