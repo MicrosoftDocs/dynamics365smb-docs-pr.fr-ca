@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
 
-# Vue d’ensemble de la gestion de la durabilité
+# <a name="sustainability-management-overview"></a>Vue d’ensemble de la gestion de la durabilité
 
 > [!IMPORTANT]
 > Cette fonctionnalité sera disponible dans Business Central à partir de la **1re vague de lancement 2024**. Tous les liens de référence seront activés une fois disponibles.
@@ -49,7 +49,7 @@ Pour vous familiariser avec Sustainability Manager, reportez-vous aux articles s
 | **Intégrations** |             |
 | [API de durabilité](/dynamics365/business-central/dev-itpro/api-sustainability/sustainability-api?toc=/dynamics365/business-central/toc.json) | Utilisez cet article pour savoir comment créer des applications connectées qui établissent une connexion point à point entre Business Central et des solutions ou services de durabilité hors Microsoft à l’aide d’API. |
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Configuration de durabilité](finance-sustainability-setup.md)    
 [Plan comptable et comptabilité de durabilité](finance-sustainability-accounts-ledger.md)    
