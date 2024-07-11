@@ -25,7 +25,7 @@ Lorsque les paiements sont traités avec succès, tel que communiqué par votre 
 > [!NOTE]  
 > Pour réunir les paiements à l'aide du prélèvement SEPA, la devise sur la facture vente doit être l'EURO.  
 
-## <a name="setting-up-sepa-direct-debit"></a>Configuration d'un prélèvement SEPA
+## <a name="how-to-set-up-sepa-direct-debit"></a>Configuration d'un prélèvement SEPA
 
 Sur la page **Recouvrements prélèvement**, vous pouvez exporter des instructions vers votre banque électronique pour exécuter un recouvrement par prélèvement automatique depuis le compte bancaire du client vers votre compte bancaire selon le format de prélèvement SEPA.
 

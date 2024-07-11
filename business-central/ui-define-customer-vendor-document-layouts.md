@@ -37,7 +37,7 @@ Si vous n'avez pas encore créé de disposition de rapport personnalisée pour l
 3. Sur la page **Présentations document**, sur la ligne d'une présentation de rapport pour laquelle vous souhaitez utiliser une présentation personnalisée, choisissez le champ **Description présentation personnalisée**.
 4. Sur la page **Dispositions rapport personnalisées**, sélectionnez la disposition de document que vous souhaitez utiliser pour le type de document vente. Pour plus d'informations, voir [Créer et modifier des présentations de rapport personnalisées](ui-how-create-custom-report-layout.md).
 
-## <a name="to-specify-which-contact-will-receive-which-document-layout-for-a-customer"></a>Pour spécifier le contact qui recevra la disposition de document pour un client
+## <a name="to-specify-which-contact-receives-which-document-layout-for-a-customer"></a>Pour spécifier le contact qui recevra la disposition de document pour un client
 
 Pour gagner du temps lorsque vous envoyez des documents aux contacts des clients et des fournisseurs par courriel, spécifiez leurs adresses de courriel sur les présentations de document. Par exemple, vous pouvez toujours envoyer les relevés client à leurs contacts comptables et les documents de vente à leurs acheteurs ou les bons de commande aux représentants des fournisseurs.
 
