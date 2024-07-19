@@ -2,20 +2,20 @@
 title: Utilisation de l’’extension PayPal Payments Standard
 description: Cet article décrit comment utiliser l’extension standard pour permettre aux clients d’effectuer des paiements avec Paypal.
 author: brentholtorf
+ms.author: bholtorf
 ms.topic: conceptual
-ms.devlang: al
 ms.search.keywords: 'app, add-in, manifest, customize'
 ms.search.form: '1070, 1071, 1073, 1074'
-ms.date: 12/12/2023
-ms.author: bholtorf
+ms.date: 07/09/2024
+ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="the-paypal-payments-standard-extension"></a>Extension PayPal Payments Standard
+# Extension PayPal Payments Standard
 
-Les clients sont toujours plus exigeants en ce qui concerne le service clientèle, en termes de qualité de produits mais aussi en termes d'options de livraison et de paiement. Le service PayPal Payments Standard vous aide à développer votre service clientèle.
+L’extension PayPal Payments Standard peut vous aider à augmenter vos niveaux de service client en permettant à vos clients de payer plus facilement leurs factures.
 
-Au lieu de collecter des paiements par l'intermédiaire de transferts bancaires ou de cartes de crédit, vous pouvez proposer à vos clients de vous payer via leur compte Paypal. Lorsque vous envoyez une facture vente par courriel, le corps du message et le document PDF en pièce jointe contiennent un lien Paypal. Lorsque le client clique sur le lien, la page de service de leur compte Paypal s’ouvre pour affiche les détails de paiement pour la vente. Le client peut ensuite payer la facture comme tout autre paiement Paypal.
+Au lieu de collecter les paiements par virement bancaire ou par crédit Cartes, les clients peuvent payer via leur compte PayPal. Lorsque vous envoyez une facture vente par courriel, le corps du message et le document PDF en pièce jointe contiennent un lien Paypal. Si le client choisit le lien, la page de service de son compte PayPal s’ouvre et affiche les détails du paiement. Le client peut ensuite payer la facture comme tout autre paiement Paypal.
 
 Le service PayPal Payments Standard fournit les avantages suivants :
 
@@ -27,9 +27,18 @@ Le service PayPal Payments Standard fournit les avantages suivants :
 * Le service PayPal Payments Standard n’implique aucun frais mensuels ni de frais de configuration.
 * Étant donné qu’il s’agit d’une extension, vous pouvez facilement activer le service PayPal Payment Standard si votre activité l’exige et au moment de votre choix.  
 
-Pour plus d'informations, reportez-vous à [Activer les paiements client via Paypal](sales-how-enable-payment-service-extensions.md).
+Pour en savoir plus sur la configuration de l’extension, accédez à [Activer le paiement client via PayPal](sales-how-enable-payment-service-extensions.md).
 
-## <a name="see-also"></a>Voir aussi .
+## Enregistrez automatiquement les paiements pour les comptes professionnels
+
+[!INCLUDE [prod_short](includes/prod_short.md)] peut enregistrer automatiquement les paiements si vous disposez d’un compte Business Merchant pour la plateforme de commerce PayPal. Lorsque vos clients utilisent le lien PayPal pour payer une facture, [!INCLUDE [prod_short](includes/prod_short.md)] publie les entrées et Fermer le document.
+
+Pour utiliser cette fonctionnalité, sur la page **Configuration de l’enregistrement des paiements** dans [!INCLUDE [prod_short](includes/prod_short.md)], activez l’option **Enregistrer automatiquement les paiements.** activez et vérifiez les comptes que vous utiliserez pour les paiements. Si vous décidez que vous ne souhaitez pas enregistrer automatiquement les paiements, vous pouvez le désactiver à nouveau.
+
+> [!TIP]
+> Les développeurs peuvent utiliser des comptes sandbox pour tester la configuration. Pour ce faire, modifiez l’URL PayPal en **sandbox.paypal.com**. [!INCLUDE [prod_short](includes/prod_short.md)] utilise la notification de paiement instantanée (IPN) de PayPal via notify_url.
+
+## Voir aussi .
 
 [Personnalisation de [!INCLUDE[prod_short](includes/prod_short.md)] à l'aide des extensions](ui-extensions.md)  
 [Définition des ventes](sales-setup-sales.md)  
