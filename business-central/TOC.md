@@ -2127,6 +2127,7 @@ ms.service: dynamics-365-business-central
 ### [FAQ sur le mappage de documents électroniques avec des bons de commande à l’aide de Copilot](faqs-map-edocuments.md)
 # IA responsable
 ## [Vue d’ensemble](responsible-ai-overview.md)
+## [FAQ sur la sécurité et la confidentialité des données de Copilot](/dynamics365/faqs-copilot-data-security-privacy?toc=/dynamics365/business-central/toc.json)
 ## [FAQ sur l’assistance pour les analyses (version préliminaire)](faqs-analysis-assist.md)
 ## [FAQ pour l’aide au rapprochement bancaire (version préliminaire)](faqs-bank-reconciliation.md)
 ## [FAQ sur la conversation instantanée avec Copilot (version préliminaire)](faqs-chat-with-copilot.md)
