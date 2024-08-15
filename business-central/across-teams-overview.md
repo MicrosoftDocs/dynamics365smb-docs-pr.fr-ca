@@ -76,7 +76,7 @@ Pour plus d’informations, voir [Ajout d’un onglet Business Central dans Team
 3. Installer une application [!INCLUDE [prod_short](includes/prod_short.md)] dans Teams. Voir [Installer l’application [!INCLUDE [prod_short](includes/prod_short.md)] pour Microsoft Teams](across-install-app-for-teams.md).
 4. Une fois l’application installée, vous êtes prêt à partir. Consultez [Recherche de clients, de fournisseurs et d’autres contacts dans Microsoft Teams](across-search-contacts-teams.md) et [Partage d'enregistrements dans Microsoft Teams](across-working-with-teams.md).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="related-information"></a>Voir aussi
 
 [FAQ Teams](teams-faq.md)  
 [Dépannage dans Teams](admin-teams-troubleshooting.md)  

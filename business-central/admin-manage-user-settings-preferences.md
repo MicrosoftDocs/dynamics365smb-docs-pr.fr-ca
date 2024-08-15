@@ -65,7 +65,7 @@ En tant qu'administrateur, vous pouvez obtenir un aperçu des modifications indi
 <!-- >[!NOTE]
 > User personalizations do not have anything to do with the *personal* lightweight changes a user can make to the user experience.-->
 
-## <a name="to-review-or-delete-user-personalizations"></a>Pour consulter ou supprimer les personnalisations des utilisateurs
+## <a name="review-or-delete-user-personalizations"></a>Pour consulter ou supprimer les personnalisations des utilisateurs
 
 1. Choisissez l’icône ![Page ou rapport pour la recherche.](media/ui-search/search_small.png "Icône Page ou rapport pour la recherche") entrez **Pages personnalisées**, puis sélectionnez le lien associé.
 2. Cela montre la liste des utilisateurs et leurs pages personnalisées. Pour effacer la personnalisation d'un utilisateur, cliquez sur la ligne appropriée ou choisissez **Gérer**, puis **Supprimer**.

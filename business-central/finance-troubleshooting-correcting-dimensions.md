@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
 
-# <a name="troubleshooting-and-correcting-dimensions"></a>Dépannage et correction des dimensions
+# <a name="troubleshoot-and-correct-dimensions"></a>Dépannage et correction des dimensions
 
 Les rapports financiers et les vues d′analyse reposent souvent sur les données des dimensions. Malgré les garanties disponibles, il se produit parfois une erreur pouvant entraîner des imprécisions. Cet article décrit certaines erreurs classiques et explique comment corriger les affectations de dimensions sur les transactions reportées afin que les rapports financiers soient précis.
 
@@ -45,14 +45,14 @@ Si vous découvrez une dimension incorrecte sur les écritures GL reportées, vo
 > [!IMPORTANT]
 > Les fonctionnalités de correction des dimensions visent uniquement à rendre les rapports financiers précis. Les corrections de dimensions s′appliquent uniquement aux écritures GL. Ils ne modifient pas les dimensions affectées aux écritures d'autres livres pour la même transaction. Un problème de correspondance existe entre les dimensions affectées dans le grand livre et les grands livres auxiliaires.
 
-### <a name="setting-up-dimension-corrections"></a>Configuration des corrections de dimensions
+### <a name="set-up-dimension-corrections"></a>Configuration des corrections de dimensions
 
 Il y a deux choses à prendre en compte lors de la configuration des corrections de dimension :
 
 * Y a-t-il des dimensions dont vous ne souhaitez pas autoriser la modification? Sur la page **Paramètres de correction de dimensions**, spécifiez les dimensions que vous souhaitez bloquer pour les modifications.
 * Qui peut changer les dimensions? Pour autoriser les utilisateurs à apporter des modifications, attribuez l'autorisation **CORRECTION AXE D365** aux utilisateurs. Les autorisations leur permettent de créer des corrections de dimensions, de les exécuter et de les annuler si nécessaire. Ils peuvent également spécifier des dimensions bloquées. Pour en savoir plus, voir [Attribuer des autorisations aux utilisateurs et aux groupes](ui-define-granular-permissions.md). 
 
-### <a name="correcting-a-dimension"></a>Correction d’une dimension
+### <a name="correct-a-dimension"></a>Correction d’une dimension
 
 Vous pouvez sélectionner manuellement une ou plusieurs écritures ou utiliser des filtres pour sélectionner des séries d'entrées. Si nécessaire, vous pouvez également ajouter ou supprimer des dimensions. 
 
@@ -82,13 +82,13 @@ Vous pouvez sélectionner manuellement une ou plusieurs écritures ou utiliser d
 5. Pour valider la correction, choisissez **Valider les changements de dimensions**. Pour plus d′informations, voir [Validation des corrections de dimensions](finance-troubleshooting-correcting-dimensions.md#validating-dimension-corrections).
 6. Choisir **Exécuter**.
 
-### <a name="validating-dimension-corrections"></a>Validation des corrections de dimensions
+### <a name="validate-dimension-corrections"></a>Validation des corrections de dimensions
 
 Avant d'exécuter une correction, il est conseillé de la valider d'abord. La validation vérifie les restrictions sur le report des valeurs pour les comptes du grand livre, les restrictions pour les dimensions et si les valeurs des dimensions sont bloquées. Lors de la validation, l'état de la correction est défini sur **Validation en cours**. Après avoir validé une correction, le résultat s'affiche dans le champ **État de validation**. Si des erreurs ont été trouvées, vous pouvez utiliser l'action **Afficher les erreurs** pour les enquêter. Après avoir corrigé une erreur, vous devez utiliser l'action **Rouvrir** pour exécuter la correction ou une nouvelle validation.
 
 Vous pouvez soit exécuter une correction immédiatement, soit la programmer pour une exécution ultérieure. Si vous exécutez des corrections sur un jeu de données volumineux, nous vous recommandons de le programmer pour qu’il s’exécute en dehors des heures ouvrables. Pour plus d′informations, voir [Corrections de dimensions sur des jeux de données volumineux](finance-troubleshooting-correcting-dimensions.md#dimension-corrections-on-large-data-sets).
 
-### <a name="undoing-a-correction"></a>Annuler une correction
+### <a name="undo-a-correction"></a>Annuler une correction
 
 Après avoir corrigé une dimension, si vous n'aimez pas ce que vous voyez, vous pouvez utiliser l'action **Annuler** pour réinitialiser la valeur précédente. Cependant, vous ne pouvez annuler que la correction la plus récente. Avant d’annuler une correction, vous pouvez valider les modifications que l’action d'annulation apporte. Par exemple, la validation est utile si les restrictions de dimensions ont changé après la correction.
 
@@ -102,11 +102,11 @@ Soyez prudent lorsque vous corrigez de grands ensembles d'entrées, par exemple,
 
 Si **Mise à jour lors du report** est activé pour une vue d'analyse, [!INCLUDE[prod_short](includes/prod_short.md)] peut mettre à jour la vue lorsque les documents et les journaux sont reportés. Vous pouvez également mettre à jour les vues avec ce paramètre activé avec les résultats des corrections de dimensions. Pour ce faire, activez le bouton de basculement **Mettre à jour les vues d'analyse**. La mise à jour des vues d’analyse peut affecter sur les performances, en particulier pour les grands jeux de données, c’est pourquoi nous vous recommandons de mettre à jour les vues d’analyse uniquement pour les petits jeux de données.  
 
-### <a name="viewing-historical-dimension-corrections"></a>Affichage des corrections de dimensions historiques
+### <a name="view-historical-dimension-corrections"></a>Affichage des corrections de dimensions historiques
 
 Si une écriture GL a été corrigée, vous pouvez étudier la modification en utilisant l'action **Historique des corrections de dimensions**.
 
-### <a name="handling-incomplete-corrections"></a>Traitement des corrections incomplètes
+### <a name="handle-incomplete-corrections"></a>Traitement des corrections incomplètes
 
 Si une correction ne se termine pas, un avertissement s’affiche sur la carte de correction. Si cela se produit, vous pouvez utiliser l'action **Réinitialiser** pour rétablir la correction à un état de brouillon et annuler les modifications. Vous pouvez ensuite exécuter à nouveau la correction.
 

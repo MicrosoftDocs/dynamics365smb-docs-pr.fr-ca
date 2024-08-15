@@ -11,7 +11,7 @@ ms.date: 06/21/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# Rapprocher les paiements des clients avec un journal des encaissements ou à partir des écritures du grand livre client
+# <a name="reconcile-customer-payments-with-a-cash-receipt-journal-or-from-customer-ledger-entries"></a>Rapprocher les paiements des clients avec un journal des encaissements ou à partir des écritures du grand livre client
 
 Lorsque vous recevez un paiement en espèces d’un client ou effectuez un remboursement en espèces, vous pouvez appliquer le paiement ou le remboursement aux débits ou crédits ouverts Fermer. Vous pouvez indiquer le montant à affecter. Par exemple, vous pouvez affecter des paiements partiels à des écritures client. La fermeture des écritures client garantit que les statistiques clients, les relevés bancaires et les frais financiers, etc. sont à jour.
 
@@ -31,7 +31,7 @@ Vous pouvez affecter les écritures client de plusieurs manières :
 > [!NOTE]  
 > Si le champ **Méthode d'affectation** de la fiche client contient **Au plus ancien**, les paiements sont affectés à l'écriture crédit ouverte la plus ancienne, sauf si vous spécifiez une écriture manuellement. Si la méthode d'affectation est **Manuel**, vous devez toujours affecter les écritures manuellement.
 
-## Pour renseigner et reporter un journal des encaissements
+## <a name="to-fill-and-post-a-cash-receipt-journal"></a>Pour renseigner et reporter un journal des encaissements
 
 Un journal des encaissements est un type de journal général. Vous pouvez l’utiliser pour reporter les transactions sur les comptes généraux, bancaires, client, fournisseur et immobilisation. Vous pouvez affecter le règlement sur une ou plusieurs écritures débit lorsque vous reportez le règlement. Vous pouvez également affecter à partir des écritures reportées ultérieurement.
 
@@ -54,7 +54,7 @@ Un journal des encaissements est un type de journal général. Vous pouvez l’u
    2. Dans le champ  **N° de compte solde**, indiquez le compte de caisse pour les paiements en espèces ou le compte bancaire concerné pour les autres paiements.
 10. Reportez le journal.
 
-## Pour affecter un paiement à une seule écriture client
+## <a name="to-apply-a-payment-to-a-single-customer-ledger-entry"></a>Pour affecter un paiement à une seule écriture client
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") Icône, entrez **Journal des encaissements**, puis choisissez le lien associé.
 2. Sélectionnez **Modifier journal**.
@@ -70,7 +70,7 @@ Un journal des encaissements est un type de journal général. Vous pouvez l’u
 10. Choisissez le bouton **OK**. La page **Journal des encaissements** affiche désormais l’écriture des champs **Type doc. référence** et **N° doc. référence**.
 11. Reportez le journal des encaissements.
 
-## Pour affecter un paiement à plusieurs écritures client
+## <a name="to-apply-a-payment-to-multiple-customer-ledger-entries"></a>Pour affecter un paiement à plusieurs écritures client
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Journal des encaissements**, puis choisissez le lien associé.
 2. Sélectionnez **Modifier journal**.
@@ -87,7 +87,7 @@ Un journal des encaissements est un type de journal général. Vous pouvez l’u
 11. Cliquez sur le bouton **OK**.
 12. Reportez le journal des encaissements.
 
-## Pour affecter une note de crédit à une seule écriture client
+## <a name="to-apply-a-credit-memo-to-a-single-customer-ledger-entry"></a>Pour affecter une note de crédit à une seule écriture client
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de crédit vente**, puis sélectionnez le lien associé.
 2. Ouvrez la note de crédit vente souhaitée.
@@ -98,7 +98,7 @@ Un journal des encaissements est un type de journal général. Vous pouvez l’u
 5. Cliquez sur le bouton **OK**. La page  **Note de crédit de vente** affiche désormais l’entrée que vous avez sélectionnée dans les champs  **Type de document applicable** et **N° de document applicable** . Et le montant de la note de crédit à reporter, escomptes de paiement éventuels déduits.
 6. Reportez la note de crédit.
 
-## Pour affecter une note de crédit à plusieurs écritures client
+## <a name="to-apply-a-credit-memo-to-multiple-customer-ledger-entries"></a>Pour affecter une note de crédit à plusieurs écritures client
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de crédit vente**, puis sélectionnez le lien associé.
 2. Ouvrez la note de crédit vente souhaitée.
@@ -110,7 +110,7 @@ Un journal des encaissements est un type de journal général. Vous pouvez l’u
 6. Cliquez sur le bouton **OK**. La page **Note de crédit vente** affiche désormais le montant de la note de crédit à reporter, escomptes de paiement éventuels déduits.
 7. Reportez la note de crédit.
 
-## Pour affecter des écritures client reportées
+## <a name="to-apply-posted-customer-ledger-entries"></a>Pour affecter des écritures client reportées
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.
 2. Ouvrez la fiche du client possédant les écritures que vous souhaitez affecter.
@@ -131,7 +131,7 @@ Dans la liste écritures, sur la ligne contenant l’écriture totalement affect
 > [!NOTE]  
 > Une fois que vous avez sélectionné une écriture de la page **Affecter écritures client** ou plusieurs écritures avec le **Code référence**, le champ **Montant affecté** de la ligne journal contient la somme des montants restants des écritures reportées que vous avez sélectionnées, cela à moins que le champ ne soit déjà renseigné. Si vous sélectionnez **Au plus ancien** dans le champ **Mode de lettrage** sur la fiche client, le lettrage intervient automatiquement.
 
-## Pour affecter des écritures client en devises différentes à une autre
+## <a name="to-apply-customer-ledger-entries-in-different-currencies-to-one-another"></a>Pour affecter des écritures client en devises différentes à une autre
 
 Si vous effectuez une vente à un client dans une devise et recevez le règlement dans une autre devise, vous pouvez toujours affecter la facture au paiement.  
 
@@ -149,7 +149,7 @@ L'affectation d'écritures client en devises différentes doit être activée. P
 > [!IMPORTANT]  
 >   Lorsque vous affectez des écritures dans des devises différentes, les écritures sont converties en USD. Bien que le taux de change des deux devises concernées soit fixe, comme entre le USD et l'EUR, leur conversion en USD peut donner un petit montant résiduel. Le programme reporte ces petits montants résiduels en tant que gains et pertes dans le compte défini dans les champs **Cpte gains constatés** ou **Cpte pertes constatées** de la page **Devises**. La valeur du champ **Montant (USD)** est également ajustée sur les écritures comptables fournisseur.  
 
-## Pour corriger une affectation d'écritures
+## <a name="to-correct-an-application-of-customer-entries"></a>Pour corriger une affectation d'écritures
 Lorsque vous corrigez une affectation, des écritures de correction sont créées et reportées pour toutes les écritures. Les écritures de correction sont les mêmes que les originales mais elles ont un signe opposé dans le champ **Montant**. Les écritures de correction incluent toutes les écritures du grand livre issues de l’affectation. Par exemple, l’escompte de paiement et les pertes et gains en devise. Les entrées que l’application a fermées sont rouvertes.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.
@@ -163,7 +163,7 @@ Lorsque vous corrigez une affectation, des écritures de correction sont créée
 > [!IMPORTANT]  
 >   Si une écriture a été affectée par plusieurs écritures d'affectation, vous devez commencer par annuler l'affectation de la dernière écriture.  
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Vente](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

@@ -174,7 +174,7 @@ Ce problème est dû au fait que l’application BC pour Teams n’est pas insta
 Ce problème est probablement dû au fait que vous avez partagé une vue de liste qui est une vue personnelle. Dans ce cas, travaillez avec l’administrateur pour créer des vues de liste spécifiques aux rôles qui couvrent les différents rôles dans le canal/la discussion instantanée, ou créez cette vue pour l’ensemble de l’organisation afin que tout le monde puisse obtenir une vue cohérente.
 
 
-## <a name="see-also"></a>Voir aussi .
+## <a name="related-information"></a>Voir aussi .
 
 [Vue d’ensemble de l’intégration [!INCLUDE [prod_short](includes/prod_short.md)] et Microsoft Teams ](across-teams-overview.md)  
 [Installer l’application [!INCLUDE [prod_short](includes/prod_short.md)] pour Microsoft Teams](across-install-app-for-teams.md)  

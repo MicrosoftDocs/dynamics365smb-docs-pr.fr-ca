@@ -441,7 +441,7 @@ Non. Tout ce dont vous avez besoin est un compte valide qui a accès à Microsof
 L’action **Partager avec Teams** se trouve dans le menu **Partager** de toutes les pages, telles que les pages de fiche et de document, les pages de liste ou de feuille de calcul, y compris les pages personnalisées. L’action n’est pas disponible dans les boîtes de dialogue ou les pages affichées comme boîtes de dialogue, telles que les pages de recherche ou les assistants.
 
 ---
-## <a name="see-also"></a>Voir aussi
+## <a name="related-information"></a>Voir aussi
 
 [Vue d’ensemble de l’intégration [!INCLUDE [prod_short](includes/prod_short.md)] et Microsoft Teams ](across-teams-overview.md)  
 [Installer l’application [!INCLUDE [prod_short](includes/prod_short.md)] pour Microsoft Teams](across-install-app-for-teams.md)  

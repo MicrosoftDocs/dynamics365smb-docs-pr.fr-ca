@@ -11,7 +11,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="understanding-the-general-ledger-and-chart-of-accounts"></a>Comprendre le grand livre et le plan comptable
+# <a name="understand-the-general-ledger-and-chart-of-accounts"></a>Comprendre le grand livre et le plan comptable
 
 Le grand livre (GL) stocke vos données financières, et le plan comptable (COA) affiche les comptes sur lesquels vous reportez les écritures GL. [!INCLUDE[prod_short](includes/prod_short.md)] inclut un plan comptable standard prêt à prendre en charge votre société.
 

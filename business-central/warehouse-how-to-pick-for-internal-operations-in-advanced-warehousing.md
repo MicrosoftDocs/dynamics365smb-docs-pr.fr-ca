@@ -11,7 +11,7 @@ ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
 
-# <a name="pick-for-production-assembly-or-jobs-in-advanced-warehouse-configurations"></a>Prélèvement pour la production, l’assemblage ou les projets dans les configurations entrepôt avancées
+# <a name="pick-for-production-assembly-or-projects-in-advanced-warehouse-configurations"></a>Prélèvement pour la production, l’assemblage ou les projets dans les configurations entrepôt avancées
 
 Le mode de prélèvement de vos composantes pour les ordres de fabrication, d’assemblage ou les tâches dépend de la configuration de l’entrepôt en tant qu’emplacement. Learn more at [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).
 
@@ -113,7 +113,7 @@ Utilisez les documents **Prélèvement entrepôt** pour sélectionner les compos
 
 8. Choisissez le bouton **OK**.  
 
-## <a name="to-pick-items-for-a-productions-order-assembly-order-job"></a>Pour prélever des articles pour un ordre de fabrication, un ordre d’assemblage, une tâche
+## <a name="to-pick-items-for-a-production-order-assembly-order-or-project"></a>Pour prélever des articles pour un ordre de fabrication, un ordre d’assemblage, une tâche
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Prélèvements**, puis choisissez le lien associé.  
 

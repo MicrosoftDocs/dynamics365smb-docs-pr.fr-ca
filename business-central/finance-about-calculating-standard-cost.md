@@ -22,7 +22,7 @@ Des coûts standard peuvent être conservés pour les articles réapprovisionné
 |**Assemblage**|Coût matière direct, coûts directs ou de main-d'œuvre fixes et frais généraux.|  
 |**Ordre de fabrication**|Coût matière direct, coût de main-d'œuvre, coût de sous-traitance et frais généraux.|  
 
-## <a name="setting-up-standard-costs"></a>Configuration des coûts standard
+## <a name="set-up-standard-costs"></a>Configuration des coûts standard
 
 Dans la mesure où le coût standard d'un article produit ou assemblé peut comporter plusieurs éléments de coût, dont les coûts matériels, opératoires (main d'œuvre) et de sous-traitance (coûts directs et frais généraux), il convient d'établir des coûts standard pour chacun de ces éléments.  
 
@@ -88,7 +88,7 @@ Les coûts de sous-traitance sont les objets de coûts aux services assurés par
 
 Parce que la sous-traitance correspond à une capacité externalisée, vous configurez les coûts liés à la sous-traitance de services directs et indirects dans la fiche atelier représentant l'opération de sous-traitance.  
 
-## <a name="updating-standard-costs"></a>Mise à jour des coûts standard
+## <a name="update-standard-costs"></a>Mise à jour des coûts standard
 
 Pour mettre à jour ou calculer le coût standard d'éléments d'assemblage, utilisez la fonction de la fiche article.  
 

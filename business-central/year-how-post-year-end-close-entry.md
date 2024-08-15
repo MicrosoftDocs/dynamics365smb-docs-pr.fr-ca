@@ -10,7 +10,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="posting-the-year-end-closing-entry"></a>Report de l’écriture de fermeture d’exercice
+# <a name="post-the-year-end-closing-entry"></a>Report de l’écriture de fermeture d’exercice
 
 Après avoir utilisé le traitement par lots **Solder les comptes de gestion** pour générer les écritures de clôture d'exercice, vous devez ouvrir la feuille spécifiée dans le traitement par lots, puis consulter et valider les écritures.  
 

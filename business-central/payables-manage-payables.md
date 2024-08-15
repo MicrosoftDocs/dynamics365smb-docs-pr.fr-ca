@@ -12,7 +12,7 @@ ms.date: 07/12/2024
 ms.service: dynamics-365-business-central
 ---
 
-# Gestion des comptes fournisseur
+# <a name="managing-payables"></a>Gestion des comptes fournisseur
 
 Une grande partie de la gestion des comptes fournisseurs consiste à payer vos fournisseurs, ou à rembourse vos employés de leurs dépenses. Vous pouvez utiliser les fonctions pour ajouter des lignes de paiement pour les factures achat échues sur la page **Journal paiement** . Pour envoyer des transactions à votre banque, vous pouvez exporter plusieurs lignes journal paiement vers un fichier, puis télécharger ce fichier vers votre banque. Vous pouvez également effectuer des paiements par chèque, notamment pour transmettre des chèques en tant que paiements électroniques.
 
@@ -30,7 +30,7 @@ Le tableau suivant décrit une série de tâches associées aux comptes fourniss
 |Pour que l'évaluation de l'inventaire soit correcte, affectez les coûts articles ajoutés, tels que le fret, la manutention, les assurances et le transport, que vous encourez lors de l'achat.|[Utiliser Frais annexes pour comptabiliser les coûts commerciaux supplémentaires](payables-how-assign-item-charges.md)|
 |Remboursez les frais personnels des employés pour leurs activités professionnelles en effectuant le paiement sur leur compte bancaire.|[Enregistrement et remboursement des frais des employés](finance-how-record-reimburse-employee-expenses.md)|
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 [Procédure achat](purchasing-manage-purchasing.md)    
 [Gestion des créances](receivables-manage-receivables.md)    
 [Utilisez les frais d’article pour tenir compte des coûts commerciaux supplémentaires](payables-how-assign-item-charges.md)    

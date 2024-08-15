@@ -9,7 +9,7 @@ ms.author: jswymer
 ms.service: dynamics-365-business-central
 ms.reviewer: jswymer
 ---
-# <a name="closing-income-statement-accounts"></a>Fermeture des comptes état des résultats
+# <a name="close-income-statement-accounts"></a>Fermeture des comptes état des résultats
 
 Lorsqu'un exercice financier est terminé, vous devez fermer les périodes qui le composent. Vous exécutez pour cela le traitement par lots **Solder les comptes de gestion**. Ce projet transfère le résultat de l'exercice sur un compte du bilan et ferme les comptes état des résultats. Vous créez des lignes dans un journal, que vous pouvez reporter par la suite.
 

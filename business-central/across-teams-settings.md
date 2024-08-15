@@ -27,7 +27,7 @@ Il existe deux façons d'ouvrir la page **Paramètres** : 1) à partir de la bo
 
    ![Paramètres de Business Central à partir de la zone de message.](media/teams-settings-command-box.png)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="related-information"></a>Voir aussi
 
 [Vue d’ensemble de l’intégration de Business Central et Microsoft Teams](across-teams-overview.md)  
 [Installer l’application [!INCLUDE [prod_short](includes/prod_short.md)] pour Microsoft Teams](across-install-app-for-teams.md)  

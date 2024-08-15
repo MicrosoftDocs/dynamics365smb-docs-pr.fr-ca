@@ -27,7 +27,7 @@ Vous pouvez apporter différentes modifications, comme déplacer ou masquer des 
 > Les administrateurs peuvent effectuer les mêmes modifications de présentation que les utilisateurs en personnalisant le profil (rôle) attribué à plusieurs utilisateurs. Pour en savoir plus sur les pages pour les rôles, accédez à [Personnaliser les pages pour les rôles](ui-personalization-manage.md)<br /><br />
 Les administrateurs peuvent aussi remplacer ou désactiver des personnalisations d'utilisateurs et définir les fonctionnalités accessibles dans toutes les compagnies ou des compagnies spécifiques. Pour plus d'informations, voir [Personnalisation de Business Central](ui-customizing-overview.md).
 
-## <a name="video"></a>Vidéo
+## <a name="video-and-training"></a>Vidéo
 
 La vidéo suivante montre quelques-unes des façons dont vous pouvez personnaliser votre tableau de bord.
 

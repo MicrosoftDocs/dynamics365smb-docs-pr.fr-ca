@@ -11,11 +11,11 @@ ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ms.reviewer: bholtorf
 ---
-# Envoyer des rappels de soldes impayés
+# <a name="send-reminders-of-outstanding-balances"></a>Envoyer des rappels de soldes impayés
 
 [!INCLUDE [receivables-reminders](includes/receivables-reminders.md)]
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Collecte des soldes restants](receivables-collect-outstanding-balances.md)  
 [Configurer plusieurs taux d’intérêt pour les paiements retardés](finance-how-to-set-up-multiple-interest-rates.md)  

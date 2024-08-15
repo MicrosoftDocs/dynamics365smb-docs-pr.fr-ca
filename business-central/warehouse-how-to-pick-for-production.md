@@ -10,7 +10,7 @@ ms.date: 12/16/2022
 ms.custom: bap-template
 ms.search.forms: '9330, 931, 990008, 89, 900, 902'
 ---
-# <a name="pick-for-production-assembly-or-jobs-in-basic-warehouse-configurations"></a>Prélever pour la fabrication, l’assemblage ou les tâches dans les configurations de stockage de base
+# <a name="pick-for-production-assembly-or-projects-in-basic-warehouse-configurations"></a>Prélever pour la fabrication, l’assemblage ou les tâches dans les configurations de stockage de base
 
 Le mode de prélèvement de vos composantes pour les ordres de fabrication, d’assemblage ou les tâches dépend de la configuration de l’entrepôt en tant qu’emplacement. Learn more at [Configuration de la gestion des entrepôts](warehouse-setup-warehouse.md).
 

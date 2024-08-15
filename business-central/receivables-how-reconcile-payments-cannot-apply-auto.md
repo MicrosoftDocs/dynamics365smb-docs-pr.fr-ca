@@ -11,7 +11,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# Rapprocher les paiements qui ne peuvent pas être appliqués automatiquement
+# <a name="reconcile-payments-that-cant-be-applied-automatically"></a>Rapprocher les paiements qui ne peuvent pas être appliqués automatiquement
 Vous devrez peut-être parfois gérer des paiements sur votre compte bancaire qui ne peuvent pas être appliqués à une écriture ouverte de compte client, de fournisseur ou de compte bancaire associée. Les raisons peuvent être qu’aucun document n’existe dans [!INCLUDE[prod_short](includes/prod_short.md)] auquel le paiement peut être appliqué, ou que le document associé dans [!INCLUDE[prod_short](includes/prod_short.md)] a un montant différent du montant de la transaction, par exemple, en raison d’un taux de change. Sur la page **Journal de rapprochement des paiements**, tous les montants de transaction pour les paiements qui ne sont pas encore appliqués apparaissent dans le champ **Différence**, y compris les montants qui ne peuvent pas être appliqués pour des raisons telles que celles mentionnées ci-dessus.
 
 Méthodes de résolution de ces types de paiements non lettrés :
@@ -29,7 +29,7 @@ Pour rapprocher de tels paiements, vous pouvez choisir l’action **Transférer 
 > [!TIP]  
 >   Il existe une fonctionnalité similaire permettant de configurer le rapprochement automatique des paiements récurrents qui ne peuvent pas être affectés aux écritures ouvertes associées du grand livre client, fournisseur ou compte bancaire. Pour plus d'informations, voir [Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique](receivables-how-map-text-recurring-payments-accounts-auto-reconcilliation.md).
 
-## Pour rapprocher les paiements qui ne peuvent pas être appliqués automatiquement
+## <a name="to-reconcile-payments-that-cant-be-applied-automatically"></a>Pour rapprocher les paiements qui ne peuvent pas être appliqués automatiquement
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux rapprochement bancaire**, puis sélectionnez le lien associé.
 2. Ouvrez un journal rapprochement paiement. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
 3. Sélectionnez l'action **Transférer la différence vers un compte**. La page **Transférer la différence vers un compte** s'ouvre.
@@ -42,7 +42,7 @@ Si la valeur du champ **Différence** est égale à la valeur du champ **Montant
 
 Si la valeur du champ **Différence** était inférieure à la valeur du champ **Montant transaction**, une ligne feuille supplémentaire est créée avec le même texte et la même date et avec la différence insérée dans le champ **Montant transaction**. Sur la ligne feuille d'origine, la différence est déduite de la valeur du champ **Montant transaction**, et le paiement demeure lettré à son écriture comptable client, fournisseur ou compte bancaire associée. Lorsque vous reportez le journal rapprochement paiement, une partie du paiement est reportée en tant que paiement affecté. L'autre partie du paiement est reportée directement dans le compte spécifié.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Ventes](sales-manage-sales.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

@@ -28,7 +28,7 @@ Lorsque vous créez la connexion entre les applications, [!INCLUDE[prod_short](i
 >
 > Pour éviter un ralentissement des performances, sur la page **Mappages de table d’intégration**, vous pouvez activer ou désactiver la synchronisation des données basée sur les événements pour n’importe quelle table. Par défaut, la synchronisation basée sur les événements est activée afin que les intégrations existantes ne soient pas affectées. Votre administrateur peut l’activer ou le désactiver pour des tables spécifiques.
 
-### <a name="additional-mappings"></a>Mappages supplémentaires
+### <a name="add-table-and-field-mappings-to-existing-integration-tables"></a>Mappages supplémentaires
 
 Les modalités de paiement, les méthodes de livraison et les agents de livraison peuvent changer, et il peut être important de pouvoir les ajuster. Si vous activez la fonctionnalité **Mise à jour des fonctionnalités : Mapper aux ensembles d’options dans Dataverse sans code** sur la page [Gestion des fonctionnalités](https://businesscentral.dynamics.com/?page=2610), vous pouvez ajouter manuellement des mappages de table d'intégration pour les modalités de paiement (PAYMENT TERMS), les méthodes de livraison (SHIPMENT METHOD) et les agents de livraison (SHIPPING AGENT). Ce mappage peut vous aider à vous assurer que vos stratégies sont les mêmes pour ces configurations dans [!INCLUDE[prod_short](includes/cds_long_md.md)] et [!INCLUDE[cds_long_md](includes/cds_long_md.md)].
 

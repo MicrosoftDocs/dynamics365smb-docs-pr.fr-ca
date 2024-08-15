@@ -11,7 +11,7 @@ ms.date: 04/19/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# Faire l’inventaire et l’ajuster à l’aide de documents
+# <a name="count-and-adjust-inventory-using-documents"></a>Faire l’inventaire et l’ajuster à l’aide de documents
 
 Vous pouvez effectuer l'inventaire d'un inventaire physique de vos articles à l'aide des documents Commande d'inventaire physique et Enregistrement d'inventaire physique. La page **Commande d'inventaire physique** est utilisée pour organiser le projet d'inventaire complet, par exemple un par emplacement. Utilisez la capture de page **Enregistrement d’inventaire phys.** pour communiquer et capturer le nombre réel d’articles. Vous pouvez créer plusieurs enregistrements pour une commande, par exemple, pour répartir les groupes d’articles vers différents employés.
 
@@ -29,7 +29,7 @@ Réaliser l’inventaire à l’aide de documents se produit comme suit :
 3. Saisissez les quantités d'articles répertoriés sur les enregistrements, comme saisis sur les bordereaux, par exemple, puis sélectionnez le statut **Terminé**.
 4. Exécutez et reportez la commande d'inventaire physique.
 
-## Pour créer une commande d'inventaire physique
+## <a name="to-create-a-physical-inventory-order"></a>Pour créer une commande d'inventaire physique
 
 Une commande d’inventaire physique est un document complet composé d’un en-tête de commande d’inventaire physique et de lignes de commande. Les informations relatives à un en-tête d'inventaire physique décrivent comment effectuer l'inventaire. Les lignes de commande contiennent les informations relatives aux articles et à leurs emplacements.
 
@@ -58,7 +58,7 @@ Vous pouvez désormais créant un ou plusieurs enregistrements, qui corresponden
 >
 > Après avoir choisi **Terminer** sur la page **Ordre d’inventaire physique** , [!INCLUDE [prod_short](includes/prod_short.md)] calcule les différences par rapport au colis et à d’autres détails de suivi de l’article, et effectue des ajustements positifs ou négatifs.
 
-## Pour créer un enregistrement d'inventaire physique
+## <a name="to-create-a-physical-inventory-recording"></a>Pour créer un enregistrement d'inventaire physique
 
 Pour chaque commande d’inventaire physique, vous pouvez créer un ou plusieurs documents d’enregistrement d’inventaire physique sur lesquels les employés saisissent les quantités comptabilisées. Les employés peuvent saisir les quantités soit manuellement, soit avec un appareil de numérisation.
 
@@ -77,7 +77,7 @@ Pour un décompte manuel, vous pouvez imprimer une liste, le rapport **Enregistr
 1. Pour les articles qui utilisent le suivi des articles, créez une ligne supplémentaire pour chaque numéro de lot ou code de numéro de série en sélectionnant l'action **Fonctions**, puis l'action **Copier la ligne**. Pour en savoir plus, rendez-vous sur [Gérer le suivi des articles lors du comptage des inventaires](#handle-item-tracking-when-counting-inventory).  
 1. Choisissez l’action **Imprimer** pour préparer le document physique que les employés utilisent pour noter les quantités comptabilisées.
 
-## Pour finaliser un enregistrement d'inventaire physique
+## <a name="to-finish-a-physical-inventory-recording"></a>Pour finaliser un enregistrement d'inventaire physique
 
 Une fois que les employés ont compté les quantités, enregistrez les quantités dans [!INCLUDE [prod_short](includes/prod_short.md)].
 
@@ -92,7 +92,7 @@ Une fois que les employés ont compté les quantités, enregistrez les quantité
     > 
     > Si une ligne de commande d’inventaire physique correspondante n’existe pas, et si la case **Autoriser l’enregistrement sans commande** est cochée, une nouvelle ligne est ajoutée et la case **Enregistré sans commande** sur la ligne de commande d’inventaire physique concernée est sélectionnée. Sinon, un message d’erreur s’affiche et le processus est annulé.> Si plusieurs lignes d’enregistrement d’inventaire physique correspondent à une ligne de commande d’inventaire physique, un message s’affiche et le processus est annulé. Si, pour une raison ou une autre, deux lignes d’inventaire physique identiques arrivent sur la commande d’inventaire physique, vous pouvez utiliser une action pour résoudre le problème. Pour en savoir plus, consultez [Pour rechercher les doublons de lignes de commande d’inventaire physique](#to-find-duplicate-physical-inventory-order-lines).
 
-## Pour finaliser une commande d'inventaire physique
+## <a name="to-complete-a-physical-inventory-order"></a>Pour finaliser une commande d'inventaire physique
 
 Une fois l’enregistrement d’un inventaire physique terminé, le champ  **Enregistreur de quantité (base)** de la commande d’inventaire physique associée est mis à jour avec les valeurs comptées (enregistrées) et la case à cocher  **Sur les lignes d’enregistrement** est sélectionnée. Si une quantité comptée diffère de la quantité attendue, les champs **Qté pos. (base)** et **Qté nég. (base)** affichent la différence.
 
@@ -100,7 +100,7 @@ Pour accéder les quantités prévues et toute différence enregistrée pour les
 
 Vous pouvez aussi choisir l'action **Diff. commande inventaire physique** pour visualiser les différences entre la quantité prévue et la quantité comptabilisé.
 
-### Pour rechercher les doublons de lignes de commande d'inventaire physique
+### <a name="to-find-duplicate-physical-inventory-order-lines"></a>Pour rechercher les doublons de lignes de commande d'inventaire physique
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez **Commandes d’inventaire**, puis choisissez le lien associé.
 2. Ouvrez la commande d’inventaire physique pour afficher les doublons de lignes.
@@ -108,7 +108,7 @@ Vous pouvez aussi choisir l'action **Diff. commande inventaire physique** pour v
 
 Tout doublon de ligne de commande d’inventaire physique s’affiche de telle sorte que vous puissiez les supprimer et ne conserver qu’une ligne avec un ensemble de valeurs unique dans les champs **N° article**, **Code variante**, **Code d’emplacement** et **Code de zone**.
 
-### Pour reporter une commande d'inventaire physique
+### <a name="to-post-a-physical-inventory-order"></a>Pour reporter une commande d'inventaire physique
 
 Après avoir effectué une commande d’inventaire physique et modifié son état sur **Terminé**, vous pouvez la reporter. Vous ne pouvez définir l’état d’une commande d’inventaire physique sur **Terminé** que dans les cas suivants :
 
@@ -129,7 +129,7 @@ Après avoir effectué une commande d’inventaire physique et modifié son éta
 
     [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
 
-### Pour afficher les commandes d'inventaire physique reportées
+### <a name="to-view-posted-physical-inventory-orders"></a>Pour afficher les commandes d'inventaire physique reportées
 
 Après report, la commande d’inventaire physique est supprimée et vous pouvez afficher et évaluer le document en tant que commande d’inventaire physique reportée. La commande reportée inclut ses enregistrements d’inventaire physique et tout commentaire effectué.
 
@@ -137,13 +137,13 @@ Après report, la commande d’inventaire physique est supprimée et vous pouvez
 2. Sur la page **Commandes inventaire physique reportées**, sélectionnez la commande d’inventaire reportée à afficher, puis sélectionnez l’action **Afficher**.
 3. Dans l’onglet **Lié**, choisissez **Commande**, puis choisissez l’action **Enregistrements** pour afficher une liste des enregistrements d’inventaire physique associés.  
 
-## Gérer le suivi des articles lors de l’exécution de l’inventaire
+## <a name="handle-item-tracking-when-counting-inventory"></a>Gérer le suivi des articles lors de l’exécution de l’inventaire
 
 Le suivi des articles concerne les numéros de lot ou de série attribués aux articles. Lorsque vous comptabilisez un article enregistré dans l’inventaire, par exemple, 10 différents numéros de lot, l’employé doit être en mesure d’enregistrer quelles unités, et leur nombre, de chaque numéro de lot figurent dans l’inventaire. Pour en savoir plus, voir [Utiliser les numéros de lot et de série](inventory-how-work-item-tracking.md).
 
 La case à cocher **Utiliser le suivi des articles** sur les lignes de commande d’inventaire physique est automatiquement sélectionnée si un code de suivi des articles est configuré pour l’article. Vous pouvez la cocher ou la décocher manuellement.
 
-### Exemple : Préparer un enregistrement d’inventaire physique pour un article suivi
+### <a name="example---prepare-a-physical-inventory-recording-for-an-item-tracked-item"></a>Exemple : Préparer un enregistrement d’inventaire physique pour un article suivi
 
 Imaginons un inventaire physique pour l'article A, enregistré dans l'inventaire sous la forme de dix numéros de série différents.
 
@@ -160,7 +160,7 @@ Imaginons un inventaire physique pour l'article A, enregistré dans l'inventaire
 
 Vous observerez que le rapport **Enregistrement d'inventaire physique** contient dix lignes pour l'article A, un pour chaque numéro de série.
 
-### Exemple : Enregistrer et reporter les différences de numéro de lot comptabilisé
+### <a name="example---record-and-post-counted-lot-number-differences"></a>Exemple : Enregistrer et reporter les différences de numéro de lot comptabilisé
 
 Un article suivi est enregistré dans l'inventaire avec la série de numéros « LOT ».
 
@@ -195,7 +195,7 @@ Un article suivi est enregistré dans l'inventaire avec la série de numéros «
 
 Sur la page **Commande d’inventaire physique**, le champ **Qté négative (de base)** contient **8**. Pour la ligne de commande, la page **Liste traçabilité inventaire physique** affiche les quantités positives ou négatives pour chaque numéro de lot.
 
-## Documents d’inventaire
+## <a name="inventory-documents"></a>Documents d’inventaire
 
 Les types de documents suivants sont utiles pour gérer votre entrepôt :
 
@@ -207,7 +207,7 @@ Vous pouvez imprimer ces documents à tout moment, les publier, les rouvrir et l
 > [!NOTE]
 > Avant de pouvoir utiliser ces documents, vous devez spécifier une série de numéros pour créer leurs identificateurs. Pour en savoir plus, accédez à [Pour configurer la numérotation des documents d’inventaire](#to-set-up-numbering-for-inventory-documents).
 
-### Pour configurer la numérotation des documents d'inventaire
+### <a name="to-set-up-numbering-for-inventory-documents"></a>Pour configurer la numérotation des documents d'inventaire
 
 La procédure suivante indique comment définir la numérotation des documents inventaire.
 
@@ -219,7 +219,7 @@ La procédure suivante indique comment définir la numérotation des documents i
    - **Invt. Numéros d’expédition**  
    - **Numéros d’expédition d’inventaire affichés**  
 
-### Pour créer et reporter un document d'inventaire
+### <a name="to-create-and-post-an-inventory-document"></a>Pour créer et reporter un document d'inventaire
 
 La procédure suivante montre comment créer, imprimer et reporter un reçu d'inventaire. La procédure est identique pour des livraisons d'inventaire.
 
@@ -235,7 +235,7 @@ Les fonctions suivantes sont disponibles sur la page **Reçu d’investissement*
 
     [!INCLUDE [preview-posting-inventory](includes/preview-posting-inventory.md)]
 
-## Impression des documents inventaire
+## <a name="printing-inventory-documents"></a>Impression des documents inventaire
 
 Vous pouvez spécifier les rapports à imprimer à différentes phases en choisissant l’une des options suivantes dans le champ **Utilisation** de la page **Sélection de rapports – inventaire** :
 
@@ -247,7 +247,7 @@ Vous pouvez spécifier les rapports à imprimer à différentes phases en choisi
 > [!NOTE]
 > Les rapports disponibles peuvent varier en fonction de la localisation de votre pays/région. L'application de base n'inclut aucune disposition.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Compter, Ajuster et reclasser l’inventaire à l’aide de journaux](inventory-how-count-adjust-reclassify.md)    
 [Travailler avec des numéros de série et de lot](inventory-how-work-item-tracking.md)    

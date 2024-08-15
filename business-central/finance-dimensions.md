@@ -24,7 +24,7 @@ Un autre exemple consiste à configurer une dimension appelée *Département* et
 * Le nom du vendeur.
 * Le nom du client qui l’a acheté.
 
-## <a name="analyzing-by-dimensions"></a>Analyse par dimensions
+## <a name="analyze-by-dimensions"></a>Analyse par dimensions
 
 La fonctionnalité Dimensions joue un rôle important dans la veille économique, par exemple en définissant des vues d’analyse. Pour en savoir plus, voir [Analyse des données par dimensions](bi-how-analyze-data-dimension.md).
 
@@ -40,7 +40,7 @@ Un ensemble de dimensions est une combinaison unique de sections analytiques. El
 
 Lorsque vous créez une ligne de journal, un en-tête de document ou une ligne de document, vous pouvez spécifier une combinaison de valeurs de dimension. Au lieu d'enregistrer explicitement chaque valeur de dimension dans la base de données, un code d'ensemble de dimensions est affecté à la ligne de journal, à l'en-tête du document ou à la ligne du document pour spécifier l'ensemble de dimensions.  
 
-## <a name="setting-up-dimensions"></a>Configuration de dimensions
+## <a name="set-up-dimensions"></a>Configuration de dimensions
 
 Vous pouvez définir les dimensions et les valeurs de dimension pour classer des journaux et des documents par catégorie, comme des documents de vente et des bons de commande. La page **Dimensions** permet de créer une ligne pour chaque dimension, par exemple *Projet*, *Département*, *Zone* et *Représentant*.
 

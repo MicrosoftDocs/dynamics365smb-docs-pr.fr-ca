@@ -11,7 +11,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="importing-payroll-transactions"></a>Importation des transactions de paie
+# <a name="import-payroll-transactions"></a>Importation des transactions de paie
 
 Pour tenir compte des paiements des salaires et des transactions associées, vous devez importer et reporter des transactions financières effectuées par votre fournisseur de paie dans le grand livre. Pour cela, vous devez commencer par importer un fichier que vous recevez du fournisseur de paie sur la page **Journal général**. Vous devez ensuite mapper les comptes externes du fichier de paie aux comptes généraux appropriés. Enfin, vous devez reporter les transactions de paie en fonction du mappage de compte.
 

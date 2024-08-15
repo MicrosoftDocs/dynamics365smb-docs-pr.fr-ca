@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
 
-# Rapprocher les paiements des fournisseurs avec le journal des paiements ou à partir des écritures du grand livre des fournisseurs
+# <a name="reconcile-vendor-payments-with-the-payment-journal-or-from-vendor-ledger-entries"></a>Rapprocher les paiements des fournisseurs avec le journal des paiements ou à partir des écritures du grand livre des fournisseurs
 Lorsque vous envoyez un règlement à un fournisseur ou recevez un remboursement de sa part, vous devez décider si vous souhaitez affecter le paiement ou le rembourser à une ou plusieurs écritures ouvertes. Vous pouvez indiquer le montant exact que vous souhaitez affecter à la réception paiement ou au remboursement, puis n'affecter que partiellement les écritures fournisseur. Vous devez affecter toutes les écritures fournisseur pour obtenir des rapports et statistiques fournisseur corrects des relevés de compte et des frais financiers.
 
 > [!NOTE]  
@@ -31,7 +31,7 @@ Vous pouvez appliquer manuellement les paiements des fournisseurs à leurs docum
 
 Vous pouvez également affecter des paiements fournisseur et des paiements client après que les paiements apparaissent en tant que transactions bancaires négatives dans votre banque. Sur la page **Journaux de rapprochement des paiements**, vous pouvez utiliser les fonctions d’importation de relevés bancaires, d’application automatique et de rapprochement de comptes bancaires. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
 
-## Pour affecter un paiement à une seule ou à plusieurs écritures fournisseur
+## <a name="to-apply-a-payment-to-a-single-or-multiple-vendor-ledger-entries"></a>Pour affecter un paiement à une seule ou à plusieurs écritures fournisseur
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux paiement**, puis choisissez le lien associé.
 2. Sur la page **Journaux de paiement**, sur la première ligne de journal, saisissez les informations pertinentes sur l’écriture de paiement.
 3. Pour affecter une seule écriture fournisseur :
@@ -49,7 +49,7 @@ Vous pouvez également affecter des paiements fournisseur et des paiements clien
 5. Cliquez sur le bouton **OK**.
 6. Sélectionnez l'action **Valider** pour valider la feuille paiement.
 
-## Pour affecter une note de crédit à une seule ou à plusieurs écritures fournisseur
+## <a name="to-apply-a-credit-memo-to-a-single-or-multiple-vendor-ledger-entries"></a>Pour affecter une note de crédit à une seule ou à plusieurs écritures fournisseur
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Notes de crédit achat**, puis sélectionnez le lien associé.
 2. Ouvrez la note de crédit à affecter.
 3. Entrez les informations nécessaires dans l'en-tête.
@@ -66,7 +66,7 @@ Vous pouvez également affecter des paiements fournisseur et des paiements clien
    La page  **Avoirs d’achat** affiche l’entrée que vous avez sélectionnée dans le champ  **Type de document applicable** et le champ  **N° de document applicable** . La page affiche également le montant de la note de crédit à reporter, escomptes de paiement éventuels déduits.
 7. Cliquez sur le bouton **Valider** pour valider l'avoir achat.
 
-## Pour affecter des écritures fournisseur reportées
+## <a name="to-apply-posted-vendor-ledger-entries"></a>Pour affecter des écritures fournisseur reportées
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Fournisseurs**, puis choisissez le lien associé.
 2. Ouvrez le fournisseur approprié possédant des écritures déjà reportées.
 3. Sélectionnez l'action **Écritures comptables**, puis sélectionnez l'action **Lettrer écritures**.
@@ -83,7 +83,7 @@ Vous pouvez également affecter des paiements fournisseur et des paiements clien
     La page **Reporter l'affectation** s'ouvre avec le numéro de document de l'écriture affectation et la date de report de l'écriture ayant la date de report la plus récente.
 9. Cliquez sur **OK** pour valider le lettrage.
 
-## Pour affecter des écritures fournisseur en devises différentes à une autre
+## <a name="to-apply-vendor-ledger-entries-in-different-currencies-to-one-another"></a>Pour affecter des écritures fournisseur en devises différentes à une autre
 Si vous achetez des produits auprès d'un fournisseur dans une devise et que vous effectuez le paiement dans une autre devise, vous pouvez tout de même affecter la facture au paiement.
 
 Si vous affectez une écriture (Écriture 1) dans une devise à une autre écriture (Écriture 2) dont la devise est différente, la date de report de l'Écriture 1 est utilisée pour trouver le taux de change adéquat et convertir les montants de l'Écriture 2. Le taux de change approprié se trouve sur la page **Taux de change devise**. Dans ce cas, vous devez activer l'affectation des écritures fournisseur en devises différentes. Pour plus d'informations, voir [Activer l'affectation d'écritures en différentes devises](finance-how-enable-application-ledger-entries-different-currencies.md)
@@ -98,7 +98,7 @@ Si vous affectez une écriture (Écriture 1) dans une devise à une autre écri
 > [!IMPORTANT]  
 >   Lorsque vous affectez des écritures les unes aux autres dans des devises différentes, les écritures sont converties en USD. Bien que le taux de change des deux devises concernées soit fixe, comme entre le USD et l'EUR, la conversion de ces montants en devise en une somme en USD peut donner un petit montant résiduel. Le programme reporte ces petits montants résiduels en tant que gains et pertes dans le compte défini dans les champs **Cpte gains constatés report** ou **Cpte pertes constatées report** de la page **Devises**. La valeur du champ **Montant (USD)** est également ajustée sur les écritures comptables fournisseur concernées.
 
-## Pour annuler l'affectation des écritures fournisseur
+## <a name="to-unapply-an-application-of-vendor-entries"></a>Pour annuler l'affectation des écritures fournisseur
 Lorsque vous annulez une application erronée, des entrées de correction identiques à l’entrée d’origine mais avec un logarithme opposé dans le champ du montant sont créées et comptabilisées pour toutes les entrées, y compris toutes les écritures comptabilité dérivées de l’application, telles que les escomptes de paiement et les gains/pertes de change. Les écritures qui sont fermées par l'affectation sont rouvertes.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Fournisseurs**, puis choisissez le lien associé.
@@ -112,7 +112,7 @@ Lorsque vous annulez une application erronée, des entrées de correction identi
 > [!IMPORTANT]  
 >   Si une écriture a été affectée par plusieurs écritures d'affectation, vous devez commencer par annuler l'affectation de la dernière écriture.
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 [Fournisseurs](payables-manage-payables.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)

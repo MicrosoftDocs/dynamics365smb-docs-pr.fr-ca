@@ -11,11 +11,11 @@ ms.search.form: null
 ms.date: 06/06/2024
 ms.service: dynamics-365-business-central
 ---
-# Utilisation des nomenclatures
+# <a name="work-with-bills-of-material"></a>Utilisation des nomenclatures
 
 Les nomenclatures d’assemblage permettent de structurer les articles parents qui doivent être assemblés à partir d’autres articles ou produits par des ressources ou des unités de production à partir des composantes.
 
-## Nomenclatures d’assemblage ou nomenclatures de production
+## <a name="assembly-boms-or-production-boms"></a>Nomenclatures d’assemblage ou nomenclatures de production
 
 [!INCLUDE[prod_short](includes/prod_short.md)] prend en charge deux types différents de nomenclatures :
 
@@ -36,7 +36,7 @@ Le concept de ressources est beaucoup plus avancé dans la production que dans l
 
 Les ordres d’assemblage et les bons de production peuvent être liés directement aux documents de vente. Cependant, vous pouvez uniquement utiliser des ordres d'assemblage pour personnaliser le produit fini directement par rapport à la demande d'un client via le document de vente.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Travailler avec des nomenclatures d’assemblage](assembly-how-work-assembly-boms.md)    
 [Créer des nomenclatures de production](production-how-to-create-production-boms.md)    

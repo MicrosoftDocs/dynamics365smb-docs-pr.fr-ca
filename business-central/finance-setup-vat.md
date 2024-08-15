@@ -62,7 +62,7 @@ Pour configurer une valeur par défaut pour une date de TVA, procédez comme sui
 > [!NOTE]
 > Par défaut, la **Date de TVA par défaut** est la **Date de report**.
 
-### <a name="enabling-or-disabling-the-vat-date-feature"></a>Activation ou désactivation de la fonctionnalité Date de TVA
+### <a name="enable-or-disable-the-vat-date-feature"></a>Activation ou désactivation de la fonctionnalité Date de TVA
 
 Certains pays/régions exigent que les entreprises utilisent une date de TVA spécifique, mais d’autres pays/régions ne le font pas. Certains pays/régions exigent également que les entreprises modifient la date de TVA dans des situations spécifiques après avoir reporté des documents, mais d’autres pays/régions n’autorisent pas les modifications des dates de TVA. Pour tenir compte de différents contextes, vous pouvez choisir si vous souhaitez utiliser cette fonctionnalité et, si oui, dans quelle mesure.
 

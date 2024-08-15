@@ -10,7 +10,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="setting-up-cost-accounting"></a>Paramétrage du contrôle de gestion
+# <a name="set-up-cost-accounting"></a>Paramétrage du contrôle de gestion
 
 Avant d'utiliser la comptabilité analytique, vous devez effectuer des tâches de configuration.
 
@@ -24,7 +24,7 @@ Ce faisant, vous créez l'équation comptable suivante :
 
 Lorsque vous imprimez le plan du type de coût, le plan des centres de coûts et le plan des états de coûts associés, vous pouvez analyser cette relation.
 
-## <a name="setting-up-cost-types"></a>Configuration de types de coûts
+## <a name="set-up-cost-types"></a>Configuration de types de coûts
 
 Le plan des types de coûts a la même fonction que le plan des comptes dans le grand livre. Vous pouvez configurer le plan des types de coûts comme suit :  
 

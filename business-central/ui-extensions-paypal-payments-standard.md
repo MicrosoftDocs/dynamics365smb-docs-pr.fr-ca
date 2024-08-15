@@ -11,7 +11,7 @@ ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# Extension PayPal Payments Standard
+# <a name="the-paypal-payments-standard-extension"></a>Extension PayPal Payments Standard
 
 L’extension PayPal Payments Standard peut vous aider à augmenter vos niveaux de service client en facilitant le paiement des factures de vos clients.
 
@@ -29,7 +29,7 @@ Le service PayPal Payments Standard fournit les avantages suivants :
 
 Pour en savoir plus sur la configuration de l’extension, accédez à [Activer le paiement client via PayPal](sales-how-enable-payment-service-extensions.md).
 
-## Enregistrer automatiquement les paiements pour les comptes professionnels
+## <a name="register-payments-automatically-for-business-accounts"></a>Enregistrer automatiquement les paiements pour les comptes professionnels
 
 [!INCLUDE [prod_short](includes/prod_short.md)] peut enregistrer les paiements automatiquement si vous disposez d’un compte marchand professionnel pour la plateforme PayPal Commerce. Lorsque vos clients utilisent le lien PayPal pour payer une facture, [!INCLUDE [prod_short](includes/prod_short.md)] publie les entrées et Fermer le document.
 
@@ -38,7 +38,7 @@ Pour utiliser cette fonctionnalité, sur la page **Configuration de l’enregist
 > [!TIP]
 > Les développeurs peuvent utiliser des comptes sandbox pour tester la configuration. Pour ce faire, modifiez l’URL PayPal en **sandbox.paypal.com**. [!INCLUDE [prod_short](includes/prod_short.md)] utilise la notification de paiement instantanée (IPN) de PayPal via notify_url.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Personnalisation de [!INCLUDE[prod_short](includes/prod_short.md)] à l'aide des extensions](ui-extensions.md)  
 [Définition des ventes](sales-setup-sales.md)  

@@ -9,7 +9,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="setting-up-inventory-valuation-and-costing"></a>Configuration de l'évaluation de l'inventaire et des coûts
+# <a name="set-up-inventory-valuation-and-costing"></a>Configuration de l'évaluation de l'inventaire et des coûts
 
 Pour vous assurer que les coûts ajustés sont enregistrés correctement, vous devez configurer plusieurs champs et pages avant de commencer à effectuer des transactions article. En règle générale, les entreprises choisissent une méthode d'évaluation des coûts spécifique et l’appliquent aux articles en inventaire, par exemple, pour les aider à suivre la valeur des articles en stock.  
 
