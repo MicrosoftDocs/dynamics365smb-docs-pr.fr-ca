@@ -7,11 +7,11 @@ ms.reviewer: bholtorf
 ms.topic: overview
 ms.search.keywords: 'print check, vendor payment, creditor, debt, balance due, AP'
 ms.search.form: '254, 256, 1190, 1191, 1227, 1228, 1229'
-ms.date: 05/24/2024
+ms.date: 07/15/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# <a name="making-payments"></a>Effectuer des paiements
+# Exécution des paiements
 
 Vous effectuez des paiements aux fournisseurs ou aux clients, ou des remboursements aux employés, en reportant les lignes paiement sur la page **Journal paiement**. Le journal paiement est un journal général qui est optimisé pour effectuer les paiements et qui offre beaucoup d'actions puissantes. Par exemple, l'action **Suggérer des paiements fournisseur** qui recherche les paiements fournisseur qui sont dus, et le rapport **Fournisseur – Chronologie sommaire** qui montre un aperçu des paiements fournisseur dus.  
 
@@ -35,7 +35,7 @@ Le tableau suivant décrit une série de tâches et inclut des liens vers les ar
 | Payez un fournisseur en liquide ou par chèque et reportez le paiement lorsque vous reportez la facture. |[Établir rapidement des factures achat](finance-how-to-settle-purchase-invoices-promptly.md) |
 | Assurez-vous que la banque efface uniquement les chèques et les montants validés en envoyant un fichier contenant des informations de paiement, du chèque et du fournisseur. |[Exportation du fichier Positive Pay](finance-how-positive-pay.md) |
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  

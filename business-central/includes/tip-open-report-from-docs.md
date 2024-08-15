@@ -1,10 +1,6 @@
 ---
-author: brentholtorf
-ms.topic: include
-ms.date: 06/12/2024
-ms.author: bholtorf
-ms.service: dynamics-365-business-central
-ms.reviewer: bholtorf
+auteur : brentholtorf ms.rubrique : inclure <<<<<<< mis à jour en amont ms.date : 12/06/2024 ======= ms.date : 20/05/2024
+>>>>>>> Modifications stockées ms.auteur : bholtorf ms.service : dynamics-365-business-central ms.reviewer : bholtorf
 ---
 
 > [!TIP]

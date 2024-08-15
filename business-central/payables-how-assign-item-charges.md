@@ -1,17 +1,18 @@
 ---
-title: Affecter les frais annexes aux ventes et aux achats
+title: Affecter les frais d’article aux ventes et aux achats
 description: 'Attribuez des frais annexes lorsque vous avez besoin d’articles en inventaire pour supporter des coûts supplémentaires, tels que le fret et la manutention physique.'
 author: brentholtorf
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'transportation, added cost, landed cost'
 ms.search.form: '5709, 5800, 5805, 5814'
-ms.date: 11/08/2023
+ms.date: 07/19/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="use-item-charges-to-account-for-additional-trade-costs"></a>Utilisation des frais annexes pour comptabiliser les coûts commerciaux supplémentaires
+
+# Utilisation des frais annexes pour comptabiliser les coûts commerciaux supplémentaires
 
 Pour une évaluation correcte, vos articles de l'inventaire doivent comptabiliser tous les coûts ajoutés, tels que le fret, la manutention, les assurances et le transport, que vous encourez lorsque vous achetez ou vendez des articles. Pour les achats, le coût en magasin d’un article acheté est constitué du prix d’achat au fournisseur et de tous les frais annexes directs pouvant être affectés à chacune des réceptions ou livraisons retour. Pour les ventes, il peut s'avérer aussi fondamental pour votre compagnie de connaître le coût de livraison des articles vendus que le coût en magasin des articles achetés.
 
@@ -31,13 +32,13 @@ Pour les documents achat et vente, vous pouvez affecter des frais annexes de deu
 > [!NOTE]  
 > Vous pouvez affecter des frais annexes aux commandes, aux factures, et aux avoirs, pour les deux ventes et achats. Les procédures suivantes décrivent comment utiliser les frais annexes pour une facture achat. Les étapes sont similaires pour tous les autres documents achat et vente.
 
-## <a name="example"></a>Exemple :
+## Exemple :
 
 Cette vidéo montre comment gérer un coût d’expédition supplémentaire dans le cadre de l’évaluation des coûts d’inventaire.
 <br><br>  
 > [!Video https://www.microsoft.com/videoplayer/embed/RE4b0SB?rel=0]
 
-## <a name="to-set-up-item-charge-numbers"></a>Pour configurer des numéros de frais annexes
+## Pour configurer des numéros de frais annexes
 
 Utilisez les numéros de frais annexes pour distinguer les différents types de frais annexes.
 
@@ -45,7 +46,7 @@ Utilisez les numéros de frais annexes pour distinguer les différents types de 
 2. Sur la page **Frais annexes**, sélectionnez l'action **Nouveau** pour créer ligne.
 3. Renseignez les champs selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
-## <a name="to-assign-an-item-charge-directly-to-the-purchase-invoice-for-the-item"></a>Pour affecter des frais annexes directement à la facture achat pour l'article
+## Pour affecter des frais annexes directement à la facture achat pour l'article
 
 Si vous connaissez les frais annexes au moment de reporter une facture achat pour l’article, procédez comme suit.
 
@@ -53,7 +54,7 @@ Si vous connaissez les frais annexes au moment de reporter une facture achat pou
 2. Créez une facture achat. Pour plus d'informations, voir [Enregistrer des achats](purchasing-how-record-purchases.md).
 3. Assurez-vous que la facture achat a une ou plusieurs lignes de type Article.
 4. Sur une nouvelle ligne, dans le champ **Type**, sélectionnez **Frais annexes**.
-5. Dans le champ **Quantité**, saisissez les unités de ces frais annexes qui vous sont facturées.
+5. Dans le champ  **Quantité**, saisissez les unités de l’article pour lequel vous êtes facturé.
 6. Dans le champ **Coût unitaire direct**, saisissez le montant des frais annexes.
 7. Renseignez les champs restants selon vos besoins. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
@@ -69,7 +70,7 @@ Si les frais annexes sont entièrement affectés, la valeur dans le champ **Qté
 
 Les frais annexes sont maintenant affectés à la facture achat. Lorsque vous reportez la réception de la facture achat, les valeurs d'inventaire des articles sont mises à jour avec le coût des frais annexes.  
 
-## <a name="to-assign-an-item-charge-from-a-separate-invoice-to-the-purchase-invoice-for-the-item"></a>Pour affecter des frais annexes depuis une facture distincte à la facture achat pour l'article
+## Pour affecter des frais annexes depuis une facture distincte à la facture achat pour l'article
 
 Si vous avez reçu une facture des frais annexes après avoir reporté la réception achat d'origine, procédez comme suit.
 
@@ -80,7 +81,7 @@ Si vous avez reçu une facture des frais annexes après avoir reporté la récep
 
 Les frais annexes de la facture achat distincte sont maintenant affectés à l'article sur la réception achat reportée, mettant ainsi à jour la valeur d'inventaire de l'article avec le coût des frais annexes.
 
-## <a name="handle-item-charges-for-partial-receipts"></a>Gérer les frais annexes pour les réceptions partielles
+## Gérer les frais annexes pour les réceptions partielles
 
 Explorons un exemple de la façon de gérer les frais annexes pour une réception partielle.
 
@@ -95,7 +96,7 @@ Pour gérer le coût de l’article pour la réception partielle, sur le **Affec
 
 Lorsque vous êtes prêt à gérer l’article manquant, mettez à jour le champ **Quantité à traiter** et reportez la commande.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
 [Enregistrement des achats](purchasing-how-record-purchases.md)  

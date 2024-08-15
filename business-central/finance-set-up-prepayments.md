@@ -10,7 +10,8 @@ ms.search.form: '314, 459, 460, 664'
 ms.date: 06/10/2024
 ms.service: dynamics-365-business-central
 ---
-# <a name="set-up-prepayments"></a>Configurer des paiements anticipés
+
+# Configurer des paiements anticipés
 
 Vous utilisez les paiements anticipés lorsque :
 
@@ -35,7 +36,7 @@ Le montant prépayé appartient à l’acheteur jusqu’à ce qu’il reçoive l
 
 [!INCLUDE[local-func-setup-link](includes/local-func-setup-link.md)]
 
-## <a name="to-add-prepayment-accounts-to-the-general-posting-setup"></a>Ajouter des comptes paiement anticipé à la configuration de report générale
+## Ajouter des comptes paiement anticipé à la configuration de report générale  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration du report général**, puis choisissez le lien associé.
 2. Sur la page **Configuration du report général**, renseignez les champs suivants pour les lignes appropriées :  
@@ -45,7 +46,7 @@ Le montant prépayé appartient à l’acheteur jusqu’à ce qu’il reçoive l
 
 Si vous n'avez pas encore configuré de comptes GL pour les paiements anticipés, vous pouvez ouvrir la page **Liste des comptes GL** à partir du champ du compte correspondant.  
 
-## <a name="to-set-up-number-series-for-prepayment-documents"></a>Configurer des séries de numéros pour des documents paiement anticipé
+## Configurer des séries de numéros pour des documents paiement anticipé  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , entrez **Configuration ventes & à recevoir**, puis sélectionnez le lien associé.
 2. Sur la page **Configuration ventes**, sur le raccourci **Séries de numéros**, remplissez les champs suivants :  
@@ -62,25 +63,25 @@ Si vous n'avez pas encore configuré de comptes GL pour les paiements anticipés
 > [!NOTE]  
 > Vous pouvez utiliser les mêmes séries de numéros pour des factures paiement anticipé et des factures normales, ou utiliser des séries de numéros différentes. Si vous utilisez des souches différentes, elles ne doivent pas se chevaucher car vous ne pouvez pas avoir des numéros identiques dans les deux souches.  
 
-## <a name="to-set-up-prepayment-percentages-for-items-customers-and-vendors"></a>Pour configurer des pourcentages de paiement anticipé pour des articles, des clients et des fournisseurs
+## Pour configurer des pourcentages de paiement anticipé pour des articles, des clients et des fournisseurs
 
 Pour un article, vous pouvez configurer un pourcentage de paiement anticipé par défaut pour tous les clients, pour un client spécifique ou pour un groupe prix client. Si vous ne souhaitez pas appliquer le même pourcentage de paiement anticipé à tous les clients, vous devez spécifier à quels clients ou à quels groupes de prix client s’applique le pourcentage de paiement anticipé.
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Articles**, puis choisissez le lien associé.
-2. Sélectionnez un article, puis cliquez sur l'action **Pourcentages paiement anticipé**.  
+2. Sélectionner un article, puis choisissez l’action  **Pourcentages de prépaiement des ventes** .  
 3. Sur la page **Pourcentages paiement anticipé vente**, renseignez autant de champs que nécessaire. [!INCLUDE[tooltip-inline-tip](includes/tooltip-inline-tip_md.md)]
 
 Pour un client ou un fournisseur, vous pouvez configurer un pourcentage de paiement anticipé par défaut pour tous les articles et tous les types de lignes vente. Vous entrez cette pourcentage dans la fiche client ou fournisseur. La procédure suivante montre comment spécifier un pourcentage de paiement anticipé pour un client, mais des étapes similaires s’appliquent aux fournisseurs.  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.
 2. Ouvrez la fiche d'un client.
-3. Remplissez le champ **% paiement anticipé**.
+3. Dans l’onglet rapide **Paiements**, remplissez le champ **Prépaiement %** .
 4. Répétez les étapes pour d'autres clients ou fournisseurs.  
 
 > [!TIP]
 > Vous pouvez également accéder à la page **Pourcentages paiement anticipé vente** à partir de la fiche client ou fournisseur.
 
-### <a name="to-determine-which-prepayment-percentage-has-first-priority"></a>Pour déterminer quel pourcentage de paiement anticipé a la priorité
+### Pour déterminer quel pourcentage de paiement anticipé a la priorité  
 
 Une commande peut avoir un pourcentage de paiement anticipé dans l’en-tête vente et un autre pourcentage pour les articles figurant dans les lignes. Pour déterminer quel pourcentage de paiement anticipé s’applique à chaque ligne vente, [!INCLUDE [prod_short](includes/prod_short.md)] recherche le premier pourcentage par défaut et l'applique dans l'ordre suivant :  
 
@@ -91,7 +92,7 @@ Une commande peut avoir un pourcentage de paiement anticipé dans l’en-tête v
 
 Autrement dit, le pourcentage de paiement anticipé figurant sur la fiche client ne s’applique que si aucun pourcentage de paiement anticipé n’est configuré pour l’article. Toutefois, si vous modifiez le contenu du champ **Pourcentage de paiement anticipé** dans l’en-tête vente ou achat après avoir créé les lignes, le pourcentage de paiement anticipé figurant sur toutes les lignes est mis à jour. La mise à jour facilite la création d’une commande avec un pourcentage de paiement anticipé fixe, quel que soit le pourcentage configuré pour les articles.
 
-## <a name="to-automatically-release-sales-orders-when-prepayments-are-applied"></a>Pour libérer automatiquement les documents de vente lorsque des paiements anticipés sont appliqués
+## Pour libérer automatiquement les documents de vente lorsque des paiements anticipés sont appliqués
 
 Vous pouvez gagner du temps en configurant une écriture file d’attente des travaux qui libérera automatiquement les documents de vente nécessitant un paiement anticipé une fois les paiements appliqués. L’automatisation du processus vous évite l’étape de validation du document de vente.
 
@@ -104,7 +105,7 @@ Vous pouvez gagner du temps en configurant une écriture file d’attente des tr
 3. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Écritures file d’attente des travaux**, puis sélectionnez le lien associé.
 4. Configurez l’écriture file d’attente des travaux **Mise à jour Paiement anticipé en attente Ventes**, par exemple, en utilisant les paramètres du raccourci **Récurrence** pour programmer sa fréquence d'exécution. Pour plus d'informations, voir [Utiliser des files d'attente des travaux pour programmer des tâches](admin-job-queues-schedule-tasks.md).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .  
 
 [Facturation de paiements anticipés](finance-invoice-prepayments.md)  
 [Procédure pas à pas : configuration et facturation d'acomptes](walkthrough-setting-up-and-invoicing-sales-prepayments.md)  

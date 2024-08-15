@@ -1,37 +1,37 @@
 ---
-title: Tracer des articles - Articles suivis
-description: 'Vous pouvez voir où un article suivi a été utilisé, y compris le mode et le moment de réception, de production ou de retour avec les fonctionnalités de traçabilité et de recherche des écritures.'
+title: Tracer les articles suivis
+description: 'Vous pouvez voir où un article suivi a été utilisé, y compris comment et quand il a été reçu, produit ou retourné grâce aux fonctionnalités de suivi des articles et de recherche d’entrées.'
 author: brentholtorf
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: null
 ms.search.forms: '6520,'
-ms.date: 06/16/2021
+ms.date: 05/16/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="trace-item-tracked-items"></a>Tracer des articles - Articles suivis
+# Tracer les éléments suivis
 
 Vous pouvez voir où un article suivi a été utilisé, y compris le mode et le moment de réception ou de production, de transfert, de vente, de consommation ou de retour. Vous pouvez également rechercher toutes les instances d'informations d'un numéro de série ou de lot particulier dans la base de données. Vous procédez à l’aide des fonctionnalités Traçabilité et [Rechercher des écritures](ui-find-entries.md).  
 
-Ces fonctions sont particulièrement utiles pour le contrôle qualité, lorsque vous devez déterminer quels clients ont reçu des produits correspondant à un numéro de lot particulier ou le lot dont provenait une composante défectueuse.  
+Ces fonctionnalités peuvent être utiles dans le contrôle qualité lorsque vous devez savoir quels clients ont reçu des produits avec un numéro de lot particulier ou lorsque vous devez savoir de quel lot provient un composant défectueux.  
 
  Sur la page **Traçabilité article**, vous pouvez effectuer une traçabilité en aval et en amont dans une série de transactions d'inventaire reportées pour le numéro de lot ou de série.  
 
- Sur la page **Rechercher des écritures**, vous ne pouvez pas voir la séquence de transactions, mais vous pouvez afficher tous les enregistrements des numéros de série ou de lot, à la fois les écritures reportées et les enregistrements ouverts.  
+ Sur la page  **Rechercher des entrées**, vous ne pouvez pas voir la séquence des transactions, mais vous pouvez voir tous les enregistrements du numéro de série ou de lot, à la fois les entrées publiées et les enregistrements ouverts.  
 
  Les deux fonctions peuvent être utilisées en association en transférant un numéro de série ou de lot suivi sur la page **Rechercher des écritures** pour terminer un scénario complet de suivi. <!-- For more information, see [Walkthrough: Tracing Serial-Lot Numbers](walkthrough-tracing-serial-lot-numbers.md).   -->
 
-## <a name="to-trace-item-tracked-items"></a>Pour tracer des articles suivis
+## Pour tracer des articles suivis  
 
 1.  Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Traçabilité**, puis choisissez le lien associé.  
 2.  Dans les champs de filtre dans le haut de la page, entrez les numéros d'article spécifiques ou un filtre pour les numéros d'article que vous voulez suivre.  
 3.  Dans le champ **Afficher composantes**, sélectionnez si vous voulez aussi voir d’où provenaient les composantes des articles. Le tableau suivant décrit les options.  
 
-    |Champ|Description|  
+    |Champ|Désignation|  
     |----------------------------------|---------------------------------------|  
-    |**Non**|Ne plus afficher les composantes.|  
+    |**Non**|Ne pas afficher les composants.|  
     |**Avec traçabilité uniquement**|Afficher uniquement les composantes qui ont des numéros de lot ou de série.|  
     |**Tous**|Afficher tous les composantes.|  
 
@@ -52,14 +52,14 @@ Ces fonctions sont particulièrement utiles pour le contrôle qualité, lorsque 
 >   
 >  Pour trouver les lignes traçabilité où l'historique des transactions a déjà été suivi, cliquez sur le bouton **Aller sur déjà tracé**. La ligne traçabilité en question est sélectionnée et toutes les lignes sous-jacentes sont développées.  
 
-## <a name="to-find-item-tracked-items-with-find-entries"></a>Pour rechercher des articles suivis avec Rechercher des écritures
+## Pour rechercher des articles suivis avec Rechercher des écritures  
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Rechercher des écritures**, puis sélectionnez le lien associé.  
-2. Choisissez **Actions** > **Rechercher par** > **Rechercher par référence d’article**.
+2. Choisissez **Rechercher des références d’articles**.
 3. Dans les champs **N° de série** et **N° lot**, entrez les numéros traçabilité que vous voulez suivre.  
 4. Sélectionnez l'action **Rechercher** pour rechercher toutes les instances du numéro de série ou de lot dans la base de données.  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Inventaire](inventory-manage-inventory.md)  
 [Utiliser les numéros lot, de série et paquet](inventory-how-work-item-tracking.md)  

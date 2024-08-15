@@ -8,10 +8,11 @@ ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'payment process, cash receipts, customer payment'
 ms.search.form: '1290, 1294, 1287'
-ms.date: 06/10/2024
+ms.date: 07/08/2024
 ms.service: dynamics-365-business-central
 ---
-# <a name="reconcile-customer-payments-from-a-list-of-unpaid-sales-documents"></a>Rapprochement des paiements client à partir de la liste des documents vente échus
+
+# Rapprochement des paiements client à partir de la liste des documents vente échus
 
 Une fois que les clients ont effectué des paiements électroniques sur votre compte bancaire, vous devez effectuer les actions suivantes :
 
@@ -27,7 +28,7 @@ Utilisez la page **Enregistrer les paiements client** pour réaliser les tâches
 
 Vous devez reporter les paiements pour des clients différents qui ont des dates de paiement différentes en tant que paiements individuels. Les paiements pour le même client qui ont la même date d'échéance peuvent être reportés comme paiement forfaitaire. Les paiements forfaitaires sont utiles, par exemple, lorsqu’un client a effectué un paiement unique qui couvre plusieurs factures vente.
 
-## <a name="to-set-up-the-payment-registration-journal"></a>Pour configurer le journal enregistrement paiement
+## Pour configurer le journal enregistrement paiement
 
 Étant donné que vous pouvez reporter différents types de paiement dans différents comptes de contrepartie, vous devez sélectionner un compte de contrepartie sur la page **Configuration de l'enregistrement de paiement** avant de commencer le traitement des paiements client. Si vous reportez toujours sur le même compte de contrepartie, vous pouvez définir ce compte par défaut et éviter cette étape chaque fois que vous ouvrez la page **Enregistrer les paiements client**.  
 
@@ -37,7 +38,7 @@ Vous devez reporter les paiements pour des clients différents qui ont des dates
 > [!TIP]
 > Pour faciliter l’identification ultérieure des écritures qui ont été reportées via le journal, vous pouvez affecter une série de numéros spécifique au journal paiement. La série de numéros est utile si vous utilisez des journaux de rapprochement de paiement pour enregistrer et affecter les paiements.
 
-## <a name="to-register-customer-payments-individually"></a>Pour enregistrer les paiements client individuellement
+## Pour enregistrer les paiements client individuellement
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Enregistrer les paiements client**, puis choisissez le lien associé.  
 
@@ -54,7 +55,7 @@ Vous devez reporter les paiements pour des clients différents qui ont des dates
 
 Les informations de paiement sont reportées pour les documents sur les lignes dont la case **Paiement effectué** est cochée. Les écritures paiement sont reportées sur les comptes grand livre, bancaire et client.
 
-## <a name="to-reconcile-lump-sum-payments"></a>Pour rapprocher des paiements forfaitaires
+## Pour rapprocher des paiements forfaitaires
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Enregistrer les paiements client**, puis choisissez le lien associé.
 2. Cochez la case **Paiement effectué** pour les lignes des documents reportés pour le même client et pour lesquelles un paiement forfaitaire a été effectué.  
@@ -80,7 +81,7 @@ Si un paiement avec la banque n’est représenté par aucune ligne sur la page 
 
 Si un paiement avec la banque n’est représenté par aucun document, vous pouvez ouvrir un journal général prérempli depuis la page **Enregistrer les paiements client** pour reporter le paiement directement sur le compte de contrepartie sans affecter le paiement à un document. Sinon, vous pouvez enregistrer le paiement dans le journal jusqu’à ce que son origine soit résolue. Pour plus d'informations, voir [Pour enregistrer ou reporter un paiement sans document connexe](receivables-how-reconcile-customer-payments-list-unpaid-sales-documents.md#to-record-or-post-a-payment-without-a-related-document).  
 
-## <a name="to-process-customer-payments-with-discounts-manually"></a>Pour traiter manuellement les paiements client avec remises
+## Pour traiter manuellement les paiements client avec remises
 
 Si vous avez convenu d’un escompte de paiement avec le client, les montants règlement peuvent être inférieurs aux montants de la facture si le paiement est effectué avant la date d’escompte convenue.  
 
@@ -91,7 +92,7 @@ Les procédures suivantes expliquent les méthodes permettant de reporter des pa
 * Le montant règlement est inférieur au montant avec escompte restant. Vous reportez le paiement comme partiel. Le document reste ouvert pour collecter/payer le montant ouvert.  
 * Le montant règlement est supérieur au montant avec escompte restant. Vous reportez les paiements tels quels. Seul le montant ouvert est reporté. Le montant supplémentaire est crédité au client.  
 
-### <a name="to-process-a-payment-amount-that-is-equal-to-the-discounted-amount-and-where-the-payment-date-is-before-the-discount-date"></a>Pour traiter un montant règlement égal au montant escompté, et lorsque la date d'échéance est antérieure à la date d'escompte
+### Pour traiter un montant règlement égal au montant escompté, et lorsque la date d'échéance est antérieure à la date d'escompte
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Enregistrer les paiements client**, puis choisissez le lien associé.  
 2. Saisissez le montant du paiement dans le champ **Montant reçu**. Le montant est égal au montant du champ **Montant ouvert escompte incl.**.
@@ -101,7 +102,7 @@ Les procédures suivantes expliquent les méthodes permettant de reporter des pa
 4. Vérifiez que le champ **Montant ouvert** indique zéro (0).  
 5. Sélectionnez l'action **Valider les paiements** pour valider l'intégralité du paiement sur les comptes général, bancaire et client.
 
-### <a name="to-process-a-payment-amount-that-is-equal-to-the-discounted-amount-but-where-the-payment-date-is-after-the-discount-date"></a>Pour traiter un montant règlement égal au montant escompté, mais lorsque la date d'échéance est postérieure à la date d'escompte
+### Pour traiter un montant règlement égal au montant escompté, mais lorsque la date d'échéance est postérieure à la date d'escompte
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Enregistrer les paiements client**, puis choisissez le lien associé.  
 2. Saisissez le montant du paiement dans le champ **Montant reçu**. Le montant est égal au montant du champ **Montant ouvert escompte incl.**.
@@ -111,7 +112,7 @@ Les procédures suivantes expliquent les méthodes permettant de reporter des pa
 
    La police des champs de date devient rouge et un message d'erreur s'affiche au bas de la page. Les deux étapes suivantes résolvent ce problème.
 4. Sélectionnez l'action **Détails**.  
-5. Sur la page **Détails de l'enregistrement de paiement**, dans le champ **Date d'escompte de paiement** sur le raccourci **Escompte de paiement**, saisissez une date ultérieure à celle indiquée dans le champ **Date de réception** de la page **Enregistrement de paiement**.  
+5. Sur la page  **Détails de l’enregistrement du paiement**, dans le champ  **Date de remise sur paiement** du raccourci  **Remise sur paiement**, saisissez une date postérieure à la date du champ  **Date de réception** de la page  **Configuration de l’enregistrement du paiement** .  
 
     Le message d’erreur et la police rouge disparaissent, vous pouvez traiter le paiement escompté.
 6. Vérifiez que le champ **Montant ouvert** indique le montant qui reste à régler pour le montant total de la facture.  
@@ -119,7 +120,7 @@ Les procédures suivantes expliquent les méthodes permettant de reporter des pa
 
 Le document connexe reste ouvert.
 
-### <a name="to-process-a-payment-that-is-lower-than-the-remaining-discounted-amount"></a>Pour traiter un paiement inférieur au montant avec escompte restant
+### Pour traiter un paiement inférieur au montant avec escompte restant
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Enregistrer les paiements client**, puis choisissez le lien associé.  
 2. Saisissez le montant du paiement dans le champ **Montant reçu**. Le montant est inférieur au montant du champ **Montant ouvert escompte incl.**.
@@ -131,7 +132,7 @@ Le document connexe reste ouvert.
 
 Le document connexe reste ouvert.
 
-### <a name="to-process-a-payment-that-is-more-than-the-remaining-discounted-amount"></a>Pour traiter un paiement supérieur au montant avec escompte restant
+### Pour traiter un paiement supérieur au montant avec escompte restant
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Enregistrer les paiements client**, puis choisissez le lien associé.  
 2. Saisissez le montant du paiement dans le champ **Montant reçu**. Le montant est supérieur au montant du champ **Montant ouvert escompte incl.**.  
@@ -143,7 +144,7 @@ Le document connexe reste ouvert.
 
 Le document associé est fermé, et le client est crédité du montant du paiement excédentaire.  
 
-## <a name="to-find-a-specific-sales-document-that-isnt-fully-invoiced"></a>Pour rechercher un document vente spécifique qui n’est pas totalement facturé
+## Pour rechercher un document vente spécifique qui n’est pas totalement facturé
 
 La page **Enregistrer les paiements client** vous aide dans les tâches de contrepartie des comptes internes avec les chiffres réels de règlement pour assurer une collecte efficace auprès des clients et le paiement des sommes dues aux fournisseurs. Elle affiche les paiements entrants en attente sous la forme de lignes représentant les documents vente pour lesquels un montant doit être payé.  
 
@@ -172,7 +173,7 @@ Si un ou plusieurs documents correspondent aux critères de recherche, la page *
 
 Si un paiement avec la banque n’est représenté par aucun document, vous pouvez ouvrir un journal général prérempli depuis la page **Enregistrer les paiements client** pour reporter le paiement directement sur le compte de contrepartie sans affecter le paiement à un document. Sinon, vous pouvez enregistrer le paiement dans le journal jusqu’à ce que son origine soit résolue.  
 
-## <a name="to-record-or-post-a-payment-without-a-related-document"></a>Pour enregistrer ou reporter un paiement sans document connexe
+## Pour enregistrer ou reporter un paiement sans document connexe
 
 Si un paiement en banque n’est pas représenté par un document, vous pouvez utiliser l’action **Journal général** pour ouvrir une ligne journal général préremplie à partir du **Enregistrer les paiements des clients** page. Utilisez le journal pour reporter le paiement directement sur le compte de contrepartie sans affecter le paiement à un document. Sinon, vous pouvez enregistrer le paiement dans le journal jusqu’à ce que son origine soit résolue.  
 
@@ -186,7 +187,7 @@ Vous pouvez reporter la ligne journal pour mettre à jour le total sur le compte
 
 Si vous ne reportez pas la ligne journal, sa valeur est ajoutée à la valeur dans le champ **Montant ouvert escompte incl.** sur la page **Enregistrement de paiement**.  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Ventes](sales-manage-sales.md)  

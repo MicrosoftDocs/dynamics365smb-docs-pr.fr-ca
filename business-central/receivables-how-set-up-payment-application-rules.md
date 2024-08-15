@@ -1,19 +1,19 @@
 ---
-title: Règles pour l’affectation automatique des paiements
+title: Règles d’application automatique des paiements
 description: Découvrez comment configurer des règles pour l’affectation automatique des paiements sur la page Règles d’affectation des paiements.
 author: brentholtorf
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'payment process, direct payment posting, reconcile payment, expenses, cash receipts'
 ms.search.form: '1290, 1294, 1287'
-ms.date: 06/25/2021
+ms.date: 06/03/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="set-up-rules-for-automatic-application-of-payments"></a>Configurer des règles pour l'affectation automatique des paiements
+# Configurer des règles pour l’application automatique des paiements
 
-Sur la page **Règles d'affectation de paiement**, vous configurez des règles pour définir comment le texte de paiement (sur une transaction bancaire) doit être automatiquement mis en correspondance avec le texte sur les factures, notes de crédit ou autres écritures ouvertes (impayées) associées lorsque vous utilisez la fonction **Affecter automatiquement** sur la page **Journal rapprochement paiement**. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
+Sur la page **Règles d'affectation de paiement**, vous configurez des règles pour définir comment le texte de paiement (sur une transaction bancaire) doit être automatiquement mis en correspondance avec le texte sur les factures, notes de crédit ou autres écritures ouvertes (impayées) associées lorsque vous utilisez la fonction **Affecter automatiquement** sur la page **Journal rapprochement paiement**. Pour plus d’informations, consultez [Rapprocher les paiements à l’aide de l’application automatique](receivables-how-reconcile-payments-auto-application.md).
 
 Pour définir de nouvelles règles d'affectation de paiement, choisissez quels types de données sur une ligne journal rapprochement bancaire doivent correspondre aux données sur une ou plusieurs écritures ouvertes avant que le paiement associé ne soit automatiquement affecté aux écritures ouvertes. La qualité de chaque affectation automatique est indiquée par une valeur de **Faible** à **Élevée** dans le champ **Fiabilité correspondance** sur la page **Journal rapprochement bancaire** selon la règle d'affectation de paiement qui a été utilisée.
 
@@ -29,7 +29,7 @@ Outre les critères de correspondance, les remarques suivantes s'appliquent conc
 - Pour les montants négatifs, une correspondance est d'abord établie par rapport aux écritures ouvertes représentant les factures client, et ensuite par rapport aux notes de crédit fournisseur.
 - Pour les montants positifs, une correspondance est d'abord établie par rapport aux écritures ouvertes représentant les factures fournisseur, et ensuite par rapport aux notes de crédit client.
 
-## <a name="to-set-up-a-payment-application-rule"></a>Pour configurer une règle d'affectation de paiement
+## Pour configurer une règle d'affectation de paiement
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Règles d’affectation des paiements**, puis choisissez le lien associé.
 2. Définissez une règle d'affectation de paiement, nouvelle ou modifiée, en renseignant les champs sur une ligne tel que décrit dans le tableau suivant.
 
@@ -38,8 +38,8 @@ Outre les critères de correspondance, les remarques suivantes s'appliquent conc
 |**Fiabilité correspondance**|Spécifie la fiabilité de la règle d'affectation que vous définissez sur la ligne. <br /></br>Une valeur spécifiée dans ce champ est affichée dans le champ **Fiabilité correspondance** sur la page **Journal rapprochement bancaire** en fonction de la qualité de l'affectation de paiement automatique sur la ligne journal.|
 |**Priorité**|Spécifie la priorité de la règle d'affectation par rapport aux autres règles d'affectation définies en tant que lignes sur la page **Règles affectation paiement**. 1 représente la priorité la plus élevée.|
 |**Correspondance partie associée**|Spécifie la quantité d'informations sur le client ou le fournisseur (par exemple, l'adresse, le nom de la ville et le numéro de compte bancaire) sur la ligne journal rapprochement bancaire qui doivent correspondre aux informations sur l'écriture ouverte avant que la règle d'affectation soit utilisée pour affecter automatiquement le paiement à l'écriture ouverte.|
-|**Correspondance N° doc./N° doc. ext.**|Spécifie si le texte de la ligne journal rapprochement bancaire doit correspondre à la valeur du champ **N° document** ou du champ **N° document externe** sur l’écriture ouverte avant que la règle d’affectation soit utilisée pour affecter automatiquement le paiement avec l’écriture ouverte.|
-|**Correspondance montant avec tolérance**|Spécifie combien d'écritures pour un client ou un fournisseur doivent correspondre au montant (tolérance de règlement comprise) avant que la règle d'affectation soit utilisée pour affecter automatiquement un paiement à l'écriture ouverte.|
+|**Numéro de document/Ext. Numéro de document correspondant**|Spécifie si le texte de la ligne journal rapprochement bancaire doit correspondre à la valeur du champ **N° document** ou du champ **N° document externe** sur l’écriture ouverte avant que la règle d’affectation soit utilisée pour affecter automatiquement le paiement avec l’écriture ouverte.|
+|**Nombre d’entrées dans la tolérance de montant trouvée**|Spécifie combien d'écritures pour un client ou un fournisseur doivent correspondre au montant (tolérance de règlement comprise) avant que la règle d'affectation soit utilisée pour affecter automatiquement un paiement à l'écriture ouverte.|
 |**Révision requise**|Spécifie si l’affectation de paiement automatique doit être révisée manuellement par l’utilisateur avant le report. Choisissez le champ **Lignes à vérifier** sur la page **Journal des affectations de paiement** pour démarrer une expérience guidée dans laquelle vous pouvez facilement examiner plusieurs affectations en série sur la page **Révision affectation paiement**.|
 
 Le tableau suivant décrit les règles d’affectation de paiement standard dans [!INCLUDE[prod_short](includes/prod_short.md)].
@@ -47,10 +47,10 @@ Le tableau suivant décrit les règles d’affectation de paiement standard dans
 > [!Important]
 > Les règles d'affectation de paiement peuvent être différentes dans votre implémentation de [!INCLUDE[prod_short](includes/prod_short.md)].
 
-| Fiabilité correspondance | Priorité | Correspondance partie associée | Correspondance N° doc./N° doc. ext. | Correspondance montant avec tolérance |
+| Fiabilité correspondance | Priorité | Correspondance partie associée | N° document/N° document ext. rapprochés | Nombre d'écritures dans niveau de tolérance trouvées |
 |------------------|----------|-----------------------|--------------------------------|--------------------------------|
-| Élevée             | 1        | Intégrale                 | Oui - Multiple                 | Une correspondance                      |
-| Élevée             | 2        | Intégrale                 | Oui - Multiple                 | Correspondances multiples               |
+| Haut             | 1        | Intégrale                 | Oui - Multiple                 | Une correspondance                      |
+| Haut             | 2        | Intégrale                 | Oui - Multiple                 | Correspondances multiples               |
 | Élevée             | 3        | Intégrale                 | Oui                            | Une correspondance                      |
 | Élevée             | 4        | Intégrale                 | Oui                            | Correspondances multiples               |
 | Élevée             | 5        | Partielle             | Oui - Multiple                 | Une correspondance                      |
@@ -74,7 +74,7 @@ Le tableau suivant décrit les règles d’affectation de paiement standard dans
 | Mauvaises              | 4        | N°                    | N°                             | Une correspondance                      |
 | Mauvaises              | 5        | N°                    | N°                             | Correspondances multiples               |
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi .
 [Rapprocher les paiements à l'aide de l'application automatique](receivables-how-reconcile-payments-auto-application.md)  
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Vente](sales-manage-sales.md)  

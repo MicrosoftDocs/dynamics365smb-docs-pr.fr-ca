@@ -1,22 +1,23 @@
 ---
-title: Établir rapidement des factures achat
+title: Régler rapidement les factures d’achat
 description: 'Si vous devez payer le fournisseur en liquide ou par chèque, vous pouvez effectuer toutes les opérations nécessaires lorsque vous reportez la facture.'
 author: brentholtorf
 ms.topic: conceptual
 ms.search.form: '51, 9308'
-ms.date: 04/01/2021
+ms.date: 07/18/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="settle-purchase-invoices-promptly"></a>Établir rapidement des factures achat
+
+# Régler rapidement les factures d’achat
 
 Si vous devez payer le fournisseur en liquide ou par chèque, vous pouvez reporter le paiement lorsque vous reportez la facture.  
 
 > [!NOTE]  
 > Si vous payez fréquemment les factures par chèques, par transfert bancaire ou en espèces, il est conseillé de configurer un mode de règlement spécifique avec un compte de contrepartie et de saisir ce mode dans le champ **Mode de règlement** sur la fiche fournisseur. Le programme insère automatiquement le numéro du compte contrepartie sur l'en-tête facture à chaque fois que vous créez une facture. Pour plus d’informations, consultez [Définir les modes de règlement](finance-payment-methods.md).  
 
-## <a name="to-settle-purchase-invoices-promptly"></a>Pour établir rapidement des factures achat
+## Pour établir rapidement des factures achat
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Factures achat**, puis sélectionnez le lien associé.  
 2. Sélectionnez l'action **Nouveau**.  
@@ -27,7 +28,7 @@ Si vous devez payer le fournisseur en liquide ou par chèque, vous pouvez report
 >
 > Cette personnalisation n’est requise que si vous ne spécifiez pas de comptes de contrepartie sur les modes de paiement comme décrit ci-dessus.
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi .
 
 [Gestion des comptes fournisseur](payables-manage-payables.md)  
 [Procédure d'achat](purchasing-manage-purchasing.md)  

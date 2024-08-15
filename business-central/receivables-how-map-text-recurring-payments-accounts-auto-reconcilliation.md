@@ -1,30 +1,30 @@
 ---
-title: Paramétrage de la mise en correspondance du texte avec le compte pour les paiements récurrents
+title: Configuration de Text-to-Account mappage pour les paiements récurrents
 description: 'Lier le texte sur les paiements à des comptes spécifiques, afin que les paiements soient reportés dans les comptes lorsque vous reportez le journal rapprochement bancaire.'
 author: brentholtorf
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'account linking, direct payment posting, automatic payment processing, reconcile payment, recurring expense, recurring cash receipt'
 ms.search.form: '1290, 1294, 1287'
-ms.date: 04/01/2021
+ms.date: 03/06/2024
 ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="map-text-on-recurring-payments-to-accounts-for-automatic-reconciliation"></a>Mapper du texte sur les paiements récurrents aux comptes pour un rapprochement automatique
+# Mapper le texte des paiements récurrents sur les comptes pour un rapprochement automatique
 
 Sur la page **Correspondance texte et compte** à laquelle vous accédez à partir de la page **Journal rapprochement paiement**, vous pouvez configurer des mappages entre le texte des paiements et des comptes de débit, de crédit et de contrepartie spécifiques afin que ces paiements soient reportés dans les comptes spécifiés lorsque vous reportez le journal rapprochement de paiement.
 
-Une fonctionnalité similaire existe pour rapprocher les montants excédentaires sur les lignes journal rapprochement paiement de façon ponctuelle. Pour plus d'informations, voir [Rapprocher les paiements qui ne peuvent pas être affectés automatiquement](receivables-how-reconcile-payments-cannot-apply-auto.md).
+Une fonctionnalité similaire existe pour rapprocher les montants excédentaires sur les lignes journal rapprochement paiement de façon ponctuelle. Pour plus d’informations, consultez [Rapprocher les paiements qui ne peuvent pas être appliqués automatiquement](receivables-how-reconcile-payments-cannot-apply-auto.md).
 
-Les paiements reportés basés sur le mappage de texte à compte ne sont pas affectés aux écritures ouvertes, mais sont simplement reportés dans les comptes spécifiés en plus de créer des écritures de compte bancaire. Par conséquent, le mappage de texte à compte est approprié pour les recettes ou dépenses récurrentes en liquide, notamment les achats fréquents de carburant pour les voitures ou les frais et intérêts bancaires, qui apparaissent régulièrement sur le relevé bancaire et n'ont pas besoin d'un document d'entreprise lié. Pour en savoir plus, voir « Exemple – Mappage de texte à compte pour les frais de carburant » dans cette rubrique.
+Les paiements reportés basés sur le mappage de texte à compte ne sont pas affectés aux écritures ouvertes, mais sont simplement reportés dans les comptes spécifiés en plus de créer des écritures de compte bancaire. En conséquence, le texte vers le compte mappage est adapté aux encaissements ou aux dépenses récurrents en espèces, tels que les achats fréquents de carburant pour voiture ou les frais et intérêts bancaires, qui apparaissent régulièrement sur le relevé bancaire et ne nécessitent pas de document commercial associé. Pour plus d’informations, consultez la section "Exemple – Envoi de texte au compte mappage pour les dépenses de carburant" dans cet article.
 
 > [!NOTE]  
 >   Les paiements sur les lignes de feuille de rapprochement ne sont définies sur validation en fonction du mappage de texte à compte que si la fonction d'application automatique peut fournir une confiance une correspondance **Faible** ou **Moyenne**. Si la fonction d'affectation automatique fournit un taux de fiabilité correspondance Élevé, alors le paiement est automatiquement affecté à une ou plusieurs écritures ouvertes, et le paiement n'est pas reporté sur les comptes spécifiés sur la page **Correspondance texte et compte**. En d'autres termes, une confiance de correspondance **Élevée** outrepasse un mappage de texte à compte.
 
 Sur une ligne journal rapprochement paiement dont le paiement a été défini sur report en fonction du mappage de texte à compte, le champ **Fiabilité correspondance** contient la valeur **Élevé – Mappage de texte à compte**, et les champs **Type compte** et **N° compte** contiennent les comptes mappés.
 
-## <a name="to-map-text-on-recurring-payments-to-accounts-for-automatic-reconciliation"></a>Pour associer le texte sur les paiements récurrents aux comptes pour un rapprochement automatique
+## Pour associer le texte sur les paiements récurrents aux comptes pour un rapprochement automatique
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journaux rapprochement bancaire**, puis sélectionnez le lien associé.
 2. Ouvrez un journal rapprochement paiement. Pour plus d'informations, reportez-vous à [Rapprocher les paiements à l'aide du lettrage automatique](receivables-how-reconcile-payments-auto-application.md).
@@ -44,7 +44,7 @@ Sur une ligne journal rapprochement paiement dont le paiement a été défini su
 
 La prochaine fois que vous importez un fichier de relevé bancaire ou sélectionnez l'action **Affecter automatiquement** sur la page **Journal rapprochement paiement**, les lignes journal pour les paiements qui contiennent le texte de mappage spécifié contiendront les comptes mappés dans les champs **Type compte** et **N° compte**. Le champ **Fiabilité correspondance** contient **Élevée - Correspondance texte et compte**. Ce, à condition que la fonction de lettrage automatique ne puisse fournir qu'une fiabilité de correspondance **Basse** ou **Moyenne**.
 
-## <a name="example-text-to-account-mapping-for-bank-fees"></a>Exemple : Mappage de texte à compte pour les frais bancaires
+## Exemple : Text-to-Account mappage pour les frais bancaires
 
 Pour toujours reporter les dépenses liées aux frais d’une banque spécifique, MyBank, sur le compte GL pour les frais et frais bancaires (compte 60400), remplissez une ligne sur la page **Mappage de texte à compte** comme suit.
 
@@ -52,7 +52,7 @@ Pour toujours reporter les dépenses liées aux frais d’une banque spécifique
 | --- | --- | --- | --- | --- |
 | MyBank |VIDE |60400|Compte général |VIDE |
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Gestion des comptes client](receivables-manage-receivables.md)  
 [Ventes](sales-manage-sales.md)  

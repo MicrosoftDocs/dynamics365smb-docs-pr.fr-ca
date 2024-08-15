@@ -11,11 +11,11 @@ ms.search.form: null
 ms.date: 06/06/2024
 ms.service: dynamics-365-business-central
 ---
-# <a name="work-with-bills-of-material"></a>Utilisation des nomenclatures
+# Utilisation des nomenclatures
 
 Les nomenclatures d’assemblage permettent de structurer les articles parents qui doivent être assemblés à partir d’autres articles ou produits par des ressources ou des unités de production à partir des composantes.
 
-## <a name="assembly-boms-or-production-boms"></a>Nomenclatures d’assemblage ou nomenclatures de production
+## Nomenclatures d’assemblage ou nomenclatures de production
 
 [!INCLUDE[prod_short](includes/prod_short.md)] prend en charge deux types différents de nomenclatures :
 
@@ -24,7 +24,7 @@ Les nomenclatures d’assemblage permettent de structurer les articles parents q
 | [Nomenclatures d’assemblage](assembly-how-work-assembly-boms.md) | Entrepôt / assemblage | Objets constitués d’autres objets, assemblés avec des ressources de base ou sans ressources. |
 | [Nomenclatures de production](production-how-to-create-production-boms.md) | Fabrication / production | Articles constitués de différents composantes et sous-ensembles, produits au travail ou dans une unité de production. |
 
-Utilisez des ordres d’assemblage pour fabriquer des produits finis à partir de composantes dans le cadre d’un processus simple qui peut être exécuté par une ou plusieurs ressources de base, qui ne sont pas des unités de production ou des ateliers, ou sans ressource. Par exemple, un processus d'assemblage peut consister à prélever deux bouteilles de vin et un sachet de café puis à les emballer comme article de cadeau.  
+Vous utilisez des ordres d’assemblage pour fabriquer des produits finis à partir de composants dans un processus simple qui peut être exécuté par une ou plusieurs ressources de base, qui ne sont pas des machines ou des centres de travail, ou sans aucune ressource. Par exemple, un processus d'assemblage peut consister à prélever deux bouteilles de vin et un sachet de café puis à les emballer comme article de cadeau.  
 
 Une nomenclature d'assemblage contient les données de base qui définissent les composantes d'un produit fini assemblé, ainsi que les ressources utilisées pour assembler l'élément d'assemblage. Lorsque vous entrez un élément d’assemblage et une quantité dans l’en-tête d’un nouvel ordre d’assemblage, les lignes d’ordre d’assemblage sont renseignées automatiquement d’après la nomenclature d’assemblage, avec une ligne d’ordre d’assemblage par composante ou ressource. Pour en savoir plus, voir [Gestion d’assemblage](assembly-assemble-items.md).
 
@@ -36,14 +36,14 @@ Le concept de ressources est beaucoup plus avancé dans la production que dans l
 
 Les ordres d’assemblage et les bons de production peuvent être liés directement aux documents de vente. Cependant, vous pouvez uniquement utiliser des ordres d'assemblage pour personnaliser le produit fini directement par rapport à la demande d'un client via le document de vente.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
-[Utilisation des nomenclatures d’assemblage](assembly-how-work-assembly-boms.md)  
-[Créer des nomenclatures de production](production-how-to-create-production-boms.md)  
-[Enregistrer de nouveaux articles](inventory-how-register-new-items.md)  
-[Gérer les variantes de produits](inventory-item-variants.md)  
-[Stock](inventory-manage-inventory.md)  
-[Production](production-manage-manufacturing.md)  
-[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+[Travailler avec des nomenclatures d’assemblage](assembly-how-work-assembly-boms.md)    
+[Créer des nomenclatures de production](production-how-to-create-production-boms.md)    
+[Enregistrer de nouveaux articles](inventory-how-register-new-items.md)    
+[Gérer les variantes de produits](inventory-item-variants.md)    
+[Stocks](inventory-manage-inventory.md)    
+[Fabrication](production-manage-manufacturing.md)    
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)    
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

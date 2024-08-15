@@ -7,20 +7,20 @@ ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.search.keywords: 'customized report, document layout, logo, personalize'
 ms.search.form: '21, 9650'
-ms.date: 04/26/2024
+ms.date: 07/05/2024
 ms.service: dynamics-365-business-central
 ---
-# <a name="define-document-layouts-for-customers-and-vendors"></a>Définition des dispositions de document pour les clients et les fournisseurs
+# Définition des dispositions de document pour les clients et les fournisseurs
 
 Les dispositions de document utilisent des dispositions de rapport pour définir l'apparence des documents que vous envoyez aux clients et aux fournisseurs. Business Central fournit des dispositions standard, mais vous pouvez également personnaliser des dispositions personnalisées pour chacun de vos partenaires commerciaux. Pour plus d'informations, voir [Créer et modifier des présentations de rapport personnalisées](ui-how-create-custom-report-layout.md). Vous sélectionnez des dispositions de document standard et personnalisées à partir des fiches client et fournisseur en choisissant l'action **Dispositions des documents**. La valeur dans le champ **Utilisation** définit le processus pour lequel la présentation du document est utilisée. Par exemple, pour les clients, vous pouvez utiliser les types de présentations de document **Rappel**, **Livraison** et **Confirmation**.
 
-Les présentations de document peuvent également vous faire gagner du temps lorsque vous envoyez des documents aux contacts des clients ou des fournisseurs par courriel. Pour chaque présentation que vous attribuez au client ou au contact, vous pouvez spécifier une ou plusieurs adresses de courriel de contact. Par exemple, vous pouvez envoyer une facture aux contacts achats et entrepôt du client. L'ajout d'adresses de courriel de contact est facile. Sur la page **Présentations de document**, l’action **Sélectionner une adresse de courriel dans Contacts** vous permet de choisir dans une liste les adresses de courriel de contact que vous avez enregistrés pour le client ou le fournisseur. Vous pouvez également ajouter des adresses de courriel manuellement. Si vous entrez plusieurs adresses, séparez-les par un point-virgule et n'ajoutez pas d'espaces entre les adresses.
+Les présentations de document peuvent également vous faire gagner du temps lorsque vous envoyez des documents aux contacts des clients ou des fournisseurs par courriel. Pour chaque présentation que vous attribuez au client ou au contact, vous pouvez spécifier une ou plusieurs adresses de courriel de contact. Par exemple, vous pouvez envoyer une facture aux contacts achats et entrepôt du client. L'ajout d'adresses de courriel de contact est facile. Sur la page **Mises en page du document**, l’action **Sélectionner Envoyer un e-mail à partir des contacts** vous permet de choisir parmi une liste d’adresses e-mail de contact que vous avez enregistrées pour le client ou le fournisseur. Vous pouvez également ajouter des adresses de courriel manuellement. Si vous entrez plusieurs adresses, séparez-les par un point-virgule et n'ajoutez pas d'espaces entre les adresses.
 
 Avant de pouvoir définir la présentation de document à utiliser pour les processus ainsi que le contact auquel envoyer le document, vous devez charger tous les rapports (documents) disponibles à partir de la page **Sélection des rapports**. Vous pouvez charger rapidement les documents en utilisant l’action **Copier à partir de la sélection de rapport** sur la page **Dispositions de document**.
 
 Les étapes de la section suivante décrivent comment définir des dispositions de document vente sur la page **Fiche client**. Pour les fournisseurs, les étapes sont les mêmes pour la page **Fiche fournisseur**.
 
-## <a name="to-load-the-standard-document-layouts-for-sales-documents-for-a-customer"></a>Pour charger les modèles de document standard pour les documents de vente d'un client
+## Pour charger les modèles de document standard pour les documents de vente d'un client
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.
 2. Ouvrez la page **Fiche client** pour le client, puis choisissez l’action **Dispositions de document**.
@@ -28,23 +28,27 @@ Les étapes de la section suivante décrivent comment définir des dispositions 
 
 La page **Dispositions de document** affiche toutes les dispositions disponibles pour les documents vente. 
 
-## <a name="to-select-a-custom-report-layout-to-use-for-the-sales-document-layout"></a>Pour sélectionner une présentation de rapport personnalisée à utiliser pour la présentation du document vente
+## Pour sélectionner une présentation de rapport personnalisée à utiliser pour la présentation du document vente
 
-Si vous n'avez pas encore créé de disposition de rapport personnalisée pour le type de document, vous devez d'abord le faire. Pour plus d'informations, voir [Créer et modifier des présentations de rapport personnalisées](ui-how-create-custom-report-layout.md).
+Les étapes suivantes supposent que vous disposez déjà d’un rapport personnalisé disposition pour le type de document. Si vous n’avez pas encore de rapport personnalisé disposition, vous devez d’abord en créer. Pour plus d'informations, voir [Créer et modifier des présentations de rapport personnalisées](ui-how-create-custom-report-layout.md).
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Clients**, puis choisissez le lien associé.
 2. Ouvrez la page **Fiche client** pour le client, puis choisissez l’action **Dispositions de document**.
 3. Sur la page **Présentations document**, sur la ligne d'une présentation de rapport pour laquelle vous souhaitez utiliser une présentation personnalisée, choisissez le champ **Description présentation personnalisée**.
-4. Sur la page **Dispositions rapport personnalisées**, sélectionnez la disposition de document que vous souhaitez utiliser pour le type de document vente. Pour plus d'informations, voir [Créer et modifier des présentations de rapport personnalisées](ui-how-create-custom-report-layout.md).
 
-## <a name="to-specify-which-contact-receives-which-document-layout-for-a-customer"></a>Pour spécifier le contact qui recevra la disposition de document pour un client
+   > [!TIP]
+   > Par défaut, le champ Description personnalisée disposition est masqué. Si le champ n’est pas disponible, vous pouvez personnaliser la page pour l’ajouter. Pour personnaliser la page, choisissez l’ :::image type="content" source="media/ui-experience/settings_icon_small.png" alt-text="icône Paramètres."::: Icône, puis choisissez **Personnaliser**. Pour en savoir plus sur la personnalisation des pages, accédez à [Personnaliser votre espace de travail](ui-personalization-user.md).
+
+1. Sur la page **Dispositions rapport personnalisées**, sélectionnez la disposition de document que vous souhaitez utiliser pour le type de document vente. Pour plus d'informations, voir [Créer et modifier des présentations de rapport personnalisées](ui-how-create-custom-report-layout.md).
+
+## Pour spécifier quel contact reçoit quel document disposition pour un client
 
 Pour gagner du temps lorsque vous envoyez des documents aux contacts des clients et des fournisseurs par courriel, spécifiez leurs adresses de courriel sur les présentations de document. Par exemple, vous pouvez toujours envoyer les relevés client à leurs contacts comptables et les documents de vente à leurs acheteurs ou les bons de commande aux représentants des fournisseurs.
 
 1. Sur la page **Présentations de document**, sur la ligne d'une présentation de rapport que vous souhaitez envoyer à un contact spécifique pour le client, choisissez l'action **Sélectionner une adresse de courriel dans Contacts**.
 2. Sur la page **Contacts**, sélectionnez un ou plusieurs contacts, puis choisissez **OK**.
 
-## <a name="see-also"></a>Voir aussi
+## Voir aussi
 
 [Mettre à jour les présentations de rapport personnalisées](ui-update-report-layouts.md)  
 [Créer et modifier des présentations de rapport personnalisées](ui-how-create-custom-report-layout.md)  
