@@ -10,7 +10,7 @@ ms.author: bholtorf
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="design-details-reservation-order-tracking-and-action-messaging"></a>Détails de conception : réservation, chaînage et message d’action
+# Détails de conception : réservation, chaînage et message d’action
 
 Le système de réservation est complet et inclut les fonctionnalités étroitement liées et parallèles du Chaînage et des Messages d'action.  
 
@@ -29,13 +29,13 @@ Le système de réservation interagit avec le système de planification en créa
 > [!INCLUDE [locations-cronus](includes/locations-cronus.md)]
 -->
 
-## <a name="reservation"></a>Réservation
+## Réservation  
 
  Une réservation est un lien ferme qui connecte une demande spécifique à un approvisionnement spécifique. Ce lien affecte directement la transaction d'inventaire ultérieure et garantit l'affectation correcte des écritures article à des fins d'évaluation des coûts. Une réservation remplace le mode d'évaluation du stock par défaut d'un article. Pour plus d'informations, voir [Détails de conception : traçabilité](design-details-item-tracking.md).  
 
  La page **Réservation** est accessible à partir de toutes les lignes d'ordre à la fois des types demande et approvisionnement. Sur la page, l'utilisateur peut spécifier avec quelle écriture demande ou approvisionnement créer un lien réservation. La réservation comporte deux enregistrements qui partagent le même numéro de séquence. Un enregistrement contient un signe négatif et pointe vers la demande. L'autre enregistrement a un signe positif et pointe vers l'approvisionnement. Ces enregistrements sont stockés dans la table *Entrée de réservation* avec la valeur de statut *Réservation*. L'utilisateur peut afficher toutes les réservations sur la page **Écritures réservation**.  
 
-### <a name="offsetting-in-reservations"></a>Compensation dans les réservations
+### Compensation dans les réservations  
 
  Les réservations sont effectuées par rapport aux quantités disponibles article. La disponibilité article est calculée en termes de base comme suit :  
 
@@ -58,7 +58,7 @@ Le système de réservation interagit avec le système de planification en créa
 
  Pour plus d'informations, voir [Détails de conception : disponibilité dans l'entrepôt](design-details-availability-in-the-warehouse.md).  
 
-### <a name="manual-reservation"></a>Réservation manuelle
+### Réservation manuelle  
 
 Lorsqu'un utilisateur crée une réservation intentionnellement, l'utilisateur gagne la propriété complète et la responsabilité et de ces articles. Cela signifie que l'utilisateur doit également modifier manuellement ou annuler une réservation. De telles modifications manuelles peuvent entraîner une modification automatique des réservations concernées.  
 
@@ -74,7 +74,7 @@ Le tableau suivant indique quand et quelles modifications peuvent survenir :
 > [!NOTE]  
 > La fonctionnalité Lien tardif peut également modifier des réservations sans informer l'utilisateur, en remaniant des réservations non spécifiques de numéros de série ou de lot. Pour plus d’informations, reportez-vous à [Détails de conception : traçabilité et réservations](design-details-item-tracking-and-reservations.md).  
 
-### <a name="automatic-reservations"></a>Réservations automatiques
+### Réservations automatiques  
 
  La fiche article peut être configurée pour être toujours réservée automatiquement à partir de la demande, par exemple, des documents de vente. Dans ce cas, la réservation est effectuée par rapport à l'inventaire, aux bons de commande, aux ordres d'assemblage et aux bons de production. Un avertissement est émis si l'approvisionnement est insuffisant.  
 
@@ -96,7 +96,7 @@ Les réservations automatiques qui sont créées lors de l'exécution de la plan
 
 - Ils sont inclus et potentiellement modifiés dans les exécutions de planification ultérieures, contrairement aux éléments réservés manuellement.  
 
-## <a name="order-tracking"></a>Suivi de commande
+## Suivi de commande  
 
 Le chaînage aide le gestionnaire à conserver un programme d'approvisionnement valide en fournissant un aperçu du décalage entre la demande et l'approvisionnement dans le réseau d'ordres. L'enregistrement du suivi de commande sert de base pour créer les messages d'action dynamiques et les propositions ligne planification lors de l'exécution de la planification.  
 
@@ -106,7 +106,7 @@ Le chaînage aide le gestionnaire à conserver un programme d'approvisionnement 
 > [!NOTE]  
 > La politique de suivi des commandes et la fonction Obtenir des messages d’action ne sont pas intégrées aux projets. Cela signifie qu’une demande liée à un projet n’est pas automatiquement suivie. Étant donné qu’il n’est pas suivi, il peut entraîner l’utilisation d’un réapprovisionnement existant avec suivi des informations de projet sur une autre demande, par exemple, un document de vente. Par conséquent, vous pouvez rencontrer la situation dans laquelle les informations sur l'inventaire disponible ne sont pas synchronisées.  
 
-### <a name="the-order-network"></a>Le Réseau d’ordres
+### Le Réseau d’ordres  
 
 Le système de suivi de commande est basé sur le principe que le réseau d'ordres doit toujours être dans un état d'équilibre, dans lequel chaque demande qui entre dans le système est compensée par un approvisionnement correspondant et vice versa. Le système fournit ceci en identifiant les liens logiques entre toutes les écritures de de mande et d'approvisionnement dans le réseau de commandes.  
 
@@ -114,7 +114,7 @@ Ce principe implique qu’un changement dans une demande entraîne un déséquil
 
 Pour augmenter la transparence des calculs dans le système de planification, la page **Éléments planification non suivis** affiche les quantités non suivies, qui représentent la différence de quantité entre la demande connue et l’approvisionnement proposé. Chaque ligne de la page fait référence à la cause de l'excédent, par exemple, **Commande permanente**, **Niveau de stock de sécurité**, **Quantité de réapprovisionnement fixe**, **Qté minimum commande**, **Arrondissement** ou **Seuil**.  
 
-### <a name="offsetting-in-order-tracking"></a>Compensation dans le chaînage
+### Compensation dans le chaînage  
 
 Contrairement aux réservations, qui ne peuvent être exécutées que pour des quantités d'article disponibles, le chaînage est possible sur toutes les entités réseau de commande qui sont incluses dans le calcul des besoins nets du système de planification. Les besoins nets sont calculés comme suit :  
 
@@ -123,7 +123,7 @@ Contrairement aux réservations, qui ne peuvent être exécutées que pour des q
 > [!NOTE]  
 > Une demande liée aux paramètres de prévisions ou de planification n'est pas chaînée.  
 
-### <a name="example-order-tracking-in-sales-production-and-transfers"></a>Exemple : suici de commande dans les ventes, production et transferts
+### Exemple : suici de commande dans les ventes, production et transferts  
 
 Le scénario suivant montre quelles entrées de suivi de commande sont créées dans la table *Entrée de réservation* à la suite de diverses modifications du réseau de commande.  
 
@@ -155,14 +155,14 @@ Les entrées de suivi de commande suivantes existent dans la table *Entrée de r
 |10|Oui|ARTICLE PRODUIT|OUEST|100|Réservation|Article produit|-|5406|101004|Ordre pour ordre|
 
 
-#### <a name="entry-numbers-8-and-9"></a>Numéros d’écriture 8 et 9
+#### Numéros d’écriture 8 et 9  
 
 Pour les besoins en composants LOTA et LOTB respectivement, des liens de suivi de commande sont créés à partir de la demande dans la table 5407, *Composant de commande de production*, vers l’approvisionnement dans la table 32, *Écriture de grand livre d’articles*. Le champ  **Statut de réservation** contient *Suivi* pour indiquer que ces entrées sont des liens de suivi de commande dynamiques entre offre et demande.  
 
 > [!NOTE]  
 > Le champ **N° lot** est vide sur les lignes demande, parce que les numéros de lot ne sont pas spécifiés sur les lignes composante du bon de production libéré.  
 
-#### <a name="entry-number-10"></a>Numéro écriture 10
+#### Numéro écriture 10  
 
 À partir de la demande de vente dans la table 37, *Lignes de vente*, un lien de suivi de commande est créé vers l’approvisionnement dans la table 5406, *Ligne de commande de production*. Le champ  **Statut de réservation** contient *Réservation*, et le champ  **Liaison** contient *Ordre à ordre*. Cela est dû au fait que l’ordre de fabrication publié a été généré spécifiquement pour la commande client et doit rester lié, contrairement aux liens de suivi de commande avec un statut de réservation de Suivi, qui est créé et modifié de manière dynamique. Pour plus d’informations, consultez la section  [Réservations automatiques](#automatic-reservations) de cet article.  
 
@@ -186,13 +186,13 @@ Pour les besoins en composants LOTA et LOTB respectivement, des liens de suivi d
 |15|Oui|COMPOSANT|OUT.JOURNAL.|70|Excédent|Composante|Lot B|32|-|-| 
 |16|Oui|COMPOSANT|OUT.JOURNAL.|30|Excédent|Composante|LOTA|32|-|-| 
 
-#### <a name="entry-numbers-8-and-9-1"></a>Numéros d’écriture 8 et 9
+#### Numéros d’écriture 8 et 9  
 
 Les entrées de suivi de commande pour les deux lots du composant reflétant la demande dans la table 5407 sont modifiées d’un statut de réservation de *Suivi* à *Surplus*. La raison est que les approvisionnements qui ont été liés précédemment, dans la table 32, ont été utilisés par la livraison de l'ordre de transfert.  
 
 Un excédent véritable, comme dans ce cas, reflète un excédent d'approvisionnement ou de demande qui reste non chaîné. Il s’agit d’une indication de déséquilibre dans le réseau de commandes, qui générera un message d’action par le système de planification à moins qu’il ne soit résolu de manière dynamique.  
 
-#### <a name="entry-numbers-12-to-16"></a>Numéros d’écriture 12 à 16
+#### Numéros d’écriture 12 à 16  
 
 Étant donné que les deux lots du composant sont enregistrés sur l’ordre de transfert comme expédiés mais non reçus, toutes les entrées de suivi de commande positives associées sont de type de réservation *Surplus*, indiquant qu’elles ne sont affectées à aucune demande. Pour chaque numéro de lot, une entrée se rapporte à la table 5741, *Ligne de transfert*, et une entrée se rapporte à l’écriture comptable des articles à l’emplacement de transit où les articles existent désormais.  
 
@@ -230,13 +230,13 @@ Les entrées de suivi de commande suivantes existent désormais dans la table *E
 |22|-|COMPOSANT|OUEST|-30|Suivi|Composante|LOTA|5407|1001004|-| 
 |22|Oui|COMPOSANT|OUEST|30|Suivi|Composante|LOTA|32|-|-| 
 
-#### <a name="entry-numbers-21-and-22"></a>Numéros d’écriture 21 et 22
+#### Numéros d’écriture 21 et 22  
 
 Étant donné que le besoin en composants a été modifié vers l’emplacement *OUEST* et que l’approvisionnement est disponible sous forme d’entrées de grand livre d’articles à l’emplacement *OUEST*, toutes les entrées de suivi de commande pour les deux numéros de lot sont désormais entièrement suivies, comme l’indique le statut de réservation de *Suivi*.  
 
 Le champ **N° lot** est désormais renseigné dans l'écriture suivi de commande de la table 5407, car les numéros de lot ont été affectés aux lignes composante bon de production.  
 
-## <a name="action-messaging"></a>Messagerie d’action
+## Messagerie d’action  
 
 Lorsque le système de suivi d'ordre détecte un déséquilibre dans le réseau d'ordres, il crée automatiquement un message d'action pour en informer l'utilisateur. Les messages d'action sont des appels générés par le système en vue d'une action de l'utilisateur. Ils indiquent les détails du déséquilibre et suggèrent des propositions sur la façon de restaurer l'équilibre dans le réseau d'ordres. Elles s’affichent sous forme de lignes de planification sur la page  **Feuilles de travail de planification** lorsque vous choisissez l’action  **Obtenir des messages d’action** . En outre, des messages d’action s’affichent sur les lignes planification qui sont générés par l’exécution de la planification pour tenir compte des propositions du système de planification sur la façon de rétablir l’équilibre du réseau d’ordres. Dans les deux cas, les suggestions sont exécutées sur le réseau de commandes, lorsque vous choisissez l’action  **Exécuter le message d’action** .  
 
@@ -264,11 +264,11 @@ Une demande ouverte traverse la liste et compense l'approvisionnement disponible
 
 Si une sortie dans la quantité demandée se produit, le système de suivi de commande tente de résoudre le déséquilibre en effectuant les vérifications précédentes dans l'ordre inverse. Cela signifie que les messages d'action existants peuvent être modifiés ou même supprimés, si nécessaire. Le système de chaînage présente toujours le résultat net de ses calculs à l'utilisateur.  
 
-## <a name="order-tracking-and-planning"></a>Suivi de commande et planification
+## Suivi de commande et planification  
 
 Lorsque le système de planification est exécuté, il supprime tous les enregistrements de suivi de commande et écritures de message d'action existants et les recrée en tant que suggestions de ligne de planification en fonction des paires approvisionnement/demande et priorités. Lorsque l'exécution de la planification a terminé, le réseau d'ordres est en équilibre.  
 
-### <a name="planning-system-versus-order-tracking-and-action-messaging"></a>Comparaison entre système planification et suivi de commande et message d’action
+### Comparaison entre système planification et suivi de commande et message d’action  
 
  La comparaison suivante montre les différences entre les méthodes utilisées par le système de planification pour créer des propositions de ligne planification et les méthodes utilisées par le système de suivi de commande pour créer les enregistrements de suivi de commande et les messages d'action.  
 
@@ -282,7 +282,7 @@ Lorsque le système de planification est exécuté, il supprime tous les enregis
 
 - Le système de planification crée des liens dans un mode de lots activé par l'utilisateur lorsqu'il équilibre la demande et l'approvisionnement, alors que le chaînage crée des liens automatiquement et de façon dynamique lorsque l'utilisateur saisit les commandes.  
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .  
 
 [Détails de conception : concepts centraux du système de planification](design-details-central-concepts-of-the-planning-system.md)  
 [Détails de conception : planification de l'approvisionnement](design-details-supply-planning.md)
