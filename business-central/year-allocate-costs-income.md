@@ -11,7 +11,7 @@ ms.date: 02/05/2024
 ms.custom: bap-template
 ms.service: dynamics-365-business-central
 ---
-# Ventilation des coûts et des bénéfices récurrents
+# <a name="allocate-recurring-costs-and-income"></a>Ventilation des coûts et des bénéfices récurrents
 
 Vous pouvez affecter une écriture d’un journal général récurrent dans différents comptes lorsque vous reportez le journal. Pour en savoir plus sur les journaux généraux récurrents, consultez [Utiliser des journaux récurrents](ui-work-general-journals.md#work-with-recurring-journals). 
 
@@ -26,7 +26,7 @@ Les fonctions d'affectation fonctionnent avec les journaux généraux récurrent
 
 Les procédures suivantes décrivent comment se préparer à affecter des coûts dans un journal général récurrent en définissant des clés d'affectation. Lorsque des clés d'affectation sont définies, vous renseignez et reportez le journal comme tout autre journal général récurrent. Pour plus d'informations, reportez-vous à [Utilisation des feuilles comptabilité](ui-work-general-journals.md).
 
-## Pour définir des clés de ventilation
+## <a name="to-set-up-allocation-keys"></a>Pour définir des clés de ventilation
 
 Vous pouvez affecter une écriture dans un journal général récurrent dans différents comptes lorsque vous reportez le journal. L'affectation peut être effectuée par quantité, pourcentage ou montant.  
 
@@ -44,14 +44,14 @@ Vous pouvez affecter une écriture dans un journal général récurrent dans dif
 10. Après avoir saisi les lignes d'affectations, cliquez sur **OK** pour revenir à la page **Journal général récurrent**. Le champ **Montant imputé DS** est renseigné et correspond au champ **Montant**.
 11. Reportez le journal.
 
-## Pour modifier une clé d'affectation déjà configurée
+## <a name="to-change-an-allocation-key-that-has-already-been-set-up"></a>Pour modifier une clé d'affectation déjà configurée
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fonction Tell Me.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal général récurrent**, puis sélectionnez le lien associé.
 2. Sur la page **Journal général récurrent**, sélectionnez le journal contenant l'affectation.
 3. Sélectionnez la ligne de l'affectation, puis choisissez l’action **Affectations**.
 4. Modifiez les champs appropriés, puis choisissez **OK**.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
 [Utiliser des journaux généraux](ui-work-general-journals.md)    

@@ -12,15 +12,15 @@ ms.date: 06/10/2024
 ms.service: dynamics-365-business-central
 ---
 
-# Vue d’ensemble de la trésorerie
+# <a name="cash-flow-overview"></a>Vue d’ensemble de la trésorerie
 
 La compréhension des encaissements et des décaissements est essentielle pour la gestion fructueuse d’une activité. La trésorerie vous permet de créer facilement des prévisions à court terme, qui prévoient les moyens et les délais de réception et de règlement au sein de votre société. Il est important de savoir que votre société aura suffisamment de fonds pour payer ses créditeurs et ses dépenses à échéance.
 
-## Définition de Trésorerie
+## <a name="definition-of-cash-flow"></a>Définition de Trésorerie
 
 Le terme *Trésorerie* désigne les encaissements moins les espèces sur une période donnée. Il s’agit d’une estimation de fonds à encaisser et décaisser au sein de votre société. Tous les produits et toutes les dépenses prévus en font partie.
 
-## Utilisation de la trésorerie
+## <a name="work-with-cash-flow"></a>Utilisation de la trésorerie
 
 La figure ci-après décrit comment utiliser la trésorerie.
 
@@ -39,7 +39,7 @@ La figure ci-après décrit comment utiliser la trésorerie.
 - Si vous utilisez un traitement en lot pour transférer les informations des modules Grand livre, Achats, Ventes, Service et Immobilisations vers la feuille trésorerie, vous enregistrez des lignes de feuille d’activité pour effectuer une prévision de la trésorerie.  
 - Vous utilisez plusieurs pages, rapports et graphiques pour analyser et imprimer des prévisions de la trésorerie concernant des aperçus de disponibilité et de planning.  
 
-## Réalisation d’une prévision de la trésorerie
+## <a name="making-a-cash-flow-forecast"></a>Réalisation d’une prévision de la trésorerie
 
 En fonction des lignes de feuille d’activité enregistrées, vous pouvez effectuer périodiquement des prévisions de la trésorerie. La présentation suivante est fréquemment utilisée pour des prévisions de la trésorerie. La présentation est constituée de trois sections :
 
@@ -67,7 +67,7 @@ La trésorerie nette ou l’encaisse est calculée comme suit : règlements tot
 
 La prévision peut être utilisée comme un outil interne de décision en gestion pour préparer l’avenir et prendre des décisions stratégiques importantes pour la société.
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Configuration d'une analyse de trésorerie](finance-setup-cash-flow-analyses.md)  
 [Analyse de la trésorerie](finance-analyze-cash-flow.md)  
