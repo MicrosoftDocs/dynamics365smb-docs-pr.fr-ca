@@ -10,7 +10,7 @@ ms.author: jswymer
 ms.service: dynamics-365-business-central
 ms.reviewer: jswymer
 ---
-# <a name="preparing-closing-statements"></a>Préparation des conclusions finales
+# Préparation des conclusions finales
 
 [!INCLUDE [prod_short](includes/prod_short.md)] propose des rapports standards qui peuvent vous aider à rassembler les informations dont vous avez besoin pour préparer les états financiers de clôture de votre entreprise. Le tableau suivant décrit les rapports.  
 
@@ -26,7 +26,7 @@ ms.reviewer: jswymer
 
 Pour trouver un rapport, choisissez l’ampoule qui ouvre la fonction Tell Me. ![...](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") saisissez le nom tel qu’il apparaît dans le tableau, puis choisissez le lien associé.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Clôture des exercices et des périodes](year-close-years-periods.md)  
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  

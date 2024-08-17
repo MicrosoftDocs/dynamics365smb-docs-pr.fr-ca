@@ -11,7 +11,7 @@ ms.date: 05/24/2024
 ms.service: dynamics-365-business-central
 ms.custom: bap-template
 ---
-# <a name="about-item-types"></a>À propos des types d’articles
+# À propos des types d’articles
 
 Dans le champ **Type** de la page **Fiche article**, vous pouvez sélectionner ce pourquoi l’article est utilisé dans votre activité, ce qui a une incidence sur le niveau de gestion que vous pouvez exercer sur l’article en inventaire. Le tableau suivant répertorie et décrit les trois types d’éléments disponibles.
 
@@ -30,7 +30,7 @@ Dans le champ **Type** de la page **Fiche article**, vous pouvez sélectionner c
 |Hors inventaire|Oui|Oui|Oui|Oui|Oui|Oui|N°|N°|N°|N°|N°|N°|N°|N°|N°|N°|Oui|
 |Service|Oui|Oui|Oui|N°|N°|N°|N°|N°|N°|N°|N°|N°|N°|N°|N°|N°|Oui|
 
-## <a name="costing-methods-for-types-of-items"></a>Modes évaluation stock pour les types d’articles
+## Modes évaluation stock pour les types d’articles
 
 Lorsque vous reportez des transactions d'inventaire, les changements de quantité et de valeur en inventaire sont enregistrés dans les écritures du grand livre d'articles et les écritures valeur, respectivement.
 
@@ -38,13 +38,13 @@ Vous enregistrez le coût des articles en inventaire dans le champ **Coût indiq
 
 Pour les articles hors inventaire et de service, le coût est enregistré dans le champ **Coût indiqué (avant bal. Stock)** sur la page **Écritures valeur**. Pour les articles hors stock et de service, le coût est spécifié sur les documents et journaux de vente, d’assemblage et de production. Spécifiez le coût par défaut dans le champ **Coût unitaire** sur les pages **Fiche article** et **Unité de stock**. Les coûts de ces types d’articles ne sont pas rapprochés avec le grand livre.
 
-## <a name="catalog-and-service-items"></a>Articles de catalogue et de service
+## Articles de catalogue et de service
 
 Configurez les articles que vous offrez à vos clients mais que vous ne gérer pas dans le système jusqu’à ce que vous vendre comme des articles de catalogue. Bien que les articles du catalogue soient similaires aux articles ordinaires du type **Non-inventaire** à cet égard, ne confondez pas les deux car il existe des différences. Pour en savoir plus, consultez [Utiliser les articles catalogue](inventory-how-work-nonstock-items.md).
 
 Les articles clients pour lesquels vous effectuez un service, par exemple une imprimante, sont appelés des articles de service. Les articles de service n'ont rien à voir avec des articles courants ou de catalogue. Cependant, les composantes de service peuvent être des articles courants. Pour plus d’informations, voir [Configurer les articles de service et les composantes article de service](service-how-setup-service-items.md).
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .
 
 [Enregistrement des nouveaux articles](inventory-how-register-new-items.md)  
 [Configuration de stock](inventory-setup-inventory.md)  

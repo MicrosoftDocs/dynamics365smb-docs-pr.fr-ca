@@ -11,7 +11,7 @@ ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
 
-# <a name="reservation-entry-table---introduction"></a>Tableau d’entrée de réservation - Introduction
+# Tableau d’entrée de réservation - Introduction
 
 Ce livre blanc technique fournit des conseils pour vous aider à comprendre et à résoudre les problèmes d’incohérence des données dans la table  *Entrée de réservation* (Tableau 337) dans Microsoft Dynamics NAV. La première partie est une introduction aux fonctionnalités qui génèrent ou modifient les données dans cette table. Il couvre également plusieurs champs de la table  *Entrée de réservation* qui méritent d’être soulignés par rapport à ces fonctionnalités. La deuxième partie montre, à l’aide d’exemples, comment les entrées de la table  *Entrée de réservation* sont générées, supprimées ou modifiées lorsque les ordres de transfert sont traités ou que les fonctionnalités de planification sont exécutées.
 
@@ -28,9 +28,9 @@ En termes généraux, les données générées dans la table  *Entrée de réser
 - Paramètres de planification sur l’article ou l’unité de gestion des stocks carte
 - Code traçabilité article
 
-## <a name="features-that-update-the-reservation-entry-table"></a>Fonctionnalités qui mettent à jour la table des entrées de réservation
+## Fonctionnalités qui mettent à jour la table des entrées de réservation
 
-### <a name="order-tracking-policy"></a>Politique de suivi des commandes
+### Politique de suivi des commandes
 
 Si le champ  **Politique de suivi des commandes** d’un article est défini sur Aucun, Microsoft Dynamics NAV ne créera jamais d’entrées de réservation dans la table *Entrée de réservation*, sauf si le plan de changement net ou le plan de régénération, la réservation ou le suivi des articles est exécuté. De plus, sans suivi des commandes activé, vous pouvez avoir des entrées de réservation lorsque vous utilisez les politiques de fabrication sur commande ou d’assemblage sur commande.
 
@@ -51,7 +51,7 @@ En définissant le champ  **Politique de suivi des commandes** de l’article su
 > [!NOTE]  
 > La fonctionnalité de suivi ne remplace pas la fonctionnalité de planification, qui prend en compte tous les articles, demandes et fournitures ensemble pour fournir des propositions de planification optimales afin d’optimiser les niveaux de service client et d’équilibrer les niveaux de stock.
 
-### <a name="reservation-policy"></a>Politique de réservation
+### Politique de réservation
 
 Une réservation se compose d’une paire d’enregistrements dans la table *Entrée de réservation* avec un **Statut de réservation** de Réservation, qui partage le même numéro d’entrée. Un enregistrement a le champ Positif activé et pointe vers l’approvisionnement. L’autre enregistrement a le champ  **Positif** non activé et pointe vers la demande. Les champs **Type de source**, **N° de référence de la source** et **ID de la source** mettent en évidence le lien de réservation entre la demande et l’offre.
 
@@ -122,7 +122,7 @@ Microsoft Dynamics NAV affichera le message d’avertissement suivant :
 
 Ceci conclut la démonstration de l’interaction entre l’utilisation des réservations automatiques et le suivi des commandes. Les exemples montrent également ce qui se passe lorsque vous modifiez les dates d’échéance et le message d’erreur qui est déclenché en cas de conflit de réservation.
 
-### <a name="planning-calculated"></a>Planification calculée
+### Planification calculée
 
 La planification Terminé à l’aide de la planification des commandes, de la feuille de calcul de demande ou de la feuille de calcul de planification générera des entrées dans la table *Entrée de réservation* avec le champ **Statut de réservation** défini sur Suivi, Réservation ou Surplus. Il doit toujours y avoir une paire correspondante avec le même numéro d’entrée de valeur positive et négative dans le champ  **Quantité (base)** lorsque le statut est Suivi ou Réservation. Le champ  **Type de source** sera le type de demande, c’est-à-dire la table 37 pour la quantité négative et une table de planification, par exemple la table 246, pour la quantité positive. Le champ  **ID source** sera PLANNING.
 
@@ -145,7 +145,7 @@ Ces écritures sont générées au cours de l'exécution de la planification et 
 
 Dans la table *Entrée de réservation*, comme dans les ordres d’achat, de transfert et de production, il existe un champ **Flexibilité de planification** . Ce champ d’option définit si l’approvisionnement représenté par ces commandes d’approvisionnement est pris en compte par le système de planification lors du calcul des messages d’action. Si le champ contient l’option Illimité, le système de planification inclut la ligne lors du calcul des messages d’action. Si le champ contient l’option Aucun, la ligne est ferme et immuable, et le système de planification n’inclut pas la ligne lors du calcul des messages d’action. La fonctionnalité est gérée dans la table *Entrée de réservation* par le champ portant le même nom.
 
-### <a name="reordering-and-manufacturing-policy"></a>Politique de réapprovisionnement et de fabrication
+### Politique de réapprovisionnement et de fabrication
 
 Si une fonctionnalité de planification est exécutée pour un ensemble d’articles avec la politique de réapprovisionnement définie sur Commande, Microsoft Dynamics NAV créera des entrées dans la table *Entrée de réservation* avec le statut de réservation de type Réservation au lieu de Suivi.
 
@@ -153,7 +153,7 @@ Les champs  **Type de source** et **ID de la source** auront le traitement équi
 
 Le champ  **Liaison** est renseigné pour contrôler les commandes d’approvisionnement liées à une demande spécifique, par exemple, les ordres de fabrication créés directement à partir d’une commande client. Le champ affiche Commande à commande lorsque l’entrée est liée spécifiquement à une demande ou à une offre (réservation automatique). La demande peut être liée aux ventes ou aux besoins en composants.
 
-### <a name="item-tracking-and-prospect-reservation-entry"></a>Suivi des articles et saisie des réservations de prospects
+### Suivi des articles et saisie des réservations de prospects
 
 Le statut de réservation Prospect peut être créé dans la table  Microsoft Dynamics NAV Entrée de réservation *lorsque vous n’utilisez aucune entité de réseau de commande, c’est-à-dire le suivi des commandes.*  Par exemple, sur une ligne de journal de consommation, vous affectez le suivi des articles au composant. Cependant, si l’article fait déjà l’objet d’un suivi de commande, cela peut créer davantage d’entrées de réservation de prospects. Microsoft Dynamics NAV  Ceci est démontré dans l’EXEMPLE 2 relatif aux ordres de transfert dans la deuxième partie de ce document.
 
@@ -167,15 +167,15 @@ Lors d’une réservation non spécifique, le champ  **Numéro de lot** ou **Num
 
 Pour plus d’informations, consultez les Microsoft Dynamics NAV livres blancs techniques répertoriés dans les ressources supplémentaires à la fin de ce document.
 
-### <a name="source-subtype-suppressed-action-msg-action-message-adjustment-and-disallow-cancellation-fields"></a>Champs Sous-type de source, Message d’action supprimé, Ajustement du message d’action et Interdire l’annulation
+### Champs Sous-type de source, Message d’action supprimé, Ajustement du message d’action et Interdire l’annulation
 
 Les champs  **Sous-type de source**, **Message d’action supprimé**, **Ajustement du message d’action** et **Interdire l’annulation** dans la table *Entrée de réservation* sont décrits dans cette section. Des scénarios sont fournis pour démontrer l’utilisation des champs **Message d’action supprimé**, **Ajustement du message d’action** et **Interdire l’annulation** . Le champ  **Ajustement du message d’action** est utilisé pour la fonctionnalité de politique de suivi des commandes Suivi et message d’action. Le champ  **Interdire l’annulation** est utilisé pour la fonctionnalité Assemblage sur commande dans Microsoft Dynamics NAV 2013.
 
-#### <a name="source-subtype"></a>Sous-type origine
+#### Sous-type origine
 
 Le champ  **Sous-type de source** indique à quel sous-type de source l’entrée de réservation est liée. Si l’entrée est liée à une ligne d’achat ou de vente, le champ est copié à partir du champ  **Type de document** sur la ligne. S’il est lié à une ligne de journal, le champ est copié à partir du champ  **Type d’entrée** sur la ligne de journal.
 
-#### <a name="suppressed-action-msg"></a>Message d'action supprimé
+#### Message d'action supprimé
 
 Le champ  **Message d’action supprimé** enregistre lorsqu’un approvisionnement existant a déjà été partiellement traité, par exemple lorsqu’une commande d’achat a déjà été partiellement reçue ou lorsqu’un ordre de fabrication a des consommations enregistrées.
 
@@ -208,7 +208,7 @@ L’entrée n° 28 dans le tableau 337 a un statut de réservation Suivi pour
 
 L’entrée n° 30 est la commande d’achat existante qui a été partiellement reçue avec la quantité 2. Par conséquent, le champ  **Statut de réservation** est Surplus, et Microsoft Dynamics NAV définit le champ  **Quantité (base)** sur *8* (solde restant) et le champ  **Message d’action supprimé** est activé.
 
-#### <a name="action-message-adjustment"></a>Réglage de message de tâche
+#### Réglage de message de tâche
 
 Le champ  **Ajustement du message d’action** affiche la modification du côté de l’approvisionnement du suivi de commande qui résulte de l’acceptation des messages d’action associés. Une valeur apparaît ici uniquement lorsque les fonctionnalités de suivi des commandes et de messages d’action sont actives (politique de suivi des commandes définie sur Suivi et message d’action). La valeur est calculée en fonction des données de la table *Entrée de message d’action* (tableau 99000849). L’exemple suivant sert d’illustration :
 1. Ouvrir l’article 80002. Définissez le champ suivant :
@@ -224,7 +224,7 @@ Les informations d’état du tableau 337 sont présentées dans l’illustrati
 6. L’entrée n° 34 a le champ **Ajustement du message d’action** dans la table 337 activé pour 5 unités avec le statut de réservation Surplus. Comme la commande client a été augmentée à étape 5, Microsoft Dynamics NAV cette réservation a été créée car un approvisionnement supplémentaire est nécessaire.
 7. Ouvrez la page **Feuilles de travail de planification** et dans l’onglet **Accueil**, dans le groupe **Processus**, choisissez **Obtenir des messages d’action**. Microsoft Dynamics NAV suggérera d’augmenter la quantité du bon de commande de 100 à 105.
 
-#### <a name="disallow-cancellation"></a>Interdire l'annulation
+#### Interdire l'annulation
 
 Le champ  **Interdire l’annulation** indique que l’entrée de réservation représente le lien entre une ligne de commande client et un ordre d’assemblage. Vous ne pouvez pas supprimer cette réservation car elle est nécessaire pour maintenir la synchronisation qui se produit lorsqu’un article est assemblé sur commande. L’exemple suivant sert d’illustration :
 
@@ -253,7 +253,7 @@ L’entrée n° 82 a un statut de réservation excédentaire avec 9 unités de
 
 L’entrée n° 86 a un statut de réservation de commande à commande contraignante. De plus, le champ  **Interdire l’annulation** est activé car la politique d’assemblage est définie sur Assembler sur commande pour l’article Assemblage FG. Enfin, le champ  **Flexibilité de planification** est défini sur Aucun, car Microsoft Dynamics NAV cela ne permet pas à la logique de planification de supprimer la réservation.
 
-#### <a name="quantity-available-to-pick-and-reservations"></a>Quantité disponible à cueillir et réservations
+#### Quantité disponible à cueillir et réservations
 
 Le champ  **Quantité réservée à prélever et à expédier** de la table 337 qui existe dans les versions antérieures à Microsoft Dynamics NAV 2013 contrôle la disponibilité des articles dans un entrepôt géré. Dans toute installation de gestion d’entrepôt, les quantités d’articles existent à la fois sous forme d’entrées d’entrepôt et d’entrées de grand livre d’articles. Microsoft Dynamics NAV  Ces deux types d’entrée contiennent des informations différentes sur l’emplacement des éléments et leur disponibilité. Les écritures d'entrepôt définissent la disponibilité d'un article par zone et type de zone, qui est appelée contenu de la zone. Les écritures du grand livre d'articles définissent la disponibilité d'un article par sa réservation aux documents sortants. Une fonctionnalité spéciale existe dans l’algorithme de prélèvement pour calculer la quantité disponible pour le prélèvement lorsque le contenu du bac est associé aux réservations. L’algorithme de prélèvement soustrait les quantités réservées à d’autres documents sortants, les quantités figurant sur les documents de prélèvement existants et les quantités prélevées mais pas encore expédiées ou consommées. Le résultat s’affiche dans le champ  **Quantité disponible à prélever** de la page **Feuille de travail de sélection**, où le champ est calculé de manière dynamique. La valeur est également calculée lorsqu’un utilisateur crée des prélèvements d’entrepôt directement à partir de documents sortants tels que des commandes client, une consommation de production ou des transferts sortants.
 
@@ -301,9 +301,9 @@ Lorsque le rangement en entrepôt est enregistré dans étape 7, cela permet la
 
 L’illustration suivante est tirée de Microsoft Dynamics NAV 2009 R2.
 
-## <a name="illustrations-using-transfer-orders-and-planning"></a>Illustrations utilisant les ordres de virement et la planification
+## Illustrations utilisant les ordres de virement et la planification
 
-### <a name="transfer-orders"></a>Ordres de transfert
+### Ordres de transfert
 
 Lorsque vous utilisez des ordres de transfert et que l’article est expédié mais pas entièrement reçu, dans le tableau *Entrée de réservation*, vous obtenez un statut de réservation Surplus. Le code d’emplacement sera l’emplacement de transfert.
 
@@ -313,7 +313,7 @@ Lorsque le suivi des commandes est activé et qu’il n’y a pas de demande (co
 
 Ceci est démontré dans le premier exemple.
 
-#### <a name="example-1"></a>Exemple 1
+#### Exemple 1
 
 1. Ouvrez les éléments 80003 et 80004 et définissez le champ  **Politique de suivi** sur *Suivi uniquement*. Laissez les autres champs par défaut.
 2. Ouvrez un journal d’articles et augmentez l’inventaire de ces articles à une quantité de 10 chacun par rapport à l’emplacement ROUGE et enregistrez les lignes du journal.
@@ -342,7 +342,7 @@ L’explication des champs suivants pour l’entrée de réservation 43 est la s
 |**Type origine**|Tableau des écritures comptables des articles 32.|  
 |**Référence de la source**|L’écriture comptable ouverte numéro 322.|
 
-#### <a name="example-2"></a>Exemple 2
+#### Exemple 2
 
 L’exemple suivant illustre ce qui se passe lorsqu’un composant est transféré entre des emplacements, mais qu’il est en même temps suivi entre un besoin de demande et une offre disponible. Les composants seront transférés de l’emplacement ROUGE vers l’emplacement BLEU, qui doit être consommé sur un ordre de production lancé. Le composant utilise le suivi des commandes, la planification des commandes et le suivi des articles.
 
@@ -378,7 +378,7 @@ L’élément produit obtiendra la sortie par rapport à l’emplacement BLEU.
 
 Les informations d’état du tableau 337 sont présentées dans l’illustration suivante.
 
-##### <a name="reservation-entries-with-numbers-55-and-56"></a>Réservations avec les numéros 55 et 56
+##### Réservations avec les numéros 55 et 56
 
 Pour les besoins en composants des lots A et B, respectivement, des liens de suivi de commande sont créés à partir de la demande dans la table 5407, Composant de commande de production, vers l’approvisionnement dans la table 32, Écriture comptable des articles. Le **Statut de réservation**  le champ contient le suivi des quatre entrées pour indiquer que ces liens de suivi de commande dynamiques entre offre et demande.
 
@@ -387,7 +387,7 @@ La demande dans la table 5407, Composant de l’ordre de production, est liée �
 > [!NOTE]  
 > Le champ **N° lot** est vide sur les lignes demande, parce que les numéros de lot ne sont pas spécifiés sur les lignes composante du bon de production libéré.
 
-##### <a name="reservation-entry-with-number-57"></a>Réservation Entrée avec numéro 57
+##### Réservation Entrée avec numéro 57
 
 À partir de la demande de vente dans la table 37, Ligne de vente, un lien de suivi de commande est créé vers l’approvisionnement dans la table 5406, Ligne de commande de production. Le champ  **Statut de réservation** contient Réservation et le champ  **Liaison** contient Commande à commande. Cela est dû au fait que l’ordre de fabrication publié a été généré spécifiquement pour la commande client et doit rester lié contrairement aux liens de suivi de commande avec le statut de réservation de Suivi, qui sont créés et modifiés de manière dynamique.
 
@@ -405,11 +405,11 @@ Affichez la quantité totale en attente comme expédiée UNIQUEMENT.
 
 Les informations d’état du tableau 337 sont présentées dans l’illustration suivante.
 
-##### <a name="reservation-entries-with-number-55-and-56"></a>Réservations avec les numéros 55 et 56
+##### Réservations avec les numéros 55 et 56
 
 Les entrées de suivi de commande pour les deux lots du composant reflétant la demande dans la table 5407 sont modifiées d’un statut de réservation de Suivi à Surplus. La raison est que les approvisionnements qui ont été liés précédemment, dans la table 32, ont été utilisés par la livraison de l'ordre de transfert. Un excédent véritable, comme dans ce cas, reflète un excédent d'approvisionnement ou de demande qui reste non chaîné. Il s’agit d’une indication de déséquilibre dans le réseau de commandes, qui générera un message d’action par le système de planification à moins qu’il ne soit résolu de manière dynamique.
 
-##### <a name="reservation-entry-numbers-59-to-63"></a>Numéros d’entrée de réservation 59 à 63
+##### Numéros d’entrée de réservation 59 à 63
 
 Étant donné que les deux lots du composant sont enregistrés sur l’ordre de transfert comme expédiés mais non reçus, toutes les entrées de suivi de commande positives associées sont de type de réservation Surplus, indiquant qu’elles ne sont affectées à aucune demande. Pour chaque numéro de lot, une entrée se rapporte à la table 5741, Ligne de transfert, et une entrée se rapporte à l’écriture comptable des articles à l’emplacement de transit où les articles existent désormais.
 
@@ -434,21 +434,21 @@ Fermer le formulaire de suivi des articles.
 
 Les informations d’état du tableau 337 sont présentées dans l’illustration suivante.
 
-##### <a name="reservation-entries-with-numbers-68-and-69"></a>Réservations avec les numéros 68 et 69
+##### Réservations avec les numéros 68 et 69
 
 Étant donné que le besoin en composants a été modifié vers l’emplacement BLEU et que l’approvisionnement est disponible sous forme d’entrées de grand livre d’articles à l’emplacement BLEU, toutes les entrées de suivi de commande pour les deux numéros de lot sont désormais entièrement suivies, comme l’indique le statut de réservation du suivi. Les numéros de lot ne sont pas renseignés dans le champ  **N° de lot** par rapport à la demande dans la table 5406, **Ligne de commande de production**, car nous n’avons pas spécifié de numéros de lot pour le composant sur l’ordre de fabrication lancé.
 
-##### <a name="reservation-entries-with-numbers-70-and-71"></a>Réservations avec les numéros 70 et 71
+##### Réservations avec les numéros 70 et 71
 
 Les entrées avec le statut de réservation Prospect sont générées dans la table 337. La raison est que les deux numéros de lot sont attribués au composant dans le journal de consommation, mais le journal n’a pas été enregistré.
 
 Ceci termine la section sur la manière dont les entrées de suivi de commande dans la table  **Entrée de réservation**  sont générées, modifiées et supprimées lors de l’utilisation de plusieurs fonctionnalités en combinaison avec des ordres de transfert.
 
-### <a name="planning-calculated-1"></a>Planification calculée
+### Planification calculée
 
 Lorsque vous utilisez les fonctionnalités de planification, c’est-à-dire la **Feuille de travail de demande**, la **Feuille de travail de planification** ou la **Planification de commande**, les entrées de réservation dans la **Entrée de réservation** table 337 peuvent être modifiées ou ajoutées en fonction de la suggestion de planification donnée par la logique dans Microsoft Dynamics NAV. L’exemple 3 utilisera **Politique de réapprovisionnement**  Commander avec **Politique de fabrication**  Fabrication sur commande pour un article produit. Le composant utilisera **Politique de réapprovisionnement**  Quantité de réapprovisionnement fixe.
 
-#### <a name="example-3"></a>Exemple 3
+#### Exemple 3
 
 1. Dans le **Configuration de fabrication**  carte, **Composant à l’emplacement**  est ROUGE par rapport à l’exemple précédent.
 2. Créer un nouvel élément élément parent 70061. Définissez les champs suivants :
@@ -497,17 +497,17 @@ Le champ  **Statut de réservation** est Réservation et une liaison de commande
 
 La demande de 40 unités par rapport au champ  **ID source** est le numéro de commande client 1005 et le type de source est  *Ligne de vente* table 37. L’entrée de réservation est alignée sur la suggestion de planification, référence source n°. 10000, l’ID source est PLANIFICATION et le type de source est *Ligne de demande* table 246. Il y a donc un équilibre entre la demande de la commande client et l’offre suggérée par le moteur de planification.
 
-##### <a name="reservation-entry-numbers-73-and-74"></a>Réservation Entrées numéros 73 et 74
+##### Réservation Entrées numéros 73 et 74
 
 En exécutant le travail par lots Calculer le plan, les quatre entrées suivantes sont générées avec un statut de réservation Suivi en raison du paramètre de politique de réapprovisionnement Quantité de réapprovisionnement fixe pour le composant. L’approvisionnement nécessaire pour le composant article 70062 est réapprovisionné selon les suggestions de planification données, référence source n°. 20 000 et 30 000, avec l’ID source défini sur PLANIFICATION et le type de source de la table 246 de la  *Ligne de demande* . Le composant nécessaire est créé pour répondre à la demande concernant l’article élément parent 70061 pour une quantité totale (base) de 40. En raison de cette demande, le champ  **Source Prod. Order Line** est 10 000, avec le type de source de la table  *Component Need* 99000829.
 
 Le statut de réservation n’est pas Surplus, car le suivi des commandes existe entre la demande de l’article élément parent 70061 et l’approvisionnement de l’article composant 70062.
 
-##### <a name="reservation-entry-numbers-75-and-76"></a>Réservation Entrées numéros 75 et 76
+##### Réservation Entrées numéros 75 et 76
 
 Les deux dernières entrées ont un statut de réservation Surplus, car il s’agit de quantités non suivies générées sur la feuille de planification liée aux paramètres de réapprovisionnement Reorder pointer et Reorder Quantity.
 
-## <a name="see-also"></a>Voir aussi .
+## Voir aussi .  
 [Détails de conception : conception de la traçabilité](design-details-item-tracking-design.md)  
 [Détails de conception : équilibrage de la demande et de l’approvisionnement](design-details-balancing-demand-and-supply.md)  
 [Détails de conception : réservation, chaînage et message d'action](design-details-reservation-order-tracking-and-action-messaging.md)   
