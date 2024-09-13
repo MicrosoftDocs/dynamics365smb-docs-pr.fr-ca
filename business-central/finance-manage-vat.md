@@ -12,7 +12,7 @@ ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
 
-# Vue d’ensemble de la gestion de la TVA
+# <a name="vat-management-overview"></a>Vue d’ensemble de la gestion de la TVA
 La taxe sur la valeur ajoutée (TVA) est un impôt indirect sur la consommation de biens et de services. La TVA est prélevée à chaque phase de la chaîne d’approvisionnement, où une valeur est ajoutée entre la production initiale et le point de vente. Pour démarrer avec la gestion de la TVA, consultez les articles suivants.  
 
 |  Article  |  Désignation  |  
@@ -31,7 +31,7 @@ La taxe sur la valeur ajoutée (TVA) est un impôt indirect sur la consommation 
 | [Plusieurs numéros d’enregistrement à la TVA](finance-how-use-multiple-vat-registrations.md) | Découvrez comment configurer plusieurs numéros d’enregistrement de taxe sur la valeur ajoutée (TVA) (comme taux de TVA alternatif) pour vos clients qui opèrent dans différents pays. |
 
 
-## Voir aussi . 
+## <a name="see-also"></a>Voir aussi .
 [Finances](finance.md)    
 [Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 

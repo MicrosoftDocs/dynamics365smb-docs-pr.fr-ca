@@ -12,13 +12,13 @@ ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
 
-# Configuration du module de durabilité 
+# <a name="sustainability-module-setup"></a>Configuration du module de durabilité
 
 Avant que le module durabilité fonctionne correctement, vous devez configurer certains contrôles et instructions de base liés à l’ensemble des fonctionnalités.
 
 Pour mettre en place un module de durabilité, suivez les étapes suivantes :
 
-## Centre de rôle  
+## <a name="role-center"></a>Centre de rôle
 
 Pour les personnes dont les responsabilités principales impliquent des processus de développement durable, il est recommandé d’utiliser le centre de rôles  *Responsable du développement durable* . Pour configurer ce centre de rôles, suivre les étapes :  
 
@@ -29,7 +29,7 @@ Pour les personnes dont les responsabilités principales impliquent des processu
 
 Le centre de rôles  *Responsable du développement durable* facilite la gestion efficace de tous les domaines clés liés au développement durable. Il englobe les principales caractéristiques de durabilité, ainsi que les processus financiers et d’approvisionnement. En outre, il offre une visibilité sur les indicateurs clés de performance les plus critiques liés au développement durable.
 
-## Configuration de durabilité  
+## <a name="sustainability-setup"></a>Configuration de durabilité
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Configuration durabilité**, puis sélectionnez le lien associé.
 2. Sur le **Général** Raccourci, configurez les champs obligatoires liés au modèle de durabilité.
@@ -72,7 +72,7 @@ Le centre de rôles  *Responsable du développement durable* facilite la gestion
     | **Précision d’arrondissement des émissions** | Spécifiez la taille de l’intervalle utilisé pendant l'arrondissement des quantités d’émissions lors de la déclaration aux autorités. |
     | **Type d’arrondissement des émissions** | Précisez comment le programme arrondit les quantités d’émissions lors de la déclaration aux autorités. Les options suivantes sont disponibles : **Au plus proche**, **Vers le haut** et **Vers le bas**. |
 
-## Frais d’émission   
+## <a name="emission-fees"></a>Frais d’émission
 
 Pour suivre les frais carbone internes ou calculer vos émissions à l’aide d’équivalents de dioxyde de carbone (CO2), vous devez configurer la page  **Frais d’émission** . Pour configurer ces informations, suivre ces étapes :  
 
@@ -89,7 +89,7 @@ Pour suivre les frais carbone internes ou calculer vos émissions à l’aide d�
 
 Si vous n’avez pas configuré les **Frais d’émission** avant de publier vos entrées de développement durable et que vous souhaitez calculer vos frais carbone et votre CO2e de manière rétroactive, vous devez exécuter l’action **Calculer les frais d’émission** pour mettre à jour les valeurs des **Entrées du grand livre de développement durable**.  
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Finances](finance.md)    
 [Vue d’ensemble de la gestion de la durabilité](finance-manage-sustainability.md)    

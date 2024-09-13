@@ -24,7 +24,7 @@ La structure de couche permet de séparer le projet en tâches plus petites et a
 > [!TIP]
 > Choisissez l’action **Nouveau projet** du tableau de bord **Chef de projet** pour lancer un guide de configuration assistée qui vous dirige à travers les étapes de création d’un projet avec des tâches intégrées et des lignes planification. La procédure suivante décrit comment exécuter les étapes manuellement. <!-- For an example of how to create a project manually, go to [Video: How to create a project in Dynamics 365 Business Central](https://www.youtube.com/watch?v=VqaPWr7BWmw).-->
 
-## <a name="invoice-one-or-more-customers-for-project-tasks"></a>Facturer un ou plusieurs clients pour les tâches du projet
+## <a name="to-create-a-project-card"></a>Facturer un ou plusieurs clients pour les tâches du projet
 
 Parfois, la partie qui reçoit un service est différente de celle qui paiera la facture. De plus, vous devrez parfois facturer plusieurs clients pour les tâches du projet. Sur la page **Fiche de projet** , utilisez le champ **Méthode de facturation des tâches** pour spécifier si vous facturez un seul client, ou plusieurs clients.
 
@@ -36,7 +36,7 @@ Si vous facturez plusieurs clients, vous pouvez spécifier le client qui recevra
 * Ajouter des informations sur les références externes pour simplifier la communication sur le projet.
 * Remplacer les conditions financières standard du projet.
 
-## <a name="invoice-one-customer-for-multiple-project-tasks"></a>Facturer un client pour plusieurs tâches du projet
+## <a name="to-create-tasks-for-a-project"></a>Facturer un client pour plusieurs tâches du projet
 
 Vous pouvez simplifier votre processus de facturation en envoyant une seule facture à un client pour plusieurs projets. Ajoutez des lignes de planification de projet de plusieurs projets à une facture de vente en une seule fois. Ce processus est similaire à la création d’une facture de vente à partir d’une ligne de planification de projet et à la saisie d’une valeur dans le champ **Ajouter au numéro de facture de vente** .
 
@@ -54,7 +54,7 @@ Répétez ces étapes si vous souhaitez ajouter un autre ensemble de lignes de p
 > * L’action **Obtenir les lignes de planification du projet** n’est pas disponible sur les documents de vente ou les devis clients.
 > * Vous ne pouvez pas filtrer sur le **Code d’expédition** ou **Numéro de contact** .
 
-## <a name="to-create-a-project-card"></a>Pour créer une fiche projet
+## <a name="invoice-one-or-more-customers-for-project-tasks"></a>Pour créer une fiche projet
 
 Vous devez créer une fiche projet, puis créez des Lignes tâche projet et des lignes planification projet pour ce projet.
 
@@ -73,7 +73,7 @@ Si vous le souhaitez, marquez les actions sur le projet comme bloquées à l’a
 |Report     |Vous pouvez utiliser des lignes planification, mais le report du projet est bloqué. Choisir cette option implique que vous ne pouvez pas reporter d’utilisation ni de vente sur le projet.|
 |Tout  |Toutes les actions sont bloquées.|
 
-## <a name="to-create-tasks-for-a-project"></a>Pour créer une tâche pour un projet
+## <a name="specify-a-default-location-for-project-items"></a>Pour créer une tâche pour un projet
 
 L’une des clés de la création d’un projet consiste à spécifier les différentes tâches impliquées dans le projet. Spécifiez les tâches en créant une ligne par tâche sur le raccourci **Tâches** de la page **Fiche projet**. Chaque projet doit avoir au minimum une tâche.
 

@@ -11,14 +11,14 @@ ms.author: altotovi
 ms.service: dynamics-365-business-central
 ---
 
-# Plusieurs numéros d’enregistrement à la TVA 
+# <a name="multiple-vat-registration-numbers"></a>Plusieurs numéros d’enregistrement à la TVA
 
 Pour les entreprises disposant d’entrepôts dans plusieurs pays de l’UE, la gestion de la TVA (taxe sur la valeur ajoutée) peut être difficile, car chaque emplacement d’entrepôt nécessite un numéro de TVA différent pour se conformer aux réglementations spécifiques de chaque pays. Cet article fournit des informations sur cette exigence et explique la fonctionnalité permettant d’obtenir plusieurs numéros d’enregistrement de taxe sur la valeur ajoutée (TVA). Cette fonctionnalité permet aux utilisateurs de configurer des numéros d’enregistrement fiscal pour leurs clients dans différents pays/régions.  
 
 > [!NOTE]
 > La fonctionnalité *Numéros de TVA multiples pour les clients* est disponible uniquement à partir de Business Central 2024 vague de lancement 2 (version 25).
 
-## Comment configurer les numéros d’enregistrement de TVA alternatifs  
+## <a name="how-to-set-up-the-alternative-vat-registration-numbers"></a>Comment configurer les numéros d’enregistrement de TVA alternatifs
 
 Pour configurer les numéros d’enregistrement de TVA alternatifs pour différents pays/régions, suivre ces étapes : 
 
@@ -40,11 +40,11 @@ Pour créer une adresse alternative pour votre client, suivre les étapes :
 8. Une notification apparaît comme un avertissement vous indiquant que vous devez ajouter un nouveau numéro de TVA. Pour ce faire, vous devez choisir l’action  **Ajouter** sur la notification et la page  **Enregistrement de TVA du client alternatif** s’ouvre. 
 9. Cette page renseigne votre **numéro de client.** Et le **code pays/région de TVA**. Il vous suffit donc d’ajouter la configuration que vous souhaitez utiliser. 
 
-## Utiliser les documents de vente   
+## <a name="work-with-the-sales-documents"></a>Utiliser les documents de vente
 
 Vous pouvez créer une nouvelle [facture de vente](sales-how-invoice-sales.md) ou [commande de vente](sales-how-sell-products.md) dans [!INCLUDE[prod_short](includes/prod_short.md)]. Si vous devez utiliser une adresse de livraison différente de l’adresse du client et située dans un autre pays, suivre les étapes :  
 
-### Adresse de livraison alternative  
+### <a name="alternate-shipping-address"></a>Adresse de livraison alternative
 
 1. Développez l’onglet rapide  **Expédition et facturation** .   
 2. Dans le champ Expédier à, choisissez l’option  **Adresse de livraison alternative** . 
@@ -59,7 +59,7 @@ Vous pouvez créer une nouvelle [facture de vente](sales-how-invoice-sales.md) o
 7. Une fois que vous avez confirmé, les valeurs sont écrasées par les valeurs de la configuration de l’ **Enregistrement de TVA du client alternatif** . Vous pouvez vérifier tous les champs liés à la TVA qui se trouvent sous l’onglet rapide  **Détails de la facture** .  
 8. Validez le document.  
 
-### Adresse personnalisée  
+### <a name="custom-address"></a>Adresse personnalisée
 
 Si vous n’avez pas configuré l’adresse de livraison mais que vous souhaitez néanmoins utiliser une adresse différente pour l’expédition, vous pouvez utiliser cette option.  
 
@@ -69,7 +69,7 @@ Si vous n’avez pas configuré l’adresse de livraison mais que vous souhaitez
 4. Une fois que vous avez modifié le code pays/région pour qu’il corresponde au **code pays/région de TVA** de l’ **enregistrement TVA du client alternatif**, la page de dialogue **Confirmer l’enregistrement TVA du client alternatif**  s’affiche avec une liste de champs qui ont été modifiés. 
 5. [!INCLUDE[prod_short](includes/prod_short.md)] modifiera également tous les champs liés à la TVA qui se trouvent sous l’onglet rapide  **Détails de la facture** .  
 
-### Travailler sans expédition 
+### <a name="work-with-no-shipment"></a>Travailler sans expédition
 
 S’il n’y a pas d’expédition en tant que processus, vous pouvez toujours tirer parti de la configuration de l’ **enregistrement alternatif de la TVA du client** .
 
@@ -77,11 +77,11 @@ Dans la commande client ou la facture, vous pouvez trouver le **Code pays/régio
 
 Dans cette situation, vous pouvez publier une facture de vente avec le numéro d’enregistrement de TVA approprié pour votre client, même si vous n’expédiez pas d’articles avec ce document. **·**  
 
-### Travailler avec la note de crédit de vente  
+### <a name="work-with-the-sales-credit-memo"></a>Travailler avec la note de crédit de vente
 
 Une fois que vous avez enregistré la facture avec une **adresse de livraison** ou **code pays/région de TVA** qui comporte des données de comptabilisation différentes, la **note de crédit de vente** corrective prend les valeurs de l’en-tête **Facture de vente enregistrée** où ces valeurs sont extraites de **l’enregistrement TVA du client alternatif**, donc aucune autre action n’est requise. 
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Présentation de la gestion de la TVA](finance-manage-vat.md)    
 [Mettre en place la TVA](finance-setup-vat.md)    

@@ -12,11 +12,11 @@ ms.service: dynamics-365-business-central
 ms.reviewer: solsen
 ---
 
-# Aperçu des tableaux de bord et des objectifs de durabilité
+# <a name="sustainability-scorecards-and-goals-overview"></a>Aperçu des tableaux de bord et des objectifs de durabilité
 
 Cet article fournit des conseils sur la manière de créer des tableaux de bord et des objectifs, et sur la manière de mettre à jour le statut des objectifs. Les tableaux de bord et les objectifs permettent aux organisations d’organiser les mesures de durabilité et de les suivre par rapport aux principaux objectifs commerciaux. Des objectifs peuvent être créés en fonction des valeurs actuelles et cibles, afin que les utilisateurs puissent suivre la progression des émissions actuelles par rapport aux périodes précédentes.  
 
-## Créer une fiche d’évaluation  
+## <a name="create-a-scorecard"></a>Créer une fiche d’évaluation
 
 Pour créer une nouvelle *fiche d’évaluation du développement durable*, suivre suivez les étapes :
 
@@ -26,7 +26,7 @@ Pour créer une nouvelle *fiche d’évaluation du développement durable*, suiv
 
 > [REMARQUE !] Dans le champ **Propriétaire**, vous ne pouvez choisir que les utilisateurs qui ont sélectionné le champ **Responsable du développement durable** dans le tableau **Configuration utilisateur** . 
 
-## Créer des objectifs  
+## <a name="create-goals"></a>Créer des objectifs
 
 Pour créer un nouvel *objectif de développement durable*, suivre suivez les étapes :
 
@@ -49,7 +49,7 @@ Si vous avez de nombreux objectifs sur la page, vous pouvez utiliser l’action 
 > [!NOTE]
 > Les utilisateurs peuvent configurer différentes combinaisons d’objectifs pour l’ensemble de l’entreprise, des pays ou des régions spécifiques et un centre de responsabilité pour un tableau de bord de durabilité *.* Les utilisateurs peuvent également utiliser des périodes différentes pour le même modèle de suivi. 
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Configuration de durabilité](finance-sustainability-setup.md)    
 [Plan comptable et comptabilité de durabilité](finance-sustainability-accounts-ledger.md)    

@@ -12,13 +12,13 @@ ms.service: dynamics-365-business-central
 ms.reviewer: solsen
 ---
 
-# Travailler avec le crédit carbone  
+# <a name="work-with-carbon-credit"></a>Travailler avec le crédit carbone
 
 Lorsque les entreprises ne peuvent pas réduire leurs émissions pour diverses raisons, elles peuvent acheter des crédits carbone pour compenser leurs émissions. En achetant des crédits carbone, une entreprise peut toujours émettre la quantité équivalente de gaz tout en restant neutre en carbone. Ces crédits sont achetés auprès de fournisseurs spécialisés, incitant à la réduction des émissions.  
 
 En général, les crédits carbone sont des permis qui permettent au propriétaire d’émettre une certaine quantité de dioxyde de carbone (CO₂) ou d’autres gaz à effet de serre (GES). Un crédit carbone représente généralement le droit d’émettre une tonne de CO₂ ou une quantité équivalente d’un autre GES. Il est donc important d’activer cette option pour certaines organisations.  
 
-## Mettre en place le crédit carbone  
+## <a name="set-up-the-carbon-credit"></a>Mettre en place le crédit carbone
 
 Le crédit carbone dans [!INCLUDE[prod_short](includes/prod_short.md)] peut être défini comme **élément**. Pour configurer l’élément comme crédit carbone, suivez les étapes suivantes : **·** 
   
@@ -32,9 +32,9 @@ Le crédit carbone dans [!INCLUDE[prod_short](includes/prod_short.md)] peut êtr
 > [!NOTE]
 > Vous pouvez configurer n’importe quel type d’article, qu’il s’agisse d’un inventaire, d’un service ou d’un élément non inventaire, en tant que crédit carbone.  
 
-## Pour acheter des crédits carbone 
+## <a name="to-purchase-carbon-credit"></a>Pour acheter des crédits carbone
 
-### Documents achat 
+### <a name="purchase-documents"></a>Documents achat
 
 Pour travailler avec des documents liés à l’achat, suivre les étapes :
 
@@ -49,7 +49,7 @@ Pour travailler avec des documents liés à l’achat, suivre les étapes :
 > [!NOTE]
 > Bien que le crédit carbone diminue la valeur des entrées, vous verrez une valeur positive dans les **émissions de CO2**. Mais une fois que vous aurez publié le document, vous verrez une valeur avec un logarithme négatif dans l’ **entrée du grand livre de développement durable** avec le **crédit GES** comme **type de document**.  
 
-### Journaux durabilité 
+### <a name="sustainability-journals"></a>Journaux durabilité
 
 Pour travailler avec **Sustainability Journal** suivre suivez les étapes :  
 
@@ -60,7 +60,7 @@ Pour travailler avec **Sustainability Journal** suivre suivez les étapes :
 5. Sélectionner **Saisie manuelle** et entrez la valeur que vous souhaitez publier en tant que crédit carbone dans le champ **Émission CO2** .  
 6. Reportez le journal.   
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Finances](finance.md)    
 [Enregistrer les entrées de durabilité](finance-sustainability-journal.md)    

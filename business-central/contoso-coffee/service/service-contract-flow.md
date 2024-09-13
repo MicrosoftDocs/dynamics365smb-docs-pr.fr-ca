@@ -21,7 +21,7 @@ Cette procédure détaillée illustre plusieurs processus principaux :
 - Terminer la saisie de temps pour la commande service
 - Reporter et facturer la commande service du contrat
 
-## <a name="creation-of-service-items"></a>Création d’articles de service
+## <a name="create-service-items"></a>Création d’articles de service
 
 ### <a name="scenario"></a>Scénario
 
@@ -45,7 +45,7 @@ Susan, la préparatrice de commandes, reporte un document de vente en vendant un
 
 - Un article de service est créé pour le client 10000
 
-## <a name="invoicing-a-service-contract"></a>Facturation d’un contrat de service
+## <a name="invoice-a-service-contract"></a>Facturation d’un contrat de service
 
 ### <a name="scenario-1"></a>Scénario
 

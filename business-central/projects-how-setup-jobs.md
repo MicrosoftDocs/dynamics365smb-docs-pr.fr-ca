@@ -30,7 +30,7 @@ Pour chaque projet, précisez diverses informations :
 > [!NOTE]
 > Le bouton bascule **Appliquer le lien d′utilisation par défaut** sur la page **Configuration projets** indique si les écritures projet sont liées aux lignes planification projet par défaut. Activez le bouton bascule pour appliquer ce paramètre à tous les nouveaux projets. Vous pouvez activer ou désactiver le suivi de l′utilisation des projets pour un projet donné en activant ou désactivant le bouton bascule **Appliquer le lien d′utilisation** sur la page **Fiche projet**.
 
-### <a name="specify-a-default-location-for-project-items"></a>Spécifier un emplacement par défaut pour les éléments du projet
+### <a name="to-set-up-project-usage-tracking"></a>Spécifier un emplacement par défaut pour les éléments du projet
 
 Vous pouvez gagner du temps lors de la saisie des données en spécifiant un emplacement et une zone par défaut pour les projets sur la page **Fiche projet** . Lorsque vous créez des tâches projet, des lignes planification projet et des lignes journal projet pour le projet, l’emplacement et la zone par défaut sont automatiquement attribués. Vous pouvez cependant modifier le code d’emplacement et la zone sur les tâches et les lignes si nécessaire.
 
@@ -48,7 +48,7 @@ Il y a quelques choses à savoir sur l’utilisation des emplacements par défau
 
 Lorsque les projets impliquent plusieurs clients, facturer les bons clients pour les bonnes tâches peut s’avérer difficile. [!INCLUDE [prod_short](includes/prod_short.md)] simplifie la facturation en vous permettant de spécifier les clients à facturer et à vendre sur chaque ligne de tâche du projet, afin que vous puissiez générer automatiquement des factures pour les bons clients. Pour en savoir plus sur la facturation de plusieurs clients, accédez à [Facturer un ou plusieurs clients pour les tâches du projet](projects-how-create-jobs.md#invoice-one-or-more-customers-for-project-tasks).
 
-### <a name="to-set-up-project-usage-tracking"></a>Pour configurer un suivi d’utilisation de projet
+### <a name="synchronize-the-cost-of-used-items"></a>Pour configurer un suivi d’utilisation de projet
 
 Lors de l’utilisation d’un projet, vous avez peut-être besoin de savoir si votre utilisation est conforme au plan. Pour explorer l’utilisation, vous pouvez créer un lien entre vos lignes planification projet et l’utilisation réelle. Le lien vous permet de suivre vos coûts et de comprendre la quantité de travail restante. Par défaut, le type de ligne planification projet est **Budget**, mais l’utilisation du type de ligne **Budget et Facturable** a des effets similaires.
 

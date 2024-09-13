@@ -62,7 +62,7 @@ Après avoir renseigné le **Rapport Intrastat**, vous pouvez exécuter l’acti
 
 Exécutez le rapport **Liste de vérification Rapport Intrastat** pour vérifier les lignes du rapport Intrastat avant leur exportation au format requis. La vérification est exécutée dans le **Rapport Intrastat**.
 
-## <a name="recalculating-weight-or-supplementary-unit-of-measure"></a>Recalculer le poids ou l’unité de mesure supplémentaire
+## <a name="recalculate-weight-or-supplementary-unit-of-measure"></a>Recalculer le poids ou l’unité de mesure supplémentaire
 
 Si vous recevez le message d’erreur *Le Poids total dans la ligne du rapport Intrastat ne doit pas être vide*, c’est probablement parce que vous n’avez pas défini le champ **Poids net** sur la source, l’article ou l’immobilisation utilisée. Dans ce cas, recherchez la fiche article ou immobilisation et ajoutez la valeur requise. Après cela, il vous suffit de rouvrir le **Rapport Intrastat** et de suivre ces étapes :
 

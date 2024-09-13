@@ -10,11 +10,11 @@ ms.author: altotovi
 ms.service: dynamics-365-business-central
 ---
 
-# Analyse des écritures de durabilité avec les rapports financiers 
+# <a name="analyzing-sustainability-entries-with-financial-reports"></a>Analyse des écritures de durabilité avec les rapports financiers
 
 La fonctionnalité  *Rapports financiers* vous donne un aperçu des données financières affichées sur votre plan comptable (COA). Vous pouvez configurer les rapports financiers pour analyser les chiffres dans les comptes du grand livre (GL) et comparer les écritures GL et les écritures budget. Mais vous pouvez également analyser les données statistiques et de durabilité avec la même fonctionnalité, et même combiner les trois types de données.  
 
-## Conditions préalables aux rapports financiers  
+## <a name="prerequisites-for-financial-reporting"></a>Conditions préalables aux rapports financiers
 
 La création de rapports financiers nécessite une compréhension de la structure des données que vous souhaitez analyser. Il y a quelques concepts clés auxquels vous devez probablement prêter attention avant de concevoir vos rapports financiers : 
 
@@ -36,7 +36,7 @@ La création de rapports financiers nécessite une compréhension de la structur
 > [!NOTE]
 > Vous trouverez plus de détails sur l’utilisation des rapports financiers avec des données financières et un plan comptable ici [Créer des rapports financiers à l’aide de données financières et de catégories de comptes](bi-how-work-account-schedule.md).   
 
-## Créer un rapport financier  
+## <a name="create-a-new-financial-report"></a>Créer un rapport financier
 
 Pour créer rapidement vos propres rapports financiers, commencez par en copier un existant, tel que décrit à l’étape 3 ci-dessous. 
 
@@ -65,7 +65,7 @@ Pour créer ou modifier un définition de ligne, suivre, procédez comme suit :
 > [!NOTE]
 > Les définitions de lignes ne sont pas versionnées. Lorsque vous modifiez un définition de ligne, l’ancienne version est remplacée et vos modifications seront enregistrées dans la base de données. 
 
-### Analyse des données sur la durabilité  
+### <a name="analyzing-sustainability-data"></a>Analyse des données sur la durabilité
 
 1. Saisissez le numéro de ligne. **·** Pour identifier votre brut et ajouter **Description** comme texte qui apparaîtra sur la ligne du rapport financier. 
 2. Dans la colonne Type de totalisation, choisissez l’option  **Comptes de suivi** .   
@@ -75,14 +75,14 @@ Pour créer ou modifier un définition de ligne, suivre, procédez comme suit :
    2. **taxe carbone** si vous souhaitez signaler l’équivalent financier (taxe carbone) à partir du **taxe carbone** champ des **écritures du grand livre de développement durable**. 
 5. Si vous choisissez **Formule** comme **Type de totalisation**, vous pouvez utiliser des formules mathématiques dans la colonne **Totalisation** .  
 
-### Analyser les données statistiques
+### <a name="analyzing-statistical-data"></a>Analyser les données statistiques
 
 1. Saisissez le numéro de ligne. **·** Pour identifier votre ligne et ajouter **Description** comme texte qui apparaîtra sur la ligne du rapport financier. 
 2. Dans la colonne **Type de totalisation**, choisissez l’option **Comptes statistiques** .   
 3. Dans le champ **Total**, choisissez un ou plusieurs comptes de durabilité en utilisant tous les filtres applicables. 
 4. Si vous choisissez **Formule** comme **Type de totalisation**, vous pouvez utiliser des formules mathématiques dans la colonne **Totalisation** .  
 
-## Voir aussi .
+## <a name="see-also"></a>Voir aussi .
 
 [Présentation de la gestion de la durabilité](finance-manage-sustainability.md)    
 [Rapports de durabilité et analyses dans Business Central](sustainability-reports.md)   
