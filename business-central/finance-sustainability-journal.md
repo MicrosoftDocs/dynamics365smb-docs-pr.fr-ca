@@ -6,23 +6,26 @@ ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: 'Sustainability, ESG, emission, GHG, CSRD, journal'
 ms.search.form: '6216, 6219, 6220'
-ms.date: 05/07/2024
+ms.date: 08/19/2024
 ms.author: altotovi
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
 
-# <a name="record-sustainability-entries"></a>Enregistrer les entrées de durabilité
+# Enregistrer les entrées de durabilité
 
-À l’heure actuelle, la seule façon d’enregistrer les émissions de gaz à effet de serre (GES) dans le grand livre durabilité est d’utiliser des journaux durabilité.
+Les utilisateurs peuvent enregistrer manuellement les émissions de gaz à effet de serre (GES) dans le grand livre de développement durable à l’aide de journaux de développement durable ou de tout type de documents liés aux achats.  
 
-## <a name="sustainability-journals"></a>Journaux durabilité
+> [!NOTE]
+> L’utilisation de tout type de documents liés aux achats pour enregistrer les émissions de gaz à effet de serre (GES) est disponible à partir de 2024 vague de lancement 2 *.*  
+
+## Journaux durabilité
 
 Les journaux durabilité sont conçus pour suivre et enregistrer les activités liées au développement durable en utilisant la même expérience utilisateur que les autres journaux de Business Central. Les utilisateurs disposant des informations nécessaires peuvent saisir manuellement les émissions dans un journal. Alternativement, s’ils ne disposent pas de ces informations, ils peuvent utiliser des formules intégrées pour calculer avec précision les émissions sur la base de paramètres connus spécifiques correspondant à différents types de sources et de comptes.
 
 Les informations que vous saisissez dans un journal sont temporaires et peuvent être modifiées tant qu’elles sont dans ce journal. Lorsque vous reportez le journal, les informations sont transférées vers des écritures durabilité sur des comptes durabilité individuels, où elles ne peuvent pas être modifiées. Vous pouvez toutefois reporter des écritures d'inversion ou de correction.
 
-### <a name="use-journal-templates-and-batches"></a>Utiliser des lots et des modèles journal
+### Utiliser des lots et des modèles journal
 
 Par défaut, il existe deux modèles de journal durabilité par défaut : le modèle standard et le modèle récurrent.
 
@@ -31,15 +34,15 @@ Pour chaque modèle journal, vous pouvez configurer votre propre journal personn
 > [!TIP]
 > Si vous disposez de plusieurs lignes, vous pouvez contribuer à réduire le risque d’erreurs en créant un lot journal pour chaque type d’émission. Vous pouvez également utiliser le lot commun pour tous les types d’émissions.
 
-### <a name="validate-sustainability-journals"></a>Valider les journaux durabilité
+### Valider les journaux durabilité
 
 Sur la page **Configuration durabilité**, vous pouvez activer une vérification en arrière-plan pour aider à éviter les retards de report. Si une erreur survient lorsque vous travaillez dans le journal durabilité, la validation vous informe et vous empêche de reporter le journal.
 
 Lorsque vous activez la validation, le Récapitulatif **Vérification de journal** affiche les problèmes de la ligne actuelle et du lot entier. La validation se produit lorsque vous chargez un lot journal et lorsque vous sélectionnez une autre ligne journal. La vignette **Problèmes totaux** du récapitulatif indique le nombre total de problèmes [!INCLUDE [prod_short](includes/prod_short.md)] trouvés. Vous pouvez sélectionner la vignette pour ouvrir une vue d’ensemble des problèmes.
 
-### <a name="work-with-sustainability-journals"></a>Utiliser des journaux durabilité
+### Utiliser des journaux durabilité
 
-Pour commencer à travailler avec les journaux durabilité, suivez ces étapes :
+Pour travailler avec des revues de développement durable, suivre les étapes :
 
 1. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche 3.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") entrez **Journal durabilité**, puis sélectionnez le lien associé.
 2. Sur la page **Journal durabilité** , saisissez autant de lignes que vous prévoyez de reporter dans le même lot.
@@ -58,7 +61,7 @@ Pour commencer à travailler avec les journaux durabilité, suivez ces étapes 
 
 Si votre formule est basée sur l’option **Calculer à partir du grand livre** dans la catégorie de compte de durabilité, vous devez utiliser l’action **Recueillir le montant des écritures GL** avant de reporter le journal pour calculer les émissions en fonction de cette source de données. De plus, si vous avez apporté des modifications aux facteurs d’émission après avoir renseigné les lignes journal, vous devez choisir l’action **Recalculer** pour obtenir le montant approprié dans le journal.
 
-### <a name="recurring-journals"></a>Journaux récurrents
+### Journaux récurrents
 
 Un journal récurrent est un journal durabilité contenant des champs spécifiques pour la gestion des transactions que vous reportez fréquemment avec peu ou pas de modifications. Par exemple, les transactions durables telles que l’électricité, le chauffage ou d’autres transactions similaires. Vous pouvez utiliser les journaux récurrents pour reporter des montants fixes et variables.
 
@@ -70,12 +73,40 @@ Le champ **Fréquence récurrente** est également important et doit être défi
 
 Le champ **Date expiration** détermine la date à laquelle la ligne est reportée pour la dernière fois. La ligne n’est plus reportée après cette date. L’avantage d’utiliser le champ **Date d’expiration** est que la ligne n’est pas supprimée immédiatement du journal. Vous pouvez entrer une date ultérieure afin de pouvoir utiliser la ligne à l’avenir. Si le champ est blanc, la ligne est reportée à chaque fois, jusqu’à ce qu’elle soit supprimée du journal.
 
-## <a name="see-also"></a>Voir aussi .
+## Documents achat  
 
-[Finances](finance.md)  
-[Vue d’ensemble de la gestion de la durabilité](finance-manage-sustainability.md)  
-[Configuration de durabilité](finance-sustainability-setup.md)  
-[Graphique des comptes de durabilité et de comptabilité](finance-sustainability-accounts-ledger.md)  
-[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
+Pour permettre l’enregistrement des émissions de gaz à effet de serre (GES) dans tout document lié à l’achat, vous devez Sélectionner l’option **Utiliser les émissions dans les documents d’achat** sur la page **Configuration de la durabilité** .  
+
+Pour travailler avec des documents liés à l’achat, suivre les étapes :
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche 3.](media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") Icône et :  
+   1. Saisissez **Factures d’achat** si vous souhaitez une facture comme **type de document**, puis Sélectionner le lien associé.  
+   2. Saisissez **Bons de commande** si vous souhaitez commander en tant que **type de document**, puis Sélectionner le lien associé.  
+2. Remplissez l’en-tête et les lignes en fonction des instructions suivantes [comment travailler avec les factures d’achat et les commandes](purchasing-how-record-purchases.md).
+3. Si vous avez des informations sur les émissions sur la facture que vous avez reçue du fournisseur, choisissez le **Numéro de compte de développement durable** approprié dans les lignes du document et ajoutez des valeurs d’émissions en utilisant l’un des champs suivants (en fonction de ce que vous souhaitez suivre et des émissions que vous avez sur votre facture physique) : **Émission de CO2**, **Émission de CH4** ou **Émission de N2O**.
+
+    > [!NOTE]
+    > Les valeurs que vous saisissez dans les champs d’émission sont des montants fixes par ligne et ils ne seront pas multipliés avec le champ  **Quantité** . Vous ne pouvez utiliser **Numéro de compte de durabilité** que lorsque le champ **Type** (**Valeurs d’option**) est **Article** ou **Compte G/L**. Vous ne pouvez pas utiliser les valeurs d’option **Ressource** ou **Charge (élément)** **.** 
+
+4. Si vous souhaitez voir les émissions totales avant de publier, vous pouvez ouvrir la page des statistiques et rechercher les émissions totales publiées et les émissions pour la publication par document (tout document lié à l’achat) dans le raccourci  **Durabilité** .   
+5. Postez les documents et ouvrez une nouvelle **facture d’achat enregistrée**.
+6. Sélectionner **Rechercher des entrées** et vous verrez que vous avez **Entrée du grand livre de développement durable** comme l’une des entrées associées sur la page **Rechercher des entrées** .
+
+> [!NOTE]
+> Lorsque vous publiez le document, pour chacune des lignes d’achat pour lesquelles vous avez un **Numéro de compte de durabilité** le système créera une **écriture comptable de durabilité** indépendante avec la **facture** comme **type de document** et le même **numéro de document.**
+
+> [!NOTE]
+> Vous pouvez également créer et publier des **notes de crédit d’achat**. Vous pouvez le faire manuellement ou en utilisant certaines des options suivantes : **Annuler**, **Corriger** ou **Créer une note de crédit corrective** auquel cas le système copiera les valeurs existantes de la facture enregistrée.  
+
+## Voir aussi .
+
+[Finances](finance.md)    
+[Vue d’ensemble de la gestion de la durabilité](finance-manage-sustainability.md)    
+[Configuration de durabilité](finance-sustainability-setup.md)    
+[Graphique des comptes de durabilité et de comptabilité](finance-sustainability-accounts-ledger.md)    
+[Analyse ad hoc des données de durabilité](ad-hoc-analysis-sustainability.md)    
+[Rapports de durabilité et analyses dans Business Central](sustainability-reports.md)   
+[API de durabilité](/dynamics365/business-central/dev-itpro/api-sustainability/sustainability-api?toc=/dynamics365/business-central/toc.json)    
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)    
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

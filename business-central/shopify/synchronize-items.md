@@ -1,21 +1,20 @@
 ---
 title: Synchroniser les articles et l'inventaire
 description: Configurer et exécuter des synchronisations d’articles entre Shopify et Business Central
-ms.date: 04/28/2024
+ms.date: 08/30/2024
 ms.topic: article
 ms.search.form: '30116, 30117, 30126, 30127,'
 author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
-ms.collection:
-  - bap-ai-copilot
+ms.custom: bap-template
 ---
 
 # Synchroniser les articles et l'inventaire
 
-Les **Articles** dans [!INCLUDE[prod_short](../includes/prod_short.md)] correspondent aux *produits* dans Shopify, ce qui comprend les marchandises physiques, les téléchargements numériques, les services et les cartes cadeaux que vous vendez. Il existe deux raisons principales pour synchroniser les articles :
+Les **articles** dans [!INCLUDE[prod_short](../includes/prod_short.md)] sont équivalents aux **produits** dans Shopify. Ce sont les biens physiques, les téléchargements numériques, les services et les cartes cadeaux que vous vendez. Il existe deux raisons principales pour synchroniser les articles :
 
-1. La gestion des données s’effectue principalement dans [!INCLUDE[prod_short](../includes/prod_short.md)]. Vous devez exporter tout ou partie des données de là vers Shopify et le rendre visible. Vous pouvez exporter le nom, la description, l’image, les prix, la disponibilité, les variantes, les détails du fournisseur et le code à barres de l’article. Une fois exportés, vous pouvez revoir les éléments ou les rendre visibles immédiatement.
+1. Lorsque vous gérez principalement les données dans [!INCLUDE[prod_short](../includes/prod_short.md)]. Vous devez exporter tout ou partie des données de là vers Shopify et le rendre visible. Vous pouvez exporter le nom, la description, l’image, les prix, la disponibilité, les variantes, les détails du fournisseur et le code à barres de l’article. Une fois ces informations exportées, vous pouvez examiner les articles et les rendre visibles immédiatement.
 2. Lorsqu’une commande de Shopify est importée, les informations sur les articles sont essentielles pour le traitement ultérieur du document dans [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 Les deux scénarios précédents sont toujours activés.
@@ -32,7 +31,7 @@ Un troisième scénario consiste à gérer les données dans Shopify, mais à im
    |Option|Désignation|
    |------|-----------|
    |**Vide**| Les produits sont importés avec l’importation des commandes. Les produits sont exportés vers Shopify si un utilisateur exécute l’action **Ajouter un article** dans la page **Produits Shopify**. Cette option est le processus par défaut.|
-   |**À Shopify**| Sélectionnez cette option si, après la synchronisation initiale déclenchée par l’action **Ajouter un article**, vous prévoyez de mettre à jour les produits manuellement en utilisant l’action **Synchroniser le produit** ou via la file d’attente des travaux pour les mises à jour récurrentes. N’oubliez pas d’activer le champ **Peut mettre à jour le produit Shopify**. S’il n’est pas activé, il est égal à l’option **Vide** (processus par défaut). Pour plus d’informations, voir la section [Exporter les articles dans Shopify](synchronize-items.md#export-items-to-shopify)|
+   |**À Shopify**| Sélectionnez cette option si, après la synchronisation initiale déclenchée par l’action **Ajouter un article**, vous prévoyez de mettre à jour les produits manuellement en utilisant l’action **Synchroniser le produit** ou via la file d’attente des travaux pour les mises à jour récurrentes. N’oubliez pas d’activer le champ **Peut mettre à jour le produit Shopify**. S’il n’est pas activé, il équivaut à l’option **Vide** (processus par défaut). Pour plus d’informations, voir la section [Exporter les articles dans Shopify](synchronize-items.md#export-items-to-shopify)|
    |**De Shopify**| Choisissez cette option si vous prévoyez d’importer des produits de Shopify en bloc, soit manuellement en utilisant l’action **Synchroniser le produit**, soit via la file d’attente des travaux pour les mises à jour récurrentes. Pour plus d’informations, voir la section [Importer les articles dans Shopify](synchronize-items.md#import-items-from-shopify).|
 
    > [!NOTE]
@@ -44,13 +43,13 @@ Tout d’abord, importiez les articles de Shopify en bloc ou en même temps que 
 
 |Champ|Désignation|
 |------|-----------|
-|**Créer automatiquement des articles inconnus**|Lorsque les produits et variantes Shopify sont importés dans [!INCLUDE[prod_short](../includes/prod_short.md)], la fonction [!INCLUDE[prod_short](../includes/prod_short.md)] tente toujours de trouver d’abord l’enregistrement correspondant dans la liste d’articles. L’option **Mappage unité de stock** a un impact sur la correspondance et crée un article et/ou une variante article. Activez cette option pour créer un article ou lorsqu’un enregistrement correspondant n’existe pas. Le nouvel article est créé en utilisant les données importées et le **Code modèle article**. Si cette option n’est pas activée, vous devez créer un élément manuellement et utiliser l’action **Mapper le produit** dans la page **Produits Shopify**.|
+|**Créer automatiquement des articles inconnus**|Lorsque les produits et variantes Shopify sont importés dans [!INCLUDE[prod_short](../includes/prod_short.md)], la fonction [!INCLUDE[prod_short](../includes/prod_short.md)] tente toujours de trouver d’abord l’enregistrement correspondant dans la liste d’articles. L’option **Mappage unité de stock** a un impact sur la correspondance et crée un article et/ou une variante article. Activez cette option pour créer un article ou lorsqu’un enregistrement correspondant n’existe pas. Le nouvel article est créé en utilisant les données importées et le **Code modèle article**. Si cette option n’est pas activée, créez un article manuellement et utilisez l’action **Mapper un produit** sur la page **Produits Shopify**.|
 |**Code modèle article**|Utilisez cette option avec le bouton à bascule **Créer automatiquement des articles inconnus**.<br>Choisissez le modèle à utiliser pour les articles créés automatiquement.|
 |**Mappage unité de stock**|Choisissez comment vous voulez utiliser la valeur **Unité de stock** importée de Shopify lors du mappage et de la création de l’article/de la variante. En savoir plus dans la section [Effet des points de stock et codes barres de produit Shopify sur le mappage et la création d’articles et de variants dans Business Central](synchronize-items.md#effect-of-shopify-product-skus-and-barcodes-on-mapping-and-creating-items-and-variants-in-business-central).|
-|**Séparateur de champ d'unité de stock**|Utilisez-le avec **Mappage unité de stock** défini sur **[N° article + Code variante](synchronize-items.md#effect-of-shopify-product-skus-and-barcodes-on-mapping-and-creating-items-and-variants-in-business-central)**.<br>Définissez un séparateur qui doit servir à diviser l'unité de stock.<br>Par exemple, si, dans Shopify, vous créez la variante avec l'unité de stock 1000/001, tapez « / » dans le champ **Séparateur de champ d'unité de stock** pour obtenir le numéro d’article dans [!INCLUDE[prod_short](../includes/prod_short.md)] comme 1000 et le code variante article comme 001. Notez que si vous créez la variante avec l’unité de stock « 1000/001/111 » dans Shopify, le numéro d’article dans [!INCLUDE[prod_short](../includes/prod_short.md)] sera « 1000 » et le code de variante d’article « 001 ». La partie "111" est ignorée. |
-|**Préfixe variante**|Utilisez avec le paramètre **Mappage unité de stock** défini sur **Code variante** ou **N° article + Code variante** comme stratégie de secours lorsque l'unité de stock provenant de Shopify est vide.<br>Pour créer la variante article dans [!INCLUDE[prod_short](../includes/prod_short.md)] automatiquement, saisissez une valeur dans **Code**. Par défaut, la valeur définie dans le champ Unité de stock importé de Shopify est utilisée. Cependant, si l’unité de stock est vide, elle génère un code commençant par le préfixe de la variante défini et « 001 ».|
+|**Séparateur de champ d'unité de stock**|Utilisez-le avec **Mappage unité de stock** défini sur **[N° article + Code variante](synchronize-items.md#effect-of-shopify-product-skus-and-barcodes-on-mapping-and-creating-items-and-variants-in-business-central)**.<br>Définissez un séparateur qui doit servir à diviser l'unité de stock.<br>Par exemple, si, dans Shopify, vous créez la variante avec l'unité de stock 1000/001, tapez « / » dans le champ **Séparateur de champ d'unité de stock** pour obtenir le numéro d’article dans [!INCLUDE[prod_short](../includes/prod_short.md)] comme 1000 et le code variante article comme 001. Si vous créez la variante avec l'unité de stock « 1000/001/111 » dans Shopify, le numéro d’article dans [!INCLUDE[prod_short](../includes/prod_short.md)] est « 1 000 » et le code variante de l’article est « 001 ». La partie "111" est ignorée. |
+|**Préfixe variante**|Utilisez avec le paramètre **Mappage unité de stock** défini sur **Code variante** ou **N° article + Code variante** comme stratégie de secours lorsque l'unité de stock provenant de Shopify est vide.<br>Si vous souhaitez créer automatiquement la variante de l’article dans [!INCLUDE[prod_short](../includes/prod_short.md)], vous saisissez une valeur dans **Code**. Par défaut, la valeur définie dans le champ Unité de stock importé de Shopify est utilisée. Cependant, si l'unité de stock est vide, il génère un code commençant par le préfixe de variante défini et « 001 ».|
 |**Shopify peut mettre à jour l’article**|Choisissez cette option pour mettre à jour les articles et/ou les variantes automatiquement.|
-|**Unité en tant que variante**| Choisissez cette option si vous souhaitez que toutes les unités de mesure des articles soient exportées sous forme de variantes distinctes. Personnalisez la page pour ajouter le champ. Pour en savoir plus, consultez la section [Unité de mesure en tant que variante](synchronize-items.md#unit-of-measure-as-variant) .|
+|**Unité en tant que variante**| Choisissez cette option si vous souhaitez que toutes les unités de mesure des articles soient exportées sous forme de variantes distinctes. Pour ajouter le champ, personnalisez la page. Pour en savoir plus, consultez la section [Unité de mesure en tant que variante](synchronize-items.md#unit-of-measure-as-variant) .|
 |**Nom d’option de variante pour l’unité**| Utilisez ce champ avec **UdM comme variante** pour spécifier sous quelle option ajouter des variantes qui représentent des unités de mesure. La valeur par défaut est *Unité de mesure*. Pour ajouter les champs vous devez personnaliser la page.|
 
 ## Exporter les articles dans Shopify
@@ -62,6 +61,8 @@ Il existe plusieurs façons d’exporter des éléments vers Shopify :
 * Exécutez la synchronisation des éléments une ou plusieurs fois avec l’automatisation.
 
 Quelle que soit la manière dont vous exportez les articles, les informations spécifiques sur les articles sont transférées vers la Shopify liste de produits en fonction de votre choix de paramètres de synchronisation des articles.
+
+Avant d’exporter un article dans Shopify, le connecteur vérifie s’il existe déjà un article. Tout d’abord, il vérifie s’il existe un produit ou une variante avec un code-barres, car il est défini dans l’entrée **Références d’article** d’un type de code-barres. Si le champ **Mappage unité de stock** est renseigné, le connecteur vérifie s’il existe un produit ou une variante avec l'unité de stock renseignée. Pour en savoir plus, accédez à [Effet des SKU et codes-barres de produit Shopify sur le mappage et la création d’articles et de variantes dans Business Central](synchronize-items.md#effect-of-shopify-product-skus-and-barcodes-on-mapping-and-creating-items-and-variants-in-business-central).
 
 > [!IMPORTANT]
 > Le produit est ajouté uniquement au canal de vente de la **boutique en ligne**. Vous devez publier des produits sur d’autres canaux de vente, tels que PDV Shopify, à partir de Shopify.
@@ -117,7 +118,7 @@ Le tableau suivant donne les effets du champ **Code à barres**.
 |------|-----------------|-----------------|
 |état|En fonction du champ **État des produits créés** dans la page **Fiche magasin Shopify**. Pour plus d’informations, voir [Mises à jour ponctuelles des produits Shopify](synchronize-items.md#ad-hoc-updates-of-shopify-products).|Aucun affichage.|
 |Titre | **Description**. Si le code langue est défini et qu’il existe une traduction article correspondante, cette dernière remplace la description.|**Description**|
-|Titre de la variante | **Code variante**.|**Description** de la variante|
+|Titre de la variante | **Code variante**.<br>La raison d’utiliser le **Code** et non la **Description** est que Shopify requiert des titres de variante uniques par produit. Dans [!INCLUDE[prod_short](../includes/prod_short.md)], le **Code** est unique, contrairement à la **Description**. Les descriptions non uniques entraîneront des problèmes lors de l’importation du produit.|**Description** de la variante|
 |Désignation|Combine les textes étendus, le texte marketing et les attributs si vous activez les bascules correspondantes dans la fiche magasin Shopify. Respecte le code langue.|Aucun affichage.|
 |Titre de la page du SEO|Valeur fixe : vide. Pour plus d’informations, voir [Mises à jour ponctuelles des produits Shopify](synchronize-items.md#ad-hoc-updates-of-shopify-products).|Aucun affichage.|
 |Description méta du SEO|Valeur fixe : vide. Pour plus d’informations, voir [Mises à jour ponctuelles des produits Shopify](synchronize-items.md#ad-hoc-updates-of-shopify-products).|Aucun affichage.|
@@ -151,9 +152,9 @@ Pour activer cette fonctionnalité, utilisez les champs **UoM comme variante** e
 
 **Remarques concernant l’unité de mesure comme variante**
 
-* Lorsque le produit est importé dans [!INCLUDE[prod_short](../includes/prod_short.md)], le connecteur crée des unités de mesure. Vous devrez mettre à jour **Qté. par unité de mesure**.
-* Lorsque vous traitez une matrice de variantes, par exemple Couleur et UdM et que vous souhaitez importer des produits, vous devez définir le *Numéro d’article + Code de variante* dans le champ **Mappage SKU** et assurez-vous que le champ **SKU** dans Shopify a la même valeur pour toutes les unités de mesure et inclut le numéro d’article et le code de variante.
-* Dans [!INCLUDE[prod_short](../includes/prod_short.md)] la disponibilité est calculée par article/variante d’article et non par unité de mesure. Cela signifie que la même disponibilité sera attribuée à chaque variante représentant l’unité de mesure (par rapport à **Qté par unité de mesure**), ce qui peut conduire à des cas où la quantité disponible dans Shopify n’est pas exacte. Exemple : article vendu en PCS et en boîte de 6. L’inventaire dans [!INCLUDE[prod_short](../includes/prod_short.md)] est de 6 PCS. Article exporté vers Shopify en tant que produit avec deux variantes. Une fois la synchronisation des inventaires exécutée, le niveau d’inventaire dans Shopify sera de 6 pour la variante PCS et de 1 pour la variante BOX. L’acheteur peut explorer uniquement le magasin et voir que le produit est disponible dans les deux options et passer une commande pour 1 BOÎTE. Le prochain acheteur verra que BOX n’est pas disponible, mais il reste encore 6 PCS. Ce problème sera corrigé lors de la prochaine synchronisation de l’inventaire.
+* Lorsque vous gérez une matrice de variantes, par exemple Couleur et UdM et que vous souhaitez importer des produits dans [!INCLUDE[prod_short](../includes/prod_short.md)], vous devez définir *N° article + Code variante* dans le champ **Mappage unité de stock**, vous assurer que le champ **Unité de stock** dans Shopify a la même valeur pour toutes les unités de mesure et inclure à la fois le numéro d’article et le code variante.
+* Dans [!INCLUDE[prod_short](../includes/prod_short.md)] la disponibilité est calculée par article/variante d’article et non par unité de mesure. Cela signifie que la même disponibilité sera attribuée à chaque variante représentant l’unité de mesure (par rapport à **Qté par unité de mesure**), ce qui peut conduire à des cas où la quantité disponible dans Shopify n’est pas exacte. Exemple : article vendu en PCS et en boîte de 6. L’inventaire dans [!INCLUDE[prod_short](../includes/prod_short.md)] est de 6 PCS. Article importé dans Shopify en tant que produit avec deux variantes. Une fois la synchronisation des inventaires exécutée, le niveau d’inventaire dans Shopify sera de 6 pour la variante PCS et de 1 pour la variante BOX. L’acheteur peut explorer uniquement le magasin et voir que le produit est disponible dans les deux options et passer une commande pour 1 BOÎTE. Le prochain acheteur verra que BOX n’est pas disponible, mais il reste encore 6 PCS. Ce problème sera résolu avec la prochaine synchronisation de l’inventaire.
+* Vous ne pourrez pas ajouter l’option Unité de mesure aux produits existants avec des variantes (le résultat spécifique dépend d’un autre paramètre, tel que **Mappage unité de stock**).
 
 ### URL et URL d’aperçu
 
@@ -236,12 +237,14 @@ La synchronisation des images peut être initialisée de deux manières décrite
 
 ## Synchroniser les prix avec Shopify
 
-Les paramètres suivants permettent d’exporter les prix avec ces paramètres :
+Le connecteur peut envoyer un prix principal et un prix non réduit Shopify. Les prix s’affichent dans les champs **Prix** et **Comparer au prix** sur la page Shopify Produit (Shopify Variante).
+
+Le tableau suivant décrit les paramètres que vous pouvez utiliser pour gérer le processus de définition et d’exportation des prix.
 
 |Champ|Désignation|
 |------|-----------|
-|**Groupe prix client**|Indique le prix d’un article dans Shopify. Le prix de vente de ce groupe prix client est pris en compte. Si aucun groupe n’est spécifié, le prix de la fiche Article est utilisé.|
-|**Groupe escomptes client**|Indique l’escompte à utiliser pour calculer le prix d’un article dans Shopify. Les prix remisés sont stockés dans le champ **Prix** et le prix total est stocké dans le champ **Comparer au prix**.|
+|**Groupe prix client**|Indique le prix d’un article dans Shopify. Le prix de vente de ce groupe prix client est pris en compte. Si aucun groupe n’est spécifié, le prix de la fiche Article est utilisé. Le connecteur n’utilisera pas le groupe de prix client du client.|
+|**Groupe escomptes client**|Indique l’escompte à utiliser pour calculer le prix d’un article dans Shopify. Les prix remisés sont stockés dans le champ **Prix** et le prix total est stocké dans le champ **Comparer au prix**. Le connecteur n’utilisera pas le groupe de remise client du client.|
 |**Autoriser escompte ligne**|Indique si l’escompte par ligne est autorisé lors du calcul des prix pour Shopify. Ce paramètre s’applique uniquement aux prix de l’article. Les prix pour le groupe de prix client ont leur propre bouton à bascule sur les lignes.|
 |**Prix TTC**|Indique si les calculs de prix pour Shopify comprennent la TVA. En savoir plus sur [Configurer les taxes](setup-taxes.md).|
 |**Groupe de report marché TVA**|Indique le groupe de report marché TVA utilisé pour calculer les prix dans Shopify. Cela devrait être le groupe que vous utilisez pour les clients nationaux. En savoir plus sur [Configurer les taxes](setup-taxes.md).|
@@ -259,6 +262,27 @@ Vous pouvez exporter les prix pour les articles synchronisés de la manière dé
 * Lors de la détermination d’un prix, [!INCLUDE[prod_short](../includes/prod_short.md)] utilise le prix le plus bas. Cependant, la logique du prix le plus bas ignore le prix unitaire défini sur la fiche article si un prix est défini dans le groupe de prix. Cela est vrai même si le prix unitaire du prix de la fiche article est inférieur.
 * Pour calculer les prix, le connecteur crée un devis temporaire pour l’article avec une quantité de 1 et utilise une logique de calcul de prix standard. Seuls les prix et escomptes applicables pour la quantité 1 sont utilisés. Vous ne pouvez pas exporter différents prix ou escomptes en fonction de la quantité.
 * Le connecteur envoie une demande de mise à jour des prix dans Shopify si le prix est en [!INCLUDE[prod_short](../includes/prod_short.md)] a changé. Par exemple, si vous avez synchronisé des produits et des prix, puis modifié le prix dans Shopify, en choisissant le **Synchroniser les prix avec Shopify** l’action n’aura aucun impact sur le prix dans le Shopify car le nouveau prix calculé par le connecteur est le même que le prix stocké dans le Shopify Variante de la synchronisation précédente. Le **Comparer au prix** mis à jour uniquement si le prix principal a changé.
+
+### Synchronisation des prix pour le B2B
+
+[!INCLUDE [shopify-preview](../includes/shopify-preview.md)]
+
+Si vous utilisez le B2B, vous pouvez configurer le connecteur pour synchroniser les prix des catalogues liés aux clients B2B. Shopify  Shopify 
+
+#### Synchroniser les catalogues depuis le Shopify
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Catalogues Shopify** et choisissez le lien associé.
+2. Sélectionner **Obtenir les catalogues**.
+
+Vous ne pouvez accéder qu’aux catalogues liés aux entreprises B2B. Pour plus d’informations, voir [Entreprises B2B](synchronize-customers.md#b2b-companies). Veuillez noter que les catalogues ne contiennent pas de produits. Vous gérez le contenu du catalogue dans Shopify Admin.
+
+#### Synchroniser les prix pour le catalogue B2B
+
+1. Sélectionnez l’icône ![Ampoule qui ouvre la fenêtre de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Catalogues Shopify** et choisissez le lien associé.
+2. Entrée Sélectionner pour laquelle vous souhaitez définir et exporter les prix.
+3. Utilisez les paramètres disponibles pour configurer la manière dont les prix seront définis. Les paramètres sont similaires à ceux utilisés pour la synchronisation des champs **Prix** et **Comparer au prix** dans le Shopify Produit (Shopify Variante).
+4. Activez le bouton **Synchroniser les prix** .
+5. Sélectionnez **Sync prix** et attendez que la synchronisation des prix soit terminée.
 
 ## Synchroniser l'inventaire sur Shopify
 
@@ -281,13 +305,13 @@ La synchronisation de l'inventaire peut être initialisée des deux manières d�
 
 ### Synchroniser l'inventaire à partir de la page du magasin Shopify
 
-1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Magasins Shopify** et choisissez le lien associé.
+1. Accédez à l’ampoule de recherche qui ouvre la fonction Tell Me. ![...](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Magasins Shopify** et choisissez le lien associé.
 2. Sélectionnez le magasin pour lequel vous voulez synchroniser l'inventaire pour ouvrir la page **Fiche magasin Shopify**.
 3. Sélectionnez l’action **Synchroniser l'inventaire**.
 
 ### Synchroniser l'inventaire à partir de la page des produits Shopify
 
-1. Accédez à l’icône de recherche ![Ampoule qui ouvre la fonction de recherche.](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Produits Shopify** et choisissez le lien associé.
+1. Accédez à l’ampoule de recherche qui ouvre la fonction Tell Me. ![...](../media/ui-search/search_small.png "Dites-moi ce que vous voulez faire") , saisissez **Produits Shopify** et choisissez le lien associé.
 2. Sélectionnez l’action **Synchroniser l'inventaire**.
 
 ### Remarques sur l'inventaire
@@ -306,6 +330,14 @@ Il y a 10 pièces de l’article A disponibles en stock et deux documents de ve
 |------|-----------------|-----------------|
 |Mardi|9|Inventaire 10 moins document de vente défini sur une livraison lundi|
 |Vendredi|7|Inventaire 10 moins les deux documents de vente|
+
+####  Exemple de calcul d’inventaire gratuit (non réservé)
+
+Il existe 10 pièces de l’article A disponibles et trois documents de vente en attente. Une commande avec la quantité *1* réservée à partir de l’écriture article, une commande avec la quantité *2* non réservée et une commande avec la quantité *3* réservée à partir d’un bon de commande. Pour cette méthode, la date de synchronisation n’est pas importante.
+
+|Valeur utilisée pour mettre à jour le niveau de stock|Commentaires|
+|-----------------|-----------------|
+|9|Inventaire 10 moins le document de vente avec l'inventaire réservé à partir de l’écriture article. Les autres documents de vente sont ignorés.|
 
 ### Deux approches pour gérer les exécutions
 

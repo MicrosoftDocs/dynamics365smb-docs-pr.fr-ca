@@ -6,13 +6,14 @@ ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: VAT
 ms.search.form: '118, 472, 737, 743'
-ms.date: 01/31/2023
+ms.date: 08/29/2024
 ms.author: altotovi
 ms.service: dynamics-365-business-central
 ms.reviewer: bholtorf
 ---
-# <a name="vat-management-overview"></a>Vue d’ensemble de la gestion de la TVA
-La taxe sur la valeur ajoutée (TVA) est un impôt indirect sur la consommation de biens et de services. La TVA est prélevée à chaque phase de la chaîne d’approvisionnement, où une valeur est ajoutée entre la production initiale et le point de vente. Pour vous familiariser avec la gestion de la TVA, reportez-vous aux rubriques suivantes.  
+
+# Vue d’ensemble de la gestion de la TVA
+La taxe sur la valeur ajoutée (TVA) est un impôt indirect sur la consommation de biens et de services. La TVA est prélevée à chaque phase de la chaîne d’approvisionnement, où une valeur est ajoutée entre la production initiale et le point de vente. Pour démarrer avec la gestion de la TVA, consultez les articles suivants.  
 
 |  Article  |  Désignation  |  
 |--------|--------------|  
@@ -27,11 +28,12 @@ La taxe sur la valeur ajoutée (TVA) est un impôt indirect sur la consommation 
 | [Configuration d’un relevé fiscal](finance-how-setup-vat-statement.md) | Cet article fournit des informations pour vous assurer que vous savez comment configurer un modèle de relevé fiscal et des noms pour répondre aux exigences changeantes de l’administration fiscale.|
 | [Gérer les changements de taux TVA](finance-how-use-vat-rate-change-tool.md) | Cet article explique comment utiliser l’outil de modification du taux de TVA pour Dynamics 365 Business Central pour modifier les taux de TVA en fonction de la législation locale.|
 | [Validation des n° identif. intracomm.](finance-how-validate-vat-registration-number.md) | Cet article explique comment utiliser la validation par Business Central des numéros d’immatriculation de TVA pour vos contacts, clients et fournisseurs, sur la base du service de validation du numéro d’identification intra-communautaire de l’UE.|
+| [Plusieurs numéros d’enregistrement à la TVA](finance-how-use-multiple-vat-registrations.md) | Découvrez comment configurer plusieurs numéros d’enregistrement de taxe sur la valeur ajoutée (TVA) (comme taux de TVA alternatif) pour vos clients qui opèrent dans différents pays. |
 
 
-## <a name="see-also"></a>Voir aussi
-[Finance](finance.md)  
-[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)
+## Voir aussi . 
+[Finances](finance.md)    
+[Utiliser [!INCLUDE[prod_short](includes/prod_short.md)]](ui-work-product.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
